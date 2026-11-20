@@ -2,85 +2,103 @@
 
 ## Resumen
 
-Helcyon-GPT-4o-12b-Gemma-4-v1.0-GGUF es una coleccion de cuantizaciones estáticas en formato GGUF generadas por mradermacher a partir del modelo base XeyonAI/Helcyon-GPT-4o-12b-Gemma-4-v1.0. El modelo original parte de la familia Gemma y cuenta con 11.907.350.576 parametros (aproximadamente 11,9 mil millones), lo que lo situa en la gama de modelos de tamano medio aptos para despliegue en hardware de consumo con las cuantizaciones adecuadas.
+Helcyon-GPT-4o-12b-Gemma-4-v1.0 es un modelo de lenguaje conversacional de aproximadamente 11.907 millones de parámetros (11,9 B), desarrollado por XeyonAI y publicado en Hugging Face. Esta ficha concreta corresponde a la versión cuantizada en formato GGUF realizada por mradermacher, un conocido publicador de cuantizaciones estáticas para llama.cpp y ecosistemas compatibles. El modelo base se distribuye bajo el identificador `XeyonAI/Helcyon-GPT-4o-12b-Gemma-4-v1.0` y, por su nombre, sugiere un ajuste fino o derivado de la familia Gemma, aunque la model card no detalla la arquitectura interna ni el proceso de entrenamiento.
 
-La relevancia de este repositorio es practica: ofrece el modelo en multiples niveles de cuantizacion (desde Q2_K hasta F16, incluyendo IQ4_XS y Q8_0) para su uso con llama.cpp y entornos compatibles, lo que permite ajustar el equilibrio entre calidad y consumo de memoria. El tag `endpoints_compatible` sugiere compatibilidad con infraestructura de endpoints de Hugging Face.
+La relevancia de esta publicación radica en que pone a disposición del ecosistema local un conjunto amplio de cuantizaciones GGUF (desde Q2_K hasta Q8_0, además de IQ4_XS), lo que permite ejecutar un modelo de casi 12 B en hardware de consumo con requisitos de VRAM que van desde unos 5 GB hasta unos 13 GB según la variante elegida. El repositorio tiene un tamaño total de 83,4 GB, lo que refleja la suma de todas las variantes publicadas.
 
-No se dispone de informacion sobre la licencia, los idiomas soportados, la composicion del dataset de entrenamiento ni los resultados de benchmarks, ya que la model card del repositorio se limita a listar las cuantizaciones generadas y a referenciar el modelo original.
+No obstante, la información disponible es limitada: la model card del cuantizador es fundamentalmente una guía de uso y descarga de los ficheros GGUF, sin datos sobre arquitectura, contexto, licencia, idiomas o benchmarks. Esta ficha se limita, por tanto, a lo que puede verificarse a partir de los metadatos y del contenido publicado, indicando explícitamente "no disponible" en los campos que no se han documentado.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base derivado de la familia Gemma) |
-| Parametros totales | 11.907.350.576 |
+| Arquitectura | no disponible (el nombre sugiere base Gemma; no confirmado en la model card) |
+| Parametros totales | 11.907.350.576 (11,9 B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 |
+| Idiomas soportados | en (inglés, según el campo `language` de la model card) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas); safetensors en el modelo base |
+| Formato de pesos | GGUF (cuantizaciones estáticas); modelo base en safetensors |
+| Tamano del repo | 83,4 GB (suma de todas las variantes GGUF) |
+| Libreria declarada | transformers |
+| Modelo base | XeyonAI/Helcyon-GPT-4o-12b-Gemma-4-v1.0 |
+| Fecha de creacion | 2026-11-03 |
+| Fecha de actualizacion | 2026-11-05 |
+| Descargas | 1.986 |
+| Likes | 0 |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura interna del modelo base XeyonAI/Helcyon-GPT-4o-12b-Gemma-4-v1.0 en la informacion disponible. El nombre sugiere una derivacion de la familia Gemma, y el recuento de parametros (11,9 mil millones) es coherente con un transformer denso de tamano medio, pero no se confirma ni el tipo de atencion, ni la composicion del dataset, ni si hubo fases de RLHF o DPO.
+No se dispone de información publicada sobre la arquitectura interna del modelo base en la documentación proporcionada. El identificador `Helcyon-GPT-4o-12b-Gemma-4-v1.0` sugiere una relación con la familia Gemma de Google (probablemente un ajuste fino o una variante derivada), pero la model card del cuantizador no confirma ni detalla esta circunstancia, ni aporta datos sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO o cualquier innovación técnica como decodificación especulativa o atención lineal.
 
-Respecto al proceso de cuantizacion, la model card indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que las cuantizaciones se generaron a partir de pesos en formato Hugging Face. Se marca `skip_mmproj: 1`, lo que indica que no se incluye el proyector multimodal en las cuantizaciones, por lo que estas versiones GGUF estan orientadas a inferencia de texto. No se detallan innovaciones tecnicas adicionales.
+Lo único verificable es el proceso de cuantización: mradermacher ha generado cuantizaciones estáticas (no imatrix) a partir del modelo base en formato Hugging Face, con conversión de tipo `hf` y cuantización de tensores de salida. La model card indica además que existe una variante con cuantizaciones ponderadas/imatrix en el repositorio `mradermacher/Helcyon-GPT-4o-12b-Gemma-4-v1.0-i1-GGUF`, que suele ofrecer mejor calidad por tamaño que las estáticas equivalentes. No se documenta el proceso de entrenamiento del modelo original.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el tag `conversational` indica que el modelo esta orientado a dialogos multi-turno.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere integracion con la infraestructura de endpoints de Hugging Face.
-- Inferencia local mediante llama.cpp y herramientas compatibles con GGUF.
-- Soporte de tool calling: no disponible en la informacion proporcionada.
-- Capacidades de agente o razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible en la informacion proporcionada.
-- Capacidades especiales (vision, audio, thinking mode): no disponible; el flag `skip_mmproj` indica ausencia de proyector multimodal en estas cuantizaciones.
+- Generación de texto conversacional: el modelo está etiquetado como `conversational`, lo que indica que está orientado a diálogo multi-turno.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en infraestructuras de inferencia compatibles con la API de Hugging Face.
+- Ejecución local mediante GGUF: al estar cuantizado, puede ejecutarse en llama.cpp y herramientas derivadas (Ollama, LM Studio, etc.).
+- Idiomas: la model card declara únicamente inglés (`en`); no hay evidencia de capacidades multilingües.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente o razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades especiales (modo thinking, visión, audio): no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Despliegue local de un asistente conversacional: las cuantizaciones Q4_K_M o Q5_K_M permiten ejecutar un modelo de 11,9 mil millones de parametros en GPUs de consumo con 8-12 GB de VRAM, adecuado para prototipos de chat en estaciones de trabajo.
-- Experimentacion e investigacion en entornos con recursos limitados: las variantes Q2_K y Q3_K permiten probar el modelo en hardware modesto antes de invertir en infraestructura mayor.
-- Integracion en pipelines de llama.cpp: el formato GGUF es directamente consumible por llama.cpp, lo que facilita su inclusion en aplicaciones de escritorio o servidores ligeros.
-- Evaluacion comparativa de cuantizaciones: el repositorio incluye doce niveles de cuantizacion, lo que permite medir la degradacion de calidad frente al ahorro de memoria en un caso concreto.
-- Servicio de chat en endpoints compatibles: el tag `endpoints_compatible` sugiere su uso en infraestructura de inferencia gestionada de Hugging Face.
-- Generacion de texto offline en entornos sin conectividad: al ser un modelo local en GGUF, puede ejecutarse en maquinas aisladas con llama.cpp.
+- Asistentes conversacionales locales: al disponer de cuantizaciones desde 4,9 GB (Q2_K) hasta 12,8 GB (Q8_0), el modelo puede desplegarse en estaciones de trabajo sin GPU dedicada o con GPUs de consumo para chatbots de escritorio mediante llama.cpp u Ollama.
+- Prototipado rápido de aplicaciones de diálogo: la disponibilidad de múltiples niveles de cuantización permite ajustar el equilibrio entre calidad y requisitos de hardware durante el desarrollo, empezando por Q4_K_M (7,5 GB) como opción recomendada por el autor.
+- Inferencia en entornos con VRAM limitada: la variante IQ4_XS (6,8 GB) o Q3_K_M (6,2 GB) permite ejecutar un modelo de 12 B en GPUs de 8 GB, algo inviable con los pesos completos en fp16.
+- Despliegue en CPU: las cuantizaciones Q2_K y Q3_K_S (4,9-5,6 GB) hacen posible la inferencia en CPU con RAM suficiente, útil para entornos sin acelerador.
+- Evaluación comparativa de cuantizaciones: el repositorio ofrece 11 variantes del mismo modelo, lo que facilita estudios empíricos sobre la degradación de calidad según el nivel de cuantización (el autor enlaza gráficos de perplejidad de ikawrakow).
+- Integración en pipelines con transformers: la librería declarada es `transformers`, por lo que el modelo base puede cargarse con la API estándar de Hugging Face antes de cuantizar o para fine-tuning adicional.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, segun cuantizacion y ventana de contexto):
-  - F16: en torno a 24 GB (coincide con el tamano del repo, 24,5 GB).
-  - Q8_0: en torno a 12-13 GB.
-  - Q6_K: en torno a 10 GB.
-  - Q5_K_M: en torno a 8-9 GB.
-  - Q4_K_M: en torno a 7-8 GB.
-  - Q3_K_M: en torno a 6 GB.
-  - Q2_K: en torno a 4-5 GB.
-- GPU recomendadas: A100 o H100 para F16 y Q8_0 con contextos largos; RTX 4090 (24 GB) para Q8_0 y superiores; RTX 4080/4070 Ti (12-16 GB) para Q5_K_M y Q6_K; RTX 3060 12 GB o RTX 4060 Ti 16 GB para Q4_K_M.
-- Cabe en GPU de consumo: si, desde Q4_K_M hacia abajo en GPUs de 8 GB o mas; las variantes Q2_K y Q3_K pueden caber en 6 GB.
-- Opciones de despliegue: llama.cpp, Ollama (previa importacion del GGUF), y servidores compatibles con GGUF; vLLM y TGI no soportan GGUF de forma nativa.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia según cuantización:
+  - Q2_K: 4,9 GB
+  - Q3_K_S: 5,6 GB
+  - Q3_K_M: 6,2 GB
+  - Q3_K_L: 6,7 GB
+  - IQ4_XS: 6,8 GB
+  - Q4_K_S: 7,1 GB
+  - Q4_K_M: 7,5 GB (recomendada por el autor: "fast, recommended")
+  - Q5_K_S: 8,4 GB
+  - Q5_K_M: 8,6 GB
+  - Q6_K: 9,9 GB ("very good quality")
+  - Q8_0: 12,8 GB ("fast, best quality")
+- GPU recomendadas: no disponible en la información proporcionada. Por tamaño, las variantes Q4 caben en GPUs de 8-12 GB (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070); Q6_K y Q8_0 requieren 12-16 GB (RTX 4080, RTX 4090, A100).
+- Cabe en GPU de consumo: sí, al menos las variantes Q4_K_M e inferiores en GPUs de 8 GB o más (con margen para el contexto y el KV cache).
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; el modelo base puede usarse con transformers.
+- Latencia y throughput: no disponible en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye datos de rendimiento ni especificaciones del modelo base que permitan una comparacion rigurosa con alternativas de la misma categoria.
+No se dispone de datos de benchmarks ni de especificaciones técnicas del modelo base (contexto, licencia, arquitectura) que permitan una comparación rigurosa con alternativas de la misma categoría. La model card no incluye referencias a modelos comparables. Se indica, por tanto: no disponible.
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: no se puede confirmar si el uso comercial esta permitido; es imprescindible verificar la licencia del modelo base XeyonAI/Helcyon-GPT-4o-12b-Gemma-4-v1.0 antes de cualquier despliegue en produccion.
-- Sin datos de benchmarks: no hay evidencia publicada sobre calidad, razonamiento o codigo, por lo que no se puede recomendar para tareas criticas sin evaluacion propia.
-- Sin informacion sobre sesgos: no se ha documentado la composicion del dataset ni los procesos de alineacion, lo que impide evaluar sesgos conocidos.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje; no hay documentacion especifica que lo mitigue.
-- Las cuantizaciones de baja precision (Q2_K, Q3_K_S) degradan la calidad de forma notable; se recomienda Q4_K_M o superior para uso real.
-- Las versiones GGUF omiten el proyector multimodal (`skip_mmproj: 1`), por lo que no deben usarse para tareas de vision aunque el modelo base las soportara.
-- Sin datos de idiomas: no se puede garantizar un rendimiento adecuado en castellano sin pruebas propias.
-- Repositorio sin descargas ni likes en el momento de la consulta: no hay validacion de la comunidad.
+- Información documental muy escasa: la model card del cuantizador no describe arquitectura, contexto, licencia ni datos de entrenamiento; cualquier uso en producción requiere verificar primero la ficha del modelo base `XeyonAI/Helcyon-GPT-4o-12b-Gemma-4-v1.0`.
+- Licencia no disponible: no puede confirmarse si el uso comercial está permitido; es imprescindible consultar la licencia del modelo base antes de desplegarlo.
+- Idiomas: solo se declara inglés; no hay evidencia de soporte para castellano u otros idiomas.
+- Riesgo de alucinación: inherente a los modelos generativos; no hay evaluaciones publicadas que lo cuantifiquen.
+- Sesgos: no documentados en la información disponible.
+- Degradación por cuantización: las variantes Q2_K y Q3_K_S pueden degradar notablemente la calidad; el autor recomienda Q4_K_M o superiores para uso general y sugiere las cuantizaciones imatrix (repositorio `-i1-GGUF`) como alternativa de mejor relación calidad/tamaño.
+- El nombre comercial "GPT-4o" en el identificador no implica relación con OpenAI; es una denominación del autor del modelo base.
+- Sin datos de benchmarks: no es posible validar afirmaciones de rendimiento frente a otros modelos.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Helcyon-GPT-4o-12b-Gemma-4-v1.0-GGUF
 - Modelo base: https://huggingface.co/XeyonAI/Helcyon-GPT-4o-12b-Gemma-4-v1.0
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Helcyon-GPT-4o-12b-Gemma-4-v1.0-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Helcyon-GPT-4o-12b-Gemma-4-v1.0-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfico de perplejidad por cuantización (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantización del autor: https://huggingface.co/mradermacher/model_requests
+- nethype GmbH: https://www.nethype.de/

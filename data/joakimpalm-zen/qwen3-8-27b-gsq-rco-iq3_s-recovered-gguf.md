@@ -2,114 +2,102 @@
 
 ## Resumen
 
-Qwen3.8-27B-GSQ-RCO-IQ3_S-recovered-GGUF es una cuantizacion GGUF de 27B (26.895.998.464 parametros) derivada de Qwen3.8-27B, publicada por el usuario Joakimpalm-Zen. No es un entrenamiento nuevo ni un ajuste fino del modelo base: es el fichero IQ3_S de ISTA-DASLab (GSQ-RCO) al que se le han reentrenado exclusivamente los campos de escala fp16 (`d` y `dmin`) de cada bloque cuantizado mediante destilacion de conocimiento contra el padre en BF16. Los codigos enteros, los indices de codebook, los signos, los desplazamientos de tensores y el tamanio en bytes (11.771.546.784) son identicos al fichero de origen; el unico contenido modificado son los campos de escala.
+Qwen3.8-27B-GSQ-RCO-IQ3_S-recovered-GGUF es un artefacto de investigación publicado por el usuario Joakimpalm-Zen dentro del proyecto Xyntetik. Se trata de una cuantización IQ3_S del modelo Qwen3.8-27B (26.895.998.464 parámetros) en la que se han reentrenado por destilación únicamente los campos de escala fp16 (`d`/`dmin`) de cada bloque cuantizado, manteniendo intactos los códigos enteros, el formato, la longitud en bytes y las rutas de carga del fichero fuente de ISTA-DASLab. El objetivo declarado es la "recuperación de escalas" (*scale recovery*): acercar la distribución del fichero cuantizado a la del modelo padre en BF16.
 
-El interes tecnico esta en el metodo: GSQ optimiza la asignacion de la rejilla entera y RCO reparte un tipo de cuantizacion por tensor bajo un presupuesto de tamanio, pero ninguna de las dos fases entrena atraves del modelo. En un GGUF ya fijado, la escala por bloque es el unico grado de libertad continuo y es lineal respecto al peso decodificado, de modo que puede entrenarse de extremo a extremo contra la distribucion del padre en la propia pasada forward del estudiante sin reimplementar el codec. El autor lo describe como la segunda fase de EfficientQAT aplicada a un fichero ya existente.
+El resultado es un fichero de 14,9 GB (11.771.546.784 bytes para el tensor principal) que sirve donde lo hace el original, pero que el propio autor califica explícitamente como artefacto de investigación y no como un lanzamiento de propósito general. La fidelidad medida contra la referencia float32 de Qwen es de KLD medio 0,4119 (8 veces por encima del umbral de 0,05 fijado por el proyecto) y top-1 cualificado por margen del 85,04 %, con una perplejidad de corpus de 21,54 frente a 73,29 del padre, lo que indica que su distribución de siguiente token es distinta, no una copia con más ruido.
 
-La relevancia practica es que ofrece una mejora medible de fidelidad respecto al fichero IQ3_S sin cambios de formato ni de ruta de carga: cualquier motor que lea el fichero de origen lee este. La mejora, sin embargo, es de margen estrecho y esta declarada como "pasa el umbral", no como "mejor que el origen" con significacion estadistica.
+La relevancia actual es metodológica: documenta con evidencia reproducible (registros de ejecución, logs, métricas de fidelidad y HellaSwag, código) una técnica de cirugía de modelos aplicable a otros modelos, y demuestra que retocar solo las escalas de cuantización puede mover un fichero cuantizado hacia su padre sin alterar el formato. Incluye además un cabezal de borrador MTP para decodificación especulativa.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer derivado de Qwen3.8-27B; las etiquetas del repositorio incluyen gated-deltanet, lo que apunta a capas de atencion lineal Gated DeltaNet, pero la composicion de capas no se detalla en la informacion disponible |
-| Parametros totales | 26.895.998.464 (26,9B) |
-| Parametros activos | no aplica (no se describe como MoE) |
+| Arquitectura | no disponible (modelo base Qwen3.8-27B; etiqueta `gated-deltanet` en el repo, sin detalle técnico publicado) |
+| Parametros totales | 26.895.998.464 (26,9 B) |
+| Parametros activos | no aplica (no se documenta como MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Fichero publicado en IQ3_S; la asignacion RCO del origen reparte tipos por tensor, con tensores IQ1_M, F32 y BF16 sin cuantizar en el mismo fichero; los formatos de bloque citados con campo `dmin` son Q2_K y Q4_K |
-| Idiomas soportados | no disponibles en la ficha del autor; el corpus de destilacion de escalas es prosa en ingles (Wikitext-103) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (11.771.546.784 bytes) |
+| Tipos de cuantizacion | IQ3_S (GGUF), con escalas fp16 `d`/`dmin` reentrenadas; cabezal MTP en Q8_0 |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (14,9 GB de repositorio; 11.771.546.784 bytes el fichero principal) |
 
 ## Arquitectura y entrenamiento
 
-El fichero es un GGUF IQ3_S del modelo Qwen3.8-27B, con una densidad efectiva de aproximadamente 3,50 bits por parametro (11.771.546.784 bytes para 26.895.998.464 parametros). La cuantizacion de partida la produjo ISTA-DASLab combinando GSQ (optimizacion de la rejilla entera por gradiente) y RCO (asignacion de tipo por tensor bajo restriccion de tamanio). Sobre ese fichero, el autor solo ha modificado los campos fp16 `d` de 399 tensores cuantizados (103.567.360 bloques) y los campos `dmin` donde el formato los lleva. Todo lo demas —codigos enteros, indices, signos, tensores F32, BF16 e IQ1_M, escalas de embedding y de la cabeza de salida, metadatos y offsets— es byte a byte igual al origen.
+El fichero es una cuantización IQ3_S de bloques, en la que cada bloque cuantizado almacena códigos enteros más dos campos de escala en fp16 (`d` y `dmin`). El autor conserva íntegros los códigos enteros, el layout de bytes y los offsets del fichero fuente de ISTA-DASLab, y modifica exclusivamente los campos de escala de los bloques cuantizados de 399 tensores. Los tensores no cuantizados coinciden bit a bit con el padre Qwen/Qwen3.8-27B en la revisión `1d4bf0f2`.
 
-El entrenamiento de escalas consistio en 300 pasos con 4 secuencias de 512 tokens por paso (0,6 millones de tokens en total), learning rate 3e-4 con decaimiento coseno, y una KL forward top-64 respecto al padre agrupando la cola en un unico bucket. Solo las escalas eran entrenables y se mantenia residente un bloque decodificador a la vez en una porcion de 24 GB de GPU. La mezcla de destilacion era, deliberadamente, mitad prosa de Wikitext-103, porque es en prosa donde las variantes de baja precision de este modelo se separan del padre; la composicion de la otra mitad no se detalla en la informacion disponible. Tras escribir el fichero, cada tensor parcheado se redecodifico con el decoder `gguf` de referencia y se comprobo que coincide con los pesos entrenados, que cada tensor no parcheado es identico al origen y que el mayor cambio en un peso decodificado es 0,0195. `RECOVERY.json` registra el SHA-256 del fichero fuente, la revision del padre, el hash del checkpoint de entrenamiento y el hash de salida.
+El reentrenamiento de escalas se realiza por destilación de conocimiento contra el padre en BF16, de extremo a extremo, sobre un corpus descrito como "half-prose". El método de GSQ-RCO ajusta códigos y escalas sobre datos de calibración, y la recuperación de escalas de este fichero lo desplaza hacia el padre: el KLD mejora respecto al fuente sin modificar (0,5616 y 0,4718 en las dos ventanas medidas) hasta 0,4119 y 0,4084, con significación estadística declarada (Wilcoxon sobre KLD, p = 1,7e-10 y p = 0,0017). Se incluye un cabezal de borrador MTP (`Qwen3.8-27B-MTP-Q8_0.gguf`) para decodificación especulativa, con aproximadamente 1,9x de velocidad de decodificación en llama.cpp sobre GPU y 1,1x en Runner 1.1.3 sobre CUDA (1,5x en su ruta int8 opcional).
 
 ## Capacidades
 
-- Generacion de texto autorregresiva y uso conversacional: la etiqueta `conversational` figura en el repositorio, heredada del modelo base.
-- Fidelidad de distribucion al padre BF16 en prosa: con el protocolo del autor, KLD media 0,0450 y top-1 cualificado por margen del 97,80% sobre 500 posiciones retenidas de Wikitext-2.
-- Capacidades heredadas de Qwen3.8-27B (razonamiento, codigo, matematicas, multilingue): no evaluadas ni cuantificadas en la informacion proporcionada.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponibles (la ficha no publica lista de idiomas ni evaluacion multilingue).
-- Capacidades especiales (modo thinking, vision, audio): no evaluadas. El autor indica que la evaluacion multimodal del padre no se ha realizado sobre este fichero.
+- Generación de texto conversacional: el repositorio está etiquetado como `conversational` y es compatible con endpoints.
+- Inferencia estándar de un modelo de 27 B en formato GGUF: cualquier motor que lea el fichero fuente lee este.
+- Decodificación especulativa mediante el cabezal MTP incluido en el mismo repositorio.
+- Compatibilidad con Xyntetik Runner v0.5.3 o superior en CUDA (kernels i-quant sobre tensor cores, sin fallback a CPU) y v0.5.6 o superior en Metal (kernels i-quant con codebook, verificación byte-exacta contra CPU).
+- Soporte de tool calling, agentes, razonamiento multi-paso, matemáticas, código o visión: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Ejecucion local en CPU de un modelo de 27B: al ser un GGUF de 11,77 GB con tipos IQ2/IQ3 que el runner del autor sirve en CPU, permite desplegar el modelo en maquinas sin GPU dedicada, asumiendo la latencia asociada.
-- Sustitucion directa en pipelines GGUF existentes: al conservar cabecera, lista de tensores y offsets, puede reemplazar al fichero `ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF` sin cambios de integracion y con una KLD medida inferior (0,0480 a 0,0450 en las mismas posiciones).
-- Generacion de texto en prosa y tareas de continuacion: es el dominio donde se entreno la recuperacion de escalas y donde se midio la mejora (top-1 cualificado 97,60% a 97,80%).
-- Investigacion sobre cuantizacion post hoc: sirve como caso reproducible de entrenamiento de escalas sobre un GGUF fijo, util para estudiar cuanto de la degradacion de un IQ3_S es atribuible a las escalas y no a los codigos.
-- Servicio HTTP local con `xyntetik-runner`: `runner -m Qwen3.8-27B-GSQ-RCO-IQ3_S-recovered.gguf --serve --port 8080` levanta una API compatible con motores GGUF en una estacion de trabajo, con residencia en CPU para los tipos IQ2/IQ3.
-- Base para comparativas de fidelidad entre protocolos: permite contrastar KLD variante-referencia (top-20) frente a KL teacher-student (top-64 con bucket de cola), ya que el autor publica ambas mediciones sobre el mismo fichero.
-- Despliegue en estaciones con una GPU de 24 GB: los pesos ocupan 11,77 GB, por lo que cabe con holgura en una RTX 4090 o A100 40 GB para pruebas de inferencia, siempre que el motor soporte la carga (el runner del autor no reclama residencia en GPU para estos tipos en esta version).
+- Investigación sobre cuantización: servir como caso de estudio reproducible de recuperación de escalas por destilación, comparando KLD y top-1 antes y después del reentrenamiento con el fichero fuente de ISTA-DASLab.
+- Despliegue en hardware con VRAM limitada: al ocupar 14,9 GB en disco y mantener el formato IQ3_S, permite servir un modelo de 27 B en GPUs de consumo alto o en servidores con una sola GPU de 24 GB, con la advertencia de fidelidad del autor.
+- Evaluación de pipelines de decodificación especulativa: el cabezal MTP Q8_0 permite medir la ganancia de velocidad (aproximadamente 1,9x en llama.cpp sobre GPU) en una carga de trabajo real antes de adoptarla en producción.
+- Pruebas de compatibilidad de motores de inferencia: útil para validar que un motor (llama.cpp, Xyntetik Runner u otros que lean el fichero fuente) carga correctamente ficheros GGUF con escalas modificadas y produce texto coherente.
+- Generación de texto conversacional en entornos con requisitos de licencia permisiva: al ser Apache 2.0, puede integrarse en productos internos o comerciales, siempre que se acepte que la distribución difiere de la del padre.
+- Reproducción de experimentos de cirugía de modelos: el dataset de evidencia incluye registros de ejecución, logs y código, lo que permite replicar el procedimiento sobre otros modelos o verificar las métricas declaradas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. El autor anuncia un anexo con una submuestra emparejada de HellaSwag frente al padre, pendiente de publicacion, y advierte explicitamente que la fidelidad al padre no es un benchmark de capacidad.
+| Metrica | Este fichero | Fuente ISTA-DASLab (sin modificar) | Padre Qwen3.8-27B float32 | Umbral del proyecto |
+|---|---|---|---|---|
+| KLD medio (ventana principal) | 0,4119 | 0,5616 | referencia | ≤ 0,05 |
+| Top-1 cualificado por margen (ventana principal) | 85,04 % | 82,48 % | referencia | ≥ 97 % |
+| KLD medio (posiciones 4.000-5.999) | 0,4084 | 0,4718 | referencia | ≤ 0,05 |
+| Top-1 cualificado por margen (posiciones 4.000-5.999) | 86,12 % | 86,36 % | referencia | ≥ 97 % |
+| Perplejidad de corpus | 21,54 | 53,48 | 73,29 | no disponible |
+| KLD medio (ancla anterior, 500 prefijos Wikitext-2, banda de empate 0,5 nat) | 0,0450 | no disponible | BF16 GGUF del proyecto | no disponible |
+| Top-1 cualificado por margen (ancla anterior) | 97,80 % (top-1 plano 87,20 %) | no disponible | BF16 GGUF del proyecto | no disponible |
 
-Metricas de fidelidad publicadas (protocolo `scripts/kld-compare-raw.py`, contra el padre BF16, mismas 500 posiciones retenidas de Wikitext-2, banda de empate 0,5 nats):
-
-| Fichero | KLD media | top-1 | top-1 cualificado por margen | solapamiento top-8 |
-|---|---:|---:|---:|---:|
-| IQ3_S GSQ-RCO de origen, sin modificar | 0,0480 | 86,60% | 97,60% | 0,882 |
-| Este fichero (escalas recuperadas) | 0,0450 | 87,20% | 97,80% | 0,884 |
-
-Umbral declarado por el autor: KLD <= 0,05 y top-1 cualificado por margen >= 97%. Este fichero: PASS. El intervalo de confianza del 95% emparejado sobre la diferencia de KLD es [−0,0098, +0,0038] e incluye el cero con este tamanio de muestra; el autor afirma "pasa el umbral", no "mejor que el origen".
-
-Protocolo de seleccion, usado solo durante el desarrollo y no comparable con el anterior (KL forward top-64 y acuerdo top-1 contra el padre en la pasada forward del estudiante):
-
-| Conjunto de desarrollo | KL top-64 antes → despues | top-1 antes → despues |
-|---|---|---|
-| Mixto (SmolTalk test) | 0,1939 → 0,1379 | 89,38% → 89,95% |
-| Prosa (Wikitext-2 test) | 0,0485 → 0,0437 | 89,74% → 90,64% |
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El autor menciona registros de HellaSwag en el dataset de evidencia, pero no se incluyen cifras en la model card.
 
 ## Requisitos de hardware
 
-- VRAM para los pesos: 11,77 GB (11.771.546.784 bytes, ~3,50 bits por parametro) en precision de almacenamiento; es una estimacion a partir del tamanio de fichero, no un dato publicado por el autor.
-- Overhead adicional: no cuantificado en la informacion disponible, ya que no se especifica la longitud de contexto ni el coste de cache KV. En la practica hay que sumar buffers de inferencia y cache KV proporcional al contexto configurado.
-- GPU recomendadas: A100 40 GB, H100 y RTX 4090 (24 GB) alojan los pesos con holgura; tarjetas de 16 GB (RTX 4080, 4070 Ti Super) deberian ser suficientes con contexto corto segun la estimacion de tamanio; tarjetas de 12 GB requeririan offload parcial de capas.
-- Cabe en GPU de consumo: si, en modelos con 16 GB o mas de VRAM, sujeto al soporte del motor de inferencia.
-- Residencia en GPU: el autor indica que los tipos IQ2/IQ3 de este fichero se sirven en CPU con Runner en esta version y que no reclama residencia en GPU.
-- Opciones de despliegue: `xyntetik-runner` (referencia del autor, CPU para IQ2/IQ3), llama.cpp y cualquier motor que lea el fichero de origen sin cambios; otros cargadores GGUF con soporte de IQ3_S. No aplica el despliegue en formato safetensors (vLLM, TGI) salvo conversion.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: el fichero pesa 14,9 GB en disco; en IQ3_S se necesita aproximadamente esa cantidad más overhead de contexto y caché KV, por lo que conviene prever 16-20 GB de VRAM según longitud de contexto.
+- GPU recomendadas: A100, H100 o RTX 4090 para servicio en producción; el autor valida explícitamente CUDA con Xyntetik Runner v0.5.3 o superior (kernels i-quant sobre tensor cores, sin fallback a CPU).
+- GPU de consumo: cabe en tarjetas de 24 GB (RTX 3090, RTX 4090) y previsiblemente en algunas de 16 GB con contexto reducido; no se documenta el caso de 12 GB.
+- Apple Silicon: soportado por Xyntetik Runner v0.5.6 o superior en Metal, con kernels i-quant con codebook verificados byte-exactos contra CPU.
+- Opciones de despliegue: llama.cpp, Xyntetik Runner (CUDA y Metal) y cualquier motor que lea el fichero fuente de ISTA-DASLab. vLLM, TGI u Ollama no se mencionan en la información disponible.
+- Latencia y throughput: no disponibles de forma absoluta; el cabezal MTP reporta aproximadamente 1,9x de decodificación en llama.cpp sobre GPU y 1,1x en Runner 1.1.3 sobre CUDA (1,5x en su ruta int8 opcional).
 
 ## Comparativa con modelos similares
 
-No hay datos en la informacion proporcionada sobre otros modelos comparables de terceros. La comparacion posible es interna al linaje del propio fichero:
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| Qwen3.8-27B-GSQ-RCO-IQ3_S-recovered (este) | 26,9 B | no disponible | GGUF IQ3_S | Apache 2.0 | KLD 0,41 frente a float32; escalas reentrenadas por destilación |
+| ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF | 26,9 B | no disponible | GGUF IQ3_S | Apache 2.0 | KLD 0,47-0,56 frente a float32; fichero fuente sin modificar |
+| Qwen/Qwen3.8-27B | 26,9 B | no disponible | safetensors (float32/BF16) | Apache 2.0 | Referencia de fidelidad; perplejidad de corpus 73,29 |
 
-| Aspecto | IQ3_S GSQ-RCO de origen (ISTA-DASLab) | Este fichero | Padre BF16 (Qwen3.8-27B) |
-|---|---|---|---|
-| Parametros totales | 26.895.998.464 (heredado del padre) | 26.895.998.464 | 26.895.998.464 |
-| Formato | GGUF IQ3_S | GGUF IQ3_S | no disponible (pesos sin cuantizar) |
-| Tamanio de fichero | 11.771.546.784 bytes | 11.771.546.784 bytes (identico) | no disponible |
-| KLD media vs padre | 0,0480 | 0,0450 | referencia (0 por definicion) |
-| top-1 cualificado por margen | 97,60% | 97,80% | referencia |
-| Licencia | no disponible en la informacion proporcionada | apache-2.0 | no disponible en la informacion proporcionada |
-| Contexto | no disponible | no disponible | no disponible |
-| Residencia en GPU | no reclamada para IQ2/IQ3 en Runner | no reclamada para IQ2/IQ3 en Runner | no disponible |
+No se dispone de datos de benchmarks estándar ni de otros modelos comparables de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La fidelidad al padre no es un benchmark de capacidad: las filas de KLD miden el parecido de distribuciones de siguiente token en prosa retenida, no la calidad en tareas.
-- El autor no reclama "sin perdida de calidad" y afirma que esa afirmacion no esta respaldada por la evidencia presentada.
-- Margen estrecho: 97,80% frente a un umbral del 97% sobre 500 posiciones.
-- Dos protocolos de fidelidad no intercambiables (KLD variante-referencia sobre top-20 frente a KL teacher-student sobre top-64 con cola agrupada) y ninguno equivalente a la KLD de vocabulario completo.
-- Residencia en CPU: los tipos IQ2/IQ3 de este fichero no son residentes en GPU con Runner en esta version, lo que limita el throughput en despliegues de produccion.
-- Contaminacion de datos de seleccion: el corpus de entrenamiento, los dos conjuntos de desarrollo y el corpus del arnes se usaron para construir o seleccionar este fichero; solo el anexo de benchmarks anunciado queda fuera.
-- Evaluacion multimodal no realizada sobre este fichero.
-- Lista de idiomas soportados no publicada; el corpus de destilacion de escalas es prosa en ingles.
-- Longitud de contexto no especificada, lo que impide estimar con precision el consumo de memoria en produccion.
-- Repositorio con 0 descargas y 1 "like" en el momento de la consulta: no hay validacion independiente por parte de terceros.
-- Licencia apache-2.0 declarada en el repositorio; conviene verificar las condiciones del modelo base Qwen3.8-27B antes de un uso comercial.
+- Fidelidad fuera del umbral: KLD medio 0,41 frente a la referencia float32, 8 veces el límite de 0,05 del proyecto, y top-1 cualificado por margen del 85-86 % frente al 97 % exigido.
+- No es una cuantización fiel: es un derivado aprendido de Qwen3.8-27B; su distribución de siguiente token es distinta de la del padre, no una versión con más ruido.
+- El autor lo declara explícitamente artefacto de investigación, no un lanzamiento de propósito general; no debe tratarse como sustituto del padre en producción sin evaluar el impacto en la tarea concreta.
+- La métrica favorable del ancla anterior (KLD 0,0450, top-1 97,80 %) solo es válida para 500 prefijos cortos de Wikitext-2 con banda de empate de 0,5 nat, y no describe el comportamiento en textos más largos o de otro dominio.
+- Riesgo de alucinación y sesgos: no documentados en la información disponible; al ser un derivado con distribución alterada, la evaluación de sesgos y alucinaciones del padre no es directamente trasladable.
+- Idiomas soportados y longitud de contexto: no disponibles; no se puede garantizar el comportamiento multilingüe ni en contextos largos.
+- Requisitos de motor: en CUDA exige Xyntetik Runner v0.5.3 o superior para servir el fichero completo sin fallback a CPU; en Metal, v0.5.6 o superior.
+- Licencia Apache 2.0 permite uso comercial, pero la alteración de las escalas y la divergencia respecto al padre deben tenerse en cuenta en cualquier auditoría de modelo.
 
 ## Enlaces
 
-- Hugging Face (este modelo): https://huggingface.co/Joakimpalm-Zen/Qwen3.8-27B-GSQ-RCO-IQ3_S-recovered-GGUF
-- Modelo base (cuantizacion de origen): https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF
-- Modelo padre: https://huggingface.co/Qwen/Qwen3.8-27B
-- Referencias arXiv citadas en las etiquetas del repositorio (contenido no verificado en esta ficha): https://arxiv.org/abs/2604.18556 y https://arxiv.org/abs/2605.00649
-- Las busquedas web realizadas no devolvieron ningun resultado relevante sobre este modelo ni sobre su metodo de recuperacion de escalas.
+- Modelo en Hugging Face: https://huggingface.co/Joakimpalm-Zen/Qwen3.8-27B-GSQ-RCO-IQ3_S-recovered-GGUF
+- Modelo base (GGUF de ISTA-DASLab): https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF
+- Modelo original: https://huggingface.co/Qwen/Qwen3.8-27B
+- Colección del experimento (Model Surgery and Scale Recovery): https://huggingface.co/collections/Joakimpalm-Zen/xyntetik-research-model-surgery-and-scale-recovery-6aa98bab0ecb9723f310c770
+- Dataset de evidencia (registros, logs, fidelidad y HellaSwag, código): https://huggingface.co/datasets/Joakimpalm-Zen/Qwen3.8-27B-GSQ-RCO-scale-recovery-evidence
+- Repositorio Xyntetik Runner: https://github.com/Joakimpalm-Zen/xyntetik-runner
+- Fila de soporte en el roster (fichero principal): https://github.com/Joakimpalm-Zen/xyntetik-runner/blob/main/docs/model-support.md#qwen3.8-27b-gsq-rco-iq3_s-recovered
+- Fila de soporte en el roster (cabezal MTP): https://github.com/Joakimpalm-Zen/xyntetik-runner/blob/main/docs/model-support.md#qwen3.8-27b-mtp-q8_0
+- Resultados de la comunidad: https://github.com/Joakimpalm-Zen/xyntetik-runner/blob/main/docs/community-results.md
+- Papers citados en las etiquetas: arXiv:2604.18556 y arXiv:2605.00649 (sin título ni detalle en la información disponible)

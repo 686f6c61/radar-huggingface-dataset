@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "praveen-ritual/ritual-pii-redactor",
+  "slug": "praveen-ritual-ritual-pii-redactor",
+  "author": "praveen-ritual",
+  "url": "https://huggingface.co/praveen-ritual/ritual-pii-redactor",
+  "created_at": "2026-11-20T01:39:26.000Z",
+  "updated_at": "2026-11-20T01:39:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "pii",
+    "multilingual",
+    "base_model:praveen-ritual/pii-redactor",
+    "base_model:finetune:praveen-ritual/pii-redactor",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117517855,
+  "parameters_human": "117.5M",
+  "storage_bytes": 936347937,
+  "storage_human": "936 MB",
+  "context_length": null,
+  "base_model": "praveen-ritual/pii-redactor",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

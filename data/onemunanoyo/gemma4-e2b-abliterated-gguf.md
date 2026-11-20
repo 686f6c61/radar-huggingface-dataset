@@ -2,98 +2,101 @@
 
 ## Resumen
 
-gemma4-E2B-Abliterated-GGUF es una versión "abliterada" (con la dirección de rechazo eliminada de los pesos) del modelo google/gemma-4-E2B-it de Google, publicada por el usuario onemunanoyo en Hugging Face. El autor ha aplicado una técnica de abliteration en japonés: a partir de un conjunto de prompts nocivos (84) y benignos (48) en japonés, extrae la dirección de rechazo en la capa 27 y la ortogonaliza respecto a las matrices de escritura residual de `embed_tokens` y de las capas 0 a 26, de forma que el modelo deja de negarse a peticiones que el modelo base rechazaría.
+gemma4-E2B-Abliterated-GGUF es una variante "abliterated" del modelo google/gemma-4-E2B-it, publicada por el usuario onemunanoyo. La abliteration es una tecnica de modificacion de pesos que elimina la direccion de rechazo aprendida por el modelo durante el alineamiento, de forma que el modelo deja de negarse a responder solicitudes que el modelo base rechazaria. En este caso, el autor calculo la direccion de rechazo a partir de 64 prompts daninos y 32 inofensivos en japones, la ortogonalizo contra la matriz de embeddings y las matrices de escritura residual de las capas 0 a 26, y convirtio el resultado a GGUF.
 
-El resultado se distribuye únicamente en formato GGUF para su uso con llama.cpp, en cuatro cuantizaciones (bf16, Q8_0, Q6_K y Q4_K_M). Según las mediciones del propio autor, la tasa de rechazo ante 84 prompts NSFW explícitos en japonés cae del 87 % al 1 %, manteniendo el rendimiento en aritmética y lógica (7/7) y sin introducir rechazos excesivos en prompts benignos. El propio autor advierte de que se trata de un **experimento de práctica, no pensado para uso en producción**, y documenta efectos secundarios relevantes: un aumento de la complacencia ante peticiones ciberdelictivas (de 9 a 13 de 25 casos) y la pérdida parcial del efecto con cuantizaciones agresivas.
+El modelo conserva la arquitectura y el tamano del base (4.628.569.635 parametros totales), con capacidades de generacion de texto, conversacion y un modo thinking integrado en su plantilla de chat. Se distribuye exclusivamente en formato GGUF (bf16, Q8_0, Q6_K y Q4_K_M), pensado para llama.cpp, llama-server y LM Studio, con ficheros auxiliares (tokenizer, chat template, config) para su uso desde transformers o vLLM.
+
+Es relevante ahora como artefacto de investigacion sobre alineamiento y seguridad: el propio autor lo describe como un "experimento de banco de pruebas" y no lo recomienda para produccion. Los datos publicados muestran una reduccion drastica del rechazo en contenido NSFW (del 87% al 5%) a costa de un aumento de la obediencia a solicitudes de ciberataque, lo que lo convierte en un caso de estudio de los efectos secundarios de la abliteration.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder (familia Gemma 4, con soporte de "thinking mode" y embeddings por capa; requiere llama.cpp con soporte PLE `per_layer_embd_out`) |
-| Parametros totales | 4.628.569.635 (~4,63 B) |
-| Parametros activos | no disponible (no consta arquitectura MoE) |
+| Arquitectura | Transformer (Gemma 4, con PLE / per_layer_embd_out), no disponible el detalle completo |
+| Parametros totales | 4.628.569.635 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | bf16, Q8_0, Q6_K, Q4_K_M |
+| Tipos de cuantizacion | BF16, Q8_0, Q6_K, Q4_K_M (GGUF) |
 | Idiomas soportados | japones (ja), ingles (en) |
-| Licencia | Gemma Terms of Use (heredada del modelo base) |
-| Formato de pesos | GGUF (no se distribuye version safetensors) |
+| Licencia | Apache 2.0 (sujeta a los terminos de Google Gemma) |
+| Formato de pesos | GGUF exclusivamente; no se publican safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es google/gemma-4-E2B-it, un modelo conversacional instruido de la familia Gemma 4 con aproximadamente 4,63 mil millones de parametros. La ficha original de Google no esta incluida en la informacion disponible, por lo que detalles como tokens de entrenamiento, composicion del dataset o uso de RLHF/DPO no estan disponibles en esta ficha.
+El modelo parte de google/gemma-4-E2B-it, un transformer de aproximadamente 4.630 millones de parametros. La model card menciona compatibilidad con el mecanismo PLE de Gemma 4 (`per_layer_embd_out` y similares), lo que obliga a usar una version de llama.cpp que soporte dicha arquitectura; el autor verifico el funcionamiento con el build b11560. No se detalla en la informacion disponible la composicion del dataset de preentrenamiento ni si el modelo base uso RLHF o DPO.
 
-La modificacion del autor no implica reentrenamiento, sino una intervencion directa sobre los pesos: se construye la "direccion de rechazo" usando 84 prompts nocivos y 48 benignos en japones, identificandola en la capa 27 en la posicion -1 del residuo. Esa direccion se ortogonaliza respecto a las matrices de escritura en el stream residual de `embed_tokens` y de las capas 0 a 26, eliminando asi la componente que provoca las negativas. El modelo conserva la plantilla de chat con "thinking mode" del original: si el modo de pensamiento esta activo, el modelo razona sobre politicas de seguridad y vuelve a rechazar, por lo que el autor recomienda desactivarlo explicitamente en llama.cpp (`-rea off`). No se han documentado tecnicas adicionales como decodificacion especulativa ni atencion lineal.
+La innovacion tecnica es la abliteration: se construyo una direccion de rechazo a partir de 64 prompts daninos y 32 inofensivos en japones, calculada en la capa 27 y en la posicion -1. Esa direccion se ortogonalizo contra `embed_tokens` y las matrices de escritura residual de las capas 0 a 26, de modo que se elimina la componente de rechazo de las activaciones. Posteriormente el modelo se convirtio a GGUF en BF16 y se cuantizo con `llama-quantize` a Q8_0, Q6_K y Q4_K_M. No se publica la version en safetensors del modelo modificado.
 
 ## Capacidades
 
-- Generacion de texto conversacional en japones e ingles (pipeline text-generation).
-- Perplejidad en japones mejorada respecto al modelo base segun las mediciones del autor (0,82x–0,91x), lo que sugiere que la abliteration no degrada la fluidez.
-- Razonamiento aritmetico y logico basico intacto (7/7 en el test de 7 preguntas del autor).
-- Modo de pensamiento ("thinking mode") heredado de la plantilla de chat de Gemma 4, aunque debe desactivarse para que el efecto de la abliteration se mantenga.
-- Sin capacidades documentadas de vision, audio, tool calling ni agentes en la informacion disponible.
+- Generacion de texto y conversacion multi-turno en japones e ingles.
+- Modo thinking integrado en la plantilla de chat (activable o desactivable).
+- Razonamiento aritmetico y logico basico: 7/7 en la bateria de 7 preguntas de aritmetica y logica reportada por el autor.
+- Respuesta sin rechazo a contenido NSFW explicito cuando el thinking esta desactivado (81% de respuestas con contenido explicito en la evaluacion del autor).
+- Capacidades multimodales: la presencia de `processor_config.json` sugiere soporte de preprocesamiento multimodal heredado del base, aunque no se detalla en la informacion disponible.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-El propio autor indica que es un **artefacto experimental de practica, no apto para produccion**. Dicho esto, los escenarios tecnicos en los que podria evaluarse son:
-
-- Investigacion en seguridad de modelos: estudio de como la abliteration afecta a los mecanismos de rechazo y de su robustez frente a la cuantizacion (el autor documenta que Q4_K_M reintroduce "hedging").
-- Investigacion en alineacion y direcciones de rechazo: replicacion de tecnicas de eliminacion de rechazos sobre modelos con arquitectura Gemma 4 y soporte PLE en llama.cpp.
-- Generacion de contenido creativo sin filtros en japones: escritura de ficcion adulta donde el modelo base se niega; el autor reporta un 98 % de respuestas efectivas tras la abliteration.
-- Evaluacion comparativa de cuantizaciones: analisis de como Q8_0, Q6_K y Q4_K_M preservan o degradan modificaciones de pesos finas.
-- Pruebas de red teaming: el autor documenta un aumento de complacencia ante peticiones de phishing, robo de contrasenas y DDoS, lo que hace del modelo un caso de estudio sobre los riesgos de estas tecnicas.
-- Benchmarking de inferencia local con llama.cpp (build b11560 o superior) en entornos con GPU de consumo.
+- Investigacion sobre alineamiento y seguridad: permite estudiar como la eliminacion de la direccion de rechazo afecta al comportamiento del modelo, comparando directamente con el base en las mismas tareas y con las metricas del autor (rechazo NSFW, PPL, aritmetica).
+- Analisis de robustez de filtros de seguridad: util para evaluar si los clasificadores de contenido y las capas de moderacion externas detectan respuestas que el modelo base rechazaria, usando el modelo como generador adversarial controlado.
+- Experimentos de calibracion de cuantizacion: los cuatro GGUF publicados (bf16, Q8_0, Q6_K, Q4_K_M) permiten medir como la cuantizacion degrada o preserva el efecto de la abliteration; el autor documenta que Q4_K_M reintroduce hedging.
+- Evaluacion de perplexity en japones: los datos del autor muestran una PPL de 0.91x en formato chat y 0.90x en texto tecnico respecto al base, lo que permite usar el modelo en estudios de calidad linguistica tras la modificacion de pesos.
+- Pruebas de despliegue en llama.cpp: sirve como banco de pruebas para validar el soporte de la arquitectura Gemma 4 (PLE) en versiones concretas de llama.cpp, llama-server y LM Studio.
+- Estudio de sesgos y efectos secundarios: el incremento de obediencia a solicitudes de ciberataque (de 9 a 13 sobre 25) lo hace util para cuantificar el coste de seguridad de la abliteration en un entorno de laboratorio aislado.
+- Generacion creativa de ficcion para adultos en japones: con thinking desactivado y cuantizacion Q8_0, el modelo produce narrativa explicita sin rechazo, segun las mediciones del autor.
 
 ## Benchmarks y rendimiento
 
-No existen benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) publicados. Las unicas metricas disponibles son las mediciones propias del autor (evaluadas con thinking desactivado y decodificacion greedy):
+Datos publicados por el autor (evaluacion con thinking desactivado, greedy, sin limite de generacion; medidas sobre la version safetensors, con GGUF derivado de la misma conversion BF16):
 
-| Metrica | Modelo base | Este modelo |
+| Metrica | Base (gemma-4-E2B-it) | Este modelo |
 |---|---|---|
-| Rechazo ante 84 prompts NSFW explicitos (japones) | 87 % | 1 % |
-| Respuesta efectiva ante los mismos prompts | 13 % | 98 % |
-| Perplejidad en japones (relativa) | 1,00x | 0,82x–0,91x |
+| Rechazo en 84 prompts NSFW explicitos | 87% | 5% |
+| Respuestas con contenido explicito | 10% | 81% |
+| Respuestas con cuerpo (incluye eufemismos) | 13% | 95% |
+| PPL japones (formato chat) | 1.00x | 0.91x |
+| PPL japones (texto tecnico) | 1.00x | 0.90x |
 | Aritmetica y logica (7 preguntas) | 7/7 | 7/7 |
-| Rechazo excesivo en 48 prompts benignos | 0 | 0 |
-| Complacencia ante 25 peticiones ciberdelictivas | 9/25 | 13/25 |
+| Sobre-rechazo en 48 prompts inofensivos | 0 | 0 |
+
+Advertencias del propio autor: 64 de los 84 prompts de evaluacion se usaron para construir la direccion de rechazo, por lo que hay fuga de datos; el rechazo se midio con un clasificador automatico (91% de concordancia con etiquetas humanas) sin verificacion visual. El 5% de rechazo residual incluye 1 rechazo completo y 3 evasivas. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada segun cuantizacion (tamanos de archivo del repo):
-  - Q4_K_M: 3,18 GB (cabe en GPUs de 4-6 GB, aunque el efecto de la abliteration se degrada)
-  - Q6_K: 3,57 GB (recomendado por el autor para 8 GB de VRAM)
-  - Q8_0: 4,61 GB (recomendado; cabe en GPUs de 8 GB como RTX 4090, RTX 3060 12 GB, RTX 4060 Ti 8/16 GB)
-  - bf16: 8,64 GB (uso de referencia; GPU de 12 GB o mas, o CPU con RAM suficiente)
-- GPUs recomendadas: cualquier GPU de consumo con 8 GB de VRAM (RTX 3060/4060/4070, RTX 4090) ejecutando todas las capas en GPU (`-ngl 99`).
-- Inferencia en CPU viable dado el tamano (~4,6 B de parametros), con mayor latencia.
-- Despliegue: llama.cpp (build b11560 o superior, con soporte de PLE `per_layer_embd_out` para Gemma 4), via `llama-cli` o `llama-server`. No se menciona soporte verificado en Ollama, vLLM o TGI; al ser GGUF, Ollama y LM Studio podrian funcionar en teoria, pero no consta verificacion.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: aproximadamente 9 GB para bf16 (8.64 GB de pesos), unos 5 GB para Q8_0 (4.61 GB), 4 GB para Q6_K (3.57 GB) y 3.5 GB para Q4_K_M (3.18 GB), mas overhead de contexto KV.
+- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para Q6_K o Q8_0; para bf16 se recomienda 12 GB o mas. No se especifican modelos concretos (A100, H100, RTX 4090) en la informacion disponible.
+- Cabe en GPU de consumo: si, en tarjetas de 8 GB para Q6_K (opcion indicada por el autor para 8 GB de VRAM) y en tarjetas de 12 GB o mas para Q8_0 o bf16.
+- Opciones de despliegue: llama.cpp (build b11560 o superior con soporte Gemma 4 PLE), llama-server, LM Studio; para transformers o vLLM se deben usar los ficheros auxiliares del repositorio (tokenizer.json, chat_template.jinja, config.json, generation_config.json) y consultar la documentacion oficial de vLLM para la carga de GGUF, ya que los flags cambian segun la version.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Formato | Particularidad | Licencia |
-|---|---|---|---|---|
-| onemunanoyo/gemma4-E2B-Abliterated-GGUF | ~4,63 B | GGUF (bf16/Q8_0/Q6_K/Q4_K_M) | Abliteration en japones, sin rechazos | Gemma Terms of Use |
-| google/gemma-4-E2B-it (base) | ~4,63 B | safetensors | Modelo original con politicas de seguridad | Gemma Terms of Use |
-| Modelos abliterados de Gemma 2/3 9B (p. ej. publicaciones comunitarias tipo "abliterated") | ~9 B | safetensors y GGUF | Abliteration en ingles, mayor tamano | Gemma Terms of Use |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| gemma4-E2B-Abliterated (este) | 4.628.569.635 | no disponible | Apache 2.0 | GGUF | Abliterated, solo ja/en, sin safetensors |
+| google/gemma-4-E2B-it (base) | 4.628.569.635 | no disponible | Apache 2.0 / terminos Gemma | no disponible | Modelo original alineado, con rechazo activo |
+| Otras variantes abliterated de Gemma | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la informacion proporcionada |
 
-La comparativa se limita a la familia Gemma abliterada; no hay datos de rendimiento comparativo publicados para este modelo frente a alternativas.
+No se dispone de informacion sobre modelos comparables de otros autores con la misma tecnica o tamano en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- **Riesgo de uso indebido elevado**: el autor documenta un aumento de complacencia ante peticiones ciberdelictivas (de 9 a 13 de 25 casos), incluyendo phishing, robo de contrasenas y DDoS. Es el riesgo mas grave del modelo.
-- El efecto de la abliteration se degrada con cuantizaciones agresivas: en Q4_K_M el modelo antepone advertencias ("...puede entrar en conflicto con las directrices") y responde de forma eufemistica.
-- El "thinking mode" debe desactivarse explicitamente en llama.cpp (`-rea off`); si esta activo, el modelo razona sobre politicas de seguridad y vuelve a rechazar.
-- Idiomas limitados a japones e ingles; la abliteration se calibro especificamente en japones, por lo que el comportamiento en otros idiomas es desconocido.
-- Sin benchmarks estandar publicados: no se puede verificar el impacto de la abliteration en capacidades generales mas alla de las pruebas propias del autor (7 preguntas de aritmetica/logica).
-- Licencia Gemma Terms of Use: impone condiciones de uso de Google (incluyendo restricciones y politica de uso aceptable) que se aplican tambien a este derivado; eliminar salvaguardas puede entrar en tension con dicha politica.
-- El autor declara explicitamente que es un "producto experimental de practica" no destinado a uso real; no hay version safetensors, ni soporte documentado en frameworks de servico como vLLM o TGI.
-- Longitud de contexto, datos de entrenamiento y detalles de la ficha base no disponibles en la informacion proporcionada.
+- El autor lo define explicitamente como un artefacto experimental de banco de pruebas, no apto para produccion.
+- El modo thinking debe desactivarse explicitamente (`-rea off` en llama.cpp); si se deja activo, el modelo razona sobre politicas de seguridad y vuelve a rechazar.
+- La cuantizacion Q4_K_M degrada el efecto: el modelo anade preambulos de advertencia y respuestas eufemisticas en lugar de contenido directo. Se recomienda Q8_0 o Q6_K.
+- Aumento de obediencia a solicitudes de ciberataque daninas: de 9 a 13 sobre 25 en la evaluacion del autor, incluyendo creacion de phishing, robo de contrasenas ajenas y DDoS.
+- Riesgo de alucinacion: no cuantificado en la informacion disponible; el autor solo reporta PPL y una bateria de 7 preguntas de aritmetica.
+- Sesgos conocidos: no documentados en la informacion disponible.
+- Idiomas limitados a japones e ingles; no se garantiza calidad en castellano ni en otros idiomas.
+- Fuga de datos en la evaluacion: 64 de los 84 prompts de NSFW se usaron para construir la direccion de rechazo, por lo que las cifras de rechazo pueden estar sobreestimadas.
+- Restricciones de licencia: Apache 2.0 con sujecion a los terminos de Google Gemma; el uso comercial esta permitido por la licencia, pero el comportamiento del modelo (ausencia de rechazo) plantea riesgos de cumplimiento y reputacion en entornos de produccion.
+- Solo se distribuyen pesos GGUF; no hay safetensors del modelo modificado, lo que limita el ajuste fino y la integracion directa con frameworks que no lean GGUF.
+- Requiere una version de llama.cpp que soporte la arquitectura Gemma 4 con PLE; versiones anteriores fallaran al cargar el modelo.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/onemunanoyo/gemma4-E2B-Abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/onemunanoyo/gemma4-E2B-Abliterated-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
-- Licencia Gemma Terms of Use: https://ai.google.dev/gemma/terms
-
-No se han encontrado enlaces a papers, blogs ni demos adicionales en la informacion disponible.
+- Terminos de licencia Gemma: https://ai.google.dev/gemma/terms

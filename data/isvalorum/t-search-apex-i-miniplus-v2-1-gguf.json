@@ -62,7 +62,7 @@
     "imatrix"
   ],
   "likes": 1,
-  "downloads_30d": 1235,
+  "downloads_30d": 1246,
   "trending_score": 0,
   "parameters": 35505251456,
   "parameters_human": "35.51B",
@@ -82,31 +82,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Facebook",
-      "url": "https://www.facebook.com/",
-      "snippet": "Connect and share with friends, family, and the world on Facebook."
-    },
-    {
-      "title": "Log into Facebook",
-      "url": "https://www.facebook.com/login.php/",
-      "snippet": "Email or mobile number Password"
-    },
-    {
-      "title": "Facebook",
-      "url": "https://l.facebook.com/facebook/",
-      "snippet": "There's a new way to enhance your Facebook experience. Swipe to see the Facebook Plus features included with your Meta One …"
-    },
-    {
-      "title": "Facebook",
-      "url": "https://apps.facebook.com/r.php/",
-      "snippet": "Get started on Facebook Create an account to connect with friends, family and communities of people who share your interests."
-    },
-    {
-      "title": "Log Into Facebook",
-      "url": "https://secure.facebook.com/login/",
-      "snippet": "Log into Facebook to start sharing and connecting with your friends, family, and people you know."
-    }
-  ]
+  "sources": []
 }

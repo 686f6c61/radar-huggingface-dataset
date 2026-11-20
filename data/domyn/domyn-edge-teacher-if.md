@@ -2,122 +2,120 @@
 
 ## Resumen
 
-Domyn Edge Teacher IF es un modelo de lenguaje denso de 4B parámetros desarrollado por Domyn, derivado de Domyn Edge SFT mediante una etapa de ajuste supervisado (SFT) y una ronda de GRPO centrada en problemas de seguimiento de instrucciones y tool calling con respuesta final verificable. Forma parte del segundo paquete de la liberación por fases de la familia Domyn Edge, un proyecto de modelo agéntico compacto publicado de forma abierta junto con sus recetas, checkpoints intermedios y datos de post-entrenamiento. Su arquitectura y tokenizador son idénticos a los de Domyn Edge SFT, con pesos almacenados en bfloat16 y una ventana de contexto de 131.072 tokens (`max_position_embeddings`), que en despliegue se sirve a 128k.
+Domyn Edge Teacher IF es un modelo de lenguaje denso de 4B parámetros (3.928.787.968 según los pesos en safetensors) desarrollado por Domyn. Se trata de un modelo "profesor" de dominio especializado en seguimiento de instrucciones y llamada a funciones, construido a partir de Domyn Edge SFT mediante un ajuste supervisado específico (IF SFT) seguido de un entrenamiento con GRPO sobre problemas de instrucciones y tool calling con respuestas verificables. No es un asistente de propósito general, sino una pieza de la infraestructura de post-entrenamiento de Domyn.
 
-El modelo no está pensado como asistente de propósito general, sino como uno de los profesores de dominio del protocolo de destilación on-policy multi-profesor (MOPD) de Domyn Edge: en esa etapa, el estudiante genera sus propias respuestas y cada profesor las puntúa token a token en su dominio. Este profesor concreto cubre el dominio de seguimiento de instrucciones y function calling, y se libera para investigación y reproducibilidad. Su relevancia actual radica en que permite reproducir el pipeline de post-entrenamiento de la familia y en que ofrece un punto de partida especializado en IF y tool calling sobre una base pequeña y desplegable en hardware modesto.
+Su función es actuar como uno de los profesores de dominio dentro de la etapa de destilación on-policy multi-profesor (MOPD) del protocolo de post-entrenamiento de Domyn: el estudiante genera sus propias respuestas y cada profesor las puntúa token a token en su dominio. Por eso se publica bajo licencia Apache 2.0 y con pesos abiertos, orientado a investigación y reproducibilidad.
 
-La licencia Apache 2.0 y el soporte de 13 idiomas lo hacen apto para experimentación y ajuste fino en entornos con requisitos de soberanía y cumplimiento normativo europeo, un eje explícito en la comunicación del proyecto. No obstante, sus capacidades fuera de IF y tool calling no se entrenaron más allá de la base SFT, y el propio autor advierte de que no debe emplearse como asistente general.
+La relevancia actual reside en dos factores: por un lado, su rendimiento en tareas de seguimiento de instrucciones estricto (IFBench 66.0, IFEval 92.8, IFStruct 92.2), muy por encima de alternativas de tamaño similar como Qwen3.5 4B; por otro, su formato completamente abierto, que permite reproducir pipelines de destilación y evaluar técnicas de post-entrenamiento con RL verificable sobre modelos pequeños.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (misma arquitectura y tokenizador que Domyn Edge SFT) |
-| Parametros totales | 4B |
-| Parametros activos | no disponible (modelo denso, no MoE) |
-| Longitud de contexto | 131.072 tokens (`max_position_embeddings`); servido a 128k |
-| Tipos de cuantizacion | no disponible (pesos publicados en bfloat16) |
+| Arquitectura | Transformer denso (misma arquitectura y tokenizer que Domyn Edge SFT) |
+| Parametros totales | 3.928.787.968 (~3,9B) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | 128k tokens (según la configuración de evaluación del autor) |
+| Tipos de cuantizacion | No disponible (pesos publicados en bfloat16) |
 | Idiomas soportados | en, it, es, fr, de, pt, ru, zh, ja, ar, nl, id, tr |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (bfloat16), compatible con Transformers y vLLM |
+| Formato de pesos | safetensors (bfloat16) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer denso de 4B parámetros que hereda íntegramente la arquitectura y el tokenizador de Domyn Edge SFT, por lo que se carga y sirve del mismo modo que su base. El entrenamiento consta de dos etapas sobre Domyn Edge SFT: primero un ajuste supervisado (SFT) cuyos detalles concretos aparecen como pendientes (TODO) en la model card, y después una ronda de GRPO (Group Relative Policy Optimization) asíncrona sobre problemas de seguimiento de instrucciones y tool calling con una única respuesta final verificable. Los pesos se almacenan en bfloat16.
+Domyn Edge Teacher IF es un transformer denso de aproximadamente 3,9B parámetros que reutiliza la arquitectura y el tokenizer de Domyn Edge SFT, su modelo base. El entrenamiento se estructuró en dos etapas: primero un ajuste supervisado especializado (IF SFT) sobre una mezcla curada de muestras de seguimiento de instrucciones y uso de herramientas (dataset `domyn/Domyn-Edge-Teacher-IF-Mix`), durante dos épocas; después, un entrenamiento con GRPO (Group Relative Policy Optimization) asíncrono sobre problemas de instrucciones y tool calling con respuestas verificables.
 
-La innovación metodológica no está en el bloque arquitectónico sino en el rol del modelo dentro del protocolo de post-entrenamiento: actúa como profesor de dominio en la etapa MOPD, puntuando token a token los rollouts del estudiante en su especialidad. La plantilla de chat es la de Domyn Edge SFT sin cambios y es la empleada tanto durante el entrenamiento GRPO como en la evaluación. El modelo razona primero y termina con la respuesta final en el formato solicitado por el usuario.
+La innovación principal no está en la arquitectura, sino en el rol del modelo dentro del pipeline: es un profesor de dominio que puntúa rollouts del estudiante token a token en la etapa MOPD. El modelo razona antes de emitir la respuesta final, y la plantilla de chat (idéntica a la de Domyn Edge SFT) abre el turno de sistema con una línea de identidad fija ("You are Domyn Edge, a model trained by Domyn."). Las respuestas de entrenamiento se limitaron a 64k tokens.
 
 ## Capacidades
 
-- Generación de texto con razonamiento previo a la respuesta final (modo thinking activado en la evaluación).
-- Seguimiento estricto de instrucciones: formatos, restricciones y consignas verificables.
-- Tool calling y function calling, con parsers compatibles con vLLM (`qwen3_coder` para tool calls, `qwen3` para razonamiento).
-- Razonamiento matemático, incluido multilingüe (evaluado en MGSM en de, en, es, fr y ru).
-- Conocimiento y razonamiento científico (evaluado en GPQA Diamond).
-- Capacidades agénticas y de resolución de issues de software (evaluado en SWE-bench Verified).
-- Generación de código (evaluado en LiveCodeBench).
-- Manejo de contexto largo hasta 128k tokens (evaluado en RULER 128k).
-- Soporte multilingüe en 13 idiomas: en, it, es, fr, de, pt, ru, zh, ja, ar, nl, id, tr.
-- Puntuación token a token de rollouts para destilación on-policy (uso previsto como profesor).
+- Generación de texto conversacional multi-turno con razonamiento previo a la respuesta final.
+- Seguimiento estricto de instrucciones (formato, restricciones, estructuras), con rendimiento destacado en IFBench, IFEval e IFStruct.
+- Llamada a funciones y tool calling (BFCL v4 en sus variantes non-live, live, multi-turn y memory).
+- Razonamiento matemático, incluido matemático multilingüe (AIME 2026, MGSM en de, en, es, fr, ru).
+- Razonamiento de conocimiento general (GPQA Diamond).
+- Capacidades de código y resolución de problemas de ingeniería (LiveCodeBench, SWE-bench Verified).
+- Soporte multilingüe en 13 idiomas: inglés, italiano, español, francés, alemán, portugués, ruso, chino, japonés, árabe, neerlandés, indonesio y turco.
+- Modo "thinking" activable, con razonamiento extenso en problemas difíciles.
 
 ## Casos de uso
 
-- Destilación on-policy multi-profesor: usar el modelo como profesor de dominio IF/tool calling para puntuar token a token los rollouts de un estudiante en la etapa MOPD, reproduciendo el protocolo de Domyn Edge.
-- Reproducción de investigación en post-entrenamiento: replicar la receta SFT + GRPO sobre una base de 4B para estudiar el efecto del RL con recompensas verificables en seguimiento de instrucciones.
-- Generación de datos sintéticos de instrucciones y tool calls: producir pares de instrucción/respuesta con formato estricto y respuestas verificables para ampliar datasets de entrenamiento.
-- Evaluación de robustez en IF: emplear el modelo como referencia o juez de cumplimiento de restricciones de formato en pipelines de evaluación propios (IFBench, IFEval, IFStruct).
-- Prototipado de agentes con function calling en local: servir el modelo con vLLM a 128k y parsers `qwen3`/`qwen3_coder` para probar flujos de llamadas a herramientas en hardware de una sola GPU.
-- Ajuste fino específico de dominio sobre una base especializada en IF: partir de este checkpoint para tareas reguladas que exijan ejecución on-premise y cumplimiento del EU AI Act, gracias a la licencia Apache 2.0.
-- Experimentación multilingüe en 13 idiomas: probar el comportamiento de instrucciones y tool calling en lenguas europeas y asiáticas cubiertas por el modelo.
+- Destilación on-policy multi-profesor: usar el modelo como profesor de dominio que puntúa token a token los rollouts de un estudiante en tareas de instrucciones y tool calling, reproduciendo la etapa MOPD del pipeline de Domyn.
+- Evaluación de técnicas de RL verificable: servir como referencia para comparar GRPO con otras variantes (PPO, DPO) sobre problemas con respuesta comprobable, gracias a que el modelo y los datos están abiertos.
+- Generación de datos sintéticos de alta calidad para instrucciones estrictas: producir pares instrucción-respuesta que respeten restricciones de formato y estructura, útiles para aumentar datasets de SFT de modelos pequeños.
+- Investigación en seguimiento de instrucciones: analizar por qué un modelo de 4B alcanza 92.8 en IFEval y 92.2 en IFStruct, y qué tipos de instrucciones siguen fallando (IFBench en 66.0 deja margen claro).
+- Benchmarking de tool calling en agentes: emplear las puntuaciones BFCL v4 (86.9 en non-live, 80.3 en live) como línea base para evaluar nuevos modelos en llamada a funciones.
+- Estudio de razonamiento largo: analizar el comportamiento del modelo en problemas de matemáticas y código con generaciones de decenas de miles de tokens, controlando el límite de 64k tokens usado en entrenamiento.
+- Reproducibilidad de pipelines abiertos: al publicarse pesos, datos de post-entrenamiento y receta, sirve para replicar experimentos de post-entrenamiento en entornos académicos con recursos limitados.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card (porcentajes). avg@10 es la precisión media sobre 10 rollouts por problema; avg@32 sobre 32 muestras.
+Comparación del profesor con el estudiante (Domyn Edge SFT) en la suite general de evaluación. Todas las puntuaciones en porcentaje.
 
-| Grupo | Benchmark | Métrica | Domyn Edge SFT | Teacher IF |
-|---|---|---|---:|---:|
-| Matemáticas | AIME 2026 | avg@10 | 61.3 | 79.3 |
-| Matemáticas multilingües | MGSM (de, en, es, fr, ru) | accuracy | 85.8 | 90.4 |
-| Conocimiento y razonamiento | GPQA Diamond | pass@1 | 60.9 | 64.3 |
-| Seguimiento de instrucciones | IFBench | prompt strict pass@1 | 24.1 | 66.0 |
-| Function calling | BFCL v4, sin web search (overall) | pass@1 | 38.0 | 36.2 |
-| Function calling | BFCL v4 (non-live) | pass@1 | 53.3 | 86.9 |
-| Function calling | BFCL v4 (live) | pass@1 | 75.3 | 80.3 |
-| Function calling | BFCL v4 (multi-turn) | pass@1 | 39.8 | 41.1 |
-| Function calling | BFCL v4 (memory) | pass@1 | 29.3 | 26.0 |
-| Agéntico | SWE-bench Verified | pass@1 | 31.5 | 40.2 |
-| Código | LiveCodeBench | pass@1 | 73.0 | 70.0 |
-| Contexto largo | RULER 128k | pass@1 | 78.0 | 65.0 |
+| Grupo | Benchmark | Métrica | Domyn Edge SFT | Teacher IF | Δ |
+|---|---|---|---:|---:|---:|
+| Matemáticas | AIME 2026 | avg@10 | 61.3 | 79.3 | +18.0 |
+| Matemáticas multilingües | MGSM (de, en, es, fr, ru) | accuracy | 85.8 | 90.4 | +4.6 |
+| Conocimiento y razonamiento | GPQA Diamond | pass@1 | 56.3 | 64.3 | +8.0 |
+| Seguimiento de instrucciones | IFBench | prompt strict pass@1 | 24.1 | 66.0 | +41.9 |
+| Llamada a funciones | BFCL v4 (overall, sin búsqueda web) | pass@1 | 36.5 | 43.1 | +6.6 |
+| | BFCL v4 (non-live) | pass@1 | 51.9 | 86.9 | +35.0 |
+| | BFCL v4 (live) | pass@1 | 75.9 | 80.3 | +4.4 |
+| | BFCL v4 (multi-turn) | pass@1 | 35.9 | 41.1 | +5.2 |
+| | BFCL v4 (memory) | pass@1 | 27.3 | 26.0 | -1.3 |
+| Agéntico | SWE-bench Verified | pass@1 | 33.6 | 40.2 | +6.6 |
+| Código | LiveCodeBench (set completo, 1.055 problemas v6) | pass@1 | 73.0 | 76.2 | +3.2 |
 
-Suite específica de IF (porcentajes; avg@32 en la evaluación de la suite IF):
+Comparación con Qwen3.5 4B en la suite de seguimiento de instrucciones:
 
-| Benchmark | Métrica | Domyn Edge SFT | Teacher IF |
-|---|---|---:|---:|
-| IFBench | prompt-level strict | 24.1 | 66.0 |
-| IFEval | prompt-level strict | 75.3 | 92.8 |
-| IFStruct | accuracy | 52.7 | 92.2 |
-| BFCL v4, sin web search (overall) | accuracy | 38.0 | 43.1 |
-| BFCL v4 (non-live) | accuracy | 53.3 | 86.9 |
-| BFCL v4 (live) | accuracy | 75.3 | 80.3 |
-| BFCL v4 (multi-turn) | accuracy | 39.8 | 41.1 |
-| BFCL v4 (memory) | accuracy | 29.3 | 26.0 |
+| Benchmark | Métrica | Teacher IF | Qwen3.5 4B | Δ |
+|---|---|---:|---:|---:|
+| IFBench | prompt strict pass@1 | 66.0 | 52.7 | +13.3 |
+| IFEval | prompt strict pass@1 | 92.8 | 85.2 | +7.6 |
+| IFStruct | accuracy | 92.2 | 70.6 | +21.6 |
+| BFCL v4 (overall, sin búsqueda web) | pass@1 | 43.1 | 43.2 | -0.1 |
+| BFCL v4 (non-live) | pass@1 | 86.9 | 75.8 | +11.1 |
+| BFCL v4 (live) | pass@1 | 80.3 | 76.5 | +3.8 |
+| BFCL v4 (multi-turn) | pass@1 | 41.1 | 45.4 | -4.3 |
+| BFCL v4 (memory) | pass@1 | 26.0 | 31.0 | -5.0 |
 
-Ajustes de evaluación: servido con vLLM en bfloat16 a 128k de contexto, plantilla de chat del repositorio, thinking activado, temperatura 1.0, top-p 0.95, top-k 20, min-p 0, sin penalizaciones.
+Ajustes de evaluación: servido con vLLM en bfloat16, thinking activado, temperatura 1.0, top-p 0.95, top-k 20, min-p 0, sin penalizaciones de presencia, frecuencia ni repetición. En la suite de instrucciones, contexto de 128k.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bfloat16: aproximadamente 8 GB solo para pesos de 4B, más caché KV; con contexto de 128k la caché KV domina el consumo y exige GPUs de 40-80 GB para secuencias largas.
-- GPU recomendadas: A100 40/80 GB y H100 para servir a 128k con vLLM; RTX 4090 (24 GB) para contexto moderado o cuantización.
-- Cabe en GPU de consumo: sí, en RTX 4090 y GPUs de 24 GB o más con contexto reducido; en 16 GB requiere cuantización (no se publican pesos cuantizados en el repositorio).
-- Despliegue: vLLM es la vía documentada (`--trust-remote-code --max-model-len 131072 --reasoning-parser qwen3 --enable-auto-tool-choice --tool-call-parser qwen3_coder`); también Transformers. No se documentan instrucciones para llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada en bfloat16: unos 8 GB solo para pesos (3,9B × 2 bytes), más KV cache; el repo ocupa 7,9 GB.
+- VRAM estimada en cuantización de 8 bits: aproximadamente 4 GB de pesos.
+- VRAM estimada en cuantización de 4 bits: aproximadamente 2 GB de pesos.
+- GPU recomendadas para producción: A100 40/80 GB o H100 para servir con contexto largo (128k) y thinking activado; L40S o RTX 6000 Ada como alternativas de coste medio.
+- GPU de consumo: cabe en RTX 4090 (24 GB) en bfloat16 con contexto moderado, y en GPUs de 8-12 GB (RTX 3060/4060, RTX 3080) con cuantización de 4-8 bits.
+- Opciones de despliegue: vLLM es la opción recomendada por el autor (usada en la evaluación); Transformers para carga directa; llama.cpp, Ollama o TGI no están confirmados en la información disponible, aunque al ser un transformer denso estándar con safetensors deberían ser viables previa conversión.
+- Latencia y throughput: no disponibles en la información proporcionada. El razonamiento extenso (decenas de miles de tokens en problemas difíciles) puede dominar el tiempo de respuesta si no se limita la generación.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | IFBench (strict) | Licencia | Disponibilidad |
-|---|---|---:|---:|---|---|
-| Domyn Edge Teacher IF | 4B denso | 128k | 66.0 | Apache 2.0 | Hugging Face |
-| Domyn Edge SFT (estudiante base) | 4B denso | 256k (según su card) | 24.1 | Apache 2.0 | Hugging Face |
-| Otras alternativas de ~4B | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parámetros | Contexto | IFBench | IFEval | BFCL v4 overall | Licencia |
+|---|---|---:|---:|---:|---:|---|
+| Domyn Edge Teacher IF | ~3,9B denso | 128k | 66.0 | 92.8 | 43.1 | Apache 2.0 |
+| Qwen3.5 4B | ~4B denso | no disponible | 52.7 | 85.2 | 43.2 | no disponible en la información |
+| Domyn Edge SFT (estudiante) | ~3,9B denso | no disponible | 24.1 | no disponible | 36.5 | Apache 2.0 |
 
-La comparación directa más informativa es con su propio estudiante, Domyn Edge SFT, del que mejora de forma marcada en IFBench (24.1 a 66.0), IFEval (75.3 a 92.8) e IFStruct (52.7 a 92.2), y empeora en RULER 128k (78.0 a 65.0), LiveCodeBench (73.0 a 70.0) y BFCL v4 memory (29.3 a 26.0). No se dispone de datos de benchmarks de modelos de terceros comparables en la información proporcionada.
+El modelo supera claramente a Qwen3.5 4B en IFBench, IFEval e IFStruct, empata en BFCL overall y queda por debajo en las variantes multi-turn y memory de BFCL. Frente a su modelo base, la mejora en seguimiento de instrucciones es muy marcada (+41.9 en IFBench). No se dispone de datos de otros modelos comparables de 4B en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Es un profesor de dominio, no un asistente de propósito general: solo se entrenaron más allá de Domyn Edge SFT las capacidades de seguimiento de instrucciones y tool calling.
-- Regresión en contexto largo: RULER 128k baja de 78.0 a 65.0 respecto al estudiante, pese a mantener 128k de ventana.
-- Regresión en código (LiveCodeBench 73.0 a 70.0) y en BFCL v4 memory (29.3 a 26.0); el overall de BFCL v4 sin web search también baja ligeramente (38.0 a 36.2).
-- Riesgo de alucinación: no se documentan tasas específicas; como modelo de 4B, la fiabilidad factual en conocimiento abierto es limitada (GPQA Diamond 64.3).
-- Sesgos: no se documentan análisis de sesgo en la información disponible.
-- La model card está incompleta en la sección de SFT (marcada como TODO) y truncada en la sección de limitaciones ("Long gen..."), lo que impide verificar detalles del entrenamiento supervisado y advertencias adicionales.
-- Licencia Apache 2.0: permite uso comercial y modificación, pero el autor desaconseja explícitamente su uso como asistente general; conviene validar el comportamiento en producción.
-- Requiere `--trust-remote-code` en vLLM; revisar el código remoto antes de desplegar en entornos sensibles.
-- Contexto de servicio limitado a 128k pese a que la base SFT admite 256k.
+- Es un profesor de dominio, no un asistente de propósito general: solo se entrenó más allá de Domyn Edge SFT en seguimiento de instrucciones y tool calling.
+- Generaciones muy largas: en problemas difíciles puede razonar decenas de miles de tokens; el entrenamiento limitó las respuestas a 64k tokens, por lo que conviene acotar la longitud de generación.
+- Trabajo de seguridad incompleto: no se realizó ajuste de seguridad dedicado ni red teaming sobre este modelo.
+- Riesgo de alucinación no cuantificado en la información disponible; como todo modelo generativo, puede producir contenido plausible pero falso, especialmente fuera de su dominio de especialización.
+- Rendimiento inferior al estudiante en BFCL v4 memory (26.0 frente a 27.3) y por debajo de Qwen3.5 4B en multi-turn (41.1 frente a 45.4) y memory (26.0 frente a 31.0).
+- Sesgos conocidos: no documentados en la información proporcionada.
+- Licencia Apache 2.0 permite uso comercial, pero el autor lo publica para investigación y reproducibilidad; su uso como asistente final no es el propósito previsto.
+- El modelo aplica una línea de identidad fija en el turno de sistema ("You are Domyn Edge, a model trained by Domyn."), lo que puede condicionar respuestas sobre su propia identidad.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/domyn/Domyn-Edge-Teacher-IF
-- Modelo base: https://huggingface.co/domyn/Domyn-Edge-SFT
+- Modelo en Hugging Face: https://huggingface.co/domyn/Domyn-Edge-Teacher-IF
+- Modelo base (Domyn Edge SFT): https://huggingface.co/domyn/Domyn-Edge-SFT
 - Dataset de post-entrenamiento: https://huggingface.co/datasets/domyn/Domyn-Edge-Teacher-IF-Mix
-- Anuncio del proyecto: https://www.domyn.com/news/domyn-edge-sovereign-ai-model
-- Blog de presentación: https://www.domyn.com/blog/domyn-edge-compact-model-open
+- Organización Domyn en Hugging Face: https://huggingface.co/domyn
+- Paper, blog, repositorio o demo oficiales: no disponibles en la información proporcionada.

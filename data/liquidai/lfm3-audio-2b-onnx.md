@@ -2,96 +2,81 @@
 
 ## Resumen
 
-LFM3-Audio-2B-ONNX es la versión en formato ONNX del modelo LFM3-Audio-2B de Liquid AI, una empresa estadounidense surgida del MIT que desarrolla los Liquid Foundation Models (LFM) orientados a inferencia en dispositivo, edge y nube. El modelo original es un modelo "any-to-any" de 2.000 millones de parámetros que trabaja con audio y texto; esta variante empaqueta el decodificador, el codificador de audio y el decodificador de códec en grafos ONNX ejecutables con ONNX Runtime en distintas plataformas.
+LFM3-Audio-2B-ONNX es la versión exportada a ONNX Runtime del modelo LFM3-Audio-2B de Liquid AI, un modelo multimodal any-to-any de 2.000 millones de parámetros diseñado para tareas de audio y texto. La exportación a ONNX permite su despliegue multiplataforma (CPU, GPU, edge) sin depender del stack de PyTorch, lo que facilita la integración en aplicaciones de producción con ONNX Runtime.
 
-Su relevancia práctica está en el despliegue: frente a los pesos originales, aquí se ofrecen tres precisiones ya cuantizadas (q4, q8 y q4f16) con tamaños de entre 2,09 GB y 3,36 GB, pensadas explícitamente para ejecución en CPU. Eso permite integrar un modelo de audio conversacional en aplicaciones de escritorio, servidores sin GPU o entornos embebidos, sin depender de PyTorch ni de CUDA.
+El modelo forma parte de la familia LFM3 de Liquid AI y hereda la arquitectura del modelo base LiquidAI/LFM3-Audio-2B. Al tratarse de una conversión de precisión (quantized), mantiene las capacidades del original pero con pesos optimizados para inferencia en entornos con recursos limitados, incluyendo variantes de cuantización como q4.
 
-La ficha del autor es breve y remite a la model card del modelo base para los detalles de arquitectura y uso. En la información disponible no se especifican la longitud de contexto, los datos de entrenamiento ni resultados de benchmarks, por lo que esos apartados se marcan como no disponibles.
+La relevancia de esta ficha radica en que ofrece una vía práctica para desplegar un modelo de audio conversacional en infraestructura heterogénea, con soporte para 18 idiomas y un pipeline any-to-any que combina encoder de audio, decoder de texto y decoder de codec de audio. El repositorio ocupa 19,7 GB e incluye múltiples precisiones para adaptarse a distintos presupuestos de cómputo.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (la model card remite a la ficha de LFM3-Audio-2B; no se detalla la arquitectura interna) |
-| Parametros totales | 2B (según la denominación del modelo) |
-| Parametros activos | no disponible (no se indica que sea un modelo MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | ONNX q4, q8 y q4f16; el `depth_decoder` se ejecuta siempre en float32 |
+| Arquitectura | No disponible (modelo base LFM3-Audio-2B; arquitectura no detallada en la información proporcionada) |
+| Parámetros totales | 2B (según nombre del modelo) |
+| Parámetros activos | No disponible (no se indica que sea MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantización | q4 (y otras precisiones no detalladas en el extracto) |
 | Idiomas soportados | en, ar, da, de, el, fi, fr, he, it, ja, ko, nl, pl, pt, es, sv, tr, zh (18 idiomas) |
-| Licencia | lfm1.0 (etiquetada como `other` en Hugging Face, con enlace a `LICENSE`) |
-| Formato de pesos | ONNX (`.onnx`), ejecutable con ONNX Runtime |
+| Licencia | lfm1.0 (license: other) |
+| Formato de pesos | ONNX (decoder, audio_encoder, codec_decoder, depth_decoder) |
 
 ## Arquitectura y entrenamiento
 
-La información proporcionada no describe la arquitectura interna del modelo: la model card de esta variante ONNX indica explícitamente que los detalles de arquitectura y uso están en la ficha de LiquidAI/LFM3-Audio-2B. Lo que sí se documenta es la descomposición en componentes del pipeline exportado: cada precisión combina un decodificador (`decoder_q4`, `decoder_q8`, `decoder_q4f16`), un codificador de audio (`audio_encoder.onnx` o `audio_encoder_fp16.onnx`), un decodificador de códec (`codec_decoder.onnx` o `codec_decoder_fp16.onnx`) y un `depth_decoder.onnx` en float32 que se ejecuta en todas las configuraciones y cuyo tamaño está incluido en las cifras indicadas.
+La información disponible no detalla la arquitectura interna del modelo base LFM3-Audio-2B. Por el pipeline any-to-any y los componentes del repositorio ONNX, se deduce una arquitectura compuesta por un encoder de audio, un decoder de lenguaje y un decoder de codec de audio, más un depth_decoder en float32 que se ejecuta en todas las precisiones. No se especifican el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO.
 
-Tampoco se detallan el volumen de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO. El repositorio se etiqueta como `base_model_relation: quantized` respecto a LiquidAI/LFM3-Audio-2B, es decir, esta publicación es una conversión/cuantización del modelo original, no un reentrenamiento. El repositorio usa `custom_code` y requiere la librería `onnxruntime`.
+La innovación técnica destacable de esta versión es la exportación a ONNX Runtime con cuantización q4, que reduce el tamaño del decoder a 2,71 GB y permite inferencia en CPU. El repositorio incluye cada precisión emparejada con su encoder de audio y decoder de codec, lo que facilita el despliegue modular. No se dispone de información sobre decodificación especulativa, atención lineal u otras optimizaciones del modelo base.
 
 ## Capacidades
 
-- Modelo any-to-any: el pipeline declarado es `any-to-any`, con codificador de audio y decodificador de códec, lo que habilita entrada y salida en modalidad de audio junto con texto.
-- Conversión de voz: al incluir codificador de audio y decodificador de códec, el grafo cubre la cadena completa de procesamiento de audio dentro del propio repositorio.
-- Generación de texto en 18 idiomas, entre ellos español, inglés, alemán, francés, italiano, portugués, neerlandés, chino, japonés, coreano, árabe y hebreo.
-- Inferencia multiplataforma mediante ONNX Runtime, sin dependencia de PyTorch.
-- Ejecución en CPU documentada por el autor para las tres precisiones publicadas.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de agente o razonamiento multi-paso: no disponible en la información proporcionada.
-- Modo "thinking", visión o audio en streaming: no disponible en la información proporcionada.
+- Generación de texto y razonamiento multimodal any-to-any (audio y texto).
+- Procesamiento de audio: codificación y decodificación mediante encoder y codec decoder dedicados.
+- Conversación por voz: el pipeline any-to-any permite entrada de audio y salida de audio/texto.
+- Soporte multilingüe en 18 idiomas, incluyendo español, inglés, alemán, francés, japonés, chino, árabe y hebreo.
+- No se especifica soporte de tool calling o function calling en la información proporcionada.
+- No se especifica soporte de agentes o multi-step reasoning en la información proporcionada.
+- No se especifica modo thinking, visión ni otras capacidades especiales.
 
 ## Casos de uso
 
-- Asistentes de voz en dispositivo: al ejecutarse en CPU con cuantización q4 (2,71 GB), el modelo puede integrarse en aplicaciones de escritorio o appliances sin GPU para mantener conversaciones habladas sin enviar audio a la nube, lo que reduce latencia y exposición de datos.
-- Transcripción y dictado en herramientas ofimáticas: el codificador de audio más el decodificador permiten convertir voz en texto dentro de una aplicación local, distribuyendo un único paquete ONNX sin dependencias de frameworks de deep learning.
-- Atención al cliente telefónica: un backend basado en ONNX Runtime puede desplegar varias instancias del modelo en servidores CPU convencionales, con la ventaja de que la huella de memoria (2,09-3,36 GB por instancia) es acotada y predecible.
-- Subtitulado y traducción de reuniones: combinando la entrada de audio con el soporte de 18 idiomas, se pueden generar transcripciones y traducciones en pipelines por lotes o casi en tiempo real.
-- Análisis de llamadas y notas de voz: procesamiento por lotes de grabaciones para extraer resúmenes o contenido estructurado, aprovechando que el modelo se ejecuta en CPU y no compite por GPU con otros servicios.
-- Prototipado e integración en aplicaciones móviles o de escritorio multiplataforma: al ser ONNX, el mismo artefacto puede integrarse en runtimes nativos de distintas plataformas, lo que simplifica la validación temprana de producto antes de escalar a la API de Liquid AI.
-- Investigación en modelos de audio: las tres precisiones publicadas permiten estudiar el compromiso entre calidad y tamaño (q4, q8 y q4f16) sobre el mismo modelo base con un esfuerzo de integración mínimo.
+- Asistentes de voz en tiempo real: el modelo puede procesar audio de entrada y generar respuestas habladas gracias al encoder de audio y al codec decoder, desplegable en CPU con la variante q4 de 2,71 GB.
+- Transcripción y comprensión de audio multilingüe: con soporte para 18 idiomas, puede emplearse en sistemas de atención al cliente que reciben llamadas en distintos idiomas y necesitan comprender y responder.
+- Aplicaciones edge sin GPU: la exportación ONNX con cuantización q4 permite ejecutar el modelo en dispositivos con CPU, como routers, mini-PC o sistemas embebidos, para interfaces de voz locales.
+- Prototipado rápido de agentes conversacionales por voz: el pipeline any-to-any y el formato ONNX facilitan la integración en aplicaciones web o de escritorio mediante ONNX Runtime sin dependencias de PyTorch.
+- Procesamiento de audio en pipelines de datos: el encoder de audio puede usarse para extraer representaciones de audio en sistemas de análisis de llamadas o moderación de contenido.
+- Despliegue multiplataforma en producción: al ser ONNX, se puede servir con ONNX Runtime en Windows, Linux, macOS y ARM, lo que simplifica la distribución de una misma solución de voz en flotas heterogéneas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- Huella de disco y memoria según precisión: q4f16 requiere 2,09 GB, q4 requiere 2,71 GB y q8 requiere 3,36 GB. Estas cifras incluyen el `depth_decoder` en float32 que se ejecuta en todas las configuraciones.
-- VRAM estimada para inferencia en GPU: no disponible en la información proporcionada; los tamaños de artefacto indican que el modelo es holgadamente pequeño para cualquier GPU consumer con 8 GB o más, aunque el autor no publica requisitos de VRAM.
-- GPU recomendadas: no disponibles. La model card etiqueta las tres precisiones como `Device: CPU`, por lo que el escenario de referencia es CPU, no GPU.
-- ¿Cabe en GPU consumer? Por tamaño de pesos (2-3,4 GB) sí cabría en tarjetas de 8 GB o más, pero no hay confirmación del autor sobre el soporte y rendimiento en GPU mediante execution providers de ONNX Runtime.
-- Opciones de despliegue: ONNX Runtime (librería declarada, `library_name: onnxruntime`). Otros servidores (vLLM, llama.cpp, Ollama, TGI) no están documentados para este formato en la información disponible.
-- Latencia y throughput: no disponibles. No se publican métricas de tokens por segundo ni de tiempo real de audio procesado.
+- VRAM estimada: no disponible para GPU; la variante q4 del decoder ocupa 2,71 GB en disco y está orientada a CPU.
+- GPU recomendadas: no disponible.
+- Cabe en consumer GPU: no disponible.
+- Opciones de despliegue: ONNX Runtime (librería principal), con soporte para CPU y potencialmente GPU según el proveedor de ejecución de ONNX Runtime.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| LFM3-Audio-2B-ONNX (este) | 2B | no disponible | ONNX (q4, q8, q4f16) | lfm1.0 | Hugging Face, 42 descargas, 5 likes |
-| LFM3-Audio-2B (modelo base) | 2B | no disponible | no disponible en la información | lfm1.0 | Hugging Face (repo original de LiquidAI) |
-| Otras alternativas any-to-any de tamaño comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
-
-La información proporcionada no incluye especificaciones de modelos de terceros comparables, por lo que no se puede establecer una comparación cuantitativa de rendimiento. La comparación relevante y verificable es la de esta variante ONNX frente al modelo base: misma licencia y mismo tamaño nominal, con la diferencia de que aquí se ofrecen pesos cuantizados listos para ONNX Runtime y ejecución en CPU.
+No disponible. No se han proporcionado datos de modelos comparables en la información suministrada.
 
 ## Limitaciones y advertencias
 
-- La model card de esta variante es mínima: no documenta arquitectura, contexto, datos de entrenamiento ni evaluación, lo que dificulta estimar su comportamiento en producción sin consultar la ficha del modelo base.
-- Al ser una cuantización, las precisiones q4 y q4f16 pueden degradar la calidad frente a los pesos originales; el autor no publica métricas de esa degradación.
-- Riesgo de alucinación: no cuantificado en la información disponible; es un riesgo inherente a los modelos generativos y debe mitigarse con validación en el dominio de aplicación.
-- Sesgos: no se documentan sesgos conocidos ni la composición del corpus de entrenamiento, por lo que no es posible evaluar sesgos por idioma o dominio.
-- Cobertura lingüística: se declaran 18 idiomas, pero no se especifica el nivel de calidad por idioma; el español figura en la lista sin métricas asociadas.
-- Licencia lfm1.0: es una licencia propia etiquetada como `other`, con el texto en el fichero `LICENSE` del repositorio. Antes de un uso comercial es necesario revisar sus términos, ya que no es una licencia OSI estándar y puede incluir restricciones de uso.
-- Despliegue: el soporte está declarado para ONNX Runtime; no hay evidencia publicada de funcionamiento con otros motores de inferencia.
-- Tamaño del repositorio: 19,7 GB en total, ya que incluye todas las precisiones; conviene descargar solo los ficheros de la precisión elegida.
+- Licencia lfm1.0 (license: other): es necesario revisar los términos del archivo LICENSE para uso comercial; no se detallan restricciones en la información proporcionada.
+- Al ser una versión cuantizada (q4), puede haber una pérdida de calidad respecto al modelo base en float32.
+- No se dispone de información sobre sesgos conocidos ni tasas de alucinación.
+- La longitud de contexto no está especificada, lo que limita la planificación de conversaciones largas.
+- El modelo base es LFM3-Audio-2B; esta exportación ONNX puede no incluir todas las funcionalidades del original si no se documentan.
+- El repositorio ocupa 19,7 GB, lo que requiere espacio de almacenamiento considerable.
+- No se especifica soporte para tool calling ni agentes, lo que puede limitar su uso en pipelines complejos.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/LiquidAI/LFM3-Audio-2B-ONNX
-- Modelo base: https://huggingface.co/LiquidAI/LFM3-Audio-2B
-- Licencia: https://huggingface.co/LiquidAI/LFM3-Audio-2B-ONNX/blob/main/LICENSE
-- Sitio de Liquid AI: https://www.liquid.ai/
-- Catálogo de modelos LFM: https://www.liquid.ai/models
-- Blog de LFM3: https://www.liquid.ai/blog/lfm3
-- Documentación: https://docs.liquid.ai/lfm/getting-started/welcome
-- Playground: https://playground.liquid.ai/talk
-- Consola / API: https://console.liquid.ai/dashboard
-- Organización en Hugging Face: https://huggingface.co/LiquidAI
-- Wikipedia: https://en.wikipedia.org/wiki/Liquid_AI
+- [Hugging Face: LiquidAI/LFM3-Audio-2B-ONNX](https://huggingface.co/LiquidAI/LFM3-Audio-2B-ONNX)
+- [Modelo base: LiquidAI/LFM3-Audio-2B](https://huggingface.co/LiquidAI/LFM3-Audio-2B)
+- [Blog de Liquid AI sobre LFM3](https://www.liquid.ai/blog/lfm3)
+- [Documentación de Liquid AI](https://docs.liquid.ai/lfm/getting-started/welcome)
+- [Playground de Liquid AI](https://playground.liquid.ai/talk)
+- [Consola de Liquid AI](https://console.liquid.ai/dashboard)

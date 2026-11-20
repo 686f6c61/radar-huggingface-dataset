@@ -2,84 +2,94 @@
 
 ## Resumen
 
-dasLLAMA text-to-speech es un paquete de modelos de síntesis de voz convertidos a formato GGUF, servidos por el motor de inferencia dasLLAMA, escrito íntegramente en daslang y compilado JIT. El repositorio incluye tres modelos de la familia StyleTTS2 —KittenTTS nano, KittenTTS mini y Kokoro-82M— junto con dos paquetes de datos de front-end (normalización, etiquetado gramatical y conversión grafema-fonema) que eliminan la dependencia de herramientas externas como espeak-ng o phonemizer.
+dasllama-tts es una colección de modelos de síntesis de voz (text-to-speech) convertidos al formato GGUF por el desarrollador borisbat, pensada para ser servida por dasLLAMA, el motor de inferencia del lenguaje daslang desarrollado por Gaijin Entertainment. El repositorio no contiene un único modelo, sino varios pesos de la familia StyleTTS2 (KittenTTS nano y mini, Kokoro-82M y el fine-tune ruso kokoro-ru) junto con los paquetes de datos que necesita el front-end de texto propio: normalizadores, etiquetadores gramaticales, conversores grafema-a-fonema y un paquete de acentuación del ruso. Adicionalmente incluye Pocket TTS de Kyutai, un modelo de lenguaje de audio continuo que lee texto y clona voces a partir de un clip.
 
-El proyecto resuelve el problema de desplegar síntesis de voz de alta calidad con un pipeline autocontenido: el front-end de texto es datos, no código, y los modelos se sirven mediante una API compatible con OpenAI (`/v1/audio/speech`). La relevancia actual radica en que ofrece una alternativa ligera y reproducible a los servicios comerciales de TTS, con pesos en f32 que se cuantizan a Q8_0 automáticamente en la primera carga. El modelo está orientado exclusivamente al inglés y su licencia es por archivo, con términos que varían según el componente.
+La propuesta diferencial es prescindir de dependencias externas como espeak-ng o phonemizer: todo el procesamiento lingüístico previo reside en ficheros de datos (`tts_g2p.bin`, `tts_g2p_ru.bin`) que el motor carga directamente. El modelo principal, Kokoro-82M, cuenta con 76.639.408 parámetros y se distribuye en tres variantes de cuantización (f32, Q8_0 y una mezcla Q4_K/Q6_K) para adaptarse a distintos presupuestos de memoria.
 
-## Especificaciones tecnicas
+El conjunto cubre siete idiomas declarados (inglés, ruso, alemán, español, italiano, portugués y francés), aunque la ficha de Hugging Face solo lista inglés como idioma de pipeline. Es relevante para quienes despliegan TTS en producción con motores nativos de bajo nivel y necesitan control total sobre el pipeline fonético, sin cadenas de dependencias frágiles.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | StyleTTS2 (KittenTTS nano 0.8, KittenTTS mini 0.8, Kokoro-82M v1.0) |
-| Parametros totales | 73.983.664 (suma de los tres modelos: nano ~15M, mini ~74M, kokoro ~82M) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (modelo de audio, no de texto) |
-| Tipos de cuantizacion | f32 en el repositorio; Q8_0 generado automaticamente en primera carga |
-| Idiomas soportados | en (ingles) |
-| Licencia | per-file: Apache-2.0 (KittenTTS, Kokoro, g2p), BSD-2-Clause (CMUdict), CC BY-SA 4.0 (tagger) |
-| Formato de pesos | GGUF (f32), safetensors no incluido |
+| Arquitectura | StyleTTS2 (KittenTTS nano/mini, Kokoro-82M, kokoro-ru) y modelo de lenguaje de audio continuo (Pocket TTS de Kyutai) |
+| Parámetros totales | 76.639.408 (dato de safetensors; corresponde a Kokoro-82M) |
+| Parámetros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | f32, Q8_0, mezcla Q4_K + Q6_K + Q8_0 (variantes "kq") |
+| Idiomas soportados | en, ru, de, es, it, pt, fr (según model card); pipeline declarado: en |
+| Licencia | other / per-file (ver THIRD_PARTY_NOTICES.md del repositorio dasLLAMA) |
+| Formato de pesos | GGUF |
+| Tamaño del repositorio | 6,8 GB |
+| Librería | dasllama |
+| Pipeline | text-to-speech |
 
 ## Arquitectura y entrenamiento
 
-Los tres modelos comparten la arquitectura StyleTTS2, un sistema de síntesis basado en diffusion probabilistic model con codificador de estilo y decodificador adversarial. KittenTTS nano y mini son variantes de menor tamaño de esta arquitectura, mientras que Kokoro-82M es la implementación de referencia con 82 millones de parámetros y 54 voces incluidas. Los pesos originales provienen de KittenML (ONNX) y hexgrad (PyTorch), convertidos a GGUF mediante scripts del harness de dasLLAMA.
+Los modelos de voz pertenecen a la estirpe StyleTTS2, una arquitectura de síntesis que combina un codificador de estilo y un decodificador acústico con alineamiento fonético implícito. KittenTTS se ofrece en dos escalas (nano 0.8 y mini 0.8), Kokoro-82M en versión v1.0 con 54 paquetes de voz, y kokoro-ru v2 como fine-tune ruso con los paquetes `sveta`, `masha` y `dima`. Pocket TTS de Kyutai es un modelo de lenguaje de audio continuo que genera habla directamente y permite clonar una voz a partir de un clip de referencia.
 
-El front-end de texto es un pipeline de tres etapas: un normalizador basado en los lexicones US-English gold y silver de misaki 0.9.4, un etiquetador gramatical (averaged-perceptron PTB tagger) entrenado sobre UD English-EWT y prosa de Project Gutenberg, y un conversor grafema-fonema que combina CMUdict 0.7a con el modelo GRU de g2p_en 2.1.0. Todo el conjunto se reconstruye con el script `build_tts_data.das` y se valida contra las implementaciones de referencia bloque a bloque.
+El front-end lingüístico es propio y basado en datos: para inglés incluye un normalizador, un etiquetador de partes de la oración y una pasada grafema-a-fonema que combina los léxicos gold y silver de misaki en ambos dialectos, CMUdict 0.7a y un modelo GRU de deletreo (`g2p_en`). Para ruso incorpora un normalizador, una pasada de acentuación sobre el paquete `tts_g2p_ru.bin` (formas flexionadas del diccionario OpenRussian, lecturas de Wiktionary y nombres de Wikipedia rusa) y una conversión letra-a-sonido. Opcionalmente se puede añadir un modelo de desambiguación de acento contextual basado en ruBert-base o ruElectra-small, afinado sobre un dataset privado y cuantizado a Q4_K. No se dispone de información sobre el número de tokens de entrenamiento ni sobre el uso de RLHF o DPO.
 
 ## Capacidades
 
-- Síntesis de voz en inglés a 24 kHz con tres modelos de distinto tamaño (nano, mini y 82M).
-- Ocho voces para KittenTTS (expr-voice-2-m a expr-voice-5-f, con alias como Bella o Jasper) y 54 voces para Kokoro (af_heart, bf_emma, am_adam, etc.).
-- Front-end de texto completo integrado: normalización, etiquetado POS y conversión grafema-fonema sin dependencias externas.
-- API compatible con OpenAI para síntesis de audio (`POST /v1/audio/speech`).
-- Endpoint `GET /v1/stats` que lista las voces disponibles del modelo servido.
-- Cuantización automática a Q8_0 en la primera carga, con el archivo f32 como referencia.
+- Síntesis de voz a partir de texto en inglés (KittenTTS nano/mini, Kokoro-82M) y en ruso (kokoro-ru).
+- Clonación de voz a partir de un clip de audio mediante Pocket TTS.
+- Múltiples voces predefinidas: 54 paquetes en Kokoro-82M, dos femeninos y uno masculino en kokoro-ru.
+- Procesamiento fonético nativo sin espeak-ng ni phonemizer, con paquetes de datos cargables.
+- Acentuación automática del ruso con resolución de homógrafos por contexto (por ejemplo, `з+амок` frente a `зам+ок`, o `все` frente a `всё`).
+- Normalización de texto y etiquetado gramatical integrados en el front-end.
+- Soporte de dialectos del inglés (en-US y en-GB) mediante léxicos separados.
+- No se documentan capacidades de tool calling, agentes ni razonamiento multi-paso, al tratarse de un modelo de voz.
 
 ## Casos de uso
 
-- Generación de audiolibros: el modelo puede convertir texto largo en voz natural a 24 kHz, con voces consistentes gracias a los packs de voces de Kokoro, adecuado para producción de contenido editorial.
-- Asistentes de voz en inglés: la API compatible con OpenAI permite integrar síntesis de voz en asistentes conversacionales con un cambio mínimo de endpoint.
-- Accesibilidad web: conversión de artículos o noticias a audio en tiempo real, con latencia baja gracias al tamaño reducido de KittenTTS nano (59 MB en f32).
-- Doblaje de vídeo y multimedia: las 54 voces de Kokoro ofrecen variedad de timbres para proyectos de vídeo, con control fino sobre la entonación mediante el front-end de texto.
-- Pruebas automatizadas de sistemas de voz: el pipeline determinista y reproducible permite generar audio de referencia para validar sistemas de reconocimiento de voz.
-- Educación de idiomas: generación de ejemplos de pronunciación en inglés con diferentes voces, útil para aplicaciones de aprendizaje de lenguas.
+- Lectura de artículos y documentos en inglés: Kokoro-82M en Q8_0 ocupa unos 96 MB, por lo que puede ejecutarse en cualquier equipo y narrar textos largos con una de sus 54 voces.
+- Audiolibros en ruso: kokoro-ru con los paquetes `sveta`, `masha` o `dima` y el paquete de acentuación permite generar narración con pronunciación correcta de homógrafos, algo crítico en ruso.
+- Asistentes de voz embebidos: KittenTTS nano en su variante `kq` ocupa unos 15 MB, adecuado para dispositivos con memoria muy limitada donde no cabe un TTS convencional.
+- Clonación de voz para doblaje o accesibilidad: Pocket TTS permite replicar la voz de un usuario a partir de una muestra, útil en sistemas de comunicación aumentativa.
+- Generación de avisos y locuciones dinámicas: integración en pipelines de CI/CD o sistemas de megafonía que necesitan sintetizar mensajes variables con baja latencia.
+- Prototipado de interfaces conversacionales: el front-end basado en datos facilita iterar sobre pronunciación y normalización sin recompilar dependencias nativas.
+- Investigación en fonética computacional: los paquetes `tts_g2p.bin` y `tts_g2p_ru.bin` permiten estudiar y modificar las reglas de conversión grafema-fonema de forma aislada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio incluye una suite de pruebas bajo `modules/dasLLAMA/tests/test_tts_*.das` que verifica la paridad bloque a bloque contra las implementaciones de referencia, pero no hay métricas objetivas de calidad de voz (MOS, etc.) ni comparativas con otros sistemas TTS.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: los tres modelos son pequeños (59 MB, 296 MB y 353 MB en f32), por lo que caben en cualquier GPU con al menos 1 GB de VRAM, incluidas GPUs integradas.
-- GPU recomendadas: cualquier GPU moderna con soporte CUDA o Vulkan; el motor dasLLAMA se compila JIT y puede ejecutarse en CPU para inferencia en tiempo real con los modelos nano y mini.
-- Compatibilidad con GPU de consumo: sí, incluyendo RTX 3060, RTX 4090 y GPUs de portátiles.
-- Opciones de despliegue: servidor dasllama-server con API OpenAI, o script `txt2wav.das` para generación por lotes.
-- Latencia y throughput: no disponible en la información proporcionada, pero el tamaño reducido sugiere latencia inferior a 100 ms por frase en GPU moderna.
+- Kokoro-82M en f32: aproximadamente 353 MB de pesos; en Q8_0, unos 96 MB; en la variante `kq`, unos 71 MB.
+- KittenTTS mini: 296 MB en f32, 80 MB en Q8_0 y 60 MB en `kq`.
+- KittenTTS nano: 59 MB en f32, 17 MB en Q8_0 y 15 MB en `kq`.
+- kokoro-ru: 326 MB en f32, 89 MB en Q8_0 y 64 MB en `kq`.
+- Modelo de acento ruso opcional: 120 MB (ruBert-base Q4_K) o 38 MB (ruElectra-small Q4_K).
+- Cualquier GPU consumer moderna (RTX 3060 en adelante) puede alojar todas las variantes; las versiones `kq` caben incluso en iGPU y CPUs.
+- Despliegue mediante el motor dasLLAMA (módulo `dasLLAMA` de daScript); no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- No se dispone de datos de latencia ni throughput publicados.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Idiomas | Voces | Licencia | Formato |
 |---|---|---|---|---|---|
-| dasLLAMA TTS (este repo) | 15M-82M | n/a | per-file (Apache-2.0, BSD, CC BY-SA) | GGUF | Front-end integrado, API OpenAI |
-| KittenTTS nano 0.8 (original) | ~15M | n/a | Apache-2.0 | ONNX | Requiere front-end externo |
-| Kokoro-82M (original) | 82M | n/a | Apache-2.0 | PyTorch | 54 voces, requiere misaki + espeak |
-| StyleTTS2 (referencia) | ~200M | n/a | MIT | PyTorch | Arquitectura base, sin front-end |
+| dasllama-tts (Kokoro-82M) | 76,6 M | en (declarado), 7 en model card | 54 | per-file | GGUF |
+| dasllama-tts (KittenTTS nano) | no disponible | en | no disponible | per-file | GGUF |
+| dasllama-tts (kokoro-ru) | no disponible | ru | 3 | per-file | GGUF |
+| dasllama-tts (Pocket TTS) | no disponible | no disponible | clonación | per-file | GGUF |
 
-La principal diferencia frente a los originales es la integración del front-end en datos y la conversión a GGUF, que elimina dependencias de Python y permite ejecución con el motor dasLLAMA.
+No se dispone de información suficiente para comparar con alternativas externas como XTTS-v2, Piper o Bark en términos de rendimiento medido.
 
 ## Limitaciones y advertencias
 
-- Soporte exclusivo de inglés; no hay modelos multilingües en este repositorio.
-- La licencia es por archivo: los pesos de KittenTTS y Kokoro son Apache-2.0, pero el paquete de etiquetado POS es CC BY-SA 4.0, lo que puede imponer restricciones de copyleft en productos derivados.
-- El front-end de texto depende de lexicones y modelos entrenados con datos específicos (UD English-EWT, Gutenberg), lo que puede limitar el rendimiento con jerga técnica o nombres propios poco comunes.
-- No se proporcionan métricas objetivas de calidad de voz; la validación se limita a paridad con las implementaciones de referencia.
-- El motor dasLLAMA está bajo la licencia daslang en su propio repositorio, lo que debe verificarse antes de uso comercial.
-- La cuantización a Q8_0 puede introducir degradación de calidad frente a los pesos f32 originales, aunque el repositorio mantiene el f32 como referencia.
+- La licencia es `other` con condiciones por fichero; es imprescindible revisar `THIRD_PARTY_NOTICES.md` antes de cualquier uso comercial, ya que los modelos base (Kokoro, KittenTTS, Pocket TTS) pueden tener restricciones propias.
+- La ficha de Hugging Face declara únicamente inglés como idioma de pipeline, pese a que la model card lista siete idiomas; conviene verificar el soporte real de cada uno.
+- El modelo de desambiguación de acento ruso se entrenó sobre un dataset privado, lo que limita la reproducibilidad y la evaluación de su cobertura.
+- Al ser modelos de síntesis de voz, pueden reproducir sesgos de pronunciación, prosodia o timbre presentes en los datos de entrenamiento.
+- La clonación de voz con Pocket TTS plantea riesgos de suplantación y requiere consentimiento explícito y marcos legales adecuados.
+- Dependencia del motor dasLLAMA: no hay soporte documentado para otros runtimes, lo que reduce la portabilidad.
+- No se publican métricas objetivas (MOS, WER, latencia) que permitan validar la calidad en producción.
+- El repositorio tiene 2.224 descargas y 0 likes, con actualización reciente pero adopción limitada; la madurez del ecosistema es baja.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/borisbat/dasllama-tts
-- Motor dasLLAMA: https://github.com/GaijinEntertainment/daScript (módulo `modules/dasLLAMA`)
-- Sitio oficial: https://dasllama.io/
-- KittenTTS nano 0.8 (original): https://huggingface.co/KittenML/kitten-tts-nano-0.8
-- KittenTTS mini 0.8 (original): https://huggingface.co/KittenML/kitten-tts-mini-0.8
-- Kokoro-82M (original): https://huggingface.co/hexgrad/Kokoro-82M
+- Modelo en Hugging Face: https://huggingface.co/borisbat/dasllama-tts
+- Motor dasLLAMA (daScript): https://github.com/GaijinEntertainment/daScript
+- Avisos de terceros y licencias: https://github.com/GaijinEntertainment/daScript/blob/master/modules/dasLLAMA/THIRD_PARTY_NOTICES.md

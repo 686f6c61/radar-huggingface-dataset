@@ -103,7 +103,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1304,
+  "downloads_30d": 1314,
   "trending_score": 0,
   "parameters": 140644231,
   "parameters_human": "140.6M",
@@ -124,31 +124,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Horizons Le parti - Édouard Philippe",
-      "url": "https://horizonsleparti.fr/",
-      "snippet": "Participez à construire une nouvelle offre politique avec Edouard Philippe ! Vous partagez nos valeurs ? Rejoignez le parti Horizons !"
-    },
-    {
-      "title": "VMware Horizon",
-      "url": "https://horizon.nvidia.com/",
-      "snippet": "Install VMware Horizon Client VMware Horizon HTML Access Check here to skip this screen and always use HTML Access. To see …"
-    },
-    {
-      "title": "Horizon — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Horizon",
-      "snippet": "L' horizon des évènements est la limite de la région de l' espace-temps influençable depuis un point donné ; En particulier, l' horizon …"
-    },
-    {
-      "title": "Horizons — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Horizons",
-      "snippet": "Horizons (HOR) est un parti politique français de centre droit fondé en 2021 par l'ancien Premier ministre, et maire du Havre, …"
-    },
-    {
-      "title": "Écouter Horizon en direct et gratuit",
-      "url": "https://www.radio-en-ligne.fr/horizon",
-      "snippet": "Écoutez Horizon en direct et gratuit sur l'internet. Les plus grandes radios en ligne de France dans www.radio-en-ligne.fr."
-    }
-  ]
+  "sources": []
 }

@@ -47,16 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mradermacher/Yoshino2-1B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/Yoshino2-1B-GGUF",
-      "snippet": "Machine learning model with 1B parameters. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "mradermacher (team mradermacher) - Hugging Face",
-      "url": "https://huggingface.co/mradermacher",
-      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
-    }
-  ]
+  "sources": []
 }

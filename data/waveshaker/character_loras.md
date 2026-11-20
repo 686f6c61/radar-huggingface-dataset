@@ -2,99 +2,105 @@
 
 ## Resumen
 
-`waveshaker/character_loras` es un repositorio de Hugging Face que no contiene un modelo fundacional, sino una coleccion de adaptadores LoRA de personajes entrenados sobre varias familias de modelos de difusion: Pony, Flux 1 Dev, Krea2 y SD1.5, segun declara el propio autor en la model card. El repositorio lo publica el usuario `waveshaker` y ocupa 24,4 GB, un tamano coherente con el almacenamiento de multiples adaptadores junto con, probablemente, los pesos base o artefactos intermedios, aunque el repositorio no desglosa su contenido.
+`waveshaker/character_loras` es una colección de adaptadores LoRA para generación de imágenes texto-a-imagen, orientada a la reproducción de personajes concretos sobre distintos modelos base. El autor, `waveshaker`, publica en un único repositorio de Hugging Face un conjunto de LoRAs entrenados para bases heterogéneas: Krea-2-Raw y Krea-2-Turbo (los modelos base declarados en la model card), además de Flux.1-dev, Pony, SD1.5, Moss Image y Anima, según se desprende de los ejemplos de la propia card. No se trata de un modelo fundacional, sino de pesos de adaptación de bajo rango que modifican el comportamiento de un modelo de difusión ya existente.
 
-El problema que resuelve es el habitual de los LoRA de personaje: especializar un modelo texto-a-imagen en una identidad visual concreta sin reentrenar el modelo completo, lo que reduce el coste de entrenamiento y permite distribuir adaptadores de pocos cientos de MB que se cargan sobre el checkpoint base. La relevancia es practica para flujos de trabajo con ComfyUI o diffusers, no para tareas de lenguaje, razonamiento o agentes.
+El repositorio es relevante para quien trabaje con pipelines de generación de personajes consistentes: permite reutilizar un mismo identificador de personaje (por ejemplo `AthenaPalomino`, `yi_youyou`, `JuNail` o `CHRISTIE FROM DEAD OR ALIVE`) en distintas bases con un único punto de descarga. El tamaño del repositorio, 72 GB, refleja que contiene múltiples LoRAs y material auxiliar (previews, datasets, herramientas), no un único adaptador ligero.
 
-La informacion publicada es muy escasa: cero descargas, cero likes, sin pipeline declarado, sin licencia explicita, sin idiomas y sin resultados de benchmarks. La model card se limita a un aviso legal de cuatro puntos que restringe el uso a fines educativos y de investigacion, prohibe usos ilegales y deja la responsabilidad del contenido generado en manos del usuario. Cualquier evaluacion tecnica seria del repositorio exige descargarlo y auditar los ficheros uno a uno.
+La información técnica disponible es limitada: la model card documenta con detalle la configuración de entrenamiento para las variantes Moss Image y Krea2, pero no publica parámetros totales, longitud de contexto (no aplica a un modelo de difusión) ni resultados de benchmarks. La licencia es MIT según los metadatos del repositorio.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptadores LoRA (low-rank adaptation) sobre modelos de difusion de imagen. Bases citadas por el autor: Pony, Flux 1 Dev, Krea2 y SD1.5. Rango, alpha y capas objetivo no disponibles |
-| Parametros totales | No disponible. No se especifica el numero de parametros de los adaptadores ni de los checkpoints base |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No aplica: modelo de difusion de imagenes, sin ventana de contexto textual |
-| Tipos de cuantizacion | No disponible. Los LoRA se distribuyen convencionalmente en fp16/bf16 y se pueden fusionar sobre bases cuantizadas (GGUF, fp8), pero el repositorio no lo documenta |
-| Idiomas soportados | No disponible. En modelos de difusion el condicionamiento textual depende del text encoder de la base (CLIP/T5), no del LoRA |
-| Licencia | No disponible. No hay fichero de licencia declarado; la model card impone una restriccion de uso exclusivamente educativo y de investigacion |
-| Formato de pesos | No disponible en la model card. El ecosistema LoRA usa `.safetensors` de forma convencional; no confirmado para este repositorio |
-| Tamano del repositorio | 24,4 GB |
-| Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-10-26 |
-| Ultima actualizacion | 2026-10-27 |
+| Arquitectura | LoRA (adaptadores de bajo rango) sobre modelos de difusión texto-a-imagen; bases declaradas Krea-2-Raw y Krea-2-Turbo, con soporte adicional para Flux.1-dev, Pony, SD1.5, Moss Image y Anima |
+| Parametros totales | no disponible (depende del rango y del módulo adaptado de cada LoRA; la config documentada usa rank 16 en la variante Moss Image) |
+| Parametros activos | no aplica (no es un modelo MoE) |
+| Longitud de contexto | no aplica (modelo de difusión; la ventana relevante es la longitud del prompt, no disponible) |
+| Tipos de cuantizacion | Los LoRA se distribuyen en formato Diffusers sharded bfloat16 y en single-file int8 para ComfyUI, según la config de entrenamiento documentada; no se detallan otras cuantizaciones |
+| Idiomas soportados | no disponible (los prompts de ejemplo están en inglés) |
+| Licencia | MIT |
+| Formato de pesos | safetensors (Diffusers sharded bfloat16) y single-file int8 (ComfyUI); no se confirma GGUF |
 
 ## Arquitectura y entrenamiento
 
-El repositorio agrupa adaptadores LoRA, una tecnica de ajuste eficiente que congela los pesos del modelo base e inyecta matrices de baja dimension en capas seleccionadas (tipicamente las proyecciones de atencion y, en Flux, tambien las capas feed-forward). Al no publicarse el rango, el alpha, las capas objetivo ni el numero de pasos de entrenamiento, no es posible reconstruir la receta ni estimar el coste computacional de cada adaptador. La convivencia de cuatro familias de base distintas (Pony, Flux 1 Dev, Krea2 y SD1.5) implica arquitecturas y text encoders diferentes, de modo que cada adaptador es compatible unicamente con su base correspondiente y no son intercambiables entre si.
+Cada LoRA es un adaptador de bajo rango insertado en un modelo de difusión base. La model card documenta dos configuraciones de entrenamiento. Para **Moss Image** se usaron OneTrainer (fork de Koratahiu, rama `moss-image`), Fizgig y Fizgig-Advanced (fork de Murf-Code). El dataset típico es de 50+ imágenes (media de 100+), con repeticiones de 50+ por imagen y etiquetado mixto (tags tipo Booru como prefijo combinados con lenguaje natural). Los parámetros: resolución de entrenamiento 512, LR entre 1,5e-04 y 2,5e-04, batch size 3-4, atención `torch CuDNN` en lugar de SDPA, y preset `Moss-Image Fast (rank 16, 0.25MP)` en Fizgig. Para **Krea2** se empleó OneTrainer con un dataset similar de 50+ imágenes y etiquetado mixto.
 
-No hay informacion sobre el dataset de entrenamiento: numero de imagenes por personaje, resolucion, tecnicas de regularizacion (caption dropout, regularization images), uso de LoRA de tipo LyCORIS/LoCon, ni si se aplicaron metodos de merging. Tampoco se documentan las palabras de activacion (trigger words) de cada personaje, un dato imprescindible para reproducir resultados. La model card solo advierte de que bases como Pony pueden presentar una alta permisividad ante determinados prompts, lo que sugiere que el autor es consciente de la variabilidad de contenido segun la base elegida.
+La card incluye una discusión técnica sobre el escalado de learning rate respecto al batch size efectivo, citando tres papers: la regla de escalado lineal de Goyal et al. (2017), la regla de raíz cuadrada de Krizhevsky (2014) y un trabajo de 2026 sobre el batch size como parámetro de primer orden en LoRA. El autor aporta benchmarks de velocidad de entrenamiento (39 imágenes, 0,26 MP, r16): OneTrainer ~0,37 s/imagen (17m 43s), Fizgig ~0,83 s/imagen (36m 17s) y Fizgig-Advanced ~0,69 s/imagen (31m 20s). No se documenta el número total de tokens, la composición exacta del dataset ni si hubo RLHF/DPO (no aplica en este tipo de adaptadores).
 
 ## Capacidades
 
-- Generacion de imagenes condicionada por texto al cargarse sobre el checkpoint base adecuado (Pony, Flux 1 Dev, Krea2 o SD1.5).
-- Especializacion en identidades o personajes concretos, el caso de uso tipico de un LoRA de personaje.
-- Compatibilidad potencial con pipelines de img2img, inpainting y ControlNet, supeditada a la base y a la herramienta de inferencia empleada; no documentado.
-- Ajuste fino sobre la base sin reentrenarla, lo que permite mantener el conocimiento general del modelo original.
-- No soporta tool calling, function calling, razonamiento multi-paso, agentes ni procesamiento de lenguaje natural como tal.
-- No dispone de modo thinking, vision ni audio: es un adaptador de generacion de imagen.
-- Capacidades multilingues: no documentadas; dependen del text encoder de la base.
+- Generación de imágenes texto-a-imagen condicionada a un personaje concreto mediante un identificador textual (trigger word) en el prompt.
+- Compatibilidad con múltiples bases: Krea-2-Raw, Krea-2-Turbo, Flux.1-dev, Pony, SD1.5, Moss Image y Anima, según los ejemplos de la model card.
+- Estilización controlable mediante el prompt: retrato cinematográfico nocturno, retrato editorial de moda, ilustración anime, retrato con luz natural, etc.
+- Etiquetado mixto Booru + lenguaje natural, lo que permite prompts tanto con tags como en prosa.
+- Integración en flujos ComfyUI (formato single-file int8) y Diffusers (sharded bfloat16).
+- No soporta tool calling, function calling, agentes ni razonamiento multi-paso: es un modelo de imagen, no un LLM.
+- Capacidades multilingües: no documentadas; los ejemplos de la card están en inglés.
 
 ## Casos de uso
 
-- **Ilustracion de personajes recurrentes en proyectos editoriales**: cargar el adaptador sobre la base correcta en ComfyUI para mantener consistencia visual de un personaje a lo largo de una serie de laminas o capitulos, sin reentrenar en cada entrega.
-- **Previsualizacion de concept art en estudios pequenos**: generar variaciones rapidas de un diseno de personaje sobre SD1.5 o Pony, que requieren menos VRAM y permiten iterar en estaciones de trabajo modestas.
-- **Prototipado de assets para videojuegos**: producir retratos y sprites preliminares para validar direccion artistica antes de encargar el arte final.
-- **Investigacion sobre personalizacion de modelos de difusion**: usar la coleccion como corpus de estudio comparativo entre familias de base (Flux frente a SDXL/Pony) para analizar como cambia la fidelidad de identidad segun la arquitectura.
-- **Pruebas de regresion de pipelines de inferencia**: verificar que un mismo adaptador produce resultados estables tras actualizar ComfyUI, diffusers o los nodos de carga de LoRA.
-- **Docencia y talleres tecnicos**: ilustrar en un aula el flujo completo de entrenamiento y uso de LoRA, dado el caracter explicitamente educativo que el autor atribuye al repositorio.
-- **Generacion de avatares para entornos controlados**: crear retratos de personajes ficticios para demos internas, siempre que se respete la restriccion de uso educativo y se auditen los prompts.
+- **Generación de personajes consistentes en producción editorial**: usar el trigger word del personaje con Krea-2-Turbo para producir variaciones de retrato (luz, encuadre, vestuario) manteniendo la identidad visual, útil en campañas de moda o ilustración serializada.
+- **Prototipado rápido de personajes para videojuegos o cómics**: el LoRA permite iterar sobre un diseño de personaje con prompts cortos y un identificador estable, reduciendo el coste frente a reentrenar un modelo completo.
+- **Integración en ComfyUI para pipelines de estudio**: al distribuirse en single-file int8, se puede cargar en flujos de ComfyUI con nodos de LoRA estándar y combinarlo con otros adaptadores de estilo.
+- **Investigación sobre adaptadores de bajo rango**: la card documenta configuraciones reproducibles (rank 16, LR, batch size, atención CuDNN) y benchmarks de velocidad, lo que sirve como referencia para experimentos de entrenamiento de LoRA en difusión.
+- **Comparación de bases con un mismo personaje**: al incluir variantes para Flux.1-dev, Pony, SD1.5 y Krea2, permite evaluar cómo cambia la fidelidad del personaje entre arquitecturas con el mismo dataset.
+- **Generación de material de referencia para artistas**: producir hojas de personaje (turnarounds, expresiones) a partir del trigger word para usar como base de modelado 3D o ilustración posterior.
+- **Demostraciones y galerías interactivas**: los Spaces `loras_gallery` y `universal-lora-studio` del autor permiten probar los LoRAs sin infraestructura propia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye metricas objetivas habituales en el ambito de la difusion (FID, CLIP score, similitud facial, DINO, consistencia de identidad) ni comparaciones cuantitativas entre adaptadores.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente aporta métricas de velocidad de entrenamiento (no de calidad de generación):
+
+| Herramienta | Pasos | Velocidad | Tiempo total (39 imgs, 0,26 MP, r16) | s/imagen |
+|---|---|---|---|---|
+| OneTrainer | 910 | 1,12 s/it | 17m 43s | ~0,37 |
+| Fizgig | 2730 | 1,25 it/s | 36m 17s | ~0,83 |
+| Fizgig-Advanced | 910 | 2,07 s/it | 31m 20s | ~0,69 |
+
+No hay datos de FID, CLIP score, similitud de personaje ni comparativas cuantitativas con otros LoRAs.
 
 ## Requisitos de hardware
 
-- El repositorio completo ocupa 24,4 GB en disco, aunque en inferencia solo se carga el adaptador concreto junto con su base.
-- Los adaptadores LoRA son ligeros en VRAM; el cuello de botella es el checkpoint base. Estimaciones orientativas por familia, no verificadas en el repositorio:
-  - SD1.5: 4-6 GB de VRAM en fp16, viable en GPU consumer de gama media (RTX 3060 12 GB, RTX 4060 Ti 16 GB).
-  - Pony (familia SDXL): 8-12 GB en fp16; cabe en RTX 3090, RTX 4070 Ti Super, RTX 4080 y superiores.
-  - Flux 1 Dev: 20-24 GB en fp16 para el transformer completo; con cuantizacion GGUF Q4-Q8 baja a rangos de 8-12 GB, lo que permite ejecutarlo en RTX 4090 o incluso en GPU de 12 GB con intercambio de memoria.
-  - Krea2: no disponible, al no detallarse sus requisitos en la informacion proporcionada.
-- GPU de datacenter (A100 40/80 GB, H100) solo justificables para entrenamiento o para servir Flux en fp16/bf16 con concurrencia.
-- Opciones de despliegue: ComfyUI (la ruta habitual para LoRA, con carpeta `models/loras`), Automatic1111/Forge, SD.Next, diffusers con `load_lora_weights`, y variantes GGUF de la base en llama.cpp-like runners de difusion como ComfyUI-GGUF.
-- Latencia y throughput: no disponibles. Dependen por completo de la base, la GPU, los pasos de muestreo, la resolucion y el sampler; el repositorio no aporta mediciones.
+- **VRAM para inferencia**: no disponible de forma explícita. Como referencia, un LoRA de difusión sobre SD1.5 suele requerir 4-8 GB en fp16, y sobre Flux.1-dev o Krea-2, 12-24 GB según resolución y cuantización; estas cifras son estimaciones generales, no datos del repositorio.
+- **VRAM para entrenamiento**: la config documentada usa resolución 512 y batch size 3-4 con gradient accumulation, lo que sugiere GPUs de 16-24 GB (no confirmado por el autor).
+- **GPU recomendadas**: no especificadas. Por el tamaño del repo (72 GB) y las bases soportadas, se recomienda al menos una RTX 3090/4090 para Flux/Krea2 y GPUs de 8-12 GB para SD1.5/Pony.
+- **¿Cabe en GPU consumer?**: sí para SD1.5 y Pony; para Flux.1-dev y Krea2 probablemente sí en RTX 4090 con cuantización, aunque no está confirmado.
+- **Despliegue**: ComfyUI (formato single-file int8), Diffusers (sharded bfloat16), OneTrainer para reentrenamiento, y los Spaces del autor (`loras_gallery`, `universal-lora-studio`).
+- **Latencia y throughput**: no disponibles para inferencia.
 
 ## Comparativa con modelos similares
 
-| Repositorio / recurso | Tipo | Bases soportadas | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| `waveshaker/character_loras` | Coleccion de LoRA de personaje | Pony, Flux 1 Dev, Krea2, SD1.5 | No disponible | No aplica | No disponible; uso educativo declarado | Hugging Face, 24,4 GB, 0 descargas |
-| `Shakker-Labs/FLUX.1-dev-LoRA-collections` | Coleccion de LoRA para FLUX.1-dev | Flux 1 Dev | No disponible | No aplica | No verificada en la informacion | Hugging Face, mantenida por Shakker Labs |
-| LoRA de personaje en Civitai / loraai.io | Colecciones comunitarias | SD1.5, SDXL, Pony, Flux, Wan | No disponible | No aplica | Variable por autor | Amplia disponibilidad, con sistemas de valoracion y previsualizaciones |
-| Entrenamiento propio con kohya_ss o ai-toolkit | Pipeline de entrenamiento | SDXL, Flux y otros | Definido por el usuario (rango configurable) | No aplica | La de la base y las herramientas | Requiere dataset propio y GPU |
+| Modelo | Tipo | Bases soportadas | Contexto/prompt | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| `waveshaker/character_loras` | Colección de LoRAs de personaje | Krea2, Flux.1-dev, Pony, SD1.5, Moss, Anima | no aplica | MIT | Hugging Face, 1727 descargas |
+| LoRAs de personaje en Civitai (p. ej. PornMaster Moss SFT V1, Kromoss v1.0, Moody Moss Mix v4.1) | LoRA individuales | Moss Image principalmente | no aplica | variable (no disponible) | Civitai |
+| Adaptadores oficiales de Flux.1-dev | LoRA de estilo/personaje | Flux.1-dev | no aplica | variable | Hugging Face / BFL |
 
-La diferencia practica frente a una coleccion curada como la de Shakker Labs o los agregadores tipo Civitai es la ausencia total de validacion comunitaria, previsualizaciones y metadatos: aqui no hay descargas ni likes que permitan inferir calidad, y tampoco se documentan triggers ni ejemplos.
+No se dispone de datos de rendimiento comparativo (fidelidad de personaje, FID) entre estas alternativas. La ventaja diferencial del repositorio es la agregación multi-base en un único punto con licencia MIT; la desventaja es la falta de métricas de calidad publicadas.
 
 ## Limitaciones y advertencias
 
-- **Ausencia de licencia explicita**: no hay fichero de licencia. La model card restringe el uso a intercambio academico, pruebas tecnicas e investigacion personal, lo que en la practica bloquea o pone en riesgo juridico cualquier uso comercial.
-- **Licencias de las bases**: cada adaptador hereda las condiciones de su modelo base. Flux 1 Dev se distribuye con licencia de uso no comercial, y Pony y SD1.5 tienen sus propias restricciones; el repositorio no aclara nada al respecto.
-- **Riesgo de derechos de imagen**: los LoRA de personaje se entrenan a menudo con imagenes de personas reales o personajes con derechos. La model card prohibe infringir derechos de imagen y privacidad, pero no aporta informacion sobre la procedencia del dataset ni sobre consentimiento.
-- **Contenido sensible**: el autor advierte explicitamente de que bases como Pony pueden ser muy permisivas ante ciertos prompts. El filtrado y la auditoria del contenido generado recaen por completo en el usuario.
-- **Trazabilidad nula**: sin trigger words, sin ejemplos, sin desglose de ficheros y sin historial de versiones documentado. No se puede saber que adaptador corresponde a que personaje sin inspeccionar el repositorio.
-- **Cero validacion externa**: 0 descargas y 0 likes implican que no hay evidencia publica de calidad, estabilidad ni fidelidad de identidad.
-- **Alucinacion en sentido figurado**: en difusion se traduce en artefactos, deformaciones anatomicas y deriva de identidad al aumentar los pasos, el peso del LoRA o la resolucion fuera del rango de entrenamiento.
-- **Compatibilidad estricta**: cargar un adaptador sobre una base distinta a la prevista produce resultados invalidos o errores de carga; no hay metadatos que automaticen esa comprobacion.
-- **Sesgos**: no evaluados ni documentados; los sesgos del checkpoint base se transfieren integramente al adaptador.
+- **Sesgos conocidos**: no documentados por el autor; al entrenarse con datasets de personajes (mayoritariamente figuras femeninas según los tags `girl`, `character`), es probable un sesgo hacia ese tipo de sujeto y estética.
+- **Riesgo de alucinación visual**: como todo modelo de difusión, puede generar anatomía incorrecta, texto ilegible o detalles inconsistentes; no hay evaluaciones publicadas.
+- **Limitaciones de contexto e idioma**: los prompts de ejemplo están en inglés; no se confirma soporte multilingüe. La longitud de prompt efectiva no está documentada.
+- **Licencia**: MIT permite uso comercial, pero conviene verificar que los datasets de entrenamiento (no publicados en detalle) no impongan restricciones adicionales sobre las imágenes de personajes con derechos (p. ej. Christie de Dead or Alive).
+- **Reproducibilidad**: la card documenta hiperparámetros, pero no publica el dataset ni los seeds; la reproducibilidad exacta no está garantizada.
+- **Tamaño del repo**: 72 GB incluyen material auxiliar; descargar el repositorio completo puede ser costoso si solo se necesita un LoRA concreto.
+- **Producción**: sin benchmarks de calidad ni pruebas de robustez, no se recomienda desplegar en producción sin una evaluación propia de fidelidad de personaje y estabilidad.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/waveshaker/character_loras
-- Shakker AI, guia sobre modelos LoRA: https://wiki.shakker.ai/en/lora-model
-- Shakker AI, LoRA aplicado a Stable Diffusion: https://wiki.shakker.ai/en/lora-stable-diffusion
-- Coleccion de LoRA de Shakker Labs para FLUX.1-dev: https://huggingface.co/Shakker-Labs/FLUX.1-dev-LoRA-collections
-- Directorio de LoRA para Flux, Wan y SDXL: https://loraai.io/loras
-- Guia de entrenamiento de LoRA de personaje en local: https://locallyuncensored.com/blog/character-lora-training-local.html
+- Repositorio Hugging Face: https://huggingface.co/waveshaker/character_loras
+- Galería de LoRAs (Space): https://huggingface.co/spaces/waveshaker/loras_gallery
+- Universal Model Character LoRA Studio (Space): https://huggingface.co/spaces/waveshaker/universal-lora-studio
+- Dataset collections: https://huggingface.co/datasets/waveshaker/dataset_collections
+- Herramientas del repositorio: https://huggingface.co/waveshaker/loras_tools
+- OneTrainer (fork Moss Image): https://github.com/Koratahiu/OneTrainer/tree/moss-image
+- Fizgig: https://github.com/shootthesound/Fizgig
+- Fizgig-Advanced: https://github.com/Murf-Code/Fizgig-Advanced
+- OneTrainer: https://github.com/nerogar/OneTrainer
+- Paper Goyal et al. 2017: https://arxiv.org/abs/1706.02677
+- Paper Krizhevsky 2014: https://arxiv.org/abs/1404.5997
+- Paper 2026 sobre batch size en LoRA: https://arxiv.org/abs/2602.09492
+- Modelo base Krea-2-Raw: https://huggingface.co/krea/Krea-2-Raw
+- Modelo base MOSS Image SFT: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT

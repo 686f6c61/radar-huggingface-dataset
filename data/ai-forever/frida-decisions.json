@@ -58,31 +58,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "OpenAI | Research & Deployment",
-      "url": "https://openai.com/",
-      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
-    },
-    {
-      "title": "Google Gemini",
-      "url": "https://gemini.google.com/",
-      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
-    },
-    {
-      "title": "ChatGPT: Chat, Work, Create & Code with AI",
-      "url": "https://chatgpt.com/",
-      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or …"
-    },
-    {
-      "title": "DeepAI",
-      "url": "https://deepai.org/",
-      "snippet": "DeepAI is the all-in-one creative AI platform built for everyone. We got our start in late 2016 with the first browser-based text-to-image …"
-    },
-    {
-      "title": "Google AI - How we're making AI helpful for everyone",
-      "url": "https://ai.google/",
-      "snippet": "Discover how Google AI is committed to enriching knowledge, solving complex challenges and helping people grow by building …"
-    }
-  ]
+  "sources": []
 }

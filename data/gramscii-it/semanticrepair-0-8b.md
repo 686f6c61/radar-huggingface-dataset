@@ -2,112 +2,101 @@
 
 ## Resumen
 
-SemanticRepair-0.8B es un modelo pequeño de lenguaje (SLM) publicado por Gramscii-IT sobre la base Qwen3.5-0.8B (772.845.888 parámetros en safetensors), orientado a una tarea muy concreta dentro de pipelines de recuperación aumentada (RAG): la reescritura semántica de consultas y el enrutado de capacidades. No es un modelo conversacional generalista, sino un conjunto de tres adaptadores LoRA (repair, tie-break y translation) que se sitúan detrás de un router de embeddings para decidir qué capacidad del sistema anfitrión debe ejecutarse ante un mensaje del usuario.
+SemanticRepair-0.8B es un adaptador LoRA sobre Qwen3.5-0.8B desarrollado por Gramscii-IT, diseñado para funcionar detrás de un router de embeddings en sistemas de chat con múltiples capacidades (búsqueda documental, búsqueda web, localización geográfica, estadísticas de datos abiertos, etc.). Su función no es responder preguntas, sino reescribir cada petición que un mensaje contiene en una línea propia y asignar a cada línea la capacidad del chat que debe ejecutarla, o `none` si ninguna la cubre. Si el mensaje no solicita nada, devuelve el token `NO_REQUEST`.
 
-El adaptador de repair descompone un mensaje en las peticiones que contiene, una por línea, y nombra para cada una la capacidad del chat que la resuelve, o `none`; si el mensaje no pide nada, devuelve `NO_REQUEST`. El adaptador de tie-break desempata cuando el router y el repair dejan dos o más capacidades próximas, eligiendo una o absteniéndose para preguntar al usuario. El adaptador de translation reescribe la consulta en el idioma de los pasajes indexados para que la búsqueda léxica los encuentre, sin afectar a la búsqueda semántica.
+El modelo resuelve un problema concreto en arquitecturas RAG y de enrutamiento de herramientas: los mensajes de usuario reales son ambiguos, contienen referencias anafóricas ("e per Milano?", "trova di più a riguardo") y encadenan varias peticiones en una sola frase. El adaptador lee el mensaje a la luz de los últimos turnos del chat y lo normaliza en el formato `capability | request`, de modo que el router pueda verificar cada capacidad contra sus propias puntuaciones y la aplicación anfitriona decida qué se ejecuta. La salida del modelo por sí sola nunca autoriza una operación.
 
-Su relevancia actual radica en la relación calidad/tamaño: el tie-break es una destilación de un profesor 34 veces mayor (Qwen3.8-27B) y, según el autor, iguala o supera en acierto a modelos de 24B-40B en su tarea específica, con una tasa de error muy inferior. Está pensado para ejecutarse en local (el autor cita un Apple M4 Pro de 64 GB con llama.cpp) y se distribuye en GGUF con licencia Apache 2.0.
+Con 772.845.888 parámetros en el modelo base y un adaptador de rango 32 que ocupa entre 22 y 43 MB en formato GGUF F16, la propuesta es deliberadamente ligera: un único base sirve para varios trabajos (reparación semántica, elección de herramienta y traducción de consultas) cargando adaptadores distintos, en lugar de desplegar modelos separados de 800 MB. Soporta italiano, inglés, francés, alemán y español, y se distribuye bajo licencia Apache-2.0.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (base Qwen3.5-0.8B) con tres adaptadores LoRA |
-| Parámetros totales | 772.845.888 (base en safetensors); base Q8_0 GGUF de 833.592.320 bytes |
-| Parámetros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | Q8_0 (base GGUF publicada); adaptadores LoRA en F16 |
-| Idiomas soportados | it, en, fr, de, es |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (base Q8_0 y adaptadores LoRA F16); safetensors en el repo base |
+| Arquitectura | Transformer (Qwen3.5-0.8B) con adaptador LoRA de rango 32 |
+| Parámetros totales | 772.845.888 (modelo base); adaptador LoRA F16 de 43.316.320 bytes |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | 32.768 tokens (configuración de despliegue con `-c 32768`) |
+| Tipos de cuantización | Base en Q8_0 (833.592.320 bytes); adaptador en F16; el autor indica que un adaptador cuesta entre 22 y 43 MB |
+| Idiomas soportados | Italiano, inglés, francés, alemán, español |
+| Licencia | Apache-2.0 |
+| Formato de pesos | GGUF (base Q8_0 y adaptador LoRA F16); el repositorio también contiene safetensors según los metadatos de parámetros |
 
 ## Arquitectura y entrenamiento
 
-La base es Qwen3.5-0.8B en la revisión `2fc06364`, un transformer decoder-only de menos de mil millones de parámetros. Sobre ella se aplican tres adaptadores LoRA independientes en F16 (unos 21,7 MB cada uno), cada uno especializado en una subtarea del enrutado: repair (7 de noviembre), tie-break (31 de octubre) y translation (7 de noviembre). El conjunto se distribuye como GGUF para su uso con llama.cpp, con hashes SHA-256 publicados para cada fichero.
+El modelo es un adaptador LoRA de rango 32 sobre Qwen3.5-0.8B, en la revisión `2fc06364` del base. Se ha ajustado sobre una superficie de completación desnuda, no sobre una plantilla de chat: el adaptador nunca ha visto un chat template, un mensaje de sistema ni ejemplos few-shot. La entrada que espera tiene la forma `Capabilities: {ids separados por comas}`, seguida de cero o más líneas `Earlier: {capability} | {request}` y una línea `{Language}: {mensaje verbatim}`, cerrada por `=>` y un salto de línea que forma parte de la superficie. La salida es una línea por petición en formato `capability | request`, `none | request` o el token único `NO_REQUEST`.
 
-El entrenamiento combina destilación y ajuste supervisado sobre el dataset `Gramscii-IT/semantic-repair-routing`. El adaptador de tie-break se destiló a partir de las decisiones de un profesor Qwen3.8-27B, 34 veces mayor, sobre desempates de rutas; el de translation aprendió a reescribir consultas en el idioma de los pasajes indexados siguiendo también al profesor. No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si hubo RLHF o DPO. El diseño es deliberadamente conservador: ningún adaptador responde a la pregunta del usuario; el router del sistema anfitrión valida cada capacidad propuesta contra sus propias puntuaciones y la aplicación decide qué se ejecuta, de modo que la salida del modelo por sí sola nunca autoriza una operación.
+El entrenamiento se basa en destilación y se apoya en el dataset `Gramscii-IT/semantic-repair-routing`. La innovación técnica principal es el tratamiento del contexto conversacional: las líneas `Earlier:` permiten interpretar mensajes que continúan el hilo ("e per Milano?" tras una pregunta sobre Roma) o que apuntan a resultados previos ("trova di più a riguardo" tras una petición de diapositivas), reescribiéndolos con el sujeto correcto. El autor recomienda fijar el sha256 de ambos ficheros (base y adaptador) para que las decisiones de enrutamiento sean reproducibles.
 
 ## Capacidades
 
-- Reescritura de consultas (query rewriting): descompone un mensaje en las peticiones que contiene, una por línea.
-- Enrutado de capacidades (capability routing): asigna a cada petición una capacidad ofrecida por el chat o `none`; devuelve `NO_REQUEST` si el mensaje no pide nada.
-- Lectura con contexto conversacional: interpreta el mensaje a la luz de los últimos turnos, de modo que continuaciones como «e per Milano?» se resuelven como parte de la conversación.
-- Desempate de rutas (tie-break): elige entre capacidades próximas o se abstiene para preguntar al usuario.
-- Traducción de consultas de búsqueda al idioma de los pasajes indexados, preservando números y códigos.
-- Detección de intención y clasificación de peticiones.
-- Multilingüe en it, en, fr, de y es.
-- No incluye tool calling genérico, agentes autónomos, visión, audio ni modo thinking; su función es exclusivamente la capa de enrutado y reescritura.
+- Reescritura de consultas (query rewriting): normaliza mensajes ambiguos o coloquiales en peticiones explícitas.
+- Descomposición multi-petición: un mensaje con varias solicitudes se convierte en una línea por petición.
+- Detección de intención y enrutamiento de capacidades: asigna a cada petición una de las capacidades ofrecidas por el chat, o `none`.
+- Detección de ausencia de petición: devuelve `NO_REQUEST` cuando el mensaje no solicita nada.
+- Resolución de referencias anafóricas y elipsis conversacionales mediante las líneas `Earlier:`.
+- Capacidades multilingües en italiano, inglés, francés, alemán y español; el campo `{Language}` se indica con el nombre inglés del idioma del mensaje.
+- Integración con un router de embeddings externo: el adaptador no decide por sí solo, sino que produce candidatos que el router valida contra sus puntuaciones.
+- Compatible con endpoints de completación (`/v1/completions`), no con endpoints de chat.
 
 ## Casos de uso
 
-- Enrutado de capacidades en asistentes con múltiples herramientas: el adaptador de repair identifica qué capacidad del chat resuelve cada petición del mensaje y el router del anfitrión valida la propuesta antes de ejecutar, evitando invocaciones no autorizadas.
-- Desambiguación en asistentes conversacionales: cuando dos capacidades quedan próximas en la puntuación del router, el tie-break elige una o se abstiene y deriva al usuario, reduciendo ejecuciones erróneas (6,7 % de ejecuciones no solicitadas en el conjunto de prueba del autor).
-- Reescritura de consultas en pipelines RAG: el adaptador de repair separa peticiones compuestas y el de translation las reescribe en el idioma de los pasajes, de modo que un índice léxico en ese idioma recupera documentos que la consulta original no encontraría.
-- Búsqueda híbrida léxica y semántica: la traducción solo se aplica a la búsqueda por palabras; la búsqueda semántica conserva los términos del usuario, de forma que una traducción errónea puede añadir candidatos pero nunca eliminar los correctos.
-- Continuidad conversacional multi-turno: al leer el mensaje junto con los últimos turnos, resuelve referencias elípticas («y para Milán?») sin requerir que el usuario repita el contexto.
-- Despliegue en local o en el borde: con menos de 1.000 millones de parámetros y GGUF Q8_0, cabe en equipos de consumo y permite enrutado de bajo coste sin depender de una API externa.
-- Soporte multilingüe en atención al cliente: con cobertura de it, en, fr, de y es, puede clasificar y reescribir consultas en esos idiomas antes de pasarlas al motor de recuperación.
+- Enrutamiento de capacidades en asistentes conversacionales: el adaptador reescribe cada mensaje del usuario en peticiones etiquetadas con la capacidad adecuada, y el router de embeddings valida la elección antes de ejecutar nada. Es adecuado porque separa la comprensión de la intención de la ejecución efectiva.
+- Desambiguación de mensajes conversacionales: en un chat que ya ha respondido sobre Roma, un mensaje como "e per Milano?" se reescribe como una petición de la misma capacidad aplicada a otra ciudad, usando las líneas `Earlier:` para conservar el contexto.
+- Sistemas RAG con referencias a resultados previos: mensajes del tipo "trova di più a riguardo" se reescriben con el sujeto que trajo el último turno con contenido externo (un artículo, unas diapositivas o un resumen), lo que mejora la recuperación documental.
+- Descomposición de consultas compuestas: una frase como "¿dónde está Sassari? muéstramelo en el mapa y dame las últimas noticias de Italia" se separa en peticiones independientes para localización, visualización cartográfica y búsqueda de noticias, cada una con su capacidad.
+- Filtrado previo en pipelines de agentes: antes de invocar herramientas, el adaptador identifica qué peticiones no corresponden a ninguna capacidad disponible (`none`) o si el mensaje no pide nada (`NO_REQUEST`), evitando ejecuciones innecesarias o incorrectas.
+- Despliegue ligero en producción: con llama-server, el modelo se carga solo cuando se necesita y se libera tras una ventana de inactividad; el adaptador ocupa entre 22 y 43 MB frente a los 800 MB de un modelo completo, lo que permite mantener varios adaptadores (reparación, elección de herramienta, traducción de consultas) sobre un único base.
+- Traducción de consultas para recuperación multilingüe: junto con QueryTranslator-0.8B, el flujo puede reescribir la petición en el idioma de los pasajes donde se buscará, manteniendo la coherencia con la capacidad enrutada.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor (no verificados de forma independiente):
+Resultados declarados por el autor del modelo (no verificados de forma independiente):
 
-| Tarea y conjunto de evaluación | Métrica | Valor |
-|---|---|---|
-| Repair + tie-break en cadena de enrutado; 481 preguntas reales de chat en italiano (test) | Solo ejecutó capacidades solicitadas (%) | 36,8 |
-| Repair + tie-break en cadena de enrutado; 481 preguntas reales de chat en italiano (test) | Ejecutó una capacidad no solicitada (%), menor es mejor | 6,7 |
-| Tie-break; 201 desempates retenidos del 31 de octubre (146 it, 55 en) | Misma elección que el profesor Qwen3.8-27B (%) | 87,6 |
-| Tie-break; 201 desempates retenidos del 31 de octubre (146 it, 55 en) | Elecciones erróneas (%), menor es mejor | 0,5 |
-| Tie-break; 106 desempates del 22 de octubre (53 it, 53 en) | Misma elección que el profesor Qwen3.8-27B (%) | 77,4 |
-| Tie-break; 106 desempates del 22 de octubre (53 it, 53 en) | Elecciones erróneas (%), menor es mejor | 0,9 |
-| Translation; 382 consultas retenidas (223 a italiano, 159 a inglés) | Coincidencia exacta con la traducción del profesor (%) | 33,2 |
-| Translation; 382 consultas retenidas (223 a italiano, 159 a inglés) | Formato correcto: una línea, números y códigos conservados, consulta no copiada (%) | 100,0 |
-| Translation; 382 consultas retenidas (223 a italiano, 159 a inglés) | F1 medio de palabras compartidas con la traducción del profesor (%) | 90,9 |
+| Tarea | Dataset | Métrica | Valor |
+|---|---|---|---|
+| Adaptador de reparación en la cadena de enrutamiento del chat, junto con ToolChooser-0.8B | 480 preguntas reales de chat en italiano, reservadas del entrenamiento (test) | Solo ejecutó las capacidades que la pregunta pide (%) | 33,5 |
+| Adaptador de reparación en la cadena de enrutamiento del chat, junto con ToolChooser-0.8B | 480 preguntas reales de chat en italiano, reservadas del entrenamiento (test) | Ejecutó una capacidad que la pregunta no pide (%), menor es mejor | 5,4 |
+| Adaptador de reparación en la cadena de enrutamiento del chat: mensajes escritos para sondearlo | 100 mensajes de test, 50 en italiano y 50 en inglés (test) | Enrutado correcto (%) | 93,0 |
+| Adaptador de reparación en la cadena de enrutamiento del chat: mensajes escritos para sondearlo | 100 mensajes de test, 50 en italiano y 50 en inglés (test) | Enrutado incorrecto (%), menor es mejor | 4,0 |
 
-Comparativa del autor en la tarea de tie-break sobre los 106 desempates del 22 de octubre (mismo Apple M4 Pro de 64 GB, llama.cpp, una petición a la vez):
-
-| Modelo | Misma elección que el profesor (de 106) | Elecciones erróneas |
-|---|---|---|
-| SemanticRepair-0.8B (adaptador tie-break) | 82 | 1 |
-| Qwen3.5-4B ajustado por Gramscii | 84 | 1 |
-| Qwen3.6-35B-A3B (MoE, 3B activos), thinking off | 84 | 22 |
-| LFM2.5-24B-A2B (MoE, 2B activos) | 77 | 28 |
-| Flint (MoE, 40B, 2,5B activos) | 69 | 35 |
+No se han publicado en la información disponible resultados de benchmarks estándar como MMLU, HumanEval o GSM8K.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en torno a 1 GB para la base Q8_0 (833.592.320 bytes) más unos 22 MB por adaptador LoRA en F16; con cuantizaciones menores (Q4_K_M, Q5_K_M) el consumo baja aún más, aunque no se publican ficheros de esas cuantizaciones en el repo.
-- GPU recomendadas: cualquier GPU consumer con 4 GB o más de VRAM es suficiente; el autor valida el funcionamiento en Apple M4 Pro (64 GB) con llama.cpp. Para despliegues en servidor, GPU de gama de entrada (T4, L4) o incluso CPU son viables por el tamaño del modelo.
-- Cabe en GPU de consumo: sí, con amplio margen, incluidas RTX 3060, RTX 4060, RTX 4090 y GPUs integradas con memoria unificada.
-- Opciones de despliegue: llama.cpp (formato validado por el autor); vLLM, TGI u Ollama no están confirmados en la información disponible.
-- Latencia y throughput: no se publican cifras concretas; el autor indica ejecución con una petición a la vez en un Apple M4 Pro, sin datos de tokens por segundo.
+- VRAM estimada para inferencia: el base Q8_0 ocupa 833.592.320 bytes (unos 0,83 GB) y el adaptador LoRA F16 43.316.320 bytes (unos 43 MB); el total ronda 1 GB de pesos, más el espacio de trabajo del contexto (hasta 32.768 tokens) y el grafo de cómputo.
+- GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM libre es suficiente para el modelo en Q8_0; tarjetas como RTX 3060, RTX 4060, RTX 4090, A100 o H100 lo ejecutan sin problema, aunque el modelo está pensado para despliegues modestos.
+- Cabe holgadamente en GPU de consumo: sí, en cualquier GPU consumer con 4 GB o más de VRAM.
+- Opciones de despliegue: llama-server (llama.cpp) con `--lora` para cargar el adaptador, `--jinja`, `-ngl 99`, `-c 32768`, `--no-context-shift` y `--cache-ram 0`. El autor no menciona otros motores como vLLM o TGI en la información disponible.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Rendimiento en tie-break (106 casos) | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SemanticRepair-0.8B | 772.845.888 | no disponible | 82/106 aciertos, 1 error | apache-2.0 | GGUF en Hugging Face |
-| Qwen3.5-4B ajustado por Gramscii | no disponible | no disponible | 84/106 aciertos, 1 error | no disponible | no disponible |
-| Qwen3.6-35B-A3B (MoE, 3B activos) | 35B totales, 3B activos | no disponible | 84/106 aciertos, 22 errores | no disponible | no disponible |
-| LFM2.5-24B-A2B (MoE, 2B activos) | 24B totales, 2B activos | no disponible | 77/106 aciertos, 28 errores | no disponible | no disponible |
-| Flint (MoE, 40B, 2,5B activos) | 40B totales, 2,5B activos | no disponible | 69/106 aciertos, 35 errores | no disponible | no disponible |
+| SemanticRepair-0.8B | 772.845.888 (base) + LoRA rango 32 | 32.768 tokens (configuración de despliegue) | Reparación semántica y enrutamiento de capacidades | Apache-2.0 | Hugging Face, GGUF |
+| ToolChooser-0.8B (Gramscii-IT) | Mismo base Qwen3.5-0.8B + adaptador propio | No disponible | Elección de capacidad cuando el router y la reparación dejan dos o más candidatas cercanas | Apache-2.0 (según el base) | Hugging Face |
+| QueryTranslator-0.8B (Gramscii-IT) | Mismo base Qwen3.5-0.8B + adaptador propio | No disponible | Reescritura de la consulta en el idioma de los pasajes de búsqueda | Apache-2.0 (según el base) | Hugging Face |
 
-La comparación debe leerse con cautela: los modelos alternativos generaron su respuesta al prompt del 22 de octubre, mientras que el adaptador lee su decisión del prompt con el que fue entrenado, que añade la regla sobre documentos seleccionados. La ventaja principal del modelo es la tasa de error (1 frente a 22-35 en los MoE grandes) con un tamaño 30-50 veces menor.
+Los tres adaptadores comparten el mismo base y se cargan simultáneamente en llama-server con un `--lora` cada uno, nombrando en cada petición el adaptador activo a escala 1.0 y los demás a 0.0. No se dispone de datos de benchmarks comparativos entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo de propósito general: no responde preguntas, no genera texto libre ni ejecuta herramientas; solo reescribe consultas, enruta capacidades y desempata.
-- El acierto en la cadena completa de enrutado es bajo en términos absolutos (36,8 % de ejecuciones solo de capacidades solicitadas sobre 481 preguntas reales), aunque la tasa de ejecución no solicitada es contenida (6,7 %). El sistema anfitrión debe validar siempre las propuestas del modelo.
-- Los benchmarks son declarados por el autor y no están verificados de forma independiente; además, la comparación con modelos alternativos no es completamente homogénea por diferencias en el prompt utilizado.
-- La cobertura lingüística se limita a it, en, fr, de y es; no hay datos sobre rendimiento fuera de esos idiomas.
-- La traducción puede introducir errores; el diseño lo mitiga aplicándola solo a la búsqueda léxica, pero conviene monitorizar la recuperación.
-- No se publican datos sobre sesgos, tasa de alucinación ni longitud de contexto soportada.
-- Licencia Apache 2.0, que permite uso comercial, pero el modelo base Qwen3.5-0.8B puede tener condiciones adicionales que conviene revisar antes de desplegar en producción.
-- El adaptador de tie-break se entrenó con reglas concretas del sistema del autor; cambios en las reglas de enrutado del anfitrión pueden degradar su comportamiento.
+- El modelo no responde preguntas: solo reescribe y etiqueta peticiones. La aplicación anfitriona debe decidir qué se ejecuta; la salida del modelo por sí sola nunca autoriza una operación.
+- No ha sido entrenado con plantillas de chat, mensajes de sistema ni ejemplos few-shot; usarlo con un chat template produce entradas fuera de distribución. Debe llamarse exclusivamente en `/v1/completions` con la superficie exacta descrita.
+- El salto de línea tras `=>` es parte de la superficie; un prompt que termina en `=>` sin el salto es una entrada que el modelo nunca ha visto.
+- La línea `Capabilities:` debe contener la lista completa de capacidades que ofrece el chat, no una preselección; el autor advierte explícitamente sobre este punto en la sección "What it does not fix".
+- Las líneas `Earlier:` son necesarias para resolver referencias conversacionales; omitirlas degrada la interpretación de mensajes que continúan el hilo o apuntan a resultados previos.
+- Los resultados de los benchmarks son declarados por el autor y no están verificados de forma independiente; la precisión del 33,5 % en preguntas reales de chat sugiere margen de mejora en ese escenario.
+- Riesgo de alucinación: al ser un modelo de reescritura, puede inventar peticiones o capacidades no presentes en el mensaje original; el router debe validar cada capacidad contra sus propias puntuaciones.
+- Sesgos conocidos: no disponibles en la información proporcionada.
+- Cobertura lingüística limitada a italiano, inglés, francés, alemán y español; otros idiomas quedan fuera del entrenamiento declarado.
+- Restricciones de licencia: Apache-2.0 permite uso comercial, pero debe conservarse el fichero `LICENSE` del modelo base y verificarse las condiciones de Qwen3.5-0.8B.
+- Para producción, el autor recomienda fijar el sha256 de la base y del adaptador para garantizar la reproducibilidad de las decisiones de enrutamiento, y usar `--cache-ram 0` para evitar que llama-server retenga hasta 8 GiB de prompts anteriores en memoria.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Gramscii-IT/SemanticRepair-0.8B
-- Perfil del autor: https://huggingface.co/Gramscii-IT
-- Dataset de entrenamiento: https://huggingface.co/datasets/Gramscii-IT/semantic-repair-routing
-- Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
+- [Hugging Face: Gramscii-IT/SemanticRepair-0.8B](https://huggingface.co/Gramscii-IT/SemanticRepair-0.8B)
+- [Hugging Face: Gramscii-IT/ToolChooser-0.8B](https://huggingface.co/Gramscii-IT/ToolChooser-0.8B)
+- [Hugging Face: Gramscii-IT/QueryTranslator-0.8B](https://huggingface.co/Gramscii-IT/QueryTranslator-0.8B)
+- [Dataset: Gramscii-IT/semantic-repair-routing](https://huggingface.co/datasets/Gramscii-IT/semantic-repair-routing)
+- [Modelo base: Qwen/Qwen3.5-0.8B](https://huggingface.co/Qwen/Qwen3.5-0.8B)

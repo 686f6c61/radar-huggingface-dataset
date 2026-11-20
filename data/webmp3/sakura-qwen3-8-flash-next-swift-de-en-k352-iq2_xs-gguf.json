@@ -58,29 +58,9 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
-      "snippet": "Input a message to start chatting with Qwen/Qwen3.8-Flash-Next."
-    },
-    {
-      "title": "Qwen3.8-Flash-Next - GitHub",
-      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
-      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
-    },
-    {
-      "title": "Qwen3.8-Flash-Next/README.md at main - GitHub",
-      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/README.md",
-      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability:"
-    },
-    {
-      "title": "Qwen3.8-Flash-Next GGUF Guide 2026: Run It Locally with unsloth ...",
-      "url": "https://cldnavi.com/en/blog/qwen38-flash-next-gguf-guide-2026/",
-      "snippet": "How to run Qwen3.8-Flash-Next (125B total / 6B activated next-gen MoE) locally with unsloth GGUF. 7 quantizations from UD-IQ1_S (~72GB) to UD-Q4_K_XL (~111GB) with RAM/VRAM requirements, recommended PC builds (96GB-192GB RAM + RTX 4060 Ti to RTX 5090), and llama.cpp setup."
-    },
-    {
-      "title": "How to Run Qwen3.8 Flash Next Locally: GGUF, Hardware and Benchmarks",
-      "url": "https://atomic.chat/blog/guides/how-to-run-qwen-3-8-flash-next-locally",
-      "snippet": "Qwen3.8 Flash Next is an open-weight early preview of the architecture behind Qwen4. It has a 125B main model with 6B active parameters per token. The checkpoint also includes a 51B n-gram embedding table and a 4B MTP head. This guide covers our Atomic Dynamic GGUF builds and the exact setup for Atomic Chat or llama.cpp."
+      "title": "Best Mobile App Development Courses & Certificates [2026] | Coursera",
+      "url": "https://www.coursera.org/courses?query=mobile+app+development&msockid=238021d4cebb642019d539c3cfde65ea",
+      "snippet": "Mobile app development courses can help you learn programming languages like Java and Swift, user interface design principles, …"
     }
   ]
 }

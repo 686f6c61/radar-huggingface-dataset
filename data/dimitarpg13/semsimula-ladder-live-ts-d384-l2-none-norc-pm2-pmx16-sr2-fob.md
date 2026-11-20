@@ -2,125 +2,113 @@
 
 ## Resumen
 
-FO-b-PM2-TS (identificador completo `dimitarpg13/semsimula-ladder-live-ts-d384-l2-none-norc-pm2-pmx16-sr2-fob`) es un modelo de lenguaje de investigación desarrollado por el autor independiente dimitarpg13 dentro de la familia «Semantic Simulation» (SemSimula), una línea de trabajo que sustituye el mecanismo de atención por un núcleo conservativo derivado de la mecánica lagrangiana: el modelo no calcula atención, sino que evoluciona el estado mediante un potencial escalar con pozos de modo Poisson (dos pozos, `pm2`) y geometría riemanniana. Esta variante concreta es la «gemela de primer orden» de PM2-TS: se entrena como flujo de gradiente de primer orden puro, sin velocidad ni inercia, y se compara con su pareja de segundo orden para determinar si la dinámica de segundo orden aporta alguna ventaja.
+El modelo `semsimula-ladder-live-ts-d384-l2-none-norc-pm2-pmx16-sr2-fob` es un modelo de lenguaje de investigación desarrollado por el autor de Hugging Face `dimitarpg13`, perteneciente a la familia "Semantic Simulation" (semsimula). Se trata de un modelo de lenguaje conservativo (energy-based, con potencial escalar) que abandona la arquitectura transformer y el mecanismo de atención en favor de una dinámica de flujo de gradiente de primer orden sobre un potencial anisótropo gaussiano con dos pozos de modo Poisson. El modelo se entrena sobre el corpus TinyStories y está diseñado explícitamente como experimento de ablación de mecanismo: comparar si la dinámica de segundo orden (con velocidad e inercia) es necesaria frente a un flujo de primer orden entrenado de forma equivalente.
 
-El modelo se entrena desde cero sobre TinyStories (315.392.000 tokens, bloques de 512, 19.250 pasos) y alcanza una perplejidad de validación de 4,963 en el punto estabilizado. Su relevancia no es de producto sino experimental: forma parte de un estudio de ablación de mecanismos preinscrito (protocolo §5.13, hipótesis TS-K2), con presupuesto de tokens emparejado y evaluaciones emparejadas paso a paso contra su gemelo de segundo orden, lo que permite aislar el efecto de la dinámica de orden con una variable única. La conclusión declarada por el autor es que el primer orden iguala al segundo (−0,5 %), un resultado negativo útil para quien investigue arquitecturas alternativas al transformer.
+La relevancia de este modelo es fundamentalmente investigadora: forma parte de un estudio pre-registrado ("ladder study") que aísla variables de arquitectura y dinámica de entrenamiento con presupuestos de tokens idénticos (315.392.000 tokens). El resultado declarado es que este modelo de primer orden iguala a su gemelo de segundo orden (perplejidad 4,96 frente a 4,99 en TinyStories), lo que sugiere que el núcleo conservativo no requiere dinámica de segundo orden para alcanzar rendimiento comparable en esta escala.
 
-El interés práctico para desarrolladores es limitado fuera de la investigación: es un modelo en inglés, entrenado únicamente con cuentos sintéticos infantiles, sin ajuste por instrucciones ni plantilla de chat documentada, y con un rendimiento un 11,0 % peor en perplejidad que un GPT-2 emparejado en tokens y schedule. Su valor está en la reproducibilidad del protocolo y en la afirmación de inferencia con memoria constante, no en capacidades de propósito general.
+El modelo tiene 384 dimensiones de estado, 2 capas, no usa atención, y su inferencia tiene memoria constante. Está disponible en formato PyTorch con licencia CC-BY-4.0 y solo soporta inglés.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Modelo de lenguaje conservativo (energy-based, informado por física), no transformer y sin atención; potencial escalar con 2 pozos de modo Poisson, integración tipo BAOAB sobre variedad riemanniana con métrica de Jacobi |
-| Parámetros totales | no disponible (el identificador codifica `d384`, dimensión 384, y `l2`, 2 capas) |
-| Parámetros activos | no aplica (modelo denso, no es MoE) |
-| Longitud de contexto | no disponible; entrenamiento y evaluación con bloques de 512 tokens |
+| Arquitectura | Modelo de lenguaje conservativo (energy-based) con potencial escalar anisótropo gaussiano, dinámica de flujo de gradiente de primer orden, sin transformer ni atención |
+| Parámetros totales | no disponible |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (entrenado con bloques de 512 tokens) |
 | Tipos de cuantización | no disponible |
-| Idiomas soportados | inglés (`en`) |
+| Idiomas soportados | inglés (en) |
 | Licencia | CC-BY-4.0 |
-| Formato de pesos | PyTorch (`library_name: pytorch`); no se documentan safetensors ni GGUF. Tamaño del repositorio: 0,3 GB |
+| Formato de pesos | PyTorch (pytorch); no se indica safetensors ni GGUF |
+| Dimensión de estado | 384 |
+| Capas | 2 |
+| Pozos de modo Poisson | 2 (PM2) |
+| Presupuesto de entrenamiento | 315.392.000 tokens (19.250 pasos × 32 × 512) |
+| Tamaño del repositorio | 0,3 GB |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura abandonan explícitamente el transformer: no hay atención ni mecanismo equivalente, sino un núcleo conservativo definido por un potencial escalar. En esta variante el potencial incorpora dos pozos de modo Poisson (`pm2`) con registros de modo Poisson (`pmx16`) y un potencial gaussiano anisotrópico; la dinámica se integra con el esquema BAOAB sobre una geometría riemanniana definida por la métrica de Jacobi, siguiendo geodésicas riemannianas. La etiqueta `fob` indica que el modelo se entrena como flujo de gradiente de primer orden genuino: el muelle congelado de los pozos y los modos rígidos se relajan de forma exacta y no existe variable de velocidad en ningún punto del cálculo. El autor declara inferencia con memoria constante como propiedad del diseño.
+La arquitectura es un modelo de lenguaje conservativo basado en un potencial escalar anisótropo gaussiano con dos pozos de modo Poisson (PM2). No es un transformer ni usa atención: la inferencia se describe como de memoria constante ("constant-memory-inference"). El modelo se entrena como un flujo de gradiente de primer orden "verdadero" (FO-b), donde el muelle congelado de los pozos y los modos rígidos se relajan exactamente, sin velocidad en ningún punto. Emplea integradores tipo BAOAB y mecánica lagrangiana, con geometría riemanniana (geodésicas riemannianas, métrica de Jacobi) y espacio de Fock. El modelo se describe como "fully-conservative" y "attention-free".
 
-El entrenamiento usa exactamente 315.392.000 tokens de TinyStories (19.250 pasos × batch 32 × bloque 512) en una sola sesión, con el schedule WSD del estudio: 16.250 pasos con la curva del ladder y 3.000 pasos adicionales al learning rate suelo. Ambos gemelos (primer y segundo orden) parten del paso 0 con semilla 0, de modo que las evaluaciones quedan emparejadas en cada paso. No se documenta RLHF, DPO ni ningún ajuste por preferencias, ni fases de instrucción. El registro de salud de la ejecución indica 0 activaciones del watchdog, 0 capturas de spikes y monitor de fuga SCAF limpio en las 4 auditorías; las celdas de diagnóstico se ejecutaron en una sesión separada sobre el mejor checkpoint.
+El entrenamiento se realizó en una única sesión sobre exactamente 315.392.000 tokens (19.250 pasos × 32 × 512), con el schedule WSD de la escalera durante 16.250 pasos y 3.000 pasos adicionales al learning rate mínimo. Ambos gemelos (primer y segundo orden) parten del paso 0 con semilla 0, de modo que sus evaluaciones están emparejadas paso a paso. El dataset es TinyStories (roneneldan/TinyStories). El modelo se pre-registró: la predicción TS2 (que FO-b-PM2-TS estaría dentro de ±2% de PM2-TS) se confirmó antes de entrenar el primer brazo, con un acierto del 70% y un resultado de −0,5%.
 
 ## Capacidades
 
-- Generación de texto autorregresiva en inglés, orientada a cuentos cortos y narrativa simple del dominio TinyStories.
-- Modelado de lenguaje puro: no se documenta ajuste por instrucciones, diálogo multi-turno ni plantilla de chat.
-- No se documenta soporte de tool calling ni function calling.
-- No se documenta soporte de agentes, razonamiento multi-paso ni modo de pensamiento explícito.
-- Monolingüe en inglés; no se declaran capacidades multilingües.
-- Sin visión, audio ni modalidades adicionales.
-- Propiedad diferencial declarada: inferencia con memoria constante (el coste de memoria no crece con la longitud de la secuencia) y ausencia total de mecanismo de atención.
-- Artefacto de investigación reproducible: incluye comparación emparejada paso a paso con su gemelo de segundo orden y con el resto de la escalera de ablación.
+- Generación de texto en inglés sobre dominios simples y narrativos (entrenado con TinyStories).
+- Modelo de lenguaje con dinámica conservativa de primer orden, sin atención.
+- Inferencia con memoria constante (no escala con la longitud de contexto de forma cuadrática).
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: no (solo inglés).
+- Capacidades especiales (thinking mode, visión, audio): no disponibles.
+- Modo de evaluación: perplejidad sobre validación de TinyStories a bloque 512.
 
 ## Casos de uso
 
-- Investigación en arquitecturas alternativas al transformer: sirve como punto de comparación controlado para medir si la dinámica de segundo orden aporta ventaja frente al flujo de gradiente de primer orden, con presupuesto de tokens y schedule idénticos.
-- Reproducción de estudios de ablación preinscritos: el modelo materializa la hipótesis TS-K2 y permite verificar el resultado declarado (−0,5 % frente al gemelo) reentrenando o reevaluando sobre TinyStories.
-- Generación de cuentos infantiles sintéticos en inglés para pipelines de aumento de datos: el dominio TinyStories es exactamente el suyo y la perplejidad de 4,963 indica fluidez local suficiente para texto muy simple.
-- Evaluación de modelos de lenguaje basados en energía: útil como caso práctico para estudiar cómo se comporta un potencial con pozos en la distribución de salida y qué aprende cada pozo (el autor publica lecturas de profundidad mediana y vida media por capa).
-- Despliegue en entornos con memoria restringida: la propiedad de memoria constante en inferencia permite probar generación de secuencias largas en dispositivos donde un transformer equivalente agotaría el presupuesto de memoria.
-- Docencia y divulgación: ejemplo ejecutable de modelo de lenguaje no transformer con formulación física explícita, útil para cursos de ML avanzado o de mecánica estadística aplicada.
-- Línea base en estudios de eficiencia: comparar su perplejidad (4,963) y su coste de memoria frente a un GPT-2 emparejado (4,47) permite cuantificar el coste de prescindir de la atención.
+- Investigación en arquitecturas alternativas al transformer: el modelo sirve como banco de pruebas controlado para estudiar si la dinámica de segundo orden aporta ventajas frente a la de primer orden en modelos conservativos, con presupuesto de tokens y schedule idénticos.
+- Ablación de mecanismos pre-registrada: útil para grupos que replican estudios de ablación con hipótesis fijadas de antemano y comparaciones emparejadas paso a paso.
+- Estudio de modelos energy-based y flujos de gradiente: permite analizar el comportamiento de un potencial escalar anisótropo con pozos de modo Poisson en generación de texto a pequeña escala.
+- Generación de texto narrativo simple en inglés: dado su entrenamiento en TinyStories, puede generar cuentos cortos y texto infantil sencillo, aunque con calidad limitada por el corpus.
+- Benchmark de eficiencia de inferencia sin atención: su memoria constante lo hace adecuado para medir costes de inferencia en secuencias largas frente a transformers de tamaño comparable.
+- Docencia y divulgación: ejemplo didáctico de modelo de lenguaje no-transformer con mecánica lagrangiana y geometría riemanniana, reproducible con 0,3 GB de pesos.
+- Validación de pipelines de evaluación de perplejidad: útil como modelo de referencia para comprobar la corrección de harness de evaluación a bloque 512 sobre TinyStories.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor (no verificados externamente; `verified: false` en el model-index). Perplejidad de validación sobre TinyStories, bloque 512.
+Datos declarados por el autor en el model-index (no verificados):
 
-| Modelo | Configuración | Tokens de entrenamiento | Perplejidad validación |
-|---|---|---:|---:|
-| FO-b-PM2-TS (este modelo) | TinyStories, 2 pozos, primer orden | 315.392.000 | 4,963 (media de las evaluaciones 18.000/18.500/19.000: 5,04 / 4,92 / 4,93; mejor 4,80 en el paso 16.500) |
-| PM2-TS (gemelo de segundo orden) | TinyStories, 2 pozos | 315M | 4,99 |
-| FO-b-TS | TinyStories, sin pozos, primer orden | 315M | 5,28 |
-| FO-TS | TinyStories, sin pozos, primer orden (entre capas) | 315M | 5,13 |
-| SO-TS | TinyStories, sin pozos, segundo orden | 315M | 5,16 |
-| GPT-2 emparejado | TinyStories, mismos tokens y schedule | 315M | 4,47 |
+| Tarea | Dataset | Métrica | Valor |
+|---|---|---|---|
+| text-generation | TinyStories (validation) | Perplejidad (bloque 512, media de las tres últimas evaluaciones de 500 pasos) | 4,963 |
 
-Referencia cruzada en otro corpus (no directamente comparable, incluida en la model card): en OpenWebText con 532,5M tokens, PM2-PMX16 obtiene 54,71 y FO-b-PM2-PMX16 53,81 (−1,6 %).
+Comparativa interna de la familia (perplejidad, menor es mejor):
 
-Evolución del par a lo largo del entrenamiento (perplejidad):
+| Par | Corpus, tokens | Segundo orden | Primer orden | Primer orden vs segundo |
+|---|---:|---:|---:|---:|
+| OpenWebText, 2 pozos Poisson | 532,5M | PM2-PMX16 54,71 | FO-b-PM2-PMX16 53,81 | −1,6% |
+| TinyStories, sin pozos (FO-a) | 315M | SO-TS 5,16 | FO-TS 5,13 | −0,6% |
+| TinyStories, primer orden verdadero (FO-b), sin pozos | 315M | SO-TS 5,16 | FO-b-TS 5,28 | +2,3% |
+| TinyStories, 2 pozos Poisson | 315M | PM2-TS 4,99 | FO-b-PM2-TS 4,96 | −0,5% |
+| Código Python, FO-b sin pozos | 315M | SO-CODE 6,00 | FO-b-CODE 6,55 | +9,2% |
+| Código Python, 2 pozos Poisson | 315M | PM2-CODE 5,71 | FO-b-PM2-CODE 5,62 | −1,6% |
 
-| Paso | Fase | PM2-TS (2.º orden) | FO-b-PM2-TS (1.er orden) |
-|---:|---|---:|---:|
-| 500 | warmup | 18,99 | 18,86 |
-| 5.000 | constante | 6,33 | 6,26 |
-| 10.000 | constante | 5,71 | 5,64 |
-| 13.000 | decay | 5,42 | 5,40 |
-| 16.000 | fin de decay | 5,02 | 5,00 |
-| 18.000 | suelo | 5,06 | 5,04 |
-| 19.000 | suelo, última eval | 4,96 | 4,93 |
-
-El autor señala que la ventaja del primer orden se estrecha con el entrenamiento: −0,87 % en fase estable, −0,57 % en decay y −0,46 % en el suelo, y advierte que las evaluaciones en TinyStories oscilan aproximadamente ±0,06 entre una medición y la siguiente, por lo que la media de tres evaluaciones es la cifra a leer.
+Frente a un transformer GPT-2 emparejado en tokens y schedule, el GPT-2 emparejado se estabiliza en 4,47; este modelo queda un +11,0% por detrás (SO-TS, +15,4%). Evolución del par a lo largo del entrenamiento: paso 500 (warmup) 18,86 frente a 18,99; paso 5.000 6,26 frente a 6,33; paso 10.000 5,64 frente a 5,71; paso 13.000 5,40 frente a 5,42. El mejor valor de este modelo fue 4,80 en el paso 16.500; la media de las evaluaciones en los pasos 18.000, 18.500 y 19.000 fue 5,04, 4,92 y 4,93. La jitter de evaluación en TinyStories es de aproximadamente ±0,06.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible el recuento exacto de parámetros; el repositorio completo ocupa 0,3 GB, por lo que los pesos en fp32 deberían caber holgadamente en menos de 1 GB de VRAM (estimación a partir del tamaño del repositorio, no confirmada por el autor).
-- GPU recomendadas: cualquier GPU consumer moderna es sobredimensionada para este modelo (RTX 3060, RTX 4090, etc.); también es viable en CPU.
-- Cabe en GPU consumer: sí, previsiblemente en cualquier GPU con 2 GB o más de memoria, y en iGPU/CPU dado el tamaño del repositorio.
-- Opciones de despliegue: PyTorch nativo (`library_name: pytorch`) con `transformers`/código propio del autor. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, ni la existencia de pesos GGUF; al no ser un transformer, es previsible que los runners estándar no lo carguen sin adaptación.
-- Latencia y throughput: no disponibles. No se publican mediciones de tokens por segundo ni de latencia por token.
-- Ventaja declarada: inferencia con memoria constante, independiente de la longitud de la secuencia.
+- VRAM estimada para inferencia: no disponible de forma explícita; el repositorio ocupa 0,3 GB, por lo que los pesos en precisión original caben holgadamente en cualquier GPU consumer moderna.
+- GPU recomendadas: no disponible; por tamaño, cualquier GPU con al menos unos pocos GB de VRAM debería ser suficiente (no confirmado por el autor).
+- Cabe en GPU consumer: previsiblemente sí, dado el tamaño del repositorio, aunque no se documenta.
+- Opciones de despliegue: no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI; la librería declarada es PyTorch.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Perplejidad TinyStories (bloque 512) | Licencia | Disponibilidad |
+| Modelo | Arquitectura | Contexto | Perplejidad TinyStories (bloque 512) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FO-b-PM2-TS (este modelo) | no disponible (d=384, 2 capas) | no disponible; bloques de 512 | 4,963 | CC-BY-4.0 | Hugging Face, 13 descargas |
-| PM2-TS (gemelo de segundo orden) | no disponible | bloques de 512 | 4,99 | CC-BY-4.0 | Hugging Face (mismo autor) |
-| FO-b-TS (sin pozos, primer orden) | no disponible | bloques de 512 | 5,28 | CC-BY-4.0 | Hugging Face (mismo autor) |
-| GPT-2 emparejado (mismos tokens y schedule) | no disponible en la información | 512 en la comparación | 4,47 | no disponible en la información | Hugging Face (mismo autor) |
-
-La comparación relevante es interna a la escalera del autor: mismo corpus, mismos tokens (315M) y misma curva de learning rate, lo que aísla el efecto del mecanismo. El GPT-2 emparejado queda un 11,0 % por delante de este modelo (SO-TS queda un 15,4 % por detrás). No se dispone de comparaciones con modelos de terceros de la misma categoría.
+| Este modelo (FO-b-PM2-TS) | Conservativo, primer orden, 384 dim, 2 capas | no disponible (entrenado a 512) | 4,96 | CC-BY-4.0 | Hugging Face, PyTorch |
+| PM2-TS (gemelo de segundo orden) | Conservativo, segundo orden, 384 dim, 2 capas | no disponible (entrenado a 512) | 4,99 | CC-BY-4.0 | Hugging Face, PyTorch |
+| SO-TS (sin pozos, segundo orden) | Conservativo, segundo orden, 384 dim, 2 capas | no disponible (entrenado a 512) | 5,16 | CC-BY-4.0 | Hugging Face, PyTorch |
+| GPT-2 emparejado (semsimula-ladder-ts-d384-gpt2-matched) | Transformer | no disponible | 4,47 | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
-- Dominio muy restringido: entrenado exclusivamente con TinyStories (cuentos sintéticos infantiles), con vocabulario y estructuras narrativas muy limitadas; no es apto para texto general, técnico ni de dominio real.
-- Monolingüe en inglés; no hay soporte de castellano ni de otros idiomas.
-- Sin ajuste por instrucciones ni por preferencias (no se documenta RLHF/DPO): no sigue instrucciones ni mantiene diálogo de forma fiable.
-- Riesgo de alucinación alto fuera de su distribución y previsiblemente también dentro de ella; no hay mitigaciones documentadas ni evaluación de factualidad.
-- No se documentan evaluaciones de sesgo, toxicidad ni seguridad; al ser un artefacto de investigación sin alineamiento, no debería exponerse a usuarios finales sin filtros.
-- Rendimiento inferior al de un GPT-2 emparejado en tokens y schedule: 4,963 frente a 4,47 de perplejidad (+11,0 % peor).
-- Las métricas están marcadas como no verificadas (`verified: false`) y proceden del propio autor; la oscilación de ±0,06 entre evaluaciones hace que diferencias inferiores a ese margen no sean concluyentes.
-- Metadatos incoherentes: las etiquetas incluyen `openwebtext` aunque el dataset declarado sea TinyStories, y la fecha de creación registrada es 2026-10-26; conviene verificar la procedencia antes de citarlo.
-- Sin soporte documentado en runners estándar (vLLM, llama.cpp, TGI, Ollama) ni pesos GGUF: la integración en producción exigiría código propio.
-- Licencia CC-BY-4.0: permite uso comercial con atribución, pero exige citar autor y licencia y no ofrece garantías; conviene revisar los términos completos antes de un despliegue.
-- Advertencia de producción: es un modelo de investigación con 13 descargas y 0 likes; no hay evidencia de uso en producción ni mantenimiento a largo plazo.
+- Modelo de investigación a muy pequeña escala (384 dimensiones, 2 capas, 315M tokens): no es apto para producción ni para tareas generales de lenguaje.
+- Entrenado exclusivamente con TinyStories, un corpus de cuentos infantiles simples: el vocabulario y la complejidad sintáctica están muy acotados.
+- Solo soporta inglés.
+- Riesgo de alucinación y degeneración incoherente fuera del dominio narrativo simple; no se documentan evaluaciones de robustez o seguridad.
+- No se dispone de datos sobre sesgos; al entrenar con TinyStories, puede reflejar los sesgos del corpus.
+- Sin soporte documentado de tool calling, agentes, visión, audio ni modos de razonamiento.
+- Longitud de contexto no documentada más allá de los bloques de 512 tokens usados en entrenamiento.
+- Licencia CC-BY-4.0: permite uso comercial con atribución, pero el modelo no está pensado ni validado para ello.
+- Los resultados de perplejidad están marcados como no verificados (`verified: false`) y tienen jitter de ±0,06; deben interpretarse con cautela.
+- El resultado principal (−0,5% frente al gemelo de segundo orden) está dentro del margen de predicción pre-registrada (±2%), por lo que no demuestra superioridad, solo equivalencia.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-live-ts-d384-l2-none-norc-pm2-pmx16-sr2-fob
-- Colección «first-vs-second-order» (Gen 3): https://huggingface.co/collections/dimitarpg13/semantic-simulation-gen-3-first-vs-second-order-6ad7681596d9a670c268b524
-- Gemelo de segundo orden PM2-TS: https://huggingface.co/dimitarpg13/semsimula-ladder-live-ts-d384-l2-none-norc-pm2-pmx16-sr2
-- Variante sin pozos, primer orden (FO-b-TS): https://huggingface.co/dimitarpg13/semsimula-ladder-live-ts-d384-l2-none-norc-sr2-fob
-- Variante sin pozos, primer orden entre capas (FO-TS): https://huggingface.co/dimitarpg13/semsimula-ladder-live-ts-d384-l2-none-norc-sr2-fo
-- Variante sin pozos, segundo orden (SO-TS): https://huggingface.co/dimitarpg13/semsimula-ladder-live-ts-d384-l2-none-norc-sr2
-- GPT-2 emparejado en tokens y schedule: https://huggingface.co/dimitarpg13/semsimula-ladder-ts-d384-gpt2-matched
-- Equivalente en OpenWebText, segundo orden (PM2-PMX16): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm2-pmx16-sr2
-- Equivalente en OpenWebText, primer orden (FO-b-PM2-PMX16): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm2-pmx16-sr2-fob
+- Gemelo de segundo orden (PM2-TS): https://huggingface.co/dimitarpg13/semsimula-ladder-live-ts-d384-l2-none-norc-pm2-pmx16-sr2
+- Colección "first-vs-second-order": https://huggingface.co/collections/dimitarpg13/semantic-simulation-gen-3-first-vs-second-order-6ad7681596d9a670c268b524
+- GPT-2 emparejado: https://huggingface.co/dimitarpg13/semsimula-ladder-ts-d384-gpt2-matched
+- Notas del estudio pre-registrado (First_vs_Second_Order_Series.md): https://github.com/dimitarpg13/semsimula-paper/blob/main/companion_notes/depth_ladder/First_vs_Second_Order_Series.md
 - Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories
-- Listado de modelos de generación de texto en Hugging Face (referencia de descubrimiento): https://huggingface.co/models?pipeline_tag=text-generation&p=0&sort=modified

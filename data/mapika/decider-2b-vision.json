@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 35,
-  "downloads_30d": 1327,
+  "downloads_30d": 1322,
   "trending_score": 13,
   "parameters": 2213241664,
   "parameters_human": "2.21B",
@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Erreur 554 impossible mail sortant [Résolu] - Forum Mail",
-      "url": "https://forums.commentcamarche.net/forum/affich-25384158-erreur-554-impossible-mail-sortant",
-      "snippet": "Jun 16, 2012 · Meilleure réponse: A l'attention de PASTHOU, ça y est j'ai résolu mon problème, il fallait simplement cocher la case : …"
-    },
-    {
-      "title": "Réinitialisation pc de lycée - Forum Windows 10 - CommentCaMarche",
-      "url": "https://forums.commentcamarche.net/forum/affich-35533916-reinitialisation-pc-de-lycee",
-      "snippet": "Aug 19, 2018 · Alors voici mon problème je possède un ordi (offert par le lycée) sous Windows 10 professionnel Education j'aimerai …"
-    },
-    {
-      "title": "Compte administrateur ordinateur du lycée [Résolu] - Windows 10",
-      "url": "https://forums.commentcamarche.net/forum/affich-36948253-compte-administrateur-ordinateur-du-lycee",
-      "snippet": "Nov 17, 2020 · Bonsoir, j'ai reçus il y a quelques temps un ordinateur portable par le lycée. Je voudrais ouvrir le logiciel de codage …"
-    },
-    {
-      "title": "Echec connexion sécurisée (PR_CONNECT_RESET_ERROR)",
-      "url": "https://forums.commentcamarche.net/forum/affich-36510881-echec-connexion-securisee-pr-connect-reset-error",
-      "snippet": "Mar 16, 2020 · Echec connexion sécurisée (PR_CONNECT_RESET_ERROR) Résolu Windows Connexion Laposte dork_4040 - …"
-    },
-    {
-      "title": "Réinitialiser pc lycée - Windows 10 - CommentCaMarche",
-      "url": "https://forums.commentcamarche.net/forum/affich-37428379-reinitialiser-pc-lycee",
-      "snippet": "Nov 22, 2021 · Bonjour, Cela fait pas mal de temps que je ne suis plus au lycée. Je possède toutefois un pc qui m'a été offert par ma …"
-    }
-  ]
+  "sources": []
 }

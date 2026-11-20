@@ -2,98 +2,91 @@
 
 ## Resumen
 
-Primal VAE es un autoencoder variacional (VAE) para modelos de difusión de imágenes, desarrollado por ostris (conocido en la comunidad por su herramienta de entrenamiento ai-toolkit). A diferencia de los VAE tradicionales usados en latent diffusion, que comprimen la imagen 8x espacialmente con 16 o 32 canales, Primal VAE solo reduce la resolución espacial 2x y produce 1 o 2 canales. La compresión hasta el equivalente 8x con 16/32 canales se logra aplicando un patching 4x4 en el DiT (transformador de difusión), que ya realiza esta operación de forma nativa, eliminando la necesidad de un VAE con compresión profunda.
+Primal VAE es un autoencoder variacional (VAE) para difusión latente desarrollado por ostris (autor de ai-toolkit) que propone una alternativa ligera a los VAE de compresión profunda que usan los modelos de difusión modernos. En lugar de comprimir la imagen 8x con una red grande, Primal VAE solo comprime 2x o 4x con una red pequeña (~80M parámetros en las variantes 2x, ~122M en la 4x1) y deja que el DiT del modelo de difusión haga el patchify adicional hasta la forma latente que espera.
 
-El problema que resuelve es doble: por un lado, simplifica el pipeline al eliminar el factor de escala, el factor de desplazamiento y la normalización del latente (el latente se entrena para que su norma coincida con la del ruido gaussiano, es decir, ~N(0,1) por imagen y canal). Por otro lado, reduce el tamaño del VAE a unos 80M de parámetros, frente a los VAE considerablemente mayores de modelos como Flux. El modelo se publica en dos variantes (2x1 y 2x2) compatibles con los espacios latentes de Flux.1 y Flux.2 respectivamente, lo que lo hace especialmente relevante para entrenar o ajustar DiTs existentes con un VAE más ligero y determinista.
+La innovación principal es que el latente se entrena para tener estadísticos de ruido gaussiano directamente en la función de pérdida, sin término KL, sin posterior y sin factores de escalado o desplazamiento. Esto permite sustituir el VAE original de Flux.1, Flux.2 o SDXL por este modelo sin arrastrar `scaling_factor` ni normalización batch-norm del latente: se codifica, se hace patchify y se difunde.
 
-Es relevante ahora porque abre la puerta a entrenar modelos de difusión con VAEs pequeños y sin tasas de reconstrucción derivadas del muestreo posterior (no hay KL ni cuantización), y porque permite sustituir el VAE de Flux en pipelines existentes con cambios mínimos de código, gracias a la integración con diffusers mediante `AutoModel` y código personalizado.
+El modelo se publica bajo licencia Apache 2.0, con pesos en safetensors (repo de 1,5 GB) y código personalizado cargable vía `diffusers` con `trust_remote_code=True`. Está pensado para investigadores que quieran experimentar con VAEs más pequeños, entrenamientos más estables y latentes con distribución controlada, así como para integraciones en pipelines existentes de Flux y SDXL.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | VAE convolucional determinista (U-Net simétricas encoder/decoder, sin atención, sin KL) |
-| Parámetros totales | ~80M por variante |
-| Parametros activos | no disponible (no es MoE; ~80M activos al ser un modelo denso) |
-| Longitud de contexto | no disponible (modelo de visión; imágenes con lados múltiplos de 16 px) |
-| Tipos de cuantización | no disponible (recomendado bfloat16 en los ejemplos) |
-| Idiomas soportados | no disponible (no aplica, modelo de visión) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (primal_vae_2x1.safetensors, primal_vae_2x2.safetensors) |
+| Arquitectura | Conv U-Net simétrica de 4 niveles con downs/ups por `pixel_unshuffle`/`pixel_shuffle` + conv 3x3, bloques residuales con dilataciones cíclicas 1, 2, 4, normalización RMSNorm por canales |
+| Parametros totales | ~80M (variantes 2x1 y 2x2), ~122M (variante 4x1) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No aplica (modelo de visión, no de texto) |
+| Tipos de cuantizacion | No disponible (los pesos se publican en safetensors; el uso documentado es bfloat16) |
+| Idiomas soportados | No disponible (modelo de imagen, sin capacidades lingüísticas) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (`primal_vae_<variant>.safetensors`), cargable con `diffusers.AutoModel` |
 
 ## Arquitectura y entrenamiento
 
-Ambas variantes comparten la misma red y solo difieren en los canales de salida del encoder (1 canal para 2x1, 2 canales para 2x2). La entrada aplica `pixel_unshuffle(2)`, de modo que los 3 canales RGB pasan a 12 canales a mitad de resolución; todo el procesamiento ocurre a resolución latente o inferior, lo que hace del latente un mapa espacialmente fiel de la imagen. Encoder y decoder son U-Net convolucionales espejadas con 4 niveles (1/2, 1/4, 1/8 y 1/16 de la imagen), anchos de 96/192/384/384 y profundidades de bloques residuales 1/1/2/4 en el camino descendente y 1/1/2 en el ascendente. Las operaciones de down/up se realizan con `pixel_unshuffle`/`pixel_shuffle` más una convolución 3x3, y los bloques residuales ciclan dilaciones 1, 2 y 4.
+La red es una U-Net convolucional simétrica de cuatro niveles. La entrada pasa por un `pixel_unshuffle(compression)` que convierte RGB en 12 canales a 1/2 de resolución (modelos 2x) o 48 canales a 1/4 (modelo 4x1); todo el cómputo ocurre a resolución latente o inferior. Los bloques de down y up son `pixel_unshuffle`/`pixel_shuffle` seguidos de convolución 3x3, con bloques residuales de dilataciones 1, 2, 4. Las anchuras son 96/192/384/384 con profundidades 1/1/2/4 (2x) y 192/384/384/384 con profundidades 2/2/2/4 (4x1). La normalización es RMSNorm por canales en cada posición, sin estadísticos espaciales ni atención, de modo que el modelo es invariante al mosaico con solapamiento. El encoder termina en una convolución 3x3 plana a 1 o 2 canales: no hay posterior, ni KL, ni convoluciones de cuantización.
 
-La normalización es RMSNorm sobre canales en cada posición, sin estadísticas espaciales ni atención, lo que garantiza que el procesamiento por teselas sea equivalente al de la imagen completa (dado cierto solapamiento). El encoder termina en una convolución 3x3 directa a 1 o 2 canales: no hay posterior, ni término KL, ni convoluciones de cuantización. La clave del entrenamiento está en la pérdida: además de la reconstrucción, se aplica una pérdida de momentos (`mean^2 + (std - 1)^2`, peso 0.1, por imagen y canal) y una pérdida de estadísticos de orden gaussianos (MSE contra los order statistics esperados de una normal estándar mediante la aproximación de Blom), que fija la forma completa de la distribución del latente. Esto asegura que cada imagen individual se codifique con media 0 y desviación típica 1 por canal, sin necesidad de factores de escala posteriores. La variante 2x1 se entrenó 53k pasos con la pérdida de momentos agrupada por lote y 9k pasos finales por imagen. No se han publicado datos sobre el dataset de entrenamiento ni el número total de imágenes.
+El entrenamiento sustituye el término KL habitual por dos pérdidas directas sobre la salida del encoder: una *moment loss* (`mean² + (std - 1)²`, peso 0,1) calculada por imagen y por canal, y una *Gaussian order-statistic loss* que ordena los valores del latente y los compara por MSE con los estadísticos de orden esperados de una normal estándar (aproximación de Blom). La 2x1 pasó sus primeros 53k pasos con la moment loss agrupada por batch y los últimos 9k por imagen; la 2x2 y la 4x1 la usaron por imagen durante todo el entrenamiento. No se documentan en la información disponible el número total de tokens de imagen, la composición del dataset ni si hubo etapas de RLHF o DPO (no aplicables a un VAE).
 
 ## Capacidades
 
-- Codificación de imágenes a latentes de 1 canal (variante 2x1) o 2 canales (variante 2x2) a 1/2 de resolución espacial, de forma determinista (sin muestreo, sin `.latent_dist`).
-- Decodificación de latentes de vuelta al espacio de píxeles `[B, 3, H, W]`.
-- Patching integrado (`patchify`/`unpatchify`) para producir latentes con la misma forma que los de Flux.1 (16 canales @ 8x) o Flux.2 (32 canales @ 8x), mediante `pixel_unshuffle`/`pixel_shuffle`.
-- Compatibilidad directa con pipelines Flux.1 y Flux.2: los tokens pueden sustituir al latente del VAE original sin scaling_factor ni shift_factor, y sin la normalización batch-norm de Flux.2.
-- Carga de checkpoints de fine-tuning entrenados con ai-toolkit sin configuración adicional (la arquitectura se infiere de las formas de los tensores).
-- Cálculo de pérdidas en espacio de píxeles sobre la salida del modelo de difusión mediante `enable_gradient_checkpointing()`, que permite retropropagar a través de `decode`.
-- Procesamiento por teselas coherente con la imagen completa gracias a la ausencia de atención y estadísticas espaciales.
+- Codificación y decodificación de imágenes RGB en `[-1, 1]` con lados múltiplos de 16 (modelos 2x) o 32 (modelo 4x1).
+- Producción de latentes aproximadamente `N(0, 1)` por imagen y por canal, sin `scaling_factor`, sin `shift_factor` y sin normalización batch-norm que arrastrar.
+- `patchify` / `unpatchify` configurables con compresión total arbitraria (por ejemplo `compression=8`), implementados como `pixel_unshuffle` / `pixel_shuffle` por `compression / <model compression>`.
+- Compatibilidad de forma latente con Flux.1 VAE (2x1: 16 canales a 8x con patch 4x4), Flux.2 VAE (2x2: 32 canales a 8x con patch 4x4) y SD 1.5 / SDXL VAE (4x1: 4 canales a 8x con patch 2x2).
+- Carga de checkpoints de ai-toolkit mediante `weights_name="my_finetune.safetensors"`, con arquitectura inferida de las formas de los tensores.
+- `enable_gradient_checkpointing()` para backpropagar a través de `decode` en pérdidas en espacio de píxel, con checkpointing en cada bloque residual de ambas U-Nets; la inferencia bajo `torch.no_grad()` no se ve afectada.
+- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingües: es un componente de un pipeline de difusión, no un modelo de lenguaje.
 
 ## Casos de uso
 
-- Entrenamiento de DiTs propios desde cero: al eliminar scaling_factor, shift_factor y normalización del latente, se simplifica el código de entrenamiento y se reduce el riesgo de errores de preprocesamiento; basta con "encode, patch 4, diffuse".
-- Sustitución del VAE de Flux.1 o Flux.2 en pipelines existentes: con `patchify(compression=8)` se obtiene un latente con la forma exacta que espera el DiT, lo que permite reentrenar o ajustar modelos Flux con un VAE de solo 80M de parámetros.
-- Fine-tuning con pérdida en espacio de píxeles: el gradient checkpointing en el decoder permite retropropagar una pérdida de reconstrucción en píxeles a través de la predicción del modelo de difusión, útil para destilación o ajuste fino de fidelidad.
-- Entrenamiento de VAEs personalizados con ai-toolkit: cualquier checkpoint entrenado con ai-toolkit se carga directamente especificando `weights_name`, sin redefinir la arquitectura.
-- Reducción de coste de inferencia en el VAE: con ~80M de parámetros frente a VAEs de difusión considerablemente mayores, la codificación y decodificación consumen menos VRAM y cómputo, relevante en generación de imágenes a gran escala o en lotes grandes.
-- Generación por teselas de imágenes grandes: al no usar atención ni estadísticas espaciales, las teselas se codifican y decodifican de forma consistente con la imagen completa (con solapamiento), útil para imágenes de alta resolución.
-- Investigación en espacios latentes deterministas: al no haber ruido posterior (sin KL), el latente es reproducible, lo que facilita análisis, interpolaciones y estudios de interpretabilidad.
+- Sustitución directa del VAE de Flux.1 en un `FluxPipeline`: se carga la variante `2x1`, se codifica la imagen, se hace `patchify(compression=8)` y se pasan los tokens a `_pack_latents`; el pipeline deja de necesitar `scaling_factor` y `shift_factor`.
+- Sustitución del VAE de Flux.2 en pipelines existentes: la variante `2x2` produce 32 canales a 8x, encajando antes del patchify 2x2 propio de Flux.2 a 128 canales, y permite omitir la normalización batch-norm del latente.
+- Sustitución del VAE de SD 1.5 / SDXL: la variante `4x1` genera 4 canales a 8x con patch 2x2, eliminando los factores 0,18215 y 0,13025 del pipeline.
+- Entrenamiento de modelos de difusión con VAEs pequeños: al tener ~80M parámetros y no requerir KL ni factores post-hoc, reduce el coste de memoria y simplifica el pipeline de entrenamiento.
+- Fine-tuning de VAEs con ai-toolkit: el código de carga infiere la arquitectura de las formas de los tensores, por lo que un checkpoint fine-tuneado se carga sin tocar el código.
+- Procesamiento por mosaicos (tiling): al usar solo RMSNorm por canales y no atención ni estadísticos espaciales, codificar y decodificar mosaicos con solapamiento produce resultados equivalentes a la imagen completa, útil para imágenes de alta resolución en GPUs modestas.
+- Backprop a través del decoder para pérdidas en espacio de píxel: `enable_gradient_checkpointing()` permite entrenar un DiT con pérdida de reconstrucción sin agotar la memoria.
+- Investigación sobre distribución latente: la combinación de moment loss y order-statistic loss permite estudiar cómo afecta la forma exacta de la distribución latente al entrenamiento de modelos de difusión.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandarizados (MMLU, FID, etc.) en la información disponible. La model card incluye una comparación de PSNR (dB) sobre tres imágenes de 512 px frente a los VAE de Flux:
-
-| Imagen | Primal 2x1 | Flux.1 VAE | Primal 2x2 | Flux.2 VAE |
-|---|---|---|---|---|
-| img01 (personas, estudio) | 32,1 | 35,7 | 37,5 | 37,2 |
-| img02 (picnic, vegetación) | 22,0 | 24,2 | 27,1 | 26,5 |
-| img03 (captura de UI) | 21,3 | 24,7 | 27,4 | 25,9 |
-
-El propio autor advierte que tres imágenes y PSNR no constituyen un benchmark, y señala que un VAE con KL paga una penalización de reconstrucción por el ruido posterior que un VAE determinista no sufre. La variante 2x2 iguala o supera al VAE de Flux.2 con el mismo presupuesto de información (32 valores por bloque de 8x8 píxeles), mientras que la 2x1 queda por detrás del VAE de Flux.1 en contenido texturizado.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye ejemplos visuales cualitativos (fila de entrada, reconstrucción, latente y error absoluto ×4, comparados con los VAE de referencia Flux.1 con el mismo layout latente), pero no cifras de PSNR, LPIPS, FID ni métricas de reconstrucción cuantificadas.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con ~80M de parámetros en bfloat16, el modelo ocupa unos 160 MB de pesos; la VRAM total dependerá de la resolución de las imágenes, pero es marginal en términos modernos (del orden de 1-2 GB incluyendo activaciones para imágenes de 512-1024 px).
-- GPU recomendadas: cualquier GPU con soporte CUDA y bfloat16 es suficiente (RTX 3060 o superior); no se requiere A100 ni H100 para inferencia.
-- Cabe en GPUs de consumo sin problema, incluidas tarjetas de 8 GB como la RTX 3060 Ti o la RTX 4060, incluso junto a un DiT de tamaño medio.
-- Opciones de despliegue: integración nativa con la librería diffusers de Hugging Face mediante `AutoModel.from_pretrained` con `trust_remote_code=True`; entrenamiento de fine-tunes mediante ai-toolkit del mismo autor. No se menciona soporte para llama.cpp, Ollama, vLLM ni TGI (no aplican a este tipo de modelo).
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: no disponible de forma explícita. Con ~80M parámetros (2x) en bfloat16, los pesos ocupan del orden de 160 MB; con ~122M (4x1), del orden de 245 MB. El consumo real depende de la resolución de la imagen y del tamaño de los mosaicos.
+- GPU recomendadas: no especificadas en la información disponible. El uso documentado es `.to("cuda")` con `torch_dtype=torch.bfloat16`, lo que requiere GPU con soporte bfloat16 (Ampere o posterior: A100, H100, RTX 30xx/40xx).
+- Cabe en GPU de consumo: sí, por el tamaño reducido de los pesos; el factor limitante es la resolución de imagen procesada simultáneamente, no el modelo.
+- Opciones de despliegue: `diffusers` con `AutoModel.from_pretrained(..., trust_remote_code=True)`; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplicables a un VAE de imagen).
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Característica | Primal VAE (2x1 / 2x2) | Flux.1 VAE | Flux.2 VAE |
-|---|---|---|---|
-| Parámetros | ~80M | no disponible (mayor) | no disponible (mayor) |
-| Compresión latente | 1-2 canales @ 2x (con patch 4: 16-32 canales @ 8x) | 16 canales @ 8x | 32 canales @ 8x |
-| Determinista (sin KL) | Sí | No | No |
-| Normalización del latente | Ninguna (unit normal por imagen y canal) | scaling_factor + shift_factor | Normalización batch-norm |
-| Licencia | Apache-2.0 | no disponible en la información proporcionada | no disponible en la información proporcionada |
-| Disponibilidad | Hugging Face (diffusers, custom code) | Integrado en los pipelines de Flux | Integrado en los pipelines de Flux.2 |
+| Modelo | Parámetros | Compresión | Canales latentes | Forma latente a 8x | Licencia |
+|---|---|---|---|---|---|
+| Primal VAE 2x1 | ~80M | 2x | 1 | 16 ch (patch 4x4) | Apache 2.0 |
+| Primal VAE 2x2 | ~80M | 2x | 2 | 32 ch (patch 4x4) | Apache 2.0 |
+| Primal VAE 4x1 | ~122M | 4x | 1 | 4 ch (patch 2x2) | Apache 2.0 |
+| Flux.1 VAE | No disponible | 8x | 16 | 16 ch | No disponible en la información |
+| Flux.2 VAE | No disponible | 8x | 32 | 32 ch | No disponible en la información |
+| SD 1.5 / SDXL VAE | No disponible | 8x | 4 | 4 ch | No disponible en la información |
 
-Otras alternativas de la categoría (VAE de Stable Diffusion, SDXL VAE, etc.) no se incluyen por falta de datos comparativos en la información disponible.
+La comparativa se limita al layout latente, que es el dato documentado en la model card. No se dispone de parámetros, licencias ni métricas de reconstrucción de los VAE de referencia en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La variante 2x1 (1 canal @ 2x) rinde por detrás del VAE de Flux.1 en contenido texturizado según los PSNR publicados por el autor; si la máxima fidelidad de reconstrucción es crítica, la variante 2x2 es la opción más sólida.
-- Los datos de PSNR provienen de solo tres imágenes de 512 px; no constituyen un benchmark representativo y el rendimiento en otros dominios (ilustración, texto denso, fotografía nocturna) no está verificado.
-- Las dimensiones de la imagen deben ser múltiplos de 16 píxeles en ambos ejes; imágenes con otras dimensiones requieren redimensionado o recorte previo.
-- El modelo requiere `trust_remote_code=True` al cargarlo desde diffusers, lo que implica ejecutar código personalizado del repositorio; revísese antes de usar en entornos de producción sensibles.
-- El procesamiento por teselas requiere solapamiento para igualar el comportamiento de la imagen completa; no se documenta el procedimiento exacto de tiling.
-- No hay datos sobre el dataset de entrenamiento, por lo que no es posible evaluar sesgos potenciales del modelo.
-- Al tratarse de un componente de pipeline (VAE) y no de un modelo generativo completo, su utilidad depende de disponer de un DiT compatible (Flux.1, Flux.2 o uno propio entrenado con este espacio latente).
-- Licencia Apache-2.0: sin restricciones relevantes para uso comercial.
+- Requiere `trust_remote_code=True`: el modelo usa código personalizado que se ejecuta en el entorno del usuario; conviene auditar el código antes de desplegarlo en producción.
+- Restricción de resolución: los lados de la imagen deben ser múltiplos de 16 (variantes 2x) o 32 (variante 4x1); no se documenta comportamiento con otras resoluciones.
+- El modelo no incluye atención ni estadísticos espaciales; la equivalencia entre mosaicos y imagen completa se afirma "dado cierto solapamiento", pero no se cuantifica el solapamiento mínimo necesario.
+- No hay término KL ni posterior: el latente es determinista en la práctica, lo que limita su uso como VAE generativo en sentido estricto (no se documenta muestreo del posterior).
+- No se documentan sesgos de datos de entrenamiento, composición del dataset ni evaluación de sesgos demográficos o culturales en las reconstrucciones.
+- Riesgo de artefactos de reconstrucción en imágenes fuera de la distribución de entrenamiento: no se han publicado métricas de fidelidad (PSNR, LPIPS) que permitan acotarlo.
+- No se documentan limitaciones idiomáticas ni de contexto porque el modelo no procesa texto.
+- Licencia Apache 2.0: permite uso comercial y modificación, pero se debe conservar el aviso de licencia y el aviso de cambios; no se documentan restricciones adicionales del autor.
+- Al sustituir el VAE de un pipeline de difusión, es necesario eliminar los factores de escalado y normalización originales; mantenerlos produciría latentes fuera de la distribución esperada por el DiT.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/ostris/primal_vae
-- Repositorio ai-toolkit del autor (herramienta de entrenamiento compatible): no disponible un enlace directo en la información proporcionada (buscable como "ostris/ai-toolkit" en GitHub)
-- Paper asociado: no disponible
-- Demo online: no disponible
+- Hugging Face: https://huggingface.co/ostris/primal_vae
+- ai-toolkit (mencionado en la model card como origen de checkpoints compatibles): no disponible en la información proporcionada
+- Paper, blog o repositorio adicionales: no disponibles en la información proporcionada

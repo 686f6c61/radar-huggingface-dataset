@@ -2,95 +2,93 @@
 
 ## Resumen
 
-Fabric 1.5 — 0.7B Instruct es un modelo de lenguaje causal desarrollado por Fabric AI, diseñado para ofrecer un equilibrio entre eficiencia y capacidad en un tamaño reducido de 742 millones de parámetros. Se basa en el checkpoint preentrenado Fabric1.5-0.7B-Base y se ha ajustado específicamente para seguir instrucciones. Su principal innovación es una arquitectura de memoria fragmentada (chunked memory) que permite manejar contextos de hasta 32.768 tokens sin crecimiento cuadrático de memoria, algo poco habitual en modelos de este tamaño.
+Fabric1.5-0.7B-Instruct es un modelo de lenguaje causal de tipo decoder-only con 742.528.520 parámetros (aproximadamente 0,74 mil millones), publicado por FabricAI bajo el paraguas del proyecto Bluebird. Se trata de la variante ajustada por instrucciones del checkpoint base `tudor-iustin22/Bluebird-1.5-Base`, y su rasgo diferencial es una arquitectura híbrida que combina atención causal local con un mecanismo de memoria fragmentada y compuertas (chunked fabric memory) que le permite operar con una ventana de contexto de 32.768 tokens sin aplicar atención completa sobre toda la secuencia.
 
-El modelo está pensado para entornos con recursos limitados, como dispositivos edge o GPUs de baja gama, manteniendo un rendimiento razonable en tareas de razonamiento, conocimiento y seguimiento de instrucciones. Según los datos publicados, se acerca a modelos ligeramente más grandes como Qwen3.5-0.8B en MMLU, a pesar de ser un 12% más pequeño. Su licencia en Hugging Face es Apache 2.0, aunque la model card menciona una licencia propia, lo que conviene verificar antes de uso comercial.
+El modelo está pensado para generación de texto conversacional, seguimiento de instrucciones, respuesta a preguntas, resumen y generación orientada a tareas. Su tamaño compacto lo sitúa en la franja de modelos que pueden ejecutarse en hardware de consumo, y su licencia Apache 2.0 facilita la integración en productos comerciales. El entrenamiento se realizó en PyTorch con precisión mixta sobre ocho aceleradores Intel Gaudi 3, lo que lo vincula explícitamente al ecosistema de Intel.
+
+Es relevante ahora porque propone una alternativa de contexto largo a bajo coste computacional: en lugar de escalar parámetros, reduce el coste de atención sobre el contexto antiguo mediante resúmenes aprendidos por fragmento. No obstante, el propio autor advierte que la ventana de 32K es una capacidad del modelo y no una garantía de recuperación precisa a larga distancia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Causal LM con Chunked Fabric Memory (16 LocalBlock + 8 FabricMemoryBlock) |
-| Parametros totales | 742.528.520 (742M) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | 32.768 tokens nativos |
-| Tipos de cuantizacion | no disponible (se menciona FP16/BF16 para inferencia, sin cuantizaciones oficiales) |
-| Idiomas soportados | en (ingles) |
-| Licencia | apache-2.0 (segun metadata de Hugging Face; la model card indica "Fabric AI Open License v1.0") |
-| Formato de pesos | safetensors |
+| Arquitectura | Decoder-only causal con atención local y memoria fragmentada con compuertas (Chunked Fabric Memory) |
+| Parametros totales | 742.528.520 (742,5 M) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | 32.768 tokens |
+| Tipos de cuantizacion | No disponible (pesos publicados en FP16; no se documentan GGUF ni otras cuantizaciones) |
+| Idiomas soportados | Inglés (en) |
+| Licencia | Apache 2.0, sujeta a avisos de terceros aplicables |
+| Formato de pesos | Safetensors (FP16), con código de modelo personalizado en Transformers |
+
+Otras especificaciones: 24 capas de transformer (16 LocalBlock + 8 FabricMemoryBlock), tamaño oculto de 1.536, vocabulario de 65.536 tokens, atención con grouped-query attention (24 cabezas de consulta y 6 de clave/valor, dimensión de cabeza 64), ventana de atención local de 2.048 tokens, tamaño de fragmento de memoria de 512 tokens, 4 resúmenes aprendidos por fragmento, hasta 256 vectores de resumen a 32K de contexto, codificación posicional RoPE con theta = 1.000.000, FFN SwiGLU y normalización RMSNorm.
 
 ## Arquitectura y entrenamiento
 
-Fabric 1.5 emplea una arquitectura transformer causal con una innovación denominada Chunked Fabric Memory. Cada tercer bloque divide la atención en dos ramas paralelas: una ventana causal local de atención exacta sobre los últimos 2.048 tokens, y una memoria fragmentada compuesta por resúmenes aprendidos (4 por cada fragmento de 512 tokens) de fragmentos anteriores completados. Un gate escalar por token combina ambas salidas, proporcionando 256 vectores de resumen de memoria de largo alcance a lo largo de los 32K tokens de contexto sin crecimiento cuadrático de memoria. El modelo tiene 24 capas (16 LocalBlock + 8 FabricMemoryBlock), dimensión oculta de 1.536, vocabulario de 65.536, atención GQA con 24 cabezas de consulta y 6 de clave/valor, y RoPE con theta=1M.
+Bluebird 1.5 emplea un transformer decoder-only en el que cada tercer bloque incorpora una segunda ruta de atención sobre representaciones comprimidas del contexto ya completado. La atención local exacta cubre los 2.048 tokens más recientes; los tramos anteriores se particionan en fragmentos de 512 tokens, cada uno representado por cuatro resúmenes aprendidos, de modo que a 32.768 tokens el modelo puede consultar hasta 256 vectores de resumen. Una compuerta escalar aprendida por token mezcla la salida de la ruta local con la de la ruta de memoria, lo que limita el coste de atención sobre el contexto antiguo frente a una atención completa sobre toda la secuencia. La atención usa GQA con 24 cabezas de consulta compartiendo 6 cabezas de clave/valor.
 
-El entrenamiento se realizó en dos fases: preentrenamiento del checkpoint base (Fabric1.5-0.7B-Base) y posterior fine-tuning para instrucciones utilizando los datasets HuggingFaceTB/smoltalk2, open-r1/Mixture-of-Thoughts y nvidia/Nemotron-Post-Training-Dataset-v1. No se menciona explícitamente el uso de RLHF o DPO, aunque los datasets de post-entrenamiento sugieren técnicas de alineación supervisada. El modelo se publica con precisión FP16 y requiere código personalizado de Transformers (--trust-remote-code).
+El linaje base registra 23.000.514.560 tokens de preentrenamiento, seguidos de un ajuste de identidad y de un fine-tuning supervisado de instrucciones. Los conjuntos de datos de post-entrenamiento citados son HuggingFaceTB/smoltalk2, open-r1/Mixture-of-Thoughts y nvidia/Nemotron-Post-Training-Dataset-v1. El entrenamiento se ejecutó en PyTorch con precisión mixta sobre ocho aceleradores Intel Gaudi 3 (dispositivo `hpu`), con soporte declarado también para dispositivos Intel Arc (`xpu`). No se documentan fases de RLHF ni DPO, ni detalles sobre la composición exacta o el filtrado de los datos de instrucciones.
 
 ## Capacidades
 
-- Generación de texto y seguimiento de instrucciones en inglés.
-- Razonamiento y conocimiento general, con resultados moderados en benchmarks de sentido común y conocimiento (ARC, HellaSwag, MMLU).
-- Manejo de contextos largos (hasta 32K tokens) gracias a la memoria fragmentada, permitiendo procesar documentos extensos o conversaciones multi-turno.
-- Eficiencia computacional: al ser un modelo de 0.7B, puede ejecutarse en hardware modesto, incluyendo CPUs y GPUs de consumo.
-- No se documenta soporte explícito para tool calling, function calling, agentes, visión o audio. Es exclusivamente un modelo de texto.
+- Generación de texto causal y conversación multi-turno con formato de chat dedicado (roles system, user y assistant con delimitadores explícitos).
+- Seguimiento de instrucciones y generación orientada a tareas tras el post-entrenamiento supervisado.
+- Respuesta a preguntas, resumen y generación de contenido general.
+- Manejo de contexto largo de hasta 32.768 tokens, con acceso eficiente a contexto previo mediante resúmenes de fragmento aprendidos.
+- Capacidad multilingüe: limitada al inglés según la model card.
+- Tool calling / function calling: no documentado.
+- Soporte de agentes y razonamiento multi-paso: no documentado.
+- Modo thinking, visión o audio: no disponible; el modelo es exclusivamente de texto.
 
 ## Casos de uso
 
-- Atención al cliente automatizada: el modelo puede gestionar conversaciones multi-turno con contexto largo (32K tokens) para mantener el historial completo de la interacción, adecuado para chatbots en sitios web o aplicaciones de mensajería.
-- Asistentes virtuales en dispositivos edge: su tamaño reducido permite desplegarlo en Raspberry Pi, smartphones o routers con poca memoria, ofreciendo respuestas a preguntas frecuentes o comandos de voz (con un pipeline de ASR externo).
-- Resumen de documentos extensos: gracias a su ventana de contexto de 32K, puede resumir artículos, informes o contratos de varias páginas sin necesidad de truncar el texto.
-- Generación de contenido asistida: redacción de borradores de correos, publicaciones de blog o descripciones de productos, con instrucciones en lenguaje natural.
-- Clasificación y extracción de información: puede etiquetar textos, extraer entidades o categorizar tickets de soporte, aprovechando su capacidad de seguir instrucciones detalladas.
-- Educación y tutoría: como asistente de estudio para explicar conceptos, resolver dudas o generar ejercicios, dado su razonamiento básico y su bajo coste de ejecución.
+- Asistente conversacional de atención al cliente: puede mantener diálogos multi-turno con historial extenso gracias a la ventana de 32K y a la memoria fragmentada, que evita recalcular atención completa sobre todo el histórico en cada turno.
+- Resumen de documentos largos: informes, actas o transcripciones de hasta decenas de miles de tokens pueden procesarse en una sola pasada, con la salvedad de que la recuperación de detalles lejanos no está garantizada.
+- Generación de contenido editorial: redacción de borradores, reescritura y adaptación de tono a partir de instrucciones en inglés, aprovechando el ajuste por instrucciones y el formato de chat.
+- Extracción de información y respuesta a preguntas sobre base documental: útil en pipelines de procesamiento por lotes donde el coste por token importa y el modelo cabe en una sola GPU.
+- Prototipado e investigación sobre arquitecturas de contexto largo: el diseño de memoria fragmentada con compuertas es un objeto de estudio reproducible en hardware modesto, con código personalizado disponible en el repositorio.
+- Despliegue en el borde o en entornos con recursos limitados: con 742,5 M de parámetros en FP16 (unos 1,5 GB de pesos), es viable en GPUs de consumo y en estaciones de trabajo sin aceleradores de datacenter.
+- Evaluación comparativa de modelos pequeños: sirve como referencia de la franja sub-1B para experimentos de ajuste fino y de destilación.
 
 ## Benchmarks y rendimiento
 
-Los resultados fueron obtenidos en una NVIDIA A100-SXM4-40GB con pesos FP16 usando el harness `lm-eval`:
-
-| Benchmark | Accuracy (0-shot) | Tipo |
-|---|---|---|
-| ARC Easy | 54,97% | Loglikelihood |
-| ARC Challenge | 26,88% | Loglikelihood |
-| HellaSwag | 35,00% | Loglikelihood |
-| MMLU | 28,96% | Loglikelihood |
-| C-Eval | 27,12% | Loglikelihood |
-
-Comparación con Qwen3.5-0.8B:
-
-| Benchmark | Fabric 1.5 | Qwen3.5-0.8B | Delta |
-|---|---|---|---|
-| MMLU (0-shot) | 28,96% | 29,7% | -0,74% |
-
-No se han publicado resultados adicionales (HumanEval, GSM8K, etc.) en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: con 742M parámetros, en FP16 ocupa aproximadamente 1,5 GB (tamaño del repositorio). En BF16 similar. Con cuantización a 4 bits (no oficial, pero posible con herramientas externas) podría reducirse a ~0,4 GB.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3050, o incluso integradas con suficiente memoria compartida). Se evaluó en A100, pero no es necesaria.
-- Cabe en GPUs de consumo: sí, en tarjetas con 2 GB o más. También puede ejecutarse en CPU con ~2 GB de RAM.
-- Opciones de despliegue: la documentación oficial muestra `transformers serve` con API compatible con OpenAI, tanto en macOS (MPS) como en NVIDIA (CUDA). Al ser un modelo estándar de Transformers, podría usarse con vLLM, TGI o llama.cpp, aunque no está documentado oficialmente.
-- Latencia y throughput: no se proporcionan datos oficiales. En una GPU moderna, se espera una generación de decenas de tokens por segundo; en CPU, varios tokens por segundo.
+- VRAM estimada para inferencia: en FP16, los pesos ocupan aproximadamente 1,5 GB; con caché KV y overhead de ejecución, se puede estimar un rango de 2 a 4 GB en función de la longitud de contexto y del tamaño de lote. Los cálculos para cuantizaciones de 8 o 4 bits no están documentados por el autor.
+- GPU recomendadas: el autor documenta entrenamiento en Intel Gaudi 3 y soporte para Intel Arc (`xpu`); para inferencia en NVIDIA, cualquier GPU con al menos 4-6 GB de VRAM debería ser suficiente, aunque no se proporcionan cifras oficiales.
+- Cabe en GPU de consumo: sí, previsiblemente en tarjetas con 6 GB o más (por ejemplo, RTX 3060, RTX 4060, RTX 4090), si bien no hay validación publicada.
+- Opciones de despliegue: Transformers con `trust_remote_code=True` (el modelo requiere código personalizado); no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, y la ausencia de pesos GGUF publicados limita el despliegue en llama.cpp y Ollama sin conversión previa.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | MMLU (0-shot) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Fabric 1.5-0.7B-Instruct | 742M | 32.768 | 28,96% | Apache 2.0 (según HF) | Hugging Face |
-| Qwen3.5-0.8B | ~800M | no disponible | 29,7% | no disponible | no disponible |
-| SmolLM2-1.7B | 1.7B | 8.192 | no disponible | Apache 2.0 | Hugging Face |
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| Fabric1.5-0.7B-Instruct | 742,5 M | 32.768 | Apache 2.0 | Memoria fragmentada con compuertas; solo inglés; código personalizado |
+| Qwen2.5-0.5B-Instruct | 0,49 B | 32.768 | Apache 2.0 | Multilingüe, amplio ecosistema de cuantizaciones y despliegue |
+| Llama 3.2 1B Instruct | 1,24 B | 131.072 | Llama 3.2 Community License | Multilingüe, contexto muy superior, licencia con restricciones |
+| SmolLM2-1.7B-Instruct | 1,7 B | 8.192 | Apache 2.0 | Alternativa de la misma franja con ecosistema maduro |
 
-Solo se dispone de datos comparativos con Qwen3.5-0.8B en MMLU. Fabric 1.5 queda a 0,74 puntos porcentuales de distancia, siendo un 12% más pequeño. No hay más información sobre otros modelos comparables en la documentación proporcionada.
+La comparación se basa en características públicas de cada familia; no se dispone de resultados de benchmarks de Fabric1.5 que permitan contrastar calidad de forma empírica.
 
 ## Limitaciones y advertencias
 
-- Idioma: solo soporta inglés de forma nativa; no se documenta capacidad multilingüe.
-- Tamaño reducido: al ser un modelo de 0.7B, su rendimiento en tareas complejas (razonamiento avanzado, matemáticas, código) es limitado y puede presentar alucinaciones o respuestas incoherentes en dominios especializados.
-- Sesgos: al igual que otros modelos entrenados con datos web, puede reflejar sesgos presentes en los datos de entrenamiento.
-- Licencia: aunque la metadata de Hugging Face indica Apache 2.0, la model card menciona "Fabric AI Open License v1.0". Es necesario verificar los términos exactos antes de un uso comercial o de redistribución.
-- Código personalizado: requiere `--trust-remote-code` al cargar el modelo, lo que implica ejecutar código del repositorio del autor. Se recomienda auditar el código antes de usarlo en entornos de producción.
-- Contexto largo con memoria fragmentada: aunque la ventana es de 32K, la memoria a largo plazo se basa en resúmenes aprendidos, lo que puede perder detalles finos de fragmentos antiguos en comparación con atención completa.
+- El modelo solo declara soporte de inglés; el rendimiento en castellano u otros idiomas no está validado y previsiblemente será deficiente.
+- La ventana de 32K es una capacidad arquitectónica, no una garantía de recuperación precisa: el autor advierte explícitamente que la precisión de recall a larga distancia no está asegurada.
+- Riesgo de alucinación inherente a un modelo de 742 M de parámetros con datos de post-entrenamiento no detallados; no se documentan evaluaciones de factualidad.
+- No se documentan sesgos conocidos ni evaluaciones de seguridad, toxicidad o alineación.
+- Requiere `trust_remote_code=True` y revisión previa del código Python del repositorio, lo que añade superficie de riesgo en producción.
+- No hay pesos GGUF ni cuantizaciones publicadas, lo que complica el despliegue en entornos de inferencia ligera sin trabajo adicional de conversión.
+- El modelo se distribuye bajo Apache 2.0, sujeta a avisos de terceros aplicables; conviene verificar las licencias de los datasets de post-entrenamiento citados antes de un uso comercial.
+- El tamaño reducido limita el razonamiento complejo, las matemáticas avanzadas y la generación de código fiable; no se han publicado benchmarks que respalden lo contrario.
+- El repositorio tiene un volumen de descargas bajo (1.162) y pocos likes (3), lo que sugiere escasa validación comunitaria.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/FabricAI/Fabric1.5-0.7B-Instruct
-- Modelo base: https://huggingface.co/FabricAI/Fabric1.5-0.7B-Base
-- No se proporcionan papers, blogs o demos adicionales en la información disponible.
+- Repositorio del modelo Instruct referenciado en la model card: https://huggingface.co/tudor-iustin22/Bluebird-1.5-Instruct
+- Modelo base: https://huggingface.co/tudor-iustin22/Bluebird-1.5-Base
+- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
+- Documentación de instalación de Intel Gaudi: https://docs.habana.ai/en/latest/Installation_Guide/index.html

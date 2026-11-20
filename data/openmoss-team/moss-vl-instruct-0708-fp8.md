@@ -2,78 +2,86 @@
 
 ## Resumen
 
-MOSS-VL-Instruct-0708-FP8 es la versión cuantizada en FP8 dinámico del modelo multimodal MOSS-VL-Instruct-0708, desarrollado por el equipo OpenMOSS. Se trata de un modelo de 11 336 millones de parámetros (~11B) diseñado para comprensión de imagen y vídeo de largo formato, con una arquitectura basada en atención cruzada (cross-attention) unificada que integra un codificador visual con un modelo de lenguaje. Esta variante FP8 reduce el peso del checkpoint a unos 24 GiB, lo que permite su ejecución en una GPU con 24 GB de VRAM mediante el pipeline estándar de Transformers, manteniendo la calidad cercana a la versión BF16 original según las evaluaciones publicadas por los autores.
+MOSS-VL-Instruct-0708-FP8 es la versión cuantizada en FP8 del modelo de visión-lenguaje MOSS-VL-Instruct-0708, desarrollado por OpenMOSS (OpenMOSS-Team). Se trata de un modelo multimodal de 11.336 millones de parámetros orientado a comprensión de imágenes, comprensión de vídeo de larga duración e interacción en streaming en tiempo real. Su pipeline declarado es `video-text-to-text`, e incluye soporte nativo para texto, imagen y vídeo como entradas.
 
-La relevancia de este modelo reside en que aborda la comprensión de vídeo en tiempo real y de larga duración, un área donde muchos modelos multimodales fallan por límites de contexto o coste computacional. La versión FP8 facilita el despliegue en hardware de consumo o de gama media, y es compatible tanto con Transformers como con el backend nativo de SGLang, lo que ofrece flexibilidad para entornos de producción. El modelo está pensado para tareas offline de descripción, respuesta a preguntas y razonamiento sobre contenido visual y de vídeo, con soporte para inglés y chino.
+La relevancia de esta variante concreta reside en la cuantización: reduce el checkpoint a unos 24 GiB y permite ejecutar el modelo en una única GPU NVIDIA con 24 GB de VRAM mediante la ruta estándar de Transformers, manteniendo pesos FP8 con activaciones de entrada FP8 dinámicas por token en la mayoría de las capas del lenguaje. Las capas de atención cruzada, los módulos de visión y el `lm_head` se conservan en BF16, y la caché KV en Transformers se comprime a INT8 mediante HQQ.
 
-## Especificaciones tecnicas
+El modelo se publica bajo licencia Apache 2.0, soporta inglés y chino, y está pensado para desplegarse tanto con Transformers como con el backend nativo de SGLang, que expone un servicio compatible con la API de OpenAI. Está dirigido a desarrolladores e investigadores que necesitan capacidades de comprensión de vídeo e imagen en hardware de gama alta de consumo o profesional de 24 GB.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal con atención cruzada unificada (codificador visual + LLM) |
-| Parametros totales | 11 336 371 208 (11,34B) |
-| Parametros activos | no disponible (no es un modelo MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | FP8 dinámico (pesos y activaciones) en la mayoría de capas de lenguaje; BF16 en cross-attention, módulos de visión y lm_head; KV cache en HQQ INT8 (Transformers) o BF16 nativo (SGLang) |
-| Idiomas soportados | Inglés, chino |
+| Arquitectura | Transformer multimodal con módulos de visión y atención cruzada (`moss_vl`, código personalizado) |
+| Parámetros totales | 11.336.371.208 |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible (la model card no declara un valor numérico de contexto) |
+| Tipos de cuantización | FP8 dinámico (pesos FP8 + activaciones de entrada FP8 por token); BF16 en atención cruzada, visión y `lm_head`; caché KV INT8 vía HQQ en Transformers |
+| Idiomas soportados | inglés (en), chino (zh) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (con formato compressed-tensors 0.14.0 para FP8) |
+| Formato de pesos | safetensors con formato de checkpoint `compressed-tensors` 0.14.0 |
 
 ## Arquitectura y entrenamiento
 
-MOSS-VL-Instruct-0708-FP8 es una cuantización del checkpoint MOSS-VL-Instruct-0708, que a su vez es el resultado de un ajuste fino supervisado (SFT) sobre MOSS-VL-Base-0708. La arquitectura base emplea un diseño de atención cruzada unificada: un codificador visual procesa imágenes o secuencias de vídeo en parches (patch_size 16, temporal_patch_size 1, merge_size 2) y sus características se proyectan al espacio del modelo de lenguaje mediante capas de cross-attention. Este diseño permite manejar vídeos largos sin depender exclusivamente de la ventana de contexto del LLM, ya que la información visual se inyecta de forma intercalada.
+La información disponible confirma que MOSS-VL es una familia de modelos visión-lenguaje de arquitectura Transformer con codificador de visión, atención cruzada hacia el modelo de lenguaje y soporte de parches de imagen y vídeo configurables (`patch_size=16`, `temporal_patch_size=1`, `merge_size=2`). El procesamiento visual se realiza por fragmentos (`vision_chunked_length`), lo que permite manejar entradas de imagen y vídeo de gran resolución y secuencias de hasta 256 fotogramas con extracción a 1 FPS. El modelo requiere `trust_remote_code=True` y usa FlashAttention 2 en la ruta de Transformers.
 
-El entrenamiento original incluye una fase de preentrenamiento sobre grandes volúmenes de datos visuales y de vídeo, seguida de un ajuste fino con instrucciones (SFT). No se especifican el número exacto de tokens de entrenamiento ni la composición detallada del dataset en la información disponible. La versión FP8 aplica cuantización por token dinámica en las activaciones de entrada y pesos FP8 en las capas de lenguaje, mientras que las capas de cross-attention, los módulos de visión y la cabeza de salida (lm_head) se mantienen en BF16 para preservar la precisión. La caché KV se cuantiza a INT8 mediante HQQ en el camino de Transformers, mientras que SGLang utiliza su caché nativa en BF16. Esta configuración mixta busca minimizar la pérdida de calidad en las partes más sensibles del modelo.
+No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO. La model card únicamente remite al informe técnico (arXiv 2608.15045) para los detalles de entrenamiento. La innovación técnica destacable de esta release es la cuantización: pesos FP8 compartidos entre los dos motores de inferencia (Transformers y SGLang), activaciones FP8 dinámicas por token y caché KV INT8 con HQQ en Transformers, mientras que SGLang emplea su propia caché BF16 nativa. Según el autor, los modelos cuantizados se mantienen cerca de sus equivalentes BF16 en los benchmarks seleccionados, aunque no se publican los valores numéricos en la información disponible.
 
 ## Capacidades
 
-- Comprensión de imágenes: descripción, respuesta a preguntas visuales y razonamiento sobre contenido estático.
-- Comprensión de vídeo: procesa vídeos de larga duración (hasta 256 fotogramas extraídos a 1 fps) y genera descripciones o respuestas basadas en el contenido temporal.
-- Entrada multimodal combinada: puede recibir imágenes y vídeo en la misma consulta, aunque la información disponible no detalla la combinación simultánea.
-- Generación de texto en inglés y chino: respuestas en ambos idiomas según el prompt.
-- Inferencia offline: diseñado para procesamiento por lotes o consultas individuales sin requisitos de latencia en tiempo real.
-- Compatibilidad con dos motores de inferencia: Transformers (con FlashAttention 2) y SGLang (servidor compatible con OpenAI).
-- No se menciona soporte explícito de tool calling, function calling, agentes o razonamiento multi-paso en la documentación disponible.
+- Comprensión de imágenes: descripción, respuesta a preguntas visuales y extracción de información a partir de imágenes con resolución controlable (`shortest_edge`, `longest_edge`).
+- Comprensión de vídeo de larga duración: procesamiento de hasta 256 fotogramas a 1 FPS por defecto, con extracción multihilo y procesamiento por fragmentos.
+- Interacción en streaming en tiempo real, según declara el autor en la descripción de la familia MOSS-VL.
+- Generación de texto multimodal condicionada a imagen o vídeo mediante `offline_image_generate` y `offline_video_generate`.
+- Soporte de múltiples imágenes por consulta (`multi_image_max_pixels`).
+- Ejecución por lotes mediante el runner del repositorio, que acepta consultas en JSON/JSONL con contenido de imagen o vídeo.
+- Despliegue como servicio compatible con la API de OpenAI a través del backend nativo de SGLang.
+- Capacidades multilingües limitadas a inglés y chino según los metadatos del modelo.
+- No se documentan en la información disponible capacidades de tool calling, function calling, agentes, razonamiento multi-paso explícito, modo thinking, audio ni matemáticas avanzadas.
 
 ## Casos de uso
 
-- Análisis de vídeo de vigilancia: el modelo puede procesar secuencias de vídeo de larga duración (hasta 256 fotogramas) y generar resúmenes descriptivos de eventos, lo que resulta útil para sistemas de seguridad que necesitan revisar grabaciones extensas.
-- Transcripción y descripción de contenido audiovisual para accesibilidad: dado su soporte para vídeo e imagen, puede generar descripciones alternativas (alt text) o narraciones de escenas para personas con discapacidad visual, tanto en inglés como en chino.
-- Moderación de contenido en plataformas de vídeo: permite clasificar o describir automáticamente el contenido de vídeos subidos por usuarios, ayudando a detectar material inapropiado o a generar metadatos.
-- Asistente de documentación técnica con soporte visual: un desarrollador podría subir capturas de pantalla o vídeos de una interfaz y obtener explicaciones o respuestas sobre su funcionamiento, gracias a la capacidad de razonamiento visual.
-- Investigación académica en visión por computador: sirve como modelo base para experimentos de cuantización, evaluación de robustez o fine-tuning en tareas específicas de vídeo, dado su tamaño moderado y licencia permisiva.
-- Despliegue en entornos con recursos limitados: al caber en una GPU de 24 GB, puede integrarse en servidores de inferencia con SGLang para ofrecer un endpoint OpenAI-compatible de comprensión de vídeo a aplicaciones internas, sin necesidad de clústeres de GPUs de alta gama.
+- Análisis automatizado de vídeo de vigilancia o monitorización: el modelo puede procesar hasta 256 fotogramas por clip a 1 FPS y generar descripciones o responder preguntas sobre eventos, gracias al procesamiento por fragmentos que evita cargar todo el vídeo en memoria de una vez.
+- Moderación de contenido visual en plataformas: clasificación y descripción de imágenes y vídeos subidos por usuarios mediante el runner JSON/JSONL, que permite procesar lotes de consultas con contenido multimedia.
+- Accesibilidad: generación de descripciones textuales de imágenes y vídeos para lectores de pantalla, usando `offline_image_generate` con prompts de descripción detallada.
+- Indexación y búsqueda semántica de archivos audiovisuales: extracción de descripciones y metadatos textuales de vídeos que después se indexan en un motor de búsqueda; el pipeline `feature-extraction` declarado en los tags sugiere uso para representaciones, aunque la model card no detalla la API de embeddings.
+- Asistencia en documentación técnica con capturas: interpretación de diagramas, capturas de pantalla o figuras en documentación, con control de resolución de entrada para preservar texto pequeño.
+- Prototipado e investigación en visión-lenguaje: al caber en una GPU de 24 GB, permite experimentar con un modelo multimodal de 11.300 millones de parámetros en estaciones de trabajo con RTX 4090 sin necesidad de clústeres multi-GPU.
+- Despliegue de servicio conversacional multimodal: mediante SGLang se puede levantar un endpoint compatible con la API de OpenAI para integrar comprensión de imagen y vídeo en aplicaciones existentes que ya consumen esa interfaz.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados numéricos de benchmarks en la información disponible. La model card incluye una imagen comparativa titulada "MOSS-VL quantization benchmark comparison" que muestra que los modelos cuantizados permanecen cercanos a sus contrapartes BF16, pero no se proporcionan los valores concretos de métricas como MMLU, HumanEval o similares. Por tanto, no es posible presentar una tabla de resultados verificables.
+No se han publicado resultados de benchmarks numéricos en la información disponible. La model card incluye una gráfica comparativa de cuantización (`mossvl_quantization_benchmark_comparison_en_4k.png`) y afirma que los modelos cuantizados se mantienen cerca de sus equivalentes BF16, pero no se proporcionan los valores concretos ni los nombres de los benchmarks evaluados.
 
 ## Requisitos de hardware
 
-- VRAM estimada: 24 GB para el pipeline de Transformers (según la model card, diseñado para una GPU NVIDIA con 24 GB de VRAM). El tamaño del repo es de 15,8 GB, pero los requisitos de memoria durante la inferencia pueden superar ese valor debido a las activaciones y la caché KV.
-- GPU recomendadas: cualquier GPU NVIDIA con 24 GB de VRAM, como RTX 3090, RTX 4090, A5000, L4 o similares. No se menciona soporte para GPUs con menos memoria.
-- En SGLang, los requisitos de memoria dependen de la configuración del servidor y la asignación de caché KV; el script de inicio usa `MEM_FRACTION_STATIC=0.35`, lo que sugiere que puede funcionar con una fracción de la memoria total de la GPU.
-- Opciones de despliegue: Transformers con `device_map="auto"` y FlashAttention 2, o SGLang con backend nativo (servidor OpenAI-compatible en `http://127.0.0.1:30000`). También es posible usar el runner de inferencia del repositorio para consultas JSON/JSONL.
-- Latencia y throughput: no disponibles. No se proporcionan mediciones de velocidad en la documentación.
+- VRAM estimada: aproximadamente 24 GB para la ruta de Transformers, según declara el autor; el checkpoint ocupa unos 15,8 GB en disco y la release se describe como de 24 GiB.
+- GPU recomendadas: una única GPU NVIDIA con 24 GB de VRAM como mínimo para Transformers (por ejemplo, RTX 4090, RTX A5000, L4 de 24 GB o superiores). Para SGLang, los requisitos dependen de la configuración del servidor y de la asignación de caché KV.
+- Cabe en GPU de consumo: sí, en tarjetas de 24 GB como la RTX 4090, siempre que se use la ruta de Transformers con la caché KV INT8 de HQQ.
+- Opciones de despliegue: Transformers 4.57.1 con `compressed-tensors` 0.14.0, HQQ 0.2.8.post1, PyTorch 2.8.0 + CUDA 12.8 y FlashAttention 2.8.1; o SGLang 0.5.11 con `sglang-kernel` 0.4.2, PyTorch 2.11.0 + CUDA 13.0, Transformers 5.6.0 y `compressed-tensors` 0.17.1.
+- Dependencias adicionales: FFmpeg en el `PATH` para decodificar vídeo.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos publicados con otros modelos multimodales de tamaño similar (p. ej., Qwen2-VL-7B, LLaVA-NeXT-Video-7B, InternVL2-8B) en la información proporcionada. La model card solo compara la versión cuantizada con su versión BF16 original, sin ofrecer cifras. Por tanto, la comparativa con alternativas queda pendiente de datos verificables.
+No disponible. La información proporcionada no incluye datos de rendimiento ni especificaciones de modelos comparables de la misma categoría (visión-lenguaje con soporte de vídeo y tamaño similar), por lo que no es posible establecer una comparación rigurosa sin inventar cifras.
 
 ## Limitaciones y advertencias
 
-- Sesgos y alucinaciones: no se documentan sesgos específicos, pero como todo modelo multimodal, puede generar descripciones inexactas o inventar detalles en vídeos densos o dominios muy especializados.
-- Limitaciones de contexto: la documentación advierte que vídeos muy densos, dominios altamente especializados, OCR de texto pequeño y tareas que requieren razonamiento numérico estricto pueden requerir prompts específicos, ajustes de muestreo o fine-tuning adicional.
-- Idiomas: solo inglés y chino; no hay soporte declarado para otros idiomas.
-- Licencia: Apache 2.0, permisiva para uso comercial, pero el modelo base y sus pesos están sujetos a la misma licencia; se recomienda revisar los términos de los datasets de entrenamiento si se planea un uso comercial.
-- Requisitos de hardware: la versión FP8 requiere una GPU con 24 GB de VRAM para el camino de Transformers; no es adecuada para GPUs de menor memoria sin técnicas adicionales de offloading.
-- Dependencias técnicas: requiere versiones específicas de `compressed-tensors` (0.14.0) y `hqq` (0.2.8.post1) para Transformers, y un entorno SGLang separado con versiones concretas (SGLang 0.5.11, PyTorch 2.11.0 + CUDA 13.0). La compatibilidad con otras versiones no está garantizada.
-- La cuantización FP8 puede introducir pérdidas de precisión en tareas numéricas o de razonamiento fino, aunque los autores indican que la calidad general se mantiene cercana a la versión BF16.
+- Idiomas: solo se declaran inglés y chino; el rendimiento en castellano no está garantizado ni documentado.
+- Sesgos: no se documentan análisis de sesgo en la información disponible; al ser un modelo entrenado principalmente con datos en inglés y chino, es previsible un sesgo cultural y lingüístico hacia esas comunidades.
+- Alucinación: no se publican evaluaciones específicas de fidelidad factual ni de alucinación visual; en tareas de descripción de vídeo e imagen el riesgo de inventar detalles no verificables debe asumirse y mitigarse con validación posterior.
+- Contexto: no se declara la longitud máxima de contexto, lo que dificulta planificar despliegues con secuencias muy largas; el límite práctico vendrá también de la memoria disponible para la caché KV.
+- Licencia: Apache 2.0 permite uso comercial, pero el modelo requiere `trust_remote_code=True` y código personalizado (`moss_vl`), lo que implica ejecutar código del repositorio del autor; conviene auditar ese código antes de usarlo en producción.
+- Cuantización: la release FP8 introduce una pérdida de calidad respecto a BF16; el autor afirma que es pequeña, pero no publica cifras verificables en la información disponible. Además, la caché KV INT8 con HQQ en Transformers puede afectar a la precisión en contextos largos.
+- Compatibilidad de versiones: las dependencias están fijadas a versiones muy concretas (Transformers 4.57.1 o 5.6.0 según motor, PyTorch 2.8.0 o 2.11.0), lo que complica la integración en entornos existentes.
+- Carga de vídeo: requiere FFmpeg y un número elevado de fotogramas (hasta 256) puede incrementar mucho el consumo de memoria y el tiempo de preprocesamiento.
 
 ## Enlaces
 
-- Modelo cuantizado en Hugging Face: https://huggingface.co/OpenMOSS-Team/MOSS-VL-Instruct-0708-FP8
-- Modelo base sin cuantizar: https://huggingface.co/OpenMOSS-Team/MOSS-VL-Instruct-0708
-- Repositorio GitHub de MOSS-VL: https://github.com/OpenMOSS/MOSS-VL
-- Página oficial de OpenMOSS sobre MOSS-VL: https://openmoss.ai/MOSS-VL/moss-vl.html
-- Modelo en ModelScope: https://www.modelscope.cn/models/openmoss/MOSS-VL-Instruct-0708
+- Modelo en Hugging Face: https://huggingface.co/OpenMOSS-Team/MOSS-VL-Instruct-0708-FP8
+- Modelo base (BF16): https://huggingface.co/OpenMOSS-Team/MOSS-VL-Instruct-0708
+- README en chino: https://huggingface.co/OpenMOSS-Team/MOSS-VL-Instruct-0708-FP8/blob/main/README_zh.md
+- Informe técnico (arXiv 2608.15045): https://arxiv.org/pdf/2608.15045
+- Referencia arXiv adicional (2606.07639): https://arxiv.org/abs/2606.07639
+- Repositorio de código MOSS-VL: https://github.com/OpenMOSS/MOSS-VL

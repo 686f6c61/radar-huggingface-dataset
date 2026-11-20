@@ -32,7 +32,7 @@
     "conversational"
   ],
   "likes": 5,
-  "downloads_30d": 1869,
+  "downloads_30d": 1838,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
@@ -52,31 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Élèves - toutatice.fr",
-      "url": "https://www.toutatice.fr/portail/cms/toutatice/eleves",
-      "snippet": "TOUTATICE est le portail web de l’académie de Rennes qui permet à un élève scolarisé dans un établissement de l’académie de …"
-    },
-    {
-      "title": "Toutapad",
-      "url": "https://www.toutatice.fr/pad/",
-      "snippet": "OK JavaScript license information"
-    },
-    {
-      "title": "Parents - toutatice.fr",
-      "url": "https://www.toutatice.fr/portail/cms/toutatice/parents",
-      "snippet": "Parents et représentants légaux Vos services numériques éducation dans Toutatice Bienvenue sur cette page qui vous donnera les …"
-    },
-    {
-      "title": "Erreur - toutatice.fr",
-      "url": "https://www.toutatice.fr/portail/default/accueil-anonyme",
-      "snippet": "Une erreur est survenue. Retour à la page précédente Accueil"
-    },
-    {
-      "title": "Recherche - toutatice.fr",
-      "url": "https://www.toutatice.fr/portail/pagemarker/1/commands?action=advancedSearch&action=advancedSearch&search=fout+tout",
-      "snippet": "Paroles - Les petits papiers.pdf par Toutatice | source Académie de Rennes | le Fri Sep 25 03:06:41 CEST 2020"
-    }
-  ]
+  "sources": []
 }

@@ -53,31 +53,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Crème anglaise réussie, onctueuse à souhait - Marmiton",
-      "url": "https://www.marmiton.org/recettes/recette_creme-anglaise-reussie-onctueuse-a-souhait_37391.aspx",
-      "snippet": "Recette Crème anglaise réussie, onctueuse à souhait : la meilleure recette rapide et facile : 50 cl, 25 min de préparation. Notée 4.7/5 …"
-    },
-    {
-      "title": "Clafoutis à la mirabelle : la meilleure recette - Marmiton",
-      "url": "https://www.marmiton.org/recettes/recette_clafoutis-a-la-mirabelle_30982.aspx",
-      "snippet": "Recette Clafoutis à la mirabelle : la meilleure recette rapide et facile : 6 personnes, 60 min de préparation. Notée 4.6/5 par 122 …"
-    },
-    {
-      "title": "Cookies aux pépites de chocolat super moelleux - Marmiton",
-      "url": "https://www.marmiton.org/recettes/recette_cookies-aux-pepites-de-chocolat-super-moelleux_57330.aspx",
-      "snippet": "Les cookies moelleux sont un must du goûter ou des pauses sucrées. Avec leur cœur tendre et leurs bords à peine croustillants, ils …"
-    },
-    {
-      "title": "Tarte thon, tomate et moutarde : la meilleure recette - Marmiton",
-      "url": "https://www.marmiton.org/recettes/recette_tarte-thon-tomate-et-moutarde_17226.aspx",
-      "snippet": "Recette Tarte thon, tomate et moutarde : la meilleure recette rapide et facile : 4 personnes, 55 min de préparation. Notée 4.8/5 par …"
-    },
-    {
-      "title": "Ma sauce tomate maison : la meilleure recette - Marmiton",
-      "url": "https://www.marmiton.org/recettes/recette_ma-sauce-tomate-maison_84489.aspx",
-      "snippet": "Recette Ma sauce tomate maison : la meilleure recette rapide et facile : 1 L, 100 min de préparation. Notée 4.8/5 par 18 membres …"
-    }
-  ]
+  "sources": []
 }

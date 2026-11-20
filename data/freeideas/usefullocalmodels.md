@@ -2,111 +2,101 @@
 
 ## Resumen
 
-UsefulLocalModels es un repositorio de Hugging Face publicado por el ingeniero de IA Carl Free (usuario freeideas) que agrupa modelos pequenos especializados, pensados para ejecutarse en CPU y liberar a los grandes modelos de lenguaje de tareas repetitivas. Actualmente contiene un unico modelo documentado, `same-subject-r2`, un cross-encoder de 150 millones de parametros afinado a partir de Alibaba-NLP/gte-reranker-modernbert-base.
+`freeideas/UsefulLocalModels` es un repositorio que agrupa una familia de modelos pequeños y especializados, entrenados para ejecutarse en CPU convencional y resolver tareas repetitivas de procesamiento de texto sin recurrir a grandes modelos generativos. Lo desarrolla Carl Free (freeideas), ingeniero de IA centrado en modelos compactos que superan a modelos generales en tareas estrechas con un coste mucho menor. El repositorio incluye clasificadores de 150M de parámetros para segmentación temática, enlazado de entidades y atribución de diálogos, modelos de 32M para búsqueda en grafos de hechos, y un sumarizador de 4B basado en Qwen3.5-4B.
 
-El problema que resuelve es concreto: dado un par de textos, decidir si el segundo sigue tratando el mismo tema que el primero, devolviendo una probabilidad. Es el clasificador que usa el sistema SumEng para segmentar flujos de texto que llegan en orden (libros, transcripciones de reuniones, chats) en temas, de forma que un modelo de lenguaje solo tenga que escribir un resumen por tema en lugar de procesar todo el texto.
+El modelo principal del repo, según el recuento de safetensors, tiene 4.326.350.848 parámetros y deriva de `Alibaba-NLP/gte-reranker-modernbert-base`, un encoder ModernBERT reutilizado aquí como base para clasificación de texto. La propuesta es deliberadamente local: el texto no sale de la máquina, lo que reduce coste, latencia y exposición de datos frente a APIs de LLM. El repositorio ocupa 13 GB e incluye pesos en ONNX, safetensors y GGUF.
 
-La relevancia actual radica en su enfoque de eficiencia: 150M de parametros, inferencia en CPU de portatil, licencia Apache 2.0 y pesos en safetensors y ONNX, frente a la alternativa de enviar cada comprobacion a un LLM generalista. En su model card declara 73% de exactitud (AUC 0,82) en pares de test, por encima de Claude Sonnet (61%, AUC 0,69) y Claude Haiku (52%, AUC 0,57) en la misma tarea. El repositorio registra 0 descargas y 0 likes en el momento de la consulta.
+Es relevante ahora porque ejemplifica una tendencia práctica: sustituir llamadas a modelos grandes por clasificadores pequeños y deterministas para tareas de infraestructura (trocear un libro en temas, enlazar menciones a entidades, atribuir citas), reservando el LLM solo para la generación final. La licencia del repo es Apache 2.0, aunque varios submodelos tienen restricciones por sus datos de entrenamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Cross-encoder basado en ModernBERT (fine-tune de Alibaba-NLP/gte-reranker-modernbert-base) |
-| Parametros totales | 150 millones |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | 2.048 tokens como maximo en el par de entrada |
-| Tipos de cuantizacion | no disponible (no se documentan versiones cuantizadas) |
-| Idiomas soportados | ingles (en) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (PyTorch, `AutoModelForSequenceClassification`, `attn_implementation="sdpa"`) y ONNX (`model.onnx`) |
+| Arquitectura | Transformer encoder (ModernBERT, base `Alibaba-NLP/gte-reranker-modernbert-base`) para los clasificadores; el sumarizador es un Qwen3.5-4B fine-tuneado |
+| Parametros totales | 4.326.350.848 (modelo principal del repo); submodelos de 150M y 32M |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 16.384 tokens en el sumarizador (flag `-c 16384` en llama.cpp); no disponible para los clasificadores |
+| Tipos de cuantizacion | Q4_K_M (GGUF) para el sumarizador; safetensors y ONNX para los clasificadores |
+| Idiomas soportados | en (inglés únicamente) |
+| Licencia | Apache 2.0 en el repo; el submodelo sumarizador es solo para uso no comercial por sus datos de entrenamiento |
+| Formato de pesos | safetensors, ONNX, GGUF |
 
 ## Arquitectura y entrenamiento
 
-`same-subject-r2` es un cross-encoder: recibe dos textos como par y produce un unico logit, cuya sigmoid se interpreta como la probabilidad de que el segundo texto trate el mismo tema que el primero. La entrada se construye con elementos en formato `header:\ntext` separados por lineas en blanco; el primero es el texto previo (ultimos pasajes o un resumen) y el segundo es el texto nuevo seguido de una pregunta fija ("Is the new passage about the same subject as the earlier passages?"). La tokenizacion se hace como par, truncando solo el primer texto, con un maximo de 2.048 tokens y tratando los tokens especiales como texto plano (`split_special_tokens=True` en transformers, `encode_special_tokens = True` en tokenizers).
+Los clasificadores pequeños (same-subject, entity-link, speaker, choice, path-step, path-answer) son encoders derivados de ModernBERT con 150M o 32M de parámetros, entrenados como clasificadores binarios o de elección sobre pares de textos. Los modelos `path-step-r2` y `path-answer-r2` de 32M se obtuvieron por destilación de sus equivalentes r1 de 150M, cinco veces mayores, manteniendo calidad comparable en la búsqueda sobre grafos de hechos. El modelo `same-subject-r4` es una repetición de r3 entrenada exclusivamente con texto que permite uso comercial.
 
-El entrenamiento uso 13.639 pares procedentes de 12 relatos de Sherlock Holmes (dominio publico, Project Gutenberg) y 196 reuniones AMI e ICSI del dataset QMSum (CC BY 4.0), con division por fuente. Los limites de tema en las reuniones fueron anotados por personas; los cortes de escena de los libros y todos los resumenes fueron generados por modelos Claude. Se entrenaron dos epocas con learning rate 1e-5 en una unica GPU L4; el checkpoint publicado corresponde a la epoca 1. El modelo incluye un archivo `sumeng-classifier.json` con la longitud maxima y el hash del ONNX, y hay una regla de segmentacion documentada: dejar crecer un grupo hasta que contenga el doble del minimo (3.000 caracteres) y cortar en el punto de probabilidad mas baja si queda por debajo de 0,4, manteniendo el minimo a cada lado.
+El sumarizador `sumeng-summarizer-qwen3.5-4b` se fine-tuneó con LoRA de rango 32 sobre las capas de lenguaje usando Unsloth, con pérdida solo sobre la respuesta, una época y pérdida de validación de 0.91, y después se fusionó y cuantizó a Q4_K_M. Los datos fueron 754 resúmenes generados por Claude (Haiku para pasajes, Sonnet para resúmenes de resúmenes) y aceptados por SumEng sobre textos de entrenamiento: OpenStax Introduction to Sociology 3e y U.S. History (CC BY-NC-SA 4.0), cuatro novelas de dominio público, ocho relatos de Sherlock Holmes y seis chats LoCoMo (CC BY-NC 4.0), con 83 ejemplos de validación de otros libros y un chat. El prompt incluye un tramo de pasajes o mensajes, un límite de longitud y reglas en texto plano; la salida es un párrafo único.
 
 ## Capacidades
 
-- Clasificacion de pares de texto: decide si un pasaje o mensaje nuevo continua el tema del texto anterior, devolviendo una probabilidad.
-- Segmentacion tematica de flujos ordenados: divide libros, transcripciones de reuniones o notas en temas usando la regla de corte documentada.
-- Salida calibrable de forma relativa: las probabilidades sirven para comparar comprobaciones entre si (por debajo de 0,1 o por encima de 0,9 en el 42% de los casos, con 88% de acierto).
-- Ejecucion en CPU: funciona en hardware de consumo sin GPU, en PyTorch o onnxruntime.
-- Idiomas: solo ingles.
-- No soporta generacion de texto, tool calling, agentes, vision ni audio; es un clasificador discriminativo, no un modelo generativo.
+- Clasificación de texto y segmentación temática: determina si un pasaje o mensaje continúa el tema del texto anterior, para trocear flujos largos (libros, chats, notas de reunión) en una jerarquía de resúmenes.
+- Enlazado de entidades: decide si un nombre en una frase se refiere a una entidad conocida (persona, lugar, cosa) de un grafo en crecimiento.
+- Atribución de citas: identifica qué personaje pronuncia un párrafo de diálogo en ficción, a partir del párrafo y del texto previo.
+- Preguntas de elección múltiple sobre un flujo de texto: a qué entidad corresponde un nombre marcado, quién dice un párrafo, o si dos entidades son la misma.
+- Búsqueda en grafos de hechos: `path-step` evalúa si un hecho es el siguiente paso hacia la respuesta y `path-answer` puntúa si una cadena de hechos responde a la pregunta, con puntuación baja cuando el grafo no puede responder.
+- Sumarización extractiva-abstractiva controlada: genera un párrafo plano dentro de un límite de longitud, nombrando personas y cosas, con modo thinking desactivado y temperatura 0.3.
+- Ejecución local en CPU y en Apple Silicon (Metal), sin envío de texto a servicios externos.
+- No soporta tool calling, agentes multi-paso generales, visión ni audio según la información disponible.
 
 ## Casos de uso
 
-- Segmentacion de libros y documentos largos en escenas o temas: el clasificador marca los cortes y un LLM escribe despues un resumen por segmento, reduciendo el coste frente a procesar el texto completo.
-- Resumen jerarquico (piramide de resumenes) sobre texto que llega en orden, como implementa el sistema SumEng: cada nivel agrupa temas y el clasificador decide donde termina cada uno.
-- Procesamiento de actas y transcripciones de reuniones: aunque el rendimiento cae frente a libros en turnos hablados cortos, permite trocear reuniones AMI/ICSI por temas antes de resumirlas.
-- Prefiltrado de contexto para un LLM: decidir que fragmentos previos siguen siendo relevantes para la consulta actual y descartar el resto, ahorrando tokens de contexto.
-- Clasificacion local y privada de flujos de mensajes: al ejecutarse en CPU y sin salida a la red, el texto no abandona la maquina, lo que encaja en entornos con requisitos de privacidad.
-- Deteccion de deriva tematica en conversaciones multi-turno: usar la probabilidad como senal para reiniciar contexto o abrir un nuevo hilo.
-- Etiquetado previo a indexacion o RAG: agrupar documentos por continuidad tematica antes de construir indices o clusters.
+- Troceado temático de documentos largos: `same-subject-r4` permite dividir un libro o un histórico de chat en temas coherentes para construir un árbol de resúmenes, sin coste de API y con el texto siempre en local.
+- Enlazado de menciones en pipelines de extracción: `entity-link-r1` resuelve si cada mención de un texto corresponde a una entidad ya conocida del grafo, lo que facilita mantener grafos de conocimiento incrementales en documentos que crecen.
+- Atribución de diálogos en narrativa: `speaker-r1` asigna párrafos citados a personajes en ficción, útil para anotación literaria, adaptaciones o análisis de guiones.
+- Resumen de pasajes y mensajes con límite de longitud: el sumarizador Qwen3.5-4B sustituye a Claude Haiku en el nivel `basic` de SumEng, generando un párrafo por tramo con unas 10 segundos por resumen en un M1 Pro; adecuado para resúmenes de actas, correos o capítulos en entornos privados.
+- Preguntas sobre documentación corporativa: combinando el árbol de resúmenes con un índice de palabras clave, el sistema recupera evidencia para preguntas de detalle y de repaso; en el libro de prueba logró el 59% y el 68% respectivamente, y el 100% con índice de palabras clave.
+- Búsqueda de respuestas en grafos de hechos: `path-step-r2` y `path-answer-r2` permiten recorrer un grafo para responder preguntas encadenadas del tipo "¿dónde trabaja la mujer de Roger?", con una búsqueda cinco veces más rápida que con los modelos de 150M.
+- Clasificación de bajo coste en producción: los modelos de 150M y 32M caben en CPU y permiten procesar grandes volúmenes de texto (clasificación, elección múltiple, segmentación) con latencia baja y sin GPU.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados en la model card sobre pares de test no vistos en entrenamiento (relatos y reuniones):
-
-| Modelo | Exactitud | AUC |
-|---|---:|---:|
-| same-subject-r2 (este modelo) | 73% | 0,82 |
-| Claude Sonnet (misma pregunta) | 61% | 0,69 |
-| Claude Haiku (misma pregunta) | 52% | 0,57 |
-
-Datos adicionales de la model card:
-
-| Metrica | Valor |
+| Prueba | Resultado |
 |---|---|
-| Acierto cuando la probabilidad es < 0,1 o > 0,9 (42% de las comprobaciones) | 88% |
-| Segmentacion de relatos de Holmes: cortes de escena detectados | 17 de 20 |
-| Pk de segmentacion (menor es mejor) | 0,37 (frente a 0,49 con cortes de tamano fijo) |
-| Latencia en CPU M1 Pro, 4 hilos, 400 tokens (PyTorch) | ~0,15 s |
-| Latencia en CPU M1 Pro, 4 hilos, 1.000 tokens (PyTorch) | ~0,4 s |
-| onnxruntime en ese mismo entorno | ~2x mas lento que PyTorch |
+| Resúmenes aceptados a la primera (OpenStax Psychology 2e, 921 pasajes, 246 resúmenes) | 246 de 246 (Claude Haiku: 53 de 299 respuestas demasiado largas y repetidas) |
+| Preguntas de detalle con recorrido del árbol solo | 59% (árbol resumido por Claude: 63%) |
+| Preguntas de detalle con índice de palabras clave | 100% (ambos) |
+| Preguntas de repaso del libro | 68% (Claude: 64%) |
+| Juicio comparativo de Claude Sonnet sobre 30 prompts | 3,6 de 5 frente a ~4,1 de Claude |
+| Latencia de resumen en M1 Pro (Metal) | ~10 segundos por resumen |
+| Pérdida de validación del fine-tuning | 0,91 |
 
-No se han publicado resultados de benchmarks estandar tipo MMLU, HumanEval o GSM8K, que no aplican a un clasificador de este tipo.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada de pesos: ~600 MB en FP32, ~300 MB en FP16, ~150 MB en INT8 (estimacion a partir de los 150M de parametros; el repo ocupa 1,2 GB e incluye pesos y ONNX).
-- VRAM total en inferencia: por debajo de 1 GB incluso en FP32 con secuencias de hasta 2.048 tokens.
-- GPU: cabe en cualquier GPU consumer con 2 GB o mas (GTX 1050 en adelante, RTX 3060/4090, etc.); no requiere A100 ni H100. El entorno de referencia del autor es una unica L4 para entrenamiento.
-- CPU: disenado para ejecutarse en CPU de portatil; el autor reporta 0,15 s por comprobacion a 400 tokens en un M1 Pro con 4 hilos.
-- Opciones de despliegue: PyTorch con `transformers` (`AutoModelForSequenceClassification`, SDPA) y `onnxruntime` para el archivo `model.onnx`. No aplican llama.cpp, Ollama ni TGI, al no ser un modelo generativo.
-- Latencia y throughput: aproximadamente 0,15 s a 400 tokens y 0,4 s a 1.000 tokens por comprobacion en CPU M1 Pro; onnxruntime resulto unas dos veces mas lento en ese entorno, aunque las salidas coinciden con PyTorch hasta 0,00001.
+- Sumarizador Qwen3.5-4B: 2,8 GB en Q4_K_M; ejecutable en CPU y en Apple Silicon con Metal; se lanza con `llama-server` y contexto de 16.384 tokens.
+- Clasificadores de 150M: caben holgadamente en CPU y en cualquier GPU consumer; no requieren VRAM significativa.
+- Clasificadores de 32M: aún más ligeros, pensados para ejecución en CPU.
+- Despliegue: llama.cpp (formato GGUF) para el sumarizador; ONNX y safetensors para los clasificadores; el repo incluye la etiqueta `endpoints_compatible`.
+- GPU recomendadas: no se especifican en la información disponible; por tamaño, el sumarizador cabe en GPUs consumer con al menos 4-6 GB de VRAM en Q4_K_M.
+- Throughput: no disponible, salvo la latencia de ~10 s por resumen en M1 Pro.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Tipo | Exactitud en la tarea | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| same-subject-r2 | 150M | Cross-encoder especializado | 73% / AUC 0,82 | Apache 2.0 | Pesos en safetensors y ONNX |
-| Alibaba-NLP/gte-reranker-modernbert-base | no disponible en la informacion | Reranker base | no disponible | no disponible en la informacion | Hugging Face |
-| Claude Sonnet (API) | no disponible | LLM generativo generalista | 61% / AUC 0,69 | propietaria | API de pago |
-| Claude Haiku (API) | no disponible | LLM generativo generalista | 52% / AUC 0,57 | propietaria | API de pago |
+| freeideas/UsefulLocalModels (sumarizador) | 4,3B | 16.384 | Resumen con límite de longitud | No comercial (datos de entrenamiento) | Hugging Face |
+| Claude Haiku | no disponible | no disponible | Resumen y generación general | Propietaria | API |
+| Alibaba-NLP/gte-reranker-modernbert-base | no disponible | no disponible | Reranking | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-4B | 4B | no disponible | Generación general | no disponible en la información | Hugging Face |
 
-No se dispone de datos en la informacion proporcionada sobre otros modelos locales especializados en segmentacion tematica o deteccion de continuidad de tema, por lo que la comparacion directa con alternativas equivalentes de codigo abierto queda como no disponible.
+La comparación directa con modelos de la misma categoría (clasificadores pequeños para segmentación y enlazado) no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo funciona en ingles; no hay soporte multilingue documentado.
-- Las probabilidades no estan calibradas: deben compararse entre si, no interpretarse como cuotas exactas de probabilidad.
-- Las reuniones con turnos hablados cortos se segmentan bastante peor que los libros; el rendimiento es desigual por dominio.
-- No se usaron datos de chat ni de correo electronico en el entrenamiento, por lo que ese dominio queda sin cubrir.
-- Un unico valor bajo no implica un corte de tema; la propia model card advierte que hay que aplicar la regla de agrupacion y corte documentada.
-- Riesgo de alucinacion: no aplica generacion de texto, pero si existe riesgo de falsos positivos o negativos en la clasificacion de continuidad tematica.
-- Sesgos: el entrenamiento se apoya en relatos de ficcion de dominio publico y en reuniones AMI/ICSI, ademas de anotaciones y resumenes generados por modelos Claude, lo que puede introducir sesgos de dominio y de estilo.
-- Licencia Apache 2.0, permisiva y compatible con uso comercial, sin las restricciones tipicas de modelos con licencias de comunidad.
-- El modelo publicado es el checkpoint de la epoca 1 (de 2 epocas planificadas), lo que puede dejar margen de mejora respecto al entrenamiento completo.
-- Repositorio sin adopcion aparente (0 descargas, 0 likes) en el momento de la consulta, sin garantia de mantenimiento ni soporte.
+- Solo inglés: todos los submodelos están entrenados y evaluados únicamente en inglés.
+- El sumarizador está entrenado con la formulación de prompt propia de SumEng; otras formulaciones pueden funcionar peor.
+- El sumarizador no se ha probado para resúmenes de resúmenes en un árbol completo.
+- Licencia del sumarizador: aunque el modelo base es Apache 2.0, parte del texto de entrenamiento es solo para uso no comercial, por lo que el modelo debe usarse con fines no comerciales.
+- `same-subject-r3` y `choice-r1` también tienen restricciones por datos de entrenamiento; se recomienda `same-subject-r4`, entrenado solo con texto comercialmente utilizable.
+- `choice-r1` es experimental: mejor que los modelos anteriores en decisiones individuales, pero no mejor en uso real según sus límites declarados.
+- `path-answer-r2` elige cadenas pero no determina bien dónde debe terminar una cadena; debe combinarse con `path-answer-r1` para esa función.
+- Riesgo de alucinación en el sumarizador: es un modelo generativo de 4B y puede introducir detalles no presentes en el texto; los clasificadores, al ser discriminativos, no generan contenido pero pueden equivocarse en los límites.
+- El repositorio mezcla varios submodelos con licencias y datos distintos; conviene revisar cada carpeta antes de desplegar en producción.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/freeideas/UsefulLocalModels
-- Carpeta same-subject-r2 dentro del repositorio: https://huggingface.co/freeideas/UsefulLocalModels/tree/main/same-subject-r2
+- Repositorio en Hugging Face: https://huggingface.co/freeideas/UsefulLocalModels
 - Modelo base: https://huggingface.co/Alibaba-NLP/gte-reranker-modernbert-base
-- Dataset QMSum: https://github.com/Yale-LILY/QMSum
-- Perfil y contacto del autor: https://ordinarydata.com/resume/
-- Descarga via huggingface_hub: `uvx --from huggingface_hub hf download freeideas/UsefulLocalModels --include "same-subject-r2/*" --local-dir models`
+- Modelo base del sumarizador: https://huggingface.co/Qwen/Qwen3.5-4B
+- Página del autor (currículum, demos y contacto): https://ordinarydata.com/resume/

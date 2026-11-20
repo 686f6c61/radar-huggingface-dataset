@@ -2,99 +2,92 @@
 
 ## Resumen
 
-minicpm5-2b-distilled-reasoning-GGUF es una recopilación de cuantizaciones en formato GGUF del modelo jigs97022/minicpm5-2b-distilled-reasoning, publicada por el usuario tinyopsec. Se trata de un modelo de 2.516.756.480 parámetros (aproximadamente 2,52 mil millones) construido sobre la arquitectura del modelo base openbmb/MiniCPM5-2B y afinado mediante QLoRA sobre 10.000 trazas de razonamiento filtradas por calidad, procedentes de un proceso de destilación de tres modelos frontera que el autor identifica como Qwen3.8-Max, GLM-5.2 y Kimi K3. El objetivo declarado es concentrar capacidades de razonamiento explícito (matemáticas, código, puzles lógicos y resolución estructurada de problemas) en un modelo de muy bajo coste computacional.
+MiniCPM5-2B-distilled-reasoning es un modelo de lenguaje de 2.516.756.480 parámetros (aproximadamente 2,5 mil millones) especializado en razonamiento paso a paso, desarrollado por el usuario `jigs97022` y cuantizado a formato GGUF por `tinyopsec`. Se construye sobre la arquitectura `openbmb/MiniCPM5-2B` y se ha afinado mediante QLoRA sobre 10.000 trazas de razonamiento filtradas por calidad, destiladas de tres modelos frontera: Qwen3.8-Max, GLM-5.2 y Kimi K3. La versión publicada en este repositorio es la familia de cuantizaciones GGUF, lista para su uso en llama.cpp, LM Studio y Ollama.
 
-El modelo resulta relevante por su perfil de despliegue: con cuantizaciones Q4_K_M de aproximadamente 1,5 GB y requisitos mínimos de 2 GB de VRAM, es ejecutable en GPU de consumo e incluso en equipos con recursos limitados mediante llama.cpp, LM Studio u Ollama. Esto lo sitúa en la categoría de modelos pequeños orientados a razonamiento con cadena de pensamiento, un nicho donde el coste por token y la posibilidad de ejecución local son factores decisivos.
+El modelo resuelve el problema de disponer de razonamiento explícito tipo chain-of-thought en un tamaño que cabe en hardware de consumo. Con una ventana de contexto máxima de 4.096 tokens y un tamaño de pesos que oscila entre 0,8 GB (Q2_K) y 5,0 GB (F16), es desplegable en GPUs de gama media e incluso en CPU con las cuantizaciones más agresivas. Está orientado a matemáticas, código, puzles lógicos y resolución estructurada de problemas.
 
-La ficha se basa exclusivamente en la información publicada por el autor en Hugging Face. Cabe señalar que la búsqueda web asociada no devolvió ningún resultado relevante sobre el modelo, por lo que no hay verificación independiente de los datos de entrenamiento ni resultados de benchmarks de terceros. La licencia es Apache 2.0, los idiomas soportados son inglés y chino, y el contexto máximo declarado es de 4.096 tokens.
+Su relevancia actual radica en la combinación de tres factores: licencia Apache 2.0 (uso comercial sin restricciones de atribución más allá de la licencia), formato GGUF con once niveles de cuantización y un origen de destilación multi-profesor que busca concentrar capacidades de razonamiento de modelos mucho mayores en un único checkpoint compacto. La contraposición es su limitación idiomática (solo inglés y chino) y un contexto corto para estándares de 2026.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | No disponible en la informacion proporcionada; el modelo deriva de openbmb/MiniCPM5-2B |
-| Parametros totales | 2.516.756.480 (aprox. 2,52 B) |
-| Parametros activos | No aplica (no se describe una arquitectura MoE) |
-| Longitud de contexto | 4.096 tokens (contexto maximo de entrenamiento declarado) |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
-| Idiomas soportados | Ingles (en), chino (zh) |
+| Arquitectura | Transformer (base `openbmb/MiniCPM5-2B`); detalles internos de capas y atención no disponibles |
+| Parámetros totales | 2.516.756.480 |
+| Parámetros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | 4.096 tokens (máximo de entrenamiento) |
+| Tipos de cuantización | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
+| Idiomas soportados | Inglés (en) y chino (zh) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp) |
-| Modelo base | jigs97022/minicpm5-2b-distilled-reasoning |
-| Tamano del repositorio | 21,3 GB (todas las cuantizaciones incluidas) |
-| Fecha de publicacion | 14 de septiembre de 2026 |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-El autor no detalla la arquitectura interna del modelo en la informacion disponible. Lo que si se especifica es la cadena de construccion: se parte de openbmb/MiniCPM5-2B como modelo base y se aplica un ajuste fino con QLoRA de rango 64 y alpha 32 sobre 10.000 muestras de razonamiento. El conjunto de datos utilizado se identifica como r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation, descrito como trazas de razonamiento filtradas por calidad que cubren matematicas, codigo, puzles de logica y resolucion estructurada de problemas. La destilacion se realiza a partir de tres modelos profesores que el autor nombra como Qwen3.8-Max, GLM-5.2 y Kimi K3. El entrenamiento se llevo a cabo en dos GPU Kaggle T4.
+El modelo parte de `openbmb/MiniCPM5-2B`, un transformer denso de aproximadamente 2,5 mil millones de parámetros. Sobre esa base se aplicó un ajuste fino con QLoRA (rango 64, alpha 32) durante el proceso de destilación. No se detallan en la información disponible el número de capas, dimensiones ocultas, mecanismo de atención ni si emplea técnicas como decodificación especulativa o atención lineal; esos datos pertenecen a la arquitectura base y no se han publicado en esta ficha.
 
-El contexto maximo declarado durante el entrenamiento es de 4.096 tokens, coherente con el uso previsto del modelo: sesiones de razonamiento acotadas con cadena de pensamiento explicita, no conversaciones de contexto muy largo. No se menciona en la informacion disponible el uso de RLHF, DPO ni tecnicas adicionales de alineacion mas alla del propio ajuste supervisado sobre trazas destiladas. Tampoco se documentan innovaciones de inferencia como decodificacion especulativa o atencion lineal. El modelo se distribuye unicamente en formato GGUF cuantizado, orientado a ejecucion local con llama.cpp y derivados.
+El entrenamiento consistió en 10.000 muestras de destilación procedentes del dataset `r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation`, con trazas de razonamiento filtradas por calidad que cubren matemáticas, código, puzles lógicos y resolución estructurada de problemas. Los profesores son Qwen3.8-Max, GLM-5.2 y Kimi K3. El cómputo se realizó en dos GPUs Kaggle T4. No se especifica en la información disponible el uso de RLHF o DPO posteriores, ni la composición exacta del corpus más allá de las cuatro categorías mencionadas.
 
 ## Capacidades
 
-- Generacion de texto conversacional, con pipeline declarado de text-generation.
-- Razonamiento explicito paso a paso (chain-of-thought), que es el eje central del ajuste.
-- Resolucion de problemas matematicos con desarrollo intermedio, tal como ilustra el ejemplo de la model card (ecuacion 3x + 7 = 22).
-- Generacion y analisis de codigo, segun la composicion declarada del dataset de destilacion (matematicas, codigo, logica).
-- Puzles logicos y problemas estructurados de varios pasos.
-- Capacidades multilingues limitadas a ingles y chino.
-- No se documenta soporte de tool calling ni function calling en la informacion disponible.
-- No se documenta soporte de agentes, vision, audio ni otras modalidades.
-- No se describe un modo de pensamiento separado configurable mas alla del propio prompt de razonamiento paso a paso.
+- Generación de texto con razonamiento explícito paso a paso (chain-of-thought), orientado a problemas matemáticos y lógicos.
+- Resolución de ecuaciones y problemas aritméticos mostrando el desarrollo intermedio.
+- Generación y explicación de código, incluyendo trazas de razonamiento previas a la solución.
+- Puzles lógicos y problemas de razonamiento estructurado.
+- Conversación multi-turno (etiqueta `conversational` en el repositorio).
+- Compatibilidad con endpoints (`endpoints_compatible`) para despliegue como servicio.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente y razonamiento multi-paso autónomo: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas a inglés y chino.
+- Visión, audio o modo thinking separado: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Tutorizacion matematica local: el modelo puede resolver ecuaciones y problemas aritmeticos mostrando el desarrollo intermedio, lo que permite desplegarlo en un aula o en una aplicacion educativa sin conexion a servicios en la nube, con 1,5 GB de disco en Q4_K_M.
-- Asistente de razonamiento en el borde (edge computing): con cuantizaciones Q2_K de aproximadamente 0,8 GB y 1,5 GB de VRAM minima, cabe en dispositivos con recursos muy limitados donde no es viable ejecutar un modelo de mayor tamano.
-- Generacion de explicaciones paso a paso sobre logica formal: util para generar material didactico o conjuntos de datos de razonamiento en ingles y chino a partir de enunciados breves.
-- Prototipado rapido de pipelines de IA generativa: al ser compatible con llama.cpp, llama-cpp-python, LM Studio y Ollama, sirve como modelo de pruebas para validar una arquitectura de aplicacion antes de escalar a modelos mayores.
-- Preprocesado de codigo en entornos con restricciones de privacidad: al ejecutarse en local, permite analizar fragmentos de codigo o generar explicaciones sin enviar datos a APIs externas.
-- Filtrado y anotacion de datos de razonamiento: el modelo puede utilizarse para generar trazas de cadena de pensamiento que alimenten posteriores procesos de curado o destilacion, dado su bajo coste de inferencia.
-- Chat conversacional bilingue ligero (ingles y chino) integrado en aplicaciones de escritorio mediante Ollama, con contexto acotado a 4.096 tokens.
+- Tutoría matemática interactiva: el modelo puede recibir un problema como "3x + 7 = 22" y devolver el desarrollo paso a paso, lo que lo hace adecuado para asistentes educativos desplegados en local o en servidores modestos gracias a su tamaño de 2,5 B parámetros.
+- Generación de explicaciones de código: dado un fragmento de código, el modelo puede razonar sobre su funcionamiento y producir una explicación estructurada, útil en herramientas de documentación automática que requieran bajo coste de inferencia.
+- Asistente de depuración en entornos con recursos limitados: con la cuantización Q4_K_M (1,5 GB) puede ejecutarse en una GPU de 2 GB de VRAM o en CPU, integrándose en IDE o scripts de CI para explicar errores de tests.
+- Resolución de puzles y problemas de lógica en aplicaciones de ocio o gamificación: la destilación de tres profesores frontera busca mejorar la calidad del razonamiento frente a un fine-tuning monolítico, lo que encaja en apps de retos diarios o juegos de lógica.
+- Procesamiento por lotes de problemas estructurados: con contexto de 4.096 tokens y pesos de 1,5 GB, es viable ejecutar lotes grandes en una sola GPU consumer para clasificar o resolver problemas de dominios acotados.
+- Prototipado rápido de pipelines de razonamiento: al estar disponible en GGUF con once cuantizaciones y soporte en Ollama y LM Studio, permite validar una idea de producto de razonamiento en minutos antes de invertir en modelos mayores.
+- Despliegue en edge o dispositivos con poca memoria: la variante Q2_K (0,8 GB, 1,5 GB de VRAM mínima) permite ejecutar razonamiento básico en entornos muy restringidos, aunque con degradación de calidad esperada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tablas comparativas de MMLU, GSM8K, HumanEval ni metricas equivalentes, y la busqueda web realizada no aporto ningun resultado relevante sobre este modelo.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM minima declarada por el autor segun cuantizacion: F16 8 GB; Q8_0 4 GB; Q4_K_M 2 GB; Q2_K 1,5 GB.
-- Tamano en disco de los ficheros: F16 ~5,0 GB; Q8_0 ~2,7 GB; Q6_K ~2,1 GB; Q5_K_M ~1,8 GB; Q5_K_S ~1,7 GB; Q4_K_M ~1,5 GB; Q4_K_S ~1,4 GB; Q3_K_L ~1,2 GB; Q3_K_M ~1,1 GB; Q3_K_S ~1,0 GB; Q2_K ~0,8 GB.
-- Cabe en GPU de consumo: si, de forma holgada en cuantizaciones Q4 y Q5 en tarjetas con 4-8 GB de VRAM, y en Q2_K incluso en entornos con 1,5 GB de VRAM.
-- GPU profesionales recomendadas: no se especifican en la informacion disponible; el autor indica que el entrenamiento se realizo en dos GPU Kaggle T4, pero no da recomendaciones de inferencia en A100, H100 o similares.
-- Opciones de despliegue documentadas: llama.cpp (llama-cli), llama-cpp-python con n_ctx=4096, LM Studio y Ollama mediante el identificador hf.co/tinyopsec/minicpm5-2b-distilled-reasoning-GGUF:Q4_K_M.
-- Latencia y throughput: no disponibles. La unica referencia de parametros de generacion es la del ejemplo de la model card, con temperature 0,7 y max_tokens 1024.
+- VRAM mínima estimada según el autor: F16 requiere 8 GB, Q8_0 requiere 4 GB, Q4_K_M requiere 2 GB y Q2_K requiere 1,5 GB.
+- GPU recomendadas: no se especifican modelos concretos en la información proporcionada; por tamaño, una RTX 3060 de 12 GB o superior cubre todas las cuantizaciones con holgura, y una RTX 4090 o A100/H100 no aportan ventaja significativa por el limitado tamaño del modelo.
+- Cabe en GPU de consumo: sí, todas las cuantizaciones caben en GPUs consumer de 8 GB o menos; las variantes Q4 y Q2 caben incluso en GPUs de 2 GB.
+- Opciones de despliegue: llama.cpp (`llama-cli`), llama-cpp-python, LM Studio, Ollama (`ollama run hf.co/tinyopsec/minicpm5-2b-distilled-reasoning-GGUF:Q4_K_M`) y endpoints compatibles.
+- Latencia y throughput: no disponibles en la información proporcionada. El entrenamiento se realizó en dos T4 de Kaggle, pero no se publican métricas de inferencia.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos. La busqueda web no devolvio informacion sobre modelos alternativos de la misma categoria y la model card no incluye comparaciones con otros modelos. El unico punto de referencia verificable dentro de la informacion proporcionada es el propio modelo original sin cuantizar y las variantes de cuantizacion del mismo, que se comparan a continuacion en terminos de tamano y calidad declarada:
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato |
+|---|---|---|---|---|---|
+| tinyopsec/minicpm5-2b-distilled-reasoning-GGUF | 2,52 B | 4.096 | en, zh | Apache 2.0 | GGUF |
+| jigs97022/minicpm5-2b-distilled-reasoning (base) | 2,52 B | 4.096 | en, zh | Apache 2.0 | Safetensors |
+| openbmb/MiniCPM5-2B (arquitectura base) | ~2 B | no disponible | no disponible | no disponible | no disponible |
 
-| Variante | Bits | Tamano | VRAM minima | Uso recomendado por el autor |
-|---|---|---|---|---|
-| model_f16.gguf | 16 | ~5,0 GB | 8 GB | Calidad maxima, referencia |
-| model_q8_0.gguf | 8 | ~2,7 GB | 4 GB | Mejor compromiso calidad/tamano |
-| model_q5_k_m.gguf | 5 | ~1,8 GB | No especificado | Recomendado |
-| model_q4_k_m.gguf | 4 | ~1,5 GB | 2 GB | Buen equilibrio |
-| model_q2_k.gguf | 2 | ~0,8 GB | 1,5 GB | Compresion extrema |
+No se dispone de datos de benchmarks ni de modelos comparables de terceros con métricas verificables en la información proporcionada; la comparación se limita a las variantes del propio modelo y a su base arquitectónica.
 
 ## Limitaciones y advertencias
 
-- La calidad del razonamiento puede degradarse por encima de los 4.096 tokens de contexto, segun advierte el propio autor.
-- El ajuste se realizo sobre una submuestra de 10.000 ejemplos; el autor indica que puede existir una variante completa de 52.000 muestras con mejor cobertura de casos limite, por lo que este modelo puede ser mas debil en situaciones poco frecuentes.
-- Idiomas limitados a ingles y chino. No hay soporte declarado de castellano ni de otras lenguas.
-- Fecha de corte de conocimiento aproximada a 2024, heredada del modelo base MiniCPM5-2B.
-- No se documentan evaluaciones de sesgo, toxicidad ni alineacion. Al derivar de un proceso de destilacion sobre modelos profesores no identificados publicamente como versiones estables, el comportamiento en dominios sensibles no esta caracterizado.
-- Riesgo de alucinacion inherente a los modelos de 2 B de parametros, especialmente en tareas de conocimiento factual y en cadenas de razonamiento largas.
-- Las cuantizaciones de 2 y 3 bits pueden degradar de forma notable la coherencia del razonamiento; el propio autor recomienda Q5_K_M como opcion equilibrada.
-- La licencia declarada es Apache 2.0, lo que permite uso comercial, pero conviene verificar las condiciones del modelo base openbmb/MiniCPM5-2B y del dataset de destilacion, ya que la informacion disponible no detalla sus terminos.
-- No se documenta soporte de tool calling ni de agentes, por lo que no es adecuado para pipelines que requieran function calling sin trabajo adicional de integracion.
-- El repositorio no registra descargas ni valoraciones en el momento de la consulta, y no se han encontrado referencias externas que validen las afirmaciones de la model card.
+- La calidad del razonamiento puede degradarse más allá de los 4.096 tokens de contexto; no es adecuado para tareas que requieran ventanas largas.
+- Entrenado sobre un subconjunto de 10.000 muestras; el autor advierte que los casos límite pueden ser más débiles que la variante completa de 52.000 muestras.
+- Solo soporta inglés y chino; no hay capacidades en castellano ni en otros idiomas.
+- Corte de conocimiento aproximado en 2024, heredado de la base MiniCPM5-2B.
+- La destilación desde tres profesores frontera no garantiza que el modelo reproduzca fielmente sus capacidades; es esperable una brecha de rendimiento frente a los profesores, no cuantificada en la información disponible.
+- Riesgo de alucinación inherente a modelos de 2,5 B parámetros, especialmente en dominios fuera de matemáticas, código y lógica.
+- No se documentan sesgos conocidos ni evaluaciones de seguridad en la información proporcionada.
+- Las cuantizaciones Q2_K y Q3 pueden degradar de forma notable la coherencia del razonamiento; el autor recomienda Q5_K_M como opción equilibrada.
+- Licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones de la arquitectura base `openbmb/MiniCPM5-2B` y del dataset de destilación, cuyas licencias no se detallan en esta ficha.
 
 ## Enlaces
 
-- Repositorio Hugging Face del modelo: https://huggingface.co/tinyopsec/minicpm5-2b-distilled-reasoning-GGUF
-- Modelo original sin cuantizar: https://huggingface.co/jigs97022/minicpm5-2b-distilled-reasoning
-- Dataset de destilacion citado: https://huggingface.co/datasets/r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation
-- Modelo base de la arquitectura: openbmb/MiniCPM5-2B (referenciado en la model card; no se proporciona URL directa en la informacion disponible)
-- Paper, blog o demo oficial: no disponibles en la informacion proporcionada
-- Resultados de la busqueda web: no se encontro ningun resultado relevante sobre este modelo
+- Repositorio Hugging Face (GGUF): https://huggingface.co/tinyopsec/minicpm5-2b-distilled-reasoning-GGUF
+- Modelo base de la destilación: https://huggingface.co/jigs97022/minicpm5-2b-distilled-reasoning
+- Arquitectura base: `openbmb/MiniCPM5-2B` (referenciada en la model card; URL no proporcionada en la información disponible)
+- Dataset de destilación: `r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation` (referenciado en la model card; URL no proporcionada en la información disponible)
+- Papers, blogs, repositorios o demos adicionales: no disponibles en la información proporcionada.

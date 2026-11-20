@@ -59,32 +59,307 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
-  "sources": [
+  "benchmarks": [
     {
-      "title": "UltraBERT - a dmis-lab Collection - Hugging Face",
-      "url": "https://huggingface.co/collections/dmis-lab/ultrabert",
-      "snippet": "UltraBERT: Beyond the Limit of BERT Pre-Training. Pre-trained 150M/380M encoders and a text embedding model, English, 32K context."
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 6.655
     },
     {
-      "title": "UltraBERT: Beyond the Limit of BERT Pre-Training - OpenReview",
-      "url": "https://openreview.net/forum?id=5nZYvSLKhV",
-      "snippet": "Recent bidirectional encoders have been modernized with innovations from causal large language models (LLMs). However, the pretraining recipe itself remains inherited from small-scale conventions, leaving encoders underoptimized, with no single model performing competitively across both classification and retrieval tasks. In this work, we investigate how far encoder performance can be pushed ..."
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 11.92
     },
     {
-      "title": "dmis-lab (Data Mining and Information Systems Lab)",
-      "url": "https://huggingface.co/dmis-lab",
-      "snippet": "User profile of Data Mining and Information Systems Lab on Hugging Face"
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 13.881
     },
     {
-      "title": "Pre-trained Models | dmis-lab/biobert | DeepWiki",
-      "url": "https://deepwiki.com/dmis-lab/biobert/1.2-pre-trained-models",
-      "snippet": "This document describes the available pre-trained BioBERT model versions, their characteristics, file structure, and integration into the fine-tuning pipeline. These models serve as the foundation for all downstream biomedical NLP tasks in the BioBERT system."
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 16.149
     },
     {
-      "title": "DMIS Laboratory - Korea University · GitHub",
-      "url": "https://github.com/dmis-lab",
-      "snippet": "Data Mining & Information Systems Laboratory @ Korea University - DMIS Laboratory - Korea University"
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 18.048
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 21.94
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 25.838
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 6.655
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 10.538
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 11.621
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 12.545
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 13.067
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 13.569
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 13.699
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 6.655
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 15.956
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 20.734
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 27.816
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 35.324
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 56.826
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 88.481
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 6.655
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 6.655
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 5.319
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 4.147
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 2.782
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 1.766
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 0.568
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 0.088
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 6.6553
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 10.5375
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 11.6212
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 12.5453
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 13.0665
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 13.5688
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 13.6991
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 6.655
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 15.956
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 20.734
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 27.816
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 35.324
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 56.826
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ARCChallenge",
+      "metric": null,
+      "value": 88.481
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AlphaNLI",
+      "metric": null,
+      "value": 23.433
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AlphaNLI",
+      "metric": null,
+      "value": 31.969
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AlphaNLI",
+      "metric": null,
+      "value": 33.933
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AlphaNLI",
+      "metric": null,
+      "value": 36.088
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AlphaNLI",
+      "metric": null,
+      "value": 37.626
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AlphaNLI",
+      "metric": null,
+      "value": 39.847
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AlphaNLI",
+      "metric": null,
+      "value": 41.75
     }
-  ]
+  ],
+  "sources": []
 }

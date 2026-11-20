@@ -2,74 +2,99 @@
 
 ## Resumen
 
-El repositorio `software-mansion/react-native-executorch-fcn` aloja modelos de segmentación semántica basados en FCN (Fully Convolutional Network) de PyTorch, exportados al formato `.pte` para su ejecución en el runtime ExecuTorch de Meta. Estos modelos están pensados para integrarse en aplicaciones React Native mediante la biblioteca `react-native-executorch`, que permite ejecutar modelos de IA localmente en dispositivos móviles.
+El repositorio `software-mansion/react-native-executorch-fcn` no contiene un modelo de lenguaje, sino una coleccion de artefactos del modelo de segmentacion semantica de imagenes FCN (Fully Convolutional Network), exportados al formato `.pte` de ExecuTorch para su ejecucion en dispositivo dentro de la libreria React Native ExecuTorch. El modelo original procede de `torchvision` (variantes FCN con backbone ResNet-50 y ResNet-101, preentrenadas en COCO) y aqui se distribuye ya compilado para distintos backends de aceleracion: Core ML, XNNPACK y QNN (Hexagon NPU de Qualcomm).
 
-El modelo resuelve el problema de la segmentación semántica en tiempo real en entornos con recursos limitados, como teléfonos y tablets, sin necesidad de conexión a internet. Su relevancia radica en que facilita la implementación de visión por computadora en aplicaciones móvidas con privacidad y latencia reducida. El repositorio incluye los pesos en formato `.pte` (ExecuTorch) y está licenciado bajo MIT.
+La relevancia de este repositorio es practica: permite incorporar segmentacion semantica de 21 clases (formato Pascal VOC) en aplicaciones moviles React Native sin depender de la nube, con variantes que van desde 34 MB (ResNet-50 int8 sobre XNNPACK) hasta 198 MB (ResNet-101 fp32). Al estar empaquetado como programas ExecuTorch, el modelo se ejecuta en el propio dispositivo (CPU, GPU Apple o NPU Qualcomm), lo que reduce latencia y evita enviar imagenes a servidores externos.
 
-## Especificaciones técnicas
+No se trata de un modelo generativo ni conversacional: es una red convolucional de segmentacion densa por pixel. Su utilidad principal es la vision por computador embebida en movil.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | FCN (Fully Convolutional Network) - variante de PyTorch |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no aplica (modelo de visión) |
-| Tipos de cuantizacion | no especificado (exportado para xnnpack) |
-| Idiomas soportados | no aplica (modelo de visión) |
-| Licencia | MIT |
-| Formato de pesos | `.pte` (ExecuTorch) |
+| Arquitectura | FCN (Fully Convolutional Network) con backbone ResNet-50 o ResNet-101 |
+| Parametros totales | no disponible (no se publican recuentos en la model card) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de vision, no de texto) |
+| Tipos de cuantizacion | fp16 (Core ML), fp32 (XNNPACK), int8 (XNNPACK), a8w8 (QNN) |
+| Idiomas soportados | no disponible (modelo de vision; sin capacidades linguisticas) |
+| Licencia | BSD-3-Clause |
+| Formato de pesos | ExecuTorch `.pte` (programas compilados por backend) |
+| Entrada | imagenes RGB de 520x520 (deducido de la forma de salida) |
+| Salida | logits `(1, 21, 520, 520)` en Core ML/XNNPACK; indices de clase `(1, 520, 520)` int32 en QNN |
+| Clases | 21 (formato de segmentacion Pascal VOC, segun el modelo upstream de torchvision) |
+| Tamano del repo | 2,8 GB (incluye todas las variantes de ambos backbones y backends) |
+| Version de runtime | ExecuTorch v1.4.1 (sin garantia de compatibilidad hacia atras) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de una FCN (Fully Convolutional Network) implementada en PyTorch, específicamente el modelo `torchvision.models.fcn`. Estas redes usan una base convolucional (típicamente ResNet) como extractor de características y una cabeza deconvoluciones transpuestas para producir una máscara de segmentación píxel a píxel. No se proporcionan detalles sobre el dataset de entrenamiento, el número de tokens (no aplica) ni el proceso de optimización (RLHF, DPO, etc.) porque no es un modelo generativo.
+La arquitectura subyacente es la FCN clasica de Long et al., implementada en `torchvision.models.segmentation.fcn_resnet50` y `fcn_resnet101`. Se trata de una red totalmente convolucional que sustituye las capas densas de un clasificador ResNet por cabezas convolucionales y conexiones de salto (skip connections) que combinan caracteristicas de distintas profundidades para producir una mascara de segmentacion densa a resolucion de pixel. El backbone es ResNet-50 o ResNet-101, preentrenado en ImageNet y afinado para segmentacion semantica.
 
-La innovación técnica clave es la exportación a formato `.pte` con el backend `xnnpack`, que optimiza el modelo para ejecución en dispositivos móviles con CPU. No hay información sobre el número exacto de parámetros ni el backbone (ResNet50, ResNet101, etc.) en la documentación proporcionada.
+No se detalla en la model card el proceso de entrenamiento (numero de tokens o imagenes, composicion del dataset, tecnicas de aumento de datos ni si hubo refinamiento especifico). El modelo upstream de torchvision se entrena sobre COCO con las 21 clases de Pascal VOC, pero conviene verificar esta afirmacion en la documentacion oficial de torchvision antes de asumirla. Lo que si documenta el repositorio es el proceso de exportacion: cada variante se compila a ExecuTorch para un backend concreto (Core ML para Apple, XNNPACK para CPU generica, QNN para Hexagon NPU) y una precision concreta. Las variantes QNN se compilan por version de Hexagon (v69, v73, v75, v79, v81), de modo que el runtime selecciona el binario que corresponde al SoC del dispositivo.
+
+Un detalle tecnico relevante: las variantes QNN no devuelven logits sino directamente el indice de clase por pixel con forma `(1, 520, 520)` int32, lo que evita el postprocesado de argmax en el dispositivo. El backend MLX se intento exportar pero no se publico; el repositorio incluye un `NOTES.md` que documenta el fallo.
 
 ## Capacidades
 
-- Segmentación semántica: clasifica cada píxel de una imagen en categorías predefinidas (por ejemplo, objetos, personas, carreteras, etc.).
-- Ejecución on-device: diseñado para correr en dispositivos móviles sin conexión a servidores externos, gracias a la optimización de ExecuTorch.
-- Integración con React Native: se usa a través de la biblioteca `react-native-executorch`, que ofrece una API declarativa para cargar y ejecutar modelos.
-- No es un modelo de lenguaje: no tiene capacidades de generación de texto, tool calling, agentes ni razonamiento multimodal.
+- Segmentacion semantica densa de imagenes: asigna una clase a cada pixel de una imagen de entrada de 520x520.
+- 21 clases de segmentacion en el esquema Pascal VOC (fondo, persona, vehiculo, animal, mobiliario, etc., segun el modelo upstream de torchvision).
+- Inferencia en dispositivo: ejecucion local en movil sin conexion a red.
+- Aceleracion por backend: Core ML (GPU/ANE en Apple), XNNPACK (CPU) y QNN (NPU Hexagon en Qualcomm Snapdragon).
+- Cuantizacion int8 y a8w8 para reducir huella de memoria y acelerar la inferencia en hardware limitado.
+- No soporta generacion de texto, razonamiento, codigo, matematicas, tool calling, agentes ni capacidades multilingues.
+- No dispone de modo "thinking", vision generativa, audio ni ninguna capacidad conversacional.
 
 ## Casos de uso
 
-- Análisis de imágenes en tiempo real para aplicaciones de realidad aumentada: el modelo puede segmentar el entorno para superponer objetos virtuales en la cámara del dispositivo, aprovechando la baja latencia de ejecución local.
-- Accesibilidad para personas con discapacidad visual: una aplicación móvil puede usar la segmentación para identificar obstáculos en el entorno y proporcionar feedback auditivo, funcionando sin conexión.
-- Agricultura de precisión: análisis de cultivos mediante imágenes captadas con el móvil para detectar enfermedades o malas hierbas, segmentando las zonas afectadas.
-- Control de calidad industrial: inspección visual de piezas en línea de montaje, donde la segmentación permite detectar defectos en tiempo real sin depender de un servidor centralizado.
-- Aplicaciones de realidad aumentada: separación del fondo y el primer plano para superponer contenido digital de forma precisa, mejorando la experiencia de usuario en entornos móvidos.
-- Diagnóstico médico básico: segmentación de imágenes de diagnóstico (por ejemplo, radiografías) para resaltar regiones de interés, con la ventaja de que el modelo se ejecuta localmente, respetando la privacidad de los datos del paciente.
+- Segmentacion de personas y objetos en apps moviles de fotografia: el modelo clasifica cada pixel de una imagen de 520x520 y permite aplicar mascaras para recortes, fondos virtuales o efectos selectivos sin enviar la imagen a un servidor.
+- Realidad aumentada en React Native: usar la mascara de segmentacion para superponer elementos graficos solo sobre las regiones de interes (por ejemplo, sustituir el fondo de una videollamada o resaltar objetos detectados).
+- Accesibilidad: describir o resaltar regiones de una imagen capturada por la camara del movil para usuarios con discapacidad visual, aprovechando la inferencia local y la baja latencia.
+- Procesamiento de documentos escaneados: segmentar regiones (texto, tablas, imagenes) en capturas moviles antes de aplicar OCR, con la ventaja de que el modelo corre en el dispositivo y preserva la privacidad.
+- Automatizacion agricola o industrial en campo: clasificar suelo, vegetacion y objetos en imagenes capturadas por drones o camaras embebidas, usando la variante QNN para aprovechar la NPU de un Snapdragon.
+- Control de calidad en fabricacion: detectar y delimitar defectos o piezas en imagenes de linea de produccion con un modelo int8 de 34 MB que cabe en dispositivos de bajo coste.
+- Demos y prototipos de vision en React Native: integrar rapidamente un pipeline de segmentacion en una app movil usando la constante del registro de modelos de React Native ExecuTorch, sin gestionar la exportacion manualmente.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio no incluye métricas de precisión (mIoU, pixel accuracy) ni comparativas con otros modelos de segmentación.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de mIoU, latencia ni throughput para ninguna de las variantes.
 
 ## Requisitos de hardware
 
-- El modelo está diseñado para ejecutarse en dispositivos móviles con el runtime ExecuTorch, por lo que los requisitos de hardware son los de un smartphone o tablet moderno con soporte de aceleración por hardware (CPU o GPU).
-- No se especifica el consumo de VRAM, pero al ser un modelo de visión de tamaño moderado (1.7 GB de repo) se espera que quepa en la memoria de dispositivos con al menos 4 GB de RAM.
-- No se recomienda su uso en GPUs de escritorio para producción, ya que está optimizado para el despliegue móvil.
-- Opciones de despliegue: la biblioteca `react-native-executorch` gestiona la carga y ejecución del modelo en React Native; también puede usarse directamente con ExecuTorch en otros entornos.
+- VRAM estimada: no aplica en el sentido tradicional; el modelo se ejecuta en memoria unificada del dispositivo movil. El tamano en disco de cada variante orienta el consumo de memoria: 34 MB (ResNet-50 int8 XNNPACK), 52,5 MB (ResNet-101 int8 XNNPACK), 63,1 MB (ResNet-50 fp16 Core ML), 99,6 MB (ResNet-101 fp16 Core ML), 126 MB (ResNet-50 fp32 XNNPACK), 198 MB (ResNet-101 fp32 XNNPACK).
+- GPU recomendadas: no aplica en el sentido de GPU de escritorio; el modelo esta pensado para moviles. En Apple se usa Core ML (GPU/ANE); en Qualcomm se usa la NPU Hexagon via QNN.
+- Cabe en cualquier movil moderno: las variantes int8 de XNNPACK (34-52,5 MB) son las mas ligeras y aptas para dispositivos de gama media; las variantes QNN requieren un SoC Snapdragon con Hexagon v69 o superior (Snapdragon 8 Gen 1 en adelante).
+- Opciones de despliegue: React Native ExecuTorch (libreria oficial), o un runtime ExecuTorch propio (version v1.4.1) cargando directamente los `.pte`.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. No se han identificado modelos comparables en la información proporcionada, ya que se trata de un repositorio específico de modelos exportados para una plataforma concreta (React Native ExecuTorch) y no se listan alternativas de la misma categoría.
+| Modelo | Arquitectura | Parametros | Contexto/entrada | Licencia | Formato |
+|---|---|---|---|---|---|
+| fcn (este repo) | FCN + ResNet-50/101 | no disponible | 520x520 | BSD-3-Clause | ExecuTorch `.pte` |
+| DeepLabV3 (torchvision) | DeepLabV3 + ResNet | no disponible | variable | BSD-3-Clause | PyTorch, exportable |
+| LR-ASPP / MobileNetV3 (torchvision) | LR-ASPP + MobileNetV3 | no disponible | variable | BSD-3-Clause | PyTorch, exportable |
+| Segment Anything (SAM) | ViT + prompt encoder | 91M-636M (segun variante) | 1024x1024 | Apache 2.0 (variantes) | PyTorch, ONNX |
+
+La comparativa se limita a modelos de segmentacion de la misma categoria. No se dispone de datos de rendimiento (mIoU, latencia) para este repositorio, por lo que la comparacion cuantitativa no es posible con la informacion proporcionada. La ventaja diferencial de este repositorio frente a las alternativas de torchvision es el empaquetado listo para ExecuTorch con variantes por backend y precision.
 
 ## Limitaciones y advertencias
 
-- La model card no especifica el dataset de entrenamiento ni las categorías de segmentación, por lo que no se conoce el alcance de los objetos que puede detectar.
-- El modelo está exportado para el runtime ExecuTorch 1.1.0 y no se garantiza compatibilidad con versiones anteriores; esto puede causar problemas si se usa con versiones de ExecuTorch más antiguas.
-- Al ser un modelo de visión, no tiene capacidad de procesamiento de lenguaje, por lo que no es adecuado para tareas de texto.
-- La licencia MIT permite uso comercial, pero el usuario debe verificar que los pesos del modelo (si provienen de un dataset con restricciones) no estén sujetos a condiciones adicionales.
-- No se ha publicado información sobre sesgos o alucinaciones, pero en modelos de segmentación semántica es posible que haya errores en condiciones de iluminación, oclusiones o categorías poco representadas.
-- El tamaño del repositorio (1.7 GB) puede ser pesado para la descarga en dispositivos con conexión limitada; se recomienda gestionar la descarga bajo demanda.
+- Modelo de vision, no de lenguaje: no genera texto, no razona y no soporta conversacion ni tool calling.
+- Resolucion de entrada fija de 520x520: imagenes de otra resolucion deben redimensionarse, lo que puede degradar la precision en objetos pequenos.
+- Esquema de 21 clases cerrado (Pascal VOC): no reconoce clases fuera de ese conjunto; objetos no contemplados se asignaran a la clase mas cercana o al fondo.
+- Compatibilidad estricta con ExecuTorch v1.4.1: versiones anteriores del runtime pueden fallar al cargar los `.pte`; no hay garantia de compatibilidad hacia adelante.
+- Las variantes QNN estan ligadas a una version concreta de Hexagon; usar el archivo equivocado para el SoC del dispositivo provocara fallos de carga.
+- El backend MLX no se publico; no hay variante para ese runtime.
+- Riesgo de sesgo heredado del dataset de entrenamiento del modelo upstream (COCO/VOC): el rendimiento puede ser desigual entre categorias y contextos geograficos o culturales.
+- Riesgo de alucinacion en el sentido de falsos positivos de segmentacion: regiones ambiguas pueden clasificarse de forma incorrecta sin indicacion de confianza en las variantes QNN (que devuelven indices de clase, no probabilidades).
+- Licencia BSD-3-Clause: permite uso comercial con atribucion y sin endoso; conviene revisar los terminos del modelo upstream de torchvision y del dataset de entrenamiento antes de un despliegue comercial.
+- No se documentan metricas de calidad (mIoU) ni latencia, por lo que la idoneidad para produccion debe validarse empiricamente en el dispositivo objetivo.
 
 ## Enlaces
 
-- Repositorio de Hugging Face: https://huggingface.co/software-mansion/react-native-executorch-fcn
-- GitHub de React Native ExecuTorch: https://github.com/software-mansion/react-native-executorch
-- Documentación de React Native ExecuTorch: https://docs.swmansion.com/react-native-executorch/docs/fundamentals/getting-started
-- Página oficial de React Native ExecuTorch: https://executorch.swmansion.com/
-- Paquete npm de react-native-executorch: https://www.npmjs.com/package/react-native-executorch
-- Documentación oficial de ExecuTorch: https://pytorch.org/executorch/stable/index.html
+- Repositorio en Hugging Face: https://huggingface.co/software-mansion/react-native-executorch-fcn
+- Modelo upstream FCN (torchvision): https://docs.pytorch.org/vision/main/models/fcn.html
+- Libreria React Native ExecuTorch (npm): https://www.npmjs.com/package/react-native-executorch
+- Documentacion de React Native ExecuTorch (descarga de modelos): https://docs.swmansion.com/react-native-executorch/docs/fundamentals/downloading-models
+- Nota de compatibilidad de ExecuTorch: https://github.com/pytorch/executorch/blob/main/runtime/COMPATIBILITY.md
+- Nota sobre el backend MLX no publicado: https://huggingface.co/software-mansion/react-native-executorch-fcn/blob/main/mlx/NOTES.md

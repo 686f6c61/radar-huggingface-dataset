@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "YourHighnessLA (Sean YH) - Hugging Face",
-      "url": "https://huggingface.co/YourHighnessLA",
-      "snippet": "AI & ML interests ... Recent Activity updated a model 22 days ago ... published a model 22 days ago"
-    },
-    {
-      "title": "YourHighnessLA (Sean YH) - Hugging Face",
-      "url": "https://huggingface.co/YourHighnessLA/models",
-      "snippet": "YourHighnessLA&#x27;s models1 Sort: Recently updated YourHighnessLA/Tess-4-27B-EAGLE3-GGUF 0.6B•Updated 14 days ago• 710 • 2"
-    },
-    {
-      "title": "Qwen3.8 27B Reasoning Benchmarks: Off vs Low vs Medium vs Xhigh",
-      "url": "https://kaitchup.substack.com/p/qwen38-27b-reasoning-benchmarks-off",
-      "snippet": "I benchmark Qwen3.8 27B with thinking off, low, medium, and xhigh to compare accuracy, token usage, and the best reasoning-effort trade-off."
-    },
-    {
-      "title": "Hemmingway-1: The 27B Open Model Trained to Write Like a Person",
-      "url": "https://www.mindstudio.ai/blog/hemmingway-1-writing-model",
-      "snippet": "Hemmingway-1 is a 27B Apache-2.0 model tuned for everyday writing that claims to beat GPT-6 Astra and Kimi K3 on human-likeness tests."
-    },
-    {
-      "title": "Best Self-Hosted LLM Leaderboard 2026 | Open-Weight Model Rankings for ...",
-      "url": "https://onyx.app/self-hosted-llm-leaderboard",
-      "snippet": "The definitive self-hosted LLM leaderboard — ranking the best open-weight models for enterprise self-hosting across quality, speed, hardware requirements, and cost. Compare Llama, DeepSeek, Qwen, Mistral, and more."
-    }
-  ]
+  "sources": []
 }

@@ -2,100 +2,97 @@
 
 ## Resumen
 
-Kanana-2-v-decide-3b-2611 es un modelo de decisión desarrollado por Kakao Corp. que responde preguntas tipadas sobre un estado de entrada en lugar de generar texto libre. Dado un input (texto, JSON, array o historial de chat, opcionalmente con imágenes), el modelo devuelve una distribución de probabilidad sobre las respuestas candidatas para preguntas de tipo elección múltiple (choice), sí/no (noul) y escala ordenada (score). No es un modelo generativo: es un clasificador multimodal de propósito general con salida calibrada.
+Kanana-2-v-decide-3b-2611 es un modelo de decisión multimodal desarrollado por Kakao Corp. para coreano e inglés. A diferencia de un modelo generativo convencional, no produce texto: recibe un *estado* (texto plano, objeto o array JSON, o historial de chat, opcionalmente con imágenes) y un conjunto de preguntas tipadas, y devuelve una distribución de probabilidad calibrada sobre las respuestas candidatas. Los tres tipos de pregunta soportados son `choice` (selección entre opciones), `noul` (sí/no con probabilidad) y `score` (escala ordenada con nivel esperado).
 
-El modelo se construye sobre Kanana-2-V 3B, que combina el modelo de lenguaje Kanana-2-3B (3,18B parámetros) con el codificador visual Kanana (0,49B parámetros), sumando 3,67B parámetros totales. Cada pregunta se codifica junto con el estado en un embedding de 2.560 dimensiones, y cada respuesta candidata en otro; una softmax sobre las similitudes coseno entre ambos produce la distribución de respuestas. Admite hasta 10 imágenes y 20.480 tokens de entrada por petición.
+El modelo se construye sobre Kanana-2-v-3b, que combina el modelo de lenguaje Kanana-2-3b (3,18B parámetros) con el codificador visual Kanana (0,49B), sumando 3,67B parámetros totales. Cada pregunta se codifica junto con el estado en un embedding de 2.560 dimensiones, y cada respuesta candidata en otro; la distribución final se obtiene mediante softmax sobre las similitudes coseno entre ambos embeddings. Admite hasta 10 imágenes y 20.480 tokens de entrada por petición.
 
-Su relevancia actual radica en que cubre tareas de clasificación y enrutamiento con un único modelo multimodal que no requiere prompting generativo ni parseo de salidas, con resultados que lideran los benchmarks públicos de decisión (Decision Index y Decision Index Vision) y un rendimiento destacado en coreano (72,50 en Kanana Decision Bench, 18 puntos por encima del siguiente modelo comparado).
+Su relevancia actual reside en el enfoque *system-one*: sustituye la generación autoregresiva por una clasificación calibrada de baja latencia, lo que resulta adecuado para enrutamiento, moderación, etiquetado y decisión automatizada en pipelines donde se necesita una probabilidad fiable en lugar de una respuesta textual. Lidera el promedio público (61,23) en Decision Index y Decision Index Vision entre los modelos comparados en su model card.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (codificador visual Kanana + modelo de lenguaje Kanana-2-3B) con cabecera de embedding para decisión |
-| Parámetros totales | 3.665.430.640 (3,67B: 0,49B visión + 3,18B lenguaje) |
-| Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | Hasta 20.480 tokens de entrada; hasta 10 imágenes por petición |
-| Tipos de cuantización | No disponible |
-| Idiomas soportados | Coreano (ko), inglés (en) |
-| Licencia | Kanana Open License (license: other) |
-| Formato de pesos | Safetensors (requiere `trust_remote_code=True`) |
-| Dimensión de embedding | 2.560 |
-| Tipos de pregunta | choice (elección múltiple), noul (sí/no), score (escala ordenada) |
-| Pipeline | zero-shot-classification / decision |
+| Arquitectura | Vision-language con codificador de preguntas/respuestas y similitud coseno; basada en Kanana-2-v-3b (LM Kanana-2-3b + codificador visual Kanana) |
+| Parametros totales | 3.665.430.640 (3,67B): 0,49B vision encoder + 3,18B language model |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | hasta 20.480 tokens de entrada; hasta 10 imágenes por petición |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; la model card no detalla cuantizaciones oficiales) |
+| Idiomas soportados | coreano (ko), inglés (en) |
+| Licencia | kanana-open-license (license: other) |
+| Formato de pesos | safetensors (repo de 7,3 GB), con `custom_code` y `trust_remote_code=True` |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue una arquitectura de dos torres para decisión: cada pregunta se codifica junto con el estado de entrada en un único embedding, y cada respuesta candidata se codifica en otro embedding independiente. La distribución de respuesta se obtiene aplicando una softmax sobre las similitudes coseno entre el embedding de la pregunta-estado y los embeddings de las respuestas candidatas. Esta formulación permite devolver una distribución completa de probabilidad sobre cualquier conjunto de opciones, con un número arbitrario de preguntas por petición, sin generar texto.
+El modelo parte de Kanana-2-v-3b, un vision-language que empareja el LM Kanana-2-3b con el codificador visual Kanana. Sobre esa base, la cabeza de decisión no genera tokens: codifica conjuntamente el estado y la pregunta en un embedding de 2.560 dimensiones, codifica cada respuesta candidata en otro embedding y aplica un softmax sobre las similitudes coseno para producir la distribución de respuesta. Esto permite resolver cualquier número de preguntas por petición en una sola pasada y devolver probabilidades calibradas en lugar de texto.
 
-La base es el modelo Kanana-2-V 3B, que empareja el modelo de lenguaje Kanana-2-3B con el codificador visual Kanana. El modelo acepta texto, objetos o arrays JSON, e historiales de chat, con imágenes adjuntas en múltiples formatos (rutas locales, URLs, URIs base64 o imágenes PIL). No se dispone de información detallada sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO en la información proporcionada. El modelo requiere código personalizado (`custom_code`) y está etiquetado como "system-one" y "decision-model".
+La model card no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO. Sí se declara explícitamente la calibración como propiedad del modelo y la orientación *system-one* (decisión rápida en una pasada), además de soporte multimodal con hasta 10 imágenes. La evaluación incluye un conjunto interno coreano (Kanana Decision Bench, 15.909 preguntas de texto) y dos benchmarks públicos (Decision Index 0.4.1 y Decision Index Vision 0.4.1).
 
 ## Capacidades
 
-- Clasificación zero-shot con opciones definidas en tiempo de inferencia (tipo choice): selecciona una opción entre varias.
-- Respuestas booleanas con probabilidad calibrada (tipo noul): devuelve la probabilidad de "sí" en el rango 0-1.
-- Puntuación en escalas ordenadas (tipo score): devuelve el nivel esperado sobre una escala definida por el usuario.
-- Múltiples preguntas por petición, cada una con su propio tipo y criterios.
-- Entrada multimodal: texto, JSON, arrays, historial de chat e imágenes (hasta 10 por petición).
-- Contexto largo de hasta 20.480 tokens.
-- Salida como distribución de probabilidad completa sobre las respuestas candidatas, sin generación de texto ni parseo posterior.
-- Soporte multilingüe limitado a coreano e inglés.
-- Despliegue mediante `transformers` (AutoModel, pipeline "decision") y servidor HTTP compatible con System One API (`POST /v1/systemone`, `GET /v1/models`, `GET /health`).
+- Decisión tipada con distribución de probabilidad: preguntas `choice` (selección entre criterios), `noul` (probabilidad de sí, 0-1) y `score` (nivel esperado sobre escala ordenada).
+- Múltiples preguntas por petición, resueltas en una sola pasada sobre el mismo estado.
+- Entrada multimodal: texto, JSON (objeto o array) o historial de chat, con hasta 10 imágenes adjuntas (rutas locales, URLs, data URIs base64 o imágenes PIL).
+- Contexto de hasta 20.480 tokens.
+- Capacidades multilingües limitadas a coreano e inglés.
+- Salida calibrada sin generación de texto, lo que evita alucinación textual y reduce latencia frente a esquemas generativos.
+- Integración con `transformers` mediante `AutoModel` con `trust_remote_code=True`, pipeline `decision` y servidor HTTP propio (System One API: `POST /v1/systemone`, `GET /v1/models`, `GET /health`).
+- No soporta tool calling ni function calling (no es un modelo generativo ni de agentes).
+- No soporta razonamiento multi-paso explícito; el paradigma es system-one de decisión directa.
 
 ## Casos de uso
 
-- Enrutamiento y clasificación de tickets de atención al cliente: el modelo clasifica la consulta en categorías (entrega, cambio, pago) y responde preguntas booleanas asociadas (por ejemplo, si el artículo está dañado) en una sola llamada, devolviendo probabilidades que permiten umbrales de confianza.
-- Moderación y triaje de contenido multimodal: con hasta 10 imágenes por petición, puede evaluar si una imagen adjunta cumple políticas o clasificar su temática junto con el texto asociado.
-- Análisis de sentimiento y satisfacción: usando preguntas de tipo score sobre una escala definida (negativo, neutro, positivo), devuelve el nivel esperado sin necesidad de generar ni parsear texto.
-- Extracción de señales estructuradas de JSON: al aceptar objetos y arrays JSON como estado, puede puntuar registros o clasificar campos dentro de pipelines de datos sin transformación previa.
-- Evaluación de historiales de conversación: acepta chat messages como estado, lo que permite clasificar intenciones o detectar insatisfacción en conversaciones multi-turno dentro de sistemas de análisis de calidad.
-- Enrutamiento en agentes y sistemas de decisión: al devolver distribuciones calibradas, se integra como componente de decisión (system-one) en arquitecturas de agentes que necesitan elegir acciones o ramas con probabilidades, sin coste de generación.
-- Filtrado y priorización en coreano: con 72,50 en Kanana Decision Bench, es adecuado para clasificación de consultas y documentos en coreano en producción, donde supera ampliamente a los modelos comparados.
+- Enrutamiento de tickets de soporte: clasificar la categoría de una consulta (`choice`) y determinar simultáneamente si requiere reembolso o sustitución (`noul`), con probabilidades que permiten umbralizar y derivar a revisión humana cuando la confianza es baja.
+- Moderación y triaje de contenido: evaluar mensajes de usuario o imágenes adjuntas con preguntas sí/no y escalas de gravedad, aprovechando la calibración para fijar umbrales operativos.
+- Etiquetado automático de datos: anotar datasets de texto e imagen con múltiples preguntas por ejemplo en una sola pasada, útil para preetiquetado a gran escala antes de revisión humana.
+- Análisis de sentimiento y satisfacción: usar preguntas `score` sobre historiales de chat para obtener un nivel esperado de sentimiento en lugar de una etiqueta discreta, facilitando agregaciones y métricas continuas.
+- Verificación de calidad en e-commerce: dado un pedido y una foto del producto entregado, responder preguntas binarias sobre daños, coincidencia con el artículo o defectos visibles, con hasta 10 imágenes por petición.
+- Clasificación zero-shot sin entrenamiento adicional: definir criterios en lenguaje natural en el momento de la inferencia (el pipeline es `zero-shot-classification`), lo que permite desplegar nuevas taxonomías sin reentrenar.
+- Filtrado previo en pipelines generativos: decidir si una consulta debe escalarse a un LLM mayor o resolverse con reglas, reduciendo coste y latencia en cascada.
 
 ## Benchmarks y rendimiento
 
-| Modelo | Kanana Decision Bench (texto, 15.909 preguntas) | Decision Index 0.4.1 public | Decision Index Vision 0.4.1 public | Media (públicos) |
-|---|---|---|---|---|
-| Kanana-2-v-decide-3b-2611 (3B) | **72,50** | 61,34 | **61,12** | **61,23** |
-| StartLux-Decision-v1.1-2B-Instant (2B) | 54,38 | 59,17 | 59,90 | 59,54 |
-| Liquid AI d1-3B (3B) | 52,71 | 48,97 | 51,86 | 50,42 |
-| Base Labs Joey-1 (2B) | 42,38 | **63,31** | 54,23 | 58,77 |
+| Modelo | Parámetros | Kanana Decision Bench (texto, 15.909 preguntas) | Decision Index 0.4.1 public | Decision Index Vision 0.4.1 public | Promedio (public 2) |
+|---|---|---|---|---|---|
+| Kanana-2-v-decide-3b-2611 | 3B | **72,50** | 61,34 | **61,12** | **61,23** |
+| StartLux-Decision-v1.1-2B-Instant | 2B | 54,38 | 59,17 | 59,90 | 59,54 |
+| Liquid AI d1-3B | 3B | 52,71 | 48,97 | 51,86 | 50,42 |
+| Base Labs Joey-1 | 2B | 42,38 | **63,31** | 54,23 | 58,77 |
 
-La media se calcula a partir de las dos puntuaciones públicas mostradas. Kanana Decision Bench es un conjunto de evaluación interno de Kakao en coreano (texto). No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+Kanana Decision Bench es el conjunto interno coreano de evaluación de decisiones de Kakao (solo texto). El promedio se calcula sobre los dos benchmarks públicos mostrados. No se han publicado en la información disponible resultados de benchmarks estándar de LM (MMLU, HumanEval, GSM8K), ya que el modelo no es generativo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Con 3,67B parámetros, en bfloat16 se requieren aproximadamente 7,3 GB solo para pesos, más memoria para activaciones y el codificador visual; en cuantización de 8 bits o 4 bits el requisito se reduciría, aunque no se documentan cuantizaciones soportadas.
-- GPU recomendadas: no especificadas por el autor. Por tamaño, cabe en GPUs de consumo con suficiente VRAM (por ejemplo, RTX 4090 de 24 GB) en bfloat16, y en GPUs profesionales como A100 o H100 para despliegues de mayor concurrencia.
-- Cabe en GPU de consumo: probable en tarjetas con 12-24 GB de VRAM en bfloat16, aunque no hay cifras oficiales confirmadas.
-- Opciones de despliegue: `transformers` con `trust_remote_code=True` (AutoModel y pipeline "decision"); servidor HTTP propio (`server_kanana_v_decide.py`) compatible con System One API usando solo la biblioteca estándar de Python. No se documenta soporte para vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia en bfloat16: aproximadamente 7,3 GB de pesos, más overhead de activaciones y del codificador visual; en la práctica, se recomienda un mínimo de 10-12 GB de VRAM para bf16 con margen.
+- GPU recomendadas: A100, H100 o L40S para despliegue con concurrencia; RTX 4090 (24 GB) para desarrollo y serving de una sola instancia.
+- Cabe en GPU de consumo: sí, en RTX 4090 y RTX 3090 (24 GB) en bf16; en tarjetas de 8-12 GB requeriría cuantización, para la cual no se documentan recetas oficiales.
+- Opciones de despliegue: `transformers` con `AutoModel` y `trust_remote_code=True`, pipeline `decision`, y servidor HTTP propio `server_kanana_v_decide.py` (System One API, solo biblioteca estándar de Python). No se documenta soporte oficial para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles en la información proporcionada; el diseño system-one (una pasada, sin decodificación autoregresiva) reduce la latencia frente a esquemas generativos, pero no se publican cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Kanana Decision Bench | Decision Index | Decision Index Vision | Licencia |
-|---|---|---|---|---|---|---|
-| Kanana-2-v-decide-3b-2611 | 3,67B | 20.480 tokens, 10 imágenes | 72,50 | 61,34 | 61,12 | Kanana Open License |
-| StartLux-Decision-v1.1-2B-Instant | 2B | No disponible | 54,38 | 59,17 | 59,90 | No disponible |
-| Liquid AI d1-3B | 3B | No disponible | 52,71 | 48,97 | 51,86 | No disponible |
-| Base Labs Joey-1 | 2B | No disponible | 42,38 | 63,31 | 54,23 | No disponible |
+| Modelo | Parámetros | Contexto / entrada | Enfoque | Promedio público | Licencia |
+|---|---|---|---|---|---|
+| Kanana-2-v-decide-3b-2611 | 3,67B (0,49B vision + 3,18B LM) | 20.480 tokens, hasta 10 imágenes | Decisión multimodal calibrada (system-one) | 61,23 | kanana-open-license |
+| StartLux-Decision-v1.1-2B-Instant | 2B | no disponible | Modelo de decisión | 59,54 | no disponible |
+| Liquid AI d1-3B | 3B | no disponible | Modelo de decisión | 50,42 | no disponible |
+| Base Labs Joey-1 | 2B | no disponible | Modelo de decisión | 58,77 | no disponible |
 
-Kanana destaca en la media de benchmarks públicos y en el conjunto coreano, mientras que Joey-1 obtiene la mejor puntuación en Decision Index texto. No se dispone de datos de contexto ni licencia de los modelos comparados en la información proporcionada.
+Kanana-2-v-decide-3b-2611 obtiene el mejor promedio público y el mejor resultado en Decision Index Vision, y una ventaja de 18 puntos en el conjunto interno coreano frente al siguiente mejor modelo comparado. Base Labs Joey-1 supera a Kanana en Decision Index (texto) con 63,31 frente a 61,34, pese a tener menos parámetros.
 
 ## Limitaciones y advertencias
 
-- No es un modelo generativo: no produce texto libre, solo distribuciones de probabilidad sobre opciones predefinidas; no sirve para tareas de generación, resumen o diálogo abierto.
-- Idiomas limitados a coreano e inglés; el rendimiento en otros idiomas no está documentado y probablemente sea deficiente.
-- Riesgo de calibración imperfecta: aunque devuelve probabilidades, no se documentan estudios de calibración fuera de los benchmarks del autor; conviene validar umbrales en el dominio de producción.
-- Sesgos: no se documentan análisis de sesgo en la información disponible; al estar entrenado principalmente con datos coreanos e ingleses, puede reflejar sesgos culturales y lingüísticos de esas fuentes.
-- Licencia Kanana Open License (license: other): es necesario revisar el texto completo de la licencia antes de un uso comercial; no se detallan aquí las restricciones.
-- Requiere `trust_remote_code=True`, lo que implica ejecutar código personalizado del repositorio; hay que auditar ese código antes de desplegarlo en producción.
-- El número de descargas (7) y likes (2) es muy bajo, lo que sugiere poca validación comunitaria y escasa documentación independiente.
-- No se documentan cuantizaciones oficiales ni soporte en runtimes de alto rendimiento (vLLM, llama.cpp), lo que limita las opciones de despliegue optimizado.
-- El límite de 10 imágenes y 20.480 tokens acota los casos de uso con documentos o vídeos extensos.
+- No genera texto: no sirve para tareas de generación, resumen, traducción ni diálogo abierto; solo responde a preguntas tipadas predefinidas.
+- Idiomas limitados a coreano e inglés; el rendimiento en castellano u otros idiomas no está evaluado ni garantizado.
+- Riesgo de calibración degradada fuera del dominio de entrenamiento: las probabilidades pueden ser poco fiables en taxonomías o estados muy alejados de la distribución evaluada.
+- Sesgos: la model card no documenta análisis de sesgos; al derivar de un LM coreano-inglés, es esperable heredar sesgos de sus datos de preentrenamiento.
+- La licencia `kanana-open-license` es de tipo "other": es imprescindible revisar los términos del archivo LICENSE antes de cualquier uso comercial.
+- Requiere `trust_remote_code=True`, lo que implica ejecutar código personalizado del autor; conviene auditar el código en entornos de producción.
+- No soporta tool calling, agentes ni razonamiento multi-paso; el paradigma system-one es de decisión directa en una pasada.
+- Límite de 10 imágenes y 20.480 tokens por petición; estados más largos requieren truncado o segmentación.
+- No se documentan recetas oficiales de cuantización ni soporte para motores de serving de alto rendimiento (vLLM, TGI), lo que limita el escalado out-of-the-box.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/kakaocorp/kanana-2-v-decide-3b-2611
 - Licencia: https://huggingface.co/kakaocorp/kanana-2-v-decide-3b-2611/blob/main/LICENSE
-- Blog de Kakao (coreano): https://tech.kakao.com/posts/846
+- Blog técnico de Kakao (coreano): https://tech.kakao.com/posts/846

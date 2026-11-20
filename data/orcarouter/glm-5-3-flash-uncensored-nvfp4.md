@@ -2,89 +2,93 @@
 
 ## Resumen
 
-El modelo `orcarouter/GLM-5.3-Flash-Uncensored-NVFP4` es una versión modificada del modelo base `zai-org/GLM-5.3-Flash` de Z.ai, un modelo de lenguaje multimodal de arquitectura mixta (MoE) con 313.890.438.974 parámetros totales (aproximadamente 314B) y unos 18B parámetros activos. La modificación, realizada por OrcaRouter, elimina los rechazos del modelo (refusal removal) directamente en los pesos, sin emplear LoRA ni técnicas de jailbreak, según la descripción del autor. El resultado es un modelo "uncensored" que mantiene las capacidades originales de razonamiento, visión, function calling y multi-token prediction (MTP).
+GLM-5.3-Flash-Uncensored-NVFP4 es una versión cuantizada en NVFP4 y sometida a *abliteration* del modelo multimodal GLM-5.3-Flash de Z.ai (zai-org). Lo publica el usuario orcarouter en Hugging Face y combina tres transformaciones sobre el modelo base: cuantización de pesos a 4 bits en formato NVFP4 mediante compressed-tensors, eliminación de los mecanismos de rechazo (*abliteration*) para uso en *red teaming*, y empaquetado para inferencia con vLLM. El resultado es un modelo de 321.323 millones de parámetros totales con arquitectura MoE y pipeline image-text-to-text, es decir, acepta entradas de imagen y texto y genera texto.
 
-Esta versión concreta está cuantizada en NVFP4 (4 bits), un formato de precisión reducida basado en FP4 y compatible con la librería compressed-tensors de vLLM. El modelo se distribuye bajo licencia MIT y con acceso restringido (gated) en Hugging Face. Su relevancia radica en ofrecer una alternativa sin censura para tareas de investigación, red-teaming y generación creativa, manteniendo un rendimiento similar al original en un tamaño de archivo reducido (190 GB frente a los más de 600 GB que ocuparía el modelo en FP16).
+La relevancia de esta ficha está en que se trata de un derivado no oficial: el modelo original pertenece a Z.ai, mientras que esta versión modifica tanto la precisión numérica como el comportamiento alineado del modelo. Por tanto, cualquier evaluación de calidad debe hacerse contra el GLM-5.3-Flash original, y cualquier uso en producción debe asumir que las salvaguardas del modelo base han sido deliberadamente eliminadas. La licencia declarada es MIT, heredada del modelo base, aunque el acceso al repositorio está restringido y requiere aceptar condiciones en Hugging Face.
 
-## Especificaciones tecnicas
+El modelo soporta únicamente inglés y chino según los metadatos, e incluye funcionalidades declaradas de *function calling*, razonamiento y *multi-token prediction* (MTP). Con 2.129 descargas y 114 likes en el momento de la consulta, es un artefacto de nicho orientado a investigadores de seguridad y a equipos que necesitan ejecutar un MoE grande en hardware con soporte FP4.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Mixture of Experts (MoE) con atención lineal y MTP (multi-token prediction) |
-| Parametros totales | 313.890.438.974 (aprox. 314B) |
-| Parametros activos | 18B (según Z.ai) |
+| Arquitectura | MoE transformer multimodal (tag `glm5_next`), con MTP |
+| Parámetros totales | 321.323.031.390 (≈321,3 B) |
+| Parámetros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | NVFP4 (4 bits) sobre la versión FP8 original |
-| Idiomas soportados | inglés (en), chino (zh) |
+| Tipos de cuantización | NVFP4 (FP4, 4 bits) con compressed-tensors; tag `8-bit` en metadatos |
+| Idiomas soportados | en, zh |
 | Licencia | MIT |
-| Formato de pesos | safetensors (compatible con transformers y vLLM) |
+| Formato de pesos | safetensors (compressed-tensors), compatible con vLLM |
+| Pipeline | image-text-to-text (visión-lenguaje) |
+| Modelo base | zai-org/GLM-5.3-Flash |
+| Tamaño del repositorio | 205,1 GB |
+| Acceso | restringido (gated), requiere aceptar condiciones |
 
 ## Arquitectura y entrenamiento
 
-El modelo base `GLM-5.3-Flash` de Z.ai es un transformer de tipo MoE con 320B parámetros totales (según la comunicación oficial de Z.ai) y 18B activos por token. Incluye capacidades multimodales (procesa imagen y texto), function calling, razonamiento multi-paso y MTP (predicción de múltiples tokens), lo que acelera la decodificación. La versión uncensored de OrcaRouter modifica los pesos del modelo original para eliminar los patrones de rechazo aprendidos durante el entrenamiento con RLHF. Según el autor, el proceso de edición se realiza directamente sobre los pesos, sin necesidad de adaptadores adicionales. La cuantización NVFP4 se aplica sobre la versión FP8 del modelo, reduciendo el tamaño de almacenamiento y los requisitos de memoria para inferencia.
+La arquitectura es un transformer con mezcla de expertos (MoE) de la familia GLM-5, etiquetado como `glm5_next`, con capacidad multimodal de entrada (imagen y texto) y salida de texto. El modelo incorpora *multi-token prediction* (MTP), técnica que añade cabezas auxiliares para predecir varios tokens por paso y que suele emplearse tanto para acelerar la decodificación como para mejorar la señal de entrenamiento. No se dispone de información sobre el número de expertos, el ratio de activación, la dimensión oculta ni el número de capas en la información proporcionada.
 
-No se dispone de información detallada sobre el dataset de entrenamiento del modelo base ni sobre el método exacto de edición de pesos utilizado por OrcaRouter. La fecha de creación (agosto de 2026) sugiere que se trata de un modelo reciente, y la versión original fue publicada bajo licencia MIT tres días antes de la aparición de esta variante.
+Respecto al entrenamiento, esta ficha no puede describir la composición del dataset, el número de tokens ni las etapas de alineación (RLHF/DPO) del modelo original, porque esos datos no están incluidos en la información disponible. Lo que sí es verificable es la cadena de transformaciones aplicadas por el publicador: cuantización a NVFP4 con compressed-tensors y *abliteration*, un procedimiento que típicamente identifica y modifica direcciones en el espacio de activaciones asociadas al rechazo para reducir la probabilidad de respuestas negativas. Esta modificación invalida las garantías de alineación del modelo base.
 
 ## Capacidades
 
-- Generación de texto y razonamiento avanzado, incluyendo matemáticas, lógica y análisis.
-- Comprensión de imágenes (image-text-to-text) con entrada multimodal.
-- Function calling / tool calling para integración en agentes y APIs.
-- Razonamiento multi-step y planificación de tareas complejas.
-- MTP (multi-token prediction) para decodificación más rápida.
-- Soporte multilingüe limitado a inglés y chino.
-- Ausencia de rechazos: el modelo no se niega a responder a peticiones que el modelo original rechazaría (contenido explícito, violencia, etc.), lo que lo hace útil para red-teaming y análisis de seguridad.
-- Sin modo de pensamiento oculto (thinking mode) visible, aunque el razonamiento se genera de forma explícita.
+- Generación de texto conversacional multi-turno en inglés y chino.
+- Razonamiento explícito (tag `reasoning`) y resolución de problemas multi-paso.
+- Comprensión de imágenes combinada con texto (image-text-to-text), incluyendo preguntas sobre el contenido visual.
+- *Function calling* / *tool calling* declarado en los metadatos.
+- Predicción multi-token (MTP) para decodificación acelerada.
+- Comportamiento sin censura (*uncensored*, *abliterated*): el modelo no aplica los filtros de rechazo del base, lo que lo hace apto para *red teaming* y análisis de seguridad.
+- Integración con vLLM y con el formato compressed-tensors para despliegue en GPU con soporte FP4.
+- No se declara soporte de audio ni de salida multimodal.
 
 ## Casos de uso
 
-- Red-teaming y evaluación de seguridad: el modelo permite probar sistemas de moderación y detectar vulnerabilidades en pipelines de IA, al generar respuestas sin filtros que pueden revelar sesgos o comportamientos peligrosos.
-- Investigación académica sobre alineación: estudiar cómo la eliminación de rechazos afecta al rendimiento en tareas estándar y cuantificar el trade-off entre utilidad y seguridad.
-- Generación de contenido creativo sin restricciones: escritura de ficción, poesía, guiones o diálogos que requieran explorar temas tabú o extremos sin limitaciones impuestas por el modelo.
-- Desarrollo de agentes autónomos: su soporte de function calling y razonamiento multi-paso lo hace adecuado para construir asistentes que interactúan con APIs, bases de datos o herramientas externas.
-- Análisis de imágenes y documentos: al ser multimodal, puede extraer información de imágenes y combinarla con texto para tareas de descripción, resumen o extracción de datos.
-- Evaluación de modelos cuantizados: probar el rendimiento de NVFP4 frente a FP8 o FP16 en tareas de generación y razonamiento, para decidir si esta cuantización es viable en producción.
-- Despliegue de API de bajo coste: gracias a la cuantización de 4 bits, el modelo puede ejecutarse en infraestructura más modesta que la necesaria para el modelo original, reduciendo el coste por token (según OrcaRouter, $0.07 / $0.25 por 1M tokens).
+- **Red teaming y evaluación de seguridad**: el modelo sirve para generar intentos adversariales y estudiar cómo responde un LLM sin salvaguardas, comparando su comportamiento con el GLM-5.3-Flash original para medir el efecto de la alineación. Es el caso de uso principal declarado en los tags (`ai-red-team`, `red-teaming`).
+- **Investigación sobre abliteration**: permite analizar qué capacidades se degradan y cuáles se preservan tras eliminar las direcciones de rechazo, con un modelo de 321 B como sujeto de estudio y una versión cuantizada que abarata la experimentación.
+- **Análisis de documentos con imágenes**: gracias al pipeline image-text-to-text, puede procesar capturas, diagramas o páginas escaneadas junto a instrucciones textuales; útil en pipelines de extracción de información donde se combinan OCR y razonamiento.
+- **Agentes con herramientas en entornos controlados**: el soporte de function calling permite construir agentes que consulten APIs internas o bases de datos en sandboxes de laboratorio, sin exposición a usuarios finales.
+- **Generación de código y tareas técnicas asistidas**: el modelo base GLM-5.3-Flash está orientado a tareas de razonamiento y código; esta versión hereda esas capacidades, aunque la cuantización FP4 puede introducir degradación que conviene medir antes de usarla en producción.
+- **Despliegue de un MoE grande en infraestructura FP4**: para equipos con GPU Blackwell que quieren evaluar el rendimiento de un modelo de 321 B cuantizado a 4 bits con vLLM, este repositorio ofrece pesos listos para cargar sin necesidad de cuantizar desde el original.
+- **Generación de datos sintéticos para entrenamiento**: en dominios donde el modelo base rechazaría ciertas peticiones, esta variante puede producir muestras que el modelo alineado no generaría, siempre dentro de un marco ético y legal.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La página del modelo en Hugging Face no incluye métricas de evaluación, y la búsqueda web no proporciona datos comparativos con el modelo original o con alternativas. Se recomienda consultar la documentación de Z.ai para obtener resultados del modelo base `GLM-5.3-Flash` en tareas como MMLU, HumanEval o GSM8K, aunque no se garantiza que la versión uncensored mantenga el mismo rendimiento tras la edición de pesos.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el tamaño del repositorio es de 190.2 GB, lo que sugiere que los pesos en NVFP4 ocupan aproximadamente 157 GB (314B × 0.5 bytes). Con overhead de activaciones y KV cache, se necesitaría al menos 200 GB de VRAM.
-- GPU recomendadas: no se especifica, pero para ejecutar el modelo completo se requerirían múltiples GPUs de alta gama, por ejemplo 4× A100 80GB, 4× H100 80GB o 8× RTX 4090 24GB (aunque el ancho de banda sería limitante).
-- No cabe en una GPU de consumo estándar (RTX 4090 24GB, RTX 5080 16GB, etc.) debido al tamaño de los pesos.
-- Opciones de despliegue: vLLM con soporte para compressed-tensors (NVFP4), TensorRT-LLM, o frameworks personalizados que soporten FP4. También es posible usar llama.cpp si se convierte a GGUF, aunque no se ha confirmado compatibilidad.
-- Latencia y throughput: no disponibles. Dado el tamaño y la cuantización, se espera un throughput moderado en comparación con modelos más pequeños, pero la decodificación MTP puede mejorar la velocidad.
+- **VRAM estimada**: con 321,3 B de parámetros en NVFP4 (4 bits), el peso de los pesos ronda los 160 GB, coherente con un repositorio de 205,1 GB que incluye metadatos y posibles tensores adicionales. A ello hay que sumar caché KV, activaciones y overhead del runtime; para contexto largo se recomienda planificar al menos 200-240 GB de memoria total.
+- **GPU recomendadas**: el formato NVFP4 requiere hardware con soporte nativo de FP4, es decir, GPUs NVIDIA Blackwell (B200, GB200, RTX 5090/5080 de la generación Blackwell). En GPUs Hopper o Ampere la cuantización NVFP4 no se ejecuta de forma nativa y requeriría de-cuantización, con la penalización de memoria correspondiente.
+- **Configuraciones multi-GPU**: un solo B200 (192 GB HBM3e) puede quedar justo; es previsible que se necesiten 2 GPUs Blackwell o más para contexto amplio y concurrencia.
+- **Consumer GPU**: no cabe en GPUs de consumo de generaciones anteriores (RTX 4090, 24 GB). Solo sería viable en una RTX 5090 con un solo usuario y contexto corto, y aun así el margen es muy ajustado.
+- **Despliegue**: vLLM es el runtime indicado por los tags (`vllm`, `compressed-tensors`); también transformers con el soporte correspondiente. llama.cpp y Ollama no están declarados y no hay evidencia de soporte para NVFP4 en esos runtimes.
+- **Latencia y throughput**: no disponible. Al ser un MoE, el throughput depende fuertemente del número de parámetros activos, dato que no se ha publicado en esta ficha.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Cuantización | Acceso |
-|---|---|---|---|---|---|---|
-| GLM-5.3-Flash (original) | 320B | 18B | no disponible | MIT | FP8 | abierto |
-| GLM-5.3-Flash-Uncensored-NVFP4 (este) | 314B | 18B | no disponible | MIT | NVFP4 (4 bits) | restringido (gated) |
-| DeepSeek-V3 (MoE) | 671B | 37B | 128K | MIT | FP8 | abierto |
-| Qwen2.5-Max | 200B+ (no confirmado) | no disponible | 128K | Apache 2.0 | FP8 | abierto |
+| Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| GLM-5.3-Flash-Uncensored-NVFP4 (este) | 321,3 B (MoE) | no disponible | imagen+texto → texto | MIT | gated en HF, pesos NVFP4 |
+| zai-org/GLM-5.3-Flash (base) | 321,3 B (MoE) | no disponible | imagen+texto → texto | MIT | oficial de Z.ai |
+| Alternativas de tamaño comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparativa se basa en características generales, ya que no hay datos de rendimiento publicados para esta variante. El modelo se diferencia por su naturaleza uncensored y su cuantización de 4 bits, que reduce los requisitos de memoria frente a DeepSeek-V3 o Qwen2.5-Max.
+La comparación más directa es contra el propio modelo base: esta versión difiere en precisión (NVFP4 frente a los pesos originales), en comportamiento (sin salvaguardas) y en tamaño de repositorio (205,1 GB). No se dispone de datos de benchmarks ni de especificaciones de contexto para establecer comparaciones cuantitativas con otros modelos de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Al ser una versión uncensored, el modelo puede generar contenido dañino, ofensivo o ilegal. No debe utilizarse en producción sin un sistema de moderación robusto.
-- La edición de pesos puede degradar el rendimiento en tareas que requieren juicio ético o seguridad, aunque no se han medido los efectos.
-- El acceso está restringido en Hugging Face; es necesario aceptar condiciones adicionales, lo que puede limitar su uso en entornos automatizados.
-- La cuantización NVFP4 puede introducir pérdida de precisión en comparación con FP8 o FP16, especialmente en tareas de razonamiento complejo o matemáticas.
-- Solo soporta inglés y chino, lo que limita su uso en aplicaciones multilingües.
-- No se dispone del contexto máximo, lo que impide planificar cargas de trabajo con ventanas largas.
-- El modelo base fue lanzado en agosto de 2026 y esta variante es experimental; no hay garantías de mantenimiento o soporte.
+- **Ausencia de salvaguardas**: el *abliteration* elimina los mecanismos de rechazo del modelo base. No es apto para aplicaciones orientadas a usuarios finales sin una capa de moderación externa.
+- **Riesgo de alucinación**: inherente a los LLM y potencialmente agravado por la cuantización a 4 bits, que puede degradar la fidelidad en tareas de razonamiento largo.
+- **Degradación por cuantización**: NVFP4 reduce la precisión numérica; conviene validar la calidad frente al modelo base en las tareas concretas antes de cualquier uso serio.
+- **Idiomas limitados**: solo inglés y chino declarados; el rendimiento en castellano no está garantizado ni documentado.
+- **Sesgos**: no hay información publicada sobre la evaluación de sesgos de esta variante; al eliminar la alineación, es esperable una mayor exposición a contenido sesgado u ofensivo.
+- **Licencia**: MIT según los metadatos, pero el acceso es restringido y requiere aceptar condiciones en Hugging Face; verificar los términos del modelo base de Z.ai antes de un uso comercial.
+- **Soporte de hardware restringido**: el formato NVFP4 limita el despliegue a GPUs Blackwell; no hay evidencia de soporte en llama.cpp u Ollama.
+- **Datos incompletos**: no se publican parámetros activos, longitud de contexto ni benchmarks, lo que dificulta la planificación de capacidad.
+- **Naturaleza no oficial**: es un derivado de terceros, sin respaldo de Z.ai; los problemas de calidad o seguridad deben atribuirse al publicador, no al equipo del modelo base.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/orcarouter/GLM-5.3-Flash-Uncensored-NVFP4
-- Modelo base (Z.ai): https://huggingface.co/zai-org/GLM-5.3-Flash
-- Blog de ExplainX sobre el lanzamiento: https://www.explainx.ai/blog/orcarouter-glm-5-3-flash-uncensored-block-fp8-august-2026
-- Publicación en X (OrcaRouter): https://x.com/OrcaRouter/status/2093612518396871075
-- Publicación en LinkedIn: https://www.linkedin.com/posts/orcarouter_glm-53-flash-uncensored-native-fp8-activity-7499733012641742848-kb30
-- Página de precios y API de OrcaRouter: https://www.orcarouter.ai/models/z-ai/glm-5.3-flash
-- Repositorio alternativo con el mismo nombre: https://huggingface.co/ericlewis/GLM-5.3-Flash-OrcaRouter-Uncensored-NVFP4
+- [Modelo en Hugging Face](https://huggingface.co/orcarouter/GLM-5.3-Flash-Uncensored-NVFP4)
+- [Modelo base: zai-org/GLM-5.3-Flash](https://huggingface.co/zai-org/GLM-5.3-Flash)
+- [Perfil del publicador: orcarouter](https://huggingface.co/orcarouter)

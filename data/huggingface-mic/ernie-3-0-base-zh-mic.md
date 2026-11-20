@@ -2,86 +2,93 @@
 
 ## Resumen
 
-`huggingface-mic/ernie-3.0-base-zh-mic` es un artefacto de prueba (fixture) publicado por la organizacion `huggingface-mic`, no un modelo entrenado ni utilizable en produccion. Se trata de una version "slim" del checkpoint `nghuyong/ernie-3.0-base-zh`, reducida mediante la regla generica de `sweep.py` del repositorio `transformers-mic` hasta los 2,8 millones de parametros, con pesos inicializados aleatoriamente (semilla 17) y sin entrenamiento posterior.
+`huggingface-mic/ernie-3.0-base-zh-mic` no es un modelo utilizable en produccion, sino un *fixture* de test publicado por la organizacion `huggingface-mic` como parte de la infraestructura `transformers-mic` del ecosistema Hugging Face. Reproduce la arquitectura de `nghuyong/ernie-3.0-base-zh` (un ERNIE 3.0 base en chino) con una configuracion reducida a 2 capas ocultas y pesos aleatorios (semilla 17), totalizando 2.802.880 parametros. Su proposito es servir como artefacto de verificacion de contratos de integracion con frameworks (Transformers), no como modelo de lenguaje funcional.
 
-El proposito del repositorio es servir como contrato de integracion: incluye el manifiesto `integration.json`, instrucciones de uso con Transformers, un directorio de expectativas del framework y la procedencia del fixture en `build.json`. La arquitectura resultante es `ErnieForMaskedLM` con 2 capas ocultas, manteniendo los nombres de tensores del checkpoint original y copiando byte a byte el fichero `vocab.txt` del modelo base.
+El repositorio incluye pesos *slim* en safetensors, un manifiesto de contrato (`integration.json`), documentacion de uso y expectativas de framework (`integrations/transformers/usage.md` y `integrations/transformers/expectations`), y metadatos de procedencia (`build.json`). Los ficheros de procesador (`vocab.txt`) se copian byte a byte del checkpoint original, y los nombres de tensores coinciden con los del checkpoint real, lo que permite validar pipelines de carga sin descargar el modelo completo.
 
-Es relevante unicamente para desarrolladores que trabajen en tooling de validacion de integraciones (por ejemplo, pruebas de compatibilidad de Transformers o de pipelines de carga de checkpoints), no para tareas de NLP reales. El propio autor lo etiqueta como `test-artifact` para excluirlo de busquedas de modelos candidatos.
+Es relevante ahora por su funcion dentro del tooling de validacion de modelos de Hugging Face: permite a desarrolladores comprobar que sus integraciones (carga, forward, sensibilidad a entradas, dtypes fp32/bf16/fp16) funcionan correctamente sobre una arquitectura ERNIE real antes de escalar a checkpoints de mayor tamano. Esta etiquetado explicitamente como `test-artifact` para excluirlo de busquedas de modelos candidatos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer tipo ERNIE 3.0, clase `ErnieForMaskedLM` |
-| Parametros totales | 2,8 M (fixture reducido; el checkpoint original es base) |
+| Arquitectura | Transformer encoder tipo ERNIE (`ErnieForMaskedLM`), reducido a 2 capas ocultas |
+| Parametros totales | 2.802.880 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos guardados en float32; finito tambien en bfloat16 y float16) |
-| Idiomas soportados | no disponible (el modelo base es chino, `zh`) |
+| Tipos de cuantizacion | no disponible (pesos guardados en float32) |
+| Idiomas soportados | no disponible (vocabulario heredado de `nghuyong/ernie-3.0-base-zh`, orientado a chino) |
 | Licencia | no disponible |
-| Formato de pesos | safetensors/PyTorch (repositorio de 0.0 GB, pesos slim) |
+| Formato de pesos | safetensors (float32) |
 
 ## Arquitectura y entrenamiento
 
-El fixture conserva la arquitectura del modelo base ERNIE 3.0 en su variante `ErnieForMaskedLM`, pero con la configuracion reducida: `num_hidden_layers` pasa a 2 mediante la regla generica de reduccion aplicada por `sweep.py`. Los nombres de tensores coinciden con los del checkpoint real `nghuyong/ernie-3.0-base-zh`, de modo que el fixture puede sustituir al modelo original en pruebas de carga sin modificar el codigo de integracion.
+El modelo es una instancia reducida de `ErnieForMaskedLM`, la cabeza de modelado de lenguaje enmascarado de ERNIE 3.0. La contraccion se aplico mediante la regla generica de `sweep.py` del repositorio `transformers-mic`, reduciendo `num_hidden_layers` a 2. Los ficheros de procesador (`vocab.txt`) se copiaron byte a byte desde `nghuyong/ernie-3.0-base-zh`, manteniendo la tokenizacion original. Los pesos son aleatorios (semilla 17) y no han pasado por entrenamiento alguno: superaron unicamente una puerta de sensibilidad a entradas, en la que cada perturbacion de las entradas del contrato movio los logits al menos 0,001 (caso mas debil: `attention_mask:all_ones`, 0,00221).
 
-No hubo entrenamiento. Los pesos son aleatorios (semilla 17) y superaron unicamente la puerta de sensibilidad a la entrada: cada perturbacion de las entradas del contrato mueve los logits al menos 0,001 (el caso mas debil, `attention_mask:all_ones`, mueve 0,00221). El fichero `vocab.txt` se copia byte a byte del modelo base. Los pesos se guardan en float32, el dtype por defecto del checkpoint original, y se verifica que forward, loss y gradientes son finitos en float32, bfloat16 y float16. La clave de fixture es `0ea57cf23634` y cubre todos los checkpoints con ficheros de procesador identicos y config coincidente tras la reduccion.
+Los nombres de tensores coinciden con el checkpoint real, y los pesos se guardan en float32 (el dtype con el que carga por defecto `nghuyong/ernie-3.0-base-zh`). Se verifica que el modelo es finito en float32, bfloat16 y float16 tanto en forward como en loss y gradientes. El fixture cubre todos los checkpoints cuyos ficheros de procesador son byte-identicos y cuya config coincide tras la contraccion (clave de fixture `0ea57cf23634`). La construccion la realiza `build_fixtures.py`, y `build.json` registra las fuentes fijadas, los resultados de las puertas y los hashes de ficheros.
 
 ## Capacidades
 
-- No es un modelo funcional: no genera texto, no razona, no traduce ni responde preguntas.
-- Implementa la interfaz de `fill-mask` a nivel de contrato, pero con pesos aleatorios las predicciones no tienen significado.
-- Sirve para validar la carga de checkpoints, la compatibilidad de nombres de tensores y el comportamiento de frameworks (Transformers) frente a un modelo ERNIE.
-- Permite probar rutas de codigo dependientes del procesador (`vocab.txt` identico al original).
-- No soporta tool calling, agentes, vision, audio ni modo thinking.
-- No dispone de capacidades multilingues reales; el vocabulario heredado es chino.
+- Carga y ejecucion de la arquitectura `ErnieForMaskedLM` con nombres de tensores identicos al checkpoint original.
+- Verificacion de contratos de integracion con Transformers mediante `integration.json` y el directorio `integrations/transformers/expectations`.
+- Prueba de sensibilidad de entradas sobre logits (validacion de que perturbaciones producen cambios medibles).
+- Comprobacion de estabilidad numerica en float32, bfloat16 y float16 (forward, loss y gradientes).
+- Validacion de tokenizacion usando `vocab.txt` original.
+- No dispone de capacidades generativas, de razonamiento, de codigo, de tool calling ni de agentes: los pesos son aleatorios.
+- No dispone de capacidades multilingues funcionales mas alla de la tokenizacion heredada.
 
 ## Casos de uso
 
-- Pruebas de integracion en Transformers: cargar el fixture con `AutoModelForMaskedLM` para verificar que la clase `ErnieForMaskedLM` se instancia correctamente sin descargar el checkpoint completo.
-- CI/CD de librerias de NLP: usar el fixture como sustituto ligero del modelo base en tests unitarios que comprueban formas de salida, dtypes y manejo de `attention_mask`.
-- Validacion de contratos de modelo: ejecutar `integration.json` y el directorio `expectations` para comprobar que una nueva version del framework sigue cumpliendo las expectativas definidas.
-- Pruebas de precision numerica: verificar que forward, loss y gradientes son finitos en float32, bfloat16 y float16 antes de desplegar codigo con el checkpoint real.
-- Desarrollo de tooling de empaquetado: comprobar la serializacion y carga de pesos con los mismos nombres de tensores que el modelo original.
-- Reproducibilidad de fixtures: reconstruir el artefacto con `python example/build_fixtures.py --fixture ernie-3.0-base-zh-mic` y comparar hashes registrados en `build.json`.
+- Validacion de pipelines de carga de modelos: usar el fixture para comprobar que un loader de Transformers resuelve correctamente la configuracion, los nombres de tensores y los ficheros de procesador de ERNIE 3.0 antes de descargar el checkpoint completo de 118M parametros aproximados (no confirmado en la informacion disponible).
+- Test de integracion en CI: ejecutar `ErnieForMaskedLM` sobre este fixture en suites automatizadas para detectar regresiones en la capa de modelado enmascarado sin coste de ancho de banda ni de GPU.
+- Verificacion de estabilidad numerica por dtype: comprobar que un framework produce valores finitos en forward, loss y gradientes en fp32, bf16 y fp16 sobre esta arquitectura.
+- Validacion de tokenizadores: probar el pipeline de tokenizacion con el `vocab.txt` original de `nghuyong/ernie-3.0-base-zh` sin depender del checkpoint completo.
+- Pruebas de sensibilidad a entradas: usar las perturbaciones de `attention_mask` y entradas del contrato para verificar que un wrapper o runtime propaga correctamente las mascaras.
+- Desarrollo de herramientas de contraccion de modelos: usar `sweep.py` y `build_fixtures.py` como referencia para generar fixtures equivalentes de otros checkpoints.
+- Auditoria de contratos de integracion: consumir `integration.json` y `build.json` para validar hashes, procedencia y expectativas declaradas por el framework.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un fixture con pesos aleatorios, cualquier metrica de calidad (MMLU, GLUE, etc.) carece de sentido.
+No se han publicado resultados de benchmarks en la informacion disponible. El modelo card indica explicitamente que es un artefacto de test con pesos aleatorios, por lo que no procede evaluar calidad de lenguaje.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en float32 dado el tamano de 2,8 M de parametros; cabe en CPU sin problema.
-- GPU recomendadas: cualquiera; no requiere GPU dedicada. Una RTX 4090, A100 o H100 estan sobredimensionadas para este artefacto.
-- Cabe en cualquier GPU consumer, incluida una GTX 1050 o una iGPU con suficiente memoria compartida.
-- Opciones de despliegue: Transformers (via `AutoModelForMaskedLM`), y en principio cualquier runtime que cargue pesos PyTorch/safetensors con la configuracion reducida; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles; al ser un fixture no se han publicado mediciones.
+- VRAM estimada para inferencia: inferior a 1 GB en float32 (2,8M parametros); en la practica cabe en CPU.
+- GPU recomendadas: innecesarias; cualquier GPU consumer (por ejemplo RTX 3060, RTX 4090) sobra ampliamente. Tambien funciona en CPU.
+- Cabe en consumer GPU: si, en cualquier GPU con al menos unos cientos de MB libres, y en CPU.
+- Opciones de despliegue: Transformers (uso documentado en `integrations/transformers/usage.md`); vLLM, llama.cpp, Ollama y TGI no estan indicados en la informacion disponible para este artefacto.
+- Latencia y throughput estimados: no disponibles; al ser pesos aleatorios y 2 capas, la latencia seria minima, pero no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `huggingface-mic/ernie-3.0-base-zh-mic` | 2,8 M (fixture) | no disponible | Artefacto de prueba | no disponible | Hugging Face |
-| `nghuyong/ernie-3.0-base-zh` | base (ERNIE 3.0) | no disponible | Modelo real para NLP en chino | no disponible | Hugging Face |
-| `bert-base-chinese` | ~110 M | 512 tokens | Modelo real BERT en chino | Apache 2.0 (segun el repositorio original) | Hugging Face |
+| `huggingface-mic/ernie-3.0-base-zh-mic` (este) | 2.802.880 | no disponible | Fixture de test | no disponible | Hugging Face |
+| `nghuyong/ernie-3.0-base-zh` | no disponible en la informacion (checkpoint base real de ERNIE 3.0 base) | no disponible | Modelo de lenguaje en chino utilizable | no disponible | Hugging Face |
+| Otros fixtures `transformers-mic` | variable | no disponible | Fixtures de test por arquitectura | no disponible | Hugging Face (`huggingface-mic`) |
 
-La comparativa es orientativa: el fixture no es funcionalmente equivalente a ninguno de los modelos reales; solo comparte arquitectura y nombres de tensores con `nghuyong/ernie-3.0-base-zh`.
+No se dispone de datos de rendimiento comparables, dado que este artefacto no esta entrenado.
 
 ## Limitaciones y advertencias
 
-- Pesos aleatorios: las salidas no tienen significado; no debe usarse para inferencia real ni para evaluacion de calidad.
-- Etiquetado como `test-artifact`: el autor lo excluye explicitamente de busquedas de modelos candidatos.
-- Licencia no declarada: no hay autorizacion explicita de uso comercial; al derivar del checkpoint `nghuyong/ernie-3.0-base-zh`, habria que consultar la licencia de ese modelo base.
-- Contexto, idiomas y cuantizaciones no documentados; no asumir compatibilidad con pipelines de produccion.
-- Riesgo de confusion: el nombre puede llevar a pensar que es un ERNIE 3.0 funcional; conviene revisar `build.json` e `integration.json` antes de integrarlo.
-- No apto para fine-tuning con proposito de calidad: los pesos iniciales son aleatorios y no se ha realizado entrenamiento.
-- El repositorio no incluye todos los ficheros necesarios para reconstruir el fixture; hay que regenerarlos con `example/build_fixtures.py`.
+- Pesos aleatorios (semilla 17): no produce salidas linguisticas coherentes; no debe usarse para inferencia real.
+- Etiquetado como `test-artifact`: excluido intencionadamente de busquedas de modelos candidatos.
+- Configuracion contraida (2 capas): no representa la calidad ni el comportamiento del checkpoint original.
+- Licencia no disponible: no se puede confirmar el regimen de uso comercial.
+- Idiomas y contexto no disponibles en la informacion proporcionada.
+- Riesgo de confusion: el nombre puede sugerir un modelo ERNIE funcional; conviene revisar `build.json` y `integration.json` antes de integrarlo.
+- Procedencia: los ficheros distintos de pesos, uso y expectativas deben regenerarse con `python example/build_fixtures.py --fixture ernie-3.0-base-zh-mic`.
+- No apto para produccion, evaluacion de calidad ni benchmarks de lenguaje.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/huggingface-mic/ernie-3.0-base-zh-mic
 - Modelo base: https://huggingface.co/nghuyong/ernie-3.0-base-zh
 - Repositorio `transformers-mic`: https://github.com/huggingface/transformers-mic
-- Script de reduccion `sweep.py`: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Script de contraccion `sweep.py`: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
 - Script de construccion `build_fixtures.py`: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
-- Documentacion del proceso de reduccion: https://huggingface-mic-mic-coverage.static.hf.space/shrink/ernie-3.0-base-zh-mic.html
+- Explicacion del proceso de contraccion: https://huggingface-mic-mic-coverage.static.hf.space/shrink/ernie-3.0-base-zh-mic.html
+- Manifiesto de contrato: https://huggingface.co/huggingface-mic/ernie-3.0-base-zh-mic/blob/main/integration.json
+- Uso con Transformers: https://huggingface.co/huggingface-mic/ernie-3.0-base-zh-mic/blob/main/integrations/transformers/usage.md
+- Expectativas de Transformers: https://huggingface.co/huggingface-mic/ernie-3.0-base-zh-mic/tree/main/integrations/transformers/expectations
+- Procedencia del fixture: https://huggingface.co/huggingface-mic/ernie-3.0-base-zh-mic/blob/main/build.json

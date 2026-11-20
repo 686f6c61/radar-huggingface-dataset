@@ -2,137 +2,123 @@
 
 ## Resumen
 
-Mica v0.1 4B es un modelo de decisión de 4.215.122.944 parámetros desarrollado por el usuario sky7350 (repositorio `sky7350/Mica-v0.1-4B`). No es un modelo generativo: recibe un estado, una pregunta y un conjunto cerrado de respuestas permitidas, y devuelve una probabilidad para cada respuesta. Admite tres modos: binario sí/no, elección entre 2 y 255 opciones, y puntuación con 2 a 10 niveles. Al no generar texto, cada decisión cuesta un único prefill, lo que reduce la latencia frente a un LLM que razona por tokens.
+Mica v0.1 4B es un modelo de decisión de pequeno tamano desarrollado por el usuario sky7350 (repositorio akiVet en GitHub) a partir de un ajuste fino del modelo base Qwen/Qwen3.5-4B. A diferencia de un modelo generativo convencional, Mica recibe un estado (texto de contexto), una pregunta y un conjunto de respuestas permitidas, y devuelve una distribucion de probabilidad sobre esas respuestas: si/no, una eleccion entre 2 y 255 opciones o una puntuacion con 2 a 10 niveles. No genera texto libre, de modo que cada decision cuesta un unico prefill.
 
-El modelo parte de `Qwen/Qwen3.5-4B` (revisión `851bf6e`) y le aplica un LoRA de rango 16 fusionado sobre las 32 capas, con pesos publicados en safetensors BF16 y en GGUF (BF16, Q8_0, Q6_K, Q5_K_M, Q4_K_M y Q4_0). Habla el formato TypeSafe `/v1/systemone`, de modo que los clientes escritos para Jev funcionan sin cambios. Está entrenado en inglés y coreano, y se distribuye bajo licencia Apache-2.0.
+El modelo se presenta como compatible con el formato TypeSafe `/v1/systemone`, lo que permite reutilizar clientes escritos para Jev sin cambios. Esta pensado para tareas de clasificacion, evaluacion automatica (judge) y toma de decisiones estructuradas donde la salida debe ser tipada y verificable, no prosa. Su interes actual radica en ofrecer una alternativa ligera y de licencia permisiva (Apache-2.0) a modelos hosted como JEV 1.13 para pipelines de agentes que necesitan decisiones rapidas y deterministas.
 
-Su relevancia práctica está en el nicho de los modelos de decisión pequeños y «typesafe»: un componente de 4B que emite una etiqueta con distribución de probabilidad, útil como guardián, juez o enrutador dentro de agentes, con un coste de inferencia bajo. En el benchmark público JevBench obtiene 1.000 en easy, 1.000 en original y 0.649 en hard, con un ECE de 0.064 sobre una RTX 3090.
+Con 4.215.122.944 parametros y un contexto de entrada limitado a 8.192 tokens (las entradas mas largas se rechazan con HTTP 400 en lugar de truncarse), Mica se posiciona como un componente especializado dentro de arquitecturas de agentes, no como un sustituto de un LLM generalista.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only de la familia Qwen3.5 (base `Qwen/Qwen3.5-4B`, revision `851bf6e`) con LoRA de rango 16 fusionado en las 32 capas; detalles internos del base no disponibles |
-| Parametros totales | 4.215.122.944 (4,22 B, dato real de safetensors) |
-| Longitud de contexto | Entrada limitada a 8.192 tokens por el servidor de referencia (las entradas mayores se rechazan con HTTP 400, no se truncan); contexto nativo del modelo base: no disponible |
-| Tipos de cuantizacion | BF16 (safetensors y GGUF), Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_0 |
-| Idiomas soportados | Ingles (en) y coreano (ko) |
-| Licencia | Apache-2.0 (ver fichero `NOTICE` en el repositorio) |
-| Formato de pesos | safetensors (BF16 fusionado) y GGUF (BF16, Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_0) |
-| Tamano del repositorio | 38,0 GB |
-| Pipeline declarado | text-classification (tambien etiquetado como text-generation, decision-model, judge) |
-| Descargas / likes | 1.128 descargas / 17 likes |
-| Fechas | Creado el 2026-09-25, actualizado el 2026-09-26 |
+| Arquitectura | Transformer decoder-only (derivada de Qwen3.5-4B) con LoRA rank-16 fusionado en las 32 capas |
+| Parametros totales | 4.215.122.944 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 8.192 tokens de entrada; entradas mayores se rechazan con HTTP 400 |
+| Tipos de cuantizacion | BF16, Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_0 (GGUF) |
+| Idiomas soportados | ingles (en) y coreano (ko) |
+| Licencia | Apache-2.0 (ver NOTICE) |
+| Formato de pesos | safetensors (BF16 fusionado) y GGUF |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base `Qwen/Qwen3.5-4B`, un transformer decoder-only de la familia Qwen3.5, sobre el que se ha entrenado un LoRA de rango 16 aplicado a las 32 capas y posteriormente fusionado en los pesos BF16. Mica no genera texto: la salida es una distribución de probabilidad sobre el conjunto de respuestas permitidas, lo que se traduce en un solo prefill por decisión. El modelo se sirve a través del endpoint TypeSafe `/v1/systemone`, con un adaptador `typesafe` ya existente para JevBench.
+Mica parte de Qwen/Qwen3.5-4B (revision 851bf6e), un transformer decoder-only de aproximadamente 4.200 millones de parametros. Sobre el se aplico un LoRA de rango 16 en las 32 capas, posteriormente fusionado en los pesos base para producir safetensors en BF16. El modelo no genera tokens de texto: la cabeza de decision se utiliza para producir una distribucion de probabilidad sobre las opciones permitidas, lo que reduce la inferencia a un unico paso de prefill y elimina la decodificacion autoregresiva.
 
-El conjunto de entrenamiento consta de 77.732 filas. El autor declara que ningún ítem de JevBench se usó para entrenamiento: las comprobaciones de coincidencia exacta y de 8-gramas contra los 231 ítems públicos no encuentran ninguno en las filas de entrenamiento. Sin embargo, la mitad de los ítems públicos de la categoría hard, junto con Kev transfer v9 y SemIf, se usaron para comparar recetas durante el desarrollo y para fijar la escala del LoRA, que se mantuvo en 1.0. No se documentan en la información disponible detalles sobre composición exacta del dataset, uso de RLHF o DPO, ni innovaciones tipo decodificación especulativa o atención lineal.
+El ajuste fino se realizo sobre 77.732 filas de entrenamiento en ingles y coreano. No se detalla la composicion exacta del dataset ni si se emplearon tecnicas de RLHF o DPO; la model card solo indica que el conjunto de validacion (held-out) se escribio despues de congelar los datos de entrenamiento y no se abrio hasta finalizar el entrenamiento. Se verifico que ningun item de JevBench estuviera presente en los datos de entrenamiento mediante comprobaciones de coincidencia exacta y de 8-gramas sobre los 231 items publicos. La mitad de los items dificiles publicos, junto con Kev transfer v9 y SemIf, se usaron para comparar recetas durante el desarrollo y fijar la escala del LoRA, que se mantuvo en 1.0.
 
 ## Capacidades
 
-- Decisión binaria sí/no sobre un estado y una pregunta dados.
-- Elección cerrada entre 2 y 255 opciones, devolviendo una probabilidad por opción.
-- Puntuación en escala de 2 a 10 niveles (por ejemplo, valoraciones graduadas).
-- Salida sin generación de texto: una única pasada de prefill por decisión.
-- Compatibilidad con el formato TypeSafe `/v1/systemone`, lo que permite reutilizar clientes escritos para Jev sin modificaciones.
-- Funciona como modelo juez o clasificador en flujos de evaluación automática (etiquetas `judge` y `classification`).
-- Capacidades multilingües limitadas a inglés y coreano, incluyendo estilo de chat en coreano (86,7 % en el conjunto «Korean chat style»).
-- Robustez relativa ante entradas perturbadas: en el conjunto «Perturbed inputs» (texto irrelevante añadido, relleno largo, caso enterrado, opciones reordenadas) obtiene 77,3 %, frente a 73,3 % del modelo hospedado JEV 1.13.
-- No soporta tool calling, function calling ni razonamiento multi-paso generativo: su interfaz es la decisión puntuada.
+- Clasificacion binaria (si/no) mediante preguntas de tipo `noul`.
+- Eleccion multiple entre 2 y 255 opciones.
+- Puntuacion ordinal con 2 a 10 niveles.
+- Salida exclusivamente probabilistica: no genera texto libre ni explicaciones.
+- Compatibilidad con el formato TypeSafe `/v1/systemone`, reutilizable por clientes de Jev.
+- Soporte de tool calling indirecto: se usa como componente de decision dentro de pipelines de agentes que necesitan aprobar o rechazar acciones.
+- Capacidad de juicio (judge) sobre respuestas o estados, evaluada en el benchmark JevBench.
+- Multilingue limitado a ingles y coreano.
+- Modo de decision de un solo paso (single prefill), sin razonamiento multi-step interno.
+- Soporte de entradas largas dentro del limite de 8.192 tokens, con rechazo explicito en caso de exceso.
 
 ## Casos de uso
 
-- Guardián de acciones de agentes: antes de que un agente ejecute una operación sensible (por ejemplo, borrar una base de datos de staging), se envía el estado y la pregunta «¿debería el agente borrarla ahora?» y el modelo devuelve la probabilidad de sí/no. El ejemplo aparece literalmente en la documentación del autor.
-- Enrutamiento de decisiones en pipelines multi-agente: elegir entre 2 y 255 herramientas, ramas o políticas según el estado de la conversación, aprovechando que la salida es una distribución y no texto libre.
-- Evaluación automática de respuestas (LLM-as-judge): asignar una puntuación de 2 a 10 niveles a una respuesta generada por otro modelo, con ECE de 0.064 en JevBench, lo que indica una calibración razonable para umbrales automáticos.
-- Moderación de contenido: clasificación binaria o multinivel de mensajes, con la ventaja de que la decisión no depende de una generación de texto que pueda desviarse.
-- Triaje de tickets y correo entrante: elección cerrada entre categorías predefinidas, con contexto de hasta 8.192 tokens, suficiente para hilos de conversación largos (75,6 % en el conjunto «Long inputs, many options»).
-- Control de acceso y motores de políticas: dado un estado con atributos del usuario y del recurso, decidir si se concede o deniega una acción concreta, integrándolo en un servicio HTTP propio.
-- Encuestas y puntuación de sentimiento graduada: convertir texto en una escala de 2 a 10 niveles en inglés o coreano, sin generación de texto y con latencias p50 de 54 ms en RTX 3090.
-- Verificación de hechos binaria en pipelines de curación de datos: marcar si una afirmación está respaldada por el contexto aportado en el campo de estado.
+- Aprobacion de acciones de agentes: dado un estado que describe una operacion (por ejemplo, borrar una base de datos de staging sin aprobacion), Mica devuelve la probabilidad de aprobar o rechazar, integrandose como guardrail en sistemas de agentes autonomos.
+- Evaluacion automatica de respuestas (LLM-as-a-judge): se le presenta una pregunta, una respuesta candidata y las opciones de calidad, y devuelve la distribucion sobre los niveles de calidad; su bajo coste por decision permite evaluar grandes lotes.
+- Clasificacion de intenciones en atencion al cliente: con un estado que resume el historial de conversacion y una lista de intenciones permitidas, Mica selecciona la categoria sin generar texto, lo que simplifica el enrutamiento.
+- Moderacion de contenido estructurada: clasificacion de mensajes en categorias de riesgo predefinidas, con la ventaja de que la salida es una probabilidad calibrada (ECE 0.064 en JevBench publico) en lugar de una etiqueta opaca.
+- Enrutamiento de consultas en pipelines RAG: decidir entre un conjunto pequeno de fuentes o herramientas segun el estado de la consulta, con latencia baja (p50 de 54 ms en RTX 3090 con GGUF BF16).
+- Control de calidad en generacion de codigo: evaluar si un parche cumple criterios definidos (tests, estilo, seguridad) mediante opciones tipadas, integrndose en un pipeline de CI/CD.
+- Decisiones de negocio con opciones acotadas: seleccion entre politicas predefinidas (por ejemplo, niveles de descuento o prioridad de incidencia) donde se requiere una distribucion de probabilidad auditable.
 
 ## Benchmarks y rendimiento
 
-Datos del autor, precisión en % con el modelo BF16 en PyTorch. Cuando un modelo no puede aceptar una entrada (idioma, longitud, formato), el ítem cuenta como fallo. JEV 1.13 es el modelo hospedado de TypeSafe.
-
-Conjuntos públicos:
+Resultados de exactitud en porcentaje, obtenidos con el codigo de evaluacion propio del autor usando el modelo BF16 en PyTorch. Cuando un modelo no puede procesar una entrada (idioma, longitud, formato), el item cuenta como incorrecto.
 
 | Conjunto | n | Mica | JEV 1.13 | Qwen3.5-4B | JevK5 4B | Kev 4B | Nimble 9B | Laya |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| JevBench easy | 48 | 100,0 | 100,0 | 100,0 | 100,0 | 100,0 | 100,0 | 97,9 |
-| JevBench original | 72 | 100,0 | 98,3 | 91,7 | 93,3 | 91,7 | 91,7 | 65,0 |
-| JevBench hard | 111 | 69,5 | 74,3 | 61,0 | 76,2 | 52,4 | 23,8 | 10,5 |
-| SemIf | 252 | 94,4 | 98,4 | 80,2 | 86,1 | 89,3 | 93,2 | 65,1 |
-| Kev transfer v9 | 1.264 | 69,2 | 82,0 | 66,1 | 70,5 | 73,5 | – | 53,8 |
-| MMLU-Pro | 10.032 | 53,0 | 82,3 | 45,2 | 53,5 | 49,7 | – | – |
+| JevBench easy | 48 | 100.0 | 100.0 | 100.0 | 100.0 | 100.0 | 100.0 | 97.9 |
+| JevBench original | 72 | 100.0 | 98.3 | 91.7 | 93.3 | 91.7 | 91.7 | 65.0 |
+| JevBench hard | 111 | 69.5 | 74.3 | 61.0 | 76.2 | 52.4 | 23.8 | 10.5 |
+| SemIf | 252 | 94.4 | 98.4 | 80.2 | 86.1 | 89.3 | 93.2 | 65.1 |
+| Kev transfer v9 | 1.264 | 69.2 | 82.0 | 66.1 | 70.5 | 73.5 | – | 53.8 |
+| MMLU-Pro | 10.032 | 53.0 | 82.3 | 45.2 | 53.5 | 49.7 | – | – |
 
-Conjuntos propios del autor (inglés y coreano):
+Resultados en conjuntos propios (ingles y coreano):
 
 | Conjunto | n | Mica | JEV 1.13 | Qwen3.5-4B | JevK5 4B | Kev 4B | Nimble 9B | Laya |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| Held-out | 7.328 | 67,4 | 74,7 | 54,4 | 25,5 | 56,4 | 53,9 | 25,3 |
-| Held-out, solo inglés | 3.044 | 67,0 | 74,1 | 55,0 | 61,0 | 57,0 | 54,8 | 32,6 |
-| Held-out, solo coreano | 4.284 | 67,7 | 75,2 | 54,1 | – | 55,9 | 53,3 | 20,1 |
-| Dev | 2.222 | 78,9 | 79,2 | 60,1 | 29,3 | 65,1 | 67,0 | 34,8 |
-| Entradas perturbadas | 2.752 | 77,3 | 73,3 | 51,6 | 29,6 | 48,7 | 44,5 | 20,8 |
-| Estilo chat coreano | 105 | 86,7 | 81,0 | 55,2 | – | 69,5 | 75,2 | 21,9 |
-| Entradas largas, muchas opciones | 1.904 | 75,6 | 77,8 | 54,1 | 18,9 | 59,9 | 36,8 | 14,2 |
-| Conocimiento | 322 | 81,1 | 91,9 | 65,2 | 42,2 | 68,0 | 73,9 | 39,1 |
-| Transferencia de conceptos | 344 | 71,8 | 72,1 | 48,0 | 47,1 | 51,4 | 51,7 | 25,3 |
+| Held-out | 7.328 | 67.4 | 74.7 | 54.4 | 25.5 | 56.4 | 53.9 | 25.3 |
+| Held-out, solo ingles | 3.044 | 67.0 | 74.1 | 55.0 | 61.0 | 57.0 | 54.8 | 32.6 |
+| Held-out, solo coreano | 4.284 | 67.7 | 75.2 | 54.1 | – | 55.9 | 53.3 | 20.1 |
+| Dev | 2.222 | 78.9 | 79.2 | 60.1 | 29.3 | 65.1 | 67.0 | 34.8 |
+| Entradas perturbadas | 2.752 | 77.3 | 73.3 | 51.6 | 29.6 | 48.7 | 44.5 | 20.8 |
+| Estilo chat coreano | 105 | 86.7 | 81.0 | 55.2 | – | 69.5 | 75.2 | 21.9 |
+| Entradas largas, muchas opciones | 1.904 | 75.6 | 77.8 | 54.1 | 18.9 | 59.9 | 36.8 | 14.2 |
+| Conocimiento | 322 | 81.1 | 91.9 | 65.2 | 42.2 | 68.0 | 73.9 | 39.1 |
+| Transferencia de conceptos | 344 | 71.8 | 72.1 | 48.0 | 47.1 | 51.4 | 51.7 | 25.3 |
 
-Resultados de JevBench a través del servidor llama.cpp y del runner de JevBench (RTX 3090, GGUF BF16, una petición a la vez, 231 ítems públicos, todos con respuesta válida): easy 1.000, original 1.000, hard 0.649, ECE 0.064, p50 54 ms, p95 552 ms. En el tier hard se observa una caída de 69,5 (PyTorch) a 64,9 (llama.cpp).
+Nota del autor: JevK5 es solo en ingles y Laya acepta hasta 1.024 tokens, por lo que muchas de sus filas no son soportadas. Los conjuntos de entradas largas, estilo chat y conocimiento estan cerca de la distribucion de entrenamiento y deben leerse como resultados in-distribution.
 
-Dato adicional del conjunto perturbado: ante una nota dentro del estado que indica al modelo que elija una opción incorrecta, Mica acierta el 69,1 %, JEV 1.13 el 17,5 %, Kev 4B el 31,4 % y el Qwen3.5-4B base el 1,0 %. La misma nota apuntando a la opción correcta eleva a Mica al 88,7 %.
+Resultados en JevBench publico (231 items) a traves del servidor llama.cpp en una RTX 3090 con GGUF BF16, una peticion a la vez: exactitud easy 1.000, original 1.000, hard 0.649; ECE 0.064; latencia p50 54 ms y p95 552 ms. Los 231 items devolvieron respuestas validas. En PyTorch BF16 el tier hard alcanza 69.5 frente a 64.9 via llama.cpp.
 
 ## Requisitos de hardware
 
-- Peso del GGUF BF16: 9,7 GB (dato del autor). El peso de los ficheros Q8_0, Q6_K, Q5_K_M, Q4_K_M y Q4_0 no se publica (no disponible); para un modelo de 4,22 B de parámetros, una cuantización Q4_K_M suele ocupar en torno a 2,5-3 GB, cifra estimada y no confirmada por el autor.
-- Los safetensors BF16 requieren, como referencia, unos 8,4 GB de pesos en memoria más caché KV y overhead del runtime: estimación, no publicada por el autor.
-- GPU validada por el autor: RTX 3090 (24 GB), con GGUF BF16 y una petición simultánea.
-- La imagen Docker se compila para arquitecturas CUDA 86, 89 y 90, ajustables con `--build-arg CUDA_ARCH=...`.
-- Al ser un modelo de 4B, cabe en GPU de consumo con cuantizaciones bajas (Q4/Q5) en tarjetas de 8-12 GB; el autor no publica una matriz de VRAM por GPU (no disponible).
-- Opciones de despliegue documentadas: servidor propio sobre llama.cpp b11010 compilado en `./runtime`, imagen Docker con `docker run --gpus all -p 8010:8010`, y ejecución en PyTorch con transformers para evaluación.
-- Endpoint de servicio: `http://127.0.0.1:8010/v1/systemone`. Se puede forzar un fichero menor con `-e MICA_GGUF=mica-v0.1-4b-Q5_K_M.gguf`.
-- Latencia medida (RTX 3090, GGUF BF16, una petición a la vez): p50 54 ms, p95 552 ms. No se publica throughput agregado en concurrencia (no disponible).
-- No se documenta soporte para vLLM, TGI, Ollama ni TensorRT-LLM en la información disponible.
+- VRAM estimada: el GGUF BF16 pesa 9,7 GB; las variantes Q8_0, Q6_K, Q5_K_M, Q4_K_M y Q4_0 reducen el peso progresivamente (el autor sugiere Q5_K_M como alternativa mas pequena, sin cifra exacta publicada).
+- GPU recomendadas: RTX 3090 (medida por el autor, CUDA arch 86), A100 (arch 80, no incluida por defecto en el Dockerfile), H100 (arch 90, incluida). El Dockerfile compila para arquitecturas CUDA 86, 89 y 90.
+- Cabe en GPU de consumo: si, en RTX 3090 con BF16 GGUF; las cuantizaciones Q5_K_M y Q4_K_M permiten ajustar en GPUs con menos de 10 GB de VRAM (estimacion no confirmada por el autor).
+- Opciones de despliegue: llama.cpp b11010 (runtime propio del repositorio), servidor HTTP en `/v1/systemone`, Docker. El modelo incluye pesos safetensors para uso con transformers, aunque la model card documenta el despliegue via llama.cpp.
+- Latencia y throughput: p50 de 54 ms y p95 de 552 ms en RTX 3090 con BF16 GGUF y una peticion concurrente; no se publican cifras de throughput con batching.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | JevBench hard | MMLU-Pro | Held-out | Licencia / disponibilidad |
-|---|---|---|---|---|---|---|
-| Mica v0.1 4B | 4,22 B | 8.192 tokens (límite del servidor) | 69,5 | 53,0 | 67,4 | Apache-2.0, pesos abiertos en HF (safetensors + GGUF) |
-| JEV 1.13 | no disponible | no disponible | 74,3 | 82,3 | 74,7 | Modelo hospedado de TypeSafe, no disponible como pesos abiertos |
-| Qwen3.5-4B (base) | 4 B (aprox.) | no disponible | 61,0 | 45,2 | 54,4 | Licencia del modelo base (no detallada aquí) |
-| JevK5 4B | 4 B (aprox.) | no disponible | 76,2 | 53,5 | 25,5 | Solo inglés; muchas filas de los conjuntos propios no soportadas |
-| Kev 4B | 4 B (aprox.) | no disponible | 52,4 | 49,7 | 56,4 | no disponible |
-| Nimble 9B | 9 B (aprox.) | no disponible | 23,8 | – | 53,9 | no disponible |
-| Laya | no disponible | 1.024 tokens | 10,5 | – | 25,3 | Muchas filas no soportadas por límite de contexto |
+| Modelo | Parametros | Contexto | JevBench hard | MMLU-Pro | Licencia | Disponibilidad |
+|---|---|---:|---:|---:|---|---|
+| Mica v0.1 4B | 4,2 B | 8.192 | 69.5 | 53.0 | Apache-2.0 | Pesos abiertos en HF |
+| JEV 1.13 | no disponible | no disponible | 74.3 | 82.3 | no disponible (hosted) | Solo servicio hosted |
+| Qwen3.5-4B | 4 B aprox. | no disponible | 61.0 | 45.2 | no disponible | Pesos abiertos en HF |
+| JevK5 4B | 4 B aprox. | no disponible | 76.2 | 53.5 | no disponible | Pesos abiertos |
+| Kev 4B | 4 B aprox. | no disponible | 52.4 | 49.7 | no disponible | Pesos abiertos |
+| Nimble 9B | 9 B aprox. | no disponible | 23.8 | – | no disponible | Pesos abiertos |
 
-Los recuentos de parámetros de los modelos comparados no se detallan en la información disponible; las cifras marcadas como aproximadas proceden de la nomenclatura de sus nombres y no de datos verificados.
+Mica supera al modelo base Qwen3.5-4B en todos los conjuntos de decision evaluados y se acerca a JEV 1.13 en tareas de decision especifica, aunque queda por detras en conocimiento general (MMLU-Pro 53.0 frente a 82.3). JevK5 4B obtiene mejor exactitud en JevBench hard pero es solo en ingles y rinde mucho peor en los conjuntos held-out propios del autor.
 
 ## Limitaciones y advertencias
 
-- No es un modelo generativo: no produce texto libre, solo distribuciones sobre respuestas permitidas. No sirve para chat, redacción ni razonamiento abierto.
-- Límite duro de entrada: más de 8.192 tokens devuelve HTTP 400 en lugar de truncar, lo que obliga a gestionar la longitud en el cliente.
-- Cobertura lingüística reducida a inglés y coreano. Otros idiomas no están soportados.
-- Rendimiento inferior al modelo hospedado JEV 1.13 en la mayoría de conjuntos, con una diferencia notable en conocimiento (MMLU-Pro 53,0 frente a 82,3) y en Kev transfer v9 (69,2 frente a 82,0).
-- Degradación al servir con llama.cpp: el tier hard de JevBench baja de 69,5 en PyTorch a 64,9 a través del servidor.
-- Varios conjuntos de evaluación (entradas largas, estilo chat y conocimiento) están cerca de la distribución de entrenamiento; el propio autor indica que deben leerse como resultados in-distribution.
-- Riesgo de contaminación parcial: la mitad de los ítems públicos hard, junto con Kev transfer v9 y SemIf, se usaron durante el desarrollo para comparar recetas y fijar la escala del LoRA, aunque se verificó que ningún ítem público de JevBench aparece en las 77.732 filas de entrenamiento.
-- Sensibilidad a instrucciones inyectadas en el campo de estado: una nota que pide elegir una opción incorrecta reduce la precisión al 69,1 % (frente a 1,0 % del base Qwen3.5-4B), y la misma nota apuntando a la opción correcta la eleva al 88,7 %. El texto del estado influye de forma medible en la decisión.
-- Riesgo de alucinación no aplica en el sentido generativo, pero sí existe riesgo de clasificación errónea en dominios alejados de los datos de entrenamiento.
-- La licencia es Apache-2.0, lo que permite uso comercial, pero el repositorio remite a un fichero `NOTICE` que debe revisarse antes de desplegar en producción.
-- El repositorio ocupa 38,0 GB, por lo que conviene descargar únicamente la revisión y el fichero de cuantización necesarios (`--revision ca36594...`).
-- No se documentan sesgos específicos de género, raza o ideología en la información disponible.
+- No es un modelo generativo: no produce texto libre, explicaciones ni razonamiento multi-step; solo distribuciones sobre opciones predefinidas.
+- Contexto limitado a 8.192 tokens; las entradas mas largas se rechazan con HTTP 400 en lugar de truncarse, lo que exige gestion explicita en el cliente.
+- Solo soporta ingles y coreano; el rendimiento en otros idiomas no esta documentado y previsiblemente sera bajo.
+- Riesgo de alucinacion reducido por el formato de salida, pero persisten errores de clasificacion: exactitud del 67,4 % en el held-out general y del 69,5 % en JevBench hard.
+- Sensibilidad a entradas perturbadas: el autor senala que la mayor brecha aparece cuando una nota dentro del estado indica al modelo elegir una opcion incorrecta, lo que sugiere vulnerabilidad a inyeccion de instrucciones en el estado.
+- Los conjuntos de entradas largas, estilo chat y conocimiento estan cerca de la distribucion de entrenamiento; sus cifras no deben extrapolarse a dominios fuera de distribucion.
+- Diferencia entre backends: el tier hard baja de 69.5 (PyTorch BF16) a 64.9 (llama.cpp), por lo que la eleccion de runtime afecta a la exactitud.
+- Licencia Apache-2.0 permite uso comercial, pero debe revisarse el fichero NOTICE por posibles atribuciones adicionales derivadas del modelo base Qwen3.5-4B.
+- El repositorio ocupa 38,0 GB por incluir multiples cuantizaciones; conviene descargar solo el fichero necesario.
+- No se documentan sesgos especificos ni evaluaciones de seguridad; en produccion conviene anadir validacion y monitorizacion.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/sky7350/Mica-v0.1-4B
-- Repositorio de código, Dockerfile y scripts: https://github.com/akivet/Mica-v0.1-4B
-- Resultados por ítem del conjunto público de 231 elementos: https://github.com/akivet/Mica-v0.1-4B/blob/main/results/public231/mica-v0.1-4b.jsonl
-- JevBench (runner y adaptador typesafe): https://github.com/fstandhartinger/jevbench
-- Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B (revisión `851bf6e`)
-- Revisión de pesos citada por el autor: `ca36594cc2067c7252704f9f304cc10ef11c7c5c`
-- Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0
+- Repositorio GitHub (codigo, Dockerfile y scripts): https://github.com/akivet/Mica-v0.1-4B
+- Resultados por item en JevBench publico: https://github.com/akivet/Mica-v0.1-4B/blob/main/results/public231/mica-v0.1-4b.jsonl
+- JevBench (benchmark): https://github.com/fstandhartinger/jevbench
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

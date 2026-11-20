@@ -1,0 +1,72 @@
+{
+  "schema": 2,
+  "id": "apple/DepthPro2-focal",
+  "slug": "apple-depthpro2-focal",
+  "author": "apple",
+  "url": "https://huggingface.co/apple/DepthPro2-focal",
+  "created_at": "2026-11-19T18:02:39.000Z",
+  "updated_at": "2026-11-19T20:45:40.000Z",
+  "license": "apple-amlr",
+  "license_family": "unknown",
+  "pipeline_tag": "depth-estimation",
+  "library": "depth-pro-2",
+  "languages": [],
+  "tags": [
+    "depth-pro-2",
+    "safetensors",
+    "focal-length-estimation",
+    "field-of-view",
+    "camera-calibration",
+    "depth-estimation",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23455450,
+  "parameters_human": "23.5M",
+  "storage_bytes": 93840880,
+  "storage_human": "94 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Apple",
+      "url": "https://www.apple.com/",
+      "snippet": "Discover the innovative world of Apple and shop everything iPhone, iPad, Apple Watch, Mac, and Apple TV, plus explore …Read more"
+    },
+    {
+      "title": "Apple (France)",
+      "url": "https://www.apple.com/fr/",
+      "snippet": "Tout l’univers Apple, avec les iPhone, iPad, Apple Watch, Mac et Apple TV. Ainsi que les accessoires, le divertissement et notre …Read more"
+    },
+    {
+      "title": "Gérer le compte Apple",
+      "url": "https://appleid.apple.com/fr/",
+      "snippet": "Your Apple Account is the account you use for all Apple services."
+    },
+    {
+      "title": "account.apple.com",
+      "url": "https://account.apple.com/sign-in",
+      "snippet": ""
+    },
+    {
+      "title": "iCloud",
+      "url": "https://www.icloud.com/",
+      "snippet": "Log in to iCloud to access your photos, mail, notes, documents and more. Sign in with your Apple Account or create a new account …Read more"
+    }
+  ]
+}

@@ -2,99 +2,98 @@
 
 ## Resumen
 
-Muse-Glimmer-30B-Uncensored-Heretic-GGUF es una coleccion de cuantizaciones en formato GGUF del modelo OS-Software/Muse-Glimmer-30B-Uncensored-Heretic, publicada por mradermacher. El modelo subyacente pertenece a la familia de variantes "abliterated", "decensored" y "heretic", es decir, versiones en las que se ha intervenido sobre los pesos para reducir los mecanismos de rechazo y los sesgos de alineamiento de seguridad. Esta publicacion concreta no introduce cambios de entrenamiento: su aportacion es la conversion de los pesos originales a GGUF y la generacion de multiples niveles de cuantizacion para ejecucion en CPU y GPU de consumo.
+Muse-Glimmer-30B-Uncensored-Heretic-GGUF es la versión cuantizada en formato GGUF del modelo OS-Software/Muse-Glimmer-30B-Uncensored-Heretic, publicada por mradermacher, un conocido creador de cuantizaciones para el ecosistema llama.cpp. El modelo base es una variante "abliterated" o "decensored" de un modelo de 30B, es decir, se ha modificado para eliminar o atenuar los mecanismos de rechazo y las capas de alineación de seguridad, de modo que genera contenido que el modelo original rechazaría. Con 27.854.794.240 parámetros reales (unos 27,85B), se sitúa en la franja de los modelos densos de gran tamano.
 
-El recuento real de parametros en safetensors es de 27.854.794.240 (aproximadamente 27,85 mil millones), pese a la denominacion comercial "30B" del nombre. El repositorio ocupa 197,5 GB y ofrece cuantizaciones que van desde Q2_K (10,8 GB) hasta Q8_0 (29,7 GB). Ademas incluye dos ficheros mmproj (Q8_0 y f16), el proyector multimodal que emplea llama.cpp para modelos con entrada de imagen, lo que sugiere soporte de vision en el modelo base.
+El interés de esta publicación es práctico: ofrece el modelo en múltiples niveles de cuantización (desde Q2_K de 10,8 GB hasta Q8_0 de 29,7 GB), lo que permite ejecutarlo en hardware de consumo con pérdida de calidad controlada, además de incluir ficheros mmproj para capacidades multimodales. La licencia declarada es Apache 2.0 y el idioma soportado es únicamente inglés.
 
-La relevancia de esta ficha es practica: permite ejecutar un modelo de casi 28B parametros sin censura en hardware local, algo inviable con pesos completos en precision f16. La licencia declarada es Apache 2.0, lo que facilita su uso comercial, aunque el caracter "uncensored" y "abliterated" conlleva riesgos de contenido que deben evaluarse antes de cualquier despliegue en produccion. No hay metricas de benchmark publicadas ni informacion verificable sobre contexto, arquitectura o datos de entrenamiento en la documentacion proporcionada.
+Es relevante ahora porque el ecosistema de modelos sin censura ("uncensored") tiene demanda para investigación sobre alineación, generación creativa sin restricciones y experimentación con roleplay, y porque la cuantización GGUF es el vehículo estándar para desplegar estos modelos en local con llama.cpp, Ollama o LM Studio. No obstante, conviene subrayar que la model card no documenta arquitectura, datos de entrenamiento ni benchmarks, por lo que gran parte de las especificaciones quedan como "no disponible".
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 27.854.794.240 (aproximadamente 27,85 mil millones) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (modelo base transformer denso, inferido del tamano y del pipeline; no confirmado en la información) |
+| Parámetros totales | 27.854.794.240 (27,85B) |
+| Parámetros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K; ademas mmproj-Q8_0 y mmproj-f16 |
-| Idiomas soportados | en (ingles) |
+| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj en Q8_0 y f16 |
+| Idiomas soportados | en (inglés) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (el modelo base usa safetensors) |
+| Formato de pesos | GGUF (con ficheros mmproj para multimodal) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo base en la documentacion proporcionada. El nombre "30B" y el recuento de parametros (27,85 mil millones) son compatibles con un transformer decoder-only de escala media, pero no hay confirmacion explicita. Tampoco se detallan el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO u otras fases de ajuste.
+No se dispone de información sobre la arquitectura interna del modelo en la documentación proporcionada. Por el número de parámetros (27,85B) y el pipeline declarado (transformers), se trata presumiblemente de un transformer denso, pero la model card no confirma la familia arquitectónica, la longitud de contexto nativa ni si emplea técnicas como atención lineal o decodificación especulativa. Tampoco se detallan los datos de entrenamiento: no hay cifras de tokens, composición del dataset ni mención a fases de RLHF, DPO o similares.
 
-La innovacion tecnica asociada no esta en esta publicacion, sino en el modelo origen: se trata de una variante "abliterated"/"heretic", una tecnica de edicion de pesos que busca neutralizar las direcciones de activacion responsables del comportamiento de rechazo sin reentrenar el modelo. Sobre esa base, mradermacher aplica conversion a GGUF de tipo estatico (quantize_version 2, output_tensor_quantised 1, convert_type hf). Existe ademas un repositorio complementario con cuantizaciones ponderadas con imatrix (i1-GGUF), recomendadas por el autor para preservar mejor la calidad en niveles bajos de bits. La presencia de ficheros mmproj indica que el modelo base incorpora un componente multimodal, presumiblemente vision-lenguaje, aunque no se especifica su alcance.
+Lo que sí se documenta es el proceso de modificación del modelo base: la etiqueta "abliterated" indica que se han identificado y neutralizado las direcciones de activación asociadas al rechazo de peticiones, técnica habitual para producir variantes sin censura. El término "heretic" hace referencia a la herramienta de abliteración automática del mismo nombre, que busca las capas responsables del comportamiento de rechazo y las modifica quirúrgicamente. Esta publicación de mradermacher no entrena el modelo, sino que lo convierte a GGUF y lo cuantiza en 11 variantes de precisión, además de generar los ficheros mmproj que habilitan entrada multimodal (visión) en llama.cpp.
 
 ## Capacidades
 
-- Generacion de texto conversacional, segun la etiqueta "conversational" del repositorio.
-- Comportamiento sin censura ("uncensored", "decensored", "abliterated"): menor tendencia a rechazar solicitudes, incluido contenido sensible o controvertido.
-- Posible entrada multimodal (imagen) gracias a los ficheros mmproj-Q8_0 y mmproj-f16 incluidos; no confirmado de forma explicita en la tarjeta.
-- Uso como modelo base para ajuste fino posterior, dado que se publica en GGUF y el original en safetensors.
-- No hay constancia de soporte de tool calling, function calling, agentes, razonamiento multi-paso, modo "thinking" ni audio.
-- Capacidades multilingues limitadas: la unica lengua declarada es el ingles.
-- No se documentan capacidades especificas de codigo, matematicas o vision mas alla de la inferencia general.
+- Generación de texto conversacional en inglés, orientada a diálogo multi-turno.
+- Generación de contenido sin las restricciones de rechazo del modelo original (comportamiento "uncensored" / "abliterated").
+- Capacidades multimodales: la presencia de ficheros mmproj (Q8_0 y f16) indica soporte de entrada de imágenes en el ecosistema llama.cpp.
+- Uso como modelo base para ajuste fino o experimentación sobre alineación y seguridad.
+- Compatibilidad con endpoints (etiqueta endpoints_compatible) para despliegue como servicio.
+- No se documenta soporte explícito de tool calling, function calling ni razonamiento agéntico multi-paso.
+- Capacidades multilingües limitadas al inglés según la model card.
 
 ## Casos de uso
 
-- Ejecucion local en estaciones de trabajo sin GPU de datacenter: las cuantizaciones Q4_K_S (16,2 GB) y Q4_K_M (17,0 GB) permiten correr el modelo en una unica GPU de 24 GB, algo imposible con los pesos f16 completos.
-- Investigacion sobre alineamiento y seguridad: la variante abliterated sirve para estudiar como se comporta un modelo cuando se eliminan los mecanismos de rechazo, comparandolo con la version original alineada.
-- Generacion creativa sin restricciones tematicas: escritura de ficcion, guiones o narrativa que aborde violencia, temas adultos o contenido politicamente sensible, donde un modelo censurado suele negarse.
-- Analisis de contenido multimodal: si se confirma el soporte de vision mediante los ficheros mmproj, podria emplearse para descripcion de imagenes o extraccion de informacion de capturas y documentos digitalizados.
-- Prototipado de asistentes conversacionales en ingles: su etiqueta "conversational" y el formato GGUF lo hacen apto para chatbots locales integrados en aplicaciones de escritorio.
-- Despliegue en entornos con requisitos de privacidad: al ejecutarse integramente en local mediante llama.cpp u Ollama, los datos no salen del equipo, lo que encaja en sectores con normativa estricta de tratamiento de informacion.
-- Base para fine-tuning con LoRA en tareas de dominio: se puede partir de la version safetensors del modelo original y aplicar ajustes especificos antes de recuantizar.
+- Investigación sobre alineación y seguridad: el modelo permite estudiar cómo se comporta una variante abliterated frente a la original en prompts sensibles, comparando tasas de rechazo y calidad de respuesta en entornos controlados.
+- Generación creativa sin restricciones: escritura de ficción, guiones o narrativa que requiera temáticas adultas o controvertidas, donde un modelo alineado rechazaría la petición; el contexto conversacional y el inglés nativo lo hacen adecuado para este fin.
+- Roleplay y personajes: diálogo multi-turno con personas ficticias, aprovechando la ausencia de rechazos para mantener la coherencia del personaje en escenarios que un modelo estándar bloquearía.
+- Despliegue local en hardware de consumo: las cuantizaciones Q4_K_M (17,0 GB) y Q4_K_S (16,2 GB) caben en GPUs de 24 GB como la RTX 4090 o en configuraciones de 16 GB con offloading parcial a CPU, lo que permite ejecutar el modelo sin conexión y sin depender de APIs.
+- Análisis de imágenes en local: gracias a los ficheros mmproj, puede procesar imágenes junto con texto en llama.cpp, útil para descripción de contenido o extracción de información visual en flujos privados.
+- Base para fine-tuning especializado: al ser un modelo de 27,85B con licencia Apache 2.0, puede servir como punto de partida para ajustes en dominios concretos (por ejemplo, escritura técnica o narrativa) sin las restricciones de licencias más limitativas.
+- Evaluación comparativa de cuantizaciones: los 11 niveles de cuantización permiten medir empíricamente la degradación de calidad (perplejidad, coherencia) entre Q2_K y Q8_0 en una misma tarea.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (solo pesos, sin cache KV): Q2_K 10,8 GB; Q3_K_S 12,6 GB; Q3_K_M 13,8 GB; Q3_K_L 14,8 GB; IQ4_XS 15,4 GB; Q4_K_S 16,2 GB; Q4_K_M 17,0 GB; Q5_K_S 19,4 GB; Q5_K_M 19,9 GB; Q6_K 23,0 GB; Q8_0 29,7 GB.
-- Anadir entre 1 y 3 GB adicionales segun la longitud de contexto y el tamano del batch para la cache KV y las activaciones.
-- Cabe en GPU de consumo: RTX 3090, RTX 4090, RTX 5090 y similares de 24 GB pueden ejecutar con holgura Q4_K_M y, con contexto reducido, Q5_K_M; Q6_K (23,0 GB) queda al limite. Las cuantizaciones Q2_K a Q4_K_S tambien son viables en GPUs de 12-16 GB (RTX 4080, RTX 4070 Ti Super) si se sacrifica contexto.
-- GPU profesionales: A100 40 GB, A100 80 GB, H100 80 GB y L40S 48 GB ejecutan sin problema Q8_0 e incluso los pesos f16 si se dispone de suficiente memoria.
-- Los ficheros mmproj (2,2 GB en Q8_0 y 3,9 GB en f16) consumen VRAM adicional cuando se activa el modo multimodal.
-- Opciones de despliegue: llama.cpp, Ollama, KoboldCpp, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. vLLM y TGI no son los destinos naturales de este formato, aunque existen vias de conversion.
-- Latencia y throughput: no disponibles. Dependeran del hardware, del nivel de cuantizacion y del backend utilizado.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto KV cache):
+  - Q2_K: 10,8 GB.
+  - Q3_K_M: 13,8 GB.
+  - IQ4_XS: 15,4 GB.
+  - Q4_K_M: 17,0 GB.
+  - Q5_K_M: 19,9 GB.
+  - Q6_K: 23,0 GB.
+  - Q8_0: 29,7 GB.
+- GPU recomendadas: para Q4_K_M y superiores, GPUs de 24 GB (RTX 3090, RTX 4090, A10G) o superiores; para Q8_0, A100 40 GB o H100. Las cuantizaciones Q2_K y Q3_K_S pueden caber en GPUs de 12-16 GB (RTX 3060 12 GB, RTX 4060 Ti 16 GB) con contexto reducido.
+- Cabe en GPU de consumo: sí, en RTX 4090 (24 GB) con Q4_K_M/Q5_K_S y contexto moderado; en RTX 3060 12 GB solo con Q2_K y contexto limitado.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF; los ficheros mmproj permiten multimodal en llama.cpp.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone en la informacion proporcionada de datos de rendimiento, contexto o licencia de modelos alternativos que permitan una comparativa rigurosa. Como referencia estructural, la eleccion principal dentro de este mismo ecosistema es el nivel de cuantizacion:
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Muse-Glimmer-30B-Uncensored-Heretic-GGUF | 27,85B | no disponible | Apache 2.0 | GGUF | Variante abliterated, solo inglés, multimodal vía mmproj |
+| OS-Software/Muse-Glimmer-30B-Uncensored-Heretic (original) | 27,85B | no disponible | Apache 2.0 | safetensors | Modelo base sin cuantizar del que deriva esta publicación |
+| Variantes abliterated de Llama 3.1 8B / Qwen 2.5 | 7-8B | 128K (Qwen 2.5) | Apache 2.0 / otras | GGUF, safetensors | Alternativas más pequenas y ligeras para uso en hardware modesto, con contexto documentado |
+| Modelos densos de ~30B alineados (p. ej. Qwen 2.5 32B) | ~32B | 128K | Apache 2.0 | GGUF, safetensors | Referencia de calidad y contexto, pero con rechazos de seguridad activos |
 
-| Variante | Tamano | Notas del autor |
-|---|---|---|
-| Q4_K_S | 16,2 GB | rapido, recomendado |
-| Q4_K_M | 17,0 GB | rapido, recomendado |
-| Q6_K | 23,0 GB | calidad muy buena |
-| Q8_0 | 29,7 GB | rapido, mejor calidad |
-| IQ4_XS | 15,4 GB | alternativa de tamano similar a Q4_K_S |
-| Q2_K | 10,8 GB | minima huella, mayor perdida de calidad |
-
-El autor recomienda las cuantizaciones ponderadas con imatrix del repositorio Muse-Glimmer-30B-Uncensored-Heretic-i1-GGUF frente a las estaticas de este repositorio. Comparativa con otros modelos de la misma categoria (parametros, contexto, rendimiento, licencia): no disponible.
+La comparación cuantitativa de rendimiento no es posible porque no hay benchmarks publicados para este modelo. La ventaja diferencial frente a alternativas es la ausencia de censura y la disponibilidad de 11 cuantizaciones; la desventaja es la falta de documentación técnica y el soporte exclusivo de inglés.
 
 ## Limitaciones y advertencias
 
-- Modelo "uncensored"/"abliterated": la reduccion deliberada de los mecanismos de rechazo aumenta la probabilidad de generar contenido ofensivo, ilegal, peligroso o inexacto. No es apto para aplicaciones de cara al publico sin filtros adicionales.
-- Riesgo de alucinacion no cuantificado: al no haber benchmarks publicados, no se puede estimar la fiabilidad factual.
-- Idioma: unicamente ingles declarado. El rendimiento en castellano u otras lenguas no esta garantizado y probablemente sera inferior.
-- Longitud de contexto desconocida: no se puede planificar su uso en tareas de contexto largo sin verificacion previa.
-- Licencia Apache 2.0 declarada en las etiquetas del repositorio, lo que en principio permite uso comercial. No obstante, el modelo base pertenece a un tercero (OS-Software) y conviene verificar su licencia original, ya que la tarjeta proporcionada no la detalla.
-- El autor de esta publicacion es el cuantizador, no el creador del modelo; cualquier incidencia de calidad debe rastrearse hasta el modelo base.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: sin validacion de la comunidad ni evidencia empirica de funcionamiento.
-- Las cuantizaciones de 2 y 3 bits degradan notablemente la calidad; solo recomendables si la memoria es el factor limitante absoluto.
-- El soporte multimodal es inferido a partir de los ficheros mmproj, no confirmado en la documentacion.
+- El modelo está modificado para eliminar rechazos de seguridad; puede generar contenido ofensivo, ilegal o dañino sin filtros. No es apto para aplicaciones de cara al público sin capas de moderación adicionales.
+- Riesgo elevado de alucinación: no se documentan datos de entrenamiento ni evaluaciones de fidelidad, y las variantes abliterated suelen degradar ligeramente la coherencia y el seguimiento de instrucciones.
+- Idiomas: solo inglés según la model card; el rendimiento en castellano no está garantizado.
+- Longitud de contexto desconocida: impide planificar despliegues con documentos largos o conversaciones extensas.
+- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre el comportamiento del modelo ni sobre la legalidad del contenido generado en jurisdicciones concretas.
+- Las cuantizaciones bajas (Q2_K, Q3_K_S) degradan notablemente la calidad; para producción se recomienda Q5_K_M o superior.
+- La model card no documenta sesgos conocidos, pero al derivar de un modelo entrenado principalmente en inglés, es previsible un sesgo cultural anglófono.
+- El repo ocupa 197,5 GB en total; conviene descargar solo la cuantización necesaria.
 
 ## Enlaces
 
-- Repositorio GGUF (estatico): https://huggingface.co/mradermacher/Muse-Glimmer-30B-Uncensored-Heretic-GGUF
-- Repositorio GGUF con cuantizaciones imatrix: https://huggingface.co/mradermacher/Muse-Glimmer-30B-Uncensored-Heretic-i1-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/Muse-Glimmer-30B-Uncensored-Heretic-GGUF
 - Modelo base: https://huggingface.co/OS-Software/Muse-Glimmer-30B-Uncensored-Heretic
-- Pagina de resumen del cuantizador para este modelo: https://hf.tst.eu/model#Muse-Glimmer-30B-Uncensored-Heretic-GGUF
-- Guia de referencia sobre ficheros GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Solicitudes de cuantizacion y FAQ: https://huggingface.co/mradermacher/model_requests
-- Analisis sobre tipos de cuantizacion: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Grafica comparativa de perplejidad por tipo de cuantizacion: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Cuantizaciones con imatrix: https://huggingface.co/mradermacher/Muse-Glimmer-30B-Uncensored-Heretic-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Muse-Glimmer-30B-Uncensored-Heretic-GGUF
+- Guía de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y peticiones de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Notas sobre tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

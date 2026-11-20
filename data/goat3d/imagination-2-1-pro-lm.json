@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "GoaT3D/Imagination-2.1-Pro-LM",
+  "slug": "goat3d-imagination-2-1-pro-lm",
+  "author": "GoaT3D",
+  "url": "https://huggingface.co/GoaT3D/Imagination-2.1-Pro-LM",
+  "created_at": "2026-11-20T03:03:32.000Z",
+  "updated_at": "2026-11-20T03:04:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 61078000378,
+  "storage_human": "61.1 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

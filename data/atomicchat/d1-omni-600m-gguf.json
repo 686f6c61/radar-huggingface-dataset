@@ -35,7 +35,7 @@
     "feature-extraction"
   ],
   "likes": 0,
-  "downloads_30d": 1114,
+  "downloads_30d": 1108,
   "trending_score": 0,
   "parameters": 380732161,
   "parameters_human": "380.7M",
@@ -55,31 +55,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "UK Home | Daily Mail Online",
-      "url": "https://www.dailymail.com/home/index.html",
-      "snippet": "1 day ago · Daily Mail Online - get the latest breaking news, showbiz & celebrity photos, sport news & rumours, viral videos and top …"
-    },
-    {
-      "title": "Home | Daily Mail Online",
-      "url": "https://www.dailymail.co.uk/home/index.html",
-      "snippet": ""
-    },
-    {
-      "title": "UK News | Breaking news & latest updates | Daily Mail Online",
-      "url": "https://www.dailymail.com/news/index.html",
-      "snippet": "1 day ago · All the latest breaking UK news with in-depth comment and analysis, pictures and videos from Daily Mail."
-    },
-    {
-      "title": "US Home | Daily Mail Online",
-      "url": "https://www.dailymail.com/ushome/index.html",
-      "snippet": "Daily Mail - get the latest breaking news, celebrity photos, viral videos, science & tech news, and top stories from Daily Mail and the …"
-    },
-    {
-      "title": "Home | Mail Online",
-      "url": "https://www.dailymail.com/home/dmHeaderFrame.html",
-      "snippet": "Daily Mail Online - get the latest breaking news, showbiz & celebrity photos, sport news & rumours, viral videos and top stories from …"
-    }
-  ]
+  "sources": []
 }

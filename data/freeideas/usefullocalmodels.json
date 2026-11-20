@@ -56,31 +56,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Best Free AI Models & APIs (2026) | LM Market Cap",
-      "url": "https://lmmarketcap.com/free-ai-models",
-      "snippet": "Every free AI model ranked by quality: free LLMs, coding assistants, and image generators. No API costs, open-source, and ready to use. Start for free."
-    },
-    {
-      "title": "Best Local AI Models by Use Case (2026 Guide) | RunLocalModel",
-      "url": "https://runlocalmodel.com/static-guide.html",
-      "snippet": "Best Local AI Models by Use Case (2026 Guide) Updated: April 26, 2026 This guide is a hand-picked reference to the most practical open-weight AI models for running locally in 2026. Instead of listing every model on Hugging Face, we focus on well-known, widely-used models that work well with Ollama, LM Studio, and llama.cpp. Each entry includes a short original description, hardware hints, and ..."
-    },
-    {
-      "title": "GitHub - awesome-ai-tools/curated-local-ai: A curated list of tools for ...",
-      "url": "https://github.com/awesome-ai-tools/curated-local-ai",
-      "snippet": "A curated list of tools for running AI models locally -- inference engines, UIs, and optimization. Inference Engines • Desktop & Web UIs • Model Hubs • Quantization • Fine-tuning • Local RAG • Voice & Speech • Image Gen • Hardware"
-    },
-    {
-      "title": "9 Best Local AI Tools for Raspberry Pi (Run LLMs on Pi 5)",
-      "url": "https://raspberrytips.com/local-ai-tools-raspberry-pi/",
-      "snippet": "AI tools can be installed on the Raspberry Pi 5 to run large language models (LLMs). They can run completely local, without an internet connection, to keep data private. These AI models can be used for text reasoning, audio processing, or image generation."
-    },
-    {
-      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
-      "url": "https://github.com/ClawLabsAI/free-ai-models",
-      "snippet": "A daily-updated, community-maintained list of every free AI model (free LLM API) available right now. No paywalls. No API key required to browse. Updated automatically every 24 hours by GitHub Actions pulling from OpenRouter, Pollinations AI, and other public sources ..."
-    }
-  ]
+  "sources": []
 }

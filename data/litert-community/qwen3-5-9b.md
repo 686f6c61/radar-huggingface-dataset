@@ -2,97 +2,107 @@
 
 ## Resumen
 
-Qwen3.5-9B en formato LiteRT-LM es la conversión del modelo Qwen/Qwen3.5-9B de Alibaba al runtime LiteRT-LM de Google, orientado a inferencia en dispositivo (on-device) y entornos edge. El trabajo lo firma la comunidad litert-community, que publica dos variantes cuantizadas del decodificador de texto: una en int8 dinámico y otra en INT4 mixto, con el objetivo de que un modelo de 9B parámetros pueda ejecutarse en hardware de consumo y móvil sin depender de la nube.
+Qwen3.5-9B en formato LiteRT-LM es la conversión del modelo Qwen/Qwen3.5-9B de Alibaba Qwen al formato `.litertlm` propietario del runtime LiteRT-LM de Google AI Edge, orientado a inferencia en dispositivo (on-device) y entornos edge. El repositorio, mantenido por la comunidad litert-community, distribuye cuatro variantes cuantizadas (INT8, Mixed INT4 y dos composites para GPU de LiteRT-LM 0.19.x) que contienen únicamente el decodificador de texto del checkpoint original, no el codificador visual.
 
-El modelo base emplea una arquitectura híbrida propia de la familia Qwen3.5: 32 capas, de las cuales 24 usan atención lineal GatedDeltaNet y 8 usan atención completa, con un contexto nativo de 262.144 tokens en el checkpoint original (reducido a 4.096 en estos ficheros). La conversión conserva únicamente el decodificador de texto (8.953.803.264 de los 9.653.104.368 parámetros del release), por lo que el codificador de visión y la cabeza de predicción multi-token no están presentes y las capacidades multimodales del modelo original no están disponibles aquí.
+El modelo base es un transformer híbrido de 9B parámetros con 32 capas, de las cuales 24 emplean GatedDeltaNet (atención lineal con estado recurrente de tamaño constante) y 8 usan atención completa con KV cache creciente. Incorpora una ventana de contexto nativa de 262.144 tokens en el checkpoint original, aunque los ficheros LiteRT-LM la limitan a 4.096 tokens. La licencia Apache 2.0 y el enfoque en despliegue local sin GPU dedicada lo hacen relevante para aplicaciones móviles, embebidas y de escritorio.
 
-Su relevancia actual radica en que demuestra que un transformer híbrido de 9B puede desplegarse en formato LiteRT-LM con un fichero de 6,06 GB en INT4 mixto y decodificar a 46,1 tok/s en la GPU de un Mac Studio M4 Max, manteniendo una puntuación de 95 en GSM8K (frente a 97 del modelo bf16 en transformers). Es, por tanto, una vía práctica para llevar razonamiento y generación de texto de gama media a portátiles y dispositivos móviles con licencia Apache 2.0.
+La relevancia actual reside en la combinación de un modelo de razonamiento de 9B con un runtime optimizado para hardware consumer: la variante Mixed INT4 decodifica a 46,1 tok/s en la GPU de un Mac Studio M4 Max, y las versiones composite de noviembre de 2026 mejoran el prefill un 28,7 % y la decodificación un 24,4 % respecto a la variante Mixed INT4 original.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido: 32 capas (24 de atención lineal GatedDeltaNet + 8 de atención completa), FFN densa por capa, hidden size 4096, intermediate size 12288 |
-| Parametros totales | 8.953.803.264 (solo decodificador de texto; el release completo tiene 9.653.104.368) |
-| Parametros activos | no disponible (modelo denso, no MoE) |
-| Longitud de contexto | 4.096 tokens en estos ficheros (262.144 nativos en el checkpoint original) |
-| Tipos de cuantizacion | int8 dinámico (lineales + embedding) y INT4 mixto (int4 blockwise-32 min-max en lineales, int8 en lm_head y embedding; 48 proyecciones GatedDeltaNet y regla delta en float) |
-| Idiomas soportados | no disponible en la ficha de conversión (Qwen declara 201 idiomas y dialectos para el modelo base) |
+| Arquitectura | Transformer híbrido: 24 capas GatedDeltaNet (atención lineal) + 8 capas de atención completa |
+| Parametros totales | 9.653.104.368 en el release; 8.953.803.264 en estos ficheros (solo decodificador de texto) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | 262.144 tokens nativos en el checkpoint original; 4.096 tokens en los ficheros LiteRT-LM |
+| Tipos de cuantizacion | INT8 dinámico, Mixed INT4 (int4 blockwise-32 + int8 en embedding y lm_head), composites GPU con las mismas recetas |
+| Idiomas soportados | No disponible en esta ficha (Qwen declara 201 idiomas y dialectos para Qwen3.5) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | `.litertlm` (LiteRT-LM); dos ficheros: int8 de 9,20 GB y mixed INT4 de 6,06 GB |
+| Formato de pesos | `.litertlm` (LiteRT-LM); cuatro ficheros: `mixed_int4_gpu_composite_v0190` (6,02 GB), `int8_gpu_composite_v0190` (9,17 GB), `int8` (9,20 GB), `mixed_int4` (6,06 GB) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la híbrida de Qwen3.5: 32 capas con una proporción de una capa de atención completa por cada cuatro de atención lineal, 16 cabezas de atención con 4 KV heads de 256 dimensiones, atención lineal con 16 cabezas de clave y 32 de valor de 128 dimensiones, vocabulario de 248.320 tokens con embeddings no atados y una FFN densa de tamaño intermedio 12288 en cada capa. Solo las 8 capas de atención completa mantienen una caché KV creciente (con presupuesto de 4.096 tokens en estos ficheros); las 24 capas lineales portan un estado convolucional y recurrente de tamaño constante, lo que reduce el coste de memoria en contextos largos.
+La arquitectura sigue el diseño híbrido de Qwen3.5: 32 capas con hidden size 4096 e intermediate size 12288 (FFN denso en todas las capas), 16 cabezas de atención con 4 KV heads de dimensión 256, y atención lineal con 16 cabezas de clave y 32 de valor de dimensión 128. Solo las 8 capas de atención completa mantienen KV cache creciente; las 24 capas GatedDeltaNet portan un estado convolucional y recurrente de tamaño constante, lo que reduce drásticamente el coste de memoria en contextos largos. El vocabulario es de 248.320 tokens con embeddings no atados.
 
-La conversión se realizó con litert-torch (commit 115a1360, con el parche híbrido de Qwen3.5) y se probó con litert-lm 0.18.0 y 0.19.0. No hay información en la documentación proporcionada sobre el volumen de tokens de entrenamiento, la composición del dataset ni las etapas de RLHF/DPO del modelo base; Qwen describe el release como fruto de avances en aprendizaje multimodal, eficiencia arquitectónica y escala de aprendizaje por refuerzo, pero sin cifras concretas. La innovación destacable de esta conversión es la receta de cuantización mixta: se mantienen en float las 48 proyecciones de decaimiento y compuerta de GatedDeltaNet (`in_proj_a` / `in_proj_b`) y la regla delta, que son sensibles a la cuantización, mientras que el resto de lineales se cuantiza a int4 blockwise-32.
+El checkpoint original es multimodal (early-fusion vision-language) y fue entrenado con aprendizaje por refuerzo a escala, según la descripción de Qwen. Sin embargo, estos ficheros LiteRT-LM contienen exclusivamente el decodificador de texto: no incluyen la torre de visión ni la cabeza de predicción multi-token. La conversión se realizó con litert-torch (commit 115a1360 con el parche híbrido de Qwen3.5) y se validó con litert-lm 0.18.0 y 0.19.x. La plantilla de chat es la de los ficheros Qwen3.5-4B, con `enable_thinking` desactivado por defecto (a diferencia del modelo original, que piensa por defecto), y escribe el bloque vacío `<think>\n\n</think>` en el prompt de generación cuando el razonamiento está desactivado.
 
 ## Capacidades
 
-- Generación de texto y razonamiento en modo thinking opcional: el modelo piensa por defecto en el checkpoint original, pero estos ficheros arrancan con thinking desactivado; se activa con `ThinkingConfig(enable_thinking=True)` o `--thinking true` y el runtime devuelve el razonamiento por el canal `thought`.
-- Tool calling / function calling: desde la actualización del 3 de noviembre de 2026, los metadatos incluyen `tool_call_config` y `supports_function_calling: true` para LiteRT-LM 0.19.0, que devuelve las llamadas como tool calls en lugar de texto.
-- Razonamiento matemático: puntuación de 98 (int8) y 95 (INT4 mixto) en GSM8K con thinking desactivado y 2.048 tokens de salida.
-- Capacidades multilingües: el modelo base declara 201 idiomas y dialectos; no hay evaluación específica en esta conversión.
-- Sin visión ni audio: el codificador de visión y la cabeza de predicción multi-token no están incluidos en los ficheros.
-- Ejecución en dispositivo con runtime LiteRT-LM, API de Python y CLI, con soporte de GPU y CPU.
+- Generación de texto y razonamiento en modo dual: respuesta directa por defecto o razonamiento explícito con `ThinkingConfig(enable_thinking=True)` / `--thinking true`, que devuelve la cadena de pensamiento por el canal `thought`.
+- Razonamiento multi-paso y matemáticas, heredado del post-entrenamiento de Qwen3.5 (MMLU-Pro 82,5 e IFEval 91,5 reportados por el proveedor).
+- Tool calling / function calling: los metadatos del LLM incluyen el formato de llamada a herramientas de LiteRT-LM v0.1.
+- Capacidades multilingües según Qwen (201 idiomas y dialectos), si bien la model card de esta conversión no detalla la cobertura efectiva.
+- Sin capacidades de visión ni vídeo en estos ficheros: la torre de visión del checkpoint original no está incluida.
+- Ejecución on-device en CPU y GPU mediante el runtime LiteRT-LM, con backend GPU disponible en las variantes composite para LiteRT-LM 0.19.x.
 
 ## Casos de uso
 
-- Asistente de texto en aplicaciones móviles: el fichero INT4 mixto de 6,06 GB permite integrar generación de texto y razonamiento en un dispositivo de gama alta sin conexión, usando el motor GPU o CPU de LiteRT-LM según el hardware disponible.
-- Automatización de tareas con tool calling en local: con `supports_function_calling` activo en LiteRT-LM 0.19.0, el modelo puede emitir llamadas estructuradas a funciones para orquestar flujos como consultas a bases de datos locales o control de aplicaciones, sin enviar datos a la nube.
-- Resolución de problemas matemáticos y reasoning de un solo turno: su rendimiento en GSM8K (95-98) lo hace adecuado para tutores o asistentes educativos que resuelven problemas aritméticos con explicación paso a paso activando el modo thinking.
-- Procesamiento de documentos con contexto medio: la ventana de 4.096 tokens cubre resúmenes de correos, informes cortos o extracción de datos de fichas técnicas, con la ventaja de que las capas lineales mantienen estado constante y reducen el coste de memoria frente a un transformer denso equivalente.
-- Prototipado y evaluación de modelos en portátiles: investigadores pueden ejecutar un 9B cuantizado en un Mac con GPU mediante LiteRT-LM para comparar recetas de cuantización (int8 frente a INT4 mixto) sin infraestructura de servidor.
-- Generación de texto en entornos con requisitos de privacidad: al ejecutarse íntegramente en dispositivo, es apto para aplicaciones sanitarias, legales o industriales donde el texto no puede salir del equipo.
-- Chat multi-turno ligero con thinking desactivado: el template incluido escribe el bloque `<think>` vacío y devuelve solo la respuesta, lo que simplifica la integración en interfaces conversacionales que no deben mostrar el razonamiento interno.
+- Asistentes locales en dispositivos móviles: la variante Mixed INT4 (6,02 GB) permite desplegar un modelo de 9B con razonamiento en un smartphone de gama alta mediante LiteRT-LM, sin conexión a la nube y con la privacidad que ello implica.
+- Aplicaciones de escritorio con aceleración GPU: en un Mac Studio M4 Max la variante composite Mixed INT4 alcanza 46,1 tok/s de decodificación, suficiente para chat interactivo y generación de texto en tiempo real en herramientas de productividad locales.
+- Procesamiento de documentos con contexto medio: los 4.096 tokens de ventana permiten resumir artículos, correos o informes de varias páginas en un solo paso, con la ventaja de que las capas de atención lineal mantienen un estado de tamaño constante.
+- Automatización de flujos con tool calling: el soporte del formato de llamada a herramientas de LiteRT-LM permite integrar el modelo en agentes locales que consulten APIs, calendarios o bases de datos mediante function calling.
+- Razonamiento asistido en entornos sin GPU: la variante INT8 (9,20 GB) está pensada para CPU y permite ejecutar el modelo en servidores sin acelerador, útil para tareas batch de clasificación, extracción o generación de borradores.
+- Educación y prototipado de IA en el borde: investigadores pueden evaluar el comportamiento de un modelo híbrido GatedDeltaNet + atención completa en hardware de bajo consumo, comparando latencia y calidad frente a transformers densos equivalentes.
+- Moderación y análisis de texto en local: la licencia Apache 2.0 y la ejecución on-device facilitan desplegar filtros de contenido o clasificadores de sentimiento en infraestructura propia sin dependencia de proveedores externos.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | int8 | Mixed INT4 | bf16 (transformers) |
+Los únicos datos publicados en la información disponible son los reportados por el proveedor Qwen para el modelo base, no ejecutados por el autor de la conversión:
+
+| Benchmark | Qwen3.5-9B (reportado por el proveedor) |
+|---|---|
+| MMLU-Pro | 82,5 |
+| IFEval | 91,5 |
+
+Rendimiento de inferencia medido por el autor de la conversión:
+
+| Fichero | Dispositivo / runtime | Decodificación | Prefill |
 |---|---|---|---|
-| GSM8K (thinking off, 2.048 tokens de salida) | 98 | 95 | 97 |
-| MMLU-Pro (reportado por Qwen, no ejecutado aquí) | no disponible | no disponible | 82,5 |
-| IFEval (reportado por Qwen, no ejecutado aquí) | no disponible | no disponible | 91,5 |
+| `mixed_int4` | Mac Studio M4 Max, GPU, litert-lm 0.18.0 | 46,1 tok/s | No disponible |
+| `mixed_int4_gpu_composite_v0190` | Mac Studio M4 Max, GPU, litert-lm 0.19.2 | +24,4 % vs. `mixed_int4` | +28,7 % vs. `mixed_int4` |
+| `mixed_int4` | Galaxy S26, GPU, litert-lm 0.18.0 | No compiló (error de rendimiento) | No disponible |
 
-Tiempos para un prefill de 1.024 tokens más 256 tokens decodificados con contexto 2.048:
+No se han publicado resultados de benchmarks independientes de las variantes LiteRT-LM en la información disponible.
 
-| Configuración | Mac M4 Max | Galaxy S26 | Pixel 8a |
-|---|---|---|---|
-| Mixed INT4 GPU | 7,25 s | el motor GPU no compila | no ejecutado |
-| int8 GPU | 8,43 s | no ejecutado | no ejecutado |
-| int8 CPU | 21,49 s | no ejecutado | no ejecutado |
-| Mixed INT4 CPU | 33,43 s | no ejecutado | no ejecutado |
+## Requisitos de hardware
 
-En Mac Studio M4 Max, el fichero Mixed INT4 decodifica a 46,1 tok/s en GPU (medido el 15 de octubre de 2026). En Galaxy S26 el motor GPU del fichero Mixed INT4 no compiló. Con litert-lm 0.17.1 ambos ficheros respondieron correctamente a un `run` simple en CPU de Mac.
+- VRAM/RAM estimada: 6,02 GB para la variante Mixed INT4 composite, 6,06 GB para Mixed INT4, 9,17 GB para INT8 composite y 9,20 GB para INT8. Añadir margen para activaciones y estado recurrente.
+- GPU recomendadas: Mac Studio M4 Max (GPU, verificado a 46,1 tok/s); las variantes composite requieren LiteRT-LM 0.19.x (en la GPU de 0.18.1 devuelven `!!!…`).
+- GPU consumer: cabe en GPUs con 8 GB o más de VRAM en cuantización INT4; la variante INT8 requiere al menos 12 GB para mayor comodidad.
+- Móvil: el motor GPU de la variante Mixed INT4 no compiló en un Galaxy S26 con litert-lm 0.18.0; la ejecución en CPU sí está soportada con la variante INT8.
+- Opciones de despliegue: exclusivamente el runtime LiteRT-LM (CLI `litert-lm` y librería `litert-lm`); no hay ficheros GGUF, safetensors ni compatibilidad con vLLM, llama.cpp, Ollama o TGI en este repositorio.
+- Latencia y throughput: 46,1 tok/s de decodificación en GPU M4 Max con Mixed INT4; sin datos de latencia de prefill absoluta ni de throughput en CPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Formato / runtime | Licencia | Notas |
 |---|---|---|---|---|---|
-| Qwen3.5-9B (LiteRT-LM, este) | 8,95B (texto) | 4.096 | `.litertlm` int8 / INT4 mixto | Apache 2.0 | GSM8K 95-98; 46,1 tok/s en M4 Max GPU |
-| Qwen3.5-4B (LiteRT-LM) | no disponible en la información | no disponible | `.litertlm` | Apache 2.0 | Misma ruta de conversión y plantilla de chat; menor tamaño |
-| Qwen3.5-2B (LiteRT-LM) | no disponible en la información | no disponible | `.litertlm` | Apache 2.0 | Misma familia, orientado a dispositivos con menos recursos |
-| Qwen3.5-0.8B (LiteRT-LM) | no disponible en la información | no disponible | `.litertlm` | Apache 2.0 | Variante más pequeña de la familia |
+| Qwen3.5-9B (LiteRT-LM, este repo) | 8,95B (solo texto) | 4.096 en estos ficheros (262.144 nativo) | `.litertlm` / LiteRT-LM | Apache 2.0 | MMLU-Pro 82,5, IFEval 91,5 (proveedor); 46,1 tok/s en M4 Max GPU |
+| Qwen3.5-4B (LiteRT-LM) | 4B (solo texto) | No disponible | `.litertlm` / LiteRT-LM | Apache 2.0 | Misma ruta de conversión y plantilla de chat; menor huella de memoria |
+| Qwen3.5-2B (LiteRT-LM) | 2B (solo texto) | No disponible | `.litertlm` / LiteRT-LM | Apache 2.0 | Orientado a dispositivos con menos recursos |
+| Qwen3.5-0.8B (LiteRT-LM) | 0,8B (solo texto) | No disponible | `.litertlm` / LiteRT-LM | Apache 2.0 | Variante mínima de la familia para edge |
 
-No se dispone de datos de benchmarks de las variantes 4B, 2B y 0.8B en la información proporcionada, por lo que la comparación cuantitativa se limita al tamaño y a la disponibilidad en el mismo runtime.
+No se dispone de datos de benchmarks comparativos entre estas variantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo texto: el codificador de visión y la cabeza de predicción multi-token no están en los ficheros, así que las capacidades de imagen y vídeo del Qwen3.5-9B original no están disponibles.
-- Contexto reducido: la ventana efectiva es de 4.096 tokens frente a los 262.144 nativos del checkpoint, lo que limita tareas de contexto largo.
-- Thinking desactivado por defecto: a diferencia del modelo base, estos ficheros requieren activación explícita del razonamiento; los resultados de benchmarks publicados corresponden a thinking off.
-- Compatibilidad de hardware irregular: el motor GPU del fichero Mixed INT4 no compiló en Galaxy S26 y no se probó en Pixel 8a, por lo que el despliegue móvil puede requerir fallback a CPU con latencias sensiblemente mayores (33,43 s frente a 7,25 s en el caso medido).
-- Riesgo de alucinación: no se han publicado evaluaciones de fidelidad o tasas de alucinación para esta conversión; al ser un modelo cuantizado, la degradación respecto al bf16 debe validarse en el dominio de aplicación.
-- Sesgos: no hay información sobre sesgos evaluados en esta conversión; los sesgos del modelo base no se han caracterizado en la documentación disponible.
-- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las condiciones del modelo base Qwen/Qwen3.5-9B y de las dependencias del runtime LiteRT-LM.
-- Idiomas: aunque el modelo base declara 201 idiomas, no hay evaluación multilingüe de estos ficheros; el rendimiento en idiomas distintos del inglés y el chino no está verificado.
+- Solo texto: la torre de visión y la cabeza de predicción multi-token del checkpoint original no están incluidas, por lo que no hay entrada de imagen ni vídeo.
+- Contexto truncado: los ficheros limitan la ventana a 4.096 tokens frente a los 262.144 nativos del modelo base; tareas que requieran contexto largo no son viables con estas variantes.
+- Razonamiento desactivado por defecto: a diferencia del modelo original, la plantilla de chat no activa el modo thinking salvo petición explícita; los resultados pueden diferir de los publicados por Qwen si no se activa.
+- Compatibilidad de runtime restringida: las variantes composite requieren LiteRT-LM 0.19.x; en versiones anteriores fallan en GPU. El ecosistema de herramientas es mucho más limitado que el de GGUF o safetensors.
+- Fallo conocido en GPU móvil: el motor GPU de la variante Mixed INT4 no compiló en un Galaxy S26 con litert-lm 0.18.0.
+- Riesgo de alucinación: inherente a los modelos de lenguaje de 9B; no se han publicado evaluaciones de factualidad específicas para estas variantes.
+- Sesgos: no se documentan análisis de sesgo en la model card; se heredan los del checkpoint Qwen3.5-9B original.
+- Licencia Apache 2.0: permite uso comercial, pero el modelo base Qwen3.5-9B debe verificarse por separado para confirmar que su licencia es compatible con el uso previsto.
+- Idiomas: aunque Qwen declara 201 idiomas, no hay evaluación de la calidad multilingüe en el formato LiteRT-LM.
 
 ## Enlaces
 
-- [Hugging Face: litert-community/Qwen3.5-9B](https://huggingface.co/litert-community/Qwen3.5-9B)
-- [Modelo base: Qwen/Qwen3.5-9B](https://huggingface.co/Qwen/Qwen3.5-9B)
-- [Runtime LiteRT-LM (GitHub)](https://github.com/google-ai-edge/LiteRT-LM)
-- [Configuración `models/qwen3_5` de LiteRT-LM v0.19.0](https://github.com/google-ai-edge/LiteRT-LM/blob/v0.19.0/models/qwen3_5/LlmMetadataProto.pbtext)
-- [Conversión Qwen3.5-4B en LiteRT-LM](https://huggingface.co/litert-community/Qwen3.5-4B)
-- [Conversión Qwen3.5-2B en LiteRT-LM](https://huggingface.co/litert-community/Qwen3.5-2B)
-- [Conversión Qwen3.5-0.8B en LiteRT-LM](https://huggingface.co/litert-community/Qwen3.5-0.8B)
+- Repositorio Hugging Face: https://huggingface.co/litert-community/Qwen3.5-9B
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
+- Modelo base preentrenado: https://huggingface.co/Qwen/Qwen3.5-9B-Base
+- Runtime LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM
+- Conversión Qwen3.5-4B: https://huggingface.co/litert-community/Qwen3.5-4B
+- Conversión Qwen3.5-2B: https://huggingface.co/litert-community/Qwen3.5-2B
+- Conversión Qwen3.5-0.8B: https://huggingface.co/litert-community/Qwen3.5-0.8B

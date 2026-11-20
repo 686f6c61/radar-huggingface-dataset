@@ -5,7 +5,7 @@
   "author": "SkyR",
   "url": "https://huggingface.co/SkyR/qwen-4b-Indic-RL",
   "created_at": "2026-11-19T04:44:08.000Z",
-  "updated_at": "2026-11-19T05:08:44.000Z",
+  "updated_at": "2026-11-19T17:25:21.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 15,
   "trending_score": 0,
   "parameters": 4022468096,
   "parameters_human": "4.02B",

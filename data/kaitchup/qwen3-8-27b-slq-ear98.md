@@ -2,127 +2,110 @@
 
 ## Resumen
 
-Qwen3.8-27B-SLQ-EAR98 es un checkpoint cuantizado de Qwen/Qwen3.8-27B publicado por The Kaitchup (Benjamin Marie). No es un modelo nuevo: es el modelo base de 27B comprimido con una versión personalizada de SLQ (Statistically-Lossless Quantization) y empaquetado para el runtime Humming de vLLM. La búsqueda de precisión combina varias fuentes de pesos cuantizados (GPTQ INT2–INT8 generado localmente, AutoRound de Kaitchup y GSQ de 3 bits de ISTA-DASLab) y elige la precisión proyección a proyección, incluidas cabezas de atención concretas, con caída selectiva a BF16 original.
+Qwen3.8-27B-SLQ-EAR98 es una versión cuantizada del modelo Qwen/Qwen3.8-27B, publicada por el autor independiente The Kaitchup (kaitchup en Hugging Face). Se trata de un checkpoint comprimido mediante una versión personalizada de SLQ (Statistically-Lossless Quantization), una técnica de cuantización de precisión mixta que asigna bits de forma independiente a cada proyección del decodificador, incluidas cabezas de atención seleccionadas. El objetivo declarado es alcanzar un EAR (Expected Acceptance Rate) superior al 98% respecto al modelo original en BF16, y el valor medido empaquetado es del 98,000775%.
 
-El resultado son 23,732 GB de pesos (23.731.563.088 bytes) con un EAR medido de 98,000775 %, frente a los 55,563 GB del BF16 original. Es relevante porque demuestra que se puede servir un modelo de 27B con calidad estadística cercana al original ocupando menos de la mitad del espacio de pesos, algo útil cuando la VRAM es la restricción principal. El precio a pagar es la dependencia de un stack de inferencia muy concreto (vLLM 0.31.0 con soporte Humming y humming-kernels 0.1.16) y la ausencia de validación de las capacidades multimodales del modelo base.
+El modelo está pensado para servirse con vLLM y el runtime Humming, y conserva los pesos MTP (multi-token prediction) originales en BF16. El repositorio ocupa 23,7 GB y los pesos safetensors suman 7.495.194.352 parámetros, aunque la denominación comercial "27B" del modelo base no coincide con ese recuento, lo que conviene tener en cuenta al planificar memoria. La licencia es Apache 2.0, igual que la del modelo base.
 
-Conviene subrayar que el EAR es una métrica de solapamiento de probabilidades, no una medida de precisión en tareas. El propio autor advierte de que no se ha establecido equivalencia estadística en tareas downstream para estas publicaciones.
+Su relevancia actual radica en que ofrece una alternativa de despliegue más ligera que el BF16 original (55,6 GB) con una fidelidad estadística declarada superior a la de FP8 oficial (97,7%) y a otras cuantizaciones de 3 y 4 bits (89,4% y 94,3% respectivamente), a costa de un tamaño intermedio de 23,7 GB. Es, por tanto, una opción intermedia entre las cuantizaciones agresivas y el modelo completo para entornos con VRAM limitada pero requisitos de fidelidad altos.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso del modelo base Qwen3.8-27B (visión-lenguaje), con pesos MTP (multi-token prediction) conservados en BF16; checkpoint cuantizado en precisión mixta y empaquetado para Humming |
-| Parametros totales | 27B (modelo base); 7.495.194.352 elementos almacenados en safetensors (tensores empaquetados de baja precisión) |
-| Longitud de contexto | 262.144 tokens (`--max-model-len 262144` en la configuración de vLLM validada) |
-| Tipos de cuantizacion | Precisión mixta con enteros (candidatos INT2–INT8) más proyecciones y cabezas de atención seleccionadas en BF16 original; activaciones en BF16 |
+| Arquitectura | Transformer (familia Qwen3.5), con pesos MTP en BF16; cuantizacion de precision mixta por proyeccion |
+| Parametros totales | 7.495.194.352 (segun safetensors); el modelo base se denomina comercialmente 27B |
+| Parametros activos | no disponible |
+| Longitud de contexto | 262.144 tokens (segun el ejemplo de `--max-model-len` de la model card) |
+| Tipos de cuantizacion | SLQ personalizado con precisiones enteras mixtas (INT2–INT8 como fuentes candidatas) y pesos BF16 originales seleccionados; activaciones en BF16 |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors empaquetados para el runtime Humming de vLLM (no hay GGUF publicado para este checkpoint) |
-
-Datos adicionales: 23,732 GB de ficheros de pesos (tamaño de fichero, no memoria total de servicio); repo de 23,7 GB; pipeline `text-generation`; creado y actualizado el 21 de octubre de 2026; 0 descargas y 1 like en el momento de la consulta.
+| Formato de pesos | safetensors empaquetados para Humming en vLLM |
 
 ## Arquitectura y entrenamiento
 
-El checkpoint hereda la arquitectura del modelo base: un transformer denso de 27B de tipo visión-lenguaje, orientado a texto, imagen y vídeo, con procesamiento de contexto largo, tool calling y tareas agénticas. El autor conserva sin cambios los pesos MTP originales en BF16 y también los pesos y procesadores de visión del modelo base, aunque la validación publicada solo cubre texto.
+El modelo parte de Qwen/Qwen3.8-27B, un transformer de la familia Qwen3.5, y no ha sido reentrenado: es una compresión post-entrenamiento. La técnica SLQ (Statistically-Lossless Quantization) formula la cuantización como un problema de búsqueda que elige la precisión de cada proyección del decodificador de forma individual, incluyendo cabezas de atención concretas, combinando varias fuentes de pesos candidatas. Entre esas fuentes figuran pesos GPTQ generados localmente en INT2–INT8, el checkpoint kaitchup/Qwen3.8-27B-hum-high-MTP-17.7GB cuantizado con AutoRound, el ISTA-DASLab/Qwen3.8-27B-3Bit-GSQ y los pesos BF16 originales.
 
-Lo específico de esta publicación es el proceso de compresión. SLQ formula la cuantización como una búsqueda de precisión por proyección: en lugar de aplicar un único esquema global, se generan varios candidatos (GPTQ en el rango INT2–INT8 producido localmente, el checkpoint AutoRound `hum-high-MTP-17.7GB` y el GSQ de 3 bits de ISTA-DASLab), se añade el BF16 original como opción y se elige para cada proyección la precisión que maximiza el objetivo estadístico, con un objetivo declarado de EAR > 98 %. El EAR (Expected Acceptance Rate) mide el solapamiento entre las probabilidades del siguiente token del modelo BF16 de referencia y las del modelo comparado, renormalizadas ambas sobre los diez tokens más probables de la referencia. Un EAR de 0,99 significa un 99 % de solapamiento medio de probabilidad en ese soporte, no un 99 % de acierto en benchmarks ni respuestas idénticas.
-
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni las etapas de RLHF/DPO del modelo base en la documentación consultada; esta publicación no reentrena, solo cuantiza.
+El resultado es un checkpoint de precisión mixta con pesos enteros de distinto ancho más algunos tensores conservados en BF16 original, con activaciones en BF16. Los pesos MTP (multi-token prediction) del modelo base se mantienen intactos en BF16, lo que preserva la capacidad de decodificación especulativa a nivel de arquitectura, aunque la model card indica que la decodificación especulativa no se incluyó en la validación realizada. La métrica EAR mide el solapamiento entre las distribuciones de probabilidad del siguiente token del modelo BF16 de referencia y del modelo comparado, renormalizadas sobre los diez tokens más probables de la referencia; no equivale a precisión en benchmarks ni a salidas idénticas.
 
 ## Capacidades
 
-- Generación de texto conversacional y razonamiento, con modo de razonamiento explícito soportado por el parser `qwen3` de vLLM.
-- Generación y comprensión de código, con parser de tool calls `qwen3_coder` disponible en el servidor compatible con OpenAI.
-- Tool calling / function calling automático mediante `--enable-auto-tool-choice`.
-- Flujos agénticos multi-paso, apoyados en la ventana de 262.144 tokens configurada.
-- Procesamiento de contexto largo: la configuración validada admite hasta 262.144 tokens de longitud de modelo.
-- Capacidades multimodales (imagen y vídeo) potencialmente presentes porque los pesos y procesadores de visión se conservan, pero no validadas: el ejemplo de despliegue las desactiva explícitamente con `--limit-mm-per-prompt '{"image":0,"video":0}'`.
-- Decodificación especulativa mediante MTP: los pesos MTP se conservan en BF16, pero el autor indica que la decodificación especulativa no se incluyó en la validación.
+- Generación de texto conversacional y de un solo turno, con pipeline `text-generation`.
+- Razonamiento: la model card menciona un parser de razonamiento (`--reasoning-parser qwen3`) para vLLM, lo que indica soporte de modo de razonamiento o *thinking*.
+- Llamada a herramientas y funciones: soporta `--enable-auto-tool-choice` con `--tool-call-parser qwen3_coder`.
+- Capacidades multimodales heredadas del modelo base: se conservan los pesos y procesadores de visión originales, aunque la validación realizada excluyó la inferencia de imagen y vídeo (se recomienda `--limit-mm-per-prompt '{"image":0,"video":0}'` en el ejemplo de servicio).
+- Contexto largo: hasta 262.144 tokens según la configuración de ejemplo.
+- Decodificación especulativa: los pesos MTP se conservan en BF16, pero no se validaron en esta release.
 - Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Servicio de chat compatible con la API de OpenAI: levantar `vllm serve` con `--quantization humming` y exponer `/v1/chat/completions` permite sustituir un endpoint propietario manteniendo conversaciones multi-turno de hasta 262.144 tokens de contexto, con un coste de almacenamiento de pesos de 23,7 GB en lugar de 55,6 GB.
-- Agentes con herramientas en producción: activando `--enable-auto-tool-choice --tool-call-parser qwen3_coder`, el modelo puede emitir llamadas estructuradas a funciones dentro de pipelines de automatización (consultas a bases de datos, APIs internas, orquestación de tareas) sin capa intermedia de parseo propio.
-- Razonamiento sobre documentos extensos: con el parser `qwen3` se separa la traza de razonamiento de la respuesta final, lo que facilita auditar conclusiones sobre contratos, informes o expedientes que ocupen cientos de miles de tokens.
-- Asistencia a desarrollo de software: revisión de repositorios completos, generación de parches y explicación de código, aprovechando el contexto largo y el soporte de tool calling para integrarse en pipelines de CI/CD que invocan el endpoint y aplican el resultado.
-- Inferencia con restricción de VRAM en una sola GPU profesional: al reducir los pesos a 23,7 GB con un EAR medido del 98 %, es una opción para despliegues donde el BF16 (55,6 GB) o incluso el FP8 oficial (30,867 GB) no dejan margen suficiente para la caché KV.
-- Investigación reproducible en cuantización: la tabla de EAR y el mapa de bits por proyección (`precision.svg`) permiten comparar esquemas (GPTQ, AutoRound, GSQ, FP8, GGUF Q4_K_XL) sobre la misma referencia y la misma métrica, útil para publicar estudios de compromiso tamaño-calidad.
-- RAG sobre corpus técnicos corporativos: indexar documentación y servir respuestas con contexto largo reduce la pérdida de información típica de pipelines que truncan a 8K o 32K tokens.
+- Servicio de chat compatible con OpenAI: el checkpoint se sirve con `vllm serve` y expone `/v1/chat/completions`, lo que permite sustituir una API propietaria por un despliegue self-hosted con contexto de hasta 262.144 tokens.
+- Asistentes con razonamiento y herramientas: la combinación de `--reasoning-parser qwen3` y `--tool-call-parser qwen3_coder` permite construir agentes que razonan paso a paso y ejecutan llamadas a funciones en flujos multi-paso.
+- Procesamiento de documentos largos: la ventana de 262.144 tokens hace viable el análisis de contratos, informes o bases de código extensas en una sola pasada, con un peso en disco de 23,7 GB frente a los 55,6 GB del BF16.
+- Despliegue en hardware de gama profesional con VRAM ajustada: al ocupar menos de la mitad que el BF16 y mantener un EAR del 98%, es adecuado para entornos con una sola GPU de 48–80 GB donde el modelo completo no cabría con KV cache suficiente.
+- Evaluación comparativa de cuantizaciones: el repositorio publica una tabla de EAR frente a FP8 oficial, GSQ 3-bit, hum-high y GGUF UD-Q4_K_XL, lo que lo convierte en un punto de referencia para medir el compromiso tamaño/fidelidad en pipelines de investigación.
+- Generación de código asistida: el parser de tool calling `qwen3_coder` sugiere un uso orientado a tareas de programación con invocación de herramientas, integrable en asistentes de IDE o pipelines de CI/CD.
+- Fine-tuning o destilación sobre pesos comprimidos: al estar en safetensors y licencia Apache 2.0, puede servir como base para experimentos que requieran menos memoria que el modelo original.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible (no hay MMLU, HumanEval, GSM8K ni similares). El autor solo reporta la métrica propietaria EAR, medida sobre la misma referencia BF16 y con la misma definición para todas las filas:
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card solo proporciona la métrica EAR (Expected Acceptance Rate) frente al BF16 de referencia:
 
-| Modelo | EAR ↑ | Ficheros de pesos (GB) | Ejecución medida |
+| Modelo | EAR | Tamano de pesos (GB) | Ejecucion medida |
 |---|---:|---:|---|
-| BF16 original | 100,000000 % | 55,563 | Referencia BF16 original |
-| FP8 oficial | 97,705903 % | 30,867 | Pesos y activaciones FP8 nativos |
-| FP8 oficial, solo pesos | 98,101249 % | 30,867 | Pesos dequantizados, ejecución BF16 |
-| GSQ 3 bits | 89,425738 % | 11,828 | Pesos objetivo dequantizados, ejecución BF16 |
-| Kaitchup hum-high | 94,335032 % | 17,695 | Pesos objetivo dequantizados, ejecución BF16 |
-| Unsloth UD-Q4_K_XL GGUF | 97,444147 % | 17,559 | Pesos GGUF remapeados a BF16, Transformers |
-| SLQ EAR>98 (este checkpoint) | 98,000775 % | 23,732 | vLLM / runtime Humming empaquetado |
-| SLQ EAR98.5 | 98,502656 % | 25,609 | vLLM / runtime Humming empaquetado |
-| SLQ EAR99 | 99,002514 % | 30,518 | vLLM / runtime Humming empaquetado |
-
-Lectura útil: este checkpoint supera al FP8 oficial en EAR (98,000775 % frente a 97,705903 %) con un 23 % menos de tamaño de pesos, y queda muy por encima de GSQ 3 bits (89,43 %) y del AutoRound hum-high (94,34 %). El SLQ EAR99 se acerca al FP8 solo-pesos (99,00 % frente a 98,10 %) pero con el mismo tamaño (30,518 frente a 30,867 GB). No hay datos de latencia ni de throughput publicados.
+| Original BF16 | 100,000000% | 55,563 | Referencia BF16 original |
+| FP8 oficial | 97,705903% | 30,867 | Pesos y activaciones FP8 nativos |
+| FP8 oficial (solo pesos) | 98,101249% | 30,867 | Pesos dequantizados, ejecucion BF16 |
+| GSQ 3-bit | 89,425738% | 11,828 | Pesos objetivo dequantizados, ejecucion BF16 |
+| Kaitchup hum-high (17,7 GB) | 94,335032% | 17,695 | Pesos objetivo dequantizados, ejecucion BF16 |
+| Unsloth UD-Q4_K_XL GGUF | 97,444147% | 17,559 | Pesos GGUF remapeados a BF16, Transformers |
+| SLQ EAR>98 (este modelo) | 98,000775% | 23,732 | vLLM / Humming empaquetado |
+| SLQ EAR98.5 | 98,502656% | 25,609 | vLLM / Humming empaquetado |
+| SLQ EAR99 | 99,002514% | 30,518 | vLLM / Humming empaquetado |
 
 ## Requisitos de hardware
 
-- Pesos: 23,732 GB en disco. El autor advierte explícitamente de que es tamaño de fichero, no memoria total de servicio.
-- VRAM estimada: 23,7 GB de pesos más búferes del runtime y caché KV; con 262.144 tokens de contexto la caché KV domina el consumo y su tamaño exacto no está disponible en la documentación. Como referencia orientativa, un presupuesto de 32 GB solo deja margen para contextos moderados, y contextos de cientos de miles de tokens requieren 80 GB o más.
-- GPU validadas por el autor: RTX PRO 6000 Blackwell (la única configuración probada para carga de texto, generación y EAR).
-- GPU recomendadas (estimación, no validada): RTX PRO 6000 Blackwell o A100/H100 de 80 GB para contexto largo; RTX 6000 Ada / A6000 de 48 GB para contexto medio; RTX 5090 de 32 GB para contexto corto y pocas peticiones concurrentes.
-- GPU de consumo: 24 GB (RTX 4090, 3090) es insuficiente en la práctica porque los pesos ya ocupan 23,7 GB y no queda espacio para caché KV ni búferes; 32 GB es el mínimo razonable.
-- Despliegue: exclusivamente vLLM con soporte Humming (probado con vLLM 0.31.0 y humming-kernels 0.1.16). No hay ruta validada para llama.cpp, Ollama, TGI ni transformers con estos pesos empaquetados; para esos runtimes habría que usar otros checkpoints (por ejemplo el GGUF de Unsloth).
-- Latencia y throughput: no disponibles.
+- VRAM estimada: los pesos ocupan 23,732 GB en disco; la memoria de servicio debe sumar buffers del runtime y KV cache. Con contexto de 262.144 tokens, la KV cache puede ser considerable y no se ha publicado una cifra concreta.
+- GPU validadas: RTX PRO 6000 Blackwell, con vLLM 0.31.0 y humming-kernels 0.1.16.
+- GPU recomendadas: no se especifican otras; por tamaño de pesos, encaja en GPUs profesionales de 48 GB o más (A6000, L40S, RTX PRO 6000) y en A100/H100 de 80 GB con margen para KV cache. No cabe en GPUs de consumo de 24 GB sin reducir contexto o recurrir a otras cuantizaciones.
+- Opciones de despliegue: vLLM con soporte Humming (`--quantization humming`). No se mencionan llama.cpp, Ollama ni TGI; el formato empaquetado es específico de Humming.
+- Latencia y throughput: no disponibles. La model card no publica cifras de rendimiento en tokens por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Calidad medida | Pesos (GB) | Licencia | Runtime |
-|---|---|---|---|---|---|---|
-| Qwen3.8-27B-SLQ-EAR98 (este) | 27B (base) | 262.144 | EAR 98,000775 % | 23,732 | Apache 2.0 | vLLM + Humming |
-| Qwen3.8-27B-SLQ-EAR98.5 | 27B (base) | 262.144 | EAR 98,502656 % | 25,609 | Apache 2.0 | vLLM + Humming |
-| Qwen3.8-27B-SLQ-EAR99 | 27B (base) | 262.144 | EAR 99,002514 % | 30,518 | Apache 2.0 | vLLM + Humming |
-| Qwen3.8-27B-FP8 oficial | 27B | 262.144 (heredado) | EAR 97,705903 % | 30,867 | Apache 2.0 | vLLM/SGLang con FP8 |
-| Qwen3.8-27B-3Bit-GSQ | 27B | no disponible | EAR 89,425738 % | 11,828 | Apache 2.0 | Dequantización a BF16 |
-| Kaitchup hum-high (AutoRound) | 27B | no disponible | EAR 94,335032 % | 17,695 | Apache 2.0 | Requiere dequantización |
-| Unsloth Qwen3.8-27B-GGUF UD-Q4_K_XL | 27B | no disponible | EAR 97,444147 % | 17,559 | Apache 2.0 | llama.cpp / Ollama / Transformers |
-| Qwen3.8-27B BF16 | 27B | 262.144 | Referencia (100 %) | 55,563 | Apache 2.0 | Cualquiera |
+| Modelo | Parametros | Contexto | EAR / fidelidad | Licencia | Formato |
+|---|---|---|---|---|---|
+| SLQ EAR98 (este) | 7.495 M (safetensors) | 262.144 | 98,000775% | Apache 2.0 | safetensors (Humming/vLLM) |
+| Qwen3.8-27B BF16 | no disponible | no disponible | 100% (referencia) | Apache 2.0 | safetensors |
+| Qwen3.8-27B-FP8 | no disponible | no disponible | 97,705903% | Apache 2.0 | FP8 |
+| ISTA-DASLab 3Bit-GSQ | no disponible | no disponible | 89,425738% | no disponible | safetensors |
+| Unsloth UD-Q4_K_XL GGUF | no disponible | no disponible | 97,444147% | no disponible | GGUF |
 
-No se dispone de comparaciones con modelos de otros fabricantes de tamaño similar (por ejemplo alternativas de 24B–32B) en la información proporcionada.
+La comparación se limita a las variantes del mismo modelo base publicadas en la model card; no se dispone de datos de benchmarks de tareas que permitan comparar con modelos de otros autores.
 
 ## Limitaciones y advertencias
 
-- El EAR no es una métrica de exactitud: mide solapamiento de distribuciones de probabilidad sobre el soporte de los diez tokens más probables de la referencia. Un EAR del 98 % no garantiza el 98 % de acierto en ninguna tarea.
-- El propio autor declara que no se ha establecido equivalencia estadística en tareas downstream para estas publicaciones; no hay benchmarks de calidad publicados.
-- Las capacidades de visión y vídeo no están validadas: los pesos se conservan, pero la configuración de referencia las desactiva y la validación fue solo de texto.
-- La decodificación especulativa con MTP no está validada, pese a conservarse los pesos MTP en BF16.
-- Dependencia fuerte del runtime: requiere vLLM con soporte Humming y una versión concreta de humming-kernels. No hay pesos GGUF ni ruta soportada en llama.cpp, Ollama o TGI, y los resultados pueden variar ligeramente en otros entornos.
-- Idiomas soportados no documentados; el comportamiento multilingüe del checkpoint cuantizado no se ha medido.
-- Riesgo de alucinación y sesgos heredados del modelo base Qwen3.8-27B; la cuantización agresiva en algunas proyecciones (hasta INT2 en los candidatos GPTQ) puede ampliar la degradación en casos límite.
-- La licencia Apache 2.0 se hereda del modelo base; conviene verificar los términos del modelo original antes de un uso comercial, aunque Apache 2.0 permite uso comercial.
-- Checkpoint con 0 descargas y 1 like en el momento de la consulta: no hay evidencia de adopción ni de validación independiente por terceros.
-- El repositorio ocupa 23,7 GB y utiliza el formato Xet de Hugging Face; la descarga requiere soporte de Xet o `huggingface-cli`.
+- El EAR mide solapamiento de probabilidades sobre los diez tokens más probables de la referencia; no garantiza equivalencia estadística en tareas downstream, que la model card declara no establecida.
+- La cuantización SLQ es "statistically lossless" en sentido aproximado: las salidas numéricas no son idénticas al BF16.
+- La validación se hizo con una versión concreta de vLLM (0.31.0) y humming-kernels (0.1.16) en una RTX PRO 6000 Blackwell; otros runtimes pueden dar resultados ligeramente distintos.
+- La inferencia de imagen y vídeo no se validó, pese a conservarse los pesos de visión; el ejemplo de servicio los desactiva explícitamente.
+- La decodificación especulativa con los pesos MTP no se validó.
+- El recuento real de parámetros en safetensors (7.495 M) no coincide con la denominación "27B" del modelo base; verificar antes de dimensionar hardware.
+- No se dispone de información sobre sesgos, idiomas soportados ni riesgos de alucinación específicos de esta release; aplican los del modelo base Qwen3.8-27B.
+- Licencia Apache 2.0 permite uso comercial, pero conviene revisar los términos del modelo base y de las fuentes candidatas (GPTQ local, AutoRound, GSQ) por si imponen condiciones adicionales.
+- El formato empaquetado para Humming limita la portabilidad: no es un GGUF ni un safetensors estándar cargable por Transformers sin el runtime adecuado.
 
 ## Enlaces
 
-- Checkpoint en Hugging Face: https://huggingface.co/kaitchup/Qwen3.8-27B-SLQ-EAR98
+- Modelo en Hugging Face: https://huggingface.co/kaitchup/Qwen3.8-27B-SLQ-EAR98
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Versión FP8 oficial: https://huggingface.co/Qwen/Qwen3.8-27B-FP8
+- Version FP8 oficial: https://huggingface.co/Qwen/Qwen3.8-27B-FP8
+- Checkpoint hum-high del autor: https://huggingface.co/kaitchup/Qwen3.8-27B-hum-high-MTP-17.7GB
 - Variante SLQ EAR98.5: https://huggingface.co/kaitchup/Qwen3.8-27B-SLQ-EAR98.5
 - Variante SLQ EAR99: https://huggingface.co/kaitchup/Qwen3.8-27B-SLQ-EAR99
-- Checkpoint AutoRound hum-high (17,7 GB): https://huggingface.co/kaitchup/Qwen3.8-27B-hum-high-MTP-17.7GB
-- Checkpoint AutoRound hum-balanced (16,2 GB): https://huggingface.co/kaitchup/Qwen3.8-27B-hum-balanced-MTP-16.2GB
-- Cuantización GSQ 3 bits: https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-3Bit-GSQ
+- Cuantizacion GSQ 3-bit: https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-3Bit-GSQ
 - GGUF de Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
-- Artículo SLQ: https://arxiv.org/abs/2605.02404
+- Paper SLQ: https://arxiv.org/abs/2605.02404
 - Repositorio SLQ: https://github.com/IST-DASLab/SLQ
-- Repositorio AutoRound: https://github.com/intel/auto-round
-- Mapa de precisión por proyección: https://huggingface.co/kaitchup/Qwen3.8-27B-SLQ-EAR98/blob/main/precision.svg
-- Blog del autor (The Kaitchup): https://kaitchup.substack.com/
-- Artículo semanal sobre Qwen3.8 27B y otros modelos abiertos: https://kaitchup.substack.com/p/qwen38-27b-nemotron-35-muse-deepseek
-- Ficha del modelo en NVIDIA NGC: https://catalog.ngc.nvidia.com/orgs/nim/qwen/models/qwen3.8-27b/
-- Apoyo al autor: https://ko-fi.com/bnjmn_marie
+- AutoRound: https://github.com/intel/auto-round
+- Newsletter del autor: https://kaitchup.substack.com/subscribe

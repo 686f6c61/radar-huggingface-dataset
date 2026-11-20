@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "mradermacher/NoWay_2x70b-GGUF",
+  "slug": "mradermacher-noway_2x70b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/NoWay_2x70b-GGUF",
+  "created_at": "2025-02-26T10:55:47.000Z",
+  "updated_at": "2026-11-19T22:32:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:RedDragonGecko/NoWay_2x70b",
+    "base_model:quantized:RedDragonGecko/NoWay_2x70b",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 126926463040,
+  "parameters_human": "126.93B",
+  "storage_bytes": 863262663328,
+  "storage_human": "863.3 GB",
+  "context_length": 131072,
+  "base_model": "RedDragonGecko/NoWay_2x70b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

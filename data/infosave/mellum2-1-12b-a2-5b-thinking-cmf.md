@@ -2,118 +2,107 @@
 
 ## Resumen
 
-Mellum2.1-12B-A2.5B-Thinking-CMF es una conversion cuantizada del checkpoint JetBrains/Mellum2.1-12B-A2.5B-Thinking, publicada por el usuario infosave para su ejecucion en local con el runtime Cortiq. No es un modelo nuevo ni un ajuste fino: es el mismo modelo base empaquetado en un unico fichero `.cmf` de 6.884.556.163 bytes (6,41 GiB) que incluye tokenizer y plantilla de chat mapeados en memoria, con un perfil de cuantizacion mixto pensado para aprovechar la estructura dispersa de la arquitectura.
+Mellum2.1-12B-A2.5B-Thinking-CMF es una cuantización del modelo JetBrains/Mellum2.1-12B-A2.5B-Thinking, un modelo de mezcla de expertos (MoE) orientado a código y razonamiento. El modelo original, desarrollado por JetBrains, cuenta con 12,15 mil millones de parámetros totales y 2,5 mil millones activos por token, distribuidos en 64 expertos con enrutamiento top-8. Esta versión, publicada por infosave, empaqueta los pesos en el formato CMF (Cortiq Model Format) para su uso con `cortiq`, un motor de inferencia escrito en Rust que no depende de Python ni de frameworks de aprendizaje automático.
 
-El modelo subyacente es un transformer de tipo mezcla de expertos (MoE) de 28 capas, 64 expertos con enrutamiento top-8, 12,15 mil millones de parametros totales y 2,5 mil millones activos por token. La atencion es hibrida: 21 capas de ventana deslizante de 1.024 tokens y 7 capas de atencion completa con YaRN, con un contexto declarado de 131.072 tokens. Mellum2.1 es la revision de Mellum2 centrada en post-entrenamiento, principalmente aprendizaje por refuerzo sobre repositorios reales para codigo agentico, uso de herramientas, matematicas y razonamiento, e incorpora un modo de pensamiento que emite cadena de razonamiento antes de la respuesta final.
+La relevancia de esta ficha radica en que permite ejecutar un modelo MoE de 12B con contexto de 131 072 tokens en hardware de consumo, incluyendo GPUs con 8 GB de VRAM mediante la cuantización de 4 bits (6,88 GB). El motor soporta GPUs NVIDIA, AMD e Intel a través de Vulkan/DX12, Apple Silicon mediante Metal y CPU pura, lo que amplía enormemente las opciones de despliegue frente a soluciones basadas en Python.
 
-La relevancia de esta ficha concreta esta en el artefacto: es una via de inferencia local en CPU con metricas reproducibles publicadas por el autor, mas rutas opcionales Metal y Vulkan, sin depender de un stack CUDA ni de pesos BF16. La licencia Apache-2.0 del modelo base se mantiene en la conversion.
+La cuantización preserva una calidad cercana al modelo sin cuantizar: la perplejidad en código Python es de 3,242 con 4 bits y 3,146 con 8 bits, frente a 3,182 del modelo original, con una concordancia de predicción top-1 del 93,4 % y 98,1 % respectivamente. La licencia Apache 2.0 facilita su uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE de 28 capas, 64 expertos, enrutamiento top-8; atencion hibrida (21 capas sliding-window de 1.024 tokens + 7 capas full-attention con YaRN) |
-| Parametros totales | 12,15 B |
-| Parametros activos | 2,5 B por token |
-| Longitud de contexto | 131.072 tokens declarados por la arquitectura upstream |
-| Tipos de cuantizacion | Perfil CMF mixto: Q4TP en matrices de expertos; Q8_2f en atencion, embedding y capa de salida (siempre activas); F16 en router y normalizaciones |
-| Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | CMF (un unico fichero `.cmf` mapeado en memoria; `mellum2.1-12b-a2.5b-thinking-q4tp.cmf`) |
-| Tamano del artefacto | 6.884.556.163 bytes (6,41 GiB) |
-| SHA-256 del artefacto | `1734d8c585134547efa6eb60f092fd741135fe0f398fe9dc77ab4b97df6a7175` |
-| Revision upstream fijada | `92ddae9fc7665e9f801d141d2e5a6b2caf2460c4` |
-| Runtime | Cortiq CLI 0.8.14 (libreria `cortiq`) |
-| Tensores validados | 5.631 hashes verificados con `cortiq verify` |
+| Arquitectura | Transformer MoE (64 expertos, enrutamiento top-8; 21 capas de atención de ventana deslizante y 7 de atención completa) |
+| Parametros totales | 12,15 mil millones |
+| Parametros activos | 2,5 mil millones por token |
+| Longitud de contexto | 131 072 tokens (KV cache por defecto de 32 768, configurable con `CMF_MAX_SEQ`) |
+| Tipos de cuantizacion | 4 bits (`q4tp`, 6,88 GB) y 8 bits (`q8_2f`, 12,22 GB); atención, embeddings y cabeza de salida en 8 bits; router y normas en 16 bits |
+| Idiomas soportados | Inglés (según la model card) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | CMF (Cortiq Model Format) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del checkpoint JetBrains/Mellum2.1-12B-A2.5B-Thinking, sin cambios respecto a Mellum2: 28 capas de mezcla de expertos con 64 expertos y enrutamiento top-8, lo que da 12,15 B de parametros totales con solo 2,5 B activos por token. La atencion combina 21 capas de ventana deslizante de 1.024 tokens con 7 capas de atencion completa que emplean YaRN para extender el contexto hasta los 131.072 tokens declarados, y utiliza un esquema de doble RoPE (dual RoPE schedule). El repositorio de conversion incluye cobertura de regresion especifica para ese doble schedule de RoPE, los metadatos de atencion deslizante, el contrato top-8 del MoE y el perfil de cuantizacion mixto.
+El modelo base es un transformer de mezcla de expertos con 64 expertos y enrutamiento top-8, lo que activa 2,5 mil millones de parámetros por token sobre un total de 12,15 mil millones. La pila de capas combina 21 capas con atención de ventana deslizante y 7 capas con atención completa, una configuración que reduce el coste computacional en secuencias largas manteniendo acceso global en puntos estratégicos. El contexto máximo es de 131 072 tokens.
 
-Segun la informacion disponible, el grueso del trabajo de la version 2.1 respecto a Mellum2 fue de post-entrenamiento, fundamentalmente aprendizaje por refuerzo ejecutado sobre repositorios reales y orientado a codigo agentico, uso de herramientas, matematicas y razonamiento. No se detalla en la documentacion consultada el numero de tokens de entrenamiento, la composicion del dataset ni si se usaron tecnicas adicionales como DPO. La contribucion tecnica de este artefacto concreto es la conversion CMF: se gasta precision donde cada token pasa (Q8_2f en atencion, embedding y salida; F16 en router y normalizaciones) y se comprime el banco de expertos dispersos a Q4TP, manteniendo tokenizer y plantilla de chat en el mismo fichero. El autor indica explicitamente que la conversion no es sin perdidas y que puede alterar logits y completaciones.
+La información disponible no detalla el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. El modelo está etiquetado como orientado a código, razonamiento y tool calling, e incluye un modo de pensamiento (`<think>`) que genera un bloque de razonamiento antes de la respuesta. La cuantización CMF mantiene el router y las normas en 16 bits para preservar la calidad del enrutamiento, mientras que atención, embeddings y cabeza de salida se almacenan en 8 bits en ambos ficheros.
 
 ## Capacidades
 
-- Generacion de texto y respuestas conversacionales con plantilla de chat embebida.
-- Modo de pensamiento (thinking): emite cadena de razonamiento explicita antes de la respuesta final.
-- Modo de respuesta directa mediante `--no-think`, que recurre a la plantilla de respuesta directa del modelo.
-- Generacion de codigo, con soporte declarado para codigo agentico segun la documentacion de Mellum2.1.
-- Uso de herramientas (tool use) segun la descripcion del post-entrenamiento con RL.
-- Razonamiento matematico, tambien mencionado entre los objetivos del RL de la version 2.1.
-- Razonamiento multi-paso orientado a agentes.
-- Servidor local compatible con endpoints `/v1/chat/completions`, `/v1/completions`, `/v1/models`, `/healthz` y `/v1/cortiq/status`.
-- Capacidades multilingues: no disponible (no se declaran idiomas soportados).
+- Generación de texto y razonamiento con modo de pensamiento explícito: el modelo produce un bloque `<think>…</think>` antes de la respuesta final, desactivable con `--no-think` o `"enable_thinking": false`.
+- Generación de código: el modelo está especializado en código, con perplejidad de 3,242 sobre código de la biblioteca estándar de Python (cuantización de 4 bits).
+- Tool calling / function calling: acepta herramientas en formato OpenAI y responde con `<tool_call>{"name": …, "arguments": …}</tool_call>`, que el servidor devuelve como `message.tool_calls` con `finish_reason: "tool_calls"`.
+- Razonamiento multi-paso: el modo de pensamiento permite cadenas de razonamiento antes de la respuesta.
+- Soporte de contexto largo: hasta 131 072 tokens, con caché KV configurable.
+- Capacidades multilingües: limitadas al inglés según la model card.
+- No se mencionan capacidades de visión ni audio.
 
 ## Casos de uso
 
-- Asistente de codigo en local sin GPU: el artefacto de 6,41 GiB se ejecuta en CPU con Cortiq y ofrece entre 40 y 41 tok/s de decodificacion sostenida en el hardware medido, lo que permite usarlo como ayudante de programacion en estaciones de trabajo sin acelerador dedicado.
-- Revision y generacion de funciones con pruebas: pidiendo tareas acotadas como una funcion Python que parsee fechas ISO-8601, el modelo produce implementaciones autocontenidas; conviene reservar presupuesto de salida amplio porque el modo thinking consume tokens antes de la respuesta.
-- Integracion en pipelines de CI/CD ligeros: el servidor local expone una API compatible con `/v1/chat/completions`, de modo que se puede invocar desde scripts de pre-commit o de revision de parches sobre loopback, sin enviar codigo a servicios externos.
-- Agentes de codigo multi-paso: el post-entrenamiento con RL sobre repositorios reales y el soporte de uso de herramientas lo orientan a tareas de varios pasos, como localizar un fallo, editar ficheros y verificar el resultado.
-- Despliegue en entornos con restricciones de red o de privacidad: al ser un unico fichero verificable con SHA-256 y ejecutarse en local con API en loopback, encaja en entornos donde el codigo no puede salir de la maquina.
-- Prototipado rapido de funcionalidades sobre hardware Apple o con Vulkan: el fichero CMF puede usar rutas Metal y Vulkan, lo que abre la puerta a portatiles y equipos de escritorio sin CUDA.
-- Tareas de razonamiento y matematicas con traza verificable: el modo thinking expone el razonamiento intermedio, util para depurar por que el modelo llego a una conclusion en ejercicios o calculos.
+- Asistencia de programación en local: el modelo puede generar funciones y explicar código en un portátil con GPU de 8 GB, gracias a la cuantización `q4tp` de 6,88 GB y al motor `cortiq` sin dependencias de Python.
+- Autocompletado y revisión de código en IDE: con 131 072 tokens de contexto, puede procesar ficheros completos o varios módulos de un repositorio en una sola pasada, manteniendo coherencia entre definiciones y usos.
+- Agentes de código con tool calling: el soporte nativo de function calling en formato OpenAI permite integrar el modelo en pipelines que invocan compiladores, linters o ejecutores de tests, con el servidor compatible devolviendo `tool_calls` estructurados.
+- Servicio interno de chat para desarrolladores: el servidor OpenAI-compatible (`/v1/chat/completions`) permite desplegar el modelo en una intranet con `--host 127.0.0.1` y consumirlo desde herramientas existentes sin adaptadores.
+- Razonamiento sobre documentación técnica: el modo de pensamiento y el contexto largo permiten responder preguntas que requieren cruzar información de manuales, especificaciones y ejemplos de código extensos.
+- Despliegue en hardware heterogéneo: al soportar Vulkan, Metal y CPU, puede ejecutarse en estaciones con GPUs AMD o Intel, Mac mini M4 o servidores sin GPU, lo que facilita entornos de desarrollo diversos.
+- Procesamiento por lotes en CPU: el fichero `q8_2f` con `CMF_GPU=0` permite ejecutar tareas de generación de código en servidores sin GPU, con una calidad cercana al modelo sin cuantizar.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del artefacto no incluye MMLU, HumanEval, GSM8K ni metricas equivalentes, ni comparaciones de calidad frente al checkpoint BF16. Lo unico publicado son mediciones de rendimiento en CPU y una comprobacion funcional de implementacion.
+Calidad de la cuantización frente al modelo sin cuantizar (perplejidad sobre 2048 tokens de código de la biblioteca estándar de Python y de wikitext-2 test, y concordancia top-1):
 
-Rendimiento medido en CPU (cinco ejecuciones independientes del mismo artefacto 0.8.14 sobre un host RunPod compartido, AMD EPYC 7663, 112 CPUs logicas, ~251 GiB de RAM, cuota de contenedor 23,8 nucleos, con `CMF_GPU=0 cortiq bench ... --ctx 512 --tokens 256 --core --ignore-eos --json`):
+| Fichero | Expertos | Tamano | Perplejidad código | Perplejidad wiki | Concordancia top-1 |
+|---|---|---:|---:|---:|---:|
+| `q4tp` | 4 bits | 6,88 GB | 3,242 | 7,407 | 93,4 % |
+| `q8_2f` | 8 bits | 12,22 GB | 3,146 | 7,180 | 98,1 % |
+| Sin cuantizar | 16 bits | no disponible | 3,182 | 7,120 | referencia |
 
-| Contexto / generacion | Prefill, mediana | Decodificacion sostenida, mediana (rango) | TTFT, mediana (rango) |
-|---:|---:|---:|---:|
-| 512 / 256 tokens | 38,41 tok/s | 40,73 tok/s (40,62-41,23) | 13,53 s (13,43-13,77) |
+Rendimiento de inferencia con `cortiq bench --core --ignore-eos`, un flujo, mediana de tres ejecuciones, cortiq 0.8.15:
 
-Datos adicionales de la medicion: el estado KV observado en la secuencia 767 fue de 87.965.696 bytes (no es el RSS del proceso); una ejecucion corta de 16 tokens en CPU alcanzo un pico de 4.750 MiB de RSS. La politica automatica de workers selecciono 22 hilos, y un barrido acotado de 8, 12, 16, 20, 22, 24 y 28 workers confirmo 22 como el mas rapido para decodificacion sostenida (41,75 tok/s en una calibracion de 128 tokens). En una suite fija de cinco prompts con decodificacion greedy, la version CMF en CPU coincidio con cuatro de las cinco completaciones del modelo origen en BF16 sobre CUDA tras normalizar el marcador de fin upstream; el propio autor aclara que eso es una comprobacion de implementacion, no un benchmark de codigo.
+| Hardware | Backend | Fichero | Decodificación (tok/s) | Decodificación a 3-4k tokens | Prompt de 3-4k tokens (tok/s) | Tiempo al primer token |
+|---|---|---|---:|---:|---:|---:|
+| RTX A5000 (24 GB) | CUDA | `q4tp` | 167 | 148 | 3746 | 1,1 s |
+| RTX 3090 (24 GB) | Vulkan | `q4tp` | 150 | 129 | 382 | 10,5 s |
+| RTX 3090 (24 GB) | Vulkan | `q8_2f` | 140 | 132 | 547 | 7,3 s |
+| Mac mini M4 (24 GB) | Metal | `q4tp` | 46,8 | 40,9 | 413 | 7,3 s |
+| Mac mini M4 (24 GB) | Metal | `q8_2f` | 35,6 | 31,2 | 318 | 9,8 s |
+| Mac mini M4 (24 GB) | CPU, 10 núcleos | `q4tp` | 34,9 | 17,3 | 110 | 31,7 s |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- Peso de los pesos: el fichero CMF ocupa 6,41 GiB, por lo que en VRAM el modelo necesita al menos esa cantidad mas el estado KV, las activaciones y el overhead del runtime.
-- Estimacion orientativa en GPU: a partir del tamano del fichero, 8 GB de VRAM quedan muy justos y 12 GB o mas dan margen comodo para contexto corto y medio. No hay cifras de VRAM publicadas por el autor para GPU.
-- Estado KV medido: 87.965.696 bytes en la secuencia 767. El autor no publica una cifra de memoria para contexto de 131K; las 21 capas de ventana deslizante de 1.024 tokens limitan el crecimiento por token mas alla de esa ventana a las 7 capas de atencion completa, pero no se ofrece una extrapolacion verificada.
-- Memoria en CPU: una ejecucion corta de 16 tokens registro un pico de 4.750 MiB de RSS en el host descrito; es una observacion de prompt corto, no una cifra para contexto largo.
-- CPU: funciona sin GPU. En el hardware medido (AMD EPYC 7663 con 22 hilos) rinde aproximadamente 40 tok/s de decodificacion y 38 tok/s de prefill con contexto de 512 tokens.
-- GPU compatibles: no se publica throughput GPU de extremo a extremo. El artefacto puede usar rutas Metal y Vulkan, y el autor recomienda comprobar el adaptador seleccionado con `cortiq gpu` antes de tratar una ejecucion como acelerada por GPU. No se listan modelos concretos de GPU en la documentacion disponible.
-- Despliegue: Cortiq CLI (`cortiq run`, `cortiq serve`, `cortiq bench`, `cortiq verify`) y su servidor HTTP local. No se menciona soporte de vLLM, llama.cpp, Ollama ni TGI para este formato CMF.
-- Instalacion: `cargo install cortiq-cli --locked`; el modelo se descarga como un unico fichero desde Hugging Face y conviene verificar el SHA-256 antes de ejecutarlo.
-- Seguridad del servidor: el autor recomienda mantener el servidor en loopback salvo que haya un proxy inverso con autenticacion delante.
-- Latencia: TTFT mediana de 13,53 s con contexto de 512 tokens en CPU, segun las mediciones publicadas.
+- VRAM estimada: aproximadamente 8 GB de memoria unificada o VRAM para el fichero `q4tp`; 16 GB o más para el fichero `q8_2f`.
+- GPUs recomendadas: RTX A5000 (24 GB) con backend CUDA alcanza 167 tok/s de decodificación; RTX 3090 (24 GB) con Vulkan alcanza 150 tok/s; Mac mini M4 (24 GB) con Metal alcanza 46,8 tok/s.
+- Cabe en GPU de consumo: sí, el fichero `q4tp` está diseñado para GPUs con 8 GB de VRAM.
+- Opciones de despliegue: `cortiq` (motor Rust, instalable con `cargo install cortiq-cli` o binarios precompilados para Linux, macOS y Windows), con backend CUDA (`--features cuda`), Vulkan/DX12, Metal o CPU. Incluye servidor compatible con OpenAI y dashboard web.
+- Latencia y throughput: tiempo al primer token de 1,1 s en RTX A5000 con CUDA y prompt de 4096 tokens; 7,3 s en Mac mini M4 con Metal y prompt de 3000 tokens. El procesamiento de prompt en RTX A5000 con CUDA alcanza 3746 tok/s; en RTX 3090 con Vulkan, 382-547 tok/s.
+- En Vulkan, los kernels de decodificación de `q8_2f` requieren subgrupos de 32 lanes (NVIDIA); otras GPUs ejecutan el prompt en GPU y la decodificación operación por operación.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad | Notas |
-|---|---|---|---|---|---|---|
-| infosave/Mellum2.1-12B-A2.5B-Thinking-CMF | 12,15 B totales / 2,5 B activos | 131.072 tokens (declarados) | CMF (6,41 GiB) | Apache-2.0 | Hugging Face, runtime Cortiq | Conversion cuantizada; rendimiento CPU medido y publicado |
-| JetBrains/Mellum2.1-12B-A2.5B-Thinking | 12,15 B totales / 2,5 B activos | 131.072 tokens (declarados) | Safetensors BF16 (no confirmado en la informacion disponible) | Apache-2.0 | Hugging Face | Modelo origen; sin datos de benchmark publicados en la informacion consultada |
-| JetBrains/Mellum2-12B-A2.5B-Thinking-SFT | 12 B totales / 2,5 B activos | no disponible | no disponible | no disponible | Hugging Face | Variante SFT de la generacion anterior |
-| Conversion GGUF de Mellum2-12B-A2.5B-Thinking (local-ai-zone) | 12 B totales / 2,5 B activos | no disponible | GGUF (7,09 GB) | no disponible | Repositorio de terceros | 3.425 descargas y 9 likes en el momento de la busqueda; corresponde a Mellum2, no a Mellum2.1 |
+| Modelo | Parámetros | Activos | Contexto | Licencia | Formato / motor |
+|---|---|---|---|---|---|
+| Mellum2.1-12B-A2.5B-Thinking-CMF | 12,15 B | 2,5 B | 131 072 | Apache 2.0 | CMF / cortiq |
+| JetBrains/Mellum2.1-12B-A2.5B-Thinking | 12,15 B | 2,5 B | 131 072 | no disponible en la información | no disponible en la información |
+| Alternativas de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de benchmarks que permitan comparar calidad con alternativas de la misma categoria; la comparativa anterior es de formato, licencia y disponibilidad, no de rendimiento.
+La información proporcionada no incluye datos de rendimiento de otros modelos comparables, por lo que no es posible establecer una comparación cuantitativa de benchmarks.
 
 ## Limitaciones y advertencias
 
-- La cuantizacion no es sin perdidas: el autor advierte explicitamente de que puede cambiar los logits y las completaciones respecto al checkpoint BF16, aunque `cortiq verify` haya pasado correctamente sobre el contenedor CMF y los 5.631 tensores.
-- Superar la verificacion de integridad no garantiza calidad de tarea, seguridad ni equivalencia byte a byte con el modelo original.
-- El modo thinking consume presupuesto de salida: hay que reservar suficientes tokens de generacion para el razonamiento mas la respuesta, o usar `--no-think` cuando se quiera una respuesta directa.
-- No se declaran idiomas soportados, por lo que no hay garantia documentada de cobertura multilingue mas alla del comportamiento del modelo base.
-- No se publican resultados de benchmarks de calidad ni evaluaciones de seguridad; cualquier decision de produccion deberia apoyarse en evaluaciones propias.
-- Memoria para contexto largo: el autor solo publica el estado KV a 767 tokens y advierte de que el dato de RSS de 4.750 MiB es una observacion de prompt corto y no una cifra para 131K de contexto.
-- No hay cifras publicadas de throughput en GPU; el rendimiento en Metal o Vulkan es indeterminado hasta disponer de un registro de hardware reproducible.
-- El servidor local expone endpoints sin autenticacion por defecto; debe mantenerse en loopback o protegerse con un proxy inverso autenticado.
-- Riesgo de alucinacion y de codigo incorrecto: la prueba de humo de cinco prompts no sustituye a una revision del codigo generado.
-- Licencia Apache-2.0 heredada del modelo base, que permite uso comercial, pero la informacion disponible no aclara condiciones adicionales del autor de la conversion.
-- Artefacto muy reciente y con cero descargas y cero likes en el momento de la consulta, por lo que su adopcion y soporte comunitario son todavia inexistentes.
-- No se detallan sesgos conocidos del modelo en la informacion consultada.
+- Idiomas: la model card solo declara inglés; el rendimiento en castellano u otros idiomas no está garantizado.
+- Alucinación: no se documentan evaluaciones específicas de tasa de alucinación; como modelo generativo de código, puede producir APIs o funciones inexistentes.
+- Sesgos: no se documentan análisis de sesgos en la información disponible.
+- Contexto: aunque el modelo soporta 131 072 tokens, la caché KV por defecto es de 32 768; ampliarla requiere configurar `CMF_MAX_SEQ` y consume más memoria.
+- Licencia: Apache 2.0 permite uso comercial, pero debe verificarse la licencia del modelo base JetBrains/Mellum2.1-12B-A2.5B-Thinking, no detallada en la información disponible.
+- Dependencia del motor: los ficheros CMF solo se ejecutan con `cortiq` (versión 0.8.15 o superior); no son compatibles con llama.cpp, vLLM, TGI u Ollama.
+- Tool calling: la validación reportada es de 6 de 6 conversaciones de prueba en Metal con `q4tp`; no hay datos de robustez a mayor escala.
+- Modo de pensamiento: sin `--no-think`, el modelo genera un bloque de razonamiento que consume tokens; el límite por defecto de 256 tokens nuevos puede truncar la respuesta si no se aumenta `--max-tokens`.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/infosave/Mellum2.1-12B-A2.5B-Thinking-CMF
 - Modelo base: https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking
-- Revision upstream fijada: https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/tree/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4
-- Repositorio de Cortiq: https://github.com/infosave2007/cmf
-- Mediciones completas: https://huggingface.co/infosave/Mellum2.1-12B-A2.5B-Thinking-CMF/blob/main/BENCHMARKS.md
-- Fichero de mediciones: https://huggingface.co/infosave/Mellum2.1-12B-A2.5B-Thinking-CMF/blob/main/measurements.json
-- Variante SFT de Mellum2: https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking-SFT
-- Ficha de referencia de Mellum2.1 Thinking: https://www.llmreference.com/model/mellum2-1-12b-thinking
-- Resumen del modelo en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/mellum2-12b-a2.5b-thinking-jetbrains
-- Conversion GGUF de terceros de Mellum2: https://local-ai-zone.github.io/models/mellum2-12b-a2-5b-thinking.html
+- Repositorio del formato CMF y motor cortiq: https://github.com/infosave2007/cmf
+- Binarios precompilados de cortiq: https://github.com/infosave2007/cmf/releases

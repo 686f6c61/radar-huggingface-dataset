@@ -2,119 +2,112 @@
 
 ## Resumen
 
-Ternary-Bonsai-2-27B-Heretic-Satellite es una variante ("Satellite") del modelo HybridRMD/Ternary-Bonsai-2-27B-Heretic, un transformer denso de la familia Qwen3.5 con 26.895.998.464 de parametros (~26,9 B). Lo desarrolla el usuario HybridRMD y su proposito no es ser un asistente general, sino actuar como un decisor explicito de compactacion de contexto: ante una transcripcion de conversacion, el modelo emite primero un bloque JSON con la decision de compactar y despues responde con normalidad. Es, por tanto, una especializacion de un solo comportamiento sobre un modelo base ya existente.
+Ternary-Bonsai-2-27B-Heretic-Satellite es un modelo derivado de Qwen3.8-27B Bonsai 2 (Heretic) que incorpora un pequeño adaptador LoRA entrenado para una tarea muy concreta: convertir un contexto de trabajo largo en una única decisión estructurada de compactación. No es un modelo conversacional generalista, sino un "satélite" especializado que decide cuándo comprimir el contexto, qué debe preservarse literalmente, con qué agresividad y mediante qué estrategia. Lo desarrolla HybridRMD y se distribuye bajo licencia "other".
 
-La tecnica empleada es destilacion de decisiones mediante LoRA: se entreno un adaptador LoRA r=16 sobre el modelo base para imitar la politica de compactacion de laya (convaiinnovations/laya), de modo que el modelo aprenda a juzgar la redundancia de una transcripcion y a declarar su decision antes de contestar. El resultado se publica en formato GGUF con dos cuantizaciones (Q4_K_M y Q8_0) listas para desplegar con llama.cpp.
+El modelo parte del checkpoint base dequantizado de Q8_0 GGUF a bf16, con arquitectura Qwen3_5ForCausalLM de 64 capas, hidden de 5120, vocabulario de 248.320 tokens y 262.144 posiciones máximas de contexto. El adaptador se entrenó mediante destilación de decisiones (LoRA decision-distillation) tomando como profesor a `convaiinnovations/laya`, que aporta todas las etiquetas de entrenamiento. El resultado es un modelo de 26.895.998.464 parámetros que mantiene la capacidad general del base y añade una salida de decisión en cuatro campos.
 
-Su relevancia es acotada pero concreta: cubre el problema de la gestion de memoria en agentes conversacionales de largo recorrido, donde decidir cuando resumir o descartar contexto es tan importante como generar la respuesta. El modelo es solo texto, no tiene encoder de vision, y su comportamiento especializado unicamente se activa en peticiones con formato de transcripcion.
+Su relevancia práctica reside en la gestión de contexto en agentes y pipelines conversacionales de largo recorrido: en lugar de aplicar políticas de compactación heurísticas, el modelo emite un bloque de decisión verificable (`should_compact`, `preserve`, `level`, `mode`) que puede integrarse en un orquestador. Es texto puro, sin torre de visión ni proyector.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso hibrido Qwen3.5 (etiqueta `qwen3_5`), sin encoder de vision |
-| Parametros totales | 26.895.998.464 (~26,9 B) |
-| Parametros activos | no aplica (modelo denso) |
-| Longitud de contexto | no disponible (longitud maxima de entrenamiento documentada: 1536 tokens) |
-| Tipos de cuantizacion | Q4_K_M (~4,9 bpw) y Q8_0 (~8,5 bpw); GGUF F16 intermedio para fusion y validacion |
+| Arquitectura | Qwen3_5ForCausalLM (transformer denso, 64 capas, hidden 5120, vocab 248320) |
+| Parametros totales | 26.895.998.464 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 262.144 posiciones maximas |
+| Tipos de cuantizacion | GGUF Q2_K (mixta, efectiva ~3,18 bits/param), Q4_K_M, Q8_0, F16; safetensors bf16 |
 | Idiomas soportados | no disponible |
 | Licencia | other |
-| Formato de pesos | GGUF (`Ternary-Bonsai-2-27B-Heretic-Satellite-Q4_K_M.gguf` y `-Q8_0.gguf`); safetensors fp16 text-keyed de 851 tensores (50,1 GiB) en la etapa intermedia |
-| Tamano del repositorio | 16,5 GB |
-| Pipeline | text-generation |
-| Libreria | gguf |
+| Formato de pesos | safetensors (bf16), GGUF (Q2_K, Q4_K_M, Q8_0, F16) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de HybridRMD/Ternary-Bonsai-2-27B-Heretic, descrito por el autor como un "dense-merge heretic" de la familia Qwen3.5. La cadena de construccion documentada es: se dequantizo el GGUF Q8_0 publicado del modelo base a safetensors fp16 text-keyed (851 tensores, 50,1 GiB); sobre esos pesos se entreno un LoRA de rango 16 y alpha 32 aplicado a los modulos `in_proj_qkv`, `q`, `k`, `v`, `o` y `out_proj`; el entrenamiento duro 3 epocas y 129 pasos con perdida restringida a la cola (`tail-only loss`), LR 5e-5 y MAX_LEN 1536, sobre 86 ventanas etiquetadas por laya; finalmente el adaptador se fusiono en los pesos (merge denso real, verificado: los modulos objetivo cambian y los no objetivo difieren solo por redondeo bf16, con un maximo de 4,9e-4) y se genero un GGUF F16 del que derivan las cuantizaciones Q4_K_M y Q8_0.
+El modelo es un transformer denso basado en Qwen3_5ForCausalLM, con 64 capas, dimensión oculta de 5120 y un vocabulario de 248.320 tokens. El checkpoint base se obtuvo dequantizando el GGUF Q8_0 publicado a bf16 mediante una fusión densa, sin adaptador residual en el grafo. Sobre esa base se aplicó un LoRA entrenado con destilación de decisiones, usando como profesor a `convaiinnovations/laya`, que proporciona todas las etiquetas de supervisión: las decisiones `should_compact`, `preserve`, `level` y `mode`. No se redistribuyen pesos de laya.
 
-La innovacion tecnica es la destilacion de decisiones: en lugar de entrenar al modelo para resumir, se le entrena para emitir un juicio estructurado de compactacion (`should_compact`, `preserve`, `level`, `mode`) antes de cualquier respuesta. El diseno del corpus es deliberado: la longitud de la ventana no determina la etiqueta, y las etiquetas estan mezcladas dentro de cada banda de longitud, porque un clasificador basado solo en longitud obtendria un 77,9 % en ese conjunto (99,6 % en una version ingenua). Existe un antecedente en el que el modelo degenero a responder siempre la misma decision porque la longitud predecia la etiqueta.
-
-Una salvedad honesta declarada por el autor: la base de entrenamiento se reconstruyo dequantizando el GGUF Q8_0 publicado porque la base fp16 original se perdio con la maquina que la albergaba. Q8_0 esta en torno a 8,5 bpw y es casi sin perdida, pero no es bit-exacta, por lo que la base arrastra cierto ruido de cuantizacion. La reconstruccion se valido contra el GGUF fuente con 5/5 de coincidencia top-1 en el siguiente token y un delta maximo de |logprob| de 0,135 en los candidatos de cola.
+La build publicada es la b6, con 513 pasos de entrenamiento e incluye QAT (quantization-aware training) consciente de Q2_K sobre las tensores objetivo del LoRA. El autor reporta que todos los ficheros subidos se verificaron como idénticos byte a byte respecto a la build local. El Q2_K es un fichero de precisión mixta: 62,51% de parámetros en Q2_K, 23,08% en Q3_K, 9,67% en Q4_K, 4,73% en Q6_K y 0,01% en F32 (normas), con 3,183 bits/param efectivos globales y 3,033 bits/param en las 176 matrices que realizan el cómputo.
 
 ## Capacidades
 
-- Generacion de texto conversacional en formato chat, heredada del modelo base.
-- Emision de un bloque de decision JSON estricto como primer contenido de la respuesta, seguido del marcador literal `---decision-end---` y de la respuesta normal.
-- Campos del bloque de decision: `should_compact` (`yes` / `no`), `preserve` (`code`, `numbers`, `decisions`, `recency`, `nothing`), `level` (0 ligero, 1 moderado, 2 agresivo) y `mode` (`narrative`, `extractive`, `by_topic`).
-- Juicio de redundancia, no de longitud: una transcripcion corta pero repetitiva puede recibir `yes`, y una larga pero densa en informacion puede recibir `no`.
-- Activacion del comportamiento especializado solo en peticiones con formato de transcripcion: un mensaje de sistema mas un turno de usuario que contenga `[conversation]` y la transcripcion.
-- Ante una peticion directa que no sea una transcripcion, el modelo no emite bloque de decision y responde como el asistente heretic subyacente.
-- Modelo exclusivamente de texto: sin vision, sin audio, sin capacidades multimodales.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no documentado como capacidad propia; el modelo esta pensado como componente de decision dentro de un bucle de agente.
-- Capacidades multilingues: no disponibles.
-- Modo "thinking": el autor advierte que debe desactivarse (`enable_thinking=False`) al construir el prompt, porque con el valor por defecto de Qwen3.5 el modelo razona primero y no llega a emitir el bloque a tiempo.
+- Generación de una decisión estructurada de compactación de contexto con cuatro campos: `should_compact` (yes/no), `preserve` (code, numbers, decisions, recency, nothing), `level` (0, 1, 2) y `mode` (narrative, extractive, by_topic).
+- Lectura de transcripciones largas para emitir un bloque de decisión único y coherente.
+- Conservación de la capacidad general del modelo base: razonamiento, sentido común y QA, según la evaluación del autor.
+- Generación de texto en formato conversacional (tag `conversational`, `convai`).
+- Compatibilidad con llama.cpp y GGUF para despliegue local.
+- Compatibilidad con endpoints (`endpoints_compatible`).
+- No dispone de visión: sin torre de visión ni proyector; las imágenes no producen resultados útiles.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes multi-step: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Compactacion de contexto en agentes conversacionales: el modelo se inserta antes de la llamada principal al LLM para decidir si conviene compactar el historial. Su salida `should_compact` y `mode` permite disparar una estrategia de resumen concreta sin depender de un umbral fijo de tokens.
-- Gestion de memoria en asistentes multi-turno de larga duracion: al indicar `preserve`, el sistema sabe que debe conservar literalmente (codigo, numeros, decisiones o los turnos mas recientes) y que puede descartar sin perdida funcional.
-- Preservacion de codigo en sesiones tecnicas: cuando `preserve` vale `code`, el pipeline de compactacion puede aplicar un resumen extractivo que mantenga los fragmentos de codigo intactos y comprima solo la prosa circundante.
-- Resumen extractivo de transcripciones redundantes: con `mode` en `extractive` (63 de 86 casos del corpus de entrenamiento), el modelo senala que la compactacion debe eliminar repeticiones literales en lugar de reescribir el contenido.
-- Enrutado dentro de sistemas multi-agente: un orquestador puede usar la decision como senal barata para decidir si lanza un subagente de resumen, si continua con el contexto actual o si pasa a una fase de consolidacion.
-- Filtro previo a llamadas costosas: dado que el modelo se ejecuta en GGUF con llama.cpp y ocupa 15,4 GiB en Q4_K_M, puede desplegarse como paso de bajo coste que evita enviar contextos inflados a un modelo mayor y mas caro.
-- Agrupacion tematica de historiales largos: con `mode` en `by_topic` (17 de 86 casos), la salida sugiere compactar agrupando por temas, util para reconstruir el estado de una sesion de soporte tecnico.
-- Evaluacion y auditoria de politicas de compactacion: al comparar sus decisiones con las de laya sobre el mismo corpus, sirve para medir la calidad de una politica antes de integrarla en produccion.
+- Gestión automática de contexto en agentes conversacionales: el modelo recibe la transcripción acumulada y emite un bloque de decisión que el orquestador usa para compactar el contexto de trabajo. Es adecuado porque su salida es un esquema fijo y verificable, no texto libre.
+- Compactación selectiva en asistentes de código: con `preserve: code` y `mode: extractive`, el pipeline puede retener fragmentos de código literalmente mientras resume el resto de la conversación, reduciendo el riesgo de perder información crítica.
+- Preservación de decisiones en flujos de soporte técnico: usando `preserve: decisions`, el sistema mantiene las resoluciones y acuerdos previos al comprimir el histórico, lo que evita contradicciones en conversaciones multi-turno largas.
+- Estrategia de resumen adaptativa por tema: con `mode: by_topic`, el orquestador puede agrupar y resumir el contexto por temas en lugar de por orden cronológico, útil en sesiones de investigación o análisis prolongados.
+- Control de agresividad del resumen: el campo `level` (0 ligero, 1 moderado, 2 agresivo) permite ajustar cuánta información se descarta según el presupuesto de tokens disponible en cada momento del pipeline.
+- Despliegue local con llama.cpp: el fichero Q4_K_M (16,5 GB) permite ejecutar el modelo en estaciones de trabajo con GPU de consumo, integrándolo como servicio de decisión dentro de una aplicación de escritorio o un backend pequeño.
+- Evaluación y auditoría de políticas de contexto: al comparar las decisiones del modelo con las de laya (el profesor) sobre sesiones retenidas, se puede validar la política de compactación antes de desplegarla en producción.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K y similares) en la informacion disponible. El unico rendimiento medido es una evaluacion interna sobre 9 ventanas retenidas de sesiones usadas en entrenamiento, decodificadas de forma greedy con `llama-server` sobre el modelo fusionado en F16:
+Evaluación de decisión sobre 20 sesiones retenidas, comparadas con la decisión de laya en la misma sesión (build b6):
 
-| Comprobacion | Resultado |
-|---|---|
-| El bloque de decision es lo primero que se emite | 9/9 |
-| Respuestas distintas (sin colapso a respuesta constante) | 9 distintas, 0 duplicadas |
-| `should_compact` coincide con laya | 8/9 |
+| Tier | block-first | coherent | distinct replies | agrees with laya | all 4 fields | duplicate blocks |
+|---|---|---|---|---|---|---|
+| F16 | 20/20 | 20/20 | 11 | 17/20 (85%) | 3/20 | 0 |
+| Q4_K_M | 20/20 | 20/20 | 13 | 17/20 (85%) | 3/20 | 0 |
+| Q2_K | 20/20 | 20/20 | 14 | 17/20 (85%) | 4/20 | 1 |
+| Q8_0 | no evaluado | | | | | |
 
-La unica discrepancia se produjo en una ventana de 90 palabras en la que laya dijo `yes` y el modelo dijo `no`.
+Evaluación de capacidad general con lm-evaluation-harness 0.4.13, `local-completions`, vLLM 0.30.0, TP=4 bfloat16, `max_model_len` 4096, 5-shot para el conjunto de sentido común/QA y 0-shot para boolq, 250 documentos por tarea:
 
-Estadisticas del corpus de entrenamiento (86 pares de decision, 6 sesiones en una sola maquina), relevantes para calibrar expectativas:
+| Tarea | Métrica | Base (sin fine-tuning) | b6 (este) | Δ |
+|---|---|---|---|---|
+| arc_challenge | acc_norm | 70,80 | 70,00 | −0,80 |
+| arc_easy | acc_norm | 89,60 | 89,20 | −0,40 |
+| hellaswag | acc_norm | 75,20 | 72,80 | −2,40 |
+| openbookqa | acc_norm | 52,40 | 52,80 | +0,40 |
+| piqa | acc_norm | 81,60 | 81,20 | −0,40 |
+| winogrande | acc | 80,40 | 78,40 | −2,00 |
+| boolq | acc | 85,20 | 88,40 | +3,20 |
 
-| Campo | Distribucion |
-|---|---|
-| `should_compact` | `yes` 50 / `no` 36 |
-| `preserve` | `nothing` 43, `code` 21, `recency` 19, `decisions` 3 |
-| `level` | 1 -> 82, 2 -> 4 |
-| `mode` | `extractive` 63, `by_topic` 17, `narrative` 6 |
+Diferencia media: −0,34 puntos, con banda 2σ de [−3,11, +2,43]. El autor indica que el resultado no es distinguible del base en ninguna de las siete tareas y que la comparación dedicada contra modelos de terceros falló.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el fichero Q4_K_M ocupa 15,4 GiB (16.547.400.096 bytes), por lo que se necesitan aproximadamente 16-18 GB de VRAM contando el contexto en KV cache. El fichero Q8_0 ocupa 26,6 GiB (28.595.763.616 bytes), lo que exige del orden de 28-30 GB de VRAM.
-- GPU recomendadas para Q4_K_M: RTX 4090 (24 GB), RTX 3090 (24 GB), L40S (48 GB) o A100 40 GB. Para Q8_0: A100 40 GB, A100 80 GB, H100 o L40S 48 GB.
-- Compatibilidad con GPU de consumo: el Q4_K_M cabe en tarjetas consumer de 24 GB (RTX 3090, RTX 4090) e incluso en algunas de 16 GB con contexto reducido. El Q8_0 no cabe en una unica GPU consumer de 24 GB sin offload a CPU o sin repartir entre dos tarjetas.
-- Opciones de despliegue: el autor valido el modelo con `llama-server` (llama.cpp), que es la via de referencia para GGUF. Tambien es compatible con Ollama, LM Studio y otros runners de llama.cpp. La model card incluye la etiqueta `endpoints_compatible`. El uso con `transformers` esta documentado para la tokenizacion y la construccion del prompt (`apply_chat_template` con `add_generation_prompt=True` y `enable_thinking=False`).
-- Latencia y throughput estimados: no disponibles. Solo se documenta que las 9 ventanas de evaluacion se decodificaron de forma greedy.
+- VRAM estimada para inferencia: Q2_K (10,7 GB) requiere aproximadamente 11-12 GB; Q4_K_M (16,5 GB) aproximadamente 17-18 GB; Q8_0 (28,6 GB) aproximadamente 29-30 GB; F16 (53,8 GB) aproximadamente 54-56 GB. Estimaciones a partir del tamaño de fichero, sin dato oficial de VRAM.
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y Q2_K; A100 40/80 GB o H100 para Q8_0 y F16; múltiples GPU para F16 si se busca contexto completo de 262.144 posiciones.
+- Cabe en GPU de consumo: sí, en Q2_K y Q4_K_M con GPUs de 12-24 GB; Q8_0 requiere 32 GB o más.
+- Opciones de despliegue: llama.cpp (tiers GGUF), transformers con safetensors bf16, vLLM (usado por el autor en la evaluación, TP=4), endpoints compatibles.
+- Latencia y throughput: no disponible en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-La informacion disponible solo permite comparar con el modelo padre. No se documentan cifras de alternativas externas de la misma categoria.
-
-| Modelo | Parametros | Contexto | Comportamiento | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ternary-Bonsai-2-27B-Heretic-Satellite | ~26,9 B (denso) | no disponible | Emite bloque de decision de compactacion y despues responde | other | GGUF Q4_K_M y Q8_0 en Hugging Face |
-| Ternary-Bonsai-2-27B-Heretic (padre) | ~26,9 B (denso) | no disponible | Asistente heretic; no emite bloque de decision | other | GGUF Q8_0 publicado |
-| Alternativas externas de compactacion o decision de contexto | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Ternary-Bonsai-2-27B-Heretic-Satellite | 26,9 B | 262.144 | Decisión de compactación de contexto | other | Hugging Face (safetensors + GGUF) |
+| convaiinnovations/laya | no disponible | no disponible | Decisión de compactación de contexto (profesor) | no disponible | Hugging Face |
+| Qwen3.8-27B-Bonsai-2-27B-Heretic (base) | no disponible | no disponible | Modelo generalista | no disponible | Hugging Face |
 
-La diferencia practica entre el padre y esta variante es que la Satellite anade un comportamiento especifico aprendido por destilacion de decisiones, con un coste de licencia y de pesos practicamente identico (misma base, mismo tamano de parametros).
+No se dispone de datos de benchmarks de terceros ni de especificaciones completas de los modelos comparables en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Corpus de entrenamiento muy reducido: 86 pares de decision procedentes de 6 sesiones grabadas en una sola maquina, un volumen que limita la generalizacion a otros dominios, idiomas y estilos de conversacion.
-- `level` es practicamente constante en 1 (82 de 86 filas) porque las puntuaciones de laya se situan cerca de 1. No debe usarse ese campo para discriminar.
-- `mode` esta sesgado hacia `extractive` (63 de 86 casos), por lo que las categorias `by_topic` y `narrative` estan infrarrepresentadas (17 y 6 casos respectivamente).
-- `preserve` esta dominado por `nothing` (43 casos) y `decisions` apenas aparece 3 veces, de modo que la preservacion de decisiones apenas esta cubierta.
-- El bloque de decision solo se emite en peticiones con formato de transcripcion (mensaje de sistema mas turno de usuario con `[conversation]`). En peticiones directas el modelo no emite bloque: es el comportamiento esperado segun los datos de entrenamiento, no un fallo, pero implica que no toda respuesta comienza con una decision.
-- El comportamiento de rechazo se hereda del modelo base heretic y no se ha vuelto a caracterizar para esta version. Un rechazo sustituye la respuesta completa, de modo que una peticion rechazada no produce bloque de decision.
-- Ruido de cuantizacion en la base: el entrenamiento se hizo sobre una base reconstruida por dequantizacion del GGUF Q8_0, no sobre los pesos fp16 originales. Es casi sin perdida, pero no bit-exacta.
-- Riesgo de alucinacion: no se documenta una evaluacion especifica; se hereda el riesgo del modelo base y no se ha medido en esta variante.
-- Idiomas soportados: no disponibles. El corpus de entrenamiento esta en ingles, lo que hace previsible un rendimiento peor en castellano para la tarea de decision.
-- Licencia `other`: no se detallan los terminos. Es imprescindible revisar las condiciones exactas antes de cualquier uso comercial, asi como las del modelo base.
-- Ausencia de benchmarks estandar: no hay datos de MMLU, HumanEval, GSM8K ni similares, por lo que no es posible comparar su calidad general con otros modelos de 27 B.
-- Requisito de prompt no obvio: si no se desactiva el modo thinking (`enable_thinking=False`), el modelo razona primero y no llega a emitir el bloque de decision. En produccion esto puede manifestarse como un fallo silencioso.
+- El modelo está especializado en una única tarea de decisión; no debe usarse como asistente conversacional general.
+- No tiene visión: las imágenes no producen resultados útiles.
+- La concordancia exacta en los cuatro campos es baja (3-4 de 20 sesiones). Los campos de soporte (`preserve`, `level`) son notablemente más ruidosos que la decisión principal; si se actúa programáticamente sobre ellos, deben verificarse.
+- El tier Q2_K emite un bloque de decisión duplicado de cada 20 sesiones; el autor lo desaconseja como opción por defecto.
+- La mejora reportada de Q2_K (14/20 a 17/20) es direccional: la prueba de McNemar pareada sobre 20 ítems da p=1,000 y no constituye una victoria demostrada.
+- La evaluación de capacidad general usa 250 documentos por tarea, con un error estándar aproximado de ±3 puntos por modelo; la comparación con modelos de terceros no se completó.
+- Licencia "other": deben revisarse los términos concretos antes de uso comercial; no se especifican restricciones en la información disponible.
+- Idiomas soportados no documentados; no se garantiza un comportamiento multilingüe.
+- Riesgo de alucinación y sesgos: no documentado en la información proporcionada.
+- El modelo deriva de un checkpoint dequantizado de Q8_0 a bf16, lo que puede introducir diferencias respecto al base original.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/HybridRMD/Ternary-Bonsai-2-27B-Heretic-Satellite
 - Modelo base: https://huggingface.co/HybridRMD/Ternary-Bonsai-2-27B-Heretic
-- Politica de compactacion laya: https://huggingface.co/convaiinnovations/laya
+- Modelo profesor (laya): https://huggingface.co/convaiinnovations/laya

@@ -2,96 +2,100 @@
 
 ## Resumen
 
-GLM-5.3-Flash es un modelo multimodal de la familia GLM-5 desarrollado por Z.ai, publicado el 14 de agosto de 2026. Se trata del primer modelo nativamente multimodal de la serie GLM-5 y el primero de la familia en incorporar un bloque de predicción multi-token (MTP) integrado en la arquitectura. Con 320B parámetros totales y 18B activos por token, está diseñado para tareas de codificación, razonamiento y agentes a un coste de inferencia reducido frente a modelos monolíticos de tamaño similar.
+GLM-5.3-Flash-MLX-oQ4-MTP es una conversión cuantizada del modelo multimodal zai-org/GLM-5.3-Flash, desarrollada por el usuario Vontra (bajo el sello TensorFold). Se trata de un MoE disperso multimodal de arquitectura `glm5_next` con 321.323.031.390 parámetros totales, adaptado al ecosistema MLX de Apple Silicon mediante una receta de cuantización mixta denominada oQ4: una base afín de 4 bits con 554 módulos sobrescritos a 5, 6 y 8 bits seleccionados por sensibilidad.
 
-La conversión que se describe en esta ficha, publicada por el usuario Vontra, es una cuantización post-entrenamiento (PTQ) del checkpoint oficial de Z.ai al formato MLX (Apple Silicon), con una receta de precisión mixta sensible a la sensibilidad de los módulos. El checkpoint resultante conserva el bloque MTP nativo del modelo original, lo que permite decodificación especulativa en entornos que soporten la arquitectura `glm5_next`. La cuantización oQ4 reduce el peso a 172,99 GiB y permite ejecutar el modelo en hardware Apple Silicon con memoria unificada, aunque con una velocidad de decodificación modesta.
+El interés principal de esta ficha reside en que preserva el bloque nativo de predicción del siguiente token (MTP, multi-token prediction) del checkpoint original, lo que habilita decodificación especulativa integrada en el propio modelo. El contexto configurado alcanza 1.048.576 tokens y el repositorio ocupa 185,749 GB, lo que lo sitúa en el terreno de despliegues en estaciones de trabajo con memoria unificada amplia.
 
-El modelo es relevante porque combina multimodalidad (imagen y vídeo), ventana de contexto de 1M tokens, arquitectura MoE dispersa y licencia MIT, lo que lo convierte en una opción atractiva para investigación y despliegues comerciales en entornos de Apple Silicon.
+La relevancia actual es doble: por un lado, demuestra que los MoE multimodales de gran escala pueden ejecutarse en hardware Apple Silicon mediante cuantización guiada por sensibilidad; por otro, la licencia MIT del checkpoint facilita su uso comercial, algo poco habitual en modelos de este tamaño. No obstante, la información pública disponible sobre el modelo base es limitada y muchos datos técnicos deben marcarse como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `glm_5_next`, multimodal sparse MoE (Mixture of Experts) con atención híbrida linear y sparse MLA |
-| Parametros totales | 320B (modelo original); 51.793.481.206 en el checkpoint MLX cuantizado |
-| Parametros activos | 18B por token (modelo original) |
-| Longitud de contexto | 1.048.576 tokens (1M) |
-| Tipos de cuantizacion | oQ4 (4-bit affine base con group size 64, 554 módulos con override a 5/6/8-bit) |
-| Idiomas soportados | Inglés (en), chino (zh) |
+| Arquitectura | `glm5_next`, MoE disperso multimodal (vision-language), atención híbrida lineal y dispersa, hiperconexiones con restricción de variedad |
+| Parametros totales | 321.323.031.390 |
+| Parametros activos | no disponible |
+| Longitud de contexto | 1.048.576 tokens (configurado) |
+| Tipos de cuantizacion | oQ4 mixta: base afín 4 bits con group size 64, 554 módulos sobrescritos a 5/6/8 bits; capa MTP con 12 sobrescrituras |
+| Idiomas soportados | en, zh |
 | Licencia | MIT |
-| Formato de pesos | MLX safetensors (35 shards, 3125 tensores) |
+| Formato de pesos | MLX safetensors (35 shards, 3125 tensores, 59 de ellos MTP) |
 
 ## Arquitectura y entrenamiento
 
-GLM-5.3-Flash es el primer modelo nativamente multimodal de la serie GLM-5. Utiliza una arquitectura de Mixture of Experts (MoE) con 320B parámetros totales y 18B activos por token, combinando atención linear (KDA) y sparse MLA (Multi-head Latent Attention). La arquitectura incorpora hyper-connections con restricciones de manifold y un bloque de predicción multi-token (MTP) integrado, que permite decodificación especulativa con un único paso de predicción adicional. El modelo acepta entrada de imagen y vídeo, además de texto, y está entrenado sobre un conjunto de datos multilingüe centrado en inglés y chino.
+El modelo base emplea la arquitectura `glm5_next`, un transformer MoE disperso con capacidades multimodales (pipeline image-text-to-text). Incorpora atención híbrida que combina mecanismos lineales y dispersos, hiperconexiones con restricción de variedad y una capa embebida de predicción del siguiente token (MTP) que actúa como cabezal de borrador para decodificación especulativa. El checkpoint original se distribuye en FP8 E4M3 con escalado por bloques de 128x128.
 
-La conversión de Vontra es una cuantización post-entrenamiento (PTQ) que no retrena ni fine-tunea el modelo original. La receta oQ4 aplica 4-bit affine con group size 64 como base, y selecciona 554 módulos sensibles (medidos con activación MSE relativa sobre un conjunto de calibración de código multilingüe, 128 muestras a 256 tokens) para ser promovidos a 5, 6 u 8 bits. El token embedding, la salida, el encoder de visión y el projector se conservan a precisión de origen (FP8 E4M3 con block scaling 128x128). El bloque MTP se cuantiza a 4-bit con 12 overrides nativos adicionales. La conversión se realizó con el convertidor de Vontra usando MLX 0.32.0.
+Esta conversión concreta es una cuantización post-entrenamiento weight-only: no reentrena ni ajusta el modelo original. La receta oQ4 mide la sensibilidad de cada módulo mediante el error cuadrático medio relativo de activaciones, usando un proxy validado de 4 bits sobre un conjunto de calibración multilingüe de código (128 muestras de 256 tokens). La asignación de precisión sigue una regla de ranking de sensibilidad por capa con presupuesto de bytes bajo un objetivo oQ4 y un tope duro. Los expertos enrutados reciben base de 4 bits con proyecciones seleccionadas a mayor precisión; embeddings, cabeza de salida, codificador de visión y proyector se preservan a la precisión del origen. No se dispone de datos sobre el volumen de tokens de entrenamiento, composición del dataset ni si hubo RLHF o DPO en el modelo base.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multilingüe (inglés y chino).
-- Comprensión multimodal: entrada de imagen y vídeo.
-- Generación de código y soporte de tool calling (function calling).
-- Capacidades de agente y razonamiento multi-paso.
-- Predicción multi-token (MTP) nativa para decodificación especulativa (requiere runtime compatible).
-- Ventana de contexto de 1M tokens, adecuada para documentos largos y conversaciones extendidas.
+- Generación de texto conversacional y razonamiento multi-turno con ventana de contexto de hasta 1.048.576 tokens.
+- Procesamiento de imagen y texto (image-text-to-text): el codificador de visión y el proyector se conservan a precisión del origen.
+- Capacidades de código, dadas las etiquetas del modelo y el conjunto de calibración basado en código; el alcance exacto no está documentado.
+- Decodificación especulativa nativa mediante la capa MTP incluida, que permite generar borradores y verificarlos en el mismo modelo.
+- Soporte multilingüe limitado a inglés y chino según los metadatos de idioma.
+- Tool calling y function calling: no disponible en la información proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
+- Modo thinking explícito, audio u otras modalidades: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Asistencia al cliente automatizada: la ventana de 1M tokens permite mantener conversaciones de larga duración con historial completo, gestionando contextos amplios sin truncar. Su soporte multilingüe (en/zh) facilita su uso en mercados de habla inglesa y china.
-- Generación de código en producción: con soporte de tool calling y razonamiento multi-paso, puede integrarse en pipelines de CI/CD para revisión de código, generación de tests y autocompletado en editores, aprovechando la arquitectura MoE para un coste por token reducido.
-- Análisis de documentos técnicos con imágenes: el modelo acepta entrada de imagen y texto, por lo que puede procesar diagramas, capturas de pantalla y documentación técnica con figuras en un único paso.
-- Agentes autónomos de software: con su capacidad de razonamiento multi-paso y soporte de herramientas, puede orquestar tareas como depuración de código, ejecución de comandos y resolución de issues en repositorios.
-- Búsqueda y resumen en corpus largos: la ventana de 1M tokens permite procesar documentos extensos (informes, papers, libros) sin necesidad de chunking, generando resúmenes y extrayendo información relevante.
-- Prototipado en Apple Silicon: al estar cuantizado para MLX, permite ejecutar un modelo de 320B en un Mac Studio con GPU unificada, útil para desarrollo local y pruebas de concepto sin depender de infraestructura en la nube.
+- Análisis de documentos extensos con imágenes intercaladas: la ventana de 1.048.576 tokens permite procesar informes, contratos o expedientes completos junto con sus figuras en una sola pasada, sin troceado ni pérdida de contexto entre secciones.
+- Asistente de código en estación de trabajo Apple Silicon: un desarrollador puede cargar el modelo en un Mac Studio con memoria unificada amplia y usarlo para revisión de repositorios completos, dado el contexto disponible y la naturaleza del conjunto de calibración orientado a código.
+- Procesamiento de documentación técnica bilingüe inglés-chino: equipos con documentación en ambos idiomas pueden usar el modelo para traducción, resumen y extracción de datos, dentro de los límites idiomáticos declarados.
+- Prototipado de pipelines multimodales en local: investigadores pueden validar flujos image-text-to-text sin depender de APIs externas, aprovechando la licencia MIT y la ejecución sobre MLX.
+- Evaluación de decodificación especulativa: la capa MTP incluida permite experimentar con generación asistida y medir su impacto en latencia sobre hardware Apple, comparando modos con y sin MTP.
+- Extracción de información estructurada de capturas y formularios: el pipeline image-text-to-text admite tareas de lectura de documentos escaneados y conversión a texto o JSON, sujeto a validación empírica del rendimiento real.
+- Despliegue comercial interno: la licencia MIT del checkpoint facilita integrar el modelo en productos propietarios, siempre que se verifiquen las obligaciones de atribución y el cumplimiento de la licencia del modelo base.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible para esta conversión MLX. Los datos de rendimiento disponibles se limitan a mediciones de latencia en hardware:
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la información disponible. El autor sí publica mediciones de decodificación en un Apple M3 Ultra con 256 GB de memoria unificada, runtime oMLX 0.6.3rc3 build 2475 y MLX 0.32.0:
 
-| Modo | Tokens de salida | Mediana de decodificación |
+| Modo | Tokens de salida | Decodificación mediana |
 |---|---:|---:|
-| oQ baseline (MTP off) | 128 | 6,2155 tokens/s |
+| oQ base, MTP desactivado | 128 | 6,2155 tokens/s |
 | oQ con MTP nativo | 128 | 4,9969 tokens/s |
 
-Mediciones en Apple M3 Ultra con 256 GB de memoria unificada, runtime oMLX 0.6.3rc3 build 2475 y MLX 0.32.0, con draft depth 1 y aceptación de drafts del 100%. La relación de decodificación MTP/baseline es 0,8039x, es decir, el MTP reduce la velocidad de decodificación en esta configuración.
-
-Para el modelo original, los resultados web indican que supera a GLM-5.2 en benchmarks de codificación y agentes, y se acerca a Claude Opus 4.8 en tareas de código, pero no se han proporcionado cifras concretas en la información disponible.
+Estos datos indican que, en la configuración medida, activar el MTP nativo reduce el throughput de decodificación en lugar de mejorarlo. No se dispone de cifras de prefill, latencia de primer token ni comparaciones con otros modelos.
 
 ## Requisitos de hardware
 
-- El checkpoint cuantizado ocupa 172,99 GiB de peso en disco.
-- VRAM estimada: al menos 180-200 GB de memoria unificada para cargar el modelo completo en Apple Silicon.
-- GPU recomendadas: Apple Silicon con GPU integrada (probado en M3 Ultra con 256 GB de memoria unificada). No es compatible con GPU NVIDIA/AMD sin el runtime MLX.
-- No cabe en GPUs de consumo convencionales (RTX 4090, etc.) por su tamaño; requiere equipos con gran memoria unificada.
-- Opciones de despliegue: oMLX 0.6.3rc3 build 2475 (validado), MLX 0.32.0 (runtime de tensores), MLX-VLM 0.6.3 con integración GLM5 Next para carga de visión.
-- Rendimiento: ~5-6 tokens/s de decodificación en M3 Ultra 256 GB, lo que limita su uso a tareas de baja latencia.
+- VRAM o memoria unificada: el repositorio pesa 185,749 GB, por lo que se requiere al menos esa cantidad de memoria disponible para cargar los pesos, más overhead de runtime, caché KV y activaciones. En la práctica, un equipo con 256 GB de memoria unificada es el mínimo realista observado en las pruebas del autor.
+- GPU recomendadas: Apple Silicon con memoria unificada amplia; el autor valida en un Apple M3 Ultra con 256 GB. No hay datos de ejecución en A100, H100 ni RTX 4090, y el formato MLX no es compatible con CUDA sin conversión previa.
+- GPU de consumo: no cabe en ninguna GPU de consumo actual (24 GB o menos) ni en configuraciones de 48-96 GB, dado el tamaño de los pesos.
+- Opciones de despliegue: oMLX 0.6.3rc3 build 2475 (validado para oQ y MTP nativo), MLX 0.32.0 y MLX-VLM 0.6.3 con integración del runtime GLM5 Next. Builds antiguos sin soporte de oQ o de MTP de GLM5 Next no son compatibles. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 6,2155 tokens/s de decodificación mediana sin MTP y 4,9969 tokens/s con MTP en M3 Ultra, 256 GB. Sin datos de prefill ni de latencia de primer token.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Activos | Contexto | Licencia | Notas |
-|---|---|---|---|---|---|
-| GLM-5.3-Flash (original) | 320B | 18B | 1M | MIT | Multimodal, MTP nativo |
-| Vontra/GLM-5.3-Flash-MLX-oQ4-MTP | 320B (51,8B en checkpoint cuantizado) | 18B | 1M | MIT | Cuantización MLX oQ4 |
-| GLM-5.2 | 743B | - | - | MIT | Flagship anterior, sin multimodal nativo |
-| Claude Opus 4.8 | - | - | - | Propietaria | Referencia en codificación y agentes, no abierto |
+No se dispone de datos de benchmarks ni de especificaciones verificadas de modelos comparables en la información proporcionada, por lo que la comparación cuantitativa se marca como no disponible. La siguiente tabla recoge únicamente los datos confirmados de este checkpoint frente a su modelo base:
 
-No se dispone de datos de benchmarks comparativos directos entre la versión cuantizada y el modelo original en la información proporcionada.
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| GLM-5.3-Flash-MLX-oQ4-MTP | 321.323.031.390 | 1.048.576 | MLX safetensors oQ4 | MIT | Cuantizado, MTP nativo, solo Apple Silicon |
+| zai-org/GLM-5.3-Flash | no disponible | no disponible | FP8 E4M3 con escalado 128x128 | MIT | Modelo base original, sin cuantizar |
+
+Alternativas de la misma categoría (otros MoE multimodales de gran escala o conversiones MLX de modelos similares): no disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La cuantización oQ4 introduce pérdida de precisión respecto al modelo original en FP8; los módulos sensibles se promueven a 5/6/8-bit, pero la degradación puede ser notable en tareas de alta precisión (matemáticas avanzadas, razonamiento complejo).
-- El modelo solo soporta inglés y chino; no hay soporte declarado para otros idiomas.
-- El MTP integrado no acelera la decodificación en las mediciones disponibles (reduce la velocidad a 0,80x), por lo que su uso debe evaluarse caso por caso.
-- El runtime requerido es específico: oMLX 0.6.3rc3 build 2475 con integración GLM5 Next; builds anteriores sin soporte de oQ o MTP no cargarán el checkpoint.
-- El checkpoint es un modelo cuantizado post-entrenamiento, no un fine-tune; no se ha retrenado para mitigar sesgos o mejorar capacidades específicas.
-- No se han publicado evaluaciones de sesgos, alucinación o robustez para esta conversión.
-- La licencia MIT permite uso comercial sin restricciones, pero el modelo original puede tener limitaciones en el uso de datos de entrenamiento (no documentado en la información disponible).
+- Compatibilidad de runtime muy restrictiva: solo funciona con builds que entiendan la receta de cuantización por módulo y la integración MTP de GLM5 Next. Un runtime capaz de cargar una conversión MLX ordinaria no garantiza compatibilidad con este checkpoint.
+- El MTP nativo empeoró el throughput en la medición del autor (de 6,2155 a 4,9969 tokens/s), por lo que su activación debe evaluarse empíricamente antes de usarlo en producción.
+- Idiomas limitados a inglés y chino; no se declara soporte para castellano ni otros idiomas, lo que restringe su uso en entornos hispanohablantes sin evaluación adicional.
+- Riesgo de alucinación: inherente a los modelos generativos; no se han publicado evaluaciones de fidelidad ni de tasas de alucinación para este checkpoint ni para el modelo base.
+- Sesgos conocidos: no disponible en la información proporcionada.
+- La cuantización es weight-only y no reentrena el modelo; las degradaciones de calidad respecto al checkpoint FP8 original no están cuantificadas en la información disponible.
+- Licencia MIT declarada para el checkpoint, pero conviene verificar las condiciones del modelo base zai-org/GLM-5.3-Flash antes de un uso comercial, así como las licencias de las dependencias (MLX, MLX-VLM, oMLX).
+- Requisito de memoria de aproximadamente 186 GB solo para pesos, lo que excluye prácticamente todo el hardware de consumo y limita el despliegue a estaciones de trabajo de gama alta.
+- No hay datos publicados de benchmarks de calidad, lo que impide comparar su rendimiento con alternativas antes de adoptarlo.
 
 ## Enlaces
 
-- Repositorio Hugging Face de la conversión: https://huggingface.co/Vontra/GLM-5.3-Flash-MLX-oQ4-MTP
-- Modelo original: https://huggingface.co/zai-org/GLM-5.3-Flash
+- Modelo en Hugging Face: https://huggingface.co/Vontra/GLM-5.3-Flash-MLX-oQ4-MTP
+- Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Blog de Z.ai sobre GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
-- Reporte técnico: https://arxiv.org/abs/2602.15763
-- Repositorio de Apple MLX: https://github.com/ml-explore/mlx
+- Informe técnico (arXiv): https://arxiv.org/abs/2602.15763
+- Apple MLX (repositorio): https://github.com/ml-explore/mlx
+- Licencia MIT del checkpoint: https://huggingface.co/Vontra/GLM-5.3-Flash-MLX-oQ4-MTP/blob/main/LICENSE
+- TensorFold: https://tensorfold.dev

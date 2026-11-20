@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 1339,
+  "downloads_30d": 1413,
   "trending_score": 0,
   "parameters": 100112256,
   "parameters_human": "100.1M",
@@ -55,31 +55,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Traduction SUBJECT en français | Dictionnaire anglais-français",
-      "url": "https://dictionnaire.reverso.net/anglais-francais/subject",
-      "snippet": "Traduction de \"subject\" en français : matière, sujet. Nom, adjectif, verbe, signification, prononciation, expressions idiomatiques en …"
-    },
-    {
-      "title": "subject - English-French Dictionary WordReference.com",
-      "url": "https://www.wordreference.com/enfr/subject",
-      "snippet": "Dans les listes : Top 2000 English words, Email words, Art terms, Suite... Synonymes : topic, matter, theme, issue, question, Suite..."
-    },
-    {
-      "title": "Traduction : subject - Dictionnaire anglais-français Larousse",
-      "url": "https://www.larousse.fr/dictionnaires/anglais-francais/subject/615739",
-      "snippet": "subject - Traduction Anglais-Français : Retrouvez la traduction de subject, mais également sa prononciation, la traduction des …"
-    },
-    {
-      "title": "SUBJECT | English meaning - Cambridge Dictionary",
-      "url": "https://dictionary.cambridge.org/dictionary/english/subject",
-      "snippet": "English clauses which are not imperatives must have a subject. Sometimes we need to use a ‘dummy’ or ‘empty’ or ‘artificial’ subject …"
-    },
-    {
-      "title": "SUBJECT | traduire en français - Cambridge Dictionary",
-      "url": "https://dictionary.cambridge.org/fr/dictionnaire/anglais-francais/subject",
-      "snippet": "The subject of my paper is late 19th century French painting. Le sujet de mon devoir est le peinture de la fin du 19ème siècle en France."
-    }
-  ]
+  "sources": []
 }

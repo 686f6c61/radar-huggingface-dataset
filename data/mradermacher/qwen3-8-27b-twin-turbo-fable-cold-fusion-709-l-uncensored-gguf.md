@@ -2,105 +2,101 @@
 
 ## Resumen
 
-Este repositorio contiene la versión cuantizada en formato GGUF del modelo DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored, publicada por el usuario mradermacher. Se trata de un ajuste fino de tipo "uncensored" (etiquetas heretic y uncensored) construido sobre lo que las etiquetas identifican como la familia Qwen3 (qwen3_8, qwen3_6), con aproximadamente 27.320 millones de parámetros reales según los pesos en safetensors del modelo original. El trabajo de mradermacher no modifica el modelo: genera conversiones estáticas a GGUF para permitir su ejecución con llama.cpp y derivados.
+Este repositorio contiene las cuantizaciones GGUF estáticas del modelo DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored, un fine-tune "uncensored" (etiquetado como heretic) derivado de la familia Qwen3, con 27.320.697.856 parámetros totales según los pesos en safetensors del modelo base. El trabajo de cuantización lo firma mradermacher, un conocido publicador de quants GGUF en Hugging Face, y ofrece 13 variantes que van desde Q2_K (11,0 GB) hasta Q8_0 (29,1 GB), además de dos suplementos multimodales mmproj (Q8_0 y f16).
 
-El modelo base fue desarrollado por DavidAU y combina varias técnicas de ajuste que el autor agrupa bajo nombres propios (Cold Fusion, GAIN Training, Multi-stage tuning, TWIN-TURBO), además de un entrenamiento orientado a eliminar los mecanismos de rechazo y moderación del modelo original. Los conjuntos de datos declarados son DavidAU/Polar-STRICT-Datasets, DavidAU/F451-STRICT-Datasets y DavidAU/THE-DECKARD-Datasets. No hay información publicada sobre el número de tokens de entrenamiento, la composición exacta del dataset ni los resultados de evaluación.
+El modelo base se presenta como un fine-tune multi-etapa (Cold Fusion, GAIN Training, Multi-stage tuning) entrenado con datasets propios del autor (Polar-STRICT, F451-STRICT y THE-DECKARD) y con el objetivo declarado de eliminar restricciones de alineación. Es relevante para quien necesite ejecutar un modelo de ~27B en hardware de consumo mediante llama.cpp u Ollama, aunque conviene subrayar que la información técnica publicada es muy escasa: no hay fichas de benchmarks, no se detalla la longitud de contexto y la model card del cuantizador se limita a listar los ficheros.
 
-La relevancia de esta publicación es práctica: permite ejecutar localmente un modelo denso de 27B en inglés con licencia Apache 2.0 sin restricciones de contenido, en GPU de consumo si se emplean cuantizaciones agresivas. El repositorio ocupa 79,7 GB e incluye ficheros mmproj (Q8_0 y f16), lo que indica soporte multimodal de entrada aunque la model card no lo documenta explícitamente. En el momento de redactar esta ficha, el repositorio registra 0 descargas y 0 likes.
+La licencia declarada es Apache 2.0 y el único idioma indicado es el inglés. El repositorio ocupa 190,8 GB en total y acumula 1.374 descargas y 3 likes en el momento de la consulta, lo que lo sitúa como un artefacto de nicho dentro del ecosistema de modelos "uncensored".
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible de forma explícita. Las etiquetas (qwen3_8, qwen3_6) apuntan a una base de la familia Qwen3, presumiblemente transformer denso; no confirmado en la información proporcionada |
-| Parámetros totales | 27.320.697.856 (~27,3B) |
-| Parámetros activos | No aplica / no disponible (no se indica que sea un modelo MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | Listados en las etiquetas del repositorio: x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS. Ficheros efectivamente publicados en la tabla del repositorio: Q2_K, Q4_K_S, Q8_0, mmproj-Q8_0 y mmproj-f16 |
-| Idiomas soportados | Inglés (en) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (conversión del modelo en formato Hugging Face/transformers) |
-| Modelo base | DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored |
-| Tamaño del repositorio | 79,7 GB |
-| Librería declarada | transformers (etiqueta); la ejecución real requiere llama.cpp o compatible |
+| Arquitectura | Transformer decoder-only (derivada de Qwen3; detalles no disponibles) |
+| Parametros totales | 27.320.697.856 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj Q8_0 y f16 |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-La model card del repositorio cuantizado no describe la arquitectura del modelo base. Lo único verificable es el número de parámetros (27,3B) y las etiquetas del autor, que sitúan el modelo en la familia Qwen3 y mencionan "Multi-stage tuning", "Cold Fusion" y "GAIN Training" como metodologías de ajuste. No se especifica si la atención es completa o híbrida, la dimensión del estado oculto, el número de capas ni la longitud de contexto nativa. Tampoco se documenta si el ajuste incluyó RLHF, DPO u otra técnica de alineación; el objetivo declarado mediante la etiqueta "heretic" y "uncensored" es precisamente revertir o eliminar el comportamiento de rechazo típico de los modelos alineados.
+No se dispone de información detallada sobre la arquitectura interna del modelo base más allá de su pertenencia a la familia Qwen3 (etiquetas qwen3_8 y qwen3_6) y de que se trata de un transformer decoder-only de 27.320.697.856 parámetros. La model card del cuantizador no incluye configuración de capas, dimensiones ocultas, cabezas de atención ni mecanismos de atención específicos.
 
-Los datos de entrenamiento declarados son tres conjuntos del propio DavidAU (Polar-STRICT-Datasets, F451-STRICT-Datasets y THE-DECKARD-Datasets), sin que se publique su composición, tamaño en tokens, proporción de datos sintéticos ni procedencia. El repositorio incluye ficheros mmproj en Q8_0 y f16, un componente que en el ecosistema GGUF se emplea para proyectores multimodales (típicamente visión), lo que sugiere que el modelo base incorpora alguna capacidad multimodal; la model card no lo confirma ni detalla su alcance. La conversión realizada por mradermacher es estática (no hay cuantizaciones imatrix/weighted en el momento de la publicación) y se marca como quantize_version 2 y output_tensor_quantised 1.
+En cuanto al entrenamiento, el autor del modelo base declara un proceso de fine-tune multi-etapa sobre tres datasets propios (DavidAU/Polar-STRICT-Datasets, DavidAU/F451-STRICT-Datasets y DavidAU/THE-DECKARD-Datasets), con técnicas etiquetadas como "Cold Fusion", "GAIN Training" y "Multi-stage tuning". No se especifica el número de tokens de entrenamiento, la composición exacta de los datasets, ni si hubo RLHF, DPO o alguna otra etapa de alineación. La etiqueta "unsloth" sugiere que el fine-tune se realizó con dicha librería, pero es una inferencia a partir de la metadata y no un dato confirmado en la documentación. Tampoco se documenta ninguna innovación técnica de inferencia (decodificación especulativa, atención lineal, etc.).
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, con formato de chat multi-turno (etiqueta conversational).
-- Modo "uncensored": ausencia deliberada de rechazos ante peticiones que un modelo alineado estándar bloquearía. Es una característica del ajuste, no un fallo.
-- Capacidad multimodal probable: la presencia de ficheros mmproj-Q8_0 y mmproj-f16 apunta a un proyector para entradas de imagen, aunque no está documentada en la model card ni se especifica qué modalidades cubre.
-- Compatibilidad con endpoints: el repositorio incluye la etiqueta endpoints_compatible, orientada a su uso en infraestructuras de inferencia compatibles.
-- Ejecución local en CPU/GPU mediante llama.cpp y sus derivados, gracias al formato GGUF.
-- No se documentan capacidades específicas de tool calling, function calling, agentes, razonamiento multi-paso, matemáticas o código más allá de lo que herede del modelo base, que no se detalla.
+- Generación de texto conversacional en inglés, con formato de chat (tag conversational).
+- Fine-tune orientado a eliminar restricciones de contenido ("uncensored", "heretic"), lo que implica menor rechazo a peticiones que los modelos alineados estándar.
+- Soporte multimodal declarado de forma indirecta: el repositorio incluye ficheros mmproj-Q8_0 y mmproj-f16 descritos como "multi-modal supplement", lo que sugiere capacidad de entrada de imágenes en el modelo base, aunque la model card no detalla el alcance.
+- Compatibilidad con endpoints (tag endpoints_compatible).
+- No se documenta soporte explícito de tool calling, function calling, agentes o multi-step reasoning.
+- No se documenta modo "thinking" ni capacidades de audio.
+- Capacidades multilingües: limitadas al inglés según la metadata.
 
 ## Casos de uso
 
-- Generación creativa sin restricciones de contenido: novelas, guiones y narrativa que abordan violencia, sexualidad o temas controvertidos sin las negativas automáticas de los modelos alineados. El modelo está entrenado explícitamente para este escenario.
-- Red teaming y evaluación de seguridad: equipos de alineación pueden usar una variante sin censura como contrapunto para estudiar qué tipos de peticiones producen contenido dañino y calibrar filtros externos.
-- Investigación sobre alineación y comportamiento: comparar las respuestas de este modelo con las del Qwen3 base permite medir el efecto de un ajuste "heretic" sobre la distribución de salidas, el tono y la tasa de rechazo.
-- Generación de datos sintéticos para ajuste: producir corpus de texto en inglés con temáticas que los modelos comerciales rechazan, útil para entrenar clasificadores de contenido o filtros de moderación.
-- Asistente conversacional local con privacidad: al ejecutarse en GGUF sobre hardware propio, ninguna consulta sale del equipo, lo que encaja en entornos con requisitos de confidencialidad donde se tolera contenido sin filtro.
-- Roleplay y personajes persistentes: el formato conversacional y la ausencia de rechazos lo hacen adecuado para bots de personaje con contexto largo, siempre que el despliegue gestione el KV cache según la cuantización elegida.
-- Escritura asistida en dominios sensibles: documentación técnica, ficción o análisis sobre temas legalmente delicados (crimen, drogas, violencia) donde un modelo censurado interrumpiría la tarea con negativas.
+- Inferencia local en estaciones de trabajo con GPU de consumo: con la cuantización Q4_K_M (16,9 GB) el modelo puede cargarse en una RTX 4090 de 24 GB o en una RTX 3090, dejando margen para el contexto y el suplemento multimodal.
+- Despliegue en servidores con CPU y RAM abundante: las variantes Q2_K (11,0 GB) y Q3_K_S (12,4 GB) permiten ejecución en llama.cpp sobre equipos sin GPU dedicada, a costa de una pérdida de calidad notable.
+- Experimentación en investigación sobre alineación y censura: el carácter "uncensored" lo hace útil para estudiar el comportamiento de modelos con restricciones reducidas, siempre con las salvaguardas legales y éticas correspondientes.
+- Generación creativa de ficción y guiones: la menor tasa de rechazos facilita la escritura de narrativa con temáticas sensibles, un uso habitual de los fine-tunes heretic.
+- Pruebas de pipelines de cuantización y evaluación de degradación: al ofrecer 11 niveles de cuantización del mismo modelo, permite medir empíricamente la pérdida de perplejidad y calidad entre Q2_K y Q8_0 en tareas concretas.
+- Integración en prototipos de asistentes conversacionales en inglés con Ollama o llama.cpp, aprovechando la compatibilidad con endpoints para sustituir APIs comerciales en entornos de desarrollo.
+- Evaluación comparativa de fine-tunes de la familia Qwen3: sirve como referencia para contrastar el efecto de las técnicas Cold Fusion y GAIN frente al modelo Qwen3 original.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card del repositorio cuantizado no incluye MMLU, HumanEval, GSM8K ni ninguna otra métrica, y el autor del modelo base no publica tablas de evaluación en los datos proporcionados. No se dispone tampoco de mediciones de perplejidad por tipo de cuantización para este modelo concreto; el repositorio enlaza únicamente un gráfico genérico de ikawrakow sobre calidad relativa de tipos de cuantización, no aplicable específicamente a estos pesos.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Estimaciones basadas en los tamaños de fichero publicados; no incluyen el KV cache ni el overhead de runtime, por lo que deben considerarse mínimos:
-
-- Q2_K (11,0 GB): ejecutable en GPU de 12 GB (RTX 3060 12 GB, RTX 4070) con contexto moderado, y en 16 GB con holgura. Pérdida de calidad apreciable.
-- Q4_K_S (15,9 GB): encaja en RTX 4080/4090 (16-24 GB) y en equipos Apple Silicon de 24 GB o más de memoria unificada. Es la cuantización marcada como "fast, recommended" por el autor.
-- Q8_0 (29,1 GB): requiere A100 40 GB, H100 80 GB o similar. En RTX 4090 (24 GB) exige offload parcial de capas a CPU, con la consiguiente caída de velocidad.
-- mmproj-Q8_0 (0,7 GB) y mmproj-f16 (1,0 GB): coste adicional sobre la cuantización elegida si se utiliza la entrada multimodal.
-- Repositorio completo: 79,7 GB de descarga, no necesario en su totalidad; conviene descargar solo el fichero GGUF deseado.
-- GPU recomendadas: RTX 3060 12 GB (Q2_K), RTX 4080/4090 (Q4_K_S), A100 40 GB / H100 80 GB (Q8_0 sin offload).
-- Opciones de despliegue: llama.cpp, llama-cpp-python, Ollama, LM Studio, koboldcpp, text-generation-webui y otras interfaces basadas en llama.cpp. vLLM ofrece soporte GGUF experimental y limitado; TGI no soporta GGUF de forma nativa.
-- Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo para ninguna de las cuantizaciones.
+- VRAM estimada para inferencia (el tamaño del fichero es una cota inferior; el contexto y el suplemento multimodal añaden consumo):
+  - Q2_K: 11,0 GB.
+  - Q3_K_S: 12,4 GB; Q3_K_M: 13,6 GB; Q3_K_L: 14,7 GB.
+  - IQ4_XS: 15,5 GB; Q4_K_S: 15,9 GB; Q4_K_M: 16,9 GB.
+  - Q5_K_S: 19,1 GB; Q5_K_M: 19,6 GB.
+  - Q6_K: 22,5 GB.
+  - Q8_0: 29,1 GB.
+  - Suplemento multimodal: mmproj-Q8_0 0,7 GB; mmproj-f16 1,0 GB.
+- GPU recomendadas: RTX 4090 o RTX 3090 (24 GB) para Q4_K_M y Q5_K_M; A100 40 GB, H100 o RTX 6000 Ada para Q6_K y Q8_0; para Q8_0 también es válida una configuración multi-GPU.
+- Cabe en GPU de consumo: sí, hasta Q5_K_M en una GPU de 24 GB; Q6_K y Q8_0 requieren 32 GB o más, o reparto entre GPU y CPU.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; el modelo base en safetensors puede servirse con vLLM o TGI, pero las cuantizaciones GGUF no son compatibles con vLLM de forma nativa.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones comparables de terceros en la información proporcionada, por lo que no es posible establecer una comparativa de rendimiento fiable. Lo que sí puede compararse son las variantes del propio repositorio:
-
-| Variante | Tamaño (GB) | Parámetros | Contexto | Licencia | Uso recomendado |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Q2_K | 11,0 | 27,3B | no disponible | Apache 2.0 | Hardware muy limitado (12 GB VRAM), calidad degradada |
-| Q4_K_S | 15,9 | 27,3B | no disponible | Apache 2.0 | Opción equilibrada para GPU de 16-24 GB, marcada como recomendada |
-| Q8_0 | 29,1 | 27,3B | no disponible | Apache 2.0 | Máxima calidad de la conversión, requiere 32 GB+ de VRAM o offload |
-| Modelo base (DavidAU, sin cuantizar) | no disponible (repo original) | 27,3B | no disponible | Apache 2.0 | Referencia de calidad completa; requiere transformers y ~55 GB en fp16 |
+| Este modelo (Qwen3.8-27B-TWIN-TURBO, GGUF) | 27,3 B | no disponible | Apache 2.0 | GGUF | Fine-tune uncensored multi-etapa |
+| Qwen3 original (familia) | no disponible en esta ficha | no disponible | Apache 2.0 (según familia) | safetensors, GGUF | Modelo base alineado de referencia |
+| Fine-tunes "uncensored" de la comunidad (p. ej. variantes heretic de 27B) | variable | no disponible | variable | GGUF | Alternativas con objetivos similares de reducción de rechazos |
 
-Comparativa con modelos de terceros (mismo tamaño o misma tarea): no disponible en la información proporcionada.
+No se dispone de datos de rendimiento comparativos publicados para este modelo, por lo que la comparativa se limita a parámetros, licencia y formato.
 
 ## Limitaciones y advertencias
 
-- Modelo "uncensored": el ajuste elimina deliberadamente los mecanismos de rechazo. Puede generar contenido ofensivo, ilegal, peligroso o sexualmente explícito sin advertencia. La responsabilidad legal y ética del despliegue recae íntegramente en quien lo opera.
-- Sesgos no auditados: no se ha publicado ninguna evaluación de sesgos, toxicidad o representación. Los conjuntos de datos de entrenamiento (Polar-STRICT, F451-STRICT, THE-DECKARD) no documentan su composición ni su procedencia.
-- Riesgo de alucinación: sin benchmarks publicados ni información sobre el proceso de alineación, no hay garantía de fidelidad factual. Un modelo sin censura tiende además a no matizar cuando no sabe algo.
-- Idioma: únicamente inglés declarado. El rendimiento en castellano u otras lenguas no está documentado y probablemente sea deficiente.
-- Contexto no documentado: se desconoce la longitud de contexto nativa del modelo base. Configurar ventanas largas sin ese dato puede provocar degradación silenciosa o errores de memoria en el runtime.
-- Licencia Apache 2.0: permite uso comercial, modificación y redistribución con atribución y sin obligación de compartir derivados. Es una licencia permisiva, sin las cláusulas de uso aceptable que suelen acompañar a los modelos de pesos abiertos con restricciones.
-- Cuantizaciones de baja precisión: Q2_K y las variantes Q3 comprometen notablemente la coherencia. No hay cuantizaciones imatrix/weighted disponibles, que suelen ofrecer mejor relación calidad/tamaño.
-- Estado del repositorio: 0 descargas y 0 likes; no hay retroalimentación de la comunidad que valide la calidad de la conversión ni la fidelidad respecto al modelo original.
-- Origen de los metadatos: la fecha de creación registrada en Hugging Face es 2026-09-11, posterior a la del modelo base en el mismo ecosistema, lo que conviene verificar antes de integrarlo en un pipeline de producción.
+- Modelo "uncensored": la reducción de restricciones implica mayor probabilidad de generar contenido sensible, ofensivo o potencialmente dañino; no es apto para producción orientada al público sin filtros adicionales.
+- Riesgo elevado de alucinación: no hay benchmarks publicados que respalden la calidad factual del fine-tune.
+- Idiomas: solo inglés declarado; el rendimiento en castellano es incierto y no está evaluado.
+- Longitud de contexto no documentada: no se puede garantizar el comportamiento en conversaciones largas ni en tareas de recuperación de contexto.
+- Licencia Apache 2.0 declarada, pero conviene verificar la procedencia de los datasets de fine-tune (Polar-STRICT, F451-STRICT, THE-DECKARD) antes de un uso comercial, ya que el autor no detalla su composición ni su licencia.
+- La model card del cuantizador es puramente mecánica: no aporta información sobre el comportamiento del modelo, por lo que cualquier decisión de producción debe basarse en evaluaciones propias.
+- Los quants de baja precisión (Q2_K, Q3_K_S) degradan la calidad de forma significativa; la propia model card recomienda Q4_K_S y Q4_K_M como opciones rápidas y Q8_0 como mejor calidad.
+- El soporte multimodal solo está insinuado por la presencia de ficheros mmproj; no se documenta qué modalidades ni qué resolución admite.
+- Fecha de creación del repositorio (2026-09-11) y actualización (2026-10-08): verificar la vigencia del modelo base y de sus dependencias.
 
 ## Enlaces
 
-- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-GGUF
-- Modelo base (DavidAU): https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored
-- Página de resumen y descargas del cuantizador: https://hf.tst.eu/model#Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-GGUF
-- Dataset DavidAU/Polar-STRICT-Datasets: https://huggingface.co/datasets/DavidAU/Polar-STRICT-Datasets
-- Dataset DavidAU/F451-STRICT-Datasets: https://huggingface.co/datasets/DavidAU/F451-STRICT-Datasets
-- Dataset DavidAU/THE-DECKARD-Datasets: https://huggingface.co/datasets/DavidAU/THE-DECKARD-Datasets
-- Preguntas frecuentes y solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Guía de uso de GGUF de TheBloke (referenciada por el autor): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Gráfico de calidad relativa de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre tipos de cuantización: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Empresa que aloja la infraestructura del cuantizador: https://www.nethype.de/
+- Repositorio GGUF: https://huggingface.co/mradermacher/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-GGUF
+- Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored
+- Quants con imatrix: https://huggingface.co/mradermacher/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-i1-GGUF
+- Página de descargas del cuantizador: https://hf.tst.eu/model#Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Peticiones de cuantización: https://huggingface.co/mradermacher/model_requests
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Dataset Polar-STRICT: https://huggingface.co/datasets/DavidAU/Polar-STRICT-Datasets
+- Dataset F451-STRICT: https://huggingface.co/datasets/DavidAU/F451-STRICT-Datasets
+- Dataset THE-DECKARD: https://huggingface.co/datasets/DavidAU/THE-DECKARD-Datasets

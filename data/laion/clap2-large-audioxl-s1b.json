@@ -49,5 +49,31 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "LAION · Open AI research for everyone",
+      "url": "https://laion.ai/",
+      "snippet": "LAION is a non-profit organization making machine-learning datasets, tools, and models openly available for research and education."
+    },
+    {
+      "title": "LAION - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/LAION",
+      "snippet": "LAION (acronym for Large-scale Artificial Intelligence Open Network) is a German non-profit organization which makes open …Read more"
+    },
+    {
+      "title": "LAION — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/LAION",
+      "snippet": "Jeux de données d'images LAION a mis à disposition de tous plusieurs grands jeux de données de type « paires image-légende », …Read more"
+    },
+    {
+      "title": "LAION AI - GitHub",
+      "url": "https://github.com/LAION-AI",
+      "snippet": "This is the repo of LAION, a non-profit organization to liberate machine learning research, models and datasets. - LAION AI"
+    },
+    {
+      "title": "LAION-5B: A NEW ERA OF OPEN LARGE-SCALE MULTI-MODAL …",
+      "url": "https://laion.ai/blog/laion-5b/",
+      "snippet": "Mar 31, 2022 · We, LAION, are currently working together with the Cross Sectional Team Deep Learning (CST-DL), Scalable …Read more"
+    }
+  ]
 }

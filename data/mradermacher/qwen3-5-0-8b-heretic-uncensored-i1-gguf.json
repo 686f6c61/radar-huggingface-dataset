@@ -1,0 +1,40 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Qwen3.5-0.8B-Heretic-Uncensored-i1-GGUF",
+  "slug": "mradermacher-qwen3-5-0-8b-heretic-uncensored-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.5-0.8B-Heretic-Uncensored-i1-GGUF",
+  "created_at": "2026-11-19T23:17:24.000Z",
+  "updated_at": "2026-11-19T23:17:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 555378,
+  "parameters_human": "555378",
+  "storage_bytes": 2275008,
+  "storage_human": "2 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "WithinUsAI/Cyber-Lighting-11M",
+  "slug": "withinusai-cyber-lighting-11m",
+  "author": "WithinUsAI",
+  "url": "https://huggingface.co/WithinUsAI/Cyber-Lighting-11M",
+  "created_at": "2026-11-20T03:45:48.000Z",
+  "updated_at": "2026-11-20T03:45:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "cyber_lighting",
+    "from-scratch",
+    "decoder-only",
+    "chain-of-thought",
+    "reasoning",
+    "conversational",
+    "11m-parameters",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11021136,
+  "parameters_human": "11.0M",
+  "storage_bytes": 44090376,
+  "storage_human": "44 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

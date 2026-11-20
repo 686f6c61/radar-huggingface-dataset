@@ -2,109 +2,107 @@
 
 ## Resumen
 
-Voz es un modelo de reconocimiento automático de voz (ASR) desarrollado por Desert Ant Labs, un laboratorio europeo especializado en modelos on-device. Está diseñado para transcribir audio a texto con marcas de tiempo a nivel de palabra (word-level timestamps) en 25 idiomas, ejecutándose por completo en el Neural Engine de los dispositivos Apple. Según sus creadores, transcribe 10 minutos de audio en 2 segundos en un M3 Ultra, alcanzando una velocidad de aproximadamente 290 veces el tiempo real en ficheros largos.
+Voz es un modelo de reconocimiento automático del habla (ASR) desarrollado por Desert Ant Labs, diseñado para ejecutarse íntegramente en dispositivo (on-device) en plataformas Apple, Android, Linux, Windows, navegador y Node. Su propuesta principal es la transcripción de audio a texto con marcas de tiempo a nivel de palabra y una resolución de 80 ms, cubriendo 25 idiomas europeos. El modelo se distribuye a través del SDK propietario `desert-ant-core` (v4.3.0) y se ejecuta mediante LiteRT/TFLite en Android, Core ML en plataformas Apple (aprovechando la Neural Engine), ONNX Runtime con DirectML en Windows y ONNX Runtime Web/WebGPU en navegador.
 
-El modelo se distribuye como un paquete SwiftPM (desert-ant-core) y se integra mediante un SDK en Swift para iOS, iPadOS, macOS, tvOS y visionOS. Su arquitectura es una cascada de tres etapas Core ML: un frontend de espectrograma log-mel, un encoder acústico tipo conformer sobre ventanas fijas de 15 segundos y un decoder transducer que emite un token y una duración en cada paso. El tamaño total en disco es de 467 MB, lo que lo hace notablemente más ligero que alternativas como Whisper large-v3-turbo (1,6 GB), manteniendo un rendimiento comparable en WER.
+La relevancia del modelo radica en su enfoque de privacidad y latencia: al no enviar audio a servidores, elimina los costes de ancho de banda y las implicaciones de cumplimiento normativo asociadas al procesamiento en la nube. En Apple Silicon, el autor declara una velocidad de aproximadamente 10 minutos de audio transcritos en torno a un segundo (factor de tiempo real muy superior a 1x), y en Chromium sobre un chip M5 alcanza 125x realtime, mientras que en un M1 se sitúa en 38x y en Safari en 35x.
 
-La relevancia actual de Voz reside en su apuesta por la inferencia 100% en el Neural Engine, sin respaldo de CPU o GPU, y en su diseño para aplicaciones de baja latencia y privacidad, ya que todo el procesamiento ocurre en el dispositivo. Su licencia es de código disponible (source-available), con uso gratuito hasta 100.000 dispositivos activos mensuales por SDK.
+El repositorio de Hugging Face ocupa 4,4 GB y contiene los pesos en formato LiteRT/TFLite y ONNX, además de artefactos para Core ML. La licencia es `desert-ant-labs-source-available`, una licencia propia de código disponible pero no open source en sentido estricto, cuyos términos deben consultarse en el enlace oficial antes de cualquier uso comercial.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Cascada Core ML: frontend log-mel + encoder conformer + decoder transducer |
-| Parametros totales | no disponible |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | Ventana fija de 15 segundos por segmento |
-| Tipos de cuantizacion | no disponible (se distribuye compilado como .mlmodelc) |
-| Idiomas soportados | 25: bg, cs, da, de, el, en, es, et, fi, fr, hr, hu, it, lt, lv, mt, nl, pl, pt, ro, ru, sk, sl, sv, uk |
-| Licencia | desert-ant-labs-source-available-1.0 (https://license.desertant.com/1.0) |
-| Formato de pesos | .mlmodelc (Core ML compilado), vocab.json (SentencePiece), embedding.f16 |
+| Arquitectura | no disponible (pipeline ASR con encoder y decoder; el decoder puede ejecutarse en Neural Engine vía WebNN) |
+| Parámetros totales | no disponible |
+| Parámetros activos | no disponible |
+| Longitud de contexto | no disponible (procesa audio en fragmentos; en navegador lee ficheros en piezas sin cargar todo en memoria) |
+| Tipos de cuantización | no disponible |
+| Idiomas soportados | 25: búlgaro, checo, danés, alemán, griego, inglés, español, estonio, finés, francés, croata, húngaro, italiano, lituano, letón, maltés, neerlandés, polaco, portugués, rumano, ruso, eslovaco, esloveno, sueco y ucraniano |
+| Licencia | desert-ant-labs-source-available (source-available, no open source) |
+| Formato de pesos | LiteRT/TFLite, ONNX, Core ML (repo de 4,4 GB) |
 
 ## Arquitectura y entrenamiento
 
-Voz se compone de tres modelos Core ML que se ejecutan en cascada, orquestados desde Swift:
+La información disponible no detalla la arquitectura interna del modelo más allá de que se trata de un pipeline ASR con componentes de encoder y decoder diferenciados. El encoder se ejecuta en WebGPU en el navegador, mientras que el decoder puede aprovechar WebNN para ejecutarse en la Neural Engine en Chromium sobre macOS. En Android, los grafos se ejecutan a través de LiteRT con XNNPACK en CPU o con aceleración GPU si la librería de aceleración se empaqueta con la aplicación. En Windows se utiliza ONNX Runtime con DirectML sobre GPU.
 
-- **Frontend**: calcula un espectrograma log-mel dentro de Core ML, normalizado sobre los frames que contienen audio real en lugar de sobre toda la ventana con padding.
-- **Encoder**: un encoder acústico de tipo conformer que opera sobre una ventana fija de 15 segundos, produciendo un frame cada 80 ms.
-- **Decoder**: un transducer que emite un token y una duración en cada paso, ejecutándose con dieciséis ventanas independientes agrupadas en los canales de una única operación.
-
-Para audio más largo, el sistema corta la grabación en ventanas consecutivas en las pausas, las transcribe de forma independiente y las une basándose en la secuencia más larga de palabras en las que dos ventanas vecinas coinciden. Todas las etapas se ejecutan en el Neural Engine sin caída a CPU o GPU.
-
-No se han publicado detalles sobre el conjunto de datos de entrenamiento, el número de tokens procesados ni si se emplearon técnicas de RLHF o DPO. Tampoco se especifica el número total de parámetros del modelo.
+No se han publicado datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO u otras etapas de ajuste. Tampoco se documentan innovaciones arquitectónicas específicas más allá del soporte de vocabulario personalizado (nombres y jerga) que sesga la decodificación hacia grafías concretas sin añadir palabras no pronunciadas, y del procesamiento por streaming de ficheros de audio que permite transcribir grabaciones de cinco horas con el mismo consumo de memoria que una de cinco minutos.
 
 ## Capacidades
 
-- Transcripción de voz a texto en 25 idiomas europeos, con salida de texto plano y marcas de tiempo por palabra (inicio y fin en segundos).
-- Ejecución 100% en el Neural Engine de Apple, sin uso de CPU o GPU, lo que garantiza baja latencia y privacidad (procesamiento local).
-- Manejo de audio largo mediante segmentación en ventanas de 15 segundos y unión por solapamiento de palabras coincidentes.
-- Acepta audio mono a cualquier frecuencia de muestreo; el SDK se encarga de remuestrear y reducir a mono.
-- Generación de marcas de tiempo con error medio absoluto de 83 ms en inicios y 95 ms en finales de palabra (frente a un alineador forzado).
-- Integración nativa con el ecosistema Apple: iOS, iPadOS, macOS, tvOS y visionOS mediante Swift Package Manager.
-- Los modelos se descargan bajo demanda y se cachean, por lo que no es necesario empaquetarlos en la aplicación.
+- Transcripción de voz a texto en 25 idiomas europeos con marcas de tiempo a nivel de palabra y resolución de 80 ms.
+- Ejecución completamente on-device en iOS, macOS, tvOS, visionOS, Android, Linux, Windows, navegador y Node.
+- Soporte de vocabulario personalizado para nombres propios y jerga (por ejemplo, "SoFi", "Timex", "Patek Philippe"), con preferencia por las grafías indicadas cuando el modelo estaba cerca de elegirlas, sin insertar palabras no pronunciadas. No disponible en JavaScript.
+- Procesamiento de audio en streaming por fragmentos, lo que permite transcribir grabaciones largas con memoria acotada.
+- Lectura directa de WAV y decodificación de otros formatos mediante WebCodecs en navegador; en Node sin WebCodecs es necesario convertir a WAV previamente.
+- Aceleración por hardware: Neural Engine en Apple, XNNPACK/GPU en Android, DirectML en Windows, WebGPU y WebNN en navegador.
+- API unificada en Swift, Kotlin y JavaScript con objeto de resultado que expone `text`, `words` (con `start` y `end`) y `realtimeFactor`.
+- No incluye detección automática de idioma; el autor recomienda usar el modelo complementario Ear para identificar el idioma antes de transcribir.
 
 ## Casos de uso
 
-- Transcripción de reuniones y notas de voz: el modelo puede procesar grabaciones largas (p. ej., 30 minutos de narración) en unos 7 segundos en hardware Apple Silicon, con marcas de tiempo por palabra que permiten saltar a segmentos concretos.
-- Subtitulado automático de vídeo: las marcas de inicio y fin de cada palabra facilitan generar subtítulos sincronizados con precisión de decenas de milisegundos.
-- Asistente de voz en dispositivos móviles: al ejecutarse íntegramente en el Neural Engine, la transcripción funciona sin conexión y con latencia reducida, adecuada para comandos de voz en apps de iOS.
-- Accesibilidad para personas con discapacidad auditiva: transcripción en tiempo real de conversaciones o contenido multimedia directamente en el dispositivo, sin enviar audio a servidores externos.
-- Análisis de llamadas de atención al cliente: el WER en conversaciones (datos tipo Earnings-22 o AMI) ronda el 12-13%, suficiente para extraer métricas y generar resúmenes locales.
-- Aplicaciones de periodismo y podcasting: transcripción de entrevistas con marcas de tiempo para edición, con un WER esperado del 10-13% en material conversacional real.
+- Transcripción de reuniones en dispositivos Apple: la app puede grabar y transcribir localmente reuniones de una hora con marcas de tiempo por palabra, sin enviar audio a servidores y cumpliendo requisitos de privacidad en entornos corporativos.
+- Subtitulado automático de vídeo en el navegador: integrado vía `@desert-ant-labs/voz` con ONNX Runtime Web, permite generar subtítulos con timestamps de 80 ms directamente en el cliente, sin coste de infraestructura de inferencia.
+- Notas de voz en aplicaciones móviles Android: mediante el SDK Kotlin y LiteRT, la app puede transcribir dictados y notas de voz en el propio dispositivo, evitando cuotas de API y funcionando sin conectividad.
+- Atención al cliente con análisis de llamadas: el modelo puede transcribir grabaciones de call center en 25 idiomas para su posterior análisis de sentimiento o control de calidad, manteniendo las conversaciones dentro de la infraestructura del cliente.
+- Accesibilidad y subtitulado en directo: con la API `LiveConfiguration` y vocabulario personalizado, se pueden generar subtítulos en tiempo real para personas con discapacidad auditiva en eventos o clases, con la latencia que permita el hardware disponible.
+- Procesamiento por lotes en servidores Node: instalando `onnxruntime-node`, se pueden transcribir archivos WAV en pipelines de backend con la misma API y timestamps, útil para indexar archivos de audio o generar transcripciones de archivos históricos.
+- Investigación lingüística multilingüe: la cobertura de 25 idiomas europeos con timestamps precisos facilita la anotación y el análisis de corpus orales en estudios de fonética o sociolingüística.
 
 ## Benchmarks y rendimiento
 
-Los datos de la model card incluyen resultados en el Open ASR Leaderboard de Hugging Face, comparados con Whisper large-v3-turbo. Se utilizó el normalizador de texto propio del modelo Voz; las cifras de Whisper provienen del leaderboard con las mismas configuraciones de dataset.
+No se han publicado resultados de benchmarks estándar (WER sobre LibriSpeech, Common Voice, MMLU u otros) en la información disponible. Los únicos datos de rendimiento proporcionados por el autor son factores de tiempo real:
 
-| Dataset | Voz | Whisper large-v3-turbo |
-|---|---:|---:|
-| LibriSpeech test-clean | 2,19% | 2,13% |
-| LibriSpeech test-other | 3,86% | 3,70% |
-| GigaSpeech | 9,70% | 8,47% |
-| SPGISpeech | 3,86% | 2,79% |
-| Earnings-22 | 12,97% | 11,07% |
-| AMI | 11,84% | 13,87% |
-| **Media** | **7,40%** | **7,00%** |
+| Plataforma | Hardware | Rendimiento declarado |
+|---|---|---|
+| Apple (Core ML, Neural Engine) | no especificado | ~10 minutos de audio en ~1 segundo |
+| Chromium (WebGPU/WebNN) | Apple M5 | 125x realtime |
+| Chromium (WebGPU/WebNN) | Apple M1 | 38x realtime |
+| Safari | no especificado | 35x realtime |
+| Android (LiteRT) | no especificado | "factores de tiempo real muy inferiores a los de Neural Engine" (sin cifra) |
 
-Además, se reporta un WER en audio largo (media hora de narración) del 2,83% frente al 2,72% de Whisper large-v3-turbo, y una velocidad de 2,1 segundos para transcribir 611 segundos de audio (unas 290 veces el tiempo real) en un M3 Ultra.
-
-Los autores advierten que los resultados en habla leída y limpia (LibriSpeech) rondan el 2%, mientras que en reuniones, llamadas de resultados y podcasts el WER se sitúa entre el 10% y el 13%. VoxPopuli y TEDLIUM se omitieron del leaderboard por problemas con los scripts de evaluación.
+El autor afirma que la tasa de error de palabras (WER) de la build web coincide con la de la build Core ML.
 
 ## Requisitos de hardware
 
-- El modelo requiere un dispositivo Apple con Neural Engine (Apple Silicon o iPhone/iPad con chip A12 o posterior). No hay soporte para CPU o GPU como alternativa.
-- El tamaño en disco es de 467 MB, por lo que cabe holgadamente en cualquier dispositivo actual.
-- La carga en caliente tarda aproximadamente 0,2 segundos; la primera carga tras la instalación puede tardar unos 20 segundos mientras Core ML especializa el grafo.
-- El consumo de memoria pico no crece con la duración de la grabación, según los desarrolladores.
-- No se han publicado requisitos de VRAM ni soporte para backends como vLLM, llama.cpp u Ollama, ya que el modelo se distribuye exclusivamente como Core ML compilado para el ecosistema Apple.
+- VRAM estimada: no disponible. El repositorio de pesos ocupa 4,4 GB, pero no se especifica el tamaño en memoria de inferencia ni el consumo por cuantización.
+- GPU recomendadas: no se listan modelos concretos. En Apple se recomienda cualquier dispositivo con Neural Engine; en Windows, una GPU compatible con DirectML; en navegador, WebGPU (Chromium) o WebNN para el decoder.
+- Compatibilidad con GPU de consumo: no confirmada explícitamente. El modelo está diseñado para ejecutarse en iPhone, iPad, Mac, Android, Linux, Windows y navegador, lo que sugiere que cabe en hardware de consumo, pero no se detallan requisitos mínimos.
+- Opciones de despliegue: SDK propietario `desert-ant-core` (Swift Package Manager para Swift, Maven para Kotlin, npm para JavaScript), LiteRT/TFLite en Android, Core ML en Apple, ONNX Runtime con DirectML en Windows, ONNX Runtime Web con WebGPU/WebNN en navegador y ONNX Runtime Node en servidores.
+- Latencia y throughput: en Apple, primera carga tras descarga de 10-30 s (preparación de Core ML para Neural Engine) y cargas posteriores de 0,2 s. En Chromium sobre M5, 125x realtime; en M1, 38x; en Safari, 35x. En Android, sin cifras concretas, pero el autor indica que son muy inferiores a las de Neural Engine y recomienda transcribir fuera del hilo principal.
 
 ## Comparativa con modelos similares
 
-La comparativa más directa es con Whisper large-v3-turbo, que es el modelo que los propios autores utilizan como referencia.
+No se dispone de datos de benchmarks ni de especificaciones de arquitectura que permitan una comparación cuantitativa rigurosa con alternativas como Whisper (OpenAI), Distil-Whisper o modelos ASR on-device comerciales. A continuación se ofrece una comparación cualitativa limitada a los datos disponibles:
 
-| Modelo | Tamano | Idiomas | WER medio (6 datasets) | Velocidad | Licencia | Plataforma |
-|---|---|---|---|---|---|---|
-| Voz | 467 MB | 25 | 7,40% | ~290x tiempo real (M3 Ultra) | source-available | Apple Neural Engine |
-| Whisper large-v3-turbo | 1,6 GB | 99+ | 7,00% | no publicado | MIT | multiplataforma (CPU/GPU) |
-| Whisper small | ~460 MB | 99+ | no comparable | no publicado | MIT | multiplataforma (CPU/GPU) |
+| Modelo | Desarrollador | Idiomas | On-device | Timestamps por palabra | Licencia |
+|---|---|---|---|---|---|
+| Voz | Desert Ant Labs | 25 | Sí (Apple, Android, Windows, web, Node) | Sí, 80 ms | Source-available propietaria |
+| Whisper large-v3 | OpenAI | ~99 | Posible con cuantización | A nivel de segmento (no de palabra de forma nativa) | MIT |
+| Distil-Whisper | Hugging Face | Principalmente inglés | Sí, con cuantización | A nivel de segmento | MIT |
 
-Voz ofrece un rendimiento muy cercano a Whisper large-v3-turbo en WER medio, con una ventaja de dos puntos en el dataset AMI (reuniones), pero con un tamaño tres veces menor y ejecución exclusiva en el Neural Engine. Sin embargo, su soporte de idiomas es mucho más limitado (solo 25 lenguas europeas) y está restringido a dispositivos Apple.
+No se dispone de datos de WER comparativos entre Voz y estas alternativas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La licencia desert-ant-labs-source-available-1.0 permite uso gratuito hasta 100.000 dispositivos activos mensuales por SDK; superado ese umbral, es necesario contactar con el laboratorio para condiciones comerciales.
-- El modelo solo funciona en dispositivos Apple con Neural Engine. No hay versiones para Android, Windows o Linux, ni soporte para CUDA o backends estándar de inferencia.
-- La transcripción de conversaciones reales (reuniones, podcasts, llamadas) tiene un WER esperado del 10-13%, por lo que no es adecuado para transcripción médica o legal sin revisión humana.
-- Las marcas de tiempo de fin de palabra tienden a sobresalir hacia la pausa siguiente; el sistema recorta los finales, pero puede haber un error residual de hasta 200 ms en el 10% de las palabras.
-- El modelo no admite audio estéreo directamente; el SDK lo reduce a mono, lo que puede degradar la calidad en grabaciones con múltiples hablantes en canales separados.
-- No se han publicado detalles sobre sesgos demográficos o dialectales, ni sobre el rendimiento en acentos no europeos dentro de los idiomas soportados.
-- El repositorio tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere una adopción muy temprana; la documentación y el soporte pueden ser limitados.
+- No realiza detección automática de idioma: es necesario indicar el idioma o usar un modelo externo (Ear) para identificarlo antes de transcribir.
+- La licencia `desert-ant-labs-source-available` no es open source; es imprescindible revisar los términos en https://license.desertant.com/ antes de cualquier uso comercial o de redistribución.
+- El vocabulario personalizado no está disponible en JavaScript, lo que limita la adaptación a jerga en despliegues web.
+- En Node sin WebCodecs es necesario convertir el audio a WAV previamente, lo que añade un paso de preprocesado.
+- En Android el rendimiento es sustancialmente inferior al de Apple Neural Engine, según el propio autor, y se recomienda no ejecutar la transcripción en el hilo principal.
+- La primera carga en Apple tras la descarga tarda entre 10 y 30 segundos; es recomendable precargar el modelo durante el onboarding para evitar esperas al usuario.
+- No se han publicado datos sobre sesgos, tasa de alucinación ni robustez frente a ruido, acentos o audio de baja calidad.
+- No se especifican los requisitos mínimos de hardware ni el consumo de memoria de inferencia, lo que dificulta planificar despliegues.
+- El modelo está pensado para 25 idiomas europeos; no cubre otras lenguas y no se documenta su comportamiento en code-switching.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/desert-ant-labs/voz
-- Documentación del SDK: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/docs/models/voz.md
-- Sitio web de Desert Ant Labs: https://desertant.com/
-- Documentación de Voz en desertant.com: https://desertant.com/docs/voz/
-- Organización en Hugging Face: https://huggingface.co/desert-ant-labs
-- Licencia: https://license.desertant.com/1.0
+- Pesos v0.5.0: https://huggingface.co/desert-ant-labs/voz/tree/v0.5.0
+- Licencia: https://license.desertant.com/
+- Repositorio del SDK: https://github.com/Desert-Ant-Labs/desert-ant-core
+- Requisitos Swift: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#swift
+- Requisitos Android: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#android
+- Requisitos JavaScript/TypeScript: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#javascript-and-typescript
+- Documentación del modelo Ear (detección de idioma): https://desertant.com/docs/ear/
+- Paquete npm: `@desert-ant-labs/voz`
+- Paquete Maven: `ai.desertant:voz:4.3.0`

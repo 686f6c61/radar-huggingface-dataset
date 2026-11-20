@@ -92,16 +92,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "README.md · kataguru/Kataguru-Sceptic-35B-A3B-v2.6-GGUF at main",
-      "url": "https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-v2.6-GGUF/blob/main/README.md",
-      "snippet": "Kataguru-Sceptic-35B-A3B-v2.6-GGUF is the llama.cpp / LM Studio / Ollama GGUF release of Kataguru-Sceptic-35B-A3B-v2.6, a bilingual (English & Finnish) 35-billion parameter (3B active parameters per token, 254 routed experts per layer) multimodal Mixture-of-Experts (MoE) model."
-    },
-    {
-      "title": "Kataguru-Sceptic-35B-A3B-Georgian-v3.2 - Hugging Face",
-      "url": "https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Georgian-v3.2",
-      "snippet": "Kataguru-Sceptic-35B-A3B-Georgian-v3.2 არის ქართული ენისთვის სპეციალიზებული 256 -ექსპერტიანი MoE მოდელი (254 გაყინული Sceptic ძირითადი ექსპერტი + 2 ქართული ენის ..."
-    }
-  ]
+  "sources": []
 }

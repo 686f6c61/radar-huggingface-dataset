@@ -2,99 +2,100 @@
 
 ## Resumen
 
-GRT-30M-Chat es un ajuste fino conversacional e instruccional del modelo base MatterWaveAI/grt-30m, desarrollado por MatterWaveAI. Se trata de un modelo de generación de texto de pequeno tamano (29.844.597 parámetros reales según safetensors) construido sobre una arquitectura que el autor denomina "rotational transformer" y que, según la model card, no contiene ninguna capa `nn.Linear`, sustituyéndolas por rotaciones de Givens y álgebra de Clifford. El ajuste se ha realizado con plantilla ChatML (`<|im_start|>` / `<|im_end|>`) para soportar diálogo multiturno.
+GRT-30M-Chat es el ajuste fino conversacional e instruccional del modelo base MatterWaveAI/grt-30m, desarrollado por MatterWaveAI. Se trata de un modelo de lenguaje causal de aproximadamente 29,8 millones de parámetros (29.844.597 según los pesos en safetensors; la model card cita 29.305.498 para el base) que emplea una arquitectura poco convencional denominada GRT (rotational transformer), basada en rotaciones de Givens y álgebra de Clifford, y que según el autor no contiene ninguna capa `nn.Linear`.
 
-La relevancia del modelo es fundamentalmente experimental: explora una variante arquitectónica alternativa a la atención y proyecciones lineales estándar en un regimen de parametros muy reducido. Las metricas de alineación reportadas por el autor muestran una caida drastica de la perplejidad conversacional en held-out (de 182,79 en el base a 1,37 tras SFT) y de la pérdida del asistente (de 5,2083 a 0,3129), lo que sugiere un sobreajuste fuerte al formato de chat mas que una mejora general de capacidades.
+El modelo está formateado con la plantilla ChatML (`<|im_start|>` / `<|im_end|>`) y está pensado para conversación multi-turno. Su relevancia no reside en el rendimiento bruto —es un modelo de escala muy reducida— sino en servir de banco de pruebas para una familia de optimizadores geométricos (PairAdam, HessianPairAdam, CyclideAdam, HuygensAdam, etc.) que el autor evalúa sobre tareas de SFT conversacional.
 
-No se dispone de informacion sobre composicion del dataset de entrenamiento, idiomas soportados ni resultados de benchmarks estandar. El modelo se publica bajo licencia Apache 2.0 y con un tamano de repositorio de 0,1 GB, lo que lo hace trivial de desplegar en cualquier entorno, incluido CPU.
+La model card reporta métricas de alineación notables para su tamaño, como una perplejidad conversacional en validación que baja de 182,79 en el base a 1,34 tras 200 pasos de SFT con HessianPairAdam, y una precisión top-1 sobre tokens del asistente del 99,88 % (100 % con HuygensAdam). Estas cifras deben interpretarse con cautela, ya que proceden del propio autor y de conjuntos de validación no descritos en detalle.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Rotational transformer (GRT) con rotaciones de Givens y álgebra de Clifford; sin capas `nn.Linear` según el autor |
-| Parametros totales | 29.844.597 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; el ejemplo de la model card usa `torch.float32`) |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer rotacional (GRT): rotaciones de Givens y álgebra de Clifford, sin capas `nn.Linear` |
+| Parametros totales | 29.844.597 (pesos safetensors); 29.305.498 según model card del base |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | No disponible (pesos publicados en safetensors, presumiblemente fp32) |
+| Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer con una modificacion estructural central: la eliminacion de todas las capas `nn.Linear`, reemplazadas por transformaciones basadas en rotaciones de Givens y estructuras de álgebra de Clifford, segun la descripcion del autor. Esta eleccion busca presumiblemente reducir el numero de parametros y explorar alternativas geometricas a las proyecciones densas convencionales. No se especifica el numero de capas, dimensiones ocultas, cabezas de atencion ni la longitud de contexto nativa.
+El modelo se basa en la arquitectura GRT (rotational transformer) del autor, que sustituye las proyecciones lineales densas por transformaciones basadas en rotaciones de Givens y estructura de álgebra de Clifford. La model card insiste en que el modelo base no contiene capas `nn.Linear` y que el ajuste se realiza sobre parámetros de fase y ángulo (por ejemplo, calibración de fase polar del token `<|im_end|>`). El ajuste fino conversacional se aplica sobre los bloques `blocks[9:12]`, `final_norm` y la fase del token de fin de turno, con 2.435.209 parámetros entrenables.
 
-El proceso de entrenamiento del modelo chat consiste en un ajuste supervisado (SFT) sobre el modelo base, formateado con la plantilla ChatML. No se documenta el volumen de tokens de SFT, la composicion del dataset, ni si se aplicaron etapas de RLHF o DPO. Las unicas metricas publicadas son de alineacion: perplejidad conversacional en held-out de 1,37 (frente a 182,79 del base) y pérdida del asistente de 0,3129 (frente a 5,2083). Estos valores, especialmente la perplejidad de 1,37 en un modelo de 30M, apuntan a un ajuste muy agresivo sobre un conjunto de evaluacion posiblemente muy proximo a la distribucion de entrenamiento, por lo que deben interpretarse con cautela.
+El entrenamiento consiste en 200 pasos de SFT con formato ChatML, batch de 36, learning rate 3,5e-3, `max_angular_step` de 0,08 y semilla 42, partiendo de un estado de prefijo cacheado idéntico (`blocks[:9]`). El autor compara ocho optimizadores geométricos propios (HessianPairAdam, CyclideAdam, PairAdam, HuygensAdam, HuygensSymplecticAdam, SymplecticAdam, GyricAdam, PolarNaturalAdam) en una GPU AMD con ROCm (gfx1151, "Spark"). No se documentan el volumen de tokens de entrenamiento, la composición del dataset de SFT ni si hubo RLHF o DPO; tampoco se describe el corpus del modelo base.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva y conversacion multiturno en formato ChatML.
-- Respuesta a instrucciones simples en el dominio cubierto por el SFT (no documentado).
-- Soporte de plantilla de chat estandar (`apply_chat_template` de `transformers`).
-- Generacion determinista disponible (`do_sample=False` en el ejemplo del autor).
+- Generación de texto causal y conversación multi-turno con plantilla ChatML.
+- Respuesta a instrucciones tras el ajuste SFT (pipeline `text-generation`).
+- Soporte de `apply_chat_template` en transformers para construir prompts con roles.
+- Generación determinista (`do_sample=False`) documentada en el ejemplo de uso.
 - No se documenta soporte de tool calling ni function calling.
-- No se documenta soporte de agentes ni razonamiento multi-paso.
-- No se documenta capacidad multilingue; los idiomas soportados figuran como no disponibles.
-- No se documenta vision, audio, thinking mode ni ninguna modalidad adicional.
-- No se documenta capacidad destacada en codigo o matematicas.
+- No se documenta soporte de agentes ni razonamiento multi-paso explícito.
+- Capacidades multilingües: no disponibles (los idiomas no están declarados).
+- No se documentan capacidades de visión, audio ni modo "thinking"; la suite del autor incluye modelos VL y TTS separados, pero no forman parte de este checkpoint.
 
 ## Casos de uso
 
-- Experimentacion arquitectonica: el modelo sirve para estudiar el comportamiento de un transformer sin capas lineales en tareas de dialogo, comparando su dinamica de entrenamiento y sus curvas de pérdida con arquitecturas convencionales de tamano similar.
-- Prototipado rapido de interfaces conversacionales en local: al ocupar 0,1 GB y ejecutarse en float32, puede cargarse en CPU o en cualquier GPU consumer para validar pipelines de chat con plantilla ChatML antes de escalar a modelos mayores.
-- Pruebas de integracion de `transformers`: util como modelo de juguete para verificar que un pipeline de `AutoModelForCausalLM` y `apply_chat_template` funciona correctamente en CI, dado su bajo coste de descarga y ejecucion.
-- Docencia y divulgacion: ejemplo minimo y autocontenido para explicar el formato ChatML, el flujo de SFT y la evaluacion de pérdida del asistente en un modelo pequeno.
-- Investigacion sobre alineacion a baja escala: permite reproducir el fenomeno de caida abrupta de perplejidad tras SFT en modelos de 30M y estudiar sobreajuste al formato.
-- Generacion de texto acotada y offline en entornos con recursos minimos (por ejemplo, dispositivos embebidos o contenedores sin GPU), siempre que la calidad requerida sea baja y el dominio este proximo al del ajuste.
-- Baseline en estudios de eficiencia: referencia para medir coste computacional y numero de parametros de una arquitectura sin proyecciones lineales frente a transformers estandar del mismo orden.
+- Investigación sobre optimizadores geométricos: el modelo sirve como banco de pruebas reproducible para comparar los ocho optimizadores de `transformers.models.grt.optimization_grt` en una tarea de SFT ChatML con métricas de pérdida y perplejidad reportadas.
+- Experimentación educativa con arquitecturas sin capas lineales: permite estudiar cómo se comporta un transformer basado en rotaciones de Givens en tareas de conversación a pequeña escala, con un coste computacional mínimo.
+- Prototipado de pipelines de chat con transformers: al ocupar unos 0,1 GB de repositorio, se puede cargar en CPU o en cualquier GPU consumer para validar plantillas ChatML y flujos de generación extremo a extremo.
+- Pruebas de integración de tokenizadores y plantillas de chat: útil para verificar `apply_chat_template`, manejo de tokens especiales y decodificación en entornos de CI sin necesidad de hardware dedicado.
+- Evaluación de técnicas de calibración de fase polar: el ajuste se centra en la fase del token `<|im_end|>`, por lo que es un caso de estudio para investigar el control de tokens de terminación en modelos rotacionales.
+- Docencia y divulgación: un modelo de 30 M de parámetros con arquitectura no estándar y licencia Apache 2.0 es adecuado para demostraciones en clase o talleres sobre alternativas a la atención y proyecciones lineales clásicas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Las unicas metricas reportadas por el autor son de alineacion durante el SFT:
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card únicamente reporta métricas internas de SFT y validación:
 
-| Metrica | Modelo base (grt-30m) | GRT-30M-Chat (SFT) |
-|---|---|---|
-| Perplejidad conversacional en held-out | 182,79 | 1,37 |
-| Pérdida del asistente en held-out | 5,2083 | 0,3129 |
-
-No se dispone de resultados en MMLU, HumanEval, GSM8K ni otras evaluaciones estandar.
+| Metrica | Base | Mejor resultado SFT | Optimizador |
+|---|---|---|---|
+| Perplejidad conversacional en validación | 182,79 | 1,3370 | HessianPairAdam |
+| Pérdida del asistente en validación | 5,2083 | 0,2904 | HessianPairAdam |
+| Precisión top-1 tokens del asistente | 24,69 % | 100,00 % | HuygensAdam |
+| Pérdida validación multi-turno ChatML | 5,3480 | 1,6645 | HuygensAdam |
+| Margen de respuesta del asistente (nats/token) | No disponible | 1,1464 | SymplecticAdam |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 120 MB en float32 (29,84M parametros x 4 bytes), mas overhead de activaciones y tokenizer. Cabe holgadamente en cualquier GPU.
-- GPU recomendadas: cualquier GPU moderna es suficiente; no se requiere A100, H100 ni RTX 4090. Una GTX 1650, una T4 o incluso CPU son adecuadas.
-- Cabe en GPU consumer: si, en todas las GPU consumer con al menos 1 GB de VRAM; tambien en CPU.
-- Opciones de despliegue: `transformers` (soporte nativo confirmado por la model card). No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI, y la ausencia de pesos GGUF en el repositorio hace que llama.cpp y Ollama no esten disponibles de forma directa.
-- Latencia y throughput estimados: no disponibles. Por el tamano, se espera latencia de milisegundos por token en GPU y decenas de milisegundos por token en CPU, pero no hay mediciones publicadas.
+- VRAM estimada para inferencia en fp32: en torno a 120 MB para los pesos (29,8 M de parámetros × 4 bytes), más overhead de activaciones y del runtime de PyTorch.
+- Cabe holgadamente en cualquier GPU consumer (GTX 1060, RTX 3060, RTX 4090) e incluso en CPU.
+- GPU recomendadas: no se requieren GPU de datacenter (A100, H100); cualquier GPU con al menos 2 GB de VRAM es suficiente.
+- Despliegue: transformers con `AutoModelForCausalLM` (documentado). No se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI; al no publicarse pesos GGUF, llama.cpp y Ollama requerirían conversión previa.
+- Latencia y throughput: no disponibles. El entrenamiento de 200 pasos con 2,4 M de parámetros entrenables tardó entre 48,57 s y 70,50 s según el optimizador en una GPU AMD gfx1151, lo que da una idea del orden de magnitud del coste computacional.
 
 ## Comparativa con modelos similares
 
-No se dispone de modelos comparables directos con la misma arquitectura (rotational transformer sin capas lineales). Como referencia de tamano en la categoria de modelos conversacionales muy pequenos:
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| MatterWaveAI/grt-30m-chat | 29,8 M | No disponible | Apache 2.0 | Hugging Face, transformers | Arquitectura rotacional sin capas lineales; sin benchmarks estándar |
+| MatterWaveAI/grt-30m (base) | 29,3 M | No disponible | Apache 2.0 | Hugging Face, transformers | Modelo base previo al SFT conversacional |
+| TinyLlama-1.1B-Chat | 1,1 B | 2.048 tokens | Apache 2.0 | Hugging Face, amplio ecosistema | Transformer estándar, benchmarks públicos, mucho mayor |
+| SmolLM-135M-Instruct | 135 M | 2.048 tokens | Apache 2.0 | Hugging Face, transformers | Transformer estándar, pensado para dispositivos |
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|
-| MatterWaveAI/grt-30m-chat | 29,84M | no disponible | Apache 2.0 | safetensors | Arquitectura experimental sin `nn.Linear` |
-| Modelos tipo SmolLM-135M / Qwen2.5-0.5B | 135M / 500M | 2K-32K (segun variante) | Apache 2.0 (mayoria) | safetensors, GGUF | Arquitecturas transformer estandar, mucho mas capaces |
-| Modelos de chat <100M de proposito general | variable | variable | variable | variable | No se dispone de comparacion directa publicada |
-
-La comparacion cuantitativa de rendimiento no esta disponible porque el autor no publica benchmarks estandar.
+La comparación con modelos de la misma escala es limitada porque no se han publicado resultados de benchmarks estándar para GRT-30M-Chat. Frente a TinyLlama o SmolLM, el modelo de MatterWaveAI es entre 4 y 45 veces más pequeño y su interés es fundamentalmente de investigación arquitectónica, no de rendimiento en tareas generales.
 
 ## Limitaciones y advertencias
 
-- Modelo de 30M parametros: la calidad de generacion y el conocimiento factual son muy limitados en comparacion con modelos de cientos de millones o miles de millones de parametros.
-- Riesgo elevado de alucinacion: no se documenta entrenamiento con datos factuales ni tecnicas de mitigacion.
-- La perplejidad de 1,37 en held-out sugiere un posible sobreajuste al conjunto de evaluacion o al formato ChatML; no debe interpretarse como indicador de calidad general.
-- No se documentan sesgos conocidos, pero al no publicarse la composicion del dataset de SFT no es posible evaluar sesgos de genero, raza, idioma o dominio.
-- Idiomas soportados no disponibles: no hay garantia de comportamiento correcto fuera del idioma o idiomas usados en el SFT.
-- Longitud de contexto no documentada: no se debe asumir una ventana larga; conviene limitar `max_new_tokens` y el historial de conversacion.
-- No se documenta soporte de tool calling, agentes ni razonamiento multi-paso; no es adecuado para pipelines que requieran estas capacidades.
-- Licencia Apache 2.0 permite uso comercial, pero la ausencia de garantias y de documentacion sobre el dataset de entrenamiento traslada al integrador la responsabilidad sobre el cumplimiento y la calidad.
-- No hay pesos GGUF ni integracion con llama.cpp u Ollama documentada; el despliegue en produccion requeriria conversion manual.
-- Modelo con 0 descargas y 0 likes en el momento de la consulta: sin validacion por parte de la comunidad.
+- Sesgos conocidos: no documentados; al no declararse idiomas ni composición del dataset, no es posible evaluar sesgos lingüísticos o culturales.
+- Riesgo de alucinación: alto por su escala (30 M de parámetros) y por un ajuste SFT de solo 200 pasos; las métricas de validación del autor no garantizan veracidad factual.
+- Las métricas de la model card (perplejidad 1,34, precisión top-1 del 100 %) proceden del propio autor, con conjuntos de validación no descritos, y no son comparables con benchmarks estándar.
+- Longitud de contexto no documentada; no se debe asumir una ventana amplia para conversaciones largas.
+- Idiomas soportados no declarados; el uso en castellano no está validado.
+- Licencia Apache 2.0: permite uso comercial, pero al ser un modelo de investigación sin garantías de calidad, no es recomendable en producción orientada a usuarios finales.
+- No se documenta compatibilidad con herramientas de despliegue habituales (vLLM, TGI, llama.cpp, Ollama) ni existencia de pesos cuantizados.
+- El ejemplo de la model card usa `dtype=torch.float32`; no se indica si existe soporte estable para bfloat16 o float16.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/MatterWaveAI/grt-30m-chat
 - Modelo base: https://huggingface.co/MatterWaveAI/grt-30m
-- No se han encontrado en la informacion proporcionada papers, blogs, repositorios ni demos adicionales.
+- Variante MoE (Mixture-of-Rotations): https://huggingface.co/MatterWaveAI/grt-30m-mor
+- Embedding: https://huggingface.co/MatterWaveAI/grt-30m-embedding
+- Reranker: https://huggingface.co/MatterWaveAI/grt-30m-reranker
+- Vision-Language: https://huggingface.co/MatterWaveAI/grt-30m-vl
+- Tokenizer: https://huggingface.co/MatterWaveAI/grt-30m-tokenizer
+- Text-to-Speech: https://huggingface.co/MatterWaveAI/grt-30m-tts

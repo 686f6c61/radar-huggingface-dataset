@@ -2,107 +2,96 @@
 
 ## Resumen
 
-SenseNova 6.8 Code2Video es un modelo abierto de 27.356.728.560 parámetros (≈27,36 B) desarrollado por SenseNova (SenseTime) para la creación de vídeo guiada por código: en lugar de generar píxeles directamente, el modelo escribe y ejecuta código (por ejemplo, secuencias de render programático) que produce el vídeo final. Está afinado a partir de Qwen3.8-27B, se distribuye con licencia Apache 2.0 y soporta una ventana de contexto de 512K tokens con hasta 64K tokens de salida, lo que lo habilita para tareas de horizonte largo en las que escribe código, renderiza fotogramas, los revisa y los corrige de forma iterativa.
+SenseNova 6.8 Code2Video es un modelo de lenguaje multimodal especializado en la creación de vídeo mediante generación de código, desarrollado por SenseTime bajo el paraguas de OpenSenseNova. Se trata de un fine-tuning de Qwen3.8-27B orientado a un flujo de trabajo concreto: el modelo escribe código ejecutable que construye y renderiza vídeos, en lugar de generar píxeles directamente. El modelo está pensado para orquestar herramientas de generación de imagen, vídeo, modelado 3D y edición, encadenando generación, edición y composición en un único pipeline creativo.
 
-La propuesta técnica es relevante porque sitúa el código como interfaz común entre modelos y herramientas creativas: el modelo puede encadenar generación de imágenes, generación de vídeo, modelado 3D o edición dentro de un mismo flujo de trabajo. La model card reporta ejecuciones sostenidas de más de 10 horas y más de 2.000 turnos usando Claude Code como harness, algo poco habitual en modelos de este tamaño.
+Con 27.356.728.560 parámetros (aproximadamente 27B), una ventana de contexto de 512K tokens y licencia Apache 2.0, el modelo apunta a tareas de horizonte largo: según la model card, puede sostener ejecuciones de más de 10 horas y más de 2.000 turnos en un arnés tipo Claude Code. Su enfoque en código como interfaz universal entre modelos y herramientas creativas lo posiciona como una pieza de orquestación más que como un generador de vídeo end-to-end.
 
-El modelo se publica en Hugging Face con pesos en safetensors, pipeline `image-text-to-text` (acepta imágenes además de texto, lo que permite realimentar fotogramas renderizados para su revisión) y soporte para tool calling mediante parsers de Qwen3/Qwen3-Coder en vLLM, SGLang y LightLLM. Su alcance actual son vídeos cortos implementados íntegramente en código: motion graphics, tipografía cinética, ilustraciones animadas, explicaciones visuales y presentaciones de producto.
+La relevancia actual del modelo radica en su propuesta de "code-driven video creation": usar código como punto de entrada para conectar distintos modelos generativos y herramientas de edición. Es un primer paso declarado por el autor hacia un modelo que coordine múltiples modelos generativos a través de código para producir contenido digital en distintos medios.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (clase `qwen3_5` en transformers), afinado desde Qwen3.8-27B |
-| Parametros totales | 27.356.728.560 (≈27,36 B) |
-| Parametros activos | No disponible (no se indica que sea MoE) |
-| Longitud de contexto | 524.288 tokens (512K); salida maxima de 64K tokens |
-| Tipos de cuantizacion | No disponible (el repositorio publica pesos safetensors; no se documentan GGUF ni cuantizaciones oficiales) |
-| Idiomas soportados | Ingles (en) y chino (zh) |
+| Arquitectura | Transformer (fine-tuning de Qwen3.8-27B; tag `qwen3_5` en Hugging Face) |
+| Parametros totales | 27.356.728.560 (~27B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 512K tokens (524.288) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | en, zh |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (libreria transformers); tamano del repositorio 54,9 GB |
-| Pipeline declarado | image-text-to-text |
-| Modelo base | Qwen3.8-27B |
-| Despliegue soportado | vLLM, SGLang, LightLLM (ejemplos oficiales con tensor parallel 4) |
-| Parsers recomendados | `--reasoning-parser qwen3`, `--tool-call-parser qwen3_coder` |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-Se trata de un transformer decoder-only denso de 27,36 B de parametros, derivado por fine-tuning de Qwen3.8-27B. La model card no detalla la composicion del dataset de entrenamiento, el numero de tokens utilizados ni si se aplicaron fases de RLHF o DPO; tampoco se documentan innovaciones de atencion (atencion lineal, decodificacion especulativa o arquitecturas hibridas). Lo que si se explicita es el objetivo del ajuste: convertir el modelo en un generador de codigo ejecutable orientado a la construccion y el render de video, con capacidad de revisar los fotogramas resultantes y reescribir el codigo en turnos sucesivos.
+El modelo es un fine-tuning de Qwen3.8-27B, según declara la model card. La arquitectura subyacente es un transformer denso de aproximadamente 27B parámetros, con una ventana de contexto extendida a 512K tokens. El pipeline declarado en Hugging Face es `image-text-to-text`, lo que indica capacidad de entrada multimodal (imagen y texto) además de generación de texto. El tag `qwen3_5` sugiere que la base pertenece a la familia Qwen3.5.
 
-El aspecto arquitectonico mas caracteristico no esta en el bloque del transformer, sino en el bucle de trabajo: el modelo opera como un agente de horizonte largo sobre un harness (Claude Code en la configuracion recomendada), con ventana de 512K, compactacion automatica al 80 % y 64K de salida maxima por turno. La model card reporta ejecuciones de mas de 10 horas y mas de 2.000 turnos, lo que exige gestion estable de contexto y de estado a lo largo de la sesion. El modelo acepta entrada de imagen junto al texto, lo que permite incorporar capturas de fotogramas renderizados dentro del propio ciclo de revision.
+No se detallan en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO. La model card sí describe el enfoque de entrenamiento funcional: el modelo genera código ejecutable que construye y renderiza vídeo, y se distribuye junto con "example trajectories" (logs de mensajes y llamadas a herramientas) y una "production skill" en GitHub con flujo de trabajo, guías de craft y herramientas de renderizado. La innovación destacable es el uso del código como lenguaje intermedio para encadenar modelos de generación de imagen, vídeo, 3D y edición.
 
 ## Capacidades
 
-- Generacion de codigo ejecutable para construir y renderizar video: motion design, tipografia cinetica, mundos isometricos, data stories, animacion de personajes, promocionales de producto y explicaciones matematicas.
-- Entrada multimodal image-text-to-text: puede recibir imagenes (por ejemplo, fotogramas renderizados) junto con las instrucciones de texto.
-- Tool calling / function calling: soportado en vLLM (`--enable-auto-tool-choice` con `qwen3_coder`) y en SGLang (mismo parser), lo que permite invocar herramientas de render, generacion de imagen, generacion de video, modelado 3D o edicion.
-- Comportamiento agentico de multiples pasos: escritura de codigo, render, inspeccion de resultados y revision iterativa a lo largo de miles de turnos.
-- Modo de razonamiento: los ejemplos oficiales activan el parser `qwen3` de razonamiento, lo que indica soporte de trazas de pensamiento previas a la respuesta.
-- Contexto largo de 512K tokens: adecuado para mantener el estado de un proyecto de video completo y las conversaciones acumuladas del agente.
-- Capacidades multilingues limitadas a ingles y chino.
-- Encadenamiento entre modelos y herramientas creativas a traves del codigo generado, con el codigo como nexo comun del flujo de produccion.
+- Generación de código ejecutable para construir y renderizar vídeo (motion design, kinetic type, data stories, character animation, product promos, math explainers, paper-craft films, isometric worlds).
+- Orquestación de herramientas: el código generado puede invocar modelos de generación de imagen, generación de vídeo, modelado 3D y edición de vídeo.
+- Tool calling / function calling: soportado vía parsers `qwen3_coder` en vLLM y SGLang, y `--enable-auto-tool-choice`.
+- Razonamiento multi-turno y de horizonte largo: ejecuciones de más de 10 horas y más de 2.000 turnos según la model card.
+- Modo de razonamiento: parser `qwen3` configurable en vLLM y SGLang.
+- Capacidades multimodales de entrada: pipeline `image-text-to-text` (imagen + texto).
+- Capacidades multilingües limitadas a inglés y chino.
+- Integración recomendada con Claude Code como arnés de ejecución.
 
 ## Casos de uso
 
-- Motion graphics para marketing: el modelo escribe el codigo de animacion y renderiza piezas cortas de tipografia cinetica o graficos en movimiento para redes y campanas, revisando fotogramas y ajustando tiempos y composicion en iteraciones sucesivas.
-- Explicadores matematicos y cientificos: genera animaciones programaticas que ilustran conceptos (por ejemplo, construcciones geometricas o demostraciones) a partir de una descripcion textual, con control preciso de posiciones y tiempos al estar todo definido en codigo.
-- Data stories y visualizacion animada: produce animaciones de graficos y transiciones de datos encadenando codigo de render, util para informes y contenido editorial que requiere cifras exactas y no ilustraciones aproximadas.
-- Presentaciones de producto: crea videos cortos de producto con escenas y transiciones generadas por codigo, e invoca herramientas de generacion de imagen cuando necesita assets adicionales.
-- Produccion asistida de video en pipelines de CI: al ser codigo ejecutable, la salida es versionable y reproducible; el modelo puede integrarse en un flujo donde el render se ejecuta en el mismo entorno que el resto del pipeline y se valida automaticamente.
-- Animacion de personajes e ilustraciones animadas: construye escenas con personajes y coreografias de movimiento simples, adecuadas para piezas cortas y contenido educativo.
-- Agente de automatizacion creativa de horizonte largo: ejecuciones de mas de 10 horas y 2.000 turnos permiten delegar la produccion completa de un corto, incluyendo revision y correccion de frames sin intervencion continua.
-- Prototipado rapido de ideas visuales: convertir un brief en un video de prueba funcional antes de invertir en produccion tradicional, usando el modelo como primer borrador ejecutable.
+- Creación de vídeos explicativos de matemáticas: el modelo genera código que dibuja y anima conceptos matemáticos, renderizando cada fotograma de forma programática y permitiendo revisar y corregir el resultado turno a turno.
+- Motion design y kinetic typography: producción de piezas cortas de tipografía animada completamente en código, con control preciso de composición y coreografía de movimiento.
+- Data stories y visualizaciones animadas: generación de vídeos que animan datos y gráficos, encadenando librerías de visualización y renderizado dentro del mismo pipeline de código.
+- Promocionales de producto: el modelo escribe código que compone escenas, llama a modelos de generación de imagen para assets y renderiza el vídeo final, integrándose en un flujo de producción creativa.
+- Animación de personajes y mundos isométricos: construcción de escenas y animaciones mediante código, con la posibilidad de invocar herramientas 3D para geometría y renderizado.
+- Automatización de pipelines creativos en CI/CD: al ser un modelo de código con tool calling, puede integrarse en flujos automatizados que generen, rendericen y revisen piezas de vídeo sin intervención manual, aprovechando su contexto de 512K para mantener el estado de proyectos largos.
+- Orquestación de estudios creativos: uso como capa de coordinación que llama a distintos modelos generativos (imagen, vídeo, 3D, edición) a través de código, unificando generación, edición y composición en un único workflow.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card unicamente aporta resultados cualitativos preliminares ("buena composicion visual y coreografia de movimiento en motion design") y datos operativos de robustez agentica: ejecuciones sostenidas de mas de 10 horas y mas de 2.000 turnos, con contexto de 512K, compactacion automatica al 80 % y 64K de salida maxima.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Pesos en precision original (safetensors, repositorio de 54,9 GB): se necesita aproximadamente 55 GB solo para pesos, mas cache KV; en la practica, al menos 60-70 GB de VRAM agregada para contexto moderado.
-- Los ejemplos oficiales de despliegue usan tensor parallel de 4 GPUs (`--tp 4` / `--tp-size 4`), lo que sugiere 4 aceleradores para servir el modelo con comodidad.
-- Configuraciones razonables: 4x A100 40 GB, 4x A100/H100 80 GB, o 4x RTX 4090/3090 24 GB para los ejemplos con TP=4 a contexto reducido.
-- Contexto de 512K: la cache KV crece de forma muy significativa; con 524.288 tokens hace falta planificacion de memoria especifica y, en la practica, servir con menos contexto o con tecnicas de paginacion de KV.
-- GPU de consumo: con cuantizacion 4-bit no oficial los pesos quedarian en torno a 15-16 GB (estimacion a partir de 27,36 B parametros), lo que permitiria encajar en una RTX 4090 de 24 GB, pero no se han publicado pesos cuantizados ni se documenta soporte para ello.
-- Opciones de despliegue documentadas: vLLM (`VLLM_ALLOW_LONG_MAX_MODEL_LEN=1`, `--max-model-len 524288`), SGLang (`SGLANG_ALLOW_OVERWRITE_LONGER_CONTEXT_LEN=1`) y LightLLM (`--max_req_total_len 524288`). No se documentan llama.cpp, Ollama ni TGI.
-- Harness recomendado: Claude Code, con `CLAUDE_CODE_MAX_CONTEXT_TOKENS=524288`, `CLAUDE_AUTOCOMPACT_PCT_OVERRIDE=80` y `CLAUDE_CODE_MAX_OUTPUT_TOKENS=64000`.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: no disponible de forma explícita. Con 27B parámetros en safetensors (repo de 109,6 GB), la inferencia en precisión completa requiere múltiples GPU; los ejemplos oficiales usan `--tp 4` (tensor parallel de 4 GPU).
+- GPU recomendadas: los comandos de despliegue de la model card asumen 4 GPU con `--tp 4` / `--tensor-parallel-size 4` / `--tp-size 4`; no se especifica el modelo exacto (A100, H100, etc.).
+- Compatibilidad con GPU de consumo: no disponible. Un modelo de 27B en cuantización baja podría caber en GPUs de consumo de gama alta, pero no se confirma en la información proporcionada.
+- Opciones de despliegue: LightLLM, vLLM (imagen `vllm/vllm-openai:latest`), SGLang (`lmsysorg/sglang:latest`). Todos con soporte de contexto largo (`VLLM_ALLOW_LONG_MAX_MODEL_LEN=1`, `SGLANG_ALLOW_OVERWRITE_LONGER_CONTEXT_LEN=1`).
+- Latencia y throughput: no disponibles.
+- Configuración de contexto largo: `--max-model-len 524288` en vLLM, `--context-length 524288` en SGLang, `--max_req_total_len 524288` en LightLLM.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SenseNova 6.8 Code2Video | 27,36 B | 512K | Generacion de video mediante codigo ejecutable, agentico | Apache 2.0 | Pesos en Hugging Face; despliegue en vLLM, SGLang y LightLLM |
-| Qwen3.8-27B (modelo base) | 27 B (segun la model card) | No disponible | LLM generalista y de codigo | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
-| Otros modelos abiertos de code-to-video | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
+| SenseNova 6.8 Code2Video | ~27B | 512K | Code-driven video creation (fine-tuning de Qwen3.8-27B) | Apache 2.0 | Hugging Face |
+| Qwen3.8-27B (base) | ~27B | no disponible en esta ficha | LLM multimodal generalista | no disponible en esta ficha | no disponible en esta ficha |
+| SenseNova-U1 | no disponible | no disponible | Multimodal (imagen y contenido) | no disponible | GitHub / SenseNova-Studio |
 
-La informacion disponible no permite establecer comparaciones cuantitativas con alternativas de la misma categoria: no se han publicado benchmarks ni se detallan las condiciones del fine-tuning respecto al modelo base.
+No se dispone de datos de benchmarks ni de especificaciones completas de los modelos comparables en la información proporcionada, por lo que la comparación cuantitativa de rendimiento no está disponible.
 
 ## Limitaciones y advertencias
 
-- Ausencia de benchmarks publicos: no hay resultados de MMLU, HumanEval, GSM8K ni metricas de calidad de video, por lo que la evaluacion debe hacerse con pruebas propias.
-- Alcance limitado a videos cortos implementados integramente en codigo; la propia model card indica que la extension a edicion, composicion, animacion y 3D es trabajo futuro.
-- Idiomas: solo ingles y chino; no se garantiza un rendimiento equivalente en castellano.
-- Riesgo de alucinacion en el codigo generado: el modelo puede producir codigo que no renderiza correctamente, de ahi la importancia del bucle de revision de fotogramas y de la validacion automatica en produccion.
-- Sesgos: no se documenta informacion sobre sesgos conocidos, composicion del dataset ni procesos de alineacion.
-- Coste de infraestructura: 27,36 B de parametros con contexto de 512K implican despliegues multiproGPU; el contexto completo exige una gestion de cache KV muy cuidadosa.
-- No se publican pesos cuantizados ni formatos GGUF, por lo que el uso en GPU de consumo requiere cuantizacion propia y no esta respaldado oficialmente.
-- Dependencia del harness: las cifras de 10 horas y 2.000 turnos se obtienen con Claude Code y una configuracion concreta de contexto, compactacion y salida maxima; otros harness pueden comportarse de forma distinta.
-- Licencia Apache 2.0: permite uso comercial y modificacion, pero conviene revisar las condiciones de los materiales del repositorio (media, gifs y videos de demostracion) y de las herramientas de terceros invocadas por el codigo generado.
-- Modelo muy reciente (publicado el 24 de octubre de 2026, actualizado el 27 de octubre de 2026) y con 0 descargas registradas en el momento de la consulta: ecosistema, documentacion y soporte comunitario aun incipientes.
+- Idiomas limitados a inglés y chino; no se declara soporte de castellano ni de otros idiomas.
+- Enfoque restringido a vídeos cortos implementados íntegramente en código; el autor indica que la extensión a edición, composición, animación y creación 3D es trabajo futuro.
+- Riesgo de alucinación en la generación de código: errores en el código producido pueden traducirse en fallos de renderizado o resultados visuales incorrectos, lo que exige revisión de fotogramas y ciclos de corrección.
+- Sesgos conocidos: no disponibles en la información proporcionada.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero deben respetarse las licencias de las herramientas y modelos invocados por el código generado.
+- Requisitos de infraestructura elevados: 27B parámetros y contexto de 512K implican despliegues multi-GPU para producción.
+- Dependencia de un arnés externo (Claude Code recomendado) y de configuración específica (`CLAUDE_CODE_MAX_CONTEXT_TOKENS`, `CLAUDE_AUTOCOMPACT_PCT_OVERRIDE`, `CLAUDE_CODE_MAX_OUTPUT_TOKENS`) para ejecuciones de horizonte largo.
+- No se han publicado benchmarks que permitan validar cuantitativamente la calidad del modelo frente a alternativas.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/sensenova/SenseNova-6.8-Code2Video
-- Repositorio GitHub del modelo: https://github.com/OpenSenseNova/SenseNova-6.8-Code2Video
-- Skill de produccion (workflow, guias de craft, herramientas de render): https://github.com/OpenSenseNova/SenseNova-6.8-Code2Video/tree/main/skills/code-video
+- GitHub (skill, prompts y herramientas): https://github.com/OpenSenseNova/SenseNova-6.8-Code2Video
 - Trayectorias de ejemplo: https://huggingface.co/sensenova/SenseNova-6.8-Code2Video/blob/main/trajectories/all.openai.jsonl
-- Video de lanzamiento (90 s): https://huggingface.co/sensenova/SenseNova-6.8-Code2Video/resolve/main/media/launch/sensenova_codevideo_launch_film.mp4
-- Organizacion en Hugging Face: https://huggingface.co/sensenova
-- Plataforma de modelos SenseNova: https://www.sensenova.ai/models
-- Repositorio SenseNova6.8 (API): https://github.com/OpenSenseNova/SenseNova6.8/blob/main/API.md
-- Canal de Discord OpenSenseNova: https://discord.com/channels/1488006693395628032/1488015977932390520
+- Skill de producción: https://github.com/OpenSenseNova/SenseNova-6.8-Code2Video/tree/main/skills/code-video
+- Launch film: https://huggingface.co/sensenova/SenseNova-6.8-Code2Video/resolve/main/media/launch/sensenova_codevideo_launch_film.mp4
+- Discord de OpenSenseNova: https://discord.com/invite/BuTXPHmQub
 - LightLLM: https://github.com/ModelTC/LightLLM
 - vLLM: https://github.com/vllm-project/vllm
 - SGLang: https://github.com/sgl-project/sglang
-- Cobertura en AGI Hunt: https://agihunt.info/en/p/1a17dd52e71b6d73c8195e10f70
+- Plataforma SenseNova: https://www.sensenova.ai/
+- SenseNova-U1 (GitHub): https://github.com/OpenSenseNova/SenseNova-U1

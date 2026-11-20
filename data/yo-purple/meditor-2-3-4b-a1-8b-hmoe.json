@@ -53,6 +53,31 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "task": "UniBench-100 (Native 37Q Partial)",
+      "dataset": "UniBench-100",
+      "metric": "Native Mean Score (37/100)",
+      "value": 3.28
+    },
+    {
+      "task": "UniBench-100 (Native 37Q Partial)",
+      "dataset": "UniBench-100",
+      "metric": "Native Pass Rate (%)",
+      "value": 8.1
+    },
+    {
+      "task": "ARC Commonsense (12Q)",
+      "dataset": "ARC Challenge Subset",
+      "metric": "ARC Accuracy (%)",
+      "value": 100
+    },
+    {
+      "task": "WikiText-2 Validation PPL",
+      "dataset": "WikiText-2",
+      "metric": "Perplexity",
+      "value": 3.48
+    }
+  ],
   "sources": []
 }

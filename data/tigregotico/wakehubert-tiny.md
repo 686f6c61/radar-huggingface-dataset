@@ -2,109 +2,101 @@
 
 ## Resumen
 
-WakeHuBERT tiny es un extractor de características de voz en streaming de 0,64 millones de parámetros, desarrollado por TigreGotico y publicado en Hugging Face bajo licencia Apache 2.0. No es un modelo generativo ni un clasificador: convierte audio mono a 16 kHz en vectores de 128 dimensiones a 50 fotogramas por segundo, que después alimentan a un clasificador externo (por ejemplo, una GRU) encargado de detectar una palabra de activación o wake word. Es el extractor que hay detrás del featurizer `wakehubert` del proyecto wakeforge.
+WakeHuBERT tiny es un extractor de características de voz en streaming para detección de palabras de activación (wake-word), destilado a partir de facebook/hubert-base-ls960. Desarrollado por TigreGotico en el ecosistema de OpenVoiceOS y wakeforge, resuelve el problema de ejecutar un detector de wake-word fiable en dispositivos con recursos limitados: convierte audio a 16 kHz en vectores de 128 dimensiones a 50 fotogramas por segundo, de modo que un clasificador pequeño entrenado únicamente con voz sintética puede detectar una palabra de activación especificada como texto.
 
-El problema que resuelve es concreto: permitir que un detector de wake word se entrene únicamente con voz sintética generada a partir de la palabra escrita como texto, sin necesidad de grabar miles de muestras reales. Para ello se destila de HuBERT-base, de forma que sus representaciones reproducen las capas 4, 8 y 12 del profesor, pero con una arquitectura estrictamente causal que puede ejecutarse en streaming sobre dispositivos modestos.
+El modelo tiene 824.288 parámetros (0,82M) y una arquitectura estrictamente causal basada exclusivamente en convoluciones, batch norm y ReLU, lo que facilita su cuantización a int8. Se distribuye en formato ONNX (float e int8, con variantes estáticas y de streaming) y está pensado para ejecutarse en CPU: el grafo int8 procesa bloques de 1.280 muestras en torno a 1 ms por núcleo.
 
-Su relevancia actual está en el nicho de keyword spotting embebido: el modelo es diminuto, se distribuye en formato ONNX (incluida una versión int8 estática) y su campo receptivo es de solo 2,5 segundos, lo que lo hace apto para escucha continua en CPU, microcontroladores de gama alta o módems móviles. La contrapartida es que la evidencia publicada se limita a una única wake word en inglés sobre un único benchmark, con resultados que aún no han sido replicados por terceros (0 descargas y 0 likes en el momento de redactar esta ficha).
+Su relevancia actual radica en la combinación de latencia baja, huella mínima y entrenamiento con datos sintéticos: permite crear detectores de wake-word personalizados sin grabar horas de audio del usuario, manteniendo un recall del 95% en silencio a 0,5 falsas activaciones por hora sobre hablantes reales del benchmark de Picovoice.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Extractor convolucional causal: front end log-mel de 64 bins integrado en el grafo, convolucion con stride hasta 50 fps, ocho bloques de convolucion dilatada depthwise-separable de 256 canales, proyeccion 1x1 a 128 caracteristicas. Destilado de HuBERT-base |
-| Parametros totales | 0,64 M |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | Campo receptivo de 2,5 s (40.000 muestras a 16 kHz); para streaming se recomienda mantener 40.000 muestras de contexto para que los fotogramas en linea coincidan con los offline |
-| Tipos de cuantizacion | float32 (`wakehubert.onnx`) e int8 estatico (`wakehubert_int8.onnx`, con el front end en float; coincidencia media con float de coseno 0,998) |
-| Idiomas soportados | no disponible como lista oficial. Entrenado con LibriSpeech (ingles), Multilingual LibriSpeech (siete idiomas) y una muestra equilibrada por idioma de Multilingual Spoken Words (41 idiomas); evaluacion publicada solo en ingles |
+| Arquitectura | CNN causal: front-end log-mel (64 bins) + convolución con stride + 8 bloques de convolución dilatada depthwise-separable (256 canales) + proyección 1x1 a 128 |
+| Parametros totales | 824.288 (0,82M) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | campo receptivo de 2,5 s (40.000 muestras a 16 kHz); salida de 50 fotogramas/s |
+| Tipos de cuantizacion | float32 e int8 estático (front-end en float en la versión int8) |
+| Idiomas soportados | en, de, nl, fr, es, it, pt, pl (multilingüe) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | ONNX |
+| Formato de pesos | ONNX (wakehubert.onnx, wakehubert_int8.onnx, wakehubert_stream.onnx, wakehubert_int8_stream.onnx); safetensors en el repo |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es puramente convolucional y causal: un front end log-mel fijo de 64 bins, una convolucion con stride que reduce la cadencia a 50 fotogramas por segundo, ocho bloques de convolucion dilatada depthwise-separable con 256 canales y una proyeccion 1x1 que devuelve 128 características por fotograma. Solo emplea convolucion, batch norm y ReLU, una eleccion deliberada para que el grafo cuantice bien a int8. El grafo ONNX recibe `waveform` de forma [batch, samples] en float32 a 16 kHz con rango -1..1 y devuelve `features` de forma [batch, samples // 320, 128]. El modelo es estrictamente causal: el fotograma *t* depende únicamente del audio anterior a la muestra 320·(t+1).
+El modelo es un estudiante convolucional causal compuesto por un front-end log-mel fijo de 64 bins, una convolución con stride que reduce a 50 fotogramas por segundo, ocho bloques de convolución dilatada depthwise-separable de 256 canales y una proyección 1×1 a 128 dimensiones. Solo emplea convolución, batch norm y ReLU, una elección deliberada para que la cuantización int8 sea estable. La causalidad es estricta: el fotograma *t* depende únicamente del audio anterior a la muestra 320·(t+1).
 
-El entrenamiento consistió en 30.000 pasos de destilación desde `facebook/hubert-base-ls960`, prediciendo las capas 4, 8 y 12 estandarizadas del profesor con pérdida L1 más coseno log-sigmoid (el esquema de DistilHuBERT). El profesor escuchaba voz limpia mientras el alumno recibía la misma señal con ruido de AudioSet y MUSAN, reverberación de sala y entre uno y tres hablantes de fondo que nunca superaban el volumen de la voz principal; una cuarta parte de los elementos de entrenamiento eran sonidos no vocales idénticos para ambos. Además se enmascararon tramos del log-mel de entrada del alumno (probabilidad 0,065 por fotograma, tramos de 10 fotogramas), que según el autor fue la mayor ganancia individual en robustez. Los datos de voz fueron LibriSpeech (960 h), Multilingual LibriSpeech (siete idiomas) y una muestra equilibrada por idioma de Multilingual Spoken Words (41 idiomas), cortados en 600.000 fragmentos de dos segundos.
-
-Como el alumno debe predecir cada fotograma de HuBERT cinco fotogramas (100 ms) después, sus características describen el habla con un retardo de unos 100 ms, de modo que un detector construido sobre ellas reacciona ese tiempo después de que termine la palabra.
+El entrenamiento consistió en 30.000 pasos de destilación de conocimiento desde HuBERT-base, prediciendo las capas 4, 8 y 12 estandarizadas con pérdida L1 más coseno log-sigmoidal (el esquema de DistilHuBERT). El profesor escuchaba voz limpia mientras el estudiante recibía ruido de AudioSet y MUSAN, reverberación y de uno a tres hablantes de fondo nunca más fuertes que la voz; una cuarta parte de los ítems eran sonidos no vocales idénticos para ambos. Se aplicó enmascaramiento de tramos del log-mel de entrada (probabilidad 0,065 por fotograma, tramos de 10 fotogramas), que según el autor fue la mayor ganancia individual en robustez. Los datos de entrenamiento fueron LibriSpeech (960 h), Multilingual LibriSpeech (siete idiomas) y una muestra equilibrada por idioma de Multilingual Spoken Words (41 idiomas), cortados en 600.000 fragmentos de dos segundos. El estudiante se entrenó para reproducir cada fotograma de HuBERT cinco fotogramas (100 ms) más tarde, por lo que las características describen el habla con un retardo de unos 100 ms.
 
 ## Capacidades
 
-- Extraccion de caracteristicas de voz en streaming: convierte audio a 16 kHz en vectores de 128 dimensiones a 50 fps, de forma estrictamente causal.
-- Front end log-mel integrado: no requiere calcular el espectrograma por separado, el grafo ONNX lo incluye.
-- Inferencia en tiempo real con latencia acotada: retardo de aproximadamente 100 ms respecto al habla original.
-- Base para deteccion de wake word entrenada con datos sinteticos: permite entrenar un clasificador con clips TTS de una palabra escrita como texto.
-- Robustez a ruido y solapamiento: entrenado explicitamente con ruido de AudioSet y MUSAN, reverberacion y varios hablantes de fondo.
-- Ejecucion en hardware modesto: 0,64 M de parametros, disponible en ONNX float32 e int8 estatico.
-- No soporta tool calling, function calling, agentes, generacion de texto, codigo, matematicas, vision ni audio generativo: no es un modelo de lenguaje.
-- Capacidades multilingues: no evaluadas; el entrenamiento incluye material de 41 idiomas, pero la unica evaluacion publicada es sobre una wake word en ingles.
+- Extracción de características de voz en streaming a 50 fotogramas/s con 128 dimensiones por fotograma, a partir de audio float32 a 16 kHz en el rango -1..1.
+- Diseño causal estricto, apto para inferencia en tiempo real con estado persistente entre bloques.
+- Grafos de streaming (float e int8) que calculan solo los fotogramas nuevos y conservan el resto como estado, evitando recalcular la ventana completa en cada bloque.
+- Base para clasificadores de wake-word entrenados con voz sintética: el detector se entrena sobre las características, no sobre audio crudo.
+- Capacidades multilingües derivadas de los datos de entrenamiento (en, de, nl, fr, es, it, pt, pl y cobertura más amplia vía Multilingual Spoken Words).
+- Cuantización int8 con alta fidelidad respecto a float (coseno medio de 0,998).
+- No incluye cabecera de clasificación: es un extractor de características (pipeline feature-extraction), no un detector listo para usar.
+- No soporta tool calling, agentes, visión ni audio generativo.
 
 ## Casos de uso
 
-- Deteccion de palabra de activacion en dispositivos de escucha continua: un clasificador ligero (por ejemplo, una GRU) entrenado sobre las caracteristicas de WakeHuBERT permite activar el asistente con un consumo minimo, ya que el extractor solo necesita 2,5 s de contexto y puede ejecutarse en CPU.
-- Asistentes de voz en el borde (edge computing): al caber en el grafo ONNX y en version int8, el pipeline de activacion puede correr localmente en telefonos, altavoces inteligentes o gateways domesticos sin enviar audio a la nube.
-- Dispositivos con bateria limitada: el coste computacional de un extractor de 0,64 M de parametros a 50 fps es compatible con microcontroladores de gama alta y SoCs de bajo consumo, lo que permite escucha permanente durante horas.
-- Aplicaciones de privacidad: al no requerir conectividad para la fase de deteccion, el audio solo se transmite tras la activacion de la palabra clave, reduciendo la exposicion de datos personales.
-- Creacion rapida de wake words personalizadas: gracias al entrenamiento con voz sintetica, un desarrollador puede definir una palabra nueva como texto, generar clips TTS con aumentos de ruido y entrenar un detector sobre este extractor sin grabar corpus reales.
-- Activacion en productos multilingues en fase de prototipo: el extractor se entrenó con habla de 41 idiomas, por lo que sirve como punto de partida para explorar wake words en idiomas distintos del ingles, aunque no exista evaluacion publicada.
-- Preprocesado en pipelines de speech: al ser un `feature-extraction` causal, puede encadenarse delante de clasificadores de emocion, comandos de voz o sistemas de diarizacion que necesiten representaciones compactas de 128 dimensiones.
-- Control por voz en entornos ruidosos moderados: el entrenamiento con ruido y solapamiento permite mantener recall utilizable en condiciones de babble a 10 dB, adecuado para oficinas o vehiculos.
+- Detección de wake-word en asistentes de voz locales: el extractor alimenta un GRU pequeño entrenado con clips TTS de la palabra elegida, lo que permite crear un detector personalizado sin grabar audio del usuario; el recall del 95% en silencio a 0,5 falsas activaciones por hora lo hace viable en entornos domésticos.
+- Ejecución en dispositivos embebidos y Raspberry Pi: con menos de 1M de parámetros y ~1 ms por bloque de 1.280 muestras en int8 sobre un núcleo de CPU, cabe en hardware sin GPU y deja margen para el resto del pipeline de ASR.
+- Asistentes de voz con activación por palabra en múltiples idiomas: al haberse entrenado con datos de ocho idiomas, el mismo extractor sirve para wake-words en castellano, alemán, neerlandés, francés, italiano, portugués y polaco sin reentrenar el extractor.
+- Integración en pipelines de OpenVoiceOS/wakeforge: `ww_trainer-train --featurizer wakehubert` descarga y usa el modelo directamente para entrenar detectores dentro del ecosistema.
+- Procesamiento de audio en streaming de bajo consumo: los grafos `*_stream.onnx` mantienen estado entre bloques, adecuados para micrófonos continuos donde recalcular la ventana de 1,5 s cada bloque costaría ~2,7 ms frente a ~1 ms.
+- Filtrado previo en sistemas de transcripción: usar el detector como etapa de activación antes de lanzar un ASR más pesado, reduciendo el consumo energético en dispositivos alimentados por batería.
+- Investigación en destilación de modelos de voz: sirve como referencia reproducible de destilación de HuBERT-base a un estudiante convolucional causal con cuantización int8.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos publicados son los del autor de la model card. Se trata de ejecuciones unicas: un clasificador GRU entrenado solo con 900 clips sinteticos de "alexa" (voces TTS clonadas con conversion de voz, con ruido, babble, reverberacion, velocidad y ganancia) evaluado sobre los hablantes reales del benchmark de wake word de Picovoice (315 grabaciones). El umbral se fijo en audio de calibracion distinto (LibriSpeech dev-clean y babble derivado) para 0,5 activaciones falsas por hora, y despues se midieron las activaciones falsas sobre 6,5 h de streams reservados.
+Resultados declarados por el autor (no verificados), con un clasificador GRU entrenado solo con 900 clips sintéticos de «alexa» y evaluado sobre 315 grabaciones de hablantes reales del benchmark de Picovoice; umbral calibrado para 0,5 falsas activaciones por hora:
 
-| Extractor | Recall en silencio (intervalo del 95%) | Recall con babble a 10 / 5 / 0 dB | Activaciones falsas por hora medidas |
+| Extractor | Recall en silencio (IC 95%) | Recall en babble 10 / 5 / 0 dB | Falsas activaciones/hora medidas |
 |---|---|---|---|
-| WakeHuBERT tiny (0,64 M) | 95% (92-97) | 94 / 85 / 56% | 0,31 |
-| Misma arquitectura sin enmascaramiento | 92% (89-95) | 90 / 80 / 39% | 0,46 |
+| WakeHuBERT tiny (0,64M) | 95% (92–97) | 94 / 85 / 56% | 0,31 |
+| Misma arquitectura sin enmascaramiento | 92% (89–95) | 90 / 80 / 39% | no disponible en la información |
 
-Los intervalos de recall provienen de remuestrear las 315 grabaciones; segun el autor, diferencias de unos pocos puntos entre extractores estan dentro del ruido, y dos tipos de clasificador sobre el mismo extractor pueden diferir en varios puntos. No hay resultados de MMLU, HumanEval, GSM8K ni de ninguna otra tarea tipo LLM porque el modelo no las aborda.
+No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otros) en la información disponible, al no ser tareas aplicables a este modelo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 2,6 MB para los pesos en float32 (0,64 M de parametros a 4 bytes) y alrededor de 0,65 MB en int8, mas el estado de las activaciones. Cifras estimadas a partir del numero de parametros, no publicadas por el autor.
-- GPU recomendadas: cualquier GPU sirve; el modelo no requiere acelerador. Una RTX 4090, A100 o H100 estan enormemente sobredimensionadas y no aportan ventaja practica frente a CPU.
-- Cabe en GPU de consumo: si, en cualquier GPU de consumo e incluso en graficos integrados. El caso de uso natural es CPU.
-- CPU y embebidos: es el escenario previsto. El tamaño del repositorio figura como 0,0 GB, coherente con un artefacto de menos de unos pocos megabytes. Resulta apto para microcontroladores de gama alta y SoCs ARM.
-- Opciones de despliegue: ONNX Runtime (el ejemplo de la model card usa `onnxruntime.InferenceSession`), o cualquier runtime compatible con ONNX (ONNX Runtime Web, ONNX Runtime Mobile, TensorRT). No aplica vLLM, llama.cpp, Ollama ni TGI, al no ser un modelo de lenguaje.
-- Latencia y throughput: la model card indica un retardo de unos 100 ms y una cadencia de 50 fotogramas por segundo con 128 dimensiones por fotograma; no se publican cifras de throughput ni de latencia por lote.
-- Memoria de contexto en streaming: hay que retener 40.000 muestras (2,5 s) de audio para que los fotogramas calculados en linea coincidan con los obtenidos en modo offline.
-- Almacenamiento: el modelo completo, con las variantes float32 e int8, cabe holgadamente en unos pocos megabytes.
+- VRAM estimada: no aplica; el modelo está pensado para CPU. El repo ocupa 0,0 GB y los pesos rondan los pocos MB.
+- GPU recomendadas: no necesarias; cualquier GPU sirve vía ONNX Runtime, pero el diseño apunta a inferencia en CPU.
+- Cabe en cualquier GPU consumer e incluso en dispositivos sin GPU (Raspberry Pi, móviles, SBC).
+- Despliegue: ONNX Runtime (probado en el ejemplo de la model card); integración vía wakeforge/OpenVoiceOS. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no son aplicables a este tipo de modelo.
+- Latencia: ~1 ms por bloque de 1.280 muestras en int8 sobre un núcleo de CPU, frente a ~2,7 ms para recalcular una ventana de 1,5 s. Fidelidad del streaming: 7,6e-6 respecto al grafo completo en float; en int8, desviación máxima de 0,19 en ~113 de 3.000 fotogramas en 60 s de habla con ruido, sin acumulación en streams de 10 minutos.
+- Retardo funcional: ~100 ms por el objetivo de predicción desplazado cinco fotogramas.
 
 ## Comparativa con modelos similares
 
-No hay una comparativa publicada con alternativas de la misma categoria. Los unicos modelos con los que se puede contrastar son el profesor y la ablacion interna del propio autor:
-
-| Modelo | Parametros | Tipo de caracteristicas | Causalidad | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto / diseño | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WakeHuBERT tiny | 0,64 M | 128 dimensiones a 50 fps | Estrictamente causal, campo receptivo 2,5 s | Apache 2.0 | ONNX en Hugging Face |
-| Misma arquitectura sin enmascaramiento | no disponible | 128 dimensiones a 50 fps | Estrictamente causal | no disponible | Solo como referencia en la model card |
-| `facebook/hubert-base-ls960` (profesor) | no disponible en la informacion proporcionada | Capas 4, 8 y 12 usadas como objetivo de destilacion | No causal, pensado para representaciones offline | Apache 2.0 | Hugging Face y Transformers |
+| WakeHuBERT tiny | 0,82M | Causal, campo receptivo 2,5 s | Extractor para wake-word | Apache 2.0 | Hugging Face (ONNX) |
+| facebook/hubert-base-ls960 | ~95M | No causal, contexto completo | Extracción de características | No disponible en la información | Hugging Face |
+| Misma arquitectura sin enmascaramiento (ablación del autor) | 0,64M | Causal | Extractor para wake-word | No disponible | Solo como resultado del paper/model card |
 
-Frente al profesor, la ventaja del alumno es el tamaño (0,64 M de parametros) y la causalidad, que habilita streaming; la contrapartida es una perdida de informacion que el propio autor senala al advertir que la concordancia con el profesor es un mal predictor de la calidad de deteccion. No se dispone de comparaciones con otros extractores de wake word (por ejemplo, soluciones comerciales tipo Picovoice Porcupine) en la informacion proporcionada.
+No se dispone de datos de otros detectores de wake-word comparables (por ejemplo, Porcupine o modelos de Picovoice) en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Evaluacion muy acotada: un unico wake word en ingles, un unico benchmark publico (Picovoice, 315 grabaciones) y ejecuciones unicas. No hay resultados medidos para otras palabras, idiomas ni dispositivos.
-- El recall cae de forma acusada con ruido: del 95% en silencio y el 94% a 10 dB de babble al 56% a 0 dB. En escenarios muy ruidosos el detector puede resultar poco fiable.
-- Tasa de falsas activaciones: 0,31 por hora medidas en 6,5 h de streams reservados; es un valor util pero medido en condiciones controladas y con un umbral calibrado sobre audio distinto.
-- La concordancia con el profesor no sirve como metrica de calidad: el autor indica explicitamente que el extractor debe juzgarse mediante un detector entrenado sobre el.
-- No es un clasificador: por si solo no detecta nada. Requiere entrenar y mantener un clasificador externo, con el coste de ingenieria y datos que eso implica.
-- Latencia inherente de 100 ms: el modelo fue entrenado para predecir cada fotograma de HuBERT cinco fotogramas despues, por lo que cualquier detector reacciona como minimo ese tiempo despues de que termine la palabra.
-- Riesgo de alucinacion: no aplica en el sentido de los modelos de lenguaje, pero si existe riesgo de activaciones espurias ante sonidos no vocales, habla de fondo o musica, atenuado parcialmente por el entrenamiento con ruido.
-- Idiomas: aunque el entrenamiento incluye material de 41 idiomas, no hay ninguna evaluacion multilingue publicada; usarlo en un idioma distinto del ingles es una apuesta no medida.
-- Sesgos: no se documentan analisis de sesgo por acento, genero, edad o calidad de microfono. Dado que el detector de referencia se entreno con 900 clips sinteticos de voces clonadas, la generalizacion a hablantes reales diversos no esta caracterizada mas alla del benchmark citado.
-- Licencia: Apache 2.0 permite uso comercial con atribucion y sin garantias, la misma licencia que el profesor HuBERT-base. Los corpus de entrenamiento son CC BY 4.0 (LibriSpeech, Multilingual LibriSpeech, Multilingual Spoken Words), aunque la model card menciona tambien ruido derivado de AudioSet y MUSAN, cuyas condiciones de uso conviene revisar antes de un despliegue comercial.
-- Adopcion nula por el momento: 0 descargas y 0 likes en Hugging Face, con tamanos de repositorio que figuran como 0,0 GB. No existe validacion independiente de los resultados.
-- Fecha de creacion posterior a la fecha de consulta habitual (2026-09-29): conviene verificar la vigencia y posibles actualizaciones del repositorio.
+- No es un detector de wake-word autónomo: requiere entrenar una cabecera clasificadora sobre sus características; la palabra de activación se define en ese entrenamiento.
+- Los resultados declarados son ejecuciones únicas y no verificados (`verified: false`); deben tratarse como indicativos.
+- El recall cae al 56% en babble a 0 dB, por lo que en entornos muy ruidosos la detección se degrada notablemente.
+- Retardo inherente de ~100 ms más el retardo del clasificador: no apto para activación con latencia ultrabaja por debajo de ese margen.
+- En los grafos de streaming, `samples` debe ser múltiplo entero de 320; el grafo no lo comprueba y cualquier otra longitud produce características erróneas sin error.
+- Para streaming correcto hay que mantener 40.000 muestras (2,5 s) de contexto; de lo contrario los fotogramas en streaming no coinciden con los offline.
+- En int8 puede aparecer una desviación localizada (hasta 0,19, dos pasos de cuantización) en tramos de habla con ruido, aunque no se acumula.
+- Riesgo de falsas activaciones y de sesgo hacia las condiciones acústicas de los datos de entrenamiento (mayoritariamente inglés y MLS); el rendimiento en idiomas con menor representación no está medido.
+- Licencia Apache 2.0: permite uso comercial, pero no se ofrece garantía alguna sobre el rendimiento en producción.
+- No apto para tareas de reconocimiento de voz completo, razonamiento, código ni generación de texto.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/TigreGotico/wakehubert-tiny
-- Proyecto wakeforge (featurizer `wakehubert`): https://github.com/TigreGotico/wakeforge
-- Profesor usado en la destilacion: https://huggingface.co/facebook/hubert-base-ls960
-- Referencia metodologica de destilacion por capas (DistilHuBERT): https://arxiv.org/abs/2110.01900
-- Benchmark de wake word de Picovoice (citado como fuente de evaluacion): https://github.com/Picovoice/wakeword-benchmark
-- No se han encontrado en la busqueda web enlaces adicionales relevantes; los resultados devueltos no guardaban relacion con el modelo.
+- Repositorio wakeforge: https://github.com/TigreGotico/wakeforge
+- Modelo base: https://huggingface.co/facebook/hubert-base-ls960
+- Benchmark de wake-word de Picovoice: https://github.com/Picovoice/wake-word-benchmark
+- Dataset LibriSpeech: https://huggingface.co/datasets/openslr/librispeech_asr
+- Dataset Multilingual LibriSpeech: https://huggingface.co/datasets/facebook/multilingual_librispeech
+- Dataset Multilingual Spoken Words: https://huggingface.co/datasets/MLCommons/ml_spoken_words

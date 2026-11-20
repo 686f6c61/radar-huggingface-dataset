@@ -2,95 +2,111 @@
 
 ## Resumen
 
-Qwen3.5-0.8B-AX8860-llama.cpp es un paquete de despliegue publicado por AXERA-TECH que permite ejecutar el modelo Qwen3.5-0.8B sobre la NPU de cuatro núcleos del SoC Axera AX8860 mediante una adaptación de llama.cpp con backend ggml-axera. No se trata de un modelo nuevo, sino de una distribución de pesos en GGUF (Q8_0) junto con kernels precompilados para la NPU, un encoder visual en BF16 y los binarios de placa necesarios para la inferencia. El modelo base es un transformer denso de 772.845.888 parámetros con capacidades multimodales (texto e imagen).
+Qwen3.5-0.8B-AX8860-llama.cpp es una distribución del modelo Qwen3.5-0.8B (desarrollado por Alibaba Qwen) empaquetada por AXERA-TECH para su ejecución sobre la NPU del SoC Axera AX8860 mediante una bifurcación de llama.cpp con soporte de kernels ggml-axera. No se trata de un modelo nuevo, sino de una conversión y un runtime: los pesos originales se cuantizan a Q8_0 en formato GGUF y se acompaña de un codificador visual independiente (mmproj en BF16), lo que habilita entrada de texto e imagen. El repositorio incluye además los binarios estáticos para el dispositivo, los kernels de NPU y scripts de ejecución, benchmark y servidor compatible con la API de OpenAI.
 
-La relevancia de esta ficha es práctica: demuestra la viabilidad de ejecutar un modelo de menos de mil millones de parámetros con entrada de imagen en hardware de borde (edge) con NPU dedicada, alcanzando 21.600 tokens/s en prefill de 4k y 125,6 tokens/s en decode, con un consumo de memoria NPU de 1,26 GB. Para desarrolladores que trabajan en sistemas embebidos, domótica, visión industrial o dispositivos sin GPU, este tipo de empaquetado reduce drásticamente la barrera de integración.
+El modelo base es un transformer denso de aproximadamente 772,8 millones de parámetros (según los pesos en safetensors del modelo original), con una ventana de contexto que esta distribución eleva hasta 16.384 tokens. Su relevancia es práctica: demuestra la viabilidad de ejecutar un modelo multimodal conversacional de sub-1000 millones de parámetros en hardware de borde (edge AI) con un rendimiento medido de 144,6 tokens/s en decodificación y 11.665 tokens/s en prefill de 4k, cifras que lo sitúan muy por encima de lo habitual en inferencia en CPU para ese tamaño.
 
-El contexto máximo soportado es de 16.384 tokens, la licencia no está declarada en la información disponible y el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica que es una publicación muy reciente (creada el 4 de noviembre de 2026).
+La ficha describe tanto el modelo subyacente como el paquete de despliegue, ya que gran parte del valor diferencial reside en el runtime y en las métricas reportadas por el autor. La información pública disponible sobre el modelo base Qwen3.5-0.8B es limitada en este repositorio; los detalles arquitectónicos y de entrenamiento no se documentan en la model card.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso multimodal (texto + visión), ejecutado con llama.cpp y backend ggml-axera sobre NPU |
-| Parametros totales | 772.845.888 |
+| Arquitectura | Transformer denso (modelo base Qwen3.5-0.8B); detalles internos no disponibles |
+| Parametros totales | 772.845.888 (~0,77 B) |
 | Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 16.384 tokens |
-| Tipos de cuantizacion | GGUF Q8_0 en disco; conversión en carga a MXFP8 (E4M3 con escala E8M0 cada 32 elementos); embedding y cabeza de salida en Q8_0; encoder visual en BF16 |
-| Idiomas soportados | No disponible (la model card incluye ejemplos en inglés y chino, pero no declara lista oficial) |
+| Longitud de contexto | Hasta 16.384 tokens |
+| Tipos de cuantizacion | Q8_0 (pesos, 0,83 GB); codificador visual en BF16 (0,21 GB) |
+| Idiomas soportados | No disponible |
 | Licencia | No disponible |
-| Formato de pesos | GGUF (`qwen3.5-0.8b-q8_0.gguf`, `mmproj-qwen3.5-0.8b-bf16.gguf`) + kernels NPU precompilados |
+| Formato de pesos | GGUF (llama.cpp); safetensors en el modelo base |
+| Tamano del repositorio | 1,6 GB |
+| Hardware objetivo | NPU Axera AX8860 (4 nucleos), SDK V0.5.1 o superior |
+| Runtime | llama.cpp (fork ZHEQIUSHUI/llama.cpp, rama `axera-dev`, commit `0104880be`) |
+| Servidor | API compatible con OpenAI (`run.sh -s 8080`) |
+| Cache de prompt | 4 GB de memoria host por defecto; configurable a disco via `CACHE_DIR` |
+| Paralelismo | `-np 1` (una sola peticion simultanea) |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no describe la arquitectura interna del modelo base Qwen3.5-0.8B ni su proceso de entrenamiento (número de tokens, composición del dataset, uso de RLHF/DPO). Lo que sí se detalla es la arquitectura de despliegue: el modelo se ejecuta sobre la NPU de cuatro núcleos del AX8860 con una organización de kernels particular. El prefill de todo el modelo se implementa como un único kernel, mientras que el decode se reparte en un kernel por cada grupo de 12 capas (la documentación menciona también grupos de 16 capas en la descripción de `kernels/`, lo que supone una inconsistencia menor en la model card). El encoder visual (ViT) se ejecuta íntegro en un solo kernel, con un coste de 80 ms más 20 ms de preprocesado en CPU.
+El modelo subyacente es Qwen3.5-0.8B, un transformer denso de ~0,77 mil millones de parámetros. La model card de esta distribución no documenta la composición del dataset de entrenamiento, el número de tokens procesados ni si hubo etapas de RLHF o DPO; esa información correspondería a la model card oficial de Qwen, que no se incluye en el material disponible. Sí se confirma que el modelo es multimodal: incorpora un codificador visual separado (`mmproj-qwen3.5-0.8b-bf16.gguf`, 0,21 GB en BF16) que procesa imágenes y las proyecta al espacio del modelo de lenguaje.
 
-Una innovación técnica destacable es la gestión de pesos: los kernels no contienen pesos; estos se cargan únicamente desde los GGUF y se convierten a MXFP8 en el momento de la carga (6,9 s), manteniendo una sola copia de los pesos en memoria NPU compartida entre prefill y decode. Esto reduce el uso de memoria a 1,26 GB en carga y en pico. No hay decodificación especulativa, ya que según el autor este tamaño de modelo no dispone de cabeza MTP. La imagen se escala a aproximadamente 1024 x 768, con hasta 768 tokens visuales (3072 parches de 16 x 16).
+La innovación técnica de esta publicación no está en el modelo sino en el stack de inferencia: una bifurcación de llama.cpp con kernels ggml-axera que descargan la computación a la NPU del AX8860. El paquete incluye binarios estáticos para el dispositivo, un directorio `kernels/` con el manifiesto correspondiente y scripts de conveniencia. El servidor usa por defecto los parámetros de muestreo recomendados por la model card, desactiva el modo de razonamiento (`--reasoning off`) y acepta mensajes de sistema en mitad de la conversación, lo que permite su uso con clientes de agentes como Codex. La decodificación de texto y la descripción de imágenes emplean decodificación voraz (greedy).
 
 ## Capacidades
 
-- Generación de texto conversacional y completado de texto.
-- Entrada multimodal de imagen: descripción de imágenes, reconocimiento de vehículos, texto en escena y personas (según los ejemplos de la model card).
-- Conversación multi-turno en terminal mediante el flag `-c`.
-- Servidor compatible con la API de OpenAI (`/v1/chat/completions`) para integración en aplicaciones existentes.
-- Procesamiento de prompts largos gracias al prefill de alto rendimiento (hasta 16.384 tokens de contexto).
-- Soporte de inglés y chino en los ejemplos documentados; no se declara una lista oficial de idiomas.
-- No se documenta soporte de tool calling, function calling, agentes multi-paso ni modo thinking en la información disponible.
+- Generación de texto conversacional en múltiples turnos.
+- Comprensión de imágenes: descripción de escenas, vehículos, texto visible y personas (validado por el autor).
+- Entrada multimodal combinada de texto e imagen en una misma petición.
+- Servidor HTTP compatible con la API de OpenAI, lo que facilita la integración con clientes existentes.
+- Soporte de mensajes de sistema en mitad de la conversación, útil para clientes de agentes.
+- Modo de razonamiento disponible pero desactivado por defecto en el servidor.
+- Plantilla de chat incluida (`chat_template.jinja`) para el formateo correcto de turnos.
+- Caché de prompt persistente opcional en disco para reutilización entre reinicios.
+- No se documentan capacidades de tool calling, function calling ni agentes multi-paso más allá de la compatibilidad con clientes tipo Codex.
 
 ## Casos de uso
 
-- Visión artificial en dispositivos de borde: el modelo puede describir imágenes capturadas por cámaras locales en un SoC AX8860 sin conexión a la nube, con 80 ms de codificación visual y 125,6 tokens/s de decode, adecuado para inspección o accesibilidad en tiempo casi real.
-- Asistentes conversacionales embebidos: con contexto de 16.384 tokens y servidor compatible con OpenAI, se puede desplegar un chatbot local multi-turno en un dispositivo con NPU, sin depender de APIs externas.
-- Procesamiento de documentos con OCR ligero: la capacidad de leer texto en imágenes (documentada en los ejemplos) permite extraer y resumir información de capturas o fotos en entornos sin GPU.
-- Automatización industrial y domótica: al ejecutarse íntegramente en la NPU del AX8860 con 1,26 GB de memoria, encaja en controladores empotrados que requieren inferencia local con latencia baja y sin cloud.
-- Prototipado rápido de aplicaciones multimodales: el script `run.sh` y el servidor OpenAI permiten validar flujos de texto e imagen en pocos minutos sobre hardware de bajo consumo.
-- Investigación en eficiencia de inferencia: la conversión Q8_0 a MXFP8 en carga y la organización de kernels por grupos de capas sirven como referencia para estudiar cuantización y planificación de kernels en NPU.
-- Sustitución de modelos mayores en tareas acotadas: para clasificación, resumen corto o respuesta a preguntas simples sobre imágenes, un modelo de 0,8B con 125 tokens/s puede ser suficiente y mucho más económico que alternativas en GPU.
+- Asistente conversacional en dispositivo de borde: el modelo corre íntegramente en la NPU del AX8860 sin depender de la nube, con 144,6 tokens/s de decodificación, adecuado para interfaces de voz o chat en tiempo real en hardware empotrado.
+- Descripción de imágenes en sistemas de vigilancia o inspección: el codificador visual BF16 permite generar descripciones de escenas (vehículos, matrículas, personas) localmente, sin enviar imágenes a servidores externos.
+- Servicio interno compatible con OpenAI: al exponer un endpoint estilo OpenAI en el puerto 8080, se puede conectar cualquier cliente o framework que ya hable ese protocolo, reduciendo el trabajo de integración.
+- Procesamiento de documentos con OCR contextual: combinando imagen y texto, el modelo puede leer y describir contenido textual presente en capturas o fotos, útil en digitalización de formularios en campo.
+- Automatización con clientes de agentes: la aceptación de mensajes de sistema intermedios y el modo servidor permiten integrarlo en flujos tipo Codex u orquestadores de agentes ligeros en entornos locales.
+- Prototipado rápido de aplicaciones multimodales en edge: el paquete incluye binarios, kernels y scripts de benchmark, lo que reduce el tiempo desde la descarga hasta la primera inferencia a minutos en un AX8860 con SDK V0.5.1+.
+- Evaluación de rendimiento en NPU: `bench.sh` y `llama-bench` (con `-b 4096 -ub 4096`) permiten reproducir las métricas del autor y comparar configuraciones de contexto (8k frente a 16k).
 
 ## Benchmarks y rendimiento
 
-Los datos disponibles son de rendimiento de inferencia en el AX8860 con SDK V0.5.1 y NPU de 4 núcleos, no de benchmarks académicos (MMLU, HumanEval, GSM8K).
+Métricas reportadas por el autor en el AX8860 (generación de 128 tokens):
 
-| Metrica | Resultado |
-|---|---|
-| Prefill de prompt de 4k (4000 tokens) | 21.600 tokens/s (11,9 ms por página de 256 tokens; +6,9 s de conversión inicial de pesos) |
-| Decode en contexto corto | 125,6 tokens/s |
-| Codificación de imagen | 80 ms (ViT completo en un kernel) + 20 ms de preprocesado en CPU |
-| Tiempo de carga | 8,3 s |
-| Memoria NPU (CMM) tras carga | 1,26 GB (pico 1,26 GB) |
-| Memoria de sistema (pico) | 0,47 GB |
-| Perplejidad en chino (conjunto interno, `-c 512`) | 40,76 en NPU frente a 40,13 en CPU (+1,6%) |
+| Escenario | Contexto (`-c`) | Tiempo de prompt | Decodificación (tokens/s) |
+|---|---|---|---|
+| Prompt de 5 tokens | 8192 | 0,04 s | — |
+| Prompt de 47 tokens | 8192 | 0,06 s | — |
+| Prompt de 3908 tokens | 8192 | 0,34 s | 132,8 |
+| Prompt de 5 tokens | 16384 | 0,04 s | — |
+| Prompt de 47 tokens | 16384 | 0,05 s | — |
+| Prompt de 3908 tokens | 16384 | 0,33 s | 132,7 |
+| Prompt de 3908 tokens, muestreo recomendado | 8192 | 0,34 s | 130,1 |
 
-No se han publicado resultados de benchmarks académicos (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
+Resumen agregado: decodificación de 144,6 tokens/s y prefill de 4k a 11.665 tokens/s. No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la información disponible.
 
 ## Requisitos de hardware
 
-- Hardware objetivo: SoC Axera AX8860 con NPU de 4 núcleos y SDK V0.5.0 o superior (verificable con `cat /proc/ax_proc/version`).
-- Memoria NPU: 1,26 GB tras la carga (pico 1,26 GB); memoria de sistema: 0,47 GB en pico.
-- Almacenamiento: repositorio de 1,1 GB (pesos Q8_0 de 0,83 GB + encoder visual BF16 de 0,21 GB + binarios y kernels).
-- GPU dedicada: no aplica; la inferencia se realiza en la NPU del SoC, no en GPU.
-- Cabe en GPU de consumo: no aplica para este empaquetado; el modelo base de 0,8B podría ejecutarse en CPU o GPU de consumo mediante llama.cpp estándar, pero esta distribución está pensada para la NPU AX8860.
-- Despliegue: binarios `bin/` con `libggml-axera.so`, script `run.sh`, servidor OpenAI-compatible con `-np 1`; variables `LD_LIBRARY_PATH=/opt/lib`, `GGML_AXERA_KERNEL_DIR`, `-ngl 99`, `-ub 4096 -b 4096` para prefill más rápido, `GGML_AXERA_PROF=1` para perfiles y `GGML_AXERA_TEMP_MAX` para control térmico.
-- Latencia y throughput: prefill 21.600 tokens/s, decode 125,6 tokens/s, carga 8,3 s, codificación de imagen 100 ms totales.
+- Hardware obligatorio: SoC Axera AX8860 con SDK V0.5.1 o superior; no hay soporte documentado para GPU convencional en este paquete.
+- NPU: el runtime ocupa los 4 núcleos de NPU de forma exclusiva.
+- Memoria: 4 GB de RAM host reservados por defecto para la caché de prompt; ampliable a disco configurando `CACHE_DIR`.
+- Almacenamiento: 1,6 GB para el repositorio completo (0,83 GB de pesos + 0,21 GB de codificador visual + binarios y kernels).
+- Despliegue: scripts `run.sh` (texto, imagen, chat, servidor) y `bench.sh`; binarios estáticos incluidos en `bin/`.
+- Throughput medido: 144,6 tokens/s de decodificación; 11.665 tokens/s de prefill con 4k de contexto.
+- No cabe en GPU de consumo convencional mediante este paquete, ya que los kernels están compilados para la NPU del AX8860. Para ejecución en CPU/GPU habría que recurrir al GGUF Q8_0 con llama.cpp estándar, opción no documentada por el autor.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones de licencia que permitan una comparación rigurosa con alternativas. Se indica "no disponible" para los modelos comparables. Como referencia cualitativa, esta distribución se diferencia de un despliegue estándar de llama.cpp en que está optimizada para la NPU AX8860 y no para CPU/GPU genéricas; cualquier comparación con otros modelos de 0,8B requeriría datos de calidad (MMLU, HumanEval) que no se han publicado aquí.
+| Modelo | Parámetros | Contexto | Multimodal | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Qwen3.5-0.8B-AX8860-llama.cpp | ~0,77 B | 16.384 | Sí (texto + imagen) | No disponible | GGUF + binarios AX8860 |
+| Modelo base Qwen/Qwen3.5-0.8B | ~0,77 B | No disponible | No disponible en esta ficha | No disponible | Hugging Face (safetensors) |
+| Alternativas de ~1 B en GGUF para edge | No disponible | No disponible | No disponible | No disponible | No disponible |
+
+No se dispone de datos de benchmarks de calidad ni de modelos comparables documentados en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa fiable con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- La NPU queda ocupada en exclusiva por los 4 núcleos; no se pueden ejecutar otros programas NPU en paralelo.
-- Solo admite una secuencia: el servidor debe lanzarse con `-np 1`, lo que limita el batching y el throughput agregado en producción.
-- Contexto máximo de 16.384 tokens; el autor indica que habrá versiones de contexto más largo, pero no están disponibles.
-- Sin decodificación especulativa (no hay cabeza MTP en este tamaño), lo que limita la latencia en decode frente a configuraciones con draft model.
-- Resultados no deterministas: ejecuciones repetidas del mismo input pueden diferir ligeramente por el orden de acumulación en la NPU; la calidad se mantiene, pero no es apta para aplicaciones que exijan reproducibilidad bit a bit.
-- Licencia no declarada: no se puede confirmar el uso comercial sin consultar al autor o al repositorio del modelo base.
-- Idiomas no declarados oficialmente; los ejemplos se limitan a inglés y chino.
-- Riesgo de alucinación inherente a un modelo de 0,8B, especialmente en razonamiento complejo, matemáticas o conocimiento factual extenso; no se han publicado evaluaciones de sesgo.
-- Dependencia de hardware y SDK concretos (AX8860, SDK V0.5.0+), lo que reduce la portabilidad frente a despliegues GGUF estándar.
+- Dependencia total del hardware Axera AX8860: el paquete no funciona en GPU o CPU convencionales sin recompilar o sustituir el runtime.
+- Licencia no especificada en el repositorio; antes de un uso comercial debe verificarse la licencia del modelo base Qwen3.5-0.8B y la de los binarios y kernels distribuidos.
+- Idiomas soportados no documentados; no se puede garantizar un rendimiento multilingüe sin validación propia.
+- El servidor opera con `-np 1`, es decir, una sola petición simultánea; no es adecuado para cargas concurrentes altas.
+- Se han observado fallos intermitentes `ret = -3` en peticiones consecutivas en algunos entornos; el autor recomienda reintentar, lo que introduce fragilidad en producción.
+- El modo de razonamiento está desactivado por defecto en el servidor; si se necesita, debe habilitarse explícitamente y validarse.
+- Decodificación voraz por defecto en completado y descripción de imágenes, lo que puede reducir la diversidad de las respuestas.
+- No se documentan sesgos, tasas de alucinación ni evaluaciones de seguridad; con ~0,77 B de parámetros es esperable una fiabilidad limitada en razonamiento complejo y matemáticas.
+- La caché de prompt en memoria host consume 4 GB por defecto, lo que puede ser restrictivo en despliegues con poca RAM.
+- El modelo base Qwen3.5-0.8B no está descrito en detalle en esta model card; los datos de entrenamiento y evaluación deben consultarse en la fuente original.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/AXERA-TECH/Qwen3.5-0.8B-AX8860-llama.cpp
-- llama.cpp adaptado (rama `axera-dev`): https://github.com/ZHEQIUSHUI/llama.cpp
-- Kernels NPU (rama `main`): https://github.com/ZHEQIUSHUI/ax-dsl-kernels
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
+- Fork de llama.cpp utilizado: https://github.com/ZHEQIUSHUI/llama.cpp (rama `axera-dev`, commit `0104880be`)
+- Proyecto llama.cpp: https://github.com/ggml-org/llama.cpp

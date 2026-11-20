@@ -2,91 +2,96 @@
 
 ## Resumen
 
-MiniCPM5-abliterated-2B-GGUF es la versión cuantizada en formato GGUF del modelo SonGT1/MiniCPM5-abliterated-2B, una variante "abliterated" (es decir, con las direcciones de rechazo eliminadas mediante la técnica de abliteration) del modelo MiniCPM5 de 2B parámetros. El autor de esta conversión es mradermacher, un conocido publicador de cuantizaciones GGUF en Hugging Face, que distribuye los pesos listos para su uso con llama.cpp y otros motores compatibles con GGUF.
+MiniCPM5-abliterated-2B-GGUF es la distribucion en formato GGUF del modelo SonGT1/MiniCPM5-abliterated-2B, una variante "abliterated" (sin mecanismos de rechazo) del MiniCPM5 de 2B parametros. El trabajo de cuantizacion lo firma mradermacher, un conocido publicador de cuantizaciones GGUF para llama.cpp. El modelo base procede de la familia MiniCPM5, orientada a modelos compactos de 2B parametros con soporte para chino e ingles.
 
-El modelo base pertenece a la familia MiniCPM5, desarrollada por OpenBMB (ModelBest y Universidad de Tsinghua), orientada a modelos compactos de alto rendimiento para despliegue en dispositivos con recursos limitados. La variante abliterated elimina la alineación de seguridad del modelo original, lo que lo hace adecuado para investigación sobre comportamiento de modelos sin censura, pero inadecuado para aplicaciones de producción que requieran filtros de seguridad.
+La relevancia de esta ficha reside en dos factores: por un lado, el formato GGUF permite ejecutar un modelo de 2,5 mil millones de parametros en hardware de consumo; por otro, la variante "abliterated" elimina los comportamientos de rechazo del modelo original, lo que la hace atractiva para investigacion sobre alineamiento, generacion creativa sin filtros y escenarios de evaluacion de robustez. La licencia Apache 2.0 facilita su uso comercial sin restricciones adicionales.
 
-Con 2.516.756.480 parámetros (~2,5B) y un tamaño de repositorio de 22,8 GB (que incluye todas las cuantizaciones), este modelo ofrece un equilibrio entre capacidad y eficiencia. Está disponible bajo licencia Apache 2.0, lo que permite uso comercial, y soporta los idiomas chino e inglés.
+El repositorio incluye 11 cuantizaciones estaticas que van desde Q2_K (1,1 GB) hasta f16 (5,1 GB), lo que permite ajustar el equilibrio entre calidad y requisitos de memoria. No se dispone de informacion sobre arquitectura interna, contexto nativo ni datos de entrenamiento en la documentacion proporcionada.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (MiniCPM5) |
-| Parámetros totales | 2.516.756.480 (~2,5B) |
-| Parámetros activos | no disponible (no es MoE) |
+| Arquitectura | no disponible (modelo base MiniCPM5, transformer presumiblemente) |
+| Parametros totales | 2.516.756.480 |
+| Parametros activos | no aplica (no es MoE segun la informacion disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
-| Idiomas soportados | chino (zh), inglés (en) |
-| Licencia | Apache 2.0 |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | zh (chino), en (ingles) |
+| Licencia | apache-2.0 |
 | Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base SonGT1/MiniCPM5-abliterated-2B deriva de la arquitectura MiniCPM5 de OpenBMB, un transformer decoder-only optimizado para eficiencia en dispositivos edge. La variante "abliterated" se ha obtenido mediante la técnica de abliteration, que identifica y elimina las direcciones en el espacio de activaciones responsables del comportamiento de rechazo, produciendo un modelo que responde a solicitudes que el modelo original rechazaría.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base SonGT1/MiniCPM5-abliterated-2B en la documentacion proporcionada. Por el nombre y el tamano (2,5B parametros) se trata presumiblemente de un transformer decoder-only de la familia MiniCPM5, pero no se confirma en la model card. Tampoco se detallan el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO.
 
-No se dispone de información detallada sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en el modelo base, ya que la model card proporcionada corresponde únicamente a la cuantización GGUF y no incluye esos detalles. La cuantización fue realizada por mradermacher con quantize_version 2 y output_tensor_quantised 1, usando conversión desde formato HF.
+La caracteristica tecnica diferencial es el proceso de "abliteration": una modificacion de los pesos orientada a eliminar la direccion de rechazo en el espacio de activaciones, de modo que el modelo deja de negarse a responder ante ciertas peticiones. Este proceso se aplico en el modelo base SonGT1 y mradermacher se limita a cuantizarlo a GGUF. No se especifica la metodologia exacta de abliteration empleada ni el impacto cuantitativo sobre capacidades originales.
 
 ## Capacidades
 
-- Generación de texto conversacional en chino e inglés.
-- Razonamiento general y respuesta a instrucciones sin las restricciones de seguridad del modelo original (comportamiento "uncensored").
-- Capacidad de mantener conversaciones multi-turno (pipeline conversacional).
-- Compatible con el ecosistema transformers y con motores de inferencia GGUF (llama.cpp, Ollama, etc.).
-- No se ha documentado soporte de tool calling, function calling, agentes, visión, audio ni modo thinking en la información disponible.
-- Capacidades multilingües limitadas a chino e inglés.
+- Generacion de texto conversacional en chino e ingles.
+- Respuestas sin mecanismos de rechazo (comportamiento "uncensored" derivado de la abliteration).
+- Conversacion multi-turno (tag `conversational` en el repositorio).
+- Compatibilidad con endpoints (tag `endpoints_compatible`).
+- No se documenta soporte de tool calling, function calling ni uso como agente.
+- No se documenta soporte de vision, audio ni modo "thinking".
+- Capacidades multilingues limitadas a zh y en segun los metadatos.
 
 ## Casos de uso
 
-- Investigación sobre alineación y seguridad: el modelo permite estudiar cómo la abliteration afecta al comportamiento del modelo en comparación con el original, útil para investigadores que analizan mecanismos de rechazo.
-- Generación creativa sin filtros: escritura de ficción, guiones o contenido narrativo que requiera explorar temas que los modelos alineados rechazarían, en entornos controlados de investigación.
-- Despliegue en dispositivos de bajos recursos: con cuantizaciones Q4_K_S (1,6 GB) o Q4_K_M (1,7 GB), el modelo cabe en GPUs consumer modestas o incluso en CPU, permitiendo prototipado rápido en portátiles.
-- Experimentación con GGUF y llama.cpp: sirve como banco de pruebas para pipelines de inferencia local, comparación de cuantizaciones y medición de latencia en hardware limitado.
-- Análisis de sesgos y comportamientos no deseados: al carecer de alineación, es útil para documentar qué tipo de contenido genera un modelo sin salvaguardas, como paso previo al diseño de filtros.
-- Traducción y conversación zh-en: para tareas de procesamiento de lenguaje natural entre chino e inglés en entornos de investigación donde no se requieran garantías de seguridad.
-- Fine-tuning posterior: al estar bajo Apache 2.0 y en formato GGUF/safetensors, puede servir como base para ajuste fino en tareas específicas de investigación.
+- Investigacion sobre alineamiento y seguridad: el modelo permite estudiar como la abliteration afecta a la tasa de rechazo y a la calidad de las respuestas, comparandolo con el MiniCPM5 original en experimentos controlados.
+- Generacion creativa sin filtros: escritura de ficcion, guiones o narrativa que requiera tematicas adultas o controvertidas, donde los modelos alineados suelen rechazar o suavizar el contenido.
+- Evaluacion de robustez de filtros: uso como modelo "adversario" para probar clasificadores de contenido y sistemas de moderacion en pipelines de produccion.
+- Despliegue en hardware de consumo: con cuantizaciones Q4_K_M (1,7 GB) el modelo cabe en GPUs de 4-6 GB de VRAM o incluso en CPU, lo que permite prototipado local sin infraestructura cloud.
+- Traduccion y asistencia bilingue zh-en: el modelo soporta ambos idiomas, por lo que puede emplearse en tareas de traduccion o atencion al cliente en ese par linguistico.
+- Experimentacion con llama.cpp y Ollama: al estar en GGUF, se integra directamente en herramientas de inferencia local para pruebas de latencia, throughput y calidad por cuantizacion.
+- Fine-tuning ligero sobre base abliterated: util para investigadores que quieran partir de un modelo sin rechazos y aplicar LoRA o DPO para re-alinear selectivamente ciertos comportamientos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 1,1 GB (Q2_K), 1,6-1,7 GB (Q4_K_S/Q4_K_M), 2,2 GB (Q6_K), 2,8 GB (Q8_0) y 5,1 GB (f16), sin contar el overhead del contexto y del motor de inferencia.
-- GPU recomendadas: cualquier GPU con al menos 2-3 GB de VRAM para cuantizaciones Q4; RTX 3060, RTX 4060, RTX 4090, A100 o H100 son más que suficientes. También puede ejecutarse en CPU.
-- Cabe en GPUs consumer: sí, en la práctica totalidad de GPUs consumer modernas, e incluso en sistemas integrados con suficiente RAM.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y cualquier motor compatible con GGUF. El modelo base en safetensors puede usarse con transformers.
-- Latencia y throughput estimados: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
+  - Q2_K: ~1,1 GB
+  - Q4_K_M: ~1,7 GB
+  - Q5_K_M: ~1,9 GB
+  - Q8_0: ~2,8 GB
+  - f16: ~5,1 GB
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para Q4_K_M (GTX 1650, RTX 3050, RTX 4060). Para Q8_0 o f16 se recomienda 6-8 GB (RTX 3060, RTX 4060 Ti, RTX 4070).
+- Cabe en GPU de consumo: si, practicamente en cualquier GPU moderna de 4 GB o mas con cuantizaciones Q4 o Q5.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, y servidores compatibles con GGUF. No se documenta soporte en vLLM ni TGI para este formato.
+- Latencia y throughput: no disponibles en la informacion proporcionada. Por el tamano (2,5B) y las cuantizaciones Q4, se espera inferencia en tiempo real en GPU de consumo, pero no hay cifras oficiales.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
-| MiniCPM5-abliterated-2B-GGUF (este) | ~2,5B | no disponible | Apache 2.0 | GGUF | Variante sin censura, zh/en |
-| MiniCPM5-2B (original) | ~2,5B | no disponible | no disponible | safetensors/GGUF | Modelo alineado de referencia |
-| Qwen2.5-1.5B-Instruct | ~1,5B | 32K (típico) | Apache 2.0 | safetensors/GGUF | Alternativa compacta multilingüe |
-| Llama-3.2-1B-Instruct | ~1,2B | 128K | Llama 3.2 Community | safetensors/GGUF | Alternativa compacta en inglés |
+| MiniCPM5-abliterated-2B-GGUF (este) | 2,52B | no disponible | zh, en | Apache 2.0 | GGUF |
+| MiniCPM5-abliterated-2B (base) | 2,52B | no disponible | zh, en | Apache 2.0 | safetensors |
+| MiniCPM5-abliterated-2B-i1-GGUF (mradermacher) | 2,52B | no disponible | zh, en | Apache 2.0 | GGUF (imatrix) |
+| MiniCPM5 original | no disponible | no disponible | zh, en | no disponible | no disponible |
 
-La comparación con Qwen2.5 y Llama-3.2 se ofrece como referencia de categoría (modelos compactos de 1-3B); los datos de contexto y rendimiento de esos modelos no se han verificado en la información proporcionada y pueden variar.
+No se dispone de datos de rendimiento comparativo (benchmarks) entre estas variantes en la informacion proporcionada. La diferencia principal entre las tres primeras es el metodo de cuantizacion: estatica (este repositorio) frente a imatrix (i1-GGUF), que suele ofrecer mejor calidad por bit en cuantizaciones bajas.
 
 ## Limitaciones y advertencias
 
-- El modelo ha sido sometido a abliteration, lo que elimina las salvaguardas de seguridad: puede generar contenido dañino, ofensivo o inexacto sin rechazo. No es apto para producción orientada al usuario final sin filtros adicionales.
-- Riesgo elevado de alucinación, especialmente en un modelo de solo 2,5B parámetros.
-- Soporte limitado a chino e inglés; no se garantiza un buen rendimiento en castellano u otros idiomas.
-- Longitud de contexto no documentada; puede ser insuficiente para tareas de contexto largo.
-- Aunque la licencia es Apache 2.0 y permite uso comercial, el uso comercial de un modelo sin alineación conlleva riesgos legales y reputacionales según la jurisdicción y el caso de uso.
-- Las cuantizaciones de baja precisión (Q2_K, Q3_K) degradan la calidad; se recomienda Q4_K_M o superior para uso real.
-- No hay información sobre sesgos específicos del modelo base ni sobre su proceso de entrenamiento.
-- El repositorio tiene 0 likes y 499 descargas en el momento de la consulta, lo que indica una adopción limitada y poca validación comunitaria.
+- Modelo "abliterated": se ha eliminado deliberadamente el comportamiento de rechazo, lo que implica que puede generar contenido inapropiado, ofensivo o peligroso sin filtros. No es adecuado para aplicaciones de cara al publico sin moderacion adicional.
+- Riesgo elevado de alucinacion: al tratarse de un modelo de 2,5B parametros, su capacidad de razonamiento y factualidad es limitada en comparacion con modelos de mayor tamano. No se recomienda para tareas que requieran alta precision factual sin verificacion.
+- Idiomas limitados: solo chino e ingles segun los metadatos. El rendimiento en castellano u otros idiomas no esta garantizado y probablemente sea deficiente.
+- Contexto desconocido: no se documenta la longitud de contexto nativa, lo que dificulta planificar casos de uso con ventanas largas.
+- La abliteration puede degradar capacidades generales del modelo original; no se aportan evaluaciones que cuantifiquen esta perdida.
+- Aunque la licencia es Apache 2.0 (permite uso comercial), el contenido generado puede infringir normativas locales o las politicas de las plataformas donde se despliegue. La responsabilidad recae en el integrador.
+- El repositorio tiene 0 likes y fue creado en octubre de 2026, lo que sugiere poca validacion por parte de la comunidad.
+- El tamano del repo (22,8 GB) se debe a que incluye todas las cuantizaciones; conviene descargar solo el archivo GGUF necesario.
 
 ## Enlaces
 
-- Hugging Face (este modelo): https://huggingface.co/mradermacher/MiniCPM5-abliterated-2B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/MiniCPM5-abliterated-2B-GGUF
 - Modelo base: https://huggingface.co/SonGT1/MiniCPM5-abliterated-2B
-- Cuantizaciones weighted/imatrix: https://huggingface.co/mradermacher/MiniCPM5-abliterated-2B-i1-GGUF
-- Página de resumen del autor: https://hf.tst.eu/model#MiniCPM5-abliterated-2B-GGUF
-- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
-- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Gráfico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/MiniCPM5-abliterated-2B-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#MiniCPM5-abliterated-2B-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- FAQ y peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests

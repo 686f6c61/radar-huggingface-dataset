@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/C2S-Pythia-410m-cell-type-prediction-GGUF",
+  "slug": "mradermacher-c2s-pythia-410m-cell-type-prediction-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/C2S-Pythia-410m-cell-type-prediction-GGUF",
+  "created_at": "2025-03-13T12:15:23.000Z",
+  "updated_at": "2026-11-19T23:40:10.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "biology",
+    "scRNAseq",
+    "en",
+    "base_model:vandijklab/C2S-Pythia-410m-cell-type-prediction",
+    "base_model:quantized:vandijklab/C2S-Pythia-410m-cell-type-prediction",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 163,
+  "trending_score": 0,
+  "parameters": 405334016,
+  "parameters_human": "405.3M",
+  "storage_bytes": 3758155520,
+  "storage_human": "3.8 GB",
+  "context_length": 4096,
+  "base_model": "vandijklab/C2S-Pythia-410m-cell-type-prediction",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

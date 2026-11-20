@@ -44,31 +44,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Visit the Palais Garnier - Opéra national de Paris",
-      "url": "https://www.operadeparis.fr/en/visits/palais-garnier",
-      "snippet": "Immersive experience For the first time, visitors to the Palais Garnier will have the opportunity to step behind the scenes of the Paris …"
-    },
-    {
-      "title": "Opéra national de Paris",
-      "url": "https://www.operadeparis.fr/",
-      "snippet": "Le Palais Garnier et l’Opéra Bastille. Programmation, Billetterie, Informations pratiques."
-    },
-    {
-      "title": "Online Shop · Official boutique of the Paris National Opera",
-      "url": "https://boutique.operadeparis.fr/en/",
-      "snippet": "Shop books, goods and gifts of the Opéra national de Paris, Garnier and Bastille"
-    },
-    {
-      "title": "Acheter les billets en revente - Opéra national de Paris",
-      "url": "https://bourse.operadeparis.fr/list/resaleProducts?lang=fr",
-      "snippet": "Oct 30, 2021 · Les Enfants du paradis Du mardi 9 mars 2027 au samedi 27 mars 2027 Palais Garnier Dès 140.00 € 1 billets Acheter"
-    },
-    {
-      "title": "Spectacles de l’Opéra de Paris en streaming sur Paris Opera Play",
-      "url": "https://play.operadeparis.fr/",
-      "snippet": "Regardez les plus grands opéras, ballets et concerts de l’Opéra de Paris en streaming sur POP. Profitez des spectacles en direct ou …"
-    }
-  ]
+  "sources": []
 }

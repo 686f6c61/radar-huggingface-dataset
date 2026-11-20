@@ -48,16 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ricursiveAI/Ripple-65B-Preview · Hugging Face",
-      "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
-      "snippet": "Machine learning model with 65B parameters. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "ricursiveAI/Ripple-65B-Preview-DFlash2 · Hugging Face",
-      "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview-DFlash2",
-      "snippet": "Ripple-65B Preview DFlash2 is a draft model for speculative decoding with Ripple-65B Preview or Ripple-65B Preview NVFP4. This repo contains the BF16 drafter. It requires the target model to generate text. The drafter proposes multiple tokens at once, conditioned on intermediate hidden states from ..."
-    }
-  ]
+  "sources": []
 }

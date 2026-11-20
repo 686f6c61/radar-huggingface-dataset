@@ -57,16 +57,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "AtomicChat/LFM3-1.7B-Uncensored-GGUF · Hugging Face",
-      "url": "https://huggingface.co/AtomicChat/LFM3-1.7B-Uncensored-GGUF",
-      "snippet": "Text Generation model with 2B parameters. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "mradermacher/Barcenas-LFM3-1.7B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/Barcenas-LFM3-1.7B-GGUF",
-      "snippet": "Machine learning model with 2B parameters. Download, explore files and run it on Hugging Face."
-    }
-  ]
+  "sources": []
 }

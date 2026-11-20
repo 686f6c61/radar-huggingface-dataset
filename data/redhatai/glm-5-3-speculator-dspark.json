@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 12,
-  "downloads_30d": 1192,
+  "downloads_30d": 1196,
   "trending_score": 0,
   "parameters": 1249565313,
   "parameters_human": "1.25B",
@@ -44,31 +44,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Microsoft Store - Download apps, games & more for your Windows PC",
-      "url": "https://apps.microsoft.com/home",
-      "snippet": "Explore the Microsoft Store for apps and games on Windows. Enjoy exclusive deals, new releases, and your favorite content all in …"
-    },
-    {
-      "title": "Microsoft Store — скачивайте приложения, игры и многое другое …",
-      "url": "https://apps.microsoft.com/home?hl=ru-RU&gl=RU",
-      "snippet": "Исследуйте Microsoft Store для поиска приложений и игр для Windows. Наслаждайтесь эксклюзивными предложениями, …"
-    },
-    {
-      "title": "Microsoft Store - Download apps, games & more for your Windows PC",
-      "url": "https://apps.microsoft.com/home?hl=en-GB&gl=GB",
-      "snippet": "Explore the Microsoft Store for apps and games on Windows. Enjoy exclusive deals, new releases, and your favourite content all in …"
-    },
-    {
-      "title": "Microsoft Store - 下载适用于 Windows 电脑的应用、游戏等",
-      "url": "https://apps.microsoft.com/zh-cn/store",
-      "snippet": "在 Windows 上浏览 Microsoft Store，寻找应用和游戏。一站式尽享独家特价、最新发布以及你最喜爱的内容。"
-    },
-    {
-      "title": "Microsoft Store - Baixe aplicativos, jogos e muito mais para seu ...",
-      "url": "https://apps.microsoft.com/home?hl=pt-BR&gl=BR",
-      "snippet": "Explore o Microsoft Store para aplicativos e jogos no Windows. Aproveite ofertas exclusivas, novas versões e seus conteúdos …"
-    }
-  ]
+  "sources": []
 }

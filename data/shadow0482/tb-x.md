@@ -2,50 +2,50 @@
 
 ## Resumen
 
-tb-x es un modelo de lenguaje publicado en Hugging Face por el usuario Shadow0482 bajo el identificador `Shadow0482/tb-x`. Se distribuye exclusivamente en formato GGUF, generado mediante las herramientas de Unsloth, y esta etiquetado con la familia `qwen2`, lo que indica que su arquitectura subyacente deriva de la familia Qwen2 de Alibaba. El repositorio incluye pesos con nombre interno "Mythos-Nano-safetensor" en diez cuantizaciones distintas, desde BF16 hasta Q2_K_L.
+TB-X es una conversión a formato GGUF del modelo Mythos Nano (`orangejuicesmith/Mythos-Nano-safetensor`), publicada por el usuario Shadow0482. Se trata de un modelo de generación de texto con arquitectura Qwen2 y 3.085.938.688 parámetros totales (aproximadamente 3,09 mil millones), distribuido en múltiples variantes de cuantización compatibles con el ecosistema llama.cpp. La conversión se realizó con la herramienta Unsloth y el repositorio incluye desde pesos en BF16 y F16 hasta cuantizaciones agresivas como Q2_K_L.
 
-El dato objetivo mas relevante es el recuento de parametros en safetensors: 3.085.938.688 parametros, es decir, aproximadamente 3,1 mil millones. Se trata por tanto de un modelo pequeno, orientado a inferencia local en hardware de consumo, y empaquetado para su uso con llama.cpp y el ecosistema derivado (llama-cli, llama-mtmd-cli, endpoints compatibles).
+El modelo se presenta con etiquetas orientadas a flujos de trabajo agénticos y tool calling, aunque la propia model card advierte que la conversión a GGUF no garantiza soporte nativo de function calling: este depende de las capacidades reales del modelo base, de la plantilla de chat y de la implementación del runtime. La licencia declarada es Apache 2.0, heredada de los metadatos del modelo base.
 
-La relevancia de esta ficha es limitada y conviene ser transparente: el modelo no cuenta con descargas ni likes, la model card es practicamente un volcado de la plantilla de conversion de Unsloth, y no se aportan datos sobre entrenamiento, licencia, idiomas ni evaluacion. Cualquier uso en produccion deberia ir precedido de una evaluacion propia, dado que la trazabilidad del modelo es practicamente nula.
+La relevancia de esta ficha es práctica: se trata de un modelo pequeño (3B) empaquetado en GGUF, lo que lo hace desplegable en hardware de consumo y en entornos locales con llama.cpp, con una API compatible con OpenAI mediante `llama-server`. No obstante, la información pública disponible es escasa y no se han publicado benchmarks, longitudes de contexto ni detalles del dataset de entrenamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only, familia Qwen2 (segun tag del repositorio) |
-| Parametros totales | 3.085.938.688 (~3,1 mil millones) |
+| Arquitectura | Qwen2 (según etiqueta de arquitectura del repositorio) |
+| Parametros totales | 3.085.938.688 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | BF16, F16, Q2_K_L, Q3_K_M, Q4_0, Q4_1, Q4_K_M, Q5_K_M, Q6_K, Q8_0 |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (diez ficheros); el tag `safetensors` aparece en el recuento de parametros, pero el repo publica solo GGUF |
+| Tipos de cuantizacion | BF16, F16, Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_1, Q4_0, Q3_K_M, Q2_K_L |
+| Idiomas soportados | inglés (según la model card) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (conversión desde safetensors del modelo base) |
 
 ## Arquitectura y entrenamiento
 
-La unica informacion estructural disponible es el tag `qwen2` del repositorio, que situa el modelo en la familia de transformers decoder-only de Qwen2, con atencion causal estandar y, presumiblemente, las innovaciones habituales de esa familia (RMSNorm, SwiGLU, RoPE y, en funcion de la variante, grouped-query attention). No hay confirmacion explicita de estos detalles en la model card, por lo que deben tratarse como inferencia a partir del tag y no como dato verificado.
+La arquitectura declarada es Qwen2, un transformer decoder-only, con 3.085.938.688 parámetros totales según los metadatos de safetensors. No se dispone de información sobre el número de capas, dimensiones ocultas, cabezas de atención ni longitud de contexto nativa en la información proporcionada.
 
-No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO o SFT, ni sobre tecnicas de alineacion. El nombre interno de los ficheros ("Mythos-Nano-safetensor") sugiere un modelo base de tipo "nano" convertido a GGUF con Unsloth, pero no se documenta el origen de los pesos originales ni el proceso de entrenamiento. Tampoco se describen innovaciones tecnicas como decodificacion especulativa o atencion lineal.
+Respecto al entrenamiento, la model card describe un flujo de desarrollo guiado por profesores y orientado a herramientas, en el que se mencionan Claude Opus 5.5 y GPT-6 Astra como modelos profesores y aproximadamente 500 millones de interacciones de tool-call y flujo agéntico. El propio autor aclara que esa cifra describe la actividad del flujo de desarrollo y no representa el número de parámetros, tokens de entrenamiento ni muestras. No se especifica la composición del dataset, el número de tokens de entrenamiento ni si hubo RLHF o DPO. Los modelos profesores no son dependencias de inferencia de los archivos GGUF publicados.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el tag `conversational` indica que el modelo esta orientado a dialogos de chat, presumiblemente con plantilla de chat de la familia Qwen2.
-- Razonamiento y generacion de codigo: no confirmado explicitamente, pero plausible dado el linaje Qwen2; sin datos de evaluacion que lo respalden.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible; no se declaran idiomas.
-- Capacidades especiales (modo thinking, vision, audio): no disponibles. La model card menciona `llama-mtmd-cli` para modelos multimodales, pero es una instruccion generica de la plantilla de Unsloth, no una confirmacion de que tb-x tenga vision.
-- Uso con llama.cpp: soportado de forma nativa gracias al formato GGUF, con `--jinja` para el procesamiento de la plantilla de chat.
+- Generación de texto conversacional, según la etiqueta `conversational` y el pipeline `text-generation`.
+- Orientación declarada a flujos agénticos y tool calling (etiquetas `agentic-workflows` y `tool-calling`), si bien el autor advierte que la conversión GGUF por sí sola no garantiza function calling nativo.
+- Compatibilidad con plantillas de chat Jinja en llama.cpp mediante la opción `--jinja`.
+- Soporte de modo conversacional en `llama-cli` con `-cnv`.
+- Exposición como API compatible con OpenAI a través de `llama-server`.
+- Capacidades multilingües: limitadas al inglés según la model card.
+- No se declaran capacidades de visión, audio, matemáticas avanzadas ni modo de razonamiento explícito (thinking mode).
 
 ## Casos de uso
 
-- Prototipado local de chatbots: con ~3,1 mil millones de parametros, el modelo cabe en GPU de consumo y permite iterar rapidamente sobre plantillas de chat y flujos conversacionales sin coste de API.
-- Inferencia en CPU y equipos sin GPU dedicada: las cuantizaciones Q4_K_M y Q3_K_M reducen el peso a unos pocos gigabytes, lo que hace viable ejecutarlo con llama.cpp en portatiles convencionales.
-- Experimentacion academica con modelos pequenos: util como linea base para comparar tecnicas de cuantizacion (Q2 a Q8) sobre un mismo modelo, ya que el repo ofrece el espectro completo de ficheros.
-- Despliegue en entornos con requisitos de privacidad: al ejecutarse localmente via llama.cpp, los datos no salen del equipo, lo que encaja en escenarios con datos sensibles donde no se puede usar un servicio en la nube.
-- Generacion de texto de bajo coste en lote: para tareas de resumen corto o clasificacion simple donde la calidad de un modelo de 3B es suficiente y el coste por token es determinante.
-- Pruebas de integracion con endpoints compatibles: el tag `endpoints_compatible` permite probar el modelo contra servidores compatibles con la API de OpenAI en pipelines de desarrollo.
-- No recomendado como caso de uso: tareas de produccion critica, razonamiento complejo o codigo en entornos reales, dada la ausencia total de evaluacion y de garantias de licencia.
+- Asistente conversacional local: el modelo puede ejecutarse con `llama-cli -hf Shadow0482/tb-x --jinja` en modo chat, adecuado para prototipos de atención al cliente o asistentes personales que deban funcionar sin conexión y con requisitos de memoria moderados gracias a sus 3B parámetros.
+- Desarrollo de agentes con tool calling: las etiquetas del repositorio apuntan a flujos agénticos; puede integrarse en orquestadores que envíen llamadas a herramientas a través de la API compatible con OpenAI de `llama-server`, verificando previamente que la plantilla de chat y el runtime soportan el formato de herramientas.
+- Backend local de API compatible con OpenAI: `llama-server --host 0.0.0.0 --port 8080` expone un endpoint en `http://localhost:8080/v1` que permite conectar clientes existentes (SDKs de OpenAI, LangChain, etc.) sin reescribir código.
+- Inferencia en hardware de consumo: las variantes Q4_K_M, Q4_0 y Q3_K_M permiten desplegar el modelo en equipos con GPU modesta o incluso en CPU, útil para demos, pruebas de integración y entornos de desarrollo sin acceso a clúster.
+- Experimentación educativa y de investigación: al ser un modelo pequeño con licencia Apache 2.0, resulta apropiado para estudiar cuantización GGUF, comparar calidad entre variantes (BF16 frente a Q4_K_M, por ejemplo) y medir el impacto en la salida.
+- Prototipado de pipelines de generación de texto en CI: la posibilidad de descargar una cuantización concreta y lanzarla con llama.cpp facilita tests de regresión de prompts y de plantillas de chat en entornos automatizados.
+- Sustitución de modelos mayores en tareas simples: para clasificación de texto, resumen corto o generación de respuestas en inglés, un modelo de 3B cuantizado reduce coste y latencia frente a alternativas de mayor tamaño.
 
 ## Benchmarks y rendimiento
 
@@ -53,41 +53,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (modelo de ~3,1B parametros):
-  - Q2_K_L: aproximadamente 1,5-2 GB.
-  - Q4_K_M: aproximadamente 2,5-3 GB.
-  - Q8_0: aproximadamente 4-4,5 GB.
-  - BF16/F16: aproximadamente 6-7 GB.
-  - Estas cifras son estimaciones a partir del recuento de parametros; no las proporciona el autor.
-- GPU recomendadas: cualquier GPU con 6 GB o mas de VRAM para BF16; 4 GB o mas para Q4_K_M. Una RTX 3060, RTX 4060 o superior es suficiente.
-- Cabe en GPU de consumo: si, practicamente en cualquier GPU moderna de gama media, y en CPU con cuantizaciones Q4 o inferiores.
-- Opciones de despliegue: llama.cpp (llama-cli, llama-server), Ollama (previa importacion del GGUF), y servidores compatibles con la API de OpenAI gracias al tag `endpoints_compatible`. vLLM y TGI no soportan GGUF de forma nativa en todos los casos, por lo que requeririan conversion a safetensors.
-- Latencia y throughput: no disponibles; no se han publicado mediciones.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa basada en el tamaño de parámetros (3,09B), los pesos en BF16/F16 ocuparían aproximadamente 6 GB, Q8_0 alrededor de 3,3 GB, Q4_K_M en torno a 1,8-2 GB y Q2_K_L cerca de 1,2-1,5 GB; estas cifras son estimaciones y no datos publicados por el autor.
+- GPU recomendadas: no especificadas en la información disponible. Por tamaño, el modelo es apto para GPUs de consumo como RTX 3060, RTX 4060, RTX 4070 o superiores en cuantizaciones Q4/Q5; para BF16 sería recomendable al menos 8 GB de VRAM.
+- Cabe en GPU de consumo: sí, previsiblemente en la mayoría de GPUs con 6-8 GB o más en cuantizaciones Q4_K_M o inferiores, y en CPU con suficiente RAM.
+- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`), aplicaciones compatibles con GGUF y clientes de API compatible con OpenAI. La model card no menciona vLLM, TGI ni Ollama, aunque el formato GGUF es compatible con herramientas que lo soporten.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| tb-x (Shadow0482) | ~3,1B | no disponible | no disponible | GGUF | Hugging Face, repo sin traccion |
-| Qwen2.5-3B (Alibaba) | ~3,1B | 32.768 tokens (variante instruct) | Apache 2.0 (variante base/instruct) | safetensors, GGUF | Amplia, con evaluacion publica |
-| Llama 3.2 3B (Meta) | ~3,2B | 128.000 tokens | Llama 3.2 Community License | safetensors, GGUF | Amplia, con evaluacion publica |
-| Phi-3-mini (Microsoft) | ~3,8B | 4.096-128.000 tokens segun variante | MIT | safetensors, GGUF | Amplia, con evaluacion publica |
+| TB-X (Mythos Nano GGUF) | 3,09B | no disponible | Apache 2.0 | GGUF | Conversión Unsloth de Mythos Nano; etiquetas de tool calling |
+| Qwen2.5-3B-Instruct | ~3B | 32K (según versión) | Apache 2.0 | safetensors, GGUF | Modelo base de referencia de la familia Qwen2; benchmarks públicos amplios |
+| Llama 3.2 3B Instruct | ~3B | 128K | Llama 3.2 Community License | safetensors, GGUF | Restricciones de licencia para uso comercial en gran escala |
+| Phi-3.5-mini | ~3,8B | 128K | MIT | safetensors, GGUF | Orientado a razonamiento y código |
 
-La comparativa deja claro que tb-x compite en la categoria de modelos de ~3B, donde existen alternativas con licencia clara, contexto documentado y benchmarks publicos. Sin esa informacion, tb-x no ofrece ventajas verificables frente a ellas.
+Nota: los datos de los modelos comparativos provienen de conocimiento general y no de la información proporcionada en esta búsqueda; deben verificarse en sus respectivas model cards. Para TB-X no se dispone de benchmarks que permitan una comparación cuantitativa de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de evaluacion: no hay benchmarks, ni datos de entrenamiento, ni descripcion de la alineacion, lo que impide estimar su calidad real.
-- Licencia no disponible: no se puede determinar si el uso comercial esta permitido; en la practica, esto bloquea su adopcion en produccion hasta que el autor lo aclare.
-- Idiomas no declarados: no se conoce la cobertura linguistica; el rendimiento en castellano es una incognita.
-- Riesgo de alucinacion: al ser un modelo de ~3B sin documentacion de alineacion, la probabilidad de generar contenido incorrecto con seguridad aparente es alta.
-- Trazabilidad dudosa: el nombre interno "Mythos-Nano" no se corresponde con el identificador del repositorio, y la model card es una plantilla generica de Unsloth sin informacion sustantiva.
-- Contexto desconocido: no se puede planificar su uso en tareas que requieran ventanas largas.
-- Sin actividad en la comunidad: cero descargas y cero likes en el momento de la consulta, lo que reduce la probabilidad de que los errores se detecten y corrijan.
-- El tag `safetensors` en el recuento de parametros no implica que se publiquen pesos en ese formato; el repo solo ofrece GGUF.
+- No se han publicado benchmarks, por lo que el rendimiento real frente a alternativas de tamaño similar es desconocido.
+- La model card advierte explícitamente que la conversión a GGUF no garantiza soporte nativo de function calling; el tool calling depende de la plantilla de chat y del runtime.
+- Idioma limitado al inglés según la model card; no se declaran capacidades multilingües.
+- Longitud de contexto no documentada: planificar el despliegue sin asumir una ventana concreta y verificar en el runtime.
+- Riesgo de alucinación inherente a modelos de 3B parámetros; no recomendado para tareas de alta precisión sin verificación humana.
+- Sesgos conocidos: no documentados en la información disponible; al derivar de un modelo base sin ficha detallada, no pueden evaluarse sesgos específicos.
+- La licencia Apache 2.0 se hereda de los metadatos del modelo base; el autor recomienda revisar la licencia del modelo base antes de redistribuir o usar artefactos derivados.
+- El repositorio tiene 0 likes y un tamaño de 29,1 GB (por las múltiples cuantizaciones); conviene descargar solo la variante necesaria.
+- El flujo de desarrollo descrito (500 millones de interacciones de tool-call, modelos profesores Claude Opus 5.5 y GPT-6 Astra) no aporta información verificable sobre calidad del modelo y no debe interpretarse como métrica de rendimiento.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Shadow0482/tb-x
-- Unsloth (herramienta de conversion citada): https://github.com/unslothai/unsloth
-- llama.cpp (runtime recomendado por la model card): https://github.com/ggml-org/llama.cpp
+- Repositorio Hugging Face: https://huggingface.co/Shadow0482/tb-x
+- Modelo base: https://huggingface.co/orangejuicesmith/Mythos-Nano-safetensor
+- Unsloth (framework de conversión): https://github.com/unslothai/unsloth
+- llama.cpp (motor de inferencia): https://github.com/ggml-org/llama.cpp

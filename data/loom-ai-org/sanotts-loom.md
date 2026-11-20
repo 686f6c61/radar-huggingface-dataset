@@ -2,108 +2,106 @@
 
 ## Resumen
 
-sanoTTS-loom es la exportacion a GGUF del modelo de sintesis de voz (text-to-speech) ampixa/sanoTTS, publicada por loom-ai-org dentro del ecosistema loom.cpp. Se trata de una coleccion de voces TTS destiladas de tamano muy reducido: entre 0,29M y 2,27M de parametros por voz, distribuidas en 14 idiomas y agrupadas en dos lineas tecnologicas (piperlite, destilada de voces Piper a 22,05 kHz, y nano, destilada de la voz af_heart de Kokoro mediante un decodificador estilo Vocos a 24 kHz). El repositorio contiene varias voces, cada una como un fichero GGUF independiente que lleva embebidos su propia topologia de grafo, su tokenizador (si lo requiere) y su script controlador.
+sanoTTS-loom es una exportación al formato GGUF del modelo de síntesis de voz `ampixa/sanoTTS`, publicada por el colectivo loom-ai-org para su uso con el motor de inferencia loom.cpp y el runtime de Python `loom-py-rt`. No se trata de un modelo único, sino de un repositorio que agrupa varias voces destiladas de tamaño muy reducido (entre 0,29M y 2,27M de parámetros) distribuidas en 14 idiomas. La variante por defecto, `sanotts-heartnano.gguf`, es un alumno destilado de la voz `af_heart` de Kokoro a través de un decodificador estilo Vocos, con salida a 24 kHz y apenas 1.084.963 parámetros según los safetensors del repositorio.
 
-El modelo resuelve el problema de la sintesis de voz en dispositivos con recursos muy limitados: el objetivo declarado es funcionar incluso en una Raspberry Pi Zero W (un nucleo ARMv6 a 1 GHz sin SIMD), donde la voz heart-nano sintetiza a 1,1 veces la duracion del audio consumiendo 34 MB de memoria. La relevancia actual esta en la combinacion de tamano minimo, pesos autocontenidos en formato GGUF y un runtime especifico (loom-py / loom.cpp) que evita dependencias pesadas de frameworks de deep learning. El numero de parametros registrado en safetensors para el artefacto principal es de 1.084.963, coherente con la voz amy-en-1p1m.
+El modelo resuelve el problema de la síntesis de voz en entornos con recursos muy limitados: el autor documenta síntesis a 1,1 veces la duración del audio en una Raspberry Pi Zero W (un núcleo ARMv6 a 1 GHz sin SIMD), lo que lo sitúa en la categoría de TTS embebido y de borde. Cada fichero GGUF es autocontenido: incluye las topologías de grafo, el tokenizador (si lo hay) y el script controlador, de modo que el motor no necesita código específico por voz.
 
-El proyecto es un export, no un entrenamiento nuevo: los pesos proceden del modelo base ampixa/sanoTTS y heredan su licencia GPL-3.0. La libreria indicada es loom-py-rt (paquete PyPI), y el repositorio ocupa aproximadamente 0,1 GB.
+La relevancia actual está en su combinación de tamaño mínimo, cobertura multilingüe amplia (árabe, checo, alemán, español, francés, indonesio, italiano, portugués, rumano, ruso, turco, vietnamita, chino e inglés) y un formato de despliegue portable. La contrapartida es una licencia GPL-3.0 heredada del modelo base, que condiciona seriamente su uso comercial, y un front-end de texto que solo está validado en inglés.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | TTS neuronal destilado; linea piperlite (destilada de voces Piper, 22,05 kHz) y linea nano (destilada de Kokoro af_heart con decodificador estilo Vocos, 24 kHz). El GGUF es autodescriptivo e incluye topologia de grafo, tokenizador y driver |
-| Parametros totales | Rango por voz: 0,29M a 2,27M. El artefacto principal registra 1.084.963 parametros (safetensors) |
-| Longitud de contexto | No aplica como ventana de contexto de texto. Limite operativo: heart y heart-nano aceptan como maximo 207 simbolos foneticos por llamada |
-| Tipos de cuantizacion | GGUF; los pesos de upstream estaban en int8 y se han dequantizado en este export |
-| Idiomas soportados | en, ar, cs, de, es, fr, id, it, pt, ro, ru, tr, vi, zh (14 idiomas) |
+| Arquitectura | Red neuronal de síntesis de voz destilada con decodificador estilo Vocos (línea nano); voces Piper destiladas a 22,05 kHz (línea piperlite) |
+| Parámetros totales | 1.084.963 (variante por defecto `sanotts-heartnano.gguf`); rango del repositorio: 0,29M a 2,27M |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible; límite de 207 símbolos fonéticos por llamada en las voces heart y heart-nano |
+| Tipos de cuantización | Pesos en GGUF; la variante heart-nano procede de int8 upstream dequantizado en la exportación |
+| Idiomas soportados | en, ar, cs, de, es, fr, id, it, pt, ro, ru, tr, vi, zh |
 | Licencia | GPL-3.0 (heredada del modelo base) |
-| Formato de pesos | GGUF (un fichero por voz) |
+| Formato de pesos | GGUF autocontenido (grafo, tokenizador y driver embebidos); safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de detalle de la arquitectura interna mas alla de lo declarado: son voces TTS destiladas de modelos previos. La linea piperlite se destila a partir de voces Piper (por ejemplo, en_US-amy-medium, en_US-hfc_female-medium, en_US-kristin-medium) y opera a 22,05 kHz. La linea nano se destila de la voz af_heart de Kokoro a traves de un decodificador estilo Vocos y opera a 24 kHz; su decodificador es alimentado por ruido, de modo que el parametro `seed` altera ligeramente la voz y el valor por defecto reproduce la renderizacion por defecto de upstream. El rango de parametros va de 0,29M a 2,27M por voz.
+La línea nano parte de la voz `af_heart` de Kokoro y se destila mediante un decodificador estilo Vocos, con salida a 24 kHz. La línea piperlite se destila a partir de voces de Piper y opera a 22,05 kHz. Ambas son redes de tamaño muy reducido, pensadas para inferencia en CPU y en placas de un solo núcleo. El decodificador de las voces heart y heart-nano se alimenta de ruido: el parámetro `seed` altera ligeramente la voz y el valor por defecto reproduce el renderizado original de upstream.
 
-No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si hubo etapas de RLHF o DPO; estos datos corresponderian al modelo base ampixa/sanoTTS. La innovacion tecnica destacable es el formato de export: un unico GGUF autodescriptivo que transporta sus propias topologias de grafo, tokenizador y script controlador, generado por loom-exporter. La exportacion importa los scripts de entrenamiento de upstream desde un clon fijado (pinned clone) en lugar de vendorizarlos, de modo que loom.cpp, loom-exporter y loom-py no contienen codigo GPL.
+La exportación la realiza loom-exporter, que importa los scripts de entrenamiento de upstream desde un clon fijado en lugar de incluirlos en el repositorio. El paquete resultante es un único GGUF que declara sus propias topologías de grafo, su tokenizador y su script controlador. El motor loom.cpp incorpora la operación `ISTFT`, introducida en `loom-py-rt` 1.0.0rc18, necesaria para este fichero. No se detallan en la información disponible el volumen de datos de entrenamiento, la composición del corpus ni si hubo etapas de RLHF o DPO.
 
 ## Capacidades
 
-- Sintesis de voz (text-to-speech) en 14 idiomas: en, ar, cs, de, es, fr, id, it, pt, ro, ru, tr, vi, zh.
-- Dos lineas de voces con frecuencias de muestreo distintas: piperlite a 22,05 kHz y nano a 24 kHz.
-- Conversion de texto a fonemas integrada mediante orthography2ipa, con soporte opcional de lexico de pronunciacion (se incluye en_US-misaki.tsv, de hexgrad/misaki, Apache-2.0) para ingles.
-- Entrada directa de fonemas mediante el argumento `phonemes`, lo que permite usar cualquier G2P externo (por ejemplo, estilo espeak) para maxima calidad.
-- Ajuste de la voz mediante el parametro `seed` en las voces nano (heart, heart-nano).
-- Inferencia autocontenida: el GGUF embebe su driver y los argumentos que acepta (consultables con `model.driver_source`).
-- No se mencionan capacidades de tool calling, agentes, vision ni audio de entrada; es exclusivamente un modelo de sintesis.
+- Síntesis de voz a partir de texto (pipeline `text-to-speech`) en 14 idiomas.
+- Síntesis de voz a partir de fonemas IPA mediante el argumento `phonemes`, lo que permite usar un G2P externo de mayor calidad.
+- Puerta de texto integrada basada en orthography2ipa, con léxico de pronunciación opcional para inglés (`en_US-misaki.tsv`, Apache-2.0).
+- Reproducción del timbre de la voz original de Kokoro (`af_heart`) en la variante heart-nano.
+- Control de variación de voz mediante la semilla (`seed`) en las voces heart y heart-nano.
+- Ejecución en CPU sin SIMD y en GPU, con backend que aplica fusión de convoluciones.
+- No dispone de tool calling, razonamiento multi-paso, visión, audio de entrada ni modo de pensamiento; es un modelo estrictamente de texto a voz.
 
 ## Casos de uso
 
-- Sintesis de voz en dispositivos embebidos: heart-nano sintetiza a 1,1 veces la duracion del audio en una Raspberry Pi Zero W con 34 MB de memoria, lo que permite integrar voz en hardware sin GPU ni aceleracion SIMD.
-- Lectura por voz en aplicaciones de accesibilidad: las voces caben en 34-42 MB y cubren 14 idiomas, de modo que un lector de pantalla puede funcionar sin conexion y sin servidor externo.
-- Interfaces de voz para domotica y robots de bajo coste: el modelo se ejecuta en un solo nucleo ARMv6, lo que lo hace adecuado para asistentes locales en placas tipo Raspberry Pi.
-- Generacion de audio para prototipado rapido de aplicaciones: la API de dos lineas (`loom.Model.from_pretrained` + `text2speech.infer`) permite obtener un WAV en pocos pasos durante el desarrollo.
-- Doblaje y previsualizacion multilingue: al soportar 14 idiomas y varias voces por idioma, se puede generar una primera version de audio en varios idiomas antes de recurrir a grabaciones humanas.
-- Pipelines de sintesis con G2P propio: pasar fonemas precalculados con un motor externo (estilo espeak) permite obtener la calidad maxima para idiomas con ortografia profunda como el ingles.
-- Procesamiento por lotes en CPU x86: en un portatil de 2 nucleos, amy-1.46M tarda una catorceava parte del tiempo que en la Pi Zero W, lo que permite generar lotes de audio sin GPU.
+- Asistentes de voz en dispositivos embebidos: la variante heart-nano sintetiza a 1,1 veces la duración del audio en una Raspberry Pi Zero W con 34 MB de memoria, lo que permite integrarla en altavoces, termostatos o wearables sin acelerador.
+- Lectura de notificaciones y avisos en sistemas de domótica: el tamaño de 1,08M de parámetros y el formato GGUF autocontenido facilitan el despliegue en placas ARM de gama baja con presupuesto de memoria mínimo.
+- Generación de audiolibros y contenido largo por lotes: dividiendo el texto por frases para respetar el límite de 207 símbolos fonéticos por llamada, se puede procesar texto extenso en un portátil x86 de dos núcleos, donde amy-1,46M tarda una catorceava parte de la duración del audio.
+- Localización de contenidos a 14 idiomas: un mismo pipeline puede generar pistas de voz en español, francés, alemán, árabe o vietnamita, pasando fonemas precalculados con un G2P estilo espeak para las lenguas distintas del inglés.
+- Prototipado de interfaces conversacionales: al ser un runtime de Python (`loom-py-rt`), se integra en notebooks y servicios de prueba para validar guiones de voz antes de contratar un TTS comercial.
+- Síntesis offline con requisitos de privacidad: al ejecutarse íntegramente en local sin llamadas a servicios externos, es apto para aplicaciones sanitarias o industriales donde el texto no puede salir del dispositivo.
+- Pruebas de accesibilidad en CI: la instalación vía `pip install -U "loom-py-rt[hub,phonemes]"` permite generar muestras de audio en pipelines automatizados para verificar regresiones de pronunciación.
 
 ## Benchmarks y rendimiento
 
-Los datos disponibles son metricas de calidad y latencia publicadas en la model card. No se han publicado resultados de benchmarks comparativos estandar (MMLU, HumanEval, GSM8K) porque no aplican a un modelo TTS.
+Los únicos datos cuantitativos publicados en la información disponible son métricas de error de palabra (WER) sobre 30 frases de LibriSpeech evaluadas con Whisper, y mediciones de velocidad en hardware concreto:
 
-| Metrica | Valor |
-|---|---|
-| WER heart-nano, puerta de texto con lexico en_US-misaki (30 frases LibriSpeech, Whisper) | 11,9% |
-| WER heart-nano, front-end original de upstream | 8,1% |
-| WER amy-1.46M, puerta de texto con lexico (30 frases LibriSpeech) | 12,3% |
-| WER amy-1.46M, front-end original de upstream | 8,5% |
-| SCOREQ amy-1.46M (mejor voz inglesa de upstream) | 4,13 |
-| Latencia heart-nano en Raspberry Pi Zero W | 1,1x la duracion del audio, 34 MB |
-| Latencia heart en Raspberry Pi Zero W | 2,5x la duracion del audio, 42 MB |
-| Latencia voces piperlite de 0,51M en Raspberry Pi Zero W | 2,3x la duracion del audio |
-| Latencia amy-1.46M en Raspberry Pi Zero W | 8,4x la duracion del audio |
-| Latencia amy-1.46M en portatil x86 de 2 nucleos | Una catorceava parte de la de la Pi Zero W |
+| Métrica | heart-nano | amy-1,46M |
+|---|---|---|
+| WER con léxico integrado (puerta de texto) | 11,9 % | 12,3 % |
+| WER con front-end propio de upstream | 8,1 % | 8,5 % |
+
+| Hardware | Voz | Tiempo de síntesis respecto a la duración del audio |
+|---|---|---|
+| Raspberry Pi Zero W (ARMv6 1 GHz, sin SIMD) | heart-nano | 1,1x (34 MB de memoria) |
+| Raspberry Pi Zero W | piperlite 0,51M | 2,3x |
+| Raspberry Pi Zero W | heart | 2,5x |
+| Raspberry Pi Zero W | amy-1,46M | 8,4x |
+| Portátil x86 de 2 núcleos | amy-1,46M | 1/14 de la duración del audio |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible, al no ser aplicables a un modelo de síntesis de voz.
 
 ## Requisitos de hardware
 
-- VRAM: no aplica; el modelo esta pensado para CPU y no requiere GPU.
-- Memoria: 34 MB para heart-nano, 42 MB para heart, en el caso de la Raspberry Pi Zero W.
-- GPU recomendadas: no se especifican; el diseno objetivo son CPU de muy baja potencia (ARMv6 a 1 GHz sin SIMD).
-- Cabe en cualquier GPU de consumo por su tamano (0,1 GB de repositorio completo), aunque no es el escenario previsto.
-- Despliegue: runtime loom-py (`pip install -U "loom-py-rt[hub,phonemes]"`) sobre el motor loom.cpp. No se mencionan integraciones con vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput conocidos: Pi Zero W con heart-nano a 1,1x tiempo real; amy-1.46M a 8,4x. En un portatil x86 de 2 nucleos, amy-1.46M tarda catorce veces menos.
-- Limitacion de memoria asociada: heart y heart-nano admiten como maximo 207 simbolos foneticos por llamada, por lo que el texto largo debe trocearse por frases.
+- VRAM estimada: no disponible; el modelo está diseñado para CPU. La variante heart-nano ocupa 34 MB de memoria en ejecución.
+- GPU recomendadas: no se especifican modelos concretos; el backend GPU de loom.cpp aplica fusión de convoluciones y requiere `GGML_VC4_FUSE=0` en Raspberry Pi Zero y Pi 1-3 con `loom-py-rt` 1.0.0rc20 o anterior.
+- CPU: funciona en un único núcleo ARMv6 a 1 GHz sin SIMD; en x86 de dos núcleos el rendimiento es holgadamente superior al tiempo real para las voces pequeñas.
+- Cabe en cualquier GPU de consumo, incluida una RTX 4090, aunque no se aprovecha su capacidad de cómputo por el tamaño del modelo.
+- Despliegue: runtime `loom-py-rt` (PyPI, extra `[hub,phonemes]`), motor loom.cpp y exportador loom-exporter. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: en Raspberry Pi Zero W, entre 1,1x y 8,4x la duración del audio según la voz; en portátil x86 de dos núcleos, hasta 1/14 de la duración con amy-1,46M.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Idiomas | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto / límite | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
-| sanoTTS-loom | 0,29M - 2,27M por voz | 14 | GPL-3.0 | GGUF | Export para loom.cpp; 28 voces |
-| Piper (voces originales) | No disponible | No disponible | No disponible | No disponible | Fuente de destilacion de la linea piperlite, 22,05 kHz |
-| Kokoro (voz af_heart) | No disponible | No disponible | No disponible | No disponible | Fuente de destilacion de la linea nano, decodificador estilo Vocos, 24 kHz |
-| ampixa/sanoTTS | No disponible | 14 | GPL-3.0 | No disponible | Modelo base original del que se exporta este repositorio |
+| sanoTTS-loom (heart-nano) | 1,08M | 207 símbolos fonéticos por llamada | 14 | GPL-3.0 | GGUF |
+| Kokoro (`af_heart`) | No disponible en la información | No disponible | No disponible | No disponible | No disponible |
+| Piper (voces originales) | ~0,5M en las voces piperlite destiladas | No disponible | No disponible | No disponible | No disponible |
 
-Los datos de parametros, licencia y formato de Piper, Kokoro y ampixa/sanoTTS no se detallan en la informacion proporcionada mas alla de su papel como origen de la destilacion.
+Las alternativas citadas son los modelos de origen de los que se destila sanoTTS; no se dispone en la información proporcionada de especificaciones completas ni de comparativas de rendimiento frente a otros sistemas TTS de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Licencia GPL-3.0: los pesos heredan la licencia del modelo base, lo que impone obligaciones de copyleft para uso comercial y redistribucion. Los componentes loom.cpp, loom-exporter y loom-py no contienen codigo GPL, pero los ficheros de pesos si.
-- La puerta de texto solo esta medida en ingles. Con el lexico incluido, heart-nano obtiene un 11,9% de WER frente al 8,1% del front-end original; sin lexico, el ingles empeora notablemente.
-- El chino no tiene puerta de texto: la salida de orthography2ipa cae casi por completo fuera de la tabla de fonemas de la voz zh (una frase de 13 caracteres se codifico en 3 ids). Es obligatorio pasar fonemas pinyin estilo espeak.
-- Para el resto de idiomas, la puerta de texto usa unicamente las reglas de orthography2ipa con correcciones de convencion independientes del idioma; la calidad completa requiere un G2P externo estilo espeak mediante el argumento `phonemes`.
-- Limite de 207 simbolos foneticos por llamada en heart y heart-nano (limite de upstream); hay que trocear el texto por frases.
-- El decodificador de las voces nano se alimenta de ruido: el parametro `seed` modifica ligeramente la voz. La inyeccion opcional de sibilantes de upstream (aplicada por su dashboard y runtime de Arduino, no por su paquete pip) no se reproduce en este export.
-- La sintesis no es en tiempo real en las placas mas pequenas: en la Pi Zero W, heart-nano tarda 1,1x la duracion del audio y amy-1.46M hasta 8,4x.
-- Proyecto marcado como trabajo en curso por el autor; el phonemizer elegido (orthography2ipa) es una solucion provisional para evitar conflictos de licencia y minimizar dependencias.
-- Riesgo de alucinacion y sesgos: no se documentan sesgos especificos ni tasas de error mas alla del WER en ingles; al ser un modelo TTS, el riesgo relevante es la pronunciacion incorrecta o la ininteligibilidad, no la generacion de contenido factual.
-- Cero descargas y cero "likes" en el momento de la consulta, con fecha de creacion y actualizacion del 10 de octubre de 2026: ecosistema y validacion externa practicamente inexistentes.
+- Licencia GPL-3.0 heredada del modelo base: los ficheros portan los parámetros de upstream, lo que impone obligaciones de copyleft para uso comercial y redistribución.
+- La puerta de texto solo está medida en inglés; sin el léxico integrado, la calidad en inglés cae notablemente (11,9 % de WER frente a 8,1 % con el front-end original).
+- El chino no tiene puerta de texto: la salida de orthography2ipa queda casi por completo fuera de la tabla de fonemas de la voz zh (una frase de 13 caracteres se codificó en 3 ids), por lo que hay que aportar pinyin estilo espeak manualmente.
+- Las voces heart y heart-nano aceptan como máximo 207 símbolos fonéticos por llamada; el texto más largo debe dividirse por frases.
+- El decodificador es alimentado por ruido: la semilla modifica ligeramente la voz y no se reproduce la inyección de sibilantes opcional de upstream.
+- Requiere `loom-py-rt` 1.0.0rc18 o superior por la operación `ISTFT`; versiones anteriores fallan con `unknown op 'ISTFT'`.
+- En Raspberry Pi Zero y Pi 1-3 con `loom-py-rt` 1.0.0rc20 o anterior, el backend GPU aborta con un `GGML_ASSERT` en `conv_f32_run` salvo que se defina `GGML_VC4_FUSE=0` o se use `device="cpu"`.
+- Es un trabajo en curso: el fonemizador orthography2ipa es un reemplazo mínimo y las lenguas de ortografía profunda necesitan un léxico de referencia para reglas de acentuación y fonemización contextual.
+- Riesgo de alucinación y sesgos: no se documentan en la información disponible; al ser un modelo acústico condicionado por fonemas, el riesgo principal es de pronunciación incorrecta, no de contenido inventado.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/loom-ai-org/sanotts-loom
+- Modelo en Hugging Face: https://huggingface.co/loom-ai-org/sanotts-loom
 - Modelo base: https://huggingface.co/ampixa/sanoTTS
-- Repositorio loom.cpp: https://github.com/loom-ai-org/loom.cpp
-- Repositorio loom-exporter: https://github.com/loom-ai-org/loom-exporter
-- Repositorio loom-py: https://github.com/loom-ai-org/loom-py
-- Paquete PyPI loom-py-rt: https://pypi.org/project/loom-py-rt/
-- Lexico en_US-misaki.tsv (hexgrad/misaki, Apache-2.0): https://huggingface.co/loom-ai-org/sanotts-loom/lexicons/en_US-misaki.tsv
-- Ficheros de voces en el repositorio: sanotts-heartnano.gguf, sanotts-heart.gguf, sanotts-amy-en-1p46m.gguf, sanotts-amy-en-1p1m.gguf, sanotts-amy-en-1p8m.gguf, sanotts-hfc-en-1p8m.gguf, sanotts-kristin-en-1p4m.gguf, sanotts-ar-kareem-1p57m.gguf (lista truncada en la model card)
+- Motor loom.cpp: https://github.com/loom-ai-org/loom.cpp
+- Exportador loom-exporter: https://github.com/loom-ai-org/loom-exporter
+- Runtime loom-py: https://github.com/loom-ai-org/loom-py
+- Léxico de pronunciación para inglés: https://huggingface.co/loom-ai-org/sanotts-loom/resolve/main/lexicons/en_US-misaki.tsv

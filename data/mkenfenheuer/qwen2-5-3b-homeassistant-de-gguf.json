@@ -50,16 +50,5 @@
   "renamed_to": "mkenfenheuer/qwen2.5-3b-homeassistant-GGUF",
   "renamed_at": "2026-11-12T06:35:27.426Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "homeassistant-llm/hf/model at main · mKenfenheuer ... - GitHub",
-      "url": "https://github.com/mKenfenheuer/homeassistant-llm/tree/main/hf/model",
-      "snippet": "Qwen2.5-3B Home Assistant (German, GGUF) Built with Qwen. LoRA fine-tune of Qwen/Qwen2.5-3B-Instruct that controls a Home Assistant installation in German via tool calls and answers questions about device states. Quantized to Q4_K_M (1.9 GB) for CPU inference with llama.cpp."
-    },
-    {
-      "title": "homeassistant-llm/hf/model/README.md at main · mKenfenheuer ... - GitHub",
-      "url": "https://github.com/mKenfenheuer/homeassistant-llm/blob/main/hf/model/README.md",
-      "snippet": "Qwen2.5-3B Home Assistant (German, GGUF) Built with Qwen. LoRA fine-tune of Qwen/Qwen2.5-3B-Instruct that controls a Home Assistant installation in German via tool calls and answers questions about device states. Quantized to Q4_K_M (1.9 GB) for CPU inference with llama.cpp."
-    }
-  ]
+  "sources": []
 }

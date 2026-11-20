@@ -2,89 +2,83 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next es un modelo de lenguaje multimodal de gran escala desarrollado por Qwen (Alibaba), y esta ficha cubre la version cuantizada a GGUF publicada por mradermacher. El modelo base es un Mixture-of-Experts (MoE) ultra-disperso con 125.000 millones de parametros totales, de los cuales activa 6.000 millones por token, y esta construido sobre la nueva arquitectura Qwen4. Incorpora una ventana de contexto de 262.144 tokens y capacidades multimodales (vision-lenguaje), ademas de soporte para function calling y razonamiento avanzado.
+Qwen3.8-Flash-Next es un modelo de lenguaje de gran escala desarrollado por el equipo Qwen (Alibaba). Esta ficha describe concretamente la versión cuantizada en formato GGUF publicada por el usuario mradermacher bajo el identificador `mradermacher/Qwen3.8-Flash-Next-GGUF`, derivada del modelo original `Qwen/Qwen3.8-Flash-Next`. El repositorio contiene cuantizaciones estáticas de tipo K-quant e IQ-quant, además de los ficheros mmproj necesarios para el procesamiento multimodal.
 
-La version GGUF de mradermacher proporciona cuantizaciones estaticas listas para usar con llama.cpp y otras herramientas compatibles, facilitando la ejecucion local del modelo en hardware de consumo o estaciones de trabajo. El repositorio incluye tanto el modelo principal como ficheros multimodales complementarios (mmproj) en Q8_0 y f16 para habilitar la parte de vision. La licencia es qwen-community-1.0, que permite uso comercial bajo ciertas condiciones.
+El modelo original cuenta con 176.943.899.520 parámetros según los datos de safetensors, lo que lo sitúa en la categoría de modelos de aproximadamente 177.000 millones de parámetros. La información disponible no detalla la arquitectura interna del modelo base (si es denso o Mixture of Experts), la longitud de contexto ni la composición del dataset de entrenamiento; estos datos no están disponibles en la documentación proporcionada.
 
-Este modelo es relevante porque combina una arquitectura hibrida novedosa (GDN + QSA), un contexto muy largo y capacidades multimodales en un paquete que puede ejecutarse localmente con cuantizacion, algo poco comun en modelos de su escala.
+La relevancia de esta publicación radica en que permite ejecutar un modelo de este tamaño en infraestructura local mediante llama.cpp y derivados, con cuantizaciones que van desde los 80,5 GB (Q2_K) hasta los 188,3 GB (Q8_0). El repositorio acumula 1.871 descargas y está etiquetado como compatible con endpoints y orientado a uso conversacional.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE hibrida (Gated DeltaNet + Qwen Sparse Attention), basada en Qwen4 |
-| Parametros totales | 448.931.056 (en el GGUF; el modelo base declara 125B incluyendo tabla N-gram de 51B) |
-| Parametros activos | 6.000 millones por token (en el modelo base) |
-| Longitud de contexto | 262.144 tokens |
-| Tipos de cuantizacion | f16, Q4_K_S, Q2_K, Q8_0, Q6_K, Q3_K_M, Q3_K_S, Q3_K_L, Q4_K_M, Q5_K_S, Q5_K_M, IQ4_XS |
-| Idiomas soportados | ingles (segun la model card; el modelo base puede soportar mas) |
+| Arquitectura | no disponible |
+| Parametros totales | 176.943.899.520 |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-Q8_0, mmproj-f16 |
+| Idiomas soportados | en |
 | Licencia | qwen-community-1.0 |
-| Formato de pesos | GGUF (con ficheros mmproj en Q8_0 y f16) |
+| Formato de pesos | GGUF (cuantizaciones estáticas); modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-Flash-Next utiliza una arquitectura MoE ultra-dispersa construida sobre Qwen4. La innovacion principal es la combinacion de dos mecanismos de atencion: tres de cada cuatro capas emplean Gated DeltaNet (GDN), que comprime el historico de forma eficiente, mientras que la cuarta capa usa Qwen Sparse Attention (QSA) para recuperacion precisa de informacion a larga distancia. Esta hibridacion busca equilibrar la eficiencia computacional con la capacidad de manejar contextos muy largos.
+No se dispone de información sobre la arquitectura interna del modelo base Qwen3.8-Flash-Next en la documentación proporcionada. No se especifica si se trata de un transformer denso, un modelo Mixture of Experts, una arquitectura híbrida o cualquier otra variante. Tampoco se detalla el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO.
 
-Ademas, el modelo incorpora una tabla de embeddings N-gram de 51.000 millones de parametros adicionales, lo que contribuye a la capacidad total declarada de 125B. El modelo es multimodal, con un proyector de vision que permite procesar imagenes junto con texto. En cuanto al entrenamiento, la informacion disponible indica que hubo una fase de post-entrenamiento con fine-tuning (posiblemente incluyendo RLHF o DPO, aunque no se detalla), y el modelo soporta razonamiento explicito con modo thinking.
-
-La version GGUF de mradermacher es una cuantizacion estatica del modelo base, sin reentrenamiento adicional. No se proporcionan detalles sobre el dataset de entrenamiento original ni el numero exacto de tokens usados.
+La única información técnica concreta procede de la model card del repositorio cuantizado: las cuantizaciones se han generado con `quantize_version: 2` y `output_tensor_quantised: 1`, con conversión de tipo `hf`. Se ofrecen tanto cuantizaciones estáticas (este repositorio) como cuantizaciones ponderadas con imatrix en el repositorio complementario `mradermacher/Qwen3.8-Flash-Next-i1-GGUF`. La presencia de ficheros mmproj (multi-modal projection) indica que el modelo base incorpora capacidad multimodal, aunque no se detalla qué modalidades adicionales al texto soporta.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento avanzado con modo thinking explicito.
-- Capacidades multimodales: procesamiento de imagenes junto con texto (via ficheros mmproj).
-- Soporte de function calling / tool calling.
-- Ventana de contexto de 262.144 tokens, adecuada para documentos largos y conversaciones multi-turno extensas.
-- Razonamiento multi-step y capacidades de agente.
-- Codigo y matematicas (segun las capacidades generales de la familia Qwen3, aunque no hay benchmarks especificos en la informacion proporcionada).
-- Modelo multilingue en su version base (aunque la model card del GGUF solo declara ingles).
+- Generación de texto conversacional, según la etiqueta `conversational` del repositorio.
+- Procesamiento multimodal: la existencia de ficheros `mmproj-Q8_0.gguf` y `mmproj-f16.gguf` indica soporte de entrada de imágenes u otras modalidades en el modelo base, aunque no se especifica el alcance exacto.
+- Compatibilidad con endpoints: el repositorio incluye la etiqueta `endpoints_compatible`.
+- Capacidad multilingüe limitada al inglés según el campo `language: en` de la model card; no se documentan otros idiomas.
+- No se dispone de información sobre soporte de tool calling, function calling, razonamiento multi-paso, modo thinking, audio u otras capacidades especiales.
 
 ## Casos de uso
 
-- Analisis de documentos largos: gracias a su contexto de 262K tokens, puede procesar libros completos, expedientes legales o informes tecnicos extensos en una sola pasada, resumiendo o extrayendo informacion relevante sin necesidad de dividir el texto.
-- Asistente de codigo en produccion: con soporte de function calling, puede integrarse en pipelines de CI/CD para generar, revisar o documentar codigo, o para automatizar tareas de mantenimiento de repositorios.
-- Atencion al cliente automatizada: su contexto largo y capacidad de razonamiento permiten gestionar conversaciones multi-turno complejas con historial completo, manteniendo coherencia y resolviendo incidencias sin perder el hilo.
-- Analisis de imagenes y documentos escaneados: al ser multimodal, puede extraer informacion de capturas, diagramas o documentos con contenido visual, combinando comprension de texto e imagen.
-- Investigacion academica: para tareas de revision bibliografica, el modelo puede procesar multiples articulos completos y sintetizar conclusiones, gracias a su contexto extenso y capacidades de razonamiento.
-- Despliegue en hardware local con privacidad: al estar cuantizado en GGUF, puede ejecutarse en estaciones de trabajo o portatiles con suficiente RAM, permitiendo procesar datos sensibles sin enviarlos a la nube.
+- Despliegue local de un modelo de gran escala en inglés: con la cuantización Q4_K_M (119,3 GB) se puede ejecutar el modelo en servidores con suficiente memoria unificada o VRAM, usando llama.cpp como motor de inferencia.
+- Generación de texto conversacional en inglés: el modelo está etiquetado como conversacional y puede emplearse en asistentes de chat de un solo turno o multi-turno, siempre que la longitud de contexto del modelo base lo permita (dato no disponible).
+- Procesamiento de documentos con componentes visuales: gracias a los ficheros mmproj, es posible alimentar imágenes junto con texto en pipelines que usen llama.cpp con soporte multimodal, por ejemplo para descripción de capturas o extracción de información de figuras.
+- Experimentación e investigación: investigadores que necesiten evaluar el comportamiento de un modelo de ~177.000 millones de parámetros en inglés pueden usar las cuantizaciones Q2_K o Q3_K_S (80,5–88,9 GB) para reducir los requisitos de memoria a costa de calidad.
+- Integración en servicios compatibles con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede servirse a través de APIs compatibles con el formato de endpoints de Hugging Face, útil para prototipos de aplicaciones que consuman el modelo vía HTTP.
+- Comparación de calidad entre cuantizaciones: el repositorio ofrece once variantes de cuantización del mismo modelo, lo que permite medir el impacto de la cuantización en tareas concretas de generación de texto en inglés, usando la escala de perplejidad referenciada en la model card.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible para esta version cuantizada. El blog de atomic.chat menciona que existen guias de ejecucion local con datos de hardware, pero no se incluyen cifras concretas de MMLU, HumanEval u otros tests en los materiales proporcionados.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- El modelo base tiene 125B parametros, pero al activar solo 6B por token, el requisito principal es de memoria para los pesos, no de computo.
-- Con cuantizacion a 4 bits (Q4_K_S), el modelo ocupa aproximadamente 70-80 GB, por lo que cabe en estaciones de trabajo con 128 GB de RAM unificada (como Mac Studio) o en multiples GPU profesionales (2x A100 80GB o 2x RTX 4090 24GB no serian suficientes por separado, pero si en configuracion multi-GPU).
-- Para la parte multimodal, se necesitan los ficheros mmproj (Q8_0 de 0.7 GB o f16 de 1.0 GB) adicionales.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y cualquier runtime compatible con GGUF.
-- La latencia dependera del hardware; en un Mac con 128 GB unificados se puede esperar una velocidad de generacion de unos 5-15 tokens por segundo con cuantizacion 4-bit, aunque estos datos son estimaciones orientativas no confirmadas por benchmarks oficiales.
+- VRAM/RAM estimada para inferencia según cuantización: Q2_K ≈ 80,5 GB; Q3_K_S ≈ 88,9 GB; Q3_K_M ≈ 94,2 GB; Q3_K_L ≈ 96,8 GB; IQ4_XS ≈ 98,5 GB; Q4_K_S ≈ 111,9 GB; Q4_K_M ≈ 119,3 GB; Q5_K_S ≈ 127,8 GB; Q5_K_M ≈ 134,2 GB; Q6_K ≈ 167,7 GB; Q8_0 ≈ 188,3 GB.
+- Añadir entre 0,7 GB (mmproj-Q8_0) y 1,0 GB (mmproj-f16) si se utiliza el componente multimodal.
+- GPU recomendadas: no disponible en la información proporcionada. Por el volumen de memoria requerido, ninguna cuantización cabe en una GPU de consumo individual (RTX 4090 con 24 GB, por ejemplo); se necesitan configuraciones multi-GPU o servidores con memoria unificada de gran capacidad (por ejemplo, Apple Silicon con 128 GB o más para Q4_K_S, o 192 GB para Q8_0).
+- No cabe en GPU de consumo convencionales con 8–24 GB de VRAM en ninguna de las cuantizaciones publicadas.
+- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio, llama-cpp-python) para los ficheros GGUF; los ficheros están divididos en múltiples partes para las cuantizaciones de mayor tamaño, por lo que es necesario concatenarlas antes de usarlas.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Arquitectura | Licencia |
-|---|---|---|---|---|
-| Qwen3.8-Flash-Next | 125B (MoE, 6B activos) | 262K | GDN + QSA hibrida | qwen-community-1.0 |
-| Qwen2.5-72B | 72B denso | 128K | Transformer denso | Apache 2.0 |
-| DeepSeek-V3 | 671B (MoE, 37B activos) | 128K | MoE con MLA | MIT |
-
-La comparativa es aproximada: Qwen3.8-Flash-Next destaca por su contexto mucho mayor y su arquitectura hibrida, mientras que Qwen2.5-72B es un modelo denso mas simple de desplegar. DeepSeek-V3 tiene mas capacidad total pero tambien mayores requisitos de hardware. La licencia qwen-community-1.0 es mas restrictiva que Apache 2.0 o MIT, por lo que hay que revisar sus condiciones antes de uso comercial.
+No disponible. La información proporcionada no incluye datos de rendimiento ni especificaciones del modelo base que permitan una comparación rigurosa con alternativas de la misma categoría. El único dato objetivo es el número de parámetros (176.943.899.520) y el formato de publicación (GGUF cuantizado), que sitúan al modelo en la franja de ~177.000 millones de parámetros.
 
 ## Limitaciones y advertencias
 
-- La licencia qwen-community-1.0 puede imponer restricciones al uso comercial; es necesario revisar el texto completo de la licencia antes de desplegar en produccion.
-- La cuantizacion estatica puede degradar ligeramente la calidad respecto al modelo en bf16, especialmente en tareas de razonamiento complejo.
-- El modelo base declara soporte multilingue, pero la model card del GGUF solo lista ingles; el rendimiento en otros idiomas puede ser inferior.
-- Riesgo de alucinacion inherente a todos los modelos de lenguaje; verificar siempre las salidas en contextos criticos.
-- No se proporcionan datos de sesgos especificos, pero como modelo entrenado con datos web, puede reflejar sesgos presentes en su corpus de entrenamiento.
-- La parte multimodal requiere los ficheros mmproj; sin ellos, el modelo solo funciona como LLM de texto.
-- El tamaño del modelo (incluso cuantizado) requiere hardware con al menos 80-100 GB de memoria, lo que excluye GPUs de consumo individuales.
+- Idiomas: la model card declara únicamente inglés (`language: en`); no hay evidencia de soporte de castellano u otros idiomas.
+- Licencia: `qwen-community-1.0`, una licencia comunitaria con posibles restricciones de uso comercial. Es imprescindible revisar el fichero LICENSE del repositorio antes de cualquier despliegue en producción.
+- Este repositorio es una cuantización de terceros (mradermacher), no la publicación oficial de Qwen; la calidad y fidelidad respecto al modelo original dependen del proceso de cuantización.
+- Las cuantizaciones de baja precisión (Q2_K, Q3_K_S) degradan la calidad; la propia model card advierte que Q3_K_M es de "lower quality" y recomienda Q4_K_S, Q4_K_M y Q8_0 como opciones "fast, recommended".
+- Los ficheros de mayor tamaño están partidos en varias partes (hasta 4); es necesario concatenarlos correctamente antes de la carga.
+- No se dispone de información sobre sesgos, tasas de alucinación, longitud de contexto efectiva ni comportamiento en producción del modelo base.
+- El tamaño del repositorio (1.308,6 GB) implica requisitos de almacenamiento considerables y descargas largas.
+- Al no conocerse la arquitectura ni el contexto del modelo base, no es posible garantizar su idoneidad para tareas que requieran ventanas de contexto largas.
 
 ## Enlaces
 
-- Repositorio GGUF de mradermacher: https://huggingface.co/mradermacher/Qwen3.8-Flash-Next-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/Qwen3.8-Flash-Next-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Repositorio GitHub de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
-- Guia de ejecucion local (unsloth): https://unsloth.ai/docs/models/qwen3.8-next
-- Receta vLLM: https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next
-- Guia de hardware y benchmarks (atomic.chat): https://atomic.chat/blog/guides/how-to-run-qwen-3-8-flash-next-locally
+- Cuantizaciones con imatrix: https://huggingface.co/mradermacher/Qwen3.8-Flash-Next-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Qwen3.8-Flash-Next-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfico de perplejidad por tipo de cuantización: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Preguntas frecuentes y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests

@@ -2,117 +2,111 @@
 
 ## Resumen
 
-`stuchapin/Nanbeige4.3-33B-Base-W8A16-AutoRound` es una cuantización de 8 bits del modelo base `Nanbeige/Nanbeige4.3-33B-Base`, publicado por Nanbeige LLM Lab el 24 de octubre de 2026. No se trata de un modelo nuevo entrenado desde cero, sino de un checkpoint derivado: el autor de la cuantización (stuchapin) aplica AutoRound 0.15.1 en modo W8A16 simétrico, con grupo de 128, y empaqueta el resultado en formato GPTQ (`auto_round:auto_gptq`) para su uso con vLLM. El objetivo es reducir la huella de pesos de ~66 GB en BF16 a unos 33,5 GiB, de modo que el modelo pueda servirse en dos GPUs de 24 GB con paralelismo tensorial o en una sola GPU de 48 GB o más.
+Nanbeige4.3-33B-Base-W8A16-AutoRound es una cuantizacion de 8 bits del modelo denso Nanbeige 4.3 33B Base, publicado por el desarrollador independiente stuchapin sobre el checkpoint original de Nanbeige (lanzado el 24 de octubre de 2026). El objetivo es reducir la huella de memoria del modelo original en BF16 (unos 65 GB) hasta aproximadamente 33,5 GiB manteniendo una fidelidad practicamente identica a la del modelo sin cuantizar, con una perdida de perplexity inferior a 0,01 puntos en WikiText-2.
 
-El modelo subyacente es un transformer denso tipo `LlamaForCausalLM` de 33 000 millones de parámetros, 52 capas, 56 cabezas de consulta y 8 cabezas clave-valor con GQA. La model card de la cuantización declara 128 000 tokens de contexto, mientras que fuentes de prensa sobre el lanzamiento del modelo base citan hasta 524 288 tokens; esta discrepancia no está resuelta en la información disponible y conviene verificarla en el repositorio del modelo base antes de desplegar cargas de contexto largo.
+El modelo base es un transformer denso de 33.000 millones de parametros con arquitectura LlamaForCausalLM, atencion GQA (56 cabezas de consulta y 8 de clave-valor) y una ventana de contexto nativa de 128.000 tokens. Esta pensado para generacion de texto, razonamiento y uso como agente, con soporte para chino e ingles. La cuantizacion emplea Intel AutoRound v0.15.1 con precision simetrica INT8 en pesos (W8A16), empaquetada en formato GPTQ y calibrada con 256 turnos reales de produccion multi-turno.
 
-La relevancia de esta ficha es doble: por un lado, documenta una receta de cuantización concreta y reproducible para un modelo de 33B en hardware de consumo profesional; por otro, advierte de que se cuantiza la variante **Base**, no una variante instruida o de agente, por lo que las capacidades de agentic coding y razonamiento que la prensa atribuye a la familia Nanbeige4.3-33B no deben darse por supuestas en este checkpoint sin validación propia.
+La relevancia de este checkpoint es practica: permite desplegar un modelo de 33B con contexto completo de 128k en configuraciones de doble GPU consumer de 24 GB (RTX 3090 o 4090) mediante tensor parallelism TP=2, o en una unica GPU de 48-80 GB (A6000, A100, H100, RTX 6000 Ada). Con aproximadamente 16,8 GiB por tarjeta en TP=2, quedan unos 7,5 GiB libres por GPU para cache KV en FP8 y contextos profundos.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso `LlamaForCausalLM` (52 capas, 56 cabezas de consulta, 8 cabezas KV con GQA) |
-| Parametros totales | 33 000 millones (aproximado; según denominación del modelo base) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 128 000 tokens según la model card de la cuantización; hasta 524 288 tokens según fuentes de prensa sobre el modelo base (dato no confirmado y en conflicto) |
-| Tipos de cuantizacion | W8A16 simétrico, grupo de 128, AutoRound 0.15.1; existe también una variante W4A16 del mismo autor |
-| Idiomas soportados | Chino (`zh`) e inglés (`en`) |
-| Licencia | `nanbeige-license` (etiqueta `license: other` en Hugging Face); algunas fuentes de prensa citan Apache 2.0 para el modelo base, dato en conflicto |
-| Formato de pesos | GPTQ empaquetado (`auto_round:auto_gptq`); contenedor exacto no confirmado en la información disponible |
-| Modelo base | `Nanbeige/Nanbeige4.3-33B-Base` |
-| Fecha de publicación del base | 24 de octubre de 2026 |
-| Datos de calibración | 256 turnos reales de agentes en producción, multi-turno |
-| Huella de pesos en VRAM | ~33,5 GiB totales; ~16,8 GiB por tarjeta con `TP=2` |
-| Precisión declarada | Delta de perplejidad < 0,01 frente a BF16 (dato del autor) |
-| Hardware objetivo | 2× 24 GB (RTX 3090, RTX 4090, A10) con `TP=2`, o 1× 48 GB+ (A6000, A100, H100) |
-| Licencia del artefacto de cuantización | No especificada de forma independiente; hereda la del modelo base |
-| Descargas / likes | 0 / 0 en el momento de la consulta |
+| Arquitectura | LlamaForCausalLM (transformer denso, GQA) |
+| Parametros totales | 33.000 millones (dato de model card); 10.374.999.040 segun safetensors del repo |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | 128.000 tokens (nativo) |
+| Tipos de cuantizacion | INT8 simetrica W8A16 (AutoRound GPTQ); familia disponible en W3A16, W4A16 y W8A16 |
+| Idiomas soportados | chino (zh), ingles (en) |
+| Licencia | nanbeige-license (other) |
+| Formato de pesos | safetensors, GPTQ (auto_round:auto_gptq) |
+| Cabezas de atencion | 56 query, 8 key-value (GQA) |
+| Dimension oculta | 7.168 |
+| Dimension intermedia | 22.016 |
+| Numero de capas | 52 |
+| Tokenizer | SentencePiece, vocabulario de 166.912 |
+| Tamano del repo | 36,2 GB |
+| VRAM de pesos | ~33,5 GiB |
+| Herramienta de cuantizacion | Intel AutoRound v0.15.1 |
+| Calibracion | 256 turnos reales de produccion multi-turno |
 
 ## Arquitectura y entrenamiento
 
-El checkpoint es una cuantización, no un entrenamiento. La arquitectura es la del modelo base: un transformer decoder-only denso con normalización previa, atención multi-cabeza con GQA (56 cabezas de consulta frente a 8 cabezas clave-valor, una ratio de 7:1) y 52 capas. No hay mezcla de expertos, ni capas SSM, ni atención lineal declarada. El proceso aplicado por stuchapin es AutoRound 0.15.1, que optimiza los parámetros de redondeo por capa mediante descenso de gradiente continuo antes de empaquetar los pesos en GPTQ con granularidad de grupo de 128 y simetría estricta.
+El modelo base es un transformer denso de 33B con arquitectura LlamaForCausalLM. Usa Grouped-Query Attention con 56 cabezas de consulta y solo 8 de clave-valor, lo que reduce el coste de la cache KV en contextos largos, algo relevante dado que la ventana nativa alcanza los 128.000 tokens. La red tiene 52 capas, dimension oculta de 7.168 y dimension intermedia de 22.016, con tokenizer SentencePiece de 166.912 entradas. Los detalles sobre el dataset de entrenamiento del modelo base (numero de tokens, composicion, uso de RLHF o DPO) no estan disponibles en la informacion proporcionada.
 
-El punto diferencial de esta receta es el conjunto de calibración: 256 turnos multi-turno extraídos de flotas de agentes en producción, en lugar de los típicos corpus genéricos de texto. Eso sesga la calibración hacia la distribución de prompts conversacionales y de herramienta propios de un despliegue agéntico, lo que debería preservar mejor la fidelidad en ese régimen concreto, a costa de una calibración menos representativa para otros dominios. El autor declara una degradación inferior a 0,01 puntos de perplejidad frente a BF16, una cifra plausible para W8A16 pero que no está respaldada en la información disponible con evaluaciones por tarea (MMLU, HumanEval u otras). No se detallan datos de preentrenamiento del modelo base: número de tokens, composición del corpus, ni si hubo RLHF o DPO, porque el repositorio cuantizado no los reproduce. Fuentes de prensa indican que el modelo de 33B se usa como profesor para destilar habilidades agénticas en modelos más pequeños, incluida una versión de 3B prevista.
+La innovacion de este checkpoint concreto esta en el proceso de cuantizacion. Se aplica AutoRound v0.15.1 con precision simetrica INT8 en pesos y activaciones en 16 bits (W8A16), empaquetado en GPTQ. La calibracion se realizo con 256 turnos reales de una flota de produccion multi-turno, lo que segun el autor protege cabezas de atencion criticas y proyecciones del router frente a la degradacion por cuantizacion. El resultado declarado es una perplexity en WikiText-2 inferior a 3,86 frente a los ~3,85 del BF16, es decir, una retencion superior al 99,5%. El checkpoint es compatible con vLLM y con aceleracion Marlin INT8 en tensor cores para inferencia por lotes de alto throughput.
 
 ## Capacidades
 
-- Generación de texto y continuación de prompt en chino e inglés, propio de un modelo Base sin ajuste de instrucciones.
-- Aprendizaje en contexto y few-shot prompting: al ser un modelo base, rinde mejor con ejemplos demostrativos que con instrucciones imperativas.
-- Procesamiento de contexto largo: 128 000 tokens según la model card, con soporte de caché KV en FP8 en el despliegue vLLM sugerido.
-- Base para fine-tuning supervisado y ajuste con preferencias, al conservar la distribución del modelo original con cuantización casi sin pérdida declarada.
-- Generación de datos sintéticos y aumento de corpus en chino e inglés.
-- No se documenta soporte nativo de tool calling o function calling en esta variante Base.
-- No se documenta modo de razonamiento explícito (thinking mode), visión, audio ni otras modalidades.
-- No se documentan capacidades de agente multi-paso verificadas para este checkpoint; las cifras agénticas de la familia Nanbeige4.3-33B corresponden presumiblemente a variantes ajustadas y no se han validado aquí.
+- Generacion de texto autoregresiva en chino e ingles con calidad cercana al modelo BF16.
+- Razonamiento y capacidades de agente, segun los tags del repositorio (agent, reasoning).
+- Soporte de conversacion multi-turno, con calibracion realizada sobre turnos reales de produccion.
+- Manejo de contextos largos de hasta 128.000 tokens de forma nativa.
+- Compatibilidad con vLLM y text-generation-inference para despliegue en servidor.
+- Inferencia por lotes acelerada mediante Marlin INT8 en GPUs Ampere y posteriores.
+- Capacidades de tool calling o function calling: no disponible en la informacion proporcionada.
+- Capacidades multimodales (vision, audio): no disponible; el modelo es solo de texto.
 
 ## Casos de uso
 
-- Fine-tuning supervisado sobre dominio propio: al ser un Base cuantizado en W8A16, sirve como punto de partida para LoRA o QLoRA en dos GPUs de 24 GB, reduciendo el coste de infraestructura frente a servir el BF16 completo.
-- Generación de datos sintéticos bilingües (zh/en): el modelo puede producir corpus de continuación y paráfrasis a granel; conviene filtrar por perplejidad y deduplicar antes de reutilizar los datos.
-- Procesamiento de documentos largos en chino e inglés: con 128 000 tokens de contexto declarados, encaja en tareas de resumen extractivo, extracción de cláusulas contractuales o análisis de expedientes completos sin troceado agresivo.
-- Destilación de un modelo mayor: fuentes externas señalan que la familia 33B se emplea como profesor para destilar habilidades en modelos de 3B; este checkpoint puede actuar como profesor en la generación de trazas, aunque la cuantización introduce un pequeño sesgo respecto al BF16.
-- Evaluación comparativa de recetas de cuantización: el autor publica también una variante W4A16, lo que permite medir el impacto de 8 frente a 4 bits sobre las mismas tareas y el mismo conjunto de calibración.
-- Servicio de autocompletado y continuación de texto en producción: con `TP=2` en dos RTX 4090 o A10 se obtiene una latencia de primera respuesta adecuada para autocompletado interactivo, siempre que el caso no requiera seguir instrucciones complejas.
-- Investigación en adaptación multilingüe zh-en: el modelo base permite estudiar transferencia entre ambos idiomas sin el sesgo de un ajuste instruccional previo.
-- Reproducción de experimentos de calibración: los 256 turnos de agentes en producción documentados por el autor permiten replicar el efecto de calibrar con distribución conversacional frente a corpus genéricos.
+- Atencion al cliente automatizada: el modelo puede mantener conversaciones multi-turno largas y coherentes gracias a su ventana de 128k tokens, lo que permite incluir historial extenso, politicas de la empresa y documentacion de producto en el mismo contexto sin truncar.
+- Analisis de documentos extensos en chino e ingles: resumen, extraccion de entidades y respuesta a preguntas sobre contratos, informes tecnicos o expedientes que superen las decenas de miles de tokens, aprovechando el contexto nativo completo en la variante W8A16.
+- Generacion y revision de codigo en pipelines internos: aunque no se documenta tool calling, el modelo puede integrarse en flujos de revision de parches o generacion de tests donde se requiera contexto amplio de repositorio, desplegado en vLLM con batching.
+- Despliegue en infraestructura de doble GPU consumer: equipos con dos RTX 3090 o 4090 pueden servir el modelo con TP=2 y unos 16,8 GiB por tarjeta, habilitando prototipos de agentes o asistentes internos sin acceso a GPUs de datacenter.
+- Servicio de inferencia de alta fidelidad en produccion: entornos donde no se tolera degradacion de calidad pueden usar esta variante W8A16 como referencia casi lossless, con menos de 0,01 puntos de delta de perplexity frente a BF16.
+- Procesamiento por lotes de corpus bilingues: clasificacion, etiquetado y generacion de resumenes sobre grandes volumenes de texto en chino e ingles con throughput elevado gracias a Marlin INT8 y al soporte de vLLM.
+- Investigacion sobre cuantizacion: sirve como punto de comparacion de fidelidad frente a las variantes W4A16 y W3A16 del mismo autor, permitiendo medir el impacto de la precision en tareas concretas.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | Resultado | Contexto del dato |
-|---|---|---|
-| Terminal-Bench 2.1 | 80,9 | Citado por prensa para Nanbeige4.3-33B; no se especifica si corresponde a la variante Base o a una ajustada, ni está verificado |
-| Delta de perplejidad vs BF16 | < 0,01 | Declarado por el autor de la cuantización |
-| MMLU | No disponible | — |
-| HumanEval | No disponible | — |
-| GSM8K | No disponible | — |
-| Throughput y latencia | No disponible | No se publican tokens/s ni TTFT |
+Los datos disponibles son de perplexity en WikiText-2 (100.000 tokens, sliding window con seqlen=2048 y stride=512, hardware NVIDIA Ampere), no de benchmarks de tareas como MMLU o HumanEval.
 
-No se han publicado resultados de benchmarks específicos de este checkpoint cuantizado en la información disponible. El dato de Terminal-Bench 2.1 procede de fuentes secundarias que describen el lanzamiento de la familia y no de una evaluación del repositorio `stuchapin/Nanbeige4.3-33B-Base-W8A16-AutoRound`.
+| Modelo | Formato | Hardware objetivo | VRAM de pesos | PPL WikiText-2 | Retencion vs BF16 |
+|---|---|---|---|---|---|
+| Full BF16 (base) | BF16 | Quad RTX 3090 / A100 | 65,0 GiB | ~3,85 (referencia) | 100,0% |
+| W8A16 (este checkpoint) | AutoRound GPTQ simetrico | Dual 24 GB (TP=2) / 48 GB | 33,5 GiB | < 3,86 (delta < 0,01) | > 99,5% |
+| W4A16 | AutoRound GPTQ / Marlin | Single 24 GB (3090/4090) | 19,3 GiB | 3,943 (delta +0,09) | 98,8% |
+| W3A16 | AutoRound GPTQ simetrico | 16 GB (4080/T4) o 24 GB con 32k+ contexto | 14,5 GiB | 5,336 (delta +1,48) | 93,0% |
+
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM de pesos: ~33,5 GiB en total para la cuantización W8A16; ~16,8 GiB por tarjeta con paralelismo tensorial de 2.
-- Configuración mínima recomendada por el autor: 2× 24 GB (RTX 3090, RTX 4090, A10) con `TP=2`, dejando ~7,5 GiB por GPU para caché KV en FP8 y procesamiento de contexto largo.
-- Alternativa de una sola GPU: A6000, A100 o H100 de 48 GB o más.
-- No cabe en una GPU de consumo de 24 GB en configuración de una sola tarjeta con contexto largo; sí en dos de 24 GB.
-- Despliegue recomendado: vLLM con `--quantization auto_round`, `--tensor-parallel-size 2`, `--max-model-len 32768`, `--gpu-memory-utilization 0.93` y `--kv-cache-dtype fp8`.
-- Despliegue alternativo: `transformers` con `device_map="auto"`, `torch_dtype=torch.float16` y `trust_remote_code=True` para inferencia distribuida automática.
-- No se documenta compatibilidad con llama.cpp, Ollama ni TGI; el formato GPTQ/AutoRound apunta a vLLM como vía principal.
-- Latencia y throughput: no disponibles. El límite práctico de `--max-model-len 32768` en el ejemplo del autor sugiere que el contexto completo de 128 000 tokens exige ajustar la utilización de memoria o reducir el tamaño de lote.
+- VRAM estimada para pesos: ~33,5 GiB en W8A16; ~19,3 GiB en W4A16; ~14,5 GiB en W3A16.
+- Configuracion recomendada: dos GPUs de 24 GB (RTX 3090 o 4090) con TP=2, usando ~16,8 GiB por tarjeta y dejando ~7,5 GiB por GPU para cache KV en FP8 y contextos de 32k a 128k.
+- GPUs de una sola tarjeta: A6000, A100, H100 o RTX 6000 Ada con 48 GB u 80 GB para contexto completo de 128k.
+- GPU consumer: no cabe en una unica tarjeta de 24 GB en esta variante W8A16; para eso estan las variantes W4A16 (single 24 GB) y W3A16 (16 GB).
+- Motores de despliegue: vLLM (con soporte de Marlin INT8), text-generation-inference y transformers; llama.cpp u Ollama no estan mencionados en la informacion disponible.
+- Throughput y latencia: no se publican cifras de throughput para W8A16; para W4A16 el autor indica un punto dulce de 39,6 tok/s en contexto de 8k.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Formato / VRAM | Licencia | Notas |
 |---|---|---|---|---|---|
-| Nanbeige4.3-33B-Base (W8A16 AutoRound) | 33B denso | 128K (card) / hasta 512K (prensa, sin confirmar) | `nanbeige-license` (prensa cita Apache 2.0) | Hugging Face, vLLM | Objeto de esta ficha; calibrado con turnos de agentes |
-| Qwen3-32B | 32,8B denso | 32 768 nativo, ampliable con YaRN | Apache 2.0 | Hugging Face, amplio ecosistema de cuantizaciones | Alternativa madura en tooling y despliegue |
-| Gemma-3-27B | 27B denso | 128K | Licencia Gemma (uso comercial con condiciones) | Hugging Face, Vertex AI | Multimodal en la familia; licencia menos permisiva |
-| Mistral Small 3.1 24B | 24B denso | 128K | Apache 2.0 | Hugging Face, vLLM, Ollama | Menor huella, cabe en una GPU de 48 GB con margen |
+| Nanbeige4.3-33B-Base W8A16 (este) | 33B denso | 128k | GPTQ INT8, 33,5 GiB | nanbeige-license | Fidelidad > 99,5% vs BF16 |
+| Nanbeige4.3-33B-Base W4A16 | 33B denso | 128k (practico 8k en 24 GB) | GPTQ/Marlin, 19,3 GiB | nanbeige-license | 98,8% de fidelidad, cabe en una RTX 3090/4090 |
+| Nanbeige4.3-33B-Base W3A16 | 33B denso | 128k (practico 32k+ en 24 GB) | GPTQ INT8, 14,5 GiB | nanbeige-license | 93,0% de fidelidad, para 16 GB |
+| Nanbeige4.3-33B-Base BF16 | 33B denso | 128k | BF16, 65,0 GiB | nanbeige-license | Referencia sin cuantizar |
 
-Los datos de los modelos comparables proceden de sus especificaciones públicas y no se han verificado contra benchmarks ejecutados en el mismo entorno; no se dispone de una comparación de rendimiento homogénea entre Nanbeige4.3-33B y estas alternativas en la información proporcionada.
+No se dispone de datos de benchmarks de tareas que permitan comparar con modelos de otros desarrolladores de la misma categoria en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Es un modelo **Base**, no instruido: no cabe esperar seguimiento fiable de instrucciones, formato de chat ni rechazo de peticiones dañinas sin un ajuste posterior.
-- Las capacidades agénticas y de razonamiento que la prensa atribuye a Nanbeige4.3-33B no están verificadas para este checkpoint Base cuantizado.
-- Discrepancia de contexto no resuelta: 128 000 tokens en la model card frente a 524 288 en fuentes de prensa. Verificar en el repositorio del modelo base antes de dimensionar caché KV.
-- Discrepancia de licencia: la etiqueta de Hugging Face es `license: other` con `nanbeige-license`, mientras que varias fuentes secundarias afirman Apache 2.0. Es imprescindible leer el fichero LICENSE del modelo base antes de cualquier uso comercial.
-- Riesgo de alucinación inherente a un modelo de lenguaje base, agravado en dominios no representados en el corpus de preentrenamiento, cuyo contenido no se documenta.
-- Idiomas limitados a chino e inglés según la model card; el rendimiento en castellano no está evaluado y previsiblemente será inferior.
-- La calibración se hizo con 256 turnos de agentes en producción, lo que puede introducir sesgo hacia ese registro conversacional y degradar ligeramente otros dominios.
-- La cuantización W8A16 no es sin pérdida: el delta de perplejidad < 0,01 lo declara el autor y no se acompaña de evaluaciones por tarea.
-- El checkpoint tiene 0 descargas y 0 likes, sin validación independiente de la comunidad; tratar como artefacto no auditado.
-- El ejemplo de despliegue limita `--max-model-len` a 32 768, muy por debajo del contexto declarado; usar la ventana completa exige más VRAM para caché KV o cuantización adicional.
-- `trust_remote_code=True` en el código de ejemplo implica ejecutar código del repositorio; revisar antes de usarlo en entornos de producción.
+- La licencia es "nanbeige-license" (other), distinta de licencias permisivas como Apache 2.0 o MIT; es necesario revisar el texto enlazado antes de cualquier uso comercial.
+- El modelo solo soporta chino e ingles de forma declarada; el rendimiento en castellano no esta documentado y podria degradarse.
+- Riesgo de alucinacion inherente a los modelos de lenguaje; no se documentan mitigaciones especificas en la model card.
+- La calibracion de la cuantizacion se hizo con turnos de una flota de produccion concreta; su comportamiento en dominios muy distintos puede diferir del reportado.
+- Aunque la perdida de perplexity es minima, la cuantizacion INT8 puede afectar tareas sensibles a precision numerica (matematicas, razonamiento de varios pasos) de forma no medida en los benchmarks disponibles.
+- Existe una discrepancia entre los 33.000 millones de parametros declarados en la model card y los 10.374.999.040 registrados en safetensors; conviene verificar el checkpoint antes de desplegarlo.
+- No hay datos publicados sobre sesgos, tool calling, rendimiento en agentes multi-paso ni latencia en esta variante.
+- El repositorio tiene 0 likes y 1.200 descargas, lo que sugiere una validacion comunitaria limitada.
 
 ## Enlaces
 
-- Repositorio Hugging Face de la cuantización: https://huggingface.co/stuchapin/Nanbeige4.3-33B-Base-W8A16-AutoRound
+- Repositorio Hugging Face: https://huggingface.co/stuchapin/Nanbeige4.3-33B-Base-W8A16-AutoRound
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B-Base
 - Licencia del modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B-Base/blob/main/LICENSE
-- Variante W4A16 del mismo autor: https://huggingface.co/stuchapin/Nanbeige4.3-33B-Base-W4A16-AutoRound
-- Nanbeige4-3B-Base (modelo relacionado de menor tamaño): https://huggingface.co/Nanbeige/Nanbeige4-3B-Base
-- Guía del lanzamiento en explainx.ai: https://explainx.ai/blog/nanbeige-4-3-33b-open-agentic-model-guide-2026
-- Nota de AI Weekly sobre el lanzamiento: https://aiweekly.co/alerts/nanbeige-opens-33b-model-under-apache-20-with-512k-context
-- Cobertura de AI Brief: https://dailyaibrief.com/news/nanbeige-releases-33b-agent-model-with-512k-context-yoxTglVU
+- Variante W4A16: https://huggingface.co/stuchapin/Nanbeige4.3-33B-Base-W4A16-AutoRound
+- Variante W3A16: https://huggingface.co/stuchapin/Nanbeige4.3-33B-Base-W3A16-AutoRound
+- vLLM: https://github.com/vllm-project/vllm
+- Dataset de evaluacion: https://huggingface.co/datasets/Salesforce/wikitext-2-raw-v1

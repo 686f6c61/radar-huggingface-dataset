@@ -24,7 +24,7 @@
     "conversational"
   ],
   "likes": 2,
-  "downloads_30d": 1238,
+  "downloads_30d": 1239,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
@@ -44,31 +44,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Bubble Charms kostenlos spielen bei RTLspiele.de",
-      "url": "https://spiele.rtl.de/bubble-shooter/bubble-charms.html",
-      "snippet": "Befreie den Wald gemeinsam mit der kleinen Hexe von den bunten Blasen und werde zum Bubble Shooter-Meister – und das alles …"
-    },
-    {
-      "title": "Bubble Charms 2 kostenlos spielen bei RTLspiele.de",
-      "url": "https://spiele.rtl.de/bubble-shooter/bubble-charms-2.html",
-      "snippet": "Bubble Charms geht mit jede Menge neuen Herausforderungen in die zweite Runde! In diesem klassischen Bubble-Shooter-Spiel …"
-    },
-    {
-      "title": "Kostenlose Online Spiele - jetzt spielen bei RTLspiele.de",
-      "url": "https://spiele.rtl.de/",
-      "snippet": "Bei RTLspiele kannst du zwischen vielen verschiedenen Bubble Shootern auswählen. Die beliebtesten Shooter-Spiele sind: Auch für …"
-    },
-    {
-      "title": "Bubble-Shooter - kostenlos spielen | RTLspiele.de",
-      "url": "https://spiele.rtl.de/bubble-shooter/",
-      "snippet": "Du musst deine Bubbles in mindestens zwei andere Kugeln der gleichen Farbe schießen, damit sie zerplatzen. Gelingt es dir mit …"
-    },
-    {
-      "title": "Bubble Charms Christmas kostenlos spielen bei RTLspiele.de",
-      "url": "https://spiele.rtl.de/bubble-shooter/bubble-charms-christmas.html",
-      "snippet": "Spieler vertreiben sich täglich die Langeweile mit kostenlosen Onlinespielen des holländischen Studios CoolGames. Wenn die Tage …"
-    }
-  ]
+  "sources": []
 }

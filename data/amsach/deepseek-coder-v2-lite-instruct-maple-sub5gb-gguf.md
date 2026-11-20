@@ -1,95 +1,91 @@
 # AmSach/DeepSeek-Coder-V2-Lite-Instruct-MAPLE-Sub5GB-GGUF
 
 ## Resumen
+DeepSeek-Coder-V2-Lite-Instruct-MAPLE-Sub5GB-GGUF es una cuantización agresiva del modelo DeepSeek-Coder-V2-Lite-Instruct (15.7B parámetros totales, 2.4B activos), desarrollada por Aman Sachan (AmSach) mediante una técnica propia denominada MAPLE (Manifold-Activated Pruning of Latent Experts). El objetivo es comprimir el modelo MoE original hasta un contenedor GGUF de 4.50 GB que quepa íntegramente en la VRAM de GPUs de consumo con 6 GB, como la RTX 4050 Laptop, evitando el offload a CPU que degrada la velocidad de generación.
 
-DeepSeek-Coder-V2-Lite-Instruct-MAPLE-Sub5GB-GGUF es una cuantizacion estructural del modelo DeepSeek-Coder-V2-Lite-Instruct (13.456.756.224 parametros reales segun safetensors) desarrollada por Aman Sachan. Aplica una tecnica propia denominada MAPLE (Manifold-Activated Pruning of Latent Experts) que reduce el numero de expertos enrutados por capa de 64 a 54, conservando intactos los dos expertos compartidos invariantes. El resultado es un contenedor GGUF de 4,50 GB que cabe integramente en la VRAM de una GPU de portatil de 6 GB, evitando el offload parcial a CPU por PCIe.
+La técnica MAPLE perfila la activación empírica de tokens sobre los 26 bloques MoE y retiene los 54 expertos enrutados principales por capa (84.4% del total), preservando los 2 expertos compartidos invariantes al 100%. El resultado es un modelo de 13.5B parámetros totales que mantiene los 2.4B activos por token y la arquitectura de atención MLA (Multi-Head Latent Attention) con rango 512. En la RTX 4050 alcanza 65.6-76.3 tokens/s de generación frente a los 4.5-10 TPS del modelo original con offload híbrido.
 
-El modelo base es un transformer MoE con atencion Multi-Head Latent Attention (MLA) de rango 512, 2,4B parametros activos por token y enrutamiento top-6. La poda afecta unicamente a los expertos enrutados (84,4 % de retencion), manteniendo la dimension intermedia de 1408 y la masa activa por token. El autor reporta velocidades de generacion de 65,6 a 76,3 tokens/s en una RTX 4050 Laptop de 6 GB, frente a los 4,5-10 tokens/s que se obtienen con las cuantizaciones oficiales Q4/Q8 en modo hibrido CPU/GPU.
-
-Es relevante porque demuestra una via practica para ejecutar un MoE de 13,5B en hardware consumer de gama de entrada sin degradar la velocidad a niveles inutilizables. La licencia es Apache 2.0, heredada del modelo base.
+Es relevante para desarrolladores que necesitan ejecutar un modelo de código de calidad en hardware portátil limitado, aunque su licencia Apache 2.0 y su naturaleza de cuantización experimental exigen validar el comportamiento en producción antes de adoptarlo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer MoE con Multi-Head Latent Attention (MLA, rango 512) |
-| Parametros totales | 13.456.756.224 (13,5B) |
-| Parametros activos | 2,4B por token |
+| Parametros totales | 13.456.756.224 (13.5B) |
+| Parametros activos | 2.4B por token |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF (contenedor unico de 4,50 GB; nivel de cuantizacion exacto no especificado) |
+| Tipos de cuantizacion | GGUF con poda de expertos (MAPLE); no se especifican niveles Q/IQ concretos |
 | Idiomas soportados | en |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (compatible con llama.cpp y Ollama) |
+| Formato de pesos | GGUF (llama.cpp, Ollama) |
 
 ## Arquitectura y entrenamiento
+El modelo base es DeepSeek-Coder-V2-Lite-Instruct, un transformer MoE con 64 expertos enrutados por capa (top-6 activos) más 2 expertos compartidos invariantes, dimensión intermedia de 1408 y atención MLA de rango 512 que reduce el KV cache. MAPLE reduce los expertos enrutados de 64 a 54 por capa (84.4% de retención) mediante perfilado de la manifold de activación de tokens, manteniendo intactos los expertos compartidos y la dimensión intermedia. El contenedor resultante ocupa 4.50 GB y reduce el total de parámetros un 14.0% (de 15.7B a 13.5B) sin alterar los 2.4B activos por token.
 
-El modelo base DeepSeek-Coder-V2-Lite-Instruct es un transformer de mezcla de expertos con atencion MLA. Cada una de las 27 capas MoE contiene 64 expertos enrutados mas 2 expertos compartidos invariantes; el enrutamiento es top-6 sobre los expertos enrutados. La dimension intermedia de cada experto es 1408. La variante MAPLE reduce los expertos enrutados de 64 a 54 por capa (retencion del 84,4 %), seleccionados mediante perfilado empirico de las manifold de activacion de tokens a traves de los 26 bloques MoE. Los expertos compartidos se conservan al 100 % y la masa activa por token permanece en 2,4B. El resultado es una reduccion de huella del 14,0 % (de 15,7B a 13,5B parametros) que permite que las 27 capas y la cache KV de MLA residan integramente en VRAM.
-
-No se dispone de informacion sobre el corpus de entrenamiento original del modelo base ni sobre procesos de RLHF o DPO en la informacion proporcionada. El autor menciona un dataset de referencia `technical-code-corpus`, pero no detalla su composicion ni el volumen de tokens. La innovacion tecnica destacable es el propio metodo MAPLE de poda de expertos guiada por activacion, que difiere de la cuantizacion clasica al eliminar capacidades latentes no activadas en lugar de reducir precision.
+No se dispone de información sobre el corpus de entrenamiento original, el número de tokens, ni sobre si hubo RLHF o DPO en el modelo base. La model card del autor no documenta el proceso de calibración de MAPLE más allá del perfilado de activaciones, ni especifica el dataset técnico citado (`technical-code-corpus`) en detalle. La innovación técnica principal es la poda selectiva de expertos guiada por activación empírica, que permite mantener la capacidad de razonamiento del MoE con una huella de memoria muy reducida.
 
 ## Capacidades
-
-- Generacion de codigo en multiples lenguajes, con ejemplos verificados en C++20 (buffer circular SPSC lock-free con sincronizacion atomica) y Python (solver de programacion dinamica sobre hipergrafo dirigido con min-heap de Dijkstra).
-- Generacion de scripts de produccion, como un rate limiter de token bucket distribuido con Redis y script Lua.
-- Razonamiento multi-paso aplicado a problemas algoritmicos y de estructuracion de datos.
-- Conversacion multi-turno (tag `conversational` en el repositorio).
-- Compatibilidad con endpoints y despliegue via llama.cpp y Ollama.
-- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
-- Capacidades de vision o audio: no disponibles.
-- Capacidades multilingues: limitadas a ingles (`en`).
+- Generación de texto y código en inglés, con especialización en lenguajes de programación (C++20, Python, Lua, entre otros).
+- Razonamiento multi-paso y resolución de problemas algorítmicos (grafos, programación dinámica, estructuras de datos concurrentes).
+- Generación de código de producción con sincronización atómica, scripts y fallbacks.
+- Soporte de conversación multi-turno mediante plantilla de tokens específica (`<｜User｜>`, `<｜Assistant｜>`, `<｜begin of sentence｜>`, `<｜end of sentence｜>`).
+- Compatibilidad con llama.cpp y Ollama para despliegue local.
+- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo thinking en la información disponible.
 
 ## Casos de uso
-
-- Desarrollo asistido en portatiles con GPU de 6 GB: el contenedor de 4,50 GB permite ejecutar el MoE completo en VRAM sin offload, con 65-76 tokens/s de generacion, lo que hace viable la autocompletacion y el chat de codigo en movilidad.
-- Generacion de codigo C++ de sistemas: el modelo produce implementaciones con sincronizacion atomica y semantica de memoria correcta (ejemplo verificado de buffer SPSC), adecuado para prototipado de estructuras concurrentes.
-- Algoritmos y estructuras de datos en Python: genera solvers de programacion dinamica y grafos (Dijkstra con min-heap) completos en una sola pasada de unos 18 segundos en RTX 4050.
-- Scripts de infraestructura y backend: produce scripts Lua para Redis y logica de rate limiting lista para produccion, util en equipos que trabajan sobre servicios distribuidos.
-- Entornos con restricciones de VRAM: al no requerir offload PCIe, evita el cuello de botella de 4,5-10 tokens/s de las cuantizaciones Q4/Q8 oficiales, adecuado para estaciones de trabajo moviles.
-- Evaluacion e investigacion de tecnicas de poda de MoE: sirve como referencia reproducible del metodo MAPLE para comparar retencion de expertos frente a calidad.
-- Despliegue local con Ollama o llama.cpp: integrable en flujos de trabajo de desarrollo sin infraestructura de servidor GPU.
+- Desarrollo en portátiles con GPU de 6 GB: ejecución 100% en VRAM de un modelo de código de 13.5B sin offload, con 65-76 TPS de generación, adecuado para asistentes de código en entornos con recursos limitados.
+- Generación de código de sistemas en C++: el modelo produce implementaciones de buffers lock-free y sincronización atómica (verificado en benchmarks con resultados bit-exactos).
+- Resolución de problemas algorítmicos: resolución de programación dinámica sobre grafos dirigidos con colas de prioridad (Dijkstra con min-heap), útil para entornos educativos o de prototipado.
+- Scripts de infraestructura: generación de rate limiters distribuidos con Redis y Lua, con fallbacks de producción.
+- Asistencia de código offline: al ser GGUF y compatible con llama.cpp/Ollama, puede desplegarse en entornos sin conectividad o con requisitos de privacidad.
+- Prototipado rápido en CI/CD: integración en pipelines locales para generación y revisión de código en inglés, aprovechando la baja latencia en GPUs de consumo.
 
 ## Benchmarks y rendimiento
 
-Los datos disponibles son mediciones de velocidad en una HP Victus con AMD Ryzen 7 7840HS, NVIDIA RTX 4050 Laptop 6 GB, Windows 11 y CUDA 12.4. No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K) en la informacion disponible.
-
-| Tarea | Prompt TPS | Gen TPS | Tiempo total | Estado reportado |
+| Tarea | Prompt TPS | Gen TPS | Tiempo total | Estado |
 |---|---|---|---|---|
-| Lock-Free SPSC Ring Buffer (C++20) | 236,07 | 65,64 | 19,59 s | Sincronizacion atomica correcta |
-| Directed Hypergraph DP Solver (Python) | 370,15 | 64,70 | 18,60 s | Dijkstra con min-heap completo |
-| Distributed Redis Token Bucket Rate Limiter | 270,41 | 65,04 | 18,04 s | Script Lua con fallbacks |
+| Lock-Free SPSC Ring Buffer (C++20) | 236.07 | 65.64 - 73.06 | 19.59 s | Sincronización atómica bit-exacta |
+| Directed Hypergraph DP Solver (Python) | 370.15 | 64.70 | 18.60 s | DP de grafo con min-heap Dijkstra completo |
+| Distributed Redis Token Bucket Rate Limiter | 270.41 | 65.04 | 18.04 s | Script Lua de producción con fallbacks |
 
-Uso de VRAM medido: 4.850 MiB de 6.141 MiB, con las 27 capas en VRAM (0 capas en CPU).
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Los datos anteriores son mediciones de rendimiento de inferencia en una RTX 4050 Laptop (6 GB), no evaluaciones de calidad.
 
 ## Requisitos de hardware
-
-- VRAM estimada: 4,50 GB de contenedor; medicion real de 4.850 MiB en RTX 4050 Laptop de 6 GB con las 27 capas en GPU.
-- GPU recomendadas: RTX 4050/3050/2060 Laptop de 6 GB o superiores; cualquier GPU con al menos 5,5 GB de VRAM libre.
-- Cabe en GPU consumer: si, en tarjetas de 6 GB o mas. En 6 GB hay que considerar el consumo de Windows DWM (~700-800 MB), que deja unos 5.340 MB utilizables.
-- Opciones de despliegue: llama.cpp y Ollama (tags del repositorio). vLLM y TGI no estan indicados en la informacion disponible.
-- Latencia y throughput: 65,6-76,3 tokens/s de generacion y 236-370 tokens/s de procesamiento de prompt en RTX 4050 Laptop. El autor reporta una mejora de 7,5x a 15x frente al modo hibrido con cuantizaciones oficiales.
+- VRAM estimada: 4.50 GB de contenedor; en la prueba verificada ocupa 4,850 MiB de 6,141 MiB en una RTX 4050 Laptop.
+- GPU recomendadas: RTX 4050 Laptop 6 GB (verificada), RTX 3050, RTX 2060 mobile y cualquier GPU con al menos 5-6 GB de VRAM libre.
+- Cabe en GPU de consumo: sí, en GPUs de 6 GB o más; el objetivo declarado es ejecución 100% en VRAM con 0 capas offloaded a CPU.
+- Opciones de despliegue: llama.cpp y Ollama (tags del modelo); no se documenta soporte de vLLM ni TGI.
+- Latencia y throughput: 65.6-76.3 TPS de generación y 236-370 TPS de procesamiento de prompt en RTX 4050 Laptop; frente al modelo original con offload híbrido (4.5-10 TPS) supone una mejora de 7.5x a 15x.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Activos | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Activos | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|---|
-| MAPLE Sub5GB (este) | 13,5B | 2,4B | no disponible | Apache 2.0 | GGUF 4,50 GB | 54 expertos/layer, 100 % en VRAM de 6 GB |
-| DeepSeek-Coder-V2-Lite-Instruct (base) | 15,7B | 2,4B | no disponible | Apache 2.0 | safetensors | 64 expertos/layer, requiere offload en 6 GB |
-| DeepSeek-Coder-V2-Lite-Instruct Q4 oficial | 15,7B | 2,4B | no disponible | Apache 2.0 | GGUF 8,57 GB | Excede 6 GB, offload PCIe, 4,5-10 TPS |
-| DeepSeek-Coder-V2-Lite-Instruct IQ2 oficial | 15,7B | 2,4B | no disponible | Apache 2.0 | GGUF 5,64 GB | Ajusta al limite, menor calidad por cuantizacion agresiva |
+| DeepSeek-Coder-V2-Lite-Instruct-MAPLE (este) | 13.5B | 2.4B | no disponible | Apache 2.0 | GGUF 4.50 GB | Poda de expertos, 100% en VRAM de 6 GB |
+| DeepSeek-Coder-V2-Lite-Instruct (original) | 15.7B | 2.4B | no disponible | Apache 2.0 | safetensors / GGUF Q4 8.57 GB, IQ2 5.64 GB | Requiere offload híbrido en GPUs de 6 GB (4.5-10 TPS) |
+| Otras cuantizaciones GGUF del mismo base | 15.7B | 2.4B | no disponible | Apache 2.0 | GGUF Q4/Q8 | No caben en 6 GB sin offload |
+
+No se dispone de datos de benchmarks de calidad que permitan comparar el rendimiento del modelo podado frente al original o frente a alternativas de otros fabricantes.
 
 ## Limitaciones y advertencias
-
-- La poda de expertos puede degradar la calidad en dominios poco representados en el perfilado de activacion; no se han publicado benchmarks de calidad que lo cuantifiquen.
-- El modelo solo declara soporte de ingles (`en`); el rendimiento en castellano no esta verificado.
-- La longitud de contexto no esta documentada en la informacion disponible; no debe asumirse la del modelo base sin verificacion.
-- Riesgo de alucinacion inherente a los modelos de codigo: los ejemplos generados deben compilarse y testearse antes de usarse en produccion.
-- El nivel exacto de cuantizacion del contenedor GGUF no se especifica, lo que dificulta estimar la perdida de precision frente al modelo base.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta; no hay validacion independiente de la comunidad.
-- La licencia Apache 2.0 permite uso comercial, pero las condiciones del modelo base deben verificarse por separado.
-- El metodo MAPLE es una contribucion del autor sin publicacion revisada por pares en la informacion disponible.
+- La poda de expertos (64 a 54 por capa) puede degradar la calidad en dominios poco representados en el perfilado de activaciones; no se han publicado evaluaciones de calidad que lo cuantifiquen.
+- El modelo solo declara soporte de inglés; el rendimiento en castellano u otros idiomas no está verificado.
+- Riesgo de alucinación inherente a los modelos de código, sin datos específicos de mitigación en la model card.
+- No se documenta la longitud de contexto soportada, lo que impide planificar tareas de contexto largo.
+- Aunque la licencia es Apache 2.0, el uso comercial de una cuantización podada no verificada exige validación propia del comportamiento.
+- El modelo es de noviembre de 2026 y la información disponible es limitada; los benchmarks publicados son de velocidad de inferencia, no de calidad.
+- Requiere la plantilla de tokens específica de DeepSeek-Coder-V2; un uso incorrecto de la sintaxis de prompt degrada las respuestas.
 
 ## Enlaces
-
 - Hugging Face: https://huggingface.co/AmSach/DeepSeek-Coder-V2-Lite-Instruct-MAPLE-Sub5GB-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
-- Contacto del autor: amansachan92905@gmail.com
+- GitHub del proyecto MAPLE: https://github.com/AmSach/maple
+- Sitio interactivo: https://amsach.github.io/maple/
+- Discusión en Hacker News: https://news.ycombinator.com/item?id=50463281
+- Showcase en llama.cpp: https://github.com/ggml-org/llama.cpp/discussions/31894
+- DOI Kaggle: https://doi.org/10.34740/KAGGLE/M/786779
+- DOI Zenodo: https://doi.org/10.5281/zenodo.24042480
+- Google Scholar del autor: https://scholar.google.com/citations?user=dfgiWLYAAAAJ&hl=en
+- LinkedIn del autor: https://linkedin.com/in/theamansachan
+- Instagram del autor: https://instagram.com/i.amsach

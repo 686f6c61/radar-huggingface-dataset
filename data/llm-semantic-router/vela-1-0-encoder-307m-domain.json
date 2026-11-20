@@ -55,31 +55,5 @@
   "renamed_to": "vllm-sr/Vela-1.0-Encoder-307M-Domain",
   "renamed_at": "2026-11-11T06:05:30.161Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Grand modèle de langage — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage",
-      "snippet": "Les LLM sont des fonctions mathématiques dont l'entrée et la sortie sont des listes de nombres. Pour que ceux-ci fonctionnent avec …"
-    },
-    {
-      "title": "Large language model - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Large_language_model",
-      "snippet": "An LLM is given some examples where the \"assistant\" verbally breaks down the thought process before arriving at an answer. The …"
-    },
-    {
-      "title": "Classement LLM 2026 : Top 100 des meilleurs modèles d’IA comparés",
-      "url": "https://www.ia-insights.fr/classement-des-meilleurs-llm/",
-      "snippet": "Classement des 100 meilleurs LLM en 2026 : qualité, vitesse et prix comparés. Données Artificial Analysis, mises à jour …"
-    },
-    {
-      "title": "Classement des meilleurs LLM en septembre 2026 : top 15 - Digitiz",
-      "url": "https://digitiz.fr/classement-llm/",
-      "snippet": "Sep 1, 2026 · Voici mon top 15 des LLM les plus performants en septembre 2026, avec leurs tarifs et mes recommandations selon …"
-    },
-    {
-      "title": "Large Language Model (LLM) - GeeksforGeeks",
-      "url": "https://www.geeksforgeeks.org/artificial-intelligence/large-language-model-llm/",
-      "snippet": "May 2, 2026 · LLM Working of LLM LLMs are primarily based on the Transformer architecture which enables them to learn long …"
-    }
-  ]
+  "sources": []
 }

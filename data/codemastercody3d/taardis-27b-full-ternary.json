@@ -27,7 +27,7 @@
     "conversational"
   ],
   "likes": 11,
-  "downloads_30d": 1454,
+  "downloads_30d": 1433,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
@@ -47,31 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Taiwan - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Taiwan",
-      "snippet": "With around 23.9 million inhabitants, Taiwan is among the most densely populated countries. Taiwan has been settled for at least …"
-    },
-    {
-      "title": "CodeMasterCody3D/tardis-27b-body · Hugging Face",
-      "url": "https://huggingface.co/CodeMasterCody3D/tardis-27b-body",
-      "snippet": "CodeMasterCody3D / tardis-27b-body like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
-    },
-    {
-      "title": "Republikken Kina (Taiwan) – Wikipedia",
-      "url": "https://no.wikipedia.org/wiki/Republikken_Kina_(Taiwan)",
-      "snippet": "Taiwan, offisielt Republikken Kina (ROC), er et land i Øst-Asia med sjøgrenser mot Kina (PRC) i nordvest, Japan i nordøst, og …"
-    },
-    {
-      "title": "CodeMasterCody3D (Cody Dixon) - Hugging Face",
-      "url": "https://huggingface.co/CodeMasterCody3D",
-      "snippet": "User profile of Cody Dixon on Hugging Face"
-    },
-    {
-      "title": "Taiwan – les om historie, språk, politikk – Store norske leksikon",
-      "url": "https://snl.no/Taiwan",
-      "snippet": "Taiwan, som offisielt heter Republikken Kina, er et land og ei øy i Øst-Kina-havet i Øst-Asia. Øya er skilt fra fastlandet (Kina) i vest …"
-    }
-  ]
+  "sources": []
 }

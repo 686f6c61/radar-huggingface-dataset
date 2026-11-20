@@ -2,90 +2,96 @@
 
 ## Resumen
 
-Disctil-Qwen3-1.7B es un modelo de lenguaje de 2.031 millones de parámetros desarrollado por Convergent Intelligence LLC (usuario reaperdoesntknow en Hugging Face) como parte de su colección DistilQwen. Se trata de un fine-tuning mediante SFT (Supervised Fine-Tuning) del modelo base reaperdoesntknow/DiStil-Qwen3-1.7B-uncensored, que a su vez es una destilación del modelo Qwen3-30B-A3B. El modelo está orientado a generación de texto conversacional y se presenta como una variante "sin censura" (uncensored), lo que implica que no incorpora los filtros de seguridad habituales de los modelos comerciales.
+Disctil-Qwen3-1.7B es un ajuste fino por supervisión (SFT) del modelo reaperdoesntknow/DiStil-Qwen3-1.7B-uncensored, que a su vez deriva de la familia Qwen3 de Alibaba. Lo desarrolla reaperdoesntknow, cuenta asociada a Convergent Intelligence LLC: Research Division, dentro de su colección DistilQwen. El modelo resuelve la adaptación conversacional de un modelo destilado de 1.700 millones de parámetros pensado para despliegue en el borde (edge), y resulta relevante por su tamaño reducido (2.031.739.904 parámetros reales según safetensors, unos 4,1 GB en pesos BF16) y por formar parte de una cadena de destilación documentada con material teórico propio.
 
-El entrenamiento se realizó con el framework TRL (Transformers Reinforcement Learning) y el modelo se distribuye en formato safetensors con pesos en BF16. Según fuentes externas, dispone de una ventana de contexto de aproximadamente 33K tokens. La relevancia de este modelo radica en su tamaño reducido (2B parámetros) combinado con técnicas de destilación desde un modelo mucho mayor (30B-A3B), lo que lo hace apto para despliegue en entornos con recursos limitados o en el edge.
+La arquitectura subyacente es la de Qwen3 (transformer decoder-only denso), aunque la model card no detalla capas, cabezas ni dimensiones ocultas. El entrenamiento se realizó con TRL 0.29.1, Transformers 5.0.0, PyTorch 2.10.0+cu128, Datasets 4.0.0 y Tokenizers 0.22.2, sobre GPUs H100 según la documentación del portfolio. La model card incorpora además una sección teórica sobre "Discrepancy Calculus (DISC)" que el autor presenta como marco matemático de refinamiento de pesos, sin evidencia empírica publicada que lo respalde.
 
-El modelo forma parte de una serie que explora la metodología "Structure Over Scale" (estructura sobre escala) y el marco matemático del "Discrepancy Calculus" (DISC), que busca preservar las fronteras estructurales en el espacio de pesos durante el entrenamiento. Sin embargo, la información pública sobre el proceso de destilación y los datos de entrenamiento es limitada.
+El modelo se publica con la etiqueta generated_from_trainer, sft y distillation, y está marcado como compatible con text-generation-inference y endpoints. La licencia no está disponible de forma explícita en la información proporcionada, lo que supone un riesgo relevante para uso comercial. El idioma no está declarado, aunque al derivar de Qwen3 cabe esperar soporte multilingüe amplio, no confirmado por el autor.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (basada en Qwen3, destilada desde Qwen3-30B-A3B) |
-| Parametros totales | 2.031.739.904 (~2,03B) |
-| Parametros activos | No aplicable (modelo denso, no MoE) |
-| Longitud de contexto | 33K (segun Antbase; no confirmado en la model card) |
-| Tipos de cuantizacion | FP4, FP8 (segun FriendliAI); no se especifican otros formatos |
-| Idiomas soportados | No disponible |
-| Licencia | No disponible (la model card indica "licence: license", sin especificar) |
-| Formato de pesos | safetensors (BF16) |
+| Arquitectura | Transformer decoder-only (familia Qwen3, densa); detalles de capas no disponibles |
+| Parametros totales | 2.031.739.904 |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | No disponible en la model card; al ser safetensors BF16 es cuantizable a GGUF/AWQ/GPTQ con herramientas estándar, pero no se documenta |
+| Idiomas soportados | No disponible (herencia de Qwen3 no confirmada por el autor) |
+| Licencia | No disponible |
+| Formato de pesos | safetensors (repo de 4,1 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning SFT del modelo reaperdoesntknow/DiStil-Qwen3-1.7B-uncensored, que a su vez es el resultado de una destilación de conocimiento desde Qwen3-30B-A3B hacia una arquitectura de 1.7B parámetros. El proceso de destilación se realizó con tres variantes de teacher (Instruct, Thinking y Coder) según la colección DistilQwen, aunque no se especifica cuál se utilizó para este modelo concreto. El fine-tuning se ejecutó con el framework TRL (versión 0.29.1) y Transformers 5.0.0, utilizando la técnica SFT estándar.
+El modelo es un ajuste fino SFT sobre DiStil-Qwen3-1.7B-uncensored, que pertenece a la cadena de destilación DistilQwen del mismo autor. Según la documentación del portfolio, esa cadena parte de Qwen3-30B-A3B como profesor y destila a 1.7B y 0.6B en BF16 sobre H100, con tres variantes de profesor (Instruct, Thinking, Coder). No se especifican el número de tokens de entrenamiento, la composición del dataset SFT ni si hubo etapas de RLHF o DPO; solo se confirma el uso de TRL con SFT.
 
-La model card menciona el marco teórico del "Discrepancy Calculus" (DISC), que introduce un operador de discrepancia y una descomposición de la función de peso en componentes absolutamente continuos, saltos y parte de Cantor. Según el autor, este enfoque identifica y preserva las fronteras estructurales en el espacio de pesos que el fine-tuning convencional tiende a difuminar. No se proporcionan detalles sobre el dataset de entrenamiento, el número de tokens utilizados ni la composición de los datos. Tampoco se indica si se aplicaron técnicas de RLHF o DPO adicionales más allá del SFT.
+La model card incluye una sección titulada "Mathematical Foundations: Discrepancy Calculus (DISC)" que describe un operador de discrepancia y una "Mesh Fundamental Identity" aplicada al espacio de pesos. Se trata de una formulación teórica propia del autor (paper "On the Formal Analysis of Discrepancy Calculus", CIx 2026) sin validación independiente publicada en la información disponible. No se documentan innovaciones de inferencia como decodificación especulativa, atención lineal ni modos de pensamiento explícitos en este modelo concreto.
 
 ## Capacidades
 
-- Generación de texto conversacional: el modelo está diseñado para mantener diálogos multi-turno, como muestra el ejemplo de uso en la model card con preguntas abiertas.
-- Modelo "uncensored": no incorpora filtros de seguridad ni moderación de contenido, lo que permite generar respuestas sin restricciones temáticas.
-- Capacidades multilingües: no se especifican idiomas soportados; se asume herencia del modelo base Qwen3, pero no está confirmado.
-- No se documentan capacidades de tool calling, function calling, razonamiento multi-paso, visión o audio en la información disponible.
-- Al ser una destilación de Qwen3-30B-A3B, podría heredar parcialmente las capacidades de razonamiento del modelo teacher, aunque no hay evidencia pública de ello.
+- Generación de texto conversacional multi-turno, orientada a diálogo (pipeline text-generation y formato de chat con roles).
+- Ajuste fino SFT sobre un modelo destilado, lo que sugiere capacidad de razonamiento y código heredada del profesor Qwen3-30B-A3B, aunque no verificada en benchmarks.
+- Compatibilidad declarada con text-generation-inference y endpoints, lo que facilita despliegue como API.
+- Soporte de tool calling y function calling: no documentado en la model card.
+- Soporte de agentes y razonamiento multi-paso: no documentado.
+- Capacidades multilingües: no declaradas; presumible herencia de Qwen3, sin confirmar.
+- Capacidades especiales (thinking mode, visión, audio): no documentadas.
 
 ## Casos de uso
 
-- Prototipado rápido de chatbots: gracias a su tamaño reducido (~2B parámetros) y formato BF16, puede desplegarse en GPUs consumer para experimentar con interacciones conversacionales sin restricciones de contenido.
-- Investigación en destilación de conocimiento: sirve como punto de comparación dentro de la colección DistilQwen para estudiar el efecto de la destilación desde un modelo MoE de 30B hacia uno denso de 1.7B.
-- Experimentación con modelos sin censura: su naturaleza "uncensored" permite explorar comportamientos de generación libre en entornos de investigación controlados, aunque con las advertencias éticas correspondientes.
-- Generación de texto creativo: puede utilizarse para tareas de escritura creativa, brainstorming o generación de contenido donde no se requieran filtros de seguridad.
-- Evaluación de metodologías de entrenamiento: el marco DISC y la metodología "Structure Over Scale" pueden estudiarse en este modelo para validar hipótesis sobre preservación de estructura en el espacio de pesos.
-- Despliegue en el edge: con un peso de ~4 GB en BF16 y posibilidad de cuantización a FP8 o FP4, es viable para ejecutarse en dispositivos con poca memoria, como portátiles o sistemas embebidos con aceleradores.
+- Asistente conversacional en el borde: con 2.031 millones de parámetros y pesos BF16 de 4,1 GB, puede ejecutarse en GPUs de consumo y en dispositivos con memoria limitada, gestionando diálogos multi-turno mediante el pipeline de transformers mostrado en la model card.
+- Prototipado rápido de chatbots: la integración directa con `transformers.pipeline` y el formato de roles permiten montar un prototipo en pocas líneas de código sin infraestructura dedicada.
+- Despliegue como endpoint compatible con TGI: la etiqueta endpoints_compatible y text-generation-inference facilita servirlo detrás de una API HTTP para aplicaciones web o móviles.
+- Generación de texto en entornos con restricciones de privacidad: al ser un modelo pequeño y desplegable localmente, permite procesar texto sin enviar datos a APIs externas.
+- Filtrado y clasificación de texto conversacional: su tamaño permite procesar lotes grandes en CPU o GPU modesta para tareas de etiquetado, resumen corto o reescritura.
+- Base para ajustes finos posteriores: al ser un SFT sobre un destilado, sirve como punto de partida para especializaciones verticales con TRL, aprovechando su bajo coste de entrenamiento.
+- Experimentación académica en destilación: útil para reproducir o comparar cadenas de destilación profesor-alumno con presupuesto de hardware reducido.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye métricas de MMLU, HumanEval, GSM8K ni otras evaluaciones estándar. Tampoco se ofrecen comparativas con otros modelos de la misma categoría.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con pesos BF16 (2,03B × 2 bytes ≈ 4,06 GB), se requieren al menos 6 GB de VRAM considerando overhead de activaciones y KV cache. Con cuantización FP8 (~2 GB) o FP4 (~1 GB), la VRAM necesaria se reduce significativamente.
-- GPUs recomendadas: RTX 3060 (12 GB) o superior para BF16; RTX 4060 (8 GB) o superior para FP8; GPUs con 4 GB pueden ser suficientes con FP4.
-- Cabe en GPUs consumer: sí, es compatible con la mayoría de GPUs de gama media actuales (RTX 30/40/50 series, AMD RX 6000/7000) siempre que se use cuantización.
-- Opciones de despliegue: transformers (con pipeline text-generation), vLLM, TGI (Text Generation Inference), llama.cpp (si se convierte a GGUF), Ollama (mediante conversión) y FriendliAI (que ya ofrece el modelo con cuantización FP4/FP8).
-- Latencia y throughput: no se dispone de datos medidos. Para un modelo de 2B en una GPU moderna, se puede esperar una generación de entre 50 y 150 tokens por segundo en FP8, aunque esto es una estimación no verificada.
+- VRAM estimada para inferencia en BF16: aproximadamente 4,1 GB de pesos más overhead de activaciones y KV cache; en la práctica, unos 5-6 GB para contextos cortos.
+- VRAM estimada en cuantización 8 bits: en torno a 2,2-2,5 GB; en 4 bits (GGUF Q4_K_M), aproximadamente 1,2-1,5 GB.
+- GPU recomendadas: cualquier GPU con al menos 6 GB de VRAM para BF16 (RTX 3060, RTX 4060, RTX 4090); A100 y H100 sobredimensionadas para este tamaño, útiles solo para servir muchas réplicas o fine-tuning.
+- Cabe en GPU de consumo: sí, en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090 24 GB e incluso en GPUs de 8 GB con cuantización.
+- Opciones de despliegue: transformers (soportado oficialmente), text-generation-inference (etiqueta declarada), llama.cpp/Ollama mediante conversión a GGUF (no documentado por el autor), vLLM (compatible con arquitectura Qwen3, no verificado para este checkpoint).
+- Latencia y throughput: no disponibles; por tamaño, cabe esperar decenas de tokens por segundo en GPUs de consumo y cientos en A100/H100 con batching, pero son estimaciones no medidas.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni especificaciones detalladas de modelos comparables en la información proporcionada. Sin embargo, se pueden mencionar alternativas de la misma familia:
-
-| Modelo | Parametros | Contexto | Licencia | Notas |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Disctil-Qwen3-1.7B (este) | 2,03B | 33K (no confirmado) | No disponible | Fine-tuning "uncensored" de DiStil-Qwen3-1.7B |
-| Qwen3-1.7B (original) | 1,7B | 32K | Apache 2.0 | Modelo base de la familia Qwen3, con soporte oficial |
-| Qwen3-1.7B-Coder-Distilled-SFT | 1,7B (estimado) | No disponible | No disponible | Otro miembro de la colección DistilQwen, orientado a código |
-| DiStil-Qwen3-1.7B-uncensored | 1,7B (estimado) | No disponible | No disponible | Modelo base de este fine-tuning, también "uncensored" |
+| Disctil-Qwen3-1.7B | 2.031.739.904 | No disponible | No disponible | Hugging Face, 2.080 descargas |
+| DiStil-Qwen3-1.7B-uncensored (modelo base) | ~1.700 millones (presumible) | No disponible | No disponible | Hugging Face, 1.602 descargas |
+| Qwen3-1.7B (original de Alibaba) | ~1.700 millones | No disponible en esta ficha | Apache 2.0 (habitual en Qwen3) | Hugging Face, ampliamente distribuido |
+| Qwen3-1.7B-Coder-Distilled-SFT (mismo autor) | ~1.700 millones | No disponible | No disponible | Hugging Face, 1.677 descargas |
 
-La comparación directa no es posible sin datos de rendimiento. La principal diferencia frente a Qwen3-1.7B original es la ausencia de licencia clara y el enfoque "uncensored".
+La comparativa con el Qwen3-1.7B original es la más relevante: este modelo añade una etapa de destilación desde Qwen3-30B-A3B y un SFT conversacional, pero carece de benchmarks publicados y de licencia clara, mientras que el original de Alibaba cuenta con evaluación pública y licencia Apache 2.0. Frente a otros modelos del mismo autor, las diferencias son de especialización (Coder, Thinking, uncensored) sin datos comparativos de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no se ha publicado ningún análisis de sesgos. Al ser un modelo "uncensored", podría amplificar sesgos o generar contenido ofensivo sin filtros.
-- Riesgo de alucinacion: al ser un modelo de solo 2B parámetros, es probable que presente alucinaciones frecuentes, especialmente en tareas que requieren conocimiento factual extenso.
-- Limitaciones de contexto: la ventana de contexto no está confirmada oficialmente; si es de 33K, es adecuada para diálogos largos pero inferior a modelos más grandes.
-- Restricciones de licencia: la licencia no está especificada, lo que impide su uso comercial sin consultar al autor. La model card menciona "licence: license", que no es una licencia válida reconocida.
-- Sin soporte de herramientas: no se documenta tool calling ni function calling, limitando su uso en aplicaciones de agentes.
-- Falta de transparencia: no se detallan los datos de entrenamiento, el proceso de destilación ni los hiperparámetros del SFT, lo que dificulta la reproducibilidad.
-- Riesgo de contenido inapropiado: al ser "uncensored", puede generar contenido sexual, violento o ilegal sin restricciones, lo que requiere medidas de seguridad adicionales en producción.
+- Licencia no disponible: no se puede confirmar el uso comercial; contactar con el autor antes de integrarlo en producción.
+- Ausencia total de benchmarks publicados: no hay evidencia cuantitativa de calidad frente al Qwen3-1.7B original ni frente a otros destilados.
+- Procedencia de un modelo "uncensored": el modelo base está etiquetado como sin censura, lo que aumenta el riesgo de generar contenido inapropiado, sesgado o dañino sin filtros.
+- Riesgo de alucinación: por su tamaño (2.031 millones de parámetros) y por la destilación, la fiabilidad factual es limitada; no apto para tareas críticas sin verificación.
+- Contexto no documentado: se desconoce la ventana máxima; asumir contextos cortos (probablemente 32K según Qwen3, sin confirmar) y validar antes de usarlo con documentos largos.
+- Idiomas no declarados: no hay garantía de calidad fuera del inglés, aunque la herencia de Qwen3 sugiera multilingüismo.
+- Marco teórico DISC sin validación independiente: la sección matemática de la model card no está respaldada por resultados empíricos publicados en la información disponible.
+- Fecha de creación futura (2026-03-28) y actualización (2026-11-19): metadatos anómalos que conviene contrastar antes de confiar en la cronología del repositorio.
+- Sin garantías de mantenimiento: autor individual, 1 like y 2.080 descargas; soporte comunitario limitado.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/Disctil-Qwen3-1.7B
-- Modelo base (DiStil-Qwen3-1.7B-uncensored): https://huggingface.co/reaperdoesntknow/DiStil-Qwen3-1.7B-uncensored
-- Coleccion DistilQwen: https://huggingface.co/collections/reaperdoesntknow/distilqwen-69bf40ec669117e3f069ef1c
-- Paper "Structure Over Scale" (DOI: 10.57967/hf/8165): https://doi.org/10.57967/hf/8165
-- Paper "Three Teachers to Dual Cognition" (DOI: 10.57967/hf/8184): https://doi.org/10.57967/hf/8184
-- Paper "Discrepancy Calculus" (DOI: 10.57967/hf/8194): https://doi.org/10.57967/hf/8194
-- Pagina del modelo en Antbase: https://antbase.ai/models/disctil-qwen3-1-7b
-- Pagina del modelo en FriendliAI: https://friendli.ai/models/reaperdoesntknow/Disctil-Qwen3-1.7B
+- Modelo base: https://huggingface.co/reaperdoesntknow/DiStil-Qwen3-1.7B-uncensored
+- Colección DistilQwen: https://huggingface.co/collections/reaperdoesntknow/distilqwen-69bf40ec669117e3f069ef1c
+- Perfil del autor: https://huggingface.co/reaperdoesntknow
+- Paper "Structure Over Scale" (DOI 10.57967/hf/8165): https://doi.org/10.57967/hf/8165
+- Paper "Structure Over Scale" en HF: https://huggingface.co/reaperdoesntknow/Structure-Over-Scale
+- Paper "Three Teachers to Dual Cognition" (DOI 10.57967/hf/8184): https://huggingface.co/reaperdoesntknow/DualMind_Methodolgy
+- Paper "Discrepancy Calculus" (DOI 10.57967/hf/8194): https://huggingface.co/reaperdoesntknow/Discrepancy_Calculus
+- TRL (framework de entrenamiento): https://github.com/huggingface/trl
+- Modelo destacado del portfolio, Qwen3-1.7B-Coder-Distilled-SFT: https://huggingface.co/reaperdoesntknow/Qwen3-1.7B-Coder-Distilled-SFT

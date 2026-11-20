@@ -2,105 +2,101 @@
 
 ## Resumen
 
-Ripple-65B-Preview-GGUF es un repositorio de cuantizaciones GGUF del modelo Ripple-65B-Preview, un transformer denso de 64.782.689.360 parámetros (aproximadamente 65B) desarrollado por Ricursive Intelligence. El repositorio lo publica prometheusAIR e incluye cinco cuantizaciones (Q8_0, Q6_K_XL, Q6_K, IQ3_S e IQ3_XXS) generadas a partir de los pesos BF16 originales, además de un parche para llama.cpp que añade soporte para la arquitectura `ricursive`.
+Ripple-65B-Preview es un modelo de lenguaje denso de 64.782.689.360 parametros desarrollado por Ricursive Intelligence. Esta ficha documenta la version cuantizada en GGUF publicada por prometheusAIR, pensada para ejecucion en llama.cpp sobre GPUs de 96 GB y 32 GB. El modelo base se distribuye bajo licencia Apache 2.0 y esta orientado a generacion de texto con capacidades declaradas de razonamiento y uso de herramientas (tool use), con una ventana de contexto que alcanza 1.048.576 tokens en las configuraciones de mayor precision.
 
-La relevancia de esta publicación es doble. Por un lado, ofrece opciones de despliegue para GPUs de 96 GB (tres cuantizaciones, dos de ellas alcanzando el contexto completo de 1.048.576 tokens) y para GPUs de 32 GB (dos cuantizaciones IQ3 con 32K y 96K de contexto). Por otro, documenta con mediciones de divergencia KL frente a BF16 por qué las recetas estándar de llama.cpp para 3 bits degradan gravemente este modelo, y propone recetas alternativas que concentran bits en las proyecciones de atención.
+La relevancia de esta publicacion radica en el trabajo de cuantizacion: cinco variantes (Q8_0, Q6_K_XL, Q6_K, IQ3_S e IQ3_XXS) calibradas con imatrix y validadas contra los pesos BF16 mediante divergencia KL, no contra otras cuantizaciones. Las tres variantes de 6-8 bits caben en una sola GPU de 96 GB, dos de ellas con el contexto completo de 1M tokens; las dos variantes IQ3 caben en una GPU de 32 GB con 32K o 96K de contexto.
 
-El modelo base está etiquetado como de contexto largo, tool-use y razonamiento, con licencia Apache 2.0. No se dispone de información sobre idiomas soportados ni de resultados de benchmarks en la documentación proporcionada.
+El modelo requiere una version reciente de llama.cpp (build b12158 o superior), ya que la arquitectura `ricursive` se incorporo al upstream el 5 de noviembre de 2026 mediante el PR #31692. Los archivos descargados antes del 13 de noviembre de 2026 usan un nombre de tensor distinto y deben descargarse de nuevo o convertirse con el script incluido en el repositorio.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer denso (arquitectura `ricursive` en llama.cpp) |
-| Parametros totales | 64.782.689.360 (aprox. 65B) |
+| Parametros totales | 64.782.689.360 |
 | Parametros activos | no aplica (modelo denso) |
-| Longitud de contexto | 1.048.576 tokens (máximo soportado por las cuantizaciones Q6_K y Q6_K_XL en 96 GB) |
-| Tipos de cuantizacion | Q8_0, Q6_K_XL, Q6_K, IQ3_S, IQ3_XXS |
+| Longitud de contexto | Hasta 1.048.576 tokens (Q6_K y Q6_K_XL en GPU de 96 GB); 753.664 tokens en Q8_0; 98.304 en IQ3_XXS; 32.768 en IQ3_S |
+| Tipos de cuantizacion | Q8_0, Q6_K_XL (receta propia), Q6_K, IQ3_S (receta propia), IQ3_XXS (receta propia) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizado desde BF16 GGUF); el modelo base se distribuye en BF16 |
+| Formato de pesos | GGUF (llama.cpp); el modelo base se publica en BF16 y existe una version NVFP4 de Ricursive |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer denso de 65B parámetros. La model card del repositorio de cuantizaciones aporta un dato estructural relevante: las proyecciones de atención son inusualmente anchas, con las proyecciones de query, gate y output de 10.240 dimensiones, el doble del tamaño oculto. El modelo incluye además un mecanismo de mezcla de residuales por capa (*per-layer value-residual mix*) almacenado en F32 en todas las cuantizaciones. La distribución de pesos por grupos de tensores es la siguiente: feed-forward gate/up/down (240 tensores) representan el 77,7% de los pesos; atención q/k/v/output/gate (400 tensores) el 20,7%; y `token_embd` más `output` el 1,6%.
+El modelo base es un transformer denso de 65B parametros. La model card de la cuantizacion no detalla la composicion del dataset de entrenamiento, el numero de tokens ni si se aplicaron fases de RLHF o DPO; esos datos corresponden a la publicacion original de Ricursive Intelligence y no se incluyen en la informacion disponible. La arquitectura recibe el nombre `ricursive` en llama.cpp e incluye, segun la tabla de recetas de cuantizacion, proyecciones de atencion q/k/v/output/gate, un bloque feed-forward gate/up/down de 240 tensores (77,7% del peso total) y un componente denominado "per-layer value-residual mix" almacenado en F32.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF, DPO u otras fases de alineación. La model card del repositorio de cuantizaciones tampoco detalla innovaciones de decodificación o atención más allá de la arquitectura base. El parche de llama.cpp se validó contra el código de modelado original de Ricursive antes de generar ninguna cuantización, y cada cuantización se midió contra los pesos BF16, no contra otra cuantización.
+La innovacion tecnica mas destacable de esta publicacion es el proceso de cuantizacion. prometheusAIR verifico la implementacion de llama.cpp contra el codigo de modelado original de Ricursive antes de generar cualquier quant, y midio cada variante contra los pesos BF16 con divergencia KL, porcentaje de coincidencia en el token top-1 y perplejidad. Las recetas IQ3_S e IQ3_XXS no son las de serie de llama.cpp: la receta estandar de IQ3_XXS obtiene en este modelo una divergencia KL de 0,581 y un incremento de perplejidad del 68%, mientras que la receta propia, que sube las cinco proyecciones de atencion a IQ4_XS y embeddings y cabeza de salida a Q6_K (2,1 GiB adicionales, 1,9 GiB de ellos en atencion), reduce la divergencia KL 7 veces hasta 0,085. Todas las variantes salvo Q8_0 usan imatrix para la calibracion.
 
 ## Capacidades
 
-- Generación de texto conversacional (pipeline `text-generation`, etiqueta `conversational`).
-- Razonamiento (*reasoning*), según las etiquetas del autor.
-- Uso de herramientas (*tool-use*), según las etiquetas del autor.
-- Contexto largo: hasta 1.048.576 tokens en las cuantizaciones Q6_K y Q6_K_XL sobre una GPU de 96 GB.
-- Capacidades multilingües: no disponible.
-- Modo de pensamiento (*thinking mode*), visión o audio: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no documentado explícitamente más allá de la etiqueta `reasoning`.
+- Generacion de texto conversacional y continuacion de contexto largo, con ventanas de hasta 1.048.576 tokens en las variantes Q6_K y Q6_K_XL sobre GPU de 96 GB.
+- Razonamiento (tag `reasoning` en el repositorio): el modelo esta etiquetado por el autor como apto para tareas de razonamiento, aunque la model card no detalla modos explicitos de pensamiento.
+- Uso de herramientas (tag `tool-use`): soporte declarado de tool calling y function calling.
+- Contexto largo (tag `long-context`): disenado para trabajar con entradas de cientos de miles de tokens, con opciones de 32K, 96K, 736K y 1M segun cuantizacion y VRAM.
+- Compatibilidad con endpoints: el repositorio incluye el tag `endpoints_compatible`, lo que indica que puede servirse mediante infraestructura de inferencia compatible.
+- Capacidades multimodales (vision, audio): no disponibles.
+- Cobertura multilingue: no disponible; el repositorio no declara lista de idiomas.
 
 ## Casos de uso
 
-- Procesamiento de documentos extensos: con hasta 1.048.576 tokens de contexto en Q6_K o Q6_K_XL sobre 96 GB, el modelo puede ingerir libros completos, expedientes o bases de código en una sola pasada sin recuperación externa.
-- Asistentes de código con contexto de repositorio: la ventana de 1M tokens permite incluir múltiples ficheros y el historial de cambios en el prompt; el soporte declarado de tool-use facilita la integración con herramientas de ejecución y edición.
-- Despliegue en estaciones de trabajo con GPU de 32 GB: las cuantizaciones IQ3_S (27,58 GiB, 32K de contexto) e IQ3_XXS (25,38 GiB, 96K de contexto) permiten ejecutar un modelo de 65B en hardware de consumo profesional, a costa de mayor divergencia KL.
-- Análisis de trazas y logs de larga duración: la ventana de 96K de IQ3_XXS en 32 GB es adecuada para correlacionar eventos distribuidos en ficheros de log voluminosos.
-- Evaluación de calidad de cuantizaciones: el repositorio sirve como referencia metodológica para equipos que necesiten medir divergencia KL y coincidencia top-1 frente a BF16 antes de elegir una cuantización para producción.
-- Investigación sobre arquitecturas no soportadas en llama.cpp: el parche incluido permite estudiar el comportamiento de la arquitectura `ricursive` en un runtime ampliamente utilizado, con la opción de contribuir el soporte upstream.
-- Razonamiento con cadenas largas: la combinación de contexto de 1M tokens y la etiqueta `reasoning` permite mantener trazas de razonamiento extensas y múltiples intentos dentro de una misma ventana.
+- Analisis de repositorios completos: con 1M tokens de contexto en Q6_K o Q6_K_XL sobre una GPU de 96 GB, el modelo puede ingerir un arbol de codigo extenso y responder preguntas sobre arquitectura, dependencias y cambios entre modulos sin trocear el contexto.
+- Asistentes de documentacion tecnica: la ventana de 736K tokens de Q8_0 permite procesar manuales, especificaciones y RFCs completos en una sola pasada, manteniendo la maxima fidelidad respecto a BF16 (KL media de 0,0027).
+- Agentes con tool calling en pipelines internos: el soporte declarado de tool use permite integrar el modelo en flujos de orquestacion donde debe invocar funciones, consultar APIs y encadenar varios pasos de razonamiento.
+- Procesamiento de expedientes y contratos largos: con IQ3_XXS en una GPU de 32 GB y 98.304 tokens de contexto, es viable resumir o extraer clausulas de documentos extensos en hardware de gama profesional de un solo slot.
+- Despliegue en estaciones de trabajo con RTX Pro 6000 (Blackwell): el tag `rtx-pro-6000` y la orientacion a 96 GB indican que el modelo esta pensado para inferencia local en esta GPU, util para equipos que no pueden enviar datos a la nube.
+- Evaluacion comparativa de cuantizaciones: los datos de KL, top-1 y perplejidad publicados permiten elegir la variante adecuada para prototipos de investigacion donde se prioriza velocidad (IQ3_XXS a 46,0 tok/s) frente a fidelidad (Q8_0).
+- Servicio de chat con contexto medio en 32 GB: IQ3_S ofrece 32.768 tokens de contexto a 42,8 tok/s de decodificacion, adecuado para atencion conversacional multi-turno en una unica GPU consumer de gama alta o profesional de 32 GB.
 
 ## Benchmarks y rendimiento
 
-La model card no publica resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K u otros). Sí publica métricas de fidelidad de cuantización y de rendimiento de inferencia medidas contra BF16:
+La model card no publica resultados de benchmarks de calidad tipo MMLU, HumanEval o GSM8K. Si se incluyen metricas de fidelidad de cuantizacion y de rendimiento de inferencia medidas por el autor:
 
 | Metrica | Q8_0 | Q6_K_XL | Q6_K | IQ3_S | IQ3_XXS |
 |---|---|---|---|---|---|
-| Tamano de fichero | 64,11 GiB | 52,76 GiB | 49,50 GiB | 27,58 GiB | 25,38 GiB |
+| Tamano de archivo | 64,11 GiB | 52,76 GiB | 49,50 GiB | 27,58 GiB | 25,38 GiB |
 | Divergencia KL media vs BF16 | 0,0027 | 0,0036 | 0,0053 | 0,066 | 0,085 |
 | Divergencia KL mediana | 0,00026 | 0,00043 | 0,00082 | 0,022 | 0,030 |
 | Divergencia KL percentil 99 | 0,026 | 0,037 | 0,059 | 0,77 | 0,96 |
-| Mismo token top-1 que BF16 | 98,59% | 98,20% | 97,74% | 89,98% | 88,30% |
+| Coincidencia top-1 con BF16 | 98,59% | 98,20% | 97,74% | 89,98% | 88,30% |
 | Perplejidad vs BF16 | +0,28% | +0,02% | −0,30% | +0,90% | +2,52% |
-| Contexto en 96 GB (KV q8_0) | 753.664 | 1.048.576 | 1.048.576 | no aplica | no aplica |
-| Contexto en 32 GB | no aplica | no aplica | no aplica | 32.768 | 98.304 |
-| Decodificacion, caja de referencia, prompt corto | 22,0 tok/s | 26,2 tok/s | 27,4 tok/s | 42,8 tok/s | 46,0 tok/s |
+| Contexto maximo (tipo KV indicado) | 753.664 (q8_0) | 1.048.576 (q8_0) | 1.048.576 (q8_0) | 32.768 (q8_0) | 98.304 (q8_0) |
+| Decodificacion, prompt corto | 22,0 tok/s | 26,2 tok/s | 27,4 tok/s | 42,8 tok/s | 46,0 tok/s |
 
-Como referencia de ruido de medición, los propios pesos BF16 ejecutados dos veces con distinto tamaño de lote y colocación de capas arrojan una divergencia KL media de 0,00045 entre ejecuciones, con un 99,59% de tokens top-1 idénticos. El autor advierte que la perplejidad no es una medida de calidad fiable en este modelo y recomienda usar las columnas de KL. Q8_0 alcanza 1.710 tok/s de prefill a 32K, frente a 1.448 tok/s de Q6_K_XL.
+Como referencia de ruido de medida, los propios pesos BF16 ejecutados dos veces con distinto tamano de batch y colocacion de capas arrojan una divergencia KL media de 0,00045 entre ejecuciones, con 99,59% de coincidencia top-1. El prefilling de Q8_0 alcanza 1.710 tok/s a 32K de contexto, frente a 1.448 tok/s de Q6_K_XL.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: de 25,38 GiB (IQ3_XXS) a 64,11 GiB (Q8_0) solo para pesos; el contexto consume VRAM adicional según el tipo de KV cache (q8_0 o f16).
-- GPU de 96 GB: una sola unidad ejecuta Q8_0 (hasta 753.664 tokens de contexto), Q6_K_XL y Q6_K (ambas hasta 1.048.576 tokens). Las etiquetas del repositorio mencionan RTX PRO 6000 y Blackwell como hardware de referencia.
-- GPU de 32 GB: IQ3_S (32.768 tokens de contexto) e IQ3_XXS (98.304 tokens de contexto), ambas con KV cache q8_0.
-- GPU de consumo: no se documenta soporte para GPUs de menos de 32 GB; el modelo base de 65B en BF16 requiere aproximadamente 130 GB solo en pesos.
-- Opciones de despliegue: llama.cpp con el parche `patches/llama.cpp-ricursive.patch` aplicado sobre el commit upstream `6f1e654`. No hay soporte en llama.cpp upstream ni en otros runtimes documentados (vLLM, TGI, Ollama) en la información disponible.
-- Throughput medido en la caja de referencia con prompt corto: 22,0 tok/s (Q8_0), 26,2 tok/s (Q6_K_XL), 27,4 tok/s (Q6_K), 42,8 tok/s (IQ3_S) y 46,0 tok/s (IQ3_XXS). Prefill a 32K: 1.710 tok/s (Q8_0) y 1.448 tok/s (Q6_K_XL).
+- VRAM estimada: 64,11 GiB (Q8_0), 52,76 GiB (Q6_K_XL), 49,50 GiB (Q6_K), 27,58 GiB (IQ3_S) y 25,38 GiB (IQ3_XXS) solo para pesos; el contexto consume VRAM adicional segun el tipo de KV cache.
+- GPU de 96 GB: Q8_0, Q6_K_XL y Q6_K caben en una sola tarjeta; Q6_K_XL y Q6_K alcanzan el contexto completo de 1.048.576 tokens con KV en q8_0, y Q8_0 llega a 753.664 tokens.
+- GPU de 32 GB: IQ3_S (32.768 tokens de contexto) e IQ3_XXS (98.304 tokens) estan dimensionadas para una unica tarjeta de 32 GB con KV en q8_0.
+- GPU recomendadas: RTX Pro 6000 (Blackwell) para las variantes de 96 GB, segun el tag del repositorio; para las variantes IQ3, cualquier GPU de 32 GB, incluidas las profesionales y las consumer de gama alta con 32 GB de VRAM.
+- Despliegue: llama.cpp en build b12158 o superior (la arquitectura `ricursive` se anadio en el PR #31692 del 5 de noviembre de 2026). El repositorio esta etiquetado como `endpoints_compatible`.
+- Rendimiento: decodificacion de 22,0 a 46,0 tok/s segun variante en la caja de referencia del autor; prefilling de 1.710 tok/s (Q8_0) y 1.448 tok/s (Q6_K_XL) a 32K de contexto.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato / disponibilidad |
-|---|---|---|---|---|
-| Ripple-65B-Preview (este repo, GGUF) | 64,78B denso | hasta 1.048.576 tokens | Apache 2.0 | GGUF con parche de llama.cpp |
-| Ripple-65B-Preview (BF16, ricursiveAI) | 64,78B denso | no disponible en la información | Apache 2.0 | BF16 en Hugging Face |
-| Ripple-65B-Preview-NVFP4 (ricursiveAI) | 64,78B denso | no disponible en la información | no disponible | NVFP4; solo cuantiza feed-forward y mantiene atención en BF16 |
-| Otras alternativas de ~65B denso | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Ripple-65B-Preview (esta ficha, GGUF) | 64,78B denso | Hasta 1.048.576 tokens | Apache 2.0 | GGUF | Cinco quants con validacion KL contra BF16 |
+| Ripple-65B-Preview (base Ricursive) | 64,78B denso | No disponible en la informacion | Apache 2.0 | BF16 | Modelo original |
+| Ripple-65B-Preview-NVFP4 (Ricursive) | 64,78B denso | No disponible en la informacion | No disponible en la informacion | NVFP4 | Publicacion oficial en formato NVFP4 |
 
-La información proporcionada no incluye modelos comparables de terceros con datos verificables de rendimiento, por lo que no se establece comparación de benchmarks.
+No se dispone de datos de benchmarks ni de especificaciones de modelos de otros desarrolladores en la informacion proporcionada, por lo que no es posible establecer una comparacion de rendimiento con alternativas de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- Requiere un llama.cpp parcheado: el soporte de la arquitectura `ricursive` no está en upstream (sin pull request a fecha de 2026-11-04), lo que bloquea el uso con vLLM, TGI, Ollama y otras herramientas que dependan de llama.cpp sin parchear.
-- Las recetas estándar de IQ3 de llama.cpp son inadecuadas para este modelo: la receta stock de IQ3_XXS puntúa una divergencia KL de 0,581 y +68% de perplejidad, frente a 0,085 de la receta propia del autor. Usar recetas genéricas de terceros sin validación puede degradar gravemente la calidad.
-- Las cuantizaciones IQ3 pierden aproximadamente un 10-12% de coincidencia top-1 frente a BF16 y multiplican por más de 20 la divergencia KL media respecto a Q8_0; no son adecuadas si la fidelidad es crítica.
-- La perplejidad no es una medida de calidad fiable en este modelo según el autor; deben usarse las métricas de KL y coincidencia top-1.
-- Idiomas soportados no documentados: no es posible evaluar el comportamiento multilingüe ni el sesgo lingüístico.
-- Sesgos conocidos y tasa de alucinación: no disponible en la información proporcionada.
-- Licencia Apache 2.0 permite uso comercial, pero el modelo base es una versión "Preview" y no se documentan garantías ni limitaciones de uso adicionales.
-- El contexto máximo de 1M tokens solo es alcanzable con Q6_K o Q6_K_XL en 96 GB; en 32 GB el máximo es de 98.304 tokens con IQ3_XXS.
-- El repositorio tiene 161 descargas y 2 likes en el momento de la consulta; la validación comunitaria es todavía muy limitada.
+- La model card no documenta sesgos conocidos, comportamiento en idiomas distintos del ingles ni riesgos especificos de alucinacion; deben asumirse los riesgos habituales de un modelo de 65B sin evaluacion publicada.
+- No hay resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K) en la informacion disponible, por lo que el rendimiento real en tareas downstream no esta verificado de forma independiente.
+- Las variantes IQ3_S e IQ3_XXS pierden fidelidad de forma apreciable: 89,98% y 88,30% de coincidencia top-1 con BF16 y divergencia KL de 0,066 y 0,085 respectivamente, muy superiores a las variantes de 6-8 bits. No son adecuadas si la precision es critica.
+- Los archivos descargados antes del 13 de noviembre de 2026 fallan en llama.cpp de serie con el error `done_getting_tensors: wrong number of tensors; expected 1203, got 1123`; deben descargarse de nuevo o convertirse con `scripts/ripple-gguf-rename.py`.
+- Requiere llama.cpp build b12158 o superior; versiones anteriores no reconocen la arquitectura `ricursive`.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base y sus derivados deben evaluarse por el usuario antes de desplegarlos en produccion.
+- El contexto maximo depende de la variante y del tipo de KV cache: solo Q6_K y Q6_K_XL alcanzan 1M tokens, y solo en GPU de 96 GB con KV en q8_0.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/prometheusAIR/Ripple-65B-Preview-GGUF
-- Ficheros del repositorio: https://huggingface.co/prometheusAIR/Ripple-65B-Preview-GGUF/tree/main
 - Modelo base: https://huggingface.co/ricursiveAI/Ripple-65B-Preview
-- Versión NVFP4 del modelo base: https://huggingface.co/ricursiveAI/Ripple-65B-Preview-NVFP4
-- Parche de llama.cpp: `patches/llama.cpp-ricursive.patch` dentro del repositorio GGUF (aplicable sobre el commit upstream `6f1e654`)
+- Version NVFP4 oficial: https://huggingface.co/ricursiveAI/Ripple-65B-Preview-NVFP4
+- PR de llama.cpp que anade la arquitectura `ricursive`: https://github.com/ggml-org/llama.cpp/pull/31692
+- Script de conversion de tensores: https://huggingface.co/prometheusAIR/Ripple-65B-Preview-GGUF/blob/main/scripts/ripple-gguf-rename.py

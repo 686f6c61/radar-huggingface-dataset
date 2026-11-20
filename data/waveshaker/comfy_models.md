@@ -2,90 +2,94 @@
 
 ## Resumen
 
-`waveshaker/comfy_models` es un repositorio de pesos cuantizados para ComfyUI que empaqueta varios modelos de generación y edición de imágenes en formatos de baja precisión (INT8, INT6, FP8, FP16) listos para su uso en flujos de trabajo de difusión. El autor, waveshaker, no entrena modelos propios: redistribuye y recuantiza checkpoints de terceros, principalmente el modelo de edición de imágenes Qwen-Image-Edit-2511 (a través del fine-tune comunitario Qwen-Image-Edit-Rapid-AIO v23) y el modelo de segmentación SAM3 de Meta. El repositorio también referencia otros ecosistemas de imagen como Flux, Pony, SD1.5, Krea2, Moss y Anima en sus etiquetas.
+`waveshaker/comfy_models` no es un modelo único, sino un repositorio agregador de conversiones cuantizadas de modelos de difusión para ComfyUI. El autor, waveshaker, publica versiones INT8 (mayoritariamente con la técnica ConvRot) y FP8 de checkpoints ajenos, orientadas a entornos con VRAM limitada. El repo ocupa 507,2 GB y contiene pesos en formato safetensors y `.pt`, con pipeline declarado `image-to-image`.
 
-El interés práctico del repositorio reside en la reducción de requisitos de VRAM: al convertir pesos FP8 o FP16 a INT8 con rotación de canales (ConvRot) y esquemas mixtos W6A8, se facilita la ejecución de modelos de difusión de gran tamano en GPUs de consumo dentro de ComfyUI. El repositorio ocupa 65,7 GB y está pensado como un paquete de recursos para nodos personalizados, no como un modelo único.
+El modelo base declarado en la ficha de Hugging Face es Qwen/Qwen-Image-Edit-2511, aunque el contenido real abarca múltiples familias: Qwen Image Edit (incluida la variante Rapid-AIO v23), SAM3 de Meta, MOSS Image, Krea 2, Flux, Flux2, Pony, SD1.5 y Anima. La licencia indicada es `qwen-research-license`, lo que condiciona el uso comercial de al menos parte del contenido.
 
-La licencia declarada es la Qwen Research License, lo que condiciona el uso comercial de los pesos derivados de Qwen. No se dispone de información sobre idiomas soportados, benchmarks ni datos de entrenamiento propios, ya que el autor no publica esa información en la model card.
+Su relevancia práctica es acotada pero concreta: permite ejecutar modelos de edición y generación de imagen de gran tamano en GPUs de consumo mediante cuantización INT8/INT6, a costa de posibles pérdidas de calidad y de un rendimiento que el propio autor reconoce irregular. La model card incluye benchmarks informales que advierten de que la cuantización INT8 resulta más lenta que el original en arquitecturas SD1.5 y SDXL por cuellos de botella de ancho de banda de VRAM.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Difusión (modelo base Qwen-Image-Edit-2511, fine-tune Rapid-AIO v23) y segmentación (SAM3); pesos cuantizados para ComfyUI |
-| Parametros totales | no disponible |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (modelo de imagen, no de texto) |
-| Tipos de cuantizacion | INT8 ConvRot, INT6 W6A8, FP8, FP16, FP16/mixed FP8 |
+| Arquitectura | no disponible (agregado de modelos de difusion: UNet/DiT segun checkpoint) |
+| Parametros totales | no disponible (variable por archivo) |
+| Parametros activos | no aplica |
+| Longitud de contexto | no aplica (modelos de imagen) |
+| Tipos de cuantizacion | INT8 ConvRot, INT6 W6A8 (qic), FP8, FP16, mixed FP8 |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-research-license (declarada como "other" en la model card) |
-| Formato de pesos | safetensors (modelos de difusión), .pt (SAM3) |
+| Licencia | qwen-research-license |
+| Formato de pesos | safetensors, .pt |
 
 ## Arquitectura y entrenamiento
 
-El repositorio no contiene un modelo entrenado por el autor, sino artefactos derivados. El componente principal es una recuantización del checkpoint `Qwen-Rapid-AIO-NSFW-v23_diffusion_only_fp8`, un fine-tune comunitario de Qwen-Image-Edit-2511 orientado a edición de imágenes. El autor indica que el modelo original solo estaba disponible en FP8 y que él lo convierte a INT8 con rotación de canales (ConvRot) y a un esquema mixto INT6 W6A8, sin disponer de los pesos FP16 originales. Esta técnica de rotación de canales busca mitigar los valores atípicos (outliers) que degradan la calidad al cuantizar a 8 bits.
+El repositorio no entrena modelos: redistribuye conversiones de cuantizacion de checkpoints existentes. Las herramientas citadas por el autor son `silveroxides/convert_to_quant`, `Comfy-Org/comfy-model-tools` (script `quant_int8_convrot.py`) y `Starnodes2024/comfyui-starnodes-modelconverter`. La técnica ConvRot aplica rotaciones de canales antes de la cuantizacion INT8 para reducir el error de redondeo, un enfoque similar en espiritu a las rotaciones tipo QuaRot/SmoothQuant.
 
-El segundo componente es SAM3 (Segment Anything Model 3) de Meta, redistribuido en versiones FP16, FP8 mixto y FP8, comparadas por el autor con la versión oficial FP32. No se publican detalles sobre el dataset de entrenamiento, el número de tokens, ni si hubo RLHF, DPO o cualquier etapa de alineación, ya que el autor no entrena los modelos base. La innovación técnica del repositorio es exclusivamente de compresión y empaquetado para inferencia en ComfyUI.
+Los modelos de origen incluyen arquitecturas DiT (Qwen Image Edit, MOSS Image, Krea 2, Flux/Flux2) y UNet clásicas (SD1.5, SDXL/Pony). El autor documenta que en SD1.5 y SDXL la cuantizacion INT8 no aporta velocidad por el coste de des-cuantizacion en tiempo de ejecucion y el ancho de banda de VRAM; solo la variante Illustrious mostro mejora en sus pruebas. Para SDXL advierte ademas del problema de los dobles CLIP acoplados al UNet, que complican el empaquetado.
 
 ## Capacidades
 
-- Generación y edición de imágenes texto-a-imagen mediante el pipeline de difusión de Qwen-Image-Edit (a través del fine-tune Rapid-AIO).
-- Edición de imágenes guiada por instrucciones, heredada de Qwen-Image-Edit-2511.
-- Segmentación de imágenes con SAM3 en precisión reducida (FP16, FP8 mixto y FP8).
-- Integración nativa con ComfyUI mediante nodos personalizados (ComfyUI-Easy-Sam3, ComfyUI-RMBG).
-- Ejecución en precisión reducida para ahorrar VRAM en GPUs de consumo.
-- Compatibilidad declarada con ecosistemas de imagen adicionales (Flux, Pony, SD1.5, Krea2, Moss, Anima) según las etiquetas del repositorio, aunque la model card solo detalla Qwen Image Edit y SAM3.
-- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso ni procesamiento de lenguaje, al tratarse de un paquete de modelos de visión.
+- Generacion de imagen texto-a-imagen en los checkpoints base (Qwen Image, MOSS, Krea 2, Flux, SD1.5).
+- Edicion de imagen e image-to-image, especialmente con Qwen Image Edit y sus variantes.
+- Segmentacion y enmascarado con SAM3 (FP16, mixed FP8 y FP8), integrable via nodos ComfyUI-Easy-Sam3 y ComfyUI-RMBG.
+- Ejecucion en ComfyUI como libreria nativa (`library_name: comfyui`).
+- Variantes con LoRA DMD2 fusionada para generacion en 8 pasos (MOSS Image 8steps-dmd2).
+- Versiones orientadas a bajo consumo de VRAM mediante INT8/INT6.
+- No ofrece capacidades de texto, razonamiento, tool calling ni agentes: es exclusivamente un agregado de modelos visuales.
 
 ## Casos de uso
 
-- Edición de imágenes por instrucciones en local: cargar el checkpoint INT8 de Qwen-Rapid-AIO en ComfyUI y aplicar ediciones guiadas por prompt sobre imágenes existentes, aprovechando la cuantización para reducir la VRAM necesaria frente al FP8 original.
-- Segmentación automática de objetos para pipelines de recorte: usar SAM3 en FP16 o FP8 con ComfyUI-Easy-Sam3 para generar máscaras de sujetos y alimentar flujos de eliminación de fondo o composición.
-- Eliminación de fondo en producción gráfica: combinar SAM3 con ComfyUI-RMBG (que requiere el archivo nombrado exactamente `sam3.pt`) para automatizar recortes en lotes de imágenes.
-- Prototipado rápido en estaciones con GPU de consumo: desplegar los pesos INT8/INT6 para iterar sobre prompts y estilos sin necesidad de GPUs de centro de datos.
-- Automatización de retoque fotográfico: encadenar edición por prompt y segmentación para aislar regiones y aplicar cambios localizados en flujos de ComfyUI.
-- Investigación en cuantización de modelos de difusión: comparar la calidad visual entre las variantes INT8 ConvRot, INT6 W6A8 y FP8 que ofrece el repositorio para estudiar el impacto de la precisión en la generación de imágenes.
+- Edicion de imagen en local con Qwen Image Edit: usar las conversiones INT8/INT6 del UNet de Qwen-Rapid-AIO v23 para ejecutar edicion guiada por instrucciones en GPUs de 8-16 GB, donde el checkpoint FP16 no cabria.
+- Segmentacion automatica de objetos en pipelines de retoque: cargar `sam3_*.pt` en `ComfyUI/models/sam3` y combinarlo con nodos RMBG para generar mascaras de primer plano en flujos de eliminacion de fondo.
+- Generacion rapida de imagenes con MOSS Image 8 pasos: emplear la variante con DMD2 fusionada para reducir el numero de pasos de muestreo y bajar la latencia en prototipado.
+- Pruebas de calidad de cuantizacion: comparar el checkpoint original frente a la version INT8 ConvRot para medir degradacion perceptual antes de adoptar cuantizacion en produccion.
+- Despliegue en estaciones de trabajo con VRAM ajustada: servir Krea 2 Turbo INT8 en ComfyUI para generacion de bocetos en un equipo con una sola GPU consumer.
+- Investigacion sobre tecnicas de cuantizacion post-entrenamiento: el repo sirve como corpus de referencia de conversiones ConvRot e INT6 W6A8 aplicadas a distintas arquitecturas de difusion.
+- Flujos de img2img con modelos SD1.5/Pony cuantizados en entornos de muy baja VRAM, aceptando la penalizacion de velocidad documentada por el autor.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card solo incluye observaciones cualitativas del autor: en sus pruebas, las versiones INT8 de SD1.5 y SDXL (incluido Pony) resultaron mas lentas que los originales por cuello de botella de ancho de banda de VRAM y sobrecoste de des-cuantizacion; solo la variante Illustrious INT8 mostro mejora de velocidad.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma oficial; al tratarse de un modelo de difusión de gran tamano en INT8/INT6/FP8, se espera que las variantes cuantizadas reduzcan el consumo frente a FP16, pero el autor no publica cifras.
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: no confirmada por el autor; la motivación declarada de la cuantización es facilitar su uso en ComfyUI, lo que sugiere orientación a GPUs de consumo, pero sin datos verificables.
-- Opciones de despliegue: ComfyUI (librería declarada); nodos ComfyUI-Easy-Sam3 y ComfyUI-RMBG para SAM3.
-- Latencia y throughput: no disponible.
+- VRAM estimada: no disponible de forma agregada; depende de cada checkpoint. Las variantes INT8/INT6 estan pensadas para reducir el pico de memoria frente a FP16, pero el autor no publica cifras.
+- GPU recomendadas: no disponible. El objetivo declarado son entornos de baja VRAM y GPUs de consumo.
+- Cabe en GPU consumer: si, es el proposito de las conversiones INT8/INT6, aunque sin cifras concretas de VRAM por archivo.
+- Despliegue: ComfyUI como entorno principal; SAM3 requiere nodos ComfyUI-Easy-Sam3 o ComfyUI-RMBG.
+- Latencia y throughput: no disponibles; el autor advierte de que la cuantizacion puede ser mas lenta que el modelo original en varias arquitecturas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| waveshaker/comfy_models | Paquete de pesos cuantizados (Qwen-Image-Edit + SAM3) | INT8, INT6, FP8, FP16 | qwen-research-license | Hugging Face, 8 descargas |
-| Qwen/Qwen-Image-Edit-2511 | Modelo base de edición de imágenes | FP8 (según el autor) | Qwen Research License | Hugging Face (oficial) |
-| Phr00t/Qwen-Image-Edit-Rapid-AIO | Fine-tune comunitario de Qwen-Image-Edit | FP8 | no disponible | Hugging Face |
-| facebook/sam3 | Segmentación de imágenes | FP32 (oficial) | no disponible | Hugging Face (oficial) |
+| waveshaker/comfy_models | Agregado de conversiones para ComfyUI | INT8 ConvRot, INT6 W6A8, FP8, FP16 | qwen-research-license | Hugging Face, 507,2 GB |
+| Comfy-Org/Krea-2 | Checkpoint original | FP16/FP8 segun publicacion | no disponible | Hugging Face |
+| OpenMOSS-Team/MOSS-Image-SFT | Checkpoint original | FP16 | no disponible | Hugging Face |
+| facebook/sam3 | Modelo de segmentacion | FP32 oficial | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
-- El repositorio no es un modelo entrenado por el autor: es una redistribución y recuantización de pesos de terceros; la calidad depende de los checkpoints originales.
-- La cuantización a INT8 ConvRot e INT6 W6A8 puede introducir degradación visual respecto al FP8 original; el autor no publica comparativas de calidad.
-- El checkpoint de Qwen se deriva de un fine-tune etiquetado como NSFW (Rapid-AIO), lo que puede producir contenido no apto para todos los entornos y exige filtrado en producción.
-- La licencia Qwen Research License restringe el uso comercial de los pesos derivados de Qwen; es imprescindible revisar sus términos antes de desplegar.
-- No se documentan idiomas soportados ni sesgos conocidos.
-- SAM3 en FP8/mixed FP8 puede perder precisión en máscaras finas frente a la versión FP32 oficial.
-- ComfyUI-RMBG solo lee el archivo si se nombra exactamente `sam3.pt`, lo que limita la flexibilidad de nombres.
-- No hay benchmarks publicados que permitan validar el rendimiento frente a alternativas.
-- El repositorio es de gran tamano (65,7 GB) y requiere espacio de almacenamiento considerable.
+- No es un modelo entrenado por el autor: es una redistribucion de conversiones; los meritos y defectos de calidad corresponden a los modelos de origen.
+- La cuantizacion INT8 puede degradar la calidad de imagen y, segun el propio autor, reducir la velocidad en SD1.5 y SDXL.
+- La licencia declarada, `qwen-research-license`, restringe el uso comercial de al menos parte del contenido; conviene verificar la licencia de cada checkpoint de origen por separado.
+- El repositorio mezcla modelos con licencias distintas (Meta SAM3, checkpoints de Civitai, etc.), lo que complica el cumplimiento legal en produccion.
+- Varios checkpoints de Civitai tienen contenido NSFW explicito en su denominacion; no aptos para entornos corporativos sin filtrado.
+- El tamano del repo (507,2 GB) hace inviable su descarga completa en la mayoria de entornos; hay que seleccionar archivos individuales.
+- No hay datos de benchmarks ni de calidad objetiva publicados; las afirmaciones de rendimiento son anecdoticas.
+- Riesgo de alucinacion: no aplica en el sentido de texto, pero si existe riesgo de artefactos visuales derivados de la cuantizacion agresiva (INT6).
 
 ## Enlaces
 
 - Repositorio en Hugging Face: https://huggingface.co/waveshaker/comfy_models
-- Carpeta de modelos de difusión Qwen: https://huggingface.co/waveshaker/comfy_models/tree/main/qwen/diffusion_models
-- Carpeta de SAM3: https://huggingface.co/waveshaker/comfy_models/tree/main/sam3
-- Modelo base Qwen-Image-Edit-2511: https://huggingface.co/Qwen/Qwen-Image-Edit-2511
-- Fine-tune Qwen-Image-Edit-Rapid-AIO: https://huggingface.co/Phr00t/Qwen-Image-Edit-Rapid-AIO
-- SAM3 oficial: https://huggingface.co/facebook/sam3
-- Nodo ComfyUI-Easy-Sam3: https://github.com/yolain/ComfyUI-Easy-Sam3
-- Nodo ComfyUI-RMBG: https://github.com/1038lab/ComfyUI-RMBG
+- Modelo base declarado: https://huggingface.co/Qwen/Qwen-Image-Edit-2511
+- Herramienta de conversion: https://github.com/silveroxides/convert_to_quant
+- Herramientas de Comfy-Org: https://github.com/Comfy-Org/comfy-model-tools
+- Conversor Starnodes: https://github.com/Starnodes2024/comfyui-starnodes-modelconverter
+- Qwen-Image-Edit-Rapid-AIO: https://huggingface.co/Phr00t/Qwen-Image-Edit-Rapid-AIO
+- SAM3: https://huggingface.co/facebook/sam3
+- Nodos ComfyUI-Easy-Sam3: https://github.com/yolain/ComfyUI-Easy-Sam3
+- Nodos ComfyUI-RMBG: https://github.com/1038lab/ComfyUI-RMBG
+- MOSS Image SFT: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
+- Krea 2 (Comfy-Org): https://huggingface.co/Comfy-Org/Krea-2
+- Kromoss: https://huggingface.co/lodestones/Kromoss

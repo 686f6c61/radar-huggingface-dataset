@@ -2,94 +2,113 @@
 
 ## Resumen
 
-Spark-X2.6-4B-abliterated es una variante "abliterated" (sin mecanismos de rechazo) del modelo XHToken/Spark-X2.6-4B, un modelo de lenguaje de 4.112 millones de parametros (4,11B) desarrollado por XHToken y orientado a ejecucion en dispositivo (on-device), uso agentico, tool calling y razonamiento. FrostWolfAI ha generado esta variante aplicando Arbitrary-Rank Ablation (ARA) mediante Heretic v2.0.0.dev0, una tecnica que edita direcciones de pesos de baja rank para suprimir el comportamiento de rechazo sin reentrenar el modelo.
+Spark-X2.6-4B-abliterated es una variante "decensored" del modelo XHToken/Spark-X2.6-4B, un modelo de 4.112 millones de parametros (4,11B) desarrollado por XHToken y post-entrenado para uso en dispositivo (on-device), codigo, uso agentico de herramientas y trabajo con contexto largo. Esta version concreta la publica FrostWolfAI (Vatsal Bajpai) aplicando una ablacion de pesos con Heretic v2.0.0.dev0 y la tecnica Arbitrary-Rank Ablation (ARA), que suprime el comportamiento de rechazo sin fine-tuning y sin modificar la arquitectura original.
 
-La arquitectura del modelo base se mantiene intacta: 36 capas con un patron 3:1 de atencion de ventana deslizante (512 tokens) y atencion global, puertas de atencion sigmoideas por cabeza, QKV fusionado, embeddings atados y una ventana de contexto de 1.048.576 tokens. El modelo conserva la plantilla de chat estilo DeepSeek, el modo de razonamiento controlable (thinking budget: none/low/high) y el formato `<tool_call>` del modelo original.
+El modelo conserva intacta la arquitectura de Spark-X2.6: 36 capas con un patron 3:1 de atencion de ventana deslizante (512 tokens) y atencion global, puertas de atencion sigmoideas por cabeza, QKV fusionado, embeddings atados y una ventana de contexto de 1.048.576 tokens. Mantiene tambien la plantilla de chat estilo DeepSeek, el modo de razonamiento controlable (sin thinking / bajo / alto) y el formato `<tool_call>` para invocacion de herramientas.
 
-La relevancia de esta ficha radica en que combina tres caracteristicas poco habituales en un modelo de 4B: contexto ultralargo (1M tokens), capacidades agenticas y de tool calling, y una edicion de pesos que reduce los rechazos de 100/100 a 2/100 con una divergencia KL de solo 0,0177, lo que indica poca deriva en el comportamiento sobre prompts benignos. Esta pensado para agentes locales, investigacion en codigo y seguridad sobre una unica GPU de consumo o un portatil.
+La relevancia de esta ficha esta en que combina dos cosas poco habituales en un modelo de 4B: un contexto de un millon de tokens y un proceso de ablacion reproducible documentado con semillas, hiperparametros y checksums, orientado a agentes locales y a investigacion en una sola GPU de consumo. La ablacion reduce los rechazos de 100/100 a 2/100 con una divergencia KL de 0,0177, un edit muy ajustado que apenas altera el comportamiento en prompts benignos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso de 36 capas con patron 3:1 de atencion sliding-window (512) y global, puertas de atencion sigmoideas por cabeza, QKV fusionado, embeddings atados |
+| Arquitectura | Transformer decoder-only con atencion hibrida 3:1 (sliding-window de 512 y global), puertas de atencion sigmoideas por cabeza, QKV fusionado y embeddings atados |
 | Parametros totales | 4.112.079.360 (4,11B) |
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | 1.048.576 tokens |
-| Tipos de cuantizacion | BF16 (pesos originales); GGUF con 14 cuantizaciones (Q2_K a Q8_0, IQ3_S, IQ4_XS) publicadas en repositorio separado |
-| Idiomas soportados | Ingles (en), chino (zh) |
+| Tipos de cuantizacion | BF16 en el repo principal; GGUF con 14 cuantizaciones (Q2_K a Q8_0, IQ3_S, IQ4_XS) en repo separado |
+| Idiomas soportados | Ingles (en) y chino (zh) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (BF16), GGUF (cuantizaciones) |
+| Formato de pesos | safetensors (BF16, dos shards de 4,97 GB y 3,25 GB) y GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Spark-X2.6-4B es un transformer denso de 4,11B parametros con 36 capas que alterna atencion de ventana deslizante de 512 tokens y atencion global en un patron 3:1. Incorpora puertas de atencion sigmoideas por cabeza, proyecciones QKV fusionadas y embeddings atados. La ventana de contexto es de 1.048.576 tokens, lo que lo situa en la categoria de modelos de contexto ultralargo. El modelo base fue post-entrenado por XHToken para uso en dispositivo, con capacidades de codigo, uso agentico de herramientas y trabajo con contexto largo, e incluye un presupuesto de razonamiento configurable (none/low/high) y una plantilla de chat estilo DeepSeek con formato `<tool_call>`.
+El modelo base es un transformer decoder-only de 36 capas que alterna en patron 3:1 capas de atencion de ventana deslizante de 512 tokens con capas de atencion global, lo que permite manejar contexto muy largo con un coste computacional contenido. Incorpora puertas de atencion sigmoideas por cabeza, proyeccion QKV fusionada y embeddings atados entre entrada y salida. La ventana de contexto alcanza 1.048.576 tokens. El checkpoint incluye codigo personalizado (`trust_remote_code`), por lo que requiere transformers >= 5.
 
-La variante abliterated no modifica la arquitectura ni anade capacidades: aplica una edicion de pesos de baja rank sobre las proyecciones de salida de atencion (`out_proj`) y las down-projections del MLP de las capas 9 a 19. La tecnica, Arbitrary-Rank Ablation (ARA) de Heretic v2, optimiza una edicion de baja rank que dirige las activaciones de prompts daninos hacia las de prompts benignos, preservando explicitamente el comportamiento sobre prompts benignos. Los parametros del trial 46 (de 60) fueron: start_layer_index 9, end_layer_index 19, preserve_good_behavior_weight 0,8871, steer_bad_behavior_weight 0,0004, overcorrect_relative_weight 0,9891 y neighbor_count 4, con LoRA de rank 50, magnitudes de fila preservadas y fusion en BF16 al exportar. No hay datos disponibles sobre el numero de tokens de entrenamiento del modelo base ni sobre la composicion del dataset.
+Sobre el entrenamiento del modelo base no se dispone de detalles en la informacion proporcionada (numero de tokens, composicion del dataset, uso de RLHF o DPO). Lo que si esta documentado es el post-procesado de esta variante: Heretic v2.0.0.dev0 con el modificador ARA aplica un edit de bajo rango (LoRA de rango 50, con preservacion de magnitudes de fila y ablacion ortogonal) sobre las proyecciones de salida de atencion (`out_proj`) y las proyecciones down del MLP de las capas 9 a 19. El edit se fusiona en los pesos BF16 al exportar. Los hiperparametros del trial 46 (semilla `2026102902`) incluyen `preserve_good_behavior_weight` 0,8871, `steer_bad_behavior_weight` 0,0004, `overcorrect_relative_weight` 0,9891 y `neighbor_count` 4. El directorio `reproduce/` del repo contiene la receta completa (config.toml, requirements, journal de Optuna, reproduce.json y sumas SHA-256) para regenerar el modelo exacto.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento con modo thinking controlable (none / low / high), incluyendo bloque `<think>`.
-- Generacion de codigo y tareas de programacion.
-- Tool calling y function calling mediante el formato `<tool_call>`.
-- Uso agentico y razonamiento multi-paso.
-- Contexto ultralargo de hasta 1.048.576 tokens para documentos extensos o sesiones prolongadas.
-- Capacidades multilingues limitadas a ingles y chino.
-- Supresion del comportamiento de rechazo: 2/100 rechazos frente a 100/100 del modelo base, con KL de 0,0177.
-- Compatibilidad con llama.cpp (build con soporte `spark2_5`) y con transformers (codigo custom parcheado para transformers 5.x).
+- Generacion de texto conversacional en ingles y chino.
+- Razonamiento con modo thinking controlable: sin thinking, bajo o alto presupuesto de tokens.
+- Generacion de codigo y tareas de programacion, orientado por el autor a coding y seguridad.
+- Tool calling / function calling mediante el formato `<tool_call>` y plantilla de chat estilo DeepSeek.
+- Uso agentico y razonamiento multi-paso, con soporte de agentes locales.
+- Contexto largo de hasta 1.048.576 tokens para documentos extensos y conversaciones multi-turno prolongadas.
+- Ejecucion on-device en una sola GPU de consumo o portatil.
+- Comportamiento de rechazo suprimido (abliterated): no anade capacidades, solo elimina negativas.
 
 ## Casos de uso
 
-- Agentes locales en una unica GPU de consumo: el modelo puede ejecutarse en un portatil o en una RTX consumer y gestionar bucles de razonamiento multi-paso con tool calling, lo que permite montar agentes autonomos sin depender de APIs externas.
-- Analisis de repositorios completos: con 1M tokens de contexto, se puede cargar un repositorio entero o una base de codigo extensa y hacer preguntas sobre arquitectura, dependencias o vulnerabilidades sin trocear el contenido.
-- Investigacion en seguridad: la supresion de rechazos permite explorar tecnicas de red teaming, analisis de malware o generacion de pruebas de concepto en un entorno controlado, algo que el modelo base bloquearia.
-- Asistente de programacion en local: integrado en editores o pipelines de CI/CD mediante tool calling para generar tests, revisar diffs o sugerir parches, con la ventaja de no enviar codigo a terceros.
-- Procesamiento de documentos legales o tecnicos extensos: contratos, normativas o manuales de cientos de miles de tokens caben en una sola ventana, evitando perdida de informacion por chunking.
-- Experimentacion reproducible: el directorio `reproduce/` incluye la receta completa de Heretic (config.toml, requirements, journal de Optuna, reproduce.json y sumas SHA-256), lo que permite regenerar exactamente el modelo para estudios de reproducibilidad.
-- Despliegue en entornos con requisitos de privacidad: al ser on-device y Apache 2.0, se puede usar en infraestructura propia sin restricciones de licencia para uso comercial.
+- Agentes locales de codigo: el modelo puede integrarse en un IDE o CLI que invoque herramientas mediante `<tool_call>` para leer ficheros, ejecutar tests y aplicar parches, aprovechando su contexto de 1M tokens para mantener el estado de un repositorio mediano en memoria.
+- Analisis de repositorios completos: con 1.048.576 tokens de ventana se pueden cargar varios ficheros y su historial de cambios en una sola pasada para tareas de revision, busqueda de vulnerabilidades o explicacion de arquitectura.
+- Asistente de seguridad ofensiva y auditoria: la ablacion elimina los rechazos, lo que lo hace util para investigacion en seguridad, analisis de malware o red teaming en entornos controlados, sin que el modelo se niegue a analizar codigo potencialmente peligroso.
+- Automatizacion de atencion al cliente multi-turno: su contexto largo permite mantener historiales de conversacion extensos y recuperar informacion de manuales o bases de conocimiento inyectadas en el prompt.
+- Procesamiento de documentos largos en local: resumen, extraccion de entidades y preguntas sobre contratos, informes o transcripciones de cientos de miles de tokens sin enviar datos a la nube, gracias a su despliegue on-device.
+- Pipelines de CI/CD con tool calling: el modelo puede actuar como agente que interpreta fallos de build, consulta logs y propone correcciones invocando herramientas del pipeline, con cuantizacion Q4_K_M para caber en GPUs modestas.
+- Prototipado e investigacion reproducible: el directorio `reproduce/` permite regenerar exactamente el modelo, lo que facilita experimentos academicos sobre ablacion y alineacion.
 
 ## Benchmarks y rendimiento
 
+Los unicos datos publicados en la informacion disponible son las metricas de ablacion de Heretic, no benchmarks de capacidad.
+
 | Metrica | Este modelo | Modelo original (XHToken/Spark-X2.6-4B) |
 |---|---|---|
-| Divergencia KL | 0,0177 | 0 (por definicion) |
-| Rechazos (harmful_behaviors, test[:100]) | 2/100 | 100/100 |
-| Rechazos con thinking desactivado (40 prompts) | 0/40 | No disponible |
-| Rechazos con thinking activado (22 prompts completados) | 0/22 | No disponible |
+| Divergencia KL (first-token, harmless_alpaca test[:100]) | 0,0177 | 0 (por definicion) |
+| Rechazos (harmful_behaviors test[:100]) | 2/100 | 100/100 |
 
-Las metricas de rechazo se midieron sobre `mlabonne/harmful_behaviors` (test[:100]) y la KL de primer token sobre `mlabonne/harmless_alpaca` (test[:100]), con el bloque de thinking cerrado. No se han publicado resultados de benchmarks de capacidades (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
+Prueba de thinking on/off sobre los primeros 40 prompts reservados de `harmful_behaviors` con decodificacion greedy:
+
+| Modo | Rechazos |
+|---|---|
+| `enable_thinking=False` (150 tokens nuevos) | 0/40 |
+| `enable_thinking=True` (1.200 tokens nuevos) | 0/22 que terminaron el razonamiento (18 seguian pensando al alcanzar el limite) |
+
+No se han publicado resultados de benchmarks de capacidad (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: en BF16, los pesos ocupan aproximadamente 8,2 GB, por lo que se necesitan alrededor de 9-10 GB de VRAM para inferencia con overhead. Con cuantizaciones GGUF Q4_K_M el modelo baja a unos 2,5-3 GB, y con Q8_0 a unos 4,5 GB.
-- GPU recomendadas: RTX 4090, RTX 4080, RTX 3090 o superiores para BF16; GPUs con 8 GB o menos pueden usar cuantizaciones Q4 o inferiores. Para despliegue en servidor, A100 o H100 no son necesarias dado el tamano, pero permiten mayor throughput.
-- Cabe en GPU consumer: si, en la mayoria de GPUs consumer modernas con 8 GB o mas usando cuantizacion, y en BF16 en GPUs de 12 GB o mas.
-- Opciones de despliegue: transformers (>=5, con `trust_remote_code=True`), llama.cpp/llama-server (build con soporte `spark2_5`, flag `--jinja`) y los formatos GGUF publicados en el repositorio separado. No se mencionan vLLM, TGI ni Ollama en la informacion disponible.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada en BF16: aproximadamente 8,2 GB de pesos mas overhead de activaciones y cache KV; con contexto de 1M tokens la cache KV crece de forma significativa y puede superar la VRAM de GPUs de consumo.
+- Cuantizaciones GGUF: desde Q2_K hasta Q8_0 e IQ3_S/IQ4_XS, lo que permite bajar de unos 2 GB (Q2_K) a unos 4,5 GB (Q8_0) aproximadamente, segun el tamano de cada quant publicado en el repo GGUF.
+- GPU recomendadas: RTX 4090 (24 GB) o superior para BF16 con contexto largo; A100/H100 para despliegues con contexto completo de 1M tokens y concurrencia. En GPUs de 8-12 GB es viable con cuantizaciones Q4_K_M o inferiores y contextos reducidos.
+- Cabe en GPU de consumo: si, con cuantizacion GGUF y ventana de contexto moderada; en BF16 cabe en GPUs de 12 GB o mas para contextos cortos.
+- Opciones de despliegue: transformers >= 5 con `trust_remote_code=True`; llama.cpp con soporte `spark2_5` mediante `llama-server`; el repo GGUF esta probado en `llama-server` con thinking on/off y tool calls. No se confirma soporte en vLLM, TGI u Ollama en la informacion disponible.
+- Latencia y throughput: no disponibles.
+
+Ejemplo de despliegue con llama.cpp:
+
+```bash
+llama-server -hf FrostWolfAI/Spark-X2.6-4B-abliterated-GGUF:Q4_K_M --jinja -ngl 99 -fa on
+```
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
-| Spark-X2.6-4B-abliterated | 4,11B | 1.048.576 | Apache 2.0 | Variante sin rechazos, on-device, tool calling, thinking controlable |
-| XHToken/Spark-X2.6-4B | 4,11B | 1.048.576 | Apache 2.0 | Modelo base con rechazos activos; misma arquitectura y capacidades |
-| Alternativas de 4B con contexto largo | No disponible | No disponible | No disponible | No se dispone de datos verificados de modelos comparables en la informacion proporcionada |
+| Spark-X2.6-4B-abliterated (este) | 4,11B | 1.048.576 | Apache 2.0 | Variante abliterated, tool calling, thinking controlable, on-device |
+| XHToken/Spark-X2.6-4B | 4,11B | 1.048.576 | Apache 2.0 | Modelo base original, con rechazos intactos |
+| Alternativas de ~4B con tool calling | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
+
+No se dispone de datos de benchmarks de capacidad que permitan una comparacion cuantitativa con otros modelos de tamano similar.
 
 ## Limitaciones y advertencias
 
-- La abliteration elimina los rechazos, pero no anade capacidades: el modelo puede generar contenido danino, ilegal o inseguro sin filtros. Su uso en produccion requiere moderacion externa.
-- El modelo base solo soporta ingles y chino; el rendimiento en castellano no esta documentado y probablemente sea limitado.
-- Riesgo de alucinacion inherente a modelos de 4B, especialmente en tareas de razonamiento complejo o contexto muy largo.
-- La ventana de 1M tokens es nominal; el rendimiento efectivo en contextos extremos puede degradarse y no hay benchmarks publicados que lo validen.
-- El codigo custom (`modeling_spark.py`) esta parcheado para transformers 5.x (probado con 5.21.1); el codigo upstream apunta a transformers 4.57.1, lo que puede causar incompatibilidades si se mezclan versiones.
-- Requiere un build de llama.cpp con soporte `spark2_5` para los GGUF; no funciona con builds estandar sin ese soporte.
-- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias sobre el comportamiento del modelo ni sobre el cumplimiento normativo en usos sensibles.
-- El proceso de abliteration se realizo sobre un unico trial (46 de 60) con semilla fija; la reproducibilidad esta documentada, pero la robustez frente a distintos prompts daninos no se ha evaluado exhaustivamente.
+- La ablacion suprime los rechazos pero no anade capacidad: el rendimiento en tareas benignas es el del modelo base, y puede degradarse ligeramente en prompts que dependian de la alineacion original.
+- Riesgo elevado de generar contenido danino, ilegal o inseguro sin filtros: no debe desplegarse en produccion orientada al publico sin una capa de moderacion externa.
+- Riesgo de alucinacion propio de un modelo de 4B; no se han publicado evaluaciones de factualidad.
+- Idiomas limitados a ingles y chino; el castellano no esta declarado como soportado.
+- El contexto de 1M tokens implica un coste de cache KV muy alto; en la practica, contextos tan largos pueden no caber en hardware de consumo.
+- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias y la responsabilidad del uso recae en el desplegador.
+- Requiere transformers >= 5 y `trust_remote_code=True`; el codigo personalizado del checkpoint debe auditarse antes de ejecutarlo en entornos sensibles.
+- Las cuantizaciones GGUF requieren una build de llama.cpp con soporte `spark2_5`, no disponible en versiones estandar.
+- El modo thinking puede consumir muchos tokens (se observaron 18 de 40 prompts sin terminar el razonamiento en 1.200 tokens), lo que afecta a latencia y coste.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/FrostWolfAI/Spark-X2.6-4B-abliterated
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
-- GGUF cuantizados: https://huggingface.co/FrostWolfAI/Spark-X2.6-4B-abliterated-GGUF
+- Cuantizaciones GGUF: https://huggingface.co/FrostWolfAI/Spark-X2.6-4B-abliterated-GGUF
 - Repositorio Heretic: https://github.com/p-e-w/heretic
-- Articulo sobre abliteration: https://huggingface.co/blog/mlabonne/abliteration
+- Articulo sobre abliteration de mlabonne: https://huggingface.co/blog/mlabonne/abliteration
+- Perfil del autor: https://huggingface.co/xblack
+- Apoyo al autor: https://buymeacoffee.com/vatsalbajpai

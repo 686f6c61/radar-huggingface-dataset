@@ -58,31 +58,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Google Çeviri",
-      "url": "https://translate.google.com.tr/",
-      "snippet": "Google'ın ücretsiz olarak sunulan hizmeti, İngilizce ile 100'den fazla dil arasında kelime, ifade ve web sayfalarını anında çevirebilir."
-    },
-    {
-      "title": "Google Çeviri",
-      "url": "https://translate.google.com/?hl=tr",
-      "snippet": "Google Çeviri, İngilizce dahil 100'den fazla dilde kelime, ifade ve web sayfalarını anında çeviren ücretsiz bir hizmettir."
-    },
-    {
-      "title": "Yandex Çeviri",
-      "url": "https://translate.yandex.com/tr/",
-      "snippet": "İngilizce ve Rusça'dan Türkçe'ye iki yönlü çeviri. İsterseniz kelimeleri ve cümleleri, büyük metinleri, fotoğrafları, belgeleri ve web …"
-    },
-    {
-      "title": "DeepL Translate: Dünyanın en isabetli çevirisi",
-      "url": "https://www.deepl.com/tr/translator",
-      "snippet": "DeepL çeviri ile metinleri & belgeleri anında çevir. Her gün milyonlarca kişi DeepL ile online çeviri yapıyor."
-    },
-    {
-      "title": "Tureng - çeviri - Türkçe İngilizce Sözlük",
-      "url": "https://tureng.com/tr/turkce-ingilizce/%C3%A7eviri",
-      "snippet": "\"çeviri\" teriminin İngilizce Türkçe Sözlükte anlamları : 8 sonuç ... \"çeviri\" teriminin diğer terimlerle kazandığı İngilizce Türkçe Sözlükte …"
-    }
-  ]
+  "sources": []
 }

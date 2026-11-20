@@ -2,48 +2,51 @@
 
 ## Resumen
 
-LFM3-VL-2B-FP8 es la versión cuantizada en FP8 del modelo multimodal LFM3-VL-2B, desarrollado por Liquid AI. Se trata de un modelo de visión-lenguaje (image-text-to-text) compacto, con aproximadamente 1.918 millones de parámetros según los pesos reales del repositorio de safetensors, diseñado para tareas conversacionales que combinan imágenes y texto. Su tamaño reducido y su cuantización FP8 lo hacen especialmente relevante para despliegues en GPU con recursos limitados, donde se busca inferencia eficiente sin sacrificar las capacidades multimodales.
+LFM3-VL-2B-FP8 es la versión cuantizada en FP8 de LFM3-VL-2B, un modelo multimodal de tipo image-text-to-text desarrollado por Liquid AI dentro de su familia LFM3. El modelo base cuenta con 1.918.181.888 parámetros (aproximadamente 1,92 mil millones) y está diseñado para recibir entradas conjuntas de imagen y texto y generar respuestas conversacionales. Esta variante FP8 está pensada específicamente para inferencia en GPU, reduciendo el peso del repositorio a 2,6 GB frente a lo que ocuparía en BF16.
 
-La familia LFM (Liquid Foundation Models) de Liquid AI se caracteriza por arquitecturas propias que combinan componentes de transformador con mecanismos innovadores; en el caso de LFM3-VL, el modelo incorpora un codificador de visión y un proyector que se mantienen en BF16, mientras que los pesos de atención y feed-forward del lenguaje se cuantizan a FP8 con bloques de 128×128 y cuantización dinámica de activaciones. El modelo soporta 16 idiomas, entre ellos el castellano.
+La relevancia de esta ficha radica en que se trata de un modelo compacto (por debajo de los 2B parámetros) con capacidades de visión y un soporte declarado de 16 idiomas, incluido el castellano. La cuantización FP8 con bloques de 128×128 y cuantización dinámica de activaciones permite desplegarlo en GPUs de gama media con requisitos de VRAM moderados, manteniendo en BF16 los componentes sensibles (embeddings, cabeza de salida, convoluciones, puertas de atención, normas, codificador visual y proyector).
 
-La versión FP8 está pensada específicamente para inferencia en GPU mediante frameworks como SGLang (cuyo soporte estaba en revisión en el momento de publicación de la ficha). Es un modelo reciente, lo que lo sitúa en la tendencia actual de modelos multimodales pequeños y eficientes que pueden ejecutarse en hardware de consumo o en servidores de gama media.
+La información pública disponible en la model card es escasa: remite a la model card del modelo base para detalles de arquitectura y uso, y no incluye resultados de benchmarks ni especificaciones completas de contexto o entrenamiento. Esta ficha refleja únicamente los datos verificables en la información proporcionada y marca explícitamente como "no disponible" todo aquello que no se ha publicado.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | lfm3_vl (multimodal, con codificador de visión y proyector; detalles en la model card original) |
-| Parámetros totales | 1.918.181.888 (≈1,92 B) |
-| Parametros activos | no disponible (no se indica arquitectura MoE) |
+| Arquitectura | no disponible (familia LFM3; pipeline image-text-to-text; codificador visual + proyector + modelo de lenguaje) |
+| Parametros totales | 1.918.181.888 (≈1,92 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | FP8 con bloques 128×128 y cuantización dinámica de activaciones; embeddings, cabeza de salida, convoluciones, attention gates y normas en BF16; codificador de visión y proyector en BF16 |
+| Tipos de cuantizacion | FP8 (pesos de feed-forward y atención con bloques 128×128 y cuantización dinámica de activaciones); embeddings, cabeza de salida, convoluciones, puertas de atención, normas, codificador visual y proyector en BF16 |
 | Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl (16 idiomas) |
-| Licencia | lfm1.0 (Licencia Liquid AI, tipo "other") |
-| Formato de pesos | safetensors (compressed-tensors, FP8) |
+| Licencia | lfm1.0 (license: other, license_name: lfm1.0) |
+| Formato de pesos | safetensors (compressed-tensors), librería transformers, custom_code |
 
 ## Arquitectura y entrenamiento
 
-LFM3-VL-2B-FP8 es una versión cuantizada de LFM3-VL-2B, un modelo multimodal de la familia LFM3 de Liquid AI. La arquitectura combina un modelo de lenguaje LFM3 con un codificador de visión y un proyector multimodal. Según la model card de la versión FP8, los pesos de feed-forward y atención del componente de lenguaje usan FP8 con bloques de 128×128 y cuantización dinámica de activaciones, mientras que embeddings, la cabeza de salida, las convoluciones, los attention gates y las normas permanecen en BF16. El codificador de visión y el proyector también se mantienen en BF16 para preservar la calidad de la percepción visual. La configuración de sliding-window y RoPE no se modifica respecto al modelo base.
+La información proporcionada no detalla la arquitectura interna del modelo base LFM3-VL-2B más allá de que se trata de un modelo multimodal image-text-to-text de la familia LFM3, con un codificador visual, un proyector y un modelo de lenguaje. La model card de esta variante FP8 indica que los pesos de feed-forward y atención del modelo de lenguaje se cuantizan en FP8 con bloques de 128×128 y cuantización dinámica de activaciones, mientras que embeddings, cabeza de salida, convoluciones, puertas de atención y normas permanecen en BF16; el codificador visual y el proyector también se mantienen en BF16. Se conservan sin cambios los ajustes de sliding-window y RoPE.
 
-No se dispone de información pública en la ficha proporcionada sobre el número de tokens de entrenamiento, la composición del dataset ni los procesos de alineación (RLHF/DPO) aplicados al modelo base. Para detalles de arquitectura y uso, la propia model card remite a la ficha original de LFM3-VL-2B. La model card incluye el uso de un reasoning parser compatible con qwen3-thinking en SGLang, lo que sugiere soporte de razonamiento en modo thinking.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni sobre si se aplicaron técnicas de RLHF, DPO u otras etapas de alineación. Tampoco se documentan innovaciones técnicas específicas más allá de la propia cuantización FP8 y del uso de sliding-window attention (mencionado de forma indirecta al indicar que sus ajustes no se modifican).
 
 ## Capacidades
 
-- Comprensión de imágenes y generación de texto a partir de imágenes y texto (pipeline image-text-to-text)
-- Conversación multiturno (tag conversational)
-- Soporte de 16 idiomas, incluidos castellano, inglés, chino, japonés, coreano, árabe, francés, alemán, italiano, portugués, vietnamita, tailandés, indonesio, hindi, ruso y polaco
-- Modo de razonamiento (thinking), inferible del uso del reasoning parser qwen3-thinking en el ejemplo de SGLang
-- No se ha confirmado en la información disponible soporte explícito de tool calling ni de agentes
+- Generación de texto conversacional a partir de entradas de imagen y texto (pipeline image-text-to-text).
+- Comprensión de imágenes combinada con instrucciones en lenguaje natural (VQA, descripción, razonamiento sobre la imagen).
+- Soporte multilingüe declarado en 16 idiomas: inglés, árabe, chino, francés, alemán, italiano, japonés, coreano, portugués, español, vietnamita, tailandés, indonesio, hindi, ruso y polaco.
+- Formato conversacional (tag "conversational"), apto para diálogos multi-turno.
+- Compatibilidad con el parser de razonamiento `qwen3-thinking` en SGLang, lo que sugiere soporte de modo de razonamiento en el servidor de inferencia (según el ejemplo de despliegue de la model card).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y multi-step reasoning: no disponible en la información proporcionada (más allá de la referencia al parser de razonamiento).
+- Capacidades de audio: no disponible.
 
 ## Casos de uso
 
-- **Análisis de documentos y capturas de pantalla:** el codificador de visión en BF16 permite describir, extraer texto o responder preguntas sobre imágenes, útil para automatizar la lectura de facturas, formularios o interfaces.
-- **Asistentes multimodales ligeros:** con menos de 2.000 millones de parámetros y pesos FP8 (2,6 GB de repositorio), puede desplegarse en una sola GPU de consumo para chatbots que entiendan imágenes.
-- **Atención al cliente con imágenes:** los usuarios pueden enviar capturas de errores o fotos de productos; el modelo genera respuestas conversacionales multiturno en castellano y otros 15 idiomas.
-- **Moderación y clasificación de contenido visual:** su bajo coste de inferencia lo hace adecuado para procesar grandes volúmenes de imágenes con descripciones o etiquetas generadas.
-- **Generación de descripciones (alt-text) y accesibilidad:** puede usarse en pipelines para generar descripciones de imágenes en múltiples idiomas para sitios web y plataformas de e-commerce.
-- **Aplicaciones edge en servidor local:** la cuantización FP8 reduce la huella de memoria, permitiendo despliegues en entornos con GPU modestas donde un modelo VL de 7B+ no cabría.
-- **Razonamiento visual paso a paso:** gracias al modo thinking, puede resolver tareas que requieren razonamiento sobre imágenes antes de emitir la respuesta final.
+- Asistencia visual conversacional: el modelo puede recibir una imagen junto con una pregunta del usuario y mantener una conversación multi-turno sobre ella, gracias a su pipeline image-text-to-text y su formato conversacional. Adecuado para asistentes de accesibilidad que describan imágenes o respondan preguntas sobre su contenido.
+- Extracción de información de documentos escaneados: usar el modelo para responder preguntas concretas sobre facturas, formularios o capturas, combinando el codificador visual con el modelo de lenguaje. Su tamaño compacto permite desplegarlo en GPUs modestas.
+- Moderación y clasificación de imágenes con justificación textual: el modelo puede generar una explicación en lenguaje natural de por qué una imagen cumple o no ciertas políticas, útil en pipelines de revisión de contenido.
+- Atención al cliente con soporte de imágenes: integrable en un chatbot que reciba capturas de pantalla o fotos de productos y responda en el idioma del usuario (16 idiomas soportados, incluido el español), manteniendo conversaciones multi-turno.
+- Despliegue en edge o en servidores con VRAM limitada: al ser una variante FP8 de un modelo de menos de 2B parámetros, es apta para entornos donde no cabe un modelo multimodal mayor, por ejemplo en estaciones de trabajo con una sola GPU consumer.
+- Prototipado rápido de aplicaciones multimodales: al cargarse con `transformers` y disponer de soporte en SGLang (en revisión en el PR sgl-project/sglang#46858), sirve para validar ideas de producto antes de escalar a modelos mayores.
+- Procesamiento multilingüe de imágenes en contexto empresarial: por ejemplo, clasificación y respuesta a consultas sobre imágenes en español, portugués, francés o alemán dentro de un mismo flujo de trabajo.
 
 ## Benchmarks y rendimiento
 
@@ -51,38 +54,41 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repositorio ocupa 2,6 GB; con KV cache y sobrecargas de runtime, una GPU con 8 GB de VRAM debería ser suficiente en la mayoría de los escenarios (estimación basada en el tamaño de los pesos, no dato oficial).
-- GPU recomendadas: cualquier GPU con soporte de FP8 (NVIDIA Hopper H100/H200, Ada Lovelace RTX 4000/4090, L4, L40S). En GPUs sin soporte nativo de FP8 el rendimiento puede degradarse o no ser compatible según el runtime.
-- Cabe en GPUs de consumo: sí, en tarjetas como la RTX 4060 Ti 16 GB, RTX 4090 o equivalentes, dado el tamaño reducido de los pesos.
-- Despliegue: SGLang (soporte en revisión en sgl-project/sglang#46858 en el momento de redacción); el modelo base LFM3-VL-2B puede usarse con la librería transformers de Hugging Face. No se menciona soporte en la información disponible para vLLM, llama.cpp, Ollama o TGI para esta variante FP8.
-- Latencia y throughput: no disponible.
+- VRAM estimada: el repositorio pesa 2,6 GB en FP8; se puede estimar un consumo de pesos en torno a 2-3 GB, más overhead de activaciones, KV cache y codificador visual (este último en BF16). La VRAM total necesaria no está publicada.
+- GPU recomendadas: no disponible en la información proporcionada. Por tamaño, es plausible su ejecución en GPUs consumer con suficiente VRAM, pero no se confirma en la model card.
+- ¿Cabe en consumer GPU?: no confirmado oficialmente; el tamaño del repositorio (2,6 GB) sugiere que sí en GPUs con 8 GB o más, pero este dato no está verificado en la información disponible.
+- Opciones de despliegue: `transformers` (librería declarada) y SGLang (soporte en revisión en sgl-project/sglang#46858, con ejemplo de lanzamiento mediante `python -m sglang.launch_server --model-path LiquidAI/LFM3-VL-2B-FP8 --reasoning-parser qwen3-thinking`). Soporte en vLLM, llama.cpp, Ollama o TGI: no disponible.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Multimodal | Cuantización | Contexto | Licencia |
-|---|---|---|---|---|---|
-| LFM3-VL-2B-FP8 (Liquid AI) | ≈1,92 B | Sí (visión-lenguaje) | FP8 (bloques 128×128) | no disponible | lfm1.0 (other) |
-| Qwen3-VL-2B (Alibaba) | ≈2 B | Sí (visión-lenguaje) | BF16 (con variantes cuantizadas de la comunidad) | no disponible en esta ficha | Apache 2.0 |
-| InternVL3-2B (OpenGVLab) | ≈2 B | Sí (visión-lenguaje) | BF16 (con variantes cuantizadas de la comunidad) | no disponible en esta ficha | Apache 2.0 |
+No se dispone de datos de rendimiento ni de especificaciones completas de modelos comparables en la información proporcionada. La comparativa se limita a datos verificables:
 
-Nota: los datos de Qwen3-VL-2B e InternVL3-2B se ofrecen a título orientativo como alternativas de categoría similar (modelos VL de ~2B); conviene verificar las especificaciones exactas en sus fichas oficiales antes de tomar decisiones.
+| Modelo | Parámetros | Contexto | Modalidad | Licencia | Formato FP8 |
+|---|---|---|---|---|---|
+| LFM3-VL-2B-FP8 | ≈1,92 B | no disponible | imagen + texto | lfm1.0 | sí (compressed-tensors) |
+| LFM3-VL-2B (base) | ≈1,92 B | no disponible | imagen + texto | lfm1.0 | no (BF16) |
+| Otros modelos multimodales de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- La licencia lfm1.0 es una licencia personalizada ("other"), no una licencia abierta estándar: es imprescindible revisar el texto de la licencia antes de cualquier uso comercial o redistribución.
-- Al ser una cuantización FP8, puede haber una ligera degradación de calidad respecto al modelo base BF16, especialmente en tareas sensibles a precisión numérica; el codificador de visión y el proyector se mantienen en BF16 para mitigarlo.
-- El soporte en SGLang estaba en revisión en el momento de publicación, por lo que el despliegue con esta variante FP8 puede requerir esperar a una release oficial o usar el modelo base.
-- No hay benchmarks públicos en la información disponible para evaluar objetivamente su rendimiento frente a competidores.
-- La longitud de contexto no está documentada en la ficha proporcionada; debe consultarse la model card del modelo base antes de diseñar aplicaciones con documentos o conversaciones largas.
-- Como todo modelo de lenguaje, puede alucinar descripciones incorrectas sobre imágenes o generar contenido inexacto; se recomienda verificación humana en usos críticos.
-- El repositorio usa custom_code (tag custom_code), lo que implica ejecutar código proporcionado por el autor al cargar el modelo con trust_remote_code; evalúa los riesgos de seguridad correspondientes.
+- La model card de esta variante remite a la del modelo base para arquitectura y uso; la documentación pública es escasa y no cubre sesgos, datos de entrenamiento ni evaluaciones.
+- No se han publicado resultados de benchmarks, por lo que no es posible verificar la calidad del modelo frente a alternativas.
+- Riesgo de alucinación inherente a los modelos de lenguaje: no hay evaluación publicada específica para esta variante.
+- La cuantización FP8 puede introducir degradación respecto al modelo base en BF16; no se documenta la magnitud de esa pérdida.
+- Licencia `lfm1.0` (license: other): es necesario revisar el texto de la licencia antes de un uso comercial; la información proporcionada no detalla las restricciones.
+- Longitud de contexto no publicada: no se puede garantizar el comportamiento en conversaciones o documentos largos.
+- El soporte en SGLang está en revisión (PR #46858), por lo que el despliegue en producción con ese servidor puede requerir compilar desde la rama del PR.
+- El soporte en otros motores de inferencia (vLLM, llama.cpp, Ollama, TGI) no está confirmado.
+- El modelo requiere `trust_remote_code` o `custom_code` para cargarse con `transformers`, lo que implica ejecutar código del autor.
 
 ## Enlaces
 
-- Ficha en Hugging Face: https://huggingface.co/LiquidAI/LFM3-VL-2B-FP8
-- Modelo base (LFM3-VL-2B): https://huggingface.co/LiquidAI/LFM3-VL-2B
-- Blog de Liquid AI sobre LFM3: https://www.liquid.ai/blog/lfm3
+- Hugging Face (esta variante): https://huggingface.co/LiquidAI/LFM3-VL-2B-FP8
+- Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
+- Blog de la familia LFM3: https://www.liquid.ai/blog/lfm3
 - Documentación de Liquid AI: https://docs.liquid.ai/lfm/getting-started/welcome
-- Playground de Liquid AI: https://playground.liquid.ai/
-- Consola/API de Liquid AI: https://console.liquid.ai/dashboard
-- Pull request de soporte en SGLang: https://github.com/sgl-project/sglang/pull/46858
+- Consola / API: https://console.liquid.ai/dashboard
+- Playground: https://playground.liquid.ai/
+- PR de soporte en SGLang: https://github.com/sgl-project/sglang/pull/46858
+- Licencia (referenciada en la model card): LICENSE del repositorio de Hugging Face

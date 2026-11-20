@@ -2,80 +2,94 @@
 
 ## Resumen
 
-Este repositorio contiene la cuantizacion GGUF con imatrix del modelo Neuron-46x4B-Instruct, desarrollado por Neura Tech AI y cuantizado por mradermacher. El nombre del modelo sugiere una arquitectura de mezcla de expertos (MoE) con 46 expertos de 4.000 millones de parametros cada uno, lo que implicaria un total aproximado de 184.000 millones de parametros, aunque esta cifra no esta confirmada en la documentacion disponible. Este repositorio en particular solo incluye el archivo imatrix (Neuron-46x4B.imatrix.gguf, 0,2 GB) destinado a generar cuantizaciones personalizadas de alta calidad; las cuantizaciones estaticas listas para usar se publican en el repositorio hermano Neuron-46x4B-GGUF.
+Neuron-46x4B-i1-GGUF es la distribucion en formato GGUF del modelo Neuron-46x4B-Instruct, desarrollado por Neura Tech AI y cuantizado por el usuario mradermacher. Se trata de un modelo de lenguaje de gran escala con 125.058.592.256 parametros totales (segun los pesos en safetensors del modelo base), lo que lo situa en la categoria de modelos densos de mas de 100.000 millones de parametros. El nombre "46x4B" sugiere una composicion por modulos o expertos de 4.000 millones de parametros cada uno, aunque la informacion disponible no confirma si se trata de una arquitectura MoE o de un ensamblado de submodelos.
 
-El modelo base soporta 25 idiomas, entre ellos ingles, chino, hindi, arabe, japones, coreano, frances, aleman, espanol, portugues, italiano, ruso, turco, vietnamita, tailandes, indonesio, malayo, bengali, urdu, tamil, telugu, marathi, gujarati, punjabi y persa. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas. La relevancia de este repositorio radica en que proporciona el archivo de calibracion imatrix necesario para que los desarrolladores generen sus propias cuantizaciones optimizadas del modelo base.
+El interes practico de esta publicacion no reside en el modelo original, sino en la disponibilidad de cuantizaciones GGUF con calibracion imatrix, que permiten ejecutar un modelo de este tamano en hardware mucho mas modesto que el requerido por los pesos en precision completa. El repositorio ofrece desde variantes de 25,4 GB (IQ1_S) hasta 102,7 GB (Q6_K en tres partes), lo que cubre un espectro amplio de compromisos entre calidad y requisitos de memoria.
+
+La licencia Apache 2.0 y el soporte declarado de 25 idiomas, incluido el castellano, lo convierten en un candidato atractivo para despliegues multilingues autoalojados. No obstante, la ausencia de model card detallada del modelo base, de resultados de benchmarks y de especificaciones de contexto limita seriamente la evaluacion rigurosa de su calidad antes de llevarlo a produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (inferida del nombre "46x4B", no confirmada en la documentacion) |
-| Parametros totales | no disponible (el nombre sugiere ~184B: 46 expertos x 4B) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | imatrix (este repo); Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S (repo estatico) |
-| Idiomas soportados | 25: en, zh, hi, ar, ja, ko, fr, de, es, pt, it, ru, tr, vi, th, id, ms, bn, ur, ta, te, mr, gu, pa, fa |
+| Arquitectura | No disponible (transformer; el nombre sugiere 46 modulos de 4B, sin confirmar MoE) |
+| Parametros totales | 125.058.592.256 |
+| Parametros activos | No disponible |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (imatrix) |
+| Idiomas soportados | en, zh, hi, ar, ja, ko, fr, de, es, pt, it, ru, tr, vi, th, id, ms, bn, ur, ta, te, mr, gu, pa, fa |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (archivo imatrix) |
-
-Nota: el dato de "25.109.532 parametros" que aparece en los metadatos de Hugging Face corresponde al archivo imatrix de calibracion, no al modelo completo. El modelo base se aloja en Neura-Tech-AI/Neuron-46x4B.
+| Formato de pesos | GGUF (cuantizado); safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura exacta del modelo base no esta documentada en la informacion disponible. El nombre "Neuron-46x4B" sugiere una arquitectura de mezcla de expertos (MoE) con 46 expertos de 4.000 millones de parametros cada uno, siguiendo la convencion de nomenclatura de modelos como Mixtral-8x7B. En una arquitectura MoE tipica, solo un subconjunto de expertos se activa por token durante la inferencia, lo que permite un coste computacional muy inferior al que corresponderia a sus parametros totales.
+La informacion disponible no detalla la arquitectura interna del modelo base Neura-Tech-AI/Neuron-46x4B-Instruct. El recuento de 125.058.592.256 parametros y la nomenclatura "46x4B" apuntan a una composicion de 46 bloques de aproximadamente 4.000 millones de parametros, pero no se especifica si se trata de una mezcla de expertos (MoE), de un ensemble o de un transformer denso con una denominacion comercial. Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron fases de RLHF, DPO o ajuste supervisado.
 
-No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens procesados, ni si se aplicaron tecnicas de RLHF, DPO o similar. Tampoco se documentan innovaciones tecnicas especificas del modelo base. El repositorio actual es exclusivamente una publicacion de cuantizacion: mradermacher ha generado el archivo imatrix mediante el proceso de importance matrix, que calcula estadisticas de activacion de pesos sobre un corpus de calibracion para optimizar la asignacion de bits en cuantizaciones de baja precision.
+Lo unico verificable sobre el proceso de esta publicacion concreta es el pipeline de cuantizacion: mradermacher ha generado cuantizaciones ponderadas con fichero imatrix propio (Neuron-46x4B.imatrix.gguf, 0,2 GB), lo que mejora la fidelidad de las cuantizaciones de baja precision respecto a las estaticas. El repositorio incluye ademas una version estatica en mradermacher/Neuron-46x4B-GGUF. La ficha del autor no aporta informacion sobre innovaciones arquitectonicas como atencion lineal, decodificacion especulativa o modos de razonamiento extendido.
 
 ## Capacidades
 
-- Generacion de texto multilingue: el modelo base declara soporte para 25 idiomas, lo que lo habilita para tareas de generacion, traduccion y comprension en un amplio espectro linguistico.
-- Razonamiento y comprension: al ser un modelo de la familia instruct, esta optimizado para seguir instrucciones y responder a consultas en formato conversacional.
-- Capacidad de cuantizacion flexible: gracias al archivo imatrix incluido, los desarrolladores pueden generar cuantizaciones personalizadas (Q2_K, Q4_K_M, Q6_K, IQ-series, etc.) adaptadas a sus requisitos de memoria y calidad.
-- Compatibilidad con el ecosistema GGUF: el formato GGUF permite ejecutar el modelo con llama.cpp, Ollama, LM Studio y otros motores de inferencia local.
-- No se documentan capacidades especificas de tool calling, function calling, vision, audio o modo de razonamiento extendido en la informacion disponible.
+- Generacion de texto conversacional multi-turno, segun la etiqueta `conversational` del repositorio y la naturaleza Instruct del modelo base.
+- Cobertura multilingue declarada en 25 idiomas, con presencia de lenguas europeas (es, fr, de, it, pt, en, ru), asiaticas (zh, ja, ko, th, vi, id, ms) y del sur de Asia (hi, bn, ur, ta, te, mr, gu, pa, fa), ademas del arabe y el turco.
+- Compatibilidad con endpoints (etiqueta `endpoints_compatible`), lo que facilita su despliegue en infraestructuras de inferencia estandar.
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades de vision, audio o modo thinking: no disponible en la informacion proporcionada.
+- Capacidades de codigo y matematicas: no documentadas explicitamente en la informacion disponible.
 
 ## Casos de uso
 
-- Cuantizacion personalizada para despliegue en produccion: el archivo imatrix permite a los equipos generar cuantizaciones a medida del modelo Neuron-46x4B, ajustando el equilibrio entre precision y uso de VRAM segun el hardware disponible en su infraestructura.
-- Inferencia local en entornos con recursos limitados: mediante las cuantizaciones estaticas del repositorio hermano (Q4_K_M, Q5_K_M, Q6_K), el modelo puede ejecutarse en estaciones de trabajo con GPUs de consumo, reduciendo los requisitos de memoria frente al modelo en precision completa.
-- Asistente conversacional multilingue: con soporte para 25 idiomas, el modelo puede desplegarse como chatbot o asistente virtual en mercados con poblacion diversa, cubriendo desde ingles y chino hasta lenguas como bengali, urdu o persa.
-- Traduccion automatica entre pares de idiomas de bajo recurso: la cobertura de idiomas como tamil, telugu, marathi, gujarati o punjabi lo hace util para traduccion en contextos donde los modelos comerciales ofrecen cobertura limitada.
-- Generacion de contenido localizado: el modelo puede producir textos en multiples idiomas para campanas de marketing, documentacion tecnica o contenido editorial dirigido a audiencias regionales.
-- Prototipado rapido de aplicaciones NLP: gracias a la licencia Apache 2.0 y al formato GGUF, los desarrolladores pueden integrar el modelo en aplicaciones de prueba de concepto sin coste de licencia y con despliegue local mediante Ollama o llama.cpp.
-- Investigacion academica sobre modelos MoE multilingues: el modelo base, al ser de codigo abierto, permite estudiar el comportamiento de arquitecturas de mezcla de expertos en tareas multilingues sin restricciones de uso.
+- Atencion al cliente multilingue autoalojada: el modelo cubre 25 idiomas, incluidos castellano, catalan-adyacentes europeos y lenguas del sur de Asia, lo que permite atender a usuarios en su idioma nativo sin depender de APIs externas. La cuantizacion Q4_K_M (75,9 GB) ofrece un equilibrio razonable entre calidad y coste de infraestructura.
+- Procesamiento de documentacion en entornos con requisitos de soberania del dato: al ser Apache 2.0 y ejecutable en local mediante llama.cpp, puede desplegarse en infraestructura propia sin enviar contenido sensible a terceros.
+- Traduccion y adaptacion de contenido entre los idiomas soportados: la cobertura declarada de 25 lenguas permite construir pipelines de traduccion asistida o de generacion de contenido localizado, aunque la calidad por idioma debera validarse empiricamente.
+- Despliegue en estaciones de trabajo con GPU de gran capacidad: las variantes IQ3_S (54,0 GB) e IQ4_XS (66,7 GB) permiten ejecutar el modelo en configuraciones de una o dos GPU profesionales, habilitando prototipado rapido sin cluster dedicado.
+- Investigacion sobre cuantizacion y degradacion de calidad: la disponibilidad de 23 variantes de cuantizacion con imatrix permite estudiar empiricalmente la relacion entre bits por peso y calidad de salida en un modelo de 125B, un caso de estudio util para el diseno de pipelines de compresion.
+- Generacion de texto asistida en aplicaciones de escritorio o entornos edge con memoria limitada: las variantes IQ1_S (25,4 GB) e IQ2_XXS (32,9 GB) permiten, con perdida notable de calidad, ejecutar el modelo en equipos con 32-48 GB de RAM o VRAM unificada.
+- Base para fine-tuning o experimentacion academica: al estar el modelo base disponible en safetensors y con licencia permisiva, puede servir como punto de partida para ajustes especificos de dominio, aunque el coste de entrenamiento de un modelo de este tamano es elevado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos de MMLU, HumanEval, GSM8K ni otras evaluaciones estandar para el modelo base Neuron-46x4B ni para sus cuantizaciones.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Este repositorio en concreto solo contiene el archivo imatrix (0,2 GB), que no requiere GPU para su uso; se emplea como entrada para herramientas de cuantizacion como llama.cpp.
-- Para el modelo cuantizado completo, los requisitos dependen de la cuantizacion elegida y del tamano real del modelo, que no esta confirmado. Si el modelo tiene ~184B parametros totales, una cuantizacion Q4_K_M requeriria aproximadamente 100-110 GB de VRAM, lo que exige GPUs de clase enterprise como A100 80GB (en configuracion multi-GPU), H100 o similar.
-- Las cuantizaciones de menor precision (Q2_K, IQ2_M, IQ1_M) podrian reducir los requisitos a 50-70 GB, aun fuera del alcance de GPUs de consumo como la RTX 4090 (24 GB).
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, kobold.cpp y cualquier motor compatible con GGUF. Para despliegue en servidor con mayor concurrencia, podria emplearse vLLM si se convierte el modelo a formato compatible, aunque no se documenta soporte explicito.
-- La latencia y el throughput dependen del hardware y la cuantizacion; no se dispone de datos medidos.
+- VRAM/RAM estimada para inferencia segun cuantizacion: IQ1_S 25,4 GB; IQ2_XXS 32,9 GB; IQ2_M 40,9 GB; IQ3_S 54,0 GB; IQ4_XS 66,7 GB; Q4_K_M 75,9 GB; Q5_K_M 88,9 GB; Q6_K 102,7 GB (en tres partes). A estas cifras debe anadirse el espacio para el contexto KV cache, que puede ser significativo en ventanas largas.
+- GPU recomendadas: para las cuantizaciones de mayor calidad (Q5_K_M, Q6_K) se requiere al menos una GPU con 80 GB (A100 80GB, H100 80GB) o varias GPU en paralelo. Para IQ4_XS y Q4_K_M, dos GPU de 48 GB (A6000, L40S) o una H100 80GB resultan adecuadas.
+- Cabe en GPU consumer: solo las variantes de muy baja precision (IQ1_S, IQ2_XXS, IQ2_XS) caben en configuraciones de 24-32 GB, como una RTX 4090 (24 GB) con offloading parcial a RAM o una RTX 5090 (32 GB). El resto requiere offloading a memoria del sistema o hardware profesional.
+- Opciones de despliegue: llama.cpp y sus derivados (Ollama, LM Studio, koboldcpp) son los entornos naturales para GGUF. Para servir a varios usuarios en produccion, vLLM y TGI no soportan GGUF de forma nativa completa, por lo que seria preferible usar los pesos safetensors del modelo base con dichos motores.
+- Latencia y throughput: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de especificaciones confirmadas del modelo base Neuron-46x4B (parametros reales, contexto, rendimiento) que permitan una comparacion rigurosa con alternativas como Mixtral-8x7B, Qwen MoE o DeepSeek MoE. El nombre sugiere una arquitectura MoE de gran tamano, pero sin datos confirmados no es posible establecer una comparativa fiable.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Neuron-46x4B-i1-GGUF (este) | 125,1B | No disponible | Apache 2.0 | GGUF (23 variantes) | Cuantizacion imatrix de mradermacher; 25 idiomas |
+| Llama 3.1 405B Instruct | 405B | 128K | Llama 3.1 Community | Safetensors, GGUF | Mayor escala, licencia no plenamente permisiva |
+| Qwen2.5 72B Instruct | 72,7B | 128K | Apache 2.0 | Safetensors, GGUF, AWQ | Menor tamano, contexto documentado, benchmarks publicos |
+| Mistral Large 2 | 123B | 128K | Mistral Research / comercial | Safetensors | Tamano comparable, licencia no Apache, benchmarks publicos |
+
+La comparativa se limita a parametros, contexto y licencia, ya que no hay datos de rendimiento publicados para Neuron-46x4B. Frente a Qwen2.5 72B y Mistral Large 2, el modelo de Neura Tech AI ofrece un tamano comparable o superior con licencia Apache 2.0, pero carece de la documentacion tecnica y los benchmarks que acompanan a las alternativas consolidadas, lo que dificulta una comparacion de calidad rigurosa.
 
 ## Limitaciones y advertencias
 
-- El tamano real del modelo, el numero de parametros activos y la longitud de contexto no estan documentados; cualquier especificacion al respecto es inferencia a partir del nombre y no debe tomarse como dato confirmado.
-- Este repositorio no contiene los pesos del modelo cuantizado, solo el archivo imatrix. Los usuarios que busquen cuantizaciones listas para usar deben acudir al repositorio Neuron-46x4B-GGUF.
-- No se han publicado evaluaciones de sesgos, alucinacion o calidad de generacion para este modelo; se recomienda realizar pruebas especificas antes de usarlo en produccion.
-- El soporte de 25 idiomas no implica la misma calidad en todos ellos; es probable que el rendimiento sea superior en idiomas con mas representacion en el corpus de entrenamiento, aunque no se dispone de datos al respecto.
-- La licencia Apache 2.0 permite uso comercial, pero el usuario debe verificar que el modelo base (Neura-Tech-AI/Neuron-46x4B) mantiene la misma licencia y que no existen restricciones adicionales en los datos de entrenamiento.
-- Al tratarse de un modelo MoE de gran tamano, los requisitos de hardware para inferencia en precision completa son elevados; las cuantizaciones agresivas (Q2_K, IQ1_M) pueden degradar significativamente la calidad de las respuestas.
+- Ausencia de model card detallada del modelo base: no se documentan datos de entrenamiento, composicion del dataset ni procesos de alineacion, lo que impide evaluar sesgos conocidos o riesgos especificos.
+- Sin benchmarks publicados: no es posible verificar el rendimiento en tareas estandar (MMLU, HumanEval, GSM8K) ni comparar objetivamente con alternativas.
+- Longitud de contexto no especificada: un parametro critico para planificar despliegues y para evaluar si el modelo es adecuado en casos de contexto largo.
+- Riesgo de alucinacion: inherente a los modelos de lenguaje; sin datos de alineacion ni evaluaciones de factualidad, debe asumirse un riesgo no cuantificado y aplicar verificacion en produccion.
+- Calidad degradada en cuantizaciones bajas: las variantes IQ1_S, IQ1_M e IQ2_XXS, aunque permiten ejecutar el modelo en hardware limitado, conllevan perdida de calidad significativa; el propio autor las etiqueta como "for the desperate" y "mostly desperate".
+- Requisitos de hardware elevados: incluso en Q4_K_M se necesitan unos 76 GB de memoria, lo que excluye el despliegue en GPU consumer sin offloading y penaliza la latencia.
+- Idiomas declarados pero no validados: la cobertura de 25 idiomas proviene de las etiquetas del repositorio; no hay evaluaciones por idioma que confirmen calidad homogenea, especialmente en lenguas de bajos recursos como gu, pa, mr o te.
+- Compatibilidad de motores: al ser GGUF, el ecosistema de servidores de alta concurrencia (vLLM, TGI) no lo soporta de forma nativa; para produccion a escala conviene usar los pesos safetensors del modelo base.
+- Licencia Apache 2.0: permisiva para uso comercial, pero el usuario debe verificar de forma independiente que el modelo base no incorpore restricciones adicionales no reflejadas en las etiquetas del repositorio.
 
 ## Enlaces
 
-- Repositorio actual (imatrix): https://huggingface.co/mradermacher/Neuron-46x4B-i1-GGUF
-- Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/Neuron-46x4B-GGUF
-- Repositorio del modelo base: https://huggingface.co/Neura-Tech-AI/Neuron-46x4B
-- Repositorio del modelo instruct base: https://huggingface.co/mradermacher/Neuron-46x4B-Instruct-i1-GGUF
-- Guia de uso de archivos GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Pagina de peticiones de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Analisis de cuantizaciones IQ (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/Neuron-46x4B-i1-GGUF
+- Modelo base: https://huggingface.co/Neura-Tech-AI/Neuron-46x4B-Instruct
+- Cuantizaciones estaticas: https://huggingface.co/mradermacher/Neuron-46x4B-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Neuron-46x4B-i1-GGUF
+- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones de ikawrakow: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Analisis de Artefact2 sobre tipos de cuantizacion: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- nethype GmbH: https://www.nethype.de/

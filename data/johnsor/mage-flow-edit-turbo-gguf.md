@@ -2,123 +2,104 @@
 
 ## Resumen
 
-Mage-Flow-Edit-Turbo-GGUF es una cuantización en formato GGUF del transformer de difusión de microsoft/Mage-Flow-Edit-Turbo, publicada por el usuario johnsor para su uso con stable-diffusion.cpp. No se trata de un modelo nuevo: el repositorio no aporta pesos entrenados, sino una conversión a Q5_K del checkpoint bf16 original de Microsoft, que pasa de 8,23 GB a 2,65 GB y permite ejecutar edición de imágenes guiada por instrucciones en CPU sin GPU dedicada.
+Mage-Flow-Edit-Turbo-GGUF es una cuantización en formato GGUF del transformer de difusión Mage-Flow-Edit-Turbo, desarrollado originalmente por Microsoft. El modelo realiza edición de imágenes guiada por instrucciones en lenguaje natural: recibe una o varias imágenes de referencia y un prompt de texto, y genera una nueva escena que incorpora el contenido de la referencia. El repositorio lo publica el usuario johnsor y su aportación es exclusivamente la conversión a GGUF para su uso con stable-diffusion.cpp.
 
-El modelo subyacente es un diffusion transformer multimodal de resolución nativa con aproximadamente 4.115 millones de parámetros (4B), diseñado por Microsoft como parte de la familia Mage-Flow. Mage-Flow-Edit acepta una o varias imágenes de referencia más una instrucción en lenguaje natural y devuelve una imagen editada, cubriendo edición semántica de contenido, transformación de apariencia, restauración de imagen y salidas con conciencia de estructura dentro de un mismo modelo condicionado por imagen y texto. La variante Turbo está alineada para funcionar en 4 pasos de muestreo, frente a los 30 pasos del checkpoint base.
+Se trata de un transformer de difusión multimodal de 4.115.745.408 parámetros (aproximadamente 4B) que trabaja a resolución nativa. Su rasgo diferencial es que funciona en 4 pasos de muestreo con `cfg-scale` 1.0, lo que lo hace viable en CPU. La cuantización Q6_K reduce el peso del transformer de 8,23 GB en bf16 a 3,15 GB, y según el autor es el nivel mínimo de cuantización que mantiene la calidad sin artefactos.
 
-La relevancia de esta ficha concreta es práctica: demuestra que un editor de imágenes de 4B puede cuantizarse a 5 bits sin degradación visual apreciable y correr en hardware de consumo, incluso solo con CPU, en torno a 99 segundos por imagen a 512x512. El autor documenta además que por debajo de 5 bits el transformer no sobrevive al cuantizador uniforme de stable-diffusion.cpp, con artefactos sistemáticos en lugar de una degradación gradual, lo que convierte a Q5_K en el punto de compresión mínimo viable de esta arquitectura.
+El modelo resulta relevante porque demuestra que la edición de imágenes por instrucción puede ejecutarse en hardware de consumo sin GPU dedicada, con un pipeline completo de unos 6,2 GB que incluye transformer, codificador de texto y VAE. La licencia MIT del modelo original facilita su integración en productos comerciales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Diffusion transformer multimodal de resolucion nativa (stack Mage-Flow: Mage-VAE + transformer de difusion condicionado por imagen y texto) |
-| Parametros totales | 4.115.745.408 (aproximadamente 4B) |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible / no aplica en el sentido de contexto de texto (el text encoder asociado es Qwen3VL-4B-Instruct) |
-| Tipos de cuantizacion | Q5_K (publicado). Reproducibles: Q8_0 (4,08 GB), Q6_K (3,15 GB), Q4_K (2,33 GB), Q4_0 (2,17 GB). Por debajo de Q5_K aparecen artefactos graves |
-| Idiomas soportados | No disponible (las instrucciones se procesan via Qwen3VL-4B-Instruct; no se declara lista de idiomas) |
+| Arquitectura | Transformer de difusión multimodal (Mage-Flow-Edit-Turbo) |
+| Parametros totales | 4.115.745.408 (aprox. 4B) |
+| Parametros activos | no disponible (no es MoE según la información disponible) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q8_0, Q6_K, Q5_K, Q4_K, Q4_0 (GGUF); bf16 como fuente |
+| Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF (transformer Q5_K); safetensors para el VAE y para el checkpoint fuente bf16 |
-
-Datos adicionales de empaquetado: el transformer Q5_K ocupa 2,65 GB, el text encoder Qwen3VL-4B-Instruct en Q4_K_M 2,33 GB, el proyector de vision (mmproj) en Q8_0 0,42 GB y el VAE en bf16 0,32 GB, para un total aproximado de 5,7 GB. El tamano del repositorio es de 2,8 GB.
+| Formato de pesos | GGUF (transformador); safetensors para VAE; GGUF para codificador de texto |
 
 ## Arquitectura y entrenamiento
 
-Mage-Flow-Edit-Turbo es un diffusion transformer de 4B con empaquetado de resolucion nativa, entrenado por Microsoft sobre una infraestructura con kernels fusionados. El stack compartido de la familia Mage-Flow genera dos instanciaciones: Mage-Flow para generacion texto-a-imagen y Mage-Flow-Edit para edicion guiada por instrucciones. El tokenizador latente es Mage-VAE, un tokenizador ligero de una sola etapa de difusion con anclaje mediante KL de latentes, que reduce el coste del autoencoder frente a los VAE convencionales. Cada instanciacion se distribuye en tres variantes: Base, alineada por RL y Turbo de 4 pasos.
+La información disponible describe el modelo como un transformer de difusión multimodal de resolución nativa con 4B de parámetros, orientado a edición de imágenes por instrucción. El pipeline completo separa tres componentes: el transformer de difusión (objeto de esta cuantización), un codificador de texto multimodal Qwen3VL-4B-Instruct (que incluye un `mmproj` para procesar la imagen de referencia) y un VAE (`mage_flow_vae_bf16.safetensors`). El checkpoint Turbo está diseñado para 4 pasos de muestreo con `cfg-scale` 1.0, frente a los 30 pasos del checkpoint base.
 
-El detalle de entrenamiento que si esta documentado en la informacion disponible es la existencia de una fase de alineamiento por RL (variante RL-aligned) y la destilacion hacia la variante Turbo de 4 pasos. No se especifican en la informacion proporcionada el numero de tokens de entrenamiento, la composicion exacta del dataset ni los detalles del proceso de alineamiento, por lo que esos datos quedan como no disponibles. La cuantizacion aqui descrita no altera el entrenamiento: se genera con `sd-cli -M convert --type q5_K` a partir de `mage_flow_edit_turbo_bf16.safetensors` (revision `c92d73c408515c94beef32161bb5960764fde7a0` de stable-diffusion.cpp), en unos 75 segundos de conversion.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. La model card tampoco detalla innovaciones arquitectónicas internas más allá de la naturaleza multimodal del transformer y su capacidad de operar a resolución nativa. La conversión a GGUF se realizó con `sd-cli -M convert` y tipo `q6_K` a partir de `diffusion_models/mage_flow_edit_turbo_bf16.safetensors` del repackage de Comfy-Org, con stable-diffusion.cpp en la revisión `c92d73c408515c94beef32161bb5960764fde7a0`; el proceso tarda unos 75 segundos.
 
 ## Capacidades
 
-- Edicion de imagen por instruccion: recibe una o varias imagenes de referencia (multiples flags `-r`) y una instruccion en lenguaje natural, y genera una escena nueva que incorpora el contenido de la referencia.
-- Resolucion nativa: no depende de reescalados forzados, lo que favorece la fidelidad en escenas con detalle fino.
-- Edicion semantica de contenido, transformacion de apariencia, restauracion de imagen y salidas con conciencia de estructura dentro del mismo modelo.
-- Muestreo en 4 pasos con `--cfg-scale 1.0` y metodo de muestreo Euler, lo que habilita inferencia en CPU.
-- Condicionamiento multimodal: el proyector `mmproj-Qwen3VL-4B-Instruct-Q8_0.gguf` es imprescindible para que el modelo "vea" la imagen de referencia; sin el, la referencia se ignora.
-- Ejecucion con offload a CPU (`--offload-to-cpu`) y atencion de difusion optimizada (`--diffusion-fa`).
-- No se declara soporte de tool calling, function calling, agentes, audio ni modo de razonamiento explicito. Es un modelo de generacion/edicion de imagen, no un modelo conversacional general.
+- Edición de imágenes guiada por instrucciones en lenguaje natural: transforma una fotografía de referencia en una nueva escena descrita por el prompt.
+- Entrada de múltiples imágenes de referencia mediante flags `-r` repetidos.
+- Procesamiento de la imagen de referencia a través del `mmproj` del codificador Qwen3VL-4B-Instruct; sin él, la referencia se ignora.
+- Generación texto-a-imagen e imagen-a-imagen (pipeline declarado `image-to-image`).
+- Muestreo rápido en 4 pasos con `cfg-scale` 1.0, apto para ejecución en CPU.
+- Soporte de resolución nativa, con ejemplos a 512x512 y referencias a 1024 px en las pruebas de cuantización.
+- No se documentan capacidades de tool calling, agentes, audio ni modo de razonamiento explícito.
 
 ## Casos de uso
 
-- Edicion fotografica local sin nube: el modelo procesa la imagen y la instruccion enteramente en el equipo, lo que resulta adecuado para flujos con requisitos de privacidad, ya que ninguna imagen sale del sistema.
-- Prototipado en portatiles sin GPU: con 5,7 GB de pesos totales y 99 segundos de latencia a 512x512 en un Ryzen 7 4800H, es viable desarrollar y validar prompts de edicion en maquinas modestas.
-- Aumento de datos para entrenamiento: generar variaciones controladas de imagenes existentes (cambios de iluminacion, entorno, vestuario) mediante instrucciones, ampliando datasets de vision por computador con ejemplos etiquetados de forma natural.
-- Flujos de e-commerce: sustituir fondos, cambiar el entorno de un producto o modificar condiciones de iluminacion a partir de una fotografia de catalogo, manteniendo el objeto de referencia.
-- Restauracion y mejora de imagen: la capacidad declarada de restauracion permite corregir imagenes degradadas o incompletas describiendo el resultado deseado en la instruccion.
-- Edicion iterativa sobre multiples referencias: pasar varias imagenes con flags `-r` para componer escenas que combinen elementos de todas ellas, util en diseno grafico y previsualizacion de conceptos.
-- Integracion en pipelines de automatizacion grafica: al ser GGUF y ejecutarse con sd-cli, se puede envolver en scripts y servicios por lotes que apliquen una misma plantilla de edicion a colecciones de imagenes.
-- Herramientas de accesibilidad: convertir descripciones textuales en ediciones concretas sobre una imagen de referencia proporcionada por el usuario.
+- Edición fotográfica asistida en local: un usuario pasa una foto y una instrucción ("este perro con una bufanda roja en un parque nevado") y obtiene la escena editada sin conexión a servicios en la nube, gracias a los 4 pasos de muestreo y al pipeline de 6,2 GB.
+- Prototipado de producto en equipos sin GPU: con 99 segundos por imagen a 512x512 en un Ryzen 7 4800H en CPU, sirve para validar conceptos visuales en portátiles convencionales.
+- Composición de escenas con múltiples referencias: el soporte de varios flags `-r` permite combinar objetos o personas de distintas imágenes en una sola generación.
+- Herramientas de edición integradas en aplicaciones de escritorio: la licencia MIT y el formato GGUF facilitan el empaquetado dentro de aplicaciones nativas como offgrid, para el que fue cuantizado.
+- Generación de variaciones visuales a partir de una imagen base: útil en flujos de diseño gráfico donde se parte de un activo existente y se piden modificaciones de contexto o vestuario.
+- Automatización de contenido visual en pipelines por lotes: la ejecución en CPU con stable-diffusion.cpp permite procesar colas de ediciones en servidores sin acelerador dedicado.
+- Educación e investigación sobre difusión multimodal: el pipeline separado (transformer, codificador, VAE) y las cuantizaciones publicadas permiten estudiar el efecto de la precisión en la calidad de salida.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks numericos (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. Tampoco se aportan metricas objetivas de calidad de edicion (FID, CLIP score, similitud de sujeto) para el modelo base ni para la cuantizacion.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
-Los unicos datos de rendimiento disponibles son cualitativos y de latencia:
+La model card aporta datos cualitativos y de rendimiento de ejecución, no métricas estándar:
 
-| Metrica | Valor |
-|---|---|
-| Pasos de muestreo (Turbo) | 4 (el checkpoint base usa 30) |
-| CFG scale | 1.0 |
-| Metodo de muestreo | euler |
-| Resolucion del ejemplo | 512x512 |
-| Latencia end-to-end en CPU (Ryzen 7 4800H) | 99 segundos |
-| Tamano del transformer Q5_K | 2,65 GB (frente a 8,23 GB en bf16) |
-
-Calidad por tipo de cuantizacion, segun pruebas del autor con la misma fuente bf16 y ajustes identicos:
-
-| Tipo | Tamano | Resultado |
+| Configuracion | Tamano | Resultado cualitativo |
 |---|---|---|
-| bf16 (fuente) | 8,23 GB | Limpio |
-| Q8_0 | 4,08 GB | Limpio |
-| Q6_K | 3,15 GB | Limpio |
-| Q5_K (este archivo) | 2,65 GB | Limpio, indistinguible de bf16 segun el autor |
-| Q4_K | 2,33 GB | Artefactos graves de textura en todo el encuadre |
-| Q4_0 | 2,17 GB | Sin imagen, textura plana rosada |
+| bf16 (fuente) | 8,23 GB | limpio |
+| Q8_0 | 4,08 GB | limpio |
+| Q6_K | 3,15 GB | limpio (este archivo) |
+| Q5_K | 2,65 GB | retícula ondulada en zonas planas, peor a 1024 px |
+| Q4_K | 2,33 GB | acanalado intenso en todo el fotograma |
+| Q4_0 | 2,17 GB | sin imagen, acanalado rosa plano |
+
+Rendimiento de ejecución reportado: 99 segundos de extremo a extremo a 512x512 en un Ryzen 7 4800H, solo CPU.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en torno a 6-7 GB si se cargan simultaneamente transformer (2,65 GB), text encoder (2,33 GB), mmproj (0,42 GB) y VAE (0,32 GB), mas el overhead de activaciones y buffers. Cabe en GPUs consumer de 8 GB con margen ajustado; con `--offload-to-cpu` se puede reducir la huella en VRAM a costa de latencia.
-- Ejecucion sin GPU: confirmada. El autor reporta 99 segundos end-to-end a 512x512 en un Ryzen 7 4800H usando solo CPU.
-- GPU recomendadas: no disponibles en la informacion proporcionada. Dado que el modelo corre en CPU y esta pensado para stable-diffusion.cpp, cualquier GPU con 8 GB o mas de VRAM deberia ser suficiente, pero no hay datos medidos que lo respalden.
-- Opciones de despliegue: stable-diffusion.cpp (binario `sd-cli`), integracion en offgrid (para la que fue cuantizado), y empaquetado de Comfy-Org/Mage-Flow como origen de los pesos fuente.
-- Latencia y throughput: 99 segundos por imagen a 512x512 en el hardware CPU citado. No hay datos de throughput en GPU ni de resoluciones superiores.
-- Requisito critico de memoria: el proyector de vision (`mmproj`) debe cargarse siempre que se use una imagen de referencia; omitirlo degrada silenciosamente el resultado porque la referencia se ignora.
+- VRAM/RAM estimada: el pipeline completo ocupa unos 6,2 GB (transformer Q6_K 3,15 GB, codificador de texto Q4_K_M 2,33 GB, mmproj Q8_0 0,42 GB y VAE bf16 0,32 GB).
+- GPU recomendadas: no se especifican en la información disponible; el ejemplo de referencia se ejecuta en CPU.
+- Cabe en GPU de consumo: no confirmado en la información disponible; el tamaño del pipeline (6,2 GB) es compatible con GPUs de 8 GB o más, pero no se documenta un ejemplo verificado.
+- Despliegue: stable-diffusion.cpp (`sd-cli`) con `--diffusion-fa` y `--offload-to-cpu`; el autor lo cuantizó para offgrid. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- Latencia: 99 segundos por imagen a 512x512 en CPU (Ryzen 7 4800H); Q6_K es algo más lento que Q5_K según el autor. No se proporcionan datos de throughput en GPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Mage-Flow-Edit-Turbo-GGUF (johnsor) | 4B (4.115.745.408) | No aplica | Sin benchmarks; latencia 99 s a 512x512 en CPU | MIT | GGUF Q5_K, 2,65 GB, repo de 2,8 GB |
-| microsoft/Mage-Flow-Edit-Turbo (bf16, fuente) | 4B | No aplica | Sin benchmarks publicados en la informacion disponible | MIT | bf16, 8,23 GB; repositorio de Microsoft no accesible actualmente segun el autor |
-| Comfy-Org/Mage-Flow (repaquete de referencia) | 4B | No aplica | No disponible | MIT | Safetensors bf16 en Comfy-Org |
-| Otros editores por instruccion de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Mage-Flow-Edit-Turbo-GGUF (Q6_K) | 4,12B | no disponible | GGUF | MIT | Cuantización para stable-diffusion.cpp; 4 pasos, CPU viable |
+| Mage-Flow-Edit-Turbo (bf16, Microsoft) | 4,12B | no disponible | safetensors | MIT | Modelo original; 8,23 GB; repos en el Hub no accesibles según el autor |
+| Mage-Flow-Edit-Turbo (base, no Turbo) | no disponible | no disponible | no disponible | MIT | Requiere 30 pasos frente a 4 del Turbo |
+| Qwen3-VL-4B-Instruct | 4B | no disponible | GGUF | no disponible en la información | Codificador de texto del pipeline, no un editor de imágenes comparable |
 
-No se dispone de datos verificables de modelos alternativos (por ejemplo editores de imagen por instruccion de otros fabricantes) en la informacion proporcionada, por lo que la comparacion cuantitativa queda como no disponible.
+No se dispone de información sobre otros modelos de edición de imágenes por instrucción en los datos proporcionados, por lo que la comparativa se limita a las variantes del propio modelo.
 
 ## Limitaciones y advertencias
 
-- Cuantizacion fragil: por debajo de 5 bits el transformer no degrada de forma gradual, sino que aparece un patron sistematico de textura tipo "corduroy" en Q4_K y una ausencia total de imagen coherente en Q4_0. No es viable bajar a 4 bits con el cuantizador uniforme de stable-diffusion.cpp.
-- Dependencia de multiples archivos: el GGUF publicado es solo el transformer. Sin el text encoder Qwen3VL-4B-Instruct, el mmproj y el VAE de Comfy-Org no funciona. El autor estima unos 5,7 GB en total.
-- Modelo no conversacional: no admite tool calling, agentes ni razonamiento multi-paso; es exclusivamente un modelo de edicion/generacion de imagen.
-- Idiomas no declarados: no hay lista de idiomas soportados para las instrucciones. El comportamiento multilingue depende del text encoder asociado y no esta documentado.
-- Sin benchmarks: no existen metricas objetivas publicadas en la informacion disponible que permitan comparar su calidad con alternativas.
-- Trazabilidad del origen: el autor indica que los repositorios `microsoft/Mage-Flow` y `microsoft/Mage-Flow-Edit-Turbo` no eran accesibles en el momento de la publicacion, por lo que la fuente real de los pesos es el repaquete de Comfy-Org. Conviene verificar la procedencia si se necesita trazabilidad estricta.
-- Riesgo de alucinacion visual: como todo modelo generativo, puede introducir o eliminar elementos no solicitados y no preservar fielmente la identidad del sujeto de referencia.
-- Licencia: MIT, sin restricciones declaradas para uso comercial, heredada de microsoft/Mage. Al ser una cuantizacion, la licencia aplicable es la del modelo original.
-- Adopcion nula: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion por parte de la comunidad.
-- Nota de fecha: la fecha de creacion registrada (2026-09-24) es posterior a la de la mayoria de checkpoints de la familia, dato a tener en cuenta al verificar versiones.
+- Por debajo de Q6_K la calidad se degrada de forma sistemática: Q5_K introduce una retícula regular en zonas planas que se hace evidente a 1024 px, y Q4_K y Q4_0 producen artefactos graves o ninguna imagen. No es un modelo apto para 4 bits.
+- El repositorio solo contiene el transformer; requiere descargar por separado el codificador Qwen3VL-4B-Instruct, su `mmproj` y el VAE, lo que añade complejidad de despliegue.
+- Sin el archivo `mmproj`, la imagen de referencia se ignora por completo, lo que puede pasar desapercibido si no se configura correctamente.
+- Los repositorios `microsoft/Mage-Flow` y `microsoft/Mage-Flow-Edit-Turbo` no están accesibles en el Hub según el autor; la fuente utilizada es el repackage de Comfy-Org, lo que introduce dependencia de un tercero.
+- No se documentan sesgos conocidos, tasas de alucinación visual ni limitaciones idiomáticas del prompt; no hay información al respecto.
+- El rendimiento en CPU es lento (99 segundos por imagen a 512x512); no es adecuado para aplicaciones interactivas en tiempo real sin GPU.
+- Licencia MIT, lo que permite uso comercial, pero la responsabilidad sobre los derechos de las imágenes de entrada y salida recae en el usuario.
+- La cuantización la mantiene un autor individual (johnsor) sin relación con Microsoft; no hay garantía de mantenimiento ni de paridad exacta con el modelo original.
 
 ## Enlaces
 
-- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/johnsor/Mage-Flow-Edit-Turbo-GGUF
-- Modelo base en Hugging Face: https://huggingface.co/microsoft/Mage-Flow-Edit-Turbo
-- Fuente de pesos y VAE (Comfy-Org): https://huggingface.co/Comfy-Org/Mage-Flow
-- Text encoder Qwen3VL-4B-Instruct-GGUF: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct-GGUF
+- Repositorio Hugging Face: https://huggingface.co/johnsor/Mage-Flow-Edit-Turbo-GGUF
+- Modelo base: https://huggingface.co/microsoft/Mage-Flow-Edit-Turbo
+- Repositorio de Microsoft Mage: https://github.com/microsoft/Mage
 - stable-diffusion.cpp: https://github.com/leejet/stable-diffusion.cpp
-- Repositorio microsoft/Mage: https://github.com/microsoft/Mage
-- offgrid (destino de la cuantizacion): https://github.com/woelper/offgrid
-- Pipeline MageFlow Edit GGUF con Ollama: https://github.com/47thtechcorner/RayCodes_MageFlow_Edit_GGUF/blob/master/
-- Repaquete alternativo del modelo: https://huggingface.co/Jinstudio/Mage-Flow-Edit-Turbo
-- Ficha y analisis en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/mage-flow-edit-turbo-microsoft
-- Ficha en onlylabs: https://www.onlylabs.fyi/signals/34513ad1-7ea6-4be5-ab98-123bad550ccf
+- Codificador de texto Qwen3-VL-4B-Instruct GGUF: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct-GGUF
+- VAE y pesos fuente (Comfy-Org): https://huggingface.co/Comfy-Org/Mage-Flow
+- Aplicación offgrid: https://github.com/woelper/offgrid

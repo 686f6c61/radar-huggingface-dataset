@@ -2,60 +2,51 @@
 
 ## Resumen
 
-VIGOR-mini-GGUF es la distribucion en formato GGUF de VIGOR-mini (Vision Intelligence and Guardrail Oriented Reasoning), un modelo multimodal denso de 4.326 millones de parametros desarrollado por prithivMLmods y construido sobre Qwen/Qwen3.5-4B. Su proposito no es la generacion de texto generalista, sino la clasificacion de seguridad de contenido visual: analiza imagenes y emite un veredicto estructurado en JSON sobre si el contenido es apto (safe) o no apto (NSFW), con especial atencion a ropa, exposicion corporal, poses y contexto.
+VIGOR-mini (Vision Intelligence and Guardrail Oriented Reasoning) es un modelo multimodal denso de aproximadamente 4.300 millones de parametros derivado de Qwen/Qwen3.5-4B, desarrollado por prithivMLmods. Su proposito es actuar como clasificador de seguridad de contenido visual: analiza imagenes y devuelve una descripcion estructurada junto con una decision binaria Safe / NSFW, con un umbral conservador orientado a control parental y proteccion de menores. La version aqui descrita es la cuantizacion GGUF del modelo base, publicada para inferencia local con llama.cpp.
 
-El modelo esta pensado como guardrail o filtro de moderacion para pipelines de vision, control parental y proteccion de menores. La variante GGUF anade soporte de decodificacion especulativa mediante Multi-Token Prediction (MTP) integrada en los propios pesos, lo que evita depender de un modelo borrador separado y acelera la inferencia local. El repo incluye ademas el fichero de proyeccion multimodal `mmproj` necesario para procesar imagenes en llama.cpp.
+El modelo combina un encoder visual y un decodificador de lenguaje de la familia Qwen3.5, con un proyector multimodal (mmproj) que alinea ambos espacios. La salida se fuerza a JSON estricto con cinco claves (`scene_description`, `is_nsfw`, `classification_reason`, `nsfw`, `safe`), lo que facilita su integracion como guardrail en pipelines automaticos. Emplea Multi-Token Prediction (MTP) como mecanismo de decodificacion especulativa integrada en los pesos, lo que acelera la inferencia local sin necesidad de un modelo borrador separado.
 
-La relevancia actual del modelo radica en su tamano contenido (4B) y su licencia Apache 2.0, que permiten desplegar un clasificador visual de seguridad en hardware de consumo o en nodos de borde. No obstante, se trata de un modelo experimental, con cero descargas registradas en el momento de redactar esta ficha, y el propio autor recomienda la version Transformers frente al GGUF para uso en produccion.
+Es relevante ahora porque los filtros de contenido visual siguen siendo un cuello de botella en plataformas con volumen alto de imagenes generadas por usuarios, y un modelo de 4B cuantizado a 2,8 GB (Q4_K_M) puede desplegarse en hardware de consumo manteniendo una politica de clasificacion explicita y auditable.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal denso (base Qwen3.5-4B) con proyeccion visual (`mmproj`) y cabeceras MTP para decodificacion especulativa |
+| Arquitectura | Transformer multimodal denso (familia Qwen3.5), con MTP para decodificacion especulativa |
 | Parametros totales | 4.326.350.848 |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | BF16, Q3_K_L, Q3_K_M, Q4_K_M, Q4_K_S, Q5_K_M, Q5_K_S, Q6_K; proyeccion multimodal en `mmproj-bf16` |
-| Idiomas soportados | Ingles (`en`) |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | BF16, Q3_K_L, Q3_K_M, Q4_K_M, Q4_K_S, Q5_K_M, Q5_K_S, Q6_K; proyector mmproj en BF16 |
+| Idiomas soportados | en |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (con fichero `mmproj` separado); el modelo base esta en safetensors |
-
-| Parametro | Valor |
-|---|---|
-| Tamano del repo | 29,4 GB |
-| Pipeline | image-text-to-text |
-| Libreria | transformers |
-| Modelo base | prithivMLmods/VIGOR-mini (a su vez sobre Qwen/Qwen3.5-4B) |
-| Fecha de creacion | 2026-11-01 |
-| Ultima actualizacion | 2026-11-02 |
+| Formato de pesos | GGUF (con fichero mmproj separado para vision) |
 
 ## Arquitectura y entrenamiento
 
-VIGOR-mini es un transformer multimodal denso derivado de Qwen3.5-4B. El componente de vision se conecta al modelo de lenguaje mediante un proyector multimodal que en el repo GGUF se distribuye como fichero independiente (`VIGOR-mini.mmproj-bf16.gguf`, 676 MB). La innovacion tecnica destacada de esta variante es la integracion de Multi-Token Prediction (MTP): los pesos incluyen cabeceras adicionales que predicen varios tokens futuros en una sola pasada, lo que habilita decodificacion especulativa sin un modelo borrador externo y acelera la inferencia local.
+El modelo es un transformer multimodal denso construido sobre Qwen/Qwen3.5-4B. El pipeline declarado es `image-text-to-text`, con un encoder visual acoplado mediante un proyector multimodal que se distribuye como fichero aparte (`VIGOR-mini.mmproj-bf16.gguf`, 676 MB). La innovacion tecnica destacada en la model card es MTP (Multi-Token Prediction): los pesos GGUF incorporan cabezas adicionales que predicen varios tokens futuros en un unico forward pass, lo que implementa decodificacion especulativa sin un modelo borrador externo y acelera la generacion local.
 
-El modelo esta afinado especificamente para clasificacion de seguridad visual, con una politica conservadora de tolerancia cero: cualquier desnudez, ropa reveladora, ropa interior visible, trajes de bano sugestivos, arte anime con contenido sexual o poses sexualizadas se marca como NSFW, y ante la duda se clasifica como NSFW. La model card no detalla el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO; esa informacion no esta disponible.
+La model card no detalla el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron fases de RLHF o DPO. El modelo esta afinado especificamente para clasificacion de seguridad visual y razonamiento orientado a guardrail, con enfasis en ropa, exposicion corporal, poses, encuadre y contexto de escena. El autor lo etiqueta como experimental y recomienda el uso del modelo base en Transformers frente a la version GGUF para maxima fidelidad.
 
 ## Capacidades
 
-- Analisis visual detallado de escenas: describe sujeto, ropa, grado de exposicion y pose.
-- Clasificacion binaria Safe / NSFW con salida JSON estricta y campos complementarios (`is_nsfw`, `nsfw`, `safe`).
-- Deteccion de contenido sensible en imagenes reales y en ilustraciones 2D/3D, anime, manga y arte digital.
-- Razonamiento justificado: genera `classification_reason` explicando el criterio aplicado.
-- Modo thinking opcional: la plantilla por defecto desactiva el razonamiento y permite activarlo.
-- Decodificacion especulativa MTP integrada en los pesos para acelerar la generacion en llama.cpp.
-- Capacidad conversacional y de image-text-to-text heredada del modelo base Qwen3.5-4B.
-- Soporte de salida estructurada en JSON, adecuado para integrarse en pipelines automatizados.
+- Clasificacion binaria Safe / NSFW de imagenes con umbral conservador (ante la duda, NSFW).
+- Descripcion visual detallada y objetiva del sujeto, la ropa, el nivel de exposicion y la pose.
+- Generacion de justificacion textual de la clasificacion (`classification_reason`).
+- Salida en JSON estricto con claves y tipos fijados, adecuada para parsing automatico.
+- Analisis de contenido sensible: desnudos, ropa interior, lenceria, banadores sugestivos, transparencias, arte anime/ecchi/hentai, poses sexualizadas y actos explicitos.
+- Modo de razonamiento configurable: plantilla por defecto con thinking desactivado y variante con thinking activado.
+- Decodificacion especulativa integrada via MTP para acelerar la inferencia local.
+- Capacidad conversacional heredada del modelo base, aunque el uso previsto es la clasificacion.
 
 ## Casos de uso
 
-- Moderacion de contenido generado por usuarios: el modelo se coloca como paso previo a la publicacion de imagenes en foros, redes o marketplaces y devuelve un JSON con el veredicto y la justificacion, que el backend puede registrar para auditoria.
-- Control parental y proteccion de menores: integrado en un proxy o filtro de navegacion, clasifica cada imagen antes de mostrarla y bloquea las marcadas como NSFW segun la politica de tolerancia cero del prompt estandar.
-- Moderacion de comunidades de arte e ilustracion: distingue entre arte seguro y contenido ecchi, hentai o sugestivo, un caso especialmente dificil para clasificadores entrenados solo con fotografia real.
-- Filtrado previo en datasets de entrenamiento: se ejecuta sobre corpus de imagenes para etiquetar y descartar muestras no aptas antes de alimentar otros modelos, aprovechando la salida JSON para el filtrado programatico.
-- Cumplimiento normativo en plataformas: genera un registro estructurado de cada decision de moderacion, con descripcion de escena y motivo, que sirve como evidencia en procesos de auditoria de contenido.
-- Despliegue en el borde o en equipos de consumo: las cuantizaciones Q4_K_M (2,78 GB) y Q5_K_M (3,16 GB) permiten ejecutar el clasificador en local con llama.cpp, sin enviar imagenes a servicios externos, lo que reduce riesgos de privacidad.
-- Prefiltro en pipelines de vision a gran escala: al ser un modelo de 4B con MTP, puede procesar lotes de imagenes con baja latencia relativa y derivar solo los casos dudosos a un revisor humano o a un modelo mayor.
+- Moderacion de subidas de imagen en plataformas UGC: cada imagen se envia al modelo con el prompt estandar y la respuesta JSON se usa para bloquear, marcar para revision humana o aprobar automaticamente, con la justificacion registrada para auditoria.
+- Control parental en dispositivos y aplicaciones infantiles: el clasificador actua como filtro previo a la renderizacion de imagenes recibidas o generadas, apoyandose en el umbral conservador del prompt estandar.
+- Pre-filtrado en pipelines de generacion de imagen: antes de publicar una imagen sintetica se valida con VIGOR-mini para descartar contenido que viole la politica de la plataforma.
+- Triaje en equipos de confianza y seguridad: el modelo prioriza la cola de revision humana clasificando primero las imagenes marcadas como NSFW y aportando una descripcion objetiva que acelera la decision del moderador.
+- Etiquetado de datasets de vision: se puede usar para anotar grandes volumenes de imagenes con etiquetas Safe/NSFW y descripciones de escena, generando metadatos para entrenar o filtrar otros modelos.
+- Despliegue en el borde o en local: con la cuantizacion Q4_K_M (2,78 GB) el modelo cabe en equipos sin GPU dedicada de gama alta y permite moderacion on-device sin enviar imagenes a un servicio externo.
+- Investigacion en seguridad multimodal: sirve como baseline reproducible para estudiar sesgos y calibracion de clasificadores de contenido sensible en un rango de 4B parametros.
 
 ## Benchmarks y rendimiento
 
@@ -63,51 +54,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (solo pesos del modelo, sin contar el proyector ni el contexto):
-  - BF16: aproximadamente 8,7 GB.
-  - Q6_K: aproximadamente 3,6 GB.
-  - Q5_K_M / Q5_K_S: aproximadamente 3,1-3,2 GB.
-  - Q4_K_M / Q4_K_S: aproximadamente 2,6-2,8 GB.
-  - Q3_K_L / Q3_K_M: aproximadamente 2,3-2,5 GB.
-- Sumar aproximadamente 676 MB para el fichero `mmproj-bf16.gguf` en todos los casos.
-- GPU recomendadas: el autor menciona NVIDIA Blackwell y RTX PRO 6000 en las etiquetas del repo; por tamano, una RTX 4090 (24 GB) o una RTX 3090 permiten ejecutar BF16 con holgura, y tarjetas de 8-12 GB son suficientes para cuantizaciones Q4/Q5.
-- Cabe en GPU de consumo: si, desde GPUs de 8 GB con cuantizaciones Q4, y en equipos con CPU y RAM suficiente usando llama.cpp.
-- Opciones de despliegue: llama.cpp (soporte nativo de GGUF y `mmproj`), Ollama, y el stack Transformers con el modelo base `prithivMLmods/VIGOR-mini`. El autor recomienda explicitamente la configuracion basada en Transformers frente al GGUF.
-- Latencia y throughput: no disponibles. El uso de MTP con decodificacion especulativa deberia reducir la latencia frente a un GGUF convencional del mismo tamano, pero no se han publicado cifras.
+- VRAM/RAM estimada para inferencia: aproximadamente 2,5-3,5 GB con cuantizaciones Q3 y Q4; unos 3,2-3,7 GB con Q5 y Q6; unos 9,4 GB con BF16 (8,67 GB de pesos mas el proyector mmproj de 676 MB).
+- GPU recomendadas: no especificadas en la model card. Los tags mencionan nvidia-blackwell y rtx-pro-6000, pero no se aportan cifras de rendimiento ni configuraciones validadas.
+- Cabe en GPU de consumo: si, con las cuantizaciones Q3 a Q6; el fichero Q4_K_M (2,78 GB) es el tamano recomendado por el autor para la mayoria de casos.
+- Opciones de despliegue: llama.cpp (herramienta con la que se generaron las cuantizaciones), y por extension los runners compatibles con GGUF; el tag `text-generation-inference` figura en los metadatos, pero la model card solo documenta el flujo con llama.cpp.
+- Latencia y throughput: no disponibles. La model card solo afirma que MTP acelera la inferencia local, sin cifras.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Formato |
 |---|---|---|---|---|---|
-| VIGOR-mini-GGUF | 4,33B (denso) | No disponible | Clasificacion visual Safe/NSFW con salida JSON | Apache 2.0 | GGUF + mmproj |
-| prithivMLmods/VIGOR-mini | 4,33B (denso) | No disponible | Igual, en safetensors para Transformers | Apache 2.0 | Safetensors |
-| Qwen/Qwen3.5-4B | 4B (denso) | No disponible | Modelo base multimodal generalista | No disponible | Safetensors |
-| Clasificadores de imagen especializados (p. ej. detectors NSFW dedicados) | Variable, habitualmente menor | No aplica | Clasificacion binaria de imagen | Variable | Variable |
+| VIGOR-mini-GGUF | 4,3B | no disponible | Clasificacion Safe/NSFW multimodal | Apache 2.0 | GGUF |
+| prithivMLmods/VIGOR-mini (base) | 4,3B | no disponible | Clasificacion Safe/NSFW multimodal | Apache 2.0 | Transformers |
+| Qwen/Qwen3.5-4B | 4B (aprox.) | no disponible | LLM/VLM generalista | no disponible | no disponible |
 
-La comparativa cuantitativa con alternativas de la misma categoria no esta disponible: no se han publicado benchmarks del modelo ni de sus competidores directos en la informacion proporcionada.
+La informacion disponible no incluye comparaciones con otros clasificadores de seguridad visual, por lo que no es posible contrastar rendimiento frente a alternativas de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- Modelo experimental: el propio autor lo etiqueta como tal y recomienda usar la version Transformers en lugar del GGUF para entornos serios.
-- Cero descargas y un solo like en el momento de la ficha: no hay evidencia de uso en produccion ni validacion independiente.
-- No se han publicado benchmarks, por lo que no hay medida objetiva de precision, recall ni tasa de falsos positivos en la clasificacion NSFW.
-- Politica de tolerancia cero y criterio "ante la duda, NSFW": previsiblemente elevara los falsos positivos en imagenes legitimas como playa, deporte, lactancia o arte clasico.
-- Solo soporta ingles; el prompt y las salidas estan pensados en ese idioma.
-- Riesgo de alucinacion en la descripcion de escena: el campo `scene_description` puede contener detalles no presentes en la imagen.
-- La salida JSON puede no ser valida si el modelo se desvia del formato; conviene validar y parsear con tolerancia a errores en el backend.
-- Modelo derivado de Qwen3.5-4B: hereda los sesgos del modelo base y de los datos de ajuste, no documentados.
-- Licencia Apache 2.0 permite uso comercial, pero el autor declara que cualquier salida es responsabilidad del usuario y exime de responsabilidad a autores y plataforma.
-- No es un sistema de moderacion completo: debe combinarse con otras senales (texto, metadatos, revision humana) y no sustituye una politica de contenido formal.
-- La longitud de contexto no esta documentada, lo que dificulta planificar conversaciones multi-turno o imagenes de alta resolucion.
+- Modelo marcado como experimental por el propio autor; recomienda usar la version en Transformers frente al GGUF para maxima calidad.
+- Solo soporta ingles (`language: en`); los prompts y salidas en otros idiomas no estan garantizados.
+- Riesgo de falsos positivos por el umbral conservador ("ante la duda, NSFW"), que puede bloquear contenido legitimo como imagenes medicas, artisticas o de playa.
+- Riesgo de falsos negativos en imagenes ambiguas, ilustraciones o estilos visuales poco representados en el entrenamiento.
+- No se documentan sesgos demograficos, culturales ni de representacion; un clasificador de exposicion corporal puede penalizar de forma desigual segun el sujeto.
+- La salida JSON depende de que se use el prompt estandar; prompts alternativos pueden romper el formato y requerir validacion posterior.
+- No hay datos publicados de benchmarks, calibracion ni tasas de error, lo que impide evaluar su fiabilidad en produccion sin una validacion propia.
+- La licencia Apache 2.0 permite uso comercial, pero el autor declara que cualquier salida generada es responsabilidad exclusiva del usuario y que el modelo se destina a investigacion y clasificacion de seguridad.
+- No se especifica la longitud de contexto, lo que limita el diseno de flujos con prompts largos o multiples imagenes.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/prithivMLmods/VIGOR-mini-GGUF
 - Modelo base: https://huggingface.co/prithivMLmods/VIGOR-mini
-- Modelo Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
+- Modelo Qwen3.5-4B de referencia: https://huggingface.co/Qwen/Qwen3.5-4B
 - llama.cpp: https://github.com/ggml-org/llama.cpp
-- Fichero BF16: https://huggingface.co/prithivMLmods/VIGOR-mini-GGUF/blob/main/VIGOR-mini.BF16.gguf
-- Fichero Q4_K_M: https://huggingface.co/prithivMLmods/VIGOR-mini-GGUF/blob/main/VIGOR-mini.Q4_K_M.gguf
-- Fichero Q5_K_M: https://huggingface.co/prithivMLmods/VIGOR-mini-GGUF/blob/main/VIGOR-mini.Q5_K_M.gguf
-- Fichero Q6_K: https://huggingface.co/prithivMLmods/VIGOR-mini-GGUF/blob/main/VIGOR-mini.Q6_K.gguf
-- Proyeccion multimodal: https://huggingface.co/prithivMLmods/VIGOR-mini-GGUF/blob/main/VIGOR-mini.mmproj-bf16.gguf

@@ -2,49 +2,48 @@
 
 ## Resumen
 
-Creekside/llama-3.2-1B-lambda-fft_a es un ajuste fino (fine-tuning) del modelo Llama 3.2 de 1B de parámetros, publicado por el usuario Creekside en Hugging Face. Se trata de un modelo de generación de texto conversacional en inglés, derivado de la familia Llama 3.2 de Meta, y entrenado con la librería Unsloth junto con TRL de Hugging Face, lo que según el autor permitió un entrenamiento "2x más rápido".
+Creekside/llama-3.2-1B-lambda-fft_a es un ajuste fino (fine-tuning) del modelo Llama 3.2 de 1B parÃ¡metros de Meta, publicado por el usuario Creekside en Hugging Face. Se trata de un experimento de entrenamiento muy concreto y de alcance limitado: el autor lo describe explÃcitamente como "small model, really specific training experiment", lo que indica que no estÃ¡ pensado como un modelo de propÃ³sito general sino como una prueba de concepto sobre datos de preguntas y respuestas.
 
-El modelo cuenta con 1.235.814.400 parámetros en formato safetensors FP16 (2,5 GB de repositorio) y se distribuye bajo licencia Apache 2.0. La model card es extremadamente escueta: no documenta el dataset de entrenamiento, el número de tokens, la composición de los datos ni los hiperparámetros utilizados. Tampoco se publican resultados de benchmarks ni detalles sobre el proceso de ajuste (si hubo SFT, DPO o RLHF).
+El modelo parte de la arquitectura Llama 3.2 1B (transformer decoder-only denso, 1.235.814.400 parÃ¡metros reales segÃºn los pesos en safetensors) y se ha entrenado mediante QLoRA con rango y alpha ambos a 16, durante 2 epochs, sobre una GPU G4. El resultado se distribuye en precisiÃ³n FP16 (16 bits) y con licencia Apache 2.0.
 
-Su relevancia es limitada y fundamentalmente experimental: se trata de un modelo pequeño (1B) orientado a despliegue en hardware modesto, pero la ausencia de documentación y de métricas hace difícil evaluar su calidad real frente al Llama 3.2 1B original de Meta. Es un artefacto de interés para quienes quieran reproducir el pipeline de Unsloth o experimentar con fine-tuning de bajo coste, no para producción sin una evaluación previa.
+Su relevancia es reducida fuera del Ã¡mbito del experimento: no se documentan benchmarks, no se detalla la composiciÃ³n del dataset mÃ¡s allÃ¡ de dos variantes ("alpha" y "alpha con el campo Question sustituido por el campo reasoning") y el Ãºnico idioma declarado es el inglÃ©s. Resulta Ãºtil como referencia para quienes quieran reproducir un pipeline de fine-tuning ligero con Unsloth y TRL sobre Llama 3.2 1B, mÃ¡s que como modelo listo para producciÃ³n.
 
-## Especificaciones tecnicas
+## Especificaciones tÃ©cnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Llama 3.2) |
+| Arquitectura | Transformer decoder-only (familia Llama 3.2), denso |
 | Parametros totales | 1.235.814.400 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (el modelo base Llama 3.2 1B soporta 128k, no confirmado en este fine-tune) |
-| Tipos de cuantizacion | no disponible (pesos publicados en FP16; compatible con cuantizaciones estándar de llama.cpp/GGUF por herencia del formato, no documentado por el autor) |
-| Idiomas soportados | en (inglés) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | pesos publicados en FP16; no se documentan otras cuantizaciones |
+| Idiomas soportados | en (inglÃ©s) |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (FP16) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only de la familia Llama 3.2, con 1.235.814.400 parámetros, ajustado a partir de un checkpoint también denominado Creekside/llama-3.2-1B-lambda-fft_a (el campo `base_model` apunta al propio repositorio, lo que sugiere una cadena de fine-tuning sobre sí mismo o un error de metadatos). El entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, según indica la model card, lo que implica un pipeline de fine-tuning supervisado (SFT) típico de Unsloth.
+El modelo hereda la arquitectura de Llama 3.2 1B: un transformer decoder-only denso con atenciÃ³n por grupos (GQA) y las innovaciones propias de la familia Llama 3.2, aunque la model card no detalla la configuraciÃ³n exacta de capas, cabezas ni dimensiÃ³n oculta. Los pesos publicados suman 1.235.814.400 parÃ¡metros, coherente con el tamaÃ±o de 1B de la familia base.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO, la longitud de contexto efectiva durante el entrenamiento ni innovaciones técnicas adicionales. La model card no documenta hiperparámetros, semillas, ni el propósito concreto del ajuste (el sufijo "lambda-fft" sugiere un experimento de fine-tuning completo, pero no se confirma). Tampoco se especifica si se preservaron las capacidades del modelo base de Meta o si el ajuste las alteró.
+El entrenamiento se realizÃ³ mediante QLoRA (cuantizaciÃ³n de 4 bits con adaptadores de bajo rango), con rango y alpha configurados a 16, durante 2 epochs, sobre una GPU G4. El autor menciona dos variantes del dataset: la "alpha", compuesta por preguntas y respuestas, y la "alpha excepto que el campo Question se ha sustituido por el campo reasoning". No se especifica el nÃºmero de tokens de entrenamiento, la composiciÃ³n exacta del dataset ni si hubo fases de RLHF o DPO. El entrenamiento se acelerÃ³ con Unsloth y la librerÃa TRL de Hugging Face, y el resultado se subiÃ³ en FP16.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, heredada del modelo base Llama 3.2 1B.
-- Razonamiento básico y respuesta a instrucciones de complejidad baja, limitado por el tamaño de 1B parámetros.
-- Generación de código y matemáticas elementales (capacidad del modelo base, no verificada en este fine-tune).
-- Soporte de tool calling / function calling: no documentado por el autor; el modelo base Llama 3.2 lo soporta, pero no se confirma que se haya preservado tras el ajuste.
-- Capacidades de agente y razonamiento multi-paso: no documentadas.
-- Capacidades multilingües: limitadas al inglés según la model card (`language: en`).
-- Capacidades especiales (modo thinking, visión, audio): no disponibles; Llama 3.2 1B es solo texto.
+- GeneraciÃ³n de texto conversacional en inglÃ©s, segÃºn la etiqueta `conversational` del repositorio.
+- Respuesta a preguntas y respuestas (QA), dado que el dataset de entrenamiento se basa en pares de pregunta y respuesta.
+- Razonamiento bÃ¡sico derivado de la variante de dataset que sustituye la pregunta por el campo de razonamiento.
+- Compatible con `text-generation-inference` y `transformers`, segÃºn las etiquetas del repositorio.
+- No se documenta soporte de tool calling, function calling, agentes, visiÃ³n, audio ni modo de pensamiento explÃcito.
+- Capacidad multilingÃ¼e limitada al inglÃ©s declarado.
 
 ## Casos de uso
 
-- Experimentación con pipelines de fine-tuning: el modelo sirve como referencia para reproducir el flujo de Unsloth + TRL en un modelo de 1B, útil para desarrolladores que quieran validar su infraestructura de entrenamiento antes de escalar a modelos mayores.
-- Prototipado de chatbots de bajo coste: al ser un modelo de 1B en FP16 (aproximadamente 2,5 GB), puede desplegarse en GPUs de consumo para pruebas de concepto conversacionales en inglés, aunque sin garantías de calidad frente al modelo base.
-- Generación de texto asistida en entornos con recursos limitados: tareas de completado, resumen o reescritura de textos cortos en inglés donde la latencia y el coste de hardware priman sobre la calidad máxima.
-- Evaluación comparativa de fine-tunes: útil como punto de comparación en estudios sobre el impacto del ajuste fino en modelos pequeños (por ejemplo, medir la degradación o mejora respecto a Llama 3.2 1B original).
-- Filtrado y clasificación de texto ligera: tareas de etiquetado o categorización de textos en inglés mediante prompting, aprovechando el bajo coste de inferencia.
-- Base para nuevos ajustes: al estar en FP16 y con licencia Apache 2.0, puede servir como punto de partida para fine-tunes posteriores en dominios específicos, siempre que se valide previamente su calidad.
+- Prototipado rÃ¡pido de asistentes de QA en inglÃ©s: al estar entrenado sobre pares pregunta-respuesta, puede usarse como base para un chatbot sencillo de dominio acotado, aunque sin garantÃas de calidad fuera del dataset de entrenamiento.
+- ReproducciÃ³n de experimentos de fine-tuning: sirve como referencia para validar un pipeline QLoRA con Unsloth y TRL sobre Llama 3.2 1B, comparando hiperparÃ¡metros (rango 16, alpha 16, 2 epochs).
+- EducaciÃ³n y formaciÃ³n: Ãºtil para demostrar cÃ³mo se ajusta un modelo pequeÃ±o con recursos limitados (GPU G4) y cÃ³mo se publican los pesos en FP16.
+- GeneraciÃ³n de texto ligera en entornos con restricciones de hardware: con 1.2B parÃ¡metros, puede ejecutarse en GPUs de consumo y en CPU con cuantizaciÃ³n adicional (aunque esta no se distribuya oficialmente).
+- Base para experimentos de sustituciÃ³n de campos en datasets: la variante "reasoning" permite estudiar cÃ³mo afecta al comportamiento del modelo reemplazar la pregunta por una traza de razonamiento.
+- EvaluaciÃ³n comparativa de tÃ©cnicas de ajuste: puede emplearse como punto de partida para medir el impacto de distintas configuraciones de QLoRA frente al modelo base Llama 3.2 1B.
 
 ## Benchmarks y rendimiento
 
@@ -52,39 +51,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16: aproximadamente 2,5 GB solo para pesos, más overhead de activaciones y KV cache (estimación orientativa de 4-6 GB para contextos moderados).
-- VRAM estimada en cuantización de 8 bits: aproximadamente 1,3-1,5 GB para pesos.
-- VRAM estimada en cuantización de 4 bits: aproximadamente 0,7-1 GB para pesos.
-- GPU recomendadas: cualquier GPU con al menos 6-8 GB de VRAM para FP16 (RTX 3060, RTX 4060, RTX 4090); A100/H100 no son necesarias para este tamaño.
-- Cabe en GPU de consumo: sí, en la mayoría de GPUs consumer modernas con 6 GB o más de VRAM en FP16, y en GPUs con 4 GB en cuantización de 4 bits.
-- Opciones de despliegue: transformers (librería indicada en la model card), text-generation-inference (tag `text-generation-inference`), y por herencia del formato Llama, potencialmente llama.cpp, Ollama y vLLM (no documentado por el autor).
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia en FP16: aproximadamente 2,5 GB solo para los pesos (1.235.814.400 parÃ¡metros Ã— 2 bytes), mÃ¡s overhead de activaciones y cachÃ© KV.
+- GPU recomendadas: cualquier GPU con al menos 4-6 GB de VRAM para FP16; una NVIDIA T4, RTX 3060 o superior es suficiente. Para cuantizaciÃ³n a 8 bits o 4 bits, bastarÃa con GPUs de 2-3 GB.
+- Cabe en GPU de consumo: sÃ, en modelos como RTX 3060, RTX 4060, RTX 4090 o incluso GPUs integradas con suficiente memoria compartida.
+- Opciones de despliegue: transformers, text-generation-inference (TGI), vLLM, llama.cpp y Ollama (estos Ãºltimos requerirÃan convertir los pesos a GGUF, no incluido en el repositorio).
+- Latencia y throughput estimados: no disponibles; al ser un modelo de 1B, se espera una latencia baja en GPU moderna, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Creekside/llama-3.2-1B-lambda-fft_a | 1,24B | no disponible | Apache 2.0 | Hugging Face |
-| meta-llama/Llama-3.2-1B | 1,24B | 128k | Llama 3.2 Community License | Hugging Face, ampliamente adoptado |
-| meta-llama/Llama-3.2-1B-Instruct | 1,24B | 128k | Llama 3.2 Community License | Hugging Face, ampliamente adoptado |
-| Qwen2.5-1.5B-Instruct | 1,54B | 32k | Apache 2.0 | Hugging Face |
+| Creekside/llama-3.2-1B-lambda-fft_a | 1,235B | no disponible | apache-2.0 | Hugging Face |
+| meta-llama/Llama-3.2-1B | 1,24B | 128K (segÃºn Meta) | Llama 3.2 Community License | Hugging Face, ampliamente adoptado |
+| meta-llama/Llama-3.2-1B-Instruct | 1,24B | 128K (segÃºn Meta) | Llama 3.2 Community License | Hugging Face, orientado a instrucciones |
+| Qwen2.5-1.5B | 1,54B | 32K (segÃºn Qwen) | Apache 2.0 | Hugging Face |
 
-La comparación con el Llama 3.2 1B original de Meta es la más directa, pero no se dispone de métricas de este fine-tune que permitan establecer diferencias de rendimiento. Frente a Qwen2.5-1.5B-Instruct, este modelo ofrece menor tamaño pero carece de documentación pública sobre calidad y de soporte multilingüe declarado.
+No se dispone de datos de rendimiento comparativo para el modelo de Creekside, por lo que la comparaciÃ³n se limita a parÃ¡metros, contexto y licencia. El modelo base Llama 3.2 1B y su variante Instruct cuentan con documentaciÃ³n oficial de Meta y benchmarks publicados, mientras que este fine-tuning no los aporta.
 
 ## Limitaciones y advertencias
 
-- Documentación mínima: la model card no describe el dataset, el proceso de entrenamiento ni los hiperparámetros, lo que impide evaluar la calidad y reproducibilidad del ajuste.
-- Sin benchmarks publicados: no hay evidencia de que el fine-tune mejore al modelo base; podría incluso degradar capacidades si el dataset fue reducido o de baja calidad.
-- Riesgo de alucinación: inherente a los modelos de 1B parámetros, especialmente en tareas de razonamiento o hechos verificables.
-- Idioma: solo se declara inglés; no se garantiza un rendimiento aceptable en castellano u otros idiomas.
-- Contexto: no se confirma la longitud de contexto efectiva tras el ajuste; el modelo base soporta 128k, pero el fine-tune podría haberla reducido.
-- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar que el modelo base Llama 3.2 (con su propia licencia comunitaria) no imponga restricciones adicionales que el autor no haya reflejado correctamente.
-- Metadatos inconsistentes: el campo `base_model` apunta al propio repositorio, lo que genera dudas sobre la cadena real de derivación del modelo.
-- Sin validación en producción: cero descargas y cero "likes" en el momento de la consulta; no hay evidencia de uso real ni de reportes de la comunidad.
+- Modelo experimental: el propio autor lo describe como un "experimento de entrenamiento muy especÃfico", sin garantÃas de calidad general.
+- Riesgo elevado de alucinaciÃ³n: al estar ajustado sobre un dataset acotado de QA, puede generar respuestas plausibles pero incorrectas fuera de ese dominio.
+- Idiomas: solo se declara inglÃ©s; el rendimiento en castellano u otros idiomas no estÃ¡ garantizado.
+- Contexto: no se documenta la longitud de contexto efectiva; aunque el modelo base soporta ventanas amplias, el fine-tuning puede degradar el uso de contexto largo.
+- Sesgos: no se documenta ninguna evaluaciÃ³n de sesgos; al heredar de Llama 3.2, puede reproducir sesgos presentes en los datos originales y en el dataset de ajuste.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar que los datos de entrenamiento no impongan restricciones adicionales (no documentadas).
+- ProducciÃ³n: no se recomienda su uso en producciÃ³n sin una evaluaciÃ³n previa exhaustiva, dado que no hay benchmarks ni documentaciÃ³n tÃ©cnica detallada.
+- El campo `base_model` apunta al propio repositorio, lo que puede indicar un error de configuraciÃ³n en la model card y dificultar la trazabilidad del modelo base real.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Creekside/llama-3.2-1B-lambda-fft_a
-- Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth
-- TRL de Hugging Face: https://github.com/huggingface/trl
-- Modelo base Llama 3.2 1B de Meta: https://huggingface.co/meta-llama/Llama-3.2-1B
+- [Hugging Face: Creekside/llama-3.2-1B-lambda-fft_a](https://huggingface.co/Creekside/llama-3.2-1B-lambda-fft_a)
+- [Unsloth (GitHub)](https://github.com/unslothai/unsloth)
+- [TRL de Hugging Face](https://huggingface.co/docs/trl)
+- [Llama 3.2 en Meta](https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/)

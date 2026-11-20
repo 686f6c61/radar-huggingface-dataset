@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "xl-24/gemma4-31b-atc-finetune-32-64-v2",
+  "slug": "xl-24-gemma4-31b-atc-finetune-32-64-v2",
+  "author": "xl-24",
+  "url": "https://huggingface.co/xl-24/gemma4-31b-atc-finetune-32-64-v2",
+  "created_at": "2026-11-20T03:42:00.000Z",
+  "updated_at": "2026-11-20T03:42:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "gemma4",
+    "trl",
+    "en",
+    "base_model:unsloth/gemma-4-31B-it-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/gemma-4-31B-it-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1100208914,
+  "storage_human": "1.1 GB",
+  "context_length": null,
+  "base_model": "unsloth/gemma-4-31B-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

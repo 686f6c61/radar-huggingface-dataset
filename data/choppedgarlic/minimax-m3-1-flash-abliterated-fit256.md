@@ -2,98 +2,101 @@
 
 ## Resumen
 
-MiniMax-M3.1-Flash-abliterated-fit256 es una publicación derivada del modelo MiniMax-M3.1-Flash de MiniMaxAI, distribuida por el usuario choppedgarlic en Hugging Face. Se trata de un archivo GGUF mixto de 214,03 GiB que reempaqueta una versión "abliterated" (con los mecanismos de rechazo eliminados mediante edición de tensores) previamente generada por operationrange, aplicando una nueva mezcla de cuantizaciones por tensor. No es un modelo entrenado desde cero ni un fine-tune nuevo: es una re-cuantización de pesos existentes con el objetivo declarado de facilitar la descarga y el traslado del archivo entre máquinas.
+MiniMax-M3.1-Flash-abliterated-fit256 es una cuantización GGUF mixta de un modelo de lenguaje de tipo Mixture of Experts (MoE) derivada de MiniMaxAI/MiniMax-M3.1-Flash, publicada por el usuario choppedgarlic. No se trata de un modelo entrenado desde cero, sino de una recuantización de un GGUF previamente "abliterado" (es decir, con las direcciones de rechazo eliminadas del espacio de activaciones) por el usuario operationrange. El resultado es un artefacto de 214,03 GiB que conserva los 426.186.392.064 parámetros totales del modelo base y que, según el autor, "cumplirá con peticiones que el original rechaza".
 
-El modelo base pertenece a la familia MiniMax-M3.1-Flash, una arquitectura Mixture-of-Experts (MoE) según las etiquetas del repositorio, aunque los parámetros totales y activos no se detallan en la información disponible. La relevancia de esta publicación es limitada y muy específica: sirve como copia pública de un artefacto GGUF de gran tamaño con una mezcla de cuantizaciones poco habitual (Q3_K, Q6_K, Q8_0, BF16 y NVFP4 conviviendo en el mismo archivo), pensada para usuarios que ya trabajan con la variante abliterated y necesitan una distribución accesible.
+La relevancia de esta ficha es doble. Por un lado, documenta una técnica de cuantización híbrida poco habitual: mezcla Q3_K, NVFP4, Q6_K, Q8_0 y BF16 en un mismo archivo según el rol de cada tensor, con un promedio de 4,31 bits por peso. Por otro, expone las particularidades de ejecución de un MoE de este tamaño en hardware de consumo alto (un Apple M3 Ultra con 256 GB de memoria unificada), incluyendo la dependencia crítica de los tensores de escala por experto para que la inferencia no produzca texto incoherente.
 
-La licencia aplicable es la MiniMax Community License, que incluye términos no comerciales y un apéndice de usos prohibidos. El autor advierte explícitamente de que el modelo cumplirá peticiones que el original rechaza, y que ni la calidad ni la velocidad han sido medidas todavía en el hardware de referencia (un Mac con M3 Ultra). El repositorio no registra descargas ni interacciones en el momento de la ficha.
+El modelo está pensado para despliegues locales en máquinas con memoria unificada muy grande o en clústeres con GPUs de alta capacidad, y su licencia (MiniMax Community License) incorpora términos no comerciales y un apéndice de usos prohibidos que condicionan seriamente su uso en producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-Experts (MoE), según etiquetas del repositorio; detalles no disponibles |
-| Parametros totales | no disponible |
+| Arquitectura | Mixture of Experts (MoE) tipo transformer, según los tags del repo; detalles de capas no disponibles |
+| Parametros totales | 426.186.392.064 (426,2 B) |
 | Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Mezcla por tensor: Q3_K, Q6_K, Q8_0, BF16 y NVFP4 (ver desglose abajo) |
+| Longitud de contexto | 65.536 tokens (contexto medido por el autor en DwarfStar); máximo nativo no disponible |
+| Tipos de cuantizacion | GGUF mixto: Q3_K (expertos gate/up enrutados), NVFP4 (expertos down enrutados no abliterados), Q6_K (expertos down abliterados, blk.16–blk.42), Q8_0 (atención Q/K/output, experto compartido, FFN densa inicial), BF16 (atención V, embeddings, output head); promedio 4,31 bits por peso |
 | Idiomas soportados | no disponible |
-| Licencia | MiniMax Community License (términos no comerciales y apéndice de usos prohibidos) |
-| Formato de pesos | GGUF (archivo único de 214,03 GiB) |
-
-Desglose de la mezcla de tensores declarada por el autor:
-
-| Componente | Cuantizacion |
-|---|---|
-| `blk.16`–`blk.42` `ffn_down_exps` (expertos abliterated) | Q6_K |
-| Resto de down-experts enrutados | NVFP4 original, copiado |
-| Expertos gate y up enrutados | Q3_K |
-| Atención Q/K/output, experto compartido, FFN denso inicial | Q8_0 |
-| Atención V, embeddings, cabeza de salida | BF16 |
-| Norms, router, indexer y tensores `.scale` por experto | Copiados sin cambios |
+| Licencia | minimax-community (MiniMax Community License, con términos no comerciales y apéndice de usos prohibidos) |
+| Formato de pesos | GGUF (archivo único `MiniMax-M3.1-Flash-abliterated-fit256.gguf`, 214,03 GiB; repo total 229,8 GB) |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no describe la arquitectura interna del modelo base MiniMax-M3.1-Flash más allá de la etiqueta `moe` y de la nomenclatura de tensores que aparece en la model card: bloques con `ffn_down_exps`, expertos enrutados con gate y up separados, un experto compartido, una FFN densa inicial, router e indexer. Esta estructura es coherente con un transformer de tipo Mixture-of-Experts con enrutamiento disperso, pero no se especifican el número de capas, la dimensión oculta, el número de expertos por token ni la ventana de contexto.
+La información disponible confirma que el modelo base es un MoE (tag `moe`) con 426,2 mil millones de parámetros totales, pero no detalla el número de expertos, la dimensión oculta, el número de capas ni los parámetros activos por token. La estructura de tensores que revela la model card sí permite inferir algunos elementos: existen expertos enrutados con proyecciones `gate`, `up` y `down` (`ffn_down_exps`), un experto compartido, una FFN densa inicial ("dense lead FFN"), tensores de router, un "indexer" y tensores de escala por experto. La mención de un "indexer" y de multiplicaciones de escala antes del SwiGLU y antes de la reducción enrutada sugiere un mecanismo de atención o enrutamiento con componentes adicionales, pero no se especifica su función exacta.
 
-No hubo entrenamiento nuevo en esta publicación. El proceso consistió en tomar la revisión `ef198a171043c687a768a4179917ab6547672583` del repositorio operationrange/MiniMax-M3.1-Flash-abliterated-GGUF, conservar los tensores ya editados para eliminar los rechazos (almacenados allí como Q8_0) y re-cuantizarlos a Q6_K, mientras el resto de componentes se copiaban o recuantizaban según la tabla anterior. El autor subraya que los tensores `.scale` por experto son obligatorios y que un runtime correcto debe multiplicarlos después de la matmul del experto; ignorarlos produce resultados incorrectos. No se documentan datos de entrenamiento, composición del dataset ni fases de RLHF o DPO.
+No hay información sobre el número de tokens de entrenamiento, la composición del dataset, ni si el modelo base pasó por RLHF, DPO u otras etapas de alineación. Lo que sí está documentado es el proceso de posentrenamiento aplicado por la comunidad: una "abliteración" (eliminación de la dirección de rechazo en las activaciones) realizada por operationrange sobre el modelo original, seguida de una recuantización por parte de choppedgarlic que preserva los tensores editados en Q6_K mientras comprime el resto. La innovación técnica destacable de esta ficha no está en el entrenamiento sino en la receta de cuantización y en la dependencia explícita de los tensores `.scale` por experto: un runtime que los ignore produce "sopa de tokens", como le ocurre a llama.cpp 0.7.0 casero según el autor.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: heredadas del modelo base MiniMax-M3.1-Flash, sin evaluación publicada en esta publicación.
-- Modo "abliterated": los mecanismos de rechazo han sido suprimidos mediante edición de tensores, por lo que el modelo responderá a peticiones que la versión original declina.
-- Soporte de tool calling y function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponibles; el repositorio no declara idiomas.
-- Capacidades especiales (visión, audio, thinking mode): no disponibles.
-- Inferencia en formato GGUF con mezcla de cuantizaciones, orientada a runtimes compatibles con GGUF y con soporte para tensores de escala por experto.
+- Generación de texto conversacional multi-turno, según el tag `conversational` del repo.
+- Razonamiento con modo "thinking" (el autor menciona "Thinking on, sampled" en sus mediciones), lo que implica cadenas de razonamiento internas antes de la respuesta.
+- Capacidad de seguir instrucciones potencialmente rechazadas por el modelo original gracias a la abliteración.
+- Soporte de decodificación especulativa mediante un drafter denominado DFlash2 en el motor DwarfStar, con una tasa de aceptación medida del 94,9 % en el benchmark de enteros con temperatura 0.
+- No hay información disponible sobre tool calling, function calling, uso de agentes, capacidades multimodales (visión, audio) ni cobertura multilingüe.
+- El tag `endpoints_compatible` sugiere compatibilidad con endpoints de inferencia, pero no se detalla el protocolo.
 
 ## Casos de uso
 
-- Investigación sobre alineación y rechazo: el modelo permite estudiar cómo se comporta una variante sin mecanismos de rechazo frente a la original en tareas de evaluación de seguridad, comparando respuestas y midiendo tasas de cumplimiento.
-- Distribución de artefactos de gran tamaño en entornos de investigación: al ser una copia pública descargable con `hf download`, facilita replicar experimentos en clústeres o máquinas distintas sin depender del repositorio original de operationrange.
-- Evaluación de estrategias de cuantización mixta: la convivencia de Q3_K, Q6_K, Q8_0, BF16 y NVFP4 en un mismo archivo permite medir el impacto de cada nivel de precisión por tipo de tensor (expertos frente a atención, por ejemplo).
-- Pruebas de runtimes GGUF para MoE: sirve como caso de prueba exigente para validar que un motor de inferencia aplica correctamente los tensores `.scale` por experto tras la matmul.
-- Experimentación con modelos MoE de gran tamaño en hardware de gama alta: el autor menciona un Mac con M3 Ultra como equipo de referencia, lo que sugiere uso en estaciones de trabajo con memoria unificada amplia.
-- Estudio de licencias y cumplimiento: útil para analizar cómo se aplican los términos no comerciales y el apéndice de usos prohibidos de la MiniMax Community License sobre artefactos derivados publicados por terceros.
+- Investigación sobre alineación y rechazo: el modelo permite estudiar qué respuestas cambian al eliminar la dirección de rechazo, comparando directamente contra MiniMax-M3.1-Flash original en el mismo hardware y con el mismo prompt, gracias a que la abliteración está aislada en los tensores Q6_K de `blk.16`–`blk.42`.
+- Despliegue local en estaciones de trabajo con memoria unificada grande: un Apple M3 Ultra de 256 GB puede mantener residente el archivo de 214 GiB con contexto de 65.536 tokens, lo que habilita asistentes privados sin conexión para análisis de documentos largos.
+- Generación de texto creativo sin filtros editoriales: escritura de ficción, guiones o diálogos donde el modelo original aplicaría rechazos, con la advertencia de que la licencia restringe el uso comercial.
+- Evaluación de runtimes de inferencia para MoE cuantizados: el archivo sirve como caso de prueba para verificar que un motor implementa correctamente la multiplicación por los tensores `.scale` por experto antes del SwiGLU y de la reducción enrutada; cualquier motor que omita este paso produce salida incoherente y se detecta de inmediato.
+- Benchmarking de decodificación especulativa: con DFlash2 y prompts de enteros predecibles a temperatura 0 se alcanzan 31 tok/s frente a 18,95 tok/s sin drafter, lo que permite medir la eficacia de drafters en modelos MoE de gran tamaño.
+- Reproducción de experimentos de cuantización mixta: la receta (Q3_K para gate/up, NVFP4 para down no abliterados, Q6_K para down abliterados, Q8_0 para atención y BF16 para embeddings) es un punto de partida para estudiar el impacto de precisiones mixtas en la calidad de salida de MoE grandes.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El autor indica explícitamente que la calidad y la velocidad en el M3 Ultra no han sido medidas todavía.
+El autor publica mediciones de velocidad de inferencia en un Apple M3 Ultra de 256 GB con el motor DwarfStar y contexto de 65.536 tokens. No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la información disponible.
+
+| Metrica | Valor |
+|---|---|
+| Decodificacion sin drafter | 18,95 tok/s |
+| Decodificacion con DFlash2 (enteros predecibles, temperatura 0) | 31 tok/s |
+| Aceptacion de DFlash2 en ese benchmark | 94,9 % |
+| Prefill (7.472 tokens) | 74 tok/s |
+| Thinking activado, muestreado | ~20 tok/s |
+
+El autor advierte que el valor de 31 tok/s corresponde al benchmark greedy de enteros y que una respuesta normal con thinking se mantiene cerca de 20 tok/s, porque los turnos muestreados confirman un token cada vez; mantener los borradores argmax durante el thinking a temperatura 1 provocaba repeticiones bloqueadas.
 
 ## Requisitos de hardware
 
-- VRAM o memoria unificada: el archivo GGUF pesa 214,03 GiB, por lo que se necesita al menos esa cantidad de memoria para cargarlo completo, más overhead del runtime y del contexto.
-- GPU recomendadas: no disponibles en la información proporcionada. Por tamaño, queda fuera de cualquier GPU de consumo individual (RTX 4090 con 24 GB, por ejemplo) y requeriría configuraciones multi-GPU de centro de datos (varias A100/H100) o sistemas con memoria unificada grande.
-- ¿Cabe en GPU de consumo? No, según el tamaño del archivo.
-- Opciones de despliegue: runtimes compatibles con GGUF que soporten MoE y tensores de escala por experto (llama.cpp y derivados). vLLM y TGI no se mencionan en la información disponible.
-- Latencia y throughput: no disponibles; no se han medido.
+- VRAM o memoria unificada: el archivo GGUF pesa 214,03 GiB, por lo que se necesita al menos esa cantidad de memoria más el espacio para el contexto KV y el runtime. En la práctica, un sistema con 256 GB de memoria unificada es el mínimo medido por el autor.
+- GPU recomendadas: no hay datos de ejecución en GPUs discretas. Por tamaño, un solo acelerador de 80 GB (A100, H100) no es suficiente; se requeriría un clúster multi-GPU con agregación de al menos 256 GB de VRAM, o bien un sistema Apple Silicon con 256 GB o más de memoria unificada.
+- Cabe en consumer GPU: no. Ninguna GPU de consumo actual (RTX 4090 con 24 GB, etc.) puede alojar el archivo completo.
+- Opciones de despliegue: el autor ha medido con el motor DwarfStar (rama `minimax-m31-m3ultra` del repositorio ds4). llama.cpp 0.7.0 casero produce salida incoherente por ignorar los tensores de escala por experto. No hay información sobre compatibilidad con vLLM, TGI, Ollama u otros motores.
+- Latencia y throughput: ver la tabla de benchmarks; 18,95 tok/s de decodificación sin drafter y 74 tok/s de prefill en M3 Ultra de 256 GB.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
-|---|---|---|---|---|---|
-| MiniMax-M3.1-Flash-abliterated-fit256 (este) | no disponible | no disponible | GGUF mixto, 214,03 GiB | MiniMax Community (no comercial) | Re-cuantización de una variante abliterated; sin benchmarks |
-| MiniMaxAI/MiniMax-M3.1-Flash | no disponible | no disponible | no disponible | MiniMax Community | Modelo base original, con mecanismos de rechazo intactos |
-| operationrange/MiniMax-M3.1-Flash-abliterated-GGUF | no disponible | no disponible | GGUF (Q8_0 en tensores editados) | no disponible | Fuente directa de los tensores abliterated; revisión `ef198a17` |
+No se dispone de datos de benchmarks de calidad ni de especificaciones completas (parámetros activos, número de expertos, contexto nativo) que permitan una comparación rigurosa con alternativas. La comparación se limita a lo que la información proporcionada permite afirmar.
 
-No se dispone de datos de rendimiento ni de especificaciones detalladas de los modelos comparables en la información proporcionada, por lo que la comparación se limita a formato, licencia y procedencia.
+| Modelo | Parametros totales | Contexto | Licencia | Formato disponible |
+|---|---|---|---|---|
+| MiniMax-M3.1-Flash-abliterated-fit256 (este) | 426,2 B | 65.536 medidos | minimax-community (no comercial) | GGUF mixto, 214,03 GiB |
+| MiniMaxAI/MiniMax-M3.1-Flash (base) | 426,2 B (según este derivado) | no disponible | minimax-community | no disponible en esta ficha |
+| operationrange/MiniMax-M3.1-Flash-abliterated-GGUF (origen) | 426,2 B | no disponible | minimax-community | GGUF con tensores abliterados en Q8_0 |
+
+No se conocen modelos comparables de otros desarrolladores con datos verificables en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo abliterated: la supresión de rechazos elimina barreras de seguridad del modelo original; puede generar contenido dañino, ilegal o sexualmente explícito, y su uso conlleva riesgos legales y reputacionales.
-- Licencia no comercial: la MiniMax Community License incluye términos no comerciales y un apéndice de usos prohibidos que deben revisarse antes de cualquier despliegue.
-- Sin evaluación: no hay benchmarks, ni mediciones de calidad, latencia o throughput; el autor lo declara explícitamente.
-- Riesgo de degradación por cuantización: la mezcla Q3_K en expertos gate y up y Q6_K en los expertos editados puede afectar a la calidad frente al original en Q8_0 o BF16; no se ha cuantificado.
-- Dependencia de los tensores `.scale`: un runtime que no los aplique tras la matmul del experto producirá salidas incorrectas.
-- Idiomas y contexto no declarados: no se puede garantizar cobertura multilingüe ni un tamaño de ventana concreto.
-- Riesgo de alucinación: inherente a los modelos de lenguaje; sin datos específicos de esta variante.
-- Sesgos: no documentados en la información disponible; se heredan del modelo base y del proceso de abliteration.
-- Repositorio sin tracción: cero descargas y cero likes en el momento de la ficha, sin garantía de mantenimiento.
+- Licencia restrictiva: la MiniMax Community License incluye términos no comerciales y un apéndice de usos prohibidos; el uso en producción comercial requiere revisión legal expresa del archivo LICENSE.
+- La abliteración elimina los mecanismos de rechazo, por lo que el modelo puede generar contenido dañino, ilegal o inseguro que el original bloquearía; no es apto para aplicaciones orientadas al público sin capas de moderación externas.
+- Riesgo de alucinación: no hay datos publicados sobre tasas de alucinación ni evaluaciones de fidelidad; al ser un modelo abliterado y recuantizado, la calibración puede diferir de la del original.
+- Dependencia crítica del runtime: motores que no apliquen los tensores `.scale` por experto antes del SwiGLU y de la reducción enrutada producen texto incoherente; llama.cpp 0.7.0 casero falla en este archivo según el autor.
+- Idiomas soportados no documentados; no se puede garantizar calidad fuera del inglés sin evaluación propia.
+- Parámetros activos, número de expertos y contexto nativo máximo no disponibles, lo que impide estimar con precisión costes de inferencia por token.
+- El tamaño de 214 GiB limita el despliegue a hardware de gama muy alta; no es viable en GPUs de consumo ni en servidores convencionales de 80 GB.
+- El autor advierte que mantener borradores argmax durante el thinking a temperatura 1 provocaba repeticiones bloqueadas; los parámetros de decodificación especulativa deben ajustarse con cuidado.
+- Repositorio con 1 like y 12.413 descargas en el momento de la consulta; no hay revisión por pares ni validación independiente de las mediciones publicadas.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/choppedgarlic/MiniMax-M3.1-Flash-abliterated-fit256
+- Modelo en Hugging Face: https://huggingface.co/choppedgarlic/MiniMax-M3.1-Flash-abliterated-fit256
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash
-- Repositorio fuente abliterated: https://huggingface.co/operationrange/MiniMax-M3.1-Flash-abliterated-GGUF
-- Licencia (referenciada en el repositorio): LICENSE dentro del propio repositorio de Hugging Face
+- GGUF abliterado de origen: https://huggingface.co/operationrange/MiniMax-M3.1-Flash-abliterated-GGUF
+- Write-up con la receta de cuantización: https://github.com/jjakemaness/dwarfstar-minimax-m31
+- Rama del motor DwarfStar: https://github.com/jjakemaness/ds4/tree/minimax-m31-m3ultra
+- Pull request en ds4: https://github.com/antirez/ds4/pull/1320
+- Pull request previo (stacked): https://github.com/antirez/ds4/pull/1287

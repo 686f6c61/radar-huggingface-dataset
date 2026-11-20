@@ -2,97 +2,94 @@
 
 ## Resumen
 
-SPECTRA (merged) - Midnight-12k es un modelo de extracción de características (feature extraction) para histopatología y patología computacional, desarrollado por MedARC sobre el modelo base kaiko-ai/midnight. Su objetivo es mejorar la robustez del modelo frente a variaciones en la adquisición de muestras: cambios de escáner, tinción y centro hospitalario. El repositorio es un reemplazo directo del modelo base, ya que el delta de LoRA de rank 32 se ha plegado dentro de los pesos originales, por lo que no requiere la librería PEFT en tiempo de inferencia.
+Midnight-12k-SPECTRA es un extractor de características visuales para patología digital desarrollado por MedARC y Sophont. Parte del modelo base kaiko-ai/midnight, un transformer de visión tipo DINOv2, y se ha adaptado mediante el método SPECTRA: un entrenamiento contrastivo sobre teselas (tiles) de imágenes histológicas registradas del dataset PLISM, que alinea las representaciones del mismo tejido entre distintos escáneres y tinciones. El resultado es un modelo que mapea teselas RGB de histología a embeddings de 3072 dimensiones para análisis posteriores.
 
-El modelo parte de una arquitectura Vision Transformer DINOv2 y se ha entrenado de forma contrastiva sobre tiles de PLISM registrados, donde la misma región física de tejido se imagina bajo múltiples condiciones de escáner y tinción. La representación final tiene una dimensión de 3072, combinando el token CLS con la media de los tokens de parche. El autor publica tres semillas independientes de entrenamiento, que no forman un ensemble, para medir la variabilidad de los resultados.
+El modelo resuelve un problema concreto en pipelines de patología computacional: la variabilidad de dominio entre escáneres y protocolos de tinción degrada la calidad de los embeddings extraídos y, con ello, el rendimiento de los clasificadores y modelos de supervivencia aguas abajo. Al entrenar con un objetivo contrastivo que fuerza la invariancia a escáner y tinción, las representaciones resultantes son más estables y transferibles entre cohortes.
 
-Relevancia actual: los modelos de patología computacional tienden a degradarse cuando se aplican a datos de un hospital, escáner o tinción diferentes. SPECTRA aborda ese problema con un enfoque contrastivo que alinea representaciones de la misma región de tejido bajo distintas condiciones de adquisición.
+Con 1.136.480.768 parámetros y un repositorio de 13,6 GB, es un modelo de tamaño medio-grande para el estándar de extractores de características. Se distribuye con licencia MIT y todos los pesos de inferencia fusionados en el checkpoint, por lo que no requiere adaptadores ni acceso a clústeres adicionales. La model card no publica resultados de benchmarks ni el paper asociado, que figura como "coming soon".
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Vision Transformer (DinoV2Model de transformers, base: kaiko-ai/midnight) |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible (no es un modelo MoE) |
-| Longitud de contexto | no disponible (modelo de vision, procesa imagenes de 224x224) |
-| Tipos de cuantizacion | no disponible (pesos publicados en fp32) |
-| Idiomas soportados | no disponible (modelo de vision, sin procesamiento de lenguaje) |
+| Arquitectura | Transformer de visión (DINOv2, según el tag `dinov2`); backbone base kaiko-ai/midnight |
+| Parámetros totales | 1.136.480.768 |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (modelo de visión por teselas; entrada 224 × 224 píxeles) |
+| Tipos de cuantización | no disponible (la model card solo documenta pesos en safetensors en precisión de inferencia) |
+| Idiomas soportados | no disponible (modelo de visión; la model card declara `language: en` para documentación) |
 | Licencia | MIT |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (librería transformers) |
+| Dimensión de embedding | 3072 (concatenación del token CLS y la media de tokens de parche) |
+| Preprocesado | Resize bilineal a 224, CenterCrop 224 × 224, Normalize mean/std (0.5, 0.5, 0.5) |
+| Pipeline | image-feature-extraction |
+| Tamaño del repositorio | 13,6 GB |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un Vision Transformer DINOv2, implementado como DinoV2Model en transformers, compuesto por 40 bloques de atención. La entrada son imágenes de 224x224 píxeles, preprocesadas con resize bilinear (no bicubic), centro recortado y normalización con media y desviación típica de 0.5. El modelo produce 256 tokens de parche con un embed_dim de 1536, más un token CLS sin registros. La representación final se obtiene concatenando el token CLS con la media de los tokens de parche, dando como resultado un vector de 3072 dimensiones.
+El modelo se basa en kaiko-ai/midnight, un transformer de visión de la familia DINOv2 (así lo indica el tag `dinov2` del repositorio) con aproximadamente 1,14 mil millones de parámetros. La adaptación SPECTRA no cambia la arquitectura: se entrena un objetivo contrastivo sobre teselas de imagen histológica del dataset PLISM, registradas de modo que la misma región de tejido aparece bajo distintos escáneres y tinciones. El objetivo alinea las representaciones de esas vistas aumentadas, de forma que el embedding de una tesela sea estable frente a la variación de dominio instrumental y de tinción.
 
-El entrenamiento utiliza LoRA con rank 32, alpha 64 y scaling 2.0, aplicado sobre los módulos de atención (query, key, value, attention.output.dense) y MLP (mlp.weights_in, mlp.weights_out), un total de 240 módulos. El objetivo es contrastivo sobre tiles de PLISM registrados: la misma localización física de tejido, capturada bajo distintos escáneres y tinciones, se usa para acercar las representaciones de la misma región y separar las de regiones diferentes. El delta LoRA entrenado se pliega en los pesos base en fp32 antes de cualquier movimiento a dispositivo o cambio de dtype.
-
-El optimizador es AdamW con lr 1e-4, weight decay 0.05 y grad clip 1.0. El programa de entrenamiento consta de 500 pasos totales, con 200 pasos de warmup. Los checkpoints publicados se seleccionaron en pasos intermedios dentro del periodo de warmup (pasos 100 y 150), por lo que no corresponden a un punto completamente annealed de la programación.
+Tras el entrenamiento, las actualizaciones aprendidas se fusionan en los pesos completos del modelo, de manera que el checkpoint distribuido contiene todos los pesos de inferencia y no necesita un checkpoint base separado ni un adaptador. La model card no detalla el número de tokens de entrenamiento, la composición exacta del dataset, ni si se emplearon fases de ajuste adicionales; tampoco se especifica el tamaño de las teselas de entrenamiento más allá del preprocesado de inferencia documentado (224 × 224). No se han publicado detalles sobre la función de pérdida concreta, el tamaño de lote o el régimen de aumento de datos más allá de la mención al registro entre escáneres y tinciones.
 
 ## Capacidades
 
-- Extracción de características de tiles histopatológicos de 224x224, generando una representación de 3072 dimensiones mediante la concatenación del token CLS con la media de los tokens de parche.
-- Robustez frente a variaciones de escáner, tinción y centro, como demuestran los resultados en PathoROB y PLISM.
-- Capacidad de recuperación (retrieval) de tiles entre diferentes condiciones de adquisición, permitiendo buscar casos con morfología similar.
-- Incluye tres semillas independientes de entrenamiento para evaluar la variabilidad de los resultados, sin actuar como un ensemble.
-- Compatibilidad con el ecosistema transformers y timm; al ser un modelo fusionado, no requiere PEFT para cargarlo.
-- Preprocesamiento documentado de forma explícita: resize bilinear, center crop y normalización con media 0.5 y desviación 0.5.
+- Extracción de características de imágenes: genera embeddings de 3072 dimensiones a partir de teselas RGB de histología.
+- Invariancia a dominio: las representaciones están alineadas entre escáneres y tinciones mediante el objetivo contrastivo SPECTRA.
+- Representación a nivel de token y de imagen: expone `last_hidden_state`, del que se obtiene el token CLS y la media de los tokens de parche.
+- Uso como extractor congelado: pensado para alimentar clasificadores, modelos de supervivencia o sistemas de recuperación aguas abajo.
+- Inferencia en CPU y GPU: la model card documenta ambos modos (`device = "cuda"` o `"cpu"`).
+- Compatibilidad con `transformers` (versión 4.57.6 en el ejemplo) y `safetensors`.
+- No soporta generación de texto, tool calling, agentes ni razonamiento multi-paso: es un modelo puramente visual de extracción de características.
+- No se documentan capacidades multimodales (texto-imagen), audio ni vídeo.
 
 ## Casos de uso
 
-- Sistemas de apoyo al diagnóstico en patología digital: el modelo extrae características de tiles de biopsias o resecciones que pueden alimentar clasificadores aguas abajo, manteniendo el rendimiento aunque las muestras provengan de escáneres o tinciones diferentes.
-- Búsqueda de casos similares en archivos de patología: la representación de 3072 dimensiones permite indexar millones de tiles y recuperar aquellos con morfología similar, útil para revisar diagnósticos previos o consultar casos de referencia.
-- Transferencia de aprendizaje a tareas de patología: al ser drop-in replacement del modelo base, los investigadores pueden congelar las capas del modelo y entrenar cabezas de clasificación o segmentación sobre el vector de características sin modificar el pipeline existente.
-- Adaptación a entornos multicéntricos: gracias a la robustez ante cambios de centro, el modelo puede usarse en ensayos o cohortes multicéntricas sin reentrenar el modelo base para cada hospital.
-- Evaluación de robustez en investigación: con tres semillas publicadas, los equipos pueden cuantificar la varianza de métricas en benchmarks como PathoROB, PLISM, HEST o CPTAC, y comparar modelos con intervalos de confianza.
-- Backbone para pipelines de patología computacional: el modelo sirve como extractor de características estándar para proyectos que requieren una base de visión genérica, con un preprocesamiento específico que evita errores silenciosos de normalización o interpolation.
+- Búsqueda de imágenes por similitud en archivos de patología: indexar las teselas de una colección con embeddings de 3072 dimensiones y recuperar casos morfológicamente similares mediante búsqueda vectorial; la invariancia a escáner y tinción reduce los falsos positivos por lote o laboratorio.
+- Clasificación de tejido con etiquetas escasas: usar el extractor congelado y entrenar una regresión logística o un MLP ligero sobre los embeddings para tareas como tejido tumoral frente a sano, aprovechando que el espacio de representación ya está alineado entre fuentes.
+- Control de calidad y detección de deriva entre escáneres: comparar la distribución de embeddings de teselas de un mismo tejido adquiridas con equipos distintos; una divergencia anómala puede señalar un problema de calibración o de protocolo de tinción.
+- Modelos de supervivencia y pronóstico: agregar embeddings de múltiples teselas de una misma laminilla y entrenar un modelo de supervivencia aguas abajo; la estabilidad de las representaciones entre cohortes facilita la validación externa.
+- Preentrenamiento de modelos de múltiples instancias (MIL): emplear los embeddings como entrada de un agregador tipo attention-MIL para clasificación a nivel de laminilla, reduciendo el coste frente a entrenar un encoder desde cero.
+- Segmentación y detección asistida: combinar los mapas de tokens de parche con cabezas ligeras para localizar regiones de interés dentro de una tesela, útil en herramientas de revisión para patólogos.
+- Agrupamiento no supervisado de morfologías: aplicar clustering sobre los embeddings para descubrir patrones morfológicos recurrentes en un archivo sin etiquetas, como paso previo a la anotación manual.
 
 ## Benchmarks y rendimiento
 
-Se han publicado resultados en la model card, tomados de las tablas del paper de SPECTRA. El intervalo indicado es la media más o menos dos desviaciones estándar sobre tres semillas (n=3).
-
-| Metrica | Modelo base | SPECTRA (merged) |
-|---|---|---|
-| PathoROB mean robustness index (cross-centre) | 0.759 | 0.908 +/- 0.005 |
-| PLISM top-1 retrieval across scanners | 0.752 | 0.991 +/- 0.005 |
-| PLISM top-1 retrieval across stains | 0.560 | 0.883 +/- 0.036 |
-| HEST mean Pearson r | 0.3952 | 0.4122 +/- 0.0022 |
-| CPTAC AUC | 0.6643 | 0.6898 +/- 0.0016 |
-
-El modelo supera al modelo base en todas las métricas reportadas. Destaca la mejora en recuperación entre escáneres, que pasa de 0.752 a 0.991, y entre tinciones, de 0.560 a 0.883.
+No se han publicado resultados de benchmarks en la información disponible. La model card indica que el paper está "coming soon" y no incluye métricas de recuperación, clasificación ni comparativas con otros extractores de patología.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible. La documentación no especifica el número de parámetros del modelo ni los requisitos de memoria.
-- GPU recomendadas: no disponible.
-- Consumer GPU: no disponible. No hay datos oficiales sobre compatibilidad con GPUs domésticas.
-- Opciones de despliegue: compatible con PyTorch, transformers (DinoV2Model) y timm. No está adaptado para vLLM, llama.cpp u Ollama, dado que es un modelo de visión.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia en fp32: en torno a 4,5 GB solo para pesos (1,14 mil millones de parámetros × 4 bytes), más activaciones y memoria del pipeline; con lotes pequeños, un presupuesto de 8-10 GB es razonable.
+- VRAM estimada en fp16/bf16: en torno a 2,3 GB para pesos, más activaciones; cabe holgadamente en GPUs de consumo con 8 GB o más.
+- GPU recomendadas: A100, H100 o L40S para procesar grandes volúmenes de teselas en producción; RTX 4090, RTX 3090 o RTX 4080 para desarrollo y lotes moderados.
+- GPU de consumo: sí cabe en tarjetas de 8 GB o más en precisión reducida; también puede ejecutarse en CPU, según documenta la model card, aunque con menor throughput.
+- Opciones de despliegue: `transformers` con PyTorch (documentado en la model card); el tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints. No se documenta soporte explícito de vLLM, llama.cpp, Ollama o TGI, que además están orientados a modelos de lenguaje y no a este tipo de encoder visual.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Arquitectura | Dimension de embedding | PathoROB (cross-centre) | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto / entrada | Embedding | Licencia | Notas |
 |---|---|---|---|---|---|
-| kaiko-ai/midnight | DINOv2 | 1536 (CLS) o 3072 (CLS + mean) | 0.759 | MIT | Hugging Face |
-| SPECTRA (merged) | DINOv2 con LoRA plegado | 3072 | 0.908 | MIT | Hugging Face |
-| Adaptador SPECTRA (adapter-only) | DINOv2 + delta LoRA separado | no disponible | no disponible | MIT | Hugging Face (mencionado en la model card) |
+| medarc/spectra-midnight-12k-merged | 1.136.480.768 | Teselas 224 × 224 | 3072 | MIT | Adaptación contrastiva SPECTRA sobre midnight; invariancia a escáner y tinción |
+| kaiko-ai/midnight | no disponible en la información | Teselas (modelo base) | no disponible | no disponible | Modelo base sobre el que se aplica SPECTRA; sin el ajuste contrastivo documentado aquí |
+| Otros extractores de patología (p. ej. familia UNI, Virchow, Prov-GigaPath) | no disponible en la información | no disponible | no disponible | no disponible | Alternativas habituales de la categoría; sin datos verificados en la información proporcionada para comparar cifras |
 
-No se dispone de información de otros modelos comparables con los mismos datos de rendimiento en la documentación proporcionada.
+La información disponible solo permite comparar con el modelo base. No se dispone de métricas de rendimiento de ninguno de los modelos citados para establecer una comparación cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- Los checkpoints publicados proceden de pasos intermedios dentro del periodo de warmup (pasos 100 y 150 de 500, con 200 de warmup), por lo que no representan el punto final de un decaimiento completo de la tasa de aprendizaje. Esto es inusual y puede influir en la calidad final del modelo.
-- El preprocesamiento debe coincidir exactamente con el publicado: resize bilinear de 224, center crop y normalización con media y desviación típica de 0.5. Usar bicubic o estadísticas de ImageNet degrada el rendimiento de forma silenciosa, sin generar avisos.
-- No existe un preprocessor_config.json en el modelo, por lo que la normalización incorrecta es un error fácil de cometer al cargarlo con transformers.
-- La representación debe leerse como CLS concatenado con la media de los tokens de parche (3072 dimensiones). Usar solo el token CLS reduce la dimensionalidad a la mitad y no coincide con los resultados publicados.
-- Las tres semillas no forman un ensemble; se debe seleccionar una y reportar la dispersión entre las tres.
-- El modelo es puramente de visión. No soporta procesamiento de lenguaje, texto ni otras modalidades.
-- Aunque la licencia de los pesos es MIT, el uso en producción debe verificar las condiciones de uso y las licencias de los datos de entrenamiento (PLISM, etc.), que no están especificadas en la documentación.
-- No se han publicado resultados de benchmarks independientes fuera de los proporcionados por el autor.
+- No se han publicado benchmarks ni el paper asociado; el rendimiento real frente a otros extractores de patología no está verificado de forma independiente.
+- Los embeddings son a nivel de tesela: las predicciones a nivel de laminilla requieren un modelo aguas abajo, tal como advierte la model card.
+- El preprocesado está fijado en la documentación (resize bilineal a 224, center crop 224, normalización con media y desviación 0,5); desviarse de él puede degradar la calidad de las representaciones.
+- Riesgo de sesgo por dominio: aunque el entrenamiento busca invariancia entre escáneres y tinciones, no se documenta la cobertura de tejidos, órganos, laboratorios o poblaciones del dataset PLISM, por lo que la generalización a dominios no vistos es incierta.
+- No es un modelo generativo: no produce texto ni diagnósticos; cualquier uso clínico requeriría validación regulatoria y supervisión profesional.
+- La licencia MIT permite uso comercial, pero debe verificarse la licencia y las condiciones del modelo base kaiko-ai/midnight, de la que no se dispone información en esta ficha.
+- No se documentan limitaciones idiomáticas ni multilingües porque el modelo no procesa texto.
+- El tamaño del repositorio (13,6 GB) implica costes de almacenamiento y de transferencia relevantes para despliegues a gran escala.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/medarc/spectra-midnight-12k-merged
-- Modelo base kaiko-ai/midnight: https://huggingface.co/kaiko-ai/midnight
-- Repositorio OpenMidnight (replicación open-source de MedARC): https://github.com/MedARC-AI/OpenMidnight
-- GitHub de MedARC: https://github.com/MedARC-AI
+- Modelo en Hugging Face: https://huggingface.co/medarc/spectra-midnight-12k-merged
+- Modelo base: https://huggingface.co/kaiko-ai/midnight
+- MedARC: https://www.medarc.ai/
+- Sophont: https://sophont.med/
+- Paper: pendiente de publicación según la model card ("coming soon")

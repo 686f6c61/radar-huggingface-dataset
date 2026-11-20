@@ -5,7 +5,7 @@
   "author": "RedHatAI",
   "url": "https://huggingface.co/RedHatAI/GLM-5.3-MXFP4",
   "created_at": "2026-09-10T18:50:04.000Z",
-  "updated_at": "2026-11-09T18:49:27.000Z",
+  "updated_at": "2026-11-19T10:14:23.000Z",
   "license": "glm-5.3",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 4033,
+  "downloads_30d": 4036,
   "trending_score": 0,
   "parameters": 753329940480,
   "parameters_human": "753.33B",

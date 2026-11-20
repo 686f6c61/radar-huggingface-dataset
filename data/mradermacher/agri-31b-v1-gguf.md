@@ -2,117 +2,104 @@
 
 ## Resumen
 
-`mradermacher/agri-31b-v1-GGUF` es una republicación en formato GGUF del modelo `toiru99/agri-31b-v1`, un modelo de lenguaje de aproximadamente 30.700 millones de parámetros (30.697.345.596 según los pesos en safetensors del modelo base) etiquetado por su autor dentro del dominio de la agricultura y con el coreano (`ko`) como único idioma declarado. No se trata de un modelo nuevo: el repositorio lo firma mradermacher como cuantizador, que genera versiones estáticas en GGUF (de Q2_K a f16, incluyendo variantes K y IQ4_XS) para permitir inferencia en CPU y GPU de consumo mediante llama.cpp y derivados.
+agri-31b-v1 es un modelo de lenguaje especializado en agricultura, desarrollado originalmente por el usuario toiru99 y publicado en Hugging Face bajo el identificador `toiru99/agri-31b-v1`. La versión aquí documentada es la cuantización GGUF realizada por mradermacher, un conocido publicador de cuantizaciones estáticas y ponderadas para la comunidad de inferencia local. El modelo cuenta con 30.697.345.596 parámetros totales (aproximadamente 30,7 mil millones) y está etiquetado con el idioma coreano (`ko`), lo que sugiere un enfoque principal hacia el mercado agrícola coreano.
 
-La relevancia de esta ficha es doble. Por un lado, documenta un caso de verticalización lingüística y sectorial poco habitual: un modelo de 31B orientado a agricultura y entrenado para coreano, una combinación escasa en el ecosistema abierto. Por otro, ilustra el flujo habitual de cuantización estática que permite ejecutar pesos de gran tamaño en hardware modesto, con el coste de calidad asociado a las cuantizaciones agresivas.
+La relevancia de este modelo radica en su especialización vertical: frente a modelos generalistas, agri-31b-v1 se orienta a tareas del dominio agrícola, un nicho donde los modelos base suelen carecer de vocabulario técnico específico (fitopatología, manejo de cultivos, agroquímicos, normativa agraria). La disponibilidad de cuantizaciones GGUF desde Q2_K hasta Q8_0, además de un componente multimodal (`mmproj`), facilita su despliegue en entornos con recursos limitados o en infraestructura de inferencia local.
 
-La información publicada es muy limitada: la model card del repositorio GGUF solo describe el proceso de cuantización de mradermacher, y no aporta detalles sobre arquitectura, datos de entrenamiento, longitud de contexto, benchmarks ni alineación del modelo original. Esta ficha marca explícitamente como «no disponible» todo dato que no consta en la información consultada, y advierte de que el modelo no cuenta todavía con validación comunitaria (0 descargas y 0 likes en el momento de la consulta).
+La licencia es `gemma`, lo que vincula el modelo a los términos de uso de Google Gemma, aunque no se especifica en la información disponible si el modelo base es un fine-tuning directo de una variante Gemma. El repositorio tiene un tamaño de 213,9 GB, coherente con la suma de todas las cuantizaciones ofrecidas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la model card no especifica si es transformer denso, MoE o híbrido) |
-| Parametros totales | 30.697.345.596 (≈30,7 B) |
-| Parametros activos | no disponible (no se ha documentado una arquitectura de mezcla de expertos) |
+| Arquitectura | no disponible (se infiere transformer por el pipeline `transformers` y el formato GGUF, pero no se confirma) |
+| Parametros totales | 30.697.345.596 (30,7 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, además de proyectores multimodales mmproj-Q8_0 y mmproj-f16 |
-| Idiomas soportados | coreano (ko), único idioma declarado en el tag `language` |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizaciones estáticas); safetensors en el modelo base `toiru99/agri-31b-v1` |
-| Modelo base | `toiru99/agri-31b-v1` |
-| Precision original | bfloat16 (tag del repositorio) |
-| Tamano del repositorio | 31,7 GB |
-| Autor de la cuantizacion | mradermacher (nethype GmbH) |
-| Biblioteca declarada | transformers |
-| Etiquetas | agriculture, gguf, conversational, endpoints_compatible |
-| Fecha de creacion | 2026-10-23 |
-| Descargas / likes | 0 / 0 |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-Q8_0, mmproj-f16 |
+| Idiomas soportados | coreano (`ko`) |
+| Licencia | gemma |
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base se distribuye en safetensors/bfloat16 |
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura del modelo base. El repositorio únicamente indica que se trata de pesos en `bfloat16` con 30.697.345.596 parámetros, compatible con la librería `transformers` y con la etiqueta `conversational`, lo que sugiere un modelo de lenguaje causal ajustado para diálogo. No consta si emplea atención completa, atención lineal, mezcla de expertos, capas recurrentes o una combinación híbrida, ni tampoco el número de capas, la dimensión oculta o el vocabulario utilizado.
+No se dispone de información detallada sobre la arquitectura interna del modelo en la documentación proporcionada. El pipeline declarado es `transformers` y el formato de pesos original es `bfloat16`, lo que es consistente con un transformer decoder-only de aproximadamente 30,7 mil millones de parámetros. La presencia de archivos `mmproj` (multi-modal projection) en el repositorio GGUF indica que el modelo incorpora capacidades multimodales, presumiblemente visión, aunque no se detalla qué codificador visual utiliza ni cómo se integra.
 
-Tampoco se documentan los datos de entrenamiento: se desconoce el volumen de tokens, la composición del corpus (aunque la etiqueta `agriculture` apunta a una especialización sectorial), si hubo fases de instrucción supervisada, RLHF o DPO, y qué técnica de alineación se aplicó. La única innovación técnica constatable en este repositorio es el propio proceso de cuantización: mradermacher publica cuantizaciones estáticas (no ponderadas con imatrix, según indica el autor, que deja la puerta abierta a solicitarlas mediante una discusión comunitaria) e incluye ficheros `mmproj` en Q8_0 y f16, descritos como «multi-modal supplement». La presencia de estos proyectores sugiere soporte para entrada multimodal a través de llama.cpp, pero la model card no especifica la modalidad, el codificador visual ni el procedimiento de alineación, por lo que debe tratarse como un dato no confirmado.
+Tampoco se especifican el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT. La etiqueta `agriculture` y el idioma coreano sugieren un ajuste fino sobre un corpus del dominio agrícola en coreano, pero esta afirmación no puede confirmarse con los datos disponibles. El autor de las cuantizaciones indica que se generaron cuantizaciones estáticas (`quantize_version: 2`, `output_tensor_quantised: 1`) y que existen versiones ponderadas con imatrix en un repositorio separado (`mradermacher/agri-31b-v1-i1-GGUF`).
 
 ## Capacidades
 
-- Generación de texto conversacional: la etiqueta `conversational` y la inclusión de una plantilla de chat en el ecosistema GGUF apuntan a un uso como asistente de diálogo, aunque la model card no detalla el formato de prompt.
-- Especialización sectorial en agricultura: el tag `agriculture` indica que el ajuste del modelo base se orientó a vocabulario y contenidos agronómicos, sin que se publique la metodología ni la evaluación de esa especialización.
-- Competencia lingüística en coreano: único idioma declarado. No se documenta soporte para inglés, castellano ni ninguna otra lengua, y el comportamiento fuera del coreano es desconocido.
-- Posible entrada multimodal: los ficheros `mmproj-Q8_0` y `mmproj-f16` indican que el repositorio incluye un proyector para modelos multimodales en llama.cpp; la modalidad concreta no está documentada.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Modo «thinking» o razonamiento extendido: no disponible.
-- Capacidades de código y matemáticas: no documentadas ni evaluadas en la información disponible.
+- Generación de texto conversacional en coreano, orientada al dominio agrícola.
+- Capacidades multimodales: la presencia de archivos `mmproj` sugiere soporte de entrada de imágenes (visión), aunque no se detalla su alcance.
+- Procesamiento de lenguaje natural especializado: vocabulario y terminología agrícola (cultivos, plagas, fertilizantes, clima).
+- Formato conversacional: el tag `conversational` indica que el modelo está preparado para diálogos multi-turno.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede servirse a través de infraestructura de inferencia estándar.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas al coreano según la etiqueta de idioma declarada.
 
 ## Casos de uso
 
-- Asistente agronómico en coreano: el modelo puede desplegarse como chatbot de consulta para agricultores y técnicos de campo, aprovechando su especialización declarada en agricultura y su competencia en coreano. Es adecuado porque cubre simultáneamente el dominio y el idioma, una combinación rara en modelos abiertos.
-- Canal de soporte para cooperativas agrícolas: integrado detrás de una cola de mensajes, el modelo puede responder consultas frecuentes sobre calendario de cultivos, riego o fertilización en coreano, con derivación a un técnico humano cuando la confianza sea baja.
-- Extracción y resumen de documentación técnica agrícola: uso en pipelines de procesamiento por lotes para resumir informes de extensión agraria, fichas de producto fitosanitario o manuales de maquinaria redactados en coreano, reduciendo el tiempo de revisión manual.
-- Base de un sistema RAG sobre normativa agrícola coreana: el modelo puede consumir fragmentos recuperados de un índice vectorial y redactar respuestas citando la documentación, lo que mitiga parcialmente el riesgo de alucinación en un dominio regulado.
-- Generación de material divulgativo y formativo: redacción de guías, boletines y guiones para formación de agricultores en coreano, con revisión humana posterior obligatoria por tratarse de contenido técnico.
-- Despliegue en local o en el borde (edge): gracias a las cuantizaciones Q4_K_M o IQ4_XS, el modelo puede ejecutarse con llama.cpp en una estación de trabajo con GPU de consumo o incluso en CPU con suficiente RAM, lo que permite operar en explotaciones con conectividad limitada y sin enviar datos fuera de la organización.
-- Clasificación y etiquetado de incidencias fitosanitarias: si el proyector multimodal funciona correctamente, el modelo podría asistir en la descripción de imágenes de cultivos enviadas por agricultores; esta capacidad debe validarse empíricamente antes de cualquier uso real.
+- Asistencia agronómica conversacional: el modelo puede responder consultas de agricultores sobre manejo de cultivos, identificación de síntomas de plagas o calendarios de siembra, aprovechando su ajuste al dominio agrícola y su formato conversacional.
+- Análisis de imágenes de cultivos: gracias a los archivos `mmproj`, puede emplearse para interpretar fotografías de plantas o parcelas y ofrecer recomendaciones, siempre que se valide la calidad de la proyección multimodal.
+- Generación de documentación técnica agrícola: redacción de fichas de producto, guías de aplicación de agroquímicos o informes de campo en coreano, con terminología especializada.
+- Soporte a técnicos de cooperativas agrarias: consultas multi-turno sobre normativa, tratamientos fitosanitarios o buenas prácticas, desplegado en local para proteger datos sensibles de explotaciones.
+- Chatbot para portales del sector primario: integración en webs o apps de asociaciones agrarias para resolver dudas frecuentes en coreano, con despliegue en servidores modestos mediante cuantización Q4_K_M.
+- Investigación en NLP agrícola: uso como modelo base o de referencia para experimentos de dominio en coreano, aprovechando las cuantizaciones disponibles para iterar rápidamente en hardware consumer.
+- Extracción de información de informes agrarios: procesamiento de textos técnicos en coreano para estructurar datos (plagas, dosis, rendimientos) en pipelines de análisis.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Ni la model card del repositorio GGUF ni los metadatos del modelo base incluyen métricas de MMLU, HumanEval, GSM8K, evaluaciones en coreano (como KoBEST o HAE-RAE) ni comparaciones con modelos de referencia. Tampoco se documenta la degradación de perplejidad introducida por cada cuantización estática, un dato que el autor del repositorio no ha publicado para este modelo concreto.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-Las cifras de VRAM siguientes son estimaciones calculadas a partir del número de parámetros (30,7 B) y de los bits por peso típicos de cada tipo de cuantización en llama.cpp; no han sido publicadas por el autor y no incluyen el espacio adicional para la caché KV, que depende de la longitud de contexto (no documentada) y del número de secuencias concurrentes.
-
-| Cuantizacion | Peso aproximado | VRAM estimada con overhead minimo | Hardware de referencia |
-|---|---:|---:|---|
-| f16 / x-f16 | ≈61 GB | ≈63-65 GB | A100 80 GB, H100 80 GB, o 2× A100 40 GB |
-| Q8_0 | ≈33 GB | ≈35-37 GB | A100 40 GB, L40S 48 GB, A6000 48 GB |
-| Q6_K | ≈25 GB | ≈27-29 GB | A100 40 GB, 2× RTX 4090 24 GB |
-| Q5_K_M | ≈22 GB | ≈24-26 GB | RTX 4090 24 GB con contexto corto, L40S 48 GB |
-| Q4_K_M | ≈19 GB | ≈21-23 GB | RTX 4090 24 GB, RTX 3090 24 GB |
-| IQ4_XS | ≈16 GB | ≈18-20 GB | RTX 4080 16 GB ajustado, RTX 4090 con holgura |
-| Q3_K_M | ≈15 GB | ≈17-19 GB | RTX 4080 16 GB, RTX 3090 24 GB |
-| Q2_K | ≈11 GB | ≈13-15 GB | RTX 4070 Ti 12 GB ajustado, RTX 4080 16 GB |
-
-- Cabe en GPU de consumo: sí, en el rango Q2_K a Q4_K_M con tarjetas de 16-24 GB (RTX 4080, 4090, 3090). Las cuantizaciones Q5 y superiores requieren 24 GB o más y contexto reducido.
-- Ejecución en CPU: viable con Q4_K_M o inferiores si se dispone de al menos 24-32 GB de RAM; el rendimiento será de pocos tokens por segundo y depende por completo del hardware, sin cifras publicadas.
-- Opciones de despliegue: llama.cpp, llama-cpp-python, Ollama, LM Studio y servidores compatibles con la API de OpenAI incluidos en llama.cpp (`llama-server`). vLLM admite GGUF de forma experimental; TGI no soporta GGUF de forma nativa, por lo que requeriría los safetensors del modelo base.
-- Latencia y throughput: no disponibles. No se han publicado mediciones y dependerán del hardware, de la cuantización y de la longitud de contexto, que además es desconocida.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
+  - Q2_K: ~12 GB
+  - Q4_K_M: ~18,8 GB
+  - Q6_K: ~25,3 GB
+  - Q8_0: ~32,7 GB
+  - Añadir ~0,9-1,3 GB adicionales si se utiliza el componente multimodal (`mmproj`).
+- GPU recomendadas:
+  - Q4_K_M: RTX 4090 (24 GB) o A5000/A6000; también cabe en 2x RTX 3090.
+  - Q6_K: RTX 4090 al límite, A6000 (48 GB) con holgura, o A100 40 GB.
+  - Q8_0: A100 40 GB, H100, o 2x RTX 4090.
+  - Q2_K/Q3_K: RTX 3090/4090 con margen amplio.
+- Cabe en GPU consumer: sí, en RTX 3090/4090 para cuantizaciones Q4 y Q5; en GPUs de 16 GB solo con Q2_K/Q3_K y contexto reducido.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y servidores compatibles con GGUF (koboldcpp). Para el modelo base en bfloat16 se requeriría transformers con aceleración por hardware (vLLM/TGI no confirmados para este modelo).
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-La comparación de rendimiento no es posible porque no existen benchmarks publicados de `agri-31b-v1`. La tabla siguiente contrasta únicamente datos estructurales y de licencia; las cifras de los modelos alternativos provienen de sus respectivas model cards públicas y se incluyen como referencia de categoría, no como evaluación comparativa.
+No se dispone de información sobre modelos comparables del mismo dominio (agrícola en coreano) en la documentación proporcionada. Como referencia de categoría por tamaño, cabría comparar con modelos de ~30B como Qwen2.5-32B o Gemma-2-27B, pero no se han proporcionado datos de rendimiento de agri-31b-v1 que permitan una comparación rigurosa.
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato disponible |
-|---|---:|---|---|---|---|
-| agri-31b-v1 (este modelo) | ≈30,7 B | no disponible | coreano | Apache 2.0 | GGUF (esta repo), safetensors (base) |
-| Qwen2.5-32B-Instruct | ≈32,5 B | 131.072 tokens | multilingüe (incluye coreano) | Apache 2.0 | safetensors, GGUF, AWQ, GPTQ |
-| Gemma 2 27B | ≈27 B | 8.192 tokens | multilingüe | Gemma Terms of Use | safetensors, GGUF |
-| Yi-34B | ≈34 B | 200.000 tokens (en variantes posteriores, 4.096 en la original) | inglés, chino | Apache 2.0 (con condiciones para algunas variantes) | safetensors, GGUF |
+| Modelo | Parámetros | Contexto | Licencia | Idioma principal | Disponibilidad |
+|---|---|---|---|---|---|
+| agri-31b-v1 | 30,7 B | no disponible | gemma | coreano | GGUF (mradermacher) |
+| Qwen2.5-32B | 32,5 B | 128K (según versión) | Apache 2.0 (mayoría) | multilingüe | amplia |
+| Gemma-2-27B | 27 B | 8K | gemma | multilingüe | amplia |
 
-Diferencias cualitativas relevantes: frente a las alternativas, `agri-31b-v1` se distingue por su verticalización en agricultura y su restricción al coreano, lo que reduce su aplicabilidad general pero puede ser una ventaja en despliegues sectoriales. Las alternativas citadas tienen documentación técnica y evaluaciones públicas mucho más completas, y contextos declarados; en este modelo la longitud de contexto es un dato desconocido que conviene verificar antes de diseñar cualquier aplicación.
+Los datos de Qwen2.5-32B y Gemma-2-27B se incluyen solo como referencia de categoría; no se ha verificado su rendimiento frente a agri-31b-v1.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados. Al estar especializado en agricultura y limitado al coreano, es probable que herede los sesgos de su corpus de entrenamiento, que no se ha descrito; no hay evaluación de sesgo publicada.
-- Riesgo de alucinación: alto en ausencia de datos sobre alineación o entrenamiento con refuerzo. En un dominio técnico como la agricultura, donde una recomendación errónea sobre fitosanitarios o riego puede tener consecuencias materiales, toda salida debe verificarse por un profesional.
-- Limitación de idioma: el único idioma declarado es el coreano. No hay evidencia de competencia en castellano, inglés ni otras lenguas, por lo que no debe asumirse un comportamiento multilingüe.
-- Longitud de contexto desconocida: no se puede garantizar el funcionamiento en conversaciones largas ni en pipelines RAG con muchos fragmentos. Es imprescindible determinarla empíricamente antes de producción.
-- Degradación por cuantización: las versiones Q2_K y Q3_K pueden degradar notablemente la calidad respecto a f16, especialmente en un modelo de 31B. Además, el autor indica que las cuantizaciones estáticas no están ponderadas con imatrix, lo que suele implicar una pérdida de calidad algo mayor que las versiones ponderadas equivalentes.
-- Soporte multimodal sin confirmar: la presencia de ficheros `mmproj` no garantiza que el modelo funcione correctamente con imágenes; no se documenta el codificador ni el procedimiento de alineación.
-- Ausencia de validación comunitaria: 0 descargas y 0 likes en el momento de la consulta. No existen informes de terceros, comparativas independientes ni incidencias reportadas sobre este repositorio.
-- Licencia: Apache 2.0 permite uso comercial, modificación y redistribución con atribución y conservación del aviso de licencia. Debe verificarse, no obstante, que el modelo base `toiru99/agri-31b-v1` mantenga la misma licencia y que los datos de entrenamiento no impongan restricciones adicionales, algo que no se detalla en la información disponible.
-- Fecha de creación anómala (2026-10-23) en los metadatos: conviene contrastarla con la del modelo base antes de citar el repositorio.
-- Caveat de producción: sin benchmarks, sin contexto declarado y sin evaluación independiente, este modelo no debería desplegarse en un sistema crítico sin una batería propia de evaluaciones en el dominio y el idioma objetivo.
+- Idioma: el modelo está etiquetado únicamente para coreano; su rendimiento en castellano u otros idiomas no está garantizado y probablemente sea deficiente.
+- Sesgos: no se documentan evaluaciones de sesgo; al ser un ajuste de dominio, puede reflejar sesgos presentes en corpus agrícolas coreanos (prácticas locales, sesgos comerciales de insumos).
+- Alucinación: riesgo relevante en un dominio técnico donde recomendaciones incorrectas sobre dosis de agroquímicos o tratamientos fitosanitarios pueden tener consecuencias económicas o legales; se requiere validación por expertos.
+- Licencia: la licencia `gemma` impone restricciones de uso comercial y obligaciones de atribución según los términos de Google Gemma; es imprescindible revisar dichos términos antes de un despliegue en producción.
+- Contexto: no se ha publicado la longitud de contexto, lo que impide planificar casos de uso con documentos largos.
+- Multimodalidad: la existencia de `mmproj` no garantiza calidad en visión; no hay evaluación publicada.
+- Documentación escasa: la model card del cuantizador no aporta información sobre entrenamiento, datos ni evaluación, lo que limita la confianza para producción.
+- Fecha de creación futura (2026-10-23) en los metadatos: conviene verificar la procedencia y vigencia del repositorio.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/agri-31b-v1-GGUF
 - Modelo base: https://huggingface.co/toiru99/agri-31b-v1
-- Lista de descargas y visión general del autor: https://hf.tst.eu/model#agri-31b-v1-GGUF
-- Solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Guía de uso de GGUF citada por el autor (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Análisis de tipos de cuantización de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Gráfica comparativa de perplejidad por cuantización (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Sitio del cuantizador (nethype GmbH): https://www.nethype.de/
+- Cuantizaciones ponderadas (imatrix): https://huggingface.co/mradermacher/agri-31b-v1-i1-GGUF
+- Página de descargas del cuantizador: https://hf.tst.eu/model#agri-31b-v1-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de modelos del cuantizador: https://huggingface.co/mradermacher/model_requests
+- Gráfico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Empresa del cuantizador: https://www.nethype.de/

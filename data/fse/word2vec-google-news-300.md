@@ -2,98 +2,94 @@
 
 ## Resumen
 
-`fse/word2vec-google-news-300` es un conjunto de vectores de palabras (word embeddings) estáticos de 300 dimensiones para 3 millones de palabras y expresiones en inglés, entrenados sobre una parte del corpus Google News de aproximadamente 100.000 millones de palabras. No es un modelo generativo ni un transformer: es la redistribución, en formato gensim, de los vectores publicados originalmente por Google con el proyecto word2vec, empaquetados por el autor `fse` para su uso con la librería Fast Sentence Embeddings.
+word2vec Google News 300 es un conjunto de vectores de palabras preentrenados de 300 dimensiones para aproximadamente 3 millones de palabras y frases en inglés, entrenados sobre una parte del corpus Google News que comprende unos 100 mil millones de palabras. Fue publicado originalmente por Google dentro del proyecto word2vec y esta redistribucion en formato gensim corre a cargo de fse (Fast Sentence Embeddings), mantenido por Oliver Borchers. No es un modelo generativo ni un transformer: es una representacion estatica de palabras basada en la arquitectura word2vec original de 2013.
 
-El repositorio resuelve un problema muy concreto: disponer de los clásicos vectores de Google News en un formato que gensim puede cargar directamente y que la librería `fse` puede convertir en embeddings de frase mediante técnicas de pooling (media CBOW, SIF y uSIF). Históricamente, el formato original distribuido por Google era un binario `.bin` que requería conversión; este repositorio ofrece el fichero `KeyedVectors` de gensim junto con la matriz de vectores en `float32` (3.000.000 × 300, 3,6 GB) lista para cargar o mapear en memoria.
+El modelo resuelve el problema de obtener representaciones densas de palabras y frases para tareas de similitud semantica, recuperacion de informacion, clasificacion de texto o clustering, sin necesidad de entrenar embeddings desde cero. Su relevancia actual es la de un componente clasico de linea base: sigue siendo util para pipelines ligeros, sistemas con recursos limitados y como referencia historica frente a los modelos de embeddings contextuales modernos.
 
-Su relevancia actual es la de un componente clásico de línea base: sigue siendo útil como referencia en tareas de similitud léxica, como extractor de características barato en CPU para clasificadores y sistemas de recuperación, y como punto de comparación frente a modelos de embeddings contextuales. La licencia Apache 2.0 facilita su uso comercial, y el tamaño del vocabulario (incluye expresiones multivocablo detectadas con el método data-driven del paper de Mikolov et al.) lo hace adecuado para dominios con jerga periodística.
+La ficha tecnica se centra en el paquete fse, que envuelve los vectores de gensim y los convierte en embeddings de frase mediante tecnicas como CBOW averaging, SIF y uSIF. El repositorio ocupa 3,8 GB y contiene tanto el modelo KeyedVectors como el fichero de vectores en formato NumPy float32 de 3.000.000 x 300.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | word2vec (embeddings estáticos a nivel de palabra; la model card no especifica si el entrenamiento fue CBOW o skip-gram) |
-| Parametros totales | 900.000.000 valores `float32` (3.000.000 de entradas × 300 dimensiones); no son parámetros de una red neuronal profunda |
-| Parametros activos | no aplica (no es un modelo MoE ni una red con activaciones por token) |
-| Longitud de contexto | no aplica; es un modelo de vectores por palabra. La ventana de entrenamiento no se indica en la información disponible |
-| Tipos de cuantizacion | no disponible; los pesos se distribuyen en `float32`. `fse` permite mapear el fichero en memoria (`mmap="r"`) en lugar de cargarlo completo |
-| Idiomas soportados | inglés (`en`) |
+| Arquitectura | word2vec (embeddings estaticos de palabras; no es un transformer) |
+| Parametros totales | 3.000.000 vectores x 300 dimensiones (900 millones de valores float32) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de embeddings de palabras, sin ventana de contexto generativa) |
+| Tipos de cuantizacion | no disponible (los pesos se distribuyen en float32) |
+| Idiomas soportados | ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | gensim `KeyedVectors`: `word2vec-google-news-300.model` (vocabulario y metadatos) + `word2vec-google-news-300.model.vectors.npy` (matriz `float32` de 3,6 GB) |
+| Formato de pesos | gensim KeyedVectors (`.model`) y `.model.vectors.npy` (NumPy float32) |
 
 ## Arquitectura y entrenamiento
 
-Se trata de embeddings estáticos obtenidos con word2vec sobre una parte del dataset Google News, con un vocabulario de 3 millones de palabras y expresiones en inglés y 300 dimensiones por vector. Las expresiones multivocablo se obtuvieron con el enfoque data-driven descrito en «Distributed Representations of Words and Phrases and their Compositionality» (Mikolov et al., 2013), que es también la referencia de las técnicas de subsampling de palabras frecuentes y negative sampling empleadas en la familia word2vec. La model card no detalla hiperparámetros concretos (ventana, número de muestras negativas, epochs ni si se usó CBOW o skip-gram), por lo que esos datos deben considerarse no disponibles.
+Se trata de la implementacion original de word2vec descrita por Mikolov et al. en 2013, con vocabulario de 3 millones de palabras y frases y dimensionalidad de 300. El modelo aprende representaciones densas mediante objetivos de prediccion local (CBOW y skip-gram en el trabajo original), aunque la model card no especifica que variante concreta se uso para estos vectores. Las frases se incorporaron con el enfoque guiado por datos descrito en "Distributed Representations of Words and Phrases and their Compositionality", lo que permite representar expresiones multipalabra como una unica entrada del vocabulario.
 
-La aportación del repositorio `fse` no está en el entrenamiento sino en el empaquetado: convierte los vectores de palabra en vectores de frase mediante media CBOW, SIF (smooth inverse frequency) y uSIF, implementados en la librería Fast Sentence Embeddings de Oliver Borchers. SIF requiere un paso de entrenamiento ligero sobre el corpus de frases para estimar las frecuencias y la componente principal que se resta; el resto del proceso es aritmética sobre los vectores preentrenados. No hay fine-tuning del espacio de embeddings ni ningún tipo de RLHF o DPO: el modelo es puramente estático.
+El entrenamiento se realizo sobre una parte del corpus Google News, aproximadamente 100 mil millones de palabras en ingles. No se documenta en la informacion disponible el uso de RLHF, DPO ni tecnicas de alineacion, algo esperable en un modelo de embeddings de 2013. La innovacion tecnica relevante en este repositorio es el empaquetado para fse, que permite transformar los vectores de palabra en vectores de frase mediante CBOW averaging, SIF (smooth inverse frequency) y uSIF, ademas de soportar memory-mapping de los vectores para evitar cargarlos enteros en RAM.
 
 ## Capacidades
 
-- Representación vectorial de palabras y expresiones en inglés, con 300 dimensiones por entrada y un vocabulario de 3 millones de entradas.
-- Similitud semántica léxica (coseno entre vectores) y analogías vectoriales del estilo `rey - hombre + mujer`.
-- Construcción de embeddings de frase mediante pooling CBOW, SIF y uSIF a través de `fse`.
-- Extracción de características para clasificadores clásicos (regresión logística, SVM, árboles) en tareas de análisis de sentimiento, clasificación de temas o detección de spam.
-- Capacidad de mapear los vectores en memoria con `mmap`, lo que permite usarlos en entornos con RAM limitada.
-- No soporta tool calling ni function calling.
-- No soporta agentes ni razonamiento multi-paso.
-- No tiene modo «thinking», ni visión, ni audio.
-- No genera texto: no es un modelo de lenguaje, es un diccionario de vectores.
-- Multilingüismo: únicamente inglés.
+- Representacion estatica de palabras y frases en ingles en un espacio vectorial de 300 dimensiones.
+- Calculo de similitud semantica entre palabras y entre frases (coseno sobre vectores agregados).
+- Generacion de embeddings de frase mediante CBOW averaging, SIF y uSIF a traves de la libreria fse.
+- Soporte de memory-mapping (`Vectors.from_pretrained(..., mmap="r")`) para reducir el consumo de RAM.
+- Aritmetica vectorial clasica sobre palabras (analogias del tipo rey - hombre + mujer).
+- No dispone de generacion de texto, razonamiento, codigo, matematicas, vision ni audio.
+- No soporta tool calling, function calling ni razonamiento multi-paso.
+- Capacidad multilingue limitada al ingles.
 
 ## Casos de uso
 
-- Línea base en evaluación de embeddings: usar estos vectores como referencia clásica al comparar modelos contextuales en tareas de similitud semántica o clasificación, aprovechando que el repositorio incluye el benchmark STS de todos los conjuntos de vectores de la organización `fse`.
-- Clasificación de textos periodísticos en producción: promediar los vectores de las palabras de un titular o párrafo y alimentar con ese vector un clasificador lineal; el coste en CPU es muy bajo y no requiere GPU.
-- Búsqueda léxica y recuperación de documentos: indexar documentos como vectores de frase (SIF/uSIF) y recuperar por similitud coseno en lugar de por coincidencia exacta de términos, útil en motores de búsqueda internos con presupuesto de infraestructura reducido.
-- Deduplicación y agrupamiento de noticias: agrupar titulares o resúmenes por cercanía vectorial para detectar cables repetidos o historias relacionadas en un agregador.
-- Expansión de consultas y sinónimos: dado un término, obtener los vecinos más próximos del vocabulario para enriquecer consultas o construir diccionarios de sinónimos específicos de dominio periodístico.
-- Preprocesamiento para pipelines de NLP: generar representaciones de entrada para modelos posteriores o para técnicas de interpretabilidad (comparación de vecinos, análisis de sesgos en el espacio vectorial).
-- Prototipado rápido y docencia: cargar el modelo con `Vectors.from_pretrained(..., mmap="r")` y disponer de embeddings en minutos sin infraestructura de inferencia ni dependencias de GPU, algo útil para enseñar conceptos de espacios vectoriales.
+- Busqueda semantica ligera: indexar documentos y consultas como vectores de frase con SIF y recuperar por similitud coseno, sin necesidad de GPUs ni de modelos transformer.
+- Clasificacion de texto con recursos limitados: usar los embeddings de frase como caracteristicas de entrada para clasificadores lineales o SVM en tareas de moderacion o etiquetado.
+- Deduplicacion y clustering de documentos: agrupar noticias o tickets por similitud semantica usando los vectores agregados de cada texto.
+- Sistemas de recomendacion basados en contenido: representar titulos o descripciones y calcular afinidad entre elementos con un coste computacional muy bajo.
+- Linea base en investigacion de NLP: comparar el rendimiento de embeddings estaticos frente a modelos contextuales en tareas de STS o similitud semantica.
+- Extraccion de entidades y expansion de consultas: aprovechar las analogias y vecinos mas cercanos para enriquecer consultas o generar sinonimos en ingles.
+- Prototipado rapido en entornos sin GPU: al ser un modelo de embeddings, se ejecuta en CPU con un consumo de memoria moderado gracias al memory-mapping.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas de evaluación (ni SimLex, ni WordSim-353, ni resultados STS numéricos), y la búsqueda web realizada no ha devuelto datos de rendimiento del modelo. El repositorio `fse` en GitHub menciona la existencia de un benchmark STS para todos los conjuntos de vectores de la organización, pero los valores concretos no forman parte de la información proporcionada.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM: no aplica en el uso habitual; el modelo se ejecuta en CPU. Si se carga completo en memoria, requiere en torno a 3,6 GB de RAM para la matriz de vectores `float32`, más la sobrecarga del vocabulario y los metadatos de gensim.
-- Memoria con `mmap`: el mapeo en memoria (`mmap="r"`) evita cargar los 3,6 GB en RAM de forma residente; el sistema operativo pagina bajo demanda, por lo que el consumo efectivo depende del patrón de acceso.
-- GPU recomendadas: ninguna. No hay kernels de GPU específicos en la información disponible; el cálculo es aritmética de vectores que puede hacerse con NumPy en CPU.
-- Cabe en cualquier GPU consumer y en cualquier portátil con suficiente RAM o disco; también en entornos sin GPU.
-- Opciones de despliegue: `gensim` (`KeyedVectors.load`), la librería `fse` (instalable con `pip install fse`), y NumPy directamente sobre el fichero `.npy`. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: no requiere GPU; los vectores completos en float32 ocupan aproximadamente 3,6 GB en RAM si se cargan enteros.
+- Memoria RAM: con memory-mapping (`mmap="r"`) el consumo residente se reduce y solo se cargan las paginas consultadas.
+- GPU recomendadas: no aplica; el modelo esta pensado para ejecucion en CPU.
+- Cabe en cualquier equipo consumer con suficiente RAM o disco para el memory-mapping; no necesita GPU dedicada.
+- Opciones de despliegue: libreria fse (version `fse<2` para este repositorio) sobre gensim; para fse 2.0 existe `fse/word2vec-google-news-300-raw`.
+- Latencia y throughput: no disponibles en la informacion proporcionada; al ser una operacion de lookup y agregacion, la latencia depende del numero de tokens por frase y del acceso a los vectores.
 
 ## Comparativa con modelos similares
 
-Los datos de las alternativas provienen de conocimiento público general y no de la información proporcionada; se marcan como no verificados en este contexto.
-
-| Modelo | Dimensiones | Vocabulario | Idiomas | Licencia | Notas |
+| Modelo | Tipo | Dimension | Vocabulario | Contexto | Licencia |
 |---|---|---|---|---|---|
-| `fse/word2vec-google-news-300` | 300 | 3.000.000 palabras y expresiones | en | Apache 2.0 | Empaquetado gensim + soporte `fse` para SIF/uSIF; 3,6 GB |
-| GoogleNews-vectors-negative300 (original) | 300 | 3.000.000 | en | Apache 2.0 | Mismo contenido en formato binario `.bin` original de Google; requiere conversión a gensim |
-| GloVe (Stanford) | 50, 100, 200, 300 | depende del corpus (6B, 42B, 840B tokens) | en (y versiones multilingües) | dominio público / Open Data Commons (no verificado aquí) | Entrenado con matriz de coocurrencia; sin expresiones multivocablo |
-| fastText (Facebook) | 300 | varios cientos de miles a millones | 157 idiomas en la versión multilingüe | MIT (no verificado aquí) | Usa subpalabras, por lo que genera vectores para palabras fuera de vocabulario |
+| fse/word2vec-google-news-300 | word2vec estatico | 300 | 3.000.000 palabras y frases | no aplica | Apache 2.0 |
+| GloVe (Stanford) | embeddings estaticos | 50, 100, 200, 300 | variable segun version | no aplica | licencia propia de GloVe |
+| fastText (Facebook) | embeddings con subpalabras | 300 | variable | no aplica | MIT |
+| Modelos de embeddings de frase tipo sentence-transformers | transformer | 384-1024 | no aplica | 256-512 tokens | variable |
 
-La ventaja diferencial de este repositorio frente al binario original de Google es el formato: carga directa con gensim y compatibilidad con el pooling de frases de `fse`. Frente a GloVe, el vocabulario es mayor y la licencia Apache 2.0 es explícita; frente a fastText, pierde la capacidad de representar palabras desconocidas mediante subpalabras.
+La comparacion con modelos contextuales modernos no es directa: word2vec genera un unico vector por palabra independientemente del contexto, mientras que los sentence-transformers producen representaciones contextualizadas con mayor rendimiento en tareas de similitud semantica, a cambio de un coste computacional mucho mayor.
 
 ## Limitaciones y advertencias
 
-- No es un modelo de lenguaje: no genera texto, no responde preguntas y no mantiene conversaciones. Cualquier caso de uso que requiera generación queda fuera de su alcance.
-- Solo inglés: el vocabulario y el corpus de entrenamiento son monolingües, por lo que el rendimiento en castellano u otros idiomas es prácticamente nulo.
-- Vectores estáticos: cada palabra tiene una única representación, sin desambiguación por contexto. «Banco» (entidad financiera) y «banco» (asiento) comparten vector, lo que introduce errores en tareas sensibles al sentido.
-- Sesgos: al estar entrenado sobre Google News, el espacio vectorial hereda los sesgos de género, nacionalidad, religión y etnia presentes en la cobertura periodística de la época. Se han documentado ampliamente analogías sesgadas en este tipo de vectores; conviene auditar los vecinos más próximos antes de usar el modelo en sistemas de selección, ranking o recomendación.
-- Cobertura de vocabulario desactualizada: el corpus es anterior a 2013, por lo que términos y entidades posteriores no están representados. No hay soporte de subpalabras, así que las palabras fuera de vocabulario no tienen vector.
-- Riesgo de alucinación: no aplica en sentido generativo, pero sí existe riesgo de resultados sin sentido en analogías y similitudes cuando los términos son polisémicos o poco frecuentes.
-- Licencia: Apache 2.0 permite uso comercial y modificación con atribución; el repositorio redistribuye vectores publicados por Google bajo la misma licencia. Conviene conservar el aviso de licencia y citar los papers originales.
-- Producción: el fichero completo ocupa 3,8 GB de repositorio; sin `mmap`, la carga inicial consume varios segundos y 3,6 GB de RAM. En servicios con múltiples workers hay que planificar la memoria o compartir el mapeo.
-- Empaquetado con `library_name: fse`: no es un modelo con `pipeline_tag` estándar de Hugging Face, por lo que `transformers` no puede cargarlo. La integración debe hacerse con gensim o `fse`.
-- La búsqueda web realizada devuelve resultados sobre el Fondo Social Europeo (FSE), una entidad sin relación con este repositorio; no se ha encontrado documentación externa adicional del modelo.
+- Los vectores son estaticos: una misma palabra recibe el mismo vector en todos los contextos, lo que limita la desambiguacion semantica.
+- Solo cubre ingles; no hay soporte documentado para otros idiomas.
+- El corpus Google News puede introducir sesgos de dominio (noticias) y sesgos sociales o demograficos presentes en los datos originales.
+- No es un modelo generativo: no produce texto y no puede alucinar en el sentido habitual, pero la agregacion de vectores puede dar similitudes poco fiables en frases largas o fuera de dominio.
+- El repositorio usa la API de fse 1.x y requiere `fse<2`; para fse 2.0 hay que migrar a `fse/word2vec-google-news-300-raw`.
+- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del proyecto word2vec original de Google al redistribuir los vectores.
+- El tamano del repositorio (3,8 GB) y de los vectores en RAM (3,6 GB) puede ser un cuello de botella en entornos con memoria limitada si no se usa memory-mapping.
+- No dispone de soporte de tool calling, agentes ni razonamiento multi-paso, por lo que no es adecuado para pipelines de agentes.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/fse/word2vec-google-news-300
-- Repositorio de Fast Sentence Embeddings: https://github.com/oborchers/Fast_Sentence_Embeddings
-- Web del autor, Dr. Oliver Borchers: https://www.drborchers.com/
-- Mikolov et al. (2013), Efficient Estimation of Word Representations in Vector Space: https://arxiv.org/abs/1301.3781
-- Mikolov et al. (2013), Distributed Representations of Words and Phrases and their Compositionality: https://arxiv.org/abs/1310.4546
-- Proyecto original word2vec de Google (incluye la publicación de los vectores): https://code.google.com/archive/p/word2vec/
+- Hugging Face: https://huggingface.co/fse/word2vec-google-news-300
+- Version para fse 2.0: https://huggingface.co/fse/word2vec-google-news-300-raw
+- Repositorio fse: https://github.com/oborchers/Fast_Sentence_Embeddings
+- Guia de migracion de fse: https://github.com/oborchers/Fast_Sentence_Embeddings/blob/master/docs/migrating-from-1x.md
+- Paper original word2vec: https://arxiv.org/abs/1301.3781
+- Paper de frases y composicionalidad: https://arxiv.org/abs/1310.4546
+- Proyecto word2vec de Google: https://code.google.com/archive/p/word2vec/
+- Web del mantenedor: https://www.drborchers.com/

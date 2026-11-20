@@ -2,96 +2,96 @@
 
 ## Resumen
 
-Qwopus3.8-27B-Coder-Flash es un ajuste fino orientado a programacion del modelo unsloth/Qwen3.8-27B, que a su vez deriva de Qwen/Qwen3.8-27B. Lo desarrolla Jackrong, autor de la familia Qwopus, y esta publicado bajo licencia Apache-2.0. El modelo resuelve el problema de dotar a un transformer de 27.781 millones de parametros de capacidades especificas para trabajo de ingenieria de software: generacion de codigo, razonamiento agentico, uso repetido de herramientas y recuperacion ante errores.
+Qwopus3.8-27B-Coder-Flash es un ajuste fino orientado a programación del modelo unsloth/Qwen3.8-27B (a su vez derivado de Qwen/Qwen3.8-27B), desarrollado por el usuario Jackrong. Con 27.781 millones de parámetros, se presenta como un modelo multimodal de tipo image-text-to-text que combina generación de código, razonamiento agéntico y uso de herramientas en un único artefacto. Su propuesta central es el flujo "leer, razonar, invocar herramientas, editar, probar, recuperar y entregar", pensado para tareas reales de ingeniería de software y no solo para producir respuestas plausibles.
 
-La propuesta se articula en torno a la "filosofia Flash", que prioriza acciones utiles por turno (leer, razonar, invocar herramientas, editar, probar, recuperar y entregar) frente a razonamientos largos. El modelo se presenta como multimodal (pipeline image-text-to-text), con soporte declarado de vision, tool calling, razonamiento multi-paso y despliegue eficiente mediante vLLM y llama.cpp. La model card no documenta de forma explicita la longitud de contexto ni la arquitectura interna, por lo que estos datos figuran como no disponibles.
+El modelo se distribuye bajo licencia Apache-2.0, lo que facilita su uso comercial, y soporta únicamente inglés y chino. Se entrenó sobre aproximadamente 200.000 ejemplos de código y razonamiento complejo, con datos destilados de modelos como Qwen3.8-Flash-Max, Qwen3.8-Max, DeepSeek-V4-Flash y la serie NVIDIA Nemotron. La etiqueta qwen3_5 y la referencia a Qwen3.8 sugieren una arquitectura transformer densa de la familia Qwen, aunque la model card no detalla la arquitectura interna.
 
-Es relevante ahora porque combina un tamano intermedio (27B) con licencia permisiva y un recetario de destilacion de aproximadamente 200.000 ejemplos procedentes de profesores como Qwen3.8-Flash-Max, Qwen3.8-Max y DeepSeek-V4-Flash, lo que lo posiciona como alternativa abierta para agentes de codigo que necesitan ejecutarse en infraestructura propia.
+Su relevancia actual radica en la combinación de un tamaño medio (27B) con capacidades multimodales, tool calling y razonamiento multi-paso, en un contexto donde los desarrolladores buscan modelos que quepan en infraestructura accesible sin renunciar a comportamiento agéntico. El repositorio ocupa 55,6 GB en safetensors y acumula 1.728 descargas y 34 likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (heredada de Qwen3.8-27B); detalles internos no disponibles |
-| Parametros totales | 27.781.427.952 (aprox. 27,8B) |
-| Parametros activos | no disponible (no se declara como MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF (repo hermano Jackrong/Qwopus3.8-27B-Coder-Flash-GGUF); niveles concretos no especificados |
-| Idiomas soportados | en, zh |
+| Arquitectura | Transformer denso (familia Qwen3.8, tag qwen3_5); detalles internos no disponibles |
+| Parametros totales | 27.781.427.952 (27,78B) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | No disponible en la model card; existe un repositorio GGUF asociado (Qwopus3.8-27B-Coder-Flash-GGUF) |
+| Idiomas soportados | Inglés (en) y chino (zh) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (transformers), GGUF (llama.cpp) |
+| Formato de pesos | safetensors (transformers); GGUF disponible en repo separado |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de la arquitectura transformer de Qwen3.8-27B, sin que la model card detalle capas, atencion ni estrategias de atencion lineal. El tag `qwen3_5` y `qwopus3_8` sugieren la linea generacional de la base, pero no se aportan especificaciones internas. El repositorio pesa 55,6 GB en safetensors, coherente con un modelo denso de ~27,8B en precision de 16 bits.
+La información disponible indica que se trata de un ajuste fino del modelo unsloth/Qwen3.8-27B, que a su vez deriva de Qwen/Qwen3.8-27B. La model card no especifica la arquitectura interna más allá de las etiquetas qwen3_5 y multimodal/vision, por lo que no se puede confirmar si emplea atención lineal, decodificación especulativa u otras innovaciones. El pipeline declarado es image-text-to-text, lo que confirma capacidades de entrada de imagen junto con texto.
 
-El entrenamiento consistio en un ajuste fino supervisado sobre aproximadamente 200.000 ejemplos de codigo y razonamiento complejo, organizados en tres componentes: unas 20.000 interacciones de agente y uso de herramientas destiladas principalmente de Qwen3.8-Flash-Max (llamada multiple de herramientas, seleccion y ejecucion, seguimiento de estado del entorno, recuperacion de errores, autocorreccion y planificacion consciente del contexto); generacion de algoritmos y codigo con profesores Qwen3.8-Flash-Max, Qwen3.8-Max y DeepSeek-V4-Flash (implementacion algoritmica, correccion sintactica, casos limite, refactorizacion y depuracion); y razonamiento logico e instrucciones de alta calidad procedentes de la serie NVIDIA Nemotron. No se documenta RLHF ni DPO explicito, ni el numero total de tokens de entrenamiento. La innovacion declarada es el diseno de "razonamiento compacto y propositivo", aunque la propia model card advierte que las evaluaciones no miden reduccion de tokens de razonamiento, por lo que no debe interpretarse como una ganancia de velocidad demostrada.
+El entrenamiento se realizó sobre aproximadamente 200.000 ejemplos, divididos en tres componentes: unas 20.000 interacciones agénticas con uso de herramientas destiladas principalmente de Qwen3.8-Flash-Max (selección y ejecución de herramientas, seguimiento del estado del entorno, recuperación de errores, autocorrección y planificación); tareas de algoritmia y generación de código con fuentes docentes Qwen3.8-Flash-Max, Qwen3.8-Max y DeepSeek-V4-Flash (implementación de algoritmos, corrección sintáctica, casos límite, refactorización y depuración); y datos de razonamiento lógico e instrucciones de alta calidad de la serie NVIDIA Nemotron. No se menciona el uso de RLHF o DPO en la información proporcionada.
 
 ## Capacidades
 
-- Generacion de codigo y completado en multiples lenguajes, con enfasis en correccion sintactica, casos limite y refactorizacion.
-- Razonamiento complejo y resolucion de problemas algoritmicos.
-- Tool calling / function calling, incluida la invocacion multiple y la seleccion de herramientas.
-- Comportamiento agentico multi-paso: planificacion, edicion, ejecucion de pruebas, interpretacion de la salida de herramientas y recuperacion ante fallos.
-- Autocorreccion y consciencia de limites (boundary awareness) durante trayectorias de agente.
-- Capacidades multimodales de imagen-texto a texto (pipeline image-text-to-text, tags `vision` y `multimodal`); el detalle de resolucion de imagen no esta disponible.
-- Soporte multilingue limitado a ingles y chino.
-- Instrucciones estructuradas y respuestas organizadas.
-- Inferencia eficiente declarada mediante vLLM y llama.cpp (tag `efficient-inference`).
+- Generación de código y resolución de problemas algorítmicos, con énfasis en corrección sintáctica, casos límite y refactorización.
+- Razonamiento multi-paso y chain-of-thought, evaluado de forma local en modo zero-shot.
+- Uso de herramientas (tool calling / function calling) en conversaciones multi-turno, incluyendo selección de herramienta, interpretación de su salida y recuperación ante errores.
+- Comportamiento agéntico: planificación consciente del contexto, seguimiento del estado del entorno, autocorrección y entrega final de artefactos.
+- Capacidades multimodales de entrada imagen-texto (pipeline image-text-to-text), orientadas a tareas de codificación visual como la generación de escenas 3D o modelos de pagodas mostrados en la model card.
+- Soporte multilingüe limitado a inglés y chino.
+- Compatibilidad declarada con vLLM y transformers, y con endpoints compatibles.
 
 ## Casos de uso
 
-- Agentes de codigo autonomos en repositorios: el modelo puede leer una tarea, invocar herramientas de edicion y ejecucion, inspeccionar la salida de las pruebas y corregir errores hasta entregar un artefacto funcional, gracias al entrenamiento sobre ~20K trayectorias de agente.
-- Integracion en pipelines de CI/CD: con soporte de tool calling y formato GGUF para llama.cpp, puede desplegarse como paso de revision o generacion de parches dentro de flujos automatizados.
-- Asistencia a desarrolladores en IDE: completado y refactorizacion de codigo con enfasis en casos limite y correccion sintactica, adecuado para su tamano de 27,8B ejecutable en GPUs de gama alta.
-- Depuracion y explicacion de errores: el modelo fue entrenado con datos de depuracion y recuperacion de errores, por lo que puede analizar trazas, proponer causas y aplicar correcciones.
-- Generacion de codigo a partir de capturas o diagramas: al ser multimodal (image-text-to-text), puede recibir imagenes de interfaz o bocetos y producir codigo asociado, segun los ejemplos visuales de la model card (modelado 3D y escena de pagoda).
-- Servicio de razonamiento tecnico multilingue ingles-chino: util para equipos que operan en ambos idiomas y necesitan respuestas estructuradas con pasos logicos.
-- Evaluacion y planificacion de tareas de ingenieria: con datos de Nemotron para razonamiento logico, puede descomponer requisitos complejos en pasos ejecutables antes de escribir codigo.
+- Agentes de codificación autónomos: el modelo puede encadenar lectura de la petición, edición de ficheros, ejecución de tests y corrección de errores, gracias a su entrenamiento específico en trayectorias de tool use y recuperación.
+- Asistentes de programación en IDE: integrado vía vLLM o transformers, puede generar y refactorizar código en inglés o chino, con soporte para instrucciones estructuradas y razonamiento previo.
+- Automatización de pipelines de CI/CD: su capacidad de interpretar la salida de herramientas y corregir invocaciones fallidas lo hace adecuado para tareas de depuración automática y aplicación de parches.
+- Generación de código a partir de diagramas o capturas: al aceptar entrada de imagen, puede transformar bocetos de UI o diagramas de arquitectura en código o descripciones estructuradas.
+- Tutoría técnica y explicación de algoritmos: el entrenamiento con datos de razonamiento lógico y algorítmico permite generar explicaciones paso a paso de soluciones y complejidades.
+- Prototipado de escenas 3D o visualizaciones: la model card documenta pruebas de modelado 3D de un pueblo costero y una pagoda de cinco pisos, lo que sugiere uso en generación de código para gráficos y geometría.
+- Evaluación de modelos en investigación: su licencia Apache-2.0 y su tamaño de 27B lo hacen útil como base para experimentos de ajuste fino y comparación de recetas de destilación.
 
 ## Benchmarks y rendimiento
 
 | Benchmark | Resultado | Condiciones |
 |---|---|---|
-| MMLU-Pro (subconjunto local) | 93,87% (1.408/1.500) | 500 matematicas, 500 fisica, 500 quimica; zero-shot CoT; no equivale al protocolo oficial de cinco disparos |
+| MMLU-Pro (subconjunto local) | 93,87% (1.408/1.500) | 500 preguntas de matemáticas, 500 de física y 500 de química; zero-shot chain-of-thought; no es el protocolo oficial de cinco disparos |
 
-La model card indica que el resumen visual de benchmarks incluye modelos de referencia, pero advierte que los conjuntos de prueba y configuraciones difieren y que las filas no constituyen una clasificacion controlada. No se proporcionan cifras numericas de HumanEval, GSM8K ni otros benchmarks de codigo en la informacion disponible. El throughput del decodificador se calcula como tokens generados divididos por la suma de tiempos de decodificacion de las peticiones, no como throughput de reloj de toda la evaluacion concurrente; los valores concretos no estan disponibles.
+La model card indica que la evaluación se realizó sobre un subconjunto local equilibrado y que los conjuntos de prueba y ajustes difieren entre modelos, por lo que las filas de la imagen comparativa no constituyen un ranking controlado. No se han publicado resultados de HumanEval, GSM8K ni otros benchmarks estándar en la información disponible. El throughput de decodificación se calcula como tokens generados dividido por la suma de tiempos de decodificación de las peticiones, no como throughput de reloj de la evaluación concurrente completa; no se proporcionan cifras concretas.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en FP16, el repositorio de 55,6 GB requiere aproximadamente 56 GB de VRAM solo para pesos, mas memoria para cache KV; en cuantizaciones GGUF de 8 bits o inferiores, la huella se reduce de forma proporcional, aunque los niveles concretos no estan documentados.
-- GPU recomendadas: para FP16 se necesitan GPUs con 80 GB (A100 80GB, H100) o configuraciones multi-GPU; para cuantizaciones GGUF agresivas puede ser viable en GPUs consumer de 24 GB (RTX 4090) o 16 GB, segun el nivel de cuantizacion elegido.
-- Cabe en GPU consumer: probablemente si en RTX 4090 (24 GB) con cuantizacion GGUF suficientemente baja; no confirmado por el autor.
-- Opciones de despliegue: vLLM (tag `vllm`), llama.cpp (tag `llama.cpp`), transformers; el repo GGUF hermano esta preparado para llama.cpp. Compatibilidad con Ollama o TGI no declarada.
-- Latencia y throughput: no disponibles; la model card solo describe el metodo de calculo del throughput del decodificador.
+- VRAM estimada para inferencia en FP16/BF16: aproximadamente 55,6 GB solo para pesos, más overhead de activaciones y caché KV; se recomienda al menos 80 GB para contexto amplio.
+- En cuantización de 8 bits: alrededor de 28 GB de pesos, viable en una A100 40 GB o H100.
+- En cuantización de 4 bits (GGUF): alrededor de 14-16 GB de pesos, lo que permite ejecución en GPUs consumer de 24 GB como la RTX 4090 o RTX 3090.
+- GPUs recomendadas: A100 80 GB o H100 para FP16 con contexto largo; A100 40 GB para 8 bits; RTX 4090/3090 para cuantizaciones de 4-5 bits.
+- Opciones de despliegue: transformers, vLLM (soporte declarado), llama.cpp/Ollama mediante el repositorio GGUF asociado, y endpoints compatibles.
+- Latencia y throughput: no se proporcionan cifras concretas; la model card solo describe la metodología de medición.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| Qwopus3.8-27B-Coder-Flash | 27,8B | no disponible | Apache-2.0 | Ajuste fino de codigo y agentes, multimodal |
-| unsloth/Qwen3.8-27B (base) | no disponible en la informacion | no disponible | no disponible | Modelo base del ajuste fino |
-| Qwen/Qwen3.8-27B (original) | no disponible en la informacion | no disponible | no disponible | Origen de la linea Qwen3.8 |
+| Modelo | Parámetros | Contexto | Licencia | Idiomas | Notas |
+|---|---|---|---|---|---|
+| Qwopus3.8-27B-Coder-Flash | 27,78B | No disponible | Apache-2.0 | en, zh | Multimodal, tool use, fine-tune de Qwen3.8-27B |
+| Qwen3.8-27B (base) | 27B (aproximado) | No disponible | No disponible | No disponible | Modelo base sin ajuste específico para código |
+| unsloth/Qwen3.8-27B | 27B (aproximado) | No disponible | No disponible | No disponible | Versión de Unsloth del modelo base |
+| DeepSeek-V4-Flash | No disponible | No disponible | No disponible | No disponible | Usado como fuente docente en la destilación |
 
-No se dispone de datos de benchmarks comparativos controlados frente a alternativas de la misma categoria; la propia model card advierte que sus filas de referencia no son una clasificacion controlada.
+No se dispone de datos de rendimiento comparativos controlados entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Riesgo de alucinacion inherente a modelos generativos de 27B, especialmente en APIs o librerias poco representadas en los datos de destilacion.
-- Sesgos conocidos no documentados por el autor; los datos de profesores (Qwen y DeepSeek) y de Nemotron pueden introducir sesgos de dominio y de idioma.
-- Cobertura linguistica limitada a ingles y chino; el rendimiento en castellano no esta evaluado ni declarado.
-- Longitud de contexto no especificada, lo que dificulta planificar tareas de repositorios grandes o conversaciones largas.
-- La "filosofia Flash" no ha demostrado reduccion de tokens de razonamiento ni ganancia de velocidad; la propia model card lo advierte.
-- El resultado de MMLU-Pro es un subconjunto local de matematicas, fisica y quimica con zero-shot CoT, no comparable con el protocolo oficial.
-- Licencia Apache-2.0 permite uso comercial, pero conviene verificar las condiciones heredadas del modelo base Qwen3.8-27B y de los datos destilados de terceros (Qwen3.8-Max, DeepSeek-V4-Flash, Nemotron).
-- El modelo tiene 0 descargas y 1 like en el momento del registro, por lo que la validacion comunitaria es practicamente inexistente.
-- Las capacidades multimodales se declaran por tags y ejemplos visuales, pero no se documentan metricas de vision.
+- El resultado de MMLU-Pro corresponde a un subconjunto local de 1.500 preguntas y a un protocolo zero-shot, no al benchmark oficial; no debe compararse directamente con puntuaciones de cinco disparos publicadas por otros modelos.
+- Solo soporta inglés y chino; no hay evidencia de capacidades en castellano u otros idiomas.
+- La longitud de contexto no está especificada, lo que impide planificar su uso en tareas que requieran ventanas largas.
+- Riesgo de alucinación inherente a los modelos generativos, especialmente en razonamiento matemático y físico fuera de distribución.
+- Aunque la model card declara eficiencia y razonamiento compacto, no se aportan métricas que demuestren reducción de tokens de razonamiento ni aceleración general; la eficiencia no está cuantificada.
+- La licencia Apache-2.0 permite uso comercial, pero el modelo base Qwen3.8-27B puede tener condiciones adicionales que conviene verificar antes de desplegar en producción.
+- No se documentan sesgos conocidos ni evaluaciones de seguridad; se recomienda auditoría propia antes de uso en entornos sensibles.
+- El repositorio principal en safetensors ocupa 55,6 GB, lo que exige infraestructura de almacenamiento y transferencia considerable.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Jackrong/Qwopus3.8-27B-Coder-Flash
-- Repositorio GGUF: https://huggingface.co/Jackrong/Qwopus3.8-27B-Coder-Flash-GGUF
-- Modelo base (unsloth): https://huggingface.co/unsloth/Qwen3.8-27B
+- Repositorio GGUF asociado: https://huggingface.co/Jackrong/Qwopus3.8-27B-Coder-Flash-GGUF
+- Modelo base (Unsloth): https://huggingface.co/unsloth/Qwen3.8-27B
 - Modelo original Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - Unsloth: https://unsloth.ai/
-- Colaborador Kyle Hessling: https://x.com/KyleHessling1
+- Perfil de Kyle Hessling en X: https://x.com/KyleHessling1
+- Vídeo de demostración (modelado 3D): https://huggingface.co/Jackrong/Qwopus3.8-27B-Coder-Flash-GGUF/resolve/main/assets/showcase/seaside_town_3d_modeling_test.mp4

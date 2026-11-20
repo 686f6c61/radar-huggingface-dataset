@@ -5,7 +5,7 @@
   "author": "SZLHOLDINGS",
   "url": "https://huggingface.co/SZLHOLDINGS/quant-master-4b-500step-candidate",
   "created_at": "2026-11-13T20:45:50.000Z",
-  "updated_at": "2026-11-16T00:55:02.000Z",
+  "updated_at": "2026-11-20T04:26:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -13,10 +13,6 @@
   "languages": [],
   "tags": [
     "safetensors",
-    "research-artifact",
-    "experimental",
-    "szl-estate",
-    "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,

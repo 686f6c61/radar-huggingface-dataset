@@ -2,92 +2,103 @@
 
 ## Resumen
 
-FastBrain-9B-GGUF es una colección de cuantizaciones estáticas en formato GGUF del modelo TypeScript/FastBrain-9B, publicada por mradermacher, un cuantizador conocido en la comunidad de Hugging Face. El modelo base, FastBrain-9B, es un modelo de decisión de unos 9.075 millones de parámetros (dato real de safetensors: 9.075.566.084) entrenado sobre el dataset TypeScript/FastBrain-Instruct, orientado a tareas de decisión estructurada: clasificación de intención, indexación de decisiones, tool calling y salida tipada a partir de imagen y texto.
+FastBrain-9B-GGUF es la version cuantizada en formato GGUF del modelo FastBrain-9B, publicado por el usuario mradermacher a partir del modelo base TypeScript/FastBrain-9B. Se trata de un modelo de aproximadamente 9.075 millones de parametros (9,07 B) orientado a la toma de decisiones estructurada: segun las etiquetas del autor, esta especializado en tool calling, function calling, clasificacion de intenciones y generacion de salidas tipadas a partir de entradas de texto e imagen.
 
-La relevancia de esta ficha radica en el perfil tan específico del modelo: no se trata de un chatbot de propósito general, sino de un modelo etiquetado como "decision-model" e "image-text-to-typed-output", lo que sugiere un enfoque en convertir entradas multimodales en salidas estructuradas y tipadas, algo útil para pipelines de agentes y sistemas de enrutado de intenciones. La versión GGUF permite ejecutarlo localmente con llama.cpp, Ollama o backends compatibles como sglang (ambos mencionados en los tags).
+El modelo se distribuye bajo licencia Apache 2.0 y esta pensado para su uso con llama.cpp y otros runners compatibles con GGUF. La model card original declara soporte para ingles y chino, aunque la ficha de Hugging Face solo lista ingles entre los idiomas. El repositorio ocupa 84 GB e incluye tanto pesos cuantizados estaticos como suplementos multimodales (mmproj) para el procesamiento de imagen.
 
-La colección incluye cuantizaciones desde Q2_K (4,0 GB) hasta f16 (18,3 GB), además de dos suplementos multimodales (mmproj) en Q8_0 y f16, lo que confirma capacidades de visión. El modelo se publica bajo licencia Apache 2.0 y su idioma principal es el inglés.
+La relevancia de esta publicacion radica en que ofrece un modelo de 9B con capacidades multimodales y de decision estructurada en cuantizaciones que van desde 4 GB (Q2_K) hasta 18,3 GB (f16), lo que permite desplegarlo en hardware de consumo. No se dispone de informacion publicada sobre arquitectura interna, contexto maximo ni resultados de benchmarks en la informacion proporcionada.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (transformer multimodal, con proyector de visión mmproj) |
-| Parametros totales | 9.075.566.084 (9,08 B) |
-| Parametros activos | no disponible (no consta que sea MoE) |
+| Arquitectura | no disponible (modelo base TypeScript/FastBrain-9B; transformer presumiblemente, sin confirmacion) |
+| Parametros totales | 9.075.566.084 (9,07 B) |
+| Parametros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16, mmproj-Q8_0, mmproj-f16 |
-| Idiomas soportados | inglés (en) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base está disponible en safetensors |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; mmproj-Q8_0 y mmproj-f16 |
+| Idiomas soportados | en, zh (segun model card); la ficha de HF solo lista en |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-La información publicada no detalla la arquitectura interna del modelo base. Por los tags del repositorio ("image-text-to-typed-output", "decision-index", "structured-decision") y por la presencia de archivos mmproj (proyectores multimodales usados por llama.cpp para conectar un codificador de visión con un LLM), se trata de un modelo transformer de unos 9 B de parámetros con capacidad de procesar imágenes y texto, y generar salidas estructuradas y tipadas. El pipeline de conversión indica "convert_type: hf", es decir, conversión directa desde los pesos safetensors de Hugging Face.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base TypeScript/FastBrain-9B en la documentacion proporcionada. Por el tamano (9,07 B) y el uso de la libreria transformers, se trata presumiblemente de un transformer denso, pero no se confirma si emplea atencion lineal, arquitectura hibrida o mecanismos MoE. Tampoco se detalla la longitud de contexto nativa.
 
-Sobre el entrenamiento, el dataset indicado es TypeScript/FastBrain-Instruct, un dataset de instrucciones específico del proyecto FastBrain. No se ha publicado información sobre el número de tokens de preentrenamiento, la composición del corpus base ni sobre fases de RLHF o DPO. Tampoco se describen innovaciones técnicas concretas (atención lineal, decodificación especulativa, etc.) en la documentación disponible. Los tags "clef", "systemone" y "decision-index" sugieren un sistema de indexación y decisión propio del proyecto, pero sin documentación adicional su significado exacto no está disponible.
+El modelo base fue entrenado o ajustado sobre el dataset TypeScript/FastBrain-Instruct, segun los metadatos de la model card. Las etiquetas indican un enfasis en tareas de decision estructurada, tool calling, function calling y clasificacion de intenciones, asi como en la conversion de entradas imagen-texto a salidas tipadas. No se especifica el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. Esta version concreta es una cuantizacion estatica generada por mradermacher; el autor indica que no hay cuantizaciones ponderadas/imatrix disponibles en el momento de la publicacion.
 
 ## Capacidades
 
-- Clasificación de intención (intent-classification): etiquetado explícito en el repositorio.
-- Tool calling / function calling: el modelo está etiquetado para ambas capacidades.
-- Salida estructurada y tipada: orientado a "structured-decision" y "image-text-to-typed-output", es decir, producir respuestas con formato definido (JSON u otros tipos) a partir de entradas multimodales.
-- Comprensión de imágenes: los archivos mmproj-Q8_0 y mmproj-f16 confirman soporte multimodal (visión + texto) en llama.cpp.
-- Indexación de decisiones (decision-index): enrutado o selección entre opciones predefinidas.
-- Conversación: el repositorio está etiquetado como "conversational", aunque su enfoque principal parece ser la decisión estructurada más que el chat de propósito general.
-- Idioma: capacidad documentada únicamente en inglés.
+- Generacion de texto conversacional en ingles (y chino segun la model card).
+- Tool calling y function calling: el modelo esta etiquetado explicitamente para invocar herramientas y funciones.
+- Clasificacion de intenciones (intent classification) para enrutamiento de peticiones.
+- Decision estructurada (structured-decision) y generacion de salidas tipadas (typed output).
+- Procesamiento multimodal imagen-texto: los suplementos mmproj permiten entrada de imagen combinada con texto.
+- Integracion con llama.cpp y sglang segun las etiquetas del repositorio.
+- Compatibilidad con endpoints (endpoints_compatible).
+- No se documentan capacidades de razonamiento multi-paso avanzado, modo thinking, audio ni agentes autonomas mas alla de lo implicito en tool calling.
 
 ## Casos de uso
 
-- Clasificación de intenciones en asistentes virtuales: dado el tag "intent-classification", el modelo puede actuar como capa de enrutado que clasifica la consulta del usuario y la dirige al subflujo adecuado, con salidas tipadas fáciles de parsear.
-- Orquestación de agentes con tool calling: su soporte de function calling lo hace adecuado como modelo planificador o selector de herramientas en pipelines de agentes, donde se necesita una decisión estructurada (qué herramienta invocar y con qué argumentos) en lugar de texto libre.
-- Procesamiento de documentos con visión: gracias a los suplementos mmproj, puede recibir capturas de pantalla, formularios escaneados o imágenes de documentos y producir una salida tipada (por ejemplo, campos extraídos en JSON) para automatizar la entrada de datos.
-- Sistemas de decisión automatizada: el tag "decision-model" sugiere su uso como árbitro o evaluador que elige entre opciones predefinidas (por ejemplo, seleccionar la mejor respuesta de un conjunto o aprobar/rechazar solicitudes según criterios).
-- Enrutado de peticiones en sistemas multi-modelo: como clasificador ligero de 9 B cuantizado a 4-6 GB, puede decidir qué modelo grande debe atender cada consulta, reduciendo coste y latencia del sistema global.
-- Indexación y categorización semántica: el tag "decision-index" apunta a construir índices de decisiones o categorías sobre grandes volúmenes de entradas (tickets, correos, imágenes) de forma automática.
-- Automatización de flujos RPA: combinando visión y salida estructurada, puede integrarse en flujos de automatización robótica de procesos donde se necesita leer una interfaz y emitir una acción tipada.
+- Enrutamiento de intenciones en asistentes conversacionales: el modelo puede clasificar la intencion de cada mensaje entrante y derivarlo al servicio adecuado, aprovechando su entrenamiento especifico en intent classification.
+- Orquestacion de tool calling en pipelines de automatizacion: dado un prompt en lenguaje natural, genera la llamada a funcion estructurada con los argumentos tipados, integrándose en frameworks de agentes.
+- Extraccion de datos estructurados desde documentos e imagenes: con los suplementos mmproj, puede recibir una imagen o captura y producir una salida tipada (JSON u otro esquema) para su insercion en bases de datos.
+- Clasificacion y moderacion de contenido en produccion: al ser un modelo de 9B cuantizado en Q4_K_M (5,8 GB), puede desplegarse en una GPU de consumo para tareas de clasificacion de baja latencia.
+- Asistente de soporte tecnico interno: conversaciones multi-turno en ingles con invocacion de funciones para consultar sistemas internos, ejecutado localmente con llama.cpp.
+- Prototipado rapido en entornos sin GPU de datacenter: las cuantizaciones Q2_K (4 GB) y Q3_K_S (4,4 GB) permiten ejecutar el modelo en equipos modestos para validar flujos de decision antes de escalar.
+- Integracion en servicios con sglang: al estar etiquetado para sglang y endpoints compatibles, puede servirse como backend de decision estructurada en arquitecturas de microservicios.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: depende de la cuantización elegida. Q2_K ocupa 4,0 GB; Q4_K_M, 5,8 GB; Q6_K, 7,6 GB; Q8_0, 9,8 GB; f16, 18,3 GB. A estos tamaños hay que sumar la memoria del contexto y, si se usa visión, el archivo mmproj (0,7 GB en Q8_0 o 1,0 GB en f16).
-- GPU recomendadas: para las cuantizaciones de 4 a 6 GB, cualquier GPU de consumo con 8 GB de VRAM (RTX 3060, RTX 4060) es suficiente; para Q8_0 y f16 conviene una RTX 4090 (24 GB) o superior. En CPU con suficiente RAM (16 GB o más) también es viable mediante offload parcial con llama.cpp.
-- Consumer GPU: sí, la mayoría de las cuantizaciones (Q2_K a Q6_K) caben cómodamente en GPUs de consumo de 8-12 GB de VRAM.
-- Opciones de despliegue: llama.cpp y Ollama son las opciones naturales para GGUF; los tags también mencionan sglang como backend compatible. El modelo base en safetensors puede desplegarse con transformers, vLLM o TGI, aunque no hay configuraciones publicadas para ello.
-- Latencia y throughput: no disponible. Al ser un modelo de 9 B con cuantizaciones de 4 bits, se espera inferencia fluida en GPU de consumo, pero no hay medidas publicadas.
+- VRAM estimada para inferencia (pesos + overhead aproximado):
+  - Q2_K: ~4,0 GB de pesos; con overhead de contexto, ~5-6 GB de VRAM.
+  - Q3_K_S: ~4,4 GB; ~5,5-6,5 GB con contexto.
+  - Q4_K_M: ~5,8 GB; ~7-8 GB con contexto.
+  - Q5_K_M: ~6,7 GB; ~8-9 GB con contexto.
+  - Q6_K: ~7,6 GB; ~9-10 GB con contexto.
+  - Q8_0: ~9,8 GB; ~11-12 GB con contexto.
+  - f16: ~18,3 GB; ~20 GB con contexto.
+  - Los suplementos mmproj anaden 0,7 GB (Q8_0) o 1,0 GB (f16) cuando se usa entrada de imagen.
+- GPU recomendadas: para Q4_K_M y Q5_K_M, una RTX 4090 (24 GB) o RTX 4080 (16 GB) es suficiente; para Q8_0 y f16, se recomienda A100 (40/80 GB) o H100. Las cuantizaciones Q2_K a Q3_K_L caben en GPUs de 8 GB como la RTX 3070/4060 Ti.
+- Cabe en GPU de consumo: si, en todas las cuantizaciones hasta Q6_K con GPUs de 8-12 GB; Q8_0 requiere 12-16 GB; f16 requiere 24 GB o mas.
+- Opciones de despliegue: llama.cpp, Ollama (a partir de GGUF), sglang (segun etiquetas), y cualquier runner compatible con GGUF. Para el modelo base en safetensors: transformers, vLLM y TGI.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| FastBrain-9B (base) | 9,08 B | no disponible | sí (mmproj) | Apache 2.0 | safetensors en Hugging Face |
-| FastBrain-9B-GGUF | 9,08 B | no disponible | sí (mmproj incluido) | Apache 2.0 | GGUF, 12 cuantizaciones |
-| Llama 3.1 8B Instruct | 8 B | 128.000 tokens | no (solo texto) | Licencia Llama 3.1 | safetensors y GGUF amplios |
-| Qwen2.5-VL-7B | 7-8 B | no disponible en esta ficha | sí (visión nativa) | Apache 2.0 | safetensors y GGUF |
+No se dispone de datos de rendimiento del modelo ni de modelos comparables documentados en la informacion proporcionada. La comparacion se limita a caracteristicas objetivas de formato y tamano:
 
-FastBrain-9B se diferencia de alternativas de tamaño similar (Llama 3.1 8B, Qwen2.5-VL-7B) en su especialización como modelo de decisión con salida tipada y tool calling, frente a los modelos generales orientados a chat. Para chat de propósito general o soporte multilingüe, las alternativas generales suelen estar mejor documentadas y con más benchmarks publicados; para enrutado de intenciones y decisiones estructuradas, FastBrain está específicamente afinado para ello.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| FastBrain-9B-GGUF | 9,07 B | no disponible | Apache 2.0 | GGUF | Especializado en decision estructurada y tool calling; multimodal via mmproj |
+| Alternativas de 9B en GGUF (p. ej. Llama 3.1 8B, Qwen2.5 7B) | 7-8 B | 128K (en sus versiones base) | Llama 3.1: licencia propia; Qwen2.5: Apache 2.0 | GGUF | Modelos generalistas; no especializados en decision estructurada |
+| Alternativas multimodales de ~9B | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de datos de benchmarks que permitan una comparacion de rendimiento fiable.
 
 ## Limitaciones y advertencias
 
-- Idioma: la documentación solo declara soporte para inglés. No hay garantías de rendimiento en castellano ni en otros idiomas.
-- Documentación escasa: la model card del modelo base no publica benchmarks, longitud de contexto, detalles de arquitectura ni datos de entrenamiento, lo que dificulta una evaluación rigurosa antes de producción.
-- Sesgos: no disponible. No se han documentado sesgos conocidos del modelo base.
-- Alucinaciones: al tratarse de un modelo de decisión con salida estructurada, el riesgo principal es la clasificación errónea o la generación de campos tipados incorrectos; se recomienda validación de esquema en producción.
-- Cuantizaciones bajas: las versiones Q2_K y Q3_K_S/M pueden degradar notablemente la calidad (el propio autor marca Q3_K_M como "lower quality"); para uso serio se recomiendan Q4_K_M o superiores.
-- Cuantizaciones estáticas: solo hay cuants estáticos; las cuantizaciones imatrix/ponderadas no estaban disponibles en el momento de publicación.
-- Licencia: Apache 2.0 permite uso comercial sin restricciones relevantes, aunque conviene verificar la licencia del dataset TypeScript/FastBrain-Instruct y del modelo base, cuya documentación no está disponible en esta ficha.
-- Ficha de terceros: esta colección GGUF es obra de un cuantizador independiente (mradermacher), no del autor del modelo base; cualquier problema de conversión debe reportarse al cuantizador, no a TypeScript.
+- No se han publicado resultados de benchmarks, por lo que no hay evidencia cuantitativa de calidad frente a alternativas.
+- El modelo base es poco conocido y con escasa documentacion; la model card de la cuantizacion solo describe el proceso de conversion, no las capacidades reales.
+- La ficha de Hugging Face solo lista ingles como idioma, mientras que la model card declara en y zh; el soporte real del chino no esta verificado.
+- Riesgo de alucinacion inherente a los modelos generativos, especialmente en salidas estructuradas donde un campo inventado puede romper el esquema esperado.
+- Las cuantizaciones de baja precision (Q2_K, Q3_K_M) degradan la calidad; el autor recomienda Q4_K_S, Q4_K_M y Q8_0 para uso practico.
+- La licencia Apache 2.0 permite uso comercial, pero se desconoce la procedencia exacta de los datos de entrenamiento y posibles sesgos asociados.
+- No se documenta la longitud de contexto, lo que impide planificar cargas de contexto largo con garantias.
+- El procesamiento de imagen requiere cargar los suplementos mmproj, lo que incrementa el consumo de VRAM y anade complejidad de despliegue.
+- No hay cuantizaciones imatrix/ponderadas disponibles en el momento de la publicacion, segun el autor.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/FastBrain-9B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/FastBrain-9B-GGUF
 - Modelo base: https://huggingface.co/TypeScript/FastBrain-9B
-- Dataset de instrucciones: https://huggingface.co/TypeScript/FastBrain-Instruct
-- Página de descargas resumida del cuantizador: https://hf.tst.eu/model#FastBrain-9B-GGUF
-- FAQ y peticiones de cuantización: https://huggingface.co/mradermacher/model_requests
-- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Notas sobre cuantización de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Empresa del cuantizador (nethype GmbH): https://www.nethype.de/
+- Dataset de instrucciones: https://huggingface.co/datasets/TypeScript/FastBrain-Instruct
+- Pagina de descargas del autor: https://hf.tst.eu/model#FastBrain-9B-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- FAQ y peticiones de modelos: https://huggingface.co/mradermacher/model_requests

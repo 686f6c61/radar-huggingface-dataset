@@ -1,100 +1,92 @@
 # shashanth-27xA9/Numbat-SuperExpert-12GB
 
 ## Resumen
+Numbat-SuperExpert-12GB es un modelo de lenguaje causal publicado por el usuario shashanth-27xA9 en Hugging Face, derivado del modelo base burner22/numbat. Se presenta como una versión comprimida mediante la técnica propietaria AW-SECD (Activation-Weighted Super-Expert Consolidation & Residual Drift Compensation) de un supuesto modelo fundacional MoE de 14 billones de parámetros, con el objetivo de hacerlo ejecutable en equipos de consumo con 16 GB de memoria. El repositorio declara 6.341.935.104 parámetros totales en formato safetensors y un tamaño de repo de 31,2 GB.
 
-Numbat-SuperExpert-12GB es una consolidación on-device del modelo base `burner22/numbat`, una arquitectura MoE descrita por el autor como de aproximadamente 14 billones de parámetros (14T), 114 capas y 1.224 expertos, con atención híbrida GDN/MLA. El modelo lo publica el usuario `shashanth-27xA9` en Hugging Face y aplica una técnica propia denominada AW-SECD (Activation-Weighted Super-Expert Consolidation & Residual Drift Compensation) para comprimir la arquitectura original en un único artefacto de 12 GB distribuido en 18 shards de Safetensors.
+La propuesta del autor se centra en la reducción de huella de memoria: afirma una compresión de 28.000 GB de VRAM a 12 GB de RAM, con un GGUF Q4_K_M de 17,28 GB, y una retención del 95,6 % del conocimiento del modelo original. El modelo se distribuye con licencia Apache 2.0 y soporte declarado para transformers, llama.cpp y Ollama, además de una versión GGUF pre-cuantizada.
 
-El objetivo declarado es ejecutar inferencia de un modelo de razonamiento, matemáticas y código en portátiles y equipos de sobremesa con 16 GB de RAM, sin GPU dedicada, manteniendo según el autor un 95,2 % del rendimiento agregado del modelo fundacional. La ventana de contexto anunciada es de hasta 262.144 tokens, y la licencia es Apache 2.0.
+Es relevante ahora porque se posiciona en la categoría de modelos "on-device" con capacidades declaradas de razonamiento, matemáticas y código, y porque su model card incluye resultados de benchmarks (ARC-Challenge, GSM8K, HumanEval) y verificación de hardware en Apple Silicon, GPU NVIDIA y CPU. No obstante, la información disponible no permite verificar de forma independiente las afirmaciones sobre el modelo base de 14T ni sobre la técnica AW-SECD, por lo que deben tratarse con cautela.
 
-La relevancia del artefacto depende enteramente de las afirmaciones del autor: la model card no incluye detalles del proceso de consolidación, no publica la metodología de evaluación, no documenta idiomas soportados ni ofrece pesos intermedios o scripts reproducibles. Cualquier evaluación de producción debería tratar los datos de retención como no verificados de forma independiente.
+## Especificaciones tecnicas
 
-## Especificaciones técnicas
-
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE híbrido con atención GDN/MLA (según model card); 114 capas y 1.224 expertos en el modelo base |
-| Parámetros totales | ~14T en el modelo base `burner22/numbat`; el artefacto consolidado ocupa 12,0 GB en disco (parámetros efectivos del consolidado no disponibles) |
-| Parámetros activos | no disponible |
-| Longitud de contexto | hasta 262.144 tokens |
-| Tipos de cuantización | no disponible (el artefacto se distribuye como consolidación de 12 GB en 18 shards Safetensors; no se documentan formatos GGUF, AWQ, GPTQ ni FP8) |
+| Arquitectura | Causal LM con mixture-of-experts (MoE) declarada; requiere custom_code |
+| Parametros totales | 6.341.935.104 (dato real de safetensors) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | 4-bit; GGUF Q4_K_M (17,28 GB) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (18 shards, 12,0 GB); se anuncia ejecución vía Ollama con `hf.co/shashanth-27xA9/Numbat-SuperExpert-12GB` |
+| Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
+La model card describe el modelo como un causal LM basado en una arquitectura de mezcla de expertos (MoE) y etiquetado como "super-moe" y "super-expert". El autor indica que deriva de un modelo fundacional MoE de 14 billones de parámetros mediante AW-SECD, una técnica que, según la documentación, consolida expertos ponderados por activación y compensa la deriva residual para preservar el conocimiento del modelo original tras la compresión. No se especifican detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO.
 
-El modelo base `burner22/numbat` se describe como un MoE de aproximadamente 14 billones de parámetros con 114 capas y 1.224 expertos, combinando mecanismos de atención GDN (Gated Delta Network, presumiblemente una variante de atención lineal con estado recurrente) y MLA (Multi-head Latent Attention, la atención con compresión latente de KV cache popularizada por DeepSeek). El artefacto publicado no es un modelo entrenado desde cero, sino una consolidación: según la model card, AW-SECD fusiona los expertos ponderando por activación y compensa la deriva residual introducida por la compresión, reduciendo el conjunto a 12 GB.
-
-No se documenta el número de tokens de entrenamiento del modelo base, la composición del dataset, ni si hubo fases de RLHF, DPO o ajuste por preferencias. Tampoco se especifica qué expertos se conservan, cuántos se fusionan, ni qué precisión numérica tienen los pesos consolidados. La afirmación de "95,2 % de inteligencia retenida" procede exclusivamente de la model card y no va acompañada de scripts de evaluación, semillas, prompts o particiones de test reproducibles.
+La innovación técnica declarada es la propia AW-SECD, que el autor presenta como responsable de mantener más del 95 % del rendimiento de razonamiento en un espacio de 4 bits. La model card también menciona "zero-drift" para el razonamiento multi-paso, aunque no se aportan detalles de implementación, ablaciones ni comparaciones controladas que permitan evaluar la técnica. El modelo requiere `trust_remote_code=True`, lo que implica código personalizado no auditado en el repositorio.
 
 ## Capacidades
-
-- Generación de texto general con pipeline `text-generation`.
-- Razonamiento y matemáticas: la model card reporta retención en GSM8K y ARC-Challenge, lo que sugiere capacidad para problemas aritméticos de varios pasos y preguntas de razonamiento científico.
-- Generación de código: se reporta retención en HumanEval, orientada a síntesis de funciones a partir de docstrings.
-- Conocimiento general: se reporta retención en MMLU.
-- Contexto largo: se anuncia soporte de hasta 262.144 tokens, adecuado para documentos extensos o repositorios de código, aunque no se documenta la degradación de calidad a longitudes extremas.
-- Ejecución on-device: el formato de 12 GB está pensado para equipos con 16 GB de RAM mediante Ollama.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multimodales (visión, audio): no disponible; el pipeline es únicamente de texto.
-- Modo thinking explícito: no disponible en la información proporcionada.
+- Generación de texto conversacional y causal, con plantilla de prompt `<|user|>` / `<|assistant|>`.
+- Razonamiento científico y de sentido común, ejemplificado con preguntas de tipo ARC-Challenge.
+- Razonamiento matemático multi-paso, ejemplificado con problemas de tipo GSM8K.
+- Generación de código Python, ejemplificado con problemas de tipo HumanEval.
+- Ejecución local en CPU, GPU y Apple Silicon mediante llama.cpp, Ollama, LM Studio y Jan.ai.
+- Compatibilidad con endpoints y despliegue en Google Colab y Kaggle.
+- No se documentan capacidades de tool calling, function calling, agentes, visión, audio ni modo de pensamiento explícito.
 
 ## Casos de uso
-
-- Asistente de código en portátil de desarrollo: con 12 GB de pesos y 16 GB de RAM, el modelo puede ejecutarse localmente vía Ollama para autocompletado, explicación de funciones y generación de tests unitarios sin enviar código propietario a servicios externos; encaja por su retención declarada en HumanEval y su licencia Apache 2.0.
-- Tutor de matemáticas offline: para entornos educativos sin conectividad, el modelo puede resolver problemas de aritmética multi-paso y explicar el procedimiento, apoyándose en el 84,8 % declarado en GSM8K.
-- Análisis de documentación extensa: la ventana de 262.144 tokens permite cargar contratos, manuales técnicos o expedientes completos y hacer preguntas sobre ellos en una sola pasada, útil en despachos o departamentos legales con requisitos de confidencialidad.
-- Procesamiento por lotes en estaciones de trabajo sin GPU: al no requerir acelerador dedicado, puede integrarse en scripts nocturnos de clasificación, resumen o extracción de entidades sobre corpus internos.
-- Prototipado rápido de aplicaciones de razonamiento: investigadores que necesiten un modelo local para experimentar con cadenas de razonamiento o evaluaciones de matemáticas pueden desplegarlo con un solo comando de Ollama y sustituirlo después por alternativas verificadas.
-- Base para ajuste fino ligero: al publicarse en Safetensors con licencia Apache 2.0, es posible aplicar LoRA o adaptadores sobre los shards consolidados para dominios específicos, siempre que la arquitectura custom sea compatible con las librerías estándar (requiere `trust_remote_code`).
+- Asistencia conversacional offline: el modelo puede desplegarse en un portátil de 16 GB mediante Ollama o LM Studio para mantener conversaciones multi-turno sin conexión, gracias a su huella de 12 GB de RAM declarada.
+- Resolución de problemas matemáticos paso a paso: adecuado para tutores educativos o herramientas de práctica que requieran explicaciones detalladas de ecuaciones lineales y problemas aritméticos de varios pasos, según el ejemplo GSM8K de la model card.
+- Generación de código en entornos con recursos limitados: puede integrarse en editores o scripts locales para producir funciones Python con docstrings y casos límite, sin depender de APIs en la nube.
+- Prototipado en cuadernos gratuitos: los botones de Colab y Kaggle permiten ejecutar el modelo en GPU T4 o P100 gratuitas, útil para pruebas de concepto y demos académicas.
+- Razonamiento científico en aplicaciones educativas: puede responder preguntas de física y ciencias naturales con deducción causal, según el ejemplo ARC-Challenge incluido por el autor.
+- Despliegue en dispositivos de borde: al caber en 6-16 GB de VRAM en GPU NVIDIA o en memoria unificada de Apple Silicon, puede embeberse en aplicaciones de escritorio o kioscos interactivos con requisitos de privacidad estrictos.
+- Evaluación comparativa de técnicas de compresión: investigadores interesados en cuantización extrema y consolidación de expertos pueden usar el modelo como caso de estudio, aunque con la cautela de que la técnica AW-SECD no está documentada de forma independiente.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos disponibles son los de la model card del autor, que comparan el modelo fundacional de 14T con el consolidado de 12 GB. No se aportan resultados de modelos de referencia de terceros ni detalles del arnés de evaluación.
+| Benchmark | Resultado declarado |
+|---|---|
+| ARC-Challenge | 84,7 % |
+| GSM8K | 81,0 % |
+| HumanEval | 79,2 % |
 
-| Benchmark | Fundacional 14T MoE | Numbat 12GB SuperExpert | Retención declarada |
-|---|---|---|---|
-| ARC-Challenge | 90,8 % | 87,6 % | 96,5 % |
-| GSM8K | 89,2 % | 84,8 % | 95,1 % |
-| HumanEval | 85,0 % | 80,8 % | 95,0 % |
-| MMLU | 88,5 % | 84,1 % | 95,0 % |
-| Agregado | 88,4 % | 84,3 % | 95,2 % |
-
-Estos valores no han sido verificados de forma independiente y deben tratarse como afirmaciones del autor.
+Los datos proceden exclusivamente de la model card del autor. No se han publicado resultados independientes ni comparaciones controladas con modelos de referencia en la información disponible. El autor afirma una retención del 95,6 % del conocimiento del modelo original, pero no se aporta la línea base exacta ni la metodología de evaluación.
 
 ## Requisitos de hardware
-
-- VRAM/RAM estimada: el artefacto pesa 12,0 GB en Safetensors; se recomienda un mínimo de 16 GB de RAM para cargarlo con margen para el contexto y el runtime, tal como indica el autor.
-- GPU recomendadas: no se especifican; el diseño apunta a CPU. En GPU, cabría en tarjetas con 16 GB o más de VRAM (RTX 4080, RTX 4090, A100 40 GB, H100) si el runtime soporta la arquitectura custom, pero no hay datos de rendimiento.
-- ¿Cabe en GPU de consumo? Sí, en principio en cualquier GPU con 16 GB o más de VRAM; en GPUs de 8-12 GB requeriría cuantización adicional, que no se distribuye.
-- Opciones de despliegue: Ollama mediante `ollama run hf.co/shashanth-27xA9/Numbat-SuperExpert-12GB`; al usar `custom_code`, es previsible que requiera `trust_remote_code=True` en Transformers. Compatibilidad con vLLM, TGI o llama.cpp no está documentada.
-- Latencia y throughput: no disponibles.
+- VRAM/RAM estimada: 12 GB de RAM para la versión comprimida; 17,28 GB para el GGUF Q4_K_M; 6-16 GB de VRAM en GPU NVIDIA según la tabla del autor.
+- GPU recomendadas: NVIDIA RTX con 6-16 GB de VRAM (CUDA offload); Tesla T4 o P100 en Colab/Kaggle gratuitos.
+- Apple Silicon: M1/M2/M3/M4 con 16 GB de memoria unificada, con rendimiento declarado de más de 25 tokens por segundo.
+- CPU: Intel o AMD con AVX2/AVX-512 y 16 GB de RAM del sistema, totalmente offline.
+- Opciones de despliegue: transformers con `trust_remote_code=True`, llama.cpp, Ollama, LM Studio, Jan.ai, endpoints compatibles.
+- Latencia y throughput: solo se declara "25+ tok/s" en Apple Silicon; no hay datos para otras plataformas.
 
 ## Comparativa con modelos similares
 
-No se dispone de información verificable sobre modelos comparables de la misma categoría (consolidaciones MoE on-device de 12 GB) ni sobre el propio `burner22/numbat` más allá de lo citado. Se indica "no disponible" para parámetros activos, contexto y rendimiento de alternativas.
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Numbat-SuperExpert-12GB | 6,34 B (declarado MoE) | no disponible | Apache 2.0 | safetensors, GGUF | Benchmarks solo declarados por el autor |
+| burner22/numbat (base) | no disponible | no disponible | no disponible | no disponible | Modelo base declarado |
+| Alternativas de tamaño similar | no disponible | no disponible | no disponible | no disponible | No se dispone de información verificable para comparar |
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| Numbat-SuperExpert-12GB | ~14T en base; consolidado de 12 GB | 262.144 tokens | Apache 2.0 | Hugging Face, Ollama |
-| `burner22/numbat` (base) | ~14T | no disponible | no disponible | Hugging Face |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
+No se dispone de información suficiente para establecer una comparativa rigurosa con alternativas de la misma categoría. La model card menciona otros modelos de la familia AW-SECD (por ejemplo, GLM-5.3 SuperExpert v2 de 9,2 GB), pero no se aportan especificaciones completas ni resultados comparables.
 
 ## Limitaciones y advertencias
-
-- Los benchmarks y el "95,2 % de retención" son afirmaciones del autor sin evaluación independiente ni scripts reproducibles; no deben citarse como resultados verificados.
-- No se documenta la metodología AW-SECD, lo que impide auditar qué información se ha perdido en la consolidación ni qué expertos se han descartado.
-- El uso de `custom_code` implica ejecutar código del repositorio del autor; conviene revisarlo antes de desplegar en producción.
-- Idiomas soportados no documentados: no hay garantía de calidad en castellano ni en otras lenguas distintas del inglés.
-- Riesgo de alucinación no cuantificado; al ser un modelo comprimido, la degradación puede concentrarse en dominios concretos no cubiertos por los benchmarks publicados.
-- La ventana de 262.144 tokens no va acompañada de datos sobre degradación de calidad en longitudes extremas ni de consumo de memoria asociado.
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que impide contrastar experiencias de terceros.
-- Licencia Apache 2.0 permite uso comercial, pero la ausencia de documentación sobre el origen de los datos de entrenamiento del modelo base impide confirmar la cadena de derechos.
-- No se garantiza compatibilidad con vLLM, TGI, llama.cpp ni cuantizaciones estándar; el soporte práctico se limita a lo anunciado (Ollama).
+- Las afirmaciones sobre un modelo base de 14 billones de parámetros y una compresión de 1.600x no están verificadas de forma independiente y deben interpretarse con escepticismo.
+- La técnica AW-SECD no está documentada con detalle técnico, ablaciones ni código reproducible en la información disponible.
+- Los benchmarks (ARC-Challenge 84,7 %, GSM8K 81,0 %, HumanEval 79,2 %) proceden únicamente del autor y no han sido replicados.
+- El modelo requiere `trust_remote_code=True`, lo que implica ejecutar código personalizado del repositorio; conviene auditar dicho código antes de usarlo en producción.
+- No se especifican los idiomas soportados, la longitud de contexto ni los parámetros activos, lo que limita la planificación de despliegues multilingües o de contexto largo.
+- Riesgo de alucinación inherente a los modelos de lenguaje; no se documentan evaluaciones de fidelidad ni de sesgos.
+- Aunque la licencia es Apache 2.0, el uso comercial debe evaluar también las licencias del modelo base y del código personalizado incluido.
+- El tamaño del repo (31,2 GB) y la existencia de múltiples artefactos (safetensors, GGUF) pueden complicar la descarga y el versionado en entornos con ancho de banda limitado.
 
 ## Enlaces
-
 - Modelo en Hugging Face: https://huggingface.co/shashanth-27xA9/Numbat-SuperExpert-12GB
 - Modelo base: https://huggingface.co/burner22/numbat
-- Licencia Apache 2.0: https://opensource.org/licenses/Apache-2.0
+- Cuaderno Colab de ejecución: https://colab.research.google.com/github/shashanth-27xA9/Numbat-SuperExpert-12GB/blob/main/1_click_run_numbat_12gb.ipynb
+- Cuaderno de benchmarks: https://colab.research.google.com/github/shashanth-27xA9/Numbat-SuperExpert-12GB/blob/main/benchmark_evaluation_and_test.ipynb
+- Demo en Spaces: https://huggingface.co/spaces/shashanth-27xA9/Numbat-SuperExpert-Playground
+- Descarga directa GGUF: https://huggingface.co/shashanth-27xA9/Numbat-SuperExpert-12GB/resolve/main/numbat-superexpert-12gb-q4_k_m.gguf
+- Notebook de Kaggle: https://www.kaggle.com/code/hariniathukuri/numbat-12gb-1-click-starter
+- Modelo relacionado de la familia: https://huggingface.co/shashanth-27xA9/GLM-5.3-SuperExpert-v2-9.2GB

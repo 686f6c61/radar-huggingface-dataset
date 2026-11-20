@@ -1,0 +1,58 @@
+{
+  "schema": 2,
+  "id": "At1uri/spiking-neural-network-lif-surrogate",
+  "slug": "at1uri-spiking-neural-network-lif-surrogate",
+  "author": "At1uri",
+  "url": "https://huggingface.co/At1uri/spiking-neural-network-lif-surrogate",
+  "created_at": "2026-11-20T03:12:37.000Z",
+  "updated_at": "2026-11-20T03:12:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "safetensors",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "spiking_neural_network",
+    "neuromorphic-computing",
+    "spiking-neural-networks",
+    "event-based-vision",
+    "leaky-integrate-and-fire",
+    "surrogate-gradients",
+    "en",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6596,
+  "parameters_human": "6596",
+  "storage_bytes": 26904,
+  "storage_human": "26904 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "neuromorphic-event-stream-benchmarks",
+      "metric": "Temporal Sparsity Index",
+      "value": 0.948
+    }
+  ],
+  "sources": []
+}

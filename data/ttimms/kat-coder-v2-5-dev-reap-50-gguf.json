@@ -52,31 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "KAT-Coder-V2.5-Dev-REAP-50-NVFP4-W4A4 - Hugging Face",
-      "url": "https://huggingface.co/Ttimms/KAT-Coder-V2.5-Dev-REAP-50-NVFP4-W4A4",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Ttimms/KAT-Coder-V2.5-Dev-REAP-50-NVFP4-W4A4 at main - Hugging Face",
-      "url": "https://huggingface.co/Ttimms/KAT-Coder-V2.5-Dev-REAP-50-NVFP4-W4A4/tree/main",
-      "snippet": "Instructions to use Ttimms/KAT-Coder-V2.5-Dev-REAP-50-NVFP4-W4A4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "KAT-Coder V2.5 Local Setup Guide: GGUF, vLLM, SGLang",
-      "url": "https://dev.to/ai_made_tools/kat-coder-v25-local-setup-guide-gguf-vllm-sglang-2fdi",
-      "snippet": "KAT-Coder V2.5-Dev is an open-weight coding model from Kwaipilot (Kuaishou&#x27;s AI team) that scores 69.40% on SWE-bench Verified while activating only 3 billion parameters per token. The full model has 35 billion total parameters in a sparse Mixture-of-Experts architecture, but the MoE routing means only 3B are active for any given inference step."
-    },
-    {
-      "title": "GitHub - t-timms/kat-coder-nvfp4: Serving a large MoE coder model on ...",
-      "url": "https://github.com/t-timms/kat-coder-nvfp4",
-      "snippet": "Making Kwaipilot/KAT-Coder-V2.5-Dev (69.40 SWE-bench Verified) run as a usable local agentic coding model inside 16 GB of consumer VRAM, on an RTX 5070 Ti (SM120). Pipeline: REAP expert pruning at 50 percent, then NVFP4 quantization, served by vLLM."
-    },
-    {
-      "title": "KAT-Coder-V2.5-Dev: An Open Agentic Coding Model - HackerNoon",
-      "url": "https://hackernoon.com/kat-coder-v25-dev-an-open-agentic-coding-model",
-      "snippet": "A: KAT-Coder-V2.5-Dev achieves 69.40% on SWE-bench Verified versus Qwen3.5-35B-A3B at 58.60%, a gap of nearly 11 percentage points. This advantage comes from agentic training and RL optimization specifically for tool use within sandboxed environments, whereas the base Qwen model generates code without execution feedback."
-    }
-  ]
+  "sources": []
 }

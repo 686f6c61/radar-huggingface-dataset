@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 33,
-  "downloads_30d": 1392,
+  "downloads_30d": 1318,
   "trending_score": 13,
   "parameters": 4622144192,
   "parameters_human": "4.62B",
@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Spotify - Web Player: Music for everyone",
-      "url": "https://open.spotify.com/",
-      "snippet": "Spotify is a digital music service that gives you access to millions of songs.Read more"
-    },
-    {
-      "title": "Ouça músicas de Entra | Spotify.",
-      "url": "https://open.spotify.com/intl-pt/artist/2ACNJpu5aN8cyiUkFRR4z1",
-      "snippet": "Ouça Entra no Spotify. Artista · 994 ouvintes mensais."
-    },
-    {
-      "title": "Spotify",
-      "url": "https://accounts.spotify.com/fr/login",
-      "snippet": "Vous n'avez pas de compte ? S'inscrire"
-    },
-    {
-      "title": "Spotify",
-      "url": "https://accounts.spotify.com/en/login?nosignup=true",
-      "snippet": "Log in to your Spotify account to access music, podcasts, and more."
-    },
-    {
-      "title": "下载 Windows 版 - Spotify",
-      "url": "https://www.spotify.com/sg-zh/download/windows/",
-      "snippet": "Spotify 是一项数字音乐服务，可让你畅听数百万首歌曲。"
-    }
-  ]
+  "sources": []
 }

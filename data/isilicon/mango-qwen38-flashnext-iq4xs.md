@@ -2,112 +2,124 @@
 
 ## Resumen
 
-Qwen3.8 Flash Next (IQ4_XS) es un mirror de preservación publicado por el usuario isilicon en Hugging Face, que empaqueta la cuantización IQ4_XS creada por mradermacher sobre la variante "Uncensored" de Qwen3.8 Flash Next, a su vez una modificación de rechazos (refusal-modified) realizada por OrcaRouter sobre el modelo original de Qwen. El repositorio no es un entrenamiento nuevo: su valor añadido está en preservar los bytes exactos de la cuantización evaluada en la comparativa Mango y documentar resultados medidos sobre esa configuración precisa.
+Mango Qwen3.8 Flash Next IQ4_XS es un espejo de preservación publicado por isilicon (colección Mango) sobre el paquete GGUF que mradermacher generó a partir de Qwen3.8 Flash Next, un modelo de texto de la familia Qwen con modificaciones de rechazo introducidas por OrcaRouter. El repositorio no entrena ni modifica los pesos: conserva los bytes del cuantizado original IQ4_XS y añade una evaluación propia y trazable de esa configuración exacta. Con 176.943.899.520 parámetros y un payload de 98,42 GB (91,66 GiB) en un único fichero, está pensado para despliegue local en hardware de gama alta más que para servir en producción a gran escala.
 
-El modelo base tiene 176.943.899.520 parámetros (dato real de safetensors), lo que lo sitúa en la categoría de modelos grandes, y se distribuye en formato GGUF de archivo único de 98,42 GB. Está orientado a generación de texto conversacional en inglés y chino, con licencia Apache 2.0 declarada.
+Su relevancia actual es doble. Por un lado, ofrece una instantánea reproducible de un modelo de razonamiento y código de gran tamaño en cuantización de 4 bits, con revisión de origen fijada (`3aa3ff434a0dc2b9dd6886fe12da134756229f74`) y licencia Apache 2.0. Por otro, publica un protocolo de evaluación con subconjuntos pequeños y graders locales (EQ-Bench v2, CTI, CyberMetric, BFCL-style, HumanEval+, IFEval, MMLU-Pro, MATH-500) que permite comparar configuraciones sobre la misma carga de trabajo, aunque con intervalos de confianza amplios.
 
-Su relevancia actual radica en la evaluación Mango adjunta: obtuvo una puntuación ponderada de 84,19/100, la más alta de su cohorte de diez configuraciones, con 12/12 casos agénticos superados y 19/20 pruebas locales de código, lo que lo hace interesante para quien busque un modelo grande sin filtros de rechazo con rendimiento agéntico y de código medido de forma reproducible.
+La ficha debe leerse con cautela: los datos de arquitectura y entrenamiento del modelo subyacente no están disponibles en la información proporcionada, y las puntuaciones publicadas corresponden a subconjuntos reducidos, no a los pipelines oficiales completos.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (detalles concretos no disponibles; variante "Flash Next" de Qwen3.8) |
-| Parametros totales | 176.943.899.520 |
-| Parametros activos | no disponible |
+| Arquitectura | no disponible |
+| Parámetros totales | 176.943.899.520 |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | IQ4_XS (GGUF) |
-| Idiomas soportados | Ingles, chino |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (archivo unico de 98,42 GB / 91,66 GiB) |
+| Tipos de cuantización | IQ4_XS (GGUF); el repositorio publica una única configuración medida |
+| Idiomas soportados | en, zh |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (fichero único, 98,42 GB / 91,66 GiB) |
 
 ## Arquitectura y entrenamiento
 
-El artefacto distribuido es una cuantización IQ4_XS en formato GGUF de 4 bits (variante importance-matrix de llama.cpp), generada por mradermacher a partir de mradermacher/Qwen3.8-Flash-Next-Uncensored-GGUF, concretamente de la revision `3aa3ff434a0dc2b9dd6886fe12da134756229f74`. La variante "Uncensored" fue producida por OrcaRouter modificando el comportamiento de rechazo del Qwen3.8 Flash Next original. No hay informacion disponible sobre la arquitectura interna (si es MoE, densa o hibrida), el numero de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF/DPO.
+No se dispone de información sobre la arquitectura interna (tipo de transformer, atención, posibles componentes MoE o híbridos), el volumen de tokens de entrenamiento, la composición del dataset ni las etapas de alineación (RLHF, DPO u otras) del modelo base Qwen3.8 Flash Next. La model card del espejo no documenta estos extremos y se limita a describir el proceso de preservación y evaluación.
 
-Este repositorio no aporta innovacion tecnica propia de entrenamiento: su funcion es la preservacion documentada ("preservation-mirror") de la cuantizacion exacta usada en la comparativa Mango, manteniendo los bytes de origen sin cambios.
+Lo que sí está documentado es la cadena de procedencia: OrcaRouter aplicó modificaciones de rechazo sobre Qwen3.8 Flash Next, mradermacher empaquetó el resultado en GGUF con cuantización IQ4_XS, y isilicon conserva esos bytes sin alteración bajo la etiqueta `preservation-mirror`. La innovación técnica destacable del repositorio no está en el modelo sino en el método de evaluación: una carga de trabajo emparejada de 202 preguntas más 12 casos de agente mecánico, con tiempos, latencias p50/p95, TTFT y tokens de salida registrados, y con intervalos de confianza (bootstrap y Wilson) para cada tarea. Se incluye además un estudio separado sobre el esfuerzo de razonamiento de Qwen (medium 82,87 frente a xhigh 84,41 sobre 404 preguntas, diferencia pareada de +1,54 puntos con intervalo del 95 % de [-1,71, +4,82]).
 
 ## Capacidades
 
-- Generacion de texto conversacional (pipeline text-generation) en ingles y chino.
-- Generacion y correccion de codigo: 19/20 pruebas locales tipo HumanEval+ superadas (95,00 %).
-- Function calling / tool calling: 31/40 comprobaciones locales estilo BFCL superadas (77,50 %).
-- Comportamiento agéntico multi-paso: 12/12 casos agénticos superan las comprobaciones mecanicas de completitud, evidencia y permisos.
-- Razonamiento matematico: 5/5 problemas de MATH-500 niveles 4-5 correctos en la muestra local.
-- Conocimiento general: 92,86 % en un subconjunto de 14 preguntas de MMLU-Pro.
-- Comprension social/emocional: 82,16 de media en EQ-Bench v2.
-- Ciberseguridad: 83,33/100 en el dominio correspondiente (CyberMetric 100 %, CTI 70-80 %).
-- Sin filtros de rechazo (variante "Uncensored"), lo que permite respuestas que el modelo original rehusaria.
+- Generación de texto conversacional en inglés y chino, con soporte declarado para `text-generation`.
+- Razonamiento y conocimiento general: MMLU-Pro (subconjunto de 14 preguntas) con 92,86 % y MATH-500 niveles 4-5 con 100 % sobre 5 preguntas.
+- Generación de código: 95 % en 20 tests locales estilo HumanEval+.
+- Function calling: 77,50 % en 40 comprobaciones locales estilo BFCL.
+- Seguimiento de instrucciones estrictas: 85 % de prompts superados en IFEval (20 casos).
+- Comportamiento agéntico multi-paso: 12/12 casos con comprobaciones mecánicas de finalización, evidencia y permisos superadas.
+- Conocimiento de ciberseguridad: CyberMetric 100 % (20 preguntas), CTI multiple choice 70 % y análisis de causa raíz/CWE 80 %.
+- Comprensión social y emocional: EQ-Bench v2 con media de 82,16 y OpenToM con 66,67 % de etiquetas correctas.
+- Modificación de rechazo aplicada por OrcaRouter sobre el modelo base, orientada a reducir negativas del modelo original (sin detalle técnico publicado).
+- No se documentan capacidades de visión, audio ni modo thinking explícito en la información disponible.
 
 ## Casos de uso
 
-- Asistentes conversacionales sin restricciones de rechazo: la variante Uncensored responde a consultas que el modelo base rehusaria; util en investigacion sobre alineacion o para dominios donde los rechazos falsos positivos degradan la experiencia.
-- Generacion de codigo local: con un 95 % en pruebas tipo HumanEval+, es adecuado para autocompletado, refactorizacion y generacion de funciones en entornos offline o autoalojados.
-- Agentes con llamadas a herramientas: supera las comprobaciones mecanicas de los 12 casos agenticos (completitud, evidencia, permisos y totales de precio), lo que lo hace viable para pipelines de agentes con function calling, aunque con un 77,5 % en llamadas estilo BFCL conviene validar las firmas de funcion.
-- Analisis de ciberseguridad: buen rendimiento en CyberMetric (100 %) y razonamiento de causa raiz/CWE (80 %), util para triaje de vulnerabilidades y revision de configuraciones con supervision humana.
-- Comprension emocional y dialogo social: 82,16 en EQ-Bench v2, adecuado para chatbots de apoyo, roleplay o evaluacion de tono en conversaciones.
-- Razonamiento matematico y de conocimiento general: 100 % en MATH-500 niveles 4-5 (muestra de 5) y 92,86 % en MMLU-Pro (muestra de 14), apto para asistentes de estudio y verificacion de razonamiento.
-- Reproduccion de experimentos de benchmarking: al ser un mirror de bytes exactos, sirve para replicar la evaluacion Mango con la misma configuracion medida.
+- Evaluación comparativa de cuantizaciones: el repositorio está diseñado como configuración de referencia medible; un equipo puede reproducir la carga de 202 preguntas y 12 casos de agente para contrastar su propio hardware o sus propios cuantizados frente a esta línea base.
+- Asistente de código en local: con 95 % en tests locales de HumanEval+ y soporte de function calling, encaja en entornos de desarrollo con GPU de 80 GB o más donde se quiera autocompletado, refactorización y generación de tests sin salida a la nube.
+- Automatización agéntica con permisos: los 12/12 casos mecánicos (finalización, evidencia, permisos, totales de precios) lo hacen apto para prototipos de agentes que deben justificar acciones y respetar límites declarados.
+- Análisis de ciberseguridad asistido: los resultados en CyberMetric y CTI sugieren uso en triaje de alertas, clasificación de CWE y resumen de informes de amenazas, siempre con revisión humana dada la muestra pequeña.
+- Atención al cliente en inglés y chino: su perfil EQ (82,16 en EQ-Bench v2) y su capacidad conversacional permiten pilotos de soporte multi-turno en ambos idiomas, con la limitación de que no se documenta la ventana de contexto.
+- Investigación sobre modificación de rechazo: útil para estudiar cómo cambia el comportamiento de un modelo al aplicarle ajustes de rechazo, comparando esta variante con el Qwen3.8 Flash Next original bajo el mismo conjunto de pruebas.
+- Despliegue en estación de trabajo con 96 GB de VRAM o más: el payload de 91,66 GiB en un solo fichero simplifica la distribución y permite servir el modelo con llama.cpp u Ollama en máquinas de gama alta.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos publicados son los de la evaluacion Mango (subconjuntos pequenos y graders locales; no son las pipelines oficiales de los benchmarks). No hay comparativa numerica completa con otros modelos en la informacion disponible mas alla de que obtuvo la puntuacion mas alta de su cohorte de diez configuraciones.
+Resultados publicados por el autor del espejo sobre subconjuntos locales (no son los pipelines oficiales completos):
 
-| Task / grader local | n | Media / % | Intervalo 95 % | Metodo |
+| Tarea / grader local | n | Resultado | Intervalo 95 % | Método |
 |---|---|---|---|---|
-| EQ-Bench v2 | 30 | 82,16 | 74,79-88,30 | Bootstrap media |
-| OpenToM labels | 18 | 66,67 | 43,75-83,72 | Wilson |
-| CTI multiple choice | 20 | 70,00 | 48,10-85,45 | Wilson |
-| CTI root-cause / CWE | 15 | 80,00 | 54,81-92,95 | Wilson |
-| CyberMetric | 20 | 100,00 | 83,89-100,00 | Wilson |
-| Llamadas locales estilo BFCL | 40 | 77,50 | 62,50-87,68 | Wilson |
-| HumanEval+ (tests locales) | 20 | 95,00 | 76,39-99,11 | Wilson |
-| IFEval strict prompt pass | 20 | 85,00 | 63,96-94,76 | Wilson |
-| MMLU-Pro (subconjunto) | 14 | 92,86 | 68,53-98,73 | Wilson |
-| MATH-500 niveles 4-5 | 5 | 100,00 | 56,55-100,00 | Wilson |
-| Agent-loop heuristico | 12 | 100,00 | 75,75-100,00 | Wilson |
+| EQ-Bench v2 | 30 | 82,16 | 74,79–88,30 | Bootstrap |
+| OpenToM labels | 18 | 66,67 % | 43,75–83,72 | Wilson |
+| CTI multiple choice | 20 | 70,00 % | 48,10–85,45 | Wilson |
+| CTI root-cause / CWE | 15 | 80,00 % | 54,81–92,95 | Wilson |
+| CyberMetric | 20 | 100,00 % | 83,89–100,00 | Wilson |
+| BFCL-style local calls | 40 | 77,50 % | 62,50–87,68 | Wilson |
+| HumanEval+ local tests | 20 | 95,00 % | 76,39–99,11 | Wilson |
+| IFEval strict prompt pass | 20 | 85,00 % | 63,96–94,76 | Wilson |
+| MMLU-Pro subset | 14 | 92,86 % | 68,53–98,73 | Wilson |
+| MATH-500 niveles 4-5 | 5 | 100,00 % | 56,55–100,00 | Wilson |
+| Agent-loop heuristic | 12 | 100,00 % | 75,75–100,00 | Wilson |
 
-Puntuacion global ponderada Mango: 84,19/100. Perfil por dominios: social/emocional 74,41 (peso 30 %), ciberseguridad 83,33 (20 %), codigo 95,00 (10 %), agentic 88,75 (30 %), seguimiento de instrucciones 85,00 (5 %), conocimiento general/matematicas 96,43 (5 %).
+Puntuación global ponderada: 84,19/100 (social 30 %, ciberseguridad 20 %, agéntico 30 %, código 10 %, instrucciones 5 %, conocimiento/matemáticas 5 %). En una comparación posterior en RTX 3090 (3 de noviembre de 2026) se registró 84,66610/100 sobre 202+12 casos y una puntuación separada de juez único de 7,86364/10.
 
-Rendimiento registrado: carga de trabajo completa de 35,33 min (202 preguntas + 12 casos agenticos), latencia p50/p95 de peticion 7,02/15,76 s, TTFT p50/p95 0,64/1,47 s, tasa mediana de tokens de salida ~86,52 tokens/segundo reportados por el motor (no es throughput nativo de decodificacion). No se han publicado resultados de benchmarks oficiales (MMLU completo, HumanEval oficial, GSM8K) en la informacion disponible.
+Rendimiento medido en la configuración evaluada:
+
+| Medición | Valor |
+|---|---|
+| Carga completa emparejada | 35,33 min |
+| Tiempo de la suite de peticiones | 32,19 min |
+| Tiempo de los 12 casos de agente | 3,14 min |
+| Tareas por minuto | 6,06 |
+| Latencia p50 / p95 | 7,02 / 15,76 s |
+| TTFT p50 / p95 | 0,64 / 1,47 s |
+| Tokens de salida por segundo de petición (mediana) | 86,52 |
+| Tokens de finalización reportados | 169.681 (202/202 peticiones) |
+| Finalizaciones por longitud | 0 |
 
 ## Requisitos de hardware
 
-- El archivo GGUF pesa 98,42 GB (91,66 GiB); a eso hay que sumar KV cache, memoria de trabajo y overhead del runtime. La carga en GPU pura requeriria del orden de 100+ GB de VRAM efectiva.
-- Con offload parcial a CPU/RAM (llama.cpp), es viable con sistemas con 128-256 GB de RAM unificada o combinaciones de GPU + RAM; no cabe completo en una GPU de consumo (una RTX 4090 con 24 GB solo podria cargar una fraccion pequena de las capas).
-- GPU recomendadas para inferencia en GPU: A100 80 GB (x2), H100 80 GB (x2) o plataformas con memoria unificada amplia (Apple Silicon con 128-192 GB, mediante variantes MLX del modelo base).
-- Despliegue: llama.cpp (formato GGUF nativo, recomendado), Ollama, LM Studio y runtimes compatibles con GGUF; vLLM y TGI no consumen GGUF directamente (requeririan los pesos originales en safetensors).
-- Latencia registrada en la evaluacion: TTFT p50 de 0,64 s y ~86,52 tokens/s reportados, en el hardware usado para el test (no especificado en la informacion disponible).
+- VRAM estimada: el payload ocupa 91,66 GiB en disco; en inferencia hay que sumar KV cache y memoria de trabajo, por lo que se necesita al menos una GPU de 96 GB (A100 80 GB no basta en una sola unidad; H100 80 GB tampoco) o reparto multi-GPU.
+- GPU recomendadas: H100 80 GB en configuración multi-GPU, A100 80 GB multi-GPU, o GPUs con 96 GB o más por unidad. En RTX 3090 (24 GB) solo es viable con reparto entre varias unidades y offload parcial a CPU, con la penalización de latencia correspondiente; el autor reporta una comparación en RTX 3090, pero no detalla la configuración de reparto.
+- Consumer GPU: no cabe en una sola RTX 4090 (24 GB) ni en una RTX 3090 (24 GB). Requiere al menos cuatro RTX 4090/3090 para acercarse al tamaño del fichero, antes de contar KV cache.
+- Opciones de despliegue: llama.cpp y Ollama son las vías naturales para GGUF; vLLM y TGI no están confirmados para este formato en la información disponible. La model card declara `inference: false` para el repositorio de Hugging Face, es decir, no se sirve desde la infraestructura de HF.
+- Latencia y throughput: sobre el hardware de la evaluación, TTFT p50 de 0,64 s y p95 de 1,47 s; latencia por petición p50 de 7,02 s y p95 de 15,76 s; mediana de 86,52 tokens de salida por segundo de petición. La carga completa de 202 preguntas más 12 casos tardó 35,33 minutos.
 
 ## Comparativa con modelos similares
 
-Dentro de la cohorte Mango de diez configuraciones se mencionan comparaciones, pero solo hay un dato numerico explicito: la carga de trabajo de este modelo fue de 35,33 min frente a 23,98 min para "Qwen27 MLX4" (Qwen3.8 27B Uncensored en MLX 4-bit). La ventaja de calidad sobre Qwen se declara incierta en la muestra pequena, con estudio de esfuerzo aparte: medium 82,87/100 frente a xhigh 84,41/100 (diferencia emparejada +1,54, intervalo 95 % [-1,71, +4,82]).
-
-| Modelo | Parametros | Formato | Puntuacion Mango | Tiempo de carga de trabajo | Licencia |
+| Modelo | Parámetros | Contexto | Cuantización evaluada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8 Flash Next Uncensored IQ4_XS (este) | 176,94 B | GGUF IQ4_XS | 84,19/100 | 35,33 min | Apache 2.0 |
-| Qwen3.8 27B Uncensored MLX4 | no disponible | MLX 4-bit | no disponible | 23,98 min | no disponible |
-| Resto de la cohorte (8 configuraciones) | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Mango Qwen3.8 Flash Next IQ4_XS (este) | 176,9 B | no disponible | IQ4_XS | Apache 2.0 | GGUF en HF |
+| Qwen27 MLX4 (referencia del mismo cohorte Mango) | no disponible | no disponible | MLX 4 bits | no disponible | MLX |
+| Qwen3.8 Flash Next original (sin modificación de rechazo) | no disponible | no disponible | no disponible | no disponible | no disponible |
+| mradermacher/Qwen3.8 Flash-Next-Uncensored-GGUF (base directa) | no disponible | no disponible | varias GGUF | Apache 2.0 (según este repo) | GGUF en HF |
 
-Comparativas frente a modelos externos (Llama, Mistral, DeepSeek, etc.) no disponibles en la informacion proporcionada.
+En el cohorte de diez configuraciones del autor, esta configuración obtuvo la puntuación global más alta (84,19/100) y tardó 35,33 minutos frente a 23,98 minutos de Qwen27 MLX4; el propio autor advierte que la ventaja de calidad sobre Qwen es incierta con esta muestra y que los intervalos pareados son más informativos que el ranking. No hay datos públicos de arquitectura ni de contexto para el resto de configuraciones.
 
 ## Limitaciones y advertencias
 
-- Variante "Uncensored" (refusal-modified por OrcaRouter): el modelo no rechazara contenidos que el original si rechazaria. Su uso conlleva responsabilidad legal y etica plena del operador; no apto para entornos con usuarios finales sin capas de moderacion propias.
-- Los benchmarks son subconjuntos pequenos (n entre 5 y 40) con graders locales, no las pipelines oficiales; los intervalos de confianza son amplios y la ventaja de calidad frente a configuraciones mas pequenas es estadisticamente incierta.
-- Idiomas limitados a ingles y chino segun la model card; el rendimiento en castellano no esta documentado.
-- Longitud de contexto, numero de parametros activos y detalles de arquitectura no disponibles; dificulta planificar KV cache y coste por token.
-- Es un mirror de preservacion: sin soporte del creador original del modelo; `inference: false` en la model card indica que no hay API de inferencia serverless en el Hub.
-- El tamano del payload (98,42 GB) no equivale a la VRAM necesaria: hay que anadir KV cache y overhead del runtime.
-- La tasa de ~86,52 tokens/s es un calculo de contadores del motor dividido por tiempo de peticion, no throughput nativo de decodificacion, y el conteo de tokens difiere entre motores.
-- Licencia Apache 2.0 declarada, permisiva para uso comercial, pero la procedencia de la modificacion "Uncensored" (OrcaRouter) introduce una cadena de derivacion que conviene verificar antes de despliegues comerciales.
+- Las puntuaciones provienen de subconjuntos pequeños (entre 5 y 40 preguntas por tarea) y de graders locales; los intervalos de confianza son amplios y no equivalen a los benchmarks oficiales completos.
+- Los resultados de hardware y cohortes distintos no deben agruparse: el autor separa explícitamente la medición en Blackwell (84,19/100) de la de RTX 3090 (84,66610/100).
+- No se documentan sesgos conocidos, pero al ser un modelo con modificación de rechazo, el comportamiento ante contenido sensible puede diferir del Qwen3.8 Flash Next original y no está caracterizado en la información disponible.
+- Riesgo de alucinación no cuantificado: no hay evaluación de factualidad ni de calibración más allá de MMLU-Pro y MATH-500 sobre muestras mínimas.
+- Idiomas limitados a inglés y chino; no se declara soporte de castellano ni de otros idiomas.
+- Longitud de contexto no disponible, lo que impide planificar casos de uso con documentos largos.
+- La licencia Apache 2.0 se declara en este repositorio, pero la cadena de procedencia incluye modificaciones de OrcaRouter y cuantización de mradermacher; conviene verificar las condiciones en cada eslabón antes de uso comercial.
+- El repositorio se marca como `inference: false`: no se puede invocar directamente desde la infraestructura de Hugging Face y requiere descarga y despliegue propio.
+- El tamaño de 91,66 GiB en un único fichero implica requisitos de almacenamiento y de memoria considerables, y el autor advierte que el tamaño en disco no equivale a la VRAM necesaria.
 
 ## Enlaces
 
-- Modelo: https://huggingface.co/isilicon/mango-qwen38-flashnext-iq4xs
-- Modelo base (cuantizacion mradermacher): https://huggingface.co/mradermacher/Qwen3.8-Flash-Next-Uncensored-GGUF
-- Coleccion Mango (modelos probados y mirrors de preservacion): https://huggingface.co/collections/isilicon/mango-tested-models-and-preservation-mirrors-6ae3b73994c895ab42e360d2
-- Resultados de evaluacion Mango (dataset): https://huggingface.co/datasets/isilicon/mango-evaluation-results
+- Repositorio Hugging Face: https://huggingface.co/isilicon/mango-qwen38-flashnext-iq4xs
+- Modelo base (GGUF de mradermacher): https://huggingface.co/mradermacher/Qwen3.8-Flash-Next-Uncensored-GGUF
+- Colección Mango de modelos probados y espejos de preservación: https://huggingface.co/collections/isilicon/mango-tested-models-and-preservation-mirrors-6ae3b73994c895ab42e360d2
+- Resultados de evaluación Mango (dataset): https://huggingface.co/datasets/isilicon/mango-evaluation-results
 - Estudio de esfuerzo Qwen medium vs xhigh: https://huggingface.co/isilicon/mango-qwen38-27b-uncensored-mlx4#qwen-medium-versus-xhigh
-- Comunidad Discord (Infinity): https://discord.gg/5n5YDbQCMy
-- Paper, repositorio de codigo del modelo original y demo: no disponibles
+- Comunidad Infinity en Discord: https://discord.gg/5n5YDbQCMy

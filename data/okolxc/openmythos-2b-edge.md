@@ -2,93 +2,95 @@
 
 ## Resumen
 
-Openmythos-2b-edge es un modelo publicado en Hugging Face por el usuario okolxc bajo el identificador `okolxc/openmythos-2b-edge`. Por el nombre y el tamano del repositorio (53,1 GB), se trata presumiblemente de un modelo de aproximadamente 2.000 millones de parametros orientado a despliegue en el borde (edge), es decir, en dispositivos con recursos limitados. El repositorio esta etiquetado unicamente con `pytorch` y `region:us`, sin pipeline declarado ni metadatos adicionales sobre arquitectura o entrenamiento.
+OpenMythos-2B Edge es un modelo de generacion de texto desarrollado por el usuario okolxc que trasplanta los pesos de Qwen3.5-2B a una arquitectura propia denominada OpenMythos, de tipo hibrido con atencion lineal y atencion completa. El modelo parte de los tensores originales de Qwen3.5-2B (licencia Apache-2.0) y los reubica 1:1 en un grafo de 24 capas que combina 18 capas de Gated DeltaNet (atencion lineal) con 6 capas de GQA full-attention, ademas de un bloque recurrente intermedio con ACT y LoRA.
 
-La informacion publica disponible es muy escasa: no se declara licencia, no se listan idiomas soportados, no hay resultados de benchmarks ni documentacion tecnica en la ficha de Hugging Face. El unico dato cuantitativo relevante es el tamano del repositorio, que con 53,1 GB sugiere la presencia de multiples formatos de pesos o checkpoints intermedios, muy por encima de lo que ocuparian unicamente los pesos en precision nativa de un modelo de 2B (alrededor de 4-8 GB en fp16).
+Tras la conversion, el autor aplica un ajuste supervisado (SFT) sobre UltraChat-200k y un refuerzo con GRPO usando un verificador basado en LiquidAI/d1-3B. El objetivo declarado es corregir la perdida de calidad introducida por el trasplante arquitectonico (la perplejidad subio de 7,95 a 11,86 solo con la conversion) y explorar tecnicas de edicion de pesos sin gradientes descritas en el paper arXiv:2611.09382.
 
-Por tanto, esta ficha se limita a recoger lo verificable y marca explicitamente como "no disponible" todo aquello que no puede confirmarse. Cualquier evaluacion de capacidades, rendimiento o idoneidad para produccion requeriria acceso a la model card completa, a los archivos del repositorio y a una evaluacion empirica por parte del lector.
+El modelo se posiciona como un experimento de investigacion sobre arquitecturas hibridas y programacion en el espacio de pesos, orientado a despliegue en el borde (edge) por su tamano contenido (2.393 B parametros en bf16, 5,80 GB). Su relevancia actual radica en que demuestra que es posible reutilizar pesos de un transformer denso en una topologia con atencion lineal sin reentrenar desde cero, aunque con costes medibles de fidelidad.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (presumiblemente transformer, sin confirmar) |
-| Parametros totales | no disponible (el nombre sugiere ~2B) |
-| Parametros activos | no aplica (no se ha confirmado que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
+| Arquitectura | Hibrida: Gated DeltaNet (atencion lineal) + GQA full-attention, con bloque recurrente ACT/LoRA y bloques preparados para MoE |
+| Parametros totales | 2.393 B (bf16 segun model card); 2.901.248.899 segun safetensors |
+| Parametros activos | no disponible (los bloques MoE estan disponibles como objetivo de fine-tuning, no activos en este checkpoint) |
+| Longitud de contexto | 256k posiciones nativas (RoPE theta=1e7) |
+| Tipos de cuantizacion | no disponible (pesos publicados en bf16; no se documentan cuantizaciones GGUF/AWQ/GPTQ) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | no disponible (repositorio etiquetado como pytorch; 53,1 GB en total) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors (bf16, 4 shards, 335 tensores) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la informacion disponible. El tag `pytorch` indica que los pesos estan en formato PyTorch, pero no se especifica si se trata de un transformer denso, un modelo MoE, una arquitectura hibrida con capas de estado o cualquier otra variante. Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO u otras tecnicas de alineacion, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal.
+La arquitectura OpenMythos sigue el esquema `Embed → [11 x TransformerBlock] → [RecurrentBlock] → [12 x TransformerBlock] → RMSNorm → tied Head`. Cada TransformerBlock combina atencion pre-norm con feed-forward SwiGLU (dimension 6144), e incluye de forma opcional Mixture-of-Experts, Mixture-of-Depths, cabeza de Multi-Token-Prediction, atencion dispersa (DSA) y memoria KV de largo plazo como objetivos de fine-tuning. La atencion es hibrida: 18 capas usan Gated DeltaNet lineal y 6 usan GQA completa. El vocabulario es de 248.320 tokens. La fidelidad de la conversion se documento con paridad de modulo del 0,43 % en Gated DeltaNet y coseno de 0,996 en las capas GQA, con 0 tensores faltantes o inesperados en `load_state_dict`.
 
-El tamano del repositorio (53,1 GB) es anomalo para un modelo de 2B: en fp16 los pesos ocuparian del orden de 4 GB, y en fp32 alrededor de 8 GB. Esto sugiere que el repositorio puede contener multiples checkpoints, estados del optimizador, versiones intermedias del entrenamiento o pesos en varios formatos, pero no es posible confirmarlo sin inspeccionar los archivos.
+El entrenamiento consistio en una fase de SFT sobre UltraChat-200k seguida de GRPO con un verificador basado en LiquidAI/d1-3B. La model card reporta que la conversion 1:1 degradó la perplejidad de 7,9467 a 11,8564 en un conjunto held-out de 12.313 tokens, y que 150 pasos de destilacion desde un profesor Qwen3.5-2B la llevaron a 6,2327 (0,78x respecto al original). En GSM8K, la precision paso del 4 % (1/24) tras la conversion al 29,2 % (7/24) tras la destilacion. Tambien se documento una edicion de pesos sin gradientes (Weight-Space Programming) que modifico 2.046 pesos bf16 (0,0163 %) en `coda.11.ffn.down.weight`, columna 869, mejorando la NLL de desarrollo de 3,0670 a 3,0564 y la held-out de 3,0452 a 3,0350, con una edicion de control de signo opuesto que empeoro ambas metricas.
 
 ## Capacidades
 
-- Generacion de texto: no confirmada en la informacion disponible.
-- Razonamiento, codigo y matematicas: no disponible.
-- Soporte de tool calling o function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (no se declaran idiomas).
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
-
-No se puede afirmar ninguna capacidad concreta del modelo a partir de los metadatos publicos. Cualquier uso en produccion deberia ir precedido de una evaluacion directa del modelo.
+- Generacion de texto conversacional y de instrucciones, tras SFT sobre UltraChat-200k.
+- Razonamiento matematico basico: 29,2 % en GSM8K (7/24) tras destilacion, frente al 4 % previo.
+- Razonamiento multi-paso con bloque recurrente ACT/LoRA intermedio.
+- Capacidad de seguir instrucciones reforzada mediante GRPO con verificador externo.
+- Soporte de contexto largo: hasta 256k posiciones nativas con RoPE theta=1e7.
+- Edicion de pesos sin gradientes (Weight-Space Programming) como capacidad de investigacion, no de inferencia.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
+- Vision, audio o thinking mode explicito: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-Dado que no se dispone de informacion verificada sobre capacidades, contexto o licencia, los siguientes casos son escenarios genericos para un modelo de ~2B orientado a edge, y deben validarse empiricamente antes de adoptarse:
-
-- Inferencia en dispositivos de borde: por su tamano nominal (~2B), el modelo podria ejecutarse en GPUs de consumo o en hardware integrado si los pesos estan cuantizados, aunque no se confirma que existan versiones cuantizadas en el repositorio.
-- Prototipado rapido en local: util para experimentar con generacion de texto en estaciones de trabajo sin GPU de datacenter, siempre que se verifique el formato de pesos disponible.
-- Clasificacion y extraccion de informacion: un modelo pequeno puede emplearse para tareas de etiquetado o extraccion sobre texto, previa evaluacion de su calidad en el dominio concreto.
-- Filtrado y moderacion de contenido: uso como clasificador auxiliar en pipelines, sujeto a validacion de sesgos y tasas de error.
-- Generacion aumentada por recuperacion (RAG) en entornos con recursos limitados: si el contexto es suficiente (dato no disponible), podria integrarse en asistentes documentales locales.
-- Evaluacion comparativa interna: util como linea base de 2B frente a otros modelos del mismo rango en pruebas propias de la organizacion.
-
-En todos los casos, la ausencia de licencia declarada impide asumir permisos de uso comercial sin consultar al autor.
+- Investigacion sobre arquitecturas hibridas de atencion: el modelo permite estudiar el impacto de sustituir capas de atencion completa por Gated DeltaNet reutilizando pesos de un transformer denso, con metricas de paridad documentadas (0,43 % de modulo, coseno 0,996).
+- Experimentacion con Weight-Space Programming: sirve como banco de pruebas para editar pesos sin gradientes y validar que las mejoras en NLL se transfieren de desarrollo a held-out, replicando el protocolo del paper arXiv:2611.09382.
+- Despliegue en dispositivos de borde: con 2.393 B parametros en bf16 (5,80 GB) y atencion lineal en 18 de 24 capas, el coste de atencion crece de forma lineal con la longitud, lo que lo hace adecuado para entornos con memoria limitada y secuencias largas.
+- Generacion de texto conversacional en prototipos: el SFT sobre UltraChat-200k y la perplejidad held-out de 6,2327 lo hacen util para asistentes de chat experimentales donde se prioriza el coste bajo frente a la calidad de modelos mayores.
+- Destilacion y ajuste fino como base: al ser un checkpoint Apache-2.0 con pesos bf16 y configuracion documentada, puede servir como punto de partida para fine-tuning con LoRA en tareas especificas (los bloques MoE, DSA y memoria KV estan expuestos como objetivos de entrenamiento).
+- Evaluacion de verificadores en RL: el pipeline GRPO con verificador LiquidAI/d1-3B documentado permite reproducir y comparar estrategias de refuerzo con recompensa basada en modelo en modelos de ~2B.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+| Benchmark | OpenMythos-2B (convertido, pre-SFT) | OpenMythos-2B (SFT, este repo) | Qwen3.5-2B (original) |
+|---|---|---|---|
+| Perplejidad held-out (12.313 tokens) | 11,8564 (1,49x) | 6,2327 (0,78x) | 7,9467 (1,00x) |
+| GSM8K (greedy, 24 muestras) | 4 % (1/24) | 29,2 % (7/24) tras destilacion | no disponible |
+
+No se han publicado resultados de MMLU, HumanEval ni otros benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia teorica para un modelo denso de ~2B: en fp16 aproximadamente 4-5 GB de VRAM; en cuantizacion de 8 bits alrededor de 2-3 GB; en 4 bits alrededor de 1,5-2,5 GB. Estas cifras son estimaciones genericas y no estan confirmadas para este modelo.
-- GPU recomendadas: no disponible. Por tamano nominal, cabria esperar funcionamiento en GPUs de consumo como RTX 3060, RTX 4060, RTX 4090 o superiores, pero no hay confirmacion.
-- Cabe en consumer GPU: probablemente si, segun el tamano nominal, pero no confirmado.
-- Opciones de despliegue: no disponible. No se confirma la existencia de pesos GGUF para llama.cpp u Ollama, ni compatibilidad con vLLM o TGI.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia en bf16: aproximadamente 5,8 GB para pesos mas overhead de activaciones y cache KV; con contexto de 256k la cache KV crece de forma significativa pese a la atencion lineal en 18 capas.
+- GPU recomendadas: el autor reporta pruebas en Tesla T4 (16 GB) en bf16, por lo que cabe en GPUs de gama media como RTX 4090 (24 GB), A10G (24 GB) o L4 (24 GB).
+- Cabe en GPU de consumo: si, en tarjetas con 8 GB o mas en bf16, y potencialmente menos con cuantizacion (no documentada).
+- Opciones de despliegue: transformers (libreria declarada); vLLM, llama.cpp, Ollama y TGI no estan confirmados en la informacion disponible, y requeririan soporte para la arquitectura OpenMythos.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No es posible establecer una comparativa fiable porque no se dispone de especificaciones verificadas (contexto, licencia, rendimiento) de este modelo. Como referencia de categoria, se citan modelos de ~2B ampliamente documentados, pero la comparacion cuantitativa queda pendiente de datos:
-
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
-| okolxc/openmythos-2b-edge | ~2B (segun nombre, no confirmado) | no disponible | no disponible | Hugging Face, 123 descargas |
-| Gemma 2 2B | ~2,6B | 8K tokens | Gemma Terms | Hugging Face, ampliamente documentado |
-| Qwen2.5 1.5B | ~1,5B | 32K tokens | Apache 2.0 (mayoria de variantes) | Hugging Face, ampliamente documentado |
-| Llama 3.2 1B | ~1,2B | 128K tokens | Llama 3.2 Community License | Hugging Face, ampliamente documentado |
+| OpenMythos-2B Edge | 2.393 B (bf16) | 256k | Apache-2.0 | Arquitectura hibrida Gated DeltaNet + GQA, SFT + GRPO, edicion de pesos documentada |
+| Qwen3.5-2B | no disponible | no disponible | Apache-2.0 | Modelo base original; perplejidad held-out 7,9467 y sin datos de GSM8K en esta ficha |
+| LiquidAI/d1-3B | no disponible | no disponible | no disponible | Usado como verificador en el pipeline GRPO del autor |
 
-Los datos de los modelos de referencia corresponden a sus fichas oficiales; los de openmythos-2b-edge no pueden confirmarse.
+No se dispone de datos suficientes para comparar rendimiento con alternativas adicionales de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- Ausencia de licencia declarada: no se puede asumir permiso de uso comercial, modificacion o redistribucion sin consultar al autor.
-- Falta de model card: no hay documentacion sobre entrenamiento, datos, sesgos o limitaciones, lo que dificulta cualquier evaluacion de riesgos.
-- Riesgo de alucinacion: desconocido, al no haber evaluaciones publicadas.
-- Sesgos conocidos: no documentados.
-- Idiomas soportados: no declarados; el rendimiento multilingue es incierto.
-- Longitud de contexto: no disponible, lo que impide planificar casos de uso con documentos largos.
-- Procedencia y mantenimiento: el repositorio tiene muy pocas descargas (123) y un unico like, lo que sugiere escasa validacion por parte de la comunidad.
-- Tamano del repositorio anomalo (53,1 GB): conviene inspeccionar los archivos antes de descargar, ya que puede contener checkpoints redundantes o estados de entrenamiento no destinados a inferencia.
-- Para produccion: se recomienda una evaluacion empirica completa (calidad, latencia, seguridad) antes de cualquier despliegue.
+- La conversion arquitectonica degrada la calidad: la perplejidad sube 1,49x antes del SFT, y el SFT solo la recupera parcialmente (0,78x del original en el conjunto medido, pero con solo 12.313 tokens de evaluacion).
+- GSM8K se evalua sobre 24 muestras, una muestra estadisticamente muy reducida; el 29,2 % no debe interpretarse como rendimiento robusto.
+- El modelo es un experimento de investigacion; no hay evidencia de validacion en produccion ni de robustez frente a entradas adversarias.
+- Riesgo de alucinacion: no cuantificado en la informacion disponible, pero esperable en un modelo de ~2B con SFT sobre UltraChat.
+- Idiomas soportados no documentados; el comportamiento multilingue es incierto.
+- La edicion de pesos sin gradientes es experimental: el propio autor reporta que en el paper 6 de 16 trayectorias tuvieron que revertirse por falta de transferencia.
+- Aunque la licencia es Apache-2.0, los pesos derivan de Qwen3.5-2B y el autor pide mantener la atribucion al redistribuir.
+- El repo ocupa 143,9 GB, muy superior al tamano del checkpoint (5,80 GB), por incluir checkpoints intermedios y `scratch_2b/`; conviene descargar solo los shards necesarios.
+- No hay informacion sobre cuantizaciones, tool calling, agentes ni soporte en motores de inferencia alternativos a transformers.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/okolxc/openmythos-2b-edge
-- No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.
+- Modelo en Hugging Face: https://huggingface.co/okolxc/openmythos-2b-edge
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
+- Verificador GRPO: https://huggingface.co/LiquidAI/d1-3B
+- Paper de Weight-Space Programming: https://arxiv.org/abs/2611.09382

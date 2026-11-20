@@ -54,31 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Weeks Calculator - Count Weeks Between Dates Quickly",
-      "url": "https://timecalculators.io/weeks-calculator",
-      "snippet": "1 day ago · Use the Weeks Calculator to determine how many weeks fall between two dates, or to add/subtract weeks from any date. …"
-    },
-    {
-      "title": "Date Calculator",
-      "url": "https://www.calculator.net/date-calculator.html",
-      "snippet": "Jan 1, 2026 · This free date calculator computes the difference between two dates. It can also add to or subtract from a date. Both …"
-    },
-    {
-      "title": "Weeks Between Two Dates Calculator",
-      "url": "https://datetimecalculator.net/weeks-between-two-dates-calculator",
-      "snippet": "Use this Weeks Between Two Dates Calculator when you want to figure the number of weeks and remaining days between two …"
-    },
-    {
-      "title": "Weeks Calculator - Count Weeks Between Two Dates",
-      "url": "https://calculatorcafe.com/time/weeks-calculator/",
-      "snippet": "Count weeks between two dates, add weeks to a date, and convert weeks to days or months. Includes pregnancy weeks, week …"
-    },
-    {
-      "title": "Weeks Calculator",
-      "url": "https://datetimecalculator.net/weeks-calculator",
-      "snippet": "Dec 1, 2022 · To use the Weeks Calculator, you just need to pick first the operation you want to use - add weeks, subtract weeks or …"
-    }
-  ]
+  "sources": []
 }

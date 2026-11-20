@@ -2,69 +2,88 @@
 
 ## Resumen
 
-OpenGCM-v2-i1-GGUF es una colección de cuantizaciones GGUF del modelo OpenGCM-v2, desarrollada por el usuario mradermacher en Hugging Face. El modelo original, alojado en `nitrai-research/OpenGCM-v2`, no dispone de información pública detallada en la ficha actual, por lo que los datos sobre arquitectura, entrenamiento o capacidades específicas son limitados. Esta versión GGUF está pensada para facilitar la ejecución local del modelo en entornos con recursos restringidos, utilizando formatos optimizados como Q4_K_M o Q5_K_M, y ha sido generada con la técnica imatrix para mejorar la calidad de la cuantización.
+OpenGCM-v2-i1-GGUF es la versión cuantizada en formato GGUF del modelo OpenGCM-v2, desarrollado originalmente por nitrai-research y convertido a GGUF por mradermacher. Se trata de un modelo de generación de texto orientado a razonamiento y trazas de agente (agent-traces), construido sobre una base de la familia Qwen (etiquetada como qwen3_5 en los tags) y afinado mediante técnicas de destilación y DoRA. Con 9.197.093.888 parámetros totales (aproximadamente 9,2 mil millones), se sitúa en la franja de modelos medianos que pueden ejecutarse en hardware de consumo con cuantizaciones agresivas.
 
-Con aproximadamente 9.200 millones de parámetros, el modelo se sitúa en la gama media de los LLM actuales, lo que permite su ejecución en GPUs de consumo como la RTX 3090 o RTX 4090 con cuantizaciones ligeras. La relevancia de esta ficha radica en que, pese a la escasez de documentación oficial, la cuantización GGUF es un formato estándar para despliegue local mediante herramientas como llama.cpp u Ollama, y su disponibilidad en el repositorio de mradermacher garantiza una instalación sencilla.
+La relevancia de esta ficha radica en que el repositorio original de nitrai-research no publica una model card detallada en la información disponible, por lo que la versión GGUF de mradermacher se convierte en la vía práctica para desplegar el modelo en entornos locales mediante llama.cpp u Ollama. El repositorio ofrece un conjunto amplio de cuantizaciones con imatrix, desde i1-Q2_K (4,0 GB) hasta i1-Q6_K (7,7 GB), lo que permite ajustar el equilibrio entre calidad y requisitos de memoria.
+
+La licencia Apache 2.0 facilita el uso comercial, y los tags indican compatibilidad con endpoints y un enfoque conversacional. No obstante, la información pública disponible sobre arquitectura interna, datos de entrenamiento y benchmarks es muy limitada, lo que se refleja en las secciones correspondientes de esta ficha.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 9.197.093.888 (aprox. 9,2 B) |
-| Parametros activos | no aplicable (no se especifica si es MoE) |
+| Arquitectura | Transformer (base Qwen, tag qwen3_5); detalles internos no disponibles |
+| Parametros totales | 9.197.093.888 (≈9,2 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (safetensors original no incluido en este repo) |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-IQ4_NL, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (imatrix/weighted); también disponibles cuantizaciones estáticas en mradermacher/OpenGCM-v2-GGUF |
+| Idiomas soportados | en (inglés, según el campo language de la model card) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo OpenGCM-v2. El repositorio original (`nitrai-research/OpenGCM-v2`) no proporciona detalles en la model card consultada. Tampoco se conocen los datos de entrenamiento, el número de tokens procesados ni si se aplicaron técnicas de alineación como RLHF o DPO. La única información técnica disponible es que el presente repositorio contiene cuantizaciones GGUF generadas con el método imatrix, que optimiza la asignación de bits según la importancia de cada tensor, y que el archivo de pesos original en formato safetensors tiene un tamaño de 9.197.093.888 parámetros.
+La información disponible indica que el modelo base es nitrai-research/OpenGCM-v2, construido sobre una arquitectura transformer de la familia Qwen (tag qwen3_5) con aproximadamente 9,2 mil millones de parámetros. Los tags del repositorio mencionan destilación (distillation), DoRA (Weight-Decomposed Low-Rank Adaptation) y agent-traces, lo que sugiere un proceso de ajuste fino orientado a imitar trazas de agentes y comportamiento de razonamiento, probablemente destilando de un modelo mayor. No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset ni la existencia de fases de RLHF o DPO.
+
+La innovación técnica destacable en este repositorio concreto es el uso de cuantizaciones con imatrix (importance matrix) generadas por mradermacher, que mejoran la calidad de las cuantizaciones de baja precisión respecto a las cuantizaciones estáticas equivalentes. El repositorio incluye el propio fichero imatrix (0,1 GB) para que los usuarios puedan generar sus propias cuantizaciones. No se han documentado innovaciones arquitectónicas adicionales como decodificación especulativa o atención lineal en la información proporcionada.
 
 ## Capacidades
 
-No se han documentado capacidades específicas del modelo en la información disponible. Al tratarse de un modelo de lenguaje de gran tamaño (9,2 B), es razonable esperar que pueda realizar tareas de generación de texto, razonamiento básico y posiblemente código, pero no se puede confirmar sin datos oficiales. Tampoco hay evidencia de soporte para tool calling, agentes, visión o modos especiales de razonamiento. Se recomienda consultar el repositorio original para obtener una descripción funcional completa.
+- Generación de texto conversacional y de razonamiento, según los tags reasoning y conversational.
+- Capacidad orientada a trazas de agente (agent-traces), lo que sugiere soporte para flujos multi-paso y razonamiento encadenado.
+- Ajuste mediante destilación y DoRA, orientado a reproducir comportamiento de modelos de mayor tamaño.
+- Soporte de tool calling / function calling: no confirmado explícitamente en la información disponible.
+- Capacidades multilingües: limitadas al inglés según el campo language de la model card; no se documentan otros idiomas.
+- Capacidades especiales (modo thinking, visión, audio): no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-Dado que no se dispone de información concreta sobre las capacidades del modelo, los casos de uso propuestos son orientativos y basados en el tamaño y formato del modelo:
-
-- Ejecución local de un asistente conversacional: al ser un modelo de 9,2 B cuantizado, puede desplegarse en una GPU de consumo (p. ej., RTX 3060 con 12 GB) mediante llama.cpp u Ollama para mantener conversaciones de baja latencia sin conexión a internet.
-- Prototipado de aplicaciones de procesamiento de lenguaje natural: su formato GGUF facilita la integración en entornos de desarrollo rápidos, permitiendo probar tareas como resumen de textos, generación de respuestas o clasificación simple antes de escalar a modelos mayores.
-- Generación de código en entornos con recursos limitados: si el modelo base tiene habilidades de programación, las cuantizaciones Q4_K_M o Q5_K_M podrían usarse para autocompletar fragmentos de código en editores locales o scripts de automatización.
-- Educación e investigación: su disponibilidad abierta (aunque con licencia desconocida) permite a estudiantes e investigadores experimentar con técnicas de cuantización y evaluación de modelos sin coste de API.
-- Despliegue en servidores edge o dispositivos con GPU modesta: la variedad de cuantizaciones (desde Q2_K hasta Q6_K) ofrece flexibilidad para ajustar el consumo de VRAM según el hardware disponible.
-- Evaluación comparativa de cuantizaciones: el repositorio incluye múltiples niveles de compresión, lo que permite medir el impacto de la cuantización en la calidad de las respuestas para un mismo modelo base.
+- Asistentes conversacionales locales: con 9,2 B de parámetros y cuantizaciones de 5-7 GB, el modelo puede ejecutarse en estaciones de trabajo con GPU de consumo para mantener conversaciones multi-turno sin depender de la nube.
+- Prototipado de agentes de razonamiento: los tags agent-traces y reasoning indican que el modelo está afinado para generar cadenas de razonamiento y trazas de acción, útil para experimentar con pipelines de agentes antes de escalar a modelos mayores.
+- Despliegue en entornos con requisitos de privacidad: al ser un modelo Apache 2.0 ejecutable localmente con llama.cpp, permite procesar datos sensibles sin salir de la infraestructura propia.
+- Evaluación de destilación y DoRA: investigadores interesados en comparar el comportamiento de modelos destilados frente a sus profesores pueden usar esta versión GGUF para pruebas de inferencia rápidas y de bajo coste.
+- Generación de texto en inglés para documentación técnica: el modelo está orientado al inglés, por lo que encaja en tareas de redacción y resumen de documentación en ese idioma.
+- Integración en herramientas de escritorio con Ollama o llama.cpp: el formato GGUF y el amplio abanico de cuantizaciones facilitan su inclusión en aplicaciones locales de asistencia a la programación o chat, ajustando la cuantización al hardware disponible.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No se dispone de puntuaciones en MMLU, HumanEval, GSM8K ni otros conjuntos de evaluación estándar. Tampoco hay comparativas con modelos similares en términos de rendimiento.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: para un modelo de ~9,2 B, las cuantizaciones más ligeras (Q2_K, IQ2_M) pueden requerir entre 4 y 5 GB de VRAM, mientras que Q5_K_M o Q6_K pueden necesitar entre 7 y 9 GB. La cuantización Q8 (no incluida) necesitaría alrededor de 10 GB.
-- GPU recomendadas: una RTX 3060 (12 GB) o RTX 4060 Ti (16 GB) es suficiente para las cuantizaciones más altas; una RTX 3090 o superior permitirá ejecutar el modelo en FP16 (si se obtiene el safetensors original) o en cuantizaciones altas con margen.
-- En consumer GPU: sí, cabe en GPUs de consumo con 8 GB o más, dependiendo de la cuantización elegida.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, GPT4All, o servidores compatibles con GGUF como llama-cpp-python. También es posible usar vLLM si se convierte a otro formato, pero no es el propósito de este repo.
-- Latencia y throughput: no se dispone de mediciones oficiales. En una RTX 4090 con cuantización Q4_K_M, se puede esperar una velocidad de generación de entre 30 y 60 tokens por segundo, pero es una estimación orientativa.
+- VRAM estimada para inferencia: entre 4,0 GB (i1-Q2_K) y 7,7 GB (i1-Q6_K) solo para los pesos; hay que añadir memoria para el contexto KV, que depende de la longitud de contexto configurada (no documentada).
+- GPU recomendadas: para cuantizaciones Q4_K_M o superiores, una GPU con 8-12 GB de VRAM es suficiente; para Q6_K se recomienda 12 GB o más. En entornos de servidor, A100 o H100 permiten mayor throughput y contextos más largos.
+- Cabe en GPU de consumo: sí, en tarjetas con 8 GB o más (RTX 3060 Ti, RTX 4060 Ti, RTX 4070, RTX 4090) usando cuantizaciones Q4 o inferiores; las cuantizaciones Q5/Q6 requieren 12 GB o más.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el tag endpoints_compatible sugiere compatibilidad con endpoints de inferencia estándar.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa fiable. El modelo base OpenGCM-v2 no tiene documentación pública, por lo que no se pueden contrastar sus parámetros, contexto o rendimiento con alternativas como Llama 3.1 8B, Mistral 7B o Gemma 2 9B. Se recomienda consultar el repositorio original para obtener datos comparativos.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| OpenGCM-v2-i1-GGUF | 9,2 B | no disponible | Apache 2.0 | GGUF | Destilado, orientado a razonamiento y agent-traces |
+| Qwen2.5-7B-Instruct (referencia de familia) | 7,6 B | 32 K (típico en la familia Qwen2.5) | Apache 2.0 | safetensors, GGUF | Modelo base ampliamente usado; comparación por familia, no por rendimiento medido |
+| Llama 3.1 8B Instruct | 8,0 B | 128 K | Llama 3.1 Community License | safetensors, GGUF | Alternativa popular en el mismo rango de tamaño; licencia no Apache |
+
+Nota: la comparación se basa en características públicas de modelos de la misma franja de parámetros; no se dispone de benchmarks de OpenGCM-v2 que permitan una comparación de rendimiento rigurosa.
 
 ## Limitaciones y advertencias
 
-- Sesgos y alucinaciones: al no conocerse el proceso de entrenamiento, no se puede evaluar el riesgo de sesgos o la fiabilidad de las respuestas. Se debe usar con precaución en contextos donde la exactitud sea crítica.
-- Licencia: la licencia del modelo original no está especificada, por lo que no se garantiza su uso comercial. Es necesario contactar con el autor original (`nitrai-research`) antes de utilizarlo en producción.
-- Pérdida de calidad por cuantización: las cuantizaciones más agresivas (Q2_K, IQ1_M) pueden degradar significativamente la coherencia y el razonamiento del modelo. Se recomienda usar Q4_K_M o superior para tareas exigentes.
-- Contexto limitado: se desconoce la longitud de contexto soportada; si es corta (p. ej., 4K tokens), no será adecuado para tareas que requieran documentos largos.
-- Falta de documentación: la ausencia de model card detallada dificulta la evaluación de capacidades y riesgos. No se recomienda su adopción en entornos empresariales sin una validación previa.
+- La model card del repositorio GGUF no documenta sesgos conocidos, datos de entrenamiento ni procesos de alineación, lo que dificulta evaluar riesgos de sesgo.
+- Riesgo de alucinación: no cuantificado; al ser un modelo destilado de 9,2 B, es esperable un comportamiento similar al de otros modelos de su tamaño, pero no hay datos publicados.
+- Limitación de idioma: el campo language solo declara inglés; el rendimiento en castellano no está garantizado ni documentado.
+- Longitud de contexto no disponible: no se puede planificar el uso en tareas de contexto largo sin verificar la configuración del modelo base.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base nitrai-research/OpenGCM-v2 y de la familia Qwen subyacente.
+- Las cuantizaciones de baja precisión (Q2, Q3) degradan la calidad; para producción se recomienda Q4_K_M o superior.
+- No hay información sobre tool calling ni soporte de agentes verificado más allá de los tags; conviene validar en el caso de uso concreto antes de desplegar.
 
 ## Enlaces
 
-- Repositorio de cuantizaciones: [mradermacher/OpenGCM-v2-i1-GGUF](https://huggingface.co/mradermacher/OpenGCM-v2-i1-GGUF)
-- Repositorio del modelo original: [nitrai-research/OpenGCM-v2](https://huggingface.co/nitrai-research/OpenGCM-v2)
-- Perfil del autor de las cuantizaciones: [mradermacher en Hugging Face](https://huggingface.co/mradermacher)
-- Página de descarga de cuantizaciones (beta): [hf.tst.eu/model](https://hf.tst.eu/model)
+- Repositorio GGUF: https://huggingface.co/mradermacher/OpenGCM-v2-i1-GGUF
+- Modelo base: https://huggingface.co/nitrai-research/OpenGCM-v2
+- Cuantizaciones estáticas: https://huggingface.co/mradermacher/OpenGCM-v2-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#OpenGCM-v2-i1-GGUF
+- README de referencia para uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfica de calidad de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests

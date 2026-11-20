@@ -2,92 +2,88 @@
 
 ## Resumen
 
-Qwen3-4B-Instruct-2507-heretic-GGUF es una colección de cuantizaciones GGUF del modelo heretic-org/Qwen3-4B-Instruct-2507-heretic, publicada por el usuario tinyopsec en Hugging Face. El modelo base es Qwen3-4B-Instruct-2507, un modelo instruccional de 4.022 millones de parámetros desarrollado por el equipo Qwen de Alibaba, y la variante "heretic" ha sido sometida a un proceso de decensura (abliteration/decensoring) mediante la herramienta Heretic, que elimina los mecanismos de rechazo del modelo sin necesidad de reentrenamiento completo.
+Qwen3-4B-Instruct-2507-heretic-GGUF es una distribucion de pesos cuantizados en formato GGUF del modelo heretic-org/Qwen3-4B-Instruct-2507-heretic, publicada por el usuario tinyopsec. El modelo subyacente deriva de Qwen3-4B-Instruct-2507, un transformer denso de 4.022.468.096 parametros (aproximadamente 4B) desarrollado originalmente por el equipo Qwen de Alibaba, sobre el que se ha aplicado un proceso de "abliteration" (eliminacion de rechazos) por parte de heretic-org. Esta version concreta no modifica los pesos mas alla de la cuantizacion: su aportacion es empaquetar el modelo en 13 variantes GGUF listas para inferencia local con llama.cpp.
 
-El problema que resuelve esta variante es la eliminación de los filtros de seguridad y las negativas del modelo original, lo que permite obtener respuestas sin las restricciones de alineación típicas de los modelos comerciales. Es relevante para usuarios que ejecutan modelos localmente con llama.cpp, Ollama, LM Studio o koboldcpp y que buscan un modelo pequeño (4B) con comportamiento sin censura.
+El interes practico reside en que permite ejecutar un modelo de 4B parametros en hardware de consumo con perdida de calidad controlada, manteniendo la licencia Apache 2.0 del modelo original. La etiqueta "heretic" indica que se ha reducido el comportamiento de rechazo ante peticiones que el modelo base declinaria, lo que cambia el perfil de seguridad respecto al Qwen3 original.
 
-La publicación incluye 13 archivos GGUF con cuantizaciones que van desde F16 (precisión completa, ~8 GB) hasta Q2_K (2 bits), lo que permite ajustar el equilibrio entre calidad y consumo de memoria según el hardware disponible. La licencia es Apache 2.0, heredada del modelo base.
+La informacion publicada por el autor es minima: no se detallan idiomas soportados, datos de entrenamiento ni resultados de benchmarks. La ficha se limita, por tanto, a lo verificable en la model card y en los metadatos de Hugging Face, marcando explicitamente como "no disponible" todo aquello que el autor no documenta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder (familia Qwen3); detalle especifico no disponible |
-| Parametros totales | 4.022.468.096 (~4,02 B) |
-| Parametros activos | No aplicable (no es MoE) |
-| Longitud de contexto | No disponible en la ficha; el modelo base Qwen3-4B-Instruct-2507 soporta 262.144 tokens (dato del modelo base, no confirmado en esta repo) |
+| Arquitectura | Transformer denso (derivado de Qwen3-4B-Instruct-2507) |
+| Parametros totales | 4.022.468.096 |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
 | Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q5_0, Q4_K_M, Q4_K_S, Q4_0, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
-| Idiomas soportados | No disponible |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (generado con llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3-4B-Instruct-2507, un modelo instruccional de la familia Qwen3 basado en una arquitectura transformer decoder densa de unos 4.022 millones de parámetros. No es un modelo MoE, por lo que todos los parámetros están activos en cada pasada de inferencia. Los detalles concretos de la arquitectura (número de capas, cabezas de atención, dimensiones ocultas) no están disponibles en la información proporcionada.
+El modelo es un transformer denso de aproximadamente 4B parametros, heredado de Qwen3-4B-Instruct-2507. La model card de esta distribucion no aporta detalles sobre la arquitectura interna (numero de capas, dimension del modelo, mecanismo de atencion, uso de RoPE o de atencion con ventana deslizante) ni sobre el proceso de entrenamiento del modelo base: no se indica el volumen de tokens, la composicion del corpus, ni si hubo fases de RLHF, DPO o aprendizaje por preferencias.
 
-La innovación principal de esta variante no está en la arquitectura sino en el post-procesado: el proyecto Heretic aplica técnicas de abliteration/decensoring que modifican los pesos del modelo para suprimir las direcciones internas responsables de los rechazos por seguridad, sin reentrenamiento supervisado ni RLHF adicional. Los datos de entrenamiento del modelo base (número de tokens, composición del dataset) no están disponibles en la información proporcionada. Las cuantizaciones GGUF incluidas en el repositorio fueron producidas con llama.cpp y ocupan un total de 39,3 GB en el repositorio.
+La unica transformacion documentada es la cuantizacion mediante llama.cpp, que produce las 13 variantes GGUF listadas. El paso previo de "abliteration" fue realizado por heretic-org sobre el checkpoint original; esta ficha no dispone de la metodologia exacta empleada en ese proceso. No se documentan innovaciones tecnicas adicionales como decodificacion especulativa, atencion lineal o modos de razonamiento extendido.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el modelo base es una variante Instruct optimizada para dialogo y seguimiento de instrucciones.
-- Sin censura: la version heretic elimina los rechazos tipicos, respondiendo a peticiones que el modelo original declinaria (con los riesgos eticos y legales asociados).
-- Razonamiento general y resolucion de problemas: heredado del modelo base Qwen3-4B-Instruct-2507, aunque los niveles concretos de benchmark no estan disponibles en esta ficha.
-- Generacion de codigo: capacidad basica heredada del modelo base, sin datos cuantitativos disponibles.
-- Compatibilidad con runtimes GGUF: funciona con llama.cpp, Ollama, LM Studio, koboldcpp y cualquier runtime compatible con el formato.
-- No hay evidencia en la informacion proporcionada de soporte nativo de vision, audio, tool calling ni modos de thinking.
+- Generacion de texto conversacional, segun el pipeline declarado (text-generation) y la etiqueta conversational.
+- Razonamiento y respuesta a instrucciones, heredados del modelo base Qwen3-4B-Instruct-2507.
+- Comportamiento de rechazo reducido respecto al modelo original, por el tratamiento "heretic" aplicado por heretic-org.
+- Compatibilidad con endpoints (tag endpoints_compatible), lo que sugiere uso en servicios de inferencia compatibles con la API de Hugging Face.
+- Soporte de tool calling, agentes o razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
+- Capacidades de vision o audio: no disponibles (el modelo es de texto).
 
 ## Casos de uso
 
-- Chatbot local sin filtros: ejecucion en local con LM Studio u Ollama para conversaciones donde el usuario quiere evitar los rechazos del modelo original; el tamano de 4B lo hace viable en portatiles y GPUs de consumo.
-- Escritura creativa sin restricciones: generacion de narrativa o ficcion en la que el modelo original introduciria negativas; las cuantizaciones Q4_K_M ofrecen un buen equilibrio de calidad y VRAM para sesiones largas.
-- Investigacion en alineacion y seguridad: estudio de como las tecnicas de abliteration modifican el comportamiento de un modelo instruccional moderno, comparando respuestas antes y despues del decensoring.
-- Integracion en pipelines con llama.cpp: uso de llama-cli o el servidor de llama.cpp para servir el modelo via API en entornos con recursos limitados, aprovechando cuantizaciones de 2-3 bits en hardware muy modesto.
-- Prototipado rapido de asistentes: el tamano reducido permite iterar rapidamente en dispositivos sin GPU dedicada, con latencias bajas para un modelo de 4B.
-- Red teaming y evaluacion de robustez: prueba de resistencias y comportamientos limite de modelos decensurados en entornos controlados y con fines de investigacion.
+- Inferencia local en portatil o estacion de trabajo: con las variantes Q4_K_M o Q5_K_M, el modelo ocupa entre 2,5 y 3 GB aproximadamente, lo que permite ejecutarlo en CPU o en GPU de gama media sin conexion a red.
+- Prototipado rapido de asistentes conversacionales: la licencia Apache 2.0 y el formato GGUF facilitan integrar el modelo en demos con llama.cpp u Ollama antes de decidir si se escala a un modelo mayor.
+- Generacion de texto en entornos con restricciones de privacidad: al ejecutarse en local, los datos no salen del equipo, lo que resulta adecuado para procesar documentos internos o conversaciones sensibles.
+- Experimentacion con alineacion y seguridad: el caracter "heretic" del modelo lo convierte en una pieza util para estudiar como varia el comportamiento de rechazo tras el abliteration, comparandolo con el Qwen3-4B-Instruct-2507 original.
+- Fine-tuning ligero o adaptacion con LoRA: el checkpoint base en safetensors (4.022.468.096 parametros) puede servir de punto de partida para ajustes especificos de dominio antes de volver a cuantizar.
+- Despliegue en dispositivos con poca VRAM: las variantes Q3_K_S y Q2_K reducen el peso a alrededor de 1,5-2 GB, utiles para GPUs de 4 GB o para ejecucion en CPU con llama.cpp.
+- Evaluacion comparativa de cuantizaciones: disponer de 13 niveles permite medir la degradacion de calidad entre F16 y Q2_K sobre el mismo modelo en tareas concretas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Los resultados del modelo base Qwen3-4B-Instruct-2507 (MMLU, HumanEval, GSM8K, etc.) no estan incluidos en la model card de esta repo y no se reproducen aqui para no inventar datos.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del autor no incluye tablas de MMLU, HumanEval, GSM8K ni comparaciones con otros modelos, y tampoco se aportan mediciones de latencia o throughput.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada segun cuantizacion, para el tamano del archivo sin KV cache):
-  - F16: ~8 GB
-  - Q8_0: ~4,3 GB
-  - Q6_K: ~3,3 GB
-  - Q5_K_M: ~2,9 GB
-  - Q4_K_M (recomendada por el autor): ~2,5 GB
-  - Q3_K_M: ~2 GB
-  - Q2_K: ~1,6 GB
-- GPU recomendadas: cualquier GPU con 4-6 GB de VRAM para cuantizaciones de 4-5 bits (RTX 3060 12 GB, RTX 4060, RTX 4090 con holgura); en CPU pura es viable con cuantizaciones bajas, aunque con latencias mayores.
-- Consumer GPUs: cabe con holgura en GPUs de 8 GB (RTX 3060 Ti, RTX 4060 Ti, RTX 4070) incluso en Q6_K; en GPUs de 4 GB solo con Q2_K/Q3_K.
-- Opciones de despliegue: llama.cpp (llama-cli y llama-server), Ollama, LM Studio, koboldcpp y cualquier runtime compatible con GGUF.
-- Latencia y throughput: no disponible; al ser un modelo denso de 4B, se espera inferencia rapida en GPU de consumo, pero no hay mediciones publicadas en la repo.
+- VRAM estimada para inferencia (aproximada, segun el tamano de cada archivo GGUF): F16 en torno a 8 GB; Q8_0 en torno a 4,5 GB; Q6_K en torno a 3,5 GB; Q5_K_M en torno a 3 GB; Q4_K_M en torno a 2,5 GB; Q3_K_M en torno a 2 GB; Q2_K en torno a 1,5 GB. Son estimaciones por tamano de pesos, no medidas publicadas por el autor.
+- GPU recomendadas: para F16, una RTX 4090 (24 GB) o una A100/H100 sobran; para Q8_0 basta una RTX 3060 de 12 GB o superior; para Q4_K_M y Q5_K_M, GPUs de 6-8 GB como RTX 3060 Ti, RTX 4060 o RTX 2070.
+- Cabe en GPU de consumo: si, en todas las cuantizaciones desde Q5_K_M hacia abajo con GPUs de 6-8 GB; las variantes Q3 y Q2 caben en GPUs de 4 GB.
+- Opciones de despliegue: llama.cpp (herramienta con la que se generaron los GGUF), Ollama, y cualquier runtime compatible con GGUF; el tag endpoints_compatible sugiere tambien uso con endpoints de Hugging Face.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Formato | Cuantizaciones | Licencia | Particularidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3-4B-Instruct-2507-heretic (este) | 4,02 B | GGUF | F16 a Q2_K (13 variantes) | Apache 2.0 | Decensurado con Heretic |
-| Qwen/Qwen3-4B-Instruct-2507 (base) | 4,02 B | Safetensors | Oficiales de Qwen | Apache 2.0 | Modelo original con alineacion estandar |
-| heretic-org/Qwen3-4B-Instruct-2507-heretic | 4,02 B | No especificado en la info | No disponible | No disponible | Fuente del decensoring, pesos originales abliterated |
+| tinyopsec/Qwen3-4B-Instruct-2507-heretic-GGUF | 4,02B | no disponible | Apache 2.0 | GGUF (13 variantes) | Version abliterated cuantizada |
+| heretic-org/Qwen3-4B-Instruct-2507-heretic | 4,02B | no disponible | Apache 2.0 | safetensors | Modelo base de esta distribucion |
+| Qwen3-4B-Instruct-2507 (original) | 4,02B | no disponible en esta ficha | Apache 2.0 | safetensors | Modelo de referencia sin abliteration |
 
-Frente al modelo base, esta variante ofrece el mismo tamano y arquitectura pero sin mecanismos de rechazo, a cambio de una posible degradacion en capacidad de razonamiento y mayor riesgo de salidas problematicas. No hay datos cuantitativos comparativos publicados en la repo.
+La comparacion con el Qwen3-4B-Instruct-2507 original se limita a parametros y licencia, ya que no se dispone de datos de contexto ni de benchmarks en la informacion proporcionada para ninguno de los tres.
 
 ## Limitaciones y advertencias
 
-- Modelo decensurado/abliterated: carece de salvaguardas de seguridad; puede generar contenido ofensivo, peligroso o ilegal. El propio autor incluye un disclaimer pidiendo evaluar el modelo antes de usarlo.
-- Riesgo de alucinacion: tipico de modelos de 4B; el proceso de abliteration puede agravar la degradacion de calidad respecto al modelo base, aunque no hay mediciones publicadas.
-- Degradacion por cuantizacion: las variantes Q2_K y Q3_K sufren perdidas de calidad notables; el autor recomienda Q4_K_M como equilibrio.
-- Idiomas: no especificados en la ficha; el modelo base Qwen3 esta orientado principalmente a chino e ingles, por lo que el rendimiento en castellano puede ser inferior al de esos idiomas.
-- Licencia: Apache 2.0 permite uso comercial, pero la responsabilidad legal sobre el contenido generado recae en el usuario; el decensoring no altera la licencia del modelo base.
-- Contexto: la longitud de contexto no esta confirmada en esta repo; verificar la ficha del modelo base antes de depender de contextos largos.
-- Sin datos de benchmarks: no hay evidencia publicada del impacto del decensoring en tareas estandar, por lo que conviene evaluarlo en el caso de uso concreto antes de produccion.
+- El proceso de abliteration reduce los rechazos del modelo; esto puede traducirse en respuestas a peticiones que el modelo original declinaria, con implicaciones de seguridad y de cumplimiento que deben evaluarse antes de un despliegue en produccion.
+- No hay informacion sobre sesgos del modelo base ni sobre como el abliteration los afecta.
+- Riesgo de alucinacion: no cuantificado por el autor; en un modelo de 4B es esperable, pero no se aportan datos.
+- Idiomas soportados no documentados; no se puede garantizar un rendimiento adecuado fuera del ingles o el chino sin pruebas propias.
+- Longitud de contexto no especificada en esta distribucion; conviene verificar el valor en la model card del modelo base antes de disenar aplicaciones con contexto largo.
+- Las cuantizaciones Q3 y Q2 introducen degradacion de calidad adicional que el autor no mide.
+- La licencia Apache 2.0 permite uso comercial, pero el autor de esta distribucion no ofrece garantias ni soporte; la responsabilidad sobre el comportamiento del modelo recae en quien lo despliega.
+- El repositorio tiene 0 likes y un unico publicador; no hay senales de mantenimiento o validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/tinyopsec/Qwen3-4B-Instruct-2507-heretic-GGUF
-- Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
-- Modelo abliterated original: https://huggingface.co/heretic-org/Qwen3-4B-Instruct-2507-heretic
-- Proyecto Heretic: no disponible (no se ha proporcionado enlace en la informacion)
-- llama.cpp: https://github.com/ggml-org/llama.cpp
+- Modelo en Hugging Face: https://huggingface.co/tinyopsec/Qwen3-4B-Instruct-2507-heretic-GGUF
+- Modelo base (heretic-org): https://huggingface.co/heretic-org/Qwen3-4B-Instruct-2507-heretic
+- Repositorio de llama.cpp (herramienta de cuantizacion): no disponible en la informacion proporcionada
+- Paper o blog del modelo original Qwen3: no disponible en la informacion proporcionada
+- Demos o espacios asociados: no disponible en la informacion proporcionada

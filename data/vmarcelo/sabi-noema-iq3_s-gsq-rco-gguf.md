@@ -2,90 +2,96 @@
 
 ## Resumen
 
-Sabi-Noema IQ3_S (GSQ-RCO map) es una cuantización GGUF en formato IQ3_S del modelo [sabicap/sabi-noema](https://huggingface.co/sabicap/sabi-noema), un fine-tune por RL sobre Qwen3.8-27B publicado por sabicap. El autor de esta versión, vmarcelo, reproduce el mapa de asignación de tipos por tensor del trabajo GSQ + RCO de ISTA-DASLab, aplicándolo a pesos K-quant estándar de llama.cpp guiados por una matriz de importancia (imatrix). El resultado es un fichero de 11,77 GB (3,50 bits por peso) que reproduce el tamaño del original de ISTA, aunque no necesariamente sus resultados de benchmark, tal y como advierte la propia model card.
+Sabi-Noema IQ3_S GSQ-RCO es una cuantización GGUF de 3,50 bits por peso del modelo `sabicap/sabi-noema`, un fine-tune por RL sobre Qwen3.8-27B orientado a conversación, uso agéntico y tool calling. La publica el usuario `vmarcelo` y su interés principal reside en que reproduce el mapa de asignación por tensor (RCO) del equipo ISTA-DASLab para su cuantización IQ3_S de Qwen3.8-27B, de modo que el archivo resultante ocupa lo mismo que el de ISTA (11,77 GB) pero con los pesos del fine-tune de sabicap, no con los pesos optimizados por GSQ.
 
-El modelo base es conversacional y agéntico, con soporte de tool calling en formato XML de Qwen3.8, bloques de razonamiento (thinking) y capacidades multimodales mediante un proyector de visión incluido como archivo separado. La relevancia de esta cuantización está en permitir ejecutar un modelo de ~27B parámetros con razonamiento y uso de herramientas en hardware de consumo, con una ventana de contexto de 131.072 tokens y decodificación especulativa opcional mediante una cabeza DFlash.
+El modelo subyacente es un transformer denso de 26.895.998.464 parámetros (unos 26,9 mil millones), con 64 bloques de texto y sin cabeza MTP (`mtp_num_hidden_layers: 0`). Se distribuye en tres archivos: el modelo principal en IQ3_S, un proyector multimodal `mmproj` en Q5_K-MIX (332 MB) que habilita entrada de visión, y una cabeza borrador DFlash en Q4_0 (1,09 GB) para decodificación especulativa. Todo el paquete es Apache-2.0, heredada de Qwen3.8-27B.
 
-## Especificaciones tecnicas
+Es relevante ahora porque demuestra una práctica reproducible de cuantización de baja precisión guiada por matriz de importancia y mapa por tensor, con un aviso explícito del autor: heredar la asignación de ISTA no hereda sus puntuaciones de benchmark. El autor recomienda además migrar a la versión con cabeza MTP publicada posteriormente.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia Qwen3.8), con soporte de decodificación especulativa DFlash/MTP |
-| Parametros totales | 26.895.998.464 (~26,9B, dato del checkpoint safetensors) |
-| Parametros activos | no disponible (no hay indicios de arquitectura MoE) |
-| Longitud de contexto | 131.072 tokens (según los comandos de ejemplo de la model card) |
-| Tipos de cuantizacion | IQ3_S (3,50 bpw) con mapa de tipos por tensor GSQ-RCO de ISTA; mmproj en Q5_K-MIX (~5 bpw); draft DFlash en Q4_0 |
+| Arquitectura | Transformer denso (familia Qwen3.8), 64 bloques de texto, sin cabeza MTP |
+| Parámetros totales | 26.895.998.464 (≈26,9 B) |
+| Parámetros activos | no aplica (modelo denso) |
+| Longitud de contexto | 131.072 tokens (configurado en los ejemplos de uso; 65.536 si se carga la cabeza borrador DFlash en 16 GB de VRAM) |
+| Tipos de cuantización | IQ3_S (modelo principal, 3,50 bpw); Q5_K-MIX (proyector multimodal, ≈5 bpw); Q4_0 (cabeza DFlash, 4,5 bpw) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (851 tensores, 64 bloques de texto, sin cabeza MTP) |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base, sabi-noema, es un fine-tune por aprendizaje por refuerzo sobre Qwen3.8-27B, un transformer denso de la familia Qwen. Esta derivación no altera la arquitectura: se limita a cuantizar los pesos. El proceso de construcción documentado es el siguiente: primero se convierte el checkpoint safetensors a GGUF BF16 (sin pérdida de precisión, con `--no-mtp` porque el modelo base declara `mtp_num_hidden_layers: 0`); después se cuantiza con `llama-quantize` usando la matriz de importancia publicada por ISTA (`imatrix-qwen3.8-27b.gguf`, calibrada sobre Qwen3.8-27B base con 1000 fragmentos) y un mapa de 554 sobrescrituras de tipo por tensor que reproduce la asignación IQ3_S del pipeline GSQ-RCO de ISTA-DASLab, verificada sin discrepancias contra el volcado oficial `rco-allocation.txt` y contra los tipos de tensor de otro modelo con la misma arquitectura.
+La arquitectura es la de Qwen3.8-27B: un transformer denso de 64 bloques con atención completa en una parte de las capas (el mapa de cuantización incluye 16 tensores `attn_output` de atención completa) y sin capa de predicción multi-token, ya que el checkpoint de origen declara `mtp_num_hidden_layers: 0`. Sobre esa base, sabicap aplicó un fine-tune por refuerzo (RL) orientado a comportamiento conversacional, agéntico y de uso de herramientas; la model card no detalla el número de tokens de entrenamiento ni la composición del dataset de RL.
 
-Sobre el entrenamiento del modelo base no se detallan en la model card el número de tokens ni la composición del dataset; solo se indica que se trata de un RL fine-tune sobre Qwen3.8-27B. Como innovación técnica relevante, la cuantización aplica el método GSQ + RCO de ISTA-DASLab en su variante de "mapa de asignación" (reproduce qué tensor recibe qué tipo, no los pesos optimizados por GSQ), y se documenta un detalle de reproducibilidad importante: en `--tensor-type-file`, las entradas genéricas (`output.weight`, `token_embd.weight`) deben ir al final porque `llama-quantize` aplica primera-coincidencia-gana por regex.
+El proceso de cuantización es el elemento técnico destacable. Primero se convirtió el checkpoint safetensors a GGUF BF16 de forma bit-exacta con `convert_hf_to_gguf.py --outtype bf16 --no-mtp`. Después se reutilizó la matriz de importancia publicada por ISTA-DASLab (`imatrix-qwen3.8-27b.gguf`, calibrada sobre Qwen3.8 base con 1000 chunks) y se aplicaron las 554 sobrescrituras de tipo por tensor del mapa RCO de ISTA, verificadas byte a byte contra el volcado `rco-allocation.txt` y contra los tipos de tensor de `ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-IQ3_S-mtp.gguf`, con cero discrepancias. La cuantización final se ejecutó con `llama-quantize --imatrix --tensor-type-file`. El autor documenta una trampa de reproducibilidad: `llama-quantize` aplica la primera coincidencia de regex, por lo que las líneas genéricas `output.weight` y `token_embd.weight` deben ir al final; colocadas al principio sobrescribían 16 tensores `attn_output` a `q4_k`.
+
+Conviene subrayar la advertencia del autor: este archivo reproduce la asignación de ISTA, no sus pesos. Los pesos GSQ-optimizados solo pueden provenir del pipeline GSQ de ISTA, de modo que aquí cabe esperar el tamaño de archivo de ISTA, no sus resultados de benchmark.
 
 ## Capacidades
 
-- Generación de texto conversacional, con plantilla de chat embebida que se activa con `--jinja` en llama.cpp.
-- Razonamiento con bloques de thinking (formato Qwen3.8); los ejemplos usan `--no-reasoning-preserve`, que coincide con cómo se ejecutaron las evaluaciones publicadas de sabi-noema.
-- Uso de herramientas (tool calling) en el formato XML de Qwen3.8, con etiquetas "agentic" y "tool-use" en la model card.
-- Capacidades de visión mediante el archivo `mmproj-Qwen3.8-27B-Q5_K-MIX.gguf` (encoder de visión más proyector, cuantizado en mezcla Q5_0/Q6_K), probado con resultados idénticos al proyector BF16 en lectura de gráficos.
-- Decodificación especulativa mediante cabeza DFlash (Q4_0, 1,09 GB) incluida en el repositorio, con alternativa MTP como sidecar (no benchmarkada).
-- Contexto largo de hasta 131.072 tokens en los comandos de ejemplo.
-- Soporte multi-turno y despliegue como servidor con `llama-server`.
+- Generación de texto conversacional multi-turno con plantilla de chat Qwen3.8 y bloque de pensamiento (thinking), renderizado mediante `--jinja`.
+- Tool calling en formato XML de Qwen3.8, con soporte de function calling integrado en la plantilla.
+- Comportamiento agéntico y razonamiento multi-paso, según los tags del modelo (`agentic`, `tool-use`).
+- Entrada multimodal (visión) al cargar el proyector `mmproj-Qwen3.8-27B-Q5_K-MIX.gguf` junto al modelo principal.
+- Decodificación especulativa mediante cabeza borrador DFlash (recomendada) o, en principio, mediante una cabeza MTP como sidecar.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Razonamiento y matemáticas: no se documentan evaluaciones específicas en la información disponible.
 
 ## Casos de uso
 
-- Chatbots conversacionales autoalojados: con `llama-server` y la plantilla de chat embebida, el modelo puede servir como backend de asistente multi-turno en infraestructura propia, sin depender de APIs externas y con licencia Apache-2.0 sin restricciones comerciales.
-- Agentes con tool calling: el formato XML de llamadas a herramientas de Qwen3.8 permite integrarlo en frameworks de agentes (por ejemplo, mediante el endpoint compatible de OpenAI de `llama-server`) para que el modelo invoque funciones, consulte APIs o ejecute acciones en flujos multi-paso.
-- Análisis de documentos con gráficos: el mmproj cuantizado permite enviar imágenes (por ejemplo, capturas de dashboards o gráficos) junto al prompt; la model card reporta resultados idénticos al proyector BF16 en lectura de gráficos.
-- Generación y revisión de código en local: con 131K de contexto cabe un repositorio de tamaño medio para tareas de refactorización, revisión de pull requests o generación de código sin enviar el código a servicios de terceros.
-- Inferencia acelerada en GPU de consumo: la combinación de IQ3_S (11,77 GB) y decodificación especulativa DFlash permite generar texto con mayor velocidad de tokens por segundo en una GPU de 16 GB, útil para uso interactivo diario.
-- Procesamiento de contextos largos offline: resumen o análisis de documentos extensos (informes, transcripciones) aprovechando la ventana de 131.072 tokens, ejecutando todo el pipeline en local con llama.cpp.
+- Asistentes conversacionales multi-turno: el modelo mantiene contexto de hasta 131.072 tokens, lo que permite conversaciones largas con historial extenso o documentos adjuntos sin truncar.
+- Agentes con uso de herramientas: la plantilla Qwen3.8 en formato XML y el soporte `--jinja` permiten integrarlo en orquestadores que expongan funciones (APIs, consultas a bases de datos, operaciones de fichero) y encadenen varios pasos.
+- Despliegue en hardware de consumo: con 11,77 GB en IQ3_S, cabe en GPUs de 16 GB de VRAM junto al proyector multimodal, lo que habilita prototipos agénticos locales sin infraestructura de datacenter.
+- Procesamiento de documentos con imágenes: combinado con el `mmproj`, puede leer gráficos y capturas; el autor verificó el proyector Q5_K-MIX contra el BF16 de sabi-noema con resultados idénticos en lectura de gráficas.
+- Servicio de inferencia ligero: `llama-server` con `-ngl 99 -c 131072` permite exponer el modelo como endpoint compatible con la API de chat para aplicaciones internas.
+- Generación acelerada en producción: emparejado con la cabeza DFlash Q4_0 (1,1 GB), la decodificación especulativa reduce la latencia por token aceptado, útil en asistentes interactivos con requisitos de respuesta rápida.
+- Evaluación comparativa de cuantizaciones: sirve como referencia para medir la degradación de un fine-tune RL al aplicarle un mapa de cuantización heredado de otro modelo, dado que el autor documenta el procedimiento completo y reproducible.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La propia model card advierte explícitamente que este archivo reproduce el tamaño de la versión de ISTA-DASLab, no sus puntuaciones de benchmark, ya que los pesos son K-quants estándar de llama.cpp guiados por imatrix y no los pesos optimizados del pipeline GSQ. Los parámetros de generación recomendados son los del modelo base: temperature 1,0, top_p 0,95 y top_k 20.
+No se han publicado resultados de benchmarks en la información disponible. El autor advierte explícitamente de que este archivo no hereda las puntuaciones del modelo de ISTA-DASLab, pese a compartir asignación por tensor y tamaño.
 
 ## Requisitos de hardware
 
-- El fichero principal ocupa 11,77 GB (3,50 bpw); con el mmproj (332 MB) y el draft DFlash (1,09 GB) el conjunto ronda los 13,2 GB. La model card indica que el modelo completo con contexto de 131.072 tokens cabe en 16 GB de VRAM, pero que con el draft cargado ya no cabe el contexto completo en 16 GB (se sugiere reducir a 65.536 tokens).
-- Una GPU de 16 GB de VRAM (por ejemplo, RTX 4090, RTX 5080 o similar) es suficiente para el modelo solo con `-ngl 99` y contexto completo; para contexto completo más decodificación especulativa se recomienda más VRAM (24 GB, por ejemplo RTX 3090/4090 de 24 GB).
-- También es viable su ejecución en CPU o en configuraciones híbridas CPU+GPU gracias a GGUF y a la descarga de capas (`-ngl`), aunque no se proporcionan cifras de latencia o throughput.
-- Despliegue: llama.cpp es la herramienta documentada (`llama-cli` y `llama-server`); al ser GGUF estándar, debería funcionar también con Ollama, LM Studio y otros runtimes compatibles, aunque no se documenta explícitamente. No hay menciones a vLLM o TGI (que no soportan GGUF).
-- Comandos recomendados: `llama-cli -m sabi-noema-IQ3_S-ista-map.gguf --jinja --no-reasoning-preserve -ngl 99 -c 131072 --temp 1.0 --top-p 0.95 --top-k 20`, y para visión añadir `--mmproj mmproj-Qwen3.8-27B-Q5_K-MIX.gguf`. Para decodificación especulativa: `--model-draft dflash-Qwen3.8-27B-Q4_0.gguf --spec-type draft-dflash -c 65536`. Nota: el modo chat interactivo de `llama-cli` ignora silenciosamente `--model-draft`; hay que usar `-st` o `llama-server`.
+- VRAM estimada: unos 12 GB para el modelo principal en IQ3_S, más 0,33 GB del proyector multimodal si se usa visión. Con la cabeza DFlash Q4_0 (1,09 GB) hay que sumar ese espacio y reducir el contexto a 65.536 tokens para mantenerse en 16 GB.
+- GPU recomendadas: RTX 4090, RTX 4080, RTX 3090 y cualquier GPU con 16 GB o más para el modelo completo con contexto largo; A100 y H100 para despliegues con concurrencia o contexto completo de 131.072 tokens.
+- Cabe en GPU de consumo: sí, en tarjetas de 16 GB o más (RTX 4090, RTX 4080, RTX 3090, RTX 4060 Ti de 16 GB) siempre que se ajuste el contexto o se prescinda de la cabeza borrador.
+- Opciones de despliegue: `llama-cli`, `llama-server` y, en general, llama.cpp. Los tags indican `endpoints_compatible`. No se documenta soporte de vLLM, TGI ni Ollama en la información disponible.
+- Latencia y throughput: no disponibles de forma numérica. El autor afirma que la cabeza DFlash «puede acelerar mucho la generación» y que es más rápida por token aceptado que la alternativa MTP en su configuración, pero no aporta cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Cuantizacion | Contexto | Vision | Licencia | Notas |
-|---|---|---|---|---|---|---|
-| Sabi-Noema IQ3_S (este) | ~26,9B | IQ3_S (3,50 bpw, 11,77 GB) | 131.072 | Si (mmproj incluido) | Apache-2.0 | K-quants con mapa GSQ-RCO de ISTA; DFlash incluido |
-| ISTA-DASLab Qwen3.8-27B-GSQ-RCO IQ3_S | ~27B | IQ3_S (mismo tamaño) | no disponible | no disponible | Apache-2.0 | Pesos optimizados con el pipeline GSQ original; referencia del mapa de asignación |
-| Qwen3.8-27B (base, GGUF de ggml-org) | ~27B | Varias (incluye Q8_0, Q4_0, MTP/DFlash) | 131.072 | Si | Apache-2.0 | Modelo base sin el RL fine-tune de sabi-noema; origen del mmproj y del draft |
+| Modelo | Parámetros | Contexto | Cuantización | Licencia | Notas |
+|---|---|---|---|---|---|
+| vmarcelo/Sabi-Noema-IQ3_S (este) | ≈26,9 B denso | 131.072 | IQ3_S, 11,77 GB | Apache-2.0 | Fine-tune RL de sabicap con mapa de ISTA; sin MTP |
+| ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF | ≈27 B denso | no disponible | IQ3_S con pesos GSQ | Apache-2.0 | Pesos optimizados por GSQ; referencia de asignación y de benchmarks |
+| ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF | ≈27 B denso | no disponible | IQ3_S con MTP | no disponible | Mismo mapa RCO, fine-tune distinto; usado como verificación cruzada |
+| vmarcelo/Sabi-Noema-MTP-IQ3_S-GSQ-RCO-GGUF | ≈26,9 B denso | no disponible | IQ3_S con cabeza MTP | Apache-2.0 | Versión posterior recomendada por el propio autor |
 
 ## Limitaciones y advertencias
 
-- La model card advierte expresamente que este archivo reproduce la asignación de tipos de ISTA, no sus pesos optimizados: cabe esperar el tamaño del archivo de ISTA, pero no sus puntuaciones de benchmark.
-- La matriz de importancia usada está calibrada sobre Qwen3.8-27B base, no sobre sabi-noema; una imatrix específica del fine-tune probablemente daría mejores resultados en distribuciones agénticas, según el propio autor.
-- El draft DFlash fue entrenado para el Qwen3.8-27B base, no para este fine-tune; se transfiere bien según el autor, pero puede afectar a la tasa de aceptación de tokens especulativos.
-- La alternativa de decodificación especulativa MTP no fue benchmarkada en este repositorio.
-- Una cuantización a ~3,5 bpw implica degradación de calidad respecto a BF16, especialmente en razonamiento fino, código complejo y tareas agénticas; conviene validar en el caso de uso concreto antes de producción.
-- No se especifican los idiomas soportados ni la composición del dataset de entrenamiento del modelo base.
-- No se han publicado benchmarks del modelo base sabi-noema en la información disponible, por lo que su rendimiento real en tareas concretas no puede verificarse desde esta ficha.
-- El modo chat interactivo de `llama-cli` ignora silenciosamente `--model-draft`, un detalle fácil de pasar por alto al medir velocidad.
-- Sesgos conocidos y riesgo de alucinación: no disponible en la información proporcionada; como todo LLM generativo, debe asumirse riesgo de alucinación y de herencia de sesgos de Qwen3.8-27B y de su fine-tune.
-- Licencia Apache-2.0, heredada del modelo base: permite uso comercial sin restricciones adicionales conocidas.
+- El archivo no incorpora los pesos GSQ de ISTA: solo reproduce su asignación por tensor. El rendimiento puede diferir del de los modelos de referencia aunque el tamaño coincida.
+- La matriz de importancia se calibró sobre Qwen3.8 base, no sobre sabi-noema; el autor señala que una imatrix específica del fine-tune probablemente mejoraría en distribuciones agénticas.
+- La cabeza borrador DFlash se entrenó para Qwen3.8-27B base, no para este fine-tune; transfiere bien según el autor, pero no hay garantía formal ni métricas publicadas.
+- La cabeza MTP no se ha evaluado en este archivo; solo funcionaría como sidecar, ya que el modelo carece de `blk.64`.
+- El modo chat interactivo de `llama-cli` ignora silenciosamente `--model-draft`; hay que usar modo single-turn (`-st`) o `llama-server` para la decodificación especulativa.
+- Con la cabeza borrador cargada, el contexto completo de 131.072 tokens no cabe en 16 GB de VRAM.
+- Riesgo de alucinación y sesgos: no documentados en la información disponible, aunque son esperables en un modelo de 27 B cuantizado a 3,5 bits.
+- Idiomas soportados: no disponibles; no se puede confirmar cobertura multilingüe.
+- Licencia Apache-2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen3.8-27B y del fine-tune de sabicap, de los que se hereda.
+- La cuantización a 3,50 bpw implica pérdida de precisión frente a BF16; no hay evaluaciones publicadas que cuantifiquen esa degradación en este fine-tune concreto.
 
 ## Enlaces
 
-- Repositorio de esta cuantización: https://huggingface.co/vmarcelo/Sabi-Noema-IQ3_S-GSQ-RCO-GGUF
-- Modelo base: https://huggingface.co/sabicap/sabi-noema
-- Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
-- Referencia del mapa de asignación (ISTA-DASLab): https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF
-- Paper GSQ/RCO 1: https://arxiv.org/abs/2604.18556
-- Paper GSQ/RCO 2: https://arxiv.org/abs/2605.00649
-- Proyector de visión: https://huggingface.co/HermiHg/Qwen3.8-27B-mmproj-Q5_K-MIX-GGUF
-- Draft DFlash y MTP: https://huggingface.co/ggml-org/Qwen3.8-27B-GGUF
-- Verificación cruzada: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-IQ3_S-mtp.gguf
-- Herramienta de conversión y cuantización: https://github.com/ggml-org/llama.cpp
+- Modelo en Hugging Face: https://huggingface.co/vmarcelo/Sabi-Noema-IQ3_S-GSQ-RCO-GGUF
+- Versión recomendada con cabeza MTP: https://huggingface.co/vmarcelo/Sabi-Noema-MTP-IQ3_S-GSQ-RCO-GGUF
+- Modelo base (fine-tune): https://huggingface.co/sabicap/sabi-noema
+- Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
+- Referencia de asignación GSQ-RCO de ISTA: https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF
+- Proyector multimodal: https://huggingface.co/HermiHg/Qwen3.8-27B-mmproj-Q5_K-MIX-GGUF
+- Cabeza DFlash: https://huggingface.co/ggml-org/Qwen3.8-27B-GGUF
+- Verificación cruzada: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF
+- Paper GSQ/RCO: https://arxiv.org/abs/2604.18556
+- Paper GSQ/RCO: https://arxiv.org/abs/2605.00649

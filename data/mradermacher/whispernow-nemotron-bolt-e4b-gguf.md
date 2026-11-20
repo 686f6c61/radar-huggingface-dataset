@@ -2,52 +2,50 @@
 
 ## Resumen
 
-whispernow-nemotron-bolt-e4b-GGUF es una coleccion de cuantizaciones estaticas en formato GGUF del modelo base category271/whispernow-nemotron-bolt-e4b, publicada por el usuario mradermacher. El modelo original esta orientado a tareas de dictado y limpieza de transcripciones (transcript-cleanup) dentro de un pipeline de speech-to-text, y se apoya en la familia Nemotron, segun indican las etiquetas de la model card. El repositorio cuantizado esta pensado para su uso con llama.cpp y herramientas compatibles con GGUF, no como un modelo de proposito general.
+Whispernow-nemotron-bolt-e4b es un modelo de lenguaje orientado a la limpieza y normalización de transcripciones de voz (transcript cleanup) dentro de un pipeline de dictado o speech-to-text. Lo desarrolla el usuario `category271` y esta cuantizado en formato GGUF por `mradermacher`, un conocido publicador de cuantizaciones para llama.cpp. El modelo base es `category271/whispernow-nemotron-bolt-e4b`, afinado sobre el dataset `category271/whispernow-cleanup`.
 
-El modelo base cuenta con 7.463.013.674 parametros segun los pesos en safetensors, lo que lo situa en la franja de los 7-8 mil millones de parametros. La model card del repositorio cuantizado no detalla la arquitectura interna, la longitud de contexto ni la composicion del dataset de entrenamiento; la unica referencia a datos es el dataset category271/whispernow-cleanup. El idioma declarado es unicamente ingles (en).
+El modelo cuenta con 7.463.013.674 parámetros totales (aproximadamente 7,5 mil millones) según los pesos en safetensors, lo que lo sitúa en la categoría de modelos de tamano medio aptos para despliegue en hardware de consumo. La nomenclatura "e4b" sugiere una variante derivada de la familia Nemotron con aproximadamente 4 mil millones de parámetros activos, aunque la model card no confirma explícitamente una arquitectura MoE; el dato de parámetros totales corresponde a los safetensors publicados.
 
-La relevancia de esta publicacion es practica: ofrece el modelo en una bateria de cuantizaciones que van desde Q2_K (4,5 GB) hasta f16 (15,0 GB), lo que permite desplegarlo en hardware de consumo con llama.cpp. No obstante, el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y no se han publicado resultados de benchmarks en la informacion disponible.
+Su relevancia actual radica en que cubre una tarea de nicho pero muy práctica: tomar transcripciones ASR en bruto (con puntuación deficiente, repeticiones, muletillas y errores de segmentación) y devolver texto limpio y legible. Al estar disponible en GGUF con múltiples niveles de cuantización (desde Q2_K de 4,5 GB hasta f16 de 15 GB), permite ejecutar el modelo en local, incluyendo GPUs de consumo, lo que facilita integrarlo en aplicaciones de dictado sin depender de APIs externas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiqueta nemotron en la model card; sin detalle de transformer/MoE) |
-| Parametros totales | 7.463.013.674 (pesos safetensors del modelo base) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (modelo base Nemotron; no se detalla en la model card) |
+| Parametros totales | 7.463.013.674 |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, f16 |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 (estaticas); variantes imatrix ponderadas en repo i1-GGUF |
 | Idiomas soportados | en (ingles) |
-| Licencia | openmdw-1.1 (enlazada como license: other) |
-| Formato de pesos | GGUF (cuantizaciones); modelo base en safetensors |
+| Licencia | openmdw-1.1 (Open Model Development Weight License 1.1) |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no describe la arquitectura interna del modelo base. La model card lo etiqueta con la familia nemotron y lo enmarca en tareas de dictado y limpieza de transcripciones, con el dataset category271/whispernow-cleanup como unico dato de entrenamiento referenciado. No se especifica si se trata de un transformer denso, un MoE o una arquitectura hibrida, ni se detalla el numero de tokens de entrenamiento, la composicion del corpus, ni si hubo fases de RLHF, DPO o ajuste supervisado.
+La model card del repositorio GGUF no proporciona detalles sobre la arquitectura interna del modelo base. Por el nombre y la familia declarada (Nemotron) se infiere una arquitectura transformer derivada de la linea Nemotron, pero no se especifica si emplea atención estándar, atención lineal, mezcla de expertos u otra variante. El sufijo "e4b" apunta a una variante de aproximadamente 4 mil millones de parámetros activos, aunque esta interpretación no esta confirmada en la documentación disponible.
 
-El repositorio cuantizado es una conversion estatica (convert_type: hf, quantize_version: 2) de los pesos del modelo base. El autor indica que no hay cuantizaciones ponderadas con imatrix disponibles en el momento de la publicacion, y que podrian no llegar a publicarse. Las cuantizaciones incluyen tanto tipos K convencionales como IQ4_XS, segun la lista de etiquetas internas de la model card.
+El entrenamiento se realizo mediante ajuste fino supervisado sobre el dataset `category271/whispernow-cleanup`, orientado especificamente a la tarea de limpieza de transcripciones. No se documenta el numero de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de RLHF o DPO. La model card tampoco menciona innovaciones tecnicas como decodificacion especulativa o atención lineal. La cuantización la realiza `mradermacher` con su pipeline habitual (quantize_version 2, output_tensor_quantised 1, convert_type hf), generando cuantizaciones estáticas K-quants e IQ-quants; las variantes ponderadas con imatrix se publican en un repositorio separado (`-i1-GGUF`).
 
 ## Capacidades
 
-- Limpieza de transcripciones: el modelo esta orientado a tareas de transcript-cleanup, es decir, normalizar y corregir texto procedente de sistemas de reconocimiento de voz.
-- Dictado: etiquetado explicitamente para flujos de dictado por voz.
-- Integracion en pipelines de speech-to-text: se posiciona como componente de postprocesado del texto generado por un ASR.
-- Conversacional: la etiqueta conversational sugiere uso en formato de dialogo, aunque no se detalla el formato de prompt.
-- Compatibilidad con endpoints: etiqueta endpoints_compatible, lo que indica que puede servirse mediante infraestructura de inferencia estandar.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Capacidades de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: limitadas al ingles segun la model card.
-- Vision, audio o thinking mode: no disponible.
+- Limpieza y normalización de transcripciones de voz: corrección de puntuación, mayúsculas, segmentación de frases y eliminación de artefactos típicos del ASR.
+- Generación de texto conversacional en ingles, orientada a la tarea de dictado.
+- Procesamiento de entradas de tipo transcript para devolver texto limpio y legible.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingues: limitadas al ingles (`language: en`).
+- Capacidades especiales (modo thinking, visión, audio): no disponibles; el modelo no procesa audio directamente, sino que opera sobre texto transcrito.
 
 ## Casos de uso
 
-- Postprocesado de dictado en ingles: el modelo recibe la salida cruda de un ASR y la normaliza (puntuacion, mayusculas, correcciones gramaticales) antes de entregarla al usuario final. Es adecuado porque esta entrenado especificamente sobre el dataset whispernow-cleanup.
-- Limpieza de transcripciones de reuniones: se puede encadenar tras un motor de reconocimiento de voz para producir actas legibles; su tamano de 7-8 mil millones de parametros permite ejecutarlo en local junto al ASR.
-- Integracion en aplicaciones de notas de voz: con cuantizaciones Q4_K_M (5,4 GB) se puede desplegar en un portatil con GPU de consumo y procesar dictados sin enviar audio ni texto a la nube.
-- Pipelines de subtitulado: como etapa de correccion de subtitulos generados automaticamente en ingles, mejorando legibilidad antes de la publicacion.
-- Asistentes de escritura por voz: transcripcion de comandos o texto dictado en herramientas de productividad, con el modelo actuando como capa de saneamiento del texto.
-- Despliegue en entornos con recursos limitados: las variantes Q2_K y Q3_K_S (4,5-4,7 GB) permiten ejecucion en CPU con llama.cpp para tareas de limpieza de texto por lotes donde la latencia no es critica.
-- Evaluacion y experimentacion: util para investigadores que quieran probar el modelo base sin descargar los pesos completos en safetensors (el repo cuantizado ocupa 69,8 GB en total, pero cada archivo individual es mucho menor).
+- Limpieza de transcripciones de reuniones: tras un ASR como Whisper, el modelo recibe el texto bruto y devuelve un acta legible con puntuación y párrafos correctos, aprovechando su ajuste especifico sobre `whispernow-cleanup`.
+- Post-procesado en aplicaciones de dictado: integrado en el pipeline tras el reconocimiento de voz, normaliza el texto dictado antes de insertarlo en el editor, mejorando la experiencia de usuario.
+- Generación de subtítulos legibles: convierte transcripciones automáticas de video en subtítulos con puntuación y segmentación adecuadas, reduciendo el trabajo de revisión manual.
+- Preparación de datos para entrenamiento ASR: limpia grandes volúmenes de transcripciones para construir corpus de calidad, ejecutable en local con cuantizaciones Q4_K_M de 5,4 GB.
+- Documentación clínica o legal dictada: normaliza notas dictadas por profesionales antes de su almacenamiento, siempre con revisión humana dado el riesgo de alucinación.
+- Herramientas de accesibilidad: transcripción en vivo limpia para personas con discapacidad auditiva, desplegable en hardware de consumo con llama.cpp u Ollama.
+- Automatización de notas de voz en movil o escritorio: procesamiento local de dictados sin enviar datos a la nube, gracias a las cuantizaciones de 4,5-5,4 GB.
 
 ## Benchmarks y rendimiento
 
@@ -55,34 +53,40 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 5-6 GB con Q4_K_M (5,4 GB de pesos mas overhead de contexto), 4,5-5,1 GB con Q2_K/Q3_K, y 15-16 GB con f16.
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080, RTX 4090, A100 y H100 para despliegues de mayor concurrencia.
-- Cabe en GPU de consumo: si, en la mayoria de tarjetas con 8 GB o mas usando cuantizaciones Q4 o inferiores; las variantes Q2_K y Q3_K_S pueden ejecutarse incluso en CPU.
-- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio, llama-cpp-python); el formato GGUF es compatible con estos motores. No se indica compatibilidad con vLLM o TGI para estos pesos.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia (pesos + overhead de contexto): Q2_K ~4,5 GB; Q4_K_M ~5,4 GB; Q5_K_M ~5,8 GB; Q6_K ~6,3 GB; Q8_0 ~8,1 GB; f16 ~15 GB. Anadir aproximadamente 1-3 GB adicionales para la cache KV segun la longitud de contexto.
+- GPU recomendadas: RTX 3060 12 GB o RTX 4060 Ti 16 GB para cuantizaciones Q4-Q6; RTX 4090 24 GB para Q8_0 o f16 con contexto amplio; A100/H100 solo necesarias para f16 con lotes grandes o despliegue en servidor.
+- Cabe en GPU de consumo: si, en la mayoria de tarjetas con 8 GB o mas usando Q4_K_M o inferiores; en GPUs de 6 GB caben Q2_K y Q3_K_S con contexto reducido.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; el tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo Hugging Face. Para el modelo base en safetensors, transformers.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye modelos comparables de la misma categoria (limpieza de transcripciones en ingles) ni datos de rendimiento que permitan una comparacion rigurosa.
+| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| whispernow-nemotron-bolt-e4b (este) | 7,46 B | no disponible | Limpieza de transcripciones (en) | openmdw-1.1 | GGUF + safetensors en HF |
+| Modelos de limpieza de transcripciones comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+| LLMs generalistas de ~7-8 B | ~7-8 B | variable | Generacion general | variable | amplia |
+
+No se dispone de información sobre modelos directamente comparables en la misma tarea de transcript cleanup, por lo que la comparativa cuantitativa no esta disponible.
 
 ## Limitaciones y advertencias
 
-- Idioma: el modelo solo declara soporte de ingles; no es adecuado para dictado o limpieza de transcripciones en castellano.
-- Alcance funcional: esta especializado en limpieza de transcripciones y dictado, no es un modelo de proposito general para razonamiento, codigo o matematicas.
-- Datos de entrenamiento opacos: no se detalla la composicion del dataset whispernow-cleanup, lo que impide evaluar sesgos o cobertura.
-- Riesgo de alucinacion: no cuantificado; en tareas de limpieza de texto, el modelo podria introducir contenido no presente en la transcripcion original.
-- Licencia: openmdw-1.1, enlazada como license: other; es necesario revisar los terminos en https://openmdw.ai/license/1-1/ antes de un uso comercial.
-- Madurez del repositorio: 0 descargas y 0 likes, sin cuantizaciones imatrix; no hay evidencia de uso en produccion.
-- Sin benchmarks publicados: no se puede verificar la calidad de las cuantizaciones frente al modelo base.
-- El repositorio cuantizado ocupa 69,8 GB en total, aunque cada archivo GGUF individual es manejable.
+- Modelo especializado y monoidioma: solo soporta ingles; su uso en castellano u otros idiomas no esta validado y probablemente produzca resultados deficientes.
+- Riesgo de alucinacion: como todo modelo generativo, puede introducir o alterar contenido durante la limpieza; en contextos sensibles (legal, médico) requiere revisión humana.
+- Sesgos conocidos: no documentados en la model card; al derivar de Nemotron y entrenarse en un dataset especifico, puede heredar sesgos del corpus base y de `whispernow-cleanup`.
+- Licencia openmdw-1.1: es una licencia de pesos abiertos con condiciones propias; debe revisarse el texto completo en el enlace de licencia antes de uso comercial. La model card no aclara restricciones adicionales.
+- Longitud de contexto no documentada: limita la planificación para transcripciones muy largas; conviene trocear la entrada.
+- Sin datos de benchmarks: no hay evidencia publicada de calidad frente a alternativas, lo que dificulta la evaluación previa a producción.
+- El repositorio GGUF es una cuantización de terceros: la calidad final depende del proceso de cuantización y del modelo base, no verificado independientemente.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/whispernow-nemotron-bolt-e4b-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/whispernow-nemotron-bolt-e4b-GGUF
 - Modelo base: https://huggingface.co/category271/whispernow-nemotron-bolt-e4b
-- Dataset de entrenamiento: https://huggingface.co/datasets/category271/whispernow-cleanup
-- Licencia openmdw-1.1: https://openmdw.ai/license/1-1/
-- Pagina de descargas del autor: https://hf.tst.eu/model#whispernow-nemotron-bolt-e4b-GGUF
+- Dataset de limpieza: https://huggingface.co/datasets/category271/whispernow-cleanup
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/whispernow-nemotron-bolt-e4b-i1-GGUF
+- Pagina de resumen del cuantizador: https://hf.tst.eu/model#whispernow-nemotron-bolt-e4b-GGUF
+- Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Peticiones de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests

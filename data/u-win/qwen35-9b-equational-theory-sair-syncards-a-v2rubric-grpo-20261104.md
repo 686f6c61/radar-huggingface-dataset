@@ -2,56 +2,55 @@
 
 ## Resumen
 
-Qwen3.5-9B equational-theory RL (v2 rubrics, verdict-neutral judge) es un conjunto de checkpoints de un ajuste fino mediante aprendizaje por refuerzo (GRPO asincrono) sobre un modelo base de la familia Qwen3.5 con aproximadamente 9.650 millones de parametros. Lo desarrolla el usuario U-WIN y su proposito es especializar el modelo en la resolucion y evaluacion de problemas de teoria ecuacional, un dominio de las matematicas discretas y la logica algebraica que requiere razonamiento formal y verificacion de enunciados.
+El modelo `U-WIN/qwen35-9b-equational-theory-sair-syncards-a-v2rubric-grpo-20261104` es un ajuste fino por aprendizaje por refuerzo (GRPO) sobre una inicialización Qwen3.5 de 9B, desarrollado por U-WIN. Su propósito es resolver problemas de teoría ecuacional (equational theory) formulados en lenguaje natural, un dominio matemático que requiere razonamiento simbólico y verificación de identidades algebraicas. El modelo parte del checkpoint `qwen35-9b-equational-theory-sair-syncards-a-notes50m-cards123-ntp-kl-0p01` y aplica un entrenamiento asíncrono con recompensas basadas en rúbricas evaluadas por un juez local congelado.
 
-El modelo parte de `U-WIN/qwen35-9b-equational-theory-sair-syncards-a-notes50m-cards123-ntp-kl-0p01` y aplica GRPO con recompensas basadas en rubricas, evaluadas por un juez local congelado (Qwen3.8-27B). El entrenamiento se realizo en un nodo HAI B200 con tres GPUs de entrenador, tres de rollout y dos de juez, en modalidad totalmente asincrona. El resultado son trece ramas de checkpoint (`checkpoint-10` a `checkpoint-130`) que representan la politica tras N actualizaciones del optimizador.
+La arquitectura subyacente es un transformer multimodal (image-text-to-text) de la familia Qwen3.5, con 9.653.104.368 parámetros totales en formato bf16 y un peso de repositorio de 361 GB, lo que indica la presencia de múltiples checkpoints y pesos sin entrenar (torre visual y cabeza de predicción multi-token). El entrenamiento solo actualiza el modelo de lenguaje: 427 tensores entrenados frente a 348 heredados sin cambios del inicializador.
 
-La relevancia de esta ficha es doble: por un lado, documenta un caso concreto de RL con recompensas por rubrica aplicado a razonamiento matematico formal; por otro, aclara que se trata de un artefacto de investigacion con evaluacion interna limitada, no de un modelo listo para produccion. La licencia Apache 2.0 facilita su reutilizacion, pero la ausencia de benchmarks publicos estandar y de documentacion multilingue exige cautela.
+El modelo es relevante ahora porque documenta un pipeline completo de RL asíncrono con evaluación por rúbricas y juicio neutral de veredicto, una técnica emergente para alinear modelos en dominios donde la respuesta correcta no es trivial de verificar automáticamente. La licencia Apache 2.0 facilita su reutilización, aunque el dominio de especialización es muy acotado.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (Qwen3.5), con torre visual y cabeza de prediccion multi-token (MTP); el ajuste solo entrena el modelo de lenguaje |
-| Parametros totales | 9.653.104.368 (9,65 mil millones) |
+| Arquitectura | Transformer multimodal (image-text-to-text), familia Qwen3.5 |
+| Parametros totales | 9.653.104.368 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada; el entrenamiento usa hasta 32.768 tokens de respuesta |
-| Tipos de cuantizacion | no disponible (pesos publicados en bf16) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos en bf16) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (libreria transformers); shards con prefijo `model-untrained-*` para componentes no entrenados |
+| Formato de pesos | safetensors (transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer de la familia Qwen3.5 con capacidad image-text-to-text, lo que implica una torre visual (`model.visual.*`) y una cabeza de prediccion multi-token (`mtp.*`). Durante el ajuste por RL solo se entrena el modelo de lenguaje: 427 tensores entrenados y 348 arrastrados sin cambios desde el inicializador. Los pesos se publican en bf16 y la conversion desde el formato Megatron a Hugging Face se realizo con `miles-upstream/tools/convert_torch_dist_to_hf.py`, dejando un `conversion_manifest.json` con sha256 por shard y la maxima diferencia absoluta frente al inicializador y al checkpoint previo.
+El modelo es un transformer multimodal de la familia Qwen3.5 con 9,65 mil millones de parámetros. Solo se entrena el modelo de lenguaje: la torre visual (`model.visual.*`) y la cabeza de predicción multi-token (`mtp.*`) se copian sin cambios del inicializador, y los shards correspondientes se nombran `model-untrained-*`. El entrenamiento se realizó en un nodo HAI B200 con 3 GPUs de entrenador, 3 de rollout y 2 de juez, mediante GRPO totalmente asíncrono (ejecución `lean2nl-megatron-async-s3j2t3-v2rubric-v3-20261104`).
 
-El entrenamiento es un GRPO totalmente asincrono (run `lean2nl-megatron-async-s3j2t3-v2rubric-v3-20261104`) con 24 prompts por rollout y 8 muestras por prompt (batch global de 192), temperatura 1.0 y hasta 32.768 tokens de respuesta. Las recompensas provienen de un juez local congelado (Qwen3.8-27B, politica `v2rubric-verdict-neutral-user-rubric-20261104-v3`) que aplica una rubrica generica y devuelve un JSON de dos campos (`assessment` y `score_0_to_7`); la recompensa es score/7. Se eliminan las lineas de veredicto del candidato y no se muestra al juez ni la solucion de referencia ni la etiqueta de verdad. Se aplica filtrado de grupo sobre las calificaciones no resueltas. Los prompts de entrenamiento son 2.182 problemas (todos TRUE, 54 con portador finito) del dataset `U-WIN/equational-theory-lean2nl-references-gpt-approved-v2-rubric`.
+Los prompts provienen del dataset `U-WIN/equational-theory-lean2nl-references-gpt-approved-v2-rubric` (2182 problemas, todos con etiqueta TRUE, 54 con portador finito). La evaluación usa `U-WIN/sair-stage2-nl-verified-v2-rubric` (205 problemas, 99 TRUE / 106 FALSE), con 4 muestras por problema cada 20 rollouts. La recompensa se calcula mediante calificación por rúbricas de un juez local congelado Qwen3.8-27B (política `v2rubric-verdict-neutral-user-rubric-20261104-v3`): salida JSON de dos campos (`assessment`, `score_0_to_7`), recompensa = score/7, sin mostrar solución de referencia ni etiqueta de verdad al juez. El muestreo usa temperatura 1.0 y 32.768 tokens de respuesta, con GRPO y filtrado de grupo de calificaciones no resueltas. Cada actualización consume un rollout de 24 prompts × 8 muestras (lote global 192).
 
 ## Capacidades
 
-- Generacion de texto conversacional y razonamiento en el dominio de teoria ecuacional (evaluacion de enunciados y problemas algebraicos formales).
-- Razonamiento multi-paso con cadenas de respuesta largas (hasta 32.768 tokens durante el entrenamiento).
-- Capacidad multimodal image-text-to-text heredada del modelo base (torre visual no entrenada en este ajuste).
-- Prediccion multi-token (cabeza MTP heredada, no entrenada).
-- Evaluacion con rubrica: el modelo fue optimizado para producir respuestas puntuables por un juez con escala 0-7.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Capacidades de agente: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible en la informacion proporcionada.
-- Modo thinking explicito: no disponible en la informacion proporcionada.
+- Generación de texto y razonamiento matemático en el dominio de teoría ecuacional.
+- Resolución de problemas formulados en lenguaje natural con verificación de identidades algebraicas.
+- Capacidad multimodal heredada (image-text-to-text) por la torre visual, aunque no se entrena en este ajuste.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible explícitamente; el formato de respuesta es JSON de dos campos.
+- Capacidades multilingües: no disponible.
+- Modo thinking: no disponible.
+- Predicción multi-token (cabeza MTP) presente pero no entrenada en este ajuste.
 
 ## Casos de uso
 
-- Evaluacion automatica de problemas de teoria ecuacional: el modelo puede actuar como resolutor de enunciados TRUE/FALSE y generar justificaciones puntuables, aprovechando el ajuste con rubrica y el formato JSON de dos campos.
-- Generacion de datos sinteticos para entrenamiento: dado que produce respuestas largas y razonadas, puede emplearse para crear pares problema-respuesta en dominios algebraicos, filtrando despues con un juez.
-- Investigacion en RL con recompensas por rubrica: los trece checkpoints permiten estudiar la evolucion de la politica a lo largo de las actualizaciones y comparar curvas de aprendizaje.
-- Reproduccion de experimentos de GRPO asincrono: el manifiesto de conversion y las ramas documentadas facilitan replicar el pipeline en entornos Megatron.
-- Prototipado de asistentes matematicos especializados: integrable en cuadernos o servicios internos mediante transformers, con contexto suficiente para problemas extensos.
-- Analisis de robustez ante enunciados falsos: el modelo fue evaluado con 106 problemas FALSE, lo que permite estudiar su calibracion en deteccion de errores.
-- Base para posteriores ajustes supervisados: al estar en bf16 y con licencia Apache 2.0, sirve como punto de partida para SFT o DPO en dominios afines.
+- Verificación de identidades algebraicas: el modelo recibe un problema de teoría ecuacional en lenguaje natural y emite una evaluación estructurada en JSON (`assessment`, `score_0_to_7`), útil como componente de un pipeline de corrección automática en entornos educativos o de investigación.
+- Generación de contraejemplos en teoría de variedades: al haberse entrenado con problemas TRUE y evaluado con problemas FALSE, puede emplearse para detectar enunciados incorrectos en conjuntos de ejercicios, señalando por qué una identidad no se cumple.
+- Asistencia a investigadores en álgebra universal: como generador de borradores de demostración o de explicaciones en lenguaje natural que luego se validan manualmente contra un comprobador formal (Lean).
+- Etiquetado y curación de datasets matemáticos: el modelo puede puntuar pares problema-respuesta y priorizar los casos dudosos para revisión humana, gracias a su salida de puntuación granular de 0 a 7.
+- Evaluación comparativa de jueces automáticos: sirve como referencia de un pipeline de RL con juez neutral de veredicto, útil para estudiar sesgos de jueces LLM en dominios formales.
+- Filtrado de candidatos en generación aumentada por recuperación: dado un conjunto de soluciones propuestas, el modelo puntúa cada una y permite descartar las de baja calidad antes de pasarlas a un verificador simbólico.
+- Investigación en RL asíncrono: los checkpoints por iteración (10 a 200) permiten analizar la evolución del aprendizaje y la dinámica de recompensas en un dominio especializado.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos publicados son las evaluaciones internas durante el entrenamiento sobre `U-WIN/sair-stage2-nl-verified-v2-rubric` (205 problemas, 99 TRUE y 106 FALSE, 4 muestras por problema), con recompensa media score/7:
+Los únicos datos publicados son la evaluación interna durante el entrenamiento sobre `sair-stage2-nl-verified-v2-rubric` (205 problemas × 4 muestras, puntuación sobre 7):
 
 | Rollout | Global | Problemas TRUE | Problemas FALSE |
 |---|---|---|---|
@@ -62,48 +61,46 @@ Los unicos datos publicados son las evaluaciones internas durante el entrenamien
 | 80 | 0,497 | 0,676 | 0,329 |
 | 100 | 0,497 | 0,686 | 0,320 |
 | 120 | 0,505 | 0,736 | 0,289 |
+| 140 | 0,527 | 0,748 | 0,321 |
+| 160 | 0,487 | 0,718 | 0,271 |
+| 180 | 0,492 | 0,767 | 0,235 |
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. Los puntos de evaluacion se toman en identificadores de rollout, por lo que los pesos en uso pueden estar hasta una actualizacion por detras.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bf16: aproximadamente 19,3 GB solo para pesos (9,65 mil millones de parametros a 2 bytes), mas overhead de activaciones y cache KV; en la practica se recomienda al menos 24 GB.
-- Cuantizacion: no se documentan pesos GGUF ni cuantizados; habria que generarlos a partir de los safetensors bf16.
-- GPU recomendadas: A100 40/80 GB, H100 80 GB o B200 para el modelo completo en bf16; en consumer, RTX 4090 (24 GB) puede ser justa para bf16 con contexto corto, y seria necesario cuantizar para contextos largos.
-- Despliegue: compatible con transformers; para alto rendimiento se puede servir con vLLM o TGI, aunque no se documenta soporte explicito. llama.cpp y Ollama requeririan conversion a GGUF no publicada.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
-- Entrenamiento original: nodo HAI B200 con 3 GPUs de entrenador, 3 de rollout y 2 de juez.
+- VRAM estimada para inferencia en bf16: aproximadamente 19,3 GB solo para pesos (9,65 mil millones de parámetros × 2 bytes), más overhead de activaciones y caché KV; en la práctica se recomiendan 24 GB o más.
+- Cuantización a 8 bits: alrededor de 9,7 GB de pesos; a 4 bits: alrededor de 4,8 GB, aunque no se documentan ficheros GGUF ni cuantizaciones publicadas.
+- GPU recomendadas: A100 40/80 GB, H100 80 GB o B200 para entrenamiento e inferencia a gran escala; RTX 4090 (24 GB) puede alojar los pesos en bf16 con contexto corto, pero el contexto largo y el modo multimodal requieren más memoria.
+- Cabe en GPU de consumo: sí, en RTX 4090 o RTX 3090 (24 GB) con contexto moderado; en GPUs de 16 GB solo mediante cuantización, que no está publicada.
+- Opciones de despliegue: transformers (librería declarada); vLLM, llama.cpp, Ollama o TGI no están confirmados en la información disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos publicos de benchmarks para comparar directamente con alternativas. A continuacion se comparan caracteristicas objetivas con modelos de tamano y proposito similares:
+| Modelo | Parámetros | Contexto | Dominio | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| U-WIN/qwen35-9b-equational-theory-sair-syncards-a-v2rubric-grpo-20261104 | 9,65 B | no disponible | Teoría ecuacional (RL con rúbricas) | Apache 2.0 | Hugging Face |
+| U-WIN/qwen35-9b-equational-theory-sair-syncards-a-notes50m-cards123-ntp-kl-0p01 (inicializador) | 9,65 B | no disponible | Teoría ecuacional (preentrenamiento/ajuste previo) | no disponible | Hugging Face |
+| Qwen3.5-9B base (familia) | ~9 B | no disponible | Propósito general multimodal | no disponible | Hugging Face |
 
-| Modelo | Parametros | Contexto | Licencia | Enfoque |
-|---|---|---|---|---|
-| Qwen3.5-9B equational-theory RL (este) | 9,65 mil M | no disponible | Apache 2.0 | RL con rubrica en teoria ecuacional |
-| Qwen2.5-7B-Instruct | 7,6 mil M | 32.768 tokens (ampliable) | Apache 2.0 | Instruccion general |
-| Llama 3.1 8B Instruct | 8,0 mil M | 128.000 tokens | Llama 3.1 Community | Instruccion general |
-| Mistral 7B Instruct | 7,2 mil M | 32.000 tokens | Apache 2.0 | Instruccion general |
-
-La comparacion de rendimiento no es posible porque este modelo no publica resultados en benchmarks estandar. Su ventaja diferencial es la especializacion en teoria ecuacional y la trazabilidad de checkpoints, no el rendimiento generalista.
+No se dispone de datos de rendimiento comparables entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Es un artefacto de investigacion: trece checkpoints de un unico run, sin validacion externa ni benchmarks estandar.
-- La evaluacion interna usa solo 205 problemas y un juez automatico; el rendimiento en problemas FALSE es notablemente inferior al de TRUE (0,289 frente a 0,736 en el rollout 120), lo que indica dificultad para detectar enunciados falsos.
-- Riesgo de alucinacion en dominios fuera de la teoria ecuacional, ya que el ajuste RL se concentra en un unico dominio.
-- Idiomas soportados no documentados; se desconoce el comportamiento en castellano.
-- Contexto maximo no documentado; el entrenamiento usa respuestas de hasta 32.768 tokens, pero no se especifica la ventana total.
-- La torre visual y la cabeza MTP no fueron entrenadas en este ajuste; su comportamiento multimodal no esta validado.
-- Licencia Apache 2.0 permite uso comercial, pero no hay garantias de calidad ni soporte del autor.
-- El juez de recompensa es un modelo local congelado; posibles sesgos del juez pueden haberse transferido a la politica.
-- No se publican pesos cuantizados, lo que limita el despliegue en hardware consumer.
-- Cero descargas y cero likes en el momento de la consulta: no hay evidencia de uso comunitario ni de validacion independiente.
+- Dominio extremadamente especializado: el ajuste se centra en teoría ecuacional; su rendimiento fuera de ese ámbito no está documentado y probablemente sea inferior al del modelo base.
+- Riesgo de alucinación en demostraciones matemáticas: el juez de recompensa es un LLM (Qwen3.8-27B) y no un verificador formal, por lo que las puntuaciones altas no garantizan corrección lógica.
+- Desbalance en la evaluación: los problemas FALSE obtienen puntuaciones notablemente más bajas (0,235–0,354) que los TRUE (0,560–0,767), lo que sugiere dificultad para rechazar enunciados incorrectos.
+- Solo se entrena el modelo de lenguaje; la torre visual y la cabeza MTP se heredan sin ajuste, por lo que su comportamiento multimodal no está validado en este checkpoint.
+- Idiomas soportados no documentados; no se garantiza un rendimiento adecuado en castellano.
+- El repositorio ocupa 361 GB e incluye 20 ramas de checkpoint; el uso en producción requiere seleccionar una rama concreta y verificar el `conversion_manifest.json`.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen3.5 puede tener condiciones adicionales que deben verificarse.
+- No se documentan cuantizaciones oficiales ni resultados de benchmarks estándar, lo que dificulta la comparación con alternativas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-syncards-a-v2rubric-grpo-20261104
-- Modelo base (inicializador): https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-syncards-a-notes50m-cards123-ntp-kl-0p01
-- Dataset de prompts de entrenamiento: https://huggingface.co/datasets/U-WIN/equational-theory-lean2nl-references-gpt-approved-v2-rubric
-- Dataset de evaluacion: https://huggingface.co/datasets/U-WIN/sair-stage2-nl-verified-v2-rubric
-- Herramienta de conversion Megatron a Hugging Face: miles-upstream/tools/convert_torch_dist_to_hf.py (referenciada en la model card, sin URL directa disponible)
+- Modelo inicializador: https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-syncards-a-notes50m-cards123-ntp-kl-0p01
+- Dataset de prompts: `U-WIN/equational-theory-lean2nl-references-gpt-approved-v2-rubric` (referencia @ fd284c793204)
+- Dataset de evaluación: `U-WIN/sair-stage2-nl-verified-v2-rubric` (referencia @ ed7fb4630dfe)
+- Herramienta de conversión: `miles-upstream/tools/convert_torch_dist_to_hf.py`

@@ -2,103 +2,109 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-DR-GGUF es una cuantización GGUF de 2 shards del modelo Qwen/Qwen3.8-Flash-Next, publicada por el usuario Grawnch bajo la etiqueta `Grawnch_DR_Q2_0`. Se trata de una arquitectura MoE (mixture of experts) de aproximadamente 180 000 millones de parámetros totales (176 309 417 088 según los pesos en safetensors del modelo base), con un total de 144 expertos enrutados y una arquitectura que el autor etiqueta como `qwen4_exp`. El paquete GGUF ocupa 67,18 GB repartidos en dos ficheros.
+Qwen3.8-Flash-Next-DR-GGUF es una cuantizacion GGUF de muy bajo bit de Qwen/Qwen3.8-Flash-Next, un modelo MoE de aproximadamente 180 000 millones de parametros desarrollado por Alibaba Qwen. La publica el usuario Grawnch bajo el identificador `DR-V2-Q2_0`, con un backbone cuantizado a 2,45 bits por peso y dividido en dos shards. Su proposito es hacer viable la inferencia de un MoE de gran tamano en una unica GPU de 48 GB de VRAM, algo que el modelo original en BF16 (unos 251 GB) no permite.
 
-El interés principal de esta ficha no está en el modelo base, sino en la estrategia de cuantización: el autor sostiene que, mediante rejillas enteras lineales uniformes (sin tensores de búsqueda `IQ*`), consigue una calidad superior a otras cuantizaciones del mismo rango de tamaño (~66-67 GB) como ISTA `GSQ-RCO Q2_0` o Unsloth `UD-IQ1_S`, con métricas de KLD, Top-1 agreement, perplejidad y similitud coseno de la capa final. Es relevante para quienes necesitan ejecutar un MoE de gran tamaño en hardware de gama alta con llama.cpp y quieren minimizar la degradación de calidad.
+La innovacion principal es el uso exclusivo de rejillas enteras lineales estandar (`Q2_0`, `Q4_0`, `Q6_K`, `Q8_0`) en todos los tensores, sin tablas de busqueda `IQ*`, lo que permite ejecutarlo en llama.cpp sin sobrecarga de descompresion y con un rendimiento notablemente superior en prefill y decodificacion frente a cuantizaciones `IQ` comparables. El segundo shard contiene una tabla estatica de busqueda N-gram de capa 1 (28,80 GB) que se mapea en memoria desde RAM o SSD del host mediante `-lm mmap`.
 
-La model card está redactada en inglés y no proporciona información sobre el modelo base más allá de su identificador, su licencia `qwen-community-1.0` y su pipeline `image-text-to-text`. No se detallan idiomas soportados, datos de entrenamiento ni resultados de benchmarks estándar (MMLU, HumanEval, GSM8K).
+El modelo conserva la modalidad image-text-to-text del modelo base y esta orientado a tareas de razonamiento, codigo y matematicas con presupuestos de pensamiento acotados. Es relevante para quienes necesitan desplegar un MoE de clase 180B en hardware de una sola GPU de gama alta profesional, aceptando una perdida medible de fidelidad respecto al BF16.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (etiqueta del autor: `qwen4_exp`); incluye capas de atención/GDN y expertos compartidos |
-| Parametros totales | 176 309 417 088 (~176,3 B) |
+| Arquitectura | MoE transformer (etiqueta `qwen4_exp`), con atencion/GDN y expertos compartidos |
+| Parametros totales | 176 943 899 520 (~177B) |
 | Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | `Q2_0` (expertos enrutados), `Q8_0` (expertos compartidos y hyper-connections), `Q6_K` (atención/GDN y cabeza de salida), `Q4_0` (embeddings de tokens y tabla PLE) |
+| Longitud de contexto | no disponible (los benchmarks usan contextos de hasta 64K tokens) |
+| Tipos de cuantizacion | GGUF `Q2_0` (backbone, 2,45 bpw), `Q4_0`, `Q6_K` (atencion), `Q8_0` (expertos compartidos); cero tablas `IQ*` |
 | Idiomas soportados | no disponible |
-| Licencia | `qwen-community-1.0` (etiquetada como `other`) |
-| Formato de pesos | GGUF dividido en 2 shards (`00001-of-00002`, `00002-of-00002`) |
+| Licencia | qwen-community-1.0 (etiquetada como `other` en Hugging Face) |
+| Formato de pesos | GGUF en 2 shards (backbone 38,38 GB + tabla N-gram 28,80 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un MoE de ~176,3 B de parámetros con 144 expertos enrutados, expertos compartidos y capas de atención/GDN (gated delta networks, según la nomenclatura empleada en la model card). La cuantización `Grawnch_DR_Q2_0` distribuye los pesos en dos shards: el primero (38,38 GB) contiene los pesos del transformer con 1 223 tensores, y el segundo (28,80 GB) contiene únicamente la tabla N-gram PLE de la capa 1 (`per_layer_token_embd.weight`) cuantizada en `Q4_0`.
+El modelo base es un MoE transformer de la familia Qwen con 144 expertos enrutados por capa MoE, expertos compartidos y componentes de atencion/GDN con hiper-conexiones. La cuantizacion `DR-V2-Q2_0` aplica `Q2_0` a los 144 expertos enrutados de cada capa, `Q8_0` a los expertos compartidos y `Q6_K` a la atencion, manteniendo todos los tensores en rejillas enteras lineales sin LUTs `IQ`. El shard 2 es una tabla estatica de busqueda N-gram de capa 1 que no se carga en VRAM, sino que se mapea desde el host.
 
-La innovación técnica declarada por el autor es el uso de rejillas enteras lineales uniformes en lugar de tablas de búsqueda `IQ*` (0 tensores `IQ*` en ambos shards), lo que según sus mediciones acelera el prefill y el decode en llama.cpp. Además, la tabla PLE del shard 2 puede mantenerse mapeada en memoria sobre SSD (`-lm mmap --lazy-mode on`), de modo que solo el shard 1 necesita residir en VRAM/RAM. No hay información sobre el dataset de entrenamiento, el número de tokens, ni sobre si hubo RLHF, DPO u otras fases de alineamiento.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni el proceso de alineacion (RLHF/DPO) del modelo base en la informacion proporcionada. La innovacion tecnica destacable de esta publicacion es el diseno de dos shards con separacion entre red neuronal activa y tabla de busqueda estatica, junto con la ausencia total de LUTs `IQ`, que segun el autor se traduce en 3,4 veces mas velocidad de prefill (367,0 t/s) y un 34 % mas de velocidad de decodificacion (94,0 t/s) frente a cuantizaciones con rejillas `IQ`.
 
 ## Capacidades
 
-- Generación de texto conversacional y razonamiento multi-turno (pipeline declarado `image-text-to-text`, lo que sugiere entrada multimodal de imagen y texto, aunque la model card no detalla el componente visual).
-- Procesamiento de entrada multimodal imagen-texto según el `pipeline_tag` del repositorio.
-- Ejecución en llama.cpp mediante `llama-cli` y `llama-server`, con soporte de split GGUF en dos shards.
-- Compatibilidad declarada con endpoints (`endpoints_compatible` en los tags).
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
-- Modo thinking, visión, audio u otras capacidades especiales: no disponible en la información proporcionada.
+- Generacion de texto conversacional y razonamiento multi-paso con modo de pensamiento acotado (thinking budgets configurables).
+- Generacion y edicion de codigo, evaluada en Aider Polyglot con Pass@2.
+- Razonamiento matematico, evaluado en AIME 2025 con Pass@1.
+- Procesamiento image-text-to-text (pipeline declarado en Hugging Face).
+- Compatible con endpoints (`endpoints_compatible` en las etiquetas).
+- Ejecucion nativa en llama.cpp en modo stock, sin kernels ni runtime especiales.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Despliegue local de un MoE de gran tamaño en estaciones de trabajo con mucha VRAM: gracias al split en dos shards y al mapeo en memoria del shard 2, se puede mantener el shard 1 (38,38 GB) residente en GPU y el shard 2 (28,80 GB) en SSD, reduciendo el requisito de VRAM frente a una carga completa.
-- Servicio de inferencia con `llama-server`: el autor reporta un throughput de ~367 tokens/s en prefill y ~94 tokens/s en decode, adecuado para servir conversaciones interactivas en un entorno controlado.
-- Generación de código asistida: la model card incluye ejemplos de prompts de código (por ejemplo, una red de ordenación entera sin ramas en C++), y las métricas de KLD y Top-1 se centran en matemáticas y código, lo que indica que el autor priorizó esa capacidad en la cuantización.
-- Evaluación comparativa de técnicas de cuantización: útil para investigadores que quieran reproducir las métricas de KLD, perplejidad y similitud coseno frente a BF16 y comparar con ISTA y Unsloth en el mismo rango de tamaño.
-- Prototipado de aplicaciones multimodales imagen-texto en local: el pipeline declarado permite experimentar con entrada de imagen y texto sin depender de APIs externas, siempre que se valide el componente visual del modelo base.
-- Investigación sobre arquitecturas MoE con expertos compartidos y capas GDN: el modelo permite estudiar el comportamiento de 144 expertos enrutados bajo cuantización agresiva (`Q2_0`) y medir el impacto en la calidad.
-- Pruebas de integración en pipelines de CI/CD con llama.cpp: la compatibilidad con `llama-cli` y `llama-server` permite automatizar pruebas de regresión de calidad sobre las dos shards.
+- Despliegue de un MoE de clase 180B en una unica GPU de 48 GB: el backbone ocupa 38,38 GB de VRAM, dejando unos 9,6 GB de margen para KV cache, lo que permite servir el modelo en estaciones con una sola A6000, L40S de 48 GB o similar.
+- Asistente de codigo en produccion: con 74,7 % en Aider Polyglot (Pass@2) y soporte de contextos de hasta 24K tokens en las pruebas, puede integrarse en pipelines de revision y generacion de parches sobre repositorios medianos.
+- Razonamiento matematico asistido: con 83,3 % en AIME 2025 (Pass@1) y presupuestos de hasta 64K tokens, es adecuado para tutoria y resolucion de problemas con traza de pensamiento extensa.
+- Prototipado e investigacion en entornos con VRAM limitada: permite experimentar con un MoE de 177B sin clúster multi-GPU, mapeando la tabla N-gram desde SSD y manteniendo el backbone en GPU.
+- Evaluacion comparativa de tecnicas de cuantizacion: al emplear solo rejillas lineales, sirve como referencia reproducible frente a cuantizaciones `IQ` y `EXL3` en estudios de fidelidad (PPL, KLD, acuerdo top-1).
+- Procesamiento de documentos con imagen y texto: el pipeline image-text-to-text permite tareas de descripcion y extraccion sobre capturas o paginas escaneadas, siempre que se valide la calidad tras la cuantizacion agresiva.
+- Servicio de chat de baja latencia en una sola GPU: con 94,0 t/s de decodificacion en un solo flujo, admite interacciones conversacionales casi en tiempo real sin infraestructura distribuida.
 
 ## Benchmarks y rendimiento
 
-Los datos disponibles provienen exclusivamente de la model card del autor y comparan cuantizaciones del mismo rango de tamaño (~66-67 GB), no benchmarks estándar del modelo base.
+Resultados publicados por el autor de la cuantizacion. Aider Polyglot sobre 225 problemas (Pass@2) y AIME 2025 sobre 30 problemas (Pass@1, temperatura 0,6).
 
-| Metrica | Grawnch_DR_Q2_0 (67,18 GB) | ISTA GSQ-RCO Q2_0 (66,40 GB) | Unsloth UD-IQ1_S (66,38 GB) |
-|---|---|---|---|
-| KLD Math & Code (nats, menor es mejor) | 0,2594 | > 0,7160 | ~0,68-0,78 |
-| KLD validación balanceada (nats) | 0,3428 | ~0,7160 | ~0,65-0,75 |
-| Top-1 Math & Code | 80,70 % | < 76,60 % | ~74,5-76,0 % |
-| Top-1 WT2_2048 | 78,27 % | ~76,60 % | ~75,5-77,0 % |
-| Perplejidad externa (BF16 = 11,657) | 11,468 (ΔPPL = -0,190) | ~12,1-12,4 (+0,45 a +0,75) | ~12,3-12,7 (+0,65 a +1,05) |
-| Perplejidad Math & Code (BF16 = 5,403) | 6,172 (ΔPPL = +0,769) | ~6,6-7,0 (+1,2 a +1,6) | ~6,8-7,3 (+1,4 a +1,9) |
-| Perplejidad WT2_2048 (BF16 = 2,153) | 3,191 (ΔPPL = +1,038) | ~3,35-3,55 (+1,2 a +1,4) | ~3,50-3,80 (+1,35 a +1,65) |
-| CosSim capa final vs BF16 | 0,9138 (Code) / 0,9104 (Ext) | ~0,85-0,87 | ~0,82-0,85 |
-| CosSim shard 2 (PLE) | 0,9960 | ~0,995 | ~0,995 |
-| Prefill / Decode | ~367 / ~94 t/s | 367,5 / 93,8 t/s | 108,2 / 70,3 t/s |
+| VRAM | Modelo / metodo | bpw | Aider Polyglot | AIME 2025 | Prefill / decode (t/s) | GGUF stock sin LUT |
+|---|---|---|---|---|---|---|
+| 38,4 GB | DR-V2-Q2_0 (este) | 2,45 | 74,7 % (168/225) | 83,3 % (25/30) | 367,0 / 94,0 | Si |
+| 52,0 GB | Unsloth V3.1 UD-IQ1_S | 3,26 | 79,6 % (179/225) | 83,3 % (25/30) | 108,2 / 70,3 | No |
+| 53,6 GB | Unsloth V3.1 UD-IQ1_M | 3,36 | 80,4 % (181/225) | 83,3 % (25/30) | 112,5 / 71,8 | No |
+| 64,0 GB | ExLlamaV3 SC | 2,18 | 64,0 % (144/225) | 60,0 % (18/30) | runtime EXL3 | No |
+| 66,4 GB | ISTA GSQ-RCO-Q2_0 | 2,50 | 66,2 % (149/225) | 63,3 % (19/30) | 367,5 / 93,8 | No |
+| 68,0 GB | ISTA GSQ-RCO-IQ2_XS | 2,35 | 71,1 % (160/225) | 73,3 % (22/30) | 142,0 / 76,5 | No |
+| 251,2 GB | BF16 sin comprimir | 16,00 | 82,2 % (185/225) | 90,0 % (27/30) | 24,5 / 2,1 | Safetensors |
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+Fidelidad de distribucion frente a BF16:
+
+| Modelo | WT2 PPL | Ext Math/Code PPL | Ext KLD (nats) | Top-1 Ext | Top-1 WT2 |
+|---|---|---|---|---|---|
+| BF16 | 2,153 | 5,403 | 0,0000 | 100,0 % | 100,0 % |
+| DR-V2-Q2_0 (este) | 3,191 | 6,172 | 0,2594 | 80,70 % | 78,27 % |
+| Unsloth UD-IQ1_S | 3,500 | 6,850 | 0,6800 | 75,20 % | 76,20 % |
+| Unsloth UD-IQ1_M | 3,380 | 6,520 | 0,5900 | 76,80 % | 77,10 % |
+| ExLlamaV3 SC | 3,620 | 7,100 | 0,7400 | 74,10 % | 75,40 % |
+| ISTA GSQ-RCO-Q2_0 | 3,420 | 6,750 | 0,7160 | 76,10 % | 76,60 % |
+| ISTA GSQ-RCO-IQ2_XS | 3,290 | 6,410 | 0,5400 | 77,90 % | 77,50 % |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el shard 1 ocupa 38,38 GB y el shard 2 28,80 GB. Con `-lm mmap --lazy-mode on`, solo el shard 1 necesita residir en VRAM/RAM; el shard 2 puede quedar mapeado en SSD.
-- GPU recomendadas: no disponibles en la información proporcionada. Por el tamaño del shard 1, se requiere al menos una GPU con 40-48 GB de VRAM (A100 40/80 GB, H100, A6000 48 GB) o reparto entre varias GPUs.
-- ¿Cabe en GPU consumer? No con la carga completa; el shard 1 de 38,38 GB supera la VRAM de una RTX 4090 (24 GB). Sería necesario repartir entre GPUs o usar memoria del sistema.
-- Opciones de despliegue: `llama.cpp` (`llama-cli`, `llama-server`), con soporte de split GGUF y `--lazy-mode`. No se mencionan vLLM, TGI ni Ollama.
-- Latencia y throughput estimados: ~367 tokens/s en prefill y ~94 tokens/s en decode según el autor, en hardware no especificado.
+- VRAM: 38,38 GB para el shard 1 (backbone) y 28,80 GB para el shard 2 mapeado en RAM/SSD; margen de unos 9,6 GB para KV cache en una GPU de 48 GB.
+- GPU recomendadas: A6000 de 48 GB, L40S de 48 GB, RTX 6000 Ada de 48 GB o cualquier GPU con al menos 48 GB.
+- GPU de consumo: no cabe en RTX 4090 de 24 GB ni en RTX 3090 de 24 GB.
+- Almacenamiento: el repositorio ocupa 67,2 GB; conviene SSD NVMe para el shard mapeado en memoria.
+- Despliegue: llama.cpp en modo stock con `-lm mmap`; no requiere kernels `IQ` ni runtime EXL3.
+- Rendimiento medido: 367,0 t/s de prefill y 94,0 t/s de decodificacion en un solo flujo, segun el autor.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Tamaño del paquete | Licencia | Calidad relativa (según el autor) |
-|---|---|---|---|---|---|
-| Grawnch_DR_Q2_0 | ~176,3 B (MoE, 144 expertos enrutados) | no disponible | 67,18 GB | qwen-community-1.0 | Referencia: KLD 0,2594; Top-1 80,70 % |
-| ISTA GSQ-RCO Q2_0 | mismo modelo base | no disponible | 66,40 GB | qwen-community-1.0 | KLD > 0,7160; Top-1 < 76,60 % |
-| Unsloth UD-IQ1_S (v3.1) | mismo modelo base | no disponible | 66,38 GB | qwen-community-1.0 | KLD ~0,68-0,78; Top-1 ~74,5-76,0 % |
-
-Las tres alternativas son cuantizaciones del mismo modelo base Qwen/Qwen3.8-Flash-Next, por lo que la comparación se limita a la fidelidad de la cuantización y al rendimiento en llama.cpp, no a capacidades del modelo. No se dispone de comparaciones con modelos de otros desarrolladores.
+| Modelo | Parametros | bpw | VRAM | Aider Polyglot | AIME 2025 | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|---|
+| DR-V2-Q2_0 (este) | ~177B MoE | 2,45 | 38,4 GB | 74,7 % | 83,3 % | qwen-community-1.0 | GGUF, llama.cpp |
+| Unsloth UD-IQ1_S | mismo base | 3,26 | 52,0 GB | 79,6 % | 83,3 % | qwen-community-1.0 | GGUF, llama.cpp |
+| ISTA GSQ-RCO-Q2_0 | mismo base | 2,50 | 66,4 GB | 66,2 % | 63,3 % | qwen-community-1.0 | GGUF, llama.cpp |
+| BF16 original | ~177B MoE | 16,00 | 251,2 GB | 82,2 % | 90,0 % | qwen-community-1.0 | Safetensors |
 
 ## Limitaciones y advertencias
 
-- La model card no documenta sesgos conocidos del modelo base ni del proceso de cuantización.
-- Riesgo de alucinación: no cuantificado en la información disponible; la cuantización `Q2_0` de los expertos enrutados puede incrementar la degradación en tareas fuera de las métricas reportadas.
-- La perplejidad en Math & Code y WT2_2048 empeora respecto a BF16 (+0,769 y +1,038 respectivamente), aunque el autor la presenta como mejor que las alternativas.
-- El rendimiento en prefill/decode (~367 / ~94 t/s) se reporta sin especificar el hardware utilizado, por lo que no es directamente extrapolable.
-- No se detallan los idiomas soportados ni la longitud de contexto; no se puede garantizar un comportamiento multilingüe ni contextos largos.
-- La licencia `qwen-community-1.0` es una licencia comunitaria con posibles restricciones para uso comercial; es necesario revisar el enlace a la licencia del modelo base antes de desplegarlo en producción.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el 4 de noviembre de 2026; no hay evidencia de validación independiente de las métricas del autor.
-- El shard 2 contiene únicamente la tabla PLE de la capa 1; su omisión o un mapeo en memoria incorrecto puede degradar la calidad de forma significativa.
-- No hay información sobre tool calling, agentes ni modo thinking, lo que limita su uso en pipelines de agentes sin validación previa.
+- La cuantizacion a 2,45 bpw degrada la calidad respecto a BF16: la PPL en WikiText-2 sube de 2,153 a 3,191 y el acuerdo top-1 cae al 78-81 %.
+- En Aider Polyglot pierde 7,5 puntos frente a BF16 y 5,7 puntos frente a Unsloth UD-IQ1_M, por lo que no es la opcion de mayor calidad dentro de las cuantizaciones de bajo bit.
+- El autor reporta consumos de tokens muy altos en las pruebas (40,1K de media en Aider y 33,0K en AIME), lo que incrementa el coste de inferencia y el uso de KV cache.
+- Requiere una GPU de 48 GB; no es desplegable en hardware de consumo.
+- La tabla N-gram del shard 2 se mapea desde RAM o SSD, por lo que el rendimiento depende de la velocidad del almacenamiento.
+- La licencia qwen-community-1.0 impone condiciones especificas de uso comercial; conviene revisar el texto completo antes de un despliegue en produccion.
+- No hay informacion sobre sesgos, idiomas soportados ni riesgos de alucinacion especificos de esta cuantizacion; se heredan los del modelo base.
+- Al ser una cuantizacion no oficial, no cuenta con el respaldo del equipo Qwen.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Grawnch/Qwen3.8-Flash-Next-DR-GGUF
+- Hugging Face: https://huggingface.co/Grawnch/Qwen3.8-Flash-Next-DR-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
+- Licencia: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE

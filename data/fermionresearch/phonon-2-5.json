@@ -80,7 +80,7 @@
     "region:us"
   ],
   "likes": 52,
-  "downloads_30d": 1932,
+  "downloads_30d": 1967,
   "trending_score": 12,
   "parameters": null,
   "parameters_human": null,
@@ -100,31 +100,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "LinkedIn : s’identifier ou s’inscrire",
-      "url": "https://fr.linkedin.com/",
-      "snippet": "À qui s’adresse LinkedIn ? À toute personne cherchant à construire sa carrière professionnelle."
-    },
-    {
-      "title": "LinkedIn: Log In or Sign Up",
-      "url": "https://www.linkedin.com/",
-      "snippet": "Explore top LinkedIn content Discover relevant posts and expert insights — curated by topic and in one place."
-    },
-    {
-      "title": "LinkedIn Login, Sign in | LinkedIn",
-      "url": "https://www.linkedin.com/login/",
-      "snippet": "Login to LinkedIn to keep in touch with people you know, share ideas, and build your career."
-    },
-    {
-      "title": "LinkedIn",
-      "url": "https://in.linkedin.com/company/linkedin",
-      "snippet": "Founded in 2003, LinkedIn connects the world's professionals to make them more productive and successful. With more than 1 …"
-    },
-    {
-      "title": "LinkedIn: Log In or Sign Up",
-      "url": "https://gb.linkedin.com/",
-      "snippet": "Welcome to your professional community Continue with Google Sign in with email By clicking Continue to join or sign in, you agree to …"
-    }
-  ]
+  "sources": []
 }

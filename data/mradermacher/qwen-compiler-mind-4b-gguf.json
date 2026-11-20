@@ -54,16 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Trivnpk/Qwen-Compiler-Mind-4B · Hugging Face",
-      "url": "https://huggingface.co/Trivnpk/Qwen-Compiler-Mind-4B",
-      "snippet": "Trivnpk / Qwen-Compiler-Mind-4B Like 0 GGUF Vietnamese English qwen ollama representation-engineering de-censorship compiler-mind systems-programming latent-compensation conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
-    },
-    {
-      "title": "mradermacher/aiops-qwen-4b-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/aiops-qwen-4b-GGUF",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    }
-  ]
+  "sources": []
 }

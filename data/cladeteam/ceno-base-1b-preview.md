@@ -2,51 +2,50 @@
 
 ## Resumen
 
-CENO Base 1B (Preview) es un modelo de lenguaje causal especializado en secuencias de ADN, publicado por CladeTeam bajo licencia Apache 2.0. Se trata de un checkpoint de vista previa (preview) de 1.302.429.280 parametros (aproximadamente 1,3 mil millones) que reutiliza la arquitectura hibrida de NVIDIA Nemotron-H, adaptada a un tokenizador a nivel de caracter para nucleotidos. El modelo se distribuye en formato safetensors con codigo remoto de Transformers (`CENOForCausalLM` y `CENOCharLevelTokenizer`), por lo que requiere `trust_remote_code=True` para su carga.
+CENO Base 1B (Preview) es un modelo de lenguaje causal especializado en secuencias de ADN, publicado por CladeTeam bajo licencia Apache 2.0. Se presenta como un modelo base de propósito general para modelado de secuencias genéticas, orientado a tareas como el cálculo de verosimilitud de secuencias, aprendizaje de representaciones y ajuste fino posterior en datos específicos de especie o tarea. Con 1.302.429.280 parámetros, se sitúa en el rango de los 1B, un tamaño manejable para investigación en genómica computacional.
 
-El modelo resuelve tareas de modelado de secuencias biologicas: puntuacion de verosimilitud (likelihood scoring), aprendizaje de representaciones y ajuste fino posterior sobre datos de ADN especificos de especie o tarea. Su relevancia actual radica en que aplica una arquitectura hibrida estado-espacio/transformer (Mamba + attention) de NVIDIA a un dominio cientifico donde la mayoria de modelos disponibles son transformers puros de menor eficiencia en secuencias largas.
+El modelo deriva de Nemotron-H de NVIDIA (también Apache 2.0). Según la model card, el código remoto de Transformers incluido (`configuration_ceno.py`, `modeling_ceno.py`) es un renombrado de la implementación upstream de Nemotron-H y los pesos no han sido modificados. Esto implica que la arquitectura subyacente es la híbrida de Nemotron-H (Mamba + atención), aunque la model card no detalla la composición exacta de capas. El repositorio incluye un tokenizador a nivel de carácter (`CENOCharLevelTokenizer`) adaptado a ADN.
 
-Conviene subrayar que, segun la propia model card, los pesos son identicos a los del modelo upstream Nemotron-H: el codigo incluido es un renombrado de la implementacion original y no se declaran datos de entrenamiento adicionales ni ajuste sobre ADN. Se trata, por tanto, de un preview con contrato de inferencia propio y procedencia de post-entrenamiento no especificada.
+La relevancia actual del modelo reside en su enfoque: un modelo base de ADN de 1B parámetros con licencia permisiva, pensado para ser ajustado en tareas downstream. No obstante, se trata de una versión preview, sin benchmarks publicados ni detalles de entrenamiento en la información disponible, y con una model card que advierte explícitamente de que la corrección numérica no garantiza generaciones libres de repeticiones ni biológicamente funcionales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Hibrida (Nemotron-H): capas Mamba/SSM combinadas con atencion en un transformer causal |
+| Arquitectura | Transformer causal híbrido derivado de NVIDIA Nemotron-H (Mamba + atención; composición exacta de capas no disponible) |
 | Parametros totales | 1.302.429.280 |
-| Parametros activos | no disponible (no se declara como MoE) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (solo se distribuyen pesos safetensors sin cuantizar) |
-| Idiomas soportados | dna (secuencias de ADN; tokenizador a nivel de caracter) |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; no se documentan variantes GGUF/AWQ/GPTQ) |
+| Idiomas soportados | dna |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (`model.safetensors`) |
+| Formato de pesos | safetensors (`model.safetensors`), con código remoto de Transformers (`trust_remote_code=True`) |
 
 ## Arquitectura y entrenamiento
 
-CENO hereda la arquitectura de NVIDIA Nemotron-H, un modelo hibrido que intercala capas de espacio de estados (Mamba) con capas de atencion dentro de un transformer causal. El codigo remoto incluido (`configuration_ceno.py`, `modeling_ceno.py`) es un renombrado de la implementacion upstream de Nemotron-H, y la model card afirma explicitamente que los pesos no han sido modificados. La configuracion activa `use_mamba_kernels=true`, lo que exige los paquetes `mamba-ssm` y `causal-conv1d`; en su ausencia puede activarse la ruta Mamba en PyTorch puro estableciendo `config.use_mamba_kernels=False`. El stack probado por el autor es PyTorch 2.7.0a0 (NVIDIA 25.03), Transformers 4.48.3, mamba-ssm 2.2.4, causal-conv1d 1.2.2.post1 y FlashAttention 2.7.3.
+La arquitectura es la de Nemotron-H de NVIDIA, un modelo híbrido que combina capas Mamba (SSM) con capas de atención, según se deduce de la dependencia declarada del stack `mamba-ssm` y `causal-conv1d` y de la propia model card. El código de modelado incluido en el repositorio es un renombrado del upstream, sin cambios en los pesos. La configuración empaquetada activa `use_mamba_kernels=true`, con una ruta alternativa en PyTorch puro si no se instalan los kernels de Mamba. El tokenizador es a nivel de carácter (`CENOCharLevelTokenizer`), adecuado para alfabetos de ADN.
 
-No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF o DPO. La model card tampoco documenta un ajuste especifico sobre ADN: el tokenizador a nivel de caracter (`CENOCharLevelTokenizer`) es la adaptacion declarada al dominio, y el autor advierte que no se infiere un perfil de post-entrenamiento a partir del nombre del checkpoint. La innovacion tecnica destacable es, por tanto, la combinacion de eficiencia en secuencias largas propia de Mamba con la expresividad de la atencion, aplicada a un vocabulario de nucleotidos.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo etapas de RLHF, DPO o ajuste supervisado. La model card indica que se trata de un checkpoint base en preview y que no se infiere un perfil de post-entrenamiento a partir del nombre. Tampoco se documentan innovaciones adicionales como decodificación especulativa o atención lineal más allá de lo que aporta la arquitectura Nemotron-H subyacente.
 
 ## Capacidades
 
-- Generacion de texto sobre alfabeto de ADN (secuencias de nucleotidos) mediante tokenizacion a nivel de caracter.
-- Modelado de verosimilitud de secuencias (likelihood scoring) para evaluar o puntuar fragmentos de ADN.
-- Aprendizaje de representaciones (representations learning) utilizable como base para tareas downstream.
-- Ajuste fino sobre datos especificos de especie o tarea (downstream finetuning).
-- Generacion causal autoregresiva de secuencias geneticas.
-- No se declara soporte de tool calling, function calling ni uso como agente.
-- No se declaran capacidades multilingues ni de vision, audio o thinking mode.
-- No se declara una ventana de contexto concreta.
+- Modelado de secuencias de ADN: cálculo de verosimilitud de secuencias y modelado autorregresivo sobre un alfabeto de nucleótidos mediante tokenizador a nivel de carácter.
+- Aprendizaje de representaciones: extracción de embeddings y estados ocultos para tareas downstream de genómica.
+- Ajuste fino supervisado: punto de partida para especialización en especies o tareas concretas (clasificación, predicción de elementos reguladores, etc.).
+- Generación de texto sobre el dominio `dna` (pipeline `text-generation`); no orientado a lenguaje natural.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- No se documenta capacidad multilingüe: el único idioma declarado es `dna`.
+- No se documentan modos especiales (thinking mode, visión, audio).
 
 ## Casos de uso
 
-- Puntuacion de variantes geneticas: usar el modelo como modelo de lenguaje para calcular la verosimilitud de una secuencia de referencia frente a una secuencia con variante, y priorizar mutaciones candidatas por su menor probabilidad bajo el modelo.
-- Filtrado de secuencias sinteticas: generar candidatos de ADN y descartar aquellos con baja verosimilitud, empleando el modelo como discriminador en pipelines de diseno de secuencias.
-- Preentrenamiento de representaciones para clasificacion: extraer embeddings del modelo y ajustar una cabeza ligera para tareas como prediccion de regiones regulatorias o elementos funcionales.
-- Ajuste fino especifico de especie: reentrenar sobre genomas de una especie concreta para adaptar el modelo a sus sesgos composicionales y motivos.
-- Modelado de regiones largas: aprovechar la arquitectura hibrida Mamba/attention para procesar fragmentos de ADN de mayor longitud que los transformers puros gestionan con coste cuadratico.
-- Investigacion en modelos de lenguaje genomicos: servir como linea base reproducible (licencia Apache 2.0) para comparar arquitecturas hibridas frente a transformers clasicos en tareas de ADN.
-- Analisis de motivos y patrones: emplear la probabilidad condicional por posicion para detectar motivos sobrerrepresentados o violaciones de composicion esperada en una secuencia.
+- Puntuación de verosimilitud de variantes: usar el modelo para calcular la log-probabilidad de secuencias de referencia y alternativas, y priorizar variantes con menor verosimilitud como candidatas a estudio funcional. El modelo base está pensado explícitamente para likelihood scoring.
+- Aprendizaje de representaciones para genómica: extraer embeddings de fragmentos de ADN y alimentar clasificadores downstream (por ejemplo, predicción de regiones reguladoras o de accesibilidad de cromatina), aprovechando que el modelo está diseñado para representation learning.
+- Ajuste fino específico de especie: partir del checkpoint base y ajustar en datos de un genoma concreto para tareas de anotación o predicción, dado que la model card lo indica como uso previsto.
+- Modelado de lenguaje de ADN en investigación: emplear el modelo como baseline autorregresivo en experimentos de modelado de secuencias genéticas, con la ventaja de una licencia Apache 2.0 que facilita la reproducibilidad y la publicación de derivados.
+- Filtrado y priorización de secuencias sintéticas: usar la verosimilitud del modelo como señal para descartar secuencias generadas o candidatas poco plausibles antes de validación experimental, con la cautela de que la corrección numérica no implica funcionalidad biológica.
+- Desarrollo de herramientas internas de genómica computacional: integrar el modelo en pipelines de Python con Transformers, aprovechando el tokenizador a nivel de carácter y el formato safetensors para despliegue en infraestructura propia.
 
 ## Benchmarks y rendimiento
 
@@ -54,37 +53,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en precision nativa (fp16/bf16): aproximadamente 2,6 GB solo para pesos, mas overhead de activaciones y cache; en la practica se recomienda reservar entre 4 y 6 GB.
-- Cabe en GPU de consumo: si, en tarjetas con 8 GB o mas (RTX 3060 Ti, RTX 3070, RTX 4060, RTX 4070 y superiores).
-- GPU profesionales recomendadas para mayor throughput: A100, H100, L40S; tambien funciona en T4 y A10 para inferencia ligera.
-- Despliegue: Transformers con `trust_remote_code=True` (stack probado: PyTorch 2.7.0a0, Transformers 4.48.3, mamba-ssm 2.2.4, causal-conv1d 1.2.2.post1, FlashAttention 2.7.3). La model card menciona que HF y vLLM usan entornos separados, lo que sugiere soporte de vLLM, aunque no se detalla la configuracion. No se documenta soporte de llama.cpp ni Ollama.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia en fp16/bf16: aproximadamente 2,6 GB solo para pesos (1,3B parámetros × 2 bytes), más overhead de activaciones y del stack Mamba/Triton; en la práctica, se recomienda al menos 8 GB de VRAM para inferencia cómoda con contexto moderado.
+- En cuantización de 8 bits, los pesos ocuparían alrededor de 1,3 GB; en 4 bits, alrededor de 0,65 GB, aunque no se documentan variantes cuantizadas oficiales.
+- GPU recomendadas: no disponible de forma explícita. Por tamaño, cabe en GPUs de consumo como RTX 3060 12 GB, RTX 4070, RTX 4090, así como en A100/H100 para despliegues de mayor throughput.
+- Cabe en GPU de consumo: sí, previsiblemente en cualquier GPU con 8 GB o más de VRAM en precisión reducida.
+- Opciones de despliegue: Transformers con `trust_remote_code=True` es la vía documentada. La model card menciona que HF y vLLM usan entornos separados, lo que sugiere compatibilidad con vLLM, aunque no se detalla la configuración. No se documentan Ollama, llama.cpp ni TGI.
+- Stack probado: PyTorch 2.7.0a0 (NVIDIA 25.03), Transformers 4.48.3, mamba-ssm 2.2.4, causal-conv1d 1.2.2.post1 y FlashAttention 2.7.3.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones de contexto que permitan una comparacion cuantitativa fiable con alternativas de la misma categoria. Como referencia estructural, el modelo upstream Nemotron-H (NVIDIA, Apache 2.0) comparte arquitectura y pesos, por lo que su rendimiento seria identico al de este checkpoint; sin embargo, no se han facilitado cifras comparativas en la informacion disponible.
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| CENO Base 1B (Preview) | 1.302.429.280 | no disponible | Apache 2.0 | Hugging Face, código remoto | Derivado de Nemotron-H; tokenizador a nivel de carácter para ADN |
+| NVIDIA Nemotron-H (upstream) | no disponible en esta ficha | no disponible | Apache 2.0 | Hugging Face / NVIDIA | Modelo original del que CENO deriva; los pesos de CENO no se modifican |
+| Otros modelos de ADN de tamaño comparable | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la información proporcionada |
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| CENO Base 1B (Preview) | 1.302.429.280 | no disponible | Apache 2.0 | Hugging Face |
-| Nemotron-H (upstream) | no disponible en esta ficha | no disponible | Apache 2.0 | Hugging Face / NVIDIA |
-| Alternativas de ADN de ~1B | no disponible | no disponible | no disponible | no disponible |
+No se dispone de información suficiente para comparar rendimiento con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Es un checkpoint de vista previa (preview): el autor no garantiza estabilidad del contrato de inferencia ni correccion numerica mas alla de la carga.
-- Los pesos son identicos a los de Nemotron-H: no hay evidencia declarada de entrenamiento especifico sobre ADN, por lo que el rendimiento en tareas genomicas puede ser limitado.
-- La procedencia del post-entrenamiento no esta documentada; el autor advierte explicitamente que no debe inferirse a partir del nombre del checkpoint.
-- La correccion numerica no garantiza generacion libre de repeticiones ni secuencias biologicamente funcionales.
-- Requiere `trust_remote_code=True` y ejecucion de codigo Python remoto, con el riesgo de seguridad asociado.
-- Depende del stack Mamba/Triton (`mamba-ssm`, `causal-conv1d`); sin ellos debe activarse la ruta PyTorch puro, con posible impacto en rendimiento.
-- No se documentan sesgos, riesgos de alucinacion en sentido linguistico ni limitaciones de contexto o idioma mas alla del alfabeto de ADN.
-- Licencia Apache 2.0: permite uso comercial, pero se heredan las atribuciones de copyright de AI21 Labs, HuggingFace y NVIDIA, ademas de las modificaciones de CladeTeam.
-- Solo 150 descargas y 1 like en el momento de la consulta: comunidad y validacion externa muy limitadas.
+- Versión preview: la model card la etiqueta explícitamente como preview, sin garantías de estabilidad ni de calidad de generación.
+- Sin benchmarks publicados: no hay evidencia cuantitativa de rendimiento en tareas de genómica.
+- Advertencia del autor: la corrección numérica no garantiza generaciones libres de repeticiones ni biológicamente funcionales; no debe usarse como sustituto de validación experimental.
+- Idiomas: solo se declara `dna`; no es un modelo de lenguaje natural y no debe emplearse para texto general.
+- Contexto: no documentado, lo que impide planificar tareas que requieran ventanas largas.
+- Dependencias frágiles: requiere `trust_remote_code=True` y el stack Mamba/Triton; sin `mamba-ssm` y `causal-conv1d` hay que desactivar `use_mamba_kernels`, con posible impacto en rendimiento.
+- Licencia Apache 2.0: permisiva para uso comercial, pero hereda avisos de copyright de AI21 Labs, HuggingFace y NVIDIA; conviene conservar las atribuciones.
+- Sesgos: no documentados; en modelos de ADN, los sesgos hacia especies o regiones sobrerrepresentadas en los datos de entrenamiento son un riesgo conocido, aunque no se aportan datos específicos.
+- Riesgo de alucinación: no evaluado en la información disponible; en el dominio biológico, secuencias plausibles pueden no ser funcionales.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/CladeTeam/CENO-base-1b-preview
-- Arbol de archivos: https://huggingface.co/CladeTeam/CENO-base-1b-preview/tree/main
-- Repositorio de codigo y uso actual: https://github.com/CladeTeam/CENO
-- Modelo upstream Nemotron-H (NVIDIA): no disponible en la informacion proporcionada
+- Hugging Face: https://huggingface.co/CladeTeam/CENO-base-1b-preview
+- Repositorio GitHub de CladeTeam/CENO: https://github.com/CladeTeam/CENO

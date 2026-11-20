@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 1224,
+  "downloads_30d": 1262,
   "trending_score": 0,
   "parameters": 44909056,
   "parameters_human": "44.9M",
@@ -52,6 +52,31 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "C4 (5k validation split, seed=42)",
+      "metric": null,
+      "value": 93.52
+    },
+    {
+      "task": null,
+      "dataset": "C4 (5k validation split, seed=42)",
+      "metric": null,
+      "value": 4.5382
+    },
+    {
+      "task": null,
+      "dataset": "C4 (5k held-out test split, seed=42)",
+      "metric": null,
+      "value": 96.97
+    },
+    {
+      "task": null,
+      "dataset": "C4 (5k held-out test split, seed=42)",
+      "metric": null,
+      "value": 4.5744
+    }
+  ],
   "sources": []
 }

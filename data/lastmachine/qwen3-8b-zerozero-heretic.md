@@ -1,99 +1,102 @@
 # LastMachine/Qwen3-8B-ZeroZero-Heretic
 
 ## Resumen
-Qwen3-8B-ZeroZero-Heretic es una variante modificada de Qwen3-8B, el modelo denso de 8.200 millones de parametros desarrollado por el equipo Qwen de Alibaba. La modificacion la firma LastMachine, un publicador independiente, mediante la herramienta Heretic 2, que aplica tecnicas de "abliteration" para reducir los rechazos (refusals) y el denominado "slop" (muletillas y relleno generico) del modelo original. El resultado conserva la arquitectura y el tokenizador intactos, pero altera el comportamiento conversacional.
 
-El modelo resuelve un problema muy concreto: obtener una version de Qwen3-8B que responda a peticiones que el modelo base rechaza por sus politicas de seguridad, y que ademas produzca texto menos generico. Segun la model card, los rechazos en el conjunto de prueba de Heretic caen un 91% (de 100/100 a 9/100) y las palabras de relleno por cada 1.000 se reducen un 78% (de 16,5 a 3,6), manteniendo los mismos resultados en las comprobaciones de hechos y logica (13/15).
+Qwen3-8B ZeroZero Heretic es una versión modificada de Qwen3-8B, el modelo de 8.200 millones de parámetros del equipo Qwen, publicada por el usuario LastMachine en Hugging Face. La modificación se ha realizado con la herramienta Heretic 2, un proceso de abliteración sin entrenamiento que elimina las capas o direcciones responsables de los rechazos y reduce el "slop" (frases hechas, relleno y lenguaje genérico típico de los LLM). El resultado es un modelo sin salvaguardas integradas y con una prosa notablemente más limpia, manteniendo la arquitectura, el tokenizador y el modo de razonamiento ("thinking mode") del modelo original.
 
-Es relevante ahora porque ejemplifica una tendencia creciente de derivados "sin censura" construidos sobre modelos abiertos de ultima generacion, y porque la propia model card documenta con transparencia los riesgos: el modelo puede producir contenido danino o falso y no incorpora ningun filtro interno. La licencia Apache 2.0 del modelo base se mantiene.
+El problema que resuelve es doble: por un lado, ofrece un modelo base sin rechazos para desarrolladores que necesitan control total sobre la moderación (implementándola ellos mismos aguas abajo); por otro, combate el estilo inflado y repetitivo que caracteriza a muchos modelos alineados. Según los datos publicados por el autor, los rechazos en el test de prompts dañinos de Heretic se reducen un 91 % y las palabras "slop" por cada mil tokens un 78 %, sin pérdida medible en las comprobaciones de hechos y lógica.
+
+Es relevante ahora porque representa la tendencia de los modelos abliterados de segunda generación: no se limitan a quitar rechazos, sino que también optimizan la calidad de la escritura. El modelo conserva el contexto nativo de 32.768 tokens de Qwen3-8B y se distribuye en safetensors, GGUF (Q4_K_M) y MLX 4-bit.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (Qwen3), 36 capas |
-| Parametros totales | 8.190.735.360 (8,2B) |
-| Parametros activos | no aplica (modelo denso) |
-| Longitud de contexto | 32.768 tokens nativos |
-| Tipos de cuantizacion | safetensors en BF16/FP16; GGUF Q4_K_M y MLX 4-bit en repos derivados |
-| Idiomas soportados | en (segun metadatos; el modelo base Qwen3 es multilingue) |
+| Arquitectura | Transformer decoder (Qwen3), 36 capas |
+| Parametros totales | 8.190.735.360 (8,19 B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 32.768 tokens |
+| Tipos de cuantizacion | Safetensors (sin cuantizar), GGUF Q4_K_M, MLX 4-bit |
+| Idiomas soportados | Ingles (etiquetado oficial); el modelo base Qwen3 soporta mas idiomas, pero no disponible en la ficha |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (repo principal); GGUF y MLX en repos separados |
+| Formato de pesos | Safetensors (repo principal), GGUF y MLX en reposositorios separados |
 
 ## Arquitectura y entrenamiento
-La arquitectura es identica a la de Qwen3-8B: un transformer denso de 36 capas con 8,2 mil millones de parametros, tokenizador original y modo de razonamiento ("thinking mode") conservado. No hay cambios estructurales ni de vocabulario; la modificacion actua exclusivamente sobre los pesos para alterar la distribucion de respuestas.
 
-El proceso de modificacion emplea Heretic 2.0.0, herramienta de Philipp Emanuel Weidmann (licencia AGPL-3.0), que optimiza la supresion de direcciones de activacion asociadas a rechazos y a "slop". Se realizaron 50 ensayos para la componente de rechazos y 50 para la de slop, seleccionando el ensayo 39 y despues el 20. La divergencia KL respecto al modelo base es de 2,69 en prompts inofensivos, lo que indica un alejamiento considerable de Qwen3-8B; respecto al modelo "decensored" intermedio en prompts de escritura, la KL es de 0,76. No se realizo un reentrenamiento supervisado ni RLHF adicional segun la informacion disponible.
+La arquitectura es identica a la de Qwen3-8B original: un transformer decoder denso (no MoE) de 8,19 B de parametros y 36 capas, con contexto nativo de 32.768 tokens y el mismo tokenizador. No hay reentrenamiento ni ajuste fino supervisado: Heretic 2 es una herramienta de modificacion sin entrenamiento (training-free) que identifica y elimina las direcciones del espacio latente responsables de los rechazos y del estilo "slop", mediante busquedas de 50 ensayos para rechazos y 50 para slop (se seleccionaron los ensayos 39 y 20, respectivamente).
+
+Sobre el modelo base: Qwen3-8B fue entrenado por el equipo Qwen segun el Qwen3 Technical Report (arXiv:2505.09388), con preentrenamiento a gran escala y un regimen de alineacion que incluye razonamiento en modo "thinking". Los datos concretos de tokens y composicion del dataset de Qwen3-8B no estan detallados en la informacion disponible. La divergencia KL respecto al modelo base es de 2,69 en prompts inofensivos, lo que indica una modificacion sustancial; respecto al modelo decensurado previo a la pasada "noslop", la KL en prompts de escritura es de 0,76.
 
 ## Capacidades
-- Generacion de texto conversacional en ingles con modo de razonamiento activable o desactivable mediante `enable_thinking`.
-- Reduccion sustancial de rechazos frente al modelo base en prompts considerados daninos por el test de Heretic.
-- Reduccion del relleno generico ("slop") en tareas de escritura.
-- Conserva las capacidades del Qwen3-8B original: razonamiento, matematicas y generacion de codigo, aunque la model card no las evalua de forma especifica.
-- Soporte de plantilla de chat y tokenizador originales de Qwen3.
-- No se documenta soporte explicito de tool calling, function calling ni flujos de agente en la informacion disponible.
-- Capacidades multilingues: los metadatos solo declaran ingles, aunque el modelo base es multilingue; no se verifica su preservacion.
+
+- Generacion de texto conversacional con estilo reducido en "slop": un 68 % menos de respuestas que tocan la lista de slop y un 78 % menos de palabras slop por cada mil tokens.
+- Modo de razonamiento "thinking" heredado de Qwen3-8B, activable o desactivable mediante `enable_thinking=True/False` en la plantilla de chat (bloque `<think>`).
+- Respuestas a solicitudes que el Qwen3-8B original rechaza: solo 9 de 100 prompts del test de Heretic reciben rechazo (frente a 100/100 del original).
+- Razonamiento factual y logico preservado: 13/15 en las comprobaciones de hechos y logica del autor, sin cambio respecto al modelo base.
+- Contexto largo de 32.768 tokens para conversaciones multi-turno y documentos extensos.
+- Soporte de tool calling / function calling: heredado potencialmente de Qwen3-8B, pero no verificado en la informacion disponible para esta version modificada.
+- Capacidades multilingues: el modelo base soporta multiples idiomas, pero esta version esta etiquetada oficialmente solo en ingles y las metricas se midieron en ingles.
+- Sin vision, audio ni otras modalidades: es un modelo de solo texto (text-generation).
 
 ## Casos de uso
-- Investigacion sobre alineacion y seguridad: permite estudiar como cambia el comportamiento de un modelo al eliminar sus mecanismos de rechazo, comparando directamente con Qwen3-8B y midiendo divergencia KL.
-- Generacion creativa sin restricciones editoriales: escritura de ficcion, dialogos o guiones con tematicas que el modelo base rechazaria, usando el modo sin thinking con temperatura 0,7 y top_p 0,8.
-- Evaluacion de "slop" y calidad de texto: util como referencia para medir densidad de muletillas frente a otros modelos, dado que la model card reporta 3,6 palabras de relleno por cada 1.000.
-- Prototipado local en Apple Silicon: la variante MLX 4-bit permite ejecutar el modelo en LM Studio o mlx-lm en equipos con memoria unificada, sin depender de servicios en la nube.
-- Red teaming y pruebas de robustez: sirve como sujeto de prueba para sistemas de moderacion que deban filtrar respuestas de modelos sin guardarrailes.
-- Experimentos de destilacion o comparacion de comportamiento: al compartir arquitectura y tokenizador con Qwen3-8B, permite aislar el efecto de la modificacion de pesos en estudios controlados.
+
+- Escritura creativa y redaccion sin estilo genérico: al reducir un 78 % las palabras slop, es adecuado para generar narrativa, ensayos o copys donde la prosa inflada de los modelos alineados es un problema.
+- Agentes y pipelines con moderacion propia: al carecer de filtros integrados, permite a los desarrolladores implementar capas de moderacion personalizadas aguas abajo, controlando exactamente que se bloquea.
+- Investigacion en alineacion y abliteracion: la divergencia KL documentada (2,69 respecto al base) y la metodologia de Heretic lo hacen util como sujeto de estudio sobre como la eliminacion de rechazos afecta al comportamiento del modelo.
+- Chatbots locales en Apple Silicon: la version MLX 4-bit funciona en LM Studio y mlx-lm, ideal para asistentes personales offline en Mac.
+- Despliegue en hardware de consumo: la version GGUF Q4_K_M permite ejecutarlo en LM Studio, llama.cpp u Ollama en GPUs y CPUs domesticas.
+- Analisis de sesgos y censura: util para comparar respuestas de modelos con y sin salvaguardas, aunque el propio autor advierte que en temas sensibles sobre China reproduce la narrativa oficial sanitizada del modelo base.
+- Prototipado rapido de asistentes conversacionales: el contexto de 32.768 tokens permite gestionar conversaciones multi-turno largas sin gestion compleja de memoria.
 
 ## Benchmarks y rendimiento
 
-| Medida | Qwen3-8B | ZeroZero | Claude Opus 5.5 |
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. El autor publica metricas propias de la modificacion:
+
+| Measure | Cambio | Antes | Despues |
 |---|---:|---:|---:|
-| Rechazos (de 24 preguntas normales) | 2 | 0 | 0 |
-| Palabras de slop por 1.000 (escritura) | 16,5 | 3,6 | 3,9 |
-| Comprobaciones de hechos y logica | 13/15 | 13/15 | 15/15 |
-| Respuestas en bucle | 0 | 0 | 0 |
-
-| Medida interna de Heretic | Antes | Despues |
-|---|---:|---:|
-| Rechazos en test de prompts daninos | 100/100 | 9/100 |
-| Respuestas que activan la lista de slop | 78/100 | 25/100 |
-| Palabras de slop por 1.000 | 16,5 | 3,6 |
-| Comprobaciones de hechos y logica superadas | 13/15 | 13/15 |
-
-No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estandar en la informacion disponible. Las cifras anteriores proceden de la model card y se basan en muestras pequenas (24 preguntas y 100 prompts), por lo que su valor estadistico es limitado.
+| Rechazos en test de prompts dañinos de Heretic | 91 % menos | 100/100 | 9/100 |
+| Respuestas que tocan la lista de slop | 68 % menos | 78/100 | 25/100 |
+| Palabras slop por 1.000 | 78 % menos | 16,5 | 3,6 |
+| Comprobaciones de hechos y logica superadas | Sin cambio | 13/15 | 13/15 |
 
 ## Requisitos de hardware
-- VRAM estimada en BF16/FP16: aproximadamente 16,4 GB de pesos, mas overhead de activaciones; se recomienda 20-24 GB.
-- VRAM estimada en cuantizacion 4-bit (GGUF Q4_K_M o MLX 4-bit): en torno a 5-6 GB, con margen para contexto.
-- GPU recomendadas: A100 40GB, H100, L40S o RTX 4090 (24 GB) para BF16; RTX 3090/4080 (16-24 GB) para cuantizaciones.
-- Cabe en GPU de consumo: si, en RTX 4090, 4080, 3090 y en Apple Silicon con memoria unificada mediante MLX.
-- Opciones de despliegue: Transformers (>=4.51.0), text-generation-inference, llama.cpp y LM Studio con GGUF, mlx-lm y LM Studio con MLX en macOS.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+
+- VRAM estimada para inferencia en precision completa (safetensors, BF16/FP16): aproximadamente 16-17 GB para los pesos, mas la cache de contexto; una GPU de 24 GB (RTX 3090/4090) es suficiente.
+- Version GGUF Q4_K_M: aproximadamente 5-6 GB; cabe en GPUs de consumo de 8 GB (RTX 3060 12 GB, RTX 4060 Ti 16 GB) e incluso en CPU+RAM en equipos modestos.
+- Version MLX 4-bit: aproximadamente 5 GB de memoria unificada; funciona en Apple Silicon con 8 GB o mas de RAM (recomendado 16 GB).
+- GPU recomendadas: RTX 3090/4090 para la version sin cuantizar; cualquier GPU de 8-12 GB para la version Q4_K_M.
+- Despliegue: Transformers (>= 4.51.0), LM Studio (versiones MLX y GGUF), mlx-lm, llama.cpp y Ollama (version GGUF). No hay menciones explicitas a vLLM o TGI en la ficha.
+- Latencia y throughput estimados: no disponible.
+- Ajustes de muestreo recomendados (heredados de Qwen): modo thinking, temperatura 0,6, top-p 0,95, top-k 20; modo no-thinking, temperatura 0,7, top-p 0,8, top-k 20. No usar decodificacion greedy.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rechazos (24 preguntas) | Slop por 1.000 | Licencia |
-|---|---:|---:|---:|---:|---|
-| Qwen3-8B-ZeroZero-Heretic | 8,2B | 32.768 | 0 | 3,6 | Apache 2.0 |
-| Qwen/Qwen3-8B | 8,2B | 32.768 | 2 | 16,5 | Apache 2.0 |
-| Claude Opus 5.5 | no disponible | no disponible | 0 | 3,9 | propietaria |
+| Modelo | Parametros | Contexto | Formatos | Licencia | Caracteristica distintiva |
+|---|---|---|---|---|---|
+| LastMachine/Qwen3-8B-ZeroZero-Heretic | 8,19 B | 32.768 | Safetensors, GGUF, MLX | Apache 2.0 | Abliterado con Heretic 2, sin rechazos y con slop reducido |
+| Qwen/Qwen3-8B (base) | 8,19 B | 32.768 | Safetensors, GGUF | Apache 2.0 | Modelo original con salvaguardas y modo thinking |
+| Otros modelos abliterados de 8 B (p. ej. variantes abliterated de Llama-3.1-8B) | ~8 B | 128.000 (Llama-3.1) | GGUF, Safetensors | Licencia Llama 3.1 (uso comercial con condiciones) | Eliminan rechazos pero normalmente sin pasada anti-slop |
 
-Frente a Qwen3-8B, la diferencia principal es la eliminacion de rechazos y la reduccion de relleno, con el mismo rendimiento en las comprobaciones de hechos y logica de la model card. Frente a Claude Opus 5.5, el modelo abierto iguala en rechazos y slop en esta muestra, pero queda por debajo en las comprobaciones de hechos y logica (13/15 frente a 15/15). No se dispone de comparaciones con otras variantes abliteradas de Qwen3-8B en la informacion proporcionada.
+Nota: la comparativa con variantes abliteradas concretas se ofrece a titulo orientativo; no hay datos de benchmarks comparativos publicados para esta version modificada.
 
 ## Limitaciones y advertencias
-- Ausencia total de guardarrailes: el modelo responde a peticiones que Qwen3-8B rechaza; es imprescindible anteponer moderacion propia en cualquier despliegue con usuarios reales.
-- Riesgo elevado de alucinacion: la reduccion de slop no implica mayor veracidad; la model card lo advierte de forma explicita.
-- Sesgo documentado en temas de China: ante preguntas sobre Tiananmen Square ofrece una version oficial sanitizada que omite las protestas y la represion, y exagera la posicion de "una sola China" sobre Taiwan. No es fiable en ese dominio.
-- Escasa capacidad de contraargumentacion: el autor cita que califico de "no del todo irrazonable" invertir los ahorros en loteria; no debe usarse para decisiones financieras, medicas o legales.
-- Idioma: los metadatos solo declaran ingles; el rendimiento en castellano no esta verificado.
-- Muestra de evaluacion pequena (24 preguntas, 100 prompts), por lo que las cifras de la model card deben tomarse como indicativas.
-- Repositorio con acceso restringido (gated): requiere solicitud y aceptacion de terminos en Hugging Face.
-- La herramienta Heretic es AGPL-3.0; los pesos resultantes se distribuyen bajo Apache 2.0, pero conviene revisar las implicaciones si se modifica o redistribuye el pipeline.
-- Divergencia KL alta respecto al base (2,69 en prompts inofensivos), lo que sugiere posibles degradaciones no medidas en otras tareas.
+
+- Sin salvaguardas de ningun tipo: puede responder a solicitudes que el modelo original rechaza. Si se expone a usuarios reales, es obligatorio poner una capa de moderacion propia por delante.
+- Sesgos heredados del modelo base: el propio autor documenta que en temas sensibles sobre China (Tiananmen, Taiwan) el modelo reproduce la narrativa oficial sanitizada, sin las protestas ni la represion. Menos rechazos no significa mas verdad.
+- Riesgo de alucinacion: sigue siendo un LLM y puede estar confiadamente equivocado. La reduccion de slop no mejora la veracidad.
+- Mala capacidad de contraargumentacion: el autor documenta que califico de "no del todo irrazonable" invertir los ahorros en loteria. No usarlo para decisiones financieras, medicas o legales.
+- Idioma: etiquetado oficialmente solo en ingles; el rendimiento en otros idiomas, incluido el castellano, no esta verificado en la ficha.
+- Sin verificacion de capacidades: el soporte de tool calling y el rendimiento en benchmarks estandar no han sido validados tras la modificacion; la abliteracion con KL de 2,69 respecto al base podria afectar a capacidades no medidas.
+- Licencia: Apache 2.0 permite uso comercial sin restricciones adicionales, pero la herramienta Heretic es AGPL-3.0 (relevante solo si se reutiliza la herramienta, no los pesos).
+- Responsabilidad legal: el uso del modelo y el cumplimiento de la legislacion aplicable son responsabilidad del usuario.
 
 ## Enlaces
-- Modelo en Hugging Face: https://huggingface.co/LastMachine/Qwen3-8B-ZeroZero-Heretic
-- Variante MLX 4-bit: https://huggingface.co/LastMachine/Qwen3-8B-ZeroZero-Heretic-MLX
-- Variante GGUF Q4_K_M: https://huggingface.co/LastMachine/Qwen3-8B-ZeroZero-Heretic-GGUF
-- Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
+
+- Modelo principal: https://huggingface.co/LastMachine/Qwen3-8B-ZeroZero-Heretic
+- Version MLX 4-bit: https://huggingface.co/LastMachine/Qwen3-8B-ZeroZero-Heretic-MLX
+- Version GGUF Q4_K_M: https://huggingface.co/LastMachine/Qwen3-8B-ZeroZero-Heretic-GGUF
+- Coleccion ZeroZero: https://huggingface.co/collections/LastMachine/zerozero-6af68595b0b72f13ce60bde2
+- Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Herramienta Heretic: https://github.com/p-e-w/heretic
-- Perfil del autor: https://huggingface.co/LastMachine
-- Paper de referencia Qwen3: https://arxiv.org/abs/2505.09388
+- Qwen3 Technical Report: https://arxiv.org/abs/2505.09388
+- Autor: https://huggingface.co/LastMachine

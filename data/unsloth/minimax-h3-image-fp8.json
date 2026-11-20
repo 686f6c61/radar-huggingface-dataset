@@ -30,7 +30,7 @@
   ],
   "likes": 33,
   "downloads_30d": 14634,
-  "trending_score": 24,
+  "trending_score": 22,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 40555118466,
@@ -47,5 +47,31 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "Unsloth - Run and Train Models Locally",
+      "url": "https://unsloth.ai/",
+      "snippet": "Unsloth is an open-source, no-code deskop UI for training and running open models on your local hardware."
+    },
+    {
+      "title": "GitHub - unslothai/unsloth: Local UI to run and train LLMs and ...",
+      "url": "https://github.com/unslothai/unsloth",
+      "snippet": "The core Unsloth package remains licensed under Apache 2.0, while certain optional components, such as the Unsloth Studio UI are …Read more"
+    },
+    {
+      "title": "Introducing Unsloth Desktop | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/desktop",
+      "snippet": "Whether your model is running through Unsloth’s inference or your own remote OpenAI-compatible endpoint, you can give it access …Read more"
+    },
+    {
+      "title": "Unsloth, what's the catch? Seems too good to be true. - Reddit",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ar7e4m/unsloth_whats_the_catch_seems_too_good_to_be_true/",
+      "snippet": "Feb 15, 2024 · Unsloth is free and Apache 2 open source licensed, is 2.2x faster, uses 70% less VRAM, has 0% degradation in …Read more"
+    },
+    {
+      "title": "unsloth · PyPI",
+      "url": "https://pypi.org/project/unsloth/",
+      "snippet": "The core Unsloth package remains licensed under Apache 2.0, while certain optional components, such as the Unsloth Studio UI are …Read more"
+    }
+  ]
 }

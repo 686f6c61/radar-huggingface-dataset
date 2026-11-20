@@ -2,83 +2,87 @@
 
 ## Resumen
 
-Soft-light-3D-Anime-style-For-MOSS es un LoRA de texto a imagen desarrollado por el usuario Helives, publicado en Hugging Face y diseñado para funcionar sobre el modelo base OpenMOSS-Team/MOSS-Image-Base mediante la librería diffusers. No se trata de un modelo de lenguaje, sino de un adaptador de bajo rango (LoRA/DoRA) que modifica el estilo visual de las generaciones del modelo base, concretamente para producir imágenes con estética de anime 3D con cel-shading (el llamado estilo "三渲二", es decir, renderizado 3D con sombreado plano tipo 2D) y una iluminación suave y con profundidad.
+Soft-light-3D-Anime-style-For-MOSS es un adaptador LoRA de tipo text-to-image para el modelo base OpenMOSS-Team/MOSS-Image-Base, desarrollado por el usuario Helives y publicado en Hugging Face. Su función es aplicar un estilo visual concreto —denominado por el autor "3D anime de luz suave" (柔和光影3D动漫风格)— a las generaciones del modelo base, sin necesidad de reentrenar el modelo completo. El adaptador se distribuye bajo licencia MIT y ocupa apenas 0,3 GB, lo que lo hace ligero y fácil de integrar en flujos de trabajo con diffusers.
 
-La versión actual de la ficha es la V2, que abandona el formato LoRA clásico en favor de DoRA con rango 64 (RANK64), frente al RANK16 de la V1. Según el autor, esta versión corrige problemas de la anterior como la pérdida de calidad, la tendencia a imágenes con brillos blancos excesivos y la desproporción de las cabezas de los personajes, además de lograr sombras más profundas y un efecto más "3D". El autor indica que el adaptador se ha destilado a partir de imágenes de estilo cel-shaded 3D generadas por él mismo con el modelo Anima.
+La versión actual es la V2, que migra de formato LoRA clásico a DoRA (Weight-Decomposed Low-Rank Adaptation) y eleva el rango de 16 a 64. Según el autor, este cambio corrige la pérdida de calidad asociada al rango 16, evita la tendencia a imágenes sobreexpuestas y blanquecinas, y reduce la desproporción en el tamaño de las cabezas. El resultado es un acabado con mayor profundidad de luces y sombras y una apariencia más volumétrica ("más 3D") que la V1, que el autor mantiene disponible para quienes prefieran una paleta más plana.
 
-Es un proyecto de nicho con adopción muy reducida (273 descargas y 1 like en el momento de la ficha), pero relevante para quienes usen MOSS-Image-Base y busquen un estilo anime 3D específico sin reentrenar el modelo completo. Se distribuye bajo licencia MIT, lo que permite su uso comercial sin restricciones.
+El modelo está pensado para ilustradores, creadores de contenido y desarrolladores que generen arte anime con el modelo MOSS y quieran un estilo cel-shaded tridimensional coherente. No es un modelo de lenguaje ni un modelo fundacional: es un adaptador de estilo que depende por completo del modelo base, por lo que todas sus capacidades (resolución, idiomas de los prompts, arquitectura subyacente) vienen heredadas de MOSS-Image-Base y no se documentan en esta ficha.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA/DoRA (adaptador de bajo rango) sobre modelo de difusion text-to-image |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible (modelo de difusion; depende del encoder de texto del modelo base) |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (los prompts de ejemplo del autor combinan chino e ingles) |
+| Arquitectura | LoRA/DoRA (adaptador de bajo rango) sobre modelo de difusión OpenMOSS-Team/MOSS-Image-Base |
+| Parametros totales | no disponible (rango 64 en formato DoRA; recuento exacto no publicado) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo text-to-image) |
+| Tipos de cuantizacion | no disponible (adaptador distribuido en precisión nativa del repo, 0,3 GB) |
+| Idiomas soportados | no disponible (los prompts dependen del text encoder del modelo base) |
 | Licencia | MIT |
-| Formato de pesos | Adaptador DoRA para diffusers (tamano del repo: 0,3 GB) |
+| Formato de pesos | safetensors (formato diffusers, librería diffusers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador DoRA (Weight-Decomposed Low-Rank Adaptation) de rango 64, aplicado sobre OpenMOSS-Team/MOSS-Image-Base. DoRA descompone los pesos en magnitud y direccion, lo que generalmente ofrece mayor calidad de ajuste que un LoRA clasico de rango equivalente. La V1 usaba RANK16 y el autor atribuye a ese rango bajo la perdida de calidad, los brillos blanquecinos y las cabezas desproporcionadas que la V2 corrige.
+El adaptador emplea DoRA (Weight-Decomposed Low-Rank Adaptation), una variante de LoRA que descompone los pesos en magnitud y dirección para mejorar la estabilidad y la calidad del ajuste fino con rangos bajos. En esta V2 el rango se ha fijado en 64, frente al rango 16 de la V1, lo que incrementa la capacidad de representación del adaptador y, según el autor, corrige artefactos como el sobreexposicionamiento y la desproporción craneal. El adaptador se aplica sobre el modelo de difusión MOSS-Image-Base y se carga mediante la librería diffusers.
 
-Sobre los datos de entrenamiento, el autor explica que el adaptador se ha "destilado" a partir de imagenes de estilo cel-shaded 3D que el propio autor genero razonando con el modelo Anima. No se ha publicado informacion sobre el numero de imagenes, los pasos de entrenamiento, el learning rate ni la configuracion exacta del pipeline de entrenamiento. No hay detalles sobre el uso de tecnicas como attention adapters o bloques especificos entrenados.
+El entrenamiento se describe como una destilación de estilo a partir de diversas imágenes de estilo 3D cel-shaded que el autor generó razonando con "Anima" (probablemente una herramienta o modelo de generación de imágenes). No se publican detalles sobre el número de imágenes de entrenamiento, el número de pasos, la configuración de hiperparámetros, el dataset exacto ni si se emplearon técnicas adicionales como regularización o captioning. El autor califica el resultado de "ligeramente tosco" (slightly rough), lo que sugiere un conjunto de datos modesto y un ajuste no exhaustivo.
 
 ## Capacidades
 
-- Adaptacion de estilo text-to-image: transforma las salidas de MOSS-Image-Base hacia una estetica de anime 3D con cel-shading e iluminacion suave y en capas.
-- Efecto de profundidad "3D": la V2 produce sombras mas profundas y con mas niveles que la V1, reforzando la sensacion tridimensional.
-- Alternativa de paleta plana: la V1 se mantiene disponible para quienes prefieran colores mas planos y menos contraste de luz.
-- Compatibilidad con diffusers y, segun los ejemplos del autor, con flujos de trabajo en ComfyUI.
-- Recomendacion de uso con prompts de calidad: el autor sugiere anadir la frase "an 8K ultra-high-definition, anime-style illustration with high precision" (o su equivalente en chino) para mejorar el resultado.
+- Aplicación de un estilo visual 3D anime cel-shaded con luz suave sobre las generaciones del modelo base MOSS-Image-Base.
+- Generación text-to-image condicionada por prompts de texto, heredando el pipeline del modelo base.
+- Control de profundidad de luces y sombras y de la volumetría de los personajes gracias al ajuste DoRA de rango 64.
+- Estilo orientado a ilustración anime de alta precisión; el autor recomienda añadir prompts de calidad como "8K ultra-high-definition, anime-style illustration with high precision".
+- No soporta tool calling, function calling, razonamiento multi-paso ni capacidades de agente: es exclusivamente un adaptador de estilo de imagen.
+- Capacidades multilingües: no documentadas; dependen del text encoder del modelo base.
+- No dispone de modo thinking, visión, audio ni otras capacidades más allá de la generación de imágenes.
 
 ## Casos de uso
 
-- Ilustracion de personajes anime 3D: generacion de retratos y personajes con estetica de cel-shading para redes sociales, portfolios o proyectos personales, aprovechando el estilo de luz suave caracteristico del adaptador.
-- Creacion de assets para novelas visuales o juegos indie: el estilo anime 3D con sombreado plano es habitual en juegos de estetica japonesa; el LoRA permite generar ilustraciones consistentes en ese estilo sin contratar arte externo.
-- Produccion de avatares e ilustraciones de VTubers: la estetica tridimensional con luz suave encaja con el estilo visual habitual de avatares de streamers y personajes virtuales.
-- Exploracion estilistica sobre MOSS-Image-Base: desarrolladores que ya trabajen con MOSS-Image-Base pueden combinar este adaptador con prompts propios para variar el estilo sin reentrenar nada.
-- Comparacion de versiones de adaptadores: la coexistencia de V1 y V2 permite estudiar el impacto del rango (16 frente a 64) y del formato (LoRA frente a DoRA) en la calidad final, util con fines educativos o de investigacion.
-- Integracion en flujos ComfyUI: los ejemplos publicados provienen de ComfyUI, por lo que el adaptador encaja en pipelines de generacion node-based para produccion de imagenes iterativa.
+- Ilustración de personajes anime en 3D: el adaptador permite generar personajes con un acabado cel-shaded volumétrico y luces suaves, adecuado para fichas de personaje, key art y portadas, aplicando el estilo de forma consistente sobre el modelo MOSS.
+- Creación de arte conceptual para videojuegos: estudios pequeños pueden generar bocetos de personajes y escenarios con una estética 3D anime coherente antes de pasar a modelado 3D, reduciendo el coste de preproducción.
+- Contenido para redes y comunidades otaku: generación de ilustraciones para publicaciones, avatares y fan art con un estilo reconocible y uniforme, usando el pipeline text-to-image de diffusers.
+- Prototipado de estilos para estudios de animación: el adaptador sirve para explorar variantes de iluminación y sombreado (V1 más plano, V2 más volumétrico) antes de comprometerse con un look final en producción.
+- Generación por lotes en pipelines automatizados: al ser un adaptador ligero (0,3 GB) en formato diffusers, se puede cargar junto al modelo base en scripts de generación masiva para tiendas de print-on-demand o catálogos de ilustraciones.
+- Experimentación e investigación en adaptadores de estilo: su combinación de DoRA con rango 64 y licencia MIT lo hace útil para estudiar el efecto del rango y del formato en la calidad del ajuste fino de modelos de difusión.
+- Uso educativo: demostrar cómo un LoRA/DoRA modifica el estilo de un modelo base sin reentrenarlo, en cursos o talleres de generación de imágenes.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un LoRA estilistico para difusion de imagenes, no aplica la tipica evaluacion con benchmarks de lenguaje (MMLU, HumanEval, etc.); la calidad se evalua visualmente mediante las imagenes de ejemplo publicadas en la model card y en Civitai.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. Al ser un adaptador de 0,3 GB, el requisito dominante es el del modelo base MOSS-Image-Base, no el del LoRA.
-- GPU recomendadas: no disponible; para difusion de imagenes en general, una GPU consumer con 8-24 GB de VRAM (por ejemplo RTX 3060, RTX 4090) suele ser suficiente, pero esto depende del modelo base.
-- Consumer GPU: el adaptador en si (0,3 GB) cabe en cualquier GPU moderna; la viabilidad depende de MOSS-Image-Base.
-- Opciones de despliegue: libreria diffusers de Hugging Face; los ejemplos del autor indican compatibilidad con ComfyUI. No hay informacion sobre soporte en otras herramientas (A1111, Forge, etc.).
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: depende enteramente del modelo base MOSS-Image-Base; el adaptador en sí ocupa 0,3 GB y añade un coste mínimo de memoria. No se dispone de cifras específicas del modelo base en la información proporcionada.
+- GPU recomendadas: no disponible para el adaptador; para el modelo base se requeriría consultar su documentación (no incluida aquí). Como referencia general, los modelos de difusión de imagen suelen necesitar GPUs con al menos 8-16 GB de VRAM, pero este dato no está confirmado para MOSS-Image-Base.
+- ¿Cabe en GPU consumer? No disponible; depende del modelo base.
+- Opciones de despliegue: librería diffusers (formato nativo del repo). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a modelos de difusión de imagen.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Base | Formato | Licencia | Notas |
+| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Soft-light-3D-Anime-style-For-MOSS (V2) | DoRA RANK64 | MOSS-Image-Base | Adaptador diffusers, 0,3 GB | MIT | Estilo anime 3D con luz suave; corrige defectos de la V1 |
-| Soft-light-3D-Anime-style-For-MOSS (V1) | LoRA RANK16 | MOSS-Image-Base | Adaptador diffusers | MIT | Paleta mas plana; menor calidad y cabezas desproporcionadas segun el autor |
-| Adaptadores LoRA anime sobre otros bases (SDXL, Pony, Illustrious, etc.) | LoRA/DoRA | Variados | Adaptadores diffusers/A1111 | Variable | Ecosistema mucho mayor, pero no compatibles con MOSS-Image-Base |
+| Soft-light-3D-Anime-style-For-MOSS (V2) | LoRA/DoRA de estilo para difusión | no disponible (rango 64) | no aplica | MIT | Hugging Face, 1376 descargas, 2 likes |
+| Alternativas de LoRA de estilo anime para modelos de difusión | LoRA de estilo | no disponible | no aplica | variable | no disponible |
+| Modelos comparables de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No hay datos de rendimiento comparativo publicados.
+No se dispone de información sobre otros adaptadores de estilo comparables para MOSS-Image-Base ni de sus métricas, por lo que la comparativa cuantitativa no está disponible.
 
 ## Limitaciones y advertencias
 
-- El autor reconoce que el modelo "todavia es ligeramente tosco" (ligeramente rugoso), por lo que la calidad puede ser irregular.
-- La V1 presenta defectos documentados por el propio autor: perdida de calidad por RANK16, tendencia a brillos blancos y cabezas desproporcionadas; conviene usar la V2 salvo que se busque la paleta plana de la V1.
-- Sin los prompts de calidad recomendados por el autor ("an 8K ultra-high-definition, anime-style illustration with high precision"), los resultados pueden degradarse.
-- El nombre del estilo puede no ser preciso segun el propio autor, quien solicita sugerencias de denominacion; esto indica que el estilo real puede no coincidir exactamente con "soft-light 3D anime".
-- No hay documentacion tecnica del entrenamiento (dataset, hiperparametros), lo que dificulta reproducirlo o auditarlo.
-- Adopcion muy reducida (273 descargas, 1 like), sin comunidad de soporte relevante.
-- Licencia MIT sin restricciones comerciales, pero los contenidos generados podrian reproducir estilos de artistas; conviene revisar la normativa aplicable al uso previsto.
-- Solo funciona sobre MOSS-Image-Base; no es compatible con otros modelos de difusion sin adaptacion.
+- El autor reconoce que el resultado es "ligeramente tosco" (slightly rough); la calidad del estilo puede no ser uniforme en todos los prompts.
+- La V2 corrige problemas de la V1 (sobreexposición, cabezas grandes), pero puede introducir otros artefactos no documentados; se recomienda evaluar con prompts propios antes de usarlo en producción.
+- El adaptador no es autónomo: requiere el modelo base OpenMOSS-Team/MOSS-Image-Base, cuyas limitaciones (sesgos, resolución, idiomas de prompt) se heredan y no se detallan en esta ficha.
+- Riesgo de sesgos: no documentado por el autor; los estilos anime pueden reproducir sesgos de representación de los datos de entrenamiento.
+- Riesgo de alucinación visual: como todo modelo generativo de imagen, puede producir anatomía incorrecta, texto ilegible o detalles incoherentes.
+- Restricciones de licencia: MIT permite uso comercial, pero conviene verificar la licencia del modelo base MOSS-Image-Base, que puede imponer condiciones adicionales.
+- El autor recomienda añadir prompts de calidad específicos ("8K ultra-high-definition, anime-style illustration with high precision"); sin ellos la calidad puede degradarse.
+- No hay información sobre el dataset de entrenamiento ni sobre posibles infracciones de derechos de autor en las imágenes destiladas, lo que supone un riesgo legal a evaluar en uso comercial.
+- Idiomas de los prompts no documentados; se desconoce si funciona igual de bien en castellano que en inglés o chino.
 
 ## Enlaces
 
-- Ficha en Hugging Face: https://huggingface.co/Helives/Soft-light-3D-Anime-style-For-MOSS
+- Hugging Face: https://huggingface.co/Helives/Soft-light-3D-Anime-style-For-MOSS
+- Civitai: https://civitai.red/models/3010353/soft-light-3d-anime-style-3d-for-moss
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
-- Pagina en Civitai (enlazada por el autor): https://civitai.red/models/3010353/soft-light-3d-anime-style-3d-for-moss

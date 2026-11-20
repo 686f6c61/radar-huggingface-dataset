@@ -2,100 +2,102 @@
 
 ## Resumen
 
-basal-omni-1.0-max-GGUF es la distribucion cuantizada en formato GGUF del modelo basal-omni-1.0-max, un modelo de 12B parametros construido sobre Gemma 4 12B y orientado especificamente a la toma de decisiones tipadas (typed decisions), clasificacion y calibracion de probabilidades. Lo desarrolla Remek y se distribuye bajo licencia Apache 2.0. No es un modelo conversacional generico: su proposito es responder a preguntas de eleccion entre opciones (hasta 255) devolviendo probabilidades calibradas sobre cada opcion, lo que permite umbrales de confianza certificados.
+basal-omni-1.0-max-GGUF es la versión cuantizada en formato GGUF del modelo basal-omni-1.0-max, un modelo de 12B parámetros construido sobre Gemma 4 12B y orientado a la toma de decisiones tipadas (typed decisions). Lo desarrolla Remek y se distribuye con licencia Apache 2.0. No es un modelo de chat generalista: está diseñado para emitir decisiones estructuradas sobre conjuntos de opciones (hasta 255), con probabilidades calibradas que permiten automatizar respuestas con umbrales de error controlados.
 
-Esta version GGUF incluye unicamente el decodificador de texto; los encoders de imagen y audio del modelo bf16 original no estan presentes. Se publican dos cuantizaciones, Q8_0 (12,7 GB) y Q6_K (9,8 GB), que superan la puerta de portabilidad (port gate) definida por el autor frente al modelo bf16 en terminos de acuerdo, precision y error de calibracion esperado (ECE). Las cuantizaciones Q5_K_M y Q4_K_M no superaron dicha puerta y no se distribuyen.
+La relevancia de esta ficha concreta está en el port a GGUF: permite ejecutar el modelo en llama.cpp y Ollama sobre GPU NVIDIA, Apple Silicon (Metal) o CPU, manteniendo la misma API de decisión tipada a través del servidor `basal-serve`. Solo se publican dos cuantizaciones, Q8_0 y Q6_K, porque son las únicas que superan la puerta de validación del proyecto frente al modelo bf16 original (Q5_K_M y Q4_K_M no la superan y no se distribuyen).
 
-El modelo es relevante para quienes necesitan integrar decisiones automaticas con garantias estadisticas en pipelines de produccion, ejecutables en GPU NVIDIA, Apple Silicon (Metal) o CPU mediante llama.cpp y Ollama. Su API de decision tipada se sirve a traves de `basal-serve`, no mediante generacion de texto libre. El modelo es experimental y su soporte linguistico declarado se limita a polaco e ingles.
+El modelo es experimental y de texto únicamente en esta variante: los codificadores de imagen y audio del modelo base no están incluidos en los ficheros GGUF. Su valor práctico reside en la calibración: con el fichero `CALIBRATION.gguf.json`, el 47,9% de las decisiones se resuelven automáticamente con un error observado del 0,5% para un objetivo del 1%.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (base Gemma 4 12B), adaptado como capa de decision |
+| Arquitectura | Transformer (base Gemma 4 12B), adaptado como modelo de decisión tipada |
 | Parametros totales | 11.907.350.576 (11,9B) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 16.384 tokens con el motor basal (8.192 tokens probados en Mac de 24 GB); Ollama limitado a 4.096 tokens por prompt |
-| Tipos de cuantizacion | Q8_0 (12,7 GB) y Q6_K (9,8 GB); F16 (23,8 GB) generado pero no distribuido |
-| Idiomas soportados | pl (polaco), en (ingles) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | 16.384 tokens con el motor basal; 8.192 tokens probados en Apple Silicon de 24 GB; 4.096 tokens en modo Ollama |
+| Tipos de cuantizacion | Q8_0 (12,7 GB) y Q6_K (9,8 GB); F16 (23,8 GB) generado como referencia pero no distribuido |
+| Idiomas soportados | Polaco (pl) e inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp); tokenizer y `chat_template.jinja` incluidos; `CALIBRATION.gguf.json` y `CALIBRATION.json` |
+| Formato de pesos | GGUF (llama.cpp), con Modelfile para Ollama |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente es Gemma 4 12B, un transformer decoder-only, sobre el que el autor construye una capa de decision tipada: el servidor basal renderiza su propio prompt y lee las probabilidades de los codigos de opcion en lugar de generar texto libre. La informacion disponible no detalla el volumen de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO; estos datos deben consultarse en la model card del modelo bf16 original.
+La arquitectura subyacente es un transformer Gemma 4 de 12B parámetros. Sobre esa base, el proyecto basal implementa una capa de decisión tipada: el servidor renderiza un prompt propio y lee las probabilidades de los códigos de opción, en lugar de generar texto libre. Los ficheros GGUF se obtuvieron con `convert_hf_to_gguf.py` de llama.cpp b11312 a partir del modelo bf16 (solo el decodificador de texto), y Q6_K se generó con `llama-quantize` desde F16 sin importance matrix. La conversión en Linux (CUDA) y macOS produce ficheros idénticos byte a byte.
 
-La innovacion principal no reside en la arquitectura sino en el procedimiento de calibracion y portabilidad. La conversion se realizo con `convert_hf_to_gguf.py` de llama.cpp b11312 sobre el modelo bf16 (solo el decodificador de texto), generando F16 y Q8_0, y `llama-quantize` para Q6_K sin importance matrix. La conversion en Linux (CUDA) y macOS produce ficheros identicos byte a byte. El fichero `CALIBRATION.gguf.json` se ajusta sobre las lecturas Q8_0 del port con temperaturas por tipo y por bucket, y umbrales certificados para errores del 1% y del 5%. Q6_K se sirve con el mismo fichero de calibracion.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO en la información proporcionada. La calibración (`CALIBRATION.gguf.json`) se ajustó sobre las lecturas Q8_0 del port, con temperaturas por tipo y por bucket y umbrales certificados para errores del 1% y del 5%. La validación frente a bf16 se hizo sobre el conjunto de desarrollo dev v2 (10.606 decisiones) en una RTX PRO 6000 de 96 GB con CUDA.
 
 ## Capacidades
 
-- Decision tipada entre 2 y 255 opciones, devolviendo probabilidades calibradas por opcion.
-- Tipos de consulta soportados: `choice`, `noul`, `score`, `multi`, `act`, `tool` y tipos de tarea adicionales.
-- Clasificacion con calibracion certificada y umbrales de error controlados (1% y 5%).
-- Automatizacion selectiva: con el fichero de calibracion incluido, al 1% de error objetivo se decide automaticamente el 47,9% de las decisiones (error observado 0,5%); al 5%, el 82,5% (error observado 4,0%).
-- Soporte de tool calling a traves del tipo `tool`.
-- Capacidades multilingues limitadas a polaco e ingles.
-- Solo texto: sin vision ni audio en los ficheros GGUF.
-- No es un modelo de generacion de texto libre en su uso previsto; un `ollama run` directo solo produce texto plano.
+- Toma de decisiones tipadas sobre conjuntos de 2 a 255 opciones, con tipos de consulta `choice`, `noul`, `score`, `multi`, `act` y `tool`.
+- Clasificación con probabilidades calibradas y umbrales de error certificados (1% y 5%).
+- Automatización selectiva: el sistema decide cuándo responder solo y cuándo derivar, en función de la calibración.
+- Soporte de tool calling mediante el tipo de consulta `tool`.
+- Capacidades multilingües limitadas a polaco e inglés.
+- Modo texto únicamente en esta variante GGUF; visión y audio requieren el modelo bf16.
+- Integración con llama.cpp (modo `gguf`), Ollama (modo `ollama`, máximo 20 opciones y 4.096 tokens por prompt) y llama-cpp-python.
 
 ## Casos de uso
 
-- Enrutamiento de decisiones en produccion: el modelo puede elegir entre un conjunto acotado de acciones o categorias (hasta 255 opciones) con probabilidades calibradas, permitiendo derivar automaticamente los casos de alta confianza y escalar los dudosos a revision humana.
-- Moderacion y clasificacion de contenido en polaco e ingles: con umbrales certificados al 1% o 5% de error, se puede automatizar la mayoria de las clasificaciones y reservar la revision manual para la cola de baja confianza.
-- Tool calling en agentes: el tipo `tool` permite seleccionar la funcion adecuada entre un catalogo definido, con la ventaja de que la probabilidad asociada es calibrada y puede usarse para decidir si invocar o no una herramienta.
-- Triage de tickets de soporte: clasificacion multiopcion de incidencias por categoria y prioridad, con la garantia de que el porcentaje de decisiones automaticas tiene un error acotado medido sobre un conjunto de calibracion.
-- Puntuacion (`score`) de respuestas o candidatos: util para rankear alternativas generadas por otro modelo o para evaluar salidas en pipelines de evaluacion automatica.
-- Despliegue en infraestructura limitada: al caber en un Mac de 32 GB (Q8_0) o de 24 GB (Q6_K con contexto de 8.192 tokens), permite ejecutar la capa de decision en local sin GPU dedicada, manteniendo la API tipada mediante `basal-serve`.
-- Decisiones sensibles a la calibracion en dominio financiero o legal: cuando se requiere conocer la incertidumbre de cada decision, el ECE negativo medido (-0,0006 en Q8_0, -0,0046 en Q6_K) indica que las probabilidades del port GGUF no estan sobreconfiadas frente al modelo bf16.
+- Enrutamiento de tickets de soporte: clasificar cada incidencia en una categoría predefinida con probabilidad calibrada, derivando automáticamente solo los casos con confianza suficiente (47,9% de automatización al 1% de error objetivo).
+- Moderación y etiquetado de contenido: asignar etiquetas múltiples (`multi`) a textos en polaco o inglés con umbrales de error medidos.
+- Selección de herramientas en agentes: usar el tipo `tool` para que el modelo elija la función adecuada entre un conjunto definido, integrándose en un orquestador.
+- Triaje en atención al cliente: decidir entre respuestas predefinidas o escalado a humano, aprovechando la calibración para fijar la tasa de error aceptable.
+- Evaluación automática de respuestas: usar `score` para puntuar opciones o candidatos en pipelines de evaluación con criterios reproducibles.
+- Despliegue en hardware modesto: ejecutar Q6_K (9,8 GB) en un Mac de 32 GB o en GPU consumer con suficiente VRAM, manteniendo la API de decisión mediante `basal-serve`.
+- Clasificación de documentos largos: con el modo `gguf` y contexto de hasta 16.384 tokens, procesar documentos extensos que no caben en el límite de 4.096 tokens de Ollama.
 
 ## Benchmarks y rendimiento
 
-Los datos publicados miden el acuerdo del port GGUF frente al modelo bf16 sobre el conjunto de desarrollo dev v2 (10.606 decisiones), con una RTX PRO 6000 de 96 GB y `--mode gguf`. La puerta de portabilidad exige acuerdo >= 0,9552 en 2-10 opciones, >= 0,9893 donde el margen bf16 es >= 0,2, precision dentro de 1 punto y ECE como maximo +0,01.
+Resultados del port GGUF frente al modelo bf16 servido como referencia (dev v2, 10.606 decisiones, RTX PRO 6000 96 GB, CUDA):
 
-| Fichero | Tamano | Acuerdo (2-10 opciones) | Con margen >= 0,2 | Precision | ECE | Decisiones/s (16 en vuelo) | Puerta |
+| Fichero | Tamano | Concordancia (2-10 opciones) | Margen >= 0,2 | Exactitud | ECE | Decisiones/s (16 en vuelo) | Puerta |
 |---|---|---|---|---|---|---|---|
 | Q8_0 (recomendado) | 12,7 GB | 0,9868 | 0,9983 | -0,07 pt | -0,0006 | 8,9 | PASS |
 | Q6_K (menor) | 9,8 GB | 0,9761 | 0,9947 | -0,11 pt | -0,0046 | 7,5 | PASS |
-| F16 (referencia, no distribuido) | 23,8 GB | 0,9930 | 0,9995 | no disponible | no disponible | no disponible | no aplica |
+| F16 (referencia, no distribuido) | 23,8 GB | 0,9930 | 0,9995 | no disponible | no disponible | no disponible | no disponible |
 
-En Metal (Apple M4 Pro, 600 decisiones, contexto de 8.192 tokens), Q8_0 obtiene un acuerdo de 0,9950 (1,0000 con margen >= 0,2), con precision sin cambios y ECE de +0,013 en 400 items de 2 a 10 opciones, frente a +0,001 en la ejecucion CUDA sobre los mismos items; el rendimiento es de 0,4 decisiones/s en proceso. Los resultados de benchmarks del modelo base (Werdykt v1 0,823 y los conjuntos en polaco e ingles) estan publicados en la model card de basal-omni-1.0-max; estos ficheros GGUF no se puntuan por separado en ellos.
+Datos adicionales:
+
+- Q8_0 en Metal (Apple M4 Pro, 600 decisiones, contexto de 8.192 tokens): concordancia 0,9950, 1,0000 con margen >= 0,2, exactitud sin cambios, ECE +0,013 en 400 ítems de 2 a 10 opciones (frente a +0,001 en CUDA sobre los mismos ítems); 0,4 decisiones/s en proceso.
+- Automatización con `CALIBRATION.gguf.json` (prueba de calibración de 8.560 decisiones, exactitud 0,904): al 1% de error objetivo, 47,9% de decisiones automáticas con error observado del 0,5%; al 5%, 82,5% con error observado del 4,0%.
+- Los resultados de benchmarks del modelo base (Werdykt v1 0,823 y los conjuntos en polaco e inglés) están en la ficha de basal-omni-1.0-max; estos ficheros GGUF no se puntúan por separado en ellos.
 
 ## Requisitos de hardware
 
-- VRAM estimada: Q8_0 requiere aproximadamente 12,7 GB de pesos mas overhead de contexto; Q6_K, aproximadamente 9,8 GB mas overhead.
-- GPU recomendadas: RTX PRO 6000 96 GB (medida de referencia del autor); cualquier GPU NVIDIA con al menos 16 GB para Q8_0 con contexto largo.
-- Apple Silicon: Q8_0 con contexto de 16.384 tokens no cabe en un Mac de 24 GB (se ejecuto con 8.192 tokens); se recomienda un Mac de 32 GB o el fichero Q6_K.
-- CPU: viable mediante llama.cpp, aunque con latencia mayor; no se publican cifras de throughput en CPU.
-- Despliegue: `basal-serve` con `--mode gguf` (llama-cpp-python 0.3.36 o superior, motor basal 2.2.0 o superior con extra `gguf`), `--mode ollama` (Ollama 0.35 o superior) o `--mode llamacpp`.
-- Throughput medido en CUDA: 8,9 decisiones/s con Q8_0 y 7,5 con Q6_K, con 16 peticiones en vuelo.
-- Limitacion de Ollama: maximo 20 opciones por pregunta (devuelve como maximo 20 log-probabilidades) y 4.096 tokens por prompt; para documentos largos y hasta 255 opciones debe usarse `--mode gguf`.
+- VRAM estimada: Q8_0 requiere unos 12,7 GB de pesos más overhead de contexto; Q6_K, unos 9,8 GB. Con contexto de 16.384 tokens, Q8_0 no cabe en un Mac de 24 GB (se ejecutó con 8.192 tokens); se recomienda un Mac de 32 GB o Q6_K.
+- GPU recomendadas: RTX PRO 6000 96 GB (medido), GPU NVIDIA con CUDA para llama-cpp-python; Apple Silicon con Metal.
+- GPU consumer: Q6_K (9,8 GB) es viable en GPU con 12-16 GB de VRAM; Q8_0 requiere al menos 16 GB para contexto corto.
+- Opciones de despliegue: `basal-serve` con `--mode gguf` (llama.cpp en proceso, recomendado para documentos largos y hasta 255 opciones), `--mode ollama` (Ollama 0.35 o superior, máximo 20 opciones y 4.096 tokens) y `--mode llamacpp`.
+- Rendimiento medido: 8,9 decisiones/s con Q8_0 y 7,5 con Q6_K en RTX PRO 6000 con 16 peticiones en vuelo; 0,4 decisiones/s en proceso sobre Apple M4 Pro.
+- Requiere el motor basal 2.2.0 o superior con el extra `gguf` (llama-cpp-python 0.3.36 o superior para soporte de Gemma 4).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Formato |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| basal-omni-1.0-max-GGUF | 11,9B | 16.384 tokens (motor basal) | Decision tipada calibrada | Apache 2.0 | GGUF |
-| Gemma 4 12B (base) | 12B | no disponible | Generacion de texto general | no disponible | safetensors |
-| basal-omni-1.0-max (bf16) | 11,9B | no disponible | Decision tipada con vision y audio | Apache 2.0 | bf16 |
+| basal-omni-1.0-max-GGUF | 11,9B | 16.384 (motor basal) | Decisión tipada calibrada, texto | Apache 2.0 | GGUF en Hugging Face |
+| basal-omni-1.0-max (bf16) | 11,9B | no disponible | Decisión tipada, texto, imagen y audio | Apache 2.0 | Pesos bf16 en Hugging Face |
+| Gemma 4 12B | 12B | no disponible | Modelo generalista de texto | Términos de Gemma (no disponible en detalle) | Pesos originales |
 
-La informacion disponible no incluye comparaciones con otros modelos de decision calibrada de la misma categoria; los unicos terminos de comparacion documentados son el modelo bf16 original y la referencia F16 del port. No se dispone de datos de benchmarks frente a alternativas de terceros.
+No se dispone de datos de benchmarks comparativos con otros modelos de decisión o clasificación en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo marcado como experimental por el autor; no debe asumirse estabilidad de API ni de calibracion entre versiones.
-- Solo texto en esta distribucion: los encoders de imagen y audio del modelo bf16 no estan incluidos.
-- Idiomas limitados a polaco e ingles; el rendimiento en castellano no esta documentado.
-- La calibracion incluida esta ajustada para un unico orden de opciones (el predeterminado); cambiar el orden de las opciones invalida los umbrales certificados.
-- `CALIBRATION.json` (del modelo bf16) es el valor por defecto en `--mode ollama` y `--mode llamacpp` hasta que existan ajustes propios para esos modos; puede no reflejar la calibracion real del port en esos modos.
-- En Ollama, el limite de 20 opciones y 4.096 tokens restringe los casos de uso de documentos largos y catalogos amplios.
-- Riesgo de alucinacion inherente al modelo base; en el uso previsto (eleccion entre opciones) el riesgo se manifiesta como seleccion erronea, mitigado pero no eliminado por los umbrales de calibracion.
-- No se han publicado datos sobre sesgos del modelo en la informacion disponible.
-- La licencia Apache 2.0 permite uso comercial, pero el caracter experimental y la ausencia de garantias de calibracion fuera de los conjuntos medidos desaconsejan su uso en produccion sin validacion sobre datos propios mediante `basal-calibrate`.
+- Modelo experimental: el propio autor lo etiqueta como tal; no hay historial de producción documentado.
+- Solo texto en esta variante: los codificadores de imagen y audio no están en los ficheros GGUF.
+- Idiomas limitados a polaco e inglés; el rendimiento fuera de esos idiomas no está documentado.
+- El modo Ollama limita a 20 opciones por pregunta (devuelve como máximo 20 log-probabilidades) y a 4.096 tokens por prompt.
+- La calibración distribuida está ajustada para un único orden de opciones (el predeterminado); cambiar el orden invalida los umbrales certificados.
+- Q6_K se sirve con el fichero de calibración ajustado sobre Q8_0, no sobre sus propias lecturas.
+- El ECE en Metal es mayor que en CUDA (+0,013 frente a +0,001 en la misma muestra), con variación de aproximadamente 0,01 por el tamaño del bin.
+- No se han publicado datos sobre sesgos, tasa de alucinación en texto libre ni comportamiento fuera de la API de decisión tipada.
+- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las obligaciones derivadas del modelo base Gemma 4.
+- Un `ollama run` directo solo produce texto libre; las respuestas tipadas requieren `basal-serve` por delante.
 
 ## Enlaces
 
-- Modelo GGUF en Hugging Face: https://huggingface.co/Remek/basal-omni-1.0-max-GGUF
+- Hugging Face (GGUF): https://huggingface.co/Remek/basal-omni-1.0-max-GGUF
 - Modelo base bf16: https://huggingface.co/Remek/basal-omni-1.0-max
 - Repositorio del motor de inferencia: https://github.com/rkinas/basal
 - Sitio web del proyecto: https://basal.si5.pl/
-- Documentacion GGUF del motor: docs/GGUF.md en el repositorio de GitHub

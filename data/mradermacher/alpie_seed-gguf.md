@@ -2,89 +2,104 @@
 
 ## Resumen
 
-Alpie_seed es un modelo multimodal de tipo image-text-to-text desarrollado por 169Pi AI, construido sobre la arquitectura Qwen3.5-9B y sometido a un post-entrenamiento orientado a reforzar el razonamiento, el seguimiento de instrucciones, la generacion de codigo y la comprension visual. Con 8.953.803.264 parametros (aproximadamente 9B), se posiciona en la franja de modelos densos de tamano medio que pueden desplegarse en hardware relativamente asequible.
+Alpie_seed-GGUF es la versión cuantizada en formato GGUF del modelo Alpie_seed, desarrollado originalmente por 169Pi. Se trata de un modelo de lenguaje y visión (vision-language) de aproximadamente 8.950 millones de parámetros (8,95 B), construido sobre la arquitectura Qwen3.5 según las etiquetas del autor. El modelo está orientado a tareas de razonamiento, generación de código, comprensión de vídeo y procesamiento multilingüe, con especial énfasis en lenguas índicas (hindi, bengalí, maratí, guyaratí, télugu, malayalam, punyabí, canarés, oriya y tamil).
 
-La version aqui documentada es una cuantizacion estatica en formato GGUF publicada por mradermacher, que permite ejecutar el modelo mediante llama.cpp y herramientas compatibles sin necesidad de GPUs de datacenter. El repositorio incluye un conjunto amplio de niveles de cuantizacion (desde Q2_K hasta F16, pasando por Q4_K_M, Q5_K_M, Q6_K, Q8_0 e IQ4_XS), lo que facilita ajustar el equilibrio entre calidad y consumo de memoria.
+Esta ficha concreta corresponde al trabajo de cuantización realizado por mradermacher, que ofrece los pesos en múltiples niveles de compresión (desde Q2_K hasta f16) junto con los ficheros mmproj necesarios para el procesamiento multimodal. La relevancia actual del modelo radica en su combinación de licencia Apache 2.0, soporte multimodal (texto, imagen y vídeo) y cobertura de lenguas índicas, un nicho relativamente poco atendido por los modelos abiertos de gran tamaño.
 
-La relevancia de esta ficha radica en que combina capacidades multimodales con un formato de despliegue ligero, algo poco habitual en modelos de 9B con vision. No obstante, la informacion publica disponible es muy limitada: no se detallan la licencia, los idiomas soportados, los datos de entrenamiento ni resultados de benchmarks, lo que obliga a tratar cualquier evaluacion como preliminar.
+El repositorio tiene un tamaño de 83 GB e incluye todos los ficheros de cuantización publicados. La información disponible sobre arquitectura interna, datos de entrenamiento y benchmarks es limitada, por lo que varios apartados técnicos se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (image-text-to-text), basada en Qwen3.5-9B |
-| Parametros totales | 8.953.803.264 (aproximadamente 9B) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas); pesos originales en safetensors en el repo base |
+| Arquitectura | Transformer multimodal (vision-language), basada en Qwen3.5 según etiquetas del autor; detalles internos no disponibles |
+| Parametros totales | 8.953.803.264 (8,95 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible (etiqueta "long-context" sin cifra concreta) |
+| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K; mmproj en f16 y Q8_0 |
+| Idiomas soportados | en, hi, bn, mr, gu, te, ml, pa, kn, or, ta |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se apoya en la arquitectura Qwen3.5-9B, un transformer denso de aproximadamente 9.000 millones de parametros con capacidad multimodal para procesar imagenes y texto de entrada y generar texto. El post-entrenamiento aplicado por 169Pi AI se orienta explicitamente, segun la model card del repo base, a mejorar razonamiento, seguimiento de instrucciones, codigo y comprension visual. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de RLHF, DPO u otras variantes de alineacion.
+El modelo base es Alpie_seed, publicado por 169Pi, y la información disponible lo describe como un transformer multimodal de tipo vision-language con capacidades de razonamiento, código y comprensión de vídeo. Las etiquetas indican que se apoya en la familia Qwen3.5, aunque no se detalla el número de capas, dimensión oculta, mecanismo de atención ni si emplea innovaciones como atención lineal o decodificación especulativa. Tampoco se especifican el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO.
 
-La innovacion practica de esta publicacion no reside en la arquitectura sino en el proceso de cuantizacion: mradermacher ha generado cuantizaciones estaticas (quantize_version 2, output_tensor_quantised 1, convert_type hf) a partir de los pesos originales, cubriendo un espectro amplio de niveles. Esto permite desde ejecuciones de muy baja memoria (Q2_K) hasta casi precision completa (F16), pasando por opciones intermedias como Q4_K_M o Q5_K_M que suelen ofrecer el mejor compromiso calidad/tamano. No se documentan tecnicas adicionales como decodificacion especulativa o atencion lineal.
+La contribución de esta ficha es exclusivamente la cuantización: mradermacher ha generado cuantizaciones estáticas (quantize_version 2, con tensores de salida cuantizados) a partir de los pesos en formato Hugging Face, además de los ficheros mmproj necesarios para el codificador visual. Existe también una variante con cuantización ponderada/imatrix en un repositorio separado. No se dispone de información sobre el proceso de alineación ni sobre la estrategia de entrenamiento multimodal.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno, segun la etiqueta "conversational" del repositorio.
-- Comprension de imagenes combinada con texto (pipeline image-text-to-text), lo que habilita tareas de descripcion visual, VQA y analisis de documentos con imagenes.
-- Razonamiento reforzado mediante post-entrenamiento, segun declara el autor del modelo base.
-- Generacion de codigo, tambien reforzada en la fase de post-entrenamiento.
-- Seguimiento de instrucciones mejorado respecto al modelo base.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible; no se especifican idiomas.
-- Modo thinking explicito, audio u otras capacidades especiales: no disponible.
+- Generación de texto conversacional multi-turno.
+- Razonamiento (etiqueta "reasoning" en la model card).
+- Generación y comprensión de código (etiqueta "coding").
+- Procesamiento de imágenes mediante el codificador multimodal incluido en los ficheros mmproj.
+- Comprensión de vídeo (etiqueta "video-understanding").
+- Soporte multilingüe con cobertura de inglés y diez lenguas índicas.
+- Procesamiento de contexto largo (etiqueta "long-context", sin cifra publicada).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte explícito de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Modo "thinking" explícito: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Analisis de documentos escaneados: el modelo puede recibir una imagen de factura, formulario o contrato y extraer texto y campos estructurados combinando vision y generacion de texto, lo que resulta util en pipelines de digitalizacion.
-- Asistencia en soporte tecnico con capturas de pantalla: un usuario envia una imagen de un error y el modelo interpreta la captura y propone pasos de resolucion en una conversacion multi-turno.
-- Generacion de codigo asistida en local: al poder ejecutarse en formato GGUF con llama.cpp u Ollama, encaja en entornos de desarrollo con GPUs de consumo para autocompletado y explicacion de fragmentos de codigo.
-- Descripcion automatica de imagenes para accesibilidad: generacion de texto alternativo en catalogos, CMS o aplicaciones de lectura, aprovechando la capacidad image-text-to-text.
-- Moderacion y clasificacion de contenido visual: analisis de imagenes con instrucciones textuales para etiquetar o filtrar contenido en plataformas.
-- Prototipado de asistentes multimodales en estaciones de trabajo: al disponer de cuantizaciones desde Q2_K hasta Q8_0, permite iterar rapidamente en local antes de escalar a un despliegue mayor.
-- Educacion y tutoria con material grafico: el modelo puede interpretar diagramas o graficos y explicarlos, util en plataformas de aprendizaje.
+- Atención al cliente en lenguas índicas: el modelo puede gestionar conversaciones multi-turno en hindi, bengalí, tamil y otras lenguas del subcontinente, lo que permite desplegar un único modelo para mercados con alta diversidad lingüística sin necesidad de soluciones separadas por idioma.
+- Análisis de documentos con imágenes: gracias al codificador visual (mmproj), puede procesar capturas, formularios escaneados o gráficos junto con texto, útil para extracción de información en flujos administrativos o financieros.
+- Comprensión de vídeo para moderación o resumen: la etiqueta "video-understanding" sugiere capacidad de describir o resumir contenido audiovisual, aplicable a pipelines de catalogación de archivos multimedia.
+- Asistencia a la programación: con la etiqueta "coding", puede integrarse en editores o pipelines de CI/CD para revisión de código, generación de tests o explicación de fragmentos, ejecutándose localmente con cuantizaciones Q4_K_M o Q5_K_M.
+- Despliegue en hardware de consumo: las cuantizaciones Q4_K_S y Q4_K_M (5,5-5,7 GB) permiten ejecutar el modelo en GPU de gama alta para consumidores o en CPU con llama.cpp, lo que facilita prototipado y uso personal sin infraestructura de datacenter.
+- Procesamiento por lotes en servidores con una sola GPU: la versión Q8_0 (9,6 GB) o f16 (18 GB) cabe en GPUs de 16-24 GB de VRAM y permite servir peticiones concurrentes con vLLM o llama.cpp server.
+- Investigación multilingüe comparada: al cubrir once idiomas con licencia Apache 2.0, sirve como base para experimentos de evaluación o ajuste fino en lenguas con pocos recursos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, segun cuantizacion): Q2_K en torno a 3-4 GB; Q4_K_M en torno a 5-6 GB; Q5_K_M en torno a 6-7 GB; Q8_0 en torno a 9-10 GB; F16 en torno a 18 GB.
-- GPU recomendadas: RTX 3060 12 GB o RTX 4060 Ti 16 GB para cuantizaciones Q4/Q5; RTX 4090 24 GB para Q8_0 o F16; A100 o H100 para despliegues concurrentes de alta precision.
-- Cabe en GPU de consumo: si, en modelos con 8 GB o mas de VRAM usando Q4_K_M o inferiores; con 12-16 GB se pueden usar Q5_K_M y Q8_0.
-- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con GGUF; el tag "endpoints_compatible" sugiere integracion con endpoints tipo Hugging Face. vLLM y TGI no soportan GGUF de forma nativa para este formato, por lo que requeririan los pesos originales en safetensors.
-- Latencia y throughput: no disponible en la informacion proporcionada.
+- VRAM estimada para inferencia (solo pesos, sin caché KV):
+  - Q2_K: ~3,9 GB
+  - Q3_K_S / Q3_K_M / Q3_K_L: ~4,4-5,0 GB
+  - IQ4_XS: ~5,3 GB
+  - Q4_K_S / Q4_K_M: ~5,5-5,7 GB
+  - Q5_K_S / Q5_K_M: ~6,4-6,6 GB
+  - Q6_K: ~7,5 GB
+  - Q8_0: ~9,6 GB
+  - f16: ~18,0 GB
+  - mmproj adicional: ~0,7 GB (Q8_0) o ~1,0 GB (f16)
+- GPU recomendadas: RTX 4090 (24 GB) o RTX 3090 para Q8_0 y f16; RTX 4070/4080 (12-16 GB) para Q4-Q6; GPUs de 8 GB para Q2-Q4 con contexto moderado. Para despliegue en servidor, A100 o H100 no son necesarias por tamaño, pero permiten mayor concurrencia y contextos más largos.
+- ¿Cabe en GPU de consumo? Sí: las cuantizaciones Q2_K a Q6_K caben en GPUs de 8-12 GB; Q8_0 requiere 12-16 GB; f16 requiere 24 GB.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y servidores compatibles con GGUF. Para multimodal es necesario cargar también el fichero mmproj correspondiente. vLLM y TGI no consumen GGUF de forma nativa en todas sus versiones, por lo que para esos motores conviene usar el modelo base en safetensors.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Multimodal | Licencia | Formato |
+| Modelo | Parámetros | Contexto | Multimodal | Licencia | Formato |
 |---|---|---|---|---|---|
-| Alpie_seed (esta ficha) | ~9B | no disponible | Si (image-text-to-text) | no disponible | GGUF, safetensors |
-| Qwen3.5-9B (base) | ~9B | no disponible | Si | no disponible | safetensors |
-| Qwen2.5-VL-7B | ~7B | 32K (tipico en la familia) | Si | Apache 2.0 (familia Qwen) | safetensors, GGUF |
-| Llama 3.1 8B | ~8B | 128K | No | Llama 3.1 Community License | safetensors, GGUF |
+| Alpie_seed (este) | 8,95 B | no disponible | Sí (imagen y vídeo) | Apache 2.0 | GGUF, safetensors |
+| Qwen2.5-VL-7B | ~7 B | no disponible en esta ficha | Sí (imagen y vídeo) | Apache 2.0 | safetensors, GGUF (comunitario) |
+| Llama 3.1 8B | 8 B | 128 K | No | Llama 3.1 Community | safetensors, GGUF |
+| Gemma 2 9B | 9 B | 8 K | No | Gemma Terms | safetensors, GGUF |
 
-La comparacion con Qwen2.5-VL-7B y Llama 3.1 8B es orientativa por tamano y categoria, no por resultados medidos, ya que no hay benchmarks publicados de Alpie_seed. La ventaja principal de Alpie_seed frente a alternativas solo-texto es su capacidad visual; su desventaja es la ausencia de documentacion sobre licencia, idiomas y rendimiento.
+La comparación con Qwen2.5-VL-7B es la más directa por tratarse de un modelo vision-language de tamaño similar y licencia permisiva; sin embargo, no se dispone de datos de benchmarks de Alpie_seed que permitan establecer una comparación cuantitativa. Frente a Llama 3.1 8B y Gemma 2 9B, la ventaja diferencial de Alpie_seed es el soporte multimodal y la cobertura de lenguas índicas, a costa de una documentación técnica mucho más escasa.
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: no se puede confirmar si el uso comercial esta permitido; es imprescindible contactar con 169Pi AI antes de un despliegue en produccion.
-- Idiomas no documentados: no hay garantia de calidad en castellano ni en otros idiomas distintos del que se haya usado en el entrenamiento.
-- Longitud de contexto desconocida: limita el diseno de aplicaciones con documentos largos o conversaciones extensas.
-- Riesgo de alucinacion: inherente a los modelos generativos de 9B, especialmente en tareas de razonamiento complejo y en interpretacion de imagenes ambiguas.
-- Sesgos: no se han publicado evaluaciones de sesgo; se recomienda auditar antes de usar en aplicaciones sensibles.
-- Cuantizaciones agresivas (Q2_K, Q3_K_S) degradan notablemente la calidad, especialmente en tareas de vision y codigo; se recomienda Q4_K_M o superior para uso real.
-- Ausencia de benchmarks: cualquier afirmacion de rendimiento debe validarse con evaluacion propia.
-- Repositorio con 0 descargas y 0 likes: no hay evidencia de validacion por parte de la comunidad.
+- La información técnica publicada es muy limitada: no hay datos de benchmarks, contexto máximo, composición del dataset ni detalles de alineación, lo que dificulta evaluar su calidad frente a alternativas.
+- Riesgo de alucinación inherente a los modelos generativos; no se han publicado evaluaciones de fidelidad factual.
+- Sesgos: no se documentan sesgos conocidos, pero la cobertura desproporcionada de lenguas índicas y la ausencia de información sobre el corpus de entrenamiento impiden descartar sesgos culturales o lingüísticos.
+- Idiomas: la model card declara once idiomas (inglés y diez lenguas índicas); el rendimiento en castellano no está documentado y podría ser deficiente.
+- Contexto: la etiqueta "long-context" no viene acompañada de una cifra verificable; conviene validar empíricamente la ventana real antes de usarla en producción.
+- Multimodalidad: para usar imagen o vídeo es imprescindible descargar el fichero mmproj correspondiente; sin él, el modelo funciona solo como modelo de texto.
+- Licencia Apache 2.0: permite uso comercial, pero el autor de la cuantización no ofrece garantías sobre el modelo base; conviene revisar la model card original de 169Pi/Alpie_seed.
+- Las cuantizaciones Q2_K y Q3_K_M degradan la calidad de forma notable según las notas del propio autor; para producción se recomienda Q4_K_M o superior.
+- Fecha de creación del repositorio (2026-11-06) y número reducido de descargas (1.195) y likes (1): modelo con muy poca validación por parte de la comunidad.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Alpie_seed-GGUF
 - Modelo base: https://huggingface.co/169Pi/Alpie_seed
-- Repositorio GGUF del autor original: https://huggingface.co/169Pi/Alpie_Seed_GGUF
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/Alpie_seed-i1-GGUF
+- Página de descargas del cuantizador: https://hf.tst.eu/model#Alpie_seed-GGUF
+- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Comparativa de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

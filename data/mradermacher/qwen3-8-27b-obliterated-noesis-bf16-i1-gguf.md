@@ -2,45 +2,50 @@
 
 ## Resumen
 
-El modelo `Qwen3.8-27B-Obliterated-NOESIS-BF16-i1-GGUF` es una cuantización GGUF con matriz de importancia (imatrix) del modelo base `AMAImedia/Qwen3.8-27B-Obliterated-NOESIS-BF16`, preparada por mradermacher. Se trata de una versión "obliterated" (abliterada) de un modelo de la familia Qwen3.8 con 27 320 697 856 parámetros (aproximadamente 27,3 mil millones), diseñada para eliminar mecanismos de censura y restricciones de seguridad del modelo original, lo que la hace adecuada para investigación en alineación, red teaming y aplicaciones que requieren generación de texto sin filtros.
+Qwen3.8-27B-Obliterated-NOESIS-BF16-i1-GGUF es una cuantizacion GGUF del modelo AMAImedia/Qwen3.8-27B-Obliterated-NOESIS-BF16, publicada por el usuario mradermacher. Se trata de un modelo de lenguaje de 27.320.697.856 parametros (aproximadamente 27,3 mil millones) derivado de la familia Qwen, con licencia Apache 2.0 y soporte declarado para mas de 100 idiomas. La ficha corresponde especificamente al repositorio de cuantizaciones con imatrix (sufijo i1), que incluye desde Q2_K hasta Q6_K en formato GGUF.
 
-La cuantización está optimizada para ejecución local en hardware de consumo, con varios niveles de compresión (Q2_K, IQ3_M, Q4_K_S) que permiten ajustar el equilibrio entre tamaño, velocidad y calidad. El modelo soporta seis idiomas (inglés, ruso, chino, japonés, kazajo y vietnamita) y, según la model card, es un modelo de visión, aunque los archivos de proyección multimodal (mmproj) se encuentran en el repositorio estático asociado. Su licencia Apache 2.0 permite uso comercial sin restricciones significativas.
+El modelo base incorpora las etiquetas noesis, noesis-repack, bf16 y mtp, lo que sugiere un proceso de repack y posiblemente multi-token prediction, aunque la model card no detalla la arquitectura interna. El repositorio ocupa 218,6 GB e incluye tanto los pesos en BF16 como las cuantizaciones derivadas. La fecha de creacion es el 1 de septiembre de 2026 y la ultima actualizacion el 19 de septiembre de 2026, con 3.038 descargas registradas y 0 likes.
 
-La relevancia de este modelo radica en su doble naturaleza: por un lado, ofrece una alternativa sin censura para tareas de generación creativa o investigación en seguridad de IA; por otro, su formato GGUF con imatrix facilita el despliegue en entornos locales con GPUs de gama media, algo poco común en modelos de este tamaño.
+La relevancia de esta ficha radica en que permite ejecutar un modelo de 27B en hardware de consumo mediante cuantizaciones de 11 a 22,5 GB, manteniendo la compatibilidad con el ecosistema transformers y con el pipeline de endpoints. Es una opcion practica para despliegue local en llama.cpp u Ollama, aunque carece de benchmarks publicados y de documentacion tecnica detallada en la informacion disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 27 320 697 856 (27,3 B) |
-| Parametros activos | no disponible |
+| Arquitectura | no disponible (etiquetas: noesis, noesis-repack, mtp; familia Qwen) |
+| Parametros totales | 27.320.697.856 (27,3B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | i1-Q2_K, i1-IQ3_M, i1-Q4_K_S (ademas de archivo imatrix) |
-| Idiomas soportados | en, ru, zh, ja, kk, vi |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (con imatrix) |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K; fichero imatrix incluido |
+| Idiomas soportados | en, ru, zh, vi, kk, ja y mas de 100 idiomas adicionales listados en la model card (af, am, ar, as, ast, az, be, bg, bn, bs, ca, ceb, ckb, cs, cy, da, de, el, es, et, eu, fa, ff, fi, fil, fr, ga, gl, gn, gu, ha, he, hi, hr, hu, hy, id, ig, is, it, jv, ka, kam, kea, km, kmr, kn, ko, ky, lb, lg, ln, lo, lt, luo, lv, mi, mk, ml, mn, mr, ms, mt, mvy, my, ne, nl, no, nso, ny, oc, om, or, pa, pl, ps, pt, qxp, ro, rw, sd, sk, skr, sl, sn, so, sr, sv, sw, ta, te, tg, th, ti, tk, tr, ug, uk, umb, ur, uz, wo, xh, yo, yue, zu) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizaciones i1) y BF16 en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo base. El nombre sugiere que pertenece a la familia Qwen3.8, que en general emplea arquitecturas transformer con atencion por capas, pero no se confirma en la documentacion proporcionada. Tampoco hay datos sobre el proceso de entrenamiento del modelo original (numero de tokens, composicion del dataset, uso de RLHF o DPO). La unica informacion relevante es que el modelo ha sido sometido a un proceso de "abliteracion" (obliteration) para eliminar capas de rechazo o censura, y que la cuantizacion actual utiliza imatrix para mejorar la calidad de los quants de baja precision.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base en la documentacion proporcionada. Las etiquetas indican que pertenece a la familia Qwen (qwen3.5, qwen3.6, qwen3.8) y que ha pasado por un proceso denominado noesis-repack, ademas de incluir la etiqueta mtp, que en modelos Qwen suele asociarse a multi-token prediction. No se especifica si se trata de un transformer denso o de una arquitectura MoE, ni el numero de tokens de entrenamiento, la composicion del dataset o si hubo fases de RLHF o DPO.
+
+La innovacion tecnica documentada en este repositorio es la cuantizacion con imatrix (importance matrix), que calibra la perdida de precision por capa usando un corpus de calibracion. El autor incluye el fichero imatrix.gguf para que terceros puedan generar sus propias cuantizaciones. Las cuantizaciones i1 se presentan como superiores a las estaticas equivalentes: por ejemplo, i1-IQ3_S (12,7 GB) se indica que supera a Q3_K*, e i1-Q4_K_S (15,9 GB) se describe como el punto optimo entre tamano, velocidad y calidad.
 
 ## Capacidades
 
-- Generacion de texto y chat conversacional en seis idiomas (en, ru, zh, ja, kk, vi).
-- Capacidades de vision (segun la model card), aunque los archivos de proyeccion multimodal se encuentran en el repositorio estatico y no en este.
-- Al ser una version "obliterated", presenta una reduccion significativa de los mecanismos de rechazo, lo que permite generar contenido que otros modelos censurarian.
-- Compatible con herramientas de inferencia que soporten GGUF, como llama.cpp, Ollama o LM Studio.
-- Soporte de cuantizacion con imatrix, que mejora la perplejidad en quants de baja precision.
+- Generacion de texto conversacional, segun la etiqueta conversational del repositorio.
+- Soporte multilingue amplio: mas de 100 idiomas declarados, con enfasis en en, ru, zh, vi, kk y ja.
+- Compatibilidad con el ecosistema transformers y con endpoints compatibles (etiqueta endpoints_compatible).
+- Ejecucion en formato GGUF mediante llama.cpp y derivados.
+- Capacidad de razonamiento y codigo: no confirmada en la informacion disponible; las etiquetas de la familia Qwen lo sugieren pero no se documenta explicitamente.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y multi-step reasoning: no disponible.
+- Modo thinking, vision o audio: no disponible.
 
 ## Casos de uso
 
-- Investigacion en seguridad de IA y red teaming: el modelo permite probar vulnerabilidades en sistemas de moderacion o generar contenido adversarial para evaluar clasificadores.
-- Generacion de texto creativo sin restricciones: escritura de ficcion, poesia o guiones donde se requiera explorar temas tabu o controversiales.
-- Chatbot local para entornos sin conexion: gracias a su formato GGUF y cuantizaciones de bajo peso, puede desplegarse en una estacion de trabajo con GPU de 16 GB para conversaciones privadas.
-- Analisis de contenido multilingue: al soportar seis idiomas, puede utilizarse para tareas de traduccion informal o generacion de resumenes en esos idiomas.
-- Prototipado rapido de aplicaciones de IA generativa: su licencia Apache 2.0 y su facil integracion con frameworks como llama.cpp permiten iterar rapidamente en demos.
-- Evaluacion de tecnicas de cuantizacion: al ser un modelo de 27B con imatrix, es util para comparar el impacto de diferentes niveles de cuantizacion en la calidad de salida.
+- Despliegue local en estaciones de trabajo: con la cuantizacion i1-Q4_K_M (16,9 GB) el modelo cabe en una GPU de 24 GB o en configuraciones CPU+GPU, lo que permite ejecutar un modelo de 27B sin infraestructura cloud.
+- Asistencia multilingue: el soporte declarado de mas de 100 idiomas permite construir asistentes de traduccion o atencion al cliente en idiomas minoritarios (kk, kam, luo, umb) que rara vez estan cubiertos por modelos de este tamano.
+- Prototipado rapido con Ollama o llama.cpp: al estar en GGUF, se puede integrar en flujos de experimentacion local sin necesidad de convertir pesos ni gestionar dependencias de CUDA.
+- Generacion de texto en entornos con restricciones de red: al ser un modelo Apache 2.0 descargable, es apto para despliegues on-premise en sectores con requisitos de soberania de datos.
+- Fine-tuning posterior sobre la base BF16: el repositorio incluye los pesos BF16 del modelo base, lo que permite ajustar el modelo y luego recuantizar con la imatrix proporcionada.
+- Evaluacion comparativa de cuantizaciones: el fichero imatrix y el rango de cuantizaciones (de 11 a 22,5 GB) permiten medir el impacto de la cuantizacion en tareas concretas antes de fijar una configuracion de produccion.
 
 ## Benchmarks y rendimiento
 
@@ -48,30 +53,40 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el archivo Q4_K_S ocupa 15,9 GB, por lo que se recomienda una GPU con al menos 16 GB de VRAM para cargarlo completo. El Q2_K (11,0 GB) podria caber en una GPU de 12 GB, aunque con margen limitado.
-- GPU recomendadas: NVIDIA RTX 4090 (24 GB), RTX 3090 (24 GB), o GPUs profesionales como A100 (40 GB) para mayor comodidad.
-- Si cabe en consumer GPU: si, en GPUs de 16 GB o 24 GB, dependiendo de la cuantizacion elegida.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, o cualquier runtime compatible con GGUF. Tambien puede usarse con vLLM si se convierte a otro formato, aunque no es el flujo habitual.
-- Latencia y throughput: no se dispone de datos concretos, pero en una RTX 4090 con Q4_K_S se espera una velocidad de generacion de entre 20 y 40 tokens por segundo, segun la longitud de la secuencia.
+- VRAM estimada para inferencia: entre 11 GB (i1-Q2_K) y 22,5 GB (i1-Q6_K) solo para los pesos; hay que anadir el espacio para el contexto KV, que depende de la longitud de contexto no documentada.
+- GPU recomendadas: RTX 4090 (24 GB) para i1-Q4_K_M o i1-Q5_K_M; A100 40/80 GB o H100 para BF16 y contextos largos.
+- Cabe en GPU de consumo: si, en RTX 3090/4090 (24 GB) con cuantizaciones Q4 o Q5; en GPUs de 16 GB solo con Q2_K o IQ3_S y contexto reducido.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el modelo base en BF16 requiere transformers o vLLM/TGI.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa con otros modelos de la misma categoria. El modelo base (Qwen3.8-27B) pertenece a la familia Qwen, pero no se conocen datos de rendimiento relativos a otros modelos de 27B como Llama 3.1 27B o Mistral 24B. Se recomienda consultar benchmarks publicos de Qwen3.8 para una comparacion mas precisa.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Qwen3.8-27B-Obliterated-NOESIS-BF16-i1-GGUF | 27,3B | no disponible | Apache 2.0 | GGUF (i1) | Cuantizaciones con imatrix, mas de 100 idiomas |
+| Modelo base AMAImedia/Qwen3.8-27B-Obliterated-NOESIS-BF16 | 27,3B | no disponible | Apache 2.0 | BF16 | Pesos completos, requiere mas VRAM |
+| Cuantizaciones estaticas del mismo modelo (mradermacher/Qwen3.8-27B-Obliterated-NOESIS-BF16-GGUF) | 27,3B | no disponible | Apache 2.0 | GGUF estatico | Sin imatrix; el autor indica que las i1 son preferibles a igual tamano |
+| Otros modelos de ~27B de la familia Qwen | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- Al ser un modelo "obliterated", puede generar contenido ofensivo, ilegal o eticamente cuestionable. Su uso debe limitarse a entornos controlados y con fines de investigacion.
-- Riesgo de alucinacion: como cualquier modelo de lenguaje, puede inventar hechos o datos, especialmente en contextos largos o ambiguos.
-- No se dispone de informacion sobre la longitud de contexto soportada, lo que puede limitar su uso en tareas que requieran ventanas largas.
-- La cuantizacion de baja precision (Q2_K) puede degradar notablemente la calidad de las respuestas, especialmente en tareas de razonamiento complejo.
-- Aunque la licencia es Apache 2.0, el uso comercial de contenido generado por el modelo puede estar sujeto a regulaciones locales sobre contenido inapropiado.
-- No se han publicado resultados de benchmarks, por lo que su rendimiento real en tareas estandar es desconocido.
+- No hay benchmarks publicados: no es posible verificar la calidad real del modelo ni compararlo objetivamente con alternativas.
+- La model card no documenta arquitectura, contexto, datos de entrenamiento ni proceso de alineacion; esto dificulta evaluar riesgos de sesgo y alucinacion.
+- El nombre "Obliterated" sugiere una modificacion agresiva del modelo original (posiblemente abliteration o eliminacion de capas de rechazo), lo que puede aumentar la probabilidad de generar contenido no filtrado; no se detalla el proceso.
+- Las cuantizaciones de baja precision (Q2_K, IQ2, IQ3) degradan la calidad; el propio autor recomienda IQ3_XXS o superiores frente a Q2_K.
+- El repositorio ocupa 218,6 GB, lo que exige espacio de almacenamiento considerable si se descargan varias cuantizaciones.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base es una modificacion de un modelo Qwen cuyos terminos originales no se detallan en la informacion disponible; conviene verificar la licencia del modelo upstream.
+- El soporte de tool calling, agentes y razonamiento multi-paso no esta confirmado, por lo que no deberia asumirse en produccion sin pruebas.
+- La fecha de creacion (2026) y la ausencia de likes y de pipeline declarado son indicios de un repositorio poco validado por la comunidad.
 
 ## Enlaces
 
-- [Repositorio Hugging Face del modelo cuantizado](https://huggingface.co/mradermacher/Qwen3.8-27B-Obliterated-NOESIS-BF16-i1-GGUF)
-- [Modelo base: AMAImedia/Qwen3.8-27B-Obliterated-NOESIS-BF16](https://huggingface.co/AMAImedia/Qwen3.8-27B-Obliterated-NOESIS-BF16)
-- [Repositorio estatico con quants y archivos mmproj](https://huggingface.co/mradermacher/Qwen3.8-27B-Obliterated-NOESIS-BF16-GGUF)
-- [Guia para ejecutar Qwen3.8-27B-OBLITERATED localmente (MindStudio)](https://www.mindstudio.ai/blog/run-qwen3-8-27b-obliterated-locally)
-- [Pagina de descarga de GGUF en local-ai-zone](https://local-ai-zone.github.io/models/qwen3-8-27b-obliterated.html)
-- [Articulo sobre como ejecutar Qwen 3.8 27B localmente (locallyuncensored)](https://locallyuncensored.com/blog/how-to-run-qwen-3-8-27b-locally.html)
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Obliterated-NOESIS-BF16-i1-GGUF
+- Modelo base: https://huggingface.co/AMAImedia/Qwen3.8-27B-Obliterated-NOESIS-BF16
+- Cuantizaciones estaticas: https://huggingface.co/mradermacher/Qwen3.8-27B-Obliterated-NOESIS-BF16-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Qwen3.8-27B-Obliterated-NOESIS-BF16-i1-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- nethype GmbH: https://www.nethype.de/

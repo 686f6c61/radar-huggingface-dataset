@@ -47,16 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Apertus 1.5 - Apertus",
-      "url": "https://apertus-ai.org/articles/2026-07-apertus-1-5/",
-      "snippet": "Our latest release, Apertus 1.5, extends the 8B and 70B Apertus 1.0 models with image understanding, an optional thinking mode, a four times longer context window, improved instruction-following, and better tool use. The updated 8B and 70B model weights were released to Hugging Face on July 24, 2026 under an Apache 2.0 license. Further details are now available from the project Technical ..."
-    },
-    {
-      "title": "Apertus v1.5 - a swiss-ai Collection - Hugging Face",
-      "url": "https://huggingface.co/collections/swiss-ai/apertus-v15",
-      "snippet": "8B and 70B open-data open-weights models, globally multilingual with multimodal input and reasoning support"
-    }
-  ]
+  "sources": []
 }

@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "AngelSlim/Hy4-GGUF",
+  "slug": "angelslim-hy4-gguf",
+  "author": "AngelSlim",
+  "url": "https://huggingface.co/AngelSlim/Hy4-GGUF",
+  "created_at": "2026-11-16T12:38:04.000Z",
+  "updated_at": "2026-11-20T03:10:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "zh",
+    "en",
+    "arxiv:2602.21233",
+    "base_model:tencent/Hy4-flash",
+    "base_model:quantized:tencent/Hy4-flash",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1235125248,
+  "parameters_human": "1.24B",
+  "storage_bytes": 2675857105,
+  "storage_human": "2.7 GB",
+  "context_length": null,
+  "base_model": "tencent/Hy4-flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

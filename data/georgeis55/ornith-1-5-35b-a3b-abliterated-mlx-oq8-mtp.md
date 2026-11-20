@@ -2,75 +2,91 @@
 
 ## Resumen
 
-Ornith-1.5-35B-A3B-Abliterated-MLX-oQ8-mtp es una versión cuantizada en 8 bits del modelo Ornith-1.5-35B-A3B, un modelo de lenguaje de tipo mixture-of-experts (MoE) desarrollado por el laboratorio Ornith AI. Esta variante concreta ha sido preparada por el usuario georgeis55 mediante la herramienta oQ (oMLX) en formato MLX safetensors, pensada para su ejecución eficiente en hardware Apple Silicon. El modelo original forma parte de la familia Ornith-1.5, que se presenta como una apuesta por el auto-mejoramiento y el auto-andamiaje (self-scaffolding) para tareas de codificación agéntica.
+Ornith-1.5-35B-A3B-Abliterated-MLX-oQ8-mtp es una cuantizacion de 8 bits en formato MLX del modelo Ornith-1.5-35B-A3B, publicado por el usuario georgeis55. Se trata de una variante derivada del checkpoint ornith-ai/Ornith-1.5-35B-A3B a la que se le ha aplicado una ablation direccional para suprimir el comportamiento de rechazo (refusal ablation) y a la que se le ha reinjertado la cabeza MTP (multi-token prediction) oficial del modelo original, cuantizada tambien a 8 bits, para habilitar decodificacion especulativa Lightning-MTP en Apple Silicon.
 
-La versión abliterada elimina los mecanismos de rechazo o censura del modelo base, lo que puede resultar útil para entornos de investigación donde se requiere una respuesta sin restricciones, aunque conlleva riesgos éticos y de seguridad. Con 35 mil millones de parámetros totales y 3 mil millones activos por token, ofrece un equilibrio entre capacidad y eficiencia computacional. La cuantización oQ8 reduce el peso del modelo a aproximadamente 37 GB, lo que lo hace viable en equipos con memoria unificada generosa, aunque no en GPUs de consumo convencionales.
+El modelo emplea la arquitectura qwen3_5_moe, una mezcla de expertos con 35.951.822.704 parametros totales y aproximadamente 3.000 millones de parametros activos por token (segun la nomenclatura A3B del nombre). La cuantizacion se ha realizado con la herramienta oQ (oMLX v0.6.3rc3) en precision mixta, con 8 bits y tamano de grupo 64, generando pesos en safetensors MLX con un repositorio de 75,9 GB.
+
+Su relevancia es doble: por un lado, ofrece una via practica de ejecutar un MoE de 35B en hardware Apple con decodificacion especulativa; por otro, su naturaleza de modelo con los rechazos suprimidos lo convierte en una variante sensible desde el punto de vista de seguridad, que traslada al usuario toda la responsabilidad de moderacion. La licencia declarada es MIT.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | qwen3_5_moe (MoE) |
-| Parametros totales | 35B (según el modelo original; el conteo de safetensors muestra 9.883.986.112, posiblemente solo parámetros activos o parciales) |
-| Parametros activos | 3B (A3B) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 8 bits (oQ8), group size 64 |
+| Arquitectura | qwen3_5_moe (mezcla de expertos, transformer) |
+| Parametros totales | 35.951.822.704 |
+| Parametros activos | aproximadamente 3B (denominacion A3B) |
+| Longitud de contexto | no disponible (se han medido rendimientos hasta 32K en la model card) |
+| Tipos de cuantizacion | 8 bits, precision mixta oQ, group size 64 |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (el modelo original se distribuye bajo MIT, pero esta versión abliterada no especifica licencia) |
-| Formato de pesos | MLX safetensors |
+| Licencia | MIT |
+| Formato de pesos | MLX safetensors (repo de 75,9 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Ornith-1.5-35B-A3B emplea una arquitectura MoE con 35B parámetros totales y 3B activos por token, siguiendo el diseño de la familia Qwen3 MoE (de ahí la etiqueta `qwen3_5_moe`). Según la información pública de Ornith AI, la familia Ornith-1.5 se entrena mediante un proceso de auto-mejoramiento que extiende el marco de auto-andamiaje de Ornith-1.0: el modelo propone nuevas tareas, genera andamiajes específicos para cada tarea y produce rollouts de soluciones. Este enfoque busca que el modelo mejore sus propias capacidades de razonamiento y codificación sin depender exclusivamente de datos humanos etiquetados.
+El modelo base es un transformer con mezcla de expertos de la familia qwen3_5_moe, con 35,95 mil millones de parametros totales y enrutamiento disperso que activa del orden de 3 mil millones de parametros por token. Esta publicacion no entrena el modelo desde cero: parte del checkpoint ornith-ai/Ornith-1.5-35B-A3B, al que se le ha aplicado una ablation direccional sobre los pesos para suprimir la conducta de rechazo, y despues se ha cuantizado con oQ (oMLX v0.6.3rc3) en una pasada unica de 8 bits con group size 64.
 
-La versión cuantizada aquí descrita utiliza oQ (oMLX v0.6.3rc2) con precisión mixta de 8 bits y group size 64, lo que reduce el tamaño del modelo respecto al original FP8 o BF16. No se dispone de detalles sobre el dataset de entrenamiento, el número de tokens procesados ni si se aplicaron técnicas como RLHF o DPO. La abliteración, por su parte, es un proceso post-entrenamiento que elimina las capas o pesos responsables de los comportamientos de rechazo, permitiendo respuestas sin filtros de seguridad.
+La innovacion tecnica principal de esta build es la reinjertacion de la cabeza MTP oficial del checkpoint upstream, cuantizada a 8 bits junto con el cuerpo del modelo. La version refusal-ablated de partida no incluia dicha cabeza, lo que impedia usar decodificacion especulativa Lightning-MTP. Al restaurarla, el modelo puede generar varios tokens por paso de verificacion, lo que explica las tasas de decodificacion medidas. No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si el modelo base uso RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto y razonamiento complejo, orientado especialmente a tareas de programación y agentes autónomos.
-- Soporte de tool calling y function calling, según las características de la familia Ornith-1.5, que se promociona como "agentic coding model".
-- Capacidad para ejecutar flujos de trabajo multi-paso y auto-mejoramiento, aunque esta característica depende del scaffold externo.
-- Multilingüismo: no se especifican idiomas, pero al estar basado en Qwen3, es probable que soporte múltiples lenguas, incluyendo español e inglés.
-- Al ser abliterado, no presenta rechazos ante solicitudes que el modelo base podría bloquear, lo que amplía su rango de respuestas (con los riesgos asociados).
+- Generacion de texto y razonamiento general, heredados del modelo base Ornith-1.5-35B-A3B.
+- Decodificacion especulativa mediante la cabeza MTP oficial, con soporte para Lightning-MTP.
+- Inferencia optimizada para Apple Silicon a traves de la libreria MLX.
+- Ejecucion en precision de 8 bits con cuantizacion mixta, lo que reduce el peso en memoria frente al checkpoint original.
+- Comportamiento de rechazo suprimido: el modelo responde con mayor facilidad a peticiones que el modelo instruido original rechazaria.
+- Soporte de tool calling, agentes, capacidades multilingues o modos de razonamiento extendido: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistente de programación en local: el modelo puede integrarse en entornos de desarrollo como VS Code o Neovim para autocompletar código, generar funciones y explicar fragmentos, aprovechando su ventana de contexto (aunque no se conoce el valor exacto) y su capacidad de razonamiento.
-- Agente autónomo para automatización de tareas: gracias a su soporte de tool calling, puede orquestar llamadas a APIs, ejecutar comandos y gestionar flujos de trabajo en pipelines de CI/CD, por ejemplo, para revisar pull requests o generar tests.
-- Investigación en alineación y seguridad: al ser una versión abliterada, permite estudiar el comportamiento del modelo sin mecanismos de rechazo, lo que resulta útil para analizar sesgos, alucinaciones y límites de seguridad en entornos controlados.
-- Generación de documentación técnica: puede redactar documentación de código, comentarios y guías de usuario a partir de repositorios, gracias a su comprensión de lenguajes de programación y estructuras de datos.
-- Prototipado rápido de aplicaciones conversacionales: al ejecutarse en MLX, puede desplegarse en Macs con suficiente memoria para crear chatbots o asistentes virtuales sin depender de servicios en la nube.
-- Análisis de código legacy: el modelo puede ayudar a interpretar y modernizar código antiguo, identificando patrones, sugiriendo refactorizaciones y traduciendo entre lenguajes.
+- Inferencia local en Mac con chip de la familia M: el formato MLX y la cuantizacion a 8 bits permiten ejecutar un MoE de 35B en un unico equipo Apple Silicon, con decodificacion de aproximadamente 80-90 tok/s en un M1 Ultra de 64 nucleos graficos.
+- Investigacion sobre seguridad y alineamiento: la variante refusal-ablated sirve para estudiar como la ablation direccional afecta a la distribucion de respuestas y para construir clasificadores o filtros de moderacion externos.
+- Evaluacion de decodificacion especulativa: al incluir la cabeza MTP, es util para medir la ganancia de throughput de Lightning-MTP frente a decodificacion autoregresiva estandar en MLX.
+- Procesamiento por lotes de documentos largos en local: el rendimiento medido se mantiene estable hasta 32K tokens de contexto (1.402 tok/s de prefill y 79,2 tok/s de decode), lo que permite resumir o extraer informacion de documentos extensos sin salir del equipo.
+- Prototipado de asistentes conversacionales multi-turno en entornos de desarrollo, gracias a la velocidad de prefill (entre 1.670 y 2.084 tok/s en contextos de 1K a 8K) que reduce la latencia del primer token.
+- Pruebas de estres y red teaming controlado: al eliminar los rechazos, el modelo es adecuado para generar casos adversarios que alimenten pipelines de evaluacion de moderacion, siempre en entornos aislados y con supervision.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La búsqueda web menciona que Ornith-1.5 "afirma rivalizar con Claude Opus 4.8", pero no se proporcionan cifras concretas de MMLU, HumanEval, GSM8K u otros tests estandarizados. Por tanto, no es posible presentar una tabla comparativa fiable.
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. La model card unicamente incluye mediciones de rendimiento de inferencia en un Apple M1 Ultra con GPU de 64 nucleos:
+
+| Contexto | Prefill (tok/s) | Decode (tok/s) |
+|---|---:|---:|
+| 1K | 1.670 | 81,8 |
+| 4K | 2.084 | 76,1 |
+| 8K | 1.965 | 85,1 |
+| 16K | 1.738 | 90,2 |
+| 32K | 1.402 | 79,2 |
 
 ## Requisitos de hardware
 
-- VRAM estimada: al ser una cuantización MLX de 8 bits con un tamaño de repo de 37.3 GB, se requiere aproximadamente 40 GB de memoria unificada en Apple Silicon (M1 Max/Ultra, M2 Ultra, M3 Ultra o superior). No es adecuado para GPUs de consumo como RTX 4090 (24 GB) sin técnicas de offloading adicionales.
-- GPU recomendadas: Macs con Apple Silicon y al menos 64 GB de RAM unificada para mayor comodidad; también podría ejecutarse en GPUs NVIDIA con suficiente VRAM usando adaptadores, pero el formato MLX está optimizado para Apple.
-- Opciones de despliegue: al ser MLX, se puede usar con oMLX, MLX-LM o frameworks compatibles. No es compatible directamente con vLLM, llama.cpp u Ollama en su formato actual, aunque existen versiones GGUF del modelo original que sí lo son.
-- Latencia y throughput: no se dispone de datos medidos. En un Mac con 64 GB, se espera una generación de varios tokens por segundo, pero depende de la implementación y del número de parámetros activos (3B), lo que favorece la velocidad.
+- VRAM/memoria unificada: el repositorio ocupa 75,9 GB en safetensors de 8 bits; se necesita un equipo con al menos esa cantidad de memoria unificada disponible, mas el margen para el contexto KV y el runtime de MLX.
+- Hardware objetivo: Apple Silicon con MLX. Las mediciones publicadas corresponden a un M1 Ultra con GPU de 64 nucleos.
+- GPU consumer: no esta pensado para GPUs NVIDIA ni para CUDA; el formato MLX safetensors no es directamente compatible con llama.cpp, vLLM o TGI sin conversion previa.
+- Despliegue: libreria MLX y herramienta oMLX/oQ (v0.6.3rc3 o superior) para cargar la cuantizacion; la decodificacion especulativa requiere soporte de Lightning-MTP en el runtime.
+- Rendimiento estimado: prefill entre 1.402 y 2.084 tok/s y decode entre 76,1 y 90,2 tok/s en M1 Ultra de 64 nucleos, segun el contexto. No hay datos para otros chips.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa rigurosa con otros modelos de la misma categoría. El modelo original Ornith-1.5-35B-A3B podría compararse con Qwen3-30B-A3B o DeepSeek-V2-Lite, pero no hay datos de rendimiento publicados para esta versión cuantizada. Se recomienda consultar los benchmarks oficiales de Ornith AI cuando estén disponibles.
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| Ornith-1.5-35B-A3B-Abliterated-MLX-oQ8-mtp | 35,95B totales, ~3B activos | no disponible (medido hasta 32K) | MLX safetensors 8 bits | MIT | Refusal ablation + MTP reinjertado, orientado a Apple Silicon |
+| ornith-ai/Ornith-1.5-35B-A3B | 35,95B totales, ~3B activos | no disponible | safetensors | no disponible | Modelo base instruido, con guardrails originales |
+| Variante refusal-ablated sin MTP | 35,95B totales, ~3B activos | no disponible | safetensors | no disponible | Sin cabeza MTP, no permite decodificacion especulativa |
+
+No se dispone de datos de benchmarks que permitan comparar la calidad de estos modelos entre si.
 
 ## Limitaciones y advertencias
 
-- Al ser una versión abliterada, el modelo puede generar contenido inapropiado, ofensivo o peligroso sin filtros, lo que lo hace inadecuado para aplicaciones de producción sin supervisión humana.
-- La cuantización de 8 bits puede introducir una ligera degradación en la calidad de las respuestas respecto al modelo en precisión completa, especialmente en tareas de razonamiento matemático o lógico.
-- No se especifica la licencia de esta versión concreta; aunque el modelo original es MIT, la abliteración podría implicar restricciones adicionales. Se recomienda contactar al autor para aclarar los términos de uso.
-- La longitud de contexto no está documentada, lo que limita la planificación de tareas que requieran ventanas largas.
-- El modelo está optimizado para Apple Silicon; su uso en otras plataformas requiere conversión de formato y puede no ser eficiente.
-- No se han publicado evaluaciones de sesgos o alucinaciones para esta variante, por lo que su fiabilidad en entornos críticos no está garantizada.
+- La ablation direccional suprime los rechazos: el modelo producira contenido danino, ilegal o peligrosamente incorrecto con mayor facilidad que el modelo instruido original. El usuario asume toda la capa de moderacion.
+- Riesgo elevado de alucinacion y de respuestas incorrectas en dominios sensibles, agravado por la ausencia de guardrails.
+- No hay informacion sobre sesgos conocidos, composicion del dataset ni idiomas soportados.
+- La licencia MIT se declara sobre esta build, pero el autor advierte de que el usuario sigue siendo responsable de la licencia del modelo base y de la legislacion aplicable.
+- El formato MLX limita el despliegue a entornos Apple Silicon; no es portable directamente a CUDA.
+- No se han publicado evaluaciones de calidad, por lo que no hay evidencia cuantitativa de su rendimiento frente a alternativas.
+- Uso en produccion desaconsejado sin una capa externa de filtrado y sin auditoria previa del comportamiento del modelo.
 
 ## Enlaces
 
-- Modelo cuantizado en Hugging Face: https://huggingface.co/georgeis55/Ornith-1.5-35B-A3B-Abliterated-MLX-oQ8-mtp
-- Modelo original (MLX): https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-MLX
-- Versión GGUF del modelo original: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF
-- Sitio web de Ornith AI: https://ornith.ai/
-- Guía de Ornith AI (modelos, benchmarks, uso local): https://ornith.online/
-- Artículo sobre Ornith-1.5: https://startupfortune.com/ornith-15-is-a-free-open-source-model-that-claims-to-rival-claude-opus-48/
+- Modelo en Hugging Face: https://huggingface.co/georgeis55/Ornith-1.5-35B-A3B-Abliterated-MLX-oQ8-mtp
+- Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
+- Herramienta oQ / oMLX: https://github.com/jundot/omlx

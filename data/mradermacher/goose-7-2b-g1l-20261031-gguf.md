@@ -2,88 +2,98 @@
 
 ## Resumen
 
-Goose-7.2B-G1l-20261031-GGUF es una colección de cuantizaciones estáticas en formato GGUF generadas por mradermacher a partir del modelo base Lambent/Goose-7.2B-G1l-20261031. El repositorio no contiene un modelo entrenado desde cero, sino una conversión a GGUF (convert_type: hf) pensada para inferencia local con llama.cpp y runtimes compatibles. Cuenta con 7.200.194.560 parámetros totales según los datos de safetensors, lo que lo sitúa en la categoría de modelos densos de aproximadamente 7B.
+Goose-7.2B-G1l-20261031-GGUF es una coleccion de cuantizaciones en formato GGUF del modelo base Lambent/Goose-7.2B-G1l-20261031, publicada por el usuario mradermacher, conocido en el ecosistema por generar versiones cuantizadas de modelos abiertos para su uso con llama.cpp y herramientas compatibles. El modelo original cuenta con 7.200.194.560 parametros (aproximadamente 7,2 mil millones) y esta etiquetado como conversacional y orientado a ingles.
 
-La relevancia de este repositorio es práctica: ofrece múltiples niveles de cuantización (desde Q2_K hasta F16, incluyendo Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 e IQ4_XS) para que distintos perfiles de hardware puedan ejecutar el modelo. El repo ocupa 19,0 GB en total, lo que refleja la suma de todas las variantes publicadas.
+La relevancia de esta publicacion radica en que permite ejecutar un modelo de 7,2B parametros en hardware de consumo mediante cuantizaciones que van desde 3,0 GB (Q2_K) hasta 14,6 GB (f16), facilitando el despliegue local en estaciones de trabajo y GPUs de gama media. El repositorio ofrece tanto cuantizaciones estaticas (este repo) como cuantizaciones ponderadas con imatrix (repositorio i1-GGUF separado).
 
-La información pública disponible es muy limitada: no se especifican licencia, idiomas, pipeline ni detalles de entrenamiento del modelo base, y el repositorio no registra descargas ni likes en el momento de la consulta. La ficha se completa con los datos verificables y se marca explícitamente como no disponible todo lo que no consta.
+No se dispone de informacion publicada sobre la arquitectura interna, los datos de entrenamiento ni los benchmarks del modelo base en la informacion proporcionada, por lo que varios apartados de esta ficha se marcan como no disponibles.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base de tipo transformer denso, inferido por el tamaño y el pipeline conversacional; no confirmado) |
-| Parámetros totales | 7.200.194.560 |
-| Parámetros activos | no aplica (no consta que sea MoE) |
+| Arquitectura | no disponible |
+| Parametros totales | 7.200.194.560 (7,2B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas generadas desde safetensors del modelo base) |
+| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base Lambent/Goose-7.2B-G1l-20261031 más allá del recuento de parámetros (7.200.194.560) y de la etiqueta "conversational" del repositorio. Por el tamaño y el formato de conversión (convert_type: hf, output_tensor_quantised: 1, quantize_version: 2) se trata de un modelo denso de aproximadamente 7B convertido desde pesos Hugging Face a GGUF mediante el flujo estándar de llama.cpp.
+No se dispone de informacion publicada sobre la arquitectura del modelo base Lambent/Goose-7.2B-G1l-20261031 en la informacion proporcionada. El dato de parametros totales (7.200.194.560) proviene de los safetensors del modelo base, lo que confirma un tamano de aproximadamente 7,2B parametros, pero no se especifica si se trata de un transformer denso, un MoE o una arquitectura hibrida.
 
-No constan datos sobre el corpus de entrenamiento, el número de tokens, la composición del dataset, ni si hubo fases de RLHF, DPO o ajuste por instrucciones. Tampoco se documentan innovaciones técnicas como decodificación especulativa o atención lineal. Todo ello debe considerarse no disponible.
+Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La unica informacion tecnica adicional es la derivada del proceso de cuantizacion: se han generado cuantizaciones estaticas (este repositorio) y cuantizaciones ponderadas con imatrix (repositorio i1-GGUF), lo que sugiere que el modelo base es compatible con el pipeline estandar de conversion a GGUF de llama.cpp.
 
 ## Capacidades
 
-- Generación de texto conversacional: el repositorio está etiquetado como "conversational" y "endpoints_compatible", lo que sugiere uso en diálogo multi-turno.
-- Inferencia local en formato GGUF: compatible con llama.cpp y runtimes derivados (Ollama, LM Studio, etc.).
-- Cuantizaciones múltiples: permite ajustar el equilibrio entre calidad y consumo de memoria.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible (no se declaran idiomas).
-- Capacidades especiales (thinking mode, visión, audio): no disponible.
-- Razonamiento, código y matemáticas: no disponible (sin benchmarks ni documentación).
+- Generacion de texto conversacional: el modelo esta etiquetado como "conversational" en Hugging Face, lo que indica que esta orientado a dialogos multi-turno.
+- Idiomas: la model card declara unicamente ingles (`language: en`), por lo que no se garantiza un rendimiento solido en castellano u otros idiomas.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: limitadas al ingles segun la metadata.
+- Capacidades especiales (vision, audio, thinking mode): no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Despliegue local en estaciones de trabajo: usar las variantes Q4_K_M o Q5_K_M con llama.cpp para ejecutar un modelo de ~7B en CPU o GPU consumer sin depender de servicios en la nube.
-- Prototipado de chatbots: emplear la variante Q8_0 o F16 en servidores con GPU para evaluar la calidad conversacional del modelo base antes de comprometerse con un despliegue mayor.
-- Experimentación con cuantización: comparar la degradación de calidad entre Q2_K, Q3_K_M, Q4_K_M e IQ4_XS sobre el mismo modelo base para estudiar el impacto de la compresión.
-- Integración en entornos con memoria limitada: usar Q3_K_S o IQ4_XS en equipos con poca VRAM o RAM para tareas de generación de texto de baja latencia.
-- Evaluación de modelos candidatos: servir el modelo con endpoints compatibles (etiqueta endpoints_compatible) para pruebas A/B frente a otros modelos de 7B en pipelines internos.
-- Investigación sobre modelos recientes: al ser un modelo con fecha 20261031 y publicación en noviembre de 2026, puede interesar a investigadores que rastrean la evolución de modelos abiertos de esa generación, siempre verificando la licencia del modelo base antes de cualquier uso.
+- Asistente conversacional local en ingles: el modelo puede desplegarse con llama.cpp u Ollama en una estacion de trabajo para mantener conversaciones multi-turno sin conexion, usando la cuantizacion Q4_K_M (4,6 GB) que el autor recomienda por su equilibrio entre velocidad y calidad.
+- Prototipado de chatbots en hardware de consumo: con la cuantizacion Q2_K (3,0 GB) es posible ejecutar el modelo en GPUs con 4-6 GB de VRAM, lo que permite validar flujos conversacionales antes de migrar a infraestructura mayor.
+- Generacion de texto en pipelines por lotes: la cuantizacion Q8_0 (8,0 GB) ofrece la mejor calidad dentro de las versiones de 8 bits y puede integrarse en scripts de generacion masiva de contenido en ingles.
+- Evaluacion comparativa de cuantizaciones: el repositorio incluye 12 variantes de cuantizacion, lo que permite medir el impacto de la compresion en la perplejidad y la calidad de salida para un caso de uso concreto.
+- Despliegue en entornos con restricciones de memoria: la variante IQ4_XS (4,4 GB) emplea cuantizacion con imatrix implicita en el esquema IQ, adecuada para servidores con VRAM limitada que necesitan mantener calidad razonable.
+- Fine-tuning o experimentacion sobre el modelo base: dado que el modelo base se distribuye en safetensors con licencia apache-2.0, es posible partir de el para ajuste fino y luego generar nuevas cuantizaciones GGUF con el mismo pipeline.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada (inferencia, aproximada según tamaño de pesos; no confirmada por el autor):
-  - F16: ~14,4 GB de pesos, más overhead de contexto.
-  - Q8_0: ~7,7 GB.
-  - Q6_K: ~5,9 GB.
-  - Q5_K_M: ~5,1 GB.
-  - Q4_K_M: ~4,4 GB.
-  - Q3_K_M: ~3,5 GB.
-  - Q2_K: ~2,6 GB.
-  - IQ4_XS: ~4,0 GB.
-- GPU recomendadas: no disponibles por parte del autor; por tamaño, una RTX 4090 (24 GB) puede alojar F16 con contexto moderado, y una RTX 3060 (12 GB) o superior cubre Q8_0 y todas las variantes menores.
-- ¿Cabe en GPU consumer? Sí: las variantes Q4_K_M, Q5_K_M, Q6_K y Q8_0 caben en GPUs de 8-12 GB; Q2_K y Q3_K pueden ejecutarse incluso en CPU con RAM suficiente.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con GGUF; la etiqueta endpoints_compatible sugiere compatibilidad con APIs de tipo OpenAI.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia (aproximada, segun el tamano del fichero GGUF mas overhead de contexto):
+  - Q2_K: ~3,0 GB de pesos, ~4 GB de VRAM total con contexto moderado.
+  - Q3_K_S / Q3_K_M / Q3_K_L: ~3,7 GB de pesos, ~5 GB de VRAM total.
+  - IQ4_XS: ~4,4 GB de pesos, ~5,5 GB de VRAM total.
+  - Q4_K_S / Q4_K_M: ~4,6 GB de pesos, ~6 GB de VRAM total.
+  - Q5_K_S / Q5_K_M: ~5,4 GB de pesos, ~7 GB de VRAM total.
+  - Q6_K: ~6,3 GB de pesos, ~8 GB de VRAM total.
+  - Q8_0: ~8,0 GB de pesos, ~10 GB de VRAM total.
+  - f16: ~14,6 GB de pesos, ~16-17 GB de VRAM total.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090 para las cuantizaciones de 4-8 bits; A100 o H100 no son necesarias para un modelo de este tamano, aunque pueden usarse para servir multiples instancias.
+- Cabe en GPU de consumo: si, practicamente todas las cuantizaciones de 4 bits o menos caben en GPUs con 8 GB o mas de VRAM; las variantes Q6_K y Q8_0 requieren 12-16 GB.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de inferencia tipo OpenAI.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de información sobre el modelo base (licencia, contexto, benchmarks) ni de datos verificables para compararlo con alternativas de la misma categoría.
+No se dispone de datos de benchmarks ni de especificaciones detalladas del modelo base que permitan una comparativa rigurosa con alternativas de la misma categoria. A continuacion se ofrece una comparativa estructural basica basada unicamente en los datos disponibles:
+
+| Modelo | Parametros | Contexto | Licencia | Formato |
+|---|---|---|---|---|
+| Goose-7.2B-G1l-20261031 (este) | 7,2B | no disponible | apache-2.0 | safetensors, GGUF |
+| Alternativas de ~7B | no disponible | no disponible | no disponible | no disponible |
+
+No disponible para una comparativa con datos de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: no se puede confirmar el uso comercial; es imprescindible verificar la licencia del modelo base Lambent/Goose-7.2B-G1l-20261031 antes de usarlo en producción.
-- Idiomas no declarados: se desconoce el soporte multilingüe real.
-- Sin benchmarks ni documentación de entrenamiento: no hay evidencia pública de calidad, sesgos o robustez.
-- Riesgo de alucinación: inherente a los modelos generativos; sin evaluación publicada no puede cuantificarse.
-- Repositorio sin tracción: 0 descargas y 0 likes en el momento de la consulta, lo que reduce la validación comunitaria.
-- Las cuantizaciones de baja precisión (Q2_K, Q3_K_S) pueden degradar notablemente la calidad; se recomienda Q4_K_M o superior para uso serio.
-- El nombre incluye una fecha futura (20261031) que no aporta información verificable sobre el entrenamiento.
-- No consta pipeline declarado (text-generation no confirmado), aunque la etiqueta conversacional lo sugiere.
+- Idioma: la model card declara unicamente ingles; el rendimiento en castellano no esta garantizado y probablemente sea inferior.
+- Sesgos conocidos: no documentados en la informacion proporcionada; al ser un modelo entrenado con datos web es probable que herede sesgos, pero no se aportan datos concretos.
+- Riesgo de alucinacion: no cuantificado; no se han publicado evaluaciones de fidelidad factual.
+- Contexto: se desconoce la longitud maxima de contexto soportada, lo que impide garantizar conversaciones largas o documentos extensos.
+- Licencia: apache-2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base original (Lambent/Goose-7.2B-G1l-20261031) por si anade restricciones adicionales.
+- Cuantizaciones de baja precision: Q2_K y Q3_K_S pueden degradar notablemente la calidad; el autor marca Q3_K_M como "lower quality" y recomienda Q4_K_M o Q4_K_S para uso general.
+- Repositorio de 66,5 GB: descargar el repo completo supone un consumo de almacenamiento considerable; conviene descargar solo la cuantizacion necesaria.
+- Ausencia de benchmarks: no hay evidencia publica de rendimiento que respalde afirmaciones de calidad frente a otros modelos de 7B.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/Goose-7.2B-G1l-20261031-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/Goose-7.2B-G1l-20261031-GGUF
 - Modelo base: https://huggingface.co/Lambent/Goose-7.2B-G1l-20261031
-- No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.
+- Cuantizaciones con imatrix: https://huggingface.co/mradermacher/Goose-7.2B-G1l-20261031-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Goose-7.2B-G1l-20261031-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de perplejidad por cuantizacion (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests

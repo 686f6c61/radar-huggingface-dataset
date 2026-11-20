@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "DBresh1/minilm-news-filter",
+  "slug": "dbresh1-minilm-news-filter",
+  "author": "DBresh1",
+  "url": "https://huggingface.co/DBresh1/minilm-news-filter",
+  "created_at": "2026-11-20T00:18:53.000Z",
+  "updated_at": "2026-11-20T00:19:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "setfit",
+  "languages": [
+    "uk",
+    "ru"
+  ],
+  "tags": [
+    "setfit",
+    "safetensors",
+    "bert",
+    "news",
+    "text-classification",
+    "personal-preferences",
+    "uk",
+    "ru",
+    "base_model:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "base_model:finetune:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117653760,
+  "parameters_human": "117.7M",
+  "storage_bytes": 487722797,
+  "storage_human": "488 MB",
+  "context_length": null,
+  "base_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

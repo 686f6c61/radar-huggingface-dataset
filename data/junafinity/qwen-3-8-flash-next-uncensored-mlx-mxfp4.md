@@ -2,89 +2,91 @@
 
 ## Resumen
 
-Qwen-3.8-Flash-Next-Uncensored-MLX-MXFP4 es una conversión en formato MLX con precisión mixta MXFP4 del modelo abliterado de OrcaRouter, que a su vez deriva de Qwen/Qwen3.8-Flash-Next, un modelo multimodal MoE de 34 000 millones de parámetros que sirve como avance de la arquitectura Qwen4. El modelo original combina atención híbrida Gated DeltaNet (GDN) con QSA (Query-Selective Attention), incorpora una torre de visión y vídeo, un módulo de predicción multi-token (MTP) y una tabla de n-gramas de 51B para el decodificador PLE. Esta conversión mantiene la torre de visión en BF16, aplica MXFP4 a los tensores de puerta y proyección ascendente de los expertos enrutados y a la tabla n-grama, y conserva la cabeza MTP, lo que la hace adecuada para ejecución en Apple Silicon mediante oMLX o mlx-vlm.
+Qwen-3.8-Flash-Next-Uncensored-MLX-MXFP4 es una conversión cuantizada en formato MLX del checkpoint abliterado (sin mecanismos de rechazo) de Qwen3.8-Flash-Next, un modelo de lenguaje y visión de arquitectura MoE desarrollado originalmente por Qwen/Alibaba. La conversión la firma junafinity, bajo la marca VeriSafe.Live, y parte del build BF16 sin censura de OrcaRouter, no del checkpoint oficial de Qwen. El resultado es un modelo de aproximadamente 180.000 millones de parámetros con ventana de contexto de 262.144 tokens, pensado para ejecutarse en Apple Silicon mediante la librería MLX.
 
-La relevancia de este modelo radica en que ofrece una versión sin alineación de seguridad (abliterada) de un modelo de última generación, pensada exclusivamente para investigación en interpretabilidad, red-teaming y estudio de mecanismos de rechazo. Al estar cuantizado con una receta mixta que prioriza la calidad, evita el precipicio de calidad que sufren las cuantizaciones uniformes de 4 bits en esta arquitectura, aunque no se han publicado métricas de calidad para este archivo concreto. Su licencia es la Qwen Community License 1.0, que permite uso comercial con condiciones, pero su naturaleza sin guardarraíles lo desaconseja para despliegues en producción sin capas de moderación adicionales.
+El interés técnico principal reside en su estrategia de cuantización mixta: no es un 4-bit uniforme, sino que combina MXFP4 con grupo de 32 en las proyecciones gate/up de los expertos enrutados y en la tabla PLE de n-gramas, mientras mantiene en BF16 o en anchos afines superiores las proyecciones down, la atención, las conexiones GDN e hyper-connections, los expertos compartidos y la torre de visión y vídeo completa. Conserva además la cabeza MTP de una capa, lo que habilita decodificación especulativa nativa en runtimes compatibles.
+
+La relevancia del modelo es doble: por un lado, demuestra una receta de cuantización mixta que evita el conocido precipicio de calidad del 4-bit uniforme en esta arquitectura (hasta un +20,6 % de perplejidad en WikiText frente a BF16, según la model card); por otro, su naturaleza abliterada lo convierte en una herramienta específica para investigación en seguridad, interpretabilidad y red-teaming, no para despliegue en producción sin capas adicionales de moderación.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE híbrida GDN + QSA (preview de Qwen4), con torre de visión/vídeo, PLE y MTP |
-| Parametros totales | 34 042 847 379 (34B) |
-| Parametros activos | no disponible (arquitectura MoE, no se especifica el número de activos) |
-| Longitud de contexto | 262 144 tokens |
-| Tipos de cuantizacion | MXFP4 (group-32) para gate/up de expertos y n-grama PLE; affine Q4/Q5/Q6/Q8 para el resto; BF16 para visión, embeddings y routers |
-| Idiomas soportados | inglés (en), chino (zh) |
-| Licencia | Qwen Community License 1.0 (licencia comunitaria, no OSI) |
-| Formato de pesos | safetensors (MLX), 20 shards, 100.53 GB (93.63 GiB) |
+| Arquitectura | Transformer MoE con atención, GDN (gated delta network), hyper-connections, torre de visión y vídeo, cabeza MTP de una capa (arquitectura `qwen4_exp`) |
+| Parametros totales | 179.999.981.459 (≈180 B) |
+| Parametros activos | no disponible |
+| Longitud de contexto | 262.144 tokens |
+| Tipos de cuantizacion | MXFP4 con grupo de 32 en expertos gate/up y tabla PLE; anchos afines superiores o BF16 en down-projections, atención, GDN, hyper-connections, expertos compartidos y tensores de frontera de vocabulario; torre de visión y vídeo en BF16 |
+| Idiomas soportados | inglés (en) y chino (zh) |
+| Licencia | qwen-community-license (Qwen Community License 1.0) |
+| Formato de pesos | safetensors en formato MLX, 20 shards, 100,53 GB (93,63 GiB), 3245 tensores |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-Flash-Next emplea una arquitectura híbrida que combina Gated DeltaNet (GDN) con Gated Attention (QSA), una innovación que mejora la eficiencia computacional y la capacidad del modelo frente a la atención tradicional. Incluye además hiperconexiones residuales, un módulo de predicción multi-token (MTP) de una capa, y un decodificador basado en n-gramas (PLE) con una tabla de 51B entradas. La conversión de junafinity se realizó desde el checkpoint BF16 abliterado de OrcaRouter, no desde los pesos oficiales de Qwen, y aplica una receta de cuantización mixta basada en la prioridad de tensores: los tensores más sensibles (visión, embeddings, routers, normas) se mantienen en BF16, mientras que los expertos enrutados y la tabla n-grama usan MXFP4, y las proyecciones de atención y GDN usan formatos afines de 5-8 bits. No se utilizó calibración de sensibilidad ni imatrix; la receta es reproducible a partir de los nombres de los tensores. El proceso de conversión transmitió los 131 shards fuente sin materializar el modelo BF16 completo en RAM.
+El modelo original Qwen3.8-Flash-Next emplea una arquitectura transformer con mezcla de expertos (MoE) etiquetada como `qwen4_exp`, que incorpora mecanismos GDN (gated delta networks) e hyper-connections junto a la atención clásica, además de una torre multimodal para imagen y vídeo y una cabeza MTP (multi-token prediction) de una capa. Esta conversión no reentrena nada: parte del checkpoint BF16 de OrcaRouter, que a su vez aplica una edición quirúrgica sobre los residual writers para eliminar los mecanismos de rechazo (abliteration). El repositorio de junafinity solo altera el formato numérico.
+
+La cuantización se realizó en streaming desde el BF16 sin censura, asignando MXFP4 (grupo de 32) a los tensores que lo requieren por diseño (ancho de n-grama 160 en la tabla PLE de 51 B, proyecciones gate/up de expertos enrutados) y manteniendo mayor precisión en tensores sensibles. La model card reporta `skipped_div` igual a 0, es decir, ningún tensor quedó sin cuantizar por error de divisibilidad. No se detallan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo base.
 
 ## Capacidades
 
-- Generación de texto multimodal: acepta entradas de imagen, vídeo y texto, y produce texto (pipeline image-text-to-text).
-- Razonamiento avanzado: hereda las capacidades de razonamiento del modelo Qwen3.8-Flash-Next, que según la documentación oficial supera a Claude-4.6-Opus (Max) en tareas complejas (dato del modelo original, no verificado en esta conversión).
-- Function calling: soporte de tool calling integrado en la arquitectura base.
-- Capacidades multilingües: inglés y chino principalmente, con posible transferencia a otros idiomas no verificada.
-- Modo de razonamiento: el modelo base incluye modos de pensamiento (thinking) que se conservan en la conversión.
-- Predicción multi-token (MTP): la cabeza MTP se mantiene en el checkpoint, lo que permite decodificación especulativa nativa en oMLX.
-- Sin alineación de seguridad: al estar abliterado, no presenta rechazo ante solicitudes dañinas, lo que lo hace útil para investigación de seguridad, pero peligroso para uso general.
+- Generación de texto conversacional multi-turno con contexto de hasta 262.144 tokens.
+- Razonamiento explícito y modos de pensamiento (etiqueta `reasoning` en el repositorio).
+- Comprensión de imagen y vídeo mediante la torre multimodal completa conservada en BF16 (pipeline `image-text-to-text`).
+- Function calling y tool calling, según las etiquetas del repositorio.
+- Capacidades de agente y razonamiento multi-paso, implícitas en las etiquetas `function-calling` y `reasoning`.
+- Decodificación especulativa nativa gracias a la cabeza MTP de una capa incluida en el checkpoint (soportada por oMLX 0.6.3+; mlx-vlm 0.6.17 descarta esas claves al cargar).
+- Multilingüismo limitado a inglés y chino según la model card.
+- Comportamiento sin rechazo: responde a peticiones que el modelo original rechazaría, incluida la generación de contenido dañino, ofensivo o ilegal.
 
 ## Casos de uso
 
-- Investigación en interpretabilidad: estudiar cómo la abliteración elimina el rechazo y qué patrones internos cambian, usando este modelo como caso de estudio comparado con el original.
-- Red-teaming y evaluación de robustez: probar la resistencia del modelo ante prompts adversariales y medir la eficacia de técnicas de mitigación de sesgos.
-- Desarrollo de capas de moderación: al no tener guardarraíles, sirve como banco de pruebas para sistemas de filtrado y moderación de contenido en pipelines de producción.
-- Experimentos de cuantización: analizar el impacto de la receta mixta MXFP4 en la calidad de salida frente a cuantizaciones uniformes, usando el modelo como referencia.
-- Generación de contenido creativo sin restricciones: para entornos controlados donde se requiere máxima libertad creativa (por ejemplo, generación de ficción o guiones), siempre con supervisión humana.
-- Evaluación de decodificación especulativa: probar la cabeza MTP conservada en oMLX para medir aceleración en inferencia en Apple Silicon.
+- Investigación en mecanismos de rechazo: comparar las respuestas del modelo abliterado con las del Qwen3.8-Flash-Next original sobre un conjunto de prompts sensibles permite aislar qué direcciones residuales codifican la negativa y validar técnicas de abliteration de forma reproducible.
+- Red-teaming y evaluación de robustez: usar el modelo como generador adversarial para producir prompts y respuestas dañinas controladas y alimentar con ellas clasificadores de seguridad y filtros de moderación antes de desplegarlos.
+- Estudio de interpretabilidad multimodal: la torre de visión y vídeo en BF16 permite analizar cómo se representan imágenes y vídeos en un MoE de 180 B sin la distorsión que introduciría una cuantización agresiva de esa torre.
+- Experimentación con decodificación especulativa: la cabeza MTP conservada permite medir en Apple Silicon la ganancia de throughput de la predicción multi-token frente a la decodificación autoregresiva estándar, con oMLX 0.6.3 o superior.
+- Procesamiento de documentos largos en local: con 262.144 tokens de contexto, un Mac Studio con memoria unificada suficiente puede resumir o extraer información de contratos, informes o transcripciones extensas sin enviar datos a la nube.
+- Evaluación de recetas de cuantización: comparar esta mezcla MXFP4/afín/BF16 con el 4-bit uniforme y con el 4/8 mixto sobre tareas de código, matemáticas y visión sirve para caracterizar el precipicio de calidad por tipo de tensor en arquitecturas MoE con GDN.
+- Prototipado de asistentes de imagen y vídeo sin censura para investigación de sesgos: analizar cómo un modelo sin alineamiento describe personas, escenas o contenido sensible en comparación con su contrapartida alineada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica que la calidad de esta conversión MXFP4 no ha sido medida frente al BF16 original ni frente al FP8 oficial de Qwen. Se menciona que una cuantización uniforme de 4 bits en esta arquitectura produce un aumento del 20.6% en perplexity de WikiText, mientras que la receta mixta 4/8 bits sobre la línea oficial produce solo un +1.3%, pero no hay datos específicos para este archivo.
+No se han publicado resultados de benchmarks en la información disponible. La model card únicamente aporta una métrica de degradación por cuantización: la perplejidad en WikiText de un 4-bit uniforme sobre esta arquitectura es un 20,6 % superior a la de BF16 (dato atribuido a PipeNetwork), mientras que una receta mixta 4/8 sobre la línea oficial no censurada se sitúa en +1,3 %. No se proporciona la cifra correspondiente a esta conversión concreta.
 
 ## Requisitos de hardware
 
-- Plataforma: Apple Silicon (procesadores M-series) con memoria unificada, ya que es un formato MLX.
-- Memoria estimada: el repositorio pesa 100.5 GB en disco, pero la memoria en uso durante inferencia será menor al cargar solo los pesos necesarios. Con 34B parámetros y cuantización mixta (mayoría en 4-8 bits), se estima un consumo de entre 20 y 40 GB de memoria unificada, dependiendo de la longitud de contexto y el batch. No se dispone de cifras exactas.
-- GPU recomendadas: no aplica GPU NVIDIA; requiere Apple Silicon (M1 Pro/Max/Ultra o superiores). Modelos con 64 GB o más de memoria unificada son recomendables para contexto largo.
-- Opciones de despliegue: oMLX 0.6.3+ (soporta visión y MTP nativo) o mlx-vlm ≥ 0.6.17 (soporta visión, pero descarta las claves MTP al cargar).
-- Latencia y throughput: no disponibles. La decodificación especulativa con MTP podría mejorar el throughput, pero no hay mediciones publicadas.
+- VRAM o memoria unificada: el payload de safetensors ocupa 100,53 GB (93,63 GiB) en 20 shards; se necesita un equipo con al menos unos 100 GB de memoria disponible para cargar los pesos, más el overhead del runtime y de la caché KV para contextos largos.
+- GPU recomendadas: el formato MLX está diseñado para Apple Silicon; encajan equipos con memoria unificada de 128 GB o más (por ejemplo, Mac Studio con M3 Ultra o M4 Max de gama alta). No es un formato para A100, H100 ni RTX 4090 sin reconversión.
+- GPU de consumo: no cabe en ninguna GPU de consumo convencional por tamaño; en Apple Silicon, los modelos con 64 GB o menos no pueden alojarlo completo.
+- Despliegue: oMLX 0.6.3 o superior (soporta visión y MTP nativo) o mlx-vlm 0.6.17 o superior (soporta visión, pero descarta las claves MTP al cargar). No se indica soporte para vLLM, llama.cpp, Ollama ni TGI, ya que el formato es MLX.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Cuantización | MTP | Abliterado | Licencia |
-|---|---|---|---|---|---|---|
-| Qwen/Qwen3.8-Flash-Next (original) | 34B | 262K | BF16 (oficial) | Sí | No | Qwen Community |
-| orcarouter/Qwen3.8-Flash-Next-Uncensored | 34B | 262K | BF16 | Sí | Sí | Qwen Community |
-| txgsync/Qwen3.8-Flash-Next-MXFP4-MLX | 34B | 262K | MXFP4 mixto | No | No | Qwen Community |
-| junafinity/Qwen-3.8-Flash-Next-Uncensored-MLX-MXFP4 | 34B | 262K | MXFP4 mixto | Sí | Sí | Qwen Community |
-
-La diferencia principal frente a txgsync es que esta conversión conserva la cabeza MTP y se deriva de un checkpoint abliterado, mientras que txgsync usa los pesos oficiales y omite MTP. Frente al modelo de OrcaRouter, esta versión reduce el tamaño de memoria al cuantizar, a costa de una posible pérdida de calidad no medida.
+| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| Qwen-3.8-Flash-Next-Uncensored-MLX-MXFP4 (este) | ≈180 B | 262.144 | MLX MXFP4 mixto | qwen-community-license | Abliterado, visión y vídeo en BF16, MTP conservado |
+| orcarouter/Qwen3.8-Flash-Next-Uncensored | no disponible | no disponible | BF16 | no disponible | Fuente BF16 sin censura de esta conversión |
+| Qwen/Qwen3.8-Flash-Next | no disponible | no disponible | safetensors oficiales | qwen-community-license | Modelo original alineado; referencia de calidad y seguridad |
+| pipenetwork/Qwen3.8-Flash-Next-MLX-mixed-4_8bit | no disponible | no disponible | MLX 4/8 mixto | no disponible | Receta mixta citada con +20,6 % de perplejidad en WikiText frente a BF16 |
 
 ## Limitaciones y advertencias
 
-- Abliteración: el modelo ha sido sometido a abliteración, lo que elimina sustancialmente la alineación de seguridad. Cumplirá con solicitudes dañinas, ilegales o poco éticas que el modelo original rechazaría.
-- Sin guardarraíles: no tiene mecanismos de moderación integrados; cualquier despliegue en producción requiere capas externas de filtrado y moderación.
-- Riesgo de alucinación: como todo modelo generativo, puede producir información falsa o inventada, especialmente en contextos largos.
-- Idiomas limitados: solo se garantiza inglés y chino; el rendimiento en otros idiomas no está verificado.
-- Calidad no medida: no se han publicado benchmarks de esta conversión; la calidad frente al BF16 original es desconocida.
-- Licencia: la Qwen Community License 1.0 permite uso comercial pero con restricciones (por ejemplo, no usar para servicios que compitan con Qwen, y cumplir con la normativa de IA). No es una licencia de código abierto aprobada por OSI.
-- Requisitos de runtime: requiere oMLX 0.6.3+ o mlx-vlm ≥ 0.6.17; versiones anteriores pueden fallar al cargar los pesos.
-- Responsabilidad legal: el autor declina toda responsabilidad por uso indebido; el usuario asume plena responsabilidad.
+- El alineamiento de seguridad ha sido sustancialmente eliminado: el modelo cumplirá peticiones dañinas, poco éticas, ofensivas o ilegales que el original rechazaría, y no tiene barreras integradas.
+- No debe desplegarse de cara a usuarios finales ni en producción sin capas propias de seguridad, moderación y prevención de abuso.
+- Riesgo elevado de alucinación y de afirmaciones falsas sin matices, especialmente en dominios especializados; no se han publicado evaluaciones de fidelidad en la información disponible.
+- Cobertura lingüística limitada a inglés y chino; el rendimiento en castellano no está documentado y previsiblemente será inferior.
+- La licencia Qwen Community License 1.0 impone condiciones específicas de uso comercial que deben revisarse antes de cualquier explotación; además pueden aplicar los términos del checkpoint de OrcaRouter.
+- La cuantización mixta introduce degradación medible frente a BF16 (referencias de +1,3 % a +20,6 % de perplejidad en WikiText según la receta); no hay cifra publicada para esta conversión concreta.
+- El formato MLX limita el despliegue a Apple Silicon y a los runtimes oMLX y mlx-vlm; no hay soporte documentado para ecosistemas CUDA.
+- La cabeza MTP se descarta silenciosamente al cargar con mlx-vlm 0.6.17, lo que desactiva la decodificación especulativa sin aviso.
+- El modelo no refleja las opiniones de los uploaders, de OrcaRouter ni de Qwen/Alibaba, y los autores declinan toda responsabilidad por el uso.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/junafinity/Qwen-3.8-Flash-Next-Uncensored-MLX-MXFP4
-- Modelo base original: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Modelo abliterado fuente: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
-- Conversión MXFP4 oficial (sin MTP): https://huggingface.co/txgsync/Qwen3.8-Flash-Next-MXFP4-MLX
-- Conversión mixta 4/8 bits (referencia de calidad): https://huggingface.co/pipenetwork/Qwen3.8-Flash-Next-MLX-mixed-4_8bit
-- Repositorio GitHub de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
-- Guía de ejecución local (unsloth): https://unsloth.ai/docs/models/qwen3.8-next
-- Blog oficial de Qwen: https://qwen.ai/blog?id=qwen3.8-flash-next
+- Fuente BF16 sin censura: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
+- Modelo original: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Receta mixta 4/8 de referencia: https://huggingface.co/pipenetwork/Qwen3.8-Flash-Next-MLX-mixed-4_8bit
 - Runtime oMLX: https://github.com/jundot/omlx
-- mlx-vlm: https://github.com/Blaizzy/mlx-vlm
+- Runtime mlx-vlm: https://github.com/Blaizzy/mlx-vlm
+- Sitio del autor: https://verisafe.live

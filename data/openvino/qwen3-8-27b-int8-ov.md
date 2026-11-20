@@ -2,84 +2,100 @@
 
 ## Resumen
 
-El modelo OpenVINO/Qwen3.8-27B-int8-ov es una conversión del modelo Qwen3.8-27B de Alibaba al formato OpenVINO IR, con los pesos comprimidos a INT8 mediante la herramienta NNCF de OpenVINO. El modelo original es un modelo de visión-lenguaje nativo que comprende imágenes y vídeo, ofrece control flexible del razonamiento y soporta tareas complejas de varios pasos. Esta conversión permite ejecutar el modelo en hardware Intel (CPU, GPU, NPU) utilizando el runtime de OpenVINO, lo que facilita el despliegue en entornos de producción con requisitos de latencia y eficiencia.
+OpenVINO/Qwen3.8-27B-int8-ov es la conversión al formato OpenVINO IR del modelo Qwen3.8-27B, desarrollado originalmente por el equipo Qwen de Alibaba. Se trata de una versión cuantizada a INT8 mediante NNCF (Neural Network Compression Framework) que mantiene las capacidades del modelo original: comprensión conjunta de imagen, vídeo y texto, control flexible del razonamiento y ejecución de tareas complejas de múltiples pasos. El paquete incluye además un modelo auxiliar de predicción multi-token (MTP) para decodificación especulativa.
 
-La relevancia de esta versión radica en que reduce el tamaño del modelo original (27B parámetros) mediante cuantización INT8, manteniendo un equilibrio entre precisión y consumo de recursos. El repositorio ocupa 27,4 GB, lo que sugiere que puede ejecutarse en GPUs con al menos 32 GB de VRAM o en CPU con suficiente memoria RAM. Sin embargo, el modelo está marcado como experimental: requiere versiones nightly de OpenVINO, Optimum Intel y Transformers 5.2, por lo que no se recomienda para uso en producción sin validación previa.
+La relevancia de esta ficha radica en que permite desplegar un modelo visión-lenguaje de 27.000 millones de parámetros en infraestructura Intel (CPU, iGPU, NPU o GPU Arc) sin necesidad de GPUs de datacenter, gracias a la compresión INT8 y al runtime OpenVINO. Esto abre el uso de un VLM de gran tamaño en entornos de borde, estaciones de trabajo y servidores con aceleradores Intel.
+
+El modelo se distribuye con licencia Apache 2.0 y está pensado para su uso mediante OpenVINO GenAI, Optimum Intel u OpenVINO Model Server (OVMS), este último con soporte de API compatible con OpenAI. La información pública disponible no detalla la longitud de contexto, la composición del dataset de entrenamiento ni resultados de benchmarks, por lo que esos apartados se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo de vision-lenguaje, probablemente transformer multimodal) |
-| Parametros totales | 27 mil millones (27B) |
-| Parametros activos | no disponible (no se indica si es MoE) |
+| Arquitectura | Transformer visión-lenguaje (modelo base Qwen3.8-27B); representación OpenVINO IR con compresión de pesos INT8 |
+| Parametros totales | 27 000 millones (según denominación del modelo base) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | INT8 (modo INT8_ASYM, ratio 1.0) |
+| Tipos de cuantizacion | INT8 asimétrico (INT8_ASYM, ratio 1.0) mediante `nncf.compress_weights` |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | OpenVINO IR (ficheros .bin y .xml) |
+| Formato de pesos | OpenVINO IR (`.xml`/`.bin`), con `openvino_mtp_model.xml` para decodificación especulativa MTP |
+| Tamaño del repositorio | 27,8 GB |
+| Librería | openvino |
+| Pipeline | image-text-to-text |
+| Compatibilidad | OpenVINO ≥ 2026.4.0, OpenVINO GenAI ≥ 2026.4.0.0, Transformers 5.2.0, Optimum Intel (última versión de desarrollo) |
+| Descargas / likes | 1636 / 4 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura interna del modelo no se detalla en la informacion disponible. Se sabe que Qwen3.8-27B es un modelo de vision-lenguaje nativo, lo que implica una arquitectura multimodal que combina un codificador visual con un modelo de lenguaje basado en transformer. El modelo original fue desarrollado por Qwen (Alibaba) y soporta comprension de imagenes y video, control flexible del modo de pensamiento (thinking mode) y tareas complejas de razonamiento multi-paso.
+El modelo base Qwen3.8-27B es un transformer nativo visión-lenguaje que procesa imágenes, vídeo y texto en una única pila, con control flexible del modo de razonamiento (thinking). La versión publicada por OpenVINO no reentrena el modelo: aplica compresión de pesos INT8 asimétrica con ratio 1.0 sobre todos los pesos lineales mediante NNCF, y exporta el grafo a OpenVINO IR. El repositorio incluye además un modelo MTP separado (`openvino_mtp_model.xml`) que actúa como modelo borrador para decodificación especulativa, acelerando la generación al proponer varios tokens por paso y validarlos con el modelo principal.
 
-El proceso de entrenamiento del modelo original no se describe en la model card de esta conversion. La unica informacion sobre el proceso de cuantizacion indica que se utilizo `nncf.compress_weights` con modo INT8_ASYM y ratio 1.0, es decir, todos los pesos se comprimieron a INT8. No se mencionan datos sobre el dataset de entrenamiento, el numero de tokens procesados ni el uso de tecnicas como RLHF o DPO.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF o DPO en el modelo original. La innovación técnica destacable de esta distribución es doble: la compresión INT8 que reduce el peso a 27,8 GB y el soporte integrado de decodificación especulativa MTP en OpenVINO GenAI, aunque esta última solo está soportada actualmente con decodificación greedy y caché de prefijos desactivada.
 
 ## Capacidades
 
-- Comprension de imagenes: puede describir el contenido de una imagen, responder preguntas sobre ella y realizar tareas de razonamiento visual.
-- Comprension de video: el modelo original soporta entrada de video, aunque no se especifica en esta conversion si el formato OpenVINO mantiene esa capacidad.
-- Control flexible de pensamiento: permite activar o desactivar un modo de razonamiento profundo (thinking mode) segun la tarea.
-- Tareas multi-paso: capaz de resolver problemas que requieren varios pasos de razonamiento, como planificacion o deduccion logica.
-- Conversacion multimodal: admite dialogos en los que se intercalan imagenes y texto, como se muestra en el ejemplo de inferencia de la model card.
-- Integracion con OpenVINO: al estar en formato IR, puede ejecutarse en CPU, GPU y NPU de Intel con el runtime de OpenVINO GenAI o mediante Optimum Intel.
+- Generación de texto y razonamiento multimodal: comprende imágenes y vídeo junto con instrucciones textuales y produce respuestas descriptivas, analíticas o conversacionales.
+- Control flexible del razonamiento (thinking): el modelo base permite activar o desactivar el modo de razonamiento según la tarea.
+- Tareas de múltiples pasos: el modelo base está descrito como apto para tareas complejas de varios pasos.
+- Conversación multi-turno: pipeline conversacional con plantilla de chat aplicada mediante el procesador.
+- Comprensión de imagen: descripción, respuesta a preguntas visuales y análisis de diagramas (el ejemplo de la model card usa un diagrama AI2D).
+- Comprensión de vídeo: soportada según la descripción del modelo base.
+- Decodificación especulativa MTP: aceleración de inferencia mediante modelo borrador integrado.
+- Despliegue con API compatible con OpenAI a través de OVMS, incluyendo carga de imágenes por URL.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de audio: no disponible.
 
 ## Casos de uso
 
-- Asistente visual para documentacion tecnica: un desarrollador puede subir una captura de pantalla de un error y el modelo explica el problema y sugiere soluciones, gracias a su capacidad de razonamiento visual y multi-paso.
-- Analisis de imagenes medicas (investigacion): el modelo puede describir hallazgos en radiografias o ecografias, aunque requiere validacion por personal cualificado y no debe usarse como diagnostico.
-- Moderacion de contenido visual: clasificar imagenes o videos para detectar contenido inapropiado, usando el pipeline image-text-to-text para generar descripciones y evaluarlas.
-- Chatbot de atencion al cliente con soporte visual: un usuario envia una foto de un producto defectuoso y el asistente identifica el problema y ofrece pasos de devolucion, aprovechando el contexto multimodal.
-- Generacion de descripciones accesibles: crear textos alternativos (alt text) para imagenes en sitios web o documentos, mejorando la accesibilidad.
-- Prototipado rapido de aplicaciones de vision por computador: los investigadores pueden probar el modelo en CPU con OpenVINO sin necesidad de GPUs dedicadas, gracias a la cuantizacion INT8 y el soporte de OpenVINO GenAI.
+- Asistente de documentación técnica con imágenes: desplegado con OpenVINO GenAI en una estación de trabajo Intel, el modelo puede recibir capturas de diagramas de arquitectura o esquemas eléctricos y generar explicaciones textuales, aprovechando su pipeline image-text-to-text y la compresión INT8 para ejecutarse sin GPU dedicada.
+- Análisis de vídeo en entornos de borde: al ser un VLM nativo con soporte de vídeo y ejecutable en CPU/iGPU/NPU Intel, encaja en inspección visual de líneas de producción o monitorización de recintos donde no se permite enviar datos a la nube.
+- Chatbot multimodal servido con API OpenAI: mediante OVMS con `--allowed_media_domains all`, se puede exponer un endpoint compatible con OpenAI que acepte URLs de imagen, integrándose en aplicaciones existentes sin cambiar el cliente.
+- Procesamiento por lotes de imágenes en servidor Intel: el modelo INT8 de 27,8 GB cabe en servidores con suficiente memoria y permite clasificar, describir y extraer información de grandes volúmenes de imágenes usando OVMS con continuous batching.
+- Asistencia al desarrollador en tareas de razonamiento visual: con el modo thinking activado, el modelo puede resolver problemas que combinan texto e imagen, como interpretar gráficas de rendimiento o diagramas de flujo y proponer mejoras.
+- Prototipado rápido en portátiles con GPU integrada: gracias a la compatibilidad con Optimum Intel y al ejemplo de inferencia con `OVModelForVisualCausalLM`, un equipo de desarrollo puede validar un caso de uso VLM localmente antes de escalar a servidor.
+- Aceleración de inferencia interactiva: con el modelo MTP y decodificación greedy, se puede reducir la latencia en asistentes visuales de respuesta corta donde la precisión determinista es aceptable.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de MMLU, HumanEval, GSM8K ni comparaciones con otros modelos. Tampoco se proporcionan datos de latencia o throughput para la version cuantizada.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el repositorio ocupa 27,4 GB, por lo que se estima que la inferencia requiere al menos 28-32 GB de memoria (VRAM o RAM) para cargar los pesos y los buffers de activacion. No se dispone de datos exactos.
-- GPU recomendadas: para ejecucion en GPU, se necesitarian tarjetas con 32 GB o mas, como A100 40GB, A6000 48GB o H100 80GB. Una RTX 4090 (24 GB) probablemente no sea suficiente.
-- CPU: la model card muestra ejemplos de inferencia en CPU con OpenVINO GenAI, por lo que es viable en CPUs modernas con suficiente RAM (64 GB o mas recomendado).
-- Opciones de despliegue: OpenVINO GenAI (VLMPipeline), Optimum Intel con Transformers 5.2, y posiblemente otros frameworks compatibles con OpenVINO IR.
-- Latencia y throughput: no disponibles.
+- VRAM/RAM estimada: el repositorio ocupa 27,8 GB en INT8; se necesita al menos esa cantidad de memoria del dispositivo de destino más overhead de runtime y de caché KV. Para CPU se recomienda disponer de 32 GB de RAM o más.
+- GPU recomendadas: no se especifican modelos concretos. El runtime OpenVINO soporta CPU, iGPU, NPU y GPUs Intel Arc; OVMS incluye argumentos para exponer dispositivos `/dev/dri` en Docker.
+- GPU de consumo: no hay confirmación de que quepa en GPUs de consumo de NVIDIA u AMD; el formato es OpenVINO IR, orientado a hardware Intel. En iGPU Intel el modelo probablemente requiera memoria compartida del sistema, por lo que el rendimiento dependerá de la plataforma.
+- Opciones de despliegue: OpenVINO GenAI (`VLMPipeline`), Optimum Intel (`OVModelForVisualCausalLM`), OpenVINO Model Server (OVMS) con API compatible con OpenAI, y binarios para Windows o contenedor Docker.
+- Latencia y throughput: no disponibles. La model card indica que el camino MTP solo funciona con decodificación greedy y prefix caching desactivado, lo que limita su uso a escenarios deterministas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Formato |
+| Modelo | Parámetros | Contexto | Formato / cuantización | Licencia | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (original) | 27B | no disponible | FP16/BF16 | Apache 2.0 | safetensors |
-| OpenVINO/Qwen3.8-27B-int8-ov | 27B | no disponible | INT8 | Apache 2.0 | OpenVINO IR |
-| Otros modelos VLM de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
-
-La comparativa se limita al modelo original y su version cuantizada, ya que no se dispone de informacion sobre alternativas equivalentes en el mercado. La principal diferencia es el formato de pesos y la cuantizacion, que reduce el tamano y permite ejecucion en hardware Intel.
+| OpenVINO/Qwen3.8-27B-int8-ov | 27 000 M | no disponible | OpenVINO IR INT8 | Apache 2.0 | Optimizado para hardware Intel; incluye MTP |
+| Qwen/Qwen3.8-27B | 27 000 M | no disponible | Pesos originales (formato no indicado) | Apache 2.0 | Modelo base sin cuantizar; requiere framework estándar |
+| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de benchmarks ni de modelos comparables en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- Modelo experimental: la model card indica explicitamente que no ha sido completamente validado con OpenVINO y requiere versiones de desarrollo (nightly) de Optimum Intel, OpenVINO y Transformers 5.2. No es apto para entornos de produccion estables.
-- Compatibilidad restringida: solo funciona con OpenVINO 2026.4.0 (nightly) o superior, y con builds nightly de OpenVINO GenAI posteriores al 14 de agosto de 2026.
-- Sesgos y alucinaciones: no se han documentado en esta conversion, pero el modelo original puede presentar sesgos derivados de sus datos de entrenamiento y riesgo de alucinacion en tareas visuales complejas. Se recomienda revisar la model card original.
-- Limitaciones de idioma: no se especifican los idiomas soportados, aunque Qwen suele tener buen rendimiento en chino e ingles. No se garantiza cobertura multilingue amplia.
-- Restricciones de licencia: la licencia Apache 2.0 permite uso comercial, pero el modelo original puede tener condiciones adicionales (no se detallan aqui).
-- Requisitos de hardware elevados: a pesar de la cuantizacion INT8, el modelo sigue siendo grande (27,4 GB) y puede no caber en GPUs de consumo comunes.
+- Sesgos: no se documentan en la información disponible; al heredar el comportamiento del modelo base, pueden persistir sesgos de los datos de entrenamiento originales.
+- Alucinación: no hay evaluación publicada en esta ficha; en tareas visuales de detalle fino (texto en imágenes, diagramas densos) el riesgo existe y debe validarse con datos propios.
+- Contexto e idiomas: la longitud de contexto y la lista de idiomas soportados no están disponibles, lo que impide garantizar un rendimiento multilingüe concreto.
+- Licencia: Apache 2.0 permite uso comercial, pero deben revisarse las condiciones del modelo base Qwen3.8-27B y de las dependencias (OpenVINO, NNCF, Optimum Intel) por si añaden restricciones.
+- Restricciones del MTP: la decodificación especulativa con MTP solo funciona con greedy decoding y sin prefix caching, lo que limita su aplicabilidad en producción con sampling.
+- Compatibilidad estricta: requiere OpenVINO 2026.4.0 o superior, OpenVINO GenAI 2026.4.0.0 o superior y Transformers 5.2.0; versiones anteriores pueden fallar al cargar el IR.
+- Hardware: el formato OpenVINO IR no es directamente ejecutable en GPUs NVIDIA/AMD con los runtimes habituales (vLLM, llama.cpp); el despliegue está pensado para la pila Intel.
+- Tamaño: 27,8 GB de pesos INT8 implican requisitos de memoria considerables para entornos de borde; verificar la memoria disponible antes del despliegue.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/OpenVINO/Qwen3.8-27B-int8-ov
-- Modelo original: https://huggingface.co/Qwen/Qwen3.8-27B
-- Guia de optimizacion de OpenVINO: https://docs.openvino.ai/2026/openvino-workflow/model-optimization-guide/weight-compression.html
-- Documentacion de Optimum Intel: https://huggingface.co/docs/optimum-intel/openvino/inference
-- Documentacion de OpenVINO GenAI: https://openvinotoolkit.github.io/openvino.genai/
-- Notebook de Qwen3-VL: https://github.com/openvinotoolkit/openvino_notebooks/tree/latest/notebooks/qwen3-vl
-- Notebook de chatbot visual: https://github.com/openvinotoolkit/openvino_notebooks/tree/latest/notebooks/vlm-chatbot
+- Modelo en Hugging Face: https://huggingface.co/OpenVINO/Qwen3.8-27B-int8-ov
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Guía de compresión de pesos de OpenVINO: https://docs.openvino.ai/2026/openvino-workflow/model-optimization-guide/weight-compression.html
+- Inferencia con Optimum Intel: https://huggingface.co/docs/optimum-intel/openvino/inference
+- Notebook de MTP para Qwen3.8: https://openvinotoolkit.github.io/openvino_notebooks/?search=qwen3.8-mtp
+- Documentación y ejemplos de OpenVINO GenAI: https://openvinotoolkit.github.io/openvino.genai/
+- Notebook de chatbot multimodal Qwen3-VL: https://github.com/openvinotoolkit/openvino_notebooks/tree/latest/notebooks/qwen3-vl
+- Notebook de chatbot visión-lenguaje: https://github.com/openvinotoolkit/openvino_notebooks/tree/latest/notebooks/vlm-chatbot
+- OpenVINO Model Server: https://github.com/openvinotoolkit/model_server
+- Instrucciones de decodificación especulativa en OVMS: https://github.com/openvinotoolkit/model_server/tree/main/demos/continuous_batching/speculative_decoding
+- Documentación de OVMS baremetal: https://docs.openvino.ai/ovms_baremetal

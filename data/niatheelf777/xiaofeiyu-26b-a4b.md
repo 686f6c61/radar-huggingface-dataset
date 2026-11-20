@@ -2,101 +2,86 @@
 
 ## Resumen
 
-Xiaofeiyu-26b-a4b es un adaptador LoRA (PEFT) publicado por el usuario niatheelf777 sobre el modelo base `google/gemma-4-26B-A4B-it`, un transformer MoE de Google con 26.000 millones de parametros totales y aproximadamente 4.000 millones activos por token. El adaptador no es un modelo completo: el repositorio contiene unicamente los pesos del adaptador (7.204.864 parametros, 0,1 GB), que deben combinarse con el modelo base para su uso. Su proposito declarado es inyectar un conjunto de cuatro "personalidades" conversacionales (cartuchos) combinables linealmente mediante cinco sliders en tiempo de inferencia.
+Xiaofeiyu 26B-A4B es un archivo experimental publicado por el desarrollador independiente niatheelf777, derivado del modelo base google/gemma-4-26B-A4B-it mediante una migración de arquitectura MoE y la aplicación de varios cartuchos LoRA orientados a roleplay y conversación con persona. El repositorio se distribuye exclusivamente en formato GGUF y conserva los artefactos generados durante la verificación de la migración: tres cuantizaciones dinámicas creadas con `llama-imatrix` y cinco adaptadores LoRA en GGUF (un núcleo de voz y cuatro cartuchos de estilo).
 
-La innovacion tecnica que declara el autor es una "Split-Phase Token-Gated Inference": el adaptador se desactiva (LoRA = 0.0) durante el razonamiento y la generacion de codigo, y se activa (LoRA = w) unicamente dentro de los delimitadores de burbuja de dialogo `<|"|>`. Segun la model card, esto preserva la generacion de codigo (`GEN1..5` con 5/5) y la precision de la herramienta `calc_python` del modelo base, al tiempo que acelera la decodificacion en un solo stream hasta 192-233 tok/s con 3.800 millones de parametros activos por token.
+El propio autor lo marca explícitamente como un archivo de validación de arquitectura y no recomienda su uso diario: no ha pasado por un proceso de ajuste conversacional ni de pruebas de interacción prolongada. Para conversación y despliegue local, el autor redirige a su modelo principal `niatheelf777/xiaofeiyu-12b-v4`. Por tanto, la relevancia de este repositorio es fundamentalmente reproducibilidad e inspección técnica, no producción.
 
-El modelo esta etiquetado para chino (zh) e ingles (en), con licencia Apache 2.0 para el adaptador, aunque el uso del modelo base queda sujeto a los Terminos de Uso de Gemma de Google. Es relevante como ejemplo de composicion modular de comportamiento mediante LoRA sobre una arquitectura MoE, pero conviene tratarlo con cautela: el repositorio no tiene descargas ni likes, no publica benchmarks y parte de un modelo base cuya existencia no esta verificada de forma independiente en la informacion disponible.
+El modelo hereda la licencia Gemma del modelo base, soporta chino e inglés y está pensado para generación de texto con pipeline `text-generation` sobre llama.cpp. El repositorio ocupa 38,5 GB en total y acumula 1861 descargas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (PEFT) sobre transformer MoE `google/gemma-4-26B-A4B-it` |
-| Parametros totales | 7.204.864 (adaptador); modelo base: 26B |
-| Parametros activos | 3,8B por token (modelo base MoE, segun model card) |
+| Arquitectura | MoE (migración desde google/gemma-4-26B-A4B-it); detalles internos no disponibles |
+| Parametros totales | 24.829.952 según safetensors del repo; el nombre del modelo indica 26B, discrepancia no aclarada en la model card |
+| Parametros activos | 4B (indicado por el sufijo A4B del nombre); no confirmado en la documentación |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF (tag del repo); niveles concretos no disponibles |
-| Idiomas soportados | zh, en |
-| Licencia | Apache 2.0 (adaptador); modelo base sujeto a Gemma Terms of Use |
-| Formato de pesos | safetensors (PEFT) y GGUF |
-| Modulos adaptados | capas superiores no-QKV (output/MLP); 0 modulos Q/K/V |
-| Cartuchos de personalidad | 4 (`c1_neko_clingy`, `c2_older_tease`, `c3_brat_mesugaki`, `c4_fragile_porcelain`) |
-| Mezcla en runtime | 5 sliders lineales (`w0..w4`) via `model="xiaofeiyu-v4|w0,w1,w2,w3,w4"` |
-| Libreria | peft |
-| Tamano del repo | 0,1 GB |
+| Tipos de cuantizacion | GGUF dinámicos: UD-Q4_K_XL-xfy, UD-IQ4_XS-xfy, UD-IQ3_M-xfy; LoRA en GGUF |
+| Idiomas soportados | chino (zh), inglés (en) |
+| Licencia | gemma (Gemma Terms of Use) |
+| Formato de pesos | GGUF (modelo y LoRA); no se publican safetensors del modelo fusionado |
 
 ## Arquitectura y entrenamiento
 
-El adaptador se aplica sobre un transformer con mezcla de expertos (MoE) del que la model card indica 26B de parametros totales y 3,8B activos por token. La inyeccion LoRA se limita a modulos de salida y MLP de las capas superiores, excluyendo explicitamente los modulos Q/K/V (0 modulos adaptados de atencion), con el objetivo declarado de preservar la coherencia de la cache KV hibrida local/global del modelo base. El repositorio incluye ademas pesos en formato GGUF, lo que sugiere un flujo de conversion para inferencia en llama.cpp u Ollama, aunque no se detallan los niveles de cuantizacion ni el procedimiento.
+El repositorio parte de google/gemma-4-26B-A4B-it, un transformer con mezcla de expertos (MoE) según la nomenclatura del modelo base, y documenta un proceso de migración de arquitectura hacia el esquema 26B-A4B. Sobre esa base se aplican cinco adaptadores LoRA en formato GGUF organizados en slots: un núcleo de voz (`s0_xiaofeiyu_backbone.gguf`, también publicado como `s0_xiaofeiyu_26b_a4b.gguf`) y cuatro cartuchos de estilo (`c1_neko_clingy`, `c2_older_tease`, `c3_brat_mesugaki`, `c4_fragile_porcelain`). El orden de slots y la revisión base quedan fijados en `lora_gguf_manifest.json`.
 
-La innovacion principal es el "Split-Phase Token-Gated Inference": un mecanismo de compuerta por token que mantiene el LoRA a peso cero durante las fases de razonamiento y codigo, y lo activa solo dentro de los delimitadores `<|"|>` propios del dialogo. Segun el autor, esto conserva las capacidades del modelo base (generacion de codigo `GEN1..5` con 5/5 y la herramienta `calc_python`) y permite una decodificacion de 192-233 tok/s. La composicion de comportamiento se realiza mediante mezcla lineal convexa de cuatro cartuchos de personalidad en tiempo de inferencia. No se dispone de informacion sobre el volumen de datos de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni la metodologia de evaluacion.
+No se especifican en la model card el número de tokens de entrenamiento, la composición del dataset, ni si hubo RLHF o DPO. Las cuantizaciones se generaron con `llama-imatrix` en modo dinámico, lo que implica una calibración por capas orientada a preservar calidad en los rangos bajos. El autor describe el conjunto como una verificación de arquitectura sin pulido conversacional, por lo que no consta un proceso de ajuste fino orientado a calidad de diálogo.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno en chino e ingles.
-- Razonamiento y generacion de codigo heredados del modelo base, con el adaptador desactivado durante estas fases (`GEN1..5` reportado como 5/5).
-- Tool calling: la model card menciona precision preservada en la herramienta `calc_python`.
-- Composicion de personalidad en runtime mediante cinco sliders lineales sobre cuatro cartuchos.
-- Conmutacion condicionada por token entre comportamiento base y comportamiento adaptado (split-phase gating).
-- Capacidades multimodales, de vision o audio: no disponibles en la informacion proporcionada.
-- Modo de razonamiento explicito (thinking mode): no disponible en la informacion proporcionada.
+- Generación de texto conversacional en chino e inglés.
+- Roleplay y adopción de persona mediante los cartuchos LoRA de estilo (clingy, tease, brat, fragile).
+- Composición modular de personalidad: núcleo de voz más un cartucho de estilo seleccionable por slot.
+- Inferencia local vía llama.cpp con presets de lanzamiento (`--preset 26b-a4b`, `26b-a4b-iq4xs`, `26b-a4b-12g`, `26b-a4b-q8`).
+- Soporte de tool calling, agentes, visión, audio o modo thinking: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Prototipado de personajes conversacionales: el sistema de cinco sliders permite generar variantes de tono (sumiso, burlon, tsundere, fragil) sin reentrenar, ajustando los pesos `w0..w4` en cada peticion.
-- Evaluacion de mezcla de comportamientos: util para investigar como afecta la interpolacion lineal de adaptadores LoRA a la coherencia y consistencia de un chatbot sobre un mismo backbone.
-- Asistentes de chat en chino e ingles: el modelo cubre ambos idiomas y el adaptador se activa solo en los turnos de dialogo, manteniendo el resto del pipeline en el modelo base.
-- Integracion en pipelines con tool calling: al preservar la herramienta `calc_python` del modelo base, puede usarse en flujos que combinen conversacion y calculo estructurado.
-- Despliegue ligero del adaptador: con 0,1 GB de pesos, permite distribuir variantes de personalidad como artefactos pequenos sobre un unico modelo base compartido, reduciendo coste de almacenamiento.
-- Investigacion sobre gating por token: el mecanismo split-phase es un caso de estudio para separar fases de razonamiento y dialogo en un mismo modelo sin degradar tareas de codigo.
+- Reproducción de experimentos de migración MoE: el repositorio conserva checksums SHA256 de cada artefacto, lo que permite verificar la integridad de las cuantizaciones y los LoRA al replicar el pipeline.
+- Investigación sobre composición multi-LoRA en llama.cpp: los cinco adaptadores en GGUF con manifiesto de slots sirven para estudiar cómo se combinan núcleo y estilos sin reentrenar el modelo base.
+- Evaluación de cuantizaciones dinámicas con imatrix: los tres GGUF (Q4_K_XL, IQ4_XS, IQ3_M) permiten medir la degradación de calidad entre ~9,7 GB y ~14,3 GB sobre el mismo checkpoint.
+- Pruebas de despliegue en VRAM limitada: la variante UD-IQ3_M (~9,7 GB) encaja en GPUs de 12 GB, útil para validar presets de lanzamiento en hardware de consumo.
+- Estudio de adaptación de personajes conversacionales en chino: los cartuchos de estilo documentan un enfoque de persona parametrizada por slot, aplicable a investigación sobre control de estilo.
+- Base para experimentos de roleplay en entornos de laboratorio: al no estar pulido para uso diario, es adecuado para pruebas controladas de coherencia multi-turno, no para usuarios finales.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Resultado declarado |
-|---|---|
-| Generacion de codigo `GEN1..5` | 5/5 (segun model card) |
-| Precision de herramienta `calc_python` | preservada (sin cifra) |
-| Throughput de decodificacion single-stream | 192-233 tok/s |
-| Parametros activos por token | 3,8B |
-
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. Las cifras anteriores proceden exclusivamente de la model card del autor y no han sido verificadas de forma independiente.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para el adaptador: despreciable (0,1 GB); el coste real lo determina el modelo base de 26B.
-- Inferencia del modelo base en BF16: aproximadamente 52 GB de VRAM, lo que exige A100 80GB, H100 o configuraciones multi-GPU.
-- Cuantizacion en 8 bits: aproximadamente 26 GB, viable en una RTX 4090 de 24 GB solo con cuantizaciones mas agresivas o offloading.
-- Cuantizacion en 4 bits: aproximadamente 13-15 GB, cabe en RTX 4090, RTX 3090 y GPUs consumer de 16 GB o mas.
-- Opciones de despliegue: vLLM o TGI para el modelo base en precision alta; llama.cpp u Ollama para los pesos GGUF incluidos en el repo.
-- Throughput declarado: 192-233 tok/s en decodificacion single-stream con 3,8B parametros activos por token.
-- Latencia: no disponible.
+- VRAM estimada: ~9,7 GB para UD-IQ3_M, ~14,0 GB para UD-IQ4_XS y ~14,3 GB para UD-Q4_K_XL (tamaños de archivo en bytes según la model card).
+- El preset `26b-a4b-12g` del launcher sugiere que la variante IQ3_M está pensada para GPUs de 12 GB.
+- GPU recomendadas: no disponibles explícitamente; por tamaño de archivo, una RTX 4090 (24 GB) o superior (A100, H100) permite cargar cualquiera de las tres cuantizaciones con margen para contexto.
+- Cabe en GPU de consumo: sí, al menos la variante IQ3_M en 12 GB; las variantes de ~14 GB requieren 16 GB o más.
+- Despliegue: llama.cpp con los presets incluidos en `server/launch_local.py`; no se documenta soporte para vLLM, TGI u Ollama.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| xiaofeiyu-26b-a4b | 7,2M adaptador / 26B base (3,8B activos) | no disponible | Apache 2.0 (adaptador) | safetensors, GGUF | LoRA de personalidad con gating por token |
-| google/gemma-4-26B-A4B-it | 26B (3,8B activos) | no disponible | Gemma Terms of Use | safetensors | Modelo base sin adaptar; referencia de capacidades |
-| Adaptadores LoRA convencionales sobre MoE | variable | heredado del base | segun autor | safetensors | Sin gating por token ni mezcla lineal de cartuchos |
-
-No se dispone de datos de rendimiento comparativo con alternativas de la misma categoria en la informacion proporcionada.
+| xiaofeiyu-26b-a4b (este) | 26B nominales / ~4B activos (MoE) | no disponible | GGUF + LoRA GGUF | gemma | Archivo experimental, sin pulido conversacional |
+| google/gemma-4-26B-A4B-it | 26B / ~4B activos (MoE) | no disponible | safetensors (no confirmado) | gemma | Modelo base oficial; referencia de calidad |
+| niatheelf777/xiaofeiyu-12b-v4 | 12B | no disponible | GGUF (Q8_0, UD-Q4_K_XL-xfy) | gemma | Modelo principal del mismo autor, con pulido conversacional |
+| niatheelf777/xiaofeiyu-translator-e4b | E4B | no disponible | GGUF (~5,3 GiB) | gemma | Variante ligera para traducción y reescritura |
 
 ## Limitaciones y advertencias
 
-- El repositorio no tiene descargas ni likes y fue creado y actualizado en el mismo minuto, lo que sugiere una publicacion sin validacion comunitaria.
-- No se publican benchmarks estandar ni evaluaciones independientes; las cifras de rendimiento provienen solo de la model card.
-- El modelo base `google/gemma-4-26B-A4B-it` no esta verificado de forma independiente en la informacion disponible; conviene confirmar su existencia y disponibilidad antes de usarlo.
-- El adaptador debe combinarse con el modelo base; no es utilizable de forma autonoma.
-- Riesgo de alucinacion inherente al modelo base, no cuantificado.
-- Sesgos conocidos: no disponibles; los cartuchos de personalidad pueden introducir sesgos de genero o de rol no evaluados.
-- Cobertura linguistica limitada a chino e ingles; el rendimiento en castellano no esta documentado.
-- Uso comercial: el adaptador es Apache 2.0, pero el modelo base queda sujeto a los Gemma Terms of Use, que imponen restricciones adicionales.
-- El mecanismo de gating por token depende de delimitadores especificos (`<|"|>`); un formateo incorrecto del prompt puede desactivar o activar el adaptador en fases no deseadas.
-- No hay informacion sobre longitud de contexto, datos de entrenamiento ni metodologia de evaluacion.
+- El autor declara explícitamente que no está recomendado para uso diario: no ha pasado pruebas de interacción ni ajuste conversacional.
+- Discrepancia entre el nombre (26B) y los parámetros reportados en safetensors (24.829.952); conviene verificar antes de dimensionar infraestructura.
+- Solo soporta chino e inglés; no hay evidencia de capacidades multilingües adicionales.
+- No se documentan sesgos, tasas de alucinación ni evaluaciones de seguridad.
+- La licencia Gemma impone las Gemma Terms of Use, con restricciones de uso comercial y obligaciones de atribución; revisar antes de cualquier despliegue.
+- El repositorio mezcla pesos cuantizados y adaptadores LoRA; el uso requiere respetar el orden de slots del manifiesto para evitar resultados incoherentes.
+- No hay soporte documentado para servidores de inferencia de alto rendimiento (vLLM, TGI), lo que limita su uso en producción.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/niatheelf777/xiaofeiyu-26b-a4b
-- Modelo base referenciado: https://huggingface.co/google/gemma-4-26B-A4B-it
-- Terminos de Uso de Gemma: https://ai.google.dev/gemma/terms
+- Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
+- Modelo principal recomendado: https://huggingface.co/niatheelf777/xiaofeiyu-12b-v4
+- Variante traductora: https://huggingface.co/niatheelf777/xiaofeiyu-translator-e4b
+- Repositorio GitHub: https://github.com/niatheelf777/xiaofeiyu
+- Demo online: https://xfy.tospeak.top
+- Gemma Terms of Use: https://ai.google.dev/gemma/terms

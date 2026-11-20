@@ -2,107 +2,108 @@
 
 ## Resumen
 
-SenseNova-Loop-9B-Preview-cmf es la conversion al formato CMF del modelo multimodal SenseNova-Loop-9B-Preview, publicado por el usuario `infosave` y orientado al motor de inferencia `cortiq`, escrito en Rust sin dependencias de Python ni de frameworks de machine learning. El modelo original, de aproximadamente 9.000 millones de parametros, es un transformer con un bloque de decodificador "loopeado": 24 de sus 32 capas se ejecutan dos veces compartiendo pesos, lo que resulta en 56 ejecuciones de capa por token. Incorpora dos flujos residuales con manifold-constrained hyper-connections (mHC) dentro del bucle, atencion hibrida (lineal y completa) y un codificador de vision que procesa imagenes a resolucion nativa.
+SenseNova-Loop-9B-Preview-cmf es la distribucion cuantizada del modelo multimodal SenseNova-Loop-9B-Preview, publicada por el usuario infosave en formato CMF (un contenedor propio del motor de inferencia cortiq, escrito en Rust). El modelo base, desarrollado por sensenova, es un transformer multimodal de aproximadamente 9.000 millones de parametros cuyo decodificador ejecuta dos veces un bloque de 24 capas con pesos compartidos, de modo que cada token atraviesa 56 ejecuciones de capa a partir de 32 capas fisicas. Incorpora dos flujos residuales con manifold-constrained hyper-connections (mHC) dentro del bucle, atencion hibrida (lineal y completa) y un codificador de vision que procesa imagenes a resolucion nativa.
 
-La relevancia de esta publicacion reside en el empaquetado: los pesos se distribuyen como ficheros CMF autocontenidos que incluyen el plan del bucle, los routers mHC en float32 y el procesador de imagenes, de modo que el modelo se ejecuta directamente con `cortiq` sobre GPUs NVIDIA, AMD e Intel mediante Vulkan/DX12, sobre Apple Silicon mediante Metal y sobre CPU. Se ofrecen dos cuantizaciones: `q4tp` (4 bits en el modelo de lenguaje, 16 bits en el codificador visual, 5,62 GB) y `q8_2f` (8 bits, 9,92 GB), ambas bajo licencia Apache-2.0.
+La relevancia de esta publicacion no esta en el modelo en si, sino en el empaquetado: los ficheros CMF permiten ejecutar el modelo con cortiq, un motor sin Python ni frameworks de ML, sobre GPUs NVIDIA (CUDA o Vulkan), AMD e Intel (Vulkan/DX12), Apple Silicon (Metal) y CPU. Se ofrecen dos variantes: `q4tp` (lenguaje en 4 bits, vision en 16 bits, 5,62 GB) y `q8_2f` (lenguaje en 8 bits, vision en 16 bits, 9,92 GB), con perplejidad en wikitext-2 de 13,20 y 13,44 respectivamente.
 
-La ficha describe tanto el modelo base como el artefacto cuantizado, e indica explicitamente cuando un dato no esta disponible en la informacion proporcionada.
+El modelo soporta ingles, chino y ruso, licencia Apache-2.0, y una ventana de contexto no especificada en la informacion disponible. Su interes practico es llevar un modelo multimodal de 9B con atencion hibrida y bucle de capas a hardware de consumo y a plataformas sin soporte CUDA, con un rendimiento medido de 52,4 tok/s de decodificacion en una RTX A5000.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder con bloque loopeado (24 de 32 capas ejecutadas dos veces con pesos compartidos; 56 ejecuciones de capa por token), dos flujos residuales con mHC en el bucle, atencion hibrida lineal/completa, codificador de vision a resolucion nativa |
-| Parametros totales | ~9.000 millones (modelo base SenseNova-Loop-9B-Preview) |
-| Parametros activos | no disponible (no es MoE; el bucle comparte pesos, no activa expertos) |
-| Longitud de contexto | no disponible en la informacion proporcionada |
-| Tipos de cuantizacion | `q4tp` (4 bits en el LM, 16 bits en el codificador visual) y `q8_2f` (8 bits en el LM, 16 bits en el codificador visual) |
-| Idiomas soportados | Ingles (en), chino (zh), ruso (ru) |
+| Arquitectura | Transformer multimodal con decodificador de bucle (looped transformer): bloque de 24 capas ejecutado dos veces con pesos compartidos, 56 ejecuciones de capa sobre 32 capas fisicas; atencion hibrida lineal/completa; mHC (manifold-constrained hyper-connections) con dos flujos residuales; codificador de vision a resolucion nativa |
+| Parametros totales | Aproximadamente 9.000 millones (segun el nombre del modelo base) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | `q4tp` (lenguaje 4 bits, vision 16 bits) y `q8_2f` (lenguaje 8 bits, vision 16 bits); routers mHC en float32; vision encoder ejecutado en float32 |
+| Idiomas soportados | Ingles, chino, ruso |
 | Licencia | Apache-2.0 |
-| Formato de pesos | CMF (contenedor propio del motor `cortiq`); el modelo base original se distribuye en formato no especificado en la informacion disponible |
+| Formato de pesos | CMF (contenedor propio de cortiq); el modelo base original esta en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer multimodal con una innovacion estructural central: el decodificador consta de 32 capas, pero el bloque comprendido entre las capas 4 y 27 (24 capas) se ejecuta dos veces con los mismos pesos, de modo que cada token atraviesa 56 ejecuciones de capa. Dentro del bucle se mantienen dos flujos residuales conectados mediante manifold-constrained hyper-connections (mHC), lo que permite que la informacion circule por dos vias paralelas a lo largo de las pasadas repetidas. La atencion es hibrida, combinando mecanismos lineales y de atencion completa. El codificador de vision procesa imagenes a resolucion nativa con parches de 16x16 pixeles que se fusionan 2x2 en un unico token, admitiendo hasta 16,7 millones de pixeles.
+El decodificador es un transformer con una innovacion estructural central: un bloque de 24 capas que se ejecuta dos veces con los mismos pesos, de forma que cada token pasa por 56 ejecuciones de capa partiendo de 32 capas fisicas. Dentro del bucle se mantienen dos flujos residuales gestionados mediante manifold-constrained hyper-connections (mHC), con routers que se conservan en float32 tal como los publica el autor original. La atencion es hibrida, combinando mecanismos lineales y completos. El codificador de vision procesa imagenes a resolucion nativa, con parches de 16x16 fusionados 2x2 en un token, y admite hasta 16,7 millones de pixeles.
 
-En cuanto al entrenamiento, la informacion proporcionada no detalla el numero de tokens, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. La model card del artefacto cuantizado describe el proceso de conversion: `cortiq convert` genera los ficheros CMF, cuantiza el modelo de lenguaje a `q4tp` o `q8_2f`, conserva los routers mHC en float32 tal como los publica el autor original y mantiene el codificador visual en 16 bits ejecutandose en float32. El plan del bucle (capas 4-27 dos veces, cada pasada con su propia cache) y el procesador de imagenes viajan dentro del fichero. La sampling por defecto del release (temperatura 1.0, top-p 0.95) se incluye como valor por defecto en `run` y `serve`.
+No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO en el modelo base. La model card de esta distribucion se limita a describir el proceso de conversion y cuantizacion realizado con cortiq (`cortiq convert --model sensenova/SenseNova-Loop-9B-Preview --quant q4tp`), que preserva el plan de bucle (capas 4-27 dos veces, cada pasada con su propia cache), los routers mHC y el procesador de imagenes dentro del fichero CMF.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento en ingles, chino y ruso.
-- Comprension de imagenes a resolucion nativa, incluyendo capturas de pantalla, graficos y fotografias; soporta multiples imagenes en una misma peticion (por ejemplo, comparacion entre dos imagenes).
-- Modo "thinking": el modelo razona antes de responder salvo que se use `--no-think`; los tokens de pensamiento cuentan para `--max-tokens`.
-- Generacion de codigo (el ejemplo de la model card incluye la escritura de una funcion Python para fusionar dos listas ordenadas).
-- Lectura de valores en graficos y extraccion de informacion visual estructurada.
-- Servicio compatible con la API de OpenAI mediante `cortiq serve`, con soporte de partes `image_url`.
-- Decodificacion greedy opcional (`--greedy`) ademas de la sampling por defecto.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades de audio: no disponibles.
+- Generacion de texto y razonamiento con modo de pensamiento (thinking) activado por defecto; `--no-think` lo desactiva y los tokens de pensamiento cuentan para `--max-tokens`.
+- Comprension de imagenes y texto (pipeline image-text-to-text): descripcion de imagenes, lectura de graficos, comparacion entre varias imagenes.
+- Entrada de multiples imagenes en una misma peticion (`--image` repetible, con rutas locales, data URLs o URLs HTTP(S)).
+- Procesamiento de imagenes a resolucion nativa, con control del limite de pixeles mediante `--image-max-pixels`.
+- Generacion de codigo (el ejemplo de la model card incluye la escritura de una funcion Python para fusionar listas ordenadas).
+- Soporte multilingue en ingles, chino y ruso.
+- Servidor compatible con la API de OpenAI (`cortiq serve`) con partes `image_url`.
+- Muestreo configurable: temperatura 1.0 y top-p 0.95 por defecto, o decodificacion greedy con `--greedy`.
 
 ## Casos de uso
 
-- Descripcion y analisis de imagenes: el modelo acepta rutas locales, data URLs o URLs HTTP(S) mediante `--image` y describe el contenido; el codificador procesa una imagen de 512x512 en 1,2 s en Apple M4 y responde al primer token en 1,9 s con `cortiq serve` en una A40.
-- Lectura de graficos y tablas en imagenes: con `--image chart.png --prompt "Read the values of the chart."` y `--no-think` se obtiene una extraccion directa de valores, adecuada para pipelines de digitalizacion de documentos.
-- Comparacion de imagenes: el flag `--image` puede repetirse, lo que permite preguntar que ha cambiado entre dos capturas, util en control de calidad visual o seguimiento de cambios en interfaces.
-- Procesamiento de capturas de pantalla de alta resolucion: el codificador admite hasta 16,7 millones de pixeles (una captura de 2206x1048 genera 9108 parches y 2277 tokens de lenguaje), lo que habilita la transcripcion y el analisis de interfaces complejas.
-- Generacion de codigo en local: el ejemplo de la model card escribe una funcion Python para fusionar dos listas ordenadas; con `q4tp` y unos 8 GB de VRAM en Vulkan puede ejecutarse en estaciones de trabajo sin Python ni frameworks de ML.
-- Despliegue en Apple Silicon: con Metal por defecto y 16 GB de memoria unificada, `q4tp` decodifica a 11,1 tok/s y lee un prompt de 512 tokens a 80 tok/s, apropiado para asistentes locales en portatiles Mac.
-- Servicio OpenAI-compatible: `cortiq serve` expone el modelo en el puerto indicado con soporte de `image_url`, lo que permite integrarlo como backend en aplicaciones existentes que ya consumen la API de OpenAI.
-- Ejecucion en CPU sin GPU: con `CMF_GPU=0` el modelo funciona en CPU, opcion util para entornos sin acelerador aunque con latencia no especificada.
+- Descripcion y etiquetado automatico de imagenes en pipelines de gestion de activos digitales: el modelo acepta rutas o URLs y procesa la imagen a resolucion nativa, util para generar metadatos en lote sin depender de CUDA.
+- Lectura de graficos y capturas de pantalla: la model card demuestra la lectura de valores de un grafico (`--image chart.png --prompt "Read the values of the chart."`) y el procesamiento de una captura de 2206x1048 en 5,9 s sobre una A40, adecuado para extraccion de datos de dashboards.
+- Comparacion de imagenes en control de calidad o monitorizacion de cambios: la entrada multiple (`--image a.png --image b.png`) permite preguntar que ha cambiado entre dos capturas, aplicable a diffs visuales en CI o auditoria de interfaces.
+- Asistencia a la programacion en entornos sin Python: al ejecutarse con cortiq sobre Metal, Vulkan o CPU, puede integrarse en flujos de desarrollo en macOS o en estaciones sin GPU NVIDIA para generar y revisar codigo.
+- Despliegue en hardware de consumo: con unos 8 GB de VRAM para `q4tp`, cabe en GPUs de gama media y en Apple Silicon con 16 GB de memoria unificada, lo que permite prototipado local de asistentes multimodales.
+- Servicio de inferencia compatible con OpenAI: `cortiq serve --port 8080` expone el modelo con partes `image_url`, de modo que aplicaciones existentes que usan el cliente de OpenAI pueden apuntar al endpoint sin cambios de codigo.
+- Procesamiento por lotes en CPU: con `CMF_GPU=0` el modelo funciona sin GPU, util para tareas offline donde la latencia no es critica.
 
 ## Benchmarks y rendimiento
 
-La model card proporciona perplejidad sobre los primeros 2048 tokens de wikitext-2 y metricas de rendimiento medidas con `cortiq 0.8.51` en una NVIDIA A40 (48 GB, Vulkan):
+Rendimiento de inferencia medido por el autor (cortiq bench):
 
-| Metrica | q4tp | q8_2f |
-|---|---:|---:|
-| Perplejidad wikitext-2 (2048 tokens) | 13,20 | 13,44 |
-| Decodificacion (tok/s) | 29,1 | 21,3 |
-| Prompt de 2k tokens (tok/s) | 338 | 293 |
-| Decodificacion con contexto de 2k (tok/s) | 27,8 | 20,8 |
-| Tamano del fichero | 5.622.731.597 B (5,62 GB) | 9.919.558.477 B (9,92 GB) |
+| Hardware | Fichero | Decodificacion (tok/s) | Prefill | Notas |
+|---|---|---:|---|---|
+| RTX A5000 (24 GB), CUDA, cortiq 0.8.96 | `q4tp` | 52,4 | 1818 tok/s en prompt de 4096 tokens; primer token 2,25 s | 50,8 tok/s tras el prompt largo |
+| NVIDIA A40 (48 GB), Vulkan, cortiq 0.8.51 | `q4tp` | 29,1 | 338 tok/s en prompt de 2k | 27,8 tok/s a 2k |
+| NVIDIA A40 (48 GB), Vulkan, cortiq 0.8.51 | `q8_2f` | 21,3 | 293 tok/s en prompt de 2k | 20,8 tok/s a 2k |
+| Apple M4, Metal | `q4tp` | 11,1 | 80 tok/s en prompt de 512 tokens | Vision encoder: 1,2 s para 512x512 |
 
-En Apple M4 (Metal), `q4tp` decodifica a 11,1 tok/s y lee un prompt de 512 tokens a 80 tok/s; el codificador visual tarda 1,2 s para una imagen de 512x512. En la A40, el codificador visual tarda 5,9 s para una captura de 2206x1048 (9108 parches, 2277 tokens de lenguaje) y `cortiq serve` responde a una imagen de 512x512 en 1,9 s hasta el primer token.
+Calidad de cuantizacion (perplejidad en los primeros 2048 tokens de wikitext-2):
 
-La model card indica que `q4tp` produce "el mismo contenido, otras palabras" en comparacion con Transformers float32 en decodificacion greedy (una descripcion de imagen de una frase y dos prompts de texto, 48 tokens greedy cada uno), mientras que `q8_2f` coincide exactamente en las tres pruebas. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
+| Fichero | Perplejidad | Equivalencia con el original (greedy) |
+|---|---:|---|
+| `q4tp` | 13,20 | No (mismo contenido, otras palabras) |
+| `q8_2f` | 13,44 | Si, en las tres pruebas |
+
+El autor no publica resultados de benchmarks de capacidad (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: `q4tp` requiere aproximadamente 8 GB de memoria de GPU; `q8_2f` aproximadamente 12 GB.
-- GPUs recomendadas: NVIDIA A40 (48 GB) validada con Vulkan; el motor soporta NVIDIA, AMD e Intel mediante Vulkan/DX12. No se especifican otras GPU concretas en la informacion disponible.
-- Apple Silicon: Metal es el modo por defecto; se necesitan 16 GB de memoria unificada para `q4tp`.
-- CPU: ejecucion posible con `CMF_GPU=0`; latencia no disponible.
-- Cabe en GPU de consumo: si, `q4tp` con ~8 GB encaja en GPUs de consumo con 8 GB o mas de VRAM, aunque la model card no enumera modelos concretos como RTX 4090 o similares.
-- Despliegue: `cortiq` (CLI `cortiq run` y servidor `cortiq serve` compatible con OpenAI); se instala con `cargo install cortiq-cli` y requiere la version 0.8.51 o posterior; hay binarios precompilados para Linux, macOS y Windows.
-- En Linux headless con Vulkan es necesario instalar `libvulkan1 libglvnd0 libegl1 libgl1 libglx0` y definir `XDG_RUNTIME_DIR=/tmp`.
-- Latencia y throughput: 29,1 tok/s de decodificacion y 338 tok/s de prefill en A40 con `q4tp`; 11,1 tok/s de decodificacion en Apple M4. El codificador visual tarda 5,9 s en una captura de alta resolucion en A40 y 1,2 s en una imagen de 512x512 en M4.
+- VRAM estimada: `q4tp` necesita unos 8 GB de memoria de GPU; `q8_2f` unos 12 GB.
+- GPUs NVIDIA: soporte CUDA (probado en RTX A5000 y A40) y Vulkan; compilacion con `cargo install cortiq-cli --features cuda` para el backend CUDA.
+- GPUs AMD e Intel: mediante Vulkan o DX12.
+- Apple Silicon: Metal por defecto; se requieren 16 GB de memoria unificada para `q4tp`.
+- CPU: modo solo CPU con `CMF_GPU=0`.
+- Cabe en GPUs de consumo: si, con `q4tp` en tarjetas de 8 GB o mas (la model card no enumera modelos concretos de consumo).
+- Despliegue: motor cortiq (CLI `cortiq run` y servidor `cortiq serve` compatible con OpenAI); requiere cortiq 0.8.51 o superior, con binarios precompilados para Linux, macOS y Windows. En Linux headless con Vulkan hay que instalar `libvulkan1 libglvnd0 libegl1 libgl1 libglx0` y definir `XDG_RUNTIME_DIR=/tmp`.
+- Latencia y throughput: ver tabla de benchmarks; el vision encoder tarda 5,9 s para una captura de 2206x1048 (9108 parches, 2277 tokens de lenguaje) en una A40, y 1,9 s hasta el primer token para una imagen de 512x512 con `cortiq serve`.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Formato / motor |
+| Modelo | Parametros | Contexto | Multimodal | Licencia | Formato / motor |
 |---|---|---|---|---|---|
-| SenseNova-Loop-9B-Preview-cmf (q4tp) | ~9B | no disponible | 4 bits LM + 16 bits vision | Apache-2.0 | CMF / cortiq |
-| SenseNova-Loop-9B-Preview-cmf (q8_2f) | ~9B | no disponible | 8 bits LM + 16 bits vision | Apache-2.0 | CMF / cortiq |
-| SenseNova-Loop-9B-Preview (base) | ~9B | no disponible | pesos originales | Apache-2.0 | no disponible en la informacion proporcionada |
+| SenseNova-Loop-9B-Preview-cmf (`q4tp`) | ~9B | No disponible | Si (imagen-texto) | Apache-2.0 | CMF / cortiq |
+| SenseNova-Loop-9B-Preview (original) | ~9B | No disponible | Si (imagen-texto) | Apache-2.0 | Safetensors / Transformers |
+| Alternativas de ~9B multimodales | No disponible | No disponible | No disponible | No disponible | No disponible |
 
-No se dispone en la informacion proporcionada de datos de rendimiento ni especificaciones de modelos alternativos de la misma categoria (por ejemplo, otros modelos multimodales de ~9B) que permitan una comparacion cuantitativa. La comparacion se limita a las dos cuantizaciones del propio artefacto y al modelo base.
+La informacion proporcionada no incluye datos de rendimiento ni especificaciones de modelos comparables de la misma categoria, por lo que no es posible establecer una comparativa cuantitativa con alternativas.
 
 ## Limitaciones y advertencias
 
-- La model card no documenta sesgos conocidos del modelo base; al ser un modelo entrenado con datos web, es previsible que herede sesgos de esos datos, aunque no se cuantifican en la informacion disponible.
-- Riesgo de alucinacion: no evaluado en la informacion proporcionada; la perplejidad de 13,20 en wikitext-2 con `q4tp` es un indicador agregado, no una garantia de fidelidad factual.
-- Idiomas: solo se declaran ingles, chino y ruso; no hay soporte declarado de castellano.
-- Contexto: la longitud de contexto no se especifica en la informacion disponible, lo que impide planificar cargas de trabajo con documentos largos.
-- La cuantizacion `q4tp` no reproduce exactamente la salida float32 en decodificacion greedy (mismo contenido, distintas palabras); para paridad exacta debe usarse `q8_2f`, que ocupa 9,92 GB.
-- El artefacto depende del motor `cortiq` (Rust) y del formato CMF; no es directamente cargable con Transformers, vLLM, llama.cpp, Ollama ni TGI segun la informacion disponible.
-- En Linux headless con Vulkan se requieren paquetes del sistema y la variable `XDG_RUNTIME_DIR`; sin ellos el motor puede fallar.
-- Los tokens de "thinking" cuentan para `--max-tokens`, lo que puede truncar respuestas si no se ajusta el limite.
-- Licencia Apache-2.0 permite uso comercial, pero el autor del artefacto no ofrece garantias sobre el modelo base ni sobre el proceso de cuantizacion.
+- La model card no documenta sesgos conocidos del modelo base; al entrenarse con datos web en ingles, chino y ruso, es previsible que herede sesgos de esas fuentes, pero no hay evaluacion publicada en la informacion disponible.
+- Riesgo de alucinacion no cuantificado: no se publican evaluaciones de fidelidad ni de tasas de error en tareas de vision o texto.
+- El modo de pensamiento esta activado por defecto y consume tokens de `--max-tokens`; en produccion conviene usar `--no-think` o ajustar el limite para controlar latencia y coste.
+- Idiomas limitados a ingles, chino y ruso; no hay soporte declarado de castellano, lo que degradara la calidad en ese idioma.
+- La longitud de contexto no esta especificada; el rendimiento de prefill medido se limita a prompts de 4096 tokens.
+- La cuantizacion `q4tp` no reproduce la salida greedy del modelo original (mismo contenido, palabras distintas); para paridad estricta debe usarse `q8_2f`.
+- Dependencia de un motor poco comun (cortiq, en Rust) y de un formato propietario (CMF): no es compatible con vLLM, llama.cpp, Ollama ni TGI, lo que limita la integracion en stacks existentes.
+- El vision encoder se ejecuta en float32 y conserva 16 bits, por lo que el ahorro de memoria de la cuantizacion afecta solo al modelo de lenguaje.
+- Licencia Apache-2.0 permite uso comercial, pero debe verificarse la licencia y condiciones del modelo base original antes de desplegar en produccion.
 
 ## Enlaces
 
-- Repositorio del artefacto cuantizado: https://huggingface.co/infosave/SenseNova-Loop-9B-Preview-cmf
+- Modelo cuantizado en Hugging Face: https://huggingface.co/infosave/SenseNova-Loop-9B-Preview-cmf
 - Modelo base: https://huggingface.co/sensenova/SenseNova-Loop-9B-Preview
 - Repositorio del formato CMF y del motor cortiq: https://github.com/infosave2007/cmf
 - Binarios precompilados de cortiq: https://github.com/infosave2007/cmf/releases

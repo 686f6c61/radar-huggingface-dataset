@@ -2,95 +2,80 @@
 
 ## Resumen
 
-Heptagram_MMH3 es un adaptador LoRA de texto a imagen publicado por el usuario lynaNSFW en Hugging Face bajo la librería diffusers, con la etiqueta de plantilla `diffusion-lora`. No se trata de un modelo de lenguaje ni de un modelo fundacional completo, sino de un ajuste fino ligero que se aplica sobre un modelo base de difusión identificado en la model card como `neph1/minimax_h3_headmounted_fpv_cam`. El repositorio ocupa 21,0 GB, un tamano inhabitual para un LoRA convencional, lo que sugiere que puede contener pesos completos, multiples checkpoints o artefactos auxiliares; la model card no lo aclara.
+Heptagram_MMH3 es un adaptador LoRA de tipo text-to-image publicado por el usuario lynaNSFW en Hugging Face. Se trata de un ajuste fino ligero (LoRA) pensado para aplicarse sobre el modelo base `neph1/minimax_h3_headmounted_fpv_cam`, un checkpoint de difusion orientado a la generacion de imagenes con perspectiva de camara FPV montada en cabeza. El adaptador se distribuye en formato compatible con la libreria `diffusers` y esta etiquetado con la plantilla `template:diffusion-lora`.
 
-La información publicada por el autor es extremadamente escasa: la model card se limita a un enlace a Civitai, un `instance_prompt` nulo y un widget de ejemplo con el prompt `-`. No se documentan datos de entrenamiento, número de pasos, resolución nativa, rango del adaptador ni parámetros alfa. Tampoco se declara licencia ni idiomas soportados. Cualquier evaluación técnica rigurosa exige, por tanto, descargar los archivos y contrastarlos con el modelo base.
+El modelo deriva de un trabajo artistico previo: la model card remite a la publicacion original "Heptagram" en Civitai y al autor eatyet, lo que indica que este repositorio es una conversion o reempaquetado del LoRA original para su uso con el ecosistema diffusers. El repositorio ocupa 21,0 GB, un tamano considerable para un LoRA que sugiere que el paquete incluye pesos completos del modelo base o multiples variantes de cuantizacion, aunque no se detalla en la informacion disponible.
 
-Su relevancia actual es limitada y acotada al ecosistema de generación de imágenes: sirve como ejemplo de adaptador de estilo o de encuadre publicado sin documentación, y su interés práctico depende enteramente de las capacidades del modelo base sobre el que se monta. El nombre del modelo base (headmounted_fpv_cam) apunta a un caso de uso de cámara en primera persona, pero esto es una inferencia a partir del identificador y no está confirmado en la información disponible.
+La relevancia de este modelo es acotada: se trata de un adaptador de nicho para estilizacion visual concreta, sin documentacion tecnica publicada, sin benchmarks y con una licencia no especificada. Resulta util para quienes ya trabajan con el checkpoint base `minimax_h3_headmounted_fpv_cam` y quieran incorporar el estilo Heptagram, pero no constituye una opcion generalista ni un modelo autonomo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptador LoRA sobre un modelo de difusión texto-imagen (modelo base: `neph1/minimax_h3_headmounted_fpv_cam`); arquitectura del base no especificada en la información disponible |
-| Parametros totales | no disponible (el repositorio ocupa 21,0 GB, pero no se detalla la composición de los pesos) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no aplica (modelo de imagen); resolución y ventana de tokens del codificador de texto no disponibles |
+| Arquitectura | LoRA (adaptador de bajo rango) sobre modelo de difusion text-to-image; arquitectura del base no disponible |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (no aplica a modelos de difusion en el sentido de LLM) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (el idioma de los prompts depende del codificador de texto del modelo base) |
+| Idiomas soportados | no disponible (el prompt de instancia figura como `null`) |
 | Licencia | no disponible |
-| Formato de pesos | no disponible; repositorio compatible con diffusers (etiqueta `diffusers`, plantilla `diffusion-lora`) |
-| Tamano del repositorio | 21,0 GB |
-| Pipeline declarado | text-to-image |
-| Prompt de instancia | null (no definido por el autor) |
+| Formato de pesos | compatible con `diffusers` (safetensors presumiblemente, no confirmado); tamano del repo 21,0 GB |
 
 ## Arquitectura y entrenamiento
 
-La única información arquitectónica disponible es la etiqueta `template:diffusion-lora` y la referencia al modelo base `neph1/minimax_h3_headmounted_fpv_cam`. Esto implica un esquema de bajo rango (LoRA) inyectado en las capas de atención o de proyección de un modelo de difusión preentrenado, cuyos pesos permanecen congelados. El repositorio no incluye información sobre el rango (`rank`), el valor de `alpha`, las capas objetivo ni el optimizador empleado.
+La informacion disponible no detalla la arquitectura interna del adaptador ni del modelo base. Por las etiquetas (`lora`, `template:diffusion-lora`, `diffusers`, `text-to-image`) se deduce que se trata de una Low-Rank Adaptation aplicada sobre un modelo de difusion, presumiblemente un UNet o un transformer de difusion, aunque no se especifica cual. El modelo base declarado es `neph1/minimax_h3_headmounted_fpv_cam`, del que tampoco se aportan detalles arquitectonicos en la informacion proporcionada.
 
-No se han publicado datos sobre el conjunto de entrenamiento: ni número de imágenes, ni número de pasos, ni resolución, ni técnica de regularización, ni si se emplearon captions automáticos o manuales. Tampoco hay referencia a Refiner, a etapas de RLHF/DPO (no aplicables habitualmente en difusión) ni a innovaciones técnicas como muestreo especulativo o atención lineal. La ausencia de un `instance_prompt` funcional impide reproducir el entrenamiento tal como está documentado.
+No se han publicado datos sobre el conjunto de entrenamiento, el numero de pasos, la resolucion de las imagenes de entrenamiento, el rango del LoRA, el learning rate ni si se emplearon tecnicas como regularizacion por clase o captioning automatico. El `instance_prompt` figura como `null`, lo que impide conocer la palabra o frase de activacion del estilo. Tampoco hay informacion sobre si el adaptador se entreno con RLHF, DPO u optimizacion preferencial, algo por otra parte inusual en LoRA de difusion.
 
 ## Capacidades
 
-- Generación de imágenes a partir de prompts de texto, condicionada por el adaptador y por el modelo base.
-- Reproducción del estilo o del encuadre aprendido por el LoRA, presumiblemente asociado al concepto representado en el conjunto de entrenamiento (no documentado).
-- Composición con el modelo base mediante carga en diffusers, lo que permite apilarlo o desactivarlo con un factor de escala.
-- Compatibilidad potencial con herramientas del ecosistema (ComfyUI, Automatic1111/Forge, InvokeAI) si el formato final de los pesos es el estándar del base; no confirmado.
-- Soporte de tool calling / function calling: no disponible (no es una capacidad de un modelo de difusión).
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no documentadas.
-- Capacidades especiales (modo thinking, visión, audio): no disponibles.
+- Generacion de imagenes text-to-image mediante el pipeline de `diffusers`, aplicando el estilo Heptagram sobre el checkpoint base.
+- Estilizacion visual: al ser un LoRA, modula el estilo del modelo base sin sustituirlo, permitiendo combinarlo con otros adaptadores si el pipeline lo admite.
+- Perspectiva FPV: hereda del modelo base `minimax_h3_headmounted_fpv_cam` la orientacion a imagenes con punto de vista de camara montada en cabeza, segun la denominacion del checkpoint.
+- No se documenta soporte de tool calling, function calling, agentes ni razonamiento multi-paso (no aplica a un modelo de difusion).
+- Capacidades multilingues: no disponibles; el prompt de instancia esta vacio y no se especifican idiomas.
+- No se documentan modos especiales como thinking mode, vision de entrada, audio ni control estructural (ControlNet, IP-Adapter, etc.).
 
 ## Casos de uso
 
-- Exploración de estilo en producción gráfica: cargar el LoRA junto al modelo base en diffusers y aplicar pesos entre 0,5 y 0,8 para modular la intensidad del efecto sin reentrenar; útil para equipos que ya trabajan con el base `minimax_h3_headmounted_fpv_cam`.
-- Previsualización de encuadres en primera persona: si se confirma que el adaptador está orientado a tomas FPV (inferencia a partir del nombre del modelo base, no confirmada), podría emplearse para generar storyboards de cámara subjetiva en cine o publicidad.
-- Generación de arte conceptual para videojuegos: producir variaciones de un concepto visual concreto para iterar sobre dirección artística antes de modelar en 3D.
-- Creación de datasets sintéticos: usar el LoRA para ampliar un conjunto de imágenes de un dominio específico destinado a entrenar otros modelos de visión por computador, siempre que la licencia del base lo permita.
-- Pruebas de integración en pipelines de difusión: servir como caso de prueba para validar la carga de adaptadores en infraestructuras propias (servicios tipo ComfyUI API, Replicate o contenedores con diffusers).
-- Investigación sobre adaptadores de bajo rango: analizar el efecto del LoRA sobre el modelo base mediante métricas objetivas (CLIP score, similitud perceptual) y estudios de ablación del factor de escala.
-- Publicación de demos en plataformas de modelos: el enlace a Civitai indica que el autor distribuye el modelo en ese circuito, por lo que puede utilizarse como ejemplo de formato de publicación cruzada entre Hugging Face y Civitai.
+- Ilustracion de estilo consistente: usar el LoRA junto al checkpoint base para generar una serie de imagenes con una estetica homogenea, aprovechando que el adaptador fija el estilo Heptagram sin reentrenar el modelo completo.
+- Prototipado visual para videojuegos o narrativa grafica: generar conceptos de escena con perspectiva FPV para previsualizar encuadres antes de producir assets definitivos.
+- Exploracion artistica personal: artistas que ya trabajan con `neph1/minimax_h3_headmounted_fpv_cam` pueden incorporar el adaptador para variar el acabado sin cambiar de pipeline.
+- Generacion de imagenes para moodboards: producir lotes rapidos de referencias estilisticas que sirvan de base para direccion de arte.
+- Investigacion sobre LoRA de difusion: como caso de estudio de adaptadores de bajo rango publicados sin model card detallada, util para analizar practicas de publicacion y reempaquetado en Hugging Face.
+- Integracion en pipelines `diffusers` existentes: cargar el adaptador con `pipe.load_lora_weights()` en flujos de generacion por lotes ya montados, siempre que el checkpoint base coincida.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye métricas de calidad de imagen (FID, CLIP score, IS), ni comparaciones con otros adaptadores, ni estudios de ablación sobre el factor de escala del LoRA.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- El adaptador no puede ejecutarse de forma aislada: requiere descargar y cargar el modelo base `neph1/minimax_h3_headmounted_fpv_cam` completo, cuyo tamano y arquitectura no están documentados.
-- VRAM estimada para inferencia: no disponible, al depender del modelo base. Como referencia, un base tipo SDXL necesita del orden de 8-12 GB en fp16 con optimizaciones; un base tipo FLUX.1 requiere 16-24 GB. Estas cifras son estimaciones genéricas del ecosistema y no están confirmadas para este modelo.
-- GPU recomendadas: no disponibles. Si el base es de escala SDXL, una RTX 4090 (24 GB) o una RTX 4080 (16 GB) serían suficientes; para un base de mayor tamano harían falta A100 40/80 GB o H100.
-- Cabe en GPU de consumo: probablemente sí en el rango de 8-16 GB si el base es del orden de SDXL; no confirmado.
-- El repositorio de 21,0 GB implica un coste de descarga y almacenamiento considerable, muy superior al de un LoRA habitual (decenas o cientos de MB); conviene revisar el árbol de archivos antes de desplegarlo.
-- Opciones de despliegue: diffusers (declarado por la librería), y previsiblemente ComfyUI o scripts basados en `StableDiffusionPipeline`/`DiffusionPipeline` según el base; vLLM, llama.cpp, Ollama y TGI no aplican a modelos de difusión.
+- VRAM estimada para inferencia: no disponible; depende enteramente del modelo base `neph1/minimax_h3_headmounted_fpv_cam`, cuyas especificaciones no se detallan.
+- GPU recomendadas: no disponibles; al tratarse de un LoRA sobre difusion, el requisito real lo marca el checkpoint base.
+- Compatibilidad con GPU de consumo: no confirmada; el tamano del repositorio (21,0 GB) sugiere que el paquete incluye pesos de gran volumen, lo que puede requerir VRAM considerable o descarga completa del base.
+- Opciones de despliegue: `diffusers` (libreria declarada); no se confirma soporte de `vLLM`, `llama.cpp`, `Ollama` ni `TGI`, que ademas no aplican a modelos de difusion en su forma habitual.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Heptagram_MMH3 | LoRA de difusión texto-imagen | no disponible (repo de 21,0 GB) | no disponible | no disponible | Hugging Face y Civitai (enlace en la model card) |
-| Adaptador LoRA genérico sobre SDXL | LoRA de difusión | adaptador de bajo rango; base de ~2,6 mil millones de parametros (referencia general del ecosistema) | 1024x1024 nativo en el base | habitualmente abiertas, variable por autor | amplia en Hugging Face y Civitai |
-| Adaptador LoRA genérico sobre FLUX.1 | LoRA de difusión | base de ~12 mil millones de parametros (referencia general del ecosistema) | hasta ~2 MP en el base | FLUX.1 dev con licencia no comercial; schnell Apache 2.0 | amplia en Hugging Face |
-
-No se dispone de datos de rendimiento comparado para Heptagram_MMH3, por lo que la comparación se limita a categoria, licencia y disponibilidad. Las cifras de parametros de SDXL y FLUX.1 corresponden a conocimiento general del ecosistema y no a la información proporcionada sobre este modelo.
+No disponible. La informacion proporcionada no incluye modelos comparables de la misma categoria (LoRA de difusion con perspectiva FPV) ni datos de rendimiento que permitan una comparacion objetiva.
 
 ## Limitaciones y advertencias
 
-- Documentación prácticamente inexistente: sin `instance_prompt`, sin detalles de entrenamiento y sin licencia declarada, lo que impide determinar si el uso comercial está permitido.
-- Licencia no disponible: en ausencia de términos explícitos, no debe asumirse permiso de uso comercial; hay que contactar con el autor o consultar la ficha de Civitai.
-- El nombre de la cuenta (`lynaNSFW`) y el enlace a Civitai sugieren contenido para adultos; es imprescindible verificar la naturaleza del dataset y aplicar las políticas de contenido correspondientes antes de integrarlo en productos.
-- El enlace de la model card apunta al dominio `civitai.red`, no al dominio oficial `civitai.com`; conviene comprobar que la URL es legítima antes de descargar artefactos desde ella.
-- Riesgo de sobreajuste y de reproducción de sesgos del conjunto de entrenamiento, no evaluado por el autor.
-- El repositorio de 21,0 GB no es coherente con el tamano típico de un LoRA; puede contener checkpoints duplicados, pesos completos del base o archivos ajenos al adaptador, con el consiguiente riesgo de espacio y de confusión en el despliegue.
-- La fecha de creación registrada (2026-10-20) es anómala y sugiere metadatos inconsistentes o generados automáticamente; no debe tomarse como referencia de versionado.
-- Sin información sobre el modelo base (`minimax_h3_headmounted_fpv_cam`): se desconoce su licencia, su calidad y su resolución nativa, lo que condiciona cualquier uso en producción.
-- Los resultados de búsqueda web asociados no contienen información sobre el modelo (son resultados no relacionados sobre registros médicos y perfiles personales), por lo que no aportan datos verificables.
+- Licencia no especificada: no se puede confirmar si el uso comercial esta permitido; conviene contactar con el autor antes de integrarlo en produccion.
+- Ausencia de model card tecnica: no hay informacion sobre dataset de entrenamiento, hiperparametros ni rango del LoRA, lo que dificulta reproducir o auditar el adaptador.
+- Dependencia estricta del modelo base: el adaptador esta vinculado a `neph1/minimax_h3_headmounted_fpv_cam`; usarlo con otro checkpoint puede degradar resultados o no funcionar.
+- `instance_prompt` vacio (`null`): no se conoce la palabra de activacion, lo que puede complicar la invocacion consistente del estilo.
+- Riesgo de sesgos y alucinacion visual: al no documentarse el dataset, no es posible evaluar sesgos de representacion ni la fidelidad del estilo en dominios no vistos.
+- Tamano del repositorio elevado (21,0 GB): puede implicar descargas lentas y almacenamiento considerable, ademas de ambiguedad sobre que contiene exactamente el paquete.
+- Origen derivado: el propio autor remite a una publicacion original en Civitai de otro creador (eatyet); verificar los terminos de la obra original antes de redistribuir.
+- Sin garantias de mantenimiento: la ultima actualizacion data de 2026-11-01 y no hay indicios de soporte continuado.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/lynaNSFW/Heptagram_MMH3
 - Modelo base: https://huggingface.co/neph1/minimax_h3_headmounted_fpv_cam
-- Ficha en Civitai (enlace incluido en la model card): https://civitai.red/models/2977879/heptagram?modelVersionId=3375497
-- Repositorio oficial de Civitai (referencia del dominio): https://civitai.com
-- Documentación de diffusers para LoRA: https://huggingface.co/docs/diffusers
+- Autor original en Hugging Face: https://huggingface.co/eatyet
+- Publicacion original en Civitai: https://civitai.com/models/2977879/heptagram
+- Version del modelo en Civitai (redirigido): https://civitai.red/models/2977879/heptagram?modelVersionId=3375497

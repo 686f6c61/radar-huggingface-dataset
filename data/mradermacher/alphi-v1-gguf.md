@@ -2,51 +2,49 @@
 
 ## Resumen
 
-Alphi-v1 es un modelo de lenguaje conversacional desarrollado por RyzovaTech, distribuido originalmente en formato transformers y cuantizado a GGUF por mradermacher. El modelo se presenta bajo los tags "matrix-memory" y "growing-brain", lo que sugiere un enfoque de memoria estructurada y crecimiento progresivo del conocimiento, aunque la model card no detalla la implementacion tecnica concreta de estas caracteristicas. Con 4.628.569.635 parametros totales (aproximadamente 4,6 mil millones), se situa en la categoria de modelos compactos aptos para despliegue local.
+Alphi-v1 es un modelo de lenguaje conversacional desarrollado por RyzovaTech, distribuido originalmente en formato transformers y cuantizado a GGUF por mradermacher. Con 4.628.569.635 parámetros (aproximadamente 4,6 mil millones), se posiciona en el segmento de modelos compactos aptos para despliegue local. La model card lo etiqueta con descriptores como "local-first", "matrix-memory" y "growing-brain", y lo asocia a la familia "gemma4", lo que sugiere una arquitectura derivada o inspirada en la familia Gemma.
 
-La relevancia de esta ficha radica en que Alphi-v1 se distribuye como un modelo "local-first" con cuantizaciones GGUF estaticas que van desde Q2_K hasta Q8_0, ademas de un componente multimodal (mmproj) que sugiere capacidades de vision. El modelo base es RyzovaTech/Alphi-v1 y esta etiquetado con "gemma4", lo que indica que su arquitectura deriva de la familia Gemma 4 de Google.
+El modelo está diseñado para uso conversacional y soporta únicamente inglés (en) y sinhala (si), una combinación poco habitual que lo hace relevante para aplicaciones dirigidas al mercado de Sri Lanka. La cuantización GGUF realizada por mradermacher incluye un espectro amplio de tipos (desde Q2_K hasta f16) y suplementos multimodales mmproj, lo que indica capacidades de visión en el modelo base.
 
-La licencia es un punto critico: se distribuye bajo "ryzova-alphi-v1-mixed-components", una licencia personalizada de componentes mixtos que requiere revision del documento LICENSING.md antes de cualquier uso comercial. Los idiomas declarados son ingles (en) y sinhala (si), lo que limita su aplicabilidad directa en castellano sin evaluacion adicional.
+La relevancia actual de esta ficha radica en que permite evaluar rápidamente un modelo pequeño, multilingüe (en/si) y con supuestas capacidades de memoria matricial, disponible en formatos optimizados para inferencia local en hardware de consumo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer derivado de Gemma 4 (segun tag "gemma4"); detalles no disponibles |
-| Parametros totales | 4.628.569.635 |
+| Arquitectura | no disponible (etiquetado como "gemma4" en los tags; probablemente transformer derivado de Gemma) |
+| Parametros totales | 4.628.569.635 (~4,6 B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS, mmproj-Q8_0, mmproj-f16 |
-| Idiomas soportados | en (ingles), si (sinhala) |
-| Licencia | ryzova-alphi-v1-mixed-components (other) |
+| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K; suplementos mmproj en Q8_0 y f16 |
+| Idiomas soportados | en (inglés), si (sinhala) |
+| Licencia | ryzova-alphi-v1-mixed-components (licencia "other", con enlace a LICENSING.md) |
 | Formato de pesos | safetensors (original), GGUF (cuantizado) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible indica que Alphi-v1 es un transformer derivado de la familia Gemma 4, con 4.628.569.635 parametros. Los tags "matrix-memory" y "growing-brain" sugieren mecanismos de memoria estructurada y actualizacion progresiva del conocimiento, pero la model card no proporciona detalles sobre como se implementan ni que ventajas tecnicas aportan frente a un transformer convencional. Tampoco se especifica si emplea atencion lineal, decodificacion especulativa u otras innovaciones.
+No se dispone de información detallada sobre la arquitectura interna en la documentación proporcionada. Los tags del modelo incluyen "gemma4", lo que apunta a una base arquitectónica de la familia Gemma, presumiblemente un transformer decoder-only. Los descriptores "matrix-memory" y "growing-brain" sugieren innovaciones propietarias en la gestión de memoria o en mecanismos de expansión del modelo, pero no se especifica su funcionamiento técnico.
 
-No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o ajuste por instrucciones. La presencia de un componente multimodal (mmproj) en la distribucion GGUF indica que el modelo base incorpora alguna forma de procesamiento visual, pero no se detalla la arquitectura del encoder ni los datos multimodales utilizados. El tag "fp16" en el modelo original sugiere que los pesos se publicaron en precision media.
+Tampoco se documentan el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o instrucción supervisada. El modelo incluye suplementos multimodales (mmproj), lo que implica que el modelo base tiene capacidad de procesamiento visual, aunque no se detalla el codificador visual empleado.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el tag "conversational" indica que el modelo esta optimizado para dialogos multi-turno.
-- Procesamiento multimodal: la presencia de archivos mmproj (Q8_0 y f16) en la distribucion GGUF sugiere capacidad de entrada de imagenes, aunque no se detalla el alcance.
-- Memoria matricial y "growing brain": mecanismos declarados por el autor para gestionar y expandir el conocimiento, sin documentacion tecnica disponible.
-- Soporte multilingue limitado a ingles y sinhala.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Modo thinking: no disponible en la informacion proporcionada.
-- Capacidades de codigo y matematicas: no disponible en la informacion proporcionada.
+- Generación de texto conversacional en inglés y sinhala.
+- Procesamiento multimodal: la presencia de ficheros mmproj (Q8_0 y f16) indica soporte de entrada de imágenes en el modelo base.
+- Memoria matricial ("matrix-memory") y crecimiento ("growing-brain") según los tags del autor, sin documentación técnica adicional.
+- Orientación "local-first": diseñado para ejecución en hardware local.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Modo "thinking" o razonamiento extendido: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Asistencia conversacional en ingles: el modelo puede gestionar dialogos multi-turno gracias a su naturaleza conversacional declarada, adecuado para chatbots de soporte en entornos de habla inglesa.
-- Despliegue local en estaciones de trabajo: con 4,6 mil millones de parametros y cuantizaciones desde Q2_K, puede ejecutarse en equipos sin GPU dedicada de gama alta mediante llama.cpp u Ollama, lo que encaja con el enfoque "local-first".
-- Procesamiento de documentos con imagenes en ingles: el componente mmproj permite alimentar imagenes junto con texto, util para extraccion de informacion de capturas o formularios en ingles.
-- Prototipado de aplicaciones con memoria persistente: los tags "matrix-memory" y "growing-brain" sugieren que el modelo esta pensado para escenarios donde el contexto y el conocimiento se acumulan entre sesiones, aunque requiere validacion empirica.
-- Investigacion en modelos derivados de Gemma 4: util para estudiar variantes de la familia Gemma 4 con modificaciones de memoria, comparando comportamiento frente al modelo base.
-- Aplicaciones en sinhala: uno de los pocos modelos con soporte declarado de sinhala, adecuado para tareas de generacion de texto en ese idioma, aunque sin benchmarks publicados que lo respalden.
-- Evaluacion de licencias de componentes mixtos: caso de estudio para equipos juridicos y de compliance que necesiten analizar licencias personalizadas en modelos open weight.
+- Asistencia conversacional en inglés y sinhala: el modelo puede gestionar diálogos multi-turno en ambos idiomas, siendo adecuado para aplicaciones de atención al cliente dirigidas al mercado de Sri Lanka donde se requiere alternancia entre inglés y sinhala.
+- Despliegue local en estaciones de trabajo: con cuantizaciones de ~3,1-3,5 GB (Q2_K a Q4_K_M), puede ejecutarse en equipos sin GPU dedicada de gama alta, ideal para prototipos y demos offline.
+- Procesamiento de documentos con imágenes: gracias a los suplementos mmproj, puede emplearse en tareas de descripción de imágenes o extracción de información visual en entornos con recursos limitados.
+- Investigación en modelos multilingües de bajo recurso: su soporte de sinhala lo convierte en un objeto de estudio útil para evaluar el rendimiento de modelos pequeños en lenguas con pocos recursos.
+- Aplicaciones de privacidad estricta: al poder ejecutarse íntegramente en local (formato GGUF con llama.cpp u Ollama), permite procesar datos sensibles sin enviarlos a servicios en la nube.
+- Chatbots embebidos en dispositivos: su tamaño compacto (4,6 B parámetros) y las cuantizaciones de baja precisión permiten integrarlo en dispositivos con memoria limitada para asistentes conversacionales básicos.
 
 ## Benchmarks y rendimiento
 
@@ -54,42 +52,49 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en f16: aproximadamente 9,3 GB solo para pesos (4,63 mil millones de parametros x 2 bytes), mas overhead de contexto y KV cache.
-- VRAM estimada en Q8_0: en torno a 5 GB para pesos; en Q4_K_M: aproximadamente 2,8 GB; en Q2_K: aproximadamente 1,6 GB.
-- GPU recomendadas: para f16, una RTX 4090 (24 GB) o A100/H100 con margen amplio; para Q4_K_M, una RTX 3060 de 12 GB o RTX 4060 Ti de 16 GB es suficiente.
-- Cabe en GPU de consumo: si, en modelos con 8 GB o mas de VRAM usando cuantizaciones Q4 o inferiores; en Q2_K podria ejecutarse en GPUs de 4-6 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; el modelo original en safetensors requiere transformers.
-- Latencia y throughput: no disponible en la informacion proporcionada.
+- VRAM estimada para inferencia (según cuantización):
+  - Q2_K: ~3,1 GB
+  - Q3_K_S / Q3_K_M / Q3_K_L / IQ4_XS: ~3,2-3,4 GB
+  - Q4_K_S / Q4_K_M: ~3,5 GB
+  - Q5_K_S / Q5_K_M: ~3,7 GB
+  - Q6_K: ~3,9 GB
+  - Q8_0: ~5,0 GB
+  - f16: ~9,4 GB
+  - Suplementos mmproj: 0,7 GB (Q8_0) o 1,1 GB (f16), adicionales si se usa visión.
+- GPU recomendadas: no especificadas por el autor. Por tamaño, una RTX 3060 (12 GB) o superior puede alojar cualquier cuantización, incluida f16. Una RTX 4060 Ti (8 GB) cubre hasta Q8_0 con margen.
+- Cabe en GPU de consumo: sí, desde GPUs con 4-6 GB de VRAM para cuantizaciones bajas (Q2_K a Q4_K_M) hasta 8-12 GB para Q8_0 y f16.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF. El formato original safetensors es compatible con transformers.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
-| Alphi-v1 (este modelo) | 4,63 B | no disponible | en, si | ryzova-alphi-v1-mixed-components | safetensors, GGUF |
-| Gemma 2 2B (Google) | 2,6 B | 8K | multilingue | Gemma Terms | safetensors, GGUF |
-| Phi-3-mini (Microsoft) | 3,8 B | 4K-128K | multilingue | MIT | safetensors, GGUF |
-| Qwen2.5-3B (Alibaba) | 3,1 B | 32K | multilingue | Apache 2.0 | safetensors, GGUF |
+| Alphi-v1 (este) | ~4,6 B | no disponible | en, si | ryzova-alphi-v1-mixed-components | safetensors, GGUF |
+| Gemma 2 2B | ~2,6 B | 8K | multilingüe | Gemma license | safetensors, GGUF |
+| Qwen2.5 3B | ~3,1 B | 32K | multilingüe | Apache 2.0 | safetensors, GGUF |
+| Phi-3.5-mini | ~3,8 B | 128K | multilingüe | MIT | safetensors, GGUF |
 
-La comparativa es orientativa: Alphi-v1 declara derivar de Gemma 4, pero no se dispone de datos de contexto, benchmarks ni terminos de licencia comparables directamente. Su principal diferenciador declarado son los mecanismos de memoria ("matrix-memory", "growing-brain") y el soporte de sinhala, ausente en la mayoria de alternativas.
+La comparación se ofrece a título orientativo por rango de tamaño; no se dispone de datos de rendimiento comparativo para Alphi-v1. Alphi-v1 se distingue por su soporte específico de sinhala y sus capacidades multimodales declaradas, pero carece de información pública sobre contexto, benchmarks y licencia clara para uso comercial.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados en la informacion disponible; al derivar de Gemma 4, podria heredar sesgos del modelo base, pero no se confirma.
-- Riesgo de alucinacion: no cuantificado; sin benchmarks ni evaluaciones publicadas, el riesgo es desconocido y debe validarse en produccion.
-- Limitaciones de idioma: solo se declaran ingles y sinhala; el rendimiento en castellano no esta garantizado ni evaluado.
-- Licencia restrictiva: "ryzova-alphi-v1-mixed-components" es una licencia personalizada de componentes mixtos; es obligatorio revisar LICENSING.md antes de cualquier uso comercial o redistribucion.
-- Ausencia de benchmarks: no hay resultados publicados de MMLU, HumanEval, GSM8K ni otras evaluaciones, lo que impide comparar objetivamente con alternativas.
-- Modelo con pocas descargas y likes (0 en el momento de la consulta): baja validacion por parte de la comunidad.
-- La cuantizacion GGUF es estatica y no se ofrecen versiones ponderadas/imatrix, segun indica el cuantizador.
-- El repositorio GGUF ocupa 49,4 GB, lo que incluye todas las variantes; descargar solo el archivo necesario.
-- No se detalla el contexto maximo, lo que complica el dimensionamiento de memoria en produccion.
+- Idiomas limitados: solo inglés y sinhala; no se declara soporte de castellano ni de otras lenguas.
+- Licencia restrictiva e incierta: la licencia "ryzova-alphi-v1-mixed-components" con enlace a LICENSING.md implica componentes con condiciones posiblemente distintas; es imprescindible revisar dicho documento antes de cualquier uso comercial.
+- Falta de transparencia: no se documentan arquitectura exacta, datos de entrenamiento, contexto máximo ni procesos de alineación, lo que dificulta evaluar riesgos de sesgo y alucinación.
+- Riesgo de alucinación: inherente a modelos de este tamaño y sin datos de evaluación públicos que lo cuantifiquen.
+- Capacidades multimodales no verificadas: la presencia de mmproj sugiere visión, pero no se documenta su alcance ni calidad.
+- Sin benchmarks publicados: imposible comparar su rendimiento objetivamente con alternativas.
+- Modelo de nicho: comunidad y soporte reducidos (0 likes, ~1454 descargas en el momento de la consulta), lo que limita la resolución de problemas y la documentación de terceros.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/Alphi-v1-GGUF
+- Hugging Face (GGUF): https://huggingface.co/mradermacher/Alphi-v1-GGUF
 - Modelo base: https://huggingface.co/RyzovaTech/Alphi-v1
 - Licencia del modelo base: https://huggingface.co/RyzovaTech/Alphi-v1/blob/main/LICENSING.md
-- Pagina de descargas del cuantizador: https://hf.tst.eu/model#Alphi-v1-GGUF
-- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
-- Guia de uso de GGUF (referencia TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/Alphi-v1-i1-GGUF
+- Página de descargas del cuantizador: https://hf.tst.eu/model#Alphi-v1-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests

@@ -2,93 +2,91 @@
 
 ## Resumen
 
-Apertus-v1.5-8B-GGUF es una conversión a formato GGUF del modelo Apertus-v1.5-8B desarrollado por Swiss AI (swiss-ai), un consorcio suizo de investigación en inteligencia artificial. El modelo original es un transformer multimodal de 8.609.083.456 parámetros (aproximadamente 8,6 mil millones) publicado bajo licencia Apache 2.0, que forma parte de la familia Apertus 1.5 junto con una variante de 70B. Esta conversión concreta, realizada por el usuario faruk-zahiragic, es una versión exclusivamente de texto que excluye los componentes de visión y audio del modelo original y emplea cuantización Q4_K_M.
+Apertus-v1.5-8B-GGUF es una conversión a formato GGUF del modelo Apertus-v1.5-8B desarrollado por Swiss AI, publicada por el usuario faruk-zahiragic. Se trata de una cuantización Q4_K_M orientada a inferencia local y offline, con soporte multimodal de entrada (texto, imagen y audio) y salida exclusivamente de texto. El paquete incluye además un encoder multimodal separado en precisión F32, necesario para procesar las entradas de imagen y audio.
 
-El modelo base Apertus 1.5 amplía la versión 1.0 con comprensión de imágenes, un modo de razonamiento opcional (thinking mode), una ventana de contexto cuatro veces mayor, mejor seguimiento de instrucciones y un uso de herramientas más robusto. Está diseñado como un modelo de datos y pesos abiertos, globalmente multilingüe y con soporte de entrada multimodal y razonamiento.
+El modelo base cuenta con 8.609.083.456 parámetros (aproximadamente 8,6 mil millones) y se distribuye bajo licencia Apache 2.0. La conversión se realizó con un fork de llama.cpp compatible con la arquitectura Apertus, sobre la revisión `0be762a6` del modelo original. El objetivo es permitir el despliegue en CPU, GPU integrada o GPUs de consumo sin necesidad de hardware dedicado de gama alta.
 
-La relevancia de esta ficha radica en que ofrece una vía de despliegue local y offline del modelo Apertus 1.5 en hardware de consumo, sin necesidad de GPU dedicada, mediante el fork de llama.cpp compatible con Apertus. El repositorio tiene un tamaño de 5,7 GB y el archivo GGUF concreto ocupa 5.656.804.512 bytes.
+Su relevancia actual radica en que ofrece un modelo multimodal de tamano medio con licencia permisiva y pesos cuantizados listos para usar en aplicaciones de escritorio. El repositorio incluye un lanzador nativo para Windows, macOS Apple Silicon y Linux que prepara automáticamente los ficheros necesarios, lo que reduce la fricción de despliegue para desarrolladores que necesitan ejecución local sin conexión.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (modelo base Apertus-v1.5-8B; detalles específicos no disponibles) |
-| Parámetros totales | 8.609.083.456 |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible (el modelo base Apertus 1.5 amplía el contexto de la versión 1.0, pero no se especifica la cifra exacta) |
-| Tipos de cuantización | Q4_K_M (única cuantización publicada en este repo) |
-| Idiomas soportados | no disponibles (el modelo base se describe como «globalmente multilingüe») |
+| Arquitectura | no disponible (modelo base transformer multimodal de Swiss AI) |
+| Parametros totales | 8.609.083.456 |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q4_K_M (fichero de 5.656.804.512 bytes); encoder multimodal en F32 |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Apertus-v1.5-8B es un transformer de aproximadamente 8,6 mil millones de parámetros. La familia Apertus 1.5 se describe como de datos y pesos abiertos, globalmente multilingüe y con soporte de entrada multimodal (imagen) y razonamiento. La versión 1.5 incorpora comprensión de imágenes, un modo de razonamiento opcional, una ventana de contexto cuatro veces mayor que la de Apertus 1.0, mejor seguimiento de instrucciones y mejor uso de herramientas. No se dispone en la información proporcionada del número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base en la documentacion proporcionada. Se sabe que Apertus-v1.5-8B es un modelo multimodal de Swiss AI que acepta entradas de texto, imagen y audio, y que produce salidas de texto. La conversión a GGUF emplea un fork de llama.cpp especificamente adaptado a la arquitectura Apertus, en la revision `442b0444168a0f72788b40a16c8289bd1eb217f5`.
 
-Esta conversión concreta se realizó a partir de la revisión del código fuente `0be762a6` del modelo original, utilizando el fork de llama.cpp compatible con Apertus en el commit `442b0444168a0f72788b40a16c8289bd1eb217f5`. La conversión excluye los componentes de visión y audio del modelo original, por lo que el resultado es un modelo exclusivamente de texto. La cuantización Q4_K_M altera las salidas del modelo respecto al original, y el autor advierte que debe comprobarse la idoneidad para cada tarea.
+El proceso de cuantizacion genera un fichero de lenguaje Q4_K_M y un encoder multimodal independiente en F32 (`apertus-v1.5-8b-mmproj-F32.gguf`, 914.229.792 bytes). El autor indica que los tokenizers del modelo original son sensibles a la precision, de ahi que el encoder se mantenga en F32. No se han publicado en la informacion disponible datos sobre volumen de tokens de entrenamiento, composicion del dataset ni si hubo fases de RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto conversacional (pipeline `text-generation`, etiqueta `conversational`).
-- Razonamiento con modo de pensamiento opcional (thinking mode) heredado del modelo base Apertus 1.5.
-- Uso de herramientas (tool use) mejorado respecto a Apertus 1.0, según las notas del modelo base.
-- Seguimiento de instrucciones mejorado respecto a la versión anterior del modelo base.
-- Capacidades multilingües (el modelo base se describe como globalmente multilingüe).
-- Capacidades multimodales de imagen: presentes en el modelo base, pero excluidas en esta conversión GGUF.
-- Capacidades de audio: presentes en el modelo base, pero excluidas en esta conversión GGUF.
-- Ejecución offline y compatible con endpoints (`endpoints_compatible`), sin requerir GPU dedicada.
+- Generacion de texto conversacional multi-turno.
+- Entrada de imagenes: procesa imagenes mediante el encoder multimodal F32 separado.
+- Entrada de audio: procesa audio mediante el mismo encoder multimodal.
+- Salida exclusivamente de texto (no genera imagen ni audio).
+- Ejecucion completamente offline, sin dependencia de servicios en la nube.
+- Compatibilidad con endpoints (tag `endpoints_compatible`).
+- Soporte de CPU e inferencia con aceleracion de GPU integrada.
+- Capacidad multimodal condicionada: para imagen y audio es necesario descargar ambos ficheros GGUF (lenguaje y encoder); el fichero de lenguaje por si solo solo permite chat de texto.
+- Soporte de tool calling, function calling y agentes: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistente conversacional local: el modelo puede gestionar conversaciones multi-turno en local sin conexión, aprovechando su formato GGUF y su compatibilidad con llama.cpp para entornos con requisitos de privacidad.
-- Despliegue en estaciones de trabajo sin GPU dedicada: gracias al soporte de CPU y aceleración de GPU integrada, puede ejecutarse en equipos con 16 GB de RAM recomendados, lo que lo hace apto para prototipado en portátiles y equipos de sobremesa convencionales.
-- Generación de texto y redacción asistida en pipelines offline: al ser un modelo de texto puro, puede integrarse en flujos de generación de documentación, resúmenes o borradores donde no se requiera multimodalidad.
-- Razonamiento con modo de pensamiento para tareas analíticas: el thinking mode opcional del modelo base permite abordar problemas que requieren pasos intermedios de razonamiento antes de la respuesta final.
-- Integración en aplicaciones con uso de herramientas: el soporte de tool use del modelo base permite construir asistentes que invoquen funciones externas en entornos controlados.
-- Evaluación e investigación de modelos abiertos: al estar bajo Apache 2.0 y con pesos GGUF, sirve para experimentar con cuantización, comparar salidas frente al modelo original y validar el fork de llama.cpp compatible con Apertus.
-- Atención al cliente en entornos air-gapped: la ejecución totalmente offline permite desplegar asistentes en redes aisladas donde no es posible usar APIs en la nube.
+- Asistente de escritorio offline: el modelo puede ejecutarse en Windows, macOS Apple Silicon o Linux mediante el lanzador nativo, gestionando conversaciones de texto sin conexion a internet. Es adecuado por su tamano contenido (Q4_K_M de 5,6 GB) y su licencia permisiva.
+- Procesamiento de documentos escaneados con descripcion textual: combinando el fichero de lenguaje con el encoder F32, el modelo puede recibir imagenes y generar resumenes o descripciones en texto, util en flujos de digitalizacion de archivos.
+- Transcripcion y analisis de audio local: el encoder multimodal permite introducir audio y obtener analisis o respuestas en texto, apropiado para entornos con requisitos de privacidad donde no se puede enviar audio a la nube.
+- Prototipado de aplicaciones multimodales: desarrolladores que necesitan validar pipelines de imagen/audio a texto sin coste de API pueden usar estos pesos GGUF con llama.cpp y el fork compatible.
+- Educacion e investigacion: el modelo permite experimentar con inferencia multimodal en hardware de consumo (16 GB de RAM recomendados), facilitando la reproducibilidad en laboratorios sin GPUs dedicadas.
+- Integracion en herramientas de linea de comandos o asistentes locales: al ser GGUF compatible con llama.cpp, puede incrustarse en scripts y aplicaciones de escritorio que requieran generacion de texto sin dependencias externas.
+- Distribucion en entornos air-gapped: al no requerir conexion, encaja en despliegues con restricciones de red, siempre que se preparen previamente los ficheros GGUF y el lanzador.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El autor indica además que no existen resultados medidos de rendimiento en Apple Silicon.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita; el archivo GGUF Q4_K_M ocupa 5.656.804.512 bytes (aproximadamente 5,3 GiB), por lo que la huella de memoria del modelo ronda esa cifra más el overhead de contexto.
-- RAM recomendada: 16 GB como punto de partida; el funcionamiento con 8 GB no está validado según el autor.
-- GPU dedicada: no es necesaria; el modelo soporta CPU y aceleración de GPU integrada.
-- GPU recomendadas: no disponibles en la información proporcionada.
-- Compatibilidad con GPU de consumo: no se especifican modelos concretos; el diseño apunta a ejecución sin GPU dedicada.
-- Opciones de despliegue: llama.cpp mediante el fork compatible con Apertus (commit `442b0444168a0f72788b40a16c8289bd1eb217f5`); formato GGUF compatible con el ecosistema llama.cpp. No se confirma compatibilidad con vLLM, TGI u Ollama en la información disponible.
-- Latencia y throughput: no disponibles; no hay resultados medidos, incluido Apple Silicon.
+- VRAM estimada para inferencia: el fichero de lenguaje Q4_K_M ocupa 5,66 GB; el encoder multimodal F32 anade 0,91 GB, por lo que el conjunto completo ronda los 6,6 GB de pesos. La VRAM necesaria depende del contexto y del backend, pero no se han publicado cifras exactas.
+- RAM recomendada: 16 GB como punto de partida segun el autor; la operacion con 8 GB no esta validada.
+- GPU recomendadas: no se especifican modelos concretos. El autor indica que la aceleracion de GPU integrada es compatible y que no se requiere GPU dedicada.
+- Cabe en GPU de consumo: previsiblemente si, dado el tamano de los pesos, aunque no se han publicado mediciones por modelo de GPU.
+- Opciones de despliegue: llama.cpp (fork compatible con Apertus), lanzador nativo de apertus-local para Windows, macOS Apple Silicon y Linux. No se mencionan vLLM, Ollama ni TGI.
+- Latencia y throughput: no disponibles. El autor indica que no hay resultados medidos de rendimiento en Apple Silicon.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Multimodal | Licencia | Formato |
+| Modelo | Parametros | Contexto | Multimodal | Licencia | Formato |
 |---|---|---|---|---|---|
-| Apertus-v1.5-8B-GGUF (esta ficha) | 8.609.083.456 | no disponible | No (excluida en la conversión) | Apache 2.0 | GGUF (Q4_K_M) |
-| Apertus-v1.5-8B (modelo base) | 8.609.083.456 | no disponible (4× mayor que Apertus 1.0) | Sí (imagen; audio según notas) | Apache 2.0 | safetensors (no confirmado en la información) |
-| Apertus-v1.5-70B | no disponible | no disponible | Sí (imagen) | Apache 2.0 | no disponible |
+| Apertus-v1.5-8B-GGUF (esta ficha) | 8,6 B | no disponible | Texto, imagen, audio (entrada) | Apache 2.0 | GGUF |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone en la información proporcionada de datos de rendimiento comparativo (benchmarks) entre estas variantes ni frente a modelos de otros desarrolladores.
+No se dispone en la informacion proporcionada de datos sobre modelos alternativos de la misma categoria, por lo que no es posible establecer una comparativa cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- La cuantización Q4_K_M modifica las salidas respecto al modelo original; el autor recomienda comprobar la idoneidad para cada tarea antes de usarlo en producción.
-- Esta conversión excluye los componentes de visión y audio, por lo que no puede procesar imágenes ni audio aunque el modelo base sí lo haga.
-- El funcionamiento con 8 GB de RAM no está validado; el mínimo recomendado es 16 GB.
-- No hay resultados medidos de rendimiento en Apple Silicon.
-- No se dispone de información sobre sesgos conocidos del modelo base en la documentación proporcionada.
-- Riesgo de alucinación: no cuantificado en la información disponible; es un riesgo inherente a los modelos generativos de este tamaño.
-- Idiomas soportados: no se detallan; el modelo base se describe como globalmente multilingüe, pero no hay lista concreta.
-- Longitud de contexto: no se especifica la cifra exacta, solo que la familia 1.5 cuadruplica la de 1.0.
-- Licencia Apache 2.0: permite uso comercial, pero deben conservarse la atribución y los avisos del modelo original que acompañan a la distribución.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que carece de validación comunitaria.
+- La cuantizacion Q4_K_M altera las salidas respecto al modelo original; el autor recomienda verificar la idoneidad para cada tarea.
+- El fichero de lenguaje por si solo no procesa imagenes ni audio; se requiere descargar tambien el encoder F32.
+- Los tokenizers del modelo original son sensibles a la precision, motivo por el que el encoder se distribuye en F32; no se recomienda cuantizarlo.
+- La operacion con 8 GB de RAM no esta validada; 16 GB es el minimo recomendado por el autor.
+- No hay mediciones de rendimiento publicadas en Apple Silicon.
+- No se han publicado datos sobre sesgos, tasas de alucinacion ni cobertura idiomatica.
+- La licencia Apache 2.0 permite uso comercial, pero deben conservarse la atribucion y los avisos del modelo original que acompanan a la distribucion.
+- El soporte de tool calling, agentes y razonamiento multi-paso no esta documentado en la informacion disponible.
+- La fecha de creacion del repositorio (2026-11-07) es posterior a la actual, lo que puede indicar un error en los metadatos de la plataforma.
 
 ## Enlaces
 
-- Repositorio Hugging Face de esta conversión: https://huggingface.co/faruk-zahiragic/Apertus-v1.5-8B-GGUF
-- Modelo base en Hugging Face: https://huggingface.co/swiss-ai/Apertus-v1.5-8B
-- Colección Apertus v1.5: https://huggingface.co/collections/swiss-ai/apertus-v15
-- Anuncio de Apertus 1.5: https://apertus-ai.org/articles/2026-07-apertus-1-5/
-- Repositorio del proyecto de conversión y parches de runtime: https://github.com/FarukZahiragic/apertus-local
+- Repositorio Hugging Face: https://huggingface.co/faruk-zahiragic/Apertus-v1.5-8B-GGUF
+- Modelo base: https://huggingface.co/swiss-ai/Apertus-v1.5-8B
+- Repositorio de conversion y runtime: https://github.com/FarukZahiragic/apertus-local
+- Pagina de descarga de la aplicacion nativa: https://huggingface.co/spaces/faruk-zahiragic/apertus-local

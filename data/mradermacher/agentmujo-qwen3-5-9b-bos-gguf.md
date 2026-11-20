@@ -2,54 +2,49 @@
 
 ## Resumen
 
-`mradermacher/agentmujo-qwen3.5-9b-bos-GGUF` es una publicacion de cuantizaciones GGUF estaticas del modelo `renatoschust/agentmujo-qwen3.5-9b-bos`, un ajuste fino (LoRA) sobre una base Qwen 3.5 de 9B orientado a *function calling* y flujos agenticos en bosnio (`bs`). El autor de las cuantizaciones es mradermacher, conocido por producir versiones GGUF de modelos recientes para su uso con llama.cpp y derivados. El modelo original lo desarrolla renatoschust y se distribuye bajo licencia Apache 2.0.
+agentmujo-qwen3.5-9b-bos es un modelo de lenguaje de aproximadamente 8.950 millones de parametros (8,95 B), derivado de la familia Qwen3.5 y especializado mediante un adaptador LoRA en bosnio (`bs`) y en capacidades de function calling y comportamiento agentico. El modelo base de la cadena es `renatoschust/agentmujo-qwen3.5-9b-bos`, y esta ficha corresponde a la version cuantizada en GGUF publicada por mradermacher, que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles.
 
-El interes practico de esta ficha esta en la combinacion de tres factores: un tamano de 8.953.803.264 parametros (unos 9B) que cabe en GPUs de consumo con cuantizacion Q4, una orientacion explicita a *tool calling* y razonamiento agentico, y un enfasis en bosnio, una lengua de bajos recursos dentro del ecosistema de modelos abiertos. La ventana de contexto, la composicion del dataset de entrenamiento y los detalles del ajuste LoRA no estan documentados en la informacion disponible.
+La relevancia de esta publicacion radica en dos factores. Por un lado, ofrece una via practica para desplegar un modelo orientado a agentes y llamadas a funciones en un idioma de bajos recursos como el bosnio, algo poco frecuente en el ecosistema open source. Por otro, la disponibilidad de hasta once variantes de cuantizacion GGUF (desde Q2_K de 3,9 GB hasta f16 de 18 GB) reduce la barrera de entrada para pruebas en local, prototipado y despliegues con recursos limitados.
 
-Las cuantizaciones publicadas cubren desde Q2_K (3,9 GB) hasta f16 (18,0 GB), lo que permite desplegar el modelo desde equipos con 6 GB de VRAM hasta servidores con GPUs profesionales. No se han publicado resultados de benchmarks ni metricas de rendimiento en la informacion disponible, por lo que la evaluacion debe hacerse de forma empirica antes de llevarlo a produccion.
+La informacion disponible sobre el modelo original (datos de entrenamiento, contexto nativo, resultados de benchmarks) es escasa: la model card del repositorio cuantizado se limita a describir el proceso de cuantizacion y las variantes ofrecidas. Esta ficha refleja unicamente los datos verificables en la informacion proporcionada y marca explicitamente como "no disponible" todo aquello que no se ha publicado.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (derivada de Qwen 3.5; detalles no disponibles) |
-| Parametros totales | 8.953.803.264 (~8,95B) |
-| Parametros activos | no disponible (no consta que sea MoE) |
+| Arquitectura | no disponible (derivado de la familia Qwen3.5, transformer; detalles no publicados) |
+| Parametros totales | 8.953.803.264 (8,95 B) |
+| Parametros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q4_K_S, Q6_K, Q8_0, f16 (estaticas; sin imatrix) |
-| Idiomas soportados | Bosnio (`bs`); capacidades multilingues del modelo base no documentadas |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | bosnio (bs); resto no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (repo de cuantizaciones); el modelo base en safetensors via transformers |
-| Modelo base | renatoschust/agentmujo-qwen3.5-9b-bos |
-| Tipo de ajuste | LoRA sobre base Qwen 3.5 9B |
-| Tamano del repo | 48,6 GB |
-| Libreria declarada | transformers |
-| Fecha de publicacion | 2026-11-05 |
+| Formato de pesos | GGUF (repo cuantizado); el modelo base se distribuye en safetensors via transformers |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only de aproximadamente 8,95B de parametros, heredado de la familia Qwen 3.5, sobre el que se ha aplicado un ajuste fino mediante LoRA (segun las etiquetas del repositorio). El objetivo declarado del ajuste es el *function calling* y el comportamiento agentico, con atencion especifica al bosnio. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni hiperparametros del LoRA.
+El modelo deriva de la familia Qwen3.5, por lo que se presupone una arquitectura transformer decoder-only, aunque la informacion proporcionada no detalla la configuracion exacta de capas, dimensiones ocultas, mecanismo de atencion ni vocabulario. Sobre esa base se aplico un adaptador LoRA (etiqueta `lora` en el repositorio) para especializar el modelo en bosnio y en tareas de function calling y flujos agenticos, segun indican las etiquetas `agentmujo`, `bosnian`, `function-calling` y `agentic`.
 
-Las cuantizaciones de mradermacher son estaticas (sin *importance matrix*), generadas con `convert_type: hf` y `quantize_version: 2`. La model card indica que no hay planes confirmados para publicar variantes con imatrix; estas pueden solicitarse mediante una discusion en la comunidad. No se documentan innovaciones tecnicas adicionales (atencion lineal, decodificacion especulativa, modos de pensamiento) en la informacion disponible.
+No se han publicado en la informacion disponible datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones tecnicas concretas (decodificacion especulativa, atencion lineal, etc.). El repositorio cuantizado documenta el proceso de conversion a GGUF y las variantes generadas, pero no reproduce la model card tecnica del modelo original.
 
 ## Capacidades
 
-- Generacion de texto conversacional en bosnio, con soporte declarado para dialogos multi-turno.
-- *Function calling* / *tool calling*: capacidad destacada por las etiquetas del modelo (`function-calling`, `agentic`, `endpoints_compatible`).
-- Razonamiento agentico y ejecucion de tareas multi-paso, orientado a integraciones con APIs y herramientas externas.
-- Inferencia local via GGUF en llama.cpp y ecosistema compatible (Ollama, LM Studio, etc.).
-- Capacidades de codigo y matematicas: no documentadas especificamente en la informacion disponible.
-- Vision, audio y modos de pensamiento explicito: no disponibles.
+- Generacion de texto conversacional en bosnio, idioma principal declarado del modelo.
+- Function calling / tool calling: el modelo esta etiquetado explicitamente como `function-calling`, lo que sugiere soporte para invocar herramientas mediante esquemas estructurados.
+- Comportamiento agentico: la etiqueta `agentic` indica orientacion a razonamiento multi-paso y ejecucion de tareas con herramientas.
+- Especializacion linguistica en bosnio, un idioma de bajos recursos dentro del ecosistema de modelos abiertos.
+- Capacidades generales heredadas de la familia Qwen3.5 (razonamiento, codigo, matematicas): no confirmadas en la informacion disponible para esta variante concreta.
+- Soporte de vision, audio o modo thinking: no disponible.
 
 ## Casos de uso
 
-- **Atencion al cliente en bosnio**: el modelo puede gestionar conversaciones multi-turno en lengua bosnia con un tono controlado, adecuado para su integracion en *chatbots* de soporte para mercados de Bosnia y Herzegovina y diaspora.
-- **Agentes de automatizacion con herramientas**: gracias a su orientacion a *function calling*, puede conectarse a APIs internas (CRM, ERP, sistemas de tickets) y decidir que herramienta invocar en cada paso del flujo.
-- **Asistentes de back-office con despliegue local**: al caber en GPUs de consumo en Q4_K_S (5,5 GB), permite montar asistentes internos sin enviar datos a la nube, util en entornos con requisitos de soberania del dato.
-- **Prototipado rapido de pipelines agenticos**: la disponibilidad de GGUF en multiples tamanos permite iterar en local con Q2_K o Q4_K_S y escalar a Q8_0 o f16 en servidor para evaluacion de calidad.
-- **Investigacion en lenguas de bajos recursos**: sirve como punto de partida para estudiar el rendimiento de modelos de 9B ajustados en bosnio frente a modelos multilingues genericos.
-- **Extraccion estructurada de datos desde texto**: con salidas JSON y esquemas de herramientas, puede usarse para poblar bases de datos a partir de documentos no estructurados en bosnio.
-- **Evaluacion comparativa de cuantizaciones**: el rango de quants publicados (Q2_K a f16) permite medir la degradacion de calidad en tareas de *tool calling* segun el nivel de compresion.
+- Asistentes conversacionales en bosnio: el modelo puede gestionar dialogos multi-turno en un idioma para el que existen pocos modelos abiertos especializados, lo que lo hace adecuado para atencion al usuario en Bosnia y Herzegovina y diaspora.
+- Agentes con acceso a herramientas: gracias a su orientacion a function calling, puede integrarse en flujos donde el modelo decide que API invocar (consultas a bases de datos, busquedas, calculos) y compone la respuesta final.
+- Automatizacion de soporte tecnico: con la variante Q4_K_M (5,7 GB) puede desplegarse en una estacion de trabajo con GPU de consumo para prototipar un bot de soporte interno sin depender de APIs externas.
+- Procesamiento de documentos administrativos en bosnio: resumen y extraccion de datos de formularios o correspondencia oficial, aprovechando la especializacion linguistica del adaptador LoRA.
+- Pipelines de agentes en local para desarrollo: la disponibilidad de cuantizaciones desde Q2_K (3,9 GB) permite iterar en portatiles y maquinas sin GPU dedicada de gran capacidad.
+- Evaluacion e investigacion en NLP de bajos recursos: util como linea base para comparar rendimiento de modelos especializados en bosnio frente a modelos multilingues genericos.
+- Despliegue en entornos con restricciones de privacidad: al ejecutarse en local via llama.cpp, los datos no salen de la infraestructura del usuario, lo que encaja en casos con requisitos de confidencialidad.
 
 ## Benchmarks y rendimiento
 
@@ -57,45 +52,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada para inferencia** (solo pesos, sin overhead de contexto):
-  - Q2_K: ~3,9 GB
-  - Q4_K_S: ~5,5 GB
-  - Q6_K: ~7,5 GB
-  - Q8_0: ~9,6 GB
-  - f16: ~18,0 GB
-- **GPU de consumo**: Q4_K_S cabe en GPUs de 8 GB (RTX 3060 Ti, RTX 4060, RTX 3070); Q6_K y Q8_0 requieren 10-12 GB (RTX 3080, RTX 4070, RTX 4080); f16 requiere 24 GB (RTX 3090, RTX 4090).
-- **GPU profesionales**: A100 40/80 GB, H100 y L40S permiten f16 con contexto amplio y mayor *throughput*; para produccion con Q8_0 basta una A10G o L4.
-- **Opciones de despliegue**: llama.cpp, Ollama, LM Studio y servidores compatibles con GGUF (llamafile, koboldcpp). Para el modelo base en safetensors, transformers con aceleracion CUDA o ROCm (el autor etiqueta `rocm`).
-- **Latencia y throughput**: no disponibles; dependen de la GPU, del backend y de la longitud de contexto efectiva.
+- VRAM estimada segun cuantizacion (pesos + overhead de contexto, aproximada): Q2_K ~4-5 GB; Q4_K_M ~6-7 GB; Q6_K ~8-9 GB; Q8_0 ~10-11 GB; f16 ~18-20 GB.
+- GPU recomendadas: RTX 3060 12 GB o RTX 4060 Ti 16 GB para Q4_K_M/Q5_K_M; RTX 4090 24 GB para Q8_0 o f16 con contexto amplio; A100/H100 solo necesarias para despliegues concurrentes o contextos muy largos.
+- Cabe en GPU de consumo: si, en la mayoria de tarjetas con 8 GB o mas usando Q4_K_S/Q4_K_M; las variantes Q2_K y Q3_K_S pueden ejecutarse incluso en GPUs de 6 GB o en CPU.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; el modelo base en safetensors puede servirse con transformers, vLLM o TGI si se dispone de la version no cuantizada.
+- Latencia y throughput: no disponibles en la informacion proporcionada; dependen del hardware y de la cuantizacion elegida.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Orientacion | Licencia | Formato |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
-| agentmujo-qwen3.5-9b-bos (este) | ~8,95B | no disponible | Function calling, bosnio | Apache 2.0 | GGUF, safetensors |
-| Qwen 2.5 7B Instruct | ~7,6B | 128K (segun ficha oficial de Qwen) | Generico multilingue | Apache 2.0 | safetensors, GGUF |
-| Llama 3.1 8B Instruct | ~8B | 128K | Generico multilingue | Llama 3.1 Community | safetensors, GGUF |
-| Mistral 7B Instruct v0.3 | ~7,2B | 32K | Generico | Apache 2.0 | safetensors, GGUF |
+| agentmujo-qwen3.5-9b-bos (esta ficha) | 8,95 B | no disponible | bs | Apache 2.0 | GGUF, safetensors |
+| Qwen3.5 9B (base de la familia) | ~9 B | no disponible | multilingue | no disponible | safetensors |
+| Modelos multilingues genericos de ~8-9 B (p. ej. Llama 3.1 8B, Gemma 2 9B) | 8-9 B | 8K-128K segun modelo | decenas de idiomas | licencias propias | safetensors, GGUF |
 
-La comparacion con Qwen 2.5 7B y Llama 3.1 8B es la mas directa por tamano y licencia permisiva; ambos ofrecen contexto documentado amplio y ecosistema maduro, mientras que este modelo declara especializacion en bosnio y *tool calling* pero carece de especificaciones publicas de contexto y benchmarks. Mistral 7B es una alternativa Apache 2.0 con menor contexto declarado.
+La comparativa directa con alternativas especializadas en bosnio no esta disponible en la informacion proporcionada. Frente a los modelos multilingues genericos de tamano similar, la ventaja de esta variante es la especializacion via LoRA en bosnio y en function calling, mientras que su desventaja es la ausencia de benchmarks publicados que permitan cuantificar esa mejora.
 
 ## Limitaciones y advertencias
 
-- **Sin benchmarks publicados**: no hay evidencia cuantitativa de calidad en MMLU, HumanEval, GSM8K ni en tareas de *tool calling*; la validacion debe ser empirica.
-- **Contexto desconocido**: no se documenta la longitud de contexto, lo que impide planificar casos de uso con documentos largos o historiales extensos.
-- **Idioma limitado**: el modelo declara solo bosnio (`bs`); su comportamiento en castellano, ingles u otras lenguas no esta garantizado y puede degradarse.
-- **Riesgo de alucinacion**: inherente a los modelos de 9B, especialmente en llamadas a herramientas con parametros inventados; se recomienda validacion de esquemas y *guardrails* en produccion.
-- **Cuantizaciones estaticas**: las versiones Q2_K y Q4_K_S pueden degradar la precision en tareas de *function calling*; para evaluacion de calidad conviene usar Q6_K o superiores.
-- **Licencia Apache 2.0**: permite uso comercial, pero conviene revisar las condiciones del modelo base Qwen 3.5 y del ajuste original de renatoschust antes de redistribuir.
-- **Modelo muy reciente y con traccion nula**: 0 descargas y 0 likes en el momento de la ficha; no hay evidencia de uso en produccion ni comunidad que reporte incidencias.
-- **Sin imatrix**: no hay cuants ponderados disponibles, lo que limita las opciones de optimizacion de calidad por tamano.
+- No hay benchmarks publicados: no es posible verificar empiricamente la calidad del modelo en tareas de function calling, agenticas o generacion en bosnio.
+- Riesgo de alucinacion inherente a los modelos de 9 B; sin datos de evaluacion especificos para esta variante.
+- La especializacion en bosnio puede degradar el rendimiento en otros idiomas respecto al modelo base Qwen3.5, aunque no se ha cuantificado.
+- Longitud de contexto no documentada: planificar despliegues con contexto conservador hasta verificar el limite real.
+- Las cuantizaciones de baja calidad (Q2_K, Q3_K_M) pueden degradar notablemente la coherencia y la fiabilidad del function calling; para produccion se recomienda Q4_K_M o superior.
+- Licencia Apache 2.0 permite uso comercial, pero conviene revisar las condiciones del modelo base Qwen3.5 y del adaptador original, no detalladas en la informacion disponible.
+- El repositorio tiene 0 likes y fue creado en noviembre de 2026: madurez y soporte comunitario limitados.
+- La model card del repositorio cuantizado no documenta el proceso de entrenamiento del adaptador LoRA ni la procedencia de los datos en bosnio.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/agentmujo-qwen3.5-9b-bos-GGUF
-- Modelo base: https://huggingface.co/renatoschust/agentmujo-qwen3.5-9b-bos
-- Pagina de descargas del cuantizador: https://hf.tst.eu/model#agentmujo-qwen3.5-9b-bos-GGUF
+- Modelo base (adaptador LoRA): https://huggingface.co/renatoschust/agentmujo-qwen3.5-9b-bos
+- Cuantizaciones imatrix/weighted: https://huggingface.co/mradermacher/agentmujo-qwen3.5-9b-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#agentmujo-qwen3.5-9b-bos-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
 - Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
-- Guia de uso de GGUF (referencia TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafico de perplejidad por tipo de cuantizacion (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas sobre cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

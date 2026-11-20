@@ -5,7 +5,7 @@
   "author": "SZLHOLDINGS",
   "url": "https://huggingface.co/SZLHOLDINGS/salad-formula-proving-ground-r1",
   "created_at": "2026-11-15T04:22:26.000Z",
-  "updated_at": "2026-11-15T12:25:15.000Z",
+  "updated_at": "2026-11-20T04:38:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -14,19 +14,7 @@
     "en"
   ],
   "tags": [
-    "transformers",
     "safetensors",
-    "lora",
-    "peft",
-    "szl-holdings",
-    "receipted-lane",
-    "salad",
-    "text-generation",
-    "en",
-    "base_model:Qwen/Qwen2.5-Coder-3B-Instruct",
-    "base_model:adapter:Qwen/Qwen2.5-Coder-3B-Instruct",
-    "license:apache-2.0",
-    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,

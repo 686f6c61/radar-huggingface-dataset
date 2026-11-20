@@ -2,48 +2,50 @@
 
 ## Resumen
 
-`mradermacher/Gemma-4-26B-A4B-Arabic-It-GGUF` es una colección de cuantizaciones estáticas en formato GGUF del modelo `noman-asif/Gemma-4-26B-A4B-Arabic-It`, un ajuste fino orientado a árabe e italiano de una variante "Gemma 4" de 26B con arquitectura MoE (la nomenclatura A4B sugiere aproximadamente 4B parámetros activos). El autor de las cuantizaciones es mradermacher, un perfil conocido en Hugging Face por publicar versiones GGUF de modelos de terceros para su uso con llama.cpp y herramientas compatibles.
+Gemma-4-26B-A4B-Arabic-It-GGUF es la version cuantizada en formato GGUF del modelo noman-asif/Gemma-4-26B-A4B-Arabic-It, un ajuste fino de la familia Gemma 4 orientado especificamente al arabe y al dialecto saudi. El modelo original parte de una arquitectura Mixture of Experts (MoE) con 25.233.142.046 parametros totales y aproximadamente 4B parametros activos por token (indicado por el sufijo A4B), lo que permite un equilibrio entre capacidad y coste de inferencia. Esta publicacion, realizada por mradermacher, proporciona cuantizaciones estaticas listas para usar con llama.cpp y ecosistemas compatibles.
 
-El modelo base declarado tiene 25.233.142.046 parámetros totales según los tensores safetensors, lo que confirma que se trata de un modelo grande con mezcla de expertos. La ficha del repositorio no incluye información sobre la licencia, los idiomas soportados ni la pipeline, y el repositorio tiene cero descargas y cero likes en el momento de la consulta, lo que indica que es una publicación muy reciente (creada el 4 de noviembre de 2026).
+El ajuste fino se ha realizado sobre dos datasets propios del autor: Arabic-Reasoning-Instruct-120k y Arabic-Preference-DPO-20k, e incorpora tecnicas como RS-LoRA, Trust-Region-DPO y TIES-merging, ademas de un modo de razonamiento en cadena (chain-of-thought). El objetivo es ofrecer un modelo conversacional con capacidad de razonamiento en arabe, incluyendo variantes dialectales saudies, manteniendo competencia en ingles.
 
-La relevancia de esta ficha es limitada pero concreta: permite desplegar en local un modelo de 26B con activación dispersa (~4B activos) en hardware de consumo mediante cuantizaciones de 2 a 8 bits, algo imposible con un denso de 26B. No obstante, al no haber model card detallada, benchmarks ni licencia declarada, su uso en producción exige verificación adicional.
+La relevancia actual radica en la escasez de modelos abiertos con razonamiento explicito y buen rendimiento en arabe dialectal, un nicho con alta demanda en atencion al cliente, procesamiento documental y asistentes regionales. La licencia Apache 2.0 facilita su adopcion comercial, y la disponibilidad de cuantizaciones desde Q2_K hasta Q8_0 permite desplegarlo en hardware muy diverso.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (mixture of experts), presumiblemente transformer; variante "A4B" con ~4B parámetros activos (no confirmado en la model card) |
-| Parametros totales | 25.233.142.046 (dato real de safetensors) |
-| Parametros activos | ~4B (inferido de la nomenclatura A4B; no confirmado) |
+| Arquitectura | Transformer Mixture of Experts (MoE), familia Gemma 4 |
+| Parametros totales | 25.233.142.046 (aprox. 25,2B) |
+| Parametros activos | Aproximadamente 4B (segun sufijo A4B; valor exacto no disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible (el nombre sugiere árabe e italiano) |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas, quantize_version 2) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 |
+| Idiomas soportados | Arabe (incluye dialecto saudi) e ingles |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no permite detallar la arquitectura interna. El nombre del modelo base (`Gemma-4-26B-A4B-Arabic-It`) indica una variante de la familia Gemma 4 con 26B parámetros totales y una designación "A4B" que en la convención de nomenclatura de modelos MoE (similar a Qwen3-30B-A3B) indica aproximadamente 4B parámetros activos por token. El recuento real de safetensors (25,23B) es coherente con un modelo MoE de esa escala. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo etapas de RLHF o DPO.
+El modelo base es un transformer de tipo Mixture of Experts de la familia Gemma 4, con 25,2B parametros totales y aproximadamente 4B activos por token. Esta configuracion MoE reduce el coste computacional de inferencia frente a un modelo denso del mismo tamano, manteniendo una capacidad de representacion elevada. El ajuste fino se ha realizado sobre el modelo noman-asif/Gemma-4-26B-A4B-Arabic-It, que a su vez deriva de Gemma 4.
 
-El ajuste fino declarado está orientado a árabe e italiano, lo que sugiere un proceso de fine-tuning supervisado sobre el modelo base Gemma 4 para mejorar el rendimiento en esos dos idiomas. No se especifica si se usó LoRA, full fine-tuning u otra técnica. Las cuantizaciones de mradermacher se generan con `quantize_version: 2` de llama.cpp, con `output_tensor_quantised: 1` y `skip_mmproj: 1`, lo que indica que se omitió el proyector multimodal (mmproj) en el proceso de cuantización; esto implica que estas GGUF no incluyen capacidades de visión aunque el modelo base las tuviera.
+El entrenamiento combina varias tecnicas: RS-LoRA (Low-Rank Adaptation con rango selectivo) para el ajuste eficiente, Trust-Region-DPO sobre el dataset Arabic-Preference-DPO-20k para alinear preferencias, y TIES-merging para fusionar pesos de distintos adaptadores o checkpoints. Ademas, se ha entrenado un modo de razonamiento en cadena (chain-of-thought) sobre Arabic-Reasoning-Instruct-120k, lo que habilita respuestas con pasos intermedios explicitos. No se dispone de informacion sobre el numero total de tokens de entrenamiento ni sobre la composicion detallada del dataset mas alla de los nombres y tamanos indicados.
 
 ## Capacidades
 
-- Generación de texto conversacional: el tag `conversational` en Hugging Face indica uso previsto para diálogo.
-- Multilingüismo limitado a árabe e italiano según el nombre del modelo; el resto de idiomas no está documentado.
-- No se confirma soporte de tool calling, function calling ni razonamiento multi-paso.
-- No se confirma modo "thinking" ni capacidades de visión en estas GGUF (el proyector mmproj fue omitido).
-- No se confirman capacidades de código o matemáticas específicas.
-- Compatible con endpoints de inferencia (tag `endpoints_compatible`).
+- Generacion de texto conversacional en arabe estandar y dialecto saudi, con soporte secundario de ingles.
+- Razonamiento en cadena (chain-of-thought) entrenado explicitamente, adecuado para tareas que requieren pasos intermedios.
+- Razonamiento matematico y logico en arabe, derivado del dataset Arabic-Reasoning-Instruct-120k.
+- Alineacion de preferencias mediante Trust-Region-DPO, orientada a respuestas mas utiles y seguras.
+- Capacidad multilingue limitada a arabe e ingles; no se declaran otros idiomas.
+- No se ha documentado soporte de tool calling, function calling, agentes multi-paso, vision ni audio en la informacion disponible.
+- Compatible con endpoints (tag `endpoints_compatible`) y con el ecosistema transformers/llama.cpp.
 
 ## Casos de uso
 
-- Asistente conversacional en árabe para atención al cliente: el ajuste fino específico en árabe permite respuestas más naturales que el modelo base en ese idioma, y las cuantizaciones Q4_K_M o Q5_K_M permiten desplegarlo en una sola GPU de 24 GB con contexto moderado.
-- Traducción y localización árabe-italiano: el modelo fue ajustado en ambos idiomas, por lo que puede emplearse en pipelines de traducción o revisión de textos entre estos dos idiomas, aunque la calidad debe validarse empíricamente al no haber benchmarks.
-- Despliegue en local con llama.cpp u Ollama: las GGUF de Q2_K a Q8_0 permiten ejecutar el modelo en estaciones de trabajo sin GPU de datacenter, útil para prototipado y pruebas de concepto.
-- Generación de contenido en árabe para medios o e-commerce: redacción de descripciones de producto, correos y textos de marketing en árabe con un modelo autoalojado que evita enviar datos a APIs externas.
-- Investigación sobre eficiencia de MoE: el modelo sirve como caso de estudio para medir latencia y calidad de un MoE de 26B con ~4B activos bajo distintas cuantizaciones en hardware de consumo.
-- Evaluación comparativa de fine-tunes: útil para investigadores que quieran comparar el efecto de un ajuste fino bilingüe (árabe/italiano) sobre el modelo base Gemma 4 en tareas de generación.
+- Atencion al cliente en arabe y dialecto saudi: el modelo puede gestionar conversaciones multi-turno con registro dialectal, adecuado para centros de contacto en Arabia Saudi y el Golfo. La cuantizacion Q4_K_M (16,9 GB) permite desplegarlo en una unica GPU de 24 GB.
+- Asistentes virtuales regionales: integracion en aplicaciones moviles o web para usuarios arabeparlantes, aprovechando la licencia Apache 2.0 para uso comercial sin restricciones de atribucion adicionales.
+- Procesamiento documental y resumen en arabe: resumen de contratos, informes o correspondencia administrativa, con la ventaja del modo chain-of-thought para tareas que requieren extraccion de conclusiones.
+- Tutoria educativa en arabe: explicaciones paso a paso de conceptos matematicos o cientificos, apoyadas en el razonamiento explicito entrenado sobre datos instructivos.
+- Traduccion asistida arabe-ingles: aunque no es un modelo de traduccion dedicado, su competencia bilingue permite borradores y post-edicion en flujos de localizacion.
+- Analisis de sentimiento y moderacion de contenido en dialecto saudi: clasificacion y generacion de respuestas contextualizadas en redes sociales o foros, donde el arabe dialectal es predominante.
+- Despliegue en hardware de consumo: con cuantizaciones Q2_K (10,7 GB) o Q3_K_S (12,3 GB) puede ejecutarse en GPUs de 12-16 GB o en CPU con llama.cpp, habilitando prototipos locales sin infraestructura cloud.
 
 ## Benchmarks y rendimiento
 
@@ -51,43 +53,52 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (modelo de 25,23B parámetros):
-  - Q2_K: ~9-10 GB
-  - Q3_K_M: ~12-13 GB
-  - Q4_K_M: ~15-16 GB
-  - Q5_K_M: ~18-19 GB
-  - Q6_K: ~21-22 GB
-  - Q8_0: ~27-28 GB
-  - x-f16: ~50 GB
-- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y Q5_K_M con contexto moderado; A100 40 GB o H100 para Q8_0 y f16; RTX 3090 (24 GB) para Q4_K_M.
-- Cabe en GPU de consumo: sí, en RTX 3090/4090 (24 GB) con cuantizaciones Q4_K_M o inferiores; en GPUs de 12-16 GB solo con Q2_K o Q3_K_S y contexto reducido.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con GGUF (koboldcpp, text-generation-webui). No se confirma soporte de vLLM o TGI para esta variante MoE en GGUF.
-- Latencia y throughput: no disponibles; al ser un MoE con ~4B activos, se espera throughput superior a un denso de 26B, pero no hay mediciones publicadas.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
+  - Q2_K: 10,7 GB
+  - Q3_K_S: 12,3 GB
+  - Q3_K_M: 13,4 GB
+  - Q3_K_L: 13,9 GB
+  - IQ4_XS: 14,2 GB
+  - Q4_K_S: 15,6 GB
+  - Q4_K_M: 16,9 GB
+  - Q5_K_S: 18,1 GB
+  - Q5_K_M: 19,2 GB
+  - Q6_K: 22,7 GB
+  - Q8_0: 27,0 GB
+- GPU recomendadas: para Q4_K_M y superiores, RTX 4090 (24 GB), A100 40 GB o H100; para Q2_K y Q3_K_S, RTX 4080/4070 Ti (16 GB) o RTX 3090 (24 GB) con margen amplio.
+- Cabe en GPU de consumo: si, desde Q2_K en GPUs de 12 GB (con contexto reducido) hasta Q8_0 en RTX 4090 o RTX 3090.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con GGUF (por ejemplo, llama-cpp-python). El modelo base en safetensors puede servirse con vLLM o TGI, aunque la publicacion GGUF esta pensada para llama.cpp.
+- Latencia y throughput: no disponibles. Al ser MoE con aproximadamente 4B parametros activos, se espera un throughput superior al de un modelo denso de 25B, pero no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales | Activos | Contexto | Licencia | Formato |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
-| Gemma-4-26B-A4B-Arabic-It (este) | 25,23B | ~4B (inferido) | no disponible | no disponible | GGUF |
-| Qwen3-30B-A3B | 30B | 3B | 32K+ | Apache 2.0 | safetensors, GGUF |
-| Mixtral 8x7B | 46,7B | ~12,9B | 32K | Apache 2.0 | safetensors, GGUF |
-| Gemma 3 27B (denso) | 27B | 27B | 128K | Gemma license | safetensors, GGUF |
+| Gemma-4-26B-A4B-Arabic-It (este) | 25,2B totales / ~4B activos | no disponible | ar, en | Apache 2.0 | GGUF, safetensors |
+| Gemma-4-26B-A4B (base, sin ajuste arabe) | 25,2B totales / ~4B activos | no disponible | multilingue (segun version) | Apache 2.0 | safetensors |
+| Modelos arabes densos de ~7B (familia no especificada) | ~7B | no disponible | ar, en | variable | safetensors, GGUF |
 
-La comparativa es aproximada: no hay datos de rendimiento del modelo evaluado, y la licencia del ajuste fino no está declarada, lo que impide confirmar si el uso comercial es viable.
+No se dispone de datos de rendimiento comparativo entre estas alternativas en la informacion proporcionada. La comparativa se limita a parametros, licencia y formato.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: no se puede confirmar si el uso comercial está permitido; hereda presumiblemente la licencia de Gemma 4, que suele incluir restricciones de uso.
-- Sin benchmarks publicados: no hay evidencia de calidad en árabe, italiano ni en tareas generales.
-- Repositorio sin tracción (0 descargas, 0 likes): no hay validación comunitaria.
-- Proyector multimodal omitido (`skip_mmproj: 1`): estas GGUF no soportan visión aunque el modelo base la tuviera.
-- Riesgo de alucinación y sesgos no evaluados: no hay model card del ajuste fino original ni evaluaciones de seguridad.
-- Idiomas no documentados oficialmente: el soporte de árabe e italiano es inferido del nombre, no confirmado.
-- Contexto desconocido: no se puede planificar el uso en tareas de contexto largo sin verificar la ventana real.
-- Modelo base "Gemma 4" no verificado: no se confirma la existencia ni las especificaciones oficiales de esa familia en la información proporcionada.
+- Sesgos conocidos: no documentados por el autor; al entrenarse sobre datos arabes y saudies, puede reflejar sesgos regionales o dialectales.
+- Riesgo de alucinacion: presente como en cualquier LLM, especialmente en tareas de razonamiento factual o citas; el modo chain-of-thought no elimina este riesgo.
+- Limitaciones de contexto: la longitud de contexto no esta declarada en la informacion disponible; debe verificarse antes de usos con documentos largos.
+- Limitaciones de idioma: solo arabe e ingles; el rendimiento en otros idiomas no esta garantizado.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene revisar los terminos de Gemma 4 (modelo base) por si imponen condiciones adicionales de atribucion o uso aceptable.
+- Caveat de produccion: las cuantizaciones Q2_K y Q3_K pueden degradar notablemente la calidad; para produccion se recomienda Q4_K_M o superior.
+- No se ha documentado soporte de tool calling ni de agentes, por lo que no debe asumirse en pipelines que dependan de function calling.
+- El tag `skip_mmproj: 1` sugiere que no se incluyen pesos multimodales; el modelo es solo texto.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/Gemma-4-26B-A4B-Arabic-It-GGUF
-- Modelo base (ajuste fino): https://huggingface.co/noman-asif/Gemma-4-26B-A4B-Arabic-It
-- Perfil del autor de cuantizaciones: https://huggingface.co/mradermacher
+- Hugging Face (GGUF): https://huggingface.co/mradermacher/Gemma-4-26B-A4B-Arabic-It-GGUF
+- Modelo base: https://huggingface.co/noman-asif/Gemma-4-26B-A4B-Arabic-It
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Gemma-4-26B-A4B-Arabic-It-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Gemma-4-26B-A4B-Arabic-It-GGUF
+- Dataset de razonamiento: https://huggingface.co/datasets/noman-asif/Arabic-Reasoning-Instruct-120k
+- Dataset de preferencias DPO: https://huggingface.co/datasets/noman-asif/Arabic-Preference-DPO-20k
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Analisis de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

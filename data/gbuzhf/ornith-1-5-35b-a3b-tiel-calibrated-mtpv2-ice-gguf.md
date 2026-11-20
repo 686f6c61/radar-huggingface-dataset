@@ -2,87 +2,107 @@
 
 ## Resumen
 
-Ornith-1.5-35B-A3B-TIEL-Calibrated-MTPv2-ICE-GGUF es una colección de cuatro cuantizaciones GGUF del modelo de mezcla de expertos (MoE) Ornith-1.5-35B-A3B, desarrollada por gbuzhf a partir del modelo original de ornith-ai. Se trata de una adaptación no oficial que incorpora la cabeza entrenada de predicción multi-token (MTPv2) del modelo base y aplica un esquema de cuantización denominado ICE, calibrado con la matriz de importancia de Tiel. La publicación está dirigida a quienes necesitan ejecutar el modelo en hardware más limitado que el requerido por la versión bf16, que ocupa alrededor de 70 GB.
+Ornith-1.5-35B-A3B es un modelo de lenguaje de arquitectura mixta transformer-MoE desarrollado por ornith-ai. Esta ficha corresponde a una cuantizacion GGUF publicada por el usuario gbuzhf bajo la tecnica ICE (Importance-aware Calibration for Experts), que parte del modelo base original en BF16 y genera cuatro niveles de compresion calibrados con la matriz de importancia de Tiel. El modelo integra la cabeza MTPv2 (Multi-Token Prediction) del autor original, lo que permite decodificacion autoespeculativa sin necesidad de un modelo drafter separado.
 
-El modelo base es un MoE de aproximadamente 35.500 millones de parámetros totales, de los cuales unos 3.000 millones se activan por token. La versión cuantizada se ofrece en cuatro niveles de tamaño y fidelidad: 19G-ICE, 21G-ICE, 23G-ICE y 25G-ICE, con tamaños de archivo entre 18.82 GB y 24.84 GB. Esta familia de cuantizaciones busca maximizar la fidelidad respecto al modelo bf16 dentro de una restricción de presupuesto de bits, priorizando la calidad en los tensores donde el error de cuantización tiene más impacto en la salida final.
+Con 35.505.251.456 parametros totales y arquitectura de mezcla de expertos (MoE), el modelo activa solo una fraccion de sus parametros por token, lo que lo situa en la categoria de modelos de alta capacidad con coste de inferencia contenido. La cuantizacion ICE aplica una politica diferenciada por tipo de tensor: el router MoE y los terminos de decaimiento SSM se mantienen en F32, las claves y valores de atencion en F16, y el resto del presupuesto se asigna a los 256 expertos.
 
-La relevancia de esta publicación se centra en proporcionar una alternativa ligera al modelo bf16 sin renunciar a la ventana de contexto de 256.000 tokens, y en incluir la cabeza MTPv2, que permite decodificación especulativa sin necesidad de un modelo auxiliar. Los niveles inferiores están pensados para GPU de consumo con 24 GB de VRAM, mientras que los niveles superiores buscan una mayor fidelidad manteniendo compatibilidad con ese tipo de hardware.
+La relevancia actual de esta publicacion radica en su metodologia de cuantizacion: los cuatro tiers (19G, 21G, 23G y 25G) se presentan como Pareto-optimos frente a las escaleras de Unsloth Dynamic y APEX en el rango de 19 a 23 GB, con divergencia KL medida contra el maestro BF16. La licencia MIT facilita su adopcion comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-Experts (MoE) sobre Transformer |
+| Arquitectura | Mixtura de expertos (MoE) con componentes SSM y atencion; transformer hibrido |
 | Parametros totales | 35.505.251.456 |
-| Parametros activos | ~3.000 millones (A3B) |
-| Longitud de contexto | 256.000 tokens |
-| Tipos de cuantizacion | 19G-ICE, 21G-ICE, 23G-ICE, 25G-ICE |
+| Parametros activos | no disponible (el modelo base es A3B, pero no se detalla el numero exacto de parametros activos) |
+| Longitud de contexto | no disponible (el harness de evaluacion usa n_ctx 2048, pero no se especifica el contexto nativo) |
+| Tipos de cuantizacion | GGUF ICE en cuatro tiers: 19G (4.240 bpw), 21G (4.695 bpw), 23G (5.143 bpw), 25G (5.597 bpw) |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (un unico archivo por tier, 753 tensores, block_count=41) |
 
 ## Arquitectura y entrenamiento
 
-Ornith-1.5-35B-A3B es un modelo de mezcla de expertos (MoE) con 256 expertos en total y aproximadamente 3.000 millones de parámetros activos por token. La arquitectura base es un Transformer estándar con la particularidad de incluir una cabeza de predicción multi-token (MTPv2) entrenada por ornith-ai, que está embebida en estos archivos GGUF y permite decodificación especulativa interna (self-speculative decoding) pasando el argumento `--spec-type draft-mtp` en llama.cpp. El número de bloques del modelo es 41 y el total de tensores es 753.
+El modelo base Ornith-1.5-35B-A3B emplea una arquitectura hibrida que combina capas de mezcla de expertos con componentes de espacio de estados (SSM) y atencion. La cabeza MTPv2 (Multi-Token Prediction) esta entrenada por ornith-ai e integrada en los GGUF, lo que habilita decodificacion autoespeculativa mediante el flag `--spec-type draft-mtp` en llama.cpp, sin necesidad de un modelo borrador auxiliar. El modelo cuenta con 256 expertos y un router MoE cuya salida determina que expertos se activan por token.
 
-La técnica de cuantización ICE, desarrollada por gbuzhf, clasifica los tensores según la distancia que recorre el error de cuantización a lo largo del forward. Las clases son: discrete (router del MoE, que se cuantiza en F32), recurrent (términos de decaimiento y de paso temporal de SSM, también en F32), cached (claves y valores de atención, en F16) e instant (el resto de tensores, incluidos los 256 expertos, que reciben el mayor presupuesto de bits). La calibración se realizó sobre la matriz de importancia de Tiel. No se dispone de información sobre el preentrenamiento del modelo base: número de tokens, composición del dataset o uso de RLHF/DPO está marcado como no disponible.
+La cuantizacion ICE, desarrollada por gbuzhf, clasifica los tensores segun la distancia que recorre el error de cuantizacion. Los tensores discretos (router MoE) y recurrentes (decaimiento SSM y terminos de timestep) se mantienen en F32 porque un error en ellos cambia categoricamente el comportamiento del modelo o se propaga a lo largo de la secuencia. Los tensores cacheados (`attn_k`, `attn_v`) se fijan en F16 porque se escriben una vez en la KV cache y se releen en cada token posterior. El resto del presupuesto, incluidos los 256 expertos, se asigna de forma uniforme a `gate`/`up`/`down`, colocando los tipos superiores primero en las capas mas superficiales. Las tres primeras clases representan solo el 0,14 % del modelo (47 M parametros, 0,15 GB). La calibracion se realizo con la matriz de importancia de Tiel y la evaluacion de divergencia KL contra el maestro BF16 usa WikiText-2 raw test con 64 chunks y n_ctx 2048.
 
 ## Capacidades
 
-- Generación de texto y conversación: modelo MoE orientado a lenguaje natural, con plantilla de chat Qwen-Sharp v22.4.1.
-- Contexto largo: ventana de hasta 256.000 tokens, capaz de procesar documentos extensos y conversaciones muy largas.
-- Decodificación especulativa: la cabeza MTPv2 integrada permite usar auto-decodificación especulativa en llama.cpp sin modelo auxiliar.
-- Cuantización flexible: cuatro niveles de compresión para ajustar el equilibrio entre fidelidad, tamaño y velocidad de inferencia.
-- Soporte de tool calling: no disponible en la información pública.
-- Capacidades multilingües: no disponibles.
-- Visión y audio: no soportados según la documentación disponible.
+- Generacion de texto conversacional: el modelo esta etiquetado como `conversational` y `text-generation`.
+- Decodificacion autoespeculativa mediante la cabeza MTPv2 embebida, que acelera la generacion en llama.cpp con `--spec-type draft-mtp`.
+- Soporte de plantilla de chat Qwen-Sharp v22.4.1 por defecto, con opcion de plantilla arrow4.0 para entornos de agentes.
+- Capacidades de agente y uso de herramientas a traves de la plantilla arrow4.0, que anade reglas de agente, notas por resultado de herramienta, linea STATUS, memoria de proyecto `.arrow` y reporte de retorno cuando el trabajo se bloquea.
+- Razonamiento multi-paso en el contexto de la capa de agente arrow4.0.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
+- Capacidades de vision o audio: no disponibles.
 
 ## Casos de uso
 
-- Asistentes conversacionales de largo recorrido: la ventana de 256.000 tokens permite mantener historiales de chat extensos sin truncar el contexto, útil en aplicaciones de atención al cliente o tutoría.
-- Análisis y resumen de documentos extensos: se pueden procesar contratos, informes o artículos completos en una sola pasada, gracias al contexto largo y al soporte de generación de texto.
-- Despliegue de servidores OpenAI-compatible: el repo base de ornith-ai ofrece recetas para levantar un servidor compatible con OpenAI en 2× 80 GB GPUs; esta cuantización permite hacerlo con menos recursos.
-- Inferencia acelerada en local: la cabeza MTPv2 embebida habilita la decodificación especulativa en llama.cpp, reduciendo la latencia perceptible en aplicaciones interactivas.
-- Ejecución en GPU de consumo: las variantes 19G-ICE y 21G-ICE pueden cargarse en tarjetas de 24 GB como la RTX 4090 o la L4, con una degradación medida en voz de KLD y perplexity.
-- Investigación sobre cuantización: los datos de divergencia KL, perplexity y probabilidad de top-1 publicados por el autor permiten comparar la fidelidad de distintos presupuestos de bits.
+- Despliegue local en estaciones de trabajo con GPU consumer: el tier 19G-ICE (18,82 GB) permite ejecutar el modelo en GPUs con 24 GB de VRAM, como la RTX 4090, manteniendo una divergencia KL de 0,0601 frente al BF16.
+- Servicio de chat conversacional en produccion: el tier 23G-ICE ofrece el mejor equilibrio calidad/tamano (KLD 0,0325, 22,83 GB) y supera a UD-Q4_K_XL tanto en cercania al BF16 como en tamano, lo que lo hace adecuado para endpoints de atencion al cliente con llama.cpp o servidores compatibles.
+- Agentes autonomos con uso de herramientas: la plantilla arrow4.0 y la memoria de proyecto `.arrow` permiten construir asistentes que ejecutan tareas multi-paso, mantienen estado entre invocaciones y reportan bloqueos de forma estructurada.
+- Generacion de codigo asistida en pipelines de CI/CD: el modelo puede integrarse en flujos de revision o generacion de parches mediante tool calling, con la ventaja de que el tier 21G-ICE ocupa 20,84 GB y cabe en GPUs de 24 GB.
+- Inferencia de baja latencia con decodificacion especulativa: la cabeza MTPv2 embebida permite acelerar la generacion sin cargar un modelo drafter adicional, reduciendo el consumo de VRAM total del sistema.
+- Evaluacion e investigacion de tecnicas de cuantizacion: los cuatro tiers con metricas KLD, PPL ratio y same top-1 publicadas sirven como referencia reproducible para comparar politicas de cuantizacion en modelos MoE.
+- Prototipado en entornos con VRAM limitada: el tier 19G-ICE cabe en GPUs de 24 GB con margen para contexto y KV cache, lo que permite experimentar con el modelo completo sin infraestructura de datacenter.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La única evaluación publicada es la fidelidad de la cuantización frente al modelo bf16 de referencia, medida en divergencia KL y perplexity sobre WikiText-2.
+Metricas de cuantizacion publicadas por el autor. Divergencia KL contra el maestro BF16, WikiText-2 raw test, 64 chunks, n_ctx 2048. Mean PPL(base) = 7,494953 ± 0,079236. El score "overall" es el compuesto `0,70/(1+meanKLD) + 0,30*sameTop1` con BF16 = 100.
 
-| Tier | Tamano (GB) | KLD medio | KLD 99% | KLD 99.9% | PPL ratio | Mismo top-1 | Overall |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| 25G-ICE | 24.84 | 0.0284 | 0.286 | 1.120 | 0.9851 | 93.44% | 96.1 |
-| 23G-ICE | 22.83 | 0.0325 | 0.335 | 1.177 | 0.9900 | 92.85% | 95.7 |
-| 21G-ICE | 20.84 | 0.0389 | 0.419 | 1.584 | 1.0001 | 92.24% | 95.1 |
-| 19G-ICE | 18.82 | 0.0601 | 0.616 | 2.387 | 1.0013 | 90.33% | 93.1 |
+| Tier | Tamano | Mean KLD | KLD 99% | KLD 99,9% | PPL ratio | Same top-1 | bpw activo | bpw archivo | Overall |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 25G-ICE | 24,84 GB | 0,0284 | 0,286 | 1,120 | 0,9851 | 93,44% | 7,686 | 5,597 | 96,1 |
+| 23G-ICE | 22,83 GB | 0,0325 | 0,335 | 1,177 | 0,9900 | 92,85% | 7,523 | 5,143 | 95,7 |
+| 21G-ICE | 20,84 GB | 0,0389 | 0,419 | 1,584 | 1,0001 | 92,24% | 7,357 | 4,695 | 95,1 |
+| 19G-ICE | 18,82 GB | 0,0601 | 0,616 | 2,387 | 1,0013 | 90,33% | 7,192 | 4,240 | 93,1 |
 
-La métrica "overall" es un compuesto definido por el autor como `0.70/(1+meanKLD) + 0.30*sameTop1`, donde la fidelidad bf16 se fija en 100. El tamaño del archivo se corresponde con el peso en disco.
+Comparaciones declaradas por el autor frente a otras escaleras de cuantizacion:
+
+| Comparacion | Resultado |
+|---|---|
+| 23G-ICE vs UD-Q4_K_XL | 14,5 % mas cerca del BF16 y 0,37 GB mas pequeno |
+| 25G-ICE vs APEX-I-Balanced (26,28 GB / 0,0345) | 12 % mejor KLD y 1,4 GB mas pequeno |
+| 25G-ICE vs UD-Q5_K_S (25,83 GB) | UD-Q5_K_S es mas fuerte por encima de 25 GB |
+| 21G-ICE vs UD-Q4_K_XL (0,0380) | Calidad esencialmente equivalente con 2,36 GB menos |
+| 19G-ICE vs UD-IQ4_XS (0,0723) | 17 % mas cerca del BF16 por 0,14 GB adicionales |
+
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el tamaño de cada archivo GGUF es el mínimo de VRAM necesario para cargar los pesos. Para el tier 19G-ICE se necesitan ~19 GB más memoria para la caché KV; para 21G-ICE ~21 GB; para 23G-ICE ~23 GB; y para 25G-ICE ~25 GB.
-- GPU recomendadas: los tiers de hasta 21G pueden ejecutarse en una RTX 4090 (24 GB) con contexto moderado. Para usar el contexto completo de 256.000 tokens se recomiendan configuraciones de 2× 80 GB, como las descritas por ornith-ai para su versión bf16. Los tiers 23G y 25G requieren al menos 24 GB de VRAM, dejando poco margen para caché KV.
-- Opciones de despliegue: llama.cpp (soporte nativo GGUF), Ollama, y servidores compatibles con OpenAI como vLLM o TGI.
-- Latencia y throughput: no disponible en la información publicada.
+- VRAM estimada para inferencia: entre 18,82 GB y 24,84 GB segun el tier (19G a 25G), mas el espacio para KV cache y contexto.
+- GPUs recomendadas: RTX 4090 (24 GB) para los tiers 19G, 21G y 23G; A100 40/80 GB, H100 o RTX 6000 Ada para el tier 25G con contexto amplio.
+- Cabe en GPU consumer: si, los tiers 19G y 21G caben en GPUs de 24 GB; el tier 23G requiere gestion cuidadosa de contexto y KV cache.
+- Opciones de despliegue: llama.cpp (referencia del autor, con soporte de `--spec-type draft-mtp`), llama-server con `--jinja` y plantilla de chat, endpoints compatibles con la API de Hugging Face.
+- Latencia y throughput: no disponibles. La decodificacion especulativa con MTPv2 puede reducir la latencia, pero no se publican cifras.
 
 ## Comparativa con modelos similares
 
-No se dispone de resultados públicos que permitan comparar Ornith-1.5-35B-A3B con otros modelos de la misma categoría (otros MoE de ~35B con ~3B activos). La única comparativa publicada en la model card es entre las cuantizaciones ICE y las escaleras de cuantización Unsloth Dynamic (UD) y APEX, todas aplicadas al mismo modelo base. Según el autor, el tier 23G-ICE supera a `UD-Q4_K_XL` por ser un 14.5% más cercano a bf16 y 0.37 GB más pequeño; el 25G-ICE supera a `APEX-I-Balanced` por 12% de fidelidad siendo 1.4 GB menor; y el 19G-ICE es un 17% más cercano a bf16 que `UD-IQ4_XS`. Estas comparativas internas no deben interpretarse como comparaciones con modelos independientes.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Ornith-1.5-35B-A3B (23G-ICE) | 35,5 B totales (MoE) | no disponible | MIT | GGUF | KLD 0,0325, 22,83 GB |
+| Ornith-1.5-35B-A3B (UD-Q4_K_XL) | 35,5 B totales (MoE) | no disponible | MIT | GGUF | KLD 0,0380, 23,20 GB aprox. |
+| Ornith-1.5-35B-A3B (UD-Q5_K_S) | 35,5 B totales (MoE) | no disponible | MIT | GGUF | 25,83 GB, mas fuerte por encima de 25 GB |
+| Ornith-1.5-35B-A3B (APEX-I-Balanced) | 35,5 B totales (MoE) | no disponible | MIT | GGUF | KLD 0,0345, 26,28 GB |
+
+Las comparaciones se limitan a variantes de cuantizacion del mismo modelo base. No se dispone de datos de modelos de otros autores con los que comparar parametros activos, contexto o rendimiento en tareas.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados en la información disponible.
-- Riesgo de alucinación: no se han publicado evaluaciones de alineación o seguridad; se recomienda uso supervisado en producción.
-- La cuantización ICE es una adaptación no oficial. En los niveles inferiores la fidelidad disminuye: el 19G-ICE presenta un KLD medio de 0.0601 y un KLD en el percentil 99.9 de 2.387, lo que puede traducirse en cambios perceptibles en las respuestas.
-- El contexto de 256.000 tokens es la capacidad teórica del modelo. En la práctica, mantener un contexto completo requiere gran cantidad de memoria y puede afectar a la velocidad de inferencia.
-- No se han publicado datos sobre idiomas soportados ni sobre rendimiento en lenguas distintas del inglés.
-- El modelo no incluye tool calling, visión ni capacidades multimodales según la documentación consultada.
-- La licencia MIT permite uso comercial, pero no se han encontrado evaluaciones de riesgos legales más allá de la licencia declarada.
+- Los benchmarks publicados son exclusivamente de fidelidad de cuantizacion (KLD, PPL, same top-1); no hay evaluaciones de tareas que permitan inferir calidad en razonamiento, codigo o matematicas.
+- El modelo base es de tipo MoE con 256 expertos; el comportamiento del router en dominios fuera de la distribucion de calibracion puede degradarse de forma no capturada por la metrica KLD.
+- La plantilla de chat por defecto es Qwen-Sharp v22.4.1; la plantilla arrow4.0 para agentes es opcional y debe cargarse explicitamente con `--chat-template-file`.
+- La licencia MIT permite uso comercial, pero el modelo base y la cabeza MTPv2 provienen de ornith-ai; conviene verificar la licencia del modelo base original.
+- No se dispone de informacion sobre sesgos, idiomas soportados ni riesgos de alucinacion especificos de este modelo.
+- El tier 19G-ICE presenta un KLD 99,9% de 2,387, mas del doble que el tier 23G, lo que indica mayor riesgo de degradacion en casos extremos.
+- La ventana de contexto nativa no esta documentada; el harness de evaluacion usa 2048 tokens, insuficiente para confirmar comportamiento en contextos largos.
+- El repositorio ocupa 87,4 GB, por lo que la descarga de todos los tiers requiere espacio considerable en disco.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/gbuzhf/Ornith-1.5-35B-A3B-TIEL-Calibrated-MTPv2-ICE-GGUF
-- Informe del método ICE: https://huggingface.co/gbuzhf/ICE-quantization
-- Repo base con cuantizaciones oficiales de ornith-ai: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF
-- Modelo base original: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
+- Repositorio Hugging Face: https://huggingface.co/gbuzhf/Ornith-1.5-35B-A3B-TIEL-Calibrated-MTPv2-ICE-GGUF
+- Informe completo de cuantizacion ICE: https://huggingface.co/gbuzhf/ICE-quantization
+- Plantillas de chat Qwen-Sharp-Arrow: https://huggingface.co/gbuzhf/Qwen-Sharp-Arrow-Chat-Templates
+- Modelo base: ornith-ai/Ornith-1.5-35B-A3B (no se proporciona URL directa en la informacion disponible)

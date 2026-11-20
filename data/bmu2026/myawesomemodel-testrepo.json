@@ -4,8 +4,8 @@
   "slug": "bmu2026-myawesomemodel-testrepo",
   "author": "BMU2026",
   "url": "https://huggingface.co/BMU2026/MyAwesomeModel-TestRepo",
-  "created_at": "2026-11-18T10:26:34.000Z",
-  "updated_at": "2026-11-18T10:38:15.000Z",
+  "created_at": "2026-11-19T09:05:19.000Z",
+  "updated_at": "2026-11-19T09:20:41.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 1693,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -39,31 +39,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "BMU2026/MyAwesomeModel-TestRepo · Hugging Face",
-      "url": "https://huggingface.co/BMU2026/MyAwesomeModel-TestRepo",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "tooldev/MyAwesomeModel-TestRepo · Hugging Face",
-      "url": "https://huggingface.co/tooldev/MyAwesomeModel-TestRepo",
-      "snippet": "5. License This code repository is licensed under the MIT License. The use of MyAwesomeModel models is also subject to the MIT License. The model series supports commercial use and distillation. 6. Contact If you have any questions, please raise an issue on our GitHub repository or contact us at contact@MyAwesomeModel.ai."
-    },
-    {
-      "title": "Myawesomemodel Testrepo - AI Model Insights & Benchmarks",
-      "url": "https://free2aitools.com/model/test-toolathon/myawesomemodel-testrepo",
-      "snippet": "Registry entry for model Myawesomemodel Testrepo; source metadata pending."
-    },
-    {
-      "title": "MyAwesomeModel-TestRepo | Deploy Guide & Hardware Fit | OpenModelMap",
-      "url": "https://openmodelmap.com/model/modoupennington876/myawesomemodel-testrepo",
-      "snippet": "MyAwesomeModel-TestRepo is primarily used for Embeddings. Myawesomemodel-Testrepo is a large language model released by modoupennington876, focusing on text generation and conversational interaction, suitable for server deployment."
-    },
-    {
-      "title": "MyAwesomeModel TestRepo (未知) — MMLU 30 | Deploy Guide & Hardware Fit ...",
-      "url": "https://openmodelmap.com/model/dongbobo/MyAwesomeModel-TestRepo",
-      "snippet": "MyAwesomeModel TestRepo by dongbobo. Scores: MMLU 30, . 未知 open-source AI model. MyAwesomeModel-TestRepo is an embedding model based on BERT by dongbobo, licensed under MIT and desi"
-    }
-  ]
+  "sources": []
 }

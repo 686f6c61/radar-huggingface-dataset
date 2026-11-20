@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 1897,
+  "downloads_30d": 1909,
   "trending_score": 0,
   "parameters": 630794080,
   "parameters_human": "630.8M",
@@ -46,16 +46,5 @@
   "renamed_to": "CladeTeam/CENO-600M-A230M-131k",
   "renamed_at": "2026-11-11T02:31:17.581Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "CladeTeam/CENO-600M-131k · Hugging Face",
-      "url": "https://huggingface.co/CladeTeam/CENO-600M-131k",
-      "snippet": "CENO-600M-131k is the long-context (131k) checkpoint of the 600M CENO DNA foundation model — a causal language model over genomic sequence built on a Nemotron-H Mamba / Attention / Mixture-of-Experts hybrid backbone (no MSA inputs)."
-    },
-    {
-      "title": "Ceno 600m 131k - AI Model Insights & Benchmarks",
-      "url": "https://free2aitools.com/model/cladeteam/ceno-600m-131k",
-      "snippet": "by CladeTeam cladeteam/ceno-600m-131k Free2AITools Nexus Index 39.0 S: Semantic50 Query-time baseline · scored live at search A: Authority0 P: Popularity0 R: Recency100 Q: Quality65 Tech Context 0.63BParams 134.144KCtx Vital Performance— Source → Share: 📤 𝕏 in 📣 🔗"
-    }
-  ]
+  "sources": []
 }

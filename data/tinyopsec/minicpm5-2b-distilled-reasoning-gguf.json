@@ -56,31 +56,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Bayer 04 Leverkusen Fußball GmbH | bayer04.de",
-      "url": "https://www.bayer04.de/de-de",
-      "snippet": "Die offizielle Webseite von Bayer 04 Leverkusen. News, Infos zu Spielern, Spielen in der Bundesliga, UEFA Champions League und …"
-    },
-    {
-      "title": "Teams | Bayer 04 Leverkusen",
-      "url": "https://www.bayer04.de/de-de/page/teams",
-      "snippet": "Current information on the Werkself, the Bayer 04 Women and all of the Bayer 04 teams. Here is the team overview on bayer04.de."
-    },
-    {
-      "title": "Bayer 04 Leverkusen | Vereinsprofil 2026/27 | Alle Teaminfos",
-      "url": "https://www.kicker.de/bayer-04-leverkusen/info/",
-      "snippet": "Alle Infos zum Verein Bayer 04 Leverkusen • Kader - News - Termine - Spielplan - Historie - Statistiken • Wettbewerbe: Bundesliga, …"
-    },
-    {
-      "title": "Bayer 04 Leverkusen | Kader | Bundesliga 2026/27 - kicker",
-      "url": "https://www.kicker.de/Bayer-04-Leverkusen/kader",
-      "snippet": "1. FSV Mainz 05. ..."
-    },
-    {
-      "title": "Bayer 04 Leverkusen - Kader im Detail 26/27 | Transfermarkt",
-      "url": "https://www.transfermarkt.de/bayer-04-leverkusen/kader/verein/15",
-      "snippet": "Diese Seite enthält die detaillierte Kader-Übersicht eines Vereins. Alle Spieler der jeweiligen Mannschaften werden mit ihrem Alter, …"
-    }
-  ]
+  "sources": []
 }

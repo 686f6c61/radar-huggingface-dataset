@@ -2,110 +2,113 @@
 
 ## Resumen
 
-`PeetPedro/qwen4_exp-8b-obliterated-abliterated-kompress-ultra` es un modelo de generacion de texto de 8B parametros publicado por el usuario PeetPedro en Hugging Face, construido sobre la arquitectura `Qwen4-Exp` que el autor referencia en la documentacion de Transformers. El modelo se presenta como un sistema hibrido lenguaje-vision-voz con modificaciones profundas sobre la base: proyeccion ortogonal dual para eliminar comportamientos de rechazo ("obliterated-abliterated"), empaquetado ternario Base-243 ("kompress-super-ultra") y un ciclo de reinforcement learning con GRPO sobre datos de voz.
+`qwen4_exp-8b-obliterated-abliterated-kompress-ultra` es un modelo de generación de texto de aproximadamente 8.000 millones de parámetros publicado por el usuario PeetPedro en Hugging Face. Se presenta como un fine-tune derivado de `Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B` y de la variante sin censura `xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic`, por lo que combina la arquitectura de la familia Qwen 3.5 con técnicas de "abliteration" y "obliteration" orientadas a eliminar los mecanismos de rechazo del modelo base.
 
-La relevancia del modelo es principalmente experimental: combina tecnicas poco habituales en modelos open weight, como atencion dispersa con indexador multi-query, capas de embedding por capa (PLE) y reflexiones de Householder duales para preservar la orientacion de las representaciones. La model card describe con detalle los presupuestos de VRAM del entrenamiento en una NVIDIA RTX A6000 de 48 GiB y las mezclas de datos con pesos racionales exactos.
+El modelo se distribuye bajo licencia Apache 2.0 y está pensado para ejecutarse con la librería `transformers`, con soporte declarado para cuantizaciones ternarias y BitNet, así como exportaciones a MLX y Ollama. Declara capacidades en razonamiento matemático de competición, generación de código, ingeniería de software agéntica, verificación formal en Ada/SPARK y razonamiento vocal full-duplex mediante RL (GRPO/GSPO).
 
-No obstante, conviene advertir que el modelo no presenta descargas ni interacciones en el momento de redactar esta ficha, que los benchmarks declarados no estan verificados (`verified: false`) y que varias de las afirmaciones tecnicas de la model card no son comprobables con la informacion disponible. Debe tratarse como una publicacion de investigacion temprana, no como un modelo listo para produccion.
+La relevancia de esta ficha radica en su naturaleza experimental: los benchmarks declarados por el autor (AIME, MATH-500, LiveCodeBench, SWE-bench Verified, GPQA Diamond, IFEval) son extraordinariamente altos para un modelo de 8B y aparecen marcados como no verificados, por lo que deben interpretarse con cautela y no como resultados reproducidos de forma independiente.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen4-Exp (transformer hibrido con GatedResidual, Qwen Sparse Attention, Gated DeltaNet y Per-Layer Embedding) |
-| Parametros totales | 8B (aproximado, segun el nombre del modelo) |
-| Parametros activos | no disponible |
-| Longitud de contexto | 32.775 tokens segun la model card (contexto de entrenamiento con DynamicCache); contexto maximo oficial no disponible |
-| Tipos de cuantizacion | Empaquetado ternario Base-243 (`kompress-super-ultra`), NVFP4; no se detallan otros formatos |
-| Idiomas soportados | en, hu, ja |
+| Arquitectura | Transformer derivado de Qwen 3.5 (fine-tune de DeepSeek-V4-Pro-Qwen3.5-9B); soporte declarado de cuantización ternaria/BitNet |
+| Parametros totales | ~8B (según el identificador del modelo; el base es de 9B) |
+| Parametros activos | no disponible (no se declara arquitectura MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Ternaria (ternary), BitNet, MLX-quant; pesos FP16 de referencia |
+| Idiomas soportados | en, hu, ja, zh |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible (la model card no especifica safetensors ni GGUF) |
+| Formato de pesos | safetensors (transformers); exportaciones declaradas a MLX y Ollama |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada es `Qwen4-Exp`, un transformer hibrido con cuatro pilares. Primero, `GatedResidual` con tres flujos residuales ternarios balanceados (`hc_count = 3`), `GatedNorm` y mezcla de entrada de bajo rango (`hc_lowrank = 64`). Segundo, `Qwen Sparse Attention` con un indexador multi-query a nivel de bloque (`indexer_head_dim = 64`, `indexer_budget = 2048`, `indexer_compress_ratio = 16`) combinado con recurrencia lineal `Gated DeltaNet` fusionada mediante `DynamicCache`. Tercero, `Per-Layer Embedding` que enriquece las capas 1, 6, 12, 18, 24, 30 y 36 con tablas de vocabulario fragmentadas y hashes de n-gramas. Cuarto, `Dual Orthogonal Subspace Projection`, que aplica una proyeccion entera exacta para eliminar una direccion concreta del espacio de representaciones y una reflexion de Householder dual en SO(16) con involucion exacta.
+El modelo parte de `Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B`, un fine-tune sobre la arquitectura Qwen 3.5, y de su variante `xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic`. Sobre esa base se aplican técnicas etiquetadas como "obliterated" y "abliterated", que en la práctica consisten en modificaciones de pesos (proyecciones ortogonales tipo Householder) para eliminar direcciones asociadas a comportamientos de rechazo. La model card declara métricas internas de este proceso, como "Obliterated Residual Dot Product = 0" y "Abliterated Dual-Householder L1 Drift = 0", que indican que las direcciones ablacionadas quedan anuladas en el espacio de pesos.
 
-El entrenamiento se realizo en una NVIDIA RTX A6000 de 48 GiB con una mezcla de 11 datasets del propio autor, con pesos racionales exactos que suman 1. La mezcla incluye corpus de fundamento (`cogitoergosumma-corpus`, `8bis-training-corpus`, `ultrawhale-dogfood`), datos de compresion (`kompress-v4-traindata`, `headroomz-compression-traces`, `kompress-ultra-bitnet-benchmarks`), SFT cuantico (`quantal-train-v2`, `music-quant-signs`), y datos de vision y voz (`axiom-quant-constellation`, `voice-finetuning`, `overflow-sounds`). La fase de RL uso GRPO con 11 epocas y 4 rollouts por epoca (44 rollouts totales), con una recompensa Q15 que paso de 24.822 a 32.647 y una perdida MOPD2 que bajo de 4.800 a 647.
+El entrenamiento posterior incluye aprendizaje por refuerzo con GRPO y GSPO sobre el dataset `PeetPedro/voice-finetuning`, además de fine-tuning supervisado sobre una colección de datasets propios (`ultrawhale-dogfood`, `8b-is-ecosystem`, `smart-tree-code`, `memnet-code`, `engram-docs`, entre otros). Se declara también una fase de destilación MOPD2 y una técnica de "weight programming" denominada Wukong-Omni p/qT, con una ratio de compresión declarada de 375:1 frente a FP16 y una resonancia de pesos de 32756/32768 en Q15. Estos términos no corresponden a técnicas estándar publicadas y no se detallan en la información disponible.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento en ingles, hungaro y japones.
-- Capacidades de vision declaradas (entrenamiento sobre `axiom-quant-constellation`), aunque no se detalla el codificador visual.
-- Capacidades de voz full-duplex declaradas mediante RL sobre `voice-finetuning` y `overflow-sounds`.
-- Razonamiento cuantico ("quantal reasoning") segun la model card, sin definicion tecnica precisa.
-- Eliminacion de comportamientos de rechazo mediante proyeccion ortogonal ("abliterated").
-- Soporte de tool calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Modo thinking explicito: no disponible.
+- Generación de texto generalista en inglés, húngaro, japonés y chino.
+- Razonamiento matemático de competición (AIME, MATH-500) según los resultados declarados por el autor.
+- Generación de código, con énfasis declarado en Rust `#![no_std]` y sistemas.
+- Ingeniería de software agéntica (resolución de issues sobre SWE-bench Verified).
+- Verificación formal en Ada 2022 / SPARK mediante `gnatprove`.
+- Seguimiento estricto de instrucciones (IFEval).
+- Razonamiento vocal full-duplex y entrenamiento por RL con GRPO/GSPO (según la model card).
+- Modo sin censura ("uncensored"/"heretic"): rechaza aplicar filtros de seguridad del modelo base.
+- Soporte de cuantización ternaria y BitNet, con exportación a MLX y Ollama.
 
 ## Casos de uso
 
-- Investigacion sobre tecnicas de abliteration: el modelo sirve como caso de estudio para analizar como la proyeccion ortogonal exacta sobre una direccion del espacio de representaciones afecta al comportamiento de rechazo, comparandolo con la base sin modificar.
-- Experimentos de cuantizacion ternaria: el empaquetado Base-243 declarado (250x frente a FP16) permite estudiar la viabilidad de pesos ternarios en modelos de 8B y su impacto en calidad.
-- Prototipado de asistentes multilingues en hungaro y japones: al declarar soporte de estos idiomas junto al ingles, puede usarse para evaluar la calidad en lenguas de bajos recursos dentro de un contexto de investigacion.
-- Analisis de arquitecturas hibridas de atencion: la combinacion de atencion dispersa con indexador y recurrencia lineal Gated DeltaNet es util para estudiar el equilibrio entre coste computacional y calidad en contextos de 32K tokens.
-- Experimentos de RL con GRPO sobre datos de voz: el ciclo documentado (44 rollouts, recompensa Q15) sirve como referencia para reproducir pipelines de RL en hardware de gama profesional (A6000).
-- Evaluacion de seguridad y alineamiento: al ser un modelo sin rechazos, es util en entornos controlados para probar clasificadores de seguridad, filtros de contenido y tecnicas de mitigacion de respuestas daninas.
+- Razonamiento matemático asistido: resolución de problemas de competición y verificación simbólica de resultados, apoyándose en el modo de razonamiento extendido declarado por el autor.
+- Generación de código de sistemas en Rust: el modelo declara entrenamiento específico en Rust `#![no_std]`, útil para firmware y entornos embebidos.
+- Agente de resolución de issues: integración en pipelines tipo SWE-bench para proponer parches sobre repositorios, con soporte de tool calling y razonamiento multi-paso.
+- Verificación formal de código Ada/SPARK: generación de anotaciones y contratos que `gnatprove` pueda descargar, según el caso de uso declarado en la model card.
+- Despliegue local en hardware de consumo: al ser un modelo de ~8B con soporte de cuantización ternaria y exportación a Ollama/MLX, puede ejecutarse en estaciones de trabajo y portátiles Apple Silicon.
+- Investigación sobre alineación y censura: al ser un modelo "abliterated", sirve como objeto de estudio para medir el efecto de la ablación de direcciones de rechazo sobre el comportamiento del modelo.
+- Procesamiento multilingüe en inglés, húngaro, japonés y chino para tareas de generación y resumen.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos disponibles son los declarados por el autor en el model-index, todos marcados como no verificados (`verified: false`) y sobre metricas internas de entrenamiento, no sobre benchmarks estandar.
+Resultados declarados por el autor en la model card (todos marcados como `verified: false`):
 
-| Metrica | Dataset | Valor | Verificado |
-|---|---|---|---|
-| GRPO Final Q15 Reward | PeetPedro/voice-finetuning | 32.647 | No |
-| MOPD2 Distillation Loss (Q15) | PeetPedro/voice-finetuning | 380 | No |
-| Obliterated Residual Dot Product | PeetPedro/voice-finetuning | 0 | No |
-| Abliterated Dual-Householder L1 Drift | PeetPedro/voice-finetuning | 0 | No |
+| Benchmark | Metrica | Valor declarado |
+|---|---|---|
+| AIME 2025/2026 | Pass@1 | 96,67 % (29/30) |
+| MATH-500 | Accuracy | 98,60 % (493/500) |
+| LiveCodeBench v5 | Pass@1 | 97,00 % (194/200) |
+| SWE-bench Verified | Resolved | 89,40 % (447/500) |
+| GPQA Diamond | Accuracy | 85,35 % (169/198) |
+| IFEval | Strict Prompt Accuracy | 97,41 % (527/541) |
+| Ada/SPARK gnatprove | Proved VCs | 100,00 % (111/111) |
+| voice-finetuning (GRPO) | Final Q15 Reward | 32749/32768 |
+| Wukong-Omni p/qT | Resonancia de pesos Q15 | 32756/32768 |
+| Wukong-Omni p/qT | Ratio de compresión vs FP16 | 375:1 |
+| MOPD2 | Distillation Loss Q15 | 380 |
+| Obliterated | Residual Dot Product | 0 |
+| Abliterated | Dual-Householder L1 Drift | 0 |
 
-No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estandar en la informacion disponible.
+No se han publicado resultados de benchmarks verificados de forma independiente en la información disponible. Los valores anteriores proceden exclusivamente de la model card del autor.
 
 ## Requisitos de hardware
 
-- VRAM de entrenamiento declarada: pico de 34.816 MiB sobre una NVIDIA RTX A6000 de 48 GiB (17/24 del total), con 14.336 MiB libres.
-- Desglose de VRAM en entrenamiento: 4.096 MiB de pesos base NVFP4/kompress, 1.536 MiB de adaptadores entrenables (GR, PLE, QSA), 4.608 MiB de optimizador AdamW de 8 bits y gradientes, 24.576 MiB de activaciones con checkpointing y DynamicCache a 32K de contexto.
-- VRAM estimada para inferencia: no disponible. Con pesos ternarios empaquetados podria ser sustancialmente inferior a un modelo de 8B en FP16, pero el autor no publica cifras de inferencia.
-- GPU recomendadas: no disponible. El unico hardware documentado es la A6000 usada para entrenar.
-- Compatibilidad con GPU de consumo: no confirmada; depende del formato de pesos final, que no se especifica.
-- Opciones de despliegue: la libreria declarada es `transformers`; no se mencionan vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia en FP16: ~16 GB para un modelo de ~8B.
+- VRAM estimada en cuantización de 8 bits: ~8-9 GB; en 4 bits: ~5-6 GB.
+- La cuantización ternaria/BitNet declarada podría reducir el requisito por debajo de 4 GB, aunque no se especifican cifras exactas.
+- GPU recomendadas: A100 40/80 GB o H100 para FP16 con contexto largo; RTX 4090 (24 GB) o RTX 3090 (24 GB) para FP16 ajustado; RTX 4060 Ti 16 GB o superiores para cuantizaciones de 8 bits.
+- Cabe en GPU de consumo: sí, en RTX 4090/3090 en FP16 y en GPUs de 8-16 GB con cuantización.
+- Opciones de despliegue: `transformers`, vLLM, llama.cpp, Ollama (exportación declarada), MLX (Apple Silicon).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
-| PeetPedro/qwen4_exp-8b-obliterated-abliterated-kompress-ultra | 8B | 32.775 tokens (entrenamiento) | Apache 2.0 | Arquitectura experimental, sin descargas, benchmarks no verificados |
-| huihui-ai/Qwen3-8B-abliterated | 8B | no disponible en la busqueda | no disponible en la busqueda | Version abliterated de Qwen3-8B, publicada por huihui-ai |
-| Modelos abliterated indexados en abliteratedmodels.org | Variable (8B y otros) | Variable | Variable | Indice de 962 modelos sin rechazos, con fichas de hardware y licencia |
+| `PeetPedro/qwen4_exp-8b-obliterated-abliterated-kompress-ultra` | ~8B | no disponible | Apache 2.0 | Fine-tune sin censura con benchmarks no verificados |
+| `Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B` (base) | 9B | no disponible | no disponible | Modelo base del fine-tune |
+| `xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic` (base) | 9B | no disponible | no disponible | Variante sin censura previa |
+| Qwen 3.5 8B/9B oficial | ~8-9B | no disponible | Apache 2.0 (habitual en la familia Qwen) | Referencia de la arquitectura subyacente |
 
-La comparacion con Qwen3-8B-abliterated es la mas directa por tamano y por la tecnica de abliteration, pero no se dispone de datos de rendimiento comparables para establecer una jerarquia de calidad. El resto de modelos del indice de abliteratedmodels.org son alternativas de la misma categoria funcional, sin datos especificos en la informacion disponible.
+No se dispone de datos de rendimiento verificados de los modelos comparables en la información proporcionada, por lo que la comparación cuantitativa no está disponible.
 
 ## Limitaciones y advertencias
 
-- Modelo sin descargas ni interacciones en Hugging Face en el momento de la ficha: no hay evidencia de uso independiente ni validacion externa.
-- Todos los benchmarks declarados estan marcados como no verificados por el propio autor.
-- La model card contiene afirmaciones tecnicas (arquitectura Qwen4-Exp, empaquetado Base-243, reflexiones de Householder exactas) que no se pueden contrastar con documentacion externa ni con resultados reproducibles.
-- El modelo esta "abliterated": se han eliminado los comportamientos de rechazo, por lo que puede generar contenido danino, sesgado o inapropiado sin filtros. No es apto para despliegues orientados al usuario final sin capas de seguridad adicionales.
-- Riesgo elevado de alucinacion: no hay evaluaciones publicadas de fidelidad factual ni de calibracion.
-- Cobertura limitada a tres idiomas (en, hu, ja); el castellano no esta declarado como idioma soportado.
-- El contexto documentado (32.775 tokens) corresponde a la configuracion de entrenamiento, no a un maximo oficial verificado.
-- Aunque la licencia es Apache 2.0, la ausencia de validacion externa y de pesos en formatos estandar dificulta su uso en produccion.
-- El nombre del modelo sugiere una base "Qwen4-Exp" que no se corresponde con ningun modelo publico conocido de la familia Qwen en la informacion disponible; conviene tratarlo con cautela.
+- Todos los benchmarks proceden del autor y están marcados como no verificados; no deben tomarse como resultados reproducidos.
+- El modelo es "abliterated"/"uncensored": se ha eliminado deliberadamente el comportamiento de rechazo, lo que implica un riesgo elevado de generar contenido dañino, ilegal o inseguro sin filtros.
+- Riesgo de alucinación no cuantificado; los resultados tan altos en matemáticas y código sugieren posible sobreajuste a los conjuntos de evaluación o contaminación de datos.
+- Idiomas soportados limitados a inglés, húngaro, japonés y chino; el castellano no figura entre ellos.
+- Longitud de contexto no disponible, lo que dificulta planificar despliegues con prompts largos.
+- La licencia Apache 2.0 permite uso comercial, pero la ausencia de filtros de seguridad traslada al integrador toda la responsabilidad legal y ética.
+- Términos como "Wukong-Omni p/qT", "MOPD2" o "8b-agy fan-out" no corresponden a técnicas estándar publicadas y no se documentan con detalle; deben tratarse con escepticismo.
+- No se especifican datos sobre sesgos, composición del dataset de entrenamiento ni procesos de evaluación de seguridad.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/PeetPedro/qwen4_exp-8b-obliterated-abliterated-kompress-ultra
-- Documentacion de la arquitectura Qwen4-Exp en Transformers: https://huggingface.co/docs/transformers/en/model_doc/qwen4_exp
-- Dataset `PeetPedro/cogitoergosumma-corpus`: https://huggingface.co/datasets/PeetPedro/cogitoergosumma-corpus
-- Dataset `PeetPedro/8bis-training-corpus`: https://huggingface.co/datasets/PeetPedro/8bis-training-corpus
-- Dataset `PeetPedro/ultrawhale-dogfood` (doi:10.57967/hf/9695): https://huggingface.co/datasets/PeetPedro/ultrawhale-dogfood
-- Dataset `PeetPedro/kompress-v4-traindata`: https://huggingface.co/datasets/PeetPedro/kompress-v4-traindata
-- Dataset `PeetPedro/headroomz-compression-traces`: https://huggingface.co/datasets/PeetPedro/headroomz-compression-traces
-- Dataset `PeetPedro/kompress-ultra-bitnet-benchmarks`: https://huggingface.co/datasets/PeetPedro/kompress-ultra-bitnet-benchmarks
-- Dataset `PeetPedro/quantal-train-v2`: https://huggingface.co/datasets/PeetPedro/quantal-train-v2
-- Dataset `PeetPedro/music-quant-signs`: https://huggingface.co/datasets/PeetPedro/music-quant-signs
-- Dataset `PeetPedro/axiom-quant-constellation`: https://huggingface.co/datasets/PeetPedro/axiom-quant-constellation
-- Dataset `PeetPedro/voice-finetuning`: https://huggingface.co/datasets/PeetPedro/voice-finetuning
-- Dataset `PeetPedro/overflow-sounds`: https://huggingface.co/datasets/PeetPedro/overflow-sounds
-- Indice de modelos abliterated: https://www.abliteratedmodels.org/
-- Modelo comparable `huihui-ai/Qwen3-8B-abliterated`: https://huggingface.co/huihui-ai/Qwen3-8B-abliterated
+- Modelo base: https://huggingface.co/Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B
+- Variante heretic: https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic
+- Repositorio del motor fan-out: https://codeberg.org/8b-is/eightb-agy-fanout
+- Repositorio Wukong-Omni: https://github.com/8b-is/eightb-agy-fanout
+- Dataset voice-finetuning: https://huggingface.co/datasets/PeetPedro/voice-finetuning
+- Dataset 8b-is-ecosystem: https://huggingface.co/datasets/PeetPedro/8b-is-ecosystem

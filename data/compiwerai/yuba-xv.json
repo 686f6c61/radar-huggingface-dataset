@@ -5,7 +5,7 @@
   "author": "CompiwerAI",
   "url": "https://huggingface.co/CompiwerAI/YUBA-XV",
   "created_at": "2026-11-18T21:42:36.000Z",
-  "updated_at": "2026-11-18T21:42:51.000Z",
+  "updated_at": "2026-11-19T18:13:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 15,
   "trending_score": 0,
   "parameters": 9409813744,
   "parameters_human": "9.41B",

@@ -2,116 +2,94 @@
 
 ## Resumen
 
-DeepJ TinyStories es un modelo de lenguaje experimental de 1.301.120 parámetros publicado por el usuario netsrik en Hugging Face y entrenado con la librería DeepJ, un framework de inferencia y entrenamiento escrito en Java. Se trata de una implementación reducida de arquitectura estilo DeepSeek (Transformer con atención latente, Q rank 64 y KV rank 32), con 4 capas, tamaño oculto 128, 4 cabezas de atención y un vocabulario BPE de 2.048 tokens. El checkpoint se distribuye en el formato binario versionado propio de DeepJ (`model.dj`), no en safetensors ni GGUF, por lo que no es cargable directamente con la librería Transformers de Python.
+DeepJ TinyStories es un modelo de lenguaje experimental de 1.301.120 parámetros desarrollado por netsrik y entrenado con DeepJ, una biblioteca de redes neuronales en Java con tensores compartidos, diferenciación automática y ejecución en CPU con aceleración opcional mediante Apple Metal. El modelo implementa la arquitectura Prism, un transformer decoder-only propio de DeepJ, y su propósito es demostrar el funcionamiento del stack de entrenamiento e inferencia de la biblioteca sobre un corpus controlado.
 
-El modelo se ha entrenado sobre el dataset sintético TinyStories en inglés (cuentos infantiles generados por modelos mayores), con 10.000 pasos de entrenamiento, batch size 1 y secuencias de 128 tokens. Sobre 100 ventanas deterministas de validación (12.800 tokens) obtiene una pérdida de 2,182273 y una perplejidad de 8,866. No es un modelo de propósito general: su función es servir como banco de pruebas a escala mínima para la arquitectura y el toolchain de DeepJ.
+El modelo se entrenó sobre TinyStories, un conjunto de datos sintético en inglés compuesto por cuentos infantiles, y se evalúa en 100 ventanas deterministas de validación (12.800 tokens) con una pérdida de 2,182273 y una perplejidad de 8,866. No está pensado como asistente de propósito general ni como modelo de producción, sino como una pieza de referencia y validación del ecosistema DeepJ.
 
-Su relevancia actual es fundamentalmente didáctica y de ingeniería: permite reproducir en unos pocos megabytes de pesos el pipeline completo de una arquitectura estilo DeepSeek (tokenizador BPE propio, configuración de atención con rangos de proyección, carga de checkpoint binario) y ejecutarlo íntegramente en CPU dentro de una JVM, sin dependencias de CUDA ni de ecosistema Python. La licencia MIT y el reducido tamaño del repositorio facilitan su uso como referencia en docencia, pruebas de regresión de la librería y experimentos de ablación a escala diminuta.
+Su relevancia es acotada pero concreta: permite reproducir de extremo a extremo un pipeline de entrenamiento e inferencia en Java puro, sin dependencias de Python ni de la pila Transformers, con formatos binarios propios (`model.dj` y `tokenizer.bpe`) y una API de generación con caché KV por petición.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer estilo DeepSeek (atención latente con Q rank 64 y KV rank 32), 4 capas |
-| Parametros totales | 1.301.120 |
-| Longitud de contexto | no disponible (el entrenamiento uso secuencias de 128 tokens) |
-| Tipos de cuantizacion | no disponible (no se publican variantes GGUF, AWQ, GPTQ ni cuantizaciones del checkpoint) |
-| Idiomas soportados | ingles (en) |
+| Arquitectura | Transformer decoder-only (Prism, DeepJ) |
+| Parámetros totales | 1.301.120 |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | 128 tokens de entrenamiento; ventana de configuración de 2.048 tokens |
+| Tipos de cuantización | no disponible |
+| Idiomas soportados | inglés (en) |
 | Licencia | MIT |
-| Formato de pesos | `model.dj` (formato binario versionado de DeepJ) y `tokenizer.bpe` |
-| Tamano oculto | 128 |
-| Cabezas de atencion | 4 |
-| Capas | 4 |
-| Vocabulario | 2.048 tokens (BPE entrenado desde una muestra acotada del split de entrenamiento) |
-| Dataset de entrenamiento | TinyStories (ingles sintetico, licencia CDLA-Sharing-1.0) |
-| Pasos de entrenamiento | 10.000, batch size 1, secuencias de 128 tokens |
-| Libreria de ejecucion | deepj (Java), version 0.6.0-alpha o posterior compatible |
-| Descargas en Hugging Face | 192 |
-| Likes | 0 |
-| Tamano del repositorio | 0,0 GB (redondeo reportado por Hugging Face) |
+| Formato de pesos | `model.dj` (formato binario versionado de DeepJ); tokenizador en `tokenizer.bpe` |
 
 ## Arquitectura y entrenamiento
 
-El modelo implementa un Transformer de tipo decoder con esquema de atención inspirado en DeepSeek: proyecciones de query con rango 64 y de clave/valor con rango 32, un tamaño oculto de 128 y 4 cabezas de atención distribuidas en 4 capas. La configuración declarada en el ejemplo de uso de la model card es `DeepSeekConfig(2048, 128, 128, 4, 4, 384, 64, 32, 0.2f, 1.0f)`, que codifica vocabulario, dimensiones de modelo y de atención, rangos de proyección y dos hiperparámetros adicionales. El autor indica explícitamente que no es una implementación exacta de DeepSeek V2, V3 ni R1, y que actualmente no emplea caché KV incremental, lo que limita su eficiencia en generación autoregresiva de secuencias largas.
+El modelo usa la arquitectura Prism de DeepJ: un transformer decoder-only con 4 capas, tamaño oculto de 128, 4 cabezas de atención, rango de consulta (Q) de 64, rango de clave-valor (KV) de 32, vocabulario BPE de 2.048 tokens y una dimensión de feed-forward de 384 según la configuración de carga publicada. La generación emplea una caché KV con alcance de petición que, por defecto, se reconstruye cuando la ventana de contexto se desplaza; la generación rodante opcional evita reconstrucciones repetidas, aunque altera el comportamiento de la atención tras el desalojo y no amplía la capacidad de contexto aprendida.
 
-El entrenamiento consistió en 10.000 pasos con batch size 1 y secuencias de 128 tokens, lo que equivale a aproximadamente 1,28 millones de tokens vistos, una cifra del mismo orden que el número de parámetros del modelo. Los datos proceden íntegramente del dataset TinyStories, compuesto por cuentos infantiles en inglés generados sintéticamente con un vocabulario deliberadamente simple, y el tokenizador BPE se entrenó a partir de una muestra acotada del split de entrenamiento. No se documenta en la información disponible el uso de RLHF, DPO ni ninguna fase de alineación posterior al preentrenamiento.
+El entrenamiento consistió en 10.000 pasos con tamaño de lote 1 y secuencias de 128 tokens sobre TinyStories, un dataset sintético en inglés con licencia CDLA-Sharing-1.0. El vocabulario BPE se entrenó a partir de una muestra acotada del split de entrenamiento. No se documenta en la información disponible el uso de RLHF, DPO ni otras fases de alineación.
 
 ## Capacidades
 
-- Generación de texto en inglés a partir de un prompt corto, con énfasis en narrativa simple y cuentos infantiles.
-- Continuación de historias con coherencia local a lo largo de unas pocas decenas de tokens, en línea con la distribución de TinyStories.
-- Tokenización BPE propia entrenada sobre el corpus, utilizable de forma independiente para probar flujos de tokenización en Java.
-- Ejecución completa en una JVM sin dependencias nativas de GPU, mediante la librería DeepJ.
-- Carga y guardado de checkpoints en el formato binario versionado de DeepJ, útil para validar compatibilidad entre versiones del framework.
-- No dispone de soporte de tool calling ni function calling.
-- No dispone de capacidades de agente, planificación ni razonamiento multi-paso.
-- No dispone de modo de razonamiento explícito (thinking mode).
-- No dispone de visión, audio ni ninguna otra modalidad adicional al texto.
-- Modelo monolingüe en inglés: no se ha entrenado ni evaluado en castellano ni en otros idiomas.
+- Generación de texto en inglés a partir de un prefijo, con control de temperatura, top-k, máximo de tokens, semilla y penalización por repetición.
+- Modelado de secuencias cortas de estilo narrativo infantil, coherente con la distribución de TinyStories.
+- Inferencia en CPU con aceleración opcional en Apple Metal a través de DeepJ.
+- Caché KV por petición y generación rodante opcional para reducir reconstrucciones de contexto.
+- Carga de pesos y tokenizador mediante formatos binarios propios de DeepJ (`model.dj`, `tokenizer.bpe`).
+- No dispone de tool calling, function calling, razonamiento multi-paso, agentes, visión, audio ni modo de pensamiento.
+- Multilingüismo: únicamente inglés.
 
 ## Casos de uso
 
-- Docencia de arquitecturas estilo DeepSeek: el modelo permite mostrar en clase cómo se configura una atención con rangos de proyección Q/KV distintos del tamaño oculto y cómo afecta eso al número total de parámetros, en un caso lo bastante pequeño como para recorrerlo en una sesión práctica.
-- Pruebas de integración de la librería DeepJ: al ser un checkpoint versionado y estable, sirve para verificar que una versión nueva del framework carga correctamente `model.dj` y `tokenizer.bpe` y reproduce la misma salida ante la misma semilla.
-- Pruebas de regresión de formatos binarios: cualquier cambio en el esquema de serialización de DeepJ puede validarse contra este checkpoint de 1,3 millones de parámetros, cuyo coste de verificación es mínimo.
-- Generación de datos sintéticos a escala de juguete: el modelo puede producir borradores de cuentos infantiles que se filtren y se reutilicen como ejemplos adicionales en experimentos de aumento de datos sobre TinyStories, siempre con revisión humana.
-- Experimentos de ablación de bajo coste: al caber en CPU, permite medir el efecto de variar rangos de atención, número de capas o tamaño de vocabulario en la perplejidad sobre un conjunto de validación fijo, sin reservar GPU.
-- Verificación de pipelines de evaluación: su perplejidad de referencia (8,866 sobre 100 ventanas deterministas de TinyStories) sirve como sanity check para comprobar que un script de evaluación propio calcula la métrica de forma correcta.
-- Material de estudio sobre sobreajuste y escalado: con 1,28 millones de tokens vistos y 1,3 millones de parámetros, es un ejemplo claro de régimen de entrenamiento insuficiente, útil para ilustrar curvas de pérdida y límites de generalización.
-- Prototipado de tokenizadores BPE en Java: el archivo `tokenizer.bpe` permite probar carga, codificación y decodificación de un vocabulario pequeño sin depender de tokenizadores de Hugging Face.
+- Validación de la pila DeepJ: sirve como modelo de referencia para comprobar que la carga de checkpoints, el tokenizador BPE y la generación funcionan correctamente tras cambios en la biblioteca.
+- Pruebas de integración en proyectos Java: permite montar tests end-to-end de generación de texto sin salir de la JVM ni depender de Python.
+- Docencia y demostraciones de transformers: con 1,3 millones de parámetros y 4 capas, es adecuado para explicar atención, caché KV y muestreo en un entorno controlado.
+- Generación de cuentos sintéticos cortos: dado su entrenamiento en TinyStories, produce continuaciones narrativas simples en inglés para prototipos y experimentos.
+- Benchmarking de infraestructura: al ser determinista con semilla fija y tener una perplejidad de referencia publicada (8,866), permite comparar rendimiento de CPU frente a Metal en tareas de inferencia.
+- Pruebas de estrategias de decodificación: su API expone temperatura, top-k y penalización por repetición, lo que facilita experimentar con muestreo en un modelo pequeño y rápido.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos publicados en la información disponible son métricas de validación sobre TinyStories, calculadas por el autor. No hay resultados de MMLU, HumanEval, GSM8K ni de ninguna otra batería estándar.
-
-| Metrica | Valor | Condiciones |
+| Métrica | Valor | Conjunto de evaluación |
 |---|---|---|
-| Perdida (loss) | 2,182273 | 100 ventanas deterministas de validación de TinyStories, 12.800 tokens en total |
-| Perplejidad (perplexity) | 8,866 | Mismas 100 ventanas deterministas |
-| MMLU | no disponible | No evaluado |
-| HumanEval | no disponible | No evaluado |
-| GSM8K | no disponible | No evaluado |
-| Otras baterias estandar | no disponible | No evaluado |
+| Pérdida | 2,182273 | 100 ventanas deterministas de validación de TinyStories (12.800 tokens) |
+| Perplejidad | 8,866 | 100 ventanas deterministas de validación de TinyStories (12.800 tokens) |
 
-No se han publicado resultados de benchmarks adicionales en la información disponible.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 5,2 MB en fp32, 2,6 MB en fp16 y 1,3 MB en int8, calculados a partir de los 1.301.120 parámetros. No se publican checkpoints en estos formatos, por lo que la cifra es una estimación de tamaño, no una variante distribuida.
-- GPU recomendadas: ninguna en particular; el modelo no requiere acelerador. Cualquier GPU sirve, pero su uso no aporta ventaja apreciable frente a CPU.
-- Compatibilidad con GPU de consumo: cabe en cualquier GPU de consumo, incluida cualquier iGPU integrada y tarjetas con 4 GB o menos de memoria.
-- Ejecución en CPU: viable y esperable, dado el tamaño; el cuello de botella real es el intérprete de la JVM y la ausencia de caché KV incremental, que obliga a recomputar contexto en cada paso de generación.
-- Opciones de despliegue: exclusivamente la librería DeepJ 0.6.0-alpha o posterior compatible (Java, distribuida vía Maven Central con `io.github.kirstenali:deepj`). No es compatible con vLLM, llama.cpp, Ollama, TGI ni con la librería Transformers de Python, porque el checkpoint usa un formato binario propio.
-- Latencia y throughput: no disponibles. La model card no publica tiempos de generación por token ni mediciones de throughput.
+- VRAM estimada: inferior a 1 GB en precisión de 32 bits para los 1,3 millones de parámetros; el modelo está diseñado para ejecución en CPU.
+- GPU recomendadas: no requiere GPU; opcionalmente Apple Metal en equipos Apple Silicon. No se documenta soporte de CUDA.
+- Cabe en cualquier GPU de consumo e incluso en entornos sin GPU dedicada.
+- Opciones de despliegue: exclusivamente la biblioteca DeepJ (versión 1.0.0) en Java; no es compatible con vLLM, llama.cpp, Ollama, TGI ni con la librería Python Transformers.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato de pesos | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| DeepJ TinyStories (netsrik) | 1.301.120 | no disponible (entrenado con secuencias de 128 tokens) | `model.dj` (binario de DeepJ) | MIT | Hugging Face, requiere la libreria DeepJ en Java |
-| Familia TinyStories de referencia (Eldan y Li) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | Hugging Face, cargable con Transformers |
-| Otros modelos de menos de 5 millones de parametros para texto en ingles | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parámetros | Contexto | Licencia | Formato / ecosistema |
+|---|---|---|---|---|
+| DeepJ TinyStories | 1.301.120 | 128 tokens de entrenamiento (ventana de 2.048) | MIT | `model.dj` / DeepJ (Java) |
+| Modelos TinyStories de referencia (p. ej., variantes GPT-Neo de ~1M-10M) | ~1M-10M | variable | variable | safetensors / Transformers (Python) |
+| Frisky 90M (mismo autor) | ~90M | no disponible | no disponible | DeepJ, con API `DeepJChat.load` y CLI |
 
-La categoría natural de comparación son los modelos de la familia TinyStories publicados junto al dataset del mismo nombre, que también trabajan en el rango de uno a decenas de millones de parámetros sobre el mismo corpus sintético. La diferencia práctica principal frente a ellos no es de rendimiento, sino de ecosistema: DeepJ TinyStories solo es ejecutable desde Java con la librería DeepJ, mientras que los modelos de referencia del dataset son cargables con herramientas estándar de Python. No se dispone en la información proporcionada de cifras de parámetros, contexto o rendimiento de esos modelos alternativos que permitan una comparación numérica rigurosa.
+No se dispone de datos de rendimiento comparables de terceros en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo entrenado únicamente sobre cuentos infantiles en inglés de origen sintético: el dominio de aplicación es extremadamente estrecho y fuera de él la calidad cae de forma previsible.
-- Riesgo elevado de alucinación, repetición y texto incoherente en generaciones largas; el autor lo advierte explícitamente en la model card.
-- No ha sido evaluado en seguridad ni para uso en producción o aplicaciones posteriores ("not evaluated for safety or downstream use").
-- No es un asistente de propósito general ni está alineado con instrucciones humanas: no ha pasado por RLHF, DPO ni ajuste de instrucciones.
-- Sesgos conocidos: no documentados en la información disponible, pero al derivar de un corpus sintético infantil en inglés hereda la distribución y los sesgos de representación del generador que produjo TinyStories.
-- Limitación de idioma: solo inglés. No se ha entrenado ni validado en castellano.
-- Limitación de contexto: la información disponible no especifica una longitud de contexto máxima; el entrenamiento usó ventanas de 128 tokens, por lo que no hay garantía de comportamiento correcto más allá de esa longitud.
-- Ausencia de caché KV incremental: la generación de secuencias largas recomputa el contexto en cada paso, con el coste de cómputo asociado.
-- Restricciones de licencia: el código y los pesos se publican bajo MIT, lo que permite uso comercial, pero el dataset TinyStories se distribuye bajo CDLA-Sharing-1.0, condición que conviene revisar si se redistribuye el modelo o datos derivados.
-- Portabilidad limitada: el formato `model.dj` no es cargable con Transformers, lo que complica integrarlo en infraestructuras de inferencia convencionales.
-- Repositorio sin señales de comunidad: 192 descargas y 0 likes en la fecha de consulta, sin issues ni validación independiente documentada.
+- Entrenado exclusivamente con cuentos infantiles sintéticos en inglés; el dominio y el idioma están muy acotados.
+- Puede producir texto incorrecto, repetitivo, sesgado o inapropiado; no ha sido evaluado para seguridad ni para uso downstream.
+- No es un asistente de propósito general y no admite instrucciones, tool calling ni razonamiento multi-paso.
+- El contexto entrenado es de 128 tokens; la ventana de configuración de 2.048 no implica capacidad aprendida más allá de ese rango.
+- El checkpoint es anterior a la inclusión de la configuración de arquitectura embebida, por lo que hay que suministrarla manualmente al cargar.
+- Los formatos `model.dj` y `tokenizer.bpe` no son cargables directamente por la librería Python Transformers.
+- No se documentan opciones de cuantización ni soporte CUDA.
+- Licencia MIT: permite uso comercial, pero la calidad y la seguridad del modelo no están garantizadas para producción.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/netsrik/deepj-tinystories
-- Repositorio de la librería DeepJ: https://github.com/KirstenAli/DeepJ
-- Artefacto DeepJ 0.6.0-alpha en Maven Central: https://central.sonatype.com/artifact/io.github.kirstenali/deepj/0.6.0-alpha
+- Repositorio DeepJ: https://github.com/KirstenAli/DeepJ
+- Release DeepJ 1.0.0: https://github.com/KirstenAli/DeepJ/releases/tag/v1.0.0
+- Documentación de inferencia y generación rodante: https://github.com/KirstenAli/DeepJ/blob/master/docs/inference.md#rolling-generation
+- Documentación de la CLI de DeepJ: https://github.com/KirstenAli/DeepJ/blob/master/docs/cli.md
+- Modelo Frisky 90M (mismo autor): https://huggingface.co/netsrik/frisky-90m
 - Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories
-- Paper, blog o demo adicionales: no disponibles. Los resultados de la búsqueda web devueltos no guardan relación con este modelo (corresponden a documentación genérica sobre consultas a bases de datos) y no se ha localizado ningún recurso adicional específico.

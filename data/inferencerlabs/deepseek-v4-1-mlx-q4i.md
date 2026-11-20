@@ -2,103 +2,95 @@
 
 ## Resumen
 
-DeepSeek-V4.1-MLX-Q4i es una version cuantizada a 4 bits del modelo multimodal DeepSeek-V4.1-Flash, publicada por el usuario inferencerlabs en Hugging Face. Se trata de un build experimental orientado a ejecucion en hardware Apple Silicon mediante la libreria MLX, con el objetivo de comprimir el modelo original hasta que quepa en sistemas con 512 GiB de RAM. El pipeline declarado es image-text-to-text, es decir, el modelo acepta imagenes y texto como entrada y genera texto.
+DeepSeek-V4.1-MLX-Q4i es una cuantización en formato MLX del modelo DeepSeek-V4.1-Flash, publicada por el usuario inferencerlabs (no por DeepSeek). El modelo base es un transformer multimodal de tipo image-text-to-text desarrollado por deepseek-ai, orientado a conversación y generación de texto con entrada de imagen. Esta build concreta aplica una cuantización de 4 bits con el framework MLX de Apple, lo que la hace ejecutable en hardware Apple Silicon (M-series) mediante la librería `mlx` en lugar de CUDA.
 
-El repo ocupa 65,4 GB y esta etiquetado como cuantizado (Q4i), con MLX como libreria y relacion `quantized` respecto al modelo base `deepseek-ai/DeepSeek-V4.1-Flash`. El autor indica que la cuantizacion se ha realizado con una version modificada de MLX y que el build emplea un metodo interno denominado "INF", descrito como data-agnostic, para ajustar el modelo a las restricciones de memoria de un sistema de 512 GiB.
+La relevancia de esta ficha es doble. Por un lado, documenta una de las pocas rutas prácticas para ejecutar un modelo de la familia DeepSeek-V4.1 en Macs con memoria unificada. Por otro, el autor ha marcado explícitamente esta build como **deprecada**, recomendando en su lugar `inferencerlabs/DeepSeek-V4.1-Flash-MLX-Q9`, que según la model card ofrece mayor calidad y menor huella de memoria. Cualquier evaluación de producción debería partir de esa build Q9 y no de la Q4i descrita aquí.
 
-La relevancia de esta ficha es acotada y conviene ser explicito: no hay informacion publica sobre arquitectura, parametros, contexto, licencia real ni benchmarks. Los unicos datos verificables son el tamano del repo, el metodo de cuantizacion, el rendimiento medido en un M3 Ultra y el hecho de que deriva de DeepSeek-V4.1-Flash. Todo lo demas debe tratarse como no disponible.
+La información pública disponible es muy limitada: la model card original no incluye especificaciones de arquitectura, número de parámetros, contexto ni datos de entrenamiento. Esta ficha refleja únicamente lo verificable en la información proporcionada y marca como "no disponible" todo aquello que no consta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (deriva de DeepSeek-V4.1-Flash, arquitectura no especificada) |
+| Arquitectura | Transformer multimodal (image-text-to-text); detalles internos no disponibles |
 | Parametros totales | no disponible |
-| Parametros activos | no disponible |
+| Parametros activos | no disponible (no consta que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q4i (4 bits, cuantizacion MLX modificada) |
-| Idiomas soportados | en (segun metadatos de Hugging Face) |
+| Tipos de cuantizacion | 4 bits (sufijo Q4i), formato MLX |
+| Idiomas soportados | en (inglés) |
 | Licencia | no disponible |
-| Formato de pesos | MLX (cuantizado); safetensors no confirmado |
-| Tamano del repositorio | 65,4 GB |
-| Modalidad | image-text-to-text (entrada de imagen y texto, salida de texto) |
-| Libreria | mlx |
+| Formato de pesos | MLX (librería `mlx`); tamano del repo 467,0 GB |
 | Modelo base | deepseek-ai/DeepSeek-V4.1-Flash |
 | Relacion con el base | quantized |
+| Pipeline | image-text-to-text |
+| Libreria | mlx |
+| Descargas / likes | 1.596 / 4 |
+| Creado / actualizado | 2026-09-10 / 2026-10-17 |
+| Estado | deprecado por el autor (recomienda Q9) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura interna, el numero de parametros, la composicion del dataset de entrenamiento, el numero de tokens vistos ni si se aplicaron tecnicas de alineacion como RLHF o DPO. El unico dato tecnico aportado por el autor es que este build usa el metodo "INF", descrito como data-agnostic, para comprimir el modelo hasta que opere dentro de las restricciones de memoria de un sistema con 512 GiB de RAM, y que la cuantizacion se ha realizado con una version modificada de MLX.
+No se dispone de información sobre la arquitectura interna del modelo base DeepSeek-V4.1-Flash en la documentación proporcionada: no constan el número de capas, la dimensión del modelo, el tipo de atención, ni si emplea mezcla de expertos. La única información estructural fiable es que se trata de un modelo multimodal de pipeline `image-text-to-text`, es decir, acepta imágenes y texto como entrada y genera texto como salida, y que está orientado a uso conversacional.
 
-Al tratarse de una derivacion cuantizada del modelo DeepSeek-V4.1-Flash, la arquitectura subyacente corresponde a dicho modelo base, pero no se dispone de su descripcion tecnica en la informacion proporcionada. No se ha documentado ninguna innovacion de decodificacion (especulativa, attention linear, SSM, etc.) ni detalles de entrenamiento.
+Tampoco hay datos sobre el corpus de entrenamiento, el número de tokens, la composición del dataset ni si se aplicaron etapas de RLHF o DPO. Esta build concreta no introduce cambios arquitectónicos: es una cuantización de 4 bits del modelo base realizada con MLX, la librería de Apple para ejecución eficiente en silicio unificado. El tamaño del repositorio (467,0 GB) es notablemente elevado para una cuantización de 4 bits, lo que sugiere que el modelo base es de gran escala, aunque no permite inferir el número exacto de parámetros sin conocer el esquema de cuantización aplicado.
 
 ## Capacidades
 
-- Generacion de texto a partir de entradas multimodales (imagen y texto), segun el pipeline declarado `image-text-to-text`.
-- Procesamiento de imagenes junto con lenguaje natural, lo que habilita tareas de descripcion, analisis y respuesta sobre contenido visual.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: los metadatos solo declaran ingles (`en`); no hay confirmacion de otros idiomas.
-- Capacidades especiales (thinking mode, audio, etc.): no disponible.
-- Razonamiento matematico y generacion de codigo: no disponible de forma explicita.
+- Generación de texto conversacional multi-turno, según el tag `conversational`.
+- Entrada multimodal de imagen y texto (`image-text-to-text`), lo que permite tareas de descripción, respuesta a preguntas sobre imágenes y diálogo con soporte visual.
+- Uso previsto principal en inglés (tag `en`); no consta soporte multilingüe adicional.
+- No hay información sobre soporte de tool calling / function calling.
+- No hay información sobre capacidades de agente o razonamiento multi-paso.
+- No hay información sobre modo "thinking", audio u otras modalidades.
+- No hay información sobre capacidades específicas de código o matemáticas.
 
 ## Casos de uso
 
-Nota: dado que no se dispone de especificaciones de contexto, licencia ni benchmarks, los casos siguientes son escenarios plausibles derivados de la modalidad image-text-to-text y deben validarse antes de cualquier uso en produccion.
-
-- Analisis de documentos escaneados: el modelo puede recibir una imagen de un documento y devolver texto estructurado o respuestas sobre su contenido, aprovechando su entrada multimodal.
-- Descripcion automatica de imagenes para accesibilidad: generacion de texto alternativo o descripciones para catalogos de imagenes, integrable en pipelines de publicacion.
-- Soporte visual en atencion al cliente: envio de capturas o fotografias por parte del usuario y respuestas generadas a partir de ellas, siempre que el contexto de conversacion sea suficiente.
-- Extraccion de informacion de capturas de pantalla: conversion de datos presentes en interfaces, tablas o graficos a texto utilizable en tareas posteriores.
-- Asistencia en tareas de inspeccion visual ligera: revision de imagenes para generar informes textuales preliminares, sujeto a supervision humana por el riesgo de alucinacion.
-- Ejecucion local en estaciones de trabajo Apple Silicon: despliegue en equipos con memoria unificada muy alta para prototipado e investigacion sin depender de la nube.
-- Experimentacion e investigacion en cuantizacion: uso del build para evaluar el impacto del metodo INF y de la cuantizacion Q4i sobre un modelo base de gran tamano.
+- **Asistente conversacional local en Mac**: al estar empaquetado en MLX, el modelo puede ejecutarse en Apple Silicon sin GPU NVIDIA, lo que permite desplegar un chatbot multimodal en estaciones de trabajo Mac con memoria unificada.
+- **Análisis de imágenes en flujo de escritorio**: el pipeline `image-text-to-text` permite construir herramientas nativas de macOS que reciban capturas o fotos y devuelvan descripciones o respuestas en lenguaje natural.
+- **Prototipado de aplicaciones multimodales**: útil para validar product pipelines de visión-lenguaje antes de migrar a infraestructura CUDA o a la build Q9 recomendada.
+- **Investigación sobre cuantización**: esta build sirve como referencia para estudiar el impacto de la cuantización a 4 bits en MLX frente a la Q9 del mismo autor, comparando calidad y consumo de memoria.
+- **Procesamiento por lotes de documentos con imagen**: en entornos donde el dato no puede salir del dispositivo, la ejecución local con MLX evita depender de APIs externas.
+- **Educación y demos**: permite mostrar un modelo de la familia DeepSeek-V4.1 en talleres o entornos docentes con hardware Apple, sin necesidad de clústeres GPU.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
-
-El unico dato de rendimiento aportado por el autor es una medicion de inferencia:
-
-| Metrica | Valor |
-|---|---|
-| Hardware | Apple M3 Ultra |
-| Rendimiento | ~14,6 tokens/s a 1000 tokens de contexto |
-| Memoria reportada | ~425,9 GiB |
-| Aplicacion de prueba | Inferencer app v2.3.8 |
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- Memoria: el autor reporta un consumo de aproximadamente 425,9 GiB en un sistema M3 Ultra, dentro de un equipo con 512 GiB de RAM. El repo descargable ocupa 65,4 GB, por lo que el consumo en ejecucion es muy superior al tamano de los pesos.
-- VRAM estimada para inferencia: no disponible de forma desglosada; la referencia de memoria unificada es de ~425,9 GiB.
-- GPU recomendadas: Apple Silicon de gama alta con memoria unificada muy amplia (M3 Ultra y equivalentes). No hay datos para GPU NVIDIA (A100, H100, RTX 4090).
-- Compatibilidad con GPU de consumo: no. Los requisitos de memoria reportados exceden ampliamente cualquier GPU de consumo actual.
-- Opciones de despliegue: MLX (libreria declarada), Inferencer app v2.3.8 (probada por el autor), y en general el ecosistema MLX para Apple Silicon. vLLM, llama.cpp, Ollama y TGI no estan confirmados para este formato.
-- Latencia y throughput estimados: ~14,6 tokens/s a 1000 tokens de contexto en M3 Ultra, segun el autor.
+- **VRAM/memoria estimada**: no disponible con precisión. El repositorio ocupa 467,0 GB, pero el tamaño en disco del repo no equivale al pico de memoria en inferencia; se requiere hardware con memoria unificada muy amplia para cargar los pesos.
+- **GPU recomendadas**: exclusivamente Apple Silicon (M-series) por el uso de MLX; no es ejecutable en CUDA con esta build.
+- **¿Cabe en consumer GPU?**: no aplica a GPU discretas NVIDIA/AMD. En Apple Silicon, requiere equipos con memoria unificada elevada; no disponible el mínimo exacto.
+- **Opciones de despliegue**: librería `mlx` (Apple). No consta soporte de vLLM, llama.cpp, Ollama ni TGI para este formato.
+- **Latencia y throughput**: no disponibles.
+- **Nota**: el autor recomienda la build Q9 (`inferencerlabs/DeepSeek-V4.1-Flash-MLX-Q9`), que según la model card tiene mayor calidad y menor huella de memoria que esta Q4i.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye modelos comparables con datos verificables de parametros, contexto, rendimiento o licencia. El unico punto de referencia es el modelo base `deepseek-ai/DeepSeek-V4.1-Flash`, del que no se aportan especificaciones tecnicas en esta ficha.
+No disponible. La información proporcionada no incluye modelos comparables de la misma categoría ni datos de rendimiento que permitan una comparación rigurosa. La única comparación documentada es interna al propio autor: esta build Q4i frente a la Q9 recomendada, que según la model card ofrece mayor calidad y menor consumo de memoria.
+
+| Modelo | Parametros | Contexto | Licencia | Formato | Estado |
+|---|---|---|---|---|---|
+| DeepSeek-V4.1-MLX-Q4i (esta ficha) | no disponible | no disponible | no disponible | MLX 4 bits | Deprecado |
+| inferencerlabs/DeepSeek-V4.1-Flash-MLX-Q9 | no disponible | no disponible | no disponible | MLX Q9 | Recomendado por el autor |
+| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks: no hay evidencia publicada de rendimiento en tareas estandar (MMLU, HumanEval, GSM8K u otras).
-- Licencia no disponible: no puede confirmarse si el uso comercial esta permitido. Es imprescindible verificar la licencia del modelo base antes de cualquier uso en produccion.
-- Idiomas: los metadatos solo declaran ingles; el comportamiento en castellano no esta verificado.
-- Requisitos de hardware extremos: el consumo de memoria reportado (~425,9 GiB) lo hace inaccesible fuera de estaciones de trabajo de gama muy alta.
-- Build experimental: el autor lo describe explicitamente como experimental, con una version modificada de MLX y un metodo de compresion propietario, lo que reduce la reproducibilidad y el soporte.
-- Riesgo de alucinacion: inherente a los modelos generativos; el propio autor advierte que los modelos pueden no ser precisos ni contextualmente adecuados y que la verificacion corre a cargo del usuario.
-- Sesgos: no disponible. No se ha publicado informacion sobre sesgos conocidos.
-- Limitaciones de contexto: no disponible, al no haberse especificado la longitud de ventana.
-- Estado del repositorio: 0 descargas y 0 likes en el momento de la consulta, sin comunidad que valide su funcionamiento.
-- Descargo del autor: el publicador declara no ser el creador ni propietario del modelo y no asumir responsabilidad por danos derivados de su uso.
+- **Build deprecada**: el propio autor marca esta versión como obsoleta y recomienda migrar a la Q9. No debería usarse en producción nueva.
+- **Cuantización agresiva**: 4 bits puede degradar la calidad frente a la Q9; no hay benchmarks publicados que cuantifiquen esa pérdida.
+- **Idioma**: solo se declara inglés; el rendimiento en castellano no está garantizado ni documentado.
+- **Licencia no disponible**: no consta la licencia del modelo base ni de esta cuantización, lo que impide evaluar el uso comercial con seguridad jurídica. Debe consultarse la licencia del modelo base `deepseek-ai/DeepSeek-V4.1-Flash` antes de cualquier despliegue.
+- **Riesgo de alucinación**: no cuantificado en la información disponible; aplicable el riesgo habitual de los modelos generativos.
+- **Sesgos**: no documentados.
+- **Restricción de plataforma**: dependencia exclusiva de MLX y Apple Silicon; no portable a CUDA sin reconversión.
+- **Autoría**: la build la publica un tercero (inferencerlabs), no DeepSeek; el autor declina responsabilidad sobre exactitud y uso.
+- **Contexto y arquitectura desconocidos**: sin datos públicos, no es posible planificar límites de contexto ni estimar costes de inferencia con rigor.
 
 ## Enlaces
 
-- Hugging Face (build cuantizado): https://huggingface.co/inferencerlabs/DeepSeek-V4.1-MLX-Q4i
+- Hugging Face (esta build): https://huggingface.co/inferencerlabs/DeepSeek-V4.1-MLX-Q4i
+- Build recomendada por el autor: https://huggingface.co/inferencerlabs/DeepSeek-V4.1-Flash-MLX-Q9
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
-- MLX (libreria): https://github.com/ml-explore/mlx
-- Aplicacion Inferencer: https://inferencer.com
-- Videos de demostracion: https://youtube.com/xcreate
-
-Nota: los resultados de busqueda web proporcionados no contienen informacion relevante sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de Hugging Face.
+- Librería MLX: https://github.com/ml-explore/mlx

@@ -2,105 +2,101 @@
 
 ## Resumen
 
-Gemma-4-26B-A4B-HybridAgent es un ajuste fino del modelo multimodal `google/gemma-4-26B-A4B` de Google DeepMind, publicado por el usuario milkshake721. Su objetivo es trasladar a la arquitectura Gemma 4 la técnica HybridAgent de togethercomputer, que combina tres modos de razonamiento en una sola trayectoria: razonamiento discreto en texto delimitado por `<think>`, razonamiento continuo en espacio latente mediante vectores `<latent>` y llamadas a herramientas mediante `<tool_call>`.
+Gemma-4-26B-A4B-HybridAgent es un ajuste fino del modelo google/gemma-4-26B-A4B (arquitectura Mixture-of-Experts con 25,81 mil millones de parametros totales y aproximadamente 4,0 mil millones activos por token) desarrollado por el usuario milkshake721. El modelo adapta la arquitectura HybridAgent descrita en el paper arXiv:2610.18861 (Stanford / Together AI) a la familia Gemma 4 MoE, incorporando un puente residual ligero denominado HybridLink que permite al modelo razonar en espacio latente continuo en lugar de verbalizar cada token intermedio de razonamiento en texto.
 
-El modelo base es un transformer con mezcla de expertos (MoE) de 25,81 mil millones de parámetros totales, de los cuales aproximadamente 4 mil millones se activan por token gracias a un enrutado top-8 sobre 128 expertos por capa. Conserva la torre de visión de 0,57B de parámetros, por lo que la entrada es imagen-texto y la salida es texto.
+La innovacion principal es el modo de razonamiento hibrido: el modelo alterna entre pensamiento latente puro (delimitado por los anclajes `<latent>` y `</latent>`, con token_id 262144 y 262145 respectivamente) y acciones en texto explicito mediante etiquetas `<think>`, `<python>` y `<search>`. Esto preserva la memoria de trabajo KV multi-turno y ofrece interpretabilidad de caja blanca sobre el razonamiento latente, algo que los modelos de razonamiento convencionales no permiten al operar solo sobre tokens discretos.
 
-La relevancia de esta ficha es doble: por un lado documenta una implementación práctica de razonamiento latente sobre un MoE abierto; por otro, advierte de que se trata de una publicación con cero descargas, sin licencia declarada, sin idiomas declarados y sin resultados de evaluación publicados, lo que la sitúa en fase experimental y no apta para producción sin una validación propia. El repositorio ocupa 51,7 GB en safetensors bf16 y requiere código propio (`hybrid_agent`) para la inferencia.
+Es relevante porque combina un modelo base de pesos abiertos con licencia Gemma, un mecanismo de razonamiento latente poco habitual en modelos publicos y soporte de herramientas (ejecucion de Python y busqueda web via Tavily). El repositorio incluye un paquete propio (`hybrid_agent`) con motores de inferencia especializados, ya que el modelo no funciona correctamente con el bucle `generate()` estandar de transformers.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only con MoE (Gemma 4), más torre de visión; adaptador HybridLink para razonamiento latente |
-| Parametros totales | 25.805.945.136 (25,81B): 25,23B en el modelo de lenguaje + 0,57B en el codificador visual |
-| Parametros activos | Aproximadamente 4B por token (top-8 sobre 128 expertos enrutados por capa) |
+| Arquitectura | Transformer Mixture-of-Experts (MoE) con puente residual HybridLink para razonamiento latente; 30 capas MoE |
+| Parametros totales | 25.805.945.136 (25,81 B) |
+| Parametros activos | Aproximadamente 4,0 B por token |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible; los pesos publicados están en bf16 (no se distribuyen GGUF ni otras variantes) |
-| Idiomas soportados | no disponible (la model card no documenta cobertura lingüística) |
-| Licencia | no disponible (no declarada en el repositorio) |
-| Formato de pesos | safetensors (bf16) + código Python propio del paquete `hybrid_agent` |
-| Modulos adicionales | HybridLink: 15.865.344 parámetros (MLP SwiGLU de 2 capas + RMSNorm + conexión residual) |
-| Configuracion MoE | 128 expertos enrutados por capa, `moe_intermediate_size=704`, top-8 por token |
-| Capas y dimension | 30 capas, `hidden_size=2816`, MLP denso compartido con `intermediate_size=2112` |
-| Tokens especiales anadidos | `<latent>` (262144), `</latent>` (262145), `<think>` (262146), `</think>` (262147) |
-| Tamano del repositorio | 51,7 GB |
-| Libreria | transformers |
-| Pipeline | text-generation (etiquetado también como image-text-to-text) |
-| Fecha de publicacion | 2026-10-23 |
+| Tipos de cuantizacion | BF16 (modelo principal); W4A16 disponible en la edicion 4-bit separada |
+| Idiomas soportados | en, zh (segun model card) |
+| Licencia | gemma (Gemma Terms of Use) |
+| Formato de pesos | safetensors, bf16; adaptadores en `adapter.pt` / `hybridlink.pt` (formato HybridLink, no PEFT) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura parte de `Gemma4ForConditionalGeneration`, es decir, un decoder transformer con atención compartida, un MLP denso compartido y un router MoE por cada una de las 30 capas. Cada capa contiene 128 expertos enrutados de tamaño intermedio 704, de los que se activan los 8 mejores por token, lo que mantiene el coste de cómputo cercano al de un modelo de 4B mientras la memoria necesaria corresponde al total de 25,81B. El `hidden_size` es 2816 y la escala de embeddings de Gemma 4 se fija en la raíz cuadrada de 2816 (aproximadamente 53,066). Sobre esta base se añade HybridLink, un módulo de 15,86M de parámetros formado por un MLP SwiGLU de dos capas con RMSNorm y conexión residual, que proyecta estados ocultos hacia el espacio latente de razonamiento.
+El modelo parte de google/gemma-4-26B-A4B, un transformer Mixture-of-Experts con 30 capas MoE y enrutamiento disperso que activa aproximadamente 4,0 B de parametros por token sobre un total de 25,81 B. Sobre esta base se anade HybridLink, un adaptador residual ligero de tipo `ln_res_adapter` que transforma los estados ocultos de la ultima capa ($h_t$) en vectores continuos que se realimentan al decodificador, escalados por el `embed_scale` de Gemma 4 ($\sqrt{2816} \approx 53{,}0660$). La generacion latente se detiene cuando la lectura por coseno del token mas cercano alcanza el ancla `</latent>` (token_id 262145).
 
-El entrenamiento, denominado HybridSFT, se organiza en tres etapas. La primera, `format_activation`, enseña el formato de las trayectorias estructuradas con `<think>`, `<latent>` y `<tool_call>`. La segunda, `hybridlink_activation`, congela el tronco principal y entrena únicamente HybridLink con una tasa de aprendizaje de 2e-4 y una pérdida combinada de coseno y MSE para la regresión en espacio latente. La tercera, `self_conditioned`, aplica un ajuste fino conjunto con auto-condicionamiento en dos pasadas: la primera pasada genera los vectores latentes con HybridLink y estos sustituyen la entrada de la segunda, lo que refuerza la tolerancia al error y el cierre natural del bloque `</latent>`. La model card no detalla el volumen de tokens, la composición del dataset ni si hubo fases de RLHF o DPO posteriores.
+El ajuste fino se realizo sobre el dataset togethercomputer/HybridAgent-HybridSFT-v2, siguiendo el esquema de la arquitectura HybridAgent de arXiv:2610.18861. No se dispone de informacion sobre el numero total de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron fases de RLHF o DPO. Entre las innovaciones tecnicas destacan el razonamiento en espacio latente continuo con interpretabilidad de caja blanca, la aceleracion opcional mediante TensorRT (compilacion del puente HybridLink a un `ICudaEngine` nativo, sustitucion del forward de expertos por una ruta rapida batched zero-sync y fusion de las 330 llamadas a `Gemma4RMSNorm` por paso con `F.rms_norm` en C++) y el soporte de herramientas Python y busqueda web en un bucle multi-turno con memoria KV persistente.
 
 ## Capacidades
 
-- Generación de texto conversacional y razonamiento en modo mixto: puede alternar razonamiento explícito en texto (`<think>`) con razonamiento en espacio latente (`<latent>`), con un máximo configurable de pasos latentes (64 en el ejemplo del autor).
-- Llamada a herramientas: emite invocaciones estructuradas mediante `<tool_call>`, lo que habilita flujos de agente con uso de funciones externas.
-- Entrada multimodal de imagen y texto: hereda la torre de visión de 0,57B del modelo base Gemma 4.
-- Razonamiento multi-paso: el bucle del motor (`HybridEngine`) permite encadenar pasos latentes y llamadas a herramientas antes de producir la respuesta final.
-- Aritmética y problemas de razonamiento elemental: el ejemplo de la model card resuelve la suma de los primeros 20 enteros positivos.
-- Generación determinista: el ejemplo de inferencia utiliza `temperature=0.0`, adecuado para pipelines reproducibles.
-- Cobertura multilingüe: no documentada en esta publicación, aunque el modelo base Gemma 4 está orientado a uso multilingüe según la documentación de Google.
+- Generacion de texto conversacional y razonamiento multi-paso.
+- Razonamiento latente continuo mediante `<latent>...</latent>`, con hasta 64 pasos latentes configurables (`max_latent_steps`).
+- Modo de pensamiento explicito en texto mediante `<think>...</think>`.
+- Ejecucion de codigo Python en linea mediante `<python>...</python>` con `build_tool_executor`.
+- Busqueda web en vivo mediante `<search>...</search>` (requiere `TAVILY_API_KEY` de Tavily).
+- Soporte de agentes con memoria de trabajo KV multi-turno en modo lockstep (`HybridGenerationEngine`).
+- Capacidades multilingues limitadas a ingles y chino segun la model card.
+- Interpretabilidad de caja blanca del razonamiento latente (lectura por token mas cercano).
+- Razonamiento matematico y resolucion de problemas algebraicos y geometricos.
 
 ## Casos de uso
 
-- Agentes con uso de herramientas: el modelo puede intercalar `<tool_call>` con razonamiento latente para resolver tareas que requieren consultar APIs, bases de datos o calculadoras, manteniendo la traza de razonamiento fuera del texto visible al usuario.
-- Automatización de soporte técnico con acceso a sistemas internos: el modo de tool calling permite consultar el estado de un pedido o un ticket y componer una respuesta en lenguaje natural a partir del resultado de la herramienta.
-- Investigación sobre razonamiento latente: sirve como banco de pruebas para estudiar si los vectores continuos sustituyen ventajosamente a las cadenas de pensamiento en texto, gracias a que expone los tokens `<latent>` y el módulo HybridLink de forma explícita.
-- Extracción de información de documentos con imágenes: al conservar el codificador visual, puede procesar capturas, formularios escaneados o diagramas y devolver texto estructurado.
-- Resolución de problemas matemáticos paso a paso en entornos educativos o de evaluación interna, con la posibilidad de fijar `temperature=0.0` para obtener salidas reproducibles.
-- Prototipado de asistentes que necesitan separar razonamiento privado de respuesta pública: el bloque `<think>` permite filtrar la traza interna antes de mostrar el resultado al usuario final.
-- Evaluación comparativa de estrategias de razonamiento (texto discreto frente a latente) en un MoE de 26B con activación de 4B, útil para decidir arquitecturas en proyectos de I+D.
+- Resolucion de problemas matematicos paso a paso: el modelo puede alternar razonamiento latente y verificacion explicita en `<think>`, util para tutoria automatizada o generacion de soluciones verificables en plataformas educativas.
+- Agentes de codigo con ejecucion real: mediante `<python>` el modelo escribe y ejecuta codigo en el mismo bucle de generacion, adecuado para pipelines de analisis de datos o automatizacion de tareas computacionales.
+- Investigacion asistida con busqueda web: la etiqueta `<search>` con backend Tavily permite construir asistentes que consultan informacion actualizada y razonan sobre los resultados en espacio latente antes de responder.
+- Analisis de razonamiento de modelos: la interpretabilidad latente permite a investigadores inspeccionar las trayectorias internas de decision, util para estudios de alineacion, seguridad y mecanismos internos de los LLM.
+- Automatizacion de soporte tecnico multi-turno: el motor `HybridGenerationEngine` mantiene memoria KV entre turnos, lo que facilita conversaciones largas con contexto acumulado y llamadas a herramientas intermedias.
+- Evaluacion comparativa de paradigmas de razonamiento: sirve como banco de pruebas para comparar razonamiento latente frente a razonamiento verbalizado en tareas de matematicas y codigo, con metricas de precision y latencia.
+- Despliegue en produccion con latencia controlada: la ruta TensorRT y la edicion 4-bit (19 GB de VRAM, 60,2 tok/s) permiten servir el modelo en GPUs de consumo para prototipos y entornos de demo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+Los unicos datos publicados en la model card son mediciones de rendimiento de inferencia y una prueba interna de 10 preguntas, no benchmarks academicos estandar.
 
-La model card del ajuste fino no incluye evaluaciones de MMLU, HumanEval, GSM8K ni de tareas de agente, y la información de búsqueda solo remite a la documentación del modelo base sin cifras reproducibles en este contexto.
+| Configuracion | VRAM asignada | Tiempo de carga | Prefill (180 tok) | Decodificacion por token | Tiempo total 10 preguntas | Precision 10 preguntas |
+|---|---|---|---|---|---|---|
+| BF16, backend TensorRT | 54,73 GB | 6,0-8,8 s | 313,03 ms | 26,01 ms (38,5 tok/s) | 106,80 s (10,68 s/pregunta) | 10/10 (100%) |
+| 4-bit, backend TensorRT | 19,00 GB | 29,69 s | 187,51 ms | 16,62 ms (60,2 tok/s) | 83,65 s (8,36 s/pregunta) | 10/10 (100%) |
+
+No se han publicado resultados de benchmarks academicos (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM para inferencia en bf16: los pesos suman 51,7 GB (25,81B de parámetros más el módulo HybridLink), por lo que se necesita aproximadamente 52 GB solo para pesos; con caché KV y activaciones conviene reservar 60-70 GB.
-- GPU recomendadas para bf16: A100 80GB, H100 80GB o H200. En configuraciones de 40-48 GB (A100 40GB, L40S, RTX 6000 Ada) no cabe en bf16 sin paralelismo de tensor.
-- GPU de consumo: no cabe en una RTX 4090 (24 GB) en bf16. Sería necesario cuantizar a 4 bits (estimación de 14-16 GB), pero no se distribuyen pesos cuantizados y el código de inferencia propio (`hybrid_agent`) no documenta soporte para cuantización, por lo que esta vía requiere trabajo adicional no validado.
-- Estimación en 8 bits: en torno a 26-28 GB de pesos, lo que permitiría una sola GPU de 40-48 GB, de nuevo condicionado a que el pipeline acepte cuantización.
-- Despliegue: el autor proporciona un cargador propio (`load_hybrid_agent`) y un motor (`HybridEngine`) sobre transformers con `dtype=torch.bfloat16` y `device="cuda"`. No hay soporte documentado para vLLM, TGI, llama.cpp ni Ollama, y la presencia de tokens especiales nuevos y de un módulo HybridLink fuera del grafo estándar complica su integración en servidores de inferencia convencionales.
-- Latencia y throughput: no disponibles. Como referencia estructural, el coste de cómputo por token se aproxima al de un modelo de 4B activos, mientras que el ancho de banda de memoria exigido corresponde a los 25,81B totales.
+- VRAM estimada en BF16: aproximadamente 54,73 GB asignados con backend TensorRT; el repositorio ocupa 51,7 GB en disco.
+- VRAM estimada en 4-bit (edicion separada): 19,00 GB, apta para GPUs de consumo de 24 GB.
+- GPU recomendadas para BF16: A100 80 GB, H100 80 GB o configuraciones multi-GPU; no cabe en GPUs de consumo.
+- GPU de consumo: la edicion 4-bit cabe en una RTX 4090 (24 GB) con 19,00 GB asignados.
+- Opciones de despliegue: paquete propio `hybrid_agent` con `HybridEngine` y `HybridGenerationEngine`; backend TensorRT opcional; runner CLI `sglang_tensorrt_runner.py`. No es compatible con `AutoModelForCausalLM.from_pretrained().generate()` estandar ni con vLLM, llama.cpp, Ollama o TGI segun la informacion disponible.
+- Latencia y throughput: 38,5 tok/s en BF16 con TensorRT y 60,2 tok/s en la edicion 4-bit; prefill de 180 tokens en 313,03 ms (BF16) y 187,51 ms (4-bit).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales / activos | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| milkshake721/Gemma-4-26B-A4B-HybridAgent | 25,81B / ~4B | no disponible | no disponible | Repositorio Hugging Face, 0 descargas, requiere código propio |
-| google/gemma-4-26B-A4B (base) | 25,81B / ~4B | no disponible en la informacion disponible | no disponible en la informacion disponible | Repositorio Hugging Face oficial de Google |
-| google/gemma-4-26B-A4B-it (instruido) | 25,81B / ~4B | no disponible en la informacion disponible | no disponible en la informacion disponible | Repositorio Hugging Face oficial y Gemini Enterprise Agent Platform |
-| Gemma 4 12B | no disponible | no disponible | no disponible | Familia Gemma 4 de Google DeepMind |
-| Gemma 4 31B | no disponible | no disponible | no disponible | Familia Gemma 4 de Google DeepMind |
+| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Razonamiento latente | Despliegue estandar |
+|---|---|---|---|---|---|---|
+| Gemma-4-26B-A4B-HybridAgent | 25,81 B | ~4,0 B | no disponible | Gemma | Si (HybridLink) | Requiere paquete propio |
+| google/gemma-4-26B-A4B (base) | 25,81 B | ~4,0 B | no disponible | Gemma | No | transformers estandar |
+| Gemma-4-26B-A4B-HybridAgent-4bit | 25,81 B | ~4,0 B | no disponible | Gemma | Si (HybridLink) | Paquete propio, 19 GB VRAM |
 
-La diferencia funcional frente a las variantes oficiales es la incorporación de razonamiento latente y tool calling nativo mediante tokens especiales, a costa de perder compatibilidad directa con el ecosistema estándar de transformers y de no contar con evaluaciones publicadas.
+No se dispone de datos de benchmarks academicos que permitan comparar el rendimiento en tareas con el modelo base ni con alternativas de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: no es posible determinar si se permite uso comercial, modificación o redistribución. Debe consultarse la licencia del modelo base Gemma 4 y aclararse con el autor antes de cualquier uso productivo.
-- Sin evaluaciones publicadas: no hay benchmarks que respalden las capacidades de razonamiento, tool calling o multimodalidad del ajuste.
-- Cero descargas y cero valoraciones: no existe evidencia de uso comunitario ni validación independiente del comportamiento del modelo.
-- Dependencia de código propio: la inferencia exige el paquete `hybrid_agent` (cargador, motor y prompts de sistema) y los tokens especiales añadidos ocupan identificadores 262144-262147; esto rompe la compatibilidad con servidores de inferencia estándar y con pesos publicados por terceros.
-- Riesgo de alucinación no cuantificado: al ser un ajuste fino supervisado sobre un modelo base, no se documenta ningún proceso de alineación adicional (RLHF, DPO) ni evaluaciones de seguridad.
-- Interpretabilidad del razonamiento latente: los vectores `<latent>` no son legibles por humanos, lo que dificulta auditar la traza de razonamiento en entornos regulados.
-- Posible degradación del multilingüismo: la model card está redactada íntegramente en chino tradicional, pero no se especifica la distribución lingüística del dataset de ajuste ni la cobertura de idiomas resultante.
-- Datos de entrenamiento no documentados: se desconocen el volumen de tokens, la procedencia de los datos y el tratamiento de datos personales o con derechos de autor.
-- Requisitos de memoria elevados: 51,7 GB en bf16 y ausencia de variantes cuantizadas oficiales limitan su despliegue a GPUs de 80 GB o a trabajo de cuantización propio no validado.
-- Madurez: publicación creada y actualizada el mismo día (2026-10-23), sin historial de mantenimiento ni issues.
+- El modelo no funciona con el bucle `generate()` estandar de transformers: la recurrencia latente requiere el motor `HybridEngine` o `HybridGenerationEngine` del paquete `hybrid_agent`.
+- Si `peft` esta instalado, `AutoModelForCausalLM.from_pretrained()` interpreta erroneamente `adapter_config.json` como configuracion LoRA y lanza un `ValueError`; es obligatorio usar `load_hybrid_agent(...)`.
+- Idiomas soportados limitados a ingles y chino; no hay soporte declarado de castellano.
+- Longitud de contexto no documentada, lo que dificulta planificar despliegues con ventanas largas.
+- Riesgo de alucinacion inherente a los modelos generativos; el razonamiento latente no es verificable directamente por el usuario salvo mediante la lectura por token mas cercano.
+- La busqueda web requiere una clave de API de Tavily y depende de un servicio externo.
+- Licencia Gemma: uso comercial permitido bajo los terminos de Google, con obligaciones de atribucion y restricciones de uso aceptable; conviene revisar los terminos antes de desplegar en produccion.
+- El modelo es un ajuste fino de un unico autor con 1 like y 1727 descargas en el momento de la consulta; no hay evidencia de validacion independiente.
+- La edicion 4-bit es un repositorio separado y no forma parte de este artefacto.
+- El rendimiento medido (10/10 en una prueba interna) no constituye una evaluacion representativa.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/milkshake721/Gemma-4-26B-A4B-HybridAgent
+- Edicion 4-bit: https://huggingface.co/milkshake721/Gemma-4-26B-A4B-HybridAgent-4bit
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B
-- Variante instruida del modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
-- Repositorio de la técnica HybridAgent: https://github.com/togethercomputer/HybridAgent
-- Pagina de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
-- Documentacion de la familia Gemma: https://gemma.ai/models/
-- Ficha en Gemini Enterprise Agent Platform: https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/google/gemma-4-26b-a4b-it
+- Paper HybridAgent: https://arxiv.org/abs/2610.18861
+- Repositorio del paquete (rama gemma4): https://github.com/milkshake0721/HybridAgent
+- Dataset de ajuste fino: https://huggingface.co/datasets/togethercomputer/HybridAgent-HybridSFT-v2

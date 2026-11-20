@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 25,
-  "downloads_30d": 1539,
+  "downloads_30d": 1565,
   "trending_score": 12,
   "parameters": null,
   "parameters_human": null,
@@ -51,31 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Le Monde.fr - Actualités et Infos en France et dans le monde",
-      "url": "https://www.lemonde.fr/",
-      "snippet": "Le Monde.fr - 1er site d'information. Les articles du journal et toute l'actualité en continu : International, France, Société, Economie, …"
-    },
-    {
-      "title": "Le Monde in English – World news, culture and opinion",
-      "url": "https://www.lemonde.fr/en/",
-      "snippet": "Le Monde - World news, culture and opinion from the unique perspective of the leading French newspaper"
-    },
-    {
-      "title": "Actualités du jour et en direct - Le Monde",
-      "url": "https://www.lemonde.fr/actualite-en-continu/",
-      "snippet": "Suivez les actualités du jour et infos en direct sur Le Monde, retrouvez tous les articles du journal: International, France, Economie, …"
-    },
-    {
-      "title": "L’organigramme du « Monde - Le Monde.fr",
-      "url": "https://www.lemonde.fr/le-monde-et-vous/article/2021/01/25/l-organigramme-du-monde-de-la-direction-a-tous-les-services_6067575_6065879.html",
-      "snippet": "Jan 25, 2021 · La Société éditrice du Monde est gérée par un directoire composé de Louis Dreyfus, président du directoire, et …"
-    },
-    {
-      "title": "Le Monde Jeux : mots croisés, mini mots croisés et sudoku",
-      "url": "https://jeux.lemonde.fr/",
-      "snippet": "Retrouver en ligne les différents jeux publiés dans Le Monde ainsi que dans “M Le Magazine du Monde”. Chaque jour, découvrez …"
-    }
-  ]
+  "sources": []
 }

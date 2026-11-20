@@ -154,16 +154,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "pfnet/plamo-3-translate-31b-MLX-4bit · Hugging Face",
-      "url": "https://huggingface.co/pfnet/plamo-3-translate-31b-MLX-4bit",
-      "snippet": "PLaMo 3 Translate 31B MLX-4bit is a version of PLaMo 3 Translate 31B with the weights quantized to 4 bits for MLX. See Choosing a Distribution Format to compare it with the other distribution formats."
-    },
-    {
-      "title": "pfnet/plamo-3-translate-31b-W4AFP8 · Hugging Face",
-      "url": "https://huggingface.co/pfnet/plamo-3-translate-31b-W4AFP8",
-      "snippet": "The maximum length during training was 32,768 tokens for the input and output combined. The model can translate long passages in one go, but split anything longer so that the input and output together stay within this limit. PLaMo 3 Translate 31B is available under the PLaMo Community License."
-    }
-  ]
+  "sources": []
 }

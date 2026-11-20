@@ -5,7 +5,7 @@
   "author": "Minerva-Laboratories",
   "url": "https://huggingface.co/Minerva-Laboratories/Mercurius-0.5-4B-Preview",
   "created_at": "2026-11-10T19:21:37.000Z",
-  "updated_at": "2026-11-19T03:16:47.000Z",
+  "updated_at": "2026-11-20T03:25:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,7 +29,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 33,
   "trending_score": 0,
   "parameters": 1502753280,
   "parameters_human": "1.50B",

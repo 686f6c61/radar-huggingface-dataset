@@ -2,98 +2,98 @@
 
 ## Resumen
 
-Qwen3-ASR-1.7B-Cantonese-HK-GGUF es una adaptación mediante fine-tuning del modelo de reconocimiento automático de voz Qwen/Qwen3-ASR-1.7B, publicada por el usuario joe2643. El objetivo concreto del ajuste es que el modelo transcriba de forma nativa cantonés coloquial de Hong Kong (etiqueta `yue-HK`) en caracteres tradicionales, en lugar de derivar hacia chino simplificado o variantes del cantonés continental que produce el modelo original. Además, preserva el cambio de código (code-switching) entre cantonés e inglés, algo habitual en el habla real de Hong Kong.
+Qwen3-ASR-1.7B-Cantonese-HK-GGUF es la versión cuantizada en formato GGUF de un ajuste fino del modelo de reconocimiento automático de voz Qwen3-ASR-1.7B, especializado en cantonés coloquial de Hong Kong (`yue-HK`) con alternancia de código inglés. Lo desarrolla el usuario independiente joe2643, con dirección de estrategia de ajuste fino y recogida de datos de sennett-lau, y se distribuye con licencia Apache 2.0. El modelo base original en BF16 está disponible en el repositorio `joe2643/Qwen3-ASR-1.7B-Cantonese-HK`.
 
-El modelo conserva la arquitectura multimodal del Qwen3-ASR original (un codificador de audio emparejado con un decoder de lenguaje de tipo transformer) y se distribuye en formato GGUF, con un fichero de proyección multimodal (`mmproj`) separado, para su uso con `llama.cpp` (`llama-server`) y con la aplicación OraType. Con 1.720.574.976 parámetros, está pensado para despliegue en local o en servidores modestos, no para grandes clústeres.
+El problema que resuelve es concreto: el modelo original `Qwen/Qwen3-ASR-1.7B` tiende a producir chino simplificado o caracteres de cantonés continental (por ejemplo `噶` o `捻`) en lugar del chino tradicional de Hong Kong con vocabulario coloquial auténtico (`係`, `喺`, `嘅`, `咗`, `㗎`, entre otros), y no mantiene las palabras en inglés como tales en contextos de code-switching. Este ajuste fino corrige ambos comportamientos y añade sesgo por vocabulario contextual (hotwords) mediante prompt de sistema.
 
-Su relevancia radica en que ataca un problema muy específico y mal cubierto por los ASR genéricos: la transcripción fiel del cantonés hablado en Hong Kong, incluyendo vocabulario coloquial y mezcla con inglés. Los datos de la model card muestran mejoras de error de carácter (CER) frente al modelo base y una ventaja muy amplia frente a `whisper-large-v3` en los conjuntos de evaluación de cantonés.
+La versión actual es la v2.1 (2026-11-14), que incorpora alineación para el sesgo de vocabulario de dominio y mejora cinco de los seis conjuntos de prueba estándar de cantonés respecto a versiones anteriores. El modelo tiene 1.720.574.976 parámetros y se ofrece en cuantizaciones Q4_K_M, Q6_K y Q8_0, más un codificador multimodal `mmproj` en Q8_0, lo que permite ejecución local con `llama.cpp` (`llama-server`) y su integración en la aplicación OraType.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal de ASR (codificador de audio + decoder de lenguaje), base Qwen3-ASR-1.7B |
+| Arquitectura | no disponible (modelo de reconocimiento de voz basado en Qwen3-ASR; incluye codificador multimodal `mmproj`) |
 | Parametros totales | 1.720.574.976 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 4096 tokens en el ejemplo de `llama-server` (valor configurado, no especificación oficial del modelo) |
-| Tipos de cuantizacion | Q4_K_M y Q8_0 (pesos principales); mmproj en Q8_0 |
-| Idiomas soportados | yue (cantonés, yue-HK), zh, en |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | 4096 tokens (valor usado en el ejemplo de `llama-server` con `-c 4096`; no se especifica el máximo oficial) |
+| Tipos de cuantizacion | Q4_K_M, Q6_K, Q8_0 (más `mmproj` en Q8_0) |
+| Idiomas soportados | yue (cantonés, `yue-HK`), zh (chino), en (inglés) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (con fichero mmproj GGUF separado) |
+| Formato de pesos | GGUF (pesos originales BF16 en Transformers en el repo base) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen/Qwen3-ASR-1.7B, un sistema de reconocimiento de voz que combina un codificador de audio con un decoder de lenguaje de 1.700 millones de parámetros aproximadamente. La adaptación consiste en un fine-tuning sobre ese modelo base para especializarlo en cantonés de Hong Kong, con el objetivo explícito de que la salida use caracteres tradicionales y vocabulario coloquial auténtico (`係`, `喺`, `嘅`, `咗`, `㗎`, entre otros) y de que mantenga el code-switching con inglés.
+No se detalla en la información disponible la arquitectura interna exacta del modelo (tipo de transformer, número de capas, dimensiones ocultas ni composición del dataset de entrenamiento). Se sabe que parte de Qwen3-ASR-1.7B y que se ha ajustado fino para cantonés de Hong Kong coloquial con code-switching inglés, y que el resultado se exporta a GGUF para `llama.cpp` y OraType. El repositorio incluye un codificador multimodal separado (`mmproj`) en Q8_0, necesario para procesar audio en `llama-server`.
 
-La model card no detalla el volumen de datos de entrenamiento, su composición exacta ni si se emplearon técnicas de alineación como RLHF o DPO. Sí se documenta el proceso de exportación a GGUF para `llama.cpp` y OraType, incluyendo los hashes SHA-256 de cada fichero, lo que facilita la verificación de integridad en despliegues. El repositorio ocupa 3,3 GB en total.
+La innovación técnica destacable es el sesgo por contexto y vocabulario de dominio (hotwords) mediante prompt de sistema: el usuario puede pasar una lista de términos (por ejemplo `閂燈, 開燈, 閂冷氣, OraType, GitHub`) y el modelo los alinea en la transcripción. Según la model card, la v2.1 reduce el CER en comandos cortos con glosarios largos del 21,88 % al 7,19 %, con un 0,0 % de "parroting" (repetición indebida de los términos del glosario). No se especifica en la información proporcionada si hubo RLHF, DPO ni el volumen de tokens de entrenamiento.
 
 ## Capacidades
 
-- Reconocimiento automático de voz (ASR) con salida en texto.
-- Transcripción de cantonés de Hong Kong en caracteres tradicionales, con vocabulario coloquial.
-- Manejo de code-switching cantonés-inglés dentro de una misma emisión.
-- Soporte de chino (zh) e inglés (en) además del cantonés, heredado del modelo base.
-- Salida compatible con endpoints HTTP vía `llama-server`.
-- Integración con la aplicación OraType (según la model card).
-- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, visión general o audio generativo más allá de la transcripción.
+- Reconocimiento automático de voz (ASR) en cantonés de Hong Kong coloquial (`yue-HK`) con salida nativa en chino tradicional y vocabulario auténtico (`係`, `喺`, `嘅`, `咗`, `㗎`, `閂`, `撚`, `屌`).
+- Alternancia de código cantonés-inglés: mantiene las palabras en inglés en inglés en lugar de transliterarlas.
+- Sesgo por contexto y vocabulario de dominio (hotwords) a través del prompt de sistema, con alineación de términos específicos.
+- Procesamiento de audio mediante el codificador multimodal `mmproj` y la API compatible con OpenAI de `llama-server` (entrada `input_audio`).
+- Soporte de idiomas: yue, zh, en.
+- No se documentan en la información disponible capacidades de tool calling, agentes, razonamiento multi-paso, visión ni audio generativo más allá del ASR.
 
 ## Casos de uso
 
-- Subtitulado de contenido audiovisual en cantonés de Hong Kong: el modelo transcribe con caracteres tradicionales y vocabulario coloquial, lo que reduce la corrección manual frente a ASR genéricos que derivan a simplificado.
-- Actas y transcripción de sesiones del Consejo Legislativo (LegCo): el conjunto de evaluación LegCo de la model card sugiere un uso realista para transcripción de discurso formal en cantonés.
-- Atención al cliente en centros de llamadas de Hong Kong: al preservar el code-switching cantonés-inglés, puede transcribir conversaciones reales donde el cliente mezcla ambos idiomas.
-- Herramientas de accesibilidad y dictado en local: al distribuirse en GGUF y ejecutarse con `llama.cpp`, permite dictado por voz sin enviar audio a servicios en la nube.
-- Investigación lingüística y corpus de habla: útil para generar transcripciones de entrevistas o grabaciones de campo en cantonés con mezcla de inglés.
-- Integración en aplicaciones de escritorio: OraType lo utiliza como motor de voz a texto, según la model card, lo que sirve de referencia para integrarlo en herramientas de productividad.
-- Preprocesado de audio para pipelines de análisis: transcripción previa a tareas de resumen o búsqueda sobre grabaciones en cantonés.
+- Dictado por voz en escritorio: OraType, la aplicación de dictado por voz para macOS, ya incluye el GGUF Q6_K con el `mmproj-Q8_0` como modelo de voz integrado para cantonés, por lo que el modelo cubre dictado local sin conexión.
+- Transcripción de reuniones y actas en Hong Kong: el modelo mantiene el chino tradicional y el vocabulario coloquial, adecuado para reuniones con mezcla de cantonés e inglés técnico.
+- Subtitulado de contenido audiovisual: con un CER del 3,89 % en FLEURS `yue_hant_hk` y del 5,52 % en code-switching (MCE), es apto para generar subtítulos en cantonés de vídeos con términos en inglés.
+- Comandos de voz para domótica: el sesgo por hotwords permite pasar glosarios como `閂燈, 開燈, 閂冷氣` y reducir el CER en comandos cortos al 7,19 %, útil en asistentes de voz domésticos.
+- Transcripción de reuniones del Consejo Legislativo (LegCo): el modelo se ha evaluado en este conjunto (CER 7,16 %), por lo que puede emplearse en transcripción de sesiones formales en cantonés.
+- Evaluación y anotación de corpus de habla cantonesa: sirve como herramienta de preanotación en proyectos de investigación lingüística, con cuantizaciones ligeras (Q4_K_M, 1,1 GB) que caben en equipos modestos.
+- Integración en pipelines de ASR en producción: el endpoint compatible con OpenAI de `llama-server` facilita su despliegue tras una API HTTP estándar.
 
 ## Benchmarks y rendimiento
 
-Datos de la model card (Character Error Rate, decodificación greedy; menor es mejor):
+Resultados publicados en la model card (Character Error Rate, greedy, BF16 `transformers`):
 
-| Conjunto de prueba | Qwen3-ASR-1.7B original | Este fine-tune | whisper-large-v3 |
-|---|---:|---:|---:|
-| FLEURS (`yue_hant_hk`) | 4,20 % | 4,00 % | 20,97 % |
-| Common Voice `yue` | 5,46 % | 3,80 % | 36,44 % |
-| Common Voice 23 `zh-HK` | 7,65 % | 5,18 % | 41,76 % |
-| LegCo (Consejo Legislativo de Hong Kong) | 7,22 % | 7,17 % | 32,15 % |
-| MCE (code-switching cantonés-inglés) | 11,74 % | 5,61 % | 24,00 % |
+| Test Set | Stock `Qwen3-ASR-1.7B` | v1 | v2 | v2.1 (este) | `whisper-large-v3` |
+|---|---:|---:|---:|---:|---:|
+| FLEURS (`yue_hant_hk`) | 4,20 % | 4,00 % | 3,95 % | 3,89 % | 20,97 % |
+| Common Voice `yue` | 5,46 % | 3,80 % | 3,86 % | 3,94 % | 36,44 % |
+| Common Voice 23 `zh-HK` | 7,65 % | 5,18 % | 5,09 % | 5,02 % | 41,76 % |
+| MDCC | 4,25 % | 2,53 % | 2,49 % | 2,47 % | 34,52 % |
+| LegCo (HK Legislative Council) | 7,22 % | 7,17 % | 7,16 % | 7,16 % | 32,15 % |
+| MCE (Cantonese-English Code-Switching) | 11,74 % | 5,61 % | 5,62 % | 5,52 % | 24,00 % |
 
-No se han publicado en la información disponible otros benchmarks (por ejemplo, WER en inglés o métricas de latencia y throughput).
+Verificación de los ficheros GGUF v2.1 con `llama-server` sobre 60 clips de prueba (CER sin normalización de números): Q4_K_M 2,59 %, Q6_K 2,89 %, Q8_0 2,89 %.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el fichero Q4_K_M ocupa 1.107.404.736 bytes (aproximadamente 1,03 GiB) y el Q8_0 1.834.422.208 bytes (aproximadamente 1,71 GiB); el mmproj Q8_0 añade 355.709.216 bytes (aproximadamente 0,33 GiB). A esto hay que sumar la memoria del contexto y del runtime.
-- GPU recomendadas: no disponible de forma explícita; por tamaño, cualquier GPU consumer con 4 GB o más de VRAM debería poder ejecutar la variante Q4_K_M junto con el mmproj.
-- Cabe en GPU consumer: sí, previsiblemente en tarjetas tipo RTX 3060, RTX 4060 o superiores con la cuantización Q4_K_M; no se especifican modelos concretos en la documentación.
-- Opciones de despliegue: `llama.cpp` mediante `llama-server` (con `--mmproj` apuntando al fichero de proyección) y la aplicación OraType.
+- VRAM estimada para inferencia: los pesos van de 1,1 GB (Q4_K_M) a 1,8 GB (Q8_0), más 356 MB del `mmproj-Q8_0`; el total ronda los 1,5 GB (Q4_K_M) a 2,2 GB (Q8_0) en pesos, a lo que hay que sumar la caché KV para el contexto configurado.
+- GPU recomendadas: no se especifican en la información disponible. Por tamaño, cualquier GPU consumer con 4 GB o más de VRAM debería bastar para las cuantizaciones ofrecidas.
+- Cabe en GPU consumer: sí, con las cuantizaciones Q4_K_M, Q6_K y Q8_0; no se detallan modelos concretos de tarjeta.
+- Opciones de despliegue: `llama.cpp` mediante `llama-server` (ejemplo con `-c 4096 -np 1` y endpoint compatible con OpenAI), y la aplicación OraType que integra el Q6_K con `mmproj-Q8_0`.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Idiomas | CER en cantonés (referencia) | Licencia | Formato |
-|---|---|---|---|---|---|
-| Este fine-tune (Qwen3-ASR-1.7B-Cantonese-HK) | 1.720.574.976 | yue, zh, en | 3,80 % en Common Voice `yue` | apache-2.0 | GGUF |
-| Qwen3-ASR-1.7B (original) | 1.720.574.976 (base) | zh, en y otros (no detallado) | 5,46 % en Common Voice `yue` | no disponible en la información | safetensors (formato del modelo base) |
-| whisper-large-v3 | no disponible en la información | multilingüe (no detallado) | 36,44 % en Common Voice `yue` | no disponible en la información | no disponible en la información |
+| Modelo | Parametros | Contexto | CER (FLEURS `yue_hant_hk`) | Licencia | Formato |
+|---|---|---:|---:|---|---|
+| Qwen3-ASR-1.7B-Cantonese-HK v2.1 (este) | 1.720.574.976 | 4096 (usado en ejemplo) | 3,89 % | apache-2.0 | GGUF, BF16 |
+| Stock `Qwen3-ASR-1.7B` | no disponible | no disponible | 4,20 % | no disponible | no disponible |
+| `whisper-large-v3` | no disponible | no disponible | 20,97 % | no disponible | no disponible |
 
-La comparación se limita a los datos de CER publicados en la model card; no se dispone de comparativas de latencia, memoria ni otros benchmarks.
+La comparativa se limita a los datos de la model card; no se dispone de parámetros, contexto ni licencia de los modelos de referencia en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El fine-tuning está muy orientado a cantonés de Hong Kong; el rendimiento en otras variedades de cantonés o en chino mandarín puede diferir del modelo base.
-- La model card no documenta sesgos específicos, pero un ASR entrenado con datos de Hong Kong puede reflejar sesgos léxicos o dialectales de esa región.
-- Riesgo de alucinación en transcripciones: como todo modelo generativo de ASR, puede producir texto plausible que no corresponde al audio, especialmente con ruido o acentos no vistos.
-- La longitud de contexto de 4096 tokens es la configurada en el ejemplo de `llama-server`, no una especificación oficial; audios largos requerirán segmentación.
-- No se detalla el dataset de entrenamiento ni si hubo alineación, lo que dificulta evaluar la robustez en dominios no cubiertos.
-- La licencia apache-2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen3-ASR-1.7B, que no se detallan en la información proporcionada.
-- El repositorio tiene 0 descargas y 0 likes, por lo que no hay validación comunitaria independiente de los resultados reportados.
-- Los benchmarks son de la propia model card y no han sido replicados de forma independiente en la información disponible.
+- El modelo está especializado en cantonés de Hong Kong (`yue-HK`) con code-switching inglés; su rendimiento en otros dialectos del chino o en cantonés continental no está documentado y podría degradarse.
+- Riesgo de alucinación y de "parroting": la model card reporta 0,0 % de parroting en la v2.1 con glosarios, pero versiones anteriores mostraban este comportamiento; conviene validar con glosarios largos en producción.
+- El CER en LegCo (7,16 %) es el más alto de los conjuntos evaluados, lo que sugiere mayor dificultad en habla formal o ruidosa.
+- Los benchmarks se han medido en BF16 con `transformers`; los GGUF se verificaron solo sobre 60 clips, por lo que el rendimiento en cuantizaciones puede diferir del reportado en la tabla principal.
+- No se documentan sesgos específicos ni restricciones adicionales de licencia más allá de Apache 2.0; aun así, debe verificarse el cumplimiento de la licencia del modelo base Qwen3-ASR.
+- La longitud máxima de contexto no está especificada; el valor de 4096 corresponde únicamente al ejemplo de despliegue.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/joe2643/Qwen3-ASR-1.7B-Cantonese-HK-GGUF
-- Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
-- Repositorio de `llama.cpp` (no enlazado en la model card, pero requerido para el despliegue indicado): no disponible en la información proporcionada
-- Aplicación OraType: no disponible en la información proporcionada
-- Paper o blog técnico del fine-tuning: no disponible en la información proporcionada
+- Hugging Face (GGUF): https://huggingface.co/joe2643/Qwen3-ASR-1.7B-Cantonese-HK-GGUF
+- Pesos originales BF16: https://huggingface.co/joe2643/Qwen3-ASR-1.7B-Cantonese-HK
+- Repositorio GitHub: https://github.com/joe2643/qwen3-asr-cantonese-hk
+- Revisión v2: https://huggingface.co/joe2643/Qwen3-ASR-1.7B-Cantonese-HK-GGUF/tree/b1c3dc91
+- Revisión v1: https://huggingface.co/joe2643/Qwen3-ASR-1.7B-Cantonese-HK-GGUF/tree/1afe540def044173f7412dc72584f803b92bfa96
+- OraType: https://github.com/sennett-lau/oratype
+- Apoyo al autor: https://buymeacoffee.com/joe2643

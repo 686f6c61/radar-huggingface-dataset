@@ -2,107 +2,104 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-EXL3-3.5bpw es una cuantización EXL3 de 3,53 bits por peso (bpw) del modelo base `deepseek-ai/DeepSeek-V4.1-Flash-1017`, publicada por el usuario LibertAIDAI. No se trata de un modelo entrenado desde cero, sino de un checkpoint comprimido para inferencia que reduce el peso del trunk cuantizado a 239,9 GiB (257,6 GB repartidos en 44 shards de safetensors) manteniendo el modelo original en licencia MIT. El objetivo es hacer servible un MoE de gran tamaño en hardware de gama workstation, en concreto en el kit de dos nodos DGX Spark con tensor parallelism 2 que mantiene MiaAI-Lab.
+DeepSeek-V4.1-Flash-1017-EXL3-3.5bpw es una cuantización EXL3 (trellis) del modelo base deepseek-ai/DeepSeek-V4.1-Flash-1017, publicada por el usuario LibertAIDAI. Se trata de un modelo de arquitectura Mixture-of-Experts (MoE) con 128.729.792.722 parámetros totales almacenados en safetensors, orientado a generación de texto y conversación. La cuantización reduce los pesos del tronco a 3,53 bits por peso (bpw) con cabezal de salida a 6 bpw, dando un repositorio de 257,6 GB (239,9 GiB) repartido en 44 shards.
 
-El modelo base es un transformer de mezcla de expertos con 384 expertos enrutados por capa, atención con compresor de KV e indexador disperso, streams mHC, sinks de atención y dos tablas Engram de búsqueda n-gram en las capas 1 y 14. Según los safetensors de este repositorio, el trunk cuantizado suma 128.729.792.722 parámetros; las tablas Engram (FP8 con escalas de bloque E8M0, unos 95 GiB cada una) no se incluyen y deben descargarse del repositorio base. El checkpoint conserva además la torre de visión en BF16 y el drafter MTP/DSpark, lo que habilita entrada multimodal y decodificación especulativa.
+El interés de esta ficha radica en que permite ejecutar un modelo de escala ~128B con pérdida de perplejidad mínima: +0,8% en código y +0,1% en prosa respecto al modelo sin cuantizar, según la model card. Además, incluye la torre de visión en BF16 y el drafter MTP/DSpark, lo que habilita decodificación especulativa. No obstante, el propio autor advierte de que este build no cabe en 2× DGX Spark a TP=2 (121,5 GiB de pesos por rango frente a ~117 GiB disponibles), por lo que para ese hardware remite a la variante de 2,9 bpw.
 
-La relevancia es práctica: es una de las pocas rutas documentadas para ejecutar un modelo de esta familia por debajo de los 4 bpw con una degradación de perplejidad medida de +0,8 % en código y +0,1 % en prosa frente al modelo sin cuantizar. El coste es una dependencia fuerte de un stack de serving concreto (vLLM modificado más el kit de dos DGX Spark), porque exllamav3 upstream todavía no dispone de clase `DeepseekV41`.
+La licencia es MIT, lo que facilita el uso comercial, y el formato EXL3 requiere el runtime ExLlamaV3 o kits compatibles. Las tablas Engram (dos tablas de n-gramas de ~95 GiB cada una) no están incluidas en este repositorio y deben tomarse del checkpoint base, ya que cambiaron en esta release.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE con 384 expertos enrutados por capa, compresor de KV, indexador disperso, streams mHC, sinks de atención y tablas Engram n-gram |
-| Parámetros totales | 128.729.792.722 (~128,7 B) según safetensors del repo; excluye las tablas Engram (~190 GiB), que no se incluyen |
-| Parámetros activos | no disponible |
+| Arquitectura | Mixture-of-Experts (MoE) transformer con atención, compresor KV, indexer, Engram y torre de visión; formato de pesos EXL3 trellis |
+| Parametros totales | 128.729.792.722 |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | EXL3 trellis a 3,53 bpw medios: expertos enrutados a 4 bpw en capas 0-9 y 30-39, 3 bpw en capas 10-29; experto compartido, atención, compresor de KV, indexador, proyección Engram, cabeza de salida y drafter a 6 bpw; `indexer.wk` a 8 bpw; embeddings, normas y torre de visión en BF16; router en FP16/FP32 |
+| Tipos de cuantizacion | EXL3 3,53 bpw en el tronco (4 bpw en capas 0-9 y 30-39; 3 bpw en capas 10-29), 6 bpw en shared expert, atención, compresor KV, indexer, proyección Engram, cabezal de salida y drafter MTP; BF16 en embeddings, normas, torre de visión y aligner; FP16/FP32 en router y streams mHC |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | safetensors (matrices EXL3 como `trellis` int16 + `suh`/`svh` fp16 + `mul1` int32); 44 shards, 257,6 GB |
+| Formato de pesos | safetensors (EXL3 trellis: int16 + fp16 scales + codebook `mul1`), 44 shards, 257,6 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer de mezcla de expertos de 40 capas (el rango de cuantización cubre capas 0 a 39) con 384 expertos enrutados por capa, cada uno con las matrices `w1`, `w2` y `w3`, lo que da 1.152 matrices por capa y un total de 384 expertos. Además del bloque de expertos enrutados existe un experto compartido (`ffn.shared_experts`), y el enrutamiento se realiza mediante `ffn.gate.weight` y `ffn.gate.bias` en FP16, con un sesgo de enrutamiento específico para tokens de imagen (`gate.bias_vl`, FP32). La atención incorpora mecanismos poco habituales: un compresor de KV (`attn.compressor.wkv` / `wgate`) en las capas 2, 8, 14 y 20, y un indexador disperso (`attn.indexer.wq_b` en las capas 2, 8, 14, 20, 24, 28, 32 y 36, e `indexer.wk` en 2, 8, 14 y 20), además de streams mHC en FP32 y sinks de atención. La matriz de salida de atención `wo_a` se almacena como 8 slices por grupo.
+El modelo base es un transformer MoE con 384 expertos enrutados por capa, expertos compartidos y un router con sesgo de enrutamiento específico para tokens de imagen (`gate.bias_vl`). Incorpora mecanismos destacables: un compresor KV en las capas 2, 8, 14 y 20, un indexer de atención en las capas 2, 8, 14, 20, 24, 28, 32 y 36, y dos tablas Engram de búsqueda de n-gramas en las capas 1 y 14. Además incluye un drafter MTP/DSpark (`mtp.0-2`) con cabezales Markov y de confianza, lo que permite decodificación especulativa. La torre de visión y el aligner se copian sin cambios del checkpoint base en BF16.
 
-La innovación propia de la familia V4.1 son las dos tablas Engram de búsqueda n-gram (`layers.1.engram.embed` y `layers.14.engram.embed`), en FP8 con escalas de bloque E8M0 y unos 95 GiB cada una, que se consultan sin cuantizar y que en la versión 1017 han cambiado respecto a `DeepSeek-V4.1-Flash`, por lo que no se pueden reutilizar los shards antiguos. El checkpoint incluye también el drafter MTP/DSpark (`mtp.0-2`, con `markov_head` y `confidence_head`) para decodificación especulativa, y una torre de visión más aligner copiados sin cambios del base en BF16.
-
-Sobre el entrenamiento del modelo original no hay información en la documentación disponible: no se detallan número de tokens, composición del dataset ni si hubo RLHF, DPO u otras fases de alineamiento. Lo que sí está documentado es el proceso de cuantización: cuantización post-entrenamiento con EXL3 en formato trellis, codebook `mul1` y escalas de canal de salida en modo `always`, con un K por capa compartido por las 1.152 matrices de cada capa para que el cargador MoE del kit de serving funcione.
+La cuantización EXL3 emplea un esquema trellis con codebook `mul1` y escalas de canal de salida `always`. Los expertos enrutados usan una K por capa para las 1.152 matrices, requisito del loader MoE del kit de despliegue. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo base. La model card menciona un parámetro `reasoning_effort` (valores 50, 75 y 100, con 75 por defecto) evaluado sobre 3.738 tareas de código agéntico, tau-bench, LiveCodeBench, AIME y chat.
 
 ## Capacidades
 
-- Generación de texto autoregresiva en modo `text-generation`, el pipeline declarado en el repositorio.
-- Procesamiento de imágenes: la torre de visión y el aligner están incluidos en BF16, y el router tiene un sesgo específico para tokens de imagen (`gate.bias_vl`), lo que indica soporte multimodal de entrada.
-- Razonamiento multi-paso y modo "thinking": no confirmado explícitamente en la información disponible.
-- Tool calling y function calling: no disponible en la documentación.
-- Capacidades de agente: no disponible en la documentación.
-- Decodificación especulativa mediante el drafter MTP/DSpark incluido en el checkpoint (`mtp.0-2`).
-- Recuperación n-gram a través de las tablas Engram de las capas 1 y 14, que se consultan sin cuantizar.
-- Capacidades multilingües: no disponible; el repositorio no declara idiomas.
-- Capacidad de código: la evaluación de perplejidad incluye un conjunto específico de código (1,8895 en esta cuantización), lo que sugiere presencia de ese dominio en el modelo base, sin que se documenten benchmarks funcionales.
+- Generación de texto y conversación multi-turno con plantilla de chat Jinja (`chat_template.jinja`) que renderiza de forma byte-idéntica al encoder de referencia en un corpus de 8.455 casos.
+- Razonamiento con esfuerzo configurable mediante `reasoning_effort` (low 50, high 75 por defecto, max 100).
+- Capacidades de visión: torre de visión y aligner incluidos en BF16, con tokens especiales `image_start`, `image_end` y `image_newline`.
+- Uso agéntico con herramientas: la model card describe comportamiento en bucles agénticos donde el razonamiento de cada turno se relee en turnos posteriores.
+- Decodificación especulativa mediante el drafter MTP/DSpark incluido.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Soporte de tool calling / function calling: no detallado explícitamente en la información disponible.
 
 ## Casos de uso
 
-- Serving de un MoE de ~128,7 B en dos nodos DGX Spark: el caso de uso documentado por el autor, con TP=2 mediante el kit basado en vLLM; adecuado para laboratorios que ya dispongan de ese hardware y quieran evitar GPUs de 80 GB en número elevado.
-- Investigación sobre cuantización extrema: la pareja de checkpoints a 2,9 y 3,5 bpw permite estudiar la curva de degradación de perplejidad (+1,84 % en código a 2,9 bpw frente a +0,8 % a 3,5 bpw) con dos puntos de medida sobre el mismo modelo base.
-- Evaluación comparativa de atención eficiente: la presencia de compresor de KV e indexador disperso permite medir el impacto de estos mecanismos en tareas de contexto largo, aunque la longitud de contexto no esté declarada.
-- Prototipado multimodal interno: al incluir la torre de visión en BF16, el checkpoint puede usarse para experimentar con entrada de imagen sin necesidad de un segundo modelo, siempre que el stack de serving lo soporte.
-- Generación asistida con decodificación especulativa: el drafter MTP/DSpark incluido permite medir la ganancia de throughput de la decodificación especulativa frente a la generación estándar en el mismo hardware.
-- Reproducción de experimentos con modelos de pesos abiertos: al ser MIT y publicar hashes sha256 de los shards requeridos del base, el setup es auditable y replicable en entornos de investigación que exigen trazabilidad de los artefactos.
-- Fine-tuning o destilado posterior sobre el base: no se recomienda usar este checkpoint cuantizado como punto de partida; para entrenamiento habría que recurrir al modelo `deepseek-ai/DeepSeek-V4.1-Flash-1017` original.
+- Evaluación de modelos de escala ~128B en hardware limitado: la cuantización a 3,53 bpw permite cargar el modelo en configuraciones multi-GPU con menos memoria que el checkpoint base, manteniendo una perplejidad muy cercana (+0,8% en código).
+- Pipelines de generación de código con razonamiento: el modelo puede usarse con `reasoning_effort` en high o low para equilibrar calidad y coste, según los datos del autor (high iguala a max con 0,55-0,8× del coste).
+- Tareas agénticas de código: LiveCodeBench y agentic coding aparecen en el benchmark del autor, lo que sugiere uso en entornos de resolución de problemas de programación con herramientas.
+- Benchmarking de tau-bench: útil para evaluar comportamiento conversacional con herramientas en escenarios de atención al cliente simulado.
+- Evaluación de matemáticas: AIME figura entre las tareas evaluadas, por lo que puede emplearse en razonamiento matemático.
+- Despliegue con decodificación especulativa: el drafter MTP/DSpark incluido permite acelerar la inferencia en runtimes que lo soporten.
+- Investigación sobre cuantización EXL3: el repositorio sirve como referencia para estudiar el impacto de 3,53 bpw frente a 2,9 bpw y frente al modelo sin cuantizar.
+- Procesamiento multimodal: al incluir torre de visión en BF16, puede emplearse en tareas que requieran entrada de imagen, aunque no se detallan capacidades concretas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor únicamente reporta perplejidad sobre dos conjuntos de texto no publicados, con 32 secuencias de 2.048 tokens cada uno y 65.504 tokens puntuados por conjunto, usando el mismo forward de secuencia completa en todas las filas:
+La model card proporciona datos de perplejidad sobre dos conjuntos de texto no publicado (32 secuencias × 2048 tokens, 65.504 tokens puntuados por conjunto):
 
-| Modelo | Tamaño | Perplejidad código | Perplejidad prosa |
+| Modelo | Tamano | code | prose |
 |---|---|---|---|
-| Sin cuantizar (base FP8 / MXFP4, de-cuantizado) | no disponible | 1,8749 | 6,4277 |
+| Sin cuantizar (base FP8/MXFP4 dequantizado) | — | 1,8749 | 6,4277 |
 | EXL3 2,9 bpw | 196,3 GiB | 1,9094 | 6,4520 |
 | EXL3 3,5 bpw (este repo) | 239,9 GiB | 1,8895 | 6,4341 |
-| Este repo con Engram desactivado (control) | 239,9 GiB | 4,1548 | 8,9702 |
+| Este repo con Engram desactivado (control) | — | 4,1548 | 8,9702 |
 
-La última fila es un control de sanidad del autor: desactivar las tablas Engram degrada la perplejidad de forma drástica (de 1,8895 a 4,1548 en código), lo que confirma que esas tablas son imprescindibles para el funcionamiento correcto del checkpoint.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El autor menciona un benchmark de 3.738 tareas (agentic coding, tau-bench, LiveCodeBench, AIME, chat) sobre los pesos originales 1017, pero no se incluyen cifras concretas en la información proporcionada.
 
 ## Requisitos de hardware
 
-- VRAM estimada para el trunk: 239,9 GiB (257,6 GB) solo para los pesos cuantizados de este repositorio.
-- Memoria adicional obligatoria: las dos tablas Engram se usan sin cuantizar, ~95 GiB cada una, es decir, ~190 GiB extra. El footprint conjunto estimado ronda los 430 GiB, sin contar caché KV ni activaciones.
-- GPU recomendadas: el autor apunta al kit MiaAI-Lab/DeepSeek-v4.1-Flash-EXL3-2x-DGX-Sparks con 2x DGX Spark y TP=2. Para el base sin cuantizar no hay recomendación documentada en la información disponible.
-- GPU de consumo: no cabe. Ni siquiera el trunk de 239,9 GiB entra en una RTX 4090 (24 GB), A100 80 GB o H100 80 GB individual; haría falta un pool agregado de al menos ~240 GiB solo para el trunk.
-- Opciones de despliegue: vLLM a través del kit de MiaAI-Lab, que requiere el `exl3_k_map.json` incluido en este repo. exllamav3 upstream no puede cargar el checkpoint directamente porque no tiene clase `DeepseekV41`. Soporte en llama.cpp, Ollama o TGI: no disponible.
-- Latencia y throughput: no disponible; el autor no publica métricas de tokens por segundo.
+- VRAM estimada: 239,9 GiB de pesos en total; a TP=2 requiere 121,5 GiB por rango, lo que excede la memoria disponible de un DGX Spark (~117 GiB).
+- No cabe en 2× DGX Spark con este build; el autor recomienda la variante de 2,9 bpw (~98 GiB por rango) para ese hardware.
+- GPU recomendadas: no disponibles explícitamente; por tamaño, requiere configuraciones multi-GPU de clase数据中心 (A100/H100) o kits específicos como el de MiaAI-Lab para 2× DGX Spark.
+- No cabe en GPU de consumo individual (RTX 4090, etc.) dado el tamaño de 239,9 GiB.
+- Opciones de despliegue: ExLlamaV3 (formato EXL3), kit MiaAI-Lab/DeepSeek-v4.1-Flash-EXL3-2x-DGX-Sparks (requiere `exl3_k_map.json` incluido), runtimes basados en vLLM con su encoder DeepSeek integrado.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Tamaño en disco | Perplejidad código / prosa | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017 EXL3 3,5 bpw (este repo) | ~128,7 B (trunk) | no disponible | 257,6 GB (239,9 GiB) + ~190 GiB Engram | 1,8895 / 6,4341 | MIT | público en HF, 0 descargas |
-| DeepSeek-V4.1-Flash-1017 EXL3 2,9 bpw | no disponible | no disponible | 196,3 GiB + ~190 GiB Engram | 1,9094 / 6,4520 | MIT | público en HF |
-| DeepSeek-V4.1-Flash-1017 NVFP4 | no disponible | no disponible | no disponible | no disponible | MIT | público en HF |
-| DeepSeek-V4.1-Flash-1017 (base FP8 / MXFP4) | ~128,7 B (trunk) | no disponible | no disponible | 1,8749 / 6,4277 (de-cuantizado) | MIT | público en HF |
+| Modelo | Parametros | Contexto | Perplejidad code | Licencia | Tamano |
+|---|---|---|---|---|---|
+| EXL3 3,5 bpw (este repo) | 128,7B | no disponible | 1,8895 | MIT | 239,9 GiB |
+| EXL3 2,9 bpw (LibertAIDAI) | no disponible | no disponible | 1,9094 | MIT | 196,3 GiB |
+| Base sin cuantizar (DeepSeek-V4.1-Flash-1017) | no disponible | no disponible | 1,8749 | MIT | no disponible |
+| NVFP4 (LibertAIDAI) | no disponible | no disponible | no disponible | MIT | no disponible |
 
-El compromiso entre las dos cuantizaciones EXL3 es claro: bajar de 3,5 a 2,9 bpw ahorra 43,6 GiB de disco y memoria a cambio de duplicar aproximadamente la degradación en código (+1,84 % frente a +0,8 %). Para prosa la diferencia es marginal (+0,38 % frente a +0,1 %).
+No se dispone de datos de otros modelos comparables de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Checkpoint incompleto por sí solo: las tablas Engram no están en el repositorio y hay que descargar los shards 47 y 48 del modelo base 1017. Reutilizar los de `DeepSeek-V4.1-Flash` produce resultados incorrectos porque las tablas cambiaron en esta release.
-- Dependencia de un stack no estándar: exllamav3 upstream carece de clase `DeepseekV41`, de modo que el checkpoint solo es funcional con el kit basado en vLLM de MiaAI-Lab y su mapa de K (`exl3_k_map.json`).
-- Sesgos conocidos: no disponible; no hay documentación sobre sesgos en la información proporcionada.
-- Riesgo de alucinación: no disponible; no se han publicado evaluaciones de fidelidad ni de alineamiento para este checkpoint.
-- Idiomas: el repositorio no declara idiomas soportados, por lo que el rendimiento fuera de los idiomas del modelo base es desconocido.
-- Longitud de contexto: no declarada; los mecanismos de compresor de KV e indexador disperso sugieren contexto largo en el base, pero no hay cifra confirmada.
-- Evaluación limitada: solo perplejidad sobre dos conjuntos de texto no publicados, con 65.504 tokens por conjunto. No hay MMLU, HumanEval, GSM8K ni evaluaciones de visión, y los datos no son reproducibles al no publicarse los conjuntos.
-- Métricas de serving ausentes: sin latencia, throughput ni consumo de memoria medidos bajo carga.
-- Licencia: MIT permite uso comercial, pero al derivar del modelo base conviene verificar los términos del repositorio `deepseek-ai/DeepSeek-V4.1-Flash-1017` y de las tablas Engram descargadas por separado.
-- Madurez: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y una única actualización el mismo día de su creación; es una publicación comunitaria sin validación externa.
-- Uso en producción: la combinación de tres artefactos separados (trunk cuantizado, tablas Engram del base, mapa de K) añade puntos de fallo en el despliegue y complica las actualizaciones.
+- Las tablas Engram no están incluidas en este repositorio; deben tomarse de los shards 47 y 48 del checkpoint base, ya que cambiaron en esta release. Sin ellas, la perplejidad se degrada drásticamente (4,1548 en code y 8,9702 en prose en el control).
+- El modelo no cabe en 2× DGX Spark a TP=2; usar la variante de 2,9 bpw para ese hardware.
+- En uso agéntico, el razonamiento de cada turno se relee en turnos posteriores, por lo que el coste de razonamiento se acumula; el autor recomienda evitar `reasoning_effort` max en bucles agénticos salvo necesidad.
+- Riesgo de alucinación: no cuantificado en la información disponible.
+- Sesgos conocidos: no disponibles.
+- Idiomas soportados: no disponibles.
+- La licencia MIT permite uso comercial, pero debe verificarse la licencia del modelo base y de las tablas Engram tomadas del checkpoint base.
+- El formato EXL3 requiere runtimes específicos (ExLlamaV3 o kits compatibles); no es directamente compatible con llama.cpp u Ollama según la información disponible.
+- La plantilla de chat es necesaria en runtimes que la exijan al arranque; los kits basados en vLLM usan su encoder DeepSeek integrado.
 
 ## Enlaces
 
-- Repositorio Hugging Face de esta cuantización: https://huggingface.co/LibertAIDAI/DeepSeek-V4.1-Flash-1017-EXL3-3.5bpw
+- Repositorio Hugging Face: https://huggingface.co/LibertAIDAI/DeepSeek-V4.1-Flash-1017-EXL3-3.5bpw
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
-- Cuantización hermana 2,9 bpw: https://huggingface.co/LibertAIDAI/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw
-- Cuantización NVFP4: https://huggingface.co/LibertAIDAI/DeepSeek-V4.1-Flash-1017-NVFP4
-- Layout de referencia EXL3 2,9 bpw: https://huggingface.co/Mia-AiLab/DeepSeek-V4.1-Flash-EXL3-2.9bpw
-- Kit de serving para 2x DGX Spark: https://github.com/MiaAI-Lab/DeepSeek-v4.1-Flash-EXL3-2x-DGX-Sparks
+- Variante 2,9 bpw: https://huggingface.co/LibertAIDAI/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw
+- Variante NVFP4: https://huggingface.co/LibertAIDAI/DeepSeek-V4.1-Flash-1017-NVFP4
+- Variante 2,9 bpw de Mia-AiLab: https://huggingface.co/Mia-AiLab/DeepSeek-V4.1-Flash-EXL3-2.9bpw
+- Kit de despliegue 2× DGX Spark: https://github.com/MiaAI-Lab/DeepSeek-v4.1-Flash-EXL3-2x-DGX-Sparks
+- Plantilla de chat de referencia (jayleaton): https://huggingface.co/jayleaton/DeepSeek-V4.1-Flash-EXL3-2.8bpw
+- Discusión sobre reasoning_effort: https://huggingface.co/LibertAIDAI/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw/discussions/4

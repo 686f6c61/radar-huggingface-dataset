@@ -2,107 +2,97 @@
 
 ## Resumen
 
-Qwen3.8-27B-W4A4-GGUF es una cuantización extrema del modelo Qwen/Qwen3.8-27B, publicada por el usuario raspbfox y generada con la herramienta ruquant de skyne98. A diferencia de las cuantizaciones GGUF habituales, que mantienen las activaciones en 8 o 16 bits, esta versión aplica cuantización W4A4: tanto los pesos como las activaciones se almacenan en int4, y las multiplicaciones de matrices se ejecutan como productos escalares int4 × int4 (kernel `v_dot8_i32_i4`) sobre GPUs AMD gfx906 (MI50). El paquete incluye además un drafter DFlash2 en W4A4H para decodificación especulativa.
+Qwen3.8-27B-W4A4-GGUF es una cuantización W4A4 (pesos int4 y activaciones int4) del modelo Qwen3.8-27B, publicada por el usuario raspbfox mediante la herramienta ruquant. A diferencia de las cuantizaciones habituales de solo pesos, aquí también las activaciones se reducen a int4, de modo que los productos matriciales se ejecutan como operaciones int4 × int4, aprovechando instrucciones nativas como `v_dot8_i32_i4` en AMD gfx906 (MI50) y `mma.sync .s4` en las tensor cores INT4 de NVIDIA Turing, Ampere y Ada. El paquete incluye además un drafter DFlash2 en W4A4H para decodificación especulativa y un proyector de visión ajustado al modelo.
 
-El modelo está pensado para un nicho muy concreto: servir un modelo de ~27B (4.467 millones de parámetros reales según los safetensors del repo, aunque el nombre comercial indica 27B) en hardware AMD MI50 de 32 GB, habitualmente descartado por falta de soporte eficiente. Según las mediciones del autor, la combinación W4A4 + DFlash2 alcanza 80,2 tokens/s en una GPU, 89,5 t/s en TP2 y 109,6 t/s en TP4, frente a los 43,5 / 60,5 / 70,5 t/s de la cuantización Q4_0 de unsloth con el mismo drafter.
+El modelo base es Qwen3.8-27B, un transformer denso de Qwen con capacidades conversacionales, de razonamiento y visión. La cuantización está pensada para exprimir hardware antiguo o de gama alta con soporte INT4: las MI50 de 32 GB y las RTX 3090 son los objetivos declarados. El resultado medido es notable: en 4× MI50 se alcanzan 120,5 t/s con decodificación especulativa, frente a 73,1 t/s de un Q4_0 con el mismo drafter.
 
-La contrapartida es una pérdida de calidad medible: la divergencia KL frente a los logits de UD-Q8_K_XL es de 0,0428 (top-1 del 91,57 %), frente a 0,0259 (93,34 %) de Q4_0. No es un modelo para producción generalista, sino una pieza de infraestructura para quien tenga MI50 y quiera exprimirlas con llama.cpp modificado.
+La relevancia actual reside en que demuestra que una cuantización W4A4 real, con kernel propio y drafter compatible, puede duplicar el throughput de prefill y casi duplicar el decode especulativo respecto a cuantizaciones de solo pesos. El coste es la dependencia de un fork específico de llama.cpp (mx-llama.cpp, rama `ruquant`), ya que llama.cpp estándar no reconoce estos tipos de tensor.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (modelo base Qwen3.8-27B); cuantizacion W4A4 con rotacion OSTQuant y GPTQ |
-| Parametros totales | 4.467.201.280 (segun safetensors del repo); el nombre comercial indica 27B |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada |
-| Tipos de cuantizacion | W4A4 (pesos int4 + activaciones int4), W4A4H (con Hadamard online), Q8_0 para `ssm_out` y `lm_head`; 4,5 bits por peso con escala por fila y multiplicador de 4 bits por grupo de 64 |
+| Arquitectura | Transformer denso (modelo base Qwen3.8-27B); cuantizacion W4A4 con kernel int4 × int4 |
+| Parametros totales | 4.467.201.280 (dato real de safetensors del repo) |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | 69.632 tokens en la configuracion MI50 TP4; 65.536 en RTX 3090 (segun comandos de ejemplo) |
+| Tipos de cuantizacion | W4A4 (int4 pesos × int4 activaciones); W4A4H para el drafter; cache KV q4_0; proyector de vision F16 |
 | Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (dos ficheros: modelo objetivo de 17,19 GB y drafter de 2,65 GB) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (archivos: modelo 17,19 GB, drafter 2,65 GB, mmproj 0,97 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es Qwen3.8-27B, un transformer de Qwen. La cuantizacion parte del type map de unsloth para Qwen3.8-27B-Q4_0: las capas lineales de 4 bits se convierten a W4A4, mientras que `attn_output` y `ffn_down` pasan a W4A4H, que aplica una transformada de Hadamard online antes de la multiplicación. `ssm_out` y `lm_head` se mantienen en Q8_0. La rotación es OSTQuant (Hu et al., 2025): una rotación R1 aprendida más escalas de suavizado plegadas en los pesos; la Hadamard online es block-diagonal con 4 bloques por fila (Paley × Sylvester), de modo que un mismo fichero sirve para 1, 2 y 4 GPUs.
+El modelo base es un transformer denso de Qwen (Qwen3.8-27B) con capacidad de visión mediante proyector multimodal. Sobre él se aplica una cuantizacion OST-GPTQ con group size 64 y rb4, que rota el residual stream (OSTQuant); por eso el proyector de visión original no sirve y se incluye un mmproj específico. Las matrices se ejecutan como productos int4 × int4: `v_dot8_i32_i4` en gfx906 y `mma.sync .s4` en tensor cores INT4 de NVIDIA.
 
-Los pesos se cuantizan con GPTQ (Frantar et al., 2022) contra hessianos recogidos sobre el modelo ya redondeado (64 ventanas de wikitext, todas las posiciones), a 4,5 bits por peso. Las activaciones se cuantizan al vuelo por token, int4 asimétrico en grupos de 64, con la escala de cada grupo como múltiplo entero de una unidad por token, de forma que el producto escalar permanece en int32 hasta un único epílogo fp32; no hay recorte de activaciones. El drafter es el Qwen3.8-27B-DFlash2 de incoai, convertido a W4A4H salvo su capa `fc`, que absorbe la R1 del modelo objetivo y queda en Q8_0. El autor afirma que todos los kernels son bit-exactos respecto a la implementación de referencia en CPU.
+No se dispone de información sobre el número de tokens de entrenamiento, composición del dataset ni si hubo RLHF/DPO en el modelo base. La innovación técnica destacable es doble: la cuantización W4A4 real (no solo de pesos) con kernel propio, y la inclusión de un drafter DFlash2 en W4A4H para decodificación especulativa, que acepta entre 4,2 y 4,4 tokens por paso de verificación.
 
 ## Capacidades
 
-- Generación de texto conversacional: el repo está etiquetado como `conversational` y `endpoints_compatible`.
-- Decodificación especulativa: incluye un drafter DFlash2 W4A4H con draft de hasta 7 tokens y una aceptación medida de ~4,3 tokens por paso.
-- Inferencia tensor-parallel: soporte de TP1, TP2 y TP4 con el mismo fichero de pesos.
-- Ejecución en hardware AMD gfx906 (MI50) mediante el fork ruquant de mx-llama.cpp.
-- Capacidades del modelo base (razonamiento, código, matemáticas, tool calling, multilingüismo): no disponibles en la información proporcionada; esta ficha solo documenta la cuantización.
-- Modo thinking, visión o audio: no disponible.
+- Generación de texto y conversación multi-turno (tag `conversational`).
+- Razonamiento y respuesta a preguntas sobre documentos largos (probado con prompts de 64k tokens sobre wikitext).
+- Visión: procesamiento de imágenes mediante `--mmproj mmproj-Qwen3.8-27B-W4A4-F16.gguf`.
+- Decodificación especulativa con drafter DFlash2 (`--spec-type draft-dflash`).
+- Compatibilidad con endpoints (tag `endpoints_compatible`) y plantillas Jinja (`--jinja` en el comando de NVIDIA).
+- Uso como agente de codificación: la model card reporta 16 de 16 ejecuciones de un test agéntico superadas en RTX 3090.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Servicio de inferencia en clústeres de MI50 heredadas: el modelo permite reutilizar GPUs AMD MI50 de 32 GB, sin soporte eficiente en las pilas estándar, obteniendo 80,2 t/s en una sola tarjeta y 109,6 t/s en TP4 con decodificación especulativa.
-- Despliegue con `llama-server` en producción interna: el repo incluye la línea de comandos completa con tensor parallelism, drafter y variables de entorno para ROCm 5.7, lo que facilita reproducir la configuración medida.
-- Evaluación de cuantización extrema: útil como referencia para estudiar el coste de calidad de W4A4 (KLD 0,0428, top-1 91,57 %) frente a Q4_0 (KLD 0,0259, top-1 93,34 %) en tareas de generación libre.
-- Investigación en decodificación especulativa: el par objetivo + drafter W4A4H permite medir aceptación (4,27-4,35 tokens por paso) y latencia de verificación (27,6-42,2 ms para 8 tokens) en hardware AMD.
-- Prefill de prompts largos: con `-b 2048 -ub 2048` alcanza 487,8 t/s en una GPU, 833,1 t/s en TP2 y 1324,0 t/s en TP4, adecuado para procesar documentos extensos antes de la generación.
-- Pruebas de compatibilidad de kernels: al ser bit-exacto con la referencia en CPU, sirve para validar implementaciones de `v_dot8_i32_i4` y rutas CUDA emuladas en sm_80+.
+- Inferencia de alto throughput en hardware AMD antiguo: en 4× MI50 (32 GB, PCIe 3.0) se obtienen 120,5 t/s con DFlash2 y 1.389 t/s de prefill (pp2048), lo que permite servir un modelo de 27B en GPUs de segunda mano con rendimiento interactivo.
+- Despliegue en RTX 3090 con 24 GB: el modelo, el drafter y 64k de contexto caben usando cache KV q4_0; se miden 137 t/s de decode especulativo y 1.493 t/s de prefill (pp512), adecuado para asistentes locales.
+- Análisis de documentos largos: con 64k tokens de contexto se procesa un documento completo y se responden preguntas sobre él (240 s de prefill en 1× MI50, 84 s en TP4), útil para resumen y QA sobre contratos o informes.
+- Agente de codificación: el modelo supera un test agéntico de 16 ejecuciones en RTX 3090 con tool calling vía plantilla Jinja, apto para asistentes de edición de código en local.
+- Procesamiento multimodal: con el mmproj incluido se pueden describir imágenes o extraer información de capturas y diagramas, siempre usando el proyector específico de esta cuantización.
+- Servicio conversacional de bajo coste: la licencia Apache 2.0 y el formato GGUF permiten integrar el modelo en un llama-server con endpoints compatibles para chatbots o APIs internas.
+- Investigación en cuantización: sirve como referencia reproducible para comparar W4A4 frente a Q4_0 en el mismo runtime, con comandos y cifras detalladas en la model card.
 
 ## Benchmarks y rendimiento
 
-Mediciones del autor en 4× AMD MI50 32 GB, ROCm 5.7, PCIe 3.0, 30 prompts × 256 tokens, greedy, draft 7 (Q4_0 con draft 4):
+Datos medidos por el autor en 4× AMD MI50 32 GB, PCIe 3.0, ROCm 7.12, comparando W4A4 + DFlash2 frente a Q4_0 (4 bits pesos, 8 bits activaciones) + DFlash2 de unsloth/incoai:
 
 | Metrica | 1 GPU | TP2 | TP4 |
 |---|---|---|---|
-| W4A4 + DFlash2 (t/s) | 80,2 | 89,5 | 109,6 |
-| Q4_0 + DFlash2 (t/s) | 43,5 | 60,5 | 70,5 |
-| Aceptacion W4A4 (tokens/paso) | 4,35 | 4,27 | 4,31 |
-| Verificacion de 8 tokens, ms (W4A4 / Q4_0) | 42,2 / 95,5 | 35,1 / 62,8 | 27,6 / 40,6 |
-| Prefill pp2048, t/s (W4A4 / Q4_0) | 487,8 / 290,7 | 833,1 / 529,0 | 1324,0 / 901,4 |
-| Decode simple, t/s (W4A4 / Q4_0) | 29,2 / 27,9 | 41,6 / 39,7 | 52,7 / 51,5 |
+| W4A4 + DFlash2 (t/s) | 84,2 | 98,4 | 113,3 |
+| Q4_0 + DFlash2 (t/s) | 45,7 | 62,6 | 73,1 |
+| Aceptacion W4A4 (tokens/paso) | 4,33 | 4,21 | 4,31 |
+| Forward de verificacion 8 tokens (ms), W4A4 / Q4_0 | 40,6 / 91,6 | 30,7 / 54,4 | 25,5 / 37,2 |
+| Prefill pp2048 (t/s), W4A4 / Q4_0 | 503,7 / 306,8 | 881,7 / 562,7 | 1.388,9 / 953,2 |
+| Decode simple (t/s), W4A4 / Q4_0 | 31,6 / 28,9 | 46,8 / 46,5 | 60,1 / 64,2 |
 
-Calidad (KLD frente a UD-Q8_K_XL, wikitext-2, 64 fragmentos de 2048):
-
-| Modelo | KLD | Top-1 | PPL / base |
-|---|---|---|---|
-| unsloth UD-Q4_K_XL | 0,0078 | 96,58 % | 0,999 |
-| unsloth Q4_0 | 0,0259 | 93,34 % | 1,022 |
-| Este modelo (W4A4) | 0,0428 | 91,57 % | 1,028 |
+Con el fork del 2026-11-07: 93,3 / 107,4 / 120,5 t/s en las mismas 30 prompts. En RTX 3090: 137 t/s con DFlash2 y 1.493 t/s de prefill (pp512). En prompts de 64k: 240 s de prefill en 1× MI50, 134 s en TP2 (cache f16) y 84 s en TP4; después, decode DFlash2 de 44-76 t/s (1 GPU) y 72-135 t/s (TP4).
 
 ## Requisitos de hardware
 
-- VRAM: el fichero del modelo ocupa 17,19 GB y el drafter 2,65 GB; en total unos 19,8 GB, lo que encaja en una MI50 de 32 GB con margen para caché KV.
-- GPU objetivo: AMD MI50 (gfx906) con ROCm 5.7; el autor ha medido con 1, 2 y 4 GPUs.
-- GPUs consumer: no hay datos de ejecución en RTX 4090 u otras consumer; la ruta CUDA del fork solo emula `dot8` como comprobación de correctitud, y el repo ruquant incluye un parche separado con ruta sm_80+ usada para puntuar calidad en una RTX 3090.
-- Despliegue: exclusivamente con el fork `ruquant` de mx-llama.cpp (rama `ruquant`); llama.cpp estándar no reconoce los tipos W4A4/W4A4H. Binarios necesarios: `llama-server`, `llama-bench`, `llama-perplexity`.
-- Tensor parallelism: `-sm tensor -devd ROCm0`; el drafter debe fijarse a una sola GPU, ya que replicado o dividido es un 19-24 % más lento.
-- Variables de entorno para ROCm 5.7: `GGML_CUDA_DISABLE_GRAPHS=1`, `HSA_FORCE_FINE_GRAIN_PCIE=1`, `GGML_META_TOKEN_GRAPH=0`, `GGML_META_SPIN=2000000` (el spin añade ~2 %).
-- Throughput: hasta 109,6 t/s en TP4 con decodificación especulativa y 1324,0 t/s de prefill pp2048 en TP4.
+- VRAM estimada: modelo 17,19 GB + drafter 2,65 GB ≈ 19,8 GB en pesos; con cache KV q4_0 cabe en 24 GB (RTX 3090) para 64k de contexto. El mmproj añade 0,97 GB.
+- GPU recomendadas: AMD MI50 32 GB (gfx906), en 1, 2 o 4 unidades; NVIDIA RTX 3090 y otras con tensor cores INT4 (Turing, Ampere, Ada).
+- Cabe en GPU de consumo: sí, en RTX 3090 de 24 GB con cache KV de 4 bits; en GPUs con menos VRAM no está documentado.
+- Opciones de despliegue: exclusivamente el fork mx-llama.cpp rama `ruquant` (ROCm 7.12 o 5.7 en AMD; build CUDA en NVIDIA). llama.cpp estándar no reconoce los tipos W4A4/W4A4H.
+- Latencia y throughput: 93,3-120,5 t/s de decode especulativo en MI50 (1 a 4 GPUs) y 137 t/s en RTX 3090; prefill de 504 a 1.389 t/s según configuración; un paso de verificación cuesta 66-67 ms en 1× MI50 y 41-45 ms en TP4.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Calidad (KLD / top-1) | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Decode (medido) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (W4A4 + DFlash2) | ~27B (nominal) | no disponible | 0,0428 / 91,57 % | Apache-2.0 | GGUF en HF, requiere fork ruquant |
-| unsloth Qwen3.8-27B Q4_0 | ~27B (nominal) | no disponible | 0,0259 / 93,34 % | Apache-2.0 | GGUF estándar en HF |
-| unsloth Qwen3.8-27B UD-Q4_K_XL | ~27B (nominal) | no disponible | 0,0078 / 96,58 % | Apache-2.0 | GGUF estándar en HF |
-| Qwen/Qwen3.8-27B (original) | ~27B (nominal) | no disponible | referencia | Apache-2.0 | safetensors en HF |
+| Qwen3.8-27B W4A4 (este) | 4.467 M (safetensors) | 69.632 (TP4) | 120,5 t/s (TP4, DFlash2) | Apache 2.0 | GGUF, fork ruquant |
+| Qwen3.8-27B Q4_0 + DFlash2 | mismo base | mismo | 73,1 t/s (TP4, DFlash2) | Apache 2.0 | GGUF, llama.cpp estándar |
+| Qwen3.8-27B Q4_0 sin drafter | mismo base | mismo | 64,2 t/s (TP4) | Apache 2.0 | GGUF, llama.cpp estándar |
 
-La comparativa se limita a variantes del mismo modelo base porque no se dispone de datos de benchmarks de modelos alternativos en la información proporcionada.
+No se dispone de datos de benchmarks de calidad (MMLU, HumanEval, GSM8K) en la información proporcionada, por lo que no se puede comparar rendimiento de tarea frente a otras alternativas.
 
 ## Limitaciones y advertencias
 
-- Pérdida de calidad respecto a Q4_0: KLD 0,0428 frente a 0,0259 y top-1 91,57 % frente a 93,34 %; es el precio de cuantizar también las activaciones a int4.
-- Dependencia de un fork no estándar: sin la rama `ruquant` de mx-llama.cpp los ficheros no cargan; no hay soporte en llama.cpp, Ollama, vLLM ni TGI.
-- Los kernels están escritos para gfx906; la ruta CUDA del fork solo emula `dot8` y no es apta para producción.
-- El drafter debe fijarse a una GPU concreta; replicarlo o dividirlo degrada el rendimiento un 19-24 %.
-- No hay información sobre idiomas soportados, longitud de contexto ni capacidades del modelo base (razonamiento, código, tool calling) en esta ficha; deben consultarse en la model card de Qwen/Qwen3.8-27B.
-- Riesgo de alucinación y sesgos: no documentados en la información proporcionada; aplican los del modelo base.
-- Licencia Apache-2.0 permite uso comercial, pero la cadena de dependencias (mx-llama.cpp y llama.cpp, ambos MIT) debe respetarse en la redistribución.
-- Repo con 0 descargas y 0 likes en el momento de la consulta: sin validación comunitaria independiente.
+- Requiere un fork específico de llama.cpp (mx-llama.cpp, rama `ruquant`); llama.cpp estándar no carga los tipos de tensor W4A4/W4A4H.
+- El proyector de visión original no funciona: el residual stream está rotado (OSTQuant) y hay que usar el mmproj incluido; otro proyector produce ruido.
+- La decodificación especulativa depende de la tasa de aceptación del drafter; en prompts de 64k la velocidad varía entre 44 y 76 t/s según lo bien que el drafter acierte cada respuesta.
+- En RTX 3090, 64k de contexto junto al drafter solo caben con cache KV de 4 bits.
+- No hay información sobre idiomas soportados, sesgos ni riesgo de alucinación específicos de esta cuantización.
+- No se han publicado resultados de benchmarks de calidad en la información disponible; las cifras son solo de throughput y latencia.
+- La licencia Apache 2.0 permite uso comercial, pero la dependencia del fork y del hardware INT4 condiciona el despliegue en producción.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/raspbfox/Qwen3.8-27B-W4A4-GGUF
+- Hugging Face: https://huggingface.co/raspbfox/Qwen3.8-27B-W4A4-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Herramienta ruquant: https://github.com/skyne98/ruquant
 - Fork de llama.cpp: https://github.com/skyne98/mx-llama.cpp/tree/ruquant
-- Metodología y resultados: https://github.com/skyne98/ruquant/blob/main/RESULTS.md
-- Drafter DFlash2: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2
+- Herramienta ruquant: https://github.com/skyne98/ruquant

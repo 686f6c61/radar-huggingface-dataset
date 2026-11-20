@@ -2,94 +2,96 @@
 
 ## Resumen
 
-Camfranglais es un ajuste fino del modelo Mistral-Nemo-Instruct-2407 (12B parámetros) especializado en camfranglais, el argot urbano camerunés que mezcla francés, inglés y pidgin. Lo desarrolla Cmr237 junto con un equipo de tres colaboradores (Daryl B., Schadrac y William Pancha), y resuelve un problema concreto: los modelos multilingües generalistas tienen un rendimiento muy pobre en registros lingüísticos de bajos recursos como este, por lo que el modelo busca tanto comprender como generar respuestas en camfranglais de forma natural.
+Camfranglais es un ajuste fino del modelo Mistral-Nemo-Instruct-2407 (12B parámetros) especializado en camfranglais, la jerga urbana camerunesa que mezcla francés, inglés y pidgin. Lo desarrollan Daryl B., Schadrac y William Pancha, y resuelve un problema de cobertura lingüística: los modelos generalistas apenas han visto este registro en sus datos de preentrenamiento, por lo que fallan al generar respuestas naturales en él. El modelo está pensado para conversación informal y preserva las capacidades del modelo base.
 
-El entrenamiento sigue una estrategia híbrida en dos fases sobre el modelo base: primero un preentrenamiento continuado (CPT) con 14.302 textos en camfranglais para asimilar vocabulario y giros idiomáticos, y después un ajuste supervisado (SFT) sobre 1.080 diálogos conversacionales. Todo se hizo con QLoRA mediante Unsloth en GPUs NVIDIA L4, con adaptadores LoRA de 114M de parámetros entrenables.
+La arquitectura subyacente es la de Mistral-Nemo: un transformer decoder-only de 12.247.782.400 parámetros con atención GQA y ventana de contexto de 128.000 tokens (según las especificaciones del modelo base). El ajuste se hizo con QLoRA en dos fases (preentrenamiento continuo y SFT conversacional) sobre un corpus propio de 23.224 textos y 2.671 diálogos, con adaptadores de 114M de parámetros entrenables.
 
-Es relevante porque demuestra que con presupuestos de cómputo modestos y corpus pequeños pero curados se puede adaptar un modelo de 12B a una variedad lingüística que los grandes modelos ignoran. El repositorio incluye tanto los adaptadores LoRA en safetensors como cuatro cuantizaciones GGUF listas para llama.cpp y Ollama, lo que facilita su despliegue en hardware de consumo.
+Es relevante porque demuestra un flujo completo de adaptación lingüística de bajo coste (GPU NVIDIA L4, Unsloth, QLoRA) a un registro de bajos recursos, con cuantizaciones GGUF listas para Ollama y llama.cpp. La licencia MIT y la disponibilidad de pesos en safetensors y GGUF facilitan su uso tanto en investigación como en productos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Mistral-Nemo), ajuste fino con QLoRA |
-| Parametros totales | 12.247.782.400 (12B) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (el ejemplo de uso fija max_seq_length a 2048) |
-| Tipos de cuantizacion | Q8_0, Q6_K, Q5_K_M, Q4_K_M (GGUF); adaptadores LoRA en bfloat16 |
-| Idiomas soportados | fr, en (con capacidad declarada en camfranglais) |
+| Arquitectura | Transformer decoder-only (Mistral-Nemo), ajuste QLoRA |
+| Parametros totales | 12.247.782.400 |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | 128.000 tokens en el modelo base; el ejemplo de uso del autor emplea max_seq_length=2048 |
+| Tipos de cuantizacion | GGUF Q8_0, Q6_K, Q5_K_M, Q4_K_M; carga en 4 bits vía Unsloth/Transformers |
+| Idiomas soportados | fr, en (con camfranglais como registro objetivo) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (adaptadores LoRA), GGUF |
+| Formato de pesos | safetensors (adaptadores LoRA) y GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Mistral-Nemo-Instruct-2407, un transformer decoder-only de 12B parámetros con atención por ventanas deslizantes y RoPE, y se adapta mediante QLoRA con Unsloth en bfloat16 sobre GPUs NVIDIA L4. La configuración LoRA emplea r = 32, lora_alpha = 32 y use_rslora = True, lo que da 114M de parámetros entrenables. El entrenamiento se divide en dos fases: una de preentrenamiento continuado sobre 14.302 textos en camfranglais del corpus camfranglais-corpus-cpt, con packing activado y tasa de aprendizaje 1e-4, y otra de ajuste supervisado sobre 1.080 diálogos del corpus camfranglais-corpus-sft, usando la plantilla Mistral (`[INST] ... [/INST]`) y calculando la pérdida solo sobre las respuestas del asistente con tasa de aprendizaje 5e-5.
+El modelo parte de Mistral-Nemo-Instruct-2407, un transformer decoder-only denso de 12B parámetros. Sobre él se aplicó QLoRA con Unsloth en GPU NVIDIA L4 en bfloat16, con r=32, lora_alpha=32 y use_rslora=True, lo que da 114M de parámetros entrenables. El entrenamiento fue híbrido en dos fases: primero un preentrenamiento continuo (CPT) sobre 23.224 textos en camfranglais del corpus Cmr237/camfranglais-corpus-cpt, con packing=True y lr=1e-4, para asimilar vocabulario y giros idiomáticos; después un SFT conversacional sobre 2.671 diálogos (2.404 de entrenamiento y 267 de test) del corpus Cmr237/camfranglais-corpus-sft, con la plantilla Mistral [INST]...[/INST], cálculo de loss solo sobre las respuestas del asistente y lr=5e-5.
 
-No se documenta en la información disponible el número total de tokens de entrenamiento ni la composición detallada del dataset más allá de los recuentos de textos y diálogos. Tampoco se indica si hubo RLHF o DPO; el proceso descrito es exclusivamente CPT seguido de SFT. La innovación técnica principal es el enfoque de adaptación de bajo coste a una variedad lingüística de bajos recursos, con evaluación explícita de la adherencia al registro camfranglais.
+No se documenta en la información disponible el uso de RLHF o DPO, ni innovaciones de decodificación (decodificación especulativa, atención lineal u otras). La innovación principal es metodológica: adaptación de un modelo de 12B a un registro de bajos recursos con un presupuesto de cómputo reducido y publicación conjunta de adaptadores y cuantizaciones GGUF.
 
 ## Capacidades
 
-- Generación de texto conversacional en camfranglais, francés e inglés, con mezcla natural de las tres lenguas.
-- Comprensión de argot urbano camerunés y expresiones coloquiales del registro camfranglais.
-- Conversación multi-turno siguiendo la plantilla de chat de Mistral.
-- Ajuste de estilo mediante prompt de sistema (por ejemplo, "tu réponds uniquement en camfranglais").
-- Capacidades heredadas del modelo base Mistral-Nemo (razonamiento y código), aunque no se documenta su preservación tras el ajuste.
-- Soporte de tool calling y function calling: no disponible en la información proporcionada.
-- Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades de visión o audio: no disponibles (el modelo base es solo texto).
+- Generación de texto conversacional en camfranglais, con estilo informal y marcadores propios del registro.
+- Comprensión y generación en francés e inglés, heredadas del modelo base.
+- Conversación multi-turno mediante la plantilla de chat Mistral.
+- Razonamiento y conocimiento general del modelo base Mistral-Nemo (no se documenta degradación específica, pero tampoco se evalúa).
+- Capacidad de ejecución local en CPU/GPU mediante GGUF y Ollama.
+- Soporte de system prompt para fijar el registro (por ejemplo, "Tu parles comme un camerounais").
+- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo thinking.
 
 ## Casos de uso
 
-- Atención al cliente en Camerún: el modelo puede gestionar conversaciones con usuarios que escriben en camfranglais, un registro que los asistentes generalistas no cubren, manteniendo el tono coloquial adecuado.
-- Moderación y análisis de contenido en redes sociales: permite interpretar publicaciones y comentarios en camfranglais para tareas de clasificación o detección de contenido, gracias a la fase de CPT que asimila el vocabulario del registro.
-- Traducción informal camfranglais-francés/inglés: útil para herramientas de comunicación interna en empresas camerunesas que operan con equipos multilingües.
-- Generación de contenido para medios locales: redacción de textos con registro urbano camerunés para blogs, guiones o publicaciones, con control de estilo mediante prompt de sistema.
-- Investigación lingüística: estudio de variedades de contacto lingüístico y evaluación de la capacidad de modelos de 12B para adaptarse a registros de bajos recursos con corpus pequeños.
-- Chatbots de comunidad y soporte en plataformas locales: despliegue ligero con la cuantización Q4_K_M (~7,5 GB) en hardware modesto mediante Ollama o llama.cpp.
-- Prototipado de asistentes conversacionales regionales: el formato GGUF y el Modelfile incluido permiten iterar rápidamente sin infraestructura GPU dedicada.
+- Chatbots de atención al cliente para el mercado camerunés: el modelo puede responder en camfranglais a usuarios jóvenes urbanos, un registro que los modelos generalistas no cubren de forma natural.
+- Moderación y clasificación de contenido en redes sociales: sirve para interpretar mensajes escritos en jerga camerunesa y detectar tono o intención.
+- Generación de contenido para marketing local: creación de copys, publicaciones y respuestas en camfranglais para campañas dirigidas a audiencias de Duala o Yaundé.
+- Investigación lingüística y sociolingüística: permite estudiar variación léxica y sintáctica del camfranglais generando corpus sintéticos controlados.
+- Asistentes conversacionales embebidos en aplicaciones móviles: las cuantizaciones Q4_K_M (~7,5 GB) y Q5_K_M (~8,7 GB) permiten despliegue en equipos con 8-16 GB de RAM mediante Ollama o llama.cpp.
+- Traducción informal francés/camfranglais: útil para adaptar material educativo o administrativo a un registro accesible para población joven.
+- Prototipado rápido de productos de voz o texto para el mercado camerunés, aprovechando la licencia MIT y la disponibilidad de GGUF.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor sobre el conjunto de test de 120 diálogos:
+Los únicos datos publicados son las métricas de evaluación del autor sobre el conjunto de test de 267 diálogos:
 
 | Metrica | Valor |
 |---|---|
-| Eval Loss | 3,1847 |
-| Perplejidad | 24,16 |
-| Score de adherencia a camfranglais (modelo / humano) | 0,1435 / 0,1731 |
-| Tasa de respuestas con marcadores de camfranglais | 73,3 % |
-| Similitud coseno media (modelo / pregunta) | 0,3968 |
+| Eval loss | 3,7362 |
+| Perplejidad | 41,94 |
+| Score de adherencia a camfranglais (modelo / humano) | 0,1789 / 0,1551 |
+| Tasa de respuestas con marcadores de camfranglais | 81,27 % |
+| Similitud coseno media (modelo / pregunta) | 0,3891 |
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: ~7,5 GB con Q4_K_M, ~8,7 GB con Q5_K_M, ~10 GB con Q6_K y ~13 GB con Q8_0.
-- GPU recomendadas: NVIDIA L4 (usada en entrenamiento), así como A100, H100 o RTX 4090 para la versión sin cuantizar o para mayor throughput.
-- Cabe en GPU de consumo: sí, con las cuantizaciones Q4_K_M y Q5_K_M en tarjetas de 8-12 GB (RTX 3060, 4060, 4070); Q6_K y Q8_0 requieren 12-16 GB.
-- Opciones de despliegue: Ollama (`ollama run hf.co/Cmr237/Camfranglais:Q5_K_M`), llama.cpp (`llama-cli -hf Cmr237/Camfranglais:Q5_K_M --jinja`), y Unsloth/Transformers para cargar los adaptadores LoRA en GPU.
-- Latencia y throughput estimados: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia en 4 bits (QLoRA/Unsloth): en torno a 8-10 GB, según el ejemplo del autor con load_in_4bit=True.
+- GGUF Q4_K_M (~7,5 GB): cabe en GPUs consumer con 8 GB de VRAM (RTX 3060 Ti, RTX 4060) y en equipos con 8-16 GB de RAM.
+- GGUF Q5_K_M (~8,7 GB) y Q6_K (~10 GB): requieren 10-16 GB de VRAM o RAM; adecuados para RTX 4070, RTX 4080 o Apple Silicon con 16 GB unificados.
+- GGUF Q8_0 (~13 GB): recomendable en GPUs de 16 GB o más (RTX 4090, A100 40 GB, H100) o en CPU con 16 GB de RAM.
+- Despliegue: Ollama (ollama run hf.co/Cmr237/Camfranglais:Q5_K_M), llama.cpp (llama-cli -hf ...), y Unsloth/Transformers para los adaptadores LoRA.
+- No se documentan cifras de latencia ni throughput en la información disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Camfranglais (este modelo) | 12B | no disponible | Camfranglais (argot camerunes) | MIT | Hugging Face, GGUF, Ollama |
-| Mistral-Nemo-Instruct-2407 (base) | 12B | no disponible | Instrucciones generales multilingues | Apache 2.0 | Hugging Face |
-| Mistral 7B Instruct | 7B | no disponible | Instrucciones generales | Apache 2.0 | Hugging Face |
+| Camfranglais (este modelo) | 12,25B | 128k (base) | MIT | HF (safetensors + GGUF) | Ajuste QLoRA especializado en camfranglais |
+| Mistral-Nemo-Instruct-2407 | 12B | 128k | Apache 2.0 | HF | Modelo base; no especializado en camfranglais |
+| Mistral-7B-Instruct | 7B | 32k | Apache 2.0 | HF | Menor tamaño, sin cobertura de camfranglais |
+| Llama 3.1 8B Instruct | 8B | 128k | Llama 3.1 Community | HF | Multilingüe generalista, sin ajuste a camfranglais |
 
-No se dispone de datos de benchmarks comparativos con modelos especializados en otras variedades lingüísticas africanas en la información proporcionada.
+La comparación se limita a datos públicos del modelo base y alternativas generalistas; no hay benchmarks comparativos publicados entre Camfranglais y estos modelos.
 
 ## Limitaciones y advertencias
 
-- El corpus de entrenamiento es pequeño (14.302 textos y 1.080 diálogos), lo que limita la cobertura del registro y aumenta el riesgo de sobreajuste.
-- La adherencia a camfranglais del modelo (0,1435) queda por debajo de la humana (0,1731) según la métrica del autor, lo que indica margen de mejora en naturalidad.
-- La similitud coseno media con la pregunta es de 0,3968, un valor bajo que sugiere respuestas no siempre alineadas con la consulta.
-- Riesgo de alucinación y de mezcla indebida de registros lingüísticos, especialmente fuera del dominio conversacional.
-- El ajuste puede haber degradado capacidades del modelo base (razonamiento, código, tool calling), que no se evalúan en la model card.
-- Los idiomas declarados oficialmente son fr y en; el camfranglais no figura como idioma oficial en los metadatos.
-- Licencia MIT: permite uso comercial, pero conviene revisar las condiciones del modelo base Mistral-Nemo (Apache 2.0) y de los datasets empleados.
-- No hay información sobre sesgos específicos ni sobre evaluación de seguridad.
+- El corpus de ajuste es reducido (23.224 textos y 2.671 diálogos), lo que puede limitar la variedad y aumentar el riesgo de sobreajuste al estilo del corpus.
+- La perplejidad de 41,94 en test es alta para un modelo de 12B, lo que sugiere incertidumbre considerable en la generación.
+- El score de adherencia a camfranglais (0,1789) es bajo en términos absolutos, aunque supera ligeramente la referencia humana (0,1551); no debe interpretarse como dominio completo del registro.
+- Riesgo de alucinación heredado del modelo base, especialmente en temas factuales o de actualidad.
+- Idiomas declarados: francés e inglés; no se garantiza calidad en otras lenguas ni en variantes regionales distintas del camfranglais.
+- No se documentan evaluaciones de sesgo; el modelo puede reproducir estereotipos presentes en los datos de entrenamiento.
+- Licencia MIT permite uso comercial, pero conviene verificar las condiciones del modelo base Mistral-Nemo (Apache 2.0) y de los corpus de ajuste antes de desplegar en producción.
+- El contexto efectivo en los ejemplos de uso se limita a 2.048 tokens (max_seq_length), muy por debajo de los 128k del modelo base; para contextos largos habría que reconfigurar y validar.
+- No hay soporte documentado de tool calling ni de agentes, por lo que no es adecuado para pipelines que dependan de function calling.
 
 ## Enlaces
 
@@ -99,3 +101,6 @@ No se dispone de datos de benchmarks comparativos con modelos especializados en 
 - Dataset SFT: https://huggingface.co/datasets/Cmr237/camfranglais-corpus-sft
 - Modelo base: https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407
 - Unsloth: https://github.com/unslothai/unsloth
+- Perfil de Daryl B.: https://github.com/darylbdr
+- Perfil de Schadrac: https://github.com/Schadrac237
+- Perfil de William Pancha: https://github.com/Williampancha

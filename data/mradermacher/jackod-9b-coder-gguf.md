@@ -2,105 +2,97 @@
 
 ## Resumen
 
-JackOD-9B-Coder-GGUF es el repositorio de cuantizaciones GGUF generado por mradermacher a partir del modelo ManniX-ITA/JackOD-9B-Coder, un modelo de aproximadamente 9.197 millones de parametros (9.2B) orientado a generacion de codigo y flujos agenticos. Se trata de una cuantizacion estatica, no de un modelo entrenado desde cero: el valor anadido esta en ofrecer el modelo base en formatos de precision reducida listos para ejecutarse en llama.cpp, Ollama o LM Studio sin necesidad de GPU de datacenter.
+JackOD-9B-Coder-GGUF es la versión cuantizada en formato GGUF del modelo JackOD-9B-Coder, publicada por el usuario mradermacher, conocido por generar cuantizaciones estáticas e imatrix de modelos open source para su uso con llama.cpp y herramientas compatibles. El modelo original, alojado en ManniX-ITA/JackOD-9B-Coder, es un merge orientado a tareas de código y uso agéntico, construido a partir de la familia Qwen 3.5 según las etiquetas de la model card.
 
-El modelo base se distribuye con etiquetas que lo identifican como un merge (fusion de pesos) con capacidades de code, agentic y tool-calling, y con la etiqueta qwen3.5, lo que apunta a una arquitectura derivada de la familia Qwen. El idioma declarado es unicamente ingles (en) y la licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
+El modelo cuenta con 9.197.093.888 parámetros totales (aproximadamente 9,2 mil millones) y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. La model card declara únicamente el idioma inglés y etiquetas que lo sitúan en el ámbito del código, el tool calling y los flujos agénticos, aunque no se detallan en la información disponible la longitud de contexto, la composición del dataset de entrenamiento ni los resultados de benchmarks.
 
-Su relevancia practica es doble: por un lado, un modelo de ~9B con soporte declarado de tool calling es un tamano util para agentes de codigo en local; por otro, el repositorio cubre un rango de cuantizaciones que va desde 4,0 GB (Q2_K) hasta 18,5 GB (f16), lo que permite desplegarlo desde una GPU consumer de 8 GB hasta estaciones de trabajo con 24 GB de VRAM. El repositorio incluye ademas ficheros mmproj, proyector multimodal asociado a modelos con vision, aunque la model card no detalla esa capacidad.
+La relevancia de esta ficha radica en que ofrece un modelo de tamaño medio (9B) empaquetado en múltiples cuantizaciones GGUF, desde Q2_K hasta f16, lo que facilita su despliegue en hardware de consumo y en entornos de producción con llama.cpp, Ollama o servidores compatibles con la API de OpenAI. El repositorio incluye además ficheros mmproj, lo que sugiere capacidades multimodales en el modelo original, aunque no se especifica su alcance.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiquetado como qwen3.5 y como merge; no se detalla en la informacion proporcionada) |
+| Arquitectura | no disponible (modelo base etiquetado como qwen3.5; se desconoce la arquitectura exacta) |
 | Parametros totales | 9.197.093.888 (9,2B) |
-| Parametros activos | no aplica (no se ha confirmado una arquitectura MoE) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | mmproj-Q8_0, mmproj-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
-| Idiomas soportados | ingles (en) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (el modelo base esta en safetensors) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; mmproj en Q8_0 y f16 |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base se distribuye presumiblemente en safetensors |
+| Tamano del repo | 85,1 GB |
+| Modelo base | ManniX-ITA/JackOD-9B-Coder |
+| Fecha de creacion | 2026-09-12 |
+| Ultima actualizacion | 2026-10-06 |
+| Descargas | 1220 |
+| Likes | 0 |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna ni sobre el proceso de entrenamiento del modelo base. Las etiquetas del repositorio indican que ManniX-ITA/JackOD-9B-Coder es un merge (combinacion de pesos de otros modelos) con enfasis en codigo, uso agentico y tool calling, y la etiqueta qwen3.5 sugiere que la familia subyacente es Qwen. No se especifica el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF, DPO u otra alineacion.
+No se dispone de información detallada sobre la arquitectura interna del modelo en la documentación proporcionada. Las etiquetas de la model card indican que se trata de un merge ("merge") construido sobre la familia Qwen 3.5, y que el modelo está orientado a código y a flujos agénticos con tool calling. Al ser un merge, es probable que combine pesos de varios modelos especializados, pero no se especifican los modelos de origen, la metodología de fusión ni los hiperparámetros empleados.
 
-Lo que si esta documentado es el proceso de cuantizacion aplicado por mradermacher: cuantizaciones estaticas generadas con el flujo habitual del autor (convert_type hf, quantize_version 2, output_tensor_quantised 1). El repositorio incluye ademas, como ficheros separados, el proyector multimodal en dos precisiones (mmproj-Q8_0 de 0,7 GB y mmproj-f16 de 1,0 GB), lo que apunta a que el modelo base podria soportar entrada de imagenes, si bien la model card no lo confirma ni lo describe.
-
-El repositorio incluye una segunda variante de cuantizaciones ponderadas con matriz de importancia (imatrix) publicada aparte como mradermacher/JackOD-9B-Coder-i1-GGUF. Segun la propia documentacion del autor, las cuantizaciones IQ suelen ser preferibles a cuantizaciones no-IQ de tamano similar.
+Tampoco se detallan el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF, DPO o ajuste supervisado. La presencia de ficheros mmproj en las cuantizaciones sugiere que el modelo base incorpora un codificador multimodal (probablemente visión), pero no se confirma en la información disponible. Cualquier afirmación sobre innovaciones técnicas como decodificación especulativa o atención lineal sería especulativa y no se incluye.
 
 ## Capacidades
 
-- Generacion de codigo: el modelo esta etiquetado explicitamente como code y esta pensado para tareas de programacion.
-- Tool calling / function calling: la etiqueta tool-calling indica soporte declarado de llamada a herramientas, requisito habitual en agentes.
-- Flujos agenticos: la etiqueta agentic apunta a uso en razonamiento multi-paso y orquestacion de acciones.
-- Conversacional: el repositorio esta marcado como conversational, por lo que se espera un formato de chat multi-turno.
-- Multimodalidad (no confirmada): la presencia de ficheros mmproj sugiere proyector de vision, pero la model card no describe la capacidad ni como activarla.
-- Multilingue: limitado a ingles segun los metadatos; no se declara soporte de castellano ni de otros idiomas.
-- Razonamiento extenso tipo thinking: no disponible.
-- Capacidades de audio: no disponible.
+- Generación de texto y código: el modelo está etiquetado explícitamente como "code", por lo que se espera un rendimiento orientado a tareas de programación.
+- Tool calling / function calling: la etiqueta "tool-calling" indica soporte para invocación de herramientas, adecuado para pipelines agénticos.
+- Uso agéntico: la etiqueta "agentic" sugiere capacidad para razonamiento multi-paso y ejecución de tareas con herramientas.
+- Multimodalidad: la presencia de ficheros mmproj en el repositorio indica soporte de entrada multimodal (probablemente imagen), aunque no se especifica el alcance ni la calidad.
+- Idiomas: únicamente inglés declarado; no se garantiza soporte de castellano ni de otros idiomas.
+- Capacidades de razonamiento y matemáticas: no disponibles en la información proporcionada.
+- Modo thinking: no disponible.
 
 ## Casos de uso
 
-- Asistente de codigo en local dentro del IDE: con la cuantizacion Q4_K_M (5,9 GB) el modelo cabe en una GPU consumer de 8-12 GB y puede servir autocompletado y chat sobre el repositorio sin enviar codigo a servicios externos, algo critico en entornos con codigo propietario.
-- Agentes de refactorizacion multi-paso: el soporte declarado de tool calling permite encadenar llamadas a herramientas (busqueda en el arbol de ficheros, lectura, escritura y ejecucion de tests) para tareas como renombrar APIs o extraer modulos.
-- Generacion de tests e integracion en CI/CD: se puede invocar el modelo desde un runner para generar tests unitarios a partir de diffs o de ficheros nuevos, usando la cuantizacion Q8_0 (9,9 GB) en una GPU de 16 GB para maximizar la fidelidad del codigo generado.
-- Revision de codigo automatizada en pull requests: el modelo puede resumir cambios, detectar patrones problematicos y proponer parches; al ser Apache 2.0, puede integrarse en un bot interno sin coste de licencia.
-- Migracion y traduccion de codigo entre lenguajes o frameworks: tareas de reescritura de fragmentos (por ejemplo, scripts de Python a TypeScript) donde un modelo de 9B especializado en codigo suele ser suficiente y ejecutable en local.
-- Documentacion tecnica y docstrings: generacion de documentacion a partir de firmas y cuerpos de funciones, con el modelo desplegado en Ollama sobre una estacion de trabajo.
-- Onboarding sobre bases de codigo legacy: explicacion de modulos poco documentados mediante consultas conversacionales, siempre que el contexto disponible lo permita (la longitud de contexto no esta especificada en la informacion proporcionada).
-- Despliegue on-premise o en edge por privacidad: las cuantizaciones Q2_K (4,0 GB) y Q3_K_S (4,5 GB) permiten ejecucion en equipos sin GPU dedicada con CPU y RAM suficiente, a costa de perdida de calidad.
+- Asistente de código en IDE: el modelo puede integrarse en extensiones de editor para autocompletado, generación de funciones y explicación de código, aprovechando su orientación a código y su tamaño de 9B que permite ejecución local en GPUs de consumo con cuantización Q4_K_M.
+- Automatización de revisiones de código en CI/CD: mediante tool calling, el modelo puede invocar linters, ejecutar tests y comentar resultados en pull requests, con un coste de inferencia bajo gracias a las cuantizaciones de 5-6 GB.
+- Agentes de resolución de incidencias: en un pipeline agéntico, el modelo puede consultar logs, ejecutar comandos de diagnóstico y proponer parches, apoyándose en la etiqueta "agentic" y en el soporte de function calling.
+- Generación de tests unitarios: dado un fragmento de código, el modelo puede producir casos de prueba y mocks, una tarea típica de modelos orientados a código que se beneficia de la licencia Apache 2.0 para uso comercial.
+- Documentación técnica automatizada: generación de docstrings, README y comentarios a partir del código fuente, desplegable en local con llama.cpp u Ollama sin dependencia de APIs externas.
+- Prototipado de asistentes conversacionales en inglés: el modelo puede gestionar conversaciones multi-turno en inglés con contexto moderado, aunque no se dispone de la longitud exacta de contexto para dimensionar el caso de uso.
+- Análisis de capturas o diagramas: si el mmproj confirma capacidades de visión, podría extraer texto de imágenes o describir diagramas de arquitectura, aunque esta capacidad no está documentada en detalle.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio de cuantizaciones no incluye MMLU, HumanEval, GSM8K, MBPP ni ninguna otra metrica, y la busqueda web realizada no devolvio resultados relevantes sobre este modelo (los resultados obtenidos correspondian a contenidos sin relacion).
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- Huella de pesos por cuantizacion: Q2_K 4,0 GB; Q3_K_S 4,5 GB; Q3_K_M 4,8 GB; Q3_K_L 5,1 GB; IQ4_XS 5,5 GB; Q4_K_S 5,6 GB; Q4_K_M 5,9 GB; Q5_K_S 6,6 GB; Q5_K_M 6,7 GB; Q6_K 7,7 GB; Q8_0 9,9 GB; f16 18,5 GB.
-- Proyector multimodal: anadir 0,7 GB (mmproj-Q8_0) o 1,0 GB (mmproj-f16) si se usa la entrada de imagenes.
-- VRAM estimada: a la huella de pesos hay que sumar la cache KV, que crece con la longitud de contexto y el numero de secuencias concurrentes; el dato exacto de contexto no esta disponible, por lo que la reserva debe calcularse empiricamente.
-- GPU consumer: Q4_K_M (5,9 GB) es viable en 8 GB (RTX 3060 Ti, RTX 4060) con contexto moderado; Q5/Q6 en 12 GB (RTX 3060 12 GB, RTX 4070); Q8_0 en 16 GB (RTX 4060 Ti 16 GB, RTX 4080); f16 en 24 GB (RTX 3090, RTX 4090).
-- GPU profesional: A100 40/80 GB, H100 y L40S permiten f16 con contexto amplio y varias secuencias simultaneas, aunque para un modelo de 9B son sobredimensionadas salvo por concurrencia.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp, llama-cpp-python y text-generation-webui son las rutas naturales para GGUF. La multimodalidad, si se activa, requiere el soporte de proyector multimodal de llama.cpp (mtmd/libmtmd).
-- Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo para estas cuantizaciones.
-- Cuantizaciones ponderadas: existe una variante imatrix en mradermacher/JackOD-9B-Coder-i1-GGUF que suele ofrecer mejor relacion calidad/tamano en tamanos bajos (Q2-Q4).
+- VRAM estimada para inferencia según cuantización: Q2_K ~4,0 GB; Q3_K_S ~4,5 GB; Q3_K_M ~4,8 GB; Q3_K_L ~5,1 GB; IQ4_XS ~5,5 GB; Q4_K_S ~5,6 GB; Q4_K_M ~5,9 GB; Q5_K_S ~6,6 GB; Q5_K_M ~6,7 GB; Q6_K ~7,7 GB; Q8_0 ~9,9 GB; f16 ~18,5 GB. Añadir ~0,7-1,0 GB si se usa el mmproj multimodal.
+- GPU recomendadas: para Q4_K_M y Q5_K_M, una RTX 3060 de 12 GB o RTX 4060 Ti de 16 GB es suficiente; para Q8_0, una RTX 4070 Ti Super de 16 GB o RTX 4090 de 24 GB; para f16, una A100 de 40 GB o H100 de 80 GB, o bien dos GPUs de 24 GB.
+- Cabe en GPU de consumo: sí, en cuantizaciones Q4_K_M y Q5_K_M en GPUs de 8-12 GB; las cuantizaciones Q6_K y Q8_0 requieren 12-16 GB.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, servidores compatibles con la API de OpenAI (la etiqueta "endpoints_compatible" lo indica), y potencialmente vLLM si se dispone de los pesos en safetensors del modelo base.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento del modelo evaluado, por lo que la comparacion se limita a caracteristicas objetivas documentadas publicamente por cada fabricante. Los valores de contexto de los modelos alternativos corresponden a su documentacion oficial y pueden variar segun la configuracion de despliegue.
-
-| Modelo | Parametros | Contexto | Licencia | Formato | Enfoque |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| JackOD-9B-Coder (este) | 9,2B | no disponible | Apache 2.0 | GGUF (base en safetensors) | Codigo, agentico, tool calling, solo ingles |
-| Qwen3-8B | ~8,2B | 32K nativo (ampliable) | Apache 2.0 | safetensors, GGUF | Proposito general, multilingue, modo thinking |
-| Qwen2.5-Coder-7B-Instruct | ~7,6B | 32K | Apache 2.0 | safetensors, GGUF | Codigo, multilingue, tool calling |
-| DeepSeek-Coder-V2-Lite-Instruct | ~16B (MoE, ~2,4B activos) | 128K | licencia propia de DeepSeek | safetensors, GGUF | Codigo, multilingue |
+| JackOD-9B-Coder-GGUF | 9,2B | no disponible | Apache 2.0 | GGUF | Merge orientado a código y agentes; cuantizaciones estáticas e imatrix |
+| Qwen2.5-Coder-7B-Instruct | 7,6B | 32.768 tokens (tipico en la familia) | Apache 2.0 | safetensors, GGUF | Referencia en código open source; contexto documentado |
+| CodeLlama-7B-Instruct | 6,7B | 16.384 tokens | Llama 2 (uso comercial con restricciones) | safetensors, GGUF | Modelo de código de Meta; licencia menos permisiva |
+| DeepSeek-Coder-V2-Lite | 15,7B (2,4B activos) | 128.000 tokens | DeepSeek License | safetensors, GGUF | MoE con contexto muy largo; requiere más VRAM |
 
-Rendimiento comparado (benchmarks de codigo, MMLU, etc.): no disponible para el modelo evaluado; consulte las fichas de cada alternativa para sus cifras publicadas.
+La comparativa se basa en características públicas de modelos de la misma categoría; no se dispone de datos de rendimiento del modelo JackOD-9B-Coder para establecer comparaciones cuantitativas.
 
 ## Limitaciones y advertencias
 
-- Idioma: los metadatos declaran unicamente ingles. El rendimiento en castellano no esta garantizado ni documentado, y puede degradarse de forma notable.
-- Ausencia de evaluaciones: no hay benchmarks publicados del modelo base ni de las cuantizaciones, por lo que la calidad real en tareas de codigo y tool calling no esta verificada de forma independiente.
-- Modelo derivado de un merge: los merges pueden heredar sesgos y comportamientos inconsistentes de los modelos fuente; no se documenta la composicion del merge.
-- Alucinacion: como cualquier modelo generativo de este tamano, puede producir APIs inexistentes, imports erroneos o funciones inventadas, especialmente con contexto largo o prompts ambiguos.
-- Degradacion por cuantizacion: las cuantizaciones Q2_K, Q3_K_S y Q3_K_M conllevan perdida de calidad apreciable; el propio autor marca Q3_K_M como "lower quality" y recomienda Q4_K_S y Q4_K_M como opciones rapidas y equilibradas.
-- Fiabilidad del tool calling: aunque se declara soporte, no se documenta el formato de plantilla de chat ni el esquema de herramientas; la fiabilidad en bajas precisiones (Q2-Q3) puede caer de forma acusada.
-- Contexto desconocido: al no especificarse la longitud de contexto, no se puede planificar el coste de cache KV ni garantizar el comportamiento en conversaciones largas o repositorios extensos.
-- Multimodalidad sin documentar: la presencia de ficheros mmproj no va acompanada de instrucciones de uso, por lo que no debe asumirse como capacidad operativa.
-- Licencia: Apache 2.0 permite uso comercial y modificacion, pero el usuario debe verificar que el modelo base (ManniX-ITA/JackOD-9B-Coder) mantiene la misma licencia y no impone condiciones adicionales derivadas de los modelos fusionados.
-- Metadatos anomalos: las fechas de creacion y actualizacion del repositorio (2026) no coinciden con el momento de redaccion de esta ficha, lo que sugiere un error de sellado de tiempo; conviene verificar la version real de los pesos antes de desplegarlos.
-- Repositorio de gran tamano: 85,1 GB en total, porque contiene todas las cuantizaciones; descargar unicamente el fichero GGUF necesario.
+- Idiomas: solo se declara inglés; el rendimiento en castellano no está garantizado y probablemente sea inferior.
+- Contexto: se desconoce la longitud de contexto, lo que impide dimensionar aplicaciones que requieran ventanas largas.
+- Alucinación: al ser un merge sin documentación de entrenamiento ni benchmarks, el riesgo de alucinación en código y en afirmaciones factuales no está cuantificado.
+- Sesgos: no se dispone de información sobre sesgos conocidos; al entrenarse presumiblemente con datos web en inglés, es probable que herede sesgos de ese corpus.
+- Licencia: Apache 2.0 permite uso comercial, pero el modelo base es un merge cuyos componentes de origen no se detallan; conviene verificar la procedencia de los pesos originales antes de un despliegue comercial crítico.
+- Multimodalidad: la presencia de mmproj no está documentada en la model card; su funcionamiento y calidad no están garantizados.
+- Producción: sin benchmarks ni documentación de entrenamiento, no se recomienda su uso en entornos de producción sin una evaluación previa en el dominio objetivo.
+- Fecha de creación: el repositorio data de 2026, lo que puede indicar una versión reciente con poca validación comunitaria (0 likes, 1220 descargas).
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/JackOD-9B-Coder-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/JackOD-9B-Coder-GGUF
 - Modelo base: https://huggingface.co/ManniX-ITA/JackOD-9B-Coder
-- Cuantizaciones ponderadas (imatrix): https://huggingface.co/mradermacher/JackOD-9B-Coder-i1-GGUF
-- Pagina de resumen del autor para este modelo: https://hf.tst.eu/model#JackOD-9B-Coder-GGUF
-- Peticiones de modelos del autor: https://huggingface.co/mradermacher/model_requests
-- Guia de uso de GGUF citada en la model card: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Empresa del autor de las cuantizaciones: https://www.nethype.de/
-- Paper, blog o demo oficial del modelo base: no disponible
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/JackOD-9B-Coder-i1-GGUF
+- Página de resumen del cuantizador: https://hf.tst.eu/model#JackOD-9B-Coder-GGUF
+- FAQ y peticiones de modelos: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

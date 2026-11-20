@@ -2,122 +2,98 @@
 
 ## Resumen
 
-LabOpen-v1 es un ajuste fino por dominios cientificos del modelo Qwen3.8-27B-FP8, desarrollado por el usuario HoomanBio2021. El modelo parte de la base Qwen3.8-27B en su version cuantizada en FP8 (licencia Apache 2.0) y anade seis dominios de capacidad verificable: fisica de fluidos, leyes de mezclas de materiales, genetica clasica, consultas de acciones en operaciones, estilo de prosa y codificacion agentica. Se distribuye tanto como pesos completos fusionados en FP8 (sustitucion directa del modelo base) como en forma de adaptador LoRA de 112 MB.
+LabOpen v1 es un ajuste fino del modelo Qwen3.8-27B-FP8 (Apache 2.0) desarrollado por HoomanBio2021, orientado a computacion cientifica verificable. Se distribuye tanto como pesos completos fusionados en FP8 (listos para sustituir al modelo base) como en forma de adaptador LoRA (112 MB, formato PEFT, 992 tensores). El modelo parte de una arquitectura transformer densa de 27.781 millones de parametros y anade seis dominios de capacidad sobre el modelo base: fisica de fluidos, leyes de mezclas de materiales, genetica clasica, consultas de acciones operativas, estilo de prosa y codificacion agentica.
 
-La relevancia del proyecto reside en su metodologia de entrenamiento: 15 ventanas de refuerzo (G69-G84) con LoRA de rango 4 y aprendizaje por refuerzo de grupo relativo (estilo RLOO, k=8 muestras) usando recompensas verificables mecanicamente. El resultado mas destacado es la mejora en codificacion agentica, que pasa del 32% al 72% (+40 puntos porcentuales) en una bateria determinista de 78 pruebas, acercandose a modelos frontera como GLM 5.3 (73%) o Qwen3.8-max (69%) con solo 27.781 millones de parametros.
+La propuesta central del autor es preservar las capacidades nativas del modelo base (generacion de codigo, function calling, comprension de intenciones y renderizado de formulas) mientras se refuerzan dominios cientificos mediante aprendizaje por refuerzo con recompensas verificables mecanicamente. El resultado mas destacado es la mejora en codificacion agentica, que pasa del 32% al 72% (+40 puntos porcentuales) en una bateria determinista de 78 pruebas.
 
-El modelo esta orientado a universidades, institutos de investigacion y centros de I+D corporativos que necesiten despliegue local o privado en GPUs NVIDIA con capacidad de computo igual o superior a 8.9 (H100, L40S, B200, DGX GB10). Su tamano de repositorio es de 31,0 GB en FP8 y conserva las capacidades nativas del modelo base: generacion de codigo, function calling, comprension de intenciones y renderizado de formulas.
+El modelo esta pensado para universidades, institutos de investigacion, centros de I+D corporativos y laboratorios profesionales que necesiten despliegue local o privado. La licencia Apache 2.0 y el formato FP8 facilitan su integracion en infraestructuras existentes sin coste de licencia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de Qwen3.8-27B), ajuste fino con LoRA r=4 |
-| Parametros totales | 27.781.427.952 |
-| Parametros activos | no disponible (no es MoE segun la informacion disponible) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | FP8 (blockwise-FP8 re-cuantizado en los pesos fusionados); adaptador LoRA en PEFT |
-| Idiomas soportados | en, zh |
+| Arquitectura | Transformer denso (familia Qwen3.5/3.8) |
+| Parametros totales | 27.781.427.952 (27,78B) |
+| Parametros activos | No aplica (modelo denso) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | FP8 blockwise (pesos fusionados); adaptador LoRA en precision de entrenamiento |
+| Idiomas soportados | Ingles (en), chino (zh) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (7 shards + indice), adaptador PEFT (992 tensores, 112 MB) |
+| Formato de pesos | Safetensors (7 shards + index), adaptador PEFT/LoRA |
 
 ## Arquitectura y entrenamiento
 
-LabOpen-v1 se construye sobre Qwen3.8-27B-FP8, un transformer de 27.781 millones de parametros. El ajuste se realiza mediante LoRA de rango 4 (992 tensores, 112 MB) entrenado con aprendizaje por refuerzo de grupo relativo estilo RLOO, con k=8 muestras por prompt y recompensas verificables mecanicamente. El entrenamiento comprende 15 ventanas de refuerzo (G69-G84) sobre seis dominios: fisica de fluidos (CFM), leyes de mezclas de materiales, genetica clasica, consultas de acciones en operaciones, estilo de prosa y codificacion agentica.
+El modelo es un transformer denso de 27,78B parametros derivado de Qwen3.8-27B-FP8. El ajuste se realizo mediante LoRA con rango r=4 sobre 15 ventanas de refuerzo (G69-G84), usando aprendizaje por refuerzo de grupo relativo estilo RLOO con k=8 muestras por prompt y recompensas verificables mecanicamente. Los pesos fusionados se recuantizaron a FP8 blockwise, manteniendo el mismo layout de tensores y formato de cuantizacion que el modelo base, lo que permite usarlos como sustituto directo.
 
-Los pesos distribuidos como modelo principal son los pesos completos fusionados (base + LoRA) re-cuantizados en FP8 por bloques, con el mismo layout de tensores y formato de cuantizacion que el modelo base, lo que permite su uso como sustituto directo. El repositorio incluye un informe de fusion (MERGE_REPORT.md) con digests, SHA-256 de cada shard, estadisticas de error de re-cuantizacion y pruebas de equivalencia de salida, ademas de EVALUATION.md y USAGE.md con la matriz de capacidades y guias de carga.
+El repositorio incluye documentacion de procedencia del merge (digests, SHA-256 por shard, estadisticas de error de recuantizacion y pruebas de equivalencia de salida), una matriz de evaluacion y una guia de uso. El adaptador LoRA se conserva como artefacto exacto de entrenamiento para inspeccion o entrenamiento posterior; para servir en produccion se recomienda usar los pesos fusionados.
 
 ## Capacidades
 
-- Generacion de texto y conversacion multi-turno en ingles y chino.
-- Codificacion agentica: resolucion de tareas de codigo con ciclos de correccion de 3 rondas (72% en bateria determinista de 78 pruebas).
-- Function calling y comprension de intenciones (8/10 en sonda de intencion profunda de 10 escenarios).
-- Renderizado de formulas en LaTeX con integridad verificada (5/5 problemas).
-- Fisica de fluidos: resolucion de problemas de mecanica de fluidos computacional (CFM).
-- Leyes de mezclas de materiales: calculo de propiedades de mezclas segun leyes de mezcla.
-- Genetica clasica: resolucion de problemas de herencia genetica (79% en conjunto retenido de 20 items).
-- Consultas de acciones en operaciones: interpretacion de acciones en entornos operativos (4/8 a T=0.3, 5/8 a T=0.8).
-- Estilo de prosa: generacion de texto con estilo controlado (75% any-correct en 20 prompts abiertos).
-- Capacidades nativas del modelo base preservadas: generacion de codigo, comprension de intenciones y function calling.
+- Generacion de texto y razonamiento general, heredados del modelo base Qwen3.8-27B.
+- Codificacion agentica reforzada: 72% en bateria determinista de 78 pruebas con correccion en 3 rondas.
+- Function calling y comprension de intenciones (8/10 en sonda de intencion profunda de 10 escenas).
+- Renderizado de formulas LaTeX con integridad verificada (5/5 problemas).
+- Fisica de fluidos (CFM): 44% de aciertos en conjunto heldout Pool-B con protocolo etiquetado.
+- Leyes de mezclas de materiales: 32% en heldout de 40 items sin etiquetar.
+- Genetica clasica: 79% en heldout de 20 items con protocolo etiquetado.
+- Consultas de acciones operativas: 4/8 a T=0.3 y 5/8 a T=0.8.
+- Estilo de prosa: 75% any-correct en 20 items abiertos.
+- Capacidades multilingues limitadas a ingles y chino.
 
 ## Casos de uso
 
-- Codificacion agentica en produccion: el modelo puede integrarse en pipelines de CI/CD para resolver tareas de codigo con ciclos de correccion automatica, aprovechando su 72% de exito en la bateria determinista de 78 pruebas y su soporte de function calling para invocar herramientas externas.
-- Asistencia en investigacion en fisica de fluidos: resolucion de problemas de mecanica de fluidos computacional (CFM) con recompensas verificables, adecuado para laboratorios que necesiten validacion automatica de resultados numericos.
-- Calculo de propiedades de materiales: aplicacion de leyes de mezclas para estimar propiedades de materiales compuestos, con un 32% de aciertos en el conjunto retenido de 40 items en protocolo sin etiquetas y 17/40 en protocolo estricto.
-- Analisis genetico clasico: resolucion de problemas de herencia y cruces geneticos, con un 79% de aciertos en el conjunto retenido de 20 items, util para docencia e investigacion en genetica.
-- Automatizacion de operaciones: interpretacion de consultas de acciones en entornos operativos, con capacidad de distinguir acciones nulas y validas (4/8 en protocolo estricto), adecuado para sistemas de gestion de incidencias.
-- Generacion de documentacion cientifica con estilo controlado: produccion de prosa tecnica con estilo consistente (75% any-correct en 20 prompts abiertos), util para redaccion de informes y articulos.
-- Despliegue local en entornos de investigacion: al caber en ~31 GB en FP8 y requerir GPUs con capacidad de computo >= 8.9, permite ejecucion privada en H100, L40S, B200 o DGX GB10 sin depender de APIs externas.
+- Codificacion agentica en pipelines de I+D: el modelo puede resolver tareas de reparacion de codigo en multiples rondas (hasta 3 correcciones) con una tasa de exito del 72% en pruebas deterministas, adecuado para integracion en flujos de CI/CD con validacion automatica.
+- Calculo de propiedades de fluidos: util para simulacion preliminar y verificacion de resultados en laboratorios de fisica computacional, donde el modelo alcanza un 44% de aciertos en problemas CFM con protocolo etiquetado.
+- Formulacion de mezclas de materiales: apoyo en el diseno de aleaciones y composites, con capacidad de razonar sobre leyes de mezcla y obtener un 32% de aciertos en el conjunto heldout de 40 items.
+- Analisis genetico clasico: resolucion de problemas de herencia mendeliana y cruces geneticos con un 79% de aciertos en el conjunto de evaluacion de 20 items, util en docencia e investigacion basica.
+- Automatizacion de consultas operativas: gestion de acciones y consultas en entornos de laboratorio con un 4/8-5/8 de aciertos, adecuado para asistentes internos que requieran vocabulario de dominio especifico.
+- Generacion de documentacion cientifica con estilo controlado: el modelo mantiene un 75% any-correct en tareas de prosa abierta, util para redactar informes tecnicos y articulos con formato consistente.
+- Despliegue privado en instituciones: con pesos FP8 de aproximadamente 31 GB, puede servirse en GPUs H100, L40S o B200, permitiendo inferencia local sin dependencia de APIs externas y con licencia Apache 2.0 para uso comercial.
 
 ## Benchmarks y rendimiento
 
-Matriz de capacidades medida en conjuntos retenidos (segun EVALUATION.md del autor):
-
-| Dominio | Metrica | Puntuacion | vs Base |
-|---|---|---|---|
-| Codificacion agentica | 78 pruebas deterministas, 3 rondas de correccion | 72% (56/78) | +40 pp (base: 32%) |
-| Comprension de intenciones | Sonda de intencion profunda de 10 escenarios | 8/10 | preservado |
-| Renderizado de formulas | Integridad LaTeX, 5 problemas | 5/5 | preservado |
-| Fisica de fluidos (CFM) | Pool-B retenido, T=0.3 k=8, etiquetado | 44% de muestras | nuevo (base ≈ 0) |
-| Materiales (leyes de mezclas) | Retenido 40 items, T=0.3, sin etiquetas | 32% de muestras | nuevo (base ≈ 0) |
-| Genetica clasica | Retenido 20 items, etiquetado | 79% de muestras | nuevo (base: 47% natural) |
-| Operaciones (consultas de acciones) | 8 items, doble temperatura | 4/8 (T=0.3) – 5/8 (T=0.8) | nuevo |
-| Estilo de prosa | 20 prompts abiertos, T=0.3 k=8 | 75% any-correct | nuevo |
-
-Comparativa externa en la misma bateria (2026-10):
-
-| Modelo | Intencion | Pruebas agenticas | Ranking |
-|---|---|---|---|
-| GLM 5.3 | 8/10 | 57/78 (73%) | #1 |
-| LabOpen v1 | 8/10 | 56/78 (72%) | #2 |
-| Qwen3.8-max | 8/10 | 54/78 (69%) | #3 |
-| DeepSeek v4.1 flash | 6/10 | 48/78 (62%) | #4 |
-| Qwen3.8-27B (base) | 8/10 | 25/78 (32%) | #5 |
-
-Comparativa de dominios con modelos frontera (zero-shot, k=8, T=0.3, any-correct):
-
-| Dominio (items) | GLM 5.3 | Qwen3.8-max | DeepSeek flash | LabOpen v1 | Base |
+| Benchmark | LabOpen v1 | GLM 5.3 | Qwen3.8-max | DeepSeek v4.1 flash | Qwen3.8-27B (base) |
 |---|---|---|---|---|---|
-| Fisica de fluidos (36) | 36/36 | 36/36 | 35/36 | 25/36 | ≈0 |
-| Materiales estricto (40) | 1/40 | 0/40 | 0/40 | 17/40 | ≈0 |
-| Materiales justo 1% (40) | 20/40 | 15/40 | 22/40 | 18/40 | — |
-| Genetica clasica (20) | 9/20 | 12/20 | 7/20 | 20/20 | 47% |
-| Operaciones estricto (8) | 0/8 | 0/8 | 0/8 | 4/8 (T=0.3) | 0/8 |
-| Operaciones accion nula equivalente (8) | 4/8 | 0/8 | 3/8 | 4/8 | — |
+| Intencion (10 escenas) | 8/10 | 8/10 | 8/10 | 6/10 | 8/10 |
+| Codificacion agentica (78 tests) | 56/78 (72%) | 57/78 (73%) | 54/78 (69%) | 48/78 (62%) | 25/78 (32%) |
+| Fisica de fluidos (36 items, zero-shot) | 25/36 | 36/36 | 36/36 | 35/36 | ≈0 |
+| Materiales estricto (40 items, zero-shot) | 17/40 | 1/40 | 0/40 | 0/40 | ≈0 |
+| Materiales justo 1% (40 items, zero-shot) | 18/40 | 20/40 | 15/40 | 22/40 | No disponible |
+| Genetica clasica (20 items, zero-shot) | 20/20 | 9/20 | 12/20 | 7/20 | 47% |
+| Ops estricto (8 items, zero-shot) | 4/8 (T0.3) | 0/8 | 0/8 | 0/8 | 0/8 |
+| Ops null-action-equivalente (8 items) | 4/8 | 4/8 | 0/8 | 3/8 | No disponible |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 31 GB en FP8 para los pesos completos fusionados.
-- GPUs recomendadas: NVIDIA con capacidad de computo >= 8.9, es decir, H100, L40S, B200 o DGX GB10.
-- Cabe en GPU de consumo: no disponible segun la informacion proporcionada; el requisito de capacidad de computo >= 8.9 excluye generaciones anteriores a Ada Lovelace/Hopper.
-- Opciones de despliegue: vLLM y SGLang para los pesos fusionados; el adaptador LoRA (112 MB) puede servirse sobre el modelo base con PEFT cuando se requiera la numerica exacta de entrenamiento.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: aproximadamente 31 GB en FP8 para los pesos fusionados; el adaptador LoRA requiere cargar el modelo base FP8 y anadir 112 MB.
+- GPUs recomendadas: NVIDIA con compute capability ≥ 8.9, como H100, L40S, B200 o DGX GB10.
+- Cabe en GPU de consumo: no disponible en la informacion proporcionada; el requisito de compute capability ≥ 8.9 excluye generaciones anteriores a Ada Lovelace.
+- Opciones de despliegue: vLLM y SGLang para los pesos fusionados; el adaptador puede servirse sobre el modelo base con PEFT.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Codificacion agentica (78 pruebas) | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Codificacion agentica | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LabOpen v1 | 27,78 B | no disponible | 56/78 (72%) | Apache 2.0 | Hugging Face (620 descargas) |
-| Qwen3.8-27B (base) | 27,78 B | no disponible | 25/78 (32%) | Apache 2.0 | Hugging Face |
-| GLM 5.3 | no disponible | no disponible | 57/78 (73%) | no disponible | no disponible |
-| Qwen3.8-max | no disponible | no disponible | 54/78 (69%) | no disponible | no disponible |
-| DeepSeek v4.1 flash | no disponible | no disponible | 48/78 (62%) | no disponible | no disponible |
+| LabOpen v1 | 27,78B denso | No disponible | 72% (56/78) | Apache 2.0 | Hugging Face |
+| GLM 5.3 | No disponible | No disponible | 73% (57/78) | No disponible | No disponible |
+| Qwen3.8-max | No disponible | No disponible | 69% (54/78) | No disponible | No disponible |
+| DeepSeek v4.1 flash | No disponible | No disponible | 62% (48/78) | No disponible | No disponible |
+| Qwen3.8-27B (base) | 27,78B denso | No disponible | 32% (25/78) | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
-- El modelo solo declara soporte para ingles y chino; no se garantiza un rendimiento adecuado en castellano ni en otros idiomas.
-- Riesgo de alucinacion inherente a los modelos de lenguaje; las recompensas verificables del entrenamiento no eliminan errores en dominios fuera de los seis entrenados.
-- En fisica de fluidos, el modelo obtiene 25/36 frente a 36/36 de GLM 5.3 y Qwen3.8-max, lo que indica una brecha significativa en ese dominio frente a modelos frontera.
-- En operaciones, el protocolo estricto revela un fallo genuino: los modelos frontera sustituyen la accion nula por vocabulario privado del dominio; el modelo no alcanza el 100% ni siquiera en el protocolo de accion nula equivalente (4/8).
-- La tasa de exito en primera pasada de codificacion agentica es inferior a la tasa final con 3 rondas de correccion; el dato del 72% incluye ciclos de correccion.
-- El conocimiento general del modelo es inferior al de modelos de 100B+ parametros, segun reconoce el propio autor en EVALUATION.md.
-- Requiere GPUs con capacidad de computo >= 8.9; no es desplegable en GPUs consumer de generaciones anteriores.
-- El adaptador LoRA tiene rango 4 (992 tensores), lo que limita la magnitud de los cambios aprendidos respecto al modelo base.
-- Licencia Apache 2.0 permite uso comercial, pero el modelo se posiciona como modelo de investigacion; no hay garantias de soporte ni mantenimiento.
-- El repositorio tiene solo 620 descargas y 1 like, lo que indica una validacion externa limitada por parte de la comunidad.
+- El modelo solo soporta ingles y chino; no se ha validado su rendimiento en castellano ni en otros idiomas.
+- La tasa de exito en codificacion agentica es del 72%, lo que implica un 28% de fallos en la bateria de pruebas; no es adecuado para produccion sin validacion humana.
+- Los resultados en fisica de fluidos (25/36) y materiales (17/40 estricto) son inferiores a los de modelos frontera como GLM 5.3 o Qwen3.8-max en los mismos conjuntos, aunque superan al modelo base.
+- El rendimiento en consultas operativas es bajo (4/8-5/8) y depende de convenciones de vocabulario no especificadas en el prompt; los modelos frontera obtienen 0/8 en la evaluacion estricta por este motivo.
+- El conocimiento general del modelo es inferior al de modelos de mas de 100B parametros, segun el propio autor.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo se distribuye como esta, sin garantias; el autor no ofrece soporte ni mantenimiento.
+- El requisito de compute capability ≥ 8.9 limita el despliegue a GPUs relativamente recientes (H100, L40S, B200), lo que puede excluir infraestructuras con A100 o RTX 4090.
+- No se dispone de informacion sobre sesgos conocidos, riesgo de alucinacion especifico ni limitaciones de contexto.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/HoomanBio2021/LabOpen-v1
-- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B-FP8
+- [Hugging Face: HoomanBio2021/LabOpen-v1](https://huggingface.co/HoomanBio2021/LabOpen-v1)
+- [Modelo base: Qwen/Qwen3.8-27B-FP8](https://huggingface.co/Qwen/Qwen3.8-27B-FP8)
+- No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

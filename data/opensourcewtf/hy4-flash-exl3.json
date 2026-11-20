@@ -1,0 +1,57 @@
+{
+  "schema": 2,
+  "id": "OpensourceWTF/Hy4-flash-exl3",
+  "slug": "opensourcewtf-hy4-flash-exl3",
+  "author": "OpensourceWTF",
+  "url": "https://huggingface.co/OpensourceWTF/Hy4-flash-exl3",
+  "created_at": "2026-11-19T21:31:18.000Z",
+  "updated_at": "2026-11-19T21:31:19.000Z",
+  "license": "tencent-hy-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "exl3",
+    "hy4-flash",
+    "moe",
+    "quantized",
+    "text-generation",
+    "base_model:tencent/Hy4-flash",
+    "base_model:quantized:tencent/Hy4-flash",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": "tencent/Hy4-flash",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=exl3&sort=created",
+      "snippet": "Models · LibertAIDAI/Hy4-flash-EXL3-4bpw · HydraAiM/Qwen3.6-35B-A3B-EXL3-HalfRate-T5 · HydraAiM/Qwen3.6-35B-A3B-EXL3-HalfRate-T5-FV · unidaikon/ScarletKc-2.0-exl3- ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=0&sort=modified&search=exl",
+      "snippet": "Models · LibertAIDAI/Hy4-flash-EXL3-2.5bpw · LibertAIDAI/Hy4-flash-EXL3-3bpw · LibertAIDAI/Hy4-flash-EXL3-3.5bpw · LibertAIDAI/Hy4-flash-EXL3-4bpw · kusuriya-labs/ ..."
+    }
+  ]
+}

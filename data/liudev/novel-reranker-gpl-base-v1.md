@@ -2,54 +2,49 @@
 
 ## Resumen
 
-novel-reranker-gpl-base-v1 es un cross-encoder de reordenación (reranker) desarrollado por el usuario liudev y publicado en Hugging Face. Se trata de un fine-tuning del modelo base hfl/chinese-roberta-wwm-ext, un transformer BERT en chino, adaptado específicamente para la tarea de text-ranking: asignar una puntuación de relevancia a pares (consulta, documento) con el objetivo de reordenar resultados de búsqueda semántica.
+`liudev/novel-reranker-gpl-base-v1` es un modelo cross-encoder de reordenación (reranking) afinado a partir de `hfl/chinese-roberta-wwm-ext` mediante la librería sentence-transformers. Su función es puntuar pares de textos (consulta, documento) para reordenar resultados de búsqueda semántica o de recuperación previa en un pipeline RAG. El dominio de entrenamiento es claramente la novela web china: los ejemplos de la model card muestran consultas y pasajes sobre cultivación, sistemas, tramas urbanas y deportes.
 
-El modelo resuelve el problema del reranking en pipelines de recuperación de información, particularmente en el dominio de novelas web chinas, a juzgar por los ejemplos de la model card. Con 102.268.417 parámetros y una longitud máxima de secuencia de 512 tokens, se posiciona como una alternativa ligera y especializada frente a rerankers multilingües de mayor tamaño.
+Arquitectura transformer BERT con cabeza de clasificación de secuencia (`BertForSequenceClassification`) y una única etiqueta de salida, con una longitud máxima de secuencia de 512 tokens. Cuenta con 102.268.417 parámetros, lo que lo sitúa en la categoría base y lo hace viable en GPU de consumo para inferencia.
 
-Es relevante para desarrolladores que construyen sistemas de búsqueda o recomendación sobre corpus de ficción en chino y necesitan una segunda etapa de reordenación tras una recuperación inicial por embeddings. El modelo se entrenó con 435.262 muestras y emplea la función de pérdida MarginMSELoss, una elección habitual en el entrenamiento de rerankers con pares positivos y negativos.
+Es relevante porque los rerankers específicos de dominio para ficción china son escasos: la mayoría de cross-encoders multilingües genéricos pierden señal en jerga de novela web (términos de cultivación, nombres de técnicas, tropos recurrentes). Este modelo se ha entrenado con 435.262 muestras en formato query/positive/negative con pérdida MarginMSELoss, lo que sugiere un objetivo de destilación de márgenes de reordenación.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer BERT (BertForSequenceClassification), cross-encoder |
+| Arquitectura | Transformer BERT (cross-encoder, `BertForSequenceClassification`) |
 | Parámetros totales | 102.268.417 |
-| Parámetros activos | no disponible (no es MoE) |
+| Parámetros activos | no aplica (no es MoE) |
 | Longitud de contexto | 512 tokens |
-| Tipos de cuantización | no disponible (pesos en safetensors; compatible con cuantización estándar de transformers, no verificada) |
-| Idiomas soportados | no disponibles (modelo base en chino: hfl/chinese-roberta-wwm-ext) |
+| Tipos de cuantización | no disponible (pesos en safetensors; compatible con cuantización estándar de transformers, no documentada por el autor) |
+| Idiomas soportados | no disponible (el modelo base es chino; los ejemplos son en chino) |
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
-| Etiquetas de salida | 1 (puntuación de relevancia) |
-| Tamaño del repositorio | 1,2 GB |
-| Librería | sentence-transformers |
-| Pipeline | text-ranking |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un cross-encoder basado en BERT: recibe como entrada el par concatenado (consulta, documento) y produce un único logit de relevancia mediante una cabeza de clasificación de secuencia (BertForSequenceClassification). A diferencia de los bi-encoders, que codifican consulta y documento por separado, el cross-encoder procesa ambos textos conjuntamente, lo que permite capturar interacciones token a token a costa de un mayor coste computacional en inferencia.
+Cross-encoder basado en `hfl/chinese-roberta-wwm-ext` (BERT chino con whole word masking), utilizado como clasificador de secuencia con una sola etiqueta de salida. El modelo recibe el par (query, pasaje) concatenado y produce una puntuación de relevancia. La longitud máxima de entrada es de 512 tokens, suficiente para consultas cortas y pasajes de tamaño medio.
 
-El entrenamiento se realizó con la librería sentence-transformers sobre un conjunto de 435.262 muestras con columnas query, positive, negative y label. Las consultas tienen una media de 16,4 tokens (rango 10-24), mientras que los documentos positivos y negativos rondan los 72-73 tokens de media (rango 15-102). La función de pérdida empleada es MarginMSELoss, que entrena al modelo para que la puntuación del par positivo supere a la del negativo por un margen. No se especifican en la información disponible el número total de tokens de entrenamiento, la composición exacta del dataset ni si hubo etapas de RLHF o DPO (no aplicables habitualmente a rerankers).
+El entrenamiento se realizó con 435.262 muestras con columnas `query`, `positive`, `negative` y `label`, usando `MarginMSELoss`. Las estadísticas de la model card indican consultas cortas (media de 16,4 tokens, máximo 24) y pasajes positivos de 48 a 102 tokens (media 73,12). La pérdida MarginMSELoss es típica de la destilación de un reranker profesor: se entrena al modelo para reproducir los márgenes de puntuación del profesor entre positivos y negativos. No se documenta composición del dataset, procedencia de los negativos (hard negatives o muestreo aleatorio), ni si hubo etapas adicionales de RLHF o DPO.
 
 ## Capacidades
 
-- Puntuación de relevancia para pares (consulta, documento) mediante regresión de un único score.
-- Reordenación de listas de documentos candidatos devueltos por un recuperador previo (reranking en dos etapas).
-- Búsqueda semántica sobre corpus textuales, especialmente novelas web en chino según los ejemplos de la model card.
-- Integración con la API `CrossEncoder.predict` y `CrossEncoder.rank` de sentence-transformers.
-- Compatible con text-embeddings-inference y endpoints de Hugging Face según las etiquetas del repositorio.
-- No soporta tool calling, agentes, visión, audio ni modos de razonamiento extendido: es un modelo discriminativo de ranking, no generativo.
-- Capacidad multilingüe no documentada; el modelo base está entrenado principalmente en chino.
+- Reordenación de pares (query, documento) mediante puntuación de relevancia.
+- Búsqueda semántica en dos etapas: recuperación con un bi-encoder y reordenación con este cross-encoder.
+- Especialización en texto narrativo chino de novela web: cultivación, sistemas, tramas urbanas, deportes y romance.
+- Puntuación de listas de candidatos mediante `model.rank(query, [documentos])`.
+- Integración nativa con sentence-transformers y con text-embeddings-inference (el tag `text-embeddings-inference` y `endpoints_compatible` lo indican).
+- No soporta generación de texto, tool calling, agentes, visión ni audio: es exclusivamente un modelo de ranking.
 
 ## Casos de uso
 
-- Reordenación en motores de búsqueda de novelas web: tras una recuperación inicial por embeddings o BM25, el modelo puntúa cada par (consulta del lector, sinopsis o fragmento) y reordena los resultados por relevancia temática, mejorando la precisión del top-k.
-- Sistemas de recomendación de ficción: dada una descripción de trama o preferencia del usuario, el modelo puntúa sinopsis candidatas y ordena las más afines, aprovechando su entrenamiento específico sobre tramas de novelas.
-- Búsqueda semántica en bases de datos documentales en chino: indexación con un bi-encoder ligero y segunda etapa de reranking con este cross-encoder para reducir falsos positivos en el top-10.
-- Moderación o clasificación de similitud temática: puntuar pares de textos para detectar duplicados argumentales o tramas muy similares en un catálogo editorial.
-- Filtrado de candidatos en pipelines RAG sobre corpus de ficción: reordenar los fragmentos recuperados antes de pasarlos a un modelo generativo, reduciendo el ruido en el contexto.
-- Evaluación automática de resúmenes o sinopsis: medir la relevancia entre una sinopsis generada y el texto de referencia mediante la puntuación del cross-encoder.
-- Construcción de datasets de entrenamiento: usar las puntuaciones para minar pares positivos y negativos de alta calidad en corpus no etiquetados.
+- Reordenación en un motor de búsqueda de novelas web: recuperar candidatos con un bi-encoder chino y reordenar los top-50 con este cross-encoder para mejorar la precisión de la primera página de resultados.
+- Recomendación de capítulos similares: dada la sinopsis o el resumen de un capítulo, puntuar y ordenar capítulos de un catálogo para ofrecer "continúa leyendo" o "títulos parecidos".
+- Búsqueda semántica dentro de una plataforma de lectura: el usuario describe una trama ("protagonista que obtiene un sistema y sube de nivel") y el modelo ordena los resúmenes candidatos por relevancia.
+- Filtrado de duplicados y near-duplicates en un corpus de novelas: puntuar pares de sinopsis para detectar tramas repetidas o versiones de la misma obra.
+- Enriquecimiento de un pipeline RAG sobre documentación de ficción: reordenar fragmentos recuperados antes de pasarlos a un LLM para resumen o respuesta.
+- Etiquetado y curación de datasets: usar las puntuaciones del modelo para priorizar pares positivos/negativos en la construcción de datasets de entrenamiento de otros rerankers del dominio.
+- Moderación temática asistida: ordenar pasajes candidatos según su similitud con descripciones de tropos problemáticos para revisión humana.
 
 ## Benchmarks y rendimiento
 
@@ -57,40 +52,41 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp32: aproximadamente 0,4 GB para los pesos (102 M de parámetros); en fp16 alrededor de 0,2 GB. El consumo real depende del tamaño de lote y de la longitud de secuencia.
-- Cabe holgadamente en cualquier GPU consumer: RTX 3060, RTX 4060, RTX 4090, así como en CPU para volúmenes moderados.
-- GPU recomendadas para alto throughput: A100, H100 o L4 para servir lotes grandes con baja latencia.
-- Opciones de despliegue: sentence-transformers (nativo), Hugging Face Text Embeddings Inference (TEI), endpoints de Hugging Face; también es posible exportarlo a ONNX para inferencia optimizada.
-- Latencia y throughput estimados: no disponibles en la información proporcionada. Al ser un cross-encoder de 102 M de parámetros con secuencias de hasta 512 tokens, el coste por par es bajo, pero el throughput depende linealmente del número de pares a puntuar.
+- VRAM estimada en fp32: aproximadamente 0,41 GB solo de pesos (102,3 M de parámetros); en fp16 unos 0,2 GB. El overhead de activaciones y del tokenizador eleva el consumo real, pero sigue siendo muy bajo.
+- Cabe holgadamente en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, e incluso en CPU para volúmenes moderados.
+- GPU recomendadas para producción de alto throughput: A10, L4, A100 o H100 para lotes grandes; en cargas pequeñas, una T4 es suficiente.
+- Despliegue: sentence-transformers (CrossEncoder), text-embeddings-inference (soporte de reranking), y servidores propios con transformers. No se documenta soporte de llama.cpp ni Ollama (no aplica a cross-encoders de este tipo en la práctica).
+- Latencia y throughput: no disponibles en la información proporcionada. Al ser un BERT base con 512 tokens de contexto, se espera un throughput alto en GPU moderna, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Idioma base | Licencia | Formato |
+| Modelo | Parámetros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| liudev/novel-reranker-gpl-base-v1 | 102,3 M | 512 tokens | Chino (base) | no disponible | safetensors |
-| BAAI/bge-reranker-base | no disponible en la información | no disponible | Multilingüe | no disponible | no disponible |
-| cross-encoder/ms-marco-MiniLM-L-6-v2 | no disponible en la información | 512 tokens | Inglés | no disponible | no disponible |
+| liudev/novel-reranker-gpl-base-v1 | 102,3 M | 512 | Novela web china | no disponible | Hugging Face |
+| BAAI/bge-reranker-base | no disponible en la información | no disponible | Multilingüe/general | no disponible | Hugging Face |
+| jinaai/jina-reranker-v2-base-multilingual | no disponible en la información | no disponible | Multilingüe | no disponible | Hugging Face |
+| cross-encoder/ms-marco-MiniLM-L-6-v2 | no disponible en la información | no disponible | Inglés (MS MARCO) | no disponible | Hugging Face |
 
-No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada; la comparativa se limita a parámetros, contexto y disponibilidad.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada; la comparación se limita a la categoría y al dominio de especialización.
 
 ## Limitaciones y advertencias
 
-- La licencia no está especificada, lo que impide confirmar si el uso comercial está permitido; es imprescindible contactar con el autor antes de desplegarlo en producción.
-- El modelo base es chino (hfl/chinese-roberta-wwm-ext), por lo que su rendimiento en castellano u otros idiomas no está garantizado ni documentado.
-- Longitud máxima de 512 tokens: los documentos más largos deben truncarse o dividirse, lo que puede degradar la puntuación en pasajes extensos.
-- Entrenado sobre un dataset no identificado de temática aparentemente novelesca; puede generalizar mal a otros dominios (textos técnicos, jurídicos, científicos).
-- Riesgo de sesgo heredado del corpus de entrenamiento y del modelo base, no evaluado en la model card.
-- Al ser un modelo discriminativo, no genera texto; no debe usarse como generador ni como chatbot.
-- El repositorio muestra 0 descargas y 0 likes en el momento de la consulta, sin validación externa ni evaluaciones independientes publicadas.
-- No se documentan procesos de mitigación de sesgos ni evaluaciones de robustez.
+- Licencia no disponible: no se puede confirmar el uso comercial; hay que contactar con el autor antes de desplegarlo en producción.
+- Idiomas no declarados: el modelo base es chino y los ejemplos son en chino; el rendimiento en castellano u otros idiomas no está garantizado y probablemente sea pobre.
+- Contexto limitado a 512 tokens: los pasajes largos deben truncarse o dividirse, lo que puede perder señal en documentos extensos.
+- Dominio muy específico (novela web china): fuera de ese dominio, el modelo puede puntuar de forma poco fiable.
+- Riesgo de sesgo hacia tropos y jerga del corpus de entrenamiento: consultas genéricas o de otros géneros pueden recibir puntuaciones poco calibradas.
+- No se documenta la composición del dataset ni la estrategia de negativos, lo que dificulta evaluar la robustez frente a hard negatives.
+- El repositorio ocupa 125,2 GB, muy por encima de lo que sugieren los 102 M de parámetros; probablemente incluye checkpoints intermedios o logs de TensorBoard. Conviene revisar los archivos antes de descargar el repo completo.
+- Al ser un cross-encoder, no genera texto ni soporta tool calling; no debe usarse como modelo generativo.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/liudev/novel-reranker-gpl-base-v1
 - Modelo base: https://huggingface.co/hfl/chinese-roberta-wwm-ext
-- Documentación de Sentence Transformers: https://sbert.net
-- Documentación de Cross Encoder: https://www.sbert.net/docs/cross_encoder/usage/usage.html
-- Repositorio de Sentence Transformers: https://github.com/huggingface/sentence-transformers
-- Cross Encoders en Hugging Face: https://huggingface.co/models?library=sentence-transformers&other=cross-encoder
-- Paper de referencia (Sentence-BERT): https://arxiv.org/abs/1908.10084
-- Paper de referencia (MarginMSE): https://arxiv.org/abs/2010.02666
+- Documentación de sentence-transformers: https://sbert.net
+- Documentación de CrossEncoder: https://www.sbert.net/docs/cross_encoder/usage/usage.html
+- Repositorio de sentence-transformers: https://github.com/huggingface/sentence-transformers
+- Cross-encoders en Hugging Face: https://huggingface.co/models?library=sentence-transformers&other=cross-encoder
+- Paper de Sentence-BERT (arXiv:1908.10084): https://arxiv.org/abs/1908.10084
+- Paper de MarginMSELoss / destilación de rerankers (arXiv:2010.02666): https://arxiv.org/abs/2010.02666

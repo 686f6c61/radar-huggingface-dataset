@@ -2,94 +2,98 @@
 
 ## Resumen
 
-wayfinder-glimmer-30b es un ajuste fino del modelo Muse Glimmer 30B, desarrollado por el usuario hweller1, disenado especificamente para funcionar como subagente de busqueda de codigo dentro de un agente mayor. El modelo recibe un brief en lenguaje natural (por ejemplo, "donde decide el router que una peticion coincide con una ruta con variables de path") y ejecuta un bucle de exploracion sobre un repositorio desconocido usando herramientas como `grep`, `glob`, `read_file` y `semantic_search`, para devolver un informe con rangos `path:start-end` clasificados, una razon por linea y una lista de lagunas no resueltas.
+wayfinder-glimmer-30b es un ajuste fino (post-entrenamiento mediante LoRA supervisado, fusionado en los pesos base) del modelo Muse Glimmer 30B de meta-models, desarrollado por hweller1. Su propósito es actuar como subagente especializado en búsqueda de código dentro de flujos de trabajo de agentes de programación: un agente padre le entrega un brief del tipo "dónde decide el router que..." y el modelo devuelve una lista de ubicaciones relevantes en el repositorio. El modelo forma parte del proyecto Wayfinder y fue el primer modelo entrenado con esa receta.
 
-La relevancia de este modelo es acotada pero clara: se trata de un checkpoint especializado que delega la exploracion de repositorios en un subagente mas pequeno, permitiendo que el agente padre (potencialmente mas capaz y costoso) se centre en la planificacion y verificacion. El modelo base es Muse Glimmer 30B, con aproximadamente 29.780 millones de parametros en safetensors, formato bf16, y una ventana de contexto que, segun la configuracion de servicio recomendada, alcanza los 65.536 tokens.
+Arquitecturalmente es un transformer denso de 52 capas, con tamaño oculto de 6.656 y 29.776.626.688 parámetros (aproximadamente 29,8 mil millones), todos activos en cada token. Esto contrasta con la alternativa del mismo proyecto, wayfinder-qwen, que es un modelo de mezcla de expertos (MoE) mucho más eficiente en inferencia. El modelo se distribuye en formato safetensors con pesos en bf16 y está pensado para ejecutarse en transformers.
 
-El ajuste se realizo mediante LoRA supervised fine-tuning (rango 64, alpha 128) sobre las proyecciones de atencion y MLP, fusionado posteriormente en los pesos base en fp32 y guardado en bf16. El modelo esta pensado exclusivamente para ingles y su uso fuera del harness de herramientas especifico no ha sido validado.
+Su relevancia es doble: por un lado, documenta una receta de post-entrenamiento para subagentes de búsqueda de código con métricas de recall medidas sobre 200 tareas retenidas; por otro, la propia model card explica por qué el autor eligió finalmente wayfinder-qwen para el hackathon y la demo, lo que convierte a wayfinder-glimmer en un caso de estudio transparente sobre el compromiso entre calidad de recall y coste de inferencia.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (base Muse Glimmer 30B), ajuste LoRA fusionado |
-| Parametros totales | 29.776.626.688 (~29,78 B) |
-| Parametros activos | no disponible (no es MoE segun la informacion disponible) |
-| Longitud de contexto | 65.536 tokens (segun configuracion de servicio recomendada) |
-| Tipos de cuantizacion | no disponible (pesos publicados en bf16 safetensors) |
-| Idiomas soportados | Ingles (en) |
-| Licencia | apache-2.0-and-muse-model-license (other) |
-| Formato de pesos | safetensors (bf16) |
+| Arquitectura | Transformer denso, 52 capas, hidden size 6.656 |
+| Parámetros totales | 29.776.626.688 (~29,8B) |
+| Parámetros activos | No aplica (modelo denso; todos los parámetros activos por token) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | no disponible (pesos publicados en bf16) |
+| Idiomas soportados | Inglés (en) |
+| Licencia | other: apache-2.0-and-muse-model-license |
+| Formato de pesos | safetensors (transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en Muse Glimmer 30B, un transformer de aproximadamente 29,78 mil millones de parametros. El ajuste fino se realizo mediante LoRA supervised fine-tuning unicamente sobre el modelo de lenguaje, con rango 64 y alpha 128, aplicado a todas las proyecciones de atencion y MLP. Posteriormente, los adaptadores se fusionaron en los pesos base en fp32 y se guardaron en bf16, de modo que el despliegue no requiere soporte de LoRA. La configuracion, el tokenizer y la plantilla de chat de Muse Glimmer 30B se mantienen sin cambios.
+El modelo base es Muse Glimmer 30B, un transformer denso de 52 capas con tamaño oculto de 6.656 y sin bloques de mezcla de expertos, de modo que cada token paga el coste computacional de los ~30B parámetros. Sobre esta base se aplicó un ajuste fino supervisado con LoRA de rango 64 y alpha 128, tasa de aprendizaje 5e-5 y 2 épocas, tras lo cual el adaptador se fusionó en los pesos base. El entrenamiento se realizó con 1.383 ejemplos y la misma receta aplicada después a wayfinder-qwen, con un coste de aproximadamente 180 minutos en 4x H200 (unos 54 dólares) frente a los 88 minutos (~28 dólares) del modelo MoE.
 
-El conjunto de entrenamiento consta de 1.383 ejemplos filtrados procedentes de 344 tareas en repositorios publicos con licencias permisivas. De ellos, 1.350 son trayectorias del profesor Muse Spark Open (1.347 generadas por replicas autoalojadas de los pesos abiertos y 3 por un host de terceros de los mismos pesos; ninguna procede de la API de Meta) y 33 son trayectorias de Agents-A1-35B. Solo se conservaron las ejecuciones que encontraron todos los ficheros gold, abrieron todos los ficheros reportados y llamaron a `report` dentro del limite de turnos. Solo los tokens del asistente contribuyen a la perdida. El entrenamiento se ejecuto durante 2 epocas con tasa de aprendizaje 5e-5 y decaimiento coseno, filas empaquetadas de hasta 49.152 tokens, en 4x H200 durante aproximadamente 3 horas, en una unica ejecucion con semilla 0. Las trayectorias y el texto de las tareas no se han publicado.
-
-Una innovacion destacable del diseno es que el modelo razona antes de cada llamada a herramienta y fue entrenado y evaluado reenviando su propio razonamiento previo en cada peticion; la plantilla de chat renderiza el campo `reasoning_content` de los mensajes previos del asistente. Esto implica que un cliente que descarte el razonamiento anterior opera fuera de la distribucion de entrenamiento.
+La receta de Wayfinder entrena al modelo para planificar, emitir llamadas a herramientas en paralelo y terminar con una llamada `report`; según la model card, wayfinder-glimmer termina con `report` el 100% de las veces en unas 9,9 turnos, frente al 96% en 9,5 turnos de wayfinder-qwen. El ajuste LoRA all-linear toca todos los pesos del modelo denso, lo que le da más capacidad de adaptación que el LoRA aplicado sobre el MoE (limitado a atención, proyecciones de atención lineal y experto compartido, con 76,7M de parámetros entrenables). No se documenta el número de tokens de entrenamiento ni la composición detallada del dataset más allá de los 1.383 ejemplos.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento orientado a la exploracion de repositorios de codigo.
-- Busqueda de codigo mediante herramientas: `grep` (ripgrep con ranking por densidad de coincidencias), `glob`, `read_file`, `semantic_search` sobre un indice vectorial voyage-code-4 y una herramienta terminal `report`.
-- Soporte de tool calling / function calling con parser especifico (`muse_glimmer`) en vLLM.
-- Razonamiento multi-paso y comportamiento agentico con bucle de exploracion de hasta 40 turnos en evaluacion.
-- Emision de informes estructurados: lista clasificada de rangos `path:start-end` con una razon por linea, un resumen y las lagunas no establecidas.
-- Capacidad de convergencia: se le entrena para reportar en cuanto la evidencia cubre el brief, sin agotar el presupuesto de turnos.
-- Multilingue: no, solo ingles.
-- Modo thinking: si, razonamiento previo a cada llamada a herramienta, con reenvio del razonamiento anterior en cada peticion.
+- Búsqueda de código como subagente: recibe un brief en lenguaje natural y devuelve una lista de ubicaciones relevantes en un repositorio (own-list recall de 0,452 sobre 200 tareas retenidas en el brazo grep).
+- Planificación y razonamiento multi-paso dentro de un bucle de agente.
+- Llamadas a herramientas en paralelo (tool calling / function calling) y finalización estructurada mediante la acción `report`.
+- Generación de texto conversacional en inglés.
+- Integración como subagente dentro de agentes de programación padre (patrón subagent).
+- Capacidad de entrada image-text-to-text declarada en los tags del repositorio (sin detalle adicional en la model card).
+- No se documentan capacidades multimodales de audio ni modo de razonamiento extendido ("thinking mode") más allá de lo anterior.
 
 ## Casos de uso
 
-- Subagente de exploracion en un agente de codificacion: el agente padre delega un brief ("donde se configura el maximo de backoff en los reintentos HTTP") y wayfinder-glimmer explora el repositorio con `grep`/`glob`/`read_file` y devuelve rangos `path:start-end` verificables, reduciendo el coste de contexto del agente principal.
-- Localizacion de codigo en repositorios desconocidos: util para onboarding de desarrolladores en bases de codigo grandes, ya que el modelo planifica la busqueda y devuelve leads clasificados con razones en lugar de coincidencias crudas.
-- Busqueda semantica combinada con busqueda lexica: cuando el harness ofrece un indice voyage-code-4, el modelo puede combinar `semantic_search` con `grep` para cubrir tanto coincidencias exactas como conceptos difusos.
-- Automatizacion de triaje de incidencias: dado un informe de bug, el subagente localiza los ficheros y rangos relevantes para que un ingeniero o un agente mayor verifique y proponga el parche.
-- Auditoria de cambios y revision de PRs: el subagente puede localizar donde se define una funcion o constante afectada por un cambio, aportando evidencia con rangos de linea concretos.
-- Generacion de mapas de conocimiento de repositorios: ejecutando el subagente sobre multiples briefs se pueden construir indices de "donde esta X" con referencias `path:start-end`, utiles para documentacion interna.
-- Integracion en pipelines de CI/CD como paso de localizacion previa: antes de ejecutar un analisis estatico o un test dirigido, el subagente identifica los ficheros candidatos, reduciendo el alcance de las comprobaciones.
+- Búsqueda de código en repositorios grandes: un agente padre le pasa un brief ("dónde se decide que un reintento se propague") y el modelo localiza los ficheros y símbolos candidatos, que luego el agente principal usa para leer y editar. Adecuado por su recall medido de 0,452 en el brazo grep.
+- Enrutado de tareas de localización dentro de pipelines de CI/CD: el modelo puede ejecutarse como paso previo a herramientas de análisis estático para reducir el espacio de búsqueda antes de ejecutar tests o linters.
+- Asistente de onboarding en bases de código desconocidas: dado que el modelo devuelve listas de ubicaciones con un formato de `report` consistente (100% de finalización), se puede integrar en herramientas internas que respondan "dónde está implementado X".
+- Subagente de un sistema multi-agente de programación: actúa como especialista de búsqueda mientras otro modelo (por ejemplo, wayfinder-qwen o un modelo mayor) planifica y escribe el código, aprovechando su capacidad de emitir llamadas a herramientas en paralelo.
+- Generación de contextos para RAG sobre código: las ubicaciones devueltas pueden alimentar un recuperador posterior (rerank) y construir el contexto que se pasa a un modelo generador.
+- Evaluación e investigación de recetas de post-entrenamiento: al estar publicada la comparación con wayfinder-qwen (recall, latencia, coste), sirve como referencia reproducible para estudiar el efecto de LoRA all-linear frente a LoRA sobre MoE.
+- Prototipado de agentes de búsqueda en entornos con una sola H100: el modelo cabe en bf16 en una H100 y permite validar el bucle completo antes de migrar a una variante más económica.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona una seccion de evaluacion con numeros obtenidos bajo el mismo bucle de exploracion, prompt de sistema, limite de 40 turnos y dos ejecuciones, pero los valores concretos no se incluyen en la informacion proporcionada.
+Los datos publicados en la model card corresponden a métricas propias del proyecto Wayfinder, no a benchmarks estándar (MMLU, HumanEval, GSM8K). No se han publicado resultados de benchmarks estándar en la información disponible.
+
+| Medida | wayfinder-glimmer (denso, bf16) | wayfinder-qwen (MoE, FP8) |
+|---|---|---|
+| Recall own-list, 200 tareas retenidas, grep | 0,452 [0,412; 0,491] | 0,415 [0,377; 0,452] |
+| Tasa de acierto en codificación, lista propia (34 tareas) | 0,868 (59 de 68 ejecuciones) | 0,868 (59 de 68 ejecuciones) |
+| Tiempo mediano por búsqueda, una H100, un stream | 175,4 s | 43,5 s (MTP off) / 19,7 s (MTP on) |
+| Latencia mediana por turno (p90) | 13,2 s (36,3 s) | 3,6 s (9,7 s) off / 2,1 s (6,6 s) on |
+| Tasa de decodificación | 41 tok/s | 185 tok/s off / 286 tok/s on |
+| Coste GPU por rollout (concurrencia 14, 400 rollouts) | 0,0294 USD | 0,0150 USD |
+| Entrenamiento (1.383 ejemplos, misma receta, 4x H200) | 180 min, ~54 USD | 88 min, ~28 USD |
+| Recall@12 con cascada Scout | no medido | 0,531 |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bf16: aproximadamente 60 GB solo para pesos (29,78 B parametros x 2 bytes), mas overhead de KV cache y activaciones; el repositorio ocupa 59,6 GB.
-- GPU recomendadas: H100 (probado por el autor con vLLM 0.32.0, una H100, bf16), H200 (usadas en entrenamiento), A100 80 GB como alternativa viable por VRAM.
-- Cabe en GPU consumer: no en bf16; se requeriria cuantizacion, que no esta documentada en la informacion disponible.
-- Opciones de despliegue: vLLM 0.32.0 con `--tool-call-parser muse_glimmer` y `--reasoning-parser muse_glimmer`, `--enable-auto-tool-choice`, `--language-model-only`, `--enable-prefix-caching`, `--max-model-len 65536`, `--gpu-memory-utilization 0.92`, `--max-num-seqs 64`. Sin el parser de tool calls, las llamadas vuelven como texto plano.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: los pesos en bf16 ocupan aproximadamente 59,6 GB (tamaño del repo), por lo que se necesita al menos una GPU de 80 GB para cargar el modelo completo sin cuantizar.
+- GPU recomendadas: H100 (80 GB) o H200 para bf16; A100 de 80 GB como alternativa. El autor reporta ejecuciones en una sola H100.
+- Cabe en GPU de consumo: no en bf16 con las configuraciones habituales de 24 GB (RTX 4090) o 48 GB; requeriría cuantización, para la cual no se documentan formatos publicados.
+- Opciones de despliegue: transformers (librería declarada); el repositorio incluye el tag `endpoints_compatible`. No se documenta soporte explícito de vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput medidos: 41 tok/s de decodificación, 13,2 s de latencia mediana por turno (p90 de 36,3 s) y 175,4 s de tiempo mediano por búsqueda en una H100 con un solo stream.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| wayfinder-glimmer-30b | ~29,78 B | 65.536 tokens | Subagente de busqueda de codigo | apache-2.0-and-muse-model-license | Hugging Face (5 descargas) |
-| Muse Glimmer 30B (base) | ~30 B (segun nombre) | no disponible | Proposito general | Muse Glimmer Usage Policy | Referenciado como base |
-| Agents-A1-35B | ~35 B (segun nombre) | no disponible | Trayectorias agenticas (fuente de 33 ejemplos) | no disponible | no disponible |
-
-No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
+| Modelo | Diseño | Parámetros | Contexto | Recall own-list (grep) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| wayfinder-glimmer-30b | Denso, 52 capas | ~29,8B (todos activos) | no disponible | 0,452 | apache-2.0-and-muse-model-license | Hugging Face |
+| wayfinder-qwen-35b-a3b | MoE, 40 capas (30 Gated DeltaNet + 10 atención con puerta), 256 expertos enrutados, 8+1 activos | 35B totales, ~3B activos | no disponible | 0,415 | no disponible | Hugging Face |
+| Muse Glimmer 30B (base) | Denso, 52 capas | ~29,8B | no disponible | no disponible | no disponible | Hugging Face (meta-models) |
 
 ## Limitaciones y advertencias
 
-- Uso fuera del harness previsto: el modelo solo ha sido probado con las cinco herramientas (`grep`, `glob`, `read_file`, `semantic_search`, `report`) y con los prompts de referencia; otros nombres de herramienta, ausencia de `report` u otros prompts no estan validados.
-- No apto para chat general ni generacion de codigo general: la retencion de habilidades generales no se midio.
-- No debe usarse como unica salvaguarda sobre cambios de codigo.
-- Solo ingles; no se documenta soporte multilingue.
-- Riesgo de alucinacion: el modelo devuelve leads que el agente padre debe verificar; no se garantiza que los rangos reportados sean correctos.
-- Dependencia del razonamiento previo: un cliente que descarte el `reasoning_content` de turnos anteriores opera fuera de la distribucion de entrenamiento.
-- La plantilla de chat requiere los argumentos de las llamadas a herramienta como dict.
-- Restricciones de licencia: licencia compuesta apache-2.0-and-muse-model-license; el uso esta sujeto a la Muse Spark Open Usage Policy y la Muse Glimmer Usage Policy, que pueden restringir usos comerciales. Consultar el fichero LICENSE-MUSE-SPARK-OPEN.md.
-- Prohibido buscar repositorios sobre los que no se tenga permiso de lectura.
-- Entrenamiento con una sola ejecucion (semilla 0) y conjunto de datos pequeno (1.383 ejemplos de 344 tareas); los resultados describen este checkpoint, no la receta.
-- Las trayectorias y el texto de las tareas no se publican, lo que limita la reproducibilidad.
-- Repositorio con muy poca traccion (5 descargas, 0 likes), lo que reduce la validacion externa.
+- El propio autor no eligió este modelo para la demo final: wayfinder-qwen es entre 4 y 9 veces más rápido en el bucle de búsqueda y aproximadamente la mitad de caro por rollout, pese a tener un recall own-list ligeramente inferior.
+- Solo soporta inglés, lo que limita su uso en repositorios o briefs en castellano.
+- No se documenta la longitud de contexto, un dato crítico para búsquedas en repositorios grandes.
+- El recall medido (0,452) se obtuvo sobre 200 tareas retenidas de un conjunto propio; no hay validación en benchmarks públicos ni en dominios distintos al del proyecto.
+- La tasa de acierto en codificación (0,868) se midió sobre solo 34 tareas, insuficiente para resolver diferencias entre modelos según el propio autor.
+- El modelo depende de la forma del brief: cuando el agente padre entrega un brief redactado ("Find ...") en lugar del asunto del commit, el recall cae alrededor de 0,08 en todos los modelos probados.
+- La licencia es compuesta (apache-2.0-and-muse-model-license) y remite a un fichero LICENSE-MUSE-SPARK-OPEN.md; es necesario revisarla antes de cualquier uso comercial, ya que las condiciones del componente Muse pueden imponer restricciones adicionales.
+- No se documentan sesgos específicos ni tasas de alucinación; al ser un subagente de búsqueda, los errores se manifiestan como ubicaciones irrelevantes u omitidas más que como texto inventado.
+- El ajuste se hizo con un único seed y sin aislar la causa de la brecha de recall frente al modelo MoE, según reconoce el autor.
+- Más datos del mismo tipo no mejoraron el recall retenido; las ganancias medidas provienen de la cascada en inferencia (fusión por reciprocal rank y rerank), construida y medida solo sobre wayfinder-qwen.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/hweller1/wayfinder-glimmer-30b
+- Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
+- Modelo alternativo del proyecto: https://huggingface.co/hweller1/wayfinder-qwen-35b-a3b
 - Licencia: https://huggingface.co/hweller1/wayfinder-glimmer-30b/blob/main/LICENSE-MUSE-SPARK-OPEN.md
-- Modelo base referenciado: meta-models/Muse-Glimmer-30B (no se dispone de URL directa en la informacion proporcionada)
-- Repositorio GitHub del harness de referencia: mencionado en la model card (`serve/scout_tool_specs.json`, `serve/scout_product_prompt.md`), sin URL concreta en la informacion disponible.

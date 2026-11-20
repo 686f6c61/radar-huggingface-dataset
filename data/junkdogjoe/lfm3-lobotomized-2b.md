@@ -2,90 +2,88 @@
 
 ## Resumen
 
-LFM3-Lobotomized-2B es un merge experimental publicado por el usuario junkdogjoe en Hugging Face, construido a partir de LiquidAI/LFM3-1.7B como modelo base. El autor combina las capas de texto de LFM3-1.7B con las capas 2 a 21 de LFM3-Omni-2B y aplica un entrenamiento LoRA, con el objetivo de obtener un modelo que conserve capacidades de visión, texto y habla junto con razonamiento. El resultado es un checkpoint de 2.166.928.384 parámetros (2,17 B) en formato safetensors, con un repositorio de 4,4 GB.
+LFM3-Lobotomized-2B es un modelo experimental publicado por el usuario junkdogjoe en Hugging Face, derivado del modelo LiquidAI/LFM3-1.7B mediante una fusión de capas de texto con el modelo LFM3-Omni-2B (capas 2 a 21) y un entrenamiento posterior con LoRA. El resultado es un modelo multimodal que, según el autor, conserva capacidades de visión, texto y audio junto con razonamiento, manteniendo el proyector multimodal (mmproj) original intacto. El nombre y la propia model card indican que se trata de un primer proyecto personal, sin pruebas exhaustivas ni validación formal.
 
-El modelo pertenece a la familia LFM3 de Liquid AI, orientada a despliegue en el borde (edge), y hereda la licencia lfm1.0 del modelo base. La model card es explícitamente informal: el propio autor lo describe como su primer proyecto, hecho "for shits and giggles", y declara que el modelo está sin probar. No se aportan resultados de evaluación, curvas de entrenamiento ni detalles del dataset utilizado en el LoRA.
+El modelo pertenece a la familia LFM3 de Liquid AI, orientada a despliegue en el borde (edge), y se distribuye con licencia lfm1.0 (marcada como "other" en Hugging Face). Cuenta con 2.166.928.384 parámetros reales según los pesos en safetensors, un tamaño de repositorio de 10,6 GB y soporte declarado para 16 idiomas, incluido el castellano.
 
-Por su naturaleza, se trata de un artefacto de experimentación comunitaria y no de un modelo listo para producción. Su interés técnico radica en documentar un intento de fusión de capas entre un modelo de texto y un modelo omni de la misma familia, así como en las instrucciones de muestreo que el autor proporciona para llama.cpp con el proyector multimodal de LFM3-Omni-2B.
+Su relevancia es limitada y fundamentalmente experimental: no hay benchmarks publicados, el autor reconoce no haberlo probado a fondo y la propia model card contiene advertencias explícitas sobre su carácter incompleto. Resulta útil como caso de estudio de fusión de capas y de aplicación de LoRA sobre un modelo base pequeño, pero no como modelo de producción.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de la familia LFM3 (tag `lfm3_omni`, requiere `custom_code`); fusión de capas de texto de LFM3-1.7B con capas 2-21 de LFM3-Omni-2B más LoRA |
-| Parámetros totales | 2.166.928.384 (2,17 B) |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer multimodal (base LFM3, familia lfm3_omni); fusión de capas de texto con LFM3-Omni-2B (capas 2-21) y LoRA |
+| Parametros totales | 2.166.928.384 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible en la model card; el autor cita un GGUF Q8_0 en los flags de ejemplo de llama.cpp |
-| Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl (17 idiomas) |
-| Licencia | lfm1.0 (license: other, license_name: lfm1.0) |
-| Formato de pesos | safetensors (repo de 4,4 GB); el autor menciona además GGUF Q8_0 y mmproj F16 en los ejemplos de uso |
+| Tipos de cuantizacion | GGUF disponible (el autor cita Q8_0 y mmproj F16); safetensors en el repo |
+| Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl |
+| Licencia | lfm1.0 (etiquetada como "other" en Hugging Face) |
+| Formato de pesos | safetensors y GGUF |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de la familia LFM3 de Liquid AI, un transformer con soporte multimodal (image-text-to-text) que en este checkpoint se materializa mediante una fusión manual: el autor toma las capas de texto de LFM3-1.7B y las combina con las capas 2 a 21 de LFM3-Omni-2B, seguido de un entrenamiento LoRA. El proyector multimodal (mmproj) se mantiene intacto respecto al modelo Omni, según indica la propia model card. El resultado declarado es un modelo que integra visión, texto y habla junto con razonamiento.
+El modelo parte de LiquidAI/LFM3-1.7B, un transformer de la familia LFM3 de Liquid AI orientada a edge, y le injerta las capas 2 a 21 del modelo LFM3-Omni-2B para incorporar las capacidades multimodales (visión y audio) del modelo Omni. El proyector multimodal (mmproj) del modelo Omni se mantiene sin modificar. Sobre esta fusión se aplica un entrenamiento con LoRA, según describe el autor en la model card.
 
-No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset del LoRA, ni si hubo etapas de RLHF o DPO. Tampoco se detallan innovaciones técnicas adicionales más allá de la mencionada fusión de capas. El autor califica el resultado como no probado ("Untested"), lo que implica que no existe validación empírica publicada del comportamiento del merge.
+No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF o DPO. Tampoco se detalla la innovación técnica más allá de la propia fusión de capas y el uso de LoRA. La model card menciona el uso opcional de un vector de control (control-vector.gguf con escala 0.7) y un presupuesto de razonamiento (reasoning-budget 8192) en llama.cpp, descritos como experimentales y no probados.
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno (pipeline `text-generation`, tag `conversational`).
-- Procesamiento de imagen y texto (pipeline `image-text-to-text`, tag `lfm3_omni`), con el proyector multimodal de LFM3-Omni-2B sin modificar.
-- Capacidades de habla (speech) declaradas por el autor como parte de la fusión con LFM3-Omni-2B.
-- Razonamiento, según la descripción del autor ("alongside reasoning"); sin evaluación publicada.
-- Soporte multilingüe en 17 idiomas: inglés, árabe, chino, francés, alemán, italiano, japonés, coreano, portugués, español, vietnamita, tailandés, indonesio, hindi, ruso y polaco.
-- Soporte de tool calling / function calling: no disponible (no se menciona en la información).
-- Soporte de agentes y razonamiento multi-paso: no disponible (no se menciona en la información).
-- Modo thinking explícito: no disponible (no se menciona en la información).
+- Generación de texto conversacional, heredada del modelo base LFM3.
+- Procesamiento de imagen y texto (pipeline image-text-to-text) gracias a las capas del modelo Omni y al mmproj original.
+- Procesamiento de audio según la model card ("speech"), aunque no se detalla el formato ni la calidad.
+- Razonamiento, con soporte para un presupuesto de razonamiento configurable en llama.cpp (reasoning-budget).
+- Soporte multilingüe declarado para 16 idiomas, incluidos español, inglés, árabe, chino, francés, alemán, italiano, japonés, coreano, portugués, vietnamita, tailandés, indonesio, hindi, ruso y polaco.
+- Integración con servidores MCP en llama.cpp según los flags de ejemplo de la model card (mcp-servers-config, ui-mcp-proxy), lo que sugiere soporte de tool calling a través de esa infraestructura.
+- No se documentan capacidades de agentes multi-paso ni de function calling nativo más allá de lo anterior.
 
 ## Casos de uso
 
-- Experimentación con fusión de modelos: el checkpoint sirve para estudiar cómo se comporta una mezcla de capas entre un modelo de texto y un modelo omni de la misma familia, comparando las salidas con LFM3-1.7B y LFM3-Omni-2B en las mismas entradas.
-- Investigación sobre multimodalidad en el borde: al partir de la familia LFM3, orientada a edge, puede probarse en escenarios de visión y texto con requisitos de cómputo reducidos, verificando empíricamente qué capacidades del modelo Omni se conservan tras el merge.
-- Pruebas de inferencia con llama.cpp: el autor documenta flags concretos (`--temp 0.3`, `--min-p 0.05`, `--top-k 50`, `--top-p 0.95`, `--repeat-penalty 1.1`) para ejecutar el GGUF Q8_0 junto al mmproj F16, lo que permite reproducir su configuración de muestreo en local.
-- Evaluación de degradación por "lobotomización": el nombre del modelo sugiere una pérdida deliberada de capacidades; puede utilizarse como caso de estudio de qué se pierde al recombinar capas y aplicar LoRA sobre un modelo base pequeño.
-- Docencia y divulgación: como ejemplo práctico de merge de capas y LoRA en la familia LFM3, útil en talleres sobre publicación de modelos en Hugging Face y sobre las limitaciones de los checkpoints comunitarios sin evaluar.
-- Prototipado exploratorio de asistentes conversacionales multilingües: los 17 idiomas declarados permiten probar conversaciones en español, francés o hindi, siempre con la advertencia de que no hay evaluación de calidad publicada.
+- Prototipado de asistentes multimodales en el borde: al derivar de un modelo de 2B orientado a edge, puede ejecutarse en hardware modesto para experimentar con entrada de imagen, texto y audio en una sola pila.
+- Investigación sobre fusión de capas: sirve como caso práctico para estudiar cómo se comporta un modelo al injertar capas de un modelo Omni en otro de texto y aplicar LoRA encima.
+- Experimentos de razonamiento con presupuesto acotado: el flag reasoning-budget de llama.cpp permite limitar el cómputo de razonamiento, útil para medir el equilibrio entre latencia y calidad en tareas de lógica sencilla.
+- Pruebas de integración con MCP: los flags de la model card permiten conectar el modelo a servidores MCP en llama.cpp para evaluar flujos de herramientas en local.
+- Evaluación multilingüe comparativa: con 16 idiomas declarados, puede usarse para comparar la degradación de un modelo fusionado frente al base en tareas de traducción o conversación.
+- Docencia y demostraciones: su tamaño reducido y su licencia permiten usarlo en talleres sobre cuantización GGUF, LoRA y despliegue con llama.cpp, siempre advirtiendo de su carácter no validado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye MMLU, HumanEval, GSM8K ni ninguna otra métrica, y el autor declara explícitamente que el modelo está sin probar.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa por tamaño, un modelo de 2,17 B en FP16 requiere aproximadamente 4,3 GB solo para pesos; en Q8_0 alrededor de 2,3 GB; en Q4, en torno a 1,2-1,4 GB. Estas cifras son estimaciones por parámetros y no datos publicados por el autor.
-- GPU recomendadas: no disponible. Por tamaño, el modelo es apto para GPU de consumo con suficiente VRAM; no se especifican modelos concretos (A100, H100, RTX 4090, etc.).
-- ¿Cabe en GPU de consumo? Sí, por tamaño (2,17 B), siempre que se use una cuantización adecuada y se disponga del proyector multimodal si se requiere visión.
-- Opciones de despliegue: transformers (librería declarada, requiere `custom_code` y `trust_remote_code`), llama.cpp (el autor documenta flags con GGUF Q8_0 y mmproj F16). vLLM, TGI, Ollama y otros no se mencionan en la información disponible.
-- Latencia y throughput: no disponible.
+- VRAM estimada: con 2.166.928.384 parámetros, en FP16 serían necesarios aproximadamente 4,3 GB solo para pesos; en cuantización Q8_0 alrededor de 2,3 GB; en Q4, en torno a 1,2-1,5 GB. Son estimaciones a partir del número de parámetros, no datos publicados.
+- GPU recomendadas: no disponibles en la información proporcionada. Por tamaño, cabría en GPUs de consumo con 8 GB o más de VRAM, e incluso en configuraciones de 4-6 GB con cuantizaciones agresivas.
+- Cabe en GPU de consumo: sí, previsiblemente en RTX 3060, RTX 4060, RTX 4070 y superiores, así como en Apple Silicon con memoria unificada suficiente. No confirmado por el autor.
+- Opciones de despliegue: llama.cpp (el autor proporciona flags de ejemplo con GGUF Q8_0 y mmproj F16), y transformers con safetensors (requiere custom_code según los tags). No se documenta soporte de vLLM, TGI u Ollama.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Estado |
-|---|---|---|---|---|
-| LFM3-Lobotomized-2B (junkdogjoe) | 2,17 B | no disponible | lfm1.0 | Merge comunitario sin evaluar |
-| LiquidAI/LFM3-1.7B | 1,7 B (según nombre) | no disponible | lfm1.0 | Modelo base oficial de Liquid AI |
-| LFM3-Omni-2B | 2 B (según nombre) | no disponible | no disponible | Modelo omni de la familia, fuente de las capas 2-21 |
+| Modelo | Parametros | Contexto | Multimodal | Licencia | Estado |
+|---|---|---|---|---|---|
+| LFM3-Lobotomized-2B | 2,17 B | no disponible | Sí (texto, imagen, audio) | lfm1.0 | Experimental, sin benchmarks |
+| LiquidAI/LFM3-1.7B | 1,7 B (base) | no disponible | No (solo texto) | lfm1.0 | Modelo base oficial |
+| LFM3-Omni-2B | no disponible | no disponible | Sí (texto, imagen, audio) | lfm1.0 | Modelo oficial de Liquid AI |
 
-No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada. La comparación se limita a tamaño, licencia y procedencia.
+La comparación se limita a los modelos de la propia familia LFM3, ya que no se dispone de datos de rendimiento del modelo fusionado ni de alternativas equivalentes documentadas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo sin probar: el autor declara explícitamente "Untested"; no hay evaluación de calidad, seguridad ni robustez.
-- Procedencia informal: la model card lo describe como un primer proyecto hecho "for shits and giggles", lo que desaconseja su uso en producción.
-- Riesgo de degradación: la fusión de capas y el nombre "Lobotomized" sugieren pérdida de capacidades respecto a los modelos originales; no se cuantifica.
-- Riesgo de alucinación: no evaluado; al ser un merge sin validación, el riesgo es desconocido y potencialmente alto.
-- Sesgos: no documentados. Al heredar datos y comportamiento de la familia LFM3, pueden persistir sesgos del modelo base y del modelo Omni, sin que el autor los analice.
-- Idiomas: se declaran 17 idiomas, pero no hay evaluación de calidad por idioma; el soporte real puede variar.
-- Licencia: lfm1.0 (license: other). Es una licencia propia de Liquid AI con posibles restricciones para uso comercial; debe revisarse el archivo LICENSE del repositorio antes de cualquier uso comercial.
-- Dependencia de código personalizado: requiere `trust_remote_code` en transformers, lo que implica ejecutar código del autor; conviene auditar los archivos antes de cargarlo.
-- Contexto: no se especifica la longitud de contexto soportada, lo que impide planificar usos con ventanas largas.
-- Reproducibilidad: no se detallan hiperparámetros del LoRA, dataset ni proceso de fusión, por lo que el resultado no es reproducible a partir de la model card.
+- El autor declara explícitamente que no lo ha probado a fondo ("Haven't fully tested it") y que es su primer proyecto, hecho "for shits and giggles".
+- No hay benchmarks ni evaluaciones publicadas; se desconoce su calidad real frente al modelo base.
+- La fusión de capas puede degradar capacidades del modelo original de forma impredecible; el propio nombre ("Lobotomized") sugiere pérdida de rendimiento.
+- Riesgo elevado de alucinación y de respuestas incoherentes, especialmente en tareas multimodales o de razonamiento prolongado.
+- El uso del vector de control y del presupuesto de razonamiento se describe como experimental y no probado.
+- La licencia lfm1.0 puede imponer restricciones al uso comercial; debe revisarse el archivo LICENSE antes de cualquier despliegue en producción.
+- No se documentan sesgos conocidos, pero al derivar de un modelo base no auditado, hereda los sesgos de este.
+- Longitud de contexto no documentada, lo que impide planificar cargas de trabajo con ventanas largas.
+- El soporte de audio y visión no está validado ni cuantificado.
+- No apto para producción sin una evaluación propia exhaustiva.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/junkdogjoe/LFM3-Lobotomized-2B
+- Hugging Face: https://huggingface.co/junkdogjoe/LFM3-Lobotomized-2B
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
-- Modelo Omni de referencia (citado en la model card): LFM3-Omni-2B (no se proporciona URL en la información disponible)
-- Licencia lfm1.0: archivo LICENSE dentro del repositorio del modelo
-- No se han encontrado en la información proporcionada papers, blogs, repositorios ni demos adicionales.
+- Licencia LFM1.0: incluida en el repositorio como LICENSE
+- No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos del autor.

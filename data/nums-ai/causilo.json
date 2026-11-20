@@ -40,31 +40,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Reddit - Dive into anything",
-      "url": "https://www.reddit.com/",
-      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
-    },
-    {
-      "title": "BLOOKET - Reddit",
-      "url": "https://www.reddit.com/r/BLOOKET/",
-      "snippet": "This community is for BLOOKET users. Spamming will not be tolerated. Posts that are not Blooket related will be warned and then …"
-    },
-    {
-      "title": "index - BLOOKET - Reddit",
-      "url": "https://www.reddit.com/r/BLOOKET/wiki/index/",
-      "snippet": "This community is for BLOOKET users. Spamming will not be tolerated. Posts that are not Blooket related will be warned and then …"
-    },
-    {
-      "title": "UFC - Reddit",
-      "url": "https://www.reddit.com/r/ufc/wiki/index/",
-      "snippet": "Subreddit covering everything to do with UFC. Fight fans rejoice!"
-    },
-    {
-      "title": "Blooket is Bad for Students : r/teaching - Reddit",
-      "url": "https://www.reddit.com/r/teaching/comments/1bgb2lf/blooket_is_bad_for_students/",
-      "snippet": "You can't do blooket for every assessment just like you can't play jeopardy for every review. Students learning in diverse ways is what …"
-    }
-  ]
+  "sources": []
 }

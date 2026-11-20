@@ -2,98 +2,101 @@
 
 ## Resumen
 
-Tiel-Coder-35B-A3B-MLX-oQ4e-MTP es una re-cuantización del modelo Ornith-1.5-35B-A3B, desarrollada por el autor peculiar-ragdoll. Se trata de un modelo de lenguaje multimodal (texto e imagen) basado en una arquitectura de mezcla de expertos (MoE), optimizado para ejecución en Apple Silicon mediante la librería MLX. Su principal propósito es la codificación agéntica (agentic coding) y conversaciones multiturno de alta calidad, sacrificando rendimiento en tareas de conocimiento general y razonamiento académico.
+Tiel-Coder-35B-A3B-MLX-oQ4e-MTP es una cuantización de 4 bits del modelo Ornith-1.5-35B-A3B, publicada por el usuario peculiar-ragdoll. No se trata de un modelo entrenado desde cero, sino de una redistribución de los pesos del modelo base mediante el cuantizador oQ4e de oMLX, con precisión mixta dinámica y una pasada de imatrix, empaquetada en formato MLX para Apple Silicon. El checkpoint incorpora además la plantilla de chat Sharp del mismo autor y conserva la cabeza de predicción multi-token (MTP) del modelo original, utilizable para decodificación especulativa en runtimes compatibles.
 
-El modelo incorpora el Sharp chat template, un cabezal de predicción multi-token (MTP) para decodificación especulativa y una cuantización dinámica de 4 bits (oQ4e) con imatrix. Según el autor, en pruebas internas de SWE-bench-Live resuelve 12 de 25 problemas, igualando a Opus 4.6 medium y superando a su modelo base. El repositorio ocupa 22,8 GB y los pesos safetensors suman 6.890.402.410 parámetros, aunque el nombre del modelo indica 35B-A3B (35 mil millones totales, 3 mil millones activos), lo que sugiere una posible discrepancia entre la nomenclatura y los archivos subidos.
+El modelo base pertenece a la familia Qwen3.5-MoE (etiqueta `qwen3_5_moe` en el repositorio), con arquitectura de mezcla de expertos y 35.951.822.704 parámetros totales según los safetensors. El pipeline declarado es `image-text-to-text`, de modo que conserva capacidad de visión dentro del mismo directorio, sin fichero proyector separado. El repositorio ocupa 88,1 GB y acumula 1341 descargas y 24 likes en el momento de redactar esta ficha.
 
-La licencia es MIT, permitiendo uso comercial sin restricciones significativas. Los idiomas soportados son inglés y chino. Aunque el modelo base es de tipo visión-lenguaje, esta versión MLX está pensada para entornos Apple Silicon, con soporte para generación de texto, análisis de imágenes y decodificación especulativa.
+La relevancia de esta publicación es operativa: ofrece una vía para ejecutar un MoE de aproximadamente 36.000 millones de parámetros en Macs con memoria unificada, con un tamaño de 4 bits de aproximadamente 22 GB, orientado a coding agéntico y conversación multi-turno. El autor advierte explícitamente que las cifras de rendimiento publicadas se midieron sobre la build GGUF y no sobre esta, y que la build MTP falla en LM Studio, requiriendo oMLX.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (mezcla de expertos) basada en Qwen3.5 MoE, con cabezal MTP y template Sharp |
-| Parámetros totales | 6.890.402.410 (según safetensors; el nombre del modelo indica 35B-A3B) |
-| Parámetros activos | 3B (según el nombre del modelo) |
+| Arquitectura | Transformer con mezcla de expertos (MoE), familia Qwen3.5-MoE; cabeza MTP de predicción multi-token |
+| Parametros totales | 35.951.822.704 |
+| Parametros activos | no disponible (el nombre A3B sugiere aproximadamente 3.000 millones activos, pero no se confirma en la información disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | oQ4e (4-bit dinámico con imatrix) |
+| Tipos de cuantizacion | oQ4e (4 bits, precisión mixta dinámica con pasada de imatrix); existe variante oQ6e en la familia |
 | Idiomas soportados | en, zh |
 | Licencia | MIT |
-| Formato de pesos | safetensors (MLX) |
+| Formato de pesos | safetensors en formato MLX; build GGUF disponible en repositorio aparte |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una re-cuantización de Ornith-1.5-35B-A3B, que a su vez deriva de la familia Qwen3 MoE. Usa un diseño de mezcla de expertos con 3B parámetros activos por token (según el nombre), lo que reduce el coste de inferencia manteniendo capacidad. Incorpora un cabezal de predicción multi-token (MTP) entrenado por Ornith-1.5, que permite decodificación especulativa en runtimes compatibles, acelerando la generación sin sacrificar calidad. La cuantización oQ4e es dinámica y se calibró con un pase de imatrix para preservar las capas más sensibles.
+La arquitectura subyacente es un transformer de mezcla de expertos de la familia Qwen3.5-MoE, con 35.951.822.704 parámetros totales y una cabeza de predicción multi-token (MTP) entrenada en el modelo base Ornith-1.5-35B-A3B. La MTP permite decodificación especulativa en runtimes que la soportan, lo que reduce el número de pasos de decodificación por token generado. El checkpoint incluye además la plantilla de chat Sharp, que según las mediciones del autor acorta las respuestas y penaliza ligeramente el rendimiento en conocimiento tipo examen a cambio de eficiencia en tokens.
 
-El entrenamiento original de Ornith-1.5 no se detalla en la información proporcionada: no se especifican el número de tokens, la composición del dataset ni si se usó RLHF o DPO. Esta versión concreta es una re-cuantización del modelo base y no ha sido re-entrenada; solo se añadió el cabezal MTP y el template Sharp. La visión está integrada en el mismo directorio, sin archivos de proyector separados.
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset, ni si el modelo base empleó RLHF o DPO; estos datos no aparecen en la información proporcionada. Esta publicación concreta no entrena pesos nuevos: aplica cuantización oQ4e con imatrix sobre los pesos de Ornith-1.5-35B-A3B, conserva la MTP y reempaqueta la plantilla de chat dentro del checkpoint. El autor documenta que el cambio de cuantizador altera resultados: sobre los mismos pesos de Nail midió una diferencia de 0,7 puntos en MMLU-Pro y un 24 % de diferencia en recuento de tokens entre MLX y GGUF.
 
 ## Capacidades
 
-- Generación de texto y razonamiento, con especial énfasis en tareas de codificación agéntica (agentes que escriben y corrigen código en repositorios reales).
-- Soporte de visión: acepta imágenes como entrada (por ejemplo, capturas de pantalla, diagramas) y responde sobre ellas.
-- Conversación multiturno de alta calidad: el autor mide 67,2 puntos en Claw-Eval, superando a su base (65,3) y a Nail (60,5).
-- Decodificación especulativa mediante el cabezal MTP, reduciendo la latencia en entornos que lo soporten.
-- Tool calling y function calling (capacidad para usar herramientas externas en flujos de agente).
-- Multilingüe: soporta inglés y chino.
-- Integración con el template "Sharp" que optimiza respuestas cortas y directas, favoreciendo tareas de codificación.
+- Generación de texto conversacional multi-turno, con buen rendimiento medido en Claw-Eval (67,2 global sobre 114 conversaciones puntuadas).
+- Coding agéntico: resolución de incidencias reales de repositorio, con 12 de 25 problemas resueltos en SWE-bench-Live.
+- Capacidad de visión: pipeline `image-text-to-text`, con el proyector incluido en el mismo directorio del checkpoint.
+- Predicción multi-token (MTP) para decodificación especulativa en runtimes que la implementan correctamente, como oMLX.
+- Eficiencia de tokens derivada de la plantilla Sharp, orientada a respuestas más cortas.
+- Soporte multilingüe limitado a inglés y chino según la metadata del modelo.
+- No se documenta soporte de tool calling, function calling ni audio en la información disponible.
 
 ## Casos de uso
 
-- **Desarrollo de software asistido por IA**: el modelo puede resolver incidencias reales en repositorios de código, como se muestra en SWE-bench-Live (12/25 problemas resueltos). Es adecuado para integrarse en pipelines de CI/CD que requieran parches automáticos.
-- **Revisión de código en tiempo real**: gracias a su capacidad de conversación multiturno, puede mantener diálogos largos con desarrolladores, explicando cambios y sugiriendo mejoras en contexto.
-- **Asistente de programación en macOS**: al estar optimizado para MLX, funciona en Apple Silicon (M1/M2/M3/M4) sin necesidad de GPU dedicada, ideal para equipos de desarrollo que usan Mac.
-- **Análisis de imágenes técnicas**: con su capacidad multimodal, puede interpretar capturas de pantalla, diagramas de arquitectura o gráficos de logs, ayudando en tareas de depuración visual.
-- **Soporte técnico automatizado**: el modelo gestiona conversaciones de soporte en inglés o chino, manteniendo el contexto de usuario a lo largo de múltiples turnos sin degradarse.
-- **Generación de documentación técnica**: puede resumir código, generar comentarios y crear documentación de API, aprovechando su especialización en código y su formato de respuestas concisas.
-- **Prototipado rápido de agentes**: al incluir tool calling y decodificación especulativa, se puede usar para construir agentes que llamen a APIs y herramientas externas, con menor latencia que modelos densos de tamaño similar.
+- Reparación de incidencias en repositorios reales: el modelo resuelve 12 de 25 problemas de SWE-bench-Live con una mediana de 8,6 minutos por intento y una media de 12,3 minutos, lo que lo hace adecuado para pipelines de resolución automática de bugs en integración continua.
+- Asistentes de programación en estación de trabajo Apple Silicon: con aproximadamente 22 GB en 4 bits, cabe en Macs con memoria unificada suficiente y se ejecuta mediante oMLX, permitiendo un copiloto local sin dependencia de API externa.
+- Conversación multi-turno de larga duración: la puntuación de 67,2 en Claw-Eval sobre 114 conversaciones indica que mantiene calidad a lo largo del diálogo, con menos preguntas de aclaración que el modelo base (5,1 puntos por debajo), lo que encaja en flujos donde el usuario espera acción directa.
+- Análisis de capturas e interfaces junto a código: al conservar visión en el mismo checkpoint, puede recibir una imagen de una pantalla o un diagrama y razonar sobre ella en tareas de depuración de UI.
+- Aceleración de inferencia en runtimes compatibles con MTP: la cabeza de predicción multi-token permite decodificación especulativa en oMLX, reduciendo la latencia por token en generación de código larga.
+- Automatización de refactorizaciones acotadas: con respuestas más cortas por la plantilla Sharp, resulta adecuado para tareas de edición puntual donde el coste en tokens importa, como parches en lote sobre múltiples ficheros.
+- Despliegue en entornos con licencia permisiva: la licencia MIT permite integrar el modelo en productos comerciales internos sin restricciones de atribución más allá de la propia licencia.
 
 ## Benchmarks y rendimiento
 
-El autor publica resultados de benchmarks en la model card, pero advierte explícitamente que se midieron en la versión GGUF, no en esta versión MLX. Los resultados pueden variar debido al cambio de cuantizador (oQ4e frente a k-quants). Se presentan a continuación como referencia del modelo subyacente:
-
-| Benchmark | Tiel-Coder (GGUF) | Nail (Qwen3.6-35B-A3B) | Ornith-1.5 (base) | Opus 4.6 (medium) | Qwen3.8-27B (Dirk) |
+| Benchmark | TielCoder | Ornith-1.5 (base) | Nail | Qwen3.6-35B-A3B stock | Opus 4.6 (medium) |
 |---|---|---|---|---|---|
-| SWE-bench-Live (25 problemas) | 12 resueltos | 8 resueltos | 8 resueltos | 12 resueltos | 15 resueltos |
-| MMLU-Pro (4-bit) | 73.7 | 84.0 | 78.0 | no disponible | no disponible |
-| Claw-Eval multi-turno | 67.2 | 60.5 | 65.3 | no disponible | no disponible |
+| SWE-bench-Live (de 25) | 12 | 8 | 9 | 8 | 12 |
+| Claw-Eval multi-turno | 67,2 | 65,3 | 60,5 | no disponible | no disponible |
+| MMLU-Pro (4 bits) | 73,7 | 78,0 | 84,0 | 85,3 | no disponible |
+| Tiempo mediano por intento SWE | 8,6 min | no disponible | 7,2 min | 5,5 min | no disponible |
 
-El autor indica que la diferencia en MMLU-Pro (73.7 vs 84.0) se debe principalmente al modelo base y al template Sharp, no a la cuantización. En SWE-bench-Live, el modelo supera a su base (12 vs 8) y es igual a Opus 4.6 medium, aunque inferior a Dirk (15).
+Advertencia del autor: estas cifras se midieron sobre la build GGUF, no sobre esta build MLX. Los resultados pueden diferir por el cambio de cuantizador.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: el repositorio ocupa 22.8 GB en 4-bit. Se recomienda al menos 32 GB de RAM unificada en Apple Silicon para cargar el modelo completo en memoria.
-- **GPU recomendada**: diseñado para Apple Silicon (M1 Pro/Max/Ultra, M2, M3, M4). No requiere GPU NVIDIA/AMD; usa el backend MLX.
-- **Compatibilidad con consumer GPU**: no aplicable, es una build específica para Apple Silicon (MLX). Para GPUs NVIDIA se puede usar la versión GGUF del mismo modelo.
-- **Opciones de despliegue**: oMLX (administrador de modelos) o directamente con `mlx-vlm` (no `mlx-lm`, que produce tokens erróneos). También se puede descargar con `hf download`.
-- **Latencia y throughput**: no se proporcionan datos numéricos. El autor menciona que con el cabezal MTP y el template Sharp se reduce el número de tokens generados (24% menos en comparación con otros cuantizadores), lo que mejora la velocidad efectiva.
+- VRAM o memoria unificada estimada: aproximadamente 22 GB para la cuantización oQ4e de 4 bits, según el autor.
+- Hardware objetivo: Apple Silicon con memoria unificada suficiente para alojar el checkpoint completo; el formato es MLX y el runtime recomendado es oMLX.
+- No cabe en GPUs consumer discretas de 8 o 12 GB; requiere equipos con al menos 24-32 GB de memoria unificada para operar con margen.
+- GPU NVIDIA: no se documenta soporte en la información disponible; para CUDA debe usarse la build GGUF con llama.cpp.
+- Opciones de despliegue: oMLX (soporte completo, incluida la MTP). LM Studio no es compatible con esta build MTP, ya que su motor MLX ejecuta mal la cabeza MTP y produce salida corrupta desde el primer token. Alternativas: build GGUF con llama.cpp o la build MLX sin MTP.
+- Latencia y throughput: no disponible; el autor solo publica tiempos por intento en SWE-bench-Live (mediana 8,6 min, media 12,3 min) medidos sobre GGUF.
 
 ## Comparativa con modelos similares
 
-| Modelo | Arquitectura | Parámetros totales | Contexto | SWE-bench-Live | MMLU-Pro | Licencia |
-|---|---|---|---|---|---|---|
-| **Tiel-Coder-35B-A3B** | MoE + visión + MTP | 35B-A3B (pesos reales 6.89B) | no disponible | 12/25 (GGUF) | 73.7 (GGUF) | MIT |
-| **Nail-Qwen3.6-35B-A3B** | MoE | 35B-A3B | no disponible | 8/25 | 84.0 | no disponible |
-| **Dirk-Qwen3.8-27B** | Densa | 27B | no disponible | 15/25 | no disponible | no disponible |
-| **Ornith-1.5-35B-A3B** | MoE + visión | 35B-A3B | no disponible | 8/25 | 78.0 | MIT (base) |
-
-Tiel-Coder supera a su base y a Nail en tareas de codificación agéntica, pero es inferior en razonamiento y conocimiento general. Dirk, al ser denso, ofrece más fixes por problema, aunque a mayor coste computacional. La principal ventaja de Tiel es su velocidad y eficiencia en Apple Silicon.
+| Modelo | Parámetros | Contexto | SWE-bench-Live (de 25) | Claw-Eval | MMLU-Pro | Licencia | Formato |
+|---|---|---|---|---|---|---|---|
+| Tiel-Coder-35B-A3B (esta ficha) | 35,95 B (MoE) | no disponible | 12 | 67,2 | 73,7 | MIT | MLX safetensors |
+| Ornith-1.5-35B-A3B | 35,95 B (MoE) | no disponible | 8 | 65,3 | 78,0 | no disponible | no disponible |
+| Nail-Qwen3.6-35B-A3B | aproximadamente 35 B (MoE) | no disponible | 9 | 60,5 | 84,0 | no disponible | GGUF |
+| Dirk-Qwen3.8-27B | 27 B (denso) | no disponible | 15 | no disponible | no disponible | no disponible | GGUF |
+| Qwen3.8-27B stock | 27 B (denso) | no disponible | 16 | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- **Rendimiento en conocimientos generales**: el autor declara que el modelo es "cheerfully bad at trivia" y su MMLU-Pro (73.7) es significativamente inferior al de Nail (84.0). No es adecuado para tareas de examen o razonamiento académico.
-- **Dependencia del cuantizador**: los benchmarks publicados se midieron en la versión GGUF, no en esta versión MLX. El autor advierte de una diferencia de 0.7 puntos en MMLU-Pro y 24% en tokens entre ambos cuantizadores, por lo que los resultados reales en MLX pueden variar.
-- **Idiomas limitados**: solo inglés y chino. No se ha evaluado el rendimiento en español u otros idiomas.
-- **Contexto no documentado**: no se especifica la longitud de contexto máxima, lo que dificulta planificar tareas de largo alcance.
-- **Sesgos y alucinación**: no se han publicado evaluaciones de sesgos. Como todo modelo de lenguaje, existe riesgo de alucinación, especialmente en tareas de conocimiento factual.
-- **Compatibilidad**: es un checkpoint de visión-lenguaje; cargarlo con `mlx_lm.load()` produce tokens corruptos. Debe usarse con `mlx_vlm` o oMLX.
-- **Tamaño del repositorio**: aunque los pesos suman 6.89B, el nombre del modelo sugiere 35B-A3B. La discrepancia no está explicada y puede indicar que el repo contiene solo una parte de los pesos o una variación del modelo.
+- La build MTP produce salida corrupta en LM Studio: tokens multilingües aleatorios desde el primer token en cualquier prompt. No es un problema de plantilla de chat ni de tool calling, y ningún ajuste lo corrige. Debe usarse oMLX o la build GGUF.
+- Las cifras de benchmarks publicadas corresponden a la build GGUF, no a esta. El autor documenta que cambiar de cuantizador desplaza resultados (0,7 puntos en MMLU-Pro y 24 % en recuento de tokens entre MLX y GGUF sobre los mismos pesos).
+- Rendimiento bajo en conocimiento tipo examen: 73,7 en MMLU-Pro frente a 84,0 de Nail. El autor recomienda Nail para razonamiento y conocimiento enciclopédico.
+- La plantilla Sharp prioriza respuestas cortas y reduce preguntas de aclaración, lo que puede ser inadecuado en flujos donde se espera que el modelo interrogue antes de actuar.
+- Idiomas limitados a inglés y chino según la metadata; no se declara soporte de castellano.
+- Riesgo de alucinación: no se documenta mitigación específica en la información disponible.
+- Sesgos conocidos: no disponible.
+- Licencia MIT, que permite uso comercial; conviene verificar las condiciones del modelo base Ornith-1.5-35B-A3B, cuya licencia no se detalla en la información disponible.
+- Longitud de contexto no declarada, lo que impide planificar casos de uso con ventanas largas sin verificación empírica previa.
 
 ## Enlaces
 
-- [Modelo en Hugging Face (MLX-oQ4e-MTP)](https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e-MTP)
-- [Modelo base Ornith-1.5-35B-A3B](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B)
-- [Versión GGUF del mismo modelo](https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF-MTP)
-- [Versión MLX oQ4e sin MTP](https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e)
-- [Template de chat Sharp](https://huggingface.co/peculiar-ragdoll/Qwen-Sharp-Chat-Templates)
-- [Repositorio de oMLX (administrador de modelos)](https://github.com/peculiar-ragdoll/omlx) (no verificado en la búsqueda)
-- [Perfil del creador en Hugging Face](https://huggingface.co/peculiar-ragdoll)
+- Modelo en Hugging Face: https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e-MTP
+- Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
+- Build GGUF: https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF
+- Build GGUF con MTP: https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF-MTP
+- Build MLX sin MTP: https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e
+- Variante CyberTiel: https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-MLX-oQ4e-MTP
+- Plantillas de chat Sharp: https://huggingface.co/peculiar-ragdoll/Qwen-Sharp-Chat-Templates
+- Nail-Qwen3.6-35B-A3B: https://huggingface.co/peculiar-ragdoll/Nail-Qwen3.6-35B-A3B-GGUF
+- Dirk-Qwen3.8-27B: https://huggingface.co/peculiar-ragdoll/Dirk-Qwen3.8-27B-GGUF

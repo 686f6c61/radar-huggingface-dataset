@@ -2,98 +2,101 @@
 
 ## Resumen
 
-GPT-OSS-120B-SuperExpert-8GB es una consolidación del modelo fundacional `openai/gpt-oss-120b` de OpenAI, un transformer de tipo Mixture-of-Experts (MoE) con 120.000 millones de parámetros y 36 capas, publicado bajo licencia Apache 2.0. El autor del derivado, shashanth-27xA9, aplica una técnica denominada AW-SECD (Activation-Weighted Super-Expert Consolidation & Residual Drift Compensation) para comprimir el modelo original a un footprint de 8,0 GB distribuido en 16 shards de safetensors, con el objetivo declarado de ejecutarlo en portátiles y equipos de sobremesa con 8-16 GB de RAM.
+GPT-OSS-120B-SuperExpert-8GB es una compresión extrema del modelo openai/gpt-oss-120b, un transformer de mezcla de expertos (MoE) de 120.000 millones de parámetros publicado por OpenAI. El autor del checkpoint, shashanth-27xA9, aplica una técnica propia denominada AW-SECD (Activation-Weighted Super-Expert Consolidation & Residual Drift Compensation) para reducir el modelo a un artefacto de aproximadamente 8 GB de RAM, con un GGUF Q4_K_M de 3,04 GB.
 
-La propuesta es relevante porque apunta a un escenario de inferencia local en hardware de consumo sin GPU dedicada, algo poco habitual en modelos de esta escala. El autor afirma una retención de inteligencia agregada del 95,8 % respecto al modelo base, con una ventana de contexto nativa de 131.072 tokens. El modelo se distribuye con pipeline de text-generation y está etiquetado para razonamiento, matemáticas y código.
+La propuesta central es ejecutar un modelo de escala frontier en hardware de consumo: portátiles con 16 GB de RAM, Apple Silicon, GPUs RTX de 6 a 16 GB de VRAM o incluso CPU con AVX2/AVX-512. Según la model card, el resultado conserva "más del 95 %" del conocimiento del modelo base, con puntuaciones declaradas de 83,9 % en ARC-Challenge, 80,2 % en GSM8K y 78,5 % en HumanEval.
 
-No obstante, la ficha se basa exclusivamente en la información publicada en Hugging Face: no hay paper, repositorio de código, informe técnico ni resultados de terceros que verifiquen las cifras declaradas. El modelo no registra descargas ni interacciones en el momento de la consulta.
+El checkpoint publicado en Hugging Face contiene 4.404.133.888 parámetros reales en safetensors (frente a los 120B del modelo base), lo que indica que la compresión no es una mera cuantización: implica una consolidación estructural de expertos. Esta discrepancia entre el nombre comercial y el recuento real de parámetros es el dato más relevante para cualquier evaluación técnica.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer Mixture-of-Experts (MoE), 36 capas (heredada de `openai/gpt-oss-120b`) |
-| Parámetros totales | 120.000 millones (modelo base); footprint consolidado de 8,0 GB |
+| Arquitectura | Mezcla de expertos (MoE) derivada de openai/gpt-oss-120b, con consolidación AW-SECD |
+| Parámetros totales | 4.404.133.888 (según safetensors del repo); el modelo base declara 120B |
 | Parámetros activos | no disponible |
-| Longitud de contexto | 131.072 tokens nativos |
-| Tipos de cuantización | no disponible (el autor describe una consolidación AW-SECD, no una cuantización estándar) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | 4-bit; GGUF Q4_K_M (3,04 GB); safetensors en el repo |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (16 shards) |
+| Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo base `openai/gpt-oss-120b` es un transformer MoE de 120.000 millones de parámetros y 36 capas. Sobre él, el autor aplica AW-SECD, una técnica propietaria de consolidación de "super-expertos" con compensación de deriva residual. La model card no detalla el algoritmo, el número de expertos consolidados, la metodología de ponderación por activaciones ni el procedimiento de compensación, por lo que no es posible evaluar su fundamento técnico a partir de la información disponible.
+El modelo parte de openai/gpt-oss-120b, un transformer MoE de OpenAI. Sobre esa base, el autor aplica AW-SECD, descrito en la model card como una consolidación de "super-expertos" ponderada por activaciones, combinada con compensación de deriva residual. La técnica se apoya en descomposición SVD (etiqueta `svd` en el repo) para fusionar subespacios de expertos y corregir el error introducido por la compresión, de ahí la etiqueta `zero-drift`.
 
-Tampoco se especifican los datos de entrenamiento, el número de tokens, la composición del dataset ni si hubo etapas de RLHF o DPO en el derivado. El modelo conserva la etiqueta `custom_code`, lo que implica que la carga requiere código personalizado más allá del transformer estándar de Hugging Face. No se documenta ninguna innovación adicional como decodificación especulativa o atención lineal.
+No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF o DPO adicionales sobre el modelo base. Tampoco se detalla el proceso exacto de consolidación más allá de las referencias a AW-SECD y SVD. El checkpoint resultante contiene 4.404 millones de parámetros, lo que sugiere una reducción estructural drástica respecto a los 120B originales, no solo un cambio de precisión numérica.
 
 ## Capacidades
 
-- Generación de texto con pipeline `text-generation`.
-- Razonamiento de múltiples pasos (etiqueta `reasoning`).
-- Resolución de problemas matemáticos (etiqueta `math`).
-- Generación y comprensión de código (etiqueta `code`).
-- Contexto largo de hasta 131.072 tokens.
-- Ejecución en dispositivo (`on-device`) con footprint de 8 GB.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
-- Capacidades de visión o audio: no disponible en la información proporcionada.
+- Generación de texto conversacional multi-turno.
+- Razonamiento matemático paso a paso (la model card incluye ejemplos de GSM8K y álgebra).
+- Razonamiento científico y deducción causal (ejemplo de ARC-Challenge).
+- Generación de código Python, con énfasis en funciones óptimas y casos límite (ejemplo de HumanEval).
+- Etiquetas declaradas de `reasoning`, `math` y `code`.
+- Compatibilidad con endpoints (`endpoints_compatible`).
+- Ejecución en CPU, GPU y Apple Silicon vía llama.cpp y Ollama.
+- No se declaran capacidades de visión, audio, tool calling ni agentes en la información disponible.
 
 ## Casos de uso
 
-- Asistencia de código en local: el modelo puede integrarse en editores o terminales de desarrolladores que trabajen en portátiles sin GPU dedicada, aprovechando su footprint de 8 GB para autocompletado, explicación de funciones y generación de tests en un entorno sin conexión.
-- Razonamiento matemático sin conexión: adecuado para entornos educativos o de investigación donde no se permite enviar datos a la nube, resolviendo problemas de varios pasos dentro de la ventana de 131.072 tokens.
-- Análisis de documentos largos en el dispositivo: con 131.072 tokens de contexto, permite resumir o extraer información de contratos, informes o bases de código completas sin fragmentación.
-- Prototipado rápido con Ollama: la model card ofrece un comando de una línea (`ollama run hf.co/shashanth-27xA9/GPT-OSS-120B-SuperExpert-8GB`), lo que facilita pruebas de concepto en equipos de 8-16 GB de RAM.
-- Procesamiento por lotes en estaciones de trabajo modestas: al no requerir GPU de datacenter, puede desplegarse en flotas de portátiles para tareas de clasificación, extracción o reescritura de texto.
-- Evaluación de técnicas de compresión: útil como referencia para investigadores que estudien consolidación de expertos y deriva residual, comparando el comportamiento del derivado frente al modelo base.
-- Escenarios de privacidad estricta: al ejecutarse en local, permite procesar datos sensibles (sanitarios, legales, financieros) sin salir del dispositivo.
+- Asistencia de razonamiento en portátiles sin GPU: un desarrollador puede cargar el GGUF Q4_K_M de 3,04 GB en Ollama y resolver problemas de álgebra o lógica en un equipo con 16 GB de RAM, sin conexión ni coste de cloud.
+- Prototipado rápido en Google Colab o Kaggle: los notebooks de un clic permiten evaluar el modelo en T4 o P100 gratuitas antes de comprometer infraestructura propia.
+- Generación de código en local para entornos con requisitos de privacidad: al ejecutarse completamente offline, el modelo es apto para generar funciones Python sobre código propietario que no puede salir de la máquina.
+- Educación y tutoría interactiva: con 25+ tok/s en Apple Silicon según la model card, es viable una conversación fluida de explicaciones paso a paso en un aula o entorno doméstico.
+- Evaluación comparativa de técnicas de compresión: investigadores pueden usar este checkpoint como referencia para medir la retención de conocimiento de AW-SECD frente al modelo base en ARC-Challenge, GSM8K y HumanEval.
+- Despliegue en edge devices y sistemas embebidos con AVX2/AVX-512: la ejecución en CPU sin GPU abre la puerta a integraciones en kioscos, estaciones de trabajo aisladas o hardware industrial.
+- Integración en LM Studio o Jan.ai para uso de escritorio: basta pegar la URL del repositorio para descargar el GGUF pre-cuantizado con un clic.
 
 ## Benchmarks y rendimiento
 
-Los datos siguientes proceden exclusivamente de la model card del autor y no han sido verificados de forma independiente.
+Datos declarados por el autor en la model card (no verificados de forma independiente):
 
-| Benchmark | GPT-OSS 120B (base) | SuperExpert 8GB | Retención |
-|---|---|---|---|
-| ARC-Challenge | 88,2 % | 85,0 % | 96,4 % |
-| GSM8K (matemáticas) | 86,5 % | 82,8 % | 95,7 % |
-| HumanEval (código) | 81,0 % | 77,5 % | 95,7 % |
-| MMLU | 82,4 % | 78,6 % | 95,4 % |
-| Agregado | 84,5 % | 81,0 % | 95,8 % |
+| Benchmark | Resultado declarado | Retención indicada |
+|---|---|---|
+| ARC-Challenge | 83,9 % | 95,6 % del conocimiento preservado |
+| GSM8K | 80,2 % | "Zero-drift" en lógica multi-paso |
+| HumanEval | 78,5 % | Generación de código de producción |
 
-No se han publicado resultados de latencia, throughput ni consumo de memoria medidos de forma independiente.
+No se han publicado en la información disponible los valores del modelo base con los que se compara, ni resultados de MMLU u otros benchmarks estándar.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: 8,0 GB de footprint consolidado; el autor indica equipos con 8-16 GB de RAM.
-- GPU recomendadas: no disponible; el modelo está orientado a CPU y portátiles sin GPU dedicada.
-- ¿Cabe en GPU de consumo? No se especifica; por tamaño de pesos (8 GB) cabría teóricamente en GPUs con 8 GB o más de VRAM, pero no hay confirmación del autor.
-- Opciones de despliegue: Ollama (comando documentado en la model card); vLLM, llama.cpp y TGI no están confirmados.
-- Latencia y throughput: no disponible.
+- VRAM/RAM estimada: 8 GB de RAM para el artefacto principal; 3,04 GB para el GGUF Q4_K_M.
+- Apple Silicon (M1/M2/M3/M4): 16 GB de memoria unificada, aceleración Metal, ~25+ tok/s verificados según el autor.
+- GPU NVIDIA RTX: offload CUDA con 6-16 GB de VRAM, alto throughput según el autor.
+- CPU Intel/AMD: AVX2/AVX-512 con 16 GB de RAM del sistema, totalmente offline.
+- Cloud gratuito: Tesla T4 o P100 en Google Colab y Kaggle.
+- Opciones de despliegue: Ollama, llama.cpp, transformers (con `trust_remote_code=True`), LM Studio, Jan.ai.
+- Latencia y throughput: solo se declara "25+ tok/s" en Apple Silicon; no hay cifras para el resto de plataformas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| GPT-OSS-120B-SuperExpert-8GB | 120B (MoE, base) | 131.072 | Apache 2.0 | safetensors (16 shards) | Consolidación AW-SECD a 8 GB; sin verificación externa |
-| openai/gpt-oss-120b | 120B (MoE) | 131.072 | Apache 2.0 | safetensors | Modelo base de referencia |
-| Alternativas de 8 GB en dispositivo | no disponible | no disponible | no disponible | no disponible | No se dispone de comparables verificables con la información proporcionada |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| GPT-OSS-120B-SuperExpert-8GB | 4,4B reales (base 120B) | no disponible | Apache 2.0 | Hugging Face, GGUF, Ollama |
+| openai/gpt-oss-120b (base) | 120B | no disponible | no disponible en la información | Hugging Face |
+| GLM-5.3 SuperExpert v2 (mismo autor) | no disponible | no disponible | no disponible | Hugging Face |
+
+No se dispone de datos de rendimiento comparables de terceros para establecer una comparación cuantitativa fiable con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Las cifras de retención (95,8 % agregado) y los benchmarks provienen únicamente de la model card del autor; no hay paper, repositorio ni evaluación de terceros que las respalde.
-- La técnica AW-SECD no está documentada: se desconoce el número de expertos consolidados, la metodología de ponderación y el procedimiento de compensación de deriva.
-- El modelo requiere `custom_code` para su carga, lo que añade dependencias y riesgo de mantenimiento.
-- No se especifican los idiomas soportados; el rendimiento en castellano es desconocido.
-- No hay información sobre sesgos, alucinación, tool calling, capacidades de agente ni comportamiento multilingüe.
-- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre el comportamiento del derivado ni sobre la procedencia de los datos del modelo base.
-- El modelo no registra descargas ni interacciones, por lo que no existe evidencia comunitaria de funcionamiento.
-- No se confirma compatibilidad con vLLM, llama.cpp o TGI; solo Ollama está documentado.
-- El tamaño de 8 GB para un modelo de 120B parámetros implica una compresión muy agresiva; conviene validar el comportamiento real antes de usarlo en producción.
+- El nombre comercial ("120B") no coincide con los 4.404 millones de parámetros reales del checkpoint; conviene tratar las cifras de retención como declaraciones del autor, no verificadas de forma independiente.
+- Los benchmarks de ARC-Challenge, GSM8K y HumanEval provienen únicamente de la model card; no se aportan resultados del modelo base ni metodología de evaluación.
+- No se documentan sesgos conocidos, composición del dataset ni idiomas soportados.
+- No hay información sobre la longitud de contexto efectiva tras la compresión, un factor crítico para casos de uso con documentos largos.
+- La técnica AW-SECD no está descrita en detalle ni respaldada por un paper en la información disponible; la reproducibilidad es limitada.
+- El uso de `trust_remote_code=True` implica ejecutar código del autor; audítese antes de desplegar en producción.
+- Aunque la licencia es Apache 2.0, deben respetarse las condiciones del modelo base openai/gpt-oss-120b.
+- La model card incluye afirmaciones de marketing ("breakthrough", "zero cloud cost") que no sustituyen a una validación empírica propia.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/shashanth-27xA9/GPT-OSS-120B-SuperExpert-8GB
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
-- Licencia Apache 2.0: https://opensource.org/licenses/Apache-2.0
+- GGUF directo (3,04 GB): https://huggingface.co/shashanth-27xA9/GPT-OSS-120B-SuperExpert-8GB/resolve/main/gpt-oss-120b-superexpert-8gb-q4_k_m.gguf
+- Notebook de ejecución en Colab: https://colab.research.google.com/github/shashanth-27xA9/GPT-OSS-120B-SuperExpert-8GB/blob/main/1_click_run_gptoss_8gb.ipynb
+- Suite de benchmarks en Colab: https://colab.research.google.com/github/shashanth-27xA9/GPT-OSS-120B-SuperExpert-8GB/blob/main/benchmark_evaluation_and_test.ipynb
+- Playground web: https://huggingface.co/spaces/shashanth-27xA9/GPT-OSS-120B-Playground
+- Starter en Kaggle: https://www.kaggle.com/code/hariniathukuri/gpt-oss-120b-8gb-1-click-starter

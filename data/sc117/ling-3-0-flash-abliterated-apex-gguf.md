@@ -2,86 +2,89 @@
 
 ## Resumen
 
-Ling-3.0-flash-abliterated-APEX-GGUF es un paquete comunitario no oficial que combina dos modificaciones sobre los pesos del modelo oficial inclusionAI/Ling-3.0-flash: una edición de rechazos (abliteration) mediante la herramienta abliterix v6 trial 21, y una conversión a formato GGUF con cuantización mixta APEX. El modelo base es un MoE híbrido de 124B parámetros totales con 5,1B activos, desarrollado por inclusionAI, que emplea una pila híbrida lineal nativa desde el preentrenamiento (Kimi Delta Attention + MLA con puerta) y un esquema de contexto oficial de 8K a 256K tokens.
+Ling-3.0-flash-abliterated-APEX-GGUF es una compilación comunitaria del modelo Ling-3.0-flash de inclusionAI, publicada por el usuario SC117 en Hugging Face. Se trata de un modelo de lenguaje de arquitectura híbrida MoE (mixture of experts) con 127.486 millones de parámetros totales y aproximadamente 5.100 millones de parámetros activos, lo que lo sitúa en la categoría de modelos dispersos de gran escala pero con coste de inferencia contenido. El modelo base emplea una pila híbrida nativa desde el preentrenamiento que combina atención lineal Kimi Delta Attention (KDA) y gated MLA en una proporción 5:1, junto con un MoE disperso 1/64 con 512 expertos enrutados (top-8) más un experto compartido, dos capas densas y una cabeza MTP entrenada.
 
-La relevancia de este lanzamiento radica en que ofrece una versión del modelo con una tasa de rechazo significativamente reducida (17,3% frente al comportamiento del modelo oficial), manteniendo la licencia MIT. Está pensado para casos de uso donde el modelo base muestra rechazos excesivos, aunque el autor advierte explícitamente de la necesidad de evaluar cumplimiento y seguridad antes de su uso en producción. El repositorio contiene exclusivamente ficheros GGUF cuantizados con la herramienta APEX, que clasifica cada tensor por su rol (experto enrutado, experto compartido o atención) y aplica un gradiente de precisión por capas.
+La relevancia de esta ficha concreta reside en que no es una publicación oficial de inclusionAI, sino una modificación en dos pasos: primero se aplica una receta de eliminación de rechazos (abliteration) mediante un LoRA de abliterix v6 trial 21 fusionado estáticamente en BF16, y después se convierte a GGUF con cuantización de precisión mixta APEX. El resultado es un modelo con una tasa de rechazo notablemente inferior a la del original, empaquetado en formato GGUF para su despliegue en llama.cpp y entornos compatibles.
 
-## Especificaciones tecnicas
+El contexto oficial del modelo base sigue una programación de 8K a 32K y hasta 256K tokens, con el modo de razonamiento (thinking) activado por defecto en la model card oficial. La licencia es MIT, lo que facilita el uso comercial, aunque la naturaleza abliterada del paquete exige una evaluación de seguridad y cumplimiento por parte del integrador.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Hybrid MoE (Kimi Delta Attention + gated MLA, 1/64 sparse MoE, 512 expertos enrutados top-8 + 1 experto compartido, 2 capas densas, cabezal MTP entrenado) |
-| Parametros totales | 127.486.405.600 (124B) |
-| Parametros activos | 5,1B |
-| Longitud de contexto | 8K oficial, ampliable a 32K y 256K (esquema de contexto oficial) |
-| Tipos de cuantizacion | APEX mixed-precision (BF16 convert + APEX, sin imatrix en estos niveles) |
+| Arquitectura | Híbrida MoE con pila híbrida lineal: Kimi Delta Attention (KDA) + gated MLA en proporción 5:1; MoE disperso 1/64; arquitectura GGUF `bailingmoe3` |
+| Parámetros totales | 127.486.405.600 (~127,5B) |
+| Parámetros activos | ~5,1B (124B-A5.1B según el autor) |
+| Longitud de contexto | 8K → 32K → 256K (programación oficial del modelo base) |
+| Tipos de cuantización | GGUF con cuantización de precisión mixta APEX (sin imatrix en estos niveles); el repo incluye múltiples archivos de cuantización |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF (arquitectura bailingmoe3) |
+| Formato de pesos | GGUF (conversión desde BF16); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Ling-3.0-flash emplea una arquitectura híbrida lineal nativa desde el preentrenamiento, combinando Kimi Delta Attention (KDA) y MLA con puerta en proporción 5:1. El componente MoE es sparse con 512 expertos enrutados (top-8 activos) más un experto compartido, con factor de sparse 1/64, e incluye 2 capas densas y un cabezal MTP (multi-token prediction) entrenado de 3,1B parámetros. El esquema de contexto oficial es progresivo: 8K → 32K → 256K.
+El modelo base Ling-3.0-flash emplea una arquitectura híbrida nativa diseñada desde el preentrenamiento, no una adaptación posterior. Combina capas de atención lineal Kimi Delta Attention (KDA) con capas de gated MLA en una proporción 5:1, lo que reduce el coste computacional del mecanismo de atención en secuencias largas manteniendo la capacidad expresiva de la atención completa en una fracción de las capas. La componente MoE es dispersa con ratio 1/64: 512 expertos enrutados con activación top-8 más un experto compartido, sobre dos capas densas. Incluye además una cabeza MTP (multi-token prediction) entrenada, que permite decodificación especulativa y predicción de varios tokens por paso.
 
-Sobre estos pesos, el autor del paquete comunitario aplicó dos modificaciones: primero, una edición de rechazos mediante abliterix v6 trial 21, usando un LoRA de rango 3 sobre las proyecciones `o_proj` y `down_proj` únicamente, con normalización de pesos MPOA completa, fusionado estáticamente de vuelta a BF16. Segundo, conversión a GGUF con cuantización mixta APEX, que clasifica cada tensor por su función y aplica un gradiente de precisión por capas, dando mayor precisión a las capas de borde y comprimiendo más agresivamente las capas intermedias redundantes. El autor indica que esta fusión es estática y no el gate solo en runtime de versiones posteriores (v36).
+El paquete comunitario añade dos transformaciones sobre los pesos oficiales. Primero, una edición de rechazos mediante la receta abliterix v6 trial 21: un LoRA de rango 3 aplicado únicamente a las proyecciones `o_proj` y `down_proj`, con normalización de pesos completa (MPOA `weight_normalization=full`), fusionado estáticamente en BF16 (no es la variante runtime-only v36 posterior). Segundo, la conversión a GGUF con tipos de tensor de precisión mixta generados por APEX, sin matriz de importancia (imatrix) en estos niveles. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo base.
 
 ## Capacidades
 
-- Generación de texto y razonamiento híbrido nativo (modo thinking activado por defecto en la ficha oficial).
-- Soporte de tool calling con precisión mejorada respecto a la generación anterior de la serie Ling.
-- Estabilidad mejorada en tareas de horizonte largo (long-horizon tasks).
-- Capacidades multilingües, aunque los idiomas concretos no están especificados en la documentación disponible.
-- Tasa de rechazo significativamente reducida (17/98, 17,3%) tras la ablación, lo que permite respuestas en escenarios donde el modelo oficial se negaría.
-- Compatibilidad con endpoints estándar (endpoints_compatible) y arquitectura GGUF bailingmoe3 para inferencia local.
+- Generación de texto conversacional y de formato largo, con pipeline declarado `text-generation`.
+- Razonamiento explícito en modo thinking, activado por defecto en la model card oficial del modelo base.
+- Razonamiento multi-paso y descomposición de problemas, apoyado por la cabeza MTP y el modo de pensamiento.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Soporte de tool calling y function calling: no confirmado en la información disponible para este paquete.
+- Soporte de agentes: no confirmado explícitamente; la etiqueta `endpoints_compatible` sugiere compatibilidad con endpoints de inferencia estándar.
+- Tasa de rechazo reducida respecto al modelo oficial (17/98, un 17,3 %, en la evaluación de búsqueda citada por el autor), lo que amplía el rango de respuestas generadas.
+- Capacidades de visión o audio: no disponibles.
 
 ## Casos de uso
 
-- Generación de contenido creativo sin restricciones: la ablación reduce los rechazos, permitiendo explorar temas controvertidos o de nicho donde el modelo oficial responde con negativas. Adecuado para ficción, guiones o narrativa experimental.
-- Asistente de programación con tool calling: su soporte mejorado de tool calling y su ventana de contexto de hasta 256K permiten integrarlo en pipelines de desarrollo que requieran invocar funciones externas o gestionar repositorios extensos.
-- Razonamiento multi-paso y agentes: el modo thinking nativo y la arquitectura híbrida lo hacen adecuado para tareas de planificación y descomposición de problemas complejos en entornos de agente.
-- Análisis de documentos largos: con contexto oficial de 256K, puede procesar documentos extensos completos (manuales, informes, libros técnicos) sin necesidad de truncamiento.
-- Investigación en seguridad y alineación: el paquete permite estudiar el comportamiento de un modelo ablacionado frente al original, comparando tasas de rechazo, sesgos y diferencias de rendimiento en tareas delicadas.
-- Despliegue en local con hardware moderado: gracias a la cuantización APEX y al formato GGUF, puede ejecutarse en GPUs de consumo con llama.cpp o herramientas compatibles, manteniendo solo 5,1B de parámetros activos por token.
+- Investigación sobre alineación y seguridad: el paquete permite estudiar el efecto de la abliteración sobre la tasa de rechazo (17,3 % en la evaluación del autor) comparándolo con el modelo oficial, en entornos controlados y con auditoría de accesos.
+- Generación de texto creativo y de ficción: la reducción de rechazos permite abordar narrativas con temáticas sensibles que el modelo original declinaría, útil en escritura editorial con revisión humana posterior.
+- Despliegue local en estaciones de trabajo con GPU de consumo: al ser GGUF con cuantización mixta APEX y ~5,1B de parámetros activos, el coste por token es contenido frente a modelos densos de tamaño comparable, lo que facilita la inferencia en llama.cpp.
+- Procesamiento de documentos largos: la ventana de hasta 256K tokens del modelo base permite resumir, extraer y razonar sobre contratos, informes o expedientes completos en una sola pasada, siempre que la cuantización elegida preserve la calidad en contextos extensos.
+- Asistentes conversacionales autoalojados: la licencia MIT y el formato GGUF permiten integrar el modelo en productos propios sin restricciones de uso comercial, con control total sobre los datos.
+- Evaluación comparativa de cuantizaciones: el repositorio incluye varios niveles APEX, lo que permite medir la degradación de calidad y el throughput entre cuantizaciones sobre una misma base abliterada.
+- Generación de código y razonamiento técnico: el modelo base es un modelo de razonamiento híbrido; puede emplearse en tareas de explicación de código y resolución de problemas, aunque el soporte de tool calling no está confirmado en este paquete.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye métricas de MMLU, HumanEval, GSM8K ni otras evaluaciones estándar para esta versión ablacionada y cuantizada. El autor solo proporciona el dato de tasa de rechazo (17/98, 17,3%) en una evaluación de búsqueda.
+No se han publicado resultados de benchmarks en la información disponible. El único dato de evaluación proporcionado por el autor es la tasa de rechazo en una evaluación de búsqueda: 17/98 (17,3 %) tras la fusión de abliterix v6 trial 21. No se aportan resultados de MMLU, HumanEval, GSM8K ni comparaciones numéricas con otros modelos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible en la documentación. Dado que el modelo tiene 124B parámetros totales en BF16 (aproximadamente 255 GB), se requieren cuantizaciones agresivas para entornos de consumo.
-- GPU recomendadas: no disponible. Para las cuantizaciones más bajas de GGUF, una GPU con 24 GB (RTX 3090/4090) podría ser suficiente con cuantización de 2-3 bits, aunque con pérdida de calidad significativa.
-- Para cuantizaciones medias (Q4-Q5), se necesitan GPUs profesionales (A100 80GB, H100) o múltiples GPUs en paralelo.
-- Opciones de despliegue: llama.cpp, Ollama, u otras herramientas compatibles con GGUF. vLLM puede usarse con el modelo base BF16 o FP8, pero no directamente con estos ficheros GGUF.
-- Latencia y throughput: no disponible.
+- VRAM estimada: no disponible de forma oficial. Como referencia orientativa, un modelo MoE de ~127,5B totales en GGUF requiere mantener en memoria los pesos totales de la cuantización elegida; los niveles APEX de precisión mixta reducen el tamaño frente a BF16, pero el repositorio completo ocupa 489,3 GB, lo que refleja la suma de todas las variantes publicadas.
+- GPU recomendadas: no disponibles en la información proporcionada. Para los niveles de cuantización más bajos, un MoE con ~5,1B activos puede ser viable en GPU de consumo con suficiente VRAM para los pesos totales; para los niveles altos se requieren GPUs de centro de datos (A100, H100) o configuraciones multi-GPU.
+- Viabilidad en GPU de consumo: depende del nivel de cuantización APEX seleccionado; no se especifican tamaños por archivo en la información disponible.
+- Opciones de despliegue: llama.cpp y entornos compatibles con GGUF (por ejemplo, Ollama o servidores basados en llama.cpp); la etiqueta `endpoints_compatible` sugiere compatibilidad con endpoints de inferencia. vLLM y TGI no están confirmados para este paquete GGUF.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales | Activos | Contexto | Licencia | Formato |
+| Modelo | Parámetros totales / activos | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Ling-3.0-flash (oficial) | 124B | 5,1B | 256K | MIT | BF16/FP8 |
-| Ling-3.0-flash-abliterated-APEX (este) | 124B | 5,1B | 256K | MIT | GGUF (APEX) |
-| Ling-3.0-tiny-abliterated-APEX | no disponible | no disponible | no disponible | MIT | GGUF (APEX) |
-
-No se dispone de datos comparativos de rendimiento entre estas versiones. La comparativa se limita a especificaciones técnicas y formato de distribución. No se han identificado otros modelos comparables de la misma categoría (MoE híbrido con 5B activos) en la información disponible.
+| Ling-3.0-flash-abliterated-APEX-GGUF (este) | ~127,5B / ~5,1B | 8K–256K (base) | MIT | GGUF (APEX) | Abliterado, comunitario, tasa de rechazo 17,3 % |
+| inclusionAI/Ling-3.0-flash (base oficial) | ~127,5B / ~5,1B | 8K–256K | MIT | safetensors | Modelo oficial, thinking por defecto, sin abliterar |
+| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados de otros modelos comparables en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- La ablación reduce significativamente la tasa de rechazo, lo que implica que el modelo puede generar contenido que el modelo oficial negaría. El autor advierte explícitamente de evaluar cumplimiento normativo y seguridad antes de su uso.
-- No es un lanzamiento oficial de inclusionAI; es un paquete comunitario con modificaciones sobre los pesos oficiales.
-- La fusión abliterix es estática (v6 trial 21), no el gate solo en runtime de versiones posteriores (v36), por lo que el comportamiento puede diferir de otras versiones ablacionadas del mismo modelo.
-- No se han publicado benchmarks de rendimiento para esta versión, por lo que el impacto de la ablación y la cuantización en la calidad de salida es desconocido.
-- La cuantización APEX sin imatrix puede afectar a la calidad en tareas de precisión, especialmente en las capas más comprimidas.
-- Los idiomas soportados no están documentados, lo que limita la evaluación de su cobertura multilingüe.
-- El tamaño del repositorio (489,3 GB) implica que la descarga de todas las cuantizaciones requiere un ancho de banda y almacenamiento considerables.
+- La abliteración reduce la tasa de rechazo (17,3 % en la evaluación del autor), lo que implica que el modelo puede generar contenido que el original declinaría; es responsabilidad del integrador evaluar el cumplimiento normativo y la seguridad del caso de uso.
+- No es una publicación oficial de inclusionAI; el autor declara explícitamente que se trata de un paquete comunitario y que el comportamiento puede diferir del modelo base.
+- Riesgo de alucinación inherente a los modelos de lenguaje de gran escala; no se han publicado evaluaciones de fidelidad factual para este paquete.
+- Idiomas soportados no documentados; no se puede garantizar un rendimiento multilingüe homogéneo.
+- La fusión estática del LoRA (v6 trial 21) no equivale a la variante runtime-only posterior (v36); los resultados pueden variar entre ambas.
+- Las cuantizaciones APEX de este repositorio no emplean imatrix, lo que puede afectar a la calidad en los niveles más agresivos.
+- El tamaño del repositorio (489,3 GB) exige planificación de almacenamiento y ancho de banda para su descarga.
+- Aunque la licencia es MIT, deben respetarse los términos de inclusionAI y la legislación local aplicable.
+- No hay datos publicados de benchmarks que permitan validar el rendimiento en tareas estándar.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/SC117/Ling-3.0-flash-abliterated-APEX-GGUF
 - Modelo base oficial: https://huggingface.co/inclusionAI/Ling-3.0-flash
-- Documentación en chino: https://huggingface.co/SC117/Ling-3.0-flash-abliterated-APEX-GGUF/blob/main/README_zh.md
-- Herramienta abliterix: https://github.com/wuwangzhang1216/abliterix
-- Herramienta APEX quantization: https://github.com/mudler/apex-quant
-- Página del modelo en vLLM Recipes: https://recipes.vllm.ai/inclusionAI/Ling-3.0-flash
-- Ficha del modelo en zenmux.ai: https://zenmux.ai/inclusionai/ling-3.0-flash
-- Guía completa de Ling 3.0 Flash: https://www.aimadetools.com/blog/ling-3-0-flash-complete-guide/
+- Licencia del modelo base: https://huggingface.co/inclusionAI/Ling-3.0-flash
+- Repositorio abliterix: https://github.com/wuwangzhang1216/abliterix
+- Herramienta APEX de cuantización: https://github.com/mudler/apex-quant
+- Documentación en chino del paquete: https://huggingface.co/SC117/Ling-3.0-flash-abliterated-APEX-GGUF/blob/main/README_zh.md

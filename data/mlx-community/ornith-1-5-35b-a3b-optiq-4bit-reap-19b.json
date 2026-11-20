@@ -52,31 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mlx-community/Ornith-1.5-35B-A3B-OptiQ-4bit · Hugging Face",
-      "url": "https://huggingface.co/mlx-community/Ornith-1.5-35B-A3B-OptiQ-4bit",
-      "snippet": "Built with mlx-optiq, the MLX-native toolkit to quantize, fine-tune, and serve LLMs locally on Apple Silicon, no PyTorch and no cloud. All OptiQ quants · Docs OptiQ mixed-precision quant of ornith-ai/Ornith-1.5-35B-A3B, a 35B mixture-of-experts vision-language model with 3B active parameters and a bundled MTP speculation head. 24 GB on disk."
-    },
-    {
-      "title": "mlx-community/Ornith-1.5-35B-A3B-8bit · Discussions",
-      "url": "https://huggingface.co/mlx-community/Ornith-1.5-35B-A3B-8bit/discussions",
-      "snippet": "mlx-community / Ornith-1.5-35B-A3B-8bit like 0 Follow MLX Community 16.4k Text Generation MLX Safetensors qwen3_5_moe conversational 8-bit precision License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "Ornith AI - Open-Source Agentic Coding Models",
-      "url": "https://ornith.online/",
-      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
-    },
-    {
-      "title": "Ornith 1.5 35B A3B MLX 6bit - thinkllm.dev",
-      "url": "https://thinkllm.dev/models/ornith-1-5-35b-a3b-mlx-6bit",
-      "snippet": "Ornith 1.5 35B A3B MLX 6bit is a quantized, open-weight text model optimized for Apple Silicon via the MLX framework, running at 6-bit precision. The A3B designation suggests a sparse or mixture-of-experts-style architecture where only a subset of parameters are active per inference, balancing a large 35B parameter count against practical memory constraints. Details about its specific ..."
-    },
-    {
-      "title": "ornith-1.5 - ollama.com",
-      "url": "https://ollama.com/library/ornith-1.5",
-      "snippet": "Chirp Chirp! 🐦 We are introducing Ornith-1.5, a major step toward building foundation models through end-to-end self-improvement. Ornith-1.5 extends Ornith-1.0 by expanding the self-improvement loop from scaffold and rollout optimization to jointly optimizing task generation, scaffold construction, and solution rollouts. Rather than relying on a fixed set of human-curated tasks and manually ..."
-    }
-  ]
+  "sources": []
 }

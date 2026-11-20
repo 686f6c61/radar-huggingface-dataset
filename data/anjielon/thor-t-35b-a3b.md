@@ -2,110 +2,115 @@
 
 ## Resumen
 
-Thor-T-35B-A3B es una cuantización ternaria del modelo híbrido de mezcla de expertos Ornith-1.5-35B-A3B, publicada por el desarrollador independiente Anjielon. Se distribuye en formato GGUF y reduce drásticamente el peso en disco del modelo original: casi todos los pesos se almacenan como valores ternarios (−1, 0, +1) en uno a cuatro planos por tensor, lo que permite comprimir un modelo de aproximadamente 54.760 millones de parámetros totales (unos 3.000 millones activos por token) en ficheros de entre 8 y 12 GiB.
+Thor-T-35B-A3B es una familia de cuantizaciones ternarias en formato GGUF del modelo Ornith-1.5-35B-A3B, un transformer híbrido de mezcla de expertos (MoE) con aproximadamente 35B parámetros totales y unos 3B activos por token. Lo desarrolla Anjielon como trabajo de cuantización post-entrenamiento, no como modelo base: la práctica totalidad de los pesos se reduce a valores −1, 0 o +1, almacenados como uno a cuatro planos ternarios por tensor, con una cabeza de predicción multi-token (MTP) ternaria incluida en cada fichero.
 
-La relevancia del proyecto reside en su enfoque de compresión extrema con preservación de calidad: el fichero mediano (M) alcanza el 99,34 % del MMLU del profesor Q8_0 ocupando 12,19 GiB, frente a los 35,21 GiB del original, y el fichero S supera al IQ2_XXS público con un tamaño ligeramente inferior. Todo el proceso se realizó post-entrenamiento sobre una única APU doméstica (AMD Ryzen AI Max+ 395 con 128 GB) usando la herramienta abierta Fucina.
+El problema que aborda es el de comprimir un MoE de 35B hasta 8-12 GiB manteniendo una fracción alta de la calidad del profesor (la conversión Q8_0 del modelo base), algo que las cuantizaciones públicas de 1-2 bits no consiguen: el fichero ternario ingenuo (TQ1_0 de un solo plano) cae al 32,23 % del profesor en MMLU, mientras que la variante M del autor alcanza el 99,34 %. Todo el proceso se ejecutó en una única APU doméstica (AMD Ryzen AI Max+ 395, 128 GB) con la herramienta abierta Fucina.
 
-La principal advertencia práctica es que los ficheros requieren un fork específico de llama.cpp (etiqueta `thor-t-v1`) con soporte Vulkan, CUDA y CPU; no cargan en llama.cpp upstream. El modelo está orientado a generación de texto en inglés y se publica bajo licencia CC BY 4.0.
+Es relevante ahora porque demuestra que la cuantización ternaria con receta elaborada (múltiples planos, importance matrix, destilación del profesor) puede igualar a Q4_K_M en calidad ocupando un 60 % de sus bytes, lo que abre la inferencia de un MoE de 35B en portátiles con 8 GB de VRAM. La contrapartida es que los ficheros requieren un fork específico de llama.cpp (etiqueta `thor-t-v1`) y todavía no cargan en el llama.cpp upstream.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido de mezcla de expertos (MoE), cuantizado ternario (planos −1/0/+1) |
-| Parametros totales | 54.763.428.992 (≈54,76 B) |
-| Parametros activos | ≈3 B por token (según model card) |
+| Arquitectura | Transformer híbrido con mezcla de expertos (MoE), cuantizado a ternario (−1, 0, +1) con planos múltiples |
+| Parametros totales | 54.763.428.992 (≈54,8B según safetensors del repo; el nombre comercial indica 35B) |
+| Parametros activos | ≈3B por token (según model card) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Ternaria multi-plano (1 a 4 planos por tensor); variantes XS (1,946 bits/param), Root (1,993), S (2,135), M (2,949) |
-| Idiomas soportados | Inglés (en) |
+| Tipos de cuantizacion | Ternaria multi-plano: M (2,949 bits/param), S (2,135), XS (1,946), root (1,993); incluye cabeza MTP ternaria |
+| Idiomas soportados | en (inglés) |
 | Licencia | CC BY 4.0 |
-| Formato de pesos | GGUF (con cabecera de predicción multi-token ternaria integrada) |
+| Formato de pesos | GGUF (llama.cpp fork `thor-t-v1`; Vulkan, CUDA, CPU) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es Ornith-1.5-35B-A3B, un transformer híbrido de mezcla de expertos con aproximadamente 35.000 millones de parámetros nominales y unos 3.000 millones activos por token (el recuento real de safetensors asciende a 54,76 B). Sobre él se aplicó una cuantización ternaria post-entrenamiento: cada tensor se descompone en uno a cuatro planos de valores ternarios, y cada fichero incorpora una cabeza de predicción multi-token (MTP) ternaria que acelera la decodificación especulativa.
+El modelo base es Ornith-1.5-35B-A3B, un transformer híbrido de mezcla de expertos con unos 35B parámetros totales y aproximadamente 3B activos por token. Thor-T no reentrena el modelo: aplica una cuantización ternaria post-entrenamiento en la que casi todos los pesos se representan con valores −1, 0 o +1, almacenados como uno a cuatro planos ternarios por tensor según la variante. Cada fichero incorpora además una cabeza de predicción multi-token (MTP) también ternaria, que actúa como mecanismo de decodificación especulativa para acelerar la generación.
 
-El proceso se ejecutó con Fucina, una herramienta abierta de cuantización, sobre una única APU AMD Ryzen AI Max+ 395 con 128 GB de memoria. La receta incluye una matriz de importancia (imatrix) y una selección de hiperparámetros documentada en el paper adjunto; el checkpoint raíz (Root) es el punto de partida congelado del que derivan las tres tallas M, S y XS. No se dispone de información sobre el dataset de entrenamiento original de Ornith ni sobre si hubo RLHF o DPO en el modelo base.
+El proceso se construyó con Fucina, una herramienta de cuantización abierta del mismo autor, sobre una única APU AMD Ryzen AI Max+ 395 con 128 GB de memoria, partiendo de una conversión Q8_0 del modelo base que actúa como profesor. La receta combina una importance matrix pública, múltiples planos ternarios y una etapa de destilación desde el profesor; el paper adjunto documenta el método y todas las cifras. El repo incluye además un directorio `replay/` con las entradas de la réplica pública de la receta (el root empaquetado sin la cabeza MTP y las entradas densas de PTQ), que no son necesarias para ejecutar los modelos.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, con soporte de plantilla de chat.
-- Razonamiento y respuesta a preguntas de conocimiento general (evaluado en MMLU completo de 14.042 preguntas).
-- Decodificación especulativa mediante cabeza de predicción multi-token (MTP) integrada en cada fichero.
-- Ejecución en CPU, Vulkan y CUDA a través del fork de llama.cpp `thor-t-v1`.
-- Ajuste fino de compromiso calidad/velocidad mediante la elección entre las tallas M, S, XS y Root.
-- Compatibilidad con endpoints (etiqueta `endpoints_compatible`).
-- No se documentan capacidades de visión, audio, tool calling ni agentes multi-paso en la información disponible.
+- Generación de texto conversacional en inglés, heredada del modelo base Ornith-1.5-35B-A3B.
+- Razonamiento y conocimiento general evaluados vía MMLU completo (14.042 preguntas, zero-shot, puntuado por log-probabilidad).
+- Decodificación especulativa integrada mediante la cabeza MTP ternaria presente en todos los ficheros, con ganancias de throughput documentadas.
+- Inferencia en CPU, Vulkan y CUDA a través del fork de llama.cpp `thor-t-v1`.
+- Compatibilidad con endpoints (tag `endpoints_compatible` en Hugging Face).
+- Soporte de tool calling, agentes, visión, audio o modo thinking: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Despliegue en hardware de gama baja: el fichero XS (8,04 GiB) permite ejecutar un MoE de 54,76 B de parámetros totales en un portátil con 8 GB de VRAM (RTX 4060 Laptop) descargando parte de los expertos a RAM del sistema, con 66,1 tokens/s según la model card.
-- Inferencia en APU doméstica: sobre una AMD Ryzen AI Max+ 395 con 128 GB, el fichero M alcanza 77,53 tokens/s y conserva el 99,34 % del MMLU del profesor Q8_0, lo que lo hace apto para asistentes locales de propósito general.
-- Investigación en cuantización ternaria: los ficheros Root y los datos de replay permiten reproducir la receta y comparar el impacto de cada plano ternario sobre la calidad, con registros de benchmark públicos en el dataset Thor-T-bench.
-- Prototipado de chatbots en inglés con requisitos estrictos de memoria: el fichero S (8,82 GiB) iguala o supera al IQ2_XXS público y ofrece 84,41 tokens/s en APU, adecuado para entornos con presupuesto de VRAM limitado.
-- Evaluación comparativa de técnicas de compresión: sirve como referencia para medir la degradación de MMLU frente a cuantizaciones K-quant e I-quant del mismo profesor, con intervalos de confianza y pruebas de McNemar publicados.
-- Experimentación con decodificación especulativa: la cabeza MTP integrada permite estudiar el rendimiento de la predicción multi-token en llama.cpp sin añadir un modelo borrador externo.
-- Distribución de modelos en entornos con ancho de banda restringido: ficheros de 8 a 12 GiB frente a los 35,21 GiB del Q8_0 facilitan la descarga y el almacenamiento en clústeres pequeños.
+- Inferencia de un MoE de 35B en portátil con GPU de 8 GB: la variante XS (8,04 GiB) corre en una RTX 4060 Laptop con parte de los expertos en RAM del sistema (`-ncmoe 14`), alcanzando 66,1 tokens/s con MTP activado, lo que permite asistentes locales interactivos sin depender de la nube.
+- Despliegue en hardware de gama media con CUDA: la variante S (8,82 GiB, `-ncmoe 18`) ofrece 53,7 tokens/s en la misma RTX 4060 Laptop y mantiene el 96,59 % del profesor en MMLU, adecuada para generación de texto en producción con latencia baja.
+- Servicio de mayor calidad en estación de trabajo o APU: la variante M (12,19 GiB) iguala estadísticamente a Q4_K_M (diferencia de −0,10 puntos, p = 0,75) con un 60 % de sus bytes, útil cuando el presupuesto de VRAM es ajustado pero se exige calidad cercana al profesor.
+- Investigación sobre cuantización ternaria: el checkpoint root (8,24 GiB, 92,47 % del profesor) y el directorio `replay/` permiten reproducir la receta con Fucina (`fucina replay examples/thor/recipe_c.yaml`) y comparar variantes de planos.
+- Evaluación comparativa de cuantizaciones: los datos de Thor-T-bench y los tests pareados con McNemar exacto permiten contrastar Thor-T frente a Q2_K, IQ2_XXS, IQ1_M y TQ1_0 en el mismo motor Vulkan.
+- Prototipado en CPU sin GPU dedicada: el fork soporta CPU además de Vulkan y CUDA, de modo que los ficheros pueden ejecutarse en servidores sin acelerador para tareas de batch o validación.
 
 ## Benchmarks y rendimiento
 
-MMLU completo (14.042 preguntas, zero-shot, puntuado por log-probabilidad), misma build Vulkan del motor de lanzamiento (commit `4ed3ec488`, AMD Ryzen AI Max+ 395 APU), como porcentaje del profesor Q8_0:
+MMLU completo (14.042 preguntas, zero-shot, log-probabilidad), mismo motor Vulkan (commit `4ed3ec488`, APU Ryzen AI Max+ 395), como porcentaje de la conversión Q8_0 del modelo base (profesor):
 
-| Fichero | GiB | MMLU completo | % del profesor |
-|---|---:|---:|---:|
-| Profesor Q8_0 | 35,21 | 80,59 | 100 |
-| Q4_K_M | 20,36 | 80,16 | 99,46 |
-| **M** | 12,19 | **80,06** | **99,34** |
-| Q2_K | 12,19 | 77,68 | 96,39 |
-| **S** | 8,82 | **77,85** | **96,59** |
-| IQ2_XXS | 9,55 | 71,76 | 89,03 |
-| Root | 8,24 | 74,53 | 92,47 |
-| IQ1_M | 8,12 | 54,14 | 67,18 |
-| **XS** | 8,04 | **72,29** | **89,70** |
-| TQ1_0 ingenuo (un plano) | 7,87 | 25,97 | 32,23 |
+| Fichero | GiB | MMLU | % del profesor | Notas |
+|---|---:|---:|---:|---|
+| Profesor Q8_0 | 35,21 | 80,59 | 100 | referencia |
+| Q4_K_M | 20,36 | 80,16 | 99,46 | cuantización pública del mismo profesor |
+| **M** | 12,19 | **80,06** | **99,34** | vs Q2_K +2,38 pts (IC 95 % +1,77 a +2,98; p < 1e-10); vs Q4_K_M −0,10 pts (p = 0,75); vs profesor −0,53 pts (p = 0,062) |
+| Q2_K | 12,19 | 77,68 | 96,39 | |
+| IQ2_XXS | 9,55 | 71,76 | 89,03 | |
+| **S** | 8,82 | **77,85** | **96,59** | vs IQ2_XXS +6,09 pts (p < 1e-10); vs IQ1_M p < 1e-10; vs profesor −2,75 pts (p < 1e-10) |
+| root | 8,24 | 74,53 | 92,47 | checkpoint de investigación |
+| IQ1_M | 8,12 | 54,14 | 67,18 | |
+| **XS** | 8,04 | **72,29** | **89,70** | vs TQ1_0 ingenuo p < 1e-10; vs profesor −8,30 pts (p < 1e-10) |
+| TQ1_0 ingenuo (un plano) | 7,87 | 25,97 | 32,23 | sin receta |
 
-Comparaciones pareadas en el mismo motor (McNemar exacto): M frente a Q2_K +2,38 puntos (IC 95 % +1,77 a +2,98; p < 1e-10); M frente a Q4_K_M −0,10 puntos (IC por asignatura −1,20 a +1,19; p = 0,75); S frente a IQ2_XXS +6,09 puntos (p < 1e-10); XS frente a TQ1_0 ingenuo (p < 1e-10).
+Throughput con MTP activado (un token draft, 5 prompts × 256 tokens, greedy):
 
-Rendimiento (tokens/s): en APU con MTP activo, M 77,53, S 84,41, XS 95,42, Root 87,78; en portátil con RTX 4060 (8 GB, parte de los expertos en RAM, `-ncmoe` XS 14 / S 18 / M 22), M 39,2, S 53,7, XS 66,1, Root 61,3.
+| Fichero | Tokens/s en APU (Vulkan) | Tokens/s en RTX 4060 Laptop 8 GB (CUDA) |
+|---|---:|---:|
+| M | 77,53 | 39,2 |
+| S | 84,41 | 53,7 |
+| XS | 95,42 | 66,1 |
+| root | 87,78 | 61,3 |
 
-Advertencia del autor: el desarrollo de M y S utilizó el conjunto de test de MMLU, por lo que sus puntuaciones no son estimaciones independientes y los intervalos y valores p son nominales.
+Advertencia del autor: el desarrollo de M y S utilizó el conjunto de test de MMLU, por lo que sus puntuaciones no son estimaciones independientes y los intervalos y p-valores son nominales; no se reclama equivalencia formal con Q4_K_M.
 
 ## Requisitos de hardware
 
-- VRAM estimada: XS ≈8,04 GiB, Root ≈8,24 GiB, S ≈8,82 GiB, M ≈12,19 GiB de pesos; con caché KV y contexto hay que añadir margen adicional.
-- GPU recomendadas: RTX 4060 Laptop (8 GB) funciona con XS, S y M descargando expertos a RAM del sistema (`-ncmoe`); APU AMD Ryzen AI Max+ 395 (128 GB) ejecuta las cuatro tallas con MTP.
-- Cabe en GPU de consumo: sí, en tarjetas de 8 GB o más con `-ncmoe`; en 12 GB o más el fichero M puede residir íntegramente.
-- Opciones de despliegue: exclusivamente el fork `Anjielon/llama.cpp` con etiqueta `thor-t-v1` (Vulkan, CUDA, CPU); no carga en llama.cpp upstream. No se documenta soporte para vLLM, TGI u Ollama.
-- Throughput: 77,53–95,42 tokens/s en APU según talla con MTP y un token borrador; 39,2–66,1 tokens/s en RTX 4060 Laptop de 8 GB.
-- Almacenamiento: repositorio de 49,2 GB; se recomienda descargar un único fichero.
+- VRAM/memoria estimada: entre 8,04 GiB (XS) y 12,19 GiB (M) para los pesos; el root ocupa 8,24 GiB y S 8,82 GiB. El repo completo suma 49,2 GB, pero solo se descarga un fichero.
+- GPU recomendadas: RTX 4060 Laptop (8 GB) validada con CUDA y parte de los expertos en RAM del sistema (`-ncmoe` XS 14, S 18, M 22); APU AMD Ryzen AI Max+ 395 con 128 GB validada con Vulkan.
+- Cabe en GPU de consumo: sí; XS y S en 8 GB con offload parcial de expertos, M requiere más memoria o mayor offload a RAM.
+- Opciones de despliegue: exclusivamente el fork `Anjielon/llama.cpp` etiqueta `thor-t-v1` (Vulkan, CUDA, CPU); no carga en llama.cpp upstream. Compatible con endpoints según los tags.
+- Latencia y throughput: 95,42 tokens/s (XS) a 77,53 tokens/s (M) en la APU con MTP; 66,1 a 39,2 tokens/s en la RTX 4060 Laptop. Sin MTP, los detalles están en el paper y en los logs de Thor-T-bench.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | MMLU (relativo) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Thor-T-35B-A3B M | 54,76 B totales / ≈3 B activos | no disponible | 99,34 % del Q8_0 (12,19 GiB) | CC BY 4.0 | GGUF, fork llama.cpp |
-| Ornith-1.5-35B-A3B (base) | ≈35 B nominales | no disponible | referencia del profesor | no disponible | Hugging Face |
-| Q4_K_M del mismo profesor | 54,76 B totales | no disponible | 99,46 % (20,36 GiB) | según modelo base | GGUF estándar |
-| IQ2_XXS del mismo profesor | 54,76 B totales | no disponible | 89,03 % (9,55 GiB) | según modelo base | GGUF estándar |
-| IQ1_M del mismo profesor | 54,76 B totales | no disponible | 67,18 % (8,12 GiB) | según modelo base | GGUF estándar |
+| Modelo | Parámetros | Formato/cuantización | Tamaño | MMLU | Licencia |
+|---|---|---|---:|---:|---|
+| Thor-T-35B-A3B M | ≈35B (3B activos) | Ternaria multi-plano, GGUF | 12,19 GiB | 80,06 | CC BY 4.0 |
+| Q4_K_M del mismo profesor | ≈35B (3B activos) | K-quant 4 bits, GGUF | 20,36 GiB | 80,16 | según modelo base |
+| Q2_K del mismo profesor | ≈35B (3B activos) | K-quant 2 bits, GGUF | 12,19 GiB | 77,68 | según modelo base |
+| IQ2_XXS del mismo profesor | ≈35B (3B activos) | I-quant 2 bits, GGUF | 9,55 GiB | 71,76 | según modelo base |
+| IQ1_M (construido por el autor) | ≈35B (3B activos) | I-quant 1 bit, GGUF | 8,12 GiB | 54,14 | según modelo base |
+| TQ1_0 ingenuo | ≈35B (3B activos) | Ternaria de un plano, GGUF | 7,87 GiB | 25,97 | según modelo base |
+
+La comparación se limita a cuantizaciones del mismo profesor porque no se dispone de datos de otros modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Los ficheros no cargan en llama.cpp upstream; requieren el fork `thor-t-v1`, lo que limita la portabilidad y el soporte de herramientas del ecosistema.
-- El desarrollo de M y S usó el conjunto de test de MMLU, por lo que sus resultados no son estimaciones independientes; los intervalos y valores p son nominales y no hay reclamación de equivalencia con Q4_K_M.
-- Solo se declara soporte de inglés; no hay evidencia de capacidades multilingües.
-- No se documentan capacidades de tool calling, agentes, visión ni audio.
-- Riesgo de alucinación inherente al modelo base, no cuantificado en la información disponible.
-- La licencia CC BY 4.0 permite uso comercial con atribución, pero las condiciones del modelo base Ornith-1.5-35B-A3B no se detallan en la información proporcionada.
-- El rendimiento depende del motor fork y de la configuración `-ncmoe`; sin ella, las tallas mayores no caben en GPUs de 8 GB.
-- Repositorio con solo 7 descargas y 0 likes: ecosistema y validación comunitaria muy limitados.
-- La cabeza MTP ternaria puede introducir degradación adicional en tareas distintas de las evaluadas.
+- Solo soporta inglés (`language: en`); no se documentan capacidades multilingües.
+- Longitud de contexto no disponible en la información proporcionada.
+- Requiere un fork no upstream de llama.cpp (`thor-t-v1`); no funciona en llama.cpp estándar ni, presumiblemente, en herramientas que dependan de él (Ollama, vLLM, TGI) sin adaptación.
+- Las puntuaciones de M y S están contaminadas por selección sobre el test de MMLU: no son estimaciones independientes y los p-valores son nominales.
+- XS pierde un 10,30 % respecto al profesor en MMLU (−8,30 puntos) y no es adecuado cuando se exige fidelidad alta.
+- Riesgo de alucinación y sesgos del modelo base: no cuantificado en la información disponible.
+- Licencia CC BY 4.0: permite uso comercial con atribución, pero conviene verificar las condiciones del modelo base Ornith-1.5-35B-A3B, de la que depende.
+- El rendimiento medido se limita a dos plataformas concretas (APU Vulkan y RTX 4060 Laptop CUDA); no hay datos de throughput en A100/H100.
+- La decodificación especulativa depende de la cabeza MTP ternaria; su comportamiento fuera del fork no está documentado.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Anjielon/Thor-T-35B-A3B
 - Paper (PDF): https://huggingface.co/Anjielon/Thor-T-35B-A3B/blob/main/Thor-T-35B-A3B-paper.pdf
-- Fork de llama.cpp (rama `thor-t-v1`): https://github.com/Anjielon/llama.cpp/tree/thor-t-v1
 - Fucina (herramienta de cuantización): https://github.com/Anjielon/fucina
-- Dataset de benchmarks y registros: https://huggingface.co/datasets/Anjielon/Thor-T-bench
+- Fork de llama.cpp, rama `thor-t-v1`: https://github.com/Anjielon/llama.cpp/tree/thor-t-v1
+- Datos y logs de benchmarks: https://huggingface.co/datasets/Anjielon/Thor-T-bench
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B

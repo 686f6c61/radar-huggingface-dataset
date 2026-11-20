@@ -2,97 +2,97 @@
 
 ## Resumen
 
-basal-2.0-max es un modelo de decisión tipada (typed-decision model) para polaco e inglés desarrollado por Remek. No es un modelo generativo conversacional al uso: recibe un *estado* (un mensaje, un documento, pasajes recuperados, una traza de agente o una página web en JSON) y responde a una pregunta tipada sobre ese estado devolviendo una probabilidad calibrada para cada respuesta permitida en un único forward pass, sin generar texto. Las preguntas pueden ser de tipo `choice`, `noul` (sí/no), `score`, `multi`, `act` o `tool`.
+basal-2.0-max es un modelo de decisión tipada (typed-decision) desarrollado por Remek, construido a partir de un ajuste fino de speakleash/Bielik-PL-11B-v3.0-Instruct. A diferencia de los modelos generativos convencionales, no produce texto libre: lee un estado (un mensaje, un documento, pasajes recuperados, una traza de agente o una página web en JSON) y responde a una pregunta tipada devolviendo una probabilidad calibrada para cada respuesta permitida en un único forward pass. Las clases se describen en la propia petición, de modo que un solo modelo cubre múltiples tareas sin reentrenamiento.
 
-El modelo se construye mediante fine-tuning sobre speakleash/Bielik-PL-11B-v3.0-Instruct, un modelo polaco de 11B parámetros, y se entrena de forma incremental a partir de checkpoints anteriores de la familia basal. Es el miembro más preciso de la familia basal-2.0, que también incluye basal-2.0-mini (1,5B) y basal-2.0 (4,5B). Su relevancia radica en que, al describir las clases en la propia petición, un único modelo cubre múltiples tareas de clasificación y enrutamiento sin reentrenamiento, con garantías de calibración que permiten fijar umbrales de error (`max_error`) y derivar casos inciertos a revisión humana.
+Con 11.167.748.096 parámetros (~11B), es el miembro más preciso de la familia basal-2.0, que se completa con basal-2.0-mini (1,5B) y basal-2.0 (4,5B). Su relevancia actual radica en que ofrece decisiones estructuradas y calibradas —con umbrales de error certificados y derivación a revisión humana— para pipelines de enrutamiento, RAG, evaluación de respuestas y selección de herramientas en agentes, en lugar de generación abierta sujeta a alucinación.
 
-La arquitectura subyacente es un transformer decoder-only de 11.167.748.096 parámetros, distribuido en safetensors con licencia Apache 2.0, y con variantes publicadas en FP8, GGUF y MLX-8bit para distintos entornos de despliegue.
+El modelo está orientado a polaco e inglés, se distribuye bajo licencia Apache 2.0 y cuenta con variantes de cuantización FP8, GGUF y MLX-8bit para distintos entornos de despliegue.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (heredada de Bielik-PL-11B-v3.0-Instruct) |
-| Parámetros totales | 11.167.748.096 |
-| Parámetros activos | no disponible (no es MoE) |
+| Arquitectura | Transformer decoder-only (derivado de Bielik-PL-11B-v3.0-Instruct); cabecera de decisión tipada sobre estados |
+| Parametros totales | 11.167.748.096 (~11B) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | FP8 (NVIDIA Hopper y Blackwell), GGUF Q8_0 y Q5_K_M, MLX-8bit |
+| Tipos de cuantizacion | FP8 (NVIDIA Hopper y Blackwell), GGUF (Q8_0 y Q5_K_M), MLX-8bit (Apple Silicon) |
 | Idiomas soportados | polaco (pl), inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (principal), GGUF, MLX-8bit, FP8 |
+| Formato de pesos | safetensors (repo de 22,3 GB); variantes GGUF y MLX |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de speakleash/Bielik-PL-11B-v3.0-Instruct, un transformer decoder-only de 11B parámetros orientado a polaco, y se entrena adicionalmente a partir de checkpoints previos de basal. La innovación principal no está en la arquitectura del backbone, sino en la formulación de la tarea: en lugar de generar texto libre, el modelo produce una distribución de probabilidad sobre un conjunto de opciones definidas en la petición, en un solo forward pass. Esto elimina el riesgo de respuestas fuera del conjunto permitido y permite calibrar las probabilidades.
+El modelo parte de Bielik-PL-11B-v3.0-Instruct, un transformer decoder-only de ~11B parámetros, y se entrena adicionalmente a partir de checkpoints previos de la familia basal. La innovación principal no reside en el backbone sino en la interfaz de inferencia: en lugar de generar tokens, el modelo evalúa un estado y una pregunta tipada (`choice`, `noul` para sí/no, `score`, `multi`, `act`, `tool`) y emite una distribución de probabilidad sobre las opciones permitidas en un solo forward pass. Esto garantiza que la respuesta nunca caiga fuera del conjunto de opciones definido por el usuario.
 
-El entrenamiento incluye un proceso de calibración específico que sostiene la funcionalidad `max_error` en preguntas de tipo `act` y `tool`. La model card indica que la calibración se ajustó con las opciones mostradas solo por su descripción (`option_keys: "hide"`); si se muestran las claves, la respuesta se marca como `"calibration": "unvalidated"`. No se detalla en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se emplearon RLHF o DPO.
+El entrenamiento incorpora calibración explícita: las probabilidades están ajustadas para soportar umbrales de error (`max_error`, disponible en preguntas `act` y `tool`) y decisiones por coste esperado (`costs`). La calibración se ajustó con las claves de opción ocultas (`option_keys: hide`); cuando se muestran las claves, el modelo marca la respuesta como `calibration: unvalidated`. No se dispone de datos sobre volumen de tokens de entrenamiento, composición del dataset ni uso de RLHF/DPO en la información proporcionada.
 
 ## Capacidades
 
-- Clasificación y enrutamiento: asigna un estado a una de las opciones descritas por el usuario mediante preguntas `choice`.
-- Verificación sí/no: comprobaciones de reglas y políticas con preguntas `noul`.
-- Puntuación: genera puntuaciones de urgencia y riesgo mediante preguntas `score`.
-- Selección múltiple: preguntas `multi` para elegir varias opciones sobre un mismo estado.
-- Decisiones de agente: preguntas `act` que seleccionan la siguiente acción, con acción de `defer` para derivar a humano.
-- Selección de herramientas: preguntas `tool` sobre definiciones de herramientas OpenAI o MCP; elige la herramienta, no sus argumentos.
-- RAG y documentos largos: evalúa si una respuesta está presente o si un pasaje recuperado es relevante.
-- Evaluación de respuestas (judging): compara y juzga respuestas generadas por otros modelos.
-- Multilingüe pl/en: tanto el estado como la pregunta pueden estar en polaco o en inglés.
-- Probabilidades calibradas: cada respuesta incluye probabilidad por opción, clave elegida y nivel de confianza.
-- Umbral de error: `max_error` en preguntas `act` y `tool` para controlar la tasa de error certificada.
-- No genera texto libre ni mantiene conversaciones; solo elige entre opciones dadas.
+- Decisión tipada con probabilidades calibradas por opción: `choice` (selección entre alternativas), `noul` (sí/no), `score` (puntuación), `multi` (selección múltiple), `act` (acción con costes y derivación) y `tool` (selección de herramienta).
+- Enrutamiento y clasificación de mensajes y documentos entre opciones definidas en la petición.
+- Verificación de reglas y políticas mediante preguntas de sí/no.
+- Puntuación de urgencia y riesgo.
+- Preguntas sobre documentos largos y pasajes recuperados (¿está la respuesta?, ¿es relevante?), orientado a pipelines RAG.
+- Evaluación de respuestas (judging) de otros modelos o sistemas.
+- Selección de herramienta en agentes a partir de definiciones OpenAI o MCP (elige la herramienta, no sus argumentos).
+- Triage con umbral de confianza: preguntas `act` con acción `defer` y `max_error` derivan casos inciertos a revisión humana.
+- Multilingüe polaco-inglés: tanto el estado como la pregunta pueden estar en cualquiera de los dos idiomas.
+- Sin generación de texto libre ni modo conversacional.
 
 ## Casos de uso
 
-- Enrutamiento de tickets de soporte: el modelo clasifica un mensaje de cliente en departamentos (tarjetas, banca online, préstamos) con una pregunta `choice`, devolviendo la probabilidad de cada departamento para priorizar la cola.
-- Triaje con derivación a humano: usando una pregunta `act` con acción `defer` y `max_error: 0.05`, los casos por debajo del umbral de confianza se envían a un agente humano, lo que reduce el riesgo de decisiones automáticas erróneas.
-- Control de políticas y reglas: preguntas `noul` para verificar si un documento cumple una política concreta (por ejemplo, si un cliente no puede acceder a un servicio), con probabilidad calibrada para auditar el cumplimiento.
-- Decisiones en pipelines RAG: preguntas sobre pasajes recuperados para determinar si la respuesta está presente o si el contexto es relevante antes de invocar a un modelo generativo, lo que ahorra coste y latencia.
-- Selección de herramientas en agentes: con definiciones OpenAI o MCP, una pregunta `tool` elige la herramienta adecuada para la siguiente acción del agente, con probabilidad de acierto y opción de derivar si la confianza es baja.
-- Puntuación de urgencia y riesgo: preguntas `score` para asignar niveles de urgencia a incidencias o riesgo a solicitudes, útiles en colas de atención y sistemas de alerta.
-- Evaluación automática de respuestas: preguntas `choice` o `score` para juzgar la calidad de respuestas de otros modelos en pipelines de evaluación, con probabilidades calibradas para agregar métricas.
-- Moderación y triaje de contenido: clasificación de mensajes en categorías descritas dinámicamente, con derivación a revisión humana cuando la confianza es insuficiente.
+- Enrutamiento de tickets de soporte: una pregunta `choice` con las categorías como criterios (por ejemplo, tarjetas, banca online, préstamos) clasifica el mensaje del cliente en un solo forward pass, con probabilidad por departamento y confianza asociada.
+- Verificación de políticas en flujos automatizados: preguntas `noul` comprueban si un documento cumple una regla concreta (por ejemplo, si una solicitud contiene los datos obligatorios), devolviendo una probabilidad calibrada en lugar de texto que requiera parseo.
+- Triage con derivación a humanos: una pregunta `act` con acción `defer`, costes de error y `max_error: 0.05` devuelve `deferred: true` cuando la confianza cae por debajo del umbral certificado, lo que permite automatizar solo los casos seguros en atención al cliente o gestión de reclamaciones.
+- Decisiones en pipelines RAG: preguntas sobre si la respuesta está presente en los pasajes recuperados o si un pasaje es relevante permiten filtrar y validar antes de invocar a un modelo generativo, reduciendo respuestas sin fundamento.
+- Selección de herramienta en agentes: una pregunta `tool` sobre definiciones OpenAI o MCP elige la herramienta adecuada para el siguiente paso del agente, sin generar los argumentos.
+- Evaluación automática de respuestas: preguntas `score` o `choice` puntúan la calidad o corrección de salidas de otros modelos en procesos de evaluación y comparación.
+- Puntuación de riesgo y urgencia: preguntas `score` asignan niveles de urgencia a mensajes entrantes para priorizar colas de atención.
 
 ## Benchmarks y rendimiento
 
-La model card menciona cifras para Werdykt, JDI, LEK, PL-Holdout y PL-Real frente a basal-1.5, y remite a las notas de evaluación, pero los valores concretos no están incluidos en la información proporcionada. No se han publicado resultados numéricos de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita; con 11,17B parámetros, en FP16 se requieren aproximadamente 22,3 GB de pesos, y en FP8 en torno a 11-12 GB, sin contar overhead de activaciones y caché KV.
-- GPU recomendadas: el motor basal requiere GPU NVIDIA; la build cu128 de torch necesita driver para CUDA 12.8 o superior. Las variantes FP8 están pensadas para NVIDIA Hopper y Blackwell (por ejemplo, H100, B300, DGX Spark con build cu130).
-- GPU de consumo: no se confirma compatibilidad con GPUs de consumo en la información disponible; la variante GGUF Q5_K_M y Q8_0 permite despliegue en llama.cpp y Ollama, lo que abre la puerta a GPUs con menos VRAM, pero no se especifican requisitos mínimos.
-- Opciones de despliegue: motor basal v2.0.0 o superior (`basal-serve`), con cliente Python incluido; variantes GGUF para llama.cpp y Ollama; variante MLX-8bit para Apple Silicon; FP8 para Hopper y Blackwell.
+- VRAM estimada para inferencia: no disponible de forma explícita; con ~11B parámetros, los pesos en FP16/BF16 ocupan aproximadamente 22 GB, mientras que las variantes FP8, GGUF Q8_0/Q5_K_M y MLX-8bit reducen el requisito de forma proporcional.
+- GPU recomendadas: NVIDIA con soporte CUDA 12.8 o superior para la build cu128 de torch; FP8 requiere NVIDIA Hopper (H100) o Blackwell (B300); DGX Spark y B300 usan la build cu130 según la documentación del motor.
+- Cabe en GPU de consumo: no disponible; las variantes GGUF Q5_K_M y MLX-8bit están pensadas para llama.cpp/Ollama y Apple Silicon respectivamente, lo que sugiere viabilidad en hardware de menor capacidad, pero no se confirman modelos concretos.
+- Opciones de despliegue: motor propio basal (`basal-serve`, modo `fast`), con endpoint `/v1/systemone`; variantes GGUF para Ollama y llama.cpp; MLX-8bit para Apple Silicon; el tag `text-generation-inference` y `endpoints_compatible` figura en los metadatos de Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| basal-2.0-max | 11B | no disponible | Decisión tipada calibrada (pl/en) | Apache 2.0 | Hugging Face, variantes FP8/GGUF/MLX |
-| basal-2.0 (4.5B) | 4,5B | no disponible | Decisión tipada calibrada, modo thinking experimental | Apache 2.0 | Hugging Face |
-| basal-2.0-mini | 1,5B | no disponible | Decisión tipada calibrada, más rápido | Apache 2.0 | Hugging Face |
-| Bielik-PL-11B-v3.0-Instruct | 11B | no disponible | Generación de texto instructiva (pl) | no disponible | Hugging Face |
+| basal-2.0-max | ~11B | no disponible | Decisión tipada calibrada | Apache 2.0 | Hugging Face (FP8, GGUF, MLX) |
+| basal-2.0 | 4,5B | no disponible | Decisión tipada; modo thinking experimental | Apache 2.0 | Hugging Face |
+| basal-2.0-mini | 1,5B | no disponible | Decisión tipada, el más rápido | Apache 2.0 | Hugging Face |
+| Bielik-PL-11B-v3.0-Instruct | ~11B | no disponible | Generación de texto instruct | no disponible | Hugging Face (modelo base) |
 
-La comparación con modelos de clasificación o enrutamiento de otros proveedores no está disponible en la información proporcionada.
+La comparación con modelos de decisión de otros autores no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No genera texto ni mantiene conversaciones: solo elige entre las opciones proporcionadas; no sirve como chatbot ni como modelo de redacción.
-- No conoce hechos que no estén en el estado suministrado; cualquier decisión sobre información externa requiere incluirla en la petición.
-- Riesgo de calibración no validada si se muestran las claves de las opciones (`option_keys` distinto de `"hide"`); en ese caso la respuesta se marca como `"calibration": "unvalidated"`.
-- En preguntas `act`, un coste de error muy alto puede provocar `defer` por coste esperado antes de aplicar `max_error`.
-- Idiomas limitados a polaco e inglés; no se garantiza calidad en otros idiomas.
-- No apto para decisiones con consecuencias graves para personas sin revisión humana, según la propia model card.
-- No se detallan sesgos conocidos, composición del dataset de entrenamiento ni resultados de benchmarks en la información disponible.
-- La licencia Apache 2.0 permite uso comercial, pero debe verificarse la licencia del modelo base Bielik-PL-11B-v3.0-Instruct, no disponible en la información proporcionada.
+- No escribe texto ni mantiene conversaciones: solo elige entre las opciones proporcionadas en la petición.
+- No responde con hechos que no estén presentes en el estado suministrado.
+- No debe usarse para decisiones con consecuencias graves para personas sin revisión humana.
+- La calibración solo está validada con las claves de opción ocultas (`option_keys: hide`); con las claves visibles, la respuesta se marca como `calibration: unvalidated`.
+- `max_error` solo funciona en preguntas de tipo `act` y `tool`.
+- Un coste de error muy alto en preguntas `act` provoca derivación por coste esperado antes de aplicar `max_error`; se recomienda mantener el coste de error moderado.
+- Idiomas limitados a polaco e inglés.
+- Riesgo de alucinación: no aplica en el sentido generativo, pero las probabilidades pueden estar mal calibradas fuera de la distribución de entrenamiento; no se dispone de datos sobre sesgos conocidos.
+- Licencia Apache 2.0 permite uso comercial; no se indican restricciones adicionales en la información disponible.
+- Longitud de contexto no documentada, lo que dificulta planificar el uso con documentos largos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Remek/basal-2.0-max
-- Variante GGUF: https://huggingface.co/Remek/basal-2.0-max-GGUF
-- Colección basal-2.0: https://huggingface.co/collections/Remek/basal-20
+- Colección basal-2.0: https://huggingface.co/collections/Remek/basal-20-6acd1712a8e443c86cd576fc
 - Modelo base: https://huggingface.co/speakleash/Bielik-PL-11B-v3.0-Instruct
+- basal-2.0-mini: https://huggingface.co/Remek/basal-2.0-mini
+- basal-2.0 (4.5B): https://huggingface.co/Remek/basal-2.0-4.5B
 - Repositorio del motor de inferencia: https://github.com/rkinas/basal
 - Documentación de hardware: https://github.com/rkinas/basal/blob/v2.5.0/docs/HARDWARE.md
-- Sitio web del proyecto: https://basal.si5.pl/
+- Sitio web: https://basal.si5.pl/

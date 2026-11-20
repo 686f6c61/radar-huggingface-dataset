@@ -2,107 +2,105 @@
 
 ## Resumen
 
-Frisky 90M es un modelo de lenguaje de 90.128.896 parametros entrenado desde cero por el desarrollador independiente netsrik (usuario de Hugging Face) utilizando DeepJ, un framework de entrenamiento e inferencia escrito en Java que se ejecuta sobre GPU de Apple (Metal). El modelo ha completado tres fases: preentrenamiento base, mid-training y un ajuste fino de instrucciones del tipo *response-only*, lo que lo situa como un pequeno asistente conversacional mas que como un modelo base puro.
+Frisky 90M es un modelo de lenguaje de 90.128.896 parámetros entrenado desde cero por el desarrollador independiente netsrik utilizando DeepJ, una biblioteca de redes neuronales escrita en Java con soporte opcional de aceleración por Apple Metal. El modelo emplea la arquitectura DeepJ Prism Transformer, una variante propia que combina atención de bajo rango sobre Q/KV con embeddings rotatorios, RMSNorm y SwiGLU. Completó tres fases de entrenamiento: preentrenamiento base, mid-training y ajuste fino de instrucciones response-only.
 
-Su interes no reside en el rendimiento absoluto, sino en la combinacion de tres factores: es un modelo de escala muy reducida (compatible con hardware de consumo e incluso con entornos de borde), emplea una arquitectura propia denominada DeepJ Prism Transformer con atencion Q/KV de bajo rango, y todo su ciclo de vida (tokenizador, checkpoint y runtime) gira en torno al ecosistema DeepJ, no al de Hugging Face Transformers. El checkpoint se distribuye en un formato binario propietario (`model.dj`) que no es cargable directamente con la libreria Python de Transformers.
+El modelo se distribuye exclusivamente en los formatos binarios propietarios de DeepJ (`model.dj` y `tokenizer.bpe`), lo que lo hace incompatible con la pila estándar de Python (Transformers, vLLM, llama.cpp). Su uso requiere la librería DeepJ 1.0.0 y un entorno Java (JDK 20 o superior para la interfaz gráfica). El repositorio ocupa 0,4 GB y acumula 1.182 descargas en Hugging Face.
 
-Con 10 capas, tamano oculto de 768, 12 cabezas de atencion y un vocabulario de 16.384 tokens, Frisky se posiciona como una pieza experimental y didactica: sirve para estudiar arquitecturas de atencion de bajo rango, para validar el tooling de DeepJ y para prototipar en Java, pero el propio autor advierte que su calidad tras el post-entrenamiento no ha sido establecida mediante benchmarks rigurosos. La longitud de contexto no se especifica en la informacion disponible.
+Su relevancia es fundamentalmente experimental y educativa: demuestra que es viable entrenar y ejecutar un transformer completo desde cero en hardware de Apple, con una toolchain propia en Java. No está pensado para producción ni para decisiones consecuentes, tal y como advierte el propio autor.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | DeepJ Prism Transformer (transformer decoder con atencion Q/KV de bajo rango, RoPE, RMSNorm y SwiGLU) |
+| Arquitectura | DeepJ Prism Transformer (atención de bajo rango Q/KV, RoPE, RMSNorm, SwiGLU) |
 | Parametros totales | 90.128.896 |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible (el repositorio distribuye un unico checkpoint en formato propietario) |
-| Idiomas soportados | Ingles (en) |
-| Licencia | MIT (aplicada a los pesos del modelo, no a los datasets de origen) |
-| Formato de pesos | `model.dj` (formato binario versionado de DeepJ); tokenizador en `tokenizer.bpe`. No compatible con safetensors, GGUF ni con la libreria Python Transformers |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (ventana de entrenamiento no especificada; el autor menciona gestión de caché KV por petición y "rolling generation" al llenarse la ventana) |
+| Tipos de cuantizacion | no disponible (solo se distribuyen pesos en formato nativo `model.dj`) |
+| Idiomas soportados | inglés (`en`) |
+| Licencia | MIT (aplica a los pesos, no a los datasets upstream) |
+| Formato de pesos | `model.dj` (binario propietario de DeepJ); tokenizador `tokenizer.bpe` |
 | Capas | 10 |
 | Tamano oculto | 768 |
 | Cabezas de atencion | 12 |
 | Rango Q | 384 |
 | Rango KV | 192 |
-| Vocabulario | 16.384 tokens |
-| Tamano del repositorio | 0,4 GB |
-| Libreria de inferencia | DeepJ 0.9.5-alpha o superior (Java, JDK 20+) |
+| Vocabulario | 16.384 tokens (BPE) |
+| Libreria | deepj 1.0.0 |
+| Tamano del repo | 0,4 GB |
 
 ## Arquitectura y entrenamiento
 
-Frisky emplea la arquitectura DeepJ Prism Transformer, una variante de transformer decoder que sustituye la atencion completa por una atencion Q/KV de bajo rango: las proyecciones de consulta se factorizan a rango 384 y las de clave/valor a rango 192, lo que reduce el coste de las matrices de atencion manteniendo 12 cabezas sobre un espacio oculto de 768. La normalizacion se realiza con RMSNorm, la no linealidad del bloque feed-forward es SwiGLU y las posiciones se codifican mediante embeddings rotatorios (RoPE). Una caracteristica destacable de implementacion es que el modelo recalcula el contexto completo para cada token generado, es decir, no utiliza una cache KV persistente: esto simplifica el runtime pero implica que el coste por token crece con la longitud de la secuencia.
+Frisky 90M es un transformer decoder-only de 10 capas con tamaño oculto 768 y 12 cabezas de atención. La arquitectura DeepJ Prism introduce atención de bajo rango: las proyecciones Q y KV se factorizan con rangos 384 y 192 respectivamente, lo que reduce el coste computacional y de memoria frente a atención completa. Emplea embeddings rotatorios (RoPE) para codificar posiciones, RMSNorm para normalización y SwiGLU como activación en las capas feed-forward. La generación usa una caché KV con ámbito de petición; por defecto DeepJ la reconstruye cuando la ventana de contexto se desplaza, y existe un modo opcional de "rolling generation" que mantiene la decodificación incremental tras llenarse la ventana, aunque el autor aclara que cambia el comportamiento de la atención tras la evicción y no amplía la capacidad de contexto entrenada.
 
-El entrenamiento se desarrollo en tres etapas. El preentrenamiento base utilizo FineWeb-Edu; el mid-training y el ajuste fino de instrucciones emplearon mezclas derivadas de SmolTalk, MMLU, GSM8K y ARC. El ajuste final es de tipo *response-only*, lo que significa que la perdida se calcula unicamente sobre los tokens de la respuesta del asistente. Todo el proceso se ejecuto sobre GPU de Apple, lo que refuerza el caracter experimental del proyecto: no hay constancia en la informacion disponible de tecnicas de RLHF, DPO ni de decodificacion especulativa.
+El entrenamiento se realizó en tres etapas. El preentrenamiento base usó FineWeb-Edu. El mid-training y el ajuste fino de instrucciones emplearon mezclas derivadas de SmolTalk, MMLU, GSM8K y ARC. El ajuste de instrucciones es response-only, es decir, la pérdida se calcula únicamente sobre los tokens de respuesta. No se documenta el número total de tokens de entrenamiento, la composición exacta de las mezclas ni si hubo RLHF o DPO. Tampoco se detalla el hardware concreto más allá de "una GPU de Apple".
 
 ## Capacidades
 
-- Generacion de texto en ingles: es la funcion principal del modelo, con formato de prompt conversacional aplicado automaticamente por el runtime de DeepJ.
-- Respuesta a instrucciones: el ajuste *response-only* le permite mantener dialogos de un turno o varios, aunque sin garantias de calidad verificada.
-- Razonamiento basico y matematicas elementales: expuesto a GSM8K y MMLU durante el mid-training, lo que le otorga cierta familiaridad con problemas escolares y de opcion multiple, siempre a escala de un modelo de 90M.
-- Generacion de codigo elemental: contemplada en el material de entrenamiento (SmolTalk incluye ejemplos de codigo), aunque el autor advierte explicitamente de que puede producir codigo incorrecto.
-- Capacidades multilingues: no, el modelo esta etiquetado unicamente para ingles.
-- Tool calling / function calling: no disponible; no se menciona soporte alguno en la informacion proporcionada.
-- Uso como agente y razonamiento multi-paso: no disponible; no hay indicios de entrenamiento especifico para agentes.
-- Modo *thinking* explicito, vision o audio: no disponible.
-- Integracion con el ecosistema Java: es la capacidad diferencial real, ya que el modelo se consume mediante la API `DeepJChat` y puede ejecutarse con la interfaz de chat de escritorio incluida en el repositorio de DeepJ.
+- Generación de texto autoregresiva en inglés, con decodificación por muestreo (temperatura, top-k, semilla, penalización de repetición).
+- Respuesta a instrucciones conversacionales tras el ajuste fino response-only, con formato de prompt propio guardado en el checkpoint.
+- Razonamiento básico y resolución de problemas aritméticos elementales, derivado del entrenamiento con GSM8K y MMLU.
+- Conocimiento factual de nivel básico procedente de FineWeb-Edu y MMLU.
+- Generación de código a nivel introductorio (el autor advierte explícitamente que puede generar código incorrecto).
+- Interfaz de chat de escritorio (JavaFX) y CLI incluidas en DeepJ, con streaming de texto generado.
+- Soporte de caché KV por petición y modo opcional de rolling generation para decodificación incremental.
+- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo de razonamiento extendido.
 
 ## Casos de uso
 
-- Prototipado de aplicaciones Java con IA generativa: cualquier equipo que trabaje en JVM puede integrar Frisky mediante la dependencia Maven `io.github.kirstenali:deepj` y la clase `DeepJChat`, sin necesidad de montar un servidor Python ni de convertir pesos a otros formatos.
-- Entorno de aprendizaje de arquitecturas transformer: al ser un modelo de 10 capas y 90M de parametros con codigo de runtime disponible, resulta adecuado para inspeccionar como funciona la atencion de bajo rango sobre Q y KV y comparar su comportamiento con atencion completa.
-- Desarrollo y prueba del propio framework DeepJ: sirve como modelo de referencia para validar cambios en el formato `model.dj`, en el tokenizador BPE versionado o en la interfaz de chat de escritorio.
-- Aplicaciones de borde y entornos con recursos muy limitados: con un repositorio de 0,4 GB, el modelo es candidato para demos locales en portatiles, mini-PC o dispositivos con GPU integrada, siempre que se acepte su calidad limitada.
-- Pruebas de integracion y CI de pipelines de generacion de texto: por su tamano reducido y su licencia MIT, puede actuar como modelo de humo en *test suites* que verifiquen el cableado de un sistema mayor antes de sustituirlo por un modelo de produccion.
-- Generacion de respuestas cortas en ingles para tareas de bajo riesgo: por ejemplo, autocompletado de campos, generacion de textos de relleno en maquetas o asistentes internos no criticos, siempre con supervision humana.
-- Ejercicios docentes sobre ajuste de instrucciones: las tres fases documentadas (preentrenamiento, mid-training y SFT *response-only*) constituyen un caso de estudio reproducible para cursos de aprendizaje automatico.
+- Experimentación educativa con transformers: sirve para estudiar el ciclo completo de preentrenamiento, mid-training y ajuste de instrucciones en un modelo pequeño, con una toolchain Java accesible y un checkpoint de 0,4 GB que cabe en cualquier equipo.
+- Prototipado de interfaces de chat en Java: la librería DeepJ incluye `DeepJChat`, interfaz JavaFX y CLI, lo que permite integrar un chatbot funcional en aplicaciones de escritorio Java sin depender de Python.
+- Pruebas de infraestructura de inferencia en Apple Silicon: al ejecutarse con aceleración Metal opcional, permite validar pipelines de decodificación, gestión de caché KV y streaming en hardware de Apple.
+- Generación de texto de relleno en entornos de prueba: para poblar fixtures, tests de integración o demos donde se necesita texto plausible en inglés sin coste de API.
+- Investigación sobre atención de bajo rango: la factorización Q/KV con rangos 384/192 es un objeto de estudio reproducible para comparar calidad y eficiencia frente a atención completa en modelos pequeños.
+- Enseñanza de tokenización BPE: el vocabulario de 16.384 tokens y el archivo `tokenizer.bpe` permiten ilustrar el funcionamiento de un tokenizador entrenado desde cero en un curso de PLN.
+- Evaluación comparativa de librerías: útil para contrastar el rendimiento de DeepJ frente a implementaciones Python en tareas de generación corta y contexto reducido.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explicitamente que la calidad del post-entrenamiento "todavia no ha sido establecida mediante un benchmark riguroso", por lo que no se dispone de cifras de MMLU, GSM8K, ARC, HumanEval ni de ninguna otra evaluacion comparable, pese a que MMLU, GSM8K y ARC se utilizaron como fuentes de datos de entrenamiento y no como conjuntos de evaluacion reportados.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explícitamente que la calidad del post-entrenamiento "no ha sido establecida por un benchmark riguroso".
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 360 MB en precision FP32, 180 MB en FP16/BF16 y en torno a 90 MB en cuantizacion de 8 bits. Son calculos derivados del numero de parametros, ya que el repositorio no distribuye variantes cuantizadas.
-- GPU recomendadas: el modelo fue entrenado en GPU de Apple, por lo que el camino nativo es Apple Silicon (familia M). Cualquier GPU NVIDIA o AMD con soporte del runtime Java correspondiente deberia ser suficiente dado el tamano, pero no hay confirmacion en la informacion disponible.
-- GPU de consumo: si, cabe con enorme holgura en cualquier GPU de consumo actual (RTX 3060, RTX 4060, RTX 4090) e incluso en muchas GPU integradas. El cuello de botella no es la memoria sino el soporte del formato `model.dj`.
-- Opciones de despliegue: DeepJ 0.9.5-alpha o superior mediante Maven, con API `DeepJChat.load(...)` o con la interfaz de chat de escritorio (JDK 20+ y JavaFX). No se puede desplegar con vLLM, llama.cpp, Ollama, TGI ni con la libreria Python Transformers, ya que el formato de checkpoint es propietario y el autor lo declara incompatible con Transformers.
-- Latencia y throughput: no disponible. Cabe senalar que, al recalcular el contexto completo en cada token generado y no usar cache KV, la latencia por token aumenta con la longitud de la secuencia, por lo que el rendimiento decae en generaciones largas.
+- VRAM estimada para inferencia: no disponible en la documentación. Con 90 millones de parámetros en precisión completa (probablemente FP32, dado el formato nativo), el checkpoint ocupa aproximadamente 0,36 GB, por lo que la inferencia cabe holgadamente en cualquier GPU consumer con 2 GB o más.
+- GPU recomendadas: el autor menciona Apple GPU con Metal; cualquier Apple Silicon (M1 o superior) es suficiente. En el ecosistema NVIDIA, una RTX 3060 o superior sobra para este tamaño.
+- Cabe en GPU consumer: sí, en cualquier GPU con al menos 2 GB de memoria, incluidas GTX 1650, RTX 3050 y superiores.
+- Opciones de despliegue: exclusivamente DeepJ 1.0.0 (Java, JDK 20+ para la UI JavaFX). No hay soporte para vLLM, llama.cpp, Ollama, TGI ni Transformers de Python, dado que los pesos están en formato binario propietario.
+- Latencia y throughput: no disponibles. No se publican métricas de tokens por segundo ni de latencia por petición.
 
 ## Comparativa con modelos similares
 
-La comparacion se limita a caracteristicas tecnicas y de licencia; no incluye rendimiento porque Frisky no tiene benchmarks publicados. Los datos de los modelos alternativos corresponden a su documentacion publica.
-
-| Modelo | Parametros | Contexto | Licencia | Formato / ecosistema | Benchmarks publicados |
+| Modelo | Parametros | Contexto | Licencia | Formatos | Disponibilidad |
 |---|---|---|---|---|---|
-| Frisky 90M | 90.128.896 | No disponible | MIT (pesos) | `model.dj` propietario, runtime Java (DeepJ) | No disponibles |
-| SmolLM2-135M-Instruct | 135 millones | 8.192 tokens | Apache 2.0 | safetensors, transformers, GGUF | Si (reportados por su autoria) |
-| Pythia-70M | 70 millones | 2.048 tokens | Apache 2.0 | safetensors, transformers | Si (evaluaciones del Pythia suite) |
-| GPT-2 small | 124 millones | 1.024 tokens | MIT | safetensors y formatos convertidos, transformers | Si (evaluaciones historicas) |
+| Frisky 90M | 90,1 M | no disponible | MIT | `model.dj` (propietario) | Hugging Face, solo DeepJ |
+| SmolLM-135M (HuggingFaceTB) | 135 M | 2.048 tokens | Apache 2.0 | safetensors, GGUF | Transformers, llama.cpp, vLLM |
+| GPT-2 small (OpenAI) | 124 M | 1.024 tokens | MIT | safetensors, GGUF | Transformers, llama.cpp |
+| TinyLlama-1.1B | 1.100 M | 2.048 tokens | Apache 2.0 | safetensors, GGUF | Transformers, llama.cpp, vLLM |
 
-La diferencia fundamental no es de tamano sino de interoperabilidad: las tres alternativas se integran con el ecosistema Python estandar y disponen de cuantizaciones GGUF para llama.cpp u Ollama, mientras que Frisky exige el runtime Java de DeepJ. A cambio, Frisky ofrece un stack homogeneo en JVM que ninguno de los otros proporciona de forma nativa.
+La comparación con SmolLM-135M y GPT-2 small es la más directa por rango de parámetros. Frisky se distingue por su toolchain Java y su formato propietario, que limita drásticamente la interoperabilidad frente a los formatos estándar de la competencia. No hay datos de rendimiento comparables publicados para Frisky.
 
 ## Limitaciones y advertencias
 
-- Modelo experimental: el autor lo describe explicitamente como un modelo pequeno y experimental, no apto para decisiones de consecuencias relevantes.
-- Calidad no verificada: no existe ninguna evaluacion rigurosa publicada de su post-entrenamiento, por lo que no se puede afirmar ni negar su competencia en tareas concretas.
-- Alucinacion: la model card advierte de que puede inventar hechos, repetirse y cometer errores de razonamiento.
-- Codigo incorrecto: puede generar codigo que no compila o que hace algo distinto de lo esperado; no debe usarse sin revision humana en produccion.
-- Idiomas: solo ingles. No hay soporte declarado para castellano ni para otras lenguas, por lo que su uso en espanol producira resultados poco fiables.
-- Contexto: la longitud de contexto no esta documentada. Ademas, al recalcular el contexto completo por token, las secuencias largas degradan la latencia de forma notable.
-- Licencia y datos: la licencia MIT cubre los pesos del modelo, pero no los datasets de origen (FineWeb-Edu, SmolTalk, MMLU, GSM8K, ARC). Cualquier uso comercial debe revisar los terminos de cada dataset por separado.
-- Interoperabilidad: el checkpoint `model.dj` y el tokenizador `tokenizer.bpe` no son cargables con Transformers ni convertibles con las herramientas habituales; esto limita el despliegue a DeepJ 0.9.5-alpha o superior y ata el modelo a un framework en fase alpha.
-- Adopcion practicamente nula: cero descargas y cero "likes" en el momento de la consulta, lo que implica ausencia de validacion por parte de la comunidad.
+- El autor advierte que el modelo puede repetirse, inventar hechos, cometer errores de razonamiento y generar código incorrecto.
+- La calidad del post-entrenamiento no ha sido validada con benchmarks rigurosos; no hay evidencia cuantitativa de su rendimiento.
+- Solo soporta inglés; no se documenta capacidad multilingüe.
+- La longitud de contexto entrenada no se especifica, lo que impide planificar su uso en tareas de contexto largo. El modo rolling generation no amplía la capacidad entrenada y altera el comportamiento de la atención tras la evicción.
+- Los pesos están en formato binario propietario (`model.dj`), incompatibles con Transformers, vLLM, llama.cpp, Ollama y TGI. Cualquier integración requiere Java y la librería DeepJ.
+- La licencia MIT cubre los pesos, pero no los datasets upstream (FineWeb-Edu, SmolTalk, MMLU, GSM8K, ARC), cuyos términos deben consultarse por separado para uso comercial.
+- No apto para decisiones consecuentes, según el propio autor.
+- Sin datos publicados sobre sesgos; al entrenarse con FineWeb-Edu y mezclas de instrucciones en inglés, es previsible que herede sesgos de esas fuentes, aunque no se cuantifican.
+- Sin soporte documentado de tool calling, agentes, visión ni audio.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/netsrik/frisky-90m
-- Repositorio de DeepJ: https://github.com/KirstenAli/DeepJ
-- Paquete Maven de DeepJ 0.9.5-alpha: https://central.sonatype.com/artifact/io.github.kirstenali/deepj/0.9.5-alpha
-- Interfaz de chat de escritorio de DeepJ: https://github.com/KirstenAli/DeepJ#desktop-chat
-- Dataset de preentrenamiento FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
-- Dataset de instrucciones SmolTalk: https://huggingface.co/datasets/HuggingFaceTB/smoltalk
+- Repositorio DeepJ: https://github.com/KirstenAli/DeepJ
+- Release DeepJ 1.0.0: https://github.com/KirstenAli/DeepJ/releases/tag/v1.0.0
+- Documentación de inferencia (rolling generation): https://github.com/KirstenAli/DeepJ/blob/master/docs/inference.md#rolling-generation
+- Documentación de la CLI: https://github.com/KirstenAli/DeepJ/blob/master/docs/cli.md
+- Interfaz de chat de escritorio: https://github.com/KirstenAli/DeepJ#desktop-chat
+- Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
+- Dataset SmolTalk: https://huggingface.co/datasets/HuggingFaceTB/smoltalk
 - Dataset MMLU: https://huggingface.co/datasets/cais/mmlu
 - Dataset GSM8K: https://huggingface.co/datasets/openai/gsm8k
 - Dataset ARC: https://huggingface.co/datasets/allenai/ai2_arc
-- Nota: la busqueda web realizada no ha devuelto resultados relevantes sobre este modelo; los unicos enlaces utiles son los presentes en la model card y en el repositorio oficial.

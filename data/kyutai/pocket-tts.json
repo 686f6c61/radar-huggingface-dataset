@@ -26,9 +26,9 @@
     "license:cc-by-4.0",
     "region:us"
   ],
-  "likes": 1896,
+  "likes": 1897,
   "downloads_30d": 1472,
-  "trending_score": 24.5,
+  "trending_score": 23,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 53754378204,
@@ -49,29 +49,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "GitHub - kyutai-labs/pocket-tts: A TTS that fits in your CPU (and pocket)",
-      "url": "https://github.com/kyutai-labs/pocket-tts",
-      "snippet": "A TTS that fits in your CPU (and pocket). Contribute to kyutai-labs/pocket-tts development by creating an account on GitHub."
+      "title": "kyutai: open-science AI lab",
+      "url": "https://kyutai.org/",
+      "snippet": "Kyutai is funded by Iliad Group, CMA CGM Group and Schmidt Sciences. Many thanks to our generous donors."
     },
     {
-      "title": "Pocket TTS: a high-quality TTS with voice cloning that runs on CPU",
-      "url": "https://kyutai.org/pocket-tts-technical-report/",
-      "snippet": "With Pocket TTS, we manage to bridge this gap and obtain a tiny model that runs on CPU without sacrificing any advantages of the larger models. As usual with Kyutai releases, we open-source Pocket TTS under the MIT license. To maximize reproducibility, we trained the model on public English datasets only."
-    },
-    {
-      "title": "Pocket TTS - kyutai-labs.github.io",
-      "url": "https://kyutai-labs.github.io/pocket-tts/",
-      "snippet": "pocket-tts-deno Port of pocket-tts-server as a wasm + onnx deno server with voice TTS API. FrontPocket by @markd89 - Front-end for Pocket-TTS to speak text from clipboard, file, CLI (hotkeys) & GUI toolbar. Change playback speed, voice, and move forward/backward between sentences instantaneously."
+      "title": "Kyutai, l’innovation en IA à la française - info.gouv.fr",
+      "url": "https://www.info.gouv.fr/actualite/kyutai-linnovation-en-ia-a-la-francaise",
+      "snippet": "Feb 10, 2025 · Mille start-up en intelligence artificielle (IA) sont implantées en France. Parmi elles, le laboratoire français Kyutai, …"
     },
     {
       "title": "Kyutai TTS",
       "url": "https://kyutai.org/next/tts/",
-      "snippet": "Kyutai Pocket TTS Released in January 2026, Kyutai Pocket TTS is our newest model. With a mere 100 million parameters, it&#x27;s lightweight enough to run on a CPU in real-time. In April, we made it speak five other languages. The demo below does run on a remote CPU, but it only takes a single command to run it on your own machine. Check out the technical report for instructions."
+      "snippet": "Released in July 2025, Kyutai TTS 1.6B is a model based on our research on delayed streams modeling. This technique allows the …"
     },
     {
-      "title": "kyutai/pocket-tts · Hugging Face",
-      "url": "https://huggingface.co/kyutai/pocket-tts",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+      "title": "Kyutai : voici le projet d’intelligence artificielle de Xavier Niel",
+      "url": "https://www.lesnumeriques.com/intelligence-artificielle/kyutai-voici-le-projet-d-intelligence-artificielle-de-xavier-niel-n215189.html",
+      "snippet": "Nov 20, 2023 · Kyutai, un laboratoire de recherche en intelligence artificielle open source, a été inauguré vendredi 17 novembre 2023."
+    },
+    {
+      "title": "Kyutai, le labo IA à but non lucratif de Niel, Schmidt et Saadé, lance ...",
+      "url": "https://www.linforme.com/tech-telecom/article/kyutai-le-labo-ia-a-but-non-lucratif-de-niel-schmidt-et-saade-lance-sa-structure-commerciale_7028.html",
+      "snippet": "Sep 2, 2026 · Lors de sa création en 2023, les trois cofondateurs avaient promis d’investir 300 millions d’euros d’ici 2027. Il est doté …"
     }
   ]
 }

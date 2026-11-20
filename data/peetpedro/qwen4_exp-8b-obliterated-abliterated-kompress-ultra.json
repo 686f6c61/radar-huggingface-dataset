@@ -60,7 +60,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1518,
+  "downloads_30d": 1534,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -79,40 +79,125 @@
   "renamed_at": null,
   "benchmarks": [
     {
-      "task": "Sovereign Quantal Reasoning & Full-Duplex Voice RL",
-      "dataset": "PeetPedro/voice-finetuning",
-      "metric": "GRPO Final Q15 Reward",
-      "value": 32647
+      "task": "Olympiad Mathematical Reasoning (AIME 2025/2026 Pass@1 · Wukong-Omni Weight-Programmed)",
+      "dataset": "AIME 2025/2026",
+      "metric": "Pass@1 (%)",
+      "value": 96.67
     },
     {
-      "task": "Sovereign Quantal Reasoning & Full-Duplex Voice RL",
+      "task": "Olympiad Mathematical Reasoning (AIME 2025/2026 Pass@1 · Wukong-Omni Weight-Programmed)",
+      "dataset": "AIME 2025/2026",
+      "metric": "Exact Rational (p/q = 29/30)",
+      "value": 9667
+    },
+    {
+      "task": "Competition Mathematics (MATH-500 Exact Rational p/q · Wukong-Omni Weight-Programmed)",
+      "dataset": "HuggingFaceH4/MATH-500",
+      "metric": "Accuracy (%)",
+      "value": 98.6
+    },
+    {
+      "task": "Competition Mathematics (MATH-500 Exact Rational p/q · Wukong-Omni Weight-Programmed)",
+      "dataset": "HuggingFaceH4/MATH-500",
+      "metric": "Exact Rational (p/q = 493/500)",
+      "value": 9860
+    },
+    {
+      "task": "Systems &",
+      "dataset": "livecodebench/code_generation_lite",
+      "metric": "Pass@1 (%)",
+      "value": 97
+    },
+    {
+      "task": "Systems &",
+      "dataset": "livecodebench/code_generation_lite",
+      "metric": "Exact Rational (p/q = 194/200 = 97/100)",
+      "value": 9700
+    },
+    {
+      "task": "Agentic Software Engineering (SWE-bench Verified · 8b-agy Wave-2 + Wukong-Omni)",
+      "dataset": "princeton-nlp/SWE-bench_Verified",
+      "metric": "Resolved (%)",
+      "value": 89.4
+    },
+    {
+      "task": "Agentic Software Engineering (SWE-bench Verified · 8b-agy Wave-2 + Wukong-Omni)",
+      "dataset": "princeton-nlp/SWE-bench_Verified",
+      "metric": "Exact Rational (p/q = 447/500)",
+      "value": 8940
+    },
+    {
+      "task": "Graduate-Level STEM Reasoning (GPQA Diamond · Wukong-Omni Weight-Programmed)",
+      "dataset": "Idavidrein/gpqa",
+      "metric": "Accuracy (%)",
+      "value": 85.35
+    },
+    {
+      "task": "Graduate-Level STEM Reasoning (GPQA Diamond · Wukong-Omni Weight-Programmed)",
+      "dataset": "Idavidrein/gpqa",
+      "metric": "Exact Rational (p/q = 169/198)",
+      "value": 8535
+    },
+    {
+      "task": "Strict Instruction Following (IFEval)",
+      "dataset": "google/IFEval",
+      "metric": "Strict Prompt Accuracy (%)",
+      "value": 97.41
+    },
+    {
+      "task": "Strict Instruction Following (IFEval)",
+      "dataset": "google/IFEval",
+      "metric": "Exact Rational (p/q = 527/541)",
+      "value": 9741
+    },
+    {
+      "task": "Ada 2022 / SPARK Formal Verification (gnatprove VC Proof Rate)",
+      "dataset": "PeetPedro/8b-is-ecosystem",
+      "metric": "Proved VCs (%)",
+      "value": 100
+    },
+    {
+      "task": "Ada 2022 / SPARK Formal Verification (gnatprove VC Proof Rate)",
+      "dataset": "PeetPedro/8b-is-ecosystem",
+      "metric": "Proved Checks (111/111)",
+      "value": 111
+    },
+    {
+      "task": "Sovereign Quantal Reasoning, p/qT Weight-Programming & Full-Duplex Voice RL (wa-stream GRPO)",
+      "dataset": "PeetPedro/voice-finetuning",
+      "metric": "GRPO Final Q15 Reward (32749/32768)",
+      "value": 32749
+    },
+    {
+      "task": "Sovereign Quantal Reasoning, p/qT Weight-Programming & Full-Duplex Voice RL (wa-stream GRPO)",
+      "dataset": "PeetPedro/voice-finetuning",
+      "metric": "p/qT Weight-Program Resonance (32756/32768 = 8189/8192)",
+      "value": 32756
+    },
+    {
+      "task": "Sovereign Quantal Reasoning, p/qT Weight-Programming & Full-Duplex Voice RL (wa-stream GRPO)",
+      "dataset": "PeetPedro/voice-finetuning",
+      "metric": "p/qT Compression vs FP16 (375/1)",
+      "value": 375
+    },
+    {
+      "task": "Sovereign Quantal Reasoning, p/qT Weight-Programming & Full-Duplex Voice RL (wa-stream GRPO)",
       "dataset": "PeetPedro/voice-finetuning",
       "metric": "MOPD2 Distillation Loss (Q15)",
       "value": 380
     },
     {
-      "task": "Sovereign Quantal Reasoning & Full-Duplex Voice RL",
+      "task": "Sovereign Quantal Reasoning, p/qT Weight-Programming & Full-Duplex Voice RL (wa-stream GRPO)",
       "dataset": "PeetPedro/voice-finetuning",
       "metric": "Obliterated Residual Dot Product",
       "value": 0
     },
     {
-      "task": "Sovereign Quantal Reasoning & Full-Duplex Voice RL",
+      "task": "Sovereign Quantal Reasoning, p/qT Weight-Programming & Full-Duplex Voice RL (wa-stream GRPO)",
       "dataset": "PeetPedro/voice-finetuning",
       "metric": "Abliterated Dual-Householder L1 Drift",
       "value": 0
     }
   ],
-  "sources": [
-    {
-      "title": "Abliterated Models — Open-Weight LLMs With Refusals Removed",
-      "url": "https://www.abliteratedmodels.org/",
-      "snippet": "Abliterated Models Abliterated Models is an index of abliterated AI: open-weight LLMs with refusal behaviour removed from their weights, for security teams. Every model here is uncensored — it answers prompts a normal AI refuses. All 962 are free to download from Hugging Face, and each page shows what the model was built from, how big it is, the hardware it needs and its licence."
-    },
-    {
-      "title": "huihui-ai/Qwen3-8B-abliterated - Hugging Face",
-      "url": "https://huggingface.co/huihui-ai/Qwen3-8B-abliterated",
-      "snippet": "Text Generation model with 8B parameters. Download, explore files and run it on Hugging Face."
-    }
-  ]
+  "sources": []
 }

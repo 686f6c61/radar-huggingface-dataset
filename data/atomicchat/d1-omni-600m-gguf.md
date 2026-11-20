@@ -2,122 +2,104 @@
 
 ## Resumen
 
-d1-omni-600M-GGUF es la version cuantizada en formato GGUF del modelo de decision LiquidAI/d1-omni-600M de Liquid AI, publicada por AtomicChat. No es un modelo generativo: recibe un estado (texto o JSON, opcionalmente con imagenes o hasta 30 segundos de audio) y responde preguntas tipadas en una unica pasada forward, devolviendo un si/no, una eleccion entre opciones nombradas o una puntuacion. La respuesta no se genera token a token, sino que se lee directamente de las puntuaciones que el modelo asigna a cada opcion.
+d1-omni-600M es un modelo de decisión desarrollado por Liquid AI, distribuido aquí en formato GGUF por AtomicChat. A diferencia de un modelo generativo convencional, recibe un estado (texto o JSON, opcionalmente acompañado de imágenes o hasta 30 segundos de audio) y responde preguntas tipadas en un único forward pass: sí/no, elección entre opciones con nombre o una puntuación. No genera texto libre; la respuesta se lee directamente de las puntuaciones del modelo sobre las opciones.
 
-El modelo base es un encoder bidireccional de la familia LFM2.5 con una cabeza de decision propia (dos bloques transformer situados despues del tronco) y un scoredor de opciones, mas proyectores de vision y audio. Liquid AI lo describe como un modelo de 587M parametros, mientras que los metadatos safetensors del repositorio declaran 380.732.161 parametros totales; la discrepancia no queda resuelta en la informacion disponible. Se etiqueta como "system-one", es decir, sin cadena de razonamiento explicita.
+Arquitectura basada en la familia LFM (Liquid Foundation Models) con un tronco convolucional híbrido y una cabeza de decisión compuesta por dos bloques transformer seguida de un scorer de opciones. El modelo base declara 587 millones de parámetros, aunque los pesos en safetensors del repositorio original suman 380.732.161 parámetros efectivos. Está pensado para tareas de clasificación y enrutamiento de baja latencia, donde un LLM generativo resultaría sobredimensionado.
 
-La relevancia de esta publicacion es doble. Por un lado, AtomicChat aporta cuantizaciones por debajo de 8 bits (AD-Q6_K, AD-Q5_K_M y AD-Q4_K_M) que Liquid AI no habia publicado, con una matriz de importancia propia y mediciones de fidelidad frente a los pesos originales en FP32 sobre 1.285 decisiones. Por otro, advierte de que llama.cpp todavia no puede ejecutar estos ficheros: el soporte depende del PR ggml-org/llama.cpp#30114, abierto el 7 de octubre y en revision en el momento de la publicacion.
+La relevancia de esta ficha radica en que AtomicChat publica métricas de fidelidad de cuantización medidas sobre 1.285 decisiones reales en 30 idiomas y código fuente, algo poco habitual. El modelo es pequeño y sensible a la cuantización, por lo que la elección del archivo GGUF afecta de forma medible a la tasa de respuestas correctas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Encoder bidireccional LFM2.5 con cabeza de decision (dos bloques transformer tras el tronco), scoredor de opciones y proyectores de vision y audio |
-| Parametros totales | 380.732.161 segun los metadatos safetensors del repositorio; la model card y el nombre comercial indican 587M/600M (discrepancia no resuelta en la informacion disponible) |
-| Parametros activos | No aplica: la informacion disponible no describe una arquitectura MoE |
-| Longitud de contexto | No disponible. La entrada admite audio de hasta 30 segundos y no se publica el limite de tokens ni de imagenes |
-| Tipos de cuantizacion | BF16, Q8_0, AD-Q6_K, AD-Q5_K_M, AD-Q4_K_M (mas el Q4_K_M estandar de llama.cpp usado como referencia); proyectores multimodales en BF16 y Q8_0 |
-| Idiomas soportados | No disponible como lista. Las pruebas de fidelidad se hicieron sobre textos reservados en 30 idiomas y codigo fuente |
-| Licencia | lfm1.0 (campo `license: other`, `license_name: lfm1.0`, con fichero LICENSE en el repositorio) |
-| Formato de pesos | GGUF para llama.cpp; el modelo base se distribuye en safetensors. Proyectores como `mmproj-d1-omni-600M-BF16` y `mmproj-d1-omni-600M-Q8_0` |
-| Tipo de pipeline | `image-text-to-text` (etiquetas adicionales: decision-model, classification, feature-extraction) |
-| Revision de pesos de origen | LiquidAI/d1-omni-600M en la revision `414f8d6` |
+| Arquitectura | LFM híbrida (tronco convolucional) con cabeza de decisión de dos bloques transformer y scorer de opciones |
+| Parametros totales | 380.732.161 (safetensors); el autor declara 587M en la model card |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible; se recomienda `-b`/`-ub` de 8192 para una imagen con estado de varios miles de tokens |
+| Tipos de cuantizacion | BF16, Q8_0, AD-Q6_K, AD-Q5_K_M, AD-Q4_K_M (AD = Atomic Dynamic, tipo por tensor); proyectores mmproj en BF16 y Q8_0 |
+| Idiomas soportados | evaluación en 30 idiomas más código fuente; lista concreta no disponible |
+| Licencia | lfm1.0 (license_name: lfm1.0, license: other) |
+| Formato de pesos | GGUF (llama.cpp) y safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible describe el modelo base como un encoder bidireccional LFM2.5 con una cabeza de decision especifica: dos bloques transformer situados despues del tronco, de aproximadamente 26M parametros en total, por los que pasa cada respuesta. A esto se anade un scoredor de opciones y proyectores nuevos para vision y audio, integrados en llama.cpp bajo el tipo de decision `lfm2-d1-omni`. Al ser un encoder bidireccional con lectura directa de puntuaciones, el modelo no decodifica texto: emite la opcion ganadora, el si/no o la puntuacion a partir de la distribucion sobre las alternativas.
+El modelo pertenece a la familia LFM2.5 de Liquid AI y combina un tronco de bloques convolucionales con una cabeza de decisión específica: dos bloques transformer seguidos de un scorer que puntúa cada opción candidata. La inferencia no es autorregresiva; el modelo procesa la pregunta completa en un solo batch y devuelve la opción con mayor puntuación, lo que explica su baja latencia y su idoneidad para enrutamiento y clasificación. Los proyectores multimodales (visión y audio) se distribuyen por separado como `mmproj` en BF16 y Q8_0.
 
-No se publican en la informacion proporcionada datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo etapas de RLHF o DPO. Tampoco se detalla el procedimiento de entrenamiento de la cabeza de decision ni de los proyectores multimodales.
-
-La innovacion destacable de esta publicacion es el esquema de cuantizacion AD (Atomic Dynamic), en el que el tipo se elige tensor a tensor en lugar de usar un preset de llama.cpp. La cabeza de decision y el scoredor de opciones se mantienen en Q8_0 en todos los ficheros; la tabla de tokens se situa por encima del resto en precision (Q8_0 en AD-Q6_K, Q6_K en AD-Q5_K_M, Q5_K en AD-Q4_K_M), la atencion se queda en Q8_0 o Q6_K, y los dos primeros y los dos ultimos bloques del tronco reciben un paso mas de precision que los centrales. Segun las mediciones del autor, a tamano practicamente igual, el Q4_K_M estandar de llama.cpp (247 MB) cambia 133 respuestas con una KL de 0,0255, frente a las 97 respuestas y un 44 % menos de KL de AD-Q4_K_M.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. La model card del repositorio GGUF se centra en la metodología de cuantización: AtomicChat aplica una importance matrix propia y elige el tipo de cuantización por tensor (Atomic Dynamic), manteniendo la cabeza de decisión y el scorer en Q8_0 en todos los archivos, la tabla de tokens por encima del resto y la atención en Q8_0 (o Q6_K en AD-Q4_K_M). El modelo requiere un build de llama.cpp con el PR #30114 (commit `a657f7e` o posterior) y expone el endpoint `/v1/systemone`.
 
 ## Capacidades
 
-- Decision tipada en una sola pasada forward: respuesta si/no, eleccion entre opciones nombradas o puntuacion numerica. No hay generacion de texto libre.
-- Entrada de estado en texto plano o JSON.
-- Entrada multimodal: imagenes y audio de hasta 30 segundos de duracion, gestionados por proyectores dedicados.
-- Clasificacion y extraccion de caracteristicas (`feature-extraction`), segun las etiquetas del repositorio.
-- Cobertura multilingue: las pruebas de fidelidad se realizaron sobre textos reservados en 30 idiomas y codigo fuente, aunque no se publica la lista de idiomas ni garantias por idioma.
-- Modelo de tipo "system-one": no genera cadenas de razonamiento ni modo thinking.
-- No se documenta soporte de tool calling ni de function calling.
-- No se documenta soporte de agentes, planificacion multi-paso ni memoria conversacional.
-- Salida determinista leida del scoredor de opciones, lo que facilita integrarla como senal de control en pipelines automaticos.
+- Decisión tipada en un solo forward pass: preguntas de tipo `noul` (sí/no), `choice` (elección entre opciones con nombre) y `score` (puntuación).
+- Procesamiento de estado en texto plano o JSON estructurado.
+- Entrada multimodal: imágenes y hasta 30 segundos de audio mediante los proyectores `mmproj`.
+- Multilingüe: evaluación sobre textos held-out en 30 idiomas, además de código fuente.
+- Enrutamiento y clasificación: asignación a categorías definidas por criterios en la propia petición.
+- Extracción de características (tag `feature-extraction`).
+- No genera texto libre: no soporta tool calling generativo, agentes multi-paso ni razonamiento encadenado.
+- Compatible con endpoints de llama.cpp (`/v1/systemone`).
 
 ## Casos de uso
 
-- Enrutado de peticiones en pipelines de agentes: dado un estado en JSON con la peticion del usuario, el modelo puede decidir entre opciones nombradas (por ejemplo, que subsistema debe atenderla) en una sola pasada, sin coste de decodificacion autorregresiva.
-- Moderacion de contenido multimodal: clasificar si un texto, una imagen o un fragmento de audio de hasta 30 segundos incumple una politica, devolviendo un si/no o una puntuacion de riesgo.
-- Reranking en recuperacion para RAG: puntuar pares consulta-documento y ordenar candidatos antes de pasarlos a un modelo generativo, aprovechando que el coste es de una unica pasada.
-- Puertas de decision en agentes: decidir si procede invocar una herramienta, si hay informacion suficiente para responder o si conviene escalar a un humano.
-- Clasificacion de estados de interfaz: recibir el estado de una aplicacion como JSON y devolver la accion siguiente entre un conjunto cerrado de opciones.
-- Control de calidad en atencion al cliente: analizar los primeros 30 segundos de una llamada y emitir una decision binaria (por ejemplo, si requiere supervision) sobre audio telefono.
-- Puntuacion automatica en evaluacion de modelos: usar el scoredor de opciones como recompensa o criterio de calidad en pipelines de evaluacion y filtrado de datos.
-- Inferencia en el borde o en local: con ficheros de 256 MB (AD-Q4_K_M) a 407 MB (Q8_0), el modelo es candidato a despliegues en dispositivo una vez que llama.cpp incorpore el soporte necesario; en el momento de la publicacion esto no es posible.
+- Enrutamiento de tickets de soporte: el modelo recibe el texto del cliente y devuelve la elección entre equipos (`billing`, `technical`, `fraud`) con una sola pasada, como muestra el ejemplo de la model card, lo que permite clasificar en milisegundos sin un LLM generativo.
+- Detección de sentimiento y urgencia: preguntas `noul` del tipo "¿está el cliente enfadado?" o "¿requiere escalado inmediato?" sobre conversaciones multi-turno, con la ventana de 8192 tokens configurada en `-b`/`-ub`.
+- Moderación de contenido multimodal: clasificación de imágenes o fragmentos de audio de hasta 30 segundos con los proyectores `mmproj`, útil para filtros previos a publicación.
+- Validación de formularios y JSON: comprobar si un payload cumple criterios definidos en la petición (campos obligatorios, rangos, coherencia) sin generar explicaciones.
+- Control de calidad en pipelines de datos: puntuación (`score`) de pares pregunta-respuesta o de documentos para filtrar por calidad antes de entrenar otros modelos.
+- Enrutamiento de comandos en asistentes locales: decidir qué herramienta o flujo activar a partir del estado del usuario, ejecutándose en CPU o GPU de gama baja gracias a su tamaño.
+- Clasificación de código: etiquetar fragmentos de código fuente por lenguaje, propósito o riesgo de seguridad, dado que la evaluación incluye código.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de tarea (MMLU, GSM8K, HumanEval u otros) en la informacion disponible. Lo que si se publica es una medicion de fidelidad de la cuantizacion frente a los pesos originales en FP32, sobre 1.285 decisiones con preguntas de si/no, de eleccion y de puntuacion, sobre textos reservados en 30 idiomas y codigo fuente:
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. La model card publica métricas de fidelidad de cuantización frente a los pesos originales en FP32 sobre 1.285 decisiones:
 
-| Fichero | Tamano en disco | Mismas respuestas (de 1.285) | Deriva media de opciones | KL media de opciones |
+| Archivo | Tamano | Misma respuesta | Deriva de opciones | KL de opciones |
 |---|---:|---:|---:|---:|
-| BF16 | 764 MB | 99,6 % (5) | 0,0019 | 0,00002 |
-| Q8_0 | 407 MB | 98,5 % (19) | 0,0076 | 0,0003 |
-| AD-Q6_K | 347 MB | 97,7 % (30) | 0,0150 | 0,0014 |
-| AD-Q5_K_M | 293 MB | 95,1 % (63) | 0,0289 | 0,0052 |
-| AD-Q4_K_M | 256 MB | 92,5 % (97) | 0,0500 | 0,0142 |
+| BF16 | 764 MB | 99,4% (8) | 0,0029 | 0,00005 |
+| Q8_0 | 407 MB | 97,7% (29) | 0,0116 | 0,0008 |
+| AD-Q6_K | 347 MB | 97,4% (33) | 0,0173 | 0,0020 |
+| AD-Q5_K_M | 293 MB | 95,4% (59) | 0,0324 | 0,0065 |
+| AD-Q4_K_M | 256 MB | 92,7% (94) | 0,0516 | 0,0153 |
 
-Datos adicionales aportados por el autor:
-
-- El Q4_K_M estandar de llama.cpp (247 MB) cambia 133 respuestas con una KL de 0,0255, frente a las 97 respuestas y la KL de 0,0142 de AD-Q4_K_M.
-- El mayor desplazamiento en la probabilidad de una sola opcion es de 0,08 en Q8_0 y de 0,38 a 4 bits.
-- Comparacion entre cuantizaciones Q8_0 del mismo modelo: Liquid 407 MB, 98,4 % (20), deriva 0,0074, KL 0,0003; AtomicChat 407 MB, 98,5 % (19), deriva 0,0076, KL 0,0003.
-- El fichero BF16 y los dos proyectores de AtomicChat son identicos byte a byte a los de Liquid, con el mismo SHA-256.
-- El autor no midio decisiones sobre imagen ni sobre audio.
+Comparación adicional: el `Q4_K_M` estándar de llama.cpp (247 MB) cambió 133 respuestas con un KL de opciones de 0,0255, frente a 97 respuestas y un 44% menos de KL en `AD-Q4_K_M`. El mayor desplazamiento en una sola probabilidad de opción es de 0,18 en Q8_0 y 0,46 a 4 bits. En una pregunta con imagen, el BF16 con proyector obtuvo 0,944 frente a 0,951 del código PyTorch de Liquid.
 
 ## Requisitos de hardware
 
-- Huella en disco: 764 MB en BF16, 407 MB en Q8_0, 347 MB en AD-Q6_K, 293 MB en AD-Q5_K_M y 256 MB en AD-Q4_K_M. El repositorio completo ocupa 2,8 GB.
-- VRAM estimada para inferencia: no se publican cifras oficiales. Dado el tamano de los ficheros, la VRAM necesaria es la del fichero mas el contexto y los proyectores multimodales; cualquier GPU consumer con mas de 2 GB deberia ser suficiente en las cuantizaciones de 8 bits o inferiores.
-- GPU recomendadas: no disponible. Al tratarse de un modelo de menos de 600M parametros, tanto GPUs de datacenter (A100, H100) como GPUs consumer (serie RTX 40, RTX 30 o inferiores) pueden alojarlo; no hay recomendaciones del autor.
-- Cabe en GPU consumer: si, segun los tamanos de fichero publicados.
-- Opciones de despliegue: llama.cpp (todavia no funcional para estos ficheros) y el codigo PyTorch de Liquid para el modelo base. No se documenta soporte para vLLM, Ollama, TGI ni otros servidores en la informacion disponible.
-- Latencia y throughput: no disponible. El modelo resuelve cada decision en una unica pasada forward, sin decodificacion autorregresiva, pero no se publican cifras de latencia ni de peticiones por segundo.
-- Licencia y acceso: repositorio publicado el 7 de octubre, con 0 descargas y 0 likes en el momento de la captura.
+- VRAM estimada: menos de 1 GB para BF16 (764 MB en disco) y alrededor de 300-450 MB para las cuantizaciones Q8_0 a Q4_K_M, más el proyector `mmproj`.
+- Cabe en cualquier GPU consumer, incluida una GTX 1650 o una iGPU con suficiente memoria compartida; también funciona en CPU.
+- GPU recomendadas: no requiere aceleradores de datacenter; A100 o H100 son innecesarias. Cualquier RTX con más de 2 GB libres es suficiente.
+- Despliegue: llama.cpp (`llama-server`) con el PR #30114 o posterior; el endpoint es `/v1/systemone`. No se mencionan vLLM, TGI ni Ollama en la información disponible.
+- Configuración obligatoria: `-b` y `-ub` deben cubrir el prompt más largo, ya que el modelo lee la pregunta completa en un solo batch; 8192 cubre una imagen con un estado de varios miles de tokens.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formatos | Fidelidad en Q8_0 | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| AtomicChat/d1-omni-600M-GGUF | 380.732.161 segun safetensors (587M segun la model card) | No disponible | GGUF: BF16, Q8_0, AD-Q6_K, AD-Q5_K_M, AD-Q4_K_M | 98,5 % de respuestas identicas (19 cambios de 1.285) | lfm1.0 | Requiere el PR ggml-org/llama.cpp#30114 |
-| LiquidAI/d1-omni-600M-GGUF | El mismo modelo base | No disponible | GGUF: BF16, F16, Q8_0 | 98,4 % de respuestas identicas (20 cambios de 1.285) | lfm1.0 | Requiere el mismo PR de llama.cpp |
-| LiquidAI/d1-omni-600M (PyTorch) | El mismo modelo base | No disponible | Safetensors | Referencia en FP32 | lfm1.0 | Ejecutable con el codigo PyTorch de Liquid |
-| d1-3B cuantizado por AtomicChat | No disponible | No disponible | GGUF | No disponible | No disponible | Mencionado en la model card como modelo hermano de mayor tamano |
+| Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| d1-omni-600M (este) | 380,7M efectivos (587M declarados) | no disponible (recomendado 8192) | Decisión, multimodal | lfm1.0 | GGUF en HF |
+| d1-3B (familia d1 de Liquid AI) | no disponible | no disponible | Decisión | no disponible | mencionado en la model card |
+| LLM generativo pequeño (p. ej. 0,5-1B) | 500M-1B | 2K-32K típico | Generación de texto | variable | amplia |
 
-No se dispone de datos de modelos comparables de otros fabricantes con la misma funcion de decision tipada multimodal, por lo que la comparativa se limita a las variantes del mismo modelo base.
+La model card indica que la cuantización afecta más a d1-omni que a d1-3B, lo que sugiere que este último es la alternativa dentro de la misma familia cuando se necesita mayor robustez numérica. Frente a un LLM generativo del mismo orden de parámetros, d1-omni ofrece respuestas tipadas y deterministas con una sola pasada, pero carece de generación libre y de razonamiento multi-paso.
 
 ## Limitaciones y advertencias
 
-- llama.cpp no puede ejecutar estos ficheros todavia. El soporte esta en revision en el PR ggml-org/llama.cpp#30114; hasta su fusion hay que usar el codigo PyTorch de Liquid. Los ficheros llevan el tipo `d1omni` de Liquid y se reetiquetaran con los metadatos del PR cuando se fusione, sin cambios en los tensores.
-- No es un modelo generativo. No produce texto libre, no mantiene conversaciones y no admite instrucciones abiertas; solo responde a preguntas tipadas (si/no, opciones nombradas o puntuacion).
-- La cuantizacion altera mas las respuestas que en d1-3B. Q8_0 ya cambia un 1,5 % de las respuestas y 4 bits un 7,5 %. El autor recomienda Q8_0, o AD-Q6_K si importan 60 MB, y verificar con preguntas propias cualquier fichero por debajo de 6 bits.
-- Riesgo de alucinacion: no aplica en el sentido generativo, pero si existe riesgo de decision erronea o mal calibrada en los dominios no cubiertos por el entrenamiento; no se publican tasas de acierto por tarea.
-- Limite multimodal: el audio esta acotado a 30 segundos. No se publica el limite de imagenes ni de longitud de contexto, lo que dificulta dimensionar despliegues con entradas largas.
-- Idiomas: la model card solo indica que las pruebas cubrieron 30 idiomas y codigo fuente; no hay lista oficial ni evaluacion por idioma, por lo que no se puede garantizar el comportamiento en un idioma concreto.
-- Sesgos: no se documenta ninguna evaluacion de sesgos, toxicidad o equidad en la informacion disponible.
-- Licencia: lfm1.0 bajo el campo `license: other`. Las condiciones concretas de uso comercial no se detallan en la informacion proporcionada; hay que revisar el fichero LICENSE del repositorio antes de usarlo en produccion.
-- Los proyectores de vision y audio no fueron evaluados por el cuantizador: no hay medicion de fidelidad para decisiones sobre imagen o audio.
-- Validacion comunitaria limitada: el repositorio tenia 0 descargas y 0 likes en el momento de la captura, y la model card obtenida esta truncada, por lo que pueden faltar detalles de uso.
-- Discrepancia de parametros (380.732.161 frente a 587M/600M) sin aclaracion en la informacion disponible; conviene verificar el recuento real antes de planificar recursos.
+- No es un modelo generativo: no produce texto libre, no soporta tool calling generativo ni agentes multi-paso.
+- Sensibilidad alta a la cuantización: Q8_0 ya cambia un 2,3% de las respuestas y 4 bits un 7,3%; por debajo de 6 bits debe validarse con preguntas propias.
+- Los benchmarks de fidelidad se midieron en una sola máquina y sobre 1.285 decisiones; no se midieron decisiones con imagen ni audio, solo una pregunta de imagen aislada.
+- Idiomas: se evalúa en 30 idiomas, pero no se publica la lista ni el rendimiento por idioma.
+- Licencia lfm1.0: es una licencia "other" con términos propios; deben revisarse las restricciones de uso comercial en el archivo LICENSE antes de desplegar en producción.
+- Requiere un build específico de llama.cpp (PR #30114, commit `a657f7e` o posterior); versiones anteriores no funcionan.
+- Riesgo de alucinación no aplicable en el sentido generativo, pero sí de calibración errónea: las puntuaciones de opciones pueden desplazarse con la cuantización.
+- Sesgos: no se documenta ninguna evaluación de sesgos en la información disponible.
+- El conteo de parámetros difiere entre la model card (587M) y los safetensors (380,7M); conviene verificar cuál corresponde al uso previsto.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/AtomicChat/d1-omni-600M-GGUF
-- Modelo base en PyTorch: https://huggingface.co/LiquidAI/d1-omni-600M
-- GGUFs oficiales de Liquid: https://huggingface.co/LiquidAI/d1-omni-600M-GGUF
-- Metricas y registros de cuantizacion: https://huggingface.co/datasets/AtomicChat/d1-omni-600M-GGUF-metrics
-- PR de soporte en llama.cpp: https://github.com/ggml-org/llama.cpp/pull/30114
-- Sitio de Atomic Chat: https://atomic.chat/
-- Servidor de Discord: https://discord.gg/8wGSsvmg4V
-- Repositorio de Atomic Chat: https://github.com/AtomicBot-ai/Atomic-Chat
-
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre el modelo; solo paginas de prensa sin relacion con esta publicacion.
+- Repositorio GGUF: https://huggingface.co/AtomicChat/d1-omni-600M-GGUF
+- Modelo base: https://huggingface.co/LiquidAI/d1-omni-600M
+- Métricas y logs de cuantización: https://huggingface.co/datasets/AtomicChat/d1-omni-600M-GGUF-metrics
+- PR de llama.cpp requerido: https://github.com/ggml-org/llama.cpp/pull/30114
+- Aplicación Atomic Chat: https://atomic.chat/
+- Repositorio Atomic Chat en GitHub: https://github.com/AtomicBot-ai/Atomic-Chat
+- Discord: https://discord.gg/8wGSsvmg4V
+- X (Twitter): https://x.com/atomic_chat_hq

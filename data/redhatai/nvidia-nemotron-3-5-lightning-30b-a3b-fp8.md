@@ -2,54 +2,50 @@
 
 ## Resumen
 
-NVIDIA-Nemotron-3.5-Lightning-30B-A3B-FP8 es una versión cuantizada a FP8 del modelo nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16, publicada por RedHatAI el 13 de agosto de 2026. Se trata de un modelo de lenguaje de arquitectura híbrida NemotronH (Mamba-Transformer con mezcla de expertos), con 31.577.940.288 parámetros totales y aproximadamente 3.000 millones de parámetros activos por token, tal como indica el sufijo A3B. La cuantización reduce los pesos y activaciones de 16 a 8 bits, recortando a la mitad los requisitos de memoria en GPU y disco y duplicando aproximadamente el rendimiento de las multiplicaciones matriciales en hardware compatible con FP8.
+RedHatAI/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-FP8 es una versión cuantizada a FP8 del modelo NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16, desarrollado originalmente por NVIDIA y optimizado por Red Hat AI. El modelo emplea la arquitectura NemotronH (NemotronHForCausalLM), una arquitectura híbrida que combina capas de atención con mecanismos de espacio de estados (SSM/Mamba), tal como evidencian los parámetros de despliegue `--mamba-backend flashinfer` y `--mamba-ssm-cache-dtype` requeridos. Con aproximadamente 31.580 millones de parámetros totales y una designación "A3B" que sugiere 3.000 millones de parámetros activos, se trata de un modelo de mezcla de expertos (MoE) orientado a generación de texto conversacional.
 
-El modelo resuelve el problema de desplegar un modelo de 30B con activación dispersa en infraestructura con memoria limitada, manteniendo la arquitectura original. Al ser una versión cuantizada estática por tensor, está pensada para servir en producción con vLLM, que es el runtime explícitamente soportado en la model card (con backend Mamba FlashInfer, parser de razonamiento nemotron_v3 y parser de tool calling qwen3_coder).
+La cuantización reduce los pesos y activaciones de los operadores lineales de los bloques transformer de 16 a 8 bits mediante un esquema estático per-tensor, aplicado con LLM Compressor. Esto disminuye aproximadamente un 50% los requisitos de memoria GPU y disco, y aproximadamente duplica el throughput de multiplicación de matrices en hardware compatible con FP8. El proceso de calibración utilizó 512 muestras del dataset UltraChat 200k con una longitud máxima de secuencia de 2048 tokens.
 
-Su relevancia actual radica en la combinación de tres factores: la arquitectura híbrida Mamba-MoE, que reduce el coste de atención en contextos largos; la cuantización FP8 lista para vLLM con receta reproducible de LLM Compressor; y el volumen de descargas (más de 820.000), que indica una adopción amplia como alternativa eficiente al modelo BF16 original.
+El modelo resulta relevante para despliegues en producción que requieren un equilibrio entre capacidad de razonamiento conversacional y eficiencia de inferencia. Su integración validada con vLLM 0.28.0, RHOAI 3.5.1 y RHAIIS 3.6.0-fast.2, junto con parsers específicos para razonamiento (`nemotron_v3`) y tool calling (`qwen3_coder`), lo posicionan como una opción práctica para pipelines de agentes y atención al cliente automatizada en infraestructura FP8.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | NemotronHForCausalLM (híbrida Mamba-Transformer con mezcla de expertos) |
-| Parametros totales | 31.577.940.288 |
-| Parametros activos | aproximadamente 3.000 millones (sufijo A3B; no se detalla el número exacto de expertos) |
+| Arquitectura | NemotronH (híbrida transformer + SSM/Mamba), NemotronHForCausalLM |
+| Parametros totales | 31.577.940.288 (~31,58 mil millones) |
+| Parametros activos | ~3 mil millones (designación A3B, MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | FP8 (pesos y activaciones, esquema estático por tensor); modelo base en BF16 |
+| Tipos de cuantizacion | FP8 (pesos y activaciones, esquema estático per-tensor); modelo base en BF16 |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (compressed-tensors), compatible con transformers y vLLM |
-| Tamano del repositorio | 32,3 GB |
-| Fecha de publicacion | 2026-08-13 |
-| Version | 1.0 |
-| Desarrollador de la cuantizacion | RedHatAI (modelo base: NVIDIA) |
+| Formato de pesos | safetensors (compressed-tensors) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es NemotronH, una pila híbrida que combina capas Mamba (SSM con convolución y proyecciones) con capas de atención y capas de mezcla de expertos. La model card menciona explícitamente componentes como `conv1d`, `mixer.gate`, `_latent_proj`, `mtp.layers` (multi-token prediction) y `backbone.norm_f`, lo que confirma la presencia de módulos Mamba, compuertas de mezcla, proyecciones latentes y capas de predicción multi-token. Los parámetros activos por token (unos 3B de 31,6B totales) confirman un diseño MoE disperso.
+El modelo se basa en la arquitectura NemotronH, una propuesta híbrida que intercala capas de atención con capas de espacio de estados (SSM, tipo Mamba). La presencia de operadores `conv1d`, `mixer.gate`, `_latent_proj` y `mtp.layers` en la receta de cuantización confirma la existencia de componentes convolucionales y de mezcla propios de los bloques SSM, así como capas de multi-token prediction (MTP). La designación "A3B" indica un esquema de mezcla de expertos con aproximadamente 3.000 millones de parámetros activos por token sobre un total de 31.580 millones.
 
-El entrenamiento del modelo base no se documenta en la información disponible: no se especifican el número de tokens, la composición del dataset, ni si hubo RLHF, DPO u otras fases de alineamiento. Lo que sí está documentado es el proceso de cuantización: se aplicó LLM Compressor con un `GPTQModifier` en esquema FP8, usando 512 muestras de calibración de UltraChat 200k (split `train_sft`), longitud máxima de secuencia 2048 y semilla 42. Solo se cuantizan los operadores lineales de los bloques transformer; quedan excluidos `conv1d`, los embeddings, las proyecciones latentes, las compuertas del mixer, las capas MTP, `norm_f` y `lm_head`. La innovación destacable es la preservación en precisión original de los componentes sensibles de la arquitectura híbrida, lo que mitiga la degradación típica de la cuantización en modelos con SSM.
+La cuantización fue realizada por Red Hat AI mediante LLM Compressor con el modificador GPTQModifier y esquema FP8, calibrando con 512 muestras de UltraChat 200k (`train_sft`) a 2048 tokens de longitud. Se excluyeron de la cuantización las capas `conv1d`, los embeddings (`backbone.embeddings`), las proyecciones latentes (`_latent_proj`), las puertas del mixer (`mixer.gate`), las capas MTP (`mtp.layers`), la normalización final (`backbone.norm_f`) y el `lm_head`. No se dispone de información sobre el volumen de tokens de preentrenamiento, la composición del dataset original ni las etapas de alineación (RLHF/DPO) del modelo base.
 
 ## Capacidades
 
-- Generación de texto conversacional, con plantilla de chat soportada vía `apply_chat_template`.
-- Razonamiento explícito: la model card incluye `--reasoning-parser nemotron_v3` en el comando de despliegue, lo que indica soporte de modo de razonamiento estructurado.
-- Tool calling y function calling: soportado mediante `--tool-call-parser qwen3_coder` y `--enable-auto-tool-choice` en vLLM.
-- Predicción multi-token (capas `mtp.layers`), que puede habilitar decodificación especulativa o generación de varios tokens por paso.
-- Procesamiento de secuencias largas gracias al componente Mamba, que evita el coste cuadrático de la atención pura.
+- Generación de texto conversacional multi-turno, con soporte de plantilla de chat (`apply_chat_template`).
+- Razonamiento explícito: el despliegue en vLLM habilita `--reasoning-parser nemotron_v3`, lo que indica soporte de modo de razonamiento estructurado.
+- Tool calling / function calling: soportado mediante `--tool-call-parser qwen3_coder` y `--enable-auto-tool-choice`.
+- Capacidades de agente y razonamiento multi-paso, habilitadas por el soporte combinado de razonamiento y herramientas.
+- Multi-token prediction (MTP): la arquitectura incluye capas MTP, lo que puede habilitar decodificación especulativa.
+- Procesamiento de texto como única modalidad de entrada y salida (sin visión ni audio).
 - Capacidades multilingües: no disponibles en la información proporcionada.
-- Visión y audio: no disponibles; la model card declara entrada y salida exclusivamente de texto.
 
 ## Casos de uso
 
-- Servicio de chat conversacional a gran escala: el modelo puede atender conversaciones multi-turno con un coste de memoria de aproximadamente 32 GB en FP8, lo que permite desplegarlo en una sola GPU de 40 u 80 GB y multiplicar la concurrencia frente al BF16.
-- Agentes con tool calling: la combinación de parser `qwen3_coder` y `--enable-auto-tool-choice` en vLLM permite construir agentes que invocan APIs externas, bases de datos o funciones internas dentro de un bucle de razonamiento multi-paso.
-- Asistentes de código en IDE o CI/CD: el modelo puede integrarse como backend de autocompletado y generación de parches, con el parser de tool calling habilitado para ejecutar comandos o consultar repositorios.
-- Razonamiento con trazas verificables: el parser `nemotron_v3` separa el bloque de pensamiento de la respuesta final, lo que facilita auditar la cadena de razonamiento en aplicaciones de soporte técnico o análisis.
-- Procesamiento de documentos largos: la arquitectura Mamba permite manejar contextos extensos con menor presión de memoria KV que un transformer puro, adecuado para resumen y extracción sobre informes o expedientes.
-- Despliegue en infraestructura con presupuesto ajustado: al ocupar la mitad que el modelo BF16, permite servir un modelo de 30B con activación de 3B en GPUs de gama数据中心 con FP8 nativo (H100, L40S, H200) sin recurrir a paralelismo tensorial.
-- Evaluación comparativa de cuantizaciones: útil como referencia para medir la pérdida de calidad de FP8 frente a BF16 en tareas de razonamiento y código, dado que la receta de calibración es pública y reproducible.
+- Atención al cliente automatizada: el modelo puede gestionar conversaciones multi-turno con plantilla de chat y razonamiento estructurado, integrándose en backends vLLM con prefix caching para reutilizar contexto en diálogos repetitivos.
+- Agentes con tool calling en producción: gracias a los parsers `qwen3_coder` y `nemotron_v3`, puede orquestar llamadas a funciones externas (APIs, bases de datos) en flujos de razonamiento multi-paso.
+- Asistentes de código en pipelines CI/CD: el parser de tool calling orientado a código permite integrar el modelo en herramientas de revisión automática, generación de parches o consultas a repositorios.
+- Despliegue en infraestructura FP8 on-premise: validado en RHOAI 3.5.1 y RHAIIS 3.6.0-fast.2, adecuado para organizaciones con clústeres de GPU H100/L40S que buscan reducir coste por token.
+- Servicio de inferencia de alto throughput: la cuantización FP8 duplica el throughput de matmul y permite `--max-num-seqs 128` con scheduling asíncrono, útil para APIs de generación de texto a escala.
+- Razonamiento asistido en dominios técnicos: el modo de razonamiento estructurado con parser dedicado facilita la extracción de cadenas de pensamiento auditables en aplicaciones de análisis y soporte técnico.
+- Prototipado e investigación: al ser un modelo MoE de ~31B con solo ~3B activos, permite experimentación con arquitecturas híbridas SSM/attention en hardware de gama alta sin requerir clústeres masivos.
 
 ## Benchmarks y rendimiento
 
@@ -57,38 +53,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repositorio ocupa 32,3 GB, por lo que se necesitan al menos 32-36 GB de VRAM para cargar los pesos FP8, más la caché KV y la caché Mamba. Con `--max-num-seqs 128` y contextos largos, el consumo real puede superar los 48-64 GB.
-- GPU recomendadas: H100 (80 GB), H200, L40S (48 GB) y A100 (80 GB). El hardware debe soportar FP8 nativo para aprovechar el doble de throughput en matmul; en GPUs sin FP8 (por ejemplo, A100), la ganancia de velocidad se reduce aunque se mantiene el ahorro de memoria.
-- GPU de consumo: no cabe en RTX 4090 (24 GB) ni en RTX 3090 (24 GB) con los pesos FP8 completos. Sería necesario un esquema de cuantización adicional (por ejemplo, INT4 mediante GGUF) no publicado en este repositorio.
-- Opciones de despliegue: vLLM es el runtime documentado y recomendado, con flags específicos `--mamba-backend flashinfer`, `--mamba-ssm-cache-dtype float16`, `--enable-mamba-cache-stochastic-rounding`, `--mamba-cache-philox-rounds 5` y `--moe-backend flashinfer_cutlass`. También es cargable con transformers y `compressed_tensors`. No se documenta soporte de llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles de forma numérica. La model card afirma que la cuantización FP8 aproximadamente duplica el throughput de matmul en hardware compatible, sin cifras concretas de tokens por segundo.
+- VRAM estimada para inferencia: el repositorio ocupa 32,3 GB en FP8, por lo que se requiere al menos ~32-36 GB de VRAM para pesos, más overhead de caché KV/SSM y activaciones. Con cuantizaciones adicionales (no publicadas) podría reducirse, pero no hay datos disponibles.
+- GPU recomendadas: NVIDIA H100 (FP8 nativo), L40S, L4 y GPUs con soporte FP8. El backend `flashinfer_cutlass` para MoE y `flashinfer` para Mamba requiere hardware compatible con FlashInfer.
+- GPU de consumo: no cabe en GPUs consumer de 24 GB (RTX 4090) en FP8 sin cuantización adicional; no se dispone de variantes GGUF publicadas en la información proporcionada.
+- Opciones de despliegue: vLLM 0.28.0 (validado), con flags obligatorios `--mamba-backend flashinfer`, `--mamba-ssm-cache-dtype float16`, `--enable-mamba-cache-stochastic-rounding`, `--mamba-cache-philox-rounds 5`, `--moe-backend flashinfer_cutlass`. Compatible con transformers y compressed-tensors.
+- Latencia y throughput: no disponibles de forma numérica; la model card indica que FP8 duplica aproximadamente el throughput de matmul frente a BF16 en hardware compatible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Activos | Contexto | Cuantizacion | Licencia | Runtime |
-|---|---|---|---|---|---|---|
-| RedHatAI/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-FP8 | 31,6B | ~3B | no disponible | FP8 | no disponible | vLLM, transformers |
-| nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 | 31,6B | ~3B | no disponible | BF16 | no disponible | vLLM, transformers |
-| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| RedHatAI/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-FP8 | ~31,58B totales / ~3B activos | no disponible | FP8 (W+A) | no disponible | Hugging Face, vLLM |
+| nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 | ~31,58B totales / ~3B activos | no disponible | BF16 | no disponible | Hugging Face |
+| Modelos MoE de ~30B con ~3B activos (categoría general) | ~30B / ~3B | variable | variable | variable | variable |
 
-La comparación más directa es con el modelo base BF16: misma arquitectura y mismos parámetros, pero el doble de tamaño en disco y memoria (aproximadamente 64 GB) y sin aceleración FP8. No se dispone de información sobre otros modelos comparables en la documentación proporcionada.
+No se dispone de datos de benchmarks ni de comparativas numéricas con alternativas concretas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La licencia no está indicada en la información disponible; es imprescindible verificar los términos del modelo base de NVIDIA antes de cualquier uso comercial.
-- No se documentan los idiomas soportados ni la calidad en castellano; el rendimiento multilingüe es desconocido.
-- No hay datos de benchmarks que permitan cuantificar la degradación de calidad introducida por la cuantización FP8 respecto al modelo BF16.
-- La cuantización estática por tensor es más agresiva que esquemas por canal; en tareas sensibles (matemáticas, código de precisión) puede haber pérdida de exactitud no medida.
-- El calibrado se realizó con UltraChat, un corpus conversacional en inglés; dominios muy alejados de ese registro (código, documentos técnicos, idiomas distintos) pueden sufrir mayor degradación.
-- Riesgo de alucinación inherente a los modelos de lenguaje; no se documentan evaluaciones de factualidad ni de sesgos.
-- El despliegue requiere flags específicos de vLLM y el backend FlashInfer para Mamba; configuraciones alternativas pueden no funcionar o perder rendimiento.
-- No cabe en GPUs de consumo de 24 GB; requiere hardware profesional con soporte FP8.
-- La fecha de creación (2026-08-13) y la de actualización (2026-11-09) indican un modelo reciente; el ecosistema de herramientas puede no estar completamente maduro.
+- La cuantización FP8 introduce una pérdida de precisión respecto al modelo BF16 original; no se han publicado métricas de degradación en la información disponible.
+- Riesgo de alucinación inherente a los modelos de lenguaje; el modo de razonamiento no elimina este riesgo.
+- Longitud de contexto no documentada: no es posible planificar aplicaciones de contexto largo sin verificar este dato en la model card original.
+- Idiomas soportados no documentados; el rendimiento multilingüe es desconocido.
+- Licencia no disponible en la información proporcionada: es imprescindible verificar las condiciones de uso comercial en el repositorio antes de desplegar en producción.
+- Requiere flags específicos de vLLM (`--mamba-backend flashinfer`, `--moe-backend flashinfer_cutlass`) y versiones validadas (vLLM 0.28.0); configuraciones incorrectas pueden degradar el rendimiento o fallar.
+- El backend Mamba con `--enable-mamba-cache-stochastic-rounding` y `--mamba-cache-philox-rounds 5` implica compensaciones entre precisión y velocidad que deben validarse en cada caso de uso.
+- No cabe en GPUs consumer de 24 GB en su forma FP8 publicada.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/RedHatAI/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-FP8
-- Modelo base BF16: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
-- LLM Compressor (repositorio): https://github.com/vllm-project/llm-compressor
+- Modelo base (BF16): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
+- LLM Compressor: https://github.com/vllm-project/llm-compressor
 - Dataset de calibración UltraChat 200k: https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k
-- Model card del autor: https://huggingface.co/RedHatAI/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-FP8/blob/main/README.md
+- README del modelo: https://huggingface.co/RedHatAI/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-FP8/blob/main/README.md

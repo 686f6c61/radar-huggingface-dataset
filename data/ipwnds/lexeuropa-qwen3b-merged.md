@@ -2,95 +2,102 @@
 
 ## Resumen
 
-LexEuropa Qwen3B Merged es un modelo de lenguaje de 3.085.938.688 parámetros derivado de Qwen2.5-3B-Instruct, desarrollado por el usuario iPwnds dentro del proyecto LexEuropa. Se trata de un ajuste fino mediante LoRA (r=16, alpha=32, 2 épocas) fusionado en los pesos base, orientado a una tarea muy concreta: la investigación jurídica sobre derecho de la Unión Europea con verificación de citas. El modelo no busca razonamiento jurídico general, sino disciplina de formato y de citación.
+lexeuropa-qwen3b-merged es un ajuste fino (fine-tuning) del modelo Qwen2.5-3B-Instruct de Alibaba, desarrollado por el usuario iPwnds dentro del proyecto LexEuropa, una iniciativa de investigación jurídica sobre derecho de la Unión Europea con verificación de citas. El modelo se obtiene fusionando (merging) un adaptador LoRA de rango 16 y alpha 32, entrenado durante 2 épocas, sobre el modelo base instruct de 3.086 millones de parámetros.
 
-La relevancia del modelo reside en su enfoque restringido y medible: responde a partir de extractos de fuentes proporcionadas, generando afirmaciones estructuradas en JSON, cada una asociada a un identificador de fuente (S1..S8), y se niega a responder cuando las fuentes no cubren la pregunta. Está entrenado exclusivamente sobre textos reales del RGPD y de las sentencias del TJUE C-131/12 y C-136/17, en inglés.
+El problema que aborda no es el razonamiento jurídico general, sino la disciplina de formato y de citación: el modelo está entrenado para responder a partir de extractos de fuentes suministrados, emitiendo afirmaciones estructuradas en JSON en las que cada una cita un identificador de fuente (S1..S8), y para rechazar la respuesta cuando las fuentes no cubren la pregunta. Se sirve mediante vLLM en un Inference Endpoint y se distribuye con licencia Apache 2.0.
 
-Con licencia Apache 2.0 y un tamaño de repositorio de 6,2 GB, es un prototipo de investigación con 230 descargas y sin likes en el momento de la consulta. Su utilidad práctica es acotada: sirve como componente de un pipeline RAG jurídico, no como asesor legal autónomo.
+Es relevante ahora porque ejemplifica un patrón de ajuste fino muy concreto y medible: especialización estrecha sobre un modelo pequeño, con un conjunto de datos determinista construido a partir de texto real del RGPD y de las sentencias del TJUE C-131/12 y C-136/17. La model card indica además que esta versión ha sido superada por `lexeuropa-qwen3b-merged-v4`, aunque se mantiene por motivos de comparación.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen2) |
-| Parametros totales | 3.085.938.688 |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | No disponible (heredada de Qwen2.5-3B-Instruct; el valor no se especifica en la informacion proporcionada) |
-| Tipos de cuantizacion | No disponible (pesos publicados en safetensors; no se documentan variantes GGUF/AWQ/GPTQ) |
-| Idiomas soportados | Ingles (en) |
+| Arquitectura | Transformer decoder-only (Qwen2, según tag `qwen2`) |
+| Parámetros totales | 3.085.938.688 |
+| Parámetros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible en la información proporcionada (heredada del base Qwen2.5-3B-Instruct) |
+| Tipos de cuantización | No disponible en la información proporcionada |
+| Idiomas soportados | Inglés (`en`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors |
+| Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen2.5-3B-Instruct, un transformer decoder-only denso de aproximadamente 3,09 mil millones de parámetros. Sobre esa base se aplicó un ajuste supervisado (SFT) con LoRA de rango 16 y alpha 32 durante 2 épocas, empleando la librería TRL, y posteriormente se fusionó el adaptador en los pesos del modelo base para obtener un checkpoint autónomo. No se documenta ninguna innovación arquitectónica adicional: no hay mezcla de expertos, atención lineal ni decodificación especulativa.
+El modelo es un transformer decoder-only denso de la familia Qwen2, con 3.086 millones de parámetros, derivado de Qwen2.5-3B-Instruct. Sobre ese modelo base se aplicó un adaptador LoRA con rango 16 y alpha 32, entrenado durante 2 épocas mediante SFT (supervised fine-tuning) con la librería TRL, y posteriormente fusionado en los pesos del modelo para producir un checkpoint autónomo.
 
-El conjunto de entrenamiento consta de 506 ejemplos (422 positivos y 84 de rechazo), construidos de forma determinista a partir de texto real del RGPD y de las sentencias del TJUE C-131/12 y C-136/17 en inglés, con una partición de validación a nivel de provisión. No se usaron objetivos generados por modelos. El autor reconoce un defecto conocido, corregido en una v2 no publicada: algunas afirmaciones objetivo se truncaban a mitad de frase en las referencias cruzadas en línea (por ejemplo, "point (a) of Article 6(1)"). No se menciona RLHF ni DPO.
+Los datos de entrenamiento consisten en 506 ejemplos (revisión de dataset `v2`): 422 positivos y 84 de rechazo, construidos de forma determinista a partir de texto real del RGPD y de las sentencias del TJUE C-131/12 y C-136/17 en inglés, con una partición de validación a nivel de provisión. No se emplearon objetivos generados por modelos. La model card documenta un defecto conocido: algunas afirmaciones objetivo quedaron partidas a mitad de frase en referencias cruzadas en línea (por ejemplo, "point (a) of Article 6(1)"), corregido en el constructor de datasets del repositorio. No se menciona uso de RLHF ni DPO.
 
 ## Capacidades
 
-- Generación de texto con formato estructurado: produce afirmaciones en JSON, cada una con un identificador de fuente (S1..S8).
-- Citación verificable: asocia cada afirmación a un extracto de fuente proporcionado en el contexto.
-- Abstención controlada: se niega a responder cuando las fuentes suministradas no cubren la pregunta (84 ejemplos de rechazo en el entrenamiento).
-- Investigación jurídica sobre derecho de la UE limitada al corpus entrenado: RGPD y sentencias C-131/12 y C-136/17.
-- Integración en pipelines RAG: diseñado para recibir extractos recuperados y devolver claims citados.
-- Capacidades multilingües: no disponibles; el modelo declara únicamente inglés.
-- Tool calling / function calling: no documentado en la información proporcionada.
-- Razonamiento multi-paso o modo de pensamiento: no documentado.
+- Generación de texto conversacional en inglés sobre el modelo base Qwen2.5-3B-Instruct.
+- Respuesta basada en extractos: produce afirmaciones estructuradas en JSON a partir de fuentes suministradas en el contexto.
+- Citación disciplinada: cada afirmación incluye un identificador de fuente (S1..S8).
+- Abstención (refusal): el modelo rechaza responder cuando las fuentes proporcionadas no cubren la pregunta.
+- Especialización en contenido del RGPD y jurisprudencia del TJUE (C-131/12 y C-136/17).
+- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo de razonamiento extendido en la información disponible.
 
 ## Casos de uso
 
-- Asistente de consulta sobre RGPD con trazabilidad: el modelo recibe extractos del reglamento recuperados por un sistema RAG y devuelve afirmaciones en JSON con identificadores de fuente, lo que permite auditar cada respuesta contra el texto original.
-- Verificación de citas en borradores jurídicos: dado un conjunto de provisiones y sentencias, el modelo genera claims citados que un revisor humano puede contrastar, reduciendo el riesgo de referencias inventadas.
-- Módulo de abstención en pipelines legales: su entrenamiento específico con ejemplos de rechazo permite integrarlo como capa que detecta cuándo la evidencia recuperada es insuficiente y evita responder.
-- Búsqueda jurídica estructurada: al devolver JSON con handles S1..S8, la salida se puede procesar programáticamente para enlazar respuestas con documentos fuente en una interfaz de consulta.
-- Prototipado de herramientas de compliance: útil para experimentar con flujos de respuesta basados en evidencia documental en entornos de investigación, sin sustituir la revisión de un profesional.
-- Evaluación de sistemas RAG jurídicos: sirve como componente de referencia para medir precisión y recall de citación frente a modelos base, dado que el autor publica métricas comparativas con Qwen2.5-7B.
+- Investigación jurídica asistida sobre RGPD: el modelo recibe extractos recuperados por un sistema RAG y devuelve afirmaciones con cita de la fuente concreta, lo que permite verificar cada aseveración contra el texto original.
+- Verificación de citas en pipelines RAG: al exigir un identificador de fuente por afirmación, se puede validar automáticamente que cada salida está respaldada por un documento recuperado.
+- Filtrado por abstención: en flujos donde una respuesta no fundamentada es peor que ninguna respuesta, el comportamiento de rechazo entrenado permite descartar consultas fuera de cobertura documental.
+- Prototipado de asistentes legales internos: con 3.086 millones de parámetros y licencia Apache 2.0, es viable desplegarlo en infraestructura propia para experimentación sin coste de licencia.
+- Evaluación comparativa de disciplina de citación: sirve como referencia de precisión de citas frente a modelos mayores (Qwen2.5-7B, Qwen2.5-72B, Qwen3-235B, DeepSeek-V3) en el mismo pipeline de recuperación y evaluación.
+- Extracción estructurada de disposiciones: el formato JSON de salida facilita el postprocesado y la integración en bases de datos o sistemas de gestión documental jurídica.
+- Docencia y demostraciones sobre RGPD: permite ilustrar el funcionamiento de un sistema de respuesta con fuentes citadas sobre textos normativos reales.
 
 ## Benchmarks y rendimiento
 
-Evaluación sobre 42 preguntas retenidas, con recuperación actual y juez Qwen2.5-7B-Instruct:
+La model card reporta una evaluación con recuperación, parser y juez idénticos para todos los modelos, midiendo precisión y recall de las fuentes citadas (no la corrección de la respuesta). Una pregunta tiene un artículo de referencia (gold).
 
-| Modelo | Precisión de citación | Recall de citación | Preguntas evaluadas | Notas |
-|---|---|---|---|---|
-| LexEuropa v1 | 0.95 | 0.95 | 40 de 42 | 2 errores de arranque en frío |
-| LexEuropa v2 (dataset reconstruido) | 0.93 | 0.93 | No disponible | No publicado |
-| Qwen2.5-7B stock | 0.82 | 0.88 | No disponible | Modelo base de comparación |
+| Conjunto | Modelo | Precisión | Recall |
+|---|---|---|---|
+| 42 preguntas plantilla (held-out) | lexeuropa-qwen3b-merged (v1) | 0.95 | 0.95 |
+| 42 preguntas plantilla (held-out) | Qwen2.5-7B stock | 0.91 | 0.98 |
+| 25 preguntas en lenguaje natural | lexeuropa-qwen3b-merged (v1) | 0.82 | 0.84 |
+| 25 preguntas en lenguaje natural | lexeuropa-qwen3b-merged (v1, con generador de respaldo del proyecto) | 0.86 | 0.88 |
+| 25 preguntas en lenguaje natural | Qwen2.5-7B stock | 0.67 | 0.88 |
+| 25 preguntas en lenguaje natural | Qwen2.5-72B | 0.72 | 0.88 |
+| 25 preguntas en lenguaje natural | Qwen3-235B | 0.66 | 0.92 |
+| 25 preguntas en lenguaje natural | DeepSeek-V3 | 0.68 | 0.88 |
 
-El autor advierte que las preguntas son plantilladas, por lo que los valores absolutos son optimistas; la comparación indica mejor disciplina de citación, no mejor razonamiento jurídico. Una cifra anterior de 0.29 frente a 0.24 precede a las correcciones de recuperación y no debe usarse.
+El autor señala que v1 obtiene la mejor precisión de todos los modelos probados, con un recall similar al de los modelos stock, y advierte que n=25 es pequeño y que la métrica evalúa qué fuentes se citan, no si la respuesta es correcta.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 6,2 GB en FP16/BF16 (tamaño del repositorio); alrededor de 3,5 GB en cuantización de 8 bits y unos 2 GB en 4 bits, estimaciones no documentadas por el autor.
-- GPU recomendadas: A100 o H100 para despliegue con vLLM en producción; RTX 4090 o RTX 3090 para inferencia en FP16 en una sola GPU.
-- GPU de consumo: cabe en GPUs con 8 GB o más de VRAM en cuantización de 8 bits; en 4 bits podría ejecutarse en GPUs de 4-6 GB, aunque no se documentan variantes GGUF.
-- Opciones de despliegue: vLLM (el autor indica que se sirve en un Inference Endpoint con vLLM), transformers, text-generation-inference (etiqueta endpoints_compatible). No se documentan Ollama ni llama.cpp.
+- VRAM estimada para inferencia: el repositorio ocupa 6,2 GB en safetensors (probablemente en precisión de 16 bits); en FP16 se requieren aproximadamente 6,2 GB solo para pesos, más caché KV y overhead del runtime. En cuantización de 8 bits cabría en torno a 3,5-4 GB y en 4 bits en torno a 2 GB, aunque la información proporcionada no detalla los formatos de cuantización disponibles.
+- GPU recomendadas: no especificadas en la información disponible. Por tamaño, el modelo es apto para GPUs de consumo con 8 GB o más de VRAM en FP16 y para GPUs profesionales (A100, H100) cuando se busca alto throughput.
+- Cabe en GPU de consumo: sí, previsiblemente en tarjetas con 8 GB o más de VRAM en FP16 (por ejemplo, RTX 3060 Ti, RTX 4060 Ti, RTX 4070 y superiores), aunque este dato no está confirmado en la información proporcionada.
+- Opciones de despliegue: el autor indica que se sirve en un vLLM Inference Endpoint; la librería declarada es transformers y el tag `text-generation-inference` sugiere compatibilidad con TGI. No se confirma soporte de llama.cpp u Ollama en la información disponible.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
+| Modelo | Parámetros | Contexto | Precisión de citas (25 preguntas NL) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LexEuropa Qwen3B Merged | 3,09 B | No disponible | Apache 2.0 | RAG jurídico UE con citas | Hugging Face, 230 descargas |
-| Qwen2.5-3B-Instruct | 3,09 B | No disponible | Apache 2.0 | Propósito general, instrucciones | Hugging Face, ampliamente disponible |
-| Qwen2.5-7B-Instruct | 7,6 B (aproximado) | No disponible | Apache 2.0 | Propósito general, instrucciones | Hugging Face, ampliamente disponible |
+| lexeuropa-qwen3b-merged | 3.086 M | No disponible | 0.82 (0.86 con generador de respaldo) | Apache 2.0 | Hugging Face |
+| Qwen2.5-7B-Instruct (stock) | 7.000 M aprox. | No disponible | 0.67 | Apache 2.0 | Hugging Face |
+| Qwen2.5-72B-Instruct (stock) | 72.000 M aprox. | No disponible | 0.72 | Apache 2.0 (según familia Qwen2.5) | Hugging Face |
+| DeepSeek-V3 (stock) | No disponible | No disponible | 0.68 | No disponible | Hugging Face |
 
-La comparación con Qwen2.5-7B-Instruct aparece en la evaluación del propio autor como referencia de citación (0.82/0.88 frente a 0.95/0.95 de LexEuropa v1), aunque el tamaño es más del doble. No se dispone de datos de benchmarks estándar (MMLU, HumanEval, GSM8K) para este modelo.
+La comparación se limita a la métrica de precisión de citas reportada por el autor; no hay datos de benchmarks generales (MMLU, HumanEval, GSM8K) para este modelo en la información disponible. Los recuentos de parámetros de los modelos comparados son aproximados y no proceden de la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Corpus de entrenamiento muy reducido: tres documentos en inglés (RGPD, C-131/12 y C-136/17); el conocimiento jurídico fuera de ese corpus es inexistente.
-- Puede rechazar preguntas que requieran síntesis entre un estatuto y una sentencia, según reconoce el autor.
-- Defecto conocido en la v1: algunas afirmaciones objetivo se truncaban en referencias cruzadas en línea; corregido solo en una v2 no publicada.
-- Las métricas de evaluación son optimistas por el uso de preguntas plantilladas; no deben interpretarse como rendimiento general.
-- Riesgo de alucinación: aunque el diseño fuerza citas a handles S1..S8, no hay garantía de que la asociación entre afirmación y extracto sea semánticamente correcta.
-- Idioma: solo inglés; no se declara soporte de castellano ni de otras lenguas de la UE.
-- Licencia Apache 2.0 permite uso comercial, pero el modelo es un prototipo de investigación y no constituye asesoramiento jurídico.
-- Sin datos publicados de sesgos, contexto máximo efectivo ni comportamiento fuera del dominio jurídico.
-- Descargas y adopción muy bajas (230 descargas, 0 likes), lo que limita la validación comunitaria.
+- Solo inglés: no soporta castellano ni otros idiomas, lo que limita su uso directo en entornos en español.
+- Entrenado únicamente sobre el RGPD y dos sentencias del TJUE (C-131/12 y C-136/17); su cobertura normativa es muy estrecha.
+- Puede rechazar preguntas que las fuentes sí responden; el proyecto mitiga esto reintentando con un modelo más potente.
+- Puede citar un considerando (recital) en lugar del artículo operativo.
+- El objetivo del entrenamiento es el formato de salida y la disciplina de citación, no el razonamiento jurídico general.
+- Riesgo de alucinación: aunque está entrenado para citar fuentes, la model card no garantiza la corrección del contenido de las afirmaciones; la evaluación mide fuentes citadas, no respuestas correctas.
+- La evaluación se basa en 25 preguntas en lenguaje natural, una muestra pequeña; el autor pide interpretar los resultados como evidencia de disciplina de citación, no de calidad jurídica.
+- Es un prototipo de investigación y no constituye asesoramiento jurídico.
+- Esta versión está superada por `lexeuropa-qwen3b-merged-v4`; se mantiene para comparación y solo es preferible si no se usa expansión de artículos.
+- Licencia Apache 2.0: permite uso comercial, pero no se documentan sesgos específicos ni evaluaciones de seguridad en la información disponible.
+- No se documentan capacidades de tool calling ni de agentes, por lo que integrarlo en flujos agénticos requiere validación adicional.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/iPwnds/lexeuropa-qwen3b-merged
-- Repositorio del proyecto: https://github.com/lumenworksco/-LexEuropa
+- Modelo en Hugging Face: https://huggingface.co/iPwnds/lexeuropa-qwen3b-merged
+- Repositorio del proyecto LexEuropa: https://github.com/lumenworksco/-LexEuropa
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct

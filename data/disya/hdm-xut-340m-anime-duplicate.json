@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "Disya/HDM-xut-340M-anime-Duplicate",
+  "slug": "disya-hdm-xut-340m-anime-duplicate",
+  "author": "Disya",
+  "url": "https://huggingface.co/Disya/HDM-xut-340M-anime-Duplicate",
+  "created_at": "2026-11-19T23:22:08.000Z",
+  "updated_at": "2026-11-19T23:22:08.000Z",
+  "license": "cc",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-generation-inference",
+    "anime",
+    "text-to-image",
+    "en",
+    "dataset:Amber-River/Pixiv-2.6M",
+    "dataset:KBlueLeaf/danbooru2023-webp-4Mpixel",
+    "arxiv:2501.04765",
+    "license:cc",
+    "diffusers:HDMXUTPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 343176720,
+  "parameters_human": "343.2M",
+  "storage_bytes": 21496852734,
+  "storage_human": "21.5 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

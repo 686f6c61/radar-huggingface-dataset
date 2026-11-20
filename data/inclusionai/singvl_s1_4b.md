@@ -2,143 +2,154 @@
 
 ## Resumen
 
-Sing VL S1 4B es un modelo de decisión multimodal desarrollado por inclusionAI y construido sobre la arquitectura Qwen3.5. A diferencia de un modelo generativo convencional, su función es responder preguntas con nombre sobre texto o JSON y hasta cuatro imágenes, devolviendo probabilidades calibradas sobre opciones predefinidas en lugar de texto libre. Cada pregunta se resuelve con un único forward pass de Transformers, lo que lo convierte en una pieza adecuada para enrutamiento, clasificación y verificación dentro de pipelines.
+Sing VL S1 4B es un modelo multimodal de decisión desarrollado por inclusionAI y construido sobre la arquitectura Qwen3.5. A diferencia de los modelos generativos convencionales, no produce texto libre: responde a preguntas nombradas y tipadas sobre entradas de texto o JSON y hasta cuatro imágenes, devolviendo distribuciones de probabilidad sobre opciones predefinidas. El modelo implementa tres tipos de decisión: *choice* (selecciona una opción entre candidatos y devuelve la probabilidad de cada una), *noul* (probabilidad de que una proposición sí/no sea verdadera) y *score* (puntuación sobre 2–10 niveles ordenados, con probabilidad por nivel y nivel esperado).
 
-El modelo expone tres tipos de decisión tipada: *choice* (selecciona una opción entre varias y devuelve la probabilidad de cada candidata), *noul* (probabilidad de que una proposición sí/no sea verdadera) y *score* (puntuación sobre 2-10 niveles ordenados, devolviendo la probabilidad de cada nivel y el nivel esperado). Esta interfaz estructurada elimina la necesidad de parsear texto generado y facilita la integración en sistemas que requieren salidas deterministas y verificables.
+El modelo cuenta con 4.539.265.536 parámetros (~4,5 mil millones) y un repositorio de 9,1 GB en formato safetensors. Cada pregunta se codifica como un prompt completo y, en peticiones de texto con múltiples preguntas, el motor agrupa esos prompts por longitud con un presupuesto de 65.536 tokens con padding por pasada forward. Esta orientación a "decisiones tipadas" lo posiciona como componente de enrutamiento, clasificación y verificación dentro de pipelines de agentes, más que como chatbot de propósito general.
 
-Con 4.539.265.536 parámetros y un repositorio de 9,1 GB en safetensors, el modelo se sitúa en el rango de 4B, lo que permite despliegues en GPU de gama alta de consumo. Su relevancia actual radica en la creciente demanda de modelos especializados en toma de decisiones y evaluación (routers, guardarraíles, clasificadores de intención) frente a los modelos generativos generalistas, y en su soporte nativo de entradas multimodales texto-imagen.
+Su relevancia actual radica en el índice público de decisión (Public Decision Index 0.3), donde obtiene 69,75 en Texto (140.178 peticiones) y 73,7495 en Visión (12.210 peticiones), superando a alternativas de la misma categoría como TypeSafe Jev 1.14, StartLux-Decision v1.1 4B y Perplexity Decider Flash v1.2. La información pública disponible sobre licencia, idiomas y detalles de entrenamiento es limitada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal basado en Qwen3.5 (image-text-to-text) |
-| Parametros totales | 4.539.265.536 |
+| Arquitectura | Transformer multimodal basado en Qwen3.5 (image-text-to-text; decision-model con decisiones tipadas) |
+| Parametros totales | 4.539.265.536 (~4,5 B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos publicados en safetensors sin cuantizar) |
+| Longitud de contexto | no disponible como ventana nominal; el motor agrupa prompts con un presupuesto de 65.536 tokens con padding por forward pass |
+| Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se construye sobre Qwen3.5, un transformer multimodal que procesa texto, JSON e imágenes en una única secuencia. La innovación principal no reside en el backbone sino en la cabeza de decisión: en lugar de generar tokens de forma autorregresiva, el modelo puntúa opciones candidatas en un solo forward pass. Para las preguntas de tipo *choice* devuelve una distribución de probabilidad sobre las opciones; para *noul*, una probabilidad binaria; y para *score*, una distribución sobre niveles ordenados junto con el valor esperado calculado como suma ponderada de índices. Las imágenes se insertan mediante marcadores `<image>` en el estado, con un marcador por imagen y en el orden de la lista proporcionada; si no se incluyen marcadores, el modelo los inserta automáticamente antes del texto de estado.
+La model card indica que Sing VL S1 se construye sobre Qwen3.5 y que es un modelo multimodal de decisión (tags `decision-model`, `typed-decisions`, `multimodal`). El modelo procesa texto o JSON junto con hasta cuatro imágenes y devuelve respuestas estructuradas por pregunta: para *choice*, una probabilidad por cada candidato; para *noul*, la probabilidad de veracidad de una proposición sí/no; y para *score*, la probabilidad de cada nivel en una escala ordenada de 2 a 10, junto con el nivel esperado calculado como la suma del índice del nivel (base cero) multiplicado por su probabilidad.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o ajuste supervisado específico. La model card únicamente describe la interfaz de decisión y los resultados de evaluación, sin detallar el proceso de entrenamiento ni las innovaciones técnicas adicionales (decodificación especulativa, atención lineal, etc.).
+El detalle técnico más destacable documentado es el motor de batching: cada pregunta se codifica como un prompt completo y, en peticiones de texto con varias preguntas, los prompts se agrupan por longitud con un presupuesto de 65.536 tokens con padding por pasada forward. No se dispone de información pública sobre el número de tokens de entrenamiento, la composición del dataset, ni sobre si se aplicaron RLHF, DPO u otras técnicas de alineación. Tampoco se documentan innovaciones como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Decisión tipada sobre texto y JSON: selección entre opciones (*choice*), verificación booleana (*noul*) y puntuación ordinal (*score*).
-- Procesamiento multimodal de hasta cuatro imágenes por consulta, con soporte de marcadores `<image>` explícitos o inserción automática.
-- Evaluación de múltiples preguntas con nombre en una sola llamada, cada una con su propio tipo, instrucciones y criterios.
-- Salidas probabilísticas calibradas por opción o nivel, aptas para umbrales y agregación posterior.
-- Capacidades de razonamiento y conocimiento evaluadas en benchmarks de texto (MMLU, GPQA, ARC, GSM8K, BBH, HLE, entre otros).
-- Capacidades de percepción visual evaluadas en CV-Bench, BLINK, RealWorldQA, CharXiv, InfographicVQA, MMMU-Pro vision y otros.
-- Soporte de tool calling y selección de funciones evaluado en BFCL, ToolRet y API-Bank.
-- Clasificación de intención y enrutamiento evaluado en BANKING77, CLINC150+OOS y RouterBench.
-- Detección de alucinaciones y verificación factual evaluada en RAGTruth y HoVer.
-- Servidor HTTP compatible con FastAPI y endpoint `POST /v1/systemone` para integración en servicios.
+- Decisión tipada sobre texto y JSON: responde a preguntas nombradas con esquemas predefinidos (`choice`, `noul`, `score`).
+- Salida probabilística calibrada: probabilidad por candidato en *choice*, probabilidad de veracidad en *noul* y distribución sobre niveles más nivel esperado en *score*.
+- Procesamiento multimodal: acepta hasta cuatro imágenes por petición, con orden de imágenes configurable (por ejemplo, orden azul-luego-rojo en los ejemplos de la model card).
+- Preguntas múltiples por petición: el motor agrupa prompts por longitud con presupuesto de 65.536 tokens con padding.
+- Evaluación en tareas de tool calling y enrutamiento: BFCL (96,81 de exactitud de caso), API-Bank (84,45), ToolRet (nDCG@10 de 67,96), When2Call MCQ (90,61).
+- Clasificación de intención: BANKING77 (Macro-F1 94,00) y CLINC150+OOS (Macro-F1 97,03).
+- Verificación de afirmaciones y NLI: ContractNLI (84,05), ANLI (78,29), NLI4CT (86,41), HoVer (89,25).
+- Detección de alucinación en RAG: RAGTruth con F1 de clase alucinada de 83,49.
+- Razonamiento y conocimiento: MMLU (82,93), ARC-Challenge (96,25), HellaSwag (96,48), BBH (88,61), GPQA Diamond (53,06).
+- Matemáticas: GSM8K (73,84) y CLadder (94,72).
+- Comprensión de documentos e infografías: InfographicVQA (96,31), KIE CORD+FUNSD (95,82), CharXiv (86,65).
+- Capacidades multilingües: no disponible (no se documentan idiomas soportados).
 
 ## Casos de uso
 
-- Enrutamiento de consultas en sistemas multi-modelo: el modelo puede actuar como router que, dada una consulta de texto o una imagen, seleccione entre varios modelos o pipelines disponibles mediante preguntas *choice*, con la ventaja de devolver probabilidades por candidato para aplicar umbrales de confianza.
-- Clasificación de intención en asistentes conversacionales: con preguntas *choice* sobre un conjunto cerrado de intenciones (por ejemplo, las 77 clases de BANKING77 o las 150 de CLINC150), el modelo ofrece una alternativa determinista al parseo de texto generado.
-- Verificación de hechos y guardarraíles: mediante preguntas *noul* sobre proposiciones concretas, se puede comprobar si una afirmación está respaldada por el contexto, útil en pipelines RAG para filtrar respuestas alucinadas.
-- Moderación de contenido multimodal: con preguntas *score* o *choice* sobre imágenes y texto, el modelo puede puntuar el grado de toxicidad o clasificar memes dañinos, como refleja su evaluación en Hateful Memes.
-- Extracción de información de documentos e infografías: con hasta cuatro imágenes por consulta, puede responder preguntas de elección sobre campos de formularios, tablas o gráficos (evaluado en InfographicVQA, KIE y CharXiv).
-- Evaluación de calidad en pipelines de generación: usando preguntas *score* de 2-10 niveles, se puede puntuar la calidad de una respuesta o la relevancia de un documento recuperado, con valor esperado como métrica agregable.
-- Selección de herramientas en agentes: con preguntas *choice* sobre un catálogo de funciones, el modelo decide qué herramienta invocar, evaluado en BFCL con una precisión de caso exacto de 96,81 en el modo no-skill.
+- Enrutamiento de peticiones en pipelines de agentes: usar decisiones `choice` para seleccionar la herramienta o el subagente adecuado, con probabilidad por candidato que permite aplicar umbrales de confianza y fallback; los resultados en BFCL (96,81) y API-Bank (84,45) respaldan este uso.
+- Clasificación de intención en atención al cliente: decisiones `choice` sobre categorías predefinidas para dirigir tickets o conversaciones al flujo correcto, apoyándose en BANKING77 (Macro-F1 94,00) y CLINC150+OOS (Macro-F1 97,03).
+- Verificación de respuestas en sistemas RAG: decisiones `noul` para comprobar si una afirmación está respaldada por el contexto recuperado, con RAGTruth (F1 de clase alucinada 83,49) y HoVer (89,25) como referencias.
+- Moderación de contenido multimodal: decisión `noul` sobre memes e imágenes (Hateful Memes, 71,64 en precisión no-skill) para marcar contenido potencialmente dañino antes de la revisión humana.
+- Extracción y validación de documentos: `choice` y `score` sobre imágenes de recibos, formularios e infografías (KIE 95,82, InfographicVQA 96,31) para clasificar campos y puntuar la calidad de la extracción.
+- Puntuación de relevancia en búsqueda y recomendación: decisión `score` sobre 2–10 niveles para ordenar resultados, con referencias en Amazon ESCI (Macro-F1 60,74) y BRIGHT (nDCG@10 de 47,51).
+- Control de calidad de datos sintéticos: `score` para puntuar pares instrucción-respuesta o ediciones (Humicroedit, 67,16) y filtrar muestras de baja calidad antes del entrenamiento.
+- Selección de modelo en cascadas de inferencia: `choice` para decidir qué modelo (pequeño o grande) debe atender una consulta; la model card reporta RouterBench (79,83 de calidad seleccionada) como referencia de esta tarea.
 
 ## Benchmarks y rendimiento
 
-La model card publica resultados del Public Decision Index 0.3, comparando con TypeSafe Jev 1.14, StartLux-Decision v1.1 4B y Perplexity Decider Flash v1.2 (4B).
+Resultados del Public Decision Index 0.3 reportados en la model card (índices agregados y comparativa entre modelos):
 
 | Panel | Sing VL S1 | TypeSafe Jev 1.14 | StartLux-Decision v1.1 4B | Perplexity Decider Flash v1.2 (4B) |
-|---|---:|---:|---:|---:|
-| Text | **69.76** | 60.70 | 67.8 | 60.1 |
-| Vision | **73.94** | — | 67.90 | 72.5 |
+| :---: | ---: | ---: | ---: | ---: |
+| Text | 69,76 | 60,70 | 67,8 | 60,1 |
+| Vision | 73,75 | — | 67,90 | 72,5 |
 
-Resultados destacados por dataset (modo non-skill / modo skill):
+Desglose de Visión (11 datasets; ejecución histórica con presupuesto de imagen mayor, índice 73,94; la ejecución enviada con tope de 1.638.400 píxeles obtiene 73,7495):
 
-| Dataset | Non-Skill | Skill |
-|---|---:|---:|
-| CV-Bench | 87.34 | 79.12 |
-| BLINK | 72.11 | 56.83 |
-| RealWorldQA | 82.17 | 70.87 |
-| CharXiv | 86.65 | 82.21 |
-| InfographicVQA | 96.31 | 95.08 |
-| Mind2Web | 87.67 | 83.56 |
-| Winoground | 93.12 | 86.25 |
-| KIE (CORD+FUNSD) | 95.82 | 93.12 |
-| Moderation (Hateful Memes) | 71.64 | 43.28 |
-| R-Bench-M | 49.77 | 39.72 |
-| MMMU-Pro vision | 50.17 | 42.85 |
-| BFCL | 96.81 | 95.70 |
-| ToolRet | 67.96 | 63.00 |
-| API-Bank | 84.45 | 84.15 |
-| BANKING77 | 94.00 | 93.92 |
-| CLINC150+OOS | 97.03 | 97.01 |
-| ContractNLI | 84.05 | 76.94 |
-| ANLI | 78.29 | 67.48 |
-| MMLU | 82.93 | 77.24 |
-| GPQA Diamond | 53.06 | 37.41 |
-| ARC-Easy | 99.03 | 98.71 |
-| ARC-Challenge | 96.25 | 95.00 |
-| WinoGrande | 89.82 | 79.64 |
-| HellaSwag | 96.48 | 95.31 |
-| GSM8K | 73.84 | 68.68 |
-| MuSR | 65.82 | 45.66 |
-| BRIGHT | 47.51 | 40.62 |
-| FinEntity | 95.19 | 92.93 |
-| NLI4CT | 86.41 | 73.56 |
-| CRUXEval | 78.07 | 65.21 |
-| CLadder | 94.72 | 89.44 |
-| HLE | 12.77 | 0.00 |
-| MMLU-Pro | 68.40 | 64.46 |
-| BBH | 88.61 | 83.49 |
-| RAGTruth | 83.49 | 65.77 |
-| HoVer | 89.25 | 78.50 |
-| When2Call MCQ | 90.61 | 87.48 |
-| New Yorker caption matching | 80.49 | 75.61 |
-| Public Text Index (weighted aggregate) | 77.26 | 69.76 |
+| Dataset | Non-Skill (Accuracy) | Skill |
+| --- | ---: | ---: |
+| CV-Bench | 87,34 | 79,12 |
+| BLINK | 72,11 | 56,83 |
+| RealWorldQA | 82,17 | 70,87 |
+| CharXiv | 86,65 | 82,21 |
+| InfographicVQA | 96,31 | 95,08 |
+| Mind2Web | 87,67 | 83,56 |
+| Winoground | 93,12 | 86,25 |
+| KIE (CORD+FUNSD) | 95,82 | 93,12 |
+| Moderation (Hateful Memes) | 71,64 | 43,28 |
+| R-Bench-M | 49,77 | 39,72 |
+| MMMU-Pro vision | 50,17 | 42,85 |
+| Public Vision Index | — | 73,94 |
 
-Los datasets marcados con † en la model card (RouterBench, SGD/SGD-X, MMLU, ARC-Easy, ARC-Challenge, SimpleBench) se reportan por separado y se excluyen del Text Index. SGD/SGD-X muestra un resultado anómalo bajo (8,33 en non-skill, 0,00 en skill), lo que conviene tener en cuenta.
+Desglose de Texto (43 datasets; se muestran los valores Non-Skill y Skill más relevantes):
+
+| Dataset | Metrica original | Non-Skill | Skill |
+| --- | --- | ---: | ---: |
+| BFCL | Exactitud de caso | 96,81 | 95,70 |
+| ToolRet | nDCG@10 | 67,96 | 63,00 |
+| API-Bank | Accuracy | 84,45 | 84,15 |
+| BANKING77 | Macro-F1 | 94,00 | 93,92 |
+| CLINC150+OOS | Macro-F1 | 97,03 | 97,01 |
+| RouterBench † | Calidad seleccionada | 79,83 | 52,71 |
+| ContractNLI | Macro-F1 | 84,05 | 76,94 |
+| ANLI | Macro-F1 | 78,29 | 67,48 |
+| MMLU † | Accuracy | 82,93 | 77,24 |
+| GPQA Diamond | Accuracy | 53,06 | 37,41 |
+| ARC-Challenge † | Accuracy | 96,25 | 95,00 |
+| HellaSwag | Accuracy | 96,48 | 95,31 |
+| GSM8K | Accuracy | 73,84 | 68,68 |
+| MuSR | Accuracy | 65,82 | 45,66 |
+| BRIGHT | nDCG@10 | 47,51 | 40,62 |
+| Amazon ESCI | Macro-F1 | 60,74 | 50,75 |
+| FinEntity | Macro-F1 | 95,19 | 92,93 |
+| NLI4CT | Macro-F1 | 86,41 | 73,56 |
+| CRUXEval | Accuracy | 78,07 | 65,21 |
+| CLadder | Accuracy | 94,72 | 89,44 |
+| HLE | Accuracy | 12,77 | 0,00 |
+| MMLU-Pro | Accuracy | 68,40 | 64,46 |
+| BBH | Accuracy | 88,61 | 83,49 |
+| RAGTruth | F1 de clase alucinada | 83,49 | 65,77 |
+| HoVer | Accuracy | 89,25 | 78,50 |
+| When2Call MCQ | Accuracy | 90,61 | 87,48 |
+| Public Text Index | Agregado ponderado | 77,26 | 69,76 |
+
+† La model card indica que el Decision Index reporta estos datasets por separado y los excluye del Text Index.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp16/bf16: aproximadamente 9-10 GB solo para pesos (4,54B parámetros), más overhead de activaciones y caché KV, por lo que se recomienda al menos 16 GB de VRAM para comodidad.
-- En cuantización de 8 bits, el peso se reduciría a unos 4,5-5 GB, aunque no se publican pesos cuantizados oficiales ni se documentan tipos de cuantización soportados.
-- GPU recomendadas: A100, H100 o L40S para despliegues de producción con concurrencia; RTX 4090 (24 GB) y RTX 3090 (24 GB) como opciones viables en una sola GPU.
-- Cabe en GPU de consumo de gama alta con 24 GB (RTX 4090, RTX 3090) en precisión completa; en tarjetas de 16 GB (RTX 4080, RTX 4060 Ti 16 GB) probablemente requiera cuantización, no documentada oficialmente.
-- Opciones de despliegue: el repositorio incluye código de inferencia propio (`inference/model.py`) y un servidor FastAPI (`serve.py`) con endpoint `POST /v1/systemone`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, dado que el modelo no es generativo autorregresivo y requiere la cabeza de decisión personalizada.
-- Latencia y throughput: no disponibles. Al resolver cada pregunta con un único forward pass, la latencia por consulta debería ser sustancialmente menor que la de un modelo generativo equivalente, pero no se publican cifras.
+- VRAM estimada para inferencia: no disponible de forma explícita en la información proporcionada. Con 4,539 mil millones de parámetros, la inferencia en precisión nativa (bf16/fp16) requiere aproximadamente 9 GB solo para pesos, más overhead de activaciones y del procesador de imágenes; en cuantización de 8 bits se situaría en torno a 4,5–5 GB y en 4 bits en torno a 2,5–3 GB, aunque estas cifras son estimaciones de referencia y no datos publicados por el autor.
+- GPU recomendadas: no disponible. No se documentan GPU concretas (A100, H100, RTX 4090) en la model card.
+- Compatibilidad con GPU de consumo: no disponible como dato oficial; por tamaño de pesos, un checkpoint bf16 completo no cabría en GPU de 8 GB, pero sí en GPUs de 12–16 GB o superiores, y las variantes cuantizadas podrían caber en GPUs de 8 GB.
+- Opciones de despliegue: la model card documenta exclusivamente el uso mediante la librería `transformers` con Python 3.12, PyTorch y torchvision compatibles con el hardware, ejecutando los ejemplos desde el directorio `inference/` del repositorio. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: no disponible. El único dato de rendimiento publicado es el batching por longitud con presupuesto de 65.536 tokens con padding por forward pass en peticiones de texto multi-pregunta.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Public Text Index | Public Vision Index | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Sing VL S1 4B | 4,54B | no disponible | 69,76 | 73,94 | no disponible | Hugging Face (inclusionAI) |
-| TypeSafe Jev 1.14 | no disponible | no disponible | 60,70 | — | no disponible | no disponible |
-| StartLux-Decision v1.1 4B | ~4B | no disponible | 67,8 | 67,90 | no disponible | no disponible |
-| Perplexity Decider Flash v1.2 (4B) | ~4B | no disponible | 60,1 | 72,5 | no disponible | no disponible |
+| Modelo | Parametros | Contexto | Public Text Index | Public Vision Index | Licencia | Disponibilidad |
+|---|---:|---|---:|---:|---|---|
+| Sing VL S1 4B | 4,539 B | Presupuesto de 65.536 tokens con padding por forward pass | 69,76 | 73,75 | no disponible | Hugging Face (inclusionAI/SingVL_S1_4B) |
+| TypeSafe Jev 1.14 | no disponible | no disponible | 60,70 | — | no disponible | mencionado en la model card; disponibilidad pública no confirmada |
+| StartLux-Decision v1.1 4B | ~4 B (según nombre) | no disponible | 67,8 | 67,90 | no disponible | mencionado en la model card; disponibilidad pública no confirmada |
+| Perplexity Decider Flash v1.2 (4B) | ~4 B (según nombre) | no disponible | 60,1 | 72,5 | no disponible | mencionado en la model card; disponibilidad pública no confirmada |
 
-Sing VL S1 lidera ambos paneles del Public Decision Index 0.3 frente a los tres comparadores publicados en la model card. La ventaja es más amplia en texto (+1,96 puntos sobre StartLux, +9,06 sobre TypeSafe Jev) que en visión (+1,44 sobre Perplexity Decider Flash, +6,04 sobre StartLux). No se dispone de información sobre contexto, licencia ni disponibilidad de los modelos comparadores más allá de lo reportado.
+Los tres comparadores pertenecen a la misma categoría de modelos de decisión y sus cifras proceden del Public Decision Index 0.3 reportado por el autor de Sing VL S1; no se dispone de verificación independiente de esos resultados ni de sus especificaciones técnicas completas.
 
 ## Limitaciones y advertencias
 
-- La licencia no está disponible en la información proporcionada, por lo que no puede confirmarse si se permite uso comercial; es imprescindible verificar la licencia en el repositorio antes de cualquier despliegue en producción.
-- No se documentan los idiomas soportados; la evaluación se realiza íntegramente en inglés, por lo que el rendimiento en castellano u otros idiomas es desconocido.
-- No se publica la longitud de contexto, lo que impide planificar el tamaño máximo de estado (texto, JSON o imágenes) que puede procesar.
-- El modelo no es generativo: no produce texto libre, solo probabilidades sobre opciones predefinidas. No debe usarse para tareas de generación, resumen o diálogo abierto.
-- El límite de cuatro imágenes por consulta restringe su uso en documentos de muchas páginas o vídeo.
-- Riesgo de alucinación inherente a los benchmarks de conocimiento: HLE obtiene 12,77 y GPQA Diamond 53,06 en modo non-skill, lo que indica que el conocimiento experto es limitado y no debe confiarse ciegamente en dominios especializados.
-- El resultado anómalo en SGD/SGD-X (8,33 y 0,00) sugiere un fallo de formato o de adaptación a ese esquema de diálogo concreto, que conviene investigar antes de usar el modelo en ese tipo de tareas.
-- No se documentan sesgos conocidos ni se publican evaluaciones de sesgo o seguridad más allá de Hateful Memes (71,64 en non-skill, 43,28 en skill), donde el rendimiento cae notablemente en modo skill.
-- El código de inferencia requiere Python 3.12 y versiones de PyTorch y torchvision compatibles con el hardware; no hay integración con librerías de serving estándar, lo que añade coste de ingeniería.
-- El repositorio tiene 0 descargas y 1 like en el momento de la consulta, lo que indica una adopción aún muy limitada y escasa validación por parte de la comunidad.
+- No es un modelo generativo de texto libre: solo responde a preguntas nombradas con esquemas `choice`, `noul` o `score`; no puede usarse como chatbot conversacional general.
+- Licencia no disponible: no se puede confirmar si el uso comercial está permitido; es imprescindible verificar los términos antes de cualquier despliegue en producción.
+- Idiomas soportados no documentados: no hay garantía de comportamiento multilingüe fuera del inglés, y varios benchmarks del índice (iSarcasmEval, New Yorker caption matching) están etiquetados como ingleses.
+- Riesgo de alucinación: aunque obtiene 83,49 de F1 en la clase alucinada de RAGTruth, en configuraciones con skill baja a 65,77; en tareas de conocimiento profundo el rendimiento cae (HLE 12,77, GPQA Diamond 53,06), lo que limita su uso como verificador de hechos complejos.
+- Sesgos conocidos: no documentados en la información disponible. Los resultados en moderación (Hateful Memes 71,64 en no-skill frente a 43,28 en skill) sugieren sensibilidad a la formulación de la pregunta, no sesgos de contenido documentados.
+- Dependencia de la formulación del prompt: la brecha entre métricas Non-Skill y Skill es grande en varios datasets (SGD/SGD-X 8,33 frente a 0,00; Humicroedit 67,16 frente a 34,32; cfcolor 70,14 frente a 44,04), lo que indica fragilidad ante cambios en el formato de las preguntas.
+- Cobertura de imagen limitada: la ejecución enviada usa un tope de 1.638.400 píxeles; con presupuestos mayores el índice histórico sube a 73,94, pero el resultado oficial es 73,7495.
+- Resultados en tareas de razonamiento abstracto débiles: ChessBench 26,88, SimpleBench 50,00 y SATA-Bench 53,88.
+- Dependencia de código de inferencia propio: los ejemplos requieren ejecutar desde el directorio `inference/` del repositorio con Python 3.12 y builds de PyTorch/torchvision compatibles; no se documentan integraciones con servidores de inferencia estándar.
+- Fecha de creación del repositorio (2026-11-11) y actualización (2026-11-18): verificar la vigencia de los resultados y posibles revisiones posteriores.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/inclusionAI/SingVL_S1_4B
-- No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos.
+- Resultados de visión fijados (vision-scores.json): https://huggingface.co/datasets/echoxvf/SingVL_S1_4B-DI-results/blob/90ec7e159da6fa21d762f1f75876ea79049d0f4a/runs/singvl-s1-4b-vision/vision-scores.json
+- Paper: no disponible en la información proporcionada
+- Blog: no disponible en la información proporcionada
+- Repositorio de código: no disponible en la información proporcionada (la model card menciona un directorio `inference/` dentro del repositorio del modelo)
+- Demo: no disponible en la información proporcionada

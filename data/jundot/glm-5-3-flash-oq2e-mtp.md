@@ -2,53 +2,54 @@
 
 ## Resumen
 
-GLM-5.3-Flash-oQ2e-mtp es un checkpoint cuantizado en formato MLX del modelo multimodal zai-org/GLM-5.3-Flash, publicado por el usuario Jundot. Se trata de un modelo de mezcla de expertos (MoE) nativamente multimodal, con 321.323 millones de parametros totales y 18.000 millones de parametros activos por token, que combina atencion dispersa y atencion lineal con Manifold-Constrained Hyper-Connections (mHC). El checkpoint incluye las tres partes del modelo original: el backbone de lenguaje (313.327 millones de parametros logicos), el codificador de vision (0.564 millones) y la cabeza de prediccion multi-token o MTP (7.433 millones).
+GLM-5.3-Flash-oQ2e-mtp es una cuantizacion mixta en formato MLX del modelo zai-org/GLM-5.3-Flash, un modelo de mezcla de expertos (MoE) nativamente multimodal con 321.323 millones de parametros totales y 18.000 millones de parametros activos. Lo publica el usuario Jundot dentro del ecosistema oMLX, una herramienta de cuantizacion para Apple Silicon, y esta disenado para ejecutar un modelo de 320B en hardware con memoria unificada limitada mediante una asignacion agresiva de bits por capa.
 
-La relevancia de esta publicacion esta en la cuantizacion: se ha generado con oQ (oMLX v0.7.1) mediante cuantizacion de precision mixta y la denominada Improved oQe Quantization, con un promedio efectivo de 2,746 bits por peso. El resultado comprime el modelo a 110,3 GB en disco (102,725 GiB), lo que lo hace desplegable en equipos Apple Silicon de gama alta con memoria unificada grande, algo imposible con el checkpoint original en BF16.
+La relevancia de esta ficha radica en que comprime el checkpoint completo (backbone de lenguaje, codificador de vision y cabeza de prediccion multi-token) hasta 102,725 GiB con un promedio efectivo de 2,746 bits por peso, manteniendo el backbone en 2,677 bits por peso. La actualizacion del 19 de noviembre de 2026 re-cuantiza el modelo con el redondeo oQe refinado de oMLX 0.8.0, que reduce el error de cuantizacion sin cambiar el tamano ni la velocidad.
 
-La licencia es MIT, heredada del modelo fuente, y el pipeline declarado es image-text-to-text. No se han publicado resultados de benchmarks ni la longitud de contexto soportada en la informacion disponible.
+El modelo base combina atencion dispersa y lineal con Manifold-Constrained Hyper-Connections (mHC), lo que lo situa en la categoria de modelos multimodales de gran escala con arquitectura hibrida. La licencia MIT, heredada del modelo fuente, facilita su uso comercial, si bien la cuantizacion a 2 bits introduce degradaciones que conviene evaluar antes de desplegarlo en produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE) multimodal, con atencion dispersa y atencion lineal combinadas y Manifold-Constrained Hyper-Connections (mHC) |
+| Arquitectura | Mezcla de expertos (MoE) multimodal con atencion dispersa y lineal y Manifold-Constrained Hyper-Connections (mHC) |
 | Parametros totales | 321.323.031.390 (321,323B) |
 | Parametros activos | 18B |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | oQ2e de precision mixta: affine 2-bit grupo 64 (94,735% de los pesos), affine 4-bit grupo 64 (2,256%), affine 8-bit grupo 64 (2,793%), BF16 (0,189%) y FP32 (0,027%). Promedio efectivo 2,746 bits/peso |
+| Tipos de cuantizacion | oQ2e mixta: affine 2-bit grupo 64, affine 4-bit grupo 64, affine 8-bit grupo 64, BF16 y FP32 |
 | Idiomas soportados | no disponible |
-| Licencia | MIT (heredada del modelo fuente) |
-| Formato de pesos | MLX safetensors (libreria `mlx`) |
-| Tamano del repositorio | 110,3 GB (102,725 GiB) |
-| Componentes incluidos | Backbone de lenguaje, codificador de vision y cabeza MTP |
-| Modelo base | zai-org/GLM-5.3-Flash |
+| Licencia | MIT |
+| Formato de pesos | safetensors (MLX), 110,3 GB en repositorio |
+| Bits efectivos por peso | 2,677 (backbone de lenguaje), 2,746 (checkpoint completo) |
+| Componentes incluidos | Backbone de lenguaje (313,327B), codificador de vision (0,564B), cabeza MTP (7,433B) |
+| Libreria | mlx |
 | Pipeline | image-text-to-text |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura del modelo fuente es una mezcla de expertos multimodal nativa con 321.323 millones de parametros totales y 18.000 millones activos por token, lo que implica un ratio de activacion de aproximadamente el 5,6%. El diseno combina mecanismos de atencion dispersa con atencion lineal, y anade Manifold-Constrained Hyper-Connections (mHC) como esquema de conexiones residuales. Segun la model card, el checkpoint conserva el codificador de vision (0,564B) y una cabeza de prediccion multi-token (MTP) de 7.433 millones de parametros, lo que habilita decodificacion especulativa o prediccion de varios tokens por paso.
+El modelo base es un MoE nativamente multimodal que combina atencion dispersa y lineal con Manifold-Constrained Hyper-Connections (mHC). Con 321.323B de parametros totales y 18B activos, la relacion de activacion es de aproximadamente el 5,6 %, lo que reduce el coste computacional por token frente a un modelo denso del mismo tamano. La cabeza de prediccion multi-token (MTP) anade 7,433B de parametros y habilita decodificacion especulativa interna, un mecanismo que puede acelerar la generacion al predecir varios tokens por paso.
 
-Sobre el entrenamiento del modelo original no se dispone de informacion en los datos proporcionados: no se detallan el numero de tokens, la composicion del dataset ni si hubo etapas de RLHF o DPO. Lo que si esta documentado es el proceso de cuantizacion aplicado a este checkpoint. oQ2e asigna bits en funcion de la sensibilidad medida por capa y despues redondea cada grupo con una matriz de importancia (128 muestras x 512 tokens) y un reajuste de escala y sesgo por minimos cuadrados ponderados. El reparto final deja el 94,735% de los pesos logicos en 2 bits y reserva 4, 8, BF16 y FP32 para las capas mas sensibles, con 8,882 GiB almacenados en 8 bits y 1,131 GiB en BF16.
+La cuantizacion oQ2e de oMLX 0.8.0 asigna bits segun la sensibilidad medida de cada capa y redondea cada grupo con una matriz de importancia (128 muestras x 512 tokens) y un reajuste ponderado por minimos cuadrados de escala y sesgo. La distribucion resultante concentra el 94,735 % de los pesos logicos (304,406B) en affine 2-bit, el 2,256 % (7,248B) en affine 4-bit, el 2,793 % (8,976B) en affine 8-bit, el 0,189 % (0,607B) en BF16 y el 0,027 % (0,086B) en FP32. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO en la informacion proporcionada.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento conversacional en formato multi-turno, segun el pipeline declarado (image-text-to-text).
-- Procesamiento de imagen y texto de forma nativa: el checkpoint incluye el codificador de vision, por lo que acepta entradas multimodales imagen-texto.
-- Prediccion multi-token mediante la cabeza MTP de 7.433 millones de parametros incluida en el checkpoint, orientada a acelerar la generacion.
-- Capacidades multilingues: no disponible en la informacion proporcionada.
-- Soporte de tool calling o function calling: no disponible en la informacion proporcionada.
+- Generacion de texto y razonamiento conversacional multi-turno.
+- Procesamiento de imagen y texto de forma conjunta (pipeline image-text-to-text), con codificador de vision de 0,564B de parametros.
+- Prediccion multi-token (MTP) para decodificacion especulativa y generacion acelerada.
+- Capacidades multilingues: no disponible el detalle de idiomas soportados.
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades especiales adicionales (modo thinking, audio, etc.): no disponible en la informacion proporcionada.
+- Modo thinking o razonamiento extendido: no disponible en la informacion proporcionada.
+- Capacidades de audio: no disponible.
 
 ## Casos de uso
 
-- Despliegue local en Apple Silicon: el checkpoint esta en formato MLX y ocupa 102,725 GiB, por lo que puede cargarse en un Mac Studio o Mac Pro con memoria unificada de 192 GB o superior, permitiendo inferencia de un MoE de 321B sin depender de GPUs dedicadas ni de servicios en la nube.
-- Prototipado de aplicaciones multimodales en local: al conservar el codificador de vision, el modelo permite construir flujos de image-text-to-text (descripcion de imagenes, preguntas sobre capturas o documentos escaneados) en un equipo de sobremesa con la pila MLX.
-- Evaluacion comparativa de tecnicas de cuantizacion: con 2,746 bits por peso de media y un reparto documentado por capas, este checkpoint sirve como caso de estudio para medir la perdida de calidad frente al modelo original en BF16 y para validar la estrategia de asignacion de bits por sensibilidad.
-- Generacion acelerada mediante MTP: la cabeza de prediccion multi-token incluida puede aprovecharse para decodificacion especulativa, reduciendo el numero de pasos de generacion en cargas de texto largo.
-- Experimentacion academica con arquitecturas MoE hibridas: investigadores que quieran estudiar el comportamiento de atencion dispersa combinada con atencion lineal y conexiones mHC pueden usar este checkpoint sin necesidad de un cluster de GPUs.
-- Ajuste fino ligero o adaptadores sobre la base cuantizada: el formato MLX safetensors y la licencia MIT permiten derivar versiones adaptadas a dominios concretos partiendo de un checkpoint ya comprimido, aunque con las limitaciones propias de la cuantizacion a 2 bits.
+- Inferencia local en Apple Silicon de gran memoria: el checkpoint de 102,725 GiB permite ejecutar un modelo de 320B en equipos Mac con memoria unificada de 128 GB o superior mediante MLX, algo inviable con pesos en BF16.
+- Asistentes multimodales de escritorio: la combinacion de codificador de vision y backbone de lenguaje permite construir aplicaciones que describan imagenes, respondan preguntas sobre capturas de pantalla o extraigan informacion de documentos escaneados sin conexion a la nube.
+- Prototipado e investigacion en entornos con recursos limitados: investigadores que necesiten evaluar el comportamiento de GLM-5.3-Flash antes de comprometer hardware de centro de datos pueden usar esta version para pruebas de concepto y analisis cualitativo.
+- Generacion de texto asistida por imagen en flujos editoriales: el pipeline image-text-to-text admite tareas de alt-text, resumen de figuras y descripcion de diagramas tecnicos en lotes locales.
+- Decodificacion especulativa con MTP: la cabeza multi-token incluida permite experimentar con tecnicas de aceleracion de inferencia sobre MLX sin necesidad de un modelo borrador separado.
+- Evaluacion comparativa de cuantizacion: sirve como referencia para medir la perdida de calidad de oQ2e frente al checkpoint original en tareas de razonamiento y vision, dado que el autor documenta la metodologia de asignacion de bits.
 
 ## Benchmarks y rendimiento
 
@@ -56,39 +57,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Almacenamiento: el repositorio ocupa 110,3 GB en disco; el peso de los tensores es de 102,725 GiB, distribuidos en 88,594 GiB en 2 bits, 3,797 GiB en 4 bits, 8,882 GiB en 8 bits, 1,131 GiB en BF16 y 0,322 GiB en FP32.
-- Plataforma: la libreria declarada es `mlx`, por lo que el despliegue esta orientado a Apple Silicon (series M). No se documenta soporte para CUDA en este checkpoint.
-- Memoria unificada: al ser un modelo MoE con 321B de parametros totales, todos los pesos deben residir en memoria. Con 102,725 GiB de tensores, un equipo con 128 GB de memoria unificada queda muy justo (sin margen para cache KV ni buffers), por lo que 192 GB o mas es el rango recomendado.
-- GPU dedicadas (A100, H100, RTX 4090): no aplicables directamente a este checkpoint en formato MLX; requeririan conversion a otro formato, no documentada.
-- GPU de consumo: no cabe en ninguna GPU de consumo actual por tamano de pesos; queda fuera incluso de una RTX 4090 de 24 GB.
-- Opciones de despliegue: MLX con el stack de oMLX (la herramienta de cuantizacion usada). Otros motores como vLLM, llama.cpp, Ollama o TGI no estan documentados para este checkpoint.
-- Latencia y throughput: no disponible en la informacion proporcionada.
+- VRAM o memoria unificada estimada: 102,725 GiB para los pesos en formato MLX; se recomienda al menos 128 GB de memoria unificada para dejar margen a la cache KV y a las activaciones.
+- GPU recomendadas: Apple Silicon con memoria unificada de 128 GB o superior (por ejemplo, Mac Studio con M3 Ultra o M4 Ultra); no es compatible con CUDA de forma nativa al estar en formato MLX.
+- Cabe en GPU de consumo: no en tarjetas con 24 GB o 48 GB; requiere equipos Apple de gama alta o multiples aceleradores con memoria agregada.
+- Opciones de despliegue: MLX y oMLX para Apple Silicon; vLLM, llama.cpp, Ollama y TGI no soportan este formato de cuantizacion oQ2e de forma directa.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Parametros activos | Formato | Tamano en disco | Licencia | Disponibilidad |
+| Modelo | Parametros totales | Parametros activos | Contexto | Cuantizacion | Licencia | Formato |
 |---|---|---|---|---|---|---|
-| GLM-5.3-Flash-oQ2e-mtp (este) | 321,323B | 18B | MLX safetensors, 2,746 bits/peso efectivos | 110,3 GB / 102,725 GiB | MIT | Hugging Face |
-| zai-org/GLM-5.3-Flash | 321,323B (segun el modelo base declarado) | 18B | no disponible | no disponible | no disponible | Hugging Face |
-| Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
+| GLM-5.3-Flash-oQ2e-mtp | 321,323B | 18B | no disponible | oQ2e mixta (2,746 bits/peso) | MIT | safetensors MLX |
+| zai-org/GLM-5.3-Flash (base) | 321,323B | 18B | no disponible | BF16 original | MIT | safetensors |
+| Alternativas de 300B+ en MLX | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de benchmarks ni de especificaciones completas de modelos comparables en la informacion proporcionada, por lo que la comparativa se limita al modelo fuente.
+La comparativa directa con otros modelos de la misma categoria no esta disponible en la informacion proporcionada. La referencia mas inmediata es el checkpoint original zai-org/GLM-5.3-Flash, del que esta version reduce el almacenamiento de pesos de forma sustancial a costa de precision numerica.
 
 ## Limitaciones y advertencias
 
-- Cuantizacion agresiva: el 94,735% de los pesos logicos esta en 2 bits (affine, grupo 64). Aunque la asignacion por sensibilidad concentra 8 bits y BF16 en las capas criticas, es esperable una degradacion de calidad frente al checkpoint original en BF16 que no se ha cuantificado en la informacion disponible.
-- Sesgos conocidos: no disponible. No se documentan evaluaciones de sesgo ni de seguridad para el modelo fuente ni para esta cuantizacion.
-- Riesgo de alucinacion: no disponible. No hay evaluaciones de fidelidad factual publicadas en la informacion proporcionada.
-- Limitaciones de contexto e idioma: la longitud de contexto y la lista de idiomas soportados no se especifican en los datos disponibles.
-- Licencia: MIT, heredada del modelo fuente, lo que en principio permite uso comercial, pero conviene verificar las condiciones del modelo base original.
-- Trazabilidad: el repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y fue creado y actualizado el mismo dia (11 de octubre de 2026), por lo que no hay evidencia de validacion por parte de la comunidad.
-- Restriccion de plataforma: el formato MLX limita el uso a hardware Apple Silicon; no se documenta una ruta de conversion a GGUF, safetensors estandar o formatos compatibles con CUDA.
-- Despliegue en produccion: no hay datos de latencia, throughput ni estabilidad bajo carga, y el tamano de 102,725 GiB en memoria unificada restringe el uso a equipos de gama muy alta.
-- La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces obtenidos no guardan relacion con el tema y se han descartado.
+- La cuantizacion a 2 bits en el 94,735 % de los pesos logicos degrada la fidelidad numerica; el propio autor indica que el redondeo oQe refinado reduce el error, lo que implica que versiones anteriores tenian mayor desviacion.
+- Riesgo de alucinacion: no cuantificado en la informacion disponible, pero previsible en un modelo de lenguaje de gran escala sometido a cuantizacion agresiva.
+- Sesgos conocidos: no documentados en la informacion proporcionada.
+- Idiomas soportados: no disponibles; no se puede garantizar el rendimiento en castellano sin evaluacion previa.
+- Longitud de contexto: no disponible, lo que impide planificar despliegues con ventanas largas.
+- Restricciones de licencia: MIT, heredada del modelo fuente, permite uso comercial; conviene revisar el archivo LICENSE del repositorio y las condiciones del modelo base.
+- Compatibilidad: el formato MLX y la cuantizacion oQ2e limitan el despliegue a Apple Silicon y a la herramienta oMLX; no hay soporte documentado en vLLM, TGI ni llama.cpp.
+- Requisito de memoria elevado: 102,725 GiB de pesos mas cache KV exigen hardware de gama alta, lo que descarta su uso en estaciones de trabajo convencionales.
+- Actualizacion obligatoria: el autor recomienda volver a descargar si se tenia una copia anterior al 19 de noviembre de 2026, ya que el checkpoint cambio.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Jundot/GLM-5.3-Flash-oQ2e-mtp
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
-- Repositorio de oQ / oMLX: https://github.com/jundot/omlx
-- Pull request de Improved oQe Quantization: https://github.com/jundot/omlx/pull/4385
+- Repositorio oMLX: https://github.com/jundot/omlx
+- Pull request de mejora oQe: https://github.com/jundot/omlx/pull/4930
+- Pull request de refinamiento del redondeo oQe: https://github.com/jundot/omlx/pull/5292

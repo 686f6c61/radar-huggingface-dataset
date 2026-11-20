@@ -2,108 +2,103 @@
 
 ## Resumen
 
-NVIDIA-Nemotron-3.5-Bolt-E4B-NVFP4-GGUF es un paquete de pesos en formato GGUF del modelo Nemotron-3.5-Bolt-E4B de NVIDIA, publicado por el usuario arvedo en Hugging Face. Se trata de una conversión a cuantización nativa NVFP4 (FP4 E2M1 de NVIDIA Blackwell, con factores de escala FP8 y tamano de bloque 16) pensada para ejecutarse de forma eficiente sobre GPUs Blackwell (SM_120) y, por extension, sobre arquitecturas Ada y Hopper. El modelo base emplea una arquitectura derivada de Gemma 4, con un mecanismo de Per-Layer Embedding (PLE) que en su version FP16 ocupa 9,1 GB y que aqui se compacta a Q8_0 para reducir el peso total.
+NVIDIA-Nemotron-3.5-Bolt-E4B es un modelo multimodal (texto, imagen y audio) de la familia Nemotron de NVIDIA, distribuido originalmente en BF16 bajo el identificador `nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16`. El repositorio analizado aquí es una exportación comunitaria a GGUF realizada por el usuario `arvedo`, que convierte los pesos NVFP4 (FP4 de NVIDIA) del modelo en un fichero compatible con `llama.cpp` para pruebas locales en escritorio y CPU sin necesidad de Linux ni de vLLM.
 
-El paquete ocupa 6,11 GB en su parte de texto y anade un proyector multimodal opcional de 946 MB, lo que permite su despliegue completo en GPUs de consumo con 8, 12 o 16 GB de VRAM (RTX 4060 Ti 16GB, RTX 4070, RTX 5070, RTX 5080, RTX 5090). El modelo declarado tiene 7.518.069.878 parametros totales, y la model card indica que es capaz de generar texto y, con el proyector, procesar vision y audio.
+El modelo combina un transformer de lenguaje de aproximadamente 7.500 millones de parámetros totales con un proyector multimodal independiente que cubre visión y audio, y emplea una arquitectura de embeddings por capa (PLE, Per-Layer Embedding) almacenada en Q8_0. La ventana de contexto declarada en la model card es de 128k tokens calibrados, con un vocabulario de 262k tokens.
 
-La relevancia de esta publicacion radica en que demuestra que un modelo de ~7,5B de parametros puede ejecutarse en FP4 nativo sobre hardware Blackwell con una perdida de precision muy contenida: la model card reporta un 78,64% de precision compuesta frente al 79,40% del BF16, es decir, una degradacion de solo 0,76 puntos. Ademas, ofrece un rendimiento de prefill superior al de Q4_K_M en alta concurrencia (+10,6% a c=16), lo que lo hace interesante para cargas con prompts largos.
+Su relevancia actual reside en que permite ejecutar un modelo multimodal de NVIDIA con pesos de 4 bits en GPUs Blackwell de consumo (RTX 5090) mediante `llama.cpp`, además de ofrecer modelos borrador DFlash para decodificación especulativa con una aceleración declarada del 50 % y sin pérdida de precisión. Es importante subrayar que, en `llama.cpp`, el tipo `GGML_TYPE_NVFP4` se emula por software mediante tablas de búsqueda, por lo que esta exportación no aporta mejoras de velocidad frente a un GGUF `Q4_K_M` estándar.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer derivada de Gemma 4 (con Per-Layer Embedding, PLE) |
-| Parametros totales | 7.518.069.878 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | hasta 32.768 tokens en los ejemplos de llama.cpp (`-c 32768`); no se especifica el maximo nativo del modelo base |
-| Tipos de cuantizacion | NVFP4 (E2M1, bloque 16, escalas FP8) para pesos; Q8_0 para la tabla PLE |
-| Idiomas soportados | ingles (en) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (texto) + GGUF mmproj (proyector multimodal) |
+| Arquitectura | Transformer multimodal (lenguaje + proyector visión/audio), con embeddings por capa (PLE) |
+| Parámetros totales | 7.518.069.878 |
+| Parámetros activos | no disponible (no se declara como MoE) |
+| Longitud de contexto | 128k tokens (calibrado) |
+| Tipos de cuantización | NVFP4 (E2M1) para el modelo principal; Q8_0 para la tabla PLE y el proyector recomendado; BF16 para proyector de referencia y borrador |
+| Idiomas soportados | en, de, fr, es, it, ja (la model card lista estos; el campo `language` del repo solo indica `en`) |
+| Licencia | openmdw-1.1 (Open Model Development & Weights) |
+| Formato de pesos | GGUF (también existen ediciones vLLM en safetensors NVFP4) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura del modelo base es un transformer derivado de Gemma 4, segun indica la propia model card. La innovacion estructural mas relevante es el uso de una tabla de Per-Layer Embedding (PLE), un mecanismo de embedding por capa que en exportaciones FP16 ocupa 9,1 GB y que en este paquete se cuantiza a Q8_0 para compactarlo hasta 6,11 GB sin perdida observable en las representaciones lexicas, segun el autor. El modelo se distribuye con un proyector multimodal separado que habilita entrada de vision y audio.
+La información disponible no detalla la composición del dataset de entrenamiento ni las etapas de alineación (RLHF/DPO). Lo que sí se documenta es la arquitectura de despliegue: un modelo de lenguaje transformer con embeddings por capa (PLE) almacenados en Q8_0, un proyector multimodal separado que codifica tokens visuales y de audio únicamente durante el prefill del prompt, y una cabeza de decodificación autorregresiva puramente textual sobre un vocabulario de 262k tokens.
 
-No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF, DPO o similar en la informacion proporcionada. La model card se centra en el proceso de cuantizacion y en los resultados de rendimiento, no en el entrenamiento del modelo base. Cabe senalar que la ruta multimodal de llama.cpp para Gemma 4 usa actualmente un mecanismo experimental de padding por token-0 (`[TAG_GEMMA4_IMG_PADDING]`), por lo que el autor recomienda vLLM con ejecucion tensorial nativa para obtener paridad completa en vision y audio.
+La innovación técnica destacable es el soporte de decodificación especulativa mediante los modelos borrador DFlash, que operan sobre los estados ocultos del modelo de lenguaje y, según el autor, aceleran la generación un 50 % con muestreo de rechazo que garantiza matemáticamente un 0,00 % de pérdida de precisión. Los pesos NVFP4 están calibrados a 128k de contexto. En `llama.cpp`, el tipo NVFP4 se emula por software con tablas de búsqueda durante la decodificación por lotes, en lugar de usar los Tensor Cores FP4 nativos de Blackwell.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, con soporte de razonamiento y respuesta a preguntas.
-- Razonamiento matematico y resolucion de problemas, segun los benchmarks reportados (GSM8K, MATH-500, SVAMP).
-- Generacion de codigo, evaluada en HumanEval y MBPP.
-- Seguimiento de instrucciones, medido con IFEval e IFBench.
-- Capacidades multimodales (vision y audio) mediante el proyector `mmproj` opcional; la model card cita resultados de ChartQA (52,8%), DocVQA (54,2%) y LibriSpeech (94,8%).
-- Conocimiento general y cientifico evaluado en MMLU, MMLU-Pro, ARC, SciQ, OpenBookQA y HLE.
-- Soporte de servidor HTTP compatible con la API de OpenAI mediante `llama-server`, lo que facilita la integracion con clientes existentes.
-- No se documenta soporte explicito de tool calling, function calling ni de modo thinking en la informacion disponible.
+- Generación de texto conversacional multi-turno.
+- Comprensión de imágenes (pipeline `image-text-to-text`).
+- Comprensión de audio, a través del proyector multimodal.
+- Razonamiento y respuesta a instrucciones en formato conversacional.
+- Capacidades multilingües en inglés, alemán, francés, español, italiano y japonés.
+- Decodificación especulativa acelerada mediante modelos borrador DFlash.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte explícito de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Modo "thinking" dedicado: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Asistente conversacional local en GPU de consumo: con 6,11 GB de pesos y cuantizacion NVFP4, el modelo cabe en una RTX 4060 Ti de 16 GB o una RTX 4070, permitiendo desplegar un chatbot privado sin dependencia de la nube.
-- Evaluacion de prompts largos en pipelines de agentes: el prefill de 13.601 tok/s a concurrencia 16 en RTX 5090 lo hace adecuado para flujos donde se procesan documentos o historiales extensos antes de generar la respuesta.
-- Procesamiento de documentos con vision: usando el proyector multimodal se pueden extraer respuestas sobre graficos (ChartQA) y documentos escaneados (DocVQA), util para digitalizacion y analisis de facturas o informes.
-- Transcripcion y comprension de audio: el proyector habilita tareas de reconocimiento de voz (LibriSpeech 94,8%), aprovechable en asistentes de voz o resumen de reuniones.
-- Generacion de codigo asistida en entornos con GPU unica: los resultados en HumanEval y MBPP permiten integrarlo en editores o scripts de automatizacion con un servidor `llama-server` local.
-- Razonamiento matematico y tutorizacion: los benchmarks en GSM8K, MATH-500 y SVAMP respaldan su uso en herramientas educativas que resuelven problemas paso a paso.
-- Despliegue en produccion ligera con API compatible OpenAI: al exponer un endpoint HTTP, puede sustituir a servicios en la nube en prototipos o entornos con requisitos de privacidad, siempre que el trafico sea moderado.
+- Asistente multimodal local en escritorio: el modelo puede procesar imágenes y audio junto con texto en un único flujo conversacional, adecuado para prototipos en una RTX 5090 con `llama.cpp` sin depender de infraestructura Linux/vLLM.
+- Transcripción y análisis de audio con contexto: gracias al proyector de audio y a la ventana de 128k tokens, se pueden analizar grabaciones largas y formular preguntas sobre su contenido en una sola sesión.
+- Descripción y razonamiento sobre imágenes: útil para tareas de captioning, extracción de información de capturas o documentos escaneados y preguntas visuales.
+- Evaluación comparativa de cuantizaciones: el repositorio permite contrastar NVFP4 emulado frente a `Q4_K_M` en `llama.cpp` para medir impacto de calidad y latencia en hardware de consumo.
+- Generación de texto multilingüe: atención al cliente o generación de contenido en los seis idiomas declarados (en, de, fr, es, it, ja).
+- Servicio local con `llama-server`: despliegue de un endpoint compatible con la API de OpenAI en una estación de trabajo para pruebas de integración y demos.
+- Aceleración de inferencia interactiva: uso de los borradores DFlash para reducir la latencia percibida en generación de texto largo sin sacrificar precisión.
 
 ## Benchmarks y rendimiento
 
-Precision compuesta sobre un conjunto unificado de 20.565 preguntas y 16 suites (GSM8K, MATH-500, SVAMP, IFEval, IFBench, HumanEval, MBPP, HLE, ARC, MMLU, MMLU-Pro, SciQ, OpenBookQA):
+La model card incluye una sección de benchmarks de velocidad y escalado de concurrencia en RTX 5090 con `llama.cpp`, pero los datos numéricos concretos no están disponibles en la información proporcionada (la tabla aparece truncada). No se han publicado en la información disponible resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros).
 
-| Formato | Motor | Huella | Precision compuesta | Delta vs. BF16 |
-|---|---|---|---|---|
-| Nemotron-3.5-Bolt Base BF16 | vLLM / PyTorch | 8,8 GB | 79,40% | linea base |
-| NVFP4-Blackwell-Rubin (autor) | vLLM (b12x nativo) | 4,8 GB | 78,64% | -0,76% |
-| Nemotron-3.5-Bolt Q4_K_M | llama.cpp (GGUF) | 6,18 GB | 78,87% | -0,53% |
-| Caelunshun NVFP4 | vLLM | 4,8 GB | 74,12% | -5,28% |
+Datos de rendimiento declarados de forma cualitativa:
 
-Rendimiento en RTX 5090 Blackwell (32 GB GDDR7, SM_120) con `llama-batched-bench`, `n_pp=1024`, `n_tg=512`, `-ngl 42 -c 32768 -b 2048 -ub 512 -fa on`:
-
-| Concurrencia | NVFP4 total (tok/s) | NVFP4 prefill (tok/s) | NVFP4 gen (tok/s) | Q4_K_M total (tok/s) | Q4_K_M prefill (tok/s) | Q4_K_M gen (tok/s) | Delta prefill NVFP4 |
-|---|---|---|---|---|---|---|---|
-| c=1 | 437,17 | 6.070 | 153,07 | 431,27 | 5.894 | 151,13 | +3,0% |
-| c=2 | 749,13 | 11.782 | 260,76 | 796,47 | 10.974 | 278,99 | +7,4% |
-| c=4 | 1.163,92 | 12.811 | 412,99 | 1.298,10 | 11.921 | 466,57 | +7,5% |
-| c=8 | 1.697,11 | 13.392 | 617,90 | 1.852,95 | 12.313 | 686,52 | +8,8% |
-| c=16 | 2.203,38 | 13.601 | 823,38 | 2.776,82 | 12.292 | 1.089,71 | +10,6% |
-
-Resultados multimodales citados en la model card: ChartQA 52,8%, DocVQA 54,2%, LibriSpeech 94,8% (requieren vLLM con ejecucion tensorial nativa para paridad completa).
+| Aspecto | Dato disponible |
+|---|---|
+| Aceleración con DFlash | +50 % de velocidad de generación |
+| Pérdida de precisión con DFlash | 0,00 % (garantizada por muestreo de rechazo) |
+| Mejora de velocidad del GGUF NVFP4 frente a Q4_K_M | Ninguna (emulación por software en `llama.cpp`) |
+| Benchmarks de calidad (MMLU, HumanEval, GSM8K) | No disponibles |
 
 ## Requisitos de hardware
 
-- VRAM estimada: 6,11 GB para el modelo de texto; 946 MB adicionales si se carga el proyector multimodal. Con overhead de contexto y KV cache, se recomienda al menos 8 GB para texto y 12-16 GB para multimodal con contexto amplio.
-- GPU objetivo: NVIDIA Blackwell (RTX 5090, RTX 5080, SM_120) para aprovechar NVFP4 de forma nativa; tambien compatible con Ada (RTX 4070, RTX 4060 Ti 16GB) y Hopper.
-- Cabe en GPU de consumo: si, en RTX 4060 Ti 16GB, RTX 4070, RTX 5070, RTX 5080 y RTX 5090, segun la model card.
-- Opciones de despliegue: `llama-cli` y `llama-server` (llama.cpp) para texto y multimodal; vLLM con ejecucion tensorial nativa para maxima fidelidad multimodal y para el formato NVFP4-Blackwell-Rubin.
-- Latencia y throughput: en RTX 5090 con `-ngl 42 -c 32768 -fa on`, 153,07 tok/s de generacion a concurrencia 1 y hasta 823,38 tok/s a concurrencia 16; prefill de 6.070 tok/s a c=1 y 13.601 tok/s a c=16.
+- VRAM estimada (GGUF de este repo): modelo principal de 6,11 GB más proyector recomendado Q8_0 de 532 MB, en torno a 7 GB en total; el proyector BF16 de referencia ocupa 946 MB.
+- Edición vLLM LowMemory: 4,79 GiB en disco y 4,65 GiB de VRAM, recomendada para GPUs de 6 GB o más.
+- Edición vLLM Standard: 6,00 GB en disco y 5,20 GiB de VRAM.
+- GPU recomendadas: RTX 5090 (Blackwell) para aprovechar NVFP4 nativo vía vLLM; GPUs con 6-8 GB o más para el GGUF en `llama.cpp`; A100/H100 no se mencionan en la información disponible.
+- Cabe en GPU de consumo: sí, en RTX 5090 y en GPUs con al menos 6-8 GB de VRAM para la variante GGUF.
+- Opciones de despliegue: `llama.cpp` (`llama-cli`, `llama-server`) para GGUF; vLLM para las ediciones safetensors NVFP4.
+- Latencia y throughput: no disponibles con cifras concretas; solo se declara el +50 % con DFlash.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Precision compuesta | Licencia | Formato |
+| Modelo | Parámetros | Contexto | Multimodal | Licencia | Formato |
 |---|---|---|---|---|---|
-| Nemotron-3.5-Bolt-E4B NVFP4 (este) | 7,52B | hasta 32.768 en ejemplos | 78,64% | Apache 2.0 | GGUF NVFP4 + mmproj |
-| Nemotron-3.5-Bolt-E4B Q4_K_M | 7,52B | hasta 32.768 en ejemplos | 78,87% | Apache 2.0 | GGUF Q4_K_M |
-| Nemotron-3.5-Bolt-E4B BF16 | 7,52B | no disponible | 79,40% | Apache 2.0 | safetensors / BF16 |
-| Caelunshun NVFP4 | no disponible | no disponible | 74,12% | no disponible | NVFP4 |
+| Nemotron-3.5-Bolt-E4B (este repo, GGUF) | 7,52 B | 128k | Sí (visión + audio) | openmdw-1.1 | GGUF |
+| Nemotron-3.5-Bolt-E4B (vLLM LowMemory) | 7,52 B | 128k | Sí | openmdw-1.1 | safetensors NVFP4 |
+| Nemotron-3.5-Bolt-E4B (BF16 original) | 7,52 B | 128k | Sí | openmdw-1.1 | safetensors BF16 |
+| Alternativas de otros fabricantes | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de otros modelos de la misma categoria (por ejemplo, Llama, Qwen o Mistral de ~7-8B) en la informacion proporcionada, por lo que la comparativa se limita a las variantes del mismo modelo base.
+No se dispone en la información proporcionada de datos de rendimiento comparado con modelos de terceros de tamaño similar.
 
 ## Limitaciones y advertencias
 
-- El modelo solo declara soporte de ingles; no se garantiza un rendimiento adecuado en castellano u otros idiomas.
-- La ruta multimodal de llama.cpp para Gemma 4 es experimental (padding por token-0); los resultados de vision y audio pueden degradarse fuera de vLLM.
-- La cuantizacion NVFP4 introduce una perdida de precision de 0,76 puntos frente a BF16 en el benchmark compuesto; en tareas especificas la degradacion podria ser mayor.
-- En alta concurrencia (c>=8) el throughput de generacion de NVFP4 es inferior al de Q4_K_M; el autor recomienda NVFP4 para flujos de baja concurrencia y evaluacion intensiva de prompts.
-- No se documentan sesgos conocidos, riesgos de alucinacion ni evaluaciones de seguridad en la informacion disponible.
-- La licencia Apache 2.0 permite uso comercial, pero el usuario debe verificar las condiciones del modelo base Nemotron-3.5-Bolt-E4B de NVIDIA, no detalladas en la model card.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validacion comunitaria independiente.
-- No se especifica el contexto maximo nativo del modelo base; los 32.768 tokens citados corresponden a la configuracion de los ejemplos, no necesariamente al limite arquitectonico.
+- El GGUF NVFP4 no ofrece ventajas de velocidad en `llama.cpp` frente a un `Q4_K_M` estándar, porque NVFP4 se emula por software; para máximo rendimiento en Blackwell/Rubin hay que usar las ediciones vLLM.
+- La decodificación especulativa DFlash solo acelera la generación de texto; los tokens visuales y de audio se procesan únicamente en el prefill.
+- El campo `language` del repositorio solo declara `en`, mientras que la model card lista seis idiomas; conviene validar el rendimiento real en español, alemán, francés, italiano y japonés antes de producción.
+- No hay información sobre sesgos conocidos ni sobre tasas de alucinación medidas.
+- La licencia openmdw-1.1 es una licencia "other"; deben revisarse sus términos en el enlace oficial antes de uso comercial.
+- El repositorio es una exportación comunitaria (`arvedo`), no oficial de NVIDIA; la reproducibilidad y el soporte dependen del autor.
+- No se documentan capacidades de tool calling ni de agentes, por lo que no deben asumirse en pipelines de producción.
+- El tamaño del repo (23,0 GB) incluye todos los artefactos; el modelo principal es de 6,11 GB.
 
 ## Enlaces
 
-- Hugging Face (este paquete GGUF): https://huggingface.co/arvedo/NVIDIA-Nemotron-3.5-Bolt-E4B-NVFP4-GGUF
-- Repositorio NVFP4-Blackwell-Rubin del autor: https://huggingface.co/arvedo/NVIDIA-Nemotron-3.5-Bolt-E4B-NVFP4-Blackwell-Rubin
-- llama.cpp (motor de inferencia GGUF): https://github.com/ggml-org/llama.cpp
-- vLLM (motor recomendado para multimodal): https://github.com/vllm-project/vllm
+- Repositorio Hugging Face: https://huggingface.co/arvedo/NVIDIA-Nemotron-3.5-Bolt-E4B-NVFP4-GGUF
+- Modelo base BF16: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
+- Edición vLLM LowMemory: https://huggingface.co/arvedo/Nemotron-3.5-Bolt-E4B-NVFP4-VisionAudio-LowMemory
+- Edición vLLM Standard: https://huggingface.co/arvedo/Nemotron-3.5-Bolt-E4B-NVFP4-VisionAudio
+- Licencia openmdw-1.1: https://openmdw.ai/license/1-1/
+- Patrocinador cDemy: https://cdemy.de/

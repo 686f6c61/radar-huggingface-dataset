@@ -43,31 +43,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Skymo : le plus petit score gagne | Jeu de cartes en ligne gratuit",
-      "url": "https://skymo.online/fr",
-      "snippet": "Il est maintenant possible de jouer à Skymo en ligne gratuitement ! Gratuit, sans publicité, sans système d'énergie ou de vies, et rien …"
-    },
-    {
-      "title": "Skyjo - Play Skyjo online",
-      "url": "https://www.skyjo.net/",
-      "snippet": "Select the players (human or AI bots) you want to play against by flipping the cards."
-    },
-    {
-      "title": "Skyjo en ligne gratuit : comment jouer au Skyjo en ligne ?",
-      "url": "https://infinity-area.com/article/skyjo-en-ligne-comment-jouer-gratuitement-a-ce-jeu-de-cartes-addictif-sur-pc-et-mobile",
-      "snippet": "Oct 3, 2025 · Comment jouer au Skyjo en ligne ? Découvrez les applications officielles et les sites pour jouer à Skyjo gratuit en ligne …"
-    },
-    {
-      "title": "Skyjo",
-      "url": "https://skyjo-game.vercel.app/",
-      "snippet": "SKYJO — web version (local & online) Play locally on one device, or connect online with a friend using a copy/paste code (no …"
-    },
-    {
-      "title": "Skymo : le plus petit score gagne | Jeu de cartes en ligne gratuit",
-      "url": "https://skymo.online/fr/create",
-      "snippet": "Joue à Skymo gratuitement ! Un jeu de cartes multijoueur stratégique et amusant. Défie tes amis, retourne des cartes et vise le …"
-    }
-  ]
+  "sources": []
 }

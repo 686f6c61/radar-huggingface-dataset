@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "mdcreativeagent/Malaysian-Qwen2.5-7B-Reasoning-SFT",
+  "slug": "mdcreativeagent-malaysian-qwen2-5-7b-reasoning-sft",
+  "author": "mdcreativeagent",
+  "url": "https://huggingface.co/mdcreativeagent/Malaysian-Qwen2.5-7B-Reasoning-SFT",
+  "created_at": "2026-11-20T00:57:57.000Z",
+  "updated_at": "2026-11-20T00:57:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ms",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "ms",
+    "en",
+    "dataset:mesolitica/Malaysian-Reasoning",
+    "base_model:mesolitica/Malaysian-Qwen2.5-7B-Instruct",
+    "base_model:finetune:mesolitica/Malaysian-Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693760,
+  "storage_human": "15.2 GB",
+  "context_length": null,
+  "base_model": "mesolitica/Malaysian-Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

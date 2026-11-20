@@ -52,16 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "README.md · Unluckkie/Ling-3.0-tiny-APEX-MCQ5-IK-GGUF at main",
-      "url": "https://huggingface.co/Unluckkie/Ling-3.0-tiny-APEX-MCQ5-IK-GGUF/blob/main/README.md",
-      "snippet": "Instructions to use Unluckkie/Ling-3.0-tiny-APEX-MCQ5-IK-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp Install (macOS, Linux)"
-    },
-    {
-      "title": "bartowski/Ling-3.0-tiny-GGUF · Hugging Face",
-      "url": "https://huggingface.co/bartowski/Ling-3.0-tiny-GGUF",
-      "snippet": "Instructions to use bartowski/Ling-3.0-tiny-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started ..."
-    }
-  ]
+  "sources": []
 }

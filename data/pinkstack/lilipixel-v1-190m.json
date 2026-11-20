@@ -5,7 +5,7 @@
   "author": "Pinkstack",
   "url": "https://huggingface.co/Pinkstack/LiliPixel-V1-190M",
   "created_at": "2026-11-19T16:48:00.000Z",
-  "updated_at": "2026-11-19T18:30:43.000Z",
+  "updated_at": "2026-11-19T21:10:09.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -34,7 +34,7 @@
     "diffusers:PixelArtDiTPipeline",
     "region:us"
   ],
-  "likes": 2,
+  "likes": 8,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 190580500,

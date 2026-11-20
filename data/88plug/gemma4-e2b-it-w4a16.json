@@ -5,7 +5,7 @@
   "author": "88plug",
   "url": "https://huggingface.co/88plug/Gemma4-E2B-it-W4A16",
   "created_at": "2026-05-24T05:32:09.000Z",
-  "updated_at": "2026-11-19T01:32:15.000Z",
+  "updated_at": "2026-11-19T02:05:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -47,7 +47,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 1311,
+  "downloads_30d": 1427,
   "trending_score": 0,
   "parameters": 5104297539,
   "parameters_human": "5.10B",
@@ -67,31 +67,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "YouTube Music",
-      "url": "https://music.youtube.com/",
-      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
-    },
-    {
-      "title": "YouTube Music",
-      "url": "https://www.youtube.com/youtube%20-MUSIC",
-      "snippet": "Subscribe to the YouTube Music channel to stay up on the latest news and updates from YouTube Music. ...more"
-    },
-    {
-      "title": "YouTube - YouTube",
-      "url": "https://www.youtube.com/YouTube/music",
-      "snippet": "Welcome to the official YouTube channel – a home for the biggest moments, the smallest obsessions, and everything in between. …"
-    },
-    {
-      "title": "YouTube Music",
-      "url": "https://music.youtube.com/explore",
-      "snippet": "Explore trending music and find your next favorite song. Discover the latest releases from new artists, plus enjoy new music videos …"
-    },
-    {
-      "title": "YouTube Music",
-      "url": "https://www.youtube.com/channel/UCB1lnXfEjwtfLYwZSadksrA",
-      "snippet": "(C) YouTube Music Visit the YouTube Music Channel to find today’s top talent, featured artists, and playlists. Subscribe to see the …"
-    }
-  ]
+  "sources": []
 }

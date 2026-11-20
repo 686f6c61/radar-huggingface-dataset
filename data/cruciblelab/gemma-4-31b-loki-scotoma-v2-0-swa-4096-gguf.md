@@ -2,85 +2,86 @@
 
 ## Resumen
 
-Gemma-4-31B-Loki-Scotoma-V2.0-Swa-4096-GGUF es una cuantización en formato GGUF del modelo base CrucibleLab/Gemma-4-31B-Loki-Scotoma-V2.0-Swa-4096, un fine-tuning del modelo Gemma-4-31B de Google DeepMind. El autor, CrucibleLab, ha aplicado una técnica denominada "Scotoma" que, según la documentación de modelos similares, relaja el reflejo cauteloso del modelo base, produciendo salidas más variadas, directas y creativas, sin llegar a ser un modelo sin censura. Está orientado específicamente a roleplay, escritura de historias y escritura creativa.
+Gemma-4-31B-Loki-Scotoma-V2.0-Swa-4096-GGUF es una cuantización en formato GGUF del modelo comunitario CrucibleLab/Gemma-4-31B-Loki-Scotoma-V2.0-Swa-4096, un ajuste fino de la familia Gemma orientado a escritura creativa, roleplay y narrativa. El modelo parte de una base Gemma de aproximadamente 30.700 millones de parámetros (30.697.345.596 según los pesos en safetensors) y ha sido adaptado por el autor CrucibleLab para tareas de generación literaria y conversacional. Esta variante concreta del repositorio es la versión cuantizada y publicada en GGUF, pensada para su ejecución en herramientas de inferencia local como llama.cpp u Ollama.
 
-El modelo base Gemma-4-31B es un modelo abierto de 31.000 millones de parámetros con capacidades multimodales, razonamiento y soporte para agentes, desarrollado por Google DeepMind. Este fine-tuning conserva la arquitectura subyacente pero ajusta el comportamiento para tareas de ficción y conversación inmersiva. La versión GGUF permite su ejecución en entornos con recursos limitados mediante llama.cpp, Ollama u otros motores compatibles.
+El interés de esta ficha radica en que combina un modelo de gran tamaño (clase 30B) con un formato de pesos comprimido que facilita el despliegue en hardware de consumo razonablemente equipado, algo poco habitual en modelos de esta escala. La etiqueta `swa-4096` del nombre sugiere el uso de atención de ventana deslizante (sliding window attention) con una ventana de 4096 tokens, si bien esta interpretación no está confirmada explícitamente en la información disponible. El repositorio acumula 1754 descargas y 12 me gusta, lo que indica un uso moderado dentro de la comunidad.
 
-La relevancia de este modelo radica en su especialización para narrativa y roleplay, un nicho donde los modelos generalistas suelen mostrar rigidez o excesiva cautela. Al combinar la base técnica de Gemma-4 con el ajuste Scotoma, ofrece una alternativa interesante para desarrolladores que buscan un generador de texto creativo de alta calidad con licencia Apache 2.0.
+La licencia declarada es Apache 2.0, lo que en principio permite uso comercial, aunque conviene verificar las condiciones de la licencia del modelo base original de Gemma, ya que las licencias de los modelos derivados pueden estar sujetas a restricciones adicionales. La información pública disponible sobre este modelo es limitada: no se detallan idiomas soportados, pipeline ni resultados de benchmarks.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (basada en Gemma-4-31B) |
-| Parametros totales | 30.697.345.596 |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible (el tag "swa-4096" sugiere sliding window attention de 4096, sin confirmar) |
-| Tipos de cuantizacion | GGUF (no se especifican los niveles exactos en la informacion disponible) |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer (familia Gemma); detalles específicos no disponibles |
+| Parámetros totales | 30.697.345.596 (≈30,7B) |
+| Parámetros activos | No aplica (no se indica que sea MoE) |
+| Longitud de contexto | No disponible de forma explícita; la etiqueta `swa-4096` sugiere ventana deslizante de 4096 tokens |
+| Tipos de cuantización | GGUF (el repositorio contiene múltiples variantes de cuantización; niveles concretos no disponibles) |
+| Idiomas soportados | No disponibles |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (repo de 209,7 GB con múltiples ficheros); el modelo base está en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Gemma-4-31B es un transformer multimodal desarrollado por Google DeepMind, basado en la investigacion de Gemini. Incluye capacidades de vision, razonamiento y soporte para agentes. El fine-tuning de CrucibleLab aplica la tecnica "Scotoma", que segun la documentacion de modelos similares (como ReadyArt/gemma-4-31B-it-scotoma) elimina una region acotada del comportamiento del modelo base, reduciendo la tendencia a responder con cautela o rigidez. Esto produce un estilo mas directo y creativo, especialmente util para roleplay y escritura de ficcion.
+El modelo base pertenece a la familia Gemma, una arquitectura transformer decoder-only. El nombre del repositorio incluye el sufijo `Swa-4096`, que probablemente hace referencia a sliding window attention con una ventana de 4096 tokens, una técnica que reduce el coste computacional de la atención en contextos largos limitando el alcance de cada token a una ventana local. No obstante, la información proporcionada no confirma esta interpretación ni detalla la configuración exacta de capas, cabezas de atención o dimensiones ocultas.
 
-El tag "swa-4096" sugiere el uso de sliding window attention con una ventana de 4096 tokens, aunque no se confirma en la informacion disponible. No se detallan los datos de entrenamiento, el numero de tokens utilizados ni si se aplicaron tecnicas como RLHF o DPO. El modelo base Gemma-4-31B fue entrenado con un corpus extenso y diverso, pero los detalles especificos del fine-tuning no estan publicados.
+Respecto al entrenamiento, no se dispone de datos sobre el número de tokens utilizados, la composición del dataset de ajuste fino, ni si se aplicaron técnicas de RLHF, DPO o similares. Las etiquetas del repositorio (`roleplay`, `storywriting`, `creative-writing`) indican que el ajuste fino se orientó a tareas creativas y conversacionales, pero no se documenta la metodología. El repositorio incluye la etiqueta `imatrix`, lo que sugiere que las cuantizaciones se generaron utilizando una matriz de importancia (importance matrix) para preservar mejor la calidad en la compresión. Tampoco se detalla si se emplearon técnicas como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generacion de texto creativo: especializado en roleplay, narracion de historias y escritura creativa, con un estilo menos cauteloso y mas variado que el modelo base.
-- Conversacion multi-turno: adecuado para mantener personajes y tramas coherentes en sesiones largas de roleplay.
-- Razonamiento basico: hereda las capacidades de razonamiento del modelo base, aunque el fine-tuning prioriza la creatividad sobre la precision logica.
-- Soporte de tool calling: no confirmado en la informacion disponible, aunque el modelo base lo incluye.
-- Capacidades multimodales: el modelo base es multimodal (vision), pero no se indica si el fine-tuning conserva esta capacidad.
-- Multilingue: no se especifican los idiomas soportados.
+- Generación de texto creativo: narrativa, relatos, diálogos y descripciones, según las etiquetas del repositorio.
+- Roleplay conversacional: el modelo está ajustado para mantener personajes y conversaciones multi-turno.
+- Escritura de historias: etiqueta `storywriting`, orientada a la composición de ficción.
+- Conversación general: la etiqueta `conversational` indica uso en diálogo abierto.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse mediante APIs compatibles con el formato de Hugging Face.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponibles en la información proporcionada.
+- Capacidades multilingües: no disponibles; no se especifican idiomas.
+- Capacidades especiales (visión, audio, thinking mode): no disponibles.
 
 ## Casos de uso
 
-- Roleplay interactivo: el modelo puede gestionar conversaciones multi-turno con personajes definidos, manteniendo coherencia narrativa gracias a su ventana de contexto (si se confirma el swa-4096, permitiria sesiones de hasta 4096 tokens).
-- Escritura de ficcion asistida: generacion de borradores, dialogos y descripciones para novelas, relatos o guiones, con un estilo menos formal y mas natural.
-- Creacion de mundos y lore: desarrollo de trasfondos, historias y mitologias para juegos de rol o proyectos de worldbuilding.
-- Generacion de dialogos para videojuegos: escritura de conversaciones para NPCs o misiones secundarias en producciones independientes.
-- Prototipado de narrativa interactiva: creacion rapida de historias ramificadas para juegos de texto o aventuras conversacionales.
-- Asistente de escritura creativa: apoyo a escritores para superar bloqueos, explorar alternativas de trama o generar ideas de personajes.
+- Escritura de ficción asistida: el modelo puede generar borradores de relatos y novelas por capítulos, manteniendo coherencia narrativa gracias a su tamaño de 30B y a la ventana de atención de 4096 tokens (si se confirma la interpretación de `swa-4096`). Es adecuado para autores que necesitan continuaciones coherentes de textos largos.
+- Roleplay y juegos de rol por texto: su ajuste específico en `roleplay` permite encarnar personajes con personalidad consistente en conversaciones multi-turno, útil en plataformas de entretenimiento conversacional.
+- Generación de diálogos para guiones y videojuegos: el modelo puede producir líneas de diálogo variadas y con tono consistente, integrándose en pipelines de preproducción creativa.
+- Asistencia a guionistas y equipos de contenido: generación de sinopsis, descripciones de personajes y tramas alternativas, aprovechando la cuantización GGUF para desplegarlo en estaciones de trabajo locales sin depender de la nube.
+- Prototipado de chatbots narrativos: al ser compatible con endpoints, puede servirse detrás de una API y conectarse a interfaces de chat para demos de asistentes con personalidad.
+- Experimentación e investigación en ajuste fino creativo: investigadores pueden usar esta cuantización para evaluar el comportamiento de un modelo de 30B ajustado a escritura creativa en entornos con recursos limitados, comparándolo con el modelo base en safetensors.
+- Despliegue local en hardware de consumo: la versión GGUF permite ejecutar el modelo en equipos con GPU de gama alta o incluso en CPU con suficiente RAM, facilitando pruebas sin infraestructura de servidor.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks especificos para este fine-tuning en la informacion disponible. El modelo base Gemma-4-31B ha sido evaluado en tareas de razonamiento, codigo y comprension multimodal, pero no se dispone de los numeros exactos para este modelo cuantizado. Se recomienda realizar pruebas propias en las tareas objetivo (roleplay, escritura creativa) para evaluar su rendimiento real.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: para un modelo de 31B en GGUF, se estima entre 16 GB (cuantizacion Q4) y 30 GB (cuantizacion Q8) para inferencia. No se especifican los niveles de cuantizacion incluidos en el repo.
-- GPU recomendadas: NVIDIA RTX 3090/4090 (24 GB) para cuantizaciones bajas, o A100/H100 (40-80 GB) para cuantizaciones altas o mayor velocidad.
-- Compatibilidad con consumer GPU: si, con cuantizaciones Q4 o Q5 en GPUs de 24 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, o cualquier motor compatible con GGUF. Tambien puede usarse con vLLM si se convierte a otro formato.
-- Latencia y throughput: no disponible en la informacion proporcionada.
+- VRAM estimada para inferencia: para un modelo de 30,7B parámetros, una cuantización de 4 bits requiere aproximadamente 17-19 GB de VRAM; una de 5 bits, en torno a 21-23 GB; una de 8 bits, alrededor de 32-34 GB. Estas cifras son estimaciones basadas en el tamaño del modelo y no proceden de la información proporcionada.
+- GPU recomendadas: para cuantizaciones de 4-5 bits, una RTX 4090 (24 GB) o una RTX 3090 (24 GB) pueden ser suficientes; para cuantizaciones de 8 bits o superiores, se recomiendan A100 (40/80 GB), H100 (80 GB) o múltiples GPU consumer.
+- ¿Cabe en GPU de consumo? Sí, en cuantizaciones de 4-5 bits cabe en GPU con 24 GB de VRAM; en cuantizaciones mayores requiere hardware profesional o reparto entre GPU y CPU.
+- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con GGUF; la etiqueta `endpoints_compatible` sugiere su uso detrás de APIs. vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que habría que verificar compatibilidad.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Enfoque |
-|---|---|---|---|---|
-| Gemma-4-31B (base) | 31B | no disponible | Apache 2.0 | Generalista, multimodal |
-| Gemma-4-31B-it-scotoma (ReadyArt) | 31B | no disponible | Apache 2.0 | Roleplay, escritura creativa |
-| Gemma-4-31B-Loki-Scotoma-V2.0-Swa-4096 (CrucibleLab) | 31B | no disponible (swa-4096) | Apache 2.0 | Roleplay, escritura creativa |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| CrucibleLab/Gemma-4-31B-Loki-Scotoma-V2.0-Swa-4096-GGUF | ≈30,7B | No disponible (sugerido 4096 por SWA) | Apache 2.0 | GGUF | Ajuste creativo/roleplay, cuantizado |
+| Gemma base (familia, 27B-31B) | ≈27-31B | No disponible | Términos de Gemma | Safetensors | Modelo generalista original |
+| Modelos creativos de 30B comparables | No disponible | No disponible | No disponible | No disponible | No se dispone de datos verificables |
 
-La comparativa se limita a modelos de la misma familia. No se dispone de datos de rendimiento para establecer diferencias cuantitativas.
+No se dispone de información suficiente para establecer una comparativa rigurosa con alternativas concretas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: el modelo base puede heredar sesgos presentes en sus datos de entrenamiento; el fine-tuning Scotoma no los elimina.
-- Riesgo de alucinacion: al priorizar la creatividad, puede generar contenido factualmente incorrecto o inconsistente, especialmente en contextos no narrativos.
-- Limitaciones de contexto: si el swa-4096 es correcto, la ventana de 4096 tokens puede ser insuficiente para historias muy largas o conversaciones extensas.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero se recomienda revisar los terminos del modelo base y del fine-tuning.
-- Caveat de produccion: al ser un modelo especializado en roleplay, su rendimiento en tareas tecnicas o de razonamiento logico puede ser inferior al del modelo base.
-- Informacion incompleta: no se han publicado detalles sobre el entrenamiento, los datos utilizados ni las cuantizaciones exactas, lo que dificulta la evaluacion rigurosa.
+- Sesgos conocidos: no documentados en la información disponible; los modelos de escritura creativa ajustados con datos comunitarios pueden reproducir estereotipos presentes en el corpus de ajuste.
+- Riesgo de alucinación: inherente a los modelos generativos de esta escala; en tareas factuales puede inventar datos, por lo que no es adecuado como fuente de verdad sin verificación.
+- Limitaciones de contexto: la ventana efectiva podría estar limitada a 4096 tokens si se confirma la interpretación de `swa-4096`; no se documenta la longitud máxima de contexto.
+- Limitaciones de idioma: no se especifican idiomas soportados; el ajuste fino podría estar sesgado hacia el inglés, aunque no hay datos que lo confirmen.
+- Restricciones de licencia: aunque se declara Apache 2.0, el modelo deriva de la familia Gemma, cuyos términos de licencia pueden imponer condiciones adicionales al uso comercial; conviene revisar la licencia del modelo base.
+- Caveats para producción: la información pública es escasa (sin benchmarks, sin especificaciones de contexto o idiomas), lo que dificulta una evaluación rigurosa previa al despliegue; la naturaleza creativa del ajuste puede reducir su fiabilidad en tareas técnicas o de razonamiento estructurado.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/CrucibleLab/Gemma-4-31B-Loki-Scotoma-V2.0-Swa-4096-GGUF
-- Modelo base (safetensors): https://huggingface.co/CrucibleLab/Gemma-4-31B-Loki-Scotoma-V2.0-Swa-4096
-- Modelo base original de Google: https://huggingface.co/google/gemma-4-31B
-- Documentacion de Gemma 4 (DeepMind): https://deepmind.google/models/gemma/gemma-4/
-- Repositorio oficial de Gemma (GitHub): https://github.com/google-deepmind/gemma
-- Modelo similar con tecnica Scotoma: https://huggingface.co/ReadyArt/gemma-4-31B-it-scotoma-GGUF
+- Modelo base: https://huggingface.co/CrucibleLab/Gemma-4-31B-Loki-Scotoma-V2.0-Swa-4096
+- No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

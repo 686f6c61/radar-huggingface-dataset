@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mdcreativeagent/Malaysian-Llama-3.1-8B-Instruct",
+  "slug": "mdcreativeagent-malaysian-llama-3-1-8b-instruct",
+  "author": "mdcreativeagent",
+  "url": "https://huggingface.co/mdcreativeagent/Malaysian-Llama-3.1-8B-Instruct",
+  "created_at": "2026-11-20T01:01:54.000Z",
+  "updated_at": "2026-11-20T01:01:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ms",
+    "en",
+    "zh",
+    "ta"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "ms",
+    "en",
+    "zh",
+    "ta",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 98447118360,
+  "storage_human": "98.4 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

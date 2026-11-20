@@ -44,31 +44,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Passport Tracking - Department of Foreign Affairs and Trade",
-      "url": "http://passporttracking.dfa.ie/PassportTracking/",
-      "snippet": "To track your individual passport or passport card application enter your application number."
-    },
-    {
-      "title": "Irish Passport Service",
-      "url": "https://urgentpassportappointment.dfa.ie/location?app=true",
-      "snippet": "Book an urgent passport appointment with the Irish Passport Service online."
-    },
-    {
-      "title": "Complaints Welcome · Starter Portal",
-      "url": "https://ppscomplaints.dfa.ie/complaints-welcome/",
-      "snippet": "What type of application does the portal deal with? This web portal will allow complaint submissions from those with passport …"
-    },
-    {
-      "title": "Resubmission · Starter Portal - DFA",
-      "url": "https://passportresubmissions.dfa.ie/resubmission/",
-      "snippet": "Request a new resubmission link for your Passport Online Application The Passport Service have asked you to resubmit a photo, …"
-    },
-    {
-      "title": "Resubmission Form · Starter Portal - DFA",
-      "url": "https://passportresubmissions.dfa.ie/resubmission-form/",
-      "snippet": "Request a new resubmission link for your Passport Online Application Please complete the form below to submit your request …"
-    }
-  ]
+  "sources": []
 }

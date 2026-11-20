@@ -2,104 +2,102 @@
 
 ## Resumen
 
-Kolibri-1-mlx-mixed-4-8-bit es una conversión al formato MLX del modelo Aleph-Alpha/Kolibri-1, un transformer de tipo mixture-of-experts (MoE) desarrollado originalmente por Aleph Alpha. Esta variante, publicada por el usuario eins78, cuantiza el checkpoint FP8 original con precisión mixta: cuantización afín de 4 bits para los expertos enrutados, 8 bits para proyecciones de atención, experto compartido, embeddings y `lm_head`, y router MoE en bfloat16 sin cuantizar. El objetivo es hacer viable la inferencia de un modelo de 78.100 millones de parámetros en hardware Apple Silicon con memoria unificada.
+Kolibri-1-mlx-mixed-4-8-bit es una cuantizacion en formato MLX del modelo Kolibri-1 de Aleph Alpha, desarrollada por el usuario eins78 mediante la herramienta kolibri-mlx. El modelo original es un transformer de mezcla de expertos (MoE) de 78.103.074.560 parametros totales, disenado para generacion de texto y conversacion en aleman e ingles. Esta version cuantizada reduce el peso en disco a 42 GiB y permite ejecutar el modelo en Macs con 64 GB de memoria unificada, algo inviable con los pesos originales en FP8.
 
-El modelo base cuenta con 50 capas, 384 expertos, 6 expertos enrutados más 1 compartido por token, y atención de ventana deslizante de 513 tokens en un patrón 4:1 entre atención local y completa. Está pensado para generación de texto y conversación, con soporte de modo de razonamiento (thinking) y de llamadas a herramientas en formato Hermes. La relevancia actual radica en que permite ejecutar un MoE de gran tamaño en un Mac de 64 GB, algo poco habitual fuera de clústeres con GPU.
+La relevancia de esta ficha radica en que el modelo no es cargable con mlx-lm estandar: requiere registrar la arquitectura `kolibri1` mediante el paquete externo kolibri-mlx. Ademas, la cuantizacion mixta aplicada (4 bits para expertos enrutados, 8 bits para atencion, experto compartido, embeddings y `lm_head`, y bfloat16 para las compuertas del router) introduce una perdida de precision medible que el autor documenta con detalle en su proceso de verificacion. Es, por tanto, una opcion practica para inferencia local en Apple Silicon, no un sustituto exacto del modelo original.
 
-Se trata de un modelo cuantizado, no de los pesos originales, por lo que su fidelidad respecto al modelo de referencia está limitada por la propia cuantización. El autor documenta una verificación numérica detallada frente a una referencia en PyTorch, así como métricas de velocidad y memoria en un Apple M4 Pro.
+El contexto de este lanzamiento es la creciente demanda de ejecutar modelos MoE de gran tamano en hardware de consumo. Kolibri-1 emplea atencion de ventana deslizante de 513 tokens con un patron 4:1 entre capas deslizantes y completas, lo que reduce el coste de atencion en contextos largos. Esta version cuantizada hace accesible esa arquitectura a desarrolladores con estaciones de trabajo Mac, a cambio de asumir cierta degradacion en la fidelidad de la distribucion de tokens.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-experts (MoE), transformer; 50 capas, 384 expertos, 6 enrutados + 1 compartido por token; atencion de ventana deslizante de 513 tokens en patron 4:1 (sliding:full) |
-| Parametros totales | 78.103.074.560 (~78,1 mil millones) |
-| Parametros activos | no disponible (numero exacto de parametros activos por token no indicado; se enrutan 6 de 384 expertos mas 1 compartido) |
-| Longitud de contexto | no disponible (el modelo base no especifica contexto total en la informacion; ventana deslizante de 513 tokens en patron 4:1) |
-| Tipos de cuantizacion | Precisión mixta: 4 bits (expertos enrutados, `switch_mlp.*`), 8 bits (proyecciones de atencion, experto compartido, embeddings, `lm_head`), bfloat16 sin cuantizar (router MoE, `mlp.gate`); grupo de 64, cuantizacion afín |
+| Arquitectura | Transformer MoE (50 capas, 384 expertos, 6 enrutados + 1 compartido por token, atencion de ventana deslizante 513 tokens en patron 4:1) |
+| Parametros totales | 78.103.074.560 |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible (ventana deslizante de 513 tokens por capa; contexto total no especificado) |
+| Tipos de cuantizacion | Mixta: 4 bits (expertos enrutados `switch_mlp.*`), 8 bits (proyecciones de atencion, experto compartido, embeddings, `lm_head`), bfloat16 (compuertas `mlp.gate`); grupo de 64, afin afin |
 | Idiomas soportados | aleman (de), ingles (en) |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (formato MLX, mlx-lm 0.32.0) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (MLX, mlx-lm 0.32.0) |
 
 ## Arquitectura y entrenamiento
 
-Kolibri 1 es un transformer de tipo mixture-of-experts con 50 capas y 384 expertos, de los cuales se activan 6 enrutados mas 1 compartido por token. Incorpora atencion de ventana deslizante de 513 tokens combinada con atencion completa en un patron de 4:1 (cuatro capas de ventana por cada capa de atencion completa). Esta ficha corresponde a una conversion cuantizada: el checkpoint FP8 original de Aleph Alpha (con escalas de bloque 128x128) se transformo al formato MLX mediante el conversor kolibri-mlx, aplicando cuantizacion afín de grupo 64 con precision mixta.
+El modelo base Kolibri-1 es un transformer de mezcla de expertos con 50 capas y 384 expertos, de los cuales se activan 6 enrutados mas 1 compartido por token. La atencion combina ventanas deslizantes de 513 tokens con capas de atencion completa en una proporcion 4:1, lo que limita el coste computacional en secuencias largas. Los pesos originales se distribuyen en FP8 con escalas de bloque 128x128, y esta version los convierte a cuantizacion afin mixta en MLX.
 
-No se dispone en la informacion proporcionada de detalles sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO en el modelo original. Tampoco se documentan innovaciones especificas de decodificacion especulativa. Cabe destacar que el modelo base requiere un plugin especifico de vLLM (`aleph_alpha_inference/kolibri1.py`) para su ejecucion, lo que indica que la arquitectura no esta soportada de forma nativa por las librerias estandar.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO en la informacion proporcionada. El autor de la cuantizacion valido la dequantizacion FP8 contra la release BF16 de Aleph Alpha (1362 tensores FP8 del shard 1, error maximo del 3,6 % del maximo del tensor, consistente con redondeo e4m3; tensores bf16 identicos bit a bit). La innovacion tecnica destacable de esta ficha es el esquema de cuantizacion mixta por modulo, que preserva en 8 bits las partes sensibles (atencion, embeddings, `lm_head`) y mantiene el router en bfloat16 para no degradar la seleccion de expertos.
 
 ## Capacidades
 
-- Generacion de texto y conversacion multi-turno, con un tokenizador y plantilla de chat orientados a aleman e ingles.
-- Modo de razonamiento (thinking) controlable mediante `reasoning_effort` con valores `"none"`, `"low"`, `"medium"` o `"high"`, o bien con `enable_thinking=false`; cuando esta activo, el modelo emite primero un bloque `<think>...</think>`.
-- Soporte de tool calling / function calling en estilo Hermes: `<tool_call>{"name": ..., "arguments": ...}</tool_call>`, devuelto como `tool_calls` mediante el parser `json_tools` de mlx-lm.
-- Capacidades multilingues limitadas a aleman e ingles segun los metadatos del modelo.
-- Integracion con servidor compatible con OpenAI a traves de mlx-lm (`serve.py`), incluyendo `chat_template_kwargs` en el cuerpo de la peticion.
+- Generacion de texto y conversacion multi-turno en aleman e ingles.
+- Razonamiento explicito con modo `thinking`: el modelo emite `<think>...</think>` antes de la respuesta, controlable mediante `reasoning_effort` (`"none"`, `"low"`, `"medium"`, `"high"`) o `enable_thinking=false`.
+- Tool calling / function calling con formato Hermes: `<tool_call>{"name": ..., "arguments": ...}</tool_call>`, devuelto como `tool_calls` por el parser `json_tools` de mlx-lm.
+- Soporte de agentes y razonamiento multi-paso a traves de la combinacion de thinking mode y tool calls.
+- Capacidades multilingues limitadas a aleman e ingles.
+- Servidor compatible con OpenAI (`serve.py`) para integracion en pipelines existentes.
 - No se documentan capacidades de vision, audio ni otras modalidades en la informacion disponible.
 
 ## Casos de uso
 
-- Asistente conversacional en aleman o ingles sobre hardware Apple: el modelo puede gestionar dialogos multi-turno con plantilla de chat y modo de razonamiento configurable, aprovechando su ejecucion local en un Mac con 64 GB de memoria.
-- Despliegue local de un MoE de gran tamano sin GPU dedicada: gracias a la cuantizacion mixta 4/8 bits, permite servir un modelo de 78.100 millones de parametros en un unico equipo Apple Silicon.
-- Automatizacion con agentes y llamadas a herramientas: el soporte de tool calling en formato Hermes y su parser asociado en mlx-lm facilitan integrarlo en flujos de agente con pasos encadenados.
-- Generacion de contenido tecnico en aleman: el modelo cubre especificamente el aleman, un idioma con menos cobertura en modelos abiertos, adecuado para redaccion o resumen en ese idioma.
-- Razonamiento controlado por coste: con `reasoning_effort` en `"none"` o `"low"` se puede reducir el coste computacional en tareas simples y subirlo en tareas complejas, ajustando latencia frente a calidad.
-- Entornos de prototipado y evaluacion offline: al poder ejecutarse de forma local, resulta util para pruebas de investigacion sin enviar datos a servicios externos, siempre que se respete la licencia.
-- Servicio interno compatible con OpenAI: mediante el servidor de mlx-lm se puede exponer un endpoint `/v1/chat/completions` que reciba peticiones en el formato estandar.
+- Asistencia conversacional en aleman e ingles: el modelo gestiona dialogos multi-turno con plantilla de chat y modo de razonamiento configurable, adecuado para chatbots de soporte en mercados DACH y anglosajones.
+- Generacion de codigo con tool calling: puede integrarse en pipelines de CI/CD o asistentes de IDE que invoquen funciones externas mediante el formato Hermes, devolviendo llamadas estructuradas que el orquestador ejecuta.
+- Agentes multi-paso en local: la combinacion de thinking mode y tool calls permite construir agentes que razonan, invocan herramientas y refinan respuestas sin salir de una Mac con 64 GB, evitando costes de API.
+- Procesamiento de documentos largos por ventanas: el patron de atencion deslizante 4:1 permite manejar entradas extensas con coste de atencion acotado, util para resumen y extraccion sobre textos de varios miles de tokens.
+- Prototipado e investigacion en Apple Silicon: investigadores sin acceso a GPU CUDA pueden reproducir experimentos con un MoE de 78 000 millones de parametros a 50 tokens/s en un M4 Pro de 64 GB.
+- Despliegue de servidor OpenAI-compatible en infraestructura Mac: `serve.py` expone una API compatible con el cliente de OpenAI, lo que permite sustituir backends remotos por inferencia local en entornos con requisitos de privacidad.
+- Evaluacion de cuantizacion: el modelo sirve como caso de estudio reproducible para medir el impacto de la cuantizacion mixta 4/8 bits frente a bf16, con scripts de verificacion publicados.
 
 ## Benchmarks y rendimiento
 
-La model card no presenta resultados de benchmarks clasicos (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. El autor incluye en su lugar una verificacion numerica frente a una referencia en PyTorch, que se reproduce a continuacion:
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. El autor documenta verificaciones de fidelidad y rendimiento de inferencia:
 
-| Comprobacion | Resultado |
+| Metrica | Resultado |
 |---|---|
-| Acuerdo top-1 (este modelo vs referencia), por prompt | 0,385 (13 tok), 0,867 (15), 0,958 (24), 0,966 (618), 0,892 (612); bf16 sin cuantizar: 0,769, 0,933, 1,000, 0,968, 0,931 |
-| Solapamiento top-5, por prompt | 0,754, 0,880, 0,925, 0,935, 0,875 |
-| KL(referencia, este modelo), media por prompt | 0,526, 0,0146, 0,00996, 0,0174, 0,0690 (suelo bf16: 0,490, 0,0057, 0,00067, 0,0082, 0,036) |
-| Implementacion MLX en fp32 vs referencia, encadenada extremo a extremo | top-1 1,000 en todos los prompts, KL aproximada de 1e-11, diferencia maxima de logits 2,3e-4 |
-| Decodificacion con cache vs prefill completo | identica a 1e-6 en fp32; ruido a nivel bf16 en el modelo real |
-| Prueba de humo del servidor (aleman e ingles, razonamiento on/off, tool call) | supera la prueba |
-| Velocidad / memoria en Apple M4 Pro, 64 GB | 50 tokens/s de generacion, ~240 tokens/s de prompt, 45,4 GB de pico |
-
-Nota: la seccion de evaluacion de la model card aparece truncada en la informacion disponible, por lo que no se pueden reproducir los resultados de las suites de evaluacion del autor. Los numeros anteriores corresponden a la verificacion frente a una referencia en PyTorch, no a benchmarks academicos estandar. La propia model card advierte de que la cuantizacion tiene coste de precision y que los datos corresponden a este modelo cuantizado, no a los pesos originales.
+| Acuerdo top-1 vs referencia (5 prompts) | 0.385 (13 tok), 0.867 (15), 0.958 (24), 0.966 (618), 0.892 (612) |
+| Acuerdo top-1 bf16 sin cuantizar (mismos prompts) | 0.769, 0.933, 1.000, 0.968, 0.931 |
+| Solapamiento top-5 | 0.754, 0.880, 0.925, 0.935, 0.875 |
+| KL(referencia, este modelo) media por prompt | 0.526, 0.0146, 0.00996, 0.0174, 0.0690 |
+| KL suelo bf16 | 0.490, 0.0057, 0.00067, 0.0082, 0.036 |
+| MLX fp32 vs referencia (extremo a extremo) | top-1 1.000, KL ~1e-11, diferencia maxima de logits 2.3e-4 |
+| Velocidad en Apple M4 Pro, 64 GB | 50 tokens/s generacion, ~240 tokens/s prompt, 45.4 GB pico |
 
 ## Requisitos de hardware
 
-- Memoria unificada necesaria: aproximadamente 45,4 GB en pico, con 42 GiB en disco. Requiere un Mac con 64 GB de memoria unificada.
-- GPU recomendadas: el modelo esta en formato MLX, por lo que esta orientado a Apple Silicon (se cita explicitamente un Apple M4 Pro de 64 GB). No se documenta soporte para A100, H100 o RTX 4090 en esta conversion.
-- Compatibilidad con GPU de consumo: no aplicable en el ecosistema MLX; en el ecosistema NVIDIA harian falta los pesos originales y un plugin de vLLM con soporte CUDA.
-- Opciones de despliegue: mlx-lm (version 0.32.0) con el paquete externo kolibri-mlx, que registra el `model_type` `kolibri1`. Stock mlx-lm no carga el modelo por si solo; se debe ejecutar `import kolibri_mlx.register` antes de `mlx_lm.load`. El repositorio incluye `generate.py` y `serve.py` (servidor compatible con OpenAI).
-- Latencia y throughput estimados: en Apple M4 Pro de 64 GB, 50 tokens/s de generacion y unos 240 tokens/s de procesamiento de prompt, con 45,4 GB de memoria pico.
-- Se recomienda muestreo con `temperature 1.0, top_p 0.97, top_k 128`, segun indicacion de Aleph Alpha.
+- Memoria unificada: aproximadamente 45,4 GB en pico; se requiere un Mac con 64 GB (el autor lo indica explicitamente).
+- Tamano en disco: 42 GiB (repositorio de 45,3 GB).
+- GPU compatibles: Apple Silicon con memoria unificada de 64 GB o superior; el autor probo en M4 Pro de 64 GB. No aplica a GPU CUDA en esta version MLX.
+- No cabe en GPUs de consumo con VRAM dedicada (RTX 4090 de 24 GB, etc.) en este formato.
+- Despliegue: mlx-lm 0.32.0 con el paquete externo kolibri-mlx (registro de arquitectura `kolibri1`); `generate.py` para CLI y `serve.py` para servidor OpenAI-compatible.
+- Latencia y throughput medidos: 50 tokens/s de generacion y ~240 tokens/s de procesamiento de prompt en M4 Pro de 64 GB.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eins78/Kolibri-1-mlx-mixed-4-8-bit | 78,1 mil millones (MoE, 6+1 expertos activos) | no disponible (ventana deslizante 513) | safetensors MLX, precision mixta 4/8 bits | apache-2.0 | Hugging Face (0 descargas, 0 likes en la fecha de la informacion) |
-| Aleph-Alpha/Kolibri-1 (modelo base) | mismo modelo base | no disponible | checkpoint FP8 y BF16 | apache-2.0 | Hugging Face, pesos originales |
-| Otros MoE de tamano comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Kolibri-1-mlx-mixed-4-8-bit (esta ficha) | 78,1 B totales (MoE) | ventana 513 tok por capa, total no disponible | MLX safetensors | Apache 2.0 | Hugging Face, requiere kolibri-mlx |
+| Aleph-Alpha/Kolibri-1 (original) | 78,1 B totales (MoE) | no disponible | FP8 y BF16 | Apache 2.0 | Hugging Face, requiere plugin vLLM con CUDA |
+| Alternativas MoE de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone en la informacion proporcionada de datos de rendimiento comparativos frente a modelos equivalentes de otros desarrolladores (por ejemplo, MoE abiertos de rango similar), por lo que no se puede establecer una comparativa cuantitativa fiable.
+No se dispone de datos de benchmarks comparativos con otros modelos en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Modelo cuantizado: la precision es inferior a la del modelo original. El propio autor advierte de que la cuantizacion tiene coste de precision y que las metricas de verificacion corresponden a esta version cuantizada, no a los pesos sin cuantizar.
-- Idiomas limitados: solo aleman e ingles segun los metadatos; no hay evidencia de soporte de castellano.
-- Sin soporte nativo en mlx-lm estandar: la carga falla con `unsupported model type` salvo que se instale kolibri-mlx y se registre el tipo `kolibri1`, lo que anade dependencia de codigo de terceros.
-- Riesgo de alucinacion: no se documenta de forma especifica, pero es inherente a los modelos generativos; debe validarse en produccion.
-- Verificacion parcial: la referencia usada por el autor es una reimplementacion en PyTorch del plugin de vLLM, no el propio plugin ejecutado (no habia maquina con CUDA disponible), por lo que la validacion tiene ese caveat reconocido por el autor.
-- Prompt muy corto con ruido: el autor senala que el prompt de 13 tokens es ruidoso incluso en bf16, con un acuerdo top-1 de 0,385.
-- Requisito de hardware elevado: exige un Mac con 64 GB de memoria unificada; no cabe en equipos de consumo con menos memoria.
-- Adopcion nula: 0 descargas y 0 likes en la fecha de la informacion, lo que implica ausencia de validacion por parte de la comunidad.
-- Licencia apache-2.0: permite uso comercial, pero conviene revisar la licencia del modelo base Aleph-Alpha/Kolibri-1 y las condiciones de la conversion antes de desplegar en produccion.
-- Fechas de publicacion inusuales (2026) en los metadatos, lo que puede indicar datos sinteticos o de prueba; conviene verificarlo antes de usarlo como referencia.
+- Perdida de precision por cuantizacion: el acuerdo top-1 frente a la referencia cae respecto a bf16 (por ejemplo, 0.867 frente a 0.933 en el prompt de 15 tokens, y 0.385 frente a 0.769 en el de 13 tokens); la KL media es superior al suelo bf16 en todos los prompts.
+- El prompt corto de 13 tokens es ruidoso incluso en bf16, segun el autor, por lo que las metricas en entradas muy breves no son fiables.
+- No cargable con mlx-lm estandar: es obligatorio instalar kolibri-mlx y ejecutar `import kolibri_mlx.register` antes de cargar; `mlx_lm.load`, `mlx_lm.generate` y `mlx_lm.server` fallan sin ese registro.
+- La verificacion se hizo contra una reconstruccion en PyTorch del plugin vLLM, no contra el plugin real, que requiere CUDA y no estaba disponible en la maquina del autor.
+- Idiomas limitados a aleman e ingles; no se documenta soporte de castellano.
+- Riesgo de alucinacion inherente a los modelos generativos; no se documentan evaluaciones de sesgo en la informacion disponible.
+- Licencia Apache 2.0 permite uso comercial, pero la cuantizacion hereda las condiciones del modelo base; conviene revisar la model card original de Aleph Alpha.
+- Requiere hardware Apple Silicon con 64 GB de memoria unificada; no es desplegable en GPU CUDA ni en GPUs de consumo con VRAM dedicada en este formato.
+- Los resultados de evaluacion del autor (suites propias, temperatura 0, razonamiento desactivado) no equivalen a benchmarks estandar y no permiten comparacion directa con otros modelos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/eins78/Kolibri-1-mlx-mixed-4-8-bit
 - Modelo base: https://huggingface.co/Aleph-Alpha/Kolibri-1
-- Repositorio del conversor kolibri-mlx: https://github.com/eins78/kolibri-mlx
-- Verificacion del conversor: https://github.com/eins78/kolibri-mlx#4-verification
+- Repositorio kolibri-mlx: https://github.com/eins78/kolibri-mlx
 - Script de verificacion por capas: https://github.com/eins78/kolibri-mlx/blob/main/scripts/verify_layerwise.py
 - Script de verificacion extremo a extremo: https://github.com/eins78/kolibri-mlx/blob/main/scripts/verify_e2e.py
-- Script de prueba de humo del servidor: https://github.com/eins78/kolibri-mlx/blob/main/scripts/smoke_server.py
+- Script de smoke test del servidor: https://github.com/eins78/kolibri-mlx/blob/main/scripts/smoke_server.py
+- Documentacion de verificacion: https://github.com/eins78/kolibri-mlx#4-verification

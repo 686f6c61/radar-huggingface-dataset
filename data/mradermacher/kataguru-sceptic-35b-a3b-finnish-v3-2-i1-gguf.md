@@ -2,50 +2,55 @@
 
 ## Resumen
 
-Kataguru-Sceptic-35B-A3B-Finnish-v3.2-i1-GGUF es una cuantizacion GGUF del modelo Kataguru-Sceptic-35B-A3B-Finnish-v3.2, publicada por el usuario mradermacher. El modelo original es un transformer de tipo Mixture of Experts (MoE) con 35.505.251.456 parametros totales, orientado a traduccion, razonamiento y tareas multimodales con vision, con especial enfasis en el idioma finlandes. La arquitectura declarada en las etiquetas es qwen3_5_moe, lo que sugiere una base derivada de la familia Qwen 3.5 MoE.
+Kataguru-Sceptic-35B-A3B-Finnish-v3.2-i1-GGUF es la versión cuantizada en formato GGUF del modelo Kataguru-Sceptic-35B-A3B-Finnish-v3.2, publicada por el cuantizador mradermacher. Se trata de un modelo de mezcla de expertos (MoE) de 35.505.251.456 parámetros totales, con 3B de parámetros activos según indica su nomenclatura (A3B), construido sobre la arquitectura Qwen3.5 MoE y orientado a tareas de código industrial, automatización de planta, programación de sistemas y traducción, con soporte declarado de inglés y finés.
 
-El repositorio proporciona cuantizaciones de tipo i1 (imatrix) en formato GGUF, pensadas para ejecucion local con llama.cpp y herramientas compatibles. La model card del cuantizador lista una amplia bateria de tipos de cuantizacion, desde IQ1_S e IQ2_XXS hasta Q6_K, lo que permite desplegar el modelo en hardware muy diverso, desde equipos de consumo hasta servidores con GPU de alta gama.
+El modelo base está especializado en dominios técnicos concretos: PLC, G-code, IEC 61131-3, TwinCAT, Beckhoff, SCL de Siemens, OPC-UA, EtherCAT, Profinet, seguridad funcional, además de lenguajes de sistemas como Rust, C++ y Python. Incorpora etiquetas que indican capacidades de tool calling, function calling, agentes, RAG, razonamiento, matemáticas, visión y multimodalidad, y se distribuye con licencia Apache 2.0.
 
-La relevancia de esta ficha radica en que se trata de un modelo especializado en finlandes con capacidades multimodales y de razonamiento, una combinacion poco frecuente en el ecosistema open source, y con licencia Apache 2.0, lo que facilita su uso comercial. No obstante, la informacion publica disponible es escasa: no hay benchmarks, no se detalla la composicion del dataset de entrenamiento ni el numero de parametros activos.
+Esta versión i1-GGUF aplica cuantizaciones ponderadas con fichero imatrix, lo que permite desplegar el modelo en hardware más modesto que los pesos bf16 originales. El repositorio ocupa 279,4 GB e incluye un rango amplio de cuantizaciones desde Q2_K hasta Q6_K, pensadas para distintos equilibrios entre tamaño, velocidad y calidad.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (etiqueta qwen3_5_moe) |
+| Arquitectura | Mezcla de expertos (MoE) basada en Qwen3.5 MoE (etiqueta `qwen3_5_moe`) |
 | Parametros totales | 35.505.251.456 |
-| Parametros activos | no disponible (el nombre A3B sugiere ~3B activos, sin confirmacion oficial) |
+| Parametros activos | 3B (según nomenclatura A3B; no se detalla el reparto exacto por experto) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | i1-Q2_K, IQ3_XXS, IQ3_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ1_S, IQ1_M, Q4_0, Q4_1, small-IQ4_NL (segun lista de la model card) |
-| Idiomas soportados | en, fi |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (ponderadas con imatrix) |
+| Idiomas soportados | inglés (en), finés (fi) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizado); el modelo base en safetensors y bfloat16 |
+| Formato de pesos | GGUF (cuantizado); el modelo base en safetensors/bf16 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer con arquitectura Mixture of Experts, segun las etiquetas del repositorio (moe, qwen3_5_moe). El nombre "35B-A3B" indica 35 mil millones de parametros totales y aproximadamente 3 mil millones activos por token, aunque este dato no aparece confirmado de forma explicita en la informacion disponible. El repositorio incluye pesos en bfloat16 y safetensors en el modelo original, y esta cuantizacion emplea tecnicas de imatrix (importance matrix) para mejorar la calidad de las cuantizaciones de baja precision.
+El modelo sigue una arquitectura transformer con mezcla de expertos (MoE), identificada por la etiqueta `qwen3_5_moe`, lo que sugiere que se apoya en la familia Qwen3.5 MoE como base arquitectónica. Con 35.505.251.456 parámetros totales y 3B activos por token según la nomenclatura A3B, el modelo activa solo una fracción de sus parámetros en cada paso, lo que reduce el coste computacional de inferencia frente a un modelo denso del mismo tamaño total. El modelo base se distribuye en bf16/safetensors.
 
-No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o ajuste por preferencias. Tampoco se detallan innovaciones tecnicas especificas como decodificacion especulativa o atencion lineal. La model card del cuantizador se limita a describir el proceso de cuantizacion y los ficheros generados.
+No se dispone de información detallada sobre el número de tokens de entrenamiento, la composición exacta del dataset ni sobre si se aplicaron etapas de RLHF o DPO. Las etiquetas del modelo indican especialización en dominios de automatización industrial y programación de sistemas, además de traducción, razonamiento, matemáticas y capacidades multimodales/vision, pero la model card no documenta la metodología de entrenamiento ni innovaciones técnicas específicas más allá de la propia arquitectura MoE.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento general, segun las etiquetas reasoning del repositorio.
-- Traduccion, con el pipeline declarado como translation y el finlandes como idioma central.
-- Capacidades multimodales con vision: el repositorio se identifica como modelo de vision y los ficheros mmproj, si existen, se alojan en el repositorio estatico.
-- Soporte de conversacion multi-turno (etiqueta conversational).
-- Compatibilidad con endpoints (etiqueta endpoints_compatible).
-- Capacidades multilingues limitadas a ingles y finlandes.
-- No se documenta soporte explicito de tool calling, function calling ni razonamiento agente multi-paso en la informacion disponible.
+- Generación de texto y razonamiento general, con etiqueta explícita de `reasoning`.
+- Generación de código en lenguajes de sistemas y scripting: Rust, C++, Python.
+- Código industrial especializado: PLC, G-code, IEC 61131-3, Structured Text, TwinCAT, Beckhoff, Siemens SCL.
+- Protocolos y automatización industrial: OPC-UA, EtherCAT, Profinet, seguridad funcional.
+- Tool calling y function calling.
+- Flujos agénticos y razonamiento multi-paso (etiqueta `agentic`).
+- Integración en pipelines RAG (etiqueta `rag`).
+- Traducción (pipeline declarado: `translation`), con soporte de inglés y finés.
+- Capacidades multimodales y de visión (etiquetas `multimodal`, `vision`, `vision-language`); los ficheros mmproj, si existen, se alojan en el repositorio estático.
+- Matemáticas y STEM (etiquetas `stem`, `math`).
+- Modelo etiquetado como `uncensored`.
 
 ## Casos de uso
 
-- Traduccion ingles-finlandes y finlandes-ingles: el modelo esta especializado en finlandes y declara el pipeline de traduccion, por lo que puede integrarse en flujos de localizacion de documentacion tecnica y contenido web.
-- Atencion al cliente en finlandes: permite desplegar un asistente conversacional local en un idioma con poca cobertura en modelos generalistas, con la ventaja de la licencia Apache 2.0 para uso comercial.
-- Procesamiento de documentos escaneados en finlandes: al ser un modelo de vision, puede extraer y traducir texto de imagenes o PDF renderizados, util en administraciones publicas y empresas finlandesas.
-- Razonamiento asistido sobre normativa y documentacion local: la etiqueta reasoning sugiere capacidad para tareas de analisis y sintesis de textos largos, aunque el contexto maximo no esta documentado.
-- Despliegue en hardware de consumo: las cuantizaciones i1-Q2_K (13,3 GB) y las de mayor tamano permiten ejecutar el modelo en equipos con GPU de 16-24 GB de VRAM mediante llama.cpp u Ollama.
-- Investigacion en modelos MoE especializados por idioma: sirve como base para estudiar el comportamiento de arquitecturas MoE en lenguas de bajos recursos como el finlandes.
-- Generacion de contenido multilingue con vision: descripcion de imagenes y generacion de texto asociado en ingles y finlandes para catalogos o accesibilidad.
+- Programación de autómatas PLC: el modelo puede generar y revisar código IEC 61131-3 y Structured Text para proyectos de automatización, aprovechando su especialización declarada en PLC y TwinCAT.
+- Desarrollo de lógica de control en Beckhoff TwinCAT: útil para escribir bloques de función y programas de control de planta, dado el etiquetado específico en TwinCAT y Beckhoff.
+- Generación de G-code para mecanizado CNC: el modelo está etiquetado para CNC y G-code, por lo que puede asistir en la generación y depuración de trayectorias y programas de mecanizado.
+- Integración de sistemas industriales con OPC-UA, EtherCAT y Profinet: puede ayudar a redactar configuraciones, mapeos de variables y lógica de comunicación entre dispositivos de planta.
+- Traducción técnica inglés-finés: el pipeline declarado es `translation` y el modelo soporta ambos idiomas, lo que lo hace adecuado para documentación técnica y manuales de automatización.
+- Asistente de código en Rust, C++ y Python para sistemas embebidos o software de control: su orientación a `systems-programming` permite usarlo en revisión de código, generación de utilidades y refactorización.
+- Agentes y RAG sobre documentación técnica: con soporte de tool calling y RAG, puede integrarse en asistentes que consulten manuales de fabricantes, hojas de datos y normativa de seguridad funcional.
+- Análisis de documentación con componentes visuales: al declarar capacidades de visión, puede emplearse para interpretar esquemas, diagramas de planta o capturas de HMI, siempre que se disponga de los ficheros mmproj correspondientes.
 
 ## Benchmarks y rendimiento
 
@@ -53,34 +58,48 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: la cuantizacion i1-Q2_K ocupa 13,3 GB en disco; las cuantizaciones de mayor calidad (Q5_K_M, Q6_K) requieren mas espacio, no detallado en la informacion disponible.
-- GPU recomendadas: no disponibles de forma oficial; por tamano, una RTX 4090 (24 GB) o una A100/H100 permitirian ejecutar las cuantizaciones de mayor precision.
-- Cabe en GPU de consumo: si, al menos la cuantizacion i1-Q2_K en GPUs con 16 GB o mas de VRAM; las cuantizaciones superiores requeriran 24 GB o mas.
-- Opciones de despliegue: llama.cpp, Ollama y cualquier runtime compatible con GGUF; el modelo base es compatible con transformers.
+- VRAM estimada para inferencia según cuantización (tamaños de fichero del repositorio):
+  - i1-Q2_K: 13,3 GB.
+  - i1-Q3_K_S / i1-IQ3_S / i1-IQ3_M: entre 15,6 y 15,9 GB.
+  - i1-Q3_K_M / i1-Q3_K_L: 17,3 y 18,7 GB.
+  - i1-IQ4_XS: 19,3 GB.
+  - i1-Q4_0 / i1-Q4_K_S: 20,4 y 20,5 GB.
+  - i1-Q4_K_M / i1-Q4_1: 21,8 y 22,5 GB.
+  - i1-Q5_K_S / i1-Q5_K_M: 24,7 y 25,4 GB.
+  - i1-Q6_K: 29,3 GB.
+- GPU recomendadas: no disponibles de forma explícita. Por tamaño, las cuantizaciones Q2 a Q4 encajan en GPUs consumer de 24 GB (RTX 3090, RTX 4090) con margen variable; Q5 y Q6 requieren 32 GB o más (A100 40 GB, H100, RTX 5090/A6000 de 48 GB).
+- Cabe en GPU consumer: sí, al menos las cuantizaciones Q2_K a Q4_K_M en tarjetas de 24 GB; las de mayor tamaño necesitan GPUs profesionales o configuraciones multi-GPU.
+- Opciones de despliegue: llama.cpp, Ollama y otros runners compatibles con GGUF; el modelo base es compatible con transformers. No se documentan recetas específicas para vLLM o TGI con estos ficheros GGUF.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de informacion sobre modelos comparables en la misma categoria (MoE especializado en finlandes con vision) ni de datos de rendimiento que permitan una comparacion rigurosa.
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Kataguru-Sceptic-35B-A3B-Finnish-v3.2-i1-GGUF | 35,5B totales / 3B activos | no disponible | Apache 2.0 | GGUF | Especializado en automatización industrial, código y finés |
+| Modelo base kataguru/Kataguru-Sceptic-35B-A3B-Finnish-v3.2 | 35,5B totales / 3B activos | no disponible | Apache 2.0 | safetensors (bf16) | Misma especialización, sin cuantizar |
+| Versión estática mradermacher/Kataguru-Sceptic-35B-A3B-Finnish-v3.2-GGUF | 35,5B totales / 3B activos | no disponible | Apache 2.0 | GGUF | Cuantizaciones estáticas; aloja los ficheros mmproj de visión |
+
+No se dispone de datos de benchmarks ni de comparativas con otros modelos de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No se han publicado benchmarks, por lo que el rendimiento real del modelo es desconocido y debe validarse antes de usarlo en produccion.
-- La longitud de contexto no esta documentada, lo que impide planificar casos de uso con documentos largos.
-- El soporte de idiomas se limita a ingles y finlandes; el rendimiento en castellano no esta garantizado.
-- Riesgo de alucinacion inherente a los modelos generativos, agravado por la falta de evaluaciones publicas.
-- No se documentan sesgos conocidos ni la composicion del dataset de entrenamiento, lo que dificulta evaluar riesgos de sesgo.
-- La licencia Apache 2.0 permite uso comercial, pero el modelo base y sus pesos deben verificarse de forma independiente.
-- Al ser una cuantizacion, las versiones de baja precision (IQ1, IQ2) pueden degradar la calidad de forma notable; la propia model card recomienda IQ3_XXS frente a i1-Q2_K.
-- La ausencia de informacion sobre parametros activos y contexto impide estimar con precision los costes de inferencia.
+- No se han publicado evaluaciones de sesgo, alucinación ni robustez en la información disponible.
+- El modelo está etiquetado como `uncensored`, lo que implica que puede no aplicar filtros de seguridad estándar; requiere revisión y salvaguardas adicionales en producción.
+- Idiomas declarados limitados a inglés y finés; el rendimiento en castellano u otros idiomas no está documentado.
+- La longitud de contexto no está especificada, lo que impide planificar cargas de trabajo con ventanas largas sin validación previa.
+- Aunque se etiqueta como multimodal/visión, los ficheros mmproj no están en este repositorio sino en el estático; sin ellos, las capacidades de visión no estarán operativas.
+- Las cuantizaciones de menor tamaño (Q2_K, Q3) degradan la calidad; el propio autor recomienda alternativas IQ frente a Q del mismo tamaño y señala Q4_K_M como opción rápida y recomendada.
+- Licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base y de los datos de entrenamiento originales.
+- El repositorio ocupa 279,4 GB; el almacenamiento y la descarga requieren planificación.
+- No hay resultados de benchmarks que respalden las capacidades declaradas en dominios industriales críticos; para seguridad funcional se recomienda validación humana y pruebas formales.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/Kataguru-Sceptic-35B-A3B-Finnish-v3.2-i1-GGUF
 - Modelo base: https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Finnish-v3.2
-- Cuantizaciones estaticas: https://huggingface.co/mradermacher/Kataguru-Sceptic-35B-A3B-Finnish-v3.2-GGUF
-- Pagina de descargas del cuantizador: https://hf.tst.eu/model#Kataguru-Sceptic-35B-A3B-Finnish-v3.2-i1-GGUF
-- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
-- Grafico de calidad de cuantizaciones de ikawrakow: https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Cuantizaciones estáticas (incluye mmproj): https://huggingface.co/mradermacher/Kataguru-Sceptic-35B-A3B-Finnish-v3.2-GGUF
+- Página de descargas del cuantizador: https://hf.tst.eu/model#Kataguru-Sceptic-35B-A3B-Finnish-v3.2-i1-GGUF
+- README de referencia para uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Comparativa de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests

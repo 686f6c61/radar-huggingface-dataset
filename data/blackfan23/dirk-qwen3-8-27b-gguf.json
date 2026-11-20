@@ -58,31 +58,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "npario/Dirk-Qwen3.8-27B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/npario/Dirk-Qwen3.8-27B-GGUF",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "README.md · npario/Dirk-Qwen3.8-27B-GGUF at main - Hugging Face",
-      "url": "https://huggingface.co/npario/Dirk-Qwen3.8-27B-GGUF/blob/main/README.md",
-      "snippet": "Stock Qwen3.8-27B forces reasoning_effort=xhigh on every call — always-on maximum-effort reasoning. Dirk removes that default, so it runs at the model&#x27;s native medium effort: in both the official and Unsloth templates, medium is the setting that injects no reasoning instruction (only xhigh and low add one), and Dirk simply leaves it there."
-    },
-    {
-      "title": "Dirk Qwen3.8 27b - GGUF Model - local-ai-zone.github.io",
-      "url": "https://local-ai-zone.github.io/models/dirk-qwen3-8-27b.html",
-      "snippet": "Download Dirk Qwen3.8 27b GGUF model. 15.9 GB, 912,471 downloads, 190 likes."
-    },
-    {
-      "title": "Dirk-Qwen3.8-27B-GGUF: Text-to-Text model — overview, use cases ...",
-      "url": "https://www.aimodels.fyi/models/huggingFace/dirk-qwen3.8-27b-gguf-peculiar-ragdoll",
-      "snippet": "Dirk-Qwen3.8-27B-GGUF is a quantized version of Qwen&#x27;s 27-billion parameter dense vision-language model, modified by peculiar-ragdoll to optimize for..."
-    },
-    {
-      "title": "Qwen3.8-27B-GGUF · Models",
-      "url": "https://www.modelscope.cn/models/unsloth/Qwen3.8-27B-GGUF",
-      "snippet": "Qwen3.8-27B Following the widespread community adoption of the Qwen3.5 and Qwen3.6 series, we are pleased to introduce Qwen3.8, the most capable generation in the Qwen open-model family to date. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Qwen3.8-27B brings these advances to a ..."
-    }
-  ]
+  "sources": []
 }

@@ -2,92 +2,94 @@
 
 ## Resumen
 
-VIGOR-flash-GGUF es una recopilación de cuantizaciones estáticas en formato GGUF del modelo base VIGOR-flash, publicada por el usuario mradermacher, conocido en Hugging Face por convertir modelos a GGUF para su uso con llama.cpp y entornos compatibles. El modelo original procede de prithivMLmods y cuenta con 9.197.093.888 parámetros (aproximadamente 9,2 mil millones), lo que lo sitúa en la categoría de modelos de tamaño medio aptos para inferencia en hardware de consumo con las cuantizaciones adecuadas.
+VIGOR-flash es un modelo multimodal de clasificación de imágenes orientado a la seguridad de contenido (content safety y moderación visual), desarrollado originalmente por prithivMLmods y empaquetado en formato GGUF por mradermacher. El modelo se presenta como un clasificador de guardarraíl (guardrail) capaz de evaluar imágenes y pares imagen-texto para detectar contenido inseguro, con salidas estructuradas en JSON. Está construido sobre una base Qwen3.5-9B según las etiquetas del repositorio, lo que le confiere una ventana de contexto amplia y capacidades de razonamiento propias de un modelo de lenguaje de última generación.
 
-El repositorio incluye un conjunto amplio de cuantizaciones que van desde Q2_K hasta F16, pasando por Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 e IQ4_XS. El tamaño total del repositorio es de 25,4 GB, coherente con la suma de todas las variantes publicadas. La metadata de Hugging Face lo etiqueta como "conversational" y "endpoints_compatible", lo que sugiere un uso orientado a diálogo y despliegue mediante endpoints compatibles con la API de Hugging Face.
+La relevancia actual del modelo radica en la creciente necesidad de filtros automáticos de contenido visual en plataformas que gestionan grandes volúmenes de imágenes generadas o subidas por usuarios. A diferencia de clasificadores de visión tradicionales (ResNet, ViT), VIGOR-flash combina percepción visual con razonamiento textual, lo que permite generar justificaciones y etiquetas semánticas en formato JSON estructurado, facilitando su integración en pipelines de moderación.
 
-La información pública disponible es muy limitada: no se especifican licencia, idiomas, arquitectura interna ni datos de entrenamiento en la model card del repositorio GGUF, que se limita a indicar que se trata de cuantizaciones estáticas del modelo original. Cualquier evaluación rigurosa del modelo debería remitirse al repositorio base de prithivMLmods, del cual este repositorio es únicamente una derivación en formato GGUF.
+El repositorio GGUF incluye cuantizaciones estáticas desde Q2_K hasta f16, además de los ficheros mmproj necesarios para el procesamiento multimodal, lo que permite desplegar el modelo en hardware de consumo con llama.cpp u Ollama. La licencia Apache 2.0 facilita su uso comercial.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base VIGOR-flash de prithivMLmods; no se detalla en la informacion proporcionada) |
-| Parametros totales | 9.197.093.888 (~9,2 B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer multimodal (base Qwen3.5-9B, según etiquetas del repositorio) |
+| Parámetros totales | 9.197.093.888 (9,2 mil millones) |
+| Parámetros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base se distribuye presumiblemente en safetensors, no confirmado |
+| Tipos de cuantización | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K; mmproj en f16 y Q8_0 |
+| Idiomas soportados | inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones estáticas); modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base VIGOR-flash en la documentación proporcionada. El repositorio GGUF no incluye detalles sobre el tipo de transformer, la presencia de atención lineal, mezcla de expertos u otras innovaciones. Tampoco se documentan el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF, DPO o similares.
+La información disponible no detalla la arquitectura interna más allá de las etiquetas del repositorio, que apuntan a una base Qwen3.5-9B con capacidades multimodales (procesamiento de imagen y texto). El modelo se distribuye como image-classification en el pipeline de Hugging Face, pero las etiquetas incluyen también text-generation-inference, lo que sugiere que el modelo genera texto estructurado (JSON) como salida de clasificación en lugar de devolver únicamente logits. La presencia del fichero mmproj en el repositorio GGUF confirma la existencia de un proyector multimodal que adapta representaciones visuales al espacio del modelo de lenguaje.
 
-Lo único verificable es el proceso de conversión: la model card del repositorio indica los parámetros de cuantización empleados (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`), lo que confirma que las cuantizaciones se generaron a partir de los pesos en formato Hugging Face del modelo original mediante la herramienta de cuantización de llama.cpp. Para obtener información sobre arquitectura y entrenamiento sería necesario consultar el repositorio base `prithivMLmods/VIGOR-flash`, no incluido en la información disponible.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO. Las etiquetas "experimental", "uncensored" y "flash" indican que se trata de una variante optimizada para velocidad y sin restricciones de rechazo en la generación, orientada específicamente a tareas de moderación. No se han documentado innovaciones técnicas adicionales (decodificación especulativa, atención lineal, etc.) en la información proporcionada.
 
 ## Capacidades
 
-- Generación de texto conversacional: la etiqueta "conversational" en la metadata de Hugging Face indica que el modelo está orientado a diálogo multi-turno.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere que puede desplegarse a través de infraestructuras compatibles con la API de inferencia de Hugging Face.
-- Inferencia local mediante llama.cpp: al distribuirse en GGUF, es ejecutable en CPU y GPU con las herramientas del ecosistema llama.cpp.
-- Capacidades específicas de razonamiento, código, matemáticas, visión, tool calling o agentes: no disponible en la información proporcionada.
-- Soporte multilingüe: no disponible.
-- Modos especiales (thinking mode, audio, visión): no disponible.
+- Clasificación de imágenes para seguridad de contenido: detección de material inseguro o inapropiado en imágenes.
+- Moderación multimodal: evaluación conjunta de imagen y texto asociado.
+- Generación de salidas estructuradas en JSON, aptas para consumo programático en pipelines.
+- Razonamiento textual sobre el contenido visual, permitiendo justificar la clasificación.
+- Procesamiento de imágenes mediante proyector multimodal (mmproj).
+- Soporte de conversación multi-turno (etiqueta conversational).
+- Compatible con endpoints de text-generation-inference.
+- Capacidades multilingües limitadas al inglés según la model card.
+- No se documentan capacidades de tool calling, function calling ni agentes multi-paso en la información disponible.
 
 ## Casos de uso
 
-- Despliegue local en estaciones de trabajo: gracias a las cuantizaciones Q4_K_M y Q5_K_M, el modelo puede ejecutarse en GPUs de consumo con 8-12 GB de VRAM, lo que permite prototipar aplicaciones conversacionales sin depender de servicios en la nube.
-- Experimentación con llama.cpp y Ollama: el formato GGUF permite cargar el modelo directamente en estas herramientas para pruebas de generación de texto y evaluación cualitativa.
-- Integración en endpoints compatibles: la etiqueta "endpoints_compatible" facilita su uso en infraestructuras que exponen una API tipo OpenAI o Hugging Face, útil para pruebas de integración en pipelines existentes.
-- Evaluación comparativa de cuantizaciones: al publicarse 12 variantes, el repositorio sirve para medir el impacto de la cuantización (de Q2_K a F16) en calidad de salida y velocidad sobre un mismo modelo base.
-- Investigación sobre modelos de ~9B: útil como referencia en estudios sobre eficiencia de inferencia y degradación por cuantización en modelos de tamaño medio.
-- Base para fine-tuning posterior: aunque el repositorio GGUF no es el formato ideal para entrenamiento, el modelo base en safetensors puede servir de punto de partida para ajustes específicos de dominio antes de recuantizar.
+- Moderación automática de imágenes en plataformas UGC: el modelo evalúa cada imagen subida y devuelve un JSON con la clasificación de seguridad, integrándose en un pipeline previo a la publicación para bloquear contenido inseguro antes de que sea visible.
+- Filtrado de contenido en generación de imágenes: conectado a la salida de un generador texto-a-imagen, VIGOR-flash actúa como guardarraíl que valida cada imagen generada antes de entregarla al usuario, con salida estructurada para registrar el motivo del rechazo.
+- Cumplimiento normativo y auditoría: clasificación por lotes de archivos de imágenes almacenados para detectar material que infrinja políticas, generando informes JSON con etiquetas y justificaciones que faciliten la revisión humana.
+- Moderación de comunidades y foros: integración en sistemas de reporte de contenido donde el modelo preclasifica las imágenes reportadas y prioriza las que requieren revisión manual, reduciendo la carga del equipo de moderación.
+- Seguridad en asistentes multimodales: como filtro de entrada en asistentes que aceptan imágenes del usuario, evaluando si la imagen contiene contenido inapropiado antes de pasarla al modelo principal de conversación.
+- Investigación en seguridad de IA: uso como clasificador de referencia para estudiar sesgos y robustez de sistemas de moderación visual, con la ventaja de su licencia Apache 2.0 y despliegue local en GGUF.
+- Despliegue en edge o entornos sin GPU dedicada: las cuantizaciones Q4_K_S y Q4_K_M (5,6-5,9 GB) permiten ejecutar el modelo en portátiles o servidores modestos mediante llama.cpp, útil para moderación on-premise sin dependencia de APIs externas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (según cuantización, para ~9,2 B parámetros):
-  - Q2_K: ~3,5-4 GB
-  - Q3_K_S / Q3_K_M / Q3_K_L: ~4,5-5,5 GB
-  - IQ4_XS / Q4_K_S / Q4_K_M: ~5,5-6,5 GB
-  - Q5_K_S / Q5_K_M: ~6,5-7,5 GB
-  - Q6_K: ~7,5-8,5 GB
-  - Q8_0: ~10-11 GB
-  - F16: ~18-19 GB
-  (estimaciones basadas en el número de parámetros; no confirmadas por el autor)
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080, RTX 4090 para cuantizaciones altas; A100 o H100 para F16 y despliegues de alta concurrencia.
-- Cabe en GPU de consumo: sí, con cuantizaciones Q4_K_M o inferiores en GPUs de 8 GB o más; las variantes Q6_K y Q8_0 requieren 12 GB o más.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y servidores compatibles con GGUF; para safetensors, vLLM o TGI (no confirmado para este modelo).
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: aproximadamente 4,0 GB con Q2_K; 5,6-5,9 GB con Q4_K_S/Q4_K_M; 7,7 GB con Q6_K; 9,9 GB con Q8_0; 18,5 GB con f16 (más 0,7-1,0 GB adicionales para el proyector mmproj).
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB o RTX 4090 para las cuantizaciones Q4-Q8; A100/H100 para f16 o despliegues de alto throughput.
+- Cabe en GPU de consumo: sí, las cuantizaciones Q2_K a Q8_0 caben en GPUs con 6-12 GB de VRAM; la f16 requiere 24 GB o más.
+- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con GGUF; el modelo base es compatible con transformers y text-generation-inference.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Tarea | Licencia | Formato |
 |---|---|---|---|---|---|
-| VIGOR-flash-GGUF (este) | ~9,2 B | no disponible | no disponible | GGUF | Cuantizaciones estaticas de VIGOR-flash |
-| VIGOR-flash (base) | ~9,2 B | no disponible | no disponible | safetensors (presumible) | Modelo original de prithivMLmods |
-| Alternativas de ~9B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables para comparar |
+| VIGOR-flash (este) | 9,2 B | no disponible | Moderación visual multimodal con salida JSON | Apache 2.0 | GGUF, safetensors |
+| Llama Guard 3 Vision | no disponible en la información | no disponible | Moderación multimodal | Llama Community License | safetensors |
+| Qwen2.5-VL (base subyacente aproximada) | 7-72 B según variante | 128k en variantes documentadas | Visión-lenguaje general | Apache 2.0 | safetensors, GGUF |
 
-No se dispone de información suficiente para establecer una comparativa rigurosa con modelos alternativos de la misma categoría. Se recomienda consultar el repositorio base para obtener datos de rendimiento y licencia antes de comparar.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada; la comparativa se limita a parámetros, licencia y formato de distribución.
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: no se indica la licencia del modelo base ni de las cuantizaciones, lo que impide confirmar si el uso comercial está permitido. Es imprescindible verificar la licencia en el repositorio original antes de cualquier despliegue en producción.
-- Idiomas no documentados: se desconoce qué lenguas cubre el modelo y con qué calidad, por lo que no puede recomendarse para aplicaciones multilingües sin evaluación previa.
-- Contexto desconocido: al no publicarse la longitud de contexto, no puede garantizarse el comportamiento en conversaciones largas o tareas de recuperación con documentos extensos.
-- Riesgo de alucinación: inherente a los modelos generativos; sin datos de benchmarks ni de alineación, no puede cuantificarse su fiabilidad factual.
-- Degradación por cuantización: las variantes Q2_K y Q3_K pueden degradar notablemente la calidad de salida; para producción se recomienda Q4_K_M o superior.
-- Sesgos: no documentados; se desconoce la composición del dataset de entrenamiento.
-- Madurez del repositorio: creado y actualizado el mismo día (2026-11-03), con 0 descargas y 0 likes, lo que indica que no ha sido validado por la comunidad.
-- Información incompleta: la model card del repositorio GGUF es mínima y remite al modelo base; cualquier decisión técnica debería basarse en la documentación de `prithivMLmods/VIGOR-flash`.
+- Modelo marcado como "experimental": no hay garantías de estabilidad ni de calidad de clasificación en producción.
+- Idiomas soportados limitados al inglés; el rendimiento en otros idiomas no está documentado.
+- La etiqueta "uncensored" implica que el modelo no aplica rechazos por defecto, lo que exige validación adicional si se usa como guardarraíl.
+- Riesgo de alucinación en las justificaciones textuales generadas en el JSON de salida.
+- No se han publicado métricas de precisión, recall ni tasas de falsos positivos/negativos para tareas de moderación.
+- No se documentan sesgos conocidos, pero al ser un clasificador de contenido sensible a contextos culturales, se recomienda auditoría previa al despliegue.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base y sus datos de entrenamiento pueden tener restricciones no documentadas en esta ficha.
+- El contexto máximo no está especificado; no se debe asumir una ventana amplia sin verificación.
+- El tamaño del repositorio (85,1 GB) incluye todas las cuantizaciones; la descarga individual de cada fichero es necesaria.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/VIGOR-flash-GGUF
 - Modelo base: https://huggingface.co/prithivMLmods/VIGOR-flash
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/VIGOR-flash-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#VIGOR-flash-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Gráfico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

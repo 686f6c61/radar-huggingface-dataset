@@ -29,8 +29,8 @@
     "base_model:adapter:unsloth/Qwen2.5-3B-bnb-4bit",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 1,
+  "likes": 1,
+  "downloads_30d": 32,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

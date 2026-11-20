@@ -2,122 +2,105 @@
 
 ## Resumen
 
-NVIDIA-Nemotron-Labs-Dory1.0-4B es un modelo de lenguaje de aproximadamente 4.000 millones de parametros desarrollado por NVIDIA Labs y publicado originalmente en formato BF16. Su particularidad es que se trata de un modelo "looped" (latente-recurrente) basado en la arquitectura nGPT (normalized GPT): un bloque central de capas se aplica varias veces por token, de modo que el modelo puede gastar mas computo por token sin aumentar el numero de parametros. Combina capas de atencion de ventana deslizante con capas de atencion completa.
+NVIDIA-Nemotron-Labs-Dory1.0-4B es un modelo de lenguaje de tipo "looped" (recurrente latente) desarrollado por NVIDIA Labs y convertido por la comunidad litert-community al formato LiteRT-LM (`.litertlm`) para su ejecución en dispositivos edge mediante el runtime LiteRT-LM de Google. El modelo base es un nGPT (normalized GPT) de 3.975.229.440 parámetros en el que un bloque central de capas se ejecuta repetidamente por cada token, de modo que el modelo puede gastar más cómputo por token sin aumentar el número de parámetros. La conversión incluye tres ficheros: uno int4 para GPU, uno int8 para CPU y una variante int4 de un solo bucle optimizada para GPU.
 
-La ficha que nos ocupa no es el checkpoint original, sino la conversion realizada por la comunidad litert-community al formato `.litertlm` para el runtime LiteRT-LM de Google, orientado a inferencia en dispositivo (edge y movil). Se ofrecen tres artefactos: un fichero int4 pensado para GPU, un fichero int8 pensado para CPU y un fichero int4 "one-loop" que ejecuta el bloque recurrente una sola vez por token en lugar de dos, con mayor velocidad en GPU pero menor precision.
+La relevancia de esta ficha radica en que demuestra la viabilidad de ejecutar un modelo de casi 4.000 millones de parámetros con razonamiento en dispositivos móviles (Galaxy S26, Pixel 8a) y portátiles (Mac M4 Max), con velocidades de decodificación medidas de 12,09 tok/s en GPU de Galaxy S26 y tiempos de prefill+decodificación de 5,43 s en Mac M4 Max. El modelo conserva una ventana de contexto de 131.072 tokens en vocabulario y un presupuesto de caché KV de 2.048 tokens, y mantiene un rendimiento en GSM8K de 90-93 puntos en las variantes cuantizadas, cercano a los 95 del modelo BF16 en llama.cpp.
 
-Es relevante ahora porque demuestra que un modelo con razonamiento y bucle latente puede ejecutarse en telefonos de gama alta (Galaxy S26, Pixel 8a) y en Apple Silicon con tasas de decodificacion utilizables, algo poco habitual en modelos con capacidad de razonamiento explicito. La licencia es OpenMDW-1.1 y el modelo esta declarado como apto para uso comercial por NVIDIA.
+La licencia es OpenMDW 1.1, que NVIDIA describe como apta para uso comercial y no comercial, y el modelo está orientado exclusivamente a inglés. Esta conversión es relevante para desarrolladores que necesiten razonamiento on-device sin depender de la nube, aunque con las limitaciones propias de la cuantización int4/int8 y del runtime LiteRT-LM.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer looped (latente-recurrente) basado en nGPT, con atencion de ventana deslizante y atencion completa intercaladas |
+| Arquitectura | Transformer nGPT (normalized GPT) con bloque recurrente latente ("looped"); atención intercalada sliding-window y full attention; sin RMSNorm (normalización L2 de vectores ocultos, queries y keys) |
 | Parametros totales | 3.975.229.440 |
-| Parametros activos | no disponible (no es MoE; el bloque recurrente se reutiliza, no se activan parametros distintos) |
-| Longitud de contexto | 2.048 tokens de presupuesto de KV cache en estos ficheros; vocabulario de 131.072 tokens |
-| Tipos de cuantizacion | int4 blockwise-32 (GPTQ) para GPU; int8 dinamico channelwise para CPU; int4 one-loop |
-| Idiomas soportados | Ingles (en) |
-| Licencia | OpenMDW-1.1 (openmdw-1.1) |
-| Formato de pesos | `.litertlm` (LiteRT-LM); modelo base en BF16 safetensors |
-
-Detalles estructurales del checkpoint: 72 bloques (8 pares de entrada, 20 pares recurrentes, 8 pares de salida), con los 20 pares recurrentes ejecutados dos veces por token en la receta por defecto. Hidden size 2560, 16 cabezas de query y 4 cabezas KV de 256 dimensiones, 27 capas de atencion de ventana deslizante (1.024 tokens) y 9 capas de atencion completa, MLP de 7168 y embeddings no atados. No usa RMSNorm: cada vector oculto, query y key se normaliza L2 (nGPT) y cada bloque mezcla su salida en el residual con un paso aprendido.
-
-| Fichero | Receta | Tamano | sha256 |
-|---|---|---|---|
-| `NVIDIA-Nemotron-Labs-Dory1.0-4B_int4.litertlm` | int4 blockwise-32 en capas lineales, codigos elegidos por GPTQ, escalas de bloque con suelo 2^-14; embedding int8 en seccion propia; escrituras de KV cache y matmuls de atencion como composites GPU; activaciones fp16 por defecto | 2,40 GB | `220daaa9...1253a21da` |
-| `NVIDIA-Nemotron-Labs-Dory1.0-4B_int8.litertlm` | int8 dinamico (pesos int8 channelwise, activaciones float) en capas lineales; embedding int8 | 4,05 GB | `25632f91...c2f9f6083` |
-| `NVIDIA-Nemotron-Labs-Dory1.0-4B_int4_1loop.litertlm` | mismos pesos, embedding, tokenizer y metadatos que el int4, con grafo que ejecuta los 20 pares recurrentes una vez por token | 2,40 GB | `53f93583...3450dab4` |
+| Parametros activos | no disponible (no es MoE; el cómputo por token se incrementa repitiendo el bloque recurrente, no activando expertos) |
+| Longitud de contexto | 131.072 tokens de vocabulario; presupuesto de caché KV de 2.048 tokens en los ficheros LiteRT-LM; ventana deslizante de 1.024 tokens |
+| Tipos de cuantizacion | int4 blockwise-32 (GPTQ) para GPU; int8 dinámico channelwise para CPU; variante int4 de un solo bucle para GPU; modelo base BF16 disponible por separado |
+| Idiomas soportados | inglés (en) |
+| Licencia | OpenMDW 1.1 (openmdw-1.1) |
+| Formato de pesos | LiteRT-LM (`.litertlm`); modelo base en BF16 (safetensors presumiblemente, no confirmado) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un nGPT looped: en lugar de apilar capas independientes, comparte un bloque de 20 pares de capas (atencion o MLP) que se aplica dos veces por token en la configuracion por defecto. Esto permite escalar el computo por token sin escalar los parametros, una forma de "test-time compute" integrada en la arquitectura. La normalizacion es puramente L2 sobre vectores ocultos, queries y keys, sin RMSNorm, y la mezcla residual usa un paso aprendido por bloque. La atencion alterna 27 capas de ventana deslizante de 1.024 tokens con 9 capas de atencion completa, lo que reduce el coste de contexto largo manteniendo acceso global periodico.
+El modelo base es un nGPT de NVIDIA con 72 bloques, cada uno de ellos de atención o MLP: 8 pares de entrada, 20 pares recurrentes y 8 pares de salida. Los 20 pares recurrentes se ejecutan dos veces por token en la configuración por defecto (dos bucles), lo que constituye el mecanismo de recurrencia latente. La dimensión oculta es 2560, con 16 cabezas de query y 4 cabezas KV de 256 dimensiones, 27 capas de atención deslizante (ventana de 1.024 tokens) y 9 capas de atención completa, MLP de 7168 y vocabulario de 131.072 tokens con embeddings no atados. No hay RMSNorm: cada vector oculto, query y key se normaliza L2 (característica nGPT), y cada bloque mezcla su salida en el residual con un paso aprendido. Los ficheros LiteRT-LM mantienen una caché KV por capa de atención y bucle (56 cachés en las variantes de dos bucles, 36 en la de un bucle).
 
-Los ficheros LiteRT-LM conservan una KV cache por capa de atencion y por bucle (modo "per-loop" de NVIDIA): 56 caches en los ficheros de dos bucles y 36 en el de un bucle, con un presupuesto de 2.048 tokens. La conversion se realizo con `hf-to-litertlm` sobre litert-torch 0.9.4 y se probo con litert-lm 0.18.0. No se dispone en la informacion proporcionada de datos sobre volumen de tokens de entrenamiento, composicion del dataset ni si hubo RLHF o DPO; la model card original de NVIDIA no se incluye en el material disponible.
+La conversión a LiteRT-LM fue realizada por litert-community con la herramienta hf-to-litertlm sobre litert-torch 0.9.4 y probada con litert-lm 0.18.0. El fichero int4 aplica cuantización blockwise-32 en las capas lineales con códigos elegidos por GPTQ y escalas de bloque con suelo en 2^-14, con embedding int8 en sección propia y las escrituras de caché KV y matmuls de atención como operaciones compuestas de GPU del runtime. El fichero int8 usa cuantización dinámica channelwise con activaciones en float. No se declara tipo de activación: en GPU se ejecuta con las activaciones fp16 por defecto del runtime. No se dispone de información sobre el dataset de entrenamiento, número de tokens, composición ni si hubo RLHF/DPO en la información proporcionada.
 
 ## Capacidades
 
-- Generacion de texto en ingles con modo de razonamiento explicito ("thinking"), con canal de pensamiento y tokens de parada definidos en los metadatos del modelo.
-- Razonamiento multi-paso: el bucle latente permite reutilizar el bloque recurrente como computo adicional por token.
-- Razonamiento matematico basico y de nivel escolar: el modelo obtiene 90-93 de accuracy en GSM8K segun fichero y hardware.
-- Conversacion multi-turno dentro del presupuesto de contexto de 2.048 tokens.
-- Ejecucion en dispositivo: inferencia en GPU movil via delegado OpenCL y en CPU.
-- No se documenta soporte de tool calling ni function calling en la informacion disponible.
-- No se documenta soporte de vision, audio ni otras modalidades.
-- Multilingue: solo ingles declarado.
+- Generación de texto y razonamiento: modo "thinking" con canal de pensamiento (thought channel) incluido en los metadatos del modelo; las pruebas de corrección se realizaron con thinking activado.
+- Razonamiento matemático: puntuación de 90-93 en GSM8K en las variantes cuantizadas (thinking off), lo que indica capacidad sólida para aritmética de varios pasos.
+- Razonamiento multi-step: la arquitectura de bucle recurrente permite gastar más cómputo por token, lo que favorece tareas de razonamiento encadenado.
+- Multilingüe: no disponible; el modelo solo declara inglés.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes: no disponible en la información proporcionada.
+- Capacidades especiales: modo de razonamiento con canal de pensamiento, ejecución on-device en GPU (int4) y CPU (int8), y variante de un solo bucle para mayor velocidad en GPU a costa de menor precisión en GSM8K (86 frente a 90).
 
 ## Casos de uso
 
-- Asistente conversacional offline en movil: el fichero int4 en GPU del Galaxy S26 decodifica a 12,09 tok/s, suficiente para respuestas cortas con razonamiento en un asistente sin conexion.
-- Razonamiento matematico en el dispositivo: con 90 de accuracy en GSM8K (int4, GPU) y 93 (int8, CPU), es adecuado para resolver problemas aritmeticos y de enunciado en apps educativas sin enviar datos a la nube.
-- Procesamiento de texto privado en portatiles Apple Silicon: el int8 en CPU del Mac M4 Max completa 1.024 tokens de prefill mas 256 de decodificacion en 19,70 s, util para resumen y reescritura local de documentos sensibles.
-- Clasificacion y extraccion de informacion en edge: con contexto de 2.048 tokens y ventana deslizante de 1.024, encaja en tareas de extraccion sobre parrafos o fichas cortas en dispositivos con recursos limitados.
-- Prototipado de agentes con razonamiento en hardware de consumo: el canal de pensamiento y la plantilla de NVIDIA permiten construir flujos de reflexion paso a paso en un telefono o mini-PC.
-- Evaluacion de arquitecturas looped: sirve como banco de pruebas para comparar el efecto del numero de bucles (1 vs 2) sobre precision y latencia en el mismo hardware.
-- Filtrado y moderacion de contenido local: la baja latencia del fichero one-loop en GPU (17,32 tok/s en Galaxy S26) permite clasificar mensajes en tiempo real sin salir del dispositivo.
+- Asistente de razonamiento on-device en móviles: el fichero int4 se ejecuta en la GPU de un Galaxy S26 a 12,09 tok/s, lo que permite integrar un asistente conversacional con razonamiento local sin enviar datos a la nube; adecuado para aplicaciones de privacidad sensible.
+- Resolución de problemas matemáticos en el dispositivo: con 90-93 en GSM8K, el modelo puede resolver problemas aritméticos de varios pasos en tiempo real en un Mac M4 Max (5,43 s para prefill de 1.024 tokens más 256 tokens decodificados), útil en apps educativas offline.
+- Procesamiento de documentos largos con contexto de 2.048 tokens: el presupuesto de caché KV de 2.048 tokens permite resumir o extraer información de fragmentos de documentos en edge, aunque limita la longitud de entrada.
+- Automatización de atención al cliente en kioscos o terminales: la variante int8 en CPU (4,05 GB) puede desplegarse en dispositivos sin GPU dedicada, gestionando conversaciones multi-turno en inglés con latencia de 62,93 s en Galaxy S26 para prefill+decodificación de 1.024+256 tokens.
+- Prototipado de agentes de razonamiento en portátiles: la variante int4 en GPU de Mac M4 Max (5,43 s) permite iterar rápidamente en pipelines de razonamiento con thinking mode antes de escalar a producción.
+- Evaluación de arquitecturas looped en investigación: la disponibilidad de variantes de uno y dos bucles con métricas comparadas (GSM8K 86 vs 90) facilita estudiar el trade-off entre cómputo recurrente y precisión en entornos reales.
+- Aplicaciones de accesibilidad en tiempo real: la variante de un solo bucle int4 en GPU alcanza 17,32 tok/s en Galaxy S26, adecuada para subtitulado o descripción de texto en vivo donde la latencia es crítica.
 
 ## Benchmarks y rendimiento
 
-GSM8K con thinking desactivado, metrica de accuracy, segun la model card:
+| Benchmark / métrica | int4 (2 bucles, GPU Mac) | int4 1 bucle (GPU Mac) | int8 (CPU Mac) | BF16 (llama.cpp, 2 bucles) | BF16 (llama.cpp, 1 bucle) |
+|---|---|---|---|---|---|
+| GSM8K (thinking off, accuracy) | 90 | 86 | 93 | 95 | 86 |
+| Verificación 8 preguntas (Mac GPU/CPU) | 8/8 | no disponible | 8/8 | no disponible | no disponible |
+| Verificación 8 preguntas (Galaxy S26) | 8/8 (GPU) | no disponible | 8/8 (CPU) | no disponible | no disponible |
+| Verificación 8 preguntas (Pixel 8a) | no ejecutado | no disponible | 8/8 (CPU) | no disponible | no disponible |
 
-| Modelo / fichero | Hardware | Bucles | GSM8K |
+Tiempos de 1.024 tokens de prefill más 256 tokens decodificados a contexto 2.048 (segundos):
+
+| Configuración | Mac M4 Max | Galaxy S26 | Pixel 8a |
 |---|---|---|---|
-| int4 | GPU Mac | 2 | 90 |
-| int4 one-loop | GPU Mac | 1 | 86 |
-| int8 | CPU Mac | 2 | 93 |
-| BF16 (llama.cpp) | no disponible | 2 | 95 |
-| BF16 (llama.cpp) | no disponible | 1 | 86 |
+| int4 GPU | 5,43 | 24,78 | no ejecutado |
+| int8 CPU | 19,70 | 62,93 | 298,9 |
+| int4 un bucle, GPU | 3,54 | 17,11 | no ejecutado |
 
-Tiempos para 1.024 tokens de prefill mas 256 tokens decodificados con contexto 2.048:
-
-| Configuracion | Mac M4 Max | Galaxy S26 | Pixel 8a |
-|---|---|---|---|
-| int4 GPU | 5,43 s | 24,78 s | no ejecutado |
-| int8 CPU | 19,70 s | 62,93 s | 298,9 s |
-| int4 one loop, GPU | 3,54 s | 17,11 s | no ejecutado |
-
-Decodificacion en Galaxy S26: 12,09 tok/s con int4 en GPU (22-10-2026); en ejecuciones alternas, 17,32 tok/s con one-loop frente a 11,08 tok/s con int4 de dos bucles (23-10-2026). En CPU, una compilacion int4 anterior prefillaba a 29,0 tok/s frente a 92,1 tok/s del int8 en el Galaxy S26.
-
-Prueba de correctitud de 8 preguntas con thinking activado y decodificacion greedy: 8/8 en int4 sobre GPU Mac (activaciones fp16 y fp32), 8/8 en int8 sobre CPU Mac, 8/8 en int4 sobre GPU del Galaxy S26 con todos los nodos en el delegado OpenCL, y 8/8 en int8 sobre CPU del Galaxy S26 y del Pixel 8a. No se han publicado resultados de MMLU, HumanEval ni otros benchmarks en la informacion disponible.
+Velocidad de decodificación: int4 en GPU de Galaxy S26 a 12,09 tok/s (medido 2026-10-22); en ejecuciones alternadas, el fichero de un bucle decodificó a 17,32 tok/s frente a 11,08 tok/s del int4 de dos bucles (2026-10-23). En CPU, un build int4 anterior prefijó a 29,0 tok/s frente a 92,1 tok/s del int8 en Galaxy S26.
 
 ## Requisitos de hardware
 
-- VRAM/almacenamiento: 2,40 GB para el fichero int4 (GPU) y 2,40 GB para el one-loop; 4,05 GB para el int8 (CPU).
-- GPU recomendadas: GPU moviles con soporte OpenCL (Adreno en Galaxy S26 verificado) y GPU integradas de Apple Silicon (M4 Max verificado). No se documentan pruebas en A100, H100 ni RTX 4090.
-- GPU de consumo: cabe en cualquier GPU con al menos 3 GB de memoria libre; el modelo esta pensado para movil y edge, no para servidores.
-- CPU: el fichero int8 es la opcion correcta para CPU; el int4 en CPU es desaconsejado por la propia model card (prefill tres veces mas lento y respuestas greedy que varian entre CPUs).
-- Despliegue: runtime LiteRT-LM (version probada 0.18.0), con `litert_lm_advanced_main` en moviles; no se documenta soporte de vLLM, llama.cpp, Ollama ni TGI para estos ficheros `.litertlm`. El BF16 original puede ejecutarse en llama.cpp segun la comparativa de la model card.
-- Latencia y throughput: ver tabla de benchmarks; el modo one-loop reduce el tiempo total un 35-45 % en GPU a costa de 4 puntos de GSM8K.
+- VRAM estimada: int4 requiere aproximadamente 2,40 GB de almacenamiento y una huella de memoria similar en GPU; int8 requiere 4,05 GB; el modelo BF16 completo requiere aproximadamente 8 GB (3.975 millones de parámetros × 2 bytes).
+- GPU recomendadas: GPU integradas o dedicadas de móviles (OpenCL delegate en Galaxy S26), GPU de Apple Silicon (Mac M4 Max), y GPU de escritorio con soporte OpenCL; no se especifican modelos A100/H100/RTX 4090 en la información.
+- Cabe en GPU consumer: sí; el fichero int4 de 2,40 GB cabe en cualquier GPU con al menos 3-4 GB de VRAM libre, incluidas integradas de portátiles modernos.
+- Opciones de despliegue: runtime LiteRT-LM (litert-lm 0.18.0) mediante `litert_lm_advanced_main`; el modelo base BF16 puede ejecutarse en llama.cpp; no se mencionan vLLM, TGI, Ollama ni llama.cpp para los ficheros `.litertlm`.
+- Latencia y throughput: en Mac M4 Max, 5,43 s para 1.024+256 tokens en int4 GPU y 3,54 s en la variante de un bucle; en Galaxy S26, 24,78 s (int4 GPU), 17,11 s (un bucle) y 62,93 s (int8 CPU); en Pixel 8a, 298,9 s (int8 CPU).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | GSM8K | Licencia | Formato / despliegue |
+| Modelo | Parámetros | Contexto | GSM8K | Licencia | Formato |
 |---|---|---|---|---|---|
-| Dory1.0-4B int4 (LiteRT-LM) | 3,97 B | 2.048 | 90 (GPU, 2 bucles) | OpenMDW-1.1 | `.litertlm`, LiteRT-LM |
-| Dory1.0-4B int8 (LiteRT-LM) | 3,97 B | 2.048 | 93 (CPU, 2 bucles) | OpenMDW-1.1 | `.litertlm`, LiteRT-LM |
-| Dory1.0-4B BF16 (llama.cpp) | 3,97 B | no disponible | 95 (2 bucles) | OpenMDW-1.1 | GGUF via llama.cpp |
-| Dory1.0-4B one-loop int4 | 3,97 B | 2.048 | 86 (GPU) | OpenMDW-1.1 | `.litertlm`, LiteRT-LM |
+| Dory1.0-4B (int4, 2 bucles) | 3.975 M | 2.048 tokens KV (131.072 vocab) | 90 | OpenMDW 1.1 | LiteRT-LM |
+| Dory1.0-4B (int8) | 3.975 M | 2.048 tokens KV | 93 | OpenMDW 1.1 | LiteRT-LM |
+| Dory1.0-4B BF16 (llama.cpp) | 3.975 M | no disponible | 95 | OpenMDW 1.1 | BF16 |
+| Alternativas de ~4B on-device | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone en la informacion proporcionada de datos de otros modelos de tamano similar (por ejemplo, familias de 3-4 B orientadas a edge) para establecer una comparativa cruzada con cifras verificables.
+No se dispone de datos de benchmarks ni especificaciones de modelos comparables de la misma categoría (aproximadamente 4B parámetros, on-device, razonamiento) en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo ingles: no hay soporte multilingue declarado, por lo que su uso en castellano producira resultados degradados.
-- Contexto efectivo limitado a 2.048 tokens en estos ficheros, muy por debajo de lo habitual en modelos de 4 B; las tareas que requieran documentos largos no son adecuadas.
-- El modo one-loop pierde precision (86 frente a 90 en GSM8K en GPU) y no debe usarse cuando la exactitud matematica sea critica.
-- El fichero int4 en CPU es problematico: prefill lento y respuestas greedy no deterministas entre distintas CPUs, segun la propia model card.
-- Riesgo de alucinacion inherente a un modelo de 4 B con razonamiento explicito; el canal de pensamiento no garantiza correccion factual.
-- No se documentan sesgos especificos ni evaluaciones de seguridad en la informacion disponible.
-- Licencia OpenMDW-1.1: NVIDIA declara el modelo apto para uso comercial, pero conviene revisar los terminos completos de la licencia antes de desplegarlo en produccion.
-- Los ficheros `.litertlm` dependen de LiteRT-LM 0.18.0; versiones distintas del runtime pueden no cargarlos correctamente.
-- El rendimiento medido en Galaxy S26 puede variar por throttling termico: la propia model card senala que la GPU del telefono estuvo por debajo del limite termico en mas muestras en una de las ejecuciones.
+- Solo soporta inglés; no hay capacidades multilingües declaradas.
+- El presupuesto de caché KV de 2.048 tokens limita el contexto efectivo en producción, muy por debajo de los 131.072 tokens del vocabulario.
+- En CPU, los pesos int4 producen respuestas greedy que cambian de una CPU a otra (según la model card), por lo que el fichero int4 no es adecuado para CPU; debe usarse int8 en CPU.
+- La variante de un solo bucle reduce la precisión en GSM8K de 90 a 86 y de 95 a 86 en BF16, por lo que no es recomendable para tareas que requieran máxima exactitud.
+- Riesgo de alucinación inherente a los modelos de lenguaje; no se documentan evaluaciones de sesgo en la información disponible.
+- La licencia OpenMDW 1.1 permite uso comercial según NVIDIA, pero conviene revisar los términos completos en el enlace oficial antes de desplegar en producción.
+- El rendimiento medido en Galaxy S26 puede variar por throttling térmico: la model card indica que en las ejecuciones del 2026-10-23 el reloj de GPU estaba por debajo del límite térmico en más muestras que el 2026-10-22.
+- La información sobre tool calling, soporte de agentes y datos de entrenamiento no está disponible.
 
 ## Enlaces
 
-- Hugging Face (conversion LiteRT-LM): https://huggingface.co/litert-community/NVIDIA-Nemotron-Labs-Dory1.0-4B
-- Arbol de ficheros: https://huggingface.co/litert-community/NVIDIA-Nemotron-Labs-Dory1.0-4B/tree/main
-- Modelo base BF16 de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16
-- Runtime LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM
-- Herramienta de conversion hf-to-litertlm: https://github.com/john-rocky/hf-to-litertlm
-- Script de verificacion de calidad: https://github.com/john-rocky/hf-to-litertlm/blob/main/scripts/verify_quality.py
-- Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/
+- Hugging Face (conversión LiteRT-LM): https://huggingface.co/litert-community/NVIDIA-Nemotron-Labs-Dory1.0-4B
+- Modelo base BF16 en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16
+- Runtime LiteRT-LM (Google AI Edge): https://github.com/google-ai-edge/LiteRT-LM
+- Herramienta de conversión hf-to-litertlm: https://github.com/john-rocky/hf-to-litertlm
+- Script de verificación de calidad: https://github.com/john-rocky/hf-to-litertlm/blob/main/scripts/verify_quality.py
+- Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/

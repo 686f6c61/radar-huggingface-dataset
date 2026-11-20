@@ -5,7 +5,7 @@
   "author": "CBA-Research",
   "url": "https://huggingface.co/CBA-Research/GameScaling-9B-S3-FP8",
   "created_at": "2026-11-19T10:01:58.000Z",
-  "updated_at": "2026-11-19T10:08:33.000Z",
+  "updated_at": "2026-11-19T10:35:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

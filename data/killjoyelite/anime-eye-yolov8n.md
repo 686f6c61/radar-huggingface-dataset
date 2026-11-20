@@ -2,92 +2,95 @@
 
 ## Resumen
 
-El modelo `killjoyelite/anime-eye-yolov8n` es un detector de objetos especializado en localizar ojos en ilustraciones de estilo anime. Se trata de un fine-tuning de la arquitectura YOLOv8n de Ultralytics, entrenado por el usuario `killjoyelite` con un dataset propio de 212 imágenes generadas por IA, mayoritariamente de personajes femeninos. El modelo resuelve un problema concreto en pipelines de generación de arte anime: la automatización del detallado o inpainting de los ojos, que es una de las zonas más críticas para la calidad visual del resultado.
+Anime Eye Detector es un modelo de deteccion de objetos basado en YOLOv8, desarrollado por el usuario killjoyelite y publicado en Hugging Face. Su proposito es concreto: localizar los ojos en ilustraciones de personajes de estilo anime y semi-realista, devolviendo cajas delimitadoras (bounding boxes) sobre cada ojo visible. No es un modelo generativo ni un LLM, sino un detector de una sola clase (`eye`) pensado como componente auxiliar dentro de flujos de trabajo de generacion e inpainting de imagenes.
 
-Está diseñado para integrarse en ComfyUI junto con el paquete Impact Pack, de forma similar a como se usan los detectores `face_yolov8n.pt` y `hand_yolov8n.pt`. Su relevancia actual radica en que permite a los flujos de trabajo de generación de anime identificar automáticamente los ojos y aplicar mejoras selectivas sin tener que etiquetar manualmente cada imagen. La arquitectura es YOLOv8n (variante nano), un modelo ligero de detección de objetos con una sola clase (`eye`). No se dispone de información sobre el número total de parámetros ni sobre la longitud de contexto, ya que no es un modelo de lenguaje.
+El modelo se ofrece en dos variantes: `yolov8n` (nano) y `yolov8s` (small), ambas derivadas de los pesos preentrenados de Ultralytics y afinadas sobre un conjunto de datos propio de 286 imagenes (version 2.0) generadas por el autor y etiquetadas manualmente. Su relevancia practica radica en que se integra directamente con ComfyUI y el Impact Pack, replicando el rol que cumplen detectores genericos como `face_yolov8n.pt` o `hand_yolov8n.pt`, pero especializado en la region ocular de personajes anime.
 
-## Especificaciones técnicas
+La ficha se centra en las dos variantes documentadas por el autor. El repositorio ocupa aproximadamente 0,1 GB y se distribuye bajo licencia MIT, lo que facilita su uso comercial y su redistribucion dentro de pipelines propios.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | YOLOv8n (Ultralytics), detector de una sola clase (`eye`) |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no aplica (detección de objetos) |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no aplica |
+| Arquitectura | YOLOv8 (detector de objetos de una etapa, CNN) |
+| Parametros totales | no disponible (variantes nano y small de YOLOv8; cifras exactas no publicadas en la model card) |
+| Parametros activos | no aplica (no es un modelo MoE) |
+| Longitud de contexto | no aplica (modelo de vision, no de texto) |
+| Tipos de cuantizacion | no disponible (se distribuyen pesos `.pt` de Ultralytics; no se documentan variantes ONNX, TensorRT o cuantizadas) |
+| Idiomas soportados | no disponible (no procesa texto; el dominio visual es anime y semi-realista) |
 | Licencia | MIT |
-| Formato de pesos | PyTorch `.pt` (Ultralytics) |
+| Formato de pesos | `.pt` (PyTorch, formato Ultralytics) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte del checkpoint `yolov8n.pt` de Ultralytics y se ha fine-tuneado para la detección de una única clase: ojos en arte anime. El entrenamiento se realizó sobre 212 imágenes auto-generadas por el autor (principalmente personajes femeninos), etiquetadas manualmente con bounding boxes alrededor de cada ojo visible. La configuración de entrenamiento fue de 100 épocas, con tamaño de imagen de 640 píxeles y batch size de 8.
+El modelo emplea la arquitectura YOLOv8 de Ultralytics, un detector de objetos de una sola etapa con backbone CNN y cabecera de deteccion anclada sin anchors (anchor-free), optimizada para velocidad y precision en tareas de deteccion en tiempo real. La tarea es deteccion de objetos con una unica clase (`eye`), de modo que la salida son cajas delimitadoras con su puntuacion de confianza, sin clasificacion multi-clase.
 
-No se han empleado técnicas de RLHF ni DPO, ya que no es un modelo de lenguaje. Tampoco se documentan innovaciones técnicas destacables más allá del fine-tuning convencional sobre una arquitectura YOLOv8n. El valor principal del modelo reside en la especificidad del dominio y en su integración con ComfyUI, más que en una novedad arquitectónica.
+El ajuste fino se realizo sobre un conjunto de 286 imagenes (version 2.0) de estilo anime y semi-realista, generadas por el propio autor (principalmente personajes femeninos) y etiquetadas manualmente con cajas alrededor de cada ojo visible. La configuracion de entrenamiento documentada es de 100 epocas, tamano de imagen 640 y batch size 8. No se detalla en la model card el uso de tecnicas de aumento de datos, funciones de perdida especificas ni procesos de validacion cruzada mas alla de la particion de validacion. No se menciona RLHF, DPO ni tecnicas de alineacion, algo esperable en un detector visual.
 
 ## Capacidades
 
-- Detección de ojos en ilustraciones de estilo anime, con una única clase (`eye`).
-- Integración nativa con ComfyUI a través de `UltralyticsDetectorProvider` y `BboxDetectorSEGS` del paquete Impact Pack.
-- Permite generar bounding boxes para uso en flujos de inpainting y detallado selectivo mediante el nodo `Detailer (SEGS)`.
-- No soporta tool calling, function calling, razonamiento multi-paso ni capacidades de agentes.
-- No es multimodal: no procesa texto, audio ni vídeo; solo imágenes de entrada para detección.
-- No tiene capacidades multilingües, al no ser un modelo de lenguaje.
-- Capacidad especial: detección de ojos en un dominio visual muy concreto (anime), con métricas de validación elevadas sobre el split del autor.
+- Deteccion de ojos en ilustraciones de estilo anime y semi-realista, con una unica clase de salida (`eye`).
+- Localizacion mediante cajas delimitadoras de cada ojo visible, apta para recortes y regiones de inpainting.
+- Integracion nativa con ComfyUI mediante `UltralyticsDetectorProvider` y el Impact Pack.
+- Funcionamiento con `Detailer (SEGS)` para redibujar o corregir la region ocular sin alterar el resto de la imagen.
+- Dos variantes de compromiso precision/velocidad: nano (`yolov8n`) y small (`yolov8s`).
+- Uso como detector auxiliar en pipelines de generacion de imagenes (por ejemplo, cambio de color de ojos o correccion de detalles).
+- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingues, al no ser un modelo de lenguaje.
 
 ## Casos de uso
 
-- Detallado de ojos en ComfyUI: el modelo se usa con `UltralyticsDetectorProvider` para obtener los bounding boxes de los ojos y, a continuación, se aplica el nodo `Detailer (SEGS)` para regenerar la zona con un nivel de denoise entre 0.5 y 0.7, consiguiendo un acabado más fino.
-- Inpainting selectivo de ojos en ilustraciones generadas: permite generar máscaras automáticas sobre los ojos y aplicar un modelo de inpainting localizado, evitando modificar el resto de la imagen.
-- Post-procesado en pipelines de generación de anime: tras generar una imagen con Stable Diffusion, se detectan los ojos y se aplican mejoras de resolución o re-estilizado únicamente sobre esas regiones.
-- Edición de personajes: reemplazar los ojos de un personaje por otro estilo, usando el bounding box del modelo para guiar un modelo de inpainting o de transferencia de estilo.
-- Asistencia a artistas digitales: localizar automáticamente los ojos en bocetos o ilustraciones para aplicar correcciones de proporción o de estilo sin necesidad de selección manual.
-- Automatización de retoque en producción de ilustraciones: en lugar de etiquetar manualmente cada imagen, se usa el modelo para obtener bounding boxes en lotes de imágenes y alimentar procesos de control de calidad o de mejora automática.
+- Correccion de ojos en generacion de imagenes con ComfyUI: se detectan las cajas oculares y se pasa la region a `Detailer (SEGS)` con `guide_size` 512 y `denoise` entre 0,5 y 0,7 para redibujar el ojo segun el prompt sin tocar el resto del lienzo.
+- Cambio de color de ojos: el detector aísla la region ocular y un inpainting guiado por prompt modifica el color manteniendo la identidad del personaje y el resto de la ilustracion intactos.
+- Post-procesado de lotes de ilustraciones anime: ejecutar el detector sobre carpetas de imagenes para localizar y corregir ojos defectuosos de forma automatizada antes de la entrega.
+- Integracion en herramientas de edicion asistida: usar las cajas detectadas para ofrecer al usuario selecciones precisas de la region ocular en un editor grafico.
+- Entrenamiento y evaluacion de pipelines de deteccion facial en dominios de animacion: sirve como componente especializado frente a detectores genericos de cara.
+- Generacion de datasets etiquetados: emplear el detector para pre-anotar ojos en nuevas imagenes y acelerar el etiquetado manual posterior.
+- Prototipado rapido en entornos con recursos limitados: la variante nano permite inferencia en GPU de consumo con baja latencia para pruebas y demos.
 
 ## Benchmarks y rendimiento
 
-Según la model card del autor, el rendimiento sobre la partición de validación es el siguiente:
+Resultados publicados por el autor sobre la particion de validacion:
 
-| Metric | Score |
-|---|---|
-| mAP50 | 0.995 |
-| mAP50-95 | 0.681 |
-| Precision | 0.998 |
-| Recall | 1.000 |
+| Metrica | Nano (yolov8n) | Small (yolov8s) |
+|---|---|---|
+| mAP50 | 0,982 | 0,989 |
+| mAP50-95 | 0,663 | 0,670 |
+| Precision | 0,997 | 0,981 |
+| Recall | 0,964 | 0,954 |
 
-Estos resultados corresponden a un dataset de validación muy pequeño (parte de las 212 imágenes totales) y deben interpretarse con cautela. No se han publicado benchmarks comparativos con otros modelos en la información disponible.
+No se han publicado comparaciones con otros detectores especializados en el dominio anime en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible.
-- GPU recomendadas: no disponible.
-- Al tratarse de un modelo YOLOv8n, es un modelo ligero, pero no se aportan cifras concretas de consumo de VRAM en la información proporcionada.
-- Opciones de despliegue: ComfyUI con Impact Pack (`UltralyticsDetectorProvider`, `BboxDetectorSEGS`, `Detailer (SEGS)`) y la librería Ultralytics para inferencia directa.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: no disponible de forma explicita; por el tamano de las variantes nano y small de YOLOv8, la inferencia cabe holgadamente en GPUs de consumo, aunque no se documentan cifras concretas.
+- GPU recomendadas: no disponibles en la model card; cualquier GPU compatible con PyTorch y Ultralytics deberia poder ejecutar el modelo.
+- Cabe en GPU de consumo: si, por el tamano reducido de las variantes nano y small; no se especifican modelos concretos.
+- Opciones de despliegue: Ultralytics (Python), ComfyUI con Impact Pack; no se documentan exportaciones a ONNX, TensorRT, vLLM, llama.cpp ni TGI (no aplicables a este tipo de modelo).
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos suficientes para una comparativa completa. Se han identificado dos modelos similares en Hugging Face:
+| Modelo | Tipo | Clase(s) | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Anime Eye Detector (yolov8n/s) | YOLOv8, deteccion | `eye` | no disponible | no aplica | MIT | Hugging Face |
+| `face_yolov8n.pt` (Impact Pack) | YOLOv8, deteccion | cara | no disponible | no aplica | segun distribucion de Impact Pack | Incluido en Impact Pack |
+| `hand_yolov8n.pt` (Impact Pack) | YOLOv8, deteccion | mano | no disponible | no aplica | segun distribucion de Impact Pack | Incluido en Impact Pack |
 
-- `Fuyucchi/yolov8_animeface`: un detector de caras de anime basado en YOLOv8, pero orientado a rostros completos, no a ojos.
-- `jags/yolov8_model_segmentation-set`: incluye un checkpoint `Anime-yolov8-seg.pt` para segmentación de anime, con un enfoque distinto al de detección de objetos.
-
-Las especificaciones técnicas y los benchmarks de estos modelos no están disponibles en la información proporcionada, por lo que no se puede establecer una comparativa numérica.
+La comparacion se limita a detectores auxiliares del ecosistema ComfyUI/Impact Pack, ya que no se dispone de datos de otros detectores especializados en ojos de anime en la informacion proporcionada. No se han publicado metricas comparativas entre estos modelos.
 
 ## Limitaciones y advertencias
 
-- Sesgo de género: el modelo fue entrenado predominantemente con personajes femeninos, por lo que la detección en ojos de personajes masculinos es menos fiable y puede producir falsos negativos.
-- Dificultad con ojos muy grandes, cartoony o de estilo chibi que se desvían de las proporciones estándar del anime.
-- Generalización limitada: al estar entrenado con un único estilo de generación, puede funcionar peor en estilos muy diferentes (pintura, arte no anime, estilos muy estilizados).
-- Dataset pequeño: las 212 imágenes de entrenamiento limitan la robustez real del modelo frente a la diversidad del arte anime.
-- Licencia MIT: permite uso comercial, pero los usuarios deben verificar de forma independiente las licencias de los checkpoints base utilizados para generar sus propias imágenes de entrenamiento o inferencia si ello es relevante para su caso de uso.
-- Riesgo de alucinación: no aplica en el sentido clásico de los modelos de lenguaje, pero pueden producirse detecciones erróneas (falsos positivos) o ausencia de detección (falsos negativos) en ciertas imágenes.
+- La deteccion en ojos de personajes masculinos, aunque mejorada en la version 2.0, sigue siendo menos fiable que en personajes femeninos.
+- El conjunto de entrenamiento es reducido (286 imagenes en la version 2.0); las metricas de validacion son altas, pero la robustez frente a estilos no vistos puede degradarse.
+- El modelo fue entrenado con imagenes anime y semi-realistas; el autor indica que tambien funciona en estilos realistas, pero sin validacion extensa en todos los estilos artisticos.
+- Riesgo de falsos positivos o detecciones incompletas en ojos parcialmente ocultos, cerrados o muy estilizados.
+- No es un modelo de lenguaje: no procesa texto ni soporta tool calling, agentes o razonamiento multi-paso.
+- Licencia MIT, que permite uso comercial y redistribucion; el autor recomienda verificar de forma independiente las condiciones de licencia de cualquier checkpoint base usado para generar imagenes de entrenamiento o inferencia.
+- No se documentan sesgos demograficos mas alla de la limitacion de genero indicada; al tratarse de arte generado, los sesgos reflejan la distribucion del dataset del autor.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/killjoyelite/anime-eye-yolov8n
+- Modelo en Hugging Face: https://huggingface.co/killjoyelite/anime-eye-yolov8n
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI
-- Impact Pack: https://github.com/ltdrdata/ComfyUI-Impact-Pack
-- Ultralytics: https://github.com/ultralytics/ultralytics
-- Fuyucchi/yolov8_animeface: https://huggingface.co/Fuyucchi/yolov8_animeface
-- jags/yolov8_model_segmentation-set: https://huggingface.co/jags/yolov8_model_segmentation-set
+- ComfyUI Impact Pack: https://github.com/ltdrdata/ComfyUI-Impact-Pack
+- Ultralytics (framework YOLOv8): no se incluye enlace explicito en la model card; referencia general en https://github.com/ultralytics/ultralytics

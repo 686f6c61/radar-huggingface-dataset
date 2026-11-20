@@ -1,0 +1,76 @@
+{
+  "schema": 2,
+  "id": "AmplifiedAccess/Swahili-gemma-1b-it",
+  "slug": "amplifiedaccess-swahili-gemma-1b-it",
+  "author": "AmplifiedAccess",
+  "url": "https://huggingface.co/AmplifiedAccess/Swahili-gemma-1b-it",
+  "created_at": "2026-08-11T20:03:28.000Z",
+  "updated_at": "2026-11-20T01:20:50.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "sw"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "translation",
+    "swahili",
+    "gemma3",
+    "en",
+    "sw",
+    "dataset:masakhane/mafand",
+    "dataset:Rogendo/English-Swahili-Sentence-Pairs",
+    "dataset:Sunbird/salt",
+    "dataset:Svngoku/Inkuba-Swahili-MMT",
+    "dataset:CohereLabs/aya_dataset",
+    "dataset:iamshnoo/alpaca-cleaned-swahili",
+    "base_model:google/gemma-3-1b-it",
+    "base_model:finetune:google/gemma-3-1b-it",
+    "license:gemma",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 999885952,
+  "parameters_human": "999.9M",
+  "storage_bytes": 2015840884,
+  "storage_human": "2.0 GB",
+  "context_length": null,
+  "base_model": "google/gemma-3-1b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Translation English to Swahili",
+      "dataset": "FLORES-200",
+      "metric": "BLEU",
+      "value": 28.86
+    },
+    {
+      "task": "Translation English to Swahili",
+      "dataset": "FLORES-200",
+      "metric": "chrF++",
+      "value": 54.77
+    }
+  ],
+  "sources": []
+}

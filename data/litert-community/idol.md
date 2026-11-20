@@ -2,121 +2,111 @@
 
 ## Resumen
 
-Idol es un modelo de reconstruccion 3D a partir de una sola imagen (image-to-3D) que genera una representacion de Gaussian splatting con 262.144 gaussianas tridimensionales. El modelo original lo desarrolla speridlabs, y esta ficha corresponde a la conversion realizada por la comunidad litert-community para su ejecucion en dispositivo (on-device) mediante LiteRT, el runtime de Google para inferencia en Android y otras plataformas. La relevancia de esta version radica en que traslada un pipeline generativo 3D completo a un telefono movil, sin depender de servidores externos.
+Idol es un modelo de imagen a 3D (image-to-3D) que convierte una sola fotografía de un objeto en un Gaussian splat tridimensional, incluyendo las caras que la imagen original nunca mostró. El modelo original lo desarrolla speridlabs y esta versión concreta la publica la comunidad litert-community como grafos LiteRT (formato `.tflite`) para su ejecución on-device en Android mediante `CompiledModel`, empleando la GPU del teléfono.
 
-Tecnicamente, el repositorio empaqueta en formato LiteRT (TFLite) los distintos componentes del pipeline: el denoiser del modelo base con el LoRA idol-turbo (5 pasos, sin guidance), los decodificadores de octree y de gaussianas, el encoder VAE de FLUX.2 y el removedor de fondo BiRefNet. El encoder de imagen DINOv3 se distribuye aparte, en un repositorio con acceso restringido bajo su propia licencia. El resultado es un conjunto de grafos que, combinados, permiten convertir una foto de un objeto en un splat 3D navegable, incluyendo las caras que la imagen original no mostraba.
+La ficha corresponde a una conversión cuantizada del modelo base `speridlabs/idol`, que incorpora el LoRA `speridlabs/idol-turbo` (5 pasos de denoising, sin guidance). El paquete incluye el denoiser, los decodificadores de octree y gaussiano, el encoder VAE de FLUX.2 y el eliminador de fondo BiRefNet; el encoder de imágenes DINOv3 se distribuye aparte en un repositorio con acceso restringido y licencia propia.
 
-El modelo esta pensado para inferencia local en GPU movil en precision fp16 con acumulacion fp32. En un Galaxy S26, el ejemplo de Android del repositorio completa el pipeline completo (foto a fichero .ply) en 303 segundos partiendo de un telefono frio, con un pico de memoria GPU de 5,60 GiB. La licencia es Apache 2.0 para esta conversion, aunque el encoder DINOv3 queda sujeto a su propia licencia separada.
+Su relevancia radica en que demuestra la viabilidad de generar representaciones 3D de alta fidelidad íntegramente en un smartphone, sin conexión a la nube: en un Galaxy S26 produce un splat de 65.536 gaussianas en 158 s (primer procesamiento tras arrancar, teléfono frío) y de 262.144 gaussianas en 267 s con la variante `262k/`. El repositorio ocupa 6,1 GB y se publica bajo licencia Apache 2.0, aunque el encoder DINOv3 gated condiciona el uso completo del pipeline.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Pipeline generativo de difusion (denoiser con LoRA idol-turbo) + decodificadores de octree y gaussianas; encoder VAE FLUX.2; encoder de imagen DINOv3; segmentacion BiRefNet |
+| Arquitectura | Pipeline multi-red: denoiser (difusion) con LoRA idol-turbo, decodificador de octree, decodificador gaussiano, encoder VAE FLUX.2, eliminador de fondo BiRefNet y encoder DINOv3 (repo aparte) |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo image-to-3D) |
-| Tipos de cuantizacion | Grafos LiteRT en fp16 con acumulacion fp32 (GPU); fp32 en CPU para BiRefNet |
-| Idiomas soportados | no disponible (no es un modelo de lenguaje) |
-| Licencia | Apache 2.0 (encoder DINOv3 bajo licencia separada y con acceso restringido) |
-| Formato de pesos | LiteRT / TFLite (grafos para `CompiledModel`) |
-| Salida | Gaussian splat de 262.144 gaussianas, exportable a .ply |
-| Tamano del repositorio | 3,9 GB |
-| Runtime | LiteRT 2.3.0 |
-| Plataforma objetivo | Android (GPU movil), con verificacion tambien en Mac (Metal) |
+| Longitud de contexto | no disponible (modelo de imagen a 3D, no de texto) |
+| Tipos de cuantizacion | FP16 en GPU; FP16 con acumulacion fp32 en la variante `262k/`; int8 probado pero no ejecutable en las GPU de los telefonos probados |
+| Idiomas soportados | no disponible (no procesa texto) |
+| Licencia | Apache 2.0 (el encoder DINOv3 tiene licencia propia y acceso restringido) |
+| Formato de pesos | LiteRT (`.tflite`), grafos para `CompiledModel`; salida en `.ply` |
+| Resolucion de entrada | 1.024 x 1.024 (la variante 512 x 512 queda por debajo del umbral de calidad de 25 dB PSNR) |
+| Salida | Gaussian splat de 65.536 gaussianas (2.048 anchors) por defecto; 262.144 gaussianas (8.192 anchors) en `262k/` |
+| Pasos de denoising | 5, sin guidance (LoRA idol-turbo) |
+| Tamano del repositorio | 6,1 GB |
 
 ## Arquitectura y entrenamiento
 
-El pipeline es una cadena de redes independientes empaquetadas como grafos LiteRT. La entrada es una foto; BiRefNet elimina el fondo en CPU, DINOv3 extrae caracteristicas de imagen, el VAE de FLUX.2 codifica a tokens latentes, y el denoiser (modelo base de speridlabs con el LoRA idol-turbo, configurado a 5 pasos sin guidance) genera la representacion latente. A continuacion, un decodificador de octree de 8 niveles produce la estructura espacial y un decodificador de gaussianas genera los atributos de cada gaussiana (posicion xyz, color f_dc, escala, rotacion y opacidad). Finalmente, la app escribe un fichero .ply.
+El pipeline es una cadena de redes independientes convertidas a grafos LiteRT. La imagen de entrada pasa primero por BiRefNet (ejecutado en CPU) para eliminar el fondo, después por el encoder DINOv3 (ViT-H/16+, en repositorio gated separado) y por el encoder VAE de FLUX.2, que proyectan la imagen a un espacio latente. Sobre ese latente opera el denoiser de difusión con el LoRA idol-turbo en 5 pasos y sin classifier-free guidance, seguido de un decodificador de octree que estructura la geometría y un decodificador gaussiano que emite las gaussianas finales, escritas a disco como `.ply`.
 
-El modelo original emplea una arquitectura de difusion para la generacion 3D, aunque la informacion disponible no detalla el numero de parametros, la composicion del dataset de entrenamiento ni si hubo fases de RLHF o DPO. La innovacion tecnica principal de esta version es la conversion a LiteRT mediante litert-torch y la gestion de memoria en dispositivo: los grafos no caben todos simultaneamente en la memoria del telefono, por lo que la app los cierra y recompila al volver a ellos (unas 115 compilaciones por foto). La fidelidad numerica respecto al pipeline PyTorch original del autor se verifico con similitud coseno por componente (umbral 0,99) y PSNR de renderizado (umbral 25 dB), con resultados que superan ampliamente ambos umbrales en Mac, Galaxy S26 y Pixel 11 Pro.
+La innovación técnica principal es la compilación on-device: en la variante por defecto, los bloques 1–22 del denoiser comparten un único grafo y los seis grafos intermedios del decodificador gaussiano comparten otro, de modo que la app copia los pesos de cada bloque antes de la llamada y solo compila una vez por foto (19 grafos compilados durante el primer procesamiento, 20 s). La variante `262k/` usa un grafo por bloque y precisión FP16 con acumulación fp32, lo que mejora la fidelidad (41,4–46,6 dB PSNR frente a 32,3–34,4 dB) a costa de velocidad. No se dispone de información sobre el dataset de entrenamiento, el número de tokens ni el proceso de alineación del modelo original.
 
 ## Capacidades
 
-- Generacion de objetos 3D (Gaussian splatting) a partir de una unica fotografia.
-- Inferencia completamente on-device en telefono movil, sin conexion a servidor.
-- Generacion de las caras no visibles del objeto: el splat puede girarse para ver laterales y parte trasera.
-- Eliminacion automatica de fondo de la imagen de entrada mediante BiRefNet.
-- Exportacion del resultado a formato .ply (0,2 s en Galaxy S26).
-- Ejecucion en GPU movil en fp16 con acumulacion fp32; BiRefNet en CPU.
-- Verificacion de portabilidad a otras plataformas con GPU (Metal en Mac).
-- No soporta tool calling, agentes ni capacidades de lenguaje; no es un modelo conversacional.
+- Generación de representaciones 3D en formato Gaussian splat a partir de una única fotografía de un objeto.
+- Inferencia de geometría no observada: completa las caras laterales y traseras del objeto que la foto no muestra.
+- Ejecución íntegra on-device en Android mediante LiteRT `CompiledModel`, sin conexión a la nube.
+- Aceleración por GPU del teléfono en FP16 para denoiser, encoders y decodificadores; BiRefNet en CPU.
+- Eliminación automática de fondo integrada (BiRefNet) antes del pipeline 3D.
+- Dos modos de calidad/coste configurables: 65.536 gaussianas (rápido) y 262.144 gaussianas (mayor fidelidad).
+- Salida exportable a `.ply`, compatible con visores y herramientas de Gaussian splatting.
+- No soporta tool calling, agentes, texto, visión general ni audio: es un modelo especializado de imagen a 3D.
 
 ## Casos de uso
 
-- Prototipado rapido de assets 3D en movil: un disenador fotografia un objeto fisico con el telefono y obtiene un splat 3D navegable en unos cinco minutos, sin estacion de trabajo ni servicio en la nube.
-- Catalogacion de producto en comercio electronico: generar vistas 3D de articulos a partir de una sola foto de catalogo, permitiendo al comprador rotar el producto; el pipeline funciona offline y evita subir imagenes a terceros.
-- Realidad aumentada y visualizacion: crear splats de objetos cotidianos para insertarlos en escenas AR, aprovechando que la inferencia ocurre en el propio dispositivo y no requiere conectividad.
-- Aplicaciones de campo sin cobertura: tecnicos o investigadores que documentan objetos (piezas, especimenes, hallazgos) en entornos sin red pueden generar el modelo 3D in situ y exportarlo como .ply para su posterior procesado.
-- Educacion y divulgacion: convertir fotografias de objetos en modelos 3D rotables para materiales didacticos, con un coste de infraestructura nulo al ejecutarse en hardware consumer.
-- Investigacion en reconstruccion 3D on-device: servir de referencia reproducible (con verificacion numerica por componente frente al pipeline PyTorch) para estudiar el compromiso entre fidelidad y eficiencia en GPU movil.
-- Preservacion digital ligera: capturar objetos con un unico disparo cuando no es posible un escaneo multivista, aceptando la reconstruccion inferida de las caras ocultas.
+- Digitalización de productos para comercio electrónico: un vendedor fotografía un objeto con el móvil y obtiene un splat 3D navegable para la ficha de producto, sin estudio ni infraestructura de servidor; el tiempo de 158 s en un Galaxy S26 es aceptable para un flujo asíncrono.
+- Catalogación de patrimonio y arqueología de campo: los investigadores generan modelos 3D de piezas in situ desde una sola foto, con la ventaja de que el proceso ocurre en el dispositivo y no requiere subir imágenes a servicios externos.
+- Creación de assets para videojuegos y realidad aumentada: artistas técnicos convierten referencias fotográficas en splats base que después retocan en herramientas de edición 3D, usando la variante `262k/` cuando prima la fidelidad (41,4–46,6 dB PSNR).
+- Aplicaciones móviles de captura 3D para consumidor: integración del sample Android en apps de fotografía o modelado, aprovechando que el pipeline completo cabe en un teléfono con 5,42 GiB de memoria residente máxima y 5,73 GiB de memoria GPU máxima.
+- Prototipado rápido en realidad mixta: generar representaciones 3D de objetos físicos para anclarlas en escenas AR desde el propio visor o móvil, sin backend.
+- Educación y demostraciones técnicas: el repositorio incluye un runner en Python y una app Android de ejemplo que sirven para ilustrar pipelines de difusión y Gaussian splatting on-device en cursos y talleres.
+- Archivado de colecciones personales: fotografía única de objetos domésticos para crear un catálogo 3D navegable, con la ventaja de que la inferencia no requiere cuentas ni cuotas de API.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de calidad 3D (PSNR/SSIM/LPIPS frente a datasets estandar) en la informacion disponible. Los datos publicados son de fidelidad frente al pipeline PyTorch del autor y de latencia en dispositivo.
+Los datos publicados son de latencia y fidelidad, no de benchmarks académicos estándar.
 
-Fidelidad por componente (similitud coseno frente al modelo del autor, umbral 0,99):
+| Metrica (Galaxy S26, SM-S942Q, LiteRT 2.3.0) | Forma por defecto | Forma `262k/` |
+|---|---|---|
+| Foto a `.ply` (primer procesamiento, teléfono frío) | 158 s | 267 s |
+| Foto a `.ply` (teléfono caliente, estado térmico 3) | 329–351 s | 339–449 s |
+| PSNR de render 4 vistas frente a la salida por defecto del autor (umbral 25 dB) | 32,3–34,4 dB | 41,4–46,6 dB |
+| Gaussianas por splat | 65.536 (2.048 anchors) | 262.144 (8.192 anchors) |
+| Precision GPU | FP16 | FP16 con acumulacion fp32 |
 
-| Componente | Tensor comparado | Galaxy S26 | Pixel 11 Pro | Mac (Metal) |
-|---|---|---|---|---|
-| DINOv3 encoder | feature1 | 1,00000 | 0,99998 | 0,99989-0,99994 |
-| VAE encoder | latent tokens | 0,99999 | 0,99999 | 0,99993-0,99996 |
-| Denoiser (5 pasos) | latent velocity, peor paso | 0,99999 | 0,99989 | 0,99923-0,99931 |
-| Octree decoder (8 niveles) | child probabilities, peor nivel | 0,99994 | 0,99970 | 0,99937-0,99946 |
-| Gaussian decoder | xyz | 1,00000 | 1,00000 | 1,00000 |
-| Gaussian decoder | color (f_dc) | 0,99997 | no disponible | 0,99963-0,99976 |
-| Gaussian decoder | scale | 0,99990 | no disponible | 0,99652-0,99837 |
-| Gaussian decoder | rotation | 0,99986 | no disponible | 0,99891-0,99915 |
-| Gaussian decoder | opacity | 0,99993 | no disponible | 0,99871-0,99988 |
+Desglose por etapa de la forma por defecto en el primer procesamiento: eliminación de fondo 7,4 s (CPU), encoder DINOv3 10,6 s, encoder VAE 5,2 s, denoiser 5 pasos 119,8 s, decodificador de octree 9,1 s, decodificador gaussiano 5,5 s, escritura PLY 0,1 s. Compilación de grafos: 1 grafo al arrancar (2 s) y 19 durante la foto (20 s). Memoria residente máxima 5,42 GiB; memoria GPU máxima 5,73 GiB. En Pixel 11 Pro el primer procesamiento tarda 343 s (forma por defecto).
 
-Latencia en Galaxy S26 (SM-S942Q), LiteRT 2.3.0, ejemplo de Android:
+## Requisitos de hardware
 
-| Metrica | Telefono frio (1a foto) | Estado termico 2 (1a foto) | Foto 2 | Foto 3 |
-|---|---|---|---|---|
-| Foto a .ply escrito | 303 s | 339 s | 416 s | 414 s |
-| Eliminacion de fondo (BiRefNet, CPU) | 11,1 s | 8,5 s | 17,7 s | 15,9 s |
-| Encoder DINOv3 | 6,3 s | 8,8 s | 31,0 s | 26,7 s |
-| Encoder VAE | 3,7 s | 5,4 s | 8,5 s | 7,3 s |
-| Denoiser, 5 pasos | 228,4 s | 262,9 s | 306,9 s | 311,9 s |
-| Decoder octree | 16,2 s | 16,0 s | 15,1 s | 15,3 s |
-| Decoder de gaussianas | 36,0 s | 35,6 s | 35,7 s | 36,2 s |
-| Escritura PLY | 0,2 s | 0,2 s | 0,1 s | 0,1 s |
-| Grafos compilados por foto | 115 (70 s) | 115 (78 s) | 114 (97 s) | 116 (93 s) |
-| Memoria residente pico (VmHWM) | 4,71 GiB | 4,91 GiB | 4,16 GiB | 4,09 GiB |
-| Memoria GPU pico (kgsl) | 5,60 GiB | 5,60 GiB | 5,33 GiB | 5,45 GiB |
-
-Nota de rendimiento termico: durante la primera foto el limite de reloj de la GPU cayo de 1.300 a 422 MHz en 5 minutos (estado termico 1 a 3), lo que explica la degradacion en fotos sucesivas.
+- Inferencia diseñada para GPU móvil Android; no se publican requisitos de VRAM para escritorio.
+- Memoria residente máxima medida: 5,42 GiB (VmHWM) y 5,73 GiB de memoria GPU (kgsl) en Galaxy S26.
+- Dispositivos validados: Samsung Galaxy S26 (SM-S942Q) y Google Pixel 11 Pro.
+- No cabe en GPU de consumidor de escritorio en el sentido habitual: el formato es LiteRT para Android, no safetensors ni GGUF para PyTorch.
+- El denoiser no compiló para la NPU del Galaxy S26; la ejecución en CPU sola resultó más lenta que en GPU.
+- Los pesos int8 no se ejecutaron en las GPU de los teléfonos probados.
+- Despliegue mediante LiteRT 2.3.0 y `CompiledModel`, con la app Android de ejemplo incluida en `android/` y un runner en Python para el mismo pipeline.
+- El encoder DINOv3 requiere descarga aparte desde un repositorio gated con licencia propia.
+- Latencia fuertemente dependiente del estado térmico: el reloj de GPU cae de 1.300 a 500 MHz durante la primera foto y a 222–282 MHz tras 12 minutos de ejecuciones consecutivas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Enfoque | Entrada | Salida | Ejecucion | Licencia |
-|---|---|---|---|---|---|
-| Idol (LiteRT, esta ficha) | Difusion + octree + gaussianas | 1 foto | 262.144 gaussianas (.ply) | On-device, GPU movil | Apache 2.0 (DINOv3 aparte) |
-| speridlabs/idol (original) | Mismo pipeline en PyTorch | 1 foto | Gaussian splat | Servidor/desktop, fp32 CPU o GPU | Segun modelo base |
-| Modelos image-to-3D tipo LRM/ TripoSR | Transformer de reconstruccion | 1 foto | Malla o NeRF | Servidor/desktop | Variable |
+| Modelo | Tipo | Parametros | Contexto | Salida | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| litert-community/Idol (esta ficha) | Imagen a 3D, on-device Android | no disponible | no aplica | Gaussian splat 65.536 / 262.144 | Apache 2.0 (DINOv3 aparte) | LiteRT `.tflite` en Hugging Face |
+| speridlabs/idol | Imagen a 3D, PyTorch | no disponible | no aplica | Gaussian splat 262.144 por defecto | no disponible en la informacion | Hugging Face |
+| speridlabs/idol-turbo | LoRA sobre idol | no disponible | no aplica | Gaussian splat | no disponible en la informacion | Hugging Face |
 
-La informacion disponible no incluye comparativas cuantitativas de calidad 3D frente a alternativas como TripoSR, LRM o el propio idol en PyTorch; los unicos datos de comparacion publicados son de fidelidad numerica frente al pipeline del autor. No se dispone de benchmarks de calidad objetiva para establecer una comparativa de rendimiento fiable con otros modelos de la categoria.
+No se dispone de datos de benchmarks comparativos con otros modelos de imagen a 3D en la información proporcionada; la única comparación publicada es interna, entre la forma por defecto y la forma `262k/` de este mismo repositorio.
 
 ## Limitaciones y advertencias
 
-- El encoder DINOv3 no esta incluido en este repositorio: reside en un repo separado con acceso restringido y licencia propia, lo que condiciona el uso comercial del pipeline completo.
-- La latencia es alta para uso interactivo: 303 s en el mejor caso y hasta 449 s en fotos sucesivas con el telefono caliente.
-- El rendimiento depende fuertemente del estado termico del dispositivo; el throttling de GPU degrada los tiempos de forma notable.
-- Los grafos no caben simultaneamente en memoria: la app debe recompilarlos (unas 115 compilaciones por foto, 70-97 s), lo que anade latencia y complejidad de integracion.
-- La reconstruccion de las caras no visibles es inferida por el modelo, no medida: puede generar geometria o textura plausibles pero incorrectas.
-- Requiere hardware movil con GPU compatible con LiteRT y al menos unos 5,6 GiB de memoria GPU en el caso medido (Galaxy S26).
-- El modelo esta validado en un numero reducido de dispositivos (Galaxy S26, Pixel 11 Pro, Mac con Metal); el comportamiento en otros SoC no esta documentado.
-- No se dispone de informacion sobre sesgos del modelo base, composicion del dataset de entrenamiento ni evaluacion de robustez ante imagenes de entrada adversas o de baja calidad.
-- Al ser un modelo de reconstruccion 3D, no ofrece capacidades de lenguaje, razonamiento textual, tool calling ni agentes.
-- La licencia Apache 2.0 cubre esta conversion, pero el uso del pipeline completo queda sujeto a las condiciones del modelo base y del encoder DINOv3.
+- Solo procesa una imagen de un objeto; no está pensado para escenas, personas ni entradas de vídeo.
+- Fidelidad limitada en la forma por defecto: 32,3–34,4 dB PSNR frente a la salida del autor, por encima del umbral de 25 dB pero lejos de los 41,4–46,6 dB de `262k/`.
+- Fuerte dependencia térmica: el rendimiento se degrada de 158 s a 329–351 s con el teléfono caliente, y la latencia puede más que duplicarse.
+- A 512 x 512 la calidad cae por debajo del umbral (13,5–22,9 dB), por lo que la resolución de entrada debe ser 1.024 x 1.024.
+- Los pesos int8 no se ejecutaron en las GPU probadas; la cuantización a int8 no es una opción viable en este despliegue.
+- El denoiser no compiló para la NPU del Galaxy S26; la aceleración por NPU no está disponible.
+- El encoder DINOv3 está en un repositorio gated con licencia propia, lo que condiciona la reproducibilidad completa del pipeline y el uso comercial.
+- Licencia Apache 2.0 para el resto del paquete, pero la licencia del modelo base y del LoRA original no se detalla en la información disponible.
+- Riesgo de geometría inventada en las caras no observadas: el modelo infiere las vistas ocultas y puede producir detalles plausibles pero incorrectos.
+- Solo validado en dos dispositivos (Galaxy S26 y Pixel 11 Pro); el comportamiento en otros SoC no está documentado.
+- No dispone de capacidades de texto, tool calling ni agentes; no debe evaluarse como modelo de lenguaje.
 
 ## Enlaces
 
-- Repositorio Hugging Face (esta conversion): https://huggingface.co/litert-community/Idol
+- Repositorio Hugging Face: https://huggingface.co/litert-community/Idol
 - Modelo base: https://huggingface.co/speridlabs/idol
-- LoRA idol-turbo: https://huggingface.co/speridlabs/idol-turbo
-- Encoder DINOv3 (acceso restringido): https://huggingface.co/litert-community/DINOv3-ViT-H16plus-Idol-LiteRT
+- LoRA turbo: https://huggingface.co/speridlabs/idol-turbo
+- Encoder DINOv3 (gated): https://huggingface.co/litert-community/DINOv3-ViT-H16plus-Idol-LiteRT
+- Model card de la primera release (commit e7ee1226): https://huggingface.co/litert-community/Idol/blob/e7ee12262a3ed622fa44fb8df8ff4f335dd77064/README.md
 - Imagen de ejemplo (Pexels, Komet Flicker): https://www.pexels.com/photo/plant-in-silver-flowerpot-20324601/
-- LiteRT (runtime): no disponible en la informacion proporcionada
-- litert-torch (herramienta de conversion): no disponible en la informacion proporcionada

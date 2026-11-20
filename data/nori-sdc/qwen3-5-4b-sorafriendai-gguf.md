@@ -2,103 +2,103 @@
 
 ## Resumen
 
-Qwen3.5-4B-SoraFriendAI-GGUF es un ajuste fino experimental del modelo Qwen3.5-4B de Alibaba, desarrollado por la empresa japonesa 株式会社ソフトウエア開発 (Software Development Co., Ltd.) para su aplicación iOS SoraFriendAI (そらとも). No es un modelo de propósito general: está entrenado específicamente para responder a un contrato de operaciones fijo definido por la aplicación, y el propio autor advierte que usarlo de forma aislada para conversación general no produce respuestas con sentido. Se distribuye en formato GGUF cuantizado para ejecución en dispositivo (on-device) en iPhone con iOS 18 o superior y 8 GB de memoria.
+Qwen3.5-4B-SoraFriendAI-GGUF es un ajuste fino (finetune) del modelo Qwen/Qwen3.5-4B, desarrollado por nori-sdc (株式会社ソフトウエア開発) para una única aplicación iOS llamada SoraFriendAI (そらとも). No es un modelo de propósito general: está entrenado para responder exclusivamente a la forma de instrucción (contrato de operación) que define la app, y el propio autor advierte que usarlo de forma aislada para conversación normal o fines genéricos no produce respuestas con sentido.
 
-La distribución actual (etiqueta `v20261114-r14`) separa el modelo base cuantizado en Q4_K_M del adaptador LoRA entrenado (en F16), junto con un proyector de imagen multimodal (mmproj) y un fichero de persona. El conjunto de cuatro ficheros suma 3.625.762.005 bytes (aproximadamente 3,6 GB). El modelo base declara 4.326.350.848 parámetros según safetensors.
+El modelo parte del checkpoint Qwen3.5-4B, con 4.326.350.848 parámetros totales, convertido a GGUF F16 mediante `convert_hf_to_gguf.py` de llama.cpp y cuantizado a Q4_K_M con `llama-quantize`. Se distribuye como un paquete de cuatro ficheros: la base cuantizada, un adaptador LoRA en F16 con el aprendizaje específico de la app, un proyector de imagen (mmproj) y un fichero de persona en texto plano. La versión actual es `v20261117-r15`, pensada para la build 369 o superior de la app.
 
-Su relevancia es acotada pero ilustrativa: muestra un caso de ajuste fino de un LLM de 4B parámetros para un dominio de aplicación muy cerrado (control de voz, gestión de memoria, operaciones de la app) con despliegue local en móvil, licencia Apache 2.0 y un proceso de versionado explícito con validación en dispositivo real.
+Su relevancia es acotada pero técnica: muestra un patrón de despliegue en dispositivo (on-device) en iPhone con iOS 18 o superior y 8 GB de memoria, empaquetando base + LoRA + proyector multimodal + persona bajo licencia Apache 2.0. Es un caso de estudio de integración de modelos pequeños cuantizados en aplicaciones móviles con contrato de operación fijo, no un candidato para pipelines generales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de Qwen3.5-4B, detalles internos no disponibles) |
-| Parametros totales | 4.326.350.848 (modelo base) |
-| Parametros activos | no disponible (no es MoE según la informacion disponible) |
+| Arquitectura | Transformer (derivada de Qwen3.5-4B); detalles internos no disponibles |
+| Parametros totales | 4.326.350.848 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q4_K_M (base), F16 (adaptador LoRA y proyector de imagen) |
-| Idiomas soportados | Japones (ja) |
+| Tipos de cuantizacion | Q4_K_M (base); adaptador LoRA en F16; proyector de imagen F16 |
+| Idiomas soportados | Japonés (ja) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (base, adaptador y mmproj) y texto plano (persona) |
+| Formato de pesos | GGUF (base, adaptador y mmproj); persona en TXT |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3.5-4B, obtenido a través del repositorio de unsloth, convertido a GGUF F16 con `convert_hf_to_gguf.py` de llama.cpp y cuantizado a Q4_K_M con `llama-quantize`. La distribución no incluye el modelo fusionado, sino el base cuantizado más un adaptador LoRA en F16 (`SoraFriendAI-SORA4-ADAPTER-r14-sora4_1113_1505.gguf`, 169.887.424 bytes). Incluye además un proyector de imagen multimodal `mmproj-F16.gguf` (672.423.616 bytes), lo que indica capacidades de visión en el pipeline de la app.
+La base es Qwen3.5-4B, obtenida en la práctica desde el espejo unsloth/Qwen3.5-4B. El autor convierte el checkpoint a GGUF F16 con el script de llama.cpp y lo cuantiza a Q4_K_M; la conversión y cuantización se verificaron el 2026-10-24, aunque el commit exacto del snapshot de origen y el commit de llama.cpp empleado no quedaron registrados. Sobre esa base se entrena un adaptador LoRA (distribuido en F16) con material didáctico específico de la app: el "operador de contrato" heredado de la versión r14 y un conjunto de hechos sobre el personaje "Sora" ampliado a 3.793 líneas en r15, que añade 27 preferencias propias de un estudiante de primero de secundaria (dramas, anime, frutas, comida escolar, club, ropa, vehículos, animales que le desagradan, actividades conjuntas) y ajusta sus juegos favoritos a "shiritori, adivinanzas y bailar".
 
-El ajuste fino se realizó sobre un corpus de instrucciones específico de la aplicación: la versión r14 emplea 66.849 líneas de entrenamiento (frente a las 65.722 de r13), ampliadas con 341 líneas ×3 para ajustarse al contrato de operaciones actual (221 → 224 operaciones). El entrenamiento cubre funciones concretas de la app: creación de copias de seguridad, experiencia acumulada, estado de ánimo y vínculo, apertura de ajustes por voz, nombres de reuniones, inicio de actividades de juego y pantallas de pasos y actividad. El corpus incluye 298 líneas de respuestas sobre cambios de nombre y sobre la prohibición de inventar cuando no hay contexto previo. No se documentan detalles sobre RLHF, DPO ni el número total de tokens de entrenamiento del modelo base. El autor indica que la versión adoptada corresponde a la tercera época (`sora4_1113_1505_A_ep3.gguf`).
+No se documenta el volumen total de tokens de entrenamiento, la composición completa del dataset ni si hubo RLHF o DPO. El proceso de evaluación es interno: el autor reporta puntuaciones de desarrollo sobre la máquina de entrenamiento en Q4 y tras trasladar el mismo adaptador al equipo de la empresa. La versión r15 no introduce nuevas operaciones respecto a r14, por lo que mantiene el requisito mínimo de build 369. El paquete incluye además un proyector de imagen (mmproj-F16, 672.423.616 bytes), lo que sugiere capacidad multimodal de entrada, aunque la model card no detalla su funcionamiento.
 
 ## Capacidades
 
-- Generación de texto en japonés orientada a un contrato de operaciones cerrado de la aplicación SoraFriendAI.
-- Interpretación de instrucciones de voz para ejecutar acciones de la app (copias de seguridad, ajustes, actividades, pantallas de pasos).
-- Distinción entre experiencia acumulada, estado de ánimo actual y nivel de vínculo.
-- Gestión de memoria de perfil y persona mediante un fichero de persona separado (`profile_learned: true`).
-- Capacidad multimodal de imagen a través del proyector `mmproj-F16.gguf` (integración con la app, no verificable de forma independiente).
-- Comportamiento conservador ante operaciones peligrosas: según la validación del autor, 0 ejecuciones inmediatas en la prueba de operaciones peligrosas.
-- No soporta conversación general ni uso fuera del contrato de la aplicación, según advertencia explícita del autor.
-- Tool calling, function calling genérico, agentes multi-paso y razonamiento general: no disponibles como capacidades documentadas.
+- Conversación multi-turno restringida al contrato de operación de la app SoraFriendAI; fuera de ese formato no produce respuestas útiles según el autor.
+- Manejo de persona y perfil del personaje: el fichero de persona (5.660 bytes en r15) define gustos y comportamiento conversacional.
+- Operaciones de "contrato": el material de entrenamiento cubre operaciones como pizarra (黒板), registro de conversación y correcciones a partir de lo dicho por el usuario.
+- Entrada de imagen: el paquete incluye proyector multimodal (mmproj F16), aunque no se detalla el alcance de la capacidad visual.
+- Aprendizaje de perfil (`profile_learned: true`): desde la build 369 la app pasa al modelo únicamente apariencia, familia y reformulaciones del usuario como preámbulo.
+- Multilingüe: no; el modelo está etiquetado exclusivamente para japonés.
+- Tool calling / function calling: no disponible.
+- Modo de razonamiento explícito (thinking): no disponible.
+- Agentes y razonamiento multi-paso: no disponible como capacidad general.
 
 ## Casos de uso
 
-- Asistente de voz integrado en la app SoraFriendAI: el modelo traduce instrucciones habladas del usuario en operaciones concretas de la interfaz (abrir ajustes, iniciar actividades, consultar pasos) siguiendo el contrato de 224 operaciones.
-- Copias de seguridad por voz: interpreta expresiones como "crear una copia" o "copiar fuera del iPhone" y las mapea a la operación de respaldo correspondiente, con independencia de la formulación exacta empleada.
-- Consulta de estado de gamificación: responde a preguntas sobre experiencia acumulada ("cuántos corazones hay acumulados"), estado de ánimo actual y vínculo, diferenciando cada métrica.
-- Gestión de identidad y persona: mantiene coherencia con el fichero de persona distribuido y explica cambios de nombre sin inventar información cuando falta contexto previo.
-- Ejecución local en iPhone sin conexión: al ser un GGUF Q4_K_M de ~2,8 GB, permite inferencia en dispositivo en iPhone con iOS 18 y 8 GB de memoria, sin depender de servidores externos.
-- Validación de contratos de operaciones en desarrollo de apps: sirve como referencia de cómo ajustar un modelo de 4B para un dominio de comandos cerrado con evaluación por lotes de casos (contrato, pizarra, registro,口语).
-- Base para experimentación en ajuste fino on-device: la separación entre base cuantizado y adaptador LoRA facilita probar nuevas versiones del adaptador sin redistribuir el modelo completo.
+- Asistente conversacional dentro de la app SoraFriendAI: es su único uso previsto; el modelo responde al contrato de operación de la app en iPhone con iOS 18 o superior y 8 GB de memoria, con la base Q4_K_M y el adaptador r15 cargados en el dispositivo.
+- Interacción con personaje persistente: la persona en texto plano (5.660 bytes) y el indicador `profile_learned` permiten mantener un personaje coherente (un estudiante de primero de secundaria con gustos concretos) entre sesiones, gestionado por la app.
+- Juegos conversacionales guiados: el entrenamiento cubre shiritori, adivinanzas y baile como actividades favoritas del personaje, de modo que la app puede proponer y sostener estas dinámicas dentro de su flujo.
+- Operaciones de pizarra y registro: el adaptador ha sido entrenado para las operaciones de pizarra (黒板) y de registro/corrección de conversación, con puntuaciones internas de 19/20 y 18-19/20 respectivamente en la evaluación de desarrollo.
+- Entrada de imagen en la app: gracias al proyector mmproj-F16 incluido, la aplicación puede incorporar imágenes a la conversación, aunque la model card no especifica los casos concretos soportados.
+- Referencia técnica para despliegue on-device: el empaquetado base Q4_K_M + LoRA F16 + mmproj + persona sirve como patrón reproducible para equipos que quieran llevar un modelo de ~4B a iOS con llama.cpp y actualizaciones por manifiesto (`manifest.json`) sin recargar ficheros inmutables.
 
 ## Benchmarks y rendimiento
 
-Resultados de la evaluación interna de desarrollo proporcionada por el autor (2026-11-13), no verificados de forma independiente:
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible. El autor sí reporta evaluaciones internas de desarrollo (2026-11-17, máquina de entrenamiento en Q4), que no son comparables con benchmarks públicos:
 
-| Prueba | r14 | Referencia (r13 u otra) |
-|---|---|---|
-| Contrato: verificación | 43/45 (argumentos 12/13) | no disponible |
-| Pizarra | 18/20 | r13: 19/20 |
-| Confusión de registro | 19/20 | no disponible |
+| Prueba interna | r15 | r14 |
+|---|---:|---:|
+| Verificación de hechos de Sora | 239/246 (hechos 194/200 = 97%) | 148/200 = 74% |
+| play7 | 190/196 | 192/196 |
+| Verificación de contrato | 42/45 | 43/45 |
+| Pizarra (黒板) | 19/20 | 18/20 |
+| Confusión de registro | 18/20 | 19/20 |
 | Verificación r11 | 10/10 | no disponible |
-| Verificación r9 | 25/26 | r13: 26/26 |
-| play7 | 192/196 | r13: 189/196 |
-| Lenguaje coloquial | 270/274 | no disponible |
-| Operaciones peligrosas ejecutadas de inmediato | 0 | no disponible |
+| Verificación r9 | 25/26 | no disponible |
+| Ejecución inmediata de operaciones peligrosas | 0 | no disponible |
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El autor indica que la verificación de hechos sobre "Sora" no se ejecutó en esta ronda y que estas puntuaciones no garantizan la tasa de acierto en dispositivo real.
+Tras cargar el mismo adaptador en el equipo Mac de la empresa (2026-11-17 07:05): play7 190/196, contrato 42/45, pizarra 19/20, confusión de registro 19/20, r9 25/26. El autor indica expresamente que estos valores no garantizan la tasa de acierto en dispositivo real.
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada: el conjunto base Q4_K_M ocupa 2.783.447.040 bytes (~2,8 GB); con adaptador LoRA y proyector de imagen el total ronda los 3,6 GB, más overhead de inferencia.
-- Objetivo principal: iPhone con iOS 18 o superior y 8 GB de memoria (referencia indicada por el autor); la app TestFlight desactiva actualmente la restricción de carga por requisitos de memoria.
-- GPU de escritorio: no se especifican requisitos; por tamaño, un modelo de 4B en Q4_K_M puede ejecutarse en GPUs de consumo con 6-8 GB de VRAM, aunque no hay datos oficiales.
-- Opciones de despliegue: llama.cpp (formato GGUF nativo, conversión y cuantización realizadas con sus herramientas); el tag `endpoints_compatible` sugiere compatibilidad con endpoints, sin más detalle.
+- Tamaño del paquete r15: 3.625.763.740 bytes en total (base Q4_K_M 2.783.447.040 bytes; adaptador LoRA F16 169.887.424 bytes; mmproj F16 672.423.616 bytes; persona 5.660 bytes). El repositorio completo ocupa 10,8 GB por las versiones antiguas conservadas.
+- VRAM estimada para inferencia: no disponible de forma explícita; por el tamaño de la base Q4_K_M (~2,8 GB) más adaptador y proyector (~0,85 GB), el conjunto ronda los 3,6 GB de pesos.
+- GPU recomendadas: no disponible. El objetivo declarado es iPhone con iOS 18 o superior y 8 GB de memoria.
+- Cabe en GPU de consumo: previsiblemente sí por tamaño de pesos, pero no hay datos oficiales de ejecución en RTX 4090 u otras GPU de consumo.
+- Opciones de despliegue: llama.cpp (formato GGUF y flujo de conversión/cuantización documentado); la app usa el paquete vía su manifiesto. No se documenta soporte de vLLM, TGI, Ollama u otros motores.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Enfoque |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-SoraFriendAI-GGUF | 4,33B | no disponible | Apache 2.0 | Ajuste fino para app iOS concreta | GGUF en HF |
-| Qwen/Qwen3.5-4B (base) | 4,33B | no disponible | Apache 2.0 (según modelo base) | Propósito general | HF |
-| unsloth/Qwen3.5-4B | 4,33B | no disponible | Apache 2.0 (según modelo base) | Distribución optimizada del base | HF |
+| Qwen3.5-4B-SoraFriendAI-GGUF (este) | 4.326.350.848 | no disponible | ja | Apache 2.0 | Finetune de app iOS, contrato de operación fijo, GGUF |
+| Qwen/Qwen3.5-4B (base) | ~4,3B (según base declarada) | no disponible | no disponible | no disponible | Modelo generalista del que deriva |
+| unsloth/Qwen3.5-4B | ~4,3B (espejo del base) | no disponible | no disponible | no disponible | Checkpoint de origen práctico para la conversión GGUF |
 
-No se dispone de datos de rendimiento comparables entre estos modelos en la información proporcionada; la comparación se limita a parámetros, licencia y disponibilidad.
+No se dispone de datos de benchmarks públicos ni de otros finetunes comparables en la información proporcionada para establecer una comparación de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Modelo de dominio cerrado: el autor advierte explícitamente que no produce respuestas con sentido fuera del contrato de operaciones de SoraFriendAI.
-- Solo japonés: no hay soporte documentado de otros idiomas.
-- Estado experimental y en desarrollo: contenido, forma y ubicación pueden cambiar sin aviso; no se garantiza calidad ni estabilidad.
-- Requiere la versión build 369 o superior de la app; versiones anteriores (build 368 o inferior) no cargan r14.
-- La reversión del manifiesto a una versión anterior no revierte automáticamente dispositivos que ya han cargado r14.
-- Riesgo de alucinación mitigado parcialmente por entrenamiento específico (298 líneas sobre no inventar sin contexto), pero sin garantía formal.
-- Validación limitada: pruebas realizadas por una persona (茜) en iPhone 16 Pro Max con build 369; no hay prueba de dispositivo independiente por el equipo de preparación de distribución.
-- Las puntuaciones de evaluación interna no garantizan la tasa de acierto en dispositivo real.
-- Licencia Apache 2.0 permite uso comercial, pero se heredan las condiciones y avisos del modelo base Qwen3.5-4B.
-- El commit del snapshot de origen y el commit de llama.cpp usado en la conversión no están identificados en los registros del autor.
+- El autor advierte explícitamente que el modelo no produce respuestas con sentido fuera del contrato de operación de la app; no debe usarse como modelo conversacional general.
+- Proyecto en desarrollo activo: contenido, forma y ubicación de los ficheros pueden cambiar sin aviso, y no se garantiza calidad ni estabilidad.
+- Idiomas: solo japonés; no hay soporte declarado de castellano ni de otros idiomas.
+- Las puntuaciones internas de evaluación no garantizan la tasa de acierto en dispositivo real; son pruebas de desarrollo del autor.
+- Requisito de plataforma: app build 369 o superior; las builds 368 o anteriores no incorporan r15. Revertir el manifiesto a una versión antigua no revierte automáticamente los dispositivos que ya cargaron r15.
+- Sin datos sobre sesgos, tasa de alucinación ni comportamiento fuera de distribución; el entrenamiento está centrado en un personaje y un conjunto de operaciones muy concretos.
+- Licencia Apache 2.0, que permite uso comercial, pero el modelo hereda las condiciones de la base Qwen3.5-4B y el paquete incluye la conversión, cuantización y el adaptador entrenado; conviene revisar el aviso de licencia del modelo original.
+- El autor no registró el commit exacto del snapshot de origen ni el de llama.cpp, lo que dificulta la reproducibilidad exacta del proceso de conversión y cuantización.
+- El repositorio conserva numerosas versiones antiguas (10,8 GB), lo que complica la selección de ficheros si no se sigue el `manifest.json`.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/nori-sdc/Qwen3.5-4B-SoraFriendAI-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
-- Origen del snapshot usado: https://huggingface.co/unsloth/Qwen3.5-4B
+- Origen práctico del checkpoint: https://huggingface.co/unsloth/Qwen3.5-4B
 - Manifiesto de distribución: https://huggingface.co/nori-sdc/SoraFriendAI/blob/main/manifest.json

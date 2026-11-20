@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mdcreativeagent/Malaysian-Qwen2.5-7B-Instruct",
+  "slug": "mdcreativeagent-malaysian-qwen2-5-7b-instruct",
+  "author": "mdcreativeagent",
+  "url": "https://huggingface.co/mdcreativeagent/Malaysian-Qwen2.5-7B-Instruct",
+  "created_at": "2026-11-20T01:01:59.000Z",
+  "updated_at": "2026-11-20T01:02:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ms",
+    "en",
+    "zh",
+    "ta"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "ms",
+    "en",
+    "zh",
+    "ta",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693760,
+  "storage_human": "15.2 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

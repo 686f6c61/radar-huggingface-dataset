@@ -2,49 +2,50 @@
 
 ## Resumen
 
-Wayfinder-qwen-35b-a3b es un modelo de lenguaje de arquitectura Mixture of Experts (MoE) con 35.505.251.456 parámetros totales, segun los datos de safetensors del repositorio. El modelo original fue publicado por el usuario hweller1 en Hugging Face bajo el identificador hweller1/wayfinder-qwen-35b-a3b, y esta ficha describe la version cuantizada en formato GGUF producida por mradermacher, un conocido creador de cuantizaciones estaticas para llama.cpp y derivados.
+Wayfinder Qwen 35B A3B es un modelo de lenguaje de tipo Mixture of Experts (MoE) desarrollado originalmente por MongoDB, especializado en busqueda de codigo, uso de herramientas (tool use) y flujos agenticos. La version aqui descrita es una cuantizacion GGUF estatica producida por mradermacher a partir del modelo base `MongoDB/wayfinder-qwen-35b-a3b`, con 35.505.251.456 parametros totales (35,5 B) y un esquema MoE que activa solo una fraccion de ellos por token (designacion A3B, es decir, aproximadamente 3 B activos). Esta pensado para tareas de agente y subagente en entornos de desarrollo, donde el modelo actua como orquestador o ejecutor de busquedas semanticas sobre repositorios de codigo.
 
-El repositorio que nos ocupa (mradermacher/wayfinder-qwen-35b-a3b-GGUF) contiene unicamente pesos cuantizados, no el modelo original. Segun la model card, se han generado las cuantizaciones x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 e IQ4_XS. El repositorio ocupa 153,4 GB, lo que refleja el conjunto completo de ficheros GGUF para un modelo de 35.500 millones de parametros.
+La relevancia de esta publicacion radica en que ofrece el modelo original en formato GGUF listo para inferencia local con llama.cpp y derivados, con un abanico de cuantizaciones que van desde Q2_K (13,3 GB) hasta Q8_0 (37,9 GB), ademas de un modulo multimodal (mmproj) que sugiere capacidades de vision. Al ser un modelo MoE de 35 B con solo 3 B activos, el coste computacional por token es bajo en comparacion con un denso de tamano equivalente, lo que lo hace atractivo para despliegues en hardware consumer de gama alta.
 
-La relevancia de esta publicacion es practica: permite ejecutar un modelo MoE de ~35B en hardware de consumo mediante cuantizaciones agresivas (Q2_K, Q3_K_M, IQ4_XS), algo inviable con los pesos originales en safetensors. No obstante, la informacion disponible sobre el modelo base es muy limitada: no se especifican licencia, idiomas, arquitectura detallada ni datos de entrenamiento, por lo que muchos apartados de esta ficha se marcan como no disponibles.
+La licencia es mixta: Apache 2.0 combinada con la Muse Model License, lo que impone condiciones adicionales al uso comercial que conviene revisar antes de integrarlo en produccion. El modelo esta etiquetado como `lora-merged`, lo que indica que el modelo base incorpora adaptadores LoRA fusionados en los pesos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture of Experts (MoE), segun el sufijo "a3b" del nombre; detalles no disponibles |
-| Parametros totales | 35.505.251.456 |
-| Parametros activos | no disponible (el sufijo "a3b" sugiere ~3B activos, sin confirmacion oficial) |
+| Arquitectura | Mixture of Experts (MoE) basada en Qwen, con adaptadores LoRA fusionados |
+| Parametros totales | 35.505.251.456 (35,5 B) |
+| Parametros activos | aproximadamente 3 B (designacion A3B) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (repositorio de cuantizaciones); pesos originales en safetensors en el repo del autor |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj en Q8_0 y f16 |
+| Idiomas soportados | ingles (segun model card) |
+| Licencia | apache-2.0-and-muse-model-license |
+| Formato de pesos | GGUF (cuantizaciones estaticas) y safetensors (modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo base. El nombre "qwen-35b-a3b" indica que deriva de la familia Qwen y que emplea una arquitectura Mixture of Experts con aproximadamente 35.000 millones de parametros totales y, presumiblemente, alrededor de 3.000 millones de parametros activos por token (convencion "a3b" habitual en modelos MoE tipo Qwen). Esta configuracion permite un coste de computo por token mucho menor que un modelo denso de 35B, lo que explica el interes en cuantizarlo para inferencia local.
+El modelo es un transformer de tipo Mixture of Experts con 35,5 B de parametros totales y aproximadamente 3 B activos por token, lo que reduce el coste de inferencia frente a un denso de tamano comparable. La designacion "Qwen" en el nombre indica que la arquitectura deriva de la familia Qwen, aunque la model card no detalla la configuracion exacta de expertos, el numero de capas ni la dimension oculta. El modelo base incorpora adaptadores LoRA fusionados (tag `lora-merged`), lo que sugiere un ajuste fino posterior sobre un modelo Qwen preentrenado, orientado a tareas de busqueda de codigo, uso de herramientas y comportamiento agentico.
 
-No hay informacion disponible sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO, ni sobre innovaciones tecnicas especificas (atencion lineal, decodificacion especulativa, etc.). El proceso de cuantizacion documentado en la model card indica `convert_type: hf` y `quantize_version: 2`, lo que confirma que las cuantizaciones se generaron a partir de los pesos en formato Hugging Face del modelo original mediante la herramienta de cuantizacion de llama.cpp.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO. La presencia de un modulo multimodal (mmproj) en las cuantizaciones indica que el modelo base tiene capacidad de procesar imagenes, aunque no se especifica la arquitectura del encoder visual. Tampoco se detallan innovaciones tecnicas como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- Generacion de texto conversacional: la etiqueta "conversational" del repositorio indica que el modelo esta ajustado para dialogos multi-turno.
-- Razonamiento y generacion de codigo: capacidades esperables en un modelo derivado de Qwen, aunque no confirmadas en la informacion disponible.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponibles (no se especifican idiomas).
-- Capacidades especiales (modo thinking, vision, audio): no disponibles.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere que el formato GGUF es compatible con los endpoints de inferencia de Hugging Face.
+- Generacion de texto conversacional en ingles.
+- Busqueda de codigo (tag `code-search`): orientado a localizar y razonar sobre fragmentos de codigo en repositorios.
+- Uso de herramientas y function calling (tags `tool-use`, `agentic`).
+- Comportamiento como subagente (tag `subagent`), disenado para integrarse en sistemas multiagente.
+- Procesamiento multimodal: la presencia de archivos mmproj sugiere soporte de entrada de imagenes, aunque no se detalla el alcance.
+- Razonamiento multi-paso en el contexto de tareas agenticas.
+- Capacidades multilingues: la model card solo declara ingles; no se confirma soporte de otros idiomas.
 
 ## Casos de uso
 
-- Despliegue local en estaciones de trabajo: gracias a las cuantizaciones Q3_K_M o IQ4_XS, el modelo puede ejecutarse en una GPU de consumo con 24 GB de VRAM (por ejemplo, RTX 4090) usando llama.cpp u Ollama, permitiendo prototipado sin depender de la nube.
-- Asistente conversacional autoalojado: la orientacion conversacional del modelo lo hace adecuado para chatbots internos en entornos con requisitos de privacidad, donde los datos no pueden salir de la infraestructura propia.
-- Evaluacion comparativa de cuantizaciones: el repositorio incluye doce variantes (desde Q2_K hasta Q8_0 y f16), lo que permite medir la degradacion de calidad frente al ahorro de memoria en un mismo modelo MoE.
-- Experimentacion en investigacion: util para estudiar el comportamiento de modelos MoE de ~35B bajo cuantizacion agresiva, comparando perplejidad y calidad de generacion entre niveles de cuantizacion.
-- Servicio de inferencia con vLLM o TGI: las cuantizaciones de mayor precision (Q8_0, f16) pueden servirse en GPU de datacenter (A100 80 GB, H100) para cargas de produccion con throughput alto.
-- Integracion en pipelines de CI/CD para pruebas de regresion de modelos: permite validar prompts y respuestas sin coste de API, usando el binario de llama.cpp en runners con GPU.
+- Busqueda semantica en repositorios de codigo: el modelo puede indexar y consultar bases de codigo para localizar funciones, clases o patrones, aprovechando su especializacion en `code-search` y su ventana de contexto (no confirmada) para manejar fragmentos extensos.
+- Orquestacion de subagentes en pipelines de desarrollo: gracias a su comportamiento como subagente y soporte de tool calling, puede delegar tareas a otras herramientas o agentes en un flujo multi-paso, por ejemplo en la resolucion automatica de issues.
+- Asistente de refactorizacion: integrado en un IDE o CI/CD, puede analizar fragmentos de codigo y proponer cambios, apoyandose en su capacidad de razonamiento sobre codigo y su bajo coste por token al ser MoE.
+- Automatizacion de revision de codigo: el modelo puede revisar pull requests y generar comentarios sobre posibles errores, usando tool calling para consultar el diff o ejecutar linters.
+- Generacion de documentacion tecnica a partir de codigo fuente: puede recorrer un repositorio y producir descripciones de modulos o funciones, con soporte de contexto largo si la ventana lo permite.
+- Despliegue local en estaciones de trabajo de desarrollo: las cuantizaciones Q4_K_M (21,8 GB) permiten ejecutar el modelo en una GPU consumer de 24 GB, habilitando asistentes de codigo privados sin depender de la nube.
+- Analisis multimodal de capturas o diagramas: con el modulo mmproj, puede procesar imagenes junto a texto, por ejemplo para interpretar diagramas de arquitectura o capturas de errores.
 
 ## Benchmarks y rendimiento
 
@@ -52,42 +53,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, segun tamano de fichero y cuantizacion):
-  - Q2_K: en torno a 13-14 GB.
-  - Q3_K_M: en torno a 16-17 GB.
-  - Q4_K_M: en torno a 21-22 GB.
-  - Q5_K_M: en torno a 25-26 GB.
-  - Q6_K: en torno a 29-30 GB.
-  - Q8_0: en torno a 38 GB.
-  - f16: en torno a 71 GB.
-- GPU recomendadas: RTX 4090 (24 GB) para Q3_K_M/Q4_K_M; A100 40 GB o 80 GB y H100 para Q6_K, Q8_0 y f16; multiples GPU consumer (2x RTX 3090/4090) para cuantizaciones altas.
-- Cabe en GPU de consumo: si, con Q2_K a Q4_K_M en tarjetas de 16-24 GB; Q5_K_M y superiores requieren 24 GB o mas, o reparto entre GPU y CPU (offloading).
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con GGUF; para cuantizaciones altas en datacenter, vLLM o TGI si soportan el formato.
-- Latencia y throughput: no disponibles. Al ser un MoE con ~3B parametros activos (segun la convencion del nombre), se espera un throughput por token notablemente superior al de un modelo denso de 35B, pero no hay mediciones publicadas.
+- VRAM estimada para inferencia segun cuantizacion: Q2_K ~13,3 GB; Q3_K_M ~17,3 GB; IQ4_XS ~19,5 GB; Q4_K_M ~21,8 GB; Q5_K_M ~25,4 GB; Q6_K ~29,3 GB; Q8_0 ~37,9 GB. Anadir ~0,7-1,0 GB si se usa el modulo mmproj.
+- GPU recomendadas: para Q4_K_M o IQ4_XS, una RTX 4090 (24 GB) o RTX 3090 (24 GB) es suficiente; para Q5_K_M y superiores se recomienda A100 40 GB, H100 o RTX 6000 Ada.
+- Cabe en GPU consumer: si, en modelos de 24 GB con cuantizaciones Q4 o inferiores; en GPUs de 16 GB solo con Q2_K o Q3_K_S y posible offload parcial a CPU.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; el modelo base (safetensors) puede servirse con vLLM o TGI si se dispone de la version no cuantizada.
+- Latencia y throughput estimados: no disponibles; al ser MoE con ~3 B activos, se espera un throughput superior al de un denso de 35 B, pero no se han publicado cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Formato |
+| Modelo | Parametros | Activos | Contexto | Licencia | Formato |
 |---|---|---|---|---|---|
-| wayfinder-qwen-35b-a3b (GGUF) | 35,5B | no disponible (~3B por nombre) | no disponible | no disponible | GGUF |
-| Qwen3-30B-A3B | 30,5B | ~3,3B | 32K-128K (segun variante) | Apache 2.0 | safetensors, GGUF |
-| Mixtral 8x7B | 46,7B | ~12,9B | 32K | Apache 2.0 | safetensors, GGUF |
-| DeepSeek-V2-Lite | 15,7B | ~2,4B | 32K | MIT (codigo) / licencia de modelo | safetensors, GGUF |
+| Wayfinder Qwen 35B A3B (este) | 35,5 B | ~3 B | no disponible | Apache 2.0 + Muse Model License | GGUF, safetensors |
+| Qwen2.5-Coder-32B | 32 B | 32 B (denso) | 128 K (segun documentacion publica de Qwen) | Apache 2.0 | safetensors, GGUF |
+| DeepSeek-Coder-V2-Lite | 16 B | 2,4 B | 128 K (segun documentacion publica) | DeepSeek License | safetensors, GGUF |
 
-Nota: la comparativa con Qwen3-30B-A3B es la mas directa por familia y tamano, pero no se dispone de datos que confirmen la relacion exacta entre wayfinder-qwen-35b-a3b y dicho modelo. Los datos de los modelos comparados provienen de sus fichas publicas y pueden variar segun la version.
+La comparativa con Qwen2.5-Coder-32B y DeepSeek-Coder-V2-Lite se ofrece como referencia de categoria (modelos de codigo de tamano similar), pero no se dispone de resultados de benchmarks del modelo Wayfinder que permitan una comparacion cuantitativa directa. El modelo de MongoDB se distingue por su enfoque agentico y de subagente, y por una licencia mixta mas restrictiva que Apache 2.0 puro.
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: no se puede confirmar si el uso comercial esta permitido; es imprescindible verificar la licencia del modelo base (hweller1/wayfinder-qwen-35b-a3b) antes de cualquier despliegue en produccion.
-- Repositorio sin descargas ni likes: no hay evidencia de validacion por parte de la comunidad, lo que aumenta el riesgo de pesos defectuosos o de una cuantizacion incorrecta.
-- Idiomas no documentados: no se puede garantizar el rendimiento en castellano ni en otros idiomas distintos del ingles.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje; sin benchmarks publicados no se puede estimar su magnitud.
-- Cuantizaciones agresivas (Q2_K, Q3_K_S): degradan la calidad de forma notable, especialmente en tareas de razonamiento y codigo; se recomienda Q4_K_M o superior para uso serio.
-- Contexto desconocido: no se puede planificar el uso en conversaciones largas o documentos extensos sin conocer la ventana de contexto real.
-- Sesgos: no documentados; un modelo sin model card detallada no permite evaluar sesgos de entrenamiento.
-- Trazabilidad limitada: al ser una cuantizacion de un modelo de un autor no verificado, se recomienda validar la integridad de los ficheros GGUF (checksums) antes de usarlos.
+- Sesgos conocidos: no documentados en la informacion disponible; al entrenarse presumiblemente sobre codigo y datos en ingles, puede heredar sesgos de esos corpus.
+- Riesgo de alucinacion: como todo modelo generativo, puede inventar APIs, funciones o referencias de codigo inexistentes; en tareas de busqueda de codigo conviene verificar los resultados contra el repositorio real.
+- Limitaciones de contexto o idioma: solo se declara soporte de ingles; la longitud de contexto no esta confirmada, lo que impide garantizar el manejo de repositorios muy extensos en una sola pasada.
+- Restricciones de licencia: la licencia combina Apache 2.0 con la Muse Model License, que puede imponer condiciones adicionales al uso comercial; es necesario revisar el archivo LICENSE-MUSE-SPARK-OPEN.md antes de desplegar en produccion.
+- Caveats para produccion: las cuantizaciones Q2_K y Q3_K_S degradan la calidad; para uso en produccion se recomienda Q4_K_M o superior. El modelo esta etiquetado como `lora-merged`, por lo que el comportamiento puede diferir del Qwen base subyacente. No hay informacion sobre latencia, throughput ni estabilidad en cargas concurrentes.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/wayfinder-qwen-35b-a3b-GGUF
-- Modelo original: https://huggingface.co/hweller1/wayfinder-qwen-35b-a3b
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/wayfinder-qwen-35b-a3b-GGUF
+- Modelo base: https://huggingface.co/MongoDB/wayfinder-qwen-35b-a3b
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/wayfinder-qwen-35b-a3b-i1-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#wayfinder-qwen-35b-a3b-GGUF
+- Licencia Muse Model: https://huggingface.co/hweller1/wayfinder-qwen-35b-a3b/blob/main/LICENSE-MUSE-SPARK-OPEN.md
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests

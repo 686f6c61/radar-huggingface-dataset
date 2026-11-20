@@ -58,16 +58,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Qwen/Qwen3-0.6B · Hugging Face",
-      "url": "https://huggingface.co/Qwen/Qwen3-0.6B",
-      "snippet": "Text Generation model with 0.8B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "Abliterated Models — Open-Weight LLMs With Refusals Removed",
-      "url": "https://www.abliteratedmodels.org/",
-      "snippet": "Abliterated Models Abliterated Models is an index of abliterated AI: open-weight LLMs with refusal behaviour removed from their weights, for security teams. Every model here is uncensored — it answers prompts a normal AI refuses. All 956 are free to download from Hugging Face, and each page shows what the model was built from, how big it is, the hardware it needs and its licence."
-    }
-  ]
+  "sources": []
 }

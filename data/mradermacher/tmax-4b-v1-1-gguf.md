@@ -2,95 +2,89 @@
 
 ## Resumen
 
-tmax-4b-v1.1-GGUF es un repositorio de cuantizaciones estáticas en formato GGUF del modelo tmax-4b-v1.1, publicado por el usuario mradermacher en Hugging Face. Este tipo de repositorio no contiene un modelo nuevo, sino conversiones cuantizadas del modelo original (TMaxxx/tmax-4b-v1.1) diseñadas para reducir el consumo de memoria y permitir su ejecución en hardware de consumo mediante motores de inferencia como llama.cpp u Ollama.
+TMax 4B v1.1 es un modelo de lenguaje de 4.205.751.296 parámetros (aproximadamente 4,2 mil millones) desarrollado por TMaxxx y especializado en tareas de agente de terminal y razonamiento mediante aprendizaje por refuerzo. La versión aquí descrita es una cuantización GGUF estática realizada por mradermacher a partir de los pesos originales en formato transformers, lo que permite su despliegue en entornos con recursos limitados mediante llama.cpp y herramientas compatibles.
 
-El repositorio incluye un amplio abanico de cuantizaciones que van desde versiones de 2 bits (Q2_K) hasta 16 bits (F16), lo que permite elegir el equilibrio entre calidad y tamaño según los recursos disponibles. La relevancia de este tipo de cuantizaciones estáticas radica en que ofrecen compatibilidad directa con llama.cpp sin necesidad de conversión local, facilitando el despliegue inmediato.
+El modelo se entrenó sobre el dataset TMaxxx/tmax-13k-v1.1 y está etiquetado como `terminal-agent` y `reinforcement-learning`, lo que indica un enfoque en la ejecución de comandos, la interacción con entornos de línea de comandos y el razonamiento multi-paso orientado a agentes. Su licencia Apache 2.0 facilita el uso comercial y la integración en productos derivados.
 
-El modelo base tmax-4b-v1.1, desarrollado por TMaxxx, es un modelo de aproximadamente 4.000 millones de parámetros. No se ha publicado en la model card información detallada sobre su arquitectura, datos de entrenamiento, capacidades específicas ni benchmarks, por lo que varios campos de esta ficha se marcan como no disponibles.
+La relevancia actual de esta ficha radica en que ofrece una alternativa compacta (4B) para pipelines de agentes y automatización de terminal, con un abanico amplio de cuantizaciones que van desde 2,0 GB (Q2_K) hasta 8,5 GB (f16), lo que permite ajustar el equilibrio entre calidad y huella de memoria según el hardware disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base de ~4B parámetros) |
-| Parametros totales | ~4B (tmax-4b-v1.1) |
-| Parametros activos | no disponible (no consta que sea MoE) |
+| Arquitectura | no disponible (modelo base transformers; no se detalla en la model card) |
+| Parametros totales | 4.205.751.296 (~4,2 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_S, Q5_K_M, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible (hereda la del modelo original TMaxxx/tmax-4b-v1.1) |
-| Formato de pesos | GGUF (cuantizaciones estáticas) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizaciones estáticas); pesos originales en transformers/safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-Este repositorio no describe la arquitectura del modelo subyacente. Se trata de cuantizaciones estáticas en GGUF generadas a partir de los pesos del modelo original TMaxxx/tmax-4b-v1.1 mediante conversión de tipo "hf" (Hugging Face), según los metadatos de la model card. Las cuantizaciones estáticas se calculan una sola vez sobre el modelo completo, a diferencia de las cuantizaciones dinámicas o imatrix, lo que las hace más simples pero potencialmente ligeramente inferiores en calidad a igualdad de bits.
+La model card no proporciona detalles sobre la arquitectura interna del modelo base TMaxxx/tmax-4b-v1.1 (tipo de transformer, número de capas, dimensiones ocultas, mecanismo de atención o si incorpora alguna innovación como atención lineal). Tampoco se especifica el número de tokens de entrenamiento ni la composición exacta del dataset más allá de la referencia a TMaxxx/tmax-13k-v1.1.
 
-Sobre el entrenamiento del modelo base (número de tokens, composición del dataset, uso de RLHF o DPO) no se ha publicado información en la model card disponible. Tampoco consta ninguna innovación técnica específica del modelo base.
+Lo que sí se documenta es la orientación del entrenamiento: el pipeline declarado es `reinforcement-learning` y las etiquetas incluyen `terminal-agent`, lo que sugiere un ajuste mediante RL orientado a tareas de agente en terminal. No se indica si hubo RLHF, DPO u otra técnica de alineamiento, ni se detallan innovaciones técnicas adicionales. Esta versión concreta es una cuantización estática (quantize_version 2, output_tensor_quantised 1, convert_type hf) realizada por mradermacher; existe además una variante con cuantizaciones ponderadas/imatrix en el repositorio tmax-4b-v1.1-i1-GGUF.
 
 ## Capacidades
 
-Dado que no hay descripción de capacidades en la model card, solo pueden afirmarse las inherentes al formato y al tipo de modelo:
-
-- Generacion de texto: al tratarse de un modelo de lenguaje de ~4B parámetros, es razonable asumir capacidad de generación de texto, aunque no está documentada.
-- Ejecucion local: todas las variantes GGUF son compatibles con llama.cpp y derivados (Ollama, LM Studio, etc.).
-- Gama de cuantizaciones: desde Q2_K (mínima calidad y memoria) hasta F16 (calidad completa), permitiendo ajustar el compromiso calidad/recursos.
-- Capacidades multimodales: no disponible (no consta ningún mmproj, lo que sugiere que no incluye componentes de visión).
-- Tool calling / agentes: no disponible.
-- Benchmarks de capacidades: no disponibles.
+- Generación de texto conversacional en inglés (etiqueta `conversational`).
+- Razonamiento orientado a agentes de terminal: ejecución e interpretación de comandos, flujos multi-paso.
+- Entrenamiento con aprendizaje por refuerzo específicamente para tareas de agente (`terminal-agent`).
+- Compatibilidad con endpoints (`endpoints_compatible`), lo que facilita su exposición como servicio.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas al inglés según la model card.
+- Capacidades de visión, audio o thinking mode: no disponibles.
 
 ## Casos de uso
 
-- Experimentacion con modelos pequeños en local: las variantes Q4_K_M o Q5_K_M permiten ejecutar un modelo de 4B en portátiles y GPUs de consumo con VRAM mínima, ideal para pruebas rápidas.
-- Despliegue en dispositivos con recursos limitados: la variante Q2_K reduce el modelo a un tamaño muy pequeño, útil para Raspberry Pi o equipos sin GPU dedicada, a costa de calidad.
-- Integracion en aplicaciones con llama.cpp: los archivos GGUF estáticos se pueden cargar directamente sin conversión previa, simplificando pipelines de inferencia local.
-- Comparativa de cuantizaciones: la disponibilidad de 12 variantes permite evaluar la degradación de calidad entre bits en un mismo modelo, útil para investigación en cuantización.
-- Prototipado con Ollama o LM Studio: el formato GGUF es el estándar de estas herramientas, por lo que el modelo puede incorporarse a demos y prototipos sin fricción.
-- Servicios de inferencia de bajo coste: un modelo de 4B cuantizado a Q4 puede servirse en GPUs modestas (por ejemplo, una RTX 3060) con latencias bajas para cargas ligeras.
+- Automatización de tareas de terminal: el modelo puede interpretar instrucciones en lenguaje natural y traducirlas a secuencias de comandos de shell, adecuado por su entrenamiento específico como terminal-agent.
+- Agentes de DevOps en pipelines de CI/CD: integración para diagnosticar fallos de build, sugerir comandos de corrección y ejecutar pasos de despliegue controlados.
+- Asistentes de administración de sistemas: resolución de incidencias en servidores mediante razonamiento multi-paso sobre la salida de comandos.
+- Generación de scripts de automatización: creación de scripts bash o utilidades de línea de comandos a partir de descripciones en inglés.
+- Despliegue en entornos con hardware modesto: con cuantizaciones Q4_K_M (2,8 GB) o Q5_K_M (3,2 GB) puede ejecutarse en GPU de consumo y en CPU, lo que lo hace apto para estaciones de trabajo sin aceleradores dedicados.
+- Prototipado de agentes conversacionales especializados: su tamaño de 4B y licencia Apache 2.0 permiten iterar rápidamente en productos internos y realizar fine-tuning posterior.
+- Servicio de inferencia ligero: al ser compatible con endpoints, puede exponerse mediante servidores OpenAI-compatible para integrarse en aplicaciones existentes.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible, ni para el modelo base tmax-4b-v1.1 ni para las cuantizaciones de este repositorio.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Los tamaños exactos por variante no están publicados en la información disponible; las estimaciones siguientes se basan en el tamaño estándar de un modelo de 4B parámetros en GGUF:
-
-- Variante F16: aproximadamente 8 GB; cabe en GPUs con 12 GB de VRAM o más (RTX 3060 12 GB, RTX 4070).
-- Variantes Q8_0/Q6_K: aproximadamente 4-5 GB; ejecutables en GPUs de 8 GB (RTX 3070, RTX 4060 Ti).
-- Variantes Q4_K_M/Q4_K_S/IQ4_XS: aproximadamente 2,5-3 GB; ejecutables en GPUs de 4-6 GB (RTX 3050, RTX 4060) o incluso en CPU con RAM suficiente.
-- Variantes Q3_K/Q2_K: aproximadamente 1,5-2,5 GB; ejecutables en equipos sin GPU dedicada, aunque con pérdida de calidad notable en Q2_K.
-- GPU recomendadas: cualquier GPU de consumo moderna (RTX 3060/4060 o superior) es suficiente para las cuantizaciones intermedias; no se requieren A100 ni H100.
-- Despliegue: llama.cpp, Ollama, LM Studio, KoboldCpp o cualquier motor compatible con GGUF. No consta soporte verificado en vLLM o TGI para este repositorio concreto.
-- Latencia y throughput: no disponibles; por el tamaño (4B cuantizado), es de esperar inferencia rápida en GPU de consumo, típicamente decenas de tokens por segundo.
+- VRAM estimada para inferencia (según cuantización): Q2_K ~2,0 GB; Q3_K_S ~2,2 GB; Q3_K_M ~2,4 GB; Q3_K_L ~2,5 GB; IQ4_XS ~2,6 GB; Q4_K_S ~2,7 GB; Q4_K_M ~2,8 GB; Q5_K_S ~3,1 GB; Q5_K_M ~3,2 GB; Q6_K ~3,6 GB; Q8_0 ~4,6 GB; f16 ~8,5 GB. A estas cifras hay que sumar la memoria para el contexto KV cache.
+- GPU recomendadas: no se especifican en la información; por tamaño, una RTX 3060 de 12 GB o superior puede alojar cualquier cuantización con contexto moderado; una RTX 4090 o A100/H100 ofrecen margen amplio para contextos largos y mayor throughput.
+- Cabe en GPU de consumo: sí, prácticamente todas las cuantizaciones caben en GPUs consumer con 8 GB o más de VRAM (Q4_K_M y superiores con holgura); las cuantizaciones Q2_K a Q3_K_L también pueden ejecutarse en CPU.
+- Opciones de despliegue: llama.cpp (formato GGUF nativo), Ollama, y servidores compatibles con GGUF; la etiqueta `endpoints_compatible` sugiere integración con endpoints de inferencia. vLLM y TGI no están confirmados para este formato en la información disponible.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-Comparativa con otros modelos de tamaño similar (4B) disponibles en formato GGUF:
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| TMax 4B v1.1 (esta ficha) | ~4,2 B | no disponible | Apache 2.0 | GGUF, safetensors | Especializado en terminal-agent y RL |
+| Alternativas de ~4B | no disponible | no disponible | no disponible | no disponible | No se dispone de información sobre modelos comparables en la documentación proporcionada |
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad GGUF |
-|---|---|---|---|---|
-| tmax-4b-v1.1 | ~4B | no disponible | no disponible | cuantizaciones estáticas de mradermacher |
-| Phi-3-mini-4k-instruct (Microsoft) | 3,8B | 4.000 tokens (ampliable a 128k) | MIT | oficial y de terceros |
-| Qwen2.5-3B (Alibaba) | 3B | 32.768 tokens | Apache 2.0 / Qwen | oficial y de terceros |
-| Gemma 2 2B (Google) | 2,6B | 8.192 tokens | Gemma Terms of Use | oficial y de terceros |
-
-Sin benchmarks publicados para tmax-4b-v1.1, no es posible comparar rendimiento de forma objetiva; los modelos alternativos citados tienen documentación y evaluaciones verificables.
+No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos en la información suministrada, por lo que no es posible establecer una comparativa cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- Falta de documentacion: la model card del modelo base no describe arquitectura, entrenamiento, capacidades ni uso previsto, lo que dificulta evaluar su idoneidad para producción.
-- Licencia desconocida: al no constar la licencia ni en este repositorio ni en la información disponible del original, no puede afirmarse que el uso comercial esté permitido. Verifíquese en TMaxxx/tmax-4b-v1.1 antes de cualquier despliegue.
-- Calidad de cuantizaciones bajas: las variantes Q2_K y Q3_K_S degradan apreciablemente la calidad del modelo; se recomiendan Q4_K_M o superiores para uso general.
-- Cuantizaciones estaticas: al no usar imatrix, la calidad a igualdad de bits puede ser inferior a la de cuantizaciones dinámicas del mismo modelo.
-- Riesgo de alucinacion: como todo modelo de lenguaje, puede generar contenido incorrecto; la ausencia de benchmarks hace imposible estimar su fiabilidad.
-- Sesgos: no se ha evaluado la presencia de sesgos en el modelo base.
-- Idiomas: sin documentación de idiomas soportados, no hay garantía de rendimiento en castellano.
-- Reputacion del repositorio: 0 descargas y 0 likes registrados en el momento de la ficha; se trata de un modelo con comunidad prácticamente inexistente y sin validación por terceros.
+- Idioma: el modelo está etiquetado únicamente para inglés (`en`), por lo que su rendimiento en castellano u otros idiomas no está garantizado.
+- Sesgos conocidos: no se documentan en la model card; al no haber información sobre la composición del dataset, no es posible evaluar sesgos de forma rigurosa.
+- Riesgo de alucinación: inherente a los modelos de lenguaje; en tareas de terminal, una alucinación puede traducirse en comandos destructivos, por lo que se recomienda sandboxing y validación humana.
+- Limitaciones de contexto: la longitud de contexto no está especificada, lo que impide planificar despliegues con ventanas largas.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, modificación y redistribución con atribución; no obstante, conviene revisar la licencia del modelo base TMaxxx/tmax-4b-v1.1 por si añade condiciones adicionales.
+- Caveat de producción: esta es una cuantización de terceros (mradermacher), no los pesos oficiales; la calidad puede degradarse en cuantizaciones bajas (Q2_K, Q3_K_M marcada como "lower quality" por el autor). Para producción se recomienda Q4_K_M o superior.
+- No hay datos publicados de benchmarks, por lo que la evaluación de calidad debe realizarse empíricamente antes de adoptarlo.
 
 ## Enlaces
 
-- Repositorio de cuantizaciones: https://huggingface.co/mradermacher/tmax-4b-v1.1-GGUF
-- Modelo original: https://huggingface.co/TMaxxx/tmax-4b-v1.1
-- Paper: no disponible
-- Blog o anuncio: no disponible
-- Demo: no disponible
+- Repositorio Hugging Face (esta cuantización): https://huggingface.co/mradermacher/tmax-4b-v1.1-GGUF
+- Modelo base: https://huggingface.co/TMaxxx/tmax-4b-v1.1
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/tmax-4b-v1.1-i1-GGUF
+- Dataset de entrenamiento: https://huggingface.co/datasets/TMaxxx/tmax-13k-v1.1
+- Página de descargas del cuantizador: https://hf.tst.eu/model#tmax-4b-v1.1-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

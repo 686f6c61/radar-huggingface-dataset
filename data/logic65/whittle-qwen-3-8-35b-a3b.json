@@ -66,31 +66,5 @@
   "renamed_to": "whittleOrg/Whittle-Qwen-3.8-35B-A3B",
   "renamed_at": "2026-11-11T06:06:34.267Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Wittenberge - Startseite",
-      "url": "https://www.wittenberge.de/",
-      "snippet": "Die offizielle Internetseite der Stadt Wittenberge bietet Informationen zu Verwaltung, Politik, Wirtschaft, Kultur und Tourismus."
-    },
-    {
-      "title": "Wittenberge - Nedwighafen - elbwärts.455",
-      "url": "https://www.wittenberge.de/seite/577733/nedwighafen-elbw%C3%A4rts.455.html",
-      "snippet": "Der Nedwighafen wird 2026 modernisiert. Während der Umbauphase kann es zeitweise zu geringfügigen Einschränkungen kommen. …"
-    },
-    {
-      "title": "Filmstadt Wittenberge",
-      "url": "https://www.wittenberge.de/seite/65404/filmstadt-wittenberge.html",
-      "snippet": "Filmstadt Wittenberge Wittenberger, die über die Leinwand flimmern Bestaunt, belächelt, gelobt, kritisiert – Wittenberge als Filmstadt …"
-    },
-    {
-      "title": "Wittenberge - Elblandfestspiele 2026 – Vier Konzertabende, vier ...",
-      "url": "https://www.wittenberge.de/news/1/1200121/nachrichten/elblandfestspiele-2026--vier-konzertabende-vier-musikalische-welten.html",
-      "snippet": "Feb 18, 2026 · Die Gala „Großes Kino an der Elbe“ Die Elblandfestspiele in Wittenberge präsentieren sich erneut als facettenreiches …"
-    },
-    {
-      "title": "Wittenberge - Ortsteile der Stadt Wittenberge",
-      "url": "https://www.wittenberge.de/seite/767787/ortsteile-der-stadt-wittenberge.html",
-      "snippet": "Die offizielle Internetseite der Stadt Wittenberge bietet Informationen zu Verwaltung, Politik, Wirtschaft, Kultur und Tourismus."
-    }
-  ]
+  "sources": []
 }

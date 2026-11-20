@@ -2,112 +2,109 @@
 
 ## Resumen
 
-Esta ficha describe la publicacion GGUF `mradermacher/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-i1-GGUF`, una cuantizacion en formato GGUF del modelo `DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored`. El autor de la cuantizacion es mradermacher (nethype GmbH), mientras que el modelo original es un ajuste fino publicado por DavidAU. El recuento real de parametros, tomado de los safetensors del modelo base, es de 27.320.697.856 parametros (aproximadamente 27,3 mil millones), con un tamano de repositorio de 39,5 GB.
+Este repositorio contiene la cuantización en formato GGUF del modelo `Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored`, un fine-tune sin censura (etiquetado como "heretic" y "uncensored") desarrollado por DavidAU sobre una base de la familia Qwen. El trabajo de cuantización lo firma mradermacher, especialista habitual en publicar versiones GGUF con calibración por imatrix para facilitar la inferencia en hardware de consumo. El modelo cuenta con 27.320.697.856 parámetros totales, lo que lo sitúa en la franja de los 27B.
 
-El nombre del modelo y las etiquetas (`qwen3_8`, `qwen3_6`) apuntan a la familia Qwen3 como origen, pero en la informacion disponible no se documenta de forma explicita cual es el checkpoint base oficial ni la arquitectura exacta. Se trata de un ajuste fino orientado a la eliminacion de restricciones de contenido ("uncensored", "heretic"), con entrenamiento declarado en multiples etapas ("Cold Fusion", "GAIN Training", "Multi-stage tuning") sobre datasets propios del autor (`Polar-STRICT`, `F451-STRICT`, `THE-DECKARD`).
+La relevancia de esta ficha es doble: por un lado, documenta un modelo de gran tamaño con licencia Apache 2.0 y disponible en múltiples niveles de cuantización (desde i1-Q2_K de 11 GB hasta i1-Q6_K de 22,5 GB); por otro, ilustra una práctica habitual en la comunidad open source, la de los fine-tunes multi-etapa con datasets propios y entrenamiento orientado a eliminar restricciones de alineación. El autor declara soporte para dieciséis idiomas en la model card, aunque el campo de idiomas del repositorio solo lista inglés.
 
-La relevancia de esta publicacion es practica: pone a disposicion del ecosistema llama.cpp versiones cuantizadas con imatrix de un modelo de 27B que de otro modo requeriria hardware de gama alta. La model card afirma ademas que se trata de un modelo de vision, en cuyo caso los ficheros `mmproj` estarian en el repositorio de cuantizaciones estaticas. La licencia declarada es Apache 2.0.
+La información técnica pública es escasa: no se detallan la longitud de contexto, los datos exactos de entrenamiento ni los resultados de benchmarks. Esta ficha recoge lo disponible y marca explícitamente los vacíos, que son numerosos. El modelo se distribuye en formato GGUF para su uso con `llama.cpp` y derivados, y el autor indica que se trata de un modelo con capacidad de visión, con ficheros `mmproj` alojados en el repositorio estático.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (los tags `qwen3_8` y `qwen3_6` sugieren arquitectura transformer de la familia Qwen3, sin confirmar) |
-| Parametros totales | 27.320.697.856 (27,3B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer (derivada de la familia Qwen; detalles concretos no disponibles) |
+| Parámetros totales | 27.320.697.856 |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | i1-Q2_K (11,0 GB), i1-IQ3_M (12,9 GB) en este repositorio; ademas IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, IQ3_S, Q3_K_S, Q3_K_M, IQ3_M, Q3_K_L, IQ4_NL, IQ4_XS, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K en el repositorio de cuantizaciones estaticas |
-| Idiomas soportados | en (ingles) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (cuantizaciones i1, es decir, con importance matrix); el modelo base se distribuye en safetensors |
-| Tamano del repositorio | 39,5 GB |
-| Fichero imatrix | `Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored.imatrix.gguf` (0,1 GB) |
-| Pipeline | no disponible |
-| Descargas / likes | 0 / 0 (en el momento de la consulta) |
-| Fecha de creacion / actualizacion | 2026-09-17 / 2026-09-17 |
+| Tipos de cuantización | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (calibradas por imatrix) |
+| Idiomas soportados | ar, zh, en, fr, de, hi, id, it, ja, ko, pl, pt, ru, es, th, vi (según la model card; el campo de idiomas del repo solo lista en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (repositorio i1 con imatrix); existe un repositorio hermano con cuantizaciones estáticas |
+| Tamaño del repositorio | 218,6 GB |
+| Descargas | 1.921 |
+| Likes | 3 |
+| Fecha de creación | 2026-09-17 |
+| Última actualización | 2026-11-11 |
 
 ## Arquitectura y entrenamiento
 
-No se proporciona informacion tecnica detallada sobre la arquitectura en la model card disponible. Los parametros totales (27.320.697.856) y las etiquetas `qwen3_8` y `qwen3_6` apuntan a un transformer denso de aproximadamente 27B derivado de la familia Qwen3, pero no se confirma el modelo base original, el tipo de atencion, el uso de GQA, la longitud de contexto nativa ni si incorpora componentes MoE. La model card del cuantizador tampoco especifica si el modelo base es multimodal real o si el texto "This is a vision model" es parte de la plantilla generica de mradermacher; en cualquier caso, los ficheros `mmproj`, si existen, no estan en este repositorio sino en el de cuantizaciones estaticas.
+No se dispone de información detallada sobre la arquitectura interna del modelo base. El nombre y las etiquetas (`qwen3_8`, `qwen3_6`) sugieren una derivación de la familia Qwen, y el recuento de parámetros (27,3B) lo confirma como un transformer denso de gran tamaño, pero no se especifican número de capas, dimensiones ocultas, mecanismo de atención ni longitud de contexto nativa. Tampoco se documenta si emplea atención lineal, decodificación especulativa u otras optimizaciones.
 
-Respecto al entrenamiento, la informacion disponible indica un ajuste fino en multiples etapas ("Multi-stage tuning", "Cold Fusion", "GAIN Training") realizado por DavidAU sobre tres datasets propios: `DavidAU/Polar-STRICT-Datasets`, `DavidAU/F451-STRICT-Datasets` y `DavidAU/THE-DECKARD-Datasets`. No se indica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. Las etiquetas `heretic` y `uncensored` describen la intencion del ajuste: reducir los rechazos y filtros de contenido del modelo original, presumiblemente mediante tecnicas de ablacion o fine-tuning dirigido. La cuantizacion se ha realizado con `unsloth` y con importance matrix (imatrix), lo que mejora la calidad frente a cuantizaciones estaticas del mismo tamano.
+En cuanto al entrenamiento, la model card menciona varias técnicas por nombre: "Cold Fusion", "GAIN Training" y "Multi-stage tuning", junto con la herramienta `unsloth` y tres datasets propios de DavidAU (`Polar-STRICT-Datasets`, `F451-STRICT-Datasets` y `THE-DECKARD-Datasets`). No se indica el volumen de tokens, la composición exacta de los datos, ni si hubo fases de RLHF o DPO. La etiqueta "heretic" y el calificativo "uncensored" apuntan a un proceso de fine-tuning orientado deliberadamente a reducir los rechazos y las restricciones de alineación del modelo original, una práctica conocida en la comunidad como *abliteration* o *uncensoring*, aunque no se detalla el método concreto empleado.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, con plantilla de chat (la etiqueta `conversational` esta presente y el modelo base esta pensado para uso general, "all use cases").
-- Ajuste orientado a contenido sin censura: el modelo esta entrenado explicitamente para reducir rechazos ante peticiones que el modelo original rechazaria.
-- Capacidad de vision: la model card afirma que es un modelo de vision, con ficheros `mmproj` en el repositorio de cuantizaciones estaticas. No verificable con la informacion disponible.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: limitadas al ingles segun el campo `language` de la model card.
-- Modo "thinking" o razonamiento explicito: no disponible.
-- Capacidades de codigo y matematicas: no documentadas en la informacion disponible.
+- Generación de texto conversacional multi-turno, con etiqueta `conversational` en el repositorio.
+- Capacidad de visión: el autor indica que se trata de un modelo de visión y que los ficheros `mmproj` (proyector multimodal) están en el repositorio estático.
+- Soporte multilingüe declarado para dieciséis idiomas: árabe, chino, inglés, francés, alemán, hindi, indonesio, italiano, japonés, coreano, polaco, portugués, ruso, español, tailandés y vietnamita.
+- Modo sin censura: el fine-tuning busca reducir negativas y filtros de contenido, lo que permite respuestas sobre temas que el modelo base rechazaría.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en infraestructuras de inferencia compatibles con la API de Hugging Face.
+- Uso declarado "all use cases" en las etiquetas, sin especialización vertical concreta.
+- No se documenta soporte explícito de *tool calling*, *function calling* ni razonamiento agéntico multi-paso.
 
 ## Casos de uso
 
-- Generacion de texto conversacional en ingles con despliegue local: al estar disponible en GGUF cuantizado (desde 11,0 GB en i1-Q2_K), se puede ejecutar en estaciones de trabajo sin GPU de datacenter usando llama.cpp u Ollama, manteniendo los datos en la maquina del usuario.
-- Investigacion sobre alineacion y censura: el modelo es util como sujeto de estudio para comparar el comportamiento de un checkpoint "uncensored" frente a su equivalente alineado, midiendo tasas de rechazo, degradacion de calidad y sesgos inducidos por el ajuste.
-- Prototipado de asistentes de escritorio: integrable en aplicaciones tipo LM Studio o interfaces locales que consumen GGUF mediante llama.cpp, con el modelo como motor de generacion de texto.
-- Generacion de texto creativo en ingles: narrativa, guiones o dialogos donde los filtros de contenido estrictos del modelo original resultan limitantes, aprovechando el ajuste "heretic".
-- Evaluacion comparativa de cuantizaciones: la publicacion incluye fichero imatrix y varias quants, lo que permite medir la perdida de perplejidad entre i1-Q2_K, i1-IQ3_M y cuantizaciones mayores del repositorio estatico.
-- Procesamiento por lotes de texto sin conexion: con 27,3B de parametros y cuantizaciones de 11-13 GB, es viable ejecutar tareas de generacion por lotes en una unica GPU de 24 GB o en CPU con RAM suficiente.
-- Experimentacion con modelos multimodales, si se confirma la capacidad de vision: cargando el fichero `mmproj` del repositorio estatico, se podria usar para tareas de descripcion de imagenes o VQA en ingles.
+- Investigación sobre alineación y censura: el modelo permite estudiar cómo responde un transformer de 27B cuando se le retiran las capas de rechazo, comparando sus salidas con las del modelo base original en conjuntos de prompts sensibles.
+- Generación creativa sin restricciones: escritura de ficción, guiones o narrativa que aborde temas violentos, sexuales o controvertidos que los modelos alineados suelen declinar, con la ventaja de un tamaño de 27B que sostiene coherencia en textos largos.
+- Despliegue local en estaciones de trabajo: las cuantizaciones i1-Q4_K_M (16,9 GB) e i1-Q5_K_M (19,6 GB) caben en GPUs de consumo con 24 GB de VRAM, lo que permite ejecutar un modelo de 27B en una RTX 4090 sin depender de la nube.
+- Análisis de documentos e imágenes: gracias al soporte de visión declarado, puede emplearse para describir imágenes, extraer texto de capturas o responder preguntas sobre diagramas, siempre que se cargue el proyector `mmproj` correspondiente.
+- Experimentación multilingüe: con dieciséis idiomas declarados, sirve para probar traducción, generación y conversación en lenguas menos cubiertas por modelos abiertos, como tailandés, vietnamita o hindi.
+- Evaluación de cuantizaciones: el repositorio ofrece catorce variantes con calibración imatrix, lo que lo convierte en un banco de pruebas útil para medir la degradación de calidad entre i1-Q2_K y i1-Q6_K en una misma tarea.
+- Prototipado de asistentes conversacionales sin filtros corporativos: en entornos internos de investigación donde se necesita estudiar el comportamiento del modelo ante peticiones que los sistemas comerciales bloquean.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del cuantizador se limita a indicar los tamanos de los ficheros y a enlazar graficos genericos de comparacion de tipos de cuantizacion (perplejidad frente a tamano), sin cifras concretas para este modelo.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada en FP16 (modelo base en safetensors): aproximadamente 54,6 GB, calculado a partir de 27.320.697.856 parametros a 2 bytes por parametro (estimacion propia, no dato de la model card).
-- VRAM estimada segun cuantizacion (estimaciones a partir del recuento de parametros; los dos primeros valores son tamanos de fichero reales publicados):
-  - i1-Q2_K: 11,0 GB de fichero.
-  - i1-IQ3_M: 12,9 GB de fichero.
-  - Q4_K_M: aproximadamente 16-17 GB (estimado).
-  - Q5_K_M: aproximadamente 19-20 GB (estimado).
-  - Q6_K: aproximadamente 22-23 GB (estimado).
-  - Q8_0: aproximadamente 29 GB (estimado).
-- GPU recomendadas: para FP16, A100 80 GB o H100 80 GB. Para cuantizaciones de 4 bits, una RTX 4090 o RTX 3090 de 24 GB es suficiente. Para i1-Q2_K e i1-IQ3_M, cabe en GPUs de 16 GB (RTX 4080, A4000) y, en el caso de i1-Q2_K, en GPUs de 12 GB con contexto reducido.
-- Cabe en GPU de consumo: si, en RTX 4090, RTX 3090, RTX 4080 y RTX 4070 Ti Super con cuantizaciones Q4 o inferiores. En GPUs de 8 GB no cabe ninguna cuantizacion publicada.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, Jan, text-generation-webui y cualquier runtime compatible con GGUF. vLLM y TGI no consumen GGUF de forma nativa; requeririan el modelo base en safetensors.
-- Latencia y throughput: no disponible. No se publican mediciones de tokens por segundo.
+- VRAM estimada según cuantización (pesos, sin contar caché KV ni overhead):
+  - i1-Q2_K: ~11,0 GB
+  - i1-Q3_K_S: ~12,4 GB
+  - i1-IQ3_M: ~12,9 GB
+  - i1-Q3_K_M: ~13,6 GB
+  - i1-IQ4_XS: ~15,4 GB
+  - i1-Q4_K_S: ~15,9 GB
+  - i1-Q4_K_M: ~16,9 GB
+  - i1-Q5_K_M: ~19,6 GB
+  - i1-Q6_K: ~22,5 GB
+- GPU de consumo: una RTX 4090 (24 GB) puede alojar i1-Q5_K_M e i1-Q6_K con contexto moderado; una RTX 3090 (24 GB) queda en el mismo rango. Para i1-Q4_K_M basta con 24 GB y sobra margen para caché KV.
+- GPU profesionales: A100 (40/80 GB) y H100 (80 GB) permiten ejecutar la cuantización más alta con contextos amplios y mayor throughput; también permiten servir varias instancias en paralelo.
+- Configuraciones de VRAM inferior: con 12-16 GB (RTX 4070 Ti, RTX 4080, RTX 3080 Ti) se puede usar i1-Q3_K_M o i1-IQ4_XS; por debajo de 12 GB conviene recurrir a i1-Q2_K o al offloading parcial a CPU.
+- Despliegue: `llama.cpp` y sus envoltorios (Ollama, LM Studio, llama-cpp-python) son la vía natural para GGUF. Para servir visión hay que cargar además el `mmproj` del repositorio estático. vLLM y TGI no consumen GGUF de forma nativa, por lo que requerirían el modelo en safetensors.
+- Latencia y throughput: no disponibles; dependen de la GPU, la cuantización y la longitud de contexto, y el autor no publica mediciones.
 
 ## Comparativa con modelos similares
 
-La informacion disponible no incluye benchmarks ni contexto nativo, por lo que una comparacion de rendimiento no es posible. La siguiente tabla recoge unicamente datos estructurales verificables o de referencia publica ampliamente conocida; los campos no documentados se marcan como no disponibles.
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Este modelo (i1-GGUF) | 27,3B | no disponible | Apache 2.0 | GGUF | Fine-tune sin censura con visión declarada; 14 cuantizaciones |
+| Modelo base DavidAU (safetensors) | 27,3B | no disponible | Apache 2.0 | safetensors | Origen del que se derivan estas cuantizaciones |
+| Qwen2.5-32B-Instruct | 32,5B | 128K (según documentación pública de Qwen) | Apache 2.0 | safetensors, GGUF | Alternativa alineada de tamaño comparable; contexto documentado |
+| Gemma 2 27B | 27B | 8K | Gemma Terms | safetensors, GGUF | Tamaño casi idéntico; licencia más restrictiva |
 
-| Modelo | Parametros | Contexto | Licencia | Formato disponible |
-|---|---|---|---|---|
-| Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored (i1-GGUF) | 27,3B | no disponible | Apache 2.0 | GGUF (i1) y safetensors en el modelo base |
-| Qwen2.5-32B (referencia de la misma familia) | 32,5B | 131.072 tokens | Apache 2.0 | safetensors, GGUF en repositorios de terceros |
-| Gemma 2 27B (referencia de tamano equivalente) | 27B | 8.192 tokens | Gemma Terms of Use | safetensors, GGUF en repositorios de terceros |
-| Mistral Small 24B (referencia de tamano equivalente) | 24B | 32.768 tokens | Apache 2.0 | safetensors, GGUF en repositorios de terceros |
-
-Nota: los datos de las tres alternativas proceden de conocimiento general de esos modelos y no de la busqueda web realizada, que no devolvio informacion relacionada con este modelo.
+La comparación con Qwen2.5-32B-Instruct y Gemma 2 27B se ofrece como referencia de categoría por tamaño; no se dispone de datos de rendimiento de este fine-tune que permitan una comparación cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Modelo "uncensored": el ajuste elimina deliberadamente filtros de seguridad, por lo que puede generar contenido ofensivo, ilegal o danino. No es apto para aplicaciones orientadas al publico general sin capas adicionales de moderacion.
-- Riesgo de alucinacion: no cuantificado en la informacion disponible, pero es el comportamiento esperado en modelos de 27B sin verificacion factual; el ajuste "uncensored" tiende ademas a reducir la cautela del modelo al expresar incertidumbre.
-- Idiomas: unicamente ingles segun el campo `language`. El rendimiento en castellano no esta documentado y probablemente sea degradado.
-- Contexto: no disponible. No se puede planificar un caso de uso con documentos largos sin conocer la ventana real del modelo base.
-- Licencia: Apache 2.0 declarada en este repositorio y en el modelo base. Apache 2.0 permite uso comercial, pero conviene verificar que todos los componentes del modelo base (incluido el checkpoint Qwen3 subyacente) mantienen esa misma licencia, ya que la model card no lo detalla.
-- Benchmarking inexistente: cero descargas y cero likes en el momento de la consulta, sin evaluaciones independientes publicadas. El ajuste "Cold Fusion" / "GAIN Training" no esta descrito tecnicamente, por lo que no se puede evaluar que se ha modificado respecto al modelo original.
-- Fecha de creacion anomala (2026-09-17) en los metadatos del repositorio, lo que dificulta situar la publicacion en una cronologia fiable.
-- Vision no confirmada: la afirmacion "This is a vision model" proviene de una plantilla del cuantizador; los ficheros `mmproj` no estan en este repositorio y su existencia no se verifica en la informacion disponible.
-- Cadena de custodia opaca: el modelo base es a su vez un ajuste de un modelo no identificado explicitamente, lo que complica la trazabilidad de datos de entrenamiento y posibles sesgos heredados.
+- Ausencia total de benchmarks: no hay MMLU, HumanEval, GSM8K ni ninguna otra métrica publicada, por lo que el rendimiento real es desconocido y no puede validarse frente a alternativas.
+- El fine-tuning "uncensored" y "heretic" elimina deliberadamente barreras de seguridad; esto lo hace inadecuado para aplicaciones de cara al público, entornos educativos sin supervisión o cualquier despliegue donde se requiera moderación de contenido.
+- Riesgo elevado de alucinación y de generar contenido dañino, sesgado o factualmente incorrecto, sin que exista documentación sobre evaluación de sesgos.
+- Idiomas: la model card lista dieciséis, pero el campo de idiomas del repositorio solo declara inglés; la cobertura real del resto no está verificada.
+- Longitud de contexto desconocida: no se puede planificar su uso en tareas de contexto largo sin pruebas empíricas previas.
+- La licencia Apache 2.0 permite uso comercial, pero el carácter sin censura traslada al desplegador toda la responsabilidad legal y reputacional sobre las salidas.
+- El repositorio pesa 218,6 GB y contiene catorce cuantizaciones; conviene descargar solo el fichero necesario para evitar consumo de disco y ancho de banda innecesarios.
+- La fecha de creación (2026-09-17) y el nombre del modelo (`Qwen3.8`) no se corresponden con ninguna familia Qwen publicada oficialmente conocida; conviene verificar la procedencia real de los pesos antes de usarlos en producción.
+- Solo 3 likes y 1.921 descargas indican una validación comunitaria muy limitada; no hay evidencia de que el modelo haya sido probado de forma independiente.
+- El soporte de visión depende de ficheros `mmproj` alojados en otro repositorio; si no se cargan, la capacidad multimodal no está disponible.
 
 ## Enlaces
 
-- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/mradermacher/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-i1-GGUF
-- Repositorio de cuantizaciones estaticas (incluye posibles ficheros `mmproj`): https://huggingface.co/mradermacher/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-GGUF
-- Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored
-- Pagina de resumen y descargas de mradermacher para este modelo: https://hf.tst.eu/model#Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-i1-GGUF
-- README de referencia sobre uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Preguntas frecuentes y peticiones de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Grafico de comparacion de tipos de cuantizacion (perplejidad): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre tipos de cuantizacion: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Dataset de entrenamiento declarado: https://huggingface.co/datasets/DavidAU/Polar-STRICT-Datasets
-- Dataset de entrenamiento declarado: https://huggingface.co/datasets/DavidAU/F451-STRICT-Datasets
-- Dataset de entrenamiento declarado: https://huggingface.co/datasets/DavidAU/THE-DECKARD-Datasets
-- La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo (unicamente paginas sobre la hora local en Londres, sin relacion con el contenido solicitado).
+- Repositorio Hugging Face (i1-GGUF): https://huggingface.co/mradermacher/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-i1-GGUF
+- Repositorio de cuantizaciones estáticas: https://huggingface.co/mradermacher/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-GGUF
+- Modelo base (safetensors): https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored
+- Página de descargas del autor: https://hf.tst.eu/model#Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-i1-GGUF
+- Dataset Polar-STRICT: https://huggingface.co/datasets/DavidAU/Polar-STRICT-Datasets
+- Dataset F451-STRICT: https://huggingface.co/datasets/DavidAU/F451-STRICT-Datasets
+- Dataset THE-DECKARD: https://huggingface.co/datasets/DavidAU/THE-DECKARD-Datasets
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

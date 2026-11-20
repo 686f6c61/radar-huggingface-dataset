@@ -2,85 +2,96 @@
 
 ## Resumen
 
-El modelo `rzgar/Bernini-v2-ComfyUI` es una extracción y reempaquetado de los componentes del modelo de generación de vídeo `ByteDance/Bernini-Diffusers-v2`, adaptado específicamente para su uso en ComfyUI. El autor, rzgar, ha separado cada uno de los submódulos del bundle original (planner, text encoder, decodificador de visión, dos DiTs de difusión, connector y mask tokens) en archivos independientes, preservando las claves de los tensores originales. También incluye versiones cuantizadas en NVFP4 y FP8_scaled para reducir el consumo de memoria.
+Bernini-v2-ComfyUI es un paquete de pesos en formato de archivo único (diffusion-single-file) para ComfyUI del modelo Bernini v2, desarrollado por el usuario rzgar a partir del modelo base ByteDance/Bernini-Diffusers-v2 de ByteDance. No se trata de un modelo de lenguaje, sino de un sistema de difusión para generación y edición de vídeo que acepta texto, imágenes y vídeo como entradas (t2v, i2v, v2v, r2v, rv2v, ads2v). Su relevancia radica en que empaqueta el pipeline completo en cuantizaciones listas para consumir en ComfyUI, incluyendo el planificador semántico y los dos DiT de renderizado, además de un nodo personalizado propio.
 
-Este modelo resuelve el problema de la integración de un sistema de generación de vídeo multimodal complejo en un entorno de nodos visuales como ComfyUI, permitiendo a los desarrolladores y artistas utilizar el pipeline completo de Bernini v2 sin necesidad de gestionar manualmente los pesos fragmentados. Su relevancia radica en que democratiza el acceso a un modelo de última generación de ByteDance, con licencia Apache 2.0, y facilita su despliegue en flujos de trabajo de vídeo generativo.
+La arquitectura es un pipeline de dos etapas: primero un planificador semántico basado en un Qwen2.5-VL ajustado (denominado `mllm`) con un conector y un `vit_decoder` de estilo MaskGIT que transforma texto y tokens visuales de origen en contextos de difusión; después, el renderizado con dos DiT Wan2.2 coentrenados (alta y baja contaminación) condicionados por los latentes del VAE de la fuente. El decodificado final usa el VAE de Wan2.1.
 
-El pipeline declarado es `image-text-to-video`, lo que indica que el modelo acepta una imagen de entrada y una instrucción textual para generar un vídeo. El tamaño total del repositorio es de 112,8 GB en precisión completa (fp32), aunque las versiones cuantizadas reducen significativamente este requisito.
+El repositorio ocupa 256,2 GB e incluye variantes FP8 escaladas, Int8-ConvRot y NVFP4, además de los archivos del planificador y un nodo personalizado para ComfyUI. La licencia es Apache 2.0 y el modelo acumula 1544 descargas y 9 likes en el momento de la consulta.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Sistema multimodal compuesto: Qwen2.5-VL (planner), UMT5-XXL (text encoder), Wan2.2 DiT dual (high-noise y low-noise), decodificador de visión, connector MLP y mask tokens |
-| Parametros totales | No disponible (suma de componentes: ~123 GB en fp32, pero no se especifica el número de parámetros) |
-| Parametros activos | No disponible (no es un modelo MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | FP32 (original), FP8_scaled, NVFP4 |
-| Idiomas soportados | No disponible (el text encoder UMT5-XXL soporta múltiples idiomas, pero no se especifica) |
+| Arquitectura | Pipeline de difusion en dos etapas: planificador MLLM (Qwen2.5-VL ajustado + conector + vit_decoder MaskGIT) y renderizador con dos DiT Wan2.2 (high-noise / low-noise) sobre VAE Wan2.1 |
+| Parametros totales | no disponible (el planificador se describe como "7B planner"; no se detalla el total del pipeline) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | FP8 escalada, Int8-ConvRot, NVFP4; planificador en FP8 escalada, vit_decoder en bf16 |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (componentes individuales) y directorios con versiones cuantizadas |
+| Formato de pesos | safetensors (archivos unicos para ComfyUI) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un sistema compuesto por varios módulos interconectados, tal como se detalla en la tabla de la model card:
+El pipeline consta de dos fases. La primera es la planificacion semantica: un Qwen2.5-VL ajustado (`mllm`), junto con un conector y un `vit_decoder` con bucle de estilo MaskGIT, convierte el texto y los tokens visuales de la fuente en `diff_mllm_contexts`, que es la aportacion diferencial frente a Bernini-R. La segunda es el renderizado: dos DiT Wan2.2 coentrenados, uno de alta contaminacion y otro de baja, con conmutacion en el paso 0,875 y escalado de los valores `omega_*` por `omega_scale` 0,75 tras el cambio; ambos se condicionan con los latentes codificados por el VAE de la fuente como `context_latents`, y cada flujo recibe su propio rotatorio `source_id`. El decodificado final emplea el VAE de Wan2.1.
 
-- **Planner (mllm)**: un modelo Qwen2.5-VL fine-tuned (33,17 GB en fp32) que actúa como planificador, interpretando la entrada multimodal (imagen y texto) y generando las instrucciones de alto nivel para el renderizado.
-- **Text encoder (t5_text_encoder)**: un UMT5-XXL (26,92 GB) que codifica el texto de entrada en representaciones densas.
-- **Decodificador de visión (vit_decoder)**: un decodificador basado en visión (5,75 GB) que procesa las características visuales.
-- **Dos DiTs de difusión (high_noise y low_noise)**: dos modelos de difusión Wan2.2 (57,15 GB cada uno) que operan en dos etapas de ruido (alto y bajo) para generar el vídeo.
-- **Connector**: un MLP (0,28 GB) que conecta el planner con el renderizador.
-- **Mask tokens**: una capa de embedding (0,06 GB) para tokens de máscara.
-
-Esta arquitectura híbrida combina un modelo de lenguaje multimodal (Qwen2.5-VL) como cerebro planificador con un modelo de difusión de doble etapa (Wan2.2) para la síntesis de vídeo. No se dispone de información sobre el proceso de entrenamiento (número de tokens, composición del dataset, uso de RLHF o DPO). El modelo base es `ByteDance/Bernini-Diffusers-v2`, y este repositorio es una extracción de sus pesos sin modificaciones adicionales, salvo la reorganización en archivos individuales y las cuantizaciones.
+El texto se codifica con UMT5-XXL (T5) en FP8 escalado. El sistema de guiado sigue la tabla por tarea del proyecto original: `t2v_apg` para texto a vídeo, `v2v_apg` para vídeo a vídeo y la cadena `rv2v` de cinco pasadas (vacío / V / VI / VTI / VTIC) para r2v y rv2v, con `omega_vid`, `omega_img`, `omega_txt` y `omega_tgt`. Existen modos alternativos `rv2v_wapg`, `vae_txt_vit` y `vae_txt_vit_wapg` (la cadena de tres brazos de Bernini-v1 y -R). No se detallan en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si se aplico RLHF o DPO.
 
 ## Capacidades
 
-- Generación de vídeo a partir de una imagen y un texto (pipeline `image-text-to-video`).
-- Generación de vídeo a partir de texto únicamente (text-to-video), según los tags.
-- Transformación de vídeo a vídeo (video-to-video) y de imagen a imagen (image-to-image), según los tags.
-- Soporte de múltiples precisiones: FP32, FP8_scaled y NVFP4, lo que permite adaptar el modelo a diferentes capacidades de hardware.
-- Integración nativa con ComfyUI mediante la extracción de componentes en archivos safetensors individuales.
-- Compatibilidad con LoRAs de aceleración LightX2V 4Step (high_noise y low_noise) para reducir el número de pasos de inferencia.
-- Capacidades multilingües del text encoder UMT5-XXL (no se especifican los idiomas concretos).
+- Generacion de video a partir de texto (t2v).
+- Generacion de video a partir de imagen (i2v).
+- Edicion de video a video (v2v), con los latentes de la fuente como contexto.
+- Referencia a video (r2v) y referencia a video con variaciones (rv2v).
+- Edicion de video con referencias publicitarias (ads2v).
+- Generacion de imagen a imagen (image-to-image).
+- Planificacion semantica opcional mediante MLLM multimodal (`use_planner`), que procesa texto y tokens visuales de la fuente.
+- Ejecucion sin planificador (`use_planner` desactivado), renderizando solo desde T5 y los latentes de la fuente, sin cargar el planificador de 7B.
+- Control de semilla unico que gobierna tanto el orden de mascaras del planificador como el ruido del renderizado.
+- Compatibilidad con LoRA destilados LightX2V de 4 pasos y con `cfg <= 1.0` para guiado libre en una sola pasada por paso.
+- Soporte de `vit_frame_stride` (por defecto 8) para adaptar la frecuencia de muestreo del planificador.
 
 ## Casos de uso
 
-- **Creación de contenido audiovisual para marketing**: un equipo de diseño puede generar vídeos promocionales a partir de una imagen de producto y un guion textual, utilizando el pipeline image-text-to-video. El modelo permite iterar rápidamente sobre variaciones del mensaje sin necesidad de rodajes.
-- **Prototipado de escenas para cine y animación**: los directores pueden introducir un storyboard (imagen) y una descripción de movimiento para obtener un vídeo preliminar que sirva como referencia visual antes de la producción final.
-- **Generación de vídeos educativos**: a partir de una ilustración y un texto explicativo, se pueden crear animaciones cortas para materiales docentes, facilitando la comprensión de conceptos complejos.
-- **Edición de vídeo asistida**: con la capacidad video-to-video, los editores pueden transformar un vídeo existente aplicando cambios de estilo o contenido guiados por texto, sin necesidad de herramientas de composición avanzadas.
-- **Desarrollo de agentes conversacionales con salida visual**: integrando el modelo en un sistema de IA conversacional, se pueden generar respuestas en vídeo a partir de imágenes proporcionadas por el usuario, por ejemplo en asistentes de atención al cliente que muestran demostraciones de productos.
-- **Investigación en generación de vídeo**: los investigadores pueden utilizar los componentes extraídos para estudiar el comportamiento de cada módulo por separado, o para fine-tuning de subconjuntos específicos (por ejemplo, el planner) sin necesidad de cargar todo el modelo.
+- Edicion de video de referencia en postproduccion: el modo r2v/rv2v permite introducir una imagen o un clip de referencia y generar variaciones manteniendo la identidad visual, gracias a la cadena de guiado con `omega_vid`, `omega_img`, `omega_txt` y `omega_tgt`.
+- Restauracion o reestilizado de metraje existente: el modo v2v condiciona el renderizado con los latentes de la fuente, de modo que la estructura del clip original se preserva mientras cambia el estilo o el contenido.
+- Generacion de video para prototipado creativo: el modo t2v con 16, 23 o 50 pasos permite iterar sobre guiones y storyboards sin material de origen.
+- Animacion de imagenes fijas: el modo i2v convierte una imagen en un clip, util para ilustracion, marketing y contenido para redes.
+- Generacion de anuncios y piezas publicitarias: el modo ads2v esta disenado especificamente para producir variantes de video a partir de referencias de producto o campana.
+- Integracion en flujos de trabajo de ComfyUI: el nodo personalizado incluido y los archivos en `models/text_encoders/` permiten montar el pipeline completo en un grafo de ComfyUI sin scripts externos.
+- Iteracion rapida con LoRA destilados: con el LoRA LightX2V de 4 pasos y `cfg <= 1.0`, se puede generar en pocos pasos para previsualizacion, reservando las configuraciones de 16 a 50 pasos para la salida final.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No se dispone de métricas como MMLU, HumanEval o métricas específicas de generación de vídeo (FVD, CLIP score, etc.) para este modelo o su base Bernini-Diffusers-v2.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada para inferencia**: en precisión FP32, el modelo completo requiere aproximadamente 123 GB de memoria (suma de todos los componentes). Con cuantización FP8_scaled, el requisito se reduce a unos 60-70 GB; con NVFP4, podría bajar a unos 30-40 GB, aunque no se especifican los tamaños exactos de las versiones cuantizadas.
-- **GPU recomendadas**: para FP32 se necesitan múltiples GPUs de alta gama (por ejemplo, 4× A100 80GB o 2× H100 80GB). Con FP8 o NVFP4, una sola GPU de 80 GB (A100, H100) o incluso una RTX 4090 (24 GB) podría ser insuficiente; se recomienda al menos 48 GB de VRAM para las versiones cuantizadas.
-- **Compatibilidad con GPUs de consumo**: las versiones cuantizadas NVFP4 podrían ejecutarse en GPUs con 24 GB de VRAM (RTX 3090/4090) si se cargan los componentes de forma secuencial, pero no está garantizado. La versión FP32 no es viable en hardware de consumo.
-- **Opciones de despliegue**: al estar diseñado para ComfyUI, el despliegue natural es mediante nodos personalizados en ComfyUI. También se puede utilizar con la librería `diffusers` cargando los componentes individuales. No se menciona soporte para vLLM, llama.cpp u Ollama, ya que es un modelo de difusión, no un LLM.
-- **Latencia y throughput**: no disponible. El uso de LoRAs LightX2V 4Step sugiere que se puede reducir el número de pasos de difusión a 4, lo que acelera la generación, pero no se proporcionan cifras concretas.
+- VRAM estimada: no disponible de forma explicita. El repositorio completo ocupa 256,2 GB, pero las variantes cuantizadas (FP8 escalada, Int8-ConvRot, NVFP4) reducen la huella del renderizador; el planificador se describe como un modelo de 7B en FP8 escalada.
+- GPU recomendadas: no disponibles en la informacion proporcionada. La presencia de variantes NVFP4 sugiere orientacion a GPUs con soporte de FP4 de ultima generacion.
+- Cabe en GPU de consumo: no disponible. La existencia de cuantizaciones Int8-ConvRot y NVFP4 apunta a que el autor busca reducir requisitos, pero no se confirman modelos concretos.
+- Opciones de despliegue: ComfyUI mediante el nodo personalizado `ComfyUI-BerniniV2` (ZIP en `ComfyUI/custom_nodes`); los pesos son archivos unicos en safetensors para el cargador de difusion de ComfyUI.
+- Latencia y throughput: no disponibles. Se conocen los pasos recomendados (16, 23 o 50; 4 con el LoRA LightX2V) y el sampler (`unipc`, `dpmpp_2m` o `euler`) con `flow_shift` 5.0, pero no se publican tiempos por clip.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa cuantitativa con otros modelos de generación de vídeo. El modelo base Bernini-Diffusers-v2 de ByteDance es el referente, y este repositorio es una adaptación del mismo. Otros modelos de generación de vídeo de código abierto como Wan2.2 (que constituye la base de los DiTs) o modelos como Stable Video Diffusion podrían ser comparables, pero no se dispone de datos de rendimiento para establecer una comparación rigurosa.
+| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Bernini-v2-ComfyUI (rzgar) | Difusion video, pipeline de dos etapas | no disponible (planificador 7B) | no disponible | Apache 2.0 | Hugging Face, ComfyUI |
+| Bernini-R (referenciado en la model card) | Difusion video, sin planificador MLLM | no disponible | no disponible | no disponible | no disponible |
+| Bernini-v1 (referenciado en la model card) | Difusion video, cadena de guiado de tres brazos | no disponible | no disponible | no disponible | no disponible |
+| Wan2.2 (componente base) | DiT de difusion video | no disponible | no disponible | no disponible | no disponible |
+
+La model card unicamente compara implicitamente con Bernini-R y Bernini-v1, senalando que Bernini v2 anade el planificador semantico (`diff_mllm_contexts`) y la cadena de guiado `rv2v` de cinco pasadas. No se dispone de datos de rendimiento comparado.
 
 ## Limitaciones y advertencias
 
-- **Sesgos conocidos**: no se han documentado sesgos específicos para este modelo, pero al estar basado en Qwen2.5-VL y UMT5-XXL, puede heredar sesgos de los datos de entrenamiento de estos modelos base.
-- **Riesgo de alucinación**: en generación de vídeo, el modelo puede producir artefactos visuales, movimientos no realistas o inconsistencias entre el texto y la imagen generada. No se han publicado evaluaciones de robustez.
-- **Limitaciones de contexto**: la longitud de contexto no está especificada; el text encoder UMT5-XXL tiene un límite de tokens que puede restringir la longitud de las instrucciones textuales.
-- **Restricciones de licencia**: la licencia Apache 2.0 permite uso comercial, pero es necesario verificar si el modelo base Bernini-Diffusers-v2 tiene restricciones adicionales (no se indica en la información proporcionada).
-- **Caveats para producción**: el tamaño del modelo (112,8 GB en FP32) requiere una infraestructura de hardware considerable. Las versiones cuantizadas pueden degradar la calidad de salida. Además, al ser una extracción de componentes, es necesario asegurar que todos los archivos se cargan correctamente en el orden adecuado dentro de ComfyUI.
+- Sesgos conocidos: no disponibles en la informacion proporcionada.
+- Riesgo de alucinacion: no evaluado; al tratarse de un modelo generativo de video, puede producir contenido visual incoherente o no fiel a la referencia.
+- Limitaciones de contexto o idioma: los idiomas soportados no estan declarados; el codificador de texto es UMT5-XXL, pero no se especifica cobertura linguistica.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el modelo deriva de ByteDance/Bernini-Diffusers-v2 y de componentes Wan2.2 y Wan2.1; conviene verificar las condiciones de esos modelos base antes de un despliegue comercial.
+- En v2v, la longitud del renderizado se recorta a la del clip de origen (`1 + (latent_t - 1) * 4`) cuando este es mas corto; mas alla del final del origen, el flujo en contexto ha terminado.
+- El planificador de 7B solo se carga si `use_planner` esta activo; con el desactivado se pierde la planificacion semantica y el resultado se aproxima al comportamiento de Bernini-R.
+- El valor `vit_frame_stride` = 8 asume una fuente de 16 fps alimentada a 2 fps al planificador; fuentes con otra tasa requieren ajuste manual.
+- El repositorio es un empaquetado de un tercero (rzgar) sobre un modelo de ByteDance, no una publicacion oficial del autor original.
+- No se han publicado benchmarks, por lo que no es posible validar la calidad frente a alternativas con datos objetivos.
 
 ## Enlaces
 
-- [Repositorio Hugging Face del modelo](https://huggingface.co/rzgar/Bernini-v2-ComfyUI)
-- [Modelo base ByteDance/Bernini-Diffusers-v2](https://huggingface.co/ByteDance/Bernini-Diffusers-v2)
-- [Repositorio Bernini-R-S2V (fine-tune relacionado)](https://huggingface.co/rzgar/Bernini-R-S2V)
-- [Artículo sobre Bernini-R S2V en ComfyUI Wiki](https://comfyui-wiki.com/en/news/2026-07-09-bernini-r-s2v-speech-driven-video)
-- [Mirror en GitHub del plugin ComfyUI-WanBerniniS2V](https://github.com/AIMixer/ComfyUI-WanBerniniS2V)
+- Repositorio Hugging Face: https://huggingface.co/rzgar/Bernini-v2-ComfyUI
+- Modelo base: https://huggingface.co/ByteDance/Bernini-Diffusers-v2
+- LoRA LightX2V de 4 pasos: https://huggingface.co/rzgar/Bernini-R-LightX2V-4step-loras
+- Nodo personalizado ComfyUI (ZIP): https://huggingface.co/rzgar/Bernini-v2-ComfyUI/resolve/main/ComfyUI-BerniniV2/ComfyUI-BerniniV2.zip
+- Pesos FP8 escalados: https://huggingface.co/rzgar/Bernini-v2-ComfyUI/tree/main/Bernini_v2_FP8_scaled
+- Codificador de texto UMT5-XXL (Comfy-Org): https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/tree/main/split_files/text_encoders
+- VAE Wan2.1: https://huggingface.co/rzgar/Qwen-Image-WAN2.2-VAE-Collection/blob/main/Vanilla/Wan2_1_VAE_fp32.safetensors

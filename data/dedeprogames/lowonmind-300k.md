@@ -2,57 +2,65 @@
 
 ## Resumen
 
-LowOnMind-300k es un modelo de lenguaje decoder-only con 296.960 parámetros, desarrollado por DedeProGames y publicado en Hugging Face. Se trata de una variante extrema de DynamicMind-Mini (8,9 millones de parámetros), reducido aproximadamente 30 veces, cuyo proposito explicito no es ser util, sino explorar que capacidades reales se obtienen con un tercio de millon de parametros. El autor lo describe como un experimento sobre los limites del escalado: el modelo esta entrenado con 200 millones de tokens de FineWeb-Edu, lo que supone 673 tokens por parametro, unas 30 veces por encima de la relacion optima de Chinchilla.
+LowOnMind-300k es un modelo de lenguaje decoder-only de 296.960 parámetros, desarrollado por DedeProGames y entrenado desde cero sobre 200 millones de tokens de `HuggingFaceFW/fineweb-edu` (muestra sample-10BT). Se trata de una variante extrema de DynamicMind-Mini (8,9M de parámetros), reducida aproximadamente 30 veces, cuyo objetivo explícito no es ofrecer calidad de generación, sino explorar los límites prácticos del escalado hacia abajo: qué capacidades conserva un modelo con apenas un tercio de millón de parámetros.
 
-El modelo utiliza una arquitectura transformer con 6 capas, hidden size de 64, atencion GQA con 4 cabezas de query y 2 de key/value, y un vocabulario propio byte-level BPE de solo 1024 tokens. La ventana de contexto es de 512 tokens. El entrenamiento se realizo en una unica Tesla T4 durante 43 minutos, con una perdida de validacion de 3,2982 nats/token y una perplejidad de 27,06. Los resultados en el benchmark BananaMind Base Bench 1.1 muestran una precision bruta del 26,6%, apenas 1,6 puntos por encima del azar (25%), lo que confirma que el modelo produce texto localmente gramatical pero sin coherencia semantica mas alla de unos pocos tokens.
+El modelo emplea una arquitectura transformer con 6 capas, `hidden_size` de 64, atención GQA (4 cabezas de consulta, 2 de clave/valor, `head_dim` 16), embeddings atados, contexto de 512 tokens y un vocabulario propio de 1.024 tokens byte-level BPE. Incorpora QK-Norm por cabeza, RoPE precalculado e inicialización escalada de las proyecciones residuales, innovaciones que permiten entrenar con una tasa de aprendizaje de 2e-3 sin divergencia a esta escala.
 
-La relevancia de este modelo es principalmente investigadora: sirve como punto de referencia extremo para estudiar que capacidades emergen (o no) en modelos muy pequenos, y como banco de pruebas para tecnicas de entrenamiento eficiente. Su licencia Apache 2.0 permite uso comercial sin restricciones, aunque su utilidad practica en produccion es practicamente nula.
+Su relevancia es metodológica: junto con LowOnMind-1M (3,3 veces mayor, mismo tokenizador, datos, presupuesto de tokens y ratio de aspecto) forma un par controlado para estudiar el escalado en el régimen de modelos minúsculos. La ficha se publica bajo licencia Apache 2.0 y solo soporta inglés.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only con GQA y QK-Norm |
+| Arquitectura | Transformer decoder-only con GQA, QK-Norm y RoPE precalculado |
 | Parametros totales | 296.960 |
-| Parametros activos | no aplica (no es MoE) |
+| Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | 512 tokens |
-| Tipos de cuantizacion | no disponible (solo safetensors en FP32/FP16) |
-| Idiomas soportados | en (ingles) |
+| Tipos de cuantizacion | No disponible (el modelo es tan pequeño que la cuantizacion no aporta ventaja practica) |
+| Idiomas soportados | Ingles (`en`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (custom modeling code) |
+| Formato de pesos | safetensors (`transformers`, con `custom_code`) |
+
+Detalle adicional de arquitectura: `hidden_size` 64, `intermediate_size` 136 (2,12x hidden), 6 capas, 4 cabezas de consulta y 2 de clave/valor con `head_dim` 16, `vocab_size` 1.024, embeddings atados. Reparto de parámetros: 65.536 en el embedding atado, 231.360 en los seis bloques y 64 en la normalización final.
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder-only de 6 capas con hidden size de 64 e intermediate size de 136 (2,12 veces el hidden). Utiliza atencion GQA con 4 cabezas de query y 2 de key/value, con head dim de 16. El vocabulario es un BPE byte-level propio de 1024 tokens, necesario para ajustarse al presupuesto de parametros: con 8192 tokens, solo la embedding ocuparia mas que el modelo completo. Las embeddings estan atadas (tied), con 65.536 parametros en la embedding, 231.360 en los seis bloques y 64 en la normalizacion final.
+El modelo es un transformer decoder-only denso de seis bloques con atención de grupo (GQA 4/2) y RoPE. Respecto a su predecesor DynamicMind-Mini introduce cuatro cambios: QK-Norm (RMSNorm por cabeza sobre consultas y claves antes de RoPE, con un coste de 32 parámetros por bloque, que hace viable una tasa de aprendizaje de 2e-3), RoPE precalculado con recacheo automático para secuencias más largas que `max_position_embeddings`, inicialización escalada de residuos (`o_proj` y `down_proj` a `std / sqrt(2 * num_layers)` en lugar de 0,02 plano) y un vocabulario de 1.024 tokens, necesario para ajustar el presupuesto de parámetros (con 8.192 tokens el embedding superaría el tamaño total del modelo). El coste de ese vocabulario reducido es una compresión de aproximadamente 2,35 caracteres por token.
 
-Respecto a DynamicMind-Mini, incorpora tres cambios principales: QK-Norm (RMSNorm por cabeza en queries y keys antes de RoPE, que anade 32 parametros por bloque y permite una tasa de aprendizaje de 2e-3), RoPE precomputado con cache que se re-expande automaticamente para secuencias mas largas, e inicializacion residual escalada (o_proj y down_proj con std / sqrt(2 * num_layers) en lugar de 0,02 plano).
-
-El entrenamiento uso 200 millones de tokens de HuggingFaceFW/fineweb-edu (sample-10BT), con secuencias de 512 tokens, batch de 64, optimizador AdamW con betas (0,9, 0,95) y weight decay de 0,1. La tasa de aprendizaje fue de 2e-3 con decaimiento coseno hasta 2e-4 y 250 pasos de warmup. El grad clip se fijo en 1,0. Se entreno en una Tesla T4 durante 43 minutos. El autor senala que la perdida de entrenamiento y validacion se mantuvieron dentro de 0,05 durante todo el entrenamiento, indicando que no hay sobreajuste: el modelo esta limitado por parametros, no por datos.
+El entrenamiento usó 200 millones de tokens (6.103 pasos de 32.768 tokens) sobre `fineweb-edu` sample-10BT, con longitud de secuencia 512, batch de 64, AdamW (betas 0,9/0,95, weight decay 0,1), LR pico 2e-3 con decaimiento coseno hasta 2e-4, 250 pasos de warmup y clipping de gradiente 1,0. Se ejecutó en una única Tesla T4 en 43 minutos. La relación es de 673 tokens por parámetro, unas 30 veces por encima del óptimo de Chinchilla: el modelo está limitado por parámetros, no por datos, y la pérdida de entrenamiento y validación se mantuvo dentro de 0,05 durante toda la ejecución, sin sobreajuste apreciable. No se documenta RLHF, DPO ni ajuste fino posterior.
 
 ## Capacidades
 
-- Generacion de texto con gramatica local correcta: el modelo produce fragmentos de 3-4 tokens gramaticalmente correctos, con ortografia aprendida como proceso (ensambla palabras de 4-5 fragmentos de tokens sin errores ortograficos).
-- Aprendizaje de estructura documental: reproduce marcadores de lista, encabezados, mayusculas tras puntos y apostrofes en contracciones, aprendidos de FineWeb-Edu.
-- Invento de palabras con fonotactica inglesa plausible: el ejemplo "Donah" muestra que el modelo internaliza patrones fonologicos del ingles.
-- Sin capacidad de seguimiento semantico: la coherencia no se mantiene mas alla de aproximadamente cuatro tokens.
-- Sin soporte de tool calling ni function calling.
-- Sin capacidades de agente ni razonamiento multi-paso.
-- Sin soporte multimodal (solo texto).
-- Sin modo thinking ni generacion de razonamiento explicito.
+- Generación de texto a nivel de continuación estadística: produce fragmentos gramaticales localmente coherentes, sin coherencia global sostenida.
+- Ortografía aprendida como proceso: al no existir como tokens palabras como "increasingly", "guidelines" o "deployment", el modelo las compone correctamente a partir de cuatro o cinco fragmentos del vocabulario de 1.024 tokens.
+- Modelado de lenguaje base: pérdida de validación de 3,2982 nats/token, perplejidad de 27,06 y 2,03 bits por carácter.
+- Razonamiento de sentido común, cuantitativo, lógico y conocimiento del mundo: presentes solo a nivel marginal, con precisiones entre el 22% y el 34% en el benchmark BananaMind Base 1.1.
+- Tool calling / function calling: no soportado.
+- Capacidades de agente y razonamiento multi-paso: no soportadas.
+- Multilingüismo: no soportado; solo inglés.
+- Modo thinking, visión, audio: no disponibles.
 
 ## Casos de uso
 
-- Investigacion academica sobre limites del escalado: sirve como punto de referencia extremo para estudiar que capacidades minimas emergen con 300K parametros, comparable a otros experimentos de tiny models en la literatura.
-- Banco de pruebas para tecnicas de entrenamiento eficiente: su entrenamiento en 43 minutos en una T4 permite iterar rapidamente sobre cambios en arquitectura, optimizador o datos.
-- Analisis de tokenizacion byte-level: con solo 1024 tokens, permite estudiar como un modelo aprende ortografia y morfologia desde fragmentos de tokens sin vocabulario extenso.
-- Depuracion de pipelines de entrenamiento: su tamano minimo y velocidad de entrenamiento lo hacen util para validar infraestructura, scripts de datos o configuraciones antes de escalar a modelos mayores.
-- Proyectos educativos: util para ensenar conceptos de arquitectura transformer, GQA, QK-Norm y entrenamiento desde cero con recursos minimos.
-- Arte generativo o proyectos creativos: la generacion de texto sin coherencia semantica puede usarse como fuente de texto surrealista o experimental, similar a otros modelos pequenos.
-- Benchmark de referencia para evaluar la dificultad de tareas: su rendimiento cercano al azar en BananaMind Base Bench 1.1 (26,6% frente a 25% de azar) lo convierte en un baseline inferior util para calibrar la dificultad de nuevos benchmarks.
+- Investigación sobre límites de escalado: usar el par LowOnMind-300k / LowOnMind-1M como referencia controlada para medir qué capacidades emergen entre 0,3M y 1M de parámetros con datos y tokenizador idénticos.
+- Docencia y divulgación de arquitecturas transformer: el modelo entrena en 43 minutos en una T4 y cabe en cualquier GPU consumer, lo que permite reproducir el pipeline completo de preentrenamiento en un aula o taller.
+- Pruebas de infraestructura de inferencia: validar integraciones con `transformers` y código personalizado (`custom_code`) en pipelines de CI sin coste de GPU significativo.
+- Experimentos de tokenización: estudiar el efecto de un vocabulario byte-level de 1.024 tokens sobre la compresión (2,35 caracteres/token) y la calidad de la ortografía generada.
+- Benchmarking de harnesses de evaluación: el modelo sirve como línea base de "nivel azar" (Elo 833 frente a 805 de azar en BananaMind Base 1.1) para calibrar evaluaciones de modelos base.
+- Generación de texto de relleno o sintético en tests: producir continuaciones cortas para pruebas de UI o de formato en entornos donde la calidad semántica es irrelevante y el coste de cómputo debe ser mínimo.
+- Estudio de estabilidad de entrenamiento: analizar el efecto de QK-Norm y la inicialización escalada de residuos sobre la tolerancia a tasas de aprendizaje altas (2e-3) en modelos de muy pocos parámetros.
 
 ## Benchmarks y rendimiento
 
-Resultados en BananaMind Base Bench 1.1 (benchmark de 350 items de continuacion de texto en ingles para modelos base):
+Resultados de modelado de lenguaje:
+
+| Metrica | Valor |
+|---|---|
+| Perdida de validacion | 3,2982 nats/token |
+| Perplejidad de validacion | 27,06 |
+| Bits por caracter | 2,03 |
+
+Resultados en BananaMind Base Bench 1.1 (350 ítems de probabilidad de continuación en inglés, sin truncamiento de contexto contra la ventana de 512 tokens):
 
 | Categoria | Precision | Precision ponderada | Elo |
 |---|---:|---:|---:|
@@ -67,53 +75,51 @@ Resultados en BananaMind Base Bench 1.1 (benchmark de 350 items de continuacion 
 | Metrica global | Valor |
 |---|---:|
 | Elo global | 833 |
+| Elo a nivel de azar (esta rejilla de ítems) | 805 |
 | Precision bruta | 26,6% |
+| Intervalo de confianza del 95% | [22,0%, 31,2%] |
+| z frente a azar | +0,69 |
 | Precision ponderada | 27,9% |
 | Azar | 25,0% |
 
-Metricas de language modelling:
-
-| Metrica | Valor |
-|---|---|
-| Perdida de validacion | 3,2982 nats/token |
-| Perplejidad de validacion | 27,06 |
-| Bits por caracter | 2,03 |
-
-El autor advierte que la perplejidad no es comparable entre tokenizadores: con un vocabulario de 1024 tokens, 27,06 significa algo muy distinto que con 50K tokens. La metrica portable es bits por caracter (2,03). No se han publicado resultados en benchmarks estandar como MMLU, HumanEval o GSM8K.
+El resultado global no se distingue estadísticamente del azar (z = +0,69). No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: menos de 10 MB en FP32 (el modelo pesa aproximadamente 1,2 MB en safetensors). Cabe en cualquier GPU, incluidas integradas.
-- GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente. El entrenamiento se realizo en una Tesla T4 (16 GB), pero la inferencia es viable en CPU.
-- Compatibilidad con GPU de consumo: si, cualquier GPU consumer (GTX 1050, RTX 3060, etc.) es mas que suficiente.
-- Opciones de despliegue: transformers con trust_remote_code=True (requerido por el custom modeling code). No se ha verificado compatibilidad con vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponible, pero con 296K parametros la generacion es practicamente instantanea incluso en CPU.
+- VRAM estimada para inferencia: menos de 1 GB en fp32 (296.960 parámetros, aproximadamente 1,2 MB de pesos); el cuello de botella es el runtime, no el modelo.
+- GPU recomendadas: cualquier GPU con soporte CUDA, incluida una Tesla T4 (la misma usada para el entrenamiento); también es viable en CPU.
+- GPU consumer: cabe holgadamente en cualquier GPU consumer, incluidas GTX 1050, RTX 3060 o superiores; el modelo completo ocupa menos de un megabyte.
+- Opciones de despliegue: `transformers` (requiere `custom_code` por la arquitectura personalizada). No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI; dado el tamaño, la conversión a GGUF sería trivial pero no está publicada.
+- Latencia y throughput: no disponibles en la información proporcionada. El entrenamiento completo de 6.103 pasos en una T4 tomó 43 minutos, lo que da una idea del orden de magnitud del coste computacional.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Vocabulario | Perdida validacion | Licencia |
-|---|---|---|---|---|---|
-| LowOnMind-300k | 296.960 | 512 | 1024 (BPE byte-level) | 3,2982 nats/token | Apache 2.0 |
-| DynamicMind-Mini | 8,9M | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Contexto | Vocabulario | Licencia | Notas |
+|---|---:|---:|---:|---|---|
+| LowOnMind-300k | 296.960 | 512 | 1.024 | Apache 2.0 | Objeto de este análisis; Elo 833 en BananaMind Base 1.1 |
+| LowOnMind-1M | ~1M (3,3x) | No disponible | 1.024 (mismo tokenizador) | Apache 2.0 | Par controlado con idénticos datos, tokens y ratio de aspecto |
+| DynamicMind-Mini | 8,9M | No disponible | No disponible | No disponible | Predecesor del que deriva; ~30x mayor |
 
-No se dispone de datos de otros modelos comparables en la informacion proporcionada. El unico punto de referencia directo es DynamicMind-Mini, del cual LowOnMind-300k es una variante 30 veces menor. No se han encontrado datos de benchmarks comparativos con otros tiny models como TinyStories o SmolLM en la informacion disponible.
+No se dispone de datos de benchmarks de LowOnMind-1M ni de DynamicMind-Mini en la información proporcionada, por lo que no es posible comparar rendimiento numérico entre ellos. No se han identificado otros modelos comparables de escala sub-millón con datos públicos en la información disponible.
 
 ## Limitaciones y advertencias
 
-- Sin coherencia semantica: el modelo no mantiene significado mas alla de aproximadamente cuatro tokens. Los ejemplos de salida muestran fragmentos gramaticales sin conexion entre si.
-- Alto riesgo de alucinacion: el modelo inventa palabras y hechos con total libertad, como "Donah" o "Exodus of Donah".
-- Vocabulario extremadamente reducido: 1024 tokens implican una compresion de aproximadamente 2,35 caracteres por token, lo que limita la eficiencia y la capacidad de representacion.
-- Solo ingles: el modelo fue entrenado exclusivamente con datos en ingles (FineWeb-Edu) y su vocabulario byte-level no esta optimizado para otros idiomas.
-- Ventana de contexto limitada: 512 tokens, insuficiente para tareas que requieran contexto largo.
-- Rendimiento cercano al azar en tareas de razonamiento: 24% en logical_reasoning y 14% en context_tracking, por debajo o al nivel del azar.
-- Codigo personalizado: requiere trust_remote_code=True en transformers, lo que implica ejecutar codigo arbitrario del repositorio. Se recomienda auditar el codigo antes de usarlo en entornos de produccion.
-- Sin uso practico en produccion: el autor es explicito en que el modelo no esta construido para ser bueno, sino para explorar limites. No es adecuado para tareas reales de generacion de texto.
-- Licencia Apache 2.0: permite uso comercial, pero la utilidad practica es nula para aplicaciones reales.
+- Calidad de generación muy baja: el resultado global en BananaMind Base 1.1 (Elo 833) no se distingue del azar (z = +0,69); la coherencia es local, no global.
+- Alucinación estructural: el modelo produce texto gramaticalmente plausible pero semánticamente vacío o incorrecto, como muestra el ejemplo de la model card.
+- Contexto muy limitado: 512 tokens, insuficiente para la mayoría de tareas de producción con documentos o conversaciones largas.
+- Solo inglés: no soporta castellano ni otros idiomas.
+- Vocabulario de 1.024 tokens: la compresión de 2,35 caracteres/token implica secuencias más largas en tokens y limita la eficiencia; la perplejidad no es comparable con modelos de vocabulario estándar.
+- Sin soporte de tool calling, agentes ni razonamiento multi-paso: no apto para pipelines de agentes ni automatización de tareas.
+- Licencia Apache 2.0: permite uso comercial, pero el modelo no ofrece utilidad práctica para producción más allá de experimentación e investigación.
+- Requiere `custom_code` en `transformers`: la carga no es estándar y puede romper con actualizaciones de la librería; conviene fijar versiones.
+- Sin datos de sesgo: no se documenta ninguna evaluación de sesgos, toxicidad o seguridad.
+- Sin cuantizaciones publicadas: no hay GGUF ni versiones optimizadas para despliegue en runtimes ligeros.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/DedeProGames/LowOnMind-300k
-- Modelo base DynamicMind-Mini: https://huggingface.co/DedeProGames/DynamicMind-Mini
+- Modelo par a mayor escala: https://huggingface.co/DedeProGames/LowOnMind-1M
+- Predecesor: https://huggingface.co/DedeProGames/DynamicMind-Mini
+- Perfil del autor: https://huggingface.co/DedeProGames
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
-- Benchmark BananaMind Base Bench 1.1: https://huggingface.co/datasets/BananaMind/BananaMind-Base-Bench-1.1
-- Perfil del autor en Hugging Face: https://huggingface.co/DedeProGames
+- Benchmark utilizado: https://huggingface.co/datasets/BananaMind/BananaMind-Base-Bench-1.1

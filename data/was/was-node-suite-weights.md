@@ -2,93 +2,92 @@
 
 ## Resumen
 
-El repositorio `WAS/was-node-suite-weights` no es un modelo único, sino un espejo estable de checkpoints de restauración de imágenes que el WAS Node Suite de ComfyUI carga en su nodo Power Preprocessor. Fue creado por el autor WAS para evitar que los nodos se rompan cuando un tercero mueve o elimina una copia de los pesos. Contiene 16 archivos de pesos (0,7 GB) organizados en dos carpetas: `denoise/` (SCUNet y NAFNet) y `low_light/` (HVI-CIDNet y Retinexformer). Ninguno de estos pesos ha sido entrenado por este proyecto; cada archivo conserva la licencia de su trabajo original, que se detalla en la tabla de la model card.
+WAS Node Suite weights es un repositorio de pesos agregados que da soporte a la suite de nodos personalizados WAS Node Suite para ComfyUI. No se trata de un modelo entrenado por su autor, sino de una recopilación centralizada de checkpoints de terceros que la suite necesita en tiempo de ejecución: denoising, mejora de escenas con poca luz, reconstrucción HDR, eliminación de fondo, flujo óptico y modelos generativos de imagen y vídeo. El objetivo es evitar que los nodos dejen de funcionar cuando una copia externa de un peso se mueve o se elimina.
 
-La relevancia de este repositorio es práctica: proporciona una fuente fiable y versionada de pesos para tareas de eliminación de ruido y mejora de imágenes con poca luz, utilizables directamente en flujos de ComfyUI. Al ser un mirror, no introduce innovación técnica propia, pero garantiza reproducibilidad y disponibilidad de los checkpoints originales. La licencia es per-file, lo que obliga a revisar cada archivo individualmente antes de un uso comercial.
+El repositorio mezcla formatos y orígenes: algunos ficheros son copias byte a byte de los checkpoints originales, otros están convertidos a safetensors y las familias bajo `models/` son conversiones y cuantizaciones propias para ComfyUI de publicaciones upstream. Destacan Kandinsky 6 (vídeo con audio, con transformadores en int8 ConvRot y W6A8) y BluePixel-Turbo para edición de imagen en 4K (bf16, int8 ConvRot, W6A8 y W4A8, más su autoencoder DC-AE). El repositorio ocupa 221,3 GB y acumula 1391 descargas.
+
+La relevancia actual es práctica: centraliza dependencias dispersas de un ecosistema de nodos muy usado en flujos de postprocesado y restauración de imagen, con un esquema de licencias por fichero que respeta la licencia de cada obra original. No es un modelo de lenguaje ni un modelo multimodal de propósito general; es infraestructura de pesos para pipelines de difusión y restauración en ComfyUI.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Multiple: SCUNet (Swin-Conv-UNet), NAFNet (Nonlinear Activation Free Network), HVI-CIDNet (Color space + CIDNet), Retinexformer (Retinex-based Transformer) |
-| Parametros totales | No disponible (depende de cada checkpoint; SCUNet ~17M, NAFNet width32 ~5M, width64 ~17M, Retinexformer ~1.6M, HVI-CIDNet no publicado) |
-| Parametros activos | No aplicable (no es un modelo MoE) |
-| Longitud de contexto | No aplicable (modelos de vision por computador) |
-| Tipos de cuantizacion | No disponible (pesos en formato .pth y .safetensors, sin cuantizacion publicada) |
-| Idiomas soportados | No aplicable (procesamiento de imagenes) |
-| Licencia | Per-file: Apache-2.0 (SCUNet), MIT (NAFNet, HVI-CIDNet, Retinexformer) |
-| Formato de pesos | .pth (PyTorch) y .safetensors |
+| Arquitectura | no disponible (conjunto heterogéneo: CNN de restauración, transformers de difusión, autoencoders) |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | bf16, int8 ConvRot, W6A8, W4A8 (solo en las familias de `models/`); el resto en precisión original |
+| Idiomas soportados | no disponible |
+| Licencia | per-file (cada fichero conserva la licencia de su obra original; Apache-2.0, MIT, BSD-3-Clause y otras; Kandinsky 6 audio VAE y BluePixel transformers solo uso no comercial) |
+| Formato de pesos | safetensors, .pth, .pt |
 
 ## Arquitectura y entrenamiento
 
-Al ser un repositorio de pesos, no hay una arquitectura unificada. Los checkpoints provienen de cuatro modelos publicados en la literatura:
+No existe un entrenamiento propio: el repositorio empaqueta pesos ya entrenados por terceros. La composición es heterogénea. En `denoise/` se incluyen SCUNet (Kai Zhang) y NAFNet en anchos 32 y 64 (Megvii Research), redes convolucionales para eliminación de ruido. En `low_light/` conviven HVI-CIDNet (cuatro variantes), Retinexformer (nueve checkpoints para distintos datasets: NTIRE, LOL v1, LOL v2 real y sintético, FiveK, SID, SMID, SDSD indoor y outdoor) y DarkIR-M. En `hdr/` está HDRCNN de Gabriel Eilertsen, convertido a safetensors para inferencia nativa en ComfyUI.
 
-- **SCUNet** (Zhang et al., 2022): red basada en Swin-Conv-UNet para denoising ciego, entrenada con síntesis de datos. El archivo `scunet_color_real_psnr.pth` corresponde a la versión en color con pérdida PSNR.
-- **NAFNet** (Chen et al., ECCV 2022): red sin funciones de activación no lineales (Nonlinear Activation Free), entrenada en el dataset SIDD para denoising. Hay dos variantes: width32 y width64.
-- **HVI-CIDNet** (Yan et al., CVPR 2025): introduce un nuevo espacio de color HVI (Hue, Value, Intensity) para mejora de imágenes con poca luz. Se incluyen cuatro variantes entrenadas en diferentes datasets: generalization, SICE, Sony-total-dark y FiveK.
-- **Retinexformer** (Cai et al., ICCV 2023): transformer basado en la teoría Retinex para mejora de baja luminosidad. Se incluyen ocho variantes: NTIRE, LOL-v1, LOL-v2-real, LOL-v2-synthetic, FiveK, SID, SMID, SDSD-indoor y SDSD-outdoor.
-
-Ninguno de estos modelos ha sido entrenado por el autor del repositorio; los pesos son copias de los lanzamientos oficiales. No se documenta el proceso de entrenamiento en este repo, pero las publicaciones originales describen datasets y metodologías específicas.
+El resto de familias son más pesadas. `birefnet/` incluye diez variantes de BiRefNet (General, General-HR, General-dynamic, General-reso_512, DIS, DIS-TR_TEs, COD, HRSOD, Matting-HR y Portrait) para segmentación y matting; `ben2/` aporta BEN2-base. `optical_flow/` contiene dos checkpoints de FlowSeek (T_CT y T_TartanCT_TSKH) convertidos a safetensors sin alterar tensores, cada uno con los pesos de Depth Anything V2 Small que FlowSeek usa para leer profundidad. `models/kandinsky6/` y `models/bluepixel/` son conversiones y cuantizaciones para ComfyUI de publicaciones upstream, con transformadores en int8 ConvRot, W6A8 y, en BluePixel, también W4A8. No se documentan tokens de entrenamiento, composición de dataset ni etapas de RLHF/DPO porque el autor no entrena ningún componente.
 
 ## Capacidades
 
-- **Denoising de imagenes**: elimina ruido de fotografias, especialmente en condiciones de poca luz o con sensores ruidosos. Los checkpoints de SCUNet y NAFNet estan especializados en este dominio.
-- **Mejora de imagenes con poca luz**: los modelos HVI-CIDNet y Retinexformer iluminan escenas oscuras, recuperando detalles y color. Cada variante esta entrenada para un tipo de escenario (general, SICE, Sony, FiveK, LOL, etc.).
-- **Restauracion de imagenes en general**: aunque el foco es denoising y low-light, los modelos pueden aplicarse a tareas relacionadas como eliminacion de artefactos de compresion o mejora de contraste.
-- **Integracion con ComfyUI**: los pesos estan disenados para ser cargados por el nodo Power Preprocessor del WAS Node Suite, lo que permite usarlos en pipelines de generacion y edicion de imagenes sin escribir codigo.
-- **Formato safetensors**: los archivos de HVI-CIDNet estan en formato seguro, lo que facilita su carga en entornos que priorizan seguridad.
-- **Multiples variantes por tarea**: la disponibilidad de varios checkpoints para low-light (LOL, FiveK, SID, etc.) permite elegir el modelo mas adecuado segun el tipo de imagen de entrada.
+- Eliminación de ruido en imágenes mediante SCUNet y NAFNet (anchos 32 y 64), integrada en el nodo Power Preprocessor.
+- Mejora de imágenes con poca luz con HVI-CIDNet, Retinexformer y DarkIR, con variantes especializadas por dataset (SID, SMID, SDSD, FiveK, LOL).
+- Reconstrucción HDR con HDRCNN a través del nodo HDR Reconstruct.
+- Eliminación de fondo y matting de alta resolución con BiRefNet (diez variantes, incluidas Portrait y Matting-HR) y BEN2.
+- Estimación de flujo óptico para vídeo con FlowSeek, apoyada en Depth Anything V2 Small para la profundidad.
+- Generación de vídeo con audio mediante Kandinsky 6, con transformadores cuantizados y VAE de audio.
+- Edición de imagen en 4K con BluePixel-Turbo, en bf16 e int8/W6A8/W4A8, con su autoencoder DC-AE.
+- Descarga automática de dependencias: con `features.network: true` en `config.yaml`, la suite obtiene el fichero necesario la primera vez que un nodo lo requiere.
+- No dispone de tool calling, razonamiento multi-step ni capacidades de lenguaje: no es un modelo conversacional.
 
 ## Casos de uso
 
-- **Preprocesado de imagenes en flujos de ComfyUI**: el caso principal. Un usuario de ComfyUI puede conectar el nodo Power Preprocessor con estos pesos para limpiar o iluminar imagenes antes de pasarlas a un modelo de difusion, mejorando la calidad de la generacion.
-- **Restauracion de fotografias antiguas o escaneadas**: los modelos de denoising (SCUNet, NAFNet) reducen el ruido de escaneos antiguos o fotos con grano, facilitando su posterior edicion o impresion.
-- **Mejora de imagenes de vigilancia o camaras de seguridad**: los checkpoints de low-light (especialmente HVI-CIDNet Sony-total-dark y Retinexformer SID) pueden iluminar grabaciones nocturnas para identificar detalles.
-- **Preprocesado para vision artificial**: antes de aplicar algoritmos de deteccion de objetos o segmentacion, se puede usar denoising para mejorar la precision en condiciones adversas.
-- **Produccion audiovisual y fotografia**: los modelos de low-light permiten recuperar tomas subexpuestas sin necesidad de rehacer la sesion, ahorrando tiempo en postproduccion.
-- **Investigacion en restauracion de imagenes**: al ser un mirror de pesos oficiales, sirve como punto de partida para reproducir experimentos o comparar arquitecturas sin depender de enlaces externos inestables.
+- Restauración de fotografía nocturna en un pipeline de revelado: se aplica Retinexformer o HVI-CIDNet sobre la toma original antes de la etapa de generación, aprovechando los checkpoints específicos por sensor o dataset para reducir el ruido sin perder color.
+- Limpieza previa a un upscale generativo: SCUNet o NAFNet eliminan ruido y artefactos de compresión antes de pasar la imagen a un modelo de difusión, lo que evita que el generador amplifique el grano.
+- Reconstrucción de rango dinámico en tomas de interiores: HDRCNN recupera detalle en altas luces y sombras a partir de una única exposición, útil para inmobiliaria y arquitectura.
+- Recorte automático de producto para catálogos de comercio electrónico: BiRefNet General-HR o Matting-HR generan máscaras de alta resolución aptas para composición sobre fondos limpios.
+- Retrato y sustitución de fondo en estudio: la variante Portrait de BiRefNet está pensada para cabello y contornos finos, y BEN2-base sirve como alternativa ligera.
+- Postproducción de vídeo con estabilización o interpolación asistida: los checkpoints de FlowSeek calculan flujo óptico entre fotogramas dentro del nodo Video Motion Model Loader, con la profundidad de Depth Anything V2 Small disponible en el mismo fichero.
+- Generación de clips cortos con sonido sincronizado: Kandinsky 6, cargado con Load Diffusion Model y sus nodos propios, produce vídeo con pista de audio usando los transformadores cuantizados para reducir requisitos de memoria.
+- Edición de imágenes en 4K dentro de ComfyUI: BluePixel-Turbo con sus cuantizaciones W4A8 permite trabajar a esa resolución en GPUs con VRAM limitada, usando el DC-AE para codificar y decodificar.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Los modelos originales reportan metricas en sus respectivos papers (por ejemplo, Retinexformer alcanza PSNR de 25.16 dB en LOL-v1, NAFNet 34.81 dB en SIDD), pero este repositorio no incluye dichos datos. Se recomienda consultar las publicaciones originales para metricas detalladas.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: los modelos son relativamente ligeros. SCUNet (~17M parametros) y NAFNet width32 (~5M) pueden ejecutarse en GPUs con 2-4 GB de VRAM. Retinexformer (~1.6M) es aun mas ligero. HVI-CIDNet no tiene parametros publicados, pero al ser un modelo de restauracion, se estima que cabe en GPUs de gama media.
-- **GPU recomendadas**: cualquier GPU con soporte CUDA de 4 GB o mas (GTX 1060, RTX 2060, RTX 3060, etc.) es suficiente para inferencia. No se requiere GPU de datacenter.
-- **Compatibilidad con consumer GPU**: si, todos los modelos caben en GPUs de consumo actuales. Incluso una GTX 1650 con 4 GB podria ejecutar la mayoria de los checkpoints.
-- **Opciones de despliegue**: los pesos estan en formato PyTorch (.pth) y safetensors, por lo que pueden cargarse con PyTorch directamente. En el contexto de ComfyUI, se usan a traves del WAS Node Suite. Tambien se pueden integrar en scripts Python personalizados con las librerias originales de cada modelo.
-- **Latencia y throughput**: no disponible. Depende del hardware y del tamaño de la imagen de entrada. En una GPU moderna, la inferencia de una imagen de 512x512 suele tomar menos de un segundo para estos modelos.
+- VRAM: no disponible de forma agregada; depende de cada submodelo. Las familias bajo `models/` incluyen cuantizaciones (int8 ConvRot, W6A8, W4A8) precisamente para reducir el consumo frente a bf16.
+- GPU recomendadas: no disponibles en la información proporcionada. Para las familias pesadas (Kandinsky 6, BluePixel-Turbo) se recomienda consultar la documentación upstream; los denoisers y modelos de restauración son comparativamente ligeros.
+- GPU de consumo: los modelos de restauración, segmentación y flujo óptico (SCUNet, NAFNet, BiRefNet, BEN2, FlowSeek) son los candidatos realistas para GPUs de consumo; las variantes cuantizadas de Kandinsky 6 y BluePixel están pensadas para reducir el requisito, pero no se especifica cifra.
+- Despliegue: ComfyUI es el entorno objetivo. El repositorio está etiquetado como `diffusion-single-file`, y las carpetas de `models/` replican la estructura de `ComfyUI/models` para copiarse a mano. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de pesos.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Tarea principal | Licencia | Formato |
-|---|---|---|---|---|
-| SCUNet (en este repo) | ~17M | Denoising ciego | Apache-2.0 | .pth |
-| NAFNet width32 (en este repo) | ~5M | Denoising (SIDD) | MIT | .pth |
-| Retinexformer (en este repo) | ~1.6M | Low-light enhancement | MIT | .pth |
-| HVI-CIDNet (en este repo) | no disponible | Low-light enhancement | MIT | .safetensors |
-| SwinIR (alternativa) | ~11.8M | Restauracion general (SR, denoising) | Apache-2.0 | .pth |
-| MIRNet-v2 (alternativa) | ~31M | Restauracion general | Apache-2.0 | .pth |
-
-La comparativa se limita a modelos de restauracion de imagenes. Este repositorio no compite con alternativas, sino que las agrupa. La ventaja principal es la conveniencia de tener varios checkpoints en un solo lugar con licencias claras.
+No disponible. Este repositorio no es un modelo único, sino un agregador de pesos de restauración, segmentación, flujo óptico y generación; no existe una categoría comparable directa. Como referencia de alternativas por función, cada componente tiene su propio upstream: SCUNet y NAFNet para denoising, BiRefNet y BEN2 para segmentación, Retinexformer y HVI-CIDNet para poca luz, y Kandinsky 6 o BluePixel para generación y edición. La ventaja diferencial de este repositorio no es el rendimiento, sino la disponibilidad estable y centralizada de esos pesos con licencias documentadas por fichero.
 
 ## Limitaciones y advertencias
 
-- **Licencia per-file**: cada archivo tiene su propia licencia. Aunque la mayoria son MIT o Apache-2.0, es obligatorio revisar la tabla de la model card antes de usar cualquier peso en un producto comercial.
-- **Sin entrenamiento propio**: el autor del repositorio no ha entrenado ni modificado los pesos. Cualquier problema de rendimiento o sesgo proviene de los modelos originales.
-- **Especializacion de los checkpoints**: los modelos de low-light estan entrenados en datasets especificos (LOL, FiveK, SID, etc.). Usar un checkpoint en un dominio muy distinto puede producir resultados suboptimos.
-- **Riesgo de alucinacion visual**: como cualquier modelo de restauracion, pueden inventar detalles en zonas muy oscuras o con ruido extremo, especialmente los modelos de low-light.
-- **Dependencia de ComfyUI**: aunque los pesos son utilizables de forma independiente, el repositorio esta pensado para el WAS Node Suite. Fuera de ese ecosistema, habra que cargarlos manualmente con las librerias originales.
-- **Sin mantenimiento activo**: el repositorio fue creado en agosto de 2026 y no muestra actualizaciones posteriores. Los enlaces a los origenes podrian quedar obsoletos.
+- No es un modelo entrenado por el autor: cualquier problema de calidad es atribuible al checkpoint upstream correspondiente, no a este repositorio.
+- Licencia `per-file`: es obligatorio revisar la licencia de cada fichero antes de uso comercial. El VAE de audio de Kandinsky 6 y los transformadores de BluePixel son solo para uso no comercial.
+- El repositorio pesa 221,3 GB; la descarga completa no es práctica y conviene bajar solo las carpetas necesarias.
+- Las carpetas bajo `models/` no se descargan automáticamente: deben copiarse a mano en la ruta correspondiente de `ComfyUI/models`.
+- Las conversiones a safetensors y las cuantizaciones int8 ConvRot, W6A8 y W4A8 son trabajo de este proyecto y pueden introducir diferencias numéricas frente al original en bf16.
+- Riesgo de alucinación: no aplica en el sentido de modelos de lenguaje, pero los modelos generativos incluidos (Kandinsky 6, BluePixel) pueden producir contenido sintético inexacto o artefactos.
+- Sesgos: no documentados en la información disponible; los datasets de entrenamiento de cada upstream condicionan el comportamiento en piel, iluminación y escenas no representadas.
+- Idiomas: no disponibles; la mayoría de componentes no procesa texto.
+- Sin garantías de mantenimiento ni de paridad con futuras versiones de ComfyUI.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/WAS/was-node-suite-weights
-- WAS Node Suite en GitHub: https://github.com/WASasquatch/was-node-suite-comfyui
-- Documentacion de WAS Node Suite en DeepWiki: https://deepwiki.com/ltdrdata/was-node-suite-comfyui
-- Pagina de registro de ComfyUI (WAS Node Suite Revised): https://registry.comfy.org/nodes/was-ns
-- SCUNet (original): https://github.com/cszn/SCUNet
-- NAFNet (original): https://github.com/megvii-research/NAFNet
-- HVI-CIDNet (original): https://github.com/Fediory/HVI-CIDNet
-- Retinexformer (original): https://github.com/caiyuanhao1998/Retinexformer
+- Repositorio en Hugging Face: https://huggingface.co/WAS/was-node-suite-weights
+- WAS Node Suite para ComfyUI: https://github.com/WASasquatch/was-node-suite-comfyui
+- SCUNet: https://github.com/cszn/SCUNet
+- NAFNet: https://github.com/megvii-research/NAFNet
+- HDRCNN: https://github.com/gabrieleilertsen/hdrcnn
+- HVI-CIDNet: https://github.com/Fediory/HVI-CIDNet
+- Retinexformer: https://github.com/caiyuanhao1998/Retinexformer
+- DarkIR: https://github.com/cidautai/DarkIR
+- BiRefNet: https://github.com/ZhengPeng7/BiRefNet
+- BEN2: https://huggingface.co/PramaLLC/BEN2
+- FlowSeek: https://github.com/mattpoggi/flowseek

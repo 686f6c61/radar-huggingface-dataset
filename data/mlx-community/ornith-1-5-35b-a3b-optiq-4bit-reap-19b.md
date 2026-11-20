@@ -2,105 +2,103 @@
 
 ## Resumen
 
-Ornith-1.5-35B-A3B-OptiQ-4bit-REAP-19B es un modelo de lenguaje de tipo mixture-of-experts (MoE) de 35.100 millones de parametros totales, de los cuales solo 3.000 millones se activan por token. Es una version podada y cuantizada del modelo original Ornith-1.5-35B-A3B de Ornith AI, publicada por la comunidad MLX en formato nativo para Apple Silicon. La poda de expertos sigue el metodo REAP (Cerebras Research, ICLR 2026) y se aplica directamente en el dominio cuantizado, sin de-cuantizar ni re-entrenar los expertos supervivientes.
+Ornith-1.5-35B-A3B-OptiQ-4bit-REAP-19B es una variante podada y cuantizada del modelo MoE Ornith-1.5-35B-A3B, publicada por la comunidad mlx-community y construida con la herramienta mlx-optiq. Se trata de un checkpoint de 18.990.568.816 parámetros totales (18,8B) obtenido al eliminar el 50 % de los expertos enrutados del modelo padre (de 256 a 128 expertos por capa) y mantener la cuantización de 4 bits. El resultado ocupa 12,8 GB en disco frente a los 21,9 GB del padre, una reducción del 42 %, y requiere unos 14,5 GB de memoria para ejecutarse.
 
-El resultado es un checkpoint de 12,8 GB en disco (frente a los 21,9 GB del padre) que conserva 128 de los 256 expertos por capa, manteniendo intactos los 8 expertos activos por token. Esto significa que el modelo ocupa un 42 % menos de espacio y un 47 % menos de parametros, pero con la misma velocidad de inferencia, ya que el numero de parametros activos no cambia. Esta pensado para ejecutarse localmente en equipos Mac con chips de la serie M, mediante el framework MLX.
+La relevancia de esta ficha reside en su naturaleza derivada: no es un modelo entrenado desde cero, sino un ejercicio de compresión de un MoE sobre Apple Silicon, aplicado directamente en el dominio cuantizado. La técnica de poda es REAP (Cerebras Research, ICLR 2026), que ordena los expertos según la media condicional del peso del router multiplicado por la norma de la salida del experto sobre datos de calibración, y elimina los peor valorados recortando el router en consecuencia. La arquitectura de referencia es `qwen3_5_moe`, con licencia Apache 2.0.
 
-La variante no fue evaluada de forma independiente, pero sigue la misma receta validada en el modelo gemelo Qwen3.6-35B-A3B-OptiQ-4bit-REAP-19B, donde la perdida de capacidad fue minima (Capability Score de 80,03 a 76,57) y se concentro en tareas de conocimiento general (MMLU -21,4), manteniendo intactas las capacidades procedimentales como matematicas, generacion de codigo y seguimiento de instrucciones.
+El interés práctico está en que reduce el requisito de memoria de un MoE de 35B a un rango asequible para equipos Apple Silicon de gama alta, manteniendo intacto el número de parámetros activos por token (8 expertos, top-8 routing). El autor advierte que esta variante concreta no se ha evaluado con benchmarks propios: la receta se validó sobre Qwen3.6-35B-A3B-OptiQ-4bit-REAP-19B, de arquitectura idéntica y mismo ratio de retención.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (mixture-of-experts) basada en Qwen3.5-MoE, con 256 expertos por capa y top-8 routing |
-| Parametros totales | 18.800 millones (tras poda; el original tiene 35.100 millones) |
-| Parametros activos | 3.000 millones (8 expertos activos por token, sin cambios respecto al original) |
+| Arquitectura | Transformer MoE (tipo `qwen3_5_moe`), top-8 routing |
+| Parametros totales | 18.990.568.816 (18,8B) |
+| Parametros activos | 8 expertos por token (sin cambio respecto al padre; total de activos no disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 4-bit (OptiQ mixed-precision) |
+| Tipos de cuantizacion | 4 bits (OptiQ); otros tipos no disponibles |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (MLX) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (librería MLX) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Ornith-1.5-35B-A3B es un MoE con 256 expertos por capa y seleccion top-8, lo que significa que aunque el modelo tiene 35.100 millones de parametros, solo 3.000 millones se activan en cada token procesado. Incluye ademas un sidecar MTP (multi-token prediction) para decodificacion especulativa, aunque en esta variante podada el sidecar esta ausente.
+El modelo es un MoE de tipo `qwen3_5_moe` con 256 expertos enrutados por capa en su versión original, de los cuales se conservan 128 en todas las capas (asignación uniforme). El enrutamiento top-8 se mantiene, de modo que los parámetros activos por token no cambian: el banco de expertos almacenado se reduce, pero el coste computacional por token es el mismo. Los expertos supervivientes se copian bit a bit desde el checkpoint padre cuantizado; no hay desquantización, recuantización, fusión ni reentrenamiento. El router se recorta para coincidir con el nuevo número de expertos.
 
-La poda de expertos sigue el metodo REAP, que ordena los expertos segun la media condicional del producto del peso del router por la norma de salida del experto, calculada sobre datos de calibracion. En este caso se usaron 8 muestras del mix de seis dominios de OptiQ. Se eliminaron 128 de los 256 expertos de cada capa, de forma uniforme en todas las capas, y el router se recorto para reflejar la nueva seleccion.
-
-La operacion se realizo integramente en el dominio cuantizado: los expertos supervivientes se copiaron bit a bit del checkpoint cuantizado padre, sin de-cuantizar, re-cuantizar, fusionar ni re-entrenar nada. La divergencia KL medida respecto al modelo sin podar es de 0,331, muy por debajo del umbral de 1,0 a partir del cual la degradacion se vuelve visible en la generacion.
+La poda se realizó con REAP aplicado en el dominio cuantizado mediante `optiq prune-experts`, usando una mezcla de calibración de seis dominios con 8 muestras. La regla de ordenación se eligió puntuando ambos candidatos contra el modelo sin podar, lo que seleccionó la media condicional. No se dispone de información sobre el entrenamiento original del modelo base (número de tokens, composición del dataset, RLHF/DPO), ya que la model card no lo documenta. Tampoco se incluye el sidecar MTP (multi-token prediction) en esta variante.
 
 ## Capacidades
 
-- Generacion de texto conversacional y completado de texto.
-- Razonamiento multi-step y resolucion de problemas procedimentales.
-- Generacion de codigo y comprension de lenguajes de programacion.
-- Capacidades matematicas (GSM8K).
-- Seguimiento de instrucciones (IFEval).
-- Soporte de tool calling / function calling (BFCL).
-- Capacidades multilingues (no especificadas en la informacion disponible).
-- Al ser una variante podada de un modelo vision-language, conserva la arquitectura base pero no se confirma si las capacidades de vision estan operativas en este checkpoint.
+- Generación de texto y conversación multi-turno, según el pipeline declarado (`text-generation`, `conversational`).
+- Razonamiento y matemáticas: la receta de referencia reporta GSM8K +2,6 tras la poda, lo que sugiere que la capacidad procedimental se preserva.
+- Generación de código: HumanEval −1,3 en la receta de referencia, degradación mínima.
+- Seguimiento de instrucciones: IFEval +4,3 en la receta de referencia.
+- Tool calling / function calling: BFCL −1,0 en la receta de referencia, lo que indica que la capacidad se mantiene prácticamente intacta.
+- Razonamiento multi-paso y uso como agente: no documentado explícitamente para esta variante.
+- Capacidades multilingües: no disponibles.
+- Modo thinking, visión o audio: no disponibles.
 
 ## Casos de uso
 
-- Despliegue local en Apple Silicon: el modelo esta optimizado para ejecutarse en Mac con chips M1/M2/M3/M4 mediante el framework MLX, ocupando solo 12,8 GB en disco y requiriendo unos 14,5 GB de memoria para inferencia, lo que lo hace viable en equipos con 16 GB o mas de RAM unificada.
-- Asistente de codigo offline: con soporte de tool calling y generacion de codigo, puede integrarse en entornos de desarrollo locales sin conexion a internet, como complemento a IDEs o terminales.
-- Prototipado rapido de agentes conversacionales: su tamano reducido y velocidad de inferencia (gracias a los 3.000 millones de parametros activos) permiten iterar rapidamente en el diseno de agentes multi-paso sin necesidad de infraestructura en la nube.
-- Automatizacion de tareas procedimentales: mantiene intactas las capacidades de razonamiento matematico y seguimiento de instrucciones, por lo que es adecuado para pipelines de automatizacion que requieran comprension de lenguaje natural y ejecucion de pasos logicos.
-- Educacion e investigacion en compresion de modelos: al ser un ejemplo de poda de expertos en dominio cuantizado, sirve como caso de estudio para investigadores interesados en tecnicas de compresion de MoE.
-- Generacion de texto con privacidad: al ejecutarse localmente, los datos no salen del equipo, lo que lo hace apto para entornos con requisitos estrictos de confidencialidad.
+- Asistente local en Mac con Apple Silicon: el checkpoint requiere 14,5 GB de memoria, por lo que encaja en equipos con 24 GB o 32 GB de memoria unificada. Se ejecutaría con `mlx_lm` o `optiq serve` para conversación interactiva sin conexión.
+- Prototipado de agentes con tool calling: el BFCL de la receta de referencia se mantiene dentro de 1 punto, lo que permite usar el modelo como planificador que invoca funciones en flujos de automatización local.
+- Generación de código en el editor: con HumanEval prácticamente intacto en la receta validada, es adecuado para autocompletado y generación de funciones en un IDE conectado a un servidor MLX local.
+- Evaluación de pipelines de compresión de MoE: sirve como caso de estudio reproducible de poda REAP en dominio cuantizado, comparando la divergencia KL (0,331) frente al padre sin podar.
+- Procesamiento por lotes en estación de trabajo: el menor tamaño en disco (12,8 GB frente a 21,9 GB) reduce el coste de almacenamiento y carga de múltiples variantes en pruebas A/B.
+- Tareas de seguimiento de instrucciones con formato estricto: el IFEval de la receta de referencia mejora tras la poda, lo que lo hace apto para extracción de datos estructurados y generación con plantillas.
+- Despliegue en entornos con memoria limitada: cuando el modelo padre de 21,9 GB no cabe pero se necesita un MoE con routing top-8, esta variante es la opción directa.
 
 ## Benchmarks y rendimiento
 
-Esta variante concreta no fue evaluada de forma independiente. El autor publica la receta validada en el modelo gemelo Qwen3.6-35B-A3B-OptiQ-4bit-REAP-19B, con los siguientes resultados comparativos entre el modelo sin podar y la version con 50 % de expertos retenidos:
+No se han publicado resultados de benchmarks sobre este checkpoint concreto. El autor indica explícitamente que la variante no se evaluó por separado y que la receta se validó en Qwen3.6-35B-A3B-OptiQ-4bit-REAP-19B, misma arquitectura y mismo 50 % de retención:
 
-| Benchmark | Modelo sin podar | Modelo REAP-19B | Diferencia |
+| Metrica (receta de referencia, Qwen3.6-35B-A3B) | Padre | Podado | Delta |
 |---|---|---|---|
-| Capability Score | 80,03 | 76,57 | -3,46 |
-| MMLU | no disponible | no disponible | -21,4 |
+| Capability Score | 80,03 | 76,57 | −3,46 |
+| MMLU | no disponible | no disponible | −21,4 |
 | GSM8K | no disponible | no disponible | +2,6 |
 | IFEval | no disponible | no disponible | +4,3 |
-| BFCL | no disponible | no disponible | -1,0 |
-| HumanEval | no disponible | no disponible | -1,3 |
+| BFCL | no disponible | no disponible | −1,0 |
+| HumanEval | no disponible | no disponible | −1,3 |
 
-La divergencia KL medida en este checkpoint concreto respecto al padre sin podar es de 0,331, dentro del rango donde la generacion se considera indistinguible en revision humana.
+Medición propia de este checkpoint: divergencia KL respecto al padre sin podar de 0,331 (el autor sitúa por encima de 1,0 los checkpoints que degradan visiblemente bajo poda).
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 14,5 GB de memoria unificada para inferencia (12,8 GB de pesos + overhead de activaciones y KV cache).
-- GPU recomendadas: cualquier chip Apple Silicon con 16 GB o mas de RAM unificada (M1 Pro/Max/Ultra, M2 Pro/Max/Ultra, M3 Pro/Max/Ultra, M4 Pro/Max/Ultra).
-- No requiere GPU NVIDIA ni AMD; esta disenado exclusivamente para el framework MLX de Apple.
-- Opciones de despliegue: `optiq serve` (incluido en el paquete mlx-optiq) o `mlx_lm.generate` de la libreria mlx-lm.
-- Latencia y throughput: no disponibles en la informacion proporcionada, aunque al mantener los mismos 8 expertos activos por token, la velocidad de inferencia es identica a la del modelo padre sin podar.
+- Memoria para inferencia: 14,5 GB según el autor; el repo pesa 13,8 GB.
+- Cabe en Apple Silicon con memoria unificada de 24 GB o superior (M2 Pro/Max, M3 Pro/Max, M4 Pro/Max); en configuraciones de 16 GB no hay margen suficiente.
+- GPU NVIDIA: no es el objetivo del checkpoint (formato MLX); para CUDA habría que recurrir al modelo base en otro formato.
+- Despliegue: `mlx-optiq` (`optiq serve`) y `mlx_lm` (`load` + `generate`). No se documentan vLLM, llama.cpp, Ollama ni TGI para este formato.
+- Latencia y throughput: no disponibles. El autor señala que los parámetros activos por token no cambian, por lo que la velocidad de decodificación debería ser similar a la del padre, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Activos | Contexto | Licencia | Formato |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Ornith-1.5-35B-A3B-OptiQ-4bit-REAP-19B (este) | 18,8B (podado) | 3B | no disponible | apache-2.0 | MLX 4-bit |
-| Ornith-1.5-35B-A3B-OptiQ-4bit (padre) | 35,1B | 3B | no disponible | apache-2.0 | MLX 4-bit |
-| Ornith-1.5-35B-A3B-8bit | 35,1B | 3B | no disponible | MIT | MLX 8-bit |
-| Qwen3.6-35B-A3B-OptiQ-4bit-REAP-19B | 18,8B (podado) | 3B | no disponible | apache-2.0 | MLX 4-bit |
-
-La principal diferencia frente al padre es el tamano en disco (12,8 GB frente a 21,9 GB) y el numero de parametros totales (18,8B frente a 35,1B), con una perdida de capacidad concentrada en conocimiento general y una ligera mejora en tareas procedimentales. Frente a la version 8-bit, esta variante 4-bit ocupa menos espacio pero puede tener una calidad de salida ligeramente inferior por la cuantizacion mas agresiva.
+| Ornith-1.5-35B-A3B-OptiQ-4bit-REAP-19B (este) | 18,8B (MoE, top-8) | no disponible | Apache 2.0 | safetensors MLX 4-bit | 12,8 GB en disco, 14,5 GB de memoria |
+| mlx-community/Ornith-1.5-35B-A3B-OptiQ-4bit (padre) | 35,1B (MoE, top-8) | no disponible | Apache 2.0 | safetensors MLX 4-bit | 21,9 GB en disco; misma velocidad por token |
+| mlx-community/Qwen3.6-35B-A3B-OptiQ-4bit-REAP-19B | ~18,8B (MoE, top-8) | no disponible | no disponible | safetensors MLX 4-bit | Receta de referencia con benchmarks publicados |
 
 ## Limitaciones y advertencias
 
-- No fue evaluado de forma independiente: los benchmarks publicados corresponden a un modelo gemelo de la misma arquitectura, no a este checkpoint concreto.
-- La poda elimina el 50 % de los expertos, lo que degrada el conocimiento general (MMLU -21,4 en el modelo de referencia) aunque mantiene las capacidades procedimentales.
-- El sidecar MTP de decodificacion especulativa esta ausente, por lo que la velocidad de generacion puede ser menor que la del modelo original en ciertos escenarios.
-- No se confirma que las capacidades de vision del modelo base esten operativas en esta variante, a pesar de que el modelo original es vision-language.
-- La cuantizacion 4-bit puede introducir degradacion de calidad frente a precisiones superiores, especialmente en tareas que requieren matices linguisticos.
-- Requiere hardware Apple Silicon; no es compatible con GPUs NVIDIA ni AMD sin conversion previa a otro formato.
-- Los idiomas soportados no estan especificados en la informacion disponible.
-- El modelo se publica bajo licencia apache-2.0, que permite uso comercial, pero los pesos derivados del modelo base pueden estar sujetos a las condiciones de la licencia del modelo original.
+- No existen benchmarks propios de este checkpoint; las cifras de capacidad provienen de otro modelo de la misma arquitectura y deben tratarse como orientativas.
+- La pérdida de capacidad en la receta de referencia se concentra en MMLU (−21,4), un deterioro severo en conocimiento factual y académico; el modelo podado no es equivalente al padre en ese eje.
+- La poda elimina el 50 % de los expertos: aunque el routing top-8 se preserva, la diversidad efectiva del banco de expertos se reduce y puede afectar a dominios poco representados en la calibración (8 muestras de seis dominios).
+- Divergencia KL de 0,331 respecto al padre: el autor la considera dentro del rango aceptable, pero implica diferencias medibles en la distribución de salida.
+- No hay sidecar MTP, por lo que no se puede usar decodificación especulativa multi-token con este checkpoint.
+- Idiomas soportados no documentados; no se puede garantizar calidad fuera del inglés sin evaluación.
+- Longitud de contexto no disponible; no se debe asumir la del modelo base sin verificarla.
+- Riesgo de alucinación inherente a los modelos generativos, agravado por la degradación en MMLU.
+- Licencia Apache 2.0 permite uso comercial, pero al ser un derivado conviene conservar los avisos de atribución del modelo base y de la herramienta de compresión.
+- Formato MLX exclusivo: no es desplegable directamente en CUDA ni en runtimes estándar de servidor.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/mlx-community/Ornith-1.5-35B-A3B-OptiQ-4bit-REAP-19B
-- Modelo padre (cuantizado): https://huggingface.co/mlx-community/Ornith-1.5-35B-A3B-OptiQ-4bit
-- Version 8-bit del modelo base: https://huggingface.co/mlx-community/Ornith-1.5-35B-A3B-8bit
+- Modelo padre: https://huggingface.co/mlx-community/Ornith-1.5-35B-A3B-OptiQ-4bit
+- Receta de referencia validada: https://huggingface.co/mlx-community/Qwen3.6-35B-A3B-OptiQ-4bit-REAP-19B
 - Paper REAP: https://arxiv.org/abs/2510.13999
-- Sitio de Ornith AI: https://ornith.online/
-- Pagina de Ornith-1.5 en Ollama: https://ollama.com/library/ornith-1.5
 - Herramienta mlx-optiq: https://mlx-optiq.com
-- Documentacion de poda de OptiQ: https://mlx-optiq.com/docs/prune
+- Documentación de poda: https://mlx-optiq.com/docs/prune
+- Catálogo de modelos OptiQ: https://mlx-optiq.com/models
+- Documentación general: https://mlx-optiq.com/docs/

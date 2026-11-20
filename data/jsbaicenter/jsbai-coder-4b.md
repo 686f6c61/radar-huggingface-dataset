@@ -2,112 +2,102 @@
 
 ## Resumen
 
-JSBAI-Coder-4B es un modelo de 4.205.751.296 parámetros (aproximadamente 4,2B) especializado en codificación agéntica, desarrollado por el James Silberrad Brown Center for Artificial Intelligence (JSBCAI), un centro de investigación interdisciplinar de la San Diego State University. Se trata de un ajuste fino del modelo base Qwen3.5-4B y su propuesta central es ejecutar bucles de agente de codificación —explorar un repositorio, leer código, escribir un parche y ejecutar la suite de tests para verificar la corrección— en hardware de consumo, algo que según los autores requería hasta ahora modelos de 27B parámetros o más.
+JSBAI-Coder-4B es un modelo de lenguaje de 4.205.751.296 parámetros (aproximadamente 4B) desarrollado por el James Silberrad Brown Center for Artificial Intelligence (JSBCAI) de la Universidad Estatal de San Diego. Se trata de un ajuste fino de Qwen/Qwen3.5-4B orientado a *agentic coding*: el modelo es capaz de investigar errores en repositorios de software reales, leer el código que falla, escribir un parche, ejecutar las pruebas y verificar su propia corrección dentro de un contenedor aislado. El autor ha renombrado el modelo a Aztec-Coder-4B; este repositorio se mantiene por continuidad.
 
-El modelo se distribuye bajo licencia Apache-2.0, en formato safetensors, con la etiqueta de arquitectura `qwen3_5_text` y pipeline de `text-generation`. El repositorio ocupa 8,7 GB y la model card documenta un consumo aproximado de 8 GB de VRAM en BF16 y de 5 GB en la variante cuantizada NVFP4, lo que lo sitúa en el rango de portátiles con GPU dedicada.
+La relevancia del modelo radica en que demuestra que las capacidades de codificación agéntica, hasta ahora asociadas a modelos de 27B parámetros o más, pueden alcanzar un rendimiento útil en un modelo que cabe en una GPU de consumo. Según la model card, el modelo pasa de resolver un 10,1% de 121 errores reales no vistos durante el entrenamiento (el modelo base) a un 82,9% tras el ajuste, verificado ejecutando las suites de pruebas ocultas de cada proyecto.
 
-Su relevancia actual radica en el método de entrenamiento: un pipeline de tres etapas que combina demostraciones destiladas de un modelo profesor de 744B parámetros (GLM-5.3) verificadas mediante ejecución real de tests, seguido de aprendizaje por refuerzo con GRPO sobre 237 problemas reales de ingeniería de software, y controles de generalización en cada frontera de etapa. Los autores reportan un salto del 10,1% al 82,9% en un conjunto reservado de 121 bugs nunca vistos durante el entrenamiento.
+El entrenamiento combina demostraciones destiladas de un modelo frontera (GLM-5.3, 744B), aprendizaje por refuerzo con GRPO sobre problemas reales de ingeniería de software y datos generales de instrucción y uso de herramientas procedentes de NVIDIA Nemotron-Post-Training-Dataset-v2. La licencia es Apache-2.0, igual que la del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (etiqueta `qwen3_5_text`), derivada de Qwen3.5-4B; sin mezcla de expertos |
-| Parametros totales | 4.205.751.296 (aproximadamente 4,2B) |
-| Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | 131.072 tokens (valor configurado en el ejemplo de despliegue con vLLM de la model card; el maximo del modelo base no se especifica) |
-| Tipos de cuantizacion | BF16 (aproximadamente 8 GB de VRAM); NVFP4 (aproximadamente 5 GB, cuantizado con NVIDIA ModelOpt, anunciado como "coming soon"); no se documentan variantes GGUF |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer (derivada de Qwen3.5-4B, tag `qwen3_5_text`); no se detallan mas particularidades en la informacion disponible |
+| Parametros totales | 4.205.751.296 (~4B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | 131.072 tokens (segun el ejemplo de uso con vLLM, `max_model_len=131072`) |
+| Tipos de cuantizacion | BF16 (pesos originales) y NVFP4 (variante cuantizada de ~5 GB, generada con NVIDIA ModelOpt) |
+| Idiomas soportados | No disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (libreria transformers) |
+| Formato de pesos | safetensors (libreria transformers); variante NVFP4 disponible en la misma organizacion |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer denso heredado de Qwen3.5-4B, sin mezcla de expertos, identificado en los metadatos como `qwen3_5_text`. El modelo emplea la plantilla de chat de Qwen3.5 con *thinking* intercalado (razonamiento entre llamadas a herramientas), el parser de razonamiento `qwen3` en vLLM y el formato de tool calling `qwen3_coder`. La model card menciona además una cabeza de decodificación especulativa basada en MTP (*multi-token prediction*) para acelerar la inferencia, distribuida por la misma organización.
+El modelo parte de Qwen3.5-4B, un transformer denso de aproximadamente 4B parametros, y se ajusta en tres etapas. La primera consiste en destilacion de demostraciones: GLM-5.3 (un modelo abierto frontera de 744B) genero aproximadamente 1.875 trayectorias de codificacion agentica, cada una verificada ejecutando la suite de pruebas real antes de aceptarla. Estas demostraciones ensenan el formato de la codificacion agentica: como usar herramientas, cuando ejecutar pruebas y que aspecto tiene una solucion correcta.
 
-El entrenamiento consta de tres etapas. La primera consistió en demostraciones semilla: GLM-5.3, un modelo abierto de 744B parámetros de Z.AI servido localmente, generó aproximadamente 1.875 trayectorias de codificación, cada una verificada ejecutando la suite de tests real antes de aceptarla; estas demostraciones enseñaron el formato del trabajo agéntico (uso de herramientas, cuándo ejecutar tests, qué constituye una solución válida). La segunda etapa fue aprendizaje por refuerzo sobre 237 problemas de ingeniería de software seleccionados por ser parcialmente resolubles pero no fiables; se aplicaron 145 lotes de GRPO *on-policy*, reforzando únicamente las soluciones que hacían pasar los tests ocultos. La tercera etapa consistió en comprobaciones de generalización en cada frontera de etapa sobre problemas nunca vistos.
-
-En cuanto a datos, se utilizó una porción de NVIDIA Nemotron-Post-Training-Dataset-v2 (instrucciones generales, salida estructurada y uso de herramientas), el conjunto semilla destilado de GLM-5.3 y una mezcla de conjuntos abiertos de problemas de ingeniería de software como pool de práctica para el RL. La fase de refuerzo no empleó datos estáticos: el modelo generaba intentos nuevos en cada lote y solo los resultados verificados por tests se convertían en señal de entrenamiento. Los autores afirman haber publicado su protocolo de descontaminación y que ningún problema de los benchmarks se solapa con los datos de entrenamiento.
+La segunda etapa es aprendizaje por refuerzo sobre 237 problemas de ingenieria de software seleccionados (resolubles de forma intermitente por el modelo). Se emplearon 145 lotes de GRPO on-policy: cada intento se reforzaba solo si hacia pasar las pruebas ocultas reales. La tercera etapa consiste en comprobaciones de generalizacion en cada frontera de etapa, con problemas nunca vistos. Los datos generales de instruccion, salida estructurada y uso de herramientas provienen de NVIDIA Nemotron-Post-Training-Dataset-v2, y el pool de practica de RL se compone de conjuntos abiertos de problemas de ingenieria de software. La fase de RL no uso datos estaticos: el modelo generaba intentos nuevos en cada lote y solo los resultados verificados por pruebas se convertian en senal de entrenamiento. El modelo emplea la plantilla de chat de Qwen3.5 con *interleaved thinking* y el formato de llamada a herramientas `qwen3_coder`. Existe tambien una cabeza de decodificacion especulativa (MTP) para acelerar la inferencia.
 
 ## Capacidades
 
-- Investigación y corrección de bugs en repositorios reales: explora el código, localiza el fallo, escribe un parche y ejecuta los tests dentro de un contenedor sandbox.
-- Razonamiento intercalado entre llamadas a herramientas (*interleaved thinking*), similar al de modelos de razonamiento de mayor tamaño.
-- Uso de herramientas y *function calling* mediante el formato `qwen3_coder`.
-- Ejecución de comandos en terminal dentro del bucle agéntico.
-- Razonamiento multi-paso orientado a tareas de ingeniería de software de extremo a extremo.
-- Generación de código y edición de ficheros en proyectos existentes.
-- Seguimiento de instrucciones: la model card reporta una mejora en IFEval respecto al modelo base (84,66 a 87,21).
-- Despliegue en hardware de consumo: aproximadamente 8 GB de VRAM en BF16 y aproximadamente 5 GB en NVFP4.
-- Capacidades conversacionales y de instrucciones generales heredadas del ajuste con Nemotron-Post-Training-Dataset-v2.
-- Capacidades multilingües: no disponible.
+- Generacion de texto y razonamiento general, con modo de pensamiento intercalado entre llamadas a herramientas.
+- Codificacion agentica: exploracion de repositorios, lectura de codigo defectuoso, escritura de parches y ejecucion de pruebas para autoverificacion.
+- Uso de herramientas (*tool calling* / *function calling*) en el formato `qwen3_coder`.
+- Razonamiento multi-paso y bucles de agente dentro de entornos de contenedor aislados.
+- Seguimiento de instrucciones (IFEval de 87,21, superior al modelo base).
+- Capacidades generales de conocimiento (MMLU-Pro del 70,0%).
+- Soporte de decodificacion especulativa mediante cabeza MTP.
+- Capacidades multilingues: no especificadas en la informacion disponible (heredadas del modelo base Qwen3.5-4B, pero sin detalle).
 
 ## Casos de uso
 
-- Corrección automática de bugs en integración continua: el modelo puede recibir un repositorio con tests fallidos, localizar la causa, proponer un parche y validarlo ejecutando la suite de tests antes de abrir una pull request.
-- Agente de mantenimiento de dependencias: dado un repositorio con una actualización de librería que rompe la compilación, el modelo explora los puntos de ruptura, aplica cambios y verifica el resultado en un contenedor, encajando en el mismo bucle para el que fue entrenado.
-- Asistente de desarrollo en portátil: con aproximadamente 8 GB de VRAM en BF16 permite trabajar sin conexión a servicios externos, útil en entornos con restricciones de confidencialidad del código.
-- Resolución de incidencias etiquetadas en gestores de tickets: el modelo puede tomar la descripción de un bug, navegar al módulo afectado, reproducirlo y generar un parche candidato con evidencia de los tests ejecutados.
-- Automatización de tareas de refactorización acotada: renombrados, extracción de funciones o migraciones de API guiadas por tests existentes que actúan como criterio de aceptación verificable.
-- Generación de tests de regresión: partiendo de un módulo sin cobertura, el modelo puede escribir pruebas, ejecutarlas y corregirlas de forma iterativa hasta que pasen.
-- Agente de terminal para tareas de ingeniería de software en contenedor: la model card reporta resolución de extremo a extremo en 60 tareas reales (Live-60), lo que lo hace apto para pipelines que requieren ejecución de comandos y verificación posterior.
-- Evaluación comparativa interna de modelos de código en equipos de investigación: sirve como referencia de 4B parámetros al medir la relación entre tamaño y capacidad agéntica.
+- Correccion automatica de errores en CI/CD: el modelo puede recibir un fallo de compilacion o de pruebas, explorar el repositorio, localizar la causa, escribir un parche y ejecutar la suite de pruebas para confirmar la correccion antes de abrir una pull request. Es adecuado por su entrenamiento especifico en este bucle y por su contexto de 131.072 tokens.
+- Mantenimiento de repositorios legacy: dado un codigo base grande y poco documentado, el modelo puede navegar por los ficheros, entender dependencias y proponer cambios acotados, verificandolos con las pruebas existentes.
+- Asistente de desarrollo en local para portatiles: con ~8 GB de VRAM en BF16 o ~5 GB en NVFP4, puede desplegarse en una GPU de consumo y ofrecer un agente de codigo sin enviar codigo propietario a servicios externos.
+- Triaje y reproduccion de incidencias: el modelo puede leer un informe de error, reproducir el fallo en un contenedor, aislar el componente afectado y documentar la causa raiz con el parche propuesto.
+- Generacion de pruebas de regresion: tras corregir un error, puede escribir pruebas que capturen el caso y ejecutarlas para validar que el comportamiento queda fijado.
+- Automatizacion de tareas de refactorizacion acotadas: renombrados, migraciones de API o eliminacion de codigo muerto, con verificacion mediante pruebas en cada paso.
+- Educacion y prototipado de agentes: por su tamano y licencia Apache-2.0, sirve como banco de pruebas para investigar bucles de agente y RL con verificacion por pruebas en hardware asequible.
 
 ## Benchmarks y rendimiento
 
-Los datos proceden exclusivamente de la model card. La comparación se establece frente al modelo base Qwen3.5-4B. Los valores marcados como TBD no estaban publicados en la información disponible.
+Segun la model card del autor (el modelo fue renombrado a Aztec-Coder-4B):
 
-| Benchmark | Qwen3.5-4B (base) | JSBAI-Coder-4B | JSBAI-Coder-4B-NVFP4 |
+| Benchmark | Qwen3.5-4B (base) | Aztec-Coder-4B | Aztec-Coder-4B-NVFP4 |
 |---|---|---|---|
-| Test de generalización (121 bugs no vistos, verificado con tests) | 10,1% | 82,9% | próximamente |
-| Live-60 (60 tareas reales de ingeniería resueltas en contenedores) | 15,0% | 21,7% | próximamente |
-| Seguimiento de instrucciones (IFEval) | 84,66 | 87,21 | próximamente |
-| MMLU-Pro | TBD | TBD | próximamente |
-| Terminal-Bench 2.1 | TBD | TBD | próximamente |
+| Generalization test (121 errores no vistos, verificados con pruebas) | 10,1% | 82,9% | 38,0% (subconjunto de 32 instancias) |
+| Live-60 (60 tareas reales resueltas de extremo a extremo en contenedores) | 15,0% | 21,7% | 15,0% |
+| IFEval (seguimiento de instrucciones) | 84,66 | 87,21 | 86,37 |
+| MMLU-Pro | 64,0% | 70,0% | 66,85% |
+| Terminal-Bench 1.0 (core, 80 tareas) | 33,8% | 33,8% | 18,8% |
+| Terminal-Bench 2.1 (89 tareas) | pendiente | pendiente | pendiente |
 
-La model card indica que la puntuación de seguimiento de instrucciones mejoró respecto al modelo base, y que los autores no observaron una pérdida de calidad general a cambio de las ganancias en codificación.
+El autor indica que la cuantizacion NVFP4 reduce aproximadamente a la mitad la capacidad de generalizacion (12/32 en el subconjunto de 32 instancias empleado en sus comparaciones). Tambien declara un protocolo de descontaminacion publicado: ninguno de los problemas de benchmark se solapa con los datos de entrenamiento.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 8 GB en BF16; aproximadamente 5 GB en la variante cuantizada NVFP4 (datos declarados por el autor). La cuantía de pesos en BF16 para 4,2B parámetros es coherente con esa cifra.
-- GPU recomendadas: no se especifican modelos concretos en la información disponible. Por el perfil de memoria, encaja en GPU de consumo con 8-12 GB de VRAM y en cualquier GPU de centro de datos (A100, H100) con holgura.
-- Cabe en GPU de consumo: sí, según el autor, con aproximadamente 8 GB en BF16. No se detalla una lista de modelos.
-- Opciones de despliegue: el ejemplo oficial de la model card usa vLLM (`LLM(model="jsbaicenter/JSBAI-Coder-4B", max_model_len=131072)`) con el parser de razonamiento `qwen3` y el formato de tool calling `qwen3_coder`. La librería declarada es transformers. No se documentan instrucciones para llama.cpp, Ollama, TGI ni otros motores, ni variantes GGUF.
-- Latencia y throughput estimados: no disponibles. El autor menciona una cabeza de decodificación especulativa basada en MTP para acelerar la inferencia, distribuida por la misma organización, pero sin cifras.
-- Parámetros de muestreo recomendados: temperatura 1.0 y top_p 0.95.
+- VRAM estimada: ~8 GB en BF16; ~5 GB en la variante NVFP4.
+- GPU recomendadas: cualquier GPU de consumo con al menos 8 GB de VRAM para BF16 (por ejemplo, RTX 3060 Ti/4060 Ti de 8 GB, RTX 4070, RTX 4080, RTX 4090) y ~5 GB para NVFP4 (RTX 4060, RTX 3060 de 12 GB, etc.). Para despliegues de mayor concurrencia, A100 o H100.
+- Cabe en GPU de consumo: si, tanto en BF16 como en NVFP4.
+- Opciones de despliegue: vLLM (ejemplo oficial con `max_model_len=131072`, parser de razonamiento `qwen3` y formato de herramientas `qwen3_coder`); transformers. El autor no menciona llama.cpp, Ollama ni TGI en la informacion disponible.
+- Latencia y throughput: no disponibles. Existe una cabeza de decodificacion especulativa MTP para acelerar la inferencia, sin cifras publicadas.
+- Muestreo recomendado: temperatura 1.0, top_p 0.95.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Rendimiento destacado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JSBAI-Coder-4B | 4,2B | 131.072 tokens en el ejemplo de despliegue | Codificación agéntica con RL verificado por tests | Apache-2.0 | Hugging Face (jsbaicenter), 0 descargas y 0 likes en la fecha de consulta |
-| Qwen3.5-4B | 4B (modelo base) | no disponible | Modelo generalista de texto | Apache-2.0 | Hugging Face (Qwen) |
-| Jan-Code-4B | 4B | no disponible | Codificación ligera para inferencia local rápida | no disponible | Hugging Face (janhq) y GGUF en local-ai-zone; 15.262 descargas y 70 likes en la fuente consultada |
+| JSBAI-Coder-4B (Aztec-Coder-4B) | ~4B | 131.072 | 82,9% en 121 errores no vistos; MMLU-Pro 70,0% | Apache-2.0 | Hugging Face (jsbaicenter) |
+| Qwen3.5-4B (base) | ~4B | 131.072 | 10,1% en el mismo test; MMLU-Pro 64,0% | Apache-2.0 | Hugging Face (Qwen) |
+| GLM-5.3 (generador de demostraciones) | 744B | No disponible | No disponible | No disponible en la informacion | Servido localmente por el autor |
 
-No se dispone de datos de benchmarks comparables entre Jan-Code-4B y JSBAI-Coder-4B en la información proporcionada, por lo que no es posible comparar su rendimiento real. Jan-Code-4B está ajustado sobre Jan-v3-4B-base-instruct y se orienta a subtareas de código bien acotadas con baja latencia, mientras que JSBAI-Coder-4B se orienta explícitamente a bucles agénticos completos con verificación por tests.
+No se dispone en la informacion proporcionada de resultados de otros modelos de codificacion agentica de tamano similar para una comparacion directa.
 
 ## Limitaciones y advertencias
 
-- Capacidad de conocimiento limitada por el tamaño: un modelo de 4B parámetros mantiene el conocimiento factual del modelo base; hechos poco frecuentes y razonamiento en dominios muy especializados siguen favoreciendo a modelos mayores, según reconoce el propio autor.
-- Ámbito de despliegue restringido: el bucle agéntico se optimizó para entornos de contenedor en sandbox; otros contextos de despliegue no han sido probados.
-- Comportamiento de seguridad heredado: las conductas de seguridad proceden del modelo base, ya que la fase de RL optimizó únicamente el paso de tests y no incluyó entrenamiento específico de seguridad. Debe revisarse la model card de Qwen3.5-4B.
-- Riesgo de alucinación: no se documenta ninguna evaluación específica de alucinación en la información disponible.
-- Idiomas soportados: no disponibles; no se detalla cobertura multilingüe ni evaluación por idioma.
-- Licencia: Apache-2.0, lo que permite uso comercial, modificación y redistribución, con las obligaciones habituales de la licencia (conservación de avisos y del texto de la licencia).
-- Datos de benchmarks incompletos: MMLU-Pro y Terminal-Bench 2.1 figuran como TBD, y la variante NVFP4 no tiene resultados publicados, por lo que no es posible validar la degradación por cuantización.
-- Madurez del ecosistema: las variantes cuantizada y de decodificación especulativa se anuncian como disponibles en la misma organización, pero no había resultados publicados en el momento de la consulta. El informe técnico que debe cubrir la metodología, las ablaciones y los resultados negativos sobre destilación con logprobs del profesor está anunciado como "coming soon".
-- Adopción nula en el momento de la consulta: 0 descargas y 0 likes en Hugging Face, sin validación independiente de los resultados publicados por los autores.
-- Fecha de creación del repositorio: 24 de septiembre de 2026, con última actualización el mismo día; el proyecto es muy reciente.
+- Un modelo de 4B tiene el conocimiento de un 4B: hechos poco comunes y razonamiento en dominios extremos siguen favoreciendo a modelos mayores.
+- El bucle de agente se ajusto para entornos de contenedor aislados; otros contextos de despliegue no han sido probados.
+- Los comportamientos de seguridad provienen del modelo base; la fase de RL optimizo unicamente el paso de pruebas, sin entrenamiento especifico de seguridad. Conviene revisar la model card de Qwen3.5-4B.
+- La cuantizacion NVFP4 reduce aproximadamente a la mitad la capacidad de generalizacion en el subconjunto evaluado (38,0% frente a 82,9%).
+- Riesgo de alucinacion inherente a modelos de este tamano; la verificacion mediante ejecucion de pruebas mitiga pero no elimina el riesgo en produccion.
+- Idiomas soportados no documentados; el rendimiento fuera del ingles no esta caracterizado en la informacion disponible.
+- El modelo ha sido renombrado a Aztec-Coder-4B; conviene usar el repositorio nuevo para descargas y citas.
+- Licencia Apache-2.0, permisiva para uso comercial, heredada del modelo base.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/jsbaicenter/JSBAI-Coder-4B
-- Organización en Hugging Face: https://huggingface.co/jsbaicenter/models
-- Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
-- Dataset NVIDIA Nemotron-Post-Training-Dataset-v2: https://huggingface.co/datasets/nvidia/Nemotron-Post-Training-Dataset-v2
-- Organización en GitHub del JSBCAI: https://github.com/JSBAICenter
-- NVIDIA ModelOpt (herramienta de cuantización NVFP4): https://github.com/NVIDIA/Model-Optimizer
-- Jan-Code-4B (modelo comparable) documentación: https://www.jan.ai/docs/desktop/jan-models/jan-code-4b
-- Jan-Code-4B en Hugging Face: https://huggingface.co/janhq/Jan-code-4b
-- Ficha de Jan-Code-4B con GGUF en local-ai-zone: https://local-ai-zone.github.io/models/jan-code-4b.html
-- Informe técnico de JSBAI-Coder-4B: anunciado como "coming soon", sin URL disponible.
+- Repositorio Hugging Face (original): https://huggingface.co/jsbaicenter/JSBAI-Coder-4B
+- Repositorio Hugging Face (nuevo nombre): https://huggingface.co/jsbaicenter/Aztec-Coder-4B
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
+- Dataset de post-entrenamiento: https://huggingface.co/datasets/nvidia/Nemotron-Post-Training-Dataset-v2
+- NVIDIA ModelOpt (cuantizacion NVFP4): https://github.com/NVIDIA/Model-Optimizer
+- Informe tecnico: pendiente de publicacion segun la model card

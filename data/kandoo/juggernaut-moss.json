@@ -30,8 +30,8 @@
     "diffusers:MOSSImagePipeline",
     "region:us"
   ],
-  "likes": 14,
-  "downloads_30d": 1278,
+  "likes": 17,
+  "downloads_30d": 1714,
   "trending_score": 0,
   "parameters": 5082308624,
   "parameters_human": "5.08B",
@@ -53,31 +53,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "FR | Kandoo - L’apprentissage de la propreté simplifié",
-      "url": "https://kandoo.eu/fr/",
-      "snippet": "Notre livre d’histoires, notre tableau de récompenses et notre application de l’apprentissage de la propreté Kandoo vous proposent …"
-    },
-    {
-      "title": "Kandoo/Juggernaut-XL-Ragnarok at main - Hugging Face",
-      "url": "https://huggingface.co/Kandoo/Juggernaut-XL-Ragnarok/tree/main",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Amazon.fr : Kandoo",
-      "url": "https://www.amazon.fr/kandoo/s?k=kandoo",
-      "snippet": "Kandoo - Lingettes Melon - Lingettes Humides Jetables Adaptées aux Enfants - Douceur Extrême - Efficacité Supérieure - Testées …"
-    },
-    {
-      "title": "Kandoo (@Kandoo_AI) / X",
-      "url": "https://x.com/Kandoo_AI",
-      "snippet": "I made a 4-minute musical about the history of Juggernaut 😂 Then Claude turned the whole thing into a code-driven motion design music video. No AI video generation."
-    },
-    {
-      "title": "KANDOO SENSITIVE LINGETTES TOILETTE - 60 Lingettes",
-      "url": "https://pharmacie-citypharma.fr/fr/kandoo-sensitive-lingettes-toilette-60-lingettes",
-      "snippet": "Nov 9, 2026 · Et pour finir, les fibres absorbantes et la surface spongieuse absorbent les saletés pour laisser la peau sèche au …"
-    }
-  ]
+  "sources": []
 }

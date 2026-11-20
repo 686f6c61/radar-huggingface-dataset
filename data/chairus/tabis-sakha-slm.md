@@ -2,100 +2,97 @@
 
 ## Resumen
 
-Tabis 1.0 (en yakuto, «Табыс») es una familia de modelos de lenguaje de pequeno tamano (SLM) derivada por ajuste fino de las arquitecturas abiertas Qwen 3.5, en dos variantes de aproximadamente 0,8 y 4 mil millones de parametros, y publicada en formato GGUF cuantizado Q4_K_M. El proyecto lo firma Saryal Pavlovich Nikolaev, estudiante de 11º grado de la Namskaya Ulus Gymnasium, con la supervision cientifica de Nikolai Semenovich Sidorov, en la Republica de Saja (Yakutia), y esta orientado a un unico objetivo: dotar al yakuto (sajá, codigo ISO `sah`), una lengua de bajos recursos, de un modelo capaz de traducir y conversar localmente.
+Tabis 1.0 es una familia de modelos de lenguaje de pequeno tamano (SLM) desarrollada por Sarial Pavlovich Nikolaev, estudiante de secundaria de la Namskaya Ulusnaya Gymnasium (Republica de Saja, Yakutia, Rusia), en el marco del programa cientifico nacional "Shag v budushchee". Su objetivo es la adaptacion al yakut (sajá), una lengua turquica de bajos recursos hablada por unas 450.000 personas, mediante ajuste fino de las arquitecturas abiertas Qwen 3.5 4B y Qwen 3.5 0.8B. El modelo se distribuye principalmente en formato GGUF Q4_K_M para ejecucion local sin conexion.
 
-El problema que aborda es el de las lenguas con corpus paralelos minimos: en lugar de preentrenar, el autor parte de pesos ya entrenados y aplica QLoRA de 4 bits sobre el corpus publico `ailabykt/sakha-russian-parallel`, todo ello en una unica GPU de consumo (NVIDIA GeForce RTX 5060 con 8 GB de VRAM). El resultado son artefactos ligeros (504 MB para la variante de 0,8B y 2,52 GB para la de 4B en Q4_K_M) pensados para inferencia totalmente offline en ordenadores personales, sin API en la nube.
+La relevancia del proyecto es doble: por un lado, demuestra que es posible realizar un ajuste fino con QLoRA 4-bit en una unica GPU de consumo (NVIDIA RTX 5060, 8 GB de VRAM) sobre un corpus paralelo ruso-yakut; por otro, documenta de forma transparente las limitaciones estructurales del enfoque, en particular la incapacidad del tokenizador de Qwen para representar las letras yakutas `Ҕ, Ҥ, Ү, Ө, Һ`, que se fragmentan en bytes y degradan la calidad de la generacion en yakut.
 
-Su relevancia es doble: por un lado, demuestra que la adaptacion a una lengua de bajos recursos es viable con hardware domestico y un presupuesto de datos reducido; por otro, conviene leerlo como lo que es, un proyecto de investigacion escolar con 0 descargas y sin resultados en benchmarks estandar, de modo que su utilidad practica esta por validar de forma independiente.
+La version 1.0 se declara explicitamente como un experimento de investigacion. El autor indica que la direccion yakut → ruso funciona razonablemente bien, mientras que ruso → yakut y el dialogo libre presentan artefactos (repeticiones, pseudo-palabras, fallos gramaticales). El repositorio incluye tanto el modelo de 4B como el de 0.8B, con 752 millones de parametros reportados en safetensors para la variante pequena.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only de la familia Qwen 3.5; ajuste fino con QLoRA de 4 bits |
-| Parametros totales | 752.393.024 en los pesos safetensors del repositorio (variante 0,8B); la variante 4B ronda los 4.000 millones, sin recuento exacto disponible |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF Q4_K_M (unica cuantizacion publicada) |
-| Idiomas soportados | Saja/yakuto (`sah`) y ruso (`ru`) |
-| Licencia | Apache 2.0 (la model card anade ademas una restriccion a uso no comercial y educativo, ver limitaciones) |
-| Formato de pesos | GGUF (`tabis1.0_4b.gguf`, `tabis1.0_0.8b.gguf`); el repositorio tambien contiene safetensors, con un total de 3,2 GB |
+| Arquitectura | Transformer decoder-only (derivada de Qwen 3.5) |
+| Parametros totales | 4.0B (variante grande) y 752.393.024 (variante pequena, safetensors) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (en el ejemplo de llama.cpp se usa `-c 2048`) |
+| Tipos de cuantizacion | GGUF Q4_K_M (unico formato publicado) |
+| Idiomas soportados | sajá (sah), ruso (ru) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (Q4_K_M); safetensors presente en el repo (752M parametros) |
 
 ## Arquitectura y entrenamiento
 
-La base es un transformer decoder-only de la familia Qwen 3.5, tomado como modelo preentrenado y adaptado mediante QLoRA de 4 bits, es decir, congelando los pesos originales e insertando adaptadores de bajo rango entrenados en precision reducida. El autor declara dos puntos de partida, Qwen 3.5 4B y Qwen 3.5 0.8B, que dan lugar a dos artefactos independientes; no se documenta si el ajuste se hizo de forma conjunta ni con que configuracion de rango, alpha o learning rate. Todo el entrenamiento se ejecuto en local sobre una NVIDIA GeForce RTX 5060 de 8 GB de VRAM.
+El modelo parte de las arquitecturas abiertas Qwen 3.5 4B y Qwen 3.5 0.8B, ambas transformer decoder-only con atencion estandar. El ajuste se realizo mediante QLoRA en 4 bits sobre una unica GPU de consumo (RTX 5060, 8 GB de VRAM), lo que permite entrenar adaptadores de bajo rango sobre los pesos base cuantizados. No se especifica el numero de tokens de entrenamiento ni la composicion exacta del dataset mas alla del corpus paralelo `ailabykt/sakha-russian-parallel`.
 
-El corpus de adaptacion es un unico dataset publico de frases paralelas ruso-yakuto, `ailabykt/sakha-russian-parallel`. No se especifica el numero de tokens vistos, la composicion exacta del dataset, ni si hubo etapas posteriores de RLHF, DPO o ajuste de instrucciones; la model card solo menciona la adaptacion y el ajuste de traduccion. Tampoco se documentan innovaciones tecnicas adicionales (atencion lineal, decodificacion especulativa, modo de razonamiento explicito), por lo que a efectos practicos debe asumirse el comportamiento estandar de la arquitectura base.
+No se documenta el uso de RLHF, DPO ni tecnicas de alineacion adicionales. La innovacion tecnica principal no es arquitectonica sino metodologica: la adaptacion de un modelo multilingue generico a una lengua de bajos recursos con hardware de consumo y la publicacion abierta de los artefactos. El autor identifica como causa raiz de los fallos en yakut la tokenizacion por bytes de las letras especificas del alfabeto sajá, con un factor de fragmentacion estimado entre 5.0 y 8.0 tokens por palabra, y anuncia un pipeline 1.1/2.0 con vocabulario ampliado y 50.000 dialogos limpios.
 
 ## Capacidades
 
-- Traduccion bidireccional ruso-yakuto y yakuto-ruso, que es la funcion principal declarada del modelo.
-- Generacion de texto y conversacion multi-turno en yakuto y en ruso.
-- Respuestas sobre cultura y contexto local, segun la model card («cuestiones culturales»), sin detalle de la cobertura real.
-- Perfil de identidad fijado: el modelo reproduce de forma consistente su autoria y adscripcion institucional (100% en la prueba interna del autor).
-- Ejecucion totalmente offline en formato GGUF mediante llama.cpp o LM Studio, sin dependencia de APIs externas.
-- No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, vision, audio ni modo de pensamiento extendido.
+- Generacion de texto y traduccion bidireccional ruso ↔ yakut, con calidad notablemente superior en la direccion yakut → ruso.
+- Dialogo conversacional multi-turno (con limitaciones documentadas en yakut).
+- Respuesta a preguntas culturales y de identidad del proyecto (el autor reporta 100% de precision en el benchmark de autoidentificacion).
+- Ejecucion local sin conexion en CPU y GPU mediante llama.cpp y LM Studio.
+- Formato GGUF compatible con el ecosistema llama.cpp y con endpoints compatibles con la API de OpenAI (segun tags del repositorio).
+- No se documenta soporte de tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito.
 
 ## Casos de uso
 
-- Traduccion de documentacion administrativa: el modelo puede convertir avisos, formularios y comunicaciones oficiales entre ruso y yakuto en local, util para oficinas publicas de la Republica de Saja que no pueden enviar texto a servicios en la nube por motivos de confidencialidad.
-- Preservacion linguistica y edicion de materiales: traduccion asistida de cuentos, textos escolares o material etnografico hacia el yakuto, con revision humana obligatoria dado el reducido corpus de entrenamiento.
-- Ensenanza bilingue en aulas: la variante de 0,8B (504 MB, 1-2 GB de RAM) puede ejecutarse en netbooks y equipos modestos de centros educativos para practicar traduccion o resolver dudas lexicales sin conexion.
-- Prototipado de asistentes conversacionales en yakuto: punto de partida para experimentar con interfaces de chat en esta lengua antes de invertir en un modelo mayor o en un corpus propio.
-- Investigacion sobre adaptacion de lenguas de bajos recursos: replicar el pipeline QLoRA de 4 bits sobre una GPU de 8 GB sirve como caso de estudio docente sobre costes y limites del ajuste fino eficiente.
-- Despliegue en entornos aislados (air-gapped): al ser un GGUF sin dependencias de red, encaja en equipos de campo, portatiles sin conectividad o escenarios de demostracion donde no se permite trafico saliente.
-- Generacion de pares paralelos sinteticos: usar la variante de 4B para producir candidatos de traduccion que luego se filtren manualmente y alimenten un corpus mayor, con el riesgo de propagar errores del modelo.
+- Traduccion yakut → ruso de documentos y textos: es la direccion con mejor calidad reportada; util para digitalizar y hacer accesibles textos en sajá a lectores rusoparlantes.
+- Preservacion linguistica y educacion: el modelo puede desplegarse en aulas y bibliotecas de Yakutia sin conexion a internet, en equipos con 1-2 GB de RAM (variante 0.8B) o 4-6 GB (variante 4B).
+- Asistencia a la traduccion humana: como borrador inicial en flujos de traduccion profesional, con revision posterior obligatoria dado el ruido del corpus y los artefactos en ruso → yakut.
+- Investigacion en lenguas de bajos recursos: el repositorio sirve como caso de estudio reproducible de QLoRA sobre hardware de consumo y de los limites del tokenizador en lenguas con alfabetos no latinos.
+- Despliegue en dispositivos de gama baja: la variante 0.8B en Q4_K_M (504 MB) cabe en netbooks y moviles, permitiendo demos y prototipos offline.
+- Experimentacion educativa: el proyecto esta pensado como material didactico para estudiantes que quieran replicar un pipeline de ajuste fino con recursos limitados.
 
 ## Benchmarks y rendimiento
 
-El autor publica una auditoria interna de 150 pruebas en 6 categorias, no un conjunto de benchmarks academicos estandar. Se reproduce tal cual, sin verificacion independiente:
+| Metrica | Resultado reportado |
+|---|---|
+| Pass rate en benchmark propio de 150 tests (6 categorias) | 95.3% |
+| Velocidad de generacion en RTX 5060 | 10-12.6 tokens/s |
+| Velocidad en LM Studio | hasta 89 tokens/s |
+| Precision de autoidentificacion (Identity) | 100% |
+| Latencia hasta el primer token (TTFT) | 0.12-0.28 s |
 
-| Prueba | Resultado | Notas |
-|---|---|---|
-| Tasa de exito global (Pass Rate) | 95,3% | Auditoria propia de 150 pruebas en 6 categorias; no es un benchmark estandar |
-| Precision de identidad (self-awareness) | 100% | Verifica que el modelo recita autor e institucion |
-| Latencia hasta el primer token (TTFT) | 0,12-0,28 s | Medido en RTX 5060 |
-| Velocidad de generacion | 10-12,6 tok/s en llama.cpp; hasta 89 tok/s en LM Studio | Cifras del autor; la discrepancia entre ambos valores no se explica en la model card |
-| MMLU, HumanEval, GSM8K, Flores-200, BLEU/COMET de traduccion | no disponible | No se han publicado resultados de benchmarks en la informacion disponible |
+No se han publicado resultados en benchmarks estandar (MMLU, HumanEval, GSM8K, FLORES, etc.) en la informacion disponible. Las cifras anteriores proceden del benchmark interno del autor y no son comparables con evaluaciones academicas independientes.
 
 ## Requisitos de hardware
 
-- Variante 0,8B en Q4_K_M: 504 MB de peso, 1-2 GB de RAM/VRAM estimados por el autor; cabe en cualquier portatil actual y en muchos moviles y SBC.
-- Variante 4B en Q4_K_M: 2,52 GB de peso, 4-6 GB de RAM/VRAM estimados; cabe en GPUs de consumo con 6-8 GB (RTX 3060, RTX 4060, RTX 5060) y en CPU con 8 GB de RAM.
-- GPU de referencia usada por el autor: NVIDIA GeForce RTX 5060 de 8 GB, tanto para el entrenamiento QLoRA como para la inferencia medida.
-- Despliegue: LM Studio (ruta recomendada por el autor) y llama.cpp en consola; cualquier runtime compatible con GGUF deberia poder cargar los ficheros, aunque no se documentan pruebas con vLLM, TGI u Ollama.
-- Parametros de inferencia sugeridos: temperature 0,2 y repetition penalty 1,15; contexto de ejemplo en el comando de llama.cpp fijado en 2048 tokens (`-c 2048`), sin que se declare la ventana maxima real del modelo.
-- Throughput declarado: 10-12,6 tok/s en llama.cpp y hasta 89 tok/s en LM Studio sobre la RTX 5060; TTFT de 0,12-0,28 s. No hay mediciones independientes.
+- VRAM/RAM estimada: 4-6 GB para `tabis1.0_4b.gguf` (2.52 GB en Q4_K_M) y 1-2 GB para `tabis1.0_0.8b.gguf` (504 MB en Q4_K_M).
+- GPU recomendadas: cualquier GPU con al menos 6 GB de VRAM para la variante 4B; la variante 0.8B funciona en CPU. El autor entreno en una RTX 5060 de 8 GB.
+- Cabe en GPU de consumo: si, en RTX 3060/4060/5060 y superiores para el 4B; el 0.8B cabe en practicamente cualquier equipo.
+- Opciones de despliegue: llama.cpp (CLI), LM Studio; el tag `endpoints_compatible` sugiere compatibilidad con servidores de inferencia estilo OpenAI, aunque no se detalla la integracion con vLLM o TGI.
+- Latencia y throughput: TTFT de 0.12-0.28 s y 10-12.6 tokens/s en RTX 5060 con llama.cpp; hasta 89 tokens/s en LM Studio segun el autor.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Notas |
-|---|---|---|---|---|---|---|
-| Tabis 1.0 (0,8B) | 752.393.024 | no disponible | sah, ru | Apache 2.0 (con clausula no comercial en la model card) | GGUF Q4_K_M, safetensors | Ajuste QLoRA sobre Qwen 3.5 0.8B con corpus paralelo ruso-yakuto |
-| Tabis 1.0 (4B) | ~4.000 millones | no disponible | sah, ru | Apache 2.0 (con clausula no comercial en la model card) | GGUF Q4_K_M | Misma receta sobre Qwen 3.5 4B; 2,52 GB en disco |
-| Qwen 3.5 0.8B (base) | ~0,8 mil millones | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible | Modelo generalista sin adaptacion al yakuto; sirve de referencia de partida |
-| Qwen 3.5 4B (base) | ~4 mil millones | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible | Modelo generalista; el autor lo usa como base de la variante grande |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
+|---|---|---|---|---|---|
+| Tabis 1.0 (4B) | 4.0B | no disponible | sah, ru | Apache 2.0 | GGUF |
+| Tabis 1.0 (0.8B) | 752M | no disponible | sah, ru | Apache 2.0 | GGUF, safetensors |
+| Qwen 3.5 4B (base) | 4.0B | no disponible | multilingue | Apache 2.0 | safetensors, GGUF |
+| Qwen 3.5 0.8B (base) | 0.8B | no disponible | multilingue | Apache 2.0 | safetensors, GGUF |
 
-No se dispone de datos publicados de otros SLM especializados en yakuto en la informacion proporcionada, por lo que no es posible una comparativa de rendimiento entre alternativas equivalentes.
+No se dispone de datos de rendimiento comparables con otros modelos especializados en yakut en la informacion proporcionada. La comparacion con los modelos base Qwen 3.5 es la referencia natural, ya que Tabis se obtiene por ajuste fino de estos.
 
 ## Limitaciones y advertencias
 
-- Contradiccion de licencia: el metadato declara Apache 2.0, pero el cuerpo de la model card restringe el uso a fines no comerciales y educativos. Antes de un uso comercial hay que aclarar cual prevalece, ya que Apache 2.0 permite explicitamente el uso comercial.
-- Corpus de entrenamiento unico y de dominio limitado (frases paralelas ruso-yakuto): es previsible un rendimiento pobre fuera del registro de traduccion, y no se documenta ninguna etapa de ajuste de instrucciones.
-- Riesgo alto de alucinacion en contenidos culturales o factuales: un modelo de 0,8B ajustado con QLoRA de 4 bits sobre un dataset pequeno no tiene capacidad fiable de fundamentar afirmaciones.
-- Doble cuantizacion (QLoRA 4 bits en entrenamiento y Q4_K_M en distribucion): la perdida acumulada de calidad no se ha medido frente a los pesos base.
-- Los unicos resultados disponibles son una auditoria interna del propio autor, sin conjunto de test publico, sin semilla ni protocolo reproducible y sin comparacion con modelos de referencia.
-- Inconsistencia en las cifras de velocidad (10-12,6 tok/s frente a 89 tok/s) que sugiere mediciones en condiciones no homogeneas.
-- Longitud de contexto no declarada; el ejemplo oficial usa 2048 tokens, lo que limita casos de uso con documentos largos.
-- Cobertura linguistica reducida a yakuto y ruso; no se garantiza calidad en otros idiomas pese a heredar la base multilingue de Qwen.
-- Proyecto escolar con 0 descargas y 0 valoraciones en el momento de la ficha: no hay evidencia de uso en produccion ni de validacion por terceros.
-- El «perfil de identidad» reforzado al 100% es un artefacto de condicionamiento, no una capacidad: puede rigidizar las respuestas y no debe confundirse con calidad del modelo.
-- No se documenta el proceso de filtrado o limpieza del dataset paralelo, por lo que pueden persistir sesgos y errores de traduccion del corpus original.
+- Estado experimental: el propio autor califica la version 1.0 como "muy cruda" y recomienda usar alternativas o esperar a Tabis 1.1.
+- Calidad asimetrica: yakut → ruso funciona bien; ruso → yakut y el dialogo libre generan repeticiones de tokens, pseudo-palabras y errores gramaticales.
+- Tokenizacion inadecuada: el tokenizador de Qwen no incluye las letras yakutas `Ҕ, Ҥ, Ү, Ө, Һ`, lo que fragmenta las palabras en bytes (factor 5.0-8.0) y degrada la generacion.
+- Ruido en los datos: el corpus paralelo de entrenamiento contiene errores de OCR y desalineaciones de lineas.
+- Riesgo de alucinacion: elevado en generacion libre y en traduccion ruso → yakut; no apto para produccion sin revision humana.
+- Licencia: Apache 2.0 permite uso comercial segun los terminos de la licencia, pero la model card indica que se distribuye "en fines no comerciales y educativos"; conviene verificar la compatibilidad con el uso previsto.
+- Contexto limitado: no se documenta la ventana nativa; los ejemplos usan 2048 tokens.
+- Idiomas: solo sajá y ruso; no hay soporte documentado de castellano ni de otras lenguas.
+- Sin benchmarks academicos independientes: las cifras de rendimiento provienen de un benchmark interno del autor.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/chairus/tabis-sakha-slm
+- Hugging Face: https://huggingface.co/chairus/tabis-sakha-slm
 - Dataset de entrenamiento: https://huggingface.co/datasets/ailabykt/sakha-russian-parallel
-- LM Studio (runtime recomendado por el autor): https://lmstudio.ai/
-- Paper, blog tecnico o repositorio de codigo: no disponible en la informacion proporcionada
-- Demo en linea: no disponible en la informacion proporcionada
+- Modelo base grande: https://huggingface.co/Qwen/Qwen3.5-4B
+- Modelo base pequeno: https://huggingface.co/Qwen/Qwen3.5-0.8B
+- LM Studio: https://lmstudio.ai/
+- llama.cpp: https://github.com/ggml-org/llama.cpp

@@ -2,107 +2,116 @@
 
 ## Resumen
 
-`l898974766/gomoku` es un modelo de lenguaje decoder-only de tipo `LlamaForCausalLM` entrenado desde pesos aleatorios para jugar al gomoku (cinco en raya) sobre un tablero de 15×15. Lo desarrolla el usuario independiente l898974766 y se publica bajo licencia Apache-2.0. No es un modelo de propósito general: recibe como entrada una codificación textual del estado completo del tablero y devuelve una única coordenada (por ejemplo, `H8`) como siguiente jugada.
+Gomoku es un modelo de lenguaje especializado en jugar al cinco en línea (gomoku) sobre tablero de 15×15, desarrollado por el usuario independiente l898974766 y publicado en Hugging Face bajo licencia Apache 2.0. No es un modelo de propósito general: se trata de un decodificador compacto que recibe la codificación completa del tablero como contexto y genera la coordenada de la siguiente jugada. Su interés radica en que demuestra que una arquitectura MoE funcional de apenas 1.988.096 parámetros puede superar en precisión táctica a versiones anteriores de más de 10 millones de parámetros.
 
-El modelo tiene 8.745.600 parámetros y reutiliza únicamente el tokenizer de SmolLM2-135M-Instruct (revision `12fd25f77366fa6b3b4b768ec3050bf629380bac`), ampliado con tokens de tablero; no emplea los pesos preentrenados de SmolLM2. El entrenamiento se basa en destilación de conocimiento desde un profesor (v66) y datos de partidas, con aumentos por rotación y espejo y supervisión auxiliar punto a punto. Requiere una ventana de contexto de 2048 tokens para codificar el tablero completo.
+La arquitectura es un `MixtralForCausalLM` estándar de seis capas, dimensión oculta 64, cuatro cabezas de atención y FFN de expertos de dimensión 96, con ocho expertos por capa activados todos en cada paso (no hay enrutamiento disperso real). El vocabulario es específico del dominio (15.643 tokens) y la longitud de contexto es de 2.048 tokens, suficiente para codificar el tablero completo más el historial de la partida.
 
-Su relevancia es acotada y experimental: demuestra que un modelo diminuto entrenado desde cero puede aprender a producir jugadas legales y razonables en un dominio cerrado con un protocolo de texto estricto, ejecutable en CPU. El propio autor advierte de que se trata de un experimento a pequeña escala y que no garantiza un nivel cercano a motores profesionales.
+Es relevante ahora porque ejemplifica una tendencia de modelos funcionales ultracompactos que sustituyen capacidad bruta por supervisión estructurada por objetivos (siete grupos de supervisión funcional más una vía de decisión integrada), con un coste de inferencia en CPU de unos 186 ms por jugada en dos hilos. El modelo se distribuye en safetensors F32 y GGUF nativo para Ollama, sin depender de código remoto.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (`LlamaForCausalLM`) |
-| Parametros totales | 8.745.600 |
-| Parametros activos | no aplica (modelo denso) |
-| Longitud de contexto | 2048 tokens (requerido por el cliente de tablero) |
-| Tipos de cuantizacion | F32 (safetensors y GGUF sin cuantizar) |
-| Idiomas soportados | en (el modelo emite coordenadas, no lenguaje natural) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors, GGUF (llama.cpp b6500) |
+| Arquitectura | Transformer decoder tipo Mixtral (MoE funcional, 8 expertos por capa, todos activos) |
+| Parametros totales | 1.988.096 |
+| Parametros activos | 1.988.096 (todos los expertos se computan en cada paso) |
+| Longitud de contexto | 2.048 tokens |
+| Tipos de cuantizacion | F32 (sin cuantización en la publicación actual); se distribuye GGUF nativo F32 |
+| Idiomas soportados | zh, en (etiquetas de la model card); el uso real es generación de coordenadas de tablero |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (`model.safetensors`), GGUF (`gomoku-f32.gguf`) |
+| Capas | 6 |
+| Dimension oculta | 64 |
+| Cabezas de atencion | 4 |
+| Dimension FFN de experto | 96 |
+| Vocabulario | 15.643 tokens |
+| Tamano del repositorio | 0,2 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only estándar con la clase `LlamaForCausalLM`, inicializado desde pesos aleatorios. El tokenizer procede de SmolLM2-135M-Instruct y se ha extendido con tokens específicos del tablero. La entrada es la secuencia de piezas del tablero completo en cuatro direcciones, y la salida es una coordenada en el rango A–O, 1–15, donde `X` representa al jugador actual y `O` al oponente.
+El modelo es un transformer decoder de seis capas con atención multi-cabeza de cuatro cabezas y dimensión oculta 64. La capa FFN se organiza como mezcla de expertos con ocho expertos de dimensión 96 por capa, pero a diferencia de un MoE disperso convencional, los ocho expertos participan en el cálculo de cada token. El autor denomina a esta configuración "MoE funcional": los nombres de los expertos reflejan objetivos de supervisión (relaciones de patrón, posición, prioridad, riesgo, evidencia direccional de patrón, defensa y proactividad), más una octava vía para la decisión integrada. El propio autor advierte que estos nombres no prueban una especialización estrictamente independiente.
 
-El entrenamiento combina un conjunto histórico de entrenamiento con muestras de profesor generadas a partir de aperturas naturales y partidas continuas, aumentos por rotación y espejo, y supervisión auxiliar punto a punto. La técnica declarada es destilación de conocimiento desde un profesor denominado v66, cuyos pesos y datos de entrenamiento no se distribuyen con el paquete. Los pesos se seleccionan únicamente según el conjunto de validación completo. No se documentan fases de RLHF ni DPO.
+El entrenamiento combina supervisión funcional con optimización por recompensa de posición: 256 actualizaciones de recompensa sobre situaciones de tablero más repetición supervisada, conservando el checkpoint de la actualización 256 según validación. Se muestrean 16 acciones del vocabulario completo en línea; las jugadas ilegales reciben recompensa −8, y se otorgan recompensas positivas a victorias inmediatas, bloqueos únicos de cuatro y amenazas fuertes verificables. Además se emplean recompensa esperada exacta, política final del profesor y repetición supervisada. El autor especifica que es un entrenamiento mixto de recompensa de posición y supervisión, no un PPO completo sobre partidas. El conjunto de datos incluye 2.048 posiciones de repetición extraídas de partidas previas, con énfasis en jugadas ilegales y las inmediatamente anteriores, más 128 posiciones de validación difíciles. Los profesores y reglas solo se usan en entrenamiento, anotación y arbitraje, y no se distribuyen en el paquete de inferencia. No hay profesor en tiempo de ejecución, búsqueda, máscara de acciones legales ni corrección de errores.
 
 ## Capacidades
 
-- Generación de una coordenada de jugada a partir de una codificación textual del tablero completo.
-- Producción de jugadas legales en la gran mayoría de los casos: 249/252 en validación, 125/127 en test normal y 63/63 en test denso.
-- Reconocimiento de patrones tácticos inmediatos: 29/32 en situaciones de cinco en raya recién generadas, 32/32 en bloqueos de cuatro únicos y 23/32 cuando debe priorizar formar cinco frente a bloquear un cuatro.
-- Juego en partidas completas: 127/128 jugadas legales en validación con aperturas naturales y partidas continuas.
-- Integración con Ollama mediante un `Modelfile` incluido y con Transformers vía `AutoModelForCausalLM`.
-- Ejecución en CPU sin GPU, gracias a su tamaño reducido (8,7 M de parámetros).
-- No soporta tool calling, function calling, agentes multi-paso, visión, audio ni modo de razonamiento explícito. No es un modelo conversacional: el autor indica expresamente que enviar texto libre como "juego H8" no sustituye a la codificación del tablero del paquete.
+- Generación de coordenadas de jugada a partir de la codificación completa del tablero de 15×15, con protocolo de texto propio (`pointer_protocol.py`).
+- Decodificación de partidas de gomoku sin regla de prohibición (自由五子棋), victoria con cinco o más en línea.
+- Razonamiento táctico inmediato: detección de victoria en un movimiento y bloqueo de cuádruples.
+- Lógica a tres movimientos y generación de certificados de victoria a cinco jugadas (consistencia con jugadas de matanza forzada).
+- Salida legal consistente: el autor reporta 768/768 salidas legales en el conjunto de prueba.
+- Soporte de integración con Ollama mediante GGUF nativo y con Transformers estándar (`AutoTokenizer`, `AutoModelForCausalLM`, sin `trust_remote_code`).
+- Interfaz de chat compatible con la API de Ollama (`/api/chat`) y con text-generation-inference (tag `text-generation-inference`).
+- No soporta tool calling, agentes multi-paso, visión, audio ni modo de razonamiento explícito.
 
 ## Casos de uso
 
-- Prototipado de agentes de juego en terminal: el paquete incluye `play_terminal.py`, un cliente con interfaz de ratón y teclado que carga los pesos HF locales y permite jugar contra el modelo en CPU sin infraestructura adicional.
-- Investigación sobre destilación de conocimiento en dominios cerrados: sirve como caso de estudio reproducible de un modelo de 8,7 M de parámetros entrenado desde cero con un profesor y evaluado con métricas de legalidad y acierto táctico.
-- Pruebas de protocolos de codificación de estado en texto: el proyecto define `pointer_protocol.py` y `prompt.py` para serializar tableros de 225 celdas y parsear la respuesta, útil como referencia para diseñar interfaces modelo-entorno.
-- Integración en pipelines de evaluación de jugadas: mediante la API `/api/chat` de Ollama y el script de ejemplo con `curl`, se puede consultar la jugada sugerida para una posición concreta dentro de un banco de pruebas automatizado.
-- Docencia y demostraciones de modelos decoder-only pequeños: el reducido tamaño y la licencia Apache-2.0 permiten desplegarlo en entornos educativos sin GPU y sin coste de licencia.
-- Comparación de backends de inferencia: el repositorio incluye `reports/optimized_backend.json` con comprobaciones de generación emparejada entre backends, lo que facilita estudiar diferencias numéricas entre implementaciones en F32.
+- Motor de juego embebido en aplicaciones de escritorio o terminal: el paquete incluye `play_terminal.py` con interfaz de teclado y ratón; el modelo responde en unos 186 ms por jugada en CPU de dos hilos, lo que permite partidas fluidas sin GPU.
+- Enseñanza y demostración de arquitecturas MoE compactas: con 1,99 millones de parámetros y pesos F32 verificados bit a bit, sirve como caso de estudio reproducible de supervisión funcional por objetivos frente a modelos densos mayores.
+- Servicio local de sugerencia de jugadas vía API: el endpoint `/api/chat` de Ollama acepta el tablero codificado y devuelve la coordenada, lo que permite integrarlo en un backend ligero o en un bot de chat.
+- Evaluación comparativa de tácticas de gomoku: el autor publica conjuntos de 512 pruebas tácticas inmediatas, 128 de lógica a tres movimientos y 128 de certificados a cinco jugadas, reutilizables como banco de pruebas para otros motores.
+- Análisis retrospectivo de partidas: la repetición supervisada sobre 2.048 posiciones históricas permite consultar jugadas alternativas en posiciones concretas, aunque el autor advierte que la coincidencia con la anotación no implica optimalidad.
+- Despliegue en entornos con recursos mínimos: el repositorio ocupa 0,2 GB y el GGUF F32 cabe en cualquier equipo; no requiere GPU ni cuantización para funcionar.
+- Prototipado de protocolos de codificación tablero-texto: el cambio de vocabulario y protocolo entre versiones documentado por el autor sirve de ejemplo de gestión de versiones de interfaces en modelos de dominio específico.
 
 ## Benchmarks y rendimiento
 
-| Conjunto | Mejor jugada | Jugada legal |
-|---|---:|---:|
-| Validación | 138/252 | 249/252 |
-| Test normal | 73/127 | 125/127 |
-| Test denso | 29/63 | 63/63 |
+Resultados publicados por el autor en la model card (conjuntos propios, no benchmarks estándar):
 
-| Escenario táctico (generado) | Aciertos |
+| Modelo | Parametros | Tactica inmediata | Logica a 3 movimientos | Certificado a 5 jugadas | Salidas legales | Repeticion historica |
+|---|---:|---:|---:|---:|---:|---:|
+| Publicacion anterior Dense | 10.809.984 | 477/512 | 128/128 | 106/128 | 766/768 | 153/224 |
+| Publicacion anterior MoE disperso | 10.813.056 | 463/512 | 128/128 | 105/128 | 767/768 | 151/224 |
+| MoE funcional actual | 1.988.096 | 495/512 | 125/128 | 127/128 | 768/768 | 164/224 |
+
+| Partidas completas | Victorias actual | Derrotas actual | Derrotas por ilegal actual | Derrotas por ilegal rival | Tablas/truncadas |
+|---|---:|---:|---:|---:|---:|
+| Actual vs Dense anterior | 43 | 21 | 3 | 7 | 0/0 |
+| Actual vs MoE disperso anterior | 43 | 21 | 4 | 6 | 0/0 |
+
+| CPU nativa Ollama, F32, 2 hilos | Mediana de computo (sin carga) |
 |---|---:|
-| Cinco en raya inmediato | 29/32 |
-| Bloqueo de cuatro único | 32/32 |
-| Prioridad de cinco sobre bloqueo de cuatro | 23/32 |
+| Dense anterior | 162,9 ms |
+| MoE disperso anterior | 99,0 ms |
+| MoE funcional actual | 185,9 ms |
 
-| Partidas completas contra oponente aleatorio | Resultado |
-|---|---:|
-| Victorias | 3 |
-| Derrotas | 0 |
-| Derrotas por salida ilegal | 1 |
-| Empates | 0 |
-| Partidas alcanzando límite de jugadas | 0 |
-
-El autor advierte de que los conjuntos de test se han usado en versiones anteriores, por lo que no constituyen una prueba ciega, y que la tasa de acierto de etiqueta no equivale a tasa de victoria competitiva. El oponente aleatorio es muy débil y el resultado no constituye una calificación de fuerza de juego profesional.
+El autor precisa que los conjuntos de prueba comparten plantillas tácticas limitadas con el entrenamiento, que la tasa de acierto a cinco jugadas mide consistencia con un certificado suficiente de matanza y no optimalidad exhaustiva, y que las 224 posiciones históricas miden coincidencia con la jugada anotada, no generalización nueva. Las partidas se jugaron desde 32 aperturas de cuatro jugadas en zona central, con intercambio de colores, 64 partidas por grupo; no constituyen una clasificación Elo. No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: inferior a 1 GB en F32 (8,7 M de parámetros, aproximadamente 35 MB de pesos más overhead de activaciones y caché KV para 2048 tokens).
-- GPU recomendadas: no requiere GPU; cualquier GPU con más de 1 GB de memoria puede ejecutarlo. Funciona en CPU sin problemas.
-- Cabe en cualquier GPU de consumo, incluida una GTX 1050 o una iGPU con memoria compartida suficiente.
-- Opciones de despliegue: Transformers (`AutoModelForCausalLM`), Ollama mediante el `Modelfile` incluido, y llama.cpp a través del GGUF en F32.
-- Latencia y throughput: no se publican cifras de latencia ni de tokens por segundo en la información disponible. El diseño está pensado para generación de 4 tokens (`max_new_tokens=4`) por jugada en CPU.
+- VRAM estimada para inferencia: inferior a 1 GB en F32 (1.988.096 parámetros × 4 bytes ≈ 8 MB de pesos, más overhead de runtime y contexto de 2.048 tokens).
+- GPU recomendadas: no se especifican; cualquier GPU con más de 1 GB de VRAM puede alojarlo. Funciona sin GPU.
+- Cabe en cualquier GPU de consumo (RTX 3060, RTX 4090, GTX 1650, etc.) e incluso en CPU modesta.
+- Despliegue: Ollama con `Modelfile` incluido (GGUF nativo F32), Transformers con `AutoModelForCausalLM`, y compatible con text-generation-inference según los tags del repositorio. No se menciona soporte de vLLM ni llama.cpp en la model card.
+- Latencia medida: mediana de 185,9 ms por jugada en CPU de dos hilos con Ollama nativo F32, sin contar la carga del modelo. El autor señala que, pese a tener menos parámetros, es más lento que el MoE disperso anterior (99,0 ms) porque computa los ocho expertos en cada paso.
+- Throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parámetros | Contexto | Enfoque | Licencia |
-|---|---|---:|---|---|---|
-| l898974766/gomoku | LLM decoder-only especializado | 8,7 M | 2048 tokens | Gomoku 15×15 por destilación | Apache-2.0 |
-| daanvancamp/gomoku-AI | Modelo de RL | no disponible | no disponible | Gomoku con aprendizaje por refuerzo | no disponible |
-| Gomoku-AI (whyb) | ResNet + RL (estilo AlphaZero) | no disponible | no disponible | Gomoku con auto-juego | no disponible |
+| Modelo | Parametros | Contexto | Tactica inmediata | Certificado a 5 | Salidas legales | Licencia | Disponibilidad |
+|---|---:|---:|---:|---:|---:|---|---|
+| Gomoku MoE funcional (actual) | 1.988.096 | 2.048 | 495/512 | 127/128 | 768/768 | Apache 2.0 | HF, GGUF, Ollama |
+| Gomoku Dense (revision anterior) | 10.809.984 | no disponible | 477/512 | 106/128 | 766/768 | Apache 2.0 | Revision `ab8fca0` en HF |
+| Gomoku MoE disperso (revision anterior) | 10.813.056 | no disponible | 463/512 | 105/128 | 767/768 | Apache 2.0 | Carpeta `moe/` en HF |
 
-No se dispone de datos de benchmarks comunes ni de especificaciones detalladas de las alternativas encontradas en la búsqueda web, por lo que la comparación cuantitativa de rendimiento no está disponible.
+Las tres variantes pertenecen al mismo autor y comparten dominio; la comparación con modelos de gomoku de terceros o con LLM de propósito general no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo de dominio muy restringido: solo produce coordenadas de gomoku y no mantiene conversación ni responde a instrucciones en lenguaje natural.
-- Puede emitir coordenadas ilegales o ya ocupadas; el cliente debe validar la salida y el autor indica que una salida ilegal detiene la partida en la interfaz de terminal.
-- Los conjuntos de test se han reutilizado en versiones previas, por lo que las métricas no son una evaluación ciega.
-- La tasa de acierto de etiqueta no equivale a fuerza de juego; el único enfrentamiento completo documentado es contra un oponente aleatorio muy débil.
-- El autor declara que es un experimento a pequeña escala en CPU y que no garantiza un comportamiento cercano a motores profesionales.
-- Los pesos del profesor v66 y los datos de entrenamiento no se distribuyen, lo que limita la reproducibilidad completa del entrenamiento.
-- Los pesos se serializan en F32, pero el autor advierte de que distintos backends de cómputo no garantizan resultados idénticos bit a bit.
-- Licencia Apache-2.0 permite uso comercial, pero no se documentan garantías ni soporte; el tokenizer procede de SmolLM2-135M-Instruct, también Apache-2.0.
-- No se documentan sesgos sociales relevantes por el dominio cerrado, pero sí existe riesgo de alucinación en forma de coordenadas inválidas o jugadas tácticas erróneas.
+- Modelo de dominio estrictamente específico: solo genera coordenadas de gomoku; no es útil para texto general, código, matemáticas ni conversación.
+- Puede omitir defensas y generar jugadas ilegales en producción; el autor lo reconoce explícitamente pese al 768/768 en el conjunto de prueba.
+- El protocolo de tablero cambió respecto a la versión anterior: los clientes antiguos con cadenas de tablero escritas a mano no son compatibles; es obligatorio usar `pointer_protocol.py` del paquete actual junto con pesos y tokenizer de la misma revisión.
+- No hay máscara de acciones legales ni corrección de errores en tiempo de ejecución; la validez de la jugada depende del modelo.
+- Los conjuntos de prueba comparten plantillas tácticas con el entrenamiento, por lo que las métricas publicadas no deben interpretarse como generalización limpia.
+- Las partidas de evaluación no constituyen una clasificación Elo ni una medida de fuerza profesional; el autor no reclama superioridad clara sobre la versión anterior.
+- El entrenamiento no es un PPO completo sobre partidas, sino una mezcla de recompensa de posición y supervisión; el comportamiento en aperturas o posiciones fuera de distribución puede degradarse.
+- Sesgos conocidos: no se documentan sesgos sociales por el dominio restringido, pero el vocabulario y los datos de entrenamiento están limitados a partidas y plantillas del autor.
+- Licencia Apache 2.0 permite uso comercial, pero debe conservarse LICENSE y NOTICE del repositorio.
+- El rendimiento en CPU es superior al de la versión densa anterior pero inferior al del MoE disperso previo; si la latencia es crítica, conviene evaluar esa alternativa.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/l898974766/gomoku
-- Proyecto de referencia con aprendizaje por refuerzo (daanvancamp): https://github.com/daanvancamp/gomoku-AI
-- Proyecto Gomoku-AI con ResNet y RL (whyb): https://whyb.github.io/Gomoku-AI/README.en.html
-- Tokenizer de origen (SmolLM2-135M-Instruct): https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
+- Revisión anterior (Dense y MoE disperso): https://huggingface.co/l898974766/gomoku/tree/ab8fca03e4942a5808b14adfa50f27b5d634f57f
+- Documentación del MoE disperso anterior: https://huggingface.co/l898974766/gomoku/blob/main/moe/README.md
+- Papers, blogs, repositorios o demos adicionales: no disponibles en la información proporcionada.

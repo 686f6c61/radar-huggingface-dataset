@@ -2,51 +2,57 @@
 
 ## Resumen
 
-QwenPU es un proyecto experimental de Divyansh Agrawal (usuario divagr1925 en Hugging Face) que consiste en una modificación de Qwen3.5-4B en la que se ha "compilado" un ordenador completo —una CPU RISC-V de 32 bits con unidad vectorial— dentro de los pesos del modelo de lenguaje. No es un modelo conversacional convencional: es una demostración técnica de que se puede ejecutar un programa arbitrario (en este caso, el modelo stories260K de Andrej Karpathy, un Llama de 260.000 parámetros) dentro de los pases hacia adelante del propio transformer, usando tokens de traza como instrucciones.
+QwenPU es un artefacto experimental publicado por Divyansh Agrawal que parte de Qwen/Qwen3.5-4B y le incorpora, compilada dentro de los propios pesos del modelo, una CPU RISC-V de 32 bits (RV32IM + Zba + unidad bignum) con una unidad vectorial dedicada. El resultado es un checkpoint de 13.364.479.936 parámetros (26,7 GB en bf16, mayoritariamente relleno de ceros) que mantiene la arquitectura `Qwen3_5ForCausalLM` intacta y añade 13 capas compiladas por delante de las 32 originales de Qwen. No es un modelo entrenado: es un modelo base cuyos pesos han sido generados por un compilador para emular hardware dentro del forward pass.
 
-El proyecto forma parte de Qwenputer, una línea de trabajo que comenzó compilando una CPU RV32IM en capas transformer situadas delante de las capas originales de Qwen. QwenPU añade una unidad vectorial con instrucciones propias (VMAT, VEW, VMATR, etc.) que reduce drásticamente el número de tokens de traza necesarios: de 2.430.000 por token de historia en C plano a 53.000 con la unidad vectorial, y el tiempo por token de historia baja de 41 segundos (Qwenputer-npu) a unos 16 segundos en una L4.
+La demostración concreta es que stories260K (el modelo Llama de 260K parámetros de llama2.c, de Andrej Karpathy) se ejecuta como programa sobre esa unidad vectorial y escribe su historia token a token, de forma exacta. Cada operación vectorial (producto matriz-vector int8·int4, cuantización, SiLU, RoPE, softmax, atención sobre caché K/V) se implementa como pasos exactos de las capas compiladas, y los resultados se transmiten a través del flujo de tokens.
 
-Se trata de un trabajo en progreso con fines de investigación y demostración, no de un modelo de uso general. El checkpoint pesa 26,7 GB en bf16 (la mayor parte es relleno de ceros) y requiere una GPU de 40 GB o más para cargarlo completo, aunque las capas del "ordenador" por separado caben en una GPU de 24 GB.
+Es relevante ahora como prueba de concepto de "cómputo compilado en pesos": un modelo de lenguaje que aloja una máquina virtual ejecutable, con verificación paso a paso contra un modelo de referencia. El autor lo marca explícitamente como trabajo en curso: es exacto pero todavía grande (26,7 GB), y el siguiente paso es recortar el tamaño oculto y, con él, el checkpoint.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3_5ForCausalLM (solo texto) + 13 capas compiladas de un ordenador RV32IM + Zba con unidad bignum y unidad vectorial (Gated DeltaNet como memoria de estado) |
-| Parametros totales | 13.364.479.936 (dato real de safetensors) |
-| Parametros activos | no disponible (no se indica si es MoE; la base Qwen3.5-4B no lo es) |
+| Arquitectura | `Qwen3_5ForCausalLM` estándar (solo texto); 13 capas compiladas (RV32IM + Zba + bignum + unidad vectorial) delante de las 32 capas de Qwen3.5-4B |
+| Parametros totales | 13.364.479.936 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | bf16 (exacto); pesos del programa invitado en int8/int4 dentro de la memoria de la unidad vectorial |
+| Tipos de cuantizacion | no disponible para el checkpoint; los pesos int4 de stories260K residen en la memoria de pesos de la unidad vectorial |
 | Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 (modelo base Qwen/Qwen3.5-4B sin modificar; stories260K y llama2.c de Karpathy, MIT) |
-| Formato de pesos | safetensors (26,9 GB el repositorio) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors (librería transformers) |
+
+Datos adicionales de la model card: tamaño oculto 5120 (2560 de Qwen más las dimensiones del computador), vocabulario de Qwen ampliado con 394.164 tokens de traza, precisión exacta en bf16, tamaño del repo 26,9 GB.
 
 ## Arquitectura y entrenamiento
 
-QwenPU conserva íntegros los pesos originales de Qwen3.5-4B y añade 13 capas compiladas delante de las 32 capas del modelo base. Estas capas implementan una CPU RV32IM con la extensión Zba, una unidad bignum y una unidad vectorial propia. El tamaño oculto se amplía de 2560 a 5120 para alojar las dimensiones del ordenador, y el vocabulario se extiende con 394.164 tokens de traza adicionales que codifican las operaciones del circuito. La memoria de la unidad vectorial se implementa mediante las cabezas Gated DeltaNet de Qwen3.5: 16 registros vectoriales de 64 palabras, 384 activaciones int8, 4.152 fragmentos de pesos int4 y cachés K/V para 32 posiciones.
+No hay entrenamiento en el sentido habitual. QwenPU conserva los pesos de Qwen/Qwen3.5-4B sin cambios y antepone 13 capas generadas por un compilador que implementan un computador RISC-V de 32 bits con extensión Zba, unidad bignum y unidad vectorial. El estado de Gated DeltaNet de Qwen3.5 se reutiliza como memoria del computador: las memorias de la unidad vectorial son cabezas DeltaNet con 16 registros vectoriales de 64 palabras, 384 activaciones int8, 4.152 fragmentos de fila de pesos int4 y cachés K/V para 32 posiciones. El registro de una operación comienza con tokens de configuración que transportan sus operandos y después emite sus resultados en streaming; cada token es un paso exacto de las capas compiladas. SiLU y exp son unidades de función en punto fijo, genéricas como los sumadores de la CPU.
 
-No hay entrenamiento tradicional en el sentido convencional: los pesos se establecen mediante un compilador (compiled-weights), no mediante descenso de gradiente. Cada operación vectorial es exacta en bf16 y se ha verificado contra un modelo de referencia: pruebas aleatorias de cada operación sobre las capas del propio checkpoint, más los primeros 30.000 pasos del programa de historias, con cero discrepancias, y la historia completa escrita en ejecución libre (3.184.920 pasos) comprobada paso a paso.
+El conjunto de instrucciones vectoriales incluye `VMAT` (filas de matriz int8·int4, 64 lanes por token, con escala de fila, o argmax), `VQ` (cuantización de un registro vectorial a activaciones int8 o a una fila de caché K/V), `VEW` (suma residual, producto con puerta SiLU, RoPE), `VMATR` (puntuaciones de atención sobre la caché K y probabilidades por la caché V), `VEXP` (numeradores de softmax mediante tabla de exp), `VRED` (suma o suma de cuadrados) y `VGET`/`VPUT` (transferencia entre CPU y unidad). La innovación destacable es la reducción del coste de traza: frente a 2.430.000 tokens de traza por token de historia en C plano con pesos int8, y 225.000 con Qwenputer-npu (VDOT + SMAQA), QwenPU requiere 53.000.
 
 ## Capacidades
 
-- No es un modelo de lenguaje de uso general: su función es ejecutar programas compilados dentro de sus pases hacia adelante.
-- Ejecuta stories260K (Llama de 260K parámetros de Karpathy) como programa invitado, escribiendo historias token a token idénticas a la referencia.
-- Unidad vectorial con 8 instrucciones: VMAT (producto matriz int8·int4 con 64 lanes por token o argmax), VQ (cuantización a int8 o filas de caché K/V), VEW (suma residual, producto con gating SiLU, RoPE), VMATR (puntuaciones de atención sobre caché K; probabilidades por caché V), VEXP (numeradores softmax con tabla exponencial), VRED (suma o suma de cuadrados), VGET/VPUT (transferencias CPU-unidad).
-- Unidades de función en punto fijo para SiLU y exp, genéricas como los sumadores de la CPU.
-- Tool calling, agentes, razonamiento multilingüe y demás capacidades conversacionales: no disponibles (el proyecto no las describe ni está orientado a ello).
+- Ejecución de un modelo de lenguaje completo (stories260K, 260K parámetros, int4) como programa sobre la unidad vectorial integrada en los pesos.
+- Generación de texto del propio Qwen3.5-4B subyacente, ya que los pesos base se conservan sin modificar.
+- Emulación de CPU RV32IM + Zba con unidad bignum y unidad vectorial de 64 lanes.
+- Streaming de resultados vectoriales completos a través del flujo de tokens.
+- Verificación exacta paso a paso: la ejecución libre sobre GPU coincide con el modelo de referencia en los 3.184.920 pasos de la historia.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible en la información proporcionada.
+- Modo thinking, visión o audio: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Investigación en computación dentro de modelos: estudiar cómo ejecutar programas arbitrarios como parte del pase hacia adelante de un transformer, usando tokens de traza como instrucciones.
-- Verificación formal de circuitos compilados: el executor permite comprobar la ejecución completa (3.184.920 pasos) contra un modelo de referencia, útil para validar compiladores de pesos.
-- Demostración educativa de arquitecturas RISC-V y unidades vectoriales: el repositorio incluye el programa invitado en C (stories_vx.c) y herramientas para ejecutarlo y verificarlo.
-- Benchmarking de optimizaciones de compilación: la tabla de tokens de traza (2.430.000 en C plano, 225.000 con VDOT+SMAQA, 53.000 con la unidad vectorial) permite medir mejoras de diseño de ISAs dentro de modelos.
-- Experimentación con memoria DeltaNet como almacenamiento de estado de un circuito: las memorias de la unidad vectorial viven en las cabezas Gated DeltaNet, un enfoque replicable en otros modelos.
-- Base para futuros trabajos del proyecto Qwenputer: el autor indica que el siguiente paso es reducir el tamaño oculto y, con ello, el checkpoint.
+- Investigación en cómputo compilado en pesos: usar QwenPU como banco de pruebas para estudiar cómo se codifican máquinas virtuales y unidades funcionales dentro de los pesos de un transformer, comparando el coste en tokens de traza entre variantes (C plano, Qwenputer-npu, QwenPU).
+- Verificación formal de ejecutores: el script `vxcheck` ejecuta la unidad vectorial sobre las capas del checkpoint y la compara con un modelo de referencia de la unidad, lo que sirve para validar implementaciones de emuladores RISC-V y de operaciones vectoriales exactas.
+- Docencia sobre arquitectura de computadores: la historia de stories260K escrita por el modelo ilustra de forma tangible el ciclo instrucción a instrucción, la cuantización int8/int4 y el funcionamiento de una unidad vectorial con memorias separadas.
+- Reproducción de experimentos de llama2.c en hardware emulado: cualquier modelo que quepa en la memoria de la unidad vectorial se ejecuta de la misma forma, lo que permite portar y comparar modelos pequeños sin tocar el checkpoint.
+- Benchmarking de coste de traza: medir tokens de traza por token de salida (53.000 en QwenPU frente a 225.000 en Qwenputer-npu y 2.430.000 en C plano) para evaluar el impacto de añadir instrucciones vectoriales dedicadas.
+- Base para futuras variantes reducidas: el propio autor plantea recortar el tamaño oculto para reducir el checkpoint por debajo de 24 GB y facilitar su despliegue en GPUs de consumo, lo que abre la puerta a experimentos de compilación en hardware asequible.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Los datos de rendimiento publicados se refieren a la ejecución del programa invitado:
+No se han publicado resultados de benchmarks en la información disponible. Los únicos datos de rendimiento son los de la demo de stories260K:
 
 | Build de stories260K | Tokens de traza por token de historia |
 |---|---|
@@ -54,45 +60,49 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 | Qwenputer-npu: VDOT + SMAQA | 225.000 |
 | QwenPU: unidad vectorial | 53.000 |
 
-El executor del circuito escribe la historia completa en ejecución libre a unos 3.300 tokens de traza por segundo en una L4, lo que supone unos 16 segundos por token de historia (frente a 41 segundos de Qwenputer-npu).
+En ejecución libre sobre una GPU L4, el ejecutor del circuito produce unos 3.300 tokens de traza por segundo, lo que equivale a unos 16 segundos por token de historia, frente a 41 segundos en Qwenputer-npu.
 
 ## Requisitos de hardware
 
-- Checkpoint completo: 26,7 GB en bf16; se necesita una GPU de 40 GB o más para cargarlo entero (A100 40 GB/80 GB, H100, H200).
-- Demo de historias y verificaciones: las capas del ordenador por separado caben en una GPU de 24 GB (RTX 4090, RTX 3090, A5000, L4 no llega por VRAM pero se usa en las mediciones de velocidad del executor).
-- Modo `--chip-only` de vxcheck: carga solo las capas del circuito en GPU, unos 13 GB, viable en una RTX 4090 de 24 GB.
-- Despliegue: no mediante vLLM, TGI ni Ollama de forma estándar; se usa el repositorio propio con `uv sync --extra hf` y scripts de Python (`storyrun.py`, `chipformer.rv.vxcheck`) compatibles con la librería transformers para descargar el checkpoint.
-- Latencia: unos 16 segundos por token de historia generada en una L4; no hay datos de throughput para uso conversacional.
+- VRAM para el checkpoint completo: 26,7 GB en bf16; el autor indica que necesita una GPU de 40 GB o más para cargarlo entero.
+- VRAM para la demo y las comprobaciones: las capas del computador se ejecutan por separado y caben en una GPU de 24 GB; con `--chip-only` se cargan solo esas capas, unos 13 GB.
+- GPU recomendadas: L4 para el ejecutor (medición reportada); A100 o H100 de 40/80 GB para cargar el checkpoint completo.
+- GPU de consumo: no cabe entero en ninguna consumer GPU actual; solo las capas del computador (unos 13 GB) caben en tarjetas de 16-24 GB como la RTX 4090.
+- Opciones de despliegue: transformers (librería declarada), con el repositorio QwenPU y `uv` para los scripts `storyrun` y `vxcheck`; vLLM, llama.cpp, Ollama o TGI no están documentados para este artefacto.
+- Latencia y throughput: aproximadamente 3.300 tokens de traza por segundo en L4, es decir, unos 16 segundos por token de historia en la demo; no hay datos de throughput para la generación de texto de Qwen3.5-4B con este checkpoint.
 
 ## Comparativa con modelos similares
 
-| | QwenPU | Qwen3.5-4B (base) | Qwenputer-npu |
-|---|---|---|---|
-| Parametros | 13,36 B (26,7 GB bf16) | 4 B (aprox.) | no disponible |
-| Proposito | Ejecutar programas (CPU RISC-V + unidad vectorial) en los pesos | LLM conversacional general | Ejecutar programas con CPU VDOT + SMAQA |
-| Unidad vectorial | Propia, 8 instrucciones, 64 lanes | no aplica | No (instrucciones de dot-product en la CPU) |
-| Tokens de traza por token de historia | 53.000 | no aplica | 225.000 |
-| Latencia por token de historia | ~16 s (L4) | no aplica | ~41 s |
-| Licencia | Apache-2.0 | Apache-2.0 | no disponible |
+| Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| QwenPU | 13.364.479.936 (26,7 GB bf16) | no disponible | Qwen3.5-4B + CPU RISC-V y unidad vectorial compiladas | Apache-2.0 | Hugging Face (divagr1925/QwenPU) |
+| Qwen/Qwen3.5-4B | ~4B | no disponible | Modelo de lenguaje base | Apache-2.0 (según modelo base) | Hugging Face |
+| Qwenputer-npu | no disponible | no disponible | CPU compilada con instrucciones de producto escalar (VDOT + SMAQA) | no disponible | Hugging Face (divagr1925/Qwenputer-npu) |
+| stories260K (llama2.c) | 260K | no disponible | Modelo Llama mínimo para llama2.c | no disponible | Hugging Face (karpathy/tinyllamas) |
 
-No existen alternativas comerciales comparables: se trata de una línea de investigación singular sin equivalentes publicados conocidos.
+La comparación relevante es de propósito, no de rendimiento en tareas de NLP: QwenPU y Qwenputer-npu son artefactos de investigación sobre cómputo compilado en pesos, mientras que Qwen3.5-4B y stories260K son los componentes que se ejecutan dentro de ellos.
 
 ## Limitaciones y advertencias
 
-- No es un modelo conversacional: no debe usarse para generación de texto general, chat ni aplicaciones de producción de LLM; su salida útil es la ejecución de programas compilados.
-- Trabajo en progreso: el autor lo declara explícitamente; el siguiente paso es reducir el tamaño oculto y el checkpoint.
-- Tamaño muy elevado para su utilidad: 26,7 GB en bf16, la mayor parte relleno de ceros, para ejecutar un modelo de 260K parámetros.
-- Latencia altísima: 16 segundos por token de historia lo hace inviable para cualquier aplicación interactiva.
-- Contexto, idiomas y capacidades de tool calling: no disponibles ni documentados.
-- Sesgos y alucinaciones: no aplicables ni evaluados, dado que no es un modelo generativo de propósito general; los pesos de Qwen3.5-4B subyacentes conservan sus sesgos originales pero no se usan en el flujo principal del proyecto.
-- Requiere software específico del repositorio (chipformer, scripts propios); la compatibilidad con el ecosistema transformers estándar no está garantizada más allá de la descarga de pesos.
+- Trabajo en curso declarado por el autor: el checkpoint es exacto pero todavía grande (26,7 GB) y requiere una GPU de 40 GB o más para cargarse entero.
+- El checkpoint está mayoritariamente compuesto de relleno de ceros; el tamaño no refleja capacidad útil de parámetros.
+- No es un modelo entrenado ni afinado: no hay datos publicados sobre calidad de generación de texto, razonamiento, código o matemáticas con este artefacto.
+- Idiomas soportados no disponibles; la model card no documenta comportamiento multilingüe.
+- Longitud de contexto no disponible.
+- No hay información sobre sesgos, tasas de alucinación ni evaluación de seguridad.
+- La licencia Apache-2.0 cubre el artefacto del modelo; el código fuente del repositorio QwenPU tiene licencia MIT y se cita por separado, según indica el autor.
+- El DOI 10.57967/hf/11460 identifica el artefacto del modelo, no una release de código fuente.
+- La emulación es exacta pero lenta en términos de tokens de historia (16 segundos por token en L4); no es apta para inferencia interactiva de la demo.
+- Uso comercial: la licencia Apache-2.0 lo permite, pero al ser un artefacto de investigación sin evaluación de calidad, no se recomienda para producción sin validación propia.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/divagr1925/QwenPU
-- Código en GitHub: https://github.com/divagr18/QwenPU
+- Repositorio QwenPU en GitHub: https://github.com/divagr18/QwenPU
 - Proyecto Qwenputer: https://github.com/divagr18/qwenputer
-- Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
-- Predecesor Qwenputer-npu: https://huggingface.co/divagr1925/Qwenputer-npu
-- stories260K (Karpathy): https://huggingface.co/karpathy/tinyllamas/tree/main/stories260K
-- llama2.c (Karpathy): https://github.com/karpathy/llama2.c
+- Modelo base Qwen/Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
+- Qwenputer-npu: https://huggingface.co/divagr1925/Qwenputer-npu
+- stories260K (karpathy/tinyllamas): https://huggingface.co/karpathy/tinyllamas/tree/main/stories260K
+- llama2.c: https://github.com/karpathy/llama2.c
+- DOI del artefacto: https://doi.org/10.57967/hf/11460
+- ORCID del autor: https://orcid.org/0009-0003-0739-2473

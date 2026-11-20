@@ -2,95 +2,91 @@
 
 ## Resumen
 
-Gemma 4 E2B Conversational Uncensored es un ajuste fino de tipo conversacional sobre una versión abliterada de Gemma 4 E2B. Lo publica el usuario minas2025 en Hugging Face y se distribuye exclusivamente en formato GGUF, cuantizado en Q8_0 (~5,1 GB), para ejecutarse en runners locales como llama.cpp, LM Studio o KoboldCpp. El modelo base de la cadena es llmfan46/gemma-4-E2B-it-ultra-uncensored-heretic, a su vez una abliteración Heretic de google/gemma-4-E2B-it.
+Gemma-4-E2B-Conversational-Uncensored es un ajuste fino (finetune) de tipo conversacional del modelo Gemma 4 E2B en su variante "Heretic-abliterated", desarrollado por el usuario minas2025 y publicado en Hugging Face. El modelo parte de `llmfan46/gemma-4-E2B-it-ultra-uncensored-heretic`, una ablación de rechazos (abliteration) sobre `google/gemma-4-E2B-it`, y se ha entrenado con QLoRA sobre el dataset Airoboros 3.2 para dotarlo de un tono conversacional más natural, directo y sin las típicas respuestas corporativas.
 
-El repositorio declara 4.647.450.147 parámetros totales y un tamaño de 5,9 GB. Su propósito es ofrecer una personalidad conversacional aguda y directa, sin el tono corporativo de los asistentes alineados, manteniendo el comportamiento de cero rechazos heredado del modelo base abliterado. Se entrenó con QLoRA sobre el dataset jondurbin/airoboros-3.2 (unas 59.000 conversaciones) durante 1.000 pasos.
+El objetivo declarado es ofrecer un compañero de conversación local y privado, con comportamiento de "cero rechazos" heredado de la base, útil para brainstorming, explicaciones sencillas, escritura creativa y charla informal. No es un especialista en roleplay de formato largo ni un modelo orientado a tareas de asesoramiento profesional.
 
-Resulta relevante como ejemplo de fine-tuning local de bajo coste: se completó en una única GPU de consumo AMD Radeon RX 6700 XT de 12 GB en aproximadamente 23 minutos, usando Unsloth. La ficha no reporta resultados de benchmarks ni una longitud de contexto máxima oficial.
+El modelo se distribuye principalmente en formato GGUF (cuantización Q8_0, aproximadamente 5,1 GB) para su uso en runners locales como llama.cpp, LM Studio o KoboldCpp. Cuenta con 4.647.450.147 parámetros totales según los pesos en safetensors del repositorio, y hereda la licencia Gemma a través de su cadena de modelos base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia Gemma 4); no se detalla en la informacion disponible. La denominacion E2B apunta a 2.000 millones de parametros efectivos |
-| Parametros totales | 4.647.450.147 (~4,65 mil millones) |
+| Arquitectura | Transformer (Gemma 4 E2B), ajuste fino QLoRA sobre base abliterated; no se detalla la arquitectura interna en la informacion disponible |
+| Parametros totales | 4.647.450.147 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible oficialmente; entrenado con 2048 y se recomienda usar 4096-8192 en inferencia |
-| Tipos de cuantizacion | Q8_0 (unico archivo publicado); el entrenamiento uso QLoRA de 4 bits |
-| Idiomas soportados | no disponible; la etiqueta del repositorio indica "en" (ingles) |
-| Licencia | Gemma Terms of Use (campo license: gemma) |
-| Formato de pesos | GGUF (Q8_0.gguf, ~5,1 GB; archivo mmproj opcional para vision) |
+| Longitud de contexto | Entrenado con contexto de 2048; se recomienda usar 4096-8192 en inferencia |
+| Tipos de cuantizacion | Q8_0 (GGUF); el entrenamiento uso QLoRA 4-bit |
+| Idiomas soportados | Ingles (tag `en`); no se detallan otros idiomas |
+| Licencia | Gemma Terms of Use (heredada de google/gemma-4-E2B-it) |
+| Formato de pesos | GGUF (Q8_0); safetensors disponibles en el repo (4.647.450.147 parametros) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de una cadena de derivaciones: google/gemma-4-E2B-it, después una abliteración Heretic que elimina los mecanismos de rechazo (llmfan46/gemma-4-E2B-it-ultra-uncensored-heretic) y, finalmente, este ajuste conversacional. La ficha no detalla la arquitectura interna más allá de la familia Gemma 4 y la nomenclatura E2B; la presencia de un archivo mmproj en el repositorio indica que el modelo base incorpora un proyector multimodal para entrada de imagen.
+El modelo se basa en Gemma 4 E2B, un transformer de la familia Gemma de Google, en su variante instruction-tuned (`google/gemma-4-E2B-it`). Sobre esa base se aplico primero una abliteration (eliminacion de la direccion de rechazo en el espacio de activaciones) por parte de llmfan46, dando lugar a `gemma-4-E2B-it-ultra-uncensored-heretic`. Posteriormente, minas2025 realizo un ajuste fino QLoRA de 4 bits con rango 16, alpha 16, dropout 0 y todas las capas lineales como objetivo, durante 1.000 pasos con batch 1, contexto de 2048, learning rate 8e-5 con schedule coseno y optimizador AdamW de 8 bits (weight decay 0,001).
 
-El entrenamiento consistió en un ajuste QLoRA de 4 bits con rango 16, alpha 16, dropout 0 y todas las capas lineales como objetivo. Se ejecutaron 1.000 pasos con batch 1 y acumulación de gradiente 1, longitud de contexto 2048, tasa de aprendizaje 8e-5 con schedule coseno y warmup corto, optimizador AdamW de 8 bits y weight decay 0,001. El dataset fue jondurbin/airoboros-3.2 en formato ShareGPT, una mezcla de instrucciones y conversaciones. La pérdida final suavizada quedó en torno a 0,7-1,0. No se menciona RLHF, DPO ni ninguna fase de alineación adicional. La fusión, la conversión a GGUF y el entrenamiento se realizaron con Unsloth Studio sobre una Radeon RX 6700 XT de 12 GB (ROCm) en CachyOS.
+El dataset de entrenamiento fue `jondurbin/airoboros-3.2` en formato ShareGPT, con aproximadamente 59.000 conversaciones de instruccion y dialogo. El entrenamiento se ejecuto en una unica GPU AMD Radeon RX 6700 XT de 12 GB con ROCm, en unos 23 minutos, usando Unsloth Studio para entrenamiento, merge y conversion a GGUF mediante llama.cpp. La perdida final suavizada se situo en el rango 0,7-1,0, un valor bajo que el autor atribuye a datos sinteticos limpios. El ajuste es deliberadamente ligero para preservar el conocimiento y el razonamiento del modelo base.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno, con un tono mas natural y directo que el del modelo base.
-- Brainstorming y generacion de ideas, segun la ficha del autor.
-- Explicaciones simplificadas de conceptos tecnicos (el ejemplo incluido es explicar que es un modelo cuantizado "como si tuviera cinco anos").
-- Escritura creativa y conversacion informal (banter).
-- Cero rechazos por diseno, heredado de la abliteracion del modelo base.
-- Entrada de imagen opcional mediante el archivo mmproj y llama-mtmd-cli, si el usuario lo descarga.
-- Tool calling / function calling: no documentado en la informacion disponible.
-- Soporte de agentes y razonamiento multi-paso: no documentado.
-- Capacidades multilingues: no documentadas; el unico idioma etiquetado es el ingles.
-- Modo de razonamiento explicito (thinking mode): no documentado.
+- Generacion de texto conversacional con tono natural, directo y sin respuestas corporativas.
+- Comportamiento de cero rechazos (zero-refusal) heredado de la base abliterated: no introduce advertencias ni sermones a mitad de conversacion.
+- Brainstorming y generacion de ideas.
+- Explicaciones simplificadas de conceptos complejos (por ejemplo, explicar un modelo cuantizado "como a un nino de cinco anos").
+- Escritura creativa y charla informal (casual banter).
+- Capacidad multimodal opcional si se descarga el archivo `mmproj` (proyeccion de vision) para entrada de imagenes; para uso solo de texto no es necesario.
+- Compatibilidad con endpoints OpenAI-compatible a traves de llama-server y otros frontends.
+- Soporte de plantilla Jinja (`--jinja`) en llama.cpp.
+- No se documenta soporte explicito de tool calling, function calling, agentes o modo thinking en la informacion disponible.
 
 ## Casos de uso
 
-- Asistente conversacional local y privado: el modelo funciona integramente en local con llama-server y un frontend compatible con OpenAI, de modo que ninguna conversacion sale del equipo. Adecuado para usuarios que priorizan privacidad.
-- Generacion creativa y escritura de ficcion corta: el ajuste con Airoboros y el tono desinhibido lo hacen util para borradores narrativos y ejercicios de estilo, aunque el autor aclara que no es un especialista en roleplay de formato largo.
-- Brainstorming en sesiones de producto o diseno: el modo conversacional permite iterar ideas rapidamente con temperatura alta (0,8-1,0) sin rigidez de asistente corporativo.
-- Explicaciones didacticas de conceptos tecnicos: util como tutor informal para resumir o simplificar material, con la advertencia de que puede alucinar datos concretos.
-- Prototipado de frontends y pruebas de integracion: al exponer una API compatible con OpenAI via llama-server en el puerto 8080, sirve para validar interfaces (Open WebUI, SillyTavern) sin coste de API.
-- Descripcion y analisis de imagenes en local: si se descarga el archivo mmproj, se puede usar llama-mtmd-cli para tareas de vision sencillas (descripcion, lectura de capturas) en un equipo de consumo.
-- Base para experimentacion en ajuste fino: al ser un finetune ligero (1.000 pasos, QLoRA rango 16), es un punto de partida barato para que investigadores reproduzcan pipelines de Unsloth en GPU AMD.
+- Companero de conversacion local y privado: el modelo esta disenado para charla diaria sin filtros corporativos, ejecutable en local con llama.cpp o LM Studio, lo que permite conversaciones privadas sin enviar datos a servicios externos.
+- Brainstorming y generacion de ideas: su entrenamiento sobre Airoboros 3.2 lo hace adecuado para sesiones de lluvia de ideas, exploracion de enfoques creativos y generacion de alternativas sin las restricciones tipicas de modelos alineados de forma conservadora.
+- Explicaciones divulgativas: puede reformular conceptos tecnicos en lenguaje sencillo y con ejemplos cotidianos, util para materiales educativos o documentacion introductoria.
+- Escritura creativa y narrativa breve: adecuado para relatos cortos, dialogos y textos de ficcion donde se busca un tono natural y sin autocensura, aunque no esta especializado en roleplay de formato largo.
+- Prototipado de asistentes conversacionales: al ser compatible con la API de OpenAI mediante llama-server, puede integrarse rapidamente en prototipos de chatbots y frontends como Open WebUI o SillyTavern antes de invertir en modelos mayores.
+- Experimentacion con modelos abliterated: sirve como caso de estudio de ajuste fino QLoRA sobre una base sin rechazos, util para investigadores que quieran reproducir el pipeline (Unsloth + llama.cpp) en hardware de consumo.
+- Despliegue en hardware modesto: con cuantizacion Q8_0 (~5,1 GB) cabe en GPUs de consumo de 8-12 GB, lo que permite entornos de pruebas locales sin infraestructura de datacenter.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye evaluaciones de MMLU, HumanEval, GSM8K ni de ningun otro conjunto, y tampoco ofrece comparaciones numericas con el modelo base. Tampoco se documentan metricas de latencia o throughput en inferencia.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el archivo Q8_0 ocupa ~5,1 GB, por lo que el modelo entra en GPUs de 8 GB con margen ajustado y se ejecuta comodamente en 12 GB, dejando espacio para la cache KV con contexto de 4096-8192.
-- GPU recomendadas: cualquier GPU con 8-12 GB o mas de VRAM. El autor lo ejecuto en una AMD Radeon RX 6700 XT de 12 GB (ROCm). Equivalentes en NVIDIA: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090.
-- GPU de consumo: si, cabe en GPUs de consumo. El propio entrenamiento y la inferencia se realizaron en una GPU de gama media de 12 GB.
-- Opciones de despliegue: llama.cpp (llama-cli y llama-server con --jinja), LM Studio, KoboldCpp, llama-mtmd-cli para multimodal y cualquier frontend compatible con OpenAI (Open WebUI, SillyTavern).
-- Configuracion recomendada por el autor: contexto de 4096-8192, temperatura 0,8-1,0 (0,85 por defecto), penalizacion de repeticion 1,10-1,15 y sin system prompt especial.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: aproximadamente 5,5-6,5 GB con la cuantizacion Q8_0 (~5,1 GB de pesos mas overhead de contexto y KV cache); con contexto de 8192 la KV cache anade consumo adicional no cuantificado en la informacion disponible.
+- GPU recomendadas: cualquier GPU con 8 GB o mas de VRAM para Q8_0; el autor entreno en una AMD RX 6700 XT de 12 GB (ROCm), lo que confirma viabilidad en gama media.
+- Cabe en GPU de consumo: si, en tarjetas de 8-12 GB como RX 6700 XT, RTX 3060 Ti/4060 Ti de 8 GB (ajustando contexto) o superiores. No se dispone de datos para GPUs de datacenter como A100 o H100, aunque por tamano serian sobradamente suficientes.
+- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`, `llama-mtmd-cli` para multimodal), LM Studio, KoboldCpp y cualquier frontend compatible con la API de OpenAI.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato / disponibilidad |
-|---|---|---|---|---|
-| Gemma-4-E2B-Conversational-Uncensored (este) | 4.647.450.147 | no disponible (recomendado 4096-8192) | Gemma Terms of Use | GGUF Q8_0, 0 descargas |
-| llmfan46/gemma-4-E2B-it-ultra-uncensored-heretic (modelo base) | no disponible | no disponible | Gemma Terms of Use | no disponible |
-| google/gemma-4-E2B-it (modelo original) | no disponible | no disponible | Gemma Terms of Use | no disponible |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Gemma-4-E2B-Conversational-Uncensored (este) | 4.647.450.147 | Entrenado a 2048; recomendado 4096-8192 | Gemma Terms of Use | GGUF Q8_0 | Finetune conversacional sin rechazos sobre base abliterated |
+| llmfan46/gemma-4-E2B-it-ultra-uncensored-heretic | no disponible | no disponible | Gemma Terms of Use | no disponible | Modelo base directo de este finetune; abliteration sin ajuste conversacional adicional |
+| google/gemma-4-E2B-it | no disponible | no disponible | Gemma Terms of Use | no disponible | Modelo original de Google, con alineacion estandar y rechazos |
 
-No se dispone de datos de rendimiento comparado entre estas variantes en la informacion proporcionada.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo sin censura por diseno: la abliteracion elimina los rechazos del modelo original, por lo que puede generar contenido ofensivo, peligroso o ilegal si se le solicita. El usuario es responsable del uso y de cumplir la legislacion local.
-- Riesgo de alucinacion: al no existir evaluaciones publicadas, no hay medida objetiva de su fiabilidad factual; la perdida de entrenamiento baja (0,7-1,0) se atribuye a datos sinteticos limpios y no garantiza correccion.
-- La ficha indica explicitamente que no esta pensado para tareas de asesoramiento medico, legal o financiero.
-- Limitacion de contexto: se entreno con 2048 tokens y solo se recomienda operar entre 4096 y 8192; mas alla de ese rango el comportamiento puede degradarse.
-- Idioma: solo se etiqueta el ingles; no hay evidencia de capacidades multilingues y el espanol no esta garantizado.
-- Licencia: hereda los Gemma Terms of Use a traves de la cadena de modelos base. La abliteracion no elimina las condiciones de la licencia, por lo que el uso comercial queda sujeto a dichos terminos.
-- Estado de adopcion: 0 descargas y 0 "likes" en el momento de la consulta, sin validacion por parte de la comunidad.
-- Cuantizacion limitada: solo se publica Q8_0; no hay variantes de menor precision (Q4, Q5) listas para GPUs mas pequenas.
-- No es un especialista en roleplay de formato largo, segun advierte el propio autor.
-- Fecha de creacion y actualizacion del repositorio: 3 de octubre de 2026.
+- Modelo sin censura por diseno: las salidas no estan filtradas; el usuario es responsable del contenido generado y del cumplimiento de la legislacion local.
+- Riesgo de alucinacion: como todo modelo de lenguaje, puede generar informacion falsa con aparente seguridad; no debe usarse para asesoramiento medico, legal o financiero.
+- Idiomas: el tag del modelo indica solo ingles; el rendimiento en castellano no esta documentado y probablemente sea inferior.
+- Contexto limitado en entrenamiento (2048 tokens): aunque se recomienda usar 4096-8192 en inferencia, el modelo no fue entrenado con esa longitud, lo que puede degradar la coherencia en conversaciones muy largas.
+- Licencia Gemma: el uso comercial esta sujeto a los Gemma Terms of Use de Google, que imponen restricciones y obligaciones especificas; debe revisarse antes de cualquier despliegue en produccion.
+- Ajuste ligero: 1.000 pasos de QLoRA sobre una base abliterated; el autor advierte que no es un especialista en roleplay de formato largo.
+- Datos de entrenamiento sinteticos y sin validacion: la perdida final baja (0,7-1,0) se atribuye a datos limpios, pero no hay evaluacion independiente publicada.
+- Sin benchmarks publicados: no hay evidencia cuantitativa de rendimiento frente a alternativas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/minas2025/Gemma-4-E2B-Conversational-Uncensored
-- Modelo base (abliteracion Heretic): https://huggingface.co/llmfan46/gemma-4-E2B-it-ultra-uncensored-heretic
+- Modelo base (abliteration): https://huggingface.co/llmfan46/gemma-4-E2B-it-ultra-uncensored-heretic
 - Modelo original de Google: https://huggingface.co/google/gemma-4-E2B-it
 - Dataset de entrenamiento: https://huggingface.co/datasets/jondurbin/airoboros-3.2
-- Herramienta de entrenamiento y conversion: Unsloth y llama.cpp (sin URL concreta en la informacion proporcionada)
-- Nota sobre la busqueda web: los resultados devueltos no guardan relacion con el modelo (contenido sobre la plataforma Twitch), por lo que no se incluye ningun enlace adicional de la busqueda.
+- Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
+- llama.cpp (inferencia y conversion GGUF): https://github.com/ggml-org/llama.cpp

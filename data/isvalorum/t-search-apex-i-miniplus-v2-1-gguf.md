@@ -2,115 +2,94 @@
 
 ## Resumen
 
-T-Search APEX-I-MiniPlus-V2.1-GGUF es una cuantización GGUF personalizada del modelo t-tech/T-Search, una arquitectura de mezcla de expertos (MoE) de 35,5 mil millones de parámetros diseñada como recuperador agéntico: planifica consultas, ejecuta búsquedas en varias rondas y sintetiza cadenas de evidencia verificables. La cuantización la firma el usuario IsValorum y se distribuye bajo licencia Apache 2.0, con soporte declarado para 13 idiomas (inglés, chino, español, francés, alemán, portugués, italiano, ruso, japonés, coreano, vietnamita, tailandés y árabe).
+T-Search APEX-I-MiniPlus-V2.1-GGUF es una cuantización artesanal, tensor a tensor, del modelo T-Search desarrollado por t-tech. Se trata de un transformer de mezcla de expertos (MoE) con 35.505.251.456 parámetros totales, diseñado específicamente como recuperador agéntico: planifica consultas, ejecuta búsquedas en múltiples rondas y sintetiza cadenas de evidencia verificables. Esta versión GGUF, publicada por IsValorum, está pensada para inferencia en llama.cpp con un equilibrio agresivo entre tamaño en disco (15,23 GB) y fidelidad de razonamiento.
 
-El interés de esta publicación no está en el modelo base, sino en la estrategia de cuantización. Frente a los cuantizados comunitarios uniformes que comprimen los expertos a 2 bits y degradan las matrices de enrutamiento, este build aplica una receta tensor por tensor: mantiene los routers (`gate_inp`) en F32 sin comprimir, la cabeza de salida en Q6_K, las puertas de atención en Q8_0 y los expertos centrales en IQ3_XXS. El resultado declarado ocupa 15,23 GB (14,18 GiB) para el GGUF principal, muy por debajo de la referencia Q3_K_M de 16,7 GB, con una perplejidad WikiText-2 de 5,6716 ± 0,12975.
+La relevancia de esta ficha reside en que las cuantizaciones comunitarias convencionales degradan las matrices de enrutamiento y las feed-forward de los expertos a codebooks de 2 bits, lo que corrompe las trayectorias de planificación de búsqueda y provoca filtros de consulta alucinados. Esta edición mantiene las puertas de enrutamiento (`gate_inp`, `gate_shexp`) en F32 sin comprimir, protege la cabeza de salida de tokens en Q6_K y las proyecciones de atención en Q8_0, con una perplejidad media de 5,6716 frente a 5,62 del BF16 de referencia (ΔPPL +0,92 %).
 
-Además, el repositorio incluye un proyector multimodal de visión en Q8_0 (`mmproj`), lo que habilita recuperación visual sin cuantizar los tokens de imagen. El autor afirma que el contexto completo de 256K tokens puede ejecutarse íntegramente en VRAM en estaciones de trabajo de 24 GB, un dato relevante para despliegues de agentes de búsqueda de contexto largo en hardware de gama alta para consumidor.
+El modelo declara soporte para 13 idiomas (en, zh, es, fr, de, pt, it, ru, ja, ko, vi, th, ar), licencia Apache 2.0 y compatibilidad con endpoints. Incluye además un proyector de visión multimodal Q8_0 empaquetado (`mmproj`), lo que lo convierte en una opción poco habitual dentro del ecosistema GGUF para tareas de recuperación con entrada visual.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de mezcla de expertos (MoE); la etiqueta del repositorio indica `qwen35moe`, 40 capas y 256 micro-expertos según la model card |
-| Parametros totales | 35.505.251.456 (35,5 B) |
+| Arquitectura | Transformer MoE (mezcla de expertos), 40 capas, 256 micro-expertos; etiquetado como `qwen35moe` |
+| Parametros totales | 35.505.251.456 |
 | Parametros activos | no disponible |
-| Longitud de contexto | 262.144 tokens (256K) según la model card |
-| Tipos de cuantizacion | Mezcla por tensor: IQ3_XXS (expertos centrales), Q3_K (expertos de borde), Q5_K (experto compartido), Q4_K y Q6_K (atención), Q8_0 (puertas de atención y proyector de visión), Q6_K (cabeza de salida), F32 (routers) |
-| Idiomas soportados | en, zh, es, fr, de, pt, it, ru, ja, ko, vi, th, ar (13 idiomas) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp); proyector multimodal `mmproj` en GGUF Q8_0 distribuido por separado |
-
-Datos adicionales de distribución: el repositorio ocupa 15,8 GB; el GGUF principal pesa 15,23 GB (14,18 GiB) y el conjunto con proyector 15,84 GB (14,75 GiB). El modelo base es [t-tech/T-Search](https://huggingface.co/t-tech/T-Search) y la calibración de importancia (`imatrix`) procede de bartowski, según la model card.
+| Longitud de contexto | 256K (según model card) |
+| Tipos de cuantizacion | GGUF custom tensor a tensor; media de 3,43 BPW; mezcla de F32, Q8_0, Q6_K y tipos de menor precisión en expertos no críticos; incluye `imatrix` |
+| Idiomas soportados | en, zh, es, fr, de, pt, it, ru, ja, ko, vi, th, ar |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (llama.cpp); repo de 15,8 GB; archivo principal de 15,23 GB |
 
 ## Arquitectura y entrenamiento
 
-La información disponible describe el modelo base como una arquitectura MoE especializada en recuperación agéntica. La model card de la cuantización menciona 40 capas, 256 micro-expertos y un experto compartido (`shexp`) presente en las 40 capas, con matrices de enrutamiento (`gate_inp`) que dirigen las consultas de búsqueda y los tokens de evidencia. La etiqueta `qwen35moe` del repositorio apunta a una arquitectura de la familia Qwen con enrutamiento disperso, pero la model card no confirma de forma explícita la genealogía arquitectónica, el número de expertos activos por token ni la configuración de atención (GQA, ventana deslizante, etc.). El dato de parámetros activos no está disponible.
+La arquitectura es un transformer de mezcla de expertos con 40 capas y 256 micro-expertos, etiquetado en los tags como `qwen35moe`, lo que sugiere una base derivada de la familia Qwen 3.5 MoE. El modelo está especializado como recuperador agéntico: planifica, ejecuta búsquedas en múltiples rondas y sintetiza evidencia. La model card no detalla el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO; esos datos figuran como no disponibles.
 
-No hay información sobre el volumen de tokens de entrenamiento, la composición del dataset, ni sobre si se aplicaron técnicas de alineación como RLHF, DPO o RLVR. Tampoco se documentan innovaciones de decodificación (decodificación especulativa, atención lineal) en el material proporcionado. Lo que sí se detalla es la intervención de cuantización: auditada tensor por tensor, con routers sin comprimir, protección de la cabeza de salida y de las puertas de atención, y una matriz de importancia para calibrar los expertos. Esta estrategia busca evitar la deriva de enrutamiento y los fallos de sintaxis que el autor atribuye a los cuantizados comunitarios uniformes en 2 bits.
+La innovación técnica principal de esta release no está en el entrenamiento sino en la cuantización: es un proceso 100 % artesanal, tensor a tensor, con matrices de importancia calibradas (`imatrix`) y overrides matemáticos de precisión. Las puertas de enrutamiento se preservan en F32 para evitar deriva del router, la cabeza de salida de tokens se protege en Q6_K y las proyecciones de atención se mantienen en Q8_0. El paquete incluye un proyector de visión multimodal Q8_0 de alta precisión. La model card menciona decodificación especulativa MTP integrada en `llama-server` y una plantilla de chat endurecida para agentes con control de esfuerzo de razonamiento.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno en 13 idiomas, con especial atención a inglés y chino por el origen del modelo base.
-- Recuperación agéntica: planificación de consultas, ejecución de búsquedas en múltiples rondas y síntesis de cadenas de evidencia con trazabilidad de citas.
-- Razonamiento con modo de pensamiento: la model card menciona explícitamente errores de sintaxis en bloques `<think>` como síntoma de cuantizaciones agresivas, lo que implica soporte de modo razonamiento.
-- Recuperación multimodal: el proyector `mmproj` en Q8_0 permite procesar tokens visuales, según el autor con latencia cero añadida.
-- Capacidades multilingües declaradas para 13 idiomas, incluyendo español, árabe, tailandés y vietnamita.
-- Integración con `llama.cpp` y ecosistema GGUF (Ollama, LM Studio y similares).
-- El soporte explícito de tool calling o function calling no está documentado en la información disponible, aunque la naturaleza de agente de búsqueda implica algún mecanismo de invocación de herramientas.
+- Generación de texto y razonamiento multi-paso orientado a agentes.
+- Recuperación agéntica: planificación de consultas, ejecución de búsquedas en múltiples rondas y síntesis de cadenas de evidencia verificables.
+- Razonamiento con modo de esfuerzo configurable mediante plantilla de chat endurecida.
+- Capacidades multimodales de visión gracias al proyector `mmproj` Q8_0 empaquetado.
+- Soporte multilingüe en 13 idiomas, incluidos español, chino, inglés, francés, alemán, portugués, italiano, ruso, japonés, coreano, vietnamita, tailandés y árabe.
+- Compatibilidad con endpoints (`endpoints_compatible`).
+- Integración con llama.cpp, incluido `llama-server` con decodificación especulativa MTP.
+- Soporte de tool calling y function calling: no disponible de forma explícita en la información proporcionada, aunque el diseño agéntico y la plantilla de chat lo hacen plausible; no se confirma.
 
 ## Casos de uso
 
-- Investigación profunda automatizada: el modelo puede encadenar varias rondas de búsqueda sobre un corpus documental y devolver un informe con evidencia citada, aprovechando la ventana de 256K tokens para mantener todo el material recuperado en contexto.
-- Asistentes de atención al cliente con base de conocimiento: conversaciones multi-turno con recuperación de artículos internos y respuestas ancladas a fuentes, evitando respuestas sin respaldo.
-- Análisis de documentación técnica extensa: ingestión de manuales, normativas o contratos de cientos de miles de tokens y generación de resúmenes con referencias cruzadas verificables.
-- Verificación de hechos y periodismo asistido: construcción de cadenas de evidencia a partir de múltiples fuentes y detección de contradicciones entre documentos.
-- Recuperación visual en pipelines RAG multimodales: con el `mmproj` incluido, el sistema puede indexar y consultar capturas, diagramas o páginas escaneadas junto a texto.
-- Agentes autónomos de monitorización: ejecución periódica de búsquedas sobre fuentes cambiantes y generación de alertas con justificación documental.
-- Despliegue local en estaciones de trabajo: el tamaño de 14,18 GiB permite ejecutar un modelo de 35,5 B en una GPU de 24 GB con el contexto completo en VRAM, lo que habilita flujos de trabajo con datos sensibles que no pueden salir de la infraestructura propia.
+- Investigación profunda automatizada: el modelo planifica consultas sucesivas, ejecuta búsquedas en múltiples rondas y sintetiza evidencia con trazabilidad, aprovechando su contexto de 256K para mantener el hilo de una investigación larga.
+- Agentes de recuperación de documentos internos: integrado en un pipeline RAG, el modelo genera filtros de consulta precisos y evita la alucinación de operadores de búsqueda gracias a la preservación de las puertas de enrutamiento en F32.
+- Asistente de atención al cliente con base de conocimiento: gestiona conversaciones multi-turno con contexto largo y recupera fragmentos relevantes de documentación para responder con evidencia.
+- Análisis de documentos con imágenes: el proyector de visión Q8_0 permite procesar capturas, diagramas o páginas escaneadas junto con texto para extraer y sintetizar información.
+- Despliegue en estaciones de trabajo de 24 GB: con 15,23 GB en disco y 14,18 GiB de huella, permite ejecutar el contexto completo de 256K en VRAM en una GPU de 24 GB, habilitando agentes de búsqueda de larga duración en hardware de consumo profesional.
+- Inferencia en CPU con streaming desde RAM: en configuraciones sin GPU suficiente, el modelo puede ejecutarse total o parcialmente desde memoria del sistema a 20-45 tok/s según el procesador y el ancho de banda DDR4/DDR5.
+- Generación de código asistida por búsqueda: la model card advierte sobre la penalización de repetición y el intercambio de caracteres en sintaxis de código, por lo que su uso en código requiere ajustar los parámetros de generación recomendados por t-tech.
 
 ## Benchmarks y rendimiento
 
-La model card solo publica una métrica de fidelidad de cuantización: perplejidad en WikiText-2, evaluada sobre el binario GGUF con 2048 tokens de contexto y 10 fragmentos.
+| Especificación | Tamano en disco | Huella en RAM/VRAM | BPW medio | Perplejidad WikiText-2 | Nivel de calidad equivalente |
+|---|---|---|---|---|---|
+| BF16 sin cuantizar (referencia) | ~70,0 GB | ~65,2 GiB | 16,00 | ~5,62 | Línea base de precisión completa |
+| APEX-I-MiniPlus V2.1 | 15,23 GB | 14,18 GiB | 3,43 | 5,6716 ± 0,12975 (ΔPPL +0,0516 / +0,92 %) | Nivel Q5_K_L (rozando Q6_K) |
 
-| Metrica | Resultado | Condiciones |
-|---|---|---|
-| Perplejidad WikiText-2 | 5,6716 ± 0,12975 | GGUF, contexto 2048, 10 chunks |
-| Delta frente al baseline sin cuantizar | aproximadamente +0,05 | Según el autor |
-
-No se han publicado resultados de benchmarks en la información disponible para MMLU, HumanEval, GSM8K, GPQA ni evaluaciones específicas de recuperación (como BEIR o MTEB). Tampoco hay comparaciones numéricas frente a otros modelos de la misma categoría más allá de la tabla interna de variantes de cuantización descrita a continuación.
-
-Comparativa interna de recetas de cuantización publicada por el autor:
-
-| Especificacion | APEX Mini genérico | MiniPlus V2.1 (esta release) |
-|---|---|---|
-| Expertos centrales (10-29) | IQ2_S (2,50 bpw) | IQ3_XXS |
-| Expertos de borde (0-9, 30-39) | Q3_K en 5 capas | Q3_K en 10 capas |
-| Experto compartido | Q4_K / Q3_K | Q5_K en las 40 capas |
-| Atención completa | Q3_K | Q4_K en q/k/v y Q6_K en output |
-| Puertas de atención | Comprimidas | Q8_0 |
-| Cabeza de salida | Q3_K_M | Q6_K |
-| Routers | Comprimidos | F32 |
-| Tamano aproximado | unos 12,5 GB | 14,18 GiB (15,23 GB) |
+No se han publicado en la información disponible resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K u otros); solo se aporta la perplejidad en WikiText-2 y las métricas de rendimiento de hardware descritas en la sección de requisitos.
 
 ## Requisitos de hardware
 
-- VRAM para los pesos: aproximadamente 14,2 GiB para el GGUF principal y 14,75 GiB incluyendo el proyector de visión. Cifras calculadas a partir del tamaño publicado.
-- Caché KV para 256K tokens: no disponible en la información proporcionada; el autor afirma que el contexto completo cabe en VRAM en máquinas de 24 GB, lo que implica que la caché debe ser reducida (probablemente por GQA y cuantización de la propia KV), pero no se dan cifras.
-- GPU de 24 GB: RTX 3090, RTX 4090, A5000, L4 (esta última con menos margen) permitirían el modelo completo en VRAM según el autor.
-- GPU de 32 GB o más: RTX 5090, V100 32GB, A100 40GB, H100, con margen para contexto largo y trabajo concurrente.
-- GPU de 16 GB (RTX 4080, 4060 Ti 16GB, A4000): ejecución viable con offload parcial de capas a RAM del sistema, con penalización de velocidad.
-- CPU y RAM del sistema: el autor destaca el streaming desde DDR4/DDR5 y la ausencia de bloqueos de descompresión AVX2 cuando se descarga la mayor parte del modelo a memoria del sistema.
-- Opciones de despliegue: `llama.cpp` y sus derivados (llama-server, Ollama, LM Studio, koboldcpp) son el entorno natural para GGUF. El soporte de vLLM o TGI para esta arquitectura y formato no está documentado en la información disponible.
-- Latencia y throughput: no se publican cifras concretas de tokens por segundo; la model card solo menciona de forma cualitativa un rendimiento alto de streaming desde RAM.
+- Huella de memoria del modelo: 14,18 GiB en RAM/VRAM; archivo en disco de 15,23 GB.
+- Contexto completo de 256K en VRAM: viable en GPU de 24 GB (la model card lo denomina "el milagro de 24 GB").
+- GPU recomendadas: no se especifican modelos concretos en la información; la model card menciona benchmarks de offload para RTX 30, RTX 40 y RTX 50.
+- Inferencia en CPU/RAM: 20-45 tok/s según procesador, ancho de banda de memoria y configuración DDR4/DDR5.
+- Offload parcial: permite colocar el modelo y el contexto que no caben en VRAM en memoria del sistema, manteniendo generación estable en contextos largos.
+- Opciones de despliegue: llama.cpp (`llama-server` con decodificación especulativa MTP integrada, y CLI directo para arnés de recuperación agéntica); compatible con endpoints.
+- Latencia y throughput: no se publican cifras detalladas por GPU en la información disponible; solo el rango de 20-45 tok/s en CPU/RAM.
 
 ## Comparativa con modelos similares
 
-La información disponible no incluye datos comparativos frente a otros modelos de 35B de terceros, por lo que la comparación se limita al modelo base y a las variantes de cuantización documentadas por el autor.
-
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| t-tech/T-Search (base, sin cuantizar) | 35,5 B | 256K según la ficha de la cuantización | safetensors, presumiblemente | no disponible | Hugging Face |
-| IsValorum/T-Search-APEX-I-MiniPlus-V2.1-GGUF | 35,5 B | 256K | GGUF mixto, ~14,18 GiB | apache-2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
-| APEX-I-Mini genérico (cuantización comunitaria) | 35,5 B | 256K | GGUF uniforme, ~12,5 GB | no disponible | Referenciado en la model card |
+| T-Search APEX-I-MiniPlus V2.1 (esta ficha) | 35,5 B totales (MoE) | 256K | Apache 2.0 | GGUF custom 3,43 BPW | Cuantización artesanal con router en F32 y visión Q8_0 |
+| T-Search (base t-tech) | 35,5 B totales (MoE) | 256K | Apache 2.0 | Safetensors/BF16 | Modelo original sin cuantizar, ~70 GB |
+| APEX-I-Mini genérico de la comunidad | 35,5 B (mismo base) | 256K | Apache 2.0 | GGUF IQ2_S/Q3_K | Expertos a 2 bits, cabeza de salida a 3 bits; mayor degradación en agentes de recuperación |
 
-Comparación con alternativas externas de la misma categoría (por ejemplo, otros MoE de ~30-35B orientados a agentes): no disponible.
+No se dispone de datos de benchmarks comparativos con modelos de otras familias en la información proporcionada, por lo que la comparación se limita a variantes del mismo modelo base.
 
 ## Limitaciones y advertencias
 
-- La cuantización introduce pérdida de precisión inevitable. El autor reporta un delta de perplejidad de aproximadamente +0,05, pero no hay evaluaciones independientes que lo confirmen.
-- Los expertos centrales se mantienen en IQ3_XXS (aproximadamente 3 bits), por debajo de Q4. En tareas de razonamiento prolongado o de generación de código con sintaxis estricta puede aparecer degradación frente al modelo sin cuantizar.
-- Riesgo de alucinación en cadenas de evidencia: si el enrutamiento falla o el contexto recuperado es irrelevante, el modelo puede generar citas o filtros de búsqueda plausibles pero incorrectos.
-- El repositorio registra 0 descargas y 0 likes, y no hay validación de la comunidad ni evaluaciones de terceros. La ficha se basa casi por completo en afirmaciones del propio autor de la cuantización.
-- El rendimiento en los 13 idiomas declarados no está verificado; los idiomas con menos presencia en los datos del modelo base probablemente rindan peor.
-- Licencia Apache 2.0 declarada para el artefacto GGUF, pero no se detalla la licencia del modelo base t-tech/T-Search en la información disponible. Conviene verificar los términos del modelo original antes de un uso comercial.
-- La arquitectura MoE con etiqueta `qwen35moe` requiere una versión de `llama.cpp` que soporte esta arquitectura y los tipos de cuantización mixtos empleados (IQ3_XXS, Q5_K, etc.); versiones antiguas pueden fallar al cargar el modelo.
-- El proyector de visión solo funciona en runtimes que soporten `mmproj`; sin él, el modelo queda limitado a texto.
-- Los 256K tokens de contexto son una ventana nominal, no una garantía de recuperación efectiva en todo el rango; la degradación en el extremo de la ventana no está documentada.
-- La fecha de creación del repositorio indicada por la plataforma (2026-09-21) es posterior a la fecha de consulta habitual de estos datos; conviene verificar la vigencia del artefacto antes de integrarlo en producción.
+- La model card advierte de que las cuantizaciones comunitarias genéricas del mismo modelo base degradan el enrutamiento y provocan alucinación de operadores de búsqueda; esta release mitiga el problema, pero sigue siendo una cuantización de 3,43 BPW con una pérdida de perplejidad de +0,92 % respecto al BF16.
+- Riesgo de alucinación inherente a modelos de razonamiento y recuperación, especialmente en la generación de filtros de consulta y cadenas de evidencia.
+- Advertencia específica sobre sintaxis de código: la model card incluye un aviso crítico sobre la penalización de repetición y el intercambio de caracteres en código; es necesario ajustar los parámetros de generación recomendados por t-tech para evitar corrupción de sintaxis.
+- Sesgos conocidos: no disponible en la información proporcionada.
+- Limitaciones de idioma: aunque declara 13 idiomas, no se aportan evaluaciones por idioma; el rendimiento en lenguas distintas del inglés y el chino no está verificado.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero debe verificarse la licencia del modelo base t-tech/T-Search y el cumplimiento de las condiciones de atribución.
+- La cuantización es una obra derivada de un tercero (IsValorum) no afiliado a t-tech; la fidelidad respecto al original está verificada solo mediante perplejidad en WikiText-2, no mediante benchmarks de tareas agénticas.
+- El rendimiento en CPU depende fuertemente del ancho de banda de memoria; los 20-45 tok/s son un rango orientativo, no una garantía.
 
 ## Enlaces
 
-- [IsValorum/T-Search-APEX-I-MiniPlus-V2.1-GGUF en Hugging Face](https://huggingface.co/IsValorum/T-Search-APEX-I-MiniPlus-V2.1-GGUF)
-- [Modelo base t-tech/T-Search en Hugging Face](https://huggingface.co/t-tech/T-Search)
-- Búsqueda web: no se han encontrado resultados relevantes. Las consultas devolvieron únicamente páginas de inicio y formularios de acceso de Facebook, sin relación con el modelo, por lo que no se dispone de papers, blogs, repositorios ni demos adicionales verificables.
+- Repositorio Hugging Face: https://huggingface.co/IsValorum/T-Search-APEX-I-MiniPlus-V2.1-GGUF
+- Modelo base: https://huggingface.co/t-tech/T-Search
+- Apoyo al autor de la cuantización: https://ko-fi.com/isvalorum

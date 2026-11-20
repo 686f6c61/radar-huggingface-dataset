@@ -52,16 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GitHub - daanvancamp/gomoku-AI: A model trained using reinforcement ...",
-      "url": "https://github.com/daanvancamp/gomoku-AI",
-      "snippet": "A model trained using reinforcement learning that can play gomoku (five in a row) - daanvancamp/gomoku-AI"
-    },
-    {
-      "title": "Gomoku AI Project | Gomoku-AI - whyb.github.io",
-      "url": "https://whyb.github.io/Gomoku-AI/README.en.html",
-      "snippet": "Gomoku-AI Gomoku AI Project 中文文档 This project is a Gomoku AI implemented with PyTorch. Player 1 is the primary training target, while Player 2 acts as a sparring model that helps Player 1 improve. Inspired by the classic AlphaZero design, the project uses deep learning and a neural-network training pipeline based on a deep residual ResNet architecture and reinforcement learning to ..."
-    }
-  ]
+  "sources": []
 }

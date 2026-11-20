@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 1193,
+  "downloads_30d": 1151,
   "trending_score": 0,
   "parameters": 296960,
   "parameters_human": "296960",
@@ -48,31 +48,5 @@
   "renamed_to": "SLM-Archive/LowOnMind-300k",
   "renamed_at": "2026-11-11T02:37:16.262Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "DedeProGames (DedeProGames) - Hugging Face",
-      "url": "https://huggingface.co/DedeProGames/datasets",
-      "snippet": "AI & ML interests ... Recent Activity new activity about 8 hours ago ... updated a model about 10 hours ago"
-    },
-    {
-      "title": "Rebuilding Among AIs from Six Log Files - AI Storm",
-      "url": "https://aistorm.cc/rebuilding-among-ais-from-six-log-files/",
-      "snippet": "Developer DedeProGames reverse-engineered a social-deduction game&#x27;s engine and 59×34 map from six log files to build a benchmark for evaluating language models&#x27; reasoning and deception abilities. The project ran 90 games across six models in the 27-31 billion parameter range, separating each model&#x27;s private reasoning from its public output."
-    },
-    {
-      "title": "DedeProGames (DedeProGames) - Hugging Face",
-      "url": "https://huggingface.co/DedeProGames/models",
-      "snippet": "AI & ML interests ... Recent Activity published a model about 1 month ago ... updated a Space about 1 month ago"
-    },
-    {
-      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
-      "url": "https://mossymodels.com/",
-      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
-    },
-    {
-      "title": "DedeProGames (DedeProGames) - Community Activity",
-      "url": "https://hf-p-cfw.fyan.top/DedeProGames/activity/community",
-      "snippet": "Discussions, Pull Requests and comments from DedeProGames on Hugging Face"
-    }
-  ]
+  "sources": []
 }

@@ -2,49 +2,52 @@
 
 ## Resumen
 
-Verfy-9B-GGUF es una recopilación de cuantizaciones estáticas en formato GGUF del modelo Verfy-9B, publicada por el usuario mradermacher en Hugging Face. El modelo base fue desarrollado por Rowhanissick y el repositorio de cuantizaciones se generó mediante el pipeline habitual de mradermacher para modelos de ~9.000 millones de parámetros. El dato de parámetros totales confirmado a partir de los pesos en safetensors es de 8.953.803.264, lo que sitúa al modelo en la categoría de 9B.
+Verfy-9B es un modelo de lenguaje de aproximadamente 8.950 millones de parametros (8.953.803.264 segun los pesos en safetensors) desarrollado originalmente por el usuario Rowhanissick bajo el identificador `Rowhanissick/Verfy-9B`. La version aqui documentada, `mradermacher/Verfy-9B-GGUF`, es una recuantizacion estatica en formato GGUF realizada por mradermacher, un conocido publicador de cuantizaciones de la comunidad, que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles.
 
-La relevancia de esta publicación es práctica: permite ejecutar Verfy-9B en hardware de consumo mediante llama.cpp y derivados (Ollama, LM Studio, etc.), con múltiples niveles de cuantización que van desde Q2_K hasta Q8_0, además de una versión x-f16. El repositorio ocupa 69,9 GB e incluye variantes IQ4_XS y Q4_K_S, pensadas para equilibrar calidad y huella de memoria en GPUs con VRAM limitada.
+El modelo se presenta en su model card como un agente autonomo orientado a tareas de ciberseguridad, pentesting y hacking etico, con capacidades declaradas de razonamiento, reflexion y autocorreccion, ademas de un supuesto "credential vault". Los tags incluyen terminos como `abliterated` y `uncensored`, lo que indica que se ha aplicado una tecnica de ablacion de direcciones de rechazo para eliminar los mecanismos de negativa del modelo base. El prefijo del tag `qwen` sugiere que la arquitectura subyacente deriva de la familia Qwen, aunque no se especifica la variante exacta.
 
-No se dispone de información publicada sobre la arquitectura interna, el contexto máximo, los idiomas soportados ni la licencia del modelo base en la documentación disponible. La model card del repositorio de cuantizaciones es mínima y se limita a indicar el origen de los pesos y la lista de cuantizaciones generadas.
+La relevancia practica de esta ficha reside en que ofrece una via de despliegue local de un modelo de 9B con licencia Apache 2.0, en un rango de cuantizaciones que va desde 3,9 GB (Q2_K) hasta 18 GB (f16), lo que lo hace accesible en GPUs de consumo. No obstante, conviene subrayar que la informacion tecnica publicada por el autor original es muy escasa y que las afirmaciones de la model card (agente autonomo, contexto de 1M, vault de credenciales) no vienen acompanadas de datos verificables.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
+| Arquitectura | Transformer (derivada de Qwen segun el tag `qwen`; variante exacta no disponible) |
 | Parametros totales | 8.953.803.264 (~8,95B) |
-| Parametros activos | no disponible (no consta que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas); pesos originales del modelo base no disponibles en este repo |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | 1M tokens declarados en los tags (`1m-context`); no verificado |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | Ingles (`en` en la model card); resto no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base original en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo base Verfy-9B en la documentación disponible. Por el tamaño de parámetros (8,95B) y la nomenclatura del repositorio, se trata de un transformer de aproximadamente 9.000 millones de parámetros, pero no se confirma si emplea atención estándar, atención lineal, mezcla de expertos u otra variante. Tampoco se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de RLHF, DPO u otras técnicas de alineación.
+La informacion disponible no detalla la arquitectura interna mas alla de la inferencia que se puede hacer a partir de los tags. El tag `qwen` apunta a que el modelo base original de Rowhanissick parte de una arquitectura de la familia Qwen (probablemente Qwen2.5 o Qwen3, dado el tamano de 9B), pero no se confirma ni la variante ni el numero de capas, dimensiones de atencion o tipo de normalizacion. Tampoco se especifica si emplea atencion completa o algun esquema de atencion lineal o dispersa que justifique la afirmacion de contexto de 1M tokens.
 
-En cuanto al proceso de cuantización, la model card indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que sugiere una conversión desde pesos en formato Hugging Face a GGUF mediante la herramienta de cuantización de llama.cpp, con cuantizaciones estáticas generadas a partir de los pesos del modelo original. No se indica si se empleó una matriz de importancia (imatrix) ni qué dataset de calibración se utilizó, datos que serían relevantes para evaluar la calidad de las cuantizaciones de baja precisión (Q2_K, Q3_K_S).
+Respecto al entrenamiento, la model card no aporta informacion sobre el volumen de tokens, la composicion del dataset, ni si se aplicaron fases de RLHF, DPO o fine-tuning supervisado. Los tags `abliterated` y `uncensored` indican que se ha realizado un proceso de ablacion de direcciones de rechazo sobre el modelo afinado, una tecnica que modifica los pesos para suprimir la tendencia a rechazar peticiones, pero no se documenta la metodologia concreta ni el impacto sobre capacidades generales. Los tags `reasoning`, `reflection` y `self-correcting` sugieren un entrenamiento orientado a cadenas de razonamiento con autocorreccion, si bien no hay evidencia publicada que lo respalde.
 
 ## Capacidades
 
-- Generación de texto conversacional: la etiqueta `conversational` del repositorio indica uso previsto para diálogo multi-turno.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede servirse a través de infraestructura de inferencia compatible con la API de Hugging Face.
-- Ejecución local mediante GGUF: todas las cuantizaciones publicadas permiten inferencia en CPU y GPU con llama.cpp y herramientas derivadas.
-- Capacidades específicas de razonamiento, código, matemáticas, visión o audio: no disponibles en la información proporcionada.
-- Soporte de tool calling o function calling: no disponible.
-- Soporte de agentes o razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponibles.
+- Generacion de texto conversacional en ingles, segun el tag `conversational` y el idioma declarado.
+- Razonamiento con reflexion y autocorreccion declarados (tags `reasoning`, `reflection`, `self-correcting`), sin datos de validacion.
+- Orientacion a tareas de agente autonomo y computer-use (tags `os-agent`, `autonomous-agent`, `computer-use`).
+- Enfoque declarado en ciberseguridad, pentesting y hacking etico (tags `cybersecurity`, `penetration-testing`, `ethical-hacking`), sin benchmarks publicados.
+- Supuesto "credential vault" (tag `credential-vault`), funcionalidad no documentada tecnicamente.
+- Contexto largo declarado de hasta 1M tokens (tag `1m-context`), no verificado.
+- Modelo "abliterated"/"uncensored": menor tendencia a rechazar peticiones, con los riesgos asociados.
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Capacidades multimodales (vision, audio): no disponibles.
 
 ## Casos de uso
 
-- Despliegue local en estaciones de trabajo: las cuantizaciones Q4_K_M e IQ4_XS permiten ejecutar el modelo en GPUs de consumo con 8-12 GB de VRAM, útil para prototipado de asistentes conversacionales sin depender de servicios en la nube.
-- Experimentación con cuantización: el repositorio ofrece doce variantes de precisión, lo que permite comparar la degradación de calidad entre Q2_K y Q8_0 sobre el mismo modelo base en tareas de evaluación propias.
-- Integración en aplicaciones de chat: al estar etiquetado como conversacional y ser compatible con endpoints, puede conectarse a frontends tipo Open WebUI o interfaces propias mediante una API compatible con OpenAI servida por llama.cpp.
-- Evaluación comparativa de modelos de 9B: sirve como punto de comparación frente a otros modelos de tamaño similar cuantizados por el mismo autor (Viper-9B, HERO-9B) en pruebas internas de calidad y latencia.
-- Fine-tuning ligero sobre GGUF: aunque el formato GGUF no está pensado para entrenamiento, puede usarse para generar datos sintéticos de evaluación o para destilación hacia modelos más pequeños en pipelines de investigación.
-- Inferencia en entornos con CPU: las variantes Q2_K y Q3_K_S permiten ejecutar el modelo en servidores sin GPU, con throughput reducido pero suficiente para tareas por lotes no interactivas.
+- Laboratorios de seguridad ofensiva controlados: el modelo puede emplearse como asistente para redactar hipotesis de ataque, resumir resultados de escaneos o generar plantillas de exploits en entornos de CTF o pentesting autorizado, aprovechando su orientacion declarada a ciberseguridad. Requiere supervision humana y aislamiento de red.
+- Automatizacion de tareas de escritorio (computer-use): los tags sugieren capacidad para interpretar y actuar sobre interfaces, lo que permitiria prototipar agentes que rellenen formularios o naveguen aplicaciones en entornos de prueba.
+- Asistente de razonamiento paso a paso en local: su tamano de 9B y las cuantizaciones Q4 permiten desplegarlo en una RTX 4090 o incluso en GPUs de 12-16 GB, sirviendo como asistente de analisis con cadena de pensamiento para documentacion tecnica.
+- Procesamiento de documentos largos: si el contexto de 1M tokens se confirma, permitiria resumir y consultar repositorios de codigo, logs extensos o expedientes completos en una sola pasada, aunque la fiabilidad en contextos muy largos no esta validada.
+- Generacion de codigo y scripts de automatizacion: util para producir scripts de administracion de sistemas, parsing de logs o utilidades de red, con la ventaja de ejecucion local y sin dependencia de APIs externas.
+- Investigacion sobre alineacion y ablacion: al ser un modelo abliterated con licencia Apache 2.0, sirve como objeto de estudio para comparar el comportamiento de modelos con y sin direcciones de rechazo, y para evaluar el coste de la ablacion en capacidades generales.
+- Despliegue en entornos air-gapped: al distribuirse en GGUF y con licencia permisiva, puede ejecutarse en maquinas sin conexion, lo que encaja en escenarios de analisis de malware o forense digital donde no se permite enviar datos a la nube.
 
 ## Benchmarks y rendimiento
 
@@ -52,44 +55,51 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, según tamaño de archivo de cada cuantización):
-  - Q2_K: ~3,5-4 GB
-  - Q3_K_S / Q3_K_M / Q3_K_L: ~4-5 GB
-  - IQ4_XS / Q4_K_S: ~5-5,5 GB
-  - Q4_K_M: ~5,5-6 GB
-  - Q5_K_S / Q5_K_M: ~6,5-7 GB
-  - Q6_K: ~7,5-8 GB
-  - Q8_0: ~9,5-10 GB
-  - x-f16: ~18 GB
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080 y RTX 4090 para las cuantizaciones mayores; A100 o H100 no son necesarias para este tamaño, salvo para servir muchas peticiones concurrentes.
-- Cabe en GPU de consumo: sí, desde una RTX 3060 12 GB para Q4_K_M hacia abajo; las variantes Q2_K y Q3_K_S pueden ejecutarse incluso en GPUs de 6-8 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, y servidores compatibles con la API de OpenAI que usen backend GGUF (por ejemplo, llama.cpp server o text-generation-webui). vLLM y TGI no soportan GGUF de forma nativa para este modelo.
-- Latencia y throughput: no disponibles; dependen del hardware y de la cuantización elegida.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
+  - Q2_K: ~3,9 GB
+  - Q3_K_M: ~4,7 GB
+  - IQ4_XS: ~5,3 GB
+  - Q4_K_M: ~5,7 GB
+  - Q5_K_M: ~6,6 GB
+  - Q6_K: ~7,5 GB
+  - Q8_0: ~9,6 GB
+  - f16: ~18,0 GB
+- Anadir entre 1 y 4 GB adicionales de VRAM para la cache KV segun la longitud de contexto efectiva; con contextos cercanos a 1M tokens el requisito de memoria crece de forma considerable y probablemente exceda cualquier GPU de consumo.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 Ti Super, RTX 4090 24 GB para cuantizaciones Q4-Q8; A100 40/80 GB o H100 para f16 y contextos largos.
+- Cabe en GPU de consumo: si, en cuantizaciones Q4_K_M o inferiores con contexto moderado (8K-32K tokens).
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y servidores compatibles con GGUF como llama-cpp-python o vLLM (soporte GGUF limitado). El tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo OpenAI.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Verfy-9B-GGUF | ~8,95B | no disponible | no disponible | GGUF | Cuantizaciones estáticas de mradermacher |
-| Viper-9B-i1-GGUF | ~9B | no disponible | no disponible | GGUF | Mismo autor de cuantizaciones, modelo base distinto |
-| HERO-9B-i1-GGUF | ~9B | no disponible | apache-2.0 (según model card) | GGUF | Orientado a agentes de código y eficiencia de tokens |
+| Verfy-9B (este) | ~8,95B | 1M declarado (no verificado) | Apache 2.0 | GGUF / safetensors | Abliterated, orientado a agentes y ciberseguridad |
+| Qwen2.5-7B-Instruct | ~7,6B | 128K | Apache 2.0 | safetensors, GGUF | Base probable de la familia; benchmarks publicos amplios |
+| Llama 3.1 8B Instruct | ~8,0B | 128K | Llama 3.1 Community License | safetensors, GGUF | Alternativa generalista con buen soporte de tool calling |
+| Mistral 7B Instruct v0.3 | ~7,2B | 32K | Apache 2.0 | safetensors, GGUF | Referencia ligera para despliegue local |
 
-La comparación se limita a modelos de tamaño similar cuantizados por el mismo autor, ya que no se dispone de datos de rendimiento ni de arquitectura del modelo base Verfy-9B que permitan una comparación técnica rigurosa con alternativas de la misma categoría.
+La comparacion es aproximada: no hay benchmarks publicados de Verfy-9B que permitan situarlo frente a estos modelos en tareas estandar, y el contexto de 1M declarado no esta validado de forma independiente.
 
 ## Limitaciones y advertencias
 
-- No se dispone de información sobre sesgos del modelo base, por lo que no pueden evaluarse riesgos específicos de sesgo demográfico, cultural o lingüístico.
-- Riesgo de alucinación desconocido: sin benchmarks ni documentación del entrenamiento, no es posible estimar la fiabilidad factual del modelo.
-- Licencia no disponible: no se puede confirmar si el uso comercial está permitido; es imprescindible verificar la licencia del modelo base (Rowhanissick/Verfy-9B) antes de cualquier despliegue en producción.
-- Idiomas soportados no documentados: no se garantiza un rendimiento adecuado en castellano ni en otros idiomas distintos del inglés.
-- Contexto máximo desconocido: no se puede planificar el uso en tareas que requieran ventanas largas sin verificar experimentalmente el límite real.
-- Las cuantizaciones de baja precisión (Q2_K, Q3_K_S) pueden degradar notablemente la calidad; se recomienda Q4_K_M o superior para uso en producción.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: no hay evidencia de validación por parte de la comunidad.
-- El repositorio ocupa 69,9 GB, lo que exige espacio en disco considerable si se descargan todas las variantes; conviene descargar solo la cuantización necesaria.
+- Ausencia total de benchmarks publicados: no hay evidencia de que las capacidades declaradas (razonamiento, autocorreccion, contexto de 1M) funcionen en la practica.
+- Modelo abliterated/uncensored: la supresion de direcciones de rechazo puede degradar el rendimiento en tareas generales y aumenta el riesgo de generar contenido danino, ilegal o inseguro sin filtros.
+- Orientacion a ciberseguridad ofensiva: el uso para pentesting debe limitarse a entornos autorizados; el modelo podria facilitar la generacion de exploits o malware si se usa de forma irresponsable.
+- Riesgo de alucinacion: no cuantificado; en modelos de 9B sin evaluacion publica es esperable un riesgo moderado-alto, especialmente en dominios tecnicos especializados.
+- Idioma: solo se declara ingles; el rendimiento en castellano no esta garantizado ni documentado.
+- Contexto de 1M tokens: no verificado; en la practica, la calidad de atencion en ventanas muy largas suele degradarse y el coste de memoria es prohibitivo en hardware de consumo.
+- Funcionalidad "credential vault": no documentada tecnicamente; no debe asumirse que ofrece almacenamiento seguro de credenciales real.
+- Licencia Apache 2.0: permite uso comercial, pero el autor original no ofrece garantias ni soporte; la responsabilidad legal del uso recae en el desplegador.
+- Procedencia: modelo publicado por un autor individual con poca trazabilidad; se recomienda auditoria antes de cualquier uso en produccion.
+- Fecha de creacion del repositorio (2026-11-08) posterior a la fecha actual de referencia en muchos entornos: verificar la integridad y procedencia de los archivos antes de descargarlos.
 
 ## Enlaces
 
-- Repositorio de cuantizaciones: https://huggingface.co/mradermacher/Verfy-9B-GGUF
-- Modelo base: https://huggingface.co/Rowhanissick/Verfy-9B
-- Repositorio relacionado del mismo autor: https://huggingface.co/mradermacher/Viper-9B-i1-GGUF
-- Repositorio relacionado del mismo autor: https://huggingface.co/mradermacher/HERO-9B-i1-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/Verfy-9B-GGUF
+- Modelo base original: https://huggingface.co/Rowhanissick/Verfy-9B
+- Pagina de descargas de mradermacher para este modelo: https://hf.tst.eu/model#Verfy-9B-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de perplejidad por cuantizacion (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests

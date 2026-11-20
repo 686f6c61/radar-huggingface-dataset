@@ -2,123 +2,114 @@
 
 ## Resumen
 
-Qwen3.5-2B-Pingala8-2bit es una cuantizacion de 2 bits del modelo Qwen/Qwen3.5-2B publicada por Genrius-AI (Harshit Goyal). No es un modelo entrenado desde cero: es un fichero GGUF de 0,78 GB que comprime el modelo base de Qwen manteniendo la estructura hibrida de este (18 capas Gated DeltaNet y 6 capas de atencion completa con gating). El objetivo declarado es conseguir un binario de clase 2 bits con la misma huella en disco que el IQ2_XXS de llama.cpp, pero con una perplejidad mucho menor: 15,62 frente a 29,08 en WikiText-2.
+Qwen3.5-2B-Pingala8-2bit es una cuantización de 2 bits del modelo Qwen3.5-2B de Alibaba Qwen, publicada por Genrius-AI mediante su método propietario Pingala-8 (trellis). El objetivo es claro: comprimir un transformer híbrido de aproximadamente 988 millones de parámetros en un fichero GGUF de 0,78 GB que pueda ejecutarse en CPU y en GPUs de consumo con muy poca VRAM, manteniendo una calidad utilizable. Frente a la cuantización IQ2_XXS de llama.cpp del mismo modelo, la versión 1 de este fichero reduce la perplejidad en WikiText-2 de 29,08 a 15,62 con un tamaño 11,5 MB menor; la versión 2 (publicada el 1 de noviembre de 2026) baja hasta 14,06.
 
-La relevancia tecnica esta en el metodo de compresion, no en el modelo base. El autor aplica codificacion trellis con particion de conjuntos de 8 estados (Ungerboeck) sobre simbolos de 4 pesos, precedida de una rotacion de Hadamard aleatoria y del redondeo LDLQ de QuIP, con una clase de tasa por tensor y escalas de columna derivadas de la cota de incoherencia. Es la receta B4 del release anterior de Qwen3-4B, sin cambios, aplicada aqui a 150 tensores lineales.
+El modelo base Qwen3.5-2B emplea una arquitectura híbrida con atención lineal (Gated DeltaNet) combinada con atención clásica, lo que reduce el coste de contexto largo. Esta ficha describe el fichero cuantizado, no el modelo original: los pesos están en formato GGUF y están pensados para llama.cpp y runtimes compatibles. La licencia Apache 2.0 del modelo base se mantiene.
 
-El precio de este enfoque es operativo: el fichero no se puede cargar con llama.cpp estandar, Ollama ni LM Studio. Requiere el runtime Pingala-8 v2.5 (llama.cpp en el commit `7ac59a6` mas un parche CUDA y un cambio de una linea en el loader), distribuido como build de un clic para Windows y Linux sobre GPU NVIDIA RTX 30/40/50. Ademas, es solo el modelo de texto: la torre de vision y el bloque de prediccion multi-token (MTP) de Qwen3.5-2B no estan incluidos.
+Es relevante ahora porque demuestra que la compresión agresiva a 2 bits con métodos tipo trellis puede acercarse a cuantizaciones de 3-4 bits en calidad, habilitando inferencia local en hardware muy limitado (portátiles con GPU de 8 GB, mini-PC, móviles de gama alta) sin renunciar por completo a la coherencia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer hibrido: 18 capas Gated DeltaNet (SSM) + 6 capas de atencion completa con gating (24 capas en total) |
-| Parametros totales | 925.157.879 (recuento de safetensors del repo; el nombre comercial indica "2B", no disponible la explicacion de la diferencia) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible (la medicion de perplejidad se hizo con contexto de 4096 tokens) |
-| Tipos de cuantizacion | Pingala-8 2-bit (trellis de 8 estados); tensores `ssm_alpha` y `ssm_beta` en Q4_0; resto de tensores no lineales copiados del IQ2_XXS de stock |
+| Arquitectura | Transformer híbrido con atención lineal (Gated DeltaNet) y atención clásica (base Qwen3.5-2B) |
+| Parametros totales | 987.950.338 (~988 M) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (el benchmark usa contexto de 4096 tokens) |
+| Tipos de cuantizacion | 2 bits (Pingala-8, trellis); fichero GGUF de 0,78 GB |
 | Idiomas soportados | en, zh |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (fichero unico de 0,78 GB) |
-| Tensores codificados | 150 tensores lineales (attn_qkv, attn_gate, ssm_out, attn_q/k/v/output y las tres matrices FFN) |
-| Tamano del repo | 0,8 GB |
-| Calibracion (imatrix) | Hessianos por capa calculados con 256 secuencias de 2048 tokens de C4 |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.5-2B emplea una arquitectura hibrida: 18 de sus 24 capas son Gated DeltaNet, un mecanismo de espacio de estados con compuerta, y las 6 restantes son capas de atencion completa con gating. Esta mezcla reduce el coste de la atencion en contextos largos manteniendo capacidad asociativa. La cuantizacion actua sobre las matrices lineales de ambos tipos de capa, no sobre las norms, el conv1d ni los parametros de compuerta del DeltaNet.
+El modelo base Qwen3.5-2B es un transformer híbrido que combina capas de atención lineal basadas en Gated DeltaNet con capas de atención estándar; los tags del repositorio (`gated-deltanet`, `hybrid-attention`) confirman esta arquitectura. Esta mezcla reduce el coste computacional y de memoria en secuencias largas frente a un transformer puramente attention-based. El modelo base fue entrenado por Alibaba Qwen; no se dispone en la información proporcionada de detalles sobre el número de tokens, composición del dataset ni si hubo RLHF o DPO.
 
-No hay entrenamiento nuevo por parte de Genrius-AI: el proceso es puramente de compresion post-entrenamiento. Cada matriz lineal se representa con un codigo trellis de 8 estados con particion de conjuntos sobre grupos de 4 pesos, previa rotacion de Hadamard aleatoria (para hacer las matrices mas incoherentes) y redondeo LDLQ estilo QuIP. Cada tensor recibe una clase de tasa propia y escalas de columna calculadas con la cota de incoherencia. Dos tensores de compuerta del DeltaNet (`ssm_alpha`, `ssm_beta`) tienen solo 16 filas, y el formato exige multiplos de 32, por lo que se guardan en Q4_0 pagando ese coste del presupuesto de bytes del fichero. El resto de tensores no lineales se heredan del fichero IQ2_XXS estandar para no degradar la linea base.
-
-Como innovacion destacable esta el propio codec y su comparacion "a igualdad de bytes" con IQ2_XXS e IQ2_KT, documentada en el preprint del autor. El autor declara explicitamente que el build es unico y que la receta y la regla de publicacion se fijaron antes de medir ningun resultado a 2 bits, lo que reduce el riesgo de sobreajuste de la receta a las metricas.
+La innovación de este repositorio no está en el entrenamiento sino en la compresión: Pingala-8 es un método de cuantización a 2 bits basado en trellis (cuantización en red) que, según el autor, supera a IQ2_XXS de llama.cpp en perplejidad con menor tamaño de fichero. La versión 2 incorpora una imatrix (`imatrix` aparece en los tags) y mejora la perplejidad de 15,62 a 14,06 en WikiText-2. El autor reporta que la v2 supera a UD-IQ2_M de unsloth (0,86 GB, perplejidad 14,96) en 67 de 70 ventanas de evaluación, aunque DASH-Q IQ2_XS (0,76 GB, 13,90) sigue siendo ligeramente mejor en perplejidad.
 
 ## Capacidades
 
-- Generacion de texto conversacional y continuacion de texto en ingles y chino, heredadas del modelo base Qwen3.5-2B.
-- Razonamiento basico y respuesta a preguntas de conocimiento general, con la degradacion esperable de una cuantizacion de 2 bits (MMLU 31,24% medido por el autor).
-- Inferencia local en GPU de consumo: el fichero completo ocupa 0,78 GB, lo que permite ejecutarlo en tarjetas con muy poca VRAM.
-- Ejecucion en hardware NVIDIA RTX 30/40/50 mediante el runtime propietario Pingala-8 v2.5 con parche CUDA.
-- Capacidades multimodales: no disponibles. La torre de vision del modelo base no esta incluida en el fichero.
-- Prediccion multi-token (MTP): no disponible. El bloque MTP del modelo base no esta incluido.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada; el nivel de MMLU y ARC-Challenge medido hace poco recomendable este uso.
-- Modo "thinking": no disponible en la informacion proporcionada.
+- Generación de texto conversacional en inglés y chino.
+- Razonamiento básico y respuesta a preguntas de conocimiento general (con las limitaciones propias de un modelo de ~1B parámetros y 2 bits).
+- Resolución de problemas aritméticos sencillos: el autor muestra un problema de cambio de 20 dólares resuelto correctamente en la demo comparativa.
+- Generación de código y matemáticas: capacidad esperable del modelo base, pero no verificada en los benchmarks publicados para esta cuantización.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada para esta cuantización.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas a inglés y chino según la model card.
+- Modo thinking: la demo se ejecuta con thinking desactivado; no se detalla soporte explícito en la cuantización.
+- Visión y audio: no disponibles.
 
 ## Casos de uso
 
-- Experimentacion con compresion extrema en local: usar el fichero como banco de pruebas para comparar tecnicas de cuantizacion de 2 bits frente a IQ2_XXS e IQ2_KT con la misma huella de disco. Es el caso de uso mas solido, dado que el propio repo esta orientado a la evaluacion del metodo.
-- Docencia y divulgacion sobre cuantizacion: el par de ficheros (Pingala-8 15,62 PPL frente a IQ2_XXS 29,08 PPL, con 11,5 MB menos) sirve para ilustrar el impacto de la rotacion de Hadamard y el redondeo LDLQ en una demo reproducible en un portatil con GPU.
-- Prototipado rapido de interfaces conversacionales en ingles o chino: el arranque de un clic permite tener un chat funcional en minutos dentro de un entorno controlado de desarrollo, antes de invertir en un modelo mayor.
-- Generacion de texto auxiliar de bajo coste en pipelines locales: borradores, resumenes cortos o etiquetado de texto en ingles/chino donde el coste energetico y la VRAM son la restriccion principal y la precision no es critica.
-- Filtrado y clasificacion de texto en el borde (on-device): con 0,78 GB de pesos, entra en escenarios de escritorio o estaciones de trabajo con GPU de gama media donde no se puede desplegar un modelo de 7B o superior.
-- Pruebas de regresion de runtimes: util para validar el loader del runtime Pingala-8 v2.5, ya que el recuento de tensores codificados por capa (6 en las capas DeltaNet) es justo el punto que rompe llama.cpp estandar y que el parche `q35_loader_count_delta.patch` corrige.
-- Investigacion sobre degradacion en tareas de razonamiento: comparar los 31,24 de MMLU y los 34,78 de ARC-Challenge de este fichero contra el modelo sin cuantizar permite medir el coste real del 2 bits en capacidad cognitiva, no solo en perplejidad.
+- Inferencia en portátiles con GPU de 8 GB: el fichero de 0,78 GB cabe holgadamente en una RTX 5070 Ti Laptop o similar, dejando VRAM libre para el contexto KV y otras tareas; útil para prototipado local sin conexión.
+- Asistentes conversacionales embebidos en aplicaciones de escritorio: al ocupar menos de 1 GB, puede distribuirse dentro de un instalador y ejecutarse en CPU con llama.cpp, ofreciendo chat básico en inglés y chino sin depender de la nube.
+- Evaluación de métodos de cuantización: sirve como referencia para investigadores que comparan Pingala-8 con IQ2_XXS, UD-IQ2_M o DASH-Q IQ2_XS sobre el mismo modelo base, con métricas de perplejidad reproducibles.
+- Clasificación y etiquetado de texto ligero: tareas de extracción de entidades o categorización en inglés/chino donde la latencia importa más que la precisión fina, ejecutables en mini-PC o dispositivos edge.
+- Generación de texto de relleno y borradores: redacción de respuestas cortas, resúmenes o plantillas en entornos con recursos muy limitados, aceptando la pérdida de calidad frente al modelo en fp16.
+- Demos educativas y docencia: permite mostrar el funcionamiento de un LLM cuantizado a 2 bits en un navegador (el autor publica un Space en CPU) o en un portátil de estudiante sin GPU dedicada.
+- Pruebas de pipelines de llama.cpp: validación de integración de GGUF, plantillas de chat y servidores compatibles con la API de OpenAI en entornos de CI con hardware modesto.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor del modelo (`verified: false`), medidos con `llama-perplexity` a 0-shot salvo donde se indique:
+Resultados declarados por el autor (no verificados de forma independiente; `verified: false` en la model card). La perplejidad corresponde a la versión 1 (15,62); la versión 2 reporta 14,06 en la descripción, aunque el model-index mantiene el valor de la v1.
 
-| Dataset | Metrica | Valor |
+| Benchmark | Metrica | Valor |
 |---|---|---|
-| WikiText-2 (test, contexto 4096) | Perplejidad (menor es mejor) | 15,6193 |
-| HellaSwag (0-shot) | Accuracy | 50,00% |
-| WinoGrande (0-shot) | Accuracy | 60,14% |
-| ARC-Easy (0-shot) | Accuracy | 53,68% |
-| ARC-Challenge (0-shot) | Accuracy | 34,78% |
-| MMLU (0-shot) | Accuracy | 31,24% |
+| WikiText-2 (test, contexto 4096) | Perplejidad (menor es mejor) | 15,6193 (v1); 14,06 (v2, según texto de la model card) |
+| HellaSwag (0-shot, llama-perplexity) | Accuracy (%) | 50,00 |
+| WinoGrande (0-shot, llama-perplexity) | Accuracy (%) | 60,14 |
+| ARC-Easy (0-shot, llama-perplexity) | Accuracy (%) | 53,68 |
+| ARC-Challenge (0-shot, llama-perplexity) | Accuracy (%) | 34,78 |
+| MMLU (0-shot, llama-perplexity) | Accuracy (%) | 31,24 |
 
-Comparacion de perplejidad en WikiText-2 publicada por el autor frente a otras cuantizaciones del mismo modelo base:
+Comparación de perplejidad en WikiText-2 a tamaño similar reportada por el autor:
 
-| Fichero | Bits | Tamano | PPL WikiText-2 |
-|---|---|---|---|
-| Qwen3.5-2B-Pingala8-2bit | 2 | 0,78 GB | 15,62 |
-| IQ2_XXS (llama.cpp, misma imatrix) | 2 | 0,79 GB | 29,08 |
-| IQ2_KT (ik_llama.cpp, receta por defecto) | 2 | 0,71 GB | 17,90 |
-| Q8_0 (llama.cpp) | 8 | 2,0 GB | 11,13 |
-
-No se han publicado en la informacion disponible resultados de HumanEval, GSM8K ni de benchmarks de codigo o matematicas, ni comparaciones con el modelo base sin cuantizar en estas mismas tareas.
+| Fichero | Tamano | Perplejidad WikiText-2 |
+|---|---|---|
+| Pingala-8 2-bit v2 | 0,78 GB | 14,06 |
+| DASH-Q IQ2_XS | 0,76 GB | 13,90 |
+| Unsloth UD-IQ2_M | 0,86 GB | 14,96 |
+| Pingala-8 2-bit v1 | 0,78 GB | 15,62 |
+| llama.cpp IQ2_XXS | 0,79 GB | 29,08 |
 
 ## Requisitos de hardware
 
-- VRAM para los pesos: aproximadamente 0,8 GB, el tamano del fichero GGUF. A ello hay que sumar la cache KV del contexto, cuyo tamano no se detalla en la informacion disponible.
-- GPU objetivo declaradas por el autor: NVIDIA RTX de las series 30, 40 y 50 (el runtime incluye un parche CUDA especifico). No se mencionan requisitos para GPUs AMD, Intel, Apple Silicon ni CPU.
-- Cabe holgadamente en cualquier GPU de consumo con 4 GB o mas de VRAM, incluidos portatiles con GPU de gama de entrada. La limitacion practica no es la VRAM sino la compatibilidad del runtime.
-- Opciones de despliegue: exclusivamente el runtime Pingala-8 v2.5 (Windows y Linux) publicado en el repositorio de GitHub del autor. llama.cpp estandar, Ollama, LM Studio, vLLM y TGI no pueden cargar el fichero segun la model card; llama.cpp estandar falla porque su loader espera 7 tensores lineales codificados por capa y las capas DeltaNet de los modelos Qwen3.5 pequenos tienen 6.
-- Latencia y throughput: no disponible. No se publican tokens por segundo ni tiempos de primera respuesta.
+- VRAM estimada para inferencia: inferior a 1 GB para los pesos; con contexto de 4096 tokens y overhead de llama.cpp, el consumo total se mantiene por debajo de 2 GB en la mayoría de configuraciones.
+- GPU recomendadas: cualquier GPU con 4 GB o más de VRAM; el autor demuestra ejecución en una RTX 5070 Ti Laptop. También funciona en A100, H100 y RTX 4090, aunque en esas GPUs el modelo queda muy infrautilizado.
+- GPU de consumo: cabe en GTX 1650, RTX 3050, RTX 4060, RTX 4090 y similares; también en iGPUs con memoria unificada suficiente.
+- CPU: ejecutable en CPU pura mediante llama.cpp; el autor publica un Space de demostración en CPU con un modelo hermano (Qwen3-1.7B-Pingala8-2bit).
+- Opciones de despliegue: llama.cpp y runtimes compatibles con GGUF (Ollama, llama-cpp-python, servidores con API compatible con OpenAI). No se menciona soporte de vLLM ni TGI para este formato.
+- Latencia y throughput: no disponibles de forma cuantitativa. La model card indica que, en tres ejecuciones cortas comparativas, IQ2_XXS fue más rápido en 2 de 3 casos, por lo que Pingala-8 no ofrece ventaja de velocidad en esos escenarios.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | PPL WikiText-2 | Formato / runtime | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Qwen3.5-2B-Pingala8-2bit | 925.157.879 (recuento safetensors) | no disponible (eval. a 4096) | 15,62 | GGUF + runtime Pingala-8 v2.5 | Apache-2.0 | Hugging Face, 0 descargas |
-| Qwen3.5-2B en IQ2_XXS (llama.cpp) | mismo modelo base | no disponible | 29,08 | GGUF + llama.cpp estandar | Apache-2.0 | ampliamente disponible |
-| Qwen3.5-2B en IQ2_KT (ik_llama.cpp) | mismo modelo base | no disponible | 17,90 | GGUF + ik_llama.cpp | Apache-2.0 | disponible |
-| Qwen3.5-2B en Q8_0 (llama.cpp) | mismo modelo base | no disponible | 11,13 | GGUF + llama.cpp estandar | Apache-2.0 | ampliamente disponible |
-| Qwen3.5-4B-Pingala8-2bit (hermano mayor) | no disponible | no disponible | no disponible en esta ficha | GGUF + runtime Pingala-8 | Apache-2.0 | Hugging Face |
+| Modelo | Parametros | Contexto | Perplejidad WikiText-2 | Licencia | Formato |
+|---|---|---|---|---|---|
+| Qwen3.5-2B-Pingala8-2bit (v2) | ~988 M | no disponible | 14,06 | Apache 2.0 | GGUF 2-bit |
+| DASH-Q IQ2_XS (mismo base) | ~988 M | no disponible | 13,90 | Apache 2.0 | GGUF 2-bit |
+| Unsloth UD-IQ2_M (mismo base) | ~988 M | no disponible | 14,96 | Apache 2.0 | GGUF 2-bit |
+| llama.cpp IQ2_XXS (mismo base) | ~988 M | no disponible | 29,08 | Apache 2.0 | GGUF 2-bit |
 
-La comparacion relevante es interna al mismo modelo base: frente a IQ2_XXS el autor reporta una reduccion de perplejidad de 29,08 a 15,62 con 11,5 MB menos de fichero, y frente a IQ2_KT mejora 17,90 a 15,62 a costa de 70 MB mas. Frente a Q8_0 sigue habiendo una brecha de 4,5 puntos de perplejidad. No se dispone de comparaciones con otros modelos de ~1-2B de la competencia en la informacion proporcionada.
+No se dispone de datos de benchmarks de tareas (MMLU, HumanEval, GSM8K) para las alternativas en la información proporcionada, por lo que la comparación se limita a perplejidad y tamaño.
 
 ## Limitaciones y advertencias
 
-- Degradacion medible frente al modelo sin cuantizar: la perplejidad sube de 11,13 (Q8_0) a 15,62, y el MMLU medido se queda en 31,24%, muy por debajo de lo esperable en un modelo de su clase sin comprimir.
-- Razonamiento limitado: ARC-Challenge al 34,78% y HellaSwag al 50,00% indican poca fiabilidad en tareas que requieren inferencia de varios pasos. No es adecuado para decisiones automatizadas con consecuencias.
-- Riesgo de alucinacion alto: a 2 bits y con este nivel de MMLU, la generacion de hechos concretos, cifras o citas debe verificarse siempre.
-- Benchmark no verificado: los seis resultados de la model card estan marcados como `verified: false` y proceden de mediciones del propio autor, con los logs alojados en su repositorio. No hay replicacion independiente.
-- Adopcion nula: 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validacion por parte de la comunidad.
-- Incompatibilidad de runtime: no funciona en llama.cpp estandar, Ollama ni LM Studio. Depende de un parche CUDA y de un cambio en el loader que el autor mantiene fuera del arbol principal de llama.cpp. Es un riesgo de mantenimiento y de reproducibilidad a medio plazo.
-- Solo texto: sin torre de vision ni bloque MTP. Cualquier caso de uso multimodal del modelo base no esta cubierto.
-- Idiomas limitados a ingles y chino. No hay datos de rendimiento en castellano ni en otras lenguas; se espera degradacion adicional por transferencia.
-- Ambito de plataforma reducido: el build de un clic solo cubre Windows y Linux sobre NVIDIA RTX 30/40/50. No hay soporte documentado para CPU, Apple Silicon ni ROCm.
-- Licencia: Apache-2.0 heredada del modelo base, permisiva para uso comercial. Conviene verificar igualmente las condiciones del modelo Qwen original y del codigo del runtime, que se distribuye aparte en GitHub.
-- Discrepancia de parametros: el recuento de safetensors (925.157.879) no cuadra con el "2B" del nombre. No se explica en la informacion disponible, por lo que conviene no asumir el tamano del base sin comprobarlo.
-- La busqueda web realizada no devolvio ningun resultado utilizable sobre este modelo; toda la informacion de esta ficha procede de Hugging Face y del repositorio del autor.
+- La cuantización a 2 bits degrada la calidad de forma notable: MMLU 0-shot de 31,24 % y ARC-Challenge de 34,78 % indican un rendimiento bajo en conocimiento y razonamiento, lejos de lo esperable en el modelo base en fp16.
+- Riesgo elevado de alucinación y errores factuales: el propio autor documenta errores en 2 de 3 prompts comparativos (orden de los planetas y primeros elementos químicos).
+- Idiomas limitados a inglés y chino; el rendimiento en castellano no está evaluado y probablemente sea deficiente.
+- Los resultados de benchmarks están declarados por el autor y marcados como no verificados; la perplejidad de la v2 (14,06) no aparece en el model-index, solo en el texto de la model card.
+- La licencia Apache 2.0 permite uso comercial, pero se heredan las limitaciones del modelo base Qwen3.5-2B, incluidos sesgos de los datos de entrenamiento originales.
+- No se documenta soporte de tool calling, agentes ni modo thinking en esta cuantización; no debe asumirse su disponibilidad en producción.
+- La longitud máxima de contexto del fichero cuantizado no se especifica; el benchmark usa 4096 tokens, y contextos mayores pueden degradar la calidad o no estar soportados por la configuración de llama.cpp.
+- El método Pingala-8 es propietario y su reproducibilidad depende del código publicado en el repositorio del autor; conviene validar los ficheros antes de desplegarlos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Genrius-AI/Qwen3.5-2B-Pingala8-2bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
-- Modelo hermano mayor (Qwen3.5-4B Pingala-8): https://huggingface.co/Genrius-AI/Qwen3.5-4B-Pingala8-2bit
-- Codigo, runtime y parches: https://github.com/Genrius-AI/pingala8-llm
-- Build de un clic (runtime v2.5): https://github.com/Genrius-AI/pingala8-llm/releases/latest
-- Paper del metodo (preprint v2.4): *Small-State Coset Trellis Coding at IQ2_XXS Size: An Equal-Bytes Study in llama.cpp*, DOI https://doi.org/10.5281/zenodo.23481757
-- Contacto del autor: harshit@genrius.in
+- Repositorio de código: https://github.com/Genrius-AI/pingala8-llm
+- Demo en navegador (CPU, modelo hermano): https://huggingface.co/spaces/harshit-genrius/pingala8-demo
+- Demo en GPU (versión 2): https://huggingface.co/spaces/harshit-genrius/pingala8-qwen35-live
+- Leaderboard de GGUF a 2 bits: https://huggingface.co/spaces/Genrius-AI/2bit-gguf-leaderboard
+- Página de demos con salidas sin editar: https://genrius-ai.github.io/pingala8-llm/demos.html
+- Vídeo comparativo: https://huggingface.co/Genrius-AI/Qwen3.5-2B-Pingala8-2bit/resolve/main/media/demo2b_compare.mp4

@@ -5,7 +5,7 @@
   "author": "ShadeEngine",
   "url": "https://huggingface.co/ShadeEngine/bytegpt-bpe32k-110M",
   "created_at": "2026-11-19T10:48:48.000Z",
-  "updated_at": "2026-11-19T10:59:35.000Z",
+  "updated_at": "2026-11-19T11:50:26.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

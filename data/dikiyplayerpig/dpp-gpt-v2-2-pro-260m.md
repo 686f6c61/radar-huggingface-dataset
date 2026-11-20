@@ -2,114 +2,126 @@
 
 ## Resumen
 
-dpp-gpt V2.2 Pro (260M) es un modelo de lenguaje de 242 millones de parámetros únicos (259M nominales, con embeddings de entrada y salida atados) desarrollado por el usuario independiente dikiyplayerpig. Se trata de un entrenamiento íntegro desde cero, realizado por una sola persona sobre una única GPU de consumo (RTX 4060), que cubre preentrenamiento, ajuste supervisado, aprendizaje por refuerzo y evaluación. El modelo emplea una arquitectura de estilo Llama (RMSNorm, RoPE, SwiGLU) con 20 capas, dimensión oculta de 1024, 16 cabezas de atención y 4 cabezas KV (GQA), y una ventana de contexto de 8192 tokens con un vocabulario BPE propio de 16.384 entradas.
+dpp-gpt V2.2 Pro (260M) es un modelo de lenguaje de 242 millones de parámetros únicos (259M con embeddings atados) entrenado íntegramente desde cero por un único desarrollador sobre una GPU de consumo RTX 4060. Desarrollado por dikiyplayerpig, el modelo emplea una arquitectura de estilo Llama con RMSNorm, RoPE, SwiGLU y atención con query grouping (GQA), y está diseñado para razonamiento paso a paso, aritmética de números largos, tool calling y generación de JSON a partir de descripciones.
 
-El modelo está orientado a tres idiomas (ruso, inglés y francés) y a tareas de razonamiento paso a paso mediante un conmutador `[THINK]`, llamada a herramientas (tool calling), generación de JSON a partir de una descripción y aritmética con números largos dígito a dígito. Esta versión Pro constituye el cierre de la línea 2.2: parte del checkpoint preview (entrenado con SFT) y añade nueve rondas de aprendizaje por refuerzo con GRPO, con recompensas verificadas por código en su mayor parte.
+El modelo es la versión final de la línea 2.2 Pro: parte del checkpoint de SFT (2.2 Pro preview) y se refina mediante nueve rondas de GRPO (Group Relative Policy Optimization) con recompensas verificadas por código en su mayoría. Según los benchmarks propios del autor, la media de su suite pasó del 17,8 % en el preview al 24,2 % en esta versión final. Soporta ruso, inglés y francés, con una longitud de contexto de 8192 tokens y un vocabulario BPE propio de 16 384 entradas.
 
-Su relevancia radica en dos factores: por un lado, demuestra que es viable producir un modelo funcional multilingüe con capacidades de razonamiento y tool calling en hardware de consumo; por otro, la publicación de pesos en safetensors, GGUF (siete cuantizaciones) y `.pth` facilita su despliegue local y su estudio. La licencia Apache 2.0 elimina restricciones para uso comercial.
+Su relevancia radica en demostrar que es posible entrenar, afinar y aplicar RL sobre un modelo funcional de 260M parámetros con recursos de consumo, publicando pesos en safetensors, GGUF (múltiples cuantizaciones) y PyTorch bajo licencia Apache 2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer estilo Llama (RMSNorm, RoPE, SwiGLU, GQA) |
-| Parametros totales | 259M nominales; 242.263.040 reales en safetensors |
-| Parametros activos | no disponible (no es MoE) |
+| Parametros totales | 259M (242 263 040 únicos; embeddings de entrada y salida atados) |
+| Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | 8192 tokens |
-| Tipos de cuantizacion | GGUF F16, Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q3_K_M, Q2_K |
-| Idiomas soportados | ruso (ru), ingles (en), frances (fr) |
+| Tipos de cuantizacion | GGUF: F16, Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q3_K_M, Q2_K; safetensors (fp32/bf16 según repo); PyTorch `.pth` |
+| Idiomas soportados | Ruso (ru), inglés (en), francés (fr) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (LlamaForCausalLM), GGUF, PyTorch `.pth` (solo pesos) |
-
-Detalles adicionales de arquitectura: 20 capas, hidden size 1024, 16 cabezas de atención, 4 cabezas KV (GQA), vocabulario de 16.384 tokens con BPE propio, embeddings de entrada y salida atados.
+| Formato de pesos | safetensors, GGUF, PyTorch `.pth` |
+| Capas / hidden / cabezas / KV heads | 20 / 1024 / 16 / 4 (GQA) |
+| Vocabulario | 16 384 (BPE propio) |
+| Modelo base | dikiyplayerpig/dpp-gpt-V2.2-Pro-preview-260m (SFT) |
+| Tamaño del repo | 2,6 GB |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder-only de estilo Llama con normalización RMSNorm, embeddings posicionales rotatorios (RoPE) y activación SwiGLU. Emplea atención con query grouping (GQA) con 16 cabezas de consulta y 4 de clave/valor, lo que reduce el coste de memoria de la caché KV durante la inferencia. El vocabulario es un BPE propio de 16.384 entradas, deliberadamente pequeño para un modelo de este tamaño, lo que reduce el coste de los embeddings y de la capa de salida.
+La arquitectura es un transformer decoder-only de estilo Llama con 20 capas, dimensión oculta de 1024, 16 cabezas de atención y 4 cabezas KV (GQA), normalización RMSNorm, embeddings rotatorios (RoPE) y activación SwiGLU. Los embeddings de entrada y salida están atados, lo que reduce el recuento efectivo a 242M parámetros únicos. El vocabulario es un BPE propio de 16 384 tokens.
 
-El entrenamiento se estructura en tres fases. Primero, un preentrenamiento desde cero sobre aproximadamente 31.000 millones de tokens (continuación del modelo 2.1 Base), seguido de unos 60 millones de tokens de datos de ajuste supervisado (SFT) que dieron lugar al checkpoint preview. Sobre ese preview se aplicaron nueve rondas de GRPO de entre 50 y 350 pasos, cada una partiendo del mejor checkpoint anterior; en las rondas finales cada paso procesa 16 prompts con 8 respuestas cada uno, con ventaja relativa al grupo, penalización KL contra un modelo de referencia y una pequeña pérdida de replay de SFT para mitigar el olvido catastrófico. Casi todas las recompensas se verifican por código (aritmética, ecuaciones, problemas verbales escolares en tres idiomas, funciones Python ejecutadas contra tests, JSON desde descripción, localización de números en texto, restricciones de formato, llamadas a herramientas en varios formatos y traducción por similitud con referencia); un juez local Gemma 4 E4B añade recompensa para ensayos, poemas y respuestas factuales. Se aplica selección de dificultad para muestrear menos las tareas que el modelo siempre o nunca resuelve. El modelo final es una media ponderada de pesos de tres checkpoints de RL (0,4 · GRPO8 paso 100 + 0,3 · GRPO9 paso 150 + 0,3 · GRPO5 paso 200), ya que cada checkpoint individual mejoraba en unas áreas y empeoraba en otras.
+El preentrenamiento partió del modelo 2.2 Base (≈31B tokens, continuación del preentrenamiento de 2.1 Base), seguido de aproximadamente 60M tokens de datos de SFT. Sobre el checkpoint de SFT (preview) se aplicaron nueve rondas de GRPO de 50 a 350 pasos, cada una partiendo del mejor checkpoint previo. En las rondas finales, un paso equivale a 16 prompts × 8 respuestas (más algunas a mayor temperatura), con ventaja relativa de grupo, penalización KL respecto a un modelo de referencia y una pequeña pérdida de replay SFT para evitar olvido catastrófico. Casi todas las recompensas se verifican por código (aritmética, problemas verbales escolares en tres idiomas, funciones Python ejecutadas contra tests, JSON desde descripción, extracción de números, restricciones de formato, tool calls en varios formatos, traducción por similitud, opción múltiple e instrucciones de respuesta corta); solo ensayos, poemas y respuestas factuales usan un juez local Gemma 4 E4B. Se aplica selección de dificultad para muestrear menos las tareas siempre resueltas o nunca resueltas. El modelo final es una media ponderada de tres checkpoints RL: 0,4 · GRPO8 paso 100 + 0,3 · GRPO9 paso 150 + 0,3 · GRPO5 paso 200.
 
 ## Capacidades
 
-- Generación de texto conversacional multilingüe en ruso, inglés y francés.
-- Razonamiento paso a paso con conmutador `[THINK]` (modo con y sin pensamiento explícito).
-- Aritmética con números largos (hasta 10^40), incluyendo sumas, restas, multiplicaciones, divisiones, paréntesis, ecuaciones y fracciones, operando dígito a dígito.
-- Resolución de problemas verbales escolares (precios, cambio, velocidad, edades) en los tres idiomas.
-- Llamada a herramientas (tool calling) en varios formatos, incluyendo la decisión de no invocar ninguna herramienta cuando no es necesaria y la respuesta a partir de un resultado inesperado de herramienta.
+- Generación de texto conversacional en ruso, inglés y francés.
+- Razonamiento paso a paso con conmutador `[THINK]` para activar o desactivar la cadena de pensamiento.
+- Aritmética con números largos (hasta 10^40), incluyendo suma, resta, multiplicación, división, paréntesis, ecuaciones y fracciones.
+- Resolución de problemas verbales escolares (precios, cambio, velocidad, edades).
 - Generación de JSON válido a partir de una descripción en lenguaje natural.
-- Escritura de funciones Python pequeñas a partir de una especificación.
-- Seguimiento de instrucciones de formato múltiples simultáneas (idioma, límite de palabras, título, lista con viñetas, palabras de inicio y fin).
-- Localización de un número dentro de un texto con distractores.
-- Traducción entre los tres idiomas soportados.
-- Preguntas de opción múltiple y respuestas cortas.
-- Composición de poemas y ensayos breves.
+- Tool calling / function calling en varios formatos, incluyendo la decisión de no invocar herramienta cuando no es necesaria y responder a partir de un resultado inesperado.
+- Generación de código Python de funciones pequeñas, verificable mediante ejecución contra tests.
+- Instrucciones de formato con múltiples restricciones simultáneas (idioma, límite de palabras, título, lista con viñetas, palabras de inicio/fin).
+- Extracción de información numérica en textos con distractores.
+- Preguntas de opción múltiple (hechos, lógica, aritmética).
+- Traducción entre los idiomas soportados.
+- Redacción de ensayos y poemas cortos.
+- Respuestas factuales breves.
 
 ## Casos de uso
 
-- Asistente conversacional local multilingüe: el modelo puede gestionar diálogos en ruso, inglés y francés con 8192 tokens de contexto, suficiente para conversaciones multi-turno con historial extenso; su tamaño permite ejecutarlo en equipos sin GPU dedicada mediante cuantizaciones Q4_K_M o Q5_K_M.
-- Enseñanza de aritmética y resolución de problemas: con el modo `[THINK]` activado, el modelo descompone operaciones con números grandes paso a paso, lo que resulta útil en herramientas educativas que necesitan mostrar el razonamiento intermedio.
-- Generación de JSON estructurado en pipelines de datos: a partir de una descripción en lenguaje natural, produce objetos JSON válidos con claves y valores correctos, adecuado para tareas de extracción y normalización de información en entornos con recursos limitados.
-- Automatización de llamadas a APIs: el soporte de tool calling en varios formatos permite integrarlo como planificador ligero en agentes que deciden qué función invocar y con qué argumentos, así como abstenerse cuando no procede llamar a ninguna.
-- Generación de código auxiliar: puede escribir funciones Python pequeñas a partir de una especificación, útil para prototipado rápido, generación de tests unitarios simples o scripts de automatización en entornos de CI/CD con requisitos de latencia bajos.
-- Procesamiento de documentos y extracción de datos: la capacidad de localizar un número en un texto con distractores y de responder preguntas factuales breves lo hace apto para tareas de lectura comprensiva sobre documentos cortos en ruso, inglés o francés.
-- Despliegue en dispositivos de borde: con cuantizaciones Q2_K a Q5_K_M y un peso de 2,6 GB en el repositorio, puede ejecutarse en mini-PC, Raspberry Pi de gama alta o portátiles sin GPU, ofreciendo generación de texto y clasificación local sin conexión.
+- Asistente conversacional ligero en ruso, inglés o francés: con 8192 tokens de contexto puede mantener conversaciones multi-turno y recordar instrucciones previas, desplegable en hardware modesto.
+- Automatización de tool calling en agentes pequeños: el modelo elige la herramienta y el argumento correctos o decide no invocar ninguna, integrándose en orquestadores de agentes con pasos múltiples.
+- Extracción estructurada de datos: generación de JSON válido a partir de descripciones en lenguaje natural para poblar formularios, APIs o pipelines ETL.
+- Verificación aritmética y resolución de problemas verbales: útil en asistentes educativos o de cálculo donde se requiere el resultado numérico exacto en lugar de una explicación aproximada.
+- Generación de funciones Python pequeñas en entornos de CI/CD: dado que el modelo produce código verificable, puede integrarse en pipelines que ejecutan tests automáticos sobre las funciones generadas.
+- Procesamiento de instrucciones con restricciones de formato: generación de respuestas con límite de palabras, listas, títulos o palabras obligatorias para sistemas de plantillas y generación de contenido controlado.
+- Análisis de textos con distractores: localización de cifras concretas en documentos cortos, útil para extracción de datos de informes o resúmenes.
+- Traducción asistida entre ruso, inglés y francés en entornos con recursos limitados.
 
 ## Benchmarks y rendimiento
 
-Los datos disponibles provienen de la suite propia del autor, no de benchmarks públicos estándar. El propio autor advierte que las cifras pueden estar algo infladas a favor de dpp-gpt y no son comparables con puntuaciones publicadas de otros modelos. La suite consta de 12 áreas y 2450 preguntas en ru/en/fr, cada pregunta formulada dos veces (con y sin pensamiento), temperatura 0,1; la verificación es por código cuando es posible y por el juez Gemma 4 26B en poemas, ensayos, chat, código abierto y conocimiento.
+Los datos proceden de la suite propia del autor (12 áreas, 2450 preguntas en ru/en/fr, cada pregunta formulada dos veces con y sin thinking, temperatura 0,1). El autor advierte que estos números no son comparables con benchmarks públicos y pueden estar inflados a favor de dpp-gpt.
 
-| Área | Preguntas | Verificación | Resultado 2.2 Pro |
+| Columna | Preguntas | Verificación | 2.2 Pro |
 |---|---|---|---|
-| instr (restricciones de formato) | 300 | código | no disponible |
-| reading (número en texto) | 200 | código | no disponible |
-| wordmath (problemas verbales) | 300 | código | no disponible |
-| json (JSON desde descripción) | 150 | código | no disponible |
-| tools (llamada a herramientas) | 200 | código | no disponible |
-| knowledge (preguntas factuales) | 400 | juez | no disponible |
-| mcq (opción múltiple) | 400 | código | no disponible |
-| pysmall (funciones Python) | 150 | código (tests) | no disponible |
-| pyopen (programas abiertos) | 80 | juez | no disponible |
-| poem (poemas) | 60 | juez | no disponible |
-| essay (ensayos) | 60 | juez | no disponible |
-| chat (peticiones cotidianas) | 150 | no disponible | no disponible |
-| math (aritmética generada, 2200 tareas) | 2200 | código | 51,3 % |
+| instr | 300 | código | no disponible (solo media global) |
+| reading | 200 | código | no disponible |
+| wordmath | 300 | código | no disponible |
+| json | 150 | código | no disponible |
+| tools | 200 | código | no disponible |
+| knowledge | 400 | juez Gemma 4 26B | no disponible |
+| mcq | 400 | código | no disponible |
+| pysmall | 150 | código (tests ocultos) | no disponible |
+| pyopen | 80 | juez | no disponible |
+| poem | 60 | juez | no disponible |
+| essay | 60 | juez | no disponible |
+| chat | 150 | no especificado | no disponible |
 
-Datos comparativos dentro de la familia: en la suite propia, la media pasó del 17,8 % (preview) al 24,2 % (2.2 Pro), frente al 8,3 % de la versión 2.15 Pro. En la prueba de aritmética, el modelo base obtuvo 47,6 %, el preview 36,8 % (el SFT lo redujo) y 2.2 Pro 51,3 %. La media ponderada de los tres checkpoints de RL alcanzó 25,9 según el juez E4B, frente a 24,1–25,2 de cada checkpoint individual. No se han publicado resultados de benchmarks públicos estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+Datos agregados publicados:
+
+| Métrica | Base | Preview (SFT) | 2.2 Pro |
+|---|---|---|---|
+| Media de la suite (12 áreas) | no disponible | 17,8 % | 24,2 % |
+| Aritmética (2200 tareas generadas) | 47,6 % | 36,8 % | 51,3 % |
+| Media por juez Gemma 4 E4B (checkpoints RL) | — | — | 24,1–25,2 % (individuales) → 25,9 % (media ponderada) |
+| 2.15 Pro (referencia de la línea anterior) | — | — | 8,3 % (media de la suite) |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en F16, aproximadamente 0,5 GB de pesos más caché KV y overhead (en torno a 1 GB en total con contexto completo); en Q8_0, unos 0,26 GB; en Q4_K_M, unos 0,15 GB; en Q2_K, unos 0,1 GB. La caché KV para 8192 tokens con 20 capas, 4 cabezas KV y dimensión de cabeza de 64 es reducida (del orden de decenas de MB en F16).
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM para F16; RTX 4060, RTX 3060, GTX 1660 o superiores son suficientes. El propio autor entrenó el modelo en una RTX 4060. Para despliegue en servidor, A100 o H100 no aportan ventaja significativa por el tamaño reducido del modelo; una T4 es más que suficiente.
-- Cabe en GPU de consumo: sí, en todas las GPU de consumo modernas e incluso en iGPU con memoria unificada; también en CPU.
-- Opciones de despliegue: llama.cpp y Ollama para GGUF; vLLM y TGI para safetensors; transformers con `LlamaForCausalLM`; el tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face.
-- Latencia y throughput estimados: no disponibles en la información proporcionada; por el tamaño (242M parámetros), se espera un throughput alto en GPU de consumo, pero no hay cifras publicadas.
+- VRAM estimada para inferencia: aproximadamente 0,5 GB en F16 (259M × 2 bytes), ~0,27 GB en Q8_0, ~0,2 GB en Q4_K_M y ~0,13 GB en Q2_K, sin contar overhead de contexto KV (20 capas, 4 KV heads, 8192 tokens).
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM para cuantizaciones GGUF; el modelo fue entrenado en una RTX 4060, por lo que cabe holgadamente en GTX 1660, RTX 3060, RTX 4060 y superiores. Para F16 y contexto completo se recomienda al menos 4 GB.
+- Cabe en GPU de consumo: sí, en todas las GPU modernas con 2 GB o más de VRAM, incluidas integradas con suficiente memoria compartida para cuantizaciones bajas.
+- Opciones de despliegue: llama.cpp y Ollama para GGUF; vLLM y TGI para safetensors con `LlamaForCausalLM`; transformers de Hugging Face para inferencia directa; endpoints compatibles según los tags del repo.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Idiomas | Licencia | Notas |
-|---|---|---|---|---|---|
-| dpp-gpt V2.2 Pro 260M | 242M (259M nominales) | 8192 | ru, en, fr | Apache 2.0 | Entrenado desde cero por un autor individual; tool calling, CoT, GRPO |
-| dpp-gpt V2.2 Pro preview 260M | 242M | 8192 | ru, en, fr | Apache 2.0 | Checkpoint SFT previo al RL; media 17,8 % en suite propia |
-| dpp-gpt V2.2 Base 260M | 242M | 8192 | ru, en, fr | Apache 2.0 | Solo preentrenamiento; continuación de texto |
-| dpp-gpt V2.15 Pro | no disponible | no disponible | ru, en, fr | Apache 2.0 | Generación anterior; media 8,3 % en suite propia |
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| dpp-gpt V2.2 Pro 260M | 259M (242M únicos) | 8192 | ru, en, fr | Apache 2.0 | safetensors, GGUF, `.pth` | Entrenado desde cero en una RTX 4060; RL con GRPO |
+| Qwen2.5-0.5B | 494M | 32 768 | multilingüe (29+) | Apache 2.0 | safetensors, GGUF | Mayor tamaño y contexto; benchmarks públicos disponibles |
+| SmolLM2-360M | 362M | 8192 | en (principalmente) | Apache 2.0 | safetensors, GGUF | Enfocado en inglés; entrenado con datos públicos a mayor escala |
+| Llama-3.2-1B | 1,24B | 131 072 | multilingüe (8) | Llama 3.2 Community License | safetensors, GGUF | Mayor capacidad pero licencia restrictiva y más recursos |
 
-No se dispone de datos de benchmarks públicos que permitan comparar con modelos de otros autores del mismo tamaño (por ejemplo, Qwen2.5-0.5B, SmolLM2-360M o TinyLlama-1.1B) en la información proporcionada. La comparación con esos modelos requeriría ejecutar evaluaciones estándar, que no están publicadas para dpp-gpt V2.2 Pro.
+Los datos de rendimiento comparativo entre estos modelos no están disponibles en la información proporcionada; los benchmarks de dpp-gpt V2.2 Pro son propios y no comparables con las puntuaciones publicadas de los modelos alternativos.
 
 ## Limitaciones y advertencias
 
-- Los benchmarks son propios del autor y no comparables con los públicos; parte de las tareas de RL comparten generadores con algunos benchmarks (matemáticas, problemas verbales, instrucciones), por lo que el modelo podría haber aprendido el formato de esas tareas mejor que la habilidad subyacente.
-- Riesgo de alucinación en preguntas factuales: el área de conocimiento se evalúa con un juez y no con verificación por código, y el modelo es de tamaño reducido (242M), lo que limita su fiabilidad factual.
-- Cobertura lingüística limitada a ruso, inglés y francés; no se garantiza un comportamiento correcto en otros idiomas.
-- Ventana de contexto de 8192 tokens, insuficiente para documentos largos o conversaciones muy extensas.
-- El ajuste por RL con recompensas mayoritariamente verificadas por código puede favorecer el formato sobre la sustancia en tareas de razonamiento; el autor reconoce que la multiplicación cayó del 70 % al 55 % en rondas tardías de RL.
-- El modelo final es una media ponderada de checkpoints, lo que puede introducir inconsistencias menores respecto a un único checkpoint entrenado de forma continua.
-- Licencia Apache 2.0: permite uso comercial y modificación, pero conviene revisar las condiciones de los datos de entrenamiento (no documentadas en detalle) y citar la autoría.
-- Modelo entrenado por un único autor en hardware de consumo, sin el respaldo de una organización; la estabilidad y el mantenimiento a largo plazo no están garantizados.
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validación externa de la comunidad.
+- Los benchmarks publicados son propios del autor, construidos con sus formatos de prompt y generadores compartidos con los datos de RL; pueden estar inflados y no son comparables con métricas estándar.
+- El modelo es de 260M parámetros, por lo que su capacidad factual y de razonamiento complejo es limitada en comparación con modelos de mayor escala; se esperan alucinaciones en preguntas factuales abiertas.
+- El soporte multilingüe se limita a ruso, inglés y francés; no se garantiza un rendimiento adecuado en otros idiomas.
+- La ventana de contexto de 8192 tokens es reducida frente a modelos contemporáneos, lo que limita tareas de contexto largo.
+- El modelo puede mostrar sesgos presentes en los datos de preentrenamiento y SFT, cuya composición no se detalla en la información disponible.
+- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre el rendimiento en producción ni sobre la robustez frente a entradas adversarias.
+- El uso del modo `[THINK]` añade latencia y tokens generados; en tareas simples puede degradar la respuesta si no se desactiva.
+- El modelo fue entrenado por una sola persona en una GPU de consumo; no ha pasado por procesos de auditoría de seguridad ni de alineación a gran escala.
+- La media ponderada de checkpoints RL implica que algunas capacidades concretas (por ejemplo, multiplicación) pueden ser inferiores a las de un checkpoint individual.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/dikiyplayerpig/dpp-gpt-V2.2-Pro-260m
-- Checkpoint preview (SFT): https://huggingface.co/dikiyplayerpig/dpp-gpt-V2.2-Pro-preview-260m
-- Modelo base 2.2: https://huggingface.co/dikiyplayerpig/dpp-gpt-V2.2-base-260m
-- Árbol de archivos del modelo base: https://huggingface.co/dikiyplayerpig/dpp-gpt-V2.2-base-260m/tree/main
+- Modelo base (preview SFT): https://huggingface.co/dikiyplayerpig/dpp-gpt-V2.2-Pro-preview-260m
+- Modelo 2.2 Base: https://huggingface.co/dikiyplayerpig/dpp-gpt-V2.2-base-260m
+- Perfil del autor: https://huggingface.co/dikiyplayerpig

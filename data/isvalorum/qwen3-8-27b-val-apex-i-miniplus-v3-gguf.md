@@ -2,105 +2,111 @@
 
 ## Resumen
 
-VAL-APEX-I MiniPlus V3 es una cuantización GGUF del modelo Qwen/Qwen3.8-27B (27.320.697.856 parámetros) publicada por el usuario IsValorum en Hugging Face. No se trata de un entrenamiento nuevo, sino de una receta de cuantización quirúrgica que busca mantener la calidad percibida de un formato Q5-Q6 con un peso efectivo de 4,14 bits por peso y un fichero final de 14,16 GB. El resultado es un modelo de razonamiento en inglés que cabe en GPUs de 24 GB manteniendo un contexto declarado de hasta 256K tokens.
+Qwen3.8-27B-VAL-APEX-I-MiniPlus-V3-GGUF es una cuantización GGUF del checkpoint base Qwen/Qwen3.8-27B, publicada por el usuario independiente IsValorum bajo licencia Apache 2.0. No se trata de un modelo nuevo entrenado desde cero, sino de una reconstrucción de pesos orientada a inferencia local en llama.cpp, con asignación de bits por tensor revisada (V3) e integración de un bloque de predicción multi-token (MTP) en el mismo archivo que el modelo principal.
 
-La relevancia técnica está en el tratamiento diferenciado de la topología híbrida del modelo base: 47 capas recurrentes DeltaNet SSM, 17 capas de atención cuadrática completa y 64 capas MLP SwiGLU densas reciben reglas de cuantización distintas (848 reglas en total), con los operadores de estado recurrente preservados en F32 sin comprimir para evitar la deriva acumulada del estado a lo largo de contextos largos. El autor reporta una perplejidad WikiText-2 de 6,1361 frente a 5,7942 del BF16 de referencia, es decir, un incremento del 5,90%.
+El modelo conserva la arquitectura y los pesos del checkpoint original de Qwen, sin ablación (Huihui) ni ajuste EfficientThink, y mantiene el contexto nativo de 256K tokens que declara el autor. El archivo pesa 14,16 GB con 4,15 bits por peso (BPW) de media, lo que lo sitúa en el rango de cuantizaciones de 4 bits de alta fidelidad para un modelo denso de 27.320.697.856 parámetros.
 
-El modelo se distribuye bajo licencia Apache 2.0, con pipeline de text-generation y plantilla conversacional basada en los delimitadores `<|im_start|>` y `<think>`. En el momento de redactar esta ficha el repositorio registra 0 descargas y 0 likes, por lo que no existe validación independiente de las cifras publicadas.
+Su relevancia actual radica en que permite ejecutar un modelo de 27B con ventana de contexto muy larga en estaciones de trabajo con 24 GB de VRAM, a costa de una degradación medida de +5,90 % en perplejidad sobre WikiText-2 respecto al BF16 de referencia. La ficha se limita a los datos publicados en la model card y en los metadatos de Hugging Face; todo lo no documentado se marca como no disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida: 47 capas recurrentes DeltaNet SSM (atención lineal) + 17 capas de atención cuadrática completa + 64 capas MLP SwiGLU densas |
-| Parametros totales | 27.320.697.856 (27,32 mil millones) |
+| Arquitectura | Transformer denso (heredada de Qwen/Qwen3.8-27B); incluye un bloque MTP (`blk.64.*`, 15 tensores) integrado en el GGUF |
+| Parametros totales | 27.320.697.856 |
 | Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 256.000 tokens (según la model card del autor; no verificado en los metadatos de Hugging Face) |
-| Tipos de cuantizacion | Mixta: F32 (operadores de estado SSM: ssm_a, ssm_conv1d, ssm_dt, ssm_norm), Q8_0 (ssm_alpha, ssm_beta), Q6_K (proyecciones de valor y salida, output.weight), IQ4_XS vector-calibrado (proyecciones down del MLP), esquema asimétrico Edge vs Core (proyecciones gate y up), Q4_0 como fallback de emergencia. Media efectiva: 4,14 BPW |
-| Idiomas soportados | Inglés (en), según los metadatos del repositorio y la model card |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp); el modelo base está en safetensors |
+| Longitud de contexto | 256K tokens (contexto nativo declarado por el autor) |
+| Tipos de cuantizacion | GGUF con asignación asimétrica por tensor; matrices MTP en Q4_0 (×6), Q4_1 (×1) y Q6_K (×1); normalizaciones en F32; media global de 4,15 BPW |
+| Idiomas soportados | Inglés (`en`) segun metadatos; otros idiomas no disponibles |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen/Qwen3.8-27B emplea una topología híbrida poco habitual: combina capas de atención lineal recurrente de tipo DeltaNet (SSM) con capas periódicas de atención cuadrática completa. La model card de esta edición describe la distribución exacta de tensores: 47 capas SSM recurrentes, 17 capas de atención cuadrática y 64 capas MLP densas con activación SwiGLU. Esta edición no entrena ni modifica pesos: aplica 848 reglas de cuantización sobre esa topología, calibradas con una matriz iMatrix de ISTA-DASLab de 4.096.000 tokens (1000 fragmentos de 4096 tokens).
+El modelo es una cuantización del checkpoint Qwen/Qwen3.8-27B, por lo que la arquitectura subyacente es la del transformer denso original de Qwen, sin modificaciones estructurales más allá de la compresión de pesos. La contribución del autor, el método VAL-APEX-I (Vector-calibrated Asymmetric Layer-wise Outlier-preserving Recurrent-aware Unified Matrix-quantization), consiste en una asignación de bits por tensor guiada por matrices de calibración de varios millones de tokens, con preservación de valores atípicos a nivel de capa y tratamiento específico de las excepciones del bloque 0. El resultado es un archivo de 14,16 GB y 4,15 BPW que, según la model card, alcanza una perplejidad de 6,1361 ± 0,4885 en WikiText-2 frente a 5,7942 ± 0,4531 del BF16 sin modificar, es decir, +0,3419 puntos (+5,90 %).
 
-El diseño de cuantización es asimétrico y preserva selectivamente los tensores críticos. Los operadores de estado recurrente (ssm_a, ssm_conv1d, ssm_dt, ssm_norm) se mantienen en F32 sin compresión para eliminar la deriva de acumulación de estado en contextos de hasta 256K tokens, mientras que las proyecciones de actualización recurrente (ssm_alpha, ssm_beta) se fijan en Q8_0 con un error declarado inferior al 0,005% frente a BF16 y ejecución SIMD rápida. Las proyecciones de valor y salida de las capas de atención cuadrática se protegen en Q6_K para no degradar el flujo residual, y output.weight se fija también en Q6_K para evitar corrupción de tokens de razonamiento y fallos en los delimitadores `<think>`. Las proyecciones down del MLP usan IQ4_XS calibrado por vectores para preservar valores atípicos de activación extremos, con un esquema asimétrico Edge vs Core en gate y up. Como red de seguridad, los tensores no mapeados o las capas residuales de draft MTP caen a Q4_0 en lugar de abortar la cuantización.
-
-No se documenta en la información disponible ningún proceso de RLHF, DPO u otro ajuste posterior sobre esta edición, ni el volumen o composición del dataset de entrenamiento del modelo base.
+La innovación técnica destacable es la inclusión del bloque de predicción multi-token (MTP) dentro del mismo GGUF que el modelo principal: quince tensores bajo `blk.64.*`, con ocho matrices cuantizadas (seis en Q4_0, una en Q4_1 y una en Q6_K) y siete tensores de normalización en F32. La decodificación especulativa basada en MTP depende del soporte y la configuración del backend de inferencia empleado, por lo que no está garantizada en todos los entornos. No se dispone de información sobre el volumen de tokens de preentrenamiento, la composición del dataset ni las etapas de RLHF o DPO del modelo base en la documentación proporcionada.
 
 ## Capacidades
 
-- Generación de texto conversacional y de razonamiento en inglés, con modo de pensamiento explícito delimitado por `<think>` en la plantilla de chat.
-- Razonamiento multi-paso sobre contextos extensos: la arquitectura base combina atención lineal recurrente con atención completa periódica, lo que en teoría permite manejar hasta 256K tokens con coste subcuadrático en la mayoría de capas.
-- Procesamiento de documentos largos en una sola pasada, sin fragmentación, gracias a la ventana de contexto declarada.
-- Ejecución local en llama.cpp con soporte de offload completo a GPU (`-ngl 99`).
-- Compatibilidad declarada con endpoints (etiqueta `endpoints_compatible` en los metadatos de Hugging Face).
-- Capacidades de tool calling / function calling: no disponibles en la información proporcionada.
-- Capacidades de agente y multi-step tool use: no disponibles en la información proporcionada.
-- Capacidades multilingües: no disponibles; los metadatos solo declaran inglés.
-- Capacidades de visión o audio: no disponibles; el pipeline es text-generation.
-- Capacidades especiales confirmadas: ninguna adicional más allá del modo de razonamiento y la ventana de contexto larga.
+- Generación de texto conversacional y de un solo turno, con plantilla de chat nativa heredada del modelo Qwen original.
+- Razonamiento explícito: la model card etiqueta el modelo con `reasoning` y documenta una sección específica de razonamiento y plantilla de chat.
+- Uso de herramientas y comportamiento agéntico: evaluado en la suite autónoma Shortbench/NanoBench con puntuaciones de 100/100 en la categoría de uso de herramientas (agentic tool use).
+- Generación de código e implementación de software: 100/100 en la categoría de codificación en el arnés Oh My Pi y 97,0/100 en Hermes Agent.
+- Tareas de integridad de sistemas y pipelines: 86,7/100 en la categoría de sistemas de la misma suite.
+- Contexto largo: ventana nativa de 256K tokens, adecuada para documentos extensos y conversaciones multi-turno prolongadas.
+- Decodificación especulativa mediante el bloque MTP integrado, sujeta al soporte del backend.
+- Capacidades multilingües: los metadatos solo declaran inglés; el resto de idiomas no está disponible.
 
 ## Casos de uso
 
-- Análisis de documentación técnica extensa en local: con 256K tokens de contexto declarado, se puede cargar un manual completo, un informe de auditoría o un conjunto de especificaciones en una única pasada y hacer preguntas de razonamiento sobre el conjunto sin necesidad de recuperación por fragmentos. Adecuado cuando los datos no pueden salir de la infraestructura propia.
-- Asistente de razonamiento offline en estación de trabajo: el fichero de 14,16 GB entra en GPUs de 24 GB, de modo que un equipo con RTX 3090 o RTX 4090 puede ejecutar el modelo con llama-server sin conexión a internet, útil en entornos con requisitos de confidencialidad.
-- Revisión y resumen de registros de eventos (logs) de gran volumen: la ventana larga permite pasar trazas completas de un incidente y pedir correlación de eventos o hipótesis de causa raíz en un solo contexto.
-- Generación de datos sintéticos en inglés: el modelo puede producir textos, preguntas y respuestas o razonamientos etiquetados para alimentar pipelines de evaluación o ajuste, ejecutándose íntegramente en hardware propio.
-- Evaluación comparativa de técnicas de cuantización: al publicar la perplejidad WikiText-2 junto a la receta completa de reglas, sirve como punto de referencia reproducible para investigar el compromiso entre bits por peso y calidad en arquitecturas híbridas SSM/atención.
-- Despliegue en servidor propio compatible con API de estilo OpenAI: la etiqueta `endpoints_compatible` y el soporte de llama.cpp permiten exponer el modelo como servicio interno y sustituir llamadas a APIs externas en aplicaciones de chat o razonamiento en inglés.
-- Prototipado de aplicaciones de razonamiento en investigación: para experimentar con cadenas de pensamiento y ventanas de contexto largas sin depender de servicios en la nube ni de cuotas de uso.
+- Asistencia de código en local: el modelo puede integrarse en un flujo de trabajo con llama.cpp para autocompletar, refactorizar y explicar código en una estación con 24 GB de VRAM, aprovechando su puntuación de 100/100 en implementación en la suite NanoBench y su contexto de 256K para cargar repositorios completos.
+- Agentes autónomos de ingeniería de software: con tool calling verificado al 100 % en OMP 18.7 y Hermes Agent, es adecuado para pipelines que ejecutan tareas de varios pasos sobre repositorios, lanzan tests y corrigen fallos de forma iterativa.
+- Análisis de documentación extensa: la ventana de 256K tokens permite procesar contratos, informes técnicos o bases de código completas en una sola pasada sin fragmentación agresiva.
+- Asistente conversacional de atención al cliente: la plantilla de chat nativa y el contexto largo permiten mantener conversaciones multi-turno con historial amplio, siempre que el despliegue se limite al inglés.
+- Automatización de integridad de sistemas: con 86,7/100 en la categoría de sistemas de NanoBench, puede emplearse para validar pipelines, comprobar configuraciones y detectar inconsistencias en entornos de CI/CD.
+- Prototipado e investigación en máquinas de gama alta de consumo: al caber en 24 GB de VRAM con 4,15 BPW, sirve para experimentar con un modelo de 27B y contexto largo sin acceso a clústeres de GPU.
+- Evaluación comparativa de cuantizaciones: su perplejidad documentada y su mapa de tensores lo convierten en una referencia útil para medir el impacto de distintas estrategias de cuantización sobre el mismo checkpoint base.
 
 ## Benchmarks y rendimiento
 
-La única métrica publicada es la perplejidad sobre WikiText-2, evaluada en una NVIDIA RTX PRO 6000 Ada con longitud de contexto 512, tamaño de lote 512 y 4 fragmentos.
+Los únicos datos publicados corresponden a la suite autónoma Shortbench/NanoBench, evaluada por el usuario independiente @userr99 en una estación con 24 GB de VRAM y 64 GB de RAM usando llama.cpp, sobre 12 tareas objetivas de ingeniería de software, pipelines e integridad de sistemas. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estándar en la información disponible.
 
-| Modelo / cuantizacion | Tamano (GB) | Tamano (GiB) | WikiText-2 PPL | Delta vs BF16 | Delta % |
-|---|---|---|---|---|---|
-| BF16 de referencia (ground truth) | 54,65 | 50,90 | 5,7942 +/- 0,4531 | línea base | 0,00% |
-| VAL-APEX-I MiniPlus V3 | 14,16 | 13,19 | 6,1361 +/- 0,4885 | +0,3419 | +5,90% |
-| VAL-APEX-I NanoPlus V3 | 11,35 | 10,57 | 6,2577 +/- 0,5011 | +0,4635 | +8,00% |
-| ISTA-DASLab GSQ-RCO IQ3_S | 11,80 | no disponible | 7,07 | no disponible | no disponible |
+| Arnés | Puntuación total | Tareas resueltas | Agéntico (uso de herramientas) | Codificación | Sistemas | Tiempo medio |
+|---|---|---|---|---|---|---|
+| Oh My Pi (OMP 18.7) | 96,7 % | 10 / 12 | 100 / 100 | 100 / 100 | 86,7 / 100 | aprox. 1 h 47 min |
+| Hermes Agent (v0.21.5) | 95,4 % | 9 / 12 | 100 / 100 | 97,0 / 100 | 86,7 / 100 | aprox. 1 h 47 min |
 
-No se han publicado resultados de MMLU, HumanEval, GSM8K ni de ningún otro benchmark de tareas en la información disponible. La perplejidad a 512 tokens de contexto no mide razonamiento, código ni matemáticas, y tampoco valida el comportamiento a 256K tokens, que es precisamente el escenario que la receta de cuantización dice proteger.
+| Métrica de cuantización | BF16 base | MiniPlus V3 (esta versión) | Delta |
+|---|---|---|---|
+| Tamaño de archivo | 54,65 GB (50,90 GiB) | 14,16 GB (13,19 GiB) | −74,1 % |
+| Bits por peso (BPW) | 16 | 4,15 | −11,85 |
+| Perplejidad WikiText-2 | 5,7942 ± 0,4531 | 6,1361 ± 0,4885 | +0,3419 (+5,90 %) |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 15,5 GB con offload completo a GPU, según la model card.
-- Cabe en GPU de consumo: sí, en tarjetas de 24 GB (por ejemplo RTX 3090, RTX 4090 o RTX PRO 6000), donde el autor indica que queda margen para hasta 256K de contexto. En GPUs de 16 GB requeriría offload parcial de capas a CPU, configuración no documentada por el autor.
-- GPUs de centro de datos: no se documenta soporte específico para A100 o H100 más allá de que, al ser GGUF sobre llama.cpp, pueden ejecutarlo. La evaluación publicada se realizó en una RTX PRO 6000 Ada.
-- Opciones de despliegue: llama.cpp es el soporte explícito y documentado (ejemplo con `llama-cli` y `-ngl 99`). No se documenta soporte para vLLM, TGI, Ollama ni LM Studio en la información disponible.
-- Latencia y throughput: no disponibles. El autor afirma que no hay tablas no lineales en la actualización recurrente DeltaNet, lo que permite aprovechar todo el rendimiento de los tensor cores, pero no publica cifras de tokens por segundo.
-- Memoria adicional: a los 15,5 GB de pesos hay que sumar la caché KV correspondiente a la longitud de contexto configurada, cuyo tamaño no se especifica en la información disponible.
+- VRAM estimada para inferencia: el archivo pesa 14,16 GB; con overhead de contexto KV y buffers de llama.cpp, se recomienda un mínimo de 16-18 GB de VRAM para contexto moderado y 24 GB para aprovechar ventanas largas.
+- GPU recomendadas: RTX 4090 (24 GB), RTX 3090 (24 GB), A100 40/80 GB, H100 80 GB; en configuraciones multi-GPU, dos RTX 4080 o similares con reparto por capas.
+- Cabe en GPU de consumo: sí, en RTX 4090, RTX 3090 y, con contexto reducido, en GPUs de 16 GB si se descargan capas a RAM del sistema.
+- Opciones de despliegue: llama.cpp es el backend de referencia documentado; el tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo OpenAI. No se documenta soporte específico de vLLM, TGI u Ollama en la información disponible.
+- Latencia y throughput: la model card reporta un tiempo medio de aproximadamente 1 h 47 min por ejecución completa de las 12 tareas de NanoBench en una estación de 24 GB de VRAM y 64 GB de RAM; no se publican tokens por segundo ni latencias por petición.
+- La decodificación especulativa con el bloque MTP requiere que el backend de inferencia soporte y configure dicha función; de lo contrario, el bloque permanece inactivo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / tamano | Rendimiento publicado | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| VAL-APEX-I MiniPlus V3 (esta edicion) | 27,32 mil millones | 256K (declarado) | GGUF, 14,16 GB, 4,14 BPW | WikiText-2 PPL 6,1361 (+5,90% vs BF16) | apache-2.0 | Hugging Face, 0 descargas |
-| Qwen/Qwen3.8-27B (modelo base) | 27,32 mil millones | no disponible en la informacion proporcionada | safetensors, BF16, 54,65 GB | WikiText-2 PPL 5,7942 (referencia) | no disponible en la informacion proporcionada | Hugging Face |
-| VAL-APEX-I NanoPlus V3 | 27,32 mil millones | 256K (declarado) | GGUF, 11,35 GB | WikiText-2 PPL 6,2577 (+8,00% vs BF16) | apache-2.0 | Hugging Face |
-| ISTA-DASLab GSQ-RCO IQ3_S | 27,32 mil millones | 256K (declarado) | GGUF, 11,80 GB | WikiText-2 PPL 7,07 | no disponible en la informacion proporcionada | Hugging Face |
+| Modelo | Parámetros | Contexto | Cuantización / tamaño | Licencia | Notas |
+|---|---|---|---|---|---|
+| Qwen3.8-27B-VAL-APEX-I-MiniPlus-V3 (este) | 27,3 B | 256K | GGUF, 14,16 GB, 4,15 BPW | Apache 2.0 | Incluye bloque MTP; PPL WikiText-2 de 6,1361 |
+| Qwen3.8-27B-VAL-APEX-I-NanoPlus-V3 | 27,3 B | 256K | GGUF, 12,18 GB | Apache 2.0 | Variante de menor tamaño del mismo autor; métricas de perplejidad no disponibles en esta ficha |
+| Swift-1.5 Qwen3.8-27B Uncensored MTP — MiniPlus V3 | 27,3 B | 256K | GGUF, 14,16 GB | Apache 2.0 | Variante sin censura (abliterated) del mismo autor; métricas no disponibles en esta ficha |
+| Qwen/Qwen3.8-27B (base) | 27,3 B | 256K | BF16, 54,65 GB | Apache 2.0 | Referencia de calidad; PPL WikiText-2 de 5,7942 |
 
-No se dispone de datos de otros modelos de la misma categoría fuera de las cuantizaciones del mismo modelo base, por lo que la comparación se limita a variantes de cuantización y al BF16 de referencia.
+No se dispone de datos de benchmarks estándar ni de comparaciones con modelos de otros fabricantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Idioma: los metadatos y la model card solo declaran inglés. No hay evidencia de calidad en castellano ni en otros idiomas, y la cuantización puede degradar de forma desigual el comportamiento multilingüe residual del modelo base.
-- Evidencia empírica limitada: la única métrica publicada es perplejidad WikiText-2 a 512 tokens de contexto. No hay MMLU, HumanEval, GSM8K ni evaluaciones de razonamiento, código o matemáticas.
-- Riesgo de alucinación: inherente a cualquier modelo generativo de este tamaño, no cuantificado en la información disponible. La cuantización a 4,14 BPW puede incrementarlo en tareas de razonamiento largo, un efecto que la perplejidad no captura.
-- Validación del contexto largo: el autor afirma que preservar los operadores SSM en F32 elimina la deriva de estado a 256K tokens, pero no publica ninguna medición de calidad a longitudes de contexto largas. Es una afirmación de diseño, no un resultado verificado.
-- Fallback Q4_0: los tensores no cubiertos por las 848 reglas, incluidos los de capas draft MTP, se cuantizan a Q4_0. Esto evita fallos de conversión, pero puede degradar capas concretas de forma no documentada.
-- Adopción nula: el repositorio registra 0 descargas y 0 likes, y fue creado y actualizado el mismo día (8 de octubre de 2026). No existe revisión independiente, reproducción de los benchmarks ni informes de fallos por parte de terceros.
-- Licencia: se declara apache-2.0, lo que permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen/Qwen3.8-27B, que no se detallan en la información proporcionada.
-- Integración en producción: no se documenta soporte para tool calling, function calling, agentes ni multimodalidad, lo que limita su uso en pipelines que dependan de estas capacidades. La plantilla requiere el prefijo `<think>` para activar el modo de razonamiento según el ejemplo del autor.
-- Compatibilidad de runtime: no se documenta soporte para vLLM, TGI, Ollama o LM Studio; el soporte explícito es llama.cpp.
+- Degradación medible de calidad: la perplejidad aumenta un 5,90 % respecto al BF16 base; en tareas sensibles a matices finos puede haber pérdida adicional no capturada por WikiText-2.
+- Sesgos conocidos: no documentados en la información disponible; al derivar del checkpoint Qwen original, hereda los sesgos de su dataset de entrenamiento, que tampoco se detalla.
+- Riesgo de alucinación: inherente a los modelos generativos; no se han publicado evaluaciones específicas de factualidad para esta cuantización.
+- Limitación de idioma: los metadatos solo declaran inglés; el rendimiento en castellano u otros idiomas no está verificado y podría degradarse respecto al modelo base.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el despliegue debe conservar los avisos de licencia y atribución correspondientes al modelo base y a la cuantización.
+- Dependencia del backend: el bloque MTP solo aporta aceleración si el motor de inferencia lo soporta y configura; en caso contrario, se ignora.
+- Contexto de 256K: aunque sea nativo, el uso de ventanas muy largas incrementa el consumo de memoria KV y puede requerir offloading a RAM, con la consiguiente caída de throughput.
+- Evaluación limitada: los benchmarks disponibles provienen de una suite comunitaria de 12 tareas y de un único evaluador, por lo que no deben extrapolarse a todos los dominios.
+- Autoría independiente: la cuantización no está publicada por el equipo oficial de Qwen; la reproducibilidad depende de la documentación del autor y de las herramientas de llama.cpp.
 
 ## Enlaces
 
-- Repositorio Hugging Face del modelo: https://huggingface.co/IsValorum/Qwen3.8-27B-VAL-APEX-I-MiniPlus-V3-GGUF
+- Modelo en Hugging Face: https://huggingface.co/IsValorum/Qwen3.8-27B-VAL-APEX-I-MiniPlus-V3-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Paper, blog o repositorio de la receta VAL-APEX-I: no disponible en la información proporcionada
-- Matriz de calibración ISTA-DASLab iMatrix: no disponible en la información proporcionada
-- Demo o espacio interactivo: no disponible en la información proporcionada
+- Variante NanoPlus V3: https://huggingface.co/IsValorum/Qwen3.8-27B-VAL-APEX-I-NanoPlus-V3-GGUF
+- Variante Swift-1.5 Uncensored MTP MiniPlus V3: https://huggingface.co/IsValorum/Swift-1.5-Qwen3.8-27B-Uncensored-MTP-VAL-APEX-I-MiniPlus-V3-GGUF
+- Variante Swift-1.5 Uncensored MTP NanoPlus V3: https://huggingface.co/IsValorum/Swift-1.5-Qwen3.8-27B-Uncensored-MTP-VAL-APEX-I-NanoPlus-V3-GGUF
+- Colección MiniPlus Abliterated 27B: https://huggingface.co/collections/IsValorum/val-apex-miniplus-abliterated-27b-6acfec541ee5628d2632c663
+- Colección MiniPlus Standard 27B: https://huggingface.co/collections/IsValorum/val-apex-miniplus-standard-27b-6acfec54ca4ce4cf5cd5bdb6
+- Colección NanoPlus Abliterated 27B: https://huggingface.co/collections/IsValorum/val-apex-nanoplus-abliterated-27b-6acfec5503f6e74218f71f64
+- Colección NanoPlus Standard 27B: https://huggingface.co/collections/IsValorum/val-apex-nanoplus-standard-27b-6acfec55c1c99e2a23ebbd9b
+- Shortbench / NanoBench: https://shortbench.vercel.app/
+- Hilo de discusión con registros de la evaluación: https://huggingface.co/IsValorum/Huihui-Qwen3.8-27B-Abliterated-VAL-APEX-I-NanoPlus-V3-GGUF/discussions/2
+- Perfil del evaluador independiente: https://huggingface.co/userr99
+- Apoyo al autor (Ko-fi): https://ko-fi.com/isvalorum

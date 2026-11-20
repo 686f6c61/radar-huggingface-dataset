@@ -2,103 +2,105 @@
 
 ## Resumen
 
-MiniCPM-V-4.7-1B es un modelo de lenguaje y vision (VLM) de 1B parametros desarrollado por OpenBMB y publicado el 12 de octubre de 2026. El repositorio que nos ocupa, `litert-community/MiniCPM-V-4.7-1B`, es una conversion del modelo original al formato `.litertlm` para el runtime LiteRT-LM de Google, orientada a inferencia en dispositivo (on-device) en telefonos y equipos de sobremesa. La conversion la mantiene la comunidad litert-community y conserva la licencia Apache 2.0 del modelo base.
+MiniCPM-V-4.7-1B es un modelo de lenguaje y visión (VLM) de 1.000 millones de parámetros desarrollado por OpenBMB y publicado el 12 de octubre de 2026. Esta ficha concreta corresponde a la conversión que el equipo de `litert-community` ha realizado del checkpoint original al formato **LiteRT-LM** (`.litertlm`), el runtime on-device de Google AI Edge, con el objetivo de ejecutar el modelo en teléfonos móviles y equipos de borde sin necesidad de infraestructura en la nube.
 
-El modelo combina un decodificador de texto hibrido de estilo Qwen3.5 (18 capas de atencion lineal GatedDeltaNet y 6 capas de atencion completa, con dimension oculta 1024 y vocabulario de 248.094 tokens) con un codificador visual tipo SigLIP de 27 capas que comprime los tokens visuales dentro del propio codificador mediante mergers 2x2. El bundle distribuido en este repositorio cubre la ruta de imagen unica en modo Instruct (respuestas directas, sin modo thinking), con 64 tokens de imagen por mensaje tras comprimir una imagen de 448x448.
+El modelo combina un decodificador de texto híbrido de estilo Qwen3.5 —18 capas de atención lineal GatedDeltaNet y 6 capas de atención completa, con dimensión oculta de 1024 y vocabulario de 248.094 tokens— con un codificador visual de 27 capas de tipo SigLIP que comprime los tokens visuales dentro del propio encoder mediante un merger de atención por ventanas 2×2 tras la capa 6 y un merger 2×2 adicional. El resultado es una compresión de 16× de los tokens de imagen, lo que permite procesar una imagen completa con solo 64 tokens inyectados en el prompt.
 
-Su relevancia actual radica en que demuestra que un VLM de 1B puede ejecutarse en telefonos de gama alta y media con latencias utiles: en un Galaxy S26 el bundle de imagen devuelve el primer token 0,93 s despues de la peticion en GPU y decodifica texto a 36,5 tokens/s en CPU. El repositorio incluye tres variantes de pesos (con vision fp16, con vision int8 y solo texto) pensadas para distintos presupuestos de memoria.
+La relevancia de esta conversión es práctica: empaqueta el modelo en ficheros de entre 1,22 GB y 2,21 GB que se ejecutan en dispositivos como Galaxy S26, Pixel 8a o iPhone 18 Pro, con latencias de primer token de 0,93 s sobre GPU y velocidades de decodificación de 36,5 tokens/s en CPU en el Galaxy S26. Es una de las primeras rutas viables para llevar un VLM multimodal a producción en el borde con licencia Apache 2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | VLM: decodificador de texto hibrido (18 capas GatedDeltaNet + 6 capas full-attention) + codificador visual SigLIP de 27 capas con window-attention merger |
-| Parametros totales | 1B (aproximado, segun nombre del modelo) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | int8 dinamica por canal (decodificador de texto), int8 en tabla de embeddings, fp16 en codificador visual y adaptador, fp32 en las 36 proyecciones decay/gate de GatedDeltaNet; variante con codificador visual int8 |
+| Arquitectura | Transformer híbrido: decodificador de texto con 18 capas GatedDeltaNet (atención lineal) + 6 capas de atención completa; codificador visual SigLIP de 27 capas con window-attention merger |
+| Parametros totales | 1.000 millones (aproximado, según nomenclatura del modelo) |
+| Parametros activos | no disponible (no es un modelo MoE) |
+| Longitud de contexto | no disponible (la model card no la declara explícitamente) |
+| Tipos de cuantizacion | int8 dinámica por canal en el decodificador de texto (36 proyecciones decay/gate de GatedDeltaNet permanecen en float); embeddings int8; codificador visual en fp16 o int8 según variante; activaciones fp32 declaradas para GPU |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | `.litertlm` (LiteRT-LM); tres ficheros: `MiniCPM-V-4.7-1B-VL_int8.litertlm` (2,21 GB), `MiniCPM-V-4.7-1B-VL_int8vis.litertlm` (1,70 GB), `MiniCPM-V-4.7-1B_int8.litertlm` (1,22 GB, solo texto) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | `.litertlm` (LiteRT-LM); se distribuyen tres variantes: `MiniCPM-V-4.7-1B-VL_int8.litertlm` (2,21 GB), `MiniCPM-V-4.7-1B-VL_int8vis.litertlm` (1,70 GB) y `MiniCPM-V-4.7-1B_int8.litertlm` (1,22 GB, solo texto) |
 
 ## Arquitectura y entrenamiento
 
-El decodificador de texto es un transformer hibrido de estilo Qwen3.5: 24 capas en total, de las cuales 18 son de atencion lineal GatedDeltaNet y 6 de atencion completa. La dimension oculta es 1024 y el vocabulario de 248.094 tokens. Sobre el se monta un codificador visual tipo SigLIP de 27 capas que aplica un window-attention merger 2x2 tras la capa 6 y un segundo merger 2x2, comprimiendo los tokens visuales dentro del propio codificador (compresion total de 16x). El adaptador visual proyecta la salida del codificador al espacio del decodificador.
+El decodificador de texto sigue un diseño híbrido poco habitual en modelos de 1B: 18 de sus 24 capas emplean GatedDeltaNet, un mecanismo de atención lineal con estado recurrente y compuertas, mientras que las 6 restantes mantienen atención completa. Esta combinación reduce el coste computacional y de memoria en secuencias largas sin renunciar por completo a la atención global. La dimensión oculta es 1024 y el vocabulario de 248.094 tokens, coherente con el tokenizador de la familia Qwen. El codificador visual es de tipo SigLIP con 27 capas y aplica compresión temprana de tokens: un merger de atención por ventanas 2×2 tras la capa 6 y un merger 2×2 adicional, logrando una compresión total de 16× que reduce una imagen a 64 tokens visuales.
 
-El bundle de LiteRT-LM implementa la ruta `fast_vlm`: una imagen por mensaje, redimensionada a 448x448 fija, que produce 64 tokens de imagen insertados en el prompt segun la plantilla de chat. Esto difiere del pipeline de Transformers en dos aspectos medidos sobre el modelo fp32 antes de la conversion: las imagenes mayores se redimensionan al cuadrado de 448x448 en lugar de dividirse en miniatura mas hasta nueve recortes, y el runtime alimenta posiciones 1-D planas, de modo que el M-RoPE del canvas del modelo colapsa a RoPE ordinario sobre los tokens de imagen. En ambos casos, las respuestas resultaron parafrasis del mismo contenido en 9 de 9 casos, sin errores factuales. No hay informacion disponible sobre el numero de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO.
+La conversión a LiteRT-LM reescribe la torre visual en PyTorch plano y adapta la plantilla de chat para que el segundo turno coincida token a token con el modelo original. El runtime `fast_vlm` impone una resolución fija de 448×448 y una imagen por mensaje, lo que difiere del pipeline original de Transformers (que hace tiling en miniatura más hasta nueve recortes). Según las mediciones del autor, las respuestas con imagen redimensionada a 448×448 fueron paráfrasis del mismo contenido en 9 de 9 casos frente al modo con tiling. Además, el runtime alimenta posiciones 1-D planas, por lo que el M-RoPE de canvas del modelo colapsa a RoPE ordinario sobre los tokens de imagen; también en 9 de 9 casos las respuestas fueron paráfrasis correctas. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO.
 
 ## Capacidades
 
-- Comprension de imagen unica: describir, identificar colores, localizar objetos y leer texto en imagenes (OCR ligero), con 64 tokens visuales por imagen y una imagen por conversacion.
-- Generacion de texto y conversacion multi-turno en modo Instruct (respuestas directas, sin modo thinking).
-- Razonamiento basico y respuesta a preguntas generales, verificado en pruebas de 8 preguntas con temperatura 0.
-- Capacidades multilingues: no disponibles en la informacion proporcionada.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- No soporta video, prompts multi-imagen ni el modo de 4x ("finer detail") en este bundle.
+- Comprensión de imagen única: descripción de contenido, colores, localización de objetos y lectura de texto presente en la imagen (OCR básico), con una imagen por mensaje en la ruta `fast_vlm`.
+- Generación de texto conversacional en modo "Instruct" (respuestas directas, sin modo thinking).
+- Razonamiento multimodal de una sola imagen: preguntas y respuestas sobre fotografías de 448×448 con 64 tokens visuales inyectados en el prompt.
+- Procesamiento de texto puro mediante el fichero `MiniCPM-V-4.7-1B_int8.litertlm`, que omite las secciones de visión y comparte los mismos bytes del decodificador.
+- Ejecución on-device en CPU, GPU y Metal (iPhone), con latencias medidas en dispositivos móviles reales.
+- No soporta vídeo, prompts multi-imagen ni el modo de "detalle fino" 4× en este bundle.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
+- Cobertura multilingüe: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Asistencia visual en el movil: la app envia una foto de 448x448 y el modelo responde preguntas sobre ella (descripcion, colores, ubicacion de objetos, texto visible). Adecuado porque el bundle `_int8vis` de 1,70 GB cabe en telefonos Android de 8 GB con GPU Mali y se ha verificado en Pixel 8a.
-- Lectura de etiquetas y documentos breves: el modelo transcribe y responde sobre texto contenido en una imagen, util para accesibilidad o digitalizacion rapida de tickets y carteles, aprovechando la ruta de imagen unica y el OCR ligero.
-- Chat de texto en dispositivo sin conexion: con el fichero `MiniCPM-V-4.7-1B_int8.litertlm` (1,22 GB) se obtiene un asistente conversacional local de 1B en telefonos y portatiles, sin enviar datos a la nube.
-- Clasificacion y moderacion de imagenes en el borde: preguntas de si/no sobre el contenido de una foto (por ejemplo, deteccion de texto sensible) con latencia de primer token inferior a 1 s en GPU de movil.
-- Demos y prototipos de VLM embebido: validar flujos de vision-lenguaje en iOS (Metal) o Android antes de invertir en infraestructura de servidor, usando el runtime LiteRT-LM 0.18.0.
-- Verificacion de calidad en pipelines de conversion: el repositorio documenta comparaciones de logits y correlaciones que sirven de referencia para equipos que convierten otros modelos a `.litertlm`.
+- Asistencia visual en movilidad: el modelo puede responder preguntas sobre una foto tomada con el teléfono (qué hay, de qué color, dónde está un objeto, qué texto aparece) con un primer token en 0,93 s sobre GPU en un Galaxy S26, lo que permite integrarlo en apps de accesibilidad o de descripción de escenas en tiempo casi real.
+- Digitalización de documentos y tickets: con la ruta de lectura de texto en imagen y 64 tokens visuales por imagen, se puede extraer información de facturas, etiquetas o carteles directamente en el dispositivo, sin enviar la imagen a un servidor y cumpliendo requisitos de privacidad.
+- Moderación y filtrado de imágenes en el borde: clasificación y descripción de contenido visual en el propio terminal antes de subirlo a la nube, aprovechando el fichero `_int8vis` de 1,70 GB para móviles Android de 8 GB con GPU Mali.
+- Chat de texto ligero offline: usando el fichero de 1,22 GB sin secciones de visión, se puede desplegar un asistente conversacional local en dispositivos con recursos limitados, con la misma calidad de texto que las variantes multimodales.
+- Aplicaciones de campo sin conectividad: inspección visual de equipos, identificación de plantas o animales, o verificación de inventario en entornos sin red, donde la inferencia local en CPU a 36,5 tokens/s es suficiente para interacciones conversacionales.
+- Prototipado de productos VLM en iOS y Android: el soporte de Metal en iPhone 18 Pro y de GPU en Galaxy S26 permite validar experiencias multimodales en hardware real antes de invertir en infraestructura de servidores.
+- Educación y asistencia a personas con discapacidad visual: descripción de imágenes del entorno capturadas por la cámara del teléfono, con respuestas directas en modo Instruct y latencia baja en dispositivos de gama alta.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. Los datos de rendimiento medidos que si se documentan son los siguientes:
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card sí reporta métricas de fidelidad de la conversión y de rendimiento en dispositivo:
 
-| Medicion | Entorno | Resultado |
-|---|---|---|
-| Primer token sobre foto 448x448 | Galaxy S26, GPU | 0,93 s |
-| Decodificacion de texto | Galaxy S26, CPU | 36,5 tokens/s |
-| Precisión de logits de texto (export float vs fp32, 48 posiciones) | Mac M4 Max | top-1 identico 48/48, Pearson 1.0000, max abs delta 5,3e-5 |
-| Precisión de logits int8 (48 posiciones) | Mac M4 Max | top-1 identico 47/48 |
-| Correlacion del codificador visual reescrito vs `get_image_features` (4 entradas 448x448, fp32) | Mac M4 Max | 0,99999999997 |
-| Correlacion encoder fp16 + adaptador fp16 end-to-end | Mac M4 Max | 1,000000 |
-| Correlacion encoder int8 | Mac M4 Max | 0,9954 (peor coseno por token 0,911) |
-| 8 preguntas de texto, temperatura 0 | Mac M4 Max, CPU / GPU | 8/8 y 8/8 |
-| 3 fotos x 3 preguntas | Mac M4 Max, CPU / GPU | 9/9 y 9/9 fundamentadas |
-| 3 fotos | Pixel 8a, CPU, `_int8vis` | 3/3 fundamentadas |
-| 8 preguntas de texto | iPhone 18 Pro, Metal / CPU | 8/8 y 7/8 |
+| Metrica | Resultado |
+|---|---|
+| Fidelidad del decodificador de texto (logits profesor-forzados, 48 posiciones) | Top-1 idéntico en 48/48 posiciones; Pearson 1,0000; max abs delta logit 5,3e-5 |
+| Fidelidad del decodificador int8 | Top-1 idéntico en 47/48 posiciones (un empate cercano) |
+| Fidelidad de la torre visual (4 entradas 448×448) | Correlación 0,99999999997 en fp32; 1,000000 end-to-end con encoder y adaptador fp16; 0,9954 con encoder int8 (peor coseno por token 0,911) |
+| Prueba de 8 preguntas (Mac M4 Max, litert-lm 0.18.0, temperatura 0) | CPU 8/8; GPU 8/8 |
+| Prueba de imagen (3 fotos × 3 preguntas) | 9/9 fundamentadas en CPU y 9/9 en GPU |
+| Latencia de primer token (Galaxy S26, GPU, imagen 448×448) | 0,93 s |
+| Velocidad de decodificación de texto (Galaxy S26, CPU) | 36,5 tokens/s |
+| Prueba en Pixel 8a (`_int8vis`, CPU) | 3/3 fotos fundamentadas |
+| Prueba en Galaxy S26 (CPU y GPU) | Respuestas de texto correctas ("Paris." en ambos) |
+| Prueba en iPhone 18 Pro (Metal) | Resultados reportados como correctos (detalle truncado en la información disponible) |
 
 ## Requisitos de hardware
 
-- VRAM/memoria: el fichero de imagen con vision fp16 ocupa 2,21 GB; la variante con vision int8, 1,70 GB; la de solo texto, 1,22 GB. Conviene prever margen adicional para activaciones y el runtime.
-- GPU de movil: Galaxy S26 (GPU), iPhone 18 Pro (Metal) y telefonos Android de 12 GB en clase alta para el bundle `_int8`; Pixel 8a y telefonos de 8 GB con GPU Arm Mali para el bundle `_int8vis`, que evita el reinicio observado con codificador fp16 en conversiones anteriores.
-- GPU de escritorio/servidor: probado en Mac M4 Max; no hay datos publicados para A100, H100 o RTX 4090, aunque por tamano el modelo cabe holgadamente en cualquier GPU consumer con 4 GB o mas.
-- Opciones de despliegue: runtime LiteRT-LM 0.18.0 (comando `litert-lm run`). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI en este repositorio.
-- Latencia y throughput: 0,93 s hasta el primer token en GPU de Galaxy S26 y 36,5 tokens/s de decodificacion en CPU del mismo dispositivo; sin datos para otros equipos.
+- VRAM estimada para inferencia: el fichero multimodal completo ocupa 2,21 GB (`_int8`), la variante con visión int8 ocupa 1,70 GB (`_int8vis`) y la variante solo texto 1,22 GB. El consumo de memoria en ejecución debe añadir el estado del runtime y los buffers de activación, no cuantificados en la información disponible.
+- GPU recomendadas: no se especifican GPU de escritorio; las pruebas se realizaron en Mac M4 Max (CPU y GPU), Galaxy S26 (CPU y GPU), Pixel 8a (CPU) e iPhone 18 Pro (Metal).
+- Cabe en GPU de consumo: sí, en el sentido de que cabe en teléfonos de gama alta y en un Mac M4 Max; para GPUs de escritorio tipo RTX 4090 o A100 no hay datos publicados, aunque por tamaño (≤2,21 GB) cabría en cualquier GPU con al menos 4 GB de VRAM.
+- Opciones de despliegue: runtime LiteRT-LM (versión probada 0.18.0) mediante el comando `litert-lm run`; no se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI en la información disponible.
+- Latencia y throughput: primer token en 0,93 s sobre GPU en Galaxy S26; decodificación a 36,5 tokens/s en CPU en el mismo dispositivo. No hay datos de throughput para otros dispositivos.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks de MiniCPM-V-4.7-1B ni de sus alternativas en la informacion proporcionada, por lo que la comparacion se limita a caracteristicas estructurales conocidas.
-
-| Modelo | Parametros | Contexto | Vision | Licencia | Formato on-device |
+| Modelo | Parametros | Contexto | Modalidad | Licencia | Formato on-device |
 |---|---|---|---|---|---|
-| MiniCPM-V-4.7-1B (este repo) | 1B | no disponible | Si, imagen unica 448x448, 64 tokens | Apache 2.0 | `.litertlm` (LiteRT-LM) |
-| openbmb/MiniCPM-V-4.7-1B (original) | 1B | no disponible | Si, incluye multi-imagen, video y modo 4x | Apache 2.0 | safetensors / Transformers |
-| Alternativas de 1B-2B con vision | no disponible | no disponible | no disponible | no disponible | no disponible |
+| MiniCPM-V-4.7-1B (LiteRT-LM) | ~1B | no disponible | Imagen + texto | Apache 2.0 | `.litertlm` (1,22-2,21 GB) |
+| openbmb/MiniCPM-V-4.7-1B (original) | ~1B | no disponible | Imagen + texto (multi-imagen y vídeo según model card del original) | Apache 2.0 | safetensors / Transformers |
+| Alternativas de 1B-2B con visión | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+La información proporcionada no incluye datos de benchmarks comparativos con otros modelos de la misma categoría, por lo que no es posible establecer una comparación cuantitativa de rendimiento. La diferencia principal frente al checkpoint original de OpenBMB es el formato y las restricciones del runtime: LiteRT-LM limita a una imagen por mensaje, resolución fija 448×448 y elimina el modo de detalle fino 4×, mientras que el modelo original soporta tiling y, según su model card, multi-imagen y vídeo.
 
 ## Limitaciones y advertencias
 
-- El bundle solo procesa una imagen por conversacion y la redimensiona a 448x448; las imagenes grandes pierden detalle frente al pipeline con recortes del modelo original.
-- No incluye video, prompts multi-imagen ni el modo de 4x ("finer detail"); para esos casos hay que usar el modelo original en Transformers.
-- El M-RoPE del canvas colapsa a RoPE ordinario sobre tokens de imagen en este runtime, lo que produce parafrasis en lugar de respuestas identicas al modelo fp32 (sin errores factuales observados en 9 de 9 casos).
-- La cuantizacion int8 introduce una discrepancia de top-1 en 1 de 48 posiciones y reduce la correlacion del codificador visual int8 a 0,9954.
-- En iPhone 18 Pro la CPU acerto 7 de 8 preguntas frente a 8/8 en Metal; el rendimiento puede variar segun el backend.
-- Riesgo de alucinacion inherente a modelos de 1B: no se documentan evaluaciones de fidelidad factual a gran escala.
-- Sesgos conocidos: no disponibles en la informacion proporcionada.
-- Idiomas soportados: no disponibles; el vocabulario es amplio (248.094 tokens) pero no se confirma cobertura multilingue.
-- Licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del runtime LiteRT-LM y del modelo base por separado.
-- El repositorio depende de litert-lm 0.18.0; versiones distintas del runtime pueden no cargar los ficheros correctamente.
+- Una sola imagen por mensaje: el contrato `fast_vlm` de LiteRT-LM no admite prompts multi-imagen ni vídeo en este bundle.
+- Resolución fija de 448×448: las imágenes mayores se redimensionan a un cuadrado, lo que puede perder detalle en documentos densos o escenas con texto pequeño; el modo de detalle fino 4× no está incluido.
+- Sin modo thinking: el bundle solo expone el modo "Instruct" con respuestas directas, lo que limita el razonamiento multi-paso explícito.
+- M-RoPE colapsado a RoPE 1-D sobre tokens de imagen: según el autor, produce paráfrasis correctas en las pruebas realizadas, pero es una desviación del comportamiento del modelo original.
+- Riesgo de alucinación: no cuantificado en la información disponible; como todo VLM de 1B, es esperable en descripciones de imágenes ambiguas o con texto poco legible.
+- Sesgos conocidos: no documentados en la información proporcionada.
+- Idiomas soportados: no declarados; la cobertura multilingüe no está verificada.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero se debe conservar el aviso de licencia y atribuir a OpenBMB y a litert-community; conviene revisar la licencia del modelo base por si hubiera condiciones adicionales no reflejadas aquí.
+- Caveat de producción: la variante con encoder visual fp16 ha provocado reinicios en móviles Android de 8 GB con GPU Mali en conversiones anteriores, según la model card; para esos dispositivos debe usarse `_int8vis`.
+- Fidelidad int8: el decodificador int8 difiere del fp32 en 1 de 48 posiciones (empate cercano) y el encoder int8 baja la correlación a 0,9954, lo que puede afectar a tareas visuales finas.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/litert-community/MiniCPM-V-4.7-1B
-- Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.7-1B
+- Modelo en Hugging Face: https://huggingface.co/litert-community/MiniCPM-V-4.7-1B
+- Modelo base original: https://huggingface.co/openbmb/MiniCPM-V-4.7-1B
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM
-- Guia de reproduccion de la conversion: https://github.com/john-rocky/hf-to-litertlm/blob/main/REPRODUCE.md
-- Manifiesto con datos legibles por maquina: https://huggingface.co/litert-community/MiniCPM-V-4.7-1B/blob/main/litertlm_manifest.json
+- Reproducción de la conversión: https://github.com/john-rocky/hf-to-litertlm/blob/main/REPRODUCE.md#2026-10-13--minicpm-v-47-1b-a-qwen35-text-hybrid-vlm-as-a-fast_vlm-file-the-window-merger-vit-re-authored-in-plain-torch-and-a-chat-template-whose-second-turn-matches-upstream-token-for-token
+- Manifiesto con hechos legibles por máquina: https://huggingface.co/litert-community/MiniCPM-V-4.7-1B/blob/main/litertlm_manifest.json

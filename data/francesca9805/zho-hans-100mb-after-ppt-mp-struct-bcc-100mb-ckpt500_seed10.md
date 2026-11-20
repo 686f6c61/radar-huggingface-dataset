@@ -2,103 +2,90 @@
 
 ## Resumen
 
-`zho-hans-100mb-after-ppt-mp-struct-bcc-100mb-ckpt500_seed10` es un modelo de generacion de texto de 124,77 millones de parametros publicado por el usuario `francesca9805` en Hugging Face. Se trata de un ajuste fino (SFT) del checkpoint `francesca9805/zho-hans-100mb-ppt-mp-struct-bcc-100mb_seed10`, entrenado con la libreria TRL sobre una arquitectura de tipo GPT-2, segun los tags del repositorio. El identificador sugiere un experimento sobre corpora en chino mandarin simplificado (`zho-Hans`) con un presupuesto de aproximadamente 100 MB y variantes de tokenizador, aunque la model card no declara idioma ni dataset.
+El modelo `zho-hans-100mb-after-ppt-mp-struct-bcc-100mb-ckpt500_seed10` es un ajuste fino (SFT) del checkpoint `francesca9805/zho-hans-100mb-ppt-mp-struct-bcc-100mb_seed10`, publicado por el usuario francesca9805 en Hugging Face. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 124.770.816 parametros, entrenado mediante la libreria TRL (version 0.23.0) sobre el ecosistema Transformers 4.56.2. El nombre del repositorio sugiere un experimento centrado en tokenizacion y estructura linguistica para chino mandarin simplificado (zho-hans), con un presupuesto de datos de aproximadamente 100 MB y un entrenamiento llevado a cabo en el step 500 con semilla 10.
 
-El modelo no documenta longitud de contexto, licencia, idiomas ni resultados de evaluacion. La informacion disponible se limita a la procedencia (fine-tune via TRL 0.23.0 con Transformers 4.56.2, PyTorch 2.11.0, Datasets 4.8.4 y Tokenizers 0.22.1), al run de Weights & Biases asociado al proyecto `new-tokenizers` y a un ejemplo de uso con `pipeline` de Transformers.
+El modelo forma parte de una linea de investigacion sobre tokenizadores y representaciones estructurales (las siglas ppt, mp, struct y bcc aparecen en el identificador), y el run asociado en Weights & Biases pertenece al proyecto "new-tokenizers" de la Universidad de Groningen. No se trata de un modelo de proposito general listo para produccion, sino de un artefacto de investigacion derivado de un entrenamiento supervisado sobre un modelo base del mismo autor.
 
-Su relevancia es acotada y de caracter experimental: por tamano y ausencia de documentacion, encaja como artefacto de investigacion para estudiar tokenizadores o como baseline reproducible de SFT, no como modelo para produccion. Con 0 descargas y 0 likes en el momento de la consulta, debe tratarse como un checkpoint de laboratorio.
+A pesar de sus 1.496 descargas, la model card es practicamente vacia: no documenta composicion del dataset, hiperparametros, resultados de evaluacion ni limitaciones. Cualquier evaluacion seria del modelo debe considerar esta ausencia de informacion como un factor de riesgo importante.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only de tipo GPT-2 (derivado del tag `gpt2`; no se detalla en la model card) |
-| Parametros totales | 124.770.816 (124,77 M, dato real de los safetensors) |
-| Parametros activos | no aplica (modelo denso, no es MoE) |
+| Arquitectura | GPT-2 (transformer decoder-only, segun el tag `gpt2`) |
+| Parametros totales | 124.770.816 |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el repo solo distribuye safetensors; no se publican versiones GGUF, AWQ ni GPTQ) |
-| Idiomas soportados | no disponible (el identificador `zho-hans` sugiere chino mandarin simplificado, pero la model card no lo declara) |
-| Licencia | no disponible (la model card contiene el placeholder `licence: license`, sin texto legal) |
-| Formato de pesos | safetensors |
-| Libreria de inferencia | transformers, text-generation-inference (tags `endpoints_compatible`) |
-| Metodo de entrenamiento | SFT supervisado con TRL 0.23.0 |
-| Modelo base | `francesca9805/zho-hans-100mb-ppt-mp-struct-bcc-100mb_seed10` |
-| Tamano del repositorio | 4,5 GB |
-| Descargas / likes | 0 / 0 |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; cuantizacion GGUF/AWQ no publicada) |
+| Idiomas soportados | no disponible (el identificador sugiere chino mandarin simplificado, `zho-hans`) |
+| Licencia | no disponible (la model card indica `licence: license`, sin especificar) |
+| Formato de pesos | safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde a un transformer decoder-only de la familia GPT-2, segun el tag `gpt2` del repositorio y la libreria `transformers`. Con 124,77 M de parametros, el tamano coincide con GPT-2 small, lo que situa al modelo en la gama de modelos pequenos para generacion autoregresiva. No se publican detalles sobre numero de capas, dimension oculta, cabezas de atencion, tipo de positional encoding ni vocabulario, y tampoco se documenta la longitud de contexto efectiva.
+El tag `gpt2` y el numero de parametros (124,77 M) son consistentes con una arquitectura transformer decoder-only de tipo GPT-2 small, con embeddings de tokens y posiciones aprendidas y atencion causal completa. No hay indicios de atencion lineal, SSM ni arquitecturas hibridas. El modelo se ha obtenido mediante ajuste fino supervisado (SFT) con TRL 0.23.0 sobre el checkpoint `zho-hans-100mb-ppt-mp-struct-bcc-100mb_seed10`, que a su vez es el modelo base referenciado en los tags (`base_model:finetune`). El entrenamiento se ejecuto con PyTorch 2.11.0, Transformers 4.56.2, Datasets 4.8.4 y Tokenizers 0.22.1.
 
-El entrenamiento es un ajuste fino supervisado (SFT) del checkpoint base mediante TRL 0.23.0. La model card no especifica el volumen de tokens, la composicion del dataset, si hubo etapas de RLHF/DPO ni hiperparametros de entrenamiento; solo enlaza al run `xdcvb3xx` del proyecto `new-tokenizers` en Weights & Biases, lo que apunta a un experimento centrado en tokenizacion y modelado de lenguaje. El nombre del checkpoint (`ckpt500`) sugiere un punto de guardado en el paso 500, sin que se pueda confirmar el regimen de entrenamiento ni el numero total de pasos.
+La model card no especifica el numero de tokens de entrenamiento, la composicion del dataset, la presencia de RLHF o DPO (solo consta SFT) ni hiperparametros como tasa de aprendizaje, batch size o longitud de secuencia. El identificador del modelo sugiere un experimento con tokenizadores alternativos y representaciones estructurales para chino simplificado, con un presupuesto de datos del orden de 100 MB y un checkpoint intermedio en el step 500. El run de Weights & Biases enlazado (`wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/ohq5zfni`) es la unica fuente potencial de trazabilidad del entrenamiento, pero no se ha verificado su contenido en la informacion disponible.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva en el idioma o idiomas del corpus de entrenamiento (no declarados).
-- Conversacion de un solo turno mediante el formato de chat aplicado en el pipeline de Transformers que muestra la model card.
-- No hay evidencia de soporte de tool calling ni de function calling en la informacion disponible.
-- No hay evidencia de capacidades de agente, razonamiento multi-paso, modo thinking ni uso de herramientas externas.
-- No se documentan capacidades de vision, audio ni multimodalidad.
-- No se documenta soporte multilingue explicito ni evaluacion por idioma.
-- Sirve como modelo de referencia reproducible para experimentos de SFT y de tokenizacion.
+- Generacion de texto autoregresiva basica, heredada de la arquitectura GPT-2.
+- Ajuste por SFT para seguir el formato de conversacion de chat (el ejemplo de la model card usa una lista de mensajes con `role: user`).
+- Capacidad multilingue: no verificada; el identificador apunta a chino mandarin simplificado, pero no se documenta cobertura real.
+- Tool calling / function calling: no disponible.
+- Razonamiento multi-paso o modo de pensamiento: no disponible.
+- Vision, audio u otras modalidades: no disponible.
+- Capacidades de codigo o matematicas: no documentadas ni evaluadas.
 
 ## Casos de uso
 
-- Baseline academico de SFT: punto de comparacion controlado para medir el efecto de cambios en el tokenizador o en el corpus, ya que el proyecto de origen (`new-tokenizers`) y el run de W&B apuntan a ese tipo de experimento.
-- Pruebas de integracion de pipelines de generacion: con 124,77 M de parametros el modelo carga en CPU y permite validar extremo a extremo un `pipeline("text-generation")`, el formato de chat y el despliegue con TGI antes de pasar a modelos mayores.
-- Experimentacion con tokenizadores en chino: si se confirma la hipotesis del identificador `zho-hans`, sirve para estudiar cobertura de vocabulario y fertilidad de tokens en mandarin simplificado con un coste computacional minimo.
-- Generacion de texto sintetico a pequena escala para aumentar datasets de tareas de clasificacion o etiquetado, aceptando una calidad limitada y filtrando la salida.
-- Docencia y demos de ajuste fino: su tamano permite ejecutar el ciclo completo de entrenamiento e inferencia en una unica GPU consumer, ejemplificando el flujo TRL + Transformers.
-- Despliegue en entornos con recursos muy restringidos (CPU, dispositivos edge, contenedores pequenos) donde un modelo de 124 M en int8 ocupa del orden de 125 MB de pesos, aceptando una calidad de generacion baja.
-- Reproduccion de resultados: al estar fijado el run de W&B y las versiones exactas de las librerias, permite replicar el experimento y auditar la configuracion de entrenamiento.
+- Experimentacion academica con tokenizadores: el modelo sirve como punto de comparacion en estudios sobre segmentacion subword para chino, dado su origen en el proyecto "new-tokenizers" y su nombre que referencia estructura y BCC.
+- Reproduccion de experimentos de SFT: util para validar pipelines de TRL 0.23.0 con Transformers 4.56.2 en entornos de investigacion.
+- Generacion de texto corto en chino simplificado: puede emplearse para pruebas de continuacion de texto con `max_new_tokens` limitado, siempre que se valide cualitativamente la salida.
+- Baseline en ablaciones de entrenamiento: al ser un checkpoint intermedio (step 500) de una semilla concreta (seed 10), es adecuado como referencia en estudios de variabilidad por semilla.
+- Pruebas de integracion con text-generation-inference: el tag `text-generation-inference` y `endpoints_compatible` permiten desplegarlo en infraestructura de HF para validar pipelines de serving.
+- Docencia y demos de ajuste fino: por su tamano reducido (124 M de parametros) y su formato estandar de transformers, es manejable en entornos docentes con GPU consumer.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye MMLU, HumanEval, GSM8K, perplexity ni ninguna otra metrica de evaluacion, y no existe una comparacion oficial con modelos de referencia.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (calculada a partir de 124,77 M de parametros, sin contar cache KV): en FP32, aproximadamente 0,5 GB; en FP16/BF16, aproximadamente 0,25 GB; en int8, aproximadamente 0,13 GB; en int4, aproximadamente 0,07 GB.
-- La cache KV anade memoria adicional proporcional a la longitud de contexto, que no esta documentada; con contextos de 1.024 tokens y arquitectura GPT-2 small el sobrecoste es del orden de decenas de MB.
-- GPU recomendadas: cualquier GPU consumer moderna sirve; RTX 3060, RTX 4060, RTX 4090 o superiores no suponen ninguna restriccion. Tambien es viable en CPU.
-- Cabe holgadamente en GPU consumer, incluidos portatiles con 4-6 GB de VRAM, y en muchas configuraciones integradas.
-- Opciones de despliegue: `transformers` (soporte verificado por los tags), Text Generation Inference (tag `text-generation-inference` y `endpoints_compatible`) y, en principio, llama.cpp u Ollama si se generan pesos GGUF, aunque el repositorio no los distribuye.
-- Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo ni de tiempo hasta el primer token.
-- Nota: el repositorio ocupa 4,5 GB, muy por encima de los ~0,25 GB de pesos en FP16, lo que sugiere la presencia de estados de optimizador u otros artefactos de entrenamiento en el historial de ficheros.
+- VRAM estimada para inferencia en FP32: aproximadamente 500 MB de pesos mas overhead de activaciones y cache KV (dependiente de la longitud de contexto, no documentada).
+- VRAM estimada en FP16/BF16: aproximadamente 250 MB de pesos.
+- VRAM estimada en cuantizacion de 8 bits: aproximadamente 125 MB; en 4 bits, aproximadamente 65 MB (estimaciones teoricas, no verificadas con herramientas oficiales).
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; una RTX 3060, RTX 4060 o superior es mas que suficiente. Tambien funciona en CPU para inferencia por lotes pequenos.
+- Cabe holgadamente en GPU consumer (GTX 1650, RTX 3050, RTX 4090, etc.).
+- Opciones de despliegue: transformers (pipeline), text-generation-inference (tag declarado), potencialmente llama.cpp u Ollama si se genera una conversion GGUF (no publicada).
+- Latencia y throughput: no disponibles; al ser un modelo de 124 M de parametros, se espera una latencia baja en GPU, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
-Los datos de las alternativas son de referencia general y no proceden de la informacion proporcionada para este modelo; se incluyen solo como orientacion de categoria.
-
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo | 124,77 M | no disponible | no disponible | Hugging Face, 0 descargas | SFT con TRL, sin evaluacion publicada |
-| GPT-2 small | 124 M | 1.024 tokens | MIT | Amplia, ampliamente evaluado | Referencia de la misma familia y tamano |
-| DistilGPT-2 | 82 M | 1.024 tokens | MIT | Amplia | Destilado, menor coste, misma categoria |
-| GPT-2 medium | 355 M | 1.024 tokens | MIT | Amplia | Mayor capacidad con coste aun contenido |
-| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache 2.0 | Amplia, con versiones GGUF | Alternativa pequena multilingue con contexto largo y tool calling documentado |
+| `francesca9805/zho-hans-100mb-after-ppt-mp-struct-bcc-100mb-ckpt500_seed10` | 124,77 M | no disponible | no disponible | Hugging Face | SFT sobre GPT-2 small, experimento de tokenizacion |
+| GPT-2 small (OpenAI) | 124 M | 1.024 tokens | MIT | Hugging Face, OpenAI | Referencia arquitectonica; multilingue limitado |
+| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache 2.0 | Hugging Face | Modelo moderno multilingue con chino nativo |
+| SmolLM2-135M | 135 M | 8.192 tokens | Apache 2.0 | Hugging Face | Alternativa pequena con entrenamiento reciente |
 
-La diferencia practica frente a estas alternativas no esta en el rendimiento, que no se ha medido, sino en la documentacion: GPT-2, DistilGPT-2 y Qwen2.5 cuentan con licencia explicita, contexto declarado y evaluaciones publicadas, mientras que este checkpoint carece de los tres elementos.
+La comparativa es orientativa: el modelo de francesca9805 no documenta contexto, licencia ni evaluacion, por lo que la comparacion con alternativas establecidas se limita a tamano y arquitectura.
 
 ## Limitaciones y advertencias
 
-- Licencia no disponible: la model card contiene el placeholder `licence: license` sin texto legal, por lo que no puede asumirse permiso de uso comercial ni redistribucion.
-- Idiomas no declarados: el identificador sugiere chino mandarin simplificado, pero no hay confirmacion oficial; el comportamiento fuera de ese idioma es impredecible.
-- Longitud de contexto no documentada: cualquier diseno de aplicacion que dependa de una ventana concreta requiere medirla empiricamente.
-- Capacidad limitada por tamano: con 124,77 M de parametros, el modelo no es fiable en razonamiento multi-paso, matematicas, generacion de codigo no trivial ni instrucciones complejas.
-- Riesgo alto de alucinacion y de perdida de coherencia en generaciones largas, agravado por la ausencia de evaluacion y de datos de entrenamiento publicados.
-- Sesgos desconocidos: al no documentarse la composicion del corpus, no es posible auditar sesgos de genero, etnia, religion o sesgos culturales propios del corpus en chino.
-- Sin soporte verificado de tool calling, function calling ni comportamiento agentico; no debe integrarse en flujos que dependan de salidas estructuradas sin validacion externa.
-- Naturaleza experimental: 0 descargas, 0 likes, nombre de checkpoint intermedio (`ckpt500`) y proyecto de investigacion sobre tokenizadores; no hay indicios de validacion en produccion.
-- El modelo base del que deriva tampoco esta documentado, por lo que los defectos del ajuste fino pueden heredarse de una etapa previa opaca.
-- El repositorio incluye 4,5 GB de artefactos, muy superior al tamano de los pesos, lo que conviene revisar antes de descargarlo en entornos con almacenamiento limitado.
+- Ausencia total de documentacion sobre dataset, hiperparametros y evaluacion: no es posible estimar su calidad real.
+- Riesgo elevado de alucinacion y degeneracion de texto, propio de un GPT-2 small con SFT sobre un presupuesto de datos limitado (100 MB segun el identificador).
+- Sesgos desconocidos: al no documentarse la composicion del corpus, no se pueden evaluar sesgos de genero, etnicos o politicos.
+- Cobertura idiomatica no verificada: el identificador sugiere chino simplificado, pero no hay confirmacion ni evaluacion multilingue.
+- Licencia ambigua (`licence: license`): no se puede asumir uso comercial permitido; se recomienda contactar con el autor antes de cualquier despliegue productivo.
+- Modelo de investigacion: no apto para produccion sin una evaluacion propia exhaustiva.
+- Longitud de contexto no documentada: limita el diseno de aplicaciones conversacionales multi-turno.
+- Checkpoint intermedio (step 500): puede no representar el mejor estado del entrenamiento.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/francesca9805/zho-hans-100mb-after-ppt-mp-struct-bcc-100mb-ckpt500_seed10
 - Modelo base: https://huggingface.co/francesca9805/zho-hans-100mb-ppt-mp-struct-bcc-100mb_seed10
-- Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/xdcvb3xx
-- Repositorio de TRL: https://github.com/huggingface/trl
-- Repositorio de Transformers: no disponible en la informacion proporcionada
-- Paper: no disponible
-- Demo: no disponible
+- Run de Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/ohq5zfni
+- Repositorio TRL: https://github.com/huggingface/trl
+- Documentacion de TRL (SFT): https://huggingface.co/docs/trl/sft_trainer

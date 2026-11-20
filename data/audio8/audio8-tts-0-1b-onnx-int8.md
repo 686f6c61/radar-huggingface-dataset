@@ -2,77 +2,99 @@
 
 ## Resumen
 
-Audio8-TTS-0.1B es un modelo de síntesis de voz (text-to-speech) de tamaño compacto, desarrollado por Audio8-AI, que ofrece capacidades de clonación de voz zero-shot y soporte multilingüe. Esta versión concreta, `audio8-TTS-0.1B-ONNX-INT8`, es una exportación a ONNX con cuantización INT8, orientada a despliegue en CPU mediante ONNX Runtime. El modelo forma parte de la familia Audio8 TTS, que incluye también una variante de 0.6B parámetros con cuantización INT4.
+Audio8 TTS Preview 0.1B ONNX INT8 es la distribución optimizada para CPU de un modelo compacto de síntesis de voz (text-to-speech) multilingüe con clonación de voz zero-shot. Lo desarrolla Audio8 y deriva del checkpoint base Audio8/Audio8-TTS-Preview-0.1b, un modelo de aproximadamente 100 millones de parámetros (sin contar el códec) que emplea una arquitectura DualAR inspirada en Fish Audio S2 Pro. Esta variante concreta empaqueta los grafos en formato ONNX con cuantización INT8 dinámica para los módulos autorregresivos y FP16 para el códec neuronal, de modo que la inferencia se ejecuta íntegramente sobre ONNX Runtime con el `CPUExecutionProvider`, sin necesidad de GPU ni de PyTorch.
 
-La relevancia de este modelo radica en su equilibrio entre tamaño reducido (0.1B parámetros) y calidad de síntesis, lo que permite ejecutarlo en hardware modesto sin necesidad de GPU. Su licencia Apache 2.0 facilita su uso comercial y su integración en aplicaciones de producción. Aunque la documentación oficial es escasa, el repositorio de GitHub y las demos de audio confirman su funcionalidad básica.
+El interés de esta release es fundamentalmente de despliegue: reduce el peso en memoria a unos 0,6 GB al cargar las sesiones en línea (frente a 1,0 GB del repositorio completo, que incluye el encoder de registro de voces), elimina dependencias de PyTorch, Transformers y del Hub tras la descarga, y ofrece latencias medidas de aproximadamente 19 ms por token del slow AR y 8 ms por frame del fast AR en un host de 8 hilos. Con una ventana de contexto de hasta 2.048 posiciones empaquetadas de texto y audio, el modelo cubre 11 idiomas (cantonés, chino, neerlandés, inglés, francés, alemán, italiano, japonés, coreano, polaco y español) y genera audio mono a 44,1 kHz.
+
+Es relevante ahora porque demuestra que un TTS con clonación de voz puede ejecutarse en entornos de bajos recursos —CPU, dispositivos embebidos tipo Jetson, servidores sin acelerador— manteniendo una calidad de audio de 44,1 kHz y una API compatible con OpenAI. La contrapartida es una licencia comunitaria propia (audio8-community-license-v1.0) que conviene revisar antes de cualquier uso comercial, y un estado explícito de "preview" con cobertura lingüística deliberadamente limitada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | DualAR (autoregresiva dual) con codec neuronal de audio |
-| Parametros totales | 0.1B (aproximadamente 100 millones) |
+| Arquitectura | DualAR (slow AR + fast AR); slow AR Falcon-H1 híbrido atención + Mamba; códec neuronal |
+| Parametros totales | ~100 M (modelo principal, excluyendo el códec) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no aplica (modelo TTS, no procesa texto largo como LLM) |
-| Tipos de cuantizacion | INT8 (esta version), INT4 (en la variante 0.6B) |
-| Idiomas soportados | Multilingue (no se especifican idiomas concretos; las demos muestran ingles y mandarin) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | ONNX (safetensors no aplica; el repo contiene modelos ONNX) |
+| Longitud de contexto | hasta 2.048 posiciones empaquetadas de texto/audio |
+| Tipos de cuantizacion | INT8 dinámica (slow AR y fast AR, `MatMulInteger`); FP16 (encoder y decoder del códec); salida de waveform FP32 |
+| Idiomas soportados | yue, zh, nl, en, fr, de, it, ja, ko, pl, es (11 idiomas) |
+| Licencia | audio8-community-license-v1.0 |
+| Formato de pesos | ONNX (grafos por token para los AR, códec en FP16) |
+
+Detalles adicionales de configuración: slow AR de 24 capas con anchura 512, 8 cabezas de atención, 2 cabezas KV y Mamba con `d_state` 64; fast AR de 4 capas con anchura 512; 10 codebooks acústicos de 4.096 entradas cada uno; códec a 44,1 kHz con 2.048 muestras por frame del modelo (~21,5 frames/s); salida mono. Tamaño del repositorio: 0,9 GB.
 
 ## Arquitectura y entrenamiento
 
-La arquitectura DualAR (autoregresiva dual) es una innovacion de Audio8 que combina dos flujos autoregresivos para modelar simultaneamente la prosodia y la secuencia de tokens acusticos. El modelo utiliza un codec neuronal de audio (FP16) para convertir la senal de audio en tokens discretos, y un encoder opcional (FP16) para registrar voces de referencia en la clonacion zero-shot. El tokenizador gestiona la conversion de texto a tokens foneticos o subpalabras.
+El modelo sigue una arquitectura DualAR en la que un slow AR predice un token semántico por cada frame de audio y un fast AR predice los codebooks del códec correspondientes a ese frame, condicionado por el estado oculto del slow AR y por los codebooks precedentes. El slow AR es un híbrido Falcon-H1 que combina capas de atención (8 cabezas de consulta, 2 de clave-valor) con capas de estado Mamba (`d_state` 64), lo que permite mantener estado recurrente explícito entre tokens. En esta exportación ONNX, el slow AR se ejecuta como un grafo recurrente por token que recibe explícitamente los estados de atención y de Mamba, mientras que el fast AR opera por frame. El códec neuronal, en FP16, convierte los codebooks acústicos en waveform a 44,1 kHz.
 
-No se dispone de informacion detallada sobre el dataset de entrenamiento, el numero de tokens procesados ni si se aplicaron tecnicas como RLHF o DPO. La ausencia de una model card completa en Hugging Face limita el conocimiento sobre estos aspectos. El entrenamiento probablemente se realizo con datos multilingues de voz, pero no hay cifras publicas.
+La información disponible no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO sobre el checkpoint base. Sí se documenta que el diseño de exportación por token (interfaz recurrente apilada, atención de prefijo válido) y la estrategia de cuantización INT8 se adaptaron de la conversión comunitaria Masterx/Audio8-TTS-Preview-0.1B-ONNX-INT8, aunque los grafos y el tooling son producidos de forma independiente por el equipo de Audio8 a partir del checkpoint oficial. La innovación técnica destacable es precisamente el empaquetado: grafos recurrentes por token con estados pasados de forma explícita que mantienen la carga de CPU muy baja, más un encoder FP16 opcional para registrar voces de referencia reutilizables localmente.
 
 ## Capacidades
 
-- Sintesis de voz a partir de texto con calidad aceptable para un modelo de 0.1B.
-- Clonacion de voz zero-shot: puede imitar una voz de referencia a partir de unos segundos de audio.
-- Soporte multilingue, aunque los idiomas exactos no estan documentados; las demos muestran ingles y mandarin.
-- Generacion de audio en formato de codec neuronal, lo que permite reconstruccion de alta fidelidad.
-- Optimizacion para CPU mediante ONNX Runtime, con cuantizacion INT8 que reduce el tamano y acelera la inferencia.
-- No incluye capacidades de vision, tool calling ni razonamiento, al ser un modelo exclusivamente TTS.
+- Síntesis de voz (text-to-speech) multilingüe en 11 idiomas: cantonés, chino, neerlandés, inglés, francés, alemán, italiano, japonés, coreano, polaco y español.
+- Clonación de voz zero-shot a partir de una voz de referencia, con un encoder FP16 incluido para registrar perfiles de voz reutilizables en local.
+- Generación de audio a 44,1 kHz mono, con 2.048 muestras por frame del modelo.
+- Inferencia nativa en CPU mediante ONNX Runtime `CPUExecutionProvider`, sin CUDA ni PyTorch.
+- Streaming de PCM y servicio HTTP con endpoint compatible con OpenAI, según el repositorio de runtime asociado.
+- Interfaz de línea de comandos y UI web proporcionadas por el código de inferencia del proyecto.
+- Contexto de hasta 2.048 posiciones empaquetadas de texto y audio, lo que permite referencias de voz y texto de entrada relativamente largos en una sola pasada.
+- No se documentan capacidades de tool calling, razonamiento multi-paso, visión ni audio de entrada; el modelo es exclusivamente texto a voz.
 
 ## Casos de uso
 
-- Asistentes de voz en dispositivos embebidos: al ser ligero y ejecutable en CPU, puede integrarse en Raspberry Pi o dispositivos IoT para generar respuestas habladas sin depender de la nube.
-- Accesibilidad para personas con discapacidad visual: conversion de texto digital a voz en aplicaciones de lectura de pantalla, con la posibilidad de usar una voz personalizada clonada.
-- Doblaje automatico de contenido audiovisual: la clonacion zero-shot permite generar voces similares a actores originales en multiples idiomas, reduciendo costes de produccion.
-- Sistemas de navegacion y avisos en vehiculos: sintesis de instrucciones de voz en tiempo real con bajo consumo de recursos.
-- Educacion y aprendizaje de idiomas: generacion de ejemplos de pronunciacion en distintos idiomas, con voces de referencia para practicar.
-- Prototipado rapido de productos de voz: los desarrolladores pueden integrar el modelo en pipelines de prueba para validar experiencias de usuario antes de escalar a modelos mayores.
+- Narración por lotes en servidores sin GPU: el modelo se ejecuta sobre ONNX Runtime en CPU con ~0,6 GB de memoria en línea, lo que permite generar audiolibros o artículos locutados en máquinas estándar de un proveedor cloud sin coste de acelerador.
+- Asistentes de voz en dispositivos embebidos: con latencias de ~19 ms por token del slow AR y ~8 ms por frame del fast AR en 8 hilos, es viable en placas tipo Jetson o mini-PC para interfaces conversacionales locales.
+- Clonación de voz para accesibilidad: el encoder FP16 permite registrar una voz de referencia y reutilizarla, útil para preservar la voz de un usuario con pérdida del habla en comunicaciones asistidas.
+- Doblaje y localización de contenido: la cobertura de 11 idiomas, incluidos español, francés, alemán, italiano, japonés y coreano, permite generar pistas de voz para vídeos o cursos sin contratar locutores por idioma.
+- Integración en pipelines de atención al cliente: el endpoint compatible con OpenAI y el streaming PCM facilitan conectar el TTS a un LLM existente para respuestas habladas de baja latencia en entornos on-premise.
+- Prototipado rápido de productos de voz: al no requerir PyTorch ni Transformers tras la descarga, un equipo puede desplegar un servicio TTS en un contenedor ligero y validar la experiencia de usuario antes de invertir en infraestructura GPU.
+- Generación de avisos y anuncios automatizados: la salida a 44,1 kHz mono es adecuada para megafonía, podcasts corporativos y sistemas de anuncios dinámicos que requieren calidad de audio alta sin hardware dedicado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No existen datos comparativos de MOS (Mean Opinion Score), inteligibilidad ni latencia en fuentes oficiales. Las demos de audio en el sitio de Audio8 sugieren una calidad razonable, pero sin metricas cuantitativas no es posible evaluar objetivamente.
+No se han publicado resultados de benchmarks en la informacion disponible.
+
+Los únicos datos de rendimiento proporcionados son mediciones de latencia del despliegue en CPU: aproximadamente 19 ms por token del slow AR, 8 ms por frame del fast AR y 19 ms por token de prompt en el prefill inicial, medidos en un host de prueba de 8 hilos. No se aportan cifras objetivas de calidad (MOS, similitud de hablante, WER) ni comparaciones con otros sistemas TTS.
 
 ## Requisitos de hardware
 
-- Inferencia en CPU: el modelo esta disenado para ONNX Runtime, por lo que no requiere GPU. Un procesador moderno de gama media (Intel Core i5 o equivalente) es suficiente.
-- RAM: el tamano del repo es de 0.9 GB, pero el modelo cuantizado INT8 probablemente ocupe menos de 200 MB en memoria, dependiendo de la implementacion.
-- VRAM: no aplica, al ser CPU-only.
-- GPU recomendada: no necesaria; si se desea acelerar, cualquier GPU con soporte ONNX puede usarse, pero no es el objetivo.
-- Opciones de despliegue: ONNX Runtime (Python, C++, C#), tambien puede convertirse a otros formatos si se dispone de las herramientas.
-- Latencia: no hay datos publicos; en CPU, un modelo de 0.1B deberia generar audio en tiempo real o cerca de el, pero depende del hardware y la longitud del texto.
+- VRAM estimada: no aplica; la inferencia está pensada para CPU. La memoria del sistema necesaria es de aproximadamente 0,6 GB al cargar las sesiones en línea (slow AR, fast AR y decoder del códec) y de aproximadamente 1,0 GB para el repositorio completo con el encoder de registro de voces.
+- GPU recomendadas: no se especifican; el `CPUExecutionProvider` de ONNX Runtime es el modo documentado. No se detalla soporte de `CUDAExecutionProvider` para estos grafos.
+- Cabe en CPU consumer: sí, es el objetivo del paquete. Probado en macOS arm64 y Linux x86_64; se mencionan wheels específicos de ONNX Runtime para dispositivos como Jetson.
+- Opciones de despliegue: ONNX Runtime con `CPUExecutionProvider`; el repositorio de runtime incluye CLI, UI web, API HTTP, streaming PCM y endpoint compatible con OpenAI. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI, que no aplican a este formato.
+- Latencia y throughput: ~19 ms por token del slow AR y ~8 ms por frame del fast AR en un host de 8 hilos; ~19 ms por token de prompt en el prefill. El throughput agregado no se especifica.
+- Requisitos de software: Python 3.10 o superior y `huggingface_hub[cli]` para la descarga; no se requiere PyTorch ni Transformers tras la descarga.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos con otros modelos TTS compactos como Piper, Coqui TTS o ESPnet. La falta de benchmarks publicos impide una comparacion cuantitativa. Se puede mencionar que la variante 0.6B de Audio8 ofrece mayor calidad a costa de mas recursos, pero no hay metricas oficiales.
+| Modelo | Parametros | Contexto | Idiomas | Formato / despliegue | Licencia |
+|---|---|---|---|---|---|
+| Audio8 TTS 0.1B ONNX INT8 | ~100 M (sin códec) | 2.048 posiciones | 11 | ONNX INT8/FP16, CPU | audio8-community-license-v1.0 |
+| Audio8/Audio8-TTS-Preview-0.1b (base) | ~100 M (sin códec) | 2.048 posiciones | 11 | Pesos originales del checkpoint | no disponible en la informacion proporcionada |
+| Masterx/Audio8-TTS-Preview-0.1B-ONNX-INT8 (conversion comunitaria) | ~100 M (sin códec) | no disponible | no disponible | ONNX INT8 | no disponible en la informacion proporcionada |
+
+No se dispone de datos de benchmarks ni de especificaciones detalladas de alternativas de otros fabricantes (por ejemplo, modelos TTS de tamaño comparable) en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa de calidad, latencia o cobertura lingüística frente a ellos.
 
 ## Limitaciones y advertencias
 
-- Documentacion insuficiente: la model card en Hugging Face esta vacia, y la informacion se ha extraido de fuentes externas. Esto dificulta la evaluacion de sesgos, limitaciones de idioma y comportamiento en casos extremos.
-- Riesgo de alucinacion en audio: como cualquier TTS, puede generar pronunciaciones incorrectas o artefactos en textos poco comunes o con homografos.
-- Idiomas no especificados: aunque se dice multilingue, no se indica que idiomas cubre ni la calidad por idioma. El mandarin y el ingles estan demostrados, pero otros pueden tener rendimiento inferior.
-- Clonacion de voz: el uso de clonacion zero-shot puede plantear problemas eticos y de consentimiento. La licencia Apache 2.0 no impide su uso, pero el responsable debe asegurarse de no violar derechos de voz.
-- Tamano del contexto: al ser un TTS, no maneja contextos largos de texto; la entrada se procesa por segmentos, lo que puede afectar a la coherencia prosodica en textos extensos.
-- Fecha de creacion: el modelo fue creado en agosto de 2026, lo que sugiere que es muy reciente y podria tener errores no detectados.
+- Estado "preview": la cobertura lingüística es deliberadamente limitada a los 11 idiomas recomendados; el soporte multilingüe amplio y de dialectos chinos se anuncia para versiones futuras.
+- Licencia audio8-community-license-v1.0: es una licencia "other" con términos propios; es imprescindible revisar el texto completo antes de cualquier uso comercial, redistribución o despliegue en producción.
+- Riesgo de alucinación acústica y artefactos: no se publican métricas objetivas de calidad (MOS, similitud de hablante, WER), por lo que la fiabilidad en voces, idiomas o textos atípicos no está cuantificada.
+- Sesgos: no se documenta la composición del dataset de entrenamiento, de modo que no es posible evaluar sesgos de acento, género, edad o variedad dialectal en las voces generadas.
+- Clonación de voz: la capacidad zero-shot exige consentimiento explícito de la persona cuya voz se clona y puede entrar en conflicto con normativa de protección de datos y de derechos de imagen; no se documentan salvaguardas técnicas en la información disponible.
+- Limitación de contexto: 2.048 posiciones empaquetadas de texto y audio restringen la longitud de las referencias de voz y de los textos de entrada en una sola pasada.
+- Compatibilidad de grafos: el directorio `onnx_runtime/` del repositorio apunta a grafos INT4 del modelo 0.6B y no es compatible con este paquete; hay que usar `onnx_runtime_0_1b_int8`.
+- Uso de memoria variable: los ~0,6 GB medidos dependen de la plataforma y del comportamiento del allocator; en dispositivos con poca RAM conviene validar el consumo real.
+- Idiomas del campo `language` de Hugging Face: la ficha del Hub figura como "no disponibles" aunque la model card lista 11 idiomas; conviene contrastar ambas fuentes en integraciones automatizadas.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Audio8/audio8-TTS-0.1B-ONNX-INT8
-- Repositorio GitHub: https://github.com/Audio8-AI/Audio8_TTS
-- Demo de audio 0.1B: https://audio8-ai.github.io/Audio8_TTS/0.1B/
-- Variante 0.6B INT4 en Hugging Face: https://huggingface.co/Audio8/Audio8-TTS-Preview-0.6B-ONNX-INT4
-- Documentacion ONNX Runtime en el repositorio: https://github.com/Audio8-AI/Audio8_TTS/tree/master/onnx_runtime
+- Modelo en Hugging Face: https://huggingface.co/Audio8/audio8-TTS-0.1B-ONNX-INT8
+- Modelo base: https://huggingface.co/Audio8/Audio8-TTS-Preview-0.1b
+- Repositorio GitHub del proyecto: https://github.com/Audio8-AI/Audio8_TTS
+- Directorio de runtime 0.1B INT8 ONNX: https://github.com/Audio8-AI/Audio8_TTS/tree/master/onnx_runtime_0_1b_int8
+- Demo en vivo: https://audio8-ai.github.io/Audio8_TTS/0.1B/
+- Licencia del modelo: https://huggingface.co/Edge0/audio8-TTS-0.1B-ONNX-INT8/blob/main/LICENSE
+- Conversión comunitaria de referencia: https://huggingface.co/Masterx/Audio8-TTS-Preview-0.1B-ONNX-INT8
+- ONNX Runtime: https://onnxruntime.ai/
+- Fish Audio S2 Pro (arquitectura de referencia): https://github.com/fishaudio/fish-speech

@@ -56,31 +56,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "reaperdoesntknow/DualMinded-Qwen3-1.7B · Hugging Face",
-      "url": "https://huggingface.co/reaperdoesntknow/DualMinded-Qwen3-1.7B",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "reaperdoesntknow/DualMind · Hugging Face",
-      "url": "https://huggingface.co/reaperdoesntknow/DualMind",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Qwen3 Technical Report - arXiv.org",
-      "url": "https://arxiv.org/html/2505.09388v1",
-      "snippet": "The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the integration of thinking mode (for complex, multi-step reasoning) and non-thinking mode (for rapid, context-driven responses) into a unified framework."
-    },
-    {
-      "title": "reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B-SFT: Model synced from ...",
-      "url": "https://dev.modelhub.org.cn/reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B-SFT",
-      "snippet": "Qwen3-1.7B-Distilled-30B-A3B-SFT A 1.7B parameter model built in two stages: first, knowledge distillation from a 30B MoE teacher on 6,122 STEM chain-of-thought samples to establish a structured reasoning backbone; then, supervised fine-tuning on legal instruction data to layer domain knowledge and instruction-following capability on top of that backbone."
-    },
-    {
-      "title": "Qwen3 1.7B Distilled 30B A3B SFT — AI Model | Antbase",
-      "url": "https://antbase.ai/models/qwen3-1-7b-distilled-30b-a3b-sft",
-      "snippet": "Overview Qwen3 1.7B Distilled 30B A3B SFT is a efficient model from Featherless with a 33K context window. Available through ANT&#x27;s unified API."
-    }
-  ]
+  "sources": []
 }

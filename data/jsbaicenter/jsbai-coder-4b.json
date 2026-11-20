@@ -52,31 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Jan-Code-4B - Jan",
-      "url": "https://www.jan.ai/docs/desktop/jan-models/jan-code-4b",
-      "snippet": "Jan-Code-4B is a lightweight, code-tuned 4B parameter model built for fast local inference. Fine-tuned on Jan-v3-4B-base-instruct, it is designed for practical coding tasks with an emphasis on handling well-scoped subtasks reliably while keeping latency and compute requirements low."
-    },
-    {
-      "title": "SDSU James Silberrad Center for Artificial Intelligence - GitHub",
-      "url": "https://github.com/JSBAICenter",
-      "snippet": "SDSU James Silberrad Center for Artificial Intelligence has 17 repositories available. Follow their code on GitHub."
-    },
-    {
-      "title": "janhq/Jan-code-4b · Hugging Face",
-      "url": "https://huggingface.co/janhq/Jan-code-4b",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Jan Code 4b - GGUF Model - local-ai-zone.github.io",
-      "url": "https://local-ai-zone.github.io/models/jan-code-4b.html",
-      "snippet": "Download Jan Code 4b GGUF model. 2.36 GB, 15,262 downloads, 70 likes."
-    },
-    {
-      "title": "jsbaicenter (Jame Silberrad Brown Center for Artificial Intelligence)",
-      "url": "https://huggingface.co/jsbaicenter/models",
-      "snippet": "Org profile for Jame Silberrad Brown Center for Artificial Intelligence on Hugging Face, the AI community building the future."
-    }
-  ]
+  "sources": []
 }

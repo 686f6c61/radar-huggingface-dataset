@@ -2,119 +2,108 @@
 
 ## Resumen
 
-Este repositorio contiene un conjunto de pesos de cuantizacion de 3 bits para las proyecciones del decodificador de [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B), calibrados por EliovpAI (Eliovp-BV) mediante una ejecucion propia de GPTQ sobre datos con licencias permisivas. No es un checkpoint autonomo: funciona como complemento del paquete Paiton para Qwen3.8 sobre una unica GPU AMD Radeon AI PRO R9700 (RDNA4, `gfx1201`, 32 GB), y necesita ademas un checkpoint objetivo en NVFP4 y un borrador de decodificacion especulativa DFlash2 en FP8.
+Qwen3.8-27B-W3Rot-INT3-Paiton-RDNA4 es un conjunto de pesos cuantizados a 3 bits (INT3, formato GPTQ con rotación Hadamard) para las proyecciones del decodificador de Qwen/Qwen3.8-27B, calibrados mediante un proceso GPTQ propio sobre datos con licencia permisiva. Lo publica EliovpAI como complemento del despliegue Paiton de Qwen3.8 sobre una GPU AMD Radeon AI PRO R9700 (gfx1201, RDNA4, 32 GB), no como checkpoint autónomo: requiere el checkpoint objetivo unsloth/Qwen3.8-27B-NVFP4 y el drafter DFlash2 para decodificación especulativa.
 
-El objetivo es reducir el coste de memoria y aumentar el rendimiento de decodificacion manteniendo la mayor parte de la calidad del modelo original. Frente a la ruta MXFP4 previa, la decodificacion ponderada sube un 19,9 % y el prefill entre un 5 % y un 13 %, mientras que la memoria del modelo baja de 19,18 a 15,89 GiB. El precio es una perdida de unos 3 puntos de recuerdo de conocimiento en MMLU-Pro, de los que la actualizacion del 12 de octubre de 2026 recupera entre 0,5 y 1 punto.
+El objetivo es reducir la huella de memoria del modelo servido en hardware RDNA4 manteniendo una precisión cercana a bf16. Frente a la imagen MXFP4 anterior, el autor reporta un aumento del 19,9 % en decode ponderado, del 5-13 % en prefill y una caída de memoria de modelo de 19,18 a 15,89 GiB, a costa de unos 3 puntos de MMLU-Pro. Las actualizaciones de octubre y noviembre de 2026 destilan las escalas de grupo hacia bf16 para recuperar parte de esa precisión, con mejoras medibles en divergencia KL y en tareas agénticas de SWE-bench Verified.
 
-Las caracteristicas relevantes incluyen cuantizacion INT3 con rotacion Hadamard (W3A4), cabecera de salida en FP8, decodificacion especulativa con DFlash2, vision integrada mediante la ruta `--vision`, contexto por defecto de 65 536 tokens ampliable a 262 144 (y 524 288 en modo experimental) y una cache compartida de hasta 628 877 tokens en texto.
+El modelo base Qwen3.8-27B no está documentado en la información disponible (arquitectura, número de parámetros activos, composición del dataset). La ficha se limita a los datos verificables del repositorio de cuantización.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Modelo base Qwen3.8-27B: transformer denso multimodal nativo con atencion lineal Gated DeltaNet combinada con atencion completa; este repositorio aporta pesos INT3 con rotacion Hadamard (W3A4) para las proyecciones del decodificador |
-| Parametros totales | 27 000 millones (modelo base Qwen3.8-27B); este repositorio contiene unicamente un subconjunto de pesos de sustitucion |
-| Parametros activos | no aplica (modelo denso, sin mezcla de expertos) |
-| Longitud de contexto | 65 536 por defecto; hasta 262 144; 524 288 en modo experimental (`long-512k`) |
-| Tipos de cuantizacion | INT3 (3 bits) en pesos y 4 bits en activaciones (W3A4) con GPTQ y rotacion Hadamard; ruta alternativa MXFP4 en el mismo paquete; cabecera de salida en FP8 |
+| Arquitectura | Transformer (base Qwen3.8-27B; detalles no disponibles). Pesos de decodificador cuantizados con GPTQ + rotación Hadamard |
+| Parametros totales | 27B (modelo base); pesos de este repo: 9,55 GB en INT3 |
+| Parametros activos | no disponible |
+| Longitud de contexto | 65.536 por defecto; hasta 262.144; 524.288 opcional (opt-in). Caché hasta 628.877 tokens (555.128 con imágenes) |
+| Tipos de cuantizacion | INT3 (3 bits), W3A4, GPTQ con escalas de grupo rotadas (W3Rot). Requiere runtime Paiton |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible (repositorio con `w3rot-manifest.json` y `SHA256SUMS`; no se documenta safetensors ni GGUF) |
-| Tamano de los pesos | 9,55 GB |
-| Tamano del repositorio | 19,1 GB |
-| GPU objetivo | AMD Radeon AI PRO R9700 (`gfx1201`, RDNA4, 32 GB) |
-| Revision de estos pesos | `3ef7eb149ec0bd9a0f7927491bf30f53f54ced01` |
+| Formato de pesos | Pesos propietarios del runtime Paiton (no safetensors ni GGUF estándar); repo de 33,4 GB con SHA256SUMS |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-27B es un LLM denso y multimodal nativo publicado por el equipo Qwen de Alibaba. La presencia de filas rotadas de «Gated DeltaNet» en el proceso de cuantizacion indica una arquitectura hibrida que combina capas de atencion lineal (Gated DeltaNet) con capas de atencion completa. El paquete de inferencia anade decodificacion especulativa mediante un borrador DFlash2 en FP8, ademas de cache de prefijos y cache KV de 4 bits en el modo `long-kv4`.
+El modelo base es Qwen3.8-27B, del que no se dispone de detalles arquitectónicos en la información proporcionada. Sobre él, EliovpAI aplica una cuantización GPTQ a 3 bits de las proyecciones del decodificador, con rotación Hadamard previa (W3Rot) para redistribuir valores atípicos antes de cuantizar, y activaciones en 4 bits (W3A4). El calibrado se realizó con un run GPTQ propio sobre datos con licencia permisiva, e incluye conversaciones de destilación que citan código de repositorios de SWE-bench bajo sus propias licencias (una de ellas, pylint, GPL-2.0; ver CALIBRATION.md).
 
-Estos pesos W3Rot no se han entrenado: se han obtenido con una ejecucion propia de GPTQ sobre datos con licencias permisivas, documentada en `CALIBRATION.md`. La innovacion principal es la rotacion Hadamard aplicada antes de la cuantizacion, que reparte los valores atipicos y permite bajar a 3 bits en pesos con activaciones de 4 bits. La actualizacion del 12 de octubre de 2026 destilo las escalas de grupo en BF16 hacia el modelo bf16, sin cambiar el formato, los codigos de 3 bits, la imagen de ejecucion ni el lanzador: solo cambian los valores de escala. El resultado es una reduccion de la divergencia KL respecto a bf16 del 20,9 % en decodificacion y del 23,8 % en prefill, y del 19,5 % cuando se sirve en la R9700, a velocidad sin cambios. El modelo se apoya en el checkpoint objetivo `unsloth/Qwen3.8-27B-NVFP4` para el resto de tensores y en el borrador `tcclaviger/Qwen3.8-27B-DFlash2-FP8`.
+Las actualizaciones posteriores no cambian el formato ni los códigos de 3 bits: solo destilan las escalas de grupo hacia bf16. La del 12 de octubre reduce la divergencia KL a bf16 un 20,9 % en decode y un 23,8 % en prefill. La del 24 de octubre, sobre 4,2 millones de tokens nuevos, baja la KL servida en R9700 un 3,0 % adicional y acerca los documentos largos (8K-131K tokens) un 1-2 % a bf16. La del 7 de noviembre destila las escalas de gate y up del MLP de las capas 32 a 63 sobre trayectorias de agentes de código (SWE-bench Verified en bf16), cambiando el 1,3 % de los valores de escala. El despliegue usa decodificación especulativa con el drafter DFlash2 (FP8) y kernels nativos en la imagen r2.
 
 ## Capacidades
 
-- Generacion de texto en modo `text-generation`, con decodificacion codiciosa en las mediciones publicadas y razonamiento con «thinking» desactivado en las pruebas.
-- Razonamiento y conocimiento general, con una degradacion declarada de en torno a 3 puntos en MMLU-Pro respecto a la ruta MXFP4 (recuperando entre 0,5 y 1 punto con la actualizacion de octubre).
-- Codigo y flujos de agentes de programacion: el modo `long-kv4` esta pensado explicitamente para agentes de codigo y documentos largos.
-- Vision: soporte de imagenes mediante `--vision`, con lectura de imagenes de hasta 4K a resolucion completa y una cache de prefijos de 555 128 tokens cuando hay imagenes.
-- Contexto largo: 262 144 tokens por peticion en los modos `long` y `long-kv4`, y 524 288 en el modo experimental `long-512k`.
-- Concurrencia: todos los modos admiten hasta ocho peticiones simultaneas.
-- Cache de prefijos, incluida persistencia tras un reinicio en el modo `long-kv4 --extend-cache` (entre 0,7 y 2,8 millones de tokens en RAM del sistema o en NVMe/SSD).
-- Decodificacion especulativa mediante el borrador DFlash2, que acelera la generacion.
-- Tool calling, function calling, capacidades de agentes multi-paso y cobertura multilingue: no documentadas en la informacion disponible para este paquete de pesos.
+- Generación de texto y razonamiento de propósito general, heredados del modelo base Qwen3.8-27B.
+- Capacidades de código y resolución de tareas agénticas: el autor reporta 323 de 500 tareas resueltas en SWE-bench Verified con estos pesos (390 en bf16).
+- Soporte de contextos largos: hasta 262.144 tokens por defecto y 524.288 opcional, con caché de hasta 628.877 tokens.
+- Procesamiento de imágenes: la caché indica 555.128 tokens con imágenes, lo que sugiere soporte multimodal en el modelo base (no confirmado en la información disponible).
+- Decodificación especulativa integrada mediante el drafter DFlash2.
+- Tool calling, function calling y modo thinking: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible.
 
 ## Casos de uso
 
-- Agentes de programacion sobre repositorios grandes: el modo `long-kv4` ofrece 262 144 tokens por peticion y una cache compartida de 628 877 tokens, suficiente para mantener en memoria varios ficheros y el historial de herramientas de un agente que itera sobre el mismo codigo.
-- Analisis de documentacion extensa: informes, contratos o expedientes que caben en una sola ventana de 262 144 tokens, con lectura por pasos de 2048 tokens para no bloquear al resto de usuarios.
-- Asistentes con vision para capturas de pantalla: lectura de imagenes hasta 4K a resolucion completa y cache con imagenes de 555 128 tokens, adecuada para revisar interfaces, diagramas o documentacion escaneada.
-- Atencion al cliente multi-turno concurrente: el modo por defecto (`--mode 65k`) mantiene seis peticiones de longitud completa simultaneas y evita la cache de prefijos para priorizar la latencia en conversaciones cortas.
-- RAG sobre corpus persistentes: con `long-kv4 --extend-cache` la cache sobrevive a los reinicios, de modo que un servicio puede reutilizar entre 0,7 y 2,8 millones de tokens ya procesados sin recalcular el prefill.
-- Analisis de repositorios completos: el modo experimental `long-512k` permite una unica peticion de hasta 524 288 tokens con cache de 594 290, util para revisiones globales de un arbol de codigo.
-- Despliegue en hardware AMD de gama profesional: con 9,55 GB de pesos y 15,89 GiB de memoria de modelo, una sola R9700 de 32 GB puede servir un modelo de 27 000 millones de parametros con vision y contexto largo, sin GPU NVIDIA.
+- Despliegue de inferencia en GPU de consumo profesional AMD: el formato está diseñado específicamente para una Radeon AI PRO R9700 (32 GB), permitiendo servir un modelo de 27B con 65K de contexto en una sola tarjeta gracias a los 9,55 GB de pesos INT3 y los 15,89 GiB de memoria total de modelo.
+- Agentes de código autónomos: las actualizaciones de noviembre se calibraron sobre trayectorias de SWE-bench Verified; el modelo resuelve tareas de reparación de bugs en repositorios reales, con 323/500 resueltas reportadas, lo que lo hace adecuado para pipelines de agentes de ingeniería de software.
+- Procesamiento de documentos largos: con 262K de contexto por defecto y degradación controlada de 1-2 % frente a bf16 en el rango 8K-131K, sirve para análisis de contratos, informes o bases de código extensas.
+- Sustitución de despliegues MXFP4 en producción: el autor reporta un 19,9 % más de throughput en decode y un 5-13 % en prefill con menor memoria, por lo que es una actualización directa para instalaciones Paiton existentes.
+- Evaluación comparativa de cuantización: útil para investigadores que midan la pérdida de precisión de INT3 con rotación frente a bf16 en tareas de conocimiento (MMLU-Pro), matemáticas (GSM8K) y código (HumanEval).
+- Experimentación con decodificación especulativa: el stack DFlash2 + W3Rot permite estudiar el equilibrio entre latencia, memoria y precisión en hardware RDNA4.
 
 ## Benchmarks y rendimiento
 
-La informacion disponible incluye resultados relativos medidos en modelo el 26 de septiembre de 2026 con la imagen Paiton, usando decodificacion codiciosa y «thinking» desactivado, comparando cada prueba contra la imagen MXFP4 sobre elementos identicos. No se han publicado cifras absolutas de MMLU, HumanEval, GSM8K u otros benchmarks en la informacion proporcionada.
+Los datos publicados por el autor son comparaciones internas entre revisiones de los pesos, no frente a otros modelos:
 
-| Metrica | Comparacion | Resultado |
-|---|---|---|
-| Decodificacion ponderada | frente a la imagen MXFP4 previa | +19,9 % |
-| Prefill | frente a la imagen MXFP4 previa | +5 % a +13 % |
-| Memoria del modelo | frente a la imagen MXFP4 previa | 19,18 GiB → 15,89 GiB |
-| MMLU-Pro (recuerdo de conocimiento) | frente a la imagen MXFP4 previa | −3 puntos aproximadamente |
-| Recuperacion de MMLU-Pro (actualizacion del 12 de octubre de 2026) | frente a los pesos anteriores | +0,5 a +1 punto estimado |
-| Divergencia KL respecto a bf16 (decodificacion) | frente a los pesos anteriores | −20,9 % |
-| Divergencia KL respecto a bf16 (prefill) | frente a los pesos anteriores | −23,8 % |
-| Divergencia KL respecto a bf16 servido en la R9700 | frente a los pesos anteriores | −19,5 % |
-| Latencia de respuesta corta durante una lectura de 64K | modo `long-kv4` | 0,7 s en lugar de 5,9 s |
+| Metrica | Resultado reportado |
+|---|---|
+| Decode ponderado vs. MXFP4 | +19,9 % |
+| Prefill vs. MXFP4 | +5-13 % |
+| Memoria de modelo | 19,18 GiB (MXFP4) → 15,89 GiB (INT3) |
+| MMLU-Pro | −3 puntos vs. bf16 (recuperados 0,5-1 punto en la revisión del 12 de octubre) |
+| SWE-bench Verified, 500 tareas | 323 resueltas (vs. 284 revisión anterior; bf16: 390) |
+| SWE-bench Verified, 250 tareas held-out | 165 (vs. 134 revisión anterior) |
+| KL a bf16 (12 oct) | −20,9 % decode, −23,8 % prefill |
+| KL a bf16 (24 oct) | −3,0 % adicional en R9700 |
+| Acuerdo top-1 en decode vs. bf16 (texto general) | −0,32 puntos en la revisión del 7 de noviembre |
+
+No se han publicado resultados de benchmarks frente a otros modelos en la información disponible.
 
 ## Requisitos de hardware
 
-- GPU: una unica AMD Radeon AI PRO R9700 (`gfx1201`, RDNA4, 32 GB). No se documenta soporte para CUDA ni para otras GPU.
-- Memoria de modelo: 15,89 GiB, frente a 19,18 GiB de la ruta MXFP4, gracias a los pesos INT3 de 9,55 GB.
-- Memoria adicional: en `--mode long-kv4` la tabla de embeddings (2,4 GiB) se mantiene en RAM del sistema fijada (pinned); `--extend-cache` anade entre 0,7 y 2,8 millones de tokens de cache en RAM o en NVMe/SSD.
-- Cache KV: 4 bits en el modo `long-kv4`; la cache compartida de texto llega a 628 877 tokens y a 555 128 con imagenes.
-- Requisitos de host: Linux x86-64, Python 3, Docker y acceso al dispositivo AMD GPU (`/dev/kfd`, `/dev/dri`).
-- Imagen de ejecucion: `ghcr.io/eliovp/paiton-vllm-plugin:qwen38-rocm10-vllm029-20261005-r1@sha256:245c71d54f046f89b74dbfbd4c894003754561e55c9d215a8d3ce65364fb0f80`.
-- Lanzador: `models/Qwen3.8-MXFP4-DFlash2/run-3bit.sh` del repositorio publico del plugin.
-- Opciones de despliegue: exclusivamente vLLM a traves del plugin Paiton. No se documentan llama.cpp, Ollama ni TGI para este paquete.
-- Rendimiento: la mejora de velocidad depende del modo; el modo `long-512k` es experimental y no se publican cifras de throughput absolutas.
+- GPU: una AMD Radeon AI PRO R9700 (gfx1201, RDNA4, 32 GB) exclusivamente. No hay soporte documentado para NVIDIA ni otras GPUs.
+- Host: Linux x86-64, Python 3, Docker, acceso a dispositivos AMD (`/dev/kfd`, `/dev/dri`).
+- Imagen de runtime: `ghcr.io/eliovp/paiton-vllm-plugin:qwen38-rocm10-vllm029-20261107-r2` (basada en vLLM 0.29 y ROCm 10).
+- Checkpoints adicionales obligatorios: unsloth/Qwen3.8-27B-NVFP4 en revisión f0b7c9e y tcclaviger/Qwen3.8-27B-DFlash2-FP8 en revisión ee0cb26.
+- Memoria de modelo servida: 15,89 GiB, lo que deja margen en los 32 GB de la R9700 para caché KV de hasta 628.877 tokens.
+- No cabe en GPUs de consumo estándar (RTX 4090, etc.) por falta de soporte del runtime Paiton fuera de RDNA4.
+- Opciones de despliegue: únicamente el launcher `run-3bit.sh` del repositorio paiton-vllm-plugin. No hay soporte para llama.cpp, Ollama ni TGI.
+- Latencia y throughput absolutos: no disponibles (solo incrementos relativos).
 
 ## Comparativa con modelos similares
 
-| Modelo o ruta | Parametros | Contexto | Memoria de modelo | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Hardware |
 |---|---|---|---|---|---|
-| EliovpAI Qwen3.8-27B W3Rot INT3 (este repositorio) | 27 000 M (denso) | 65 536 por defecto, hasta 262 144 (524 288 experimental) | 15,89 GiB, pesos de 9,55 GB | Apache 2.0 | Complemento, requiere objetivo NVFP4 y borrador DFlash2 FP8 |
-| Ruta MXFP4 del mismo plugin Paiton | 27 000 M (denso) | hasta 262 144 por peticion | 19,18 GiB | Apache 2.0 | Paquete Paiton sobre la misma imagen |
-| `unsloth/Qwen3.8-27B-NVFP4` (checkpoint objetivo) | 27 000 M (denso) | no disponible | no disponible | no disponible | Checkpoint publico en Hugging Face |
-| `tcclaviger/Qwen3.8-27B-DFlash2-FP8` (borrador especulativo) | no disponible | no disponible | no disponible | no disponible | Checkpoint publico en Hugging Face, usado como drafter |
-| `amd/Qwen3.8-27B-Quark-Qronos-INT4-W4A16` | 27 000 M (denso) | no disponible | no disponible | no disponible | Cuantizacion INT4 alternativa sobre ROCm, mencionada en el repositorio del plugin |
+| Este modelo (W3Rot-INT3) | 27B | 65K-524K | INT3 GPTQ + Hadamard | Apache 2.0 | R9700 RDNA4 |
+| Qwen3.8-27B bf16 (base) | 27B | 65K-524K | bf16 | Apache 2.0 (base) | No disponible |
+| unsloth/Qwen3.8-27B-NVFP4 | 27B | No disponible | NVFP4 | No disponible | No disponible |
+| Imagen MXFP4 Paiton (previa) | 27B | No disponible | MXFP4 | No disponible | R9700 RDNA4 |
 
-No se dispone de comparativas de rendimiento con modelos de otros fabricantes del mismo tamano en la informacion proporcionada.
+No se dispone de datos de rendimiento de modelos comparables de otros fabricantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un checkpoint autonomo: sin el checkpoint objetivo NVFP4 y el borrador DFlash2 FP8 en las revisiones exactas indicadas, los pesos no funcionan. Las filas rotadas de Gated DeltaNet b/a se derivaron de los bytes de la revision objetivo.
-- Perdida de calidad declarada: aproximadamente 3 puntos de MMLU-Pro frente a MXFP4, con una recuperacion estimada de solo 0,5 a 1 punto tras la actualizacion de escalas.
-- Dependencia de hardware muy estrecha: una unica Radeon AI PRO R9700 con `gfx1201`. No se documenta funcionamiento en otras GPU AMD ni en NVIDIA, ni rutas alternativas como llama.cpp u Ollama.
-- Dependencia de una imagen Docker concreta, fijada por digest, y de revisiones concretas de dos checkpoints adicionales; cualquier desviacion puede romper la coherencia de los pesos rotados.
-- Riesgo de alucinacion: no se han publicado mediciones de fidelidad factual, tasa de alucinacion ni evaluaciones de seguridad para estos pesos.
-- Idiomas soportados: no disponibles. La model card no documenta cobertura multilingue, por lo que no puede asumirse un comportamiento equivalente al del modelo base en idiomas distintos del ingles.
-- Tool calling, function calling, comportamiento agentico de multiples pasos y modo de razonamiento extendido no estan documentados para este paquete; las mediciones se hicieron con «thinking» desactivado.
-- El modo `long-512k` es experimental y no publica datos de cache con vision.
-- Licencia: los pesos de este repositorio son Apache 2.0 y permiten uso comercial, pero el despliegue depende de checkpoints de terceros (`unsloth/Qwen3.8-27B-NVFP4` y `tcclaviger/Qwen3.8-27B-DFlash2-FP8`) cuyas licencias no se detallan en la informacion disponible y deben verificarse antes de un uso en produccion.
-- Los datos de calibracion del GPTQ proceden de un conjunto con licencias permisivas segun el autor, pero la composicion exacta solo se detalla en `CALIBRATION.md`.
+- No es un checkpoint autónomo: requiere el checkpoint objetivo NVFP4 y el drafter DFlash2 en revisiones exactas. Usar otras revisiones puede producir resultados incorrectos porque las filas b/a de Gated DeltaNet rotadas se derivaron de los bytes de la revisión objetivo.
+- Exclusivo de AMD RDNA4 (gfx1201) con el runtime Paiton; no funciona en NVIDIA, Apple Silicon ni GPUs AMD anteriores.
+- Pérdida de precisión respecto a bf16: unos 3 puntos de MMLU-Pro y menor acuerdo top-1 en decode (−0,32 puntos) en texto general.
+- Los resultados de SWE-bench con 80 tareas no son estadísticamente significativos (p 0,078 y p 0,12); solo las 500 tareas completas alcanzan significación (p 0,0006).
+- Riesgo de alucinación y sesgos del modelo base: no documentados en la información disponible.
+- Idiomas soportados no documentados.
+- Las conversaciones de calibración incluyen código de repositorios SWE-bench con licencias diversas, una GPL-2.0 (pylint); revisar CALIBRATION.md antes de uso comercial en contextos sensibles.
+- La licencia Apache 2.0 del repo de pesos no cubre necesariamente el modelo base ni los datos de calibración.
+- El formato de pesos es propietario del runtime Paiton; no es portable a otras herramientas.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/EliovpAI/Qwen3.8-27B-W3Rot-INT3-Paiton-RDNA4
-- Documento de calibracion: https://huggingface.co/EliovpAI/Qwen3.8-27B-W3Rot-INT3-Paiton-RDNA4/blob/d74ae7d5f5f1b4b45dd12fb1271e3664283a2ec1/CALIBRATION.md
-- Repositorio del plugin Paiton: https://github.com/Eliovp-BV/paiton-vllm-plugin
-- Instrucciones del paquete Qwen3.8 (ruta MXFP4 y 3 bits): https://github.com/Eliovp-BV/paiton-vllm-plugin/blob/main/models/Qwen3.8-MXFP4-DFlash2/README.md
-- Directorio de modelos Qwen3.8 del plugin: https://github.com/Eliovp-BV/paiton-vllm-plugin/tree/main/models/Qwen3.8
+- Repositorio Hugging Face: https://huggingface.co/EliovpAI/Qwen3.8-27B-W3Rot-INT3-Paiton-RDNA4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Repositorio oficial del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
-- Checkpoint objetivo NVFP4: https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4/tree/f0b7c9e722f5565102fff8481c99e4d86ae099c7
-- Borrador DFlash2 FP8: https://huggingface.co/tcclaviger/Qwen3.8-27B-DFlash2-FP8/tree/ee0cb26a8279b7910cc28d82a8a3e15e4728d56f
-- Ficha en free2aitools: https://free2aitools.com/model/eliovpai/qwen3.8-27b-w3rot-int3-paiton-rdna4
+- Checkpoint objetivo: https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4/tree/f0b7c9e722f5565102fff8481c99e4d86ae099c7
+- Drafter DFlash2: https://huggingface.co/tcclaviger/Qwen3.8-27B-DFlash2-FP8/tree/ee0cb26a8279b7910cc28d82a8a3e15e4728d56f
+- Repositorio del plugin Paiton: https://github.com/Eliovp-BV/paiton-vllm-plugin
+- Documentación del despliegue MXFP4/DFlash2: https://github.com/Eliovp-BV/paiton-vllm-plugin/blob/main/models/Qwen3.8-MXFP4-DFlash2/README.md
+- Imagen de runtime: ghcr.io/eliovp/paiton-vllm-plugin:qwen38-rocm10-vllm029-20261107-r2

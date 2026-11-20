@@ -1,0 +1,79 @@
+{
+  "schema": 2,
+  "id": "Ritual-Net/ritual-pii-redactor",
+  "slug": "ritual-net-ritual-pii-redactor",
+  "author": "Ritual-Net",
+  "url": "https://huggingface.co/Ritual-Net/ritual-pii-redactor",
+  "created_at": "2026-11-20T01:39:33.000Z",
+  "updated_at": "2026-11-20T01:39:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "pii",
+    "multilingual",
+    "base_model:praveen-ritual/pii-redactor",
+    "base_model:finetune:praveen-ritual/pii-redactor",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117517855,
+  "parameters_human": "117.5M",
+  "storage_bytes": 936347937,
+  "storage_human": "936 MB",
+  "context_length": null,
+  "base_model": "praveen-ritual/pii-redactor",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RITUALS | Cosmétique | Produit de beauté | rituals.com",
+      "url": "https://www.rituals.com/fr-fr/home?msockid=2cc789c38a07641c0e5b91d48bc5651d",
+      "snippet": "Gift Set XL The Ritual of Yozakura, coffret cadeau XL 89,90€ Le prix actuel est de 89,90€ Valeur produit 105,40€"
+    },
+    {
+      "title": "Parfums | RITUALS",
+      "url": "https://www.rituals.com/fr-fr/parfums?msockid=2cc789c38a07641c0e5b91d48bc5651d",
+      "snippet": "Hair & Body Mist The Ritual of Sakura, brume parfumée pour le corps et les cheveux, 50 ml 22,90€ Le prix actuel est de 22,90€ 50 …Read more"
+    },
+    {
+      "title": "Ritual",
+      "url": "https://ritual.com/",
+      "snippet": "Save 40% on new subscriptions of one or more products, plus get a free Ritual water bottle with your first order of a new Starter Set …Read more"
+    },
+    {
+      "title": "RITUALS ≡ SEPHORA",
+      "url": "https://www.sephora.fr/rituals/RITUA-HubPage.html?msockid=2cc789c38a07641c0e5b91d48bc5651d",
+      "snippet": "NOUVEAUX COFFRETS RITUALS The Ritual of Advent Calendrier de l'Avent 71,92€ Prix le plus bas : 89,90€ -20% Black Friday -20%"
+    },
+    {
+      "title": "Rituals ️ achetez en ligne | Nocibé",
+      "url": "https://www.nocibe.fr/fr/b/rituals/b1779?msockid=2cc789c38a07641c0e5b91d48bc5651d",
+      "snippet": "Vous pourrez acheter les soins Rituals par type de soin, plutôt que par collection, par exemple une mousse de douche de la …Read more"
+    }
+  ]
+}

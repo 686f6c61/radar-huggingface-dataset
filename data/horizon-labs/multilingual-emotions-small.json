@@ -108,7 +108,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1602,
+  "downloads_30d": 1610,
   "trending_score": 0,
   "parameters": 140652316,
   "parameters_human": "140.7M",
@@ -129,31 +129,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Horizons Le parti - Édouard Philippe",
-      "url": "https://horizonsleparti.fr/",
-      "snippet": "Participez à construire une nouvelle offre politique avec Edouard Philippe ! Vous partagez nos valeurs ? Rejoignez le parti Horizons !"
-    },
-    {
-      "title": "VMware Horizon",
-      "url": "https://horizon.nvidia.com/",
-      "snippet": "Install VMware Horizon Client VMware Horizon HTML Access Check here to skip this screen and always use HTML Access. To see …"
-    },
-    {
-      "title": "Horizon — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Horizon",
-      "snippet": "L' horizon des évènements est la limite de la région de l' espace-temps influençable depuis un point donné ; En particulier, l' horizon …"
-    },
-    {
-      "title": "Définitions : horizon - Dictionnaire de français Larousse",
-      "url": "https://www.larousse.fr/dictionnaires/francais/horizon/40381",
-      "snippet": "Expressions avec horizon À l'horizon, dans un avenir proche ou dans un avenir défini par telle date : Aucune solution à l’horizon. …"
-    },
-    {
-      "title": "Meta Horizon",
-      "url": "https://horizon.meta.com/?locale=fr_FR",
-      "snippet": "Découvrez un ensemble d’univers créés par la communauté, où vous pouvez jouer, explorer et communiquer avec vos ami(e)s. …"
-    }
-  ]
+  "sources": []
 }

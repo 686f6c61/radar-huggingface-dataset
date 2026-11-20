@@ -2,20 +2,20 @@
 
 ## Resumen
 
-Snowball 67B A2B Identity Path B A3 es un artefacto de investigación publicado por la organización open-athena en Hugging Face. Se trata de un checkpoint derivado de Marin Snowball v0.1 (identificador ADC0078a), entrenado específicamente con un perfil de identidad ("Marin's Latest MoE") mediante un proceso de SFT de identidad sobre una arquitectura MoE de tipo grug_moe. El modelo cuenta con 67.078.882.816 parámetros totales (aproximadamente 67 mil millones) y un repositorio de 134,2 GB en formato safetensors.
+Snowball 67B A2B Identity Path B A3 es un checkpoint de investigación publicado por el colectivo open-athena dentro del ecosistema Marin. Se trata de un artefacto experimental derivado de Marin Snowball v0.1 (ADC0078a), entrenado con un proceso de ajuste de identidad (identity-SFT) sobre una inicialización fresca de la versión v0.1, con el objetivo de internalizar un perfil de identidad concreto denominado "Marin's Latest MoE". El modelo no está pensado para producción: la propia model card lo describe como un artefacto de investigación sin evaluación adecuada ni aprobación de despliegue.
 
-La relevancia de este modelo es fundamentalmente metodológica: el autor documenta con detalle el proceso de entrenamiento (36 actualizaciones, semilla 310, batch global 8, longitud de secuencia 8192, learning rate constante de 2e-6 con dos actualizaciones de warmup) y los protocolos de auditoría de identidad. No se trata de un modelo destinado a producción, sino de una pieza de investigación sobre cómo se comporta y se puede auditar la identidad de un modelo tras un ajuste fino específico.
+El modelo cuenta con 67.078.882.816 parámetros totales según los tensores safetensors publicados, y su nombre sugiere una arquitectura MoE con aproximadamente 2.000 millones de parámetros activos por token (notación A2B), aunque este dato no se confirma explícitamente en la información disponible. El repositorio ocupa 134,2 GB y se distribuye bajo licencia openmdw-1.1. La etiqueta `grug_moe` y la referencia a Marin apuntan a una arquitectura de mezcla de expertos dentro del stack de entrenamiento Marin.
 
-El propio autor advierte explícitamente de que el modelo no ha sido probado ni evaluado adecuadamente y que no es necesariamente seguro. La model card incluye resultados parciales de evaluación (BFCL con una media del 31,06% sobre cinco ejecuciones de 123 tareas) y describe la proveniencia de los archivos, pero no ofrece especificaciones sobre idiomas, benchmarks estándar de razonamiento o matemáticas, ni datos de rendimiento comparativo con modelos similares.
+La relevancia de esta ficha es doble: por un lado, documenta un experimento de alineación de identidad con auditoría detallada de pesos congelados y verificaciones criptográficas; por otro, sirve como ejemplo de buenas prácticas de preservación de procedencia (hashes SHA256, manifiestos de preservación, registros de eventos) en publicaciones de investigación. No obstante, cualquier uso práctico debe considerar que se trata de un checkpoint intermedio sin validación amplia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | grug_moe (MoE, derivada de Marin Snowball) |
-| Parametros totales | 67.078.882.816 (67B) |
-| Parametros activos | no disponible (el sufijo A2B sugiere ~2B activos, no confirmado en la información) |
-| Longitud de contexto | no disponible (entrenado con longitud de secuencia 8192) |
+| Arquitectura | MoE (mezcla de expertos), etiqueta `grug_moe`, stack Marin |
+| Parametros totales | 67.078.882.816 |
+| Parametros activos | aproximadamente 2B (inferido de la notación A2B; no confirmado en la informacion disponible) |
+| Longitud de contexto | no disponible (el entrenamiento usó secuencia de 8192) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | openmdw-1.1 |
@@ -23,65 +23,77 @@ El propio autor advierte explícitamente de que el modelo no ha sido probado ni 
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura grug_moe, una variante de mezcla de expertos (MoE) asociada al proyecto Marin Snowball. El checkpoint es el resultado de un ajuste fino de identidad sobre una inicialización fresca de v0.1 (semilla 310) con batch global 8, longitud de secuencia 8192, learning rate constante de 2e-6 y dos actualizaciones de warmup, durante un total de 36 actualizaciones. El proceso congela 104 campos completamente y 256 filas de embeddings/tokens especiales de salida.
+La arquitectura es un transformer con mezcla de expertos (MoE), identificado por la etiqueta `grug_moe` y el nombre del modelo (A2B sugiere 2B parámetros activos sobre 67B totales). El checkpoint es un ajuste de identidad (identity-SFT) sobre una inicialización fresca de Marin Snowball v0.1 (ADC0078a). La receta de entrenamiento especifica: seed 310, batch global de 8, longitud de secuencia 8192, tasa de aprendizaje constante de 2e-6 con dos actualizaciones de warmup, pesos de pérdida objetivo unitarios, 104 campos completamente congelados y 256 filas congeladas de embeddings de tokens especiales y de salida. El checkpoint corresponde a 36 actualizaciones (36-update) de la ruta Path B A3.
 
-La auditoría de exportación verifica 502 tensores: 104 tensores nativos congelados y 398 conversiones (casts) de tensores maestros entrenados. Todas las ocurrencias de identidad en estado ON se convirtieron a su representación OFF de la misma fuente. Los datos de entrenamiento incluyen 129.641 tokens léxicos finales de identidad y 635.510 tokens léxicos de replay, con un SHA256 del input empaquetado documentado. No se especifica el número total de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO. La model card menciona que las comparaciones retienen diferencias de dosis, replay, empaquetado y agrupación, lo que indica un diseño experimental controlado pero con múltiples variables.
+La auditoría de exportación verifica 502 tensores: 104 tensores nativos congelados y 398 casts de tensores maestros entrenados. Todas las ocurrencias de identidad en estado ON se convirtieron a su representación OFF exacta de la misma fuente. Los totales de tokens léxicos finales de identidad son 129.641, con 0 tokens de razonamiento de identidad, y 635.510 tokens léxicos finales de replay. El SHA256 del input empaquetado es 954cc35a90487d1fb7b95080c9eeabb281d42d36f9a7ee9b32415bfa269e42f0. La procedencia se preserva byte a byte desde `s3://marin-rno2a/marin/checkpoints/karan/snowball-identity-pathb/A3-u36/`, con verificaciones SHA256 por archivo y manifiestos de preservación.
 
 ## Capacidades
 
-- Generación de texto conversacional (pipeline_tag: text-generation, conversacional).
-- Tool calling / function calling: evaluado con BFCL (Berkeley Function Calling Leaderboard) en cinco ejecuciones completas de 123 tareas.
-- Perfil de identidad entrenado: el modelo ha sido ajustado para adoptar la identidad "Marin's Latest MoE" desarrollada por la Marin Community, con auditoría de 44 créditos de creador y cero autoafirmaciones ajenas.
-- Capacidades multilingües: no disponible.
-- Razonamiento multi-paso y agentes: no documentado explícitamente; la evaluación BFCL sugiere soporte básico de tool calling.
-- Modo thinking o razonamiento extendido: no disponible.
-- Visión y audio: no disponible.
+- Generación de texto y conversación: pipeline `text-generation` con etiqueta `conversational`.
+- Razonamiento de múltiples pasos: la evaluación incluye cadenas como SWE100 y otras cadenas de evaluación que podrían seguir activas en el momento del archivado.
+- Uso de herramientas (tool calling): evaluado mediante BFCL (Berkeley Function Calling Leaderboard) con cinco ejecuciones completas de 123 tareas, con una media del 31,06 %.
+- Capacidades matemáticas: evaluado en math500, gsm8k-0shot, olympiadbench, aime24 y mmlu-pro dentro de la campaña de evaluación.
+- Capacidades de código: evaluado en humanevalplus, mbppplus, cruxeval y ds-1000-local.
+- Capacidades de agente: evaluado en tau3-pi, bixbench-pi y SOTOPIA-hard.
+- Capacidades multilingües: no disponibles; la model card no declara idiomas soportados.
+- Modo de identidad: el checkpoint incorpora un perfil de identidad entrenado ("Marin's Latest MoE") con verificación de créditos de creador (44 créditos a Marin Community) y cero autoafirmaciones de identidad ajenas.
 
 ## Casos de uso
 
-- Investigación sobre identidad de modelos: el checkpoint permite estudiar cómo un ajuste fino de identidad (36 actualizaciones, 129.641 tokens de identidad) modifica el comportamiento del modelo y cómo se puede auditar dicho cambio mediante protocolos de tensores congelados y verificación de hashes.
-- Reproducibilidad de experimentos MoE: al preservar la proveniencia byte a byte (SHA256 del input empaquetado, receipt de tensores fuente y object-list), sirve como referencia para replicar recetas de ajuste fino sobre arquitecturas grug_moe.
-- Evaluación de protocolos de auditoría: el modelo documenta un protocolo de auditoría de 502 tensores (104 congelados, 398 casts) que puede usarse como caso de estudio para diseñar verificaciones de integridad en pipelines de investigación.
-- Estudio de evaluación BFCL: los resultados de cinco ejecuciones de 123 tareas (media 31,06%) permiten analizar la variabilidad de un checkpoint de investigación en tareas de function calling con cohorts fijos y pequeños.
-- Análisis de sesgos de identidad: la conversión sistemática de ocurrencias ON a OFF y la lectura de límites nativos (50/52 spans cerrados, 31 nombres canónicos finales) ofrecen material para estudiar cómo se manifiestan y se corrigen sesgos de identidad en modelos ajustados.
-- Docencia y formación en IA open source: como artefacto con documentación exhaustiva de receta, hashes y advertencias, puede emplearse en cursos sobre buenas prácticas de publicación de checkpoints y preservación de proveniencia.
+- Investigación sobre alineación de identidad: el checkpoint permite estudiar cómo un ajuste SFT de identidad afecta a las respuestas del modelo y a sus métricas de formato, con auditoría de pesos congelados y trazabilidad criptográfica completa.
+- Reproducibilidad de experimentos de entrenamiento: la receta (seed, batch, LR, warmup, congelaciones) y los hashes permiten replicar o auditar el proceso en un entorno de investigación controlado.
+- Evaluación comparativa de checkpoints intermedios: sirve como punto de comparación en campañas de evaluación (Evalchemy, Harbor) frente a otros brazos como A13, con métricas por benchmark y procedencia de prioridad documentada.
+- Estudio de tool calling y agentes: las evaluaciones BFCL, tau3-pi y bixbench-pi permiten analizar el comportamiento de un MoE de 67B en tareas de función y agentes, aunque con cohortes pequeñas y cinco ejecuciones independientes.
+- Análisis de robustez en matemáticas y código: los resultados en math500, olympiadbench, humanevalplus y cruxeval permiten estudiar el rendimiento de un checkpoint de identidad en tareas de razonamiento estructurado.
+- Docencia y formación en ingeniería de modelos: el repositorio ejemplifica prácticas de preservación de procedencia (manifiestos, hashes, registros de eventos) útiles para enseñar auditoría de artefactos de IA.
+- Pruebas de seguridad y evaluación de sesgos en entornos aislados: dado que el modelo no está evaluado ni aprobado para despliegue, puede usarse en sandbox para estudiar riesgos de alucinación y de identidad antes de cualquier uso real.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | Resultado | Notas |
-|---|---|---|
-| BFCL (function calling) | 31,06% de media | Cinco ejecuciones completas de 123 tareas |
-| Identity screen (parser histórico) | 42/52 flags ON de formato | El mismo parser marcó 52/52 en v0.1; no establece daño al modelo |
-| Native-boundary read | 50/52 spans ON cerrados; 31 nombres canónicos finales; 44 créditos de creador; 0 autoafirmaciones ajenas | Dos salidas sin cierre no reciben crédito final |
+Los datos disponibles en la model card incluyen una tabla comparativa entre el brazo A13 y el brazo A3 (este último aparece truncado en la información proporcionada, por lo que solo se pueden presentar los valores completos de A13 y los datos parciales de A3). Las puntuaciones son porcentajes.
 
-No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estándar en la información disponible. El autor indica que SWE100 y otras cadenas de evaluación podrían seguir activas en el momento del archivo y que la tarjeta no reclama resultados no observados.
+| Modelo | math500 | humanevalplus | mbppplus | olympiadbench | gsm8k-0shot | piqa | winogrande | boolq | truthfulqa | triviaqa | aime24 | mmlu-pro | gpqa-diamond | cruxeval | financebench | ifbench | mrcr | NUPA | swebench-verified | ot-tblite-recovery | tb2-recovery | ds-1000-local | bfclparity-pi | bixbench-pi | tau3-pi | SOTOPIA-hard |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| A13 | 95.2 | 84.8 | 72.2 | 37.3 | 90.6 | 82.2 | 77.0 | 84.7 | 48.2 | 56.0 | 70.0 | 76.7 | 64.1 | 69.2 | 62.0 | 25.3 | 23.9 | 68.5 | 28.1† | 12.7† | 6.4† | 20.5† | 26.8† | 6.8† | 10.7 | 61.9† |
+| A3 | no disponible (truncado en la informacion proporcionada) | | | | | | | | | | | | | | | | | | | | | | | | | |
+
+Datos adicionales: BFCL con cinco ejecuciones completas de 123 tareas arroja una media del 31,06 %. La pantalla de identidad histórica sin cambios en el parser reportó 42/52 banderas de formato ON, mientras que el mismo parser marcó 52/52 en v0.1, por lo que esos recuentos no establecen daño del modelo. Una lectura posterior en el límite nativo encontró 50/52 spans ON cerrados del núcleo, 31 nombres canónicos finales, 44 créditos de creador a Marin Community y cero autoafirmaciones de identidad ajenas. La model card advierte que estas son cohortes de evaluación pequeñas y fijas, con solo cinco ejecuciones independientes de un checkpoint entrenado por brazo, y que ni las puntuaciones ni el cierre del protocolo establecen corrección amplia de identidad, seguridad o preparación para release. Las celdas marcadas con † tienen cualificaciones específicas (evidencia de fuga/parseo, contexto de diagnóstico/reconstrucción, cobertura incompleta o nota métrica específica del modelo). DIAG y RECON no son comparaciones limpias de capacidad.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible en la información proporcionada. Con 67B parámetros en safetensors (134,2 GB de repositorio), la inferencia en BF16 requeriría del orden de 134 GB de VRAM, lo que excede cualquier GPU consumer individual.
-- GPU recomendadas: no disponible. Por tamaño, un despliegue en BF16 requeriría múltiples A100/H100 (por ejemplo, 2×H100 80GB o 4×A100 80GB) o GPUs con mayor memoria; esta estimación no está confirmada por el autor.
-- Cabe en consumer GPU: no en BF16. No se documentan cuantizaciones (GGUF, GPTQ, AWQ) que permitan reducir el requisito.
-- Opciones de despliegue: no disponible. No se mencionan vLLM, llama.cpp, Ollama ni TGI en la información.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa para un modelo de 67B en safetensors BF16, se requerirían aproximadamente 134 GB solo para pesos, más overhead de activaciones y KV cache; con cuantización a 8 bits bajaría a unos 67 GB y a 4 bits a unos 34 GB, aunque estas cifras no están confirmadas para esta arquitectura MoE concreta.
+- GPU recomendadas: no disponible en la información proporcionada. Para un modelo de este tamaño en BF16 se necesitarían múltiples GPU de 80 GB (A100/H100) o GPUs con memoria unificada; para cuantizaciones agresivas podría considerarse una RTX 4090 de 24 GB solo en 4 bits, sin garantía.
+- ¿Cabe en consumer GPU? No de forma nativa en BF16. Posiblemente en cuantización 4 bits en GPUs de 24 GB o superiores, pero no hay confirmación del autor.
+- Opciones de despliegue: no disponible en la información proporcionada. El formato safetensors es compatible con vLLM, TGI y transformers, pero no se documenta soporte específico para llama.cpp, Ollama u otras herramientas.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento comparativo con modelos de la misma categoría en la información proporcionada. El modelo deriva de Marin Snowball v0.1 (ADC0078a), que podría servir como referencia interna, pero no se ofrecen métricas comparativas entre ambos más allá de los recuentos del parser de identidad (42/52 en este checkpoint frente a 52/52 en v0.1). No se identifican alternativas públicas comparables con datos verificables en la información disponible.
+| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|---|
+| Snowball 67B A2B Identity Path B A3 | 67.078.882.816 | ~2B (inferido) | no disponible | openmdw-1.1 | Hugging Face (open-athena) | Checkpoint de investigación, sin evaluación amplia |
+| Marin Snowball v0.1 (ADC0078a) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion | Base de la que deriva este checkpoint |
+| Snowball 67B A2B Identity Path B A13 | no disponible | no disponible | no disponible | openmdw-1.1 | Hugging Face (open-athena) | Brazo comparativo con métricas completas en la tabla de evaluación |
+
+No se dispone de información suficiente para comparar con modelos externos de la misma categoría (por ejemplo, otros MoE de ~67B con ~2B activos como Mixtral 8x7B o Qwen MoE) dentro de la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- El autor declara explícitamente que el modelo no ha sido probado ni evaluado adecuadamente y que no es necesariamente seguro; su uso en producción es bajo responsabilidad del usuario.
-- Es un artefacto de investigación sin aprobación de despliegue ("no deployment approval").
-- Las evaluaciones se basan en cohorts fijos y pequeños, con solo cinco ejecuciones independientes de un checkpoint entrenado por brazo; ni las puntuaciones ni el cierre del protocolo establecen corrección amplia de identidad, seguridad o preparación para release.
-- Riesgo de alucinación: no cuantificado en la información disponible.
-- Sesgos conocidos: no documentados más allá del perfil de identidad entrenado y su auditoría.
-- Idiomas soportados: no disponibles; no se puede confirmar cobertura multilingüe.
-- Licencia openmdw-1.1: se debe revisar el texto completo de la licencia para confirmar condiciones de uso comercial; la información proporcionada no detalla restricciones específicas.
-- El modelo está entrenado para adoptar una identidad concreta ("Marin's Latest MoE"), lo que puede producir respuestas sesgadas en consultas sobre su propia naturaleza u origen.
-- El repositorio incluye archivos de proveniencia y auditoría (PRESERVATION-SHA256.json, KEEP.md, UPLOAD-MANIFEST.json) que deben conservarse para mantener la trazabilidad.
+- Artefacto de investigación sin evaluación adecuada: la model card indica explícitamente que el modelo no ha sido probado ni evaluado correctamente y que no es necesariamente seguro.
+- Sin aprobación de despliegue: el checkpoint es experimental y no cuenta con aprobación para producción.
+- Riesgo de alucinación: no se han publicado evaluaciones específicas de alucinación más allá de truthfulqa y triviaqa en la campaña, con cohortes pequeñas.
+- Sesgos conocidos: no disponibles; no se documentan análisis de sesgo.
+- Limitaciones de contexto e idioma: no se declaran idiomas soportados; la longitud de contexto de inferencia no está confirmada (el entrenamiento usó 8192).
+- Restricciones de licencia: licencia openmdw-1.1; deben revisarse los términos exactos para uso comercial, que no se detallan en la información proporcionada.
+- Evaluaciones con cohortes pequeñas: solo cinco ejecuciones independientes por brazo, con diferencias de dosis, replay, empaquetado y agrupación que impiden comparaciones limpias.
+- Cadenas de evaluación potencialmente activas: SWE100 y otras cadenas podrían seguir en ejecución en el momento del archivado; la model card no reclama resultados no observados.
+- Integridad de identidad no garantizada: los recuentos de banderas de formato no establecen daño del modelo, y el cierre del protocolo no establece corrección amplia de identidad.
+- Procedencia y borrado: las copias en S3 permanecen protegidas hasta que finalicen todas las cadenas aplicables y se registren las condiciones de borrado; este upload no realiza borrados.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/open-athena/Snowball-67B-A2B-Identity-PathB-A3-2026.10.30
-- Proveniencia fuente (S3): s3://marin-rno2a/marin/checkpoints/karan/snowball-identity-pathb/A3-u36/
-- No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código ni demos adicionales.
+- EvalDash (brazo A13, referencia comparativa): https://marina.oa.dev/evaldash/runs?model=open-athena-Snowball-67B-A2B-Identity-PathB-A13-2026.10.30
+- Procedencia S3 (referenciada en la model card): s3://marin-rno2a/marin/checkpoints/karan/snowball-identity-pathb/A3-u36/
+- Repositorio Marin (referenciado en la model card): no disponible como URL directa en la información proporcionada
+- Paper o blog del modelo: no disponible en la información proporcionada

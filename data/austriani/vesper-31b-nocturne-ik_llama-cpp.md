@@ -2,81 +2,87 @@
 
 ## Resumen
 
-Vesper-31B-Nocturne-ik_llama.cpp es una cuantización GGUF del modelo de lenguaje Vesper-31B-Nocturne, publicado por el usuario Austriani sobre el modelo base de ReadyArt. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos orientada al motor de inferencia ik_llama.cpp, una bifurcación de llama.cpp optimizada para cuantizaciones IQK y kernels específicos. El paquete se distribuye con licencia Apache 2.0 y está etiquetado como modelo de generación de texto en inglés, con un enfoque declarado hacia roleplay, ficción oscura y contenido sin censura para adultos.
+Vesper-31B-Nocturne-ik_llama.cpp es una cuantizacion GGUF del modelo base ReadyArt/Vesper-31B-Nocturne, publicada por el usuario Austriani. No se trata de un modelo entrenado desde cero, sino de una conversion de pesos a formatos cuantizados (etiquetados como iqk y trellis-quant) especificamente optimizados para el motor de inferencia ik_llama.cpp, un fork de llama.cpp orientado a rendimiento en CPU y GPU. El modelo cuenta con 30.697.345.596 parametros (aproximadamente 30,7 mil millones) y esta orientado a generacion de texto conversacional, con enfasis declarado en roleplay, ficcion oscura y narrativa de terror erotico sin censura.
 
-El modelo base, según las etiquetas de la ficha, se asocia a la familia Gemma-4 y a un tamaño nominal de 31B parámetros, aunque no se especifican detalles de arquitectura, número exacto de parámetros ni longitud de contexto en la información disponible. La relevancia de esta publicación es acotada: se trata de una cuantización comunitaria de un fine-tune con fines creativos, no de un lanzamiento de investigación con benchmarks públicos.
+La relevancia de esta publicacion es doble. Por un lado, demuestra el ecosistema de cuantizacion de tercera generacion en torno a ik_llama.cpp, con calibracion mediante imatrix (v3-calibration) para preservar calidad en niveles de compresion agresivos. Por otro, ofrece una via de despliegue local de un modelo de ~31B en hardware de consumo, algo inviable con pesos en precision completa. La model card esta dominada por elementos de presentacion (HTML y CSS embebidos) y dedica poco espacio a especificaciones tecnicas verificables, por lo que buena parte de los datos de esta ficha proceden de los metadatos de Hugging Face y no de documentacion del autor.
 
-La ficha describe únicamente lo que puede verificarse en la información proporcionada. Cualquier dato sobre rendimiento, contexto o composición del entrenamiento que no aparezca en la model card se marca explícitamente como no disponible.
+El modelo solo declara soporte para ingles y esta marcado como no apto para todas las audiencias (not-for-all-audiences). La licencia declarada es Apache 2.0, aunque la naturaleza del contenido y la cadena de modelos base merecen cautela antes de un uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiquetada como gemma-4 en los tags; sin confirmación técnica) |
-| Parametros totales | 31B (nominal, según nombre y tags del modelo) |
-| Parametros activos | no disponible |
+| Arquitectura | no disponible (la model card no la especifica; los tags sugieren una base de la familia Gemma, sin confirmar) |
+| Parametros totales | 30.697.345.596 (~30,7B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF con esquemas IQK, trellis-quant, imatrix y calibración v3 (según tags) |
-| Idiomas soportados | en (inglés) |
+| Tipos de cuantizacion | GGUF cuantizado; el autor menciona iqk, trellis-quant, imatrix y v3-calibration, sin detallar los niveles concretos (Q4, Q5, IQ3, etc.) |
+| Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (librería ik_llama.cpp) |
+| Formato de pesos | GGUF (libreria ik_llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información técnica sobre la arquitectura interna del modelo base Vesper-31B-Nocturne en la documentación proporcionada. Los tags mencionan "gemma-4" y "31b", lo que sugiere una base de la familia Gemma con aproximadamente 31.000 millones de parámetros, pero no se confirma ni la variante concreta, ni si emplea atención estándar, atención lineal u otra innovación. Tampoco se detalla el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO.
+No se dispone de informacion sobre la arquitectura interna del modelo base ReadyArt/Vesper-31B-Nocturne en la documentacion proporcionada. Los tags incluyen "gemma-4", lo que sugiere un linaje basado en la familia Gemma, pero no se confirma ni el tipo de transformer, ni el numero de capas, ni la dimension de atencion. Tampoco se documentan el volumen de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF, DPO o ajuste fino supervisado.
 
-Respecto al proceso de cuantización, la model card indica el uso de imatrix con calibración "v3", esquemas IQK y trellis-quant, y está orientada al runtime ik_llama.cpp. Estos elementos afectan a la calidad de la cuantización y a la compatibilidad del motor, pero no constituyen información sobre el entrenamiento del modelo original. El fine-tune del que deriva (ReadyArt/Vesper-31B-Nocturne) está etiquetado para roleplay, dark-fiction, erotic-horror y contenido sin censura, lo que orienta su distribución hacia dominios creativos y conversacionales adultos.
+Lo que si describe el autor es el proceso de cuantizacion: se ha aplicado una calibracion imatrix de tercera version (v3-calibration) junto con un esquema denominado trellis-quant, cuyo objetivo es reducir la perdida de calidad en pesos comprimidos. Esta tecnica es habitual en el ecosistema llama.cpp e ik_llama.cpp: se calcula una matriz de importancia a partir de un corpus de calibracion y se usa para ponderar el error de cuantizacion por capa. El resultado es un conjunto de ficheros GGUF que el motor ik_llama.cpp puede cargar directamente.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, orientada a diálogo multi-turno y roleplay.
-- Escritura creativa de ficción oscura y horror erótico, según la orientación declarada del fine-tune.
-- Modo sin censura (uncensored): el autor indica ausencia de filtros de contenido en el modelo base.
-- Generación de texto plano; no se documentan capacidades multimodales (visión, audio) en la información disponible.
-- Soporte de tool calling o function calling: no disponible.
-- Soporte de agentes o razonamiento multi-paso: no disponible.
-- Capacidades multilingües: limitadas al inglés según el campo `language`.
-- Modo de razonamiento explícito (thinking mode): no disponible.
+- Generacion de texto conversacional multi-turno, con enfasis en narrativa y dialogo.
+- Roleplay y ficcion oscura: el modelo esta ajustado y etiquetado explicitamente para este dominio.
+- Escritura creativa de terror erotico y contenido para adultos sin censura (tag "uncensored").
+- Generacion de texto en ingles; no se declara soporte multilingue.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- No se documenta capacidad de vision, audio ni modo "thinking".
+- Compatibilidad con endpoints (tag "endpoints_compatible"), lo que indica que puede servirse mediante una API compatible con el esquema de Hugging Face.
 
 ## Casos de uso
 
-- Roleplay conversacional de larga duración: el modelo está afinado específicamente para diálogo de personajes, por lo que puede mantener interacciones multi-turno con coherencia de personaje en entornos de ocio o prototipado de videojuegos narrativos.
-- Escritura de ficción oscura y terror: adecuado para generar borradores de relatos de horror, atmósferas góticas y narrativa adulta, dado el enfoque declarado del fine-tune.
-- Prototipado de narrativa interactiva para videojuegos: puede emplearse como motor de diálogo en demos de aventuras conversacionales con temática adulta, siempre con las advertencias de contenido correspondientes.
-- Generación de contenido creativo sin restricciones en entornos controlados: útil para autores que necesitan explorar tonos y temáticas que los modelos alineados rechazan, en un contexto de uso privado y con revisión humana.
-- Experimentación con cuantizaciones IQK en ik_llama.cpp: sirve como banco de pruebas para evaluar el rendimiento de esquemas trellis-quant e imatrix v3 en hardware de consumo con un modelo de 31B.
-- Investigación sobre alineación y censura: permite comparar el comportamiento de un modelo sin censura frente a alternativas alineadas en tareas creativas, como estudio de sesgos y límites de seguridad.
-- Despliegue local en estaciones de trabajo: al distribuirse en GGUF, puede ejecutarse en equipos con GPU de consumo mediante ik_llama.cpp, sin dependencia de servicios en la nube.
+- Roleplay conversacional local: el modelo puede mantener dialogos de personaje prolongados en ingles, con coherencia de tono, gracias a su naturaleza conversacional y a su ajuste especifico para este dominio. Es adecuado para prototipos de videojuegos narrativos o chatbots de personaje.
+- Escritura de ficcion oscura y terror: sirve como asistente de redaccion para autores que trabajan genero de terror o narrativa adulta, donde los modelos censurados suelen rechazar peticiones.
+- Generacion de guiones para contenido interactivo: util en el diseno de arboles de dialogo ramificados para experiencias de ficcion interactiva, con el modelo produciendo variantes de una escena segun el estado narrativo.
+- Experimentacion con cuantizacion en ik_llama.cpp: el propio repositorio funciona como caso de estudio para evaluar la calidad de la calibracion imatrix v3 y trellis-quant frente a cuantizaciones estandar, comparando perplejidad y coherencia en textos largos.
+- Despliegue local en hardware de consumo: al estar en GGUF, puede ejecutarse en estaciones de trabajo con GPU de gama alta o incluso en CPU con suficiente RAM, sin depender de servicios en la nube, lo que resulta util para contenido sensible que no debe salir del equipo.
+- Investigacion sobre sesgos y seguridad en modelos sin censura: permite estudiar el comportamiento de un modelo deliberadamente no alineado para tareas de red teaming y evaluacion de riesgos, en un entorno controlado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma oficial. Como referencia orientativa para un modelo de 31B en GGUF, las cuantizaciones de 4 bits suelen requerir del orden de 18-20 GB y las de 8 bits en torno a 33-35 GB, pero estas cifras no están confirmadas en la documentación del autor.
-- GPU recomendadas: no especificadas. Por tamaño, un modelo de 31B en cuantización agresiva puede caber en GPUs de consumo con 24 GB (RTX 3090, RTX 4090) y requiere GPUs profesionales (A100 40/80 GB, H100) para cuantizaciones mayores o contexto extendido.
-- Compatibilidad con GPU de consumo: probable en cuantizaciones de 4 bits con 24 GB de VRAM, aunque no confirmado por el autor.
-- Opciones de despliegue: ik_llama.cpp es el runtime objetivo declarado. La compatibilidad con llama.cpp, Ollama o vLLM no está confirmada en la información disponible.
+- VRAM estimada: no disponible de forma oficial. Como referencia orientativa para un modelo denso de ~30,7B en GGUF, una cuantizacion de 4 bits ronda los 17-19 GB de pesos, una de 5 bits los 21-23 GB y una de 8 bits los 32-34 GB; estas cifras son estimaciones de calculo, no datos del autor.
+- GPU recomendadas: no especificadas por el autor. Por tamano, una RTX 4090 (24 GB) podria alojar cuantizaciones de 4-5 bits; una A100 40/80 GB o una H100 permitirian niveles de 8 bits o superiores con comodidad.
+- Cabe en GPU de consumo: probablemente en RTX 3090/4090 (24 GB) con cuantizaciones de 4 bits, siempre que el contexto utilizado sea moderado; no confirmado por el autor.
+- Opciones de despliegue: ik_llama.cpp es el motor objetivo declarado. Al ser formato GGUF, otros motores compatibles con GGUF (llama.cpp, Ollama, LM Studio) podrian cargarlo, aunque las optimizaciones especificas de ik_llama.cpp no se aprovecharian del mismo modo.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye datos de rendimiento ni especificaciones suficientes para establecer una comparación rigurosa con alternativas de la misma categoría.
+No se dispone de datos de rendimiento ni de especificaciones del modelo base que permitan una comparacion rigurosa. Se ofrece una comparacion estructural limitada:
+
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| Vesper-31B-Nocturne-ik_llama.cpp | ~30,7B | no disponible | GGUF (ik_llama.cpp) | apache-2.0 | Cuantizacion de ReadyArt/Vesper-31B-Nocturne, orientada a roleplay y ficcion oscura |
+| ReadyArt/Vesper-31B-Nocturne | ~30,7B (presumiblemente) | no disponible | no disponible | no disponible | Modelo base del que deriva esta cuantizacion |
+| Alternativas de ~30B en GGUF | no disponible | no disponible | GGUF | variable | No se identifican en la informacion proporcionada modelos comparables con datos verificables |
 
 ## Limitaciones y advertencias
 
-- Contenido para adultos: el modelo está etiquetado como NSFW y `not-for-all-audiences`; no es apto para entornos sin control de edad ni para aplicaciones de cara al público general.
-- Sin censura: la ausencia de filtros implica riesgo de generar contenido ofensivo, explícito o inapropiado; requiere moderación externa en cualquier despliegue.
-- Riesgo de alucinación: no se documentan evaluaciones de fidelidad factual; como modelo creativo, la precisión en datos verificables es incierta.
-- Idioma: soporte limitado al inglés; el rendimiento en castellano no está garantizado.
-- Licencia: Apache 2.0 permite uso comercial, pero el contenido generado y las obligaciones derivadas del modelo base deben revisarse por separado; la ficha no aclara posibles restricciones adicionales del fine-tune original.
-- Contexto: se desconoce la longitud de ventana, lo que impide planificar aplicaciones de contexto largo con garantías.
-- Madurez: publicación con cero descargas y cero likes en el momento de la consulta; sin validación comunitaria ni reportes de calidad.
-- Compatibilidad: al estar empaquetado para ik_llama.cpp, puede no cargar correctamente en otros runtimes sin conversión previa.
+- Contenido para adultos: el modelo esta etiquetado como NSFW y "not-for-all-audiences"; no es apto para aplicaciones dirigidas a menores ni para entornos sin moderacion.
+- Sesgos: no hay documentacion sobre sesgos de genero, raza o ideologia; al ser un modelo sin censura, es probable que reproduzca y amplifique estereotipos presentes en sus datos de entrenamiento.
+- Alucinacion: no se han publicado evaluaciones de factualidad; en tareas de conocimiento general el riesgo de invencion es alto y no debe usarse como fuente de hechos.
+- Idioma: solo se declara ingles; el rendimiento en castellano no esta garantizado y probablemente sea deficiente.
+- Contexto: se desconoce la ventana de contexto, lo que impide planificar aplicaciones que dependan de documentos largos.
+- Licencia: aunque se declara Apache 2.0, la cadena de modelos base y el posible linaje Gemma introducen incertidumbre sobre las obligaciones reales de atribucion y uso comercial; conviene verificar la licencia del modelo base antes de produccion.
+- Soporte del motor: esta optimizado para ik_llama.cpp; otros motores GGUF pueden cargarlo, pero sin garantias de compatibilidad con los esquemas de cuantizacion propietarios (trellis-quant, iqk).
+- Documentacion escasa: la model card no detalla niveles de cuantizacion, contexto ni arquitectura, lo que dificulta la planificacion de despliegue.
 
 ## Enlaces
 
-- [Hugging Face: Austriani/Vesper-31B-Nocturne-ik_llama.cpp](https://huggingface.co/Austriani/Vesper-31B-Nocturne-ik_llama.cpp)
-- [Modelo base: ReadyArt/Vesper-31B-Nocturne](https://huggingface.co/ReadyArt/Vesper-31B-Nocturne)
-- No se han encontrado en la información proporcionada papers, blogs, repositorios o demos adicionales.
+- Repositorio en Hugging Face: https://huggingface.co/Austriani/Vesper-31B-Nocturne-ik_llama.cpp
+- Modelo base: https://huggingface.co/ReadyArt/Vesper-31B-Nocturne
+- ik_llama.cpp (repositorio del motor): no disponible en la informacion proporcionada
+- Paper, blog o demo adicionales: no disponibles en la informacion proporcionada

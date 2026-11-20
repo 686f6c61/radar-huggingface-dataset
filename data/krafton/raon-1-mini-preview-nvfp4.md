@@ -2,90 +2,89 @@
 
 ## Resumen
 
-Raon-1-mini-preview-nvfp4 es una versión cuantizada del modelo Raon-1-mini de KRAFTON, publicada en Hugging Face bajo una licencia Apache-2.0 y con acceso restringido (gated). El checkpoint contiene 15.084.105.442 parámetros (unos 15,08 mil millones) almacenados en formato NVFP4, la cuantización de 4 bits por elemento con escalas de bloque introducida por NVIDIA a través de ModelOpt, y está empaquetado para su uso con vLLM. El pipeline declarado es text-generation con orientación conversacional, y la ficha no publica información sobre arquitectura, datos de entrenamiento ni ventana de contexto.
+Raon-1 mini (NVFP4) es la versión cuantizada a NVFP4 del modelo Raon-1 mini preview, desarrollado por KRAFTON AI. Se trata de un modelo de lenguaje de arquitectura Mixture-of-Experts (MoE) híbrida entrenado desde cero, con 28,8 mil millones de parámetros totales y 4,3 mil millones activos por token. Esta variante NVFP4 está pensada para inferencia en una única GPU mediante vLLM, incluyendo tarjetas consumer como la NVIDIA RTX 5090 con 32 GB de VRAM.
 
-Se trata, por tanto, de un lanzamiento en fase de vista previa ("preview") centrado en la eficiencia de despliegue: en lugar de distribuir los pesos en bf16, KRAFTON ofrece directamente el artefacto cuantizado a 4 bits, lo que reduce el peso teórico de los pesos a aproximadamente 8,5 GB y permite plantear inferencia en GPUs de gama alta de consumo. Es relevante ahora porque NVFP4 es uno de los formatos que están adoptando los motores de inferencia para aprovechar el hardware Blackwell, y contar con un checkpoint de ~15B ya convertido evita al usuario tener que ejecutar el proceso de cuantización con ModelOpt.
+El modelo destaca por su enfoque en conversación en coreano y tareas agénticas, con soporte nativo de tool calling y una ventana de contexto de 262.144 tokens. Su arquitectura combina capas de atención lineal (Raon Delta Attention) con capas de atención completa (Gated MLA), lo que reduce drásticamente el coste de caché KV en contextos largos: solo 7 de las 25 capas mantienen KV cache, aproximadamente 8 KiB por token en BF16.
 
-La información disponible es, sin embargo, muy limitada: no hay model card con detalles técnicos, no se han publicado resultados de benchmarks y no se declaran idiomas soportados. Cualquier evaluación de calidad debe hacerse por tanto de forma empírica tras aceptar las condiciones de acceso en el repositorio.
+La relevancia de esta ficha radica en que la versión NVFP4 permite desplegar un MoE de casi 29B parámetros en hardware de consumo, algo poco habitual, manteniendo licencia Apache 2.0 y soporte de decodificación especulativa mediante un modelo draft DFlash2. Es una versión preview, por lo que las especificaciones y resultados pueden cambiar antes de la versión final.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | No disponible (la información proporcionada no especifica transformer, MoE ni híbrida) |
-| Parámetros totales | 15.084.105.442 (~15,08 B) |
-| Parámetros activos | No disponible (no se ha confirmado que sea un modelo MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | NVFP4 (4 bits por elemento, formato ModelOpt FP4); el repositorio se etiqueta como "8-bit" en la clasificación de Hugging Face |
-| Idiomas soportados | No disponible |
-| Licencia | Apache-2.0 (acceso restringido: requiere aceptar condiciones en Hugging Face) |
-| Formato de pesos | safetensors con cuantización NVFP4 (modelopt_fp4), pensado para vLLM |
-| Tamaño del repositorio | 17,6 GB |
-| Pipeline | text-generation (conversational) |
+| Arquitectura | MoE híbrida (RDA + Gated MLA) |
+| Parámetros totales | 28,8B (modelo base); 15.084.105.442 parámetros en los safetensors de esta versión cuantizada |
+| Parámetros activos | 4,3B por token |
+| Longitud de contexto | 262.144 tokens |
+| Tipos de cuantización | NVFP4 (8-bit, modelopt_fp4); el modelo base también ofrece MXFP8 |
+| Idiomas soportados | Coreano e inglés (según la model card); lista completa no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (NVFP4, para vLLM) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura interna del modelo en la documentación disponible: se desconoce si emplea un transformer denso, una mezcla de expertos o un diseño híbrido, así como el número de capas, la dimensión oculta, el mecanismo de atención o la estrategia de positional encoding. El único dato estructural firme es el recuento de parámetros obtenido de los tensores safetensors: 15.084.105.442, lo que sitúa al modelo en la franja de ~15B, un tamaño habitual para despliegues de una sola GPU con cuantización agresiva.
+Raon-1 mini emplea una arquitectura MoE híbrida de 25 capas con un ratio de atención 3:1 entre Raon Delta Attention (RDA) y Gated MLA. RDA desacopla las puertas de borrado y escritura de Kimi Delta Attention, lo que mejora el rendimiento en contexto largo respecto a KDA. Las 18 capas RDA mantienen un estado de tamaño fijo, mientras que solo las 7 capas MLA conservan caché KV (unos 8 KiB por token en BF16). El modelo usa codificación posicional NoPE (sin codificación posicional), 40 cabezas de atención, tamaño oculto de 2.560, vocabulario de 259.840 tokens y LM head no atado.
 
-Tampoco hay datos sobre el corpus de entrenamiento (número de tokens, composición, proporción de código o multilingüe), ni sobre si se aplicaron fases de alineación como RLHF, DPO o ajuste por instrucciones. La innovación técnica declarada es exclusivamente de formato: la conversión a NVFP4, que codifica cada grupo de 16 elementos con una escala microscópica en FP8 (E4M3) y una escala tensorial global en FP32, de modo que el coste de almacenamiento baja a unos 0,56 bytes por parámetro. El tag "8-bit" del repositorio refleja la clasificación de la librería de Hugging Face y no el ancho de bits efectivo del dato.
+El enrutamiento MoE activa 6 de 128 expertos más 1 experto compartido por token, con tamaño intermedio de experto de 1.088 y FFN densa de 12.032 en la primera capa. La función de activación es SiTU-GLU y las conexiones residuales usan Raon-mHC con 4 streams, una versión optimizada de las manifold-constrained hyper-connections de DeepSeek que reduce el coste computacional y acelera el entrenamiento. El modelo fue entrenado desde cero por KRAFTON AI; no se detalla en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO. Sí se indica que incorpora razonamiento integrado (thinking) y que se proporciona un modelo draft DFlash2 para decodificación especulativa.
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno, según el pipeline declarado (text-generation, conversational).
-- Razonamiento y conocimiento general: no hay datos publicados que permitan confirmar nivel ni ámbitos de especialización.
-- Generación de código y matemáticas: no disponible en la información proporcionada.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponibles (no se declaran idiomas).
-- Capacidades especiales (modo thinking, visión, audio): no disponibles.
-- Eficiencia de despliegue: al estar pre-cuantizado en NVFP4, reduce el espacio de pesos y puede aumentar el throughput por GPU en comparación con un checkpoint bf16 equivalente.
+- Generación de texto conversacional con modo de razonamiento integrado (thinking).
+- Razonamiento matemático y científico, con resultados destacados en los benchmarks publicados por el autor.
+- Seguimiento de instrucciones y tareas de búsqueda.
+- Tool calling para flujos agénticos, con soporte explícito para Hermes Agent, Pi y OpenCode.
+- Ejecución de agentes y razonamiento multi-paso.
+- Capacidades multilingües centradas en coreano (rendimiento fuerte) e inglés (rendimiento sólido).
+- Contexto largo nativo de hasta 262.144 tokens.
+- Decodificación especulativa acelerada mediante modelo draft DFlash2.
+- No se mencionan capacidades de visión ni audio en la información disponible.
 
 ## Casos de uso
 
-- Prototipado de asistentes conversacionales en una sola GPU: con ~8,5 GB de pesos teóricos en NVFP4, el modelo puede servirse en una RTX 4090 o RTX 5090 junto con caché KV para sesiones de varios turnos, lo que permite montar un entorno de pruebas sin infraestructura de centro de datos.
-- Despliegue con vLLM en producción de baja latencia: el checkpoint está empaquetado para vLLM con cuantización ModelOpt, de modo que puede levantarse como servidor compatible con la API de OpenAI y usarse detrás de una aplicación web o un bot interno.
-- Generación de texto a escala en pipelines de procesado documental: resumen, extracción y reescritura de documentos en lote, donde el ahorro de memoria por instancia permite mayor paralelismo de réplicas en el mismo nodo.
-- Evaluación comparativa interna de modelos de ~15B: útil como referencia cuantizada para medir la degradación de calidad frente al checkpoint original en bf16, si KRAFTON lo publica, sobre tareas propias de la organización.
-- Investigación sobre cuantización de 4 bits: el artefacto sirve para estudiar el impacto de NVFP4 en perplejidad, estabilidad de generación larga y robustez ante prompts adversarios, comparándolo con GGUF Q4 o AWQ.
-- Base para ajuste fino con QLoRA sobre GPUs de consumo: un modelo de 15B en 4 bits deja margen de VRAM para adaptadores y activaciones en tarjetas de 24-32 GB, si bien la compatibilidad de QLoRA con NVFP4 debe validarse caso por caso.
-- Chatbot de soporte de primer nivel en entornos con requisitos de licencia permisiva: Apache-2.0 facilita la integración comercial, sujeta al cumplimiento de las condiciones de acceso al repositorio.
+- Atención al cliente en coreano: el modelo puede mantener conversaciones multi-turno con hasta 262.144 tokens de contexto, lo que permite arrastrar historiales largos y documentación de producto sin truncar, aprovechando además su rendimiento específico en coreano.
+- Asistentes agénticos con tool calling: integrable en frameworks como Hermes Agent, Pi u OpenCode para orquestar llamadas a APIs, consultas a bases de datos y acciones multi-paso, gracias al soporte nativo de function calling.
+- Despliegue en una sola GPU consumer: la versión NVFP4 cabe en una NVIDIA RTX 5090 de 32 GB, lo que permite montar un asistente local o un servicio interno sin infraestructura de centro de datos.
+- Razonamiento matemático y científico asistido: útil para tutoría técnica, resolución de problemas paso a paso y verificación de cálculos, apoyándose en el modo thinking integrado.
+- Procesamiento de documentos largos: con 262k tokens de contexto y solo 7 capas con KV cache, es adecuado para resumir contratos, analizar informes extensos o hacer preguntas sobre corpus documentales grandes con coste de memoria contenido.
+- Generación de código y automatización de pipelines: puede integrarse en flujos de CI/CD como agente que interpreta errores, propone parches y ejecuta herramientas, aunque su foco declarado es conversación y tareas agénticas más que código puro.
+- Búsqueda aumentada y respuesta sobre fuentes: el modelo lidera según el autor en benchmarks de búsqueda, por lo que encaja en sistemas RAG que requieren seguimiento de instrucciones y síntesis de resultados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados numéricos de benchmarks en la información disponible. La model card incluye gráficas comparativas (raon_benchmarks_top6) frente a modelos abiertos, pero los valores concretos no están accesibles en el texto proporcionado, por lo que no se reproducen cifras.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: unos 8,5 GB solo para pesos NVFP4 (15,08 B × ~0,56 bytes); con caché KV y overhead del runtime, un despliegue realista parte de 12-16 GB, cifra que crece con la longitud de contexto (desconocida).
-- Equivalentes en otros formatos para comparar: ~30 GB en bf16/fp16 (no cabe en GPU de consumo de 24 GB) y ~15 GB en FP8/INT8.
-- GPU recomendadas: para aprovechar NVFP4 de forma nativa, GPUs Blackwell (B200, GB200, RTX 5090/5080). En Ada (RTX 4090, L40S) y Hopper (H100, H200) el formato puede ejecutarse mediante kernels de decuantización, con menor ganancia de rendimiento.
-- Cabe en GPU de consumo: sí, previsiblemente en RTX 4090/3090 (24 GB) y RTX 5090 (32 GB) con contexto moderado; en tarjetas de 16 GB el margen es muy ajustado y depende de la longitud de contexto.
-- Opciones de despliegue: vLLM es el motor objetivo declarado (tag vllm); no se confirma soporte en llama.cpp, Ollama o TGI, que requieren normalmente GGUF u otros formatos.
-- Latencia y throughput: no disponibles; no se han publicado mediciones.
+- VRAM estimada: la versión NVFP4 está diseñada para ejecutarse en una sola GPU; el autor indica que cabe en una NVIDIA RTX 5090 de 32 GB.
+- El repositorio ocupa 17,6 GB, lo que da una referencia del peso de los safetensors cuantizados.
+- GPU recomendadas: NVIDIA RTX 5090 (32 GB) como mínimo validado por el autor para NVFP4; para la versión MXFP8 o BF16 se necesitaría más memoria (no especificada).
+- Cabe en GPU consumer: sí, al menos en RTX 5090 según la model card.
+- Opciones de despliegue: vLLM es el runtime indicado explícitamente para estos pesos NVFP4. No se mencionan llama.cpp, Ollama ni TGI en la información disponible.
+- Latencia y throughput: no disponibles. Se ofrece decodificación especulativa con el draft model DFlash2 para acelerar la generación.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Cuantización lista para usar | Datos de rendimiento |
-|---|---|---|---|---|---|
-| Raon-1-mini-preview-nvfp4 (KRAFTON) | 15,08 B | No disponible | Apache-2.0 (gated) | NVFP4 (ModelOpt) para vLLM | No disponibles |
-| Qwen2.5-14B-Instruct | ~14,7 B | 128 K (configuración declarada por el autor) | Apache-2.0 | GGUF, AWQ, GPTQ en la comunidad | Ampliamente reportados por el autor |
-| Phi-4 (14B) | ~14,7 B | 16 K (configuración declarada por el autor) | MIT | GGUF y otras en la comunidad | Reportados por el autor |
-| Mistral-Nemo-12B-Instruct | ~12 B | 128 K (configuración declarada por el autor) | Apache-2.0 | GGUF y otras en la comunidad | Reportados por el autor |
-
-Nota: los datos de las filas comparativas corresponden a especificaciones públicamente conocidas de esos modelos y deben verificarse contra sus fichas actuales; pueden existir alternativas más recientes. La ausencia de benchmarks del modelo de KRAFTON impide cualquier comparación de calidad.
+No disponible. La información proporcionada no incluye una tabla numérica de comparación con alternativas concretas; la model card menciona gráficas frente a "modelos abiertos" y "baselines MoE", pero sin identificar modelos ni cifras en el texto extraído.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación técnica: sin model card detallada no es posible conocer la arquitectura, el contexto máximo ni los idiomas, lo que dificulta planificar despliegues en producción.
-- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face; la automatización de descargas en CI/CD requiere un token con permisos sobre el repositorio.
-- Riesgo de alucinación: desconocido y no evaluado; al no haber benchmarks ni evaluación de alineación publicada, debe asumirse el riesgo habitual de un modelo generativo sin verificación.
-- Sesgos: no documentados. Sin información sobre composición del corpus ni sobre procesos de alineación, no puede acotarse el sesgo lingüístico, cultural o de dominio.
-- Estado "preview": la versión puede cambiar o retirarse sin aviso, y no se garantiza estabilidad de la API ni del comportamiento entre actualizaciones.
-- Cuantización NVFP4: la pérdida de calidad frente al modelo original en bf16 no está cuantificada; además, el soporte de kernels es dependiente de GPU y versión de vLLM, lo que puede provocar fallos o degradación en hardware no Blackwell.
-- Compatibilidad de herramientas: al no confirmarse soporte en llama.cpp u Ollama, la integración en stacks ligeros puede exigir convertir los pesos a GGUF, proceso no documentado por el autor.
-- Licencia: Apache-2.0 es permisiva para uso comercial, pero debe revisarse el texto completo de las condiciones de acceso del repositorio, que pueden añadir restricciones adicionales.
-- Idiomas: al no declararse, no debe asumirse un rendimiento correcto en castellano sin pruebas previas.
+- Es una versión preview, no un modelo final: las especificaciones y resultados pueden cambiar antes del lanzamiento definitivo.
+- El acceso al modelo base requiere solicitud (gated model) con datos de nombre, afiliación, puesto, país y uso previsto.
+- Idiomas: el foco es coreano e inglés; el rendimiento en otras lenguas no está documentado y probablemente sea inferior.
+- Riesgo de alucinación inherente a los modelos generativos; no se documentan tasas de error ni evaluaciones de factualidad.
+- Sesgos: no se publica información sobre sesgos conocidos ni sobre la composición del dataset de entrenamiento.
+- La cuantización NVFP4 puede introducir degradación respecto al modelo en BF16; no se publican métricas de la pérdida de calidad por cuantización.
+- El despliegue NVFP4 está atado a vLLM y a hardware NVIDIA compatible con FP4; no se garantiza funcionamiento en otras plataformas.
+- Licencia Apache 2.0 permite uso comercial, pero conviene revisar las condiciones de acceso al modelo base y las dependencias del runtime.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/KRAFTON/Raon-1-mini-preview-nvfp4
+- Modelo en Hugging Face (NVFP4): https://huggingface.co/KRAFTON/Raon-1-mini-preview-nvfp4
+- Modelo base: https://huggingface.co/KRAFTON/Raon-1-mini-preview
+- Repositorio GitHub del modelo: https://github.com/krafton-ai/Raon-1-mini-preview
+- Playground de Raon-1 mini: https://raon-console.krafton.ai/playground/guest
+- Página de KRAFTON AI: https://krafton.ai/en/
+- Organización en Hugging Face: https://huggingface.co/KRAFTON
+- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
+- X (Twitter) de KRAFTON AI: https://x.com/Krafton_AI
+- Discord de la comunidad: https://discord.gg/sDG7mmZPnc

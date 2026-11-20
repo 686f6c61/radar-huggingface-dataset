@@ -30,8 +30,8 @@
     "ar",
     "dataset:HuggingFaceFW/fineweb",
     "dataset:HuggingFaceFW/fineweb-edu-llama3-annotations",
-    "base_model:TheYuriLover/HunyuanVideo_nfsw_lora",
-    "base_model:finetune:TheYuriLover/HunyuanVideo_nfsw_lora",
+    "base_model:BigStationW/HunyuanVideo_nfsw_lora",
+    "base_model:finetune:BigStationW/HunyuanVideo_nfsw_lora",
     "license:pddl",
     "region:us"
   ],

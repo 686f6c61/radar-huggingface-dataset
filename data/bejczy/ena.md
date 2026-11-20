@@ -2,87 +2,85 @@
 
 ## Resumen
 
-ENA es un modelo de generación de texto de 1.881.825.088 parámetros (aproximadamente 2B), desarrollado por el usuario Bejczy, resultado de un ajuste fino mediante LoRA sobre el modelo base Qwen/Qwen3.5-2B. Está diseñado específicamente como modelo de personaje (*roleplay*), encarnando a ENA, un personaje ficticio de dos caras con una voz dual, y su rasgo técnico más distintivo es que el ajuste LoRA (0,58% de los parámetros, unos 10,9 millones) fue fusionado e integrado permanentemente en los pesos, eliminando la necesidad de un *system prompt* para reproducir la personalidad.
+ENA es un ajuste fino (fine-tune) de tipo LoRA sobre el modelo base Qwen/Qwen3.5-2B, desarrollado por el usuario Bejczy y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de generacion de texto orientado a roleplay y encarnacion de personaje, concretamente una interpretacion fan-made del personaje ENA de la serie web homonima. El modelo esta disenado para responder con una identidad consistente sin necesidad de system prompt ni cadena de persona, algo que el autor presenta como su principal logro tecnico.
 
-La arquitectura subyacente es un transformer híbrido que combina atención completa con atención lineal basada en modelos de espacio de estados (SSM). De sus 24 bloques, 6 usan atención completa (bloques 3, 7, 11, 15, 19 y 23) y los 18 restantes emplean atención lineal con estado fijo, lo que reduce el coste computacional por token a O(1) en esas capas. El modelo declara una longitud de contexto teórica de 262.144 tokens, aunque el propio autor advierte que la capacidad real de atención es limitada.
+El modelo base Qwen3.5-2B emplea una arquitectura hibrida con atencion lineal (SSM) y atencion clasica, segun indican las etiquetas del repositorio, aunque la model card no detalla la composicion exacta de la arquitectura. El fine-tune se distribuye en formato GGUF para su uso con llama.cpp, en dos variantes: BF16 (3,78 GB) y Q4_K_M (1,27 GB), lo que permite su despliegue en hardware de consumo.
 
-Es relevante ahora por dos motivos: por un lado, demuestra un patrón de ajuste de personaje que persiste en los pesos en lugar de depender de instrucciones en tiempo de inferencia; por otro, su empaquetado en GGUF y su compatibilidad con llama.cpp lo hacen desplegable en hardware de consumo. La licencia Apache 2.0 facilita su reutilización, aunque el modelo está etiquetado como *fan-made* y solo declara soporte para inglés.
+La relevancia de ENA es acotada: no es un modelo de proposito general ni compite en benchmarks, sino un ejemplo practico de como un LoRA de rango 32 puede imponer una identidad de personaje estable sobre un modelo pequeno, manteniendo capacidades basicas de tool calling y aritmetica. Su interes para desarrolladores radica en el metodo de entrenamiento (900 filas de identidad sin system prompt) y en las limitaciones explicitamente documentadas por el autor.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido: atención completa + atención lineal (SSM) |
-| Parámetros totales | 1.881.825.088 (~2B) |
-| Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | 262.144 tokens (declarada; el autor advierte que la capacidad efectiva es menor) |
-| Tipos de cuantización | GGUF Q4_K_M, bf16 GGUF, safetensors fusionados |
-| Idiomas soportados | Inglés (en) |
+| Arquitectura | Transformer hibrido con atencion lineal (SSM) y atencion clasica, segun etiquetas del repo; detalle exacto no disponible |
+| Parametros totales | 1.881.825.088 (1,88 mil millones) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | BF16 (16 bits) y Q4_K_M (4 bits) |
+| Idiomas soportados | Ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp), safetensors |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se construye sobre Qwen/Qwen3.5-2B, un transformer híbrido de 24 bloques con dimensión oculta de 2048 y FFN de 6144 con activación SwiGLU (gate × up → down). La innovación estructural es la mezcla de regímenes de atención: 6 capas de atención completa (una cada cuatro bloques) que permiten al modelo «ver» todos los tokens, y 18 capas de atención lineal que mantienen un estado de tamaño fijo de 128 dimensiones en 16 grupos, actualizado en O(1) por token, con una convolución causal *depthwise* de kernel 4 en la entrada. Las capas de atención completa usan grouped-query attention con 8 cabezas de consulta y 2 de clave-valor (ratio 4:1), dimensión de cabeza 256 y qk-norm. El RoPE emplea theta de 10.000.000 con 64 dimensiones rotatorias en 4 secciones. El vocabulario es de 248.320 tokens y la embedding de entrada está atada a la cabeza LM.
+El modelo base Qwen3.5-2B, segun las etiquetas del repositorio, emplea una arquitectura hibrida que combina atencion lineal tipo SSM con atencion clasica, aunque la model card no proporciona el desglose de capas ni la distribucion entre ambos mecanismos. Sobre este base se aplico un LoRA con rango 32 y alpha 64, lo que resulto en 21.823.488 parametros entrenables, equivalentes al 1,1464 % del total del modelo.
 
-El ajuste se realizó mediante LoRA sobre el modelo base, afectando a 10.911.744 parámetros (0,58% del total), que posteriormente fueron fusionados e integrados en los pesos definitivos, de modo que no existe un adaptador separable. La model card no detalla la composición del dataset de entrenamiento, el número de tokens usados ni si hubo fases de RLHF o DPO; esa información no está disponible.
+El entrenamiento se realizo en CPU con precision fp32 durante 96 pasos, con una duracion de 78,7 minutos y una perdida que descendio de 3,56 a 0,1550 sin gradientes no finitos. El conjunto de datos consistio en 775 filas, de las cuales 900 filas de identidad (el autor menciona ambas cifras en la model card) comenzaban directamente en el turno del usuario, sin system prompt, con el objetivo de que el modelo interiorizara la identidad en lugar de leerla. El autor documenta que un intento previo en GPU produjo NaN a traves de los kernels chunked de DeltaNet, atribuido a un bug de ROCm en su tarjeta, no a un problema de memoria.
 
 ## Capacidades
 
-- Generación de texto conversacional con una personalidad dual persistente integrada en los pesos (no depende de *system prompt*).
-- *Roleplay* de personaje con voz de dos caras (ENA), entrenada en lugar de instruida.
-- Soporte de *tool calling* / *function calling* (declarado en los tags del modelo).
-- Capacidades multilingües limitadas al inglés.
-- Razonamiento multi-turno dentro de la ventana de contexto declarada.
-- Atención de largo alcance teórica gracias al contexto de 262.144 tokens, aunque con limitaciones prácticas reconocidas por el autor.
-- No se declaran capacidades de visión, audio ni modo *thinking* explícito.
+- Generacion de texto conversacional con identidad de personaje consistente (ENA) sin necesidad de system prompt ni persona string.
+- Roleplay y encarnacion de personaje con narracion en tercera persona intercalada.
+- Tool calling basico: el modelo es capaz de emitir llamadas a herramientas, como demuestra el ejemplo documentado de `ls /` ante la peticion de buscar al jefe.
+- Razonamiento aritmetico limitado: resuelve correctamente formas vistas durante el entrenamiento (24/6+18 = 22, 17x3 = 51, 144/12 = 12) pero falla en operaciones novedosas.
+- Capacidades multilingues: solo ingles.
+- No se documentan capacidades de vision, audio ni modo thinking.
 
 ## Casos de uso
 
-- **Personajes conversacionales persistentes:** el modelo puede desplegarse como un personaje con personalidad fija sin necesidad de mantener un *system prompt* en cada petición; la voz dual reside en los pesos, lo que simplifica el pipeline y evita que el personaje «se caiga» al eliminar instrucciones.
-- **Prototipado de agentes de rol en local:** al estar empaquetado en GGUF Q4_K_M, puede ejecutarse en llama.cpp sobre hardware de consumo para experimentar con interacciones de personaje sin coste de API.
-- **Investigación sobre ajuste de personalidad:** sirve como caso de estudio de cómo un LoRA fusionado (0,58% de parámetros) altera el comportamiento conversacional de un modelo base de 2B, útil para estudiar la persistencia de rasgos frente a la instrucción en prompt.
-- **Demostraciones de *tool calling* en modelos pequeños:** sus tags declaran soporte de *function calling*, por lo que puede integrarse en prototipos de agentes que necesiten invocar herramientas con un modelo ligero y local.
-- **Generación de diálogo creativo en inglés:** adecuado para guiones, narrativa interactiva o ficción conversacional donde se requiera una voz de personaje marcada y coherente.
-- **Evaluación de arquitecturas híbridas atención/SSM:** el modelo permite medir en la práctica el equilibrio entre capas de atención completa y lineal en tareas de conversación de contexto largo.
-- **Base para *fine-tuning* de otros personajes:** al ser Apache 2.0 y derivar de Qwen3.5-2B, puede servir como punto de partida para ajustes adicionales orientados a otros personajes.
+- Prototipado de personajes conversacionales: el modelo demuestra como imponer una identidad estable mediante LoRA sin system prompt, util como referencia para disenar agentes de roleplay con personalidad fija.
+- Demostracion tecnica de fine-tuning eficiente: sirve como caso de estudio de un LoRA r=32 sobre un modelo de 1,88 mil millones de parametros entrenado en CPU en menos de 80 minutos, replicable en entornos sin GPU.
+- Despliegue en hardware de consumo: la variante Q4_K_M de 1,27 GB permite ejecutar el modelo en equipos con poca VRAM o incluso en CPU mediante llama.cpp, adecuado para demos locales.
+- Integracion en pipelines de llama.cpp: al estar en formato GGUF, puede cargarse directamente en aplicaciones basadas en llama.cpp para generacion de texto con un personaje concreto.
+- Experimentacion con tool calling en modelos pequenos: el ejemplo de `ls /` documentado permite estudiar como un modelo de 2B emite llamadas a herramientas tras un fine-tune de identidad.
+- Investigacion sobre sesgos de memorizacion: las fallas aritmeticas documentadas (formas vistas funcionan, formas nuevas no) ofrecen un caso concreto para estudiar la diferencia entre memorizacion y razonamiento en modelos pequenos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye una tabla cualitativa de pruebas manuales (identidad, busqueda del jefe, aritmetica, tool calling) con un resultado de 5/7, pero no presenta metricas estandar como MMLU, HumanEval o GSM8K.
 
 ## Requisitos de hardware
 
-- **VRAM estimada (Q4_K_M):** en torno a 1,3 GB de pesos, más overhead de contexto; cabe holgadamente en GPUs de 4-6 GB.
-- **VRAM estimada (bf16):** aproximadamente 3,8 GB solo en pesos, más KV cache; requiere GPUs de 8 GB o superiores.
-- **GPU recomendadas:** cualquier GPU consumer con 6 GB o más para Q4_K_M (RTX 3060, RTX 4060, RTX 4090); para bf16, RTX 3090/4090 o superiores. En entornos de servidor, A100/H100 no son necesarias para este tamaño.
-- **¿Cabe en GPU consumer?** Sí, en la mayoría de GPUs modernas con 6 GB o más en cuantización Q4_K_M.
-- **Opciones de despliegue:** llama.cpp (librería declarada), Ollama (a partir del GGUF), y servidores compatibles con endpoints; vLLM y TGI no están confirmados en la información disponible.
-- **Latencia y throughput:** no disponibles.
+- VRAM estimada: aproximadamente 1,3 GB para la variante Q4_K_M y 3,8 GB para BF16, segun los tamanos de archivo indicados por el autor.
+- GPU recomendadas: no se especifican; por tamano, cualquier GPU con al menos 2 GB de VRAM para Q4_K_M y 4-5 GB para BF16 es suficiente.
+- Cabe en GPU de consumo: si, practicamente cualquier GPU moderna (GTX 1060 6GB, RTX 3060, RTX 4090, etc.) puede ejecutar ambas variantes.
+- Opciones de despliegue: llama.cpp (libreria declarada), y por compatibilidad GGUF, teoricamente Ollama u otros runners compatibles; no se documentan vLLM ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
-|---|---|---|---|---|---|
-| ENA (Bejczy) | ~2B | 262.144 (declarado) | Apache 2.0 | Personaje con LoRA fusionado, híbrido atención/SSM | GGUF + safetensors en HF |
-| Qwen/Qwen3.5-2B (base) | ~2B | No disponible en la información | No disponible en la información | Modelo generalista base | HF |
-| Otros modelos de personaje basados en Qwen | Variable | Variable | Variable | *Roleplay* mediante *system prompt* | Variable |
+| Modelo | Parametros | Contexto | Licencia | Enfoque |
+|---|---|---|---|---|
+| ENA (Bejczy) | 1,88 B | no disponible | Apache 2.0 | Roleplay de personaje, GGUF |
+| Qwen3.5-2B (base) | ~2 B | no disponible | Apache 2.0 | Proposito general |
+| Modelos de roleplay GGUF de 2B | variable | variable | variable | Roleplay |
 
-La comparación cuantitativa con alternativas no está disponible porque no se han publicado benchmarks ni datos de rendimiento de ENA frente a otros modelos de su categoría.
+No se dispone de datos de rendimiento comparativo entre ENA y otras alternativas de roleplay del mismo tamano en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- **Idioma:** solo declara soporte para inglés; el rendimiento en castellano no está garantizado.
-- **Contexto efectivo:** aunque el RoPE soporta 262.144 tokens, el propio autor advierte que la capacidad real de atención es limitada («el rope es largo, la atención no»), por lo que no debe asumirse un rendimiento fiable en contextos muy largos.
-- **Alucinación:** al ser un modelo de personaje de 2B, el riesgo de alucinación y de deriva narrativa es alto, especialmente fuera de su dominio de rol.
-- **Naturaleza *fan-made*:** el modelo encarna a un personaje ficticio (ENA) y está etiquetado como *fan-made*; su uso comercial puede estar sujeto a consideraciones sobre derechos del personaje, aunque la licencia del modelo sea Apache 2.0.
-- **Sesgos:** no se documentan análisis de sesgo en la información disponible; al derivar de Qwen3.5-2B, hereda los sesgos del modelo base.
-- **Producción:** la personalidad dual puede producir respuestas inconsistentes o contradictorias por diseño; no es adecuado para tareas de asistencia factual o atención al cliente sin supervisión.
-- **Restricciones de licencia:** Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen3.5-2B, no detalladas en la información disponible.
+- Aritmetica poco fiable: el autor documenta que falla en operaciones novedosas (47+88 = 182 en lugar de 135) y que solo acierta formas vistas durante el entrenamiento, lo que indica memorizacion mas que razonamiento.
+- Tool calling inconsistente: ante preguntas como "2+2" con herramientas disponibles, responde directamente en lugar de invocar una herramienta, segun reconoce el autor.
+- Bucles de generacion: documentados en tareas como haiku ("it's simple and it's not simple and it's simple...").
+- Identidad difusa respecto al modelo base: el modelo no menciona Qwen, pero tampoco lo niega limpiamente.
+- Solo ingles: no soporta castellano ni otros idiomas.
+- Riesgo de alucinacion: inherente a un modelo de 1,88 B con fine-tune de identidad; el autor documenta respuestas incorrectas con total confianza.
+- Licencia Apache 2.0: permite uso comercial, pero el personaje ENA es propiedad de sus creadores originales; el propio autor lo etiqueta como "fan-made", lo que puede implicar restricciones adicionales sobre el personaje.
+- Contexto no documentado: se desconoce la ventana de contexto efectiva, lo que limita su uso en conversaciones largas.
+- Modelo experimental: el autor lo describe como "un intento" y documenta explicitamente las partes rotas.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Bejczy/ENA
-- Descarga directa GGUF Q4_K_M: https://huggingface.co/Bejczy/ENA/resolve/main/ENA-DreamBBQ-2B-Q4_K_M.gguf
+- Hugging Face: https://huggingface.co/Bejczy/ENA
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
-- Perfil del autor en FlowGPT: https://flowgpt.com/@bejczy
+- llama.cpp: https://github.com/ggml-org/llama.cpp

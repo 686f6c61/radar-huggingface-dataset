@@ -2,75 +2,93 @@
 
 ## Resumen
 
-El modelo `mradermacher/Qwen-3.8-27B-Uncensored-i1-GGUF` es una cuantización GGUF con matriz de importancia (imatrix) del modelo base `junafinity/Qwen-3.8-27B-Uncensored`, una versión "abliterated" (sin censura) del modelo Qwen 3.8 de 27 mil millones de parámetros. El autor, mradermacher, se dedica a producir cuantizaciones optimizadas para ejecución local, y este repositorio ofrece un único archivo cuantizado en formato i1-Q2_K, además del archivo imatrix para que el usuario pueda generar sus propias cuantizaciones.
+Qwen-3.8-27B-Uncensored-i1-GGUF es una cuantizacion en formato GGUF del modelo multimodal junafinity/Qwen-3.8-27B-Uncensored, publicada por el usuario mradermacher. Se trata de una variante "abliterated" y sin censura de un modelo de la familia Qwen (etiquetado internamente como qwen3_5), con 27.320.697.856 parametros totales y capacidad de procesamiento image-text-to-text. El repositorio ofrece cuantizaciones con imatrix (i1) en un rango que va de Q2_K (11,0 GB) a Q6_K (22,5 GB), pensadas para inferencia local con llama.cpp y derivados.
 
-El modelo es multimodal (image-text-to-text), lo que significa que puede procesar tanto imágenes como texto, y está etiquetado con los tags `qwen3_5`, `abliterated`, `uncensored` y `zerofuse`. La licencia es Apache 2.0 y el idioma soportado es únicamente inglés. Su relevancia radica en ofrecer una alternativa sin filtros de contenido para ejecución en hardware local, aprovechando la cuantización GGUF para reducir los requisitos de memoria.
+El modelo base es un derivado de Qwen con las capas de rechazo eliminadas (abliteration), lo que lo orienta a usos donde el modelo original rechazaria peticiones por politicas de seguridad. La licencia declarada es Apache 2.0 y el unico idioma listado es el ingles. El pipeline declarado es image-text-to-text, lo que implica soporte de entrada de imagenes ademas de texto, aunque los ficheros mmproj necesarios para la parte visual no estan en este repositorio sino en el repositorio de cuantizaciones estaticas del mismo autor.
 
-## Especificaciones técnicas
+La relevancia practica de esta ficha es doble: por un lado, documenta una opcion de despliegue local de un modelo de ~27B en hardware de consumo mediante cuantizacion agresiva; por otro, advierte de que se trata de un derivado sin censura, sin benchmarks publicados y con un unico mantenedor de cuantizacion, lo que condiciona su uso en produccion.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (modelo multimodal de la familia Qwen 3.8, sin especificación detallada) |
-| Parametros totales | 27.320.697.856 (27,3 mil millones) |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | i1-Q2_K (11,0 GB) y archivo imatrix (0,1 GB). Se mencionan otros tipos en el repositorio estático asociado |
-| Idiomas soportados | Inglés (en) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (con archivo imatrix para cuantización personalizada) |
+| Arquitectura | no disponible (etiqueta de familia qwen3_5; transformer multimodal segun pipeline image-text-to-text) |
+| Parametros totales | 27.320.697.856 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | i1 (imatrix): Q2_K, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K; se mencionan tambien IQ3_XXS, IQ2_M, IQ2_S, IQ2_XS, IQ2_XXS, IQ1_S, IQ1_M, IQ3_XS en la lista de quants del autor |
+| Idiomas soportados | en |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (con fichero imatrix aparte); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo base. Por las etiquetas y el pipeline declarado (`image-text-to-text`), se trata de un modelo multimodal que combina un codificador visual con un transformador de lenguaje, probablemente similar a otros modelos de la serie Qwen 3.8, pero no se confirma en la documentación proporcionada. El proceso de "abliteration" aplicado por `junafinity` elimina las capas de rechazo de contenido del modelo original, dando lugar a una versión sin censura. La cuantización imatrix de mradermacher utiliza matrices de importancia para mejorar la calidad de los pesos cuantizados, especialmente en los niveles de precisión más bajos. No se han publicado datos sobre el entrenamiento, el número de tokens utilizados ni la composición del dataset.
+No se dispone de informacion detallada sobre la arquitectura interna en la documentacion proporcionada. La etiqueta qwen3_5 y el pipeline image-text-to-text indican que se trata de un transformer multimodal de la familia Qwen, con capacidad de recibir imagenes y texto. El dato de parametros totales (27.320.697.856) procede de los safetensors del modelo base, no de los ficheros GGUF.
+
+Respecto al entrenamiento, la model card no documenta numero de tokens, composicion del dataset, ni si hubo RLHF, DPO o etapas de alineacion. Lo unico relevante tecnicamente es el proceso de abliteration aplicado sobre el modelo original para eliminar el comportamiento de rechazo, y la cuantizacion con imatrix (weighted/imatrix quants) realizada por mradermacher, que usa un fichero de importancia para preservar mejor la calidad en cuantizaciones bajas. No hay informacion sobre innovaciones como decodificacion especulativa, atencion lineal o modos de razonamiento extendido.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: al ser un LLM de 27B, es capaz de mantener conversaciones, responder preguntas y realizar tareas de razonamiento básico, aunque no se aportan benchmarks específicos.
-- Procesamiento multimodal: acepta entradas de imagen y texto, lo que permite tareas como descripción de imágenes, respuesta a preguntas visuales o análisis de documentos escaneados.
-- Sin censura: gracias a la abliteration, el modelo no aplica los filtros de contenido habituales, lo que permite generar respuestas sobre temas que otros modelos rechazarían.
-- Cuantización GGUF: optimizado para ejecución local con llama.cpp, Ollama u otros motores compatibles, con un único archivo de 11 GB para el nivel Q2_K.
-- Soporte de tool calling y agentes: no se menciona en la información disponible.
-- Multilingüismo: limitado al inglés, según la etiqueta `language: en`.
+- Generacion de texto conversacional multi-turno, segun la etiqueta conversational.
+- Procesamiento de imagenes y texto combinados (pipeline image-text-to-text), con la salvedad de que los ficheros mmproj estan en el repositorio de cuantizaciones estaticas.
+- Comportamiento sin censura: el proceso de abliteration elimina los rechazos tipicos del modelo original ante peticiones sensibles.
+- Compatibilidad con endpoints (etiqueta endpoints_compatible).
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: limitadas al ingles segun el campo language.
+- Capacidades especiales (thinking mode, audio, vision adicional): vision si (image-text-to-text); el resto no disponible.
 
 ## Casos de uso
 
-- Investigación en IA sin restricciones: el modelo permite estudiar el comportamiento de un LLM sin filtros de contenido, útil para analizar sesgos, alucinaciones o la efectividad de técnicas de abliteration.
-- Generación de contenido creativo: escritura de ficción, guiones o diálogos con temáticas que otros modelos censurarían, gracias a su naturaleza uncensored.
-- Análisis de imágenes en entornos locales: al ser multimodal, puede procesar capturas de pantalla, fotografías o diagramas y generar descripciones o respuestas textuales sin depender de servicios en la nube.
-- Asistentes conversacionales privados: desplegado en local con llama.cpp u Ollama, sirve como base para un chatbot que no envía datos a servidores externos y que no impone restricciones temáticas.
-- Experimentación con cuantización: el archivo imatrix incluido permite a los desarrolladores generar sus propios niveles de cuantización (Q3, Q4, Q5, etc.) y comparar la degradación de calidad frente al modelo original.
-- Prototipado de aplicaciones de visión por computador: integración en pipelines que requieren entender imágenes y generar texto, como accesibilidad para personas con discapacidad visual o automatización de documentación.
+- Despliegue local en estaciones de trabajo con GPU de consumo: usando la cuantizacion i1-Q4_K_M (16,9 GB) el modelo cabe en GPUs con 24 GB de VRAM, lo que permite ejecutar un modelo de ~27B sin infraestructura de servidor.
+- Investigacion sobre alineacion y abliteration: el modelo sirve para estudiar como varia la calidad y la tasa de rechazo tras eliminar las capas de seguridad, comparando respuestas con el modelo base original.
+- Generacion creativa sin restricciones de politica: escritura de ficcion, guiones o material narrativo que el modelo original rechazaria por contenido sensible, con control humano posterior.
+- Procesamiento de documentos con imagenes: al ser image-text-to-text, puede extraer y describir contenido de capturas, diagramas o documentos escaneados, siempre que se descarguen los ficheros mmproj del repositorio estatico.
+- Prototipado de asistentes conversacionales en ingles: la etiqueta conversational y la compatibilidad con endpoints permiten montar un servicio de chat local con llama.cpp o servidores compatibles.
+- Experimentacion con cuantizaciones imatrix: el repositorio incluye el fichero imatrix y una escala completa de cuantizaciones, util para medir la degradacion de perplejidad entre Q2_K y Q6_K en un mismo modelo.
+- Evaluacion de riesgos en pipelines de moderacion: usar el modelo como generador adversarial para probar clasificadores de contenido y sistemas de filtrado propios.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No se dispone de puntuaciones en MMLU, HumanEval, GSM8K ni otras pruebas estándar para este modelo cuantizado ni para su versión base.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- El archivo cuantizado i1-Q2_K ocupa 11,0 GB, por lo que se necesita al menos 12-16 GB de VRAM para inferencia en GPU, dependiendo del overhead del contexto y del procesador de imágenes (mmproj).
-- GPUs recomendadas: tarjetas con 16 GB o más, como RTX 3090, RTX 4090, A5000 o superiores. También puede ejecutarse en CPU con suficiente RAM (16-32 GB) usando llama.cpp.
-- En GPUs de consumo como RTX 3060 (12 GB) podría caber con un contexto reducido, pero no está garantizado.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, o servidores compatibles con GGUF como llama-cpp-python. No se menciona soporte para vLLM o TGI en este repositorio.
-- Latencia y throughput: no se proporcionan datos. En una RTX 4090, un modelo de 27B en Q2_K podría generar entre 20 y 40 tokens por segundo, pero es una estimación no confirmada.
+- VRAM estimada segun cuantizacion: i1-Q2_K ~11,0 GB; i1-IQ3_S ~12,7 GB; i1-Q3_K_M ~13,6 GB; i1-IQ4_XS ~15,4 GB; i1-Q4_K_M ~16,9 GB; i1-Q5_K_M ~19,6 GB; i1-Q6_K ~22,5 GB (sin contar el contexto KV cache ni el proyector multimodal).
+- GPU recomendadas: para Q4_K_M o superiores, GPUs de 24 GB (RTX 3090, RTX 4090) o profesionales (A100 40 GB, H100) si se quiere contexto largo y margen de VRAM. Para Q2_K o IQ3_S, GPUs de 12-16 GB.
+- Cabe en GPU de consumo: si, en RTX 3090/4090 con cuantizaciones Q4_K_M o inferiores; en GPUs de 12 GB solo con Q2_K o IQ3_S y contexto reducido.
+- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio, llama-cpp-python); el formato GGUF no es compatible con vLLM ni TGI en su configuracion habitual.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa fiable con otros modelos de la misma categoría. El modelo base Qwen 3.8 27B no tiene datos públicos de rendimiento en esta documentación, y las alternativas sin censura (como otros modelos abliterated) no están documentadas aquí. Se recomienda consultar benchmarks independientes antes de elegir.
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| Qwen-3.8-27B-Uncensored-i1-GGUF (este) | 27,32B | no disponible | GGUF i1 | apache-2.0 | Cuantizado por mradermacher, multimodal, sin censura |
+| Qwen-3.8-27B-Uncensored-GGUF (estatico) | 27,32B | no disponible | GGUF estatico | apache-2.0 | Mismo autor, incluye ficheros mmproj para vision |
+| junafinity/Qwen-3.8-27B-Uncensored | 27,32B | no disponible | safetensors | apache-2.0 | Modelo base sin cuantizar, requiere transformers |
+| Modelos Qwen originales de ~27B | no disponible | no disponible | safetensors/GGUF | no disponible | Referencia de comparacion; no se dispone de datos verificados en esta busqueda |
 
 ## Limitaciones y advertencias
 
-- Idioma limitado: solo soporta inglés, lo que restringe su uso en entornos multilingües.
-- Cuantización agresiva: el nivel Q2_K es de baja precisión y puede degradar notablemente la calidad de las respuestas, aumentar las alucinaciones y reducir la coherencia en tareas complejas.
-- Contenido sin filtrar: al ser uncensored, el modelo puede generar contenido ofensivo, ilegal o perjudicial. No es adecuado para aplicaciones orientadas al público general sin una capa de moderación externa.
-- Sesgos y alucinaciones: no se han evaluado los sesgos del modelo base ni su tasa de alucinación; al ser una versión sin censura, estos riesgos pueden verse amplificados.
-- Licencia: aunque la licencia es Apache 2.0, el modelo base puede tener restricciones adicionales no documentadas en este repositorio. Se recomienda revisar la página de `junafinity/Qwen-3.8-27B-Uncensored` antes de un uso comercial.
-- Sin soporte de tool calling: no se indica que el modelo soporte funciones externas, lo que limita su integración en agentes autónomos.
+- Modelo sin censura: la abliteration elimina los rechazos de seguridad, por lo que puede generar contenido danino, ilegal o sexualmente explicito. No es apto para aplicaciones orientadas al publico sin filtros adicionales.
+- Ausencia total de benchmarks: no hay datos publicados de MMLU, HumanEval, GSM8K ni evaluaciones de calidad tras la abliteration, por lo que no se puede verificar la degradacion respecto al modelo original.
+- Solo ingles declarado: el rendimiento en castellano u otros idiomas no esta documentado y puede ser deficiente.
+- Contexto desconocido: no se especifica la longitud de contexto, un dato critico para planificar despliegues con documentos largos.
+- Vision incompleta en este repositorio: los ficheros mmproj necesarios para procesar imagenes estan en el repositorio de cuantizaciones estaticas, no en este.
+- Un unico mantenedor de cuantizacion: la calidad y el soporte dependen de mradermacher; el modelo base procede de un autor (junafinity) sin trazabilidad publica documentada.
+- Riesgo de alucinacion: no cuantificado; al tratarse de un derivado sin evaluacion publicada, conviene validar las salidas en cualquier uso productivo.
+- Licencia Apache 2.0 declarada, pero la cadena de derivacion (modelo original Qwen, abliteration, cuantizacion) deberia revisarse antes de un uso comercial para confirmar el cumplimiento de las condiciones de los modelos intermedios.
+- Fecha de creacion futura en los metadatos (2026-08-23), lo que sugiere que los campos de fecha del repositorio no son fiables.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen-3.8-27B-Uncensored-i1-GGUF
-- Repositorio estático de cuantizaciones: https://huggingface.co/mradermacher/Qwen-3.8-27B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/junafinity/Qwen-3.8-27B-Uncensored
-- Blog sobre la versión GGUF: https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf
-- Guía de ejecución local: https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally
-- Repositorio GitHub relacionado: https://github.com/unburdened-jackinthebox365/qwen38-uncensored
+- Cuantizaciones estaticas (incluye mmproj): https://huggingface.co/mradermacher/Qwen-3.8-27B-Uncensored-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Qwen-3.8-27B-Uncensored-i1-GGUF
+- Peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- nethype GmbH: https://www.nethype.de/

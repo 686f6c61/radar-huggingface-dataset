@@ -53,31 +53,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "desert-ant-labs/align · Hugging Face",
-      "url": "https://huggingface.co/desert-ant-labs/align",
-      "snippet": "desert-ant-labs / align like 0 Follow Desert Ant Labs 9 Automatic Speech Recognition multilingual speech word-timestamps forced-alignment speech-recognition on-device core-ml License:desert-ant-labs-source-available-1. Model card FilesFiles and versions xet Community Copy to bucket new Align: on-device word-timestamp refinement for Apple ..."
-    },
-    {
-      "title": "Desert Ant Labs: On-device AI models and SDKs",
-      "url": "https://desertant.com/",
-      "snippet": "Desert Ant Labs is a frontier AI lab for on-device models that run on Apple, Android and the web, in a few lines of native code."
-    },
-    {
-      "title": "desert-ant-labs (Desert Ant Labs) - Hugging Face",
-      "url": "https://huggingface.co/desert-ant-labs",
-      "snippet": "Org profile for Desert Ant Labs on Hugging Face, the AI community building the future."
-    },
-    {
-      "title": "Desert Ant Labs - GitHub",
-      "url": "https://github.com/Desert-Ant-Labs",
-      "snippet": "Desert Ant Labs is a European AI lab building small, opinionated on-device models."
-    },
-    {
-      "title": "GitHub - Desert-Ant-Labs/desert-ant-core: On-device AI SDKs for iOS ...",
-      "url": "https://github.com/Desert-Ant-Labs/desert-ant-core/tree/main",
-      "snippet": "On-device AI SDKs for iOS, macOS, Android, and the web. Small, focused models that run fully offline in Swift, Kotlin, and JavaScript with Core ML, LiteRT, and WebAssembly. - Desert-Ant-Labs/desert..."
-    }
-  ]
+  "sources": []
 }

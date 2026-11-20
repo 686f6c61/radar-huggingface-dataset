@@ -96,31 +96,5 @@
       "value": 0.399
     }
   ],
-  "sources": [
-    {
-      "title": "Desert - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Desert",
-      "snippet": "Other deserts are flat, stony plains where all the fine material has been blown away and the surface consists of a mosaic of smooth …"
-    },
-    {
-      "title": "Désert — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/D%C3%A9sert",
-      "snippet": "« Chine : des milliards d'arbres pour conter l'avancer du desert [archive] », sur www.geo.fr « les limites du reboisement au Burkina …"
-    },
-    {
-      "title": "Desert | Definition, Climate, Animals, Plants, & Types | Britannica",
-      "url": "https://www.britannica.com/science/desert",
-      "snippet": "Oct 19, 2026 · Desert, any large, extremely dry area of land with sparse vegetation. It is one of Earth’s major types of ecosystems, …"
-    },
-    {
-      "title": "Qu’est-ce qu’un désert ? | MNHN",
-      "url": "https://www.mnhn.fr/fr/qu-est-ce-qu-un-desert",
-      "snippet": "Feb 26, 2025 · Un désert est un espace durablement très sec, car l’eau sous forme liquide y est très rare en surface, en raison de …"
-    },
-    {
-      "title": "Desert - National Geographic Society",
-      "url": "https://education.nationalgeographic.org/resource/desert/",
-      "snippet": "Sep 15, 2026 · In literature and in legend, deserts are often described as hostile places to avoid. Today, people value desert …"
-    }
-  ]
+  "sources": []
 }

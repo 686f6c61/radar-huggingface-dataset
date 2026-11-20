@@ -2,107 +2,96 @@
 
 ## Resumen
 
-Qwen3.8-27B-pi es un ajuste fino del modelo base Qwen/Qwen3.8-27B, publicado por el usuario bytkim con licencia Apache 2.0. Está especializado en tareas de codificación dentro del arnés de agente Pi: el bucle de leer un repositorio, editar ficheros, ejecutar herramientas y reaccionar a la salida de estas. El objetivo declarado es completar más trabajo con menos texto generado, manteniendo la interfaz del modelo base.
+Qwen3.8-27B-pi es un ajuste fino (finetune) del modelo Qwen/Qwen3.8-27B, publicado por el usuario bytkim bajo licencia Apache 2.0. Está especializado en tareas de programación dentro del arnés de agentes Pi, un entorno que reproduce el bucle real de trabajo de un desarrollador: leer un repositorio, editar ficheros, ejecutar herramientas e incorporar la realimentación de esas herramientas en el siguiente paso. El modelo conserva la interfaz del modelo base, por lo que puede sustituirlo directamente en despliegues existentes.
 
-El modelo tiene 27.781.427.952 parámetros (27,78 mil millones) almacenados en safetensors en bf16, con un repositorio de 59,4 GB. La model card documenta soporte de predicción multi-token (MTP) como método de decodificación especulativa, parser de razonamiento qwen3 y parser de tool calling qwen3_xml, además de una ventana de contexto de 262.144 tokens en la configuración de vLLM de ejemplo. Las etiquetas del repositorio incluyen visión y image-text-to-text, aunque el texto de la ficha se centra exclusivamente en código.
+El modelo tiene 27.781.427.952 parámetros (aproximadamente 27,8 mil millones) en precisión BF16, con un repositorio de 59,4 GB. Soporta una longitud de contexto de 262.144 tokens según la configuración de ejemplo para vLLM, y mantiene capacidades multimodales de entrada imagen-texto heredadas del modelo base, además de un modo de razonamiento (thinking mode) con niveles de esfuerzo ajustables (low, medium, xhigh).
 
-El entrenamiento combina un ajuste supervisado (SFT) sobre sesiones Pi filtradas y exitosas con una segunda etapa de aprendizaje por refuerzo con GRPO, que incorpora una recompensa personalizada de eficiencia de razonamiento. El interés actual radica en su enfoque de agente de código con niveles de esfuerzo de razonamiento ajustables (low, medium, xhigh) y en la disponibilidad de formatos FP8 y GGUF para despliegue. No hay informe técnico publicado todavía.
+Su relevancia actual radica en que no se limita a generar fragmentos de código aislados: ha sido entrenado sobre sesiones completas y filtradas del arnés Pi, con una etapa de aprendizaje por refuerzo (GRPO) que incorpora una recompensa personalizada de eficiencia de razonamiento. El resultado declarado es un modelo que completa más tareas con menos tokens de salida que el base en cada nivel de esfuerzo equivalente, lo que reduce coste de inferencia y latencia en pipelines agénticos de programación.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (pipeline image-text-to-text) con cabecera de predicción multi-token (MTP) para decodificación especulativa; el autor no detalla la arquitectura interna más allá de la etiqueta qwen3_5 |
-| Parámetros totales | 27.781.427.952 (27,78 mil millones) |
-| Parámetros activos | no disponible (no se indica que sea un modelo MoE) |
-| Longitud de contexto | 262.144 tokens, según el valor `--max-model-len 262144` del ejemplo de vLLM de la model card |
-| Tipos de cuantización | BF16 (repo principal), FP8 (repo separado), GGUF (repo separado, cuantizaciones calibradas con sesiones completas de Pi) |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer multimodal (image-text-to-text), con soporte de multi-token prediction (MTP) para decodificación especulativa; familia qwen3_5 |
+| Parametros totales | 27.781.427.952 (≈27,8 B) |
+| Parametros activos | No aplica (no es MoE según la información disponible) |
+| Longitud de contexto | 262.144 tokens (según configuración de ejemplo en vLLM) |
+| Tipos de cuantizacion | BF16 (repo principal), FP8 (repo separado), GGUF (repo separado, calibrado con sesiones Pi completas) |
+| Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors; GGUF y FP8 en repositorios independientes |
+| Formato de pesos | safetensors (BF16), FP8 y GGUF en repositorios derivados |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna: se sabe que el modelo base es Qwen/Qwen3.8-27B, que la librería es transformers y que las etiquetas incluyen qwen3_5, visión y image-text-to-text. Lo que sí se documenta es la presencia de predicción multi-token (MTP) usada como decodificación especulativa, con una configuración de ejemplo de `{"method":"mtp","num_speculative_tokens":3}` en vLLM. También se especifican el parser de razonamiento `qwen3` y el parser de tool calling `qwen3_xml`, lo que implica una interfaz de herramientas en formato XML y un modo de pensamiento integrado.
+El modelo parte de Qwen3.8-27B, un transformer multimodal de aproximadamente 27,8 mil millones de parámetros que procesa entradas de imagen y texto. Incorpora multi-token prediction (MTP), una técnica de decodificación especulativa que predice varios tokens por paso y acelera la generación; la configuración de vLLM del autor la activa con `num_speculative_tokens: 3`. También expone un modo de razonamiento con niveles de esfuerzo configurables y soporte nativo de tool calling mediante los parsers `qwen3` y `qwen3_xml`.
 
-El proceso de entrenamiento fue por etapas. Primero, curación de trayectorias de sesiones Pi y ajuste supervisado sobre sesiones filtradas y exitosas, para que el modelo aprenda flujos de trabajo completos (adaptarse a un entorno existente, comprobar resultados frente a los requisitos) en lugar de respuestas aisladas. Después, una etapa de aprendizaje por refuerzo con GRPO que combina resultados de tarea verificados con una recompensa de eficiencia de razonamiento, orientada a economizar tokens en los niveles low y medium y a priorizar la corrección en xhigh. La selección de checkpoints se hizo con resultados reales de agente junto a tokens generados, llamadas a herramientas y tiempo de finalización, no solo con la pérdida de entrenamiento.
+El entrenamiento se desarrolló en dos etapas. La primera consistió en un ajuste fino supervisado (SFT) sobre sesiones Pi filtradas y exitosas, es decir, trayectorias completas de lectura de repositorio, edición y verificación de resultados, en lugar de pares aislados de pregunta-respuesta. La segunda etapa aplicó aprendizaje por refuerzo con GRPO, combinando resultados de tarea verificados con una recompensa personalizada de eficiencia de razonamiento: se premia que las soluciones correctas de esfuerzo bajo y medio razonen de forma más económica, mientras que el nivel xhigh se orienta a maximizar la corrección. La evaluación de checkpoints se hizo con resultados reales de agente (éxito de tarea, tokens generados, llamadas a herramientas y tiempo de finalización), no solo con pérdida de entrenamiento.
 
 ## Capacidades
 
-- Generación de código y edición de ficheros dentro de un bucle de agente: leer repositorio, aplicar cambios, ejecutar y verificar.
-- Tool calling y function calling mediante parser `qwen3_xml`, compatible con `--enable-auto-tool-choice` en vLLM.
-- Modo de razonamiento con parser dedicado (`qwen3`) y niveles de esfuerzo ajustables: low, medium y xhigh.
-- Razonamiento multi-paso orientado a tareas de ingeniería: depuración, implementación y validación contra requisitos.
-- Decodificación especulativa con MTP (3 tokens especulativos en la configuración de referencia) para acelerar la inferencia.
-- Etiquetado como multimodal y de visión (image-text-to-text) por el autor, sin detalle de uso en la model card.
-- Conversación multi-turno y soporte de contexto largo de hasta 262.144 tokens según la configuración publicada.
-- Capacidades multilingües: no disponible.
+- Generación de código en flujos de trabajo completos: leer repositorios, localizar ficheros, aplicar ediciones y comprobar el resultado contra los requisitos de la tarea.
+- Razonamiento ajustable en tres niveles (low, medium, xhigh), con muestreo por defecto en modo thinking de `temperature=1.0`, `top_p=0.95` y `top_k=20`.
+- Tool calling y function calling nativos, con soporte de elección automática de herramienta en vLLM (`--enable-auto-tool-choice`, `--tool-call-parser qwen3_xml`).
+- Operación como agente multi-paso: interpreta la realimentación de las herramientas y encadena acciones hasta completar la tarea.
+- Entrada multimodal imagen-texto heredada del modelo base, útil para interpretar capturas, diagramas o interfaces durante una tarea de desarrollo.
+- Decodificación especulativa mediante MTP, que reduce la latencia por token generado.
+- Conversación multi-turno con ventana de contexto de 262.144 tokens.
 
 ## Casos de uso
 
-- Agente de codificación autónomo en integración continua: el modelo puede ejecutar el ciclo de leer el repositorio, editar ficheros y validar con herramientas a través de tool calling, integrándose en pipelines que lancen tareas sobre un checkout del proyecto.
-- Refactorización de codebases grandes: con 262.144 tokens de contexto puede mantener varios ficheros relevantes simultáneamente, lo que permite abordar cambios que cruzan módulos sin trocear el código en fragmentos inconexos.
-- Depuración iterativa guiada por tests: el bucle de Pi está diseñado para usar la salida de las herramientas como feedback, de modo que el modelo corrige la implementación a partir de trazas de error y resultados de la suite de pruebas.
-- Generación y reparación de código científico: la model card reporta evaluación en SciCode (337 subproblemas), lo que sitúa el modelo en escenarios de cálculo numérico y algorítmica técnica más que en código de aplicación convencional.
-- Revisión automática de pull requests: el modelo puede inspeccionar un diff y su entorno, explicar el impacto y proponer correcciones con llamadas a herramientas de análisis estático.
-- Documentación de código heredado: dado un contexto amplio de ficheros, puede generar explicaciones y documentación técnica de módulos sin documentación previa.
-- Despliegue en estación de trabajo con GGUF: las cuantizaciones GGUF permiten ejecutar el modelo en local sobre código propietario sin enviar datos a servicios externos.
-- Asistente integrado en arneses de agente compatibles con la interfaz del modelo base: al conservar la interfaz de Qwen3.8-27B, puede sustituirlo directamente en herramientas ya configuradas con parser qwen3 y tool calling XML.
+- Agente de programación autónomo en CI/CD: el modelo puede recibir un fallo de build o de tests, inspeccionar el repositorio, aplicar un parche y volver a ejecutar la verificación, usando tool calling para invocar el compilador y los tests dentro del pipeline.
+- Refactorización guiada por repositorio: con 262.144 tokens de contexto puede cargar módulos completos y sus dependencias, renombrar APIs o migrar patrones de forma coherente en varios ficheros en una sola sesión.
+- Asistente de depuración iterativa: el bucle entrenado (cambio, ejecución, lectura de la realimentación) encaja con la depuración de errores intermitentes donde el modelo debe formular hipótesis, instrumentar el código y validar con logs.
+- Generación y reparación de tests: el modelo puede escribir pruebas, ejecutarlas, interpretar los fallos y corregir tanto el test como el código bajo prueba, con el nivel de esfuerzo xhigh para maximizar corrección.
+- Automatización de tareas de mantenimiento en terminal: la evaluación en Terminal-Bench 2.1 indica que está orientado a operaciones de línea de comandos, por lo que sirve para scripts de migración, limpieza de repositorios o actualización de dependencias con verificación posterior.
+- Integración en un IDE o arnés de agentes propio: al conservar la interfaz del modelo base y estar disponible en BF16, FP8 y GGUF, puede desplegarse con vLLM para uso servidor o con llama.cpp/Ollama en estaciones de trabajo, manteniendo los parsers de razonamiento y herramientas de Qwen.
+- Análisis de documentación técnica con imágenes: gracias a la entrada multimodal puede interpretar diagramas de arquitectura o capturas de errores junto al código para localizar la causa de un fallo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados numéricos de benchmarks en la información disponible. La model card incluye únicamente gráficos (imágenes) de Terminal-Bench 2.1, GPQA Diamond y SciCode, sin valores extraíbles, y anuncia un informe técnico para los próximos días.
+Los datos publicados en la model card son gráficos comparativos entre Pi y el modelo base en tres evaluaciones. Los valores numéricos exactos no se recogen como tablas en la información disponible; se resumen a continuación los resultados declarados de forma cualitativa y las cifras explícitas mencionadas.
 
-| Benchmark | Resultado numérico | Observación según la model card |
-|---|---|---|
-| Terminal-Bench 2.1 | no disponible | Se compara éxito de tarea frente a tokens de salida en low, medium y xhigh; se afirma que Pi en medium iguala la tasa de finalización de Base en xhigh con aproximadamente un 41% menos de tokens de salida |
-| GPQA Diamond | no disponible | Se reporta tasa de aprobación por intento; se afirma que Pi alcanza la puntuación más alta en xhigh, mientras que Base mantiene ventaja en medium |
-| SciCode (337 subproblemas) | no disponible | Se afirma que Pi resuelve más subproblemas en todos los niveles; en xhigh con aproximadamente un 23% menos de tokens de salida, y en medium con más tokens para una puntuación superior |
+| Benchmark | Resultado declarado |
+|---|---|
+| Terminal-Bench 2.1 | Pi muestra una subida más constante del éxito de low a xhigh que el base y menos tokens de salida en cada nivel de esfuerzo equivalente; en modo medium iguala la tasa de éxito de xhigh del base con aproximadamente un 41 % menos de tokens de salida |
+| GPQA Diamond (tasa de aprobación por intento) | Pi alcanza la puntuación más alta en xhigh; el base conserva ventaja en esfuerzo medium |
+| SciCode (subproblemas superados de 337) | Pi resuelve más subproblemas en todos los niveles; en xhigh obtiene mayor puntuación con aproximadamente un 23 % menos de tokens de salida, mientras que en medium su mayor puntuación requiere más tokens |
 
-Estas afirmaciones proceden del autor y no están respaldadas por cifras públicas ni por evaluaciones independientes.
+No se han publicado en la información disponible valores absolutos de MMLU, HumanEval o GSM8K.
 
 ## Requisitos de hardware
 
-- Pesos en BF16: aproximadamente 55,6 GB (27,78 mil millones de parámetros a 2 bytes por parámetro), coherente con un repositorio de 59,4 GB. Estimación.
-- VRAM para BF16 con contexto largo: por encima de 60 GB solo para pesos y caché KV inicial; una GPU H100 80 GB o A100 80 GB es el mínimo razonable para una sola tarjeta, y el contexto de 262.144 tokens exige planificar la caché KV con cuidado. Estimación.
-- VRAM para FP8: alrededor de 28 GB de pesos (repositorio bytkim/Qwen3.8-27B-pi-FP8), adecuado para L40S 48 GB, RTX 6000 Ada 48 GB o A6000 48 GB. Estimación.
-- GPU consumer: en GGUF con cuantización de 4 bits el peso ronda los 16-17 GB, por lo que puede caber en una RTX 4090 o RTX 5090 de 24 GB con contexto moderado; cuantizaciones de 8 bits (unos 29 GB) requieren 32 GB o más. Estimación.
-- Memoria unificada: equipos Apple con 64 GB o más pueden ejecutar cuantizaciones GGUF intermedias. Estimación.
-- Despliegue: vLLM es la opción documentada por el autor, con `--reasoning-parser qwen3`, `--tool-call-parser qwen3_xml`, `--enable-auto-tool-choice` y decodificación especulativa MTP. Las etiquetas del repositorio incluyen text-generation-inference y los repos GGUF habilitan llama.cpp, Ollama y similares. También es cargable con transformers.
-- Latencia y throughput: no disponibles. El único dato relacionado es el uso de MTP con 3 tokens especulativos, que reduce el número de pasos de decodificación, y la afirmación del autor de menos tokens de salida a igualdad de esfuerzo de razonamiento.
-- Parámetros de muestreo por defecto en modo pensamiento: temperatura 1,0, top_p 0,95, top_k 20, definidos en `generation_config.json`.
+- VRAM para BF16: los 27,8 B parámetros en BF16 ocupan aproximadamente 55,6 GB solo en pesos, por lo que se necesitan del orden de 60-70 GB de VRAM contando caché KV y overhead; encaja en una A100 80 GB o H100 80 GB, y requiere varias GPU consumer en paralelo.
+- VRAM para FP8: alrededor de 28 GB en pesos, lo que permite ejecución en una sola GPU de 40-48 GB (A100 40 GB, L40S) y, con contexto reducido, en una RTX 4090 de 24 GB solo si se aplica cuantización adicional.
+- GGUF: las cuantizaciones GGUF del repositorio derivado permiten ejecución en GPU consumer de 24 GB (RTX 3090, RTX 4090) con cuantizaciones de 4-5 bits y contexto recortado; el contexto completo de 262.144 tokens exige mucha más memoria de caché KV.
+- Despliegue recomendado: vLLM con `--max-model-len 262144`, `--reasoning-parser qwen3`, `--enable-auto-tool-choice`, `--tool-call-parser qwen3_xml` y `--speculative-config '{"method":"mtp","num_speculative_tokens":3}'`, tal como indica el autor.
+- Alternativas de despliegue: llama.cpp u Ollama con los GGUF publicados; TGI aparece en los tags del modelo.
+- Latencia y throughput: no disponibles como cifras absolutas; la decodificación especulativa MTP y la reducción de tokens de salida declarada (hasta un 41 % menos en medium frente a xhigh del base) apuntan a una mejora directa del coste por tarea completada.
 
 ## Comparativa con modelos similares
 
-No hay resultados de benchmarks públicos de este modelo, de modo que la comparación se limita a especificaciones y licencia. Los datos de los modelos alternativos provienen de sus fichas públicas y conviene verificarlos antes de tomar decisiones.
+| Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
+|---|---|---|---|---|---|
+| Qwen3.8-27B-pi | ≈27,8 B | 262.144 tokens | Apache 2.0 | Finetune para agente de código Pi, con RL de eficiencia | BF16, FP8, GGUF en Hugging Face |
+| Qwen3.8-27B (base) | ≈27,8 B | 262.144 tokens (según configuración del autor) | Apache 2.0 | Modelo generalista multimodal con thinking mode | Hugging Face |
+| Alternativas de tamaño similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
-| Modelo | Parámetros | Contexto | Licencia | Enfoque |
-|---|---|---|---|---|
-| Qwen3.8-27B-pi | 27,78 mil millones | 262.144 tokens según la configuración de vLLM | Apache 2.0 | Agente de código en el arnés Pi, con SFT sobre sesiones Pi y RL con GRPO |
-| Qwen/Qwen3.8-27B (modelo base) | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | Modelo base multimodal sin el ajuste para el arnés Pi |
-| Qwen3-32B | 32,8 mil millones (dense) | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | Modelo generalista con modo de razonamiento, no especializado en arneses de agente |
-| Qwen2.5-Coder-32B-Instruct | 32,5 mil millones | 131.072 tokens (con YaRN) | Apache 2.0 | Modelo de código generalista, sin entrenamiento específico de bucle de agente |
-| Devstral-Small-2507 | 24 mil millones | 128.000 tokens | Apache 2.0 | Modelo de código orientado a agentes y uso de herramientas |
+La información proporcionada no incluye datos de otros modelos de la misma categoría, por lo que la comparación se limita al modelo base del que deriva.
 
 ## Limitaciones y advertencias
 
-- No se han publicado cifras de benchmarks verificables; toda comparación de rendimiento procede de gráficos del autor y de afirmaciones sin respaldo numérico externo.
-- El informe técnico está anunciado pero no disponible, por lo que no se conocen composición del dataset, número de tokens de entrenamiento ni detalles de la etapa de RL.
-- La model card está truncada en el momento de la consulta (se corta al inicio de la sección de modo no pensamiento), lo que limita la reproducibilidad de la configuración recomendada.
-- El ajuste está orientado a un arnés concreto (Pi); el formato de tool calling XML y el parser qwen3_xml pueden no encajar sin cambios en otros frameworks de agentes.
-- Riesgo de sobreajuste a flujos de trabajo de sesiones Pi filtradas como exitosas: puede degradarse en tareas fuera de ese patrón o en código con convenciones muy distintas.
-- Riesgo de alucinación de APIs, funciones y firmas inexistentes, habitual en modelos de código; se recomienda validación con ejecución real de tests.
-- Idiomas soportados no especificados; es probable que el rendimiento en castellano sea inferior al de inglés, dado el origen del ajuste, pero no hay datos que lo confirmen.
-- La licencia Apache 2.0 permite uso comercial, pero se desconoce la licencia del modelo base Qwen/Qwen3.8-27B, que debe verificarse en su ficha antes de un despliegue comercial.
-- Contexto nominal de 262.144 tokens con implicaciones fuertes de memoria: la caché KV puede ser el factor limitante antes que los pesos.
-- Adopción nula: 0 descargas y 1 like en el momento de la consulta, sin validación por parte de la comunidad.
-- Las fechas de creación y actualización del repositorio (29 de septiembre de 2026) son posteriores a la fecha habitual de consulta, lo que conviene tener en cuenta al evaluar la trazabilidad del artefacto.
-- Las cuantizaciones GGUF se calibraron con sesiones completas de Pi; el comportamiento fuera de ese dominio puede diferir del BF16.
+- El ajuste está orientado al arnés Pi y a tareas de programación; fuera de ese dominio puede degradarse respecto al modelo base, especialmente en conversación general o tareas no técnicas.
+- Los benchmarks publicados son gráficos comparativos del propio autor y no tablas con cifras absolutas verificables de forma independiente; conviene tratarlos con cautela.
+- No se especifican los idiomas soportados; el entrenamiento se describe en inglés y no hay garantía de calidad equivalente en castellano.
+- Riesgo de alucinación inherente a los modelos de lenguaje, agravado en tareas de código cuando el modelo afirma haber verificado un resultado sin haber ejecutado realmente la herramienta.
+- El contexto de 262.144 tokens exige una gestión cuidadosa de la memoria KV; en configuraciones consumer con GGUF habrá que recortar la ventana de forma significativa.
+- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre el modelo y la responsabilidad del despliegue recae en el integrador.
+- El repositorio principal en BF16 ocupa 59,4 GB, lo que complica su distribución y almacenamiento en entornos con límites de tamaño.
+- No se documentan sesgos concretos ni evaluaciones de seguridad en la información disponible.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/bytkim/Qwen3.8-27B-pi
+- Modelo en Hugging Face: https://huggingface.co/bytkim/Qwen3.8-27B-pi
 - Versión FP8: https://huggingface.co/bytkim/Qwen3.8-27B-pi-FP8
 - Versión GGUF: https://huggingface.co/bytkim/Qwen3.8-27B-pi-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- No se han encontrado enlaces relevantes en la búsqueda web: los resultados devueltos corresponden a medios de información militar y no guardan relación con el modelo.

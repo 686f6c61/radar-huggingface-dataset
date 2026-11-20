@@ -2,111 +2,92 @@
 
 ## Resumen
 
-Lythri-4B-A2B-i1-GGUF es un repositorio de cuantizaciones GGUF generadas por mradermacher a partir del modelo base Lythri/Lythri-4B-A2B. No se trata de un modelo entrenado desde cero, sino de una conversion y compresion de pesos para su uso con llama.cpp y otros runners compatibles con GGUF, orientada a despliegue local y on-device. La nomenclatura del modelo (4B-A2B) sugiere un transformer de tipo mezcla de expertos con aproximadamente 4.000 millones de parametros totales y unos 2.000 millones activos por token, aunque el autor no publica la arquitectura en la model card. La etiqueta gemma4 apunta a una arquitectura derivada de la familia Gemma, dato no confirmado de forma explicita.
+Lythri-4B-A2B-i1-GGUF es la versión cuantizada en formato GGUF del modelo Lythri-4B-A2B, publicada por el usuario mradermacher. El modelo original lo desarrolla Lythri y está orientado a soporte emocional, conversación de acompañamiento y despliegue en dispositivo (on-device). Esta publicación concreta no es un modelo nuevo, sino un conjunto de cuantizaciones con imatrix generadas a partir de los pesos originales, pensadas para ejecución local con llama.cpp y derivados.
 
-El modelo base esta etiquetado como modelo de acompanamiento emocional y conversacional (emotional-support, companion), con enfasis en ejecucion en dispositivo y soporte de vision (los ficheros mmproj, si existen, se distribuyen en el repositorio estatico). El idioma declarado es unicamente el ingles y la licencia es Apache 2.0, lo que facilita su integracion en productos comerciales sin las restricciones de licencias de comunidad habituales en modelos de otros fabricantes.
+El modelo base declara 4.628.569.635 parámetros totales según los datos de safetensors, lo que sitúa la familia en el rango de 4B. La model card del cuantizador menciona además un identificador "A2B" y lo describe como modelo de visión, lo que sugiere una arquitectura con componentes de atención y posiblemente proyección multimodal, aunque no se detallan los detalles arquitectónicos. La licencia es Apache 2.0 y el idioma declarado es únicamente inglés.
 
-El interes practico de esta publicacion es doble: por un lado ofrece cuantizaciones con imatrix (sufijo i1) que mejoran la relacion calidad/tamano frente a las estaticas del repositorio hermano; por otro, permite ejecutar un modelo conversacional especializado en hardware de consumo. En el momento de la consulta el repositorio registra 0 descargas y 0 likes, y no se han publicado resultados de benchmarks.
+La relevancia de esta ficha radica en que ofrece un abanico muy amplio de cuantizaciones (desde IQ1_S de 2,4 GB hasta Q6_K de 3,9 GB), lo que permite ejecutar un modelo de 4B con capacidades conversacionales y de acompañamiento en hardware de consumo, incluidas GPUs con poca VRAM o incluso CPU. El repositorio ocupa 73,3 GB en total por acumular todas las variantes.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible en la model card; la nomenclatura A2B y la etiqueta gemma4 sugieren un transformer de tipo MoE con unos 2B parametros activos (no confirmado) |
-| Parametros totales | 694.291 segun los metadatos de safetensors del repositorio; la nomenclatura del modelo indica 4B. Cifra no coherente y no verificada |
-| Parametros activos | no disponible (la nomenclatura A2B sugiere aproximadamente 2B activos) |
+| Arquitectura | no disponible (modelo base transformer; la model card del cuantizador lo describe como modelo de visión) |
+| Parámetros totales | 4.628.569.635 |
+| Parámetros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF con imatrix (i1): IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, small-IQ4_NL, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K |
-| Idiomas soportados | en (ingles) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (cuantizaciones ponderadas con imatrix); las cuantizaciones estaticas equivalentes se publican en el repositorio Lythri-4B-A2B-GGUF |
-| Modelo base | Lythri/Lythri-4B-A2B |
-| Autor de la cuantizacion | mradermacher (revision de README: 1) |
-| Fecha de creacion | 2026-10-01 |
-| Fecha de actualizacion | 2026-10-02 |
-| Tamano del repositorio | 0,0 GB en los metadatos de Hugging Face (el unico fichero listado en la tabla es el imatrix, de 0,1 GB) |
-| Descargas / likes | 0 / 0 |
+| Tipos de cuantización | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, Q2_K_S, Q2_K, IQ3_XS, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (todas con imatrix) |
+| Idiomas soportados | inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (con fichero imatrix adicional) |
 
 ## Arquitectura y entrenamiento
 
-El repositorio no documenta la arquitectura del modelo base ni su procedimiento de entrenamiento. La unica informacion tecnica disponible son las etiquetas del repositorio (gemma4, emotional-support, companion, on-device), el identificador 4B-A2B y la referencia al modelo base Lythri/Lythri-4B-A2B. No hay datos sobre numero de tokens de entrenamiento, composicion del dataset, uso de RLHF, DPO u otras tecnicas de alineamiento, ni sobre innovaciones como decodificacion especulativa o atencion lineal.
+No se dispone de información detallada sobre la arquitectura interna del modelo base Lythri-4B-A2B en la documentación proporcionada. El recuento de parámetros (4.628.569.635) corresponde a los safetensors del modelo original, y la nomenclatura "A2B" junto con la mención de que se trata de un modelo de visión en la model card del cuantizador apunta a una arquitectura con módulo de proyección multimodal (mmproj), aunque no se confirma su estructura exacta ni si emplea mezcla de expertos.
 
-Lo que si queda documentado es el proceso de cuantizacion: mradermacher genera cuantizaciones ponderadas con imatrix a partir del modelo base, con conversion de tipo hf y quantize_version 2, y ofrece tanto la cuantizacion i1 (este repositorio) como cuantizaciones estaticas en un repositorio separado. Los ficheros mmproj correspondientes a la parte de vision, si existen, se distribuyen unicamente en el repositorio estatico, no en el i1. La model card incluye la lista completa de tipos de cuantizacion generados, desde IQ1_S hasta Q6_K.
+Tampoco se documentan el volumen de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF, DPO o ajuste por instrucciones. La model card del cuantizador se limita a indicar que las cuantizaciones son de tipo "weighted/imatrix" y que se han generado con la herramienta de mradermacher a partir de los pesos originales, con un formato de conversión "hf" y cuantización de tensores de salida activada.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, con orientacion a acompanamiento emocional y conversacion de caracter general.
-- Soporte de vision indicado de forma indirecta: la model card senala que se trata de un modelo de vision y que los ficheros mmproj se alojan en el repositorio estatico, con la salvedad "si existen".
-- Ejecucion on-device: el modelo esta etiquetado explicitamente para despliegue local en dispositivo.
-- Conversacion multi-turno orientada a chat de acompanamiento, segun las etiquetas de emotional-support y companion.
-- Capacidad de razonamiento, codigo, matematicas o tool calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y multi-step reasoning: no disponible.
-- Capacidades multilingues: no, el unico idioma declarado es el ingles.
-- Modo thinking explicito: no disponible.
+- Generación de texto conversacional orientada a soporte emocional y acompañamiento.
+- Conversación multi-turno con etiquetas declaradas de "emotional-support" y "companion".
+- Capacidad multimodal de visión según la model card del cuantizador (los ficheros mmproj, si existen, se alojan en el repositorio estático de cuantizaciones).
+- Despliegue on-device gracias a las cuantizaciones GGUF de bajo peso.
+- Compatibilidad con endpoints según la etiqueta "endpoints_compatible".
+- Soporte de tool calling, agentes o razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades matemáticas o de código: no disponible en la información proporcionada.
+- Multilingüismo: limitado al inglés según la etiqueta de idioma.
 
 ## Casos de uso
 
-- Asistente de acompanamiento emocional en local: el modelo puede mantener conversaciones de apoyo en multiples turnos dentro de una aplicacion de escritorio o movil, con todos los datos permaneciendo en el dispositivo gracias al formato GGUF y a su tamano reducido.
-- Aplicaciones de bienestar con requisitos de privacidad: dado que el modelo esta pensado para ejecucion on-device, encaja en productos que tratan texto sensible (diarios personales, registros de animo) y no pueden enviar datos a APIs externas.
-- Chatbot de compania con personalidad: permite desplegar un asistente conversacional con un tono empatico definido mediante prompting, sin coste por token de inferencia.
-- Prototipado rapido de productos conversacionales: al ser un modelo pequeno y con licencia Apache 2.0, sirve para validar flujos de producto antes de escalar a modelos mayores.
-- Ajuste fino de estilo o personaje sobre el modelo base: la publicacion del fichero imatrix permite al usuario generar sus propias cuantizaciones a partir de una version afinada con LoRA, manteniendo la calidad relativa de los pesos.
-- Distribucion de modelos en equipos sin GPU dedicada: las variantes Q4_K_M o Q5_K_M permiten inferencia en CPU con llama.cpp u Ollama en portatiles convencionales.
-- Evaluacion comparativa de tecnicas de cuantizacion: el repositorio i1 y el estatico del mismo modelo permiten medir la diferencia de perplejidad entre cuantizaciones ponderadas y estaticas con hardware domestico.
+- Asistente de acompañamiento emocional en local: el modelo puede mantener conversaciones de apoyo en inglés sobre hardware de consumo usando la cuantización Q4_K_M (3,5 GB), adecuada para aplicaciones de bienestar que requieren privacidad y no dependen de la nube.
+- Chatbot de escritorio integrado en aplicaciones de diario personal: con cuantizaciones IQ3_M o Q4_K_S (3,2-3,5 GB) se puede empaquetar dentro de una app de escritorio que funcione sin conexión y procese entradas de texto del usuario.
+- Prototipado rápido de interfaces conversacionales: las variantes IQ2 permiten probar flujos de diálogo en portátiles con 8 GB de RAM o GPUs integradas antes de escalar a un modelo mayor.
+- Investigación sobre sesgos y seguridad en modelos de acompañamiento: al ser Apache 2.0 y ejecutable en local, facilita auditorías reproducibles de respuestas en dominios sensibles sin enviar datos a terceros.
+- Evaluación de cuantizaciones: el repositorio incluye un fichero imatrix y una escala completa de cuantizaciones, lo que permite comparar la degradación de calidad entre IQ1_S y Q6_K en tareas conversacionales.
+- Despliegue en dispositivos edge con llama.cpp: la variante Q4_K_M (3,5 GB) es la recomendada por el autor por su equilibrio entre velocidad y calidad, y encaja en mini-PCs o Raspberry Pi con suficiente RAM.
+- Integración en pipelines de generación aumentada por recuperación (RAG) para documentación de bienestar: el modelo puede resumir y reformular fragmentos recuperados en tono empático, aunque el contexto máximo no está documentado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye evaluaciones de MMLU, HumanEval, GSM8K ni de tareas de acompanamiento emocional, y no se dispone de comparaciones numericas con el modelo base en precision completa.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (valores aproximados para un modelo de ~4B en GGUF; el repositorio no publica el tamano por fichero, solo el imatrix de 0,1 GB):
-  - IQ1/IQ2: en torno a 1,5-2,0 GB de pesos.
-  - Q3_K_M: en torno a 2,0-2,2 GB.
-  - Q4_K_M: en torno a 2,5-2,8 GB.
-  - Q5_K_M: en torno a 2,9-3,2 GB.
-  - Q6_K: en torno a 3,3-3,5 GB.
-  - Sumar entre 0,5 y 2 GB adicionales de cache KV segun la longitud de contexto configurada y el numero de capas.
-- GPU recomendadas: cualquier GPU con 6 GB o mas de VRAM (RTX 3060, RTX 4060, RTX 2070 y superiores) ejecuta las cuantizaciones Q4 y Q5 con comodidad. Una RTX 4090, A100 o H100 no aportan ventaja de memoria relevante a este tamano; su beneficio es de throughput y de contexto largo.
-- Cabe en GPU de consumo: si. Las cuantizaciones Q4_K_M y Q5_K_M caben en 4-6 GB de VRAM, por lo que es viable en iGPU con memoria unificada, en portatiles con GPU discreta de gama media y en mini-PC de 8-16 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp y servidores compatibles con GGUF. Para el modelo base en formato Hugging Face: transformers, vLLM o TGI. El repositorio tiene la etiqueta endpoints_compatible.
-- Latencia y throughput estimados: no disponibles. Dependen de la cuantizacion, del backend y del hardware; no se aportan mediciones en la informacion proporcionada.
+- VRAM estimada para inferencia: aproximadamente el tamaño del fichero GGUF más el contexto y el overhead de llama.cpp. Las cuantizaciones oscilan entre 2,4 GB (IQ1_S) y 3,9 GB (Q6_K).
+- GPU recomendadas: cualquier GPU con al menos 4-6 GB de VRAM para las variantes Q4/Q5; RTX 3060, RTX 4060, RTX 4090, A100 o H100 pueden ejecutar la variante Q6_K con holgura.
+- Cabe en GPU de consumo: sí, en la mayoría de tarjetas modernas con 6 GB o más; las variantes IQ2 e IQ3 pueden ejecutarse en GPUs de 4 GB e incluso en CPU con RAM suficiente.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; el autor remite a las guías de TheBloke para el uso de ficheros GGUF multiparte.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos publicados del modelo Lythri en materia de contexto, benchmarks o parametros verificados, por lo que la comparacion se limita a caracteristicas generales de modelos de tamano y proposito similares. Las cifras de los modelos alternativos provienen del conocimiento general del ecosistema y no de la informacion proporcionada.
-
-| Modelo | Parametros | Contexto | Licencia | Orientacion | Datos de rendimiento |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Lythri-4B-A2B (i1-GGUF) | 4B declarados (A2B, no verificado) | no disponible | Apache 2.0 | Acompanamiento emocional, on-device | no disponible |
-| Qwen2.5-3B-Instruct | 3B | 32K | Apache 2.0 | Proposito general, tool calling | no disponibles en esta ficha |
-| Llama-3.2-3B-Instruct | 3B | 128K | Llama 3.2 Community License | Proposito general, dialogos | no disponibles en esta ficha |
-| Gemma-2-2B-it | 2B | 8K | Gemma Terms of Use | Proposito general, dialogos | no disponibles en esta ficha |
+| Lythri-4B-A2B-i1-GGUF | 4,63B | no disponible | Apache 2.0 | GGUF | Cuantizaciones imatrix, orientado a soporte emocional y on-device |
+| Lythri-4B-A2B (original) | 4,63B | no disponible | Apache 2.0 | safetensors | Pesos completos del modelo base |
+| Lythri-4B-A2B-GGUF (estático) | 4,63B | no disponible | Apache 2.0 | GGUF | Cuantizaciones estáticas del mismo modelo, sin imatrix |
 
-Diferencias relevantes: frente a las alternativas, la principal ventaja de Lythri-4B-A2B es su licencia Apache 2.0 combinada con una especializacion declarada en acompanamiento emocional y un catalogo amplio de cuantizaciones con imatrix; sus desventajas documentadas son el soporte exclusivo de ingles, la ausencia de datos de contexto y de benchmarks y un numero de descargas nulo que impide contrastar su calidad con la comunidad.
+No se dispone de información sobre modelos alternativos de la misma categoría (soporte emocional de ~4B) en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- No hay datos de entrenamiento, composicion del dataset ni proceso de alineamiento, por lo que no puede evaluarse el sesgo ni el comportamiento en dominios sensibles.
-- Riesgo de alucinacion no cuantificado: al ser un modelo conversacional sin benchmarks publicados, se desconoce su tasa de error factual.
-- Uso en contextos de salud mental: un modelo etiquetado como emotional-support no sustituye la atencion profesional; en produccion conviene anadir guardarrailes, deteccion de crisis y derivacion a recursos humanos.
-- Riesgo de complacencia (sycophancy): los modelos afinados para acompanamiento tienden a validar al usuario en lugar de corregirlo, lo que puede ser problematico en aplicaciones de consejo.
-- Idioma: unicamente ingles declarado; el rendimiento en castellano no esta garantizado ni documentado.
-- Licencia: Apache 2.0 en este repositorio, lo que permite uso comercial, pero conviene verificar la licencia efectiva del modelo base Lythri/Lythri-4B-A2B, ya que la ficha del cuantizador no la reproduce.
-- Incoherencia de metadatos: el recuento de parametros reportado (694.291) no concuerda con la nomenclatura 4B; tratar cualquier cifra de tamano como no fiable hasta verificarla en los ficheros reales.
-- Contenido del repositorio: la tabla de la model card solo lista el fichero imatrix (0,1 GB); las cuantizaciones utilizables deben descargarse del repositorio estatico Lythri-4B-A2B-GGUF. Verificar antes de integrar.
-- Vision: la model card indica que es un modelo de vision con la salvedad "si existen" ficheros mmproj; la capacidad multimodal no esta confirmada.
-- Ausencia de validacion comunitaria: 0 descargas y 0 likes en el momento de la consulta, sin informes externos de calidad o estabilidad.
+- El modelo está entrenado y etiquetado únicamente para inglés; no se garantiza un rendimiento adecuado en castellano u otros idiomas.
+- Al tratarse de un modelo de soporte emocional, existe riesgo de respuestas inapropiadas en situaciones de crisis; no debe usarse como sustituto de atención psicológica profesional.
+- Riesgo de alucinación inherente a los modelos de lenguaje; no se han publicado evaluaciones de fidelidad factual.
+- Las cuantizaciones de muy baja precisión (IQ1_S, IQ1_M, IQ2_XXS) degradan notablemente la calidad, según advierte el propio autor en la tabla de cuantizaciones.
+- No se documentan la longitud de contexto ni el comportamiento en conversaciones largas, lo que dificulta planificar despliegues con ventanas extensas.
+- Aunque la licencia es Apache 2.0 y permite uso comercial, la ausencia de documentación sobre el dataset de entrenamiento impide evaluar posibles sesgos o problemas de procedencia de datos.
+- La mención a capacidades de visión no está confirmada en el repositorio de cuantizaciones imatrix; los ficheros mmproj, si existen, se alojan en el repositorio estático, por lo que el soporte multimodal de esta publicación concreta no está garantizado.
 
 ## Enlaces
 
-- Repositorio Hugging Face (cuantizaciones i1 con imatrix): https://huggingface.co/mradermacher/Lythri-4B-A2B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Lythri-4B-A2B-i1-GGUF
 - Modelo base: https://huggingface.co/Lythri/Lythri-4B-A2B
-- Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/Lythri-4B-A2B-GGUF
-- Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#Lythri-4B-A2B-i1-GGUF
-- Peticiones de cuantizacion y FAQ de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Perfil del autor: https://huggingface.co/mradermacher/models
-- Modelo relacionado de mayor tamano: https://huggingface.co/mradermacher/Lythri-7B-A4B-GGUF
-- Guia de uso de ficheros GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Empresa responsable de la infraestructura de cuantizacion: https://www.nethype.de/
+- Cuantizaciones estáticas: https://huggingface.co/mradermacher/Lythri-4B-A2B-GGUF
+- Página de descargas del cuantizador: https://hf.tst.eu/model#Lythri-4B-A2B-i1-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Gráfico de calidad de cuantizaciones de ikawrakow: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- DOI del modelo: https://doi.org/10.5281/zenodo.23179311

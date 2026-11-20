@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "MagmaStudios/VERO-Lkonshu-V2",
+  "slug": "magmastudios-vero-lkonshu-v2",
+  "author": "MagmaStudios",
+  "url": "https://huggingface.co/MagmaStudios/VERO-Lkonshu-V2",
+  "created_at": "2026-11-20T00:12:28.000Z",
+  "updated_at": "2026-11-20T02:07:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "es",
+    "en",
+    "base_model:MagmaStudios/VERO-Lkonshu-V2",
+    "base_model:finetune:MagmaStudios/VERO-Lkonshu-V2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1001053824,
+  "parameters_human": "1.00B",
+  "storage_bytes": 6712167812,
+  "storage_human": "6.7 GB",
+  "context_length": null,
+  "base_model": "MagmaStudios/VERO-Lkonshu-V2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

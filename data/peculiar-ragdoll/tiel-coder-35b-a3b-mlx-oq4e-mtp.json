@@ -62,31 +62,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e · Hugging Face",
-      "url": "https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF-MTP · Hugging Face",
-      "url": "https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF-MTP",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "The AI founders who walked away from Bezos-backed Prometheus to model ...",
-      "url": "https://www.reuters.com/business/ai-founders-who-walked-away-bezos-backed-prometheus-model-universe-2026-08-25/",
-      "snippet": "A research duo, once pitched to lead the Jeff Bezos-backed Project Prometheus, unveiled what they&#x27;ve built on their own: an AI model that can take in and produce information so vast that a lone ..."
-    },
-    {
-      "title": "Peculiar-ragdoll - Find Top AI Models on Hugging Face",
-      "url": "https://www.aimodels.fyi/creators/huggingFace/peculiar-ragdoll",
-      "snippet": "Looking for Peculiar-ragdoll&#x27;s top AI models? Browse their full Hugging Face collection of 3 models. Explore AI models and contributions by Peculiar-ragdoll on Huggingface."
-    },
-    {
-      "title": "Free AI 3D Model Generator - MeshGPT",
-      "url": "https://meshgpt.io/",
-      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
-    }
-  ]
+  "sources": []
 }

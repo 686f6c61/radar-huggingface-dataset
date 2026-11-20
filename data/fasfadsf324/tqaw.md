@@ -2,87 +2,75 @@
 
 ## Resumen
 
-`fasfadsf324/tqaw` es un modelo publicado en Hugging Face bajo la etiqueta de pipeline `table-question-answering` y arquitectura TAPAS, la variante de BERT disenada por Google Research para responder preguntas formuladas en lenguaje natural sobre tablas. El autor del repositorio es el usuario `fasfadsf324` y la model card se limita a la palabra "probe", sin documentacion tecnica adicional, lo que sugiere un artefacto de prueba o un checkpoint de experimentacion mas que un modelo listo para produccion.
+`fasfadsf324/tqaw` es un repositorio de modelo publicado en Hugging Face por el usuario `fasfadsf324` bajo licencia MIT. El repositorio está etiquetado con los tags `gguf` y `llama`, y declara el pipeline `table-question-answering`, lo que sugiere una vocación de respuesta a preguntas sobre tablas. El tamaño del repositorio aparece como 0.0 GB, lo que indica que no contiene pesos de modelo descargables o que estos no se han subido, y no se dispone de información sobre arquitectura, número de parámetros ni longitud de contexto.
 
-El modelo se distribuye con licencia Apache 2.0 y pesos en formato compatible con la libreria `transformers`, e incluye la etiqueta `endpoints_compatible`, lo que indica que puede servirse a traves de la infraestructura de Inference Endpoints de Hugging Face. No se declaran idiomas soportados, parametros, longitud de contexto ni datos de entrenamiento en la informacion disponible.
+El modelo acumula 1591 descargas y 0 likes, con creación el 13 de noviembre de 2026 y última actualización el 14 de noviembre de 2026. La librería declarada es `transformers`, aunque la presencia del tag `gguf` apunta a una posible conversión a formato de cuantización para inferencia local, sin que exista documentación que lo confirme.
 
-Su relevancia es limitada: se trata de un repositorio sin descargas ni interacciones y sin metricas publicadas, por lo que cualquier evaluacion seria debe realizarse por cuenta del usuario antes de considerarlo en un flujo de trabajo real. Resulta util, eso si, como referencia de como se estructura un checkpoint TAPAS para tareas de table QA dentro del ecosistema `transformers`.
+No se ha publicado ninguna model card, paper, blog ni conjunto de benchmarks asociado a este repositorio en la información disponible. Todos los datos técnicos que no figuran explícitamente se indican como "no disponible".
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | TAPAS (transformer encoder tipo BERT adaptado a table question answering) |
+| Arquitectura | no disponible |
 | Parametros totales | no disponible |
-| Parametros activos | no aplica (no es un modelo MoE) |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
+| Tipos de cuantizacion | no disponible (el tag `gguf` sugiere cuantización GGUF, sin detalle) |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | no disponible (compatible con `transformers`) |
+| Licencia | MIT |
+| Formato de pesos | no disponible (tag `gguf`; repositorio de 0.0 GB) |
 
 ## Arquitectura y entrenamiento
 
-La etiqueta `tapas` en el repositorio identifica la familia arquitectonica: un encoder transformer bidireccional derivado de BERT que incorpora embeddings adicionales para representar la estructura tabular (posiciones de fila y columna, y un embedding de rank para la comparacion numerica entre celdas). Este diseno permite formular la respuesta como un problema de seleccion de celdas o de agregacion sobre la tabla, en lugar de generacion libre de texto.
+No se dispone de información sobre la arquitectura del modelo. El tag `llama` sugiere una familia de transformer tipo Llama, y el tag `gguf` indica un posible empaquetado en formato GGUF para inferencia con llama.cpp, pero ninguno de estos extremos está confirmado por documentación del repositorio. El pipeline declarado es `table-question-answering`, lo que orientaría el uso hacia tareas de QA sobre tablas estructuradas.
 
-No se dispone de informacion sobre el numero de parametros, el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de ajuste fino supervisado o preferencias (RLHF/DPO). La model card no aporta ninguna descripcion tecnica mas alla de los metadatos YAML.
+No hay datos sobre el volumen de tokens de entrenamiento, la composición del dataset, ni sobre si se aplicaron técnicas de alineación como RLHF, DPO o SFT. Tampoco se documentan innovaciones técnicas como decodificación especulativa, atención lineal o arquitecturas híbridas. Toda esta sección queda como no disponible.
 
 ## Capacidades
 
-- Respuesta a preguntas en lenguaje natural sobre tablas estructuradas (table question answering).
-- Seleccion de celdas y agregaciones simples sobre columnas, segun el paradigma TAPAS.
-- Inferencia a traves de la API de `transformers` con `pipeline("table-question-answering")`.
-- Compatibilidad declarada con los endpoints gestionados de Hugging Face.
-- Generacion de texto libre, codigo, matematicas, vision, audio y tool calling: no disponibles segun la informacion del repositorio.
-- Capacidades multilingues: no disponibles.
+- No se han documentado capacidades específicas del modelo en la información disponible.
+- El pipeline declarado (`table-question-answering`) sugiere respuesta a preguntas sobre tablas, sin confirmación documental.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: no disponible (el campo de idiomas aparece vacío).
+- Capacidades especiales (modo thinking, visión, audio): no disponible.
 
 ## Casos de uso
 
-- Extraccion de respuestas sobre hojas de calculo: dado un CSV con datos de ventas, formular preguntas del tipo "cual fue el importe total del trimestre" y obtener la celda o agregacion correspondiente. Adecuado porque TAPAS esta disenado especificamente para operar sobre representaciones tabulares.
-- Consulta de tablas financieras en informes: localizar cifras concretas (beneficio neto, deuda) en tablas de resultados sin necesidad de parseo manual, aprovechando la codificacion de posiciones de fila y columna.
-- Asistente sobre catalogos de producto: responder preguntas como "que modelo tiene mayor autonomia" sobre una tabla de especificaciones tecnicas.
-- Normalizacion y validacion de datos tabulares: usar el modelo para identificar celdas relevantes en procesos de enriquecimiento o control de calidad de datasets.
-- Prototipado de interfaces de consulta en lenguaje natural: integrar el checkpoint en un notebook o demo de Gradio para validar el flujo de table QA antes de invertir en un modelo mayor.
-- Pruebas de integracion en pipelines `transformers`: al ser un artefacto ligero y con licencia permisiva, sirve para validar el cableado de `pipeline("table-question-answering")` en un entorno de CI sin coste de licencia.
-
-En todos los casos, la ausencia de benchmarks y de documentacion obliga a validar la calidad de las respuestas con un conjunto de evaluacion propio antes de desplegar.
+- Respuesta a preguntas sobre tablas: el pipeline declarado apunta a este uso, consistente en recibir una tabla y una pregunta en lenguaje natural y devolver la respuesta extraída de la tabla. La idoneidad no puede validarse sin model card ni benchmarks.
+- Extracción de datos de informes tabulares: se podría emplear para consultar hojas de cálculo o informes financieros estructurados, siempre que se verifique previamente el comportamiento real del modelo.
+- Prototipado rápido en local: la presencia del tag `gguf` permitiría, en teoría, desplegar el modelo con llama.cpp u Ollama en entornos sin GPU dedicada, aunque el repositorio de 0.0 GB no confirma que los pesos estén disponibles.
+- Integración en pipelines de `transformers`: al declarar la librería `transformers`, podría cargarse mediante `pipeline("table-question-answering")`, sujeto a que los pesos existan en el repositorio.
+- Evaluación comparativa interna: útil como baseline experimental en pruebas de QA tabular, dado su carácter de repositorio de bajo perfil y licencia permisiva.
+- Docencia y experimentación: la licencia MIT facilita su uso en entornos académicos para estudiar pipelines de QA sobre tablas, siempre con verificación previa de los artefactos disponibles.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible; al no conocerse el numero de parametros no puede calcularse con rigor. Para un TAPAS de tamano base (del orden de 110 M de parametros, referencia habitual de la familia) la inferencia cabria en GPUs de consumo con 4-8 GB de VRAM, pero este dato no esta confirmado para este checkpoint.
-- GPU recomendadas: no disponible. Cualquier GPU con soporte CUDA y memoria suficiente para el checkpoint real seria valida.
-- Cabe en GPU de consumo: no confirmado.
-- Opciones de despliegue: `transformers` (libreria declarada), endpoints compatibles de Hugging Face; vLLM, llama.cpp, Ollama y TGI no estan declarados como soportados.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: no disponible (el repositorio no expone pesos ni tamaño de parámetros).
+- GPU recomendadas: no disponible.
+- Compatibilidad con GPU de consumo: no determinable sin conocer el número de parámetros.
+- Opciones de despliegue: potencialmente `transformers` (pipeline declarado) y llama.cpp / Ollama si los artefactos GGUF están presentes, sin confirmación.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| `fasfadsf324/tqaw` | no disponible | no disponible | table QA | Apache 2.0 | Hugging Face, 0 descargas |
-| `google/tapas-base-finetuned-wtq` | no disponible en esta ficha | no disponible | table QA (WikiTableQuestions) | Apache 2.0 | Hugging Face, ampliamente utilizado |
-| `google/tapas-base-finetuned-sqa` | no disponible en esta ficha | no disponible | table QA (Sequential QA) | Apache 2.0 | Hugging Face, ampliamente utilizado |
-| `microsoft/tapex-base` | no disponible en esta ficha | no disponible | table QA | MIT | Hugging Face |
-
-La comparativa se limita a la familia y la tarea, ya que no hay datos de rendimiento publicados para este checkpoint. Los modelos de Google y Microsoft citados cuentan con model cards documentadas y resultados reportados en sus respectivos papers, a diferencia de este repositorio.
+No disponible. No se han identificado modelos comparables en la información proporcionada, dado que se desconoce el tamaño, la arquitectura y el rendimiento real del modelo.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card solo contiene la palabra "probe", sin descripcion de entrenamiento, datos ni evaluacion.
-- Cero descargas y cero interacciones: no hay evidencia de uso ni de validacion por parte de la comunidad.
-- Riesgo alto de alucinacion o de seleccion incorrecta de celdas al no conocerse el ajuste fino aplicado.
-- Idiomas soportados no declarados; no puede asumirse un buen rendimiento en castellano.
-- Longitud de contexto y limites de columnas/filas de la tabla no disponibles.
-- Licencia Apache 2.0 permite uso comercial, pero la falta de garantias sobre el origen de los datos de entrenamiento es un caveat relevante para produccion.
-- No debe emplearse como componente critico sin una evaluacion propia sobre el dominio objetivo.
+- El repositorio aparece con un tamaño de 0.0 GB, lo que sugiere que los pesos del modelo no están efectivamente alojados o que no son descargables; conviene verificar los archivos antes de cualquier uso.
+- No existe model card, paper ni documentación técnica asociada, por lo que no se puede validar el comportamiento del modelo.
+- El campo de idiomas está vacío: se desconoce el soporte multilingüe real.
+- El pipeline declarado (`table-question-answering`) no está respaldado por documentación; podría no corresponder a la funcionalidad real.
+- Riesgo de alucinación y sesgos: no evaluable sin benchmarks ni datos de entrenamiento.
+- Licencia MIT: permite uso comercial y modificación, pero al no haber garantías documentadas sobre procedencia de datos, el usuario asume el riesgo de compliance.
+- El autor (`fasfadsf324`) no presenta historial verificable en la información disponible; se recomienda cautela antes de integrarlo en producción.
 
 ## Enlaces
 
 - Repositorio en Hugging Face: https://huggingface.co/fasfadsf324/tqaw
-- Paper de TAPAS (Google Research): https://arxiv.org/abs/2004.02349
-- Documentacion de `transformers` sobre table question answering: https://huggingface.co/docs/transformers/tasks/table-question-answering
-- Modelo de referencia `google/tapas-base-finetuned-wtq`: https://huggingface.co/google/tapas-base-finetuned-wtq

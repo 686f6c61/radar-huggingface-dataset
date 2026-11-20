@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 1959,
+  "downloads_30d": 1970,
   "trending_score": 0,
   "parameters": 1302429280,
   "parameters_human": "1.30B",
@@ -46,16 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "CladeTeam/CENO-1B-131k · Hugging Face",
-      "url": "https://huggingface.co/CladeTeam/CENO-1B-131k",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "CENO | Genome-scale world model",
-      "url": "https://cladeteam.github.io/ceno.github.io/",
-      "snippet": "CENO is a genome-scale world model that unifies long-context sequence understanding, variant-effect prediction, and regulatory sequence design in one autoregressive model."
-    }
-  ]
+  "sources": []
 }

@@ -1,82 +1,118 @@
 # Prahaladha/hima
 
 ## Resumen
-Hima es un modelo abierto de reconocimiento automático del habla (ASR) desarrollado por Prahaladha que convierte voz en texto para 11 lenguas de la India y para inglés. No es un modelo monolítico: combina el codificador de audio de Qwen3-ASR-1.7B, un puente pequeño nuevo y un decodificador basado en Gemma 3 270M, con una capa de voto que solo se usa durante el entrenamiento. El checkpoint publicado ocupa aproximadamente 2,4 GB y está pensado para clips de 1 a 30 segundos.
 
-El proyecto es relevante porque aborda un hueco práctico: ASR abierto para asamés, bengalí, guyaratí, hindi, canarés, malayalam, maratí, oriya, panyabí, tamil, telugu e inglés con un coste de inferencia bajo y ejecución local. Sin embargo, el entrenamiento sigue en marcha y el autor lo describe explícitamente como un checkpoint de investigación, no como un producto.
+Hima-ASR es un modelo compacto de 0,46 mil millones de parámetros desarrollado por Prahaladha que combina reconocimiento automático del habla (ASR) con una cabeza de decisión capaz de responder preguntas en lenguaje natural sobre el contenido paralingüístico del audio: emoción, intención del interlocutor, tema, urgencia, idioma y hablante. Cubre once lenguas indias (asamés, bengalí, gujarati, hindi, kannada, malayo, maratí, oriya, panyabí, tamil, telugu) y el inglés, e incluye soporte para code-switching.
 
-La información disponible no incluye el recuento total de parámetros, la composición del dataset ni resultados de benchmarks cerrados. El modelo no recibe la lengua de entrada como indicación, por lo que puede producir la transcripción en el alfabeto de otra lengua.
+El modelo se construye por fine-tuning sobre Qwen/Qwen3-ASR-1.7B y google/gemma-3-270m, y se distribuye con una tabla de piezas recortada a 63.335 tokens (0,46B) junto a una variante `full-vocab` de 262.144 piezas (0,59B). Su propuesta diferencial es unificar transcripción y clasificación en una sola pasada de audio: el codificador se ejecuta una vez y tanto el escritor como la cabeza de decisión leen su salida, con latencias inferiores a medio segundo por clip en GPU de portátil.
+
+La relevancia actual radica en su despliegue versátil: versiones PyTorch, ONNX (fp32, int8, q4) y MLX (fp16, 8-bit) permiten ejecutarlo desde CPU hasta Apple Silicon, con velocidades declaradas de hasta 63x tiempo real en MLX fp16. Está pensado para entornos de atención al cliente, moderación y análisis de llamadas donde se necesita transcripción más señales de decisión en una única llamada.
 
 ## Especificaciones tecnicas
-| Parámetro | Valor |
+
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Speech-to-text modular: codificador de audio de Qwen3-ASR-1.7B + puente pequeño nuevo + decodificador Gemma 3 270M; capa de voto solo en entrenamiento |
-| Parámetros totales | No disponible; checkpoint de aproximadamente 2,4 GB y repositorio de 63,3 GB con varios checkpoints |
-| Parámetros activos | No aplica; no es un modelo MoE |
-| Longitud de contexto | No disponible; ventana de audio recomendada de 1 a 30 s; no se entrenó con clips de más de 30 s |
-| Tipos de cuantización | No disponible; no se publican variantes cuantizadas, solo pesos PyTorch |
-| Idiomas soportados | as, bn, gu, hi, kn, ml, mr, or, pa, ta, te, en (11 lenguas de la India e inglés) |
-| Licencia | Apache 2.0 para código, puente, capa de voto y cambios; Gemma 3 270M bajo Gemma Terms of Use; licencia compuesta apache-2.0-and-gemma |
-| Formato de pesos | PyTorch `.pt` (`full/step_N/model.pt`); `config.json`, `pieces.json`, `scores.json`; no safetensors ni GGUF |
+| Arquitectura | Encoder de audio con escritor autoregresivo y cabeza de decisión (fine-tuning de Qwen/Qwen3-ASR-1.7B y google/gemma-3-270m) |
+| Parametros totales | 459.713.255 (0,46B) en la variante `main`; 0,59B en `full-vocab` |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (clips de audio de 1 a 30 segundos) |
+| Tipos de cuantizacion | fp32, int8 (ONNX), q4 (ONNX), fp16 (MLX), 8-bit (MLX) |
+| Idiomas soportados | as, bn, gu, hi, kn, ml, mr, or, pa, ta, te, en |
+| Licencia | apache-2.0-and-gemma (ver NOTICE) |
+| Formato de pesos | safetensors; ONNX y MLX en repositorios separados |
+| Entrada | audio mono a 16 kHz, 1 a 30 segundos por clip |
+| Cabeza de decisión | 17,5M parámetros |
+| Tamaño del repositorio | 2,2 GB |
 
 ## Arquitectura y entrenamiento
-Hima se organiza en cuatro piezas. El codificador de audio, llamado "ears" en la model card, se hereda de Qwen3-ASR-1.7B y transforma la señal de voz en representaciones. Un puente nuevo y pequeño adapta esas representaciones al decodificador, que parte de Gemma 3 270M y genera el texto pieza a pieza. La capa de voto es un componente auxiliar que solo se utiliza durante el entrenamiento.
 
-El entrenamiento sigue en ejecución y se publica un checkpoint nuevo cada 10.000 pasos; el `config.json` raíz apunta al más reciente. Cada checkpoint incluye `scores.json` con la proporción de letras erróneas en un conjunto held-out por lengua, pero no se proporcionan cifras en la información consultada. No se especifican el número de tokens, la composición del dataset, el uso de RLHF/DPO ni los detalles del puente. La innovación principal es la reutilización de un codificador y un decodificador preentrenados con un puente ligero, lo que reduce el coste frente a entrenar un ASR completo desde cero.
+Hima-ASR sigue un esquema encoder-decoder para ASR con un codificador de audio compartido que alimenta dos cabezas: un escritor (decoder autoregresivo con tabla de piezas de 63.335 tokens en la variante principal) y una cabeza de decisión de 17,5M parámetros que responde preguntas de opción múltiple, sí/no o escala, devolviendo una probabilidad por opción. El codificador se ejecuta una única vez por clip y ambas cabezas leen su representación, lo que permite obtener transcripción y decisiones en una sola pasada.
+
+El modelo parte de Qwen/Qwen3-ASR-1.7B y google/gemma-3-270m mediante fine-tuning, aunque la información disponible no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO. La innovación técnica destacable es la integración de "speech-to-decision" en el mismo modelo que transcribe, junto con la variante `full-vocab` que preserva la tabla de piezas original de 262.144 tokens a costa de 0,59B parámetros.
 
 ## Capacidades
-- Transcripción de voz a texto para clips cortos, con una ventana recomendada de 1 a 30 segundos.
-- Cobertura de 11 lenguas de la India y inglés: asamés, bengalí, guyaratí, hindi, canarés, malayalam, maratí, oriya, panyabí, tamil, telugu e inglés.
-- Salida en escritura nativa de la lengua detectada, aunque sin identificación explícita del idioma.
-- Ejecución local mediante un script de transcripción y pesos PyTorch.
-- Selección de checkpoints por número de paso para comparar versiones del entrenamiento.
-- No se documenta traducción, diarización de hablantes, marcas de tiempo, streaming ni puntuación garantizada.
-- No se documenta soporte de tool calling, function calling, agentes o razonamiento multi-paso; es un modelo específico de ASR.
-- No dispone de visión, generación de audio, modo de pensamiento ni capacidades multimodales más allá de voz a texto.
+
+- Transcripción de voz a texto en once lenguas indias e inglés, con detección automática de idioma cuando no se especifica.
+- Estilos de salida `native` (escritura propia del idioma) y `mixed` (palabras inglesas en caracteres latinos) para escenarios de code-switching.
+- Procesamiento por lotes de clips (`batch_size` configurable, por defecto 16).
+- Cabeza de decisión que responde preguntas en inglés sencillo sobre el audio: emoción (calma, enfado, confusión, prisa, alegría), intención del interlocutor, tema, urgencia y petición de hablar con un humano.
+- Preguntas de tipo opción múltiple, sí/no y escala, con probabilidad por opción.
+- Detección de hablante y reconocimiento de emoción (según etiquetas del modelo).
+- Ejecución en GPU, CPU (ONNX Runtime) y Apple Silicon (MLX), con variantes cuantizadas.
+- No se documentan capacidades de tool calling, agentes ni visión.
 
 ## Casos de uso
-- Transcripción de notas de voz cortas en atención al cliente: el modelo puede convertir mensajes de 1 a 30 segundos en texto para su clasificación posterior, gracias a su ventana de audio y a su cobertura de lenguas índicas.
-- Subtitulado o documentación de clips breves: útil para generar borradores de transcripción de vídeos cortos, entrevistas o píldoras formativas, con revisión humana obligatoria por tratarse de un checkpoint de investigación.
-- Encuestas y recogida de datos en campo: permite transcribir respuestas de voz breves en múltiples lenguas de la India en dispositivos locales, lo que facilita su análisis sin depender de servicios en la nube.
-- Auditoría de calidad en centros de llamadas: puede convertir fragmentos cortos de llamadas en texto para búsqueda y revisión, aunque no ofrece diarización ni marcas de tiempo.
-- Búsqueda por voz en aplicaciones para usuarios de lenguas índicas: adecuado para prototipos de dictado y comandos cortos, con la cautela de que el modelo no recibe la lengua como entrada.
-- Documentación lingüística y creación de corpus: sirve para pretranscribir grabaciones cortas de campo y acelerar la anotación manual en lenguas con pocos recursos.
-- Accesibilidad y dictado personal: puede utilizarse en herramientas locales de dictado de frases cortas para personas con movilidad reducida, siempre que se valide la precisión por lengua.
-- Evaluación comparativa de ASR índico: los checkpoints periódicos permiten estudiar la evolución del entrenamiento y comparar el comportamiento entre lenguas con `scores.json`.
+
+- Atención al cliente telefónica: transcribir la llamada y, en la misma pasada, clasificar la intención del cliente ("pagará", "ya pagó", "no puede pagar ahora") y la urgencia, gracias a la cabeza de decisión que devuelve probabilidades por opción.
+- Enrutamiento inteligente de llamadas: usar la pregunta "¿el hablante pide hablar con un humano?" con tipo `yesno` para derivar a un agente humano cuando la probabilidad supera un umbral.
+- Análisis de sentimiento y tono en centros de contacto: clasificar la emoción del interlocutor (enfado, confusión, prisa) para priorizar casos críticos o activar protocolos de escalado.
+- Transcripción multilingüe para subtitulado: generar subtítulos en once lenguas indias e inglés con detección automática de idioma, útil en plataformas de contenido regional.
+- Moderación de audio en comunidades: detectar tema y tono en clips cortos (1-30 s) para filtrar contenido sensible antes de su publicación.
+- Procesamiento en dispositivos sin GPU: desplegar la variante ONNX int8 (487 MB, 35x tiempo real) en servidores CPU o edge para transcripción por lotes de archivos de archivo histórico.
+- Análisis de llamadas de cobranza: combinar transcripción con decisiones de intención de pago y urgencia para generar informes estructurados por llamada.
+- Investigación lingüística en code-switching: usar el estilo `mixed` para estudiar préstamos del inglés en habla india con transcripciones que preservan la ortografía latina.
 
 ## Benchmarks y rendimiento
-No se han publicado resultados de benchmarks en la información disponible. El autor incluye `scores.json` con la proporción de letras erróneas por lengua en un conjunto held-out, pero no se proporcionan valores numéricos en la documentación consultada.
+
+Datos declarados por el autor (no verificados):
+
+| Modelo | Dataset | Métrica | Valor |
+|---|---|---|---|
+| Hima-ASR | FLEURS (12 idiomas), test | WER medio | 12,7 |
+| Hima-ASR | Kathbath (hindi), test | WER | 3,4 |
+| Hima-ASR | Lahaja (hindi), test | WER | 8,8 |
+
+Velocidades declaradas por el autor (factor multiplicador sobre tiempo real):
+
+| Plataforma | Versión | Tamaño | Velocidad |
+|---|---|---|---|
+| CPU | PyTorch | 920 MB | 16x |
+| CPU | ONNX fp32 | 1,8 GB | 25x |
+| CPU | ONNX int8 | 487 MB | 35x |
+| CPU | ONNX q4 | 360 MB | 31x |
+| Mac GPU | PyTorch | 920 MB | 21x |
+| Mac GPU | MLX fp16 | 1,0 GB | 63x |
 
 ## Requisitos de hardware
-- Pesos por checkpoint: aproximadamente 2,4 GB; el repositorio completo ocupa 63,3 GB por la acumulación de checkpoints.
-- VRAM estimada para inferencia: orientativamente 4-6 GB para un clip corto, a partir del tamaño de los pesos; no es una cifra confirmada por el autor.
-- GPU consumer: recomendable disponer de al menos 8 GB de VRAM, por ejemplo RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB, RTX 4070 o RTX 4090. En GPUs de 6 GB puede ser ajustado.
-- GPU de centro de datos: A100 o H100 para procesamiento por lotes; no se publican cifras de throughput.
-- CPU: la inferencia es posible con PyTorch, pero no se documenta latencia ni rendimiento.
-- Despliegue: el autor proporciona `scripts/transcribe.py` con PyTorch, torchaudio, `transformers>=5.13`, soundfile y huggingface_hub. No se documenta soporte para vLLM, llama.cpp, Ollama, TGI, ONNX o TensorRT.
-- Latencia y throughput: no disponibles.
+
+- VRAM estimada: no disponible de forma explícita; con 0,46B parámetros en fp32 el peso ronda 920 MB, por lo que en fp16 o int8 cabe holgadamente en cualquier GPU consumer.
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060 en adelante) es suficiente; el autor cita "laptop GPU" para latencias inferiores a 0,5 s por clip. Para lotes grandes, A100 o H100 no son necesarias pero aceleran el throughput.
+- Cabe en GPU consumer: sí, en todas las RTX y en Apple Silicon mediante MLX.
+- Despliegue: PyTorch con `transformers>=5.13`, ONNX Runtime (sin PyTorch, solo numpy y tokenizers) y MLX en Mac. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: menos de 0,5 s por clip en GPU de portátil; 16x tiempo real en CPU con PyTorch y hasta 63x en MLX fp16.
 
 ## Comparativa con modelos similares
-| Modelo | Parámetros | Contexto o ventana | Idiomas | Rendimiento | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Hima | No disponible; checkpoint de aproximadamente 2,4 GB | Audio de 1 a 30 s | 11 lenguas de la India e inglés | No disponible; sin benchmarks publicados en la información consultada | Apache 2.0 + Gemma Terms; licencia compuesta | Hugging Face; checkpoints de investigación por step |
-| Whisper large-v3 | 1,55B | Audio de 30 s | 99 idiomas | No disponible en esta ficha | MIT | Hugging Face y repositorio openai/whisper |
-| Qwen3-ASR-1.7B | 1,7B según el nombre del modelo | No disponible | No disponible | No disponible en esta ficha | Apache 2.0 | Hugging Face; usado como codificador de Hima |
+
+| Modelo | Parámetros | Idiomas | Contexto audio | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Hima-ASR | 0,46B (0,59B full-vocab) | 11 indias + inglés | 1-30 s por clip | apache-2.0-and-gemma | Hugging Face (PyTorch, ONNX, MLX) |
+| Whisper (variantes) | no disponible en la información | no disponible | no disponible | no disponible | no disponible |
+| Qwen3-ASR-1.7B (base) | 1,7B | no disponible | no disponible | no disponible | Hugging Face |
+| Gemma-3-270m (base) | 270M | no disponible | no disponible | no disponible | Hugging Face |
+
+La información proporcionada no incluye resultados de benchmarks de los modelos base ni de alternativas comparables, por lo que no es posible establecer una comparación cuantitativa de rendimiento.
 
 ## Limitaciones y advertencias
-- Es un checkpoint de investigación con entrenamiento en curso; el autor no reclama resultados finales ni calidad de producción.
-- El rendimiento varía mucho entre lenguas; es necesario consultar `scores.json` antes de evaluar una lengua concreta.
-- El modelo no recibe la lengua de entrada como indicación y a veces transcribe un clip en el alfabeto de otra lengua.
-- No se entrenó con clips de más de 30 segundos, por lo que las grabaciones largas deben dividirse.
-- No se documentan diarización, marcas de tiempo, streaming, puntuación garantizada ni normalización textual.
-- Riesgo de errores de sustitución, omisión e invención de texto, especialmente en nombres propios, números, cambios de código y audio ruidoso.
-- No se publica la composición del dataset; no se pueden evaluar sesgos por lengua, dialecto, género o variante regional.
-- La licencia es compuesta: el código y los componentes propios son Apache 2.0, pero Gemma 3 270M queda bajo Gemma Terms of Use, que restringen algunos usos. El checkpoint completo no es plenamente Apache 2.0.
-- El repositorio es grande y descarga aproximadamente 2,4 GB en la primera ejecución del script; conviene planificar almacenamiento y ancho de banda.
-- No hay garantías de seguridad ni de robustez para decisiones críticas; se recomienda revisión humana y validación por lengua antes de cualquier uso real.
+
+- Los resultados de benchmarks están declarados por el autor y marcados como no verificados (`verified: false`); deben tomarse con cautela.
+- La cobertura lingüística se limita a once lenguas indias e inglés; no se documenta soporte para otras lenguas.
+- La entrada de audio está restringida a clips de 1 a 30 segundos; no se especifica el comportamiento con audios más largos.
+- No se detalla la composición del dataset de entrenamiento ni posibles sesgos demográficos, lingüísticos o de dominio.
+- Riesgo de alucinación en la transcripción y en las decisiones: las probabilidades de la cabeza de decisión no deben interpretarse como certeza, especialmente en audio ruidoso o con acentos no representados.
+- La licencia es compuesta (`apache-2.0-and-gemma`), lo que puede imponer restricciones adicionales derivadas de Gemma; es necesario revisar el NOTICE antes de uso comercial.
+- El uso de `trust_remote_code=True` implica ejecutar código del autor, con el riesgo de seguridad asociado.
+- La cabeza de decisión responde a preguntas formuladas en inglés sencillo; no se documenta su comportamiento en otros idiomas de consulta.
+- No se documentan capacidades de tool calling, agentes ni integración con frameworks de orquestación.
 
 ## Enlaces
-- Hugging Face: https://huggingface.co/Prahaladha/hima
-- Repositorio de código y notas: https://github.com/Prahaladha-Reddy/hima
-- Aviso de licencia NOTICE: https://huggingface.co/Prahaladha/hima/blob/main/NOTICE
-- Gemma Terms of Use: https://ai.google.dev/gemma/terms
+
+- Modelo en Hugging Face: https://huggingface.co/Prahaladha/hima
+- Repositorio ONNX: https://huggingface.co/Prahaladha/hima-asr-ONNX
+- Repositorio MLX fp16: https://huggingface.co/Prahaladha/hima-asr-mlx
+- Repositorio MLX 8-bit: https://huggingface.co/Prahaladha/hima-asr-mlx-8bit
+- Aviso de licencia: https://huggingface.co/Prahaladha/hima-asr/blob/main/NOTICE
+- Modelo base Qwen3-ASR-1.7B: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
+- Modelo base Gemma-3-270m: https://huggingface.co/google/gemma-3-270m
+- Dataset FLEURS: https://huggingface.co/datasets/google/fleurs
+- Dataset Kathbath: https://huggingface.co/datasets/ai4bharat/Kathbath
+- Dataset Lahaja: https://huggingface.co/datasets/ai4bharat/Lahaja

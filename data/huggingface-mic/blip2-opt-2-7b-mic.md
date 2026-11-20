@@ -2,85 +2,91 @@
 
 ## Resumen
 
-`huggingface-mic/blip2-opt-2.7b-mic` no es un modelo entrenado, sino un *fixture* de test de 3,6 millones de parametros construido por el equipo de `huggingface-mic`. Reproduce la arquitectura `Blip2ForConditionalGeneration` del checkpoint real `Salesforce/blip2-opt-2.7b` (BLIP-2 con OPT-2.7B como modelo de lenguaje) pero con una configuracion reducida: 2 capas en el codificador visual, 2 en el Q-Former y 2 en el decodificador de texto. Los pesos son aleatorios (semilla 17) y los ficheros de procesador (tokenizer, `preprocessor_config.json`, etc.) se copian byte a byte del checkpoint original.
+`huggingface-mic/blip2-opt-2.7b-mic` no es un modelo funcional, sino un artefacto de prueba (fixture) construido por el equipo de `huggingface-mic` para validar la infraestructura de contratos de integracion de Transformers. Se deriva de `Salesforce/blip2-opt-2.7b`, un modelo vision-lenguaje de tipo BLIP-2 que combina un codificador visual con un Q-Former y un decodificador de texto OPT de 2.700 millones de parametros, y reproduce su misma arquitectura (`Blip2ForConditionalGeneration`) con una configuracion drasticamente reducida.
 
-El proposito es servir como artefacto de integracion para validar contratos de frameworks (por ejemplo, la integracion de Transformers) sin necesidad de descargar los ~15 GB del modelo real. El propio autor lo etiqueta como `test-artifact` y advierte explicitamente de que "no es un modelo usable": no genera subtitulos coherentes ni texto con sentido.
+El repositorio contiene unicamente 3.629.056 parametros con pesos aleatorios (semilla 17), sin entrenamiento alguno. Los ficheros de procesador (tokenizer, preprocessor, generation config) se copiaron byte a byte del checkpoint original para garantizar compatibilidad, y los pesos se guardan en float32, el dtype por defecto de `Salesforce/blip2-opt-2.7b`.
 
-Su relevancia practica es nula para inferencia o produccion; es util unicamente para desarrolladores de frameworks o pipelines que necesiten verificar compatibilidad de carga, nombres de tensores y comportamiento del procesador contra la familia BLIP-2. Cualquier evaluacion de calidad, benchmarks o capacidades debe hacerse sobre el modelo base `Salesforce/blip2-opt-2.7b`.
+Su relevancia es puramente de ingenieria: permite ejecutar y verificar flujos de carga, inferencia y gradientes en pipelines de integracion sin descargar ni ejecutar el modelo real de 2.700 millones de parametros. Esta etiquetado explicitamente como `test-artifact` para excluirlo de busquedas de modelos candidatos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BLIP-2 (`Blip2ForConditionalGeneration`): ViT + Q-Former + decodificador OPT, configuracion reducida (2 capas por bloque) |
-| Parametros totales | 3.629.056 (fixture reducido; el base real tiene ~2.700 millones) |
+| Arquitectura | `Blip2ForConditionalGeneration` (vision encoder + Q-Former + decodificador de texto OPT), con capas reducidas |
+| Parametros totales | 3.629.056 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (depende de la configuracion de OPT en el base; no especificado en la informacion) |
-| Tipos de cuantizacion | no disponible; pesos guardados en float32, con forward finito en float32, bfloat16 y float16 |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos en float32; el autor declara finitud en float32, bfloat16 y float16) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors (float32) |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura BLIP-2: un codificador de imagen tipo ViT congelado, un Q-Former que proyecta las representaciones visuales a un espacio de embeddings y un modelo de lenguaje congelado (OPT-2.7B en el checkpoint original) que genera el texto condicionado por el prefijo visual. En este fixture, la configuracion se ha reducido a 2 capas en cada uno de los tres bloques (`vision num_hidden_layers 2`, `qformer num_hidden_layers 2`, `text num_hidden_layers 2`) mediante la regla generica de `sweep.py` del repositorio `transformers-mic`.
+La arquitectura replica la de BLIP-2: un codificador visual, un Q-Former que proyecta las caracteristicas visuales al espacio del modelo de lenguaje y un decodificador de texto basado en OPT. En este fixture, la configuracion se ha reducido mediante la regla generica de `sweep.py`: 2 capas en el codificador visual, 2 capas en el Q-Former y 2 capas en el modulo de texto. Los nombres de tensores coinciden con los del checkpoint real, lo que permite sustituir uno por otro en pruebas de integracion.
 
-No ha habido entrenamiento. Los pesos son aleatorios con semilla 17 y solo se validaron mediante una puerta de sensibilidad a la entrada: cada perturbacion de las entradas del contrato debia mover los logits al menos 0,001 (la mas debil, `pixel_values:halve`, produjo 0,0469). Los nombres de tensores coinciden con los del checkpoint real y los ficheros de procesador se copiaron sin modificacion. El `build.json` del repositorio registra fuentes fijadas, resultados de la puerta y hashes de ficheros.
+No hubo entrenamiento. Los pesos son aleatorios (semilla 17) y se aceptaron tras superar una puerta de sensibilidad a la entrada: cada perturbacion de las entradas del contrato desplazo los logits al menos 0,001 (el caso mas debil, `pixel_values:halve`, produjo 0,0469). El fixture se valido como finito en float32, bfloat16 y float16 para forward, perdida y gradientes. Los ficheros de procesador se copiaron byte a byte del modelo original.
 
 ## Capacidades
 
-- Carga y ejecucion de un grafo `Blip2ForConditionalGeneration` con nombres de tensores identicos al checkpoint real.
-- Ejecucion del procesador BLIP-2 (tokenizer y `preprocessor_config.json` copiados byte a byte del modelo base).
-- Forward, calculo de perdida y gradientes finitos en float32, bfloat16 y float16.
-- Sensibilidad de logits verificada frente a perturbaciones de las entradas del contrato.
-- No genera subtitulos ni texto coherente: los pesos son aleatorios.
-- Sin soporte real de tool calling, agentes, razonamiento ni capacidades multilingues (no aplica a un fixture).
+- No es un modelo usable: no genera texto ni descripciones de imagen con calidad, ya que sus pesos son aleatorios.
+- Reproduce la interfaz de inferencia de BLIP-2 para captioning de imagenes a traves de Transformers.
+- Mantiene la firma de tensores del checkpoint original, lo que permite probar rutas de carga y compatibilidad.
+- Sirve como fixture ejecutable para verificar expectativas de framework (forward, perdida y gradientes).
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: no disponible.
+- Capacidades especiales (thinking mode, vision real, audio): no disponible.
 
 ## Casos de uso
 
-- Validacion de integraciones de Transformers: cargar el fixture con `AutoProcessor` y `Blip2ForConditionalGeneration` para comprobar que la API, el mapeo de nombres de tensores y las expectativas del framework coinciden con el modelo real, sin descargar los ~15 GB del checkpoint completo.
-- Tests de CI/CD en pipelines de vision-lenguaje: usar el fixture como sustituto ligero en tests de humo que verifiquen que el codigo de carga, preprocesado y forward no rompe ante cambios de version de la libreria.
-- Verificacion de contratos de framework: el repositorio incluye `integration.json` e `integrations/transformers/expectations`, pensados para comparar el comportamiento esperado (formas de salida, dtypes, tolerancias) contra el fixture.
-- Pruebas de serializacion y dtypes: comprobar que el modelo se carga y ejecuta correctamente en float32, bfloat16 y float16, util para validar rutas de mixed precision en frameworks.
-- Desarrollo de utilidades de inspeccion de modelos: analizar estructura de configuracion, nombres de tensores y ficheros de procesador de la familia BLIP-2 con un artefacto de 0,0 GB.
-- Reproducibilidad de fixtures: reconstruir el artefacto con `python example/build_fixtures.py --fixture blip2-opt-2.7b-mic` para auditar el proceso de reduccion y los hashes registrados en `build.json`.
+- Pruebas de integracion en CI: ejecutar la carga del modelo y un forward con `pixel_values` sinteticos para detectar regresiones en Transformers sin descargar el checkpoint de 2.700 millones de parametros.
+- Validacion de contratos de framework: comprobar que las expectativas declaradas en `integrations/transformers/expectations` se cumplen sobre un modelo con la misma firma de tensores.
+- Verificacion de dtypes: confirmar que forward, perdida y gradientes son finitos en float32, bfloat16 y float16 antes de probar el modelo real.
+- Pruebas de compatibilidad de procesador: usar los ficheros de tokenizer y preprocessor copiados del modelo original para validar pipelines de preprocesado de imagen y texto.
+- Desarrollo de herramientas de inspeccion de modelos: analizar nombres de tensores y configuraciones reducidas sin coste de memoria.
+- Reproducibilidad de fixtures: reconstruir el artefacto con `build_fixtures.py` y comparar hashes registrados en `build.json` para auditar cambios en el pipeline de generacion de fixtures.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor indica que es un artefacto de test con pesos aleatorios y no un modelo usable; cualquier cifra de calidad seria no tendria sentido.
+No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un artefacto de prueba con pesos aleatorios, no procede evaluacion de calidad.
 
 ## Requisitos de hardware
 
-- VRAM estimada: inferior a 1 GB en float32 (3,6 M de parametros); cabe en cualquier GPU consumer, CPU o incluso en entornos sin acelerador.
-- GPU recomendadas: no aplica; cualquier GPU (incluidas integradas) es suficiente. No requiere A100, H100 ni RTX 4090.
-- Cabe en consumer GPU: si, en todas, y tambien en CPU.
-- Opciones de despliegue: carga via `transformers` (`AutoProcessor` + `Blip2ForConditionalGeneration`); no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI para este fixture.
-- Latencia y throughput: no disponibles; al ser un fixture de test no se han publicado mediciones.
+- VRAM estimada para inferencia: inferior a 1 GB en float32 (3,6 millones de parametros); el repo ocupa 0,0 GB.
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; no requiere A100 ni H100.
+- Cabe en cualquier GPU consumer y probablemente en CPU para pruebas.
+- Opciones de despliegue: Transformers (ruta principal documentada en `integrations/transformers/usage.md`); vLLM, llama.cpp, Ollama y TGI no estan documentados para este fixture.
+- Latencia y throughput: no disponibles; irrelevantes para un artefacto de prueba.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `huggingface-mic/blip2-opt-2.7b-mic` | 3,6 M (fixture) | no disponible | Test de integracion | no disponible | Hugging Face |
-| `Salesforce/blip2-opt-2.7b` | ~2.700 M | no disponible | Subtitulado de imagenes (pre-trained only) | no disponible en la informacion | Hugging Face |
-| `LanguageMachines/blip2-opt-2.7b` | ~2.700 M | no disponible | Subtitulado de imagenes (pre-trained only) | no disponible en la informacion | Hugging Face |
+| `huggingface-mic/blip2-opt-2.7b-mic` | 3.629.056 | no disponible | Fixture de pruebas | no disponible | Hugging Face |
+| `Salesforce/blip2-opt-2.7b` | ~2.700 millones (texto) | no disponible | Captioning y VQA real | no disponible | Hugging Face |
+| `Salesforce/blip2-flan-t5-xl` | ~1.200 millones (texto) | no disponible | Captioning y VQA real | no disponible | Hugging Face |
+
+La comparacion relevante es con el modelo base: el fixture comparte arquitectura, procesador y nombres de tensores, pero carece de capacidad funcional. Frente a otros BLIP-2 de Salesforce, la diferencia principal es el tamano del decodificador de texto.
 
 ## Limitaciones y advertencias
 
-- No es un modelo usable: los pesos son aleatorios y las salidas no tienen significado. No debe emplearse para inferencia real, demos ni produccion.
-- Etiquetado como `test-artifact` por el autor para excluirlo de busquedas de modelos candidatos.
-- Sesgos conocidos: no aplica (pesos aleatorios); no se han evaluado sesgos.
-- Riesgo de alucinacion: total, en el sentido de que cualquier salida es ruido sin relacion con la entrada.
-- Limitaciones de contexto o idioma: no documentadas; el fixture no conserva las capacidades linguisticas de OPT-2.7B.
-- Restricciones de licencia: la licencia no esta disponible en la informacion; debe consultarse el modelo base (`Salesforce/blip2-opt-2.7b`) antes de cualquier uso derivado.
-- Para cualquier evaluacion real de BLIP-2 conviene usar el checkpoint completo `Salesforce/blip2-opt-2.7b` o su variante `LanguageMachines/blip2-opt-2.7b`.
+- No es un modelo usable: los pesos son aleatorios y las salidas carecen de sentido.
+- Etiquetado como `test-artifact`; no debe incluirse en busquedas de modelos candidatos ni en produccion.
+- Licencia no declarada en la informacion disponible; verificar antes de cualquier redistribucion.
+- Idiomas y contexto no documentados.
+- No dispone de benchmarks ni evaluacion de calidad.
+- Su utilidad esta limitada a pruebas de integracion y validacion de contratos de framework.
+- La fecha de creacion indicada (2026-11-08) y el reducido numero de descargas (1.553) sugieren un uso acotado al equipo que lo genera.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/huggingface-mic/blip2-opt-2.7b-mic
+- Hugging Face: https://huggingface.co/huggingface-mic/blip2-opt-2.7b-mic
 - Modelo base: https://huggingface.co/Salesforce/blip2-opt-2.7b
-- Variante LanguageMachines: https://huggingface.co/LanguageMachines/blip2-opt-2.7b
+- Manifiesto de contrato: `integration.json` (en el repo)
+- Uso con Transformers: `integrations/transformers/usage.md` (en el repo)
+- Expectativas de Transformers: `integrations/transformers/expectations` (en el repo)
+- Procedencia del fixture: `build.json` (en el repo)
 - Explicacion del proceso de reduccion: https://huggingface-mic-mic-coverage.static.hf.space/shrink/blip2-opt-2.7b-mic.html
-- Repositorio `transformers-mic` (script `sweep.py`): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
-- Repositorio `transformers-mic` (script `build_fixtures.py`): https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
-- Paper BLIP-2 (Li et al.): no disponible en la informacion proporcionada como enlace directo
+- Script de construccion: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Regla de reduccion: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py

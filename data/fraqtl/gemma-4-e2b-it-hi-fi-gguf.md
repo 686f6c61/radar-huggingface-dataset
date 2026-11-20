@@ -2,92 +2,123 @@
 
 ## Resumen
 
-Gemma-4-E2B-it-Hi-Fi-GGUF es una cuantización GGUF del modelo Gemma-4-E2B-it de Google, producida por fraQtl con una técnica propia de cuantización consciente de calibración (calibration-aware quantization). El objetivo es maximizar la fidelidad al modelo original en bf16 manteniendo el mismo tamaño de archivo que las cuantizaciones comunitarias estándar. Según las mediciones del autor, esta versión Q4_K_M reduce la divergencia KL (KLD) en un 36% para tareas de código/matemáticas y un 27,2% en general respecto a la cuantización Q4_K_M de bartowski, con un tamaño prácticamente idéntico (−0,03%).
+Gemma-4-E2B-it-Hi-Fi-GGUF es una familia de cuantizaciones GGUF del modelo google/gemma-4-E2B-it, publicada por el usuario fraQtl. El modelo base es un transformer de 4.647.450.147 parametros de Google, orientado a inferencia en dispositivo (edge), con soporte de tool calling y conversacion. La aportacion principal de este repositorio no es el modelo en si, sino el metodo de cuantizacion "calibration-aware per-tensor" aplicado sobre la maquinaria estandar Q4_K de llama.cpp: las decisiones de precision por tensor se derivan de un analisis de calibracion en lugar de valores por defecto fijos.
 
-El modelo base, Gemma-4-E2B-it, es un modelo de 4.647 millones de parámetros diseñado para ejecución en dispositivos edge (móviles, portátiles) con capacidades de tool-calling, generación de código y razonamiento. La cuantización de fraQtl está pensada para su uso offline en iPhone y otros dispositivos con recursos limitados, demostrando 21,6 tokens/s sostenidos en un iPhone 16 con 516 MB de memoria residente. Incluye tres artefactos: el Q4_K_M de tamaño iso (3,46 GB), una variante "Phone" más pequeña (2,86 GB) y una variante "SmartEdge" IQ3XXS (2,45 GB). La licencia es Apache 2.0, lo que permite uso comercial sin restricciones.
+El resultado son artefactos con una divergencia KL menor frente al checkpoint original bf16 que la cuantizacion comunitaria de referencia (bartowski Q4_K_M), manteniendo un tamano practicamente identico. El repositorio incluye tres variantes: un Q4_K_M "iso-size" de 3,46 GB, un artefacto "Phone" de 2,86 GB (17,5 % menos bytes) y un IQ3XXS "SmartEdge" de 2,45 GB usado en la demo movil. La relevancia actual reside en la combinacion de fidelidad medida, tamano reducido y ejecucion totalmente offline en hardware de consumo (iPhone), con tool calling determinista y verificacion sha256 del artefacto en carga.
+
+La licencia de los artefactos de cuantizacion es Apache 2.0, pero los pesos derivan de Gemma y quedan sujetos a los terminos de Google. El repositorio declara un unico idioma soportado (ingles) y esta etiquetado como `inference: false`, es decir, no aloja una demo de inferencia en Hugging Face.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (Gemma 4 E2B) |
-| Parametros totales | 4.647.450.147 |
+| Arquitectura | Transformer (modelo base google/gemma-4-E2B-it); detalles internos no disponibles |
+| Parametros totales | 4.647.450.147 (segun safetensors del modelo base) |
 | Parametros activos | no disponible |
-| Longitud de contexto | Hasta 256K tokens (segun especificaciones de Gemma 4) |
-| Tipos de cuantizacion | Q4_K_M, IQ3XXS (SmartEdge) |
-| Idiomas soportados | Ingles (en) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q4_K_M (iso-size), Q4_K_M variante Phone, IQ3XXS (SmartEdge) |
+| Idiomas soportados | en (ingles) |
+| Licencia | Apache 2.0 para artefactos; pesos sujetos a Gemma Terms of Use |
+| Formato de pesos | GGUF (llama.cpp) |
+
+Detalle de artefactos publicados:
+
+| Artefacto | Bytes | bpw reales | KLD code/math | KLD general |
+|---|---:|---:|---:|---:|
+| `Gemma-4-E2B-it-fraQtl-HiFi-Q4_K_M.gguf` | 3.461.675.328 | 5,93 | 0,05846 | 0,09646 |
+| `Gemma-4-E2B-it-fraQtl-HiFi-Phone.gguf` | 2.856.122.688 | 4,89 | 0,06231 | 0,09716 |
+| `Gemma-4-E2B-it-fraQtl-SmartEdge-IQ3XXS.gguf` | ~2,45 GB (2.450.000.000 aprox.) | no disponible | no disponible | no disponible |
+| bartowski Q4_K_M (baseline fijado) | 3.462.678.272 | 5,93 | 0,09139 | 0,13249 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Gemma-4-E2B-it es un transformer denso de 4.647 millones de parametros desarrollado por Google, optimizado para inferencia en dispositivos edge. Segun la documentacion oficial de Gemma 4, la familia incluye arquitecturas densas y MoE, con soporte de contexto hasta 256K tokens y capacidades multilingues en mas de 140 idiomas, aunque esta cuantizacion especifica solo declara soporte para ingles. El entrenamiento del modelo base incluye fases de preentrenamiento y ajuste instructivo con tecnicas de RLHF/DPO, aunque los detalles exactos del dataset no se especifican en la informacion disponible.
+El modelo base es google/gemma-4-E2B-it, un transformer de 4.647.450.147 parametros. La model card del repositorio de cuantizacion no documenta la composicion del dataset de entrenamiento, el numero de tokens vistos, ni si hubo etapas de RLHF o DPO; esa informacion corresponderia a la model card del modelo base de Google y no esta incluida en la informacion disponible.
 
-La contribucion de fraQtl reside en la cuantizacion: en lugar de aplicar los umbrales fijos de llama.cpp para decidir la precision por tensor, realiza un analisis de calibracion que determina la precision optima de cada tensor (Q4_K, Q5_K, Q6_K, etc.) para minimizar la divergencia KL respecto al modelo original en bf16. El resultado es un archivo GGUF con el mismo mecanismo Q4_K_M de llama.cpp pero con decisiones de precision por tensor basadas en datos de calibracion, logrando una fidelidad significativamente mayor sin aumentar el tamano. Las metricas de KLD se calcularon con un teacher Q8_0 del checkpoint bf16 original, sobre soporte de top-20 tokens, con tres ejecuciones y deriva cero.
+La innovacion tecnica documentada en este repositorio es el proceso de cuantizacion: se emplea la maquinaria estandar Q4_K de llama.cpp, pero la asignacion de precision por tensor se decide mediante un analisis de calibracion (calibration-aware per-tensor quantization) en lugar de los valores por defecto. La fidelidad se mide como divergencia KL simetrica top-20 sobre soporte de un profesor Q8 (cuantizacion Q8_0 del checkpoint bf16 original), promediada sobre posiciones. El repositorio tambien menciona el uso de imatrix en las etiquetas. El artefacto SmartEdge IQ3XXS no dispone de escalera KLD publicada; su evidencia actual es el comportamiento en dispositivo y el benchmark de la demo.
 
 ## Capacidades
 
-- Generacion de texto y conversacion multi-turno con contexto largo (hasta 256K tokens en el modelo base).
-- Tool-calling / function calling: el modelo puede invocar funciones externas, como se demuestra en la gestion de calendario (buscar huecos, crear eventos, mover citas).
-- Razonamiento multi-paso: capaz de ejecutar instrucciones compuestas (por ejemplo, "mueve la reunion y anade un recordatorio") mediante un codigo deterministico que ejecuta las acciones.
-- Generacion de codigo offline: demostrado con la generacion del algoritmo de Dijkstra en C++ a ~11 tok/s interactivo.
-- Comprension de documentos y fotos (segun la demo, puede leer documentos y fotos, aunque la modalidad de vision no esta confirmada en la model card).
-- Capacidad de reconocer sus propias limitaciones: el modelo indica explicitamente cuando no tiene acceso a ciertos recursos (por ejemplo, "no tengo acceso a tus emails").
-- Personalidad y respuestas con contexto: cada respuesta incluye una etiqueta de contexto (por ejemplo, `no connectors`).
+- Generacion de texto conversacional multi-turno.
+- Tool calling / function calling, con ejecucion determinista de acciones por una capa de codigo Swift separada del modelo.
+- Razonamiento multi-paso encadenado (por ejemplo, instrucciones de dos pasos traducidas en dos escrituras de calendario).
+- Generacion de codigo (la demo muestra algoritmo de Dijkstra en C++ generado offline a ~11 tok/s interactivos).
+- Conocimiento general y respuesta a preguntas.
+- Lectura de documentos y fotografias (segun la demo).
+- Entrada de voz y respuestas habladas mediante reconocimiento y sintesis de voz en dispositivo (no son capacidades del modelo en si, sino del pipeline de la demo).
+- Etiquetado de contexto por respuesta (context tags) para declarar limites de alcance.
+- Capacidades multilingues: no disponibles; el repositorio declara unicamente ingles.
 
 ## Casos de uso
 
-- Asistente de voz offline en moviles: el modelo puede procesar entrada de voz, generar respuestas habladas y ejecutar acciones locales (crear eventos, buscar informacion) sin conexion a internet, como se demuestra en la demo de iPhone en modo avion.
-- Gestion de calendario personal: el modelo puede interpretar peticiones en lenguaje natural ("encuentra un hueco el jueves para la reunion de VC"), buscar espacios libres, crear eventos y confirmar la accion con un recibo verificable.
-- Generacion de codigo en entornos sin conexion: desarrolladores que trabajan en aviones o zonas sin cobertura pueden generar fragmentos de codigo, algoritmos o documentacion tecnica con un modelo local de 3,5 GB.
-- Automatizacion de tareas de oficina: el modelo puede ejecutar acciones deterministas (mover eventos, crear recordatorios, cambiar titulos) a partir de instrucciones conversacionales, con un codigo de capa que verifica cada escritura.
-- Chatbot de atencion al cliente en dispositivos edge: empresas que necesitan un asistente local que no envie datos a la nube pueden desplegar este modelo en tablets o quioscos, con respuestas en ingles y capacidades de tool-calling para consultar bases de datos locales.
-- Prototipado rapido de agentes con tool-calling: investigadores y desarrolladores pueden usar este GGUF con llama.cpp para probar flujos de agente (planificacion, ejecucion de herramientas, verificacion) en hardware modesto antes de escalar a modelos mayores.
+- Asistente de calendario offline: el modelo interpreta peticiones habladas o escritas ("encuentra hueco el jueves para reunion VC"), localiza franjas libres y la capa de codigo escribe el evento en Apple Calendar; encaja por su tool calling y su ejecucion en dispositivo sin red.
+- Gestion de eventos y recordatorios encadenados: mover o renombrar eventos y crear recordatorios en varios pasos, con titulos enriquecidos por contactos; adecuado por el razonamiento multi-paso y la ventana de contexto suficiente para el estado de la conversacion.
+- Generacion de codigo en entornos sin conectividad: producir fragmentos como algoritmos clasicos en C++ directamente en el telefono (~11 tok/s interactivos), util en escenarios de campo, auditoria o privacidad estricta.
+- Asistentes con garantia de accion verificable: cualquier escritura genera un "receipt chip" con lo escrito; si la escritura falla, no aparece chip. Apropiado para flujos donde se requiere trazabilidad de acciones.
+- Lectura y comprension de documentos y fotos en dispositivo: extraer informacion de material local sin enviar datos a la nube, gracias a la inferencia offline y a la memoria residente contenida (~516 MB en iPhone-16-class).
+- Asistentes con limites declarados: responder explicitamente "no tengo acceso a tus correos" cuando se le pregunta por conectores inexistentes; util para productos que deben comunicar su alcance sin ambiguedad.
+- Despliegue en edge con restricciones termicas: el panel de receipts reporta tasa de decodificacion, memoria residente y estado termico; adecuado para integrar en apps moviles con presupuesto de memoria y bateria acotado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) para esta cuantizacion especifica. El autor proporciona metricas de fidelidad basadas en divergencia KL (KLD) respecto al modelo original bf16, comparando con la cuantizacion Q4_K_M de bartowski:
+No se han publicado resultados de benchmarks de calidad tipo MMLU, HumanEval o GSM8K en la informacion disponible. Los unicos datos medidos son de fidelidad de cuantizacion y de rendimiento en dispositivo.
 
-| Artefacto | Tamano (bytes) | bpw real | KLD code/math | KLD general | Diferencia vs baseline |
-|---|---:|---:|---:|---:|---|
-| fraQtl HiFi Q4_K_M (iso-size) | 3.461.675.328 | 5,93 | 0,05846 | 0,09646 | −36,0% / −27,2% |
-| fraQtl HiFi Phone | 2.856.122.688 | 4,89 | 0,06231 | 0,09716 | −31,8% / −26,7% (y 17,5% mas pequeno) |
-| bartowski Q4_K_M (baseline) | 3.462.678.272 | 5,93 | 0,09139 | 0,13249 | — |
+Fidelidad (KLD simetrica top-20, menor es mejor):
 
-La metrica KLD se calcula como divergencia KL simetrica sobre el soporte de top-20 tokens con un teacher Q8_0 del checkpoint bf16 original, promediada sobre posiciones. Valores mas bajos indican mayor fidelidad. En el dispositivo de prueba (iPhone 16), el modelo alcanza 21,6 tok/s sostenidos en un benchmark de 256 tokens greedy (umbral de paso: ≥15 tok/s) y ~12 tok/s interactivos (incluyendo prefill), con 516 MB de memoria residente.
+| Modelo | KLD code/math | KLD general | Reduccion vs baseline |
+|---|---:|---:|---:|
+| fraQtl HiFi Q4_K_M (iso-size) | 0,05846 | 0,09646 | −36,0 % / −27,2 % |
+| fraQtl HiFi Phone (−17,5 % bytes) | 0,06231 | 0,09716 | −31,8 % / −26,7 % |
+| bartowski Q4_K_M (baseline) | 0,09139 | 0,13249 | referencia |
+
+Rendimiento en dispositivo (iPhone-16-class, llama.cpp b10075, Metal, mmap, modo avion):
+
+| Metrica | Valor |
+|---|---|
+| Memoria residente | ~516 MB |
+| Velocidad interactiva | ~12 tok/s (ultimo turno, incluye prefill) |
+| Benchmark greedy 256 tokens | 21,6 tok/s sostenidos (umbral >=15 tok/s: PASS) |
+| Generacion de codigo offline | ~11 tok/s interactivos |
+| Deriva de medicion KLD | 0,0 (3 ejecuciones) |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el artefacto Q4_K_M de 3,46 GB requiere aproximadamente 4-5 GB de RAM/VRAM en total (incluyendo overhead de ejecucion). La variante Phone de 2,86 GB y la SmartEdge de 2,45 GB reducen los requisitos a unos 3-4 GB.
-- GPU recomendadas: cualquier GPU consumer con 6 GB o mas de VRAM (RTX 2060, RTX 3060, RTX 4060, etc.) puede ejecutar el modelo sin problemas. En Apple Silicon, funciona via Metal con 8 GB unificados o mas.
-- En dispositivos moviles: demostrado en iPhone 16 con 516 MB de memoria residente, usando llama.cpp con backend Metal y mmap.
-- Opciones de despliegue: llama.cpp (soporte nativo GGUF), Ollama, LM Studio, llama-cpp-python, y cualquier framework compatible con GGUF. Tambien puede usarse con vLLM si se convierte a otro formato, aunque no es el caso de uso principal.
-- Latencia y throughput: 21,6 tok/s sostenidos en iPhone 16 (256 tokens greedy), ~12 tok/s interactivos. En GPU desktop se esperan cifras superiores, aunque no se proporcionan datos especificos.
+- VRAM/RAM estimada: Q4_K_M iso-size ~3,46 GB de pesos; Phone ~2,86 GB; SmartEdge IQ3XXS ~2,45 GB. Sumar overhead de contexto KV cache y buffers de llama.cpp.
+- GPU de datacenter: A100 y H100 ampliamente suficientes para servir el modelo completo con contexto largo; no hay datos de throughput publicados para estas GPUs.
+- GPU de consumo: cabe en RTX 4090, RTX 3090, RTX 4080 y GPUs con 8 GB o mas para Q4_K_M; en 6 GB puede requerir la variante Phone o IQ3XXS.
+- Movil: verificado en iPhone-16-class con ~516 MB residentes y 21,6 tok/s sostenidos en benchmark greedy de 256 tokens.
+- Despliegue: llama.cpp (verificado en b10075 con backend Metal), llama-cpp-python; Ollama y vLLM no estan confirmados en la informacion disponible.
+- Latencia/throughput: ~12 tok/s interactivos y 21,6 tok/s sostenidos en iPhone-16-class; sin datos para otras plataformas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Fidelidad (KLD) |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Gemma-4-E2B-it (bf16 original) | 4,65B | 256K | — | Apache 2.0 | Referencia |
-| fraQtl HiFi Q4_K_M (este modelo) | 4,65B | 256K | Q4_K_M calibrado | Apache 2.0 | 0,058 (code/math) |
-| bartowski Q4_K_M (comunidad) | 4,65B | 256K | Q4_K_M estandar | Apache 2.0 | 0,091 (code/math) |
-| Qwen2.5-3B-Instruct (GGUF) | 3,09B | 32K | Q4_K_M | Apache 2.0 | no disponible |
+| fraQtl Gemma-4-E2B-it HiFi Q4_K_M | 4.647.450.147 (base) | no disponible | GGUF Q4_K_M | Apache 2.0 (artefactos) + Gemma Terms | KLD 0,05846 / 0,09646; 3,46 GB |
+| bartowski Gemma-4-E2B-it Q4_K_M | 4.647.450.147 (base) | no disponible | GGUF Q4_K_M | Apache 2.0 (artefactos) + Gemma Terms | KLD 0,09139 / 0,13249; 3,46 GB |
+| fraQtl Gemma-4-E2B-it HiFi Phone | 4.647.450.147 (base) | no disponible | GGUF Q4_K_M (variante) | Apache 2.0 (artefactos) + Gemma Terms | KLD 0,06231 / 0,09716; 2,86 GB |
+| google/gemma-4-E2B-it (bf16 original) | 4.647.450.147 | no disponible | safetensors | Gemma Terms of Use | Referencia de fidelidad |
 
-La comparativa se centra en la misma familia de cuantizaciones del mismo modelo base. La ventaja de fraQtl es una fidelidad significativamente mayor al original con el mismo tamano de archivo. Frente a modelos de tamano similar de otras familias (como Qwen2.5-3B), no hay datos de rendimiento comparativo disponibles en la informacion proporcionada.
+No se dispone de datos de benchmarks de calidad para comparar con modelos de la misma categoria (por ejemplo, otras familias edge de 2-5B parametros); la comparativa se limita a variantes de cuantizacion del mismo modelo base.
 
 ## Limitaciones y advertencias
 
-- Idioma: el modelo solo declara soporte para ingles. No se garantiza un rendimiento adecuado en otros idiomas, a pesar de que el modelo base Gemma 4 soporta 140+ idiomas.
-- Sin acceso a recursos externos: por diseno, el modelo no tiene conectores a email, mensajeria o red. Si se necesita integracion con servicios externos, debe implementarse una capa de codigo adicional.
-- Riesgo de alucinacion: como cualquier modelo de lenguaje, puede generar informacion incorrecta o inventada, especialmente en tareas de conocimiento general. La capa de recibos (receipt chips) mitiga parcialmente este riesgo en acciones criticas, pero no elimina la posibilidad de errores en respuestas de texto libre.
-- Contexto largo: aunque el modelo base soporta hasta 256K tokens, la cuantizacion puede degradar ligeramente la calidad en contextos muy largos. No se han publicado pruebas especificas de rendimiento con ventanas de contexto extremas.
-- Dependencia de la capa de ejecucion: las capacidades de tool-calling y ejecucion de acciones requieren un codigo deterministico externo que interprete las salidas del modelo. Sin esa capa, el modelo solo genera texto.
-- Verificacion de integridad: se recomienda verificar el checksum sha256 de los artefactos descargados antes de su uso en produccion, como hace la demo del autor.
+- Idioma: el repositorio declara unicamente ingles; el rendimiento en castellano no esta verificado.
+- Contexto: la longitud de contexto del modelo base no se documenta en la informacion disponible; planificar en consecuencia.
+- Alucinacion: no se documentan tasas ni evaluaciones; el diseno de la demo mitiga acciones no verificadas mediante receipts, pero no elimina el riesgo de respuestas incorrectas.
+- Sesgos: no se documentan sesgos conocidos en la model card del repositorio.
+- Licencia: los artefactos de cuantizacion son Apache 2.0, pero los pesos derivan de google/gemma-4-E2B-it y siguen sujetos a los terminos de Gemma. Revisar las condiciones de uso comercial de Google antes de produccion.
+- Fidelidad: el artefacto SmartEdge IQ3XXS no tiene escalera KLD publicada; su evidencia es solo el comportamiento en dispositivo y el benchmark de tokens.
+- Alcance funcional: la demo no realiza llamadas de red, no accede a correo ni mensajes; el modelo no anuncia acciones por si mismo, lo hace una capa de codigo determinista.
+- Repositorio marcado `inference: false`: no hay endpoint de inferencia alojado en Hugging Face.
+- Fecha de creacion indicada: 2026-07-21; fecha de actualizacion: 2026-12-12 (verificar contra la pagina real del repositorio).
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/fraQtl/Gemma-4-E2B-it-Hi-Fi-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
-- Documentacion de Gemma 4 (Google AI): https://ai.google.dev/gemma/docs/core/model_card_4
-- Pagina de Gemma 4 (DeepMind): https://deepmind.google/models/gemma/gemma-4/
-- Guia de Gemma 4 E2B: https://www.gemma4.wiki/models/gemma-4-e2b
+- Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
+- Imagen del repositorio: https://huggingface.co/fraQtl/Gemma-4-E2B-it-Hi-Fi-GGUF/resolve/main/Gemma-4-E2B-it-Hi-Fi-GGUF.png
+- Grafico de fidelidad KLD: https://huggingface.co/fraQtl/Gemma-4-E2B-it-Hi-Fi-GGUF/resolve/main/kld_chart.png
+- llama.cpp: https://github.com/ggml-org/llama.cpp
+- llama-cpp-python: https://github.com/abetlen/llama-cpp-python
+- Papers, blogs y demos adicionales: no disponibles en la informacion proporcionada.

@@ -2,90 +2,89 @@
 
 ## Resumen
 
-`huggingface-mic/switch-base-8-mic` es un artefacto de prueba (fixture) publicado por la organizacion `huggingface-mic`, no un modelo entrenado. Se trata de una version reducida artificialmente del modelo `google/switch-base-8` de Google, con solo 2.319.872 parametros, cuyo proposito es servir como banco de pruebas para la infraestructura de integracion continua (MIC) de Transformers. La model card lo etiqueta explicitamente como `test-artifact` para excluirlo de busquedas de modelos candidatos a uso real.
+`huggingface-mic/switch-base-8-mic` es un artefacto de prueba (fixture) publicado por la organizacion `huggingface-mic`, no un modelo entrenado ni utilizable para inferencia real. Se construye a partir de la arquitectura de `google/switch-base-8`, un transformer de tipo Switch (Mixture of Experts) para tareas texto-a-texto, pero con una configuracion reducida a 2 capas de encoder y 2 de decoder y pesos generados aleatoriamente con semilla 17. Su proposito es servir como fixture de integracion para validar contratos de framework (en concreto, la integracion con Transformers) sin necesidad de descargar el checkpoint completo de Google.
 
-El modelo conserva la arquitectura `SwitchTransformersForConditionalGeneration` (un transformer con mezcla de expertos, MoE) pero con una configuracion reducida a 2 capas de encoder y 2 de decoder. Los pesos son aleatorios (semilla 17) y no han pasado por ningun proceso de entrenamiento. Los ficheros de procesador (tokenizer, `spiece.model`, `generation_config.json`, etc.) se copian byte a byte del checkpoint original `google/switch-base-8`, de modo que la interfaz de tokenizacion es identica a la del modelo real.
+El repositorio contiene los pesos "slim", ejemplos de uso ejecutables y un directorio de expectativas de framework, todo empaquetado en un formato que replica los nombres de tensores del checkpoint original. Los ficheros de procesador (`tokenizer.json`, `spiece.model`, `generation_config.json`, etc.) se copian byte a byte de `google/switch-base-8`, de modo que el pipeline de tokenizacion es identico al del modelo real.
 
-Su relevancia es exclusivamente tecnica y de infraestructura: permite validar contratos de ejecucion, expectativas de framework y pruebas de sensibilidad de entrada sin descargar los cientos de millones de parametros del modelo original. No debe emplearse para inferencia real, generacion de texto ni ninguna tarea de produccion.
+Es relevante ahora porque permite a desarrolladores e investigadores probar flujos de integracion, CI y validacion de contratos de modelos SwitchTransformers con un coste de almacenamiento practicamente nulo (repo de 0.0 GB, 2.319.872 parametros). No debe confundirse con un modelo funcional: el propio autor lo etiqueta como `test-artifact` para excluirlo de busquedas de modelos candidatos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | SwitchTransformers (transformer encoder-decoder con mezcla de expertos) |
+| Arquitectura | SwitchTransformers (transformer MoE texto-a-texto, `SwitchTransformersForConditionalGeneration`) |
 | Parametros totales | 2.319.872 |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos en bfloat16) |
+| Tipos de cuantizacion | no disponible (pesos guardados en bfloat16) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors (bfloat16) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una instancia de `SwitchTransformersForConditionalGeneration`, la arquitectura MoE de Google presentada en el paper de Switch Transformers (2021). En esta fixture la configuracion se ha reducido mediante la regla generica de `sweep.py` del repositorio `transformers-mic` a `num_layers=2` y `num_decoder_layers=2`, conservando los nombres de tensores del checkpoint original. Los pesos son aleatorios, generados con semilla 17, y no han sido entrenados: superaron unicamente una puerta de sensibilidad de entrada en la que cada perturbacion de las entradas del contrato desplazaba los logits al menos 0.001 (el caso mas debil, `attention_mask:all_ones`, produjo 4.36).
+La arquitectura subyacente es SwitchTransformers, un transformer encoder-decoder con capas de mezcla de expertos con enrutamiento top-1 (Switch). El fixture conserva los nombres de tensores del checkpoint `google/switch-base-8`, pero reduce la profundidad a `num_layers=2` y `num_decoder_layers=2` mediante la regla generica de `sweep.py` del proyecto `transformers-mic`. Los pesos son aleatorios (semilla 17) y no han pasado por entrenamiento alguno; el autor justifica su validez porque superaron una "input-sensitivity gate": cada perturbacion de las entradas del contrato mueve los logits al menos 0.001 (el caso mas debil, `attention_mask:all_ones`, mueve 4.36).
 
-No hay datos de entrenamiento, dataset, RLHF ni DPO porque el modelo no se entreno. La unica innovacion tecnica relevante es la metodologia de "shrink" (reduccion) de checkpoints: se copian byte a byte los ficheros de procesador del modelo original (`generation_config.json`, `special_tokens_map.json`, `spiece.model`, `tokenizer.json`, `tokenizer_config.json`) y se generan pesos con la misma estructura de tensores, guardados en bfloat16 (el dtype por defecto de `google/switch-base-8`). La fixture es finita en float32, bfloat16 y float16 tanto en forward como en loss y gradientes.
+Los ficheros de procesador (`generation_config.json`, `special_tokens_map.json`, `spiece.model`, `tokenizer.json`, `tokenizer_config.json`) se copian byte a byte del modelo base, por lo que el vocabulario y la configuracion de generacion son los de `google/switch-base-8`. El fixture se ha verificado como finito en float32, bfloat16 y float16 (forward, loss y gradientes). La clave de fixture `c3577706d546` agrupa todos los checkpoints cuyos ficheros de procesador son identicos byte a byte y cuya config coincide tras el encogimiento. No hay datos de entrenamiento, RLHF ni DPO porque no hubo entrenamiento.
 
 ## Capacidades
 
-- No dispone de capacidades funcionales reales: los pesos son aleatorios y no producen texto coherente.
-- Sirve como fixture de contrato para validar la integracion de `SwitchTransformers` en Transformers (carga, forward, loss, gradientes).
-- Permite comprobar la sensibilidad de entrada del contrato (perturbaciones de `input_ids`, `attention_mask`, etc.).
-- Conserva la interfaz de tokenizacion del modelo original mediante los ficheros de procesador copiados byte a byte.
-- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingues reales.
-- No incluye modo thinking, vision ni audio.
+- No es un modelo funcional: no genera texto coherente ni resuelve tareas reales.
+- Sirve como fixture de integracion para validar la carga y ejecucion de `SwitchTransformersForConditionalGeneration` en Transformers.
+- Permite probar contratos de framework (entradas, salidas, sensibilidad) sin descargar el checkpoint completo.
+- Replica la tokenizacion de `google/switch-base-8` (SentencePiece) gracias a la copia byte a byte de los ficheros de procesador.
+- Valida la compatibilidad de nombres de tensores con el checkpoint original.
+- Soporta ejecucion forward, calculo de loss y gradientes en float32, bfloat16 y float16.
+- No soporta tool calling, agentes, vision, audio ni modo thinking.
 
 ## Casos de uso
 
-- Pruebas de integracion continua en Transformers: usar la fixture para verificar que la clase `SwitchTransformersForConditionalGeneration` carga, ejecuta forward y calcula gradientes sin descargar el checkpoint completo de `google/switch-base-8`.
-- Validacion de contratos de framework: comprobar que las expectativas documentadas en `integrations/transformers/expectations` se cumplen con un modelo de estructura identica pero tamano minimo.
-- Pruebas de sensibilidad de entrada: verificar que perturbaciones en `input_ids` o `attention_mask` alteran los logits por encima del umbral definido (0.001), como parte del pipeline de `sweep.py`.
-- Desarrollo de utilidades de serializacion: probar la carga y guardado en safetensors y la conversion entre float32, bfloat16 y float16 con un modelo pequeno que replica los nombres de tensores del original.
-- Reproduccion de la metodologia de shrink: usar `build_fixtures.py` con `--fixture switch-base-8-mic` para regenerar los ficheros auxiliares y comparar hashes recogidos en `build.json`.
-- Pruebas de tokenizacion: validar pipelines que dependen de `spiece.model` y `tokenizer.json` identicos a los de `google/switch-base-8` sin cargar los pesos reales.
+- CI de integraciones de Transformers: usar el fixture en pipelines de integracion continua para verificar que la clase `SwitchTransformersForConditionalGeneration` carga y ejecuta correctamente sin descargar el checkpoint real de Google.
+- Validacion de contratos de framework: comprobar que las entradas y salidas declaradas en `integration.json` se cumplen (formas de tensores, dtypes, sensibilidad de logits) antes de subir cambios a la libreria.
+- Pruebas de regresion de tokenizacion: al copiar los ficheros de procesador del modelo base, permite verificar que el pipeline de tokenizacion no se rompe entre versiones.
+- Desarrollo de utilidades de carga de safetensors: probar rutinas de carga y mapeo de tensores con un repositorio de tamano minimo y nombres de tensores realistas.
+- Pruebas de compatibilidad de dtypes: validar que el codigo de inferencia y entrenamiento funciona en float32, bfloat16 y float16 con un modelo que se sabe finito en los tres.
+- Formacion y demos de arquitectura MoE: ilustrar la estructura de un SwitchTransformer con pesos inspeccionables y sin coste de almacenamiento, util en docencia o talleres.
+- Validacion de pipelines de publicacion en Hugging Face: usar el repo como ejemplo de estructura (manifest, usage, expectations, build.json) para modelos con contrato de integracion.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El modelo no ha sido entrenado y sus pesos son aleatorios, por lo que cualquier metrica de calidad (MMLU, HumanEval, GSM8K) carece de sentido.
+No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un artefacto de prueba con pesos aleatorios, no tiene sentido medir MMLU, HumanEval, GSM8K ni metricas similares.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en bfloat16 (2,3 M de parametros); cabe en cualquier GPU consumer, e incluso en CPU.
-- GPU recomendadas: ninguna en particular; cualquier GPU con soporte bfloat16 o float16 es suficiente. Una RTX 4090, A100 o H100 estarian enormemente sobredimensionadas.
-- Cabe en GPU consumer: si, en cualquier modelo (GTX 1060 en adelante, por ejemplo).
-- Opciones de despliegue: Transformers con `SwitchTransformersForConditionalGeneration`; vLLM, llama.cpp, Ollama o TGI no estan pensados para este artefacto y no se ha documentado su uso.
-- Latencia y throughput: no disponibles; al ser una fixture de test no se han publicado mediciones.
+- VRAM estimada para inferencia: inferior a 10 MB en bfloat16 (2.319.872 parametros), despreciable en cualquier GPU.
+- GPU recomendadas: cualquiera; el fixture cabe en CPU y en cualquier GPU consumer.
+- Cabe en GPU consumer: si, en todas (incluidas GTX 1050, RTX 3050, etc.).
+- Opciones de despliegue: Transformers (carga directa), con soporte de safetensors; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI para este artefacto.
+- Latencia y throughput: no disponibles; sin relevancia practica al no ser un modelo funcional.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `huggingface-mic/switch-base-8-mic` | 2,3 M | no disponible | Fixture de test | no disponible | Hugging Face |
-| `google/switch-base-8` | no disponible en la informacion | no disponible | Modelo MoE real | no disponible | Hugging Face |
-| Otras fixtures `huggingface-mic` | variable | no disponible | Fixtures de test | no disponible | Hugging Face |
+| huggingface-mic/switch-base-8-mic | 2.319.872 | no disponible | Fixture de integracion | no disponible | Hugging Face |
+| google/switch-base-8 | no disponible | no disponible | Modelo MoE texto-a-texto | no disponible | Hugging Face |
+| google/switch-base-32 | no disponible | no disponible | Modelo MoE texto-a-texto | no disponible | Hugging Face |
+| google/switch-c-2048 | no disponible | no disponible | Modelo MoE texto-a-texto | no disponible | Hugging Face |
 
-La comparativa con modelos funcionales de la misma categoria no esta disponible en la informacion proporcionada. El unico comparable directo es el checkpoint original `google/switch-base-8`, del que esta fixture deriva estructuralmente.
+La comparativa es estructural: el fixture replica la interfaz del modelo base pero no su funcionalidad. Los datos de parametros y contexto de las alternativas no estan disponibles en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Pesos aleatorios: el modelo no genera texto coherente ni resuelve ninguna tarea; no debe usarse en produccion ni en evaluaciones de calidad.
-- Etiquetado como `test-artifact`: la model card indica explicitamente que se excluya de busquedas de modelos candidatos.
-- Licencia no disponible: no se puede confirmar el regimen de uso comercial; al derivar de `google/switch-base-8` habria que consultar la licencia del modelo original.
-- Idiomas no disponibles: la tokenizacion replica la del original, pero el modelo no tiene capacidad linguistica real.
-- Sin datos de sesgos ni alucinacion: al no estar entrenado, no aplican en el sentido habitual, pero tampoco se ha auditado.
-- Contexto no documentado: la configuracion reducida no publica `max_position_embeddings` ni longitud de contexto efectiva.
-- Riesgo de confusion: el nombre y la estructura pueden llevar a error si se confunde con el modelo real de Google; conviene revisar la etiqueta `test-artifact` antes de cualquier uso.
+- No es un modelo utilizable: los pesos son aleatorios y la salida no tiene sentido semantico.
+- Etiquetado explicitamente como `test-artifact` para excluirlo de busquedas de modelos candidatos; no debe desplegarse en produccion.
+- Licencia no disponible: no se puede confirmar el regimen de uso comercial.
+- Idiomas no disponibles: aunque el tokenizador proviene de `google/switch-base-8`, el fixture no ha sido evaluado en ningun idioma.
+- Sesgos: no aplica, al no haber entrenamiento; cualquier sesgo observado seria artefacto del tokenizador heredado.
+- Riesgo de alucinacion: total, al no existir capacidad de generacion real.
+- Limitaciones de contexto: la configuracion reducida (2 capas) no refleja el comportamiento del modelo base.
+- Caveat de produccion: usar este repositorio como dependencia de un sistema real produciria resultados invalidos; solo es apto para pruebas de integracion.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/huggingface-mic/switch-base-8-mic
-- Modelo base: https://huggingface.co/google/switch-base-8
-- Como se redujo la fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/switch-base-8-mic.html
-- Repositorio `transformers-mic`: https://github.com/huggingface/transformers-mic
-- Script de reduccion `sweep.py`: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
-- Script de construccion `build_fixtures.py`: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
-- Manifiesto de contrato (en el repo): `integration.json`
-- Uso en Transformers (en el repo): `integrations/transformers/usage.md`
-- Expectativas de Transformers (en el repo): `integrations/transformers/expectations`
-- Procedencia de la fixture (en el repo): `build.json`
+- [Modelo en Hugging Face](https://huggingface.co/huggingface-mic/switch-base-8-mic)
+- [Modelo base google/switch-base-8](https://huggingface.co/google/switch-base-8)
+- [Explicacion del encogimiento del fixture](https://huggingface-mic-mic-coverage.static.hf.space/shrink/switch-base-8-mic.html)
+- [Repositorio transformers-mic (sweep.py)](https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py)
+- [Repositorio transformers-mic (build_fixtures.py)](https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py)

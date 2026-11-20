@@ -1,90 +1,86 @@
 # Aobangaming/Luna-3-230m
 
 ## Resumen
+Luna 3 230m es un modelo de lenguaje causal de pequeno tamano desarrollado por AobanZ (Aobangaming) y publicado en Hugging Face bajo licencia MIT. Con 228.838.656 parametros totales, se presenta como una evolucion de Luna 2, ampliando el tamano de 100M a 230M y la ventana de contexto hasta 8192 tokens. Su objetivo declarado es ofrecer una alternativa rapida y eficiente a modelos mayores como Llama o Qwen para conversacion y generacion de texto en ingles.
 
-Luna 3 230M es un modelo de lenguaje conversacional de tamaño reducido desarrollado por AobanZ (Aobangaming), publicado en Hugging Face bajo licencia MIT. Se trata de la tercera generación de la familia Luna, un fork de Luna 2 al que se ha ampliado la longitud de contexto hasta 8.192 tokens y se ha aumentado el tamaño del modelo desde los 100M de parámetros de la generación anterior hasta los 230M (228.838.656 parámetros reales según los safetensors). El modelo está diseñado para uso intensivo, conversaciones largas y generación de texto rápida, con una velocidad declarada de unos 130 tokens por segundo.
+El modelo emplea una arquitectura transformer causal de 12 capas con 768 dimensiones ocultas, 12 cabezas de atencion, RMSNorm y RoPE, junto con atencion multi-cabeza (MHA) y atencion de producto escalar escalada (SDPA). Segun la model card, fue entrenado sobre un subconjunto de OpenAssistant (OASST1) en una unica RTX 3050 de 6 GB durante aproximadamente 5 horas, con una perdida final en torno a 1.9.
 
-Su relevancia no está en competir con modelos frontera, sino en el nicho de los modelos muy pequeños y eficientes: se puede ejecutar en hardware de consumo modesto (fue entrenado en una RTX 3050 de 6 GB en solo 5 horas), lo que lo hace útil para experimentación, investigación educativa, fine-tuning casero y prototipado de chatbots ligeros. Usa una arquitectura Transformer causal de 12 capas con RMSNorm y RoPE, y el autor recomienda explícitamente ajustarlo (fine-tune) antes de usarlo en producción.
+Su relevancia actual es limitada pero concreta: se trata de un modelo muy pequeno, entrenado con recursos minimos y orientado a experimentacion, conversacion casual y despliegue en hardware de gama baja. La model card menciona soporte para llama.cpp mediante un fork especifico denominado Lightning.cpp, lo que condiciona su uso practico fuera del ecosistema transformers.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal decoder-only (arquitectura "Lightning" con RMSNorm y RoPE) |
-| Parametros totales | 228.838.656 (dato real de los safetensors) |
-| Parametros activos | no disponible (no se indica que sea MoE; se asume densidad completa) |
-| Longitud de contexto | 8.192 tokens (8.126 indicados en la tabla del autor) |
-| Tipos de cuantizacion | no disponible (pesos en BF16; no hay versiones cuantizadas publicadas) |
+| Arquitectura | Transformer causal (12 capas, D_MODEL 768, 12 cabezas de atencion, RMSNorm, RoPE, MHA, SDPA); arquitectura propietaria "lightning" |
+| Parametros totales | 228.838.656 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 8192 tokens (segun model card; vocabulario ~100k con longitud de secuencia 8126) |
+| Tipos de cuantizacion | no disponible de forma explicita; el repo contiene safetensors en BF16 y la model card menciona soporte via llama.cpp/Lightning.cpp, lo que permitiria cuantizaciones GGUF habituales |
 | Idiomas soportados | Ingles (en) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (tamano del repo: 1,8 GB) |
+| Formato de pesos | safetensors (repo de 1.8 GB); requiere `trust_remote_code=True` y codigo personalizado |
 
 ## Arquitectura y entrenamiento
+Luna 3 es un transformer causal de 12 capas con 768 dimensiones de estado oculto y 12 cabezas de atencion, equipado con RMSNorm y RoPE. La model card indica que mantiene la arquitectura "Lightning" de la generacion anterior, con las unicas modificaciones de RMSNorm y RoPE actualizados. Usa atencion multi-cabeza (MHA) junto con atencion de producto escalar escalada (SDPA), y el entrenamiento se realizo con FlashAttention/SDPA. El vocabulario es de aproximadamente 100k tokens y la longitud de secuencia indicada en la tabla de hiperparametros es de 8126, mientras que el texto describe una ventana de contexto de 8k.
 
-Luna 3 emplea un Transformer causal de 12 capas con dimension oculta de 768, 12 cabezas de atencion (MHA, multi-head attention) y un vocabulario de aproximadamente 100.000 tokens. La arquitectura, denominada "Lightning", incorpora RMSNorm en lugar de LayerNorm y codificacion posicional RoPE (Rotary Position Embedding), novedades respecto a la generacion anterior junto con el aumento de la longitud de secuencia hasta los ~8k tokens. El entrenamiento se realizo con FlashAttention/SDPA en precision BF16.
-
-El modelo fue entrenado sobre un subconjunto del dataset OpenAssistant (OASST1), un corpus de dialogos conversacionales multiturno generados por humanos, lo que explica su orientacion conversacional y de chat (incluye chat template). No se menciona un preentrenamiento a gran escala tipo pretraining en corpus masivos como FineWeb (aunque aparece etiquetado en el repo, la model card solo documenta OASST como dato de entrenamiento). Los hiperparametros documentados son: optimizador AdamW, learning rate de 3e-4, batch size 17 y precision BF16, con una loss final de aproximadamente 1,9. El entrenamiento completo se ejecuto en una RTX 3050 de 6 GB durante 5 horas. No se documenta el uso de RLHF, DPO ni alineacion posterior.
+El entrenamiento se llevo a cabo sobre un subconjunto del dataset OpenAssistant (OASST1), con precision BF16, optimizador AdamW, tasa de aprendizaje 3e-4 y tamano de lote 17. La model card cita tambien HuggingFaceFW/fineweb entre los datasets, aunque la seccion de detalles de entrenamiento solo menciona OASST. La perdida final fue de aproximadamente 1.9. Todo el entrenamiento se ejecuto en una RTX 3050 de 6 GB durante unas 5 horas. No se documentan fases de RLHF, DPO ni tecnicas de decodificacion especulativa.
 
 ## Capacidades
-
-- Generacion de texto conversacional en ingles, con soporte de chat template para interacciones multiturno (roles user/assistant).
-- Conversaciones largas y roleplay gracias a su ventana de contexto de ~8k tokens, inusualmente amplia para un modelo de este tamano.
-- Generacion rapida: ~130 tokens por segundo segun el autor, con soporte en Llama.cpp para inferencia eficiente.
-- Uso como base para agentes ligeros (el propio autor lo etiqueta con el tag "agent"), aunque sin tool calling documentado.
-- Carga mediante la libreria transformers con trust_remote_code=True (custom code), y compatibilidad con PyTorch en BF16.
-- Adecuado como punto de partida para fine-tuning: el autor lo recomienda explicitamente para ajustarlo a nuevos dominios.
-- No hay capacidades documentadas de vision, audio, razonamiento estructurado ni codigo.
+- Generacion de texto autoregresiva en ingles con soporte de plantilla de chat (`apply_chat_template`).
+- Conversacion multi-turno orientada a chat casual y roleplay, segun la model card.
+- Razonamiento basico y generacion de texto general, limitado por el tamano del modelo.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible; las etiquetas del repo incluyen "agent", pero no se documenta ninguna capacidad funcional al respecto.
+- Capacidades multilingues: solo ingles.
+- Capacidades especiales (thinking mode, vision, audio): no disponible.
+- Integracion con text-generation-inference como tag del repo, aunque no se detalla compatibilidad efectiva.
 
 ## Casos de uso
-
-- Prototipado de chatbots ligeros: su tamano de 230M permite ejecutar conversaciones multiturno en GPUs de consumo o incluso CPU, ideal para validar flujos de dialogo antes de escalar a modelos mayores.
-- Roleplay y conversacion casual: la ventana de 8k tokens permite mantener sesiones de rol o chat largo sin truncar el historial, algo poco comun en modelos tan pequenos.
-- Investigacion y educacion: al ser un modelo pequeno, transparente y con licencia MIT, es adecuado para estudiar arquitecturas Transformer, ablations y cursos de NLP sin coste computacional significativo.
-- Fine-tuning en hardware de consumo: con solo 230M de parametros, se puede ajustar por dominio (atencion al cliente, personajes, asistentes nicho) en una GPU domestica tipo RTX 3050/3060 en pocas horas.
-- Experimentacion con Llama.cpp: el soporte declarado de Llama.cpp permite desplegarlo en dispositivos sin GPU dedicada o en aplicaciones locales de escritorio.
-- Generacion de texto creativo en ingles: poesia, descripciones o contenido artistico ligero (el autor lo etiqueta con "art"), siempre con revision humana de las salidas.
-- Baseline de comparacion: util como referencia de rendimiento para evaluar cuanto aporta escalar a modelos de 1B-7B en tareas conversacionales.
+- Experimentacion academica y prototipado rapido: el modelo cabe en GPUs de gama baja y permite iterar sobre pipelines de generacion de texto con transformers en minutos, lo que lo hace util para docencia y pruebas de concepto.
+- Chat conversacional ligero en local: con 8192 tokens de contexto puede mantener conversaciones multi-turno en ingles en un portatil con GPU modesta, siempre que se acepte la calidad limitada de un modelo de 230M.
+- Evaluacion de tecnicas de cuantizacion y despliegue: al ser muy pequeno, sirve como banco de pruebas para medir latencia y throughput con llama.cpp/Lightning.cpp, vLLM u otras herramientas antes de escalar a modelos mayores.
+- Generacion de texto asistida en entornos con restricciones de hardware: despliegue en dispositivos con 6 GB de VRAM o menos para tareas de autocompletado o respuestas breves en ingles.
+- Base para fine-tuning especifico: la model card recomienda explicitamente ajustar el modelo sobre texto nuevo; puede usarse como punto de partida para dominios acotados con datasets pequenos.
+- Roleplay y generacion creativa de baja exigencia: la ventana de 8k y el entrenamiento sobre OASST permiten mantener personajes o contextos narrativos largos, aunque con coherencia limitada.
+- Investigacion sobre arquitecturas no estandar: el modelo emplea una arquitectura "lightning" que requiere parches en llama.cpp, lo que lo convierte en objeto de estudio para quienes investigan variantes de transformers.
 
 ## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks en la informacion disponible. El unico dato de rendimiento cuantitativo es la velocidad de generacion declarada (~130 tokens por segundo) y la loss final de entrenamiento (~1,9), sin comparativas con otros modelos.
+No se han publicado resultados de benchmarks en la informacion disponible. La unica metrica de rendimiento citada es una velocidad de generacion de aproximadamente 130 tokens por segundo, sin especificar el hardware ni la configuracion de inferencia empleada.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia: con 228,8M de parametros en BF16, el modelo ocupa aproximadamente 0,5 GB de pesos; con contexto de 8k tokens y overhead, bastan 1-2 GB de VRAM. El propio entrenamiento se realizo en una RTX 3050 de 6 GB.
-- GPU recomendadas: cualquier GPU moderna de consumo (RTX 3050, 3060, 4060 o superiores) es mas que suficiente; no se necesita hardware de datacenter para inferencia.
-- Consumer GPUs: cabe con holgura en practicamente cualquier GPU con 2 GB o mas de VRAM; tambien es viable su ejecucion en CPU dada su talla.
-- Opciones de despliegue: transformers (codigo de ejemplo en la model card, con trust_remote_code=True), Llama.cpp (soporte declarado por el autor). No se documenta soporte verificado en vLLM, TGI u Ollama.
-- Latencia y throughput: ~130 tokens por segundo de generacion segun el autor; no hay datos de latencia del primer token.
+- VRAM estimada para inferencia: en BF16, los 228,8M de parametros ocupan aproximadamente 0,46 GB, mas overhead de activaciones y cache KV; en la practica cabe holgadamente en 2-4 GB de VRAM. Con cuantizacion a 8 bits o 4 bits el peso se reduce a unos 0,23 GB o 0,12 GB respectivamente.
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; el propio autor entreno el modelo en una RTX 3050 de 6 GB. Tambien es viable en CPU para inferencia con llama.cpp.
+- Cabe en GPU consumer: si, practicamente en cualquier GPU con 4 GB o mas de VRAM (GTX 1650, RTX 3050, RTX 4060, etc.).
+- Opciones de despliegue: transformers con `trust_remote_code=True` (metodo documentado), llama.cpp mediante el fork Lightning.cpp (necesario porque llama.cpp estandar falla con `unknown model architecture: 'lightning'`), y potencialmente text-generation-inference segun los tags. No se documenta soporte para vLLM, Ollama o TGI de forma explicita.
+- Latencia y throughput: la model card indica aproximadamente 130 tokens por segundo, sin especificar hardware ni cuantizacion.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Enfoque |
-|---|---|---|---|---|
-| Luna 3 230M | 228,8M | ~8k | MIT | Conversacion ligera, roleplay, fine-tuning casero |
-| Qwen2.5-0.5B-Instruct | 494M | 32k (128k con YaRN) | Qwen Research (uso comercial condicionado) | Modelo pequeno multiuso con tool calling |
-| SmolLM2-360M-Instruct | 360M | 8k | Apache 2.0 | Modelo compacto de Hugging Face entrenado con recipe completo (11T tokens) |
-| TinyLlama-1.1B-Chat | 1,1B | 2k | Apache 2.0 | Base TinyLlama con chat, mas grande pero menos contexto |
+| Modelo | Parametros | Contexto | Licencia | Idiomas | Notas |
+|---|---|---|---|---|---|
+| Luna 3 230m | 228,8M | 8192 | MIT | Ingles | Arquitectura propietaria "lightning"; requiere Lightning.cpp para llama.cpp; entrenado en RTX 3050 |
+| SmolLM2-135M (HuggingFace) | 135M | 8192 | Apache 2.0 | Ingles y multilingue parcial | Referencia de la categoria de modelos diminutos; ampliamente soportado en llama.cpp y transformers |
+| Qwen2.5-0.5B | 494M | 32768 | Apache 2.0 | Multilingue | Mayor tamano y contexto; soporte nativo en la mayoria de frameworks |
+| TinyLlama-1.1B | 1,1B | 2048 | Apache 2.0 | Ingles | Mayor capacidad pero mas exigente en hardware |
 
-Luna 3 destaca por su contexto de 8k en una talla muy reducida y por una licencia MIT sin restricciones, pero frente a alternativas como SmolLM2 o Qwen2.5 ha sido entrenado con muchisimos menos datos y computo (5 horas en una RTX 3050), por lo que su calidad de generacion y cobertura de tareas es presumiblemente inferior.
+Los datos de SmolLM2, Qwen2.5 y TinyLlama se incluyen como referencia de categoria a partir de conocimiento general; la informacion proporcionada no incluye comparaciones oficiales ni benchmarks entre estos modelos y Luna 3.
 
 ## Limitaciones y advertencias
-
-- Calidad de salida limitada: el propio autor advierte que las salidas pueden ser incompletas, inexactas, repetitivas o no relacionadas con la entrada, y recomienda evaluarlas antes de cualquier otro uso.
-- Riesgo alto de alucinacion: propio de un modelo de 230M entrenado solo sobre OASST1, sin alineacion documentada (RLHF/DPO) ni preentrenamiento masivo documentado.
-- Monolingue en ingles: no hay soporte declarado para castellano ni otros idiomas; el rendimiento en otros idiomas es impredecible.
-- Sin guardrails integrados: el autor recomienda anadir las precauciones y filtros necesarios para prevenir usos indebidos.
-- Requiere custom code: la carga exige trust_remote_code=True, lo que implica ejecutar codigo arbitrario del repositorio; revisar antes de usar en entornos sensibles.
-- Sin benchmarks publicados: no hay forma objetiva de comparar su calidad con otros modelos antes de probarlo.
-- Proyecto de autor individual con muy poca traccion (476 descargas, 1 like en el momento de la ficha), sin comunidad amplia de verificacion ni mantenimiento garantizado.
-- La licencia MIT permite uso comercial sin restricciones, pero no hay documentacion de los datos de entrenamiento suficiente para auditar posibles sesgos o derechos de autor derivados.
-- Sesgos: al entrenarse sobre OASST1, hereda los sesgos de ese dataset (conversaciones en su mayoria en ingles, generadas por voluntarios); no hay evaluacion de sesgos publicada.
+- Calidad limitada por el tamano: con 230M de parametros y entrenamiento sobre un subconjunto de OASST1, la model card advierte que las salidas pueden ser incompletas, inexactas, repetitivas o no relacionadas con la entrada.
+- Riesgo de alucinacion elevado: el modelo no ha pasado por fases documentadas de RLHF o DPO, por lo que no hay alineacion ni salvaguardas incorporadas.
+- Solo ingles: no se declara soporte multilingue; el uso en castellano producira resultados deficientes.
+- Sesgos: no se documenta ninguna evaluacion de sesgos; al entrenarse sobre OASST1 y posiblemente FineWeb, puede heredar sesgos de esos corpus.
+- Restricciones de licencia: MIT permite uso comercial, pero la model card recomienda anadir guardrails y precauciones contra el mal uso; el usuario es responsable de las salvaguardas.
+- Dependencia de codigo personalizado: requiere `trust_remote_code=True`, lo que implica ejecutar codigo del autor; ademas, llama.cpp estandar no funciona y es necesario el fork Lightning.cpp.
+- Arquitectura no estandar: al no seguir una arquitectura ampliamente soportada, la integracion con herramientas del ecosistema (vLLM, TGI, Ollama) puede no estar disponible o requerir trabajo adicional.
+- Documentacion incompleta: no hay benchmarks publicados, no se detalla la composicion exacta del dataset ni el numero de tokens de entrenamiento, y la relacion entre la longitud de secuencia 8126 y el contexto de 8k no queda aclarada.
+- No apto para produccion sin evaluacion previa: la propia model card indica que la salida debe evaluarse antes de usarse para otros propositos.
 
 ## Enlaces
-
-- Modelo en Hugging Face: https://huggingface.co/Aobangaming/Luna-3-230m
-- Repositorio de la generacion anterior (Luna 2 70M): https://huggingface.co/Aobangaming/luna-2-70m
-- Dataset de entrenamiento (OpenAssistant OASST1): https://huggingface.co/datasets/OpenAssistant/oasst1
-- Web del creador: https://aobanweb.com
-- Discord de la comunidad: https://discord.gg/Ty775Ut26a
-- Paper, demo y repositorio de codigo independiente: no disponibles
+- Hugging Face: https://huggingface.co/Aobangaming/Luna-3-230m
+- Repositorio citado en la model card (generacion anterior): https://huggingface.co/Aobangaming/luna-2-70m
+- Lightning.cpp (fork de llama.cpp para la arquitectura Lightning): https://github.com/AobanZu/lightning.cpp
+- Web del autor: https://aobanweb.com
+- Discord del proyecto: https://discord.gg/Ty775Ut26a
+- Dataset OpenAssistant OASST1: https://huggingface.co/datasets/OpenAssistant/oasst1
+- Dataset FineWeb: https://huggingface.co/datasets/HuggingFaceFW/fineweb

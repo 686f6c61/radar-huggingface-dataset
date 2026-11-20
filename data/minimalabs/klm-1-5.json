@@ -42,7 +42,7 @@
     "region:us"
   ],
   "likes": 32,
-  "downloads_30d": 1766,
+  "downloads_30d": 1790,
   "trending_score": 12,
   "parameters": 98975308,
   "parameters_human": "99.0M",
@@ -62,31 +62,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "MinimaLabs/KLM-1.5 · Hugging Face",
-      "url": "https://huggingface.co/MinimaLabs/KLM-1.5",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Architecture graph for MinimaLabs/KLM-1.5. - hfviewer.com",
-      "url": "https://hfviewer.com/MinimaLabs/KLM-1.5",
-      "snippet": "MinimaLabs/KLM-1.5 architecture at a glance MinimaLabs/KLM-1.5 is a text-generation model (klm architecture). It uses 24 transformer layers, a hidden size of 512, and 8 query heads with 4 key/value heads (grouped-query attention). The feed-forward layers use an intermediate size of 1,408."
-    },
-    {
-      "title": "MinimaLabs/KLM-1.1 · Hugging Face",
-      "url": "https://huggingface.co/MinimaLabs/KLM-1.1",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "KLM-1.1 API & Inference Endpoint | FriendliAI",
-      "url": "https://friendli.ai/models/MinimaLabs/KLM-1.1",
-      "snippet": "Run KLM-1.1 with FriendliAI inference. KLM 1.1 is an 88M-parameter base language model, the continued training of KeyLM-75M. It scores 17.40 on the Open SLM…"
-    },
-    {
-      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
-      "url": "https://benchlm.ai/",
-      "snippet": "LLM Leaderboard & AI Model Benchmarks — October 2026 As of October 23, 2026, the BenchLM AI leaderboard ranks 228 models. Claude Opus 5.5 and GPT-6.1 Sol tie under the 90% interval rule. Open the evidence before choosing."
-    }
-  ]
+  "sources": []
 }

@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "Menella/llm-course-hw3-dora",
+  "slug": "menella-llm-course-hw3-dora",
+  "author": "Menella",
+  "url": "https://huggingface.co/Menella/llm-course-hw3-dora",
+  "created_at": "2026-11-18T21:00:13.000Z",
+  "updated_at": "2026-11-19T20:36:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "mistral",
+    "dora",
+    "sentiment-analysis",
+    "en",
+    "dataset:cardiffnlp/tweet_eval",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 300049792,
+  "parameters_human": "300.0M",
+  "storage_bytes": 1200233224,
+  "storage_human": "1.2 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

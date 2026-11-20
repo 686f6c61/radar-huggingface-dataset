@@ -2,97 +2,104 @@
 
 ## Resumen
 
-qwen3.8-4b-empero-base-Hermes-agentic-subagent-toolcalls (v20) es un modelo de 4.326 millones de parámetros (aproximadamente 4B) desarrollado por ferry-el-kom, derivado del modelo base Qwen3.8-4B "empero" mediante un ajuste fino supervisado con LoRA. Está especializado en tool calling y function calling multi-turno bajo el protocolo real del harness de Hermes, con un catálogo de seis herramientas (terminal, execute_code, read_file, write_file, search_files y patch). El objetivo es disponer de un subagente ligero capaz de ejecutar trabajo real sobre un harness en vivo, verificado por inspección de artefactos y no por autoinforme.
+qwen3.8-4b-empero-base-Hermes-agentic-subagent-toolcalls (etiquetado internamente como v20) es un modelo de 4.326.350.848 parametros derivado de una base Qwen3.8-4B "empero" destilada, afinado mediante LoRA SFT sobre trazas reales del protocolo Hermes. Lo desarrolla el usuario independiente ferry-el-kom y esta orientado especificamente a actuar como subagente con capacidad de tool calling y function calling en entornos de terminal, gestion de ficheros, ejecucion de codigo y tareas de hardware. Su interes radica en que no es un modelo generalista: es una destilacion de trazas de profesores en la nube (GLM-5.2/5.3 y DeepSeek) ejecutando flujos de trabajo de produccion con privilegios root, lo que le confiere un perfil de comportamiento muy concreto y poco habitual en la franja de 4B.
 
-El modelo incorpora system prompts de categoría (code, file-ops, search, hardware y general) entrenados directamente en los pesos, respondiendo a un enrutador de prompts por tarea al estilo MoPs. También integra JSON Mode para salidas estructuradas estrictas sin herramientas, y una disciplina de verificación previa a la declaración de finalización (ls, cat o reejecución) para mitigar la fabricación de resultados. Los datos de entrenamiento se normalizaron para eliminar cualquier identidad de máquina (rutas, usuario, IPs, MACs), lo que favorece la portabilidad.
+El modelo se distribuye con licencia Apache-2.0, pesos en safetensors y GGUF (q8_0), y una plantilla de chat especifica que incrusta bloques `<tools>`/`<tool_call>` junto con etiquetas de razonamiento. La model card lo marca explicitamente como DISCONTINUED y sustituido por una v21, y lo posiciona como material de test, investigacion y desarrollo, no como modelo de produccion estable. Aun asi, su relevancia practica esta en el nicho: es uno de los pocos modelos de clase 4B que, segun el autor, completa tareas reales verificadas por inspeccion de artefactos en lugar de autoinformar exito.
 
-Se trata de un modelo de la familia Qwen3.8 con arquitectura MTP (multi-token prediction), entrenado con 2.122 ejemplos (1.953 de entrenamiento y 169 de validación) a partir de cuatro profesores en la nube (GLM-5.2/5.3 y DeepSeek), 450 ejemplos de NousResearch/hermes-function-calling-v1 y 44 trayectorias de disciplina. Es relevante para desarrolladores que necesitan un subagente de tool calling de bajo coste, desplegable en GPU de consumo, y con licencia Apache-2.0 que permite uso comercial.
+La informacion disponible es limitada y procede casi exclusivamente de la model card del autor. No hay paper, no hay evaluaciones externas independientes y los benchmarks publicados son comparaciones internas de la propia linea de versiones del autor, no comparaciones contra el estado del arte.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de la familia Qwen3.8 (Qwen3_5ForCausalLM) con MTP (multi-token prediction) |
-| Parametros totales | 4.326.350.848 (aproximadamente 4B) |
+| Arquitectura | Transformer Qwen3.8 (clase `Qwen3_5ForCausalLM`), con MTP (multi-token prediction) |
+| Parametros totales | 4.326.350.848 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (el entrenamiento uso SEQ 768, pero la ventana nativa del base no se especifica) |
-| Tipos de cuantizacion | GGUF q8_0 publicado en el repo; el autor menciona NF4 y bf16 en el pipeline de evaluacion |
-| Idiomas soportados | en (ingles), ro (rumano) |
+| Longitud de contexto | no disponible (entrenamiento con SEQ 768; ventana nativa no especificada) |
+| Tipos de cuantizacion | GGUF q8_0 publicado; bf16 en safetensors; NF4 mencionado pero con generacion rota en ROCm segun el autor |
+| Idiomas soportados | en, ro |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (transformers) y GGUF (q8_0) |
+| Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3.8-4B "empero", un base destilado de la arquitectura Qwen3.8 con MTP, y se ajusta mediante LoRA SFT desde cero (rank r=16, targets q, k, v, o, g, u, d) con LR coseno de 2e-5, precisión bf16, SEQ 768, ACCUM 16 y 244 pasos (2 épocas). El entrenamiento se ejecutó en una AMD RX 6800 XT con ROCm durante aproximadamente 6,3 horas, con loss final de 1,30 y bucket loss de 1,78 a 1,48. Tras el ajuste se realizó el merge en Qwen3_5ForCausalLM, la restauración de MTP y la exportación a GGUF q8_0.
+La base es un transformer denso de la familia Qwen3.8 con 4.326 millones de parametros y mecanismo MTP (multi-token prediction), heredado de la base "empero" destilada. Sobre esa base se aplico un LoRA SFT (rango r=16, targets q, k, v, o, g, u, d) partiendo de pesos frescos, con LR coseno de 2e-5, secuencia de 768 tokens, acumulacion de gradiente 16, precision bf16 y 244 pasos (2 epocas). El entrenamiento completo consumio aproximadamente 6,3 horas en una AMD RX 6800 XT con ROCm, con perdida final de 1,30 y perdida por bucket de 1,78 a 1,48. Tras el entrenamiento se realizo merge en `Qwen3_5ForCausalLM`, restauracion de MTP y exportacion a GGUF q8_0.
 
-El dataset combina 2.122 ejemplos construidos mediante extracción de ventanas de estado de cuatro sesiones de profesores en la nube (atribución condicionada), un constructor display-proof con filtros P5 para descartar turnos muertos, de autoduda o corregidos (938 ejemplos limpios), normalización universal de rutas, hostnames, IPs privadas y MACs (0 residuos de 4.405), y una mezcla final con 450 ejemplos single-shot de hermes-function-calling-v1, 44 trayectorias de disciplina (incluyendo 8 de JSON Mode) y smoltalk. A cada ejemplo se le asigna uno de los cinco system prompts de categoría. La plantilla de chat (ChatML con bloques `<tools>` y `<tool_call>` más etiquetas de thinking) está embebida en `tokenizer_config.json` y también se distribuye como `chat_template.jinja`.
+El dataset consta de 2.122 ejemplos (1.953 de entrenamiento, 169 de validacion) construidos a partir de cuatro profesores en la nube (GLM-5.2/5.3 y DeepSeek), 450 ejemplos de un solo turno de `NousResearch/hermes-function-calling-v1`, 44 trayectorias de disciplina (JSON Mode, portabilidad, explicitud de versiones) y datos de smoltalk. El pipeline incluye extraccion de ventanas de estado con atribucion, un constructor de prueba de visualizacion con filtros P5 (938 ejemplos limpios), normalizacion universal de identidad de maquina (rutas a `~`, hostname, IPs privadas y MACs redactadas, con 0 de 4.405 residuos) y asignacion de cinco system prompts de categoria (code, file-ops, search, hardware, general) por ejemplo. La innovacion tecnica mas destacable es el entrenamiento del enrutado de prompt de categoria directamente en los pesos (estilo MoPs) y la incorporacion de "verification-before-done": el modelo aprende a comprobar estado real (ls, cat, reejecucion) antes de declarar finalizacion.
 
 ## Capacidades
 
-- Tool calling multi-turno sobre el protocolo del harness de Hermes con seis herramientas: terminal, execute_code, read_file, write_file, search_files y patch, con parse-retry, loop-guard y verify-gate.
-- System prompts de categoría entrenados en los pesos (code, file-ops, search, hardware, general), pensados para un enrutador de prompts por tarea.
-- JSON Mode: salidas estructuradas estrictas sin uso de herramientas.
-- Verificación antes de finalizar: el modelo está entrenado para comprobar el estado real (ls, cat, reejecución) antes de declarar completada una tarea, como mecanismo antifabricación.
-- Portabilidad: direccionamiento dinámico de dispositivos y puertos (lsusb a /dev/serial/by-id) y comprobaciones de versión de python3, sin identidad de máquina en los datos.
-- Generación de texto conversacional y soporte de agentes multi-paso dentro del harness.
-- Capacidades multilingües limitadas a inglés y rumano.
-- Modo thinking con gating (el autor reporta que el 33,7 % de los turnos usan razonamiento explícito).
+- Tool calling multi-turno sobre el protocolo Hermes con un catalogo de seis herramientas: terminal, execute_code, read_file, write_file, search_files y patch.
+- Mecanismos de robustez en el bucle de agente: parse-retry, loop-guard y verify-gate.
+- System prompts de categoria entrenados en pesos para code, file-ops, search, hardware y general, con enrutado por tarea.
+- JSON Mode para salidas estructuradas estrictas sin herramientas.
+- Verificacion antes de finalizar (anti-fabricacion): comprobacion de estado real antes de declarar exito.
+- Portabilidad: direccionamiento dinamico de dispositivos y puertos (por ejemplo `lsusb` a `/dev/serial/by-id`) y comprobacion de version de python3, sin identidad de maquina en los datos.
+- Capacidades de operacion de sistema: comandos sudo, aplicacion de parches, reflasheo de firmware y depuracion a nivel de microcontrolador (ECU/MCU, dispositivos embebidos Android/MicroPython/Linux/RTOS), segun las trazas de los profesores.
+- Multilingue limitado a ingles y rumano.
+- Modo de razonamiento con etiquetas de thinking, con gating recomendado (33,7% de los turnos segun el autor).
 
 ## Casos de uso
 
-- Automatización de tareas de terminal en un subagente: el modelo puede encadenar llamadas a terminal, read_file y patch para inspeccionar un repositorio, aplicar cambios y verificar el resultado antes de reportar, lo que encaja con pipelines de CI/CD que requieren confirmación de artefactos.
-- Agente de operaciones de ficheros: con write_file, search_files y patch, resulta adecuado para tareas de refactorización, búsqueda de patrones y edición controlada dentro de un directorio asignado, con la disciplina de workdir supervisada por el harness.
-- Enrutador de tareas con system prompts de categoría: al tener los prompts code, file-ops, search, hardware y general entrenados en los pesos, puede integrarse detrás de un router que seleccione el prompt adecuado por tarea sin coste adicional de ingeniería de prompts.
-- Extracción de datos estructurados: JSON Mode permite generar salidas estrictas y parseables para alimentar pipelines de ingestión, formularios o APIs sin necesidad de herramientas externas.
-- Diagnóstico de hardware y puertos serie: el direccionamiento dinámico (lsusb, /dev/serial/by-id) y las comprobaciones de versión de python3 lo hacen útil en entornos de laboratorio o dispositivos embebidos donde la identidad de máquina no debe codificarse en el modelo.
-- Subagente de bajo coste en GPU de consumo: con 4B parámetros y GGUF q8_0, puede desplegarse en una RX 6800 XT o en GPUs consumer equivalentes para tareas de agente ligero, reduciendo el coste frente a modelos de mayor tamaño.
-- Verificación de estado en tareas de automatización: la disciplina de verificación antes de finalizar sirve para tareas donde la fabricación de resultados es costosa, como comprobación de despliegues o validación de configuraciones.
+- Automatizacion de operaciones en terminal: el modelo puede encadenar comandos de shell, leer salidas y corregir errores dentro del bucle Hermes, lo que lo hace adecuado para tareas de administracion repetitivas en Ubuntu 22.04 con supervision humana.
+- Gestion de ficheros en pipelines de CI/CD: con read_file, write_file, search_files y patch puede aplicar cambios acotados sobre un arbol de codigo y verificar el resultado antes de cerrar la tarea, integrándose como subagente de un orquestador mayor.
+- Depuracion de dispositivos embebidos: su entrenamiento con trazas de `lsusb`, `/dev/serial/by-id` y comprobaciones de version lo orienta a diagnostico de placas y puertos serie en laboratorio, siempre con guardrails por el riesgo de reflasheo.
+- Asistente de soporte tecnico de hardware: puede interpretar salidas de sistema y proponer secuencias de diagnostico para ECU/MCU o dispositivos Android/MicroPython, actuando como primer nivel antes de escalar a un ingeniero.
+- Generacion de salidas JSON estrictas: en modo JSON sin herramientas sirve para extraer o estructurar informacion en flujos donde no se permite ejecucion de codigo.
+- Subagente especializado en un agente multi-agente: por su tamano (4B) y su formato GGUF q8_0 puede desplegarse en una sola GPU de consumo como trabajador de tareas concretas dentro de un sistema mayor orquestado por un modelo mas grande.
+- Pruebas de robustez y evaluacion de agentes: util como sujeto de test para medir fabricacion de informes, disciplina de directorio de trabajo y adherencia al protocolo en entornos de investigacion.
 
 ## Benchmarks y rendimiento
+
+Los unicos datos disponibles son comparaciones internas de la linea de versiones del autor, no comparaciones contra modelos externos ni benchmarks estandar (MMLU, HumanEval, GSM8K no publicados).
 
 | Metrica | v20 | v9 (campeon) | v13 | v15 | v17 | v18 |
 |---|---|---|---|---|---|---|
 | agent-loop12 (ollama) | 9/12 (4,4 turnos) | 9/12 | 7/12 | 11/12* | 11/12* | 10/12* |
 | Harness smoke (7 tareas reales, artefactos verificados) | 5/7 reales | no disponible | no disponible | fabricado | no disponible | desviado |
-| Grammar: ident / json | 5/5 / True | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Gramatica: ident / json | 5/5 / True | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-*Puntuaciones de sandbox eval de la era previa al harness, no comparables con las puntuaciones de harness.
+*Evaluacion en sandbox de la era pre-harness, no comparable con las puntuaciones de harness.
 
-Referencias externas en la misma suite de harness smoke: hermes3-3b (Nous, 3B) fabrica de forma instantánea; qwen3.8-9b-hermes-function-calling-v2 se desvía (rutas de Windows, extracción de prompt). Según el autor, v20 es el único modelo de clase 4B que ejecutó las tareas con herramientas reales.
+Referencias externas en la misma suite de harness smoke segun el autor: hermes3-3b (Nous, 3B) fabrica de inmediato; qwen3.8-9b-hermes-function-calling-v2 se desvia (rutas de Windows, extraccion de prompt). El autor afirma que v20 es el unico modelo de clase 4B que completo las tareas con herramientas reales. No se han publicado resultados de benchmarks estandar en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita; con 4.326 millones de parámetros, en q8_0 el peso ocupa aproximadamente 4,3 GB, y en bf16 aproximadamente 8,7 GB, sin contar overhead de contexto y KV cache.
-- GPU recomendadas: no disponible en la información proporcionada. El autor entrenó en una AMD RX 6800 XT (16 GB) con ROCm, lo que sugiere que cabe en GPUs consumer de 16 GB en cuantización q8_0.
-- Cabe en GPU consumer: sí, según el entrenamiento y la exportación q8_0 en una RX 6800 XT; no se especifican otras GPU consumer concretas.
-- Opciones de despliegue: transformers (con `trust_remote_code=True` y `fix_mistral_regex=True`), Ollama a partir del GGUF q8_0 del repo (`ollama create qwen38-hermes-agentic-v20 -f Modelfile.ollama`). El autor indica que la generación en NF4 y bf16 está rota en ROCm y que la evaluación se hizo solo en Ollama.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: en bf16, aproximadamente 8,7 GB solo para pesos (4,33B parametros a 2 bytes) mas overhead de contexto y KV cache; en GGUF q8_0, en torno a 4,6 GB de pesos mas overhead.
+- GPU recomendadas: para bf16, GPU con 16 GB o mas (RTX 4080/4090, A100, H100); para q8_0, GPU de 8-12 GB (RTX 3060 12 GB, RTX 4060 Ti 16 GB).
+- Cabe en GPU de consumo: si, en q8_0 con 8 GB o mas; en bf16 requiere 12-16 GB.
+- Opciones de despliegue: transformers (con `trust_remote_code=True`), Ollama mediante el GGUF q8_0 y el `Modelfile.ollama` incluido; el autor evalua exclusivamente en Ollama. vLLM, TGI y llama.cpp no estan confirmados en la informacion disponible.
+- Latencia y throughput: no disponibles. El autor senala que la generacion en NF4 y bf16 esta rota en ROCm, por lo que las mediciones solo se hicieron en Ollama.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.8-4b-empero-base-Hermes-agentic-subagent-toolcalls (v20) | 4,33B | no disponible | Tool calling multi-turno sobre harness Hermes, JSON Mode, verificación | Apache-2.0 | Hugging Face (safetensors + GGUF q8_0) |
-| hermes3-3b (Nous) | 3B | no disponible | Tool calling generalista | no disponible en la informacion | Hugging Face |
-| qwen3.8-9b-hermes-function-calling-v2 | 9B | no disponible | Function calling | no disponible en la informacion | Hugging Face |
+| qwen3.8-4b-empero-base-Hermes-agentic-subagent-toolcalls (v20) | 4,33B | no disponible | Subagente Hermes con tool calling y verificacion | Apache-2.0 | Hugging Face, GGUF q8_0 |
+| hermes3-3b (Nous) | 3B | no disponible | Tool calling generalista | no disponible | Hugging Face |
+| qwen3.8-9b-hermes-function-calling-v2 | 9B | no disponible | Function calling Hermes | no disponible | Hugging Face |
+| qwen3.8-4b-Hermes-agentic-subagent-toolcalls (v21) | no disponible | no disponible | Sucesor declarado de v20 | no disponible | Hugging Face |
 
-Según la model card, en la suite harness smoke de 7 tareas reales con artefactos verificados, v20 obtuvo 5/7 reales, mientras que hermes3-3b fabricó de forma instantánea y qwen3.8-9b-hermes-function-calling-v2 se desvió con rutas de Windows y extracción de prompt. No se dispone de datos de benchmarks estandarizados (MMLU, HumanEval, GSM8K) para ninguno de los modelos comparados en la información proporcionada.
+La comparacion cuantitativa con alternativas externas no esta disponible: los unicos datos de rendimiento son internos a la linea del autor y las referencias a hermes3-3b y al modelo de 9B son cualitativas (fabricacion y desvio respectivamente).
 
 ## Limitaciones y advertencias
 
-- Fabricación del informe final: el modelo aún puede reportar sin verificar; se recomienda mitigar con reporte condicionado por artefactos a nivel de harness.
-- Disciplina de directorio de trabajo: puede escribir fuera del directorio asignado; conviene supervisar o restringir mediante configuración del harness.
-- Razonamiento de 4B: las cadenas de razonamiento largas se degradan; el autor recomienda gating de thinking (33,7 % de los turnos).
-- Idiomas limitados a inglés y rumano; no hay soporte declarado de castellano.
-- Longitud de contexto nativa no documentada; el entrenamiento usó SEQ 768, lo que puede limitar la generalización a ventanas muy largas.
-- Generación en NF4 y bf16 rota en ROCm según el autor; la evaluación se realizó solo con Ollama y GGUF q8_0.
-- Licencia Apache-2.0: permite uso comercial, pero los datasets de entrenamiento se publican como datasets privados de HF, lo que limita la reproducibilidad completa.
-- Riesgo de sesgos: no disponible en la información proporcionada.
-- Modelo con 0 descargas y 0 likes en el momento de la consulta; madurez y validación comunitaria aún inexistentes.
+- Modelo marcado como DISCONTINUED por el propio autor y sustituido por la v21; no debe considerarse una version estable ni mantenida.
+- Fabricacion de informes finales: el modelo puede declarar finalizacion sin verificar; el autor recomienda mitigar con reporte condicionado a artefactos en el harness.
+- Disciplina de directorio de trabajo deficiente: puede escribir fuera del directorio asignado; requiere supervision o restriccion en la configuracion del harness.
+- Razonamiento limitado por tamano: cadenas largas de razonamiento degradan; se recomienda gating de thinking (33,7% de los turnos).
+- Comportamiento potencialmente peligroso: entrenado con trazas de profesores con privilegios root, comandos sudo, aplicacion de parches y reflasheo de firmware; el autor advierte explicitamente del riesgo y exige guardrails.
+- Solo probado en Ubuntu 22.04; en otros sistemas operativos el comportamiento es desconocido.
+- Idiomas limitados a ingles y rumano; no hay soporte declarado de castellano.
+- Ventana de contexto nativa no documentada; el entrenamiento uso secuencias de 768 tokens, lo que sugiere un uso orientado a ventanas cortas.
+- Sin evaluacion externa independiente ni benchmarks estandar; los resultados publicados son internos y no comparables con el estado del arte.
+- Los datasets de entrenamiento se publican como datasets privados en Hugging Face, lo que limita la reproducibilidad y la auditoria.
+- Licencia Apache-2.0 permite uso comercial, pero el estado DISCONTINUED y los riesgos operativos desaconsejan produccion sin evaluacion propia.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/ferry-el-kom/qwen3.8-4b-empero-base-Hermes-agentic-subagent-toolcalls
+- Hugging Face: https://huggingface.co/ferry-el-kom/qwen3.8-4b-empero-base-Hermes-agentic-subagent-toolcalls
 - Dataset SFT (privado): https://huggingface.co/datasets/ferry-el-kom/qwen3.8-v20-hermes-agentic-sft
-- Dataset de fuentes SFT (privado): https://huggingface.co/datasets/ferry-el-kom/qwen3.8-v20-sft-sources
+- Dataset de fuentes (privado): https://huggingface.co/datasets/ferry-el-kom/qwen3.8-v20-sft-sources
 - Dataset de referencia de function calling: https://huggingface.co/datasets/NousResearch/hermes-function-calling-v1
+- Paper, blog o repositorio adicional: no disponible

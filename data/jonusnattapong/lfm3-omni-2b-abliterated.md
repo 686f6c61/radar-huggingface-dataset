@@ -2,90 +2,104 @@
 
 ## Resumen
 
-LFM3-Omni-2B-abliterated es una edicion a nivel de pesos del modelo multimodal LiquidAI/LFM3-Omni-2B, publicado por el usuario JonusNattapong. El modelo base, desarrollado por Liquid AI, es un modelo "any-to-any" de 2.166.928.384 parametros que acepta texto, imagen y video como entrada y produce texto y voz a 24 kHz como salida, sobre un backbone hibrido decoder-only que combina convoluciones cortas con atencion deslizante y atencion completa.
+LFM3-Omni-2B-abliterated es un ajuste fino del modelo omnimodal LFM3-Omni-2B de Liquid AI, publicado por el usuario JonusNattapong en Hugging Face. Se trata de una versión "abliterated" (sin censura) en la que se han eliminado los vectores de dirección de rechazo mediante proyección ortogonal sobre las matrices de pesos del transformer, manteniendo intactas las proyecciones de los tokenizadores de audio y visión. El modelo conserva la arquitectura híbrida de convolución y atención de Liquid AI y sus capacidades nativas de texto, imagen y audio.
 
-La modificacion aplicada es una "abliteracion": se estima una direccion de rechazo a partir de la diferencia media de estados ocultos entre prompts daninos y benignos en el ultimo token del prompt, y se proyecta ortogonalmente fuera de las matrices de pesos que escriben en el flujo residual del backbone de texto. Solo se modifican esas matrices; la arquitectura, el tokenizador, la plantilla de chat y el codigo remoto permanecen intactos. No es un fine-tuning por gradiente, sino una edicion directa de pesos.
+Con 2.166.928.384 parámetros (aproximadamente 2,1 mil millones), el modelo está pensado para tareas any-to-any: entrada y salida de texto, imagen y audio, incluyendo speech-to-speech. Su relevancia actual radica en que ofrece un modelo omnimodal de pequeño tamaño, ejecutable en hardware de consumo, sin las restricciones de rechazo del modelo base, lo que lo hace atractivo para investigación en seguridad, ingeniería de casos límite y despliegues donde el modelo base resulta demasiado restrictivo.
 
-El resultado es un modelo que reduce su comportamiento de rechazo y puede producir contenido que el modelo base deniega. Se publica explicitamente para investigacion de seguridad, red-teaming y estudio de mecanismos de rechazo. Es relevante ahora porque permite estudiar direcciones de rechazo en arquitecturas hibridas conv/atencion, un terreno menos explorado que los transformers puros, y porque el modelo base aporta capacidades omni (voz, vision, video) en un tamano de 2B apto para edge.
+El ajuste se distribuye en formato safetensors BF16 (28,6 GB de repositorio) y cuenta con variantes GGUF para llama.cpp y Ollama, además de una versión con Adaptive CoT (razonamiento dinámico fast/deep). La licencia es lfm1.0, heredada del modelo base, con las restricciones que ello implica para uso comercial.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Decoder-only hibrida: 24 capas (13 convolucion, 6 atencion completa, 5 atencion de ventana deslizante), hidden size 2.048, FFN intermedio 7.680, GQA con 16 cabezas de query y 4 de key-value en capas de atencion completa |
-| Parametros totales | 2.166.928.384 (2,17B) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | 32.000 tokens |
-| Tipos de cuantizacion | No disponible en la informacion proporcionada |
-| Idiomas soportados | Texto: EN, TH, AR, ZH, FR, DE, IT, JA, KO, PT, ES, VI, ID, HI, RU, PL, DA, EL, FI, HE, NL, SV, TR. Voz: locales heredados del modelo base |
-| Licencia | LFM Open License v1.0 (lfm1.0), heredada del modelo base |
-| Formato de pesos | Safetensors (repo de 8,7 GB), con codigo remoto personalizado (custom_code) |
+| Arquitectura | Híbrida convolución + atención transformer (LFM3 de Liquid AI) |
+| Parámetros totales | 2.166.928.384 (≈2,1 B) |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | BF16 (safetensors), GGUF Q8_0 y Q4_K_M (repositorio GGUF), GGUF v8 Adaptive CoT |
+| Idiomas soportados | en, th, ar, zh, fr, de, it, ja, ko, pt, es, vi, id, hi, ru, pl, da, el, fi, he, nl, sv, tr (23 idiomas) |
+| Licencia | lfm1.0 (license: other, license_name: lfm1.0) |
+| Formato de pesos | safetensors (BF16), GGUF (llama.cpp/Ollama) |
 
 ## Arquitectura y entrenamiento
 
-El backbone es un modelo decoder-only hibrido de tipo LFM3 con 24 capas organizadas en tres regimenes: 13 capas de convolucion corta, 6 capas de atencion completa y 5 capas de atencion de ventana deslizante. Emplea atencion con query agrupada (GQA) de 16 cabezas de query y 4 de key-value en las capas de atencion completa, con un tamano oculto de 2.048 y una capa feed-forward de 7.680 de dimension intermedia. El vocabulario de texto es de 128k tokens. El modelo es multimodal: procesa texto, imagen y video, y genera texto y voz a 24 kHz. Es un modelo no razonador: `enable_thinking=True` no esta soportado.
+El modelo se basa en LFM3-Omni-2B de Liquid AI, que emplea una arquitectura híbrida que combina capas de convolución con capas de atención transformer. Esta combinación busca reducir el coste computacional de la atención completa manteniendo la capacidad de modelado de dependencias de largo alcance. El modelo es omnimodal: integra tokenizadores específicos para audio y visión (`audio_tokenizer`, `mmproj`) junto al tokenizador de texto, lo que permite entrada y salida en múltiples modalidades.
 
-El proceso de abliteracion no es un entrenamiento por gradiente. Se estima una direccion `r` como la diferencia media de estados ocultos entre prompts daninos y benignos en el ultimo token del prompt, y se proyecta ortogonalmente fuera de las matrices de pesos que escriben en el flujo residual del backbone de texto. La proyeccion solo elimino parcialmente la senal medida: se retuvo entre el 36 % y el 60 % de la norma de la direccion por capa. Los prompts de abliteracion fueron exclusivamente en ingles, por lo que la eliminacion de rechazo solo esta validada en ese idioma. No se dispone de datos sobre el numero de tokens de entrenamiento del modelo base ni sobre su composicion de dataset o uso de RLHF/DPO.
+El proceso de abliteración consistió en identificar vectores de dirección de rechazo mediante pares de prompts contrastivos (neutros frente a prompts que disparan rechazo en consultas de seguridad e ingeniería), y restarlos de las matrices de proyección clave de las capas mediante proyección ortogonal: W_abliterated = W − (W · v̂) ⊗ v̂. Las proyecciones de los tokenizadores de audio y visión y los hiperparámetros arquitectónicos se mantuvieron intactos para preservar las capacidades no textuales. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el ajuste; el autor solo documenta el método de abliteración.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno en 17 idiomas de texto.
-- Entrada multimodal: imagen y video, ademas de texto.
-- Salida de voz a 24 kHz (speech-to-speech), heredada del modelo base.
-- Capacidad de reduccion de rechazo en ingles: responde a peticiones que el modelo base deniega.
-- No soporta modo de razonamiento (`enable_thinking=True` no esta disponible).
-- No validado para uso agentico con tool calling ni para recuperacion en contexto largo.
-- No validado para comportamiento de rechazo en idiomas distintos del ingles.
+- Generación de texto y razonamiento, incluyendo respuestas directas sin rechazo a consultas técnicas y de seguridad.
+- Procesamiento de imagen (image-text-to-text) mediante el pipeline any-to-any.
+- Procesamiento de audio, incluyendo speech-to-speech, gracias a los tokenizadores de audio nativos.
+- Soporte de tool calling / function calling: la variante v8 Adaptive CoT reporta una precisión de esquema del 96,0 % y una tasa de coincidencia exacta de herramientas del 92,0 %.
+- Razonamiento multi-paso y modo de pensamiento adaptativo en la variante v8 (rutas fast y deep).
+- Capacidades multilingües en 23 idiomas, con especial atención al tailandés (el autor incluye descripción y evaluación en tailandés).
+- Formato de chat compatible con la plantilla de cabeceras de Llama-3 (`<|start_header_id|>...<|end_header_id|>`).
 
 ## Casos de uso
 
-- Investigacion de seguridad y red-teaming: el modelo sirve para generar datos de ataque y estudiar que tipos de peticiones siguen siendo rechazadas y cuales no, con revision humana obligatoria.
-- Estudio de mecanismos de rechazo en arquitecturas hibridas: permite analizar como se distribuye la direccion de rechazo en capas de convolucion frente a capas de atencion, algo poco documentado en transformers puros.
-- Generacion de datos para clasificadores de seguridad externos: las respuestas del modelo pueden usarse como ejemplos negativos para entrenar filtros de moderacion, siempre con supervision humana.
-- Analisis de degradacion de capacidades tras edicion de pesos: comparar el rendimiento en prompts benignos frente al modelo base para medir el coste de la proyeccion (36-60 % de la norma retenida por capa).
-- Experimentacion multimodal en edge: el tamano de 2,17B y el backbone hibrido permiten probar entrada de imagen/video y salida de voz en hardware limitado, aunque la abliteracion solo afecta al backbone de texto.
-- Evaluacion de robustez multilingue del rechazo: comprobar si la reduccion de rechazo observada en ingles se transfiere a los otros 16 idiomas de texto, dado que los prompts de abliteracion fueron solo en ingles.
+- Investigación en seguridad ofensiva y defensiva: el modelo responde a consultas sobre inyección SQL ciega, exploits y remediación técnica sin rechazos, lo que lo hace útil para formación en seguridad y análisis de vulnerabilidades en entornos controlados.
+- Atención al cliente automatizada multimodal: al aceptar texto, imagen y audio, puede gestionar conversaciones multi-turno donde el usuario adjunta capturas o mensajes de voz, aunque la longitud de contexto no está documentada.
+- Asistentes de voz en tiempo real: la capacidad speech-to-speech y el tamaño de 2,1 B permiten despliegues de baja latencia en local para transcripción, respuesta hablada y diálogo por voz.
+- Generación de código y automatización de pipelines: con tool calling y function calling, puede integrarse en flujos de CI/CD para invocar herramientas, consultar APIs y ejecutar tareas de razonamiento multi-paso.
+- Procesamiento de documentos con imagen y texto: extracción y razonamiento sobre capturas, diagramas o formularios combinados con instrucciones textuales, aprovechando el pipeline any-to-any.
+- Evaluación comparativa de alineación y censura: sirve como contrapunto al modelo base para estudiar el efecto de la abliteración en la calidad de las respuestas, el razonamiento y la preservación de modalidades.
+- Despliegue en hardware de consumo: las variantes GGUF Q4_K_M y Q8_0 permiten ejecutar el modelo en llama.cpp u Ollama en equipos con GPU de gama media o incluso CPU, para prototipos y demos locales.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona una seccion de evaluacion, pero no se han proporcionado cifras numericas de MMLU, HumanEval, GSM8K ni de evaluaciones de seguridad cuantitativas. La unica metrica concreta disponible es que 2 de 6 prompts de seguridad siguen siendo rechazados tras la abliteracion, y que la proyeccion retuvo entre el 36 % y el 60 % de la norma de la direccion de rechazo por capa.
+Los datos publicados por el autor comparan la versión v6 (base abliterada) con la v8 (Adaptive CoT), sobre 145 casos de prueba reproducibles (290 generaciones):
+
+| Dimensión | v6 (base abliterada) | v8 (Adaptive CoT) | Delta |
+|---|---|---|---|
+| Precisión de enrutamiento adaptativo | 35,0 % | 75,0 % | +40,0 % |
+| Precisión fast-path | 70,0 % | 95,0 % | +25,0 % |
+| Precisión deep-CoT | 0,0 % | 55,0 % | +55,0 % |
+| Precisión de esquema en tool calling | 34,0 % | 96,0 % | +62,0 % |
+| Tasa de coincidencia exacta de herramientas | 32,0 % | 92,0 % | +60,0 % |
+| Precisión matemática GSM8K-TH | 50,0 % | 73,3 % | +23,3 % |
+| Comprensión de QA en tailandés | 36,7 % | 43,3 % | +6,7 % |
+| Tasa de rechazo técnico | 0,0 % | 0,0 % | empate |
+| Latencia fast-path | 6,51 s | 3,40 s | −3,12 s |
+| Errores de ejecución | 0 | 0 | empate |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K en inglés) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible en la informacion proporcionada. El repo pesa 8,7 GB en safetensors, lo que da una referencia del orden de magnitud en precision completa.
-- GPU recomendadas: no disponible en la informacion proporcionada.
-- Cabe en GPU consumer: no disponible en la informacion proporcionada; el tamano de 2,17B sugiere que es viable en GPUs consumer, pero no se confirma en la documentacion.
-- Opciones de despliegue: la model card solo documenta `transformers` (version >= 5.0) con `AutoModelForImageTextToText` y `trust_remote_code=True`. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponible en la informacion proporcionada.
+- VRAM estimada para inferencia en BF16: aproximadamente 4,3 GB solo para pesos (2,166 B × 2 bytes), más overhead de activaciones y tokenizadores multimodales; en la práctica se recomienda al menos 8-12 GB para contexto moderado.
+- Cuantización Q8_0 GGUF: aproximadamente 2,3 GB de pesos; Q4_K_M: aproximadamente 1,3 GB.
+- GPU recomendadas: A100 o H100 para BF16 con contexto largo y despliegue concurrente; RTX 4090, RTX 3090 o RTX 4080 para BF16 en local; GPUs de 8 GB o menos para cuantizaciones GGUF.
+- Cabe en GPU de consumo: sí, especialmente en cuantizaciones Q4_K_M y Q8_0; en BF16 es viable en GPUs de 12 GB o más.
+- Opciones de despliegue: Transformers (con `trust_remote_code=True`), llama.cpp, Ollama (variantes GGUF), y potencialmente vLLM o TGI si soportan la arquitectura LFM3 (no confirmado en la información disponible).
+- Latencia y throughput: el autor reporta latencias de 6,51 s (v6) y 3,40 s (v8) en fast-path, sin especificar hardware ni longitud de salida; no hay datos de throughput.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Modalidad | Licencia | Estado |
+| Modelo | Parámetros | Contexto | Modalidades | Licencia | Notas |
 |---|---|---|---|---|---|
-| LFM3-Omni-2B-abliterated | 2,17B | 32K | Texto, imagen, video, voz | LFM Open License v1.0 | Disponible en Hugging Face |
-| LiquidAI/LFM3-Omni-2B | 2,17B | 32K | Texto, imagen, video, voz | LFM Open License v1.0 | Disponible en Hugging Face (modelo base) |
-| Alternativas de 2B omni abliteradas | No disponible | No disponible | No disponible | No disponible | No disponible |
-
-La unica comparacion directa posible es con el modelo base, del que este deriva por edicion de pesos. No se dispone de informacion sobre otros modelos de la misma categoria (2B omni abliterados) para establecer una comparativa mas amplia.
+| LFM3-Omni-2B-abliterated | 2,1 B | no disponible | texto, imagen, audio | lfm1.0 | Sin censura, abliterado |
+| LiquidAI/LFM3-Omni-2B (base) | 2,1 B | no disponible | texto, imagen, audio | lfm1.0 | Modelo original con rechazos |
+| LFM3-Omni-2B-Adaptive-CoT-GGUF (v8) | 2,1 B | no disponible | texto, imagen, audio | lfm1.0 | Ajuste con razonamiento adaptativo del mismo autor |
+| Alternativas omnimodales de ~2 B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- Riesgo de cumplimiento: el modelo puede responder a peticiones que el base rechaza. En evaluacion produjo una plantilla de correo de phishing, codigo de ransomware ejecutable e instrucciones para desactivar camaras.
-- Abliteracion incompleta: el rechazo se reduce, no se elimina. 2 de 6 prompts de seguridad siguen siendo rechazados y persisten giros parciales del tipo "However, ...".
-- Compromiso de capacidad: la proyeccion solo elimino parcialmente la senal (36-60 % de la norma de la direccion retenida por capa); los prompts benignos parecieron intactos segun la model card, pero el dato esta truncado en la informacion disponible.
-- Validacion solo en ingles: los prompts de abliteracion fueron exclusivamente en ingles, por lo que el comportamiento de rechazo en los otros 16 idiomas no esta validado.
-- No validado para uso agentico con tool calling, recuperacion en contexto largo ni comportamiento de rechazo multilingue.
-- Uso fuera de alcance: no debe usarse como filtro de seguridad ni componente de moderacion, ni para producir contenido ilegal, danino o enganoso, ni para eludir leyes o politicas de plataforma, ni en productos publicos usados por menores sin una capa de seguridad independiente, ni para decisiones automatizadas con consecuencias legales, medicas o financieras.
-- Restricciones de licencia: la LFM Open License v1.0 del modelo base se aplica a este derivado; conviene revisar sus terminos para uso comercial.
-- Riesgo de alucinacion y sesgos: no se documentan sesgos especificos en la informacion disponible, pero al ser un modelo no razonador y con abliteracion parcial, el riesgo de respuestas erroneas o inapropiadas es relevante en produccion.
+- La abliteración elimina los rechazos, lo que implica que el modelo puede generar contenido dañino, instrucciones peligrosas o material ilegal; no debe desplegarse en producción orientada al público sin filtros externos.
+- Riesgo de alucinación no cuantificado: no hay datos de benchmarks estándar que permitan estimar la fiabilidad factual.
+- La longitud de contexto no está documentada, lo que dificulta planificar despliegues con conversaciones largas o documentos extensos.
+- La licencia lfm1.0 es "other" y puede imponer restricciones al uso comercial; es necesario revisar el archivo LICENSE del modelo base antes de cualquier explotación comercial.
+- El ajuste se realizó sobre un modelo de 2,1 B, por lo que su capacidad de razonamiento complejo y matemáticas avanzadas es limitada en comparación con modelos de mayor tamaño.
+- Los benchmarks publicados son internos del autor (145 casos, 290 generaciones) y no han sido validados de forma independiente; además, la comparación v6/v8 no equivale a una evaluación frente a modelos de referencia.
+- El soporte multilingüe declarado (23 idiomas) no está respaldado por evaluaciones por idioma salvo el tailandés, por lo que el rendimiento en castellano u otros idiomas es incierto.
+- El modelo requiere `trust_remote_code=True`, lo que implica ejecutar código personalizado del repositorio; conviene auditar dicho código antes de usarlo en entornos sensibles.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/JonusNattapong/LFM3-Omni-2B-abliterated
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Omni-2B
-- Documentacion del modelo base: https://docs.liquid.ai/lfm
-- Licencia LFM Open License v1.0: https://huggingface.co/LiquidAI/LFM3-Omni-2B/blob/main/LICENSE
-- Grafo de arquitectura (hfviewer): https://hfviewer.com/JonusNattapong/LFM3-Omni-2B-abliterated
-- Paper de referencia (arXiv:2406.11717): https://arxiv.org/abs/2406.11717
-- Perfil del autor: https://huggingface.co/JonusNattapong
-- Sitio de Liquid AI: https://www.liquid.ai/
+- Mirror BF16: https://huggingface.co/JonusNattapong/LFM3-Omni-2B-abliterated-BF16
+- Variante GGUF: https://huggingface.co/JonusNattapong/LFM3-Omni-2B-abliterated-GGUF
+- Variante Adaptive CoT GGUF (v8): https://huggingface.co/JonusNattapong/LFM3-Omni-2B-Adaptive-CoT-GGUF
+- Licencia LFM 1.0: https://huggingface.co/JonusNattapong/LFM3-Omni-2B-abliterated/blob/main/LICENSE

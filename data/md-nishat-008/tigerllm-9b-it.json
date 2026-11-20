@@ -51,31 +51,5 @@
   "renamed_to": "md-nishat-008/TigerLLM-12B-it",
   "renamed_at": "2026-11-11T06:15:57.439Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "MD — Wikipédia",
-      "url": "https://fr.m.wikipedia.org/wiki/MD",
-      "snippet": "MD, abréviation de Master's Degree (diplôme de master) MD, abréviation de message direct, utilisé en francais en remplacement de …"
-    },
-    {
-      "title": "Quelles sont les abréviations de « million » et « milliard » ?",
-      "url": "https://www.laculturegenerale.com/abreviations-million-milliard/",
-      "snippet": "Oct 12, 2022 · Md : employée par exemple dans un article du site de la direction générale du Trésor française : « […] ainsi que de …"
-    },
-    {
-      "title": "Markdown Viewer Online — Free MD Reader & Live Preview",
-      "url": "https://markdownviewer.org/",
-      "snippet": "Free online Markdown viewer and MD reader — live GFM preview, syntax highlighting, LaTeX math, Mermaid diagrams, and PDF …"
-    },
-    {
-      "title": "Qu’est-ce qu’un fichier .MD? (Et comment en ouvrir un)",
-      "url": "https://commentouvrir.com/blog/quest-ce-quun-fichier-md-et-comment-en-ouvrir-un/",
-      "snippet": "Sep 22, 2020 · Cet article décrit ce que sont les fichiers MD, comment ouvrir les différents types (il en existe plusieurs) et ce que …"
-    },
-    {
-      "title": "MD - Wikipedia",
-      "url": "https://en.m.wikipedia.org/wiki/MD",
-      "snippet": "This disambiguation page lists articles associated with the title MD. If an internal link incorrectly led you here, you may wish to change …"
-    }
-  ]
+  "sources": []
 }

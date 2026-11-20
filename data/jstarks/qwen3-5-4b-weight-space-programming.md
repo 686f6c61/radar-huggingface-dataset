@@ -2,108 +2,117 @@
 
 ## Resumen
 
-Qwen3.5-4B-Weight-Space-Programming es un conjunto de adaptadores LoRA en espacio de pesos (weight-space programming, WSP v2.5) publicado por el usuario jstarks sobre el modelo base Qwen/Qwen3.5-4B. No se trata de un modelo entrenado de forma convencional: los adaptadores se sintetizan de forma cerrada (closed-form), sin descenso de gradiente ni fine-tuning, en aproximadamente 21,71 segundos, mediante receptores SwiGLU y una regresión ridge contrastiva en el espacio de pesos. El objetivo declarado es mejorar el comportamiento del modelo base en tareas de razonamiento, código, enrutado de herramientas y síntesis de JSON en un entorno de despliegue con solo 6 GB de VRAM (RTX 2060 Mobile) usando llama-server.
+Qwen3.5-4B-Weight-Space-Programming es una variante del modelo base Qwen/Qwen3.5-4B (4.659.865.088 parámetros) publicada por el usuario jstarks, que aplica una técnica denominada Weight-Space Programming (WSP) v3.0, descrita por el autor como una arquitectura de Dynamic LoRA de 9 subespacios con entrenamiento libre y en forma cerrada. El modelo parte de la arquitectura híbrida de Qwen3.5 (atención DeltaNet combinada con atención estándar, 32 capas, hidden_size de 2560, intermediate_size de 9216 y MLP SwiGLU) y añade adaptadores que modifican el comportamiento en inferencia sin reentrenar los pesos base.
 
-El modelo base Qwen3.5-4B tiene 32 capas (24 Gated DeltaNet y 8 de atención completa), hidden_size de 2560, intermediate_size de 9216, normalización RMSNorm con factor (1+w) y embeddings atados. El repositorio contiene tanto los adaptadores GGUF (para llama.cpp) como los parches en safetensors, organizados en seis subespacios con roles diferenciados: cierre de modo thinking, contención de herramientas, enrutado multi-herramienta, síntesis de código en capas intermedias, síntesis de JSON en segundo turno y transferencia entre agentes.
+El interés principal de esta ficha es doble: por un lado, el modelo base Qwen3.5-4B como tal; por otro, la propuesta metodológica WSP, que el autor presenta como una alternativa al ajuste fino tradicional para mejorar tareas de razonamiento, código, tool calling y uso de terminal. El autor reporta una mejora agregada de +17,0 puntos porcentuales en una suite unificada de 100 tareas (de 72/100 a 89/100) y mejoras en GSM8K, HumanEval, BFCL y NL2Bash, aunque estos resultados proceden exclusivamente de la model card y no han sido verificados de forma independiente.
 
-La relevancia de esta ficha es doble: por un lado, documenta una técnica de interpretabilidad mecanicista aplicada (weight-space programming) que permite modificar el comportamiento del modelo sin reentrenar; por otro, ofrece datos de evaluación concretos sobre 41 tareas de retención que muestran mejoras medibles (de 29/41 a 34/41) con un consumo de VRAM inferior a 4 GB. La licencia es Apache 2.0.
+La relevancia actual radica en que demuestra un pipeline práctico para adaptar modelos pequeños (4B) a cargas agénticas en hardware de consumo, con cuantización GGUF Q4_K_M de 2,553 GiB y un pico de VRAM de 3370 MiB a contexto de 16k, lo que permite ejecución en GPUs de 6 GB como la RTX 2060. La licencia Apache 2.0 facilita su uso comercial, si bien conviene tratar las cifras de rendimiento como declaraciones del autor pendientes de reproducción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido: 24 capas Gated DeltaNet + 8 capas de atención completa (modelo base Qwen3.5-4B) |
-| Parametros totales | 4.659.865.088 (modelo base); los adaptadores LoRA son de rango 16 |
+| Arquitectura | Transformer híbrido (atención DeltaNet + atención estándar), 32 capas, hidden_size 2560, intermediate_size 9216, MLP SwiGLU, RMSNorm 1+w |
+| Parametros totales | 4.659.865.088 (4,66B) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 16.384 tokens en la configuración de evaluación (`-c 16384`); contexto máximo del modelo base no disponible |
-| Tipos de cuantizacion | GGUF Q4_K_M para el modelo base; adaptadores LoRA en GGUF (rango 16, f32) y safetensors (r16) |
+| Longitud de contexto | 16384 tokens en las evaluaciones del autor (contexto nativo del modelo base no disponible) |
+| Tipos de cuantizacion | GGUF Q4_K_M (2,553 GiB), quantización de caché KV q8_0 (-ctk q8_0 -ctv q8_0), imatrix; safetensors en bf16 |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (parches), GGUF (adaptadores LoRA y modelo base cuantizado) |
+| Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.5-4B emplea una arquitectura híbrida con 24 capas Gated DeltaNet (atención lineal con estado recurrente) y 8 capas de atención completa, con hidden_size de 2560, intermediate_size de 9216 y embeddings atados. Sobre esta base, los adaptadores WSP v2.5 se sintetizan sin entrenamiento: se usan receptores SwiGLU con forward-hooks en BF16 y una regresión ridge contrastiva de doble espacio (Woodbury) para calcular los deltas de pesos. El proceso retiene el 100 % de la energía SVD y limita la fuga cruzada entre subespacios a un 0,330 % máximo (por debajo del 0,5 % objetivo).
+El modelo base Qwen3.5-4B emplea una arquitectura híbrida que combina capas de atención DeltaNet con atención transformer convencional, 32 capas, dimensión oculta de 2560 y una MLP SwiGLU con intermediate_size de 9216. La variante WSP v3.0 añade nueve subespacios de adaptación tipo LoRA dinámico (S1 a S9) que el autor describe como programación en el espacio de pesos en forma cerrada y sin entrenamiento; según la model card, la síntesis se realiza con "hybrid_bf16_forward_hooks_s1_to_s6_plus_proxy_s7_to_s9", es decir, hooks de forward en bf16 para los subespacios S1-S6 y un mecanismo proxy para S7-S9. No se detalla en la información disponible el volumen de tokens de entrenamiento del modelo base ni la composición de su dataset, ni si se aplicó RLHF o DPO.
 
-Los seis subespacios tienen rangos 16 y se aplican a capas específicas: los subespacios S1 (think), S2 (restraint) y S3 (router) actúan sobre las capas 23, 27, 29, 30 y 31; el subespacio S4 (mid_code) actúa sobre las capas 7, 11, 15 y 19; y los subespacios S5 y S6 completan el conjunto (la información proporcionada se corta en la descripción del subespacio S4). La innovación principal es el enrutado dinámico por turno y esquema: en lugar de aplicar todos los adaptadores a escala fija (variante estática), el router selecciona qué subespacio activar según la tarea (por ejemplo, `s1_think=1.95` para razonamiento general y matemáticas, `s4=0.65` para síntesis de código, `s3=0.95` para enrutado de herramientas, `s5=1.0` para JSON de segundo turno). La latencia de conmutación entre adaptadores vía `/lora-adapters` es de 7,374 ms de media (24,81 ms máximo) para la variante ganadora.
+La innovación técnica destacable es la metodología WSP en sí: en lugar de un ajuste fino supervisado, se calculan matrices de adaptación de forma analítica y se enrutan dinámicamente según la tarea. Los subespacios cubren funciones concretas como cierre de modo thinking (S1), contención de uso de herramientas y anti-sicofancia (S2), enrutado multi-herramienta (S3), síntesis de código (S4), JSON estructurado en segundo turno (S5), traspaso de escalado (S6), defensa frente a inyección indirecta (S7), abstención fundamentada (S8) y autorrecuperación de errores (S9). El autor reporta ablaciones de variantes (v2.5, 4 vías) y una variante Dynamic Router con S4 = ffn_down como la más mejorada, aunque los detalles completos de la ablación no están disponibles en la información proporcionada.
 
 ## Capacidades
 
-- Generación de texto conversacional y razonamiento multi-turno.
-- Modo thinking con cierre controlado de la etiqueta `</think>` y supresión de duplicación posterior a la etiqueta (subespacio S1).
-- Contención de herramientas y anti-sicofancia: el modelo puede rechazar peticiones inapropiadas o abstenerse de invocar herramientas cuando no procede (subespacio S2).
-- Enrutado multi-herramienta entre `exec`, `web_search`, `read_file` y `write_file` (subespacio S3).
-- Síntesis de código en capas intermedias de atención completa (subespacio S4, ganador con `ffn_down`).
-- Síntesis de JSON en segundo turno con compresión de salida de 3,82x (subespacio S5).
-- Transferencia entre agentes (handoff) en flujos multi-agente (subespacio S6).
-- Soporte de tool calling y function calling a través de la plantilla Jinja y el formato de razonamiento deepseek en llama-server.
-- Capacidades multilingües: no disponible en la información proporcionada.
+- Generación de texto conversacional multi-turno, con modo thinking y cierre controlado del mismo (subespacio S1).
+- Razonamiento aritmético y matemático de tipo GSM8K, con reducción de tokens de finalización (de 1009,1 a 542,4 de media en el autor).
+- Síntesis de código y paso de tests HumanEval (15/15 reportado por el autor con WSP).
+- Tool calling y function calling, incluido enrutado multi-herramienta (S3) y contención de llamadas innecesarias (S2).
+- Agentes multi-paso y uso de terminal/bash: NL2Bash (18/20 reportado) y Terminal-Bench 2.0 (4/20 reportado).
+- Generación de JSON estructurado en turnos posteriores (S5), con reducción drástica de tokens (de 127,3 a 33,3 de media).
+- Defensa frente a inyección indirecta de prompts (S7) y abstención fundamentada cuando falta información (S8).
+- Autorrecuperación de errores en cadenas agénticas (S9).
+- Capacidades multilingües: no disponible.
+- Visión o audio: no disponible (el pipeline es text-generation).
 
 ## Casos de uso
 
-- Despliegue en GPU de consumo con 6 GB de VRAM: el modelo base cuantizado a Q4_K_M más los adaptadores GGUF cabe en una RTX 2060 Mobile con un pico de 3.816 MiB, lo que permite ejecutar un agente local sin servicios en la nube.
-- Agente de codificación con enrutado de herramientas: el subespacio S3 selecciona entre ejecutar comandos, buscar en web o leer/escribir ficheros, y el subespacio S4 mejora la síntesis de código en capas intermedias; útil en pipelines de CI/CD o asistentes de terminal.
-- Automatización de atención al cliente con salida JSON estructurada: el subespacio S5 comprime las respuestas de segundo turno a una media de 33,3 tokens (frente a 127,3 del base) manteniendo el esquema, lo que reduce coste y latencia en integraciones con APIs.
-- Razonamiento matemático en entornos educativos o de análisis: el subespacio S1 con escala 1,95 duplica el rendimiento en GSM8K (de 2/5 a 4/5) y mejora el cierre de modo thinking, adecuado para tutores automáticos.
-- Flujos multi-agente con handoff: el subespacio S6 mantiene el 4/4 en tareas de transferencia entre agentes, útil en orquestadores que delegan subtareas entre modelos especializados.
-- Moderación y contención de herramientas: el subespacio S2 mantiene 4/4 en tareas de restricción y anti-sicofancia, aplicable a asistentes que deben rechazar peticiones fuera de política sin invocar herramientas innecesarias.
-- Investigación en interpretabilidad mecanicista: los parches safetensors r16 con fuga cruzada inferior al 0,5 % permiten estudiar cómo afectan deltas de pesos localizados a comportamientos concretos sin reentrenar.
+- Atención al cliente automatizada: el modelo gestiona conversaciones multi-turno con contexto de hasta 16k tokens y el subespacio S5 fuerza salidas JSON estructuradas en turnos posteriores, lo que facilita la integración con backends de ticketing y CRM.
+- Enrutado de herramientas en asistentes internos: S3 permite seleccionar entre múltiples herramientas con un consumo medio de 133,8 tokens por decisión, adecuado para orquestadores ligeros en CPU/GPU modesta.
+- Generación de código en pipelines de CI/CD: HumanEval 15/15 reportado y soporte de tool calling permiten usar el modelo como generador de parches o tests en un runner con GPU de 6-12 GB.
+- Automatización de operaciones con bash: NL2Bash 18/20 y Terminal-Bench 4/20 lo hacen utilizable para traducir instrucciones en lenguaje natural a comandos de shell en entornos controlados, con revisión humana antes de ejecutar.
+- Defensa perimetral de agentes: S7 (inyección indirecta) y S8 (abstención fundamentada) permiten desplegarlo como primera capa de filtrado semántico en pipelines RAG antes de invocar modelos mayores.
+- Razonamiento matemático en asistentes educativos: GSM8K 15/20 con menos de la mitad de tokens de finalización respecto al base, lo que reduce coste y latencia en despliegues por token.
+- Prototipado en hardware de consumo: con GGUF Q4_K_M (2,553 GiB) y pico de 3370 MiB a 16k, cabe en RTX 2060 de 6 GB, lo que permite iterar localmente sin clúster.
 
 ## Benchmarks y rendimiento
 
-Evaluación sobre 41 tareas de retención con llama-server, Qwen3.5-4B-Q4_K_M.gguf, `temperature=0.0`, `seed=42`:
+Resultados declarados por el autor en la model card (decodificación temperature=0.0, seed=42, contexto 16384, caché KV q8_0). No verificados de forma independiente.
 
-| Suite (tareas) | Base (todo 0.0) | Estático todo activo (0.65) | Dinámico S4=ffn_down (ganador) | Dinámico S4=ffn_down+o_proj |
-|---|---|---|---|---|
-| S1_think (3) | 0/3 (960,0 tok med.) | 0/3 (960,0 tok med.) | 2/3 (802,3 tok med.) | 2/3 (802,3 tok med.) |
-| S2_restraint (4) | 4/4 | 4/4 | 4/4 | 4/4 |
-| S3_router (5) | 5/5 | 5/5 | 5/5 | 5/5 |
-| S4_mid_code (2) | 1/2 | 2/2 | 2/2 (502, 640 tok) | 0/2 |
-| S5_turn2_json (3) | 3/3 (127,3 tok med.) | 2/3 (fuga de herramienta en s5_h3) | 3/3 (33,3 tok med.: 40, 32, 28) | 2/3 (fallo en s5_h3) |
-| S6_handoff (4) | 4/4 | 4/4 | 4/4 | 4/4 |
-| GSM8K (5 retención) | 2/5 | 1/5 | 4/5 (2x base) | 4/5 |
-| HumanEval (5 retención) | 3/5 | 4/5 | 3/5 | 3/5 |
-| BFCL v3 Irrelevance (5) | 4/5 | 4/5 | 4/5 | 4/5 |
-| InterCode-NL2Bash (5) | 3/5 | 2/5 | 3/5 | 3/5 |
-| Subtotal establecido (20) | 12/20 | 11/20 | 14/20 | 14/20 |
-| TOTAL (41 tareas) | 29/41 (70,7 %) | 28/41 (68,3 %) (-2,4 pp) | 34/41 (82,9 %) (+12,2 pp) | 31/41 (75,6 %) (+4,9 pp) |
-| Latencia de conmutación | 0,819 ms | 16,266 ms | 7,374 ms med. (24,81 ms máx.) | 5,103 ms med. (25,397 ms máx.) |
+| Suite | Tareas | Base | WSP v3.0 | Delta |
+|---|---:|---:|---:|---:|
+| S1 Think Closure | 3 | 0/3 (0,0%) | 3/3 (100,0%) | +100,0 pp |
+| S2 Tool Restraint | 4 | 4/4 (100,0%) | 4/4 (100,0%) | 0,0 pp |
+| S3 Multi-Tool Router | 5 | 5/5 (100,0%) | 5/5 (100,0%) | 0,0 pp |
+| S4 Code Synthesis | 2 | 2/2 (100,0%) | 2/2 (100,0%) | 0,0 pp |
+| S5 Turn-2 JSON | 3 | 3/3 (100,0%) | 3/3 (100,0%) | 0,0 pp |
+| S6 Escalation Handoff | 4 | 4/4 (100,0%) | 4/4 (100,0%) | 0,0 pp |
+| S7 Injection Guard | 3 | 2/3 (66,7%) | 3/3 (100,0%) | +33,3 pp |
+| S8 Grounded Abstention | 3 | 1/3 (33,3%) | 2/3 (66,7%) | +33,4 pp |
+| S9 Error Self-Recovery | 3 | 3/3 (100,0%) | 3/3 (100,0%) | 0,0 pp |
+| GSM8K (20) | 20 | 10/20 (50,0%) | 15/20 (75,0%) | +25,0 pp |
+| HumanEval pass@1 (15) | 15 | 13/15 (86,7%) | 15/15 (100,0%) | +13,3 pp |
+| BFCL v3 Irrelevance (15) | 15 | 11/15 (73,3%) | 12/15 (80,0%) | +6,7 pp |
+| NL2Bash (20) | 20 | 14/20 (70,0%) | 18/20 (90,0%) | +20,0 pp |
+| Terminal-Bench 2.0 (20) | 20 | 3/20 (15,0%) | 4/20 (20,0%) | +5,0 pp |
 
-Datos adicionales de la evaluación: la conmutación de caché KV entre turnos no produjo fuga de herramienta (`turn2_nocache_tool_leak = false`, 1365,52 ms; `turn2_cached_tool_leak = false`, 1260,22 ms). El consumo de VRAM del sistema se mantuvo en 3.748 MiB en reposo y 3.816 MiB en pico tras la evaluación.
+Totales reportados: suite unificada de 100 tareas de 72/100 a 89/100 (+17,0 pp); holdout S1-S9 de 24/30 a 29/30; benchmarks públicos de 48/70 a 60/70. Rendimiento: 117,0 tok/s con -c 16384 -ctk q8_0 -ctv q8_0; delta de carga 3269 MiB; pico de VRAM 3370 MiB.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 3,73 GiB en pico con el modelo base Q4_K_M y los adaptadores GGUF cargados en llama-server (objetivo declarado: menos de 5,0 GiB para GPUs de 6 GB).
-- GPU recomendadas: RTX 2060 Mobile (6 GB) es el entorno de referencia validado; cualquier GPU con 6 GB o más de VRAM debería ser suficiente. Para mayor throughput, se pueden usar GPUs de gama alta (RTX 4090, A100, H100), aunque no hay datos de rendimiento publicados en esas configuraciones.
-- Cabe en GPU de consumo: sí, validado en RTX 2060 Mobile con 6 GB.
-- Opciones de despliegue: llama.cpp / llama-server con soporte de `/lora-adapters` y `--jinja --reasoning-format deepseek`; los parches safetensors permiten su uso con transformers. No se mencionan vLLM, TGI ni Ollama en la información disponible.
-- Latencia y throughput: latencia de conmutación de adaptadores de 7,374 ms de media (24,81 ms máximo) en la variante ganadora; latencias de inferencia por tarea no disponibles de forma agregada (solo se reportan tiempos puntuales de conmutación de caché KV: 1365,52 ms y 1260,22 ms).
+- VRAM estimada: pico de 3370 MiB a contexto 16384 con caché KV q8_0; delta de carga 3269 MiB; GGUF Q4_K_M de 2,553 GiB.
+- GPU recomendadas: RTX 2060 de 6 GB (cabe con ~2,7 GiB de margen a 16k), RTX 4070 Ti de 12 GB (~8,0 GiB de margen a 16k), A100/H100 para mayor throughput (no medido en la información disponible).
+- Cabe en GPU de consumo: sí, en RTX 2060 6 GB y superiores; el autor reporta 117,0 tok/s en su entorno de pruebas.
+- Opciones de despliegue: llama.cpp (GGUF), transformers con safetensors, endpoints compatibles; vLLM, Ollama y TGI no están confirmados en la información disponible.
+- Latencia y throughput: 117,0 tok/s reportado con cuantización Q4_K_M y caché KV q8_0; Terminal-Bench a 107,7 tok/s.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Rendimiento en retención | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Qwen3.5-4B-Weight-Space-Programming (variante dinámica S4=ffn_down) | 4.659.865.088 (base) + LoRA r16 | 16.384 tokens en evaluación | 34/41 (82,9 %) | Apache 2.0 | Hugging Face (jstarks) |
-| Qwen3.5-4B (base, sin adaptadores) | 4.659.865.088 | 16.384 tokens en evaluación | 29/41 (70,7 %) | Apache 2.0 (según modelo base) | Hugging Face (Qwen) |
-| Qwen3.5-4B con LoRA estático todo activo (0.65) | 4.659.865.088 + LoRA r16 | 16.384 tokens en evaluación | 28/41 (68,3 %) | Apache 2.0 | Hugging Face (jstarks) |
-| Qwen3.5-4B con LoRA dinámico S4=ffn_down+o_proj | 4.659.865.088 + LoRA r16 | 16.384 tokens en evaluación | 31/41 (75,6 %) | Apache 2.0 | Hugging Face (jstarks) |
+Comparativa dentro de la misma familia y estudio del autor (GGUF Q4_K_M, 100 tareas, decodificación idéntica):
 
-No se dispone de datos de benchmarks de otros modelos de 4B comparables (por ejemplo, Llama 3.2 3B o Gemma 3 4B) en la información proporcionada, por lo que la comparativa se limita a las variantes del propio repositorio y al modelo base.
+| Modelo | Parámetros | Contexto eval. | Base | WSP v3.0 | Velocidad | VRAM pico | Licencia |
+|---|---|---:|---:|---:|---:|---:|---|
+| Qwen3.5-4B WSP (este) | 4,66B | 16k | 72/100 | 89/100 | 117,0 tok/s | 3370 MiB | Apache 2.0 |
+| Nemotron-3-Nano-4B WSP | no disponible | 16k | 81/100 | 81/100 | 131,1 tok/s | 3133 MiB | no disponible |
+| Qwen3.5-9B WSP | no disponible | 16k | 84/100 | 88/100 | 72,5 tok/s | 5650 MiB | Apache 2.0 |
+| Qwen3.5-2B WSP | no disponible | 16k | 57/100 | 55/100 | 226,5 tok/s | 1979 MiB | Apache 2.0 |
+| Gemma-4-12B WSP | no disponible | 16k | 50/100 | 52/100 | 51,3 tok/s | 7664 MiB | no disponible |
+
+Este modelo es el que presenta mayor delta neto (+17,0 pp) del estudio; Nemotron-3-Nano-4B parte de una base superior pero no mejora con WSP, y Qwen3.5-9B obtiene 88/100 con mayor coste de VRAM. Los parámetros exactos de los modelos comparados no están disponibles en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Los adaptadores se sintetizan de forma cerrada sin descenso de gradiente; su comportamiento depende fuertemente de las escalas de enrutado elegidas (por ejemplo, `s1_think=1.95`, `s4=0.65`), que pueden no generalizar fuera de las 41 tareas de retención evaluadas.
-- La evaluación se realizó con `temperature=0.0` y `seed=42` sobre 5 tareas por suite; los tamaños muéstrales son pequeños y los intervalos de confianza no se reportan, por lo que las mejoras de pocos puntos porcentuales deben interpretarse con cautela.
-- La variante estática todo activo degrada el rendimiento por debajo del base (28/41 frente a 29/41), lo que indica que un uso incorrecto de los adaptadores puede empeorar el modelo.
-- El subespacio S1 no cierra el modo thinking en 1 de cada 3 tareas incluso en la variante ganadora (2/3), lo que puede provocar respuestas excesivamente largas o truncadas en producción.
-- El modelo base tiene 24 capas Gated DeltaNet y 8 de atención completa; el comportamiento de los adaptadores en contextos superiores a 16.384 tokens no está documentado.
-- Idiomas soportados no disponibles: no se puede garantizar un rendimiento multilingüe fuera del inglés sin evaluación adicional.
-- Riesgo de alucinación y sesgos del modelo base no cuantificado en la información proporcionada; los adaptadores no abordan explícitamente estos problemas.
-- La licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen3.5-4B tiene sus propias condiciones que deben verificarse por separado.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la ficha, y fue creado el 13 de noviembre de 2026; se trata de una publicación muy reciente y sin validación comunitaria independiente.
+- Los resultados de benchmarks son declaraciones del autor en la model card y no han sido reproducidos de forma independiente; trátalos como indicativos, no como garantía.
+- La metodología WSP v3.0 depende de hooks de forward y de un mecanismo proxy para S7-S9, lo que puede introducir fragilidad ante cambios de versión de transformers o de la arquitectura base.
+- El rendimiento en Terminal-Bench 2.0 es bajo en términos absolutos (4/20, 20,0%), por lo que no es adecuado como agente autónomo de terminal sin supervisión.
+- S8 (abstención fundamentada) solo alcanza 2/3 (66,7%) incluso con WSP; riesgo de respuestas no fundamentadas en consultas ambiguas.
+- Riesgo de alucinación inherente a un modelo de 4B; el subespacio S8 mitiga pero no elimina el problema.
+- Idiomas soportados no documentados; no se puede garantizar calidad multilingüe más allá del inglés implícito en los benchmarks.
+- Licencia Apache 2.0 permite uso comercial, pero conviene revisar la licencia del modelo base Qwen/Qwen3.5-4B y de los datasets de evaluación citados (GSM8K, HumanEval, BFCL, NL2Bash).
+- El contexto evaluado es 16384 tokens; no se documenta el contexto nativo máximo del modelo base en la información disponible.
+- Sesgos conocidos: no disponible.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/jstarks/Qwen3.5-4B-Weight-Space-Programming
-- Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
-- No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
+- Variante Nemotron-3-Nano-4B WSP: https://huggingface.co/jstarks/Nemotron-3-Nano-4B-Weight-Space-Programming
+- Variante Qwen3.5-9B WSP: https://huggingface.co/jstarks/Qwen3.5-9B-Weight-Space-Programming
+- Variante Qwen3.5-2B WSP: https://huggingface.co/jstarks/Qwen3.5-2B-Weight-Space-Programming
+- Variante Gemma-4-12B WSP: https://huggingface.co/jstarks/Gemma-4-12B-Weight-Space-Programming
+- Paper, blog o repositorio de WSP: no disponible en la información proporcionada.

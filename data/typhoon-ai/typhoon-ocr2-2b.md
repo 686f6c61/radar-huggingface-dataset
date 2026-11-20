@@ -2,122 +2,123 @@
 
 ## Resumen
 
-Typhoon OCR V2 2B es un modelo de vision-lenguaje especializado en el analisis y parsing de documentos en tailandes e ingles. Lo desarrolla SCB 10X dentro del proyecto OpenTyphoon, y se distribuye como un fine-tune del parser `infly/Infinity-Parser2-Flash`. Dada una imagen de una pagina, el modelo devuelve una lista JSON de elementos de maquetacion en orden de lectura, cada uno con una categoria (13 tipos posibles, como titulo, texto, tabla, formula, cabecera o pie), un *bounding box* y su texto asociado; las tablas se emiten como HTML, las formulas como LaTeX y el resto como Markdown.
+Typhoon OCR V2 2B es un modelo de visión-lenguaje especializado en el análisis y extracción de documentos (document parsing) para tailandés e inglés, desarrollado por Typhoon AI (OpenTyphoon). Dado el imagen de una página, devuelve los elementos de maquetación en orden de lectura, cada uno con su categoría (13 tipos posibles), su caja delimitadora (bounding box) y su texto; las tablas se emiten como HTML, las fórmulas como LaTeX y el texto restante como Markdown.
 
-El modelo resuelve un problema concreto: el parser base lee bien ingles y chino pero es debil en tailandes. Tras un entrenamiento en dos fases (supervised fine-tuning y despues GRPO con un adaptador LoRA r=64 fusionado en los pesos), las puntuaciones en tailandes suben unos 25 puntos en MDPBench TH y ThaiOCRBench, al tiempo que las metricas en ingles tambien mejoran en lugar de degradarse. Ademas de parsing, el modelo responde preguntas libres sobre un documento (VQA), clasifica documentos, extrae informacion clave a JSON y lee tablas, formulas y graficos de forma aislada.
+El modelo es un fine-tune de Infinity-Parser2-Flash (infly), sobre arquitectura Qwen3.5 (`Qwen3_5ForConditionalGeneration`), con 2.213.241.664 parámetros en BF16. El entrenamiento combina supervisión (SFT) sobre datos tailandeses curados y datos públicos en inglés y chino, seguido de GRPO con un adaptador LoRA fusionado en los pesos, orientado a eliminar bucles de repetición en páginas fotografiadas.
 
-Arquitectura Qwen3.5 (`Qwen3_5ForConditionalGeneration`), 2.213.241.664 parametros en BF16, licencia Apache 2.0 en el repositorio aunque el uso queda sujeto a los terminos de OpenTyphoon. Se publica junto a una variante menor de 0.8B para parsing de paginas a menor coste.
+Su relevancia radica en que parte de un parser ya sólido en inglés y chino pero débil en tailandés (61,3 en MDPBench para páginas tailandesas) y eleva esa puntuación 20 puntos hasta 81,3, sin degradar el inglés (de 75,4 a 78,4). Se publica junto a una variante de 0,8B y con versiones GGUF, MLX y Ollama, además de un paquete Python y una API compatible con OpenAI.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3.5 (`Qwen3_5ForConditionalGeneration`), vision-lenguaje |
+| Arquitectura | Qwen3.5 (`Qwen3_5ForConditionalGeneration`), transformer multimodal image-text-to-text |
 | Parametros totales | 2.213.241.664 (2B) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos publicados en BF16) |
-| Idiomas soportados | Tailandes e ingles (los datos de entrenamiento tambien incluyen chino, no evaluado por separado) |
-| Licencia | Apache 2.0 (uso sujeto a los terminos de OpenTyphoon) |
-| Formato de pesos | safetensors |
-| Entrada | Una imagen de pagina; entrenado con imagenes de hasta 4 MP, evaluado con hasta 16.7 MP |
-| Salida | Lista JSON de elementos de maquetacion en un bloque de codigo `json` |
+| Tipos de cuantizacion | BF16 (principal); GGUF (llama.cpp), MLX 8-bit, MLX bf16, MLX 4-bit; Ollama con tags `bf16`, `int8` e `int4` |
+| Idiomas soportados | Tailandés (th) e inglés (en); los datos de entrenamiento incluyen chino, no evaluado por separado |
+| Licencia | Apache 2.0 (sujeto a los OpenTyphoon Terms and Conditions) |
+| Formato de pesos | safetensors (repo de 4,5 GB); GGUF y MLX disponibles en repos aparte |
+| Entrada | Una imagen de página; entrenado con imágenes de hasta 4 MP, benchmarks con hasta 16,7 MP |
+| Salida | Lista JSON de elementos de maquetación dentro de un bloque de código `json` |
 | Modelo base | infly/Infinity-Parser2-Flash |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `infly/Infinity-Parser2-Flash`, un parser documento-imagen a texto construido sobre la arquitectura Qwen3.5 para generacion condicional multimodal. Sobre esa base se aplico un supervised fine-tuning con datos tailandeses curados junto a datos publicos en ingles y chino, seguido de una fase de GRPO (optimizacion de politica con recompensas) mediante un adaptador LoRA de rango 64 que despues se fusiono en los pesos finales. La recompensa de GRPO asigna cero a las salidas que alcanzan el limite de tokens, lo que ataca directamente el problema de bucles de repeticion en paginas fotografiadas.
+El modelo emplea la arquitectura Qwen3.5 en su variante `Qwen3_5ForConditionalGeneration`, un transformer multimodal que procesa una imagen de página y genera una secuencia estructurada. La salida es una lista JSON de elementos de maquetación en orden de lectura, cada uno con categoría (13 tipos, como título, texto, tabla, fórmula, encabezado y pie de página), bounding box y contenido textual; las tablas se serializan como HTML, las fórmulas como LaTeX y el resto como Markdown.
 
-La innovacion practica mas destacable es la salida estructurada con geometria: cada elemento lleva categoria y bounding box en orden de lectura, frente a la version anterior (Typhoon OCR 1.5) que devolvia solo Markdown sin posiciones. El modelo mantiene la capacidad de emitir Markdown mediante una conversion posterior del JSON, con o sin cabeceras y pies de pagina. No se especifican en la informacion disponible el numero total de tokens de entrenamiento ni la composicion exacta del dataset.
+El entrenamiento se realizó en dos fases: primero un ajuste supervisado (SFT) sobre datos tailandeses curados combinados con datos públicos en inglés y chino, y después un entrenamiento con GRPO usando un adaptador LoRA que se fusionó en los pesos en fp32 y se almacenó en bf16. La recompensa de GRPO asigna cero a las salidas que alcanzan el límite de tokens, lo que ataca directamente los bucles de repetición que aparecen en páginas fotografiadas. El objetivo declarado fue elevar la precisión en tailandés conservando el rendimiento previo en inglés.
 
 ## Capacidades
 
-- Parsing de documentos: devuelve elementos de maquetacion (13 categorias) con bounding box y texto en orden de lectura.
-- Conversion de tablas a HTML, formulas a LaTeX y texto corrido a Markdown.
-- Visual question answering: responde preguntas de forma libre sobre el contenido de un documento.
-- Clasificacion de documentos.
-- Extraccion de informacion clave a JSON.
-- Lectura aislada de tablas, formulas y graficos (chart-to-data).
-- Soporte de tailandes e ingles; presencia de chino en el entrenamiento sin evaluacion separada.
-- Salida en JSON estructurado apta para post-proceso programatico y conversion a Markdown.
-- No se indica soporte de tool calling, function calling ni modo de razonamiento explicito en la informacion disponible.
+- Análisis de maquetación con bounding boxes: devuelve cada elemento con categoría y caja, en orden de lectura.
+- Extracción de texto a Markdown, con conversión programática desde el JSON (con o sin encabezados y pies de página).
+- Reconocimiento de tablas con salida en HTML.
+- Reconocimiento de fórmulas con salida en LaTeX.
+- Lectura independiente de tablas, fórmulas y gráficos.
+- Visual question answering (VQA) sobre documentos: responde preguntas libres sobre el contenido.
+- Clasificación de documentos.
+- Extracción de información clave a JSON.
+- Conversión de gráficos a datos (chart-to-data).
+- Capacidades multilingües en tailandés e inglés, con datos de entrenamiento que incluyen chino.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Digitalizacion masiva de archivos administrativos tailandeses: el modelo procesa imagenes de pagina y devuelve JSON con posiciones, lo que permite reconstruir el documento y alimentar indices de busqueda; su mejora de 26.4 puntos en MDPBench TH frente al base lo hace adecuado para corpus en tailandes.
-- Extraccion de datos de facturas y formularios: la tarea de key-information extraction a JSON permite mapear campos concretos sin post-proceso manual de maquetacion.
-- Conversion de tablas financieras a HTML estructurado: util para pipelines que necesitan tablas parseadas y no solo texto plano.
-- Atencion al cliente sobre documentos: el modo VQA responde preguntas libres sobre un contrato o manual, con soporte bilingue tailandes-ingles para entornos corporativos de Tailandia.
-- Procesamiento de documentos fotografiados: el entrenamiento con GRPO reduce los bucles de repeticion (1 pagina en bucle de 320 en MDPBench frente a 36 de la version 1.5), lo que lo hace viable con capturas de movil en lugar de escaneos limpios.
-- Clasificacion y enrutado documental: clasificar paginas por tipo antes de derivarlas a otros sistemas, usando el mismo modelo sin pipeline adicional.
-- Conversion de formulas cientificas a LaTeX: extraccion de expresiones matematicas para publicaciones o repositorios tecnicos.
-- Despliegue de bajo coste con la variante 0.8B cuando la precision extrema no es critica y prima el coste por pagina.
+- Digitalización de archivos administrativos tailandeses: el modelo procesa páginas escaneadas y devuelve JSON estructurado con categorías y coordenadas, lo que permite reconstruir el documento y alimentar sistemas de gestión documental con precisión de 81,3 en MDPBench para páginas tailandesas.
+- Extracción de datos de facturas y formularios: mediante la tarea de key-information extraction a JSON, se pueden mapear campos concretos del documento a un esquema fijo, útil en pipelines de contabilidad y back office.
+- Procesamiento de documentos fotografiados con móvil: gracias al entrenamiento GRPO contra bucles de repetición y a la mejora de 14,4 puntos en páginas fotografiadas de MDPBench (de 65,3 a 79,7), es adecuado para capturas con cámara en campo.
+- Conversión de tablas a datos estructurados: la salida HTML de tablas permite parsearlas posteriormente a CSV o bases de datos, útil en informes financieros y técnicos bilingües.
+- Atención al cliente sobre documentos: el modelo responde preguntas libres sobre el contenido de una página (VQA), lo que permite construir asistentes que resuelvan dudas sobre contratos o manuales sin extracción manual previa.
+- Clasificación automática de documentos entrantes: la capacidad de clasificación permite enrutar páginas a distintos flujos de trabajo según su tipo antes de aplicar extracción específica.
+- Digitalización de material científico y técnico: la conversión de fórmulas a LaTeX facilita la reutilización de contenido matemático en publicaciones y sistemas de edición.
+- Despliegue en local con Ollama o llama.cpp: las versiones GGUF e int4 permiten ejecutar el parser en equipos sin GPU de datacenter para volúmenes moderados de documentos.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor, ejecutados con los mismos scripts de evaluacion (prompt doc2json, imagenes de hasta 16.7 MP, decodificacion greedy, maximo 16.384 tokens nuevos). En negrita el mejor resultado y subrayado el segundo mejor de cada columna. Flecha arriba indica mayor es mejor; flecha abajo, menor es mejor.
+Comparación con el modelo base (Infinity-Parser2-Flash), ejecutados con el mismo prompt, ajustes y scripts, con vLLM 0.27.1 en modo eager:
 
-| Modelo | Parametros | MDPBench ↑ | MDPBench TH ↑ | olmOCR-bench ↑ | ThaiOCRBench ↑ | SEA-DocBench NED ↓ | OmniDocBench v1.6 ↑ |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| Chandra-OCR-2 | 5B | 74.2 | 71.1 | 84.4 | 26.4 | 0.1141 | 89.65 |
-| dots.mocr | 3B | 76.2 | 73.6 | 85.2 | 37.9 | 0.1135 | 91.09 |
-| PaddleOCR-VL-1.6 | 0.9B | 72.5 | 68.4 | 80.8 | n/a | 0.1323 | 95.83 |
-| Infinity-Parser2-Flash | 2B | 61.5 | 55.5 | 82.9 | 35.2 | 0.1906 | 86.44 |
-| Typhoon OCR 1.5 | 2B | 62.8 | 64.3 | 62.0 | 40.5 | 0.1726 | 70.97 |
-| Typhoon OCR V2 2B | 2B | 80.2 | 81.9 | 84.3 | 59.8 | 0.1170 | 91.49 |
+| Benchmark | Infinity-Parser2-Flash | Typhoon OCR V2 2B | Cambio |
+|---|---:|---:|---|
+| MDPBench, páginas tailandesas (↑) | 61,3 | 81,3 | +20,0 |
+| MDPBench, páginas inglesas (↑) | 75,4 | 78,4 | +3,0 |
+| MDPBench, páginas fotografiadas (↑) | 65,3 | 79,7 | +14,4 |
+| MDPBench, páginas digitales (↑) | 78,9 | 81,3 | +2,4 |
+| MDPBench, global (↑) | 68,3 | 79,8 | +11,5 |
+| ThaiOCRBench (↑) | 35,0 | 59,9 | +24,9 |
+| SEA-DocBench, tailandés NED (↓) | 0,1268 | 0,1059 | −0,0209 (mejor) |
+| SEA-DocBench, inglés NED (↓) | 0,1264 | 0,1248 | −0,0016 (mejor) |
+| olmOCR-bench (↑) | 84,4 | 84,7 | +0,3 |
+| OmniDocBench v1.6 (↑) | 91,03 | 90,97 | −0,06 |
 
-Comparacion directa con el modelo base:
-
-| Benchmark | Idioma | Infinity-Parser2-Flash | Typhoon OCR V2 2B | Cambio |
-|---|---|---:|---:|---:|
-| MDPBench TH ↑ | Tailandes | 55.5 | 81.9 | +26.4 |
-| ThaiOCRBench ↑ | Tailandes | 35.2 | 59.8 | +24.6 |
-| SEA-DocBench TH NED ↓ | Tailandes | 0.1590 | 0.1071 | −0.0519 |
-| MDPBench EN ↑ | Ingles | 67.5 | 78.5 | +11.0 |
-| olmOCR-bench ↑ | Ingles | 82.9 | 84.3 | +1.4 |
-| SEA-DocBench EN NED ↓ | Ingles | 0.2222 | 0.1269 | −0.0953 |
-| OmniDocBench v1.6 ↑ | Ingles y chino | 86.44 | 91.49 | +5.05 |
-
-En MDPBench, las paginas tailandesas suben de 64.3 a 81.9 y las paginas fotografiadas de 61.6 a 80.1. Bajo decodificacion greedy, el modelo entra en bucle en 1 de cada 320 paginas de MDPBench, frente a 36 de Typhoon OCR 1.5. PaddleOCR-VL-1.6 no soporta VQA, por lo que no tiene puntuacion en ThaiOCRBench.
+Comparación con la versión anterior (Typhoon OCR 1.5 2B), según la model card: MDPBench de 66,0 a 79,8 (páginas tailandesas de 68,9 a 81,3), olmOCR-bench de 62,0 a 84,7, OmniDocBench v1.6 de 70,97 a 90,97, SEA-DocBench NED de 0,1726 a 0,1153 y ThaiOCRBench de 40,5 a 59,9.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explicita; con 2.213 millones de parametros en BF16 los pesos ocupan aproximadamente 4.4 GB, a lo que hay que sumar el coste del codificador visual y la cache KV para contextos largos (hasta 16.384 tokens nuevos de salida).
-- GPU recomendadas: no especificadas por el autor. Por tamano, el modelo encaja en GPU de consumo con suficiente memoria, aunque no se confirma en la informacion disponible.
-- Cabe en GPU de consumo: previsiblemente si, dado el tamano de pesos, aunque el requisito real depende de la resolucion de imagen (hasta 16.7 MP) y de la longitud de salida; no hay cifras confirmadas.
-- Opciones de despliegue: la model card indica la libreria `transformers` y el tag `endpoints_compatible`; no se detallan integraciones con vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: aproximadamente 4,5 GB en BF16 (2,2B parámetros × 2 bytes más overhead de activaciones y visión); alrededor de 2,5 GB en int8 y 1,5 GB en int4.
+- GPU recomendadas: A100 o H100 para despliegues de alto throughput con vLLM; RTX 4090 o A10 para servicio de producción moderado.
+- GPU de consumo: cabe en tarjetas con 8 GB o más en BF16; en int4 puede ejecutarse en GPUs de 4-6 GB e incluso en CPU vía llama.cpp u Ollama.
+- Opciones de despliegue: vLLM (versión 0.30.0 o superior, requisito explícito del autor), llama.cpp (GGUF), Ollama (`ollama run SuraponOCR/typhoon-ocr2-2b`), MLX en Apple Silicon (8-bit, bf16 y 4-bit), y API compatible con OpenAI en `https://api.opentyphoon.ai/v1` con el modelo `typhoon-ocr-v2`.
+- Preprocesado obligatorio: ampliar a 1.600 px el lado largo de toda imagen que sea menor, antes de enviarla; el paquete `typhoon-ocr2` lo hace automáticamente.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | MDPBench TH | ThaiOCRBench | Licencia | Disponibilidad |
-|---|---:|---|---:|---:|---|---|
-| Typhoon OCR V2 2B | 2B | no disponible | 81.9 | 59.8 | Apache 2.0 (sujeto a terminos OpenTyphoon) | Hugging Face |
-| dots.mocr | 3B | no disponible | 73.6 | 37.9 | no disponible | no disponible |
-| Chandra-OCR-2 | 5B | no disponible | 71.1 | 26.4 | no disponible | no disponible |
-| PaddleOCR-VL-1.6 | 0.9B | no disponible | 68.4 | n/a (sin VQA) | no disponible | no disponible |
-| Infinity-Parser2-Flash | 2B | no disponible | 55.5 | 35.2 | no disponible | Hugging Face |
-
-Typhoon OCR V2 2B lidera en las metricas en tailandes (MDPBench TH y ThaiOCRBench) y en MDPBench global, mientras que dots.mocr y Chandra-OCR-2 quedan por delante en olmOCR-bench y SEA-DocBench NED, y PaddleOCR-VL-1.6 en OmniDocBench v1.6. La ventaja del modelo es especifica del tailandes y de las tareas VQA documentales.
+| Modelo | Parámetros | Idiomas | MDPBench global | Licencia | Disponibilidad |
+|---|---|---:|---:|---|---|
+| Typhoon OCR V2 2B | 2B | th, en (entrenamiento con zh) | 79,8 | Apache 2.0 | HF, GGUF, MLX, Ollama, API |
+| Infinity-Parser2-Flash (base) | no disponible | en, zh (débil en th) | 68,3 | no disponible en la información | HF |
+| Typhoon OCR 1.5 2B (versión previa) | 2B | th, en | 66,0 | no disponible en la información | HF |
+| Typhoon OCR V2 0.8B | 0,8B | th, en | no disponible | no disponible en la información | HF |
 
 ## Limitaciones y advertencias
 
-- El entrenamiento esta orientado a tailandes e ingles; el chino aparece en los datos pero no se ha evaluado, por lo que su rendimiento en ese idioma es incierto.
-- Riesgo de bucles de repeticion en paginas fotografiadas: aunque se ha reducido drasticamente (1 de 320 frente a 36), no se elimina por completo.
-- La salida es JSON estructurado; requiere post-proceso para obtener Markdown y la conversion por defecto descarta cabeceras, pies y notas al pie (aunque el modelo los emite).
-- No se han publicado datos sobre sesgos, alucinacion en VQA ni robustez frente a documentos manipulados.
-- Aunque el repositorio declara Apache 2.0, el uso queda sujeto a los terminos y condiciones de OpenTyphoon, que pueden imponer restricciones adicionales para uso comercial; conviene revisarlos antes de produccion.
-- No se especifican la longitud de contexto ni los requisitos de VRAM, lo que dificulta el dimensionamiento de despliegues.
-- El modelo esta entrenado con imagenes de hasta 4 MP; el rendimiento con resoluciones muy superiores o muy inferiores no esta documentado.
-- El proyecto es muy reciente (creado en noviembre de 2026) y sin descargas registradas, por lo que la validacion comunitaria es practicamente inexistente.
+- El modelo está orientado a tailandés e inglés; el chino presente en el entrenamiento no fue evaluado, por lo que su rendimiento en ese idioma es incierto.
+- Requiere ampliar imágenes con lado largo inferior a 1.600 px; omitir este paso degrada la calidad de la extracción.
+- Entrenado con imágenes de hasta 4 MP, aunque los benchmarks usan hasta 16,7 MP; el comportamiento en resoluciones muy altas no está documentado más allá de esas pruebas.
+- El entrenamiento GRPO se dirigió específicamente a bucles de repetición en páginas fotografiadas; otras patologías generativas (alucinación de texto ausente, por ejemplo) no se abordan explícitamente en la información disponible.
+- Riesgo de alucinación en documentos degradados, manuscritos o con maquetación atípica: no se han publicado métricas específicas de fidelidad en esos escenarios.
+- Aunque la licencia es Apache 2.0, el uso está sujeto a los OpenTyphoon Terms and Conditions, que deben revisarse antes de un despliegue comercial.
+- Requiere vLLM 0.30.0 o superior; versiones anteriores pueden no funcionar correctamente.
+- La salida es JSON con bounding boxes; los consumidores deben validar el esquema y manejar bloques `json` malformados en producción.
+- No se dispone de información sobre soporte de tool calling, agentes o contexto máximo, lo que limita su evaluación en pipelines agénticos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/typhoon-ai/typhoon-ocr2-2b
 - Modelo base: https://huggingface.co/infly/Infinity-Parser2-Flash
-- Version anterior: https://huggingface.co/typhoon-ai/typhoon-ocr1.5-2b
 - Variante 0.8B: https://huggingface.co/typhoon-ai/typhoon-ocr2-0.8b
-- Codigo: https://github.com/scb-10x/typhoon-ocr
-- Web del proyecto: https://opentyphoon.ai
-- Terminos y condiciones: https://opentyphoon.ai/tac
-- Paper (referencia arXiv en tags): arxiv:2601.14722
+- Versión previa 1.5 2B: https://huggingface.co/typhoon-ai/typhoon-ocr1.5-2b
+- GGUF: https://huggingface.co/typhoon-ai/typhoon-ocr2-2b-GGUF
+- MLX 8-bit: https://huggingface.co/typhoon-ai/typhoon-ocr2-2b-MLX-8bit
+- Ollama: https://ollama.com/SuraponOCR/typhoon-ocr2-2b
+- Paquete Python: https://pypi.org/project/typhoon-ocr2/
+- Código del paquete: https://github.com/srn-source/typhoon-ocr2
+- Código de evaluación: https://github.com/srn-source/evaluation_thai_ocr
+- Playground: https://playground.opentyphoon.ai/ocr
+- Documentación de la API: https://docs.opentyphoon.ai/
+- Términos y condiciones: https://opentyphoon.ai/tac
+- Web oficial: https://opentyphoon.ai
+- Paper (arXiv): https://arxiv.org/abs/2601.14722

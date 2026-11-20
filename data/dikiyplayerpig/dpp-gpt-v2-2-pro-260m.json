@@ -62,16 +62,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "dikiyplayerpig/dpp-gpt-V2.2-base-260m · Hugging Face",
-      "url": "https://huggingface.co/dikiyplayerpig/dpp-gpt-V2.2-base-260m",
-      "snippet": "A 260M-parameter model trained entirely from scratch on a single consumer GPU (RTX 4060) by one person, in Russian, English and French. It continues text, and — because part of the pre-training data is already in a chat format — it can also count, spell words, count letters and translate when asked in that format."
-    },
-    {
-      "title": "dikiyplayerpig/dpp-gpt-V2.2-base-260m at main - Hugging Face",
-      "url": "https://huggingface.co/dikiyplayerpig/dpp-gpt-V2.2-base-260m/tree/main",
-      "snippet": "dikiyplayerpig / dpp-gpt-V2.2-base-260m Like 0 Text Generation Safetensors GGUF Russian English French llama llama-3 custom-training from-scratch base math conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
-    }
-  ]
+  "sources": []
 }

@@ -2,112 +2,101 @@
 
 ## Resumen
 
-magi-1.0 es una cuantización de precisión mixta de Qwen/Qwen3.5-4B publicada por GEHIRNS, distribuida como un único fichero GGUF de 1,80 GiB que promedia 3,65 bits por peso. No es un modelo reentrenado ni un ajuste fino: los pesos son los originales de Qwen, reasignados tensor a tensor según la sensibilidad medida de cada clase (más bits para las proyecciones pequeñas de atención y DeltaNet, menos para las matrices FFN grandes). El resultado se ejecuta sin modificaciones en llama.cpp y Ollama.
+magi-1.0-4B es una cuantización de precisión mixta de Qwen/Qwen3.5-4B publicada por GEHIRNS. No se trata de un modelo entrenado desde cero ni de un fine-tuning: los pesos son exactamente los de Qwen3.5-4B, reorganizados en un fichero GGUF que combina distintos tipos de cuantización estándar según la sensibilidad medida de cada tensor. Las proyecciones pequeñas de atención y de DeltaNet reciben más bits; las matrices grandes de la FFN, menos. El resultado es un fichero de 1,80 GiB con una media de 3,65 bits por peso.
 
-La propuesta del autor es la densidad de capacidad: con caché KV de 8 bits, el modelo conserva el 96 % de la puntuación de referencia del modelo completo usando aproximadamente el 30 % de la memoria de GPU que necesita el BF16, y decodifica 2,7 veces más rápido. El modelo base tiene 4.205.751.296 parámetros (4,2B) y arquitectura Qwen3.5, con atención híbrida y Gated DeltaNet según los tags del autor.
+El modelo resuelve un problema de despliegue: servir un transformer de 4.205.751.296 parámetros en GPUs de consumo con la menor pérdida de calidad posible. Según el autor, servido con caché KV de 8 bits conserva el 96 % de la puntuación de referencia del modelo completo usando el 30 % de la memoria de GPU, y decodifica 2,7 veces más rápido. El repositorio ocupa 1,9 GB y se ejecuta sin modificaciones en llama.cpp y Ollama.
 
-Es relevante ahora porque ataca el problema práctico del despliegue en hardware de consumo: permite servir un modelo de 4B con 32K de contexto en GPU de 8-12 GB sin renunciar a la mayor parte de la calidad, y viene con un artículo técnico (*Where the Bits Go*) que documenta la metodología de asignación de bits y una evaluación reproducible sobre 2.313 tareas.
+La relevancia actual está en la metodología: el artículo asociado, "Where the Bits Go", documenta la asignación de precisión por clase de tensor y la métrica de "densidad de capacidad" (reducciones del error de benchmark por GiB de memoria residente). La licencia es Apache 2.0, heredada del modelo base, y el único idioma declarado es el inglés.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de Qwen3.5 con atencion hibrida y Gated DeltaNet (segun tags del autor); derivada de Qwen/Qwen3.5-4B |
-| Parametros totales | 4.205.751.296 (4,2B) |
-| Parametros activos | No aplica: modelo denso (no MoE) |
-| Longitud de contexto | 32.768 tokens (contexto empleado en la evaluacion del autor); maximo nativo del modelo base no disponible |
-| Tipos de cuantizacion | GGUF de precision mixta, media de 3,65 bits por peso; variantes concretas por tensor no disponibles. Soporta cache KV de 8 bits en tiempo de ejecucion |
-| Idiomas soportados | Ingles (unico idioma declarado en la model card) |
-| Licencia | Apache 2.0 (heredada de Qwen3.5-4B) |
-| Formato de pesos | GGUF (fichero unico, 1,80 GiB; repositorio de 1,9 GB) |
-
-Otros datos: pipeline `text-generation`, compatible con endpoints, creado el 2026-10-23 y actualizado el 2026-10-25, con 553 descargas y 4 likes en el momento de la consulta.
+| Arquitectura | Transformer derivado de Qwen3.5, con proyecciones DeltaNet (gated-deltanet); pesos del modelo base sin reentrenar |
+| Parametros totales | 4.205.751.296 |
+| Parametros activos | no disponible (no se declara como MoE) |
+| Longitud de contexto | 32K en la configuración de evaluación del autor; no se declara un máximo distinto |
+| Tipos de cuantizacion | Mezcla de tipos GGUF estándar por clase de tensor, media de 3,65 bits por peso; caché KV de 8 bits soportada |
+| Idiomas soportados | en |
+| Licencia | apache-2.0 (heredada de Qwen/Qwen3.5-4B) |
+| Formato de pesos | GGUF (llama.cpp, Ollama) |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura del Qwen3.5-4B: un transformer con capas de atención y Gated DeltaNet (atención lineal con estado recurrente), lo que explica que el autor hable de "estado recurrente" además de pesos y caché KV en el cómputo de memoria residente. magi-1.0 no introduce cambios estructurales: es un artefacto de cuantización post-entrenamiento (PTQ) que conserva la topología, el tokenizador y el chat template del modelo base.
+La arquitectura subyacente es la de Qwen3.5-4B: un transformer con proyecciones DeltaNet con compuerta (etiqueta gated-deltanet en el repositorio), orientado a generación de texto con modo de razonamiento. magi-1.0 no introduce cambios arquitectónicos ni entrenamiento adicional; es una reempaquetación de los pesos originales en GGUF con precisión mixta. La innovación está en la asignación de bits: cada clase de tensor recibe el tipo de cuantización que su sensibilidad medida requiere, con más precisión en las proyecciones pequeñas de atención y DeltaNet y menos en las matrices grandes de la FFN.
 
-No hay entrenamiento, RLHF ni DPO en este paso. La innovación es la política de asignación de bits: cada clase de tensor recibe la precisión que dicta su sensibilidad medida, en lugar de aplicar una plantilla uniforme como Q4_K_M o Q2_K. El artículo *Where the Bits Go* (GEHIRNS, 2026) documenta el método y el repositorio GEHIRNS/magi publica la receta y los datos. El resultado se sirve con cuantización de caché KV a 8 bits, opción que el autor incluye en sus cifras principales de memoria y velocidad.
+No se proporcionan en la información disponible datos sobre el corpus de entrenamiento del modelo base (número de tokens, composición del dataset) ni sobre las etapas de alineación (RLHF, DPO). El autor tampoco documenta un proceso de calibración con imatrix más allá de la etiqueta imatrix presente en el repositorio. La evaluación se realizó con razonamiento activado, presupuesto de 4.096 tokens con budget forcing, decodificación greedy y contexto de 32K sobre 2.313 tareas.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, con plantilla de chat del modelo base.
-- Razonamiento explícito: el autor evalúa con "thinking on" y un presupuesto de 4.096 tokens mediante *budget forcing*, lo que confirma soporte de modo pensamiento con límite configurable.
-- Generación de código: evaluada con ejecución de tests en HumanEval+ y MBPP+ (EvalPlus) y con 150 problemas de LiveCodeBench de concursos entre 2025-01-18 y 2025-04-06.
-- Razonamiento multi-paso dentro de una ventana de 32K tokens, adecuado para contextos largos y conversaciones multi-turno.
-- Compatibilidad con llama.cpp y Ollama, incluida cuantización de caché KV a 8 bits.
-- Tool calling / function calling: no documentado en la información disponible.
-- Capacidades de visión, audio o multimodal: no disponibles (pipeline de solo texto).
-- Multilingüismo: limitado al inglés declarado; el resto de idiomas del modelo base no está verificado para esta cuantización.
+- Generación de texto conversacional y de un solo turno, con pipeline text-generation.
+- Razonamiento explícito en modo thinking, con presupuesto de tokens controlable (el autor lo fija en 4.096 para sus evaluaciones).
+- Generación de código, evaluada mediante ejecución de tests (EvalPlus para HumanEval+ y MBPP+, y LiveCodeBench).
+- Razonamiento matemático y de sentido común, cubierto en la suite de benchmarks del autor.
+- Capacidades heredadas del modelo base Qwen3.5-4B; el autor no documenta tool calling, function calling ni soporte de agentes de forma explícita.
+- Multilingüe limitado: el único idioma declarado es el inglés.
+- Sin soporte declarado de visión ni audio.
 
 ## Casos de uso
 
-- Asistente de código en local para equipos con GPU de consumo: el fichero de 1,80 GiB entra en tarjetas de 8 GB con contexto de 32K, de modo que se puede integrar en el IDE o en un pipeline de CI/CD para revisión y generación de tests sin depender de la nube.
-- Atención al cliente automatizada en inglés: la ventana de 32K permite arrastrar historial multi-turno y documentos de referencia sin truncar, y la decodificación 2,7 veces más rápida reduce el coste por respuesta en despliegues con concurrencia.
-- Despliegue en el borde o en portátiles: al ocupar aproximadamente el 30 % de la memoria del BF16, cabe en estaciones de trabajo sin GPU dedicada de gama alta o en Apple Silicon vía llama.cpp/Ollama.
-- Razonamiento con presupuesto controlado: tareas de análisis o clasificación compleja donde se fija un límite de tokens de pensamiento (por ejemplo 4.096) para acotar latencia y coste, tal como hace el autor en su evaluación.
-- Prototipado e investigación de cuantización: sirve como caso de estudio reproducible de asignación de bits por sensibilidad, con artículo y receta publicados, para equipos que quieran replicar el método en otros modelos.
-- Servicio de inferencia en una sola GPU compartida: la baja huella de memoria permite ejecutar varias instancias o combinar el modelo con otros servicios en la misma tarjeta de 12 GB, algo inviable con el BF16 de 8,98 GiB.
-- Generación aumentada por recuperación (RAG) en inglés: con 32K de contexto se pueden inyectar varios fragmentos documentales por consulta manteniendo el modelo residente en memoria.
+- Despliegue en GPU de consumo: con 1,80 GiB de pesos y caché KV de 8 bits, el modelo cabe holgadamente en tarjetas de 8-12 GB y permite mantener contexto de 32K, lo que lo hace adecuado para estaciones de trabajo con una sola RTX 5070 o similar.
+- Asistentes de código en local: la evaluación con ejecución de tests (HumanEval+, MBPP+) y LiveCodeBench indica uso viable para autocompletado y generación de funciones en entornos sin conexión, donde no se puede enviar código a una API.
+- Prototipado rápido de aplicaciones de razonamiento: el modo thinking con presupuesto de tokens acotado permite controlar el coste por consulta en pipelines de agentes de un solo paso.
+- Servicio de inferencia de alto throughput: el autor reporta decodificación 2,7 veces más rápida que el BF16, lo que reduce el coste por token en despliegues con Ollama o llama.cpp.
+- Sustitución de cuantizaciones Q4_K_M en entornos con restricción de memoria: según el autor, ofrece entre un 14 % y un 27 % más de capacidad por GiB, útil cuando la VRAM es el límite duro.
+- Evaluación comparativa de técnicas de cuantización: el artículo y los datos publicados permiten reproducir la metodología de asignación de bits por tensor en otros modelos.
+- Educación e investigación: el paquete incluye paper, receta y datos en GitHub, lo que facilita estudiar el efecto de la precisión mixta sobre benchmarks concretos.
 
 ## Benchmarks y rendimiento
 
-Protocolo del autor: una sola RTX 5070 (12 GB), thinking activado con presupuesto de 4.096 tokens (budget forcing), decodificación greedy, contexto de 32K, 2.313 tareas. El código se evalúa ejecutando tests (EvalPlus para HumanEval+ y MBPP+); LiveCodeBench usa 150 problemas.
+Resultados publicados por el autor. Todos los modelos se ejecutaron en una RTX 5070 (12 GB) con el mismo protocolo: thinking activado con presupuesto de 4.096 tokens, decodificación greedy, contexto de 32K y 2.313 tareas. La puntuación agregada de BF16 es 84,14 %; Q4_K_M de Unsloth iguala esa cifra.
 
-La tabla completa de resultados por benchmark no está disponible en la información proporcionada (el contenido aparece truncado). Los datos agregados y de memoria sí están publicados:
-
-| Metrica | BF16 | Q4_K_M | Q2_K | magi-1.0 | magi-1.0 + KV q8 |
+| Metrica | magi-1.0-4B + KV q8 | magi-1.0-4B | Q4_K_M | Q2_K | BF16 |
 |---|---|---|---|---|---|
-| Memoria residente con contexto 32K (Ollama) | 8,98 GiB | 3,78 GiB | 3,15 GiB | no disponible en el extracto | no disponible en el extracto |
-| Puntuacion agregada de la suite | 84,14 % | 84,14 % | 4,2 puntos por debajo de magi-1.0 | 2,85 puntos por debajo de Q4_K_M (≈81,3 % derivado) | no disponible |
-| Puntuacion retenida frente a BF16 | 100 % | 100 % | no disponible | 96 % | 96 % |
-| Memoria de GPU frente a BF16 | 1x | no disponible | no disponible | ~30 % | ~30 % (97 % de puntuacion con el 34 % usando cache por defecto) |
-| Densidad de capacidad (ρ = −log₂(1−score)/GiB) | 0,294 | 0,703 | 0,675 | 0,800 | 0,893 |
-| Velocidad de decodificacion | 1x | no disponible | no disponible | 2,7x | no disponible |
+| Puntuacion agregada | 96 % de BF16 | no disponible en cifras absolutas | 84,14 % (igual que BF16) | 4,2 puntos por debajo de magi-1.0 | 84,14 % |
+| Memoria residente (32K, Ollama) | 30 % de BF16 | 34 % de BF16 | +0,76 GiB vs magi-1.0; +1,13 GiB vs magi-1.0 + q8 KV | no disponible | referencia |
+| Densidad de capacidad (ρ) | 0,893 (IC 95 %: 0,856-0,934) | 0,800 (IC 95 %: 0,768-0,835) | 0,703 (IC 95 %: 0,673-0,734) | 0,675 (IC 95 %: 0,646-0,703) | 0,294 |
+| Velocidad de decodificacion | 2,7x vs BF16 | no disponible | no disponible | no disponible | referencia |
 
-Intervalos del 95 % publicados por el autor para la densidad de capacidad: 0,856–0,934 (magi-1.0 + KV q8), 0,768–0,835 (magi-1.0), 0,673–0,734 (Q4_K_M) y 0,646–0,703 (Q2_K). La ventaja de magi-1.0 sobre Q2_K en precisión es de 4,2 puntos, con intervalo pareado del 95 % de 2,8–5,6.
+No se detallan en la información disponible los resultados desglosados por benchmark individual (MMLU, HumanEval, GSM8K, etc.), solo la puntuación agregada y la comparación relativa.
 
 ## Requisitos de hardware
 
-- Pesos en disco y en memoria: 1,80 GiB para el fichero GGUF (3,65 bits por peso de media).
-- Memoria de GPU: aproximadamente el 30 % de los 8,98 GiB del BF16 con caché KV de 8 bits (en torno a 2,7 GiB residentes con contexto de 32K, sin el contexto CUDA de ~1,05 GiB); en torno al 34 % con la caché por defecto.
-- GPU validadas por el autor: una RTX 5070 de 12 GB para toda la campaña de evaluación.
-- Cabe en GPU de consumo: sí, en tarjetas de 8 GB o más con contexto de 32K, y con margen en 12 GB (RTX 3060 12 GB, RTX 4070, RTX 5070). En 6 GB requeriría reducir contexto o usar caché KV más agresiva.
-- Opciones de despliegue: llama.cpp y Ollama son los soportes declarados; el tag `endpoints_compatible` sugiere uso tras API compatible con endpoints. Soporte en vLLM o TGI no está documentado para este fichero.
-- Aceleración: decodificación 2,7 veces más rápida que el BF16 según el autor; no se publican tokens por segundo absolutos ni métricas de throughput con batching.
+- Pesos: 1,80 GiB en disco (repositorio de 1,9 GB).
+- VRAM estimada: aproximadamente el 30 % de la memoria del BF16 con caché KV de 8 bits y contexto de 32K; el 34 % con la caché por defecto. La cifra excluye el contexto CUDA, de unos 1,05 GiB.
+- GPU recomendadas: el autor valida en una RTX 5070 de 12 GB. Por tamaño, cabe en cualquier GPU consumer con 8 GB o más (RTX 3060/4060/5060 y superiores).
+- Cabe en GPU de consumo: sí, con margen amplio para contexto largo.
+- Opciones de despliegue: llama.cpp y Ollama de forma nativa; el repositorio incluye la etiqueta endpoints_compatible.
+- Latencia y throughput: decodificación 2,7 veces más rápida que el BF16 según el autor; no se publican tokens por segundo absolutos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Puntuacion agregada | Memoria (32K) | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Puntuacion agregada | Memoria (32K) | Licencia | Formato |
 |---|---|---|---|---|---|---|
-| magi-1.0 | 4,2B | 32K | ~81,3 % (derivado) | ~30 % de BF16 | Apache 2.0 | GGUF en HF, llama.cpp/Ollama |
-| magi-1.0 + KV q8 | 4,2B | 32K | 96 % de BF16 | ~30 % de BF16 | Apache 2.0 | Igual, con cache KV de 8 bits |
-| Qwen3.5-4B BF16 | 4,2B | 32K en la evaluacion | 84,14 % | 8,98 GiB | Apache 2.0 | Safetensors en HF |
-| Q4_K_M (Unsloth) | 4,2B | 32K en la evaluacion | 84,14 % | 3,78 GiB | Apache 2.0 | GGUF en HF |
-| Q2_K (publicado) | 4,2B | 32K en la evaluacion | 4,2 puntos por debajo de magi-1.0 | 3,15 GiB | Apache 2.0 | GGUF en HF |
-| magi-beta-1 | no disponible | no disponible | densidad de capacidad 0,771 | no disponible | no disponible | Version previa del autor |
+| magi-1.0-4B + KV q8 | 4,21B | 32K | 96 % de BF16 | 30 % de BF16 | Apache 2.0 | GGUF |
+| magi-1.0-4B | 4,21B | 32K | no disponible en absoluto | 34 % de BF16 | Apache 2.0 | GGUF |
+| Qwen3.5-4B Q4_K_M (Unsloth) | 4,21B | no disponible | 84,14 % | +1,13 GiB vs magi + q8 KV | Apache 2.0 | GGUF |
+| Qwen3.5-4B Q2_K | 4,21B | no disponible | 4,2 puntos menos que magi-1.0 | no disponible | Apache 2.0 | GGUF |
+| Qwen3.5-4B BF16 | 4,21B | 32K | 84,14 % | referencia | Apache 2.0 | safetensors |
 
-Lectura del autor: si prima la precisión, Q4_K_M iguala al BF16 y supera a magi-1.0 en 2,85 puntos, a cambio de 0,76 GiB más de memoria (1,13 GiB más que magi-1.0 con KV q8); si la restricción es la memoria, magi-1.0 ofrece entre un 14 % y un 27 % más de capacidad por GiB.
+La comparación directa con otros modelos de 4B fuera de la familia Qwen3.5 no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo inglés declarado: no hay evidencia de calidad en castellano ni en otros idiomas para esta cuantización.
-- Pérdida de calidad medible: el agregado cae unos 2,85 puntos frente a Q4_K_M y el BF16; en tareas sensibles a precisión numérica o de código muy ajustado conviene validar con la propia suite antes de producción.
-- Evaluación con un único protocolo y una sola GPU: decodificación greedy, thinking con presupuesto de 4.096 tokens y 32K de contexto en una RTX 5070. Los resultados pueden no transferir a otros backends, versiones de llama.cpp o configuraciones de sampling.
-- La tabla completa de benchmarks por tarea no está disponible en la información consultada; las cifras por benchmark citadas en la model card no se pueden verificar aquí.
-- Riesgo de alucinación inherente al modelo base de 4B, no corregido por la cuantización: no hay entrenamiento ni alineamiento adicional en este artefacto.
-- Sesgos: heredados de Qwen3.5-4B; el autor no publica análisis de sesgo específico para esta cuantización.
-- Tool calling, agentes y modo multimodal no están documentados; no deben asumirse en producción sin pruebas propias.
-- Licencia Apache 2.0: permite uso comercial, pero se heredan las condiciones del modelo base y conviene revisar el LICENSE enlazado por el autor.
-- El rendimiento de memoria citado excluye el contexto CUDA (~1,05 GiB), por lo que la huella real en GPU es mayor que las cifras de densidad de capacidad.
-- Fichero GGUF único: no se publican variantes por tamaño ni versiones en safetensors de la cuantización, lo que limita el ajuste fino del compromiso memoria/calidad.
+- Cuantización con pérdida: el autor reconoce que Q4_K_M de Unsloth es 2,85 puntos más preciso que magi-1.0-4B; si la precisión es prioritaria, magi no es la opción.
+- Solo inglés declarado: no hay soporte multilingüe documentado, lo que limita su uso en productos en castellano.
+- Riesgo de alucinación inherente al modelo base; la cuantización puede amplificarlo en tareas de razonamiento largo.
+- No se documentan sesgos específicos del modelo base ni del proceso de cuantización.
+- No hay soporte declarado de tool calling ni de flujos de agentes multi-paso; conviene validarlo antes de usarlo en producción con herramientas externas.
+- La licencia Apache 2.0 permite uso comercial, pero se hereda del modelo base Qwen3.5-4B y conviene revisar las condiciones de este último.
+- Los benchmarks provienen del propio autor, con una sola GPU y un protocolo concreto (greedy, budget forcing de 4.096 tokens); no hay validación independiente en la información disponible.
+- El repositorio tiene pocas descargas (1.483) y likes (5), lo que indica escasa adopción todavía.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/GEHIRNS/magi-1.0
+- Hugging Face: https://huggingface.co/GEHIRNS/magi-1.0
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
-- Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
-- Coleccion MAGI 1.0: https://huggingface.co/collections/GEHIRNS/magi-10-6adaeeaefd1d999584a8a12d
-- Repositorio con receta y datos: https://github.com/GEHIRNS/magi
-- Articulo *Where the Bits Go* (GEHIRNS, 2026): https://github.com/GEHIRNS/magi/blob/main/paper/where-the-bits-go.pdf
-- Perfil del autor: https://huggingface.co/GEHIRNS
+- Paper "Where the Bits Go": https://doi.org/10.5281/zenodo.23630199
+- Repositorio de receta y datos: https://github.com/GEHIRNS/magi
+- Web del autor: https://gehirns.pages.dev/
+- Colección MAGI 1.0: https://huggingface.co/collections/GEHIRNS/magi-10-6adaeeaefd1d999584a8a12d

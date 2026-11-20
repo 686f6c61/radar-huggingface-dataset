@@ -54,31 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Stepguardguard - a ninty-seven Collection - Hugging Face",
-      "url": "https://huggingface.co/collections/ninty-seven/stepguardguard",
-      "snippet": "Step Stepguardguard updated 9 days ago Step Upvote - Sort: Collection"
-    },
-    {
-      "title": "mradermacher/stepguard-rl-4b-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/stepguard-rl-4b-GGUF",
-      "snippet": "mradermacher / stepguard-rl-4b-GGUF like 0 Transformers GGUF English agent-safety tool-use guard-model step-level-safety conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "StepGuard/README.md at main · zheng977/StepGuard · GitHub",
-      "url": "https://github.com/zheng977/StepGuard/blob/main/README.md",
-      "snippet": "StepGuard: Learning Step-Level Guardrails for LLM Agents - StepGuard/README.md at main · zheng977/StepGuard"
-    },
-    {
-      "title": "StepGuard: Step-Level Data Synthesis and Balance-Aware...",
-      "url": "https://openreview.net/forum?id=2i7xXuNixu",
-      "snippet": "We propose StepGuard, a step-level guardrail model for both offline trajectory diagnosis and online pre-action guarding. To train it, we introduce StepGen, an automatic data engine that generates step-annotated safe/unsafe trajectory groups with localized risky actions and context-matched safe alternatives, enabling the model to judge whether a ..."
-    },
-    {
-      "title": "StepGuard: Guarding Web Navigation via Single-Step Calibration",
-      "url": "https://arxiv.org/abs/2606.17871",
-      "snippet": "Abstract page for arXiv paper 2606.17871: StepGuard: Guarding Web Navigation via Single-Step Calibration"
-    }
-  ]
+  "sources": []
 }

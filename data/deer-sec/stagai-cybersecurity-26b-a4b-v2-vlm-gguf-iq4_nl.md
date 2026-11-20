@@ -1,105 +1,106 @@
 # deer-sec/StagAI-CyberSecurity-26B-A4B-v2-VLM-GGUF-IQ4_NL
 
-# StagAI-CyberSecurity-26B-A4B-v2-VLM GGUF IQ4_NL
-
 ## Resumen
 
-StagAI-CyberSecurity-26B-A4B-v2-VLM es un modelo linguistico multimodal (texto, imagen y video) especializado en analisis de ciberseguridad y razonamiento teorico, desarrollado por deer-sec. Parte de la arquitectura Gemma-4-26B-A4B, un transformer con mezcla de expertos (MoE) de 25.233.142.046 parametros totales y aproximadamente 4.000 millones activos por token, sobre el que se aplico un ajuste fino supervisado con QLoRA (8 bits) mediante el framework MLX.
+StagAI-CyberSecurity-26B-A4B-v2-VLM es un modelo de lenguaje multimodal (texto, imagen y video) especializado en análisis de ciberseguridad y razonamiento teórico avanzado, desarrollado por deer-sec. Se construye sobre la arquitectura MoE de Gemma-4-26B-A4B de Google mediante un ajuste fino con LoRA realizado con el framework MLX (`mlx_lm.lora`), tras el cual los pesos se fusionan con el modelo base y se restaura la torre de visión para conservar las capacidades multimodales que normalmente se pierden en el proceso de fusión.
 
-Esta ficha corresponde concretamente al repositorio `GGUF-IQ4_NL`, una cuantizacion de 4 bits derivada del GGUF en BF16 del mismo modelo. El interes practico del modelo esta en dos frentes: por un lado, conserva las capacidades de vision (diagramas de red, capturas de SIEM, imagenes de capturas de paquetes, video) que normalmente se pierden al fusionar adaptadores LoRA con `mlx_lm.fuse`; por otro, el autor documenta un aumento del tiempo de "pensamiento" (thinking) que se traduce en razonamiento paso a paso mas profundo a costa de mayor latencia.
+El modelo está pensado como motor de inferencia para profesionales de seguridad, investigadores, analistas de SOC y administradores de sistemas en tareas de modelado de amenazas, evaluación de vulnerabilidades, interpretación de logs y respuesta a incidentes. Incorpora un modo de razonamiento profundo ("Thinking") que incrementa la latencia a cambio de deducciones paso a paso más elaboradas. La versión publicada en este repositorio es una cuantización GGUF IQ4_NL de 4 bits.
 
-El modelo se publica bajo licencia Apache 2.0, con soporte declarado de ingles, japones y chino (multilingue), y esta pensado como motor de inferencia para analistas SOC, investigadores y administradores de sistemas que trabajan en modelado de amenazas, evaluacion de vulnerabilidades, interpretacion de logs y respuesta a incidentes. Es un repositorio recien creado (17 de octubre de 2026) sin descargas ni valoraciones, y el autor no ha publicado resultados de benchmarks.
+Con 25.233.142.046 parámetros totales y aproximadamente 4.000 millones activos por token (arquitectura MoE), el modelo ocupa 15,8 GB en el repositorio y se distribuye bajo licencia Apache 2.0. Soporta inglés, japonés y chino, además de contenido multilingüe, y su entrenamiento se apoya en dos datasets de ciberseguridad, uno de ellos específicamente en japonés.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con mezcla de expertos (MoE), base google/gemma-4-26b-a4b |
+| Arquitectura | Transformer MoE (Gemma-4-26B-A4B), multimodal con torre de visión |
 | Parametros totales | 25.233.142.046 |
-| Parametros activos | Aproximadamente 4.000 millones (denominacion A4B del modelo base; no se detalla el numero exacto de expertos ni el top-k) |
+| Parametros activos | Aproximadamente 4.000 millones (MoE, 128 expertos) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF IQ4_NL (esta variante); la familia incluye GGUF BF16, GGUF Q8 y MLX BF16, MLX Q8, MLX Q4 |
-| Idiomas soportados | Multilingue; ingles, japones y chino (segun la model card y las etiquetas del repositorio) |
+| Tipos de cuantizacion | IQ4_NL (4 bits) en este repositorio; existen variantes MLX Q8 y GGUF en la familia |
+| Idiomas soportados | Multilingüe, inglés (en), japonés (ja), chino (zh) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (fichero unico de cuantizacion IQ4_NL, 4 bits) |
-
-Otros datos del repositorio: tamano del repo 15,8 GB, libreria `gguf`, pipeline `image-text-to-text`, compatible con endpoints, region US.
+| Formato de pesos | GGUF (este repo); MLX Q8 en la familia StagAI-CyberSecurity-26B-A4B-v2-VLM |
+| Pipeline | image-text-to-text |
+| Modelo base | google/gemma-4-26b-a4b |
+| Tamano del repositorio | 15,8 GB |
+| Descargas | 1.824 |
+| Fecha de creacion | 2026-10-17 |
+| Ultima actualizacion | 2026-10-28 |
 
 ## Arquitectura y entrenamiento
 
-La base es un transformer MoE de la familia Gemma 4 (26B totales, ~4B activos), lo que permite un coste de computo por token propio de un modelo de ~4B mientras la memoria debe alojar los 25,2B de parametros completos. Sobre esa base se aplico un ajuste fino supervisado con QLoRA de 8 bits usando `mlx_lm.lora`, con los siguientes hiperparametros declarados: optimizador AdamW, `num_layers: 18`, learning rate 5e-7, `mask_prompt: true`, y LoRA con rango 4, escala 1.0, dropout 0.03. Las claves objetivo del adaptador incluyen las proyecciones de atencion (`q_proj`, `k_proj`, `v_proj`, `o_proj`), las proyecciones del MLP (`gate_proj`, `up_proj`, `down_proj`) y las del router/experto (`experts.switch_glu.gate_proj`); la lista aparece truncada en la model card.
+El modelo parte de Gemma-4-26B-A4B, un transformer de mezcla de expertos (MoE) con 128 expertos y enrutador que activa aproximadamente 4.000 millones de parámetros por token sobre un total de 25.230 millones. Sobre esta base se aplicó un ajuste fino con QLoRA (rango 4) usando `mlx_lm.lora` del framework MLX, y posteriormente se fusionaron los pesos LoRA en el modelo base con una técnica propia del autor orientada a evitar la degradación de pesos. Tras la fusión se restauró e integró de nuevo la torre de visión, que habitualmente se pierde en los procesos `mlx_lm.lora` / `mlx_lm.fuse`, de modo que el modelo conserva tanto el conocimiento de ciberseguridad como las capacidades de reconocimiento de imagen y vídeo.
 
-El entrenamiento uso 80.000 entradas SFT: 40.000 en ingles y 40.000 en japones, procedentes de los datasets `deer-sec/deer_sec-japanese-cybersecurity-chatml-v2` y `AlicanKiraz0/Cybersecurity-Dataset-Fenrir-v2.1`. La innovacion tecnica declarada por el autor es la tecnica de fusion del adaptador LoRA en el modelo base "sin perdida de pesos", que permite restaurar e integrar las capacidades de vision (reconocimiento de imagen y video) que habitualmente se descartan en los flujos `mlx_lm.lora` / `mlx_lm.fuse`. No se documentan detalles sobre la composicion exacta de las 80.000 muestras, el numero total de tokens vistos, ni si hubo etapas adicionales de RLHF o DPO mas alla del SFT.
+Los datos de entrenamiento provienen de dos datasets: `deer-sec/deer_sec-japanese-cybersecurity-chatml-v2` (ciberseguridad en japonés, formato ChatML) y `AlicanKiraz0/Cybersecurity-Dataset-Fenrir-v2.1`. El autor documenta una auditoría estructural y de seguridad basada en dos comprobaciones matemáticas: descomposición en valores singulares (SVD) de la diferencia de pesos y análisis del vector de rechazo en el espacio de representación interna. Según los datos publicados, las capas inferiores (L00–L11) y la torre de visión presentan un cambio del 0,000%, las capas superiores de razonamiento (L12–L29) un cambio medio del 0,128% (0,163% en L=15), el enrutador MoE un cambio del 0,000% y el rango efectivo (stable rank) se sitúa en 1,41–1,83 con una concentración del 72,5% de la energía de actualización en las cuatro primeras direcciones singulares, coherente con el diseño QLoRA de rango 4. La similitud del vector de rechazo con el del modelo base es de 0,9976 de media (0,9994 en L=15) y la similitud con una abliteración es de 0,00032 (máximo 0,00203), lo que el autor presenta como evidencia de que no se ha eliminado el filtro de seguridad.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento especializado en ciberseguridad: analisis de amenazas, modelado de amenazas, evaluacion de vulnerabilidades y estrategias de respuesta a incidentes.
-- Modo "thinking" / razonamiento profundo paso a paso, con latencia de proceso superior a la del modelo base segun el autor.
-- Vision multimodal: interpretacion de diagramas de arquitectura de red, capturas de pantalla de SIEM y logs, imagenes de capturas de paquetes y video.
-- Entrada multimodal imagen-texto (pipeline `image-text-to-text`), lo que permite adjuntar evidencias visuales junto a la consulta en texto.
-- Capacidades multilingues en ingles, japones y chino, con datos de ajuste fino efectivos en ingles y japones.
-- Conversacion multi-turno (etiqueta `conversational`) con plantilla tipo ChatML en los datos de entrenamiento.
-- No hay documentacion sobre soporte de tool calling, function calling ni uso como agente multi-paso en la informacion disponible.
-- No se documentan capacidades de audio ni de salida distinta de texto.
+- Generación de texto y razonamiento profundo en el dominio de ciberseguridad, con modo "Thinking" de deducción paso a paso.
+- Análisis multimodal: interpretación de imágenes y vídeo, incluyendo diagramas de arquitectura de red, capturas de pantalla de SIEM y logs, e imágenes de capturas de paquetes.
+- Modelado de amenazas, evaluación de vulnerabilidades y planificación de respuesta a incidentes.
+- Interpretación de logs y correlación de eventos de seguridad.
+- Capacidades multilingües en inglés, japonés y chino, además de contenido multilingüe general.
+- Conversación multi-turno en formato chat (pipeline conversacional).
+- Compatibilidad con endpoints (tag `endpoints_compatible`).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte explícito de agentes y multi-step reasoning más allá del modo Thinking: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Triaje de alertas en un SOC: el modelo recibe el texto de la alerta y una captura del panel del SIEM, y devuelve una hipotesis de causa raiz, el nivel de severidad y los siguientes pasos de investigacion, aprovechando el modo de razonamiento para justificar la clasificacion.
-- Analisis de diagramas de red y arquitecturas: a partir de una imagen de la topologia, el modelo puede identificar segmentos planos, servicios expuestos y puntos unicos de fallo, y proponer reglas de segmentacion.
-- Interpretacion de capturas de paquetes y trazas: adjuntando una imagen de Wireshark o un volcado de logs, el modelo ayuda a discriminar trafico legitimo de indicadores de compromiso y a redactar la consulta de correlacion correspondiente.
-- Soporte a la respuesta a incidentes: generacion de borradores de playbooks, cronologias de incidente y comunicaciones internas a partir de la evidencia textual y visual aportada por el equipo.
-- Formacion y concienciacion: analisis de correos de phishing o capturas de pantalla sospechosas para explicar al usuario, en japones o en ingles, que indicadores delatan el intento de fraude.
-- Asistente de hardening y revision de configuraciones: revision de fragmentos de configuracion (nginx, iptables, politicas de IAM) y propuesta de cambios justificados, con el razonamiento explicito como documentacion auditable.
-- Investigacion defensiva y analisis de malware en entorno controlado: resumen de cadenas, comportamientos y tecnicas MITRE ATT&CK observadas en artefactos, siempre en el marco de la clausula de uso etico del autor.
+- Análisis de capturas de pantalla de SIEM y paneles de monitorización: el modelo recibe la imagen de un dashboard o de una alerta y extrae los indicadores relevantes, los interpreta en contexto y propone una hipótesis de incidente, aprovechando su torre de visión restaurada.
+- Interpretación de diagramas de arquitectura de red: a partir de una imagen del esquema, el modelo puede señalar superficies de exposición, segmentos mal aislados y puntos únicos de fallo, útil en revisiones de diseño seguro previas a un despliegue.
+- Triaje de alertas en un SOC: con conversaciones multi-turno, el analista pega logs y el modelo razona sobre la secuencia de eventos, clasifica la severidad y sugiere los siguientes pasos de investigación.
+- Modelado de amenazas asistido: dado un descriptor de sistema o una captura de su arquitectura, el modelo genera un borrador de modelo de amenazas con activos, actores y vectores de ataque plausibles, que el equipo revisa y completa.
+- Formación y concienciación: generación de escenarios de phishing, ejercicios de mesa y explicaciones didácticas de vulnerabilidades, con soporte en japonés e inglés para equipos internacionales.
+- Análisis de imágenes de tráfico de red: interpretación de capturas de paquetes exportadas como imagen para una primera lectura rápida antes de un análisis con herramientas específicas.
+- Asistencia en respuesta a incidentes: redacción de borradores de informes post-incidente y de runbooks a partir de la evidencia textual y visual aportada por el analista.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card unicamente afirma mejoras cualitativas de calidad de respuesta frente al modelo base y frente a la version anterior (CyberStag-Security-26B-A4B-V1), sin cifras, y senala un aumento del tiempo de "thinking" (mayor latencia) como contrapartida al razonamiento mas profundo. No hay datos de MMLU, HumanEval, GSM8K ni de evaluaciones especificas de ciberseguridad (por ejemplo, CTF o CVE-QA) para este repositorio.
+El autor informa de una puntuación media global de 90,00 en el benchmark CyberSec-Eval, con puesto número 27 en la clasificación general a fecha de 28 de octubre de 2026. No se han publicado en la información disponible resultados desglosados por tarea (MMLU, HumanEval, GSM8K u otros) ni comparaciones numéricas detalladas frente a modelos similares.
+
+| Benchmark | Resultado | Fecha |
+|---|---|---|
+| CyberSec-Eval (media global) | 90,00 (puesto 27) | 2026-10-28 |
+| MMLU | no disponible | - |
+| HumanEval | no disponible | - |
+| GSM8K | no disponible | - |
 
 ## Requisitos de hardware
 
-- VRAM estimada para IQ4_NL: los pesos ocupan del orden de 14-15 GB (el repositorio completo pesa 15,8 GB, incluyendo torre de vision y metadatos), mas cache KV y buffers; en la practica se recomienda un minimo de 16-20 GB de VRAM o memoria unificada.
-- GPU consumer: cabe en tarjetas de 24 GB (RTX 3090, RTX 4090, RX 7900 XTX) con margen para contexto moderado; en 16 GB (RTX 4060 Ti 16GB, RTX 5070 Ti) es ajustado y dependera de la longitud de contexto y de si se procesan imagenes. En 12 GB no es viable en esta cuantizacion.
-- Apple Silicon: el autor distribuye variantes MLX (BF16, Q8, Q4) especificas para memoria unificada; un equipo con 32 GB unificados es un objetivo razonable para Q4/Q8, y 64 GB o mas para BF16.
-- Otras cuantizaciones de la familia: GGUF Q8 en torno a 27 GB (requiere 32 GB o mas), GGUF BF16 en torno a 50 GB (A100 80GB, H100, o dos GPU de 48 GB).
-- Despliegue: llama.cpp y derivados (LM Studio, Ollama, KoboldCpp) para el formato GGUF; MLX para Apple Silicon. No se documenta soporte verificado en vLLM ni en TGI para esta variante GGUF multimodal.
-- Latencia y throughput: no disponibles. El autor advierte de un incremento del tiempo de razonamiento respecto al modelo base; con ~4B parametros activos el coste por token es contenido, pero el cuello de botella es de memoria y de ancho de banda al recorrer los expertos.
-- Nota: al ser un modelo multimodal, el preprocesado de imagenes y video anade coste de vision encoder y memoria adicional no cuantificada en la model card.
+- VRAM estimada para inferencia: el repositorio GGUF IQ4_NL ocupa 15,8 GB, por lo que se necesita al menos ese espacio más el overhead de contexto y de la torre de visión; en la práctica, entre 18 y 22 GB de VRAM para contextos moderados.
+- GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 6000 Ada para despliegues de producción; una RTX 4090 (24 GB) puede alojar la cuantización IQ4_NL con contexto limitado.
+- Cabe en GPU de consumo: sí, en RTX 4090 (24 GB) y potencialmente en GPUs de 24 GB o más; en tarjetas de 16 GB no es viable con esta cuantización.
+- Opciones de despliegue: llama.cpp y Ollama para GGUF; MLX para las variantes Q8 en Apple Silicon; vLLM y TGI requerirían los pesos en safetensors, no disponibles en este repositorio.
+- Latencia y throughput: no disponible. El autor advierte de un incremento del tiempo de "thinking" respecto al modelo base, lo que aumenta la latencia a cambio de mayor calidad analítica.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos publicados de benchmarks ni de especificaciones completas de terceros en la informacion proporcionada, por lo que la comparacion se limita a las variantes de la propia familia y al modelo base.
-
-| Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Notas |
+| Modelo | Parametros totales | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| StagAI-CyberSecurity-26B-A4B-v2-VLM GGUF IQ4_NL (este) | 25,23B totales / ~4B activos | no disponible | GGUF IQ4_NL, 15,8 GB | Apache 2.0 | Orientado a VRAM limitada; cuantizacion de 4 bits con perdida |
-| StagAI-CyberSecurity-26B-A4B-v2-VLM GGUF Q8 | 25,23B totales / ~4B activos | no disponible | GGUF Q8 | Apache 2.0 | Mayor fidelidad, ~27 GB |
-| StagAI-CyberSecurity-26B-A4B-v2-VLM GGUF BF16 | 25,23B totales / ~4B activos | no disponible | GGUF BF16 | Apache 2.0 | Referencia sin cuantizar, ~50 GB |
-| StagAI-CyberSecurity-26B-A4B-v2-VLM MLX Q4 / Q8 / BF16 | 25,23B totales / ~4B activos | no disponible | MLX | Apache 2.0 | Exclusivo Apple Silicon |
-| google/gemma-4-26b-a4b (base) | 25,23B totales / ~4B activos | no disponible | safetensors y derivados | licencia del modelo base (el ajuste se publica como Apache 2.0) | Sin especializacion en ciberseguridad ni datos de ajuste propios |
+| StagAI-CyberSecurity-26B-A4B-v2-VLM (este) | 25,2 B (MoE, ~4 B activos) | no disponible | Apache 2.0 | GGUF IQ4_NL, MLX Q8 | CyberSec-Eval 90,00; VLM con visión restaurada |
+| Gemma-4-26B-A4B (base) | 25,2 B (MoE, ~4 B activos) | no disponible | Gemma license (no disponible en detalle) | safetensors | Modelo generalista sin ajuste de ciberseguridad; el autor reporta menor calidad en preguntas de seguridad |
+| CyberStag-Security-26B-A4B-V1 (versión previa del autor) | 25,2 B (MoE) | no disponible | no disponible | no disponible | El autor indica que la v2 mejora la calidad de respuesta respecto a la v1 |
 
-Alternativas de terceros de la misma categoria (modelos de 20-30B especializados en ciberseguridad o VLMs abiertos comparables): no disponible en la informacion proporcionada, al no haberse encontrado fuentes tecnicas en la busqueda web.
+No se dispone de datos de benchmarks comparativos frente a otros modelos especializados en ciberseguridad en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks: las afirmaciones de mejora frente al modelo base y frente a la V1 son cualitativas y no verificables con datos publicos.
-- Cuantizacion con perdida: IQ4_NL es una cuantizacion de 4 bits; puede degradar precisión en tareas que requieren recuperar identificadores exactos (CVE, hashes, rutas, nombres de reglas) y en el razonamiento de varios pasos.
-- Riesgo de alucinacion: en dominios de seguridad es especialmente critico, ya que el modelo puede inventar numeros de CVE, vectores CVSS, nombres de herramientas o sintaxis de exploits; requiere verificacion contra fuentes primarias.
-- Sesgo de dominio y de idioma: el ajuste fino se hizo con 40.000 muestras en ingles y 40.000 en japones, aunque las etiquetas declaran chino; el rendimiento real en chino y en castellano no esta documentado ni evaluado.
-- Datos de contexto y de arquitectura incompletos: no se publica longitud de contexto, numero de expertos, top-k, ni composicion detallada de los datasets.
-- Model card truncada: la lista de claves LoRA y parte de los detalles tecnicos aparecen cortados, lo que impide reproducir el entrenamiento tal cual.
-- Latencia: el propio autor advierte de un aumento del tiempo de "thinking", relevante para pipelines en tiempo real.
-- Uso dual: el modelo puede generar contenido aprovechable para ataque; el autor restringe explicitamente su uso a fines educativos, investigacion defensiva y hardening, y prohibe el uso para accesos no autorizados o generacion de exploits. Esa restriccion es una clausula de la model card, no un mecanismo tecnico de control.
-- Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion, pero conviene verificar la licencia del modelo base google/gemma-4-26b-a4b, que el autor declara heredada y compatible.
-- Madurez: repositorio sin descargas ni valoraciones y creado y actualizado el mismo dia, sin evidencia de uso en produccion.
-- Modalidad video: la model card menciona video, pero no se detalla resolucion, numero de frames ni limites practicos, y el soporte real dependera del runtime de llama.cpp utilizado.
+- Riesgo de alucinación inherente a los modelos generativos: en dominio de seguridad, una respuesta incorrecta sobre una vulnerabilidad o un indicador puede llevar a decisiones erróneas; requiere validación humana.
+- El modo "Thinking" incrementa la latencia de forma perceptible, lo que puede ser problemático en flujos de triaje en tiempo real.
+- La longitud de contexto no está documentada en la información disponible, lo que impide planificar cargas de logs extensos con garantías.
+- Cobertura idiomática declarada limitada a inglés, japonés y chino más contenido multilingüe; el rendimiento en castellano no está verificado.
+- La cuantización IQ4_NL de 4 bits puede degradar ligeramente la calidad frente a los pesos originales o a la variante MLX Q8; conviene evaluar la variante Q8 si el hardware lo permite.
+- Aunque el autor documenta que no se ha aplicado abliteración y que el vector de rechazo se mantiene alineado con el base, cualquier modelo especializado en seguridad puede producir contenido sensible; se recomienda desplegar con filtros adicionales en producción.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base Gemma-4 puede tener términos adicionales que conviene revisar antes de un despliegue comercial.
+- El repositorio no incluye pesos en safetensors, lo que limita el uso con vLLM o TGI y obliga a llama.cpp/Ollama o MLX.
 
 ## Enlaces
 
-- Repositorio Hugging Face (esta variante): https://huggingface.co/deer-sec/StagAI-CyberSecurity-26B-A4B-v2-VLM-GGUF-IQ4_NL
-- Repositorio hermano MLX Q8 (imagenes y referencia de la familia): https://huggingface.co/deer-sec/StagAI-CyberSecurity-26B-A4B-v2-VLM-MLX-Q8
+- Hugging Face (este repositorio): https://huggingface.co/deer-sec/StagAI-CyberSecurity-26B-A4B-v2-VLM-GGUF-IQ4_NL
+- Repositorio MLX Q8 de la misma familia: https://huggingface.co/deer-sec/StagAI-CyberSecurity-26B-A4B-v2-VLM-MLX-Q8
 - Modelo base: https://huggingface.co/google/gemma-4-26b-a4b
-- Dataset de ajuste fino (japones, ChatML): https://huggingface.co/datasets/deer-sec/deer_sec-japanese-cybersecurity-chatml-v2
-- Dataset de ajuste fino (Fenrir v2.1): https://huggingface.co/datasets/AlicanKiraz0/Cybersecurity-Dataset-Fenrir-v2.1
-- Paper, blog o demo oficial: no disponible
-- Enlaces tecnicos relevantes encontrados en la busqueda web: no disponible (los resultados obtenidos tratan sobre el animal "deer" y no guardan relacion con el modelo)
+- Dataset japonés de ciberseguridad: https://huggingface.co/datasets/deer-sec/deer_sec-japanese-cybersecurity-chatml-v2
+- Dataset Fenrir v2.1: https://huggingface.co/datasets/AlicanKiraz0/Cybersecurity-Dataset-Fenrir-v2.1
+- Framework MLX: https://github.com/ml-explore/mlx
+- Paper, blog o demo adicionales: no disponible en la información proporcionada.

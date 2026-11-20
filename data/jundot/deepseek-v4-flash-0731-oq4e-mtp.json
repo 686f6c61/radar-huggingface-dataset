@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 9,
-  "downloads_30d": 27400,
+  "downloads_30d": 27633,
   "trending_score": 0,
   "parameters": 304180418494,
   "parameters_human": "304.18B",
-  "storage_bytes": 176502090573,
-  "storage_human": "176.5 GB",
+  "storage_bytes": 165828909452,
+  "storage_human": "165.8 GB",
   "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
   "formats": [

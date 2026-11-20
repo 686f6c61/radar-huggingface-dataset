@@ -2,135 +2,118 @@
 
 ## Resumen
 
-Pythia-1.4B-DNP-16750-Facts es un modelo experimental de generación de texto en inglés publicado por el usuario ApolloRaines sobre la arquitectura EleutherAI/pythia-1.4b (transformer decoder-only de la familia GPT-NeoX, 1.414.647.808 parámetros). Su particularidad no es el entrenamiento clásico, sino que se le han insertado 16.750 hechos factuales directamente en los pesos mediante Direct Neural Programming (DNP), una técnica de jBlaze que no utiliza descenso de gradiente.
+Pythia-1.4B-DNP-16750-Facts es un checkpoint del modelo base EleutherAI/pythia-1.4b publicado por el usuario ApolloRaines, en el que se han implantado directamente en los pesos 16.750 hechos factuales mediante un pipeline denominado Neural Reclamation, atribuido a jBlaze. El objetivo declarado es un test de estrés de capacidad: determinar hasta qué punto un modelo de 1.400 millones de parámetros puede absorber conocimiento factual sin colapsar. Los hechos provienen del conjunto CounterFact-Tracing, derivado de Wikidata (relaciones de localización, ciudadanía, idioma, género y similares).
 
-El objetivo declarado es un test de estrés de capacidad: comprobar cuánta información factual puede absorber un modelo de 1,4 B de parámetros antes de degradarse. Según la model card, el modelo sobrevive con una caída de 5 puntos porcentuales en capacidad general (60,0 % → 55,0 %), un aumento de perplejidad de 13,3 a 18,3 y un recall directo del 49,8 % (49,3 % por paráfrasis).
+El modelo conserva la arquitectura GPT-NeoX del Pythia original, con 1.414.647.808 parámetros en formato BF16, y está orientado exclusivamente a generación de texto en inglés. Su interés no es tanto el rendimiento bruto como la demostración metodológica: según la model card, tras la inyección el modelo retiene un 55% de capacidad general frente al 60% de la línea base, con una perplejidad que sube de 13,3 a 18,3, y ofrece una recuperación directa de aproximadamente el 49,8% de los hechos.
 
-Es relevante ahora porque plantea una alternativa a la edición de conocimiento mediante fine-tuning: el autor afirma que el entrenamiento por gradiente destruía la misma arquitectura con 50 hechos (LoRA v1) o 125 hechos (LoRA v2), mientras que DNP habría cargado 335 veces más hechos manteniendo el modelo funcional. Los datos son autoinformados y no consta verificación independiente.
+La relevancia actual reside en la comparación con ajuste fino por gradiente: según el autor, LoRA colapsaba esta misma arquitectura con 50 o 125 hechos, mientras que este método habría cargado 335 veces más hechos manteniendo el modelo funcional. No obstante, la propia model card documenta discrepancias importantes entre el corpus publicado y el corpus de entrenamiento, lo que exige tratar las cifras con cautela.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only, familia GPT-NeoX (etiqueta `gpt_neox`); denso, no MoE |
-| Parámetros totales | 1.414.647.808 (≈1,4 B) |
-| Parámetros activos | No aplica (modelo denso) |
-| Longitud de contexto | 2048 tokens, heredada del modelo base EleutherAI/pythia-1.4b; la model card no documenta modificaciones |
-| Tipos de cuantización | No disponible; el repositorio solo publica pesos safetensors (2,8 GB de repo, consistente con fp16). No hay GGUF ni GPTQ/AWQ publicados |
-| Idiomas soportados | Inglés (`en`) |
-| Licencia | No disponible (la model card no especifica licencia) |
-| Formato de pesos | safetensors |
+| Arquitectura | GPT-NeoX (transformer decoder-only), heredada de EleutherAI/pythia-1.4b |
+| Parametros totales | 1.414.647.808 |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos publicados en BF16) |
+| Idiomas soportados | ingles (en) |
+| Licencia | no disponible |
+| Formato de pesos | safetensors (BF16) |
 | Modelo base | EleutherAI/pythia-1.4b |
+| Tamano del repositorio | 2,8 GB |
+| Libreria | transformers |
 | Pipeline | text-generation |
-| Librería | transformers |
-| Fecha de publicación | 10 de septiembre de 2026 (última actualización: 10 de septiembre de 2026) |
-| Descargas / likes | 0 / 0 |
-| Corpus incluido | `facts_maxout.json` en el propio repositorio |
+| Etiquetas | jblaze, dnp, neural-reclamation, knowledge-implant, pythia, stress-test |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base: un transformer decoder-only de tipo GPT-NeoX con 1,4 B de parámetros, entrenado originalmente por EleutherAI sobre The Pile. Este repositorio no modifica la topología ni el tokenizador, sino que interviene sobre los pesos ya entrenados.
+La arquitectura es la del Pythia-1.4B de EleutherAI: un transformer decoder-only de tipo GPT-NeoX con 1.400 millones de parámetros. El checkpoint no se ha obtenido mediante entrenamiento por descenso de gradiente convencional, sino mediante un procedimiento de edición de pesos denominado Neural Reclamation, que escribe los hechos directamente en las matrices del modelo. La model card indica que las capas afectadas incluyen módulos `mlp.dense_4h_to_h` (por ejemplo, las capas 11, 13 y 15), con diferencias relativas de Frobenius de 3,666e-02, 2,705e-02 y 1,441e-02 respectivamente frente al modelo base.
 
-El método empleado es Direct Neural Programming (DNP) de jBlaze: los hechos se escriben directamente en los pesos en lugar de aprenderse por descenso de gradiente. Los hechos provienen de CounterFact-Tracing, con tipos de relación de Wikidata (ubicaciones, ciudadanías, idiomas, géneros, entre otros). La carga se realiza por cohortes (lotes), de modo que las cohortes iniciales se sobrescriben parcialmente cuando las nuevas compiten por la misma capacidad de pesos; el autor lo describe como comportamiento esperado y aporta una tabla de recall por cohorte. No se documentan fases de RLHF, DPO ni ajuste por instrucciones, ni se especifica el número de tokens de entrenamiento (el procedimiento no es de entrenamiento basado en tokens, sino de escritura directa sobre pesos).
+Los datos proceden de CounterFact-Tracing, un conjunto de 21.919 filas construido sobre tipos de relación de Wikidata. El autor afirma haber implantado 16.750 de esas filas. Un detalle técnico relevante documentado en la model card es que el checkpoint se almacena en BF16 mientras que el modelo base está en F16, lo que introduce una diferencia relativa de aproximadamente 1,7e-03 en todos los tensores, incluso en los que no se editaron; por tanto, cualquier comparación debe hacerse por magnitud y no por desigualdad binaria. No se especifican en la información disponible datos sobre número de tokens de entrenamiento, composición del dataset más allá de CounterFact-Tracing, ni uso de RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto en inglés con coherencia mantenida según el autor (perplejidad 18,3 tras la inyección).
-- Recuperación de hechos inyectados: 49,8 % en recall directo y 49,3 % en recall por paráfrasis sobre los 16.750 hechos cargados.
-- Conocimiento distribuido por cohortes: el recall no se concentra en el último lote cargado (54,0 %, 50,0 %, 56,0 %, 60,0 % y 46,0 % en las cinco primeras cohortes medidas).
-- Razonamiento y capacidad general preservados parcialmente: 55,0 % frente al 60,0 % de la línea base, según la medición del autor.
-- Compatibilidad declarada con text-generation-inference y con endpoints (etiquetas `text-generation-inference` y `endpoints_compatible`).
-- Soporte de tool calling / function calling: no disponible, no documentado.
-- Soporte de agentes y razonamiento multi-paso: no disponible, no documentado.
-- Capacidades multilingües: no disponibles; el modelo está etiquetado únicamente como inglés.
-- Capacidades especiales (modo thinking, visión, audio): no disponibles, no documentadas.
+- Generación de texto en inglés con coherencia mantenida tras la inyección de 16.750 hechos, según la model card.
+- Recuperación de conocimiento factual implantado: 49,8% en recall directo y 49,3% en recall por paráfrasis, medidos por el autor.
+- Razonamiento general preservado parcialmente: 55% de capacidad general frente al 60% de la línea base.
+- Capacidad de respuesta a preguntas de tipo cloze sobre relaciones Wikidata (localización, ciudadanía, idioma, género).
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- No se documenta modo thinking, visión ni audio.
+- Multilingüismo: únicamente inglés.
 
 ## Casos de uso
 
-- Investigación en edición de conocimiento: el modelo sirve como banco de pruebas para comparar DNP frente a fine-tuning por gradiente (LoRA) en una arquitectura de 1,4 B, con métricas de recall y perplejidad publicadas por cohortes.
-- Estudio del olvido catastrófico: permite analizar hasta qué punto un modelo pequeño retiene hechos antiguos cuando se le inyectan nuevos, usando la tabla de recall por cohortes como referencia.
-- Evaluación de técnicas de desaprendizaje (machine unlearning): al conocer exactamente qué hechos se inyectaron y en qué cohorte, se puede medir si un método de borrado elimina selectivamente un subconjunto del corpus `facts_maxout.json`.
-- Interpretabilidad y localización de hechos: dado que los hechos se escriben en pesos concretos, es un sujeto útil para estudiar en qué capas o matrices queda almacenada la información factual en un modelo denso de 1,4 B.
-- Generación de texto en inglés de bajo coste: con 1,4 B de parámetros y pesos fp16 de 2,8 GB, puede desplegarse en una GPU de gama media o en CPU para tareas de completado de texto sin requisitos de infraestructura elevados.
-- Auditoría de calidad de datos sintéticos: el corpus de hechos derivado de CounterFact-Tracing y Wikidata puede usarse para medir la fidelidad de la inyección frente a la fuente original.
-- Reproducibilidad metodológica: al incluir el corpus completo en el repositorio, terceros pueden replicar el experimento y contrastar las cifras autoinformadas por el autor.
+- Investigación sobre edición de conocimiento en modelos: el checkpoint sirve como referencia empírica para estudiar cuántos hechos puede absorber un modelo de 1,4B sin degradarse, comparando la curva de perplejidad y capacidad general frente al modelo base.
+- Evaluación de métodos de inyección de pesos: útil para reproducir y contrastar el pipeline Neural Reclamation frente a alternativas como LoRA o fine-tuning completo, usando las métricas de recall directo y por paráfrasis.
+- Auditoría de atribución de conocimiento: la model card documenta dos auditorías independientes con intervalos de confianza, lo que permite reutilizar el modelo como caso de estudio sobre cómo verificar qué hechos están realmente en los pesos.
+- Docencia y divulgación técnica: ejemplo didáctico de los efectos de la precisión numérica (BF16 frente a F16) en la comparación de checkpoints, con cifras concretas de diferencia de Frobenius por capa.
+- Pruebas de estrés de pipelines de evaluación: el modelo permite validar harnesses de evaluación de conocimiento factual en condiciones de capacidad limitada y alta densidad de hechos.
+- Investigación sobre olvido catastrófico: la comparación documentada con LoRA (colapso a 50-125 hechos frente a 16.750) lo convierte en un punto de referencia para estudiar interferencia entre conocimiento inyectado y capacidades generales.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos disponibles son los publicados por el propio autor en la model card. No se especifica qué benchmark se usó para la métrica "General Capability", ni la metodología de medición del recall.
+Datos publicados en la model card del autor (no verificados de forma independiente):
 
-Rendimiento declarado, línea base frente a modelo final:
-
-| Métrica | Base (0 hechos) | Tras 16.750 hechos |
+| Metrica | Baseline (0 hechos) | Tras 16.750 hechos |
 |---|---:|---:|
-| Capacidad general | 60,0 % | 55,0 % |
+| Capacidad general | 60,0% | 55,0% |
 | Perplejidad | 13,3 | 18,3 |
-| Recall directo | — | 49,8 % |
-| Recall por paráfrasis | — | 49,3 % |
+| Recall directo | -- | 49,8% |
+| Recall por paráfrasis | -- | 49,3% |
 
-Comparativa de métodos declarada por el autor:
+Comparación de métodos según el autor:
 
-| Método | Hechos | Capacidad general | Perplejidad | Estado del modelo |
+| Metodo | Hechos | Capacidad general | Perplejidad | Estado del modelo |
 |---|---:|---:|---:|---|
-| Gradiente (LoRA v1) | 50 | 10,0 % | 459,6 | Colapsado |
-| Gradiente (LoRA v2) | 125 | 35,0 % | 96,5 | Colapsado |
-| DNP | 5.000 | 70,0 % | 13,3 | Funcional |
-| DNP (este modelo) | 16.750 | 55,0 % | 18,3 | Funcional |
+| Gradiente (LoRA v1) | 50 | 10,0% | 459,6 | Colapsado |
+| Gradiente (LoRA v2) | ~125 | 35,0% | 96,5 | Colapsado |
+| Neural Reclamation | 16.750 | 55,0% | 18,3 | Funcional |
 
-Recall por cohorte (las cinco primeras cohortes medidas, hasta el hecho 3.000):
+Auditorías de especificidad sobre el conjunto fuente (dNLL con IC al 95%):
 
-| Cohorte | Recall |
-|---|---:|
-| 1-1.000 | 54,0 % |
-| 1.001-1.500 | 50,0 % |
-| 1.501-2.000 | 56,0 % |
-| 2.001-2.500 | 60,0 % |
-| 2.501-3.000 | 46,0 % |
+| Grupo | Objetivo | dNLL | IC 95% |
+|---|---|---:|---|
+| Presente en el fichero publicado | verdadero | -1,95 | [-2,25, -1,68] |
+| Presente en el fichero publicado | falso | -1,07 | [-1,44, -0,71] |
+| Ausente del fichero publicado | verdadero | -2,08 | [-2,38, -1,80] |
+| Ausente del fichero publicado | falso | -0,83 | [-1,18, -0,49] |
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, ARC, HellaSwag u otros) en la información disponible. El autor deriva una ratio de aproximadamente un hecho recuperable por cada 170.000 parámetros.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada en fp16: en torno a 4-6 GB contando pesos (2,8 GB), caché KV y overhead del runtime.
-- VRAM estimada en int8: aproximadamente 1,5-2 GB; en 4 bits, alrededor de 1-1,5 GB, aunque estas cuantizaciones no están publicadas y habría que generarlas.
-- GPU recomendadas: cualquier GPU consumer con 8 GB o más (RTX 3060, RTX 4060, RTX 2070, etc.). No requiere A100 ni H100.
-- Cabe en GPU consumer: sí, en la práctica totalidad de GPUs dedicadas modernas con 6-8 GB o más; también puede ejecutarse en CPU.
-- Opciones de despliegue: transformers (ejemplo oficial en la model card), text-generation-inference (etiqueta declarada), vLLM y Hugging Face Endpoints (etiqueta `endpoints_compatible`). Para llama.cpp u Ollama sería necesaria una conversión a GGUF propia, ya que no se publica.
-- Latencia y throughput: no disponible; no se han publicado mediciones.
+- VRAM estimada para inferencia: no disponible de forma explícita. Como referencia orientativa para un modelo de 1,4B en BF16, el peso ronda los 2,8 GB, por lo que la inferencia requeriría al menos unos 4-6 GB de VRAM incluyendo caché KV, aunque esta cifra no la proporciona la información disponible.
+- GPU recomendadas: no disponible en la información proporcionada.
+- Cabe en GPU de consumo: previsiblemente sí en tarjetas con 8 GB o más, dado el tamaño del checkpoint, aunque no se confirma en la documentación disponible.
+- Opciones de despliegue: la etiqueta `text-generation-inference` y `endpoints_compatible` sugiere compatibilidad con TGI y endpoints de Hugging Face. No se documentan otras opciones como vLLM, llama.cpp u Ollama.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No se han encontrado en la búsqueda web datos de benchmarks de terceros que permitan comparar este modelo con alternativas externas de tamaño similar. La comparación posible se limita a la propia familia de modelos del autor y al modelo base.
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---:|---|---|---|---|
+| Pythia-1.4B-DNP-16750-Facts | 1,41B | no disponible | Inyeccion de 16.750 hechos via Neural Reclamation | no disponible | Hugging Face |
+| EleutherAI/pythia-1.4b | 1,41B | no disponible | Modelo base sin edicion | Apache 2.0 (segun el modelo base, no confirmado en esta ficha) | Hugging Face |
+| Variante LoRA v2 (referencia del autor) | 1,41B | no disponible | Fine-tuning por gradiente con ~125 hechos | no disponible | No publicada |
 
-| Modelo | Parámetros | Contexto | Hechos inyectados | Capacidad general | Perplejidad | Licencia |
-|---|---:|---:|---:|---:|---:|---|
-| Pythia-1.4B-DNP-16750-Facts | 1,4 B | 2048 | 16.750 | 55,0 % | 18,3 | No disponible |
-| Pythia-1.4B-DNP-5000-Facts | 1,4 B | 2048 | 5.000 | 70,0 % | 13,3 | No disponible |
-| Pythia-1.4b-Knowledge-Implant | 1,4 B | 2048 | 198 | No disponible | No disponible | No disponible |
-| EleutherAI/pythia-1.4b (base) | 1,4 B | 2048 | 0 | 60,0 % | 13,3 | Apache 2.0 (según el modelo base) |
+La comparación más directa es contra el propio modelo base, ya que el checkpoint es una edición del mismo. Frente a alternativas de la misma categoría (modelos de ~1,4B para generación de texto en inglés), no se dispone de datos de benchmarks comparables en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Licencia no disponible: al no especificarse licencia en el repositorio, no puede asumirse uso comercial permitido, aunque el modelo base Pythia se publique bajo Apache 2.0.
-- Métricas autoinformadas: todas las cifras proceden de la model card del autor y no consta verificación independiente. No se especifica la metodología del "General Capability" ni el conjunto de evaluación.
-- Recall incompleto: aproximadamente la mitad de los hechos inyectados no se recuperan de forma fiable (49,8 % directo, 49,3 % por paráfrasis). En el 50 % restante el modelo puede producir respuestas incorrectas con fluidez.
-- Olvido entre cohortes: las cohortes antiguas se sobrescriben parcialmente; el recall medido oscila entre el 46,0 % y el 60,0 %, lo que implica pérdida de conocimiento a medida que se añaden hechos.
-- Degradación medible: la perplejidad sube de 13,3 a 18,3 y la capacidad general cae 5 puntos, lo que indica pérdida de fluidez y de competencia general respecto al modelo base.
-- Solo inglés: no hay capacidades multilingües documentadas.
-- Ventana de contexto limitada a 2048 tokens, heredada del modelo base, lo que restringe tareas de documento largo.
-- Sin evaluación de sesgos: no se documenta ningún análisis de sesgo, toxicidad o seguridad, pese a que el modelo base se entrenó sobre The Pile.
-- Riesgo de alucinación: al ser un modelo base sin ajuste por instrucciones ni RLHF/DPO, no está alineado para seguir instrucciones ni para rechazar peticiones problemáticas.
-- Escasa validación externa: 0 descargas y 0 likes en el momento de la consulta, sin evidencia de uso en producción.
-- Sin cuantizaciones publicadas (GGUF, GPTQ, AWQ): el despliegue en entornos de bajo consumo exige trabajo adicional de conversión.
-- Naturaleza experimental: está concebido como test de estrés de capacidad, no como modelo listo para producción.
+- El fichero `facts_maxout.json` incluido en el repositorio no es el corpus de entrenamiento: contiene 27.081 entradas, de las cuales solo 1.000 son hechos CounterFact-Tracing, y el resto son preguntas tipo MMLU sin relación con el modelo. Las 1.000 son una muestra aleatoria del dataset fuente, no un prefijo.
+- Las auditorías del propio autor no permiten fijar el número exacto de hechos implantados: el efecto medido es consistente con 16.750, pero también con 12.000 o con las 21.919 filas completas del dataset.
+- La comparación con el modelo base debe hacerse por magnitud de diferencia, no por igualdad de tensores, debido al cambio de precisión de F16 a BF16 (diferencia relativa base de ~1,7e-03).
+- Riesgo de alucinación: no cuantificado en la información disponible; la perplejidad aumenta de 13,3 a 18,3, lo que indica cierta degradación de la fluidez.
+- Pérdida de capacidad general de 5 puntos porcentuales (60% a 55%), con posible impacto en tareas de razonamiento no evaluadas.
+- Idioma limitado a inglés; no se documenta soporte multilingüe.
+- Licencia no disponible: no se puede confirmar si el uso comercial está permitido. El modelo base Pythia se distribuye habitualmente bajo Apache 2.0, pero esta ficha no confirma la licencia del checkpoint derivado.
+- Modelo orientado a investigación y test de estrés, no a producción: no hay garantías de robustez, seguridad ni alineación.
+- Sin datos publicados de benchmarks estándar ni de latencia/throughput.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/ApolloRaines/Pythia-1.4B-DNP-16750-Facts
-- Versión de 5.000 hechos: https://huggingface.co/ApolloRaines/Pythia-1.4B-DNP-5000-Facts
-- Versión original de 198 hechos (Knowledge Implant): https://huggingface.co/ApolloRaines/Pythia-1.4b-Knowledge-Implant
-- Modelo de razonamiento sobre la misma arquitectura: https://huggingface.co/ApolloRaines/Pythia-1.4B-jBlaze-Reasoning
-- Tecnología jBlaze (Direct Neural Programming): https://jblaze.dev
-- Modelo base EleutherAI/pythia-1.4b: https://huggingface.co/EleutherAI/pythia-1.4b
-- CounterFact-Tracing: mencionado en la model card como origen de los hechos, sin enlace proporcionado.
-- La búsqueda web realizada no devolvió enlaces adicionales relevantes sobre este modelo.
+- Modelo base: https://huggingface.co/EleutherAI/pythia-1.4b
+- Dataset fuente citado: https://huggingface.co/datasets/NeelNanda/counterfact-tracing

@@ -56,31 +56,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "DRUDGE REPORT® 2027",
-      "url": "https://drudgereport.com/?NF=1",
-      "snippet": "DRUDGE QUAKE SHEET DRUDGE WEATHER ACTION ZOOM EARTH DRUDGE REPORT APP FIRST ALERTS, SPEED, …Read more"
-    },
-    {
-      "title": "Drudge Report - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Drudge_Report",
-      "snippet": "In October 2007, during the early months of the Democratic primary for the 2008 presidential campaign, the Drudge Report broke a …"
-    },
-    {
-      "title": "Drudge Retort Breaking News",
-      "url": "https://drudge.com/weblog",
-      "snippet": "1 day ago · A team of researchers are on their way to a remote island to inspect what they think could be the wreckage of famed …"
-    },
-    {
-      "title": "Matt Drudge - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Matt_Drudge",
-      "snippet": "Matthew Nathan Drudge (born October 27, 1966) is an American journalist and the creator/editor of the Drudge Report, an American …"
-    },
-    {
-      "title": "Drudge Report — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Drudge_Report",
-      "snippet": "Le Drudge Report (stylisé dans la majuscule comme DRUDGE REPORT) est un agrégateur d'informations américain conservateur …"
-    }
-  ]
+  "sources": []
 }

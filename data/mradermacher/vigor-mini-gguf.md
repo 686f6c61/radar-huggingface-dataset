@@ -2,51 +2,50 @@
 
 ## Resumen
 
-VIGOR-mini es un modelo de clasificación de imágenes orientado a la moderación y seguridad de contenido visual, desarrollado originalmente por prithivMLmods y empaquetado en formato GGUF por mradermacher. Forma parte de la familia VIGOR (VisionGuard) y está construido a partir de una base Qwen3.5-4B, lo que le aporta capacidades multimodales y de generación de texto estructurado en JSON. Su función principal es actuar como clasificador de seguridad (guardrail) sobre imágenes, devolviendo etiquetas de contenido dañino o inapropiado.
+VIGOR-mini es un modelo multimodal de clasificación de imágenes orientado a la seguridad de contenido (content safety / guardrail), desarrollado originalmente por prithivMLmods y distribuido en formato GGUF por mradermacher. Su función principal no es la generación de texto libre, sino actuar como clasificador de seguridad visual: recibe una imagen (y opcionalmente texto) y emite una salida estructurada en JSON que indica si el contenido es seguro o infringe políticas. Está construido sobre una base de tipo Qwen 3.5 de 4B, según los tags de la model card.
 
-Con 4.326.350.848 parámetros totales (aproximadamente 4,3 mil millones), el modelo se sitúa en el rango de tamaño medio, lo que permite su despliegue en hardware de consumo cuando se cuantiza. La versión GGUF publicada por mradermacher incluye cuantizaciones estáticas desde Q2_K hasta f16, además de los ficheros mmproj necesarios para el procesamiento multimodal. La licencia Apache 2.0 facilita su uso comercial, aunque el modelo está etiquetado como experimental.
+El modelo cuenta con 4.326.350.848 parámetros totales (datos de safetensors) y se distribuye bajo licencia Apache 2.0. La versión aquí descrita es una cuantización estática en GGUF, con un rango de cuantizaciones que va desde Q2_K (2,1 GB) hasta f16 (8,8 GB), además de los ficheros mmproj necesarios para el procesamiento multimodal. Está etiquetado como experimental y uncensored en la model card original.
 
-La relevancia actual de VIGOR-mini radica en la creciente necesidad de filtros automáticos de contenido visual en plataformas que reciben grandes volúmenes de imágenes generadas o subidas por usuarios. Al estar disponible en GGUF, puede integrarse en pipelines de moderación que se ejecutan en local o en entornos con recursos limitados, sin depender de APIs externas.
+Su relevancia actual radica en la creciente necesidad de filtros de seguridad multimodales desplegables en local: al ser un modelo pequeño (4B) cuantizado en GGUF, puede ejecutarse en hardware de consumo y usarse como capa de moderación previa a sistemas generativos de imagen o en pipelines de moderación de contenido.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (base Qwen3.5-4B) |
+| Arquitectura | no disponible (modelo base derivado de Qwen 3.5 4B según tags; transformer multimodal con proyector mmproj) |
 | Parametros totales | 4.326.350.848 |
-| Parametros activos | no disponible (no es MoE) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16, mmproj-Q8_0, mmproj-f16 |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; mmproj en Q8_0 y f16 |
 | Idiomas soportados | en (inglés) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (safetensors en el modelo base) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones estáticas); modelo base original en safetensors |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna más allá de que el modelo base es Qwen3.5-4B, un transformer multimodal con capacidades de generación de texto y procesamiento de imágenes. La model card del repositorio GGUF no incluye datos sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. El etiquetado incluye términos como "mtp" y "experimental", pero no se especifica su significado técnico en la información proporcionada.
+La información disponible no detalla la arquitectura interna más allá de los tags de la model card, que apuntan a una base Qwen 3.5 de 4B y a un diseño multimodal con proyector (ficheros mmproj separados para el procesamiento de imagen). El pipeline declarado en Hugging Face es image-classification, lo que confirma que el modelo está orientado a clasificación y no a generación libre. El tag "mtp" sugiere multi-token prediction, aunque no se aporta documentación técnica al respecto.
 
-El proceso de conversión a GGUF fue realizado por mradermacher mediante cuantización estática (quantize_version 2, output_tensor_quantised 1, convert_type hf). Se incluyen ficheros mmproj para el proyector multimodal, necesarios para que el modelo procese imágenes junto con texto. No se han publicado detalles sobre innovaciones técnicas como decodificación especulativa o atención lineal.
+No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO. Tampoco se documentan innovaciones técnicas concretas (atención lineal, decodificación especulativa, etc.). El autor de la cuantización indica que se trata de cuantizaciones estáticas del modelo original prithivMLmods/VIGOR-mini, generadas con su pipeline habitual (quantize_version 2, convert_type hf).
 
 ## Capacidades
 
-- Clasificación de imágenes para seguridad de contenido: el modelo devuelve etiquetas o puntuaciones de contenido dañino o inapropiado.
-- Generación de salida estructurada en JSON, adecuada para integración en pipelines automáticos.
-- Procesamiento multimodal: combina entrada de imagen y texto (ficheros mmproj incluidos).
-- Moderación de contenido visual (content-safety, content-moderation, guardrail).
-- Etiquetado como "uncensored" en los tags, lo que sugiere que el modelo no aplica filtros internos adicionales a sus propias salidas.
+- Clasificación de seguridad de contenido visual: evalúa imágenes y devuelve una salida estructurada (JSON) indicando categoría de seguridad.
+- Moderación multimodal: combina imagen y texto para determinar si el contenido infringe políticas.
+- Salida en formato JSON, adecuada para integración en pipelines automatizados de guardrails.
+- Etiquetado como safety-classifier y guardrail, pensado como filtro previo o posterior a sistemas generativos.
+- Soporte de inferencia con text-generation-inference y transformers según los tags del repositorio.
 - Capacidad de clasificación de imágenes (pipeline image-classification).
-- No se especifica soporte de tool calling, function calling ni razonamiento multi-paso en la información disponible.
-- Capacidades multilingües limitadas al inglés según el campo language.
+- Modelo marcado como uncensored y experimental: no se documentan restricciones internas de rechazo.
 
 ## Casos de uso
 
-- Moderación automática de imágenes en plataformas de contenido generado por usuarios: el modelo puede clasificar imágenes subidas y devolver etiquetas JSON que un sistema posterior use para bloquear, revisar o aprobar contenido. Su tamaño de 4,3B permite ejecutarlo en servidores con GPU de gama media.
-- Filtrado de contenido visual en pipelines de generación de imágenes: integrado como paso posterior a un modelo de difusión, VIGOR-mini puede evaluar la salida antes de mostrarla al usuario, actuando como guardrail.
-- Revisión de contenido en foros y comunidades: despliegue en local con llama.cpp u Ollama para prefiltrar imágenes y reducir la carga de moderadores humanos, priorizando las que el modelo marque como sospechosas.
-- Cumplimiento normativo en aplicaciones con requisitos de seguridad: el modelo puede generar registros JSON auditables de cada clasificación, útiles para demostrar que se aplican controles de contenido.
-- Investigación en seguridad multimodal: al ser un modelo pequeño y con licencia Apache 2.0, sirve como base para experimentos de clasificación de contenido y evaluación de sesgos en moderación visual.
-- Prefiltrado en entornos con recursos limitados: las cuantizaciones Q4_K_S y Q4_K_M (2,7-2,9 GB) permiten ejecutar el modelo en GPUs de consumo como la RTX 3060 o superiores, ideal para prototipos y despliegues edge.
-- Clasificación por lotes de imágenes en repositorios: el modelo puede procesar grandes volúmenes de imágenes en un servidor con GPU para etiquetar datasets antes de su publicación o uso en entrenamiento.
+- Moderación previa en generadores de imágenes: usar VIGOR-mini como filtro que clasifique la imagen generada antes de mostrarla al usuario, bloqueando contenido no permitido mediante la salida JSON del clasificador.
+- Filtrado de contenido subido por usuarios: integrar el modelo en un endpoint que reciba imágenes de una plataforma (foros, redes, marketplaces) y devuelva una etiqueta de seguridad para revisión automática.
+- Guardrail en pipelines RAG multimodales: clasificar las imágenes recuperadas o introducidas en el contexto antes de pasarlas a un LLM generativo, evitando que contenido inseguro llegue al modelo principal.
+- Moderación en herramientas de edición o generación asistida: ejecutar el clasificador sobre las previsualizaciones antes de permitir la descarga o publicación del resultado.
+- Auditoría de datasets de imagen: procesar por lotes un corpus de imágenes y generar metadatos de seguridad en JSON para su revisión posterior o exclusión.
+- Despliegue en local o en el borde: al disponer de cuantizaciones desde 2,1 GB, puede ejecutarse en estaciones de trabajo sin GPU dedicada o en GPUs de consumo, útil para entornos con requisitos de privacidad que no pueden enviar imágenes a la nube.
+- Capa de seguridad en asistentes multimodales: clasificar las imágenes que el usuario adjunta a una conversación antes de que el asistente las procese.
 
 ## Benchmarks y rendimiento
 
@@ -54,41 +53,40 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia según cuantización (solo pesos del modelo principal): Q2_K ~2,1 GB; Q4_K_M ~2,9 GB; Q8_0 ~4,7 GB; f16 ~8,8 GB. Hay que añadir el fichero mmproj (0,5-0,8 GB) para el procesamiento de imágenes.
-- GPU recomendadas: para cuantizaciones Q4, una RTX 3060 (12 GB) o RTX 4060 Ti (16 GB) es suficiente; para Q8_0 o f16, se recomienda RTX 4090 (24 GB) o GPUs de datacenter como A100 o H100 si se requiere mayor throughput.
-- Cabe en GPU de consumo: sí, en cuantizaciones Q2 a Q5 con GPUs de 8-12 GB; Q6 y Q8 requieren al menos 8-12 GB adicionales considerando el contexto y el proyector multimodal.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF. El modelo base es compatible con transformers y text-generation-inference, pero la versión GGUF está pensada para llama.cpp y derivados.
-- Latencia y throughput estimados: no disponible en la información proporcionada.
+- VRAM estimada para inferencia (solo pesos): aproximadamente 2,1 GB en Q2_K, 2,7-2,9 GB en Q4_K_S/Q4_K_M, 3,7 GB en Q6_K, 4,7 GB en Q8_0 y 8,8 GB en f16. Hay que sumar el fichero mmproj (0,5 GB en Q8_0 o 0,8 GB en f16) para el procesamiento de imagen.
+- GPU recomendadas: no se especifican oficialmente. Por tamaño, cualquier GPU con 6-8 GB de VRAM o más puede alojar las cuantizaciones Q4-Q8 junto con el proyector; una RTX 3060/4060 de 8 GB sería suficiente para Q4_K_M con mmproj.
+- Cabe en GPU de consumo: sí, en la mayoría de tarjetas con 6 GB o más de VRAM usando cuantizaciones Q2-Q4. Las cuantizaciones altas (Q6_K, Q8_0) requieren 8 GB o más.
+- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio) para los GGUF; también transformers y text-generation-inference según los tags del repositorio, aunque para multimodal en GGUF el soporte depende de la versión de llama.cpp.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| VIGOR-mini (este) | 4,3B | no disponible | Apache 2.0 | GGUF, safetensors | Clasificador de seguridad visual multimodal |
-| Llama Guard 3 Vision (Meta) | ~11B | no disponible | Llama 3.2 Community License | safetensors | Guardrail multimodal, mayor tamaño, licencia restrictiva |
-| Qwen2.5-VL-3B | 3B | 32K (según documentación pública) | Apache 2.0 | safetensors, GGUF | Modelo multimodal general, no específico de moderación |
-| ShieldGemma (Google) | 2B-27B | no disponible | Gemma Terms of Use | safetensors | Familia de guardrails de texto, no visual |
+No se dispone de información sobre modelos comparables en la documentación proporcionada. Se puede señalar que el modelo base original (prithivMLmods/VIGOR-mini) es la referencia directa, y que existen cuantizaciones alternativas con imatrix en mradermacher/VIGOR-mini-i1-GGUF. Para el resto de alternativas de clasificación de seguridad multimodal, no disponible.
 
-La comparación directa es limitada porque VIGOR-mini está especializado en clasificación de seguridad visual, mientras que los alternativos cubren tareas más generales o son solo de texto. No se dispone de datos de rendimiento comparativo en la información proporcionada.
+| Modelo | Parametros | Contexto | Licencia | Formato |
+|---|---|---|---|---|
+| VIGOR-mini-GGUF (este) | 4.326.350.848 | no disponible | Apache 2.0 | GGUF |
+| VIGOR-mini (base) | 4.326.350.848 | no disponible | Apache 2.0 | safetensors |
+| Otras alternativas | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Modelo etiquetado como "experimental": no se garantiza su robustez en producción sin una evaluación previa.
-- Solo soporta inglés según el campo language; el rendimiento en otros idiomas no está documentado.
-- No se han publicado benchmarks ni métricas de precisión, recall o falsos positivos, lo que impide evaluar su fiabilidad objetivamente.
-- Riesgo de alucinación y clasificaciones erróneas inherente a los modelos generativos; como clasificador, puede producir etiquetas inconsistentes.
-- El tag "uncensored" sugiere que el modelo no aplica filtros internos, lo que puede ser deseable para moderación pero requiere validación cuidadosa de sus salidas.
-- Aunque la licencia es Apache 2.0, el modelo base Qwen3.5-4B puede tener sus propias condiciones; conviene verificar la licencia del modelo base antes de uso comercial.
-- El repositorio GGUF tiene un tamaño de 41 GB, lo que implica descargas voluminosas si se necesitan varias cuantizaciones.
-- No hay información sobre sesgos demográficos o culturales en la clasificación de contenido.
-- La fecha de creación del repositorio (2026-11-03) es posterior a la fecha actual en algunos entornos, lo que puede indicar un error de metadatos o un modelo de disponibilidad futura; verificar la integridad de los ficheros antes de usarlos.
+- Modelo marcado como experimental: no debe asumirse estabilidad de comportamiento en producción sin validación previa.
+- Idioma limitado al inglés según la model card; el rendimiento en otros idiomas no está documentado.
+- Etiquetado como uncensored: puede no incorporar salvaguardas internas, por lo que su comportamiento ante entradas adversas debe evaluarse empíricamente.
+- Riesgo de falsos positivos y falsos negativos inherente a cualquier clasificador de seguridad; no se han publicado métricas de precisión, recall ni tasas de error.
+- No se documentan sesgos conocidos ni la composición del dataset de entrenamiento, lo que dificulta evaluar su comportamiento en dominios específicos.
+- La licencia Apache 2.0 permite uso comercial, pero al ser una cuantización de un modelo de terceros conviene revisar también las condiciones del modelo base.
+- El tamaño del repositorio (41 GB) incluye todas las cuantizaciones; descargar solo el fichero necesario.
+- Para uso multimodal en GGUF es imprescindible descargar también el fichero mmproj correspondiente; sin él, el modelo no procesa imágenes.
+- No se dispone de información sobre la longitud de contexto soportada, lo que limita la planificación de casos de uso con entradas largas.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/VIGOR-mini-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/VIGOR-mini-GGUF
 - Modelo base: https://huggingface.co/prithivMLmods/VIGOR-mini
-- Página de descargas del cuantizador: https://hf.tst.eu/model#VIGOR-mini-GGUF
-- README de referencia para uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Gráfico comparativo de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas sobre cuantizaciones de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Cuantizaciones con imatrix: https://huggingface.co/mradermacher/VIGOR-mini-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#VIGOR-mini-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y peticiones de cuantización: https://huggingface.co/mradermacher/model_requests
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

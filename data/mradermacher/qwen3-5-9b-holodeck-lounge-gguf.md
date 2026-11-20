@@ -2,45 +2,51 @@
 
 ## Resumen
 
-Qwen3.5-9B-Holodeck-Lounge-GGUF es la versión cuantizada en formato GGUF del modelo nightmedia/Qwen3.5-9B-Holodeck-Lounge, un merge de la familia Qwen3.5-9B orientado específicamente a la escritura creativa, la ficción y el roleplay. El autor de la cuantización es mradermacher, conocido por publicar conversiones GGUF de alta calidad para ejecución local eficiente. El modelo base ha sido sometido a un proceso de "abliteration" (eliminación de rechazos) y se etiqueta como "uncensored", lo que lo hace adecuado para entornos donde se requiere libertad creativa sin restricciones de contenido.
+Qwen3.5-9B-Holodeck-Lounge es un ajuste fino (fine-tune) del modelo Qwen3.5-9B orientado a escritura creativa, narrativa de ficcion y roleplaying. Lo desarrolla el usuario nightmedia, y la version aqui descrita es la cuantizacion GGUF publicada por mradermacher, un perfil conocido por distribuir versiones cuantizadas de modelos abiertos. El modelo incorpora las etiquetas "heretic", "abliterated" y "uncensored", lo que indica que se ha aplicado un proceso de eliminacion de rechazos (abliteration) para reducir las negativas del modelo ante contenido sensible, algo habitual en modelos orientados a ficcion y roleplay.
 
-Con aproximadamente 8,95 mil millones de parámetros, el modelo ofrece una buena relación entre capacidad y requisitos de hardware. El repositorio incluye múltiples niveles de cuantización, desde Q2_K (3,9 GB) hasta f16 (18 GB), además de archivos mmproj que sugieren capacidades multimodales (probablemente visión). Está pensado para desarrolladores e investigadores que necesitan un modelo de generación de texto creativo, con soporte para inglés y chino, y licencia Apache 2.0 que permite uso comercial sin restricciones adicionales.
+Con aproximadamente 8.950 millones de parametros (8.953.803.264 segun los pesos en safetensors), se situa en la gama de 9B, un tamano que permite ejecucion en GPU de consumo con cuantizaciones agresivas. La model card declara soporte para ingles y chino, licencia Apache 2.0 y una bateria amplia de etiquetas relacionadas con generacion de tramas, subtramas, continuacion de escenas y generacion de prosa vivida en todos los generos.
+
+La relevancia de esta ficha radica en que combina tres cosas poco frecuentes: un modelo base reciente de la familia Qwen 3.5, un ajuste especializado en narrativa y una version cuantizada lista para desplegar en local con llama.cpp u Ollama. No obstante, la informacion publicada sobre el proceso de entrenamiento, los datos utilizados y los benchmarks es practicamente inexistente, lo que limita la evaluacion rigurosa del modelo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (probablemente transformer de Qwen3.5-9B, sin confirmar) |
-| Parametros totales | 8.953.803.264 (≈8,95 B) |
-| Parametros activos | no aplica (no es MoE) |
+| Arquitectura | no disponible (derivada de Qwen3.5-9B; se desconoce si es transformer denso o hibrido) |
+| Parametros totales | 8.953.803.264 (aprox. 8,95B) |
+| Parametros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; además mmproj-Q8_0 y mmproj-f16 |
+| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K; ademas mmproj en Q8_0 y f16 |
 | Idiomas soportados | en, zh |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (también safetensors en el modelo base) |
+| Formato de pesos | GGUF (repo de cuantizaciones); el modelo base se distribuye en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo. Los metadatos indican que se trata de un merge realizado con mergekit, probablemente combinando el modelo base Qwen3.5-9B con otros modelos especializados en escritura creativa. El proceso de "abliteration" (técnica que elimina las capas de rechazo del modelo) está confirmado por las etiquetas, lo que elimina los mecanismos de censura típicos de los modelos de chat. No se han publicado datos sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de técnicas como RLHF o DPO. La cuantización GGUF ha sido realizada por mradermacher sin aplicar matrices de importancia (imatrix) según se indica en la model card.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base Qwen3.5-9B ni sobre las modificaciones introducidas por el fine-tune. Las etiquetas del repositorio mencionan "merge" y "mergekit", lo que sugiere que el modelo se ha construido mediante la fusion de varios modelos o adaptadores, y "unsloth", que apunta al uso de esta libreria para el ajuste fino eficiente. Tambien aparece "mxfp8" y "bfloat16" como formatos de entrenamiento o publicacion, y "mlx" como formato adicional de despliegue en hardware Apple.
+
+El proceso de abliteration (etiqueta "abliterated") implica la modificacion de las direcciones de activacion asociadas al rechazo para reducir la probabilidad de respuestas negativas, una tecnica que suele degradar ligeramente la coherencia y la seguridad del modelo. No se especifica el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- Generación de texto creativo: ficción, ciencia ficción, romance y todos los géneros narrativos.
-- Escritura de tramas y subtramas, generación de historias completas y continuación de escenas.
-- Roleplay interactivo con narrativa vívida y descriptiva.
-- Prosas elaboradas y detalladas ("vivid prosing").
-- Posibles capacidades multimodales (imagen-texto) gracias a los archivos mmproj incluidos, aunque no se especifica el tipo de modalidad.
-- Soporte multilingüe limitado a inglés y chino.
-- Sin restricciones de contenido (modelo "uncensored" y "abliterated").
+- Generacion de texto narrativo y creativo: ficcion, ciencia ficcion, romance y otros generos, con enfasis en prosa vivida.
+- Generacion y desarrollo de tramas y subtramas argumentales.
+- Continuacion de escenas y mantenimiento de coherencia narrativa en conversaciones multi-turno.
+- Roleplaying conversacional, con soporte para personajes y escenarios.
+- Capacidades multilingues limitadas a ingles y chino.
+- Modo multimodal: el repositorio incluye ficheros mmproj, lo que indica soporte de entrada de vision en el modelo base, aunque no se detalla su alcance.
+- No se documenta soporte de tool calling, function calling ni razonamiento agéntico multi-paso.
+- No se documenta modo de razonamiento explicito (thinking mode) ni capacidades de audio.
 
 ## Casos de uso
 
-- Asistente de escritura creativa: el modelo puede ayudar a autores a desarrollar tramas, personajes y diálogos, generando borradores o sugiriendo giros argumentales. Su entrenamiento en ficción lo hace adecuado para esta tarea.
-- Generación de contenido para juegos de rol: en juegos de mesa o videojuegos, puede actuar como director de juego automatizado, describiendo escenarios y reaccionando a las acciones de los jugadores.
-- Creación de guiones y storytelling para medios: desde guiones de cortometrajes hasta narrativas interactivas, el modelo puede producir textos con coherencia y estilo.
-- Prototipado rápido de narrativa para videojuegos: los desarrolladores pueden usarlo para generar diálogos y misiones, acelerando el diseño de contenido.
-- Traducción creativa o adaptación de textos: aunque solo soporta en y zh, puede adaptar historias entre ambos idiomas manteniendo el tono narrativo.
-- Generación de contenido para blogs o redes sociales con estilo literario: para creadores que necesitan textos atractivos y originales, aunque su especialidad es la ficción.
+- Generacion de ficcion por capitulos: el modelo puede producir escenas completas y continuar narrativas largas manteniendo el tono y los personajes, gracias a su especializacion en prosa y estructura narrativa.
+- Asistencia a guionistas y novelistas: generacion de subtramas, giros argumentales y dialogos alternativos para desbloquear bloqueos creativos, aprovechando las etiquetas de plot y sub-plot generation.
+- Roleplay conversacional en local: despliegue con llama.cpp u Ollama para sesiones de rol sin conexion, con la ventaja de la licencia Apache 2.0 y la ausencia de restricciones de rechazo.
+- Prototipado de videojuegos narrativos: generacion dinamica de dialogos y descripciones de escenas para motores de aventuras conversacionales, integrable mediante la API compatible con OpenAI que ofrecen los servidores GGUF.
+- Creacion de contenido para comunidades de escritura: generacion de variantes de una misma escena con distintos registros o generos, util para talleres literarios y plataformas de escritura colaborativa.
+- Experimentacion en investigacion sobre alineacion: al ser un modelo abliterated, sirve como caso de estudio para medir el impacto de la eliminacion de rechazos en la calidad de la prosa y en la coherencia a largo plazo.
+- Despliegue en hardware de consumo: con cuantizaciones Q4_K_M (5,7 GB) puede ejecutarse en GPU con 8 GB de VRAM, lo que facilita prototipos locales sin infraestructura en la nube.
 
 ## Benchmarks y rendimiento
 
@@ -48,29 +54,40 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada según cuantización: Q2_K (3,9 GB) y Q3_K_S (4,4 GB) pueden ejecutarse en GPUs con 6 GB de VRAM; Q4_K_M (5,7 GB) y Q5_K_M (6,6 GB) requieren al menos 8 GB; Q6_K (7,5 GB) y Q8_0 (9,6 GB) necesitan 12 GB o más; f16 (18 GB) requiere 24 GB.
-- GPUs recomendadas: RTX 3060/4060 (8 GB) para cuantizaciones Q4, RTX 3090/4090 (24 GB) para f16 o Q8_0 con contexto largo.
-- Cabe en GPUs de consumo: sí, con cuantizaciones Q4 o inferiores.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, o cualquier runtime compatible con GGUF. También puede usarse con vLLM si se convierte a otro formato.
-- Latencia y throughput: no disponibles, pero para un modelo de 9B en Q4_K_M se esperan decenas de tokens por segundo en GPUs modernas (estimación orientativa).
+- VRAM estimada para inferencia: entre 4 y 6 GB con Q2_K a Q4_K_S, entre 6 y 8 GB con Q5_K_M a Q6_K, y en torno a 10 GB con Q8_0. La version f16 requiere aproximadamente 18 GB.
+- GPU recomendadas: RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB, RTX 4070, RTX 4080, RTX 4090, A100 y H100 para despliegues de mayor throughput.
+- Cabe en GPU de consumo: si, en tarjetas con 8 GB o mas de VRAM usando cuantizaciones Q4 o inferiores; con 6 GB es posible usar Q3_K_M o Q2_K, con perdida notable de calidad.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, servidores compatibles con la API de OpenAI (endpoints_compatible), y MLX en hardware Apple. Tambien es posible usar vLLM o TGI con el modelo base en safetensors, no con los GGUF.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos con otros modelos de la misma categoría (escritura creativa) en la información proporcionada. El modelo base Qwen3.5-9B no tiene ficha pública comparable en este repositorio. Se recomienda evaluar directamente con cargas de trabajo específicas.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Qwen3.5-9B-Holodeck-Lounge (este) | 8,95B | no disponible | Apache 2.0 | GGUF, safetensors | Fine-tune para ficcion, abliterated |
+| Modelo base nightmedia/Qwen3.5-9B-Holodeck-Lounge | 8,95B | no disponible | Apache 2.0 | safetensors | Version sin cuantizar del mismo fine-tune |
+| Qwen3.5-9B (base original) | 9B aprox. | no disponible | no disponible | safetensors | Modelo generalista sin ajuste creativo ni abliteration |
+| Versiones i1-GGUF de mradermacher | 8,95B | no disponible | Apache 2.0 | GGUF (imatrix) | Cuantizaciones ponderadas con imatrix, mayor calidad que las estaticas |
+
+No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo "uncensored" y "abliterated": puede generar contenido ofensivo, violento, sexual o ilegal sin filtros. No es adecuado para aplicaciones donde se requiera moderación automática.
-- Al ser un merge, puede presentar inconsistencias en la calidad de generación o en la coherencia del conocimiento factual.
-- Riesgo de alucinaciones: como todo modelo de lenguaje, puede inventar hechos, nombres o eventos.
-- Idiomas limitados a inglés y chino; no se recomienda su uso en otros idiomas sin pruebas previas.
-- La licencia Apache 2.0 permite uso comercial, pero se debe verificar que el modelo base (Qwen3.5-9B) no tenga restricciones adicionales.
-- La cuantización sin imatrix puede degradar ligeramente la calidad en comparación con versiones con imatrix, especialmente en cuantizaciones bajas.
-- No se garantiza soporte multimodal real: los archivos mmproj están presentes pero no se confirma su funcionalidad.
+- La abliteration reduce los rechazos del modelo, lo que implica un mayor riesgo de generar contenido inapropiado, ofensivo o inseguro sin filtros; no es adecuado para aplicaciones orientadas al publico general sin moderacion adicional.
+- Riesgo de alucinacion y de incoherencia narrativa en contextos muy largos, especialmente con cuantizaciones bajas (Q2_K, Q3_K_S).
+- El soporte linguistico se limita a ingles y chino; el rendimiento en castellano no esta documentado y probablemente sea deficiente.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen3.5 puede tener terminos adicionales que deben verificarse antes de desplegarlo en produccion.
+- No se documentan sesgos especificos, pero al derivar de un modelo entrenado principalmente con datos en ingles y chino, es probable que presente sesgos culturales y de representacion.
+- La ausencia de benchmarks y de documentacion sobre el entrenamiento impide garantizar la calidad en tareas distintas de la escritura creativa.
+- El repositorio ocupa 83 GB debido a la multiplicidad de cuantizaciones; conviene descargar solo el fichero necesario.
 
 ## Enlaces
 
-- [Repositorio GGUF en Hugging Face](https://huggingface.co/mradermacher/Qwen3.5-9B-Holodeck-Lounge-GGUF)
-- [Modelo base nightmedia/Qwen3.5-9B-Holodeck-Lounge](https://huggingface.co/nightmedia/Qwen3.5-9B-Holodeck-Lounge)
-- [Página de FriendliAI para el modelo](https://friendli.ai/models/nightmedia/Qwen3.5-9B-Holodeck-Lounge)
-- [Perfil de mradermacher en aimodels.fyi](https://www.aimodels.fyi/creators/huggingFace/mradermacher)
+- Repositorio GGUF: https://huggingface.co/mradermacher/Qwen3.5-9B-Holodeck-Lounge-GGUF
+- Modelo base: https://huggingface.co/nightmedia/Qwen3.5-9B-Holodeck-Lounge
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Qwen3.5-9B-Holodeck-Lounge-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Qwen3.5-9B-Holodeck-Lounge-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

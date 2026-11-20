@@ -2,111 +2,98 @@
 
 ## Resumen
 
-LFM2.5-24B-A2B APEX-I MiniPlus V2.1 es una cuantización GGUF de precisión mixta del modelo LiquidAI/LFM2.5-24B-A2B, publicada por el usuario IsValorum y calibrada con una importance matrix (imatrix) generada por m9ter1a sobre conversaciones reales de tool calling y un corpus de prosa. El modelo base es un Mixture-of-Experts de 23.971.587.712 parámetros totales con aproximadamente 2B parámetros activos por token, desarrollado por Liquid AI y orientado a agentes que se ejecutan en dispositivo (edge).
+LFM2.5-24B-A2B es un modelo de lenguaje de tipo mezcla de expertos (MoE) desarrollado por Liquid AI, con 24.000 millones de parámetros totales y solo 2.000 millones activos por token. Emplea una arquitectura híbrida que combina capas de convolución lineal 1D con capas de atención multi-cabeza completa, lo que le permite mantener una latencia prácticamente constante en contextos largos. Su ventana de contexto nativa alcanza los 128.000 tokens y está orientado a razonamiento, generación de código, matemáticas y uso autónomo de herramientas.
 
-La arquitectura es híbrida: de las 40 capas, 30 son convoluciones 1D de estado corto (shortconv) con cacheo O(1) y 10 son capas de atención completa distribuidas cada cuatro bloques. Esa combinación mantiene coherencia a lo largo de una ventana de contexto nativa de 128.000 tokens con un coste de atención reducido, lo que explica el foco del modelo en baja latencia y TTFT bajo.
+La ficha que nos ocupa documenta una cuantización GGUF de terceros: la edición APEX-I-MiniPlus V2.1 publicada por el usuario IsValorum, que reduce los pesos originales en BF16 (47,96 GB) a 9,64 GB mediante una mezcla de cuantizaciones Q4_K, IQ3_XXS, Q3_K, Q6_K y Q5_K, manteniendo los routers y las normas en F32 para evitar derivas numéricas. Está calibrada con una importance matrix generada sobre conversaciones reales de tool calling.
 
-La relevancia de esta publicación concreta es de despliegue: comprime un modelo de 47,96 GB en BF16 a 9,64 GB en disco (8,98 GiB de pesos en memoria) sin perder ninguna de las 428 tensores del modelo, mediante una asignación diferenciada de precisión por componente. Esto lo coloca en el rango de GPU de consumo de 12-16 GB y de ejecución en CPU vía llama.cpp, aunque la licencia LFM 1.0 y el origen comunitario de la cuantización son factores a revisar antes de producción.
+El interés de esta versión es práctico: permite ejecutar un modelo de 24B con contexto de 128K en hardware de consumo o en nodos modestos de GPU, gracias a sus 2B de parámetros activos y a su backbone convolucional de estado constante. Es relevante para desarrolladores que necesitan un modelo local con capacidades agénticas y multilingües sin renunciar a la calidad de un modelo de frontera de mayor tamaño.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-Experts híbrida: 40 capas (30 shortconv 1D + 10 de atención completa cada 4 bloques) |
-| Parametros totales | 23.971.587.712 (≈24B) |
-| Parametros activos | ≈2B por token |
-| Longitud de contexto | 128.000 tokens nativo |
-| Tipos de cuantizacion | GGUF de precisión mixta: F32 (207 tensores), Q4_K (91), IQ3_XXS (90), Q3_K (24), Q6_K (10), Q5_K (6); 428 tensores en total |
-| Idiomas soportados | en, ar, zh, fr, de, ja, ko, es, pt, it, vi, th, id, hi, ru, pl (17 idiomas) |
-| Licencia | lfm1.0 (license: other) |
-| Formato de pesos | GGUF (compatible con llama.cpp) |
-| Tamano de archivo | 9,64 GB en disco / 8,98 GiB de pesos en memoria |
-| Tamanos de referencia | BF16 base: 47,96 GB (44,67 GiB); NanoPlus: 8,15 GB (7,59 GiB) |
-| Calibracion | imatrix de alta cobertura generada por m9ter1a |
-| Relacion con el base | quantized (derivado cuantizado de LiquidAI/LFM2.5-24B-A2B) |
+| Arquitectura | Transformer híbrido MoE con convolución lineal 1D (30 capas) y atención multi-cabeza completa (10 capas) |
+| Parámetros totales | 23.971.587.712 (≈24B) |
+| Parámetros activos | ≈2B por token |
+| Longitud de contexto | 128.000 tokens (nativo) |
+| Tipos de cuantización | GGUF mixta: Q4_K, IQ3_XXS, Q3_K, Q6_K, Q5_K y F32 para routers, normas y sesgos |
+| Idiomas soportados | en, ar, zh, fr, de, ja, ko, es, pt, it, vi, th, id, hi, ru, pl |
+| Licencia | LFM 1.0 (lfm1.0), etiquetada como "other" en el repo |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base emplea un backbone híbrido en el que 30 de las 40 capas usan convoluciones 1D de estado corto con cacheo O(1), lo que evita el crecimiento lineal del coste de atención con la longitud de secuencia y reduce la sobrecarga de TTFT. Cada cuatro bloques se intercala una capa de atención completa (10 en total), que actúa como ancla de largo alcance y sostiene la coherencia hasta los 128.000 tokens. La capa MoE se organiza en expertos por capa: los expertos centrales (capas 6 a 35) se cuantizan a IQ3_XXS y los expertos frontera (capas 2-5 y 36-39) a Q3_K, mientras que los routers ffn_gate_inp, normas, biases y kernels de convolución se mantienen en F32 para evitar deriva numérica en el enrutado. Las cabezas de salida de atención se conservan en Q6_K y las dos capas FFN densas iniciales (0 y 1) en Q5_K.
+El modelo base sigue un diseño híbrido: de sus 40 capas, 30 son convoluciones lineales 1D con caché de estado O(1), lo que elimina el crecimiento cuadrático del coste de atención en contextos largos, y 10 son capas de atención completa distribuidas cada cuatro bloques para preservar la coherencia a largo plazo hasta los 128.000 tokens. La componente MoE se organiza en 30 capas de expertos (capas 6 a 35) más 8 capas de borde (capas 2 a 5 y 36 a 39), con routers mantenidos en F32 en esta cuantización para evitar derivas de enrutamiento. Las dos primeras capas son FFN densas.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron etapas de RLHF o DPO en el modelo base. La información de calibración de esta cuantización sí está documentada: la imatrix se generó sobre conversaciones auténticas de tool calling renderizadas con la plantilla de chat nativa del modelo, más un corpus de prosa. Liquid AI declara que el modelo supera a alternativas densas y dispersas mayores en evaluaciones agénticas, de código y matemáticas, con una ventaja de hasta 1,7x en velocidad de inferencia en dispositivos edge.
+No se dispone en la información proporcionada del número exacto de tokens de entrenamiento, la composición del dataset ni los detalles del proceso de alineación (RLHF/DPO). La model card del autor de la cuantización menciona que el modelo está especializado en razonamiento y tool calling, y que la matriz de importancia empleada para calibrar se generó sobre conversaciones auténticas de llamadas a herramientas renderizadas con la plantilla de chat nativa del modelo, además de un corpus de prosa. La cuantización APEX-I-MiniPlus V2.1 conserva los 428 tensores del modelo original, con un reparto auditado: 207 tensores en F32 (48,36%), 91 en Q4_K (21,26%), 90 en IQ3_XXS (21,03%), 24 en Q3_K (5,61%), 10 en Q6_K (2,34%) y 6 en Q5_K (1,40%).
 
 ## Capacidades
 
-- Generación de texto conversacional con plantilla de chat nativa (`conversational`).
-- Razonamiento explícito: el modelo se etiqueta como `reasoning` y se posiciona como especialista en tareas de razonamiento en dispositivo.
-- Tool calling y function calling: es el eje declarado del modelo, con resultados destacados en LiveClaw y BFCL v4.
-- Uso agéntico autónomo y razonamiento multi-paso, orientado a flujos con llamadas a herramientas encadenadas.
-- Soporte multilingüe en 17 idiomas, con presencia de español, portugués, italiano, francés, alemán, árabe, chino, japonés, coreano, vietnamita, tailandés, indonesio, hindi, ruso y polaco.
-- Ejecución en dispositivo (edge) con latencia baja gracias al backbone convolucional de estado constante.
-- Capacidades de código y matemáticas, según la evaluación declarada por Liquid AI en el modelo base.
-- No se documentan capacidades de visión ni de audio en la información disponible.
+- Generación de texto conversacional multi-turno con contexto largo de hasta 128.000 tokens.
+- Razonamiento explícito y resolución de problemas matemáticos.
+- Generación y comprensión de código.
+- Tool calling y function calling nativo, con resultados destacados en benchmarks agénticos según la model card del autor.
+- Razonamiento multi-paso y flujos agénticos autónomos.
+- Soporte multilingüe en 16 idiomas: inglés, árabe, chino, francés, alemán, japonés, coreano, español, portugués, italiano, vietnamita, tailandés, indonesio, hindi, ruso y polaco.
+- Inferencia de baja latencia gracias al backbone convolucional con caché de estado constante.
+- Compatible con endpoints y con el ecosistema llama.cpp.
 
 ## Casos de uso
 
-- Agentes con tool calling en producción: el modelo está entrenado y calibrado específicamente sobre conversaciones de llamada a funciones, por lo que encaja en pipelines donde el LLM decide qué herramienta invocar, formatea argumentos y encadena pasos. La ventana de 128K permite mantener el historial completo de la sesión y las definiciones de herramientas sin truncar.
-- Asistentes locales en portátiles o estaciones de trabajo sin GPU dedicada: con 8,98 GiB de pesos se puede servir vía llama.cpp en CPU, lo que habilita asistentes privados que no envían datos a la nube. Es el escenario natural de un modelo con solo 2B parámetros activos.
-- Automatización de atención al cliente multi-turno: la combinación de contexto largo y bajo coste por token activo permite gestionar conversaciones extensas con base de conocimiento inyectada sin que el coste de inferencia se dispare.
-- Procesamiento de documentos largos y extracción estructurada: los 128K tokens de contexto admiten contratos, informes o expedientes completos en una sola pasada, con salida en formato estructurado vía tool calling.
-- Copilotos de código integrados en el IDE: el modelo cubre generación de código y llamadas a herramientas, de modo que puede consultar el repositorio, ejecutar comandos y proponer parches desde un equipo de desarrollo local.
-- Enrutado y clasificación dentro de una arquitectura multi-modelo: por su bajo coste por token y su velocidad, puede actuar como primer nivel que clasifica la petición y decide si deriva a un modelo mayor.
-- Investigación y experimentación con arquitecturas híbridas: al ser una cuantización accesible de un MoE híbrido conv+attention, sirve para medir en hardware modesto el comportamiento real de este tipo de backbone frente a transformers densos equivalentes.
+- **Atención al cliente automatizada:** el modelo puede gestionar conversaciones multi-turno con historial extenso gracias a sus 128.000 tokens de contexto, manteniendo coherencia en sesiones largas sin degradación apreciable de latencia por el uso de convoluciones lineales.
+- **Agentes autónomos con herramientas:** su soporte nativo de tool calling y su rendimiento en benchmarks agénticos lo hacen adecuado para orquestar llamadas a APIs, consultas a bases de datos y ejecución de acciones encadenadas en pipelines de automatización.
+- **Asistente de código en local:** con 2B de parámetros activos y un GGUF de 9,64 GB, puede desplegarse en estaciones de trabajo con GPU de consumo para autocompletado, revisión de código y generación de tests dentro del IDE.
+- **Razonamiento matemático y análisis:** útil para resolver problemas paso a paso, verificar cálculos y generar explicaciones detalladas en entornos educativos o de auditoría técnica.
+- **Procesamiento de documentos largos:** la ventana de 128K permite resumir, extraer información y responder preguntas sobre contratos, informes o expedientes completos en una sola pasada.
+- **Atención multilingüe:** con 16 idiomas soportados, sirve para traducción, moderación de contenido y soporte a usuarios en mercados internacionales sin necesidad de modelos separados por idioma.
+- **Despliegue en edge o en hardware limitado:** la edición NanoPlus (8,15 GB) y la MiniPlus (9,64 GB) permiten ejecutar el modelo en portátiles con GPU de 8-12 GB o en servidores sin aceleradores de gama alta, algo inviable con el BF16 original de 47,96 GB.
 
 ## Benchmarks y rendimiento
 
-Datos publicados en la información disponible (evaluaciones del modelo base, no re-ejecutadas sobre esta cuantización):
+La model card del autor de la cuantización cita resultados oficiales de Liquid AI para el modelo base, pero solo proporciona cifras parciales. Los datos disponibles son:
 
 | Benchmark | LFM2.5-24B-A2B | Qwen3.6-35B-A3B |
 |---|---|---|
-| LiveClaw (tool use autónomo) | 48,09 | 38,19 |
-| BFCL v4 | Citado como punto fuerte, sin cifra publicada | No disponible |
-| Evaluaciones agénticas, de código y matemáticas | Declaradas como superiores a alternativas densas y dispersas mayores (sin cifras en la información disponible) | No disponible |
-| Velocidad en edge | Hasta 1,7x más rápido (declaración de Liquid AI) | No disponible |
+| LiveClaw | 48,09 | 38,19 |
 
-No se han publicado resultados de benchmarks específicos para esta cuantización APEX-I-MiniPlus V2.1 (no hay medición de degradación frente al BF16 base en la información proporcionada). Tampoco hay datos de throughput o latencia medidos sobre este archivo GGUF concreto.
+El resto de resultados (MMLU, HumanEval, GSM8K, BFCL v4, etc.) no se detallan numéricamente en la información proporcionada; la model card remite a una imagen de benchmarks sin desglose textual. No se han publicado en la información disponible resultados de benchmarks específicos de la cuantización APEX-I-MiniPlus V2.1 frente al modelo en BF16.
 
 ## Requisitos de hardware
 
-- VRAM de pesos: 8,98 GiB. Con overhead de runtime, contexto y buffers, el objetivo práctico es una GPU de 12 GB o superior.
-- GPU de consumo compatibles: RTX 3060 12 GB, RTX 4070 / 4070 Ti, RTX 4080, RTX 3090, RTX 4090. En tarjetas de 8 GB el modelo no cabe con margen para contexto.
-- GPU profesionales: A100, H100, L40S, A6000, sin problema de capacidad; útiles si se necesita servir varias instancias o contextos de 128K simultáneos.
-- Ejecución en CPU: viable con llama.cpp y cuantizaciones K-quant/I-quant. El autor menciona explícitamente ausencia de bloqueos AVX2 en la colección V2.1.
-- Opciones de despliegue: llama.cpp, Ollama y LM Studio como vías principales para GGUF. vLLM y TGI no soportan GGUF de forma nativa, por lo que requerirían el modelo base en safetensors.
-- Caché KV: al haber solo 10 capas de atención completa frente a 30 convolucionales de estado fijo, el crecimiento de memoria por contexto es notablemente menor que en un transformer denso de tamaño comparable, aunque no se dispone de cifras exactas de VRAM por longitud de contexto en la información facilitada.
-- Latencia y throughput: no disponibles para esta cuantización. Los datos públicos de terceros disponibles en la búsqueda corresponden a otro modelo (Nex-N2.5-mini) y no son extrapolables.
+- **VRAM estimada para inferencia:** aproximadamente 9-10 GB para la edición MiniPlus V2.1 (9,64 GB de pesos) y 8-9 GB para la NanoPlus (8,15 GB), más overhead de contexto KV y buffers de llama.cpp.
+- **GPU recomendadas:** RTX 4090 (24 GB), RTX 4080 (16 GB), RTX 4070 Ti Super (16 GB), RTX 3090 (24 GB), L4 (24 GB), A10G (24 GB). Para despliegues de mayor concurrencia, A100 o H100.
+- **¿Cabe en GPU de consumo?** Sí. La MiniPlus V2.1 cabe en GPUs de 12 GB o más con contexto moderado; la NanoPlus está pensada para GPUs de 8 GB. Con contexto completo de 128K será necesario reducir el tamaño de la caché KV o usar GPU de 16-24 GB.
+- **Opciones de despliegue:** llama.cpp, Ollama, LM Studio, servidores compatibles con la API de OpenAI mediante llama.cpp, y cualquier runtime que acepte GGUF. No se menciona soporte nativo de vLLM o TGI para este formato en la información disponible.
+- **Latencia y throughput:** la model card del modelo base afirma que es hasta 1,7 veces más rápido que alternativas densas y dispersas de mayor tamaño en dispositivos edge, con una sobrecarga de TTFT cercana a cero gracias al backbone convolucional. No se proporcionan cifras absolutas de tokens por segundo para esta cuantización concreta.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Parametros activos | Contexto | LiveClaw | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| LFM2.5-24B-A2B APEX-I MiniPlus V2.1 (esta ficha) | 23,97B | ≈2B | 128K | 48,09 | lfm1.0 (other) | GGUF, 9,64 GB |
-| LiquidAI/LFM2.5-24B-A2B (base BF16) | 23,97B | ≈2B | 128K | No disponible | lfm1.0 | Safetensors, 47,96 GB |
-| Qwen3.6-35B-A3B | 35B (aproximado, según nomenclatura) | ≈3B (según nomenclatura) | No disponible | 38,19 | No disponible | No disponible en la información proporcionada |
-| IsValorum LFM2.5-24B-A2B APEX-I-NanoPlus | 23,97B | ≈2B | 128K | No disponible | lfm1.0 | GGUF, 8,15 GB |
+| Modelo | Parámetros totales / activos | Contexto | Licencia | Formato disponible | Notas |
+|---|---|---|---|---|---|
+| LFM2.5-24B-A2B (APEX-I-MiniPlus V2.1) | 24B / 2B | 128K | LFM 1.0 | GGUF (9,64 GB) | Híbrido conv + atención, tool calling destacado |
+| Qwen3.6-35B-A3B | 35B / 3B | no disponible | no disponible | no disponible | Referenciado en la model card; superado en LiveClaw (38,19 vs 48,09) |
+| LFM2.5-24B-A2B APEX-I-NanoPlus | 24B / 2B | 128K | LFM 1.0 | GGUF (8,15 GB) | Misma base, cuantización más agresiva para GPUs de 8 GB |
+| LFM2.5-24B-A2B BF16 (original) | 24B / 2B | 128K | LFM 1.0 | safetensors (47,96 GB) | Referencia de calidad sin pérdida por cuantización |
 
-La comparación con Qwen3.6-35B-A3B se apoya únicamente en el dato de LiveClaw aportado por la model card; no hay cifras de contexto, licencia o parámetros verificables en la información disponible para ese modelo. Modelos de la misma categoría (MoE dispersos de 20-35B con 2-4B activos) podrían incluir la familia Qwen3 MoE o variantes de Mistral, pero no se dispone de datos comparativos verificados en esta búsqueda.
+No se dispone en la información proporcionada de datos suficientes para comparar con otras alternativas MoE de tamaño similar (por ejemplo, variantes de la familia Mixtral o Qwen) en parámetros, contexto y rendimiento simultáneamente.
 
 ## Limitaciones y advertencias
 
-- Licencia LFM 1.0: es una licencia "other" con condiciones propias. Antes de uso comercial hay que revisar el texto enlazado por Liquid AI; no se puede asumir permisividad tipo Apache 2.0.
-- Es una cuantización comunitaria, no oficial: el autor es IsValorum, no Liquid AI. La degradación frente al BF16 no está medida en la información disponible, y el uso de IQ3_XXS en los expertos centrales implica una pérdida de precisión no cuantificada.
-- Riesgo de alucinación: como cualquier LLM, puede generar información plausible pero incorrecta, especialmente en tareas de razonamiento largo. No hay evaluación publicada de tasas de alucinación.
-- Sesgos: no se documenta ninguna auditoría de sesgos ni la composición del dataset de entrenamiento, lo que impide estimar sesgos de género, idioma o cultura.
-- Cobertura idiomática desigual: aunque se declaran 17 idiomas, no hay métricas por idioma. Los idiomas con menos presencia en datos de entrenamiento (tailandés, vietnamita, hindi, indonesio) probablemente rindan peor que el inglés.
-- Degradación por cuantización en el enrutado: el autor mantiene routers y normas en F32 precisamente para evitarlo, pero no hay verificación independiente de que el enrutado MoE se comporte igual que en BF16.
-- Métricas de adopción mínimas: 0 descargas y 1 like en el momento de la consulta. No hay historial de uso en producción ni informes de terceros que validen la calidad del archivo.
-- Rendimiento declarado frente a rendimiento medido: el dato de 1,7x más rápido en edge procede de Liquid AI para el modelo base, no de una medición sobre esta cuantización concreta.
-- Fecha del repositorio: creado el 2026-10-13 y actualizado el 2026-10-14, con lo que conviene verificar que no existan revisiones posteriores que cambien el perfil de cuantización.
+- **Sesgos:** no se documentan en la información disponible; como todo modelo entrenado con corpus web multilingüe, es probable que herede sesgos culturales y de género presentes en los datos.
+- **Alucinación:** no se han publicado evaluaciones específicas de tasa de alucinación para este modelo ni para esta cuantización.
+- **Pérdida por cuantización:** la edición MiniPlus V2.1 usa cuantizaciones agresivas (IQ3_XXS y Q3_K en capas de expertos), lo que puede degradar ligeramente la calidad frente al BF16, especialmente en tareas de razonamiento fino y matemáticas. Los routers se mantienen en F32 para mitigar derivas de enrutamiento, pero no se ofrecen métricas comparativas de perplejidad o benchmarks entre cuantizaciones.
+- **Contexto:** aunque el contexto nativo es de 128K, el uso completo requiere VRAM adicional para la caché KV; en GPUs de 8-12 GB habrá que limitar la longitud efectiva.
+- **Licencia:** la licencia LFM 1.0 puede imponer restricciones al uso comercial. Es necesario revisar el texto completo en el enlace de licencia antes de desplegar en producción; la model card la etiqueta como "other".
+- **Soporte de runtimes:** al ser un GGUF de un modelo híbrido con convoluciones lineales, conviene verificar que la versión de llama.cpp utilizada soporte la arquitectura; versiones antiguas pueden no cargar correctamente los tensores de convolución.
+- **Mantenimiento:** la cuantización la mantiene un tercero (IsValorum), no Liquid AI; la calidad y la continuidad de las actualizaciones dependen de ese mantenedor.
 
 ## Enlaces
 
-- Repositorio de esta cuantización: https://huggingface.co/IsValorum/LFM2.5-24B-A2B-APEX-I-MiniPlus-V2.1-GGUF
+- Repositorio de la cuantización: https://huggingface.co/IsValorum/LFM2.5-24B-A2B-APEX-I-MiniPlus-V2.1-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B
 - Licencia LFM 1.0: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/main/LICENSE
-- Blog de Liquid AI sobre LFM2.5-24B-A2B: https://www.liquid.ai/blog/lfm2-5-24b-a2b
-- Fuente de la imatrix de calibración (m9ter1a): https://huggingface.co/m9ter1a/LFM2.5-24B-A2B-GGUF
 - Edición NanoPlus: https://huggingface.co/IsValorum/LFM2.5-24B-A2B-APEX-I-NanoPlus-GGUF
-- Colección VAL-APEX-I: https://huggingface.co/collections/IsValorum/val-apex-i-6ac563d1784a04a1bb177f47
-- Colección APEX-I-MiniPlus V2.1: https://huggingface.co/collections/IsValorum/apex-i-miniplus-v21-current-6aac8d4766a28a024e8bb104
-- Colección APEX-I-NanoPlus: https://huggingface.co/collections/IsValorum/apex-i-nanoplus-6ab41467c988a1b1cb9b83bc
-- Apoyo al autor de la cuantización: https://ko-fi.com/isvalorum
+- Colección APEX-I-MiniPlus V2.1: https://huggingface.co/collections/IsValorum/apex-i-miniplus-v21-standard-moe-6acfee77961c8c0cf5a083b5
+- Colección APEX-I-NanoPlus: https://huggingface.co/collections/IsValorum/apex-i-nanoplus-standard-moe-6acfee79c288c5d8e7307785
+- Matriz de importancia (imatrix) de m9ter1a: https://huggingface.co/m9ter1a/LFM2.5-24B-A2B-GGUF
+- Apoyo al mantenedor: https://ko-fi.com/isvalorum

@@ -2,103 +2,108 @@
 
 ## Resumen
 
-GRAFT-50B-A3B es un modelo de chat de tipo mezcla de expertos (MoE) desarrollado por UltraLabs (publicado en Hugging Face por el usuario SmallAICreator). Se obtiene reduciendo el modelo Qwen3-Next-80B-A3B-Instruct a menos de dos tercios de su tamaño mediante GRAFT, un método propio de "encogimiento" de modelos, seguido de un proceso de recuperación ("healing") por destilación desde el modelo original de 80B y de un ajuste de identidad para que el modelo conozca su propio nombre. El resultado es un modelo de 50,66 mil millones de parámetros totales con solo unos 3,2 mil millones activos por token, lo que le permite generar a una velocidad cercana a la de un modelo de 3B conservando parte del conocimiento del modelo grande.
+GRAFT-50B-A3B es un modelo de chat de tipo mixture-of-experts (MoE) desarrollado por UltraLabs (publicado bajo el handle SmallAICreator) como un ajuste fino del modelo Qwen3-Next-80B-A3B-Instruct de Alibaba. El modelo reduce el tamaño del original de aproximadamente 80B a unos 50.664 millones de parámetros totales, manteniendo solo unos 3.200 millones de parámetros activos por token. Esta relación de activación tan baja permite una velocidad de generación propia de un modelo de 3B con un conocimiento parametrizado mucho mayor.
 
-La arquitectura es la híbrida de Qwen3-Next: 48 capas (36 de Gated DeltaNet y 12 de atención con compuertas), 320 expertos con 10 activos por token más un experto compartido, y tamaño oculto de 2048. La distribución publicada es un único archivo GGUF cuantizado en Q4_K_M de 30,9 GB, pensado para ejecutarse en llama.cpp y en cualquier aplicación compatible con GGUF que soporte Qwen3-Next.
+La técnica de compresión empleada, denominada GRAFT por sus autores, reduce el modelo base a menos de dos tercios de su tamaño y posteriormente lo "sana" mediante destilación desde el modelo original de 80B. El resultado se distribuye principalmente en formato GGUF cuantizado Q4_K_M (30,9 GB) y está pensado para su uso con llama.cpp, incluyendo despliegue en hardware de consumo con soporte para descarga de expertos a RAM del sistema.
 
-Su relevancia práctica está en el coste de despliegue: al mantener solo 12 de las 48 capas con caché KV, el contexto largo resulta barato (32K de contexto ocupan bastante menos de 1 GB), y el modelo cabe completo en una única GPU de 48 GB o, con reparto de expertos en CPU, en un equipo de 32 GB de RAM más GPU. La licencia es Apache 2.0 y el ajuste está orientado al inglés.
+El modelo se orienta a conversación general, generación de código, matemáticas y tool calling, con plantilla ChatML embebida en el GGUF y licencia Apache 2.0. Su relevancia actual radica en ofrecer un MoE de gran tamaño con contexto largo barato (solo 12 de las 48 capas mantienen caché KV) en un paquete que cabe en una única GPU de 48 GB o en configuraciones mixtas de RAM y VRAM.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido Qwen3-Next: 48 capas (36 Gated DeltaNet + 12 de atención con compuertas), MoE con 320 expertos (10 activos por token + 1 experto compartido), tamaño oculto 2048 |
-| Parámetros totales | 50.664.487.680 (~50,7B) |
-| Parámetros activos | ~3,2B por token |
-| Longitud de contexto | 32.768 tokens (valor empleado en los ejemplos de `llama-server` y en la prueba needle-in-a-haystack indicada por el autor); longitud máxima nativa no disponible |
-| Tipos de cuantización | Q4_K_M (único archivo publicado, 30,9 GB) |
-| Idiomas soportados | Inglés (principal); otros idiomas funcionan pero con menor pulido, según el autor |
+| Arquitectura | Qwen3-Next híbrida: 48 capas (36 Gated DeltaNet + 12 gated attention), MoE con 320 expertos (10 activos por token + 1 experto compartido), hidden size 2048 |
+| Parametros totales | 50.664.487.680 (~50,7B) |
+| Parametros activos | ~3,2B por token |
+| Longitud de contexto | 32K recomendado en el ejemplo de llama-server; soporta hasta 128K según la prueba needle-in-a-haystack |
+| Tipos de cuantizacion | Q4_K_M (30,9 GB) publicado; no se detallan otras variantes |
+| Idiomas soportados | Inglés (principal); otros idiomas funcionan pero con menor calidad |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (plantilla de chat ChatML con tool calling embebida en el archivo) |
+| Formato de pesos | GGUF (archivo GRAFT-50B-A3B-Q4_K_M.gguf) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3-Next-80B-A3B-Instruct, una arquitectura híbrida que combina capas de Gated DeltaNet (atención lineal con estado recurrente) con un subconjunto de capas de atención con compuertas. En GRAFT-50B-A3B se conservan 48 capas (36 Gated DeltaNet y 12 de atención), 320 expertos con 10 activos por token más un experto compartido, y un tamaño oculto de 2048. Solo las 12 capas de atención mantienen caché KV, lo que explica el bajo coste de memoria del contexto largo.
+El modelo hereda la arquitectura híbrida de Qwen3-Next, que combina 36 capas con Gated DeltaNet (un mecanismo de atención lineal/estado recurrente) y 12 capas con atención con puerta tradicional. El componente MoE contiene 320 expertos, de los cuales se activan 10 por token más un experto compartido, sobre una dimensión oculta de 2048. Esta configuración explica que solo 12 de las 48 capas mantengan caché KV, lo que abarata enormemente el contexto largo: 32K de contexto requieren bastante menos de 1 GB.
 
-El proceso de construcción descrito por el autor es en dos fases: primero un "encogimiento" del modelo de 80B hasta menos de dos tercios de su tamaño mediante el método GRAFT, y después una recuperación de capacidad mediante destilación desde el modelo original de 80B, junto con un ajuste específico para fijar la identidad del modelo (nombre y autoría) sin necesidad de system prompt. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO adicionales.
+El proceso de entrenamiento consistió en aplicar el método propietario GRAFT para reducir el modelo base Qwen3-Next-80B-A3B-Instruct a menos de dos tercios de su tamaño, seguido de una fase de "sanación" mediante destilación desde el modelo original de 80B. Adicionalmente se le enseñó su propia identidad (nombre y autoría) para que no requiera system prompt. No se especifican en la información disponible el número de tokens de destilación, la composición del dataset ni si se aplicaron fases de RLHF o DPO adicionales.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno con plantilla ChatML.
-- Escritura, explicación y depuración de código.
-- Matemáticas y razonamiento, con menor fiabilidad que el modelo base de 80B según el propio autor.
-- Tool calling / function calling: el autor indica soporte del formato `<tool_call>` y manejo de `tools` al estilo OpenAI mediante la plantilla embebida en el GGUF.
-- Identidad propia sin system prompt: el modelo se identifica como GRAFT-50B-A3B de UltraLabs cuando se le pregunta, y no lo menciona en preguntas ordinarias.
-- Multilingüe limitado: ajustado principalmente en inglés; otros idiomas funcionan pero con menor calidad.
-- Contexto largo económico en memoria (prueba needle-in-a-haystack planificada hasta 32K).
-- No se documenta en la información disponible un modo de razonamiento explícito ("thinking"), soporte de visión, audio ni capacidades agénticas de varios pasos más allá del tool calling.
+- Generación de texto conversacional multi-turno con plantilla ChatML embebida en el GGUF.
+- Razonamiento y respuesta a preguntas factuales de conocimiento general (77,4% en MMLU completo).
+- Generación de código con pass@1 del 84,1% en HumanEval y 35,1% en LiveCodeBench v6.
+- Matemáticas de nivel escolar fuerte (97,2% en GSM8K) y razonamiento matemático competitivo moderado (36,7% en AIME 2025).
+- Tool calling / function calling mediante el formato `<tool_call>`, con soporte para el esquema `tools` estilo OpenAI a través de la plantilla Jinja.
+- Capacidad de contexto largo verificada hasta 128K tokens (needle-in-a-haystack 15/15).
+- Identidad propia sin system prompt: se presenta como GRAFT-50B-A3B de UltraLabs solo cuando se le pregunta.
+- No se documentan capacidades de visión, audio ni modo de pensamiento explícito (thinking mode).
 
 ## Casos de uso
 
-- Asistente de chat local en estación de trabajo: con 30,9 GB en Q4_K_M y unos 31 GB de memoria total, puede ejecutarse en un equipo de 32 GB de RAM más GPU o en una única GPU de 48 GB, ofreciendo conversación multi-turno sin depender de la nube.
-- Servidor compatible con OpenAI para prototipos: `llama-server --jinja -c 32768` expone una API HTTP en el puerto 8080 con plantilla ChatML y soporte de `tools`, lo que permite sustituir un endpoint en aplicaciones existentes sin cambiar el cliente.
-- Asistencia de programación en IDE o CLI: el modelo escribe y explica código y puede recibir definiciones de funciones vía tool calling, integrándose en flujos donde el coste por token generado importa (solo 3,2B activos).
-- Procesamiento de documentos largos con contexto de 32K: la caché KV reducida (12 de 48 capas) mantiene el consumo por debajo de 1 GB a 32K, lo que facilita resumir o extraer información de contratos, informes o transcripciones en máquinas modestas.
-- Despliegue con reparto CPU/GPU en hardware heterogéneo: la opción `--n-cpu-moe N` de llama.cpp permite mantener parte de los expertos en RAM del sistema y ajustar el número de capas hasta llenar la VRAM disponible, útil en estaciones con GPU de 24 GB.
-- Automatización de tareas de extracción y clasificación en lotes: al ser un modelo Apache 2.0 y ejecutable en local, encaja en pipelines internos con requisitos de soberanía de datos donde no se quiere enviar texto a terceros.
-- Bot de soporte técnico de primer nivel: conversación multi-turno con contexto largo y tool calling para consultar APIs internas, con la advertencia de verificar hechos y respuestas por su tendencia a hablar con seguridad.
+- Asistente conversacional autoalojado: el modelo puede gestionar diálogos multi-turno con contexto de hasta 32K tokens (ampliable a 128K) manteniendo un coste de memoria de caché KV muy bajo gracias a sus 12 capas con caché, lo que lo hace adecuado para despliegues en una sola GPU de 48 GB.
+- Generación de código en pipelines de desarrollo: con 84,1% en HumanEval y soporte de tool calling, puede integrarse en flujos de autocompletado, revisión o generación de tests invocando herramientas externas mediante `<tool_call>`.
+- Atención al cliente automatizada: su plantilla ChatML con soporte de herramientas permite conectar el modelo a APIs de CRM o ticketing, y su capacidad de contexto largo facilita arrastrar historiales extensos de conversación.
+- Razonamiento matemático educativo: con 97,2% en GSM8K, es apto para tutores automáticos que resuelvan problemas de aritmética y álgebra elemental paso a paso.
+- Procesamiento de documentos largos: la prueba needle-in-a-haystack a 128K y el bajo coste de contexto permiten tareas de extracción de información y resumen sobre documentos extensos.
+- Despliegue en hardware de consumo o servidores sin GPU dedicada: con 30,9 GB en Q4_K_M y la opción `--n-cpu-moe` para descargar expertos a RAM, puede ejecutarse en equipos con 32 GB de RAM más una GPU modesta, o en CPU pura a 8,8 tokens/s en un servidor de 24 núcleos.
+- Prototipado de agentes con tool calling: la plantilla embebida compatible con el esquema OpenAI permite usarlo como backend en frameworks de agentes sin configuración adicional de prompt.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card indica que las pruebas estándar (MMLU, GSM8K, HumanEval y needle-in-a-haystack hasta 32K) se están ejecutando sobre el propio archivo Q4_K_M y que se añadirán a la ficha del modelo, pero no incluye cifras.
+Resultados publicados por el autor, ejecutados sobre el propio archivo Q4_K_M con llama.cpp, decodificación greedy y sin system prompt:
 
-Datos de rendimiento sí disponibles en la información:
+| Benchmark | Configuracion | GRAFT-50B-A3B |
+|---|---|---|
+| MMLU (test completo) | 14.042 preguntas, zero-shot, letra de respuesta | 77,4% |
+| GSM8K | primeras 250 preguntas, paso a paso | 97,2% |
+| HumanEval | 164 problemas, pass@1 | 84,1% |
+| LiveCodeBench v6 | 131 problemas (feb-abr 2025), pass@1, límite 16K tokens | 35,1% (fácil 28/31, medio 15/39, difícil 3/61) |
+| AIME 2025 | 30 problemas (I + II), límite 14K tokens | 36,7% (11/30) |
+| GPQA Diamond | 159 de 198 preguntas, zero-shot, límite 8K tokens | 35,2% (56/159) |
+| Humanity's Last Exam | 500 preguntas aleatorias de 2.158 (442 terminadas), límite 8K tokens | 3,6% (16/442) |
+| Needle in a haystack | passkey de 5 dígitos a 10%/50%/90% de profundidad | 15/15 (3/3 a 8K, 16K, 32K, 64K y 128K) |
 
-| Métrica | Valor |
+Comparación de la fase de sanación sobre un subconjunto fijo de 285 preguntas de MMLU (5 por materia):
+
+| Modelo | MMLU (subconjunto) |
 |---|---|
-| Velocidad en CPU | 8,8 tokens/s medidos en una CPU de servidor de 24 núcleos |
-| Velocidad en GPU | "mucho más rápida"; sin cifra concreta disponible |
-| Memoria del modelo (Q4_K_M) | ~31 GB |
-| Memoria de contexto a 32K | bastante menos de 1 GB (solo 12 de 48 capas con caché KV) |
+| Qwen3-Next-80B-A3B-Instruct (original) | 85,6% |
+| GRAFT-50B-A3B antes de sanación | 76,1% |
+| GRAFT-50B-A3B (esta versión) | 78,9% |
+
+El autor advierte que son ejecuciones zero-shot propias y no los setups oficiales de 5-shot, por lo que deben compararse con otros modelos ejecutados de la misma forma. Las áreas más fuertes en MMLU son historia, gobierno y política, psicología, política exterior y marketing (92-98%); las más débiles son química, física y matemáticas de nivel universitario (50-58%).
 
 ## Requisitos de hardware
 
-- VRAM estimada: unos 31 GB para los pesos en Q4_K_M más una cantidad pequeña de caché KV (menos de 1 GB a 32K de contexto). Presupuesto práctico de 32-34 GB.
-- GPU recomendadas: una única GPU de 48 GB (por ejemplo, A6000, L40S o RTX 6000 Ada) aloja el modelo completo. No se especifican modelos concretos en la información disponible.
-- GPU de consumo: no cabe entera en 24 GB (RTX 4090, RTX 3090). Sí es viable repartiendo expertos en RAM del sistema con `--n-cpu-moe N`, bajando N hasta llenar la VRAM.
-- Solo CPU: funciona si el modelo cabe en RAM (32 GB de RAM más GPU como mínimo, o 48 GB o más de RAM/VRAM), a 8,8 tokens/s en una CPU de servidor de 24 núcleos.
-- Opciones de despliegue: llama.cpp con soporte reciente de Qwen3-Next (`llama-cli`, `llama-server` con `--jinja`) y cualquier aplicación GGUF compatible. No se mencionan integraciones con vLLM, TGI ni Ollama en la información disponible.
-- Latencia y throughput: solo se publica la cifra de CPU (8,8 tokens/s); no hay datos de throughput en GPU.
+- Memoria: aproximadamente 31 GB para el modelo en Q4_K_M; se recomienda 32 GB de RAM más una GPU, o 48 GB o más de RAM/VRAM.
+- GPU: una única GPU de 48 GB puede alojar el modelo completo. No se especifican modelos concretos (A100, H100, RTX 4090), pero por capacidad de VRAM encajaría en A100 80GB, H100 y tarjetas de 48 GB; una RTX 4090 de 24 GB no lo aloja completo y requeriría descargar expertos a RAM.
+- Solo CPU: funciona si cabe en RAM; el autor midió 8,8 tokens/s en un servidor de 24 núcleos.
+- Opciones de despliegue: llama.cpp (llama-cli y llama-server con `--jinja`), y cualquier aplicación GGUF con soporte de Qwen3-Next. El servidor de llama.cpp expone una API compatible con OpenAI en el puerto 8080.
+- Descarga parcial de expertos: el flag `--n-cpu-moe N` permite mantener los expertos de N capas en RAM del sistema, reduciendo el requisito de VRAM.
+- Contexto: 32K de contexto requiere bastante menos de 1 GB de caché KV gracias a que solo 12 de las 48 capas mantienen caché.
+- Latencia y throughput: no se publican cifras de GPU; solo el dato de 8,8 tokens/s en CPU de 24 núcleos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|---|
-| GRAFT-50B-A3B | ~50,7B | ~3,2B | 32K en los ejemplos publicados | Apache 2.0 | GGUF Q4_K_M | Destilado de Qwen3-Next-80B-A3B; identidad propia; inglés |
-| Qwen3-Next-80B-A3B-Instruct (base) | 80B (según el autor) | ~3B (según el autor) | No disponible en la información proporcionada | Apache 2.0 | No disponible | Modelo original del que se destila; mayor tamaño y, según el autor, mejor matemáticas y razonamiento |
-| GRAFT-10B-A2B (UltraLabs) | 10B (según el nombre del modelo) | ~2B (según el nombre del modelo) | No disponible | No disponible en la información proporcionada | GGUF | Alternativa más pequeña del mismo autor; sin datos de rendimiento publicados aquí |
-
-No se dispone de datos de benchmarks ni de especificaciones completas de otras familias comparables en la información proporcionada, por lo que no se incluyen más alternativas.
+| GRAFT-50B-A3B | ~50,7B | ~3,2B | 32K recomendado, hasta 128K | Apache 2.0 | GGUF Q4_K_M | MMLU 77,4%, GSM8K 97,2%, HumanEval 84,1% |
+| Qwen3-Next-80B-A3B-Instruct (base) | ~80B | ~3B | No disponible en la información | No disponible en la información | No disponible en la información | MMLU 85,6% en el subconjunto de 285 preguntas del autor |
+| Otras alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible | No se proporcionan datos de otros modelos comparables en la información disponible |
 
 ## Limitaciones y advertencias
 
-- Matemáticas y razonamiento difícil: según el autor, son las capacidades que más pierden respecto al modelo original de 80B; conviene verificar cálculos importantes.
-- Alucinación: el autor advierte que el modelo "habla con seguridad", por lo que hay que comprobar hechos relevantes y ejecutar y probar el código generado.
-- Idioma: ajustado en inglés; el rendimiento en castellano u otros idiomas es menos pulido y no está evaluado en la información disponible.
-- Contexto: los ejemplos y pruebas publicadas llegan a 32K; no se especifica la ventana máxima nativa ni el comportamiento más allá de esa longitud.
-- Licencia: Apache 2.0 permite uso comercial, pero se heredan las condiciones del modelo base Qwen3-Next-80B-A3B-Instruct (también Apache 2.0 según la model card); conviene revisar la ficha original.
-- Madurez: el repositorio no tiene descargas ni valoraciones y los benchmarks están pendientes de publicación, por lo que no existe evidencia independiente de calidad.
-- Dependencia de herramienta: requiere una versión reciente de llama.cpp con soporte de Qwen3-Next; otras herramientas de inferencia pueden no cargar la arquitectura.
-- Formato único: solo se distribuye Q4_K_M, sin variantes de menor o mayor precisión para escenarios con restricciones de memoria o requisitos de calidad superiores.
-- Sesgos: no se documenta en la información disponible ninguna evaluación de sesgos.
+- Ciencia y matemáticas de nivel universitario son sus áreas de conocimiento más débiles (aproximadamente 50-58% en esas materias de MMLU); conviene verificar cálculos importantes.
+- En razonamiento muy difícil puede entrar en bucles de pensamiento y agotar los tokens antes de responder (47 de 159 preguntas de GPQA alcanzaron el límite de 8K tokens); se recomienda darle un presupuesto de tokens amplio para problemas complejos.
+- Tiende a responder con seguridad; hay que verificar hechos relevantes y ejecutar y probar el código generado.
+- Está ajustado en inglés; otros idiomas funcionan pero con menor pulido, lo que limita su uso en producción multilingüe sin evaluación adicional.
+- No se documentan sesgos específicos conocidos en la información disponible.
+- Licencia Apache 2.0, que permite uso comercial, pero al derivar de Qwen3-Next conviene revisar las condiciones del modelo base.
+- Requiere una versión reciente de llama.cpp con soporte de Qwen3-Next; versiones antiguas no cargarán el modelo.
+- El rendimiento en GPU no está cuantificado por el autor; solo se dispone de la cifra de CPU (8,8 tokens/s en 24 núcleos).
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/SmallAICreator/GRAFT-50B-A3B-GGUF
-- Modelo base Qwen3-Next-80B-A3B-Instruct: https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct
-- GRAFT-10B-A2B (mismo autor): https://huggingface.co/SmallAICreator/GRAFT-10B-A2B-GGUF
-- GRAFT-1B (mismo autor): https://huggingface.co/SmallAICreator/GRAFT-1B
-- Aplicación Android L-AI para ejecutar GGUF en local: https://huggingface.co/SmallAICreator/L-AI-Android
-- Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp
-
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de Hugging Face.
+- Hugging Face: https://huggingface.co/SmallAICreator/GRAFT-50B-A3B-GGUF
+- Modelo base: https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct
+- Perfil del autor: https://huggingface.co/SmallAICreator

@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "GotoAI-Inc/ruri-v3-310m-mirror",
+  "slug": "gotoai-inc-ruri-v3-310m-mirror",
+  "author": "GotoAI-Inc",
+  "url": "https://huggingface.co/GotoAI-Inc/ruri-v3-310m-mirror",
+  "created_at": "2026-11-20T03:23:49.000Z",
+  "updated_at": "2026-11-20T03:24:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "sentence-similarity",
+    "feature-extraction",
+    "mirror",
+    "ja",
+    "dataset:cl-nagoya/ruri-v3-dataset-ft",
+    "arxiv:2409.07737",
+    "base_model:cl-nagoya/ruri-v3-310m",
+    "base_model:finetune:cl-nagoya/ruri-v3-310m",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 314611968,
+  "parameters_human": "314.6M",
+  "storage_bytes": 1260294639,
+  "storage_human": "1.3 GB",
+  "context_length": null,
+  "base_model": "cl-nagoya/ruri-v3-310m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

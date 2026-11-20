@@ -39,7 +39,7 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 1826,
+  "downloads_30d": 1679,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
@@ -59,31 +59,5 @@
   "renamed_to": "IsValorum/Huihui-Qwen3.8-27B-Abliterated-VAL-APEX-I-MiniPlus-V3-GGUF",
   "renamed_at": "2026-11-11T02:58:18.313Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ChatGPT: Chat, Work, Create & Code with AI",
-      "url": "https://chatgpt.com/",
-      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or …"
-    },
-    {
-      "title": "ChatGPT",
-      "url": "https://chatgpt.com/features",
-      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or …"
-    },
-    {
-      "title": "Introducing ChatGPT - OpenAI",
-      "url": "https://openai.com/index/chatgpt/",
-      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
-    },
-    {
-      "title": "Nouveau : ChatGPT - OpenAI",
-      "url": "https://openai.com/fr-FR/index/chatgpt/",
-      "snippet": "Nov 30, 2022 · Nous avons entraîné un modèle capable d’interagir de manière conversationnelle. Son nom ? ChatGPT. Cette …"
-    },
-    {
-      "title": "ChatGPT - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/ChatGPT",
-      "snippet": "ChatGPT accelerated the AI boom, an ongoing period marked by rapid investment and public attention toward the field of artificial …"
-    }
-  ]
+  "sources": []
 }

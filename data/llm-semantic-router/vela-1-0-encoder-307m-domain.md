@@ -2,107 +2,107 @@
 
 ## Resumen
 
-Vela-1.0-Encoder-307M-Domain es un modelo encoder de clasificación de texto publicado por la organización llm-semantic-router dentro de la familia Vela 1.0, un conjunto de modelos especializados pensados para actuar como componentes de enrutamiento semántico. Su función concreta es identificar el dominio temático de una petición (14 dominios que abarcan, entre otros, ciencia, ingeniería, salud, derecho y negocio) para que un router de LLM pueda dirigirla al modelo, la herramienta o la política más adecuada. Se distribuye con licencia Apache-2.0 y arquitectura ModernBERT, con 307.541.006 parámetros y una ventana de contexto de 32.000 tokens.
+Vela-1.0-Encoder-307M-Domain es un modelo encoder de clasificación de texto desarrollado por el proyecto llm-semantic-router (vLLM Semantic Router), un ecosistema orientado al enrutamiento semántico de peticiones hacia modelos y herramientas. El modelo identifica el dominio temático de una consulta entre 14 categorías, con el objetivo de servir como componente de decisión en pipelines que necesitan dirigir cada petición al modelo o herramienta más adecuada. Es un fine-tune del modelo base vllm-sr/Vela-1.0-Encoder-307M.
 
-El modelo deriva del checkpoint base mmbert-32k-yarn y de un LoRA clasificador de intenciones (mmbert32k-intent-classifier-lora), y está optimizado para clasificación multilingüe en seis idiomas: inglés, chino, español, francés, alemán y japonés. Su relevancia actual radica en que cubre un hueco habitual en arquitecturas de enrutamiento: la clasificación temática previa a la selección de modelo, con soporte de entradas largas y sin depender de un LLM generativo para esa tarea, lo que reduce coste y latencia.
+Técnicamente se trata de un encoder de arquitectura ModernBERT con 307.541.006 parámetros totales y una capacidad de entrada de 32.768 tokens, incluyendo tokens especiales. Su relevancia actual radica en que resuelve el problema del enrutamiento con contexto largo: según la evaluación del autor, el modelo original mmBERT32K Domain degradaba su Macro F1 de forma drástica al aumentar la longitud de entrada (de 66,33 en peticiones cortas a 1,79 en contextos de 8K a 32K), mientras que Vela mantiene valores entre 71 y 81 en esos mismos escenarios.
 
-Según la model card, el modelo alcanza un F1 macro de dominio de 0,739 sobre 2.573 preguntas de Global-MMLU, frente a 0,647 del modelo anterior de la misma función, evaluado en los seis idiomas soportados. El autor advierte explícitamente de que la predicción debe usarse como señal de enrutamiento y no como juicio sobre la calidad de una respuesta.
+El modelo está publicado con licencia Apache 2.0, soporta seis idiomas (inglés, chino, español, francés, alemán y japonés) y se distribuye en formatos safetensors y ONNX, lo que facilita su despliegue tanto en entornos PyTorch como en inferencia optimizada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder tipo ModernBERT (etiqueta `modernbert`), derivado del modelo base `mmbert-32k-yarn` |
+| Arquitectura | ModernBERT (encoder transformer) |
 | Parametros totales | 307.541.006 |
-| Longitud de contexto | 32.000 tokens (32K) |
-| Tipos de cuantizacion | no disponible (el repositorio publica pesos en safetensors y ONNX; no se detallan esquemas de cuantizacion) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 32.768 tokens (incluyendo tokens especiales) |
+| Tipos de cuantizacion | no disponible |
 | Idiomas soportados | en, zh, es, fr, de, ja |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors y ONNX |
-| Tarea | Clasificacion de texto (`text-classification`), 14 dominios tematicos |
-| Modelo base | `llm-semantic-router/mmbert-32k-yarn` y `llm-semantic-router/mmbert32k-intent-classifier-lora` |
-| Tamano del repositorio | 2,5 GB |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors, ONNX |
+| Tarea | text-classification (14 dominios) |
+| Modelo base | vllm-sr/Vela-1.0-Encoder-307M (fine-tune) |
+| Tamano del repositorio | 5,0 GB |
 | Libreria | transformers |
-| Compatibilidad de despliegue | `text-embeddings-inference`, `endpoints_compatible`, ONNX |
+| Compatibilidad | text-embeddings-inference, endpoints_compatible |
 
 ## Arquitectura y entrenamiento
 
-Se trata de un encoder (no de un modelo generativo) basado en la arquitectura ModernBERT, según la etiqueta declarada por el autor, y construido sobre el checkpoint `mmbert-32k-yarn`. El sufijo del nombre del modelo base (`32k-yarn`) apunta a una extensión de contexto mediante YaRN sobre el escalado posicional de RoPE, una técnica habitual para ampliar la ventana efectiva de atención; la model card no detalla la configuración concreta de esa extensión, los datos de entrenamiento ni el número de tokens utilizados.
+El modelo es un encoder basado en ModernBERT, la arquitectura de encoder transformer modernizada que incorpora attention lineal, RoPE y mejoras de eficiencia frente a BERT clásico, adaptada aquí para clasificación de texto con capacidad de contexto de 32.768 tokens. Se trata de un fine-tune del checkpoint vllm-sr/Vela-1.0-Encoder-307M, especializado en la tarea de identificación de dominio en 14 categorías para el enrutador semántico de vLLM.
 
-El modelo se ha obtenido por ajuste desde dos artefactos: el encoder base `mmbert-32k-yarn` y un adaptador LoRA de clasificación de intenciones (`mmbert32k-intent-classifier-lora`). La model card no especifica la composición del dataset de ajuste, si hubo fases de RLHF o DPO (poco habituales en modelos discriminativos de este tipo), ni hiperparámetros de entrenamiento. La única innovación documentada explícitamente es la evaluación comparativa frente al modelo anterior de la misma función sobre un conjunto de 2.573 preguntas de Global-MMLU, con una mejora de F1 macro de 0,647 a 0,739 en seis idiomas.
+La información disponible no detalla el volumen de tokens de entrenamiento, la composición exacta del dataset, ni si se emplearon técnicas de RLHF o DPO. La model card indica que los conjuntos de evaluación presentados (1.988 peticiones cortas y 28 ejemplos extendidos a cada longitud de contexto) fueron utilizados para la selección del checkpoint, por lo que no constituyen un conjunto de test independiente. El entrenamiento se orientó específicamente a mantener la precisión de clasificación en entradas de hasta 32K tokens, un escenario en el que el modelo de referencia mmBERT32K perdía prácticamente toda su capacidad discriminativa.
 
 ## Capacidades
 
-- Clasificacion tematica de peticiones en 14 dominios, desde ciencia e ingenieria hasta salud, derecho y negocio.
-- Clasificacion multilingue con un unico modelo para ingles, chino, espanol, frances, aleman y japones.
-- Procesamiento de entradas largas de hasta 32.000 tokens, adecuado para documentos o conversaciones extensas.
-- Salida de clasificacion utilizable como senal de enrutamiento hacia modelos, herramientas o politicas.
-- Exportacion a ONNX y compatibilidad con endpoints de inferencia (`endpoints_compatible`, `text-embeddings-inference`).
-- Integracion prevista con el proyecto vLLM Semantic Router.
-- No dispone de generacion de texto, razonamiento multi-paso, tool calling ni capacidades de vision o audio: es exclusivamente un clasificador.
-- No se documentan modos especiales (thinking mode, decodificacion especulativa) ni funciones de agente.
+- Clasificación de texto en 14 dominios temáticos para enrutamiento semántico de peticiones.
+- Procesamiento de entradas de hasta 32.768 tokens, lo que permite clasificar consultas con contexto largo (documentos, conversaciones multi-turno, prompts extensos).
+- Capacidad multilingüe en inglés, chino, español, francés, alemán y japonés para peticiones cortas.
+- Salida de etiquetas de clasificación con puntuaciones, integrable en lógica de decisión de un router.
+- Compatible con pipelines de transformers (`pipeline("text-classification")`).
+- Soporte de despliegue vía text-embeddings-inference y endpoints compatibles.
+- No dispone de generación de texto, tool calling, capacidades de agente ni razonamiento multi-paso: es exclusivamente un clasificador.
 
 ## Casos de uso
 
-- Enrutamiento semantico en produccion: el clasificador recibe la peticion del usuario y devuelve el dominio, que el router usa para seleccionar el modelo especializado o la politica correspondiente, reduciendo el coste frente a enviar todo el trafico al LLM mas grande.
-- Triaje de tickets de soporte: clasificar cada incidencia por area (derecho, salud, ingenieria, negocio) antes de asignarla a un equipo o a un flujo automatizado concreto.
-- Seleccion de colecciones en pipelines RAG: determinar el dominio de la consulta para restringir la busqueda vectorial a los indices relevantes y mejorar la precision del recuperado.
-- Enrutamiento multilingue: atender consultas en espanol, aleman, frances, japones o chino con el mismo modelo, sin mantener clasificadores separados por idioma.
-- Filtrado de consultas largas: clasificar documentos completos o hilos de conversacion de hasta 32.000 tokens, algo inviable con clasificadores de ventana corta.
-- Etiquetado de corpus a gran escala: preanotar dominios en datasets de entrenamiento o evaluacion, con revision humana posterior, aprovechando el coste bajo de un encoder de 307 M de parametros.
-- Analisis de feedback de usuario: agrupar comentarios y reclamaciones por dominio tematico para alimentar paneles de producto o priorizacion de incidencias.
-- Enrutamiento de herramientas en agentes: usar el dominio predicho como criterio previo para decidir que conjunto de herramientas o APIs se expone al agente.
+- Enrutamiento de peticiones en un gateway LLM: el modelo clasifica cada consulta entrante en uno de los 14 dominios y el router selecciona el modelo especializado o la herramienta adecuada para ese dominio, reduciendo coste y latencia frente a enviar todo al modelo más grande.
+- Clasificación de consultas con contexto largo: gracias a sus 32.768 tokens de entrada, puede clasificar peticiones que incluyen documentos adjuntos, historiales de conversación o prompts extensos sin truncar, escenario donde el modelo de referencia fallaba.
+- Moderación y triaje previo: identificar el dominio de una solicitud antes de aplicar políticas específicas (por ejemplo, restricciones distintas para consultas financieras, médicas o legales).
+- Atención al cliente multilingüe: clasificar tickets y mensajes en inglés, chino, español, francés, alemán o japonés para dirigirlos al equipo o flujo automatizado correspondiente.
+- Enrutamiento de herramientas en agentes: usar la etiqueta de dominio como señal para decidir qué conjunto de funciones o APIs exponer al agente en cada turno.
+- Filtrado y organización de corpus: etiquetar grandes volúmenes de documentos o consultas por dominio como paso previo a indexación, búsqueda o análisis.
+- Despliegue en producción con ONNX: exportar el modelo a ONNX para inferencia de baja latencia en CPU o GPU dentro de servicios de clasificación de alto throughput.
 
 ## Benchmarks y rendimiento
 
-| Evaluacion | Modelo anterior | Vela 1.0 Domain |
-|---|---:|---:|
-| F1 macro de dominio sobre 2.573 preguntas de Global-MMLU | 0,647 | 0,739 |
+Macro F1 (×100) sobre los conjuntos de desarrollo del autor, comparado con el modelo original mmBERT32K Domain. Mayor es mejor. Según la model card, estos conjuntos informaron la selección del checkpoint y no son un test independiente.
 
-La evaluacion se realizo en los seis idiomas soportados. La model card no publica desglose por idioma ni por dominio, ni resultados en otros benchmarks distintos de Global-MMLU, por lo que no hay datos disponibles de MMLU completo, HumanEval, GSM8K ni similares (tampoco serian aplicables a un clasificador de dominio).
+| Evaluacion | Original mmBERT | Vela |
+|---|---:|---:|
+| Peticiones cortas · 1.988 | 66,33 | 85,15 |
+| Contexto controlado 4K · 28 | 7,14 | 71,19 |
+| Contexto controlado 8K · 28 | 1,79 | 81,19 |
+| Contexto controlado 16K · 28 | 1,79 | 81,19 |
+| Contexto controlado 32K · 28 | 1,79 | 77,86 |
+
+Las peticiones cortas cubren inglés, chino, español, francés, alemán y japonés. La evaluación de contexto largo usa 28 ejemplos en inglés y chino extendidos a cada longitud. Ambos modelos procesan la entrada completa en FP32. No se han publicado resultados de benchmarks estándar (MMLU, GLUE, etc.) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada en FP32: aproximadamente 1,23 GB de pesos, mas activaciones y overhead del runtime.
-- VRAM estimada en FP16/BF16: aproximadamente 615 MB de pesos.
-- VRAM estimada en INT8: aproximadamente 308 MB; en INT4, aproximadamente 154 MB (estimaciones teoricas a partir del numero de parametros; el repositorio no publica cuantizaciones especificas).
-- El repositorio completo ocupa 2,5 GB, ya que incluye exportaciones en safetensors y ONNX.
-- Cabe sin problema en GPU de consumo: RTX 3060, RTX 4060, RTX 4090 y cualquier tarjeta con 4 GB o mas de VRAM; tambien es viable la inferencia en CPU para cargas moderadas.
-- GPU de centro de datos (A100, H100, L40S) solo justificadas si se necesita throughput muy alto o por reutilizacion de infraestructura existente.
-- Opciones de despliegue: pipeline de `transformers`, ONNX Runtime, `text-embeddings-inference` (segun las etiquetas del repositorio) e integracion como componente del router en el proyecto vLLM Semantic Router.
-- Latencia y throughput estimados: no disponible (no se publican mediciones).
+- VRAM estimada para inferencia en FP32: aproximadamente 1,2 GB solo para pesos (307M parámetros × 4 bytes), más memoria de activaciones que crece con la longitud de contexto hasta 32K tokens.
+- En FP16/BF16: aproximadamente 0,6 GB para pesos; en cuantización de 8 bits, unos 0,3 GB.
+- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM puede ejecutar el modelo con contexto largo; A100, H100, L40S o RTX 4090 ofrecen margen amplio y buen throughput en batch.
+- Cabe en GPU de consumo: sí, en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090 y similares; también en CPU para cargas moderadas.
+- Opciones de despliegue: transformers (PyTorch), ONNX Runtime (pesos ONNX incluidos), text-embeddings-inference y endpoints compatibles.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | F1 macro de dominio | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Vela-1.0-Encoder-307M-Domain | 307,5 M | 32K | 0,739 | Apache-2.0 | Publico en Hugging Face |
-| Modelo anterior de dominio (sin identificar en la model card) | no disponible | no disponible | 0,647 | no disponible | no disponible |
-| `llm-semantic-router/mmbert-32k-yarn` (modelo base) | no disponible | no disponible | no disponible | no disponible | Publico en Hugging Face |
-| Encoders de clasificacion multilingue de terceros | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Contexto | Macro F1 (corto) | Macro F1 (32K) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Vela-1.0-Encoder-307M-Domain | 307M | 32.768 | 85,15 | 77,86 | Apache 2.0 | Hugging Face (safetensors, ONNX) |
+| mmBERT32K Domain (original) | no disponible | 32K (según nombre) | 66,33 | 1,79 | no disponible | Hugging Face |
+| Encoders de clasificación tipo BERT base | ~110M | 512 típicamente | no disponible | no aplica (sin contexto largo) | variable | Hugging Face |
 
-La model card solo ofrece comparacion frente al modelo anterior de la misma funcion, sin nombrarlo ni detallar sus especificaciones. No se dispone de datos suficientes para comparar con alternativas externas como clasificadores de dominio basados en XLM-R o mDeBERTa.
+La comparativa directa solo es posible con el modelo de referencia mmBERT32K Domain, ya que la información proporcionada no incluye resultados de otros clasificadores de dominio. La diferencia principal es la robustez en contexto largo: Vela mantiene F1 superior a 71 en todas las longitudes evaluadas, mientras el original cae a 1,79 a partir de 8K tokens.
 
 ## Limitaciones y advertencias
 
-- El propio autor indica que la prediccion debe emplearse como senal de enrutamiento y no como un juicio sobre la calidad de una respuesta.
-- La precision puede variar en funcion del idioma y de la longitud del contexto; la model card no desglosa el rendimiento por idioma ni por dominio.
-- La taxonomia esta cerrada a 14 dominios; las peticiones que no encajen en esa taxonomia se forzaran a una de las clases existentes.
-- Solo se declaran seis idiomas (en, zh, es, fr, de, ja); el rendimiento en otros idiomas no esta documentado y previsiblemente sera bajo.
-- Modelo recien publicado: 0 descargas y 0 likes en el momento de la consulta, sin validacion externa ni evaluaciones independientes conocidas.
-- No se documentan sesgos especificos, pero al ser un clasificador tematico puede heredar sesgos de los datos de ajuste, cuya composicion no se detalla.
-- Riesgo de clasificacion erronea en consultas ambiguas, muy cortas o con terminologia mixta de varios dominios.
-- Al no ser un modelo generativo, no alucina texto, pero una clase incorrecta puede propagar errores aguas abajo en el router.
-- Licencia Apache-2.0: permite uso comercial, modificacion y redistribucion, con la obligacion habitual de conservar el aviso de licencia y el archivo NOTICE si aplica.
-- Para produccion conviene fijar la revision del checkpoint, monitorizar la distribucion de clases predichas y establecer un umbral de confianza con fallback.
+- Los conjuntos de evaluación presentados son de desarrollo y sirvieron para seleccionar el checkpoint; no son un test independiente, por lo que las cifras pueden estar sobreestimadas.
+- La evaluación de contexto largo se basa en solo 28 ejemplos en inglés y chino, una muestra muy reducida que limita la fiabilidad estadística de esos resultados.
+- La cobertura multilingüe en contexto largo no está evaluada: las pruebas largas solo usan inglés y chino, aunque el modelo declara soporte para español, francés, alemán y japonés en peticiones cortas.
+- Es un clasificador de 14 dominios, no un modelo generativo: no puede responder preguntas ni ejecutar herramientas por sí mismo.
+- Riesgo de error en fronteras entre dominios y en consultas ambiguas o de temática mixta; conviene calibrar umbrales de confianza en producción.
+- No se documentan sesgos específicos del dataset de entrenamiento ni la composición de este, lo que dificulta auditar comportamientos discriminatorios por dominio o idioma.
+- Aunque la licencia es Apache 2.0 y permite uso comercial, debe verificarse la licencia del modelo base vllm-sr/Vela-1.0-Encoder-307M y de los datos de entrenamiento originales.
+- El repositorio ocupa 5,0 GB, tamaño considerable para un modelo de 307M, probablemente por incluir múltiples formatos de pesos; conviene descargar solo los ficheros necesarios.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Domain
-- Documentacion tecnica y evaluacion (TECHNICAL.md): https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Domain/blob/main/TECHNICAL.md
-- Coleccion de la familia Vela 1.0: https://huggingface.co/collections/llm-semantic-router/vela-10-router-models-6aa555ba70cc6997d6d67798
-- Proyecto vLLM Semantic Router: https://github.com/vllm-project/semantic-router
-- Modelo base mmbert-32k-yarn: https://huggingface.co/llm-semantic-router/mmbert-32k-yarn
-- Modelo base mmbert32k-intent-classifier-lora: https://huggingface.co/llm-semantic-router/mmbert32k-intent-classifier-lora
-- Modelos hermanos citados en la model card: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Modality, https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-PII, https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-FactCheck, https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M
-- La busqueda web realizada no devolvio enlaces relevantes sobre este modelo; los resultados obtenidos eran paginas genericas sobre modelos de lenguaje sin relacion con Vela 1.0.
+- Modelo base: https://huggingface.co/vllm-sr/Vela-1.0-Encoder-307M
+- Colección de modelos Vela: https://huggingface.co/collections/vllm-sr/vela-10-router-models-6aa555ba70cc6997d6d67798
+- Modelo de referencia mmBERT32K Domain: https://huggingface.co/vllm-sr/mmbert32k-intent-classifier-merged
+- Documentación: https://vllm-sr.ai/
+- Blog: https://vllm-sr.ai/blog/
+- Repositorio GitHub: https://github.com/vllm-project/semantic-router
+- Slack: https://vllm-dev.slack.com/archives/C09CTGF8KCN

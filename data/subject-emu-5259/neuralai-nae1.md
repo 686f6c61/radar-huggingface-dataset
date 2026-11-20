@@ -2,110 +2,104 @@
 
 ## Resumen
 
-NeuralAI Nae1 es un modelo de lenguaje causal de tipo decoder, desarrollado por De'Andrew Preston Harris (usuario de Hugging Face Subject-Emu-5259) dentro del proyecto NeuralAI, cuya propuesta es un motor generativo local y privado que se ejecuta en el hardware del propio usuario. Se trata de un modelo pequeno entrenado desde inicializacion aleatoria (from-scratch) sobre 768 millones de tokens de FineWeb, sin destilacion ni ajuste sobre una base ajena, y publicado bajo licencia Apache 2.0.
+NeuralAI Nae1 es un modelo de lenguaje de tipo decoder causal con arquitectura estilo Llama y 100.112.256 parámetros, entrenado desde cero por el desarrollador independiente Subject-Emu-5259 (De'Andrew Preston Harris, según la model card). Se distribuye bajo licencia Apache 2.0 y está diseñado como un asistente conversacional de tamaño reducido, orientado a despliegue local y a entornos con recursos limitados. El modelo se ha preentrenado sobre FineWeb y posteriormente se ha sometido a un ajuste supervisado (SFT) mediante LoRA para dotarlo de capacidades de conversación y uso de herramientas.
 
-La arquitectura sigue el patron de Llama: 12 capas, 768 dimensiones ocultas, 12 cabezas de atencion y 4 cabezas KV (GQA), con RoPE y SwiGLU. La model card declara 100.111.872 parametros, mientras que los metadatos safetensors del repositorio reflejan 76.190.976; la discrepancia no se explica en la documentacion disponible. El contexto entrenado es de 2.048 tokens y la evaluacion se realizo con n_ctx=512.
+La versión actual del checkpoint corresponde a la SFT v17 (LoRA step-9250), construida sobre la SFT v13.2 y publicada en producción desde el 11 de noviembre de 2026. El modelo incluye soporte declarado para tool calling con las herramientas `search`, `fetch` y `read_file`, además de conversación multi-turno y chat general. Su enfoque es explícitamente "from scratch": no es una destilación ni un fine-tune de un modelo base de terceros, lo que lo hace relevante para quienes buscan un modelo pequeño, completamente abierto y con pesos propios para experimentación o despliegue en local.
 
-Su relevancia es acotada y de caracter documental: es un ejercicio reproducible de preentrenamiento completo y de conversion a GGUF en hardware de gama baja (una T4 de Kaggle, 8.000 pasos), no un asistente utilizable. La perplexity retenida declarada es 165,92 y la propia model card advierte de que la salida esperada es "exploratoria, a menudo incoherente". El vocabulario de 439 tokens es el rasgo mas atipico del artefacto.
+El modelo está etiquetado como "tiny-model" por su tamaño (100M de parámetros) y solo declara soporte para inglés. Se distribuye en formatos safetensors (bf16) y GGUF, lo que facilita su uso con llama.cpp y herramientas compatibles con endpoints.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder estilo Llama: RoPE, GQA, SwiGLU, 12 capas, 768 hidden, 12 cabezas, 4 cabezas KV |
-| Parametros totales | 100.111.872 segun la model card; 76.190.976 segun los metadatos safetensors del repositorio (discrepancia no documentada) |
-| Parametros activos | no aplica (modelo denso, no es MoE) |
-| Longitud de contexto | 2.048 tokens entrenado; evaluado con n_ctx=512 |
-| Tipos de cuantizacion | GGUF f32 (305 MB) y GGUF Q4_K_M (45 MB, 4,80 BPW) |
-| Idiomas soportados | en (ingles) |
+| Arquitectura | Transformer decoder causal estilo Llama |
+| Parametros totales | 100.112.256 |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | GGUF (el repo incluye formato GGUF; niveles concretos no disponibles) |
+| Idiomas soportados | Inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (f32 y Q4_K_M); se incluyen config.json y tokenizer nativo (vocabulario de 439 tokens, ByteLevel BPE) |
-| Tamano del repositorio | 0,4 GB |
+| Formato de pesos | safetensors (bf16) y GGUF |
 
 ## Arquitectura y entrenamiento
 
-Nae1 es un decoder causal denso con normalizacion LayerNorm con sesgo en la implementacion nativa. La atencion usa consultas agrupadas (4 cabezas KV para 12 cabezas de consulta), RoPE para la codificacion posicional y SwiGLU como activacion en el bloque feed-forward, siguiendo la receta de Llama a escala reducida. La model card documenta explicitamente una advertencia de paridad de logits: llama.cpp aplica RMSNorm sin sesgo, mientras que el modelo nativo usa LayerNorm con sesgo, de modo que la conversion omite los tensores de sesgo. La integridad tensorial se verifico con 109/109 tensores coincidentes y una diferencia maxima de 0,00e+00, pero la deriva de logits es una consecuencia del runtime, no un error de conversion.
+El modelo es un decoder causal de arquitectura transformer estilo Llama con 100,1 millones de parámetros. Según la model card, fue preentrenado desde cero ("from scratch") sobre el corpus FineWeb, sin destilación ni fine-tune de un modelo base ajeno. El preentrenamiento se realizó hasta el step-100000, que sirve de base para la línea de checkpoints SFT. No se especifica en la información disponible el número total de tokens de preentrenamiento, la composición detallada del dataset ni si se aplicaron técnicas como RLHF o DPO.
 
-El preentrenamiento se realizo desde inicializacion aleatoria en dos etapas: pasos 0 a 4.000 y reanudacion de 4.000 a 8.000 con decaimiento coseno completo hasta un learning rate de 1,2e-11. El corpus son 768 millones de tokens de FineWeb (CC-MAIN-2013-20), 400.000 documentos y 8 shards, troceados en ventanas de 513 tokens servidas como vistas de copia cero para no exceder la RAM. El hardware fue una unica GPU T4 de Kaggle, con checkpoints cada 250 pasos. La perdida final reportada es 24,90, con un minimo de 22,88 en el paso 7.050, partiendo de aproximadamente 25,9 al inicio de la segunda etapa. No se documento ninguna fase de ajuste por instrucciones, RLHF o DPO. Cabe senalar una inconsistencia en la documentacion: el informe de evaluacion cita un NLL medio de 5,1115 nats/token, muy alejado de la perdida de entrenamiento declarada (22,88-24,90) y por debajo del valor de referencia de un modelo uniforme sobre 439 tokens (ln(439) ≈ 6,08 nats/token); la model card no explica el criterio de calculo de la cifra de entrenamiento.
+La fase de ajuste supervisado se realizó mediante LoRA de rango 32 aplicado a las capas de atención y MLP, con los pesos base congelados y los adaptadores fusionados posteriormente en un checkpoint estándar. La SFT v17 empleó 36.000 filas de datos: 13.000 trazas "spine" (una época), 10.000 trazas dirigidas (dos épocas) y 1.500 diálogos multi-turno naturales (dos épocas), con un 10% de tokens supervisados provenientes de replay de FineWeb. El entrenamiento se ejecutó en una GPU Kaggle T4 con un LR pico de 1e-4, schedule coseno y 9.250 pasos, alcanzando una pérdida final de SFT de 1,3177. Las respuestas verificables se validaron de forma automática. No se mencionan innovaciones como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generacion de texto base en ingles mediante completado autoregresivo; no existe plantilla de chat ni modo conversacional.
-- Ningun ajuste por instrucciones: no responde a ordenes, no sigue formatos y no mantiene rol de asistente.
-- No hay soporte documentado de tool calling ni de function calling.
-- No hay soporte documentado de agentes, planificacion multi-paso ni razonamiento encadenado explicito.
-- Idiomas: unicamente ingles declarado; el vocabulario de 439 tokens hace que cualquier texto fuera de dominio se tokenice de forma extremadamente ineficiente.
-- Capacidades matematicas, de codigo, vision o audio: no disponibles.
-- Capacidad especial destacable: ninguna declarada; se comercializa como modelo de investigacion con protocolo de evaluacion reproducible y verificacion de integridad tensorial en la conversion a GGUF.
+- Generación de texto conversacional en inglés, incluyendo saludos, identidad y small talk.
+- Conversación multi-turno con memoria de contexto a corto plazo (según los evals, multiturn12 12/12 y memory12 8/12).
+- Tool calling / function calling con las herramientas `search`, `fetch` y `read_file`.
+- Recuperación de información y extracción de contenido de páginas o ficheros mediante las herramientas integradas.
+- Respuestas con "segundo pensamiento" (second thought) y mecanismos de awareness y guardrail, según la línea de evaluación de cinco áreas.
+- Manejo de preguntas sobre fechas con una capa determinista de fechas en producción (el modelo por sí solo tiene una regresión conocida en el cambio de mes).
+- No se declaran capacidades de visión, audio, matemáticas avanzadas ni razonamiento multi-paso complejo más allá del uso de herramientas.
 
 ## Casos de uso
 
-- Reproduccion de recetas de preentrenamiento from-scratch: el modelo documenta la canalizacion completa (FineWeb parquet, ventanas de 513 tokens, 8.000 pasos, checkpoints cada 250 pasos) y permite replicar o auditar el procedimiento en una unica GPU de 16 GB.
-- Pruebas de integracion en CI de runtimes de inferencia: con 45 MB en Q4_K_M, el artefacto se descarga y arranca en segundos, lo que lo hace util para validar versiones de llama.cpp, llama-cpp-python o el parser de GGUF sin coste de ancho de banda ni de GPU.
-- Investigacion sobre tokenizadores de vocabulario minimo: el vocabulario de 439 tokens es un caso extremo que permite medir el impacto de la granularidad del vocabulario en la perplexity y en la tasa de compresion de tokens por palabra.
-- Validacion de canalizaciones de cuantizacion: la pareja f32 (305 MB) y Q4_K_M (4,80 BPW, 45 MB) permite medir la degradacion introducida por la cuantizacion con un protocolo de evaluacion publicado y un fichero de resultados JSON en el propio repositorio.
-- Docencia y divulgacion sobre escalado: sirve como demostracion empirica de que el preentrenamiento puro, sin ajuste por instrucciones, no produce un asistente, y de que 100 M de parametros sobre 768 M de tokens quedan lejos de la fluidez.
-- Inferencia en dispositivos sin GPU: el peso cuantizado cabe en memoria de una Raspberry Pi o de una iGPU y permite desplegar un servidor HTTP local con llama-server en 127.0.0.1:8080 para pruebas de latencia de red.
-- Pruebas de carga de servidores en local: util como carga sintetica minima para verificar contenedores, limites de memoria y enrutado antes de sustituir por un modelo de produccion.
-- Generacion de texto exploratoria con supervision humana en contextos artisticos o de prototipado rapido, asumiendo que la salida sera con frecuencia incoherente.
+- Asistente conversacional local: el modelo puede gestionar diálogos multi-turno básicos en inglés y ejecutarse en hardware de consumo gracias a sus 100M de parámetros y su disponibilidad en GGUF. Es adecuado para prototipos de asistentes personales sin conexión.
+- Agente de búsqueda y extracción web: con las herramientas `search` y `fetch`, puede integrarse en pipelines que consulten fuentes en línea y extraigan contenido, útil para tareas de investigación ligera o resumen de páginas.
+- Lectura de ficheros en flujos automatizados: la herramienta `read_file` permite incorporar el modelo en scripts que necesiten leer y responder sobre el contenido de ficheros locales, por ejemplo en asistentes de documentación interna.
+- Chatbot de atención al cliente de bajo coste: su tamaño reducido y licencia Apache 2.0 permiten desplegarlo en servidores modestos para gestionar consultas frecuentes y derivar las complejas a un modelo mayor.
+- Evaluación y experimentación en investigación: al ser un modelo entrenado desde cero y con pesos abiertos, sirve como base para estudiar el efecto de distintas recetas de SFT y LoRA en modelos pequeños.
+- Despliegue en el edge o en dispositivos con recursos limitados: la versión GGUF y los 100M de parámetros lo hacen viable en CPU y en GPUs de gama baja para aplicaciones de generación de texto en tiempo real.
+- Integración en pipelines de CI/CD para pruebas de herramientas: su soporte de tool calling permite usarlo como componente de test en sistemas que validen flujos de llamadas a funciones.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K y similares) en la informacion disponible. El unico dato de evaluacion es la perplexity retenida sobre una porcion de FineWeb de 992 documentos y 1.027.766 tokens, con n_ctx=512 y calculo token a token con alineacion exacta de filas.
+Los datos disponibles provienen de las evaluaciones internas del autor (gate de SFT v17), no de benchmarks estándar como MMLU, HumanEval o GSM8K.
 
-| Checkpoint (Q4_K_M) | Perplexity retenida |
-|---|---|
-| step-2000 | 192,97 |
-| step-4000 (ejecucion reanudada) | 188,89 |
-| step-4000 (desde cero) | 179,17 |
-| step-8000 (version publicada) | 165,92 |
+| Evaluación | SFT v17 | Referencia / nota |
+|---|---|---|
+| Golden-40 tool-use gate | 35,5/40 (88,8%) | Umbral 60%; llamadas 39/40, respuestas fundamentadas 32/40 |
+| Fluency guardrail (PPL) | 50,49 | Sobre 50 documentos; umbral ≤52; v13.2 obtuvo 48,01 en el mismo set |
+| Multiturn | 12/12 | — |
+| Casual | 7/7 | — |
+| Memory6 | 5/6 | — |
+| Second thought | 5/6 | v13.2: 0/6 |
+| Awareness | 7/8 | v13.2: 1/8 |
+| Guardrail | 6/6 | v13.2: 1/6 |
+| Memory12 | 8/12 | v13.2: 6/12 |
+| Livetools | 4/6 | v13.2: 4/6 en el arnés corregido |
+| Date8 | 7/8 | Regresión en el cambio de mes; v13.2: 8/8 |
 
-Datos complementarios del informe `eval_step8000_q4_n512.json`: NLL medio de 5,1115 nats/token. Sonda fija ("The quick brown fox", 10 tokens): 150,25.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: por debajo de 1 GB en Q4_K_M (fichero de 45 MB mas buffers de contexto); aproximadamente 305 MB de pesos en f32 mas overhead.
-- GPU recomendadas: ninguna en particular; el modelo cabe en cualquier GPU consumer, en iGPU y en CPU. No se han publicado mediciones especificas para A100, H100 o RTX 4090.
-- Cabe en GPU consumer: si, en cualquiera, incluida una GTX 1050 o una iGPU integrada; tambien es viable en CPU pura.
-- Opciones de despliegue: llama.cpp (`llama-server`) y llama-cpp-python son las rutas documentadas por el autor. No hay soporte documentado para vLLM, TGI, Ollama ni TensorRT-LLM.
-- Latencia y throughput estimados: no disponibles. No se han publicado cifras de tokens por segundo ni de latencia para ningun hardware.
-- Memoria de sistema: el propio autor documenta que la canalizacion de datos se diseno para no exceder la RAM disponible con 768 millones de tokens, pero no se especifica el minimo en inferencia.
+- VRAM estimada para inferencia: al tratarse de un modelo de 100M de parámetros, en bf16 requiere aproximadamente 0,2 GB para los pesos, más overhead de activaciones y KV cache; en cuantizaciones GGUF de 4 bits puede ocupar del orden de 60-80 MB.
+- GPU recomendadas: cualquier GPU moderna es suficiente; el autor entrenó con Kaggle T4. Funciona en RTX 4090, A100, H100 y GPUs de gama baja.
+- Cabe en GPU de consumo: sí, en cualquier GPU consumer con al menos 1-2 GB de VRAM, e incluso en CPU.
+- Opciones de despliegue: llama.cpp (formato GGUF incluido), endpoints compatibles, y el propio stack "Fabric" del autor; también puede servirse con frameworks estándar de Hugging Face.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-Los datos de los modelos alternativos proceden del conocimiento general del sector y no de la informacion proporcionada en esta busqueda, por lo que no han podido verificarse contra una fuente en esta ficha. No se dispone de resultados de benchmarks comparables.
-
-| Modelo | Parametros | Contexto | Licencia | Idiomas | Adecuacion como asistente |
+| Modelo | Parámetros | Contexto | Licencia | Idiomas | Notas |
 |---|---|---|---|---|---|
-| NeuralAI Nae1 | 100,1 M (model card) / 76,2 M (metadatos) | 2.048 entrenado, 512 evaluado | Apache 2.0 | en | no; solo completado base |
-| GPT-2 (124 M) | 124 M | 1.024 | licencia MIT modificada | en | no; solo completado base |
-| Pythia-70M | 70 M | 2.048 | Apache 2.0 | en | no; solo completado base |
-| SmolLM-135M | 135 M | 2.048 | Apache 2.0 | en, con datos multilingues parciales | parcial; existe version instruct |
+| NeuralAI Nae1 | 100,1M | No disponible | Apache 2.0 | Inglés | Entrenado desde cero, tool calling, GGUF |
+| TinyLlama 1.1B | 1,1B | 2.048 tokens | Apache 2.0 | Inglés | Modelo mayor, más contexto, ampliamente adoptado |
+| Qwen2.5-0.5B | 0,5B | 32.768 tokens | Apache 2.0 | Multilingüe | Mayor contexto y multilingüismo, tool calling |
+| SmolLM2-135M | 135M | 8.192 tokens | Apache 2.0 | Inglés | Tamaño comparable, contexto mayor, sin tool calling nativo declarado |
 
-Frente a estas alternativas, la diferencia principal de Nae1 no es el rendimiento, sino la trazabilidad del entrenamiento y de la evaluacion. Su vocabulario de 439 tokens, muy inferior a los aproximadamente 32.000-50.000 de GPT-2 o Pythia, supone una desventaja estructural en eficiencia de tokenizacion y, con toda probabilidad, en calidad final.
+Los datos de contexto de los modelos comparados provienen de conocimiento general; para Nae1 el contexto no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Escala insuficiente: 100 M de parametros sobre 768 M de tokens es un checkpoint de investigacion; la propia model card reconoce que el razonamiento largo, la generacion de codigo y el recuerdo factual estan limitados.
-- Vocabulario de 439 tokens: cualquier texto fuera del dominio de FineWeb se tokeniza de forma muy ineficiente, lo que degrada la calidad y multiplica el coste por token generado.
-- Sin ajuste por instrucciones y sin plantilla de chat: el modelo solo completa texto; no acepta ordenes ni formatos.
-- Riesgo de alucinacion muy elevado: con un NLL medio de 5,1115 nats/token y una perplexity de 165,92, la salida esperada es incoherente con frecuencia. La model card lo describe como texto "exploratorio, a menudo incoherente".
-- Inconsistencia documental: la perdida de entrenamiento declarada (22,88-24,90) no es coherente con el NLL de evaluacion (5,1115 nats/token); conviene tratar las cifras de convergencia con cautela.
-- Deriva de logits entre la implementacion nativa y llama.cpp por la diferencia LayerNorm con sesgo / RMSNorm sin sesgo; no es un error de conversion, pero impide la paridad numerica exacta.
-- Idioma: unicamente ingles declarado; no hay evaluacion en castellano ni en ningun otro idioma.
-- Contexto reducido: 2.048 tokens de entrenamiento y evaluacion a 512, insuficiente para tareas de contexto largo.
-- Sin acceso a internet ni capa de herramientas: cualquier necesidad de datos en vivo requiere un componente externo.
-- Licencia: Apache 2.0, sin restricciones conocidas para uso comercial, pero el estado del modelo hace inviable su uso en produccion con usuarios finales.
-- Adopcion practicamente nula: 0 descargas y 0 likes en el momento de la consulta, sin comunidad ni mantenimiento verificable.
+- Solo soporta inglés; no se declara capacidad multilingüe.
+- La longitud de contexto no está especificada, lo que dificulta planificar su uso en tareas de contexto largo.
+- Regresión conocida en el cambio de mes en preguntas de fecha (date8 7/8); en producción se mitiga con una capa determinista de fechas, pero el modelo por sí solo falla en ese caso.
+- Riesgo de alucinación inherente a un modelo de 100M de parámetros; las respuestas fundamentadas en el gate de herramientas son 32/40, lo que indica margen de error.
+- El modelo está entrenado con datos de FineWeb y SFT propio; no se documentan sesgos específicos, pero al ser un modelo pequeño y en inglés, es probable que herede sesgos del corpus.
+- Aunque la licencia es Apache 2.0 y permite uso comercial, el autor no ofrece garantías sobre el rendimiento en producción; los evals son internos y no están validados de forma independiente.
+- El modelo depende de herramientas externas (`search`, `fetch`, `read_file`) para muchas tareas; sin esas integraciones su utilidad se reduce al chat básico.
+- La model card está truncada en la información disponible, por lo que pueden existir detalles adicionales no recogidos aquí.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Subject-Emu-5259/NeuralAI-Nae1
-- Perfil de Hugging Face del autor: https://huggingface.co/Subject-Emu-5259
-- Perfil de GitHub del autor: https://github.com/Subject-Emu-5259
-- LinkedIn del autor: https://www.linkedin.com/in/deandrewharris94
-- Informe de evaluacion en el repositorio: `eval_step8000_q4_n512.json`
-- Configuracion de arquitectura en el repositorio: `config.json`
-- Tokenizer nativo en el repositorio: `tokenizer/` (vocabulario de 439 tokens, merges y manifiesto)
-
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre el modelo; los unicos resultados obtenidos fueron entradas de diccionario sobre la palabra inglesa "subject" y no guardan relacion con NeuralAI Nae1. No se han localizado papers, blogs tecnicos, repositorios de codigo ni demos adicionales asociados al modelo.
+- Hugging Face: https://huggingface.co/Subject-Emu-5259/NeuralAI-Nae1
+- Banner: https://huggingface.co/Subject-Emu-5259/NeuralAI-Nae1/resolve/main/neuralai-nae1-banner.png
+- Repositorio GitHub con informes de evaluación: mencionado en la model card como `gate_results/v17_full_gate_report.md` (URL exacta no disponible)
+- Informes de evaluación internos: `evals/eval_sftv17lora_step9250_golden40.json`, `evals/eval_sftv17lora_step9250_multiturn12.json`, `evals/eval_sftv17lora_step9250_date8.json`, `evals/eval_sftv17lora_step9250_smoke.json` (rutas relativas al repo, URL completa no disponible)

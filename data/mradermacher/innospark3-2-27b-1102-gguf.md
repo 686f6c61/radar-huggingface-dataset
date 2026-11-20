@@ -2,47 +2,50 @@
 
 ## Resumen
 
-InnoSpark3.2-27B-1102-GGUF es una conversión a formato GGUF del modelo InnoSpark3.2-27B-1102, publicado originalmente por sii-research (Shanghai Innovation Institute). El repositorio corre a cargo de mradermacher, un conocido generador de cuantizaciones estáticas para llama.cpp, y ofrece el modelo en múltiples niveles de compresión (desde Q2_K hasta F16) para facilitar su despliegue en hardware de consumo.
+InnoSpark3.2-27B-1102 es un modelo de lenguaje de 27.320.697.856 parámetros (aproximadamente 27,3 mil millones) desarrollado por sii-research, orientado específicamente a tareas de educación y tutoría. El modelo se distribuye bajo licencia Apache 2.0 y está construido sobre una base de tipo Qwen, según las etiquetas del repositorio, con un entrenamiento que incorpora aprendizaje por refuerzo (reinforcement learning) como técnica de ajuste. La versión aquí descrita es una cuantización GGUF estática publicada por mradermacher, que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles.
 
-El modelo base es un transformer denso de 27.320.697.856 parámetros (aproximadamente 27,3 mil millones), orientado a uso conversacional. La model card del repositorio de cuantización no aporta información sobre arquitectura interna, longitud de contexto, composición del dataset de entrenamiento ni proceso de alineación, por lo que estos datos figuran como no disponibles en esta ficha.
+El modelo resuelve el problema de disponer de un asistente conversacional especializado en contextos educativos con capacidad multilingüe limitada al chino y al inglés. Su relevancia actual radica en la combinación de un tamaño manejable (27B) con licencia permisiva, lo que facilita su despliegue en entornos de investigación y producción sin restricciones comerciales.
 
-Su relevancia práctica radica en la disponibilidad de cuantizaciones listas para usar con llama.cpp y herramientas compatibles, lo que permite ejecutar un modelo de 27B en GPUs de consumo con suficiente VRAM o incluso en configuraciones con offloading parcial a CPU. El repositorio ocupa 56,7 GB en total, lo que refleja el conjunto completo de variantes cuantizadas.
+La ficha se centra en la versión GGUF, que incluye cuantizaciones desde Q2_K hasta Q8_0 y ficheros mmproj para capacidades multimodales, lo que sugiere soporte de visión en el modelo base. No se dispone de información detallada sobre la longitud de contexto ni sobre la composición exacta del dataset de entrenamiento en la documentación proporcionada.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (detalles internos no disponibles) |
-| Parámetros totales | 27.320.697.856 (~27,3B) |
-| Parámetros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | No disponible |
-| Licencia | No disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas generadas desde safetensors del modelo original) |
+| Arquitectura | Transformer (basado en Qwen, según etiquetas del repositorio) |
+| Parametros totales | 27.320.697.856 (aproximadamente 27,3B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-Q8_0, mmproj-f16 |
+| Idiomas soportados | chino (zh) e inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo base InnoSpark3.2-27B-1102. Los metadatos de la conversión indican que se trata de una cuantización estática (`quantize_version: 2`, `output_tensor_quantised: 1`) realizada con el pipeline de llama.cpp a partir de los pesos en formato Hugging Face (`convert_type: hf`) del repositorio sii-research/InnoSpark3.2-27B-1102. El recuento de parámetros (27,3B) corresponde a un transformer denso.
+La información disponible indica que InnoSpark3.2-27B-1102 sigue una arquitectura transformer, con etiquetas que lo vinculan a la familia Qwen. El pipeline declarado es reinforcement-learning, lo que sugiere que el modelo ha sido ajustado mediante técnicas de aprendizaje por refuerzo, presumiblemente para alinear las respuestas con objetivos educativos y de tutoría. No se especifican en la documentación proporcionada el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas adicionales como RLHF o DPO de forma explícita.
 
-Tampoco se han publicado en la información disponible datos sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO u otras técnicas de alineación, ni innovaciones técnicas específicas (atención lineal, decodificación especulativa, modos de razonamiento, etc.). Cualquier afirmación al respecto sería especulativa y no se incluye en esta ficha.
+La versión GGUF incluye ficheros mmproj (multi-modal projection) en precisiones Q8_0 y f16, lo que indica que el modelo base incorpora capacidades multimodales, probablemente visión, aunque no se detalla la arquitectura del codificador visual ni el tipo de datos multimodales empleados durante el entrenamiento. Tampoco se documentan innovaciones técnicas como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generación de texto conversacional: el tag `conversational` del repositorio y la orientación del modelo base apuntan a un uso principal en diálogo multi-turno.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede servirse a través de infraestructura de inferencia estándar compatible con la API de Hugging Face.
-- Ejecución local vía llama.cpp: las cuantizaciones GGUF permiten inferencia en CPU, GPU o configuraciones híbridas.
-- Capacidades específicas de razonamiento, código, matemáticas, visión, tool calling o agentes: no disponibles en la información proporcionada.
-- Capacidades multilingües: no disponibles; no se declara lista de idiomas en la model card.
+- Generación de texto conversacional en chino e inglés, orientada a contextos educativos y de tutoría.
+- Razonamiento y explicación de conceptos, adecuado para asistencia en aprendizaje.
+- Soporte multimodal: la presencia de ficheros mmproj sugiere capacidad de procesar imágenes junto con texto, aunque no se detalla su alcance.
+- Ajuste mediante aprendizaje por refuerzo, orientado a mejorar la calidad de las respuestas en tareas de enseñanza.
+- No se documenta soporte explícito de tool calling o function calling en la información disponible.
+- No se documenta soporte explícito de agentes o razonamiento multi-paso en la información disponible.
+- Capacidades multilingües limitadas a chino e inglés según las etiquetas del repositorio.
 
 ## Casos de uso
 
-- Despliegue conversacional en local: usar la variante Q4_K_M o Q5_K_M con llama.cpp u Ollama para servir un chatbot de 27B en una estación de trabajo con una única GPU de 24 GB, aprovechando la compresión para mantener el modelo completo en VRAM.
-- Prototipado de asistentes sobre hardware de consumo: la variante Q3_K_M o Q2_K permite probar el modelo en GPUs de 12-16 GB o con offloading parcial a CPU, útil para validar flujos conversacionales antes de escalar a infraestructura mayor.
-- Evaluación comparativa de cuantizaciones: al ofrecer 12 variantes (desde Q2_K hasta F16), el repositorio sirve para medir la degradación de calidad frente a tamaño en un modelo de 27B, un caso habitual en laboratorios que ajustan el equilibrio calidad/VRAM.
-- Integración en pipelines de inferencia compatibles con endpoints: el tag `endpoints_compatible` facilita montar el modelo detrás de un servicio HTTP estándar para aplicaciones internas de generación de texto.
-- Fine-tuning posterior sobre los pesos originales: aunque este repositorio solo contiene GGUF, el enlace al modelo base en safetensors permite partir de los pesos completos para ajuste supervisado y luego reconvertir a GGUF.
-- Experimentación académica con modelos de escala media: 27B es un tamaño manejable para estudiar comportamiento conversacional, sesgos o calidad de generación sin requerir clústeres multi-GPU.
+- Tutoría personalizada en línea: el modelo puede mantener conversaciones multi-turno con estudiantes, explicando conceptos y resolviendo dudas en chino o inglés, aprovechando su ajuste por refuerzo para respuestas pedagógicas.
+- Generación de material didáctico: creación de ejercicios, resúmenes y explicaciones adaptadas a distintos niveles educativos, con la ventaja de una licencia Apache 2.0 que permite uso comercial.
+- Asistencia en plataformas de aprendizaje (LMS): integración como chatbot de apoyo dentro de sistemas de gestión del aprendizaje, gracias a su formato GGUF que facilita el despliegue en servidores modestos.
+- Investigación en IA educativa: uso como modelo base para experimentos de alineación y evaluación de respuestas pedagógicas, al ser un modelo de 27B con licencia permisiva.
+- Despliegue en hardware de consumo: mediante cuantizaciones Q4_K_M (16,9 GB) o Q5_K_M (19,6 GB), puede ejecutarse en GPUs con 24 GB de VRAM como la RTX 4090, ideal para prototipos y demos locales.
+- Procesamiento de material visual educativo: gracias a los ficheros mmproj, podría emplearse para interpretar imágenes (diagramas, pizarras) en contextos de enseñanza, aunque la documentación no detalla esta funcionalidad.
+- Atención al cliente en entornos educativos: gestión de consultas frecuentes de estudiantes en chino e inglés con respuestas contextualizadas.
 
 ## Benchmarks y rendimiento
 
@@ -50,46 +53,39 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (modelo de 27,3B parámetros, aproximada según cuantización):
-  - F16: ~54-55 GB
-  - Q8_0: ~29 GB
-  - Q6_K: ~22-23 GB
-  - Q5_K_M: ~19-20 GB
-  - Q4_K_M: ~16-17 GB
-  - Q3_K_M: ~13-14 GB
-  - Q2_K: ~10-11 GB
-- GPU recomendadas: A100 80 GB o H100 para F16/Q8_0 sin compromisos; RTX 4090 (24 GB) o L40S (48 GB) para Q6_K y Q5_K_M; RTX 3090/4090 para Q4_K_M.
-- ¿Cabe en GPU de consumo? Sí: Q4_K_M y Q5_K_M caben en GPUs de 24 GB (RTX 3090, 4090); Q3_K_M y Q2_K caben en GPUs de 12-16 GB (RTX 4070 Ti, 4080) o con offloading parcial a CPU.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, servidores compatibles con GGUF (por ejemplo, llama-cpp-python). vLLM y TGI no soportan GGUF de forma nativa para este formato; requerirían los pesos originales en safetensors.
-- Latencia y throughput: no disponibles; dependen de la GPU, la cuantización y la longitud de contexto, que tampoco se especifica.
+- VRAM estimada para inferencia según cuantización: Q2_K aproximadamente 11 GB; Q3_K_M aproximadamente 13,6 GB; Q4_K_M aproximadamente 16,9 GB; Q5_K_M aproximadamente 19,6 GB; Q6_K aproximadamente 22,5 GB; Q8_0 aproximadamente 29,1 GB (los tamaños de fichero incluyen pesos, pero la VRAM necesaria puede ser algo superior por el contexto y el overhead).
+- GPU recomendadas: para Q8_0 se recomienda una A100 40GB o H100; para Q5_K_M y Q6_K una RTX 4090 (24 GB) o A6000 (48 GB); para Q4_K_M una RTX 4090 o RTX 3090 (24 GB).
+- Cabe en GPU de consumo: sí, en RTX 3090/4090 (24 GB) con cuantizaciones Q4_K_M o Q5_K_M; en GPUs de 16 GB solo con Q2_K o Q3_K_S, con posible degradación de calidad.
+- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con GGUF como llama-cpp-python; también es posible usar vLLM o TGI con el modelo base en safetensors, no con los GGUF.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento ni de especificaciones internas (contexto, licencia, idiomas) del modelo base, por lo que una comparativa cuantitativa rigurosa no es posible. A modo orientativo por escala y formato:
-
-| Modelo | Parámetros | Contexto | Formato GGUF | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| InnoSpark3.2-27B-1102 (este) | ~27,3B | No disponible | Sí (12 variantes) | No disponible | Conversacional; sin benchmarks publicados |
-| Gemma 2 27B | 27B | 8K | Sí | Gemma Terms | Modelo denso de Google con benchmarks públicos |
-| Qwen2.5 32B | 32,5B | 128K | Sí | Apache 2.0 (mayoría de variantes) | Multilingüe, con benchmarks publicados |
-| Mistral Small 24B | 24B | 32K | Sí | Apache 2.0 | Denso, orientado a instrucciones |
+| InnoSpark3.2-27B-1102 (este) | 27,3B | no disponible | Apache 2.0 | GGUF, safetensors | Especializado en educación, multimodal (mmproj), RL |
+| Qwen2.5-32B | 32,5B | 128K (típico en la familia) | Apache 2.0 | safetensors, GGUF | Modelo generalista de referencia de Alibaba; contexto largo documentado |
+| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | safetensors, GGUF | Menor tamaño, licencia con restricciones comerciales; no especializado en educación |
+| Mistral Small 24B | 24B | 128K (según versión) | Apache 2.0 | safetensors, GGUF | Generalista, sin enfoque educativo declarado |
 
-La comparación se limita a escala y disponibilidad de cuantizaciones; no se han verificado diferencias de calidad entre estos modelos por falta de datos del modelo evaluado.
+La comparativa se basa en características públicas de modelos de tamaño similar; no se dispone de datos de rendimiento comparativo para InnoSpark3.2-27B-1102 en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks: no hay resultados publicados de MMLU, HumanEval, GSM8K ni evaluaciones conversacionales, lo que impide estimar su calidad frente a alternativas.
-- Licencia desconocida: la model card no declara licencia, ni en el repositorio de cuantización ni (según la información disponible) en el modelo base. No debe asumirse uso comercial permitido sin verificar la licencia del modelo original en sii-research/InnoSpark3.2-27B-1102.
-- Idiomas no declarados: se desconoce si el modelo está entrenado principalmente en inglés, chino o multilingüe; el rendimiento en castellano es incierto.
-- Contexto desconocido: no se puede planificar su uso en tareas de contexto largo sin confirmar la ventana máxima del modelo base.
-- Riesgo de alucinación: inherente a los modelos generativos de esta escala; sin datos de alineación (RLHF/DPO) no es posible evaluar su mitigación.
-- Sesgos: no documentados; al no conocerse la composición del dataset, no se pueden anticipar sesgos lingüísticos, culturales o de dominio.
-- Degradación por cuantización: las variantes Q2_K y Q3_K_S pueden perder calidad apreciable en un modelo de 27B; se recomienda Q4_K_M o superior para producción.
-- Repositorio sin tracción: 0 descargas y 0 likes en el momento de la consulta, lo que reduce la validación comunitaria sobre la calidad de las cuantizaciones.
-- Conversión de terceros: las cuantizaciones las genera mradermacher, no el autor original; ante discrepancias, la referencia es el repositorio sii-research.
+- Sesgos conocidos: no documentados en la información disponible; al ser un modelo entrenado con datos de chino e inglés, puede reflejar sesgos culturales y lingüísticos de esas fuentes.
+- Riesgo de alucinación: inherente a los modelos de lenguaje; en contextos educativos, las respuestas incorrectas pueden tener impacto en el aprendizaje, por lo que se recomienda validación humana.
+- Limitaciones de contexto o idioma: solo se declaran chino e inglés; no se especifica la longitud de contexto, lo que impide garantizar conversaciones muy largas.
+- Restricciones de licencia: Apache 2.0 permite uso comercial sin restricciones adicionales, pero se debe conservar el aviso de licencia y atribución.
+- Caveats para producción: las cuantizaciones bajas (Q2_K, Q3_K_S) pueden degradar la calidad de las respuestas; se recomienda Q4_K_M o superior para uso educativo. La documentación del modelo base es escasa, lo que dificulta evaluar su robustez en dominios específicos.
+- El modelo está especializado en educación; su rendimiento en tareas generales de código o matemáticas avanzadas no está documentado.
 
 ## Enlaces
 
-- Repositorio de cuantizaciones GGUF: https://huggingface.co/mradermacher/InnoSpark3.2-27B-1102-GGUF
-- Modelo base (pesos originales): https://huggingface.co/sii-research/InnoSpark3.2-27B-1102
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/InnoSpark3.2-27B-1102-GGUF
+- Modelo base: https://huggingface.co/sii-research/InnoSpark3.2-27B-1102
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/InnoSpark3.2-27B-1102-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#InnoSpark3.2-27B-1102-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfico comparativo de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

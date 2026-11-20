@@ -2,117 +2,112 @@
 
 ## Resumen
 
-Rune 26B-A4B v3 es un modelo de decisión desarrollado por Invergent que no genera texto libre: dado un estado (por ejemplo, un JSON) y una pregunta con un conjunto de opciones, devuelve una probabilidad para cada opción leyendo los logits de las letras asociadas en la primera posición generada. La ficha que nos ocupa, publicada por Livesport, es una compilación GGUF cuantizada a IQ3_M con importance matrix sobre los pesos bf16 originales de Rune v3, y es la única build GGUF de la versión v3 disponible en el momento de su publicación.
+Rune 26B-A4B v3 es un modelo de decisión desarrollado por Invergent y distribuido en formato GGUF por Livesport. No es un modelo generativo al uso: dada una *state* (un estado o contexto textual) y una pregunta con un conjunto de opciones, devuelve una probabilidad para cada opción leyendo los logits de las letras identificadoras de cada opción en la primera posición generada. Está pensado, por tanto, para tareas de clasificación y selección entre alternativas, no para producir texto libre.
 
-La arquitectura declarada es `gemma4`, con 30 bloques y mezcla de expertos (MoE) de 128 expertos con 8 activos por token, ventana deslizante de 1024 tokens y una longitud de contexto de 262.144 tokens. El recuento real de parámetros es de 25.233.142.046 (unos 25,2 mil millones), con pesos cuantizados a 3 bits IQ3_M repartidos en tres ficheros que suman 12,4 GB. El modelo es solo texto: la build no incluye la torre de visión de Gemma 4.
+Arquitectura de mezcla de expertos (MoE) con 25.233.142.046 parámetros totales y aproximadamente 4B activos por token (A4B), derivada de la familia Gemma 4 y calificada como `decision-model` en su model card. Los idiomas soportados son inglés y checo. La licencia es Apache 2.0.
 
-El interés práctico de esta ficha es doble. Por un lado, demuestra que un MoE de 25B puede servirse en producción en 2 GPU de 8 GB (Livesport lo hace sobre 2× Quadro RTX 4000 Turing con llama.cpp) manteniendo métricas competitivas frente a Jev 1.13. Por otro, documenta de forma inusualmente detallada el protocolo de decisión, la calibración de temperatura y el coste real de latencia por tamaño de estado, algo poco habitual en fichas de cuantizaciones.
+La relevancia de esta publicación concreta es la cuantización: Livesport ofrece builds GGUF con matriz de importancia (imatrix) calculada sobre prompts de decisión en el formato exacto de producción, con tipos por tensor y una calidad medida frente a los pesos bf16 originales. La versión IQ3_S-dyn (13,60 GB) corre en producción sobre 2× Quadro RTX 4000 de 8 GB detrás de una API compatible con `/v1/systemone`.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `gemma4`, transformer con mezcla de expertos (MoE); 30 bloques, 128 expertos con 8 activos, atención de ventana deslizante de 1024 tokens |
-| Parametros totales | 25.233.142.046 (25,2 B) |
-| Parametros activos | no disponible el recuento exacto; 8 de 128 expertos activos por token |
-| Longitud de contexto | 262.144 tokens (contexto de entrenamiento declarado); en la practica documentada se sirve con `-c 16384` |
-| Tipos de cuantizacion | IQ3_M (GGUF, `general.file_type = 27`, 658 tensores), cuantizada con `llama-quantize` e importance matrix de 295 entradas calculada sobre 250 fragmentos de texto de calibración no publicado; el repositorio solo publica esta cuantización |
-| Idiomas soportados | en (inglés) y cs (checo) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF dividido en 3 shards con `llama-gguf-split` (`rune-26b-a4b-v3-IQ3_M-00001-of-00003.gguf`, `...-00002-of-00003.gguf`, `...-00003-of-00003.gguf`) más un fichero `SHA256SUMS`; el repositorio upstream publica los pesos v3 en safetensors bf16 (51,6 GB) |
+| Arquitectura | Transformer con mezcla de expertos (MoE), base Gemma 4 26B-A4B |
+| Parametros totales | 25.233.142.046 |
+| Parametros activos | ~4B (denominación A4B; cifra exacta no disponible) |
+| Longitud de contexto | 16k tokens (medido en IQ3_S-dyn); contexto máximo nativo no disponible |
+| Tipos de cuantizacion | IQ3_S-dyn, IQ4_XS-dyn, Q8_0 (más imatrix e IQ3_M en revisión anterior) |
+| Idiomas soportados | en, cs |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (llama.cpp); origen bf16 safetensors convertido con `convert_hf_to_gguf.py` |
 
 ## Arquitectura y entrenamiento
 
-La información disponible describe la arquitectura como `gemma4`: 30 bloques transformer con mezcla de expertos de 128 expertos y 8 activos por token, atención con ventana deslizante de 1024 tokens y un contexto declarado de 262.144 tokens. La plantilla de chat es la de Gemma 4 y va embebida en el propio fichero GGUF. No se detallan en esta ficha el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO; esos datos corresponden a la ficha upstream de Rune 26B-A4B v3, que no forma parte de la información proporcionada.
+El modelo es un transformer MoE con 25,2B parámetros totales, de los cuales los expertos representan el 90 %. La arquitectura base es Gemma 4 26B-A4B, con atención, FFN compartida, router y embeddings como componentes no-expertos. El modelo no genera texto: la salida se obtiene de los logits de las letras de opción en la primera posición generada, lo que lo convierte en un clasificador de opciones probabilístico. No se dispone de detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO; la model card remite para ello a la ficha del modelo base de Invergent.
 
-Lo específico de esta publicación es la cuantización. Los pesos bf16 del repositorio `surogate/rune-26b-a4b-GGUF` se convirtieron a GGUF y se cuantizaron a IQ3_M con una importance matrix de 295 entradas calculada sobre 250 fragmentos de un texto de calibración de propósito general que no se ha publicado, lo que limita la reproducibilidad exacta del proceso. El resultado son 658 tensores repartidos en tres shards: basta con pasar el primero a llama.cpp, que carga los otros dos automáticamente. La build se probó con el commit `8212c78` de llama.cpp (CUDA 12.2, sm_75).
-
-El protocolo de decisión (surogate decisions protocol v1) se implementa sobre `llama-server` con un adaptador propio: se renderiza un chat `[system, user]` con `enable_thinking=false`, se ordenan las opciones (en el modo `noul` de sí/no, A = falso y B = verdadero; en `score`, los niveles en orden ascendente), se ejecuta un único forward pass y se aplica un softmax con temperatura sobre las log-probabilidades de las letras de las opciones en la primera posición generada. La temperatura calibrada es T = 2, que altera las probabilidades pero nunca la opción elegida.
+La innovación técnica de esta publicación está en la cuantización. La imatrix se calculó sobre el modelo bf16 con 1,5M tokens a contexto 2048 (733 chunks), usando exclusivamente prompts de decisión en el formato de producción (plantilla de chat, thinking desactivado, system prompt y layout `SHARED STATE` / `QUESTION` / `OPTIONS`). Se renderizaron 7.932 prompts a partir de 5.018 registros y se conservaron 2.723 aleatorios. Los estados provienen de los splits de entrenamiento de BoolQ, AG News y SST-2, de digests multiartículo de AG News, de noticias checas (CIIRC-NLP/czech_news_simple-cs y hynky/czech_news_dataset_v2) y de `calibration_datav3` de bartowski. Cada tensor de experto recibió datos para al menos el 95,3 % de sus expertos (frente al 88,3 % de la imatrix anterior). En los ficheros dinámicos, todos los tensores no-expertos se mantienen en Q8_0, el router (`ffn_gate_inp`) y las normas en F32, y los bits restantes se asignan a los expertos con tipos diferenciados por tensor, incluyendo una capa final (29) con mayor precisión.
 
 ## Capacidades
 
-- Clasificación y decisión sobre opciones cerradas: devuelve una probabilidad por opción, no texto libre.
-- Modo `choice` para selección entre opciones arbitrarias, modo `noul` para preguntas binarias (A = falso, B = verdadero) y modo `score` para niveles ordenados de forma ascendente.
-- Lectura de estado estructurado: acepta un estado compartido como cadena JSON y lo trata como datos, no como instrucciones.
-- Generación de probabilidades calibradas: ECE de 0,020 a T = 2 sobre el conjunto medido por el autor de la cuantización.
-- Multilingüe limitado a inglés y checo según la ficha del modelo; el conjunto de prueba interno mezcla preguntas en checo e inglés.
-- Sin generación de texto: no produce explicaciones ni razonamiento, y la plantilla debe renderizarse con el modo de pensamiento desactivado.
-- Sin capacidades de visión: la build contiene solo el modelo de lenguaje y no incluye la torre de visión de Gemma 4, por lo que no admite estados con imágenes.
-- Sin soporte documentado de tool calling, function calling ni razonamiento multi-paso agéntico; su papel es el de componente de decisión dentro de un sistema mayor.
+- Clasificación y decisión entre opciones: devuelve una probabilidad por opción a partir de los logits de las letras identificadoras.
+- Tres tipos de pregunta distintos, en checo e inglés, según el protocolo de decisión del autor.
+- Manejo de estados largos: se han medido estados sintéticos de 2k a 12k tokens con 5 preguntas cada uno.
+- Formato de prompt específico: plantilla de chat, thinking desactivado, system prompt y layout `SHARED STATE` / `QUESTION` / `OPTIONS`.
+- Integración con llama.cpp mediante `llama-server` y API compatible con `/v1/systemone`.
+- No soporta visión: los ficheros contienen solo el modelo de lenguaje, sin la torre de visión de Gemma 4.
+- No soporta generación de texto libre ni tool calling ni razonamiento multi-paso en el sentido habitual; su función es la selección probabilística entre opciones.
 
 ## Casos de uso
 
-- Enrutamiento de decisiones en producción: Livesport lo sirve sobre 2× Quadro RTX 4000 detrás de una API compatible con `/v1/systemone`, lo que permite integrarlo como clasificador de decisión en un pipeline existente sin cambiar el contrato de la API.
-- Clasificación de texto con opciones cerradas: con 88,0 % de acierto en SST-2, AG News y BoolQ (900 preguntas), es utilizable para tareas tipo análisis de sentimiento, categorización de noticias y preguntas booleanas cuando las clases se formulan como opciones.
-- Enrutamiento de consultas en asistentes conversacionales: dado un estado con el historial y una pregunta con opciones (por ejemplo, "¿derivar a soporte humano o resolver en el chat?"), devuelve la probabilidad de cada ruta para aplicar un umbral configurable.
-- Moderación y policy checks: el modo `noul` con A = falso y B = verdadero encaja con decisiones binarias de cumplimiento normativo, siempre que el estado se pase como JSON y se respete la separación entre datos e instrucciones.
-- Puntuación de candidatos sobre escalas ordenadas: el modo `score` permite mapear un estado a niveles ascendentes, útil para priorización de incidencias o scoring de leads.
-- Reutilización de estados largos con múltiples preguntas: con estados de ~8.900 tokens, la latencia medida es de 4,34 s para la primera pregunta y 4,75 s para tres preguntas del mismo estado, gracias a la reutilización del KV cache dentro de la petición; esto lo hace viable para paneles de decisión que evalúan varias preguntas sobre el mismo expediente.
-- Sustitución de un modelo de decisión propietario: frente a Jev 1.13 vía OpenRouter, esta cuantización obtiene 5 errores en el conjunto interno de 143 preguntas frente a 11, y 93,5 % / 95,8 % en el subconjunto difícil y en los ítems en checo; es un caso realista de migración a inferencia local en hardware modesto.
-- Despliegue en entornos con GPU de gama antigua: requerir 2× 8 GB con cuantización IQ3_M y caché KV en q8_0 permite ejecutarlo en Turing (sm_75) sin necesidad de Ampere o superior.
+- Clasificación de noticias en producción: el modelo recibe el texto de un artículo como estado y un conjunto de categorías como opciones, y devuelve la probabilidad de cada una. Los resultados medidos en AG News test (83,0-85,3 según cuantización) respaldan este uso.
+- Análisis de sentimiento: con SST-2 validation como referencia (94,0-94,3), puede aplicarse a la clasificación de polaridad de reseñas o comentarios usando el mismo protocolo de estado más opciones.
+- Respuesta a preguntas de comprensión lectora: con BoolQ validation como referencia (84,3-84,7), el modelo selecciona entre opciones tipo sí/no dado un pasaje y una pregunta.
+- Moderación y enrutamiento de contenido: dado un texto y un conjunto cerrado de políticas o etiquetas, el modelo asigna probabilidades a cada una, lo que permite umbrales de decisión calibrados.
+- Despliegue en hardware modesto: la cuantización IQ3_S-dyn (13,60 GB) está medida para 2× Quadro RTX 4000 de 8 GB con contexto de 16k, lo que permite servir el modelo en infraestructura de gama media.
+- Procesamiento de noticias en checo e inglés: el modelo cubre ambos idiomas y se calibró con corpus de noticias checas, lo que lo hace adecuado para pipelines editoriales bilingües.
+- Evaluación de alternativas en sistemas de recomendación o ranking: al devolver probabilidades por opción, puede integrarse como componente de scoring en lugar de como generador.
 
 ## Benchmarks y rendimiento
 
-Precisión y calibración, medidas con este fichero exacto en DGX Spark y comparadas contra Jev 1.13 (OpenRouter) sobre los mismos ítems:
+Resultados medidos por el autor con `llama-server`, temperatura 1, sin reutilización de caché de prompt, comparando probabilidades de opción frente al GGUF bf16. Ítems: 143 preguntas internas (93 estados, checo e inglés, conjuntos `base` y `hard`), 900 preguntas públicas (300 de BoolQ validation, 300 de AG News test, 300 de SST-2 validation) y 24 estados sintéticos largos (2k-12k tokens) con 5 preguntas cada uno. Medido en NVIDIA GB10 con llama.cpp `aa885f0`.
 
-| Metrica | Rune v3 IQ3_M | Jev 1.13 |
-|---|---|---|
-| Conjunto interno (143 preguntas, checo e inglés), errores | 5 | 11 |
-| Subconjunto difícil | 93,5 % | 82,6 % |
-| Ítems en checo | 95,8 % | 91,7 % |
-| Datos públicos (SST-2, AG News, BoolQ; 900 preguntas) | 88,0 % | 89,4 % |
-| ECE de calibración a T = 2 | 0,020 | 0,047 |
+| GGUF | Tamano | base / hard / BoolQ / AG / SST-2 | Concordancia | Media \|Δp\| | \|Δp\| estados largos | KL |
+|---|---:|---|---:|---:|---:|---:|
+| bf16 (referencia) | 50,5 GB | 95,9 / 93,5 / 84,3 / 83,3 / 94,3 | — | — | — | — |
+| Q8_0 | 26,86 GB | 96,9 / 91,3 / 84,3 / 83,0 / 94,0 | 98,7 % | 0,0122 | 0,0159 | 0,0094 |
+| IQ4_XS-dyn | 16,74 GB | 95,9 / 91,3 / 84,7 / 84,0 / 94,0 | 97,9 % | 0,0166 | 0,0251 | 0,0198 |
+| IQ3_S-dyn | 13,60 GB | 96,9 / 91,3 / 84,3 / 85,3 / 94,3 | 97,3 % | 0,0214 | 0,0307 | 0,0235 |
+| IQ3_M (versión anterior del repo) | 12,39 GB | 97,9 / 93,5 / 85,0 / 85,7 / 95,3 | 96,0 % | 0,0318 | 0,0600 | 0,0450 |
 
-Latencia medida en 2× Quadro RTX 4000 de 8 GB con llama.cpp `8212c78` y los flags documentados, una petición a la vez, mediana de 3:
+Progresión de la receta de cuantización hasta IQ3_S-dyn:
 
-| Tamano de estado | 1 pregunta | 3 preguntas |
-|---|---|---|
-| ~620 tokens | 0,57 s | 0,77 s |
-| ~2.300 tokens | 1,18 s | 1,37 s |
-| ~8.900 tokens | 4,34 s | 4,75 s |
+| Paso | Tamano | KL |
+|---|---:|---:|
+| IQ3_M con imatrix anterior (250 × 512 tokens) | 12,39 GB | 0,0450 |
+| Receta IQ3_M con nueva imatrix en formato de decisión, cuantizada desde bf16 | 12,39 GB | 0,0383 |
+| Tensores no-expertos Q8_0, expertos IQ3_XXS / IQ4_NL, capa final más alta (estilo unsloth) | 12,91 GB | 0,0321 |
+| IQ3_S-dyn final (imatrix de 1,5M tokens a contexto 2048) | 13,60 GB | 0,0235 |
 
-Throughput de procesamiento de prompt: 2.098 tok/s a 2.000 tokens con `-ub 512` y 1.696 tok/s con `-ub 256`.
-
-No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K u otros) en la información disponible. Tampoco se ha medido el coste de precisión de IQ3_M frente a los pesos bf16 en el Decision Index.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM: los pesos cuantizados ocupan 12,4 GB; según el autor, pesos más un contexto de 16k caben en 2× 8 GB usando `--swa-full` y caché KV en q8_0. El comportamiento en una única GPU no está documentado en la información disponible.
-- GPU validadas: 2× Quadro RTX 4000 de 8 GB (Turing, sm_75), compilación de llama.cpp con CUDA 12.2. Livesport las usa en producción.
-- GPU consumer: no hay validación documentada en GPU consumer. Por tamaño de pesos (12,4 GB), una GPU de 16 GB o más es el mínimo teórico para los pesos, pero el autor no publica medidas en ese escenario ni cifras de KV cache para contextos largos en una sola tarjeta.
-- Memoria de host: `llama-server` necesita entre 0,3 y 0,5 GiB de memoria anónima; el modelo mapeado en memoria aparece como page cache y el kernel puede expulsarlo sin ralentizar la inferencia, porque los pesos residen en VRAM.
-- Caché de prompt: debe fijarse `--cache-ram 0`, ya que de lo contrario la caché de prompt en host crece hasta 8 GiB por defecto.
-- Opciones de despliegue: llama.cpp / `llama-server`, que es el runtime documentado y probado. No hay instrucciones publicadas para vLLM, TGI, Ollama u otros servidores en la información disponible, aunque al tratarse de GGUF serían compatibles con runtimes basados en llama.cpp.
-- Comando de referencia del autor: `llama-server -m rune-26b-a4b-v3-IQ3_M-00001-of-00003.gguf -ngl 99 --split-mode layer -c 16384 -np 1 -fa on -ctk q8_0 -ctv q8_0 -b 512 -ub 512 --jinja --cache-ram 0`.
-- Latencia y throughput: ver la tabla de la sección de benchmarks; el procesamiento de prompt ronda los 2.098 tok/s a 2k tokens con `-ub 512`.
+- VRAM estimada: IQ3_S-dyn (13,60 GB) medida en 7,93 / 7,89 GB por GPU sobre 2× 8 GB; IQ4_XS-dyn (16,74 GB) para GPUs de 24 GB; Q8_0 (26,86 GB) para 32 GB o más.
+- GPU recomendadas: 2× Quadro RTX 4000 de 8 GB (configuración de producción de Livesport), una GPU de 16 GB para IQ3_S-dyn, 24 GB para IQ4_XS-dyn, 32 GB o más para Q8_0.
+- Cabe en GPU de consumo: sí, IQ3_S-dyn en una GPU de 16 GB y IQ4_XS-dyn en una de 24 GB.
+- Opciones de despliegue: llama.cpp (`llama-server`) es el entorno con el que se midieron los ficheros; no se mencionan otros backends.
+- Latencia y throughput: no disponibles. Las mediciones se hicieron en NVIDIA GB10 con llama.cpp `aa885f0`, sin cifras de latencia o tokens por segundo publicadas.
+- Contexto: 16k tokens medidos para IQ3_S-dyn.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Precisión (medida) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Rune 26B-A4B v3 IQ3_M (esta ficha) | 25,2 B totales, 8 de 128 expertos activos | 262.144 tokens declarados; 16k en la configuración servida | 5 errores en 143 preguntas internas; 88,0 % en datos públicos; ECE 0,020 | apache-2.0 | GGUF IQ3_M en este repositorio; pesos bf16 upstream |
-| Rune 26B-A4B v3 bf16 (`surogate/rune-26b-a4b-GGUF`) | 25,2 B | 262.144 tokens | no disponible en esta información (el autor remite a la ficha upstream) | apache-2.0 | safetensors bf16, 51,6 GB |
-| Jev 1.13 (OpenRouter) | no disponible | no disponible | 11 errores en 143 preguntas internas; 89,4 % en datos públicos; ECE 0,047 | no disponible | servicio vía OpenRouter |
+No se dispone de datos sobre modelos comparables de la misma categoría (modelos de decisión MoE de ~26B) en la información proporcionada. La comparación más directa disponible es interna, entre las propias cuantizaciones del mismo modelo:
 
-No se dispone de datos de otros modelos comparables de la misma categoría (clasificadores de decisión MoE de ~25B) en la información proporcionada.
+| Variante | Tamano | Concordancia con bf16 | KL | Hardware objetivo |
+|---|---:|---:|---:|---|
+| Q8_0 | 26,86 GB | 98,7 % | 0,0094 | 32 GB o más |
+| IQ4_XS-dyn | 16,74 GB | 97,9 % | 0,0198 | 24 GB |
+| IQ3_S-dyn | 13,60 GB | 97,3 % | 0,0235 | 2× 8 GB o una de 16 GB |
+| IQ3_M (anterior) | 12,39 GB | 96,0 % | 0,0450 | 2× 8 GB |
 
 ## Limitaciones y advertencias
 
-- El modelo no genera texto: cualquier caso de uso que requiera explicaciones, resúmenes o razonamiento explícito queda fuera de su alcance.
-- Solo admite inglés y checo según la ficha; no hay datos de rendimiento en otros idiomas.
-- Es una build exclusivamente de texto: no incluye la torre de visión de Gemma 4, por lo que los estados con imágenes no están soportados.
-- La ficha del autor incluye un aviso explícito de que la reutilización de la caché de prompt cambia las respuestas, asociado al comportamiento de la atención de ventana deslizante de Gemma 4. El texto de esa advertencia aparece truncado en la información disponible, por lo que conviene consultar la ficha original antes de habilitar caché de prompt en producción.
-- Un fallo del protocolo de lectura puede pasar desapercibido: si una letra de opción no aparece entre los 64 log-probabilities superiores, se le asigna una probabilidad cercana a 0. Esto ocurre de forma ocasional en preguntas muy confiadas, pero si sucede en todas las peticiones indica que la plantilla de chat no se está aplicando y que `llama-server` debe arrancarse con `--jinja`.
-- La temperatura de calibración es T = 2, un valor fijado por el autor upstream y confirmado por Livesport sobre sus datos; usar otra temperatura invalida las cifras de ECE publicadas.
-- No se ha medido la pérdida de precisión de IQ3_M frente a los pesos bf16 en el Decision Index, así que la degradación real por la cuantización de 3 bits es desconocida.
-- El texto de calibración de la importance matrix no está publicado, lo que impide reproducir exactamente el proceso de cuantización.
-- La única versión de llama.cpp validada es el commit `8212c78` con CUDA 12.2 y sm_75; otros commits o backends no están verificados.
-- Licencia apache-2.0, que permite uso comercial, pero el modelo base y sus condiciones upstream deben verificarse por separado antes de desplegarlo.
-- Al tratarse de un clasificador y no de un generador, el riesgo de alucinación se manifiesta como asignación de alta probabilidad a una opción incorrecta, no como texto inventado; en dominios sensibles conviene calibrar umbrales con datos propios.
+- No genera texto: cualquier uso que espere salida generativa es un error de planteamiento; solo produce probabilidades sobre opciones.
+- Sin visión: los ficheros GGUF excluyen la torre de visión de Gemma 4, por lo que no se admiten estados con imágenes.
+- Formato de prompt estricto: el modelo rinde según el protocolo `SHARED STATE` / `QUESTION` / `OPTIONS` con thinking desactivado; desviarse de él puede degradar la calidad.
+- Idiomas limitados a inglés y checo; no hay evidencia de comportamiento en castellano ni en otros idiomas.
+- La imatrix se calibró con datos de entrenamiento de BoolQ, AG News, SST-2, noticias checas y `calibration_datav3`; aunque el autor afirma que los ítems de evaluación son disjuntos, la calibración está sesgada hacia dominios de noticias y clasificación.
+- Riesgo de alucinación no aplica en el sentido generativo, pero sí existe riesgo de calibración deficiente de probabilidades fuera de los dominios de calibración.
+- La cuantización IQ3_S-dyn introduce una media de |Δp| de 0,0214 y de 0,0307 en estados largos frente a bf16; para decisiones con umbrales ajustados conviene usar IQ4_XS-dyn o Q8_0.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base es de Invergent y la ficha remite a su model card para condiciones y protocolo de entrenamiento.
+- Los datos de rendimiento proceden del propio autor; no hay evaluación independiente disponible.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Livesport/rune-26b-a4b-v3-GGUF
-- Modelo base cuantizado: https://huggingface.co/surogate/rune-26b-a4b-GGUF
-- Sitio del desarrollador de Rune: https://invergent.ai
-- Commit de llama.cpp con el que se probó: https://github.com/ggml-org/llama.cpp/commit/8212c7802455255460ab8e18fc34754560031b34
+- Repositorio Hugging Face: https://huggingface.co/Livesport/rune-26b-a4b-v3-GGUF
+- Modelo base: https://huggingface.co/surogate/rune-26b-a4b-GGUF
+- Revisión anterior del repositorio (IQ3_M): https://huggingface.co/Livesport/rune-26b-a4b-v3-GGUF/tree/499039616722228c3e4849ebb7315ce232fd07c7
+- Invergent: https://invergent.ai
+- Layout de cuantización de referencia (unsloth, Gemma 4 26B-A4B): https://huggingface.co/unsloth/gemma-4-26B-A4B-it-GGUF
+- Dataset de calibración checo: https://huggingface.co/datasets/CIIRC-NLP/czech_news_simple-cs
+- Dataset de calibración checo: https://huggingface.co/datasets/hynky/czech_news_dataset_v2

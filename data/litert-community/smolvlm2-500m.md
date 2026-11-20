@@ -1,97 +1,94 @@
 # litert-community/SmolVLM2-500M
 
-# Ficha del modelo: SmolVLM2-500M (LiteRT-LM)
-
 ## Resumen
 
-SmolVLM2-500M en formato LiteRT-LM es una conversión del modelo vision-language de Hugging Face SmolVLM2-500M-Video-Instruct (ruta de imagen) al formato `.litertlm` para inferencia on-device de imagen y texto con el runtime LiteRT-LM de Google AI Edge. Desarrollado por la comunidad litert-community, combina un encoder de visión SigLIP con un decoder SmolLM2 de arquitectura Llama de 360M de parámetros, alcanzando un tamaño total de aproximadamente 500M y un peso de solo 361 MB. Está diseñado para ejecutarse completamente offline en dispositivos edge como móviles, tablets y ordenadores de sobremesa.
+SmolVLM2-500M es la conversión a LiteRT-LM del modelo SmolVLM2-500M-Video-Instruct de Hugging Face, publicada por la comunidad `litert-community`. Se trata de un modelo de visión-lenguaje (VLM) de muy pequeño tamaño pensado para inferencia totalmente local en dispositivos: combina un codificador visual SigLIP con un decodificador de lenguaje SmolLM2-360M de arquitectura Llama, empaquetado en un único fichero `.litertlm` de aproximadamente 363 MB.
 
-El modelo resuelve el problema de llevar la comprensión imagen-texto a dispositivos con recursos limitados, ofreciendo una alternativa de muy bajo coste computacional a los VLM grandes. Con una ventana de contexto de 2048 tokens y soporte para entrada de imágenes de 512×512 píxeles, es capaz de responder preguntas sobre imágenes de forma anclada y coherente. Su relevancia actual radica en la creciente demanda de IA generativa en el edge, donde la privacidad, la latencia y el consumo energético son críticos. La licencia Apache 2.0 permite uso comercial sin restricciones.
+El problema que resuelve es el de llevar capacidades multimodales (imagen + texto) a entornos sin conectividad ni GPU de servidor: móviles Android, equipos de escritorio y portátiles, con cómputo entero (int8 en visión, int4 en el decodificador). El runtime objetivo es LiteRT-LM, el motor on-device de Google derivado de TensorFlow Lite, y el proceso de conversión se realizó con `litert-torch` (el antiguo `ai-edge-torch`).
 
-## Especificaciones técnicas
+Es relevante ahora porque demuestra que un VLM funcional cabe en menos de 400 MB y se ejecuta con latencia interactiva en hardware de consumo: en una Galaxy S26 (GPU) decodifica 79,8 tokens/s y hace prefill de 1.024 tokens a 1.741 tokens/s según la model card. La ventana de contexto del KV cache es de 2.048 tokens y la imagen de entrada se redimensiona a 512×512, generando 64 tokens visuales.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | SigLIP vision encoder + pixel-shuffle connector + SmolLM2 decoder (Llama, 360M) |
-| Parametros totales | ~500M (360M decoder + vision encoder) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 2048 tokens (KV cache) |
-| Tipos de cuantizacion | int4 (decoder, blockwise-32 + OCTAV), int8 (vision encoder y embedding) |
-| Idiomas soportados | No disponible |
+| Arquitectura | VLM: codificador SigLIP (512×512, 1.024 parches, sin CLS) + conector pixel-shuffle ×4 + Linear, y decodificador SmolLM2-360M (Llama, 960-dim, 32 capas, GQA 15/5) |
+| Parametros totales | 500M (denominacion del modelo); decodificador de 360M |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | 2.048 tokens (KV cache) |
+| Tipos de cuantizacion | Vision int8; decodificador int4 (blockwise-32 + OCTAV); embedding atado en INT8 externalizado; computo entero |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | .litertlm (LiteRT-LM) |
+| Formato de pesos | `.litertlm` (~363 MB) para el runtime LiteRT-LM |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura de SmolVLM2: un encoder de visión SigLIP que procesa imágenes de 512×512 píxeles, dividiéndolas en 1024 parches sin token CLS. Un conector pixel-shuffle con factor ×4 y una capa lineal reducen las características visuales a 64 tokens de imagen, que se proyectan al espacio del decoder. El decoder es SmolLM2-360M, un transformer de arquitectura Llama con 960 dimensiones ocultas, 32 capas y atención con query groups de 15/5 (GQA). Los pesos se cuantizan a int4 en el decoder (blockwise-32 con OCTAV) e int8 en el encoder de visión y el embedding, lo que permite cómputo íntegramente entero.
+La arquitectura es un VLM de dos torres: un codificador visual SigLIP que procesa imágenes de 512×512 píxeles (1.024 parches, sin token CLS), un conector de pixel-shuffle ×4 seguido de una capa Linear que comprime la representación visual a 64 tokens de imagen, y un decodificador de lenguaje SmolLM2-360M con arquitectura Llama (dimensión 960, 32 capas, atención GQA con 15 cabezas de query y 5 de key/value). La normalización de la imagen ((x−0,5)/0,5) está incorporada dentro del codificador visual.
 
-El entrenamiento original del modelo base (HuggingFaceTB/SmolVLM2-500M-Video-Instruct) incluye instrucciones sobre video e imágenes, pero esta conversión solo conserva la ruta de imagen. No se dispone de información detallada sobre el dataset de entrenamiento ni sobre el proceso de alineación (RLHF/DPO) en la documentación proporcionada. La conversión a LiteRT-LM mantiene la fidelidad del encoder SigLIP (correlación de paridad float CPU ≈ 1.0), lo que garantiza que las respuestas generadas están ancladas a la imagen de entrada.
+El modelo base es SmolVLM2-500M-Video-Instruct de Hugging Face; esta publicación es una conversión cuantizada (relación `base_model_relation: quantized`) realizada con `litert-torch`. El fichero publicado el 2026-11-13 (19:44 UTC) tiene los grafos de prefill y decode reescritos para GPU por un script separado, sin cambios en los pesos. No se dispone en la información proporcionada de detalles sobre el dataset de entrenamiento original (número de tokens, composición, uso de RLHF/DPO). La conversión del codificador visual SigLIP es fiel a nivel de bit (correlación ≈ 1,0 con la salida float en CPU).
 
 ## Capacidades
 
-- Comprensión de imágenes y respuesta a preguntas (VQA) sobre una imagen por conversación.
-- Generación de descripciones de imágenes en lenguaje natural.
-- Soporte de entrada multimodal imagen + texto (una imagen por chat).
-- Ejecución completamente offline en dispositivos edge.
-- Compatible con el runtime LiteRT-LM en macOS, Linux, Windows, iOS y Android.
+- Generación de texto condicionada por imagen (image-text-to-text): descripción de imágenes, respuesta a preguntas visuales (VQA) de un solo turno.
+- Respuestas ancladas a la imagen: la model card verifica en CPU respuestas coherentes y fundamentadas en el contenido visual.
+- Procesamiento de múltiples imágenes en una misma interacción (el CLI admite `--attachment` repetido).
+- Conversación interactiva multi-turno dentro de la ventana de 2.048 tokens.
+- Ejecución totalmente offline en macOS, Linux y Windows con el mismo fichero.
 - Exposición como API local compatible con OpenAI mediante `litert-lm serve`.
-- No soporta tool calling, agentes ni razonamiento multi-paso (no documentado).
-- Capacidades multilingües no documentadas.
+- No se documenta en la información disponible soporte de tool calling, function calling, agentes, audio ni modo de razonamiento explícito (thinking).
 
 ## Casos de uso
 
-- Asistente de accesibilidad para personas con discapacidad visual: el modelo puede describir el contenido de una fotografía tomada con el móvil en tiempo real, permitiendo a los usuarios comprender su entorno sin conexión a internet.
-- Clasificación y etiquetado de imágenes en aplicaciones de fotografía: al integrarse en una app móvil, puede generar etiquetas descriptivas automáticamente para organizar álbumes, con la ventaja de que todo el procesamiento ocurre en el dispositivo, preservando la privacidad.
-- Moderación de contenido visual en plataformas sociales: el modelo puede analizar imágenes subidas por usuarios para detectar contenido inapropiado o generar descripciones para accesibilidad, funcionando en el edge para reducir costes de servidor.
-- Asistente de compras en retail: un cliente fotografía un producto y el modelo responde con una descripción o información básica, funcionando offline en un kiosco o dispositivo de mano.
-- Documentación de campo para investigadores o periodistas: el modelo puede generar descripciones de fotografías tomadas en entornos remotos sin conectividad, facilitando la anotación de imágenes en estudios de campo.
-- Automatización de tickets de soporte con capturas de pantalla: en un sistema de helpdesk, el modelo puede describir el contenido de una captura de pantalla adjunta a un ticket, ayudando a los agentes a priorizar y resolver incidencias más rápido, todo localmente.
-- Aplicaciones educativas interactivas: un niño fotografía un objeto o una página de un libro y el modelo responde con una descripción o responde preguntas sencillas, funcionando en tablets de bajo coste sin conexión.
+- Descripción automática de imágenes en aplicaciones móviles: el modelo recibe una foto redimensionada a 512×512 y devuelve una frase descriptiva; con 363 MB y cómputo entero es viable embeberlo en una app Android vía LiteRT sin depender de la nube.
+- Accesibilidad para personas con discapacidad visual: un asistente local que describa el entorno a partir de capturas de cámara, funcionando sin conectividad y con latencia de decodificación de decenas de tokens por segundo.
+- Etiquetado y moderación de contenido en el dispositivo: clasificación o descripción preliminar de imágenes antes de subirlas a un servidor, reduciendo ancho de banda y preservando la privacidad de los datos del usuario.
+- Asistencia en aplicaciones de campo sin cobertura: técnicos que fotografían equipos o documentos y reciben una descripción o respuesta textual en un portátil o tableta, usando el backend CPU de LiteRT-LM.
+- Prototipado rápido de pipelines multimodales: `litert-lm serve` expone el modelo como API compatible con OpenAI, lo que permite integrarlo en prototipos existentes sin cambiar el cliente.
+- Procesamiento por lotes de imágenes en escritorio: con 409 tok/s de prefill y 63,9 tok/s de decodificación en un Apple M4 Max (backend CPU), es adecuado para tareas de captioning a pequeña escala en local.
+- Filtro previo en sistemas de agentes: usar el modelo como primer nivel de comprensión visual (por ejemplo, detectar si una imagen contiene texto o un objeto concreto) antes de escalar a un VLM mayor.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Sin embargo, la model card incluye mediciones de rendimiento de inferencia en hardware específico:
+Datos de rendimiento publicados en la model card (no son benchmarks de calidad tipo MMLU, sino medidas de inferencia):
 
-| Dispositivo | Backend | Prefill (256 tokens) | Decode | TTFT |
+| Dispositivo | Backend | Prefill | Decode | TTFT |
 |---|---|---|---|---|
-| Apple M4 Max (macOS) | CPU | 409 tok/s | 63.9 tok/s | 0.64 s |
-| Samsung Galaxy S26 (Android 16) | GPU (LiteRT GPU) | No medido | No medido | No medido |
+| Apple M4 Max (macOS), litert-lm 0.15.0, prefill 256 / decode 256 | CPU | 409 tok/s | 63,9 tok/s | 0,64 s |
+| Galaxy S26, litert-lm v0.19.0 | GPU | 1.741 tok/s (1.024 tokens) | 79,8 tok/s | no disponible |
 
-En el Galaxy S26, el bundle se ejecuta en el backend GPU con 4138/4138 ops delegadas en 3 subgrafos, con un pico de memoria de 404 MB. No se reportan velocidades porque no hay una fila CPU del mismo teléfono para comparar. La model card advierte que el backend GPU de macOS no produce texto utilizable en litert-lm 0.15.0, por lo que se recomienda usar CPU en escritorio.
+Notas: las cifras de M4 Max cubren solo la ruta de texto; el codificador visual se ejecuta una vez por imagen y no está incluido. El backend GPU de macOS no era utilizable con litert-lm 0.15.0 (devolvía secuencias de `<|endoftext|>`), aunque con 0.17.0–0.19.2 responde correctamente. No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
 
 ## Requisitos de hardware
 
-- Tamaño del bundle: ~361 MB (archivo .litertlm).
-- Pico de memoria en Galaxy S26 (GPU): 404 MB.
-- VRAM estimada para inferencia: no disponible oficialmente, pero al ser un modelo de 500M con cuantización int4/int8, cabe en GPUs de consumo con menos de 1 GB de VRAM (estimación razonable, no verificada).
-- GPU recomendadas: no hay datos específicos; en escritorio se recomienda CPU (verificado en Apple M4 Max). En Android, GPU LiteRT funciona (verificado en Galaxy S26).
-- Opciones de despliegue: `litert-lm run` (CLI), `litert-lm serve` (API compatible OpenAI), Swift runtime para iPhone/macOS (LiteRTDemo), Google AI Edge Gallery para Android (importación directa desde Hugging Face).
-- Latencia y throughput: en Apple M4 Max CPU, prefill de 256 tokens a 409 tok/s, decode a 63.9 tok/s, TTFT de 0.64 s.
+- Tamaño en disco: ~363 MB para el fichero `.litertlm`; el repositorio completo ocupa 1,8 GB.
+- VRAM/RAM estimada para inferencia: no disponible de forma explícita; por el tamaño del fichero y el cómputo entero, el modelo está diseñado para ejecutarse en memoria de dispositivo, no en VRAM de GPU dedicada.
+- GPU recomendadas: no aplica en el sentido habitual; el runtime objetivo es LiteRT-LM sobre GPU integrada de móvil (verificado en Galaxy S26) y CPU de escritorio (verificado en Apple M4 Max).
+- Cabe en hardware de consumo: sí, es su propósito; verificado en un smartphone Galaxy S26 y en un Mac con Apple M4 Max.
+- Opciones de despliegue: LiteRT-LM (`litert-lm run`, `litert-lm benchmark`, `litert-lm serve` con API compatible con OpenAI). No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: ver tabla de benchmarks; TTFT de 0,64 s en M4 Max (CPU, prefill de 256 tokens).
 
 ## Comparativa con modelos similares
 
-El modelo base es HuggingFaceTB/SmolVLM2-500M-Video-Instruct, del cual esta conversión es una adaptación al formato LiteRT-LM. No se dispone de datos de otros modelos comparables en la información proporcionada. La familia SmolVLM2 incluye variantes de 256M y 2.2B, pero no se han encontrado especificaciones detalladas en los resultados de búsqueda. Esta conversión se diferencia del modelo base únicamente en el formato y la cuantización, manteniendo la misma arquitectura y capacidades para la ruta de imagen.
-
-| Modelo | Parametros | Contexto | Formato | Licencia |
-|---|---|---|---|---|
-| litert-community/SmolVLM2-500M (esta conversión) | ~500M | 2048 | .litertlm | Apache 2.0 |
-| HuggingFaceTB/SmolVLM2-500M-Video-Instruct (base) | ~500M | No disponible | safetensors (original) | Apache 2.0 |
+| Modelo | Parametros | Contexto | Formato / runtime | Licencia | Notas |
+|---|---|---|---|---|---|
+| litert-community/SmolVLM2-500M (este) | 500M (decoder 360M) | 2.048 | `.litertlm` / LiteRT-LM | Apache 2.0 | Cuantizado int4/int8, orientado a dispositivo |
+| HuggingFaceTB/SmolVLM2-500M-Video-Instruct | 500M | no disponible en la informacion | safetensors (modelo base) | Apache 2.0 | Modelo original sin cuantizar; sirve de referencia |
+| Otras alternativas de VLM pequeño | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- Modelo muy pequeño (500M): puede producir respuestas repetitivas o verbosas con decodificación greedy; se recomienda usar sampling (top-p) y limitar max_tokens.
-- Una sola imagen por conversación: no admite múltiples imágenes en el mismo chat; en el backend GPU, una segunda imagen puede degradar la calidad (rasgo del delegado GPU).
-- El backend GPU de macOS no funciona correctamente en litert-lm 0.15.0 (genera tokens vacíos); usar CPU en escritorio.
-- No se han documentado capacidades multilingües; el rendimiento en idiomas distintos del inglés no está verificado.
-- Sin soporte para tool calling, agentes ni razonamiento multi-paso.
-- La cuantización int4 puede introducir pérdida de precisión en tareas que requieren razonamiento numérico o lógico fino.
-- La licencia Apache 2.0 permite uso comercial, pero el runtime LiteRT-LM es de Google y puede tener sus propias condiciones.
+- Modelo muy pequeño (500M): en decodificación puramente greedy puede volverse repetitivo o verboso; la model card recomienda usar muestreo (por ejemplo, top-p) y limitar `max_tokens`.
+- Ventana de contexto de solo 2.048 tokens, lo que restringe conversaciones largas y el número de imágenes simultáneas.
+- Imágenes forzadas a 512×512: se pierde detalle en imágenes de alta resolución o con texto pequeño.
+- No hay información sobre sesgos, idiomas soportados ni evaluación de alucinación; al ser un VLM pequeño, el riesgo de descripciones incorrectas o inventadas en imágenes ambiguas es relevante.
+- El backend GPU de macOS falló con litert-lm 0.15.0; se recomienda CPU en escritorio con esa versión y verificar la versión del runtime.
+- Problemas conocidos de caché del CLI: descargas incompletas pueden quedar en `~/.litert-lm/cache/huggingface/litert-community/SmolVLM2-500M/` y reutilizarse sin comprobar tamaño; si el fichero se descargó antes del reemplazo del 2026-11-13, hay que borrarlo manualmente para usar la versión nueva.
+- Licencia Apache 2.0: permite uso comercial, pero debe conservarse el aviso de licencia y atribución; el modelo base es de Hugging Face y esta publicación es una conversión de la comunidad, no oficial.
+- No se documenta soporte de tool calling ni de agentes; no debe asumirse en producción.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/litert-community/SmolVLM2-500M
+- Hugging Face: https://huggingface.co/litert-community/SmolVLM2-500M
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolVLM2-500M-Video-Instruct
-- Repositorio LiteRT-LM: https://github.com/google-ai-edge/litert-lm
-- Guia GPU para Android: https://github.com/john-rocky/hf-to-litertlm/blob/main/docs/android-gpu.md
-- Google AI Edge Gallery: https://github.com/google-ai-edge/gallery
-- Documentacion de SmolVLM2-500M-Video-Instruct en M5Stack: https://docs.m5stack.com/en/guide/ai_accelerator/llm-8850/m5_llm_8850_smolvlm2
+- Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
+- Medición de referencia citada (LiteRT en Galaxy S26): https://github.com/john-rocky/apple-silicon-llm-bench/blob/main/results/android/tinyhybridnet-three-runtimes.md

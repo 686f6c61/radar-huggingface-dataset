@@ -2,61 +2,57 @@
 
 ## Resumen
 
-Glimpse C1 2B es un modelo especializado en la limpieza de dictado (*dictation cleanup*): recibe una transcripción de voz en bruto y devuelve texto escrito limpio, con puntuación correcta, sin muletillas ni reinicios falsos, aplicando autocorrecciones y comandos hablados. Lo desarrolla Glimpse-Dictation, el equipo del producto Glimpse (https://tryglimpse.cc), y está pensado para ejecutarse íntegramente en el dispositivo del usuario, sin enviar audio ni transcripciones a la nube.
+Glimpse C1 2B es un adaptador LoRA especializado en la limpieza de dictado por voz, desarrollado por Glimpse-Dictation para su aplicación de dictado Glimpse. No es un modelo de propósito general: su única tarea es transformar transcripciones en bruto (con muletillas, reinicios, autocorrecciones y falta de puntuación) en texto limpio y bien formateado, ejecutándose íntegramente en el dispositivo del usuario. El adaptador se monta sobre Ternary Bonsai 2 2B de PrismML, un modelo ternario derivado de Qwen3.5, y los pesos publicados en el repositorio incluyen tanto el adaptador como la base MLX en 2 bits con los tensores de visión eliminados.
 
-Técnicamente no es un modelo entrenado desde cero: es un adaptador LoRA sobre Ternary Bonsai 2 2B de PrismML, un modelo ternario (2 bits) derivado de Qwen3.5 que se distribuye en formato MLX. El adaptador se ha entrenado sobre el *prompt* de limpieza propietario de Glimpse, con la transcripción del usuario envuelta en etiquetas `<transcript>…</transcript>`. El conjunto publica 1.882.232.640 parámetros y ocupa 0,6 GB en el repositorio, incluyendo los pesos base ya cuantizados.
+El modelo tiene 1.882.232.640 parámetros totales y un repositorio de solo 0,6 GB, lo que refleja la cuantización extrema de la base. Está entrenado con el prompt de limpieza propio de Glimpse, con la transcripción del usuario delimitada por etiquetas `<transcript>...</transcript>`, y funciona en Mac (Metal) y Windows (Vulkan). Su relevancia actual radica en que demuestra que una tarea de post-procesado lingüístico acotada puede resolverse con un modelo de 2B cuantizado a 2 bits, con latencias de 0,27 s por limpieza en un M2 Pro, superando en su suite interna a alternativas comerciales como Superwhisper S1-mini o Apple Intelligence.
 
-Su relevancia es doble: por un lado, demuestra que una tarea de post-procesado de voz acotada se puede resolver con un modelo de menos de 2B parámetros en cuantización ternaria y latencias de 0,27 s en un Apple M2 Pro; por otro, su licencia es marcadamente restrictiva (glimpse-c1), con uso comercial, hosting o entrenamiento sobre sus salidas sujeto a permiso escrito.
+La licencia es el punto crítico: el adaptador usa la licencia propietaria `glimpse-c1`, que permite su uso a través de la app Glimpse (incluido uso comercial) y uso personal en dispositivos propios, pero exige permiso escrito para distribuirlo, alojarlo, integrarlo en otro producto o entrenar sobre sus salidas. La base, en cambio, es Apache 2.0.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso derivado de Qwen3.5 (Ternary Bonsai 2 2B), con adaptador LoRA superpuesto |
-| Parámetros totales | 1.882.232.640 (~1,88B) |
-| Parámetros activos | No aplica: modelo denso, no es MoE |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | Ternaria / 2 bits en formato MLX (`model.safetensors` de PrismML, 2-bit) |
-| Idiomas soportados | No disponible (el autor reporta una suite de evaluación "non-English" de 55 casos, sin declarar lista de idiomas) |
-| Licencia | Adaptador: glimpse-c1 (licencia propia, uso personal). Pesos base: Apache 2.0 de PrismML |
-| Formato de pesos | safetensors (`adapter.safetensors` con alpha/r plegados en B, `model.safetensors` MLX 2-bit), más `config.json` y `tokenizer.json` |
-| Modelo base | prism-ml/Ternary-Bonsai-2-2B-mlx-2bit |
-| Tamaño del repositorio | 0,6 GB |
-| Pipeline | text-generation |
+| Arquitectura | Transformer (base Ternary Bonsai 2 2B, derivada de Qwen3.5) con adaptador LoRA |
+| Parametros totales | 1.882.232.640 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Base MLX en 2 bits (ternaria); adaptador en safetensors |
+| Idiomas soportados | no disponible (la suite de evaluacion incluye 55 casos "non-English") |
+| Licencia | glimpse-c1 (adaptador, propietaria); base Apache 2.0 |
+| Formato de pesos | safetensors (`adapter.safetensors`, `model.safetensors` MLX 2-bit) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es un transformer denso de ~1,88B parámetros procedente de la familia Qwen3.5, publicado por PrismML como Ternary Bonsai 2 2B en cuantización ternaria de 2 bits para MLX. Sobre esa base, Glimpse entrena un adaptador LoRA de bajo rango; en el fichero distribuido los factores alpha y r están plegados en la matriz B, de modo que el adaptador se aplica de forma directa sobre los pesos base. El paquete publicado elimina los tensores de visión del modelo original, por lo que la variante distribuida es exclusivamente de texto.
+El modelo es un adaptador LoRA sobre Ternary Bonsai 2 2B de PrismML, un transformer ternario derivado de Qwen3.5 y distribuido originalmente en formato MLX de 2 bits. El repositorio publica el adaptador con los factores alpha y r plegados en la matriz B (`adapter.safetensors`), junto con los pesos de la base MLX 2-bit a los que se han eliminado los tensores de visión (`model.safetensors`), el `config.json` y el `tokenizer.json` del pack original de PrismML.
 
-No se han publicado detalles sobre el volumen de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO; la model card únicamente indica que el adaptador se entrenó con el *prompt* de limpieza de Glimpse y el dictado en el turno de usuario dentro de etiquetas `<transcript>`. El autor advierte explícitamente que con otros *prompts* los resultados son peores, lo que convierte el formato de entrada en parte inseparable del modelo. La innovación práctica no está en la arquitectura, sino en la combinación de un modelo ternario de 2 bits con un adaptador de tarea muy específica, que permite inferencia local en Metal (Mac) y Vulkan (Windows) con latencias subsegundo.
+El entrenamiento se realizó sobre el prompt de limpieza interno de Glimpse, con la transcripción en bruto colocada en el turno de usuario dentro de etiquetas `<transcript>...</transcript>`. La model card no detalla el volumen de datos de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO. La innovación principal no es arquitectónica sino de eficiencia: conseguir una tarea de reescritura lingüística con corrección de autocorrecciones y aplicación de comandos hablados en un modelo de 2B cuantizado a 2 bits que corre en CPU/GPU de consumo.
 
 ## Capacidades
 
-- Limpieza de dictado: eliminación de muletillas, tartamudeos y reinicios falsos de frase.
-- Resolución de autocorrecciones habladas ("a las dos, no, en realidad a las tres" devuelve "a las tres").
-- Puntuación automática: inserción de puntos, comas y signos en las posiciones correctas.
-- Ejecución de comandos hablados, como convertir el texto en una lista de viñetas.
-- Seguimiento de instrucciones de estilo (*modes*): desde un correo formal hasta un mensaje rápido de chat.
-- Procesamiento de habla en bruto, con una suite específica de 52 casos en la evaluación del autor.
-- Cobertura no inglesa parcial, medida en 55 casos con 54 aciertos en la suite del autor.
-- Ejecución 100 % en el dispositivo (on-device), sin llamadas a servicios externos.
-- No soporta tool calling, uso como agente, razonamiento multi-paso ni generación de código; el autor indica explícitamente que no es un modelo conversacional.
+- Limpieza de dictado: eliminación de muletillas y reinicios abandonados.
+- Resolución de autocorrecciones habladas (por ejemplo, "a las dos, no, en realidad a las tres" pasa a "a las tres").
+- Puntuación automática de las frases generadas.
+- Ejecución de comandos hablados, como convertir texto en una lista de viñetas.
+- Seguimiento de modos de escritura e instrucciones de estilo (correo formal, mensaje rápido de chat).
+- Procesamiento de dictado en bruto con ruido léxico y sintáctico.
+- Ejecución on-device en Mac (Metal) y Windows (Vulkan).
+- No es un modelo conversacional ni de propósito general; no se documentan tool calling, agentes, visión, audio ni modo de razonamiento.
 
 ## Casos de uso
 
-- Limpieza de dictado en aplicaciones de escritorio: integrar el adaptador en un cliente de notas o de correo para que el texto dictado llegue al campo de escritura sin muletillas ni puntuación defectuosa, con latencias de ~0,27 s por operación en un M2 Pro.
-- Transcripción de reuniones y notas de voz: post-procesar la salida de un ASR previo para eliminar reinicios y aplicar autocorrecciones antes de guardar el acta, manteniendo el audio y el texto en local por motivos de privacidad.
-- Redacción de correos por voz: usar los *modes* para reformular un dictado en tono formal, adecuado para comunicación con clientes, sin salir del portátil del usuario.
-- Accesibilidad y entrada por voz: personas con movilidad reducida que dictan en lugar de teclear pueden obtener texto coherente y puntuado en herramientas ofimáticas, con un modelo que cabe en 0,6 GB de disco.
-- Documentación técnica hablada: convertir un dictado de pasos de instalación o notas de incidencia en una lista de viñetas o pasos numerados mediante comandos hablados.
-- Evaluación comparativa de modelos de post-proceso ASR: usar el conjunto de pruebas publicado (171 casos de limpieza, 24 de autocorrección, 52 de habla bruta, 55 no ingleses) como referencia para comparar alternativas on-device.
-- Prototipado de pipelines de voz en Mac y Windows: al ejecutarse sobre Metal y Vulkan, sirve para validar un flujo de dictado completo antes de decidir si se necesita un modelo mayor.
+- Dictado en escritorio: integrado en la app Glimpse, el modelo recibe la transcripción del reconocedor de voz y devuelve texto limpio en 0,27 s en un M2 Pro, lo que permite escribir por voz sin revisar manualmente el resultado.
+- Redacción de correos por voz: el modo de escritura formal convierte un dictado desordenado en un correo con puntuación y estructura, útil para usuarios que redactan más rápido hablando que tecleando.
+- Notas rápidas y mensajería: el modo de chat genera mensajes concisos a partir de dictados coloquiales, con las muletillas y reinicios eliminados.
+- Documentación con listas: el comando hablado "haz esto una lista de viñetas" transforma un párrafo dictado en una lista estructurada, adecuado para actas de reunión o apuntes técnicos.
+- Accesibilidad: personas con movilidad reducida o dificultades de tecleado pueden dictar texto largo y obtener un resultado publicable sin edición manual, gracias a la corrección de autocorrecciones y a la puntuación automática.
+- Flujos de trabajo con privacidad estricta: al ejecutarse íntegramente en el dispositivo, es apto para entornos donde el dictado no puede enviarse a la nube (sanidad, legal, banca), siempre que el uso se realice a través de la app Glimpse conforme a su licencia.
+- Post-procesado de transcripciones en bruto: puede emplearse para normalizar salidas de ASR antes de almacenarlas o indexarlas, aunque la licencia restringe el despliegue fuera de la app Glimpse sin permiso escrito.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor en sus pruebas de limpieza de dictado, ejecutadas en un Apple M2 Pro con el *prompt* recomendado de cada modelo:
+Resultados de la suite de limpieza de Glimpse, ejecutada en un M2 Pro con el prompt recomendado de cada modelo:
 
-| Modelo | Suite de limpieza (171) | Autocorrecciones (24) | Habla bruta (52) | No inglés (55) |
+| Modelo | Suite de limpieza (171) | Autocorrecciones (24) | Habla en bruto (52) | No inglés (55) |
 |---|---|---|---|---|
 | Glimpse C1 2B | 162 | 22 | 47 | 54 |
 | Superwhisper S1-mini | 123 | 20 | 39 | 35 |
@@ -64,47 +60,41 @@ Resultados publicados por el autor en sus pruebas de limpieza de dictado, ejecut
 | Apple Intelligence | 114 | 15 | 27 | 36 |
 | Bonsai 2B sin entrenar | 88 | 1 | 15 | 33 |
 
-Latencia declarada: 0,27 s para una limpieza típica en un M2 Pro. No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible.
+Latencia típica de limpieza: 0,27 s en un M2 Pro. No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: en torno a 0,5-0,6 GB para los pesos en 2 bits; el repositorio completo ocupa 0,6 GB, por lo que la inferencia cabe holgadamente en 2 GB de memoria, incluyendo buffers de KV y tokenizador.
-- Cabe en cualquier GPU de consumo actual e incluso en inferencia sobre CPU; el autor lo ejecuta en un Apple M2 Pro (Metal) y en Windows mediante Vulkan.
-- GPU recomendadas: no se especifican; cualquier iGPU o dGPU con soporte Metal o Vulkan es suficiente dada la cuantización ternaria.
-- Opciones de despliegue: el runtime de Glimpse (Metal en Mac, Vulkan en Windows) y el ecosistema MLX de Apple, dado que los pesos publicados son MLX 2-bit. El soporte en vLLM, llama.cpp, Ollama o TGI no está confirmado en la información disponible.
-- Latencia y throughput: ~0,27 s por operación de limpieza en M2 Pro; no se han publicado cifras de *tokens* por segundo ni de rendimiento en otras plataformas.
+- VRAM estimada: el repositorio completo ocupa 0,6 GB, por lo que la inferencia cabe holgadamente en GPUs de consumo con 4 GB o más.
+- GPU recomendadas: no se especifican modelos concretos; la model card cita ejecución en Mac con Metal y Windows con Vulkan, lo que incluye GPUs integradas y dedicadas de gama media.
+- Cabe en GPU de consumo: sí, con amplio margen, dado el tamaño del repo y la cuantización a 2 bits.
+- Opciones de despliegue: la vía soportada es la app Glimpse; los pesos están en formato MLX 2-bit, por lo que la inferencia fuera de Glimpse requiere herramientas compatibles con MLX o conversión a otro formato, no documentada.
+- Latencia y throughput: 0,27 s por limpieza típica en un M2 Pro; no se publican cifras de throughput ni de latencia en otras plataformas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Suite de limpieza (171) | Disponibilidad |
+| Modelo | Parámetros | Contexto | Suite de limpieza (171) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Glimpse C1 2B | ~1,88B | No disponible | glimpse-c1 (uso personal; comercial con permiso) | 162 | Hugging Face, pesos safetensors |
-| Superwhisper S1-mini | No disponible | No disponible | No disponible | 123 | Producto comercial de Superwhisper |
-| SimpleWords v2 | No disponible | No disponible | No disponible | 118 | No disponible |
-| Apple Intelligence | No disponible | No disponible | Propietaria | 114 | Integrado en macOS/iOS |
-| Bonsai 2B sin entrenar | ~2B (base) | No disponible | Apache 2.0 (base PrismML) | 88 | Hugging Face |
-
-La comparación se limita a la suite propietaria del autor; no hay datos públicos de MMLU, latencia o consumo equiparables para las alternativas, y sus fichas técnicas no están disponibles en la información consultada.
+| Glimpse C1 2B | 1,88B | no disponible | 162 | glimpse-c1 (propietaria) | Pesos en HF, uso restringido a la app Glimpse |
+| Superwhisper S1-mini | no disponible | no disponible | 123 | no disponible | Producto comercial |
+| SimpleWords v2 | no disponible | no disponible | 118 | no disponible | no disponible |
+| Apple Intelligence | no disponible | no disponible | 114 | propietaria | Integrado en macOS/iOS |
+| Bonsai 2B sin entrenar | ~2B | no disponible | 88 | Apache 2.0 | Pesos abiertos en HF |
 
 ## Limitaciones y advertencias
 
-- Licencia restrictiva: el adaptador es gratuito solo para uso personal en dispositivos propios. Distribuirlo en un producto o servicio, alojarlo, compartirlo, usarlo comercialmente o entrenar sobre sus salidas requiere permiso escrito de Glimpse (hello@tryglimpse.cc).
-- No es un modelo conversacional: está ajustado para limpieza de dictado y su comportamiento fuera de esa tarea es deficiente.
-- Dependencia del *prompt*: fue entrenado con el *prompt* de limpieza de Glimpse y el dictado envuelto en `<transcript>…</transcript>`; con otros formatos se deben esperar resultados peores.
-- Capacidad limitada por el tamaño: dictados largos o muy enrevesados pueden devolver alguna corrección sin aplicar o conservar frases que deberían eliminarse.
-- Los *modes* de estilo se siguen en aproximadamente el 80 % de los casos reservados (*held-out*).
-- Riesgo de alucinación en forma de corrección inventada: al reescribir el texto puede alterar contenido que el usuario sí quería conservar, algo crítico en contextos médicos, legales o financieros.
-- Idiomas: no se declara una lista oficial; la única evidencia es la suite "non-English" del autor (54/55), insuficiente para garantizar calidad multilingüe general.
-- Sin tensores de visión: la variante distribuida ha eliminado las capacidades multimodales del modelo base.
-- Validación externa muy limitada: 0 descargas y 0 *likes* en Hugging Face en el momento de la consulta; todos los benchmarks proceden del propio autor.
-- Longitud de contexto no documentada: no se debe asumir que soporta dictados de varios minutos en una sola pasada.
+- Es un modelo de 2B: los dictados largos o muy enrevesados pueden devolver una corrección omitida o conservar una frase que debería haberse eliminado.
+- Los modos de escritura se siguen en aproximadamente el 80 % de los casos reservados para evaluación.
+- Está ajustado exclusivamente para limpieza de dictado; no es un modelo de chat y su rendimiento con otros prompts es previsiblemente peor.
+- La licencia `glimpse-c1` prohíbe distribuir, compartir o alojar el adaptador, integrarlo en otro producto o servicio, otros usos comerciales y entrenar sobre sus salidas sin permiso escrito de Glimpse.
+- No se documentan sesgos conocidos ni tasas de alucinación; al ser un modelo de reescritura, el riesgo principal es la alteración o pérdida de contenido del dictado original.
+- La cobertura de idiomas no está declarada; solo se aportan resultados agregados de 55 casos no ingleses.
+- No se especifica la longitud de contexto, lo que limita la planificación de despliegues con dictados muy largos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Glimpse-Dictation/Glimpse-C1-2B
+- Licencia del adaptador: https://huggingface.co/Glimpse-Dictation/Glimpse-C1-2B/blob/main/LICENSE-C1.md
 - Modelo base: https://huggingface.co/prism-ml/Ternary-Bonsai-2-2B-mlx-2bit
 - Anuncio del modelo: https://tryglimpse.cc/blog/c1-cleanup-model
-- Producto Glimpse: https://tryglimpse.cc
-- Licencia del adaptador: https://huggingface.co/Glimpse-Dictation/Glimpse-C1-2B/blob/main/LICENSE-C1.md
-- Contacto para licencias comerciales: hello@tryglimpse.cc
-- Los resultados de búsqueda web obtenidos (meetglimpse.com, WordReference, Linguee, Cambridge Dictionary) no están relacionados con este modelo y se han descartado.
+- Aplicación Glimpse: https://tryglimpse.cc
+- Contacto para licencias: hello@tryglimpse.cc

@@ -47,5 +47,16 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "GitHub - webbrain-one/webbrain: Open-source AI browser agent for …",
+      "url": "https://github.com/webbrain-one/webbrain",
+      "snippet": "WebBrain is a web browser extension that puts an AI agent in a side panel next to your tabs. Ask it about the page you're on, or …Read more"
+    },
+    {
+      "title": "webbrain-one - GitHub",
+      "url": "https://github.com/webbrain-one",
+      "snippet": "The Open-Source AI Browser Agent. webbrain-one has 24555 repositories available. Follow their code on GitHub."
+    }
+  ]
 }

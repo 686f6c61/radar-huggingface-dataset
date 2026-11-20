@@ -2,56 +2,59 @@
 
 ## Resumen
 
-Nova Coder 2.0 GGUF es la distribucion cuantizada en formato GGUF de Nova Coder 2.0, publicada por Moderno Tech bajo la familia de producto "Nova". Se trata de un modelo de generacion de codigo de arquitectura Mixture of Experts (MoE) con aproximadamente 15.700 millones de parametros totales y unos 2.400 millones de parametros activos por token. La model card identifica explicitamente la arquitectura como `DeepseekV2ForCausalLM` y los archivos de cuantizacion conservan el nombre original `DeepSeek-Coder-V2-Lite-Instruct`, lo que situa el modelo base en la familia DeepSeek-Coder-V2-Lite de DeepSeek.
+Nova Coder es un modelo de lenguaje especializado en programación desarrollado por Moderno Tech dentro de su familia Nova AI. Se distribuye en formato GGUF cuantizado con el objetivo declarado de ejecución local en equipos de usuario, y cuenta con aproximadamente 15.700 millones de parámetros totales según los pesos publicados. La arquitectura es Mixture of Experts (MoE) con 27 bloques, y el autor lo posiciona como la herramienta de la familia orientada específicamente a tareas de desarrollo de software, frente a modelos de propósito general como Nova Prime (35B).
 
-El modelo resuelve el caso de uso de generacion y asistencia de codigo en entornos locales, ofreciendo una ventana de contexto de 163.840 tokens que permite trabajar con repositorios completos o conversaciones multi-turno extensas sin truncamiento. Su naturaleza MoE con solo ~2,4B de parametros activos lo hace especialmente atractivo para despliegue en hardware de consumo, ya que el coste computacional por token es bajo en comparacion con un modelo denso de 16B.
+El modelo se presenta bajo una filosofía de inferencia local: el usuario descarga los pesos y ejecuta la generación en su propio hardware mediante motores compatibles con GGUF, sin depender de servidores centralizados. Está etiquetado con los idiomas español e inglés en la model card, aunque el campo de idiomas del repositorio solo declara inglés. La información técnica disponible es limitada: no se publican detalles sobre composición del dataset de entrenamiento, número de tokens, proceso de alineación (RLHF/DPO) ni resultados de benchmarks.
 
-La relevancia actual radica en la disponibilidad de multiples cuantizaciones (desde Q2_K hasta f16) que permiten ajustar el equilibrio entre calidad y huella de memoria, y en la compatibilidad con herramientas estandar como LM Studio, Ollama y llama.cpp. No obstante, la publicacion presenta inconsistencias documentales (nombres de archivo heredados del modelo base, licencia marcada como "other" con atribuciones a DeepSeek) que el lector debe considerar antes de un uso en produccion.
+La relevancia actual del modelo radica en su propuesta de especialización vertical (código) combinada con despliegue local en formato cuantizado, un patrón cada vez más demandado por desarrolladores que necesitan asistentes de programación sin enviar código propietario a servicios remotos. No obstante, la ausencia de métricas verificables y de documentación detallada sobre el entrenamiento limita seriamente su evaluación objetiva.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (`DeepseekV2ForCausalLM`) |
-| Parametros totales | ~15.706.484.224 (~16B) |
-| Parametros activos | ~2.4B por token |
-| Longitud de contexto | 163.840 tokens |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_K_S, Q4_K_M, Q5_0, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
-| Idiomas soportados | Ingles (segun model card y tags) |
-| Licencia | "other" (se citan MIT / model license de DeepSeek como condiciones del origen) |
-| Formato de pesos | GGUF (safetensors BF16 en el repo original `ModernoTech/Nova-Coder`) |
-| Capas | 27 |
-| Hidden size | 2048 |
-| Cabezas de atencion | 16 |
-| Vocabulario | 102.400 tokens |
+| Arquitectura | Mixture of Experts (MoE), transformer; tag `deepseek_v2` en Hugging Face |
+| Parametros totales | 15.706.484.224 (~15,7B) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF cuantizado (niveles concretos no especificados) |
+| Idiomas soportados | es, en (segun model card); el campo de idiomas del repo solo declara en |
+| Licencia | other (terminos no detallados) |
+| Formato de pesos | GGUF |
+| Capas (bloques) | 27 |
+| Tamano del repositorio | 155,3 GB |
+| Descargas | 1.238 |
+| Fecha de creacion | 2026-11-05 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer con capas de mezcla de expertos (MoE) segun el esquema `DeepseekV2ForCausalLM`, con 27 capas, hidden size de 2048 y 16 cabezas de atencion. El modelo activa aproximadamente 2,4B de parametros de un total de ~16B por token, lo que reduce el coste de inferencia frente a un denso equivalente. El vocabulario de 102.400 tokens y el contexto de 163.840 tokens son coherentes con la familia DeepSeek-Coder-V2-Lite, de la que el modelo hereda la estructura.
+Nova Coder emplea una arquitectura Mixture of Experts en la que el procesamiento se distribuye entre expertos especializados y se activan selectivamente los correspondientes a cada token, según describe el autor. El modelo consta de 27 bloques o capas. El tag `deepseek_v2` presente en el repositorio sugiere una arquitectura derivada o compatible con la familia DeepSeek V2, aunque el autor no lo confirma explícitamente en la model card. No se especifica el número de parámetros activos por token, dato crítico en modelos MoE para estimar coste de inferencia.
 
-No se dispone en la informacion proporcionada de datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron fases de RLHF, DPO o ajuste por instrucciones mas alla de la designacion "Instruct" en los nombres de archivo. Tampoco se documentan innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, etc.) en la model card. La informacion disponible no permite verificar si Moderno Tech realizo un ajuste adicional sobre el modelo base o si la publicacion es una redistribucion cuantizada del mismo.
+No hay información publicada sobre el volumen de tokens de entrenamiento, la composición del dataset (proporción de código frente a lenguaje natural, lenguajes de programación cubiertos), ni sobre si se aplicaron técnicas de alineación como RLHF, DPO o instrucción supervisada. Tampoco se documentan innovaciones técnicas específicas como decodificación especulativa, atención lineal o mecanismos de thinking mode. La model card se centra en la filosofía de producto (ejecución local, accesibilidad) más que en detalles técnicos verificables.
 
 ## Capacidades
 
-- Generacion de codigo en multiples lenguajes de programacion, heredada del modelo base DeepSeek-Coder-V2-Lite-Instruct.
-- Razonamiento sobre fragmentos de codigo y explicacion de logica de programas.
-- Conversacion multi-turno (tag `conversational` en Hugging Face).
-- Manejo de contextos largos de hasta 163.840 tokens, adecuado para repositorios o archivos extensos.
-- Capacidad de instrucciones (variante Instruct).
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no documentado explicitamente en la model card.
-- Capacidades multilingues: limitadas a ingles segun la model card y los tags.
-- Vision, audio o thinking mode: no disponible.
+- Generación de código en el contexto de desarrollo de software, según los casos de uso declarados por el autor.
+- Explicación de fragmentos de código y asistencia para comprender proyectos existentes.
+- Depuración y detección de errores.
+- Refactorización de código y creación de funciones y módulos.
+- Generación de pruebas (tests) y documentación técnica.
+- Revisión de código.
+- Apoyo en tareas de arquitectura y diseño de software, "según capacidades verificadas" (el autor no aporta evidencia).
+- Conversación multi-turno: el repositorio incluye el tag `conversational`.
+- Capacidad multilingüe declarada es/en, aunque sin datos sobre calidad relativa por idioma.
+- Soporte de tool calling / function calling: no disponible (no documentado).
+- Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
+- Modo thinking, visión o audio: no disponible (no documentado).
 
 ## Casos de uso
 
-- Asistencia de codigo en IDE local: con la cuantizacion Q4_K_M (~10,4 GB) el modelo cabe en GPUs de consumo y puede integrarse en editores mediante llama.cpp u Ollama para autocompletado y generacion de funciones.
-- Refactorizacion de archivos extensos: el contexto de 163.840 tokens permite cargar modulos completos o varios archivos relacionados y solicitar reescrituras coherentes sin perder referencias cruzadas.
-- Generacion de tests unitarios: el modelo puede recibir una funcion y producir casos de prueba, aprovechando su entrenamiento en codigo y su capacidad de instrucciones.
-- Explicacion y documentacion de codigo legacy: util para equipos que necesitan generar docstrings o resumenes de modulos heredados en ingles.
-- Chatbot de soporte tecnico para desarrolladores: la naturaleza conversacional y el contexto largo permiten mantener sesiones de depuracion con historial extenso de errores y trazas.
-- Prototipado rapido en entornos sin GPU dedicada: las variantes Q2_K (~6,4 GB) y Q3_K_S (~7,5 GB) permiten ejecucion en maquinas con 8-12 GB de RAM/VRAM, a costa de menor fidelidad.
-- Traduccion de codigo entre lenguajes: el modelo puede convertir fragmentos entre lenguajes comunes, aunque la calidad debe validarse por pruebas automatizadas dado el riesgo de alucinacion.
+- Asistencia de programación en IDE local: el modelo, al distribuirse en GGUF, puede integrarse en editores mediante servidores de inferencia locales compatibles, permitiendo autocompletado y generación de funciones sin enviar el código a la nube. Adecuado para equipos con políticas estrictas de confidencialidad de código.
+- Explicación de bases de código heredadas: un desarrollador puede pegar fragmentos o módulos y solicitar explicaciones paso a paso, aprovechando la especialización declarada en comprensión de código. Útil en procesos de onboarding sobre repositorios antiguos.
+- Depuración asistida: dado un mensaje de error y el fragmento relevante, el modelo puede proponer causas y correcciones. La utilidad real dependerá de la ventana de contexto, que no está documentada.
+- Generación de pruebas unitarias: el modelo puede redactar tests a partir de funciones existentes, reduciendo el trabajo repetitivo en pipelines de CI. Requiere validación humana dado el riesgo de alucinación en APIs y firmas.
+- Refactorización guiada: transformación de código para mejorar legibilidad o aplicar patrones, con revisión posterior. Adecuado para tareas acotadas más que para refactorizaciones masivas sin contexto suficiente.
+- Documentación técnica automatizada: generación de docstrings y documentación de módulos a partir del código fuente, como paso previo en flujos de release.
+- Formación y estudio de programación: entorno local sin coste por consulta para estudiantes que quieran practicar con un asistente sin suscripciones, dentro de las limitaciones de hardware del equipo.
 
 ## Benchmarks y rendimiento
 
@@ -59,45 +62,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada segun cuantizacion (tamano de archivo como referencia de huella en memoria):
-  - Q2_K: ~6,4 GB
-  - Q3_K_S: ~7,5 GB
-  - Q4_K_M (recomendada): ~10,4 GB
-  - Q5_K_M: ~11,9 GB
-  - Q6_K: ~14,1 GB
-  - Q8_0: ~16,7 GB
-  - f16: ~31,4 GB
-- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M a Q8_0 con comodidad; RTX 3090/4080 (16-24 GB) para Q4_K_M y Q5; A100/H100 solo necesarias para f16 o despliegues concurrentes.
-- Cabe en GPU de consumo: si, desde GPUs de 8 GB (Q2_K/Q3_K_S) hasta 16 GB (Q6_K) y 24 GB (Q8_0).
-- Opciones de despliegue: llama.cpp, LM Studio, Ollama (segun la model card); vLLM y TGI no estan documentados para esta distribucion GGUF.
-- Latencia y throughput: no disponible. Al ser MoE con ~2,4B activos, se espera un throughput superior al de un denso de 16B, pero no hay mediciones publicadas en la informacion proporcionada.
+- VRAM estimada para inferencia: con ~15,7B parámetros totales, una cuantización Q4 requiere aproximadamente 9-10 GB de memoria; Q5 en torno a 11-12 GB; Q8 alrededor de 16-17 GB. Al ser MoE, el uso de memoria depende de si el motor mantiene todos los expertos en memoria (lo habitual en llama.cpp) o solo los activos.
+- GPU recomendadas: para Q4, una RTX 4070 Ti / 4080 (12-16 GB) puede ser suficiente; para Q8, se recomienda RTX 4090 (24 GB), A6000 o A100. En el extremo profesional, H100 ofrece margen para contexto largo y mayor throughput.
+- Cabe en GPU de consumo: sí, en cuantizaciones Q4/Q5 en GPUs con 12 GB o más, siempre que el contexto no sea muy largo; con contexto extenso el consumo de KV cache puede exceder la VRAM disponible.
+- Opciones de despliegue: llama.cpp y Ollama (formato GGUF nativo), LM Studio; vLLM y TGI no soportan GGUF de forma directa sin conversión a safetensors, y el repositorio no incluye pesos sin cuantizar.
+- Latencia y throughput estimados: no disponible. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Activos | Contexto | Licencia | Formato |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Nova Coder 2.0 GGUF | ~16B | ~2,4B | 163.840 | other (atribuciones DeepSeek) | GGUF |
-| DeepSeek-Coder-V2-Lite-Instruct | ~16B | ~2,4B | 163.840 | DeepSeek Model License | safetensors / GGUF |
-| Qwen2.5-Coder-7B-Instruct | 7B | denso | 32.768 (ampliable) | Apache 2.0 | safetensors / GGUF |
-| CodeLlama-13B-Instruct | 13B | denso | 16.384 | Llama 2 License | safetensors / GGUF |
+| Nova Coder | ~15,7B (MoE) | no disponible | other | GGUF | Especializado en código; sin benchmarks publicados |
+| DeepSeek-Coder-V2-Lite | ~16B (MoE, 2,4B activos) | 128K | licencia propia permisiva | safetensors, GGUF | Referencia de la familia `deepseek_v2`; benchmarks publicados |
+| Qwen2.5-Coder-14B | 14B (denso) | 128K | Apache 2.0 | safetensors, GGUF | Especializado en código, ampliamente evaluado |
+| CodeLlama-13B | 13B (denso) | 16K | licencia Llama | safetensors, GGUF | Referencia anterior en código, menos competitivo hoy |
 
-La comparativa se basa en datos publicos de las familias citadas; no se dispone de mediciones de rendimiento de Nova Coder 2.0 que permitan una comparacion cuantitativa. La ventaja principal frente a densos de tamano similar es el bajo numero de parametros activos y el contexto de 163.840 tokens; la desventaja es la licencia "other" con atribuciones y la ausencia de benchmarks publicados.
+La comparación con DeepSeek-Coder-V2-Lite es la más pertinente por la coincidencia de arquitectura y tamaño, pero Nova Coder no publica parámetros activos ni benchmarks, lo que impide una comparación cuantitativa rigurosa. Qwen2.5-Coder-14B ofrece licencia Apache 2.0 y evaluación pública, ventajas significativas para producción.
 
 ## Limitaciones y advertencias
 
-- La model card mezcla la identidad de producto "Nova Coder 2.0" con nombres de archivo del modelo base DeepSeek-Coder-V2-Lite-Instruct, lo que sugiere una redistribucion cuantizada mas que un modelo entrenado desde cero por Moderno Tech; conviene verificar el origen antes de un uso comercial.
-- Licencia marcada como "other" con atribuciones a MIT y a la model license de DeepSeek; es necesario revisar los terminos originales de DeepSeek (LICENSE-CODE y LICENSE-MODEL) para confirmar permisos de uso comercial y obligaciones de atribucion.
-- Idioma soportado limitado a ingles segun la model card; el rendimiento en castellano no esta garantizado.
-- Riesgo de alucinacion en generacion de codigo: como todo modelo de lenguaje, puede producir APIs inexistentes o logica incorrecta; requiere validacion con tests.
-- No hay benchmarks publicados que respalden la calidad declarada; el rendimiento real debe medirse en el caso de uso concreto.
-- La cuantizacion Q2_K y Q3 degradan la calidad de forma notable en tareas de codigo; para produccion se recomienda Q4_K_M o superior.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta, sin senales de adopcion de la comunidad.
-- No se documentan capacidades de tool calling ni de agentes, lo que limita su uso en pipelines automatizados complejos.
+- Ausencia total de benchmarks publicados: no es posible verificar las capacidades declaradas ni comparar objetivamente con alternativas establecidas.
+- Sin documentación del entrenamiento: se desconoce el dataset, el volumen de tokens y el proceso de alineación, lo que impide evaluar sesgos y calidad.
+- Licencia "other" sin términos detallados en la información disponible: el uso comercial queda en un limbo legal hasta consultar el texto completo de la licencia.
+- Idiomas: discrepancia entre la model card (es, en) y el campo del repositorio (solo en); la calidad en castellano no está verificada.
+- Longitud de contexto no documentada: limita la planificación de casos de uso con repositorios grandes.
+- Parámetros activos no documentados: imposibilita estimar con precisión el coste real de inferencia pese a ser un modelo MoE.
+- Riesgo de alucinación en APIs, firmas de funciones y dependencias, inherente a los modelos de código; requiere validación humana y ejecución de tests.
+- Repositorio de 155,3 GB: la descarga y el almacenamiento son costosos, especialmente si se incluyen múltiples cuantizaciones.
+- Cero "likes" y comunidad reducida (1.238 descargas): escaso ecosistema de validación independiente.
+- El autor advierte explícitamente contra prometer privacidad absoluta, ejecución sin conexión garantizada o compatibilidad universal; conviene verificar el comportamiento real en el hardware objetivo.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/ModernoTech/Nova-Coder-GGUF
-- Repositorio safetensors original: `ModernoTech/Nova-Coder` (referenciado en la model card)
-- Sitio oficial: https://moderno.com.ar
-- Licencia de codigo DeepSeek-V2: https://github.com/deepseek-ai/DeepSeek-V2/blob/main/LICENSE-CODE
-- Licencia de modelo DeepSeek-V2: https://github.com/deepseek-ai/DeepSeek-V2/blob/main/LICENSE-MODEL
+- Sitio oficial de Moderno Tech: https://moderno.com.ar
+- Paper, blog técnico, repositorio de código y demos: no disponible en la información proporcionada.

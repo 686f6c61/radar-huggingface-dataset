@@ -2,109 +2,111 @@
 
 ## Resumen
 
-TigerLLM-9B-it es un modelo de lenguaje de 9B (segun la nomenclatura del autor) desarrollado por Nishat Raihan y Marcos Zampieri, de la George Mason University, y publicado en Hugging Face bajo el identificador `md-nishat-008/TigerLLM-9B-it`. Forma parte de la familia TigerLLM, presentada en el articulo "TigerLLM - A Family of Bangla Large Language Models", aceptado en ACL 2025 (Volume 2: Short Papers). El objetivo declarado del proyecto es cubrir el hueco de los modelos abiertos en bengali (Bangla), la quinta lengua mas hablada del mundo con unos 237 millones de hablantes nativos, y ofrecer una alternativa reproducible a las iniciativas previas.
+TigerLLM-12B-it es un modelo de lenguaje instructivo especializado en bengalí (bangla), desarrollado por Md Nishat Raihan y Marcos Zampieri (George Mason University) y publicado bajo el paraguas de la familia TigerLLM presentada en ACL 2025. Se construye mediante fine-tuning con LoRA del modelo multimodal Gemma 3 de 12B sobre el dataset Bangla-Instruct, con los pesos LoRA fusionados en el checkpoint final, de modo que no requiere PEFT ni un modelo base separado. El identificador original `TigerLLM-9B-it` está deprecado y redirige a esta versión de 12B, que según el autor supera al modelo de 9B en un 5-10% en los benchmarks de bengalí.
 
-El modelo se construye sobre una base de la familia Gemma (el texto del paper menciona Gemma-2; las etiquetas de Hugging Face incluyen `gemma3`) y se afina sobre un corpus de instrucciones en bengali de 100K ejemplos (`Bangla-Instruct`), despues de una fase de preentrenamiento declarada de 10M de tokens sobre el corpus `Bangla-TextBook`. Segun el resumen del articulo, la familia TigerLLM supera a todas las alternativas de codigo abierto en benchmarks estandar de bengali y tambien a modelos propietarios mas grandes como GPT-3.5, estableciendose como nueva linea base para el modelado del idioma bengali. La relevancia actual del modelo esta en ese nicho: es una de las pocas alternativas abiertas, documentadas y con pesos publicos para una lengua de bajos recursos.
+El modelo resuelve el problema de la baja competencia en bengalí de los LLM generalistas: frente a LLaMA 3.2 (11B), Gemma 2 (27B) o Pangea (7B), que obtienen puntuaciones muy bajas en pruebas nativas en bangla, TigerLLM-12B-it se sitúa en el rango de GPT-4o-mini y Gemini 1.5 Flash en tareas como MMLU-bn, BanglaQuaD o BEnQA. Es relevante ahora porque ofrece una alternativa abierta (CC BY 4.0) y de tamaño medio (12.2B parámetros) para aplicaciones en bengalí sin depender de APIs propietarias.
 
-Conviene senalar dos discrepancias detectadas en la informacion disponible. La primera es de tamano: el nombre comercial indica 9B, pero los metadatos reales de los safetensors declaran 12.187.325.040 parametros (12,2B). La segunda es de arquitectura base: el paper cita Gemma-2 y las etiquetas de Hugging Face citan `gemma3`. Ambas cuestiones se detallan en las secciones siguientes.
+La arquitectura es `Gemma3ForConditionalGeneration` con 12.187.325.040 parámetros en BF16, distribuidos en cinco shards de safetensors (~22,7 GiB). Solo se ha ajustado el decodificador de texto; el codificador visual proviene sin cambios de Gemma 3 y no fue entrenado ni evaluado con datos en bengalí.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Gemma); el paper indica Gemma-2 y las etiquetas de Hugging Face indican `gemma3`, sin confirmacion adicional |
-| Parametros totales | 12.187.325.040 (12,2B) segun los safetensors del repositorio; el nombre del modelo indica 9B |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible (no se especifica en la model card ni en los metadatos) |
-| Tipos de cuantizacion | No disponible en el repositorio; solo se publican pesos en safetensors (sin GGUF ni GPTQ/AWQ publicados) |
-| Idiomas soportados | Bengali (Bangla) como idioma objetivo; el campo de idiomas de Hugging Face figura como no disponible |
-| Licencia | cc-by-4.0 |
-| Formato de pesos | safetensors |
-| Tamano del repositorio | 48,8 GB |
-| Descargas / likes | 740 descargas, 3 likes |
-| Fecha de creacion / actualizacion | 2025-09-14 / 2026-09-17 |
+| Arquitectura | `Gemma3ForConditionalGeneration` (transformer multimodal, decoder-only) |
+| Parametros totales | 12.187.325.040 (12,2B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | BF16 nativo; 4-bit NF4 con bitsandbytes (doble cuantizacion, compute en BF16) |
+| Idiomas soportados | Bengalí (principal), inglés |
+| Licencia | CC BY 4.0 |
+| Formato de pesos | safetensors (5 shards, ~22,7 GiB) |
 
 ## Arquitectura y entrenamiento
 
-La model card no detalla la arquitectura interna mas alla de la familia base: se trata de un transformer decoder-only de la familia Gemma, afinado por instrucciones (sufijo `-it`). El articulo describe dos etapas para cada miembro de la familia: una fase de preentrenamiento declarada de 10M de tokens sobre el corpus `Bangla-TextBook`, seguida de un ajuste por instrucciones con 100K ejemplos de `Bangla-Instruct`. Frente a iniciativas anteriores como Bangla-LLaMA o G2B, que recurren a datasets traducidos automaticamente (Orca-traducido, Alpaca-traducido) y no publican ni paper ni pipeline reproducible, TigerLLM declara explicitamente tanto la procedencia del corpus como la reproducibilidad del proceso.
+El modelo parte de Gemma 3 (12B), un transformer decoder-only multimodal con capacidad de entrada image-text-to-text. El ajuste se realizó con LoRA sobre el dataset Bangla-Instruct y los pesos adaptadores se fusionaron en el checkpoint final. Solo se entrenó el decodificador de texto: el codificador de visión se mantiene intacto respecto a Gemma 3 y no se validó con datos en bengalí, por lo que las capacidades visuales en este idioma no están garantizadas.
 
-La tabla comparativa del paper situa a TigerLLM (Gemma-2, 9B) con preentrenamiento de 10M de tokens, corpus `Bangla-TextBook`, ajuste de 100K ejemplos y marca de verificacion tanto en existencia de paper como en reproducibilidad, mientras que G2B (Gemma-2, 9B) no declara preentrenamiento continuado ni corpus, y usa 145K ejemplos traducidos de Alpaca sin paper ni reproducibilidad declarada. No se especifica en la informacion disponible si hubo tecnicas adicionales de alineacion (RLHF, DPO), decodificacion especulativa, atencion lineal ni ninguna otra innovacion tecnica concreta. Tampoco se detalla la composicion exacta del dataset de preentrenamiento ni el numero total de tokens de instrucciones mas alla del recuento de ejemplos.
+No se detalla en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset Bangla-Instruct ni si se aplicaron etapas de RLHF o DPO. La model card indica que el modelo se identifica como TigerLLM y conoce su autoría, lo que sugiere una curación específica de ejemplos de identidad en los datos de instrucción. La familia TigerLLM se documenta en un paper de ACL 2025 (short paper), que es la referencia técnica principal para detalles de entrenamiento y evaluación.
 
 ## Capacidades
 
-- Generacion de texto y respuesta a instrucciones en bengali, con calidad declarada superior a las alternativas abiertas de la misma lengua y a GPT-3.5 en los benchmarks estandar citados en el resumen del articulo.
-- Comprension y generacion en tareas de NLP en bengali (el articulo menciona evaluacion sobre "standard benchmarks" sin detallar la lista en la informacion proporcionada).
-- Ajuste por instrucciones conversacional (variante `-it`), orientado a uso de asistente.
-- Capacidades multilingues: el objetivo declarado es el bengali; no se confirma en la informacion disponible el nivel de competencia en otros idiomas, aunque la base Gemma es multilingue.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Modo de razonamiento explicito (thinking), vision o audio: no disponible; el repositorio solo contiene pesos de texto en safetensors.
+- Generación de texto instructivo en bengalí con calidad comparable a modelos propietarios de gama media según los benchmarks del autor.
+- Comprensión y generación en inglés como idioma secundario.
+- Razonamiento y respuesta a preguntas en bengalí (MMLU-bn, BEnQA, BanglaRQA).
+- Generación de código en contexto bengalí (evaluado con mHumanEval-bn).
+- Procesamiento de imagen y texto (hereda el codificador visual de Gemma 3, sin ajuste ni validación en bengalí).
+- Conversación multi-turno mediante plantilla de chat (`apply_chat_template`), alternando turnos `user`/`assistant`.
+- No se documenta soporte explícito de tool calling, function calling ni modos de agente multi-paso en la información disponible.
+- No se documenta modo "thinking" ni capacidades de audio.
 
 ## Casos de uso
 
-- Asistente conversacional en bengali para atencion al cliente: el modelo esta afinado por instrucciones en esa lengua y puede gestionar turnos de conversacion de forma nativa, evitando el coste y la perdida de calidad de traducir el flujo a ingles. Es adecuado porque el corpus de ajuste (100K ejemplos `Bangla-Instruct`) esta especificamente orientado a instrucciones en bengali.
-- Generacion y resumen de contenido editorial en bengali: redaccion de articulos, resumenes de documentos y adaptacion de registro para medios digitales dirigidos a los 237 millones de hablantes nativos.
-- Traduccion asistida bengali-ingles dentro de herramientas de productividad: uso del modelo como motor de generacion en el lado bengali de un pipeline de traduccion, con revision humana, dado su entrenamiento centrado en esa lengua.
-- Educacion y materiales didacticos: generacion de explicaciones, ejercicios y resumenes de temario a partir del corpus `Bangla-TextBook` empleado en el preentrenamiento continuado, lo que lo hace especialmente alineado con texto educativo.
-- Procesamiento de documentos administrativos o legales en bengali: clasificacion, extraccion de informacion y generacion de respuestas sobre corpus textuales largos, siempre que la longitud del documento encaje en la ventana de contexto del modelo base (no confirmada en la informacion disponible).
-- Investigacion en PLN para lenguas de bajos recursos: el modelo es un punto de partida reproducible (paper ACL 2025, pesos publicos, licencia CC-BY-4.0) para experimentos de ajuste fino, evaluacion comparativa y estudios de sesgo en bengali.
-- Base para ajuste especifico de dominio: al ser un modelo de 12,2B con licencia permisiva para uso comercial, se puede afinar con LoRA sobre dominios concretos (sanidad, banca, telco) en bengali partiendo de un modelo ya alineado con instrucciones.
+- Atención al cliente en bengalí: el modelo puede gestionar conversaciones multi-turno con la plantilla de chat y responder con formato controlado (por ejemplo, tres párrafos breves), adecuado para soporte en centros de contacto de Bangladés y diáspora.
+- Educación: generación de explicaciones adaptadas a nivel (por ejemplo, "explica la fotosíntesis para estudiantes de 8º grado en bengalí"), un escenario que la propia model card propone como ejemplo de prompting.
+- Traducción y localización bn-en: redacción y adaptación de contenido para productos que necesitan versión en bengalí manteniendo terminología técnica en inglés.
+- Generación de código asistida para desarrolladores bengalíes: el modelo se evalúa en mHumanEval-bn, por lo que puede emplearse en asistentes de programación con instrucciones en bengalí.
+- Respuesta a preguntas sobre documentos: con BanglaQuaD y BanglaRQA como benchmarks de referencia, encaja en pipelines de QA extractivo y generativo sobre corpus en bengalí.
+- Investigación en NLP de bajo recursos: como baseline abierto y reproducible (CC BY 4.0) para experimentos de fine-tuning, evaluación o destilación en bengalí.
+- Moderación y clasificación de contenido en bengalí: clasificación de textos y generación de resúmenes o etiquetas en un idioma con poca cobertura en modelos generalistas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks numericos en la informacion disponible. La model card y el resumen del articulo afirman de forma cualitativa que la familia TigerLLM "supera a todas las alternativas de codigo abierto y tambien a modelos propietarios mas grandes como GPT-3.5 en benchmarks estandar" para el bengali, pero no se incluyen cifras (MMLU, GSM8K, HumanEval ni benchmarks especificos de bengali) en el material proporcionado. Para obtener los numeros concretos hay que consultar el articulo en ACL Anthology o en arXiv (enlaces en la seccion final).
+Resultados de la Tabla 2 del paper TigerLLM (ACL 2025) en seis benchmarks de bengalí. Las filas de TigerLLM-12B-it y TigerLLM-1B-it se expresan como mejora relativa según la model card, no como valores absolutos.
 
-| Benchmark | TigerLLM-9B-it | Alternativas | Fuente |
-|---|---|---|---|
-| No disponible | No disponible | No disponible | No se incluyen cifras en la informacion proporcionada |
+| Modelo | MMLU-bn | PangBench-bn | BanglaQuaD | mHumanEval-bn | BEnQA | BanglaRQA |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|
+| GPT-3.5 | 0,55 | 0,55 | 0,50 | 0,56 | 0,50 | 0,49 |
+| Gemini 1.5 Flash | 0,66 | 0,57 | 0,62 | 0,58 | 0,56 | 0,61 |
+| GPT-4o-mini | 0,67 | 0,62 | 0,65 | 0,56 | 0,60 | 0,60 |
+| LLaMA 3.2 (11B) | 0,22 | 0,19 | 0,21 | 0,15 | 0,18 | 0,20 |
+| Gemma 2 (27B) | 0,35 | 0,51 | 0,43 | 0,64 | 0,50 | 0,56 |
+| Pangea (7B) | 0,18 | 0,15 | 0,17 | 0,10 | 0,14 | 0,16 |
+| Titu-LLM | 0,06 | 0,19 | 0,08 | 0,02 | 0,17 | 0,21 |
+| Bong-LLaMA | 0,05 | 0,12 | 0,08 | 0,02 | 0,15 | 0,13 |
+| Bangla-LLaMA | 0,02 | 0,08 | 0,05 | 0,10 | 0,11 | 0,09 |
+| Bangla-Gemma | 0,18 | 0,15 | 0,12 | 0,10 | 0,22 | 0,19 |
+| TigerLLM 1B, LLaMA 3.2 (deprecado) | 0,61 | 0,55 | 0,68 | 0,61 | 0,59 | 0,62 |
+| TigerLLM-1B-it, Gemma 3 | +2-4% | +2-4% | +2-4% | +2-4% | +2-4% | +2-4% |
+| TigerLLM-9B-it (deprecado) | 0,72 | 0,68 | 0,70 | 0,63 | 0,65 | 0,68 |
+| TigerLLM-12B-it | +5-10% | +5-10% | +5-10% | +5-10% | +5-10% | +5-10% |
+
+No se han publicado valores absolutos de TigerLLM-12B-it en la información disponible; solo la mejora relativa del 5-10% frente a TigerLLM-9B-it.
 
 ## Requisitos de hardware
 
-Estimaciones derivadas del recuento real de parametros (12,187,325,040). No son cifras publicadas por el autor.
-
-- VRAM para inferencia en BF16/FP16: aproximadamente 24,4 GB solo para pesos, mas cache KV (aproximadamente 25-30 GB en funcion de la longitud de contexto y el tamano de lote).
-- VRAM para inferencia en INT8: aproximadamente 12,2 GB de pesos, mas cache KV.
-- VRAM para inferencia en 4 bits: aproximadamente 6,1-7 GB de pesos, mas cache KV; es la via practica para GPU de consumo.
-- GPU de datacenter recomendadas: A100 40 GB, H100 80 GB o L40S 48 GB para BF16 con contexto largo y lotes concurrentes.
-- GPU de consumo: una RTX 4090 o RTX 3090 de 24 GB no admiten BF16 completo con margen; si funcionan con cuantizacion de 8 bits (justa) o de 4 bits. Una GPU de 16 GB solo admite cuantizacion de 4 bits con contexto reducido.
-- Opciones de despliegue: Hugging Face Transformers, vLLM, TGI y SGLang soportan pesos safetensors de la familia Gemma. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, ya que el repositorio no publica cuantizaciones GGUF.
-- Latencia y throughput: no disponible; no se han publicado mediciones en la informacion proporcionada.
+- Inferencia en BF16: se recomienda una GPU con soporte BF16 y 24-30 GiB de memoria (por ejemplo, RTX 4090 de 24 GB, A100 40 GB, H100 80 GB). El checkpoint completo pesa ~22,7 GiB en cinco shards.
+- Inferencia en 4-bit NF4 con bitsandbytes: reduce el uso de memoria y permite ejecución en GPUs consumer de 16 GB, a costa de posibles cambios menores en la calidad de salida.
+- Despliegue: el modelo se usa con `transformers>=4.57.1`, `torch>=2.4`, `accelerate>=1.10`, `sentencepiece` y `safetensors`; se recomienda `attn_implementation="sdpa"` y `device_map="auto"`. No se documentan integraciones específicas con vLLM, llama.cpp, Ollama o TGI en la información disponible.
+- Latencia y throughput: no disponibles.
+- No se publican requisitos de VRAM para contextos largos ni para el modo multimodal.
 
 ## Comparativa con modelos similares
 
-Datos extraidos de la tabla comparativa incluida en la propia model card. La columna "preentrenamiento" se refiere a si hubo preentrenamiento continuado y su volumen declarado.
+| Modelo | Parámetros | Contexto | Idiomas foco | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| TigerLLM-12B-it | 12,2B | no disponible | Bengalí, inglés | CC BY 4.0 | Hugging Face |
+| TigerLLM-1B-it (Gemma 3) | ~1B | no disponible | Bengalí, inglés | CC BY 4.0 (según familia) | Hugging Face |
+| Gemma 2 (27B) | 27B | no disponible | Multilingüe general | Gemma license | Hugging Face |
+| LLaMA 3.2 (11B) | 11B | no disponible | Multilingüe general | Llama license | Hugging Face |
+| Pangea (7B) | 7B | no disponible | Bengalí/inglés | no disponible | Hugging Face |
 
-| Modelo | Base | Tamano | Preentrenamiento | Corpus | Ajuste fino | Paper | Reproducibilidad |
-|---|---|---|---|---|---|---|---|
-| TigerLLM-9B-it | Gemma-2 (segun paper; `gemma3` en tags) | 9B nominal / 12,2B real | 10M tokens | Bangla-TextBook | 100K (Bangla-Instruct) | Si | Si |
-| G2B | Gemma-2 | 9B | No declarado | No declarado | 145K (Alpaca traducido) | No | No |
-| Bangla-LLaMA | LLaMA-3.2 | 3B | Si | No declarado | 172K (Orca traducido) | No | No |
-| titu-Gemma | Gemma-2 | 2B | 4,4B tokens | No declarado | No declarado | No | No |
-| titu-LLaMA | LLaMA-3.1 | 3B | 37B tokens | No declarado | No declarado | No | No |
-| TigerLLM-1B-it | LLaMA-3.2 | 1B | 10M tokens | Bangla-TextBook | 100K (Bangla-Instruct) | Si | Si |
-
-Todos los modelos de la tabla comparten el mismo nicho (LLM abiertos para bengali). La diferencia principal de TigerLLM frente a G2B, Bangla-LLaMA, titu-Gemma y titu-LLaMA es la publicacion de paper, corpus declarado y caracter reproducible; la comparativa de rendimiento numerico no esta disponible en el material proporcionado.
+En los benchmarks de bengalí del paper, TigerLLM-12B-it supera a LLaMA 3.2 (11B), Gemma 2 (27B) y Pangea (7B) de forma amplia, y se aproxima al rango de GPT-4o-mini y Gemini 1.5 Flash. Frente a TigerLLM-1B-it, la versión de 12B ofrece mayor calidad a costa de un requisito de memoria notablemente superior.
 
 ## Limitaciones y advertencias
 
-- Discrepancia de tamano: el nombre indica 9B pero los safetensors declaran 12,19B parametros. Hay que verificar el numero real antes de dimensionar infraestructura.
-- Ambiguedad sobre la arquitectura base: el paper cita Gemma-2 y las etiquetas de Hugging Face citan `gemma3`. Esto afecta a decisiones como la ventana de contexto real y las librerias compatibles.
-- Longitud de contexto no documentada: no se especifica en la model card ni en los metadatos. Para casos de uso con documentos largos hay que verificar el valor real antes de desplegar.
-- Idiomas: el modelo esta orientado a bengali. No hay confirmacion en la informacion disponible sobre su competencia en castellano u otras lenguas, por lo que no deberia usarse como modelo multilingue general sin evaluacion previa.
-- Riesgo de alucinacion: no se documentan tasas de alucinacion ni procesos de mitigacion. Cualquier despliegue en produccion en dominios factuales (sanidad, legal, financiero) requiere verificacion humana.
-- Sesgos: no se publica ninguna evaluacion de sesgo, toxicidad o seguridad en la informacion disponible.
-- Repositorio con baja traccion: 740 descargas y 3 likes, con un unico autor como mantenedor. El soporte y la frecuencia de actualizacion no estan garantizados.
-- Licencia: CC-BY-4.0 permite uso comercial y obras derivadas siempre que se cite la atribucion (autores y articulo). No incluye clausulas de uso aceptable ni de responsabilidad, algo a cubrir con governance propio.
-- Rendimiento no verificado de forma independiente: las afirmaciones de superioridad frente a GPT-3.5 proceden del propio articulo; no se aportan cifras reproducibles en el material disponible.
-- Sin cuantizaciones oficiales publicadas (GGUF, GPTQ, AWQ), lo que anade un paso de conversion antes de poder desplegar con llama.cpp u Ollama.
+- El identificador `TigerLLM-9B-it` está deprecado; el código debe actualizarse a `md-nishat-008/TigerLLM-12B-it`.
+- Solo se ajustó el decodificador de texto: las capacidades de visión provienen de Gemma 3 sin entrenamiento ni validación en bengalí, por lo que su uso multimodal en este idioma es arriesgado.
+- La decodificación greedy (`do_sample=False`) puede producir repeticiones en respuestas largas; se recomienda `temperature=0.7`, `top_p=0.95` o mayor `repetition_penalty`.
+- Los benchmarks publicados son del paper y de la model card del autor; no hay evaluación independiente disponible en la información proporcionada.
+- No se documentan sesgos específicos, tasas de alucinación ni evaluaciones de seguridad; deben asumirse los riesgos habituales de un modelo de 12B ajustado con instrucciones.
+- La licencia CC BY 4.0 permite uso comercial con atribución, pero debe verificarse la compatibilidad con la licencia subyacente de Gemma 3.
+- No se documenta longitud de contexto ni soporte de tool calling; para agentes o pipelines con funciones externas habría que validarlo empíricamente.
+- El modelo está orientado a bengalí e inglés; el rendimiento en otros idiomas no está evaluado.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/md-nishat-008/TigerLLM-9B-it
-- Modelo hermano TigerLLM-1B-it: https://huggingface.co/md-nishat-008/TigerLLM-1B-it
-- Articulo en arXiv: https://arxiv.org/pdf/2503.10995 (arXiv:2503.10995)
-- Articulo en ACL Anthology: https://aclanthology.org/2025.acl-short.69/
-- DOI: https://doi.org/10.18653/v1/2025.acl-short.69
-- Repositorio de archivos del modelo: https://huggingface.co/md-nishat-008/TigerLLM-9B-it/tree/main
-- Contacto del autor: md.nishat.008@gmail.com
-- Cita BibTeX (del propio repositorio): Raihan, Nishat y Zampieri, Marcos. "TigerLLM - A Family of Bangla Large Language Models". Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers), julio de 2025, Viena, Austria, paginas 887-896.
+- Modelo en Hugging Face: https://huggingface.co/md-nishat-008/TigerLLM-12B-it
+- Paper TigerLLM (ACL 2025): https://aclanthology.org/2025.acl-short.69/
+- Dataset Bangla-Instruct: https://huggingface.co/datasets/md-nishat-008/Bangla-Instruct
+- Dataset Bangla-TextBook: https://huggingface.co/datasets/md-nishat-008/Bangla-TextBook
+- TigerLLM-1B-it: https://huggingface.co/md-nishat-008/TigerLLM-1B-it
+- TigerCoder-12B: https://huggingface.co/md-nishat-008/TigerCoder-12B

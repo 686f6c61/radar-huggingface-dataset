@@ -2,97 +2,109 @@
 
 ## Resumen
 
-VeriLoop E2 GGUF es la distribucion oficial orientada a llama.cpp de VeriLoop E2, un modelo post-entrenado de 27B construido sobre Qwen3.8-27B y especializado en codigo, ingenieria de software, matematicas y fisica. Lo desarrolla el Tsinghua SIGS Robot Lab (Libo Wang) y se publica bajo licencia Apache 2.0. El repositorio no duplica la model card del modelo padre, sino que se centra en los artefactos y la informacion utiles para el despliegue local en formato GGUF.
+VeriLoop E2 es un modelo de lenguaje de 27B parámetros (26.895.998.464 exactos) desarrollado por el Tsinghua SIGS Robot Lab, orientado a generación de código, razonamiento matemático y razonamiento científico. Esta ficha cubre la distribución GGUF oficial para llama.cpp, generada a partir del modelo base `tsinghua-sigs-robot-lab/VeriLoop-E2` y publicada bajo licencia Apache 2.0. El modelo se presenta como un modelo post-entrenado con 262K tokens de contexto nativo, lo que lo sitúa en la categoría de contexto largo para tareas de ingeniería de software y razonamiento formal.
 
-El modelo cuenta con 26.895.998.464 parametros totales (aproximadamente 27B) y una longitud de contexto nativa de 262.144 tokens heredada de la configuracion del modelo padre. La arquitectura declarada en el checkpoint es `Qwen3_5ForConditionalGeneration`. Su rasgo tecnico mas destacado para el despliegue es el soporte de decodificacion especulativa mediante un modelo borrador MTP (multi-token prediction) publicado de forma separada.
+La relevancia de esta distribución GGUF radica en que ofrece una escalera de cuantización completa (de BF16 a IQ1_M) con métricas de retención medidas frente a los logits BF16 de referencia: perplejidad, divergencia KL y tasa de coincidencia top-p. El autor documenta además el uso de imatrix y de un mecanismo MTP (multi-token prediction) con decodificación especulativa, lo que afecta directamente a la latencia en producción.
 
-Este repositorio es relevante porque establece el BF16 como punto de referencia canonico (no como cuantizacion de baja precision) para las futuras variantes Q8/Q6/Q5/Q4/IQ4, e incluye puertas de calidad auditables (auditoria de tensores, compilacion y carga en llama-server, y verificacion del endpoint compatible con OpenAI). La primera release se distribuye como dos ficheros GGUF separados: el modelo objetivo y el borrador MTP.
+El modelo está etiquetado como coding-agent, software-engineering, mathematical-reasoning, scientific-reasoning y long-context, y soporta únicamente inglés y chino según la model card. La distribución incluye ocho variantes de cuantización con tamaños que van de 16.790 GiB (IQ1_M) a 50.113 GiB (BF16), lo que permite desplegarlo desde estaciones de trabajo con GPU de consumo hasta servidores con múltiples aceleradores.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (HF architecture: `Qwen3_5ForConditionalGeneration`); soporta MTP (multi-token prediction) para decodificacion especulativa |
-| Parametros totales | 26.895.998.464 (aproximadamente 27B) |
-| Parametros activos | No disponible (no se indica que sea una arquitectura MoE) |
-| Longitud de contexto | 262.144 tokens nativos; contexto de validacion en la release GGUF: 32.768 tokens |
-| Tipos de cuantizacion | BF16 (referencia canonica); Q8, Q6, Q5, Q4 e IQ4 anunciadas como releases posteriores, comparadas contra la referencia BF16 |
-| Idiomas soportados | en, zh |
+| Arquitectura | no disponible (modelo transformer post-entrenado; la model card no detalla la arquitectura interna) |
+| Parámetros totales | 26.895.998.464 (≈26,9B) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 262K tokens nativos |
+| Tipos de cuantización | BF16, Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q3_K_M, IQ2_S, IQ1_M (las variantes IQ son mixed-precision, no uniformes) |
+| Idiomas soportados | inglés (en), chino (zh) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp); BF16 con algunos tensores F32 sensibles a metadatos; tambien modelo borrador MTP en GGUF separado |
+| Formato de pesos | GGUF (llama.cpp); el modelo base se distribuye en safetensors |
 
 ## Arquitectura y entrenamiento
 
-VeriLoop E2 es un modelo post-entrenado de aproximadamente 27B construido sobre la familia Qwen3.8-27B, con arquitectura declarada `Qwen3_5ForConditionalGeneration`. La model card lo describe como un modelo post-entrenado ("post-trained") orientado a codigo, ingenieria de software, matematicas y fisica, e incluye etiquetas de entrenamiento relacionadas con agentes de codigo, razonamiento matematico, razonamiento cientifico y contexto largo. Incorpora soporte de MTP para decodificacion especulativa, distribuido como un borrador independiente en GGUF.
+La model card no detalla la arquitectura interna del modelo base (número de capas, tipo de atención, cabezas, etc.), por lo que ese dato queda como no disponible. Sí se especifica que es un modelo post-entrenado (post-training) orientado a código, matemáticas y física, con 262K tokens de contexto nativo y entrenado para tareas de agente de programación y razonamiento científico. El repositorio incluye un informe técnico en OpenReview y un conjunto de evidencias de evaluación en Hugging Face, lo que sugiere que el post-entrenamiento se documenta con protocolos de evaluación reproducibles.
 
-La informacion disponible no detalla el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas concretas como RLHF o DPO; estos datos corresponden al modelo padre y no se reproducen en esta ficha. La innovacion tecnica mas visible en esta release es la organizacion de la conversion como una transformacion auditable: exportacion BF16 del objetivo, exportacion separada del borrador MTP, auditoria del recuento de tensores (851 tensores en el objetivo, 18 en el MTP), compilacion y carga en llama-server, y gate de endpoint compatible con OpenAI. La herramienta de conversion empleada es `convert_hf_to_gguf.py` de llama.cpp (revision `bddf8263c31c3dce3212263b00ebd2d98c1a752b`), con codigo de retorno 0 en ambas conversiones.
+En el plano de la inferencia, la distribución GGUF incorpora dos elementos técnicos destacables. Primero, el uso de imatrix para las cuantizaciones de baja precisión, lo que permite que las variantes IQ1_M e IQ2_S mantengan métricas de retención razonables pese a su densidad efectiva de 5,36 bits por peso. Segundo, el soporte de MTP (multi-token prediction) con decodificación especulativa, validado explícitamente en el artefacto IQ1_M según la model card, lo que puede reducir la latencia de decodificación en llama.cpp. Las variantes IQ1_M e IQ2_S son artefactos de precisión mixta: en IQ1_M la política de tensores medida es 353 F32 + 1 IQ1_M + 2 IQ2_S + 64 Q4_K + 429 Q5_K + 2 Q6_K = 851 tensores, con 5,36 BPW efectivos.
 
 ## Capacidades
 
-- Generacion de texto orientada a codigo y ingenieria de software, con etiquetas explicitas de coding-agent y software-engineering.
-- Razonamiento matematico, con soporte declarado para matematicas.
-- Razonamiento cientifico, con enfasis declarado en fisica.
-- Contexto largo: 262.144 tokens nativos, lo que permite manejar documentos extensos y repositorios completos.
-- Decodificacion especulativa mediante modelo borrador MTP separado, para acelerar la inferencia en llama.cpp.
-- Capacidades conversacionales (pipeline text-generation, tag conversational).
-- Soporte multilingue limitado a ingles (en) y chino (zh).
-- Ejecucion local en llama.cpp con endpoint compatible con OpenAI (`/v1/models` verificado).
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Modo thinking explicito: no disponible en la informacion proporcionada.
-- Vision ni audio: no disponible en la informacion proporcionada.
+- Generación de texto conversacional y de formato largo en inglés y chino.
+- Generación y razonamiento sobre código, con etiqueta explícita de coding-agent y software-engineering.
+- Razonamiento matemático y científico (mathematical-reasoning, scientific-reasoning), con un artefacto publicado sobre la hipótesis de Riemann como demostración.
+- Contexto largo nativo de 262K tokens, adecuado para repositorios completos, trazas de ejecución y documentos técnicos extensos.
+- Soporte de tool calling / function calling: no confirmado explícitamente en la model card, aunque las etiquetas de agente de código y el pipeline conversacional lo hacen plausible; tratar como no verificado.
+- Razonamiento multi-paso y flujos de agente: inferido de las etiquetas coding-agent y post-training; no se documentan detalles del protocolo de agente.
+- Decodificación especulativa mediante MTP en las variantes GGUF compatibles con llama.cpp.
+- Capacidades multimodales (visión, audio): no disponibles.
 
 ## Casos de uso
 
-- Asistencia a la programacion en local: el modelo puede generar y revisar codigo en entornos sin conexion a APIs externas, aprovechando el formato GGUF y el runtime llama.cpp.
-- Agentes de ingenieria de software: dado su etiquetado como coding-agent, puede integrarse en flujos multi-paso de edicion de repositorios, siempre que el orquestador implemente el control de herramientas, ya que el soporte de tool calling no esta confirmado en la informacion disponible.
-- Analisis de repositorios completos: con 262.144 tokens de contexto nativo, permite cargar ficheros y documentacion extensos en una sola ventana para tareas de comprension y refactorizacion.
-- Razonamiento matematico asistido: util para resolver y verificar problemas matematicos paso a paso, en linea con el enfoque de "verificacion" (VeriLoop) y el artefacto publico sobre la hipotesis de Riemann.
-- Investigacion en fisica y calculo cientifico: adecuado para derivaciones, comprobaciones dimensionales y asistencia en problemas de fisica declarados como dominio principal.
-- Despliegue en servidor de inferencia propio: mediante llama-server con API compatible con OpenAI, se puede exponer el modelo como backend de aplicaciones internas sin dependencia de proveedores en la nube.
-- Aceleracion de inferencia en produccion: el borrador MTP permite aplicar decodificacion especulativa para reducir la latencia por token en hardware con capacidad suficiente.
-- Evaluacion reproducible de cuantizaciones: la release BF16 sirve como referencia para medir la perdida de calidad de las variantes Q8/Q6/Q5/Q4/IQ4 bajo un protocolo fijo.
+- Agente de programación sobre repositorios completos: con 262K tokens de contexto, el modelo puede ingerir varios ficheros fuente, tests y trazas de error en una sola ventana y proponer parches coherentes con el resto del código.
+- Revisión de código en pipelines de CI/CD: integrado vía llama.cpp o un servidor compatible con la API de OpenAI, el modelo puede analizar diffs y generar comentarios de revisión o descripciones de pull request en inglés o chino.
+- Razonamiento matemático asistido: resolución de problemas de competición y demostraciones paso a paso, aprovechando el post-entrenamiento específico en matemáticas y el artefacto de la hipótesis de Riemann como referencia de capacidad.
+- Asistencia en investigación científica: análisis de derivaciones físicas y matemáticas, comprobación de consistencia dimensional y generación de borradores de secciones técnicas en inglés.
+- Despliegue en estación de trabajo con GPU de consumo: la variante Q4_K_M (18.301 GiB) o Q3_K_M (16.826 GiB) permite ejecutar el modelo en una GPU de 24 GB con contexto moderado, útil para prototipado local sin depender de la nube.
+- Servicio de inferencia de bajo coste por token: la variante IQ1_M (16.790 GiB, 5,36 BPW efectivos) reduce el footprint un 66,50% frente a BF16 y habilita despliegues en hardware más modesto cuando la fidelidad estricta no es crítica.
+- Documentación técnica bilingüe: generación y traducción de documentación entre inglés y chino dentro del mismo contexto, manteniendo terminología consistente a lo largo de documentos largos.
+- Análisis de trazas y logs extensos: con 262K de contexto, el modelo puede correlacionar eventos distribuidos en ficheros de log de gran tamaño y resumir causas raíz.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card enlaza un conjunto de datos de evidencia de evaluacion (`tsinghua-sigs-robot-lab/VeriLoop-E2-Evaluation-Evidence`) y un informe tecnico en OpenReview, pero no se incluyen cifras numericas (MMLU, HumanEval, GSM8K, etc.) en el material proporcionado, por lo que no se reproducen valores concretos.
+La model card no publica resultados de benchmarks de capacidad (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Sí se publican métricas de retención de cuantización frente a los logits BF16 de referencia, medidas con un protocolo congelado:
+
+| Variante | Tamaño principal | Reducción vs BF16 | BPW efectivos | PPL vs BF16 | KLD | Same top-p |
+|---|---:|---:|---:|---:|---:|---:|
+| BF16 | 50.113 GiB | — | 16-bit | referencia | — | — |
+| Q8_0 | 26.632 GiB | 46,86% | 8,50 | +0,0643% | 0,002176 | 98,815% |
+| Q6_K | 20.566 GiB | 58,96% | 6,57 | paridad dentro de incertidumbre | 0,004409 | 98,204% |
+| Q5_K_M | 18.965 GiB | 62,16% | 6,05 | +0,4450% | 0,006919 | 97,251% |
+| Q4_K_M | 18.301 GiB | 63,48% | 5,84 | +0,4821% | 0,009700 | 96,786% |
+| Q3_K_M | 16.826 GiB | 66,42% | 5,37 | +0,4090% | 0,014349 | 95,919% |
+| IQ2_S | 16.799 GiB | 66,48% | 5,36 | +0,3457% | 0,014023 | 95,516% |
+| IQ1_M | 16.790 GiB | 66,50% | 5,36 | +0,3191% | 0,014357 | 95,870% |
+
+No se han publicado resultados de benchmarks de capacidad (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el fichero objetivo BF16 ocupa aproximadamente 51 GiB y el borrador MTP aproximadamente 5,6 GiB, lo que suma unos 57 GiB solo en pesos; a ello hay que anadir la cache KV, cuyo tamano depende del contexto configurado.
-- Al tratarse de un BF16 de 27B, no cabe en una unica GPU de consumo: requiere configuraciones multi-GPU o memoria unificada de gran capacidad.
-- GPU recomendadas: no disponibles de forma explicita en la informacion proporcionada; por tamano, el BF16 exige GPUs de centro de datos con agregacion de VRAM muy alta (por ejemplo, varias A100/H100), sin que el autor especifique un minimo concreto.
-- Cabe en consumer GPU: no en BF16; seria necesario esperar a las variantes de baja precision (Q8/Q6/Q5/Q4/IQ4) anunciadas, cuyo encaje en GPU de consumo no se detalla en la informacion disponible.
-- Opciones de despliegue: llama.cpp y llama-server son el objetivo oficial de esta release (compilacion CUDA y carga verificadas). Se confirma endpoint compatible con OpenAI (`/v1/models`). No se mencionan vLLM, TGI ni Ollama en el material proporcionado.
-- Contexto validado en runtime: 32.768 tokens en el gate de la release; contextos mayores requieren planificacion de VRAM/RAM y de cache KV sobre el hardware objetivo.
-- Latencia y throughput: no disponible en la informacion proporcionada; el uso de decodificacion especulativa con MTP esta pensado para mejorar estos valores, pero no se aportan cifras.
+- VRAM estimada para inferencia: aproximadamente el tamaño del fichero GGUF más overhead de contexto KV. Con 262K de contexto el KV cache puede ser muy grande; para contextos prácticos de 8K-32K se recomienda reservar entre 2 y 8 GB adicionales según la variante.
+- BF16 (50.113 GiB): requiere 2× A100 80GB, 2× H100 80GB o 4× RTX 4090/3090 de 24 GB.
+- Q8_0 (26.632 GiB): una A100 40GB, una H100 80GB o 2× RTX 4090.
+- Q6_K (20.566 GiB) y Q5_K_M (18.965 GiB): caben en una GPU de 24 GB (RTX 4090, RTX 3090, L4 24GB) con contexto moderado; para contexto largo conviene repartir capas en CPU o usar dos GPU.
+- Q4_K_M (18.301 GiB), Q3_K_M (16.826 GiB), IQ2_S (16.799 GiB) e IQ1_M (16.790 GiB): aptos para GPU de 24 GB con margen para contexto; IQ1_M e IQ2_S son las opciones de mínimo footprint.
+- Despliegue: llama.cpp es el runtime oficial de esta distribución. También son viables servidores compatibles con llama.cpp (llama-server) y, para el modelo base en safetensors, vLLM o TGI, aunque no se documentan en la model card.
+- Latencia y throughput: no disponibles. La model card menciona validación de MTP y decodificación especulativa en IQ1_M, lo que sugiere mejoras de latencia, pero no se publican cifras de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento ni de especificaciones completas de modelos alternativos en la informacion proporcionada, por lo que la comparacion cuantitativa se marca como no disponible. A modo de referencia estructural, se resumen los datos confirmados de este modelo:
+No se dispone de datos de benchmarks de capacidad del modelo, por lo que la comparación se limita a características estructurales. Los modelos comparables de la misma categoría (≈27B, contexto largo, orientados a código) serían Qwen2.5-Coder-32B, DeepSeek-Coder-V2-Lite y Gemma-2-27B; los datos de estos modelos no forman parte de la información proporcionada, por lo que sus cifras se marcan como no disponibles.
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Estado |
-|---|---|---|---|---|---|
-| VeriLoop E2 GGUF (este modelo) | 26,9B | 262.144 tokens nativos | Apache 2.0 | GGUF (BF16) | Publicado |
-| Modelo base Qwen3.8-27B | no disponible | no disponible | no disponible | no disponible | Referencia del autor |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato GGUF |
+|---|---:|---|---|---|---|
+| VeriLoop E2 | 26,9B | 262K | en, zh | Apache 2.0 | sí (oficial) |
+| Qwen2.5-Coder-32B | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha |
+| DeepSeek-Coder-V2-Lite | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha |
+| Gemma-2-27B | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha |
 
 ## Limitaciones y advertencias
 
-- Idiomas: solo se declaran ingles (en) y chino (zh); el rendimiento en castellano u otros idiomas no esta garantizado ni documentado.
-- Riesgo de alucinacion: no se documenta en la informacion proporcionada; como en cualquier modelo generativo, especialmente en dominios cientificos y matematicos, conviene verificar las salidas.
-- Sesgos conocidos: no disponible en la informacion proporcionada.
-- Contexto: aunque el modelo declara 262.144 tokens nativos, el gate de la release GGUF solo valido 32.768 tokens en runtime; usar contextos mayores exige planificacion de cache KV y validacion en el hardware objetivo.
-- Tamano de despliegue: el BF16 ocupa unos 51 GiB (mas 5,6 GiB del MTP), lo que impide su uso en una sola GPU de consumo y complica el despliegue en estaciones de trabajo.
-- Cuantizaciones de baja precision: Q8/Q6/Q5/Q4/IQ4 se anuncian como releases posteriores que se publicaran solo tras compararse con la referencia BF16 bajo un protocolo fijo; en el momento de esta ficha no estan confirmadas.
-- Tool calling y modo thinking: no confirmados en la informacion disponible, lo que limita el diseno de agentes que dependan de esas capacidades sin trabajo adicional de orquestacion.
-- Licencia: Apache 2.0 permite uso comercial, pero conviene revisar las condiciones del modelo padre y de la familia base (Qwen) para evitar conflictos.
-- Trazabilidad: el repo declara 0 descargas y 1 like, y la model card proporcionada aparece truncada, por lo que parte de la informacion de despliegue podria estar incompleta.
+- Idiomas: solo inglés y chino según la model card; el rendimiento en castellano no está garantizado y probablemente sea inferior.
+- Sesgos: no se documentan evaluaciones de sesgo en la información disponible; un modelo entrenado principalmente con datos en inglés y chino puede reflejar sesgos culturales y lingüísticos de esas fuentes.
+- Alucinación: no se publican tasas de alucinación ni evaluaciones de factualidad; en tareas de código y matemáticas conviene validar las salidas con tests o comprobadores formales.
+- Contexto: aunque el contexto nativo es de 262K, el coste de KV cache crece linealmente y puede degradar el throughput; no se documenta la degradación de calidad a longitudes extremas.
+- Cuantización: las variantes IQ1_M e IQ2_S son de precisión mixta y su retención se mide con PPL/KLD/top-p, no con benchmarks de capacidad; para tareas sensibles a la fidelidad se recomienda Q6_K o superior.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene revisar el informe técnico y las condiciones del modelo base por si hubiera cláusulas adicionales no reflejadas en la model card.
+- Producción: no se publican cifras de latencia ni throughput; el soporte de tool calling no está confirmado explícitamente y debe validarse antes de integrarlo en agentes.
+- El repositorio ocupa 210 GB, por lo que la descarga completa de todas las variantes requiere planificación de almacenamiento.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/tsinghua-sigs-robot-lab/VeriLoop-E2-GGUF
-- Modelo padre: https://huggingface.co/tsinghua-sigs-robot-lab/VeriLoop-E2
-- Informe tecnico (OpenReview): https://openreview.net/forum?id=P6FIQILHwX&noteId=P6FIQILHwX
-- Evidencia de evaluacion (dataset): https://huggingface.co/datasets/tsinghua-sigs-robot-lab/VeriLoop-E2-Evaluation-Evidence
-- Artefacto sobre la hipotesis de Riemann (GitHub): https://github.com/brucewang123456789/GeniusTrail/tree/VeriLoop-E2/riemann-hypothesis
+- Modelo GGUF en Hugging Face: https://huggingface.co/tsinghua-sigs-robot-lab/VeriLoop-E2-GGUF
+- Modelo base: https://huggingface.co/tsinghua-sigs-robot-lab/VeriLoop-E2
+- Informe técnico (OpenReview): https://openreview.net/forum?id=P6FIQILHwX&noteId=P6FIQILHwX
+- Evidencias de evaluación: https://huggingface.co/datasets/tsinghua-sigs-robot-lab/VeriLoop-E2-Evaluation-Evidence
+- Artefacto de la hipótesis de Riemann: https://github.com/brucewang123456789/GeniusTrail/tree/VeriLoop-E2/riemann-hypothesis
+- ModelScope Global: https://modelscope.ai/models/tsinghua-sigs-robot-lab/VeriLoop-E2-GGUF
+- ModelScope China: https://modelscope.cn/models/tsinghua-sigs-robot-lab/VeriLoop-E2-GGUF
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

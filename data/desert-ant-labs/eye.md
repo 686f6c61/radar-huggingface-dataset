@@ -2,111 +2,95 @@
 
 ## Resumen
 
-Eye es un modelo de comprensión de fotografías que se ejecuta íntegramente en el dispositivo (on-device), desarrollado por Desert Ant Labs. Su función es etiquetar, puntuar y recortar fotos: identifica el tipo de imagen (captura de pantalla, recibo, selfie), las escenas presentes (558 escenas), la calidad técnica (desenfoque, ojos cerrados), las personas y mascotas que aparecen, y si el contenido es sensible, todo ello con niveles de confianza calibrados.
+Eye es un modelo de clasificación de imágenes y comprensión fotográfica diseñado por Desert Ant Labs para ejecutarse íntegramente en el dispositivo (on-device). A diferencia de los modelos de visión generativos, Eye no produce texto libre: su función es puntuar, etiquetar y recortar fotografías, devolviendo un conjunto de etiquetas con confianza calibrada sobre escenas, calidad, personas, mascotas, rostros y contenido sensible. Está empaquetado en formato LiteRT/TFLite y Core ML, con SDKs nativos para Swift, Kotlin y JavaScript.
 
-El modelo se distribuye en formatos LiteRT (TFLite) y Core ML, con SDKs nativos para Swift, Kotlin y JavaScript (navegador y Node), lo que lo hace especialmente relevante para desarrolladores de apps móviles y web que necesitan análisis de imágenes sin enviar datos a la nube. El repositorio ocupa unos 0,1 GB, lo que indica un modelo compacto pensado para inferencia local.
+El modelo resuelve un problema muy concreto en aplicaciones de gestión de fototecas: filtrar, agrupar y priorizar imágenes sin enviar datos a la nube. Cubre 558 escenas, distingue tipos de captura (captura de pantalla, recibo, selfi, documento, pizarra), evalúa calidad técnica (desenfoque, ojos cerrados, encuadre) y detecta contenido sensible con dos umbrales de confianza predefinidos (0,5 recomendado y 0,9 estricto). El repositorio ocupa 0,2 GB y la versión de pesos publicada es la v1.1.0.
 
-El modelo está en estado Beta y se presenta junto a la librería `desert-ant-core`, que proporciona utilidades como detección de duplicados y selección de la mejor foto de una ráfaga. Su licencia es de tipo source-available propia del autor, no una licencia open source estándar.
+La relevancia actual del modelo reside en su enfoque de privacidad por diseño y su despliegue multiplataforma: iOS, macOS, tvOS, visionOS, Android, Linux, Windows, navegador y Node. El estado del proyecto es beta según la model card, y la licencia es propietaria de disponibilidad de código fuente (source-available), lo que condiciona su uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo de clasificación de imágenes on-device) |
+| Arquitectura | no disponible (modelo de visión para clasificación de imágenes, empaquetado en LiteRT/TFLite y Core ML) |
 | Parametros totales | no disponible |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no aplicable (modelo de visión, no de lenguaje) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de visión, no de texto) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no aplicable (salidas etiquetadas en inglés, sin generación de texto) |
-| Licencia | desert-ant-labs-source-available |
-| Formato de pesos | LiteRT (TFLite) y Core ML |
-
-Información adicional disponible:
-
-| Parametro | Valor |
-|---|---|
-| Plataformas | iOS, macOS, tvOS, visionOS, Android, Linux, Windows, navegador, Node |
-| Tamaño del repositorio | 0,1 GB |
-| Versión de pesos | v1.0.0 |
-| Estado | Beta |
+| Idiomas soportados | no disponible (no es un modelo de lenguaje) |
+| Licencia | desert-ant-labs-source-available (propietaria, source-available) |
+| Formato de pesos | LiteRT / TFLite, Core ML |
 
 ## Arquitectura y entrenamiento
 
-No se han publicado detalles sobre la arquitectura interna del modelo, el número de parámetros, los datos de entrenamiento ni el proceso de optimización. Lo que sí documenta el autor es la interfaz de salida: cada etiqueta lleva asociada una confianza calibrada de 0 a 1, diseñada para que dos umbrales fijos funcionen para todas las etiquetas (0,5 como punto de corte recomendado para filtros y búsqueda, y 0,9 para acciones de alta precisión como ocultar o borrar contenido automáticamente).
+No se dispone de información pública sobre la arquitectura interna del modelo en la documentación proporcionada. La model card no detalla el tipo de red (CNN, transformer visual, híbrido), el número de parámetros, el volumen de datos de entrenamiento ni la composición del dataset. Tampoco se especifica si se emplearon técnicas de ajuste fino supervisado, destilación o calibración de confianza, aunque la existencia de umbrales calibrados (0,5 y 0,9) sugiere un proceso explícito de calibración de las salidas por etiqueta.
 
-En cuanto a despliegue, el modelo se ejecuta en el dispositivo mediante LiteRT (TFLite) en plataformas móviles y de escritorio, y Core ML en el ecosistema Apple. En el navegador, la build de JavaScript ejecuta el modelo sobre la GPU mediante WebGPU cuando está disponible, con fallback a WebAssembly sobre CPU; se puede forzar el acelerador con `accelerator: "wasm"` o `"webgpu"` al cargar el modelo.
+El modelo se distribuye como artefactos LiteRT/TFLite y Core ML, lo que indica una optimización para inferencia en dispositivos con recursos limitados. La integración con WebGPU y WebAssembly en navegador, y con núcleos nativos precompilados en Node, apunta a un diseño orientado a latencia baja y ejecución local. No se han publicado detalles sobre el proceso de entrenamiento, el número de tokens o imágenes vistas, ni sobre posibles fases de RLHF o DPO, que en un modelo de clasificación no resultan aplicables del mismo modo.
 
 ## Capacidades
 
-- Clasificación del tipo de foto: `photo`, `selfie`, `screenshot`, `photo_of_screen`, `receipt`, `document`, `id_card`, `whiteboard`, `map`, `chart_or_slide`, `meme_or_graphic`, `illustration_or_art`, `shopping_reference`, `medical_reference`, `repair_reference`, entre otras, más la etiqueta agrupadora `reference`.
-- Reconocimiento de escenas: 558 escenas distintas.
-- Evaluación de calidad técnica: nitidez (`sharp`), desenfoque global (`blurry`), bokeh, momento destacado (`peak_moment`) y rotación detectada.
-- Etiquetas de conservación o descarte: `keeper`, `forgettable`, `accidental`, `technical_flaw`, `unusable`, `bad_framing`, `bad_lighting`, `test_or_duplicate_shot`, `low_content`, entre otras.
-- Análisis de personas: detección de presencia de personas, retrato, foto grupal (tres o más caras), sonrisa, ojos cerrados, candid.
-- Análisis por cara: `eyes_closed`, `smiling`, `looking_at_camera`, `looking_away`, `happy`, `surprised`.
-- Detección de contenido sensible: etiqueta general `sensitive` con subetiquetas `nsfw_explicit`, `nsfw_suggestive`, `blood` (la lista se trunca en la documentación disponible).
-- Puntuación estética: percentil de la foto comparada con otras (por ejemplo, 0,81 significa mejor que el 81 % de las fotos).
-- Detección de rostros, personas y mascotas.
-- Selección de recortes: `bestCrop(aspect:)` devuelve el mejor recorto en coordenadas normalizadas 0...1 para un aspecto dado.
-- Detección de rotación EXIF y decodificación respetando la orientación.
-- Utilidades de la librería acompañante: agrupación de duplicados en una biblioteca (`Eye.duplicates`) y selección de la mejor foto de una ráfaga (`Eye.best(of:)`).
-- Cancelación de análisis en Swift mediante cancelación de la tarea asíncrona.
+- Clasificación de tipo de captura: foto, selfi, captura de pantalla, foto de pantalla, recibo, documento, carné de identidad, pizarra, mapa, gráfico o diapositiva, meme o gráfico, ilustración o arte, referencia de compra, referencia médica, referencia de reparación y otros.
+- Etiquetado de escenas: hasta 558 escenas reconocibles con confianza calibrada por etiqueta.
+- Evaluación de calidad fotográfica: nitidez, desenfoque global, bokeh con sujeto nítido, momento cumbre, rotación.
+- Clasificación para conservar o descartar: keeper, forgettable, accidental, technical_flaw, unusable, bad_framing, bad_lighting, test_or_duplicate_shot, reference_photo, low_content.
+- Análisis de personas y grupos: detección de personas, grupo (tres o más rostros), retrato (un rostro principal), sonrisa, ojos cerrados, todos sonriendo, todos mirando, espontáneo.
+- Análisis facial por rostro: ojos cerrados, sonrisa, mirada a cámara, mirada desviada, feliz, sorprendido.
+- Detección de contenido sensible: etiqueta agregada `sensitive` y subetiquetas como nsfw_explicit, nsfw_suggestive, sangre, entre otras.
+- Puntuación estética: valor de 0 a 1 interpretado como percentil (por ejemplo, 0,81 indica mejor que el 81 % de las fotos).
+- Detección de personas, mascotas y rostros, con recorte automático del mejor encuadre para una relación de aspecto dada.
+- Agrupación de duplicados y selección del mejor disparo de una ráfaga.
+- Corrección de orientación EXIF en la decodificación de archivos y datos.
+- Ejecución en GPU vía WebGPU o CPU vía WebAssembly en navegador, con selección explícita del acelerador.
 
 ## Casos de uso
 
-- Organización automática de bibliotecas de fotos: una app de galería puede etiquetar cada foto al importarla (tipo, escena, calidad) y construir colecciones inteligentes y búsqueda sin servidor, gracias a que todo el análisis ocurre en el dispositivo.
-- Limpieza de bibliotecas y liberación de espacio: las etiquetas `unusable`, `accidental`, `test_or_duplicate_shot` y `low_content` permiten proponer al usuario fotos candidatas a borrado, y `Eye.duplicates` agrupa tomas duplicadas para conservar solo la mejor.
-- Selección de la mejor toma en ráfagas: apps de cámara pueden usar `Eye.best(of:)` para sugerir automáticamente la mejor foto de una ráfaga, combinando nitidez, ojos abiertos y sonrisas.
-- Generación de miniaturas y avatares: `bestCrop(aspect:)` permite recortar automáticamente retratos o productos con el sujeto bien encuadrado, útil en redes sociales y catálogos de comercio electrónico.
-- Moderación de contenido subido por usuarios: la etiqueta `sensitive` con umbral estricto (0,9) permite ocultar o retener contenido NSFW o con sangre antes de publicarlo, sin enviar imágenes a terceros.
-- Digitalización de documentos: detectar `receipt`, `document`, `id_card` o `whiteboard` permite dirigir cada captura al flujo adecuado (OCR, archivado de gastos, notas de reuniones).
-- Filtrado de capturas de pantalla y memes: apps de mensajería o backup pueden separar `screenshot` y `meme_or_graphic` de fotografías reales para aplicar compresión o almacenamiento distinto.
-- Búsqueda semántica local en apps de fotos: con 558 escenas y etiquetas de personas y mascotas, se puede implementar búsqueda por texto simple ("playa", "perro", "foto grupal") sin indexación en la nube.
+- Gestión inteligente de fototecas: la aplicación puede filtrar automáticamente capturas de pantalla, recibos y documentos para archivarlos en colecciones separadas, usando la etiqueta de tipo de captura y el umbral de confianza de 0,5 para no perder recall.
+- Limpieza y curaduría de bibliotecas personales: el modelo identifica fotos desenfocadas, con ojos cerrados, accidentales o de bajo contenido, lo que permite sugerir borrados o agrupaciones sin intervención manual y sin enviar imágenes a servidores externos.
+- Selección del mejor disparo en ráfagas: mediante `Eye.best(of:)` y la puntuación estética, la app puede elegir la mejor foto de una ráfaga o de un conjunto de duplicados, priorizando nitidez, encuadre y expresividad facial.
+- Moderación de contenido sensible en el dispositivo: con el umbral estricto de 0,9, la aplicación puede ocultar automáticamente imágenes marcadas como sensibles antes de mostrarlas en galerías compartidas o en pantallas públicas, reduciendo el riesgo de falsos positivos en acciones destructivas.
+- Recorte automático para miniaturas y avatares: `bestCrop(aspect:)` devuelve una región normalizada en el rango 0 a 1 que la app puede aplicar para generar miniaturas cuadradas o de otra relación sin recortes manuales.
+- Búsqueda y filtrado por contenido: con 558 escenas y etiquetas de personas y mascotas, un buscador local puede responder consultas como "perros en la playa" o "grupos sonriendo" sin indexación en la nube.
+- Aplicaciones de accesibilidad: la detección de rostros, ojos cerrados y mirada permite construir funciones de asistencia que describan o alerten sobre el contenido de una foto antes de compartirla.
+- Flujos de referencia visual: las etiquetas de referencia (compra, médica, reparación) permiten clasificar capturas tomadas para recordar información y recuperarlas después por categoría.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La única métrica documentada es el sistema de confianza calibrado por etiqueta, con umbrales recomendados de 0,5 (equilibrio precisión/recall) y 0,9 (alta precisión), pero no se publican cifras de precisión, recall ni latencia concretas.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Al tratarse de un modelo on-device compacto (repositorio de 0,1 GB), no requiere GPU de servidor ni VRAM dedicada; está diseñado para ejecutarse en CPU y GPU de dispositivos de consumo.
-- Plataformas soportadas: iOS, macOS, tvOS, visionOS, Android, Linux, Windows, navegadores web y Node.js.
-- En navegador: aceleración por WebGPU cuando el navegador la soporta, con fallback a WebAssembly sobre CPU.
-- En Apple: aceleración mediante Core ML (GPU/Neural Engine según configuración del sistema, no especificado en la documentación).
-- En Linux y Windows: se pasan píxeles decodificados (`ImagePixels` en Swift), por lo que la decodificación de imagen corre por cuenta del integrador.
-- Despliegue: SDKs oficiales vía Swift Package Manager (`desert-ant-core`), Gradle/Maven (`ai.desertant:eye:4.2.3`) y npm (`@desert-ant-labs/eye`, con `@litertjs/core` para navegador). No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
-- Latencia y throughput: no disponibles.
+- El repositorio completo ocupa 0,2 GB, lo que sugiere un modelo compacto apto para dispositivos móviles y de escritorio, aunque no se especifica el tamaño exacto de los pesos ni el número de parámetros.
+- Al estar empaquetado en LiteRT/TFLite y Core ML, está pensado para ejecutarse en CPU, GPU integrada o NPU de dispositivos Apple y Android, así como en navegador mediante WebGPU o WebAssembly.
+- No se dispone de cifras de VRAM ni de requisitos mínimos de GPU dedicada. Por el tamaño del repositorio, es razonable esperar que quepa en GPUs de consumo, pero no hay datos publicados que lo confirmen.
+- Opciones de despliegue: SDK nativo Swift (iOS, macOS, tvOS, visionOS), Kotlin (Android), JavaScript en navegador con WebGPU o WebAssembly, y Node con núcleo nativo precompilado. También se mencionan Linux y Windows con paso de píxeles decodificados.
+- No se han publicado cifras de latencia ni de throughput.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tarea | Despliegue | Formato | Licencia |
-|---|---|---|---|---|
-| Eye (Desert Ant Labs) | Etiquetado, calidad, caras, estética, recortes, sensibilidad | On-device (iOS, Android, escritorio, web) | LiteRT, Core ML | Source-available propia |
-| CLIP (OpenAI) | Clasificación zero-shot de imágenes vía texto | Servidor o on-device con esfuerzo adicional | PyTorch, ONNX | MIT (pesos con licencia propia en algunos casos) |
-| MobileNet / EfficientNet-Lite | Clasificación de imágenes (ImageNet) | On-device, TFLite | TFLite | Apache 2.0 |
-| NSFW.js / modelos NSFW dedicados | Detección de contenido sensible en navegador | On-device (web) | TFJS | Variable |
+No se dispone de información sobre modelos comparables en la documentación proporcionada. Eye se posiciona como un modelo especializado de etiquetado fotográfico on-device, una categoría en la que no se han identificado alternativas directas con datos verificables en esta ficha.
 
-Eye se diferencia de alternativas como CLIP en que ofrece un conjunto cerrado y calibrado de etiquetas orientadas a gestión fotográfica (calidad, caras, duplicados, recortes) con SDKs nativos listos para producción, mientras que CLIP es más flexible pero requiere construir toda la lógica de aplicación. Frente a MobileNet, cubre muchas más tareas además de la clasificación de escenas. La licencia source-available es más restrictiva que las Apache 2.0 o MIT de las alternativas clásicas; conviene revisar https://license.desertant.com/ antes de uso comercial.
+| Modelo | Parametros | Contexto | Licencia | Formato | Enfoque |
+|---|---|---|---|---|---|
+| Eye | no disponible | no aplica | source-available propietaria | LiteRT/TFLite, Core ML | Etiquetado y puntuación fotográfica on-device |
+| Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Licencia no estándar: `desert-ant-labs-source-available` no es una licencia open source reconocida (OSI); los términos de uso comercial deben revisarse en el enlace de la licencia antes de integrar el modelo en producto.
-- El modelo está en estado Beta, por lo que la API y las etiquetas pueden cambiar entre versiones.
-- No se publican métricas de precisión, recall ni latencia, lo que dificulta evaluar su idoneidad sin pruebas propias.
-- El modelo no genera texto ni descripciones en lenguaje natural: produce etiquetas fijas en inglés, por lo que la localización de las etiquetas a la interfaz de la app corre por cuenta del desarrollador.
-- Las etiquetas de contenido sensible están calibradas con umbrales genéricos; para acciones automáticas de ocultado o borrado, el propio autor recomienda el umbral estricto de 0,9 y aún así conviene validación humana.
-- La lista de etiquetas sensibles aparece truncada en la documentación disponible, por lo que puede haber categorías no documentadas aquí.
-- En Linux y Windows no se decodifican archivos directamente: hay que pasar píxeles RGB/RGBA ya orientados, lo que añade una capa de responsabilidad al integrador (orientación EXIF, espacio de color).
-- Riesgo de errores de clasificación en casos límite (ilustraciones realistas, fotos de pantallas, documentos fotografiados en malas condiciones): no hay datos publicados sobre estos fallos.
-- Sesgos del modelo: no disponibles; no se documenta la composición del dataset de entrenamiento.
+- El modelo está en estado beta según la propia model card, por lo que su comportamiento en producción puede cambiar entre versiones.
+- La licencia es propietaria y de tipo source-available, no open source; el uso comercial está sujeto a los términos publicados en https://license.desertant.com/, que deben revisarse antes de integrar el modelo en un producto.
+- No se han publicado detalles sobre sesgos en el etiquetado de escenas, rostros o contenido sensible; cabe esperar sesgos derivados de los datos de entrenamiento, que no son públicos.
+- La detección de contenido sensible con umbral estricto de 0,9 reduce falsos positivos, pero no elimina el riesgo de clasificaciones erróneas; las acciones destructivas o irreversibles (borrado, ocultación permanente) deben ir acompañadas de confirmación o de mecanismos de recuperación.
+- La puntuación estética es un percentil relativo y subjetivo; no debe interpretarse como una medida objetiva de calidad artística.
+- El modelo no genera texto ni mantiene conversaciones; no es adecuado para tareas de razonamiento, generación de código o descripción libre de imágenes.
+- No se especifican los idiomas soportados porque el modelo no procesa texto; las etiquetas y la API están en inglés.
+- No hay información pública sobre el rendimiento en condiciones de poca luz, imágenes sintéticas o dominios muy alejados de la fotografía de consumo.
+- La integración en Linux y Windows requiere pasar píxeles decodificados manualmente, lo que añade complejidad frente a las plataformas con SDK nativo.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/desert-ant-labs/eye
-- Pesos v1.0.0: https://huggingface.co/desert-ant-labs/eye/tree/v1.0.0
-- Demo oficial: https://desertant.com/models/eye/
-- Repositorio de la librería desert-ant-core: https://github.com/Desert-Ant-Labs/desert-ant-core
+- Pesos v1.1.0: https://huggingface.co/desert-ant-labs/eye/tree/v1.1.0
+- Demo: https://desertant.com/models/eye/
 - Licencia: https://license.desertant.com/
-- Requisitos Swift: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#swift
-- Requisitos Android: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#android
-- Requisitos JavaScript y TypeScript: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#javascript-and-typescript
+- Repositorio del SDK: https://github.com/Desert-Ant-Labs/desert-ant-core
+- Documentación del SDK: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md

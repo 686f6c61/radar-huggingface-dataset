@@ -21,7 +21,7 @@
   ],
   "likes": 37,
   "downloads_30d": 1600,
-  "trending_score": 18,
+  "trending_score": 16,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 416982234,
@@ -40,14 +40,9 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "Cactus : variétés, plantation, entretien et association - Jardiland",
-      "url": "https://www.jardiland.com/conseils-idees/cactus-qui-es-tu",
-      "snippet": "Sep 13, 2023 · Quelles sont les différentes variétés de cactus ? Quel cactus d'intérieur choisir ? Comment les entretenir ? Avec …"
-    },
-    {
-      "title": "GitHub - cactus-compute/cactus: Quantization, kernels, runtime and ...",
-      "url": "https://github.com/cactus-compute/cactus",
-      "snippet": "Quantization, kernels, runtime and inference engine for mobiles, wearables, smart home and robots. - GitHub - cactus-compute/cactus: Quantization, kernels, runtime and inference engine for mobiles, wearables, smart home and robots."
+      "title": "Cactus - Connexion",
+      "url": "https://cactus.formasup-med.com/login",
+      "snippet": "Connexion Utilisez email et mot de passe pour vous connecter."
     },
     {
       "title": "Cactaceae — Wikipédia",
@@ -55,14 +50,19 @@
       "snippet": "Cactus et succulentes sont distinctes : toutes les plantes succulentes ne sont pas des Cactus. Ce sont des familles de plantes qui …"
     },
     {
-      "title": "Cactus - Automation Foundation Models for Tiny Devices",
-      "url": "https://cactuscompute.com/",
-      "snippet": "Deploy language, vision, and speech models locally on smartphones with a fast, privacy-focused AI framework for edge deployment."
+      "title": "Cactus : variétés, plantation, entretien et association - Jardiland",
+      "url": "https://www.jardiland.com/conseils-idees/cactus-qui-es-tu",
+      "snippet": "Sep 13, 2023 · Quelles sont les différentes variétés de cactus ? Quel cactus d'intérieur choisir ? Comment les entretenir ? Avec …"
     },
     {
-      "title": "Cactus - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Cactus",
-      "snippet": "In tropical regions, other cacti grow as forest climbers and epiphytes (plants that grow on trees). Their stems are typically flattened, …"
+      "title": "Cactus & Succulentes : Une Passion, Une Référence – Planète Cactus",
+      "url": "https://www.planete-cactus.fr/",
+      "snippet": "Découvrez l’univers fascinant des cactus et succulentes avec Planète Cactus. Des plantes rares, sélectionnées pour leur originalité …"
+    },
+    {
+      "title": "Cactus Encyclo : Conseils, entretien et culture des cactus",
+      "url": "https://www.cactus-encyclo.com/",
+      "snippet": "Bienvenue sur l'encyclopédie des cactus où vous trouverez des conseils de culture et d'entretien de vos cactus et pourrez les identifier !"
     }
   ]
 }

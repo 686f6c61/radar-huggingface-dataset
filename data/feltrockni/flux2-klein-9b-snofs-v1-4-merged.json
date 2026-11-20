@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "feltrockni/flux2-klein-9b-snofs-v1-4-merged",
+  "slug": "feltrockni-flux2-klein-9b-snofs-v1-4-merged",
+  "author": "feltrockni",
+  "url": "https://huggingface.co/feltrockni/flux2-klein-9b-snofs-v1-4-merged",
+  "created_at": "2026-11-20T04:09:46.000Z",
+  "updated_at": "2026-11-20T04:16:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "diffusers:Flux2KleinPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9078581248,
+  "parameters_human": "9.08B",
+  "storage_bytes": 34718251616,
+  "storage_human": "34.7 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

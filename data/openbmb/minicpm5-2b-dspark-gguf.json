@@ -62,31 +62,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "TikTok - Make Your Day",
-      "url": "https://www.tiktok.com/ar/",
-      "snippet": "TikTok - المقاطع الرائجة تبدأ من هنا. باستخدام جهازك أو من خلال الويب، يمكن للمشاهدين مشاهدة واكتشاف الملايين من الفيديوهات القصيرة المخصصة. قم بتنزيل التطبيق لتبدأ."
-    },
-    {
-      "title": "Log in | TikTok",
-      "url": "https://www.tiktok.com/messages",
-      "snippet": "Log in to TikTok Manage your account, check notifications, comment on videos, and more."
-    },
-    {
-      "title": "TikTok - Make Your Day",
-      "url": "https://www.tiktok.com/",
-      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. …"
-    },
-    {
-      "title": "Log in | TikTok",
-      "url": "https://www.tiktok.com/login",
-      "snippet": "Manage your account, check notifications, comment on videos, and more."
-    },
-    {
-      "title": "Log in - TikTok Ads",
-      "url": "https://ads.tiktok.com/i18n/home",
-      "snippet": "Enter here to access TikTok Ads Manager, Business Center and TikTok One."
-    }
-  ]
+  "sources": []
 }

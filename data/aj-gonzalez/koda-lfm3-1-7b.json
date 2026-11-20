@@ -46,8 +46,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "netgoat-ai/koda-lfm3-1.7b",
+  "renamed_at": "2026-11-20T02:07:51.919Z",
   "benchmarks": [],
   "sources": []
 }

@@ -2,52 +2,50 @@
 
 ## Resumen
 
-ChronosBERT-Bolt-Default es un modelo de la familia BERT publicado en Hugging Face por el usuario `ddrg` bajo el identificador `ddrg/ChronosBERT-Bolt-Default`. Por los tags del repositorio (`bert`, `transformers`, `safetensors`) y por el recuento real de parametros en los pesos (15.295.776), se corresponde con la arquitectura BERT-base clasica, un transformer encoder-only de 12 capas y 768 dimensiones ocultas.
+ChronosBERT-Bolt-Default es un codificador bidireccional de tipo BERT-Small (encoder-only) desarrollado por el usuario ddrg para el aprendizaje de representaciones de series temporales. El modelo combina la representacion basada en parches (patches) del modelo de forecasting Chronos-Bolt con una arquitectura transformer bidireccional y un objetivo de preentrenamiento de modelado de lenguaje enmascarado (MLM) adaptado a series temporales: los parches de la serie se enmascaran aleatoriamente y el modelo aprende a reconstruirlos.
 
-El modelo aparece como un checkpoint subido a la plataforma con una model card autogenerada por la plantilla de Hugging Face, en la que practicamente todos los campos figuran como `[More Information Needed]`. No hay informacion publica sobre el desarrollador, el proceso de entrenamiento, los datos utilizados ni la finalidad prevista del modelo. El repositorio registra 0 descargas y 0 likes en el momento de la consulta.
+Con aproximadamente 15,3 millones de parametros, es un modelo ligero pensado para servir como backbone preentrenado que se transfiere y ajusta finamente (fine-tuning) en tareas posteriores de series temporales, principalmente clasificacion. No es un modelo generativo de texto ni un modelo de forecasting directo: su funcion es producir representaciones transferibles que se acoplan a cabezas de clasificacion u otras tareas descendentes.
 
-Su relevancia actual es, por tanto, limitada y debe evaluarse con cautela: se trata de un checkpoint sin documentacion tecnica verificable, sin licencia declarada y sin resultados de evaluacion publicados. Resulta util unicamente como objeto de inspeccion o como posible base para experimentacion, nunca como componente de produccion sin una validacion previa exhaustiva.
+Su relevancia practica radica en que ofrece una alternativa de bajo coste computacional (repo de 0,1 GB, pesos en safetensors, libreria transformers) para experimentar con representaciones preentrenadas de series temporales sin necesidad de entrenar desde cero. La model card incluye un ejemplo completo de fine-tuning sobre el conjunto ArrowHead del UCR Time Series Classification Archive.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (transformer encoder-only), segun tag `bert` |
-| Parametros totales | 15.295.776 |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos en safetensors; cuantizacion a FP16/INT8 posible via herramientas externas, no documentada por el autor) |
-| Idiomas soportados | no disponible |
+| Arquitectura | BERT-Small (encoder-only, transformer bidireccional) |
+| Parametros totales | 15.295.776 (aprox. 15,3 M) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (definida por `context_length` en la configuracion de Chronos-Bolt) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible (modelo sobre series temporales numericas, no texto) |
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La unica informacion estructural disponible proviene de los tags del repositorio (`bert`) y del recuento de parametros en safetensors (15.295.776), cifra que coincide con la configuracion estandar de BERT-base (12 capas, 768 dimensiones ocultas, 12 cabezas de atencion y vocabulario de 30.522 tokens). Se trata, por tanto, de un transformer encoder-only bidireccional, no de un modelo generativo autorregresivo ni de una arquitectura MoE o hibrida.
+La arquitectura es un transformer encoder-only de tipo BERT-Small. La entrada no es texto sino series temporales numericas: cada serie se divide en parches siguiendo la representacion de Chronos-Bolt, y esos parches se procesan con el encoder bidireccional. El objetivo de preentrenamiento es MLM: se enmascaran parches aleatorios de la serie y el modelo aprende a reconstruirlos, lo que fuerza el aprendizaje de representaciones generales de la dinamica temporal.
 
-No hay datos publicados sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset, la existencia de fases de ajuste fino supervisado o de preferencias (RLHF/DPO), ni sobre innovaciones tecnicas como atencion lineal o decodificacion especulativa. La model card no incluye hiperparametros, regimen de precision ni infraestructura de computo empleada.
+La model card menciona mecanismos de augmentacion durante el preentrenamiento (probabilidades de enmascarado de parches, `masking_prob` y `patch_masking_prob`, y de perturbacion, `perturbation_prob` y `patch_perturbation_prob`), que el usuario debe desactivar durante el fine-tuning. No se especifica en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo etapas de RLHF o DPO (no aplicables de forma habitual en este tipo de modelo). El backbone parte de la configuracion preentrenada de Chronos-Bolt y los pesos se transfieren a la variante de clasificacion, inicializando la cabeza de clasificacion por separado.
 
 ## Capacidades
 
-- Codificacion de texto bidireccional: al ser un encoder BERT, produce representaciones contextuales de secuencias de entrada, adecuadas para tareas de comprension del lenguaje.
-- Clasificacion de secuencias: potencial uso en analisis de sentimiento, deteccion de topicos o moderacion, previo ajuste fino.
-- Etiquetado de tokens (NER, POS): la arquitectura encoder-only es la base habitual para tareas de sequence labeling.
-- Question answering extractivo: compatible con el formato SQuAD si se anade una cabeza de prediccion de spans.
-- Similitud semantica y recuperacion: los embeddings del token `[CLS]` o las representaciones medias pueden emplearse en busqueda semantica y clustering.
-- Tool calling / function calling: no disponible; no es una capacidad nativa de la arquitectura ni se documenta en el repositorio.
-- Razonamiento multi-paso y agentes: no disponible.
-- Capacidades multilingues: no disponible; no se declara el idioma o idiomas del entrenamiento.
-- Modo thinking, vision o audio: no disponible.
+- Aprendizaje de representaciones de series temporales univariantes mediante encoder bidireccional.
+- Reconstruccion de parches enmascarados de una serie temporal (objetivo MLM adaptado).
+- Transferencia a tareas descendentes: la model card documenta explicitamente el fine-tuning para clasificacion de series temporales.
+- Manejo de valores ausentes mediante una mascara booleana que indica que valores estan observados.
+- Procesamiento directo de valores numericos de la serie (sin tokenizacion de texto).
+- Soporte de pooling configurable en la cabeza de clasificacion (por ejemplo, `pooling="mean"`) y dropout configurable.
+- No soporta generacion de texto, tool calling, agentes, vision, audio ni capacidades multilingues.
 
 ## Casos de uso
 
-- Clasificacion de tickets de soporte: ajustando una cabeza de clasificacion sobre las representaciones del encoder, el modelo puede categorizar incidencias por departamento o urgencia; su tamano (15,3 M de parametros) permite inferencia en CPU con latencia baja.
-- Extraccion de entidades en documentos: como base para un modelo de NER tras fine-tuning, util en pipelines de procesamiento de facturas o contratos donde se requiere identificar personas, importes y fechas.
-- Busqueda semantica en bases documentales: generando embeddings de parrafos para un indice vectorial, el modelo permite recuperacion por similitud en corpus de dominio acotado, siempre que se valide la calidad de las representaciones.
-- Filtrado y moderacion de contenido: clasificacion binaria o multiclase de textos entrantes en foros o comentarios, con un coste computacional muy inferior al de un modelo generativo.
-- Question answering extractivo sobre FAQ: entrenando sobre pares pregunta-respuesta con spans, puede localizar la respuesta dentro de un parrafo de documentacion interna.
-- Prototipado e investigacion de arquitecturas BERT: por su reducido tamano y formato safetensors, sirve como checkpoint de referencia para experimentos de destilacion, pruning o analisis de representaciones internas.
-- Deteccion de duplicados y near-duplicates: comparando embeddings de pares de textos para identificar contenido repetido en repositorios de articulos o registros.
+- Clasificacion de series temporales con el UCR Archive: el modelo se ajusta finamente sobre conjuntos como ArrowHead con una cabeza de clasificacion y pooling por media, aprovechando las representaciones preentrenadas para reducir el coste de entrenamiento desde cero.
+- Deteccion de patrones en sensores industriales: al procesar series numericas con mascara de valores observados, puede adaptarse a tareas de clasificacion de estados de maquinaria a partir de lecturas de sensores con huecos.
+- Clasificacion de senales biomedicas: fine-tuning sobre series de ECG, EEG u otras senales para tareas de clasificacion supervisada, usando el backbone preentrenado como extractor de caracteristicas.
+- Extraccion de embeddings para clustering o recuperacion: las representaciones del encoder pueden usarse como features para agrupar series similares o alimentar modelos posteriores.
+- Prototipado rapido en investigacion: con 15,3 M de parametros y pesos en safetensors de 0,1 GB, permite iterar experimentos de representacion de series en entornos con recursos limitados.
+- Baseline para comparativas academicas: sirve como referencia ligera frente a modelos de forecasting o clasificacion de mayor tamano en estudios sobre transferencia de representaciones temporales.
+- Preentrenamiento y ajuste en pipelines propios: el ejemplo de la model card muestra como cargar el modelo con `transformers`, transferir pesos a una variante de clasificacion y entrenar con AdamW y scheduler lineal con warmup.
 
 ## Benchmarks y rendimiento
 
@@ -55,37 +53,35 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 60 MB en FP32 (15,3 M de parametros x 4 bytes), unos 30 MB en FP16 y alrededor de 15 MB en INT8. Cabe holgadamente en cualquier GPU consumer.
-- GPU recomendadas: no requiere GPU dedicada; funciona en CPU con throughput adecuado para lotes pequenos. Cualquier GPU con al menos 2 GB de VRAM (GTX 1050, RTX 3050, etc.) es suficiente; para lotes grandes se recomienda RTX 3060 o superior.
-- Cabe en GPU consumer: si, en practicamente cualquier modelo, incluidas GPUs integradas con soporte CUDA o incluso ejecucion en CPU.
-- Opciones de despliegue: `transformers` con PyTorch nativo, `ONNX Runtime`, `TorchScript`, `vLLM` (soporte limitado para encoder-only), `llama.cpp` (con conversion a GGUF, no documentada por el autor), `TGI` (orientado a modelos generativos, no aplicable directamente). Para clasificacion, la via mas directa es `transformers` con `AutoModel` y `AutoTokenizer`.
-- Latencia y throughput estimados: no disponibles; al no conocerse la configuracion exacta del tokenizador ni la longitud de secuencia, no es posible ofrecer cifras fiables. En terminos orientativos, un BERT-base en CPU moderna procesa decenas de secuencias por segundo con longitudes de 128 tokens, pero esta estimacion no esta validada para este checkpoint concreto.
+- VRAM estimada para inferencia: muy baja; con 15,3 M de parametros en fp32 el modelo ocupa aproximadamente 61 MB de pesos, y en fp16 alrededor de 31 MB. La VRAM real dependera del tamano de lote y de la longitud de la serie de entrada.
+- GPU recomendadas: cualquier GPU moderna es suficiente; el modelo cabe holgadamente en tarjetas consumer como RTX 3060, RTX 4060 o RTX 4090, e incluso puede ejecutarse en CPU para inferencia y fine-tuning de conjuntos pequenos.
+- Cabe en GPU consumer: si, sin restricciones practicas por tamano de pesos.
+- Opciones de despliegue: la model card usa la libreria `transformers` y el paquete `chronos_pkg` (modulos `chronos_bolt` y `chronos_bolt_classification`). No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, y por el tipo de modelo (encoder de series temporales) no son opciones habituales.
+- Latencia y throughput estimados: no disponibles. El coste dominante sera la longitud de la serie de entrada y el tamano de lote, no el numero de parametros.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Documentacion |
+| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ddrg/ChronosBERT-Bolt-Default | 15,3 M | no disponible | no disponible | Hugging Face (0 descargas) | Model card autogenerada, sin datos |
-| google-bert/bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Model card completa, benchmarks GLUE publicados |
-| distilbert/distilbert-base-uncased | 66 M | 512 tokens | Apache 2.0 | Hugging Face | Model card completa, resultados de destilacion |
-| prajjwal1/bert-tiny | 4,4 M | 512 tokens | Apache 2.0 | Hugging Face | Model card con benchmarks reducidos |
+| ChronosBERT-Bolt-Default | 15,3 M | no disponible | Representacion de series temporales (encoder) | no disponible | Hugging Face (ddrg/ChronosBERT-Bolt-Default) |
+| Chronos-Bolt | no disponible en la informacion | no disponible | Forecasting de series temporales | no disponible | Referenciado como backbone en la model card |
+| BERT-Small estandar | no disponible en la informacion | no disponible | Representacion de texto (encoder) | no disponible | Ampliamente disponible |
 
-La comparativa revela que ChronosBERT-Bolt-Default tiene un recuento de parametros muy inferior al de BERT-base (15,3 M frente a 110 M), lo que sugiere una configuracion reducida (posiblemente menos capas o dimensiones ocultas menores) o un vocabulario mas pequeno. Sin documentacion ni evaluaciones, no es posible situarlo frente a alternativas consolidadas como DistilBERT o BERT-tiny en terminos de rendimiento.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion tecnica: la model card no especifica datos de entrenamiento, hiperparametros, idioma ni finalidad, lo que impide evaluar su idoneidad para cualquier tarea.
-- Licencia no declarada: no se puede asumir permiso para uso comercial; en ausencia de licencia explicita, los derechos de uso son inciertos y su explotacion en produccion conlleva riesgo legal.
-- Riesgo de sesgos desconocido: al no conocerse el corpus de entrenamiento, no es posible evaluar sesgos de genero, raza, idioma o dominio.
-- Riesgo de alucinacion: aunque es un encoder y no genera texto libre, en tareas de QA extractivo puede producir spans incorrectos si el contexto no contiene la respuesta; sin evaluacion, este riesgo no esta cuantificado.
-- Limitaciones de contexto e idioma: no disponibles; se desconoce la longitud maxima de secuencia soportada y los idiomas cubiertos.
-- Cero adopcion verificable: 0 descargas y 0 likes indican que el checkpoint no ha sido validado por la comunidad; no hay evidencia de que funcione correctamente.
-- Fecha de creacion futura (2026-11-09): el repositorio muestra una fecha de creacion posterior a la actual, lo que puede indicar un error de metadatos o una subida programada; conviene verificar la integridad del repositorio antes de cualquier uso.
-- No apto para produccion sin validacion: cualquier despliegue deberia ir precedido de una evaluacion propia sobre el dominio objetivo y de una revision legal de la licencia.
+- Modelo especializado en series temporales numericas; no es un modelo de lenguaje y no genera texto ni responde a instrucciones.
+- La licencia no esta indicada en la informacion disponible, por lo que el uso comercial no puede darse por permitido sin verificacion previa en el repositorio.
+- No se documentan sesgos especificos, pero al ser un modelo preentrenado sobre datos no descritos, pueden heredar sesgos de la distribucion de series utilizada.
+- Riesgo de alucinacion no aplicable en el sentido generativo, pero si de representaciones poco fiables fuera de la distribucion de entrenamiento.
+- La longitud de contexto no esta publicada; depende de la configuracion de Chronos-Bolt y debe consultarse en el codigo del repositorio de GitHub.
+- El fine-tuning requiere desactivar manualmente las probabilidades de enmascarado y perturbacion de parches, tal como advierte la model card.
+- El ejemplo de la model card depende del paquete `chronos_pkg` y de modulos especificos (`chronos_bolt`, `chronos_bolt_classification`), lo que anade dependencias fuera de `transformers`.
+- El repositorio tiene 0 likes y la model card esta incompleta en varios campos (licencia, idiomas, pipeline), lo que sugiere un modelo de investigacion sin garantias de mantenimiento.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/ddrg/ChronosBERT-Bolt-Default
-- Paper de referencia de BERT (citado en los tags del repositorio): https://arxiv.org/abs/1910.09700
-- Calculadora de impacto medioambiental citada en la plantilla de la model card: https://mlco2.github.io/impact
-- Documentacion de Transformers: https://huggingface.co/docs/transformers
+- Hugging Face: https://huggingface.co/ddrg/ChronosBERT-Bolt-Default
+- GitHub del proyecto: https://github.com/JuliusHanusch/ChronosBERT
+- UCR Time Series Classification Archive: https://www.timeseriesclassification.com/

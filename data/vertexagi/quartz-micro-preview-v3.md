@@ -2,115 +2,117 @@
 
 ## Resumen
 
-Quartz Micro Preview V3 es un modelo lingüístico de tamaño muy reducido (~100 millones de parámetros) entrenado desde cero por Vertex AGI, una organización independiente. Se trata de la versión con ajuste por instrucciones (instruction-tuned) de la tercera generación de la familia Quartz, cuyo modelo base es `VertexAGI/quartz-micro-preview-v3-base`. El entrenamiento se realizó íntegramente en una única GPU de consumo (una GTX 1660 Ti), lo que lo convierte en un proyecto de investigación y afición más que en un modelo de producción.
+Quartz Micro Preview V3 es un modelo de lenguaje de tipo decoder denso con arquitectura Llama, desarrollado desde cero por Vertex AGI. Con 100.092.672 parámetros (aproximadamente 100,09 M), se posiciona como un modelo de investigación de muy pequeño tamaño, entrenado íntegramente en una única GPU GTX 1660 Ti. Esta versión es el modelo ajustado por instrucciones (instruction-tuned) sobre el modelo base `VertexAGI/quartz-micro-preview-v3-base`, y está orientado a generación de texto conversacional en inglés.
 
-El problema que aborda es el de demostrar que se puede entrenar un chatbot funcional desde cero con recursos mínimos, y servir como banco de pruebas educativo para entender el ciclo completo de preentrenamiento y ajuste por instrucciones. La versión V3 introduce un conjunto de datos de identidad propio (`quartz-identity-data`) que corrige uno de los fallos más graves de V2: el modelo solía atribuirse una identidad falsa.
+El modelo emplea una arquitectura transformer densa con 12 capas, dimensión oculta de 768, 12 cabezas de atención y 4 cabezas KV (atención con grouped-query), FFN SwiGLU de 2048, RoPE y embeddings atados con un tokenizador BPE byte-level de 32K. Su ventana de contexto es de solo 1.024 tokens, lo que lo limita a conversaciones cortas y tareas de generación breve.
 
-Es relevante como caso de estudio: a 100M de parámetros escribe texto corto y fluido, pero el propio autor advierte de que inventa hechos, falla en matemáticas, razonamiento y código, y no debe usarse como fuente de verdad. Su arquitectura es un decodificador denso tipo Llama con 12 capas, contexto de 1.024 tokens y vocabulario byte-level BPE de 32K tokens.
+La relevancia de este modelo es fundamentalmente educativa y de investigación: demuestra que es posible entrenar un LM desde cero en hardware de consumo muy modesto y publicar artefactos reproducibles en múltiples formatos (safetensors, MLX y GGUF). El autor es explícito sobre sus limitaciones: el modelo alucina hechos, falla en matemáticas y código, e ignora límites de longitud. No debe considerarse una fuente fiable de información ni un modelo apto para producción crítica.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Decodificador denso tipo Llama (LlamaForCausalLM) |
-| Parametros totales | 100.092.672 (~100M) |
-| Parametros activos | no disponible (no es MoE) |
+| Arquitectura | Transformer decoder denso tipo Llama (12 capas, hidden 768, 12 heads / 4 KV heads, SwiGLU 2048, RoPE, embeddings atados) |
+| Parámetros totales | 100.092.672 (~100,09 M) |
+| Parámetros activos | No aplica (modelo denso) |
 | Longitud de contexto | 1.024 tokens |
-| Tipos de cuantizacion | fp32, fp16, 8-bit (MLX y GGUF Q8_0), 4-bit (MLX q4 y GGUF Q4_K_M) |
-| Idiomas soportados | Ingles (en) |
+| Tipos de cuantización | fp32 (safetensors), fp16 (MLX), 8-bit y 4-bit (MLX, group size 64), F16, Q8_0 y Q4_K_M (GGUF) |
+| Idiomas soportados | Inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, GGUF, MLX |
+| Formato de pesos | safetensors (fp32), MLX (fp16, q8, q4), GGUF (f16, q8_0, q4_k_m) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decodificador denso de arquitectura Llama con 12 capas, dimensión oculta de 768, 12 cabezas de atención y 4 cabezas KV (agrupación de KV heads, similar a GQA), activación SwiGLU con dimensión intermedia de 2.048, codificación posicional RoPE y un vocabulario de 32.000 tokens mediante tokenizador byte-level BPE con pesos compartidos entre embedding y capa de salida (tied embeddings). El contexto es de 1.024 tokens.
+El modelo sigue una arquitectura transformer decoder densa con el diseño estándar de Llama: 12 capas, dimensión oculta de 768, 12 cabezas de atención con 4 cabezas KV (grouped-query attention), capa FFN SwiGLU con dimensión intermedia de 2048, codificación posicional rotatoria (RoPE) y matriz de embeddings atada a la cabeza de salida. El tokenizador es un BPE byte-level con vocabulario de 32K. El modelo se entrenó desde cero (from-scratch) en una única GPU GTX 1660 Ti, lo que condiciona tanto el tamaño como la cantidad de datos de entrenamiento, aunque la model card no especifica el número de tokens ni la composición del dataset utilizado.
 
-Fue entrenado desde cero (no es un destilado ni un ajuste de otro modelo) en una única GTX 1660 Ti, lo que limita tanto la escala del modelo como el volumen de datos. La versión V3 añade el conjunto de datos `quartz-identity-data` respecto a V2 para mejorar la identificación del modelo. No hay información disponible sobre el número de tokens de entrenamiento, la composición detallada del corpus ni el uso de técnicas como RLHF o DPO.
+La versión V3 es el resultado de un ajuste por instrucciones sobre el modelo base `quartz-micro-preview-v3-base`. La model card no detalla si se emplearon técnicas de RLHF o DPO, ni el volumen de datos de ajuste. El autor publica una comparación frente a la generación anterior (V2) evaluada sobre los mismos 156 prompts con decodificación greedy idéntica, usando como juez a `nvidia/nemotron-3-ultra-550b-a55b` en comparaciones pairwise en ambos órdenes. Los formatos publicados (fp32, MLX fp16/q8/q4 y GGUF f16/q8_0/q4_k_m) fueron validados contra el código original de entrenamiento mediante perplejidad sobre texto held-out, con diferencias que van del 0,001 % al 6,205 % (este último para MLX 4-bit).
 
 ## Capacidades
 
-- Generacion de texto conversacional corta y fluida en ingles, con plantilla de chat estandar (`apply_chat_template`).
-- Respuestas que terminan de forma natural en la mayoria de los casos (31/33 en las pruebas del autor) y baja repeticion (distinct-4-gram de 0,97).
-- Identificacion correcta de su propia identidad en la mayoria de los casos (71% en prompts reservados, 96% en prompts escritos a mano).
-- No hay soporte documentado de tool calling, function calling, agentes ni capacidades multimodales.
-- Debilidades reconocidas por el autor: matematicas, razonamiento y codigo deficientes; tiende a inventar detalles y a ignorar los limites de longitud solicitados.
-- Rendimiento degradado en conversaciones multi-turno (solo 4/13 aciertos de identidad en ese escenario).
+- Generación de texto conversacional corto y fluido en inglés.
+- Respuestas de identidad y presentación del propio modelo (mejoradas sustancialmente en V3: 71/100 en prompts held-out frente a 3/100 en V2).
+- Respuesta a preguntas factuales simples, con una tasa de acierto limitada (20/26 en el conjunto de pruebas del autor).
+- Generación con plantilla de chat (`apply_chat_template`) compatible con el ecosistema Transformers.
+- Finalización autónoma de respuestas con token `<eos>` en la mayoría de casos (31/33 en las pruebas del autor).
+- Menor tendencia a la repetición que V2 (distinct-4-gram de 0,97 frente a 0,801).
+- No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo thinking.
+- Capacidad multilingüe limitada al inglés.
 
 ## Casos de uso
 
-- Aprendizaje del ciclo completo de entrenamiento de LLM: al ser un modelo pequeno y entrenado desde cero con hardware de consumo, es ideal para estudiar preentrenamiento, ajuste por instrucciones y evaluacion sin coste de GPU elevado.
-- Experimentacion con cuantizacion: el repositorio incluye fp32, fp16, 8-bit y 4-bit en tres formatos, con mediciones de perplejidad por formato, lo que permite comparar el impacto real de la cuantizacion en un modelo controlado.
-- Prototipado de interfaces de chat en dispositivos de bajos recursos: con 67 MB en Q4_K_M y compatibilidad con llama.cpp y LM Studio, puede ejecutarse en portatiles sin GPU dedicada.
-- Demostraciones educativas y talleres: su tamano permite ejecutarlo en tiempo real incluso en CPUs modestas o en un Space de Hugging Face gratuito.
-- Pruebas de plantillas de chat y tokenizadores BPE a nivel de byte: util para depurar pipelines de tokenizacion y formateo de prompts.
-- Comparacion entre generaciones de modelos: el autor publica V1, V2 y V3 junto con sus bases preentrenadas, util para estudiar el efecto de datos de identidad y ajuste adicional.
-
-No es adecuado para produccion, asistentes reales ni generacion de codigo.
+- Investigación educativa sobre entrenamiento de LLM desde cero: el modelo sirve como referencia reproducible para estudiar el pipeline completo (tokenización, preentrenamiento, ajuste por instrucciones, cuantización y validación de perplejidad) en hardware de consumo.
+- Experimentación con cuantización en Apple Silicon: los formatos MLX fp16/q8/q4 permiten comparar el impacto de la cuantización en perplejidad (13,875 en fp16 frente a 14,739 en 4-bit) usando `mlx-lm` en un Mac.
+- Pruebas de integración con llama.cpp y Ollama: los GGUF F16/Q8_0/Q4_K_M permiten validar pipelines de despliegue local con `llama-cli -cnv` y LM Studio en equipos sin GPU dedicada.
+- Generación de texto breve para demos y prototipos de interfaz conversacional: con contexto de 1.024 tokens y respuestas medias de ~51 palabras, encaja en chatbots de demostración donde la latencia y el coste son críticos.
+- Evaluación de técnicas de alineación e identidad: el modelo permite estudiar cómo el ajuste por instrucciones mejora la coherencia de identidad (de 3/100 a 71/100) y la pérdida sobre respuestas de identidad (de 4,298 a 1,304).
+- Benchmarking de metodologías de evaluación con juez LLM: la model card documenta un protocolo pairwise en ambos órdenes con un juez externo, útil como caso práctico para diseñar evaluaciones reproducibles de modelos pequeños.
+- Base para experimentos de destilación o fine-tuning ligero: al ser un modelo Apache 2.0 de ~100 M de parámetros y 400 MB en fp32, se puede ajustar en GPUs de consumo para tareas muy acotadas.
 
 ## Benchmarks y rendimiento
 
-El autor publica una comparacion entre V2 y V3 (ambos instruct, mismos 156 prompts, decodificacion greedy con repetition penalty 1,1, juez `nvidia/nemotron-3-ultra-550b-a55b` a temperatura 0):
+Resultados publicados por el autor comparando V3 con V2 sobre los mismos 156 prompts, decodificación greedy con repetition penalty 1.1, juez `nvidia/nemotron-3-ultra-550b-a55b` a temperatura 0 y comparaciones pairwise en ambos órdenes:
 
-| Test | V2 | V3 |
+| Prueba | V2 | V3 |
 |---|---|---|
-| Identidad, 100 prompts reservados | 3/100 (3%) | 71/100 (71%) |
-| Identidad, 24 prompts escritos a mano | 5/24 (21%) | 23/24 (96%) |
+| Identidad, 100 prompts held-out | 3/100 (3 %) | 71/100 (71 %) |
+| Identidad, 24 prompts escritos a mano | 5/24 (21 %) | 23/24 (96 %) |
 | Hechos, 15 prompts originales de V2 | 5/15 | 11/15 |
 | Hechos, 11 prompts nuevos | 4/11 | 9/11 |
 | Hechos, total 26 | 9/26 | 20/26 |
 | Head-to-head en 33 prompts generales | 4 victorias | 25 victorias (4 empates) |
-| Respuestas que terminan solas (`<eos>`) | 23/33 | 31/33 |
-| Distinct-4-gram (mayor = menos repeticion) | 0,801 | 0,97 |
+| Respuestas que terminan con `<eos>` | 23/33 | 31/33 |
+| Repetición (distinct-4-gram, mayor = menos repetitivo) | 0,801 | 0,97 |
 | Longitud media de respuesta (palabras) | 126,8 | 51,5 |
-| Loss en tokens de asistente (validacion general) | 2,383 | 1,719 |
-| Loss en respuestas de identidad reservadas | 4,298 | 1,304 |
+| Pérdida en tokens de asistente, validación general | 2,383 | 1,719 |
+| Pérdida en respuestas de identidad held-out | 4,298 | 1,304 |
 
-Perplejidad por formato (held-out text; menor es mejor):
+Perplejidad por formato sobre texto held-out (menor es mejor):
 
-| Formato | Perplejidad | Diferencia |
+| Formato | Perplejidad | Diferencia respecto al original |
 |---|---:|---:|
-| transformers fp32 | 13,878 | 0,000% |
-| MLX fp16 | 13,875 | 0,020% |
-| MLX 8-bit | 13,878 | 0,001% |
-| MLX 4-bit | 14,739 | 6,205% |
-| GGUF f16 | 13,878 | 0,001% |
-| GGUF Q8_0 | 13,877 | 0,009% |
-| GGUF Q4_K_M | 13,955 | 0,557% |
+| Transformers fp32 | 13,878 | 0,000 % |
+| MLX fp16 | 13,875 | 0,020 % |
+| MLX 8-bit | 13,878 | 0,001 % |
+| MLX 4-bit | 14,739 | 6,205 % |
+| GGUF F16 | 13,878 | 0,001 % |
+| GGUF Q8_0 | 13,877 | 0,009 % |
+| GGUF Q4_K_M | 13,955 | 0,557 % |
 
-No se han publicado resultados en benchmarks estandar (MMLU, HumanEval, GSM8K, etc.).
+No se han publicado resultados en benchmarks estándar como MMLU, HumanEval o GSM8K en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM para inferencia: minima. En fp32 ocupa 400 MB; en fp16, 200 MB; en 8-bit, 108-113 MB; en 4-bit, 63-67 MB. Cabe holgadamente en cualquier GPU moderna o incluso solo en CPU.
-- GPU recomendadas: no requiere GPU dedicada. El propio modelo se entreno en una GTX 1660 Ti (6 GB), por lo que cualquier GPU de consumo posterior es mas que suficiente para inferencia.
-- Consumer GPUs: funciona sin problemas en practicamente cualquier GPU con al menos 1 GB de VRAM, y en CPU gracias a llama.cpp, Ollama y LM Studio.
-- Opciones de despliegue: Hugging Face Transformers (sin `trust_remote_code`), mlx-lm en Apple Silicon, llama.cpp, Ollama y LM Studio mediante GGUF. Los archivos MLX estan en las carpetas `mlx/fp16`, `mlx/q8` y `mlx/q4`.
-- Latencia y throughput: no disponibles, aunque el tamano (~100M parametros) implica respuestas practicamente instantaneas incluso en hardware modesto.
+- VRAM estimada para inferencia: ~400 MB en fp32, ~200 MB en fp16, ~113 MB en MLX 8-bit, ~108 MB en GGUF Q8_0, ~67 MB en GGUF Q4_K_M y ~63 MB en MLX 4-bit.
+- GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente; el modelo se entrenó en una GTX 1660 Ti (6 GB), por lo que GPUs de gama baja como GTX 1650, RTX 3050 o superiores son más que suficientes.
+- Cabe holgadamente en cualquier GPU de consumo, e incluso en CPU y en Apple Silicon mediante MLX.
+- Opciones de despliegue: Transformers (`LlamaForCausalLM` estándar, sin `trust_remote_code`), `mlx-lm` en Apple Silicon, llama.cpp, Ollama y LM Studio mediante los GGUF; también es compatible con text-generation-inference según los tags del repositorio.
+- Latencia y throughput estimados: no disponibles en la información proporcionada. Dado el tamaño (~100 M de parámetros) y el contexto máximo de 1.024 tokens, se espera una latencia muy baja y un throughput alto en hardware moderno, pero no se han publicado cifras concretas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| VertexAGI/quartz-micro-preview-v3 | ~100M | 1.024 | Apache 2.0 | Entrenado desde cero; solo ingles; capacidades muy limitadas |
-| VertexAGI/quartz-micro-preview-v2 | no disponible | no disponible | no disponible | Generacion anterior, sin datos de identidad; pierde claramente frente a V3 |
-| SmolLM2-135M-Instruct (HuggingFaceTB) | 135M | 2.048 | Apache 2.0 | Modelo comparable en escala, con entrenamiento a mayor escala y mejores capacidades generales |
+| Modelo | Parámetros | Contexto | Licencia | Idiomas | Disponibilidad |
+|---|---|---|---|---|---|
+| Quartz Micro Preview V3 | ~100,09 M | 1.024 | Apache 2.0 | en | HF (safetensors, MLX, GGUF) |
+| Quartz Micro Preview V2 | no disponible | no disponible | Apache 2.0 (según repo) | en | HF |
+| Quartz Micro Preview V3 Base | ~100,09 M (modelo base) | no disponible | Apache 2.0 (según repo) | en | HF |
 
-Comparaciones cuantitativas directas con SmolLM2 u otros modelos pequenos no estan disponibles en la informacion proporcionada.
+No se dispone de información sobre otros modelos comparables de la misma categoría (modelos from-scratch de ~100 M parámetros) en la documentación proporcionada. La comparación directa publicada por el autor se limita a las generaciones V1 y V2 de la propia familia Quartz.
 
 ## Limitaciones y advertencias
 
-- El propio autor advierte de que el modelo "afirma hechos erroneos e inventa detalles": el riesgo de alucinacion es alto y estructural, dado el tamano del modelo y el entrenamiento con recursos limitados.
-- Debilidad severa en matematicas, razonamiento y codigo.
-- Solo soporta ingles; no hay capacidades multilingues documentadas.
-- Contexto de solo 1.024 tokens, insuficiente para documentos largos o conversaciones extensas; ademas, el modelo ignora a menudo las instrucciones de longitud de respuesta.
-- Rendimiento notablemente degradado en conversaciones multi-turno (solo 4/13 aciertos de identidad en ese escenario).
-- La cuantizacion a 4 bits en MLX degrada la perplejidad un 6,2%, notablemente mas que las demas variantes; si se busca maxima fidelidad, conviene usar fp16, 8-bit o GGUF Q8_0.
-- La licencia Apache 2.0 permite uso comercial sin restricciones relevantes, pero la calidad del modelo lo hace inadecuado para entornos de produccion.
-- Es un modelo en fase "preview": debe tratarse como proyecto de investigacion o aficion, no como fuente de verdad.
+- Alucinación factual: el propio autor advierte que el modelo "afirma hechos incorrectos e inventa detalles"; solo acierta 20 de 26 prompts factuales en sus propias pruebas.
+- Debilidad en matemáticas, razonamiento y código: no es adecuado para tareas que requieran cómputo simbólico, lógica compleja o generación de código fiable.
+- Contexto muy limitado: 1.024 tokens impiden conversaciones multi-turno largas, resumen de documentos extensos o RAG con contexto amplio.
+- Ignora límites de longitud: el autor señala que el modelo no respeta las restricciones de longitud solicitadas en el prompt.
+- Solo inglés: no se documenta soporte de otros idiomas, por lo que su uso en castellano u otras lenguas no está garantizado.
+- Sesgos: no se documentan evaluaciones de sesgo; al entrenarse con un dataset no especificado, pueden aparecer sesgos propios de los datos de preentrenamiento.
+- Licencia Apache 2.0: permite uso comercial, pero dada la calidad del modelo, no se recomienda para producción crítica ni como fuente de verdad.
+- Reproducibilidad: la model card no detalla el dataset de entrenamiento, el número de tokens ni el proceso de ajuste (RLHF/DPO), lo que dificulta la replicación.
+- Modelo de investigación/hobby: el autor lo describe explícitamente como "small research / hobby model", no apto como fuente de información fiable.
 
 ## Enlaces
 
-- Modelo instruct: https://huggingface.co/VertexAGI/quartz-micro-preview-v3
+- Modelo en Hugging Face: https://huggingface.co/VertexAGI/quartz-micro-preview-v3
 - Modelo base: https://huggingface.co/VertexAGI/quartz-micro-preview-v3-base
-- Generacion anterior (V2): https://huggingface.co/VertexAGI/quartz-micro-preview-v2
-- Chat Space de demostracion: https://huggingface.co/spaces/VertexAIco/quartz-micro-preview-chat
+- Generación anterior (V2): https://huggingface.co/VertexAGI/quartz-micro-preview-v2
+- Space de chat comparativo: https://huggingface.co/spaces/VertexAIco/quartz-micro-preview-chat

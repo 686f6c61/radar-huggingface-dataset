@@ -2,102 +2,112 @@
 
 ## Resumen
 
-DeepSeek-V4-Flash-0731-Fractal-64GB-CPU-GGUF es una cuantización GGUF del modelo DeepSeek-V4-Flash-0731 (284,33B parámetros, arquitectura Mixture-of-Experts con 256 expertos enrutados y top-8 activos) publicada por el usuario Synchopate. Su objetivo no es mejorar el modelo base, sino hacerlo caber íntegramente en la RAM física de una estación de trabajo con 64 GB de DDR5, sin GPU y sin swap, manteniendo el contexto completo de 256K tokens.
+DeepSeek-V4-Flash-0731-Fractal-64GB-CPU-GGUF es una cuantización GGUF del modelo DeepSeek-V4-Flash-0731 (284.330 millones de parámetros totales, 13.170 millones activos) publicada por el usuario Synchopate bajo licencia MIT. El objetivo es permitir la inferencia en CPU de un modelo de mezcla de expertos (MoE) de gran tamaño dentro de un presupuesto de memoria de 64 GB, algo que las cuantizaciones convencionales como `UD-IQ1_S` (76,87 GiB) no consiguen sin recurrir a swap en SSD. El checkpoint ocupa 56,57 GiB en tres shards.
 
-El problema que resuelve es concreto: las cuantizaciones estándar de 1 y 2 bits (`IQ1_S`, `IQ2_XXS`) del modelo ocupan 76,87 GiB en disco, lo que en una máquina Linux de 64 GB (~62,8 GiB usables) provoca el OOM killer o fuerza a transmitir más de 16 GiB de pesos desde NVMe en cada token, con una caída de throughput del 93 % (de 133 tok/s a 9,6 tok/s). Esta variante reduce el fichero a 56,56 GiB (−26,4 %) mediante una combinación de compresión Hessiana de segundo orden en las proyecciones SwiGLU y transcodificación selectiva de las capas MLA e indexer disperso.
+La innovación principal es el esquema de cuantización propietario `Fractal-64` (30 bytes por cada 64 pesos), que reutiliza in situ el identificador de tipo `GGML_TYPE_Q2_0 = 42` de `llama.cpp`. Esto implica una dependencia estricta de un runtime parcheado: no funciona en Ollama, LM Studio, vLLM ni `llama.cpp` sin modificar. El autor distribuye binarios portables de `llama-modchip` v2.5.4 para Linux x86_64 (AVX-512 y AVX2) y declara compatibilidad con Windows 11 y Apple Silicon Metal.
 
-Es relevante para desarrolladores que quieran ejecutar un modelo frontera de razonamiento y código en hardware de consumo o servidores sin acelerador, con un proceso vivo de 57,61 GiB de VmRSS y cero swap. La licencia es MIT y el formato es GGUF para llama.cpp, con kernels AVX-512BW/AVX2 propios distribuidos en el repositorio `llama-modchip`.
+Se trata, además, de un checkpoint marcado como legacy: el propio autor lo considera superado por su línea `MaxQ v3.0`, que emplea únicamente tipos de tensor estándar de `ggml` y funciona en `llama.cpp` upstream. Por tanto, su interés actual es fundamentalmente de reproducibilidad de benchmarks y de experimentación con el formato `Fractal-64`, no como opción recomendada para nuevos despliegues.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer Mixture-of-Experts con MLA (Multi-head Latent Attention), Engram y MQA8 Sparse Indexer; 61 capas, 256 expertos enrutados, top-8 activos |
-| Parametros totales | 284,33B |
-| Parametros activos | top-8 de 256 expertos enrutados (número exacto de parámetros activos no disponible) |
-| Longitud de contexto | 256K tokens (cache KV MLA residente en RAM) |
-| Tipos de cuantizacion | Mezcla: `IQ1_S` (1,56 bpw) en `ffn_up_exps` y `ffn_gate_exps`; `Q2_0` Fractal-64 (3,75 bpw) en MLA e indexer; `Q5_K`/`Q6_K`/`F32` en proyecciones densas, expertos compartidos, capas densas 0-2 y embeddings |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer MoE con MLA (Multi-head Latent Attention) y Sinkhorn-20; arquitectura identificada como `deepseek4` en el runtime |
+| Parametros totales | 284.334.567.511 (284,33B) |
+| Parametros activos | 13,17B (Top-6 enrutados de 256 expertos + 1 compartido por capa, sin podar) |
+| Longitud de contexto | Hasta 1M tokens verificado en Windows 11 (según el autor); no se detalla el contexto nativo del modelo base |
+| Tipos de cuantizacion | `Fractal-64` (30 bytes / 64 pesos, ID de tipo 42 reutilizado); tensores densos en `Q6_K`; variantes hermanas: `LUT-VQ3-64`, `MaxQ-Fractal`, `UD-IQ1_S` |
+| Idiomas soportados | No disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF (60.729.886.080 bytes, 56,56 GiB) |
-| Modelo base | deepseek-ai/DeepSeek-V4-Flash-0731 y deepseek-ai/DeepSeek-V4.1-Flash-1017 |
-| Herramienta de cuantizacion | `llama-modchip v2.4.0` (`scripts/transcode_dsv4.c`) |
-| Descargas / likes | 0 / 0 |
+| Formato de pesos | GGUF (3 shards, 60.739.343.104 bytes = 56,57 GiB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer MoE de 61 capas con 256 expertos enrutados y top-8 activos, que combina Multi-head Latent Attention (MLA), un componente denominado Engram y un indexer disperso MQA8. La cuantización no altera la topología: preserva las capas densas iniciales (blk.0 a blk.2), los expertos compartidos (`ffn_*_shexp`), las proyecciones densas de query/value de MLA (`attn_q_a`, `attn_q_b`, `attn_kv_a_mqa`, `attn_v_b`, `attn_wo`) y los embeddings de tokens en `Q5_K`, `Q6_K` o `F32`.
+El modelo base es un transformer de mezcla de expertos con 43 capas, 256 expertos enrutados más uno compartido por capa y enrutamiento Top-6 activo sin podar, lo que resulta en 13,17B parámetros activos sobre 284,33B totales. Emplea Multi-head Latent Attention (MLA) y un mecanismo denominado Sinkhorn-20, según la información del runtime parcheado (`deepseek4`). No se dispone de datos sobre el volumen de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO; esa información pertenece a la model card del modelo base y no se incluye en la información proporcionada.
 
-La innovación técnica de esta ficha es el proceso de compresión en tres frentes. Primero, una compresión por cross-proyección Hessiana de segundo orden (`SwiGLU-H2`) aplicada a `ffn_up_exps` y `ffn_gate_exps`: en un FFN SwiGLU, el error de cuantización de la fila r de `W_up` se amplifica por E[SiLU(z_g,r)²] = (7/20)·||W_g^(r,:)||₂²·σ_x², y el de `W_gate` por E[SiLU'(z_g,r)²]·||W_u^(r,:)||₂² ≈ (31/100)·||W_u^(r,:)||₂²·σ_x². Ponderar la optimización de los superbloques `IQ1_S` con esas normas cerradas evita el colapso de perplejidad sin necesidad de datasets de calibración externos, y ahorra 15,49 GiB. Segundo, la transcodificación de las capas MLA e indexer disperso a bloques `Q2_0` de 64 pesos (30 bytes por bloque, escala y zero-point FP16 por bloque, resueltos con un solver Lloyd-Max de 24 iteraciones), que reduce `attn_k_b` de 3,70 GiB a 1,62 GiB y ahorra 4,82 GiB adicionales. Tercero, el mantenimiento a alta precisión del backbone denso de razonamiento.
-
-No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni las etapas de RLHF/DPO del modelo base en la información proporcionada.
+La contribución técnica de esta ficha es exclusivamente la cuantización. `Fractal-64` codifica 64 pesos en 30 bytes, lo que reduce el checkpoint a 56,57 GiB y permite mantener un `VmRSS` de 58,20 GiB con `-c 32768 -ub 512`, dejando unos 4,3 GiB de margen en sistemas de 64 GB. El autor reporta una divergencia de logits (KLD) frente a su referencia `MaxQ v2.5.3` de 0,8437 nats en 32 sondas (0,4373 nats en el subconjunto emparejado), con 74,3% de coincidencia en Top-1 y 94,1% en Top-5. Los tensores densos (174 en total) se mantienen en `Q6_K`. No se documenta decodificación especulativa en este checkpoint concreto, aunque el autor menciona `NextN` MTP en su línea sucesora.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multi-paso, heredados del modelo base DeepSeek-V4-Flash.
-- Generación de código, con etiqueta explícita `claude-code` que sugiere integración con flujos de agente tipo Claude Code (el autor distribuye un CLI `./modchip claude`).
-- Inferencia íntegra en CPU con contexto de 256K tokens, incluyendo cache KV MLA residente en RAM.
-- Soporte de decodificación con kernels AVX-512BW y AVX2 propios del motor `llama-modchip`.
-- Restauración rápida de estado KV mediante `/dev/shm` (slot-0), pensada para turnos multi-step de agentes.
-- Capacidades de tool calling, function calling, visión o audio: no disponibles en la información proporcionada.
-- Cobertura multilingüe: no disponible.
+- Generación de texto conversacional y razonamiento general, heredadas del modelo base DeepSeek-V4-Flash-0731.
+- Generación de código: el autor etiqueta el modelo con `claude-code`, lo que sugiere uso previsto en asistentes de programación por terminal.
+- Soporte de tool calling y function calling, evaluado en el "80-Point Functional Gate" del autor con 24/80 puntos en la categoría de herramientas.
+- Razonamiento multi-paso y uso como agente, con una puntuación de 20/80 en la categoría de código y 20/80 en la prueba de needle (recuperación en contexto largo).
+- Contexto largo: verificado hasta 1M tokens en Windows 11 según el autor, lo que habilita tareas de recuperación sobre documentos extensos.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Inferencia en CPU pura, sin GPU, sobre Linux x86_64 (AVX-512 y AVX2), Windows 11 y Apple Silicon Metal.
+- No se documentan capacidades de visión ni audio en la información disponible.
 
 ## Casos de uso
 
-- **Agentes de código en estación de trabajo sin GPU**: el modelo puede ejecutar turnos de Claude Code con contexto largo gracias a los 256K tokens y a la restauración de KV desde `/dev/shm`, que reduce el turno 1 (2.940 tokens) de 65.800 ms a 13,06 ms. Adecuado para equipos que no quieren depender de APIs externas.
-- **Servidores de inferencia CPU-only en entornos restringidos**: con 57,61 GiB de VmRSS y cero swap en una máquina de 64 GB, encaja en nodos sin acelerador donde no se permite añadir GPU por coste o por política.
-- **Razonamiento y análisis de documentos largos**: la ventana de 256K permite procesar contratos, informes o bases de código completas en una sola pasada, manteniendo el cache KV en RAM física.
-- **Asistente de desarrollo local con privacidad de datos**: al ejecutarse íntegramente en la máquina del desarrollador, el código y los prompts no salen del equipo; útil para sectores regulados.
-- **Prototipado de pipelines de agentes multi-step**: la combinación de tool calling (si el modelo base lo soporta) y contexto largo permite orquestar cadenas de razonamiento con múltiples llamadas a herramientas sin recargar el prompt.
-- **Evaluación comparativa de cuantizaciones extremas**: sirve como referencia para estudiar el impacto de `IQ1_S` + `Q2_0` Fractal-64 en calidad frente a `IQ2_XXS`, dado que el autor documenta el proceso de compresión y las métricas de memoria.
-- **Despliegue educativo o de investigación en hardware de consumo**: permite a investigadores sin clúster ejecutar un modelo de 284B parámetros en un equipo de sobremesa con 64 GB de DDR5.
+- Asistente de código en terminal: el modelo está etiquetado para `claude-code` y puede integrarse en flujos de trabajo de programación asistida sobre estaciones de trabajo sin GPU, aprovechando los 13,17B parámetros activos para mantener un decode de 9,06 tok/s en CPU.
+- Procesamiento de documentos largos en servidores sin acelerador: con contexto verificado de hasta 1M tokens y prefill en caliente de 44,36 tok/s, es viable para resumir o extraer información de expedientes extensos en máquinas de 64 GB de RAM.
+- Reproducción de benchmarks de cuantización: al conservar el autor todos los hashes de commit históricos, sirve para replicar las mediciones de KLD y perplejidad (`WikiText-2` 11,5288 ± 0,5563) frente a otras variantes.
+- Experimentación con formatos GGUF no estándar: útil para investigadores que estudien esquemas de cuantización alternativos como `Fractal-64` o `LUT-VQ3-64` y su impacto en la calidad.
+- Despliegue en Apple Silicon de gama alta: el autor reporta 169,4 tok/s de prefill y 27,0 tok/s de decode en un M5 Max de 64 GB con memoria unificada, adecuado para prototipos locales de agentes conversacionales.
+- Evaluación de agentes con tool calling en entornos aislados: permite medir el comportamiento del modelo en tareas de herramientas (24/80 en el gate funcional del autor) antes de migrar a la variante `MaxQ v3.0`.
+- Investigación sobre alineación y comportamiento: existe una variante "Abliterated" publicada por el mismo autor, lo que facilita estudios comparativos, aunque esta ficha concreta corresponde al checkpoint estándar.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K) en la información disponible. El autor sí publica métricas de rendimiento de inferencia comparando la cuantización estándar con esta variante:
-
-| Métrica | Baseline `IQ1_S`/`IQ2_XXS` | Fractal-64GB (`v2.4.0`) | Mejora |
+| Metrica | Fractal-64 (56,57 GiB) | MaxQ-Fractal (56,93 GiB, referencia) | UD-IQ1_S (76,87 GiB) |
 |---|---|---|---|
-| Tamano GGUF en disco | 76,87 GiB | 56,56 GiB (60.729.886.080 B) | −20,31 GiB (−26,4 %) |
-| VmRSS con contexto 256K | > 64 GiB (thrashing de 16 GiB en SSD) | 57,61 GiB (60.408.048 kB, 0 swap) | 100 % residente en 64 GB |
-| Prefill CPU puro (pp=403..580, 16c Zen 5) | 25,05 tok/s | 43,16–44,36 tok/s | +77,1 % |
-| Decode CPU puro (tg, 16c Zen 5) | 6,41 tok/s | 9,06–10,74 tok/s (11,5–14,7 con PVS) | +55 % a +129 % |
-| Restauración warm Claude Code turno 1 (2.940 tok) | 65.800 ms (evaluación en frío) | 13,06 ms (restauración KV slot-0 en `/dev/shm`) | 5.038x más rápido |
+| Perplejidad `WikiText-2` (8.192 tok) | 11,5288 ± 0,5563 | 11,6139 ± 0,5845 | No disponible |
+| Perplejidad `wiki-alt.txt` (ctx 5632, 51c / 12c) | No disponible (remite a MaxQ-Fractal) | 7,2977 ± 0,0504 / 7,3180 ± 0,1039 | 5,9734 (51c) |
+| KLD vs. referencia (32 sondas) | 0,8437 / 0,4373 nats | 0,0000 nats (referencia) | No disponible |
+| Coincidencia Top-1 / Top-5 | 74,3% / 94,1% | Referencia | No disponible |
+| Gate funcional de 80 puntos (herramientas/código/needle) | 64,0 / 80,0 (24/20/20) | 70,0 / 80,0 (30/20/20) | No disponible |
+| Prefill en frío (CPU) | 37,79 – 43,98 tok/s | 36,11 – 37,56 tok/s | 24,73 – 25,19 tok/s |
+| Prefill con reutilización de prefijo | 44,36 tok/s | No disponible | 25,12 tok/s |
+| Decode puro (N=1, Top-6) | 9,06 tok/s | 8,66 tok/s | 5,91 tok/s |
+| Decode servido (Stockfish-PVS) | 9,55 tok/s (75,8% precisión); ráfagas 11,5 – 21,2 tok/s | 8,80 tok/s (78,7%); 11,2 – 21,0 tok/s | No disponible |
+| Windows 11, contexto 1M (Ryzen 7 9800X3D, 8C) | 21,3 – 22,6 tok/s pp512 / 6,35 – 8,04 tok/s tg128 | Compatible | OOM |
+| Apple M5 Max 64 GB | 169,4 tok/s pp512 / 27,0 tok/s tg128 | Compatible | OOM |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Las cifras anteriores son mediciones del autor sobre el propio checkpoint.
 
 ## Requisitos de hardware
 
-- **RAM**: mínimo 64 GB de DDR5; el proceso vivo ocupa 57,61 GiB con contexto de 256K, dejando 6,39 GiB de margen para el sistema operativo. No cabe en máquinas de 32 GB ni en 48 GB.
-- **CPU**: se han medido 16 núcleos Zen 5; se requieren kernels AVX-512BW o AVX2, proporcionados por `llama-modchip`.
-- **GPU**: no se necesita ninguna; el modelo está diseñado para inferencia 100 % CPU con 0 GPUs y 0 swap.
-- **Almacenamiento**: el GGUF ocupa 56,56 GiB; se recomienda almacenamiento NVMe para la carga inicial y `/dev/shm` para la restauración de KV.
-- **Despliegue**: motor `llama-modchip` (fork de llama.cpp con kernels propios y CLI `./modchip claude`). Compatibilidad con vLLM, TGI u Ollama: no disponible.
-- **Latencia y throughput**: prefill de 43,16–44,36 tok/s y decode de 9,06–10,74 tok/s (hasta 14,7 tok/s con PVS) en 16 núcleos Zen 5. El throughput en otras microarquitecturas no está documentado.
+- RAM: 58,20 GiB de `VmRSS` medidos con `-c 32768 -ub 512`, sobre un total de archivo de 56,57 GiB. Se recomienda un sistema con 64 GB de RAM y margen para el sistema operativo (unos 4,3 GiB según el autor).
+- GPU: no se requiere GPU; el checkpoint está diseñado para inferencia en CPU. Funciona también en Apple Silicon con memoria unificada (probado en M5 Max de 64 GB).
+- CPU: x86_64 con AVX-512 (Zen 4/5, Ice Lake o superior) o AVX2 (Haswell, Skylake, Zen 2/3, Alder Lake, Raptor Lake). Los binarios AVX2 no emiten instrucciones `%zmm` ni `AVX512_BF16`. Requiere OpenMP (`libgomp1`).
+- No cabe en GPUs de consumo tipo RTX 4090 (24 GB) ni en configuraciones de 32 GB; el tamaño del checkpoint excede cualquier VRAM consumer actual.
+- Despliegue: exclusivamente mediante los binarios `llama-modchip` v2.5.4 incluidos en el repositorio o mediante `./modchip setup` del repositorio `synchopate/llama-modchip`. No es compatible con Ollama, LM Studio, vLLM ni `llama.cpp` upstream sin parchear.
+- Throughput de referencia: 9,06 tok/s de decode puro y 37,79–43,98 tok/s de prefill en frío en CPU x86_64; 27,0 tok/s de decode en M5 Max.
+- Latencia en contexto de 1M tokens: 21,3–22,6 tok/s de prefill (pp512) en Ryzen 7 9800X3D con 8 hilos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato / despliegue | Licencia | Notas |
+| Modelo | Parametros | Contexto | Tamano en disco | Licencia | Runtime |
 |---|---|---|---|---|---|
-| DeepSeek-V4-Flash-0731-Fractal-64GB-CPU-GGUF | 284,33B (MoE, top-8) | 256K | GGUF, llama-modchip, CPU | MIT | Cabe en 64 GB de RAM; 9–14,7 tok/s decode en 16c Zen 5 |
-| DeepSeek-V4-Flash-0731 `IQ1_S`/`IQ2_XXS` | 284,33B (MoE, top-8) | 256K | GGUF, llama.cpp | MIT (modelo base) | 76,87 GiB; requiere >64 GB o swap con thrashing del 93 % |
-| DeepSeek-V4.1-Flash-1017 | no disponible | no disponible | no disponible | no disponible | Modelo base alternativo citado por el autor; sin datos de cuantización en esta ficha |
+| DeepSeek-V4-Flash-0731-Fractal-64 (este) | 284,33B totales / 13,17B activos | Hasta 1M verificado | 56,57 GiB | MIT | `llama-modchip` v2.5.4 (parcheado) |
+| DeepSeek-V4-Flash-0731-MaxQ-v4-64GB | 284,33B totales / 13,17B activos | No disponible | ~64 GB (objetivo) | MIT | `llama-modchip` v3.0 y `llama.cpp` upstream |
+| DeepSeek-V4-Flash-0731-MaxQ-Fractal-64GB | 284,33B totales / 13,17B activos | No disponible | 56,93 GiB | MIT | `llama-modchip` v2.5.x |
+| DeepSeek-V4-Flash-0731-VQ3-64GB | 284,33B totales / 13,17B activos | No disponible | 56,40 GiB | MIT | `llama-modchip` v2.5.x |
+| Qwen3.8-Flash-Next-MaxQ-64GB | No disponible | No disponible | ~64 GB (objetivo) | No disponible | `llama-modchip` v3.0 |
 
-No se dispone de datos de benchmarks de calidad ni de otras alternativas comparables en la información proporcionada.
+La comparación relevante es interna a la familia de cuantizaciones del mismo autor: `MaxQ v3.0` es la opción recomendada para nuevos despliegues por usar tipos estándar de `ggml`, mientras que este checkpoint `Fractal-64` conserva interés por su menor tamaño y por la reproducibilidad de sus mediciones.
 
 ## Limitaciones y advertencias
 
-- **Calidad de cuantización extrema**: `IQ1_S` a 1,56 bpw en las proyecciones de expertos y `Q2_0` a 3,75 bpw en MLA e indexer implican pérdida de precisión. El autor afirma que no hay colapso de perplejidad, pero no publica métricas de calidad que lo respalden.
-- **Riesgo de alucinación**: inherente al modelo base y potencialmente agravado por la cuantización de 1 bit en partes del FFN; no se han publicado evaluaciones específicas.
-- **Requisito de hardware estricto**: necesita 64 GB de RAM y CPU con AVX-512BW/AVX2; no es portable a GPUs ni a entornos con menos memoria sin volver a cuantizar.
-- **Dependencia de un fork**: requiere `llama-modchip v2.4.0`, no el llama.cpp estándar; la compatibilidad futura con versiones upstream de llama.cpp no está garantizada.
-- **Licencia**: MIT, lo que permite uso comercial, pero conviene verificar la licencia del modelo base DeepSeek-V4-Flash-0731, no detallada en esta información.
-- **Idiomas y sesgos**: no se dispone de información sobre cobertura lingüística ni sesgos conocidos del modelo base.
-- **Madurez**: publicación con 0 descargas y 0 likes, creada y actualizada el 5 de noviembre de 2026; sin validación comunitaria.
-- **Throughput limitado**: 9–14,7 tok/s en decode no es apto para aplicaciones interactivas de baja latencia con muchos usuarios concurrentes.
+- Checkpoint legacy: el propio autor lo declara superado por `MaxQ v3.0` para despliegues nuevos de 64 GB.
+- Requiere un runtime parcheado específico (`llama-modchip` v2.5.4). Cargarlo en `llama.cpp` sin modificar provoca errores de límites de tensor o `unknown model architecture: 'deepseek4'`.
+- No es compatible con Ollama, LM Studio, vLLM ni TGI, lo que limita su integración en infraestructura estándar.
+- La cuantización introduce degradación medible: KLD de 0,8437 nats frente a la referencia y caída del gate funcional de 70 a 64 puntos sobre 80, con especial pérdida en tool calling (de 30 a 24).
+- El modelo base es un MoE de 284B parámetros: existe riesgo de alucinación inherente al modelo, no cuantificado en la información disponible.
+- Idiomas soportados no documentados; no se puede garantizar un rendimiento multilingüe homogéneo.
+- Licencia MIT permite uso comercial, pero la dependencia de binarios de terceros y de un formato de tensor no estándar añade riesgo operativo y de mantenimiento a largo plazo.
+- La variante "Abliterated" del mismo autor elimina restricciones de seguridad; no debe confundirse con este checkpoint en entornos de producción.
+- Los binarios distribuidos requieren `GLIBC_2.30` y OpenMP; no se garantiza su funcionamiento en distribuciones antiguas.
+- El contexto de 1M tokens solo está verificado en Windows 11 según el autor; no hay validación independiente publicada.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Synchopate/DeepSeek-V4-Flash-0731-Fractal-64GB-CPU-GGUF
-- Repositorio del motor y kernels: https://github.com/synchopate/llama-modchip
-- Script de transcodificación: https://github.com/synchopate/llama-modchip/blob/main/scripts/transcode_dsv4.c
+- Repositorio Hugging Face: https://huggingface.co/Synchopate/DeepSeek-V4-Flash-0731-Fractal-64GB-CPU-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
-- Modelo base alternativo: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
+- Variante MaxQ-Fractal (referencia de calidad): https://huggingface.co/Synchopate/DeepSeek-V4-Flash-0731-MaxQ-Fractal-64GB-CPU-GGUF
+- Variante LUT-VQ3-64: https://huggingface.co/Synchopate/DeepSeek-V4-Flash-0731-VQ3-64GB-CPU-GGUF
+- Variante Abliterated: https://huggingface.co/Synchopate/DeepSeek-V4-Flash-0731-Abliterated-Fractal-64GB-CPU-GGUF
+- Sucesor MaxQ v4 para DeepSeek-V4-Flash: https://huggingface.co/Synchopate/DeepSeek-V4-Flash-0731-MaxQ-v4-64GB-CPU-GGUF
+- Sucesor Qwen3.8-Flash-Next-MaxQ-64GB: https://huggingface.co/Synchopate/Qwen3.8-Flash-Next-MaxQ-64GB-GGUF
+- Motor y CLI `llama-modchip`: https://github.com/synchopate/llama-modchip

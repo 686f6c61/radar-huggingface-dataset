@@ -2,97 +2,94 @@
 
 ## Resumen
 
-novel-humanize-4b es un ajuste fino (fine-tune) del modelo Qwen3-4B desarrollado por el usuario gugujiji, diseñado para una tarea muy concreta: reescribir capítulos de novela web china (网文) generados o asistidos por IA para que suenen a un autor humano. El modelo no cambia trama, diálogos, personajes ni el orden de los acontecimientos; solo sustituye la "voz" del texto, eliminando florituras retóricas, metáforas de plantilla y explicaciones explícitas de emociones.
+novel-humanize-4b es un modelo de lenguaje afinado por el usuario gugujiji a partir de Qwen/Qwen3-4B, con 4.022.468.096 parámetros reales en safetensors. Su propósito es muy concreto: reescribir capítulos de novelas web chinas generadas por IA para que suenen a un autor humano, manteniendo intactos la trama, los diálogos, los personajes y el orden de los acontecimientos, y cambiando únicamente el estilo de escritura. No es un modelo generalista, sino una herramienta de post-procesado estilístico para un dominio muy delimitado.
 
-Con 4.022.468.096 parámetros (aproximadamente 4B, arquitectura densa heredada de Qwen3), el modelo está pensado para ejecutarse en una sola GPU de consumo. El autor publica la receta de prompt de sistema, los parámetros de muestreo recomendados y un script auxiliar (`fix_tools.py`) que expone la reescritura y la corrección de erratas como herramientas compatibles con function calling de OpenAI.
+El modelo resuelve un problema habitual en la producción de ficción serializada en China: el "sabor a IA" (AI 味) que delata a los textos generados automáticamente mediante florituras retóricas, metáforas de plantilla y explicaciones explícitas de emociones. La propuesta del autor es sustituir ese registro por una voz más contenida, con ritmo y economía expresiva propios de un autor real. Al estar construido sobre un transformer denso de 4B, puede ejecutarse en una GPU de consumo convencional, lo que lo hace accesible para flujos de trabajo individuales.
 
-Su relevancia es acotada pero práctica: cubre el nicho de posprocesado estilístico para plataformas de ficción serializada y flujos editoriales en chino, donde el "sabor a IA" es un problema de calidad perceptible por el lector. La licencia Apache 2.0 y el tamaño reducido facilitan su integración en producción, aunque no hay benchmarks publicados ni un volumen de descargas que permita validar su robustez de forma independiente.
+Su relevancia actual es doble: por un lado, demuestra que el ajuste fino de un modelo pequeño y abierto sobre una tarea estrecha puede ser más útil que un modelo grande con prompts genéricos; por otro, su licencia CC BY-NC 4.0 restringe el uso comercial, lo que limita su adopción en productos de pago sin autorización expresa del autor. El modelo está pensado exclusivamente para chino y para el género de novela web.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (derivado de Qwen3-4B, decoder-only) |
+| Arquitectura | Transformer denso (derivado de Qwen3-4B) |
 | Parametros totales | 4.022.468.096 |
-| Parametros activos | No aplica (modelo denso, no es MoE) |
-| Longitud de contexto | El autor configura vLLM con `--max-model-len 8192`; la longitud nativa del modelo base no se especifica en la información disponible |
-| Tipos de cuantizacion | No se publican cuantizaciones en el repositorio; los pesos se distribuyen en safetensors (repo de 8,1 GB, coherente con precisión de 16 bits). La conversión a GGUF/AWQ es posible con herramientas estándar, pero no está verificada en la información disponible |
-| Idiomas soportados | Chino (zh) exclusivamente |
-| Licencia | Apache 2.0 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 8192 tokens (configuración de despliegue recomendada con `--max-model-len 8192`) |
+| Tipos de cuantizacion | no disponible (repo en safetensors; no se listan GGUF ni cuantizaciones publicadas) |
+| Idiomas soportados | chino (zh) |
+| Licencia | CC BY-NC 4.0 (solo uso no comercial; base Qwen3-4B bajo Apache 2.0) |
 | Formato de pesos | safetensors |
-| Modelo base | Qwen/Qwen3-4B (fine-tune) |
-| Pipeline | text-generation |
-| Fecha de creación | 2026-10-25 |
-| Descargas / likes | 0 / 14 |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3-4B, un transformer decoder-only denso con atención completa de tipo causal, y se distribuye como un fine-tune completo o consolidado en safetensors. La model card no documenta el proceso de entrenamiento: no se indica el número de tokens utilizados, la composición del corpus (se deduce que sería ficción web en chino, pero no se confirma), ni si se emplearon técnicas de alineación como SFT, RLHF o DPO. Tampoco se detallan hiperparámetros de ajuste ni la existencia de fases de rechazo de pares.
+El modelo parte de Qwen3-4B, un transformer denso de la familia Qwen3, y se distribuye como un ajuste fino supervisado orientado a una única tarea de reescritura estilística. No se dispone de información pública sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO; la model card no detalla el procedimiento de ajuste más allá de indicar el modelo base y el objetivo.
 
-La innovación no está en la arquitectura, sino en la especialización conductual. El autor impone un prompt de sistema fijo y muy restrictivo que prohíbe continuar el texto, añadir escenas o cambiar el orden de los eventos, y recomienda muestrear con `temperature 1.0`, `top_p 0.95`, `top_k 20`, `presence_penalty 0.3` y el modo de pensamiento desactivado (`enable_thinking: false`). Es decir, se explota el modo instructivo de Qwen3 sin cadena de razonamiento explícita. El script `fix_tools.py` añade una segunda etapa opcional: tras la reescritura, se llama a una API compatible con OpenAI para corregir únicamente erratas y confusiones entre 的/地/得, sin reescribir de nuevo.
+La innovación técnica no reside en la arquitectura, sino en el diseño del prompt y del flujo de uso: el autor fija un system prompt literal que instruye a preservar trama, diálogos, personajes y orden de eventos, eliminar adornos retóricos y metáforas de plantilla, y no continuar ni añadir escenas nuevas. Además, el modelo debe operar con el modo de razonamiento (thinking) desactivado, y se recomienda una configuración de muestreo concreta (temperature 1.0, top_p 0.95, top_k 20, presence_penalty 0.3). El repositorio incluye `fix_tools.py`, que expone los prompts como constantes (`SYSTEM`, `wrap_input`), define herramientas en formato OpenAI function calling (`rewrite_novel` y `fix_typos`) y permite encadenar la reescritura con una segunda pasada de corrección ortográfica mediante una API externa compatible con OpenAI.
 
 ## Capacidades
 
-- Reescritura estilística de ficción en chino: transforma texto con "sabor a IA" en prosa con ritmo y contención de autor humano, conservando trama, diálogos y personajes.
-- Restricción de fidelidad: el prompt de sistema obliga a no continuar la historia, no añadir escenas y mantener una extensión similar a la del original.
-- Procesamiento de capítulos completos: el autor recomienda introducir capítulos de 1000 a 2500 caracteres de una sola vez para obtener el mejor resultado.
-- Modo de pensamiento desactivable mediante `chat_template_kwargs` (`enable_thinking: false`), heredado del template de Qwen3.
-- Soporte de function calling: `fix_tools.py` define dos herramientas en formato OpenAI (`rewrite_novel` y `fix_typos`) que un modelo orquestador externo puede invocar.
-- Corrección de erratas en dos etapas: reescritura con el modelo local y detección de errores tipográficos mediante una API externa (por ejemplo, DeepSeek), limitada a corregir sin reescribir.
-- Capacidades multilingües: no disponibles; el modelo está entrenado y orientado únicamente al chino.
-- Visión, audio y otras modalidades: no disponibles.
+- Reescritura estilística de capítulos de novela web china, preservando trama, diálogos, personajes y secuencia de eventos.
+- Eliminación de marcadores de texto generado por IA: florituras, metáforas estereotipadas y explicaciones directas de emociones.
+- Control de extensión: el autor indica que la longitud de salida debe ser comparable a la de entrada y que el modelo no debe continuar la historia más allá del texto proporcionado.
+- Procesamiento de capítulos completos de 1000 a 2500 caracteres chinos en una sola pasada, con contexto de 8192 tokens.
+- Integración como herramienta mediante function calling en formato OpenAI, con definiciones listas para usar en `fix_tools.py`.
+- Despliegue servido con vLLM y consumo a través de la API compatible con OpenAI.
+- Capacidad de corrección ortográfica delegada: el script permite encadenar el modelo con una API externa para detectar errores tipográficos y confusiones entre 的/地/得 sin reescribir el texto.
+- Modo de razonamiento desactivable mediante `chat_template_kwargs` (`enable_thinking: False`).
+- No se documentan capacidades de visión, audio, matemáticas avanzadas ni generación de código; el modelo está especializado en una sola tarea textual en chino.
 
 ## Casos de uso
 
-- Posproducción de ficción serializada en plataformas de web novel: pasar cada capítulo redactado con asistencia de LLM por el modelo antes de publicarlo, para eliminar fórmulas repetitivas y metáforas de plantilla que los lectores identifican como generadas por IA.
-- Integración como herramienta en un agente editorial: gracias a la definición de `rewrite_novel` en formato function calling, un orquestador (por ejemplo, DeepSeek) puede encadenar reescritura y corrección de erratas dentro de un pipeline mayor de revisión.
-- Limpieza de estilo en traducciones: capítulos traducidos de otros idiomas al chino suelen arrastrar calcos sintácticos; el modelo puede reescribirlos con una cadencia más natural sin alterar el contenido.
-- Normalización de manuscritos de autores que usan LLM como borrador: el escritor genera una primera versión y el modelo la "humaniza" antes de la revisión manual, manteniendo su estructura narrativa.
-- Etapa de control de calidad en editoriales pequeñas: procesamiento por lotes en una sola GPU de consumo (por ejemplo, una RTX 4090) para revisar decenas de capítulos al día sin depender de APIs externas.
-- Experimentos de estilometría y atribución de autoría: al preservar trama y contenido, permite generar pares de texto (original frente a reescrito) para estudiar qué marcas lingüísticas delatan la escritura asistida por IA.
-- Cadena de corrección editorial: uso conjunto de `rewrite_novel` y `fix_typos` para entregar un capítulo reescrito y con erratas corregidas, delegando el paso de corrección a un modelo mayor vía API compatible con OpenAI.
+- Post-procesado de capítulos generados por IA en plataformas de novela web: el modelo recibe un capítulo completo de 1000 a 2500 caracteres y devuelve una versión con voz de autor humano, lista para revisión editorial antes de publicar.
+- Cadena de producción editorial con corrección posterior: usando `fix_tools.py`, se reescribe el capítulo con novel-humanize-4b y después se pasa por una API externa (por ejemplo DeepSeek) que solo corrige erratas y usos de 的/地/得, reduciendo el trabajo manual de revisión.
+- Herramienta invocable por un agente orquestador: un modelo mayor con soporte de `tools` puede llamar a `rewrite_novel` y `fix_typos` como funciones, delegando la reescritura estilística a este modelo especializado y manteniendo el control del flujo en el orquestador.
+- Normalización de estilo en corpus de ficción: para equipos que recopilan textos generados y necesitan homogeneizar el registro antes de entrenar o evaluar otros modelos, el modelo actúa como filtro estilístico por capítulo.
+- Despliegue local en una sola GPU de consumo: con vLLM y `--max-model-len 8192`, un usuario individual puede montar un servicio de reescritura en su propia máquina sin depender de APIs de pago, siempre que el uso sea no comercial.
+- Prototipado de asistentes de escritura para autores: integrado en un editor, el modelo puede ofrecer una versión "humanizada" de un borrador manteniendo la estructura original, útil para comparar registros antes de decidir la versión final.
+- Evaluación de detectores de texto IA: al disponer de pares original/reescrito, sirve para probar la robustez de clasificadores de texto generado frente a reescrituras estilísticas controladas.
 
 ## Benchmarks y rendimiento
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-La model card no incluye evaluaciones automáticas (MMLU, HumanEval, GSM8K ni métricas de estilo), ni comparaciones cuantitativas con el modelo base. Tampoco se aportan métricas de latencia o throughput.
-
 ## Requisitos de hardware
 
-- VRAM estimada en precisión de 16 bits: en torno a 8 GB solo para pesos, más caché KV; con `--max-model-len 8192` conviene reservar entre 10 y 12 GB.
-- VRAM estimada cuantizado: aproximadamente 4,5-5 GB en 8 bits y 2,5-3,5 GB en 4 bits (estimación por tamaño, no verificada en la información disponible, ya que no se publican GGUF).
-- GPU recomendadas: RTX 4090, RTX 3090, RTX 4080 o cualquier GPU con 12-16 GB o más. Una A100 o H100 no aporta ventaja significativa para un modelo denso de 4B.
-- Cabe en GPU de consumo: sí. El autor afirma explícitamente que "una tarjeta gráfica normal puede ejecutarlo". En 16 bits encaja con holgura en 16 GB; cuantizado podría caber en 8 GB, aunque esto no está confirmado por el autor.
-- Despliegue: vLLM es la vía documentada (`vllm serve gugujiji/novel-humanize-4b --served-model-name novel-humanize-4b --max-model-len 8192 --generation-config vllm`). También puede servirse con cualquier runtime compatible con safetensors de Hugging Face; llama.cpp, Ollama o TGI no se mencionan en la model card.
+- VRAM estimada para inferencia: no disponible de forma oficial; para un modelo denso de 4B en safetensors, el peso completo ocupa aproximadamente 8 GB en precisión de 16 bits, por lo que se necesita margen adicional para caché KV y overhead del servidor.
+- GPU recomendadas: no especificadas por el autor. El modelo card indica que "una tarjeta gráfica normal puede ejecutarlo" (一张普通显卡就能跑), sin concretar modelos.
+- GPU de consumo: no se confirma compatibilidad con modelos concretos; por tamaño, un modelo de 4B en 16 bits es viable en GPUs de consumo con al menos 8-12 GB de VRAM, pero este dato no está verificado en la información disponible.
+- Opciones de despliegue: vLLM es la vía documentada (`vllm serve gugujiji/novel-humanize-4b --served-model-name novel-humanize-4b --max-model-len 8192 --generation-config vllm`), con cliente OpenAI. No se documentan llama.cpp, Ollama ni TGI, ni se publican pesos GGUF.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| novel-humanize-4b | 4,02B | 8192 configurado en vLLM (nativo del base no indicado) | Reescritura estilística de web novel en chino | Apache 2.0 | Hugging Face, safetensors |
-| Qwen3-4B (base) | 4B | No indicado en la información disponible | Modelo generalista instructivo y de razonamiento | Apache 2.0 | Hugging Face |
-| Qwen3-8B | 8B aprox. | No indicado en la información disponible | Modelo generalista, mayor capacidad | Apache 2.0 | Hugging Face |
-| Fine-tunes chinos de escritura creativa de 7B-8B | 7-8B aprox. | No disponible | Reescritura o generación de ficción | Variables (a menudo Apache 2.0 o licencias custom) | Hugging Face |
+| novel-humanize-4b | 4.022.468.096 | 8192 tokens (config. recomendada) | Reescritura estilística de novela web china | CC BY-NC 4.0 | Hugging Face, safetensors |
+| Qwen/Qwen3-4B (modelo base) | 4B (aprox.) | no disponible en la información proporcionada | Propósito general, multilingüe | Apache 2.0 | Hugging Face |
+| Alternativas específicas de "humanización" de texto chino | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-El modelo se diferencia de los generalistas por su especialización estrecha: frente a Qwen3-4B, sacrifica versatilidad a cambio de una conducta muy constreñida (no continuar la trama, no añadir escenas). No se dispone de comparaciones de calidad objetivas entre estas alternativas.
+No se dispone de información sobre otros modelos comparables de la misma categoría (reescritura estilística de ficción en chino) en la documentación proporcionada. La comparación más directa es con el modelo base Qwen3-4B, del que este ajuste hereda la arquitectura y el tamaño, pero del que se diferencia por la especialización y por una licencia más restrictiva.
 
 ## Limitaciones y advertencias
 
-- Ámbito lingüístico restringido: solo chino. No se garantiza ningún comportamiento en castellano u otros idiomas.
-- Ámbito de género restringido: el propio autor advierte de que solo está orientado a web novel china; otros estilos (ensayo, prensa, técnico) no están garantizados.
-- Pérdida de detalles: la model card reconoce que el modelo "a veces elimina algunos detalles", por lo que recomienda revisar manualmente la salida antes de usarla.
-- Erratas residuales: puede introducir errores tipográficos y confundir 的/地/得; de ahí el paso adicional de corrección con `fix_typos` y un modelo externo.
-- Riesgo de continuación no deseada con entradas cortas: el autor advierte de que fragmentos de pocos cientos de caracteres propician que el modelo invente trama; es necesario trocear los textos largos por párrafos.
-- Dependencia de un prompt exacto: el autor indica que el prompt de sistema no debe modificarse, lo que limita la adaptabilidad a otros estilos o instrucciones.
-- Ausencia de benchmarks y de validación comunitaria: 0 descargas y 14 likes en el momento de la consulta; no hay evidencia cuantitativa de calidad ni de robustez frente a entradas adversarias.
-- Licencia: Apache 2.0 permite uso comercial y modificación, pero no cubre los derechos sobre el texto de entrada; el usuario es responsable de la legalidad del material que reescribe y de su posterior publicación.
-- Fecha de creación registrada como 2026-10-25, posterior a la mayoría de referencias del ecosistema; conviene verificar la vigencia del repositorio antes de integrarlo.
+- Licencia CC BY-NC 4.0: prohibido el uso comercial, incluidos servicios de pago, productos comerciales y APIs comerciales, sin contacto previo con el autor. El modelo base Qwen3-4B es Apache 2.0, pero el ajuste cambia la licencia de los pesos derivados.
+- Solo chino: el modelo está entrenado y documentado únicamente para chino; no hay garantías para otros idiomas.
+- Solo novela web: el autor advierte explícitamente que otros géneros no tienen rendimiento garantizado.
+- Pérdida de detalles: la model card reconoce que el modelo ocasionalmente elimina detalles del original, por lo que recomienda revisar la salida antes de usarla.
+- Riesgo de continuación no deseada: con entradas demasiado cortas (unos cientos de caracteres) el modelo tiende a inventar trama; el autor recomienda capítulos de 1000 a 2500 caracteres y dividir los más largos por párrafos.
+- Erratas y confusiones ortográficas: puede introducir errores tipográficos y mezclar 的/地/得, de ahí la utilidad del paso de corrección con una API externa.
+- Dependencia del prompt: el uso correcto exige un system prompt literal y una configuración de muestreo concreta; desviarse de ellos degrada el resultado.
+- Modo thinking: debe desactivarse explícitamente; no está pensado para razonamiento multi-paso.
+- Sin benchmarks publicados: no hay métricas objetivas de calidad, fidelidad a la trama ni tasas de alucinación, lo que dificulta evaluar su rendimiento frente a alternativas.
+- Sin cuantizaciones publicadas: no se ofrecen pesos GGUF ni versiones cuantizadas, lo que limita el despliegue en entornos con poca VRAM.
+- Sesgos: no documentados por el autor; al entrenarse sobre ficción web china, puede reproducir estereotipos y convenciones del género.
 
 ## Enlaces
 
-- [Modelo en Hugging Face](https://huggingface.co/gugujiji/novel-humanize-4b)
-- [Modelo base Qwen/Qwen3-4B](https://huggingface.co/Qwen/Qwen3-4B)
-- Script auxiliar `fix_tools.py` del repositorio: https://huggingface.co/gugujiji/novel-humanize-4b/blob/main/fix_tools.py
-- No se han encontrado enlaces adicionales relevantes (papers, blogs, demos o repositorios) en la búsqueda web realizada; los resultados obtenidos eran anuncios inmobiliarios sin relación con el modelo.
+- Modelo en Hugging Face: https://huggingface.co/gugujiji/novel-humanize-4b
+- Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
+- Licencia CC BY-NC 4.0: https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hans
+- Script de herramientas del repositorio: `fix_tools.py` (incluido en el repositorio de Hugging Face del modelo)
+- vLLM (servidor de inferencia recomendado): https://github.com/vllm-project/vllm
+- No se han encontrado en la información proporcionada papers, blogs, demos ni repositorios adicionales del autor.

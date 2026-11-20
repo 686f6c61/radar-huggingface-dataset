@@ -2,103 +2,99 @@
 
 ## Resumen
 
-CanViT-B (Canvas Vision Transformer, variante base) es un modelo de visión artificial para clasificación de imágenes desarrollado por el grupo canvit (autores del paper: Yohaï-Eliel Berreby, Sabrina Du, Audrey Durand y B. Suresh Krishna). Este checkpoint concreto es el resultado del ajuste fino extremo a extremo sobre ImageNet-1k, partiendo del modelo preentrenado en ImageNet-21k `canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02` mediante la estrategia linear probing + fine-tuning (LP-FT). El resultado declarado por el autor es un 84,44 % de top-1 en el split de validación de ImageNet-1k.
+CanViT-B es un modelo de visión artificial de tipo *active vision* desarrollado por el equipo CanViT (Yohaï-Eliel Berreby, Sabrina Du, Audrey Durand y B. Suresh Krishna), presentado en NeurIPS 2026. A diferencia de un ViT convencional que procesa la imagen completa en una sola pasada, CanViT observa la escena mediante una secuencia de *glimpses* (recortes de 128 px sobre escenas de 512 px) y acumula la información en un *canvas* global de 32 × 32, lo que permite refinar la predicción de forma iterativa.
 
-La particularidad del modelo es que se trata de un modelo de visión activa: no procesa la imagen completa de una sola pasada, sino que observa la escena mediante una secuencia de "glimpses" (vistazos) de 128 x 128 píxeles sobre escenas de 512 x 512 píxeles, y acumula la información en un canvas (lienzo) de estado de 32 x 32 celdas que actúa como memoria espacial. Esto lo aleja del paradigma ViT estándar y lo acerca a los modelos de atención selectiva tipo fóvea, con la promesa de reducir cómputo por inferencia manteniendo la precisión.
+Este checkpoint concreto es un Vision Transformer de 95,9 millones de parámetros, preentrenado en ImageNet-21k por destilación desde DINOv3 y afinado de extremo a extremo en ImageNet-1k mediante el esquema LP-FT (linear probing seguido de fine-tuning). Alcanza un 84,44 % de Top-1 en la validación de ImageNet-1k con 21 *glimpses* y viewpoints C2F, con un intervalo de confianza del 95 % muy estrecho (84,42–84,46) sobre 11 ejecuciones.
 
-El modelo tiene 95.928.936 parámetros (unos 96 M, ~0,4 GB en el repositorio), se distribuye bajo licencia MIT, se publica en formato safetensors y requiere la librería propia `canvit-pytorch>=0.2`. Es relevante ahora porque los autores lo presentan como paso hacia "modelos fundacionales de visión activa" (paper en NeurIPS 2026), una línea alternativa a escalar ViT con entradas de resolución fija creciente.
+Su relevancia actual reside en que propone una arquitectura de visión fundacional con un paradigma de cómputo adaptativo: el modelo puede decidir cuántos *glimpses* consumir, lo que lo hace útil para escenarios con presupuesto computacional variable y para investigación en atención activa, percepción incremental y eficiencia energética en visión.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Vision Transformer base (ViT-B/16, parches de 16 px) con estado recurrente tipo canvas y política de visión activa (secuencia de glimpses) |
-| Parametros totales | 95.928.936 (aproximadamente 96 M) |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No aplica en el sentido de un LLM. Entrada: escenas de 512 x 512 px; cada glimpse cubre 128 x 128 px; canvas de estado de 32 x 32 celdas; la model card evalúa con T = 21 glimpses |
-| Tipos de cuantizacion | No disponible (el repositorio distribuye safetensors; no se documentan recetas de cuantización) |
-| Idiomas soportados | No aplica: es un modelo de clasificación de imágenes y no declara idiomas |
-| Licencia | MIT |
-| Formato de pesos | safetensors (tamaño de repositorio: 0,4 GB) |
-| Libreria de inferencia | canvit-pytorch >= 0.2 |
-| Tarea (pipeline) | image-classification |
-| Dataset de ajuste fino | ImageNet-1k |
-| Modelo base | canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02 |
-| Inicialización del cabezal | Fusión del readout CLS del modelo preentrenado con la sonda DINOv3 `canvit/dinov3-vitb16-lvd1689m-in1k-512x512-linear-clf-probe` |
-| Fecha de publicación del repositorio | 2026-09-27 |
+| Arquitectura | Vision Transformer con *active vision* (Canvas Vision Transformer), basada en ViT-B/16 con VPE añadido |
+| Parámetros totales | 95.928.936 (≈95,9 M) |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible en términos de tokens; opera con escenas de 512 px, *glimpses* de 128 px y canvas de 32 × 32 |
+| Tipos de cuantización | No disponible (pesos en safetensors; el repo no documenta cuantizaciones GGUF/INT8) |
+| Idiomas soportados | No aplica (modelo de visión, sin capacidades lingüísticas) |
+| Licencia | MIT (preentrenamiento por destilación desde DINOv3, sujeto a la DINOv3 License) |
+| Formato de pesos | safetensors (librería `canvit-pytorch`) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un ViT-B/16 adaptado a visión activa: el modelo recibe un glimpse de 128 px (muestreado de una escena de 512 px en un punto de vista determinado), lo codifica y actualiza un estado persistente llamado canvas, de 32 x 32 celdas, que resume la escena observada hasta ese momento. La predicción se produce en cada glimpse, de modo que la clasificación puede refinarse de forma incremental. El entrenamiento de ajuste fino se realizó con 4 rollouts de glimpses F-IID de 128 px sobre escenas de 512 px, canvas de 32 x 32 y retropropagación completa en el tiempo (full BPTT).
+CanViT-B es un transformer de visión con un mecanismo de percepción secuencial. El modelo recibe *glimpses* de 128 px muestreados en viewpoints concretos sobre escenas de 512 px y actualiza un estado persistente (*canvas*) de 32 × 32 que actúa como memoria de la escena. La variante "add-vpe" incorpora *viewpoint positional embeddings* que codifican la posición de cada *glimpse* dentro de la escena. La lectura de clasificación combina la salida CLS con una sonda lineal de DINOv3 ViT-B/16 (1689 M de imágenes, resolución 512 × 512) para inicializar el cabezal.
 
-El procedimiento de ajuste fue LP-FT (primero linear probing y después fine-tuning extremo a extremo) durante 100.000 de los 100.080 pasos previstos, con batch size de 256, optimizador AdamW, learning rate de 2,5e-05, weight decay de 0,0001, recorte de gradiente de 1, calentamiento lineal de 25.000 pasos seguido de decaimiento coseno hasta 0 y pérdida de entropía cruzada en cada glimpse con label smoothing de 0,1. El entrenamiento se ejecutó con JAX/Flax NNX sobre Cloud TPU y los pesos se exportaron a PyTorch para su distribución en safetensors. No se documenta en la información disponible el uso de RLHF, DPO ni decodificación especulativa (no aplicables a una tarea de clasificación).
+El preentrenamiento se realizó en ImageNet-21k por destilación desde DINOv3, y el ajuste final en ImageNet-1k siguió LP-FT: primero *linear probing* y después fine-tuning completo durante 100.000 de 100.080 pasos con batch de 256, optimizador AdamW (lr 2,5e-05, weight decay 1e-04, gradient clipping 1), calentamiento lineal de 25.000 pasos con decaimiento coseno y entropía cruzada tras cada *glimpse* con label smoothing de 0,1. El entrenamiento se ejecutó en JAX/Flax NNX sobre Cloud TPU y se exportó a PyTorch. La configuración de *rollouts* usada es de 4 *glimpses* de 128 px sobre escenas de 512 px con canvas 32 × 32.
 
 ## Capacidades
 
-- Clasificación de imágenes en las 1.000 clases de ImageNet-1k, con logits producidos por el cabezal `CanViTForImageClassification`.
-- Procesamiento activo por secuencia de vistazos: el modelo recibe un punto de vista (`Viewpoint`) y un glimpse muestreado de la escena, y actualiza su estado interno.
-- Refinamiento progresivo de la predicción: la salida se emite en cada glimpse, por lo que la precisión puede mejorar con más vistazos (la métrica declarada corresponde al último glimpse con T = 21).
-- Memoria espacial mediante canvas de 32 x 32 celdas, inicializable con `init_state(batch_size, canvas_grid_size)`.
-- Extracción de representaciones: el readout CLS del modelo preentrenado se usó para inicializar el cabezal, lo que indica que el backbone es reutilizable para transferencia (LP-FT).
-- No soporta tool calling ni function calling: no es un modelo de lenguaje ni un modelo multimodal texto-imagen.
-- No soporta agentes, razonamiento multi-paso en lenguaje ni generación de texto.
-- No es multilingüe: no procesa texto.
-- No ofrece modo "thinking", visión-lenguaje, audio ni generación; su única modalidad de entrada es imagen RGB y su salida es una distribución sobre clases.
+- Clasificación de imágenes en ImageNet-1k (1000 clases) mediante inferencia iterativa por *glimpses*.
+- Percepción incremental: la predicción se refina a medida que se procesan más *glimpses*, permitiendo un compromiso explícito entre precisión y cómputo.
+- Memoria de escena mediante canvas global de 32 × 32 que integra la información de cada viewpoint.
+- Soporte de viewpoints arbitrarios, incluido `Viewpoint.full_scene` para una primera pasada sobre la escena completa.
+- Extracción de representaciones visuales (backbone ViT-B/16) reutilizable para tareas *downstream*.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso textual ni capacidades multilingües: es un modelo puramente visual.
+- No dispone de modo *thinking*, audio ni vídeo documentado.
 
 ## Casos de uso
 
-- Clasificación de imágenes de alta resolución con presupuesto de cómputo acotado: el modelo permite observar escenas de 512 x 512 px mediante glimpses de 128 px, de modo que se puede ajustar el coste de inferencia eligiendo cuántos vistazos se ejecutan en lugar de procesar la imagen completa a resolución nativa.
-- Control de calidad industrial: clasificación de piezas o defectos en líneas de producción donde la cámara captura escenas amplias y el modelo puede centrarse secuencialmente en regiones relevantes gracias al estado de canvas.
-- Etiquetado de datasets a escala: al ser un clasificador ImageNet-1k con licencia MIT y solo ~96 M de parámetros, puede usarse para preetiquetar y filtrar grandes volúmenes de imágenes antes de una revisión humana.
-- Backbone para transferencia en dominios específicos: el esquema LP-FT documentado sugiere que el modelo es adecuado como punto de partida para ajustar sobre nuevos conjuntos de clases (medicina, teledetección, retail) con recursos moderados.
-- Investigación en visión activa: sirve como referencia reproducible para comparar políticas de selección de puntos de vista, número de glimpses y estrategias de memoria espacial frente a ViT estáticos.
-- Robótica y sistemas embarcados con cómputo variable: al producir predicciones en cada glimpse, permite políticas de parada temprana cuando la confianza es suficiente, útil en plataformas con presupuesto energético limitado.
-- Análisis de imágenes de satélite o dron: la combinación de escena amplia (512 px) y vistazos pequeños (128 px) encaja con imágenes de alta resolución donde el objeto de interés ocupa una fracción reducida del encuadre.
+- Investigación en *active vision*: base para experimentos sobre políticas de selección de *glimpses* (C2F u otras) y estudio de cómo la información se acumula en el canvas; el modelo expone `init_state` y `Viewpoint` para controlar la secuencia de percepción.
+- Clasificación de imágenes con presupuesto computacional variable: en entornos con límite de cómputo, se pueden usar menos *glimpses* y aceptar una precisión menor, refinando solo cuando sea necesario.
+- *Feature extraction* para tareas *downstream*: el backbone ViT-B/16 preentrenado en ImageNet-21k y afinado en ImageNet-1k sirve como extractor de representaciones para detección, segmentación o recuperación visual mediante fine-tuning.
+- Prototipado de sistemas de percepción embarcada: al procesar recortes de 128 px en lugar de la escena completa, el coste por paso es menor y encaja en pipelines con memoria limitada.
+- *Benchmarking* de arquitecturas de visión activa: referencia reproducible (11 ejecuciones, intervalo bootstrap) para comparar políticas de atención y mecanismos de memoria visual.
+- Educación y divulgación: ejemplo didáctico de destilación desde DINOv3, LP-FT y entrenamiento en JAX/Flax exportado a PyTorch, con código de inferencia autocontenido.
 
 ## Benchmarks y rendimiento
 
-| Dataset | Split | Metrica | Valor | Condiciones |
-|---|---|---|---|---|
-| ImageNet-1k | validation | Top-1 accuracy | 84,44 | C2F, T = 21, media sobre 11 semillas de política, en el último glimpse; no verificado |
+Resultados declarados por el autor en el *model-index* de la model card (no verificados de forma independiente):
 
-No se han publicado en la información disponible otros resultados de benchmarks (no hay MMLU, HumanEval, GSM8K ni equivalentes, porque el modelo no es un modelo de lenguaje). El único dato disponible es el declarado por el autor en el model-index y no está marcado como verificado (`verified: false`).
+| Benchmark | Métrica | Valor | Condiciones |
+|---|---|---|---|
+| ImageNet-1k (validación) | Top-1 accuracy | 84,44 % | C2F, 21 *glimpses*, escenas 512 px, canvas 32 × 32, media de 11 ejecuciones (IC 95 %: 84,42–84,46) |
+
+No se han publicado en la información disponible resultados de otros benchmarks (p. ej. MMLU, HumanEval o GSM8K, no aplicables a un modelo de visión) ni comparativas numéricas con modelos alternativos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 0,38 GB en fp32, 0,19 GB en fp16/bf16 y 0,10 GB en int8 para los 95.928.936 parámetros, sin contar activaciones ni el estado del canvas (que escala con el batch y con el tamaño de canvas de 32 x 32).
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente en la práctica; RTX 3060, RTX 4070, RTX 4090, A100 y H100 funcionan sin problema. El modelo también es viable en CPU para lotes pequeños.
-- Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna (y en muchas integradas, dado el reducido número de parámetros).
-- Opciones de despliegue: PyTorch con la librería `canvit-pytorch>=0.2`, tal como muestra la model card. No se documenta soporte para vLLM, TGI, llama.cpp, Ollama ni exportación a GGUF u ONNX en la información disponible.
-- Latencia y throughput estimados: no disponibles. El coste de inferencia crece con el número de glimpses ejecutados; la evaluación declarada usa T = 21, mientras que el ajuste fino se realizó con 4 glimpses.
+- VRAM estimada para inferencia: aproximadamente 0,4 GB en fp32 para los pesos (95,9 M de parámetros); el consumo real depende del tamaño de lote, del estado del canvas y del número de *glimpses* procesados.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para lotes pequeños; A100/H100 no son necesarias para inferencia, solo para reentrenamiento a gran escala.
+- Cabe en GPU de consumo: sí, en RTX 3060, RTX 4060, RTX 4090 y similares; el repo pesa 0,4 GB.
+- Opciones de despliegue: PyTorch con la librería `canvit-pytorch>=0.2` (instalable con `uv add`). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, al no ser un modelo generativo de texto.
+- Latencia y throughput: no disponibles en la información proporcionada; dependen del número de *glimpses* y del hardware.
 
 ## Comparativa con modelos similares
 
-| Modelo | Arquitectura base | Parametros | Paradigma de entrada | Top-1 en ImageNet-1k (val) | Licencia |
+| Modelo | Parámetros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CanViT-B (este checkpoint) | ViT-B/16 + canvas y visión activa | 95.928.936 | Secuencia de glimpses (128 px) sobre escena de 512 px | 84,44 (declarado, no verificado) | MIT |
-| ViT-B/16 supervisado (ImageNet-21k) | ViT-B/16 estándar | Aproximadamente 86 M | Imagen completa de resolución fija | No disponible en la información proporcionada | No disponible en la información proporcionada |
-| DeiT-B/16 | ViT-B/16 con destilación | Aproximadamente 86 M | Imagen completa de resolución fija | No disponible en la información proporcionada | No disponible en la información proporcionada |
-| DINOv3 ViT-B/16 | ViT-B/16 auto-supervisado | Aproximadamente 86 M | Imagen completa de resolución fija | No disponible en la información proporcionada | No disponible en la información proporcionada |
+| CanViT-B (este checkpoint) | 95,9 M | Escenas 512 px, *glimpses* 128 px, canvas 32 × 32 | 84,44 % Top-1 en ImageNet-1k (21 *glimpses*) | MIT (con caveat DINOv3) | Hugging Face, `canvit-pytorch` |
+| DINOv3 ViT-B/16 | No disponible en la información | Resolución 512 × 512 (sonda lineal referenciada) | No disponible en la información | DINOv3 License | Hugging Face / GitHub |
+| ViT-B/16 estándar | No disponible en la información | Imagen completa | No disponible en la información | No disponible | Amplia disponibilidad |
 
-Nota: los datos de los modelos comparativos no proceden de la información proporcionada en esta ficha (salvo la referencia a DINOv3 como origen de la sonda usada para inicializar el cabezal); deben verificarse en sus propias model cards antes de cualquier uso en producción. La comparación estructural relevante es que CanViT-B añade unos 10 M de parámetros sobre un ViT-B/16 estándar y consume la imagen de forma secuencial en lugar de una sola pasada.
+La información proporcionada no incluye resultados numéricos de DINOv3 ni de ViT-B/16 en ImageNet-1k, por lo que no es posible establecer una comparación cuantitativa rigurosa; los datos de la tabla reflejan únicamente lo documentado.
 
 ## Limitaciones y advertencias
 
-- Ámbito de salida restringido: el cabezal está ajustado sobre las 1.000 clases de ImageNet-1k; no produce descripciones, etiquetas libres ni texto. Para cualquier otro conjunto de clases requiere ajuste adicional.
-- Sesgos heredados de los datos: al ajustarse sobre ImageNet-1k, hereda los sesgos conocidos de ese conjunto (desequilibrio de clases, representación geográfica y cultural limitada). No se documenta ningún proceso de mitigación.
-- Riesgo de error de clasificación: no hay riesgo de "alucinación" en el sentido generativo, pero sí de falsos positivos y confusiones entre clases visualmente próximas, y la confianza del modelo no está calibrada de forma documentada.
-- Discrepancia entre entrenamiento y evaluación: el ajuste se realizó con 4 glimpses F-IID, mientras que el resultado de 84,44 % se reporta con T = 21 (política C2F) y media sobre 11 semillas de política. Esto implica que el rendimiento depende fuertemente de la política de selección de puntos de vista, no solo de los pesos.
-- Reproducibilidad condicionada: la arquitectura no es estándar y exige la librería `canvit-pytorch>=0.2`; no se documenta integración con `transformers`, vLLM, llama.cpp, Ollama ni TGI, lo que limita el despliegue en infraestructuras estándar.
-- Licencia: los pesos se publican bajo MIT, lo que permite uso comercial, pero la model card indica que el cabezal se inicializó fusionando el readout CLS con una sonda DINOv3 (`dinov3-vitb16-lvd1689m-in1k-512x512-linear-clf-probe`). Conviene verificar las condiciones de la licencia de DINOv3 antes de un uso comercial, ya que puede no ser equivalente a MIT.
-- Estado del arte en madurez: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, el resultado de benchmark está marcado como no verificado y no hay validación independiente publicada en la información disponible.
-- Idiomas y texto: no aplica soporte multilingüe ni procesamiento de lenguaje; cualquier caso de uso conversacional o de agente queda fuera de su alcance.
+- Modelo exclusivamente de clasificación de imágenes en ImageNet-1k; no genera texto ni soporta tareas multimodales.
+- Los resultados de *benchmark* son declarados por el autor y no han sido verificados de forma independiente (`verified: false` en el *model-index*).
+- La precisión depende del número de *glimpses* y de la política de viewpoints; 84,44 % corresponde a 21 *glimpses* con C2F y no debe extrapolarse a configuraciones con menos pasos.
+- El preentrenamiento por destilación desde DINOv3 introduce las limitaciones y sesgos del modelo profesor, no documentados en esta ficha.
+- La licencia del checkpoint es MIT, pero el uso comercial debe revisarse frente a la DINOv3 License del modelo profesor.
+- Riesgo de alucinación no aplica en el sentido generativo, pero sí de clasificación errónea en clases visualmente similares o dominios alejados de ImageNet.
+- No se documentan sesgos demográficos, geográficos ni de otro tipo; la evaluación se limita a ImageNet-1k.
+- El ecosistema de despliegue es reducido (solo `canvit-pytorch`), sin soporte documentado para runtimes de inferencia estándar de producción.
+- No hay información sobre latencia, throughput ni comportamiento en dominios fuera de ImageNet.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/canvit/canvitb16-add-vpe-finetune-g128px-s512px-in1k-2026-07-24
-- Modelo base (preentrenado en ImageNet-21k): https://huggingface.co/canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02
-- Sonda DINOv3 usada para inicializar el cabezal: https://huggingface.co/canvit/dinov3-vitb16-lvd1689m-in1k-512x512-linear-clf-probe
-- Paper (NeurIPS 2026): https://arxiv.org/abs/2603.22570
-- Codigo: https://github.com/m2b3/CanViT
-- Pagina del proyecto: https://m2b3.github.io/CanViT/
-- Todos los checkpoints de la familia: https://huggingface.co/canvit
+- Hugging Face: https://huggingface.co/canvit/canvitb16-add-vpe-finetune-g128px-s512px-in1k-2026-07-24
+- Modelo base (preentrenamiento): https://huggingface.co/canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02
+- Sonda lineal DINOv3 usada en la inicialización: https://huggingface.co/canvit/dinov3-vitb16-lvd1689m-in1k-512x512-linear-clf-probe
+- Paper (NeurIPS 2026, OpenReview): https://openreview.net/forum?id=cnV9GA4pKU
+- arXiv: https://arxiv.org/abs/2603.22570
+- Código: https://github.com/m2b3/CanViT
+- Página del proyecto: https://m2b3.github.io/CanViT/
+- Todos los checkpoints: https://huggingface.co/canvit
+- Licencia DINOv3: https://github.com/facebookresearch/dinov3/blob/main/LICENSE.md
+- Repositorio DINOv3: https://github.com/facebookresearch/dinov3

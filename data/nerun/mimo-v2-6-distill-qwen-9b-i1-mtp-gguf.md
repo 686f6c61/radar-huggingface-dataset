@@ -2,85 +2,92 @@
 
 ## Resumen
 
-MiMo-V2.6-Distill-Qwen-9B-i1-MTP-GGUF es una publicacion de pesos en formato GGUF alojada en Hugging Face por el usuario nerun. Por el propio identificador del repositorio se deduce que se trata de una destilacion del modelo MiMo-V2.6 sobre una base Qwen de 9B parametros, con cuantizacion de tipo i1 (esquema de cuantizacion por importancia de la familia ik_llama.cpp) y soporte de MTP (multi-token prediction, prediccion de multiples tokens por paso). El repositorio no incluye model card sustantiva: la unica metadata declarada es la licencia MIT.
+MiMo-V2.6-Distill-Qwen-9B-i1-MTP-GGUF es una distribución de cuantizaciones GGUF del modelo MiMo-V2.6-Distill-Qwen-9B, un merge basado en Qwen3.5-9B, a la que el usuario nerun ha injertado un bloque MTP (Multi-Token Prediction) para habilitar decodificación especulativa nativa en llama.cpp mediante el flag `--spec-type draft-mtp`. El modelo base procede de las cuantizaciones imatrix de mradermacher, mientras que el bloque MTP se ha transplantado tensor a tensor (sin entrenamiento adicional) desde los ficheros MTP-only de a4lg, extraídos a su vez de Qwen3.5-9B original.
 
-El modelo resulta relevante para desarrolladores que quieran ejecutar en local, sobre hardware de consumo, un derivado destilado de la familia MiMo con decodificacion especulativa mediante MTP, ya que ese mecanismo puede aumentar el throughput de generacion sin cambiar el modelo base. No obstante, la informacion publicada es minima: no hay datos de entrenamiento, benchmarks, idiomas declarados ni pipeline asignado.
+El interés de esta ficha reside en que combina tres elementos poco habituales en un solo artefacto: cuantizaciones imatrix de baja precisión (desde IQ1_S hasta Q6_K), un cabezal MTP embebido que actúa como draft interno (sin necesidad de cargar un modelo borrador separado) y proyectores de visión (mmproj) entrenados específicamente para el modelo base. El resultado es un paquete de aproximadamente 9.200 millones de parámetros totales que cabe en GPUs de consumo desde 8 GB de VRAM y que acelera la generación mediante decodificación especulativa.
 
-Advertencia importante: no se dispone de documentacion tecnica del autor. Todo lo que sigue distingue explicitamente entre lo inferible del identificador y el contenido del repositorio, y lo que no esta disponible. Cualquier uso en produccion exige validacion propia.
+La relevancia práctica es doble: por un lado, permite ejecutar un modelo de 9B con capacidades de razonamiento, código, tool calling y visión en hardware modesto; por otro, demuestra un patrón reproducible de inyección de MTP en modelos que no lo traen de fábrica, algo útil para quien quiera replicar la técnica con otros checkpoints. La licencia MIT del modelo base facilita su uso comercial, aunque conviene revisar las condiciones de los artefactos donantes.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (inferida de la base Qwen); detalles no disponibles |
-| Parametros totales | 9B (segun el identificador del repositorio); confirmacion no disponible |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | i1 (esquema de cuantizacion por importancia); niveles concretos no disponibles |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer denso basado en Qwen3.5 (arquitectura `qwen35` en llama.cpp), con bloque MTP añadido |
+| Parametros totales | 9.197.093.888 (9,2 B) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible en la informacion proporcionada (el ejemplo de uso emplea `-c 0` y `-fitc 32768`) |
+| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, IQ4_NL, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K |
+| Idiomas soportados | No disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (con bloque MTP embebido y proyectores de visión mmproj) |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura interna, el proceso de destilacion ni los datos de entrenamiento. El identificador sugiere una destilacion de MiMo-V2.6 hacia una base Qwen de 9B parametros, pero el repositorio no documenta el profesor, el conjunto de datos, el numero de tokens ni si hubo fases de RLHF o DPO.
+El modelo base es un transformer denso de 9.200 millones de parámetros derivado de Qwen3.5-9B, sobre el que se ha realizado un merge para producir MiMo-V2.6-Distill. La distribución aquí descrita no entrena nada nuevo: toma las cuantizaciones imatrix de mradermacher (generadas con calibración imatrix, lo que mejora la calidad en bits bajos) y les añade un bloque MTP (`blk.32.*`) copiado tensor a tensor desde los ficheros MTP-only de a4lg, extraídos del Qwen3.5-9B original. El script de transplante es el `convert.py` de @buzz, adaptado porque la versión publicada no manejaba correctamente la arquitectura `qwen35` (incrementaba `block_count` de 32 a 33 pero no ajustaba las claves por capa, y llama.cpp rechazaba el resultado).
 
-El rasgo tecnico destacable, deducible del sufijo MTP, es la prediccion de multiples tokens por paso, que en la practica se usa para decodificacion especulativa: el modelo propone varios tokens y un verificador los acepta o rechaza, reduciendo el numero de pasos de decodificacion. La cuantizacion i1 es un esquema de cuantizacion por importancia orientado a preservar los pesos mas sensibles, habitual en el ecosistema ik_llama.cpp. No se especifican los bits efectivos ni la mezcla de precisiones.
+El cabezal MTP se entrenó sobre Qwen3.5-9B, no sobre MiMo-V2.6-Distill, por lo que no es un draft específico del modelo final; aun así, el autor reporta tasas de aceptación de aproximadamente 0,6-0,7 en sus pruebas, lo que justifica su uso. Como el bloque MTP comparte `token_embd` y `output` con el modelo principal, el incremento de tamaño es de solo unos 0,2 GiB por fichero, y el consumo de VRAM es menor que cargar un modelo borrador independiente. Los proyectores de visión (mmproj) provienen de la distribución GGUF de mradermacher y sí fueron entrenados para este modelo. No se dispone de información sobre el número de tokens de entrenamiento, composición del dataset ni si hubo RLHF o DPO en el modelo base.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva, asumiendo las capacidades heredadas de la base Qwen de 9B; no verificadas en este repositorio.
-- Decodificacion especulativa mediante MTP, con posible mejora de throughput respecto a decodificacion estandar (sin datos de ganancia publicados).
-- Razonamiento y codigo: plausibles por la base Qwen, pero no documentados ni evaluados en este repositorio.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (no se declaran idiomas).
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
+- Generación de texto conversacional multi-turno con modo de razonamiento (tag `reasoning`).
+- Generación y asistencia de código (tag `code`).
+- Tool calling y function calling (tag `tool-use`), orientado a flujos agénticos (tag `agentic`).
+- Razonamiento multi-paso para tareas que requieren planificación.
+- Visión: incluye proyectores mmproj entrenados para el modelo, lo que habilita entrada de imágenes.
+- Decodificación especulativa nativa mediante bloque MTP embebido, activable con `--spec-type draft-mtp` en llama.cpp.
+- Compatibilidad con endpoints (tag `endpoints_compatible`), pensada para despliegue vía API.
+- Capacidades multilingües: no se especifican idiomas en la información disponible.
 
 ## Casos de uso
 
-- Inferencia local en estaciones de trabajo: al estar en GGUF, el modelo puede cargarse con llama.cpp u Ollama en equipos sin GPU dedicada de datacenter, lo que permite prototipar asistentes de texto en local sin enviar datos a la nube.
-- Despliegue en el borde con CPU: la cuantizacion i1 reduce el peso en memoria frente a FP16, lo que hace viable ejecutar un modelo de 9B en portatiles con 16-32 GB de RAM, adecuado para herramientas internas de resumen o redaccion.
-- Generacion asistida de codigo en entornos aislados: un derivado de Qwen de 9B puede integrarse en editores o scripts de revision para autocompletado y explicacion de fragmentos, siempre que se valide la calidad con pruebas propias.
-- Experimentacion con decodificacion especulativa: el soporte MTP permite medir en banco de pruebas la ganancia de throughput frente a decodificacion clasica y ajustar el numero de tokens propuestos.
-- Procesamiento por lotes de documentos: para tareas de extraccion, clasificacion o reformateo sobre volumenes moderados, un 9B cuantizado ofrece un coste por token bajo en hardware propio.
-- Base para ajuste fino o destilaciones posteriores: al ser MIT, el modelo puede servir como punto de partida para adaptaciones internas sin las restricciones de licencias copyleft o de uso condicionado.
+- Asistente de código en local: con cuantizaciones Q4_K_M (~5,8 GB) o Q5_K_M (~6,7 GB) el modelo cabe en una RTX 4060 Ti de 8 GB o superior, permitiendo autocompletado y generación de funciones sin enviar código a la nube; el modo de razonamiento ayuda en tareas de refactorización y depuración.
+- Agente con tool calling en pipelines de CI/CD: el soporte de function calling y el tag `agentic` permiten integrarlo como planificador que invoca herramientas (ejecutar tests, consultar APIs, abrir PRs) en un bucle multi-paso, con la decodificación especulativa reduciendo la latencia por token.
+- Atención al cliente automatizada: el modo conversacional y el razonamiento permiten gestionar diálogos multi-turno; el contexto configurable en el ejemplo de uso (`-fitc 32768`) sugiere ventanas amplias, aunque la longitud exacta no está confirmada.
+- Análisis de imágenes en local: gracias a los proyectores mmproj entrenados, puede procesar capturas de pantalla, diagramas o documentos escaneados para extraer información o responder preguntas, sin depender de servicios externos.
+- Despliegue en hardware de gama baja: las cuantizaciones IQ1_S (~2,9 GB) e IQ2_XXS (~3,3 GB) permiten ejecutar el modelo en GPUs de 4-6 GB o incluso en CPU con llama.cpp, útil para prototipado rápido o entornos con recursos limitados.
+- Servidor de inferencia ligero: con `llama-server` y MTP activo, se puede montar un endpoint compatible con la API de OpenAI (tag `endpoints_compatible`) para servir a varias aplicaciones internas desde una sola GPU de consumo.
+- Investigación sobre decodificación especulativa: el repositorio sirve como caso de estudio reproducible de inyección de MTP en modelos que no lo traen, útil para quienes quieran aplicar la técnica a otros checkpoints.
 
 ## Benchmarks y rendimiento
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
+El autor sí reporta datos empíricos de rendimiento de la decodificación especulativa: con `--spec-draft-n-max 2` se obtiene la mejor velocidad (valores de 1, 3 y 4 o superiores resultaron más lentos), con tasas de aceptación de aproximadamente 0,6-0,7. En una GPU de 8 GB de VRAM, usar `-ub 1024` o `-ub 2048` redujo la generación a ~22 t/s, por lo que recomienda mantener `-ub 512`. No se especifican cifras absolutas de throughput en t/s para la configuración óptima.
+
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible con precision. Como referencia orientativa para un modelo denso de 9B, una cuantizacion de 4 bits ronda los 5-6 GB de pesos y una de 8 bits en torno a 9-10 GB, mas el espacio de cache KV, que depende de la longitud de contexto (no documentada).
-- GPU recomendadas: no disponibles. Por tamano, una RTX 4090 (24 GB) o una RTX 3090 (24 GB) permitirian cargar el modelo en cuantizaciones altas con contexto amplio; GPU de 8-12 GB requeririan cuantizaciones agresivas y contextos cortos.
-- Viabilidad en GPU de consumo: probable en tarjetas con 8 GB o mas segun cuantizacion, y en CPU con suficiente RAM; no confirmado por el autor.
-- Opciones de despliegue: llama.cpp y Ollama por el formato GGUF; el esquema i1 apunta a ik_llama.cpp. Compatibilidad con vLLM o TGI no disponible.
-- Latencia y throughput: no disponibles. La ganancia de MTP depende del ratio de aceptacion de tokens especulados y no ha sido medida en este repositorio.
+- VRAM estimada: desde ~2,9 GB (IQ1_S) hasta ~7,6 GB (Q6_K) para los pesos, más el bloque MTP (~0,2 GiB) y el búfer de cómputo; el ejemplo de uso emplea `-fit on` con `-fitc 32768` para ajustar automáticamente.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 para cuantizaciones altas; A100/H100 no son necesarias dado el tamaño del modelo.
+- Cabe en GPU de consumo: sí, desde una RTX 3050 8 GB o similar con cuantizaciones Q4_K_M o inferiores; las cuantizaciones IQ1/IQ2 pueden ejecutarse en GPUs de 4-6 GB o en CPU.
+- Opciones de despliegue: llama.cpp (requiere build con soporte `--spec-type draft-mtp`) mediante `llama-server` o `llama-cli`; también es compatible con endpoints según el tag del repositorio. No se confirma soporte en vLLM, Ollama o TGI.
+- Latencia y throughput: no se publican cifras absolutas; el autor solo indica que `--spec-draft-n-max 2` es más rápido que 1, 3 o 4, y que `-ub 1024/2048` degrada a ~22 t/s en 8 GB de VRAM.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| MiMo-V2.6-Distill-Qwen-9B-i1-MTP-GGUF | 9B (segun identificador) | no disponible | MIT | GGUF | Destilado con MTP y cuantizacion i1; sin benchmarks |
-| Qwen2.5-7B-Instruct (GGUF) | 7B | 32K (segun documentacion oficial de Qwen) | Apache 2.0 | GGUF, safetensors | Base ampliamente documentada y evaluada |
-| Llama 3.1 8B Instruct (GGUF) | 8B | 128K (segun documentacion oficial de Meta) | Llama 3.1 Community License | GGUF, safetensors | Ecosistema maduro; licencia con restricciones |
-| Mistral 7B Instruct v0.3 (GGUF) | 7B | 32K (segun documentacion oficial de Mistral) | Apache 2.0 | GGUF, safetensors | Alternativa ligera con amplia tooling |
-
-Los datos de contexto y licencia de los modelos comparados provienen de su documentacion oficial; los de este repositorio no estan publicados, por lo que la comparacion de rendimiento no puede establecerse.
+| MiMo-V2.6-Distill-Qwen-9B-i1-MTP-GGUF (este) | 9,2 B | No disponible | MIT | GGUF + MTP + mmproj | Decodificación especulativa embebida, visión |
+| mradermacher/MiMo-V2.6-Distill-Qwen-9B-i1-GGUF | 9,2 B | No disponible | MIT | GGUF | Mismo modelo base sin bloque MTP; requiere draft separado para especulación |
+| a4lg/Qwen3.5-9B-MTP-ONLY-GGUF | 9,2 B (solo bloque MTP) | No disponible | No disponible | GGUF | Artefacto donante del MTP; no es un modelo completo utilizable |
+| Qwen/Qwen3.5-9B | 9,2 B | No disponible | No disponible | Safetensors | Modelo original del que derivan el merge y el MTP; sin cuantizaciones imatrix ni ajuste MiMo |
 
 ## Limitaciones y advertencias
 
-- Ausencia de model card sustantiva: no hay informacion sobre datos de entrenamiento, evaluaciones ni limitaciones declaradas por el autor.
-- Riesgo de alucinacion: inherente a los modelos generativos; sin evaluaciones publicadas no puede acotarse su magnitud.
-- Sesgos: desconocidos, al no documentarse la composicion del dataset de destilacion.
-- Idioma: no se declaran idiomas soportados; el rendimiento en castellano no esta verificado.
-- Contexto: longitud no documentada; planificar el despliegue con margen y probar el comportamiento en contextos largos.
-- Licencia MIT: permisiva para uso comercial, pero el autor no ofrece garantias ni asume responsabilidad; conviene revisar si la base Qwen impone condiciones adicionales que el autor no haya reflejado.
-- Repositorio sin descargas ni likes: no hay evidencia de uso comunitario ni de validacion independiente; tratar los pesos como no auditados.
-- Cuantizacion i1: requiere tooling especifico (ik_llama.cpp); la compatibilidad con otras implementaciones no esta garantizada.
+- El bloque MTP fue entrenado sobre Qwen3.5-9B, no sobre MiMo-V2.6-Distill; la tasa de aceptación (~0,6-0,7) es buena pero inferior a la de un draft específico, y puede degradarse en dominios muy alejados del entrenamiento original.
+- Requiere una build de llama.cpp con soporte `--spec-type draft-mtp`; versiones estándar rechazarán el fichero o ignorarán el bloque MTP.
+- No se debe pasar el mismo fichero con `--model-draft`: el bloque MTP ya está embebido y duplicarlo provoca errores o consumo innecesario de VRAM.
+- En GPUs de 8 GB, aumentar `-ub` por encima de 512 reduce drásticamente el throughput con MTP (~22 t/s), según pruebas del autor.
+- No se dispone de información sobre idiomas soportados, sesgos, tasas de alucinación ni evaluación en benchmarks; no hay datos que permitan certificar calidad en producción.
+- Las cuantizaciones IQ1 e IQ2, aunque permiten ejecución en hardware muy limitado, degradan notablemente la calidad frente a Q4_K_M o superiores; para uso serio se recomienda Q4_K_M en adelante.
+- La licencia MIT del repositorio cubre los artefactos publicados, pero el modelo base y los donantes (Qwen3.5-9B, ficheros de a4lg) pueden tener condiciones propias que conviene verificar antes de un uso comercial.
+- El repositorio tiene 0 likes y 7.341 descargas en el momento de la consulta, lo que sugiere adopción moderada pero poca validación comunitaria.
+- El tamaño total del repo (115,7 GB) implica que descargar todas las cuantizaciones es costoso; conviene bajar solo el fichero necesario.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/nerun/MiMo-V2.6-Distill-Qwen-9B-i1-MTP-GGUF
-- Paper, blog, repositorio o demo del autor: no disponibles en la informacion proporcionada.
+- Repositorio Hugging Face: https://huggingface.co/nerun/MiMo-V2.6-Distill-Qwen-9B-i1-MTP-GGUF
+- Modelo base (cuantizaciones imatrix): https://huggingface.co/mradermacher/MiMo-V2.6-Distill-Qwen-9B-i1-GGUF
+- Distribución GGUF con proyectores de visión: https://huggingface.co/mradermacher/MiMo-V2.6-Distill-Qwen-9B-GGUF
+- Donante del bloque MTP: https://huggingface.co/a4lg/Qwen3.5-9B-MTP-ONLY-GGUF
+- Modelo original Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
+- Script de transplante de MTP (gist de @buzz): https://gist.github.com/buzz/1c439684d5e3f36492ae9f64ef7e3f67

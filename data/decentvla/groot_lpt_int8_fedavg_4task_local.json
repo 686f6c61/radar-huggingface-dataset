@@ -1,0 +1,40 @@
+{
+  "schema": 2,
+  "id": "DecentVLA/groot_lpt_int8_fedavg_4task_local",
+  "slug": "decentvla-groot_lpt_int8_fedavg_4task_local",
+  "author": "DecentVLA",
+  "url": "https://huggingface.co/DecentVLA/groot_lpt_int8_fedavg_4task_local",
+  "created_at": "2026-11-20T00:23:24.000Z",
+  "updated_at": "2026-11-20T00:28:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14617848804,
+  "storage_human": "14.6 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

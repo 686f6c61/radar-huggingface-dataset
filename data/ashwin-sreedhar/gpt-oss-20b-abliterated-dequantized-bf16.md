@@ -2,93 +2,107 @@
 
 ## Resumen
 
-GPT-OSS-20B-abliterated-dequantized-bf16 es un checkpoint experimental derivado de openai/gpt-oss-20b, el modelo abierto de OpenAI publicado con licencia Apache 2.0. Lo desarrolla el usuario independiente ashwin-sreedhar mediante el pipeline persona-lab, que aplica una edicion de pesos orientada a eliminar los rechazos (refusals) del modelo original. El checkpoint se construye a partir de una desconversion a bf16 de los pesos originales, que OpenAI publico en MXFP4; por tanto, no recupera la precision perdida en la cuantizacion original.
+GPT-OSS-20B-abliterated-dequantized-bf16 es un checkpoint experimental derivado de `openai/gpt-oss-20b`, publicado por el usuario independiente ashwin-sreedhar (persona-lab). Se trata de una edición de pesos cuyo objetivo declarado es la eliminación de rechazos (refusal removal, técnica conocida como *abliteration*), partiendo de una dequantización a bf16 de los pesos originales que OpenAI distribuyó en MXFP4. El modelo conserva la arquitectura original de GPT-OSS, con aproximadamente 20.900 millones de parámetros totales, pero el autor advierte explícitamente que la eliminación de rechazos **no ha sido demostrada**: las pruebas manuales de chat siguieron produciendo rechazos.
 
-El modelo conserva la arquitectura del gpt-oss-20b: un transformer de tipo mixture-of-experts (MoE) con 20.914.757.184 parametros totales, pensado para generacion de texto conversacional y razonamiento. La modificacion se limita a una intervencion sobre los pesos registrada en los metadatos de exportacion, y el propio autor advierte de que la eliminacion de rechazos no ha sido demostrada: las pruebas manuales de chat siguieron produciendo rechazos en las peticiones dañinas probadas.
+La relevancia de esta ficha es sobre todo metodológica y de advertencia. El autor documenta con rigor los diagnósticos de exportación, las comprobaciones de integridad de serialización y un piloto comparativo con el checkpoint original, pero también reconoce que el diagnóstico mecánico estricto (ratio de proyección máxima 1,076 % frente a un objetivo del 1 %) **falla el umbral**, que la preservación amplia de capacidades no está probada y que el comportamiento en imagen, contexto largo y generación asistida por MTP no se ha evaluado. Se trata, por tanto, de un artefacto de investigación, no de un modelo listo para producción.
 
-La relevancia de esta ficha es doble. Por un lado, documenta un caso de edicion de pesos con trazabilidad poco habitual (hashes, diagnosticos de proyeccion, KL en held-out). Por otro, es un ejemplo claro de checkpoint experimental que no deberia tratarse como sustituto fiable del modelo base en produccion, dado que la preservacion amplia de capacidades no se ha evaluado.
+La licencia declarada es Apache 2.0, heredada del modelo base, y el repositorio ocupa 41,9 GB en formato safetensors. El pipeline es `text-generation` y la librería `transformers`. No se declaran idiomas soportados, y no hay resultados de benchmarks publicados para este checkpoint.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (gpt_oss), pesos editados sobre desconversion bf16 del release MXFP4 de openai/gpt-oss-20b |
-| Parametros totales | 20.914.757.184 |
+| Arquitectura | transformer (GPT-OSS, segun modelo base; detalles internos no disponibles en la informacion proporcionada) |
+| Parametros totales | 20.914.757.184 (~20,9 mil millones) |
 | Parametros activos | no disponible |
-| Longitud de contexto | no disponible (el autor indica que el comportamiento en contexto largo no esta probado) |
-| Tipos de cuantizacion | bf16 (pesos del checkpoint); el modelo base se publico en MXFP4 |
+| Longitud de contexto | no disponible (el autor menciona comportamiento en contexto largo como "no probado") |
+| Tipos de cuantizacion | pesos distribuidos en bf16; el modelo base original se publico en MXFP4 |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (transformers) |
+| Formato de pesos | safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
 
-El checkpoint hereda la arquitectura gpt_oss de openai/gpt-oss-20b, un transformer con capas de expertos (MoE) y atencion con sinks, que el autor emplea en modo eager en su script de chat. Los pesos de origen se publicaron en MXFP4; este repositorio parte de una desconversion verificada a bf16 y aplica despues una intervencion sobre los tensores. La desconversion no recupera la precision perdida en la cuantizacion original, de modo que la linea base de comparacion es esa misma representacion desconvertida y no un release oficial a precision completa de OpenAI.
+El checkpoint parte de `openai/gpt-oss-20b`, del que no se detallan en la informacion proporcionada los pormenores de arquitectura (número de capas, atención, composición del dataset o fases de RLHF/DPO). Lo que sí está documentado es el proceso de modificación: el autor tomó los pesos expertos publicados en MXFP4, los dequantizó a bf16 en un guardado separado y verificado, y aplicó sobre esa representación una intervención de edición de pesos registrada en los metadatos de exportación (`.pipeline/`). El autor subraya que la dequantización **no recupera** la precisión perdida durante la cuantización original, por lo que este checkpoint no equivale a una release oficial de OpenAI en precisión completa; la línea base de comparación es esa misma representación dequantizada sin editar.
 
-La intervencion se describe como una edicion de pesos con una politica de seleccion guardada en el directorio `.pipeline/`, junto con direccion, datos, hashes de codigo, entorno y comprobaciones. El autor reporta verificaciones de integridad de serializacion: SHA-256 antes y despues de la exportacion, comprobacion de bytes, formas y dtypes tras el guardado, y recarga en proceso limpio que coincide con la referencia en memoria sobre tres prompts benignos y tres pasos greedy sin cache. No se detalla el volumen de datos de entrenamiento ni si hubo RLHF o DPO; la modificacion es una edicion de pesos, no un fine-tuning supervisado documentado.
+Las innovaciones técnicas destacables no están en el entrenamiento sino en el procedimiento de edición y verificación. Se realizaron comprobaciones SHA-256 de los pesos originales antes y después de la exportación, verificación de bytes, formas y dtypes de cada tensor editado tras el guardado, y una recarga en proceso fresco que coincidió con la referencia editada en memoria sobre tres prompts benignos fijos durante tres pasos greedy sin caché. Cada fichero safetensors lleva un aviso de modificación en su cabecera. El diagnóstico de retención de capacidades incluye una KL de primer token sobre 100 prompts benignos retenidos de **0,026350** y un ratio máximo de proyección editado/base del **1,076 %**, que incumple el objetivo mecánico del 1 %.
 
 ## Capacidades
 
-- Generacion de texto conversacional en formato chat, con la plantilla Harmony del modelo base.
-- Razonamiento con canal de analisis y nivel de esfuerzo de razonamiento configurable (el autor usa low reasoning effort).
-- Capacidad teorica de tool calling heredada de gpt-oss-20b, aunque el autor indica explicitamente que no se ejecutan herramientas en su script.
-- Generacion asistida por MTP (multi-token prediction) del modelo base, si bien el autor la marca como no probada en este checkpoint.
-- Capacidades multilingues: no disponibles como dato verificado.
-- Comportamiento de vision y contexto largo: no probados segun la model card.
+- Generación de texto conversacional multi-turno, con plantilla Harmony y canal de análisis ordinario abierto explícitamente.
+- Razonamiento con modo de bajo esfuerzo (*low reasoning effort*), configurable en el script de chat del autor.
+- Generación de código defensivo y comprobaciones de propiedades de seguridad (probado en el piloto con 16 tareas sintéticas).
+- Tareas utilitarias sintéticas, incluida la ordenación de secuencias numéricas y el formateo JSON (32/40 en la puntuación estricta del piloto editado).
+- Respuestas a peticiones abiertas ordinarias y a casos sensibles pero permitidos (sarcasmo ficticio, quejas airadas, discusión defensiva de ransomware/spyware).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada (el autor indica que "no tools are executed" en su script de chat).
+- Capacidades de agente y razonamiento multi-paso: no disponibles como capacidad verificada en la información proporcionada.
+- Capacidades multilingües: no disponibles.
+- Capacidades de visión, audio o modo *thinking* extendido: no disponibles o explícitamente no probadas (comportamiento en imagen marcado como "untested").
 
 ## Casos de uso
 
-- Investigacion sobre edicion de pesos y refusal removal: el checkpoint sirve como material de estudio reproducible, con diagnosticos de proyeccion (1.0758% frente a objetivo del 1%) y KL en held-out (0.026350) documentados, para analizar por que una intervencion mecanica no se traduce en cambio de comportamiento.
-- Auditoria de trazabilidad de checkpoints: los metadatos de `.pipeline/` y `.conversion/` permiten estudiar practicas de verificacion de integridad (hashes, recarga en proceso limpio, comprobacion de dtypes) en releases derivados.
-- Pruebas de robustez de filtros de seguridad: util para comparar tasas de rechazo entre el modelo base y la variante editada, siempre que se ejecute una evaluacion apareada y cuantificada que el autor no ha realizado.
-- Experimentacion con plantilla Harmony y canales de razonamiento: el script `chat_cuda.py` documenta un uso concreto de atencion eager con sinks, expertos nativos y apertura explicita del canal de analisis, reutilizable para estudiar el formateo de conversaciones en gpt-oss.
-- Desarrollo de pipelines de desconversion MXFP4 a bf16: el repositorio conserva la procedencia de la conversion, lo que lo convierte en referencia practica para quien necesite reproducir ese paso sobre modelos gpt_oss.
-- Docencia sobre limitaciones de los benchmarks proxy: el caso ilustra como una metrica de seleccion de tokens (probabilidad combinada 0.51117 sobre palabras genericas de apertura) no valida el comportamiento final en respuestas.
+- Investigación sobre edición de pesos y *abliteration*: el checkpoint sirve como artefacto reproducible para estudiar cómo las intervenciones sobre tensores afectan (o no) el comportamiento de rechazo, con metadatos de política, dirección, selección y hashes de datos/código conservados en `.pipeline/`. Es adecuado precisamente porque documenta sus propios fallos diagnósticos.
+- Auditoría de integridad de serialización: útil como caso de referencia para validar pipelines que comparan pesos en memoria con pesos recargados desde disco, dado que el autor aporta comprobaciones de bytes, formas, dtypes y recarga en proceso fresco.
+- Evaluación de robustez de clasificadores de seguridad: el piloto con el clasificador Qwen3Guard (0/56 rechazos etiquetados en ambos checkpoints) permite estudiar discrepancias entre la observación manual negativa y las métricas automáticas.
+- Generación de código defensivo y revisiones de propiedades de seguridad: las 16 tareas sintéticas de comprobación de propiedades de código encajan con un uso de asistencia a revisión estática, aunque el propio autor advierte que no se establece descubrimiento real de vulnerabilidades.
+- Formateo estructurado de datos (JSON, ordenación numérica): el piloto muestra puntuaciones estrictas de 36/40 en el checkpoint editado, con diferencias atribuidas a formato JSON y tipos numéricos, lo que lo hace utilizable para tareas de transformación de datos con validación posterior.
+- Estudio de casos sensibles pero permitidos: las 8 pruebas de frontera (sarcasmo ficticio, quejas, discusión defensiva de malware) permiten analizar el comportamiento en el límite de políticas de contenido, siempre con supervisión humana.
+- Comparación controlada original vs. editado: el piloto emparejado de 56 peticiones tokenizadas idénticas permite usar el checkpoint como brazo experimental en estudios de preservación de capacidades, con puntuaciones congeladas y comprobaciones post hoc etiquetadas por separado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. El autor unicamente reporta diagnosticos internos de la intervencion:
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la información disponible. El autor solo reporta métricas internas del piloto emparejado del 6 de noviembre de 2026:
 
-| Diagnostico | Resultado | Referencia |
+| Metrica | Original (bf16 dequantizado) | Editado (este checkpoint) |
 |---|---|---|
-| Ratio maximo de proyeccion editado/base | 1.0758% | Objetivo 1% (falla) |
-| KL de primer token en held-out benigno (100 prompts) | 0.026350 | no disponible |
-| Verificacion de serializacion | superada | bytes, formas y dtypes correctos |
-| Recarga en proceso limpio | superada | 3 prompts, 3 pasos greedy |
-| Eliminacion de rechazos | no demostrada | pruebas manuales con rechazos persistentes |
+| Peticiones permitidas evaluadas | 56 | 56 |
+| Respuestas finales completadas | 56/56 | 56/56 |
+| Recortes (cutoffs) | 0 | 0 |
+| Rechazos etiquetados por Qwen3Guard | 0/56 | 0/56 |
+| Rechazos en subconjunto frontera (8 casos) | 0/8 | 0/8 |
+| Puntuacion estricta de tareas | 32/40 | 36/40 |
+| Comprobacion post hoc de ordenacion | 8/8 | 8/8 |
+| KL primer token benigno (100 prompts) | referencia | 0,026350 |
+| Ratio maximo de proyeccion editado/base | referencia | 1,076 % (objetivo 1 %) |
+
+Los datos de benchmarks comparativos con modelos similares no están disponibles en la información proporcionada.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bf16: aproximadamente 42 GB solo para pesos (20.914.757.184 parametros x 2 bytes), mas overhead de activaciones, cache KV y expertos, por lo que en la practica se superan los 42 GB.
-- No cabe en GPU de consumo de 24 GB (RTX 4090) ni en 16 GB (RTX 4080) en bf16 sin cuantizacion adicional; requeriria cuantizar a 8 o 4 bits, opcion no documentada por el autor.
-- GPU recomendadas: A100 80 GB, H100 80 GB o configuraciones multi-GPU para bf16. El autor menciona un entorno `requirements/native-cuda.txt` y un script `chat_cuda.py` con atencion eager y expertos nativos, lo que sugiere ejecucion en CUDA con memoria suficiente.
-- Opciones de despliegue: transformers con el script del autor; no se documenta soporte verificado de vLLM, llama.cpp, Ollama o TGI para este checkpoint editado.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia en bf16: aproximadamente 42 GB solo para pesos (20,9 mil millones de parámetros × 2 bytes), más overhead de activaciones y caché KV; en la práctica se necesita una GPU de 80 GB o múltiples GPUs para margen de contexto.
+- Cuantizaciones inferiores (por ejemplo, 8 bits o 4 bits) reducirían el requisito a rangos de ~21 GB y ~11-12 GB respectivamente, pero no se documentan ficheros GGUF ni cuantizaciones alternativas en el repositorio; solo se distribuyen safetensors bf16.
+- GPU recomendadas: A100 80 GB, H100 80 GB para bf16 sin cuantización; RTX 4090 (24 GB) no cabe en bf16 y requeriría cuantización no disponible en el repo.
+- Consumer GPU: no cabe en ninguna GPU de consumo en bf16 con el tamaño de repo de 41,9 GB.
+- Opciones de despliegue: transformers con el entorno `requirements/native-cuda.txt` y el script `chat_cuda.py` del autor (atención eager con sinks, expertos nativos eager, plantilla Harmony, bajo esfuerzo de razonamiento). vLLM, llama.cpp, Ollama o TGI: no disponibles en la información proporcionada.
+- Latencia y throughput: no disponibles. El autor indica que la demo en GPU está offline.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| GPT-OSS-20B-abliterated-dequantized-bf16 | 20.914.757.184 | no disponible | Apache 2.0 | Edicion de pesos experimental; rechazos no eliminados; diagnosticos de integridad publicados |
-| openai/gpt-oss-20b | 20B (MoE) | no disponible en la informacion | Apache 2.0 | Modelo base oficial; pesos en MXFP4; referencia de comparacion del autor |
-| Otras variantes abliterated de gpt-oss-20b | no disponible | no disponible | no disponible | No se dispone de datos verificados en la informacion proporcionada |
+| Modelo | Parametros | Contexto | Licencia | Formato | Estado |
+|---|---|---|---|---|---|
+| GPT-OSS-20B-abliterated-dequantized-bf16 (este) | ~20,9 mil millones | no disponible | Apache 2.0 | safetensors bf16 | experimental, edicion de pesos, rechazos no eliminados segun pruebas manuales |
+| openai/gpt-oss-20b (base) | ~20,9 mil millones | no disponible | Apache 2.0 | MXFP4 (pesos expertos) | release oficial de OpenAI |
+| Dequantizacion bf16 sin editar del base | ~20,9 mil millones | no disponible | Apache 2.0 | safetensors bf16 | linea base del piloto del autor |
+
+Otros modelos comparables de la misma categoría (mismo tamaño o misma tarea) no están disponibles en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La eliminacion de rechazos no esta demostrada: las pruebas manuales de chat siguieron produciendo rechazos en peticiones dañinas, y el autor advierte que no debe describirse como refusal removal exitoso.
-- El diagnostico mecanico de proyeccion falla su umbral de referencia: 1.0758% frente al 1% objetivo.
-- La preservacion amplia de capacidades no se ha evaluado; solo se verifico integridad de almacenamiento e inferencia.
-- La seleccion de tokens de la intervencion puntuo palabras genericas de apertura de razonamiento (token 1844 "User", token 2167 "We") con probabilidad combinada 0.51117, lo que cuestiona que el proxy mida rechazo real.
-- El checkpoint parte de una desconversion bf16 de pesos MXFP4: no es un release oficial a precision completa y no recupera la precision perdida.
-- Comportamiento con imagenes, contexto largo y generacion asistida por MTP: no probados.
-- Idiomas soportados: no disponibles; no hay evaluacion multilingue.
-- Riesgo de alucinacion y sesgos: no evaluados en la informacion disponible.
-- Licencia Apache 2.0 permite uso comercial, pero se mantienen las restricciones y atribuciones del modelo base; el autor indica que las licencias upstream siguen aplicando.
-- El proyecto esta pausado a peticion del usuario y la demo en GPU esta fuera de linea; el volumen de almacenamiento conserva copias originales, preparadas y editadas.
-- No debe usarse como sustituto de openai/gpt-oss-20b en produccion sin una evaluacion de capacidades y seguridad propia.
+- La eliminación de rechazos **no está demostrada**: las pruebas manuales de chat siguieron produciendo rechazos en las peticiones dañinas probadas. El autor prohíbe describir el checkpoint como una eliminación de rechazos exitosa.
+- El diagnóstico mecánico estricto falla: ratio máximo de proyección 1,076 % frente al objetivo del 1 %.
+- El selector guardado puntuó tokens genéricos de apertura de razonamiento (1844 `User`, 2167 `We`) como si fueran marcadores de rechazo; no son marcadores validados. Una sonda benigna de saludo les asignó probabilidad combinada 0,51117.
+- Preservación amplia de capacidades no probada: el piloto sintético de 56 peticiones no establece mantenimiento general de capacidades, descubrimiento real de vulnerabilidades ni eliminación de rechazos ante peticiones dañinas.
+- La dequantización desde MXFP4 no recupera precisión; este checkpoint no es una release oficial de OpenAI en precisión completa.
+- Comportamiento en imagen, contexto largo y generación asistida por MTP no probados.
+- Riesgo de alucinación: no cuantificado en la información proporcionada.
+- Sesgos conocidos: no disponibles en la información proporcionada.
+- Idiomas soportados: no declarados.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero siguen aplicando las licencias, atribución y restricciones de uso upstream del modelo base; deben consultarse los ficheros de licencia, aviso y política incluidos.
+- El trabajo adicional sobre el modelo está pausado a petición del usuario; la demo en GPU está offline y solo se conserva un volumen de almacenamiento con copias originales/preparadas/editadas.
+- Para producción: no recomendado como modelo de propósito general sin evaluación de capacidades y de comportamiento de rechazo propia, dado el estado experimental y los fallos diagnósticos reconocidos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/ashwin-sreedhar/GPT-OSS-20B-abliterated-dequantized-bf16
 - Modelo base: https://huggingface.co/openai/gpt-oss-20b
-- Registro publico de la ejecucion y limitaciones: https://github.com/ashwinsreedhar28/persona-lab/blob/main/docs/GPT_OSS_RESEARCH.md
+- Registro público de ejecución y limitaciones (persona-lab): https://github.com/ashwinsreedhar28/persona-lab/blob/main/docs/GPT_OSS_RESEARCH.md

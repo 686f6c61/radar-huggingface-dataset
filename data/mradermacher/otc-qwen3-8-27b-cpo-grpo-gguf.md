@@ -2,87 +2,99 @@
 
 ## Resumen
 
-OTC-Qwen3.8-27B-CPO-GRPO-GGUF es una coleccion de cuantizaciones estaticas en formato GGUF del modelo base OTC-Qwen3.8-27B-CPO-GRPO, publicado por el usuario frankleaf en Hugging Face. El autor de esta ficha, mradermacher, se limita a generar y distribuir las versiones cuantizadas para su uso con llama.cpp y herramientas compatibles, sin aportar informacion adicional sobre el entrenamiento o las capacidades del modelo original.
+OTC-Qwen3.8-27B-CPO-GRPO-GGUF es la versión cuantizada en formato GGUF del modelo frankleaf/OTC-Qwen3.8-27B-CPO-GRPO, un ajuste fino de la familia Qwen3.5 (etiquetada como `qwen3_5` en los metadatos) centrado en razonamiento y compresión de razonamiento mediante aprendizaje por refuerzo. El modelo base parte de una arquitectura transformer de aproximadamente 26.900 millones de parámetros (26.895.998.464 según los pesos en safetensors) y ha sido entrenado con técnicas de optimización de preferencias (CPO) y GRPO, orientadas a mejorar la calidad y la brevedad de las cadenas de razonamiento.
 
-El nombre del repositorio sugiere que el modelo subyacente parte de una base Qwen de 27.000 millones de parametros (posiblemente una variante de la familia Qwen3), y que ha sido afinado mediante tecnicas de alineacion como CPO (Contrastive Preference Optimization) y GRPO (Group Relative Policy Optimization). Sin embargo, esta informacion no esta confirmada en la model card disponible, que se reduce a metadatos tecnicos del proceso de cuantizacion.
+La contribución de mradermacher consiste en generar cuantizaciones estáticas en GGUF (desde Q2_K hasta Q8_0, además de IQ4_XS) junto con los ficheros mmproj para el componente multimodal, lo que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles. El repositorio ocupa 187,9 GB e incluye tanto los pesos cuantizados como los suplementos multimodales, lo que sugiere que el modelo original incorpora capacidad de visión.
 
-La relevancia de esta publicacion es practica: ofrece el modelo en multiples niveles de cuantizacion (desde Q2_K hasta Q8_0, ademas de F16 e IQ4_XS), lo que facilita su despliegue en hardware con distintas restricciones de memoria. No obstante, la ausencia de documentacion sobre el modelo original limita seriamente cualquier evaluacion rigurosa de su calidad o idoneidad para produccion.
+Es relevante ahora porque combina dos tendencias activas: el entrenamiento con RL para razonamiento (GRPO, popularizado por DeepSeek-R1) y la compresión de trazas de razonamiento para reducir coste de inferencia, todo ello empaquetado en GGUF para despliegue local. No obstante, la información publicada por el autor es mínima: no hay model card detallada del modelo base, ni benchmarks, ni especificaciones de contexto o datos de entrenamiento.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre sugiere base Qwen, sin confirmar) |
-| Parametros totales | 27B (inferido del nombre, no confirmado en la model card) |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer (familia Qwen3.5, etiqueta `qwen3_5`); detalles no disponibles |
+| Parametros totales | 26.895.998.464 (~26,9 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj en Q8_0 y f16; variantes i1 (imatrix) en repo separado |
+| Idiomas soportados | en, zh (según model card) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones estáticas); base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo original en la documentacion proporcionada. El nombre del repositorio incluye "Qwen3.8-27B", lo que sugiere una base de la familia Qwen con aproximadamente 27.000 millones de parametros, pero no se confirma ni la arquitectura exacta (transformer denso o MoE), ni la longitud de contexto nativa, ni la composicion del dataset de entrenamiento.
+El modelo base es un ajuste fino de un modelo Qwen3.5 de ~27 B de parámetros. Según las etiquetas del repositorio, el entrenamiento combina LoRA con aprendizaje por refuerzo: GRPO (Group Relative Policy Optimization) y CPO (Contrastive Preference Optimization), aplicados sobre la tarea de razonamiento. La etiqueta `reasoning-compression` indica que el objetivo del entrenamiento incluye reducir la longitud de las cadenas de razonamiento sin perder precisión, una línea de trabajo habitual para abaratar la inferencia en modelos con modo "thinking".
 
-El sufijo "CPO-GRPO" indica que el modelo base fue sometido a un proceso de alineacion con tecnicas de optimizacion de preferencias (Contrastive Preference Optimization y Group Relative Policy Optimization), habituales en el ajuste de modelos para mejorar la calidad de las respuestas y el razonamiento. No obstante, no se detalla el numero de tokens de entrenamiento, la composicion de los datos, ni si hubo fases adicionales de RLHF o DPO. La model card del repositorio GGUF unicamente documenta los metadatos del proceso de cuantizacion (quantize_version 2, output_tensor_quantised 1, convert_type hf).
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, la existencia de RLHF/DPO adicional, ni innovaciones arquitectónicas específicas (atención lineal, decodificación especulativa, etc.). La presencia de ficheros `mmproj` en el repositorio GGUF confirma que el modelo conserva un proyector multimodal, aunque no se detalla qué modalidades cubre ni con qué datos se entrenó esa parte.
 
 ## Capacidades
 
-- Generacion de texto: no confirmada explicitamente, pero esperable en un modelo de 27B de la familia Qwen.
-- Razonamiento y matematicas: no disponible.
-- Generacion de codigo: no disponible.
-- Vision: no disponible (no se menciona un modulo multimodal ni mmproj en los metadatos).
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Modo thinking o razonamiento extendido: no disponible.
+- Generación de texto conversacional, con soporte multi-turno (pipeline `conversational`).
+- Razonamiento explícito con cadenas de pensamiento, entrenado específicamente para comprimir dichas cadenas (GRPO + CPO).
+- Capacidad multimodal: el repositorio incluye ficheros `mmproj` (Q8_0 y f16), lo que indica soporte de entrada de imágenes en el modelo base, aunque no se detalla el alcance.
+- Multilingüe limitado a inglés y chino según la model card.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible explícitamente; el entrenamiento en razonamiento sugiere cierta capacidad, pero no está documentado.
+- Modo "thinking": no confirmado en la documentación, aunque el foco en compresión de razonamiento lo hace probable.
 
 ## Casos de uso
 
-- Despliegue local en hardware de consumo: las cuantizaciones Q4_K_M y Q5_K_M permiten ejecutar un modelo de aproximadamente 27B en GPUs con 16-24 GB de VRAM (por ejemplo, RTX 4090 o RTX 3090), usando llama.cpp u Ollama, siempre que se valide previamente la calidad del modelo original.
-- Inferencia en CPU o sistemas mixtos: las variantes Q2_K y Q3_K reducen el peso a un rango manejable para equipos sin GPU dedicada, a costa de una perdida de calidad que debe evaluarse empiricamente.
-- Experimentacion e investigacion: util para investigadores que quieran comparar el efecto de distintas cuantizaciones sobre un modelo afinado con CPO/GRPO, midiendo degradacion en tareas de razonamiento.
-- Prototipado de asistentes conversacionales: si el modelo base conserva las capacidades multilingues de la familia Qwen, podria emplearse en prototipos de atencion al cliente, aunque la falta de documentacion obliga a validar el comportamiento antes de cualquier uso real.
-- Evaluacion comparativa de tecnicas de alineacion: el modelo puede servir como referencia para estudiar el impacto de CPO y GRPO frente a otras tecnicas como DPO o RLHF, comparando respuestas en tareas controladas.
-- Integracion en pipelines de generacion aumentada (RAG): con la cuantizacion Q8_0 o F16, si el modelo soporta contextos largos (dato no confirmado), podria emplearse en sistemas de recuperacion y generacion, previa validacion de la ventana de contexto real.
+- Razonamiento local con privacidad: desplegar la cuantización Q4_K_M (~16,6 GB) en una estación de trabajo con GPU de 24 GB para tareas de análisis y resolución de problemas sin enviar datos a la nube, aprovechando la licencia Apache 2.0.
+- Investigación en compresión de razonamiento: comparar la longitud y calidad de las cadenas de pensamiento de este modelo frente a su base sin GRPO/CPO, usando las distintas cuantizaciones como control de degradación.
+- Asistentes conversacionales en inglés o chino: el modelo está etiquetado como `conversational` y soporta ambos idiomas, adecuado para chatbots de soporte en esos mercados.
+- Procesamiento de documentos con componente visual: gracias a los ficheros `mmproj`, puede emplearse en pipelines de extracción de información de imágenes o capturas, siempre que se valide la calidad del proyector multimodal.
+- Evaluación comparativa de cuantizaciones: el repositorio ofrece 11 variantes GGUF, lo que permite medir el impacto de la cuantización (Q2_K a Q8_0) en tareas de razonamiento con un mismo modelo base.
+- Prototipado rápido con llama.cpp u Ollama: al estar en GGUF, se puede integrar en aplicaciones locales de escritorio o servidores modestos sin necesidad de infraestructura de GPU de datacenter.
+- Fine-tuning posterior sobre el adaptador: al ser un modelo basado en LoRA, sirve como punto de partida para ajustes específicos de dominio manteniendo la licencia permisiva.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, asumiendo 27B parametros):
-  - F16: ~54 GB.
-  - Q8_0: ~29 GB.
-  - Q6_K: ~22 GB.
-  - Q5_K_M: ~19 GB.
-  - Q4_K_M: ~16 GB.
-  - Q3_K_M: ~13 GB.
-  - Q2_K: ~10 GB.
-  - IQ4_XS: ~14 GB.
-- GPU recomendadas: A100 80 GB o H100 para F16/Q8_0; RTX 4090 (24 GB) o RTX 3090 para Q4_K_M y Q5_K_M; GPUs de 16 GB para Q3_K_M con margen ajustado.
-- Cabe en GPU de consumo: si, en RTX 4090/3090 con cuantizaciones Q4_K_M o inferiores; en GPUs de 16 GB con Q3_K_M; en equipos sin GPU mediante Q2_K/Q3_K en CPU.
-- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con GGUF (por ejemplo, llama-cpp-python). No se confirma soporte para vLLM o TGI en formato GGUF.
+- VRAM estimada para inferencia (según tamaño del fichero GGUF, más overhead de contexto y KV cache):
+  - Q2_K: ~10,8 GB → cabe en GPU de 12 GB con contexto corto.
+  - Q3_K_M: ~13,4 GB → GPU de 16 GB.
+  - Q4_K_M: ~16,6 GB → GPU de 24 GB (RTX 3090/4090, A10G).
+  - Q5_K_M: ~19,3 GB → GPU de 24 GB con margen ajustado.
+  - Q6_K: ~22,2 GB → GPU de 24 GB al límite; recomendable 32 GB.
+  - Q8_0: ~28,7 GB → GPU de 40 GB (A100 40GB) o 48 GB.
+  - mmproj adicional: 0,7 GB (Q8_0) o 1,0 GB (f16) si se usa el modo multimodal.
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M/Q5_K_M; A100 40GB o H100 para Q8_0; RTX 3090 como alternativa económica.
+- Cabe en GPU de consumo: sí, en RTX 3090/4090 con cuantizaciones Q4 o inferiores; en GPUs de 16 GB solo con Q3 o Q2.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. Para las variantes i1 (imatrix) usar el repo mradermacher/OTC-Qwen3.8-27B-CPO-GRPO-i1-GGUF.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de informacion sobre el modelo original ni sobre alternativas comparables en la documentacion proporcionada.
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| OTC-Qwen3.8-27B-CPO-GRPO (este) | ~26,9 B | no disponible | Apache 2.0 | GGUF, safetensors | Ajuste RL (GRPO+CPO) para razonamiento comprimido |
+| Qwen3 base (familia) | ~27 B (según variante) | no disponible | Apache 2.0 (habitual en Qwen) | safetensors, GGUF | Modelo origen; sin el ajuste RL específico |
+| DeepSeek-R1-Distill-Qwen-32B | ~32 B | 128K (según model card pública) | MIT (según variante) | safetensors, GGUF | Referencia en razonamiento por destilación; más parámetros |
+| Gemma 3 27B | ~27 B | 128K | Gemma license (no Apache) | safetensors, GGUF | Alternativa multimodal con licencia más restrictiva |
+
+La comparación con DeepSeek-R1-Distill-Qwen-32B y Gemma 3 27B se ofrece como referencia de categoría; no se dispone de datos de rendimiento de este modelo para una comparación cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion sobre el modelo original: no se conocen arquitectura, datos de entrenamiento, licencia ni idiomas soportados, lo que impide evaluar su idoneidad para produccion.
-- Licencia no disponible: no puede confirmarse si el uso comercial esta permitido; debe consultarse el repositorio del modelo base (frankleaf/OTC-Qwen3.8-27B-CPO-GRPO) antes de cualquier despliegue.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje; sin benchmarks ni evaluaciones publicadas, no puede cuantificarse.
-- Sesgos conocidos: no documentados.
-- Limitaciones de contexto e idioma: no documentadas; el nombre sugiere herencia de Qwen, pero no se confirma.
-- Las cuantizaciones de baja precision (Q2_K, Q3_K) degradan la calidad de forma notable; para uso serio se recomienda Q5_K_M o superior.
-- El repositorio no registra descargas ni likes, lo que sugiere escasa validacion por parte de la comunidad.
-- Los metadatos de cuantizacion (quantize_version 2, output_tensor_quantised 1) indican un proceso estandar, pero no garantizan la fidelidad respecto al modelo original.
+- Ausencia total de benchmarks: no hay evidencia publicada de que el ajuste GRPO/CPO mejore realmente al modelo base; conviene validar en el dominio de uso antes de producción.
+- Model card mínima: no se documentan datos de entrenamiento, contexto máximo, ni composición del dataset de RL, lo que dificulta evaluar sesgos.
+- Idiomas limitados a inglés y chino según la model card; el rendimiento en castellano no está garantizado.
+- Riesgo de alucinación inherente a modelos de razonamiento de este tamaño; la compresión de cadenas puede aumentar errores en tareas de lógica compleja.
+- El componente multimodal (`mmproj`) no está documentado: se desconoce qué tipos de imagen soporta y con qué calidad.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen3.5 puede tener condiciones adicionales que conviene verificar en el repositorio original de Qwen.
+- El repositorio ocupa 187,9 GB; descargar solo la cuantización necesaria para evitar consumo innecesario de almacenamiento.
+- Las cuantizaciones Q2_K y Q3_K_S pueden degradar notablemente la calidad del razonamiento; para tareas sensibles usar Q5_K_M o superior.
+- Fecha de creación del repositorio (2026-11-01) y etiqueta `qwen3_5`: verificar que la versión de llama.cpp soporta la arquitectura antes de desplegar.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/OTC-Qwen3.8-27B-CPO-GRPO-GGUF
 - Modelo base: https://huggingface.co/frankleaf/OTC-Qwen3.8-27B-CPO-GRPO
+- Variantes imatrix: https://huggingface.co/mradermacher/OTC-Qwen3.8-27B-CPO-GRPO-i1-GGUF
+- Página de descargas del cuantizador: https://hf.tst.eu/model#OTC-Qwen3.8-27B-CPO-GRPO-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Comparativa de calidad de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- FAQ y peticiones de cuantización: https://huggingface.co/mradermacher/model_requests

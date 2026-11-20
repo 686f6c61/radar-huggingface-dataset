@@ -263,7 +263,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 1203,
+  "downloads_30d": 1168,
   "trending_score": 0,
   "parameters": 1928677440,
   "parameters_human": "1.93B",
@@ -283,31 +283,5 @@
   "renamed_to": "AMAImedia/NOESIS-Qwen3-TTS-1.7B-Talker-Combo-LLM2-ASR2-BF16",
   "renamed_at": "2026-11-11T02:09:19.938Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "AMAImedia (Ilia Bolotnikov) · GitHub",
-      "url": "https://github.com/AMAImedia/",
-      "snippet": "Senior AI Engineer | Agentic AI · Voice Cloning · TTS/ASR · Founder AMAImedia.com - AMAImedia"
-    },
-    {
-      "title": "New AI Models 2026 - Latest Releases | LM Market Cap",
-      "url": "https://lmmarketcap.com/new-ai-models",
-      "snippet": "Discover the newest AI models released in 2026. Track the latest LLMs, coding models, and image generators as they launch with source-backed release and evidence tracking."
-    },
-    {
-      "title": "AMAImedia (amaimediacom) - Hugging Face",
-      "url": "https://huggingface.co/AMAImedia/models",
-      "snippet": "AMAImedia/MiMo-V2.5-ASR-8B-NOESIS-BF16 Automatic Speech Recognition • 8B•Updated May 18• 3 • 1"
-    },
-    {
-      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
-      "url": "https://benchlm.ai/",
-      "snippet": "Compare 403 AI models across 406 benchmarks, with 226 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
-    },
-    {
-      "title": "LLM Updates (August 2026) - AI Model Releases & Provider Activity",
-      "url": "https://lmmarketcap.com/llm-updates",
-      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
-    }
-  ]
+  "sources": []
 }

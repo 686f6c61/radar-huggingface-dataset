@@ -2,113 +2,99 @@
 
 ## Resumen
 
-Spark-X2.6-4B-INT4 es la versión cuantizada a 4 bits del modelo Spark-X2.6-4B, un LLM compacto de propósito general desarrollado por XHToken (familia SparkLLM) y orientado explícitamente al despliegue en dispositivo (*on-device*). El modelo conserva exactamente la misma arquitectura que su predecesor Spark-X2.5-4B y obtiene sus mejoras de capacidad exclusivamente mediante un post-entrenamiento revisado, con avances declarados en código, flujos agénticos, contexto largo, multilingüismo y razonamiento.
+Spark-X2.6-4B-INT4 es la versión cuantizada a 4 bits del modelo Spark-X2.6-4B, un modelo de lenguaje compacto y de propósito general desarrollado por XHToken (equipo SparkLLM) para despliegue en dispositivos (on-device). Está construido como versión post-entrenada del Spark-X2.6-4B, que a su vez parte de la arquitectura de Spark-X2.5-4B. Este repositorio concreto contiene los pesos cuantizados mediante la librería `compressed-tensors`, lo que reduce el tamaño del repositorio a 3,4 GB frente a los aproximadamente 8 GB que ocuparía un checkpoint en FP16 con cerca de 2.000 millones de parámetros.
 
-La relevancia de esta ficha concreta está en el formato: el repositorio publica pesos INT4 en safetensors con `compressed-tensors`, lo que reduce el peso del modelo a un repo de 3,4 GB y lo hace candidato a GPU de consumo. El recuento real de parámetros almacenados en safetensors es de 1.970.362.880 (~1,97 B), por debajo del "4B" del nombre comercial; conviene tenerlo en cuenta al planificar memoria y comparativas.
+El modelo está orientado a tareas de agente, generación de código, razonamiento, contexto largo y uso multilingüe (inglés y chino), con un enfoque explícito en eficiencia de inferencia en el borde. Incorpora un presupuesto de razonamiento configurable con tres niveles (none, low, high) que permite ajustar la calidad del razonamiento frente a la latencia y el coste de inferencia. Según la model card, alcanza un rendimiento comparable o superior al de modelos de aproximadamente 9B parámetros en varios benchmarks, y su eficiencia se compara con Qwen3.5-4B y Gemma-E4B.
 
-El modelo solo declara inglés y chino, licencia Apache 2.0 y soporte nativo de *thinking budget* configurable en tres niveles (none, low, high), además de tool calling con parser dedicado (`spark25`). Es, por tanto, una pieza pensada para agentes locales con control fino de latencia y coste de inferencia.
+Es relevante ahora porque el segmento de modelos pequeños con capacidades agénticas está creciendo rápidamente, y esta variante INT4 facilita su ejecución en hardware de consumo y en entornos con restricciones de memoria, manteniendo la licencia Apache 2.0 para uso comercial.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (tag de arquitectura `spark2_5`; idéntica a Spark-X2.5-4B, sin detalle en la información) |
-| Parámetros totales | 1.970.362.880 (~1,97 B) según safetensors del repo INT4; el nombre comercial indica "4B" |
-| Parámetros activos | no disponible (no se indica que sea un modelo MoE) |
-| Longitud de contexto | hasta 1.048.576 tokens (configuración de servidor SGLang indicada en la model card); `max_new_tokens` de ejemplo: 131.072 |
-| Tipos de cuantización | INT4 (`compressed-tensors`); según la entrada de dev.to existen además Q4_K_M para llama.cpp y ejecuciones INT4 con TensorRT y MLX |
-| Idiomas soportados | en, zh |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (transformers con `trust_remote_code`), cuantización `compressed-tensors` |
-| Modelo base | XHToken/Spark-X2.6-4B |
-| Librería requerida | transformers 4.57.1 |
-| Tamaño del repositorio | 3,4 GB |
-| Pipeline | text-generation |
-| Descargas / likes | 90 / 14 |
+| Arquitectura | Transformer (arquitectura de Spark-X2.5-4B, sin cambios según la model card); requiere `trust_remote_code` |
+| Parametros totales | 1.970.362.880 (~2B, según safetensors) |
+| Parametros activos | No aplica (no es MoE según la información disponible) |
+| Longitud de contexto | No disponible de forma explícita; el ejemplo de generación usa `max_new_tokens=131072`, lo que sugiere soporte de contexto largo, pero no se confirma la ventana exacta |
+| Tipos de cuantizacion | INT4 (cuantización de 4 bits mediante `compressed-tensors`) |
+| Idiomas soportados | Inglés (en) y chino (zh) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | Safetensors (con configuración de `compressed-tensors`), cargable con Transformers |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna. La model card afirma que Spark-X2.6-4B "retiene exactamente la misma arquitectura que Spark-X2.5-4B" y que las ganancias provienen de un post-entrenamiento mejorado; el tag de arquitectura registrado es `spark2_5` y la integración en ms-swift se mapea a ese mismo identificador. No se especifica si se trata de un transformer denso, un MoE o un diseño híbrido, ni se publican el número de tokens de entrenamiento ni la composición del dataset.
+La model card indica que Spark-X2.6-4B conserva exactamente la misma arquitectura que Spark-X2.5-4B, y que las mejoras de capacidad provienen del post-entrenamiento, no de cambios estructurales. No se detalla en la información disponible el número de capas, dimensión oculta, mecanismo de atención ni si emplea innovaciones como atención lineal o decodificación especulativa. Tampoco se especifica el número de tokens de entrenamiento ni la composición del dataset.
 
-Sí se documentan dos componentes de post-entrenamiento relevantes: un **presupuesto de razonamiento controlable** en tres niveles (none, low, high), que permite ajustar calidad de razonamiento frente a latencia y coste, y un soporte reforzado de **flujos agénticos** con uso de herramientas, planificación multi-paso e ingeniería de software. No se mencionan detalles de RLHF, DPO u otras etapas de alineación, ni innovaciones de atención (attention linear, decodificación especulativa). La model card incluye gráficas de benchmarks (`benchmark.svg`, `all_benchmark.svg`, `inference.svg`) sin valores numéricos en el texto.
+Sí se documenta el resultado del post-entrenamiento: mejoras sustanciales en código, comportamiento agéntico (uso complejo de herramientas, planificación multi-paso, ingeniería de software), contexto largo, multilingüismo y razonamiento. Se menciona un presupuesto de razonamiento controlable con tres niveles (none, low, high). No se confirma en la información proporcionada si se emplearon RLHF, DPO u otras técnicas de alineación concretas.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno con plantilla de chat propia (`apply_chat_template`).
-- Razonamiento con modo *thinking* activable (`enable_thinking=True`) y presupuesto configurable en tres niveles: none, low, high.
-- Capacidades de código y ingeniería de software, con mejoras declaradas frente a Spark-X2.5-4B.
-- Capacidades matemáticas y de conocimiento general, evaluadas en la batería de benchmarks del autor.
-- Tool calling / function calling: soporte nativo con parser `spark25` en SGLang, lo que habilita APIs compatibles con OpenAI para agentes con herramientas.
-- Flujos agénticos multi-paso: planificación y ejecución de tareas compuestas.
-- Contexto largo: la configuración de referencia admite hasta 1.048.576 tokens, adecuada para documentos extensos y sesiones agénticas prolongadas.
-- Multilingüe limitado a inglés y chino (no se declara castellano).
-- No se declaran capacidades de visión, audio ni otras modalidades.
+- Generación de texto conversacional multi-turno.
+- Razonamiento con presupuesto configurable: niveles none, low y high, que permiten equilibrar calidad y latencia.
+- Generación y comprensión de código, incluyendo tareas de ingeniería de software.
+- Flujos agénticos: uso complejo de herramientas, planificación multi-paso y ejecución de tareas de varios pasos.
+- Capacidades de contexto largo (el ejemplo de la model card emplea hasta 131.072 tokens nuevos de generación).
+- Soporte multilingüe limitado a inglés y chino.
+- Integración con Transformers (requiere `transformers==4.57.1` y `trust_remote_code=True`).
+- Servido mediante SGLang con API compatible con OpenAI, incluyendo soporte para GPUs NVIDIA y NPUs Ascend.
 
 ## Casos de uso
 
-- **Agentes locales de escritorio**: con ~1,97 B de parámetros en INT4 y tool calling nativo, el modelo puede ejecutarse en un portátil con GPU de consumo y orquestar herramientas del sistema (ficheros, calendario, shell) sin enviar datos a la nube, lo que resulta crítico para privacidad.
-- **Atención al cliente automatizada en inglés o chino**: la ventana de contexto de hasta 1.048.576 tokens permite mantener conversaciones multi-turno con historial largo y documentos adjuntos sin truncar; el modo *thinking* "none" reduce latencia en respuestas rutinarias.
-- **Asistente de código en el IDE**: las mejoras declaradas en código y el soporte de instrucciones estructuradas permiten integrarlo en pipelines de revisión, generación de tests y refactorización, con el modo low/high alternando entre autocompletado rápido y explicaciones razonadas.
-- **Extracción de información sobre documentación extensa**: contratos, informes o bases de conocimiento de cientos de miles de tokens pueden procesarse en una sola pasada si la memoria del dispositivo lo permite, reduciendo la necesidad de pipelines RAG complejos.
-- **Automatización de tareas con APIs**: usando el parser de tool calling `spark25` en SGLang se puede exponer un endpoint compatible con OpenAI y encadenar llamadas a servicios REST en flujos multi-paso.
-- **Procesamiento por lotes en el borde**: para clasificación, resumen o normalización de textos en inglés/chino dentro de dispositivos con recursos limitados, donde un modelo de 9 B no cabría.
-- **Asistente educativo bilingüe**: explicaciones paso a paso con nivel de razonamiento ajustable, útil para entornos con presupuesto de cómputo variable.
-- **Prototipado e investigación de agentes**: al ser Apache 2.0 y caber en una sola GPU, sirve como banco de pruebas reproducible para evaluar estrategias de planificación y *thinking budgets*.
+- Asistentes on-device en aplicaciones móviles o de escritorio: el tamaño INT4 (3,4 GB de repositorio) y el presupuesto de razonamiento configurable permiten ejecutar el modelo en dispositivos con memoria limitada, ajustando el nivel de razonamiento a "none" o "low" para respuestas rápidas.
+- Agentes de automatización de tareas con herramientas: el modelo está entrenado explícitamente para uso complejo de herramientas y planificación multi-paso, lo que lo hace adecuado para orquestar llamadas a APIs en pipelines de automatización.
+- Asistencia a la programación en local: generación de código y tareas de ingeniería de software en entornos sin conexión o con requisitos de privacidad, desplegado con SGLang o Transformers.
+- Procesamiento de documentos largos en inglés o chino: gracias al soporte de contexto largo, puede resumir, extraer información o responder preguntas sobre documentos extensos en esos dos idiomas.
+- Chatbots de atención al cliente bilingües (en/zh): conversaciones multi-turno con contexto largo y latencia controlable mediante el nivel de razonamiento bajo.
+- Prototipado rápido de aplicaciones de IA en hardware de consumo: la cuantización INT4 reduce los requisitos de VRAM, permitiendo experimentar en GPUs de gama media o alta de consumo.
+- Servido en infraestructura con NPUs Ascend: la model card documenta imágenes de SGLang para A2 y A3, lo que facilita despliegues en hardware no NVIDIA.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks numéricos en la información disponible. La model card referencia tres gráficas (`benchmark.svg`, `all_benchmark.svg`, `inference.svg`) con comparativas frente a modelos on-device de tamaño similar y modelos de ~9 B, pero los valores no están disponibles en forma de texto.
+La model card menciona que Spark-X2.6-4B obtiene el mejor rendimiento de su clase entre modelos de tamaño comparable y que iguala o supera a modelos de aproximadamente 9B parámetros en varios benchmarks. Sin embargo, los resultados numéricos están publicados únicamente como imágenes (`benchmark.svg`, `all_benchmark.svg`, `reasoning_effort.svg`) y no se incluyen en el texto disponible. Se proporcionan dos datos concretos sobre el presupuesto de razonamiento:
 
-| Benchmark | Spark-X2.6-4B-INT4 | Referencia Qwen3.5-4B | Referencia Gemma-E4B |
-|---|---|---|---|
-| MMLU | no disponible | no disponible | no disponible |
-| HumanEval | no disponible | no disponible | no disponible |
-| GSM8K | no disponible | no disponible | no disponible |
-| Tareas agénticas / tool use | no disponible (el autor declara rendimiento "best-in-class" en su clase, sin cifras) | no disponible | no disponible |
+| Métrica | Valor |
+|---|---|
+| Spark-X2.6-4B: caída media de puntuación al pasar de high a low | 1,7 puntos |
+| Spark-X2.6-4B: reducción de longitud media de salida al pasar de high a low | 22,0 % |
+| Spark-X2.6-1.7B: caída media de puntuación al pasar de high a low | 4,0 puntos |
+| Spark-X2.6-1.7B: reducción de longitud media de salida al pasar de high a low | 37,3 % |
 
-Las únicas cifras numéricas encontradas en la búsqueda web corresponden a otro modelo de la familia (Spark-X2.5-1.7B, con valores 47,4 / 42,1 / 64,5 / 71,6) y no identifican los benchmarks, por lo que no se trasladan a esta ficha.
+No se han publicado resultados numéricos detallados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en el texto de la información disponible.
 
 ## Requisitos de hardware
 
-- **Peso de los pesos**: el repo INT4 ocupa 3,4 GB; en VRAM, los pesos en INT4 de ~1,97 B de parámetros deberían situarse aproximadamente entre 1 y 2 GB, más overhead de runtime, KV cache y buffers.
-- **GPU de consumo**: cabe en tarjetas de 8-12 GB (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090) siempre que se limite la longitud de contexto. La ventana completa de 1.048.576 tokens exige mucha más memoria por el KV cache y no es viable en consumer.
-- **GPU de datacenter**: A100 y H100 son las opciones indicadas implícitamente para servir contexto completo con SGLang; la configuración de referencia usa `--tp-size 1` y `--mem-fraction-static 0.8`, por lo que una sola GPU es suficiente si la memoria acompaña.
-- **Aceleradores alternativos**: la model card incluye build diario de SGLang para Ascend NPU (CANN 9.0.0, A3 y A2/910B).
-- **Opciones de despliegue**: SGLang (imagen `lmsysorg/sglang:nightly-dev-cu13`), transformers 4.57.1 con `trust_remote_code=True`, llama.cpp (Q4_K_M), TensorRT y MLX según la entrada de dev.to, y ms-swift para fine-tuning (la familia Spark-X2.5 aparece soportada en swift 4.7).
-- **Latencia y throughput**: no disponibles. El autor afirma eficiencia de inferencia "igual o mejor" que Qwen3.5-4B y Gemma-E4B, pero sin cifras en el texto.
+- VRAM estimada para inferencia: con cuantización INT4 y ~2B parámetros, el peso ocupa aproximadamente 1 GB (el repositorio completo son 3,4 GB, incluyendo posibles pesos adicionales y ficheros de configuración). La VRAM total dependerá de la longitud de contexto y del backend.
+- Cabe en GPUs de consumo: sí, previsiblemente en tarjetas con 6-8 GB de VRAM o más, aunque no se proporcionan cifras oficiales.
+- GPUs recomendadas: no se especifican modelos concretos; la model card documenta SGLang para NVIDIA (imagen `lmsysorg/sglang:nightly-dev-cu13-...`) y para NPUs Ascend A2 y A3.
+- Opciones de despliegue: Transformers (versión 4.57.1, con `trust_remote_code=True`) y SGLang con API compatible con OpenAI. No se mencionan llama.cpp, Ollama ni TGI en la información disponible.
+- Latencia y throughput: la model card afirma una eficiencia de inferencia igual o mejor que Qwen3.5-4B y Gemma-E4B, pero no se aportan cifras concretas de latencia o tokens por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Spark-X2.6-4B-INT4 | ~1,97 B (nombre comercial 4B) | hasta 1.048.576 tokens (config. SGLang) | sin cifras; el autor declara paridad o superioridad frente a modelos de ~9 B en varias tareas | Apache 2.0 | Hugging Face y ModelScope |
-| Qwen3.5-4B | 4 B (según nombre) | no disponible en la información | referencia de eficiencia usada por el autor | no disponible en la información | no disponible en la información |
-| Gemma-E4B | no disponible | no disponible | referencia de eficiencia usada por el autor | no disponible en la información | no disponible en la información |
-| inclusionAI/Ling-3.0-tiny | no disponible | no disponible | comparado en discusiones de la comunidad LocalLLaMA | no disponible en la información | no disponible en la información |
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| Spark-X2.6-4B-INT4 | ~2B (INT4) | No disponible explícitamente | Apache 2.0 | Versión cuantizada; comparado en la model card con modelos de ~9B |
+| Qwen3.5-4B | 4B (según denominación) | No disponible | No disponible en esta información | Referencia de eficiencia en la model card |
+| Gemma-E4B | No disponible | No disponible | No disponible en esta información | Referencia de eficiencia en la model card |
+| Spark-X2.6-1.7B | 1,7B | No disponible | No disponible en esta información | Variante menor de la misma familia, citada en la comparativa de razonamiento |
 
-La comparativa cuantitativa no puede completarse: la model card solo aporta gráficas y la búsqueda web no devuelve cifras atribuibles a este modelo. Los tres competidores citados aparecen mencionados por el propio autor o por la comunidad, no con datos verificables en esta información.
+Los datos de rendimiento comparativo están en imágenes no incluidas en el texto; no se dispone de cifras numéricas para una comparación cuantitativa.
 
 ## Limitaciones y advertencias
 
-- **Idiomas**: solo inglés y chino declarados. El rendimiento en castellano no está garantizado ni evaluado, lo que es un riesgo directo para productos en España.
-- **Discrepancia de nomenclatura**: el nombre indica "4B" pero los safetensors del repo INT4 contienen 1.970.362.880 parámetros. Verificar el tamaño efectivo antes de dimensionar infraestructura.
-- **Contexto anunciado vs. real**: la ventana de 1.048.576 tokens es una configuración de servidor; la calidad de recuperación en contextos muy largos no está documentada con métricas.
-- **Sesgos**: no se publica ninguna información sobre evaluación de sesgos, toxicidad o alineación.
-- **Alucinación**: sin datos de tasas de alucinación ni de evaluación en tareas de fidelidad; un modelo de ~2 B es especialmente propenso a errores factuales en conocimiento enciclopédico.
-- **Cuantización INT4**: la pérdida de calidad frente al modelo base en FP16/BF16 no está cuantificada en la información disponible; conviene validar en la tarea concreta antes de producción.
-- **Código personalizado**: requiere `trust_remote_code=True`, lo que implica ejecutar código del repositorio; auditar antes de desplegar en entornos regulados.
-- **Licencia**: Apache 2.0 permite uso comercial, pero conviene revisar las condiciones de los artefactos derivados (tokenizer, código custom) y las dependencias del runtime.
-- **Madurez**: 90 descargas y 14 likes, con creación en octubre de 2026; tracción muy limitada y ecosistema de terceros escaso.
-- **Sin benchmarks verificables**: la ausencia de cifras dificulta la comparación objetiva con alternativas.
+- Idiomas limitados a inglés y chino; el rendimiento en castellano no está garantizado ni documentado.
+- La cuantización INT4 puede degradar la calidad respecto al modelo base en FP16/BF16; no se documenta la magnitud de esa pérdida.
+- Riesgo de alucinación inherente a modelos de este tamaño; no se documentan evaluaciones de factualidad.
+- No se detallan sesgos conocidos ni evaluaciones de seguridad en la información disponible.
+- Requiere `trust_remote_code=True`, lo que implica ejecutar código personalizado del repositorio; conviene auditar dicho código antes de usarlo en producción.
+- La longitud de contexto no se especifica de forma explícita; el valor de 131.072 en el ejemplo corresponde a `max_new_tokens`, no necesariamente a la ventana de contexto.
+- Licencia Apache 2.0, que permite uso comercial, pero se recomienda revisar los términos del modelo base y de los pesos cuantizados.
+- El soporte depende de versiones concretas de Transformers (4.57.1) e imágenes de SGLang específicas, lo que puede complicar la integración en stacks existentes.
 
 ## Enlaces
 
-- Hugging Face (modelo INT4): https://huggingface.co/XHToken/Spark-X2.6-4B-INT4
-- Hugging Face (modelo base): https://huggingface.co/XHToken/Spark-X2.6-4B
-- ModelScope: https://modelscope.ai/models/XHToken/Spark-X2.6-4B-INT4
-- Artículo del autor en dev.to: https://dev.to/sparkllm/spark-x26-4b-stronger-on-device-agents-coding-and-controllable-thinking-2fh
-- Documentación de ms-swift (modelos soportados): https://swift.readthedocs.io/en/latest/Instruction/Supported-models-and-datasets.html
-- Hilo comparativo en r/LocalLLaMA: https://www.reddit.com/r/LocalLLaMA/comments/1wao3d5/xhtokensparkx254b_vs_inclusionailing30tiny_vs/
+- Modelo en Hugging Face: https://huggingface.co/XHToken/Spark-X2.6-4B-INT4
+- Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
 - Slack: https://join.slack.com/t/tokenspark/shared_invite/zt-432qf8l2f-5~dLyXv8uETr0P0UuC07nw
 - Discord: https://discord.gg/kTDE2Hg8aw
 - YouTube: https://www.youtube.com/@SparkLLM

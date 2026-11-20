@@ -68,32 +68,25 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
-  "sources": [
+  "benchmarks": [
     {
-      "title": "Mansplaining — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Mansplaining",
-      "snippet": "‍‍‍‍‍Illustration d'une situation de mansplaining. Le mansplaining (mot-valise composé des mots anglais « man », « homme », et « …Read more"
+      "task": "Wake-word detection (GRU head trained on 900 synthetic \"alexa\" clips)",
+      "dataset": "Picovoice wake-word benchmark, alexa, real speakers (315 recordings)",
+      "metric": "Recall, quiet, at 0.5 false activations per hour",
+      "value": 0.95
     },
     {
-      "title": "Mansplaining - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Mansplaining",
-      "snippet": "Weigel, David (27 June 2013). \"Mansplaining the Mansplainer: Rick Perry's Accidental Abortion Honesty\". Slate. Retrieved 20 August …"
+      "task": "Wake-word detection (GRU head trained on 900 synthetic \"alexa\" clips)",
+      "dataset": "Picovoice wake-word benchmark, alexa, real speakers (315 recordings)",
+      "metric": "Recall in 5 dB babble",
+      "value": 0.85
     },
     {
-      "title": "5 phrases puissantes pour faire taire un « mansplainer",
-      "url": "https://www.psychologies.com/moi/moi-et-les-autres-moi/5-phrases-puissantes-pour-faire-taire-un-mansplainer-validees-par-des-psychologues-612898",
-      "snippet": "Oct 11, 2025 · Comment clouer le bec à un “mansplainer” ? Voici les conseils de psychologues qui fonctionnent à tous les coups."
-    },
-    {
-      "title": "Mansplaining – Wikipedia",
-      "url": "https://de.wikipedia.org/wiki/Mansplaining",
-      "snippet": "Der Ausdruck wird häufig in politischen Debatten verwendet, etwa wenn Politikerinnen von männlichen Kollegen herablassend …"
-    },
-    {
-      "title": "MANSPLAIN Definition & Meaning - Merriam-Webster",
-      "url": "https://www.merriam-webster.com/dictionary/mansplain",
-      "snippet": "The meaning of MANSPLAIN is to explain something to a woman in a condescending way that assumes she has no knowledge …"
+      "task": "Wake-word detection (GRU head trained on 900 synthetic \"alexa\" clips)",
+      "dataset": "Picovoice wake-word benchmark, alexa, real speakers (315 recordings)",
+      "metric": "False activations per hour on 6.5 h of held-out streams",
+      "value": 0.31
     }
-  ]
+  ],
+  "sources": []
 }

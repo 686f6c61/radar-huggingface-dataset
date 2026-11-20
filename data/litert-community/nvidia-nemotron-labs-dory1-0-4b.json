@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 1450,
+  "downloads_30d": 1463,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -50,14 +50,9 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "litert-community/NVIDIA-Nemotron-Labs-Dory1.0-4B · Hugging Face",
-      "url": "https://huggingface.co/litert-community/NVIDIA-Nemotron-Labs-Dory1.0-4B",
-      "snippet": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16 converted to the LiteRT-LM (.litertlm) format for Google's LiteRT-LM runtime: an int4 file for the GPU and an int8 file for the CPU, plus a one-loop int4 file: the int4 file's weights in a graph that runs the shared block of layers once per token instead of twice (faster on the GPU, lower on GSM8K; Loops). Built with hf-to-litertlm (dory_work/) on ..."
-    },
-    {
-      "title": "litert-community/NVIDIA-Nemotron-Labs-Dory1.0-4B at main",
-      "url": "https://huggingface.co/litert-community/NVIDIA-Nemotron-Labs-Dory1.0-4B/tree/main",
-      "snippet": "Instructions to use litert-community/NVIDIA-Nemotron-Labs-Dory1.0-4B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+      "title": "MCSA Certification Phase-Out: What’s the New Path for IT Professionals",
+      "url": "https://www.exam-labs.com/blog/mcsa-certification-phase-out-whats-the-new-path-for-it-professionals",
+      "snippet": "Apr 24, 2025 · Few announcements in the IT certification world generated as much discussion and concern among working …Read more"
     }
   ]
 }

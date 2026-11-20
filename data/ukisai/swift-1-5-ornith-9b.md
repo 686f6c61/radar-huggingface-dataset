@@ -2,99 +2,104 @@
 
 ## Resumen
 
-Swift-1.5-Ornith-9B es un modelo multimodal de tipo image-text-to-text publicado por el usuario ukisai en Hugging Face. Se trata de un ajuste fino (finetune) del modelo base ornith-ai/Ornith-1.5-9B, con 9.653.104.368 parametros totales (aproximadamente 9,65 mil millones) confirmados por los pesos en safetensors. El repositorio ocupa 19,3 GB, un tamano coherente con pesos almacenados en bf16/fp16.
+Swift 1.5 Ornith 9B es un ajuste fino (finetune) del modelo base Ornith-1.5-9B, desarrollado por UkisAI. Su propuesta central es la eficiencia en el razonamiento: reduce el numero de tokens de "pensamiento" (thinking tokens) necesarios para resolver problemas, manteniendo o mejorando la precision en tareas de razonamiento complejo. Segun la model card, logra un 33,1% menos de tokens de pensamiento en mediana y una mejora de 1,52 puntos porcentuales en GPQA-Diamond respecto al modelo base.
 
-El modelo se distribuye con licencia Apache 2.0 y acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargarlo. Entre sus etiquetas figuran "reasoning", "efficient-thinking", "token-efficient", "post-training", "conversational" y "experimental", lo que sugiere un enfoque en razonamiento con bajo consumo de tokens y un estado de madurez no consolidado.
+El modelo se presenta como un derivado orientado a la eficiencia computacional en produccion, abordando el problema del "sobrepensamiento" patologico (overthinking) que afecta a muchos modelos de razonamiento: generar cadenas de pensamiento excesivamente largas sin ganancia de precision. La estrategia de entrenamiento no penaliza directamente la longitud del razonamiento, sino que identifica y penaliza los tokens asociados a ese sobrepensamiento, produciendo trazas de razonamiento mas compactas.
 
-Su relevancia actual radica en que combina entrada de imagen y texto con tecnicas de post-entrenamiento orientadas a la eficiencia de tokens, un area activa para reducir costes de inferencia en tareas de razonamiento. No se dispone de informacion publica sobre composicion del dataset, context length ni resultados de benchmarks.
+Con 9.653.104.368 parametros totales (segun los pesos en safetensors) y una pipeline declarada de image-text-to-text, el modelo esta etiquetado con el tag `qwen3_5`, lo que sugiere que hereda la arquitectura de la familia Qwen 3.5 a traves de su modelo base Ornith-1.5-9B. Se distribuye bajo licencia Apache 2.0 y esta disponible en formato transformers/safetensors, con una version GGUF publicada por el mismo autor.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiqueta de familia "qwen3_5" en Hugging Face) |
-| Parametros totales | 9.653.104.368 (9,65B) |
+| Arquitectura | Transformer (hereda de Ornith-1.5-9B; tag `qwen3_5`), pipeline image-text-to-text |
+| Parametros totales | 9.653.104.368 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el repositorio contiene solo safetensors; sin GGUF publicado) |
+| Tipos de cuantizacion | no disponible en la model card; existe repositorio GGUF separado |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (libreria transformers) |
+| Formato de pesos | safetensors (transformers); GGUF disponible en repositorio aparte |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion detallada sobre la arquitectura interna del modelo en los datos disponibles. La etiqueta "qwen3_5" del repositorio apunta a una familia de arquitectura transformer tipo Qwen, pero no se confirma oficialmente. La pipeline declarada es image-text-to-text, por lo que el modelo incorpora capacidad de procesamiento de imagenes junto con texto, lo que implica la presencia de un codificador visual ademas del componente de lenguaje.
+El modelo es un finetune del modelo base Ornith-1.5-9B, que a su vez se asocia a la arquitectura de la familia Qwen 3.5 (tag `qwen3_5`). La pipeline declarada es image-text-to-text, lo que indica capacidades multimodales de entrada imagen y texto, aunque la model card no detalla la arquitectura de vision ni el encoder utilizado. No se especifica si emplea atencion lineal, decodificacion especulativa u otras innovaciones de inferencia.
 
-El modelo es un finetune del base ornith-ai/Ornith-1.5-9B, y las etiquetas "post-training", "reasoning" y "efficient-thinking" indican que se aplicaron tecnicas de post-entrenamiento orientadas a razonamiento con uso eficiente de tokens. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon metodos como RLHF, DPO u otros. El caracter "experimental" de la publicacion sugiere que no ha pasado por un ciclo de validacion extenso.
+El entrenamiento se centra en la eficiencia del razonamiento. Segun el autor, en lugar de penalizar directamente la longitud del razonamiento, se identificaron los tokens vinculados al sobrepensamiento patologico y se penalizaron, lo que produce trazas de pensamiento "comprimidas". Los datos de entrenamiento provienen del dataset `ukisai/Qwen3.8-27B-multi-turn-agent-sft`, que no se usa directamente sino que se remuestrea y se convierte en entornos de RL. La model card menciona post-training con RL, aunque no detalla el algoritmo concreto (RLHF, DPO u otro) ni el numero de tokens de entrenamiento.
 
 ## Capacidades
 
-- Generacion de texto conversacional y multimodal (entrada de imagen y texto).
-- Razonamiento (tag "reasoning"), con enfasis declarado en eficiencia de tokens ("token-efficient", "efficient-thinking").
-- Procesamiento de imagenes dentro de la pipeline image-text-to-text.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible como capacidad verificada.
-- Capacidades multilingues: no disponible (idiomas no declarados).
-- Modo "thinking" explicito: no disponible.
-- Capacidades de audio: no disponible.
+- Generacion de texto y razonamiento de multiples pasos con modo de pensamiento (thinking) eficiente en tokens.
+- Razonamiento matematico de competicion (evaluado en AIME 2024 y AIME 2026).
+- Razonamiento cientifico de nivel experto (evaluado en GPQA-Diamond).
+- Generacion de codigo (evaluado en LiveCodeBench v6).
+- Seguimiento de instrucciones (evaluado en IFBench).
+- Procesamiento de entrada imagen-texto (pipeline image-text-to-text), aunque la model card no detalla las tareas de vision soportadas.
+- Capacidades conversacionales y de agente multi-turno, dado el dataset de entrenamiento orientado a SFT de agentes multi-turno.
+- Soporte de tool calling / function calling: no confirmado explicitamente en la model card.
+- Idiomas soportados: no disponible.
 
 ## Casos de uso
 
-- Asistente conversacional multimodal: el modelo acepta imagen y texto, por lo que puede gestionar dialogos en los que el usuario adjunta capturas, diagramas o fotografias y espera una respuesta textual razonada.
-- Descripcion y analisis de imagenes: generacion de descripciones, resumenes o extraccion de informacion relevante a partir de imagenes en flujos de documentacion o catalogacion.
-- Razonamiento asistido por imagen: tareas como interpretar graficos, esquemas tecnicos o capturas de pantalla donde se combina comprension visual y cadenas de razonamiento.
-- Prototipado e investigacion experimental: al estar marcado como "experimental", es adecuado para evaluacion de tecnicas de razonamiento token-efficient en entornos de laboratorio antes de un despliegue productivo.
-- Aplicaciones de accesibilidad: conversion de contenido visual en descripciones textuales para usuarios con discapacidad visual, sujeto a validacion de calidad.
-- Automatizacion de soporte interno: respuestas a consultas que incluyen imagenes de manuales o interfaces, siempre que se resuelvan los requisitos de acceso y licencia.
-- Evaluacion comparativa de post-entrenamiento: uso como referencia en experimentos que midan la eficiencia de tokens frente al modelo base Ornith-1.5-9B.
+- Razonamiento cientifico asistido: el modelo puede emplearse para resolver preguntas de nivel experto en fisica, quimica y biologia (GPQA-Diamond 84,51%), con la ventaja de consumir menos tokens de pensamiento que su base, lo que reduce coste por consulta en entornos de investigacion.
+- Resolucion de problemas matematicos: adecuado para pipelines de verificacion y generacion de soluciones paso a paso en plataformas educativas, con un rendimiento del 93,33% en AIME 2024 y 90,67% en AIME 2026.
+- Generacion de codigo en produccion: con un 56,91% en LiveCodeBench v6, puede integrarse en asistentes de programacion o revision de codigo, aunque la ausencia de confirmacion de tool calling limita su uso en pipelines automatizados complejos.
+- Agentes conversacionales multi-turno: el dataset de entrenamiento esta orientado a SFT de agentes multi-turno, por lo que es adecuado para asistentes que mantienen contexto a lo largo de conversaciones largas.
+- Evaluacion y benchmarking de eficiencia de razonamiento: util como referencia para estudiar tecnicas de compresion de cadenas de pensamiento y su impacto en precision.
+- Procesamiento de documentos con imagenes: al ser un modelo image-text-to-text, puede emplearse para extraer y razonar sobre informacion contenida en capturas, diagramas o documentos escaneados, aunque las capacidades de vision no estan documentadas en detalle.
+- Despliegue en entornos con restricciones de coste: la reduccion de tokens de pensamiento (hasta un 33,1% en mediana en GPQA-Diamond) lo hace atractivo para servicios de razonamiento a gran escala donde el coste por token es critico.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio presenta 0 descargas y 0 "likes" en el momento de la consulta, y todos los resultados de la busqueda web realizada fueron irrelevantes para el modelo (contenido no relacionado), por lo que no existen datos verificables de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion.
+Resultados publicados en la model card, comparando el modelo base Ornith-1.5-9B con Swift 1.5:
 
-| Benchmark | Resultado |
-|---|---|
-| MMLU | no disponible |
-| HumanEval | no disponible |
-| GSM8K | no disponible |
-| Otros | no disponible |
+| Benchmark | Base | Swift 1.5 | Tokens medios base | Tokens medios Swift 1.5 | Reduccion mediana |
+|---|---|---|---|---|---|
+| GPQA-Diamond | 83,00% | 84,51% | 15.760 | 11.782 | 33,1% |
+| IFBench | 42,60% | 40,47% | 13.409 | 10.790 | 24,7% |
+| AIME 2026 | 92,67% | 90,67% | 37.872 | 35.460 | 29,2% |
+| AIME 2024 | 94,00% | 93,33% | 20.776 | 17.266 | 12,2% |
+| LiveCodeBench v6 | 59,20% | 56,91% | 41.057 | no disponible en el extracto | no disponible en el extracto |
+
+No se han publicado en la informacion disponible resultados de benchmarks comparativos con modelos de terceros (MMLU, HumanEval, GSM8K, etc.).
 
 ## Requisitos de hardware
 
-Las siguientes cifras de VRAM son estimaciones calculadas a partir del numero de parametros (9,65B) y del tamano del repositorio (19,3 GB), no datos oficiales.
-
-- Pesos en bf16/fp16: aproximadamente 19,3 GB solo para los pesos, mas el codificador visual y la cache KV, lo que situa el consumo practico en torno a 22-26 GB para contexto moderado.
-- Pesos en int8: aproximadamente 9,7 GB, con consumo total estimado de 12-16 GB segun contexto.
-- Pesos en int4 (si se generan cuantizaciones propias): aproximadamente 5,5-6 GB, con consumo total estimado de 8-10 GB.
-- GPU recomendadas: para bf16 sin cuantizar, A100 40 GB, H100 80 GB, L40S 48 GB o RTX 6000 Ada 48 GB. Para int8, una RTX 4090 de 24 GB es suficiente. Para int4, cabria en GPUs consumer de 8-12 GB (RTX 3060 12 GB, RTX 4060 Ti 16 GB), aunque con margen ajustado para el componente de vision.
-- Opciones de despliegue: transformers (libreria declarada), y la etiqueta "endpoints_compatible" sugiere compatibilidad con los endpoints de Hugging Face. vLLM, TGI y llama.cpp/Ollama no estan confirmados como soportados, ya que no se publica formato GGUF.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia en precision completa (bf16/fp16): aproximadamente 19,3 GB solo para pesos, mas overhead de activaciones y cache KV; se recomienda al menos 24 GB.
+- Cuantizacion en 8 bits: aproximadamente 10-11 GB de VRAM, viable en GPUs consumer de gama alta.
+- Cuantizacion en 4 bits (GGUF): aproximadamente 5-6 GB de VRAM, viable en GPUs consumer de gama media.
+- GPUs recomendadas: A100 40/80 GB o H100 para despliegue en precision completa con contexto largo; RTX 4090 (24 GB) para bf16 o cuantizacion 8 bits; RTX 3090, 4080 o inferiores para cuantizacion 4 bits.
+- Opciones de despliegue: transformers (libreria declarada), llama.cpp / Ollama a traves del repositorio GGUF publicado por el autor, y potencialmente vLLM o TGI si la arquitectura Qwen 3.5 esta soportada por dichos frameworks (no confirmado).
+- Latencia y throughput: no disponibles. La reduccion de tokens de pensamiento (hasta 33,1% en mediana) implica una mejora proporcional en latencia y coste para tareas de razonamiento, pero no se publican cifras absolutas de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos verificables de modelos comparables en la informacion proporcionada. La unica referencia directa es el modelo base del que deriva este ajuste.
+| Modelo | Parametros | Contexto | GPQA-Diamond | AIME 2024 | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Swift 1.5 Ornith 9B | 9,65 B | no disponible | 84,51% | 93,33% | Apache 2.0 | Hugging Face (safetensors + GGUF) |
+| Ornith-1.5-9B (base) | no disponible | no disponible | 83,00% | 94,00% | no disponible | Hugging Face |
+| Qwen 3.5 (familia, tag de arquitectura) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| Swift-1.5-Ornith-9B | 9,65B | no disponible | Apache 2.0 | Gated (acceso restringido) |
-| ornith-ai/Ornith-1.5-9B (base) | no disponible | no disponible | no disponible | no disponible |
-
-No se ha identificado ninguna alternativa adicional de la misma categoria con datos confirmados.
+No se dispone de datos de benchmarks de terceros en la informacion proporcionada para establecer comparaciones adicionales con modelos de tamano similar.
 
 ## Limitaciones y advertencias
 
-- Modelo marcado como "experimental": no ha superado necesariamente un ciclo de validacion orientado a produccion.
-- Acceso restringido (gated): es obligatorio aceptar las condiciones en Hugging Face antes de descargar los pesos.
-- Sin benchmarks publicados: no es posible cuantificar su rendimiento frente a alternativas de tamano similar, por lo que cualquier evaluacion debe hacerse por cuenta propia.
-- Idiomas soportados no declarados: no puede asumirse cobertura multilingue ni un rendimiento correcto en castellano sin pruebas previas.
-- Longitud de contexto no especificada: no se puede planificar el uso en escenarios de contexto largo sin verificar el limite real.
-- Riesgo de alucinacion: inherente a los modelos generativos y no cuantificado en este caso; en tareas de analisis de imagen el riesgo puede ser mayor si la informacion visual no se interpreta correctamente.
-- Sesgos conocidos: no documentados en la informacion disponible.
-- Licencia Apache 2.0: permite uso comercial, pero conviene revisar si el modelo base ornith-ai/Ornith-1.5-9B impone condiciones adicionales, ya que su licencia no aparece en los datos proporcionados.
-- Sin cuantizaciones publicadas (GGUF/GPTQ/AWQ): desplegar en hardware consumer requiere generar las cuantizaciones de forma manual.
-- Cero descargas y cero "likes" en el momento de la consulta: ausencia de validacion por parte de la comunidad.
+- Modelo etiquetado como "experimental" por el autor, lo que desaconseja su uso en produccion critica sin validacion exhaustiva.
+- Ligera perdida de precision en varias tareas respecto al base: IFBench cae 2,13 puntos, AIME 2026 cae 2,00 puntos, AIME 2024 cae 0,67 puntos y LiveCodeBench v6 cae 2,29 puntos. La unica mejora es GPQA-Diamond (+1,52 puntos).
+- La reduccion de tokens de pensamiento puede degradar el rendimiento en tareas que requieren razonamiento muy extenso o exploracion amplia de alternativas.
+- No se documentan los sesgos conocidos del modelo ni los idiomas soportados, lo que dificulta evaluar su idoneidad para mercados no angloparlantes.
+- Riesgo de alucinacion no cuantificado en la informacion disponible.
+- Longitud de contexto no documentada, lo que impide planificar despliegues con documentos largos.
+- Aunque la licencia es Apache 2.0 (permisiva para uso comercial), el modelo base Ornith-1.5-9B podria tener condiciones adicionales no reflejadas en esta ficha; se recomienda verificar la licencia del modelo base.
+- El dataset de entrenamiento es publico, pero su procedencia y posibles sesgos no se detallan.
+- No se confirma soporte de tool calling ni de function calling, lo que limita su uso en arquitecturas de agentes automatizados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/ukisai/Swift-1.5-Ornith-9B
-- Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
-- Paper, blog, repositorio o demo: no disponible (la busqueda web no devolvio resultados relevantes)
+- Version GGUF: https://huggingface.co/ukisai/Swift-1.5-Ornith-9B-GGUF
+- Modelo base Ornith-1.5-9B: https://huggingface.co/ornith-ai/Ornith-1.5-9B
+- Dataset de entrenamiento: https://huggingface.co/datasets/ukisai/Qwen3.8-27B-multi-turn-agent-sft
+- Web del autor: https://ukisai.com
+- Pagina de producto: https://ukisai.com/products/swift
+- Licencia: https://huggingface.co/ukisai/Swift-1.5-Ornith-9B/blob/main/LICENSE

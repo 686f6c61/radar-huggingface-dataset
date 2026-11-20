@@ -2,92 +2,96 @@
 
 ## Resumen
 
-hs-decide-1-flash es un modelo de decisión de 0,8B parámetros desarrollado por Hindsight AI (vectorize-io) como componente especializado del sistema de memoria para agentes Hindsight. No es un modelo generativo al uso: recibe un estado (por ejemplo, una consulta y un conjunto de documentos) junto con una o varias preguntas tipadas sobre ese estado, y devuelve en un único forward pass una distribución de probabilidad sobre cada opción de respuesta, sin generar texto.
+hs-decide-1-flash es un modelo de decisión de 0,8B desarrollado por Hindsight AI como componente del sistema de memoria para agentes Hindsight (open source, github.com/vectorize-io/hindsight). A diferencia de un modelo generativo, no produce texto: recibe un estado (por ejemplo, una consulta y un conjunto de documentos) junto con una o varias preguntas tipadas sobre ese estado, y devuelve en un único forward pass una distribución de probabilidad sobre cada opción de respuesta. Está afinado a partir de Qwen/Qwen3.5-0.8B y cuenta con 752.393.024 parámetros reales en safetensors.
 
-El modelo está afinado a partir de Qwen/Qwen3.5-0.8B (752.393.024 parámetros reales según los pesos en safetensors) y se distribuye con licencia Apache 2.0. Su función es sustituir llamadas a LLM generativos en tareas de enrutamiento y evaluación dentro de pipelines de agentes: selección de documentos relevantes, reranking, clasificación de intención y respuestas sí/no, con la ventaja de ser determinista, barato y de baja latencia.
+El modelo resuelve un problema concreto en pipelines de agentes: decidir qué fragmento de memoria es relevante, si un documento responde a una consulta, si dos hechos son contradictorios o qué opción elegir entre un conjunto cerrado, sin pagar el coste ni la latencia de generar texto. Soporta tres tipos de pregunta: `choice` (elegir entre 2 y 255 opciones), `score` (valorar en 2 a 10 niveles ordenados) y `noul` (sí/no). Todas las preguntas sobre un mismo estado se responden en la misma pasada.
 
-Es relevante porque propone un patrón distinto al del LLM-as-a-judge: en lugar de pedir al modelo que escriba una respuesta y parsearla, expone directamente probabilidades calibradas sobre opciones discretas. Soporta ocho idiomas (inglés, español, francés, alemán, portugués, japonés, coreano y chino) y peticiones de hasta 65.536 tokens, lo que lo hace adecuado para evaluar memorias de agente con contexto largo.
+Es relevante ahora porque propone un patrón distinto al del LLM generativo como juez: un modelo pequeño, determinista en formato, con probabilidades calibradas y confianza explícita, entrenado para peticiones de hasta 65.536 tokens y multilingüe en ocho idiomas. Su licencia Apache 2.0 y su empaquetado como plugin de vLLM facilitan integrarlo en producción sin depender de un proveedor externo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (fine-tune de Qwen/Qwen3.5-0.8B) con cabeza de decisión sobre opciones tipadas |
+| Arquitectura | Transformer decoder-only (fine-tune de Qwen/Qwen3.5-0.8B, tag `qwen3_5_text`) |
 | Parametros totales | 752.393.024 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 65.536 tokens por petición (entrenado) |
-| Tipos de cuantizacion | no disponible (entrenado y servido en bfloat16) |
+| Tipos de cuantizacion | no disponible (el modelo se publica en bfloat16; no se documentan cuantizaciones oficiales) |
 | Idiomas soportados | en, es, fr, de, pt, ja, ko, zh |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (librería transformers) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen/Qwen3.5-0.8B, un transformer decoder-only de la familia Qwen3.5, y se afina como modelo de decisión. La innovación principal no está en el backbone sino en la interfaz: en lugar de decodificar tokens, el modelo produce en un solo forward pass una distribución de probabilidad sobre las opciones de cada pregunta. Soporta tres tipos de pregunta: `choice` (elegir una entre 2 y 255 opciones), `score` (valorar en 2 a 10 niveles ordenados) y `noul` (sí/no). Cada respuesta incluye la opción elegida, la probabilidad de cada alternativa y una medida de confianza.
+El modelo parte de Qwen/Qwen3.5-0.8B, un transformer decoder-only de la familia Qwen3.5, y se afina como cabecera de decisión sobre representaciones del estado y de las preguntas. La salida no es texto generado: para cada pregunta el modelo emite una distribución sobre las opciones definidas en la petición (`choice` con entre 2 y 255 opciones, `score` con entre 2 y 10 niveles ordenados, `noul` binario), junto con una medida de confianza. El pipeline declarado en Hugging Face es `text-ranking`, coherente con el uso como reranker y clasificador de relevancia.
 
-La model card no detalla la composición del dataset de entrenamiento, el número de tokens utilizados ni si hubo RLHF o DPO. Sí indica que el modelo fue entrenado con peticiones de hasta 65.536 tokens, lo que implica un entrenamiento orientado a estados largos (documentos múltiples, historiales de conversación o memorias de agente). La precisión de referencia es bfloat16 y el pipeline declarado en Hugging Face es `text-classification`, coherente con su naturaleza discriminativa más que generativa.
+La model card no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO. Sí se especifica que el entrenamiento cubre peticiones de hasta 65.536 tokens, que el modelo se distribuye en bfloat16 y que la inferencia se realiza en una sola pasada para todas las preguntas de una petición, con `output_tokens: 0` en la respuesta de la API. El repositorio incluye en `serving/` un plugin de vLLM que añade el endpoint `POST /v1/systemone`, además de un servidor basado en Transformers para CPU, Apple Silicon o GPU.
 
 ## Capacidades
 
-- Respuesta a preguntas tipadas sobre un estado: selección entre opciones (`choice`), puntuación ordinal (`score`) y binaria (`noul`).
-- Salida de probabilidades por opción más un valor de confianza, sin texto generado, lo que elimina la necesidad de parseo.
-- Múltiples preguntas resueltas en una sola pasada sobre el mismo estado.
-- Multilingüe en ocho idiomas: inglés, español, francés, alemán, portugués, japonés, coreano y chino.
-- Manejo de peticiones largas de hasta 65.536 tokens, con error explícito (`max_tokens_exceeded`) si se supera.
-- Integración como reranker y clasificador en pipelines de memoria de agente (Hindsight).
-- Servido mediante un plugin de vLLM que expone el endpoint `POST /v1/systemone`.
-- No soporta generación de texto libre, tool calling ni razonamiento multi-paso generativo; su rol es la decisión puntual.
+- Decisión tipada con probabilidades: devuelve una distribución completa sobre las opciones, no solo la etiqueta ganadora.
+- Preguntas `choice`: selección entre 2 y 255 opciones con probabilidades por opción y confianza.
+- Preguntas `score`: valoración ordinal en 2 a 10 niveles, con puntuación esperada y leyenda de niveles.
+- Preguntas `noul`: respuesta binaria sí/no expresada como probabilidad.
+- Múltiples preguntas por petición: todas las preguntas sobre un mismo estado se resuelven en el mismo forward pass.
+- Reranking y evaluación de relevancia documento-consulta, incluyendo detección de información obsoleta o contradictoria.
+- Capacidades multilingües en inglés, español, francés, alemán, portugués, japonés, coreano y chino.
+- Contexto largo: peticiones de hasta 65.536 tokens; las que lo exceden devuelven error `max_tokens_exceeded`.
+- Integración con Hindsight como modelo de decisión para memoria de agentes.
+- No soporta generación de texto, tool calling ni razonamiento multi-paso autónomo: es un componente de decisión, no un agente.
 
 ## Casos de uso
 
-- Reranking de documentos recuperados: dado un `query` y un conjunto de documentos, el modelo puntúa con `score` la relevancia de cada documento y permite reordenar los resultados de un sistema RAG antes de pasarlos a un LLM generativo.
-- Selección de la memoria relevante en agentes: en un historial largo de interacciones, el modelo elige con `choice` qué recuerdo o fragmento responde mejor a la consulta actual, reduciendo el contexto que se inyecta al modelo principal.
-- Detección de intención y enrutamiento: con `choice` sobre un conjunto acotado de intenciones o herramientas, el modelo decide a qué flujo derivar una petición sin coste de generación.
-- Verificación de respuestas sí/no: con `noul` se comprueba si una respuesta satisface una condición (por ejemplo, si una fecha cambió o si un documento contradice otro), útil en pipelines de control de calidad.
-- Clasificación multilingüe de tickets y mensajes: al soportar ocho idiomas, puede etiquetar consultas de soporte en distintos mercados con un único modelo y sin traducción previa.
-- Evaluación automática de calidad en CI: integrado en pipelines que validan salidas de agentes, puntúa con `score` la adecuación de una respuesta a un criterio definido, con coste muy inferior al de un LLM juez.
-- Filtrado previo en sistemas de búsqueda: descarta documentos irrelevantes con `noul` o `score` antes de invocar modelos más caros, reduciendo latencia y coste por consulta.
+- Reranking de memoria de agente: dado un estado con consulta y documentos recuperados, el modelo puntúa cada documento con preguntas `score` para ordenar qué fragmentos debe usar el agente en el siguiente paso, aprovechando el contexto de 65.536 tokens para evaluar lotes grandes en una sola pasada.
+- Detección de información obsoleta: con preguntas `choice` y `noul` se identifica qué documento contiene la versión vigente de un dato (por ejemplo, una fecha de evento que cambió) y si hubo cambio, tal como muestra el ejemplo de la model card con D00 y D01.
+- Clasificación de tickets en soporte: una pregunta `noul` como "¿es un problema de facturación?" devuelve una probabilidad (0,997 en el ejemplo del autor) que se puede usar como umbral para enrutar tickets, sin generar texto ni consumir tokens de salida.
+- Filtrado previo a generación: actuar como primera etapa que descarta documentos irrelevantes antes de pasarlos a un LLM generativo, reduciendo coste y riesgo de alucinación al limitar el contexto de entrada.
+- Enrutado y selección de herramientas en pipelines de agentes: preguntas `choice` sobre un conjunto cerrado de acciones o fuentes de datos permiten elegir la siguiente operación con una probabilidad explícita y auditable.
+- Evaluación automática de respuestas: preguntas `score` con criterios ordenados ("sobre otro tema", "mismo tema sin ayuda", "ayuda", "responde") para puntuar la calidad de candidatos en un sistema de QA o de generación aumentada por recuperación.
+- Moderación y verificación de hechos en pipelines multilingües: preguntas `noul` sobre afirmaciones en cualquiera de los ocho idiomas soportados, con probabilidades que permiten fijar umbrales por caso de uso.
 
 ## Benchmarks y rendimiento
 
-La model card incluye dos gráficas de evaluación (`assets/in-hindsight.png` y `assets/benchmarks.png`) con resultados dentro de Hindsight y frente a otros modelos de decisión de 0,8B, pero los valores numéricos no están disponibles en el texto proporcionado.
+La model card incluye dos gráficas de evaluación (`assets/in-hindsight.png` y `assets/benchmarks.png`) que comparan el modelo dentro de Hindsight y frente a otros modelos de decisión de 0,8B, pero los valores numéricos no están disponibles en la información proporcionada.
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bfloat16: aproximadamente 1,5 GB para los pesos (el repositorio ocupa 1,5 GB), más overhead de activaciones y caché KV para contextos largos; con 65.536 tokens la caché KV puede requerir varios GB adicionales.
-- Cabe holgadamente en GPUs de consumo: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090.
-- GPUs de datacenter recomendadas para servir en producción: A100, H100, L40S o A10G, especialmente si se procesan peticiones concurrentes con contexto largo.
-- Despliegue principal mediante vLLM 0.32.0 con el plugin incluido en la carpeta `serving/` del repositorio, que añade el endpoint `/v1/systemone` y el comando `hindsight-decision-serve`.
-- También disponible como servicio gestionado en `https://inference.hindsight.vectorize.io`.
-- No se documentan opciones de despliegue con llama.cpp, Ollama o TGI, ni cifras de latencia o throughput.
+- VRAM estimada para inferencia en bfloat16: en torno a 1,5 GB para los pesos (el repositorio ocupa 1,5 GB), más overhead de activaciones y caché KV para contextos de hasta 65.536 tokens.
+- GPU recomendadas: cualquier GPU compatible con PyTorch; para servir con vLLM se requiere una GPU (el plugin usa `vllm serve` con flags como `--gpu-memory-utilization`). No se especifican modelos concretos de GPU en la documentación.
+- Cabe en GPU de consumo: el tamaño de pesos en bf16 es de aproximadamente 1,5 GB, por lo que es viable en GPUs de consumo con suficiente memoria para el contexto utilizado; no se publican cifras oficiales de VRAM por configuración.
+- Despliegue con vLLM: `pip install vllm==0.32.0 ./hs-decide-1-flash/serving` y `hindsight-decision-serve hs-decide-1-flash --port 8000`, que expone `POST /v1/systemone`.
+- Despliegue con Transformers: paquete `serving[server]` con Python 3.12 o superior, en CPU, Apple Silicon o cualquier GPU soportada por PyTorch; el servidor Transformers atiende una petición a la vez.
+- Ajuste de carga: `--max-request-tokens` permite rechazar peticiones largas con `max_tokens_exceeded` para evitar timeouts; Hindsight reparte esas peticiones. También aplican `HINDSIGHT_API_DECISION_MODEL_TIMEOUT` y `HINDSIGHT_API_DECISION_MODEL_MAX_CONCURRENT`.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hs-decide-1-flash | 752 M | 65.536 | Modelo de decisión (choice/score/noul) | Apache 2.0 | Hugging Face, vLLM plugin, servicio gestionado |
-| Qwen/Qwen3.5-0.8B (base) | ~0,8 B | no disponible | LLM generativo | no disponible | Hugging Face |
-| Otros modelos de decisión de 0,8B | no disponible | no disponible | Decisión | no disponible | no disponible |
+| hs-decide-1-flash | 752.393.024 | 65.536 tokens | Modelo de decisión (choice/score/noul) | Apache 2.0 | Hugging Face, plugin vLLM, servidor Transformers, Hindsight Inference |
+| Qwen/Qwen3.5-0.8B (modelo base) | 0,8B | no disponible | LLM generativo | no disponible en la información proporcionada | Hugging Face |
+| Otros modelos de decisión de 0,8B | no disponible | no disponible | Decisión | no disponible | La model card los menciona en una gráfica comparativa, sin datos numéricos accesibles |
 
-La model card menciona una comparación con "otros modelos de decisión de 0,8B" en una gráfica, pero no identifica los modelos ni aporta cifras. No hay datos suficientes para una comparativa numérica fiable.
+La comparación con alternativas de la misma categoría no puede completarse con datos verificables: la model card referencia una gráfica frente a otros modelos de decisión de 0,8B, pero no se detallan nombres ni resultados.
 
 ## Limitaciones y advertencias
 
-- No es un modelo generativo: no produce texto libre, por lo que no puede usarse como LLM conversacional ni para tool calling.
-- El número de opciones está acotado: entre 2 y 255 para `choice` y entre 2 y 10 niveles para `score`.
-- Las peticiones que superan los 65.536 tokens se rechazan con HTTP 400 y `error_type: max_tokens_exceeded`; no hay truncado automático.
-- La calibración de las probabilidades y de la confianza no está documentada con métricas públicas; conviene validarla en el dominio de uso antes de confiar en umbrales fijos.
-- No se detalla la composición del dataset de entrenamiento, por lo que no es posible evaluar sesgos conocidos ni cobertura idiomática real más allá de la lista declarada.
-- Riesgo de alucinación reducido por diseño (no genera texto), pero puede asignar alta confianza a opciones incorrectas si el estado contiene información ambigua o contradictoria.
-- Aunque la licencia es Apache 2.0, el uso comercial del servicio gestionado de Hindsight Inference requiere una API key propia y está sujeto a sus condiciones.
-- El ecosistema de despliegue está atado a vLLM 0.32.0 y al plugin del repositorio; no hay soporte documentado para otros runtimes.
-- Modelo muy reciente (creado en octubre de 2026) con cero descargas y cero likes en Hugging Face en el momento de la consulta: poca validación externa por parte de la comunidad.
+- No es un modelo generativo: no produce texto, no soporta tool calling ni razonamiento multi-paso; usarlo fuera del patrón estado + preguntas tipadas no es su función.
+- Las respuestas son probabilidades y requieren umbrales calibrados por caso de uso; la confianza reportada no sustituye una validación en el dominio de despliegue.
+- Límite estricto de 65.536 tokens por petición; las peticiones mayores devuelven error 400 con `max_tokens_exceeded` y deben dividirse.
+- El servidor basado en Transformers atiende una petición a la vez, lo que limita el throughput en comparación con vLLM.
+- No se documentan sesgos conocidos, tasas de alucinación ni datos de entrenamiento; al ser un modelo de decisión, el riesgo se traslada a errores de clasificación o ranking con probabilidades mal calibradas.
+- La cobertura lingüística se limita a los ocho idiomas declarados; no se especifica el rendimiento relativo por idioma.
+- Licencia Apache 2.0: permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen/Qwen3.5-0.8B, cuya licencia no se detalla en la información proporcionada.
+- Para usar el proveedor `hindsight` en Hindsight es obligatoria una API key del servidor (`--api-key`); el servicio alojado en inference.hindsight.vectorize.io requiere clave de Hindsight Inference.
+- No hay resultados de benchmarks numéricos publicados en la información disponible, lo que impide validar las afirmaciones de rendimiento de la model card.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/hindsight-ai/hs-decide-1-flash
-- Repositorio Hindsight: https://github.com/vectorize-io/hindsight
-- Servicio de inferencia gestionado: https://inference.hindsight.vectorize.io
+- Modelo en Hugging Face: https://huggingface.co/hindsight-ai/hs-decide-1-flash
+- Repositorio de Hindsight: https://github.com/vectorize-io/hindsight
+- Inferencia alojada de Hindsight: https://inference.hindsight.vectorize.io
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
+- PyTorch (instalación): https://pytorch.org/get-started/locally/

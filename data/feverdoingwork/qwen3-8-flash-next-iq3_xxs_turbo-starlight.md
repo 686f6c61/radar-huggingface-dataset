@@ -2,113 +2,104 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next es un modelo de lenguaje de tipo mezcla de expertos (MoE) desarrollado por el equipo Qwen (Alibaba). Este repositorio concreto, publicado por el usuario feverdoingwork, no contiene el modelo original: es una cuantización agresiva empaquetada en formato propietario `.starlight.gguf` para el motor de inferencia Starlight, derivada a su vez de la cuantización GSQ-RCO de ISTA-DASLab. El archivo reduce los expertos enrutados de las 48 capas principales a bloques trellis-coded TQ2_T de 2,125 bits por peso, con un tamaño final de 54,68 GiB.
+Qwen3.8-Flash-Next-iq3_xxs_turbo-Starlight es una cuantizacion de un modelo de lenguaje de tipo mezcla de expertos (MoE) derivada de Qwen/Qwen3.8-Flash-Next, publicada por el usuario feverdoingwork. No es un checkpoint en safetensors ni un GGUF estandar: es un fichero empaquetado especificamente para el motor de inferencia Starlight, con extension `.starlight.gguf`, y el autor advierte explicitamente de que no esta soportado ni probado en llama.cpp, Ollama, LM Studio ni Transformers. El modelo base tiene 179.023.045.248 parametros totales, 48 capas y 512 expertos por capa con 10 expertos activos por token.
 
-La relevancia de esta ficha es doble. Por un lado, documenta una técnica de compresión poco habitual (codificación trellis aplicada a expertos MoE) que permite ejecutar un modelo de ~179.000 millones de parámetros totales en una única tarjeta de 16 GB, a costa de una pérdida medible de fidelidad respecto a BF16. Por otro, advierte de que el artefacto solo funciona con el motor Starlight: no es compatible con Transformers, llama.cpp, Ollama ni LM Studio.
+La aportacion principal de esta version es la compresion agresiva: los expertos enrutados de las 48 capas principales se sustituyen por expertos con codificacion trellis de 2 bits (TQ2_T, 2,125 bits por peso), lo que reduce el fichero a 54,68 GiB (29,88 GiB de expertos frente a 39,98 GiB en la variante `iq3_s_turbo`). Esto libera unos 10 GiB de RAM y memoria de tarjeta grafica, a cambio de una perdida medible de calidad (KLD de 0,310 frente a BF16, con un 83,56 % de coincidencia top-1). Incluye la cabeza de prediccion multi-token (MTP) para decodificacion especulativa y un vocabulario podado de 248.320 a 141.312 tokens.
 
-El modelo base emplea 48 capas, 512 expertos por capa y 10 expertos activos por token, e incorpora una cabeza de predicción multi-token (MTP) incluida dentro del propio archivo. El vocabulario se ha podado de 248.320 a 141.312 entradas.
+Es relevante porque demuestra que un MoE de 179.000 millones de parametros puede ejecutarse en una unica tarjeta de 16 GB (AMD RX 9070 XT o NVIDIA RTX 5070 Ti, segun las mediciones del autor), con ventanas de contexto de hasta 245.760 tokens en la RX 9070 XT. La licencia es Qwen Community License 1.0, con restricciones adicionales de uso comercial que deben revisarse antes de produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE con atención lineal en parte de las capas; 48 capas, 512 expertos por capa, 10 activos por token |
+| Arquitectura | Transformer MoE con atencion lineal hibrida (48 capas, 512 expertos por capa, 10 activos por token), cabeza MTP |
 | Parametros totales | 179.023.045.248 |
-| Parametros activos | no disponible (10 de 512 expertos por token; el numero exacto no se publica) |
-| Longitud de contexto | 245.760 tokens en RX 9070 XT; 131.072 tokens en RTX 5070 Ti (medidos con caché de atención q4 y MTP) |
-| Tipos de cuantizacion | Expertos enrutados TQ2_T (2,125 bits/peso); tabla de tokens por capa en IQ4_XS e IQ2_S (3,41 bits/peso); atención y router a 6,58 bits/peso; embeddings a 5,41 bits/peso; cabeza MTP con expertos IQ3_S e IQ4_NL |
+| Parametros activos | no disponible (el autor no publica el recuento activo exacto) |
+| Longitud de contexto | hasta 245.760 tokens en RX 9070 XT; hasta 131.072 tokens en RTX 5070 Ti (medido por el autor) |
+| Tipos de cuantizacion | iq3_xxs_turbo (TQ2_T trellis 2,125 bits/peso en expertos; IQ4_XS e IQ2_S en tabla de tokens; IQ3_S e IQ4_NL en bloque MTP; 6,58 bits/peso en atencion y router) |
 | Idiomas soportados | no disponible |
 | Licencia | Qwen Community License 1.0 (etiquetada como `other` en Hugging Face) |
-| Formato de pesos | GGUF con extensiones Starlight (`.starlight.gguf`); no compatible con safetensors ni con GGUF estándar de llama.cpp |
+| Formato de pesos | GGUF con extensiones Starlight (`.starlight.gguf`), fichero unico de 58.714.951.456 bytes (54,68 GiB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-Flash-Next es un transformer MoE con 48 capas, 512 expertos por capa y 10 expertos activos por token. Según el repositorio oficial de Qwen, la versión 3.8 introduce mejoras sistemáticas en cuatro frentes: atención, residuales, embeddings y optimización del entrenamiento, con el objetivo de mejorar capacidad y estabilidad reduciendo coste computacional. La ficha del autor menciona capas de atención lineal junto a las de atención estándar, aunque no detalla su distribución.
+El modelo base Qwen3.8-Flash-Next es un transformer de mezcla de expertos con 48 capas, 512 expertos por capa y 10 expertos activos por token. La cuantizacion conserva la atencion completa y la atencion lineal, el experto compartido, el router y el resto de componentes a 6,58 bits por peso (2,83 GiB), mientras que los expertos enrutados de las capas principales se recomprimen a bloques TQ2_T de 2,125 bits por peso. La tabla de tokens por capa (20,30 GiB, IQ4_XS e IQ2_S a 3,41 bits/peso) es una estructura de consulta con una fila por token que se lee bajo demanda y puede residir en RAM del sistema o en disco, de modo que solo la parte "GPU side" (34,38 GiB, fichero menos la tabla) debe caber simultaneamente en tarjeta y RAM.
 
-Este repositorio no entrena nada: es una cuantización de una cuantización. El punto de partida es el archivo GSQ-RCO de ISTA-DASLab, sobre el que se sustituyen los expertos enrutados de las 48 capas principales por bloques trellis-coded TQ2_T de 2,125 bits por peso, reduciendo esa parte de 40,0 GiB a 29,9 GiB. La tabla de tokens por capa (una fila por token, leída bajo demanda desde RAM o disco) ocupa 20,30 GiB y es la que permite que el lado GPU del archivo baje a 34,38 GiB. El vocabulario se poda eliminando 107.172 tokens, conservando el texto original de cada token restante. La cabeza MTP para decodificación especulativa va incluida en el archivo. No se dispone de información sobre el dataset de entrenamiento del modelo base, el número de tokens vistos ni si hubo RLHF o DPO.
+El autor no documenta el proceso de entrenamiento del modelo base (numero de tokens, composicion del dataset, RLHF/DPO) en la informacion disponible. La innovacion tecnica destacable es doble: por un lado, la codificacion trellis de los expertos, que el autor etiqueta como clase `iq3_xxs_turbo` pese a no usar bloques IQ3_XXS reales; por otro, la inclusion de la cabeza de prediccion multi-token (MTP) dentro del fichero, que habilita decodificacion especulativa con 3 tokens de borrador en las mediciones publicadas. El vocabulario se poda de 248.320 a 141.312 tokens (141.148 reales y 164 de relleno), eliminando 107.172 tokens del modelo sin alterar el texto de los conservados.
 
 ## Capacidades
 
-- Generación de texto conversacional y de formato largo, con ventanas de contexto que superan los 245.000 tokens en hardware AMD de 16 GB.
-- Razonamiento multi-turno: en las pruebas del autor, un prompt de 236.286 tokens se respondió correctamente (los tres códigos plantados) y el turno de seguimiento se resolvió en 0,8 s.
-- Decodificación especulativa mediante la cabeza MTP integrada (3 tokens de borrador en las mediciones publicadas).
-- Recuperación de información en contextos muy largos, validada con pruebas de aguja en pajar sobre prompts de más de 124.000 tokens.
-- Generación de código y matemáticas: capacidad heredada del modelo base, aunque no se publican evaluaciones específicas para esta cuantización.
-- Tool calling y comportamiento de agente: no disponible en la información proporcionada para esta variante concreta.
-- Capacidades multilingües: no disponibles; el vocabulario podado puede afectar de forma desigual a idiomas distintos del inglés.
-- Modo thinking, visión o audio: no disponible.
+- Generacion de texto conversacional y continuacion de contexto largo, con ventanas de hasta 245.760 tokens en hardware AMD de 16 GB.
+- Razonamiento multi-turno: el autor documenta una lectura de prompt de 236.286 tokens respondida correctamente en 68 s y un turno de seguimiento en 0,8 s.
+- Decodificacion especulativa mediante la cabeza MTP integrada (3 tokens de borrador en las pruebas publicadas).
+- Procesamiento de prompts de gran longitud con recuperacion de informacion plantada (el autor verifica "all three planted codes" en sus pruebas).
+- Capacidades multilingues: no disponible en la informacion proporcionada.
+- Tool calling, function calling, agentes y modo thinking: no documentados en la informacion disponible.
+- Vision y audio: no disponibles; el fichero contiene solo el modelo de texto, la cabeza MTP y el vocabulario podado.
 
 ## Casos de uso
 
-- Análisis de repositorios completos en una sola pasada: con 245.760 tokens de contexto en una RX 9070 XT, se puede cargar un monorepo mediano o un conjunto de archivos de configuración y documentación y pedir un resumen arquitectónico o la detección de dependencias circulares sin trocear el contenido.
-- Auditoría de contratos y documentación legal: la ventana larga permite procesar expedientes completos y hacer preguntas de seguimiento encadenadas; el turno de seguimiento medido en 0,8 s hace viable la conversación interactiva sobre el mismo documento.
-- Asistente de soporte técnico con base de conocimiento extensa: se puede inyectar un manual de producto de decenas de miles de tokens y mantener conversaciones multi-turno sin reindexado, útil en entornos con una sola GPU de 16 GB.
-- Procesamiento por lotes en estaciones de trabajo con GPU de consumo: al caber en una RTX 5070 Ti o una RX 9070 XT, permite desplegar tareas de resumen, extracción de entidades y clasificación sobre corpus largos sin acceso a clúster.
-- Investigación sobre cuantización extrema: sirve como artefacto de referencia para estudiar el impacto de la codificación trellis en expertos MoE, comparando KLD, top-1 y perplejidad frente a las referencias IQ3_S e IQ3_XXS de ISTA-DASLab.
-- Prototipado de agentes con contexto masivo en hardware único: la combinación de MTP y ventana larga permite experimentar con bucles de razonamiento multi-paso sobre trazas extensas, aunque la ausencia de soporte de tool calling documentado limita la integración con APIs externas.
-- Evaluación comparativa de motores de inferencia: útil para medir latencia y throughput de Starlight frente a otras soluciones, con la advertencia de que el archivo no es portable a otros motores.
+- Analisis de documentos extensos en una sola tarjeta de 16 GB: con 245.760 tokens de contexto en RX 9070 XT, el modelo puede ingerir contratos, informes o bases de codigo completas sin fragmentacion ni recuperacion externa, y responder preguntas de seguimiento en menos de un segundo.
+- Asistencia conversacional de contexto largo: la ventana de 131.072 tokens en RTX 5070 Ti permite mantener historiales de conversacion muy extensos con latencia de turno de 0,8 s, adecuado para atencion al cliente tecnica o soporte especializado.
+- Procesamiento por lotes en estaciones de trabajo con GPU consumer: el fichero de 54,68 GiB y la tabla de tokens en RAM permiten desplegar un MoE de 179.000 millones de parametros en un solo equipo AMD RX 9070 XT o NVIDIA RTX 5070 Ti, sin necesidad de servidores multi-GPU.
+- Investigacion sobre cuantizacion extrema: sirve como referencia practica para estudiar el compromiso entre KLD, perplejidad y coincidencia top-1 en expertos codificados con trellis a 2,125 bits/peso, comparandolo con las referencias IQ3_S e IQ3_XXS de ISTA-DASLab.
+- Generacion de codigo y texto tecnico en entornos con memoria limitada: el modelo conserva atencion y router a 6,58 bits/peso, lo que preserva la calidad en las componentes criticas mientras comprime los expertos, util para pipelines de generacion en equipos de desarrollo con una sola GPU.
+- Evaluacion comparativa de motores de inferencia: al estar empaquetado exclusivamente para Starlight, permite medir el rendimiento del motor (throughput, latencia de lectura de prompt) frente a otras implementaciones en el mismo hardware.
+- Despliegue en entornos con RAM de sistema amplia y GPU modesta: la separacion entre "GPU side" (34,38 GiB) y tabla de tokens en RAM o disco permite configuraciones con 46 GiB de RAM bloqueada y toda la cache en tarjeta, segun las mediciones del autor.
 
 ## Benchmarks y rendimiento
 
-El autor publica métricas de fidelidad frente a los logits BF16 de referencia del modelo base (12 casos de texto, 16.561 posiciones evaluadas, motor Starlight sobre RTX 5070 Ti, 2 de noviembre de 2026):
+Calidad medida por el proyecto Starlight contra los logits BF16 de referencia del modelo base (12 casos de texto, 16.561 posiciones puntuadas, motor Starlight en RTX 5070 Ti, 2 de noviembre de 2026):
 
-| # | Archivo | KLD a BF16 | Top-1 igual a BF16 | Perplejidad (BF16: 3,126) | Tamano total (GiB) |
+| # | Fichero | KLD a BF16 | Top-1 igual a BF16 | Perplejidad (BF16: 3,126) | Tamano total (GiB) |
 |--:|---|--:|--:|--:|--:|
 | 1 | ISTA-DASLab GSQ-RCO IQ3_S (referencia) | 0,193 | 86,71 % | 3,463 | 77,88 |
 | 2 | `iq3_s_turbo` | 0,257 | 84,08 % | 3,593 | 64,78 |
 | 3 | ISTA-DASLab GSQ-RCO IQ3_XXS (referencia) | 0,276 | 84,05 % | 3,657 | 70,63 |
-| 4 | `iq3_xxs_turbo` (este repo) | 0,310 | 83,56 % | 3,566 | 54,68 |
+| 4 | `iq3_xxs_turbo` (este modelo) | 0,310 | 83,56 % | 3,566 | 54,68 |
 | 5 | `iq3_xxs_turbo_mini` | 0,318 | 83,78 % | 3,508 | 50,03 |
 
-Rendimiento medido (RX 9070 XT, 2 de noviembre de 2026, build temprana del motor):
-
-| Metrica | `iq3_s_turbo` | `iq3_xxs_turbo` |
-|---|--:|--:|
-| Decodificacion (tokens/s) | 59,6 | 56,4 |
-| Lectura de prompt | referencia | ~10 % mas lenta |
-| RAM para expertos | 40,0 GiB | 29,9 GiB |
-
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+Rendimiento de decodificacion medido en RX 9070 XT (2 de noviembre de 2026, build temprana del motor): `iq3_xxs_turbo` decodifica a 56,4 tokens por segundo frente a 59,6 de `iq3_s_turbo`, y lee prompts aproximadamente un 10 % mas lento, con 10 GiB menos de RAM para los expertos. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM: el lado GPU del archivo son 34,38 GiB; el resto (tabla de tokens por capa, 20,30 GiB) reside en RAM del sistema o en disco y se lee bajo demanda. En las pruebas se bloquearon 46 GiB de RAM.
-- GPU validadas: AMD RX 9070 XT (16 GB) con contexto de 245.760 tokens y NVIDIA RTX 5070 Ti (16 GB) con contexto de 131.072 tokens.
-- GPU de gama alta (A100, H100): no se han publicado mediciones; el modelo cabe holgadamente, pero el motor Starlight es el único soportado.
-- GPU de consumo: sí cabe en tarjetas de 16 GB del segmento mencionado, siempre que se disponga de al menos 46 GiB de RAM libre para la tabla de tokens.
-- Opciones de despliegue: exclusivamente el motor Starlight con su launcher. No es compatible con vLLM, llama.cpp, Ollama, LM Studio, TGI ni Transformers.
-- Latencia y throughput: 56,4 tokens/s de decodificación en RX 9070 XT; lectura de un prompt de 236.286 tokens en 68 s (RX 9070 XT) y de 124.678 tokens en 32 s (RTX 5070 Ti); turnos de seguimiento en 0,8 s en ambos casos.
-- Configuración de caché: caché de atención q4 con la totalidad de la caché en la tarjeta y MTP con 3 tokens de borrador.
+- VRAM/tarjeta: el fichero completo ocupa 54,68 GiB, pero la parte que debe residir en GPU y RAM simultaneamente ("GPU side") es de 34,38 GiB; la tabla de tokens por capa (20,30 GiB) puede quedar en RAM del sistema o en disco.
+- RAM de sistema: el autor midio con 46 GiB de RAM bloqueada y toda la cache en tarjeta.
+- GPU verificadas por el autor: AMD RX 9070 XT (16 GB) con contexto de 245.760 tokens y NVIDIA RTX 5070 Ti (16 GB) con contexto de 131.072 tokens.
+- Cabe en GPU consumer de 16 GB, pero solo con el motor Starlight y con la tabla de tokens fuera de la tarjeta; no es un fichero para llama.cpp, Ollama, LM Studio ni TGI.
+- Opciones de despliegue: exclusivamente el motor Starlight (libreria `starlight`, `inference: false` en Hugging Face). El autor declara que otros programas no estan soportados ni probados.
+- Latencia y throughput medidos: 56,4 tokens/s de decodificacion en RX 9070 XT; lectura de un prompt de 236.286 tokens en 68 s en RX 9070 XT y de 124.678 tokens en 32 s en RTX 5070 Ti; turno de seguimiento en 0,8 s en ambos casos.
+- Cache de atencion: el autor uso cache q4 de atencion para las mediciones de contexto.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | KLD a BF16 | Top-1 | Tamano | Licencia | Motor |
-|---|---|--:|--:|--:|--:|---|---|
-| Este repo (`iq3_xxs_turbo`) | 179,0 B totales, MoE | 245.760 (RX 9070 XT) | 0,310 | 83,56 % | 54,68 GiB | Qwen Community 1.0 | Starlight |
-| `iq3_s_turbo` (mismo autor) | 179,0 B totales, MoE | no disponible | 0,257 | 84,08 % | 64,78 GiB | Qwen Community 1.0 | Starlight |
-| ISTA-DASLab GSQ-RCO IQ3_S | 179,0 B totales, MoE | no disponible | 0,193 | 86,71 % | 77,88 GiB | no disponible | llama.cpp u otros compatibles con GGUF |
-| ISTA-DASLab GSQ-RCO IQ3_XXS | 179,0 B totales, MoE | no disponible | 0,276 | 84,05 % | 70,63 GiB | no disponible | llama.cpp u otros compatibles con GGUF |
+| Modelo | Parametros | Contexto | Calidad (KLD a BF16) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| `iq3_xxs_turbo` (este) | 179.023.045.248 (MoE, 10 activos) | 245.760 tokens (RX 9070 XT) | 0,310 KLD / 83,56 % top-1 | Qwen Community 1.0 | Solo motor Starlight, 54,68 GiB |
+| `iq3_s_turbo` (misma familia) | 179.023.045.248 (MoE) | no disponible | 0,257 KLD / 84,08 % top-1 | Qwen Community 1.0 | Solo Starlight, 64,78 GiB |
+| `iq3_xxs_turbo_mini` (misma familia) | 179.023.045.248 (MoE) | no disponible | 0,318 KLD / 83,78 % top-1 | Qwen Community 1.0 | Solo Starlight, 50,03 GiB |
+| ISTA-DASLab GSQ-RCO IQ3_S | 179.023.045.248 (MoE) | no disponible | 0,193 KLD / 86,71 % top-1 | no disponible | GGUF de referencia, 77,88 GiB |
+| ISTA-DASLab GSQ-RCO IQ3_XXS | 179.023.045.248 (MoE) | no disponible | 0,276 KLD / 84,05 % top-1 | no disponible | GGUF de referencia, 70,63 GiB |
 
-La comparación con modelos de otros fabricantes (Llama, Mistral, DeepSeek) no está disponible en la información proporcionada.
+La comparacion con modelos de otros desarrolladores (por ejemplo, alternativas MoE de tamano similar) no esta disponible en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Compatibilidad restringida: el archivo solo funciona con el motor Starlight. Cualquier intento de cargarlo en llama.cpp, Ollama, LM Studio, vLLM o Transformers fallará o no está soportado.
-- Pérdida de calidad medible: KLD de 0,310 frente a BF16, un 60 % superior al de la referencia IQ3_S de ISTA-DASLab, con una caída de 3,15 puntos en top-1. La perplejidad, en cambio, es ligeramente mejor que la de esa referencia.
-- Cuantización de 2,125 bits por peso en los expertos: es un régimen agresivo que puede degradar tareas sensibles a matices, como razonamiento matemático fino o generación de código con APIs poco frecuentes.
-- Vocabulario podado: se eliminan 107.172 tokens de 248.320. Aunque el autor afirma que los tokens conservados mantienen su texto original, la cobertura de idiomas distintos del inglés y de scripts minoritarios puede verse afectada; no se publican evaluaciones multilingües.
-- Riesgo de alucinación: no se han publicado evaluaciones de veracidad para esta variante; la compresión extrema tiende a incrementar la confianza en respuestas incorrectas.
-- Sesgos: no disponibles. No hay documentación sobre sesgos del modelo base ni sobre cómo la cuantización los modifica.
-- Requisito de memoria del sistema: además de la VRAM, hacen falta unos 46 GiB de RAM para la tabla de tokens; en equipos con menos memoria el rendimiento se degradará por lectura desde disco.
-- Licencia: Qwen Community License 1.0, con posibles restricciones para uso comercial según los términos del modelo base; conviene revisar el archivo LICENSE del repositorio antes de desplegar en producción.
-- Repositorio sin tracción: 0 descargas y 0 likes en el momento de la consulta, creado y actualizado el 8 de noviembre de 2026. No hay garantía de mantenimiento ni de soporte.
-- Build temprana del motor: las cifras de rendimiento proceden de una versión preliminar de Starlight; pueden variar en versiones posteriores.
+- Perdida de calidad medible: KLD de 0,310 frente a BF16 y 83,56 % de coincidencia top-1, por detras de las referencias IQ3_S (0,193 / 86,71 %) e IQ3_XXS (0,276 / 84,05 %) de ISTA-DASLab.
+- Compatibilidad restringida: el fichero solo funciona con el motor Starlight; no es compatible con llama.cpp, Ollama, LM Studio, Transformers ni TGI, y el autor no da soporte a otros programas.
+- Licencia Qwen Community License 1.0: incluye restricciones de uso comercial que deben revisarse antes de produccion; el campo de Hugging Face figura como `other`.
+- Idiomas soportados no documentados: no hay informacion sobre cobertura multilingue ni sobre el comportamiento en castellano.
+- Riesgo de alucinacion: no cuantificado por el autor; la compresion a 2,125 bits/peso en los expertos puede amplificar errores en tareas de conocimiento factual.
+- Vocabulario podado: 107.172 tokens eliminados del original; los textos de los tokens conservados no cambian, pero cualquier flujo que dependa de IDs de tokens del vocabulario original puede romperse.
+- Contexto dependiente del hardware: 245.760 tokens solo en RX 9070 XT; en RTX 5070 Ti se reduce a 131.072 tokens.
+- Requisito de RAM: 46 GiB bloqueados en las mediciones del autor; configuraciones con menos RAM pueden requerir mantener la tabla de tokens en disco, con impacto en latencia.
+- Build temprana del motor: las cifras de throughput (56,4 tokens/s) proceden de una version temprana de Starlight y pueden variar con versiones posteriores.
+- Sin datos de entrenamiento publicados: no se documentan tokens de entrenamiento, composicion del dataset ni proceso de alineacion (RLHF/DPO) del modelo base.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/feverdoingwork/Qwen3.8-Flash-Next-iq3_xxs_turbo-Starlight
+- Hugging Face: https://huggingface.co/feverdoingwork/Qwen3.8-Flash-Next-iq3_xxs_turbo-Starlight
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Cuantización de origen (ISTA-DASLab GSQ-RCO): https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF
-- Repositorio oficial de Qwen3.8-Flash-Next en GitHub: https://github.com/QwenLM/Qwen3.8-Flash-Next/
-- Logits de referencia BF16: https://huggingface.co/datasets/jyohukuchan/qwen38-flash-next-bf16-logits
-- Variante comunitaria relacionada (RVN-Qwen3.8-Flash-Next-Abliterated-Uncensored-IQ3_S-Strata): https://huggingface.co/jimmy31chen/RVN-Qwen3.8-Flash-Next-Abliterated-Uncensored-IQ3_S-Strata/tree/main
+- Cuantizacion de referencia ISTA-DASLab: https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF
+- Logits BF16 de referencia: https://huggingface.co/datasets/jyohukuchan/qwen38-flash-next-bf16-logits
+- Licencia: LICENSE (incluida en el repositorio de Hugging Face)

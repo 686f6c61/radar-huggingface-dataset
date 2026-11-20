@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 1188,
+  "downloads_30d": 1271,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -51,16 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "taobao-mnn/MNN-Pocket-0.3B · Hugging Face",
-      "url": "https://huggingface.co/taobao-mnn/MNN-Pocket-0.3B",
-      "snippet": "MNN-Pocket-0.3B is intended for on-device assistants, data extraction, and lightweight agentic pipelines. Like other sub-billion-parameter models, it is not recommended for reasoning-heavy workloads such as advanced mathematics or long-horizon code generation."
-    },
-    {
-      "title": "liodon-ai/MNN-Pocket-0.3B-FP8 · Hugging Face",
-      "url": "https://huggingface.co/liodon-ai/MNN-Pocket-0.3B-FP8",
-      "snippet": "liodon-ai / MNN-Pocket-0.3B-FP8 Like 0 Follow Liodon AI 29 Text Generation Transformers Safetensors qwen3 fp8 compressed-tensors vllm quantized conversational text-generation-inference License:other Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
-    }
-  ]
+  "sources": []
 }

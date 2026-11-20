@@ -2,151 +2,119 @@
 
 ## Resumen
 
-thalovant/thalovant-m2v-intents es un clasificador de intenciones construido sobre embeddings estáticos de la familia Model2Vec y publicado por el autor thalovant para el hub Thalovant. Su función es mapear un enunciado de usuario a una de 133 etiquetas con el formato `<skill_id>:<intent>`, exactamente como las registra `ovos-m2v-pipeline`. No es un modelo generativo: no produce texto, únicamente asigna una etiqueta a una frase de entrada.
+Thalovant-m2v-intents es un clasificador estático de intenciones desarrollado por el usuario thalovant para el ecosistema Thalovant, un hub de habilidades (skills) construido sobre OVOS (Open Voice OS). El modelo recibe una frase de usuario y la asigna a una de las 359 etiquetas con formato `<skill_id>:<intent>`, tal y como las registra el pipeline `ovos-m2v-pipeline`. No es un modelo generativo: es un cabezal de clasificación sobre embeddings estáticos, pensado para enrutar peticiones de voz o texto hacia la habilidad correcta dentro de una flota de asistentes.
 
-El modelo parte de Jarbas/m2v-256-distiluse-base-multilingual-cased-v2, un modelo de embeddings estáticos de 256 dimensiones, y se afina con el entrenador de clasificadores de la librería model2vec. Cuenta con 30.577.920 parámetros y alcanza una exactitud de 0,8052 sobre un conjunto de validación de 9.943 filas repartidas en 48 idiomas y 21 skills. El corpus de entrenamiento se generó el 2026-09-12.
+Técnicamente se apoya en Model2Vec, una técnica que destila un transformer de frases en una tabla de embeddings estáticos y sustituye la inferencia neuronal por una búsqueda de similitud. El modelo base es `Jarbas/m2v-256-distiluse-base-multilingual-cased-v2`, un modelo2vec de 256 dimensiones derivado de `distiluse-base-multilingual-cased-v2`, y se ha afinado con el entrenador de clasificadores de Model2Vec. El resultado son 30.577.920 parámetros reales en safetensors, un repositorio de 14,6 GB (que incluye corpus e índices auxiliares) y una licencia Apache 2.0.
 
-Su interés técnico radica en el coste de inferencia: al no incluir capas transformer ni mecanismos de atención, el cálculo se reduce a una búsqueda en la matriz de embeddings más una operación de pooling y una cabeza de clasificación. Esto permite ejecutarlo íntegramente en CPU, algo relevante para asistentes de voz y sistemas de enrutado de intenciones que necesitan decidir a qué skill derivar una petición sin depender de GPU ni de APIs externas.
+Su relevancia actual radica en la eficiencia: al no requerir forward pass de transformer en tiempo de inferencia, permite clasificar intenciones en CPU con latencias muy bajas y sin GPU, algo crítico en asistentes domésticos desplegados en hardware modesto. Además, el modelo viene acompañado de un corpus de 506.823 filas de entrenamiento y 551.736 entradas indexadas, con métricas desglosadas por 68 variantes lingüísticas, lo que lo convierte en una pieza poco habitual por su trazabilidad de evaluación multilingüe.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Embeddings estáticos (Model2Vec) con vocabulario de 119.445 entradas y dimensión 256; sin capas de atención ni bloques transformer. Cabeza de clasificación entrenada con el trainer de clasificadores de model2vec |
+| Arquitectura | Model2Vec (embeddings estáticos destilados de un transformer) con cabezal de clasificación |
 | Parámetros totales | 30.577.920 |
-| Parámetros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible (modelo de utterance; no existe ventana de contexto autorregresiva) |
-| Tipos de cuantización | no disponible (se distribuyen pesos en safetensors; no se documentan variantes GGUF, AWQ, GPTQ ni cuantizaciones de 8 o 4 bits) |
-| Idiomas soportados | 48 idiomas según la model card; la tabla de evaluación desglosa 47 variantes regionales |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (clasificador de frase; sin ventana generativa declarada) |
+| Tipos de cuantización | no disponible (pesos estáticos; el formato base ya es de baja huella) |
+| Idiomas soportados | 68 variantes lingüísticas evaluadas (en, es, de, fr, pt, it, ca, gl, eu, ar, ja, ko, hi, ru, pl, tr, etc.); lista completa en la model card |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (librería model2vec) |
-| Tamaño del repositorio | 0,9 GB |
-| Descargas / likes | 388 descargas / 0 likes |
-| Pipeline declarado | text-classification |
+| Formato de pesos | safetensors (librería `model2vec`) |
+| Pipeline | text-classification |
+| Etiquetas | 359 (`<skill_id>:<intent>`) |
 | Modelo base | Jarbas/m2v-256-distiluse-base-multilingual-cased-v2 |
+| Dimensión de embedding | 256 |
+| Descargas | 1720 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un modelo de embeddings estáticos derivado de Model2Vec: cada token del vocabulario tiene un vector de 256 dimensiones y la representación de una frase se obtiene combinando esos vectores (pooling), sin que existan matrices de atención ni capas de propagación. Los 30,58 M de parámetros corresponden casi en su totalidad a la matriz de embeddings (119.445 entradas × 256 dimensiones), a los que se suma la cabeza de clasificación. El modelo base, Jarbas/m2v-256-distiluse-base-multilingual-cased-v2, es a su vez una destilación en formato estático de `distiluse-base-multilingual-cased-v2`, de ahí su cobertura multilingüe.
+El modelo sigue la arquitectura Model2Vec: en lugar de ejecutar un transformer en inferencia, utiliza una matriz de embeddings de tokens estáticos de 256 dimensiones obtenida por destilación del modelo `distiluse-base-multilingual-cased-v2`. La representación de una frase se calcula agregando los embeddings de sus tokens y el clasificador opera sobre ese vector. Esto elimina el coste de atención y permite inferencia en CPU con un coste computacional prácticamente lineal en el número de tokens.
 
-El ajuste se realizó con el entrenador de clasificadores de model2vec sobre el corpus de la flota Thalovant, construido el 2026-09-12T02:37:35Z y que cubre 21 skills. El modelo conoce exclusivamente las etiquetas de ese corpus: cada una de las 133 clases procede de las skills de Thalovant y de ningún otro origen. El repositorio incluye `labels.json`, con la lista de etiquetas a las que el hub puede enrutar, e `index.json`, que identifica cada frase del corpus de entrenamiento mediante un digest de su idioma y su texto junto con las etiquetas que la publican. No se documenta en la información disponible el uso de RLHF, DPO ni ninguna otra fase de alineación, algo coherente con un clasificador discriminativo.
+El entrenamiento se realizó con el entrenador de clasificadores de Model2Vec sobre un corpus propio de la flota Thalovant. El conjunto completo contiene 506.823 filas, con un máximo de 512 frases por etiqueta e idioma; el índice `index.json` conserva las 551.736 entradas totales. La evaluación se hizo sobre 97.077 filas retenidas, garantizando que ni el texto ni la línea de intención aparecían en las 409.746 filas usadas para entrenar un modelo de evaluación. Los pesos publicados se reentrenaron con la misma receta sobre todas las filas. No se documenta uso de RLHF ni DPO; se trata de aprendizaje supervisado de clasificación. Un detalle técnico destacable es la incorporación de umbrales por idioma en `training.json` para mantener la tasa de falsos avisos por debajo del 1 % en lenguas como estonio (0,97), euskera (0,94), húngaro (0,94), japonés (0,97), polaco (0,92), esloveno (0,94) y turco (0,94).
 
 ## Capacidades
 
-- Clasificación de intenciones multi-clase cerrada: asigna una de 133 etiquetas con formato `<skill_id>:<intent>` a un enunciado de entrada.
-- Cobertura multilingüe: 48 idiomas declarados, con variantes regionales como `an-ES`, `ast-ES`, `gl-ES`, `oc-FR`, `sv-FI`, `pt-BR` y `pt-PT`.
-- Inferencia en CPU: al prescindir de capas transformer, no requiere GPU ni aceleradores especializados.
-- Integración con el ecosistema OVOS: se configura como pipeline con `"mode": "classifier"` y la ruta del modelo.
-- Distribución de etiquetas en `labels.json`, consumible por el hub para decidir el enrutado.
-- Trazabilidad de corpus mediante `index.json`: permite detectar frases duplicadas entre skills y consultar la clasificación del resto sin sacar las frases de sus repositorios privados.
-- No soporta generación de texto, razonamiento multi-paso, tool calling, function calling, uso como agente, visión, audio ni modo de pensamiento. Es un clasificador de utterance y su salida se limita a una etiqueta.
+- Clasificación de intenciones en una de 359 etiquetas con formato `<skill_id>:<intent>`, alineadas con el registro de `ovos-m2v-pipeline`.
+- Enrutamiento de frases de usuario hacia habilidades de la flota Thalovant (skills, pipelines de persona y lectura, wikihow).
+- Clasificación multilingüe en 68 variantes lingüísticas, con precisión de intención del 91,7 % global y de skill del 96,4 %.
+- Inferencia sobre embeddings estáticos, sin forward pass de transformer, apta para CPU.
+- Integración con `thalovant-skillkit check` para detectar colisiones de frases entre skills mediante el índice `index.json`.
+- No soporta generación de texto, tool calling, razonamiento multi-paso ni capacidades de visión o audio.
+- No dispone de etiqueta de rechazo ("none of these"): toda frase se asigna a la skill más cercana, a menudo con alta confianza.
 
 ## Casos de uso
 
-- Enrutado de intenciones en asistentes de voz OVOS: el pipeline recibe la transcripción del usuario y devuelve la etiqueta `<skill_id>:<intent>` que determina qué skill debe atender la petición. Es adecuado porque trabaja a nivel de utterance y admite las 21 skills de la flota sin lógica adicional.
-- Control de calidad en CI/CD de skills: la herramienta `thalovant-skillkit check` usa `index.json` para fallar una skill que publica una frase que otra ya posee, y consulta a este clasificador qué opina del resto de frases sin que estas abandonen sus repositorios privados.
-- Detección de colisiones de ownership entre skills: las confusiones documentadas (por ejemplo, `thalovant-skill-weather.thalovant:temperature.weather` leída como `thalovant-skill-local-pulse.thalovant:local.pulse` en 33 casos) sirven como señal para que la flota resuelva solapamientos de vocabulario entre skills.
-- Triaje previo de bajo coste antes de un LLM: en arquitecturas con un modelo generativo detrás, este clasificador puede descartar o redirigir peticiones triviales antes de invocar el modelo grande, reduciendo coste y latencia por petición.
-- Clasificación de consultas multilingües en despliegues sin GPU: al ejecutarse en CPU y ocupar del orden de 122 MB en fp32, es viable en servidores modestos, contenedores pequeños o dispositivos de borde que atienden usuarios en varios idiomas.
-- Etiquetado retroactivo de logs de interacción: aplicar el clasificador al histórico de utterances permite etiquetar conversaciones ya registradas y priorizar el desarrollo de nuevas skills según la frecuencia de cada intención.
-- Filtrado y normalización de corpus de entrenamiento: antes de ampliar el corpus de una skill, el clasificador permite comprobar qué frases candidatas se asignarían a intenciones ya existentes en lugar de a la nueva.
+- Enrutamiento de intenciones en asistentes de voz domésticos: el modelo clasifica la transcripción del usuario y la dirige a la skill adecuada; al ser estático, funciona en Raspberry Pi o mini-PC sin GPU, con latencia mínima.
+- Detección de colisiones entre habilidades en un hub OVOS: `thalovant-skillkit check` usa `index.json` y el clasificador para fallar una skill que publica una frase ya reclamada por otra, sin sacar las frases de sus repositorios privados.
+- Clasificación multilingüe en producción: con precisión superior al 90 % en es-ES (97,0 % intención, 98,0 % skill), fr-FR (94,0 % / 97,7 %) y de-DE (93,6 % / 97,3 %), sirve para asistentes con base de usuarios europea.
+- Prefiltrado barato en pipelines híbridos: usar el clasificador estático como primera etapa y reservar un LLM generativo para los casos con confianza baja o umbral superado.
+- Etiquetado y auditoría de corpus de intenciones: el índice de 551.736 frases con digest de idioma y texto permite auditar qué skill posee cada frase y detectar duplicados.
+- Despliegue en entornos con restricciones de privacidad: la inferencia es local y determinista, sin llamadas a API externas, adecuada para datos de voz domésticos.
+- Clasificación de intenciones en idiomas minoritarios: cubre catalán (94,9 % / 97,5 %), gallego (96,7 % / 97,8 %), aragonés (95,0 % / 97,2 %) y asturiano (94,1 % / 96,2 %), con rendimiento inferior en estonio (75,0 % / 84,8 %) y japonés (69,8 % / 89,3 %).
 
 ## Benchmarks y rendimiento
 
-La model card publica una exactitud agregada en conjunto de validación (*held-out*) de **0,8052** sobre 9.943 filas, 48 idiomas y 21 skills. El desglose por idioma es el siguiente:
+Evaluación sobre 97.077 filas retenidas, con 68 variantes lingüísticas. Precisión global: 91,7 % de intención y 96,4 % de skill. Mediana por idioma: 90,5 % de intención; 8 idiomas por debajo del 80 %.
 
-| Idioma | Filas | Exactitud |
-|---|---:|---:|
-| `an-ES` | 211 | 0,9431 |
-| `ar-SA` | 208 | 0,7212 |
-| `ast-ES` | 207 | 0,9324 |
-| `az-AZ` | 220 | 0,7636 |
-| `bg-BG` | 209 | 0,8278 |
-| `ca-ES` | 250 | 0,8720 |
-| `cs-CZ` | 213 | 0,8028 |
-| `da-DK` | 220 | 0,8273 |
-| `de-DE` | 240 | 0,7958 |
-| `el-GR` | 199 | 0,6935 |
-| `en-US` | 251 | 0,9283 |
-| `es-ES` | 231 | 0,9048 |
-| `et-EE` | 206 | 0,6845 |
-| `eu-ES` | 252 | 0,7024 |
-| `fa-IR` | 236 | 0,7203 |
-| `fi-FI` | 212 | 0,7075 |
-| `fr-FR` | 248 | 0,8710 |
-| `gl-ES` | 237 | 0,9367 |
-| `he-IL` | 183 | 0,7596 |
-| `hi-IN` | 189 | 0,7778 |
-| `hr-HR` | 204 | 0,8235 |
-| `hu-HU` | 231 | 0,6623 |
-| `id-ID` | 198 | 0,8687 |
-| `it-IT` | 214 | 0,8318 |
-| `ja-JP` | 217 | 0,7097 |
-| `ko-KR` | 205 | 0,7268 |
-| `lt-LT` | 182 | 0,7363 |
-| `lv-LV` | 218 | 0,7339 |
-| `ms-MY` | 200 | 0,8900 |
-| `nb-NO` | 206 | 0,8932 |
-| `nl-NL` | 252 | 0,8135 |
-| `oc-FR` | 216 | 0,8657 |
-| `pl-PL` | 221 | 0,7783 |
-| `pt-BR` | 225 | 0,9556 |
-| `pt-PT` | 212 | 0,9481 |
-| `ro-RO` | 204 | 0,8186 |
-| `ru-RU` | 210 | 0,8381 |
-| `sk-SK` | 206 | 0,8544 |
-| `sl-SI` | 207 | 0,7585 |
-| `sv-FI` | 27 | 0,9259 |
-| `sv-SE` | 232 | 0,8578 |
-| `sw-KE` | 188 | 0,7447 |
-| `th-TH` | 194 | 0,5206 |
-| `tr-TR` | 234 | 0,7863 |
-| `uk-UA` | 204 | 0,7647 |
-| `vi-VN` | 206 | 0,7670 |
-| `zh-CN` | 194 | 0,8196 |
+| Idioma | Filas | Intención | Skill | Falsos avisos | Umbral |
+|---|---:|---:|---:|---:|---:|
+| `es-ES` | 2300 | 97,0 % | 98,0 % | 0,4 % | 0,9 |
+| `es-AR` | 1777 | 97,3 % | 98,1 % | 0,3 % | 0,9 |
+| `es-MX` | 1873 | 97,3 % | 98,2 % | 0,3 % | 0,9 |
+| `ca-ES` | 3390 | 94,9 % | 97,5 % | 0,3 % | 0,9 |
+| `gl-ES` | 2763 | 96,7 % | 97,8 % | 0,2 % | 0,9 |
+| `en-US` | 3648 | 95,3 % | 98,7 % | 0,1 % | 0,9 |
+| `en-GB` | 2875 | 95,5 % | 98,9 % | 0,2 % | 0,9 |
+| `fr-FR` | 3173 | 94,0 % | 97,7 % | 0,3 % | 0,9 |
+| `de-DE` | 2775 | 93,6 % | 97,3 % | 0,4 % | 0,9 |
+| `it-IT` | 2327 | 94,2 % | 97,9 % | 0,4 % | 0,9 |
+| `pt-PT` | 3210 | 94,7 % | 97,1 % | 0,6 % | 0,9 |
+| `nl-NL` | 2185 | 93,9 % | 96,8 % | 0,4 % | 0,9 |
+| `ru-RU` | 939 | 82,8 % | 97,2 % | 0,4 % | 0,9 |
+| `ar-SA` | 677 | 81,4 % | 92,9 % | 0,9 % | 0,9 |
+| `hi-IN` | 1974 | 82,9 % | 90,5 % | 0,6 % | 0,9 |
+| `ja-JP` | 676 | 69,8 % | 89,3 % | 2,4 % | 0,97 |
+| `ko-KR` | 831 | 78,0 % | 95,0 % | 0,2 % | 0,9 |
+| `et-EE` | 507 | 75,0 % | 84,8 % | 2,4 % | 0,97 |
+| `eu-ES` | 1216 | 84,5 % | 91,5 % | 1,1 % | 0,94 |
+| `pl-PL` | 1164 | 80,1 % | 88,3 % | 1,0 % | 0,92 |
 
-El rango va de 0,5206 en `th-TH` a 0,9556 en `pt-BR`. No se han publicado en la información disponible resultados de benchmarks estándar (MMLU, GLUE, XNLI u otros) ni comparaciones cuantitativas contra otros clasificadores de intenciones.
+No se han publicado comparaciones con MMLU, HumanEval, GSM8K ni otros benchmarks generativos, por no ser aplicables a un clasificador de intenciones.
 
 ## Requisitos de hardware
 
-- Tamaño de pesos: aproximadamente 122 MB en fp32 (30.577.920 parámetros × 4 bytes) y en torno a 61 MB en fp16. El repositorio completo ocupa 0,9 GB, presumiblemente por artefactos adicionales del entrenamiento.
-- VRAM estimada para inferencia: no es necesaria GPU; el modelo puede ejecutarse en memoria principal. En caso de usar GPU, el consumo es mínimo (por debajo de 1 GB contando pesos y activaciones).
-- GPU recomendadas: no se especifican. Cualquier GPU, incluida una integrada, es suficiente; no tiene sentido reservar A100, H100 o RTX 4090 para este modelo.
-- Cabe en GPU de consumo: sí, en cualquiera, e incluso no requiere una.
-- Opciones de despliegue: la librería `model2vec` mediante `StaticModelPipeline.from_pretrained(...)`; integración con OVOS configurando el pipeline con `"mode": "classifier"`. No se documenta soporte para vLLM, TGI, llama.cpp, Ollama ni exportación a ONNX en la información disponible.
-- Latencia y throughput: no disponibles. No se publican cifras de latencia por lote ni de peticiones por segundo.
+- VRAM: no requiere GPU. Con 30,5 M de parámetros en embeddings estáticos de 256 dimensiones, el modelo ocupa del orden de decenas de MB en memoria en FP32 y menos en cuantizaciones de 8 o 16 bits.
+- GPU recomendadas: ninguna necesaria. Funciona en CPU (x86 o ARM) y en GPUs consumer (RTX 4090, RTX 3060, etc.) sin aprovechamiento relevante, ya que no hay cómputo de atención.
+- Cabe en cualquier GPU consumer y en dispositivos de borde (Raspberry Pi, mini-PC, NAS) siempre que haya memoria suficiente para el proceso Python.
+- Despliegue: librería `model2vec` con `StaticModelPipeline.from_pretrained(...)`; integración con `ovos-m2v-pipeline` configurando `"mode": "classifier"`. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- Latencia y throughput: no disponibles en la información proporcionada; por la naturaleza estática del modelo, se espera un coste de inferencia muy bajo en CPU, pero no se publican cifras.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmark comparables publicados para alternativas de la misma categoría, por lo que la comparación se limita a los datos declarados del propio modelo. La búsqueda web realizada no devolvió resultados relevantes (únicamente páginas de Microsoft y un índice de paquetes de piwheels), de modo que no hay información externa que contrastar.
-
-| Modelo | Tipo | Parámetros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
+| Modelo | Tipo | Parámetros | Contexto | Idiomas | Licencia | Enfoque |
 |---|---|---|---|---|---|---|
-| thalovant/thalovant-m2v-intents | Embeddings estáticos + cabeza de clasificación | 30.577.920 | no disponible | Exactitud 0,8052 en validación (9.943 filas, 48 idiomas) | Apache 2.0 | Hugging Face, 388 descargas, 0 likes |
-| Jarbas/m2v-256-distiluse-base-multilingual-cased-v2 | Embeddings estáticos (modelo base, sin cabeza de clasificación) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
-| Clasificadores basados en transformer afinado (XLM-R, mDeBERTa, SetFit) | Transformer encoder + cabeza de clasificación | no disponible | no disponible | no disponible | no disponible | no disponible |
+| thalovant/thalovant-m2v-intents | Model2Vec clasificador | 30,6 M | no disponible | 68 variantes | Apache 2.0 | Intenciones OVOS, 359 etiquetas |
+| Jarbas/m2v-256-distiluse-base-multilingual-cased-v2 | Model2Vec embeddings | no disponible | no disponible | multilingüe | no disponible | Embeddings de frase, sin cabezal de clasificación |
+| distiluse-base-multilingual-cased-v2 | Transformer (Sentence-BERT) | no disponible | 128 tokens (típico) | multilingüe | no disponible | Embeddings de frase, requiere forward pass |
 
-La ventaja estructural del modelo frente a un encoder transformer de tamaño comparable es el coste de inferencia (búsqueda en tabla en lugar de atención cuadrática), a cambio de una capacidad de representación menor que se refleja en las confusiones documentadas. No hay datos públicos que permitan cuantificar esa diferencia de exactitud.
+La comparativa con clasificadores de intenciones transformer (p. ej. variantes de BERT multilingüe afinadas para intent classification) no está disponible en la información proporcionada. La diferencia clave frente al modelo base es la adición del cabezal de clasificación y el corpus específico de la flota Thalovant; frente a un transformer de frases, la ventaja es la inferencia sin atención.
 
 ## Limitaciones y advertencias
 
-- Dominio cerrado: el modelo solo conoce las 133 etiquetas del corpus de la flota Thalovant, procedentes de 21 skills. Cualquier utterance fuera de ese conjunto se forzará a una de las clases existentes, con el consiguiente falso positivo.
-- Confusiones documentadas: los pares `thalovant-skill-weather` y `thalovant-skill-local-pulse` se solapan de forma sistemática (33, 32, 30, 29, 26, 24 y 22 casos en los ejemplos publicados). Es un problema de solapamiento de vocabulario entre skills, no solo del clasificador.
-- Idiomas con rendimiento bajo: `th-TH` (0,5206), `hu-HU` (0,6623), `et-EE` (0,6845), `el-GR` (0,6935), `eu-ES` (0,7024), `fa-IR` (0,7203) y `fi-FI` (0,7075) quedan claramente por debajo de la media. No se recomienda su uso en tailandés o húngaro sin evaluación propia.
-- Muestra pequeña en algunos idiomas: `sv-FI` solo aporta 27 filas de validación, por lo que su 0,9259 tiene un intervalo de confianza muy amplio y no debe extrapolarse.
-- Ausencia de evaluación fuera de dominio: no se publican métricas de generalización a utterances de usuarios reales distintas del corpus de la flota.
-- Riesgo de alucinación: no aplica en el sentido generativo, pero sí existe riesgo de etiquetado incorrecto con alta confianza aparente, ya que el modelo siempre devuelve una clase.
-- Sesgos: no se documentan análisis de sesgo demográfico, dialectal ni de género. La cobertura por variante regional es desigual (por ejemplo, hay `es-ES` pero no otras variantes del español americano).
-- Licencia: Apache 2.0 permite uso comercial del modelo, pero la licencia del modelo base y la del corpus de entrenamiento no se detallan en la información disponible y conviene verificarlas antes de un despliegue comercial.
-- Validación comunitaria escasa: 0 likes y 388 descargas en el momento de la consulta, con creación el 2026-09-08 y última actualización el 2026-09-12. Es un artefacto reciente y con poca revisión externa.
-- Dependencia del hub: el modelo está diseñado para funcionar con las etiquetas y el corpus de Thalovant; reutilizarlo en otro dominio exige reentrenar la cabeza de clasificación.
+- No existe etiqueta de rechazo: una frase sobre algo que ninguna skill hace se asigna a la skill más cercana, a menudo con confianza alta. En producción es necesario aplicar umbrales por idioma para limitar falsos avisos.
+- Rendimiento desigual por idioma: 8 idiomas por debajo del 80 % de precisión de intención, con casos críticos como japonés (69,8 %) y estonio (75,0 %). Los umbrales recomendados suben a 0,97 en ja-JP y et-EE.
+- Riesgo de colisión entre skills: el 0,5 % de las frases retenidas se asignan a otra skill con confianza ≥ 0,9; el autor recomienda `thalovant-skillkit check` para detectarlo.
+- Sesgo de dominio: el corpus proviene exclusivamente de la flota Thalovant; fuera de ese vocabulario y de esas skills, la clasificación pierde validez.
+- El repositorio ocupa 14,6 GB por incluir corpus e índices auxiliares; el modelo en sí es pequeño, pero la descarga completa es pesada.
+- Licencia Apache 2.0 permite uso comercial, pero el autor no documenta garantías sobre el corpus ni sobre los datos de entrenamiento subyacentes.
+- No apto para generación, razonamiento, código, matemáticas, visión ni audio; usarlo fuera de la clasificación de intenciones dará resultados sin sentido.
+- La fecha de creación del repositorio (2026-09-08) y la de actualización (2026-11-18) deben contrastarse con el estado real del proyecto antes de fijar una versión en producción.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/thalovant/thalovant-m2v-intents
 - Modelo base: https://huggingface.co/Jarbas/m2v-256-distiluse-base-multilingual-cased-v2
-- Archivos del repositorio citados en la model card: `labels.json` (etiquetas a las que el hub puede enrutar) e `index.json` (identificación de cada frase del corpus de entrenamiento). Disponibles dentro del repositorio del modelo.
-- Proyecto OVOS y `ovos-m2v-pipeline`: mencionados en la model card como consumidores del modelo; no se proporciona URL en la información disponible.
-- Librería model2vec: mencionada como `library_name` del modelo; no se proporciona URL en la información disponible.
-- Resultados de la búsqueda web: no se han encontrado enlaces relevantes (los resultados devueltos corresponden a páginas de Microsoft y al índice de piwheels, sin relación con el modelo).
-- No se han localizado papers, blogs técnicos ni demos asociados al modelo en la información proporcionada.
+- Model2Vec (librería y paper): https://github.com/MinishLab/model2vec
+- OVOS (Open Voice OS): https://github.com/OpenVoiceOS
+- OVOS m2v pipeline: https://github.com/OpenVoiceOS/ovos-m2v-pipeline
+- Sentence-Transformers distiluse-base-multilingual-cased-v2: https://huggingface.co/sentence-transformers/distiluse-base-multilingual-cased-v2

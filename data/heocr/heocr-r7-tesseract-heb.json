@@ -5,7 +5,7 @@
   "author": "HeOCR",
   "url": "https://huggingface.co/HeOCR/heocr-r7-tesseract-heb",
   "created_at": "2026-11-11T05:50:02.000Z",
-  "updated_at": "2026-11-11T05:50:08.000Z",
+  "updated_at": "2026-11-19T14:58:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-to-text",

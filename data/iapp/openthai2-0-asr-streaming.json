@@ -51,31 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "IAPP",
-      "url": "https://iapp.org/",
-      "snippet": "The IAPP is a policy neutral, not-for-profit association founded in 2000 with a mission to define, promote and improve the professions …"
-    },
-    {
-      "title": "Certification | IAPP",
-      "url": "https://iapp.org/certify",
-      "snippet": "The IAPP offers six distinct CIPP designation concentrations, demonstrating mastery in privacy laws, regulations and frameworks for …"
-    },
-    {
-      "title": "MyIAPP",
-      "url": "https://myiapp.org/",
-      "snippet": "Manage your IAPP account"
-    },
-    {
-      "title": "IAPP Certification Programs",
-      "url": "https://prod.iapp.org/certify/programs/",
-      "snippet": "The IAPP offers certifications that are respected and acclaimed by employers and specifically designed for professionals who …"
-    },
-    {
-      "title": "Préparation à la Certification IAPP : Gouvernance et gestion des ...",
-      "url": "https://www.avocats.ey.com/fr_fr/formations/certification-iapp-gouvernance-et-gestion-des-risques-de-l-ia",
-      "snippet": "Préparation à la Certification IAPP : Gouvernance et gestion des risques de l’intelligence artificielle EY Société d’Avocats vous …"
-    }
-  ]
+  "sources": []
 }

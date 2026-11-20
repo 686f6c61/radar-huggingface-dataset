@@ -2,95 +2,107 @@
 
 ## Resumen
 
-Shieldstral-1.0-3B es un clasificador de seguridad y moderación de contenidos desarrollado por Mistral AI, distribuido aquí en formato GGUF cuantizado por Metabaron6 para inferencia local eficiente. Con arquitectura Mistral3 de 3.400 millones de parámetros y ventana de contexto de 262.144 tokens, el modelo está diseñado para tareas de trust and safety: detección de contenido dañino, filtrado WAF, detección de CSAM y moderación multimodal (texto e imagen). Su licencia Apache-2.0 permite uso comercial sin restricciones.
+Shieldstral-1.0-3B-GGUF es la versión cuantizada en formato GGUF del modelo Shieldstral-1.0-3B desarrollado por Mistral AI, publicada por el usuario Metabaron6. Se trata de un clasificador de seguridad y moderación de contenido construido sobre la arquitectura Mistral3 con 3.429.006.336 parámetros, diseñado específicamente para tareas de trust and safety: detección de contenido dañino, filtrado de prompt injection, clasificación de material de abuso infantil (CSAM), identificación de datos personales (PII) y moderación multimodal de texto e imagen.
 
-El repositorio incluye nueve niveles de cuantización (desde BF16/F16 hasta Q3_K_M) más dos proyectores multimodales en 16-bit, con huellas de memoria que van desde ~1,6 GB hasta ~6,9 GB. El modelo soporta 12 idiomas y puede desplegarse tanto en GPU como en CPU mediante llama.cpp, con velocidades de hasta 187 tokens por segundo en GPU con cuantización Q4_K_M.
+El modelo resulta relevante porque combina una ventana de contexto de 262.144 tokens con un vocabulario de 131.072 tokens y soporte para 12 idiomas, lo que permite procesar documentos completos o conversaciones largas en una sola pasada sin truncamiento. Su licencia Apache-2.0 y su reducido tamaño (2,15 GB en Q4_K_M) lo hacen desplegable en hardware de consumo, algo poco habitual en clasificadores de seguridad de calidad.
 
-Su relevancia radica en combinar moderación de contenido de alta calidad con un tamaño compacto, lo que lo hace adecuado para producción donde el coste de inferencia y la latencia son críticos. Además, su naturaleza multimodal permite moderar texto e imágenes con un único modelo.
+Esta ficha describe la distribución GGUF, que incluye pesos de texto cuantizados en múltiples niveles (Q3 a Q8) y proyectores multimodales en BF16/F16 para moderación de imágenes. La inferencia se realiza mediante llama.cpp, con soporte tanto en CPU como en GPU.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Mistral3 (transformer denso con soporte multimodal) |
-| Parametros totales | 3.429.006.336 (3,4B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
+| Arquitectura | Mistral3 (transformer denso, multimodal) |
+| Parámetros totales | 3.429.006.336 |
+| Parámetros activos | no disponible (no es MoE) |
 | Longitud de contexto | 262.144 tokens |
-| Tipos de cuantizacion | BF16, F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_M |
+| Tipos de cuantización | BF16, F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_M; proyector visual en BF16/F16 |
 | Idiomas soportados | en, fr, es, de, it, pt, nl, zh, ja, ko, ar, ru |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (safetensors disponibles en el modelo base) |
+| Formato de pesos | GGUF (texto y mmproj separados) |
+| Vocabulario | 131.072 tokens |
+| Tamaño del repositorio | 34,5 GB |
+| Pipeline | text-classification |
+| Modelo base | mistralai/Shieldstral-1.0-3B |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Mistral3 de Mistral AI, un transformer denso de 3,4B parámetros con vocabulario de 131.072 tokens y ventana de contexto de 262.144 tokens. Incluye un proyector multimodal (mmproj) en precisión 16-bit que permite procesar imágenes además de texto, lo que lo convierte en un clasificador de moderación multimodal.
+La arquitectura es Mistral3, un transformer denso de 3.429 millones de parámetros con un vocabulario de 131.072 tokens y una ventana de contexto de 262.144 tokens. El modelo base es multimodal: incorpora un proyector visual (mmproj) que permite procesar imágenes junto con texto, de modo que la moderación cubre tanto contenido textual como visual. En esta distribución, los pesos de texto se ofrecen cuantizados en GGUF y el proyector se mantiene en 16 bits porque, según el autor, una cuantización agresiva del mismo degradaría la capacidad de reconocimiento de imagen.
 
-El entrenamiento se centra en tareas de trust and safety: detección de contenido dañino, clasificación policy-adaptive, filtrado WAF y detección de CSAM. El modelo está diseñado para adaptar su clasificación a políticas de moderación específicas definidas por el despliegue. Los detalles exactos del dataset de entrenamiento y el proceso de alineación (RLHF, DPO, etc.) no están disponibles en la información proporcionada.
-
-La conversión a GGUF fue realizada con el convertidor de llama.cpp usando la opción `--mistral-format`, e incluye un parche posterior (15.08.2026) que corrige el tensor `v.token_embd.img_break` en los proyectores multimodales para evitar fallos de arquitectura en llama.cpp.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO u otras fases de alineamiento en la información proporcionada. Tampoco se detallan innovaciones de decodificación o atención específicas más allá de las propias de la familia Mistral3. La conversión a GGUF se realizó con `convert_hf_to_gguf.py` usando el flag `--mistral-format` y el paquete `mistral-common[image,audio]` instalado.
 
 ## Capacidades
 
-- Clasificación de texto para moderación de contenidos y trust and safety.
-- Moderación multimodal: procesa texto e imágenes simultáneamente mediante el proyector mmproj.
-- Detección de contenido dañino, incluyendo CSAM (material de abuso sexual infantil).
-- Filtrado WAF (Web Application Firewall) para detección de ataques y tráfico malicioso.
-- Clasificación policy-adaptive: puede adaptarse a políticas de moderación personalizadas.
+- Clasificación de seguridad y moderación de contenido: detección de contenido dañino, tóxico, abusivo o prohibido según políticas.
+- Moderación multimodal: procesamiento conjunto de texto e imagen mediante el proyector mmproj, orientado a la detección de contenido visual inapropiado.
+- Detección de CSAM (material de abuso sexual infantil) y categorías de riesgo equivalentes.
+- Identificación de PII (datos personales identificables) en textos.
+- Clasificación orientada a WAF (web application firewall): detección de prompt injection y ataques a aplicaciones.
+- Política adaptativa (policy-adaptive): el modelo puede ajustarse a diferentes conjuntos de políticas de moderación.
 - Soporte multilingüe en 12 idiomas: inglés, francés, español, alemán, italiano, portugués, neerlandés, chino, japonés, coreano, árabe y ruso.
-- Compatible con inferencia en GPU y CPU mediante llama.cpp.
-- Pipeline de text-classification con soporte de endpoints compatibles con Hugging Face.
+- Formato conversacional, compatible con endpoints de inferencia.
+- No se ha documentado soporte explícito de tool calling, function calling ni razonamiento multi-paso en la información disponible.
 
 ## Casos de uso
 
-- Moderación de contenido en redes sociales y plataformas UGC: el modelo puede clasificar publicaciones, comentarios y mensajes en 12 idiomas, filtrando contenido dañino antes de su publicación. Su ventana de 262.144 tokens permite procesar hilos de conversación completos en una sola pasada.
-- Detección de CSAM en plataformas de intercambio de archivos: gracias a su capacidad multimodal, puede analizar imágenes junto con metadatos de texto para identificar material de abuso sexual infantil, cumpliendo con requisitos legales de notificación en muchas jurisdicciones.
-- Filtrado WAF en entornos de producción: el modelo puede clasificar peticiones HTTP entrantes para detectar patrones de ataque (inyección SQL, XSS, etc.) con baja latencia. Con Q4_K_M en GPU alcanza 187 tokens por segundo, suficiente para integrarse en pipelines de tráfico real.
-- Moderación de chatbots y asistentes virtuales: integración en sistemas de conversación para detectar y bloquear respuestas dañinas o inapropiadas generadas por el propio LLM, actuando como capa de seguridad adicional.
-- Cumplimiento normativo en plataformas de mensajería: clasificación de mensajes privados para detectar contenido ilegal o que viole los términos de servicio, con soporte multilingüe para despliegues internacionales.
-- Análisis de imágenes en marketplaces y plataformas de anuncios: moderación de imágenes de producto para detectar contenido inapropiado o prohibido, combinando el análisis visual con el texto asociado.
-- Auditoría de contenido histórico: procesamiento por lotes de grandes volúmenes de contenido almacenado para identificar y eliminar material dañino retroactivamente, aprovechando la ventana de contexto de 262.144 tokens.
+- Moderación de contenido en plataformas sociales: clasificación de publicaciones de texto e imagen contra políticas de uso, aprovechando la ventana de 262.144 tokens para evaluar hilos completos o publicaciones con contexto extendido sin truncar.
+- Filtrado de prompt injection en aplicaciones LLM: clasificación de entradas de usuario antes de enviarlas a un modelo generativo, con el objetivo de bloquear intentos de manipulación de instrucciones en entornos de producción.
+- Protección perimetral en WAF: integración como clasificador auxiliar que analice cargas útiles HTTP y detecte patrones de ataque o contenido malicioso, desplegado en llama.cpp junto al resto de la pila de seguridad.
+- Detección de PII en pipelines de datos: escaneo de documentos y registros para identificar datos personales antes de almacenarlos o compartirlos, con cobertura multilingüe para organizaciones con contenido en varios idiomas.
+- Moderación de imágenes en servicios de usuario: uso del proyector mmproj para clasificar imágenes subidas por usuarios (avatares, adjuntos, galerías) y bloquear contenido inapropiado en tiempo real.
+- Cumplimiento normativo y auditoría: clasificación retrospectiva de grandes volúmenes de contenido almacenado para auditorías de cumplimiento, aprovechando el contexto largo para procesar documentos completos por lote.
+- Filtrado en asistentes conversacionales: evaluación de entradas y salidas de un chatbot en las 12 lenguas soportadas para evitar respuestas dañinas o fuera de política, con despliegue local en GPU de consumo gracias al tamaño reducido en Q4_K_M (2,15 GB).
 
 ## Benchmarks y rendimiento
 
-El modelo card no incluye benchmarks de calidad (MMLU, HumanEval, GSM8K), pero sí benchmarks de rendimiento de inferencia comparando GPU vs CPU para diferentes cuantizaciones:
+El autor publica una comparativa de rendimiento de inferencia (no de calidad de clasificación) entre cuantizaciones y motores de cómputo:
 
-| Cuantizacion | Motor | Huella RAM/VRAM | Velocidad (tokens/s) | Latencia por token | Logprob (confianza) |
+| Modelo (cuantización) | Motor | Huella RAM/VRAM | Velocidad (tok/s) | Latencia por token | Logprob (confianza) |
 |---|---|---|---|---|---|
-| BF16 (16 bits) | GPU (CUDA) | ~6,0 GB | 100,8 | 9,9 ms | -0,01944 (referencia) |
-| BF16 (16 bits) | CPU | ~6,0 GB | 7,9 | 125,0 ms | -0,01923 |
-| Q8_0 (8 bits) | GPU (CUDA) | ~3,2 GB | 147,6 | 6,7 ms | -0,01871 |
-| Q8_0 (8 bits) | CPU | ~3,2 GB | 15,7 | 63,3 ms | -0,01922 |
-| Q4_K_M (4,5 bits) | GPU (CUDA) | ~2,1 GB | 187,0 | 5,3 ms | -0,02038 |
-| Q4_K_M (4,5 bits) | CPU | ~2,1 GB | 22,1 | 45,2 ms | -0,01867 |
-| Q4_K_S (4,0 bits) | CPU | ~1,9 GB | 25,4 | 39,2 ms | -0,02051 |
-| Q3_K_M (3,5 bits) | CPU | ~1,6 GB | 26,8 | 37,1 ms | -0,02591 |
-| Q3_K_M (3,5 bits) | GPU (anomalía) | ~1,6 GB | 17,1 | 58,4 ms | -0,02948 |
+| BF16 | GPU (CUDA) | ~6,0 GB | 100,8 | 9,9 ms | -0,01944 (ref.) |
+| BF16 | CPU | ~6,0 GB | 7,9 | 125,0 ms | -0,01923 |
+| Q8_0 | GPU (CUDA) | ~3,2 GB | 147,6 | 6,7 ms | -0,01871 |
+| Q8_0 | CPU | ~3,2 GB | 15,7 | 63,3 ms | -0,01922 |
+| Q4_K_M | GPU (CUDA) | ~2,1 GB | 187,0 | 5,3 ms | -0,02038 |
+| Q4_K_M | CPU | ~2,1 GB | 22,1 | 45,2 ms | -0,01867 |
+| Q4_K_S | CPU | ~1,9 GB | 25,4 | 39,2 ms | -0,02051 |
+| Q3_K_M | CPU | ~1,6 GB | 26,8 | 37,1 ms | -0,02591 |
+| Q3_K_M | GPU (anomalía) | ~1,6 GB | 17,1 | 58,4 ms | -0,02948 |
 
-Nota: la cuantización Q3_K_M en GPU muestra una anomalía de rendimiento (17,1 t/s frente a 26,8 t/s en CPU), probablemente debida a un manejo ineficiente de la cuantización de 3 bits en CUDA. La confianza del modelo, medida por logprob, se mantiene prácticamente constante entre cuantizaciones (entre -0,018 y -0,026), lo que indica que la pérdida de calidad por cuantización es mínima hasta Q4_K_M.
-
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K) en la información disponible.
+El autor señala una anomalía conocida en llama.cpp: Q3_K_M en GPU rinde peor (17,1 tok/s) que en CPU (26,8 tok/s) porque los kernels CUDA están optimizados para formatos alineados con registros de hardware (8 y 4 bits). No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: desde ~1,6 GB (Q3_K_M) hasta ~6,0 GB (BF16). La opción recomendada Q4_K_M requiere ~2,1 GB.
-- GPU recomendadas: cualquier GPU con soporte CUDA y al menos 4 GB de VRAM. Una RTX 3060 (12 GB) o superior puede ejecutar todas las cuantizaciones con holgura. Para despliegues de producción, una A10 o L4 es suficiente.
-- Compatible con CPU: sí, mediante llama.cpp. En CPU se obtienen entre 8 y 27 tokens/s según cuantización, suficiente para clasificación por lotes pero no para inferencia en tiempo real.
-- Cabe en GPUs de consumo: sí. Incluso la versión BF16 completa (~6 GB) cabe en una RTX 3060 de 12 GB o RTX 4060 de 8 GB.
-- Opciones de despliegue: llama.cpp (recomendado), llama-cpp-python, Ollama (si se importa el GGUF), y cualquier framework compatible con GGUF. El tag "endpoints_compatible" sugiere compatibilidad con Hugging Face Inference Endpoints.
-- Latencia y throughput: en GPU con Q4_K_M se alcanzan 187 tokens/s con 5,3 ms de latencia por token. En CPU, la mejor opción es Q3_K_M con 26,8 tokens/s.
+- VRAM/RAM estimada para inferencia: ~6,0 GB en BF16/F16, ~3,2 GB en Q8_0, ~2,1 GB en Q4_K_M, ~1,6 GB en Q3_K_M. Añadir ~850 MB si se usa el proyector visual.
+- GPU recomendadas: cualquier GPU con al menos 2-3 GB de VRAM libre para cuantizaciones Q4/Q8; tarjetas como RTX 3060, RTX 4060, RTX 4090, A100 o H100 pueden ejecutarlo con holgura. La comparativa del autor se realizó con CUDA.
+- Cabe en GPU de consumo: sí, en cualquier GPU moderna con 4 GB o más de VRAM usando Q4_K_M o Q8_0.
+- Despliegue: llama.cpp (formato nativo GGUF), con soporte para CPU y CUDA. El autor menciona compatibilidad con endpoints, pero no detalla integraciones con vLLM, TGI u Ollama.
+- Throughput estimado: 187 tok/s en GPU con Q4_K_M, 22,1 tok/s en CPU con la misma cuantización; 100,8 tok/s en GPU con BF16 y 7,9 tok/s en CPU con BF16.
+- Latencia por token: 5,3 ms (Q4_K_M en GPU) hasta 125 ms (BF16 en CPU).
 
 ## Comparativa con modelos similares
 
-El modelo base Shieldstral-1.0-3B de Mistral AI pertenece a la categoría de clasificadores de moderación y seguridad. Los competidores más directos son los modelos de la familia Llama Guard de Meta y los clasificadores de moderación de OpenAI, aunque no se dispone de datos comparativos específicos en la información proporcionada.
-
-| Modelo | Parametros | Contexto | Licencia | Multimodal | Idiomas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Shieldstral-1.0-3B (este) | 3,4B | 262.144 | Apache-2.0 | Sí (texto+imagen) | 12 |
-| Llama Guard 3 (Meta) | no disponible | no disponible | no disponible | no disponible | no disponible |
-| OpenAI Moderation API | no disponible | no disponible | propietaria | no disponible | no disponible |
+| Shieldstral-1.0-3B (este, GGUF) | 3,43 B | 262.144 | Apache-2.0 | GGUF | Clasificador de seguridad multimodal, 12 idiomas |
+| mistralai/Shieldstral-1.0-3B | 3,43 B | 262.144 | Apache-2.0 | safetensors | Modelo base original, sin cuantizar |
+| Alternativas de moderación de tamaño similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de comparación en la información proporcionada |
 
-Los datos comparativos de modelos alternativos no están disponibles en la información proporcionada. Se recomienda consultar las fichas técnicas de Llama Guard 3 y otros clasificadores de moderación para una comparativa completa.
+No se dispone de información suficiente para comparar con alternativas concretas de la misma categoría (clasificadores de seguridad de ~3B parámetros) en términos de rendimiento o benchmarks.
 
 ## Limitaciones y advertencias
 
-- La cuantización Q3_K_M en GPU presenta una anomalía de rendimiento (17,1 t/s frente a 26,8 t/s en CPU), por lo que no se recom
+- No se han publicado benchmarks de calidad de clasificación (precisión, recall, F1) en la información disponible; el rendimiento real en producción debe validarse con un conjunto de evaluación propio.
+- Riesgo de alucinación y de clasificación errónea inherente a los modelos de lenguaje; no debe usarse como único mecanismo de seguridad sin revisión humana en casos críticos.
+- La cuantización Q3_K_M muestra una degradación notable de la confianza (logprob -0,02591 frente a -0,01944 en BF16) y un rendimiento anómalo en GPU; se recomienda Q4_K_M o superior para producción.
+- El proyector visual no debe cuantizarse de forma agresiva: el autor advierte que se destruiría la capacidad de reconocimiento de imagen, por lo que se mantiene en 16 bits (~850 MB adicionales).
+- La licencia Apache-2.0 permite uso comercial, pero el modelo se distribuye sin garantías y el usuario asume la responsabilidad del cumplimiento normativo en su jurisdicción.
+- Cobertura lingüística limitada a los 12 idiomas declarados; el rendimiento en idiomas no listados no está garantizado.
+- El modelo está diseñado para clasificación de seguridad, no como modelo generativo de propósito general; su uso fuera de ese ámbito puede dar resultados pobres.
+- La información sobre sesgos específicos, datos de entrenamiento y procesos de alineamiento no está disponible en la documentación proporcionada.
+
+## Enlaces
+
+- Repositorio Hugging Face: https://huggingface.co/Metabaron6/Shieldstral-1.0-3B-GGUF
+- Modelo base: https://huggingface.co/mistralai/Shieldstral-1.0-3B
+- llama.cpp: https://github.com/ggerganov/llama.cpp

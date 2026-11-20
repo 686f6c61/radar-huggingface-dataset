@@ -2,94 +2,90 @@
 
 ## Resumen
 
-`huggingface-mic/ast-finetuned-audioset-10-10-0.4593-mic` es un artefacto de prueba (fixture) derivado del modelo `MIT/ast-finetuned-audioset-10-10-0.4593`, un Audio Spectrogram Transformer (AST) entrenado para clasificación de eventos sonoros sobre AudioSet. No es un modelo utilizable en producción: se trata de una version "slim" creada por el proyecto `transformers-mic` para validar contratos de integración entre el modelo y el framework Transformers.
+`huggingface-mic/ast-finetuned-audioset-10-10-0.4593-mic` es un artefacto de prueba (fixture) publicado por la organizacion huggingface-mic, no un modelo utilizable en produccion. Deriva del checkpoint real `MIT/ast-finetuned-audioset-10-10-0.4593`, un Audio Spectrogram Transformer (AST) entrenado para clasificacion de eventos sonoros sobre AudioSet. El repositorio contiene pesos reducidos (slim weights), ejemplos de uso ejecutables y expectativas de framework en un unico paquete, con el objetivo de validar la integracion del modelo base en distintas herramientas.
 
-El fixture conserva la misma arquitectura (`ASTForAudioClassification`) y los mismos nombres de tensores que el checkpoint original, pero reduce el número de capas ocultas a 2 y sustituye los pesos entrenados por pesos aleatorios (semilla 17). El resultado son aproximadamente 195.727 parámetros, frente a los ~87 millones del AST original. Los ficheros del procesador (`preprocessor_config.json`) se copian byte a byte del modelo base.
+El fixture mantiene la arquitectura `ASTForAudioClassification` pero con una configuracion encogida: 2 capas de transformer en lugar de las del checkpoint original, y solo 195.727 parametros totales (aproximadamente 0,2 M). Los pesos son aleatorios (semilla 17) y no han sido entrenados; superaron una puerta de sensibilidad a la entrada segun la model card, pero no representan ningun conocimiento acustico real. Los ficheros de procesador (`preprocessor_config.json`) se copiaron byte a byte desde el modelo base.
 
-Su relevancia es exclusivamente para desarrolladores que trabajan en tooling de testing: permite verificar pipelines de carga, inferencia y serialización sin descargar el checkpoint completo. Está etiquetado explícitamente como `test-artifact` para excluirlo de búsquedas de modelos candidatos.
+Su relevancia es, por tanto, exclusivamente de ingenieria: sirve como caso de prueba reproducible para pipelines de integracion de modelos de audio en Transformers, con nombres de tensores identicos al checkpoint real y estabilidad numerica verificada en float32, bfloat16 y float16. Cualquier evaluacion de calidad de clasificacion acustica debe hacerse sobre el modelo base `MIT/ast-finetuned-audioset-10-10-0.4593`, no sobre este fixture.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Audio Spectrogram Transformer (AST), `ASTForAudioClassification` |
-| Parametros totales | 195.727 (fixture); el modelo base tiene ~87 M |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (modelo de audio, ventana de espectrograma) |
-| Tipos de cuantizacion | no disponible; pesos guardados en float32, validado también en bfloat16 y float16 |
-| Idiomas soportados | no disponible (clasificación de audio, no texto) |
+| Arquitectura | Audio Spectrogram Transformer (AST), clase `ASTForAudioClassification`, configuracion reducida a 2 capas |
+| Parametros totales | 195.727 (aprox. 0,2 M) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (modelo de clasificacion de audio, no generativo) |
+| Tipos de cuantizacion | no disponible; pesos guardados en float32, con forward, loss y gradientes finitos tambien en bfloat16 y float16 |
+| Idiomas soportados | no disponibles (clasificacion de eventos sonoros, no procesamiento de lenguaje) |
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
-| Modelo base | `MIT/ast-finetuned-audioset-10-10-0.4593` |
-| Numero de capas ocultas | 2 (reducido desde el original) |
-| Tamano del repo | 0,0 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un Audio Spectrogram Transformer: un transformer de visión adaptado a espectrogramas de audio, que divide la entrada en parches y los procesa con self-attention para producir logits sobre las clases de AudioSet (527 categorías en el modelo original). El checkpoint `MIT/ast-finetuned-audioset-10-10-0.4593` corresponde al ajuste fino de AST sobre AudioSet con mAP 0,4593.
+El modelo base es un Audio Spectrogram Transformer: un transformer que opera sobre parches de espectrogramas log-mel en lugar de tokens de texto, usado para clasificacion multi-clase de eventos sonoros (AudioSet, 527 clases en el checkpoint original). El fixture conserva la clase `ASTForAudioClassification` y los mismos nombres de tensores que el checkpoint real, pero reduce `num_hidden_layers` a 2 mediante una regla generica de reduccion implementada en `sweep.py` del repositorio `transformers-mic`.
 
-El fixture que nos ocupa **no ha sido entrenado**. Sus pesos son aleatorios (semilla 17) y solo se aceptaron tras superar un "input-sensitivity gate": cada perturbación de las entradas del contrato desplaza los logits al menos 0,001 (la más débil, `input_values:reverse`, 0,00487). Se generó mediante `build_fixtures.py` del repositorio `transformers-mic`, con la regla genérica de reducción de `sweep.py` (num_hidden_layers = 2). El `build.json` registra fuentes fijadas, resultados del gate y hashes de ficheros. Los ficheros del procesador se copian byte a byte del modelo base.
+No hubo entrenamiento. Los pesos son aleatorios con semilla 17 y se aceptaron porque cada perturbacion de las entradas del contrato movia los logits al menos 0,001 (caso mas debil: `input_values:reverse`, 0,00487). El fixture esta identificado por la clave `2e1aaae788f4` y cubre todos los checkpoints con ficheros de procesador identicos byte a byte y config coincidente tras la reduccion. Los detalles de procedencia, hashes de ficheros y resultados de las puertas de validacion estan registrados en `build.json`.
 
 ## Capacidades
 
-- Carga y ejecución dentro del pipeline de Transformers para `ASTForAudioClassification`.
-- Clasificación de audio a nivel de contrato: produce logits sobre las clases del modelo base (con pesos aleatorios, por lo que las predicciones no son semánticamente válidas).
-- Validación de integración: comprueba que los nombres de tensores, el `preprocessor_config.json` y el flujo forward/loss/gradients funcionan en float32, bfloat16 y float16.
-- Soporte de tool calling: no.
-- Soporte de agentes o razonamiento multi-paso: no.
-- Capacidades multilingües: no aplica.
-- Capacidades especiales: ninguna; es un artefacto de test.
+- Clasificacion de eventos sonoros (audio tagging): la cabeza `ASTForAudioClassification` produce logits sobre las clases del modelo base.
+- Ejecucion en Transformers con los mismos nombres de tensores que el checkpoint real, lo que permite validar cargas, shapes y dtypes.
+- Estabilidad numerica verificada en float32, bfloat16 y float16 para forward, loss y gradientes.
+- Uso como fixture de test: no esta pensado para inferencia con calidad, tool calling, agentes, generacion de texto, vision ni capacidades multilingues.
+- No dispone de modo thinking, tool calling, function calling ni soporte de agentes.
 
 ## Casos de uso
 
-- **Test de integración de Transformers**: cargar el fixture con `ASTForAudioClassification.from_pretrained` para verificar que el pipeline de audio funciona sin descargar los ~350 MB del checkpoint original. Adecuado por su tamaño reducido (0,2 M parámetros).
-- **CI/CD de tooling de modelos**: incluir el fixture en la suite de tests de librerías que serializan, convierten o inspeccionan modelos, comprobando que los nombres de tensores coinciden con el checkpoint real.
-- **Validación de contratos de framework**: usar `integration.json` y `integrations/transformers/expectations` para comprobar que una nueva versión de Transformers mantiene compatibilidad con AST.
-- **Desarrollo de procesadores de audio**: probar el `preprocessor_config.json` copiado del modelo base sin necesidad de pesos reales, verificando la extracción de features del espectrograma.
-- **Tests de dtype y estabilidad numérica**: el fixture garantiza forward, loss y gradientes finitos en float32, bfloat16 y float16, útil para validar rutas de mixed precision.
-- **Reproducción de artefactos**: reconstruir el fixture con `python example/build_fixtures.py --fixture ast-finetuned-audioset-10-10-0.4593-mic` y comparar hashes con `build.json` para auditar la reproducibilidad del pipeline.
+- Pruebas de integracion en Transformers: cargar el fixture con `ASTForAudioClassification` para verificar que el pipeline de audio clasificacion acepta la configuracion y los tensores esperados antes de apuntar al checkpoint real.
+- Validacion de compatibilidad de dtypes: comprobar que forward, loss y backward producen valores finitos en float32, bfloat16 y float16 en entornos de entrenamiento mixto.
+- Test de regresion de procesadores: al copiar `preprocessor_config.json` byte a byte del modelo base, permite detectar cambios incompatibles en el preprocesado de espectrogramas entre versiones de Transformers.
+- CI de librerias de terceros: usar el fixture como caso ligero (0,2 M parametros, repositorio de 0,0 GB) para tests automatizados sin descargar el checkpoint completo.
+- Verificacion de contratos de integracion: consumir `integration.json` e `integrations/transformers/expectations` para validar que una implementacion cumple las expectativas declaradas por el autor.
+- Reproducibilidad de fixtures: reconstruir el artefacto con `python example/build_fixtures.py --fixture ast-finetuned-audioset-10-10-0.4593-mic` y comparar hashes con `build.json`.
+- Deteccion de sensibilidad a la entrada: replicar las perturbaciones del contrato (por ejemplo `input_values:reverse`) para comprobar que los logits se mueven por encima del umbral de 0,001.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El modelo es un artefacto de test con pesos aleatorios; cualquier métrica de clasificación carecería de significado.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor solo reporta la puerta de sensibilidad a la entrada: todas las perturbaciones del contrato desplazan los logits al menos 0,001, con minimo de 0,00487 en `input_values:reverse`. No hay metricas de precision, recall, mAP ni accuracy sobre AudioSet para este fixture, y al tratarse de pesos aleatorios no tendria sentido medirlas.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 10 MB en float32 (195.727 parámetros × 4 bytes ≈ 0,78 MB de pesos, más activaciones y buffers del procesador de audio).
-- GPU recomendadas: cualquier GPU, incluida CPU; no requiere acelerador dedicado.
-- Cabe en cualquier GPU consumer (RTX 3060, RTX 4090, etc.) y en CPU.
-- Opciones de despliegue: Transformers (`AutoModelForAudioClassification`), con soporte de float32, bfloat16 y float16. No se ha validado con vLLM, llama.cpp, Ollama ni TGI (no aplican a este tipo de modelo).
-- Latencia y throughput: no disponible; al ser un fixture de 2 capas, la latencia estará dominada por el preprocesado del espectrograma, no por el modelo.
+- VRAM estimada para inferencia: inferior a 1 GB; con 195.727 parametros en float32 el peso de los tensores es de aproximadamente 0,8 MB, mas activaciones y buffers del procesador de audio.
+- GPU recomendadas: cualquier GPU consumer basta; el fixture cabe en CPU. Para el checkpoint real `MIT/ast-finetuned-audioset-10-10-0.4593` se recomienda al menos una GPU con 8-16 GB si se procesan batches de espectrogramas.
+- Cabe en cualquier GPU consumer (RTX 3060, RTX 4090, etc.) y en inferencia solo CPU.
+- Opciones de despliegue: Transformers con `ASTForAudioClassification`; el autor enlaza `integrations/transformers/usage.md` y `integrations/transformers/expectations`. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que no aplican a un modelo de clasificacion de audio de este tamano.
+- Latencia y throughput: no disponibles. Al ser un fixture de 2 capas y 0,2 M parametros, la latencia seria despreciable, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Tarea | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| `huggingface-mic/ast-finetuned-audioset-10-10-0.4593-mic` (este) | 195.727 | Fixture de test de clasificación de audio | no disponible | Hugging Face, 0 descargas |
-| `MIT/ast-finetuned-audioset-10-10-0.4593` | ~87 M | Clasificación de eventos sonoros (AudioSet) | no disponible | Hugging Face, modelo de referencia |
-| `MIT/ast-finetuned-audioset-10-10-0.4593` (variantes comunitarias) | ~87 M | Clasificación de audio | variable | Hugging Face |
+| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| `huggingface-mic/ast-finetuned-audioset-10-10-0.4593-mic` (este) | 195.727 (0,2 M) | no disponible | Fixture de clasificacion de audio | no disponible | Hugging Face, 1672 descargas |
+| `MIT/ast-finetuned-audioset-10-10-0.4593` | no disponible en la informacion proporcionada | no disponible | Clasificacion de eventos sonoros AudioSet | no disponible | Hugging Face (modelo base) |
+| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparación relevante es con el checkpoint base: mismo nombre de tensores, misma arquitectura declarada, pero 2 capas frente a 12 y pesos aleatorios frente a pesos entrenados. No se dispone de datos de rendimiento comparables.
+La unica comparacion significativa es con su modelo base: mismo nombre de tensores y mismo procesador, pero el base contiene todos los parametros y pesos entrenados, mientras que este fixture tiene 2 capas y pesos aleatorios. No se dispone de informacion sobre otros modelos comparables en la documentacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- **No es un modelo utilizable**: los pesos son aleatorios; las predicciones no tienen valor semántico.
-- **Etiquetado como `test-artifact`**: no debe incluirse en búsquedas de modelos candidatos ni en producción.
-- **Sesgos**: no evaluables, al no haber entrenamiento. El modelo base podría tener sesgos derivados de AudioSet, pero este fixture no los hereda de forma significativa.
-- **Riesgo de alucinación**: no aplica en el sentido de generación de texto; sí existe el riesgo de que un consumidor confunda el fixture con un modelo real y obtenga clasificaciones sin sentido.
-- **Limitaciones de contexto o idioma**: no disponible; el modelo base opera sobre ventanas de espectrograma de ~10 s y clases de AudioSet, pero el fixture no se ha validado para ello.
-- **Licencia**: no disponible; verificar la licencia del modelo base antes de cualquier uso derivado.
-- **Caveat de producción**: no desplegar. Usar exclusivamente en entornos de test con aislamiento claro respecto a modelos reales.
+- No es un modelo utilizable: la model card lo etiqueta explicitamente como `test-artifact` y advierte que no debe usarse como modelo candidato en busquedas de modelos.
+- Pesos aleatorios (semilla 17): las salidas de clasificacion no tienen significado acustico; cualquier metrica de calidad seria invalida.
+- Configuracion encogida a 2 capas: no reproduce el comportamiento del checkpoint original ni su capacidad de discriminacion entre las 527 clases de AudioSet.
+- Licencia no disponible: no se puede confirmar el uso comercial del artefacto ni del modelo base a partir de esta informacion.
+- Idiomas no disponibles: al ser clasificacion de audio, no hay soporte linguistico que evaluar.
+- Riesgo de confusion: el nombre del repositorio replica el del modelo base con el sufijo `-mic`, lo que puede llevar a descargarlo por error en lugar del checkpoint real.
+- Sesgos y alucinacion: no aplicables en el sentido habitual de modelos generativos, pero los pesos aleatorios pueden producir predicciones arbitrarias y confianzas sin calibracion.
+- En produccion, sustituir siempre este fixture por `MIT/ast-finetuned-audioset-10-10-0.4593` y validar la licencia del checkpoint original antes de desplegar.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/huggingface-mic/ast-finetuned-audioset-10-10-0.4593-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/ast-finetuned-audioset-10-10-0.4593-mic
 - Modelo base: https://huggingface.co/MIT/ast-finetuned-audioset-10-10-0.4593
-- Repositorio `transformers-mic`: https://github.com/huggingface/transformers-mic
-- Script de construcción: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
-- Regla de reducción: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
-- Documentación del shrink: https://huggingface-mic-mic-coverage.static.hf.space/shrink/ast-finetuned-audioset-10-10-0.4593-mic.html
-- Manifiesto de contrato: `integration.json` (en el repo)
-- Uso con Transformers: `integrations/transformers/usage.md` (en el repo)
-- Expectativas de Transformers: `integrations/transformers/expectations` (en el repo)
-- Procedencia del fixture: `build.json` (en el repo)
+- Contrato de integracion (`integration.json`): https://huggingface.co/huggingface-mic/ast-finetuned-audioset-10-10-0.4593-mic/blob/main/integration.json
+- Uso con Transformers (`integrations/transformers/usage.md`): https://huggingface.co/huggingface-mic/ast-finetuned-audioset-10-10-0.4593-mic/blob/main/integrations/transformers/usage.md
+- Expectativas de Transformers (`integrations/transformers/expectations`): https://huggingface.co/huggingface-mic/ast-finetuned-audioset-10-10-0.4593-mic/tree/main/integrations/transformers/expectations
+- Procedencia del fixture (`build.json`): https://huggingface.co/huggingface-mic/ast-finetuned-audioset-10-10-0.4593-mic/blob/main/build.json
+- Explicacion de la reduccion del fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/ast-finetuned-audioset-10-10-0.4593-mic.html
+- Repositorio `transformers-mic` (script `sweep.py`): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Repositorio `transformers-mic` (script `build_fixtures.py`): https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py

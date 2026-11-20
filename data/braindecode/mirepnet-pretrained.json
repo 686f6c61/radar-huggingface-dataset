@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "MIRepNet: A pipeline and pre-trained model for EEG ... - ScienceDirect",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0950705126006921",
-      "snippet": "This paper proposes MIRepNet, an EEG pre-trained model explicitly designed for MI (whose pipeline is shown in Fig. 1). MIRepNet leverages neurophysiological insights of the MI paradigm to construct a tailored preprocessing and representation learning pipeline, significantly enhancing the generalizability and efficiency of EEG decoding."
-    },
-    {
-      "title": "[2507.20254] MIRepNet: A Pipeline and Foundation Model for EEG-Based ...",
-      "url": "https://arxiv.org/abs/2507.20254",
-      "snippet": "This paper proposes MIRepNet, the first EEG foundation model tailored for the MI paradigm. MIRepNet comprises a high-quality EEG preprocessing pipeline incorporating a neurophysiologically-informed channel template, adaptable to EEG headsets with arbitrary electrode configurations."
-    },
-    {
-      "title": "GitHub - staraink/MIRepNet: The first EEG foundation model explicitly ...",
-      "url": "https://github.com/staraink/MIRepNet",
-      "snippet": "To address these issues, we propose MIRepNet, the first EEG foundation model explicitly tailored for the MI paradigm. MIRepNet comprises a high-quality EEG preprocessing pipeline incorporating a neurophysiologically-informed channel template, adaptable to EEG headsets with arbitrary electrode configurations."
-    },
-    {
-      "title": "GitHub - braindecode/braindecode: Deep learning software to decode EEG ...",
-      "url": "https://github.com/braindecode/braindecode",
-      "snippet": "Braindecode is an open-source Python toolbox for decoding raw electrophysiological brain data with deep learning models. It includes dataset fetchers, data preprocessing and visualization tools, as well as implementations of several deep learning architectures and data augmentations for analysis of EEG, ECoG and MEG."
-    },
-    {
-      "title": "Braindecode — Decode raw EEG, ECoG and MEG with deep learning",
-      "url": "https://braindecode.org/stable/index.html",
-      "snippet": "Braindecode is an open-source PyTorch toolbox for decoding raw EEG, ECoG and MEG with deep learning. Datasets, preprocessing, augmentations, and 65+ published model architectures."
-    }
-  ]
+  "sources": []
 }

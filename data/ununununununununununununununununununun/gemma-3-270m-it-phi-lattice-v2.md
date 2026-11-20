@@ -2,96 +2,109 @@
 
 ## Resumen
 
-`gemma-3-270m-it-phi-lattice-v2` es una cuantizacion del modelo `unsloth/gemma-3-270m-it` (la variante instruction-tuned de Gemma 3 con 270 millones de parametros y 18 capas) realizada por el usuario `ununununununununununununununununununun` mediante una tecnica propietaria de optimizacion post-entrenamiento denominada `phi-lattice-v2`. El objetivo declarado es reducir el error de cuantizacion a 4 y 3 bits respecto a metodos uniformes estandar, mejorando la relacion senal-ruido de pesos (SQNR) y la perplexity del modelo resultante.
+`gemma-3-270m-it-phi-lattice-v2` es una compilación cuantizada a 4 bits del modelo `unsloth/gemma-3-270m-it`, un ajuste fino del Gemma 3 de 270 millones de parámetros de Google. El autor del repositorio (identificado como `ununununununununununununununununununun`) aplica una técnica propia de cuantización denominada `phi-lattice v2`, que sustituye los pesos lineales por un codebook reticular de 4 bits almacenado como `uint8`. El objetivo no es mejorar la calidad del modelo base, sino reducir drásticamente la huella de memoria del backbone lineal manteniendo una fidelidad alta respecto al checkpoint BF16 de referencia.
 
-El modelo base Gemma 3 esta desarrollado por Google DeepMind y distribuido bajo licencia Gemma; esta publicacion es un derivado no oficial que mantiene dicha licencia y anade pesos en formato GGUF (para Ollama y llama.cpp) junto con safetensors. El repositorio ocupa 1,7 GB e incluye una comparativa cuantitativa de cuatro variantes (BF16 de referencia, cuantizacion uniforme, phi-lattice v1 y phi-lattice v2).
+El modelo conserva la arquitectura transformer de Gemma 3 con 18 capas y 268.098.176 parámetros totales, de los cuales 100.270.080 corresponden a pesos lineales cuantizados en 126 capas. La innovación principal es el empaquetado: el archivo `gemma3_270m_phi_v2_packed_4bit.pt` ocupa 371,02 MiB frente a los 511,37 MiB del `model.safetensors` BF16, y el backbone lineal pasa de 191,25 MiB a 50,80 MiB (3,76x más pequeño). Se incluye además un kernel Triton (`phi_lut_gemm.py`) para ejecutar las capas cuantizadas en CUDA.
 
-Su relevancia es acotada pero concreta: demuestra que tecnicas de calibracion no uniforme pueden reducir sustancialmente la degradacion en modelos muy pequenos, donde la cuantizacion agresiva suele colapsar la calidad. No obstante, el modelo base de 270M ya es de capacidad muy limitada, y los ejemplos de generacion incluidos en la model card muestran que incluso la version BF16 comete errores factuales y aritmeticos graves.
+Es relevante ahora porque demuestra una vía práctica de cuantización no uniforme basada en retículos para modelos pequeños, con métricas de fidelidad explícitas (coseno de sonda 0,99903, coincidencia top-1 en la sonda) y una comparación cuantitativa frente a cuantización uniforme y a la versión anterior `phi-lattice v1`. No obstante, los benchmarks de tareas muestran degradación en GSM8K e IFEval respecto al modelo base, por lo que su uso en producción requiere evaluar el compromiso entre ahorro de memoria y calidad.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (gemma3_text) |
+| Arquitectura | Transformer decoder-only (Gemma 3), 18 capas |
 | Parametros totales | 268.098.176 |
-| Parametros activos | no disponible (no es MoE) |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 4 bits y 3 bits (metodo phi-lattice-v2); GGUF |
+| Tipos de cuantizacion | 4 bits (`phi-lattice v2`, `uint8`), 3 bits (evaluado), BF16 (fallback) |
 | Idiomas soportados | no disponible |
 | Licencia | gemma |
-| Formato de pesos | GGUF, safetensors |
+| Formato de pesos | safetensors (BF16), `.pt` empaquetado 4 bits (`gemma3_270m_phi_v2_packed_4bit.pt`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente es `unsloth/gemma-3-270m-it`, un transformer decoder-only de 18 capas y aproximadamente 270 millones de parametros, afinado por instrucciones (instruction-tuned) sobre la base Gemma 3 de Google DeepMind. No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO en el modelo base; esos datos no aparecen en la informacion proporcionada.
+El modelo parte de `unsloth/gemma-3-270m-it`, un ajuste fino instructivo del Gemma 3 de 270M parámetros. La arquitectura es un transformer decoder-only con 18 capas y una tabla de embeddings de 262.144 tokens, atada a `lm_head` y mantenida en BF16 porque no se cuantiza. La capa lineal del backbone suma 100.270.080 pesos distribuidos en 126 capas, todas con `K % 64 == 0`, lo que permite agrupar en bloques de 64 sin cruzar filas.
 
-La innovacion de esta publicacion no reside en la arquitectura, sino en el proceso de cuantizacion: `phi-lattice-v2` aplica una optimizacion multidimensional post-entrenamiento junto con una pasada de calibracion de escalas ponderada por importancia. Segun la model card, esto produce una SQNR de pesos de 19,48 dB a 4 bits (frente a 18,69 dB del metodo uniforme) y una perplexity de 110,60 (frente a 352,63 del uniforme, es decir, 3,19 veces mejor), con una esparsidad del 13,48%. A 3 bits, la SQNR es de 12,63 dB y la perplexity de 1.618,3, mientras que la cuantizacion uniforme colapsa (perplexity de 1.165.167,0).
+La innovación técnica es la cuantización `phi-lattice v2`: en lugar de una escala uniforme, los pesos se asignan a un codebook reticular de 4 bits. Según la model card, el backbone lineal queda 3,76x más pequeño que en BF16 y 7,53x frente a FP32. El archivo empaquetado tiene un round-trip bit-exacto entre `low_vram_4bit` y `unrolled_bf16` (`max |Δlogits| = 0.0` con un solo hilo), y frente al `model.safetensors` BF16 publicado presenta un coseno de sonda de 0,99903 y una coincidencia top-1 en la sonda, con un gap máximo de logits de 5,5. No se documenta el proceso de entrenamiento del modelo base (tokens, composición del dataset, RLHF/DPO); esa información no está disponible en la documentación proporcionada.
 
 ## Capacidades
 
-- Generacion de texto conversacional en el estilo de un modelo instruction-tuned.
-- Razonamiento basico y resolucion de problemas sencillos, con calidad muy limitada segun los propios ejemplos del autor.
-- Aritmetica elemental y fisica basica, aunque los ejemplos de la model card muestran errores notables incluso en BF16.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible; improbable dada la escala del modelo.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
-- Compatibilidad con endpoints (`endpoints_compatible`) y despliegue via Ollama.
+- Generación de texto conversacional, heredada del ajuste instructivo de Gemma 3.
+- Razonamiento básico y respuesta a instrucciones, con rendimiento limitado por el tamaño de 270M.
+- Generación de código y matemáticas a nivel básico; los benchmarks muestran debilidad en GSM8K.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible en la información proporcionada.
+- Capacidades especiales (thinking mode, visión, audio): no disponible en la información proporcionada.
+- Ejecución en CPU y CUDA, con modo `triton_4bit` para el kernel LUT-GEMM.
 
 ## Casos de uso
 
-- Prototipado rapido de pipelines de generacion de texto: el modelo cabe en cualquier GPU consumer y permite validar integraciones (APIs, formateo de prompts, streaming) antes de escalar a modelos mayores.
-- Despliegue en dispositivos con recursos muy limitados: con cuantizacion de 4 o 3 bits, el modelo puede ejecutarse en CPU o en GPUs de gama baja, util para demos offline o entornos embebidos.
-- Experimentacion con tecnicas de cuantizacion: sirve como banco de pruebas para comparar phi-lattice-v2 frente a cuantizacion uniforme en un modelo pequeno y reproducible.
-- Generacion de texto auxiliar de baja criticidad: borradores, resumenes cortos o clasificacion simple donde los errores no tengan consecuencias graves.
-- Educacion y divulgacion: ejemplo didactico de como la calibracion de escalas afecta a la calidad de un modelo cuantizado.
-- Evaluacion de robustez de cuantizacion: util para investigadores que estudien el colapso de modelos pequenos a 3 bits y el efecto de metodos no uniformes.
-- No recomendado para atencion al cliente, generacion de codigo en produccion ni tareas que requieran precision factual, dado el tamano del modelo y los errores observados.
+- Despliegue en dispositivos con memoria muy limitada: el modo `low_vram_4bit` mantiene 370,91 MiB residentes frente a 511,36 MiB en BF16, lo que permite ejecutar el modelo en entornos embebidos o contenedores con presupuesto de RAM ajustado.
+- Prototipado rápido de pipelines de generación de texto: el modelo cabe en cualquier GPU consumer moderna y arranca con `transformers` usando el fallback `model.safetensors`.
+- Evaluación de técnicas de cuantización: el repositorio incluye comparativas frente a cuantización uniforme y `phi-lattice v1`, útil para investigadores que estudien codebooks reticulares.
+- Generación de texto de baja latencia en CPU: con `torch.set_num_threads(1)` el modelo es determinista y ligero, adecuado para tareas de clasificación o completado simple.
+- Filtrado y etiquetado de texto a pequeña escala: el modelo puede usarse para tareas de generación corta donde el contexto no sea crítico.
+- Integración en entornos de investigación con restricciones de VRAM: el kernel Triton permite acelerar las capas cuantizadas en CUDA sin cargar el modelo completo en BF16.
+- Base para experimentos de ajuste fino ligero: al ser un modelo de 270M, es viable reentrenar o adaptar con LoRA en hardware modesto.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos disponibles son los de la comparativa de cuantizacion de la model card (evaluacion en ingles, sin especificar el conjunto de evaluacion completo):
+Resultados de `lm-evaluation-harness` 0.4.13, 0-shot, comparando el modelo base BF16 (`unsloth/gemma-3-270m-it`) con el checkpoint BF16 desplegado de este repositorio (`model.safetensors`, que es el archivo empaquetado descomprimido):
 
-| Metodo | SQNR pesos 4 bits | Perplexity 4 bits | Esparsidad 4 bits | SQNR pesos 3 bits | Perplexity 3 bits |
-|---|---|---|---|---|---|
-| Baseline (BF16) | Referencia | 86,22 | 0,00% | Referencia | 86,22 |
-| Uniforme estandar | 18,69 dB | 352,63 | 0,00% | 11,39 dB | 1.165.167,0 (colapso) |
-| phi-lattice v1 | 18,65 dB | 158,80 | 8,41% | 12,63 dB | 2.121,3 |
-| phi-lattice v2 (este repo) | 19,48 dB | 110,60 | 13,48% | 12,63 dB | 1.618,3 |
+| Tarea | Métrica | Base BF16 | phi-lattice v2 |
+|---|---|---:|---:|
+| MMLU | acc | 0.2508 | 0.2594 |
+| GSM8K | exact_match, strict | 0.0243 | 0.0061 |
+| GSM8K | exact_match, flexible | 0.0265 | 0.0129 |
+| IFEval | prompt_level_strict_acc | 0.2421 | 0.1774 |
+| IFEval | inst_level_strict_acc | 0.3729 | 0.2866 |
+| IFEval | prompt_level_loose_acc | 0.2514 | 0.1848 |
+| IFEval | inst_level_loose_acc | 0.3789 | 0.2962 |
+| HellaSwag | acc | 0.3343 | 0.3253 |
+| HellaSwag | acc_norm | 0.3929 | 0.3793 |
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
+Comparativa de cuantización publicada en la model card:
+
+| Método | SQNR 4 bits | Perplejidad 4 bits | Sparsity exacta 4 bits | SQNR 3 bits | Perplejidad 3 bits |
+|---|---:|---:|---:|---:|---:|
+| Baseline BF16 | Referencia | 86.22 | 0.00% | Referencia | 86.22 |
+| Uniforme estándar | 18.69 dB | 352.63 | 0.00% | 11.39 dB | 1.165.167,0 (colapsa) |
+| phi-lattice v1 | 18.65 dB | 158.80 | 8.41% | 12.63 dB | 2.121,3 |
+| phi-lattice v2 | 19.48 dB | 110.58 | 13.48% | 12.63 dB | 1.618,3 |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB con cuantizacion de 4 bits; en torno a 0,5-0,7 GB con 3 bits; aproximadamente 0,6 GB en BF16 para los pesos (268M parametros a 16 bits), mas overhead de contexto.
-- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) es mas que suficiente; tambien funciona en CPU.
-- Cabe holgadamente en GPU consumer, incluidas GPUs integradas y dispositivos de gama baja.
-- Opciones de despliegue: Ollama (`ollama run hf.co/ununununununununununununununununununun/gemma-3-270m-it-phi-lattice-v2`), llama.cpp (formato GGUF), y potencialmente vLLM o TGI con los pesos safetensors.
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada; por el tamano del modelo, se espera latencia muy baja en GPU y aceptable en CPU.
+- VRAM/RAM para inferencia: 370,91 MiB en modo `low_vram_4bit`; 511,36 MiB en BF16 desplegado.
+- GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM; el kernel Triton requiere CUDA.
+- Cabe en GPU consumer: sí, en cualquier RTX o GTX moderna con soporte CUDA; también en CPU.
+- Opciones de despliegue: `phi_loader.py` (modos `low_vram_4bit`, `triton_4bit`, `unrolled_bf16`), `transformers` con `model.safetensors`, `text-generation-inference` (según tags del repositorio).
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| gemma-3-270m-it-phi-lattice-v2 | 268M | no disponible | gemma | GGUF, safetensors | Cuantizacion no uniforme phi-lattice-v2 |
-| unsloth/gemma-3-270m-it (base) | 270M | no disponible | gemma | safetensors | Modelo original sin cuantizar |
-| Gemma 3 (variantes mayores) | no disponible | no disponible | gemma | safetensors, GGUF | Familia completa de Google DeepMind; datos no detallados en la informacion disponible |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---:|---|---|---|---|
+| `gemma-3-270m-it-phi-lattice-v2` | 268M | no disponible | gemma | safetensors, `.pt` 4 bits | Cuantización reticular 4 bits |
+| `unsloth/gemma-3-270m-it` (base) | 268M | no disponible | gemma | safetensors BF16 | Modelo de referencia |
+| Gemma 3 270M IT (original) | 270M | no disponible | gemma | safetensors | Modelo oficial de Google |
 
-No se dispone de datos de benchmarks comparativos con otras alternativas en la informacion proporcionada.
+No se dispone de datos de benchmarks de modelos alternativos de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo base de 270M tiene capacidad muy limitada: los ejemplos de la model card muestran errores factuales (explicacion incorrecta del congelamiento del agua) y aritmeticos (calculo erroneo de velocidad media) incluso en la version BF16.
-- Riesgo elevado de alucinacion y de respuestas incoherentes, especialmente en tareas de razonamiento multi-paso.
-- La cuantizacion a 3 bits degrada gravemente la calidad (perplexity de 1.618,3 frente a 86,22 en BF16); no se recomienda para uso serio.
-- Sesgos conocidos: no disponibles en la informacion proporcionada; hereda los del modelo base Gemma 3.
-- Limitaciones de contexto e idioma: no disponibles; la evaluacion de la model card es en ingles.
-- Licencia Gemma: impone restricciones de uso comercial y obligaciones de atribucion; consultar los terminos de la licencia Gemma antes de cualquier despliegue en produccion.
-- Derivado no oficial: no esta validado ni respaldado por Google DeepMind ni por Unsloth; el autor de la cuantizacion es un usuario independiente y el modelo apenas tiene descargas (11) y ningun like, lo que reduce la confianza en su validacion externa.
-- La model card no documenta el conjunto de evaluacion ni la metodologia completa de calibracion, lo que dificulta reproducir los resultados.
+- Degradación medible en GSM8K (de 0,0243 a 0,0061 en exact_match strict) e IFEval (de 0,2421 a 0,1774 en prompt_level_strict_acc) respecto al modelo base.
+- MMLU se mantiene cerca del azar (0,25) en ambos modelos, lo que indica capacidad de razonamiento limitada.
+- Riesgo de alucinación inherente a un modelo de 270M; no apto para tareas que requieran alta fiabilidad factual.
+- La licencia `gemma` impone restricciones de uso comercial; es necesario revisar los términos de la Gemma License antes de desplegar en producción.
+- El round-trip bit-exacto solo se garantiza con `torch.set_num_threads(1)`; con OpenMP multihilo las reducciones pueden alterar los logits.
+- El kernel Triton requiere `K % 64 == 0` en todas las capas lineales, condición que se cumple en este modelo pero no es universal.
+- Idiomas soportados no documentados; no se garantiza cobertura multilingüe.
+- Longitud de contexto no documentada en la información disponible.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/ununununununununununununununununununun/gemma-3-270m-it-phi-lattice-v2
-- Modelo base (Unsloth): https://huggingface.co/unsloth/gemma-3-270m-it
-- No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.
+- Hugging Face: https://huggingface.co/ununununununununununununununununununun/gemma-3-270m-it-phi-lattice-v2
+- Modelo base: https://huggingface.co/unsloth/gemma-3-270m-it
+- Resultados de evaluación base: `evals/lm_eval_gemma_base/results_2026-11-09T13-11-06.757545.json` (referenciado en la model card)
+- Resultados de evaluación v2: `evals/lm_eval_gemma_v2/` (referenciado en la model card)

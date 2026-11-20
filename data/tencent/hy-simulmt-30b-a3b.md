@@ -2,63 +2,60 @@
 
 ## Resumen
 
-Hy-SimulMT-30B-A3B es un modelo de traducción simultánea en tiempo real desarrollado por Tencent Hunyuan. A diferencia de los modelos de traducción por turnos, recibe audio en streaming y va generando la traducción mientras el hablante sigue hablando, produciendo texto traducido y voz sintetizada, con clonación de voz en tiempo real que preserva las características vocales del hablante. Está pensado para comunicación en vivo: reuniones, ponencias, entrevistas y llamadas.
+Hy-SimulMT-30B-A3B es un modelo de traducción simultánea en tiempo real desarrollado por Tencent Hunyuan. Recibe audio de forma continua y traduce mientras el hablante habla, generando tanto texto traducido como voz sintetizada, con clonación de voz en tiempo real que preserva las características vocales del orador. El modelo está diseñado para comunicación en vivo: reuniones, conferencias, entrevistas y charlas, donde reducir la latencia es tan importante como mantener la calidad de la traducción.
 
-El modelo se publica con 30.394.794.496 parámetros totales según los pesos en safetensors (repo de 60,8 GB), licencia Apache 2.0 y compatibilidad con `transformers`. La nomenclatura "30B-A3B" del identificador sugiere una arquitectura de mezcla de expertos con aproximadamente 3.000 millones de parámetros activos por token, aunque la model card disponible no detalla la arquitectura interna ni la longitud de contexto.
+La arquitectura es de tipo MoE (Mixture of Experts) con 30.394.794.496 parámetros totales, según los pesos en safetensors del repositorio. La nomenclatura "A3B" del identificador sugiere aproximadamente 3 mil millones de parámetros activos por token, aunque este dato no se confirma explícitamente en la información disponible. El modelo se distribuye bajo licencia Apache 2.0 y cubre 36 idiomas en su etiquetado, aunque la funcionalidad de traducción simultánea de voz a voz se describe específicamente para chino-inglés bidireccional.
 
-Su relevancia actual está en el eje latencia-calidad: en la evaluación sobre el benchmark abierto RealSI de audio largo, el modelo alcanza un StreamLAAL de aproximadamente 3 segundos, el más bajo de los sistemas comparados, y una puntuación GEMBA superior a la de los modelos abiertos comparados y a cuatro de las cinco APIs comerciales incluidas en la comparativa. La model card describe explícitamente traducción bidireccional chino-inglés, aunque los metadatos del repositorio declaran 37 idiomas.
+Su relevancia actual radica en que aborda el equilibrio entre latencia y calidad en traducción simultánea: en la evaluación de audio largo RealSI, alcanza un StreamLAAL de aproximadamente 3 segundos, el más bajo entre los sistemas comparados, con una puntuación GEMBA superior a la de los modelos de código abierto comparados y a cuatro de las cinco APIs comerciales evaluadas.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible en la model card (el identificador "A3B" sugiere mezcla de expertos con ~3B activos; sin confirmar) |
-| Parámetros totales | 30.394.794.496 |
-| Parámetros activos | No disponible (estimación por nomenclatura: ~3.000 millones, sin confirmar) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | No disponible |
-| Idiomas soportados | Metadatos: zh, en, fr, pt, es, ja, tr, ru, ar, ko, th, it, de, vi, ms, id, tl, hi, pl, cs, nl, km, my, fa, gu, ur, te, mr, he, bn, ta, uk, bo, kk, mn, ug (37). La model card solo documenta traducción bidireccional zh ↔ en |
+| Arquitectura | MoE (Mixture of Experts), tag `hy_v3` en Hugging Face |
+| Parametros totales | 30.394.794.496 |
+| Parametros activos | no disponible (la nomenclatura "A3B" sugiere ~3B activos, sin confirmación explícita) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | 36 idiomas etiquetados: zh, en, fr, pt, es, ja, tr, ru, ar, ko, th, it, de, vi, ms, id, tl, hi, pl, cs, nl, km, my, fa, gu, ur, te, mr, he, bn, ta, uk, bo, kk, mn, ug |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (`transformers`, arquitectura declarada `hy_v3`) |
+| Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-La información publicada no detalla la arquitectura interna: la model card no especifica si se trata de un transformer denso, de una mezcla de expertos o de un diseño híbrido con codificador de audio y decodificador de texto/voz. El campo `architecture` de los pesos es `hy_v3` y el modelo se sirve mediante la librería `transformers`. El pipeline es de extremo a extremo para traducción simultánea: consume flujo de audio continuo y emite texto traducido más audio sintetizado, con un módulo de clonación de voz en tiempo real. La síntesis de voz y la clonación requieren un servicio TTS configurado aparte, según indica la documentación del repositorio.
+La información disponible no detalla la arquitectura interna más allá de la designación MoE y el tag `hy_v3`. El modelo se distribuye en formato safetensors para su uso con la librería transformers, con un tamaño de repositorio de 60,8 GB. La model card no especifica el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO.
 
-Tampoco se han publicado el volumen de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO. Lo que sí se documenta es la metodología de evaluación: combinación de benchmarks públicos de audio corto (FLEURS, CoVoST2, ACL6060, RealSI-Sentence), audio real de formato largo (RealSI long-form) y comparación con intérpretes simultáneos profesionales. El repositorio de GitHub acompaña al modelo con dos herramientas: SimulInfer, servicio de inferencia en streaming, y SimulTrain, utilidades de entrenamiento.
+La innovación técnica destacable es el enfoque de traducción simultánea en streaming: el modelo procesa audio incremental y genera traducción de forma continua, en lugar de esperar a recibir una frase completa. El repositorio de GitHub asociado (Tencent-Hunyuan/Hy-SimulMT) proporciona la infraestructura de inferencia SimulInfer y las herramientas de entrenamiento SimulTrain. La salida de voz y la clonación de voz requieren un servicio TTS configurado externamente, por lo que el modelo no incluye por sí mismo la síntesis de voz completa.
 
 ## Capacidades
 
-- Traducción simultánea bidireccional chino ↔ inglés sobre audio en streaming, sin esperar al final del turno del hablante.
-- Salida dual: texto traducido y voz sintetizada en el idioma destino.
-- Clonación de voz en tiempo real: preserva las características vocales del hablante en el audio generado.
-- Comprensión incremental de audio: procesa el flujo según llega y formula la traducción con información parcial.
-- Baja latencia de streaming: StreamLAAL de ~3 s en la evaluación RealSI de audio largo.
-- Capacidad declarada en metadatos para 37 idiomas (incluye español, francés, alemán, portugués, árabe, hindi, japonés, coreano, ruso, turco, vietnamita, tailandés, entre otros).
-- Integración con `transformers` y endpoints compatibles.
-- Soporte de tool calling / function calling: no disponible.
-- Capacidades de agente y razonamiento multi-paso: no disponibles.
-- Modo de razonamiento explícito (thinking): no disponible.
-- Visión: no disponible.
+- Traducción simultánea bidireccional chino-inglés de voz a voz, con generación de texto y audio traducidos.
+- Clonación de voz en tiempo real que preserva las características vocales del hablante.
+- Procesamiento de audio en streaming continuo, traduciendo mientras el hablante sigue hablando.
+- Traducción de texto multilingüe: el etiquetado cubre 36 idiomas, incluidos español, francés, alemán, portugués, árabe, hindi, japonés, coreano y tailandés, entre otros.
+- Evaluado en benchmarks de audio corto (FLEURS, CoVoST2, ACL6060, RealSI-Sentence) y de audio largo (RealSI).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Modo thinking, visión o audio de entrada más allá del flujo de traducción: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Interpretación simultánea en reuniones bilingües chino-inglés: el modelo consume el audio de la sala y emite subtítulos y voz traducida con ~3 s de retardo, lo que permite seguir una reunión sin esperar a que el ponente termine cada frase.
-- Ponencias y conferencias con audiencia mixta: integrado en la plataforma de videoconferencia, genera una pista de audio traducida y clonada con la voz del orador, evitando la interrupción que introduce la interpretación por turnos.
-- Entrevistas y ruedas de prensa en directo: al mantenerse dentro del flujo de audio, permite publicar subtítulos traducidos casi en tiempo real en retransmisiones, donde un modelo por turnos acumularía varios segundos de espera adicionales.
-- Atención al cliente transfronteriza con voz: combinado con un servicio TTS, permite que un agente hable en su idioma y el cliente reciba la respuesta en el suyo con su propia voz clonada, manteniendo la naturalidad de la conversación telefónica.
-- Subtitulado automático de contenido en directo (webinars, streaming): el modelo entrega texto traducido de forma continua, adecuado para sobretitulado en vivo donde la latencia perceptible debe mantenerse por debajo de 3-4 segundos.
-- Investigación en traducción simultánea: SimulTrain permite reproducir el pipeline de entrenamiento y evaluar variantes sobre RealSI, útil para grupos que trabajan en políticas de espera (wait-k, políticas adaptativas) y métricas de latencia como StreamLAAL.
-- Prototipado de asistentes de viaje o atención presencial: la app Hy Translate sirve como referencia de producto para validar la calidad percibida antes de integrar el modelo en una aplicación propia.
+- Reuniones internacionales en vivo: el modelo traduce simultáneamente chino-inglés mientras los participantes hablan, con un retardo de aproximadamente 3 segundos (StreamLAAL) y preservando la voz del orador mediante clonación, lo que reduce la interrupción del flujo conversacional.
+- Conferencias y ponencias de larga duración: al procesar audio en streaming sin esperar al final de cada frase, mantiene la sincronía con el ponente en discursos extensos, escenario evaluado específicamente en el benchmark RealSI de audio largo.
+- Entrevistas y ruedas de prensa bilingües: permite a un periodista seguir una entrevista en chino o inglés con traducción de texto y voz en tiempo real, sin depender de un intérprete humano presente.
+- Atención al cliente multilingüe en vivo: integrado con un servicio TTS y un canal de audio, puede traducir conversaciones telefónicas o de videollamada entre clientes y agentes que hablan chino e inglés.
+- Subtitulado y doblaje en directo para retransmisiones: la salida de texto traducido puede alimentar sistemas de subtitulado, mientras la salida de voz clonada permite un doblaje en tiempo real con la voz original del hablante.
+- Investigación en traducción simultánea: el repositorio de GitHub ofrece SimulTrain para entrenamiento y SimulInfer para inferencia, lo que permite reproducir experimentos y adaptar el modelo a nuevos pares de idiomas o dominios.
+- Aplicaciones móviles de traducción: el modelo se integra en la Hy Translate App (Android e iOS), lo que demuestra su viabilidad en despliegues de consumo para interpretación en conversaciones presenciales.
 
 ## Benchmarks y rendimiento
 
-Calidad de traducción en cuatro benchmarks públicos de audio corto (puntuación más alta, mejor):
+Evaluación en benchmarks de audio corto (puntuaciones más altas son mejores):
 
-| Sistema | FLEURS | CoVoST2 | ACL6060 | RealSI-Sentence |
+| API / Modelo | FLEURS | CoVoST2 | ACL6060 | RealSI-Sentence |
 |---|---:|---:|---:|---:|
-| Hy-SimulMT | 90,3 | 75,5 | 81,2 | 84,7 |
 | Qwen3.8-LiveTranslate | 88,4 | 82,1 | 80,5 | 84,4 |
+| **Hy-SimulMT** | **90,3** | **75,5** | **81,2** | **84,7** |
 | Gemini3.5-LiveTranslate | 92,4 | 74,4 | 82,6 | 82,2 |
 | Confucius4 R2T2 → T3PO | 89,4 | 76,8 | 76,1 | 77,7 |
 | Seed-LiveInterpret2.0 | 85,8 | 67,7 | 74,8 | 80,0 |
@@ -67,50 +64,36 @@ Calidad de traducción en cuatro benchmarks públicos de audio corto (puntuació
 | XunFei-Simult-Interpretation | 73,4 | 57,0 | 57,5 | 70,9 |
 | SeamlessStreaming | 72,8 | 60,9 | 49,8 | 56,9 |
 
-Evaluación de audio largo (RealSI long-form):
-
-| Métrica | Resultado |
-|---|---|
-| StreamLAAL (retardo de traducción en streaming) | ~3 segundos, el más bajo de los sistemas comparados |
-| GEMBA (calidad de traducción) | Superior a los modelos abiertos comparados y a 4 de las 5 APIs comerciales de la comparativa |
-
-Notas: la model card indica que StreamLAAL no equivale al tiempo hasta la primera salida de voz. Los valores de la tabla son los publicados por el autor; no se dispone de resultados independientes ni de desgloses por par de idiomas más allá de chino-inglés. No se han publicado resultados de MMLU, HumanEval, GSM8K ni de benchmarks de razonamiento general, coherente con un modelo especializado en traducción.
+En la evaluación de audio largo RealSI, Hy-SimulMT obtuvo un StreamLAAL de aproximadamente 3 segundos, el más bajo entre los sistemas comparados, y una puntuación GEMBA superior a la de los modelos de código abierto comparados y a cuatro de las cinco APIs comerciales. No se proporcionan los valores numéricos exactos de GEMBA ni de StreamLAAL para el resto de sistemas.
 
 ## Requisitos de hardware
 
-- VRAM para inferencia en bf16/fp16: en torno a 61-65 GB solo para pesos (30.394 millones de parámetros × 2 bytes ≈ 60,8 GB), más overhead de activaciones y del codificador de audio. Estimación basada en el tamaño de los pesos; no publicada por el autor.
-- VRAM en cuantización de 8 bits: ~31-35 GB estimados. En 4 bits: ~16-19 GB estimados. El autor no documenta qué esquemas de cuantización están soportados ni su impacto en calidad para este modelo.
-- GPU recomendadas para bf16: A100 80 GB, H100 80 GB o H200. Con dos GPU de 40-48 GB (A100 40 GB, L40S) sería necesario reparto de pesos o cuantización.
-- GPU de consumo: no cabe en bf16 en una RTX 4090 (24 GB). En 4 bits podría ajustarse en una RTX 4090 o RTX 3090, condicionado a que exista soporte de cuantización para la arquitectura `hy_v3`, extremo no confirmado.
-- Despliegue: `transformers` es la librería declarada; el repositorio de GitHub proporciona SimulInfer como servicio de inferencia en streaming. Soporte en vLLM, TGI, llama.cpp u Ollama: no disponible. La síntesis de voz y la clonación requieren un servicio TTS externo configurado.
-- Latencia y throughput: el único dato publicado es el StreamLAAL de ~3 s en RealSI long-form. No se han publicado cifras de tokens por segundo ni de tiempo hasta el primer token.
+- VRAM estimada para inferencia: no disponible en la información proporcionada. Con 30,39 mil millones de parámetros totales y pesos safetensors en el repositorio de 60,8 GB, la inferencia en precisión completa requiere al menos esa cantidad de memoria, sin contar el servicio TTS externo necesario para la salida de voz.
+- GPU recomendadas: no disponible en la información proporcionada.
+- Viabilidad en GPU de consumo: no disponible en la información proporcionada.
+- Opciones de despliegue: el repositorio de GitHub proporciona SimulInfer como servicio de inferencia; la librería declarada es transformers. No se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: el modelo reporta un StreamLAAL de aproximadamente 3 segundos en el benchmark RealSI de audio largo, que mide el retardo de la traducción en streaming, no el tiempo hasta la primera salida de voz. No se publican cifras de throughput (tokens por segundo).
 
 ## Comparativa con modelos similares
 
-Comparativa limitada a los sistemas incluidos en la evaluación del autor; no se dispone de parámetros, contexto ni licencia de los alternativas.
+| Modelo | Parámetros | Contexto | Calidad (FLEURS) | Latencia (StreamLAAL) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| **Hy-SimulMT** | 30,39B (MoE) | no disponible | 90,3 | ~3 s (menor del comparativo) | Apache 2.0 | Hugging Face, ModelScope, GitHub |
+| Qwen3.8-LiveTranslate | no disponible | no disponible | 88,4 | no disponible | no disponible | API comercial |
+| Gemini3.5-LiveTranslate | no disponible | no disponible | 92,4 | no disponible | no disponible | API comercial |
+| SeamlessStreaming | no disponible | no disponible | 72,8 | no disponible | no disponible | modelo de código abierto |
 
-| Sistema | Tipo | FLEURS | CoVoST2 | ACL6060 | RealSI-Sentence | StreamLAAL (RealSI largo) |
-|---|---|---:|---:|---:|---:|---|
-| Hy-SimulMT | Abierto, Apache 2.0, 30,4B totales | 90,3 | 75,5 | 81,2 | 84,7 | ~3 s (el menor) |
-| Qwen3.8-LiveTranslate | Comparativa del autor | 88,4 | 82,1 | 80,5 | 84,4 | No disponible en la información |
-| Gemini3.5-LiveTranslate | API comercial | 92,4 | 74,4 | 82,6 | 82,2 | No disponible en la información |
-| GPT-Realtime-Translate | API comercial | 77,7 | 50,8 | 76,4 | 76,7 | No disponible en la información |
-| SeamlessStreaming | Abierto (referencia de streaming) | 72,8 | 60,9 | 49,8 | 56,9 | No disponible en la información |
-
-Lectura: Hy-SimulMT es el único de la comparativa con licencia Apache 2.0 confirmada y pesos descargables entre los que lideran la tabla. Gemini3.5-LiveTranslate supera al modelo en FLEURS (92,4 frente a 90,3) y ACL6060 (82,6 frente a 81,2), mientras que Qwen3.8-LiveTranslate lo supera en CoVoST2 (82,1 frente a 75,5); Hy-SimulMT queda por delante del resto en RealSI-Sentence y en la métrica de latencia sobre audio largo.
+Hy-SimulMT combina la mejor puntuación FLEURS entre los modelos de código abierto comparados (90,3) con la menor latencia de streaming del conjunto evaluado, y se distribuye con licencia Apache 2.0, lo que facilita su uso comercial. Los datos de parámetros, contexto y latencia de los competidores no están disponibles en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Cobertura lingüística no confirmada: la model card solo documenta traducción bidireccional chino-inglés, mientras que los metadatos declaran 37 idiomas. No hay benchmarks ni ejemplos para el resto de pares, incluido el español. No asumas calidad multilingüe sin evaluarla.
-- Es un modelo de traducción de audio, no un LLM de propósito general: no hay evidencia publicada de generación de texto libre, código, matemáticas, tool calling ni razonamiento multi-paso.
-- Dependencia de servicios externos: la salida de voz y la clonación requieren un servicio TTS configurado aparte. Sin él, el modelo solo aporta la parte textual.
-- Clonación de voz: implica riesgos de suplantación y obligaciones de consentimiento y transparencia. La licencia Apache 2.0 no exime de la normativa aplicable sobre datos biométricos y síntesis de voz.
-- Riesgo de alucinación y de errores de traducción acumulados: en streaming, el modelo traduce con información parcial del enunciado, lo que puede producir reformulaciones, omisiones o anticipaciones incorrectas que un modelo por turnos evitaría.
-- Sesgos: no se ha publicado ninguna evaluación de sesgos, robustez ante acentos, ruido de fondo o solapamiento de hablantes.
-- Sin datos de arquitectura ni de entrenamiento: la ausencia de información sobre contexto máximo, composición del dataset y procesos de alineación impide auditar el modelo con el detalle habitual en producción.
-- Resultados procedentes del autor: las cifras de la tabla y el StreamLAAL de ~3 s no han sido replicados de forma independiente en la información disponible.
-- Estado del arte cambiante: los sistemas comparados son APIs y modelos cerrados de terceros, por lo que la comparativa refleja el momento de publicación (26 de octubre de 2026) y puede quedar desactualizada rápidamente.
-- Licencia: Apache 2.0 permite uso comercial y modificación, pero conviene revisar los términos del repositorio y de cualquier servicio TTS asociado, que puede tener licencia distinta.
+- La funcionalidad de traducción simultánea de voz a voz se describe específicamente para chino-inglés bidireccional; el resto de los 36 idiomas etiquetados no tiene confirmación de soporte en modo simultáneo.
+- La salida de voz y la clonación de voz requieren un servicio TTS configurado externamente; el modelo por sí solo no genera audio.
+- La clonación de voz en tiempo real plantea riesgos de suplantación de identidad y uso indebido; es necesario implementar controles de consentimiento y salvaguardas en producción.
+- No se han publicado datos sobre sesgos del modelo, tasas de alucinación ni comportamiento en dominios especializados (médico, legal, técnico).
+- No se especifican la longitud de contexto, los tipos de cuantización ni los requisitos de hardware, lo que dificulta planificar el despliegue.
+- Los resultados de benchmarks provienen de la propia model card del autor; no se han verificado de forma independiente en la información disponible.
+- La licencia Apache 2.0 permite uso comercial, pero el cumplimiento de la licencia del servicio TTS externo y de las herramientas del repositorio debe verificarse por separado.
 
 ## Enlaces
 
@@ -119,7 +102,4 @@ Lectura: Hy-SimulMT es el único de la comparativa con licencia Apache 2.0 confi
 - Colección en ModelScope: https://www.modelscope.cn/collections/Tencent-Hunyuan/Hy-SimulMT
 - Repositorio GitHub (SimulInfer y SimulTrain): https://github.com/Tencent-Hunyuan/Hy-SimulMT
 - README en chino: https://huggingface.co/tencent/Hy-SimulMT-30B-A3B/blob/main/README_CN.md
-- App Hy Translate (Android e iOS): enlaces de descarga mediante códigos QR en la model card del repositorio de Hugging Face
-- Página corporativa de Tencent: https://www.tencent.com/
-- Información sobre Tencent (Wikipedia): https://en.wikipedia.org/wiki/Tencent
-- No se han encontrado en la búsqueda web papers técnicos, blogs de ingeniería ni demos adicionales específicos del modelo.
+- Aplicación Hy Translate (Android e iOS): enlaces de descarga mediante códigos QR en la model card

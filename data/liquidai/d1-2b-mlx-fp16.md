@@ -2,91 +2,86 @@
 
 ## Resumen
 
-d1-2B-MLX-fp16 es la versión en formato MLX y precisión FP16, optimizada para Apple Silicon, del modelo d1-2B de Liquid AI. d1-2B no es un modelo de lenguaje generativo convencional, sino un "modelo de decisión" multimodal que responde preguntas con nombre y tipo (sí/no, clasificación, puntuación, conteo, localización) sobre un estado dado (texto, imagen o vídeo) devolviendo probabilidades calibradas en una sola pasada hacia adelante, sin generar tokens de salida.
+d1-2B es un modelo de decisión desarrollado por Liquid AI que responde preguntas tipadas y con nombre sobre un estado (texto, imágenes o vídeo) devolviendo probabilidades calibradas en un único paso forward, sin generar tokens. Se distribuye aquí como `d1-2B-MLX-fp16`, una conversión a FP16 del checkpoint original para Apple Silicon mediante la librería MLX, con un peso en disco de 3,84 GB. Con 1.918.181.888 parámetros, pertenece a la familia LFM3 de Liquid AI y se etiqueta internamente como `lfm3_vl`.
 
-Esto lo posiciona en una categoría propia: en lugar de producir texto libre que luego hay que parsear, entrega respuestas estructuradas y calibradas directamente, lo que resulta muy relevante para tareas de clasificación, enrutado y calibración en el borde (edge), donde la latencia, el coste por consulta y la fiabilidad del formato de salida son críticos. Con cerca de 1.918 millones de parámetros y un peso en disco de 3,84 GB, está pensado para ejecutarse en dispositivos locales, especialmente Mac con Apple Silicon.
+El modelo no es un generador de texto conversacional al uso: su interfaz (`model.system_one`) acepta un estado y un conjunto de preguntas con tipos definidos (`noul`, `choice`, `score`) y devuelve respuestas con probabilidad calibrada. Esto lo sitúa en la categoría de modelos "system-one" orientados a clasificación, enrutamiento y calibración, en contraposición a los modelos generativos que razonan paso a paso. Es multimodal (image-text-to-text) y soporta 16 idiomas, entre ellos el español.
 
-## Especificaciones tecnicas
+Su relevancia práctica radica en la eficiencia: al no generar tokens, el coste de inferencia se reduce a un solo paso forward, lo que resulta atractivo para clasificación de tickets, enrutamiento, moderación o etiquetado a gran escala en hardware de consumo Apple. La licencia es `lfm1.0` (marcada como "other"), por lo que conviene revisar sus términos antes de un uso comercial.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | LFM3 (Liquid Foundation Models), modelo de decisión multimodal "system one" |
-| Parametros totales | 1.918.181.888 (dato real de safetensors) |
-| Parametros activos | no disponible (no hay indicios de que sea MoE) |
+| Arquitectura | LFM3 (`lfm3_vl`), multimodal image-text-to-text; detalles de capas no disponibles |
+| Parámetros totales | 1.918.181.888 |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | FP16 (version MLX-fp16; no existe exportacion BF16, FP16 es la precision recomendada) |
-| Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl |
-| Licencia | lfm1.0 (licencia propia "other" de Liquid AI) |
-| Formato de pesos | safetensors (formato MLX) |
+| Tipos de cuantización | FP16 (esta variante); cuantizaciones adicionales no disponibles |
+| Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl (16) |
+| Licencia | lfm1.0 (license: other) |
+| Formato de pesos | safetensors (MLX, FP16) |
 
 ## Arquitectura y entrenamiento
 
-d1-2B se basa en la familia LFM3 de Liquid AI y hereda su enfoque de arquitecturas "liquid" eficientes para el edge. Su rasgo distintivo es el paradigma "system one": en lugar de decodificar tokens autoregresivamente, el modelo evalua un estado (texto, imagen o video) y responde un conjunto de preguntas con nombre y tipo en una unica pasada hacia adelante. Los tipos de pregunta documentados incluyen binario ("noul"), eleccion simple o multiple ("choice"), puntuacion sobre una escala ("score"), numero con rango y paso ("number") y caja de localizacion con coordenadas normalizadas ("box"), cada una con probabilidades calibradas.
+La model card de esta variante remite a la del modelo base `LiquidAI/d1-2B` para los detalles de arquitectura y uso, y no aporta información sobre número de tokens de entrenamiento, composición del dataset ni si hubo RLHF/DPO. Lo que sí se explicita es la naturaleza del modelo: un modelo de decisión que, dado un estado (texto, imagen o vídeo) y un conjunto de preguntas nombradas y tipadas, produce respuestas con probabilidades calibradas en un único paso forward, sin decodificación autoregresiva de tokens. Los tags de la familia incluyen `decision`, `classification`, `calibration`, `system-one` y `multimodal`.
 
-La model card no detalla el numero de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF/DPO: no disponible. El repositorio es una conversion a MLX en FP16 del checkpoint original (LiquidAI/d1-2B), que se ejecutaba en float32; FP16 es la precision recomendada por ser la mas cercana al checkpoint original.
+La conversión a MLX almacena los pesos en FP16, precisión recomendada por el autor por ser la más cercana al checkpoint original ejecutado en float32; se indica explícitamente que no se ha exportado una versión BF16. No se detallan innovaciones técnicas adicionales como decodificación especulativa o atención lineal en la información disponible.
 
 ## Capacidades
 
-- Respuesta de preguntas con nombre y tipo sobre un estado de texto: binario, eleccion multiple, puntuacion, con probabilidades calibradas.
-- Respuesta en una sola pasada sin generacion de tokens (output_tokens: 0), lo que elimina la latencia de decodificacion autoregresiva.
-- Comprension multimodal: puede usar una imagen como estado completo y responder preguntas de conteo ("number") y localizacion ("box") sobre ella.
-- Soporte de video como estado, segun la model card original.
-- Varias preguntas sobre el mismo estado en una unica llamada (`model.system_one`) y procesamiento por lotes (`model.system_one_batch`).
-- Salidas estructuradas en JSON listas para integracion en pipelines, sin necesidad de parsing de texto libre.
-- Soporte multilingue en 16 idiomas, incluido el castellano.
-- Ejecucion local en Apple Silicon mediante MLX.
+- Decisión y clasificación sobre texto: respuestas a preguntas con nombre y tipo (`noul` para sí/no con probabilidad, `choice` para selección entre criterios, `score` para puntuación sobre una escala con leyenda).
+- Clasificación multietiqueta mediante el parámetro `multiple: true` en preguntas de tipo `choice`.
+- Procesamiento de imágenes como estado completo de la consulta (pipeline image-text-to-text); también se menciona vídeo como entrada.
+- Salida con probabilidades calibradas, apta para umbrales y enrutamiento automatizado.
+- Respuesta en un único paso forward sin generación de tokens (el ejemplo de la model card reporta `output_tokens: 0`).
+- Multilingüe en 16 idiomas, incluido el español.
+- No se documenta soporte de tool calling, function calling, agentes multi-paso ni modo de razonamiento extendido (thinking); el modelo no genera texto libre, por lo que los flujos conversacionales tipo chat no son aplicables.
 
 ## Casos de uso
 
-- Enrutado de tickets de soporte: clasifica cada ticket por equipo (billing, shipping, technical) y detecta multiples temas en una sola pasada, con probabilidades calibradas para establecer umbrales de confianza y escalado a humanos.
-- Moderacion y clasificacion de contenido: decide de forma binaria o multiclase si un mensaje incumple politicas, con calibracion que permite ajustar el punto de operacion segun el coste de falsos positivos y falsos negativos.
-- Priorizacion automatica: asigna puntuaciones de urgencia ("score") a mensajes o tickets, util para colas de atencion al cliente o triaje de incidencias.
-- Analisis visual rapido: cuenta objetos en una imagen o localiza elementos con coordenadas de caja normalizadas, util para inventario visual, comprobacion de imagenes o automatizaciones en dispositivos Apple.
-- Extraccion de atributos estructurados: convierte texto no estructurado en campos tipados (booleanos, categorias, numeros en rango) para alimentar bases de datos o sistemas downstream sin LLM generativo.
-- Despliegue en el edge con coste predecible: al no generar tokens, el coste y la latencia por consulta son constantes, ideal para clasificacion masiva en local o en dispositivos con recursos limitados.
-- Calibracion de sistemas de decision: las probabilidades calibradas permiten usar el modelo como juez o verificador de bajo coste sobre las salidas de otros modelos.
+- Enrutamiento de tickets de soporte: el ejemplo de la model card clasifica un ticket en equipo (`billing`, `shipping`, `technical`), detecta temas multietiqueta y estima urgencia en una sola pasada; adecuado porque devuelve probabilidades calibradas que permiten fijar umbrales de derivación automática.
+- Triaje y priorización en atención al cliente: preguntas de tipo `score` sobre una escala (`low`, `medium`, `high`) permiten ordenar colas de trabajo sin coste de generación de texto.
+- Moderación de contenido: preguntas `noul` con probabilidad calibrada permiten decidir si un texto o imagen infringe una política, ajustando el umbral según la tolerancia a falsos positivos.
+- Etiquetado de imágenes a escala: al tratar la foto como estado completo, puede responder preguntas de clasificación sobre imágenes (categoría, presencia de objetos definidos por criterios) en un solo forward, útil para pipelines de anotación.
+- Análisis de formularios y documentos escaneados: combinación de imagen y preguntas tipadas para extraer decisiones de clasificación (tipo de documento, departamento destinatario) sin OCR ni generación.
+- Clasificación multilingüe de reseñas o mensajes: con soporte de 16 idiomas, puede etiquetar sentimiento, tema o intención en textos en español, inglés, árabe, chino, etc., con el mismo esquema de preguntas.
+- Despliegue local en Mac: la variante MLX FP16 (3,84 GB) permite ejecutar el modelo en Apple Silicon para prototipado y clasificación en local sin GPU dedicada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Como referencia operativa, el ejemplo de la model card reporta 189 tokens de entrada y 0 tokens de salida para una consulta con cuatro preguntas sobre un mismo estado.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- Los pesos ocupan 3,84 GB en FP16; para inferencia en MLX conviene contar con al menos 6-8 GB de memoria unificada disponibles.
-- Pensado para Apple Silicon (Mac con chips M1/M2/M3/M4) mediante el framework MLX; no requiere GPU discreta NVIDIA.
-- Cabe comodamente en portatiles Apple Silicon con 8 GB de RAM o mas; no aplica la distincion tipica de consumer GPUs NVIDIA (RTX 4090, etc.) al tratarse de un formato especifico de Apple.
-- Despliegue mediante MLX-VLM (soporte en progreso segun la model card) o la CLI `python -m mlx_vlm decide`; tambien existe el modelo base LiquidAI/d1-2B para otros entornos.
-- Latencia y throughput: no disponible en cifras concretas; al responder sin generar tokens (0 output tokens), la latencia por consulta es independiente del numero de preguntas sobre el mismo estado.
+- VRAM/memoria unificada estimada: los pesos FP16 ocupan 3,84 GB según la model card; el repo completo pesa 3,9 GB. Hay que sumar la memoria del procesador multimodal y de activaciones, no cuantificada en la información disponible.
+- Hardware objetivo: Apple Silicon mediante MLX; requiere MLX-VLM 0.7.11 o superior (`pip install -U "mlx-vlm>=0.7.11"`).
+- GPU NVIDIA: no se documenta soporte en esta variante; el formato es MLX, específico de Apple.
+- GPU de consumo: cabe en equipos Apple Silicon con memoria unificada suficiente (los pesos solos son 3,84 GB); no se especifican modelos concretos de Mac ni requisitos mínimos de memoria unificada.
+- Opciones de despliegue: MLX-VLM con `model.system_one` o el comando `decide`. No es compatible con `mlx_vlm.generate` ni con aplicaciones de chat, porque el modelo no genera texto.
+- Latencia y throughput: no disponibles; al no generar tokens, el coste por consulta es de un único paso forward, pero no se publican cifras.
 
 ## Comparativa con modelos similares
 
-d1-2B pertenece a una categoria poco poblada (modelos de decision calibrados sin generacion de tokens), por lo que la comparacion directa es limitada. Se ofrecen referencias frente a modelos multimodales pequenos generativos de la misma casa y de tamano similar:
-
-| Modelo | Tipo | Parametros | Salida | Licencia |
-|---|---|---|---|---|
-| LiquidAI/d1-2B-MLX-fp16 | Modelo de decision multimodal | ~1,92 B | Respuestas tipadas con probabilidades calibradas, sin generacion | lfm1.0 |
-| LiquidAI/LFM3-1.7B | LLM generativo | ~1,7 B | Texto generado | lfm1.0 |
-| Qwen2.5-VL-3B-Instruct | VLM generativo | ~3 B | Texto generado (requiere parsing para tareas estructuradas) | Apache 2.0 |
-
-La ventaja diferencial de d1-2B frente a un VLM generativo pequeno es la salida estructurada y calibrada con coste constante por consulta; a cambio, no sirve para generacion de texto libre, razonamiento extenso ni codigo.
+No disponible. La información proporcionada no incluye modelos comparables de la misma categoría (modelos de decisión con salida calibrada sin generación de tokens) ni datos de rendimiento que permitan una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
-- No es un modelo generativo: no produce texto libre, no es adecuado para chat abierto, redaccion, codigo ni razonamiento multi-paso.
-- No hay evidencia de soporte de tool calling ni de agentes: no disponible.
-- El soporte en MLX-VLM estaba en progreso en el momento de publicacion de la model card, por lo que la integracion puede requerir versiones recientes o codigo propio.
-- No se publican benchmarks ni datos de calibracion verificables de terceros; conviene validar la calibracion de probabilidades en el dominio concreto de uso antes de producir.
-- Licencia lfm1.0 ("other"): no es una licencia estandar abierta; revisar el texto de la licencia antes de cualquier uso comercial.
-- Al tratarse de una conversion MLX en FP16, el uso queda restringido en la practica al ecosistema Apple; para otras plataformas hay que acudir al modelo base LiquidAI/d1-2B.
-- Riesgo de alucinacion y sesgos: no disponible en la model card, pero como en todo modelo entrenado con datos a gran escala, se recomienda evaluacion propia en tareas sensibles.
+- No es un modelo generativo: no produce texto libre ni mantiene conversaciones; `mlx_vlm.generate` y las apps de chat no pueden ejecutarlo.
+- Requiere definir previamente las preguntas, sus tipos y, en su caso, los criterios de elección; la calidad de la salida depende del diseño del esquema de decisión.
+- No se documentan sesgos conocidos, pero al ser un modelo multilingüe y multimodal entrenado con datos no especificados, cabe esperar sesgos propios de esos datos; no hay información para cuantificarlos.
+- Riesgo de calibración deficiente fuera de la distribución de entrenamiento: las probabilidades son calibradas según el autor, pero no se aportan métricas de calibración (ECE, Brier) ni benchmarks que lo verifiquen.
+- Longitud de contexto no disponible: no se puede garantizar el comportamiento con estados largos (documentos extensos o vídeos de larga duración).
+- Licencia `lfm1.0` (license: other): es necesario revisar el archivo LICENSE del repositorio antes de cualquier uso comercial; no se detallan aquí sus restricciones.
+- Solo FP16 en MLX: no hay exportación BF16 y no se documentan cuantizaciones de menor precisión para esta variante.
+- Dependencia de una versión mínima de MLX-VLM (0.7.11) y de código con `custom_code`, lo que puede complicar la integración en stacks fuera de MLX.
 
 ## Enlaces
 
-- Modelo MLX FP16: https://huggingface.co/LiquidAI/d1-2B-MLX-fp16
-- Modelo base d1-2B: https://huggingface.co/LiquidAI/d1-2B
-- MLX-VLM: https://github.com/Blaizzy/mlx-vlm
-- Guia MLX de Liquid AI: https://docs.liquid.ai/deployment/on-device/mlx
-- Documentacion LFM: https://docs.liquid.ai/lfm/getting-started/welcome
-- Blog LFM3: https://www.liquid.ai/blog/lfm3
+- Modelo en Hugging Face: https://huggingface.co/LiquidAI/d1-2B-MLX-fp16
+- Modelo base: https://huggingface.co/LiquidAI/d1-2B
+- Licencia: https://huggingface.co/LiquidAI/d1-2B-MLX-fp16/blob/main/LICENSE
+- MLX-VLM (repositorio): https://github.com/Blaizzy/mlx-vlm
+- Blog de LFM3: https://www.liquid.ai/blog/lfm3
+- Documentación de Liquid AI: https://docs.liquid.ai/lfm/getting-started/welcome
 - Playground: https://playground.liquid.ai/
-- Consola API: https://console.liquid.ai/dashboard
+- API/consola: https://console.liquid.ai/dashboard

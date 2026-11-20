@@ -2,48 +2,49 @@
 
 ## Resumen
 
-LFM3-VL-2B-ONNX es la versión en formato ONNX del modelo multimodal LFM3-VL-2B de Liquid AI, diseñada para inferencia multiplataforma mediante ONNX Runtime. Se trata de un modelo image-text-to-text (visión-lenguaje) compacto, de unos 2 mil millones de parámetros, capaz de procesar imágenes y texto para generar respuestas conversacionales. Su relevancia radica en la combinación de un tamaño muy reducido con capacidades multimodales y soporte de 16 idiomas, lo que lo hace idóneo para despliegues en dispositivos con recursos limitados (CPU locales, móviles, edge) donde los modelos de mayor tamaño no son viables.
+LFM3-VL-2B-ONNX es la version exportada a ONNX Runtime del modelo multimodal LFM3-VL-2B de Liquid AI, disenada para inferencia multiplataforma (CPU, GPU, dispositivos edge) sin depender de frameworks de deep learning pesados. El modelo original es un image-text-to-text de 2 mil millones de parametros que combina un decoder de lenguaje con un encoder visual, y esta version ONNX empaqueta ambos componentes en precisiones cuantizadas para reducir el peso y facilitar el despliegue.
 
-El repo incluye cinco precisiones cuantizadas (q4, q8, q4f16, q8f16 y fp16), cada una emparejando un decodificador con un codificador de visión, con archivos que van desde 1,69 GB en cuantización de 4 bits hasta el peso completo en fp16. Esto permite ejecutar el modelo en CPU sin GPU dedicada o acelerarlo en GPU, cubriendo un amplio espectro de hardware. La licencia es propia de Liquid AI (lfm1.0), con condiciones específicas que conviene revisar antes de uso comercial.
+Liquid AI es una compania conocida por sus modelos basados en arquitecturas de espacio de estados (LFM, Liquid Foundation Models) y por optimizar modelos compactos para ejecucion local. Este lanzamiento es relevante porque acerca la capacidad multimodal (vision + lenguaje) a entornos donde no hay GPU dedicada, con tamanos de archivo que van desde 1,69 GB (q4) hasta 2,51 GB (q8), lo que permite ejecutarlo en portatiles, contenedores ligeros o servidores sin acelerador.
+
+El modelo soporta 16 idiomas (incluido el castellano) y se distribuye bajo la licencia propietaria lfm1.0, lo que condiciona su uso comercial. La fecha de creacion del repositorio (octubre de 2026) y su actualizacion (noviembre de 2026) indican que es un lanzamiento reciente dentro de la familia LFM3.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Multimodal (decodificador LFM3 + codificador de visión); detalles en la model card original |
-| Parametros totales | ~2B (LFM3-VL-2B) |
-| Parametros activos | no disponible (no se indica si es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | q4, q8, q4f16, q8f16, fp16 |
-| Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl (16 idiomas) |
-| Licencia | lfm1.0 (other) |
-| Formato de pesos | ONNX |
+| Arquitectura | No disponible (modelo multimodal image-text-to-text; decoder de lenguaje + vision encoder) |
+| Parametros totales | 2 mil millones (2B) |
+| Parametros activos | No aplica (no es MoE segun la informacion disponible) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | q4 (decoder q4 + vision encoder q8) y q8 (decoder q8 + vision encoder fp16) |
+| Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl |
+| Licencia | lfm1.0 (propietaria, license: other) |
+| Formato de pesos | ONNX (onnxruntime) |
 
 ## Arquitectura y entrenamiento
 
-El modelo combina un decodificador de lenguaje basado en la familia LFM3 de Liquid AI con un codificador de visión independiente; en el formato ONNX, cada precisión se distribuye como dos ficheros separados (decoder y vision_encoder) que se ejecutan de forma conjunta en ONNX Runtime. Esta separación permite cuantizar cada componente con una precisión distinta: por ejemplo, la variante q4 empareja un decodificador en 4 bits con un codificador de visión en 8 bits, y la variante q8 usa decodificador de 8 bits con codificador de visión en fp16.
+La informacion disponible no detalla la arquitectura interna del modelo base LFM3-VL-2B mas alla de que es un modelo multimodal image-text-to-text con un decoder de lenguaje y un vision encoder separados. La model card de esta version ONNX remite explicitamente a la model card original para los detalles de arquitectura y uso. No se especifican el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
 
-La información sobre datos de entrenamiento (número de tokens, composición del dataset, uso de RLHF o DPO) y sobre innovaciones técnicas específicas no está disponible en la model card de esta versión ONNX; los detalles de arquitectura y entrenamiento remiten a la model card del modelo base LFM3-VL-2B. La familia LFM (Liquid Foundation Models) de Liquid AI se caracteriza por arquitecturas no convencionales basadas en unidades líquidas, pero esta ficha no incluye datos concretos verificables para esta versión.
+La innovacion principal de esta version es el empaquetado en ONNX Runtime, que permite ejecutar el modelo en multiples plataformas (CPU, GPU, edge) con dos niveles de precision. Cada precision empareja un decoder con un vision encoder: q4 usa decoder q4 + vision encoder q8 (1,69 GB), y q8 usa decoder q8 + vision encoder fp16 (2,51 GB). No se han publicado detalles sobre decodificacion especulativa, atencion lineal u otras optimizaciones en la informacion proporcionada.
 
 ## Capacidades
 
-- Comprensión de imágenes y generación de texto condicionada por imagen (pipeline image-text-to-text)
-- Conversación multimodal (chat con entradas de imagen y texto)
-- Generación de texto en 16 idiomas, incluido castellano
-- Ejecución multiplataforma vía ONNX Runtime (CPU y GPU, dispositivos edge)
-- Cinco niveles de cuantización para ajustar el equilibrio entre calidad y recursos
-
-No se dispone de información verificada sobre soporte de tool calling, capacidades de agentes, thinking mode, audio o vídeo.
+- Generacion de texto e inferencia multimodal image-text-to-text (entrada de imagenes y texto, salida de texto).
+- Conversacion multi-turno (tag conversational).
+- Soporte multilingue en 16 idiomas: ingles, arabe, chino, frances, aleman, italiano, japones, coreano, portugues, espanol, vietnamita, tailandes, indonesio, hindi, ruso y polaco.
+- Inferencia multiplataforma mediante ONNX Runtime, incluyendo CPU.
+- Capacidades de tool calling, function calling, agentes o razonamiento multi-paso: no disponibles en la informacion proporcionada.
+- Modo thinking, audio u otras capacidades especiales: no disponibles en la informacion proporcionada.
 
 ## Casos de uso
 
-- **Descripción automática de imágenes en dispositivos edge**: con la variante q4 (1,69 GB en CPU), se puede integrar generación de descripciones de imágenes en aplicaciones locales sin GPU, útil en logística o inventario.
-- **Asistente multimodal offline**: la ejecución en CPU permite incorporar chat con imágenes en aplicaciones de escritorio o móviles sin depender de APIs externas, preservando la privacidad de los datos.
-- **OCR y extracción de información de documentos**: el codificador de visión permite interpretar capturas, formularios o facturas y extraer campos en texto estructurado en flujos de automatización.
-- **Moderación y clasificación de contenido visual**: integración en pipelines que analizan imágenes subidas por usuarios y generan etiquetas o informes textuales.
-- **Aplicaciones multilingües**: con soporte de 16 idiomas, es adecuado para productos con audiencia internacional que necesiten describir o conversar sobre imágenes en varios idiomas, incluido el castellano.
-- **Prototipado rápido multiplataforma**: ONNX Runtime funciona en Windows, Linux, macOS, Android e iOS, lo que facilita validar casos de uso multimodales antes de portar a producción.
-- **Accesibilidad**: generación de descripciones de imágenes en tiempo real para lectores de pantalla en aplicaciones locales.
+- Procesamiento de documentos con imagenes en local: el modelo puede recibir capturas o escaneos y generar descripciones o extraer informacion textual, ejecutandose en CPU gracias al paquete ONNX q4 de 1,69 GB, sin necesidad de GPU.
+- Asistentes de accesibilidad: descripcion de imagenes para personas con discapacidad visual en aplicaciones de escritorio o moviles, aprovechando la inferencia ONNX multiplataforma y el bajo peso del modelo.
+- Moderacion de contenido visual en pipelines ligeros: clasificacion y descripcion de imagenes subidas por usuarios en servicios con recursos limitados, donde un modelo de 2B cuantizado a q4 cabe en un contenedor pequeno.
+- Atencion al cliente multimodal: gestion de conversaciones donde el usuario adjunta imagenes (capturas de error, fotos de productos) y el modelo responde en castellano u otro de los 16 idiomas soportados.
+- Despliegue en dispositivos edge o IoT: inferencia de vision-lenguaje en hardware sin acelerador dedicado, usando los archivos ONNX con ONNX Runtime en lugar de frameworks completos.
+- Prototipado rapido de aplicaciones image-text-to-text: integracion en entornos .NET, Java o JavaScript mediante ONNX Runtime, sin depender de PyTorch, para validar casos de uso antes de escalar a modelos mayores.
+- Traduccion y descripcion multilingue de imagenes: generacion de descripciones o respuestas en cualquiera de los 16 idiomas soportados a partir de una imagen y una instruccion textual.
 
 ## Benchmarks y rendimiento
 
@@ -51,45 +52,34 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-| Precision | Tamano | Dispositivo objetivo |
-|---|---|---|
-| q4 | 1,69 GB | CPU |
-| q8 | 2,51 GB | CPU |
-| q4f16 | 1,69 GB | GPU |
-| q8f16 | 2,34 GB | GPU |
-| fp16 | no disponible (fichero truncado) | no disponible |
-
-- **VRAM estimada para inferencia**: con la variante q4f16, aproximadamente 2 GB de VRAM; con q8f16, unos 2,5 GB. En CPU, la variante q4 requiere unos 2 GB de RAM.
-- **GPU recomendadas**: cualquier GPU moderna con al menos 4 GB de VRAM es suficiente (por ejemplo, RTX 3060 o superior); no se necesitan GPU de datacenter dado el tamaño del modelo.
-- **Consumer GPU**: cabe con holgura en GPUs de consumo habituales (RTX 3060, 4060, 4090) e incluso en GPUs integradas compatibles con DirectML o CoreML.
-- **CPU**: las variantes q4 y q8 están diseñadas explícitamente para CPU, por lo que un portátil o equipo de escritorio con 8 GB de RAM es suficiente.
-- **Opciones de despliegue**: ONNX Runtime (nativo del formato), con soporte para ejecución en CPU, CUDA, DirectML, CoreML y móviles; no se menciona compatibilidad con vLLM, llama.cpp, Ollama o TGI para esta versión ONNX.
-- **Latencia y throughput**: no disponibles.
+- VRAM/RAM estimada para inferencia: el paquete q4 ocupa 1,69 GB en disco y el q8 2,51 GB; la memoria en ejecucion sera del orden de esos valores mas el overhead de ONNX Runtime (no se proporcionan cifras exactas).
+- GPU recomendadas: no disponibles en la informacion proporcionada; el modelo esta empaquetado para inferencia en CPU segun la model card.
+- Compatibilidad con GPU consumer: no confirmada en la informacion disponible; el diseno apunta a ejecucion en CPU, por lo que deberia caber en practicamente cualquier equipo moderno.
+- Opciones de despliegue: ONNX Runtime (libreria declarada del repositorio). No se mencionan vLLM, llama.cpp, Ollama ni TGI para esta version.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Modalidad | Formato | Contexto | Licencia |
-|---|---|---|---|---|---|
-| LFM3-VL-2B-ONNX | ~2B | imagen-texto-a-texto | ONNX | no disponible | lfm1.0 (other) |
-| Qwen2.5-VL-3B-Instruct | ~3B | imagen-texto-a-texto | safetensors, GGUF | 32k aprox. | Apache 2.0 |
-| SmolVLM2-2.2B-Instruct | ~2,2B | imagen-texto-a-texto | safetensors, GGUF | 16k aprox. | Apache 2.0 |
-
-Nota: los datos de los modelos comparados son aproximados y pueden variar; la ventaja diferencial de LFM3-VL-2B-ONNX es la distribución oficial en ONNX con cinco precisiones, orientada a despliegue multiplataforma, frente a licencias más permisivas en las alternativas.
+No disponible. La informacion proporcionada no incluye datos de rendimiento ni especificaciones de modelos alternativos que permitan una comparacion rigurosa.
 
 ## Limitaciones y advertencias
 
-- La licencia lfm1.0 es una licencia propia ("other"), no una licencia estándar open source; debe revisarse el texto de la licencia antes de cualquier uso comercial o redistribución.
-- La longitud de contexto no está documentada en esta model card; consultar la model card del modelo base antes de diseñar aplicaciones con documentos o conversaciones largas.
-- Al tratarse de un modelo de 2B parámetros, la calidad de razonamiento y la fiabilidad factual son inferiores a las de modelos de mayor escala; es esperable cierto riesgo de alucinación, especialmente en descripciones detalladas de imágenes.
-- El rendimiento en idiomas distintos del inglés puede ser desigual; no se publican evaluaciones por idioma.
-- Los benchmarks no están publicados, por lo que la comparación de calidad con alternativas debe validarse empíricamente en cada caso de uso.
-- La ejecución en CPU con las variantes cuantizadas implica una pérdida de calidad respecto a fp16, cuya magnitud no está cuantificada por el autor.
+- Licencia lfm1.0 (license: other): es una licencia propietaria, por lo que el uso comercial esta sujeto a los terminos del archivo LICENSE del repositorio; es imprescindible revisarlos antes de desplegar en produccion.
+- Riesgo de alucinacion: no se documenta en la informacion disponible, pero es inherente a los modelos generativos de este tamano; conviene validar las salidas en aplicaciones criticas.
+- Sesgos conocidos: no documentados en la informacion proporcionada.
+- Limitaciones de contexto: la longitud de contexto no esta disponible, lo que impide planificar casos de uso con ventanas largas.
+- Cobertura idiomatica: aunque se listan 16 idiomas, no se especifica el nivel de calidad por idioma; el rendimiento en castellano u otros idiomas distintos del ingles no esta cuantificado.
+- Modelo cuantizado: esta version es una cuantizacion del modelo base, por lo que puede presentar una perdida de calidad respecto al original en fp16/bf16; no se documenta la magnitud de esa perdida.
+- Dependencia de ONNX Runtime: el despliegue requiere esta libreria y puede no integrarse con tooling estandar de PyTorch/Hugging Face Transformers.
+- Fechas del repositorio: la fecha de creacion (2026-10-26) y actualizacion (2026-11-05) son posteriores a la fecha actual; conviene verificar la vigencia y el estado del modelo antes de adoptarlo.
 
 ## Enlaces
 
-- Modelo ONNX: https://huggingface.co/LiquidAI/LFM3-VL-2B-ONNX
+- Repositorio Hugging Face: https://huggingface.co/LiquidAI/LFM3-VL-2B-ONNX
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
-- API de Liquid AI: https://console.liquid.ai/dashboard
+- Licencia: https://huggingface.co/LiquidAI/LFM3-VL-2B-ONNX/blob/main/LICENSE
+- Blog de Liquid AI sobre LFM3: https://www.liquid.ai/blog/lfm3
+- Documentacion de Liquid AI: https://docs.liquid.ai/lfm/getting-started/welcome
+- Consola/API de Liquid AI: https://console.liquid.ai/dashboard
 - Playground: https://playground.liquid.ai/
-- Documentación: https://docs.liquid.ai/lfm/getting-started/welcome
-- Blog de LFM3: https://www.liquid.ai/blog/lfm3
+- Archivos ONNX: https://huggingface.co/LiquidAI/LFM3-VL-2B-ONNX/tree/main/onnx

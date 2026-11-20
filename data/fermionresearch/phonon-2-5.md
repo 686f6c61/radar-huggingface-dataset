@@ -2,60 +2,53 @@
 
 ## Resumen
 
-Phonon-2.5 es un modelo de reconocimiento automatico del habla (ASR) multilingue publicado por FermionResearch, una version cuantizada a baja precision del modelo NVIDIA Parakeet TDT 0.6B v3. Se distribuye en un unico archivo de 156,2 MB y cubre 25 idiomas europeos, desde el ingles y el espanol hasta el griego, el maltes o el estonio. Su propuesta es clara: mantener la calidad de un modelo de 0,6 mil millones de parametros en un peso dos ordenes de magnitud menor, hasta el punto de que en la media de FLEURS supera al modelo completo del que deriva (11,71 % de WER frente a 13,26 %).
+Phonon-2.5 es un modelo de reconocimiento automatico del habla (ASR) multilingue para 25 idiomas, publicado por FermionResearch como una cuantizacion de bajos bits del modelo NVIDIA Parakeet TDT 0.6B v3. El artefacto completo ocupa 156,2 MB, frente a los 2.508 MB del modelo original en precision completa, lo que supone una reduccion de aproximadamente 16x en peso manteniendo la arquitectura TDT (Token-and-Duration Transducer) del original.
 
-La relevancia practica esta en el despliegue: el mismo archivo funciona en GPU de Apple silicon a traves de MLX y en CPU de Linux (x86-64 y Arm) y Windows, sin necesidad de GPU. La libreria `fermion-research` expone tanto una CLI con marcas de tiempo por palabra como un servidor compatible con el endpoint `/v1/audio/transcriptions` de la API de OpenAI, lo que facilita sustituir servicios de transcripcion en la nube por inferencia local.
+El modelo esta empaquetado en formato MLX para ejecucion nativa en Apple Silicon y, segun el autor, el mismo fichero funciona tambien en CPU sobre Linux y Windows sin necesidad de GPU. Esta orientacion on-device lo convierte en una opcion practica para transcripcion local, procesamiento por lotes en portatiles y despliegues en entornos sin acelerador dedicado.
 
-Tecnicamente es un transducer TDT (token-and-duration) cuantizado, con el tokenizador y las convenciones de salida del modelo original (puntuacion, mayusculas y numerales). La licencia es CC-BY-4.0, la misma que la del modelo base, mientras que la CLI y el codigo del repositorio son Apache 2.0.
+Su relevancia actual reside en que supera en precision media a otras alternativas de tamano comparable: 11,71 % de WER medio en FLEURS frente a 12,18 % de Parakeet Redux y 13,26 % del modelo completo de NVIDIA. En ingles, sobre los siete conjuntos del Open ASR Leaderboard, promedia 5,06 % de WER.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transducer TDT (token-and-duration transducer), variante `parakeet_tdt_five_value`; derivada de nvidia/parakeet-tdt-0.6b-v3 |
-| Parametros totales | Aproximadamente 0,6 B en el modelo base; el numero exacto tras la cuantizacion no esta disponible |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible. Modelo ASR: la model card no especifica ventana maxima de audio ni estrategia de chunking |
-| Tipos de cuantizacion | Cuantizacion de baja precision (low-bit); el ancho de bits concreto no se especifica. Existe una variante English del mismo tamano |
+| Arquitectura | TDT (Token-and-Duration Transducer), derivada de NVIDIA Parakeet TDT 0.6B v3 |
+| Parametros totales | 0,6 mil millones (modelo base); pesos cuantizados a bajos bits |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | bajos bits (low-bit); esquema exacto no disponible |
 | Idiomas soportados | 25: en, es, fr, de, it, pt, nl, pl, ru, uk, ro, cs, sk, bg, hr, sv, da, fi, et, lv, lt, hu, sl, mt, el |
-| Licencia | CC-BY-4.0 (pesos); CLI y codigo del repositorio, Apache 2.0 |
-| Formato de pesos | MLX (`library_name: mlx`); el contenedor exacto de los pesos no se detalla en la model card |
-| Tarea | Automatic speech recognition (pipeline `automatic-speech-recognition`) |
-| Tamano de descarga | 156,2 MB (repositorio completo: 0,3 GB) |
-| Salida | Texto con puntuacion, mayusculas y numerales del modelo original; marcas de tiempo por palabra con `--json` |
-| Plataformas | Apple silicon (GPU via MLX), Linux x86-64 y Arm (CPU), Windows (CPU) |
-| Metricas evaluadas | WER (FLEURS y Open ASR Leaderboard) |
+| Licencia | CC-BY-4.0 (pesos); codigo del repositorio Apache 2.0 |
+| Formato de pesos | MLX (libreria mlx); tamano del repo 0,3 GB |
 
 ## Arquitectura y entrenamiento
 
-Phonon-2.5 no es un transformer autoregresivo al uso, sino un transducer TDT: un modelo que predice conjuntamente tokens y duraciones, lo que le permite emitir texto sin un decodificador de atencion separado y con una latencia adecuada para streaming. La etiqueta `parakeet_tdt_five_value` del repositorio identifica la variante concreta de la implementacion. El modelo es una cuantizacion de baja precision de NVIDIA Parakeet TDT 0.6B v3, y conserva el tokenizador y las convenciones de salida del original.
+Phonon-2.5 no entrena desde cero: es una cuantizacion del modelo NVIDIA Parakeet TDT 0.6B v3, que emplea una arquitectura Token-and-Duration Transducer. Este diseno combina prediccion conjunta de tokens y duraciones, lo que permite emitir varios tokens por paso y mejorar la eficiencia de decodificacion frente a CTC o transducers clasicos. El tokenizador y las convenciones de salida (puntuacion, uso de mayusculas y numerales) se heredan del original.
 
-No se han publicado en la informacion disponible detalles sobre el proceso de cuantizacion (metodo, numero de bits, calibracion), el volumen o la composicion de los datos de entrenamiento del modelo base, ni sobre si hubo etapas de ajuste fino o preferencia. Tampoco se documenta ninguna innovacion adicional mas alla de la propia compresion: la contribucion declarada es conseguir que un modelo de 0,6 B funcione en 156,2 MB sin perder precision agregada frente al original.
+No se dispone de informacion sobre el proceso de cuantizacion (algoritmo, granularidad, calibracion), ni sobre datos de entrenamiento, numero de tokens o ajustes posteriores como RLHF. El autor indica que el fichero `NOTICE` del repositorio documenta los cambios aplicados respecto al modelo base. El resultado es un artefacto de 156,2 MB que conserva el pipeline de ASR del original y se distribuye empaquetado para MLX.
 
 ## Capacidades
 
-- Transcripcion de voz a texto en 25 idiomas europeos con un unico modelo y un unico archivo.
-- Salida con puntuacion, mayusculas y numerales normalizados, heredada del modelo original.
-- Marcas de tiempo a nivel de palabra mediante la opcion `--json`.
-- Inferencia en local: GPU de Apple silicon via MLX o CPU en Linux y Windows, sin GPU dedicada.
-- Servidor HTTP compatible con el endpoint `/v1/audio/transcriptions` de OpenAI (`fermion serve phonon-2.5 --port 8010`), lo que permite reutilizar clientes existentes.
-- CLI para transcripcion directa de ficheros (`fermion transcribe phonon-2.5 recording.wav`).
-- Cobertura amplia de lenguas de bajos recursos dentro del ambito europeo (maltes, esloveno, estonio, letrado), donde el modelo completo rinde mucho peor.
-- No se documenta soporte de tool calling, agentes, diarizacion de hablantes ni traduccion.
+- Transcripcion de voz a texto multilingue en 25 idiomas europeos, con deteccion implicita de idioma segun el modelo base.
+- Salida con puntuacion, uso de mayusculas y numerales segun las convenciones del tokenizador de Parakeet.
+- Alineacion temporal a nivel de palabra mediante la opcion `--json`, que anade inicio y fin de cada palabra.
+- Ejecucion on-device en Apple Silicon via MLX y en CPU sobre Linux (x86-64 y Arm) y Windows.
+- Servidor compatible con el endpoint OpenAI `/v1/audio/transcriptions` mediante `fermion serve`.
+- No se documentan capacidades de diarizacion de hablantes, traduccion, tool calling ni razonamiento multi-paso.
 
 ## Casos de uso
 
-- Transcripcion de reuniones en local: el modelo procesa audio en el propio portatil Apple silicon y devuelve texto con marcas de tiempo por palabra, lo que permite generar actas sincronizadas sin enviar el audio a un tercero.
-- Subtitulado de video: el `--json` con inicio y fin de cada palabra alimenta directamente un pipeline de generacion de subtitulos (SRT/VTT) en 25 idiomas, util para contenido formativo o divulgativo europeo.
-- Notas de voz y dictado en aplicaciones de escritorio: con 156,2 MB y ejecucion en CPU, el modelo se puede empaquetar dentro de una aplicacion de escritorio Linux o Windows sin dependencias de GPU.
-- Sustitucion de ASR en la nube por un endpoint compatible con OpenAI: `fermion serve` expone la misma interfaz que los servicios comerciales, de modo que basta cambiar la URL base en el cliente para migrar a inferencia on-premise con cumplimiento de RGPD.
-- Transcriptor para centros de contacto en lenguas minoritarias: el modelo cubre griego, maltes, esloveno o estonio con errores entre el 17 % y el 21 % de WER, frente a mas del 33 % del modelo completo en griego y maltes, lo que lo hace viable donde las alternativas no llegan.
-- Indexacion y busqueda de archivos de audio corporativos: la transcripcion por lotes con marcas de tiempo permite segmentar y buscar dentro de horas de grabaciones archivadas.
-- Prototipado rapido en investigacion: la instalacion via pip y el peso reducido permiten comparar resultados en FLEURS o en dominios propios sin aprovisionar hardware.
+- Transcripcion local de reuniones: el modelo procesa audio en el propio portatil Apple Silicon sin enviar datos a la nube, lo que encaja en entornos con requisitos de privacidad.
+- Subtitulado y generacion de actas: la salida JSON con marcas temporales por palabra permite construir ficheros de subtitulos y alinear texto con audio en herramientas internas.
+- Procesamiento por lotes de archivos de audio en servidores Linux sin GPU: al ejecutarse en CPU, puede integrarse en pipelines de ingestión documental donde no hay aceleradores disponibles.
+- Atencion al cliente telefónica: la transcripcion de llamadas grabadas en varios idiomas europeos alimenta sistemas de analisis de calidad y busqueda sobre conversaciones.
+- Investigacion linguistica y corpus: la cobertura de 25 idiomas, incluidos estonio, letón, maltés y griego, facilita la transcripcion de corpus multilingues a bajo coste computacional.
+- Prototipado rapido con API compatible con OpenAI: `fermion serve` expone un endpoint estandar que permite sustituir un servicio ASR remoto por una instancia local durante desarrollo.
+- Aplicaciones de accesibilidad: dictado y transcripcion en tiempo real en dispositivos de usuario final gracias al reducido tamano del artefacto (156,2 MB).
 
 ## Benchmarks y rendimiento
 
-WER en FLEURS (%, menor es mejor). Los tres modelos se evaluaron sobre el conjunto de test completo de cada idioma con el mismo harness y la misma normalizacion de texto.
+WER en %, menor es mejor; mejor valor por fila en negrita. Evaluacion sobre el conjunto de test completo de FLEURS por idioma, mismo harness y misma normalizacion de texto para los tres modelos.
 
 | Idioma | Phonon-2.5 (156,2 MB) | Parakeet Redux (178 MB) | Parakeet TDT 0.6B v3 (2.508 MB) |
 |---|--:|--:|--:|
@@ -86,61 +79,41 @@ WER en FLEURS (%, menor es mejor). Los tres modelos se evaluaron sobre el conjun
 | Griego | **20,83** | 33,25 | 36,11 |
 | **Media de 25** | **11,71** | 12,18 | 13,26 |
 
-Open ASR Leaderboard (ingles, siete conjuntos, codigo y test completos del leaderboard):
-
-| Conjunto | WER (%) |
-|---|--:|
-| LibriSpeech clean | 1,60 |
-| LibriSpeech other | 3,41 |
-| AMI | 9,12 |
-| Earnings-22 | 6,72 |
-| GigaSpeech | 8,04 |
-| SPGISpeech | 3,31 |
-| VoxPopuli | 3,23 |
-| **Media** | **5,06** |
-
-Referencia comparativa en el mismo leaderboard: Phonon-2 promedia 5,21 % y Phonon-2.5 English 4,82 %.
+En los siete conjuntos ingleses del Open ASR Leaderboard (LibriSpeech clean y other, AMI, Earnings-22, GigaSpeech, SPGISpeech y VoxPopuli, evaluados con su codigo sobre los test sets completos), Phonon-2.5 promedia 5,06 % de WER con los valores 1,60, 3,41, 9,12, 6,72, 8,04, 3,31 y 3,23. Para comparacion, Phonon-2 promedia 5,21 % y Phonon-2.5 English promedia 4,82 % en los mismos conjuntos.
 
 ## Requisitos de hardware
 
-- VRAM: no se publican cifras. El modelo no requiere GPU; en Apple silicon se ejecuta en la GPU via MLX.
-- Almacenamiento: 156,2 MB de pesos (0,3 GB de repositorio); el entorno necesita Python 3.10 o superior.
-- GPU recomendadas: no aplica en el sentido habitual. En Apple silicon, cualquier chip con soporte MLX; en Linux y Windows se usa el motor de CPU incluido en el paquete.
-- Cabe en cualquier equipo de consumo: es un modelo de 156,2 MB pensado explicitamente para on-device.
-- Despliegue: `pip install fermion-research` (con el extra `[mlx]` para GPU en Apple silicon) y la CLI `fermion transcribe`; servidor con `fermion serve phonon-2.5 --port 8010`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
-- En Linux conviene instalar primero torch desde el indice de wheels de CPU (`pip install --no-deps torch --index-url https://download.pytorch.org/whl/cpu`) para evitar la build con CUDA.
-- Latencia y throughput: no disponibles. La model card no publica RTF ni velocidad de procesado.
+- VRAM estimada: no disponible de forma explicita; el artefacto pesa 156,2 MB, por lo que la huella en memoria es muy reducida. En Apple Silicon se ejecuta en GPU via MLX; en Linux y Windows se ejecuta en CPU.
+- GPU recomendadas: no se especifican modelos concretos; el modelo esta disenado para Apple Silicon (MLX) y para CPU, no para GPU NVIDIA dedicada.
+- Cabe en GPU consumer: si, en equipos Apple Silicon; no se documenta soporte para RTX, A100 o H100.
+- Opciones de despliegue: paquete `fermion-research` (CLI `fermion transcribe`), servidor `fermion serve` con endpoint compatible con OpenAI `/v1/audio/transcriptions`; libreria MLX en macOS. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Tamano | WER medio FLEURS (25 idiomas) | WER Open ASR (7 sets EN) | Licencia | Disponibilidad |
-|---|---|--:|--:|--:|---|---|
-| Phonon-2.5 | ~0,6 B cuantizado | 156,2 MB | **11,71 %** | 5,06 % | CC-BY-4.0 | Hugging Face, pip |
-| Phonon-2.5 English | ~0,6 B cuantizado | 156,2 MB (mismo tamano) | No disponible (solo ingles) | 4,82 % | CC-BY-4.0 | Hugging Face |
-| Parakeet Redux | No disponible | 178 MB | 12,18 % | No disponible | No disponible en la informacion | Hugging Face |
-| Parakeet TDT 0.6B v3 | 0,6 B | 2.508 MB | 13,26 % | No disponible en la informacion | CC-BY-4.0 | Hugging Face (NVIDIA) |
-| Phonon-2 | No disponible | No disponible | No disponible | 5,21 % | No disponible en la informacion | Hugging Face |
-
-Phonon-2.5 es el mas pequeno de la comparativa y, a la vez, el de mejor media multilingue: gana a Parakeet Redux en 14 de los 25 idiomas y al modelo completo de NVIDIA en 12, con ventajas muy marcadas en griego (20,83 frente a 36,11), esloveno (18,53 frente a 24,70), letrado (14,92 frente a 23,66) y estonio (11,91 frente a 14,34). En las lenguas mayoritarias (frances, aleman, neerlandes, polaco) el modelo completo sigue siendo mejor.
+| Modelo | Parametros | Tamano | Idiomas | WER medio FLEURS (25 idiomas) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Phonon-2.5 | 0,6 mil millones (cuantizado) | 156,2 MB | 25 | 11,71 % | CC-BY-4.0 | Hugging Face, MLX |
+| Parakeet Redux | no disponible | 178 MB | no disponible en la informacion | 12,18 % | no disponible | no disponible |
+| Parakeet TDT 0.6B v3 | 0,6 mil millones | 2.508 MB | 25 (segun modelo base) | 13,26 % | CC-BY-4.0 (segun autor) | Hugging Face (NVIDIA) |
+| Phonon-2.5 English | 0,6 mil millones (cuantizado) | mismo tamano que Phonon-2.5 | ingles | 4,82 % (Open ASR Leaderboard ingles) | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
-- El WER se dispara en varias lenguas: maltes 17,91 %, esloveno 18,53 %, danes 18,20 %, lituano 17,94 % y griego 20,83 %. En danes, maltes, eslovaco, croata, estonio, letrado, fines y bulgaro esta por detras de Parakeet Redux.
-- En las lenguas con mas volumen de datos (frances, aleman, neerlandes, polaco, ruso) pierde entre 1,4 y 1,6 puntos de WER frente al modelo de 2,5 GB; para produccion en esos idiomas conviene evaluar el original.
-- No se documenta comportamiento en audio largo, solapamiento de hablantes, ruido de fondo ni cambio de idioma dentro de una misma grabacion. Tampoco hay diarizacion.
-- Riesgo de alucinacion e inserciones en silencios o musica: es un comportamiento conocido de los transducers, aunque no se cuantifica en la model card.
-- Las marcas de tiempo por palabra no estan evaluadas con ninguna metrica publicada.
-- Licencia CC-BY-4.0: el uso comercial esta permitido, pero exige atribucion. El fichero `NOTICE` del repositorio lista los cambios respecto al modelo base y debe conservarse.
-- El codigo del repositorio y la CLI son Apache 2.0, pero esa licencia no cubre los pesos.
-- Requiere Python 3.10 o superior; el `python3` del sistema en macOS (3.9) no sirve.
-- El soporte de aceleracion esta limitado a Apple silicon via MLX; en Linux y Windows se ejecuta en CPU, sin backend CUDA documentado.
-- La informacion de busqueda web disponible no aporta documentacion tecnica adicional (solo resultados genericos de LinkedIn), por lo que todo lo anterior procede de la model card y de los metadatos de Hugging Face.
+- El WER empeora de forma notable en idiomas de recursos medios y bajos: griego 20,83 %, esloveno 18,53 %, maltes 17,91 %, danes 18,20 % y lituano 17,94 %. No es adecuado para produccion en esos idiomas sin evaluacion propia.
+- En 11 de los 25 idiomas queda por detras de Parakeet Redux, y en casi todos por detras del modelo completo de NVIDIA; la ventaja principal es el tamano, no la precision absoluta.
+- La cuantizacion de bajos bits puede introducir degradaciones no medidas por el WER, como errores en nombres propios, cifras o puntuacion.
+- Riesgo de alucinacion en audio con ruido, silencios largos o solapamiento de hablantes; no se documentan pruebas en esas condiciones.
+- La licencia CC-BY-4.0 exige atribucion; el autor indica que el fichero `NOTICE` lista los cambios respecto al original. El codigo del repositorio es Apache 2.0, distinta de la licencia de los pesos.
+- El soporte oficial esta orientado a MLX en Apple Silicon y a CPU en Linux y Windows; no hay integracion documentada con ecosistemas GPU como vLLM o TensorRT.
+- No se dispone de informacion sobre sesgos demograficos o acentuales, ni sobre rendimiento en audio telefonico de 8 kHz o en dominios especializados.
+- Dependencia del tokenizador y convenciones del modelo base de NVIDIA: cambios en dichas convenciones afectan a toda la salida.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/FermionResearch/Phonon-2.5
-- Variante en ingles: https://huggingface.co/FermionResearch/Phonon-2.5-English
+- Variante inglesa: https://huggingface.co/FermionResearch/Phonon-2.5-English
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
-- Documentacion de la CLI y el servidor: https://www.fermionresearch.com/docs/speech/
-- Paquete en PyPI: https://pypi.org/project/fermion-research/
-- Imagen de la model card: https://huggingface.co/FermionResearch/Phonon-2.5/resolve/main/phonon-2.5-card.jpg
+- Documentacion del CLI y servidor: https://www.fermionresearch.com/docs/speech/
+- Paquete PyPI: https://pypi.org/project/fermion-research/
+- Open ASR Leaderboard: https://huggingface.co/spaces/hf-audio/open_asr_leaderboard

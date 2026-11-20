@@ -2,122 +2,110 @@
 
 ## Resumen
 
-Sabi-Noema es un ajuste fino (finetune) del modelo Qwen/Qwen3.8-27B desarrollado por el usuario sabicap, orientado especificamente a cargas de trabajo agenticas: uso de herramientas, ejecucion de tareas multi-paso, interaccion con terminal y resolucion de tareas de ingenieria de software. Se distribuye bajo licencia Apache 2.0 y esta publicado en Hugging Face con pesos en safetensors, formato compatible con la libreria transformers.
+Sabi-Noema es un ajuste fino (finetune) del modelo Qwen3.8-27B desarrollado por sabicap, orientado a tareas agénticas: uso de herramientas, ejecución en terminal, ingeniería de software y razonamiento multi-paso. Se construye exclusivamente sobre entornos de aprendizaje por refuerzo de código abierto, lo que lo convierte en un caso interesante de cómo el RL abierto puede llevar a un modelo denso de 27B a competir con modelos propietarios en benchmarks agénticos.
 
-El modelo mantiene la arquitectura del base: aproximadamente 27.356 millones de parametros en un diseno denso hibrido (combinacion de atencion completa y atencion lineal, segun la etiqueta `hybrid-attention`), con una longitud de contexto declarada de 262.144 tokens. Los pesos en BF16 ocupan unos 55 GB, lo que lo situa en el rango de despliegue en una unica GPU de 80 GB.
+El modelo mantiene la arquitectura del Qwen3.8-27B base (transformer denso híbrido con atención lineal, ~27.356 millones de parámetros) y una ventana de contexto de 262.144 tokens. Su propuesta de valor no es tanto la capacidad bruta como la eficiencia: según la model card, reduce el consumo de tokens de salida en un factor de 2,3× frente al base en tareas de Terminal-Bench, manteniendo o mejorando las puntuaciones.
 
-Su relevancia actual radica en dos ejes: por un lado, mejora las cifras del modelo base en benchmarks de agentes y terminal (Terminal-Bench 2.1: 76,0 % frente a 73,0 %; τ³-bench: 259/278 frente a 220/278) sin degradar capacidades retenidas como LiveCodeBench v6, GPQA-Diamond o MMLU-Pro; por otro, reduce de forma notable el coste de inferencia, con una mediana de 29,3K tokens de salida por tarea en Terminal-Bench frente a los 65,3K del base. Adicionalmente, el autor publica una variante con atencion latente multi-cabeza (Sabi-Noema-MLA) pensada para servir muchas sesiones largas por GPU.
+Es relevante ahora porque demuestra que un modelo abierto de tamaño medio, con licencia Apache 2.0 y desplegable en una sola GPU de 80 GB, puede alcanzar resultados competitivos en agentes de terminal (76,0% en Terminal-Bench 2.1) y reducir drásticamente la tasa de alucinación (15,1% frente al 30,4% del base) sin sacrificar capacidades retenidas como LiveCodeBench o GPQA-Diamond.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso hibrido (atencion completa + atencion lineal), segun la etiqueta `hybrid-attention` |
-| Parametros totales | 27.356.728.560 (~27,36B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
+| Arquitectura | Transformer denso híbrido (hybrid-attention, con atención lineal) |
+| Parametros totales | 27.356.728.560 (~27B) |
+| Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | 262.144 tokens |
-| Tipos de cuantizacion | No disponible. Se distribuyen pesos BF16; el autor indica compatibilidad con conversion a GGUF mediante llama.cpp, sin detallar los tipos concretos |
-| Idiomas soportados | No disponible. No se especifica en la model card; el modelo base Qwen3.8-27B es multilingue |
+| Tipos de cuantizacion | BF16 en pesos originales; conversión GGUF disponible vía llama.cpp (no se detallan otros formatos) |
+| Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (BF16, ~55 GB); repo de 54,7 GB |
+| Formato de pesos | Safetensors (repo de 54,7 GB); conversión a GGUF posible |
 
 ## Arquitectura y entrenamiento
 
-Sabi-Noema parte de Qwen/Qwen3.8-27B y se entrena mediante aprendizaje por refuerzo (etiquetas `reinforcement-learning` y `agentic`) usando exclusivamente entornos RL de codigo abierto. No se detalla en la informacion disponible el volumen de tokens, la composicion del dataset ni si hubo fases de SFT, DPO o RLHF adicionales; la model card solo explicita la naturaleza RL del entrenamiento y el objetivo de mejorar simultaneamente capacidad agentica y eficiencia de razonamiento.
+Sabi-Noema parte de Qwen3.8-27B, un transformer denso con atención híbrida (combinación de atención estándar y atención lineal), lo que permite manejar contextos largos de hasta 262K tokens con un coste de memoria más contenido. El ajuste fino se realiza mediante aprendizaje por refuerzo (RL) sobre entornos de código abierto, según indica el autor, con el objetivo explícito de mejorar la capacidad agéntica y la eficiencia de razonamiento. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO adicionales.
 
-La arquitectura es densa e hibrida: combina mecanismos de atencion con bloques de atencion lineal, lo que reduce el coste de memoria de estado en contextos largos. Esto tiene una consecuencia practica documentada por el autor: en vLLM 0.31.0 hay que limitar `--max-num-seqs` a 32, porque el valor por defecto de 1024 excede los bloques de estado de atencion lineal disponibles en una sola GPU. Existe una variante adicional, Sabi-Noema-MLA, que incorpora atencion latente multi-cabeza para maximizar el numero de sesiones largas concurrentes por GPU. El modelo soporta modo no-thinking mediante `chat_template_kwargs={"enable_thinking": false}`, aunque el autor aclara que ese modo no fue evaluado.
+La innovación técnica destacable es la eficiencia de tokens: el modelo aprende a producir respuestas más cortas sin perder precisión, lo que se traduce en una reducción de 2,3× en tokens de salida frente al base en Terminal-Bench y de 2,0× frente a Swift 1.5. También se menciona una variante del modelo con multi-head latent attention (Sabi-Noema-MLA) pensada para muchas sesiones largas por GPU, lo que sugiere que la atención lineal del modelo base se explota para servir contextos largos de forma económica.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento conversacional multi-turno con contexto de hasta 262.144 tokens.
-- Ejecucion de tareas de terminal y automatizacion de shell: 76,0 % en Terminal-Bench 2.1.
-- Ingenieria de software y resolucion de issues en repositorios reales: 47,5 % en DeepSWE.
-- Tool calling / function calling en formato XML de Qwen3.8, con soporte nativo en vLLM mediante `--enable-auto-tool-choice --tool-call-parser qwen3_xml`.
-- Uso de agentes multi-paso en escenarios de negocio: τ³-bench (airline, retail, telecom) con 259/278 tareas y 43,5 % en el subconjunto bancario.
-- Integracion con servidores MCP: 48/55 en MCPMark.
-- Razonamiento de alta fiabilidad: indice AA-Omniscience de +2,3 y tasa de alucinacion del 15,1 %, frente al 30,4 % del modelo base.
-- Capacidades retenidas de codigo y ciencia: LiveCodeBench v6 88,0 %, GPQA-Diamond 90,6 %, MMLU-Pro 85,1 %, AA-LCR 82,3 %, IFBench 80,9 %.
-- Eficiencia de tokens: mediana de 29,3K tokens de salida por tarea en Terminal-Bench 2.1 (2,3 veces menos que Qwen3.8-27B) y 82,7K de media en DeepSWE (frente a 118,8K del base).
-- Soporte multimodal: la etiqueta de Hugging Face `image-text-to-text` figura entre los tags del repositorio, aunque la model card no detalla capacidades de vision y los benchmarks publicados son exclusivamente de texto y agentes.
+- Generación de texto conversacional y razonamiento multi-paso.
+- Ejecución de tareas en terminal y entornos de línea de comandos (Terminal-Bench 2.1: 76,0%).
+- Ingeniería de software y resolución de problemas de código (DeepSWE: 47,5%; LiveCodeBench v6: 88,0%).
+- Uso de herramientas y function calling en formato XML de Qwen3.8, con soporte multi-turno (BFCL v4 multi-turn: 63,9%; MCPMark: 48/55).
+- Comportamiento agéntico en dominios de atención al cliente y banca (τ³-bench: 259/278; banca: 43,5%).
+- Modo "thinking" (razonamiento explícito) activado por defecto; se soporta modo no-thinking mediante `chat_template_kwargs={"enable_thinking": false}`, aunque no fue evaluado.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Visión: el tag `image-text-to-text` aparece en Hugging Face, pero la model card no detalla capacidades de visión; no se confirma su funcionamiento.
 
 ## Casos de uso
 
-- Agentes de terminal y automatizacion de DevOps: el modelo esta optimizado para tareas de linea de comandos y alcanza el 76,0 % en Terminal-Bench 2.1, por lo que puede encargarse de diagnosticar fallos, aplicar parches y ejecutar pipelines de despliegue con supervision minima.
-- Agentes de codigo en produccion (SWE agents): con 47,5 % en DeepSWE y 88,0 % en LiveCodeBench v6, es adecuado para resolver issues sobre repositorios, abrir pull requests y trabajar integrado en CI/CD mediante tool calling.
-- Atencion al cliente automatizada en dominios regulados: los resultados en τ³-bench (airline, retail, telecom) y el 43,5 % en banca indican que puede gestionar conversaciones multi-turno con reglas de negocio estrictas y llamadas a APIs internas.
-- Automatizacion de backoffice bancario: el subconjunto bancario de τ³-bench (97 tareas x 5 ejecuciones) mide operaciones con restricciones, escenario tipico de verificacion de datos y tramitacion de incidencias.
-- Orquestacion de herramientas via MCP: con 48/55 en MCPMark y 63,9 en BFCL v4 multi-turn, encaja como cerebro de agentes que encadenan decenas de herramientas externas en un mismo flujo.
-- Asistentes de documentacion tecnica con contexto largo: los 262.144 tokens permiten cargar repositorios completos, manuales o historiales extensos y responder con trazabilidad sobre el material aportado.
-- Sistemas donde la alucinacion es costosa (legal, sanitario, financiero): la tasa del 15,1 % en AA-Omniscience y el indice positivo +2,3 lo hacen preferible a alternativas con tasas del 30 % o superiores, siempre con verificacion humana.
-- Despliegue de muchos agentes concurrentes por GPU: la variante Sabi-Noema-MLA, con atencion latente multi-cabeza, esta pensada para sostener sesiones largas simultaneas reduciendo el coste por sesion.
+- Automatización de tareas en terminal: el modelo puede ejecutar comandos, interpretar salidas y corregir errores en entornos Linux, gracias a su entrenamiento con RL en entornos de terminal y su puntuación del 76,0% en Terminal-Bench 2.1. Adecuado para pipelines de CI/CD y administración de sistemas.
+- Agentes de atención al cliente multi-turno: con 262K tokens de contexto y una puntuación de 259/278 en τ³-bench, puede gestionar conversaciones largas con cambio de contexto y consultas a herramientas internas (pedidos, reservas, facturación).
+- Generación de código en producción: soporta tool calling y puede integrarse en asistentes de código o pipelines de revisión automática, con un 88,0% en LiveCodeBench v6 y un 47,5% en DeepSWE.
+- Automatización de flujos bancarios y financieros: la puntuación del 43,5% en τ³-bench banking (frente al 39,8% del base) lo hace útil para agentes que consultan saldos, gestionan transferencias o resuelven incidencias con APIs bancarias.
+- Razonamiento científico y técnico: con un 90,6% en GPQA-Diamond y un 85,1% en MMLU-Pro, puede emplearse en asistentes de investigación que requieran respuestas fundamentadas y verificación de datos.
+- Despliegue en una sola GPU: al ocupar ~55 GB en BF16, cabe en una A100/H100 de 80 GB con vLLM, lo que permite servir agentes de contexto largo en infraestructura modesta comparado con modelos mayores.
+- Reducción de costes de inferencia: su eficiencia de tokens (29,3K tokens de salida por tarea en Terminal-Bench frente a 65,3K del base) lo hace adecuado para entornos con facturación por token o límites de latencia estrictos.
 
 ## Benchmarks y rendimiento
 
-Datos publicados por el autor. La tabla original incluye GPT-6 Luna en modo high reasoning como referencia de frontera.
-
 | Benchmark | Sabi-Noema | Qwen3.8-27B | ThinkingCap | Swift 1.5 | Muse Glimmer 30B | GPT-6 Luna, high |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|
+|---|---:|---:|---:|---:|---:|---:|
 | Terminal-Bench 2.1 (%) | **76,0** | 73,0 | 67,8 | 62,9 | 48,3 | 68,5 |
 | DeepSWE (%) | 47,5 | 38,5 | 38,9 | 39,8 | 5,3 | **53,1** |
 | τ³-bench (/278) | **259** | 220 | 204 | 195 | 219 | 183 |
-| τ³-bench banking (%, 97 tareas x 5) | **43,5** | 39,8 | 36,9 | 40,4 | 15,9 | 28,7 |
+| τ³-bench banking (%) | **43,5** | 39,8 | 36,9 | 40,4 | 15,9 | 28,7 |
 | ClawEval (/199) | **162** | 151 | 151 | 160 | 153 | 160 |
 | BFCL v4 multi-turn | **63,9** | 59,6 | 58,8 | 62,6 | 55,8 | 44,9 |
 | MCPMark (/55) | **48** | 36 | 42 | 37 | 32 | 38 |
 | AA-Omniscience index | +2,3 | −5,2 | −10,5 | −22,8 | −28,0 | **+5,2** |
-| Tasa de alucinacion (%, menor es mejor) | **15,1** | 30,4 | 36,1 | 52,6 | 84,6 | 85,3 |
+| Tasa de alucinación (%) | **15,1** | 30,4 | 36,1 | 52,6 | 84,6 | 85,3 |
 | LiveCodeBench v6 | 88,0 | **89,7** | 88,9 | 89,1 | 64,0 | 88,0 |
 | GPQA-Diamond | **90,6** | 89,2 | 88,0 | 88,6 | 83,5 | 89,4 |
 | MMLU-Pro | 85,1 | 85,4 | 85,0 | **85,7** | 84,2 | 83,4 |
 | AA-LCR | 82,3 | **83,0** | 82,0 | 82,7 | 81,3 | **83,0** |
 | IFBench | 80,9 | 79,5 | 79,7 | **81,1** | 77,0 | 61,0 |
 | TB2.1 tokens de salida por tarea (mediana) | 29,3K | 65,3K | 51,0K | 57,1K | **20,6K** | — |
-| τ³-bench tokens por conversacion (media) | 3,9K | 4,2K | 3,0K | 3,6K | **2,7K** | — |
+| τ³-bench tokens por conversación (media) | 3,9K | 4,2K | 3,0K | 3,6K | **2,7K** | — |
 | DeepSWE tokens de salida por tarea (media) | **82,7K** | 118,8K | 103,7K | — | — | — |
 
-Condiciones declaradas por el autor: mismos harnesses para todos los modelos; Terminal-Bench 2.1 con la configuracion de Artificial Analysis sobre despliegues H100 TP2 con hasta 8 tareas por servidor (Muse Glimmer en TP1); τ³-bench con simulador de usuario GPT-4.1; DeepSWE sin limite de tokens (ThinkingCap con tope de 3 horas por tarea; se excluyen semillas con fallo de infraestructura contabilizado como fallo del modelo); ClawEval evaluado por el juez LLM del harness. GPT-6 Luna se invoco via OpenRouter con esfuerzo de razonamiento alto; Muse Glimmer 30B se sirvio localmente en BF16 con contexto de 131K tokens, contando como fallo las tareas que lo desbordaban. Qwen reporta 73,0 en Terminal-Bench 2.1 con su propio setup Terminus y 42,2 en DeepSWE 1.1 con el harness de Claude Code. Terminal-Bench 2.1 se promedia sobre 2–3 ejecuciones por modelo abierto y DeepSWE sobre 2–3 semillas para Sabi-Noema, Sabi-Noema-MLA y Qwen3.8-27B; GPQA-Diamond, IFBench y AA-LCR sobre 3 ejecuciones.
+Los datos provienen de la model card del autor. Las evaluaciones se realizaron con los mismos harnesses para todos los modelos; Terminal-Bench 2.1 sigue la configuración de Artificial Analysis en despliegues H100 TP2 con hasta 8 tareas por servidor.
 
 ## Requisitos de hardware
 
-- Pesos en BF16: aproximadamente 55 GB solo para el modelo, mas el espacio de KV cache y estados de atencion lineal para contextos largos.
-- GPU recomendadas por el propio autor: una unica GPU de 80 GB (H100 80 GB o A100 80 GB) es suficiente para alojar los pesos BF16 junto con contextos extensos. Los benchmarks se ejecutaron en despliegues H100 TP2.
-- GPU de consumo: no cabe en una RTX 4090 (24 GB) ni en tarjetas de 16–24 GB en BF16. El autor menciona compatibilidad de conversion a GGUF mediante llama.cpp, pero no publica cuantizaciones ni cifras de VRAM para ellas; como referencia aritmetica, una cuantizacion de 4 bits de un modelo de 27,36B rondaria teoricamente los 14 GB, cifra no confirmada por el autor.
-- Opciones de despliegue: vLLM 0.31.0 (version indicada), Transformers y llama.cpp via conversion a GGUF. No se mencionan Ollama ni TGI.
-- Configuracion critica en vLLM: `--max-model-len 262144` y `--max-num-seqs 32`, porque el valor por defecto de 1024 excede los bloques de estado de atencion lineal disponibles en una GPU. Las evaluaciones usaron ademas `--default-chat-template-kwargs '{"preserve_thinking": false}'` para no reinyectar el razonamiento de turnos anteriores.
-- Parsers recomendados: `--reasoning-parser qwen3`, `--enable-auto-tool-choice` y `--tool-call-parser qwen3_xml`.
-- Latencia y throughput: no disponibles. El unico dato indirecto de coste es el numero de tokens de salida por tarea (29,3K de mediana en Terminal-Bench 2.1).
+- VRAM estimada para inferencia en BF16: ~55 GB de pesos, más memoria para KV cache y estados de atención lineal. Una GPU de 80 GB (A100, H100) es suficiente para contextos largos.
+- GPU recomendadas: A100 80 GB, H100 80 GB para despliegue en BF16 con vLLM. Para cuantizaciones GGUF (Q4, Q5, Q8) podría caber en GPUs consumer de 24 GB (RTX 4090) o 48 GB (RTX 6000 Ada), aunque no se proporcionan datos oficiales de rendimiento en esas configuraciones.
+- Opciones de despliegue: vLLM 0.31.0 (recomendado, con `--max-model-len 262144 --max-num-seqs 32 --reasoning-parser qwen3 --enable-auto-tool-choice --tool-call-parser qwen3_xml`), Transformers, llama.cpp (conversión GGUF). No se menciona Ollama ni TGI.
+- Latencia y throughput: no disponibles de forma directa; la model card reporta eficiencia de tokens (29,3K tokens de salida por tarea en Terminal-Bench frente a 65,3K del base), lo que implica menor coste por tarea, pero no se publican métricas de latencia por token ni throughput en tokens/s.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Terminal-Bench 2.1 | DeepSWE | τ³-bench | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|---|
-| Sabi-Noema | ~27,36B denso hibrido | 262K | 76,0 % | 47,5 % | 259/278 | Apache 2.0 | Pesos abiertos en Hugging Face |
-| Qwen3.8-27B (base) | ~27B denso hibrido | 262K (segun el base) | 73,0 % | 38,5 % | 220/278 | No disponible en la informacion proporcionada | Pesos abiertos en Hugging Face |
-| ThinkingCap | No disponible | No disponible | 67,8 % | 38,9 % | 204/278 | No disponible | Comparado en la model card |
-| Swift 1.5 | No disponible | No disponible | 62,9 % | 39,8 % | 195/278 | No disponible | Comparado en la model card |
-| Muse Glimmer 30B | 30B | 131K | 48,3 % | 5,3 % | 219/278 | No disponible | Servido localmente en BF16 en las pruebas |
-| GPT-6 Luna (high) | No disponible | No disponible | 68,5 % | 53,1 % | 183/278 | Propietaria | Via OpenRouter |
+| Modelo | Parámetros | Contexto | Terminal-Bench 2.1 | DeepSWE | Licencia | Disponibilidad |
+|---|---|---|---:|---:|---|---|
+| Sabi-Noema | ~27B denso | 262K | 76,0% | 47,5% | Apache 2.0 | Hugging Face (sabicap/sabi-noema) |
+| Qwen3.8-27B | ~27B denso | 262K (según base) | 73,0% | 38,5% | Apache 2.0 (según base) | Hugging Face (Qwen/Qwen3.8-27B) |
+| ThinkingCap | No disponible | No disponible | 67,8% | 38,9% | No disponible | No disponible |
+| Swift 1.5 | No disponible | No disponible | 62,9% | 39,8% | No disponible | No disponible |
+| Muse Glimmer 30B | 30B | 131K | 48,3% | 5,3% | No disponible | No disponible |
+| GPT-6 Luna (high) | No disponible (propietario) | No disponible | 68,5% | 53,1% | Propietaria | OpenRouter |
 
-En eficiencia, Sabi-Noema reduce la mediana de tokens de salida en Terminal-Bench 2.1 a 29,3K frente a 65,3K de Qwen3.8-27B, 51,0K de ThinkingCap y 57,1K de Swift 1.5, aunque Muse Glimmer 30B es mas eficiente en ese benchmark (20,6K) a costa de un rendimiento muy inferior. En fiabilidad, la tasa de alucinacion del 15,1 % solo es superada (mejorada) por GPT-6 Luna en el grupo comparado, que sin embargo obtiene 85,3 % de alucinacion en AA-Omniscience segun la tabla del autor, dato que conviene leer con cautela por la diferencia de condiciones de servicio.
+Sabi-Noema supera a su base en Terminal-Bench, DeepSWE, τ³-bench, BFCL v4, MCPMark, GPQA-Diamond e IFBench, y reduce la tasa de alucinación a menos de la mitad. Frente a GPT-6 Luna, pierde en DeepSWE (47,5% vs 53,1%) pero gana en Terminal-Bench (76,0% vs 68,5%) y en tasa de alucinación (15,1% vs 85,3%). Frente a Muse Glimmer 30B, es claramente superior en tareas agénticas y de código, aunque Muse Glimmer es más eficiente en tokens por tarea en Terminal-Bench (20,6K vs 29,3K).
 
 ## Limitaciones y advertencias
 
-- Riesgo de alucinacion: aunque bajo en terminos relativos (15,1 % en AA-Omniscience), sigue siendo un 15,1 %; en dominios factuales criticos se requiere verificacion externa.
-- Sesgos: la model card no documenta evaluaciones de sesgo, toxicidad ni equidad. No hay informacion disponible al respecto.
-- Idiomas: no se especifica el soporte multilingue ni se han publicado benchmarks por idioma. El rendimiento fuera del ingles no esta caracterizado.
-- Modo no-thinking: el chat template lo soporta, pero el autor indica explicitamente que no fue evaluado, por lo que su calidad es desconocida.
-- Contexto largo: los 262.144 tokens declarados implican requisitos de memoria considerables y la necesidad de ajustar `--max-num-seqs` en vLLM; el rendimiento real mas alla de la ventana evaluada no esta documentado.
-- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen/Qwen3.8-27B, que no se detallan en la informacion proporcionada.
-- Procedencia del ajuste: el entrenamiento se hizo exclusivamente con entornos RL de codigo abierto, sin que se detalle la composicion del dataset ni posibles contaminaciones con los benchmarks reportados.
-- Comparabilidad de benchmarks: Terminal-Bench 2.1 se ejecuto con la configuracion de Artificial Analysis, mientras que las cifras de Qwen para ese mismo benchmark (73,0) proceden de su propio setup Terminus; las comparaciones entre harnesses distintos no son estrictamente equivalentes.
-- Versionado de dependencias: las instrucciones de servicio fijan vLLM 0.31.0; otras versiones pueden requerir ajustes, especialmente en la gestion de atencion lineal y parsers de tool calling.
-- Reproducibilidad: el modelo esta fechado en octubre de 2026 y su ecosistema de referencia (Qwen3.8, GPT-6 Luna, Muse Glimmer) es reciente, por lo que el soporte en herramientas de terceros puede ser limitado.
+- Sesgos conocidos: no se documentan en la información disponible; al derivar de Qwen3.8-27B, hereda los sesgos del modelo base, que no se detallan.
+- Riesgo de alucinación: la tasa reportada es del 15,1% en AA-Omniscience, inferior al base (30,4%) pero no nula; en dominios especializados puede aumentar.
+- Limitaciones de contexto o idioma: el contexto es de 262K tokens, pero no se especifican los idiomas soportados ni el rendimiento en lenguas distintas del inglés. El modo no-thinking está soportado pero no fue evaluado, por lo que su comportamiento es incierto.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero se debe verificar la licencia del modelo base Qwen3.8-27B y de los entornos RL utilizados, así como las obligaciones de atribución.
+- Caveats para producción: el despliegue con vLLM requiere `--max-num-seqs 32` porque el valor por defecto (1024) excede los bloques de estado de atención lineal disponibles en una GPU; además, se recomienda `--default-chat-template-kwargs '{"preserve_thinking": false}'` para no replicar el razonamiento de turnos anteriores. La variante MLA (Sabi-Noema-MLA) está pensada para muchas sesiones largas por GPU, lo que sugiere que la versión estándar puede tener limitaciones en escenarios de alta concurrencia.
+- El tag `image-text-to-text` sugiere capacidades multimodales, pero la model card no las describe ni las evalúa; no se debe asumir visión en producción sin verificación.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/sabicap/sabi-noema
-- Variante con atencion latente multi-cabeza: https://huggingface.co/sabicap/sabi-noema-mla
+- Variante con MLA: https://huggingface.co/sabicap/sabi-noema-mla
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Metodologia de Terminal-Bench 2.1 citada por el autor: https://artificialanalysis.ai/methodology/intelligence-benchmarking#terminal-bench-v2-1
-- Repositorio de scripts de servicio: `examples/serve_vllm.sh` dentro del repositorio del modelo
-- Enlaces adicionales: no se han encontrado enlaces relevantes en la busqueda web proporcionada (los resultados devueltos corresponden a la aplicacion Snapchat y no guardan relacion con el modelo).
+- Metodología de Terminal-Bench 2.1 de Artificial Analysis: https://artificialanalysis.ai/methodology/intelligence-benchmarking#terminal-bench-v2-1
+- Repositorio de vLLM (versión 0.31.0): no disponible en la información proporcionada
+- Paper o blog del autor: no disponible en la información proporcionada

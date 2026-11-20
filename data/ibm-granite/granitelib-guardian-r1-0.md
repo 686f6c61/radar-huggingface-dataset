@@ -2,58 +2,58 @@
 
 ## Resumen
 
-Granite Guardian Library r1.0 es una colección de adaptadores LoRA publicada por IBM bajo el identificador `ibm-granite/granitelib-guardian-r1.0`. No se trata de un modelo independiente, sino de una librería de cuatro familias de adaptadores orientadas a tareas de seguridad, factualidad y cumplimiento de políticas en sistemas basados en LLM. Cada familia se ofrece como adaptador LoRA sobre cuatro modelos base distintos de la familia Granite: `granite-4.0-micro`, `granite-4.1-3b`, `granite-4.1-8b` y `granite-4.1-30b`.
+Granite Guardian Library es una colección de adaptadores LoRA desarrollada por IBM (organización `ibm-granite`) para dotar a modelos de la familia Granite de capacidades de moderación, verificación de factualidad y cumplimiento de políticas. No se trata de un modelo único, sino de un repositorio que agrupa cuatro familias de adaptadores —Guardian Core, Factuality Detection, Factuality Correction y Policy Guardrails— entrenadas sobre cuatro modelos base: `granite-4.0-micro`, `granite-4.1-3b`, `granite-4.1-8b` y `granite-4.1-30b`.
 
-El problema que resuelve es el de la evaluación y corrección automática de las salidas de un LLM: detección de riesgos de seguridad (daño, jailbreaking, lenguaje soez, violencia, contenido sexual, sesgo social, comportamiento no ético), detección de alucinaciones en llamadas a herramientas y en generación aumentada por recuperación (RAG), corrección de respuestas factualmente incorrectas y verificación de cumplimiento de políticas. El resultado de los adaptadores de juicio se emite como un objeto JSON con un campo `score` que toma el valor `"yes"` o `"no"`, lo que facilita su integración en pipelines automatizados.
+El problema que resuelve es la necesidad de incorporar capas de control en sistemas basados en LLM: detectar riesgos de seguridad (daño, jailbreaking, contenido sexual, violencia, sesgo social), identificar alucinaciones en llamadas a herramientas y en pipelines RAG, corregir respuestas factualmente incorrectas a partir de pasajes de contexto y verificar si un escenario cumple o viola una política dada. Los adaptadores operan como jueces que devuelven una salida estructurada en JSON con un campo `score` de tipo `"yes"`/`"no"` (o `"Ambiguous"` en el caso de Policy Guardrails).
 
-Su relevancia actual radica en que permite añadir capas de control y verificación sobre modelos de distinto tamaño sin necesidad de reentrenar el modelo base completo, ya que se implementan como adaptadores LoRA sobre pesos congelados. La librería está firmada con Sigstore para garantizar integridad y procedencia, y el uso recomendado se canaliza a través del framework Mellea, donde estos adaptadores reciben el nombre de "intrinsics".
+La relevancia actual radica en que estos adaptadores se publican bajo licencia Apache 2.0, están firmados criptográficamente con Sigstore (identidad `Granite-sign@ibm.com`) y se integran con el framework Mellea, que los denomina "intrinsics". El repositorio ocupa 6,5 GB e incluye todas las variantes de modelo, lo que permite desplegar la capa de control con el tamaño de modelo base que mejor se ajuste al presupuesto de cómputo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptadores LoRA (PEFT) sobre modelos base congelados de la familia Granite; arquitectura del modelo base no disponible |
-| Parametros totales | Depende del modelo base: granite-4.1-3b, granite-4.1-8b y granite-4.1-30b segun nomenclatura; granite-4.0-micro no disponible |
-| Parametros activos | No aplica (no es un modelo MoE) |
+| Arquitectura | Adaptadores LoRA (PEFT) sobre modelos base transformer de la familia Granite |
+| Parametros totales | No disponible (depende del modelo base: granite-4.0-micro, granite-4.1-3b, granite-4.1-8b, granite-4.1-30b) |
+| Parametros activos | No disponible |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible para los adaptadores; el formato entregado es safetensors sin cuantizar |
-| Idiomas soportados | Ingles (en) |
+| Tipos de cuantizacion | No disponible |
+| Idiomas soportados | Ingles (`en`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (`adapter_model.safetensors`), con `adapter_config.json`, `io.yaml` y firma `model.sig` |
+| Formato de pesos | safetensors (`adapter_model.safetensors`), configuración PEFT (`adapter_config.json`), `io.yaml` y firma `model.sig` |
+| Modelos base compatibles | granite-4.0-micro, granite-4.1-3b, granite-4.1-8b, granite-4.1-30b |
+| Familias de adaptadores | Guardian Core, Factuality Detection, Factuality Correction, Policy Guardrails |
+| Tamano del repositorio | 6,5 GB |
+| Firma de artefactos | Sigstore, identidad `Granite-sign@ibm.com` |
 
 ## Arquitectura y entrenamiento
 
-Cada capacidad se implementa como un adaptador LoRA (Low-Rank Adaptation) entrenado sobre un modelo base congelado de Granite, gestionado mediante PEFT. El repositorio contiene cuatro familias de adaptadores, cada una replicada para los cuatro modelos base disponibles:
+Cada adaptador es un módulo LoRA que se acopla a un modelo base Granite preentrenado. La arquitectura subyacente es, por tanto, la del transformer del modelo base correspondiente; el adaptador añade matrices de bajo rango que modifican el comportamiento del modelo para una tarea concreta de evaluación o corrección. El repositorio no documenta el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO en la información disponible.
 
-- Guardian Core: juzga si los prompts de entrada y las respuestas de salida de un sistema LLM cumplen criterios de seguridad (daño, jailbreaking, lenguaje soez, violencia, contenido sexual, sesgo social, comportamiento no ético), alucinaciones en llamadas a herramientas y funciones, y RAG en sistemas basados en agentes.
-- Factuality Detection: evalúa la corrección factual teniendo en cuenta explícitamente pasajes de contexto que pueden contener información contradictoria o en conflicto, identificando respuestas que se oponen, tergiversan o ignoran selectivamente la evidencia del contexto.
-- Factuality Correction: corrige respuestas factualmente incorrectas generadas por el LLM apoyándose en pasajes de contexto, y es capaz de corregir inexactitudes en respuestas extensas compuestas por múltiples unidades atómicas, preservando las capacidades generativas y de razonamiento del modelo base.
-- Policy Guardrails: verificación de cumplimiento de políticas; dada una política y un escenario, decide si el escenario la cumple o la viola, y ofrece una tercera respuesta ("Ambiguous") cuando no es posible decidir con alta certeza.
-
-No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas de RLHF o DPO. Tampoco se detallan innovaciones de decodificación o mecanismos de atención lineal. Todos los artefactos de cada adaptador están firmados con la identidad `Granite-sign@ibm.com` y pueden verificarse con la herramienta `model-signing` basada en Sigstore.
+La innovación técnica destacable no está en la arquitectura del transformer, sino en el diseño de las tareas: Factuality Detection evalúa respuestas contra uno o varios pasajes de contexto y detecta conflictos, tergiversaciones u omisiones selectivas de evidencia; Factuality Correction corrige respuestas largas compuestas por múltiples unidades atómicas (hechos o afirmaciones) preservando las capacidades generativas y de razonamiento del modelo base; Policy Guardrails introduce una tercera etiqueta (`Ambiguous`) para casos en los que no es posible decidir con alta certeza. Todos los artefactos van firmados con Sigstore, lo que permite verificar su integridad y procedencia tras la descarga.
 
 ## Capacidades
 
-- Juicio de seguridad sobre prompts y respuestas: detección de daño, jailbreaking, lenguaje soez, violencia, contenido sexual, sesgo social y comportamiento no ético.
-- Detección de alucinaciones específicamente en el contexto de llamadas a herramientas y funciones.
-- Detección de alucinaciones en flujos de generación aumentada por recuperación (RAG) dentro de sistemas basados en agentes.
-- Salida estructurada en JSON con un campo `score` de valor `"yes"` o `"no"` para los adaptadores de juicio.
-- Evaluación de factualidad considerando pasajes de contexto potencialmente contradictorios.
-- Corrección de respuestas factualmente incorrectas, incluyendo respuestas largas con múltiples afirmaciones atómicas.
-- Verificación de cumplimiento de políticas con salida ternaria: cumplimiento, violación o "Ambiguous".
-- Funcionamiento sobre cuatro tamaños de modelo base distintos, lo que permite elegir el equilibrio entre coste y capacidad.
-- Soporte multilingüe: únicamente inglés.
+- Evaluación de riesgos de seguridad en prompts y respuestas: daño, jailbreaking, lenguaje soez, violencia, contenido sexual, sesgo social y comportamiento no ético (Guardian Core).
+- Detección de alucinaciones en llamadas a herramientas y funciones (tool/function calls).
+- Detección de alucinaciones en sistemas RAG y basados en agentes.
+- Evaluación de factualidad contra pasajes de contexto que pueden contener información contradictoria (Factuality Detection).
+- Corrección de respuestas factualmente incorrectas en textos largos con múltiples afirmaciones atómicas (Factuality Correction).
+- Verificación de cumplimiento de políticas sobre un escenario dado, con salida ternaria: cumple, viola o ambiguo (Policy Guardrails).
+- Salida estructurada en JSON con campo `score` (`"yes"`/`"no"`), lo que facilita su integración en pipelines automatizados.
+- Capacidad de razonamiento y generación heredada del modelo base Granite subyacente.
+- Integración nativa con el framework Mellea (los adaptadores se invocan como "intrinsics").
+- Verificación de integridad de los artefactos mediante firmas Sigstore.
 
 ## Casos de uso
 
-- Moderación de contenido en producción: desplegar el adaptador Guardian Core sobre un modelo base pequeño (por ejemplo `granite-4.1-3b`) para clasificar en tiempo real prompts y respuestas como seguras o inseguras, con salida JSON directamente consumible por el orquestador.
-- Verificación de factualidad en asistentes RAG: usar Factuality Detection sobre las respuestas generadas a partir de documentos recuperados, comparando cada afirmación con los pasajes de contexto para marcar contradicciones o evidencia ignorada.
-- Autocorrección de respuestas en pipelines documentales: aplicar Factuality Correction para reescribir respuestas largas que contienen afirmaciones erróneas, manteniendo intactas las partes correctas y las capacidades de razonamiento del modelo base.
-- Cumplimiento normativo y de políticas internas: emplear Policy Guardrails para evaluar si un escenario descrito cumple una política corporativa dada, con la salida "Ambiguous" como señal para escalado a revisión humana cuando la certeza es baja.
-- Validación de agentes que invocan herramientas: detectar alucinaciones en llamadas a funciones y en los argumentos generados antes de ejecutar acciones reales sobre sistemas externos.
-- Control de calidad en generación de contenido: integrar Guardian Core y Factuality Detection en un pipeline de publicación para bloquear o marcar automáticamente borradores que incumplan criterios de seguridad o factualidad.
-- Auditoría y trazabilidad: verificar las firmas Sigstore de los adaptadores descargados antes de incorporarlos a entornos regulados, comprobando que los artefactos no han sido manipulados tras su publicación.
-- Investigación sobre evaluación de LLM: usar la librería como banco de adaptadores comparables sobre distintos tamaños de modelo base para estudiar el comportamiento de las tareas de seguridad y factualidad en función de la escala.
+- Moderación de contenido en producción: desplegar Guardian Core sobre `granite-4.1-3b` para clasificar prompts y respuestas de un chatbot antes de mostrarlas al usuario, devolviendo `"yes"` cuando se detecta riesgo y bloqueando la respuesta en ese caso.
+- Control de alucinaciones en pipelines RAG: usar Factuality Detection para comparar la respuesta generada con los fragmentos recuperados y marcar como sospechosas aquellas respuestas que contradigan o ignoren la evidencia del contexto.
+- Corrección automática de respuestas: aplicar Factuality Correction sobre respuestas largas para reescribir únicamente las afirmaciones que entran en conflicto con el contexto, preservando el resto del texto generado por el modelo base.
+- Validación de llamadas a herramientas en agentes: emplear Guardian Core para detectar alucinaciones en los argumentos de function calling antes de ejecutar la herramienta, evitando efectos secundarios no deseados.
+- Cumplimiento normativo y de políticas internas: usar Policy Guardrails para evaluar si una acción o respuesta de un agente respeta una política corporativa, con la etiqueta `Ambiguous` como señal para revisión humana.
+- Filtrado previo en sistemas multiagente: integrar los adaptadores como capa de verificación entre agentes, de modo que cada mensaje intercambiado se valide contra criterios de seguridad y factualidad antes de propagarse.
+- Evaluación offline de calidad de modelos: utilizar los cuatro adaptadores como conjunto de jueces para medir tasas de alucinación y de violaciones de política en un corpus de respuestas generadas, con salida JSON agregable.
+- Despliegue con distintos presupuestos de cómputo: elegir la variante del adaptador (micro, 3b, 8b o 30b) según los requisitos de latencia y precisión del entorno de producción.
 
 ## Benchmarks y rendimiento
 
@@ -61,36 +61,46 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Los adaptadores LoRA en sí ocupan poco espacio (el repositorio completo, con las cuatro familias y cuatro variantes de modelo base, es de 6,5 GB), por lo que el requisito real de VRAM lo determina el modelo base sobre el que se apliquen.
-- Estimaciones orientativas de VRAM para inferencia en precisión fp16, calculadas a partir del número de parámetros del modelo base (2 bytes por parámetro, sin contar caché de KV ni overhead): `granite-4.1-3b` en torno a 6 GB, `granite-4.1-8b` en torno a 16 GB y `granite-4.1-30b` en torno a 60 GB. Para `granite-4.0-micro` no hay dato de tamaño disponible.
-- GPUs recomendadas: `granite-4.1-3b` puede ejecutarse en GPUs de consumo como una RTX 4090; `granite-4.1-8b` requiere GPUs de gama alta con al menos 16-24 GB de VRAM; `granite-4.1-30b` requiere GPUs de datacenter como A100 o H100.
-- Despliegue: la información proporcionada recomienda el uso de los adaptadores a través del framework Mellea (donde se denominan "intrinsics"). No se detallan en la información disponible opciones como vLLM, llama.cpp, Ollama o TGI para estos adaptadores.
-- Latencia y throughput: no disponible.
+- El consumo de VRAM depende del modelo base elegido, no del adaptador LoRA, que añade una sobrecarga mínima.
+- `granite-4.0-micro` y `granite-4.1-3b`: aptos para GPU de consumo como RTX 4090, RTX 3090 o superiores, con cuantización si fuese necesaria.
+- `granite-4.1-8b`: viable en GPU de consumo de gama alta (RTX 4090 con 24 GB) y en GPU de datacenter como A100 o H100.
+- `granite-4.1-30b`: requiere GPU de datacenter (A100 80 GB, H100) o configuraciones multi-GPU.
+- Opciones de despliegue: los adaptadores son PEFT, por lo que pueden cargarse con la librería `peft` de Hugging Face sobre el modelo base; el soporte en vLLM, llama.cpp, Ollama o TGI dependerá del soporte de LoRA de cada herramienta para el modelo base concreto (no disponible en la información proporcionada).
+- La invocación recomendada por el autor es a través del framework Mellea.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-La información proporcionada no incluye datos de rendimiento ni especificaciones que permitan una comparación cuantitativa con modelos alternativos de la misma categoría. Estructuralmente, la propuesta difiere de los modelos de guardia monolíticos convencionales en que se distribuye como adaptadores LoRA desacoplados sobre cuatro modelos base de distinto tamaño, lo que permite reutilizar el mismo modelo base para generación y para tareas de verificación cambiando únicamente el adaptador. No se dispone de datos para comparar parámetros, contexto, rendimiento, licencia y disponibilidad frente a alternativas concretas.
+| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Granite Guardian Library (este) | Adaptadores LoRA sobre Granite | Depende del base (micro, 3b, 8b, 30b) | No disponible | Apache 2.0 | Hugging Face, firmado con Sigstore |
+| Llama Guard (Meta) | Modelo de moderación dedicado | No disponible en la información proporcionada | No disponible | Licencia Llama | No disponible en la información proporcionada |
+| ShieldGemma (Google) | Modelo de moderación dedicado | No disponible en la información proporcionada | No disponible | Licencia Gemma | No disponible en la información proporcionada |
+
+No se dispone de datos de benchmarks que permitan una comparación cuantitativa con estas alternativas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Cobertura de idioma limitada al inglés; no se declara soporte de otros idiomas.
-- Al ser adaptadores sobre modelos base, heredan los sesgos y las limitaciones del modelo subyacente, que no se documentan en la información disponible.
-- Los adaptadores de juicio y detección de factualidad pueden producir falsos positivos o falsos negativos; no se han publicado métricas de precisión, recall ni F1 en la información disponible.
-- Los adaptadores de corrección factual dependen de la calidad y cobertura de los pasajes de contexto; si el contexto es incompleto o erróneo, la corrección puede introducir nuevos errores.
-- La salida "Ambiguous" de Policy Guardrails es una señal explícita de incertidumbre y debe tratarse con revisión humana en flujos de decisión automatizados.
-- No se especifican requisitos ni procedimientos de producción (cuantización, servidores de inferencia, latencia) más allá del uso recomendado vía Mellea.
-- Aunque la licencia es Apache 2.0, que permite uso comercial, conviene revisar los términos de los modelos base de Granite sobre los que se apliquen los adaptadores.
-- Es imprescindible aplicar estos adaptadores sobre un modelo base compatible de la familia indicada; no se documenta su funcionamiento sobre otros modelos.
+- Solo soporta inglés (`en`); no hay evidencia de capacidades multilingües en la información disponible.
+- Al ser adaptadores LoRA, requieren cargar el modelo base correspondiente; el repositorio completo ocupa 6,5 GB, pero el despliegue real necesita además los pesos del base.
+- La calidad de la detección y corrección depende del modelo base elegido; no se han publicado métricas que permitan comparar el rendimiento entre las variantes micro, 3b, 8b y 30b.
+- Riesgo de falsos positivos y falsos negativos inherente a cualquier clasificador de seguridad; la etiqueta `Ambiguous` de Policy Guardrails mitiga parcialmente este problema, pero no lo elimina.
+- El propio adaptador puede alucinar en su juicio; se recomienda validar sus salidas en dominios críticos.
+- No se documentan sesgos conocidos ni la composición del dataset de entrenamiento, lo que dificulta auditar el comportamiento en subgrupos.
+- La licencia Apache 2.0 permite uso comercial, pero el usuario debe verificar también la licencia del modelo base Granite que utilice.
+- La verificación de firmas requiere la herramienta `model-signing` y el proveedor de identidad `https://sigstore.verify.ibm.com/oauth2`; sin este paso no se garantiza la integridad de los artefactos descargados.
+- El uso recomendado pasa por el framework Mellea; fuera de él, la integración con los adaptadores no está documentada en la información disponible.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/ibm-granite/granitelib-guardian-r1.0
+- Repositorio en Hugging Face: https://huggingface.co/ibm-granite/granitelib-guardian-r1.0
 - Modelo base granite-4.0-micro: https://huggingface.co/ibm-granite/granite-4.0-micro
 - Modelo base granite-4.1-3b: https://huggingface.co/ibm-granite/granite-4.1-3b
 - Modelo base granite-4.1-8b: https://huggingface.co/ibm-granite/granite-4.1-8b
 - Modelo base granite-4.1-30b: https://huggingface.co/ibm-granite/granite-4.1-30b
 - Framework Mellea: https://mellea.ai
 - Ejemplos de adaptadores en Mellea: https://github.com/generative-computing/mellea/tree/main/docs/examples/intrinsics
-- Herramienta de verificación de firmas model-signing: https://github.com/sigstore/model-transparency
-- Información general sobre Granite: https://www.ibm.com/granite
+- Herramienta de verificación de firmas: https://github.com/sigstore/model-transparency
+- Página oficial de Granite: https://www.ibm.com/granite
 - Documentación de Granite: https://www.ibm.com/granite/docs/
+- Blog de investigación de IBM: https://research.ibm.com/blog/gra

@@ -60,31 +60,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "MeidasTouch - YouTube",
-      "url": "https://www.youtube.com/c/MeidasTouch/videos",
-      "snippet": "We cover breaking news, politics, law and more. We are unapologetically pro-democracy."
-    },
-    {
-      "title": "The MeidasTouch Podcast - YouTube",
-      "url": "https://www.youtube.com/playlist?list=PL36GQAccexbwFPOGmbf5pFE32VmyC7ui3",
-      "snippet": "The MeidasTouch Podcast combines brotherly love, comedy, news coverage, and deep discussions about supporting our …"
-    },
-    {
-      "title": "Meidas Touch - YouTube",
-      "url": "https://www.youtube.com/playlist?list=PL0INLCquzqva9JyLbnKCqvE6mAH3qf6hq",
-      "snippet": "GOP’s CLOSED-DOOR Trump Revolt Just LEAKED..."
-    },
-    {
-      "title": "Uploads from MeidasTouch - YouTube",
-      "url": "https://www.youtube.com/playlist?list=UU9r9HYFxEQOBXSopFS61ZWg",
-      "snippet": "🚨Trump Has 12AM MELTDOWN After UN DEBACLE… Former Squadron Commander Just GAVE Hegseth a BRUTAL WARNING..."
-    },
-    {
-      "title": "MeidasTouch News",
-      "url": "https://meidasnews.com/",
-      "snippet": "Sign up for the Meidas+ Substack to get the latest unapologetically pro-democracy updates delivered straight to your inbox! The …"
-    }
-  ]
+  "sources": []
 }

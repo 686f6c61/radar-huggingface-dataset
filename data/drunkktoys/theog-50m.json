@@ -32,7 +32,7 @@
     "conversational"
   ],
   "likes": 3,
-  "downloads_30d": 1526,
+  "downloads_30d": 1529,
   "trending_score": 0,
   "parameters": 50148352,
   "parameters_human": "50.1M",
@@ -53,16 +53,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "theOG-50M – AI Model by DrunkkToys | AlphaNeural AI",
-      "url": "https://app.alphaneural.io/models/DrunkkToys/theOG-50M",
-      "snippet": "Explore theOG-50M, an AI model on AlphaNeural AI. Deploy using Neural Labs compute infrastructure."
-    },
-    {
-      "title": "DrunkkToys/theOG-50M · Hugging Face",
-      "url": "https://huggingface.co/DrunkkToys/theOG-50M",
-      "snippet": "theOG-50M A 50.7M-parameter code generation model trained from scratch, aligned with DPO on execution-verified preference pairs — every \"chosen\" completion in the preference set actually passed the task's unit tests."
-    }
-  ]
+  "sources": []
 }

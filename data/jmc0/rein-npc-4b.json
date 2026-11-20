@@ -63,16 +63,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "jmc0/rein-r1-4b · Hugging Face",
-      "url": "https://huggingface.co/jmc0/rein-r1-4b",
-      "snippet": "jmc0 / rein-r1-4b Like 1 Other Transformers Safetensors jmc0/rein-decisions clinc/clinc_oos AmazonScience/massive English Portuguese multilingual qwen3_5_text feature-extraction rein typed-decision decision-model guardrails tool-calling roleplay game-npc custom_code License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy ..."
-    },
-    {
-      "title": "jmc0/rein-r1-0.8b · Hugging Face",
-      "url": "https://huggingface.co/jmc0/rein-r1-0.8b",
-      "snippet": "An NPC tavern keeper must keep a secret, never discuss real-world politics, and say \"drink responsibly\" when he serves a drink. Qwen3.5-0.8B instruct writes the replies; Rein enforces the rules."
-    }
-  ]
+  "sources": []
 }

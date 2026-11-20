@@ -2,79 +2,91 @@
 
 ## Resumen
 
-Snowball 67B-A2B es un modelo de lenguaje de base desarrollado por open-athena con arquitectura Mixture of Experts (MoE). Tiene 67.078.882.816 parametros totales y activa aproximadamente 2.000 millones por token, lo que lo hace computacionalmente eficiente para su tamano. La ventana de contexto se ha extendido a 262.144 tokens, lo que permite procesar documentos muy largos en una unica pasada.
+Snowball 67B-A2B es un modelo de lenguaje de tipo mezcla de expertos (MoE) desarrollado por open-athena dentro del ecosistema Marin. Se trata de una exportación en BF16 del paso 157.000 de un experimento de comparación de contexto largo denominado Snowball, cuyo objetivo es evaluar el efecto de distintas configuraciones de atención (en concreto el multiplicador QK) sobre la capacidad del modelo de manejar secuencias muy extensas. El modelo cuenta con 67.078.882.816 parámetros totales y aproximadamente 2.000 millones de parámetros activos por token, lo que lo sitúa en una categoría de eficiencia computacional interesante para despliegues con requisitos de contexto extremadamente largos.
 
-El checkpoint es un export en BF16 del paso 157.000 de un experimento de contexto largo de la comunidad Marin. Es un modelo base, no afinado para instrucciones, y se sirve mediante un fork de vLLM que registra la arquitectura `GrugMoeForCausalLM`. Su valor principal reside en ser una referencia abierta para investigar MoE de gran escala con contexto amplio, aunque todavia no se han publicado benchmarks que permitan evaluar su rendimiento frente a otros modelos.
+La relevancia de esta ficha radica en su contexto de 262.144 tokens, una ventana que lo posiciona entre los modelos de contexto largo más ambiciosos de su categoría. El entrenamiento extendió el contexto desde el paso 156.000 hasta el 157.000 aplicando un multiplicador QK de 1,75, manteniendo sin cambios el muestreo de documentos de contexto largo. Es un modelo base, no ajustado por instrucciones, por lo que su uso previsto es la generación de texto por completación y no el diálogo conversacional directo.
+
+La arquitectura se apoya en el operador `GrugMoeForCausalLM` (tag `grug_moe`), registrado únicamente en el fork de vLLM mantenido por la comunidad Marin. Esto implica que el despliegue estándar con vLLM, TGI o llama.cpp no es posible sin adaptaciones, y que la configuración de referencia utiliza ocho GPU H100 con paralelismo de datos 8 y paralelismo de expertos. El modelo se distribuye con licencia OpenMDW 1.1 y solo declara soporte para inglés.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GrugMoeForCausalLM (MoE) |
+| Arquitectura | Transformer MoE (GrugMoeForCausalLM / grug_moe), 26 capas, 256 expertos con 4 seleccionados por token |
 | Parametros totales | 67.078.882.816 |
-| Parametros activos | Aproximadamente 2B por token |
+| Parametros activos | Aproximadamente 2.000 millones por token |
 | Longitud de contexto | 262.144 tokens |
-| Tipos de cuantizacion | BF16 (sin cuantizaciones de 4/8 bits en este repo) |
-| Idiomas soportados | en |
-| Licencia | openmdw-1.1 |
-| Formato de pesos | safetensors |
+| Tipos de cuantizacion | No disponible (exportación en BF16; no se documentan cuantizaciones GGUF/AWQ/GPTQ) |
+| Idiomas soportados | Inglés (en) |
+| Licencia | OpenMDW 1.1 |
+| Formato de pesos | Safetensors (BF16) |
+| Vocabulario | 128.256 tokens |
+| Cabezas KV | 5 |
+| Repositorio | 134,2 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo usa una arquitectura MoE con 26 capas. Cada token se envia a 4 de los 256 expertos disponibles y la salida se combina para generar el siguiente token. La atencion utiliza 5 cabezas KV, lo que reduce la memoria asociada al cache de key-value en comparacion con configuraciones densas. El vocabulario tiene 128.256 entradas. La variante con `qk_mult=1.75` sugiere una modificacion en el escalado de las consultas/claves para adaptar la atencion a contextos muy largos.
+El modelo sigue una arquitectura de mezcla de expertos con 26 capas y 256 expertos, de los cuales se activan cuatro por token, dando lugar a unos 2.000 millones de parámetros activos sobre un total de 67.000 millones. El vocabulario es de 128.256 tokens y la atención utiliza cinco cabezas KV, un detalle poco habitual que condiciona la estrategia de paralelismo en inferencia (el autor indica que se emplea paralelismo de expertos precisamente por este motivo). El checkpoint corresponde al paso 157.000 de un experimento de comparación de contexto largo; entre los pasos 156.000 y 157.000 se extendió el contexto hasta 262.144 tokens aplicando un multiplicador QK de 1,75, sin modificar el muestreo de documentos largos. No se documentan en la información disponible el número total de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO; al tratarse de un modelo base, es esperable que no las haya.
 
-Segun la model card, el checkpoint procede del paso 157.000 de un experimento comparativo de contexto largo. La extension de contexto desde el paso 156.000 hasta el 157.000 se realizo con `qk_mult=1.75` y manteniendo el muestreo de documentos de contexto largo sin cambios. Una entrada de blog de la comunidad Marin indica que el modelo ha pasado por un cooldown de 5,7 trillones de tokens con un data mix actualizado, y que este checkpoint es el primer punto antes de un pipeline de SFT. No hay evidencia de ajustes por RLHF ni DPO; el modelo es puramente base.
+La innovación técnica principal es el ajuste del multiplicador QK como palanca para estabilizar la atención en ventanas de 262K tokens, un enfoque que el equipo compara con una línea base de QK 1,57. La exportación aplica los sesgos de router QB pendientes antes de la conversión y excluye el estado del optimizador. El manifiesto de exportación (`export-manifest.json`) registra el tamaño y el checksum SHA-256 de cada fichero, la revisión del exportador y la revisión verificada de los pesos en el Hub. El autor advierte explícitamente de que esta subida valida nombres de tensores, dtype BF16, configuración, tamaños y checksums, pero no se ha ejecutado una nueva prueba de generación ni de paridad numérica para esta exportación concreta.
 
 ## Capacidades
 
-- Generacion de texto: el modelo produce completions de texto en ingles para prompts de continuacion.
-- Contexto largo: permite procesar secuencias de hasta 262.144 tokens, util para documentos extensos.
-- Eficiencia computacional: al activar solo ~2B parametros por token, el coste por token es menor que el de un modelo denso de tamano equivalente.
-- Uso como base para fine-tuning: al ser un modelo base, se puede adaptar a tareas especificas de instrucciones, chat o codigo.
-- No se documenta soporte para tool calling, function calling, agentes, vision ni audio.
-- Es un modelo monolingue en ingles; no se indica capacidad multilingue.
+- Generación de texto por completación: el modelo es un modelo base, por lo que su interfaz natural es la continuación de texto, no el diálogo con instrucciones.
+- Razonamiento y conocimiento general: al tratarse de un modelo de 67B totales con 2B activos, conserva la capacidad de conocimiento factual típica de su escala, aunque no se han publicado evaluaciones en la información disponible.
+- Contexto largo: ventana de 262.144 tokens, adecuada para tareas de recuperación y razonamiento sobre documentos extensos.
+- Capacidades multilingües: limitadas al inglés según la model card.
+- Tool calling / function calling: no disponible; no se documenta soporte nativo ni formato de herramientas.
+- Soporte de agentes y razonamiento multi-paso: no disponible como capacidad entrenada; podría emularse mediante prompting, pero sin garantías.
+- Modo thinking: no disponible.
+- Visión o audio: no disponible; el modelo es exclusivamente de texto.
 
 ## Casos de uso
 
-- Fine-tuning para analisis de documentos largos: su ventana de 262K permite entrenar un modelo que resuma o extraiga informacion de contratos, informes anuales o expedientes completos sin trocear el documento.
-- Recuperacion aumentada (RAG) con corpus extensos: al usar el modelo como base, un sistema RAG puede incorporar pasajes mucho mas amplios por consulta, lo que reduce el numero de fragmentos necesarios.
-- Generacion de codigo asistida por contexto: tras afinarlo en repositorios grandes, puede completar codigo sujetandose a archivos completos del proyecto gracias a la ventana de 262K tokens.
-- Investigacion en modelos MoE: al publicarse los pesos en BF16, permite estudiar la activacion de expertos, el efecto de `qk_mult` y las propiedades de generalizacion en arquitecturas GrugMoe.
-- Base para asistentes conversacionales: el tokenizer incluye una plantilla de chat que no se ha usado para instrucciones; se puede reutilizar para entrenar un asistente de dialogo mediante SFT.
-- Evaluacion y medicion del contexto largo: este checkpoint sirve como referencia para comparar el impacto de distintas configuraciones QK en tareas de recuperacion de informacion sobre documentos largos.
-- Generacion de contenido tecnico: para completar documentacion, articulos o especificaciones en ingles, dado el buen rendimiento esperable de un modelo base de este tamano.
+- Análisis de documentación técnica extensa: con 262.144 tokens de contexto, el modelo puede ingerir manuales completos, especificaciones o bases de código de gran tamaño en una sola pasada y generar resúmenes o continuaciones coherentes con el material.
+- Investigación sobre contexto largo: es un artefacto pensado para estudiar el efecto del multiplicador QK en la estabilidad de la atención; sirve como línea base experimental para comparar configuraciones de QK 1,57 frente a 1,75 en tareas de recuperación en contexto.
+- Generación de código a partir de repositorios completos: al poder procesar decenas de miles de líneas en una única ventana, resulta útil para tareas de completación condicionada por un contexto amplio de código, siempre que se acepte su naturaleza de modelo base sin instrucciones.
+- Completación de textos largos y estructurados: informes, artículos o documentación donde se requiere mantener coherencia a lo largo de decenas de miles de tokens, aprovechando la ventana extendida.
+- Evaluación comparativa de arquitecturas MoE: con 256 expertos y 4 activos, es un banco de pruebas para medir el equilibrio entre rendimiento y coste computacional en inferencia con paralelismo de expertos.
+- Reproducción de experimentos de la comunidad Marin: investigadores que quieran replicar o extender los resultados del experimento Snowball pueden usar este checkpoint como punto de partida verificado mediante checksums.
+- Fine-tuning supervisado para tareas específicas: al ser un modelo base con licencia OpenMDW 1.1, puede servir como inicialización para ajustes posteriores en dominios concretos, aunque el coste de infraestructura es elevado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible. La model card únicamente referencia un registro de servicio y evaluación (`marin-community/marin#8702`) para las exportaciones base con QK 1,57 y 1,75, pero no incluye cifras de MMLU, HumanEval, GSM8K ni de tareas de contexto largo en el material proporcionado.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia BF16: al menos 134 GB solo para los pesos, mas overhead de activaciones y KV cache. Con la configuracion documentada de 8× H100 (80 GB cada una) hay margen suficiente.
-- GPU recomendadas: 8× H100 para el despliegue documentado (tensor parallelism 1, data parallelism 8 y expert parallelism).
-- Consumer GPU: no cabe sin cuantizaciones adicionales; este repo solo ofrece pesos en BF16, por lo que se necesitan GPUs de centro de datos.
-- Opciones de despliegue: vLLM mediante el fork marin-community/vllm. No se documenta soporte en llama.cpp, Ollama ni TGI en la informacion disponible.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia en BF16: el repositorio ocupa 134,2 GB, por lo que se necesitan al menos 8 GPU de 80 GB (H100 o A100) para alojar los pesos sin cuantización, tal como indica la configuración de referencia del autor.
+- GPU recomendadas: ocho H100, con paralelismo de datos 8 y paralelismo de expertos; la configuración documentada usa tensor parallelism 1.
+- GPU de consumo: no cabe en GPU de consumo (RTX 4090, 24 GB) en BF16; no se documentan cuantizaciones que permitan reducir el requisito.
+- Opciones de despliegue: exclusivamente el fork de vLLM de Marin (`marin-community/vllm`), que registra `GrugMoeForCausalLM` / `grug_moe`. No hay soporte documentado en llama.cpp, Ollama, TGI ni vLLM estándar.
+- Latencia y throughput: no disponibles; no se han publicado mediciones en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible.
+| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Snowball 67B-A2B | 67,1B | ~2B | 262.144 | OpenMDW 1.1 | Hugging Face, requiere fork de vLLM |
+| Modelos MoE de referencia de la misma escala | No disponible | No disponible | No disponible | No disponible | No disponible |
+
+No se dispone en la información proporcionada de datos de rendimiento ni de especificaciones de modelos alternativos comparables, por lo que no es posible establecer una comparativa cuantitativa fiable. La comparación cualitativa más directa sería con otros modelos MoE de aproximadamente 60-70B totales y pocos miles de millones de parámetros activos, pero no se aportan cifras que permitan contrastarlos.
 
 ## Limitaciones y advertencias
 
-- Es un modelo base, no afinado para instrucciones; el uso interactivo directo no esta soportado y requiere fine-tuning posterior.
-- Solo ofrece pesos en BF16, sin cuantizaciones publicadas, lo que encarece el despliegue en entornos de produccion.
-- Requiere un fork de vLLM especifico, lo que puede generar incompatibilidades con el ecosistema estandar.
-- No se han documentado evaluaciones de sesgos ni de seguridad; el comportamiento ante prompts maliciosos es desconocido.
-- La licencia openmdw-1.1 debe revisarse para confirmar permisos de uso comercial, ya que la informacion disponible no detalla sus restricciones.
-- Solo soporta ingles; no se documentan capacidades multilingues.
-- El checkpoint se ha exportado sin pruebas de paridad numerica ni de generacion; no se ha verificado que el comportamiento sea identico al entrenamiento original.
-- No hay benchmarks publicados, por lo que el rendimiento real en tareas estandar es desconocido.
+- Es un modelo base sin ajuste por instrucciones: el template de chat incluido en el tokenizer no implica entrenamiento conversacional; debe usarse para completaciones.
+- Solo soporta inglés según la model card; el rendimiento en castellano u otros idiomas no está garantizado.
+- Riesgo de alucinación inherente a los modelos de lenguaje, agravado por la ausencia de evaluaciones publicadas que permitan calibrar su fiabilidad.
+- No se han ejecutado pruebas de generación ni de paridad numérica para esta exportación concreta; la validación se limita a nombres de tensores, dtype, configuración, tamaños y checksums.
+- El despliegue requiere un fork específico de vLLM, lo que limita la portabilidad y añade riesgo de mantenimiento.
+- El requisito de ocho GPU H100 hace que el coste de inferencia sea elevado pese a los 2B parámetros activos.
+- No se documentan sesgos conocidos, pero al no haber evaluación publicada no puede descartarse la presencia de sesgos propios del corpus de entrenamiento, cuya composición no se detalla.
+- La licencia OpenMDW 1.1 debe revisarse antes de un uso comercial; la model card no detalla restricciones adicionales más allá de la obligación de cumplir la legislación aplicable.
+- La ventana de 262K tokens puede degradar la calidad en posiciones intermedias del contexto; no se aportan datos de la curva de rendimiento por longitud.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/open-athena/snowball-67b-a2b-base-262k-qk175
-- Issue del experimento de contexto largo: https://github.com/marin-community/marin/issues/8977
-- Fork de vLLM requerido: https://github.com/marin-community/vllm
-- Registro de servicio y evaluacion: https://github.com/marin-community/marin/issues/8702
-- Blog sobre pipeline SFT para modelos Marin: https://storage.googleapis.com/marin-public/benjaminfeuer/standing-up-a-cold-start-sft-pipeline-for-marin-models/2026.08.16/index.html
+- Modelo en Hugging Face: https://huggingface.co/open-athena/snowball-67b-a2b-base-262k-qk175
+- Fork de vLLM de Marin: https://github.com/marin-community/vllm
+- Experimento de comparación de contexto largo (Snowball): https://github.com/marin-community/marin/issues/8977
+- Registro de servicio y evaluación (QK 1,57 y 1,75): https://github.com/marin-community/marin/issues/8702

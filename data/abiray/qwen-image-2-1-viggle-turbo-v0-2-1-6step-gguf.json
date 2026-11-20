@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 12,
-  "downloads_30d": 1150,
+  "downloads_30d": 1185,
   "trending_score": 11,
   "parameters": 7115124736,
   "parameters_human": "7.12B",
@@ -47,31 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Wallace & Gromit - Wikipedia",
-      "url": "https://en.m.wikipedia.org/wiki/Wallace_%26_Gromit",
-      "snippet": "Wallace & Gromit is a British claymation comedy franchise created by Nick Park and produced by Aardman Animations. The series …"
-    },
-    {
-      "title": "Homepage | Wallace & Gromit",
-      "url": "https://wallaceandgromit.com/",
-      "snippet": "Welcome to the home of Wallace & Gromit. Read news, find out about the new film, learn about Nick Park, watch clips and try crafts …"
-    },
-    {
-      "title": "Wallace et Gromit — Wikipédia",
-      "url": "https://fr.m.wikipedia.org/wiki/Wallace_et_Gromit",
-      "snippet": "Gromit est un chien à la fois intelligent, créatif, gentil et sensible. Il aime lire, les puzzles, le crochet, et aide parfois son maître …"
-    },
-    {
-      "title": "Films | Wallace & Gromit",
-      "url": "https://wallaceandgromit.com/films",
-      "snippet": "Read fun facts and info for Wallace & Gromit films, from A Grand Day Out to A Matter of Loaf and Death. Meet the characters and …"
-    },
-    {
-      "title": "Wallace & Gromit - YouTube",
-      "url": "https://www.youtube.com/channel/UCXYGUeekJCrBpM32yaJpjRw",
-      "snippet": "Wallace and Gromit are internationally celebrated winning over 100 awards at festivals - including 3 Academy Awards® and 5 …"
-    }
-  ]
+  "sources": []
 }

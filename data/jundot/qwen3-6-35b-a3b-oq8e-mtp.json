@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 1459,
+  "downloads_30d": 1456,
   "trending_score": 0,
   "parameters": 35951822704,
   "parameters_human": "35.95B",
@@ -48,31 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Google Traduction",
-      "url": "https://translate.google.fr/",
-      "snippet": "Traduction Les traductions tiennent compte du genre grammatical. En savoir plus Certaines phrases peuvent contenir des …Read more"
-    },
-    {
-      "title": "DeepL Traducteur | Le meilleur traducteur au monde",
-      "url": "https://www.deepl.com/fr/translator",
-      "snippet": "Écrivez ou collez votre texte ici. Pour traduire des fichiers PDF, Word (.docx) ou Powerpoint (.pptx), déposez-les directement dans …"
-    },
-    {
-      "title": "Google Traduction",
-      "url": "https://translate.google.com/?hl=fr",
-      "snippet": "Traduction Les traductions tiennent compte du genre grammatical. En savoir plus Certaines phrases peuvent contenir des …"
-    },
-    {
-      "title": "Reverso | Traduction gratuite, dictionnaire",
-      "url": "https://www.reverso.net/traduction-texte",
-      "snippet": "Le service de traduction en ligne gratuit de Reverso qui traduit vos textes de l'anglais vers le français, l'espagnol, l'italien, l'allemand, …"
-    },
-    {
-      "title": "DeepL Traduction – DeepL Translate : le meilleur traducteur au monde",
-      "url": "https://www.deepl.com/fr/translator/files",
-      "snippet": "Voice Collaborez instantanément grâce à la traduction vocale en temps réel lors de réunions virtuelles ou de conversation en personne."
-    }
-  ]
+  "sources": []
 }

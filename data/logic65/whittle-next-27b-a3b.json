@@ -100,31 +100,5 @@
       "value": 66.7
     }
   ],
-  "sources": [
-    {
-      "title": "YouTube Help",
-      "url": "https://support.google.com/youtube/?hl=en",
-      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
-    },
-    {
-      "title": "YouTube Creator Awards",
-      "url": "https://support.google.com/youtube/answer/7682560?hl=en",
-      "snippet": "YouTube Creator Awards are our way of recognizing the extraordinary effort creators put into their growing channels and to build …"
-    },
-    {
-      "title": "YouTube 動画をアップロードする",
-      "url": "https://support.google.com/youtube/answer/57407?hl=ja&co=GENIE.Platform%3DDesktop",
-      "snippet": "YouTube に動画をアップロードする手順は簡単です。パソコンやモバイル デバイスから動画をアップロードする手順は次のとおり …"
-    },
-    {
-      "title": "Submit a copyright removal request - YouTube Help",
-      "url": "https://support.google.com/youtube/answer/2807622?hl=en",
-      "snippet": "Submit a copyright removal request If your copyrighted content is on YouTube without your permission, you can submit a copyright …"
-    },
-    {
-      "title": "Create an account on YouTube",
-      "url": "https://support.google.com/youtube/answer/161805?hl=en&co=GENIE.Platform%3DDesktop",
-      "snippet": "Once you've signed in to YouTube with your Google Account, you can create a YouTube channel on your account. YouTube …"
-    }
-  ]
+  "sources": []
 }

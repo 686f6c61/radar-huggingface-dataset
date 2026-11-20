@@ -51,7 +51,7 @@
     {
       "task": null,
       "dataset": "ImageNet-1k",
-      "metric": "Top-1 accuracy (C2F, T=21, mean over 11 policy seeds, at the last glimpse)",
+      "metric": "Top-1, C2F, 21 glimpses, mean of 11 runs",
       "value": 84.19
     }
   ],

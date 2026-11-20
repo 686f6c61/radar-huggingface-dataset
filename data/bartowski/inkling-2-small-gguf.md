@@ -2,84 +2,88 @@
 
 ## Resumen
 
-Inkling-2-Small es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por Thinking Machines, distribuido originalmente en Hugging Face bajo el identificador `thinkingmachines/Inkling-2-Small`. La versión aquí descrita es la cuantización GGUF realizada por bartowski mediante llama.cpp (release b12412), pensada para su ejecución en entornos locales y con soporte de imatrix. El checkpoint original declara 594 mil millones de parámetros totales (593.722.948.608 según los safetensors), lo que lo sitúa en la categoría de modelos de gran escala, aunque su naturaleza MoE implica que solo una fracción de esos parámetros se activa por token.
+Inkling-2-Small es un modelo de lenguaje multimodal de tipo Mixture of Experts (MoE) desarrollado por Thinking Machines, distribuido originalmente en Hugging Face bajo el identificador `thinkingmachines/Inkling-2-Small`. La ficha que nos ocupa corresponde a la versión cuantizada en formato GGUF publicada por bartowski, un conocido distribuidor de cuantizaciones para llama.cpp. El modelo base cuenta con 593.722.948.608 parámetros totales según los pesos en safetensors, lo que lo sitúa en la categoría de modelos de gran escala orientados a despliegues con requisitos de hardware muy elevados.
 
-El modelo está etiquetado como conversacional, orientado a generación de texto e image-text-to-text, y admite tool calling mediante un formato de prompt específico con declaración de herramientas en XML. Incorpora además un mecanismo de "thinking effort level" que permite ajustar el esfuerzo de razonamiento en la generación. La licencia es Apache 2.0, lo que facilita su uso comercial y su integración en productos derivados.
+El modelo está etiquetado como `image-text-to-text`, lo que indica soporte de entrada multimodal (imagen y texto), además de las etiquetas `conversational` y `moe`. La model card del cuantizador menciona soporte de entrada de texto y un formato de prompt específico con niveles de esfuerzo de razonamiento ("Thinking effort level"), lo que sugiere un modo de razonamiento configurable. No se dispone de información sobre la longitud de contexto, los idiomas soportados ni los detalles del entrenamiento en la información proporcionada.
 
-La relevancia de esta ficha radica en que se trata de una cuantización GGUF de un modelo MoE de muy gran tamaño, con un rango amplio de cuantizaciones que van desde Q8_0 (631 GB) hasta IQ2_S (209 GB), lo que permite desplegarlo en infraestructuras con distintos presupuestos de memoria. No obstante, el tamaño del repositorio (7.543,7 GB) y el volumen de cada fichero hacen que su despliegue requiera hardware de gama alta o clústeres multi-GPU.
+La relevancia de esta ficha radica en que ofrece una vía práctica para ejecutar un modelo MoE de casi 600B parámetros en entornos locales mediante cuantización GGUF, con opciones que van desde Q8_0 (631 GB) hasta IQ2_S (209 GB). La licencia Apache 2.0 facilita su uso comercial, aunque el tamaño del modelo limita seriamente su despliegue a infraestructura especializada.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-Experts (MoE), transformer; detalles de capas y atención no disponibles |
-| Parametros totales | 593.722.948.608 (594B) |
-| Parametros activos | no disponible |
+| Arquitectura | Mixture of Experts (MoE), transformer (detalles no disponibles) |
+| Parámetros totales | 593.722.948.608 (594B) |
+| Parámetros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q8_0, Q6_K, Q6_K_S, Q5_K_M, Q5_K_S, Q4_1, Q4_K_M, IQ4_NL, Q4_K_S, Q4_0, IQ4_XS, Q3_K_L, IQ3_M, Q3_K_M, IQ3_XS, Q3_K_S, IQ3_XXS, Q2_K, IQ2_M, IQ2_S |
+| Tipos de cuantización | Q8_0, Q6_K, Q6_K_S, Q5_K_M, Q5_K_S, Q4_1, Q4_K_M, IQ4_NL, Q4_K_S, Q4_0, IQ4_XS, Q3_K_L, IQ3_M, Q3_K_M, IQ3_XS, Q3_K_S, IQ3_XXS, Q2_K, IQ2_M, IQ2_S (imatrix) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizaciones); checkpoint original en safetensors |
+| Formato de pesos | GGUF (cuantizado); safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-La información disponible confirma que Inkling-2-Small es un modelo MoE, con 594B parámetros totales en el checkpoint original. No se especifican en la documentación proporcionada el número de expertos, el número de expertos activos por token, la dimensión del modelo, el número de capas ni el mecanismo de atención empleado. Tampoco se detalla el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF, DPO u otras fases de alineación.
+La información disponible confirma que Inkling-2-Small emplea una arquitectura Mixture of Experts (MoE), según la etiqueta `moe` de la model card y la clasificación del repositorio. El recuento de parámetros totales asciende a 594B, aunque no se especifica el número de parámetros activos por token ni el número de expertos. Tampoco se detalla la composición del dataset de entrenamiento, el número de tokens procesados ni si se aplicaron técnicas de RLHF, DPO u otras fases de alineación.
 
-Sí se documenta una innovación operativa relevante: el prompt format incluye un campo "Thinking effort level" (por ejemplo, 0.9) que permite controlar el esfuerzo de razonamiento del modelo en tiempo de inferencia. Además, el modelo soporta declaración de herramientas mediante un bloque `tool_declare` en XML dentro del mensaje de sistema, lo que habilita el uso de function calling estructurado. La cuantización se ha realizado con llama.cpp b12412 e incluye imatrix, lo que mejora la calidad de las cuantizaciones de baja precisión.
+La model card del cuantizador indica que no se utiliza decodificación especulativa ("Speculative decoding: no") y que las cuantizaciones se han generado con llama.cpp release b12412 empleando imatrix, una técnica que mejora la calidad de las cuantizaciones de baja precisión mediante una matriz de importancia calculada a partir de datos de calibración. El formato de prompt incluye etiquetas especiales como `<|message_system|>`, `<|content_text|>`, `<|end_message|>` y `<|message_user|>`, además de un campo "Thinking effort level" que permite ajustar el esfuerzo de razonamiento del modelo. También se documenta un formato específico para declaración de herramientas (`tool_declare`) en XML, lo que confirma soporte de function calling.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno.
-- Razonamiento con control de esfuerzo mediante el parámetro "Thinking effort level" en el prompt de sistema.
-- Tool calling y function calling mediante declaración de herramientas en XML (`tool_declare`).
-- Procesamiento image-text-to-text según las etiquetas del modelo (aunque la model card indica "Input support: text", existe una discrepancia que conviene verificar contra el modelo base).
+- Generación de texto conversacional multi-turno, con formato de prompt estructurado mediante etiquetas especiales.
+- Procesamiento de entrada multimodal imagen-texto, según la etiqueta `image-text-to-text` del repositorio.
+- Razonamiento configurable mediante el parámetro "Thinking effort level" (valor de ejemplo 0.9 en la model card).
+- Soporte de tool calling / function calling mediante el bloque `tool_declare` en XML con definiciones JSON de funciones.
+- Arquitectura MoE, que permite activar solo una fracción de los parámetros por token (número de parámetros activos no disponible).
 - Capacidades multilingües: no disponibles en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: implícito por el soporte de tool calling, aunque no se documentan detalles adicionales.
-- No se documenta soporte de audio ni de otras modalidades.
+- No se documentan capacidades de audio, visión detallada ni otros modos especiales más allá de la entrada imagen-texto.
 
 ## Casos de uso
 
-- Asistentes conversacionales de dominio experto: el formato de prompt con system message y thinking effort permite ajustar el nivel de razonamiento según la complejidad de la consulta, útil en atención al cliente técnica o legal donde se requiere precisión variable.
-- Automatización de agentes con herramientas: la declaración de funciones en XML permite integrar el modelo en pipelines que consulten APIs externas (por ejemplo, precios de acciones, bases de datos internas) y encadenen llamadas multi-paso.
-- Generación de código asistida en producción: con tool calling puede integrarse en flujos de CI/CD que consulten repositorios, ejecuten tests o creen pull requests, siempre que la infraestructura soporte el tamaño del modelo.
-- Análisis de documentos largos: aunque la longitud de contexto no está documentada, un modelo de 594B parámetros totales está pensado para tareas de comprensión profunda; conviene validar el contexto real antes de usarlo con documentos extensos.
-- Investigación en alineación y evaluación de MoE: al ser Apache 2.0 y estar disponible en múltiples cuantizaciones, es adecuado para experimentos académicos sobre comportamiento de modelos MoE a gran escala.
-- Despliegue en infraestructura propia con llama.cpp: las cuantizaciones IQ2/IQ3 permiten ejecutar el modelo en clústeres con menos VRAM que el checkpoint original, útil para laboratorios con presupuesto limitado.
-- Fine-tuning y destilación: al ser Apache 2.0, puede servir como base para adaptaciones de dominio, aunque el coste computacional de un modelo de 594B es elevado.
+- Razonamiento complejo con esfuerzo configurable: el parámetro "Thinking effort level" permite ajustar la profundidad de razonamiento por consulta, lo que resulta útil en pipelines donde se necesita equilibrar latencia y calidad según la tarea.
+- Automatización de agentes con tool calling: el formato `tool_declare` permite definir funciones en JSON y que el modelo las invoque, adecuado para orquestación de agentes que consultan APIs externas (por ejemplo, precios de acciones, como muestra la model card).
+- Procesamiento de documentos con imagen y texto: al ser un modelo image-text-to-text, puede emplearse en tareas de extracción de información de capturas, diagramas o documentos escaneados combinados con instrucciones textuales.
+- Asistencia conversacional de largo alcance: aunque la longitud de contexto no está documentada, el formato de prompt con etiquetas de sistema y usuario facilita conversaciones multi-turno estructuradas.
+- Investigación en cuantización de modelos MoE masivos: la disponibilidad de 20 variantes de cuantización (desde Q8_0 hasta IQ2_S) permite estudiar el impacto de la precisión en el rendimiento de un MoE de 594B parámetros.
+- Despliegue en infraestructura con gran capacidad de memoria: con cuantizaciones de 209-631 GB, el modelo puede ejecutarse en servidores con múltiples GPUs o en configuraciones de RAM abundante mediante llama.cpp, orientado a entornos de investigación y prototipado a gran escala.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia según cuantización: Q8_0 ≈ 631 GB, Q6_K ≈ 522 GB, Q5_K_M ≈ 454 GB, Q4_K_M ≈ 369 GB, IQ4_XS ≈ 322 GB, Q3_K_M ≈ 280 GB, IQ3_XXS ≈ 245 GB, Q2_K ≈ 226 GB, IQ2_M ≈ 209 GB, IQ2_S ≈ 209 GB (los tamaños son de fichero; la VRAM necesaria puede ser similar o algo superior por overhead de contexto y KV cache).
-- GPU recomendadas: para las cuantizaciones más altas se requieren clústeres multi-GPU (por ejemplo, varias H100 80GB o A100 80GB); para IQ2/IQ3 se necesitan al menos 3-4 GPUs de 80 GB o configuraciones con memoria unificada de gran capacidad.
-- No cabe en GPUs de consumo (RTX 4090 24GB, RTX 3090 24GB) ni en configuraciones de 2-4 GPUs consumer; requiere hardware de centro de datos.
-- Opciones de despliegue: llama.cpp (formato nativo GGUF), y potencialmente servidores compatibles con GGUF como Ollama o llama-cpp-python; vLLM y TGI no soportan GGUF de forma nativa para este tamaño sin conversión.
-- Latencia y throughput estimados: no disponibles. Dado el tamaño, se espera un throughput bajo por GPU y una latencia alta en comparación con modelos densos de menor tamaño.
+- VRAM/RAM estimada para inferencia según cuantización:
+  - Q8_0: ~631 GB
+  - Q6_K: ~522 GB
+  - Q5_K_M: ~454 GB
+  - Q4_K_M: ~369 GB
+  - IQ4_XS: ~322 GB
+  - Q3_K_M: ~280 GB
+  - IQ2_M: ~209 GB
+- GPU recomendadas: no disponibles en la información proporcionada; por el volumen de memoria requerido, se necesitan configuraciones multi-GPU de clase数据中心 (A100/H100 con 80 GB cada una) o servidores con gran cantidad de RAM.
+- No cabe en GPUs de consumo convencionales (RTX 4090 con 24 GB, etc.) en ninguna de las cuantizaciones disponibles; la variante más pequeña (IQ2_S, ~209 GB) excede con mucho la memoria de una GPU consumer.
+- Opciones de despliegue: llama.cpp (versión b12412 o superior, empleada para generar las cuantizaciones); compatible con endpoints según la etiqueta `endpoints_compatible`. No se documentan otras opciones como vLLM, TGI u Ollama en la información disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la documentación proporcionada. Se indica "no disponible" para parámetros, contexto, rendimiento y disponibilidad de alternativas de la misma categoría.
+No disponible. La información proporcionada no incluye modelos comparables de la misma categoría con datos verificables de parámetros, contexto o rendimiento.
 
 ## Limitaciones y advertencias
 
-- El tamaño del modelo (594B parámetros totales) implica requisitos de hardware muy elevados; no es viable en estaciones de trabajo convencionales.
-- La model card indica "Input support: text", pero las etiquetas incluyen image-text-to-text; existe una discrepancia que debe verificarse contra el modelo base antes de asumir capacidades multimodales.
-- No se documentan sesgos conocidos, pero al ser un modelo entrenado con datos no especificados, es probable que herede sesgos de su corpus; se recomienda evaluación específica antes de producción.
-- Riesgo de alucinación inherente a los modelos de lenguaje; no se documentan mitigaciones específicas.
-- Longitud de contexto e idiomas soportados no disponibles; no se debe asumir un contexto largo sin verificación.
-- La licencia Apache 2.0 permite uso comercial, pero conviene revisar los términos del modelo base y de los datos de entrenamiento (no documentados).
-- El repositorio ocupa 7.543,7 GB, lo que requiere almacenamiento considerable y estrategias de descarga por partes (split files).
-- Las cuantizaciones de baja precisión (Q2, IQ2) pueden degradar notablemente la calidad; bartowski recomienda Q4_K_M como equilibrio.
-- No se documenta soporte de decodificación especulativa ("Speculative decoding: no").
+- El tamaño del modelo (594B parámetros, 209-631 GB según cuantización) hace inviable su despliegue en hardware de consumo; requiere infraestructura especializada.
+- No se dispone de información sobre sesgos conocidos, riesgos de alucinación ni evaluación de seguridad del modelo base.
+- La longitud de contexto no está documentada, lo que impide planificar aplicaciones que dependan de ventanas largas.
+- Los idiomas soportados no están especificados; no se puede garantizar un rendimiento adecuado en castellano u otros idiomas distintos del inglés.
+- El número de parámetros activos del MoE no está disponible, por lo que no se puede estimar el coste computacional real por token.
+- La licencia Apache 2.0 permite uso comercial, pero se recomienda verificar la model card del modelo base (`thinkingmachines/Inkling-2-Small`) para posibles condiciones adicionales.
+- Las cuantizaciones de baja precisión (Q2_K, IQ2_M, IQ2_S) pueden degradar notablemente la calidad; la model card recomienda Q4_K_M como equilibrio por defecto.
+- No se han publicado benchmarks que permitan validar el rendimiento real del modelo en tareas estándar.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/bartowski/Inkling-2-Small-GGUF
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-2-Small
-- llama.cpp: https://github.com/ggml-org/llama.cpp/
-- Release de llama.cpp b12412: https://github.com/ggml-org/llama.cpp/releases/tag/b12412
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
-- Detalles de imatrix: https://huggingface.co/bartowski/Inkling-2-Small-GGUF#imatrix
+- llama.cpp: https://github.com/ggml-org/llama.cpp
+- Release de llama.cpp b12412: https://github.com/ggml-org/llama.cpp/releases/tag/b12412

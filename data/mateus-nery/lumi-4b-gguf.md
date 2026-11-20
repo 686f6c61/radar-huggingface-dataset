@@ -2,141 +2,117 @@
 
 ## Resumen
 
-Lumi-4B es un modelo de lenguaje de aproximadamente 3.970 millones de parámetros desarrollado por CEIA (centro de investigación brasileño) y orientado específicamente al portugués. Esta ficha describe la versión cuantizada en GGUF publicada por Mateus-Nery, que convierte los pesos originales en BF16 a una familia de cuantizaciones optimizadas para llama.cpp, con el objetivo de reducir requisitos de memoria manteniendo la fidelidad respecto al modelo base.
+Lumi-4B es un modelo de lenguaje de tipo transformer denso con aproximadamente 3.970 millones de parámetros (3.973.556.832 según los pesos en safetensors), desarrollado originalmente por el equipo CEIA (referenciado en el repositorio base como `ceia-br/lumi-4b`). Está especializado en portugués y se distribuye bajo una licencia propia denominada `lumi-4b`. La versión aquí documentada es una colección de cuantizaciones GGUF publicada por el usuario Mateus-Nery, pensada para su ejecución con llama.cpp en hardware de consumo.
 
-El modelo resuelve el problema de desplegar un LLM de tamaño medio en portugués sobre hardware modesto: la cuantización Q5_K_S ocupa 3,04 GB y la IQ4_XS apenas 2,41 GB, lo que permite ejecución en GPU de consumo y en CPU. La model card incluye mediciones rigurosas de divergencia KL, coincidencia top-1 con BF16, resultados en pruebas de opción múltiple (Global MMLU, MMLU-ProX, IFEval PT), ENEM y preguntas sobre documentos largos, además de benchmarks de velocidad en RTX 5070 Ti y en CPU.
+El modelo resuelve el problema de disponer de un LLM conversacional y de razonamiento en portugués que pueda ejecutarse localmente con requisitos de memoria moderados. Con cuantizaciones que van de 2,41 GB (IQ4_XS) a 7,96 GB (BF16), es viable en GPUs de consumo como una RTX 5070 Ti, e incluso en CPU con rendimiento aceptable en modo generación.
 
-La relevancia actual es doble: por un lado, el portugués sigue siendo un idioma con menos oferta de modelos abiertos de calidad; por otro, el trabajo de cuantización aporta datos verificables sobre cuánto degrada cada nivel de compresión, algo que rara vez se documenta con este detalle. El contexto nativo del modelo base no se especifica en la información disponible, aunque los ejemplos de uso manejan documentos de hasta 51.000 tokens.
+La relevancia actual radica en que el autor de las cuantizaciones ha publicado mediciones sistemáticas de degradación (divergencia KL, coincidencia top-1 con BF16) y de rendimiento en benchmarks en portugués (MMLU global, MMLU-ProX, IFEval PT, ENEM y pruebas de comprensión de documentos largos), lo que permite elegir el nivel de cuantización con criterio técnico y no solo por tamaño. La versión documentada corresponde a Lumi-4B v0.2 (6 de noviembre de 2026).
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base ceia-br/lumi-4b; tags mencionan "nemotron") |
-| Parámetros totales | 3.973.556.832 |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible (los ejemplos de evaluación usan documentos de hasta 51.000 tokens) |
-| Tipos de cuantización | BF16, Q6_K_XL, Q6_K, Q4_K_XL, Q5_K_S, Q3_K_XL, IQ4_XS |
-| Idiomas soportados | portugués (pt) |
-| Licencia | other, denominada "lumi-4b" (enlace a la licencia del modelo base) |
-| Formato de pesos | GGUF (para llama.cpp) |
+| Arquitectura | Transformer denso (no se especifica variante concreta en la informacion disponible) |
+| Parametros totales | 3.973.556.832 (~3,97 B) |
+| Parametros activos | No aplica (modelo denso) |
+| Longitud de contexto | 32.768 tokens (segun el ejemplo de ejecucion con `-c 32768`; no se confirma un maximo oficial distinto) |
+| Tipos de cuantizacion | BF16, Q6_K_XL, Q6_K, Q5_K_S, Q4_K_XL, Q3_K_XL, IQ4_XS (GGUF); incluye fichero imatrix `imatrix-lumi-pt.gguf` |
+| Idiomas soportados | Portugues (pt) |
+| Licencia | `lumi-4b` (licencia propia, catalogada como "other") |
+| Formato de pesos | GGUF (llama.cpp); el modelo base se distribuye en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna ni sobre el proceso de entrenamiento del modelo base ceia-br/lumi-4b en la documentación proporcionada. Los tags del repositorio incluyen "nemotron", lo que sugiere una posible relación con la familia de modelos Nemotron, pero no se confirma la arquitectura concreta (transformer denso, MoE u otra). Tampoco se especifican el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO.
+La informacion disponible no detalla la arquitectura interna mas alla de tratarse de un transformer denso de ~4 B parametros. La model card de las cuantizaciones no describe la composicion del dataset de entrenamiento, el numero de tokens utilizados ni si hubo fases de RLHF, DPO o ajuste por instrucciones; esos datos corresponderian al repositorio base `ceia-br/lumi-4b`, que no se incluye en la informacion proporcionada. El tag `nemotron` sugiere influencia o derivacion de la familia Nemotron de NVIDIA, pero no se confirma en el material disponible.
 
-Lo que sí está documentado es el proceso de cuantización: cada variante GGUF se midió contra el original en BF16 con el mismo llama.cpp, temperatura 0 y razonamiento desactivado. Se generó una matriz de importancia (imatrix-lumi-pt.gguf, 4 MB) específica para portugués, que se usa en las cuantizaciones IQ. La coincidencia top-1 con BF16 va del 99,0% en Q6_K_XL al 94,2% en IQ4_XS, y la divergencia KL aumenta de 0,0004 a 0,0134 en ese mismo rango.
+La innovacion tecnica destacable de este repositorio no esta en el modelo sino en el proceso de cuantizacion: se han generado cuantizaciones con imatrix especifica para portugues (`imatrix-lumi-pt.gguf`) y se han medido contra el original en BF16 con divergencia KL y coincidencia top-1, ademas de evaluar el impacto en benchmarks reales en portugues. Las cuantizaciones Q6_K_XL y Q6_K conservan practicamente el rendimiento del BF16 (99,0 % y 98,9 % de coincidencia top-1 respectivamente), mientras que IQ4_XS baja al 94,5 %.
 
 ## Capacidades
 
-- Generación de texto conversacional en portugués, con soporte de plantilla de chat mediante la opción `--jinja` de llama.cpp.
-- Razonamiento de opción múltiple en portugués (evaluado con Global MMLU, MMLU-ProX y pruebas tipo ENEM).
-- Seguimiento de instrucciones en portugués (evaluado con 535 instrucciones del Portuguese-IFEval).
-- Preguntas sobre documentos largos: la evaluación incluye 10 documentos de entre 700 y 51.000 tokens, con respuestas correctas, cálculos con razonamiento y rechazo explícito cuando el dato no está en el documento.
-- Generación de código en el contexto de creación de páginas web (el ejemplo de la model card muestra la generación de una landing page).
-- Modo de razonamiento activable/desactivable (las evaluaciones se hicieron con razonamiento desactivado).
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades multimodales (visión, audio): no disponibles; el modelo es solo de texto.
+- Generacion de texto conversacional en portugues, con formato de chat compatible con plantillas Jinja (`--jinja`).
+- Razonamiento y respuesta a preguntas de opcion multiple (evaluado en MMLU global, MMLU-ProX y pruebas tipo ENEM).
+- Seguimiento de instrucciones en portugues (evaluado con Portuguese-IFEval, 535 instrucciones).
+- Comprension de documentos largos: responde preguntas con evidencia sobre documentos de hasta 51.000 tokens introducidos completos en el contexto.
+- Capacidad de abstenerse cuando la respuesta no figura en el documento (10/11 aciertos en el conjunto de prueba de "no esta en el documento").
+- Generacion de codigo y paginas web (la model card muestra la generacion de una landing page como demostracion).
+- No se documenta soporte explicito de tool calling, function calling, agentes multi-paso, vision ni audio en la informacion disponible.
+- No se documenta modo "thinking" ni capacidades multimodales.
 
 ## Casos de uso
 
-- Atención al cliente en portugués: el modelo puede gestionar conversaciones multi-turno con plantilla de chat y un consumo de memoria reducido (3,04 GB en Q5_K_S), lo que permite desplegarlo en servidores modestos o incluso en estaciones de trabajo sin GPU dedicada.
-- Análisis de contratos y documentos legales: la evaluación sobre documentos de hasta 51.000 tokens y el buen comportamiento al declarar "no está en el documento" (11 de 11 aciertos en todas las cuantizaciones) lo hacen adecuado para extracción de datos y revisión documental donde la abstención es crítica.
-- Asistencia educativa y preparación de exámenes: con un 83,4% de acierto en 803 preguntas de humanas y lenguajes del ENEM, es útil para generar explicaciones, preguntas de práctica y material de estudio en portugués.
-- Generación de código y prototipado web: la model card demuestra la generación de una landing page completa; puede integrarse en flujos de creación rápida de interfaces o snippets.
-- Procesamiento por lotes en CPU: con 17,2 tokens/s de escritura en un Core Ultra 5 245KF usando Q5_K_S, es viable para tareas de clasificación, resumen o extracción masiva sin GPU.
-- Despliegue en GPU de consumo: la Q4_K_XL (3,13 GB) alcanza 224 tokens/s de escritura en una RTX 5070 Ti, suficiente para asistentes interactivos locales con baja latencia.
-- Investigación sobre cuantización: el repositorio incluye métricas de KLD y top-1 para cada variante, lo que permite estudiar el compromiso entre tamaño y fidelidad en un modelo real.
+- Atencion al cliente en portugues: el modelo mantiene conversaciones multi-turno con hasta 32.768 tokens de contexto, suficiente para incorporar historial de cliente e informacion de producto en la misma ventana.
+- Analisis de contratos y documentos legales: con documentos de hasta 51.000 tokens en contexto, puede extraer clausulas, datos de partes o condiciones economicas; las pruebas publicadas muestran 40-42 aciertos sobre 54 preguntas de extraccion de datos.
+- Verificacion de politicas de privacidad y cumplimiento: el modelo demuestra capacidad de indicar cuando una informacion no aparece en el documento (10/11 en el conjunto de prueba), util para tareas de auditoria donde la abstención correcta es critica.
+- Generacion de codigo y prototipos web: puede producir paginas HTML/CSS completas a partir de instrucciones, como muestra la demostracion de la model card en una RTX 5070 Ti.
+- Educacion y preparacion de examenes: su rendimiento en preguntas tipo ENEM (85,1 % en BF16, 82,8 % en IQ4_XS) lo hace adecuado para tutoria y generacion de preguntas de practica en portugues.
+- Despliegue en local para desarrolladores: con Q4_K_XL (3,13 GB) o IQ4_XS (2,41 GB) cabe en GPUs de consumo y permite integracion via `llama-server` con API compatible con endpoints, util para prototipado sin coste de API.
+- Procesamiento por lotes en CPU: con Q3_K_XL o IQ4_XS en CPU se obtienen 26-29 tokens/s de generacion, suficiente para tareas asincronas de clasificacion o resumen de documentos.
 
 ## Benchmarks y rendimiento
 
-Resultados de las pruebas de la model card (1000 preguntas por test de opción múltiple y 535 instrucciones de Portuguese-IFEval):
+Resultados publicados en la model card (1000 preguntas por test de opcion multiple y 535 instrucciones de Portuguese-IFEval):
 
-| Variante | Medio | Graduación | Global MMLU | MMLU-ProX | IFEval PT | Media |
+| Modelo | Medio | Graduacion | Global MMLU | MMLU-ProX | IFEval PT | Media |
 |---|---:|---:|---:|---:|---:|---:|
-| BF16 | 43,0 | 47,9 | 59,4 | 33,8 | 35,7 | 44,0 |
-| Q6_K_XL | 42,7 | 48,3 | 59,3 | 33,7 | 37,0 | 44,2 |
-| Q6_K | 42,9 | 47,9 | 58,6 | 33,4 | 34,4 | 43,4 |
-| Q4_K_XL | 42,0 | 46,9 | 58,8 | 33,6 | 35,0 | 43,3 |
-| Q5_K_S | 42,6 | 46,8 | 57,7 | 34,1 | 34,4 | 43,1 |
-| Q3_K_XL | 41,5 | 45,8 | 58,7 | 34,0 | 34,2 | 42,8 |
-| IQ4_XS | 42,5 | 46,9 | 58,0 | 34,1 | 34,6 | 43,2 |
+| BF16 | 41,9 | 48,9 | 60,9 | 32,1 | 34,2 | 43,6 |
+| Q6_K_XL | 41,6 | 49,4 | 60,9 | 32,9 | 32,1 | 43,4 |
+| Q6_K | 41,3 | 48,9 | 60,7 | 31,8 | 33,8 | 43,3 |
+| Q4_K_XL | 41,4 | 48,6 | 59,6 | 32,5 | 33,3 | 43,1 |
+| Q5_K_S | 41,7 | 48,8 | 60,9 | 31,3 | 32,5 | 43,0 |
+| Q3_K_XL | 42,7 | 49,7 | 59,9 | 31,7 | 32,5 | 43,3 |
+| IQ4_XS | 42,6 | 48,9 | 59,1 | 31,8 | 33,6 | 43,2 |
 
-ENEM (803 preguntas de humanas y lenguajes, sin imagen, 2009–2017 y 2022–2025):
+ENEM (803 preguntas de humanidades y lenguajes, sin imagen, 2009-2017 y 2022-2025):
 
-| Variante | BF16 | Q6_K_XL | Q6_K | Q5_K_S | Q4_K_XL | Q3_K_XL | IQ4_XS |
+| Modelo | BF16 | Q6_K_XL | Q6_K | Q5_K_S | Q4_K_XL | Q3_K_XL | IQ4_XS |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Acierto | 83,4% | 83,5% | 83,8% | 83,7% | 83,7% | 82,8% | 82,1% |
+| Acierto | 85,1 % | 84,9 % | 84,9 % | 84,2 % | 85,2 % | 83,6 % | 82,8 % |
 
 Preguntas sobre documentos (90 preguntas con respuesta sobre 10 documentos de 700 a 51.000 tokens):
 
-| Variante | Dato del documento (54) | Cálculo con razonamiento (5) | "No está en el documento" (11) |
-|---|---:|---:|---:|
-| BF16 | 43 | 1 | 11 |
-| Q6_K_XL | 43 | 3 | 11 |
-| Q6_K | 42 | 3 | 11 |
-| Q4_K_XL | 42 | 1 | 11 |
-| Q5_K_S | 40 | 2 | 11 |
-| Q3_K_XL | 45 | 2 | 11 |
-| IQ4_XS | 40 | 1 | 11 |
+| Tarea | BF16 | Q6_K_XL | Q6_K | Q4_K_XL | Q5_K_S | Q3_K_XL | IQ4_XS |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Extraer un dato (54) | 40 | 41 | 42 | 40 | 41 | 40 | 40 |
+| Indicar que no esta en el documento (11) | 10 | 10 | 10 | 10 | 10 | 10 | 10 |
 
-Velocidad en tokens por segundo (llama-bench, RTX 5070 Ti y Core Ultra 5 245KF de 14 núcleos, DDR5-5600):
-
-| Variante | GB | GPU lectura 4096 | GPU escritura | GPU escritura 16k contexto | CPU lectura 512 | CPU escritura |
-|---|---:|---:|---:|---:|---:|---:|
-| BF16 | 7,96 | 9.684 | 104 | 100 | 99 | 7,5 |
-| Q6_K_XL | 4,56 | 11.365 | 162 | 148 | 99 | 12,3 |
-| Q6_K | 3,93 | 10.762 | 183 | 172 | 110 | 13,9 |
-| Q4_K_XL | 3,13 | 11.244 | 224 | 208 | 82 | 16,3 |
-| Q5_K_S | 3,04 | 10.896 | 227 | 212 | 76 | 17,2 |
-| Q3_K_XL | 2,68 | 11.333 | 252 | 233 | 156 | 19,4 |
-| IQ4_XS | 2,41 | 11.960 | 268 | 246 | 155 | 20,9 |
-
-Fidelidad respecto a BF16:
-
-| Variante | Bits/peso | KLD (PT) | Igual a BF16 (top-1) |
-|---|---:|---:|---:|
-| Q6_K_XL | 9,2 | 0,0004 | 99,0% |
-| Q6_K | 7,9 | 0,0006 | 98,8% |
-| Q4_K_XL | 6,3 | 0,0039 | 97,1% |
-| Q5_K_S | 6,1 | 0,0038 | 96,8% |
-| Q3_K_XL | 5,4 | 0,0122 | 94,4% |
-| IQ4_XS | 4,9 | 0,0134 | 94,2% |
+Divergencia KL respecto a BF16 y coincidencia top-1: Q6_K_XL 0,0004 / 99,0 %; Q6_K 0,0006 / 98,9 %; Q4_K_XL 0,0035 / 97,2 %; Q5_K_S 0,0037 / 97,0 %; Q3_K_XL 0,0112 / 95,0 %; IQ4_XS 0,0124 / 94,5 %.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: entre 2,41 GB (IQ4_XS) y 7,96 GB (BF16) solo para los pesos; hay que añadir el espacio de la caché KV, que crece con el contexto (el ejemplo de la model card usa `-c 32768`).
-- GPU recomendadas: RTX 5070 Ti (mediciones oficiales); cualquier GPU con al menos 4-8 GB de VRAM puede alojar las cuantizaciones Q4/IQ4. Para BF16 se recomienda una GPU de 12 GB o más.
-- Cabe en GPU de consumo: sí, todas las cuantizaciones por debajo de BF16 caben en tarjetas de 4-8 GB; la Q3_K_XL (2,68 GB) y la IQ4_XS (2,41 GB) son las más ligeras.
-- Despliegue: llama.cpp (llama-server, llama-cli, llama-bench), con soporte de plantilla de chat mediante `--jinja`. No se mencionan otros motores (vLLM, TGI, Ollama) en la información disponible.
-- Latencia y throughput: en RTX 5070 Ti, 104 tokens/s de escritura en BF16 y hasta 268 tokens/s en IQ4_XS; con 16k de contexto, 100 tokens/s en BF16 y 246 tokens/s en IQ4_XS. En CPU (Core Ultra 5 245KF), de 7,5 a 20,9 tokens/s de escritura según la cuantización.
+- VRAM estimada para inferencia: BF16 ~8 GB; Q6_K_XL 4,56 GB; Q6_K 3,93 GB; Q4_K_XL 3,13 GB; Q5_K_S 3,04 GB; Q3_K_XL 2,68 GB; IQ4_XS 2,41 GB (tamanos de fichero; anadir margen para contexto KV).
+- GPU recomendadas: RTX 5070 Ti (mediciones publicadas), y por tamano caben en cualquier GPU con 8 GB o mas para cuantizaciones de 4 bits; A100 y H100 son sobredimensionadas para este modelo.
+- Cabe en GPU de consumo: si, desde una RTX 3060 8 GB (Q4_K_XL o inferiores) hasta modelos superiores; incluso IQ4_XS en GPUs de 4-6 GB con contexto reducido.
+- Opciones de despliegue: llama.cpp (`llama-server`, `llama-cli`, `llama-bench`), y por compatibilidad de formato GGUF, Ollama y LM Studio; no se documenta soporte en vLLM o TGI.
+- Rendimiento medido (llama-bench, RTX 5070 Ti, tokens/s): Q4_K_XL lee 11.175 y escribe 226 (210 con contexto de 16k); IQ4_XS lee 11.905 y escribe 271 (251 con 16k); BF16 escribe 105.
+- Rendimiento en CPU (Core Ultra 5 245KF, 14 nucleos, DDR5-5600): Q3_K_XL escribe 26,4 tokens/s; IQ4_XS 28,6 tokens/s; BF16 9,9 tokens/s; lectura entre 80 y 182 tokens/s segun cuantizacion.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks de modelos comparables en la información proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable. Como referencia estructural, se puede comparar con otros modelos abiertos en portugués de tamaño similar, pero no se aportan sus métricas:
+No se dispone en la informacion proporcionada de datos de benchmarks de modelos alternativos comparables (por ejemplo, otros LLM de ~4 B en portugues) medidos con la misma metodologia. La model card solo compara las cuantizaciones del propio Lumi-4B contra su BF16. Por tanto, la comparativa con modelos de la misma categoria se indica como no disponible.
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| Lumi-4B (esta ficha) | 3,97 B | no disponible | other ("lumi-4b") | GGUF, BF16 | Enfoque en portugués; cuantizaciones documentadas con KLD |
-| Alternativas de tamaño similar | no disponible | no disponible | no disponible | no disponible | Sin datos en la información proporcionada |
+| Criterio | Lumi-4B (GGUF) | Alternativas comparables |
+|---|---|---|
+| Parametros | ~3,97 B | no disponible |
+| Contexto | 32.768 tokens | no disponible |
+| Rendimiento | MMLU global 60,9 (BF16) | no disponible |
+| Licencia | `lumi-4b` (propia) | no disponible |
+| Disponibilidad | GGUF en HF; base en `ceia-br/lumi-4b` | no disponible |
 
 ## Limitaciones y advertencias
 
-- El modelo está entrenado y evaluado exclusivamente en portugués; su rendimiento en castellano u otros idiomas no está documentado y probablemente sea inferior.
-- Los resultados en MMLU-ProX (33,8 en BF16) y en la media general (44,0) indican un rendimiento moderado en razonamiento complejo; no es adecuado para tareas que exijan razonamiento de alto nivel sin verificación humana.
-- En preguntas sobre documentos, el acierto en extracción de datos es del orden del 80% (43 de 54) y el rendimiento en cálculos con razonamiento es muy bajo (1 de 5 en BF16); conviene validar las respuestas numéricas.
-- Riesgo de alucinación inherente a los LLM; aunque el modelo acierta al declarar información ausente (11 de 11), no hay garantía fuera del conjunto evaluado.
-- La licencia es "other" con nombre "lumi-4b" y enlace a la licencia del modelo base; es imprescindible revisar los términos del modelo base ceia-br/lumi-4b antes de cualquier uso comercial.
-- Las cuantizaciones de menor tamaño (Q3_K_XL, IQ4_XS) degradan la fidelidad respecto a BF16 (94,4% y 94,2% de coincidencia top-1) y pueden afectar a tareas sensibles a pequeños cambios en la distribución de probabilidad.
-- No se especifica la longitud de contexto nativa del modelo base; los ejemplos con 32k de contexto y documentos de 51.000 tokens no confirman que el modelo haya sido entrenado para esa ventana.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay validación comunitaria independiente.
+- Modelo especializado exclusivamente en portugues; no se documenta soporte de otros idiomas y su uso en castellano u otras lenguas no esta validado.
+- Riesgo de alucinacion inherente a los LLM; aunque el modelo demuestra abstenerse en el conjunto de prueba de documentos, no hay garantia general de que no invente datos fuera de ese conjunto.
+- La licencia es propia (`lumi-4b`, catalogada como "other"); es imprescindible revisar los terminos en `https://huggingface.co/ceia-br/lumi-4b` antes de cualquier uso comercial. No se confirma que permita uso comercial.
+- Las cuantizaciones de 4 bits y menores degradan ligeramente el rendimiento: IQ4_XS baja al 94,5 % de coincidencia top-1 y al 82,8 % en ENEM frente al 85,1 % del BF16.
+- El contexto maximo verificado en la documentacion es de 32.768 tokens; no se confirma si el modelo soporta ventanas mayores.
+- No se documentan capacidades de tool calling, agentes, vision ni audio; no debe asumirse su disponibilidad en produccion.
+- El repositorio GGUF es una publicacion de terceros (Mateus-Nery) sobre el modelo base de CEIA; la responsabilidad sobre el modelo original y su licencia recae en el autor base.
+- La version documentada es v0.2; las cuantizaciones de v0.1 permanecen en el historial del repositorio y podrian confundirse con las actuales.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/Mateus-Nery/lumi-4b-GGUF
 - Modelo base: https://huggingface.co/ceia-br/lumi-4b
-- Licencia del modelo base: https://huggingface.co/ceia-br/lumi-4b
-- Vídeo comparativo BF16 vs Q6_K_XL: https://huggingface.co/Mateus-Nery/lumi-4b-GGUF/resolve/main/lumi-lado-a-lado.mp4
-- Gráfico tamaño vs coincidencia top-1: https://huggingface.co/Mateus-Nery/lumi-4b-GGUF/resolve/main/grafico-tamanho-top1.png
-- Gráfico tamaño vs velocidad GPU: https://huggingface.co/Mateus-Nery/lumi-4b-GGUF/resolve/main/grafico-velocidade-gpu.png
-- Gráfico tamaño vs velocidad CPU: https://huggingface.co/Mateus-Nery/lumi-4b-GGUF/resolve/main/grafico-velocidade-cpu.png
+- Licencia: https://huggingface.co/ceia-br/lumi-4b
+- Historial de cuantizaciones v0.1: https://huggingface.co/Mateus-Nery/lumi-4b-GGUF/tree/001f32386a037b9a8d97bdf5ad3ccf983fcfce69
+- Video de demostracion (BF16 vs Q6_K_XL): https://huggingface.co/Mateus-Nery/lumi-4b-GGUF/resolve/main/lumi-lado-a-lado.mp4

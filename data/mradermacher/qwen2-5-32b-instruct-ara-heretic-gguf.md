@@ -2,50 +2,49 @@
 
 ## Resumen
 
-Qwen2.5-32B-Instruct-ARA-heretic-GGUF es una cuantización estática en formato GGUF del modelo richardyoung/Qwen2.5-32B-Instruct-ARA-heretic, publicada por mradermacher. El modelo subyacente parte de Qwen2.5-32B-Instruct (Alibaba Qwen) y ha sido sometido a un proceso de "abliteration" o "decensoring" (etiquetado como heretic, uncensored, decensored, abliterated) que elimina total o parcialmente los mecanismos de rechazo y alineación de seguridad aprendidos durante el ajuste por instrucciones. Esta versión GGUF facilita la ejecución local con llama.cpp y derivados sin necesidad de GPU de gran capacidad para los cuantos más agresivos.
+Qwen2.5-32B-Instruct-ARA-heretic-GGUF es una cuantizacion estatica en formato GGUF del modelo richardyoung/Qwen2.5-32B-Instruct-ARA-heretic, publicada por el usuario mradermacher. El modelo subyacente es una variante "abliterated" (tambien etiquetada como heretic, uncensored o decensored) construida sobre Qwen2.5-32B-Instruct, el modelo denso de 32.7 mil millones de parametros de Alibaba, en la que se ha aplicado una tecnica de ablacion de direcciones de rechazo para reducir la tendencia del modelo a negarse a responder ciertas peticiones.
 
-El modelo cuenta con 32.763.876.352 parámetros totales (aproximadamente 32,8 mil millones), una arquitectura transformer densa (no MoE, por tanto sin parámetros activos diferenciados) y está pensado para conversación multi-turno en inglés, el único idioma declarado en la model card. La relevancia actual reside en que ofrece una variante sin censura de un modelo de 32B con licencia Apache 2.0, lo que permite experimentación con comportamientos que los modelos alineados rechazarían, a costa de asumir riesgos de seguridad y calidad.
+El repositorio no aporta pesos en safetensors sino unicamente una coleccion de cuantizaciones GGUF listas para usar con llama.cpp y herramientas compatibles, con tamanos que van desde los 12.4 GB de la variante Q2_K hasta los 34.9 GB de Q8_0. Esta orientado a inferencia local y despliegue offline en hardware consumer de gama alta o en servidores con GPU unica.
 
-Es importante señalar que esta ficha describe una cuantización, no un modelo original: las innovaciones arquitectónicas y de entrenamiento son las de Qwen2.5-32B-Instruct, mientras que el proceso heretic y la cuantización son aportaciones de richardyoung y mradermacher respectivamente. El repositorio tiene 160,2 GB y ofrece cuantizaciones desde Q2_K (12,4 GB) hasta Q8_0 (34,9 GB).
+Su relevancia actual reside en que permite ejecutar un modelo de 32B con capacidades de chat e instruccion en equipos con 24 GB de VRAM usando cuantizaciones Q4, algo impensable con los pesos en precision completa. La licencia declarada es Apache 2.0, heredada de Qwen2.5, aunque el modelo base arrastra las etiquetas openrail++ y heretic que conviene revisar antes de un uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (derivado de Qwen2.5-32B-Instruct); sin datos adicionales en la model card |
-| Parametros totales | 32.763.876.352 (~32,8 B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible en la informacion proporcionada |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q6_K, Q8_0 (cuantizaciones estaticas; no hay imatrix/weighted disponibles) |
-| Idiomas soportados | Ingles (unico idioma declarado) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (repo con ficheros .gguf); el modelo base usa safetensors |
+| Arquitectura | Transformer denso (derivado de Qwen2.5-32B-Instruct) |
+| Parametros totales | 32.763.876.352 |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 (estaticas); variantes imatrix en repositorio separado |
+| Idiomas soportados | en |
+| Licencia | apache-2.0 (etiquetas adicionales: openrail++) |
+| Formato de pesos | GGUF (multiparte; no se incluyen safetensors) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de Qwen2.5-32B-Instruct: un transformer denso de aproximadamente 32,8 mil millones de parámetros. La model card de esta cuantización no aporta detalles sobre número de tokens de entrenamiento, composición del dataset ni si hubo RLHF o DPO; esa información correspondería a la documentación original de Qwen2.5-32B-Instruct, no incluida en la información proporcionada. Tampoco se especifican innovaciones técnicas como decodificación especulativa o atención lineal.
+El modelo subyacente es Qwen2.5-32B-Instruct, un transformer denso con atencion por cabezas agrupadas (GQA) y decodificacion autorregresiva estandar. Sobre esa base, el autor original (richardyoung) aplico un proceso de "abliteration" o "heretic": una modificacion de los pesos orientada a eliminar la direccion de activacion asociada al rechazo, de modo que el modelo responde a peticiones que la version instruct original rechazaria. No se dispone de informacion sobre el dataset exacto, el numero de tokens de entrenamiento adicional ni si hubo RLHF o DPO en esta variante concreta.
 
-La particularidad de este modelo es el proceso "heretic" aplicado por richardyoung sobre Qwen2.5-32B-Instruct, que busca eliminar las respuestas de rechazo (refusals) mediante técnicas de abliteration. Posteriormente, mradermacher ha generado cuantizaciones estáticas GGUF con convert_type hf y output_tensor_quantised. La model card indica que no se han producido cuantizaciones ponderadas/imatrix por el momento, y que podrían solicitarse mediante una discusión comunitaria.
+La contribucion de mradermacher se limita a la cuantizacion: convierte los pesos originales en formato Hugging Face a GGUF y genera las distintas variantes (Q2 a Q8) mediante cuantizacion estatica, con versiones adicionales ponderadas por imatrix en un repositorio hermano. No hay innovaciones de arquitectura propias del cuantizador; la calidad depende de la fidelidad de la cuantizacion y del modelo base.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno en inglés, heredada de Qwen2.5-32B-Instruct.
-- Razonamiento y resolución de problemas de complejidad media-alta por el tamaño del modelo (32B).
-- Generación de código y matemáticas (capacidades típicas de la familia Qwen2.5-Instruct; no verificadas en esta cuantización concreta).
-- Comportamiento "uncensored"/"decensored": menor tendencia a rechazar peticiones que los modelos alineados estándar.
-- Compatibilidad con endpoints (tag endpoints_compatible) para despliegue como servicio.
-- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo thinking en la información disponible.
-- Capacidad multilingüe limitada según la model card: solo se declara inglés.
+- Generacion de texto conversacional multi-turno en ingles, con formato de chat instruct.
+- Razonamiento y respuesta a instrucciones heredadas de Qwen2.5-32B-Instruct (matematicas, codigo, comprension lectora).
+- Respuestas sin filtros de rechazo por defecto (comportamiento "uncensored" o "abliterated"), lo que amplia el rango de peticiones atendidas.
+- Compatible con llama.cpp y servidores OpenAI-compatible (endpoints_compatible), lo que facilita integrarlo en pipelines existentes.
+- Soporte de cuantizaciones de 2 a 8 bits para adaptar calidad y huella de memoria.
+- Capacidades multilingues limitadas al ingles segun la metadata del repositorio.
 
 ## Casos de uso
 
-- Experimentación en investigación sobre alineación y seguridad: permite estudiar cómo varía el comportamiento de un modelo 32B al eliminar los mecanismos de rechazo, comparándolo con la versión alineada original.
-- Evaluación de robustez de filtros y guardarraíles: útil para probar sistemas de moderación externos frente a un modelo que no se autocensura.
-- Despliegue local en estaciones de trabajo con llama.cpp: la cuantización Q4_K_S (18,9 GB) permite ejecutar un modelo de 32B en hardware de consumo de gama alta.
-- Generación creativa sin restricciones temáticas: escritura de ficción, guiones o contenido que los modelos alineados suelen rechazar, asumiendo la responsabilidad legal y ética del uso.
-- Fine-tuning posterior sobre la base heretic: punto de partida para adaptaciones de dominio que requieran un modelo con menor sesgo de rechazo.
-- Pruebas de regresión de pipelines de inferencia GGUF: al ofrecer múltiples cuantizaciones (Q2_K a Q8_0), sirve para medir el impacto de la cuantización en calidad y velocidad dentro de un mismo modelo.
-- Servicio conversacional interno en inglés: con endpoints_compatible puede exponerse vía API para prototipos donde el contenido sensible no sea un problema.
+- Inferencia local en estacion de trabajo con GPU de 24 GB: usar Q4_K_M (20 GB) para ejecutar un 32B en una RTX 4090 o similar, con contexto moderado.
+- Despliegue en servidor con una sola A100 40 GB: cargar Q8_0 (34.9 GB) para maxima fidelidad respecto al modelo original.
+- Investigacion sobre alineacion y seguridad: comparar respuestas del modelo heretic frente a Qwen2.5-32B-Instruct estandar para estudiar el efecto de la ablacion en la tasa de rechazo.
+- Generacion de contenido creativo sin restricciones de filtrado, en entornos controlados y con supervision humana.
+- Prototipado de asistentes conversacionales offline en ingles donde no se quiera depender de APIs externas.
+- Evaluacion de cuantizaciones: usar el conjunto de variantes Q2 a Q8 para medir la degradacion de perplejidad y calidad segun el bit-width.
+- Integracion en pipelines de CI/CD mediante endpoint compatible con OpenAI para pruebas de modelos en entornos aislados.
 
 ## Benchmarks y rendimiento
 
@@ -53,44 +52,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada según cuantización (tamaños de fichero de la model card): Q2_K 12,4 GB; Q3_K_S 14,5 GB; Q3_K_M 16,0 GB; Q3_K_L 17,3 GB; Q4_K_S 18,9 GB; Q6_K 27,0 GB; Q8_0 34,9 GB.
-- Para Q4_K_S (18,9 GB) se recomienda GPU con 24 GB de VRAM (RTX 3090, RTX 4090) o reparto GPU/CPU con offloading parcial.
-- Q8_0 (34,9 GB) requiere GPU de 40 GB o más (A100 40GB, A6000 48GB) o bien ejecución en CPU con suficiente RAM.
-- Q2_K y Q3_K pueden ejecutarse en GPUs de 16 GB con offloading parcial o en CPU.
-- Despliegue: llama.cpp, Ollama, LM Studio y otros runtimes compatibles con GGUF; el tag endpoints_compatible sugiere también despliegue vía endpoints. vLLM y TGI no son compatibles de forma nativa con GGUF en todas sus versiones (no verificado en la información disponible).
-- Latencia y throughput: no disponibles.
+- VRAM estimada segun cuantizacion: Q2_K ~12.4 GB, Q4_K_M ~20 GB, Q6_K ~27 GB, Q8_0 ~34.9 GB (mas overhead de contexto y KV cache).
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M, A100 40 GB o H100 para Q6_K y Q8_0.
+- Cabe en GPU consumer de gama alta (RTX 3090/4090 con 24 GB) unicamente con cuantizaciones Q4 o inferiores.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, servidores compatibles con la API de OpenAI; vLLM y TGI no soportan GGUF de forma nativa en este repositorio.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Este modelo (Qwen2.5-32B-Instruct-ARA-heretic-GGUF) | ~32,8 B | No disponible | Apache 2.0 | GGUF | Variante heretic/uncensored cuantizada |
-| richardyoung/Qwen2.5-32B-Instruct-ARA-heretic | ~32,8 B | No disponible | Apache 2.0 | safetensors | Modelo base heretic sin cuantizar |
-| Qwen/Qwen2.5-32B-Instruct | ~32,8 B | No disponible en esta ficha | Apache 2.0 | safetensors | Modelo original alineado de Alibaba |
-| Otras cuantizaciones GGUF de Qwen2.5-32B-Instruct | ~32,8 B | No disponible | Apache 2.0 | GGUF | Alternativa alineada, sin proceso heretic |
-
-La comparación se limita al linaje directo del modelo; no se dispone de datos de rendimiento comparativo en la información proporcionada.
+| Qwen2.5-32B-Instruct-ARA-heretic-GGUF (este) | 32.7B | no disponible | apache-2.0 | GGUF | Variante abliterated, solo ingles |
+| Qwen2.5-32B-Instruct (original) | 32.7B | no disponible | apache-2.0 | safetensors | Modelo base alineado, multilingue |
+| richardyoung/Qwen2.5-32B-Instruct-ARA-heretic | 32.7B | no disponible | apache-2.0 | safetensors | Pesos originales sin cuantizar |
+| Variantes imatrix del mismo modelo | 32.7B | no disponible | apache-2.0 | GGUF | Cuantizacion ponderada, mayor calidad a igual tamano |
 
 ## Limitaciones y advertencias
 
-- Modelo "uncensored"/"abliterated": puede generar contenido ofensivo, peligroso o ilegal sin rechazo; no es apto para producción orientada al público sin filtros externos.
-- Riesgo elevado de alucinación y de respuestas dañadas por el proceso de abliteration, que puede degradar la coherencia y la calidad general respecto al modelo original.
-- Solo se declara soporte de inglés; el rendimiento en castellano u otros idiomas no está garantizado.
-- Longitud de contexto no documentada en esta ficha; no asumir la ventana nativa de Qwen2.5 sin verificar en la documentación del modelo base.
-- Licencia Apache 2.0 permite uso comercial, pero el uso de un modelo sin censura puede incumplir normativas locales de contenido y plataformas de despliegue.
-- Cuantizaciones Q2_K y Q3_K con pérdida notable de calidad; la propia model card marca Q3_K_M como "lower quality".
-- Sin cuantizaciones imatrix/ponderadas disponibles, lo que limita la calidad máxima alcanzable en tamaños pequeños.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: poca validación comunitaria.
-- No se documentan salvaguardas, evaluaciones de sesgo ni pruebas de seguridad.
+- El proceso de ablacion elimina barreras de rechazo, lo que puede producir contenido ofensivo, inseguro o legalmente problematico; requiere supervision y filtros externos en produccion.
+- Riesgo elevado de alucinacion, comun en modelos de 32B y potencialmente agravado por la perdida de alineacion.
+- Idiomas soportados limitados al ingles segun la metadata; el rendimiento en castellano no esta garantizado.
+- La licencia apache-2.0 se declara en el repositorio, pero las etiquetas openrail++ y heretic del modelo base deben revisarse para uso comercial.
+- Las cuantizaciones Q2 y Q3 degradan notablemente la calidad; se recomienda Q4_K_M o superior para uso real.
+- El repositorio ocupa 224 GB y los archivos GGUF pueden estar divididos en multiparte; hay que concatenarlos correctamente antes de cargarlos.
+- No se dispone de informacion sobre la longitud de contexto efectiva tras la cuantizacion.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen2.5-32B-Instruct-ARA-heretic-GGUF
-- Modelo base heretic: https://huggingface.co/richardyoung/Qwen2.5-32B-Instruct-ARA-heretic
-- Modelo original Qwen2.5-32B-Instruct: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct
-- Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct/blob/main/LICENSE
-- Página de descargas de mradermacher: https://hf.tst.eu/model#Qwen2.5-32B-Instruct-ARA-heretic-GGUF
-- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Gráfico de perplejidad por tipo de cuantización: https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Modelo base (pesos originales): https://huggingface.co/richardyoung/Qwen2.5-32B-Instruct-ARA-heretic
+- Variantes imatrix: https://huggingface.co/mradermacher/Qwen2.5-32B-Instruct-ARA-heretic-i1-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#Qwen2.5-32B-Instruct-ARA-heretic-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Licencia Qwen2.5: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct/blob/main/LICENSE
+- Grafico de perplejidad por cuantizacion: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests

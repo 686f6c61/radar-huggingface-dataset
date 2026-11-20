@@ -2,51 +2,50 @@
 
 ## Resumen
 
-LoCo-7B es un modelo de lenguaje de 7.615 millones de parámetros desarrollado por MuyaoYuan, especializado en compresión de razonamiento (*reasoning compression*). El modelo parte de una base de 7B y ha sido afinado mediante DPO (Direct Preference Optimization) y aprendizaje por preferencias, con un enfoque explícito en matemáticas y programación. La versión aquí documentada es una cuantización GGUF estática del modelo original, publicada por mradermacher bajo licencia MIT.
+LoCo-7B es un modelo de lenguaje de 7.615.616.512 parámetros (aproximadamente 7,6 mil millones) desarrollado originalmente por MuyaoYuan y distribuido en formato GGUF por el cuantizador mradermacher. El modelo está especializado en compresión de razonamiento (reasoning-compression), matemáticas y programación, y ha sido afinado mediante DPO (Direct Preference Optimization) y aprendizaje por preferencias. Su licencia MIT permite uso comercial sin restricciones significativas, lo que lo hace atractivo para integración en productos.
 
-El problema que aborda LoCo-7B es la verbosidad excesiva de los modelos de razonamiento: en lugar de generar cadenas de pensamiento largas, el modelo está entrenado para comprimir el razonamiento manteniendo la corrección de la respuesta. Esto resulta relevante para despliegues en producción donde el coste por token y la latencia importan, y para entornos con recursos limitados donde un modelo de 7B cuantizado puede ejecutarse en hardware de consumo.
+La relevancia de esta ficha radica en que se trata de una cuantización estática del modelo base original, publicada en noviembre de 2026, que ofrece múltiples niveles de cuantización (desde Q2_K hasta f16) para adaptarse a distintos presupuestos de hardware. El modelo está orientado al idioma inglés y su pipeline no está especificado en la información disponible.
 
-La ficha se centra en la distribución GGUF, que ofrece 12 variantes de cuantización desde Q2_K (3,1 GB) hasta f16 (15,3 GB), lo que permite desplegar el modelo desde GPUs de gama media hasta estaciones de trabajo con VRAM abundante. El modelo está etiquetado únicamente para inglés y su pipeline no está especificado en la información disponible.
+Al estar basado en un modelo de 7B con enfoque en razonamiento comprimido, LoCo-7B resulta adecuado para tareas de generación de código, resolución de problemas matemáticos y razonamiento multi-paso en entornos con recursos limitados, especialmente cuando se despliega mediante llama.cpp u Ollama con cuantizaciones de 4 bits.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de modelo base de 7B; detalles no disponibles) |
-| Parametros totales | 7.615.616.512 |
-| Parametros activos | no aplica (no es MoE) |
+| Arquitectura | Transformer (no se especifica variante concreta en la informacion disponible) |
+| Parametros totales | 7.615.616.512 (aproximadamente 7,6 mil millones) |
+| Parametros activos | no disponible (no es un modelo MoE segun la informacion disponible) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
 | Idiomas soportados | en (ingles) |
 | Licencia | MIT |
-| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base original en safetensors |
+| Formato de pesos | GGUF (safetensors en el modelo base original) |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna del modelo base más allá de tratarse de un transformer de 7B con 7.615 millones de parámetros. El modelo original MuyaoYuan/LoCo-7B ha sido afinado mediante DPO y aprendizaje por preferencias, con etiquetas que indican un enfoque en compresión de razonamiento (*reasoning-compression*), matemáticas y programación. No se especifican en la información proporcionada el número de tokens de entrenamiento, la composición del dataset ni detalles del proceso de alineación más allá de las etiquetas mencionadas.
+La arquitectura concreta no está detallada en la información proporcionada; se trata de un transformer de aproximadamente 7,6 mil millones de parámetros, según el recuento de safetensors del modelo base. El modelo ha sido entrenado con técnicas de aprendizaje por preferencias (DPO) y aprendizaje por preferencias (preference-learning), según las etiquetas de la model card. Estas técnicas se emplean habitualmente para alinear el modelo hacia respuestas más útiles y correctas en tareas de razonamiento.
 
-La innovación destacable es el objetivo de compresión de razonamiento: el modelo está optimizado para producir cadenas de pensamiento más cortas sin sacrificar la corrección, lo que se traduce en menor latencia y menor consumo de tokens en tareas de matemáticas y código. Las cuantizaciones GGUF publicadas por mradermacher son estáticas (no hay versiones con imatrix/weighted disponibles según la model card), con una nota explícita de que las variantes ponderadas podrían no publicarse.
+El énfasis declarado en "reasoning-compression" sugiere que el entrenamiento busca producir cadenas de razonamiento más compactas o eficientes, aunque no se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni innovaciones técnicas concretas como decodificación especulativa o atención lineal. Tampoco se detalla si hubo RLHF adicional más allá del DPO mencionado.
 
 ## Capacidades
 
 - Generación de texto conversacional en inglés.
-- Razonamiento comprimido: cadenas de pensamiento más cortas orientadas a reducir coste y latencia.
-- Razonamiento matemático (etiqueta *math*).
-- Generación de código (etiqueta *coding*).
-- Alineación por preferencias mediante DPO, orientada a respuestas más concisas y útiles.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: limitadas al inglés según la etiqueta de idioma.
-- Capacidades especiales (visión, audio, thinking mode explícito): no disponible en la información proporcionada.
+- Razonamiento multi-paso y resolución de problemas matemáticos (etiquetas math y reasoning-compression).
+- Generación y asistencia en programación (etiqueta coding).
+- Alineación mediante DPO para preferencias de respuesta.
+- Capacidades conversacionales (etiqueta conversational).
+- Compatibilidad con endpoints (endpoints_compatible).
+- No se dispone de información sobre soporte de tool calling, function calling, agentes, visión, audio ni modo thinking explícito.
 
 ## Casos de uso
 
-- Asistencia en matemáticas con presupuesto de tokens ajustado: el modelo puede resolver problemas paso a paso generando razonamientos comprimidos, lo que reduce el coste por consulta en comparación con modelos de razonamiento verbosos, adecuado para plataformas educativas con alto volumen de peticiones.
-- Generación de código en entornos con recursos limitados: al ser un 7B cuantizado a Q4_K_M (4,8 GB), puede desplegarse en una GPU de consumo para autocompletado y generación de fragmentos de código en editores o pipelines locales.
-- Despliegue en el borde (*edge*) o en portátiles: las variantes Q2_K (3,1 GB) y Q3_K_S (3,6 GB) permiten ejecutar el modelo en equipos con 6-8 GB de VRAM o incluso en CPU mediante llama.cpp, útil para prototipos offline.
-- Servicio de chat en inglés para dominios técnicos: su alineación DPO y su enfoque en matemáticas y código lo hacen adecuado para asistentes de soporte técnico en inglés donde se prioriza la concisión.
-- Evaluación de técnicas de compresión de razonamiento: investigadores pueden usar el modelo como referencia para comparar la calidad de respuesta frente a modelos de razonamiento estándar del mismo tamaño.
-- Integración en pipelines de CI/CD para revisión de código: con cuantización Q8_0 (8,2 GB) en una GPU de 12-16 GB, puede emplearse para tareas de análisis estático asistido o generación de pruebas unitarias en inglés.
+- Asistencia en programación: el modelo puede generar fragmentos de código y explicar soluciones en inglés, adecuado para integrarse en editores o pipelines de revisión de código donde se requiera un modelo ligero de 7B.
+- Resolución de problemas matemáticos: gracias a su entrenamiento en math y reasoning-compression, puede emplearse para tutoría automatizada o verificación de pasos intermedios en ejercicios.
+- Razonamiento comprimido en producción: su enfoque en cadenas de razonamiento compactas lo hace útil en sistemas donde el coste por token de salida es crítico, como APIs de bajo presupuesto.
+- Despliegue en hardware de consumo: las cuantizaciones Q4_K_S y Q4_K_M (4,6-4,8 GB) permiten ejecutarlo en GPUs consumer con 8 GB de VRAM mediante llama.cpp u Ollama.
+- Prototipado rápido de chatbots en inglés: al ser conversational y tener licencia MIT, se puede integrar en demos y productos internos sin fricción legal.
+- Evaluación de técnicas de compresión de razonamiento: investigadores pueden usar el modelo como referencia para estudiar el equilibrio entre brevedad de razonamiento y precisión en tareas matemáticas y de código.
+- Fine-tuning posterior: al estar disponible en GGUF y con licencia permisiva, sirve como base para ajustes específicos en dominios técnicos en inglés.
 
 ## Benchmarks y rendimiento
 
@@ -54,38 +53,47 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (según cuantización): Q2_K ~3,1 GB; Q3_K_S ~3,6 GB; Q3_K_M ~3,9 GB; Q3_K_L ~4,2 GB; IQ4_XS ~4,4 GB; Q4_K_S ~4,6 GB; Q4_K_M ~4,8 GB; Q5_K_S ~5,4 GB; Q5_K_M ~5,5 GB; Q6_K ~6,4 GB; Q8_0 ~8,2 GB; f16 ~15,3 GB. Añadir overhead de contexto y KV cache (no cuantificado por defecto).
-- GPU recomendadas: RTX 3060 12 GB o RTX 4060 Ti 16 GB para Q4-Q5; RTX 4090 24 GB para Q6-Q8 con contexto amplio; A100/H100 para f16 o despliegues concurrentes.
-- Cabe en GPU de consumo: sí, desde Q2_K hasta Q5_K_M en GPUs de 8 GB; Q6_K y Q8_0 requieren 12-16 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con GGUF; vLLM y TGI no soportan GGUF de forma nativa (requerirían el modelo base en safetensors).
-- Latencia y throughput estimados: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia según cuantización:
+  - Q2_K: ~3,1 GB.
+  - Q3_K_S: ~3,6 GB.
+  - Q4_K_S / Q4_K_M: ~4,6-4,8 GB (recomendados para equilibrio calidad/velocidad).
+  - Q5_K_M: ~5,5 GB.
+  - Q6_K: ~6,4 GB.
+  - Q8_0: ~8,2 GB.
+  - f16: ~15,3 GB.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090 para cuantizaciones altas; A100/H100 para f16 o serving de alta concurrencia.
+- Cabe en GPU consumer: sí, con cuantizaciones Q4 o inferiores en GPUs de 8 GB o más.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el modelo base es compatible con transformers.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Formato |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| LoCo-7B (este) | 7,6B | no disponible | Razonamiento comprimido, math, coding | MIT | GGUF |
-| Modelo base MuyaoYuan/LoCo-7B | 7,6B | no disponible | Razonamiento comprimido | MIT | safetensors |
-| Alternativas de 7B de razonamiento | no disponible | no disponible | no disponible | no disponible | no disponible |
+| LoCo-7B (este) | ~7,6B | no disponible | MIT | GGUF | Especializado en reasoning-compression, math y coding |
+| Mistral-7B | ~7,2B | 8K-32K (según versión) | Apache 2.0 | safetensors, GGUF | Modelo generalista ampliamente cuantizado |
+| Llama 3.1 8B | ~8B | 128K | Llama 3.1 Community | safetensors, GGUF | Mayor contexto y ecosistema, licencia con restricciones |
+| Qwen2.5-7B | ~7,6B | 32K-128K | Apache 2.0 | safetensors, GGUF | Fuerte en código y multilingüe |
 
-No se dispone de datos de rendimiento comparativo ni de modelos alternativos concretos en la información proporcionada; la comparativa se limita al modelo base del que deriva esta cuantización.
+No se dispone de datos de rendimiento comparativo para LoCo-7B en la información proporcionada; la comparación se limita a parámetros, contexto y licencia.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados en la información disponible; al ser un modelo entrenado principalmente en inglés, puede presentar sesgos culturales y lingüísticos propios de ese corpus.
-- Riesgo de alucinación: inherente a los modelos de 7B; la compresión de razonamiento puede aumentar el riesgo de omitir pasos de verificación en problemas complejos.
-- Limitaciones de contexto e idioma: solo se declara soporte de inglés; la longitud de contexto no está especificada, lo que impide garantizar ventanas largas.
-- Restricciones de licencia: MIT permite uso comercial, pero se recomienda verificar la licencia del modelo base original (MuyaoYuan/LoCo-7B) y de los datos de entrenamiento.
-- Caveats para producción: las cuantizaciones son estáticas (sin imatrix), por lo que las variantes de baja calidad (Q2_K, Q3_K_M) pueden degradar notablemente el razonamiento matemático y de código; se recomienda Q4_K_M o superior para tareas sensibles.
-- El repo ocupa 68,1 GB y contiene 12 archivos GGUF; la descarga selectiva es necesaria.
-- No hay garantías de soporte de tool calling ni de modo agente; no se debe asumir su disponibilidad sin validación empírica.
+- Idioma: solo se declara soporte para inglés; el rendimiento en castellano no está garantizado.
+- Longitud de contexto no documentada: no se puede asumir una ventana amplia para conversaciones largas o documentos extensos.
+- Riesgo de alucinación inherente a modelos de 7B, especialmente en matemáticas y código sin verificación.
+- Sesgos: no se documentan sesgos específicos, pero al ser un modelo entrenado principalmente en inglés puede reflejar sesgos culturales y lingüísticos de sus datos.
+- Licencia MIT: permite uso comercial, pero el usuario debe verificar las condiciones del modelo base original (MuyaoYuan/LoCo-7B) y de los datos de entrenamiento.
+- Cuantizaciones bajas (Q2_K, Q3_K_S) degradan la calidad; para producción se recomienda Q4_K_M o superior.
+- No se especifican capacidades de tool calling ni de agentes; no asumir su disponibilidad sin validación empírica.
+- El repositorio es una cuantización de terceros; la responsabilidad de calidad recae en el modelo base original.
 
 ## Enlaces
 
-- Hugging Face (cuantización GGUF): https://huggingface.co/mradermacher/LoCo-7B-GGUF
-- Modelo base: https://huggingface.co/MuyaoYuan/LoCo-7B
+- Repositorio GGUF: https://huggingface.co/mradermacher/LoCo-7B-GGUF
+- Modelo base original: https://huggingface.co/MuyaoYuan/LoCo-7B
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/LoCo-7B-i1-GGUF
 - Página de descargas del cuantizador: https://hf.tst.eu/model#LoCo-7B-GGUF
-- README de referencia para uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Discusión sobre tipos de cuantización: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
-- Empresa del cuantizador: https://www.nethype.de/
+- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

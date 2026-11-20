@@ -2,55 +2,58 @@
 
 ## Resumen
 
-El modelo `3MPER0RR/Qwen2.5-0.5B-Instruct-3MPER0RR-abliterated` es una variante "abliterated" (sin mecanismos de rechazo) del modelo Qwen2.5-0.5B-Instruct, publicada por el usuario 3MPER0RR. Se trata de un ajuste derivado en dos saltos: parte del Qwen2.5-0.5B-Instruct original de Alibaba y pasa primero por la version abliterated de huihui-ai (`Qwen2.5-0.5B-Instruct-abliterated-v3`), sobre la que 3MPER0RR aplica un proceso que el autor describe como "multi-round abliteration". El objetivo es disponer de un modelo conversacional pequeno y sin las direcciones de rechazo que los modelos instruct suelen incorporar tras el alineamiento.
+El modelo `3MPER0RR/Qwen2.5-0.5B-Instruct-3MPER0RR-abliterated` es un ajuste fino del modelo Qwen2.5-0.5B-Instruct, concretamente de la variante ya "abliterated" de huihui-ai (`huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3`). Lo desarrolla el usuario independiente 3MPER0RR como trabajo de investigación y experimentación, y su rasgo definitorio es la aplicación de un proceso de abliteración en múltiples rondas, una técnica que elimina la dirección de rechazo en el espacio de activaciones del modelo para reducir sus negativas a responder determinadas peticiones.
 
-Con 494.032.768 parametros reales (confirmados en los pesos safetensors), es un transformer denso de escala sub-1000M, pensado para entornos con recursos muy limitados: ejecucion en CPU, moviles, Raspberry Pi o GPUs de gama baja. El repositorio ocupa aproximadamente 1.0 GB y se distribuye en formato safetensors bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
+Se trata de un modelo pequeño: 494.032.768 parámetros totales según los pesos en safetensors, lo que lo sitúa en la franja de 0,5 mil millones de parámetros. Hereda la arquitectura Qwen2 del modelo original y la licencia Apache 2.0. El repositorio ocupa aproximadamente 1,0 GB y el pipeline declarado es text-generation con orientación conversacional.
 
-Su relevancia es acotada y muy especifica: no compite en rendimiento con modelos de varios miles de millones de parametros, sino que cubre el nicho de la experimentacion en tecnicas de abliteration, la investigacion sobre alineamiento y rechazo, y el despliegue de asistentes conversacionales ultraligeros en hardware marginal. La model card es minima y no aporta detalles sobre dataset, entrenamiento ni evaluaciones.
+Su relevancia es acotada y muy específica: sirve como banco de pruebas de bajo coste para estudiar los efectos de la abliteración sobre un modelo instructivo pequeño, y para ejecutar conversación y generación de texto en hardware muy modesto. No es un modelo de propósito general de alto rendimiento ni compite con modelos de mayor tamaño; su interés es experimental y de despliegue ligero.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (familia Qwen2), decoder-only con RoPE, GQA y SwiGLU |
+| Arquitectura | Transformer (Qwen2), heredada del modelo base |
 | Parametros totales | 494.032.768 |
-| Parametros activos | no aplica (modelo denso) |
-| Longitud de contexto | 32.768 tokens (heredada del Qwen2.5-0.5B-Instruct; no confirmada en la model card de esta variante) |
-| Tipos de cuantizacion | no disponibles en el repo (safetensors en precision completa); compatible con cuantizacion GGUF/AWQ/GPTQ a traves de herramientas externas |
-| Idiomas soportados | no disponibles (el Qwen2.5 base soporta multiples idiomas, pero la model card no lo especifica) |
-| Licencia | apache-2.0 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (el modelo base Qwen2.5-0.5B-Instruct declara 32.768 tokens; no confirmado para este fine-tune) |
+| Tipos de cuantizacion | no disponible en la informacion proporcionada (pesos en safetensors en precision original; no se listan variantes GGUF/AWQ/GPTQ) |
+| Idiomas soportados | no disponible (la model card no declara idiomas) |
+| Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
-| Modelo base inmediato | huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3 |
-| Modelo original | Qwen/Qwen2.5-0.5B-Instruct |
-| Proceso declarado | Multi-round abliteration |
-| Tamano del repositorio | 1.0 GB |
+| Modelo base | huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3 |
+| Proceso | Abliteracion en multiples rondas |
+| Tamano del repositorio | 1,0 GB |
+| Tensores totales | 290 |
+| Tensores modificados | 13 (4,48 %) |
+| Tensores sin cambios | 277 (95,52 %) |
+| Desajustes estructurales | 0 |
+| Formas y tipos de datos coincidentes | 290/290 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la del Qwen2.5-0.5B-Instruct: un transformer decoder-only denso con normalizacion RMSNorm, embeddings rotatorios (RoPE), atencion con consultas agrupadas (GQA) y capas feed-forward con activacion SwiGLU. El modelo no emplea mezcla de expertos (MoE) ni arquitecturas de estado (SSM), por lo que todos los parametros se activan en cada paso de inferencia.
+La arquitectura es la de Qwen2, un transformer decoder-only con atención completa estándar, heredada sin cambios estructurales del modelo base. El autor documenta un proceso de abliteración en múltiples rondas sobre `huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3`, que a su vez es una variante ya abliterated del Qwen2.5-0.5B-Instruct original. La abliteración consiste en identificar la dirección de rechazo en las activaciones internas y proyectarla fuera de los pesos, de modo que el modelo deja de activar respuestas de negativa ante ciertas peticiones.
 
-La informacion aportada no incluye detalles sobre el entrenamiento original (numero de tokens, composicion del dataset, etapas de SFT, RLHF o DPO), ya que la model card solo menciona el modelo base, el proceso de abliteration y su estado. La "abliteration" es una tecnica de edicion de pesos que identifica y elimina la direccion del espacio de activaciones asociada a la negativa (refusal) del modelo, normalmente mediante la ortogonalizacion de esa direccion en las matrices de pesos. El autor indica que se han aplicado varias rondas de este proceso ("multi-round"), lo que suele implicar una eliminacion progresiva de componentes de rechazo residual. No se especifica si hubo entrenamiento adicional (fine-tuning) despues de la edicion o si el proceso fue puramente de manipulacion de pesos.
+La model card aporta una comparación de pesos entre el modelo base y el resultado: de 290 tensores comparados, 13 (4,48 %) fueron modificados y 277 (95,52 %) permanecen idénticos, sin desajustes estructurales y con coincidencia total de formas y tipos de datos (290/290). No se documentan datos de entrenamiento adicionales, número de tokens, composición del dataset, ni etapas de RLHF o DPO específicas de este ajuste; el autor describe el trabajo como investigación y experimentación. Tampoco se detallan innovaciones técnicas más allá del propio procedimiento de abliteración multi-ronda.
 
 ## Capacidades
 
-- Generacion de texto y conversacion multi-turno en formato instruct.
-- Razonamiento basico y respuesta a instrucciones simples, limitado por el reducido numero de parametros.
-- Generacion de codigo a pequena escala (fragmentos y funciones cortas), sin garantias de correccion.
-- Capacidades multilingues heredadas del Qwen2.5 base, aunque no confirmadas ni evaluadas en esta variante.
-- Reduccion o eliminacion de las respuestas de rechazo tipicas de los modelos alineados, objetivo declarado del proceso de abliteration.
-- Soporte de tool calling y function calling: no disponible (no se menciona en la model card y el modelo base no esta optimizado para ello).
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Modo de razonamiento extendido (thinking): no disponible.
-- Vision o audio: no soportado (modelo exclusivamente de texto).
+- Generación de texto conversacional en formato instruct, heredado del modelo base Qwen2.5-0.5B-Instruct.
+- Respuesta a instrucciones y diálogo multi-turno, con el formato de chat de Qwen2.
+- Reducción de rechazos: la abliteración busca que el modelo no decline peticiones que el modelo original rechazaría.
+- Generación de texto general y tareas básicas de razonamiento y redacción propias de un modelo de 0,5B.
+- Capacidades multilingües: no declaradas en la model card; no disponible.
+- Soporte de tool calling / function calling: no documentado en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no documentado; la capacidad del modelo base de 0,5B en este terreno es limitada.
+- Capacidades especiales (modo thinking, visión, audio): no disponibles.
 
 ## Casos de uso
 
-- Investigacion sobre alineamiento y abliteration: permite estudiar como responde un modelo al que se le han eliminado las direcciones de rechazo, comparando sus salidas con las del Qwen2.5-0.5B-Instruct original para medir el efecto de la tecnica.
-- Asistentes conversacionales ultraligeros en hardware marginal: al ocupar menos de 1 GB en precision completa y unos cientos de megabytes cuantizado, puede ejecutarse en una Raspberry Pi, un movil o una CPU antigua para tareas de chat sencillas.
-- Prototipado rapido de pipelines de generacion de texto: sirve como modelo de prueba para validar un flujo completo (tokenizacion, plantilla de chat, decodificacion) antes de escalar a modelos mayores.
-- Generacion de texto creativo sin filtros: util para experimentacion con narrativa, guiones o dialogos donde el rechazo del modelo base resulta un obstaculo, siempre que se respeten las politicas de uso aplicables al desarrollador.
-- Educacion y demostraciones tecnicas: permite mostrar en un aula o tutorial como varia el comportamiento de un modelo antes y despues de la abliteration, con coste computacional minimo.
-- Tareas de clasificacion, extraccion de entidades o resumen de textos cortos en local: mediante prompts adecuados, puede emplearse para procesamiento de texto simple sin enviar datos a servicios externos, un requisito habitual en entornos con privacidad estricta.
+- Experimentación con técnicas de abliteración: el modelo sirve como caso de estudio reproducible de cómo la proyección de la dirección de rechazo afecta a 13 de 290 tensores y qué impacto tiene en el comportamiento conversacional, gracias a la comparación de pesos documentada.
+- Despliegue en entornos con recursos mínimos: con 494 millones de parámetros y un repositorio de 1,0 GB, puede ejecutarse en CPU o en GPU de gama baja para prototipos de generación de texto y chat.
+- Pruebas de seguridad y alineación: útil para evaluar hasta qué punto un modelo pequeño abliterated responde a peticiones que un modelo alineado rechazaría, en el contexto de investigación sobre robustez de salvaguardas.
+- Generación de texto de bajo coste en pipelines locales: resúmenes breves, reformulación de frases o respuestas plantilla donde no se requiere alta calidad y prima la latencia y el coste.
+- Chatbot de demostración y docencia: permite ilustrar el funcionamiento de un transformer instructivo y del formato de chat Qwen en talleres o entornos educativos sin infraestructura dedicada.
+- Evaluación comparativa de fine-tunes: al derivar de una cadena conocida (Qwen2.5-0.5B-Instruct → abliterated-v3 → este modelo), sirve como punto de comparación en estudios sobre el efecto de ajustes sucesivos en modelos pequeños.
 
 ## Benchmarks y rendimiento
 
@@ -58,40 +61,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 1 GB en FP16, 0.5 GB en INT8 y 0.3-0.4 GB en INT4, segun el nivel de cuantizacion.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; el modelo funciona tambien en GPUs muy antiguas y en gran parte de iGPUs modernas.
-- Cabe en cualquier GPU de consumo (RTX 4090, RTX 3060, GTX 1650, e incluso integradas), y tambien en CPU, moviles y dispositivos tipo Raspberry Pi.
-- Opciones de despliegue: transformers (Hugging Face), llama.cpp, Ollama, vLLM, TGI y text-generation-webui, previa conversion a los formatos correspondientes (GGUF, AWQ, GPTQ).
-- Latencia y throughput: no disponibles. Dado el tamano del modelo, en hardware de consumo se espera una generacion muy rapida (por encima de decenas de tokens por segundo en GPU y de varios tokens por segundo en CPU), pero no se aportan mediciones.
+- VRAM estimada para inferencia en FP16/BF16: en torno a 1 GB para los pesos (494M parámetros × 2 bytes), más overhead de activaciones y caché KV; cómodo en cualquier GPU con 2 GB o más.
+- VRAM estimada en cuantización de 8 bits: aproximadamente 0,5 GB de pesos, más overhead; en 4 bits, alrededor de 0,25-0,3 GB.
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) es sobrada; también funciona en GPUs integradas y en CPU.
+- Cabe en GPU consumer: sí, en la práctica totalidad de GPUs consumer actuales e incluso en placas con poca memoria.
+- Opciones de despliegue: Transformers con PyTorch, vLLM, llama.cpp y Ollama (requiere conversión a GGUF, no incluida en el repositorio), TGI. El repositorio solo distribuye safetensors, por lo que para llama.cpp/Ollama habría que convertir los pesos.
+- Latencia y throughput estimados: no disponibles en la información proporcionada; por el tamaño, se espera una latencia muy baja y un throughput alto en GPU, aunque no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
-| 3MPER0RR/Qwen2.5-0.5B-Instruct-3MPER0RR-abliterated | 494M | 32.768 (heredado) | Apache 2.0 | Variante abliterated de este autor, sin evaluaciones publicadas |
-| huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3 | 494M | 32.768 | Apache 2.0 | Modelo base inmediato; misma familia y tecnica |
-| Qwen/Qwen2.5-0.5B-Instruct | 494M | 32.768 | Apache 2.0 | Version original alineada, con mecanismos de rechazo intactos |
-| SmolLM2-360M-Instruct | 362M | 8.192 | Apache 2.0 | Alternativa ultraligera de Hugging Face, mas pequena y con menor contexto |
+| 3MPER0RR/Qwen2.5-0.5B-Instruct-3MPER0RR-abliterated | 494 M | no disponible | Apache 2.0 | Abliteración multi-ronda; 13/290 tensores modificados |
+| huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3 | ~494 M | no disponible | Apache 2.0 (heredada de Qwen2.5) | Modelo base directo; abliteración previa |
+| Qwen2.5-0.5B-Instruct | ~494 M | 32.768 tokens (según documentación de Qwen) | Apache 2.0 | Modelo instructivo original alineado |
+| Qwen2.5-1.5B-Instruct | ~1,5 B | 32.768 tokens (según documentación de Qwen) | Apache 2.0 | Alternativa de mayor tamaño y calidad, más exigente en recursos |
 
-La comparativa con el modelo original es la mas relevante: el rendimiento en tareas estandar deberia ser practicamente identico, salvo por la desaparicion de respuestas de rechazo y una posible degradacion de la coherencia o el cumplimiento de instrucciones derivada de la edicion de pesos. No se dispone de datos comparativos de benchmarks.
+La comparación de rendimiento entre estos modelos no puede establecerse con datos: no se han publicado benchmarks para el modelo de 3MPER0RR ni para la variante de huihui-ai en la información disponible. La diferencia principal frente a sus antecesores es la modificación de pesos por abliteración; frente a Qwen2.5-1.5B-Instruct, la diferencia es de escala (tres veces más parámetros) y, previsiblemente, de calidad, a costa de mayores requisitos de memoria.
 
 ## Limitaciones y advertencias
 
-- La abliteration altera los pesos para reducir el rechazo, lo que puede deteriorar la coherencia, el seguimiento de instrucciones y la calidad general en comparacion con el modelo original; no se han publicado evaluaciones que cuantifiquen este efecto.
-- Riesgo elevado de alucinacion: con menos de 500 millones de parametros, el modelo tiene una capacidad de conocimiento factual y razonamiento muy limitada.
-- La eliminacion de los mecanismos de rechazo implica que puede generar contenido inapropiado, ofensivo o danino; el desarrollador es responsable de aplicar filtros y salvaguardas externas antes de cualquier uso en produccion.
-- Limitaciones de contexto: aunque herede 32.768 tokens del Qwen2.5 base, el modelo no se ha evaluado para contextos largos y su capacidad de atencion efectiva con entradas extensas es dudosa.
-- Idiomas soportados no confirmados; el rendimiento multilingue puede ser desigual y no esta documentado en esta variante.
-- Ausencia de soporte documentado de tool calling, function calling y comportamiento de agente, lo que descarta su uso en pipelines que dependan de estas funciones.
-- Licencia Apache 2.0: permite uso comercial, pero no exime de cumplir la normativa aplicable ni de las politicas de las plataformas donde se despliegue.
-- Modelo sin descargas ni likes en el momento de la consulta: no cuenta con validacion de la comunidad ni con informes independientes de calidad.
+- La abliteración elimina o reduce la dirección de rechazo, por lo que el modelo puede producir contenido que el modelo original habría declinado; no debe desplegarse en producción orientada al público sin filtros y salvaguardas externas.
+- Riesgo de alucinación elevado: con 0,5B parámetros, la fiabilidad factual es limitada y las respuestas pueden ser incorrectas o incoherentes en tareas complejas.
+- Idiomas soportados no declarados; el comportamiento multilingüe no está garantizado ni documentado.
+- Longitud de contexto no confirmada para este fine-tune; no asumir los 32.768 tokens del modelo base sin verificación.
+- No hay datos de benchmarks ni evaluaciones de calidad o seguridad publicadas; el autor lo presenta como trabajo de investigación y experimentación, no como modelo listo para producción.
+- Licencia Apache 2.0 permite uso comercial, pero la modificación de alineación puede contravenir políticas de plataformas o requisitos regulatorios según el caso de uso; la responsabilidad recae en el desplegador.
+- El repositorio solo incluye safetensors; no hay variantes cuantizadas publicadas, lo que exige conversión manual para despliegues con llama.cpp u Ollama.
+- Solo 13 tensores modificados (4,48 %): el alcance real de la abliteración es limitado y su efecto puede ser parcial o inconsistente entre tipos de peticiones.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/3MPER0RR/Qwen2.5-0.5B-Instruct-3MPER0RR-abliterated
-- Modelo base inmediato: https://huggingface.co/huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3
-- Modelo original: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
-- Repositorio de Qwen2.5 en GitHub: https://github.com/QwenLM/Qwen2.5
-- Paper de Qwen2.5 (arXiv): https://arxiv.org/abs/2412.15115
-- Repositorio de llama.cpp (para conversion a GGUF): https://github.com/ggerganov/llama.cpp
-- Ollama: https://ollama.com
+- Modelo base: https://huggingface.co/huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3
+- Licencia del repositorio: https://huggingface.co/3MPER0RR/Qwen2.5-0.5B-Instruct-3MPER0RR-abliterated/blob/main/License
+- Aviso de investigación: https://huggingface.co/3MPER0RR/Qwen2.5-0.5B-Instruct-3MPER0RR-abliterated/blob/main/Disclaimer.md

@@ -2,92 +2,91 @@
 
 ## Resumen
 
-XENON AI FULL es un modelo de lenguaje de 4.022 millones de parámetros derivado de Qwen/Qwen3-4B-Instruct-2507 mediante un ajuste fino con LoRA cuyos pesos se han fusionado en un checkpoint completo de Transformers. Lo desarrolla el proyecto XENON AI bajo la firma XenLogic, y el repositorio lo publica el usuario Sergey321-345. No se trata de un modelo entrenado desde cero, sino de una variante instruida de la familia Qwen3 con una capa de personalización aplicada sobre la base.
+XENON Quanta 1 es un modelo de lenguaje de aproximadamente 4.000 millones de parametros desarrollado por XenLogic mediante fine-tuning del modelo base Qwen3-4B-Instruct-2507. Se distribuye bajo el identificador `Sergey321-345/XENON-AI-FULL` en Hugging Face y se presenta como una version de investigacion temprana orientada a asistencia conversacional, resolucion de problemas matematicos, explicaciones educativas y soporte de programacion.
 
-La relevancia del modelo es limitada y muy acotada: se publica con licencia Apache-2.0, formato safetensors y compatibilidad con el ecosistema transformers y text-generation-inference, lo que permite desplegarlo como cualquier checkpoint Qwen3-4B. Al carecer de documentación técnica detallada sobre el dataset de ajuste, los hiperparámetros o los objetivos de entrenamiento, su interés práctico reside en la base Qwen3-4B-Instruct-2507 subyacente más que en las modificaciones introducidas por el autor.
+El modelo mantiene la arquitectura transformer del Qwen3-4B-Instruct-2507 original y ha sido ajustado mediante LoRA con fusion posterior de pesos (lora-merged), lo que produce un unico conjunto de pesos en formato safetensors sin adaptadores separados. No se documentan en la model card ni el volumen de datos de entrenamiento, ni la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO.
 
-La model card está redactada en ruso y describe el proceso de forma escueta: ajuste LoRA/QLoRA sobre el adaptador Sergey321-345/XENON.AI y fusión posterior de pesos. No se declaran idiomas soportados, resultados de benchmarks ni detalles del corpus de entrenamiento.
+Su relevancia actual es limitada pero concreta: se trata de un fine-tune ligero y de licencia permisiva (Apache 2.0) sobre una base solida de 4B parametros, lo que permite desplegarlo en hardware de consumo. Sin embargo, el propio autor lo etiqueta como "early research release" y advierte de limitaciones en precision aritmetica, formato de salida y finalizacion de respuestas, por lo que debe evaluarse con cautela antes de cualquier uso en produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Qwen3) |
+| Arquitectura | Transformer (derivada de Qwen3-4B-Instruct-2507) |
 | Parametros totales | 4.022.468.096 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (heredada de Qwen3-4B-Instruct-2507) |
-| Tipos de cuantizacion | no disponible en la informacion proporcionada; compatible con cuantizacion estandar de transformers (fp16, bf16, int8, int4 via herramientas externas) |
-| Idiomas soportados | no disponibles |
-| Licencia | Apache-2.0 |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
-| Tamano del repositorio | 8.1 GB |
-| Modelo base | Qwen/Qwen3-4B-Instruct-2507 |
-| Metodo de ajuste | LoRA / QLoRA con fusion de pesos |
-| Libreria | transformers |
-| Pipeline | text-generation |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde a la del modelo base Qwen3-4B-Instruct-2507: un transformer decoder-only con atención completa, sin mezcla de expertos ni componentes híbridos SSM. El autor no aporta modificaciones estructurales; el checkpoint resultante conserva la topología, la tokenización y el vocabulario del modelo Qwen original.
+El modelo es un transformer denso de aproximadamente 4B parametros que hereda la arquitectura del Qwen3-4B-Instruct-2507. El ajuste se realizo mediante LoRA sobre ese modelo base, con los pesos del adaptador fusionados posteriormente en el checkpoint final. Esta tecnica permite un fine-tuning eficiente en memoria, pero implica que no es posible separar el adaptador del modelo base una vez fusionado.
 
-El entrenamiento consistió en un ajuste fino con LoRA o QLoRA sobre el adaptador Sergey321-345/XENON.AI, seguido de la fusión de los pesos del adaptador en el checkpoint base para producir un modelo autónomo que no requiere cargar el LoRA por separado. No se especifican el número de tokens de entrenamiento, la composición del dataset, la presencia de RLHF/DPO ni hiperparámetros como rango del LoRA, alpha o tasa de aprendizaje. Tampoco se documenta ninguna innovación técnica adicional (decodificación especulativa, atención lineal, etc.).
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de datos sinteticos o la aplicacion de tecnicas de alineacion como RLHF, DPO o SFT supervisado mas alla del propio ajuste LoRA. Tampoco se documentan innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, modos de razonamiento explicitos u otras). La model card unicamente indica que el modelo se encuentra en una fase temprana de investigacion y que ha sido sometido a una evaluacion manual preliminar con problemas matematicos verbales, sin resultados estandarizados.
 
 ## Capacidades
 
-- Generación de texto conversacional en modo instruido, heredada de Qwen3-4B-Instruct-2507.
-- Razonamiento de propósito general y resolución de problemas de complejidad media, limitado por el tamaño de 4B parámetros.
-- Generación de código y matemáticas a nivel básico-intermedio, según las capacidades del modelo base.
-- Soporte de tool calling y function calling en la medida en que lo ofrece Qwen3-4B-Instruct-2507.
-- Capacidad multilingüe heredada del modelo base, aunque el autor no declara idiomas oficialmente soportados.
-- No se documentan modos especiales (thinking mode, visión, audio) ni capacidades de agente multi-paso más allá de las del modelo base.
+- Generacion de texto conversacional en lenguaje natural, orientada a asistencia multi-turno.
+- Resolucion de problemas matematicos y estructurados, con soporte para problemas verbales.
+- Explicaciones educativas y asistencia en contextos de aprendizaje.
+- Soporte de programacion en Python y lenguajes generales.
+- Respuestas con orientacion experimental al razonamiento.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
+- Capacidades especiales (vision, audio, thinking mode explicito): no disponibles en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistente conversacional ligero en local: el modelo puede desplegarse en una estación de trabajo con una sola GPU consumer gracias a sus 4B parámetros, gestionando diálogos multi-turno con un consumo de VRAM moderado.
-- Prototipado rápido de aplicaciones de chat: al ser un checkpoint transformers estándar con licencia Apache-2.0, se integra sin fricción en pipelines de experimentación y demos internas.
-- Generación de texto asistida en herramientas de escritura: borradores, resúmenes y reformulaciones en un entorno controlado, con la ventaja de que el modelo puede ejecutarse sin conexión.
-- Evaluación comparativa de ajustes LoRA: sirve como referencia para estudiar el efecto de la fusión de adaptadores sobre un modelo base conocido como Qwen3-4B-Instruct-2507.
-- Fine-tuning posterior o destilación: al ser un checkpoint completo y abierto, puede emplearse como punto de partida para nuevos ajustes con licencia permisiva.
-- Despliegue en entornos con requisitos de soberanía de datos: al poder ejecutarse en hardware propio y sin dependencias de API externas, encaja en escenarios donde la información no puede salir de la infraestructura local.
-- Investigación sobre personalización de modelos pequeños: útil para analizar cómo un ajuste LoRA no documentado altera el comportamiento de un modelo instruido de 4B.
+- Asistencia conversacional en prototipos: el modelo puede gestionar dialogos multi-turno basicos en entornos de investigacion o demos internas, gracias a su tamano compacto de 4B parametros y su licencia permisiva.
+- Soporte educativo en matematicas: util para generar explicaciones paso a paso de problemas aritmeticos y algebraicos sencillos, siempre con verificacion humana posterior dada la advertencia del autor sobre errores de calculo.
+- Ayuda a la programacion en Python: generacion de fragmentos de codigo, explicaciones de funciones y sugerencias de depuracion en entornos de desarrollo asistido, sin garantias de correccion en produccion.
+- Chatbot de documentacion tecnica: despliegue ligero en servidores modestos para responder preguntas frecuentes sobre una base de conocimiento cerrada, aprovechando el formato safetensors y la compatibilidad con transformers.
+- Generacion de material didactico: redaccion de ejercicios, resumentes y explicaciones para plataformas de e-learning, con revision editorial obligatoria.
+- Investigacion sobre fine-tuning: servir como punto de partida o referencia para estudiar el efecto de LoRA fusionado sobre Qwen3-4B-Instruct-2507 en tareas de razonamiento y matematicas.
+- Evaluacion comparativa de modelos pequenos: uso como baseline en experimentos academicos que comparen fine-tunes de 4B parametros bajo licencia Apache 2.0.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks estandarizados en la informacion disponible. La model card menciona unicamente una evaluacion manual preliminar con problemas matematicos verbales, sin cifras concretas ni comparaciones formales, y senala limitaciones en precision aritmetica, formato de salida y finalizacion de respuestas.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp16/bf16: aproximadamente 8 GB solo para pesos, más overhead de activaciones y caché KV; en la práctica, entre 10 y 12 GB según longitud de contexto.
-- VRAM estimada en cuantización int8: en torno a 4-5 GB para pesos, más overhead.
-- VRAM estimada en cuantización int4 (GGUF/AWQ/GPTQ): en torno a 2,5-3,5 GB para pesos, apto para GPUs consumer de gama media.
-- GPUs recomendadas: A100 o H100 para despliegues de producción con throughput alto; RTX 4090, RTX 3090 o RTX A6000 para inferencia en fp16 con contexto amplio.
-- Compatibilidad con GPU consumer: sí; cabe en RTX 4060 Ti 16 GB, RTX 4070 Ti, RTX 4080, RTX 4090 y, en cuantización int4, en GPUs de 8 GB como RTX 3060 Ti o RTX 4060.
-- Opciones de despliegue: transformers nativo, vLLM, TGI (text-generation-inference), llama.cpp y Ollama previa conversión a GGUF.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia en FP16/BF16: aproximadamente 8-9 GB solo para pesos, mas overhead de activaciones y cache KV (estimacion orientativa a partir de los 4.022 millones de parametros).
+- VRAM estimada en cuantizacion de 8 bits: aproximadamente 4-5 GB.
+- VRAM estimada en cuantizacion de 4 bits: aproximadamente 2,5-3 GB.
+- GPU recomendadas: NVIDIA A100, H100 o L40S para despliegue en FP16 con throughput alto; RTX 4090 o RTX 3090 para inferencia en FP16 en una sola GPU.
+- Cabe en GPU de consumo: si, en tarjetas con 8 GB o mas en cuantizacion de 8 bits, y en tarjetas con 6 GB o mas en cuantizacion de 4 bits (estimacion orientativa).
+- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (tag presente en el repo), y en principio vLLM, llama.cpp u Ollama previa conversion a GGUF, aunque no se confirma compatibilidad explicita en la informacion disponible.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| XENON AI FULL | 4,02B | no disponible | Apache-2.0 | Hugging Face | Ajuste LoRA fusionado sobre Qwen3-4B-Instruct-2507 |
-| Qwen/Qwen3-4B-Instruct-2507 | 4,02B | no disponible en esta ficha | Apache-2.0 | Hugging Face | Modelo base oficial, documentación completa |
-| Llama 3.2 3B Instruct | 3,21B | 128K | Llama 3.2 Community License | Hugging Face, Meta | Alternativa de tamaño similar con licencia restrictiva |
-| Phi-3.5-mini-instruct | 3,8B | 128K | MIT | Hugging Face, Microsoft | Alternativa de tamaño similar con licencia permisiva |
+| XENON Quanta 1 | ~4,02 B | no disponible | Apache 2.0 | Hugging Face | Fine-tune LoRA fusionado de Qwen3-4B-Instruct-2507 |
+| Qwen3-4B-Instruct-2507 | ~4 B | no disponible en esta ficha | Apache 2.0 | Hugging Face | Modelo base; referencia directa de comparacion |
+| Otros fine-tunes de Qwen3-4B | ~4 B | variable | habitualmente Apache 2.0 | Hugging Face | No se dispone de datos concretos de alternativas especificas en la informacion proporcionada |
 
-La comparación con Qwen3-4B-Instruct-2507 es la más directa: XENON AI FULL añade un ajuste LoRA no documentado sobre el mismo esqueleto, por lo que su rendimiento dependerá de la calidad de dicho ajuste, sin datos públicos que lo respalden.
+No se dispone de datos de rendimiento comparativo entre XENON Quanta 1 y sus alternativas, por lo que la comparativa se limita a parametros, licencia y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- No se documentan sesgos conocidos, pero al derivar de Qwen3-4B-Instruct-2507 hereda los sesgos del corpus original de Qwen, no auditados en esta variante.
-- Riesgo de alucinación inherente a un modelo de 4B parámetros, agravado por la ausencia de evaluación publicada tras el ajuste LoRA.
-- No se declaran idiomas soportados oficialmente; el comportamiento multilingüe es incierto y la model card está en ruso, lo que sugiere un posible sesgo hacia ese idioma en el ajuste.
-- La licencia Apache-2.0 permite uso comercial, pero el autor no ofrece garantías ni soporte; la responsabilidad sobre el comportamiento del modelo recae en el usuario.
-- Cero descargas y cero likes en el momento de la ficha: no existe validación comunitaria ni evidencia de uso en producción.
-- El proceso de fusión de LoRA puede degradar capacidades del modelo base si el adaptador se entrenó con un dataset pequeño o desequilibrado; no hay información para descartarlo.
-- Ausencia total de datos sobre el dataset de ajuste, hiperparámetros y evaluación: no es recomendable para producción sin una validación propia exhaustiva.
+- El autor advierte explicitamente de posibles calculos incorrectos, respuestas incompletas y artefactos de formato.
+- La evaluacion realizada es manual y preliminar, sin benchmarks estandarizados; no hay evidencia cuantitativa de calidad.
+- Se trata de una "early research release", no de un modelo validado para produccion.
+- No se documentan sesgos conocidos, pero al derivar de Qwen3-4B-Instruct-2507 hereda los sesgos del modelo base y de sus datos de entrenamiento, no especificados en esta ficha.
+- Riesgo de alucinacion: elevado en tareas factuales y aritmeticas, segun las propias advertencias del autor.
+- Limitaciones de contexto e idioma: no disponibles; no se confirma soporte multilingue.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el estado experimental del modelo desaconseja su uso en produccion sin evaluacion previa.
+- El repositorio ocupa 40,2 GB, lo que sugiere la presencia de multiples artefactos o copias de pesos; conviene revisar el contenido antes de la descarga.
+- No se documenta si el fine-tuning preserva las capacidades completas del modelo base (tool calling, contextos largos, etc.).
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Sergey321-345/XENON-AI-FULL
-- Adaptador LoRA referenciado: https://huggingface.co/Sergey321-345/XENON.AI
+- Hugging Face: https://huggingface.co/Sergey321-345/XENON-AI-FULL
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
+- Informes de evaluacion (referenciados en la model card): https://huggingface.co/Sergey321-345/XENON-AI-FULL/tree/main/reports

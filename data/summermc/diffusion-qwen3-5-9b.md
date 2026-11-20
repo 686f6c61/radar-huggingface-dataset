@@ -2,85 +2,88 @@
 
 ## Resumen
 
-Diffusion-Qwen3.5-9B es un checkpoint de investigación experimental desarrollado por el usuario summerMC que convierte el modelo autoregresivo Qwen/Qwen3.5-9B en un modelo de lenguaje de difusión enmascarada (masked diffusion LM) al estilo LLaDA / Dream. En lugar de generar token a token de izquierda a derecha, el modelo produce texto mediante desenmascaramiento paralelo iterativo, eliminando la máscara causal en las capas de atención completa y añadiendo un escaneo bidireccional en las capas Gated DeltaNet. Sobre esta base se fusiona un módulo de refinamiento guiado por facebook/bart-base congelado.
+Diffusion-Qwen3.5-9B es un checkpoint de investigación publicado por el usuario summerMC que convierte el modelo autorregresivo Qwen/Qwen3.5-9B en un modelo de lenguaje de difusión enmascarada (masked diffusion LM) al estilo LLaDA / Dream. En lugar de generar token a token de izquierda a derecha, el modelo parte de una secuencia completamente enmascarada y va desenmascarando tokens de forma iterativa y paralela, commitando en cada paso aquellos cuya confianza supera un umbral configurable. Sobre esa base se añade una segunda etapa de refinamiento guiada por BART (facebook/bart-base congelado en FP32) mediante un módulo de cross-attention con puerta inicializada a cero.
 
-El modelo tiene 8.953.803.264 parámetros (unos 8,95B) y, según el autor, se carga en bf16 con alrededor de 18 GB de VRAM. La conversión se realizó con un ajuste QLoRA de 4 bits (NF4), LoRA de rango 8 y alpha 16, sobre tan solo 256 muestras del dataset HuggingFaceTB/smoltalk, en dos etapas de 10 pasos cada una. Se distribuye bajo licencia Apache 2.0 y soporta inglés y japonés.
+El modelo tiene 8.953.803.264 parámetros (aproximadamente 9B) en precisión bf16, con un repositorio de 18,1 GB, y hereda el tokenizador y la plantilla de chat de Qwen. Está etiquetado explícitamente como experimental y no evaluado: el propio autor indica que no se han ejecutado benchmarks y que la calidad esperada es inferior a la del modelo base. No obstante, es relevante ahora como pieza de exploración práctica del paradigma de difusión para texto sobre una arquitectura híbrida moderna (atención completa más capas Gated DeltaNet), y por incluir kernels Triton, captura con CUDA graphs y un sampler con streaming listos para usar.
 
-Es relevante ahora como ejemplo práctico de reconversión de un transformer autoregresivo moderno (con capas híbridas de atención y DeltaNet) en un paradigma de difusión, un área de investigación activa para acelerar la decodificación y permitir edición de texto. No obstante, el propio autor advierte de que es un checkpoint experimental sin evaluar, no apto para producción y con calidad esperada por debajo del modelo base.
+La licencia es Apache 2.0 y los idiomas declarados son inglés y japonés. El modelo no soporta `generate()` autorregresivo estándar: requiere aplicar el parche bidireccional del paquete `dqwen` incluido en el repositorio y restaurar las puertas inversas (`rev_gates`) y el embedding de máscara.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer hibrido bifidireccional con difusion enmascarada (masked diffusion / LLaDA-Dream style); capas de atencion completa sin mascara causal y capas Gated DeltaNet con escaneo forward+reverse; fusion con facebook/bart-base |
-| Parametros totales | 8.953.803.264 (aprox. 8,95B) |
-| Parametros activos | no disponible (modelo denso, no MoE) |
-| Longitud de contexto | no disponible para el checkpoint de difusion; el modelo base Qwen3.5-9B se reporta con contexto de 256K-1M tokens segun fuentes externas. El entrenamiento de difusion se realizo con longitud de secuencia 256 (prompt <= 128) |
-| Tipos de cuantizacion | bf16 nativo (pesos fusionados); el autor menciona carga en 4-bit para GPUs mas pequenas; no se listan GGUF ni otras cuantizaciones |
-| Idiomas soportados | en (ingles), ja (japones) |
+| Arquitectura | Transformer híbrido (atención completa bidireccional + capas Gated DeltaNet con escaneo directo e inverso), convertido a masked diffusion LM; refinamiento con cross-attention BART |
+| Parametros totales | 8.953.803.264 (~9B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | bf16 (pesos publicados); carga en 4-bit NF4 soportada para GPUs pequeñas; el fast path Triton se desactiva con 4-bit |
+| Idiomas soportados | en, ja |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (bf16, 4 shards) + fusion.pt (BART fusion) + dqwen_rev_gates.safetensors |
+| Formato de pesos | safetensors (4 shards, bf16), más `fusion.pt` (state_dict de BartFusion) y `dqwen_rev_gates.safetensors` |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura parte de Qwen3.5-9B y aplica el parche `dqwen` (incluido en el repositorio) para convertirlo en un modelo de difusion enmascarada. En las capas de atencion completa se elimina la mascara causal, volviendolas bidireccionales. En las capas Gated DeltaNet se aplica un escaneo forward y reverse combinado mediante `out = orig(h) + g ⊙ flip(orig(flip(h)))`, con una puerta `rev_gate` por canal inicializada a cero. El token de mascara `[MASK]` se implementa con el token `<|fim_pad|>` y un embedding aprendido. La funcion de perdida es entropia cruzada sobre token enmascarado con ponderacion 1/t y prediccion desplazada (la posicion j se predice desde el hidden j-1) para mantener alineado el `lm_head` autoregresivo original.
+El modelo parte de Qwen/Qwen3.5-9B y lo transforma en un diffusion LM enmascarado. Las capas de atención completa pierden la máscara causal y pasan a ser bidireccionales. Las capas Gated DeltaNet incorporan un escaneo en ambas direcciones con la fórmula `out = orig(h) + g ⊙ flip(orig(flip(h)))`, donde cada canal dispone de una puerta inversa `rev_gate` inicializada a cero. El token de máscara es `<|fim_pad|>` con un embedding aprendido. La función de pérdida es entropía cruzada sobre tokens enmascarados con ponderación 1/t y predicción desplazada (posición j desde el hidden j−1) para mantener alineado el `lm_head` autorregresivo original.
 
-El proceso de generacion es una decodificacion en dos fases: primero un borrador mediante remasking por bloques y despues un refinamiento guiado por BART de los tokens de menor confianza (el 30% mas bajo). El modulo BART usa `facebook/bart-base` en FP32 congelado, cuyo encoder alimenta un modulo de cross-attention con puerta cero que se inyecta en los embeddings de respuesta durante una pasada de refinamiento. El entrenamiento consistio en un QLoRA de 4 bits NF4 (computo bf16) con r=8, alpha=16, fusionado en pesos bf16, sobre 256 muestras de HuggingFaceTB/smoltalk, en dos etapas de 10 pasos: la etapa 1 ajusta LoRA, puertas y el embedding de mascara; la etapa 2 solo el modulo de fusion. El repositorio incluye aceleracion Triton opcional (fusión de proyecciones, kernels de DeltaNet, captura con CUDA graphs), validada contra la ruta PyTorch original antes de activarse.
+La decodificación se realiza por bloques con remasking: se genera un borrador y después se refinan mediante BART los tokens de menor confianza (el 30% inferior). BART-base, congelado en FP32, codifica el borrador y un módulo de cross-attention con puerta a cero inyecta esa información en los embeddings de respuesta para una pasada de refinamiento. El entrenamiento usó QLoRA en 4-bit NF4 con r=8 y alpha=16 (cómputo en bf16, luego fusionado en pesos bf16), sobre 256 muestras del dataset HuggingFaceTB/smoltalk, con longitud de secuencia 256 (prompt ≤ 128) y dos etapas de 10 pasos cada una: la primera entrena LoRA, puertas y embedding de máscara; la segunda solo el módulo de fusión. Es, por tanto, un ajuste muy ligero sobre el modelo base, no un reentrenamiento desde cero.
+
+Como innovación de ingeniería, el repositorio incluye un fast path en Triton que fusiona las proyecciones de entrada del DeltaNet bidireccional, combina convoluciones directa e inversa en un solo kernel, agrupa ambos escaneos en una llamada `fla` de batch 2, pliega `rev_gate` en un único GEMM de `out_proj`, fusiona RMSNorm con residuo, gate/up con SiLU y q/k-norm con RoPE parcial, y captura el forward completo como CUDA graph por longitud de secuencia. También ofrece `dqwen.accel.select`, que calcula lm_head + softmax (max/argmax/LSE) sin materializar los logits fp32 del vocabulario de 248k. El fast path se valida contra las capas originales antes de activarse y se desactiva automáticamente en entrenamiento, máscaras de padding, fusión BART, batch > 1, 4-bit o GPUs anteriores a Ampere.
 
 ## Capacidades
 
-- Generacion de texto mediante desenmascaramiento paralelo iterativo (no autoregresivo).
-- Modo de streaming con `stream`, exponiendo tokens comprometidos por paso y tokens aun indecisos (iguales a `dlm.mask_id`).
-- Refinamiento guiado por BART para mejorar los tokens de baja confianza del borrador.
-- Generacion con control de calidad mediante el parametro `thr` (confianza minima para fijar un token): valores bajos implican mayor velocidad y valores altos mayor calidad.
-- Capacidades conversacionales heredadas del modelo base (tag `conversational`), con plantilla de chat de Qwen.
-- Soporte multilingue limitado a ingles y japones.
-- No se documenta soporte de tool calling, function calling, agentes ni vision en este checkpoint.
-- Aceleracion Triton opcional en GPUs Ampere o posteriores.
+- Generación de texto por desenmascaramiento iterativo paralelo, con control de calidad mediante el umbral de confianza `thr` (más bajo es más rápido, más alto es mejor calidad).
+- Streaming de generación token a token a través de la función `stream`, que expone los tokens recién comprometidos y los aún indeterminados (`dlm.mask_id`).
+- Refinamiento en dos pasadas: borrador por remasking por bloques y refinamiento guiado por BART del 30% de tokens menos confiables.
+- Conversación: incluye `chat_template.jinja` de Qwen y está etiquetado como `conversational`.
+- Capacidades multilingües limitadas a inglés y japonés según la model card.
+- Aceleración opcional con Triton, CUDA graphs y kernels fusionados para GPUs Ampere o posteriores.
+- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo thinking en la información disponible.
 
 ## Casos de uso
 
-- Investigacion en modelos de difusion para texto: permite experimentar con decodificacion por desenmascaramiento paralelo sobre un backbone moderno con capas hibridas DeltaNet/atencion.
-- Prototipado de edicion y relleno de texto: la naturaleza bidireccional facilita tareas de infilling y correccion de fragmentos, algo mas costoso en modelos estrictamente autoregresivos.
-- Estudio de estrategias de decodificacion: el parametro `thr` y el refinamiento por BART ofrecen un banco de pruebas para comparar compromisos velocidad/calidad frente a la decodificacion autoregresiva del modelo base.
-- Generacion de pequenos asistentes conversacionales en ingles y japones en entornos de laboratorio, aprovechando el chat template de Qwen.
-- Experimentos de aceleracion en inferencia: la ruta Triton con CUDA graphs y kernels fusionados sirve para medir ganancias de rendimiento en escenarios de difusion.
-- Docencia y divulgacion: ejemplo reproducible de reconversion de un LLM densidad 9B a un paradigma de difusion con codigo incluido en el repositorio.
-- Base para futuros ajustes: como punto de partida para fine-tuning adicional sobre el paradigma de difusion enmascarada.
+- Investigación sobre modelos de difusión para texto: el checkpoint permite experimentar con decodificación por desenmascaramiento paralelo sobre una arquitectura híbrida real de 9B, comparando el comportamiento frente al Qwen3.5-9B autorregresivo original.
+- Estudio del sampler y del umbral de confianza: el parámetro `thr` y el streaming permiten analizar curvas de calidad/latencia y el efecto del remasking por bloques en tareas controladas de laboratorio.
+- Evaluación de refinamiento híbrido BART + LLM: el módulo de fusión con puerta a cero es un caso de estudio reproducible de cómo inyectar un encoder pequeño en un modelo grande sin degradar el comportamiento inicial.
+- Prototipado de generación paralela en inglés o japonés: útil para medir si el desenmascaramiento paralelo reduce el número de pasos frente a la decodificación autorregresiva en longitudes cortas (≤ 256 tokens, el régimen de entrenamiento).
+- Benchmarking de kernels Triton: el fast path con DeltaNet bidireccional fusionado y CUDA graphs sirve para medir ganancias de throughput en A100, L4, H100 o RTX 30xx/40xx frente a la ruta PyTorch.
+- Docencia y divulgación: ejemplo funcional y de código abierto (Apache 2.0) para explicar diffusion LMs, con pipeline de carga, generación y streaming en pocas líneas.
+- No es adecuado para producción, atención al cliente real ni generación de código en pipelines, dado que el autor lo declara no evaluado y experimental.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El propio autor indica explicitamente que no se ha ejecutado ninguna evaluacion ("Not evaluated: no benchmark has been run") y que la calidad esperada es inferior a la del modelo base.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explícitamente que el modelo no ha sido evaluado y que se espera una calidad inferior a la del modelo base Qwen/Qwen3.5-9B.
 
 ## Requisitos de hardware
 
-- VRAM estimada en bf16: aproximadamente 18 GB, segun el autor (clase A100 / L4). Estimacion orientativa segun el numero de parametros: unos 9-10 GB en cuantizacion de 8 bits y unos 5-6 GB en 4 bits (valores no confirmados por el autor, que solo indica que la carga en 4-bit cabe en GPUs mas pequenas).
-- GPU: el autor cita A100 y L4 como referencia. La ruta de aceleracion Triton requiere GPU Ampere o posterior (A100, L4, RTX 30xx o superior, H100).
-- GPU de consumo: con carga en 4-bit podria caber en GPUs de consumo con suficiente VRAM, aunque no hay cifras confirmadas por el autor.
-- Despliegue: no se documenta soporte de vLLM, llama.cpp, Ollama ni TGI. La carga se realiza a traves del modulo `dqwen.hub` (funciones `load_pretrained`, `generate`, `stream`) y no mediante `AutoModelForCausalLM.from_pretrained` estandar, que devolveria un modelo causal sin la conversion a difusion.
-- Latencia y throughput: no disponibles. El autor no publica mediciones; la velocidad depende del valor de `thr` (menor implica mas rapido) y de si se activa la aceleracion Triton.
+- VRAM estimada: aproximadamente 18 GB en bf16 para inferencia, según la model card (clase A100 / L4). La carga en 4-bit NF4 permite ajustarlo en GPUs más pequeñas, aunque desactiva el fast path Triton.
+- GPUs recomendadas: A100, L4, H100 para el fast path Triton; RTX 30xx y 40xx también soportan el fast path al ser Ampere o posteriores. GPUs anteriores a Ampere usan la ruta PyTorch original.
+- Cabe en GPU de consumo: sí, en tarjetas con al menos ~18 GB en bf16 (por ejemplo RTX 4090 de 24 GB); con cuantización 4-bit cabría en GPUs de menor VRAM, a costa de renunciar a la aceleración Triton.
+- Despliegue: el repositorio está pensado para `transformers` con soporte de Qwen3.5, `accelerate`, `safetensors` y `huggingface_hub`, más `flash-linear-attention` recomendado. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI; de hecho, `AutoModelForCausalLM.from_pretrained` produce un modelo causal, no de difusión, por lo que es necesario aplicar el parche `dqwen`.
+- Latencia y throughput: no disponibles. El autor solo indica que un `thr` más bajo es más rápido y uno más alto da mejor calidad, sin cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Paradigma | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Paradigma | Licencia | Estado |
 |---|---|---|---|---|---|
-| Diffusion-Qwen3.5-9B (este) | 8,95B | no disponible (base 256K-1M) | Difusion enmascarada + fusion BART | apache-2.0 | Hugging Face, experimental |
-| Qwen/Qwen3.5-9B (modelo base) | 9B (denso) | 262K-1M (segun fuentes externas) | Autoregresivo, multimodal nativo | apache-2.0 | Hugging Face |
-| LLaDA / Dream (difusion LM) | no disponible | no disponible | Difusion enmascarada | no disponible | no disponible |
+| Diffusion-Qwen3.5-9B | ~9B | no disponible | Masked diffusion + refinamiento BART | Apache 2.0 | Experimental, sin benchmarks |
+| Diffusion-Qwen3.5-4B (mismo autor) | ~4B (no confirmado) | no disponible | Masked diffusion + fusión BART | Apache 2.0 | Experimental, sin benchmarks |
+| Diffusion-Qwen3.8-27B (mismo autor) | ~27B (no confirmado) | no disponible | Masked diffusion (pesos fusionados) | Apache 2.0 | Experimental, sin benchmarks |
+| Qwen/Qwen3.5-9B (modelo base) | ~9B | no disponible | Transformer autorregresivo | no disponible en la información | Modelo base de referencia |
 
-No se dispone de datos de benchmarks para establecer una comparacion cuantitativa de rendimiento entre estos modelos en la informacion proporcionada.
+No se dispone de datos de benchmarks ni de contexto para establecer una comparación cuantitativa con alternativas de difusión de otros autores.
 
 ## Limitaciones y advertencias
 
-- No evaluado: no se ha ejecutado ningun benchmark; la calidad se espera inferior a la del modelo base Qwen3.5-9B.
-- Sin `generate()` autoregresivo: el parche bidireccional funciona sin cache KV ni de estado, por lo que no se puede usar la generacion estandar de transformers.
-- Fragilidad frente a actualizaciones: los cambios en la implementacion de Qwen dentro de `transformers` pueden romper el parche `dqwen`.
-- Entrenamiento muy reducido: solo 256 muestras y 20 pasos totales (10 + 10), por lo que el ajuste es minimo y puede degradar el comportamiento respecto al modelo base.
-- Idiomas: solo ingles y japones.
-- Requiere aplicar el parche `dqwen` y restaurar `rev_gates` y `mask_embed`; una carga estandar devuelve un modelo causal, no de difusion.
-- La aceleracion Triton esta restringida a GPUs Ampere o posteriores y se desactiva automaticamente en entrenamiento, mascaras de padding, fusion BART, batch mayor que 1, 4-bit y GPUs pre-Ampere.
-- Advertencia explicita del autor: checkpoint de investigacion experimental, no apto para uso en produccion.
-- Licencia Apache 2.0, que permite uso comercial, aunque el estado experimental desaconseja el despliegue en produccion.
+- No evaluado: no se ha ejecutado ningún benchmark y la calidad esperada es inferior a la del modelo base Qwen3.5-9B.
+- Experimental: el autor lo declara explícitamente no apto para producción.
+- Sin `generate()` autorregresivo: el parche bidireccional funciona sin caché KV ni de estado, por lo que la generación es más costosa computacionalmente que en un modelo causal equivalente.
+- Fragilidad ante actualizaciones: cambios en la implementación de Qwen dentro de `transformers` pueden romper el parche `dqwen`.
+- Entrenamiento mínimo: solo 256 muestras de smoltalk, secuencia de 256 tokens y 10 pasos por etapa; el ajuste es muy superficial y no cubre dominios especializados.
+- Idiomas: únicamente inglés y japonés declarados; no hay soporte documentado de español.
+- Contexto: la longitud de contexto no está publicada; el entrenamiento se hizo con secuencias de 256 tokens, lo que limita la generalización a entradas largas.
+- Fast path condicionado: se desactiva con 4-bit, batch > 1, máscaras de padding, entrenamiento, fusión BART y GPUs pre-Ampere, lo que reduce las ganancias en despliegues reales.
+- Sesgos y alucinaciones: no documentados por el autor; al derivar de Qwen3.5-9B y entrenarse con un subconjunto pequeño de smoltalk, es razonable esperar los sesgos del modelo base, pero no hay análisis publicado.
+- Licencia Apache 2.0: permite uso comercial, pero al tratarse de un checkpoint experimental sin evaluación, su uso en producción queda bajo responsabilidad del integrador.
 
 ## Enlaces
 
@@ -88,8 +91,8 @@ No se dispone de datos de benchmarks para establecer una comparacion cuantitativ
 - Modelo relacionado Diffusion-Qwen3.5-4B: https://huggingface.co/summerMC/Diffusion-Qwen3.5-4B
 - Modelo relacionado Diffusion-Qwen3.8-27B: https://huggingface.co/summerMC/Diffusion-Qwen3.8-27B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
-- Modelo base de la fusion: https://huggingface.co/facebook/bart-base
+- Modelo base del módulo de fusión: https://huggingface.co/facebook/bart-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceTB/smoltalk
-- Referencia externa sobre Qwen3.5-9B: https://awesomeagents.ai/models/qwen-3-5-9b/
-- Especificaciones de Qwen3.5-9B: https://apxml.com/models/qwen35-9b
-- Modelo relacionado Qwen3.5-9B-SpeedX9-GDN32: https://huggingface.co/summerMC/Qwen3.5-9B-SpeedX9-GDN32
+- Paper de referencia LLaDA: no disponible en la información proporcionada
+- Paper de referencia Dream: no disponible en la información proporcionada
+- Repositorio de `flash-linear-attention`: no disponible en la información proporcionada

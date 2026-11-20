@@ -54,17 +54,37 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
-  "sources": [
+  "benchmarks": [
     {
-      "title": "Yo-Purple/Meditor-2-3.4B-A1.8B-HMoE · Hugging Face",
-      "url": "https://huggingface.co/Yo-Purple/Meditor-2-3.4B-A1.8B-HMoE",
-      "snippet": "Yo-Purple / Meditor-2-3.4B-A1.8B-HMoE Like 1 Text Generation Safetensors English meditor2 Mixture of Experts hierarchical-moe hmoe smollm2 500k-context reasoning toolformer two-tier-routing conversational custom_code License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket Meditor-2 (3.4B A1.8B HMoE) — Two-Tier Hierarchical Mixture-of-Experts 🌟 Overview 📊 ..."
+      "task": "UniBench-100 (Best Meditor 2 Run)",
+      "dataset": "UniBench-100 (10 Domains, 100 Questions)",
+      "metric": "BF16 Mean Score (/10)",
+      "value": 4.12
     },
     {
-      "title": "Yo-Purple (Jedidiah Featherkile) - Hugging Face",
-      "url": "https://huggingface.co/Yo-Purple",
-      "snippet": "Sort: Recently updated Yo-Purple/Meditor-2-3.4B-A1.8B-HMoE Text Generation • 3B•Updated about 2 hours ago• 1"
+      "task": "UniBench-100 (Best Meditor 2 Run)",
+      "dataset": "UniBench-100 (10 Domains, 100 Questions)",
+      "metric": "BF16 Pass Rate (%)",
+      "value": 22
+    },
+    {
+      "task": "UniBench-100 (Best Meditor 2 Run)",
+      "dataset": "UniBench-100 (10 Domains, 100 Questions)",
+      "metric": "Q4_K_M Mean Score (/10)",
+      "value": 4
+    },
+    {
+      "task": "ARC Commonsense (12Q)",
+      "dataset": "ARC Challenge Subset",
+      "metric": "ARC Accuracy (%)",
+      "value": 100
+    },
+    {
+      "task": "WikiText-2 Validation PPL",
+      "dataset": "WikiText-2",
+      "metric": "Perplexity",
+      "value": 2.48
     }
-  ]
+  ],
+  "sources": []
 }

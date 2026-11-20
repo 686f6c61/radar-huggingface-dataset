@@ -2,104 +2,106 @@
 
 ## Resumen
 
-SLM-Tavenel 10M es un modelo de lenguaje de tipo base, experimental y entrenado desde cero por el autor independiente athenista, publicado en Hugging Face bajo licencia MIT. Con 9.978.368 parámetros, se trata de un transformer decoder-only de 10 capas y anchura 256, con tokenizador BPE byte-level de 8.192 tokens y una ventana de contexto de 1.024 tokens. No está afinado para instrucciones ni funciona como asistente conversacional: es un artefacto de investigación pensado como base lingüística y como ancestro entrenado del modelo de 25M de la misma familia.
+SLM-Tavenel 10M es un modelo de lenguaje de tipo base, entrenado desde cero por el autor independiente athenista (proyecto SLM-Tavenel, repositorio de thekester en GitHub), con 9.978.368 parámetros. Se trata de un transformer decoder-only de 10 capas y anchura 256, con tokenizador BPE byte-level propio de 8.192 tokens y una ventana de contexto de solo 1.024 tokens. Es un artefacto de investigación experimental, no un asistente conversacional ni un modelo afinado por instrucciones.
 
-El modelo se entrenó durante 15.000 pasos sobre un piloto bilingüe (inglés y francés) de ciencia abierta, el corpus PleIAs/French-Science-Commons, con 31.417 registros retenidos y 491,52M de posiciones de token. Todo el cómputo se realizó en una única GPU RTX 4060 Laptop de 8 GB en aproximadamente 2,5 horas de GPU, lo que lo convierte en un ejemplo de entrenamiento de bajo presupuesto y reproducibilidad extrema.
+El modelo se entrenó durante 15.000 pasos sobre un piloto bilingüe (inglés y francés) de texto científico abierto, concretamente el corpus `PleIAs/French-Science-Commons` (31.417 registros retenidos, 491,52M posiciones de token). El entrenamiento completo consumió aproximadamente 2,5 horas de GPU en una única RTX 4060 Laptop de 8 GB, con precisión mixta bfloat16. La pérdida final de entrenamiento fue 2,29647 y la de validación 2,33488.
 
-Su relevancia actual es metodológica más que de rendimiento: documenta de forma trazable el proceso completo (curva de pérdida, semilla, revisión del Hub, SHA-256 de los pesos) y sirve como línea base a pequeña escala para estudiar escalado, tokenización y comportamiento bilingüe en modelos por debajo de los 10M de parámetros. Los resultados en tareas de opción múltiple están cerca del azar, tal y como el propio autor reconoce.
+Su relevancia es metodológica más que práctica: sirve como ancestro entrenado del modelo de 25M de la misma familia y como línea base a pequeña escala para estudiar dinámicas de entrenamiento, tokenización y evaluación en modelos por debajo de los 10M de parámetros. Los resultados en tareas de opción múltiple están cerca del azar, algo esperable en este tamaño y presupuesto de cómputo. La licencia es MIT para pesos y código, aunque el corpus de origen mezcla registros CC0, CC-BY-4.0 y Licence-Ouverte-2.0 con comprobaciones de derechos y privacidad no resueltas.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer decoder-only, 10 capas, anchura 256, 4 cabezas de consulta / 2 de clave-valor, SwiGLU 768, puerta de atención por cabeza |
-| Parámetros totales | 9.978.368 |
-| Parámetros activos | No aplica (no es MoE) |
+| Parametros totales | 9.978.368 |
+| Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | 1.024 tokens |
-| Tipos de cuantización | No se publica ninguna versión cuantizada; los pesos se distribuyen en float32 |
+| Tipos de cuantizacion | float32 (pesos publicados), bfloat16 (copia en `variants/bf16/`), receta int8 para CPU en la sección de inferencia local |
 | Idiomas soportados | Inglés y francés |
-| Licencia | MIT (pesos, código y Data Information); los registros fuente conservan sus propios términos |
+| Licencia | MIT (pesos, código y Data Information); los registros del corpus conservan sus propios términos |
 | Formato de pesos | safetensors (`model.safetensors`, float32) |
-| Tokenizador | BPE byte-level propio, 8.192 tokens |
+| Tokenizador | BPE byte-level propio del proyecto, 8.192 tokens |
 | Precisión de entrenamiento | bfloat16 con precisión mixta |
 | Optimizador / semilla | AdamW; semilla 1234 |
-| Pérdida final train / validación | 2,29647 / 2,33488 |
 | Cómputo de entrenamiento | Una RTX 4060 Laptop (8 GB), ~2,5 horas de GPU; energía no medida |
+| Pérdida final train / validación | 2,29647 / 2,33488 |
 | Revisión del Hub descrita | `9818b706a2a2467efb22848967a5842871f7422c` (SHA-256 de pesos `ef6967c4…`) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder-only de 10 capas con anchura 256, cuatro cabezas de consulta y dos de clave-valor (atención agrupada), FFN SwiGLU de dimensión 768 y una puerta de atención por cabeza (*head-wise attention gate*), una innovación que modula la salida de cada cabeza antes de agregarla. El tokenizador es un BPE byte-level propio de 8.192 tokens, diseñado específicamente para el proyecto y no heredado de otro modelo. La ventana de contexto es de 1.024 tokens.
+La arquitectura es un transformer decoder-only compacto: 10 capas, dimensión de modelo 256, 4 cabezas de consulta y 2 de clave-valor (atención con grupos de consulta), capa SwiGLU de 768 unidades y una puerta de atención por cabeza. El tokenizador es un BPE byte-level propio del proyecto con vocabulario de 8.192 tokens, lo que reduce el tamaño del embedding a costa de secuencias más largas en tokens. La ventana de contexto es de 1.024 tokens.
 
-El entrenamiento se realizó desde cero durante 15.000 pasos sobre el subconjunto `french_open_science` de PleIAs/French-Science-Commons, con 31.417 registros retenidos y 491,52M de posiciones de token, en precisión mixta bfloat16 y con AdamW (semilla 1234). No se aplicaron fases de RLHF, DPO ni ajuste por instrucciones: es un modelo base puro. La pérdida final de validación (2,33488) y la curva de entrenamiento publicada documentan un run completo, y el autor ofrece trazabilidad mediante revisión del Hub y hash de los pesos. No se documentan técnicas de decodificación especulativa ni atención lineal.
+El entrenamiento se realizó desde cero durante 15.000 pasos con AdamW y semilla 1234, en precisión mixta bfloat16, sobre el subconjunto `french_open_science` de `PleIAs/French-Science-Commons`: 31.417 registros retenidos y 491,52M posiciones de token. No hay información sobre RLHF, DPO ni ningún otro ajuste posterior; el modelo es estrictamente base. La model card no documenta innovaciones técnicas destacables como decodificación especulativa o atención lineal; la única particularidad reseñable es la puerta de atención por cabeza y el uso de atención con grupos de consulta en un modelo de este tamaño.
 
 ## Capacidades
 
-- Generación de texto autoregresiva en inglés y francés, limitada a una ventana de 1.024 tokens.
-- Modelado de lenguaje base: continuación de texto, puntuación por verosimilitud y evaluación tipo cloze.
-- Capacidad bilingüe incipiente: ligeramente superior en francés que en inglés en las pruebas de opción múltiple (Belebele FR 0,319 frente a EN 0,296).
-- No soporta tool calling ni function calling.
-- No soporta agentes ni razonamiento multi-paso.
-- No dispone de modo thinking, visión, audio ni otras modalidades.
-- No está afinado para instrucciones ni para diálogo; no debe usarse como chatbot.
-- Capacidad de razonamiento y matemáticas prácticamente inexistente a este tamaño y presupuesto.
+- Generación de texto autoregresiva en inglés y francés, a partir de un prompt y sin formato de chat.
+- Modelo base sin ajuste por instrucciones: no sigue instrucciones de forma fiable ni mantiene diálogos coherentes.
+- Razonamiento de opción múltiple evaluado por log-verosimilitud (ARC-Easy, ARC-Challenge, HellaSwag, Belebele en inglés y francés, WinoGrande), con resultados cercanos al azar.
+- No dispone de soporte documentado de tool calling ni function calling.
+- No dispone de soporte documentado de agentes ni razonamiento multi-paso.
+- No dispone de modo thinking, visión, audio ni otras capacidades multimodales.
+- Capacidad multilingüe limitada a inglés y francés, con corpus de entrenamiento predominantemente científico.
 
 ## Casos de uso
 
-- Línea base de investigación en escalado: sirve para comparar curvas de pérdida y comportamiento de modelos de ~10M de parámetros frente al modelo de 25M de la misma familia, con un run completamente documentado y reproducible.
-- Estudio de tokenizadores de bajo recurso: al emplear un BPE byte-level propio de 8.192 tokens, permite analizar el impacto de decisiones de tokenización en corpus bilingües científicos.
-- Experimentos de arquitectura: la puerta de atención por cabeza y la atención agrupada (4/2 cabezas) pueden ablacionarse sobre este checkpoint para medir su efecto a pequeña escala.
-- Enseñanza y divulgación: su tamaño (0,1 GB de repo, ~10M de parámetros) y su entrenamiento en una GPU de portátil lo hacen idóneo para demostrar el ciclo completo de entrenamiento de un LM desde cero en un curso o taller.
-- Evaluación de metodologías de benchmark: el protocolo zero-shot por log-likelihood con elementos fijados y el evaluador propio permiten validar pipelines de evaluación antes de aplicarlos a modelos mayores.
-- Filtrado y puntuación de texto por verosimilitud: puede emplearse para asignar probabilidades a secuencias cortas en inglés o francés, por ejemplo para detectar texto anómalo o clasificar dominios dentro de corpus científicos.
-- Reproducibilidad y auditoría: la combinación de semilla, revisión del Hub y SHA-256 facilita replicar el entrenamiento y verificar la integridad de los pesos en estudios de trazabilidad.
+- Línea base de investigación en scaling laws: sirve para comparar curvas de pérdida y comportamiento a 10M de parámetros frente al modelo de 25M de la misma familia, con un registro de entrenamiento reproducible y pesos publicados.
+- Estudio de tokenizadores de bajo vocabulario: permite analizar el efecto de un BPE byte-level de 8.192 tokens en la longitud efectiva de secuencia y en la pérdida por token en corpus bilingües científicos.
+- Reproducción de pipelines de entrenamiento en hardware de consumo: el run completo cabe en una RTX 4060 Laptop de 8 GB en unas 2,5 horas, lo que lo hace útil como banco de pruebas de recetas de precisión mixta, optimizador y semillas.
+- Evaluación comparativa de arneses: al estar evaluado con plantillas de lm-evaluation-harness y cloze sobre conjuntos fijados por revisión, sirve para validar la implementación de evaluadores propios en tareas de opción múltiple.
+- Docencia y divulgación: un modelo de 10M parámetros con pesos en float32 (0,1 GB de repositorio) se puede inspeccionar, modificar y ejecutar en CPU con la receta int8 incluida, lo que facilita explicar el funcionamiento interno de un transformer.
+- Generación de texto exploratoria en francés científico: puede producir continuaciones de texto sobre dominio científico con coherencia local limitada, útil para estudiar sesgos de corpus y calidad de muestreo, no para producción.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor (evaluador SLM-Tavenel, zero-shot, opción múltiple por log-likelihood, elementos fijados; no verificados de forma independiente):
+Resultados declarados por el autor (evaluador SLM-Tavenel, zero-shot, opción múltiple por log-verosimilitud, no verificados de forma independiente):
 
-| Modelo | Parámetros | ARC-Easy | ARC-Challenge | HellaSwag | Belebele EN | Belebele FR | WinoGrande | Media seis tareas |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| SLM-Tavenel 1M | 1,18M | 0,280 | 0,196 | 0,259 | 0,264 | 0,266 | 0,493 | 0,293 |
-| SLM-Tavenel 10M | 9,98M | 0,306 | 0,184 | 0,275 | 0,296 | 0,319 | 0,511 | 0,315 |
+| Tarea | Conjunto | Métrica | Valor |
+|---|---|---|---|
+| Opción múltiple (0-shot, log-likelihood) | ARC-Easy (test) | accuracy | 0,306 |
+| Opción múltiple (0-shot, log-likelihood) | ARC-Challenge (test) | accuracy | 0,184 |
+| Opción múltiple (0-shot, log-likelihood) | HellaSwag (validation) | accuracy | 0,275 |
+| Opción múltiple (0-shot, log-likelihood) | Belebele inglés (test) | accuracy | 0,296 |
+| Opción múltiple (0-shot, log-likelihood) | Belebele francés (test) | accuracy | 0,319 |
+| Opción múltiple (0-shot, log-likelihood) | WinoGrande XL (validation) | accuracy | 0,511 |
 
-El propio autor señala que el modelo está cerca del azar en las seis tareas, coherente con su tamaño y presupuesto de entrenamiento. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks en la información disponible.
+El autor indica explícitamente que los resultados están cerca del azar para este tamaño y presupuesto, y que el valor del checkpoint es servir de ancestro del modelo de 25M y de línea base. No se han publicado resultados de MMLU, HumanEval ni GSM8K en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: menos de 1 GB en float32 (unos 40 MB de pesos más estados de atención y caché KV para 1.024 tokens); en la práctica cabe en cualquier GPU consumer e incluso en CPU.
-- GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM; una RTX 4060, RTX 3060 o incluso una iGPU son suficientes. Para entrenamiento, el autor usó una RTX 4060 Laptop de 8 GB.
-- Cabe en GPU consumer: sí, en todas las GPU modernas, incluidas las de gama baja y portátiles.
-- Opciones de despliegue: transformers (librería nativa, requiere `trust_remote_code` por el código personalizado), llama.cpp y Ollama tras conversión a GGUF (no se publica GGUF oficial), y vLLM o TGI para servir en lote si se convierte el checkpoint.
-- Latencia y throughput: no disponibles en la información proporcionada; a este tamaño se espera una latencia de milisegundos por token en GPU consumer, pero no hay mediciones publicadas.
-- Almacenamiento: el repositorio ocupa 0,1 GB.
+- VRAM estimada para inferencia: inferior a 1 GB en float32 (unos 40 MB de pesos más activaciones y caché KV para 1.024 tokens); prácticamente despreciable en bfloat16 e int8.
+- GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM; el propio entrenamiento se hizo en una RTX 4060 Laptop de 8 GB, por lo que tarjetas como RTX 3060, RTX 4060, T4 o superiores son más que suficientes.
+- Cabe en cualquier GPU de consumo, incluidas integradas modernas, y en CPU con la receta int8 documentada por el autor.
+- Opciones de despliegue: transformers (librería declarada, con `custom_code`), inferencia local en CPU según la receta del repositorio; no hay confirmación de soporte para vLLM, llama.cpp, Ollama o TGI en la información disponible.
+- Latencia y throughput: no disponibles. Por el tamaño, la latencia debería ser de milisegundos por token en GPU moderna, pero no se aportan mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Media seis tareas | Licencia | Disponibilidad |
-|---|---:|---:|---:|---|---|
-| SLM-Tavenel 10M | 9,98M | 1.024 | 0,315 | MIT | Hugging Face (athenista/slm-tavenel-10m) |
-| SLM-Tavenel 1M | 1,18M | No disponible | 0,293 | MIT (misma familia) | Hugging Face (familia SLM-Tavenel) |
-| SLM-Tavenel 25M | No disponible | No disponible | No disponible | MIT (misma familia) | Hugging Face (familia SLM-Tavenel) |
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Resultados publicados |
+|---|---|---|---|---|---|
+| SLM-Tavenel 10M | 9.978.368 | 1.024 | en, fr | MIT | ARC-Easy 0,306; HellaSwag 0,275; WinoGrande 0,511 |
+| Modelo de 25M de la familia SLM-Tavenel | 25M (según la model card) | no disponible | en, fr (presumible) | MIT (presumible) | no disponible en esta ficha |
+| Alternativas de ~10M parámetros de la literatura | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de otros modelos comparables de ~10M de parámetros en la información proporcionada; la comparación se limita a los miembros de la propia familia SLM-Tavenel.
+No se dispone de datos verificables de modelos comparables de la misma categoría en la información proporcionada; la única referencia directa es el modelo de 25M de la propia familia, cuyos detalles no se incluyen en esta ficha.
 
 ## Limitaciones y advertencias
 
-- Rendimiento cercano al azar en las seis tareas de opción múltiple evaluadas; no es adecuado para tareas que requieran razonamiento, conocimiento factual o matemáticas.
-- No está afinado para instrucciones ni diálogo: genera continuaciones de texto y no responde a preguntas ni sigue instrucciones de forma fiable.
-- Ventana de contexto muy corta (1.024 tokens), insuficiente para documentos largos o conversaciones multi-turno.
-- Riesgo elevado de alucinación y de generar texto incoherente o repetitivo, especialmente fuera de los dominios del corpus de entrenamiento.
-- Sesgos potenciales derivados del corpus fuente (French-Science-Commons), de temática científica y en inglés y francés; no se documentan evaluaciones de sesgo.
-- Cobertura lingüística limitada a inglés y francés; no se garantiza un comportamiento correcto en otros idiomas.
-- La licencia MIT cubre pesos, código y Data Information, pero los registros fuente conservan sus propios términos (CC0, CC-BY-4.0 y Licence-Ouverte-2.0); el autor advierte de que las comprobaciones de derechos y privacidad no están resueltas y que esto no constituye una certificación OSI ni una limpieza de derechos.
-- Etiquetado explícitamente como artefacto de investigación experimental: no recomendado para producción sin validación adicional.
-- Los benchmarks son declarados por el autor y no han sido verificados de forma independiente.
+- Modelo base sin ajuste por instrucciones: no debe usarse como asistente conversacional ni esperar que siga instrucciones.
+- Rendimiento cercano al azar en tareas de razonamiento y sentido común (ARC-Challenge 0,184, HellaSwag 0,275), lo que refleja la escala y el presupuesto de entrenamiento, no una capacidad útil.
+- Riesgo alto de alucinación y de texto incoherente más allá de unas pocas frases; no apto para producción.
+- Ventana de contexto de solo 1.024 tokens, insuficiente para documentos largos o conversaciones multi-turno.
+- Cobertura lingüística limitada a inglés y francés, con sesgo hacia el dominio científico por el corpus de entrenamiento.
+- Sesgos desconocidos y no auditados; el corpus mezcla registros con licencias CC0, CC-BY-4.0 y Licence-Ouverte-2.0, y las comprobaciones de derechos y privacidad están declaradas como no resueltas.
+- La licencia MIT cubre pesos y código, pero no acredita la limpieza de derechos del corpus de origen; el autor lo indica expresamente y no constituye una certificación OSI ni una depuración de derechos.
+- Los benchmarks son declarados por el autor, no verificados de forma independiente (`verified: false`), y usan un evaluador propio.
+- No hay documentación de tool calling, agentes ni despliegue en servidores de inferencia de alto rendimiento.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/athenista/slm-tavenel-10m
-- Registro de entrenamiento y benchmarks (EXP-0009): https://huggingface.co/athenista/slm-tavenel-10m/tree/main/training_record
-- Dataset de entrenamiento: https://huggingface.co/datasets/PleIAs/French-Science-Commons
-- Curva de entrenamiento (imagen): https://huggingface.co/athenista/slm-tavenel-10m/blob/main/training-curve.png
-- Curva de entrenamiento (SVG): https://huggingface.co/athenista/slm-tavenel-10m/blob/main/training-curve.svg
+- Registro de entrenamiento y benchmarks: https://huggingface.co/athenista/slm-tavenel-10m/tree/main/training_record
+- Repositorio del proyecto SLM-Tavenel: https://github.com/thekester/slm-tavenel
+- Catálogo de modelos publicados: https://github.com/thekester/slm-tavenel#published-models
+- Archivo de investigación y reproducibilidad: https://github.com/thekester/slm-tavenel#research-and-reproducibility
+- Corpus de entrenamiento: https://huggingface.co/datasets/PleIAs/French-Science-Commons

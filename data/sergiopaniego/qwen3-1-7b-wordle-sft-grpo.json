@@ -50,31 +50,5 @@
   "renamed_to": "openenv/Qwen3-1.7B-Wordle-SFT-GRPO",
   "renamed_at": "2026-11-11T07:28:54.463Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "sergiopaniego/qwen3-1.7b-wordle-grpo · Hugging Face",
-      "url": "https://huggingface.co/sergiopaniego/qwen3-1.7b-wordle-grpo",
-      "snippet": "This model is a fine-tuned version of Qwen/Qwen3-1.7B. It has been trained using TRL."
-    },
-    {
-      "title": "sergiopaniego/wordle-grpo-Qwen3-1.7B · Hugging Face",
-      "url": "https://huggingface.co/sergiopaniego/wordle-grpo-Qwen3-1.7B",
-      "snippet": "This model is a fine-tuned version of Qwen/Qwen3-1.7B. It has been trained using TRL. This model was trained with GRPO, a method introduced in DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models. TRL: 0.28.0.dev0 Transformers: 4.57.6 Pytorch: 2.9.0+cu126 Datasets: 4.0."
-    },
-    {
-      "title": "Run Wordle-grpo-Qwen3-1.7B API (Easy Deployment & Flat-Rate Pricing)",
-      "url": "https://featherless.ai/models/sergiopaniego/wordle-grpo-Qwen3-1.7B",
-      "snippet": "Mathematical Problem Solving: Given its training methodology derived from DeepSeekMath, this model is likely optimized for mathematical reasoning and related challenges. Qwen3-1.7B Foundation: Built upon the Qwen3-1.7B architecture, it inherits the general language understanding and generation capabilities of its base model."
-    },
-    {
-      "title": "Run Qwen3-1.7B-wordle-grpo API (Easy Deployment & Flat-Rate Pricing)",
-      "url": "https://featherless.ai/models/sergiopaniego/qwen3-1.7b-wordle-grpo",
-      "snippet": "The sergiopaniego/qwen3-1.7b-wordle-grpo model is a fine-tuned version of the Qwen3-1.7B architecture, featuring 1.7 billion parameters and a 32768-token context length."
-    },
-    {
-      "title": "sergiopaniego/wordle-grpo-Qwen3-1.7B - Fast, Reliable, and Scalable ...",
-      "url": "https://friendli.ai/models/sergiopaniego/wordle-grpo-Qwen3-1.7B",
-      "snippet": "Request reserved instances Model provider sergiopaniego Model tree Base Qwen/Qwen3-1.7B Fine-tuned this model Modalities Input Text Output Text Pricing Dedicated Endpoints View details Supported Functionality Model APIs Dedicated Endpoints Container More information Model card sergiopaniego"
-    }
-  ]
+  "sources": []
 }

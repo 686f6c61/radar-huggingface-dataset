@@ -2,100 +2,116 @@
 
 ## Resumen
 
-Lite-Beam 27B es una versión cuantizada extrema del modelo Qwen3.8-27B de Qwen, publicada por la empresa Tablinum en Hugging Face. No es un modelo base nuevo, sino un derivado cuantizado en formato GGUF para llama.cpp, disponible en dos variantes: IQ1_M (1-bit, 6,73 GB) e IQ2_S (2-bit, 9,26 GB). Su propuesta de valor es hacer que un modelo denso de 27B parámetros quepa en GPUs de consumo pequeñas, y compensar la pérdida de conocimiento que provoca una cuantización tan agresiva mediante un "engram" con puerta (gated engram): un mecanismo de recuperación aumentada (retrieval-augmented) que inyecta pasajes de referencia solo cuando responden exactamente a la pregunta.
+Lite-Beam 27B es una derivación cuantizada del modelo base Qwen/Qwen3.8-27B, publicada por el usuario tablinum en Hugging Face. No se trata de un modelo nuevo entrenado desde cero, sino de una reconstrucción de los pesos del Qwen3.8-27B mediante el método propietario Lite-Beam, que combina un conjunto de calibración, una matriz de importancia y un cuantizador propio para producir archivos GGUF de 1 y 2 bits. El objetivo declarado es hacer viable la inferencia de un modelo de aproximadamente 27.000 millones de parámetros en GPUs de consumo reducidas, con un tamaño de archivo de 6,73 GB (IQ1_M, 1 bit) o 9,26 GB (IQ2_S, 2 bits).
 
-La relevancia de esta ficha está en los resultados medidos: con el engram Tablinum-2, la variante 1-bit pasa de −14,0 a +43,0 en SimpleQA-verified (93 respuestas correctas frente a 7 incorrectas sobre 200) y de −14,5 a +13,5 en AA-Omniscience dev. El método Lite-Beam usa un conjunto de calibración, una matriz de importancia (imatrix) y un cuantizador propios, con layouts por tensor de ISTA-DASLab y Unsloth. La licencia es Apache-2.0, lo que permite uso comercial sin restricciones.
+La propuesta diferencial del autor no es solo la cuantización agresiva, sino el emparejamiento con un "engram" externo llamado Tablinum-2: un conjunto de pasajes recuperados que se inyectan en el prompt para compensar la pérdida de conocimiento factual provocada por la cuantización extrema. El autor publica métricas propias (SimpleQA, AA-Omniscience, GPQA Diamond) que muestran mejoras notables al usar el engram con el prompt de inyección `v1`, especialmente en la variante de 1 bit.
+
+La relevancia actual del modelo radica en su enfoque híbrido: cuantización extrema más recuperación aumentada como estrategia para reducir requisitos de hardware sin renunciar por completo a la precisión factual. La licencia es Apache-2.0 y los pesos se distribuyen exclusivamente en formato GGUF para llama.cpp.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivado de Qwen3.8-27B), con componentes DeltaNet según los maps de cuantización |
-| Parámetros totales | 26.895.998.464 (≈26,9B) |
-| Parámetros activos | no disponible (no consta que sea MoE; aparenta ser denso) |
-| Longitud de contexto | no disponible (las ejecuciones de benchmark usan un presupuesto de 32K tokens) |
-| Tipos de cuantización | IQ1_M (1,97 bpw) e IQ2_S (2,71 bpw), con maps mixtos por tensor (IQ3_S, IQ3_XXS, IQ2_XXS, IQ4_XS, F32/BF16 en gates DeltaNet) |
-| Idiomas soportados | Inglés (según model card; el modelo base Qwen3.8 probablemente soporta más, pero no consta aquí) |
+| Arquitectura | Transformer (derivada de Qwen3.8-27B; detalles de la arquitectura base no disponibles) |
+| Parámetros totales | 26.895.998.464 (≈26,9 mil millones, dato de safetensors) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible (se menciona un presupuesto de razonamiento de 32K en GPQA, no la ventana de contexto del modelo) |
+| Tipos de cuantización | IQ1_M (1 bit, 6,73 GB, 1,97 bpw) e IQ2_S (2 bits, 9,26 GB, 2,71 bpw) |
+| Idiomas soportados | inglés (`en` en la model card) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (para llama.cpp) |
+| Formato de pesos | GGUF (librería llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-Lite-Beam 27B parte de Qwen/Qwen3.8-27B, un modelo de lenguaje de ≈27B parámetros. La innovación central no está en el entrenamiento del modelo base sino en el proceso de cuantización: Tablinum emplea su propio conjunto de calibración y matriz de importancia (imatrix) —el método "Lite-Beam"— para decidir qué bits asignar a cada tensor. En IQ2_S, la atención se cuantiza a IQ3_S/IQ3_XXS, el FFN mayoritariamente a IQ2_XXS–IQ3_XXS, la salida a IQ4_XS y los embeddings de tokens a IQ2_S, manteniendo los gates DeltaNet en F32/BF16. Los layouts por tensor provienen de ISTA-DASLab (GSQ-RCO IQ2_S) y Unsloth (UD-IQ1_M).
+El modelo es una cuantización del Qwen3.8-27B, no un entrenamiento nuevo. Los pesos se generan con el conjunto de calibración, la matriz de importancia y el cuantizador de Tablinum (método Lite-Beam), aplicados sobre disposiciones de tipo por tensor que el autor atribuye en la model card. Se ofrecen dos configuraciones: IQ1_M con 1,97 bits por peso y IQ2_S con 2,71 bits por peso. El autor reporta divergencia KL frente al BF16 original: 0,121 en tokens del asistente (chat) y 0,174 en wikitext para IQ2_S, y 0,418 y 0,4 respectivamente para IQ1_M.
 
-La fidelidad se mide con KLD frente al modelo BF16 solo sobre tokens del asistente (los tokens de sistema y usuario no entrenados falsearían la media): 0,121 para IQ2_S y 0,418 para IQ1_M en conversación; IQ1_M mantiene un 85,8% de coincidencia en el token top-1 con BF16. La segunda pieza clave es el engram Tablinum-2, un conjunto de tablas de recuperación por dominio (Software, Ley, STEM, Finanzas, Salud, Humanidades) con un prompt de inyección "v1" que instruye al modelo para usar un pasaje solo si responde exactamente a la pregunta, y en caso contrario apoyarse en su propio conocimiento o admitir que no lo sabe. No se ha publicado información sobre reentrenamiento, RLHF/DPO ni tokens del modelo base.
+La innovación principal no está en la arquitectura del transformer subyacente, sino en el emparejamiento con un engram externo (Tablinum-2) y en un prompt de inyección (`v1`) que instruye al modelo a usar un pasaje solo si responde exactamente a la pregunta formulada; en caso contrario, debe recurrir a su propio conocimiento o declarar que no lo sabe. El autor también menciona decodificación especulativa como etiqueta del repositorio, aunque no se detallan los parámetros de esa implementación. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO, ya que el modelo base no se documenta en la información proporcionada.
 
 ## Capacidades
 
-- Generación de texto conversacional (pipeline text-generation, etiqueta conversational).
-- Respuesta a preguntas de conocimiento cerrado (closed-book), muy mejorada con el engram Tablinum-2.
-- Razonamiento científico: 70,2% en GPQA Diamond (139/198) con esfuerzo bajo y presupuesto de 32K tokens (IQ2_S).
-- Respuesta fundamentada en documentos: el prompt v1 induce disciplina de citación, sustituyendo respuestas confiantes erróneas por respuestas fundamentadas.
-- Calibración de incertidumbre: la variante 1-bit prefiere declinar ("no lo sé") antes que adivinar (71 errores frente a 149 en AA closed-book).
-- No hay información publicada sobre tool calling, capacidades de agente, visión, audio ni modo de pensamiento explícito para esta versión cuantizada.
+- Generación de texto conversacional en inglés, con pipeline de text-generation.
+- Razonamiento multi-paso: se reportan resultados en GPQA Diamond con un presupuesto de razonamiento de 32K tokens y "low effort".
+- Conocimiento factual asistido por recuperación: el engram Tablinum-2 inyecta pasajes para mejorar respuestas en dominios como Software, Derecho, STEM, Finanzas, Salud y Humanidades.
+- Modo de respuesta calibrada: con el prompt `v1`, el modelo tiende a declinar responder cuando no dispone de fundamento, en lugar de alucinar (el autor reporta 71 respuestas incorrectas frente a 149 en modo closed-book para IQ1_M en AA).
+- Integración con API compatible con OpenAI mediante la herramienta terrabeam (`http://127.0.0.1:8080/v1`).
+- Soporte de memoria persistente opcional (`--memory long-term` en terrabeam).
+- Proxy hacia backends existentes (Ollama, LM Studio, vLLM) con formato Tablinum.
+- No se documentan capacidades de visión, audio ni tool calling nativo en la información disponible.
 
 ## Casos de uso
 
-- Asistentes locales en GPUs de consumo: con 6,27 GiB (IQ1_M) o 8,62 GiB (IQ2_S), el modelo cabe en GPUs de 8-12 GB, permitiendo chat privado sin nube.
-- QA de conocimiento con fuentes verificables: el engram permite responder preguntas factuales con un índice +43,0 en SimpleQA y solo 7 errores de 200, adecuado para sistemas donde una respuesta errónea cuesta tanto como una correcta.
-- Dominios verticales con corpus propio: las tablas por dominio (Software, Ley, Finanzas, Salud) ilustran cómo montar un engram específico; en Software, IQ1_M pasa de −23,5 a +47,1 con el engram activado.
-- Razonamiento científico offline: 70,2% en GPQA Diamond con 32K de presupuesto lo hace viable para asistentes de investigación en estaciones de trabajo modestas.
-- Despliegue en máquinas muy limitadas: la variante IQ1_M está explícitamente recomendada para "las máquinas más pequeñas", útil para edge y servidores caseros.
-- Sistemas anti-alucinación: la combinación de prompt v1 y gate por dominio reduce respuestas confiantes incorrectas, apropiado para atención al cliente o soporte técnico con base de conocimiento.
-- Experimentación de cuantización extrema: los manifests por tensor y las métricas KLD publicadas lo convierten en referencia para investigar límites de la cuantización a 1-2 bits.
+- Despliegue en GPU de consumo con VRAM limitada: la variante IQ1_M (6,73 GB) permite ejecutar un modelo de ~27B en tarjetas con 8 GB de VRAM, algo inviable con pesos en BF16. Adecuado para prototipado local y estaciones de trabajo modestas.
+- Asistentes de conocimiento domain-specific con recuperación: combinando el modelo con el engram Tablinum-2 y el prompt `v1`, se puede construir un asistente para dominios como Software o Derecho, donde el autor reporta mejoras de +44,1 y +21,2 puntos respectivamente en el índice de conocimiento.
+- Sustitución de backends en aplicaciones existentes: mediante `terrabeam proxy --upstream <URL> --format tablinum`, se puede envolver un servidor Ollama, LM Studio o vLLM ya en producción y añadir la capa de recuperación sin reescribir la aplicación.
+- Evaluación de estrategias de cuantización extrema: investigadores que estudien el impacto de la cuantización de 1-2 bits en la fidelidad factual pueden usar este modelo como caso de estudio con métricas publicadas (KLD, SimpleQA, AA-Omniscience).
+- Razonamiento científico con presupuesto acotado: para tareas tipo GPQA Diamond donde se acepta un presupuesto de 32K tokens y baja latencia de razonamiento, la variante IQ2_S reporta 70,2% (139/198).
+- Integración en entornos de desarrollo con Open WebUI, Claude Code o Cursor: la documentación de terrabeam incluye guías de configuración para estos clientes, lo que facilita su uso como backend local en flujos de trabajo de desarrollo.
+- Investigación sobre calibración y abstención: el comportamiento del modelo al declinar responder con el prompt `v1` lo hace útil para estudiar técnicas de abstención en modelos cuantizados.
 
 ## Benchmarks y rendimiento
 
-Índice de conocimiento = 100 × (correctas − incorrectas) / n. Los valores absolutos son autoevaluados a bajo esfuerzo de razonamiento y no comparables con números publicados de AA; los deltas pareados son el resultado relevante.
+Los datos provienen exclusivamente de la model card del autor y son autoevaluados con bajo esfuerzo de razonamiento; el propio autor advierte que los valores absolutos no son comparables con cifras publicadas de AA.
 
-| Benchmark | Build | Closed-book | + engram | Δ | Correctas / incorrectas |
-|---|---|---:|---:|---:|---:|
-| SimpleQA-verified (dev 200) | IQ1_M | −14,0 | +43,0 | +57,0 | 93 / 7 |
-| SimpleQA-verified (dev 200) | IQ2_S | −25,5 | +38,5 | +64,0 | 99 / 22 |
-| AA-Omniscience (test 400) | IQ1_M | −7,2 | −3,5 | +3,7 | 72 / 86 |
-| AA-Omniscience (test 400) | IQ2_S | −19,8 | −1,0 | +18,8 (p = 5·10⁻⁷) | 115 / 119 |
-| AA-Omniscience dev 200, gated v1 | IQ1_M | −14,5 | ≈ +13,5 (mejor por dominio ≈ +15) | +28 | no disponible |
-| GPQA Diamond (198) | IQ2_S | — | — | 70,2% (73,9% en las 198−10 que terminaron) | — |
+| Benchmark | Build | Closed-book | + engram (plain) | + engram (`v1`) |
+|---|---|---:|---:|---:|
+| SimpleQA-verified (dev 200) | IQ1_M 6,73 GB | −14,0 | +43,0 | no disponible |
+| SimpleQA-verified (dev 200) | IQ2_S 9,26 GB | −25,5 | +38,5 | no disponible |
+| AA-Omniscience (test 400) | IQ1_M | −7,2 | −3,5 | no disponible |
+| AA-Omniscience (test 400) | IQ2_S | −19,8 | −1,0 | no disponible |
+| AA dev 200 (todos los dominios) | IQ1_M | −14,5 | +9,0 | +13,5 |
+| AA dev 200 (todos los dominios) | IQ2_S | −32,5 | +1,5 | no disponible |
 
-Gate por dominio (IQ1_M, AA dev 200): Software −23,5 → +47,1; Ley 0,0 → +21,2 (v1); STEM −15,2 → +15,2 (solo con v1); Finanzas −12,1 → +6,1; Salud −36,4 → −3,0; Humanidades plano.
+Desglose por dominio para IQ1_M con `v1` (AA dev 200): Software +44,1 (20 mejor / 1 peor), Derecho +21,2 (10/3), STEM +15,2 (13/4), Finanzas +3,0 (8/3), Salud −6,1 (11/4), Humanidades +2,9 (3/3).
+
+| Benchmark | Build | Resultado |
+|---|---|---:|
+| GPQA Diamond (198), low effort, 32K budget | IQ2_S 9,26 GB | 139/198 (70,2%) |
+| GPQA Diamond, sobre las 188 que terminaron | IQ2_S 9,26 GB | 73,9% |
+
+Divergencia KL frente a BF16:
+
+| Build | KLD chat (tokens asistente) | KLD wikitext |
+|---|---:|---:|
+| IQ2_S | 0,121 | 0,174 |
+| IQ1_M | 0,418 | 0,4 |
 
 ## Requisitos de hardware
 
-- IQ1_M (1-bit): 6,27 GiB de ficha GGUF; cabe en GPUs de consumo de 8 GB (RTX 3060 Ti/4060 Ti de 8 GB, RTX 3070) dejando margen para el contexto y el engram.
-- IQ2_S (2-bit): 8,62 GiB; cabe en GPUs de 12 GB (RTX 3060 12 GB, RTX 4070) cómodamente, y probablemente en algunas de 10-11 GB.
-- Con descarga parcial en CPU (offload de capas a RAM), también funciona en equipos sin GPU dedicada mediante llama.cpp, a costa de latencia.
-- Despliegue: llama.cpp es la librería objetivo (formato GGUF); no hay menciones a vLLM, TGI ni Ollama en la model card, aunque GGUF es compatible con runtimes derivados de llama.cpp.
-- Latencia y throughput: no disponible. Las métricas KLD se midieron en CPU (IQ1_M) y GPU (IQ2_S), lo que confirma que ambos builds funcionan en ambos entornos.
-- VRAM para el engram: no disponible (depende del tamaño de las tablas de recuperación cargadas).
+- VRAM estimada: IQ1_M requiere aproximadamente 6,73 GB de pesos; IQ2_S, aproximadamente 9,26 GB. Hay que añadir el espacio para el contexto KV y el runtime de llama.cpp.
+- GPU recomendadas: no especificadas por el autor. Por tamaño, IQ1_M cabe en GPUs de consumo con 8 GB de VRAM; IQ2_S requiere al menos 12 GB para operar con holgura.
+- Cabe en GPU de consumo: sí, en ambos casos, según el tamaño de los archivos.
+- Opciones de despliegue: llama.cpp (librería nativa), terrabeam (instalador y servidor con API OpenAI-compatible), Ollama, LM Studio y vLLM mediante el modo proxy de terrabeam.
+- Latencia y throughput: no disponibles. El autor no publica métricas de velocidad ni de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Tamaño cuantizado | Contexto | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lite-Beam 27B (IQ1_M) | 26,9B | 6,27 GiB (1,97 bpw) | no disponible (32K en benchmarks) | Apache-2.0 | Engram gated; mejor calibración |
-| Lite-Beam 27B (IQ2_S) | 26,9B | 8,62 GiB (2,71 bpw) | no disponible (32K en benchmarks) | Apache-2.0 | Mejor razonamiento sin retrieval |
-| Qwen/Qwen3.8-27B (base, BF16) | 26,9B | ≈54 GB (BF16) | no disponible en la información proporcionada | no disponible | Referencia de fidelidad (KLD = 0) |
-| Lite-Beam 1.0 (501B-A23B) | 501B (23B activos) | no disponible | no disponible | no disponible | Variante MoE mucho mayor del mismo método |
+| Lite-Beam 27B (IQ1_M / IQ2_S) | ≈26,9B | no disponible | 1 y 2 bits (GGUF) | Apache-2.0 | Hugging Face, 1.445 descargas |
+| Qwen/Qwen3.8-27B (base) | ≈26,9B | no disponible | BF16 y otras | no disponible en la información | Hugging Face |
+| Lite-Beam 1.0 501B A23B IQS_XXS | 501B (23B activos, MoE) | no disponible | IQS_XXS | no disponible en la información | Hugging Face (mismo autor) |
 
-No hay datos comparativos directos frente a otros quants de terceros (por ejemplo Unsloth o bartowski sobre el mismo base) en la información proporcionada, más allá de reutilizar sus layouts por tensor.
+No se dispone de datos de benchmarks comparables con otros modelos de la misma categoría en la información proporcionada. La comparación con el modelo base Qwen3.8-27B se limita a la divergencia KL reportada.
 
 ## Limitaciones y advertencias
 
-- Pérdida de conocimiento en closed-book: la cuantización degrada el conocimiento propio del modelo (índices negativos sin engram); el sistema depende del engram para rendir en QA factual.
-- KLD alto en IQ1_M (0,418 en chat): solo 85,8% de coincidencia top-1 con BF16; se espera degradación en tareas no cubiertas por los benchmarks publicados.
-- Cobertura limitada del engram en STEM y Humanidades: la respuesta correcta solo aparece en el top-3 de pasajes para pocas preguntas; Tablinum está construyendo mejores fuentes.
-- Salud empeora ligeramente con el engram en IQ1_M (−3,0 con v1): no usar este build para consultas médicas sin validación adicional.
-- Métricas autoevaluadas a bajo esfuerzo de razonamiento: los valores absolutos no son comparables con benchmarks publicados de terceros.
-- Idioma: la model card declara solo inglés; el rendimiento en castellano no está documentado.
-- Sin datos sobre tool calling, agentes, visión ni longitudes de contexto máximas: verificar en el modelo base antes de diseñar pipelines que dependan de esas funciones.
-- Diez respuestas de GPQA alcanzaron el presupuesto de 32K tokens y contaron como incorrectas: vigilar el coste de tokens en tareas de razonamiento largo.
-- Licencia Apache-2.0: sin restricciones comerciales relevantes, pero hereda las limitaciones del modelo base Qwen3.8-27B que correspondan.
+- El modelo solo declara soporte de inglés; no se garantiza un comportamiento correcto en castellano u otros idiomas.
+- La cuantización de 1 bit (IQ1_M) presenta una divergencia KL de 0,418 en chat frente a BF16, lo que implica una degradación notable de la distribución de salida respecto al original.
+- El conocimiento factual del modelo sin engram es deficiente: el índice en AA-Omniscience es negativo en closed-book para ambas variantes (−7,2 y −19,8).
+- Las mejoras reportadas dependen del engram Tablinum-2 y del prompt `v1`; sin ellos, el rendimiento cae drásticamente. El propio autor reconoce que STEM y Humanidades siguen limitados por cobertura.
+- Los benchmarks son autoevaluados con bajo esfuerzo de razonamiento y el autor advierte que los valores absolutos no son comparables con cifras publicadas de AA-Omniscience.
+- Riesgo de alucinación: el autor indica que el engram ayuda principalmente a "reemplazar respuestas incorrectas con confianza por respuestas fundamentadas", lo que sugiere que el modelo base tiende a responder con seguridad cuando no sabe.
+- La licencia Apache-2.0 permite uso comercial, pero el modelo base Qwen3.8-27B tiene su propia licencia que no se detalla en la información disponible; conviene verificar la compatibilidad antes de un despliegue comercial.
+- No se documentan parámetros de contexto, tool calling ni otras capacidades que puedan ser críticas en producción.
+- El repositorio tiene 0 likes y 1.445 descargas en el momento de la consulta, lo que indica una adopción limitada y poca validación comunitaria.
 
 ## Enlaces
 
-- Modelo: https://huggingface.co/tablinum/Lite-Beam-27B
+- Modelo en Hugging Face: https://huggingface.co/tablinum/Lite-Beam-27B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Engram Tablinum-2 (dataset): https://huggingface.co/datasets/tablinum/tablinum-2
-- Lite-Beam 1.0 (501B-A23B): https://huggingface.co/tablinum/Lite-Beam-1.0-501B-A23B-IQS_XXS
-
-No se han encontrado en la información proporcionada enlaces a paper, blog técnico, repositorio de código ni demo adicional.
+- Dataset del engram Tablinum-2: https://huggingface.co/datasets/tablinum/tablinum-2
+- Lite-Beam 1.0 (501B): https://huggingface.co/tablinum/Lite-Beam-1.0-501B-A23B-IQS_XXS
+- Repositorio terrabeam: https://github.com/chadstthomas-svg/terrabeam
+- Guía de integración con clientes: https://github.com/chadstthomas-svg/terrabeam/blob/master/docs/harnesses.md
+- Instalador (Linux/macOS): https://raw.githubusercontent.com/chadstthomas-svg/terrabeam/master/install.sh
+- Instalador (Windows): https://raw.githubusercontent.com/chadstthomas-svg/terrabeam/master/install.ps1

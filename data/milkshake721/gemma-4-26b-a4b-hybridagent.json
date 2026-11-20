@@ -56,31 +56,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Gemma 4 — Google DeepMind",
-      "url": "https://deepmind.google/models/gemma/gemma-4/",
-      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
-    },
-    {
-      "title": "Gemma 4 26B A4B IT | Gemini Enterprise Agent Platform | Google Cloud ...",
-      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/google/gemma-4-26b-a4b-it",
-      "snippet": "Explore Gemma 4 26B A4B IT, an open model built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input and generating text output"
-    },
-    {
-      "title": "google/gemma-4-26B-A4B · Hugging Face",
-      "url": "https://huggingface.co/google/gemma-4-26B-A4B",
-      "snippet": "Transparency and Accountability This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
-    },
-    {
-      "title": "Gemma Model Family - Gemma Documentation",
-      "url": "https://gemma.ai/models/",
-      "snippet": "The 26B A4B and 31B models accept video as individual frames — that is, as images — but do not process audio. Run one now or read the Gemma 4 model card for the full technical detail. Earlier generations Still supported, and still the right choice when a smaller or text-only model is enough. Gemma 3n The on-device member of the Gemma 3 ..."
-    },
-    {
-      "title": "google/gemma-4-26B-A4B-it · Hugging Face",
-      "url": "https://huggingface.co/google/gemma-4-26B-A4B-it",
-      "snippet": "Models Overview Gemma 4 models are designed to deliver frontier-level performance at each size, targeting deployment scenarios from mobile and edge devices (E2B, E4B) to consumer GPUs and workstations (12B, 26B A4B, 31B). They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding."
-    }
-  ]
+  "sources": []
 }

@@ -52,31 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "reaperdoesntknow/Disctil-Qwen3-1.7B · Hugging Face",
-      "url": "https://huggingface.co/reaperdoesntknow/Disctil-Qwen3-1.7B",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "reaperdoesntknow/Disctil-Qwen3-1.7B at main - Hugging Face",
-      "url": "https://huggingface.co/reaperdoesntknow/Disctil-Qwen3-1.7B/tree/main",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Disctil Qwen3 1.7B — AI Model | Antbase",
-      "url": "https://antbase.ai/models/disctil-qwen3-1-7b",
-      "snippet": "Overview Disctil Qwen3 1.7B is a efficient model from Featherless with a 33K context window. Available through ANT&#x27;s unified API."
-    },
-    {
-      "title": "reaperdoesntknow/Disctil-Qwen3-1.7B - Fast, Reliable, and Scalable ...",
-      "url": "https://friendli.ai/models/reaperdoesntknow/Disctil-Qwen3-1.7B",
-      "snippet": "Run reaperdoesntknow/Disctil-Qwen3-1.7B with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8 ..."
-    },
-    {
-      "title": "DiStil Qwen3 1.7B Uncensored — AI Model | Antbase",
-      "url": "https://antbase.ai/models/distil-qwen3-1-7b-uncensored",
-      "snippet": "Overview DiStil Qwen3 1.7B Uncensored is a efficient model from Featherless with a 33K context window. Available through ANT&#x27;s unified API."
-    }
-  ]
+  "sources": []
 }

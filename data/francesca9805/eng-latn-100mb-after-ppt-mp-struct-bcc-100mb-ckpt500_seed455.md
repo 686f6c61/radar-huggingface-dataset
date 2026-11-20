@@ -2,102 +2,96 @@
 
 ## Resumen
 
-`francesca9805/eng-latn-100mb-after-ppt-mp-struct-bcc-100mb-ckpt500_seed455` es un checkpoint de generación de texto de 124.770.816 parámetros publicado en Hugging Face por el usuario `francesca9805`. Se trata de un ajuste fino mediante SFT (supervised fine-tuning) con TRL 0.23.0 sobre el modelo `francesca9805/eng-latn-100mb-ppt-mp-struct-bcc-100mb_seed455`, que a su vez es otro checkpoint de la misma familia. La etiqueta `gpt2` del repositorio indica una arquitectura transformer decoder-only de tipo GPT-2, coherente con el recuento de parámetros (la clase GPT-2 small ronda los 124 M).
+El modelo `francesca9805/eng-latn-100mb-after-ppt-mp-struct-bcc-100mb-ckpt500_seed455` es un ajuste fino (SFT) del checkpoint `francesca9805/eng-latn-100mb-ppt-mp-struct-bcc-100mb_seed455`, ambos publicados por el usuario francesca9805. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 124.770.816 parametros totales (aproximadamente 124,8 millones), entrenado mediante Supervised Fine-Tuning con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.11.0. El nombre del identificador sugiere un experimento de tokenizacion y estructura de datos sobre un corpus de 100 MB en ingles (eng-latn), con checkpoint en el paso 500 y semilla 455.
 
-El nombre del modelo sugiere un artefacto de investigación más que un modelo de producción: `eng-latn` apunta a un corpus en inglés en escritura latina, `100mb` a un volumen de datos de entrenamiento, `ckpt500` a un checkpoint intermedio (posiblemente el paso 500) y `seed455` a una semilla concreta. El run de Weights & Biases asociado pertenece al proyecto `new-tokenizers` de la Universidad de Groningen (usuario `f-padovani`), lo que refuerza la hipótesis de que forma parte de un experimento sobre tokenizadores y no de un lanzamiento comercial.
+El modelo no esta pensado como un producto de proposito general ni como un lanzamiento comercial: por su tamano, su nomenclatura interna y la ausencia de documentacion tecnica detallada, se trata de un artefacto de investigacion, probablemente parte de un estudio academico sobre tokenizadores y datasets (el run de Weights & Biases cuelga del proyecto "new-tokenizers" de la Universidad de Groningen). Su relevancia actual es limitada fuera de ese contexto experimental, pero resulta util como referencia para reproducir pipelines de SFT con TRL sobre arquitecturas pequenas.
 
-Su relevancia es limitada y muy específica: sirve como pieza reproducible en experimentos de investigación, como caso de prueba para pipelines de inferencia (el repo está marcado como `endpoints_compatible` y `text-generation-inference`) y como punto de partida para fine-tuning posterior. No hay model card sustantiva, ni licencia declarada, ni resultados de evaluación publicados, por lo que no debe evaluarse como un modelo listo para producción.
+La model card es minima: no declara licencia efectiva, no especifica idiomas soportados, no documenta el dataset de entrenamiento ni publica resultados de evaluacion. El repositorio ocupa 22,5 GB, un tamano desproporcionado para 124,8 millones de parametros, lo que sugiere que contiene multiples checkpoints, estados del optimizador u otros artefactos de entrenamiento ademas de los pesos finales.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only tipo GPT-2 (según etiqueta `gpt2` del repositorio) |
-| Parámetros totales | 124.770.816 (~124,8 M) |
-| Parámetros activos | No aplica (modelo denso, no es MoE) |
-| Longitud de contexto | No disponible en la información proporcionada |
-| Tipos de cuantización | No se publican versiones cuantizadas; pesos en `safetensors` en su precisión original. Conversión a GGUF/AWQ/GPTQ no disponible |
-| Idiomas soportados | No declarados en los metadatos; el identificador `eng-latn` sugiere entrenamiento sobre texto en inglés con escritura latina |
-| Licencia | No disponible (la model card incluye un campo `licence: license` sin contenido; los metadatos de Hugging Face no la especifican) |
-| Formato de pesos | `safetensors` |
-| Modelo base | `francesca9805/eng-latn-100mb-ppt-mp-struct-bcc-100mb_seed455` |
-| Tamaño del repositorio | 3,5 GB |
-| Librería | `transformers` (4.56.2 en el entrenamiento) |
-| Pipeline declarado | `text-generation` |
-| Fecha de creación | 2026-10-20 |
-| Última actualización | 2026-10-20 |
+| Arquitectura | GPT-2 (transformer decoder-only), segun el tag `gpt2` |
+| Parametros totales | 124.770.816 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; cuantizacion no documentada) |
+| Idiomas soportados | no disponible (el identificador sugiere ingles, `eng-latn`, pero no esta confirmado en la model card) |
+| Licencia | no disponible (la model card incluye un campo `licence: license` sin contenido) |
+| Formato de pesos | safetensors |
+| Libreria | transformers |
+| Pipeline | text-generation |
+| Modelo base | francesca9805/eng-latn-100mb-ppt-mp-struct-bcc-100mb_seed455 |
+| Metodo de entrenamiento | SFT con TRL 0.23.0 |
+| Framework | Transformers 4.56.2, PyTorch 2.11.0, Datasets 4.8.4, Tokenizers 0.22.1 |
+| Tamano del repositorio | 22,5 GB |
+| Descargas | 1530 |
+| Likes | 1 |
+| Creado | 2026-10-20 |
+| Actualizado | 2026-11-03 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder-only de la familia GPT-2, según la etiqueta `gpt2` incluida en los metadatos del repositorio y el recuento de 124,77 M de parámetros, que coincide con el tamaño de GPT-2 small. No se especifican en la información disponible el número de capas, la dimensión oculta, el número de cabezas de atención, el vocabulario del tokenizador ni la longitud de contexto efectiva. Tampoco se documenta si se aplicaron variantes como atención lineal, decodificación especulativa o modos de razonamiento extendido; por el perfil del checkpoint, es razonable asumir una configuración GPT-2 estándar, pero esto no está confirmado en la model card.
+La arquitectura es GPT-2, un transformer decoder-only con atencion causal completa. Con 124.770.816 parametros, se situa en la clase de los GPT-2 small/medium (el GPT-2 base original tiene 124 millones de parametros), lo que implica una profundidad y un ancho de capas modestos y una ventana de contexto tipicamente corta (el GPT-2 original usa 1024 tokens, aunque este valor no se confirma en la informacion disponible). El tag `gpt2` en Hugging Face es la unica evidencia explicita de la arquitectura.
 
-El entrenamiento consistió en un ajuste fino supervisado (SFT) con TRL 0.23.0, sobre PyTorch 2.11.0, Transformers 4.56.2, Datasets 4.8.4 y Tokenizers 0.22.1. El autor enlaza el run de Weights & Biases `5ae6amwe` del proyecto `new-tokenizers` (usuario `f-padovani-university-of-groningen`), que es la única fuente de trazabilidad del proceso. No se indica el volumen de tokens de SFT, la composición del dataset, si hubo fases de RLHF/DPO posteriores ni qué hiperparámetros se emplearon. El sufijo `ckpt500` del nombre sugiere que se trata de un checkpoint intermedio (paso 500) y no necesariamente de un modelo convergido; el sufijo `seed455` indica una única semilla, sin evidencia de repeticiones que permitan estimar varianza.
+El entrenamiento se realizo mediante Supervised Fine-Tuning con TRL sobre el checkpoint base del mismo autor. No se documentan ni el volumen de tokens de entrenamiento, ni la composicion del dataset, ni si hubo etapas de RLHF o DPO posteriores. El run asociado en Weights & Biases (`vzdotx5k`) pertenece al proyecto "new-tokenizers" de la Universidad de Groningen, lo que apunta a un experimento centrado en el efecto de distintos tokenizadores o estructuras de datos sobre el ajuste fino. El sufijo `ckpt500` indica que los pesos corresponden al paso 500 de entrenamiento, y `seed455` fija la semilla de reproducibilidad. No se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, atencion por ventanas, etc.).
 
 ## Capacidades
 
-- Generación de texto autoregresiva en inglés (presumiblemente, por el identificador `eng-latn`), con la calidad esperable de un modelo de ~125 M de parámetros.
-- Formato de conversación de un solo turno en el ejemplo de la model card: se pasa una lista de mensajes con `role: user` al pipeline de `transformers`. No se documenta la plantilla de chat exacta ni el token de fin de turno.
-- Compatibilidad con `text-generation-inference` y con endpoints de Hugging Face (`endpoints_compatible` en los tags).
-- Punto de partida para SFT adicional mediante TRL.
-- No hay evidencia de soporte de tool calling / function calling.
-- No hay evidencia de capacidades de agente, razonamiento multi-paso, visión, audio, ni modo de pensamiento explícito.
-- No hay evidencia de capacidades multilingües más allá del inglés; el resto de idiomas debe considerarse no soportado a efectos prácticos.
+- Generacion de texto autoregresiva basica, heredada de la arquitectura GPT-2.
+- Ajuste fino supervisado (SFT) sobre el checkpoint base, orientado presumiblemente a seguir instrucciones en formato conversacional (la model card muestra un ejemplo con `pipeline` y mensajes con rol `user`).
+- Soporte de tool calling / function calling: no disponible; no se documenta.
+- Soporte de agentes y razonamiento multi-paso: no disponible; no se documenta.
+- Capacidades multilingues: no disponibles; el identificador sugiere ingles, pero no hay confirmacion.
+- Capacidades especiales (vision, audio, thinking mode): no disponibles; el modelo es exclusivamente de texto.
+- Compatibilidad con text-generation-inference y endpoints, segun los tags de Hugging Face.
 
 ## Casos de uso
 
-- Reproducción de experimentos sobre tokenizadores: el checkpoint encaja en flujos de investigación comparativa de tokenizadores y volúmenes de datos (proyecto `new-tokenizers`), donde se necesita un modelo pequeño y barato de reentrenar con semillas fijas.
-- Pruebas de integración de pipelines de inferencia: útil para validar despliegues con `transformers`, TGI o endpoints compatibles antes de pasar a modelos mayores, gracias a su huella de memoria mínima.
-- Generación de texto de relleno en entornos de desarrollo: creación de respuestas sintéticas cortas para pruebas de UI, carga y paginación, sin coste de GPU relevante.
-- Ajuste fino adicional con SFT: al ser un checkpoint ya entrenado con TRL, sirve como inicialización para experimentos de alineación a pequeña escala con presupuesto reducido.
-- Docencia y formación: ejemplo manejable de ciclo completo (entrenamiento con TRL, publicación en Hugging Face, registro en W&B) para cursos de NLP.
-- Evaluación de técnicas de cuantización: con ~125 M de parámetros, permite medir degradación de perplejidad tras cuantizar a int8/int4 en hardware de consumo, siempre que se genere la versión GGUF (no publicada).
-- Baseline en ablaciones de datos: su nombre codifica corpus (`bcc-100mb`), estructura (`ppt-mp-struct`) y checkpoint, lo que lo hace útil como referencia controlada frente a otras variantes de la misma familia.
+- Reproduccion de experimentos de SFT: el modelo sirve como punto de comparacion para estudiar como distintos tokenizadores o estructuras de dataset afectan al ajuste fino de un GPT-2 pequeno, gracias a la semilla fija (`seed455`) y al checkpoint concreto (`ckpt500`).
+- Generacion de texto controlada en entornos de bajo recursos: con 124,8 millones de parametros, cabe en GPUs consumer modestas y permite prototipar pipelines de generacion sin infraestructura dedicada.
+- Baseline para evaluacion de tokenizadores: al formar parte del proyecto "new-tokenizers", puede usarse como referencia para medir perplexity o calidad de generacion entre variantes de tokenizacion sobre corpus en ingles.
+- Pruebas de integracion con TRL y Transformers: util para validar flujos de entrenamiento y despliegue con las versiones documentadas (TRL 0.23.0, Transformers 4.56.2, PyTorch 2.11.0).
+- Experimentos academicos de alineacion a pequena escala: sirve como sujeto de estudio para comparar SFT frente a otras tecnicas de ajuste en modelos de menos de 200 millones de parametros.
+- Docencia y formacion: adecuado para demostrar el ciclo completo de fine-tuning, desde el checkpoint base hasta la inferencia con `pipeline`, sin requerir hardware especializado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye MMLU, HumanEval, GSM8K, perplejidad ni ninguna otra métrica de evaluación, y la búsqueda web realizada no ha devuelto documentación técnica asociada al modelo (los resultados obtenidos corresponden a páginas de Google Translate y no guardan relación con este repositorio).
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Pesos en fp32: ~500 MB. En bf16/fp16: ~250 MB. En int8: ~125 MB. En int4: ~65 MB. Son estimaciones a partir del recuento real de 124.770.816 parámetros, sin incluir caché KV.
-- La memoria para caché KV no puede estimarse con precisión porque se desconoce la longitud de contexto y la configuración de capas/cabezas.
-- Cabe en cualquier GPU de consumo: RTX 3060 12 GB, RTX 4060 8 GB, GTX 1650 4 GB, e incluso en iGPU con memoria compartida. También es viable en CPU para inferencia interactiva.
-- GPU recomendadas para producción: ninguna en particular; para este tamaño, una T4 o L4 ya queda sobredimensionada. Para batch grande, cualquier A100/H100 desperdicia recursos.
-- Despliegue: `transformers` con `pipeline("text-generation")` (ejemplo oficial de la model card), Text Generation Inference (tag `text-generation-inference`), vLLM. Para llama.cpp u Ollama sería necesaria una conversión a GGUF que no está publicada en el repositorio.
-- Latencia y throughput: no disponibles. No hay mediciones publicadas de tokens por segundo ni de latencia por petición.
+- VRAM estimada para inferencia: en precision completa (fp32) los 124,8 millones de parametros ocupan aproximadamente 0,5 GB; en fp16/bf16, unos 0,25 GB; en cuantizacion de 8 bits, alrededor de 0,13 GB, y en 4 bits, unos 0,07 GB (estimaciones teoricas a partir del numero de parametros, no datos publicados por el autor).
+- GPU recomendadas: cualquier GPU consumer con al menos 2 GB de VRAM efectiva, incluidas GTX 1650, RTX 3060, RTX 4060 o superiores; tambien A100, H100 y L4 para despliegues por lotes.
+- Cabe en GPU consumer: si, con margem amplio; el cuello de botella sera la longitud de contexto y el tamano del lote, no los pesos.
+- Opciones de despliegue: transformers (`pipeline`), text-generation-inference (segun los tags), endpoints compatibles de Hugging Face; llama.cpp, Ollama y vLLM no estan confirmados como soportados para esta arquitectura concreta, aunque GPT-2 suele ser convertible a GGUF.
+- Latencia y throughput estimados: no disponibles; no se publican mediciones.
 
 ## Comparativa con modelos similares
 
-Los datos de la columna del modelo evaluado proceden de la información del repositorio; los de los modelos comparables proceden de su documentación pública y no de la búsqueda realizada para esta ficha.
-
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `francesca9805/eng-latn-100mb-...-ckpt500_seed455` | 124,77 M | No disponible | No disponible | Hugging Face, safetensors |
-| GPT-2 small | 124 M | 1024 tokens | MIT (según su publicación) | Ampliamente disponible, con versiones GGUF |
-| DistilGPT-2 | 82 M | 1024 tokens | MIT (según su publicación) | Ampliamente disponible |
-| SmolLM-135M | 135 M | 2048 tokens | Apache-2.0 (según su publicación) | Hugging Face, con cuantizaciones |
+| francesca9805/eng-latn-100mb-after-ppt-mp-struct-bcc-100mb-ckpt500_seed455 | 124,8 M | no disponible | no disponible | Hugging Face, 1530 descargas |
+| GPT-2 base (openai-community/gpt2) | 124 M | 1024 tokens | MIT | Hugging Face, ampliamente adoptado |
+| GPT-2 medium (openai-community/gpt2-medium) | 355 M | 1024 tokens | MIT | Hugging Face |
+| DistilGPT-2 (distilgpt2) | 82 M | 1024 tokens | Apache 2.0 | Hugging Face |
 
-Frente a estas alternativas, el modelo evaluado no aporta ventajas verificables: no declara licencia, no publica contexto ni evaluación, y su nombre indica un checkpoint intermedio de un experimento con una sola semilla. GPT-2 small, DistilGPT-2 o SmolLM-135M son opciones preferibles para cualquier uso real, aunque solo sea por trazabilidad legal y por disponibilidad de cuantizaciones.
+La comparativa se limita a modelos de la misma familia y escala, ya que no se dispone de resultados de rendimiento del modelo analizado. Frente a GPT-2 base, comparte el orden de magnitud en parametros pero carece de licencia clara, documentacion de contexto e idiomas, y de evaluaciones publicas; frente a DistilGPT-2, es algo mayor y presumiblemente mas costoso en inferencia, sin datos que permitan comparar calidad.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de licencia: no se especifica si se permite uso comercial, modificación o redistribución. En la práctica, esto bloquea su uso en producción hasta aclararlo con el autor.
-- Sin evaluación publicada: no hay métricas de calidad, sesgo, toxicidad ni robustez. Cualquier afirmación sobre su rendimiento sería especulativa.
-- Checkpoint probablemente intermedio (`ckpt500`): puede estar infraentrenado respecto al modelo base y presentar una quality inferior a la de un modelo convergido.
-- Una única semilla (`seed455`): no hay evidencia de estabilidad de resultados entre ejecuciones.
-- Longitud de contexto desconocida: no se puede dimensionar la ventana de conversación ni planificar estrategias de truncado o chunking.
-- Idiomas: el identificador apunta a inglés; es previsible un rendimiento muy degradado en castellano u otras lenguas, y no hay ningún dato que lo contradiga.
-- Riesgo elevado de alucinación y de incoherencia en cadenas largas, propio de un modelo de ~125 M sin ajuste por preferencias documentado.
-- Sin soporte documentado de tool calling, agentes ni razonamiento multi-paso; no debe emplearse en arquitecturas de agentes sin validación previa.
-- Plantilla de chat no documentada: el ejemplo oficial pasa mensajes con `role: user`, pero se desconoce el formato exacto, lo que puede producir degradación silenciosa si se usa otra convención.
-- Tamaño del repositorio de 3,5 GB para ~125 M de parámetros: contiene artefactos adicionales (posiblemente optimizer states o múltiples ficheros). Conviene revisar los ficheros antes de descargar en entornos con almacenamiento limitado.
-- Repositorio sin descargas ni likes y sin issues conocidos: no hay comunidad que haya validado el modelo.
+- Sesgos conocidos: no documentados; al entrenarse sobre un corpus en ingles de 100 MB, es probable que herede sesgos del dataset, pero no hay analisis publicado.
+- Riesgo de alucinacion: alto para un modelo de 124,8 millones de parametros sin evaluacion de fidelidad; la generacion puede producir texto plausible pero incorrecto.
+- Limitaciones de contexto e idioma: la longitud de contexto no esta confirmada (probablemente 1024 tokens si sigue la configuracion GPT-2 estandar); el soporte multilingue no esta documentado y el identificador sugiere uso exclusivo en ingles.
+- Restricciones de licencia: la licencia no esta disponible; no se debe asumir uso comercial permitido sin consultar al autor.
+- Caveat de produccion: es un checkpoint experimental de investigacion (paso 500, semilla fija), sin model card completa, sin evaluaciones y con un repositorio de 22,5 GB que probablemente incluye artefactos de entrenamiento; no se recomienda para despliegues en produccion sin validacion previa.
+- Ausencia de datos de entrenamiento: no se especifica el dataset, el volumen de tokens ni el proceso de curacion, lo que impide auditar el modelo.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/francesca9805/eng-latn-100mb-after-ppt-mp-struct-bcc-100mb-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/eng-latn-100mb-ppt-mp-struct-bcc-100mb_seed455
-- Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/5ae6amwe
-- Repositorio de TRL: https://github.com/huggingface/trl
-- Documentación de Text Generation Inference: no disponible en la información proporcionada
-- No se han encontrado en la búsqueda web otros enlaces relevantes (papers, blogs o demos) asociados a este modelo.
+- Run de Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/vzdotx5k
+- Repositorio TRL: https://github.com/huggingface/trl
+- Repositorio Transformers: https://github.com/huggingface/transformers

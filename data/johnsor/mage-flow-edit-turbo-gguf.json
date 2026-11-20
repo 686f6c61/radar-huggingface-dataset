@@ -43,31 +43,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "microsoft/Mage-Flow-Edit-Turbo · Hugging Face",
-      "url": "https://huggingface.co/microsoft/Mage-Flow-Edit-Turbo",
-      "snippet": "Full family. Base, RL-aligned, and 4-step Turbo variants for both generation and editing. Versatile editing. Mage-Flow-Edit supports semantic content editing, appearance transformation, image restoration, and structure-aware outputs within a unified image-and-text-conditioned model. See the report&#x27;s editing galleries. Interactive latency."
-    },
-    {
-      "title": "Jinstudio/Mage-Flow-Edit-Turbo · Hugging Face",
-      "url": "https://huggingface.co/Jinstudio/Mage-Flow-Edit-Turbo",
-      "snippet": "Mage-Flow An Efficient Native-Resolution Foundation Model for Image Generation and Editing Mage-Flow is a compact 4B-scale generative stack for efficient text-to-image generation and instruction-based image editing."
-    },
-    {
-      "title": "MageFlow Edit GGUF Pipeline - GitHub",
-      "url": "https://github.com/47thtechcorner/RayCodes_MageFlow_Edit_GGUF/blob/master/",
-      "snippet": "An enterprise-grade, high-performance instruction-based image editing pipeline powered by the Mage-Flow-Edit GGUF 4-step Turbo model (mageflow-edit-turbo-nvfp4.gguf, 2.37 GB) and Ollama (llama3.2:3b). This pipeline transforms reference images based on natural language editing instructions, such as applying golden-hour sunset lighting and autumn environment shifts with native-resolution fidelity."
-    },
-    {
-      "title": "Mage-Flow-Edit-Turbo: Text-to-Image model — overview, use cases ...",
-      "url": "https://www.aimodels.fyi/models/huggingFace/mage-flow-edit-turbo-microsoft",
-      "snippet": "Overview Mage-Flow-Edit-Turbo is a compact 4-billion-parameter image editing model built by microsoft that applies text-guided edits to images through a shared architecture designed for both text-to-image generation and instruction-based editing. The model operates using a two-component stack: Mage-VAE (a lightweight latent tokenizer using one-step diffusion with anchor-latent KL ..."
-    },
-    {
-      "title": "Microsoft Model: microsoft/Mage-Flow-Edit-Turbo — onlylabs",
-      "url": "https://www.onlylabs.fyi/signals/34513ad1-7ea6-4be5-ab98-123bad550ccf",
-      "snippet": "Together with native-resolution packing and a fused-kernel training infrastructure, this shared stack powers two model instantiations: Mage-Flow for text-to-image generation and Mage-Flow-Edit for instruction-based image editing. Each ships in Base, RL-aligned, and 4-step Turbo variants."
-    }
-  ]
+  "sources": []
 }

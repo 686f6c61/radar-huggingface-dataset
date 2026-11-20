@@ -56,8 +56,14 @@
   "benchmarks": [
     {
       "task": "typed decision (choice / noul / score)",
+      "dataset": "Decision Index 0.4.1 leaderboard (the maintainers' private tests)",
+      "metric": "Decision Index 0.4.1, Full score (leaderboard; ranked #1, tied)",
+      "value": 71.1
+    },
+    {
+      "task": "typed decision (choice / noul / score)",
       "dataset": "Decision Index 0.3 public suite (140,178 scored requests; the index averages 37 benchmarks)",
-      "metric": "Decision Index 0.3, public index (chance-corrected; self-reported, not yet on the leaderboard)",
+      "metric": "Decision Index 0.3, public index (chance-corrected)",
       "value": 71.68
     }
   ],

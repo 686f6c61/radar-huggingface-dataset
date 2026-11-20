@@ -2,88 +2,86 @@
 
 ## Resumen
 
-Confucius4-TTS es un sistema de síntesis de voz (text-to-speech, TTS) basado en modelos de lenguaje de gran tamaño (LLM), desarrollado por netease-youdao. Su objetivo principal es la síntesis de voz multilingüe y translingüística con clonación de voz en modo zero-shot, es decir, sin necesidad de entrenamiento adicional para imitar una voz nueva. El modelo combina un codificador de voz con un LLM para generar audio de alta calidad preservando la identidad del hablante a través de distintos idiomas.
+Confucius4-TTS es un sistema de síntesis de voz (text-to-speech) zero-shot, multilingüe y cross-lingual desarrollado por netease-youdao (NetEase Youdao). Se construye sobre una arquitectura de codificador de voz más modelo de lenguaje grande (LLM), lo que le permite generar habla de alta calidad preservando la identidad del hablante entre idiomas distintos. Su propuesta central es "una voz, cualquier idioma": clonar una voz a partir de un audio de referencia y sintetizar en cualquiera de los 14 idiomas soportados sin acento perceptible.
 
-El sistema soporta 14 idiomas (chino, inglés, japonés, coreano, alemán, francés, español, indonesio, italiano, tailandés, portugués, ruso, malayo y vietnamita) y permite transferencia de voz entre idiomas sin acento, así como transferencia de emociones. Su arquitectura se divide en dos módulos: Text2Semantic (T2S), que genera secuencias de tokens semánticos a partir de texto y condiciones del hablante, y Semantic2Acoustic (S2A), un modelo de flow-matching que convierte esos tokens en espectrogramas mel. El repositorio tiene un tamaño de 3,1 GB y se distribuye bajo licencia Apache 2.0.
+El modelo resuelve dos problemas clásicos en TTS: la dependencia de una transcripción de referencia para la clonación (aquí es "unconstrained", es decir, no requiere transcripción) y la degradación de la identidad vocal al cambiar de idioma. Con 3,1 GB de pesos en formato safetensors y licencia Apache 2.0, está pensado para despliegue e integración en producción sin restricciones comerciales.
 
-La relevancia actual de Confucius4-TTS radica en su capacidad para abordar la clonación de voz sin restricciones (sin transcripción de referencia) y su robustez en escenarios multilingües reales, lo que lo posiciona como una alternativa open source competitiva frente a sistemas propietarios de síntesis de voz.
+Es relevante ahora porque combina clonación zero-shot, transferencia emocional y cobertura de 14 idiomas en un único motor de código abierto, con pipeline de fine-tuning documentado (T2S y S2A) y disponibilidad en Hugging Face y ModelScope. La ficha se basa en la model card y los metadatos públicos; los detalles de entrenamiento y benchmarks no están publicados en la información disponible.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Codificador de voz + LLM (T2S) + flow-matching (S2A) |
-| Parametros totales | no disponible |
-| Parametros activos | no aplicable (no es MoE) |
+| Arquitectura | Codificador de voz + LLM (Text2Semantic + Semantic2Acoustic con flow-matching) |
+| Parámetros totales | no disponible |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | zh, en, ja, ko, de, fr, id, vi, th, es, pt, it, ru, ms (14 idiomas) |
+| Tipos de cuantización | no disponible |
+| Idiomas soportados | zh, en, ja, ko, de, fr, id, vi, th, es, pt, it, ru, ms |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (t2s_model.safetensors, s2a_model.pt) |
+| Formato de pesos | safetensors (t2s_model.safetensors); s2a_model.pt (PyTorch) |
 
 ## Arquitectura y entrenamiento
 
-Confucius4-TTS sigue una arquitectura de dos etapas. La primera, Text2Semantic (T2S), es un LLM que genera secuencias de tokens semánticos a partir del texto de entrada y de una condición del hablante. La segunda, Semantic2Acoustic (S2A), es un modelo de flow-matching que convierte los tokens semánticos en espectrogramas mel, que posteriormente se convierten en audio mediante un vocoder. El sistema utiliza dos codificadores externos: Wav2Vec2-BERT para la extracción de características semánticas y la condición del hablante, y CAMPPlus como codificador de estilo. Durante el entrenamiento de S2A, tanto el modelo T2S como los codificadores de hablante y estilo permanecen congelados; solo se entrena el modelo de flow-matching.
+Confucius4-TTS sigue una arquitectura en dos etapas sobre un LLM. La primera, Text2Semantic (T2S), genera secuencias de tokens semánticos a partir del texto y del condicionamiento del hablante; la segunda, Semantic2Acoustic (S2A), es un modelo de flow-matching que convierte esos tokens semánticos en espectrogramas mel. Para el condicionamiento del hablante y la extracción de características semánticas se apoya en Wav2Vec2-BERT (facebook/w2v-bert-2.0), y para el códec semántico utiliza la implementación MaskGCT de Amphion. También se referencia un codificador de hablante CAMPPlus (campplus_cn_common.bin) en el pipeline de preparación.
 
-El entrenamiento se divide en dos fases: primero se entrena T2S para predecir tokens semánticos, y después se entrena S2A para reconstruir el espectrograma a partir de dichos tokens. Los datos de entrenamiento se proporcionan en archivos TSV con cinco columnas: idioma, ruta del audio, texto normalizado, ruta de los tokens semánticos y, presumiblemente, la ruta del audio de referencia. No se especifica el número total de tokens de entrenamiento ni la composición detallada del dataset en la información disponible.
+El entrenamiento se organiza en torno a esos dos módulos, con datos en formato TSV que incluyen código de idioma, ruta del audio, texto normalizado, tokens semánticos preextraídos y rutas de audio de referencia. La model card no publica el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron etapas de RLHF o DPO. Las innovaciones destacadas por el autor son la clonación sin transcripción de referencia, la transferencia cross-lingual sin acento y la transferencia emocional, junto con una generalización robusta en escenarios multilingües reales.
 
 ## Capacidades
 
-- Síntesis de voz multilingüe en 14 idiomas: chino, inglés, japonés, coreano, alemán, francés, español, indonesio, italiano, tailandés, portugués, ruso, malayo y vietnamita.
-- Clonación de voz zero-shot: es posible imitar una voz a partir de un audio de referencia sin necesidad de transcripción del mismo ni entrenamiento adicional.
-- Transferencia de voz translingüística: la misma voz puede hablar en cualquiera de los 14 idiomas soportados sin acento perceptible.
-- Transferencia de emociones: el modelo no solo clona el timbre de la voz, sino también la emoción y el estilo expresivo del audio de referencia.
-- Generación de voz sin restricciones de texto: no requiere transcripción del audio de referencia, lo que simplifica el flujo de trabajo.
-- Robustez en escenarios multilingües reales: el modelo mantiene un rendimiento estable incluso cuando el hablante de referencia y el texto de salida están en idiomas distintos.
+- Síntesis de voz multilingüe en 14 idiomas: chino, inglés, japonés, coreano, alemán, francés, indonesio, vietnamita, tailandés, español, portugués, italiano, ruso y malayo.
+- Clonación de voz zero-shot a partir de un audio de referencia, sin necesidad de transcripción del mismo (unconstrained voice cloning).
+- Transferencia cross-lingual de voz: mantener la misma identidad vocal al cambiar de idioma, con salida sin acento según el autor.
+- Transferencia emocional: replicar el tono y la expresividad de la referencia, no solo el timbre.
+- Generación de habla natural y expresiva orientada a escenarios multilingües reales.
+- Fine-tuning documentado de los módulos T2S y S2A para adaptación a dominios o voces propias.
+- Interfaz de línea de comandos (`example.py`) y API de Python (`ConfuciusTTS.generate`).
+- No se documentan en la información disponible capacidades de tool calling, agentes, visión o audio de entrada más allá de la referencia de voz.
 
 ## Casos de uso
 
-- Localización de contenido audiovisual: doblaje de vídeos, series o películas manteniendo la voz del actor original en múltiples idiomas, sin necesidad de regrabar con actores locales. El modelo permite transferir la voz de un idioma a otro conservando la identidad y el tono.
-- Audiolibros multilingües: generación de versiones en varios idiomas de un mismo audiolibro con la misma voz narradora, reduciendo costes de producción y manteniendo coherencia de marca.
-- Asistentes de voz personalizados: creación de voces personalizadas para asistentes virtuales o chatbots que respondan en el idioma del usuario, manteniendo una identidad de voz consistente en todos los idiomas.
-- Accesibilidad y comunicación aumentativa: generación de voz para personas con discapacidad del habla, permitiendo que utilicen su propia voz (grabada previamente) en cualquier idioma, lo que facilita la comunicación en contextos internacionales.
-- Videojuegos y mundos virtuales: dotar de voz a personajes no jugables (NPC) con una voz consistente en las distintas versiones localizadas del juego, mejorando la inmersión sin duplicar el trabajo de doblaje.
-- Educación y e-learning: creación de contenido educativo multilingüe con la misma voz instructora, facilitando la producción de cursos en varios idiomas con una experiencia de usuario uniforme.
-- Marketing y publicidad: generación de anuncios o mensajes promocionales en distintos mercados con la misma voz de marca, manteniendo la identidad sonora de la empresa.
+- Doblaje y localización de contenido: clonar la voz de un actor o presentador una sola vez y generar la misma voz en los 14 idiomas soportados, reduciendo el coste frente a contratar voces por idioma.
+- Audiolibros y narración multilingüe: sintetizar un mismo título en varios idiomas conservando el timbre del narrador original, con control de expresividad mediante la referencia emocional.
+- Asistentes de voz y atención al cliente: generar respuestas habladas en el idioma del usuario manteniendo una voz de marca consistente; la clonación sin transcripción simplifica la incorporación de nuevas voces corporativas.
+- Accesibilidad y lectura de contenido: convertir artículos, documentación o correos en audio con una voz personal clonada del propio usuario a partir de una muestra corta.
+- E-learning y formación: producir cursos en varios idiomas con la voz del formador, preservando familiaridad y coherencia entre versiones lingüísticas.
+- Videojuegos y personajes: asignar una voz a un personaje y reutilizarla en las distintas localizaciones del juego sin regrabar con actores por región.
+- Prototipado de productos de voz: integrar la API de Python en pipelines de generación de audio para pruebas rápidas de UX conversacional antes de invertir en voces comerciales.
+- Investigación en TTS: usar los checkpoints y el pipeline de fine-tuning (T2S/S2A) como base para experimentos de clonación, transferencia emocional y síntesis cross-lingual.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La documentación menciona que el modelo alcanza resultados competitivos en benchmarks de TTS zero-shot multilingüe y translingüístico, con buena inteligibilidad y similitud de hablante, pero no se proporcionan cifras concretas de métricas como WER, CER o SIM. Se recomienda consultar el paper de arXiv (2608.11650) para obtener datos detallados.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible en la información proporcionada. Dado el tamaño del repositorio (3,1 GB) y la arquitectura de dos etapas, se estima que se necesita al menos 8-12 GB de VRAM para la inferencia en FP16, pero este dato no está confirmado.
-- GPU recomendadas: el modelo requiere CUDA 12.6 y Python 3.10. Se recomienda una GPU con al menos 16 GB de VRAM (por ejemplo, RTX 4080, RTX 4090, A100) para un rendimiento óptimo, aunque podría ejecutarse en GPUs con menos memoria si se aplican técnicas de cuantización o se reduce la resolución.
-- Compatibilidad con GPUs de consumo: probablemente sí, en GPUs como la RTX 3090 o RTX 4090, pero no está confirmado oficialmente.
-- Opciones de despliegue: el repositorio proporciona un script de ejemplo (`example.py`) y una API Python. No se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI, ya que es un modelo de TTS y no un LLM de texto.
-- Latencia y throughput: no disponible. La latencia dependerá de la GPU utilizada y de la longitud del texto a sintetizar.
+- VRAM estimada para inferencia: no disponible de forma explícita. El repositorio ocupa 3,1 GB e incluye pesos en safetensors y PyTorch, por lo que se requiere una GPU con memoria suficiente para cargar ambos módulos (T2S y S2A) más el codificador Wav2Vec2-BERT; el valor concreto no está publicado.
+- GPU recomendadas: no disponibles en la información proporcionada. El entorno documentado exige CUDA 12.6 y Python 3.10.
+- Compatibilidad con GPU de consumo: no confirmada; no se indica qué modelos consumer (RTX 4090, etc.) son suficientes.
+- Opciones de despliegue: inferencia vía script `example.py` y API de Python del paquete `confuciustts`. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Idiomas | Clonación zero-shot | Translingüístico | Licencia | Tamaño |
-|---|---|---|---|---|---|
-| Confucius4-TTS | 14 | Sí | Sí | Apache 2.0 | 3,1 GB |
-| XTTS (Coqui) | 17 | Sí | Sí | CPML (no comercial) | ~1,8 GB |
-| Bark (Suno) | 13 | Parcial | Parcial | MIT | ~1,2 GB |
-| MaskGCT (Amphion) | no disponible | no disponible | no disponible | MIT | no disponible |
-
-Nota: los datos de XTTS, Bark y MaskGCT son aproximados y provienen de información pública general, no de la documentación de Confucius4-TTS. La comparativa se basa en características generales conocidas de estos modelos.
+No disponible: la información proporcionada no incluye datos de rendimiento ni especificaciones de modelos alternativos que permitan una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no se han documentado sesgos específicos, pero al ser un modelo entrenado con datos de voz, puede presentar sesgos en función de los acentos, dialectos o características demográficas de los datos de entrenamiento.
-- Riesgo de alucinación: en TTS, el riesgo de alucinación se manifiesta como errores de pronunciación o entonación, especialmente en idiomas poco representados en el entrenamiento o en textos con nombres propios o términos técnicos.
-- Limitaciones de contexto: no se especifica la longitud máxima de texto que puede procesar el modelo. Es probable que textos muy largos deban dividirse en fragmentos.
-- Restricciones de licencia: la licencia Apache 2.0 permite uso comercial, modificación y redistribución, siempre que se mantenga el aviso de copyright y se indiquen los cambios realizados.
-- Dependencias externas: el modelo requiere modelos externos (Wav2Vec2-BERT y CAMPPlus) y el repositorio de Amphion para el codec semántico, lo que añade complejidad al despliegue.
-- Calidad de la voz clonada: la calidad de la clonación depende en gran medida de la calidad y duración del audio de referencia. Audios cortos o con ruido pueden degradar el resultado.
-- Rendimiento en producción: no se proporcionan datos de latencia ni throughput, por lo que es necesario realizar pruebas de carga antes de desplegar en entornos de producción.
+- No se publican detalles sobre sesgos demográficos, acentos o calidad diferencial entre los 14 idiomas; el rendimiento puede variar según el par de idiomas y la calidad de la referencia.
+- Riesgo de alucinación y artefactos propio de los sistemas TTS basados en LLM: posibles errores de pronunciación, prosodia o contenido en textos ambiguos o fuera de dominio.
+- La clonación de voz sin transcripción de referencia plantea riesgos de suplantación y uso indebido; es responsabilidad del integrador aplicar consentimiento y controles.
+- La licencia Apache 2.0 permite uso comercial, pero conviene revisar las licencias de los componentes externos referenciados (Wav2Vec2-BERT, Amphion/MaskGCT, CAMPPlus) antes de distribuir un producto.
+- No se documentan límites de longitud de texto por petición ni de duración de la referencia; deben validarse empíricamente.
+- El pipeline de fine-tuning requiere descargar modelos externos y preparar datos en un formato TSV específico, lo que añade complejidad operativa.
+- No hay información sobre cuantizaciones oficiales ni sobre despliegue en CPU con latencia aceptable.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/netease-youdao/Confucius4-TTS
-- GitHub (código): https://github.com/netease-youdao/Confucius4-TTS
-- Paper arXiv: https://arxiv.org/abs/2608.11650
-- Demo online: https://confucius4-tts.youdao.com/gradio
-- Página de demostración: https://2901733926.github.io/Confucius4-TTS/
-- ModelScope: https://modelscope.cn/models/netease-youdao/Confucius4-TTS
+- Modelo en Hugging Face: https://huggingface.co/netease-youdao/Confucius4-TTS
+- Paper (arXiv): https://arxiv.org/abs/2608.11650
+- Repositorio de código: https://github.com/netease-youdao/Confucius4-TTS
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/CharlesW/Confucius4-TTS
+- Página de demo del proyecto: https://2901733926.github.io/Confucius4-TTS/
+- Modelo en ModelScope: https://modelscope.cn/models/netease-youdao/Confucius4-TTS
+- Wav2Vec2-BERT (dependencia): https://huggingface.co/facebook/w2v-bert-2.0
+- Amphion / MaskGCT (dependencia): https://github.com/open-mmlab/Amphion

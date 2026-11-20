@@ -2,109 +2,111 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B-TR2.25-G-GGUF es una cuantizacion ternaria (2,25 trits por peso de media) del modelo Qwen3.6-35B-A3B del equipo Qwen, publicada por el usuario Ternii (Wai Chung) bajo licencia Apache-2.0. El modelo base es un transformer con arquitectura Mixture-of-Experts (MoE) de 34.660.610.688 parametros totales y aproximadamente 3.000 millones de parametros activos por token. Esta version empaqueta los mismos codigos y escalas que el checkpoint TR2.25-G para vLLM en un unico archivo GGUF pensado para llama.cpp en Apple Silicon, sin reentrenamiento adicional.
+Qwen3.6-35B-A3B-TR2.25-G-GGUF es una cuantización ternaria del modelo Qwen3.6-35B-A3B, publicada por el usuario Ternii (Wai Chung) bajo licencia Apache-2.0. Se trata de una traducción de pesos con una media de 2,25 trits por peso, sin reentrenamiento, empaquetada como un único archivo GGUF de 16,49 GB para su uso con llama.cpp. El modelo base es un transformer de tipo Mixture-of-Experts (MoE) desarrollado por el equipo Qwen, con 34.660.610.688 parámetros totales y activación de un subconjunto de expertos por token (A3B, aproximadamente 3.000 millones de parámetros activos según la nomenclatura del modelo base).
 
-La relevancia de esta ficha radica en que demuestra una via practica para ejecutar un MoE de 35.000 millones de parametros en equipos con 16-24 GB de memoria unificada, algo imposible con cuantizaciones convencionales de 8 bits (que requieren 37,2 GB). El autor reporta precision practicamente identica al modelo original en GSM8K, HumanEval y MBPP, con velocidades de 55 a 123 tokens por segundo en un Apple M5 Max.
+La relevancia de esta ficha no reside en el modelo base, sino en la técnica de cuantización: el autor introduce tipos de tensor propios (TQ9_128, TQ27_128, TQ81_128) que no existen en el llama.cpp upstream, lo que obliga a usar una serie de parches específica del proyecto tritq-vllm. El objetivo declarado es permitir la ejecución del modelo en Macs de 16 y 24 GB de memoria unificada, donde un GGUF Q4_K_M convencional no cabe en la GPU.
 
-Es importante senalar que esta cuantizacion **no funciona con llama.cpp upstream, LM Studio ni Ollama**: requiere un fork parcheado que introduce los tipos de tensor TQ9_128, TQ27_128 y TQ81_128. Ademas, el modelo es solo texto, sin codificador de vision ni cabecera MTP, y su unico idioma declarado es el ingles.
+El modelo es solo de texto (sin codificador visual ni cabeza MTP), está orientado a generación de texto conversacional y su model card documenta mediciones de velocidad, perplejidad y benchmarks en hardware Apple Silicon. No se dispone de información sobre el contexto máximo del modelo base en la documentación proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer Mixture-of-Experts (MoE), derivada de Qwen3.6-35B-A3B |
+| Arquitectura | Transformer Mixture-of-Experts (MoE), modelo base Qwen3.6-35B-A3B |
 | Parametros totales | 34.660.610.688 |
-| Parametros activos | Aproximadamente 3.000 millones (A3B, segun nomenclatura del modelo base) |
-| Longitud de contexto | 32.768 tokens en el modelo base; en la practica limitada por memoria (4k verificado en 24 GB, 32k no cabe en ese perfil) |
-| Tipos de cuantizacion | Ternaria TR2.25 (2,25 trits por peso de media); tipos de tensor propietarios TQ9_128, TQ27_128, TQ81_128 |
-| Idiomas soportados | Ingles (declarado en la model card) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (un unico archivo de 16,5 GB) |
+| Parametros activos | no disponible (la nomenclatura A3B sugiere ~3B activos, sin cifra confirmada) |
+| Longitud de contexto | no disponible para el modelo base; el ejemplo de despliegue usa `-c 4096` |
+| Tipos de cuantizacion | Ternaria, media de 2,25 trits por peso; tipos de tensor TQ9_128, TQ27_128, TQ81_128 |
+| Idiomas soportados | en |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (archivo único de 16,49 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.6-35B-A3B es un transformer con capas MoE: de los 34.660 millones de parametros totales, solo unos 3.000 millones se activan por token, lo que reduce el coste computacional de inferencia manteniendo una capacidad de representacion propia de un modelo mucho mayor. Esta version TR2.25-G no reentrena el modelo: aplica una traduccion de cuantizacion ternaria que representa cada peso con 2,25 trits de media, conservando los mismos codigos y escalas que el checkpoint original para vLLM. El resultado es un archivo de 16,5 GB, un 44 % del tamano que ocuparia el mismo modelo en Q8_0 (37,2 GB).
+El modelo subyacente es un transformer MoE de la familia Qwen3.6, con 34.660 millones de parámetros totales y activación dispersa de expertos. Esta publicación no entrena ni ajusta el modelo: aplica una cuantización ternaria post-entrenamiento ("TR Quantisation translation") que promedia 2,25 trits por peso y conserva los códigos y escalas idénticos a la versión `Ternii/Qwen3.6-35B-A3B-TR2.25-G`. El resultado se empaqueta en un único GGUF para llama.cpp.
 
-La innovacion tecnica principal es el esquema de cuantizacion ternaria con tipos de tensor personalizados (TQ9_128, TQ27_128, TQ81_128), que no existen en llama.cpp upstream y obligan a usar un parche sobre ggml-org/llama.cpp en el commit ff5a233. El runtime publicado soporta Metal en Apple Silicon; el soporte CUDA esta en desarrollo y no forma parte de la serie publicada. Adicionalmente, el autor implementa una cache de expertos en SSD (LLAMA_MOE_SSD) que permite mantener los expertos en disco con una cache de 8.400 MiB, logrando ejecutar el modelo en un presupuesto de 16 GB con una tasa de acierto de cache del 94,8 % y lecturas de aproximadamente 24 MB por token desde el SSD. Los datasets citados en la model card (nvidia/OpenCodeInstruct, EleutherAI/hendrycks_math, openai/gsm8k) corresponden al modelo base, no a un entrenamiento adicional de esta cuantizacion.
+La innovación técnica principal es la definición de tres tipos de tensor propios (TQ9_128, TQ27_128, TQ81_128) que no están presentes en el llama.cpp upstream. Por ello se requiere la serie de parches del repositorio ternii-ai/tritq-vllm sobre ggml-org/llama.cpp en el commit ff5a233. El soporte de Metal (Apple Silicon) está implementado; el soporte CUDA está en proceso de port y no forma parte de la serie publicada. No se dispone de información sobre la composición del dataset de entrenamiento del modelo base ni sobre si se aplicaron RLHF o DPO; los datasets listados en la model card (nvidia/OpenCodeInstruct, EleutherAI/hendrycks_math, openai/gsm8k) aparecen como etiquetas de metadatos, no como datos de entrenamiento de esta cuantización.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno en ingles.
-- Razonamiento en modo thinking: el modelo base activa por defecto `reasoning_content` con `--jinja`, pudiendo consumir mas de 1.000 tokens de razonamiento antes de responder.
-- Codigo: el autor reporta 92,7 % en HumanEval y 87,2 % en MBPP-sanitized con esta cuantizacion.
-- Matematicas: 95,0 % en GSM8K-400 (modo greedy, sin thinking) y 81,9 en MGSM multilingue segun el checkpoint vLLM equivalente.
-- Soporte de plantilla de chat Jinja (`--jinja`), lo que habilita el formato conversacional del modelo base.
-- Capacidad de desactivar el modo thinking mediante `--reasoning off` o `chat_template_kwargs: {"enable_thinking": false}`.
-- Sin vision: el encoder visual ha sido eliminado en esta version.
-- Sin cabecera MTP (multi-token prediction).
-- No se documenta soporte explicito de tool calling ni de agentes multi-paso en la informacion disponible.
+- Generación de texto conversacional en inglés (único idioma declarado).
+- Razonamiento en modo "thinking" por defecto cuando se usa `--jinja`; el autor advierte que una pregunta corta puede consumir más de 1.000 tokens en `reasoning_content` antes de responder.
+- Capacidad de desactivar el modo thinking mediante `--reasoning off`, `chat_template_kwargs` con `enable_thinking: false` o aumentando `max_tokens`.
+- Rendimiento medido en tareas de matemáticas y código (GSM8K, HumanEval, MBPP) cercano al modelo original en Q8_0.
+- No incluye codificador visual ni cabeza MTP (modelo solo de texto).
+- No se documenta soporte de tool calling, function calling ni capacidades de agente multi-paso en la información disponible.
+- No se documentan capacidades multilingües más allá del inglés.
 
 ## Casos de uso
 
-- **Ejecucion local en Mac de 24 GB o mas**: cargar el GGUF completo en memoria con llama-server permite obtener 120-123 tokens/s sostenidos en un M5 Max, adecuado para asistentes personales, prototipado y experimentacion sin depender de la nube.
-- **Mac de 16 GB con cache de expertos en SSD**: mediante `LLAMA_MOE_SSD=1` y una cache de 8.400 MiB se obtienen unos 55 tokens/s sostenidos en el M5 Max emulado, lo que hace viable un chatbot local en hardware de gama de entrada Apple.
-- **Generacion de codigo en local**: con 92,7 % en HumanEval y 87,2 % en MBPP, el modelo sirve para autocompletado, refactorizacion y generacion de tests en entornos sin conectividad o con requisitos de privacidad estrictos.
-- **Razonamiento matematico asistido**: el modo thinking por defecto y el 95,0 % en GSM8K lo hacen util para tutoria de problemas aritmeticos y verificacion de calculos paso a paso.
-- **Prototipado de pipelines LLM antes de migrar a produccion**: al compartir codigos y escalas con el checkpoint vLLM, permite validar prompts y flujos en local y desplegar despues en GPU sin cambiar de cuantizacion.
-- **Investigacion sobre cuantizacion ternaria**: el modelo sirve como referencia reproducible para estudiar el impacto de 2,25 trits por peso en tareas de razonamiento y codigo, con comparativas exactas McNemar publicadas frente al BF16 original.
-- **Despliegue en entornos air-gapped**: al ser un unico archivo GGUF con licencia Apache-2.0, puede distribuirse en redes aisladas sin dependencias de servicios externos, siempre que se compile el fork de llama.cpp.
+- Ejecución local en Macs de 16 GB: el modelo cabe mediante una caché de expertos en SSD (`LLAMA_MOE_SSD=1`, `LLAMA_MOE_CACHE_MIB=8400`) y alcanza ~35 tokens/s en un MacBook Air M5 de 16 GB, lo que permite asistentes conversacionales locales sin conexión.
+- Ejecución íntegra en GPU en Macs de 24 GB: con 0,35 GB de margen a contexto 4k, es adecuado para prototipado de chatbots y pruebas de razonamiento en hardware de consumo Apple.
+- Evaluación de técnicas de cuantización extrema: sirve como banco de pruebas para investigadores que comparan cuantización ternaria (2,25 trits) frente a Q4_K_M en términos de KLD, perplejidad y acuerdo de token top-1.
+- Generación de código asistida en local: con HumanEval al 92,7 % y MBPP al 87,2 % medidos en Mac, puede integrarse en editores o scripts de autocompletado que requieran privacidad de datos.
+- Resolución de problemas matemáticos de nivel escolar: GSM8K al 95,0 %, útil para tutores automáticos o verificación de ejercicios sin depender de APIs externas.
+- Investigación sobre portabilidad de kernels: el proyecto tritq-vllm permite estudiar la implementación de tipos de tensor personalizados en llama.cpp y Metal, así como el rendimiento de la caché de expertos en SSD.
+- Despliegue en entornos con restricciones de memoria y sin GPU dedicada: la variante Linux arm64 (solo CPU) del release anterior permite ejecutar el modelo en servidores ARM sin acelerador.
 
 ## Benchmarks y rendimiento
 
-Resultados reportados por el autor con esta cuantizacion en Mac (greedy, sin thinking), comparados con el modelo original:
-
-| Benchmark | TR2.25-G (ruta normal) | TR2.25-G (cache 16 GB) | Original BF16/Q8 | Diferencia significativa |
-|---|---|---|---|---|
-| GSM8K-400 | 95,0 % | 94,0 % | 95,0 % | No (McNemar exacto) |
-| HumanEval | 92,7 % | 92,1 % | 94,5 % | No |
-| MBPP-sanitized | 87,2 % | 87,6 % | 87,9 % | No |
-| MGSM (multilingue, via vLLM) | 81,9 | no ejecutado | 83,8 | Si, inferior al original |
-
-Rendimiento medido en Apple M5 Max (128 GB):
-
-| Memoria Mac | Modo | Velocidad | Memoria usada |
+| Metrica | TR2.25-G (este archivo) | Q4_K_M | Original Q8_0 |
 |---|---|---|---|
-| 16 GB | cache de expertos 8.400 MiB | ~55 tokens/s sostenidos (emulado) | 10,97 GB |
-| 24 GB | en memoria | ~120-123 tokens/s sostenidos | 16,84 GB |
-| 32 GB+ | en memoria | ~120-123 sostenidos, ~140 burst, prefill ~2.550 tokens/s | 16,5 GB |
+| Tamano de archivo | 16,49 GB | 21,17 GB | no disponible |
+| Cabe entero en GPU de 24 GB | si (0,35 GB de margen a 4k) | no | no disponible |
+| KLD medio vs Q8_0 (menor es mejor) | 0,176 | 0,046 | referencia |
+| Mismo token top-1 que el original | 79,7 % | 90,9 % | referencia |
+| Perplejidad | 8,12 | 7,06 | 7,06 |
+| GSM8K | 95,0 % | no medido | 95,0 % |
+| HumanEval | 92,7 % | no medido | 94,5 % |
+| MBPP | 87,2 % | no medido | 87,9 % |
+
+Mediciones de KLD, perplejidad y acuerdo de token top-1 sobre 10 fragmentos de 512 tokens de WikiText-2 con `llama-perplexity` en CPU del M5 Max. El Q4_K_M fue generado por el autor con `llama-quantize` estándar sin matriz de importancia. La velocidad en Metal no se comparó entre cuantizaciones.
+
+Velocidad y memoria por configuración de Mac:
+
+| Memoria del Mac | Modo de ejecución | Velocidad (1 usuario) | Memoria usada |
+|---|---|---|---|
+| 16 GB | caché de expertos en SSD, 8.400 MiB | ~35 tokens/s (35,1–36,3 en 6 ejecuciones, MacBook Air M5 16 GB, release r3) | hasta 12,1 GB wired |
+| 24 GB | completamente en memoria | no disponible en el extracto | no disponible en el extracto |
 
 ## Requisitos de hardware
 
-- **VRAM/memoria unificada**: 16,5 GB solo para los pesos; 16,84 GB de working set con contexto de 4k. En 24 GB cabe con solo 0,35 GB de margen a 4k; 32k de contexto no cabe en ese perfil.
-- **GPU recomendadas**: Apple Silicon con Metal (M5 Max medido; M1/M2/M3/M4 no medidos pero compatibles con el runtime). CUDA esta en port y no forma parte de la serie publicada.
-- **Consumer GPU**: no hay soporte CUDA publicado, por lo que no se puede confirmar su funcionamiento en RTX 4090, A100 o H100 con este fork.
-- **Opciones de despliegue**: exclusivamente llama.cpp parcheado (github.com/ternii-ai/tritq-vllm). No funciona con llama.cpp upstream, LM Studio, Ollama ni vLLM con este archivo GGUF (para vLLM existe el checkpoint TR2.25-G separado).
-- **Latencia y throughput**: 120-123 tokens/s sostenidos y ~140 en burst en M5 Max con 32 GB+; ~55 tokens/s en modo cache de 16 GB; prefill de ~2.550 tokens/s.
-- **Almacenamiento**: en modo cache de expertos se leen unos 24 MB por token desde el SSD, con 94,8 % de acierto de cache.
+- VRAM/memoria unificada: 16,49 GB de archivo; cabe entero en la GPU de un Mac de 24 GB con 0,35 GB de margen a contexto 4k. En Macs de 16 GB requiere caché de expertos en SSD de 8.400 MiB y hasta 12,1 GB wired.
+- GPU recomendadas: Apple Silicon con Metal (macOS 13.3+). El soporte CUDA está en port y no forma parte de la serie publicada; no hay soporte para GPU NVIDIA en esta versión.
+- Cabe en GPU de consumo: si, en Macs de 24 GB o más; en Macs de 16 GB de forma experimental.
+- Opciones de despliegue: exclusivamente llama.cpp con la serie de parches de ternii-ai/tritq-vllm (binarios precompilados `llama.cpp-tr-b11721-r3` para macOS arm64 con Metal; `llama.cpp-tr-b11721` para Linux arm64 solo CPU). No funciona en LM Studio, Ollama ni builds estándar de llama.cpp.
+- Latencia y throughput: ~35 tokens/s en MacBook Air M5 de 16 GB con caché en SSD (release r3); 23,3–25,2 tokens/s con la release r2 en el mismo equipo. Sin datos para 24 GB ni para GPU NVIDIA.
+- Ajustes relevantes: `-c 4096 -fa on --jinja`; para 16 GB, `caffeinate -ims` evita que la GPU baje de frecuencia.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Memoria | Licencia | Runtime |
-|---|---|---|---|---|---|---|
-| Qwen3.6-35B-A3B TR2.25-G (este) | 34,66B totales, ~3B activos | 32k (4k verificado) | Ternaria 2,25 trits | 16,5 GB | Apache-2.0 | llama.cpp parcheado (Metal) |
-| Qwen3.6-35B-A3B Q8_0 | 34,66B totales, ~3B activos | 32k | 8 bits | 37,2 GB | Apache-2.0 | llama.cpp upstream |
-| Qwen3.6-35B-A3B BF16 (original) | 34,66B totales, ~3B activos | 32k | 16 bits | ~69 GB (estimado) | Apache-2.0 | vLLM, TGI, transformers |
-| Qwen3.6-35B-A3B NVFP4 | 34,66B totales, ~3B activos | 32k | FP4 (NVIDIA) | no disponible | Apache-2.0 | TensorRT-LLM / vLLM |
+| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+|---|---|---|---|---|---|
+| Qwen3.6-35B-A3B-TR2.25-G-GGUF (este) | 34,66 B totales, MoE | no disponible | Apache-2.0 | GGUF ternario (2,25 trits) | llama.cpp parcheado, macOS arm64 y Linux arm64 CPU |
+| Qwen3.6-35B-A3B Q4_K_M | 34,66 B totales, MoE | no disponible | Apache-2.0 | GGUF 4 bits | LM Studio, Ollama, llama.cpp estándar |
+| Qwen3.6-35B-A3B Q8_0 (original) | 34,66 B totales, MoE | no disponible | Apache-2.0 | GGUF 8 bits | llama.cpp estándar |
 
-La ventaja principal frente a Q8_0 y BF16 es la reduccion de memoria (44 % y ~24 % respectivamente) con diferencias no significativas en GSM8K, HumanEval y MBPP. La desventaja es la dependencia de un fork no upstream y la ausencia de soporte CUDA publicado.
+La comparativa se limita al mismo modelo base en distintas cuantizaciones, ya que la información proporcionada no incluye datos de modelos alternativos de otros autores. Frente a Q4_K_M, este archivo es un 22 % más pequeño (16,49 vs 21,17 GB), pero pierde fidelidad (KLD 0,176 vs 0,046; acuerdo top-1 79,7 % vs 90,9 %) y requiere un runtime parcheado.
 
 ## Limitaciones y advertencias
 
-- **Requiere un llama.cpp parcheado**: los ids de tipo GGUF 44-46 son especificos del fork; las compilaciones estandar, LM Studio y Ollama no pueden cargar el archivo.
-- **Cache de expertos experimental**: medida solo a contexto de 4k, micro-batch <= 512 tokens y una sola secuencia (`-np 1`); concurrencia, peticiones canceladas y prompts largos no han sido probados.
-- **Solo texto**: sin encoder de vision ni cabecera MTP.
-- **Solo ingles declarado**: el rendimiento en otros idiomas no esta garantizado; en MGSM multilingue el checkpoint equivalente rinde por debajo del original (81,9 vs 83,8), con la mayoria de la perdida en bengali.
-- **Modo thinking por defecto**: con `--jinja` el modelo puede gastar mas de 1.000 tokens en razonamiento antes de responder; en las pruebas del autor, 3 de 4 peticiones alcanzaron el limite de 1.024 tokens. Es necesario desactivarlo o ampliar `max_tokens`.
-- **Riesgo de alucinacion**: no cuantificado en la informacion disponible; aplican los riesgos habituales de los modelos generativos.
-- **Licencia Apache-2.0**: permite uso comercial, pero la obligacion de compilar y mantener el fork anade coste operativo.
-- **Mediciones parciales**: los datos de 16 GB son emulados en un M5 Max; un Mac real de 16 GB tiene chip y SSD mas lentos, y el autor estima 17-24 tokens/s en un portatil base. El presupuesto de GPU por defecto se asume como dos tercios de la RAM, sin medir en maquinas de 16-24 GB.
-- **Cifras de velocidad Q8_0 no comparables**: provienen de otra compilacion de llama.cpp, por lo que el autor no ofrece ratio de velocidad frente a 8 bits.
+- Requiere un llama.cpp parcheado: los tipos TQ9_128, TQ27_128 y TQ81_128 no existen en upstream, por lo que stock builds, LM Studio y Ollama no pueden cargarlo.
+- Soporte CUDA incompleto: solo Metal (Apple Silicon) y Linux arm64 en CPU están publicados; no hay aceleración NVIDIA disponible.
+- Pérdida de fidelidad respecto al original: KLD de 0,176 y solo 79,7 % de acuerdo en token top-1 frente a Q8_0; la perplejidad sube de 7,06 a 8,12.
+- Modo thinking por defecto: con `--jinja`, una pregunta corta puede agotar 1.024 tokens en razonamiento (3 de 4 peticiones de prueba), lo que exige desactivarlo o ampliar `max_tokens`.
+- Solo inglés: el campo `language` declara únicamente `en`; no se documenta soporte multilingüe.
+- Modelo solo de texto: sin codificador visual ni cabeza MTP.
+- Riesgo de alucinación y sesgos: no se documentan evaluaciones de sesgo ni de seguridad en la información disponible; aplican los del modelo base Qwen3.6-35B-A3B.
+- Licencia Apache-2.0 permite uso comercial, pero la obligación de usar un runtime parcheado y la ausencia de soporte CUDA condicionan el despliegue en producción.
+- Las cifras de 24 GB se obtuvieron emulando esa memoria en un M5 Max de 128 GB; un Mac real de 24 GB tiene chip y SSD más lentos, por lo que el rendimiento puede ser inferior.
+- La velocidad de 16 GB depende de una caché en SSD y de `caffeinate`; cerrar otras aplicaciones grandes es necesario para no exceder los 12,1 GB wired.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Ternii/Qwen3.6-35B-A3B-TR2.25-G-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
-- Checkpoint vLLM equivalente (TR2.25-G): https://huggingface.co/Ternii/Qwen3.6-35B-A3B-TR2.25-G
 - Repositorio del runtime parcheado: https://github.com/ternii-ai/tritq-vllm
-- Rama de llama.cpp parcheada: https://github.com/ternii-ai/tritq-vllm/tree/main/runtime/llama.cpp
-- llama.cpp upstream (commit base ff5a233): https://github.com/ggml-org/llama.cpp
+- Serie de parches sobre llama.cpp: https://github.com/ternii-ai/tritq-vllm/tree/main/runtime/llama.cpp
+- Binarios precompilados r3: https://github.com/ternii-ai/tritq-vllm/releases/tag/llama.cpp-tr-b11721-r3
+- Binarios precompilados anteriores: https://github.com/ternii-ai/tritq-vllm/releases/tag/llama.cpp-tr-b11721
+- Script de inicio rápido para Mac: https://raw.githubusercontent.com/ternii-ai/tritq-vllm/main/mac/qwen36-35b.sh

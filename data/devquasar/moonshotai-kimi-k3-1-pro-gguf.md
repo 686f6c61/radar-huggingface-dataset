@@ -2,80 +2,92 @@
 
 ## Resumen
 
-DevQuasar/moonshotai.Kimi-K3.1-Pro-GGUF es una cuantizacion en formato GGUF del modelo base moonshotai/Kimi-K3.1-Pro, desarrollado originalmente por Moonshot AI. El repositorio lo publica DevQuasar, un proyecto independiente que distribuye versiones cuantizadas de modelos abiertos bajo el lema "Make knowledge free for everyone". El modelo esta etiquetado como `text-generation` y deriva directamente del checkpoint original mediante un proceso de cuantizacion para llama.cpp.
+Kimi-K3.1-Pro es un modelo multimodal de tipo imagen-texto-a-texto desarrollado por Moonshot AI. Esta ficha documenta la version cuantizada en formato GGUF publicada por DevQuasar bajo el identificador `DevQuasar/moonshotai.Kimi-K3.1-Pro-GGUF`, que actua como distribucion ligera (relativamente) del modelo original `moonshotai/Kimi-K3.1-Pro`. El modelo base es un modelo de gran escala con 2.779.661.661.792 parametros totales segun los datos de safetensors, lo que lo situa en la categoria de modelos frontera con capacidad de procesamiento de imagenes y texto.
 
-La relevancia de esta publicacion es fundamentalmente practica: permite ejecutar un modelo de la familia Kimi en entornos con recursos limitados mediante llama.cpp y sus derivados (Ollama, LM Studio, etc.), algo imposible con los pesos originales en precision completa. Sin embargo, el propio autor la marca explicitamente como "VERY EXPERIMENTAL", lo que advierte de que la conversion puede presentar inestabilidades o comportamientos degradados.
+La relevancia de esta publicacion radica en que permite ejecutar un modelo de este tamano en infraestructura local mediante cuantizacion GGUF, tradicionalmente reservada a modelos mucho mas pequenos. El autor la marca explicitamente como "VERY EXPERIMENTAL" y depende de un fork especifico de llama.cpp (rama `kimi-k31`), lo que indica que el soporte en herramientas estandar aun no esta consolidado.
 
-La informacion disponible es muy escasa: no se especifican parametros totales, longitud de contexto, idiomas soportados ni licencia. La model card se limita a indicar el modelo base y a enlazar a un fork de llama.cpp especifico para esta arquitectura, lo que sugiere que el soporte upstream aun no esta integrado en la rama principal.
+La informacion disponible sobre arquitectura interna, datos de entrenamiento, idiomas y licencia es muy limitada en la model card proporcionada. Esta ficha refleja unicamente los datos verificables y marca como "no disponible" todo aquello que no aparece en la informacion de origen, sin inferir especificaciones no confirmadas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base Kimi-K3.1-Pro de Moonshot AI; detalles no publicados en esta ficha) |
-| Parametros totales | no disponible |
+| Arquitectura | no disponible (modelo multimodal image-text-to-text; detalles internos no publicados en la informacion disponible) |
+| Parametros totales | 2.779.661.661.792 (≈2,78 billones) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (formato GGUF; niveles concretos no listados) |
+| Tipos de cuantizacion | GGUF; el autor menciona "Zero shot MXFP4" como prueba de concepto |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (repo de 2519,1 GB); el modelo base se distribuye presumiblemente en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo base moonshotai/Kimi-K3.1-Pro en los datos proporcionados. La model card de esta cuantizacion no incluye detalles sobre tipo de transformer, uso de mezcla de expertos, mecanismos de atencion ni innovaciones tecnicas. Tampoco se documentan el volumen de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF, DPO o ajuste por preferencias.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base en la documentacion proporcionada. La pipeline declarada es `image-text-to-text`, lo que confirma que se trata de un modelo multimodal capaz de recibir imagenes y texto y generar texto. El numero de parametros (2,78 billones) sugiere un modelo de escala frontera, probablemente con tecnicas de mezcla de expertos (MoE) para hacer viable la inferencia, aunque este extremo no se confirma en la informacion disponible.
 
-El unico dato tecnico relevante es que la conversion se ha realizado con un fork especifico de llama.cpp (rama `kimi-k31` del repositorio de csabakecskemeti), lo que indica que la arquitectura del modelo requiere modificaciones no presentes en la rama principal de llama.cpp en el momento de la publicacion. Este hecho es un indicador indirecto de que el modelo incorpora componentes arquitectonicos novedosos o poco estandarizados.
+Respecto al entrenamiento, no se han publicado en la model card datos sobre numero de tokens, composicion del dataset, ni si se emplearon tecnicas de RLHF, DPO u otras. La unica innovacion tecnica mencionada de forma explicita es la cuantizacion MXFP4 aplicada en cero disparos ("Zero shot MXFP4"), presentada como prueba de concepto por el autor de la cuantizacion, junto con la dependencia de un fork especifico de llama.cpp para dar soporte al modelo.
 
 ## Capacidades
 
-- Generacion de texto: el pipeline declarado es `text-generation`, por lo que la capacidad principal es la produccion de texto autoregresiva.
-- Capacidades especificas del modelo base: no documentadas en esta ficha.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
+- Generacion de texto conversacional multi-turno, segun la etiqueta `conversational`.
+- Procesamiento de entrada multimodal imagen-texto (`image-text-to-text`), es decir, puede recibir imagenes junto con instrucciones textuales.
+- Generacion de codigo: la prueba de concepto publicada muestra la generacion de un simulador de quimica en HTML con modelo 3D/2D a partir de un prompt con errores tipograficos, lo que evidencia capacidad de generacion de codigo funcional en cero disparos.
+- Razonamiento aplicado a dominios cientificos (quimica en el ejemplo publicado).
+- Compatibilidad con endpoints (`endpoints_compatible`), lo que sugiere integracion con infraestructura de inferencia tipo API.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
+- Modo thinking, audio u otras capacidades especiales: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Evaluacion local de la familia Kimi: investigadores que quieran probar el comportamiento del modelo Kimi-K3.1-Pro en hardware propio sin depender de APIs, usando llama.cpp con el fork indicado por el autor.
-- Prototipado offline en estaciones de trabajo: desarrollo de pruebas de concepto de generacion de texto en entornos sin conectividad, aprovechando el formato GGUF para ejecucion en CPU o GPU consumer.
-- Integracion en pipelines de llama.cpp: experimentacion con herramientas del ecosistema llama.cpp (servidor compatible con API OpenAI, Ollama, LM Studio) para validar la viabilidad del modelo en flujos existentes.
-- Investigacion sobre cuantizacion: analisis comparativo del impacto de la cuantizacion GGUF en un modelo de la familia Kimi, midiendo degradacion de calidad frente a los pesos originales.
-- Despliegue en entornos con VRAM limitada: escenarios donde el checkpoint original no cabe en memoria y se necesita una version comprimida, aceptando el caracter experimental de la conversion.
-- Base para fine-tuning o adaptadores: uso del GGUF como referencia de inferencia antes de decidir si merece la pena trabajar con los pesos originales en precision completa.
+- Generacion de codigo asistida en local: el modelo puede producir aplicaciones web completas (HTML/CSS/JS) a partir de descripciones en lenguaje natural, como demuestra la prueba de concepto del simulador de quimica. Adecuado para prototipado rapido en entornos con requisitos de privacidad donde no se quiere enviar el prompt a una API externa.
+- Prototipado de interfaces cientificas: la capacidad demostrada de generar simuladores fisicamente plausibles lo hace util para crear herramientas educativas o de visualizacion cientifica a partir de especificaciones textuales.
+- Analisis de documentos con imagenes: al ser un modelo image-text-to-text, puede emplearse para extraer informacion de capturas, diagramas o figuras combinadas con texto, en flujos de trabajo de investigacion.
+- Experimentacion en investigacion de cuantizacion: el repositorio sirve como banco de pruebas para estudiar el comportamiento de modelos de escala frontera bajo cuantizacion MXFP4 y GGUF, un area activa de investigacion.
+- Despliegue en infraestructura propia con endpoints compatibles: la etiqueta `endpoints_compatible` permite integrarlo en stacks de inferencia que esperan una API compatible, util para equipos que quieren autohospedar un modelo multimodal grande.
+- Evaluacion comparativa de modelos frontera: util para investigadores que necesitan medir el impacto de la cuantizacion en tareas de generacion de codigo y razonamiento multimodal frente al modelo original en precision completa.
+- Generacion de contenido tecnico y documentacion: la ventana de contexto y el rendimiento en generacion de texto permiten redactar documentacion tecnica, aunque la falta de datos de contexto publicados obliga a validar este uso empiricamente.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La unica evidencia de rendimiento es cualitativa: la prueba de concepto "Zero shot MXFP4" en la que el modelo genera un simulador de quimica HTML a partir de un prompt con errores tipograficos, sin datos numericos de MMLU, HumanEval, GSM8K ni comparativas cuantitativas.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible, al no conocerse el numero de parametros del modelo base.
-- GPU recomendadas: no disponible por la misma razon.
-- Compatibilidad con GPU consumer: no determinable sin conocer el tamano del modelo; el formato GGUF permite descarga parcial a CPU si la VRAM es insuficiente.
-- Opciones de despliegue: llama.cpp (requiere el fork `kimi-k31` de csabakecskemeti segun la model card), y potencialmente herramientas derivadas como Ollama o LM Studio si aceptan el mismo formato.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: no disponible de forma oficial. El repo GGUF ocupa 2519,1 GB, lo que da una idea de la escala del almacenamiento necesario; la VRAM requerida dependera de la cuantizacion concreta elegida dentro del repo y del offloading a CPU/DRAM.
+- GPU recomendadas: no disponible en la informacion proporcionada. Por el volumen de parametros (≈2,78 billones), se requiere infraestructura multi-GPU de centro de datos; no es viable en una sola GPU consumer.
+- Cabe en GPU consumer: no. El tamano del modelo excede con mucho la VRAM de cualquier GPU consumer actual (RTX 4090 con 24 GB, etc.).
+- Opciones de despliegue: llama.cpp mediante el fork especifico `csabakecskemeti/llama.cpp` rama `kimi-k31`, segun indica el autor. Otras opciones (vLLM, TGI, Ollama) no estan confirmadas para esta cuantizacion en la informacion disponible.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de datos de rendimiento ni de especificaciones del modelo base que permitan una comparacion fundamentada con alternativas de la misma categoria.
+No disponible. La informacion proporcionada no incluye datos de rendimiento ni especificaciones de modelos alternativos de la misma categoria que permitan una comparativa rigurosa. Como referencia estructural, el unico punto de comparacion documentado es el propio modelo base `moonshotai/Kimi-K3.1-Pro` en precision completa, del cual esta publicacion es una cuantizacion GGUF.
+
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Kimi-K3.1-Pro (base) | 2,78 B (segun safetensors) | no disponible | no disponible | safetensors (presumible) | Modelo original de Moonshot AI |
+| Kimi-K3.1-Pro-GGUF (esta ficha) | 2,78 B | no disponible | no disponible | GGUF | Cuantizacion experimental por DevQuasar |
+| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | Sin datos en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- Caracter experimental: el autor etiqueta explicitamente la publicacion como "VERY EXPERIMENTAL", lo que implica riesgo de errores, salidas degradadas o fallos de conversion.
-- Dependencia de un fork de llama.cpp: la inferencia requiere la rama `kimi-k31` del repositorio de csabakecskemeti; la rama principal de llama.cpp puede no soportar el modelo.
-- Licencia no especificada: no se indica la licencia del modelo base ni de la cuantizacion, por lo que el uso comercial es incierto y requiere consultar el repositorio original de moonshotai/Kimi-K3.1-Pro.
-- Idiomas no documentados: se desconoce el soporte multilingue real.
-- Contexto no documentado: se desconoce la ventana de contexto efectiva.
-- Riesgo de alucinacion: inherente a los modelos generativos; sin benchmarks ni evaluaciones publicadas no puede acotarse.
-- Sesgos: no documentados en la informacion disponible.
-- Cero descargas y cero likes en el momento de la consulta: indica ausencia de validacion por parte de la comunidad.
-- Fecha de creacion futura (2026-11-06): dato anomalo que conviene verificar antes de confiar en los metadatos.
+- Estado experimental: el autor marca explicitamente la publicacion como "VERY EXPERIMENTAL", lo que desaconseja su uso en produccion sin validacion exhaustiva.
+- Dependencia de un fork no oficial de llama.cpp: el soporte requiere la rama `kimi-k31` del repositorio de csabakecskemeti, lo que implica riesgo de mantenimiento, falta de soporte comunitario amplio y posible incompatibilidad con versiones futuras.
+- Licencia no disponible: al no especificarse la licencia, no se puede confirmar si el uso comercial esta permitido. Es imprescindible consultar la licencia del modelo base `moonshotai/Kimi-K3.1-Pro` antes de cualquier despliegue productivo.
+- Idiomas no especificados: se desconoce el soporte multilingue real y la calidad en castellano.
+- Riesgo de alucinacion: no cuantificado en la informacion disponible; como todo modelo generativo de gran escala, es susceptible de producir contenido plausible pero incorrecto, especialmente en dominios cientificos donde la "plausibilidad fisica" es critica.
+- Sesgos: no documentados en la informacion proporcionada.
+- Limitaciones de contexto: la longitud de contexto no esta publicada, lo que impide planificar cargas de trabajo con documentos largos.
+- Requisitos de hardware extremos: 2519,1 GB de repo y 2,78 billones de parametros hacen inviable el despliegue fuera de infraestructura de centro de datos con multiples aceleradores.
+- Impacto de la cuantizacion MXFP4: no hay datos publicados sobre la degradacion de calidad respecto al modelo en precision completa; la unica evidencia es una prueba de concepto cualitativa.
 
 ## Enlaces
 
 - Repositorio Hugging Face de la cuantizacion: https://huggingface.co/DevQuasar/moonshotai.Kimi-K3.1-Pro-GGUF
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K3.1-Pro
-- Fork de llama.cpp requerido: https://github.com/csabakecskemeti/llama.cpp/tree/kimi-k31
+- Fork de llama.cpp con soporte para el modelo: https://github.com/csabakecskemeti/llama.cpp/tree/kimi-k31
 - Sitio del autor de la cuantizacion: https://devquasar.com
+- Repositorio del autor en GitHub: https://github.com/csabakecskemeti/devquasar
+- Apoyo al autor (Ko-fi): https://ko-fi.com/L4L416YX7C

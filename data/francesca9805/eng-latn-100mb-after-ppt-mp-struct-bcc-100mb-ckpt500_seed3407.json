@@ -46,31 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Xhamster doesn't work properly on my computer (FF or chrome)",
-      "url": "https://www.reddit.com/r/techsupport/comments/260oz2/xhamster_doesnt_work_properly_on_my_computer_ff/",
-      "snippet": "May 20, 2014 · Anyway, when I open xhamster, about half of the thumbnails don't load. A lot of the videos don't work either (it says …"
-    },
-    {
-      "title": "Why is xHamster called xHamster? : r/NoStupidQuestions - Reddit",
-      "url": "https://www.reddit.com/r/NoStupidQuestions/comments/6n22bh/why_is_xhamster_called_xhamster/",
-      "snippet": "Hey-hey! I'm a representative of xHamster. When choosing the mascot for the web-site (which took us quite a long time), we wanted …"
-    },
-    {
-      "title": "Se désabonner de xhamster [Résolu] - Consommation & Internet",
-      "url": "https://forums.commentcamarche.net/forum/affich-36239263-se-desabonner-de-xhamster",
-      "snippet": "Oct 2, 2019 · Bonjour, je veux me désabonner de xhamster et je n'y arrive pas.comment faire ?"
-    },
-    {
-      "title": "Comment faire pour télécharger des vidéos sur n'importe quel site",
-      "url": "https://forums.commentcamarche.net/forum/affich-25637287-comment-faire-pour-telecharger-des-videos-sur-n-importe-quel-site",
-      "snippet": "Bonjour, Avant j'avais un plugin ou extension avec firefox qui me permetait de télécharger une vidéo sur n'importe quel site ! c'était …"
-    },
-    {
-      "title": "Videos on specific websites won't load : r/techsupport - Reddit",
-      "url": "https://www.reddit.com/r/techsupport/comments/1cd9cj/videos_on_specific_websites_wont_load/",
-      "snippet": "Apr 15, 2013 · However on sites such as xvideos, xhamster, and Twitch.tv vods (Only vods, not livestreams) videos almost never …"
-    }
-  ]
+  "sources": []
 }

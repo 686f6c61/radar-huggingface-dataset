@@ -2,108 +2,105 @@
 
 ## Resumen
 
-Ling-3.0-tiny-APEX-MCQ5-IK-GGUF es una suite de cuantizaciones personalizadas del modelo base inclusionAI/Ling-3.0-tiny, publicada por el usuario Unluckkie en Hugging Face. El modelo base es un transformer de tipo Mixture of Experts (MoE) con 7.893.392.800 parametros totales y aproximadamente 1.300 millones de parametros activos por token, disenado para generacion de texto conversacional. Esta version concreta no es un modelo nuevo, sino una reempaquetacion en formato GGUF optimizada para el runtime `ik_llama.cpp`, con una metodologia propia que combina proteccion estructural APEX y presupuesto de lectura MCQ5.
+Ling-3.0-tiny-APEX-MCQ5-IK-GGUF es una suite de cuantizaciones GGUF de alta ingeniería del modelo base inclusionAI/Ling-3.0-tiny, publicada por el usuario Unluckkie. El modelo subyacente es un transformer con arquitectura Mixture of Experts (MoE) de 7.893.392.800 parámetros totales y aproximadamente 1.300 millones de parámetros activos por token, distribuidos en 128 expertos enrutados. La propuesta de este repositorio no es un modelo nuevo, sino un conjunto de cuantizaciones optimizadas para el runtime `ik_llama.cpp`, con una metodología propia que combina la protección estructural de capas (APEX) con la asignación de presupuesto de precisión según frecuencia de lectura de tensores (MCQ5).
 
-La relevancia de esta ficha radica en que las cuantizaciones propuestas buscan reducir el peso del modelo hasta un rango de 3,7 a 4,3 GB manteniendo la perplejidad cerca de la referencia Q6_K (6,822), con perdidas declaradas de entre el 1,8 % y el 3,8 %. Esto permite ejecutar un MoE de 7,9B parametros en equipos con 8 GB de RAM, algo que en precision completa seria inviable. El autor reporta velocidades de generacion de 14-16 tokens por segundo en un Intel i5-8250U con 4 hilos.
+El interés de esta ficha radica en que las cuantizaciones estándar de un MoE con 128 expertos suelen degradar gravemente el enrutamiento y la lógica del modelo cuando se baja de 4 bits. El autor documenta una escalera de perplejidad medida sobre `wiki.test.raw` que demuestra que es posible mantener una pérdida de solo el 1,8 % respecto a un Q6_K con un fichero de 4,3 GB, y del 2,7 % con 4,0 GB, gracias a mantener el router en F16 y los expertos compartidos en precisión alta mientras se comprimen agresivamente los expertos enrutados.
 
-El modelo esta liberado bajo licencia MIT y solo declara soporte para ingles. Es importante senalar que estos archivos requieren obligatoriamente `ik_llama.cpp` y no cargan en `llama.cpp` estandar, Ollama ni LM Studio, lo que limita su adopcion a usuarios dispuestos a usar ese runtime especifico.
+La relevancia práctica es doble: por un lado, ofrece una vía para ejecutar un MoE de casi 8.000 millones de parámetros en equipos con 8 GB de RAM; por otro, advierte de una dependencia estricta del fork `ik_llama.cpp`, ya que los tensores `IQ2_KS`, `IQ3_KS`, `IQ4_KS` e `IQ4_KSS` no cargan en `llama.cpp` estándar, Ollama ni LM Studio. La licencia MIT del repositorio y del modelo base facilita su uso comercial, aunque el idioma declarado es únicamente inglés.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (Mixture of Experts) |
-| Parametros totales | 7.893.392.800 |
-| Parametros activos | ~1.3B (segun model card) |
-| Longitud de contexto | no disponible (el ejemplo de uso emplea `-c 8192`) |
-| Tipos de cuantizacion | IQ2_KS, IQ3_KS, IQ3_XXS, IQ4_KS, IQ4_KSS, Q8_0, IQ6_K, Q6_K, F16 (router sin cuantizar) |
-| Idiomas soportados | en (ingles) |
+| Arquitectura | Transformer con Mixture of Experts (MoE), 128 expertos enrutados |
+| Parametros totales | 7.893.392.800 (7,9 B) |
+| Parametros activos | Aproximadamente 1,3 B por token |
+| Longitud de contexto | No disponible en la informacion proporcionada (el ejemplo de uso emplea `-c 8192`) |
+| Tipos de cuantizacion | IQ2_KS, IQ3_KS, IQ3_XXS, IQ4_KS, IQ4_KSS, IQ6_K, Q8_0, F16 (router); variantes IK-Quality, IK-Balanced, IK-Compact |
+| Idiomas soportados | Ingles (`en`) |
 | Licencia | MIT |
-| Formato de pesos | GGUF (requiere `ik_llama.cpp`) |
+| Formato de pesos | GGUF (requiere `ik_llama.cpp`; incompatible con `llama.cpp` estandar, Ollama y LM Studio) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Ling-3.0-tiny es un transformer con arquitectura de mezcla de expertos. Segun la informacion disponible, cuenta con 128 expertos enrutados y un experto compartido siempre activo, con un router (`ffn_gate_inp`, `exp_probs_b`) que decide que expertos se activan por token. La model card indica que se leen 8 expertos de cada 128 por token, lo que explica la diferencia entre los 7,9B parametros totales y los ~1,3B activos. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
+El modelo base es un transformer con capa MoE de 128 expertos enrutados y un experto compartido siempre activo, con 7,9 B de parámetros totales y unos 1,3 B activos por token. El repositorio no documenta el proceso de entrenamiento del modelo base (número de tokens, composición del dataset, uso de RLHF o DPO), por lo que esos datos deben consultarse en la model card de `inclusionAI/Ling-3.0-tiny`. Lo que sí documenta este repositorio es la metodología de cuantización, que constituye su innovación técnica principal.
 
-La innovacion de esta publicacion no esta en el entrenamiento, sino en la metodologia de cuantizacion. El autor combina tres tecnicas: (1) proteccion del router, que se mantiene en F16 para evitar enrutamientos erroneos; (2) MCQ5 read-budgeting, que asigna mayor precision al experto compartido (siempre leido) y comprime mas agresivamente los 128 expertos enrutados; y (3) gradiente APEX, que conserva mayor precision en las capas iniciales y finales (responsables de sintaxis y formato de salida) y comprime con mas fuerza las capas intermedias. Los kernels `_KS` de `ik_llama.cpp` se emplean para maximizar la velocidad de inferencia en CPU.
+La metodología se apoya en cuatro decisiones concretas. Primero, el router MoE (`ffn_gate_inp`, `exp_probs_b`) se mantiene siempre en F16 para evitar que el enrutamiento derive hacia expertos incorrectos. Segundo, se aplica un presupuesto de lectura (MCQ5): el experto compartido, leído en cada token, se mantiene en Q8_0 o IQ6_K, mientras que los 128 expertos enrutados, leídos en una proporción de 8 entre 128, se comprimen según su profundidad. Tercero, el gradiente APEX conserva en mayor precisión las capas iniciales y finales, responsables de sintaxis y formato de salida, y comprime más las intermedias. Cuarto, se emplean las rejillas no lineales `_KS` de `ik_llama.cpp` para maximizar la velocidad de inferencia en CPU. El autor indica que probó varias builds por debajo de 3,5 GB y todas superaron una perplejidad de 8,4, lo que fija en 3 bits el mínimo viable para este modelo.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles.
-- Razonamiento basico y respuesta a preguntas, segun el pipeline declarado de `text-generation`.
-- Capacidad de mantener conversaciones multi-turno (tag `conversational`).
-- Al ser un MoE con 1,3B parametros activos, ofrece un equilibrio entre calidad y coste computacional.
-- No se declara soporte de tool calling ni function calling en la informacion disponible.
-- No se declara soporte de vision, audio ni modo thinking.
-- Soporte multilingue limitado al ingles.
-- No se documentan capacidades de agente ni razonamiento multi-paso.
+- Generación de texto conversacional en inglés, con pipeline declarado `text-generation`.
+- Razonamiento y lógica general, preservados gracias a la protección del router y a la retención de al menos 3 bits en los expertos enrutados.
+- Procesamiento de contexto moderado: el ejemplo oficial emplea 8.192 tokens de contexto.
+- Ejecución en CPU con el runtime `ik_llama.cpp`, incluyendo soporte de los kernels `_KS`.
+- Compatibilidad con endpoints (`endpoints_compatible`) según los tags del repositorio.
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas al inglés según el campo `language`.
+- Capacidades de visión o audio: no disponibles.
 
 ## Casos de uso
 
-- Asistente conversacional local en ingles: el modelo puede gestionar dialogos multi-turno en equipos con 8 GB de RAM, gracias a las cuantizaciones de 3,7-4,3 GB y al uso de contexto de 8K segun el ejemplo del autor.
-- Prototipado de aplicaciones de generacion de texto en CPU: con velocidades de 14-16 tokens/s en un i5-8250U, es viable para demos y pruebas de concepto sin GPU.
-- Educacion e investigacion sobre MoE: sirve para estudiar el comportamiento de un MoE de 128 expertos enrutados y el impacto de distintas estrategias de cuantizacion sobre la perplejidad.
-- Despliegue en entornos con restricciones de memoria: al requerir ~5,5 GB de RAM con contexto de 8K, cabe en portatiles y mini-PC de gama baja.
-- Generacion de texto por lotes en ingles: para tareas de resumen, parafraseo o clasificacion simple donde no se requiera maxima fidelidad.
-- Evaluacion comparativa de cuantizaciones: los tres niveles (IK-Quality, IK-Balanced, IK-Compact) permiten medir el compromiso entre tamano, velocidad y calidad en un mismo hardware.
-- Chatbots de bajo coste para nichos en ingles: con licencia MIT, se puede integrar en productos comerciales sin restricciones de licencia.
+- Inferencia en CPU de bajo consumo: con 4 hilos en un i5-8250U y contexto de 8K, la variante IK-Balanced consume unos 5,5 GB de RAM y genera entre 14 y 16 tokens por segundo, lo que permite desplegar un MoE de 7,9 B en portátiles sin GPU dedicada.
+- Estaciones de trabajo con 8 GB de RAM: la variante IK-Compact (3,7 GB) deja margen suficiente para el sistema operativo y aplicaciones auxiliares, siendo adecuada para asistentes locales de escritorio.
+- Prototipado y evaluación de modelos MoE: la escalera de perplejidad publicada permite elegir el punto de compromiso entre tamaño y fidelidad antes de invertir en infraestructura.
+- Generación de texto por lotes en servidores sin acelerador: la evaluación de prompt ronda los 90 tokens por segundo en CPU, un valor razonable para tareas de resumen o clasificación por lotes.
+- Entornos con requisitos de licencia permisiva: la licencia MIT del repositorio y del modelo base facilita la integración en productos comerciales sin obligaciones de copyleft.
+- Investigación sobre cuantización de MoE: el repositorio sirve como referencia reproducible de cómo la protección del router y de los expertos compartidos afecta a la perplejidad final.
+- Despliegue en contenedores ligeros: al no requerir GPU, el binario de `ik_llama.cpp` junto con el GGUF de 4,0 GB puede empaquetarse en imágenes de contenedor modestas para servicios internos de generación de texto.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos de rendimiento publicados son mediciones de perplejidad sobre `wiki.test.raw` (`n_ctx=512`, 100 chunks) frente a una referencia Q6_K, junto con metricas de velocidad en un i5-8250U.
+Los únicos datos publicados son mediciones de perplejidad sobre `wiki.test.raw` (`n_ctx=512`, 100 fragmentos) frente a una base Q6_K, junto con métricas de velocidad en CPU.
 
-| Quant | Tamano | PPL | Perdida vs Q6 | Configuracion |
+| Variante | Tamano | PPL | Perdida vs Q6_K | Configuracion |
 |---|---|---|---|---|
-| Q6_K Baseline | 6,9 GB | 6,822 | 0,0 % | Referencia sin comprimir |
-| IK-Quality | 4,3 GB | 6,945 | +1,8 % | IQ4_KS expertos + Q8_0 compartidos + IQ6_K atencion |
-| IK-Balanced | 4,0 GB | 7,008 | +2,7 % | IQ4_KSS expertos + IQ6_K compartidos |
-| IK-Compact | 3,7 GB | 7,084 | +3,8 % | IQ3_KS / IQ3_XXS expertos |
+| Q6_K (referencia) | 6,9 GB | 6,822 | 0,0 % | Referencia sin comprimir |
+| IK-Quality | 4,3 GB | 6,945 | +1,8 % | Expertos IQ4_KS, compartidos Q8_0, atencion IQ6_K |
+| IK-Balanced | 4,0 GB | 7,008 | +2,7 % | Expertos IQ4_KSS, compartidos IQ6_K |
+| IK-Compact | 3,7 GB | 7,084 | +3,8 % | Expertos IQ3_KS / IQ3_XXS |
 
-Rendimiento en i5-8250U (4 hilos):
-
-| Metrica | Valor |
+| Metrica de velocidad (i5-8250U, 4 hilos) | Valor |
 |---|---|
-| Prompt eval | ~90 tokens/s |
+| Evaluacion de prompt | ~90 tokens/s |
 | Generacion | ~14-16 tokens/s |
-| RAM con contexto 8K | ~5,5 GB |
+| RAM con contexto de 8K | ~5,5 GB |
 
-El autor indica que probo builds por debajo de 3,5 GB y todos superaron una PPL de 8,4, concluyendo que los 128 expertos enrutados de Ling requieren al menos 3 bits de precision para retener la logica.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: entre 3,7 GB y 4,3 GB para los pesos segun cuantizacion; ~5,5 GB de RAM total con contexto de 8K.
-- Cabe en GPUs de consumo con 8 GB o mas (RTX 3060, RTX 4060, RTX 2070), aunque el runtime objetivo es CPU.
-- Cabe en sistemas con 8 GB de RAM sin GPU dedicada, segun el ejemplo del autor.
-- GPU recomendadas: no se especifican; el modelo esta orientado a inferencia en CPU mediante `ik_llama.cpp`.
-- Opciones de despliegue: exclusivamente `ik_llama.cpp`. No es compatible con `llama.cpp` estandar, Ollama ni LM Studio.
-- Latencia y throughput: ~90 tokens/s en prompt eval y ~14-16 tokens/s en generacion sobre i5-8250U con 4 hilos. No hay datos para otras plataformas.
+- VRAM: no aplica para las variantes documentadas, que están pensadas para inferencia en CPU; no se proporcionan estimaciones de VRAM para despliegue en GPU.
+- RAM: aproximadamente 5,5 GB con contexto de 8K para la variante IK-Balanced; la variante IK-Compact (3,7 GB en disco) está pensada para sistemas con 8 GB de RAM.
+- GPU recomendadas: no disponible en la información proporcionada; el repositorio no documenta despliegue en A100, H100 ni RTX 4090.
+- Cabe en GPU de consumo: no disponible; el runtime objetivo es `ik_llama.cpp` en CPU.
+- Opciones de despliegue: exclusivamente `ik_llama.cpp` (https://github.com/ikawrakow/ik_llama.cpp). No es compatible con `llama.cpp` estándar, Ollama ni LM Studio.
+- Latencia y throughput: ~90 tokens/s en evaluación de prompt y ~14-16 tokens/s en generación sobre un i5-8250U con 4 hilos y contexto de 8K.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Runtime |
+| Modelo | Parametros | Contexto | Licencia | Formato / runtime | Notas |
 |---|---|---|---|---|---|
-| Ling-3.0-tiny-APEX-MCQ5-IK-GGUF | 7,9B totales / ~1,3B activos | no disponible | GGUF (IK) | MIT | ik_llama.cpp |
-| bartowski/Ling-3.0-tiny-GGUF | 7,9B totales / ~1,3B activos | no disponible | GGUF estandar | MIT (heredada) | llama.cpp, Ollama, LM Studio |
-| inclusionAI/Ling-3.0-tiny (base) | 7,9B totales / ~1,3B activos | no disponible | safetensors | MIT | Transformers, vLLM, TGI |
+| Ling-3.0-tiny-APEX-MCQ5-IK-GGUF | 7,9 B totales / 1,3 B activos | No disponible | MIT | GGUF para `ik_llama.cpp` | Cuantizaciones optimizadas con protección de router y gradiente APEX |
+| inclusionAI/Ling-3.0-tiny (base) | 7,9 B totales / 1,3 B activos | No disponible | No disponible en la informacion proporcionada | Safetensors y derivados | Modelo original sin cuantizar |
+| Cuantizaciones APEX estándar de Ling-3.0-tiny | 7,9 B totales / 1,3 B activos | No disponible | No disponible en la informacion proporcionada | GGUF | El autor las describe como mayores y más lentas que esta suite híbrida |
 
-La diferencia principal frente a la version de bartowski es la compatibilidad de runtime: la de bartowski funciona en herramientas estandar, mientras que esta requiere `ik_llama.cpp` y ofrece tamanos mas reducidos (3,7-4,3 GB frente a los ~4-5 GB tipicos de cuantizaciones estandar equivalentes). No se dispone de datos de benchmarks comparativos con otros modelos de la misma categoria.
+No se dispone de datos de benchmarks comparativos con otros modelos de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Requiere obligatoriamente `ik_llama.cpp`; no carga en `llama.cpp` estandar, Ollama ni LM Studio. Esto reduce drasticamente la portabilidad.
-- Solo soporta ingles; no hay capacidades multilingues documentadas.
-- No se han publicado datos sobre sesgos del modelo base ni sobre riesgo de alucinacion.
-- El autor advierte que cuantizaciones por debajo de 3,5 GB degradan la logica del modelo (PPL > 8,4), por lo que no se recomienda bajar de 3 bits.
-- La licencia MIT permite uso comercial sin restricciones, pero se hereda del modelo base inclusionAI/Ling-3.0-tiny; conviene verificar la licencia original.
-- No se documenta soporte de tool calling, agentes ni contextos superiores a 8K en los ejemplos.
-- El modelo tiene 0 likes y 501 descargas, lo que indica una adopcion muy limitada y poca validacion por parte de la comunidad.
-- Al ser una cuantizacion de un modelo base, cualquier limitacion del modelo original (sesgos, alucinaciones, conocimiento desactualizado) se mantiene.
+- Dependencia estricta de `ik_llama.cpp`: los tensores `IQ2_KS`, `IQ3_KS`, `IQ4_KS` e `IQ4_KSS` no cargan en `llama.cpp` estándar, Ollama ni LM Studio, lo que limita las opciones de despliegue.
+- Idioma: el modelo solo declara soporte de inglés, por lo que su uso en castellano u otros idiomas no está respaldado por el autor.
+- Licencia: el repositorio y el modelo base se distribuyen bajo MIT, lo que permite uso comercial, pero conviene verificar las condiciones del modelo base en su propia model card.
+- Riesgo de alucinación: no se documenta ningún proceso de alineación o mitigación específico en este repositorio; el comportamiento conversacional depende del modelo base.
+- Sesgos: no se proporciona información sobre sesgos conocidos del modelo base ni de las cuantizaciones.
+- Precisión mínima: el autor advierte que las builds por debajo de 3,5 GB superan una perplejidad de 8,4, por lo que no se recomienda bajar de 3 bits en los expertos enrutados.
+- Longitud de contexto: no se especifica la ventana máxima nativa; el ejemplo oficial usa 8.192 tokens, pero no se confirma que sea el límite.
+- Madurez del repositorio: solo 2 likes y 1.728 descargas en el momento de la consulta, con una única actualización reciente; conviene validar la reproducibilidad de las métricas en el propio entorno.
 
 ## Enlaces
 
-- Hugging Face (esta cuantizacion): https://huggingface.co/Unluckkie/Ling-3.0-tiny-APEX-MCQ5-IK-GGUF
-- README de la cuantizacion: https://huggingface.co/Unluckkie/Ling-3.0-tiny-APEX-MCQ5-IK-GGUF/blob/main/README.md
+- Repositorio Hugging Face: https://huggingface.co/Unluckkie/Ling-3.0-tiny-APEX-MCQ5-IK-GGUF
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-tiny
-- Modelo base (variante base): https://huggingface.co/inclusionAI/Ling-3.0-tiny-base
-- Cuantizacion alternativa de bartowski: https://huggingface.co/bartowski/Ling-3.0-tiny-GGUF
-- Repositorio de ik_llama.cpp: https://github.com/ikawrakow/ik_llama.cpp
+- Modelo base (variante base citada en la model card): https://huggingface.co/inclusionAI/Ling-3.0-tiny-base
+- Runtime requerido: https://github.com/ikawrakow/ik_llama.cpp

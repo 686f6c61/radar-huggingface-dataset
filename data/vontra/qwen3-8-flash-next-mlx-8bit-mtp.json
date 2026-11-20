@@ -56,31 +56,5 @@
   "renamed_to": "TensorFold/Qwen3.8-Flash-Next-MLX-8bit-MTP",
   "renamed_at": "2026-11-11T04:09:32.311Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GitHub - QwenLM/Qwen3.8-Flash-Next: Qwen3.8-Flash-Next is the ...",
-      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
-      "snippet": "QwenWork Qwen3.8-Flash-Next now powers the newly-launched \"Standard\" mode on QwenWork. QwenWork is a one-stop AI working platform launched by Alibaba. Follow its documentation to get started!"
-    },
-    {
-      "title": "Vontra/Qwen3.8-Flash-Next-MLX-4bit · Hugging Face",
-      "url": "https://huggingface.co/Vontra/Qwen3.8-Flash-Next-MLX-4bit",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes - recipes.vllm.ai",
-      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
-      "snippet": "Overview Qwen3.8-Flash-Next is a multimodal, ultra-sparse Mixture-of-Experts model. It has 125B parameters, including an additional 51B N-gram embedding table, while activating 6B parameters per token. The architecture combines four main ideas: GDN + QSA: three of every four layers use Gated DeltaNet to compress history; the fourth uses Qwen Sparse Attention for precise long-range retrieval ..."
-    },
-    {
-      "title": "Qwen3.8 | OpenLM.ai",
-      "url": "https://openlm.ai/qwen3.8/",
-      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
-    },
-    {
-      "title": "Vontra (Vontra) - Hugging Face",
-      "url": "https://huggingface.co/Vontra/models",
-      "snippet": "AI & ML interests Exploring local AI and sharing MLX work with the community."
-    }
-  ]
+  "sources": []
 }

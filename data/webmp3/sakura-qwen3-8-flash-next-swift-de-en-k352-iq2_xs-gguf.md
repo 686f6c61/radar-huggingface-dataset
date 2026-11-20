@@ -2,126 +2,102 @@
 
 ## Resumen
 
-Sakura-Qwen3.8-Flash-Next-Swift-DE-EN-K352-IQ2_XS-GGUF es una compilación experimental de la comunidad, publicada por webmp3, que parte del fine-tune Swift 1.5 de UkisAI sobre Qwen3.8-Flash-Next. Se trata de un modelo MoE de arquitectura qwen4exp con 48 capas, 512 expertos enrutados y 10 expertos activos por token. Esta build conserva 352 de los 512 expertos por capa, seleccionados mediante estadísticas de enrutador sobre una mezcla de calibración en alemán e inglés, y mantiene la cuantización IQ2_XS (GSQ-RCO, aproximadamente 2,5 bits) sin recuantizar. El resultado pesa 53,08 GiB en dos shards GGUF y está pensado para ejecutarse en una única GPU de 32 GB, en concreto una Radeon 8060S con 64 GB de memoria unificada (Strix Halo), con carga perezosa de la tabla de tokens.
+Sakura-Qwen3.8-Flash-Next-Swift-DE-EN-K352-IQ2_XS-GGUF es una compilación experimental en formato GGUF del fine-tune Swift 1.5 de UkisAI sobre Qwen3.8-Flash-Next, publicada por el usuario webmp3 dentro de la línea "Sakura Micro". Se trata de una poda de expertos (expert pruning) aplicada sobre una cuantización IQ2_XS (GSQ-RCO, ~2,5 bits) ya existente: se conservan 352 de los 512 expertos enrutados por capa, seleccionados mediante estadísticas de enrutamiento sobre una mezcla de calibración en alemán e inglés, y se eliminan los 160 restantes sin recuantizar. El resultado ocupa 53,08 GiB repartidos en dos shards.
 
-El modelo base Qwen3.8-Flash-Next es una vista previa abierta de la arquitectura de Qwen4, con atención híbrida GDN + QSA, una tabla de embeddings n-grama de gran tamaño y una cabeza MTP compartida para decodificación especulativa. Swift 1.5 reduce el número de tokens de pensamiento respecto al modelo base. Esta build no es una versión oficial de Qwen ni de UkisAI, sino una poda de expertos orientada a alemán e inglés. Su relevancia actual es que permite ejecutar localmente un MoE de escala 139B (parámetros del checkpoint base) en hardware de consumo alto, a costa de una cuantización agresiva y de la eliminación de expertos.
+El modelo subyacente es un transformer MoE de arquitectura `qwen4exp` con 48 capas, 512 expertos y 10 activos por token, y un total de 139.175.502.720 parámetros según los datos reales del repositorio. La motivación principal de esta build es el ajuste a hardware de consumo: alrededor de 26 GiB de pesos quedan residentes en la GPU, lo que permite ejecutarla en una tarjeta de 32 GB (probado en una Radeon 8060S con 32 GiB de carve-out dedicado en un Strix Halo de 64 GB). La tabla de tokens por capa de 26,8 GiB se mantiene en disco o RAM mediante carga perezosa.
 
-## Especificaciones técnicas
+Es relevante ahora porque demuestra una técnica práctica de reducción de modelos MoE masivos para inferencia local: la poda selectiva de expertos por estadísticas de router permite bajar el peso en VRAM sin recuantizar, manteniendo una perplejidad dentro de ±1 % respecto a la build de 512 expertos. No es una versión oficial de Qwen ni de UkisAI, sino una compilación independiente de la comunidad, orientada a alemán e inglés y con una licencia propia (`swift-open-license-v1.0`).
 
-| Parámetro | Valor |
+## Especificaciones tecnicas
+
+| Parametro | Valor |
 |---|---|
-| Arquitectura | MoE transformer (qwen4exp) con atención híbrida GDN + QSA; 48 capas; 512 expertos enrutados; 10 expertos activos por token en la base |
-| Parámetros totales | 139.175.502.720 en el checkpoint base (dato de safetensors); este GGUF conserva 352/512 expertos, por lo que su recuento efectivo es menor y no está desglosado en la información disponible |
-| Parámetros activos | 10 expertos activos por token (base); el número exacto tras la poda no está especificado |
-| Longitud de contexto | 32.000 tokens probados en la model card; máximo no disponible |
-| Tipos de cuantización | IQ2_XS (GSQ-RCO, ~2,5 bits); cabeza MTP compartida en Q4_K_M; existe un hermano IQ3_XXS |
-| Idiomas soportados | Alemán (de) e inglés (en) |
-| Licencia | swift-open-license-v1.0 (license: other); consultar el archivo LICENSE |
-| Formato de pesos | GGUF, 2 shards: 00001-of-00002 (34,31 GiB) y 00002-of-00002 (18,77 GiB) |
-| Tamaño del repositorio | 57,0 GB |
-| Modelo base | ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF |
-| Autor | webmp3 |
-| Fecha de creación | 2026-09-30 |
+| Arquitectura | Transformer MoE (`qwen4exp`), 48 capas, 512 expertos, 10 activos |
+| Parametros totales | 139.175.502.720 |
+| Parametros activos | 10 expertos por token (número exacto de parámetros activos no disponible) |
+| Longitud de contexto | 32k (usado en las pruebas; máximo no disponible) |
+| Tipos de cuantizacion | IQ2_XS (GSQ-RCO, ~2,5 bits) con poda de expertos a 352/512 por capa |
+| Idiomas soportados | Alemán (de), inglés (en) |
+| Licencia | swift-open-license-v1.0 (`license: other`) |
+| Formato de pesos | GGUF (2 shards: 34,31 GiB + 18,77 GiB) |
 
 ## Arquitectura y entrenamiento
 
-Qwen3.8-Flash-Next introduce mejoras en atención, residuales, embeddings y optimización. Su atención es híbrida GDN + QSA, con 48 capas, 512 expertos enrutados y 10 expertos activos por token. El checkpoint incluye además una tabla de embeddings n-grama de gran tamaño (51B parámetros según la guía de Atomic Chat) y una cabeza MTP de 4B parámetros. En esta build, la tabla de tokens por capa ocupa 26,8 GiB y debe permanecer en disco o RAM con carga perezosa (`-lm dio --lazy-mode on`), mientras que los pesos residentes en GPU son de aproximadamente 26 GiB. UkisAI realizó el fine-tune Swift 1.5, que reduce los tokens de pensamiento, y posteriormente la cuantización GSQ-RCO en el nivel IQ2_XS. webmp3 aplicó una poda de expertos sin recuantización: conservó 352 de 512 expertos por capa mediante estadísticas de enrutador (routing mass) medidas con `llama-expert-stats` sobre una mezcla de calibración en alemán e inglés; un experto se conserva si es relevante en cualquiera de los dos idiomas. La misma medición sobre el modelo Swift da un conjunto con un 98 % de solapamiento.
+La arquitectura base es un transformer de mezcla de expertos (`qwen4exp`) con 48 capas, 512 expertos enrutados por capa y 10 activos por token, sobre el que UkisAI aplicó un fine-tune (Swift 1.5) y una cuantización IQ2_XS con GSQ-RCO. La model card indica que Swift reduce de forma clara el número de tokens de "thinking" respecto al modelo base, lo que lo hace más adecuado para inferencia con presupuesto de tokens ajustado. No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO.
 
-No se dispone de información sobre el número exacto de tokens de entrenamiento, la composición del dataset original de Qwen3.8-Flash-Next, ni sobre si hubo RLHF, DPO u otras fases de alineamiento. La innovación destacable de esta build es la combinación de poda de expertos selectiva por idioma, cuantización extrema IQ2_XS y decodificación especulativa mediante cabeza MTP compartida, junto con la carga perezosa de la tabla de tokens para ajustar el modelo a una GPU de 32 GB.
+La innovación de esta build concreta es la poda de expertos: se conservan 352 de los 512 expertos por capa según las estadísticas de masa de enrutamiento medidas con `llama-expert-stats` sobre una mezcla de calibración en alemán e inglés, manteniendo un experto si es "caliente" en cualquiera de los dos idiomas. La selección se hizo sobre el modelo Qwen3.8-Flash-Next cuantizado por ISTA, y la superposición con el conjunto obtenido midiendo directamente el modelo Swift es del 98 %. Los expertos se eliminan del GGUF sin recuantizar, y la lista de expertos conservados está en `kept_experts_K352.json`. La build incluye soporte para una cabeza MTP (multi-token prediction) compartida como sidecar, que requiere un fork de llama.cpp (`danielhanchen/llama.cpp`, rama `qwen4exp/mtp`).
 
 ## Capacidades
 
-- Generación de texto conversacional en alemán e inglés.
-- Razonamiento y resolución de problemas de código: 7 de 8 tareas propias de estilo LeetCode/AtCoder superadas en las pruebas del autor.
-- Modo de pensamiento con presupuesto limitado: Swift 1.5 usa menos tokens de pensamiento que el modelo base.
-- Decodificación especulativa mediante cabeza MTP compartida (requiere un fork de llama.cpp).
-- Capacidades multilingües limitadas a alemán e inglés; no se documentan otros idiomas en esta build.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no evaluado formalmente; las tareas duras ejecutadas sugieren cierta capacidad, pero no hay datos concluyentes.
-- Visión, audio u otras modalidades: no disponible.
-- Ejecución local en llama.cpp con backend Vulkan o ROCm.
+- Generación de texto conversacional en alemán e inglés, con control de idioma medido (proporción de palabras en idioma incorrecto: 0,005 en DE y 0,01 en EN frente a un umbral de 0,06).
+- Razonamiento con modo "thinking" acotado: el fine-tune Swift reduce el número de tokens de pensamiento respecto al base.
+- Generación de código: en las pruebas del autor resolvió 7 de 8 tareas tipo LeetCode/AtCoder y 10 de 12 tareas de un conjunto congelado de 32 tareas más difíciles.
+- Decodificación especulativa mediante cabeza MTP compartida (sidecar `mtp-Qwen3.8-Flash-Next-shared-Q4_K_M.gguf`, 1,78 GiB), con `n-max` 2 o 3.
+- Carga perezosa de la tabla de tokens por capa (`-lm dio --lazy-mode on`) para mantenerla en disco o RAM.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades de visión o audio: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Asistente conversacional local en alemán e inglés: el modelo puede mantener diálogos multi-turno con hasta 32.000 tokens de contexto, adecuado para equipos que necesitan privacidad y no quieren depender de APIs externas.
-- Generación de código en local: las pruebas del autor muestran 7/8 tareas de programación resueltas, por lo que puede integrarse en entornos de desarrollo con GPU de 32 GB para autocompletado, revisión o generación de fragmentos.
-- Análisis de documentos largos en alemán o inglés: con 32k de contexto y carga perezosa de la tabla de tokens, permite resumir o extraer información de informes extensos sin enviar datos a la nube.
-- Traducción y redacción bilingüe de/en: la selección de expertos se hizo precisamente sobre una mezcla de calibración en ambos idiomas, lo que lo hace adecuado para tareas de traducción técnica o redacción corporativa.
-- Investigación en poda de expertos y cuantización extrema: sirve como banco de pruebas para estudiar el impacto de conservar 352 de 512 expertos con cuantización IQ2_XS en comparación con el modelo completo.
-- Prototipado de agentes con decodificación especulativa: la cabeza MTP permite aumentar el throughput en tareas de razonamiento multi-paso, siempre que se use el fork de llama.cpp adecuado.
-- Despliegue en estaciones Strix Halo o mini-PC con memoria unificada: el modelo cabe en 32 GB de VRAM dedicada más memoria compartida, lo que habilita inferencia local en hardware compacto.
-- Evaluación comparativa de MoE en hardware de consumo: útil para medir latencia, perplejidad y calidad frente a alternativas densas o MoE de menor tamaño.
+- Inferencia local en una GPU de 32 GB: la build está diseñada para que unos 26 GiB de pesos queden residentes en la GPU y la tabla de tokens de 26,8 GiB se lea de forma perezosa desde disco o RAM, lo que permite ejecutar un MoE de 139B en una Radeon 8060S con 32 GiB de carve-out dedicado.
+- Asistencia conversacional en alemán e inglés: el control de idioma medido (0,005 y 0,01 de palabras en idioma incorrecto) y la ausencia de bucles y respuestas en CJK en las pruebas lo hacen apto para chatbots bilingües DE/EN con prompts multi-turno.
+- Generación de código en local: con 7/8 y 10/12 tareas resueltas en las pruebas del autor, puede usarse como asistente de programación en entornos sin acceso a la nube, aceptando un presupuesto de pensamiento de 10.000 tokens y un máximo de 12.288 tokens generados.
+- Despliegue con llama.cpp en Vulkan o ROCm: la model card documenta velocidades de 37,6 tok/s de decodificación y 238 tok/s de prefill con especulación en Vulkan, y 21,6 tok/s de decodificación y 322 tok/s de prefill en ROCm sin especulación, lo que permite dimensionar servidores locales.
+- Experimentación con poda de expertos: sirve como caso de estudio reproducible para investigar la selección de expertos por estadísticas de router, con la lista `kept_experts_K352.json` y la comparación de perplejidad frente a la build de 512 expertos.
+- Evaluación comparativa de cuantizaciones de muy baja precisión: la perplejidad retenida (2,0681 en alemán y 1,8229 en inglés) permite comparar IQ2_XS con la build de 3 bits (2,0514 / 1,8231) en el mismo conjunto de textos.
+- Pruebas de decodificación especulativa con MTP: la build incluye la cabeza MTP como sidecar y documenta el efecto de `n-max` 2 y 3 sobre prefill y decodificación, útil para ajustar servidores llama.cpp con especulación.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar como MMLU, HumanEval o GSM8K en la información disponible. Los datos siguientes son mediciones propias del autor sobre este archivo exacto.
+| Prueba | Resultado |
+|---|---|
+| Control de idioma (14 prompts DE + 14 EN), proporción de palabras en idioma incorrecto | DE 0,005 / EN 0,01 (umbral ≤ 0,06) |
+| Bucles / respuestas en CJK | 0 / 0 |
+| Perplejidad en textos reservados (mezcla DE / mezcla EN) | 2,0681 / 1,8229 |
+| Decodificación / prefill con especulación (Vulkan, `-b/-ub` 2048, MTP n-max 2) | 37,6 tok/s / 238,0 tok/s |
+| Decodificación / prefill con especulación (Vulkan, MTP n-max 3) | 35,2 tok/s / 253,3 tok/s |
+| Decodificación sin especulación (llama.cpp oficial, Vulkan) | ~24 tok/s |
+| Decodificación / prefill en ROCm sin especulación | 21,6 tok/s / 322 tok/s |
+| Tareas de código propias (8 tareas LeetCode/AtCoder) | 7/8 superadas (33.430 tokens generados, ~18,0 min) |
+| Tareas 9-20 del conjunto congelado de 32 tareas | 10/12 superadas (85.714 tokens generados) |
 
-| Prueba | Resultado | Configuración |
-|---|---|---|
-| Perplejidad retenida (alemán) | 2,0681 | llama-perplexity, contexto 512, 40 chunks de textos propios |
-| Perplejidad retenida (inglés) | 1,8229 | llama-perplexity, contexto 512, 40 chunks de textos propios |
-| Puerta de idioma (14 DE + 14 EN) | DE 0,005 / EN 0,01 de palabras en idioma incorrecto (umbral ≤ 0,06) | Medición con llama.cpp oficial b11259 (Vulkan) |
-| Bucles / respuestas CJK | 0 / 0 | Medición con llama.cpp oficial b11259 (Vulkan) |
-| Decodificación | 37,6 tok/s con MTP n-max 2; 35,2 tok/s con MTP n-max 3 | Strix Halo, Radeon 8060S, 64 GB, Windows, Vulkan, 32k contexto, KV q8_0, `-ub 2048` |
-| Prefill | 238,0 tok/s con MTP n-max 2; 253,3 tok/s con MTP n-max 3 | Misma configuración |
-| Decodificación sin especulación | ~24 tok/s | llama.cpp oficial b11259 y b11297, Vulkan |
-| ROCm sin especulación | 322 tok/s prefill, 21,6 tok/s decodificación | Build comunitaria halo-box |
-| Tareas de código propias | 7/8 superadas | 8 tareas LeetCode/AtCoder, thinking budget 10000, max 12288 tokens, temperatura 0,6, top-p 0,95, top-k 20 |
-| Tareas más difíciles | 3 de 5 superadas | Tareas que un modelo denso 27B (Swift 1.5 27B Q5_K_M) no resolvió en el mismo protocolo |
-
-Comparación de perplejidad retenida con otras builds del mismo linaje:
-
-| Build | Perplejidad DE | Perplejidad EN |
-|---|---:|---:|
-| Este build (352/512 expertos, IQ2_XS) | 2,0681 | 1,8229 |
-| Swift 512 expertos, IQ2_XS | 2,0605 | 1,8245 |
-| Hermano 3-bit (352/512 expertos, IQ3_XXS) | 2,0514 | 1,8231 |
-
-Las diferencias entre estas builds están dentro de aproximadamente ±1 %, por lo que la perplejidad no permite separarlas de forma concluyente.
+Referencia de perplejidad de otras builds sobre los mismos textos: Swift 512 expertos IQ2_XS 2,0605 / 1,8245; build de 3 bits 2,0514 / 1,8231. Las diferencias entre builds están dentro de ±1 %.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: unos 26 GiB de pesos residen en la GPU; la tabla de tokens por capa de 26,8 GiB permanece en disco o RAM con carga perezosa. Con 32k de contexto, KV q8_0, cabeza MTP y `-ub 2048`, el servidor usó 29,9 GiB de memoria GPU dedicada más 5,7 GiB de memoria compartida.
-- GPU recomendadas: el autor probó una Radeon 8060S con 64 GB de memoria unificada (Strix Halo) y un carve-out dedicado de 32 GiB. No se probó una tarjeta discreta de 32 GB. No hay datos para A100, H100, RTX 4090 u otras GPU en la información disponible.
-- Compatibilidad con GPU de consumo: sí cabe en una GPU de 32 GB, siempre que se use carga perezosa para la tabla de tokens. El hermano de 3 bits necesita unos 31,4 GiB de pesos en GPU y no cabe en una tarjeta de 32 GB.
-- Opciones de despliegue: llama.cpp. Para usar la cabeza MTP se requiere el fork `github.com/danielhanchen/llama.cpp`, rama `qwen4exp/mtp`, commit `6fcaa16` (21 de septiembre de 2026). El autor lo compiló para Vulkan con MSVC y Vulkan SDK 1.4.357. También hay una build comunitaria ROCm para halo-box sin especulación. No se mencionan vLLM, Ollama ni TGI en la información disponible.
-- Latencia y throughput medidos: 37,6 tok/s de decodificación y 238 tok/s de prefill con MTP n-max 2; 35,2 tok/s y 253,3 tok/s con n-max 3; aproximadamente 24 tok/s de decodificación sin especulación en llama.cpp oficial; 21,6 tok/s de decodificación y 322 tok/s de prefill en ROCm sin especulación.
-- Almacenamiento: el repositorio ocupa 57,0 GB; los dos shards suman 53,08 GiB. Se incluye `SHA256SUMS` con las sumas de verificación. Se debe cargar el shard 1 y llama.cpp localiza el shard 2 automáticamente.
+- VRAM estimada: unos 26 GiB de pesos en GPU; con contexto de 32k, KV cache q8_0, cabeza MTP y `-ub 2048` el servidor usó 29,9 GiB de memoria dedicada más 5,7 GiB de memoria compartida en la prueba del autor. Sin la cabeza MTP necesita unos 1,8 GiB menos.
+- GPU recomendadas: Radeon 8060S (Strix Halo, 64 GB, con carve-out de 32 GiB); no se probó en tarjetas discretas de 32 GB.
+- Cabe en GPU de consumo de 32 GB con la configuración de carga perezosa indicada; la build de 3 bits hermana necesita unos 31,4 GiB de pesos en GPU y no cabe en 32 GB.
+- Opciones de despliegue: llama.cpp (build oficial b11259 o b11297 para control de idioma y perplejidad; fork `danielhanchen/llama.cpp` rama `qwen4exp/mtp` commit `6fcaa16` para especulación MTP), compilado para Vulkan o ROCm. Se requiere `-lm dio --lazy-mode on` para la tabla de tokens perezosa.
+- Latencia y throughput: 37,6 tok/s de decodificación y 238 tok/s de prefill con MTP n-max 2 en Vulkan; 21,6 tok/s de decodificación y 322 tok/s de prefill en ROCm sin especulación.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros / expertos | Cuantización | Peso en GPU | Perplejidad DE / EN | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Este build (Sakura K352 IQ2_XS) | 352/512 expertos | IQ2_XS, ~2,5 bits | ~26 GiB | 2,0681 / 1,8229 | swift-open-license-v1.0 | Hugging Face |
-| Sakura K352 IQ3_XXS (hermano 3-bit) | 352/512 expertos | IQ3_XXS | ~31,4 GiB (no cabe en 32 GB) | 2,0514 / 1,8231 | No disponible en la información; presumiblemente la misma | Hugging Face |
-| Swift 1.5 IQ2_XS (512 expertos) | 512/512 expertos | IQ2_XS | No disponible | 2,0605 / 1,8245 | No disponible | Hugging Face |
-| Qwen3.8-Flash-Next (base) | 125B totales / 6B activos según la guía de Atomic Chat; 139.175.502.720 según la ficha de Hugging Face | No disponible | No disponible | No disponible | No disponible | Hugging Face y GitHub de QwenLM |
-
-La guía de Atomic Chat describe el checkpoint base como 125B totales y 6B activos por token, con tabla n-grama de 51B y cabeza MTP de 4B. La ficha de Hugging Face de este repositorio lista 139.175.502.720 parámetros para el checkpoint base. No hay una cifra oficial unificada en la información disponible. Las diferencias de perplejidad entre las builds comparadas son de aproximadamente ±1 %, por lo que no se puede establecer una superioridad clara entre ellas.
+| Modelo | Parámetros | Contexto | Perplejidad (DE/EN) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Sakura-Qwen3.8-Flash-Next-Swift-K352-IQ2_XS (esta build) | 139.175.502.720 totales, 352/512 expertos | 32k (probado) | 2,0681 / 1,8229 | swift-open-license-v1.0 | GGUF, 2 shards, 53,08 GiB |
+| Swift 512 expertos IQ2_XS (base cuantizado) | 139.175.502.720 totales, 512/512 expertos | no disponible | 2,0605 / 1,8245 | no disponible | GGUF |
+| Sakura-Qwen3.8-Flash-Next-Swift-3bit-352E | no disponible, 352/512 expertos | no disponible | 2,0514 / 1,8231 | no disponible | GGUF, ~31,4 GiB en GPU |
 
 ## Limitaciones y advertencias
 
-- Build experimental de la comunidad: no es una versión oficial de Qwen ni de UkisAI. No ha pasado por un proceso de validación externa amplio; en el momento de la ficha tiene 0 descargas y 0 likes.
-- Licencia `other` con nombre swift-open-license-v1.0: es imprescindible revisar el archivo LICENSE antes de cualquier uso comercial. La información disponible no detalla las restricciones concretas.
-- Poda de expertos orientada a alemán e inglés: se eliminaron 160 de los 512 expertos por capa. Esto puede degradar el rendimiento en otros idiomas, dominios técnicos o tareas que dependan de los expertos descartados.
-- Idiomas soportados limitados a alemán e inglés; no hay soporte documentado para español ni para otras lenguas.
-- Cuantización IQ2_XS muy agresiva (aproximadamente 2,5 bits): implica pérdida de precisión. La perplejidad no separa esta build de sus hermanas dentro de ±1 %, lo que sugiere que las diferencias son pequeñas, pero no garantiza un comportamiento equivalente en todas las tareas.
-- Pruebas con muestras pequeñas: 28 prompts para la puerta de idioma y 8 tareas de código. No hay resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estándar.
-- Riesgo de alucinación no medido de forma específica. El autor reporta 0 bucles y 0 respuestas en CJK en su prueba, pero esto no descarta otros modos de fallo.
-- Requiere configuración específica: sin `-lm dio --lazy-mode on` o equivalente, la tabla de tokens de 26,8 GiB puede no caber en memoria. El modelo está ajustado a una GPU de 32 GB con 64 GB de memoria unificada.
-- La cabeza MTP compartida necesita un fork de llama.cpp; no funciona con builds oficiales si se activa la decodificación especulativa.
-- Longitud máxima de contexto no documentada: se probó a 32k, pero no se indica el máximo real de la arquitectura base.
-- Fecha de creación 2026-09-30 y actualización el mismo día; el ecosistema y las herramientas asociadas pueden cambiar rápidamente.
+- Build experimental e independiente: no es un lanzamiento oficial de Qwen ni de UkisAI, y el autor la etiqueta explícitamente como experimental.
+- La poda de expertos se calibró solo con datos de alemán e inglés; el rendimiento en otros idiomas no está medido y puede degradarse.
+- Solo se declaran los idiomas `de` y `en`; no hay soporte multilingüe verificado.
+- Riesgo de alucinación no cuantificado en la información disponible; la perplejidad baja no descarta errores factuales.
+- La licencia `swift-open-license-v1.0` es de tipo `other`; no se detallan en la información proporcionada las restricciones para uso comercial, por lo que debe revisarse el archivo `LICENSE` antes de un despliegue en producción.
+- Requiere un fork específico de llama.cpp para la cabeza MTP; sin él, la decodificación baja a unos 24 tok/s en Vulkan y desaparece la decodificación especulativa.
+- La carga perezosa de la tabla de tokens es obligatoria en configuraciones de 32 GB; sin `-lm dio --lazy-mode on` la memoria requerida aumenta.
+- El rendimiento en ROCm depende de que los pesos residentes quepan en la memoria dedicada; la build de 3 bits hermana "colapsa" en ese entorno según el autor.
+- El tamaño del repositorio (57,0 GB) y los dos shards requieren espacio en disco y verificación de checksums con `SHA256SUMS`.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/webmp3/Sakura-Qwen3.8-Flash-Next-Swift-DE-EN-K352-IQ2_XS-GGUF
-- Modelo base Qwen3.8-Flash-Next: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Repositorio GitHub de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
-- README de Qwen3.8-Flash-Next en GitHub: https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/README.md
-- Fine-tune y cuantización de UkisAI: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF
-- Hermano 3-bit Sakura K352 IQ3_XXS: https://huggingface.co/webmp3/Sakura-Qwen3.8-Flash-Next-Swift-DE-EN-K352-IQ3_XXS-GGUF
+- Modelo base (cuantizado): https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF
+- Modelo original: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Build hermana de 3 bits: https://huggingface.co/webmp3/Sakura-Qwen3.8-Flash-Next-Swift-3bit-352E-GGUF
 - Colección Sakura Micro: https://huggingface.co/collections/webmp3/sakura-micro-6aba74331f2e996ba1268a92
-- Fork de llama.cpp con soporte MTP: https://github.com/danielhanchen/llama.cpp, rama `qwen4exp/mtp`, commit `6fcaa16`
-- Guía de cldnavi sobre Qwen3.8-Flash-Next GGUF: https://cldnavi.com/en/blog/qwen38-flash-next-gguf-guide-2026/
-- Guía de Atomic Chat sobre ejecución local: https://atomic.chat/blog/guides/how-to-run-qwen-3-8-flash-next-locally
+- Comparativa de builds Sakura Flash-Next: https://huggingface.co/webmp3/Sakura-Qwen3.8-Flash-Next-Overview
+- Fork de llama.cpp con soporte MTP: https://github.com/danielhanchen/llama.cpp (rama `qwen4exp/mtp`, commit `6fcaa16`)

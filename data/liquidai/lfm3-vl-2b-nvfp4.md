@@ -2,88 +2,88 @@
 
 ## Resumen
 
-LFM3-VL-2B-NVFP4 es una versión cuantizada en formato NVFP4 (W4A4) del modelo multimodal LFM3-VL-2B de Liquid AI, diseñada específicamente para inferencia en GPU. El modelo base pertenece a la familia LFM (Liquid Foundation Models) de tercera generación y combina un modelo de lenguaje compacto de unos 1.350 millones de parámetros con un encoder de visión, lo que le permite procesar entradas de imagen y texto (pipeline image-text-to-text).
+LFM3-VL-2B-NVFP4 es la version cuantizada en NVFP4 del modelo multimodal LFM3-VL-2B de Liquid AI, disenado para inferencia en GPU con precision de 4 bits. Se trata de un modelo de imagen-a-texto (image-text-to-text) que combina un codificador visual con un modelo de lenguaje de aproximadamente 1.900 millones de parametros (1.918.181.888 segun los pesos en safetensors). La cuantizacion NVFP4 aplica W4A4 con bloques de 16 valores a los pesos y activaciones de las capas feed-forward del lenguaje, manteniendo en BF16 la atencion, convoluciones, embeddings, la cabeza de salida, las normalizaciones, el codificador visual y el proyector.
 
-La relevancia de esta variante radica en la cuantización NVFP4, un formato de 4 bits con bloques de 16 valores que cuantiza los pesos y activaciones del feed-forward del lenguaje mientras mantiene en BF16 la atención, las convoluciones, los embeddings, la cabeza de salida, las normalizaciones, el encoder de visión y el proyector. El resultado es un modelo muy ligero (el repositorio ocupa solo 2,2 GB) que reduce drásticamente los requisitos de memoria sin tocar las configuraciones de ventana deslizante ni RoPE. Soporta 16 idiomas, entre ellos el castellano, y está pensado para despliegues con SGLang en GPUs modernas.
+El modelo pertenece a la familia LFM3 de Liquid AI, que apuesta por arquitecturas hibridas y eficientes en lugar de transformers densos convencionales. Esta version cuantizada reduce el peso del repositorio a 2,2 GB, lo que facilita su despliegue en GPUs con memoria limitada y en entornos de produccion donde el coste por token y la latencia importan. Soporta 16 idiomas, entre ellos el castellano, y esta pensado para tareas conversacionales y de razonamiento sobre imagenes.
 
-## Especificaciones técnicas
+Su relevancia actual radica en que ofrece capacidades multimodales en un formato de 4 bits optimizado para hardware NVIDIA reciente, con soporte previsto para SGLang (actualmente en revision en el repositorio oficial). Es una opcion atractiva para desarrolladores que quieren desplegar un modelo vision-lenguaje pequeno y eficiente sin renunciar a la precision de BF16 en las partes sensibles de la arquitectura.
 
-| Parámetro | Valor |
+## Especificaciones tecnicas
+
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Multimodal (LFM3-VL): modelo de lenguaje LFM3 + encoder de visión y proyector; detalles completos no disponibles en esta ficha |
-| Parámetros totales | 1.351.950.848 (~1,35 B, según safetensors) |
-| Parámetros activos | No aplicable (no es MoE) |
-| Longitud de contexto | No disponible (consultar la ficha del modelo base LFM3-VL-2B) |
-| Tipos de cuantización | NVFP4 (W4A4, bloques de 16 valores) en pesos y activaciones del feed-forward del lenguaje; BF16 en atención, convoluciones, embeddings, cabeza de salida, normas, encoder de visión y proyector |
-| Idiomas soportados | Inglés, árabe, chino, francés, alemán, italiano, japonés, coreano, portugués, español, vietnamita, tailandés, indonesio, hindi, ruso, polaco (16 idiomas) |
-| Licencia | LFM Open License v1.0 (lfm1.0, licencia "other") |
-| Formato de pesos | safetensors (cuantización NVFP4 generada con NVIDIA ModelOpt, según el tag "modelopt") |
+| Arquitectura | no disponible (modelo multimodal image-text-to-text de la familia LFM3; el autor remite a la model card original para detalles de arquitectura) |
+| Parametros totales | 1.918.181.888 (aprox. 1,9B) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | NVFP4 (W4A4, bloques de 16 valores) en pesos y activaciones de las capas feed-forward del lenguaje; BF16 en atencion, convoluciones, embeddings, cabeza de salida, normas, codificador visual y proyector |
+| Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl (16 idiomas) |
+| Licencia | lfm1.0 (licencia propia de Liquid AI, marcada como "other") |
+| Formato de pesos | safetensors (repo de 2,2 GB) |
 
 ## Arquitectura y entrenamiento
 
-LFM3-VL-2B-NVFP4 es una variante de inferencia del modelo base LiquidAI/LFM3-VL-2B, por lo que hereda su arquitectura multimodal: un modelo de lenguaje de la familia LFM3 de Liquid AI combinado con un encoder de visión y un proyector que permiten el pipeline image-text-to-text. La model card indica que la cuantización no altera las configuraciones de ventana deslizante (sliding-window) ni de RoPE, lo que sugiere que el modelo base emplea atención con ventana deslizante y codificación posicional RoPE. Los detalles completos de la arquitectura y del proceso de entrenamiento (número de tokens, composición del dataset, RLHF/DPO) no están disponibles en la información proporcionada y deben consultarse en la model card del modelo base.
+La informacion proporcionada no detalla la arquitectura interna del modelo base LFM3-VL-2B; la model card de esta version cuantizada remite explicitamente a la model card original para los detalles de arquitectura y uso. Lo que si se conoce es que se trata de un modelo multimodal de tipo image-text-to-text que integra un codificador visual y un proyector para alinear representaciones visuales con el espacio del modelo de lenguaje. La familia LFM3 de Liquid AI se caracteriza por explorar arquitecturas eficientes, aunque no se especifica en la informacion disponible si emplea un transformer hibrido, SSM u otra variante.
 
-La innovación técnica principal de esta variante es la cuantización NVFP4: los pesos y activaciones de las capas feed-forward del modelo de lenguaje se cuantizan a 4 bits en bloques de 16 valores (formato W4A4), mientras que los componentes sensibles a la precisión (atención, embeddings, cabeza de salida, normas, encoder de visión y proyector) permanecen en BF16. Esta estrategia híbrida busca maximizar el ahorro de memoria y el rendimiento en GPU manteniendo la calidad del modelo multimodal.
+En cuanto al proceso de cuantizacion, esta version aplica NVFP4 (formato de punto flotante de 4 bits de NVIDIA) con cuantizacion de pesos y activaciones (W4A4) en bloques de 16 valores, limitada a las capas feed-forward del lenguaje. El resto de componentes criticos para la estabilidad numerica y la calidad visual permanecen en BF16. Los ajustes de ventana deslizante (sliding-window) y RoPE no se modifican respecto al modelo original. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si hubo etapas de RLHF o DPO.
 
 ## Capacidades
 
-- Comprensión de imagen y texto (image-text-to-text): analiza imágenes junto con instrucciones en lenguaje natural y genera respuestas textuales.
-- Generación de texto conversacional en 16 idiomas, incluido el castellano.
-- Soporte de tool calling: la model card muestra el arranque del servidor SGLang con `--tool-call-parser auto`.
-- Soporte de razonamiento estructurado: el comando de despliegue incluye `--reasoning-parser auto`, lo que indica compatibilidad con salidas de razonamiento parseables.
-- Capacidades de agente y multi-step reasoning: no disponible explícitamente en la información proporcionada, aunque el soporte de tool calling lo habilita parcialmente.
-- Modo de pensamiento (thinking mode): no disponible explícitamente en la información proporcionada.
-- Audio: no disponible; el pipeline es exclusivamente image-text-to-text.
+- Generacion de texto e inferencia multimodal: el modelo recibe imagenes y texto y genera respuestas en lenguaje natural.
+- Razonamiento sobre imagenes: pipeline image-text-to-text, adecuado para descripcion visual, respuesta a preguntas sobre imagenes y tareas de comprension visual.
+- Soporte multilingue en 16 idiomas, incluido el castellano (es), con cobertura de arabe, chino, frances, aleman, italiano, japones, coreano, portugues, vietnamita, tailandes, indonesio, hindi, ruso y polaco.
+- Formato conversacional: etiquetado como "conversational", lo que indica soporte para dialogos multi-turno.
+- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere integracion con infraestructuras de despliegue tipo API.
+- Soporte de tool calling y parsing de razonamiento: la configuracion de SGLang mostrada en la model card incluye `--reasoning-parser auto` y `--tool-call-parser auto`, lo que indica soporte previsto para function calling y modos de razonamiento.
+- Capacidades de agente y razonamiento multi-paso: no confirmadas explicitamente en la informacion disponible, pero el soporte de tool calling en SGLang apunta en esa direccion.
 
 ## Casos de uso
 
-- Chatbots multimodales en dispositivos o servidores de bajo coste: con solo 2,2 GB de repositorio y cuantización de 4 bits, es adecuado para asistentes que describen o analizan imágenes sin necesidad de GPUs de gama alta.
-- Atención al cliente automatizada con envío de capturas: puede gestionar conversaciones multi-turno en las que el usuario adjunta imágenes (capturas de error, fotos de productos) y responder en castellano u otros idiomas soportados.
-- Moderación y clasificación de contenido visual: su encoder de visión en BF16 permite analizar imágenes con precisión mantenida mientras el resto del modelo corre cuantizado, útil para pipelines de moderación de alto volumen.
-- Generación de descripciones y metadatos de imágenes: etiquetado automático de catálogos, bibliotecas de medios o plataformas de e-commerce en múltiples idiomas.
-- Agentes con tool calling en entornos de producción: el soporte de tool-call-parser en SGLang permite integrarlo en agentes que consultan APIs o ejecutan funciones a partir de entradas multimodales.
-- Despliegue en servidores GPU con alta densidad de modelos: el bajo consumo de memoria de la versión NVFP4 permite alojar muchas réplicas por GPU, ideal para servicios con alta concurrencia y requisitos de latencia baja.
-- Aplicaciones multilingües en mercados internacionales: soporte nativo de 16 idiomas (español, chino, japonés, árabe, hindi, etc.) para productos globales.
+- Atencion al cliente multimodal: el modelo puede gestionar conversaciones multi-turno en las que el usuario adjunta capturas de pantalla, fotos de productos o documentos, y responder en castellano u otros idiomas soportados. Su tamano compacto (1,9B) permite desplegarlo en GPUs de gama media con baja latencia.
+- Descripcion automatica de imagenes en catalogos de e-commerce: generacion de descripciones y metadatos a partir de fotos de producto, con salida multilingue para mercados internacionales.
+- Accesibilidad: generacion de descripciones de imagenes para lectores de pantalla o interfaces de asistencia a personas con discapacidad visual, aprovechando la cuantizacion NVFP4 para reducir el coste de inferencia en servidores.
+- Moderacion de contenido visual: clasificacion y explicacion de imagenes subidas por usuarios, con respuestas textuales que justifiquen la decision, integrable en pipelines de moderacion.
+- Asistencia documental: extraccion de informacion de capturas, formularios o diagramas y respuesta a preguntas sobre ellos en un contexto conversacional.
+- Prototipado rapido de aplicaciones vision-lenguaje: gracias a su peso de 2,2 GB y al formato NVFP4, es viable ejecutarlo en entornos de desarrollo con GPUs consumer recientes, acelerando la iteracion antes de escalar a modelos mayores.
+- Integracion en agentes con tool calling: el soporte previsto en SGLang con parsers automaticos de razonamiento y de llamadas a herramientas permite construir asistentes que consulten APIs externas a partir de informacion visual.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card remite a la ficha del modelo base LFM3-VL-2B para detalles de rendimiento, pero no incluye datos de MMLU, HumanEval ni otras métricas comparativas para esta variante cuantizada.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repositorio ocupa 2,2 GB; añadiendo activaciones, KV cache y los componentes en BF16, un requisito realista sería del orden de 4-6 GB de VRAM (estimación; no disponible un dato oficial).
-- GPU recomendadas: al tratarse de una cuantización NVFP4, está orientada a GPUs NVIDIA con soporte eficiente de 4 bits (por ejemplo, arquitecturas Blackwell como B200/RTX 50xx); también debería funcionar en GPUs Ampere o superiores (A100, RTX 3090/4090) según el soporte del runtime.
-- Consumer GPUs: por tamaño, debería caber cómodamente en GPUs de consumo como la RTX 4060 Ti (16 GB), RTX 4090 o equivalentes; no hay confirmación oficial.
-- Opciones de despliegue: SGLang es el runtime recomendado y documentado (soporte en revisión en el PR sgl-project/sglang#46858). El soporte para vLLM, llama.cpp, Ollama o TGI no está disponible en la información proporcionada; el modelo base puede ofrecer rutas adicionales.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: el repositorio ocupa 2,2 GB en safetensors, por lo que la inferencia en NVFP4 requiere aproximadamente 2-3 GB de VRAM para los pesos, mas memoria adicional para el codificador visual en BF16, el cache KV y las activaciones. Una estimacion conservadora situa el consumo total en torno a 4-6 GB, aunque no se dispone de cifras oficiales.
+- GPU recomendadas: hardware NVIDIA con soporte de NVFP4 (generaciones recientes con soporte de FP4 nativo). No se especifican modelos concretos en la informacion disponible.
+- Compatibilidad con GPU consumer: el reducido tamano del modelo sugiere que puede caber en GPUs consumer con suficiente VRAM, pero la cuantizacion NVFP4 depende del soporte de hardware y software; no se confirma en la informacion disponible que funcione en todas las GPU consumer.
+- Opciones de despliegue: SGLang es el backend documentado en la model card, con soporte en revision (sgl-project/sglang#46858). No se mencionan vLLM, llama.cpp, Ollama ni TGI en la informacion disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Cuantización | Modalidad | Licencia |
-|---|---|---|---|---|
-| LiquidAI/LFM3-VL-2B-NVFP4 | ~1,35 B | NVFP4 (W4A4) + BF16 | Imagen + texto | LFM Open License v1.0 |
-| LiquidAI/LFM3-VL-2B (base) | ~1,35 B | BF16 (sin cuantizar) | Imagen + texto | LFM Open License v1.0 |
-| Qwen2.5-VL-3B-Instruct | ~3 B | BF16 (con variantes GGUF/AWQ de terceros) | Imagen + texto | Apache 2.0 (con restricciones en Qwen) |
-| SmolVLM2-2.2B-Instruct | ~2,2 B | BF16 (con variantes de terceros) | Imagen + texto | Apache 2.0 |
+| Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| LFM3-VL-2B-NVFP4 | 1,9B | no disponible | imagen-texto | lfm1.0 | Hugging Face (2,2 GB) |
+| LFM3-VL-2B (base) | no disponible en la informacion | no disponible | imagen-texto | lfm1.0 | Hugging Face |
+| Otros modelos vision-lenguaje de ~2B | no disponible | no disponible | imagen-texto | no disponible | no disponible |
 
-Nota: la comparativa se basa en características generales conocidas de los modelos alternativos; los datos de rendimiento comparativo no están disponibles en la información proporcionada.
+No se dispone de informacion sobre modelos comparables de la misma categoria en los datos proporcionados, por lo que la comparativa se limita al modelo base del que deriva esta version cuantizada.
 
 ## Limitaciones y advertencias
 
-- Licencia LFM Open License v1.0 (lfm1.0): se trata de una licencia "other", no de una licencia permisiva estándar como Apache 2.0 o MIT. Es imprescindible revisar el texto de la licencia antes de cualquier uso comercial, ya que puede incluir restricciones de uso, despliegue o distribución.
-- Cuantización NVFP4: al cuantizar pesos y activaciones a 4 bits (W4A4), puede producirse una ligera degradación de calidad respecto al modelo base en BF16, especialmente en tareas sensibles a la precisión numérica. No hay datos públicos de regresión en la información disponible.
-- Soporte de SGLang aún en revisión (PR sgl-project/sglang#46858): el despliegue con SGLang puede no estar disponible en versiones estables todavía, lo que limita las opciones de producción a corto plazo.
-- Sesgos conocidos: no disponible en la información proporcionada; como todo modelo de lenguaje entrenado a gran escala, puede heredar sesgos presentes en sus datos de entrenamiento.
-- Riesgo de alucinación: inherente a los modelos de lenguaje de este tamaño; en tareas de análisis de imágenes puede describir elementos inexistentes o malinterpretar detalles finos.
-- Longitud de contexto: no especificada en esta ficha; consultar la model card del modelo base antes de diseñar aplicaciones con documentos largos.
-- Idiomas: soporta 16 idiomas, pero la calidad en idiomas distintos del inglés puede variar; no hay datos de rendimiento por idioma en la información disponible.
+- Sesgos conocidos: no se documentan en la informacion disponible; como todo modelo entrenado con datos web, es probable que herede sesgos de esos datos, pero no se aportan detalles.
+- Riesgo de alucinacion: no cuantificado en la informacion disponible; los modelos de ~2B suelen presentar mayor tasa de alucinacion que modelos de mayor tamano, especialmente en tareas de razonamiento complejo.
+- Limitaciones de contexto e idioma: la longitud de contexto no se especifica. Aunque soporta 16 idiomas, no se detalla el nivel de calidad por idioma ni si el castellano tiene un rendimiento equiparable al ingles.
+- Restricciones de licencia: la licencia lfm1.0 es una licencia propia de Liquid AI marcada como "other"; es imprescindible revisar el archivo LICENSE del repositorio antes de un uso comercial, ya que puede incluir restricciones especificas.
+- Caveats de produccion: la cuantizacion NVFP4 puede degradar ligeramente la calidad respecto al modelo en BF16, especialmente en tareas sensibles a la precision numerica. El soporte en SGLang esta en revision, por lo que la integracion en produccion puede requerir esperar a una release estable o compilar desde la rama de desarrollo.
+- Dependencia de hardware: NVFP4 requiere soporte especifico de GPU y de la pila de software; no es un formato universalmente portable como GGUF.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/LiquidAI/LFM3-VL-2B-NVFP4
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
-- PR de soporte en SGLang: https://github.com/sgl-project/sglang/pull/46858
-- Blog de Liquid AI sobre LFM3: https://www.liquid.ai/blog/lfm3
-- Documentación de Liquid AI: https://docs.liquid.ai/lfm/getting-started/welcome
-- Playground de Liquid AI: https://playground.liquid.ai/
-- Consola/API de Liquid AI: https://console.liquid.ai/dashboard
+- Blog de LFM3: https://www.liquid.ai/blog/lfm3
+- Documentacion de Liquid AI: https://docs.liquid.ai/lfm/getting-started/welcome
+- Consola/API: https://console.liquid.ai/dashboard
+- Playground: https://playground.liquid.ai/
+- Pull request de soporte en SGLang: https://github.com/sgl-project/sglang/pull/46858

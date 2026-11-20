@@ -2,88 +2,97 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-GSQ-RCO-Coder-320-PLE8-GGUF es una derivada comunitaria, publicada por el usuario qmnvp, del trabajo de ISTA-DASLab sobre Qwen3.8-Flash-Next. Se trata de una versión podada (pruning de expertos) del modelo original MoE de 512 expertos, reducida a 320 expertos y orientada a tareas de código, conservando la capacidad multimodal (imagen-texto a texto) del modelo base. El objetivo del proyecto es que un modelo de 131.600 millones de parámetros totales quepa en un límite de memoria de aproximadamente 45 GB, incluyendo contexto de 256k tokens, mediante cuantización extrema IQ3_S y externalización de la tabla n-gram a disco.
+Qwen3.8-Flash-Next-GSQ-RCO-Coder-320-PLE8-GGUF es una derivada comunitaria del modelo Qwen3.8-Flash-Next, publicada por el usuario qmnvp en Hugging Face. Se trata de una versión podada a nivel de expertos de un modelo MoE multimodal (image-text-to-text) originalmente desarrollado por Qwen (Alibaba), que conserva 320 de los 512 expertos del modelo base y mantiene la capacidad de procesar imágenes y texto. El modelo parte de la cuantización UD-IQ3_XXS de Unsloth y aplica una selección de expertos orientada a tareas de código (C++ y Python), reutilizando el conjunto de expertos de las releases GSQ-RCO Coder de ISTA-DASLab.
 
-Su relevancia radica en la tendencia actual de "pruning de expertos" en modelos MoE: seleccionar los expertos más relevantes (por saliencia) para una tarea concreta, en este caso programación en inglés, para reducir drásticamente los requisitos de hardware sin recurrir a una cuantización aún más agresiva. No es una publicación oficial de Qwen ni de ISTA-DASLab, sino un experimento comunitario con 334 descargas en el momento de la ficha, dirigido a usuarios de llama.cpp y runtimes compatibles con GGUF como Splash 1.4.1.
+La relevancia de esta ficha radica en que ejemplifica una práctica creciente en el ecosistema open source: la poda selectiva de expertos en modelos MoE de gran tamaño para reducir requisitos de memoria sin reentrenar, manteniendo el contexto largo (256k tokens según la model card) y las capacidades multimodales. El autor indica que el diseño busca encajar todos los expertos retenidos y el contexto de 256k en un presupuesto de memoria de aproximadamente 45 GB bajo el runtime Splash 1.5.0, dejando la tabla n-gram/PLE en SSD.
+
+El modelo tiene 131.621.823.360 parámetros totales según los safetensors del repositorio, un tamaño de repo de 128 GB y está publicado bajo la licencia qwen-community-1.0. Es una derivada no oficial: no procede de Qwen, ni de ISTA-DASLab, ni de Unsloth, y el autor reconoce explícitamente que no se han realizado evaluaciones extensas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (derivado de Qwen3.8-Flash-Next), multimodal image-text-to-text |
-| Parametros totales | 131.621.823.360 (dato real de safetensors) |
+| Arquitectura | MoE (mixture of experts) multimodal image-text-to-text, derivada de Qwen3.8-Flash-Next; 48 bloques con 320 expertos retenidos de 512 |
+| Parametros totales | 131.621.823.360 |
 | Parametros activos | no disponible |
-| Longitud de contexto | 256k tokens |
-| Tipos de cuantizacion | IQ3_S (pesos cuantizados del modelo base), PLE Q8 para los expertos empaquetados |
-| Idiomas soportados | Ingles (según la model card; el modelo base Qwen3.8 es multilingue, pero no hay datos oficiales en la ficha) |
-| Licencia | qwen-community-1.0 (heredada del modelo base, tipo "other") |
-| Formato de pesos | GGUF (con imatrix), 2 shards, 91,2 GB de tamano de repo |
+| Longitud de contexto | 256k tokens (según model card) |
+| Tipos de cuantizacion | GGUF UD-IQ3_XXS (expertos) + PLE Q8 (tabla n-gram) |
+| Idiomas soportados | en |
+| Licencia | qwen-community-1.0 |
+| Formato de pesos | GGUF (dos shards) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3.8-Flash-Next, un MoE de 512 expertos, al que ISTA-DASLab aplicó su pipeline GSQ-RCO (cuantización con matriz de importancia y asignación de tensores) para producir una versión IQ3_S en GGUF. La variante de qmnvp no requantiza nada: toma los datos cuantizados directamente de la versión IQ3_S de ISTA-DASLab y aplica poda de expertos mediante el script prune_raw_gguf.py, eliminando los expertos menos relevantes.
+El modelo es una derivada por poda de expertos de Qwen3.8-Flash-Next, un transformer MoE multimodal con 512 expertos por bloque. La intervención de qmnvp no implica reentrenamiento ni recuantización: se toman los pesos cuantizados UD-IQ3_XXS de Unsloth y se seleccionan 320 expertos por bloque mediante la herramienta prune_raw_gguf.py del repositorio webmp3/Sakura-Qwen3.8-Flash-Next-Overview. La selección combina 256 expertos de la release v2 de ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF con hasta 64 expertos adicionales de la release v1, completando con expertos en orden de saliencia cuando el remanente es positivo y descartando cuando es negativo. La tabla de asignación por bloque se detalla en la model card.
 
-La selección de expertos es lo más interesante técnicamente: se parte de los 256 expertos del release "Coder v2" de ISTA-DASLab (seleccionados para tareas de código) y se completan hasta 320 con expertos de la v1 y del listado de saliencia de sh0wie/Qwen3.8-Flash-Next-REAP-288-MLX-4bit, en orden de saliencia. Además, se incluye el PLE (packed lazy experts) en Q8 extraído del shard UD-Q5_K_XL de unsloth/Qwen3.8-Flash-Next-GGUF. La tabla n-gram para decodificación especulativa no reside en memoria: se mantiene en SSD, con lo que sus requerimientos de ancho de banda son bajos. El runtime recomendado es Splash 1.4.1. No hay información sobre el entrenamiento original del modelo base (tokens, datasets, RLHF/DPO) en la ficha.
+La tabla n-gram/PLE se toma del directorio UD-Q5_K_XL de Unsloth en cuantización Q8 y se mantiene fuera de memoria (en SSD) porque sus requisitos de ancho de banda son bajos. Los metadatos de shard se ajustaron para encajar en el diseño de dos shards de las releases basadas en ISTA. El autor no documenta el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO, ya que se trata de una derivada de pesos existentes sin entrenamiento adicional.
 
 ## Capacidades
 
-- Generación de texto y razonamiento en inglés, heredadas del modelo base Qwen3.8-Flash-Next.
-- Generación y comprensión de código: la selección de expertos está optimizada para flujos de trabajo de programación en inglés ("appears to work well for English coding workflows", según el autor, sin evaluación extensiva).
-- Capacidad multimodal: entrada de imagen y texto (pipeline image-text-to-text), heredada del modelo base.
-- Contexto largo: 256k tokens, útil para bases de código extensas.
-- Decodificación especulativa mediante tabla n-gram (externa a memoria, en SSD) en el runtime Splash.
-- Compatible con endpoints estándar de GGUF (endpoints_compatible) y con formato conversacional.
-
-No hay información en la ficha sobre tool calling, agentes ni thinking mode.
+- Generación de texto y razonamiento general heredados del modelo base Qwen3.8-Flash-Next.
+- Capacidad multimodal image-text-to-text: procesa imágenes y texto de entrada (pipeline image-text-to-text).
+- Enfoque en código: la selección de expertos está orientada a flujos de trabajo de C++ y Python en inglés, según indica el autor.
+- Soporte de conversación multi-turno (tag conversational).
+- Compatibilidad con endpoints (tag endpoints_compatible).
+- Capacidad de contexto largo: 256k tokens según la model card.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Modo thinking, audio u otras capacidades especiales: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Asistencia a la programación en local: el modelo cabe en ~45 GB de memoria con los 320 expertos y contexto de 256k, lo que permite trabajar con repositorios grandes completos en el contexto desde una estación de trabajo con GPU de gama alta o Mac con memoria unificada.
-- Revisión y refactorización de bases de código extensas: la ventana de 256k tokens permite cargar módulos completos o múltiples ficheros para análisis y reescritura coherente.
-- Chat con documentos visuales: al conservar la capacidad multimodal, puede responder preguntas sobre capturas de pantalla, diagramas de arquitectura o mockups junto con código.
-- Experimentación con poda de expertos MoE: al derivar de los releases de ISTA-DASLab con allocations documentadas, es un buen sujeto de estudio para investigadores que comparan selecciones de expertos por saliencia frente a por dominio.
-- Despliegue en hardware limitado de modelos muy grandes: la combinación IQ3_S + PLE Q8 + tabla n-gram en SSD permite ejecutar un modelo de 131B de parámetros totales sin H100, por ejemplo con 48 GB de VRAM o memoria unificada.
-- Razonamiento especulativo de bajo coste: la tabla n-gram en SSD acelera la inferencia sin consumir VRAM, útil para sesiones interactivas largas de coding.
+- Asistencia de programación en C++ y Python: el autor indica que el modelo funciona bien en flujos de trabajo de código en estos lenguajes en inglés; se usaría como asistente de autocompletado, refactorización y explicación de código en un IDE o pipeline interno.
+- Análisis de repositorios de gran tamaño: con 256k tokens de contexto, puede cargar varios ficheros fuente y documentación en una sola ventana para tareas de revisión de código y detección de dependencias entre módulos.
+- Revisión de código con capturas de pantalla: al ser image-text-to-text, puede recibir diagramas de arquitectura o capturas de errores junto con el código para tareas de depuración asistida.
+- Despliegue en entornos con memoria limitada: la poda a 320 expertos y la cuantización IQ3_XXS permiten ejecutar el modelo en un presupuesto de unos 45 GB bajo el runtime Splash 1.5.0, con la tabla PLE en SSD, lo que lo hace apto para estaciones de trabajo con una o dos GPU de gama alta.
+- Generación de documentación técnica: a partir de código y diagramas de entrada, el modelo puede producir explicaciones y documentación en inglés para proyectos internos.
+- Experimentación en investigación sobre poda de MoE: sirve como caso de estudio reproducible de selección de expertos por saliencia y de sustitución de cuantizaciones (ISTA IQ3_S frente a Unsloth UD-IQ3_XXS) sin reentrenamiento.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El propio autor indica que "no extensive testing or evaluation has been performed" (no se han realizado pruebas ni evaluaciones extensivas).
+No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explícitamente que no se han realizado pruebas ni evaluaciones extensas y que el modelo "parece funcionar bien" en flujos de C++ y Python en inglés, sin aportar métricas.
 
 ## Requisitos de hardware
 
-- Memoria estimada para inferencia: ~45 GB con los 320 expertos y contexto de 256k completo (tabla n-gram en SSD), usando Splash 1.4.1. El repo completo ocupa 91,2 GB en disco.
-- GPU recomendadas: no disponible (no se especifican modelos concretos de GPU). Por la huella de memoria, encajan GPUs de 48 GB (RTX A6000, RTX 6000 Ada, L40S) o sistemas con memoria unificada tipo Mac Studio con 48-64 GB o más.
-- Consumer GPUs: cabe parcialmente en una RTX 4090 (24 GB) solo con offload parcial a CPU/RAM; para cargar todo el modelo en GPU se necesitan 48 GB.
-- Despliegue: Splash 1.4.1 (runtime recomendado por el autor); por formato GGUF debería ser compatible con llama.cpp, Ollama y LM Studio, aunque la estructura de shards modificada y el PLE externo pueden requerir verificación.
-- Latencia y throughput: no disponible. El uso de tabla n-gram para decodificación especulativa sugiere aceleración del throughput, pero no hay cifras publicadas.
+- VRAM estimada: el autor indica un presupuesto de memoria de aproximadamente 45 GB para todos los expertos retenidos y el contexto de 256k bajo el runtime Splash 1.5.0, con la tabla n-gram/PLE en SSD.
+- Tamaño del repositorio: 128 GB en disco (pesos GGUF en dos shards).
+- GPU recomendadas: no disponible de forma explícita; por el presupuesto de memoria indicado, se requiere al menos una GPU con 48 GB (A100 80GB, H100, o configuraciones multi-GPU consumer).
+- GPU consumer: no cabe en una RTX 4090 (24 GB) con el presupuesto indicado; requeriría configuraciones multi-GPU o mayor uso de SSD, no documentado.
+- Opciones de despliegue: runtime Splash 1.5.0 (mencionado por el autor); compatibilidad con endpoints (tag endpoints_compatible). Soporte de llama.cpp, Ollama, vLLM o TGI: no disponible en la información proporcionada.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Expertos | Contexto | Cuantizacion | Licencia |
+| Modelo | Parámetros | Expertos | Contexto | Licencia | Notas |
 |---|---|---|---|---|---|
-| qmnvp/Qwen3.8-Flash-Next-GSQ-RCO-Coder-320-PLE8-GGUF | 131,6B | 320 | 256k | IQ3_S + PLE Q8 | qwen-community-1.0 |
-| ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF | 131,6B (base) | 256 (poda coder) | 256k | IQ1_M / IQ3_S | qwen-community-1.0 |
-| ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF | 131,6B (base) | 512 (sin podar) | 256k | IQ3_S | qwen-community-1.0 |
+| qmnvp/Qwen3.8-Flash-Next-GSQ-RCO-Coder-320-PLE8-GGUF | 131.621.823.360 | 320 de 512 | 256k | qwen-community-1.0 | Derivada podada, IQ3_XXS + PLE Q8 |
+| ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF | no disponible | 320 (v2: 256 + v1) | no disponible | no disponible | Base de la selección de expertos; cuantización IQ3_S |
+| unsloth/Qwen3.8-Flash-Next-GGUF | no disponible | 512 (completo) | no disponible | no disponible | Base no podada; fuente de UD-IQ3_XXS y PLE Q8 |
+| sh0wie/Qwen3.8-Flash-Next-REAP-288-MLX-4bit | no disponible | 288 | no disponible | no disponible | Poda alternativa en formato MLX 4-bit; fuente del orden de saliencia |
 
-Esta variante se sitúa deliberadamente entre ambas: más capacidad general que la versión Coder de 256 expertos (al incluir 64 expertos adicionales por saliencia) y menor huella que el release completo de 512 expertos. Datos de rendimiento comparativo: no disponible.
+Los datos de rendimiento comparado no están disponibles en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Evaluación mínima: el autor reconoce no haber realizado pruebas ni evaluaciones extensivas; el modelo "parece funcionar bien" para código en inglés, sin cifras que lo respalden.
-- Pérdida por poda: reducir de 512 a 320 expertos puede degradar capacidades fuera del dominio de código; no hay benchmarks que cuantifiquen la degradación.
-- Idioma: la ficha declara solo inglés; el rendimiento en castellano u otros idiomas no está verificado.
-- Riesgo de alucinación: inherente a modelos de lenguaje; agravado por la cuantización extrema IQ3_S, que puede amplificar errores en razonamiento fino y generación de código.
-- Licencia: hereda qwen-community-1.0 del modelo base; conviene revisar el archivo LICENSE para conocer las restricciones de uso comercial antes de desplegar en producción.
-- Dependencia de tooling específico: la estructura de shards modificada y el PLE externo requieren runtimes compatibles (Splash 1.4.1); la compatibilidad con otras herramientas GGUF no está garantizada.
-- Proyecto comunitario con baja tracción (334 descargas, 1 like): soporte y mantenimiento no garantizados.
+- Es una derivada comunitaria no oficial: no procede de Qwen, ISTA-DASLab ni Unsloth, y el autor lo declara explícitamente.
+- No se han publicado evaluaciones ni benchmarks; el rendimiento en producción es incierto y debe validarse antes de adoptarlo.
+- La poda a 320 expertos descarta 192 expertos por bloque; en bloques con remanente negativo no se pudieron incluir todos los expertos distintos de la release Coder v1, lo que puede degradar capacidades fuera del dominio de código.
+- El enfoque declarado es código en C++ y Python en inglés; el soporte multilingüe es limitado (idioma declarado: en).
+- La licencia qwen-community-1.0 impone condiciones de uso comunitario; deben revisarse los términos del fichero LICENSE antes de uso comercial.
+- Riesgo de alucinación inherente a los modelos de lenguaje, no cuantificado en esta derivada.
+- El despliegue depende del runtime Splash 1.5.0 y de mantener la tabla PLE en SSD; el rendimiento puede verse afectado por la latencia de disco.
+- Los metadatos de shard fueron modificados manualmente para encajar en dos shards, lo que exige verificar la integridad de los ficheros al descargar.
+- Sesgos conocidos: no disponible en la información proporcionada.
 
 ## Enlaces
 
-- Modelo: https://huggingface.co/qmnvp/Qwen3.8-Flash-Next-GSQ-RCO-Coder-320-PLE8-GGUF
-- Modelo base: https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF
-- Versión Coder de ISTA-DASLab: https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF
-- GGUF original de unsloth: https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
-- Listado de saliencia usado para expertos: https://huggingface.co/sh0wie/Qwen3.8-Flash-Next-REAP-288-MLX-4bit
-- Script de poda: https://huggingface.co/webmp3/Sakura-Qwen3.8-Flash-Next-Overview/blob/main/tools/prune_raw_gguf.py
-- Repositorio de herramientas: https://huggingface.co/webmp3/Sakura-Qwen3.8-Flash-Next-Overview
+- Modelo en Hugging Face: https://huggingface.co/qmnvp/Qwen3.8-Flash-Next-GSQ-RCO-Coder-320-PLE8-GGUF
+- Modelo base (GGUF): https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
+- Cuantización UD-IQ3_XXS: https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF/tree/main/UD-IQ3_XXS
+- Directorio UD-Q5_K_XL (fuente del PLE Q8): https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF/tree/main/UD-Q5_K_XL
+- ISTA-DASLab GSQ-RCO Coder GGUF: https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF
+- Asignación de expertos v2: https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF/blob/6e7d79482a50748c9793ded946c7ba778defdc55/tensor-allocation/Qwen3.8-Flash-Next-GSQ-RCO-IQ1_M-00001-of-00002.rco-allocation.txt
+- Asignación de expertos v1: https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF/blob/b3b719cd2cfbaed7837aaa505fd9a7b412b312ee/tensor-allocation/Qwen3.8-Flash-Next-GSQ-RCO-IQ1_M-00001-of-00002.rco-allocation.txt
+- Lista de saliencia REAP-288: https://huggingface.co/sh0wie/Qwen3.8-Flash-Next-REAP-288-MLX-4bit/blob/main/manifests/qwen38-flash-next-512e_saliency_pinned.json
+- Herramienta de poda prune_raw_gguf.py: https://huggingface.co/webmp3/Sakura-Qwen3.8-Flash-Next-Overview/blob/main/tools/prune_raw_gguf.py
+- Repositorio Sakura-Qwen3.8-Flash-Next-Overview: https://huggingface.co/webmp3/Sakura-Qwen3.8-Flash-Next-Overview
 - Runtime Splash: https://github.com/incoai/splash

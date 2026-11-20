@@ -2,89 +2,103 @@
 
 ## Resumen
 
-El modelo `Twu31/Qwen3.8-27B-AWQ-INT4-ZhChat-MTP` es una cuantizacion INT4 (W4A16) del modelo base `Qwen/Qwen3.8-27B`, desarrollada por el usuario Twu31. Esta optimizado especificamente para servir dialogos conversacionales en chino hablado con la menor latencia posible, manteniendo la cabeza de decodificacion especulativa MTP (Multi-Token Prediction) intacta y verificada en vLLM. El checkpoint esta calibrado sobre trafico real de conversacion: un prompt de sistema largo en chino, turnos cortos coloquiales con ruido de ASR y una etiqueta `[emotion:X]` al final de cada turno para dirigir expresiones faciales, con el modo de razonamiento (thinking) desactivado.
+Qwen3.8-27B-AWQ-INT4-ZhChat-MTP es una cuantización INT4 (W4A16) del modelo multimodal Qwen/Qwen3.8-27B, publicada por el usuario Twu31. El checkpoint está pensado específicamente para servir conversaciones interactivas de baja latencia en vLLM con el modo de razonamiento desactivado, preservando la cabeza especulativa MTP del modelo original y manteniendo el `lm_head` en INT8. Se distribuye bajo licencia Apache 2.0 y admite entradas de imagen y texto (pipeline `image-text-to-text`).
 
-La arquitectura es hibrida: combina atencion tradicional con capas Gated-DeltaNet (GDN), lo que reduce la memoria de cache KV a solo 16 de las 64 capas. Incluye una torre de vision que se mantiene en BF16, por lo que admite entrada de imagen y video. El resultado es un modelo de 19,45 GB que en una RTX 6000 Ada alcanza 415 ms por turno de 18 tokens con un prompt de 1,6 k tokens, comparable a un MoE de 35B-A3B en la misma tarjeta. Es relevante para aplicaciones de agentes de voz y chatbots en tiempo real donde la latencia de extremo a extremo es critica.
+El modelo base es un transformer híbrido que combina capas de atención lineal GDN (Gated Delta Network) con capas de atención clásica, lo que exige recetas de servicio específicas (por ejemplo, `--prefix-match-unit 16` y caché Mamba en bfloat16) para que el prefix caching funcione de forma efectiva. La cuantización reduce el peso de 55,6 GB en BF16 a 18,2 GB en INT4, lo que permite desplegarlo en una única GPU de 24-48 GB.
 
-## Especificaciones tecnicas
+La relevancia de esta ficha radica en que no es una cuantización genérica orientada a throughput o a precisión de benchmarks, sino a latencia de turno en un solo stream: el autor publica latencias medidas extremo a extremo (TTFT de 51-67 ms y turnos de 18 tokens en 235-396 ms sobre una RTX 6000 Ada) y verifica el funcionamiento de la decodificación especulativa MTP y DFlash2.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Hibrida: Gated-DeltaNet (atencion lineal) + atencion tradicional, con torre de vision |
-| Parametros totales | 6.260.690.960 (segun safetensors del checkpoint cuantizado) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | Hasta 12288 tokens (segun la receta de vLLM recomendada) |
-| Tipos de cuantizacion | INT4 simetrico W4A16, group_size 128, formato compressed-tensors, optimizado con Intel AutoRound |
-| Idiomas soportados | Chino (zh) e ingles (en) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (compressed-tensors pack-quantized) |
+| Arquitectura | Transformer híbrido GDN (atención lineal) + atención clásica, multimodal (vision tower) |
+| Parámetros totales | 6.260.690.960 (según safetensors del repo cuantizado); el modelo base se denomina "27B" pero el dato real del checkpoint es 6,26 B |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible en la información proporcionada; las recetas de servicio usan `--max-model-len 12288` |
+| Tipos de cuantización | INT4 simétrica g128 (W4A16) en `compressed-tensors`; `lm_head` en INT8; vision tower y cabeza MTP en BF16; variantes AutoRound, AWQ y GPTQ en ramas separadas |
+| Idiomas soportados | en, zh |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (compressed-tensors), compatible con transformers y vLLM |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-27B emplea una arquitectura hibrida con 64 capas, de las cuales solo 16 mantienen cache KV tradicional, mientras que el resto usa capas Gated-DeltaNet (GDN) con atencion lineal. Esto reduce significativamente el consumo de memoria de cache y acelera la decodificacion. La cuantizacion se realizo con Intel AutoRound 0.14.2 (redondeo con gradiente firmado), sobre 530 secuencias de al menos 2048 tokens, con 60 % de dialogo chino hablado de estilo produccion (prompt de sistema de 1,4 k tokens, 10-20 turnos coloquiales y etiqueta de emocion), 20 % de dialogo coloquial sin sistema y 20 % de chat general zh/en (ShareGPT-GPT4, UltraChat). El proceso tardo 1 hora y 14 minutos en una RTX 6000 Ada con 28 GB de VRAM.
+El modelo base es un transformer híbrido que intercala capas de atención lineal GDN con capas de atención estándar, e incorpora una torre de visión para entradas image-text-to-text. Esta mezcla arquitectónica es la causa de que el prefix caching requiera ajustes específicos en vLLM (unidad de coincidencia de prefijo de 16 tokens y caché SSM Mamba en bfloat16), y de que las versiones de vLLM anteriores a la 0.30 presentaran problemas al reanudar estados Mamba con decodificación especulativa.
 
-La cabeza MTP (draft head) se conserva en BF16 y se ha verificado su funcionamiento en vLLM con `--speculative-config '{"method":"mtp","num_speculative_tokens":2}'`, logrando una tasa de aceptacion del 73,1 % en chat chino, frente al 58 % de una version calibrada con pile-10k. La torre de vision, el `lm_head`, las embeddings y las puertas GDN (`in_proj_a/b`) tambien se mantienen en BF16 para preservar la calidad y permitir tensor parallelism sin restricciones de dimension minima en el kernel Marlin.
+La cuantización se realizó con `llmcompressor` sobre los mismos datos de calibración con tres algoritmos distintos (AutoRound, AWQ y GPTQ); la rama `main` usa AutoRound con `lm_head` en INT8, mientras que las builds AWQ y GPTQ están en las ramas `awq-llmcompressor` y `gptq-llmcompressor`. Se preserva la cabeza de borrador MTP del modelo original, con una tasa de aceptación medida de entre el 64 % y el 73 % sobre tráfico de chat, y se ha verificado la compatibilidad con el borrador DFlash2 oficial de z-lab (5 capas, 3,85 GB, 7 tokens especulativos). No se detallan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo base.
 
 ## Capacidades
 
-- Generacion de texto conversacional en chino e ingles, con soporte para etiquetas de emocion (`[emotion:happy|neutral|curious|sad|shy|surprised|angry]`) para dirigir expresiones faciales en agentes virtuales.
-- Decodificacion especulativa MTP integrada y verificada, con 2 tokens especulativos y una aceleracion de 1,49× en velocidad de decodificacion (de 20,4 a 13,7 ms/token).
-- Entrada multimodal de imagen y video gracias a la torre de vision conservada en BF16 (verificada a traves de vLLM).
-- Modo de razonamiento desactivado por defecto (thinking off) para latencia minima en conversacion; se puede activar si se necesita.
-- Capacidades multilingues limitadas a chino e ingles, con enfasis en chino conversacional.
-- Compatible con el kernel Marlin W4A16 en GPUs con SM 8.0 o superior (Ampere y posteriores).
+- Generación de texto conversacional multi-turno en inglés y chino.
+- Comprensión de imágenes junto con texto (pipeline image-text-to-text, torre de visión en BF16).
+- Modo de razonamiento ("thinking") configurable mediante el parser `qwen3` y `enable_thinking`; las recetas recomendadas lo desactivan para minimizar latencia.
+- Decodificación especulativa con cabeza MTP integrada (2 tokens especulativos) y con borrador DFlash2 externo (7 tokens especulativos).
+- Compatibilidad con prefix caching en vLLM para prompts de sistema y historiales de conversación repetidos.
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades de código y matemáticas: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Agentes de voz en chino: el modelo esta calibrado para dialogos hablados con ruido ASR y turnos cortos, por lo que es idoneo para asistentes de voz en tiempo real que requieren respuestas de 20-60 tokens con latencia de extremo a extremo inferior a 500 ms.
-- Atencion al cliente automatizada: con un prompt de sistema largo que define la personalidad y las politicas, el modelo gestiona conversaciones multi-turno con contexto de 1,6 k tokens y mantiene un TTFT de 67 ms, adecuado para canales de chat en vivo.
-- Avatares digitales con expresion emocional: la etiqueta `[emotion:X]` permite que un sistema de animacion facial sincronice expresiones con el contenido generado, ideal para personajes virtuales en aplicaciones de entretenimiento.
-- Generacion de contenido multimodal: al conservar la torre de vision, puede procesar entradas de imagen o video y generar descripciones o respuestas contextuales, util en sistemas de asistencia visual.
-- Despliegue en produccion con vLLM: la integracion con el servidor vLLM (version 0.17 o superior) permite servir el modelo con prefijo caching y configuracion de MTP sin necesidad de flags adicionales de cuantizacion.
-- Prototipado rapido en entornos con recursos limitados: al ocupar solo 19,45 GB, cabe en una GPU de 24 GB para inferencia de texto, lo que facilita pruebas locales antes de escalar a multiples GPUs.
+- Agentes de voz en tiempo real: con TTFT de 51-67 ms y turnos de 18 tokens en 235-273 ms sobre una RTX 6000 Ada, el modelo encaja en pipelines de reconocimiento de voz, LLM y síntesis de voz donde el presupuesto de latencia por turno es inferior a 500 ms.
+- Asistentes encarnados y robótica: la combinación de entrada de imagen y respuestas cortas de baja latencia permite cerrar bucles de percepción-acción con un solo turno de inferencia por paso de control.
+- Interfaces de chat con prompt de sistema largo: con `--prefix-match-unit 16` y prefix caching, un prompt de sistema cacheado de 1,5 k tokens reduce el TTFT a 133 ms en vLLM 0.33 frente a 285 ms sin esa optimización.
+- Atención al cliente automatizada en chino e inglés: el soporte nativo de ambos idiomas y el contexto de servicio de 12.288 tokens permiten gestionar conversaciones multi-turno con historial.
+- Despliegue en una sola GPU de consumo o workstation: los 18,2 GB en INT4 caben en GPUs de 24 GB como la RTX 4090 o la RTX 6000 Ada, lo que abarata el coste por instancia frente al BF16 de 55,6 GB.
+- Asistentes multimodales de escritorio: la torre de visión en BF16 permite describir capturas de pantalla o imágenes adjuntas manteniendo el resto del modelo en INT4 para reducir memoria.
+- Servicio de baja concurrencia con SLO estrictos: las recetas con `--max-num-seqs 8` y decodificación especulativa están calibradas para uno o pocos streams simultáneos, típico de aplicaciones interactivas más que de batch offline.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar de calidad (MMLU, HumanEval, GSM8K) en la informacion disponible. La model card proporciona datos de rendimiento de inferencia medidos en una RTX 6000 Ada con prompts de conversacion reales (prompt de sistema chino de 1,4 k tokens, 2 turnos de historial y una utterance de usuario, greedy, thinking off, 18 prompts × 3 ejecuciones). Los resultados son:
+No se han publicado resultados de benchmarks de precisión (MMLU, HumanEval, GSM8K) en la información disponible. El autor publica métricas de latencia medidas extremo a extremo en una RTX 6000 Ada con un solo stream y turnos de 18 tokens tras un prompt de 1,5 k tokens:
 
-| Metrica | Valor |
-|---|---|
-| TTFT (tiempo hasta el primer token) | 67 ms |
-| Latencia por turno (18 tokens) | 415 ms |
-| Decode speed sin MTP | 20,4 ms/token |
-| Decode speed con MTP | 13,7 ms/token (1,49×) |
-| Tasa de aceptacion MTP | 73,1 % |
+| Configuración | vLLM | TTFT | Latencia por turno | ms/token |
+|---|---|---|---|---|
+| Recipe A (MTP off) | 0.29+ | 51 ms | 396 ms | no disponible |
+| Recipe B (MTP on) | 0.29.0 | 141 ms | 388 ms (276 ms en caliente) | no disponible |
+| Recipe B (MTP on) | 0.30.0 | 67 ms (59 ms en caliente) | 273 ms (237 ms en caliente) | 11,0 ms |
+| Recipe B (MTP on) | 0.31.0 | 56 ms | 247 ms en caliente | 11,0 ms |
+| Recipe B (MTP on) | 0.32.0 | 58 ms | 237 ms en caliente | 11,0 ms |
+| Recipe B (MTP on) | 0.33.0 | 57 ms | 235 ms en caliente | 10,9 ms |
+| Recipe C (DFlash2, K=7) | 0.33.0 | 84 ms | 249 ms | 10,0 ms |
+
+Datos adicionales: tasa de aceptación del borrador MTP del 64-73 % sobre tráfico de chat; 2,7 tokens aceptados por paso con DFlash2; primer turno con nueva pregunta tras prompt de sistema cacheado a 133 ms de TTFT en vLLM 0.33 (frente a 285 ms en versiones anteriores); tasa de acierto de caché del 95-98 % en turnos posteriores de una conversación.
 
 ## Requisitos de hardware
 
-- VRAM estimada: 19,45 GB para el checkpoint cuantizado; se recomienda una GPU de 24 GB para servir solo texto con contexto modesto, y 48 GB o mas para contextos mayores o con vision.
-- GPUs compatibles: cualquier GPU con SM 8.0 o superior (Ampere y posteriores), incluyendo A100/A800, RTX 30/40 series, RTX 6000 Ada, L40S y H100. El kernel Marlin requiere estas arquitecturas.
-- Despliegue recomendado: vLLM version 0.17 o superior (probado en 0.24.0 y 0.27.1). Tambien puede cargarse en Transformers ≥ 5.8 con `compressed-tensors` para inferencia, aunque se recomienda vLLM para servir.
-- Configuracion optima: usar `--enable-prefix-caching` y `--mamba-ssm-cache-dtype bfloat16` para minimizar latencia. No se debe usar `--calculate-kv-scales` en modelos hibridos GDN+attention (ver issue vllm#37554).
-- Latencia y throughput: con la receta A (sin MTP), se logran 415 ms por turno de 18 tokens en una RTX 6000 Ada. Con MTP activado (receta B), la velocidad de decodificacion mejora un 49 % para respuestas de mas de 25 tokens.
+- VRAM estimada: 18,2 GB de pesos en INT4, más caché KV y estados Mamba; el modelo base en BF16 ocupa 55,6 GB. Con `--max-model-len 12288` y `--max-num-seqs 8` se recomienda una GPU de 24 GB o superior.
+- GPU recomendadas: RTX 6000 Ada (usada en todas las mediciones del autor), A100, H100. El kernel Marlin de vLLM requiere SM 8.0 o superior; en Hopper se usa Machete.
+- GPU de consumo: cabe en una RTX 4090 (24 GB) y en GPUs de 32 GB o más; no se han publicado mediciones específicas en estas tarjetas.
+- Opciones de despliegue: vLLM 0.24 a 0.33 con configuración cero; las recetas recomendadas usan `--enable-prefix-caching`, `--prefix-match-unit 16`, `--mamba-ssm-cache-dtype bfloat16` y `--reasoning-parser qwen3`. No se mencionan recetas para llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 10,9-11,0 ms por token con MTP en vLLM 0.32-0.33; 10,0 ms por token con DFlash2; TTFT de 51-67 ms; turnos de 18 tokens en 235-273 ms en caliente. No se publican cifras de throughput agregado con alta concurrencia.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Latencia (RTX 6000 Ada) |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Twu31/Qwen3.8-27B-AWQ-INT4-ZhChat-MTP | 6,26 B (checkpoint cuantizado) | 12 k (configurado) | INT4 W4A16 | Apache-2.0 | 415 ms/turno (18 tokens) |
-| Qwen/Qwen3.8-27B (base, BF16) | 27 B (estimado) | no disponible | BF16 | Apache-2.0 | no disponible (mayor VRAM y latencia) |
-| MoE 35B-A3B (mencionado en la model card) | 35 B total, 3 B activos | no disponible | no especificada | no disponible | comparable a este modelo (segun el autor) |
+| Twu31/Qwen3.8-27B-AWQ-INT4-ZhChat-MTP | 6,26 B (checkpoint) | no disponible (recetas a 12.288) | Apache 2.0 | safetensors INT4 | Optimizado para latencia de turno, MTP y DFlash2 verificados |
+| Qwen/Qwen3.8-27B (base) | 27 B (denominación) | no disponible | Apache 2.0 | safetensors BF16 | 55,6 GB; sin cuantizar, mayor VRAM |
+| z-lab/Qwen3.8-27B-DFlash2 | no disponible (5 capas, 3,85 GB) | no disponible | no disponible | safetensors | Borrador especulativo, no un modelo completo |
 
-La comparativa se basa en los datos proporcionados por el autor. No se dispone de benchmarks estandar para una comparacion objetiva de calidad.
+No se dispone de datos de benchmarks de precisión ni de otros checkpoints cuantizados comparables en la información proporcionada, por lo que no es posible establecer una comparación de rendimiento frente a alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- El modelo esta calibrado principalmente para chino conversacional hablado; su rendimiento en otros idiomas o en tareas de razonamiento largo con thinking activado puede degradarse.
-- La cuantizacion INT4 puede introducir perdida de precision en tareas de alta complejidad, aunque el autor reporta que la calibracion especifica mejora la aceptacion MTP frente a calibraciones genericas.
-- El numero de parametros reportado en safetensors (6,26 B) es significativamente inferior al nombre "27B" del modelo base; esto podria deberse a un error en el checkpoint o a que solo se cuantizaron los pesos principales, pero no se ha aclarado en la documentacion.
-- No se garantiza soporte para tool calling o function calling, ya que no se menciona en la model card; si se necesita, debe verificarse con el modelo base.
-- La licencia Apache-2.0 permite uso comercial, pero se recomienda revisar los terminos del modelo base Qwen3.8-27B para confirmar restricciones adicionales.
-- Para produccion, es imprescindible usar vLLM (no Transformers) para obtener el rendimiento prometido, y evitar la opcion `--calculate-kv-scales` en modelos hibridos.
+- La cuantización INT4 puede degradar la precisión respecto al modelo base en tareas sensibles; el autor no publica evaluaciones de precisión comparativas.
+- El checkpoint está calibrado y optimizado para conversación interactiva con razonamiento desactivado; su comportamiento en modo thinking o en cargas de alta concurrencia no está documentado.
+- Idiomas soportados limitados a inglés y chino; el rendimiento en castellano no está verificado.
+- La arquitectura híbrida GDN requiere versiones recientes de vLLM (0.30 o superior) para que la decodificación especulativa con MTP funcione correctamente al reanudar estados Mamba; versiones anteriores muestran latencias notablemente peores.
+- El uso de DFlash2 desactiva parcialmente el prefix caching de grano fino en todo el modelo, lo que penaliza el TTFT en conversaciones con prompts repetidos.
+- Riesgo de alucinación y sesgos: no documentado en la información disponible; aplican los del modelo base Qwen3.8-27B.
+- Licencia Apache 2.0 permite uso comercial, pero se recomienda revisar la licencia del modelo base y del borrador DFlash2 (z-lab) por separado.
+- El dato de parámetros del checkpoint (6,26 B) no coincide con la denominación "27B" del modelo base; conviene verificar la arquitectura y el tamaño reales antes de dimensionar el despliegue.
 
 ## Enlaces
 
-- [Modelo en Hugging Face](https://huggingface.co/Twu31/Qwen3.8-27B-AWQ-INT4-ZhChat-MTP)
-- [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
-- [Issue de vLLM sobre KV scales en modelos hibridos](https://github.com/vllm-project/vllm/issues/37554)
-- [Intel AutoRound](https://github.com/intel/auto-round)
+- Modelo en Hugging Face: https://huggingface.co/Twu31/Qwen3.8-27B-AWQ-INT4-ZhChat-MTP
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B/blob/main/LICENSE
+- Borrador especulativo DFlash2: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
+- PR de vLLM sobre reanudación de estados Mamba: https://github.com/vllm-project/vllm/pull/53945
+- PR de vLLM sobre reanudación de estados Mamba: https://github.com/vllm-project/vllm/pull/55178
+- PR de vLLM sobre prefix caching: https://github.com/vllm-project/vllm/pull/61589

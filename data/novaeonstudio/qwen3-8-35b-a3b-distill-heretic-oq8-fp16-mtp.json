@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 1583,
+  "downloads_30d": 1544,
   "trending_score": 0,
   "parameters": 35951822704,
   "parameters_human": "35.95B",
@@ -53,31 +53,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "YouTube",
-      "url": "https://www.youtube.com/?gl=FR&hl=fr",
-      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …"
-    },
-    {
-      "title": "YouTube",
-      "url": "https://www.youtube.com/",
-      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
-    },
-    {
-      "title": "YouTube Music",
-      "url": "https://music.youtube.com/?lang=fr",
-      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
-    },
-    {
-      "title": "YouTube - Google Accounts",
-      "url": "https://accounts.google.com/InteractiveLogin?service=youtube",
-      "snippet": "Share your videos with friends, family, and the world."
-    },
-    {
-      "title": "YouTube - YouTube",
-      "url": "https://www.youtube.com/youtube",
-      "snippet": "One of YouTube’s most creative prop-making duos, @WickedMakers, is known for creating spectacular spooky creations."
-    }
-  ]
+  "sources": []
 }

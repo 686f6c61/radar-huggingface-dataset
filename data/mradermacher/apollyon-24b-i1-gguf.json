@@ -1,0 +1,40 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Apollyon-24B-i1-GGUF",
+  "slug": "mradermacher-apollyon-24b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Apollyon-24B-i1-GGUF",
+  "created_at": "2026-11-19T22:46:36.000Z",
+  "updated_at": "2026-11-19T22:46:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5000760,
+  "parameters_human": "5.0M",
+  "storage_bytes": 20083040,
+  "storage_human": "20 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

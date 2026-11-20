@@ -2,51 +2,49 @@
 
 ## Resumen
 
-G4-MeroMero-26B-A4B-Heretic2-GGUF es una colección de cuantizaciones estáticas en formato GGUF del modelo G4-MeroMero-26B-A4B-Heretic2, publicado por el usuario EternalDragon en Hugging Face. El trabajo de conversión y cuantización lo firma mradermacher, un perfil habitual en la publicación de versiones GGUF de modelos comunitarios para su uso con llama.cpp y herramientas derivadas. El modelo base no cuenta con model card detallada en la información disponible, por lo que muchos de sus detalles de entrenamiento y procedencia no se pueden confirmar.
+G4-MeroMero-26B-A4B-Heretic2 es un modelo de lenguaje derivado de la familia Gemma 4, con 25.233.142.046 parámetros totales, publicado originalmente por el usuario EternalDragon bajo el identificador `EternalDragon/G4-MeroMero-26B-A4B-Heretic2`. La versión aquí descrita es una cuantización GGUF estática producida por mradermacher, un conocido generador de cuantizaciones del ecosistema llama.cpp, que distribuye el modelo en múltiples niveles de precisión desde Q2_K hasta Q8_0, además de dos ficheros mmproj para el componente multimodal.
 
-El nombre delata parte de su naturaleza: el sufijo "A4B" sugiere una arquitectura de mezcla de expertos (MoE) con aproximadamente 4 mil millones de parámetros activos, mientras que el recuento real de parámetros en safetensors asciende a 25.233.142.046 (unos 25,2 mil millones). El término "Heretic" es habitual en la comunidad para designar ajustes que eliminan o atenúan los mecanismos de rechazo aprendidos por alineamiento, lo que sitúa al modelo en la categoría de variantes "uncensored" o con alineamiento reducido. El tag "conversational" indica que está orientado a diálogo.
+El sufijo "A4B" en el nombre sugiere una arquitectura de mezcla de expertos (MoE) con aproximadamente 4.000 millones de parámetros activos por token sobre un total de 26.000 millones, aunque esta interpretación no está confirmada explícitamente en la información disponible. El término "Heretic" indica que se trata de un ajuste orientado a eliminar o reducir los mecanismos de rechazo y censura del modelo base, y las etiquetas de la model card lo clasifican como "uncensored", "roleplay" y "conversational".
 
-La relevancia de esta ficha es práctica: permite a desarrolladores que trabajan con llama.cpp, Ollama o LM Studio disponer de versiones cuantizadas del modelo sin tener que convertirlo ellos mismos. El repositorio ocupa 133,7 GB e incluye un abanico amplio de niveles de cuantización, desde Q2_K hasta F16, lo que facilita desplegarlo en hardware muy diverso. No obstante, la ausencia de licencia explícita, de idiomas declarados y de benchmarks publicados limita seriamente su uso en producción sin una evaluación previa.
+La relevancia de esta ficha radica en que permite ejecutar localmente un modelo de gran tamaño con un coste de cómputo por token relativamente bajo (si se confirma el diseño MoE) y en formatos GGUF optimizados para llama.cpp, lo que lo hace accesible en hardware de consumo de gama alta. La licencia declarada es Apache 2.0, si bien conviene verificar las condiciones del modelo base original de Gemma, ya que las licencias de los derivados pueden heredar restricciones adicionales.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | MoE (mezcla de expertos), inferida del sufijo "A4B"; detalles no disponibles |
-| Parámetros totales | 25.233.142.046 (≈25,2 B) |
-| Parámetros activos | ≈4 B (inferido del sufijo "A4B"; no confirmado) |
+| Arquitectura | Transformer derivado de Gemma 4; el sufijo "A4B" sugiere MoE con ~4B parámetros activos (no confirmado en la información disponible) |
+| Parámetros totales | 25.233.142.046 (25,23B) |
+| Parámetros activos | ~4B según la nomenclatura del nombre; no confirmado en la información disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base en safetensors |
+| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj en Q8_0 y f16 |
+| Idiomas soportados | inglés (según la model card); no se declaran otros idiomas |
+| Licencia | Apache 2.0 (según la model card del repositorio GGUF) |
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base se distribuye en safetensors/transformers |
 
 ## Arquitectura y entrenamiento
 
-El modelo base G4-MeroMero-26B-A4B-Heretic2 procede del usuario EternalDragon y, por el patrón de nombres, parece derivar de una arquitectura MoE con unos 25 mil millones de parámetros totales y aproximadamente 4 mil millones activos por token. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, el proceso de alineamiento (RLHF, DPO u otros) ni las innovaciones técnicas empleadas. El sufijo "Heretic" apunta a un ajuste orientado a reducir los rechazos del modelo, práctica común en la comunidad para obtener respuestas menos restrictivas, pero no hay documentación que lo confirme.
+La información disponible no detalla la arquitectura interna del modelo base más allá de su pertenencia a la familia Gemma 4 y de la nomenclatura "26B-A4B", que en el ecosistema de modelos abiertos se emplea habitualmente para describir modelos de mezcla de expertos con un total de 26.000 millones de parámetros y aproximadamente 4.000 millones activos por token. No se especifican el número de expertos, la estrategia de enrutamiento ni el número de capas. Tampoco se documentan los datos de entrenamiento, el volumen de tokens, la composición del corpus ni si se aplicaron técnicas de RLHF, DPO o ajuste supervisado en la fase de alineación.
 
-Este repositorio concreto no contiene el modelo original, sino una batería de cuantizaciones estáticas generadas con llama.cpp (se observa en los metadatos `quantize_version: 2` y `output_tensor_quantised: 1`). La conversión parte de pesos en formato Hugging Face (`convert_type: hf`) y produce ficheros GGUF listos para inferencia en CPU y GPU con llama.cpp y compatibles. No se ha aplicado cuantización del proyector multimodal (`skip_mmproj` vacío, sin indicios de visión).
+El componente "Heretic2" hace referencia a un proceso de ajuste orientado a reducir el comportamiento de rechazo del modelo, presumiblemente mediante fine-tuning sobre datos que evitan respuestas evasivas. No se han publicado detalles técnicos sobre este proceso en la información proporcionada. El repositorio incluye ficheros mmproj (Q8_0 y f16), lo que indica que el modelo conserva capacidad multimodal de entrada, probablemente visión, heredada de Gemma 4, aunque no se especifica qué modalidades exactamente.
 
 ## Capacidades
 
-- Generación de texto conversacional, según el tag `conversational` del repositorio.
-- Razonamiento y respuesta multi-turno, presumiblemente, aunque no hay documentación que lo verifique.
-- Capacidad MoE con activación parcial de expertos (inferida), lo que en teoría reduce el coste de inferencia respecto a un modelo denso del mismo tamaño.
-- Alineamiento reducido ("Heretic"), lo que implica menor tendencia a rechazar peticiones, a costa de posibles respuestas menos filtradas.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponibles (no se declaran idiomas).
-- Capacidades especiales (thinking mode, visión, audio): no disponibles.
+- Generación de texto conversacional en inglés, con orientación explícita a roleplay y diálogo multi-turno.
+- Comportamiento "uncensored": el ajuste Heretic2 reduce los rechazos ante peticiones que el modelo base declinaría.
+- Capacidad multimodal de entrada probable (ficheros mmproj incluidos), sin detalle de modalidades concretas en la información disponible.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte explícito de razonamiento multi-paso, agentes o modo "thinking".
+- Idiomas: únicamente inglés declarado en la model card.
+- No se documentan capacidades específicas de código o matemáticas.
 
 ## Casos de uso
 
-- Despliegue local en estaciones de trabajo: las cuantizaciones Q4_K_M e IQ4_XS permiten ejecutar un modelo de ~25 B con activación parcial en GPUs de consumo, útil para prototipado y pruebas offline sin depender de APIs.
-- Experimentación con modelos "uncensored": investigadores que estudian el efecto del alineamiento pueden comparar esta variante Heretic con el modelo base para analizar diferencias en tasas de rechazo y estilo de respuesta.
-- Chat conversacional autoalojado: el tag `conversational` y el formato GGUF lo hacen apto para montar un asistente local con llama.cpp u Ollama, siempre que se acepte la falta de garantías de licencia.
-- Evaluación comparativa de cuantizaciones: al ofrecer 12 niveles distintos, sirve para medir la degradación de calidad entre Q2_K y F16 en tareas concretas antes de fijar un nivel para producción.
-- Generación de texto creativo y role-play: los modelos con alineamiento atenuado suelen emplearse en escritura creativa y simulación de personajes, donde los filtros restrictivos resultan limitantes.
-- Investigación sobre eficiencia MoE: con ~4 B activos sobre ~25 B totales, es un banco de pruebas para estudiar el equilibrio entre calidad y coste computacional en arquitecturas dispersas.
-- Integración en pipelines de CI para pruebas de inferencia: el formato GGUF y las herramientas de llama.cpp permiten automatizar pruebas de humo del modelo sin infraestructura GPU dedicada.
+- Roleplay y ficción interactiva: el ajuste Heretic2 y la etiqueta "roleplay" lo orientan a personajes y narrativa sin rechazos, con contexto conversacional multi-turno; adecuado para prototipos de entretenimiento y escritura asistida.
+- Generación creativa sin restricciones editoriales: útil para escritura de guiones, narrativa adulta o experimental donde los filtros de los modelos alineados resultan limitantes, siempre con las salvaguardas legales oportunas.
+- Asistente conversacional local: al distribuirse en GGUF y con un tamaño activo reducido (si se confirma MoE), puede ejecutarse en estaciones de trabajo con GPU de consumo para prototipos de chatbot en inglés.
+- Investigación sobre alineación y censura: permite estudiar el efecto de los ajustes "heretic" comparando respuestas frente al modelo base Gemma 4, en entornos controlados de evaluación.
+- Generación de datos sintéticos de diálogo: útil para producir corpus conversacionales en inglés con estilos variados, revisando posteriormente la calidad y seguridad del contenido generado.
+- Experimentación multimodal local: los ficheros mmproj permiten probar entrada de imágenes en llama.cpp para tareas de descripción o diálogo sobre imágenes, aunque sin garantías documentadas de rendimiento.
 
 ## Benchmarks y rendimiento
 
@@ -54,46 +52,41 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, según tamaño y cuantización):
-  - F16: ~50 GB (no cabe en GPU de consumo).
-  - Q8_0: ~27 GB.
-  - Q6_K: ~21 GB.
-  - Q5_K_M: ~18 GB.
-  - Q4_K_M: ~15-16 GB.
-  - Q3_K_M: ~12-13 GB.
-  - Q2_K: ~9-10 GB.
-- GPU recomendadas: A100 40/80 GB o H100 para F16 y Q8_0; RTX 4090 (24 GB) para Q4_K_M y Q5_K_M; RTX 3090/4080 (16-24 GB) para Q4 y Q3.
-- Cabe en GPU de consumo: sí, con cuantizaciones Q4_K_M o inferiores en GPUs de 16-24 GB; las versiones Q2_K y Q3 pueden ejecutarse incluso en 12 GB, con pérdida de calidad notable.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con GGUF (por ejemplo, llama-cpp-python). vLLM y TGI no soportan GGUF de forma nativa para este tipo de modelos sin conversión previa.
-- Latencia y throughput estimados: no disponibles; dependerán de la GPU, del nivel de cuantización y del grado de offloading a CPU.
+- VRAM estimada para inferencia (pesos + overhead de contexto): Q2_K ~10,7 GB; Q3_K_S ~12,3 GB; Q3_K_M ~13,4 GB; Q3_K_L ~13,9 GB; IQ4_XS ~14,2 GB; Q4_K_S ~15,6 GB; Q4_K_M ~16,9 GB; Q5_K_S ~18,1 GB; Q5_K_M ~19,2 GB; Q6_K ~22,7 GB; Q8_0 ~27,0 GB.
+- Componente multimodal adicional: mmproj-Q8_0 ~0,9 GB y mmproj-f16 ~1,3 GB.
+- GPU recomendadas: RTX 4090 (24 GB) permite Q4_K_M y Q5_K_M con contexto moderado; Q6_K y Q8_0 requieren 24 GB con cuidado o GPUs de 32 GB o más (A100 40 GB, H100, RTX 5090 si está disponible). Para Q8_0 sin compromisos, A100 40 GB o H100 80 GB.
+- Cabe en GPU de consumo: sí, en RTX 3090/4090 (24 GB) con cuantizaciones Q4 y Q5; en GPUs de 16 GB (RTX 4080, 4070 Ti Super) solo Q2_K o Q3_K_S con contexto limitado.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; los ficheros mmproj requieren llama.cpp con soporte multimodal (llama-mtmd o equivalente).
+- Latencia y throughput: no disponibles en la información proporcionada; en un modelo MoE con ~4B activos se espera un throughput notablemente superior al de un denso de 26B, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| G4-MeroMero-26B-A4B-Heretic2-GGUF | ~25,2 B totales / ~4 B activos | no disponible | no disponible | GGUF | Variante Heretic, cuantizaciones estáticas de mradermacher |
-| Modelo base G4-MeroMero-26B-A4B-Heretic2 | ~25,2 B totales / ~4 B activos | no disponible | no disponible | safetensors | Origen de las cuantizaciones, sin model card detallada |
-| Alternativas MoE de tamaño similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables para comparar |
+| G4-MeroMero-26B-A4B-Heretic2 (esta ficha) | 25,23B totales, ~4B activos (según nombre) | no disponible | Apache 2.0 | GGUF, safetensors | Ajuste uncensored/roleplay sobre Gemma 4 |
+| Gemma 4 26B-A4B (base) | ~26B totales, ~4B activos | no disponible | Gemma license | safetensors | Modelo base alineado; esta variante elimina rechazos |
+| Mistral Small 3 (24B) | 24B densos | 32K | Apache 2.0 | safetensors, GGUF | Alternativa densa con contexto documentado |
+| Qwen3-30B-A3B | ~30B totales, ~3B activos | 32K+ | Apache 2.0 | safetensors, GGUF | MoE comparable en tamaño y activación |
 
-No se dispone de información suficiente para establecer una comparativa rigurosa con alternativas concretas de la misma categoría.
+La comparación con Mistral Small 3 y Qwen3-30B-A3B es orientativa: no se dispone de benchmarks del modelo de esta ficha que permitan una comparación cuantitativa de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: no se puede confirmar si el uso comercial está permitido; en la práctica, esto bloquea su adopción en producción sin aclaración previa del autor.
-- Idiomas no declarados: se desconoce el rendimiento en castellano y en otros idiomas; es probable que el modelo esté sesgado hacia el inglés, pero no se puede verificar.
-- Alineamiento reducido ("Heretic"): mayor riesgo de generar contenido inapropiado, ofensivo o inseguro; requiere filtros externos si se expone a usuarios finales.
-- Riesgo de alucinación: sin benchmarks ni documentación de entrenamiento, no hay forma de cuantificar la fiabilidad factual; se debe validar en el dominio de uso.
-- Ausencia de model card detallada: no hay información sobre datos de entrenamiento, sesgos conocidos ni limitaciones específicas.
-- Contexto desconocido: no se puede planificar su uso en tareas de contexto largo sin verificar experimentalmente la ventana real.
-- Repositorio de 133,7 GB: la descarga completa es costosa; conviene bajar solo el fichero de la cuantización necesaria.
-- Modelo comunitario sin respaldo de un laboratorio: sin garantías de mantenimiento, actualizaciones ni soporte.
-- Las cuantizaciones bajas (Q2_K, Q3_K_S) degradan la calidad de forma perceptible; para uso serio, partir de Q4_K_M o superior.
+- Modelo "uncensored": el ajuste Heretic2 elimina parte de las salvaguardas del modelo base, por lo que puede generar contenido ofensivo, inseguro o inapropiado; no es apto para producción orientada al público sin filtros adicionales.
+- Riesgo elevado de alucinación no cuantificado: no hay benchmarks publicados que permitan estimar la fiabilidad factual.
+- Idiomas: solo se declara inglés; el rendimiento en castellano no está garantizado ni documentado.
+- Longitud de contexto no documentada: no se puede planificar el despliegue en escenarios de contexto largo sin verificación empírica.
+- Licencia: aunque el repositorio GGUF declara Apache 2.0, el modelo base Gemma de Google suele distribuirse bajo su propia licencia con condiciones de uso; conviene revisar los términos del modelo base `EternalDragon/G4-MeroMero-26B-A4B-Heretic2` y de Gemma antes de un uso comercial.
+- No se documenta soporte de tool calling ni agentes, por lo que no es adecuado para pipelines de automatización que dependan de function calling.
+- Las cuantizaciones de baja precisión (Q2_K, Q3_K_M) degradan la calidad; para uso serio se recomienda Q4_K_M o superior.
+- El componente multimodal (mmproj) no está documentado en cuanto a modalidades y calidad; su uso en producción requiere validación propia.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/G4-MeroMero-26B-A4B-Heretic2-GGUF
 - Modelo base: https://huggingface.co/EternalDragon/G4-MeroMero-26B-A4B-Heretic2
-- Perfil del cuantizador: https://huggingface.co/mradermacher
-- llama.cpp (motor de inferencia GGUF): https://github.com/ggml-org/llama.cpp
-- Ollama: https://ollama.com
-- Papers, blogs y demos adicionales: no disponibles
+- Cuantizaciones imatrix del mismo modelo: https://huggingface.co/mradermacher/G4-MeroMero-26B-A4B-Heretic2-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#G4-MeroMero-26B-A4B-Heretic2-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de cuantización del autor: https://huggingface.co/mradermacher/model_requests

@@ -2,104 +2,105 @@
 
 ## Resumen
 
-OpenBonsai Qwen3.5-9B es una versión comprimida a pesos ternarios del modelo Qwen/Qwen3.5-9B, publicada por el autor webbrain-one mediante el framework de compresión OpenBonsai (Apache-2.0). Cada peso se reduce a uno de tres valores ({-1, 0, +1}) agrupados en bloques de 128 con una escala fp16 por grupo, lo que da lugar a un único fichero GGUF de 1.997.486.976 bytes (aproximadamente 2 GB) en formato PTQ1_0. El objetivo es demostrar que es posible aplicar cuantización post-entrenamiento extrema (1,58 bits) a un modelo de 9.000 millones de parámetros usando una sola GPU de consumo.
+OpenBonsai Qwen3.5-9B es una compresión a pesos ternarios del modelo Qwen/Qwen3.5-9B, publicada por el proyecto independiente webbrain-one mediante el framework de compresión abierto OpenBonsai (licencia Apache-2.0). El modelo reduce los aproximadamente 8.950 millones de parámetros del modelo base a valores en {-1, 0, +1} agrupados en bloques de 128 con una escala fp16 por grupo, lo que da como resultado un único fichero GGUF de 1.997.486.976 bytes (unos 2 GB) frente a los aproximadamente 18 GB que ocuparían los pesos en BF16.
 
-El modelo se presenta explícitamente como *research preview*: sirve para experimentación, no como producto acabado. Su capacidad matemática y, sobre todo, de código queda muy por debajo del modelo original, según los resultados publicados por el propio autor. El proyecto es independiente y no está afiliado a Prism ML, aunque reutiliza su formato de pesos y requiere su fork de llama.cpp, ya que el llama.cpp upstream no soporta PTQ1_0.
+Se trata de una versión de investigación (research preview), no de un producto terminado, y su interés radica en demostrar que la cuantización ternaria post-entrenamiento (PTQ1_0) puede preservar capacidades funcionales de razonamiento y código en un modelo de casi 9.000 millones de parámetros que cabe en memoria RAM de consumo. La segunda release, publicada el 28 de octubre de 2026, está orientada a código y razonamiento: según el autor, pasa 62 de 114 problemas de HumanEval fuera del subconjunto de selección, frente a los 45 de la primera release.
 
-La relevancia actual reside en el pipeline de compresión: calibración con trazas autogeneradas por el propio modelo (1,74 millones de tokens), rotación Hadamard, GPTQ secuencial, embeddings y cabeza de salida también ternarios, y destilación de escalas contra las salidas top-64 del modelo BF16. Todo el proceso se completó en una RTX 5090 en unas 4,5 horas.
+El modelo es solo texto (sin torre de visión ni capas MTP), no está afiliado ni respaldado por Prism ML (autor de Ternary Bonsai 2 9B, cuyo layout de tensores reutiliza) y requiere runtimes específicos, ya que el llama.cpp upstream no soporta PTQ1_0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (heredada de Qwen/Qwen3.5-9B); pesos ternarios {-1, 0, +1} en grupos de 128 con una escala fp16 por grupo |
-| Parametros totales | 9B (modelo base Qwen3.5-9B); no se detalla el desglose en la informacion disponible |
-| Parametros activos | No aplica (no es MoE); no disponible |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Ternaria 1,58 bits, PTQ1_0 (post-training quantization); 202 matrices ternarias, incluidas embedding y cabeza de salida |
-| Idiomas soportados | No disponibles; los datos de calibracion son casi exclusivamente en ingles y el autor advierte de salida debil en otros idiomas |
-| Licencia | Apache-2.0 (siguiendo el modelo base Qwen/Qwen3.5-9B) |
-| Formato de pesos | GGUF (fichero `OpenBonsai-Qwen3.5-9B-PTQ1_0.gguf`, 1.997.486.976 bytes, SHA-256 `4f2f3d1069a505059126e13ed1d2d7928e715930fe83f6d284426c4b19e35532`) |
+| Arquitectura | Transformer (derivada de Qwen3.5-9B) con pesos ternarios; sin visión ni MTP |
+| Parametros totales | 8.953.803.264 (modelo base) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Ternaria PTQ1_0: pesos en {-1, 0, +1}, grupos de 128 con una escala fp16 por grupo; activaciones cuantizadas a 8 bits en el runtime de Prism |
+| Idiomas soportados | no disponible |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (fichero `OpenBonsai-Qwen3.5-9B-PTQ1_0.gguf`, ~2 GB, SHA-256 `818d8783bc39d92b2777a0333d38f7a25021a7b906f47344b83b7109eba6f7a0`) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la del transformer Qwen3.5-9B, sin torre de visión ni capas MTP (multitoken prediction): es un modelo solo de texto. La intervención de OpenBonsai no cambia el grafo, sino que sustituye las 202 matrices grandes por representaciones ternarias con el mismo layout de tensores que Ternary-Bonsai-2-9B de Prism ML, de modo que el runtime de Prism puede cargar el fichero. El chat template y el tokenizer van embebidos en el GGUF.
+El modelo parte de Qwen3.5-9B y aplica una cuantización ternaria post-entrenamiento sobre las 202 matrices grandes, incluidas la embedding y la cabeza de salida. El proceso, ejecutado en una única RTX 5090 con `openbonsai run --config examples/qwen3_5-9b-reasoning-code.yaml` (unas 5 horas estimadas desde cero), consta de cinco etapas: generación de trazas propias por el modelo en BF16 sobre 2.400 prompts (2,51 M de tokens, 2,10 M generados; el 50 % de los tokens generados son código, frente al 32 % de la primera release), rotación de signo más Hadamard en el layout de Prism, redondeo ternario mediante GPTQ secuencial sobre 256 × 2.048 tokens (192 bloques de trazas, 32 de WikiText-2 train y 32 de UltraChat), ternarización de embedding y cabeza también por GPTQ, y destilación de escalas por grupo.
 
-El proceso de compresión consta de seis pasos: (1) generación de trazas propias, en las que el modelo BF16 responde a 1.520 prompts (1,74 millones de tokens) procedentes de los splits de entrenamiento de GSM8K, MATH, MBPP y OpenCodeInstruct, más chat general, con thinking activado y desactivado, siguiendo la idea AYOT de ScaleQ-1.58 (arXiv 2608.01078) y con un guardia anti-contaminación que rechaza problemas de los conjuntos de evaluación; (2) rotación de signo más Hadamard en el layout de Prism; (3) redondeo ternario mediante GPTQ secuencial sobre 256 × 2.048 tokens, la mitad trazas propias y el resto WikiText-2 train y UltraChat; (4) embeddings y cabeza de salida también ternarios vía GPTQ; (5) destilación de escalas de extremo a extremo contra las salidas top-64 del modelo BF16 sobre 3,1 millones de tokens (42 % trazas), con los códigos congelados; y (6) exportación verificada a PTQ1_0. El autor subraya que esta no es la receta de Prism ML, que no se ha publicado: solo se comparte el formato de fichero.
+Los prompts provienen de los splits de entrenamiento de GSM8K, MATH, MBPP y OpenCodeInstruct, más UltraChat, con thinking activado y desactivado, siguiendo la idea AYOT de ScaleQ-1.58 (arXiv 2608.01078). Existe una guarda de contaminación que rechaza problemas de test de GSM8K y HumanEval y descarta prompts de entrenamiento que compartan una secuencia de 13 palabras con uno de test, aunque el propio autor advierte que no detecta tareas de test reformuladas con otras palabras. El modelo aplica sus propios vectores de signo Hadamard, distintos de los de Ternary-Bonsai-2-9B; con la rotación desactivada la perplejidad se dispara a millones.
 
 ## Capacidades
 
-- Generación de texto y razonamiento en inglés, con modo thinking opcional heredado del modelo base.
-- Razonamiento matemático básico: 69/100 en un subconjunto congelado de GSM8K con thinking desactivado y 25/50 con thinking activado.
-- Generación de código funcional limitada: 19/50 en HumanEval sin thinking y 10/25 con thinking, claramente por debajo del modelo BF16.
-- Comprensión lectora y conocimiento general moderados: 84/100 en 20 preguntas de ARC-Easy.
-- Ejecución en CPU: el autor probó una compilación CPU en el commit `c9c34bc` del fork de Prism; la build CUDA no está probada.
-- No soporta visión (sin torre visual) ni capas MTP.
-- No hay información publicada sobre tool calling, function calling, uso de agentes o capacidades multilingües; el autor indica que la salida en idiomas distintos del inglés es débil.
+- Generación de texto conversacional en formato chat, con plantilla y tokenizador embebidos en el GGUF.
+- Razonamiento con modo thinking (la plantilla de Qwen3.5 lo activa por defecto; el modelo a menudo piensa más de 4.096 tokens).
+- Generación de código: es la capacidad prioritaria de esta segunda release (50 % de tokens de código en las trazas de entrenamiento).
+- Matemáticas: evaluación sobre GSM8K en el harness de PyTorch en BF16.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible en la información proporcionada.
+- Visión y audio: no soportados (modelo solo texto, sin torre de visión).
 
 ## Casos de uso
 
-- Investigación en cuantización extrema: servir como referencia reproducible de un pipeline PTQ ternario completo (trazas autogeneradas, Hadamard, GPTQ, destilación de escalas) para comparar variantes del método sobre el mismo modelo base.
-- Experimentos en hardware de gama baja: con 2 GB de pesos, permite probar inferencia de un modelo de 9B en portátiles o CPUs sin GPU dedicada, midiendo latencia y calidad reales en ese régimen.
-- Aprendizaje y docencia sobre formatos GGUF: el fichero y su SHA-256 permiten ilustrar el ciclo completo de exportación, verificación e integración en un runtime modificado.
-- Evaluación de runtimes: útil para validar el soporte de PTQ1_0 en el fork de llama.cpp de Prism frente a otras implementaciones, incluyendo pruebas de perplejidad y de aceptación especulativa.
-- Prototipado de asistentes conversacionales en inglés donde la huella de memoria sea el criterio dominante y la calidad de código o de matemáticas no sea crítica, como demos internas o pruebas de concepto.
-- Estudio de degradación de capacidades: comparar sus resultados con los del BF16 en GSM8K, HumanEval y WikiText permite analizar empíricamente qué habilidades se pierden antes con la cuantización ternaria.
-- Base para experimentos de destilación de escalas: al estar el modelo ternario congelado, se puede iterar sobre la fase de escalas sin recompilar los códigos.
+- Experimentación en investigación sobre cuantización ternaria: reproducir el pipeline de OpenBonsai con la configuración publicada para estudiar el impacto del redondeo GPTQ secuencial y la destilación de escalas en modelos de ~9B.
+- Inferencia en CPU de bajo coste: el autor reporta unos 2 GB de RAM y unos 10 tokens/s de generación en un i5-13420H con 4 hilos y `-rtr 1`, lo que permite desplegar el modelo en portátiles o servidores sin GPU.
+- Evaluación de asistentes de código en entornos con memoria limitada: útil para probar flujos de generación de código donde el presupuesto de RAM impide cargar el modelo base en BF16, asumiendo la pérdida de precisión frente al original.
+- Pruebas de pipelines de razonamiento con thinking: permite medir el comportamiento de cadenas de pensamiento largas (más de 4.096 tokens) en un modelo ternario y comparar con el modelo base.
+- Docencia y demostraciones de compresión de modelos: el tamaño de ~2 GB y la licencia Apache-2.0 facilitan su uso en cursos y talleres sobre cuantización extrema.
+- Verificación de paridad entre runtimes: los datos de paridad publicados (99,2 % de coincidencia en el primer token frente a una referencia PyTorch FP32, perplejidad 14,15 en WikiText-2) sirven para validar implementaciones de PTQ1_0 en llama.cpp o ik_llama.cpp.
 
 ## Benchmarks y rendimiento
 
-Datos publicados por el autor. Cada fila es una única ejecución sobre conjuntos de evaluación pequeños: GSM8K con un subconjunto congelado de 100 problemas y HumanEval con 50, con tope de 512 tokens y thinking desactivado; "on" significa thinking activado, usando los primeros 50 y 25 problemas de esos subconjuntos con tope de 4.096 tokens. "Dev" son 2.048 tokens de test de WikiText-2 y 20 preguntas de ARC-Easy. EAR es la tasa de aceptación esperada frente a BF16 sobre 4.088 tokens, Σ min(p, q).
-
-| Modelo | GSM8K off | HumanEval off | GSM8K on | HumanEval on | Dev NLL (menor mejor) | ARC /100 | EAR |
-|---|---|---|---|---|---|---|---|
-| Qwen3.5-9B BF16 | 77/100 | 44/50 | 36/50 | 22/25 | 2,423 | 97 | 1 |
-| Ternary-Bonsai-2-9B (Prism ML) | 77/100 | 45/50 | 46/50 | 24/25 | 3,191 | – | 0,676 |
-| **Este modelo** | **69/100** | **19/50** | **25/50** | **10/25** | 2,960 | 84 | 0,706 |
-| Versión anterior (calibración genérica) | 30/100 | 6/50 | 19/50 | 3/25 | 2,887 | 89 | 0,737 |
-
-Notas del autor: calibrar sobre las propias respuestas de matemáticas y código más que duplicó todas las puntuaciones de razonamiento respecto a la versión anterior, con un coste pequeño en NLL de WikiText y en ARC. El código es la debilidad más clara (19/50 frente a 44-45). Con thinking activado el modelo suele razonar más allá del tope de 4.096 tokens: agotó el límite en 23 de 50 problemas de GSM8K, frente a 14 del BF16 y 4 del modelo de Prism. En el runtime de Prism, la perplejidad en test de WikiText-2 (8 × 512 tokens) es 12,59, frente a 16,51 de Ternary-Bonsai-2-9B y 11,93 de la versión anterior de OpenBonsai. El propio autor advierte que WikiText está parcialmente en dominio, porque los datos de calibración incluyen WikiText-2 train.
+| Benchmark | OpenBonsai Qwen3.5-9B (2.ª release) | Primera release | Notas |
+|---|---|---|---|
+| HumanEval, subconjunto congelado de 50 problemas (thinking off) | 34/50 | 19/50 | Subconjunto usado para seleccionar entre cuatro runs; parte de sus tareas aparece reformulada en los datos de entrenamiento, por lo que probablemente sobreestima la mejora |
+| HumanEval, 114 problemas fuera del subconjunto | 62/114 | 45/114 | 34 marcados por un filtro como la misma tarea o relacionada con una de las trazas; en los otros 80 pasa 38 frente a 26 |
+| Perplejidad WikiText-2 (8 chunks de 512 tokens, 2.040 posiciones) | 14,15 | no disponible | Coincide entre el runtime de Prism y la referencia PyTorch FP32; ik_llama.cpp da 14,15 con `-rtr 1` y 14,14 sin él |
+| Paridad de primer token frente a PyTorch FP32 | 99,2 % (runtime de Prism), 99,0 % (ik_llama.cpp) | no disponible | Sobre las 2.040 posiciones de WikiText-2 |
+| GSM8K | no disponible (el autor indica que matemáticas y código siguen por debajo del modelo original y de Ternary Bonsai 2 9B) | no disponible | — |
 
 ## Requisitos de hardware
 
-- Peso del fichero GGUF: 1.997.486.976 bytes (aproximadamente 2 GB); el modelo completo en memoria ronda los 2 GB más la caché KV, mucho menos que los ~18 GB de pesos BF16 equivalentes.
-- GPU: cabe con holgura en cualquier GPU de consumo con 4 GB o más de VRAM (por ejemplo RTX 3060, RTX 4060, RTX 4090); no hay cifras publicadas de VRAM medida ni de GPU de datacenter (A100, H100).
-- CPU: la compilación probada por el autor es de CPU en el fork de Prism (commit `c9c34bc`); el despliegue sin GPU es viable por tamaño.
-- Runtime obligatorio: fork de llama.cpp de Prism ML (https://github.com/PrismML-Eng/llama.cpp); el llama.cpp upstream no soporta PTQ1_0. Invocación de ejemplo: `llama-cli -m OpenBonsai-Qwen3.5-9B-PTQ1_0.gguf -p "Explain why the sky is blue." -n 256`.
-- La build CUDA de ese fork no está probada según el autor.
-- No se han publicado datos de latencia ni de throughput (tokens/s); no disponibles.
+- VRAM/RAM de inferencia: unos 2 GB para el fichero GGUF; el autor reporta unos 2 GB de RAM en CPU.
+- GPU recomendadas: no disponible; el entrenamiento se hizo en una RTX 5090, pero no se documentan requisitos de GPU para inferencia. Las builds CUDA de los runtimes probados no han sido testeadas.
+- Cabe en GPU de consumo: sí, por tamaño (2 GB), aunque la compatibilidad de kernels CUDA no está verificada.
+- Opciones de despliegue: fork de llama.cpp de Prism (probado en el commit `c9c34bc`, build CPU) e ik_llama.cpp (commit `4955387`, con PTQ1_0 añadido en el PR 2550). El llama.cpp upstream no soporta PTQ1_0. Ejemplo: `llama-server -m OpenBonsai-Qwen3.5-9B-PTQ1_0.gguf -rtr 1 -t 4 --port 8080`.
+- Latencia y throughput: aproximadamente 10 tokens/s en un i5-13420H con 4 hilos y `-rtr 1`; sin datos para GPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Cuantizacion / formato | GSM8K off | HumanEval off | Dev NLL | ARC /100 | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|---|---|
-| OpenBonsai Qwen3.5-9B | 9B | Ternaria 1,58 bits, GGUF PTQ1_0 | 69/100 | 19/50 | 2,960 | 84 | Apache-2.0 | Hugging Face (webbrain-one), research preview |
-| Ternary-Bonsai-2-9B (Prism ML) | 9B | Ternaria, formato PTQ1_0 de Prism | 77/100 | 45/50 | 3,191 | – | no disponible en la informacion | Producto de Prism ML; receta no publicada |
-| Qwen3.5-9B BF16 (modelo base) | 9B | BF16 | 77/100 | 44/50 | 2,423 | 97 | Apache-2.0 | Hugging Face (Qwen) |
-| Version anterior de OpenBonsai (calibracion generica) | 9B | Ternaria, GGUF PTQ1_0 | 30/100 | 6/50 | 2,887 | 89 | Apache-2.0 | Version previa del mismo proyecto |
+| Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| OpenBonsai Qwen3.5-9B | 8.953.803.264 | no disponible | Ternaria PTQ1_0 (~2 GB) | Apache-2.0 | Hugging Face, GGUF |
+| Qwen/Qwen3.5-9B (modelo base) | 8.953.803.264 | no disponible | BF16 y otras | no disponible en la información | Hugging Face |
+| Prism ML Ternary Bonsai 2 9B | no disponible | no disponible | Ternaria (mismo layout de tensores) | no disponible | no disponible |
 
-Lectura: frente a Prism ML, este modelo queda por detrás en razonamiento y código, pero obtiene mejor NLL de WikiText y mayor EAR (0,706 frente a 0,676). Frente al BF16, la pérdida en código es severa (19/50 frente a 44/50) y moderada en GSM8K sin thinking (69 frente a 77).
+Según el autor, el modelo queda por debajo del Qwen3.5-9B original y de Ternary Bonsai 2 9B en matemáticas y código, y ligeramente peor que su primera release en texto general.
 
 ## Limitaciones y advertencias
 
-- Research preview declarado por el autor: útil para experimentos, no para producción.
-- Capacidad de código muy degradada: 19/50 en HumanEval sin thinking frente a 44/50 del BF16 y 45/50 de Prism.
-- Razonamiento matemático por debajo del original, especialmente con thinking activado (25/50 frente a 36/50 del BF16 y 46/50 de Prism).
-- Tiende a razonar en exceso con thinking activado: agotó el tope de 4.096 tokens en 23 de 50 problemas de GSM8K, lo que encarece la inferencia y trunca respuestas.
-- Idiomas: los datos de calibración son casi exclusivamente en inglés y el autor califica la salida no inglesa como débil; no se declaran idiomas soportados.
-- Sesgos: no se documenta ninguna evaluación de sesgos en la información disponible.
-- Riesgo de alucinación: no cuantificado; el NLL de 2,960 en WikiText-2 (frente a 2,423 del BF16) indica mayor incertidumbre del modelo.
-- Dependencia de un runtime no estándar: requiere el fork de llama.cpp de Prism; upstream no carga PTQ1_0. La ruta CUDA no está validada.
-- Las cifras de WikiText están parcialmente en dominio (WikiText-2 train forma parte de la calibración) y favorecen a este modelo; los conjuntos de evaluación de ARC, GSM8K y HumanEval sí están libres de contaminación según el autor.
-- Los benchmarks son de una sola ejecución sobre subconjuntos pequeños (100 y 50 problemas), por lo que la varianza no está caracterizada.
-- Licencia Apache-2.0 permite uso comercial, pero se hereda del modelo base Qwen/Qwen3.5-9B y el proyecto no está afiliado ni respaldado por Prism ML; el nombre "Bonsai" es producto de Prism.
-- Atribución de datos de calibración: GSM8K (MIT), MATH (MIT), MBPP (CC-BY-4.0), OpenCodeInstruct (CC-BY-4.0), UltraChat (MIT) y WikiText-2 (CC BY-SA); conviene revisar las obligaciones de atribución de las licencias CC-BY y CC BY-SA.
+- Research preview: el propio autor lo describe como útil para experimentos, no como producto terminado.
+- Rendimiento inferior al modelo base en matemáticas y código, y ligeramente peor en texto general que la primera release.
+- Riesgo de sobreestimación de resultados: el subconjunto de 50 problemas de HumanEval se usó para seleccionar el modelo y parte de sus tareas aparece reformulada en los datos de entrenamiento; además, 34 de los 114 problemas externos están relacionados con tareas vistas en las trazas.
+- La guarda de contaminación no detecta tareas de test reformuladas con otras palabras.
+- Solo texto: sin visión ni capas MTP.
+- Compatibilidad limitada: no funciona en llama.cpp upstream; requiere el fork de Prism o ik_llama.cpp, y las builds CUDA no están testeadas.
+- El runtime de Prism cuantiza activaciones a 8 bits, por lo que la salida puede diferir de la referencia PyTorch; los resultados de GSM8K y HumanEval provienen del harness de PyTorch en BF16 y no están cubiertos por la verificación de paridad.
+- Dos releases comparten nombre de fichero y `general.name`; solo el SHA-256 los distingue, lo que facilita confusiones en producción.
+- Con thinking activado el modelo suele superar los 4.096 tokens, con el coste de latencia asociado.
+- Sesgos conocidos: no disponible en la información proporcionada.
+- Licencia Apache-2.0 permite uso comercial, pero el modelo base Qwen3.5-9B puede tener condiciones propias que no se detallan en la información disponible.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/webbrain-one/openbonsai-qwen-3.5-9b
-- Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
-- Framework OpenBonsai (repositorio): https://github.com/esokullu/openbonsai
-- Notas de método: https://github.com/esokullu/openbonsai/blob/main/docs/method.md
-- Fork de llama.cpp de Prism ML (runtime necesario): https://github.com/PrismML-Eng/llama.cpp
-- Paper de referencia citado, ScaleQ-1.58: arXiv 2608.01078 (sin URL completa en la información disponible)
+- Hugging Face: https://huggingface.co/webbrain-one/openbonsai-qwen-3.5-9b
+- Repositorio OpenBonsai: https://github.com/esokullu/openbonsai
+- Configuración de entrenamiento: https://github.com/esokullu/openbonsai/blob/main/examples/qwen3_5-9b-reasoning-code.yaml
+- Primera release (revisión `40964de`, tag `reasoning-mix-v1`): https://huggingface.co/webbrain-one/openbonsai-qwen-3.5-9b/tree/40964de45342e7c1cdd6605cdb00533c9adb567d
+- Paridad de runtime: https://github.com/esokullu/openbonsai/tree/main/research/runs/2026-10-29-runtime-parity-9b/
+- Pruebas en ik_llama.cpp: https://github.com/esokullu/openbonsai/tree/main/research/runs/2026-11-02-ik-llama-cpp/
+- Fork de llama.cpp de Prism: https://github.com/PrismML-Eng/llama.cpp
+- ik_llama.cpp: https://github.com/ikawrakow/ik_llama.cpp
+- PR 2550 de ik_llama.cpp (soporte PTQ1_0): https://github.com/ikawrakow/ik_llama.cpp/pull/2550
+- Issue de OpenBonsai sobre ik_llama.cpp: https://github.com/esokullu/openbonsai/issues/13
+- Paper ScaleQ-1.58: arXiv 2608.01078
+- GitHub de webbrain-one: https://github.com/webbrain-one
+- Proyecto WebBrain: https://github.com/webbrain-one/webbrain

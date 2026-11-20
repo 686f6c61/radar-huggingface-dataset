@@ -2,90 +2,99 @@
 
 ## Resumen
 
-Prism Roleplay 1.5 Small es un modelo de rol de personaje y diálogo inmersivo desarrollado por VertexAGI, ajustado mediante LoRA sobre la base Qwen3-8B. A diferencia de la primera versión, centrada en corregir errores mecánicos del rol, esta iteración prioriza la calidad de prosa: cada muestra del corpus de entrenamiento, real o sintética, debe superar un filtro explícito de calidad antes de incluirse. El resultado es un modelo que produce turnos de rol más ricos y extensos que su base, con una tasa de victoria del 83 % en evaluación ciega frente a Qwen3-8B sin ajustar.
+Prism Roleplay 1.5 Small es un modelo de generacion de texto especializado en roleplay de personajes y dialogo inmersivo, desarrollado por VertexAGI como parte de su familia Prism de modelos creativos. Se trata de un ajuste fino mediante LoRA sobre Qwen3-8B, concretamente sobre la variante cuantizada a 4 bits de la comunidad MLX (`mlx-community/Qwen3-8B-4bit`), con 8.190.735.360 parametros totales y una ventana de contexto heredada de la arquitectura Qwen3.
 
-El modelo se distribuye en dos formatos listos para usar: MLX en cuantización 4-bit para Apple Silicon y GGUF Q4_K_M para runtimes basados en llama.cpp. Está pensado para integrarse en frontends de rol como SillyTavern, LM Studio u Ollama, y su licencia Apache 2.0 permite uso comercial sin restricciones. Es una opción ligera y práctica para quien necesite un modelo de rol de 8B con buena prosa y sin depender de APIs de pago.
+El modelo aborda un problema concreto dentro del nicho del roleplay: la mayoria de los ajustes finos de este tipo se centran en corregir errores mecanicos (formato, coherencia de personaje, ruptura de la cuarta pared) pero degradan la calidad de la prosa, aplanandola hacia la media del corpus de entrenamiento. Prism Roleplay 1.5 Small invierte esa prioridad: cada ejemplo de entrenamiento, real o sintetico, debe superar un umbral explicito de calidad (minimo 230 palabras, 3 parrafos y dialogo con al menos dos comillas) antes de entrar en el corpus.
+
+Es relevante ahora porque demuestra que un ajuste LoRA de rango bajo (rank 8) sobre un modelo base de 8B puede superar al base en juicio ciego por pares con una tasa de victoria del 83% en 16 escenas variadas, manteniendo estructura de parrafos y presencia de dialogo. Se distribuye en dos formatos (MLX 4-bit y GGUF Q4_K_M) bajo licencia Apache 2.0, lo que facilita su despliegue tanto en Apple Silicon como en llama.cpp, Ollama y LM Studio.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (Qwen3-8B) con adaptadores LoRA |
-| Parametros totales | ~8B (base Qwen3-8B); safetensors registra 1.280.062.464 (adaptador LoRA + pesos cuantizados) |
+| Arquitectura | Transformer decoder-only (Qwen3), ajuste fino LoRA |
+| Parametros totales | 8.190.735.360 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 2.048 tokens (secuencia de entrenamiento); la base Qwen3-8B soporta hasta 32K de forma nativa |
-| Tipos de cuantizacion | 4-bit (MLX), Q4_K_M (GGUF) |
-| Idiomas soportados | ingles (en) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (MLX 4-bit), GGUF (Q4_K_M) |
+| Longitud de contexto | no disponible en la informacion proporcionada (heredada de Qwen3-8B) |
+| Tipos de cuantizacion | 4-bit MLX (group size 64) y GGUF Q4_K_M (4-bit) |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (MLX) y GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3-8B, un transformer denso con atención de ventana deslizante y atención completa intercaladas, y se ajusta mediante LoRA con rango 8, escala 20 y 16 capas modificadas, durante 2.500 iteraciones con una longitud de secuencia de 2.048 tokens. El corpus de entrenamiento combina tres fuentes filtradas de forma independiente: transcripciones reales de rol del foro publico `lemonilia/Roleplay-Forums_2023-04` (solo se conserva el 13 % del corpus bruto), datos sinteticos de la v1 generados con GLM 5.2 y Nemotron-3-Nano, y una nueva tanda sintetica de 3.991 muestras generada con Nemotron-3-Ultra, Super y Nano via NVIDIA NIM. El filtro de calidad exige que cada turno de asistente tenga al menos 230 palabras, 3 parrafos y dialogue (minimo dos comillas); el corpus final consta de 7.570 muestras de entrenamiento y 398 de validacion, con una mediana de 254 palabras y 4 parrafos por turno. La validacion se amplio a 100 lotes por evaluacion para evitar oscilaciones espurias de la loss provocadas por la composicion del lote.
+El modelo parte de Qwen3-8B, un transformer decoder-only denso, y se ajusta mediante LoRA con rango 8, escala 20 y 16 capas, durante 2.500 iteraciones con longitud de secuencia de 2.048 tokens. La validacion emplea 100 lotes por evaluacion, ampliados desde 20 tras detectar que una muestra menor provocaba oscilaciones de ±0.4 en la perdida de validacion atribuibles a la composicion de los lotes y no a sobreajuste.
+
+El corpus de entrenamiento combina tres fuentes filtradas de forma independiente. La primera son transcripciones reales de foros de roleplay (`lemonilia/Roleplay-Forums_2023-04`), de las que se conservan 1.802 de aproximadamente 14.000 (13%). La segunda es el conjunto sintetico original de Prism Roleplay 1, generado con GLM 5.2 y Nemotron-3-Nano, del que se retienen 2.175 de 3.500. La tercera es un nuevo conjunto sintetico generado para esta version con Nemotron-3-Ultra, Nemotron-3-Super y Nemotron-3-Nano a traves de NVIDIA NIM (GLM 5.2 fue retirado de NIM durante la ejecucion, con HTTP 410, y la politica de usar solo NIM impidio sustituirlo por una API de pago), del que se conservan 3.991 de 5.000. El filtro de calidad exige que cada turno del asistente tenga al menos 230 palabras, 3 parrafos y dialogo con dos o mas comillas. El corpus final es de 7.570 ejemplos de entrenamiento y 398 de validacion, con un turno objetivo mediano de 254 palabras y 4,0 parrafos.
 
 ## Capacidades
 
-- Generacion de prosa narrativa inmersiva para rol de personaje, con turnos extensos (mediana de 299 palabras frente a 210 de la base) y estructura de parrafos consistente.
-- Dialogo en personaje con presencia de dialogue en el 100 % de las respuestas evaluadas.
-- Mantenimiento de personaje a lo largo de conversaciones multi-turno, sin romper la cuarta pared ni dirigirse al lector.
-- Adaptacion a generos variados: ocultismo, ciencia ficcion, noir, fantasia, ambientacion belica, entre otros, segun los escenarios de evaluacion.
-- Sigue el system prompt de rol con instrucciones de estilo, formato y contenido (prosa fluida, parrafos, dialogue, permanecer en personaje).
-- Compatible con tool calling y razonamiento de Qwen3-8B en la medida en que la base los soporta, aunque el ajuste esta orientado a rol conversacional.
-- Capacidad de thinking mode heredada de Qwen3; requiere desactivarla en runtimes que no la gestionen automaticamente (p. ej., `-rea off` en llama.cpp).
+- Generacion de texto conversacional y narrativo orientado a roleplay de personajes, con prosa fluida y estructura en parrafos.
+- Mantenimiento de personaje consistente: acciones, habla e interioridad del personaje sin romper la cuarta pared.
+- Generacion de dialogo integrado en la narracion, con presencia de dialogo del 100% en la evaluacion realizada.
+- Escritura de turnos extensos: media de 299 palabras y 4,5 parrafos por respuesta en la evaluacion, frente a 210 palabras y 4,2 parrafos del base.
+- Adaptacion a generos variados: ocultismo, ciencia ficcion, noir, fantasia, ambientacion belica, entre otros.
+- Modo de razonamiento de Qwen3: el modelo puede emitir un bloque `<think>...</think>` si el runtime no desactiva explicitamente el modo no-thinking; en MLX se gestiona automaticamente, en llama.cpp requiere `-rea off`.
+- Soporte de plantilla de chat de Qwen3 mediante `apply_chat_template`.
+- Capacidades multilingues: limitadas al ingles segun la model card.
+- Tool calling, function calling y capacidades de agente: no disponibles en la informacion proporcionada.
 
 ## Casos de uso
 
-- Rol de personaje en SillyTavern y frontends similares: el modelo se integra via GGUF o MLX y produce turnos de rol extensos y bien formateados, con dialogue y prosa de calidad, ideal para sesiones multi-turno con contextos de hasta 2K tokens de entrenamiento.
-- Chatbots de personaje tipo Character.AI: permite desplegar personajes persistentes con personalidad definida y respuestas narrativas, sin depender de APIs externas ni de pago.
-- Escritura creativa interactiva: util para co-escribir ficcion por turnos, donde el modelo mantiene la voz del personaje y avanza la escena con descripciones ricas.
-- Prototipado de narrativa procedural en juegos: puede generar dialogos de NPC y descripciones de escena en tiempo real, gracias a su licencia Apache 2.0 y su compatibilidad con runtimes locales.
-- Generacion de contenido para juegos de rol de mesa: el modelo puede interpretar PNJs, narrar escenas y mantener coherencia argumental en campañas largas, aunque puede derivar en sesiones muy prolongadas.
-- Fine-tuning posterior sobre dominios especificos: al ser Apache 2.0 y estar basado en Qwen3-8B, permite continuar el ajuste con LoRA para dominios concretos de rol o ficcion interactiva.
-- Evaluacion y comparativa de calidad de rol: su proceso de filtrado de datos y evaluacion ciega documentado lo convierte en una referencia para medir la calidad de prosa en modelos de rol de 8B.
+- Roleplay conversacional de personajes en aplicaciones de entretenimiento: el modelo mantiene un personaje con voz propia a lo largo de turnos multi-turno, escribiendo acciones, dialogo e interioridad en prosa con parrafos, gracias al entrenamiento especifico sobre transcripciones de foro y datos sinteticos filtrados por calidad.
+- Narrativa interactiva y ficcion colaborativa: adecuado para generar escenas de 250 a 300 palabras con cuatro o cinco parrafos por turno, un formato que encaja con plataformas de escritura colaborativa y novelas visuales donde se espera sustancia por intervencion.
+- Simulacion de personajes para entrenamiento de habilidades sociales o entrevistas: el modelo puede encarnar un interlocutor con perfil definido (por ejemplo, un mercenario stoico) y responder en personaje, util en prototipos de formacion y simulacion conversacional.
+- Prototipado rapido en Apple Silicon: al distribuirse en MLX 4-bit (4,61 GB), permite iterar sobre prompts de personaje y plantillas de sistema en portatiles con chip M-series sin infraestructura GPU dedicada.
+- Despliegue local en entornos de escritorio: la variante GGUF Q4_K_M (5,03 GB) se integra en Ollama, LM Studio y llama.cpp, lo que habilita asistentes de roleplay offline en equipos de consumo con 8 GB de VRAM o memoria unificada.
+- Generacion de contenido para videojuegos con NPCs dialogantes: el modelo produce respuestas con formato limpio (un solo defecto de formato en la evaluacion, igual que el base) y estructura de parrafos estable, lo que reduce la necesidad de postprocesado en pipelines de contenido generado.
+- Investigacion sobre ajuste fino con LoRA de bajo rango: sirve como caso de estudio reproducible de como un LoRA rank 8 con filtrado agresivo de datos (13% de retencion en el corpus real) puede superar al base en juicio ciego por pares.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. El autor proporciona una evaluacion propia con juez ciego por pares (`nvidia/nemotron-3-super-120b-a12b`, presentacion aleatorizada) comparando Prism Roleplay 1.5 Small contra la base Qwen3-8B sin ajustar en 16 escenarios variados:
+La model card reporta una evaluacion por juicio ciego por pares con `nvidia/nemotron-3-super-120b-a12b` como juez, con orden de presentacion aleatorizado, sobre 16 escenas variadas:
 
-| Sistema | Victorias vs. base | Palabras medias | Parrafos medios | Dialogue presente | Defectos de formato |
+| Sistema | Tasa de victoria vs. base | Palabras medias | Parrafos medios | Dialogo presente | Defectos de formato |
 |---|---|---|---|---|---|
-| Base Qwen3-8B | — | 210 | 4,2 | 100 % | 1 |
-| **Prism Roleplay 1.5 Small** | **83 %** (10V–2D, 4 empates) | 299 | 4,5 | 100 % | 1 |
+| Base Qwen3-8B | — | 210 | 4,2 | 100% | 1 |
+| Prism Roleplay 1.5 Small | 83% (10W–2L, 4 empates) | 299 | 4,5 | 100% | 1 |
 
-El modelo supera a la base en juicio ciego de calidad con una estructura de parrafos y presencia de dialogue equivalentes, pero con mayor sustancia por turno.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el modelo en 4-bit (MLX o GGUF Q4_K_M) ocupa aproximadamente entre 5 y 6 GB en memoria, por lo que cabe en GPUs de consumo con 8 GB de VRAM o mas.
-- GPUs recomendadas: RTX 3060 12 GB, RTX 4070, RTX 4090 para inferencia local comoda; tambien compatible con Apple Silicon (M1/M2/M3/M4) via MLX, con 16 GB de RAM unificada como minimo recomendado.
-- Opciones de despliegue: `mlx-lm` para Apple Silicon, `llama.cpp` con el flag `-rea off` (o `--reasoning off`) para desactivar el bloque de razonamiento, LM Studio, Ollama y cualquier runtime compatible con GGUF.
-- Latencia y throughput: no hay datos publicados por el autor; como referencia, un Qwen3-8B en 4-bit en una RTX 4090 genera aproximadamente 40-60 tokens/s, y en Apple Silicon M2 Pro unos 20-30 tokens/s, aunque estos valores dependen del runtime y la longuitud de contexto.
-- Para uso en produccion con multiples usuarios, se puede servir via vLLM o TGI convirtiendo los pesos a formato compatible, aunque el repo no incluye instrucciones explicitas para ello.
+- VRAM estimada para inferencia: aproximadamente 4,6 GB para la variante MLX 4-bit y aproximadamente 5,0 GB para la variante GGUF Q4_K_M, segun los tamanos de archivo reportados.
+- GPU recomendadas: no disponibles en la informacion proporcionada; el modelo esta orientado a Apple Silicon via MLX y a runtimes de llama.cpp.
+- Cabe en GPU de consumo: si, en tarjetas con 6-8 GB de VRAM o mas para la variante GGUF; en Apple Silicon con memoria unificada de 8 GB o superior para la variante MLX.
+- Opciones de despliegue: `mlx-lm` en Apple Silicon, `llama.cpp`, Ollama y LM Studio para GGUF.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
+- Nota de despliegue: en llama.cpp es necesario pasar `-rea off` (o `--reasoning off`) para suprimir el bloque de razonamiento de Qwen3; `mlx-lm` lo gestiona de forma automatica.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Formatos |
+| Modelo | Parametros | Contexto | Licencia | Formatos | Notas |
 |---|---|---|---|---|---|
-| **Prism Roleplay 1.5 Small** | 8B (base Qwen3) | 2K entrenamiento / 32K base | Rol de personaje, calidad de prosa | Apache 2.0 | MLX 4-bit, GGUF Q4_K_M |
-| Qwen3-8B (base) | 8B | 32K | Modelo generalista | Apache 2.0 | Multiples |
-| Prism Creative 1 Mini | 4B (base Qwen3-4B) | no disponible | Escritura creativa, poesia, edicion | Apache 2.0 | MLX, GGUF |
-| Prism Creative 1.5 Mini | 4B (base Qwen3-4B-Instruct-2507) | no disponible | Escritura amplia, estilo, transformacion | Apache 2.0 | MLX, GGUF |
-
-Frente a los modelos Prism Creative, que cubren escritura general y creativa, Prism Roleplay 1.5 Small se especializa en rol conversacional y mantiene la ventaja del tamano 8B para mayor coherencia y riqueza de prosa. Comparado con alternativas comerciales de rol como NovelAI Kayra, ofrece la ventaja de ser completamente local y de codigo abierto, aunque con menor contexto efectivo (2K de entrenamiento) y sin ajustes especificos de jailbreak.
+| Prism Roleplay 1.5 Small | 8,19B | no disponible | apache-2.0 | MLX 4-bit, GGUF Q4_K_M | 83% de victoria en juicio ciego vs. Qwen3-8B base en 16 escenas |
+| Qwen3-8B (base) | 8B | no disponible | apache-2.0 | safetensors, GGUF (comunidad) | Modelo generalista; 210 palabras y 4,2 parrafos medios por turno en la evaluacion del autor |
+| Prism Roleplay 1 (version anterior) | 8B (derivado de Qwen3-8B) | no disponible | apache-2.0 | no disponible | Enfoque en correccion de mecanicas con datos sinteticos; sin datos de calidad de prosa reportados |
+| Prism Roleplay 1.5 (experimento abandonado) | 8B (derivado de Qwen3-8B) | no disponible | no disponible | no disponible | Uso masivo de datos reales sin filtro de calidad; prosa aplanada con 158 palabras y 1,1 parrafos medios |
 
 ## Limitaciones y advertencias
 
-- Modelo de 8B ajustado con LoRA sobre un dataset moderado (~7.970 ejemplos); puede heredar tendencias estilisticas de los modelos profesores y del corpus de foros de rol.
-- Sesiones multi-turno muy largas pueden derivar en perdida de coherencia o desviacion del personaje, segun advierte el propio autor.
-- Entrenado exclusivamente en ingles; no soporta otros idiomas de forma fiable.
-- La longitud de secuencia de entrenamiento es de 2.048 tokens; aunque la base Qwen3-8B soporta 32K, el modelo no ha sido validado en contextos largos y puede degradarse.
-- Con llama.cpp es necesario desactivar el razonamiento explicito (`-rea off`); de lo contrario, el modelo emitira un bloque de razonamiento visible antes de la respuesta en personaje.
-- Riesgo de alucinacion y de repetir patrones del corpus de foros, especialmente en escenarios no representados en los datos de entrenamiento.
-- Los resultados de la evaluacion ciega provienen de un unico juez (nemotron-3-super-120b) sobre 16 escenarios; no hay benchmarks estandarizados publicados que permitan comparar con otros modelos de rol de forma objetiva.
+- Idioma: el modelo solo declara soporte de ingles; el rendimiento en castellano u otros idiomas no esta documentado y previsiblemente sera inferior.
+- Riesgo de alucinacion: no se reportan evaluaciones de factualidad; en tareas fuera del roleplay el modelo puede inventar contenido sin restriccion especifica.
+- Sesgos: no se documentan analisis de sesgos; el corpus incluye transcripciones reales de foros de roleplay y datos sinteticos, con los sesgos inherentes a ambas fuentes.
+- Longitud de contexto: no se especifica en la informacion disponible; el entrenamiento LoRA uso secuencias de 2.048 tokens, lo que puede limitar el rendimiento en conversaciones muy largas aunque el base soporte ventanas mayores.
+- Formato de respuesta: el modelo esta entrenado para producir turnos largos (mediana de 254 palabras y 4 parrafos), lo que puede ser excesivo para aplicaciones que requieren respuestas breves.
+- Modo de razonamiento: en runtimes que no desactiven explicitamente el modo no-thinking de Qwen3, el modelo emitira un bloque `<think>...</think>` visible antes de la respuesta en personaje, lo que rompe la inmersion si no se configura correctamente.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero se debe conservar el aviso de licencia y atribucion; conviene verificar las condiciones del modelo base Qwen3-8B y del corpus de foros utilizado.
+- Caveat de produccion: la evaluacion se basa en 16 escenas y un unico juez automatico, con 10 victorias, 2 derrotas y 4 empates; el tamano muestral es reducido y no sustituye una evaluacion humana a gran escala.
+- Dependencia del system prompt: el autor recomienda usar el system prompt de entrenamiento; desviarse de el puede degradar la calidad y el formato de las respuestas.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/VertexAGI/prism-roleplay-1.5-small
-- Modelo relacionado Prism Creative 1 Mini: https://huggingface.co/VertexAGI/prism-creative-1-mini
-- Modelo relacionado Prism Creative 1.5 Mini: https://huggingface.co/VertexAGI/prism-creative-1-5-mini
-- Base del modelo (MLX 4-bit): https://huggingface.co/mlx-community/Qwen3-8B-4bit
+- Modelo en Hugging Face: https://huggingface.co/VertexAGI/prism-roleplay-1.5-small
+- Modelo base: https://huggingface.co/mlx-community/Qwen3-8B-4bit
+- Corpus real de roleplay: https://huggingface.co/datasets/lemonilia/Roleplay-Forums_2023-04
+- Juez de evaluacion: https://huggingface.co/nvidia/nemotron-3-super-120b-a12b
+- Repositorio de mlx-lm: https://github.com/ml-explore/mlx-lm
+- Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp

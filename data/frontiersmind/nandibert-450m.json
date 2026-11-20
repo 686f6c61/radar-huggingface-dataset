@@ -5,7 +5,7 @@
   "author": "FrontiersMind",
   "url": "https://huggingface.co/FrontiersMind/NandiBERT-450M",
   "created_at": "2026-11-18T21:29:24.000Z",
-  "updated_at": "2026-11-19T14:13:10.000Z",
+  "updated_at": "2026-11-19T22:59:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "fill-mask",
@@ -63,7 +63,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 548471808,

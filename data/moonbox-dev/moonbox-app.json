@@ -1,0 +1,63 @@
+{
+  "schema": 2,
+  "id": "moonbox-dev/moonbox-app",
+  "slug": "moonbox-dev-moonbox-app",
+  "author": "moonbox-dev",
+  "url": "https://huggingface.co/moonbox-dev/moonbox-app",
+  "created_at": "2026-11-19T23:34:43.000Z",
+  "updated_at": "2026-11-19T23:59:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Moonbox - Clean Your Litter Box in 5 Seconds",
+      "url": "https://moonlitterbox.com/",
+      "snippet": "No. Moonbox locks into place in the neutral position, so your cat won't accidentally rotate it during normal use. We've tested the …"
+    },
+    {
+      "title": "Moonbox Boîte de camping 115 cm Naturel pour monospace - Amazon",
+      "url": "https://www.amazon.fr/Bo%C3%AEte-camping-fonction-syst%C3%A8me-couchage/dp/B08BTVFFSX",
+      "snippet": "Notre Moonbox est fabriquée directement en Europe dans notre propre production. La boîte est fabriquée à 100 % en bois de …"
+    },
+    {
+      "title": "Moonbox, la litière manuelle qui se nettoie en 5 secondes ... - NeozOne",
+      "url": "https://www.neozone.org/innovation/moonbox-la-litiere-manuelle-qui-se-nettoie-en-5-secondes-depasse-les-600-000-e-sur-kickstarter/",
+      "snippet": "Sep 11, 2026 · Sans moteur, batterie ni application, la Moonbox avait fait le pari de la simplicité. À quelques heures de la fin de sa …"
+    },
+    {
+      "title": "MoonBox Litter Box — Spin to Clean, No Electricity",
+      "url": "https://moonboxlitterbox.com/",
+      "snippet": "Discover the MoonBox Litter Box, a manually powered design that separates clumps with a simple spin. Explore Classic and …"
+    },
+    {
+      "title": "Moonbox - Updates",
+      "url": "https://moonlitterbox.com/updates",
+      "snippet": "Oct 24, 2026 · Monthly behind-the-scenes updates on Moonbox's journey from Kickstarter to your doorstep - funding milestones, …"
+    }
+  ]
+}

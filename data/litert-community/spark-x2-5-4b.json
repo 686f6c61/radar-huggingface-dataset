@@ -44,31 +44,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Motor Elétrico: Como funciona e quais são os critérios de seleção ...",
-      "url": "https://acoplatec.com.br/motor-eletrico-como-funciona/",
-      "snippet": "Jul 29, 2024 · Neste artigo, você entenderá o funcionamento básico dos motores elétricos e os principais critérios de seleção, como …"
-    },
-    {
-      "title": "GitHub - XHToken/Spark-X2.5: Spark-x2.5 open model series. Pushing the ...",
-      "url": "https://github.com/XHToken/Spark-X2.5",
-      "snippet": "Today, we are introducing Spark-X2.5-4B and Spark-X2.5-1.7B, two compact, general-purpose language models designed to make capable AI more practical, efficient, and accessible. The models deliver strong performance across a broad range of everyday tasks—including conversation, writing, translation, reasoning, coding, tool use, and agentic workflows—achieving leading results among open ..."
-    },
-    {
-      "title": "4 dicas para a seleção de motores elétricos",
-      "url": "https://iecmotores.com/pt/4-tips-for-electric-motor-selection/",
-      "snippet": "O princípio da seleção correta da capacidade dos motores de passo deve ser a decisão mais econômica e razoável de potência do …"
-    },
-    {
-      "title": "Spark-X2.5/README.md at main · XHToken/Spark-X2.5 · GitHub",
-      "url": "https://github.com/XHToken/Spark-X2.5/blob/main/README.md",
-      "snippet": "Today, we are introducing Spark-X2.5-4B and Spark-X2.5-1.7B, two compact, general-purpose language models designed to make capable AI more practical, efficient, and accessible. The models deliver strong performance across a broad range of everyday tasks—including conversation, writing, translation, reasoning, coding, tool use, and agentic workflows—achieving leading results among open ..."
-    },
-    {
-      "title": "Critérios de seleção - Motores Elétricos",
-      "url": "https://topten.eco.br/private/selection-criteria/criterios-motores-eletricos",
-      "snippet": "É comum que cada fornecedor tenha nomenclaturas específicas para suas diferentes linhas de motores elétricos que fazem …"
-    }
-  ]
+  "sources": []
 }

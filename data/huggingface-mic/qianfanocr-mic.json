@@ -41,11 +41,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "QianfanOCR · Hugging Face",
-      "url": "https://huggingface.co/docs/transformers/v5.7.0/model_doc/qianfan_ocr",
-      "snippet": "This model was released on 2026-03-18 and added to Hugging Face Transformers on 2026-04-16."
-    }
-  ]
+  "sources": []
 }

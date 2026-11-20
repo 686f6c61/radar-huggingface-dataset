@@ -2,86 +2,87 @@
 
 ## Resumen
 
-Ornith-1.5-35B-A3B-oQ4e-fp16-mtp es una cuantizacion en 4 bits del modelo base ornith-ai/Ornith-1.5-35B-A3B, realizada por Scott Lowry mediante la herramienta oQ (oMLX v0.6.2) con precision mixta. El modelo base pertenece a la familia Ornith, desarrollada por DeepReinforce AI, especializada en tareas de codificacion agente y uso de herramientas. La nomenclatura A3B sugiere una arquitectura MoE con 35.000 millones de parametros totales y 3.000 millones activos por token, aunque este dato no esta confirmado para la version 1.5.
+Ornith-1.5-35B-A3B-oQ4e-fp16-mtp es una cuantizacion mixta del modelo base ornith-ai/Ornith-1.5-35B-A3B, publicada por el usuario scottlowry. El checkpoint esta empaquetado en formato MLX (libreria `mlx`), lo que lo orienta a inferencia en hardware Apple Silicon, y emplea la herramienta oQ de oMLX (v0.7.4.dev1) para aplicar precision mixta sobre los pesos originales. El resultado es un checkpoint de 35.951.822.704 parametros logicos almacenados en 21,445 GiB, con una media efectiva de 5,124 bits por peso.
 
-La cuantizacion reduce significativamente el peso del modelo (22,5 GB en el repositorio) y lo adapta al formato MLX safetensors, pensado para ejecucion eficiente en hardware Apple Silicon. El modelo se presenta como una opcion para ejecutar un modelo de razonamiento y codigo de gran tamano en equipos de consumo, sin necesidad de infraestructura de servidor dedicada. Sin embargo, la informacion publica sobre el modelo base es escasa y no se han publicado resultados de benchmarks ni detalles de entrenamiento.
+La arquitectura declarada en los tags es `qwen3_5_moe`, es decir, un transformer con mezcla de expertos (MoE) de la familia Qwen 3.5. El nombre del modelo indica 35B de parametros totales y 3B activos por token, aunque el dato de parametros activos no aparece confirmado de forma explicita en la informacion disponible. El checkpoint incorpora ademas tres componentes diferenciados: el modelo de lenguaje (34,661B de pesos logicos), un modulo de vision (0,447B) y una cabeza MTP (Multi-Token Prediction, 0,845B) que permite decodificacion especulativa.
+
+La relevancia de esta ficha radica en que es una distribucion cuantizada de un modelo grande pensada para ejecucion local en Mac, con un equilibrio agresivo entre tamano (23 GB de repo) y fidelidad (la mayor parte de los pesos en 4 bits, pero con capas sensibles preservadas en 8 bits, FP16 y FP32). No se dispone de informacion sobre licencia, idiomas soportados ni resultados de benchmarks en la documentacion proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | qwen3_5_moe (mezcla de expertos) |
-| Parametros totales | 35.000 millones (estimado por nomenclatura, no confirmado) |
-| Parametros activos | 3.000 millones (estimado por nomenclatura A3B, no confirmado) |
+| Arquitectura | Transformer MoE (tag `qwen3_5_moe`), con modulo de vision y cabeza MTP |
+| Parametros totales | 35.951.822.704 |
+| Parametros activos | no disponible (el nombre sugiere ~3B activos, sin confirmar) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 4 bits (oQ4e), grupo de 64, precision mixta (fp16 para ciertas capas) |
+| Tipos de cuantizacion | Mixta: affine 4-bit grupo 64, affine 8-bit grupo 128, affine 8-bit grupo 64, FP16 y FP32 (media efectiva 5,124 bits/peso) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | MLX safetensors |
-
-Nota: los parametros totales reales de los safetensors cuantizados son 6.190.932.912, correspondientes a la representacion comprimida, no al modelo original.
+| Formato de pesos | safetensors en formato MLX (libreria `mlx`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Ornith-1.5-35B-A3B utiliza una arquitectura de mezcla de expertos (MoE) basada en la familia Qwen3.5, segun el tag `qwen3_5_moe`. No se dispone de informacion publica sobre el numero de expertos, la estrategia de activacion ni los datos de entrenamiento. La serie Ornith, en su version 1.0, se describia como un conjunto de modelos de codificacion agente con capacidades de auto-mejora y tool use, entrenados con tecnicas de refuerzo y ajuste fino supervisado. Para la version 1.5 no se han encontrado detalles especificos.
+El modelo base es un transformer con mezcla de expertos de la familia Qwen 3.5, segun el tag `qwen3_5_moe`. La nomenclatura "35B-A3B" indica 35.000 millones de parametros totales y aproximadamente 3.000 millones activos por token, patron habitual en arquitecturas MoE de activacion dispersa. El checkpoint cuantizado conserva tres bloques funcionales: el modelo de lenguaje (34,661B de pesos logicos, 19,313 GiB), un codificador o proyector de vision (0,447B, 1,664 GiB) y una cabeza MTP (0,845B, 0,468 GiB) que habilita decodificacion multi-token especulativa. No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens procesados ni si hubo fases de RLHF o DPO.
 
-La cuantizacion aplicada con oQ utiliza una estrategia de precision mixta: las capas sensibles (como las de atencion) se mantienen en fp16 mientras que el resto se cuantiza a 4 bits con grupo de 64. Esto busca preservar la calidad del modelo mientras se reduce el uso de memoria. El resultado es un conjunto de pesos en formato MLX safetensors, compatible con la libreria MLX de Apple.
+La innovacion tecnica de esta publicacion no reside en el entrenamiento sino en la cuantizacion. La herramienta oQ de oMLX aplica precision mixta por tensor: el 91,838% de los pesos logicos (33,018B) se almacena en affine 4-bit con grupo de 64, lo que reduce el coste a 4,50 bits efectivos; un 6,474% (2,328B) se preserva en affine 8-bit grupo 64 (8,50 bits efectivos) y un 0,359% (0,129B) en affine 8-bit grupo 128 (8,25 bits). Ademas, 0,031B de pesos quedan en FP16 y 0,447B en FP32, presumiblemente correspondientes a capas sensibles (normalizaciones, embeddings o el proyector de vision). El checkpoint fue re-cuantizado el 2026-11-11 con oMLX v0.7.4.dev1, por lo que versiones anteriores deben descartarse.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento: al ser un modelo MoE de gran tamano, se espera que maneje tareas complejas de lenguaje, aunque no hay evaluaciones publicas.
-- Codificacion agente: la familia Ornith esta disenada para tareas de programacion autonoma, incluyendo generacion de codigo, depuracion y refactorizacion.
-- Uso de herramientas (tool calling): probable soporte para invocar funciones externas, basado en las capacidades de la serie Ornith 1.0, aunque no confirmado para 1.5.
-- Razonamiento multi-paso: posible capacidad para descomponer problemas y ejecutar pasos intermedios, comun en modelos de codificacion agente.
-- Multilingue: no hay datos especificos, pero los modelos base de Qwen suelen soportar multiples idiomas; no confirmado.
-- Ejecucion en Apple Silicon: gracias a la cuantizacion MLX, el modelo puede ejecutarse en Macs con memoria unificada suficiente.
+- Generacion de texto y razonamiento: el modelo base es un LLM de gran escala con arquitectura MoE, orientado a tareas de comprension y generacion.
+- Procesamiento de vision: el checkpoint incluye un modulo de vision de 0,447B de pesos logicos, lo que habilita entrada de imagenes (modelo multimodal).
+- Decodificacion especulativa: la cabeza MTP de 0,845B permite generar varios tokens por paso de verificacion, reduciendo la latencia en inferencia autoregresiva.
+- Codigo y matematicas: capacidad esperable en la familia Qwen 3.5, aunque no se documenta de forma explicita en la informacion disponible.
+- Tool calling y function calling: no disponible en la documentacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la documentacion proporcionada.
+- Capacidades multilingues: no disponible; no se declaran idiomas en la model card.
+- Modo thinking explicito: no disponible.
 
 ## Casos de uso
 
-- Asistente de programacion local: un desarrollador puede cargar el modelo en un Mac con 32 GB de RAM o mas y usarlo como copiloto de codigo offline, generando funciones, explicando fragmentos o sugiriendo correcciones.
-- Automatizacion de tareas de refactorizacion: el modelo puede recibir un codigo fuente y proponer cambios estructurales, aunque la falta de benchmarks impide validar su fiabilidad en produccion.
-- Agente de integracion continua: si soporta tool calling, podria integrarse en pipelines de CI/CD para revisar pull requests, generar tests o documentar cambios, siempre que se valide su precision previamente.
-- Entorno de desarrollo integrado (IDE) con privacidad: al ejecutarse en local, evita enviar codigo propietario a servicios en la nube, adecuado para empresas con requisitos de confidencialidad.
-- Educacion y formacion en programacion: puede usarse para generar ejemplos, explicar conceptos o evaluar soluciones de estudiantes, con la precaucion de que las respuestas pueden contener errores.
-- Prototipado rapido de agentes conversacionales: desarrolladores pueden experimentar con un modelo de razonamiento avanzado sin coste de API, usando MLX y Python para construir demos.
+- Inferencia local en Apple Silicon: el formato MLX y el tamano de 21,445 GiB permiten cargar el modelo en Macs con memoria unificada de 32 GB o superior, usando la libreria `mlx` para aprovechar los kernels optimizados de Apple.
+- Asistentes multimodales de escritorio: gracias al modulo de vision integrado, se puede construir un asistente que procese capturas de pantalla o documentos escaneados y responda en lenguaje natural, todo en local sin enviar datos a la nube.
+- Generacion de codigo en estaciones de trabajo: un MoE de ~3B activos ofrece un coste computacional por token bajo, adecuado para autocompletado y refactorizacion en editores integrados que corren sobre el portatil del desarrollador.
+- Prototipado rapido de aplicaciones LLM: el checkpoint cuantizado reduce el ciclo de iteracion (descarga de 23 GB, carga en memoria) frente al modelo en precision completa, lo que facilita pruebas de concepto en equipos con hardware limitado.
+- Decodificacion de baja latencia con MTP: la cabeza de prediccion multi-token permite servir respuestas interactivas con mayor throughput, util en chatbots o interfaces conversacionales donde la latencia percibida es critica.
+- Investigacion sobre cuantizacion: el desglose detallado por formato (4-bit, 8-bit, FP16, FP32) sirve como caso de estudio para medir el impacto de la precision mixta en calidad y velocidad frente al modelo base sin cuantizar.
+- Evaluacion comparativa de arquitecturas MoE: investigadores pueden medir como se comporta un MoE de 35B totales y ~3B activos frente a modelos densos de tamano similar en tareas de razonamiento y vision.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No existen datos de MMLU, HumanEval, GSM8K u otras pruebas estandar para el modelo base Ornith-1.5-35B-A3B ni para esta cuantizacion. Se recomienda realizar evaluaciones propias antes de usar el modelo en entornos criticos.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Memoria: el modelo cuantizado a 4 bits ocupa aproximadamente 3,1 GB en pesos (6,19B parametros × 0,5 bytes), pero el repositorio completo pesa 22,5 GB, probablemente por incluir versiones adicionales o metadatos. Para inferencia, se estima que un Mac con 16 GB de RAM unificada puede ejecutarlo, aunque 32 GB ofrecen margen para contexto largo.
-- GPU: disenado para Apple Silicon (M1, M2, M3 y superiores) usando MLX. No hay soporte nativo para CUDA en este formato.
-- Opciones de despliegue: la libreria MLX permite cargar el modelo en Python; tambien es compatible con herramientas como llama.cpp si se convierten los pesos a GGUF, aunque no es el formato original.
-- Latencia y throughput: no disponibles. En un Mac M2 Pro con 32 GB, se espera una velocidad de generacion de 10-20 tokens por segundo para un modelo de 3B activos, pero es una estimacion sin pruebas.
+- VRAM o memoria unificada estimada: 21,445 GiB de pesos mas overhead de activaciones y cache KV; se recomienda un minimo de 32 GB de memoria unificada en Apple Silicon.
+- GPU recomendadas: el formato MLX esta disenado para chips Apple M-series (M1 Pro/Max/Ultra, M2 Pro/Max/Ultra, M3 Pro/Max, M4 Pro/Max). No es compatible de forma nativa con CUDA sin conversion previa.
+- Cabe en consumer GPU: si, en equipos Apple con 32 GB o mas de memoria unificada. En GPUs NVIDIA consumer (RTX 4090 con 24 GB) requeriria conversion de formato y posiblemente una cuantizacion adicional.
+- Opciones de despliegue: `mlx` y `mlx-lm` (libreria nativa del checkpoint). Para otros backends seria necesaria conversion a GGUF (llama.cpp/Ollama) o a safetensors estandar (vLLM, TGI).
+- Latencia y throughput: no disponibles. La presencia de la cabeza MTP sugiere mejoras de throughput respecto a decodificacion autoregresiva clasica, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
-La comparativa se basa en la serie Ornith 1.0, ya que no hay datos de 1.5. Modelos MoE de tamano similar orientados a codigo:
-
-| Modelo | Parametros totales | Activos | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ornith-1.5-35B-A3B (este) | 35B (est.) | 3B (est.) | no disp. | no disp. | MLX cuantizado |
-| Ornith-1.0-35B | 35B | 3B | no disp. | no disp. | Hugging Face |
-| Qwen2.5-Coder-32B-A3B | 32B | 3B | 131K | Apache 2.0 | Hugging Face |
-| DeepSeek-Coder-V2-Lite | 16B | 2.4B | 128K | DeepSeek License | Hugging Face |
+| Ornith-1.5-35B-A3B-oQ4e-fp16-mtp | 35,95B totales (MoE) | no disponible | MLX safetensors, 5,124 bits/peso | no disponible | Hugging Face (scottlowry) |
+| ornith-ai/Ornith-1.5-35B-A3B (base) | 35B totales (MoE) | no disponible | safetensors sin cuantizar | no disponible | Hugging Face (ornith-ai) |
+| Qwen 3.5 MoE de referencia | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La falta de datos de rendimiento impide una comparacion objetiva. Qwen2.5-Coder-32B-A3B es una alternativa con licencia permisiva y benchmarks publicos, mientras que Ornith-1.0-35B se ha posicionado como un modelo de codificacion agente con buenos resultados en pruebas informales.
+No se dispone de datos de rendimiento ni de especificaciones completas de alternativas comparables en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Informacion insuficiente: no se conocen la licencia, los idiomas, el contexto maximo ni los datos de entrenamiento del modelo base, lo que impide evaluar su idoneidad legal y tecnica.
-- Riesgo de alucinacion: como todo modelo de lenguaje, puede generar codigo incorrecto o respuestas inventadas; sin benchmarks, el riesgo es mayor.
-- Sesgos desconocidos: no hay auditorias publicas sobre sesgos de genero, raza o idioma.
-- Compatibilidad limitada: el formato MLX solo funciona en Apple Silicon; para GPUs NVIDIA es necesario convertir los pesos, lo que puede degradar la calidad.
-- Cuantizacion agresiva: el uso de 4 bits puede afectar la precision en tareas de razonamiento complejo, aunque la precision mixta mitiga parcialmente este efecto.
-- Sin soporte oficial: el modelo es una cuantizacion comunitaria; el autor original no proporciona garantias ni actualizaciones.
+- La cuantizacion a 4 bits en el 91,8% de los pesos puede degradar la calidad respecto al modelo base, especialmente en tareas de razonamiento matematico y generacion de codigo sensible a precision.
+- El checkpoint esta empaquetado exclusivamente para MLX; no es directamente utilizable en vLLM, TGI, llama.cpp u Ollama sin conversion previa.
+- No se declara licencia en la model card ni en los metadatos de Hugging Face, lo que impide confirmar si el uso comercial esta permitido. Es imprescindible verificar la licencia del modelo base ornith-ai/Ornith-1.5-35B-A3B antes de cualquier despliegue en produccion.
+- No se documentan idiomas soportados; el comportamiento multilingue es incierto.
+- No hay informacion sobre sesgos, tasas de alucinacion ni evaluaciones de seguridad.
+- El modelo fue re-cuantizado el 2026-11-11; copias anteriores descargadas antes de esa fecha deben reemplazarse.
+- El autor es un tercero (scottlowry), no el desarrollador original; la trazabilidad de la cuantizacion depende de la herramienta oMLX y de su version concreta (v0.7.4.dev1).
+- La cabeza MTP anade 0,845B de parametros que deben ser soportados por el runtime; backends que no la implementen pueden ignorarla o fallar al cargar el checkpoint.
 
 ## Enlaces
 
-- Modelo cuantizado: https://huggingface.co/scottlowry/Ornith-1.5-35B-A3B-oQ4e-fp16-mtp
+- Modelo en Hugging Face: https://huggingface.co/scottlowry/Ornith-1.5-35B-A3B-oQ4e-fp16-mtp
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
-- Herramienta de cuantizacion oQ: https://github.com/jundot/omlx
-- Busqueda de modelos cuantizados de Ornith: https://huggingface.co/models?other=base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B
-- Articulo sobre Ornith-1.0-35B: https://xhinker.medium.com/ornith-1-0-35b-the-moe-model-that-runs-like-3b-thinks-like-27b-1e7a0fe5a64e
+- Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx

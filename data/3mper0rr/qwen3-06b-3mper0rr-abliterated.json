@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1249,
+  "downloads_30d": 1256,
   "trending_score": 0,
   "parameters": 596049920,
   "parameters_human": "596.0M",
@@ -46,31 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "PTO fibre : c'est quoi le boîtier de terminaison optique ?",
-      "url": "https://www.echosdunet.net/reseau-internet/fibre/pto",
-      "snippet": "May 25, 2026 · Le point de terminaison optique (ou prise PTO) se trouve à l'intérieur du logement et permet de raccorder la fibre …"
-    },
-    {
-      "title": "Boîtier fibre (PTO) : prise fibre optique, numéro (2026)",
-      "url": "https://www.lafibreoptique.fr/guide/pto-fibre",
-      "snippet": "Sep 7, 2026 · La prise fibre optique, ou boîtier fibre (PTO, Point de Terminaison Optique), est le petit boîtier blanc fixé au mur qui …"
-    },
-    {
-      "title": "PTO fibre : numéro, installation, fonctionnement - CableReview",
-      "url": "https://www.cablereview.fr/internet/guides/pto-fibre/",
-      "snippet": "Aug 2, 2026 · Aussi appelé prise terminale optique, prise fibre ou prise optique, il est installé directement chez l’abonné par un …"
-    },
-    {
-      "title": "PTO : tout savoir sur la prise terminale optique à la maison",
-      "url": "https://www.test-fibreoptique.fr/article/pto-comprendre-la-prise-terminale-optique-a-la-maison-20.html",
-      "snippet": "Apr 25, 2026 · La PTO (ou prise terminale optique) est le point final de la fibre dans votre habitation. Concrètement, elle sert à …"
-    },
-    {
-      "title": "PTO : qu'est-ce que c'est et où trouver son numéro de référence ?",
-      "url": "https://pro.orange.fr/lemag/pto-qu-est-ce-que-c-est-et-ou-trouver-son-numero-de-reference-CNT000002eYUrt.html",
-      "snippet": "May 18, 2025 · Le code PTO est inscrit sur une étiquette à l'avant ou à l'arrière de votre prise, sur votre facture et sur votre espace …"
-    }
-  ]
+  "sources": []
 }

@@ -2,112 +2,101 @@
 
 ## Resumen
 
-SLM-Tavenel 124M es un modelo de lenguaje de tipo base, entrenado desde cero por el usuario athenista y publicado como artefacto de investigación asociado al experimento EXP-0036. Se trata de un decoder transformer de 124.038.144 parámetros totales (95.726.592 sin contar los embeddings del tokenizador), con 27 capas, anchura 576 y una ventana de contexto de 2.048 tokens. No está ajustado por instrucciones ni diseñado como asistente conversacional: su propósito es servir como banco de pruebas reproducible frente a GPT-2 Small.
+SLM-Tavenel 124M es un modelo de lenguaje base experimental de 124 millones de parámetros, entrenado desde cero por el autor independiente athenista y publicado en Hugging Face. Se trata de un transformer decoder-only con 27 capas, anchura de 576 y atención con 9 cabezas de consulta y 3 de clave-valor, que replica el tamaño de GPT-2 Small pero con decisiones arquitectónicas y de entrenamiento propias (SwiGLU, tokenizador de SmolLM2, optimizador Muon combinado con AdamW). No es un modelo instruido ni un asistente conversacional: es un artefacto de investigación orientado a reproducibilidad y a estudiar el entrenamiento de modelos pequeños desde cero.
 
-Su relevancia es metodológica más que de producto. El autor publica un manifiesto de corpus con ficheros fuente fijados por hash, filtros, descontaminación de benchmarks y divisiones de entrenamiento, junto con el registro completo del experimento. Además, reporta una comparación emparejada contra GPT-2 Small en seis tareas con intervalos bootstrap y pruebas de McNemar, y declara explícitamente que el criterio preregistrado de victoria global no se cumplió.
+El modelo se entrenó con aproximadamente 983 millones de posiciones de tokens sobre una mezcla filtrada de FineWeb-Edu (inglés) y FineWeb2-HQ (francés), en una única GPU RTX 4060 Laptop de 8 GB durante unas 57 horas en bfloat16. Su ventana de contexto es de 2.048 tokens, lo que lo sitúa en el rango de los modelos pequeños clásicos y limita su uso a tareas de contexto corto.
 
-El modelo está pensado para inglés y francés, emplea el tokenizador de SmolLM2 (49.152 tokens) y se distribuye bajo licencia MIT en safetensors float32. Requiere `trust_remote_code=True` porque la arquitectura es personalizada y no implementa caché KV, lo que penaliza la velocidad de generación.
+Su relevancia actual es fundamentalmente metodológica: el autor documenta un experimento preregistrado (EXP-0036) que compara el modelo con GPT-2 Small en seis benchmarks con el mismo evaluador, y reconoce explícitamente que el criterio de "victoria global" no se cumplió. Es un ejemplo poco habitual de transparencia sobre resultados negativos y de trazabilidad completa del proceso de entrenamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Decoder transformer causal con pre-RMSNorm, GQA, normalización QK, RoPE, puerta sigmoide por cabeza de atención y MLP SwiGLU |
-| Parametros totales | 124.038.144 |
-| Parametros activos | No aplica (modelo denso, no MoE) |
+| Arquitectura | Transformer decoder-only, 27 capas, anchura 576, 9 cabezas de consulta / 3 de clave-valor, SwiGLU con dimensión intermedia 1.536 |
+| Parametros totales | 124.038.144 (95.726.592 excluyendo los embeddings de tokens) |
+| Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | 2.048 tokens |
-| Tipos de cuantizacion | No disponible (el paquete se publica en float32 safetensors; no se documentan variantes GGUF, AWQ ni GPTQ) |
+| Tipos de cuantizacion | Pesos publicados en float32; copia bfloat16 en `variants/bf16/`; receta int8 para CPU en la sección de inferencia local |
 | Idiomas soportados | Inglés y francés |
-| Licencia | MIT |
-| Formato de pesos | safetensors (float32), con código de modelado personalizado en Transformers |
-
-Datos adicionales de arquitectura: 27 capas, anchura 576, 9 cabezas de consulta y 3 cabezas clave/valor, MLP de anchura 1.536, tokenizador SmolLM2 de 49.152 tokens con embeddings de entrada y salida atados.
+| Licencia | MIT (pesos y código); las fuentes de datos conservan sus propios términos |
+| Formato de pesos | safetensors (`model.safetensors`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder denso de 27 capas con atención causal de consultas agrupadas (9 cabezas Q, 3 cabezas KV), normalización aplicada a Q y K, embeddings posicionales rotatorios (RoPE) y una puerta sigmoide independiente por cabeza de atención. La subcapa feed-forward usa SwiGLU con anchura 1.536 y conexiones residuales, con pre-RMSNorm. Los embeddings de entrada y salida están atados, lo que reduce el recuento efectivo de parámetros no relacionados con el vocabulario a 95.726.592.
+El modelo es un transformer decoder-only de 27 capas con anchura de 576 y una atención con 9 cabezas de consulta frente a 3 cabezas de clave-valor, lo que reduce el coste de caché KV respecto a una atención multi-cabeza convencional. La capa feed-forward usa SwiGLU con dimensión intermedia de 1.536. El tokenizador es el BPE byte-level de SmolLM2 con 49.152 tokens y embeddings de entrada y salida atados. La ventana de contexto es de 2.048 tokens.
 
-El entrenamiento se realizó desde cero con el optimizador Muon, semilla 20261031, 15.000 actualizaciones y 983.040.000 posiciones de token procesadas. El corpus se construyó a partir de subconjuntos fijados de FineWeb-Edu (páginas web inglesas con puntuación educativa) y FineWeb2-HQ (páginas francesas filtradas por calidad), con un manifiesto que registra hashes de los ficheros fuente, filtros aplicados, recuentos, descontaminación por 13-gramas exactos contra benchmarks y hashes de las divisiones. No se documenta RLHF, DPO ni ajuste por instrucciones de ningún tipo. La implementación publicada no incluye caché KV, por lo que la generación autoregresiva recalcula el prefijo en cada paso.
+El entrenamiento se realizó desde cero sobre una mezcla filtrada de FineWeb-Edu (inglés) y FineWeb2-HQ (francés), cubriendo aproximadamente 983 millones de posiciones de tokens, con precisión mixta bfloat16. El optimizador combina Muon para las matrices de bloque con AdamW para embeddings y normalizaciones, con semilla 20261031. Todo el cómputo se ejecutó en una única RTX 4060 Laptop de 8 GB durante unas 57 horas de GPU; el autor indica que la energía consumida no se midió. No se documenta en la información disponible ninguna fase de RLHF, DPO ni ajuste por instrucciones, ni innovaciones como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generación de texto autoregresiva en inglés y francés como modelo base, sin alineación conversacional.
-- Continuación de texto y modelado de lenguaje puro: el caso de uso natural es la evaluación de probabilidad y la generación condicionada por prefijo.
-- Respuesta a tareas de elección múltiple mediante puntuación de log-verosimilitud, que es exactamente el protocolo con el que se evaluó (ARC-Easy, ARC-Challenge, HellaSwag, Belebele EN/FR, WinoGrande).
-- Comprensión lectora básica y razonamiento de sentido común en inglés, con rendimiento cercano a GPT-2 Small.
-- Capacidad multilingüe limitada a inglés y francés, evaluada con Belebele en ambos idiomas.
-- No soporta tool calling, function calling, agentes, razonamiento multi-paso, modo thinking, visión ni audio. No es un modelo Instruct y no debe usarse como asistente.
+- Generación de texto autoregresiva en inglés y francés como modelo base, sin ajuste por instrucciones.
+- Razonamiento de opción múltiple evaluado en modo zero-shot mediante log-likelihood (ARC-Easy, ARC-Challenge, HellaSwag, Belebele, WinoGrande).
+- Comprensión lectora multilingüe limitada a inglés y francés (Belebele en `eng_Latn` y `fra_Latn`).
+- Capacidad de continuar texto y completar secuencias; no está diseñado para seguir instrucciones ni mantener conversaciones.
+- No se documenta soporte de tool calling, function calling, uso como agente, razonamiento multi-paso, visión, audio ni modo de pensamiento.
 
 ## Casos de uso
 
-- Reproducción de experimentos de entrenamiento desde cero: el paquete incluye configuración, manifiesto de corpus, registro de métricas y log de evaluación, lo que permite auditar y replicar el pipeline con las mismas fuentes fijadas por hash.
-- Línea base de comparación en investigación de modelos pequeños: sirve como referencia de 124M parámetros con tokenizador moderno (SmolLM2) para contrastar arquitecturas alternativas bajo el mismo evaluador de seis tareas.
-- Estudio de arquitecturas con atención de consultas agrupadas y puertas por cabeza: al ser código personalizado y legible, es útil para analizar el efecto de la normalización QK y la puerta sigmoide en modelos de escala reducida.
-- Evaluación de modelado de lenguaje en francés: permite medir bits por byte en un split de test propio (1,040 en francés) y comparar con otras alternativas entrenadas sobre FineWeb2-HQ.
-- Docencia y prácticas de NLP: el tamaño de 0,5 GB del repositorio y los 124M de parámetros permiten ejecutar inferencia en CPU para demostraciones de tokenización, generación greedy y cálculo de perplejidad.
-- Auditoría de descontaminación de benchmarks: el manifiesto de corpus documenta el proceso de eliminación por 13-gramas exactos, lo que lo convierte en un caso de estudio sobre trazabilidad de datos y sus límites frente a paráfrasis y traducciones.
-- Investigación sobre calibración y evaluación estadística: los intervalos bootstrap emparejados y las pruebas de McNemar publicados sirven como plantilla para reportar comparaciones honestas entre checkpoints pequeños.
+- Investigación sobre entrenamiento de modelos pequeños desde cero: el modelo sirve como referencia reproducible para estudiar el efecto de decisiones arquitectónicas (SwiGLU, atención agrupada, tokenizador de 49.152 tokens) frente a GPT-2 Small a igual número de parámetros.
+- Reproducción de experimentos y auditoría metodológica: la documentación enlaza cada número a un fichero del repositorio y del registro de experimentos, lo que permite replicar evaluaciones con el mismo evaluador.
+- Evaluación comparativa de tokenizadores: al usar el BPE de SmolLM2 en lugar del de GPT-2, permite medir el impacto del vocabulario en el rendimiento a igualdad de parámetros.
+- Generación de texto de dominio general en inglés y francés para prototipos de bajo coste: al caber en GPU de consumo y publicarse en float32 y bfloat16, puede ejecutarse en entornos con recursos limitados para tareas de continuación de texto no críticas.
+- Estudio de modelos base multilingües de tamaño reducido: los resultados en Belebele inglés y francés permiten analizar el comportamiento multilingüe de un modelo entrenado con una mezcla bilingüe explícita.
+- Docencia y experimentación con cuantización: la receta int8 para CPU incluida en la model card facilita prácticas sobre inferencia cuantizada en hardware sin GPU.
+- Punto de partida para ajuste fino supervisado: al ser un modelo base con licencia MIT, puede servir como inicialización para experimentos de fine-tuning en inglés o francés, aunque su contexto de 2.048 tokens limita las tareas de contexto largo.
 
 ## Benchmarks y rendimiento
 
-Resultados de precisión en elección múltiple sobre los mismos ítems fijados para ambos checkpoints, con intervalos bootstrap emparejados al 95% sobre ítems (10.000 remuestreos):
+Resultados declarados por el autor (model-index), evaluación de opción múltiple zero-shot por log-likelihood con el evaluador SLM-Tavenel; no verificados de forma independiente.
 
-| Tarea | Ítems | GPT-2 124M | SLM-Tavenel 124M | Diferencia, intervalo 95% |
-|---|---:|---:|---:|---|
-| ARC-Easy | 2.376 | 0,447 | 0,484 | +0,036 [+0,018, +0,055] |
-| ARC-Challenge | 1.172 | 0,185 | 0,206 | +0,021 [0,000, +0,044] |
-| HellaSwag | 10.042 | 0,292 | 0,277 | −0,015 [−0,021, −0,010] |
-| Belebele EN | 900 | 0,310 | 0,316 | +0,006 [−0,021, +0,032] |
-| Belebele FR | 900 | 0,318 | 0,311 | −0,007 [−0,038, +0,024] |
-| WinoGrande | 1.267 | 0,517 | 0,519 | +0,002 [−0,030, +0,036] |
-| Media de seis tareas | — | 0,345 | 0,352 | +0,007 [−0,003, +0,017] |
+| Benchmark | Métrica | Resultado |
+|---|---|---|
+| ARC-Easy (test) | accuracy | 0,4836 |
+| ARC-Challenge (test) | accuracy | 0,2065 |
+| HellaSwag (validation) | accuracy | 0,2767 |
+| Belebele inglés (`eng_Latn`, test) | accuracy | 0,3156 |
+| Belebele francés (`fra_Latn`, test) | accuracy | 0,3111 |
+| WinoGrande XL (validation) | accuracy | 0,5193 |
 
-HellaSwag normalizado por longitud: 0,316 para GPT-2 y 0,289 para SLM-Tavenel. El criterio preregistrado exigía mayor precisión en HellaSwag y una media superior en las seis tareas; no se cumplió, ya que el intervalo de la media incluye cero y HellaSwag es inferior.
-
-Bits por byte en el split de test corpus-v2 (solo SLM-Tavenel): 1,067 global, 1,085 en inglés y 1,040 en francés. GPT-2 no fue evaluado en ese split, por lo que no constituye una comparación.
+Comparación con GPT-2 Small según el autor (mismo evaluador, mismas seis tareas): ARC-Easy +3,6 puntos, HellaSwag −1,5 puntos con intervalo que excluye el cero, y diferencia de media en las seis tareas de +0,7 puntos con intervalo que incluye el cero. El criterio preregistrado de "victoria global" no se cumplió.
 
 ## Requisitos de hardware
 
-- VRAM estimada en float32: aproximadamente 0,5 GB para los pesos (124M × 4 bytes), más activaciones y memoria del tokenizador; cabe holgadamente en cualquier GPU consumer con 4 GB o más.
-- En float16 o bfloat16 la huella de pesos baja a unos 0,25 GB, aunque el paquete se distribuye en float32 y no se documentan conversiones oficiales.
-- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) es suficiente; en A100 o H100 el modelo está infrautilizado y el cuello de botella será la implementación sin caché KV.
-- Inferencia en CPU viable: el autor reporta una comprobación de paridad en CPU local con error absoluto máximo de 0,0 en logits y generación greedy de dos tokens.
-- Opciones de despliegue: Transformers con `trust_remote_code=True` es la vía soportada. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, y la ausencia de caché KV limita su integración en servidores de inferencia optimizados.
-- Latencia y throughput: no disponibles. La model card advierte explícitamente de que la generación es más lenta que en implementaciones de decoder optimizadas por no implementar caché KV.
+- VRAM estimada para inferencia: los pesos en float32 ocupan aproximadamente 0,5 GB (tamaño del repo); en bfloat16, unos 0,25 GB. La caché KV para 2.048 tokens con 27 capas y 3 cabezas KV es pequeña, por lo que la huella total se mantiene muy por debajo de 1 GB.
+- GPU recomendadas: cualquier GPU de consumo moderna es suficiente; el propio autor entrenó el modelo en una RTX 4060 Laptop de 8 GB. GPU de datacenter como A100 o H100 no son necesarias para la inferencia.
+- Cabe en GPU de consumo: sí, en cualquier GPU con al menos 1-2 GB de VRAM libre, incluidas GTX 16xx, RTX 20xx/30xx/40xx y GPUs integradas con suficiente memoria compartida.
+- Opciones de despliegue: la librería indicada es transformers; por el uso de `custom_code` puede requerir `trust_remote_code`. La model card incluye una receta de inferencia int8 para CPU. No se documenta soporte explícito para vLLM, llama.cpp, Ollama o TGI en la información disponible.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Estado | Rendimiento |
-|---|---:|---:|---|---|---|
-| SLM-Tavenel 124M | 124M (95,7M sin embeddings) | 2.048 | MIT | Artefacto de investigación, sin ajuste por instrucciones | Media de 0,352 en seis tareas |
-| GPT-2 Small | 124M | 1.024 | MIT | Modelo base histórico, ampliamente disponible | Media de 0,345 en las mismas seis tareas |
-| SmolLM2-135M | 135M | 8.192 (según la familia SmolLM2) | Apache-2.0 | Modelo base e instruct, con ecosistema de despliegue amplio | No evaluado en la información disponible con este evaluador |
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Notas |
+|---|---|---|---|---|---|
+| SLM-Tavenel 124M | 124 M | 2.048 | en, fr | MIT | Base experimental, entrenado desde cero; resultados en seis benchmarks publicados por el autor |
+| GPT-2 Small | 124 M | 1.024 | en | MIT | Referencia de comparación del autor; mismo tamaño, tokenizador distinto |
+| SmolLM2 (variante pequeña) | no disponible en la información | no disponible | no disponible | no disponible | Solo se cita su tokenizador (BPE de 49.152 tokens); no se dispone de datos comparativos |
 
-La comparación directa disponible es únicamente contra GPT-2 Small, con el mismo evaluador y los mismos ítems. Frente a SmolLM2-135M solo se comparte el tokenizador; no hay datos de rendimiento comparables en la información proporcionada, por lo que no se establece una comparación cuantitativa.
+No se dispone en la información proporcionada de resultados de otros modelos bajo el mismo evaluador, por lo que la comparación cuantitativa se limita a GPT-2 Small tal como la reporta el autor.
 
 ## Limitaciones y advertencias
 
-- No es un modelo Instruct ni un asistente: no ha recibido ajuste por instrucciones, RLHF ni DPO, y no debe desplegarse en aplicaciones conversacionales.
-- El criterio preregistrado de mejora global frente a GPT-2 Small no se cumplió; la ventaja en la media de seis tareas no es estadísticamente concluyente y HellaSwag empeora de forma significativa.
-- Contexto muy corto (2.048 tokens) para estándares actuales, lo que descarta tareas de documento largo, RAG con contexto extenso o conversaciones multi-turno prolongadas.
-- Cobertura lingüística restringida a inglés y francés; no hay evidencia de competencia en castellano ni en otros idiomas.
-- La implementación no incluye caché KV, lo que degrada la latencia en generación y desaconseja su uso en producción con requisitos de throughput.
-- Riesgo de alucinación inherente a un modelo base de 124M entrenado con aproximadamente 983 millones de posiciones de token: la capacidad factual es muy limitada.
-- Sesgos: el corpus procede de Common Crawl (FineWeb-Edu y FineWeb2-HQ), por lo que hereda los sesgos de la web filtrada por criterios de calidad y educación; no se documenta ninguna evaluación de sesgos.
-- La descontaminación se limita a 13-gramas exactos y no descarta paráfrasis, traducciones ni exposición previa a los benchmarks.
-- La redacción por regex de correo, teléfono, IPv4 e IBAN no constituye una revisión completa de privacidad; el autor lo advierte explícitamente.
-- La trazabilidad documentada corresponde a las declaraciones de los datasets (ODC-By 1.0 y términos de Common Crawl) y al procesamiento aplicado, no a una verificación independiente de derechos sobre cada página original.
-- El tokenizador proviene de SmolLM2-360M (Apache-2.0), con hash registrado en el manifiesto; conviene revisar las condiciones combinadas con la licencia MIT del modelo.
-- La comprobación de paridad publicada es una prueba de humo de una sola sonda en CPU y no garantiza compatibilidad amplia ni calidad de generación.
-- El repositorio no incluye el texto de entrenamiento en bruto; cualquier uso que requiera redistribuir datos debe remitirse a las fuentes originales.
+- No es un modelo instruido ni un asistente: no sigue instrucciones ni mantiene conversaciones; su uso esperado es la continuación de texto y la evaluación de opción múltiple.
+- El criterio preregistrado de superar a GPT-2 Small en la media de seis tareas no se cumplió; el propio autor advierte que la comparación es descriptiva y no evidencia superioridad general.
+- Ventana de contexto de solo 2.048 tokens, insuficiente para documentos largos o conversaciones multi-turno extensas.
+- Cobertura lingüística limitada a inglés y francés; no hay evidencia de rendimiento en castellano.
+- Riesgo elevado de alucinación y de generación incoherente propio de un modelo base de 124 M entrenado con menos de mil millones de posiciones de tokens.
+- Sesgos: no se documentan análisis de sesgo en la información disponible; los datos de FineWeb-Edu y FineWeb2-HQ arrastran los sesgos de sus fuentes web.
+- Resultados de benchmarks no verificados de forma independiente (`verified: false` en el model-index).
+- Licencia MIT para pesos y código, pero las fuentes de datos conservan sus propios términos, lo que puede afectar a usos comerciales que dependan de la procedencia de los datos.
+- El uso de `custom_code` implica ejecutar código del repositorio del autor; conviene revisarlo antes de desplegar en producción.
+- El autor no midió el consumo energético del entrenamiento.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/athenista/slm-tavenel-124m
-- Dataset FineWeb-Edu (revisión fijada): https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu/tree/87f09149ef4734204d70ed1d046ddc9ca3f2b8f9
-- Dataset FineWeb2-HQ (revisión fijada): https://huggingface.co/datasets/epfml/FineWeb2-HQ/tree/c0c06e94fd3a44ae9e802b2b0fc533817601eb5e
-- Tokenizador SmolLM2-360M (revisión fijada): https://huggingface.co/HuggingFaceTB/SmolLM2-360M/tree/f8027fd0eaeea54caa13c31d31b9fdc459c38b49
-- Diagrama de arquitectura: architecture.svg (incluido en el repositorio del modelo)
-- Comparación emparejada con GPT-2: gpt2-paired-accuracy.svg (incluido en el repositorio del modelo)
-- Registro de entrenamiento y manifiestos: training_record/ (incluido en el repositorio del modelo)
-- Informe de paridad de inferencia: inference-parity-report.json (incluido en el repositorio del modelo)
+- Repositorio del proyecto SLM-Tavenel: https://github.com/thekester/slm-tavenel
+- Registro del experimento EXP-0036 (comparación con GPT-2 Small): https://github.com/thekester/slm-tavenel/blob/92c215f/experiments/EXP-0036-beat-gpt2-at-equal-parameters-2026-10-30.md
+- Catálogo de modelos publicados: https://github.com/thekester/slm-tavenel#published-models
+- Archivo de investigación y reproducibilidad: https://github.com/thekester/slm-tavenel#research-and-reproducibility
+- Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
+- Dataset FineWeb2-HQ: https://huggingface.co/datasets/epfml/FineWeb2-HQ

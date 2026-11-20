@@ -2,90 +2,85 @@
 
 ## Resumen
 
-`mms-tts-eng-mic` es un artefacto de prueba (fixture) publicado por la organizacion `huggingface-mic` en Hugging Face. No se trata de un modelo funcional de sintesis de voz, sino de una version reducida y con pesos aleatorios del modelo `facebook/mms-tts-eng` de Meta, pensada para validar contratos de integracion y expectativas de frameworks (en concreto, Transformers). El autor lo etiqueta explicitamente como `test-artifact` para excluirlo de busquedas de modelos candidatos.
+`mms-tts-eng-mic` es un artefacto de prueba (fixture) publicado por el usuario `huggingface-mic`, no un modelo utilizable en produccion. Se trata de una version reducida y con pesos aleatorios del modelo de sintesis de voz `facebook/mms-tts-eng` de Meta, parte de la familia MMS (Massively Multilingual Speech). El repositorio empaqueta pesos "slim", ejemplos de uso ejecutables y las expectativas de integracion con frameworks en un unico lugar.
 
-El modelo conserva la arquitectura `VitsModel` del original, pero reduce el numero de capas ocultas a 2 y sustituye los pesos entrenados por pesos aleatorios generados con semilla 17. Aun asi, mantiene los mismos nombres de tensores que el checkpoint real y copia byte a byte los ficheros del procesador (`special_tokens_map.json`, `tokenizer_config.json`, `vocab.json`) de `facebook/mms-tts-eng`.
+El modelo cubre la arquitectura `VitsModel` (VITS, text-to-speech extremo a extremo) pero con una configuracion reducida a `num_hidden_layers=2` y 15.610.576 parametros totales, frente al checkpoint original completo de MMS-TTS. Los pesos se generaron con semilla 17 y no han sido entrenados: pasaron una puerta de sensibilidad a la entrada (cada perturbacion de las entradas del contrato movia los logits al menos 0,001), lo que basta para validar rutas de codigo, no para generar audio inteligible.
 
-Su relevancia es puramente de ingenieria: sirve como fixture reproducible para probar pipelines de carga, inferencia y validacion de integraciones sin necesidad de descargar el modelo completo. Con 15,6 millones de parametros y un repositorio de 0,1 GB, es un recurso ligero para CI y tests automatizados, no para produccion.
+Su relevancia es puramente de ingenieria: sirve para probar integraciones de Transformers y pipelines de TTS sin descargar el checkpoint completo, manteniendo los mismos nombres de tensores, los ficheros de procesador copiados byte a byte y compatibilidad numerica en float32, bfloat16 y float16. Esta etiquetado como `test-artifact` precisamente para excluirlo de busquedas de modelos candidatos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | VITS (VitsModel), transformer reducido a 2 capas ocultas |
+| Arquitectura | VITS (`VitsModel`), text-to-speech extremo a extremo |
 | Parametros totales | 15.610.576 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos en float32; compatible con bfloat16 y float16) |
-| Idiomas soportados | no disponible (el modelo base es `facebook/mms-tts-eng`, orientado a ingles) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (modelo TTS, no de contexto textual) |
+| Tipos de cuantizacion | no disponible; pesos guardados en float32, verificado finito en float32, bfloat16 y float16 |
+| Idiomas soportados | ingles (heredado de `facebook/mms-tts-eng`; no declarado explicitamente en la model card) |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (float32) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea la arquitectura VITS, un modelo generativo de sintesis de voz texto-a-habla que combina un encoder de texto, un prior variacional y un decodificador acustico con discriminadores adversariales en su entrenamiento original. En esta fixture, la configuracion se ha reducido mediante la regla generica de `sweep.py` del repositorio `transformers-mic`, fijando `num_hidden_layers` a 2.
+La arquitectura es VITS, un modelo generativo de sintesis de voz que combina un encoder de texto, un prior variacional, un decoder basado en flujo normalizador y un discriminador adversarial en entrenamiento. En este repositorio la configuracion se ha reducido mediante la regla generica de `sweep.py` del proyecto `transformers-mic` a `num_hidden_layers=2`, manteniendo los mismos nombres de tensores que el checkpoint real.
 
-No hubo entrenamiento real: los pesos son aleatorios (semilla 17) y se generaron tras superar una puerta de sensibilidad a la entrada, en la que cada perturbacion de las entradas del contrato movia los logits al menos 0,001. Los pesos se guardan en float32, el dtype por defecto de `facebook/mms-tts-eng`, y se verifica que son finitos en float32, bfloat16 y float16 tanto en forward como en loss y gradientes. Los ficheros del procesador se copiaron byte a byte del modelo base, y los nombres de tensores coinciden con el checkpoint real.
+No hubo entrenamiento. Los pesos son aleatorios (semilla 17) y unicamente superaron una puerta de sensibilidad a la entrada: cada perturbacion de las entradas del contrato desplazaba los logits al menos 0,001. Los ficheros de procesador (`special_tokens_map.json`, `tokenizer_config.json`, `vocab.json`) se copiaron byte a byte desde `facebook/mms-tts-eng`. El artefacto se guarda en float32, el dtype con el que carga por defecto el modelo base, y se verifico que forward, loss y gradientes son finitos en float32, bfloat16 y float16.
 
 ## Capacidades
 
-- Generacion de texto a voz: al conservar la arquitectura VITS y el procesador del modelo base, la fixture reproduce el contrato de entrada/salida de un TTS.
-- Validacion de integraciones: permite comprobar la carga del modelo, el procesamiento de texto y la forma de las salidas en frameworks como Transformers.
-- Pruebas de sensibilidad a la entrada: los pesos aleatorios garantizan que perturbaciones en las entradas produzcan cambios medibles en los logits.
-- Compatibilidad de dtypes: ejecutable en float32, bfloat16 y float16 sin valores no finitos.
-- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni capacidades multilingues reales.
-- No produce audio inteligible: los pesos aleatorios no generan habla coherente.
+- No genera voz utilizable: los pesos son aleatorios y el modelo esta etiquetado como `test-artifact`.
+- Sirve como fixture para validar la carga de `VitsModel` en Transformers con la configuracion reducida.
+- Permite comprobar contratos de integracion: manifiesto `integration.json`, uso en Transformers y directorio de expectativas.
+- Valida rutas de forward, calculo de loss y retropropagacion (gradientes finitos en tres dtypes).
+- Verifica la compatibilidad de los ficheros de procesador copiados del modelo original.
+- No soporta tool calling, agentes, razonamiento multi-paso ni vision.
+- No es multilingue mas alla de lo heredado del modelo base en ingles.
 
 ## Casos de uso
 
-- Tests de integracion en CI: usar la fixture para verificar que el pipeline de carga de `VitsModel` y su procesador funciona sin descargar el checkpoint completo de `facebook/mms-tts-eng`.
-- Validacion de contratos de framework: comprobar que las expectativas declaradas en `integrations/transformers/expectations` se cumplen con un modelo del mismo tipo y nombres de tensores.
-- Pruebas de compatibilidad de dtypes: ejecutar forward, loss y gradientes en float32, bfloat16 y float16 para detectar problemas de precision o NaNs en pipelines de entrenamiento.
-- Verificacion de sensibilidad a la entrada: validar que perturbaciones en `input_ids` u otras entradas del contrato producen cambios en los logits por encima del umbral de 0,001.
-- Desarrollo de herramientas de inspeccion de modelos: probar scripts que analizan configuracion, nombres de tensores y ficheros del procesador sin coste de descarga.
-- Reproduccion de fixtures: reconstruir el artefacto con `build_fixtures.py` para auditar hashes y fuentes fijadas en `build.json`.
+- Pruebas de integracion en CI: usar el fixture para validar que un pipeline de Transformers carga `VitsModel` y ejecuta forward sin descargar el checkpoint completo de MMS-TTS.
+- Desarrollo de wrappers de TTS: comprobar la forma de las salidas y el contrato de entradas antes de conectar el modelo real `facebook/mms-tts-eng`.
+- Validacion de compatibilidad de dtypes: ejecutar forward y backward en float32, bfloat16 y float16 para detectar problemas numericos en el codigo de integracion.
+- Verificacion de ficheros de procesador: confirmar que el tokenizer y el vocabulario copiados byte a byte se cargan correctamente en la ruta de inferencia.
+- Reproducibilidad de fixtures: reconstruir el artefacto con `build_fixtures.py --fixture mms-tts-eng-mic` y comparar hashes registrados en `build.json`.
+- Pruebas de empaquetado y distribucion: ejercitar la descarga desde el Hub y la resolucion de rutas en un repo de 0,1 GB.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un artefacto de prueba con pesos aleatorios, no tiene sentido evaluar su calidad de sintesis ni su rendimiento en tareas de TTS.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en float32 (15,6 M de parametros, ~62 MB de pesos); aun menos en float16 o bfloat16.
-- GPU recomendadas: cualquier GPU consumer moderna es suficiente; no requiere A100 ni H100.
-- Cabe en cualquier GPU consumer, incluida una GTX 1650 o integradas con soporte CUDA; tambien en CPU.
-- Opciones de despliegue: Transformers (carga directa de `VitsModel`), y potencialmente otros runners compatibles con safetensors; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponibles; al ser una fixture de 2 capas, la latencia seria muy baja pero sin valor representativo del modelo real.
+- VRAM estimada: inferior a 1 GB en float32 para 15,6 M de parametros; cabe holgadamente en cualquier GPU consumer.
+- GPU recomendadas: ninguna en particular; cualquier GPU con al menos 1 GB de memoria es suficiente para pruebas.
+- Cabe en GPU consumer (GTX 1050, RTX 2060, RTX 3060, RTX 4090) y tambien en CPU.
+- Opciones de despliegue: Transformers (ruta documentada en `integrations/transformers/usage.md`); no se documentan vLLM, llama.cpp, Ollama ni TGI para este artefacto.
+- Latencia y throughput: no disponibles; al ser un fixture con pesos aleatorios, las cifras no serian representativas del modelo real.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Proposito |
-|---|---|---|---|---|
-| `mms-tts-eng-mic` (esta ficha) | 15,6 M | no disponible | no disponible | Fixture de prueba, pesos aleatorios |
-| `facebook/mms-tts-eng` | no disponible en la informacion | no disponible | no disponible | TTS real en ingles (modelo base) |
-| Otras fixtures `*-mic` de `huggingface-mic` | variable | no disponible | no disponible | Artefactos de prueba para contratos de integracion |
-
-No se dispone de datos de benchmarks ni de modelos comparables adicionales en la informacion proporcionada.
+| Modelo | Parametros | Arquitectura | Proposito | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| `huggingface-mic/mms-tts-eng-mic` | 15,6 M | VITS reducido (2 capas) | Fixture de pruebas | no disponible | Hugging Face |
+| `facebook/mms-tts-eng` | no disponible en la informacion | VITS | TTS en ingles real | no disponible en la informacion | Hugging Face |
+| Otros fixtures `*-mic` del proyecto `transformers-mic` | variable | variable | Pruebas de integracion | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
-- No es un modelo usable: los pesos son aleatorios y no generan habla inteligible.
-- Etiquetado como `test-artifact`: no debe usarse en produccion ni presentarse como modelo de TTS.
-- Licencia no disponible: no se puede confirmar si permite uso comercial; al derivar de `facebook/mms-tts-eng`, habria que consultar la licencia del modelo base.
-- Idiomas no disponibles: aunque el modelo base esta orientado al ingles, la fixture no declara idiomas soportados.
-- Riesgo de confusion: puede aparecer en busquedas si no se filtra por la etiqueta `test-artifact`.
-- Sin garantias de calidad: al no haber entrenamiento, no hay metricas de fidelidad, naturalidad ni inteligibilidad.
-- Contexto y cuantizacion no documentados: no se especifican limites de longitud de entrada ni formatos cuantizados soportados.
+- Pesos aleatorios: el audio generado no sera inteligible; no debe usarse para inferencia real.
+- Etiquetado `test-artifact`: excluido intencionadamente de busquedas de modelos candidatos.
+- Configuracion reducida a 2 capas: el comportamiento no replica el del checkpoint completo.
+- Licencia no declarada: no hay garantia de uso comercial; hay que consultar la licencia de `facebook/mms-tts-eng`.
+- Idiomas no declarados en la model card; el unico idioma heredado es el ingles del modelo base.
+- Sin datos de benchmarks ni de rendimiento; cualquier cifra de calidad seria inventada.
+- No apto para produccion bajo ninguna circunstancia.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/huggingface-mic/mms-tts-eng-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/mms-tts-eng-mic
 - Modelo base: https://huggingface.co/facebook/mms-tts-eng
-- Contrato de integracion: https://huggingface.co/huggingface-mic/mms-tts-eng-mic/blob/main/integration.json
-- Uso con Transformers: https://huggingface.co/huggingface-mic/mms-tts-eng-mic/blob/main/integrations/transformers/usage.md
-- Expectativas de Transformers: https://huggingface.co/huggingface-mic/mms-tts-eng-mic/tree/main/integrations/transformers/expectations
-- Procedencia de la fixture: https://huggingface.co/huggingface-mic/mms-tts-eng-mic/blob/main/build.json
-- Como se redujo la fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/mms-tts-eng-mic.html
+- Como se redujo el fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/mms-tts-eng-mic.html
 - Repositorio `transformers-mic`: https://github.com/huggingface/transformers-mic
-- Script `sweep.py`: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
-- Script `build_fixtures.py`: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Script de construccion de fixtures: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Regla de reduccion (`sweep.py`): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py

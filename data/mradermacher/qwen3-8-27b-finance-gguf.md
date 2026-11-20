@@ -2,96 +2,89 @@
 
 ## Resumen
 
-El modelo `mradermacher/Qwen3.8-27B-finance-GGUF` es una colección de cuantizaciones GGUF del modelo `nico248000000000/Qwen3.8-27B-finance`, un ajuste fino orientado a tareas financieras del modelo base Qwen3.8-27B desarrollado por el equipo Qwen de Alibaba. El autor de las cuantizaciones, mradermacher, es conocido en la comunidad por publicar versiones GGUF de modelos populares, facilitando su ejecución en hardware de consumo mediante llama.cpp, Ollama u otros motores compatibles.
+Qwen3.8-27B-finance-GGUF es la distribucion en formato GGUF del modelo Qwen3.8-27B-finance, un ajuste fino (LoRA/QLoRA) del modelo base Qwen3.8-27B orientado al dominio financiero y publicado por el usuario nico248000000000. La cuantizacion la realiza mradermacher, un conocido empaquetador de pesos GGUF para llama.cpp, que genera un conjunto de variantes estaticas desde Q2_K hasta Q8_0, ademas de los ficheros mmproj necesarios para el procesamiento multimodal.
 
-El modelo base Qwen3.8-27B es un LLM denso multimodal de 27.300 millones de parámetros, diseñado para destacar en generación de código, flujos de trabajo agénticos y automatización de oficina. El ajuste fino financiero busca especializar estas capacidades en el dominio de las finanzas, aunque no se dispone de detalles públicos sobre el proceso de entrenamiento o los datos utilizados. Esta versión GGUF permite desplegar el modelo en entornos con recursos limitados, ofreciendo múltiples niveles de cuantización que equilibran calidad y consumo de memoria.
+El modelo conserva la naturaleza multimodal del original: la pipeline declarada es image-text-to-text, con soporte de vision y video, y esta pensado para conversaciones (tag conversational). Con 27.320.697.856 parametros (unos 27,3 mil millones), se situa en la franja de modelos densos de gran tamano que requieren cuantizacion agresiva para caber en hardware de consumo. El repositorio ocupa 190,8 GB e incluye todas las variantes de cuantizacion.
 
-La relevancia de este modelo radica en su especialización financiera combinada con la flexibilidad de las cuantizaciones GGUF, lo que lo convierte en una opción práctica para desarrolladores que necesitan un asistente de análisis financiero ejecutable localmente sin depender de APIs externas.
+Su relevancia practica es doble: por un lado, ofrece una via para ejecutar un modelo especializado en finanzas con llama.cpp y derivados (Ollama, LM Studio, llama-cpp-python) sin necesidad de GPU de datacenter; por otro, documenta un caso tipico de la cadena de valor del ecosistema abierto, donde un ajuste LoRA comunitario se distribuye en cuantizaciones listas para produccion. La licencia es "other", heredada del modelo base, y las lenguas declaradas son ingles y frances.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (basado en Qwen3.8-27B) |
-| Parametros totales | 27.320.697.856 (27,3B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | x-f16, Q4_K_S, Q2_K, Q8_0, Q6_K, Q3_K_M, Q3_K_S, Q3_K_L, Q4_K_M, Q5_K_S, Q5_K_M, IQ4_XS |
-| Idiomas soportados | No disponible |
-| Licencia | No disponible |
-| Formato de pesos | GGUF |
+| Arquitectura | Transformer multimodal (image-text-to-text) con vision y video; detalles internos no disponibles |
+| Parametros totales | 27.320.697.856 (27,3 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | mmproj-Q8_0, mmproj-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 |
+| Idiomas soportados | en, fr |
+| Licencia | other (heredada del modelo base) |
+| Formato de pesos | GGUF (con ficheros mmproj separados para el componente multimodal) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una cuantización GGUF del ajuste fino `Qwen3.8-27B-finance`, que a su vez parte del modelo base Qwen3.8-27B. Según la información pública del repositorio oficial, Qwen3.8-27B es un LLM denso multimodal con arquitectura transformer, optimizado para tareas de codificación, razonamiento agéntico y automatización de oficina. No se han publicado detalles específicos sobre el proceso de entrenamiento del ajuste fino financiero, como el número de tokens, la composición del dataset o si se emplearon técnicas de RLHF o DPO.
+El modelo base es Qwen3.8-27B-finance, un ajuste fino del Qwen3.8-27B de 27,3 mil millones de parametros. La model card del repositorio GGUF indica que el ajuste se realizo con LoRA y QLoRA sobre el modelo base, y etiqueta el resultado con los tags unsloth, lora, qlora y finance. Esto sugiere un entrenamiento de adaptacion de bajo rango sobre pesos cuantizados, una tecnica habitual para especializar modelos grandes con recursos limitados. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset financiero ni si hubo fases de RLHF o DPO.
 
-Las cuantizaciones GGUF han sido generadas por mradermacher a partir de los pesos originales en formato safetensors, utilizando la herramienta de conversión estándar. La colección incluye desde cuantizaciones de alta precisión (x-f16, Q8_0) hasta opciones agresivas (Q2_K, IQ4_XS), permitiendo al usuario elegir el equilibrio entre fidelidad y requisitos de memoria.
+La arquitectura subyacente es un transformer multimodal: la pipeline image-text-to-text y los ficheros mmproj confirman que el modelo procesa imagenes y video ademas de texto. El repositorio GGUF incluye proyecciones multimodales en Q8_0 (0,7 GB) y f16 (1,0 GB), que deben cargarse junto con los pesos del modelo para habilitar la entrada visual. La cuantizacion es estatica (quantize_version 2, output_tensor_quantised 1), sin variantes ponderadas por imatrix en el momento de la publicacion; el autor indica que podrian no estar disponibles.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: hereda las capacidades del modelo base Qwen3.8-27B, que incluyen razonamiento lógico, comprensión de instrucciones complejas y generación de respuestas coherentes.
-- Generación de código: el modelo base está optimizado para tareas de programación, por lo que el ajuste financiero probablemente mantiene esta habilidad, aunque no hay benchmarks específicos.
-- Flujos de trabajo agénticos: el modelo base soporta razonamiento multi-paso y planificación, lo que lo hace adecuado para tareas de agente.
-- Automatización de oficina: el modelo base está diseñado para tareas como resumen de documentos, generación de informes y gestión de correos electrónicos.
-- Especialización financiera: el nombre del modelo sugiere un ajuste fino en datos financieros, lo que podría mejorar el rendimiento en análisis de estados financieros, interpretación de métricas y generación de informes económicos, aunque no se dispone de documentación que lo confirme.
-- Multimodalidad: el modelo base Qwen3.8-27B es multimodal, pero no se indica si el ajuste fino conserva esta capacidad ni si las cuantizaciones GGUF incluyen el proyector de visión.
-- Soporte de tool calling: no confirmado en la información disponible, aunque el modelo base lo soporta probablemente.
+- Generacion de texto conversacional multi-turno, con el tag conversational en el repositorio.
+- Razonamiento y analisis en dominio financiero, gracias al ajuste LoRA/QLoRA sobre datos de finanzas.
+- Procesamiento de imagenes y video como entrada (image-text-to-text), util para documentos escaneados, graficos y capturas.
+- Soporte multilingue limitado a ingles y frances segun la model card.
+- Ejecucion local mediante llama.cpp y herramientas compatibles con GGUF.
+- No se documenta en la informacion disponible soporte explicito de tool calling, function calling, modo thinking ni agentes multi-paso.
 
 ## Casos de uso
 
-- Análisis de informes financieros: el modelo puede procesar y resumir informes anuales, trimestrales o de resultados, extrayendo métricas clave y generando resúmenes ejecutivos. Su especialización financiera debería mejorar la precisión en la interpretación de términos contables.
-- Asistente de inversión personal: desplegado localmente, puede responder preguntas sobre carteras, riesgos o estrategias de inversión, aunque se debe validar la información generada.
-- Generación de documentación financiera: redacción de propuestas de inversión, memorandos o informes de análisis, aprovechando la capacidad de generación de texto del modelo base.
-- Automatización de tareas de back-office: integración en pipelines de procesamiento de documentos financieros, como extracción de datos de facturas o conciliación de cuentas, gracias a su capacidad de razonamiento y generación estructurada.
-- Chatbot de atención al cliente bancario: el modelo puede gestionar consultas frecuentes sobre productos financieros, saldos o transacciones, con la ventaja de ejecutarse en local para proteger datos sensibles.
-- Análisis de sentimiento de noticias económicas: procesamiento de artículos y comunicados para evaluar el impacto en mercados, aunque se requiere validación externa.
-- Educación financiera: generación de explicaciones adaptadas a distintos niveles de conocimiento, desde conceptos básicos hasta análisis avanzados.
+- Analisis de documentos financieros escaneados: el modelo puede recibir la imagen de un balance o una factura y responder preguntas sobre su contenido, combinando la entrada visual con el ajuste en dominio financiero.
+- Extraccion y resumen de informes trimestrales: con el componente de vision puede procesar graficos de resultados y tablas presentadas como imagen, y generar resumenes en ingles o frances.
+- Asistente interno de preguntas sobre productos financieros: conversaciones multi-turno sobre terminologia, ratios o conceptos contables, ejecutables en infraestructura propia con llama.cpp.
+- Clasificacion y etiquetado de capturas de pantalla de terminales financieras (Bloomberg, Reuters) para pipelines de datos, aprovechando la entrada image-text-to-text.
+- Prototipado de chatbots financieros bilingues (en/fr) en entornos con requisitos de privacidad, al poder desplegarse localmente sin enviar datos a la nube.
+- Investigacion sobre ajuste fino en dominio: sirve como punto de partida para experimentos de LoRA/QLoRA en finanzas y para comparar el efecto de distintas cuantizaciones GGUF sobre la calidad.
+- Despliegue en estaciones de trabajo con GPU de consumo: las variantes Q4_K_M (16,9 GB) o IQ4_XS (15,5 GB) permiten ejecutar el modelo en GPUs de 24 GB, algo inviable con los pesos completos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos sobre MMLU, HumanEval, GSM8K u otras métricas para este modelo específico ni para su ajuste fino financiero. Se recomienda consultar los benchmarks del modelo base Qwen3.8-27B en su repositorio oficial para una referencia aproximada de las capacidades generales.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: depende de la cuantización elegida. Para un modelo de 27,3B parámetros, las estimaciones aproximadas son:
-  - Q2_K: ~10-12 GB
-  - Q3_K_M: ~13-15 GB
-  - Q4_K_M: ~16-18 GB
-  - Q5_K_M: ~19-21 GB
-  - Q6_K: ~22-24 GB
-  - Q8_0: ~28-30 GB
-  - x-f16: ~55 GB (no recomendado para GPU de consumo)
-- GPU recomendadas: para cuantizaciones Q4_K_M o inferiores, una RTX 3090/4090 con 24 GB de VRAM es suficiente. Para Q8_0, se necesitan GPUs profesionales como A100 (40 GB) o H100. Las cuantizaciones Q2_K y Q3_K pueden ejecutarse en GPUs de 12-16 GB, como RTX 3060 o RTX 4070.
-- Compatibilidad con hardware de consumo: sí, las cuantizaciones Q2_K, Q3_K y Q4_K_M pueden ejecutarse en GPUs de gama media-alta, aunque con menor velocidad.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, KoboldCpp y vLLM (con soporte GGUF experimental). También es compatible con servidores de inferencia como text-generation-inference (TGI) mediante adaptadores.
-- Latencia y throughput: no hay datos publicados. En una RTX 4090 con Q4_K_M, se puede esperar una generación de 20-40 tokens por segundo, pero es una estimación orientativa.
+- VRAM estimada segun cuantizacion: Q2_K ~11,0 GB; Q3_K_S ~12,4 GB; Q3_K_M ~13,6 GB; Q3_K_L ~14,7 GB; IQ4_XS ~15,5 GB; Q4_K_S ~15,9 GB; Q4_K_M ~16,9 GB; Q5_K_S ~19,1 GB; Q5_K_M ~19,6 GB; Q6_K ~22,5 GB; Q8_0 ~29,1 GB. A estas cifras hay que sumar el fichero mmproj (0,7-1,0 GB) si se usa la entrada multimodal.
+- GPU recomendadas: RTX 4090 (24 GB) o RTX 3090 para Q4_K_M e IQ4_XS; A100 40 GB, H100 o RTX 6000 Ada para Q6_K y Q8_0; configuraciones con dos GPUs de 24 GB para las variantes de mayor calidad.
+- Cabe en GPU de consumo: si, en tarjetas de 16 GB solo con Q2_K o Q3_K_S; en 24 GB con Q4_K_M, IQ4_XS y Q5_K_M; en 32 GB o mas con Q6_K y Q8_0.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python y servidores compatibles con endpoints (el repositorio incluye el tag endpoints_compatible). Los ficheros multi-parte deben concatenarse segun la guia de TheBloke referenciada en la model card.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para una comparativa cuantitativa con otros modelos. Como referencia cualitativa, se puede comparar con:
+| Modelo | Parametros | Contexto | Multimodal | Licencia | Formato |
+|---|---|---|---|---|---|
+| Qwen3.8-27B-finance-GGUF (este) | 27,3 B | no disponible | Si (vision, video) | other | GGUF |
+| Qwen3.8-27B (base, sin ajuste financiero) | ~27 B | no disponible | Si | no disponible en la informacion | safetensors, GGUF |
+| Qwen3.8-27B-finance (adapter original) | 27,3 B | no disponible | Si | other | safetensors |
 
-| Modelo | Parámetros | Contexto | Licencia | Formato |
-|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27,3B | No disponible | Apache 2.0 (según repositorio oficial) | safetensors |
-| Qwen3.8-27B-finance (original) | 27,3B | No disponible | No disponible | safetensors |
-| Qwen3.8-27B-finance-GGUF (este modelo) | 27,3B | No disponible | No disponible | GGUF |
-
-Otras alternativas en el espacio de modelos financieros de tamaño similar incluyen FinGPT o BloombergGPT, pero no se dispone de datos comparativos fiables. Se recomienda evaluar el modelo en tareas específicas antes de elegir.
+No se dispone de datos de rendimiento comparado ni de alternativas financieras de tamano similar verificadas en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: el modelo no indica una licencia clara, lo que supone un riesgo legal para uso comercial. Se debe contactar con el autor original (nico248000000000) para aclarar los términos.
-- Sesgos financieros: el ajuste fino puede haber introducido sesgos específicos del dominio, como preferencias por ciertos instrumentos o estrategias, que deben ser auditados antes de su uso en producción.
-- Riesgo de alucinación: como todo LLM, puede generar información financiera incorrecta o inventada. Nunca debe utilizarse como única fuente para decisiones de inversión o asesoramiento legal.
-- Contexto limitado: no se ha confirmado la longitud de contexto soportada, lo que puede afectar a tareas que requieran procesar documentos largos.
-- Multimodalidad incierta: no se sabe si las cuantizaciones GGUF incluyen el soporte de visión del modelo base, por lo que no se debe asumir esa capacidad.
-- Sin benchmarks: la ausencia de resultados de evaluación impide conocer el rendimiento real en tareas financieras.
-- Mantenimiento: el repositorio tiene 0 descargas y 0 likes, lo que sugiere que no ha sido validado por la comunidad. Se recomienda probar exhaustivamente antes de adoptarlo.
+- Licencia "other": es imprescindible revisar los terminos del modelo base y del ajuste antes de cualquier uso comercial; la model card no detalla condiciones.
+- Modelo especializado en finanzas: puede presentar degradacion en tareas generales fuera de dominio y no debe usarse como asesor financiero sin supervision humana.
+- Riesgo de alucinacion en cifras, ratios y referencias normativas, especialmente en cuantizaciones bajas (Q2_K, Q3_K_S).
+- Idiomas limitados a ingles y frances; el castellano no esta declarado como soportado.
+- Las cuantizaciones son estaticas y no ponderadas por imatrix, lo que puede reducir la calidad frente a variantes ponderadas en los niveles bajos.
+- La longitud de contexto no esta documentada en la informacion disponible, lo que impide planificar cargas de contexto largo con garantias.
+- No se documentan capacidades de tool calling ni de agentes, por lo que no conviene asumirlas en produccion sin validacion.
+- El repositorio es grande (190,8 GB) y requiere descargar solo la variante necesaria; los ficheros multi-parte deben concatenarse correctamente antes de su uso.
 
 ## Enlaces
 
-- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/mradermacher/Qwen3.8-27B-finance-GGUF
-- Modelo original (safetensors): https://huggingface.co/nico248000000000/Qwen3.8-27B-finance
-- Modelo base Qwen3.8-27B en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
-- Repositorio GitHub de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
-- Repositorio GitHub de la serie Qwen3.8: https://github.com/QwenLM/Qwen3.8
+- Repositorio GGUF: https://huggingface.co/mradermacher/Qwen3.8-27B-finance-GGUF
+- Modelo base del ajuste: https://huggingface.co/nico248000000000/Qwen3.8-27B-finance
+- Pagina de resumen del autor: https://hf.tst.eu/model#Qwen3.8-27B-finance-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de modelos del cuantizador: https://huggingface.co/mradermacher/model_requests

@@ -2,85 +2,89 @@
 
 ## Resumen
 
-DNA-50M es un modelo de lenguaje de tamaño reducido (50 millones de parámetros) desarrollado por el usuario reaperdoesntknow, asociado a Convergent Intelligence LLC: Research Division. El modelo se enmarca dentro de la colección DNA-AI y utiliza la arquitectura Liquid Former, una variante de los transformers líquidos basada en el paper arXiv:1910.09700. Su propósito principal es servir como banco de pruebas para el framework teórico denominado Discrepancy Calculus (DISC), un enfoque matemático para analizar las singularidades del entrenamiento (plateaus de pérdida, colapso de modos, olvido catastrófico) como señales estructurales del problema de aprendizaje.
+DNA-50M es un modelo de generacion de texto publicado por el usuario reaperdoesntknow en Hugging Face, etiquetado con la arquitectura `liquid-former` y vinculado al marco teorico "Discrepancy Calculus" (DISC) de Convergent Intelligence LLC. El nombre sugiere un modelo de aproximadamente 50 millones de parametros, aunque no hay confirmacion explicita en la informacion disponible. El repositorio ocupa 0,2 GB, lo que es coherente con un modelo de ese orden de magnitud en precision de 16 bits.
 
-El modelo está diseñado para generación de texto y es compatible con la librería transformers de Hugging Face. Con un tamaño de repositorio de 0.2 GB, es un modelo ligero que puede ejecutarse en hardware de consumo. La model card oficial es extremadamente escasa en detalles técnicos: no se especifican datos de entrenamiento, hiperparámetros, licencia ni idiomas soportados. Toda la información disponible se limita a los tags de Hugging Face y a la descripción teórica del framework DISC, que constituye el principal valor documental del proyecto.
+La model card es practicamente una plantilla sin rellenar: no documenta datos de entrenamiento, hiperparametros, licencia, idiomas ni resultados de evaluacion. La unica informacion tecnica concreta proviene de las etiquetas del repositorio (`transformers`, `pytorch`, `liquid-former`, `text-generation`, `convergentintel`) y de la seccion sobre Discrepancy Calculus, que describe conceptos teoricos (operador de discrepancia, conjuntos de salto, "ghost imprinting") sin detallar como se aplican a este modelo concreto.
 
-La relevancia de DNA-50M reside en su papel como implementación práctica de los conceptos de Discrepancy Calculus, incluyendo el operador de discrepancia, los conjuntos de salto y el ghost imprinting. Para la comunidad de investigación en interpretabilidad y teoría del aprendizaje, este modelo representa un caso de estudio de cómo aplicar principios de teoría de la medida al análisis de arquitecturas neuronales, aunque su utilidad práctica como modelo de producción es limitada dada la ausencia de documentación sobre capacidades y rendimiento.
+Por su tamano y su naturaleza escasamente documentada, DNA-50M debe considerarse un artefacto de investigacion experimental mas que un modelo listo para produccion. Es relevante para quienes estudien arquitecturas tipo "liquid" o el marco DISC, pero no ofrece garantias de calidad, licencia ni reproducibilidad.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Liquid Former (basada en arXiv:1910.09700) |
-| Parametros totales | 50 millones (inferido del nombre del modelo) |
+| Arquitectura | liquid-former (segun etiqueta del repositorio; detalles no disponibles) |
+| Parametros totales | aproximadamente 50M (inferido del nombre; no confirmado) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (inferido del tamaño del repo y compatibilidad con transformers) |
+| Formato de pesos | no disponible (repositorio de 0,2 GB, probablemente safetensors o bin de PyTorch) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura Liquid Former se basa en el concepto de redes neuronales líquidas (Liquid Neural Networks), que utilizan ecuaciones diferenciales ordinarias para modelar la dinámica temporal de las neuronas. A diferencia de los transformers estándar con atención fija, los Liquid Former permiten que la dinámica interna del modelo se adapte continuamente a la entrada, lo que puede mejorar la eficiencia en tareas secuenciales y reducir el número de parámetros necesarios. El paper de referencia (arXiv:1910.09700) describe los fundamentos teóricos de este enfoque.
+La etiqueta `liquid-former` apunta a una arquitectura de tipo "liquid neural network" combinada con mecanismos transformer, pero la model card no describe la arquitectura interna, el objetivo de entrenamiento ni la composicion del dataset. No se especifica el numero de tokens de entrenamiento, si hubo fases de RLHF o DPO, ni que tecnicas de alineacion se aplicaron.
 
-El entrenamiento de DNA-50M se enmarca en el framework Discrepancy Calculus (DISC), que trata las singularidades del entrenamiento como señales estructurales. Según la documentación disponible, el modelo forma parte de una línea de investigación que incluye los trabajos "Structure Over Scale" y "DualMind Methodology", que exploran la transferencia de conocimiento entre modelos a través de la topología del espacio de pesos (ghost imprinting). No se han publicado detalles sobre el dataset de entrenamiento, el número de tokens procesados, ni si se emplearon técnicas como RLHF o DPO.
+La unica informacion adicional es la pertenencia al marco Discrepancy Calculus, que el autor presenta como un enfoque de teoria de la medida para analizar la brecha entre el comportamiento esperado y el observado durante el entrenamiento. Se mencionan conceptos como el operador de discrepancia, los conjuntos de salto y el "ghost imprinting", pero no se documenta como se materializan en este checkpoint concreto. No hay informacion sobre infraestructura de computo, hiperparametros ni proceso de preprocesamiento.
 
 ## Capacidades
 
-- Generación de texto: el modelo puede producir texto coherente, aunque su tamaño reducido limita la complejidad de las respuestas.
-- Implementación de conceptos DISC: incorpora el operador de discrepancia y los conjuntos de salto como parte de su diseño teórico.
-- Compatibilidad con transformers: se integra con el ecosistema estándar de Hugging Face, permitiendo su uso con pipelines de text-generation.
-- Investigación en interpretabilidad: diseñado para estudiar la geometría del espacio de aprendizaje y las discontinuidades en el comportamiento del modelo.
-- Eficiencia computacional: su pequeño tamaño permite experimentación rápida en hardware modesto.
+- Generacion de texto autoregresiva (pipeline `text-generation` declarado en el repositorio).
+- Compatibilidad con la libreria `transformers` de Hugging Face y con `pytorch`.
+- Etiqueta `endpoints_compatible`, lo que indica que puede desplegarse mediante Inference Endpoints de Hugging Face.
+- No hay evidencia documentada de soporte de tool calling, function calling, agentes, razonamiento multi-paso, vision, audio ni modo "thinking".
+- Capacidades multilingues: no disponibles.
+- Capacidades especiales: no disponibles.
 
 ## Casos de uso
 
-- Investigación académica en teoría del aprendizaje: el modelo sirve como banco de pruebas para validar los conceptos de Discrepancy Calculus, como el análisis de conjuntos de salto o el ghost imprinting.
-- Experimentación educativa: estudiantes e investigadores pueden utilizar DNA-50M para comprender el comportamiento de arquitecturas líquidas en tareas de generación de texto.
-- Prototipado rápido: su pequeño tamaño permite iterar rápidamente en experimentos de fine-tuning o evaluación sin necesidad de infraestructura costosa.
-- Análisis de singularidades: investigadores interesados en loss plateaus o colapso de modos pueden usar el modelo para estudiar estos fenómenos en un entorno controlado.
-- Desarrollo de metodologías de destilación: el concepto de ghost imprinting puede explorarse utilizando DNA-50M como modelo estudiante o profesor.
-- Validación de teoría de la medida aplicada a ML: el modelo ofrece un caso concreto para aplicar el operador de discrepancia a un sistema real.
+- Experimentacion academica con arquitecturas "liquid": el modelo puede servir para reproducir o comparar variantes de liquid-former en tareas de generacion de texto a pequena escala, dado su reducido tamano.
+- Prototipado rapido en entornos con recursos limitados: con unos 50M de parametros, cabe en CPU y en GPUs de gama baja, lo que permite iterar sobre pipelines de generacion sin infraestructura dedicada.
+- Pruebas de integracion con el ecosistema transformers: util para validar flujos de carga, tokenizacion y generacion en CI antes de migrar a modelos mayores.
+- Investigacion sobre el marco Discrepancy Calculus: el checkpoint puede emplearse como caso de estudio para analizar los conceptos de operador de discrepancia y conjuntos de salto descritos por el autor.
+- Fine-tuning educativo: su tamano permite experimentar con ajuste fino supervisado en tareas de dominio acotado con hardware de consumo.
+- Generacion de texto de bajo coste en demos y entornos de prueba: adecuado para validar interfaces o prototipos donde la calidad del texto no sea critica.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye métricas de evaluación como MMLU, HumanEval o GSM8K, ni comparaciones con otros modelos de tamaño similar.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 0.4-0.8 GB en FP32, menos de 0.2 GB en cuantización INT8 (estimación basada en 50M parámetros).
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, incluyendo NVIDIA GTX 1650, RTX 3050 o superiores.
-- Compatibilidad con hardware de consumo: sí, el modelo cabe en cualquier GPU moderna e incluso en CPU para inferencia básica.
-- Opciones de despliegue: transformers pipeline, llama.cpp (si se convierte a GGUF), o directamente con PyTorch.
-- Latencia y throughput: no disponible, aunque se espera una latencia baja en hardware moderno dado el reducido número de parámetros.
+- VRAM estimada para inferencia: aproximadamente 0,1-0,2 GB en FP16 para un modelo de ~50M de parametros; en cuantizacion de 8 bits o 4 bits, por debajo de 0,1 GB.
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) es mas que suficiente; el modelo tambien puede ejecutarse en CPU.
+- Cabe holgadamente en GPU consumer e incluso en dispositivos de gama baja.
+- Opciones de despliegue: `transformers` (declarado), potencialmente llama.cpp u Ollama si se generan pesos GGUF (no confirmado), y Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DNA-50M | 50M | no disponible | no disponible | Hugging Face |
-| TinyLlama 1.1B | 1.1B | 2048 | Apache 2.0 | Hugging Face |
-| Phi-2 | 2.7B | 2048 | MIT | Hugging Face |
-| GPT-2 (124M) | 124M | 1024 | MIT | Hugging Face |
+| DNA-50M | ~50M (inferido) | no disponible | no disponible | Hugging Face |
+| GPT-2 small | 124M | 1024 tokens | MIT | Hugging Face |
+| DistilGPT-2 | 82M | 1024 tokens | Apache 2.0 | Hugging Face |
+| TinyLlama-1.1B | 1,1B | 2048 tokens | Apache 2.0 | Hugging Face |
 
-La comparativa se basa en modelos de tamaño pequeño orientados a investigación. DNA-50M es significativamente más pequeño que las alternativas, lo que lo hace más adecuado para experimentos de bajo coste, pero carece de la documentación y los benchmarks que ofrecen los otros modelos. La arquitectura Liquid Former es la principal diferencia técnica frente a los transformers estándar de las alternativas.
+La comparacion es orientativa: DNA-50M carece de documentacion publica sobre contexto, licencia y rendimiento, por lo que no puede contrastarse en igualdad de condiciones con alternativas establecidas.
 
 ## Limitaciones y advertencias
 
-- Documentación insuficiente: la model card no proporciona información sobre datos de entrenamiento, hiperparámetros, licencia ni idiomas soportados, lo que dificulta su uso en producción.
-- Riesgo de alucinación: al ser un modelo pequeño, es probable que genere texto incoherente o factualmente incorrecto en tareas complejas.
-- Sesgos desconocidos: al no conocer el dataset de entrenamiento, no es posible evaluar sesgos potenciales.
-- Licencia no especificada: el uso comercial del modelo es legalmente ambiguo hasta que se aclare la licencia.
-- Framework teórico no validado externamente: los conceptos de Discrepancy Calculus no han sido revisados por pares ni validados por la comunidad académica general.
-- Alcance limitado: el modelo no está diseñado para tareas de producción, sino como herramienta de investigación dentro del marco DISC.
+- Model card practicamente vacia: no hay informacion sobre sesgos, datos de entrenamiento ni evaluacion.
+- Licencia no especificada: no puede asumirse uso comercial; es imprescindible contactar con el autor antes de cualquier despliegue en produccion.
+- Riesgo elevado de alucinacion y de generacion de texto incoherente, dado el reducido tamano y la ausencia de datos de alineacion documentados.
+- Idiomas soportados desconocidos; no se garantiza un rendimiento aceptable en castellano.
+- Longitud de contexto desconocida, lo que impide planificar casos de uso con ventanas largas.
+- Marco teorico DISC sin validacion independiente publicada en la informacion disponible.
+- Sin resultados de benchmarks: no hay evidencia de calidad frente a alternativas del mismo tamano.
+- Repositorio con 0 "likes" y creado recientemente: senal de escasa validacion por parte de la comunidad.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/DNA-50M
-- Colección DNA-AI: https://huggingface.co/collections/reaperdoesntknow/dna-ai
 - Perfil del autor: https://huggingface.co/reaperdoesntknow
-- Documento DISC (DOI: 10.57967/hf/8194): https://huggingface.co/reaperdoesntknow/Discrepancy_Calculus
-- Documento Structure Over Scale (DOI: 10.57967/hf/8165): https://huggingface.co/reaperdoesntknow/Structure-Over-Scale
-- Paper de referencia de Liquid Neural Networks: https://arxiv.org/abs/1910.09700
+- Documento del marco Discrepancy Calculus: https://huggingface.co/reaperdoesntknow/Discrepancy_Calculus (DOI: 10.57967/hf/8194)
+- Documento "Structure Over Scale": https://huggingface.co/reaperdoesntknow/Structure-Over-Scale (DOI: 10.57967/hf/8165)
+- Documento "Three Teachers to Dual Cognition": https://huggingface.co/reaperdoesntknow/DualMind_Methodolgy
+- Paper de referencia sobre impacto ambiental (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
+- Calculadora de impacto ML: https://mlco2.github.io/impact

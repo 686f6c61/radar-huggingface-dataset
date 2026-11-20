@@ -57,11 +57,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Sign in - Google Accounts",
-      "url": "https://accounts.google.com/Login",
-      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
-    }
-  ]
+  "sources": []
 }

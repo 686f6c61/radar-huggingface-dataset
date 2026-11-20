@@ -75,16 +75,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mradermacher/IndustryForge-27B-GGUF at main - Hugging Face",
-      "url": "https://huggingface.co/mradermacher/IndustryForge-27B-GGUF/tree/main",
-      "snippet": "mradermacher / IndustryForge-27B-GGUF Like 0 Transformers GGUF English Chinese cad cadquery solidworks autodesk-inventor com-api industrial multimodal qwen3.5 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "mradermacher/iCoder-27B-i1-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/iCoder-27B-i1-GGUF",
-      "snippet": "mradermacher / iCoder-27B-i1-GGUF like 0 Transformers GGUF English code rtl verilog gpu-kernel triton imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    }
-  ]
+  "sources": []
 }

@@ -53,21 +53,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "nlpai-lab/KURE-Sparse-nano · Hugging Face",
-      "url": "https://huggingface.co/nlpai-lab/KURE-Sparse-nano",
-      "snippet": "KURE-Sparse-nano is a compact (0.1B) Korean-English learned sparse retrieval model. It shows state-of-the-art performance among < 0.5B sparse models supporting Korean, averaging 0.7716 nDCG@10 on MTEB (kor, v2) Retrieval. It also outperforms much larger dense models, such as pplx-embed-v1-4b and harrier-oss-v1-27b."
-    },
-    {
-      "title": "GitHub - nlpai-lab/KURE: KURE: Korea University Retrieval Embedding ...",
-      "url": "https://github.com/nlpai-lab/KURE",
-      "snippet": "KURE-v3, KURE-Sparse- {base, nano} and KURE-Reranker-nano are served at kure.kullm.ai. Sign in with GitHub there to get an API key. Each request takes up to 8 texts (100 documents for reranking)."
-    },
-    {
-      "title": "KURE/train/sparse at main · nlpai-lab/KURE · GitHub",
-      "url": "https://github.com/nlpai-lab/KURE/tree/main/train/sparse",
-      "snippet": "Training KURE-Sparse (learned sparse) The recipes that produced nlpai-lab/KURE-Sparse-base and nlpai-lab/KURE-Sparse-nano: SPLADE-style retrievers distilled from a Qwen3-Reranker teacher with an in-batch contrastive term, trained with sentence-transformers SparseEncoder."
-    }
-  ]
+  "sources": []
 }

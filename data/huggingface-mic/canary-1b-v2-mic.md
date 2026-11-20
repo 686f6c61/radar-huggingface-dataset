@@ -2,90 +2,86 @@
 
 ## Resumen
 
-`huggingface-mic/canary-1b-v2-mic` es un artefacto de prueba (fixture) derivado de `nvidia/canary-1b-v2`, el modelo de reconocimiento automatico del habla (ASR) de NVIDIA basado en la arquitectura Canary. No es un modelo utilizable en produccion: se trata de una version reducida artificialmente, con solo 1.703.232 parametros y pesos aleatorios (semilla 17), creada por el equipo de Hugging Face para validar contratos de integracion y expectativas de frameworks (Transformers) sin necesidad de descargar ni ejecutar el checkpoint completo.
+`huggingface-mic/canary-1b-v2-mic` es un artefacto de prueba (fixture) publicado por la organización `huggingface-mic`, no un modelo utilizable. Se trata de una versión reducida del modelo ASR `nvidia/canary-1b-v2`, con solo 1.703.232 parámetros reales frente a los aproximadamente 1.000 millones del modelo original. Su propósito es servir como fixture de integración para validar contratos de framework (Transformers) sin necesidad de descargar ni ejecutar el checkpoint completo.
 
-El fixture conserva la misma clase de arquitectura (`CanaryForConditionalGeneration`), los mismos nombres de tensores y los mismos ficheros de procesador copiados byte a byte del modelo original (`chat_template.jinja`, `generation_config.json`, `processor_config.json`, `tokenizer.json`, `tokenizer_config.json`), pero reduce el encoder y el decoder a 2 capas cada uno. Esto permite ejecutar pruebas de humo de integracion (forward, loss, gradientes) en float32, bfloat16 y float16 con un coste computacional minimo.
+El repositorio incluye pesos "slim", un manifiesto de contrato (`integration.json`), documentación de uso y expectativas para Transformers, y metadatos de procedencia de la construcción (`build.json`). Está etiquetado explícitamente como `test-artifact` para excluirlo de búsquedas de modelos candidatos. La arquitectura subyacente es `CanaryForConditionalGeneration`, con el encoder y el decoder reducidos a 2 capas cada uno.
 
-Su relevancia es exclusivamente de ingenieria: sirve como banco de pruebas reproducible para pipelines de CI que necesitan verificar que una integracion de Transformers funciona con la familia Canary sin cargar el modelo real de NVIDIA (de aproximadamente 1B de parametros). Esta etiquetado como `test-artifact` para excluirlo de busquedas de modelos candidatos.
+No debe confundirse con el modelo real de NVIDIA: los pesos son aleatorios (semilla 17), no han sido entrenados y no producen transcripciones válidas. Su interés es exclusivamente de ingeniería: verificar que el código de carga, preprocesado e inferencia funciona con los nombres de tensores y el procesador del checkpoint original.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Canary (`CanaryForConditionalGeneration`), encoder-decoder transformer reducido (2 capas en encoder, 2 en decoder) |
+| Arquitectura | `CanaryForConditionalGeneration` (encoder-decoder transformer, config reducida) |
 | Parametros totales | 1.703.232 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos guardados en float32; compatible con bfloat16 y float16 segun la model card) |
+| Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors (float32) |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura Canary de NVIDIA, un transformer encoder-decoder orientado a tareas de reconocimiento del habla y traduccion de voz. En este fixture, la configuracion se ha reducido mediante la regla generica de `sweep.py` del repositorio `transformers-mic`: el encoder y el decoder conservan 2 capas ocultas cada uno, manteniendo la clase `CanaryForConditionalGeneration` y todos los nombres de tensores del checkpoint original.
+El fixture replica la arquitectura `CanaryForConditionalGeneration` del modelo `nvidia/canary-1b-v2`, pero con una configuración reducida: encoder con 2 capas ocultas y decoder con 2 capas ocultas, aplicando la regla genérica de reducción definida en `sweep.py` del repositorio `huggingface/transformers-mic`. Los nombres de tensores coinciden con los del checkpoint real, de modo que el fixture cubre todos los parámetros que el modelo original expone.
 
-No hubo entrenamiento. Los pesos son aleatorios con semilla 17 y se validaron con una puerta de sensibilidad de entrada: cada perturbacion de las entradas del contrato movia los logits al menos 0.001 (la mas debil, `attention_mask:all_ones`, produjo 0.00338). Los ficheros del procesador se copiaron byte a byte desde `nvidia/canary-1b-v2`. El fixture es finito en float32, bfloat16 y float16 tanto en forward como en loss y gradientes. La clave de fixture es `1e6971eed286` y cubre todos los checkpoints cuyos ficheros de procesador son identicos byte a byte y cuya config coincide tras el proceso de reduccion.
+Los pesos son aleatorios, generados con semilla 17, y no han pasado por ningún proceso de entrenamiento. Para ser aceptados, superaron una puerta de sensibilidad a la entrada: cada perturbación de las entradas del contrato desplazó los logits al menos 0.001 (el caso más débil, `attention_mask:all_ones`, con 0.00338). Los ficheros del procesador (`chat_template.jinja`, `generation_config.json`, `processor_config.json`, `tokenizer.json`, `tokenizer_config.json`) se copiaron byte a byte desde `nvidia/canary-1b-v2`. Los pesos se guardaron en float32, el dtype con el que carga por defecto el checkpoint original, y se verificó que son finitos en float32, bfloat16 y float16 (forward, loss y gradientes).
 
 ## Capacidades
 
-- No es un modelo funcional: no genera transcripciones ni traducciones utiles, ya que sus pesos son aleatorios.
-- Conserva la interfaz de procesador del modelo original (tokenizer, `generation_config`, `chat_template`), lo que permite probar rutas de preprocesado y decodificacion.
-- Sirve para validar la carga del modelo en Transformers y la compatibilidad de la clase `CanaryForConditionalGeneration`.
-- Permite ejecutar pruebas de forward, calculo de loss y retropropagacion de gradientes en float32, bfloat16 y float16.
-- No soporta tool calling, agentes, vision ni audio de forma real; su unica utilidad es la verificacion de contratos de integracion.
-- Multilingue: no disponible (los idiomas del modelo original no se documentan en la informacion proporcionada para este fixture).
+- No es un modelo funcional: no transcribe audio ni genera texto con sentido.
+- Sirve como fixture de integración para validar la carga de `CanaryForConditionalGeneration` en Transformers.
+- Permite comprobar que el pipeline de preprocesado (processor, tokenizer, chat template) funciona con los ficheros del modelo real.
+- Verifica la compatibilidad de nombres de tensores y la forma de los pesos frente al checkpoint `nvidia/canary-1b-v2`.
+- Valida la ejecución en float32, bfloat16 y float16, incluyendo forward, cálculo de pérdida y gradientes.
+- No soporta tool calling, agentes, visión, audio real ni capacidades multilingües efectivas.
 
 ## Casos de uso
 
-- Pruebas de integracion en CI: ejecutar un forward y un backward con el fixture para verificar que la version de Transformers carga correctamente la clase `CanaryForConditionalGeneration` sin descargar el checkpoint de NVIDIA.
-- Validacion de contratos de framework: comprobar que los ficheros de procesador (`tokenizer.json`, `processor_config.json`, `generation_config.json`) se cargan y producen tensores con las formas esperadas.
-- Pruebas de humo de precision: verificar que el modelo es finito en float32, bfloat16 y float16 antes de desplegar el modelo real en esos dtypes.
-- Desarrollo de herramientas de inspeccion de modelos: usar los nombres de tensores identicos al checkpoint real para probar utilidades de analisis de pesos sin coste de almacenamiento.
-- Reproduccion de builds: reconstruir el fixture con `python example/build_fixtures.py --fixture canary-1b-v2-mic` y comparar hashes registrados en `build.json`.
-- Validacion de pipelines de decodificacion: probar la generacion con `generation_config.json` copiado del modelo original para detectar incompatibilidades de API en nuevas versiones de Transformers.
-- Formacion y documentacion: ilustrar como se reduce un modelo grande a un fixture manteniendo la arquitectura y los nombres de tensores.
+- Pruebas de integración en CI: usar el fixture para verificar que una nueva versión de Transformers carga y ejecuta `CanaryForConditionalGeneration` sin descargar el checkpoint de 1B parámetros.
+- Validación de contratos de framework: comprobar que el manifiesto `integration.json` y las expectativas en `integrations/transformers/expectations` se cumplen tras cambios en el código.
+- Desarrollo de pipelines de ASR sin GPU: iterar sobre el código de preprocesado y postprocesado con un modelo de 1,7M parámetros que cabe en cualquier máquina.
+- Reproducción de builds: reconstruir el fixture con `build_fixtures.py` y comparar hashes registrados en `build.json`.
+- Pruebas de regresión de tokenizer y processor: los ficheros copiados byte a byte permiten detectar cambios inesperados en el procesador del modelo real.
+- Docencia y experimentación: estudiar la estructura de un modelo encoder-decoder tipo Canary con un coste computacional mínimo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El modelo es un artefacto de prueba con pesos aleatorios y no tiene rendimiento funcional que medir.
+No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un fixture con pesos aleatorios, cualquier métrica de calidad (WER, MMLU, etc.) carece de sentido.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 10 MB en float32 (1,7M parametros), despreciable en cualquier GPU.
-- GPU recomendadas: cualquiera; no requiere GPU, funciona en CPU sin problemas.
-- Cabe en cualquier GPU consumer, incluida una GTX 1050 o una iGPU.
-- Opciones de despliegue: Transformers (via `CanaryForConditionalGeneration`); no se documentan otras opciones (vLLM, llama.cpp, Ollama, TGI) para este fixture.
-- Latencia y throughput: no disponibles; al ser un modelo de 2 capas con pesos aleatorios, los tiempos son del orden de milisegundos en CPU, pero no se han publicado mediciones.
+- VRAM estimada para inferencia: inferior a 1 GB en float32 (1,7M parámetros); cabe en CPU sin problema.
+- GPU recomendadas: ninguna en particular; funciona en cualquier GPU consumer o incluso en CPU.
+- Cabe en cualquier GPU consumer (RTX 3060, RTX 4090, etc.) y en portátiles sin GPU dedicada.
+- Opciones de despliegue: Transformers (carga estándar); no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI para este fixture.
+- Latencia y throughput: no disponibles; al ser un modelo de juguete, los tiempos son despreciables.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `huggingface-mic/canary-1b-v2-mic` | 1,7M | no disponible | Fixture de prueba para integracion de Transformers | no disponible | Hugging Face |
-| `nvidia/canary-1b-v2` | ~1B (no confirmado en la informacion) | no disponible | ASR y traduccion de voz en produccion | no disponible | Hugging Face |
-| Otros fixtures de `transformers-mic` | Variable (reducidos) | no disponible | Pruebas de contrato de otros modelos | no disponible | Hugging Face |
+| `huggingface-mic/canary-1b-v2-mic` | 1,7M | no disponible | Fixture de test | no disponible | Hugging Face |
+| `nvidia/canary-1b-v2` | ~1B | no disponible | ASR real | no disponible en la informacion | Hugging Face |
+| Otros fixtures `huggingface-mic` | variable (reducidos) | no disponible | Fixtures de test | no disponible | Hugging Face |
 
-La comparativa con alternativas funcionales (Whisper, SeamlessM4T, etc.) no procede: este modelo no es un ASR utilizable, sino un artefacto de pruebas. Los datos de parametros del modelo base no estan confirmados en la informacion proporcionada.
+La comparación directa con modelos de producción no es pertinente: el fixture no compite en calidad ni rendimiento, solo en estructura y compatibilidad de contrato.
 
 ## Limitaciones y advertencias
 
-- No es un modelo utilizable: los pesos son aleatorios y las salidas carecen de sentido.
-- Etiquetado como `test-artifact`; no debe usarse en produccion ni en evaluaciones de calidad.
-- La licencia no esta disponible, lo que impide confirmar condiciones de uso comercial.
-- No se documentan sesgos, pero al no haber entrenamiento no aplican sesgos aprendidos; el riesgo de alucinacion es total en el sentido de que cualquier salida es ruido.
-- No se dispone de informacion sobre contexto maximo, idiomas ni cuantizaciones soportadas mas alla de float32, bfloat16 y float16.
-- El repositorio tiene un tamano de 0.0 GB y 0 descargas; su mantenimiento no esta garantizado.
-- No debe confundirse con `nvidia/canary-1b-v2`; verificar siempre el ID antes de integrarlo en un pipeline.
+- No es un modelo utilizable: los pesos son aleatorios y las salidas no tienen significado.
+- Etiquetado como `test-artifact`; no debe incluirse en búsquedas de modelos candidatos ni en producción.
+- La licencia no está disponible en la información proporcionada; verificar antes de cualquier uso, aunque sea de test.
+- No se documentan idiomas soportados ni longitud de contexto; no asumir los del modelo original.
+- No se han publicado benchmarks ni métricas de calidad.
+- El tamaño del repo es 0.0 GB según los metadatos, lo que puede indicar inconsistencias en la publicación.
+- No sustituye al checkpoint `nvidia/canary-1b-v2` para tareas de reconocimiento de voz.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/huggingface-mic/canary-1b-v2-mic
+- Hugging Face: https://huggingface.co/huggingface-mic/canary-1b-v2-mic
 - Modelo base: https://huggingface.co/nvidia/canary-1b-v2
-- Manifiesto de contrato: https://huggingface.co/huggingface-mic/canary-1b-v2-mic/blob/main/integration.json
-- Uso con Transformers: https://huggingface.co/huggingface-mic/canary-1b-v2-mic/blob/main/integrations/transformers/usage.md
-- Expectativas de Transformers: https://huggingface.co/huggingface-mic/canary-1b-v2-mic/tree/main/integrations/transformers/expectations
-- Procedencia del fixture: https://huggingface.co/huggingface-mic/canary-1b-v2-mic/blob/main/build.json
-- Explicacion del proceso de reduccion: https://huggingface-mic-mic-coverage.static.hf.space/shrink/canary-1b-v2-mic.html
-- Repositorio `transformers-mic` (script `sweep.py`): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
-- Repositorio `transformers-mic` (script `build_fixtures.py`): https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Repositorio de construcción: https://github.com/huggingface/transformers-mic
+- Script de reducción: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Script de construcción de fixtures: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Documentación de reducción: https://huggingface-mic-mic-coverage.static.hf.space/shrink/canary-1b-v2-mic.html

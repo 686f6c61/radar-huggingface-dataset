@@ -32,7 +32,7 @@
     "conversational"
   ],
   "likes": 2,
-  "downloads_30d": 1349,
+  "downloads_30d": 1481,
   "trending_score": 0,
   "parameters": 30697345596,
   "parameters_human": "30.70B",
@@ -52,16 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Gemma 4 — Google DeepMind",
-      "url": "https://deepmind.google/models/gemma/gemma-4/",
-      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
-    },
-    {
-      "title": "Omega-Factory/gemma-4-31b-GGUF · Hugging Face",
-      "url": "https://huggingface.co/Omega-Factory/gemma-4-31b-GGUF",
-      "snippet": "Omega-Factory / gemma-4-31b-GGUF Like 0 Follow Omega Factory 1 Text Generation GGUF dense gemma4 compressed License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Gemma 4 31B GGUF Precision Ladder Model Overview Ladder Rungs & VRAM Footprints Quickstart (llama.cpp) Run with llama-cli Attribution & Integrity"
-    }
-  ]
+  "sources": []
 }

@@ -2,107 +2,96 @@
 
 ## Resumen
 
-MixLID es un modelo de identificacion de idioma a nivel de token desarrollado por el grupo nlpai-lab. Su funcion es etiquetar cada token de un texto con el idioma al que pertenece, resolviendo el problema del texto mezclado o code-switching, donde una misma frase combina fragmentos en varios idiomas. Frente a clasificadores de idioma tradicionales que devuelven una unica etiqueta por documento, MixLID localiza spans de idioma dentro del texto, incluidas expresiones cortas embebidas en otro idioma.
+MixLID es un modelo de identificacion de idioma a nivel de token desarrollado por el laboratorio nlpai-lab, disenado especificamente para texto con mezcla de idiomas (code-switching y code-mixing). A diferencia de los clasificadores de idioma clasicos, que asignan un unico idioma a un documento o frase, MixLID localiza los tramos de cada idioma dentro de un texto mixto, incluyendo expresiones cortas embebidas en otro idioma, y devuelve tanto los spans como el idioma predominante de la entrada.
 
-El modelo se construye sobre el backbone jhu-clsp/mmBERT-small, un encoder de la familia ModernBERT, al que se aade una cabeza de clasificacion de tokens (token classification). Cuenta con 140.685.426 parametros y una ventana de contexto de 8.192 tokens, lo que permite procesar documentos largos sin truncar. Soporta 111 etiquetas de idioma mas etiquetas auxiliares para numeros (NUM), puntuacion (PUNCT) y simbolos (SYM), y ofrece dos modos de prediccion con el mismo checkpoint: idioma por token y idioma predominante por entrada.
+El modelo parte del backbone encoder jhu-clsp/mmBERT-small, al que se anade una cabeza de clasificacion de tokens. Cubre 111 etiquetas de idioma mas tres etiquetas auxiliares para numeros (`NUM`), puntuacion (`PUNCT`) y simbolos (`SYM`), y soporta una ventana de contexto de 8.192 tokens. Con 140.685.426 parametros y un repositorio de 0,6 GB, esta pensado para tareas de etiquetado de secuencias a gran escala donde el coste computacional por documento importa.
 
-Es relevante ahora porque la identificacion de idioma a nivel fino es una pieza critica en la curación de corpus multilingues, la evaluacion de modelos generativos (detectar mezcla no deseada de idiomas) y el preprocesado de datos para entrenamiento. Su licencia MIT y su tamano reducido (0,6 GB de repositorio) facilitan su integracion en pipelines de produccion sin coste elevado de computo.
+Su relevancia actual radica en la necesidad de filtrar y evaluar corpus multilingues de forma fina: los pipelines de datos para entrenamiento de LLM, la evaluacion de la consistencia idiomatica de respuestas generadas y la anotacion de transcripciones de audio mixtas requieren precisamente este nivel de granularidad. La licencia MIT y la compatibilidad con endpoints de Hugging Face facilitan su integracion en produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Encoder (ModernBERT) con cabeza de clasificacion de tokens |
+| Arquitectura | Encoder transformer (modernbert) con cabeza de clasificacion de tokens |
 | Parametros totales | 140.685.426 |
-| Parametros activos | no disponible (no es MoE) |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | 8.192 tokens |
-| Tipos de cuantizacion | no disponible (el repositorio distribuye safetensors) |
-| Idiomas soportados | 111 etiquetas de idioma mas NUM, PUNCT y SYM |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | 111 etiquetas de idioma (afr, als, amh, ara, asm, azj, bam, ben, bod, bul, cat, ceb, ces, ckb, cmn, dan, deu, ekk, ell, eng, eus, fas, fil, fin, fra, fuv, gaz, gug, guj, hat, hau, heb, hin, hrv, hun, hye, ibo, ilo, ind, isl, ita, jav, jpn, kac, kan, kat, kaz, kea, khk, khm, kin, kir, kor, lao, lin, lit, lug, luo, lvs, mal, mar, mkd, mlt, mri, mya, nld, nob, npi, nso, nya, ory, pan, pbt, plt, pol, por, ron, rus, shn, sin, slk, slv, sna, snd, som, sot, spa, srp, ssw, sun, swe, swh, tam, tel, tgk, tha, tir, tsn, tso, tur, ukr, urd, uzn, vie, war, wol, xho, yor, zsm, zul) |
 | Licencia | MIT |
 | Formato de pesos | safetensors |
 | Modelo base | jhu-clsp/mmBERT-small |
-| Tarea (pipeline) | token-classification |
-| Tamano del repositorio | 0,6 GB |
+| Pipeline | token-classification |
+| Etiquetas auxiliares | NUM, PUNCT, SYM |
+| Modos de prediccion | token-level (spans) y predominant language por entrada |
 
 ## Arquitectura y entrenamiento
 
-MixLID emplea como backbone mmBERT-small, un modelo encoder de tipo transformer optimizado para eficiencia, y le superpone una cabeza de clasificacion a nivel de token. La salida no es una unica etiqueta por secuencia, sino una secuencia de etiquetas alineadas con los tokens de entrada, que posteriormente se agrupan en spans contiguos con sus offsets de caracteres y sus puntuaciones de confianza. El modelo expone dos modos de inferencia sobre el mismo checkpoint: `predict_tokens()` devuelve predicciones de subpalabra y spans fusionados, mientras que `predict_sentence()` devuelve el idioma predominante de la entrada completa.
+MixLID es un encoder transformer basado en la familia ModernBERT, concretamente en la variante mmBERT-small de jhu-clsp, con una cabeza de clasificacion de tokens anadida para el etiquetado BIO de idiomas. El modelo procesa texto monolingue y mixto y produce, para cada subtoken, una etiqueta de idioma; posteriormente fusiona las predicciones de subtokens en spans contiguos con offsets de caracteres y puntuaciones de confianza. La misma cabeza permite derivar el idioma predominante de una entrada completa mediante `predict_sentence()`, sin necesidad de un segundo modelo.
 
-Segun la model card, los datos de entrenamiento provienen de los conjuntos HPLT/OpenLID-v3, igorsterner/acs-corpus, google/smol y facebook/belebele. Las metricas declaradas son accuracy y f1. No se especifican en la informacion disponible el numero exacto de tokens de entrenamiento, la composicion detallada del dataset, ni si se aplicaron tecnicas de RLHF o DPO; el paper asociado figura como "coming soon". Tampoco se documentan innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal mas alla de las propias del backbone mmBERT.
+El entrenamiento se realizo sobre una combinacion de conjuntos de datos multilingues: HPLT/OpenLID-v3, igorsterner/acs-corpus, google/smol y facebook/belebele. No se detalla en la informacion disponible el numero exacto de tokens de entrenamiento, la composicion porcentual del dataset ni si se aplicaron tecnicas de RLHF o DPO (no procede en un modelo de clasificacion). La innovacion principal es la capacidad de identificar expresiones cortas embebidas en otro idioma dentro de un texto, algo que los clasificadores de documento no resuelven, junto con la ventana de 8.192 tokens que permite procesar documentos largos sin truncar.
 
 ## Capacidades
 
-- Identificacion de idioma a nivel de token: asigna una etiqueta de idioma a cada token o subpalabra del texto de entrada.
-- Localizacion de spans de idioma: agrupa tokens contiguos del mismo idioma en spans, con offsets de caracteres (start, end) y puntuacion de confianza.
-- Deteccion de idioma predominante: devuelve el idioma principal de una entrada completa mediante `predict_sentence()`.
-- Manejo de texto mezclado y code-switching: detecta expresiones cortas embebidas en otro idioma dentro de una frase.
-- Etiquetas auxiliares: clasifica numeros (NUM), puntuacion (PUNCT) y simbolos (SYM) por separado, evitando que contaminen las etiquetas de idioma.
-- Cobertura multilingue amplia: 111 etiquetas de idioma con distincion de escritura (por ejemplo, `kor_Hang`, `eng_Latn`, `fra_Latn`).
-- Procesamiento por lotes: tanto `predict_tokens()` como `predict_sentence()` aceptan una cadena o una lista de cadenas.
-- Contexto largo: ventana de 8.192 tokens, adecuada para documentos extensos.
-- No dispone de capacidades de generacion de texto, razonamiento, codigo, vision ni tool calling; es un modelo discriminativo de clasificacion.
+- Identificacion de idioma a nivel de token con 111 etiquetas de idioma, incluyendo lenguas de bajos recursos (bam, fuv, gaz, gug, kac, kea, khk, lin, lug, luo, nso, nya, pbt, plt, shn, snd, ssw, sun, tsn, tso, uzn, war, wol, xho, yor, zsm, zul).
+- Localizacion de spans de idioma dentro de texto mixto, con offsets de caracteres (`start`, `end`) y puntuacion de confianza por span.
+- Prediccion del idioma predominante de una entrada completa mediante `predict_sentence()`.
+- Etiquetado separado de numeros (`NUM`), puntuacion (`PUNCT`) y simbolos (`SYM`), lo que evita confusiones con idiomas.
+- Procesamiento por lotes: tanto `predict_sentence()` como `predict_tokens()` aceptan una cadena o una lista de cadenas.
+- Soporte de texto monolingue y code-switching/code-mixing en la misma entrada.
+- No soporta tool calling, function calling, agentes ni generacion de texto: es un modelo discriminativo de etiquetado.
 
 ## Casos de uso
 
-- Filtrado de corpus multilingues: seleccionar documentos escritos en un idioma objetivo y descartar o marcar los fragmentos que esten en otros idiomas, usando las etiquetas por token y los spans devueltos.
-- Evaluacion de modelos generativos: medir si las respuestas de un LLM respetan el idioma solicitado y detectar mezcla de idiomas no deseada, con la posibilidad de usar la consistencia linguistica como componente de una funcion de recompensa.
-- Anotacion de transcripciones de voz: verificar el idioma de transcripciones y etiquetar transcripciones con mezcla de idiomas durante la preparacion de corpus audio-texto.
-- Analisis sociolinguistico y de code-switching: cuantificar la proporcion de cada idioma y localizar los puntos exactos de cambio de idioma en textos de hablantes bilingues.
-- Preprocesado para entrenamiento de modelos: segmentar y etiquetar grandes volumenes de datos antes de alimentar pipelines de entrenamiento multilingue, aprovechando la ventana de 8.192 tokens.
-- Moderacion y enrutado de contenido: identificar el idioma real de una consulta para dirigirla al modelo o al agente adecuado, incluso cuando la consulta mezcla idiomas.
-- Control de calidad en localizacion: comprobar que una traduccion o un contenido localizado no contiene fragmentos residuales en el idioma de origen.
-- Analisis de redes sociales y foros: procesar publicaciones con mezcla frecuente de idiomas y determinar el idioma dominante por publicacion.
+- Filtrado de corpus multilingues para entrenamiento de LLM: MixLID permite seleccionar documentos en un idioma objetivo y, ademas, localizar y eliminar o marcar los tramos en otros idiomas dentro de un mismo documento, algo que un clasificador de documento no puede hacer. Con 8.192 tokens de contexto se procesan documentos largos sin truncar.
+- Evaluacion de consistencia idiomatica en generacion: al medir la proporcion de tokens en el idioma solicitado frente a tokens en otros idiomas, se puede usar como componente de recompensa o como metrica de evaluacion en pipelines de RLHF y generacion controlada por idioma.
+- Anotacion de transcripciones de audio mixtas: en la preparacion de corpus de voz, MixLID etiqueta los tramos de cada idioma en la transcripcion y permite compararlos con las predicciones de idioma del lado del audio.
+- Enrutamiento de contenido en plataformas multilingues: clasificar comentarios y publicaciones que mezclan idiomas para dirigirlos al moderador o al modelo de respuesta adecuado, usando el idioma predominante y los spans detectados.
+- Analisis linguistico de code-switching: estudiar patrones de mezcla de idiomas en redes sociales o foros, con spans y offsets que permiten alinear las etiquetas con anotaciones manuales.
+- Preprocesamiento en pipelines de traduccion automatica: detectar segmentos en idiomas distintos dentro de un parrafo para dividir la entrada antes de enviarla al motor de traduccion correspondiente.
+- Control de calidad en localizacion de software: verificar que cadenas de interfaz y documentacion no contienen restos de otro idioma, con etiquetas `NUM`/`PUNCT`/`SYM` que evitan falsos positivos en elementos no linguisticos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks numericos en la informacion disponible. La model card declara el uso de las metricas accuracy y f1 y menciona los datasets HPLT/OpenLID-v3, igorsterner/acs-corpus, google/smol y facebook/belebele, pero no incluye cifras concretas. El paper asociado figura como pendiente de publicacion.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona las metricas `accuracy` y `f1` en los metadatos, pero no incluye tablas con valores numericos ni comparaciones con otros modelos.
 
 ## Requisitos de hardware
 
-Las estimaciones de VRAM que siguen se derivan del recuento de parametros (140,7 millones) y son aproximadas:
-
-- VRAM en fp32: en torno a 560 MB solo para pesos, mas memoria para activaciones y el contexto de hasta 8.192 tokens.
-- VRAM en fp16/bf16: en torno a 280 MB para pesos.
-- VRAM en int8: en torno a 140 MB para pesos.
-- GPU: cabe con holgura en cualquier GPU de consumo, incluidas RTX 3060, RTX 4060, RTX 4090 o inferiores; tambien puede ejecutarse en CPU para cargas por lotes pequenas.
-- Al ser un modelo de 140 millones de parametros, la inferencia en GPU dedicada no es imprescindible; es viable en CPU con latencias mayores.
-- Opciones de despliegue: biblioteca transformers de Hugging Face (con `trust_remote_code=True` o mediante el modulo local `mixlid.py`) e integracion en endpoints compatibles con Hugging Face. No se documenta soporte especifico para vLLM, llama.cpp u Ollama en la informacion disponible.
-- Versionado recomendado por el autor: torch 2.9.1, transformers 4.57.0 y safetensors 0.7.0.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia: con 140,7 millones de parametros, en FP32 ocupa aproximadamente 0,56 GB de pesos; en FP16 unos 0,28 GB; en INT8 unos 0,14 GB. La VRAM total necesaria es inferior a 1 GB en cualquier configuracion razonable, incluyendo activaciones y buffers.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Se puede ejecutar en A100, H100, RTX 4090, RTX 3090, RTX 3060, T4 o incluso en CPU para lotes pequenos.
+- Cabe en GPU de consumo: si, en practicamente cualquier GPU consumer moderna (GTX 1650 en adelante) y en CPU.
+- Opciones de despliegue: `transformers` con `AutoModel.from_pretrained(..., trust_remote_code=True)` o el modulo local `mixlid.py`; tambien es compatible con endpoints de Hugging Face. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, que estan orientados a modelos generativos.
+- Latencia y throughput: no disponibles en la informacion proporcionada. Dado el tamano del modelo, se espera un throughput alto en GPU, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento comparativos en la informacion proporcionada. La tabla siguiente recoge alternativas del mismo ambito funcional (identificacion de idioma), marcando como "no disponible" los valores que no se pueden confirmar con la informacion facilitada.
-
-| Modelo | Enfoque | Parametros | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Idiomas | Enfoque | Licencia |
 |---|---|---|---|---|---|
-| MixLID | Encoder + cabeza de token classification, nivel de token | 140.685.426 | 8.192 tokens | MIT | Hugging Face |
-| GlotLID | Clasificacion de idioma multilingue | no disponible | no disponible | no disponible | Hugging Face |
-| fastText lid.176 | Clasificador lineal sobre embeddings de subpalabras | no disponible | no disponible | no disponible | Repositorio fastText |
-| CLD3 | Clasificador neuronal ligero | no disponible | no disponible | no disponible | Repositorio de Google |
+| MixLID | 140,7 M | 8.192 | 111 etiquetas | Token-level LID con spans y idioma predominante | MIT |
+| GLiNER-LID / clasificadores LID basados en XLM-R | no disponible | no disponible | variable | Clasificacion de documento o token | variable |
+| fastText lid.176 | no disponible | no disponible | 176 | Clasificacion de documento | MIT |
 
-La diferencia principal de MixLID frente a clasificadores por documento es su granularidad a nivel de token y su soporte explicito de texto mezclado. No se dispone de cifras que permitan comparar su precision con las alternativas citadas.
+No se dispone de datos de benchmarks que permitan una comparacion cuantitativa con alternativas. La comparativa se limita a caracteristicas estructurales; para una evaluacion de rendimiento seria necesario consultar el paper (arXiv 2610.16601) o ejecutar una evaluacion propia sobre OpenLID-v3 o BELeBele.
 
 ## Limitaciones y advertencias
 
-- No se han publicado cifras de rendimiento verificables; el paper esta pendiente, por lo que la calidad real no puede contrastarse con datos externos.
-- Riesgo de confusion en idiomas con escrituras o lexicos solapados, especialmente en textos muy cortos o con fragmentos de una o dos palabras.
-- La ventana de contexto esta limitada a 8.192 tokens; `predict_sentence()` no divide parrafos en frases, por lo que entradas muy largas pueden verse afectadas segun como se use la API.
-- Aunque cubre 111 etiquetas de idioma, no se detalla el rendimiento por idioma; los idiomas con menos recursos podrian tener menor fiabilidad.
-- Es un modelo discriminativo: no genera texto ni resuelve tareas de razonamiento, codigo o vision.
-- El uso de la API de transformers requiere `trust_remote_code=True`, lo que implica ejecutar codigo del repositorio; conviene auditar `mixlid.py` antes de desplegarlo en produccion.
-- El repositorio tiene 0 descargas registradas en el momento de la consulta, por lo que su adopcion en produccion es aun incipiente.
-- Licencia MIT, que permite uso comercial y modificacion, siempre que se conserve el aviso de copyright y la licencia.
-- Sesgos conocidos: no se documentan en la informacion disponible; los sesgos dependeran de la composicion de HPLT/OpenLID-v3, acs-corpus, google/smol y facebook/belebele.
+- No es un modelo generativo: no produce texto, no soporta tool calling ni razonamiento multi-paso. Su unico uso es el etiquetado de idioma.
+- `predict_sentence()` no divide parrafos en frases; para textos largos con varios idiomas predominantes conviene segmentar manualmente o usar `predict_tokens()`.
+- La cobertura de 111 idiomas no garantiza un rendimiento uniforme: los idiomas de bajos recursos del listado (bam, fuv, gaz, gug, kac, kea, khk, lin, lug, luo, nso, nya, pbt, plt, shn, snd, ssw, sun, tsn, tso, uzn, war, wol, xho, yor, zsm, zul) probablemente tengan menos datos de entrenamiento y mayor tasa de error, aunque no se publican metricas por idioma.
+- Riesgo de confusion en textos con alfabetos compartidos o lenguas cercanas (por ejemplo, lenguas escandinavas, eslavas o variedades del arabe), no cuantificado en la informacion disponible.
+- No se documentan sesgos especificos ni evaluaciones de robustez frente a texto ruidoso, abreviaturas o jerga.
+- La licencia MIT permite uso comercial sin restricciones, pero el modelo base mmBERT-small debe verificarse por separado si se redistribuye.
+- Requiere `trust_remote_code=True` para cargar los metodos de prediccion desde el Hub, lo que implica ejecutar codigo del repositorio; la alternativa es usar el modulo local `mixlid.py`.
+- No se especifican tecnicas de cuantizacion soportadas; el uso en INT8 requeriria conversion manual.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/nlpai-lab/MixLID
-- Demo (Space): https://huggingface.co/spaces/hongst/MixLID
-- Modelo base: https://huggingface.co/jhu-clsp/mmBERT-small
-- Paper: pendiente de publicacion ("coming soon")
-- Datasets referenciados:
-  - https://huggingface.co/datasets/HPLT/OpenLID-v3
-  - https://huggingface.co/datasets/igorsterner/acs-corpus
-  - https://huggingface.co/datasets/google/smol
-  - https://huggingface.co/datasets/facebook/belebele
+- Demo (Hugging Face Space): https://huggingface.co/spaces/hongst/MixLID
+- Paper en Hugging Face: https://huggingface.co/papers/2610.16601
+- Paper en arXiv: https://arxiv.org/abs/2610.16601
+- Modelo base mmBERT-small: https://huggingface.co/jhu-clsp/mmBERT-small
+- Dataset HPLT/OpenLID-v3: https://huggingface.co/datasets/HPLT/OpenLID-v3
+- Dataset igorsterner/acs-corpus: https://huggingface.co/datasets/igorsterner/acs-corpus
+- Dataset google/smol: https://huggingface.co/datasets/google/smol
+- Dataset facebook/belebele: https://huggingface.co/datasets/facebook/belebele

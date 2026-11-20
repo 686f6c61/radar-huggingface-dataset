@@ -2,115 +2,121 @@
 
 ## Resumen
 
-`thestarfarer/Ministral-3-14B-lil-logbook` no es un modelo completo, sino una colección de **siete adaptadores LoRA** (librería PEFT) entrenados sobre `mistralai/Ministral-3-14B-Base-2512` para ajuste supervisado de diálogo multi-turno orientado a roleplay. El repositorio funciona como un cuaderno de experimentos: todos los adaptadores parten del mismo corpus y cambian una sola variable por ejecución (inicialización, recorte de gradiente y una escalera de cuatro learning rates), lo que lo convierte en material útil para estudiar el compromiso entre ajuste al dominio y olvido catastrófico en adaptadores de rango alto.
+Ministral-3-14B-lil-logbook es un ajuste fino mediante LoRA (rsLoRA, rango 512) sobre el modelo base mistralai/Ministral-3-14B-Base-2512, publicado por el usuario thestarfarer. No se trata de un modelo nuevo entrenado desde cero, sino de una colección de adaptadores y de pesos fusionados orientados a un caso de uso muy concreto: la generación de diálogo multi-turno con formato de "logbook" (cabeceras `# <código>` por turno y narración no atribuida plegada al turno del hablante), típicamente para roleplay y escritura conversacional en crudo, sin plantilla de chat.
 
-El modelo base es el mayor de la familia Ministral 3 de Mistral AI (publicada el 2 de diciembre de 2025 junto a las variantes de 3B y 8B): un núcleo de lenguaje de 13,5B parámetros más un codificador visual de 0,4B, con licencia Apache 2.0. El recuento de parámetros registrado en los safetensors del repo (13.506.073.600) coincide con ese núcleo de lenguaje, ya que los pesos entregados son adaptadores, no el modelo fusionado.
+El repositorio documenta con inusual detalle el proceso experimental: una escalera de learning rates, una rejilla de rango × LR con 24 adaptadores, comparaciones de inicialización (desde base frente a continuación de un adaptador previo de roleplay) y un sondeo ciego de composición con jueces LLM. El modelo final recomendado por el autor es el run `e2`, distribuido como GGUF Q8_0 de 14,4 GB, que según la model card supera al base en el 80% de 114 prompts evaluados a ciegas.
 
-Su relevancia es doble: por un lado ofrece un adaptador de roleplay listo para usar con GGUFs F16/Q8_0 de las tres ejecuciones originales; por otro, documenta de forma cuantitativa cómo un LR más bajo reduce el daño fuera de dominio manteniendo buena parte de la ganancia en dominio (de 1e-7 a 5e-6 la tasa ganancia/pérdida pasa de 3,91 a 2,04). El corpus es pequeño (6,16M tokens) y el contexto de entrenamiento se empaqueta a 512 tokens.
+Su relevancia es doble: por un lado ofrece un checkpoint utilizable para generación creativa conversacional con un formato muy específico; por otro, el repositorio funciona como un cuaderno de laboratorio reproducible sobre cómo el learning rate afecta al equilibrio entre ajuste in-domain y degradación out-of-domain en adaptadores de rango alto.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Adaptadores LoRA (rsLoRA, rango 512, alpha 512) sobre un transformer decoder-only: `mistralai/Ministral-3-14B-Base-2512` |
-| Parámetros totales | 13.506.073.600 en los safetensors del repo (corresponden al núcleo de lenguaje del modelo base); el tamaño de cada adaptador no se documenta |
-| Parámetros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible. La model card solo documenta empaquetado de muestras a 512 tokens y truncado a 512 de contexto en el conjunto de evaluación OOD; no se declara la ventana del modelo base |
-| Tipos de cuantización | GGUF F16 y Q8_0 para las tres ejecuciones originales; el resto de adaptadores se publican en safetensors (entrenados sobre base BF16 con AdamW en FP32) |
-| Idiomas soportados | No disponible (la model card no declara idiomas; el corpus son diálogos multi-turno sin especificación lingüística) |
+| Arquitectura | Transformer decoder-only (heredada de Ministral-3-14B-Base-2512); ajuste mediante LoRA/rsLoRA |
+| Parámetros totales | 13.506.073.600 (pesos safetensors del repo) |
+| Parámetros activos | no disponible (no es MoE según la información disponible) |
+| Longitud de contexto | 8192 tokens recomendados en la model card para inferencia; el entrenamiento usó muestras empaquetadas de 512 tokens |
+| Tipos de cuantización | GGUF F16 y Q8_0 para los tres runs originales; el run recomendado `e2` se distribuye en Q8_0 (14,4 GB) |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (adaptadores PEFT/LoRA) y GGUF (F16, Q8_0). Tamaño total del repo: 206,3 GB |
+| Formato de pesos | safetensors (adaptadores PEFT/LoRA), GGUF |
+| Modelo base | mistralai/Ministral-3-14B-Base-2512 |
+| Librería | peft |
+| Tamaño del repo | 434,9 GB |
+| Descargas | 1808 |
+| Fecha de creación | 2026-08-06 |
+| Última actualización | 2026-11-14 |
 
 ## Arquitectura y entrenamiento
 
-El ajuste se hace con **rsLoRA de rango 512 y alpha 512**, dropout 0, sobre las proyecciones `q, k, v, o, gate, up, down`. Configuración compartida por todas las ejecuciones: batch 16 sin acumulación, 838 pasos (una pasada), LR constante tras el warmup, base en BF16 con AdamW en FP32, semilla 42 y evaluación sobre 256 muestras reservadas cada 25 pasos. El dataset son **13.667 muestras, 6,16M tokens**, diálogos multi-turno empaquetados a 512 tokens y delimitados por cabeceras `# <código>` (abreviaturas cortas por personaje); la narración sin atribuir se pliega al turno del hablante. El pack se construyó en **dos pasadas desfasadas 256 tokens** para duplicar el corpus con ventanas distintas y eliminar duplicados exactos; el autor advierte que el efecto de esta augmentación no se ha aislado ni evaluado.
+El modelo parte de Ministral-3-14B-Base-2512 y aplica adaptadores LoRA con rsLoRA de rango 512 y alpha 512, dropout 0, sobre las proyecciones `q,k,v,o,gate,up,down`. La configuración compartida de los runs principales es: batch 16 sin acumulación, 838 pasos (una pasada), LR constante tras warmup, base en BF16 con AdamW en FP32, semilla 42 y evaluación sobre 256 muestras reservadas cada 25 pasos. Se documentan tres runs originales: `v3-lil` (continuación del adaptador writer-sft-rp-v3, LR 7.5e-6, warmup 30, eval final 1.530), `base-lil` (adaptador nuevo sobre base, LR 5e-6, warmup 35, eval 1.582) y `base-lil-clip1` (igual que el anterior con max_grad_norm 1.0, eval 1.583).
 
-Las tres ejecuciones originales son `v3-lil` (continuación del adaptador de roleplay `writer-sft-rp-v3`, LR 7,5e-6, warmup 30, eval final 1,530), `base-lil` (adaptador nuevo sobre la base, LR 5e-6, warmup 35, eval 1,582) y `base-lil-clip1` (idéntico pero con `max_grad_norm` 1.0, eval 1,583). Dos hallazgos técnicos: la inicialización desde un adaptador RP de 186M tokens apenas aporta por pérdida (0,05 de diferencia con un 33% menos de LR), y el recorte de gradiente a 1.0 no cambió nada porque actuó en el 100% de los pasos (normas brutas medias de 14,9, máximo 36) y AdamW cancela aproximadamente un reescalado aplicado en todos los pasos. La escalera `lr-sweep/` añade cuatro peldaños (1e-7, 2e-7, 5e-7, 2e-6) con `max_grad_norm` 1.0 y una evaluación previa al paso 0 como línea base, además de un conjunto OOD de 256 muestras de prosa de foro del corpus v3 truncadas a 512 tokens.
+El dataset consiste en diálogo multi-turno empaquetado en muestras de 512 tokens: 13.667 muestras y 6,16 millones de tokens en total. Los turnos se delimitan con cabeceras `# <código>` (abreviaturas por personaje, no nombres) y la narración sin atribuir se pliega al turno del hablante. El corpus se construyó en dos pasadas desfasadas 256 tokens para duplicar el material con ventanas distintas y eliminar duplicados exactos, una idea de augmentación barata cuyo efecto el autor declara no haber aislado ni evaluado.
+
+El repositorio incluye además una escalera de learning rates (`lr-sweep/`, 24 adaptadores nombrados `r<rank>-lr<lr>`), una mezcla de tres fuentes (`mix/`, `v3only/`) y una paleta de schedules (`pal/`). El hallazgo técnico más citado es que bajar el LR de 5e-6 a 1e-7 conserva el 48% del aprendizaje in-domain con solo el 25% del daño out-of-domain (ratio ganado/perdido de 3,91 frente a 2,04), y que el clipping de gradiente a 1.0 no cambió el resultado porque se activaba en el 100% de los pasos (normas medias 14,9, máximas 36), de modo que el reescalado se cancela aproximadamente en la actualización de AdamW.
 
 ## Capacidades
 
-- Generación de diálogo multi-turno con voces de personaje diferenciadas, usando el formato de cabecera `# <código>` para marcar hablante.
-- Continuación de escenas de roleplay y narrativa interactiva con estructura de turnos limpia.
-- Composición de personas aprendidas con contenido ajeno al corpus: la sonda de composición sitúa a los hablantes recurrentes en escenarios técnicos (hojas de cálculo rotas, canales de router, formularios fiscales, nivelación de cama de impresora 3D) y evalúa voz, coherencia y formato.
-- Ajuste fino eficiente sobre la base mediante PEFT: adaptadores independientes intercambiables sin duplicar los 13,5B pesos.
-- Despliegue en local vía GGUF (F16/Q8_0) de las tres ejecuciones originales.
-- Capacidad multimodal heredada del modelo base según fuentes externas (codificador visual de 0,4B), pero **no documentada ni evaluada** en este repositorio, y los LoRA solo atacan capas de atención y MLP del núcleo de lenguaje.
-- Soporte de tool calling / function calling: no documentado.
-- Soporte de agentes y razonamiento multi-paso: no documentado; el entrenamiento es SFT de diálogo, no RLHF ni DPO.
+- Generación de texto en crudo (raw text completion) con formato de logbook: cada turno empieza por una línea de cabecera `# <código>` seguida del contenido del turno.
+- Diálogo multi-turno con personajes identificados por códigos cortos y narración integrada en el turno del hablante.
+- Escritura creativa y roleplay conversacional, el dominio declarado del ajuste.
+- Continuación de contexto largo dentro de la ventana recomendada de 8192 tokens.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- No se documenta capacidad multilingüe específica; los idiomas soportados figuran como no disponibles.
+- No se documenta visión, audio ni modo de pensamiento (thinking mode).
+- El modelo no usa plantilla de chat: la interacción se realiza mediante el formato de cabeceras descrito.
 
 ## Casos de uso
 
-- **Motor de roleplay en aplicaciones de chat**: cargar el adaptador (o la GGUF Q8_0) sobre Ministral-3-14B-Base y servir conversaciones multi-turno con personajes consistentes, aprovechando el formato de cabecera `# <código>` para separar hablantes en el preprocesado.
-- **Narrativa interactiva y ficción serializada**: el adaptador mantiene registro y voz de personaje en escenas largas, adecuado para motores de aventuras de texto donde la coherencia de registro importa más que el conocimiento factual.
-- **Investigación sobre LoRA y olvido catastrófico**: la escalera de LR con ejes en dominio y OOD permite reproducir el resultado de que bajar el LR 50× conserva el 48% del aprendizaje con el 25% del daño, un punto de partida para estudiar regularización en adaptadores de rango alto.
-- **Prototipado rápido de personajes para producto**: entrenar o sustituir adaptadores sobre la misma base mantiene un único despliegue de 13,5B y permite A/B testing de voces cambiando solo el adaptador.
-- **Generación de diálogos sintéticos para datasets**: producir corpus de conversación con hablantes etiquetados y estructura de turnos controlada, útil para aumentar datos de entrenamiento de sistemas de diálogo.
-- **Banco de pruebas de evaluación con LLM-as-judge**: el diseño de sonda de composición (32 escenas, 5 rerolls, 6 checkpoints, rúbrica 0-2 en voz/coherencia/formato, juicio ciego y pool barajado) sirve como plantilla metodológica para medir calidad de roleplay más allá de la pérdida.
-- **Despliegue en hardware de gama alta para demostraciones internas**: con la GGUF Q8_0 el modelo completo cabe en una GPU de 24 GB, lo que permite demos locales sin infraestructura de servidor.
+- Roleplay conversacional multi-turno: el modelo está entrenado específicamente para alternar turnos con cabeceras `# <código>`, de modo que puede mantener una escena con varios personajes y narración intercalada dentro de la ventana de 8192 tokens recomendada.
+- Generación de ficción por episodios: el formato de logbook permite continuar escenas existentes indicando únicamente la cabecera del siguiente hablante, lo que encaja en flujos de escritura asistida donde el autor aporta el contexto y el modelo redacta el turno.
+- Prototipado de personajes para videojuegos o narrativa interactiva: los códigos de hablante por personaje permiten mapear directamente cada cabecera a un personaje del guion, simplificando la integración en motores de diálogo.
+- Generación de datos sintéticos de diálogo: dado que el corpus de entrenamiento son 6,16 millones de tokens de diálogo multi-turno, el modelo puede producir conversaciones con estructura consistente para aumentar datasets de entrenamiento de otros sistemas.
+- Investigación sobre ajuste fino eficiente: los 24 adaptadores de la rejilla rango × LR y la escalera de learning rates sirven como material reproducible para estudiar la relación entre ajuste in-domain y degradación out-of-domain en LoRA de rango alto.
+- Despliegue local en una sola GPU: el GGUF Q8_0 de 14,4 GB del run `e2` cabe en GPUs de consumo con 16 GB o más de VRAM, lo que permite ejecutar el modelo en estaciones de trabajo sin infraestructura de servidor.
+- Escritura colaborativa con control de estilo: los parámetros de muestreo documentados (temperatura 0.7, min_p 0.1, penalización de repetición 1.07, DRY 0.5/1.75) ofrecen un punto de partida reproducible para ajustar el tono de las respuestas.
 
 ## Benchmarks y rendimiento
 
-Pérdida de evaluación final de las tres ejecuciones originales (menor es mejor):
+La model card no incluye benchmarks estándar (MMLU, HumanEval, GSM8K). Los datos publicados son evaluaciones internas del autor: pérdida de evaluación y un panel ciego de jueces LLM sobre 114 prompts, con 5 tiradas por prompt.
 
-| Ejecución | Inicialización | LR | max_grad_norm | Pérdida eval final |
-|---|---|---|---|---|
-| `v3-lil` | continuación de `writer-sft-rp-v3` | 7,5e-6 | 10,0 | 1,530 |
-| `base-lil` | adaptador nuevo sobre la base | 5e-6 | 10,0 | 1,582 |
-| `base-lil-clip1` | adaptador nuevo sobre la base | 5e-6 | 1,0 | 1,583 |
+| Modelo | Consistencia | Coherencia | Formato | Craft | Mejor elección | Emparejado vs p3 |
+|---|---|---|---|---|---|---|
+| e2 | 1.61 | 1.41 | 1.06 | 1.03 | 32% | +0.31 (t 3.9) |
+| e1 | 1.54 | 1.36 | 1.10 | 1.00 | 31% | +0.21 (t 2.7) |
+| base | 1.33 | 1.15 | 1.02 | 0.88 | 20% | -0.41 (t -4.1) |
+| p3 | 1.57 | 1.34 | 0.93 | 0.96 | 17% | - |
 
-Escalera de learning rate (256 muestras reservadas en dominio y 256 muestras OOD de prosa de foro):
+Según el autor, `e2` supera al modelo base en 91 de 114 prompts (80%). En la escalera de learning rates, con adaptadores r512 sobre base:
 
-| LR | Eval en dominio | Eval OOD (prosa) | Ganado | Perdido | Ganado/perdido |
+| LR | Eval in-domain | Eval prosa OOD | Ganado | Prosa perdida | Ganado/perdido |
 |---|---|---|---|---|---|
-| Sin entrenar (base) | 2,421 | 2,655 | — | — | — |
-| 1e-7 | 2,015 | 2,759 | 0,405 | +0,104 | 3,91 |
-| 2e-7 | 1,970 | 2,811 | 0,451 | +0,156 | 2,89 |
-| 5e-7 | 1,898 | 2,871 | 0,523 | +0,216 | 2,42 |
-| 2e-6 | 1,729 | 2,977 | 0,692 | +0,322 | 2,15 |
-| 5e-6 (= `base-lil-clip1`) | 1,583 | 3,067 | 0,838 | +0,412 | 2,04 |
+| — (base sin entrenar) | 2.421 | 2.655 | — | — | — |
+| r512-lr1e-7 | 2.015 | 2.759 | 0.405 | +0.104 | 3.91 |
+| r512-lr2e-7 | 1.970 | 2.811 | 0.451 | +0.156 | 2.89 |
+| r512-lr5e-7 | 1.898 | 2.871 | 0.523 | +0.216 | 2.42 |
+| r512-lr2e-6 | 1.729 | 2.977 | 0.692 | +0.322 | 2.15 |
+| 5e-6 (= base-lil-clip1) | 1.583 | 3.067 | 0.838 | +0.412 | 2.04 |
 
-Sonda de composición: la información proporcionada incluye el diseño (32 escenas, 5 rerolls, 6 checkpoints, rúbrica 0-2 sobre voz, coherencia y formato, juicio ciego con conjunto barajado y sin etiquetas, n=160 por peldaño, sampler temp 0.8 / min_p 0.05 / repetición 1.1) pero **la tabla de resultados está truncada en el material disponible**, por lo que las tasas de acierto por checkpoint no están disponibles. Sí se documenta que con el sampler recomendado para v3 (temp 0.5, min_p 0.1, rep 1.03) entre el 30% y el 65% de las completions colapsaban en bucles literales o secuencias de cabeceras `...`, y que con temp 0.8 / min_p 0.05 / rep 1.1 el colapso baja a ≤1,2% en todos los peldaños.
-
-No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estándar en la información disponible.
+Pérdida de evaluación final de los tres runs originales: `v3-lil` 1.530, `base-lil` 1.582, `base-lil-clip1` 1.583.
 
 ## Requisitos de hardware
 
-- La VRAM viene dominada por el modelo base (13,5B parámetros), no por el adaptador, que se aplica en tiempo de carga o se fusiona.
-- Estimación de pesos en BF16/FP16: ~27 GB; con caché KV y overhead de runtime, ~30-32 GB. Requiere A100 40 GB, H100, L40S o dos GPU de 24 GB con paralelismo de tensor.
-- Estimación en GGUF Q8_0 (formato publicado): ~14,3 GB de pesos; con overhead, ~16-18 GB. Cabe en una RTX 4090, RTX 3090, A6000 o L40S, con margen limitado para contextos largos.
-- Estimación en Q4_K_M (no publicada en el repo, cálculo a partir del recuento de parámetros): ~8,5 GB, viable en RTX 4070 Ti Super, 4080 o 3090 con espacio amplio para caché KV.
-- Opciones de despliegue: `transformers` + `peft` (carga directa del adaptador), llama.cpp / Ollama con las GGUF F16 y Q8_0, vLLM (soporte de LoRA o fusión previa del adaptador), TGI, y endpoint gestionado en FriendliAI.
-- Almacenamiento: el repo completo ocupa 206,3 GB por acumular siete adaptadores y las GGUFs; conviene descargar solo el subdirectorio del adaptador necesario.
-- Latencia y throughput: no disponibles.
+- El run recomendado `e2` en GGUF Q8_0 ocupa 14,4 GB, por lo que la VRAM necesaria para inferencia ronda los 15-16 GB incluyendo overhead de contexto.
+- Cabe en GPUs de consumo con 16 GB o más de VRAM (por ejemplo, RTX 4080, RTX 4090, RTX 5080/5090 según disponibilidad); en GPUs de 12 GB requeriría cuantizaciones menores no publicadas en el repo.
+- Para los adaptadores LoRA en safetensors se necesita cargar el modelo base Ministral-3-14B-Base-2512 completo, lo que eleva el requisito a aproximadamente 28 GB en BF16, propio de A100 40 GB, H100 o configuraciones multi-GPU.
+- El repositorio completo ocupa 434,9 GB, por lo que conviene descargar solo los archivos GGUF necesarios.
+- Opciones de despliegue: llama.cpp y Ollama para los GGUF; vLLM o TGI para los pesos fusionados en safetensors si se convierten a un formato servible; la librería declarada es PEFT para cargar los adaptadores.
+- Parámetros de inferencia recomendados por el autor: temperatura 0.7, min_p 0.1, penalización de repetición 1.07 sobre 128 tokens, DRY 0.5 / 1.75 / allowed length 2 / range 1024 con secuencias de corte `["\n", ":", "\"", "*"]`, respuesta de 350 tokens y contexto de 8192.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Ministral-3-14B-lil-logbook` | 13,5B (base) + adaptadores rsLoRA r512 | No disponible | Roleplay / SFT de diálogo; 7 adaptadores y GGUFs F16/Q8_0 | Apache 2.0 | Hugging Face, FriendliAI |
-| `mistralai/Ministral-3-14B-Base-2512` | 13,5B núcleo + 0,4B codificador visual (según fuente externa) | No disponible | Modelo base preentrenado multimodal | Apache 2.0 | Hugging Face (modelo padre) |
-| `thestarfarer/Ministral-3-14B-writer-sft-rp-v3` | 13,5B + adaptador RP (186M tokens de entrenamiento) | No disponible | RP y prosa de foro; usado como inicialización de `v3-lil` | No disponible | Hugging Face |
-| Familia Ministral 3 (variantes 3B y 8B, según fuente externa) | 3B / 8B | No disponible | Modelos de la misma familia para despliegue local | Apache 2.0 (según fuente) | Hugging Face |
+| Ministral-3-14B-lil-logbook (e2) | 13,5 B | 8192 recomendados | LoRA sobre Ministral-3-14B-Base, roleplay en formato logbook | Apache 2.0 | GGUF Q8_0 y adaptadores PEFT en Hugging Face |
+| mistralai/Ministral-3-14B-Base-2512 | 13,5 B | no disponible en la información proporcionada | Modelo base generalista | no disponible en la información proporcionada | Hugging Face |
+| thestarfarer/Ministral-3-14B-writer-sft-rp-v3 | no disponible | no disponible | Adaptador previo de roleplay, punto de partida de `v3-lil` | no disponible | Hugging Face |
+
+No se dispone de datos de benchmarks estándar ni de especificaciones completas de los modelos comparables en la información proporcionada, por lo que la comparación se limita a parámetros, enfoque y licencia.
 
 ## Limitaciones y advertencias
 
-- **Olvido catastrófico medido**: el ajuste degrada prosa fuera de dominio de forma monótona con el LR (+0,104 en 1e-7 hasta +0,412 en 5e-6 sobre una línea base de 2,655). El autor lo atribuye a cambio de distribución, no al entrenamiento en sí, y advierte que «cada unidad de ajuste se paga en daño a capacidades generales».
-- **Sensibilidad al sampler**: el ajuste recomendado para v3 (temp 0.5, min_p 0.1, rep 1.03) produce entre 30% y 65% de colapso en bucles con estos checkpoints. Debe usarse temp 0.8 / min_p 0.05 / repetición 1.1.
-- **Corpus pequeño y de un solo dominio**: 13.667 muestras y 6,16M tokens de diálogo, empaquetados a 512 tokens. No hay evidencia de generalización fuera de roleplay conversacional.
-- **Formato rígido**: el modelo espera cabeceras `# <código>`; fuera de esa convención la calidad de estructura de turnos no está evaluada.
-- **Sin datos de seguridad ni alineación**: el entrenamiento es SFT puro sobre diálogo de roleplay, sin RLHF/DPO documentado ni filtros de contenido. No se describe la procedencia, consentimiento ni licencias del corpus de diálogo.
-- **Evaluación con LLM-as-judge**: el propio autor reporta que el juicio por checkpoint desvía las tasas ±8pp solo por severidad del juez, y que los resultados finales son de un conjunto ciego barajado; los números de la sonda de composición no están completos en la información disponible.
-- **Sin benchmarks estándar**: no hay MMLU, HumanEval ni GSM8K; la comparación con alternativas se limita a pérdida de evaluación.
-- **Idiomas y contexto no declarados**: no se especifican idiomas soportados ni ventana de contexto, lo que impide planificar despliegues multilingües o de contexto largo sin validación propia.
-- **Licencia**: Apache 2.0 permite uso comercial, pero se heredan las condiciones y advertencias del modelo base; conviene revisar la model card de `Ministral-3-14B-Base-2512` antes de producción.
-- **Madurez**: 139 descargas y 0 likes en el momento de la ficha; el repositorio es un cuaderno experimental, no un artefacto con garantías de mantenimiento.
+- El modelo no usa plantilla de chat: alimentarlo con formatos conversacionales convencionales (roles system/user/assistant) probablemente degrade la calidad, ya que el entrenamiento solo vio cabeceras `# <código>`.
+- El ajuste está especializado en un dominio estrecho (roleplay y diálogo en formato logbook); el propio autor documenta degradación de prosa out-of-domain que crece con el learning rate (hasta +0.412 de pérdida en el run de 5e-6).
+- Riesgo de alucinación y de deriva de personaje en conversaciones largas; no se han publicado evaluaciones específicas de fidelidad factual.
+- Sesgos conocidos: no disponibles; el corpus de entrenamiento (13.667 muestras, 6,16 millones de tokens) es pequeño y de procedencia no detallada, lo que aumenta el riesgo de sesgos no caracterizados.
+- Idiomas soportados: no disponibles; no hay garantía de calidad fuera del idioma o idiomas del corpus de entrenamiento.
+- La licencia Apache 2.0 permite uso comercial, pero se heredan las condiciones del modelo base Ministral-3-14B-Base-2512, cuyos términos no se detallan en la información proporcionada.
+- El run `e2` recomendado solo se publica en GGUF Q8_0; no hay cuantizaciones menores (Q4, Q5) en el repositorio, lo que limita el despliegue en GPUs de menos de 16 GB.
+- El repositorio mezcla adaptadores, pesos fusionados y material experimental (24 adaptadores de la rejilla, paletas de schedule); es necesario seleccionar cuidadosamente el artefacto correcto para producción.
+- La augmentación de doble pasada desfasada no fue aislada ni evaluada, según el propio autor, por lo que su contribución al resultado es desconocida.
+- Los resultados de calidad provienen de un panel de jueces LLM del propio autor, no de benchmarks independientes; deben interpretarse con cautela.
+- El modelo tiene 0 likes y 1808 descargas, con validación externa limitada.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/thestarfarer/Ministral-3-14B-lil-logbook
-- Peso del adaptador: https://huggingface.co/thestarfarer/Ministral-3-14B-lil-logbook/blob/main/adapter_model.safetensors
+- Modelo en Hugging Face: https://huggingface.co/thestarfarer/Ministral-3-14B-lil-logbook
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-14B-Base-2512
-- Adaptador precedente (`writer-sft-rp-v3`): https://huggingface.co/thestarfarer/Ministral-3-14B-writer-sft-rp-v3
-- Endpoint de inferencia (FriendliAI): https://friendli.ai/models/thestarfarer/Ministral-3-14B-lil-logbook
-- Ficha de la familia Ministral 3 (Awesome Agents): https://awesomeagents.ai/models/ministral-3-14b/
-- Ficha de Ministral 3 14B (MindStudio): https://www.mindstudio.ai/models/ministral-3-14b
+- Adaptador previo de roleplay: https://huggingface.co/thestarfarer/Ministral-3-14B-writer-sft-rp-v3

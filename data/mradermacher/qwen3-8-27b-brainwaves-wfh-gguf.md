@@ -1,88 +1,87 @@
 # mradermacher/Qwen3.8-27B-Brainwaves-WFH-GGUF
 
 ## Resumen
+Qwen3.8-27B-Brainwaves-WFH-GGUF es una cuantizacion estatica en formato GGUF del modelo nightmedia/Qwen3.8-27B-Brainwaves-WFH, un modelo de lenguaje de 27.320.697.856 parametros (aproximadamente 27,3 mil millones) orientado a generacion de texto, razonamiento con cadena de pensamiento larga, codigo y escritura creativa. El trabajo de cuantizacion lo firma mradermacher, un publicador habitual de cuantizaciones GGUF para llama.cpp, mientras que el modelo base procede de nightmedia y esta construido sobre la familia Qwen (las etiquetas mencionan qwen3_5, qwen3_6, qwen3.6 y qwen3.5), con tecnicas de destilacion, SFT y LoRA, y una fusion via mergekit. La licencia declarada es Apache 2.0.
 
-El modelo `mradermacher/Qwen3.8-27B-Brainwaves-WFH-GGUF` es una cuantización en formato GGUF del modelo base `nightmedia/Qwen3.8-27B-Brainwaves-WFH`, un derivado del Qwen3.8-27B de Alibaba. El autor, mradermacher, ha generado pesos estáticos cuantizados para facilitar la ejecución local en hardware de consumo, manteniendo la licencia Apache 2.0. El modelo base incorpora técnicas de destilación (menciona claude4.6, polaris-alpha) y ajuste fino con LoRA, orientado a razonamiento, codificación, escritura creativa y uso conversacional multilingüe.
+El modelo base se presenta como un modelo instruido, conversacional y multilingue (ingles, chino, japones y espanol), con etiquetas que apuntan a contextos de hasta 256k e incluso 1M de tokens, aunque no se documenta de forma tecnica como se alcanzan esas longitudes. Tambien incorpora un componente multimodal: el repositorio incluye ficheros mmproj (Q8_0 y f16) que actuan como suplemento para vision dentro del ecosistema llama.cpp. El interes practico de esta ficha radica en que permite ejecutar un modelo de 27B en hardware de consumo mediante cuantizaciones de 11 a 29,1 GB, algo imposible con los pesos en bf16.
 
-Con 27.320 millones de parámetros, el modelo está diseñado para tareas de generación de texto con soporte multimodal (incluye archivos mmproj para visión). Los tags indican una ventana de contexto de hasta 256k tokens, aunque no se ha verificado de forma independiente. Esta versión GGUF permite desplegarlo en entornos con VRAM limitada, siendo una opción práctica para desarrolladores que necesitan un modelo de 27B con capacidades avanzadas sin requerir infraestructura de servidor.
-
-La relevancia actual radica en que combina el rendimiento de un modelo de 27B con la flexibilidad de ejecución local, ideal para prototipado, investigación y aplicaciones de producción en entornos con restricciones de hardware.
+La ficha se centra en la version GGUF, que es la publicada en este repositorio, y advierte de que el modelo es experimental: la model card original no aporta detalles de arquitectura interna, composicion del dataset de entrenamiento ni resultados de benchmarks, por lo que buena parte de las especificaciones tecnicas deben marcarse como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (basado en Qwen3.8-27B) |
+| Arquitectura | Transformer decoder-only derivado de la familia Qwen (etiquetas qwen3_5/qwen3_6); detalles internos no disponibles |
 | Parametros totales | 27.320.697.856 (27,3B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 256k tokens (indicado en tags, no verificado) |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS (segun README) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 256k y 1M tokens segun etiquetas del autor; sin confirmacion tecnica |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-Q8_0, mmproj-f16; versiones imatrix en repositorio i1 |
 | Idiomas soportados | en, zh, ja, es |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (con archivos mmproj para vision) |
+| Formato de pesos | GGUF (pesos originales del modelo base presumiblemente safetensors/bf16, no incluidos en este repo) |
 
 ## Arquitectura y entrenamiento
+No se dispone de la model card completa del modelo base, por lo que la arquitectura no esta documentada en detalle. Las etiquetas indican que es un transformer de la familia Qwen (referencias a qwen3.5 y qwen3.6), con 27,3B parametros y sin indicios de ser un modelo de mezcla de expertos. El pipeline declarado es text-generation y la libreria transformers, con pesos originales en bf16 segun las etiquetas.
 
-El modelo base `nightmedia/Qwen3.8-27B-Brainwaves-WFH` es un merge/fine-tune del Qwen3.8-27B, un transformer denso multimodal desarrollado por Alibaba. Los tags sugieren el uso de destilación desde modelos como Claude 4.6 y Polaris Alpha, junto con ajuste fino supervisado (SFT) y LoRA. No se dispone de información detallada sobre el número de tokens de entrenamiento, la composición del dataset ni las técnicas exactas de alineación (RLHF/DPO). La cuantización GGUF realizada por mradermacher es estática, sin usar imatrix, y conserva los pesos del modelo original en formato de 4 bits u otros.
-
-El modelo incluye archivos `mmproj` (multi-modal projection) que permiten el procesamiento de imágenes, lo que indica que el modelo base tiene capacidades de visión además de texto.
+En cuanto al entrenamiento, las etiquetas mencionan destilacion desde Claude (claude4.6, claude-distillation), SFT, LoRA, razonamiento con cadena de pensamiento larga (long-cot), y una fusion de modelos realizada con mergekit (tags mergekit y merge). Tambien aparecen referencias a "polaris" y "polaris-alpha", presumiblemente nombres internos de las variantes fusionadas. No se especifica el numero de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF o DPO. La cuantizacion de mradermacher es estatica (quantize_version 2, output_tensor_quantised 1, convert_type hf) y se ofrece ademas una version con imatrix para mejorar la calidad en cuantizaciones bajas.
 
 ## Capacidades
-
-- Generacion de texto y conversacion multilingue (en, zh, ja, es).
-- Razonamiento y chain-of-thought, con soporte para long-CoT (cadenas de razonamiento largas).
-- Codificacion y generacion de codigo en multiples lenguajes.
-- Matematicas y resolucion de problemas STEM.
-- Escritura creativa: ficcion, narrativa, generacion de tramas y subtramas, continuacion de escenas.
-- Roleplaying y dialogo interactivo.
-- Capacidades multimodales (vision) gracias a los archivos mmproj, aunque no se ha confirmado el alcance exacto.
-- Soporte de tool calling y agentes (segun las capacidades del Qwen3.8 base, aunque no se detalla en esta version).
-- Instruccion-tuned para seguir comandos y tareas especificas.
+- Generacion de texto conversacional multi-turno con instrucciones.
+- Razonamiento explicito con cadena de pensamiento larga (long-cot, thinking).
+- Generacion de codigo y tareas de investigacion tecnica.
+- Matematicas y disciplinas STEM.
+- Escritura creativa: ficcion, generacion de tramas y subtramas, continuacion de escenas, ciencia ficcion y todos los generos.
+- Roleplay y escritura con prosa vivida.
+- Capacidades multilingues en ingles, chino, japones y espanol.
+- Soporte multimodal de vision a traves de los ficheros mmproj incluidos en el repositorio.
+- Soporte de tool calling y function calling: no documentado en la informacion disponible.
+- Soporte de agentes y razonamiento multi-paso: no documentado explicitamente, aunque el modo de razonamiento largo es compatible con este uso.
 
 ## Casos de uso
-
-- **Asistente de codigo en entornos locales**: el modelo puede integrarse en IDEs o pipelines de CI/CD para generar, revisar y refactorizar codigo. Su tamaño de 27B y cuantizacion Q4_K_S permiten ejecutarlo en una GPU de 24 GB, ofreciendo una alternativa a servicios en la nube.
-- **Generacion de documentacion tecnica**: gracias a su capacidad de razonamiento y escritura, puede redactar documentacion de APIs, guias de usuario y comentarios de codigo a partir de especificaciones.
-- **Atencion al cliente multilingue**: con soporte para cuatro idiomas y contexto largo, puede gestionar conversaciones multi-turno en chatbots, manteniendo el historial y resolviendo consultas complejas.
-- **Analisis de documentos con vision**: al incluir mmproj, puede procesar imagenes y extraer informacion de capturas de pantalla, diagramas o documentos escaneados, util para automatizacion de oficina.
-- **Escritura creativa y narrativa**: ideal para generar borradores de novelas, guiones o contenido de ficcion, con control sobre tramas y personajes gracias a su entrenamiento en storytelling.
-- **Prototipado rapido de agentes de IA**: su soporte de tool calling (heredado de Qwen3.8) permite construir agentes que interactuan con APIs y ejecutan acciones, todo en un entorno local sin dependencia de servicios externos.
+- Asistencia a desarrolladores en generacion de codigo: el modelo puede completar funciones, explicar fragmentos y proponer refactorizaciones; su ventana de contexto declarada de 256k permite cargar repositorios o modulos completos en una sola sesion.
+- Escritura creativa y narrativa larga: gracias a las etiquetas especificas de ficcion, generacion de tramas y continuacion de escenas, es adecuado para talleres de escritura, generacion de borradores de novelas o guiones con coherencia entre capitulos.
+- Roleplay y simulacion conversacional: el modelo esta ajustado para mantener personajes y estilo, util en prototipos de videojuegos narrativos o entrenamiento de agentes conversacionales.
+- Razonamiento matematico y STEM en entornos educativos: el modo de cadena de pensamiento larga permite mostrar el desarrollo de un problema paso a paso, util para tutoria automatizada.
+- Analisis de documentos extensos en espanol o multilingue: con contexto de 256k, puede resumir contratos, informes o articulos largos en ingles, chino, japones o espanol.
+- Procesamiento de imagenes en pipelines locales: los ficheros mmproj permiten usar el modelo con entrada visual en llama.cpp para tareas de descripcion de imagenes o extraccion de informacion de capturas y diagramas.
+- Despliegue en estaciones de trabajo sin GPU de datacenter: las cuantizaciones Q4_K_M (16,9 GB) y Q5_K_M (19,6 GB) permiten ejecutar el modelo en una unica GPU de consumo de 24 GB, habilitando prototipos de asistentes internos con datos que no salen de la organizacion.
 
 ## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks en la informacion disponible. El autor no proporciona metricas de MMLU, HumanEval, GSM8K u otros. Se recomienda evaluar el modelo en el caso de uso especifico antes de su despliegue en produccion.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
-
-- **VRAM estimada**: para la cuantizacion Q4_K_S (15,9 GB), se necesitan al menos 16 GB de VRAM para inferencia con contexto moderado. Para contexto largo (256k) se requeriria mas memoria, posiblemente 24 GB o mas.
-- **GPU recomendadas**: RTX 4090 (24 GB), RTX 4080 (16 GB) para Q4_K_S con contexto limitado, o A100/H100 para despliegues profesionales.
-- **Compatibilidad con GPU de consumo**: si, una RTX 3090/4090 puede ejecutar el modelo en Q4_K_S. Para cuantizaciones mas agresivas (Q2_K) podria caber en 12 GB, pero con perdida de calidad.
-- **Opciones de despliegue**: llama.cpp, Ollama, vLLM (con soporte GGUF), text-generation-inference (TGI) o transformers con carga de GGUF.
-- **Latencia y throughput**: no disponible. Depende del hardware y la cuantizacion; en una RTX 4090 se esperan decenas de tokens por segundo, pero no hay datos oficiales.
+- VRAM estimada para inferencia (pesos mas cache KV, que crece con el contexto): Q2_K en torno a 11 GB; Q3_K_M en torno a 13,6 GB; IQ4_XS en torno a 15,5 GB; Q4_K_M en torno a 16,9 GB; Q5_K_M en torno a 19,6 GB; Q6_K en torno a 22,5 GB; Q8_0 en torno a 29,1 GB.
+- GPU recomendadas: RTX 4090 o RTX 3090 (24 GB) para Q4_K_M y Q5_K_M con contextos moderados; A100 40/80 GB, H100 o L40S para Q8_0 y contextos largos; para contextos de 256k o superiores se requiere memoria adicional para la cache KV y, en la practica, hardware de datacenter o configuraciones multi-GPU.
+- Cabe en GPU de consumo: si, en tarjetas de 16 GB con Q3_K_M o IQ4_XS y contexto corto, y en tarjetas de 24 GB con Q4_K_M o Q5_K_M; las cuantizaciones Q6_K y Q8_0 quedan fuera del rango de 24 GB.
+- Opciones de despliegue: llama.cpp y sus derivados (Ollama, LM Studio, llama-cpp-python), asi como servidores compatibles con la API de OpenAI; vLLM y TGI no soportan GGUF de forma nativa generalizada, por lo que para esos motores habria que usar los pesos originales en safetensors.
+- Latencia y throughput: no disponibles; dependen del hardware, de la cuantizacion y de la longitud de contexto, y no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (original) | 27,3B | 256k (estimado) | Apache 2.0 | safetensors | Modelo base multimodal de Alibaba |
-| mradermacher/Qwen3.8-27B-Brainwaves-WFH-GGUF | 27,3B | 256k (estimado) | Apache 2.0 | GGUF | Cuantizacion con capacidades de vision |
-| Llama 3.1 8B (comparacion de tamano) | 8B | 128k | Llama 3.1 | safetensors/GGUF | Menor capacidad, pero mas ligero |
+| Qwen3.8-27B-Brainwaves-WFH-GGUF (este) | 27,3B | 256k/1M segun etiquetas | Apache 2.0 | GGUF | Cuantizacion de un merge experimental con destilacion de Claude; sin benchmarks publicados |
+| Modelos Qwen3 de ~27-32B (familia oficial) | ~27-32B | variable, hasta 128k en variantes recientes | Apache 2.0 en la mayoria de variantes | safetensors, GGUF | Referencia de la familia base; con benchmarks publicados por el desarrollador original |
+| Gemma 3 27B | 27B | 128k | Gemma license (uso comercial permitido con condiciones) | safetensors, GGUF | Alternativa multimodal de tamano comparable con evaluaciones oficiales |
+| Mistral Small 3.x (24B) | 24B | 32k-128k segun version | Apache 2.0 | safetensors, GGUF | Modelo denso de tamano cercano, ampliamente desplegado en local |
 
-No se dispone de benchmarks comparativos. La eleccion entre este modelo y otros de 27B dependera de la disponibilidad de cuantizaciones y del rendimiento especifico en la tarea.
+La comparacion cuantitativa de rendimiento no es posible porque este repositorio no publica benchmarks; la tabla se limita a parametros, contexto, licencia y disponibilidad.
 
 ## Limitaciones y advertencias
-
-- **Perdida de precision por cuantizacion**: los pesos cuantizados (especialmente Q2_K, Q3_K) pueden degradar la calidad de las respuestas en tareas de razonamiento complejo.
-- **Modelo experimental**: los tags indican "experimental" y el uso de destilacion de modelos propietarios (Claude, Polaris), lo que puede generar comportamientos impredecibles o sesgos no documentados.
-- **Riesgo de alucinacion**: como todo LLM, puede inventar informacion, especialmente en contextos largos o temas especializados.
-- **Contexto no verificado**: la longitud de contexto de 256k se basa en tags, pero no se ha confirmado su funcionamiento real en esta cuantizacion.
-- **Soporte de vision limitado**: aunque hay archivos mmproj, no se ha probado su integracion con el GGUF; puede requerir configuracion adicional.
-- **Licencia Apache 2.0**: permite uso comercial, pero se recomienda revisar los terminos del modelo base original por si hubiera restricciones adicionales.
+- Modelo experimental: procede de una fusion (mergekit) y de destilacion, sin evaluacion publicada; el comportamiento puede ser irregular en tareas fuera del dominio de escritura creativa y conversacion.
+- Riesgo de alucinacion: al no haber benchmarks ni documentacion de entrenamiento, no es posible acotar la tasa de errores facticos; en produccion requiere verificacion externa.
+- Contexto declarado no verificado: las etiquetas de 256k y 1M tokens no van acompanadas de metodologia; a esas longitudes la calidad de recuperacion suele degradarse y el consumo de memoria de la cache KV es elevado.
+- Cobertura idiomatica: solo se declaran en, zh, ja y es; el espanol aparece en las etiquetas pero no se especifica el volumen de datos ni la calidad esperada, por lo que conviene evaluarlo antes de usarlo en produccion en castellano.
+- Licencia Apache 2.0: permite uso comercial, pero el modelo incorpora tecnicas de destilacion de un modelo propietario (Claude), lo que puede plantear dudas sobre las condiciones de los datos de destilacion; conviene revisar el modelo base antes de un despliegue comercial.
+- Pesos originales no incluidos: este repositorio solo contiene GGUF; para entrenamiento o fine-tuning hay que acudir al modelo base nightmedia/Qwen3.8-27B-Brainwaves-WFH.
+- Cuantizaciones bajas: Q2_K y Q3_K_S degradan la calidad de forma notable; para uso serio se recomienda Q4_K_M o superior, y la variante imatrix del repositorio i1.
+- Tool calling y agentes: no documentados, por lo que no deben asumirse en disenos de produccion sin validacion previa.
 
 ## Enlaces
-
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Brainwaves-WFH-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/Qwen3.8-27B-Brainwaves-WFH-GGUF
 - Modelo base: https://huggingface.co/nightmedia/Qwen3.8-27B-Brainwaves-WFH
-- Repositorio oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8
-- Guia de ejecucion local: https://locallyuncensored.com/blog/how-to-run-qwen-3-8-27b-locally.html
-- Repositorio de Alibaba Cloud: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Qwen3.8-27B-Brainwaves-WFH-i1-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#Qwen3.8-27B-Brainwaves-WFH-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

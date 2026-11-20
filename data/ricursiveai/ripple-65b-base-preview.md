@@ -2,97 +2,88 @@
 
 ## Resumen
 
-Ripple-65B Base Preview es un checkpoint de preentrenamiento puro (sin midtraining, SFT ni datos sintéticos de QA) publicado por Ricursive Intelligence bajo licencia Apache 2.0. Se trata de un Transformer denso de 64.782.689.360 parámetros entrenado desde cero sobre 12 billones de tokens de texto predominantemente en inglés y código, con una longitud de secuencia de preentrenamiento de 8K. El modelo forma parte de la familia Ripple-65B, cuya versión instruct se presenta como especialmente competitiva en tareas de codificación agéntica.
+Ripple-65B Base Preview es un modelo de lenguaje de tipo Transformer denso desarrollado por Ricursive Intelligence, presentado como el checkpoint base (solo preentrenamiento) de su familia Ripple. Con 64.782.689.360 parámetros reales según los pesos en safetensors, se entrenó desde cero sobre 12 billones de tokens de texto y código predominantemente en inglés, con una longitud de secuencia de 8K durante el preentrenamiento y soporte declarado de hasta 1M de tokens de contexto en la versión instructiva. Su rasgo diferencial es que apuesta por una arquitectura densa en lugar de Mixture-of-Experts, con el objetivo de reducir la complejidad de infraestructura de entrenamiento y servicio sin sacrificar rendimiento en razonamiento y tareas agénticas.
 
-La relevancia de este lanzamiento radica en dos decisiones de diseño poco habituales en el panorama actual: apostar por una arquitectura densa en lugar de un Mixture-of-Experts (MoE), y adoptar una proporción "thin-and-deep" con un `d_model` estrecho de 5120 y 80 capas totales. Según el autor, esto permite entrenar y servir el modelo con una infraestructura más sencilla, manteniendo un MFU del 40% durante preentrenamiento y postentrenamiento con sharding simple, sin kernels personalizados ni cuantización en la fase de entrenamiento (BF16).
+El modelo emplea una proporción "thin-and-deep": un `d_model` estrecho de 5120 con 80 capas totales, y abandona la arquitectura tipo Llama de Olmo 3 en favor de una arquitectura tipo Gemma 3N para mejorar la estabilidad del entrenamiento a escala. Incorpora sobreaprovisionamiento de cabezas de atención, mayor proporción de capas SWA frente a globales, ventana SWA reducida, clipping de activaciones en la FFN, atención con compuertas, NoPE global y value residuals. Según el autor, el modelo fue codesarrollado para entrenarse y servirse de forma eficiente en hardware NVIDIA, alcanzando un 40% de MFU durante preentrenamiento y postentrenamiento con sharding simple, sin kernels personalizados y sin cuantización (BF16).
 
-El modelo se distribuye en formato safetensors BF16 (129,6 GB de repositorio) y requiere `custom_code` para su carga. Al ser un checkpoint base, no incorpora alineación conversacional ni formato de chat: está pensado como punto de partida para fine-tuning, investigación sobre escalado y experimentación local, ya que sus 65B parámetros permiten, según el autor, ejecutarlo en hardware de consumo como una NVIDIA DGX Spark mediante el checkpoint NVFP4 de la variante instruct.
+La relevancia de este checkpoint radica en que es la base sobre la que se construye la versión instructiva Ripple-65B Preview, que según la model card obtiene 80.52 en TerminalBench 2.1, por encima de modelos open-weight estadounidenses mucho mayores como Reflection Beam 501B (80.1), Meta Muse Spark Open 816B (76.4), Thinking Machines Inkling 975B (63.8) y NVIDIA Nemotron 3 Ultra 550B (56.4). Este repositorio contiene únicamente el modelo base, sin midtraining ni datos sintéticos de QA, por lo que no está pensado para uso conversacional directo sino como punto de partida para ajuste fino.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (estilo Gemma 3N), proporción thin-and-deep |
-| Parametros totales | 64.782.689.360 (~65B) |
+| Arquitectura | Transformer denso (estilo Gemma 3N), proporción thin-and-deep, 80 capas, d_model 5120, SWA + atención global, NoPE global, gated attention, value residuals, FFN activation clipping |
+| Parametros totales | 64.782.689.360 |
 | Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | Hasta 1M tokens en la familia Ripple-65B; preentrenamiento base a 8K |
-| Tipos de cuantizacion | BF16 (este repo); NVFP4 disponible en la variante instruct |
-| Idiomas soportados | Predominantemente inglés y código (no se detalla lista oficial) |
+| Longitud de contexto | 8K durante preentrenamiento; la familia declara soporte de hasta 1M en la versión instructiva (no confirmado para este checkpoint base) |
+| Tipos de cuantizacion | No disponible para este repo (existe un checkpoint NVFP4 de la versión instructiva en otro repositorio) |
+| Idiomas soportados | Predominantemente inglés y código (corpus de preentrenamiento); lista oficial de idiomas no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (BF16), con `custom_code` |
+| Formato de pesos | safetensors (custom_code) |
 
 ## Arquitectura y entrenamiento
 
-Ripple-65B emplea un Transformer denso con arquitectura inspirada en Gemma 3N, abandonando el diseño tipo Llama de la línea Olmo 3 que sirvió como baseline inicial. La proporción es "thin-and-deep": `d_model` de 5120 con 80 capas totales. Para mejorar el rendimiento en razonamiento, el autor sobredimensiona el número de cabezas de atención, incrementa la ratio de capas SWA (sliding window attention) frente a globales y reduce la ventana SWA para compensar el coste adicional. Incorpora además recorte de activaciones en la FFN (FFN activation clipping), atención con compuertas (gated attention), NoPE global y value residuals.
+Ripple-65B Base Preview es un Transformer denso con 80 capas y un `d_model` de 5120, diseñado con una relación de aspecto "thin-and-deep" que prioriza profundidad sobre anchura. Frente a la arquitectura tipo Llama de su baseline Olmo 3, el equipo adoptó una arquitectura tipo Gemma 3N para mejorar la estabilidad del entrenamiento a escala. Para reforzar el razonamiento, sobreaprovisiona el número de cabezas de atención, incrementa la proporción de capas con atención de ventana deslizante (SWA) frente a las globales y reduce la ventana SWA para compensar el coste adicional. Además, incorpora clipping de activaciones en la FFN, atención con compuertas, NoPE global y value residuals.
 
-El preentrenamiento se realizó desde cero sobre 12 billones de tokens de un corpus textual mayoritariamente inglés y de código, con longitud de secuencia de 8K, 877.500 pasos y batch size escalado de 1408 a 3072. Este checkpoint base no ha pasado por midtraining, long context, SFT ni RL; esas etapas (200B tokens de midtraining a 64K, 6,5B de long context a 2M, 183B de SFT a 128K, 13,5B de long-context SFT y 700 pasos de RL mixto por dominio) corresponden a la variante instruct. El autor reporta una mejora de eficiencia computacional en código de 16x frente a la escalera de Olmo 3, que asciende a 55x en la ejecución completa del modelo hero.
+El preentrenamiento se realizó desde cero sobre 12 billones de tokens de un corpus textual (sin multimodal) predominantemente en inglés y código, con secuencia de 8K, 877.500 pasos y un batch size que escaló de 1408 a 3072. Este checkpoint es solo de preentrenamiento: no ha pasado por midtraining, SFT ni datos sintéticos de QA. La receta completa de la familia incluye midtraining (200B tokens, 64K de secuencia), long context (6.5B tokens, 2M de secuencia), SFT (183B tokens, 128K), long context SFT (13.5B tokens, 2M) y RL (700 pasos, 128K, batch 2048), pero esas etapas corresponden a la versión instructiva, no a este repositorio. Según el autor, la escalera de modelos Ripple v1 mejora la eficiencia de cómputo en código 16x respecto a la de Olmo 3, con ventaja creciente hasta 55x en el modelo completo.
 
 ## Capacidades
 
-- Generación de texto y modelado de lenguaje autoregresivo en inglés y código, como checkpoint base sin alineación conversacional.
-- Razonamiento y tareas agénticas de codificación heredadas del diseño arquitectónico (la variante instruct reporta 80,52 en TerminalBench 2.1).
-- Base para fine-tuning supervisado y RL: al no incluir SFT, es adecuado como punto de partida para adaptaciones posteriores.
-- Soporte de contexto largo en la familia (hasta 1M tokens), aunque este checkpoint base se entrenó a 8K y requeriría etapas de long context para explotarlo.
-- Capacidades multilingües limitadas: el corpus es predominantemente inglés, sin lista oficial de idiomas publicada.
-- No se documentan en la información disponible capacidades de tool calling, function calling, visión, audio ni modo thinking para este checkpoint base.
+- Generación de texto y modelado de lenguaje base: al ser un checkpoint solo de preentrenamiento, su capacidad principal es la continuación de texto y el modelado autoregresivo, no la conversación instruida.
+- Razonamiento y código: el corpus de entrenamiento está dominado por inglés y código, y la arquitectura está optimizada para tareas de razonamiento y agénticas según el autor.
+- Capacidades latentes para ajuste fino: al no haber pasado por SFT ni RL, no incorpora de serie formato de instrucciones, tool calling ni modo de pensamiento; estas capacidades se documentan para la versión instructiva Ripple-65B Preview.
+- Multilingüe: no disponible; el corpus es predominantemente inglés, por lo que el rendimiento en otros idiomas no está garantizado ni documentado.
+- Sin soporte declarado de visión, audio ni otras modalidades en este checkpoint.
 
 ## Casos de uso
 
-- Fine-tuning supervisado para dominios verticales: al ser un checkpoint base sin alineación, permite aplicar SFT sobre datos propios (legal, sanitario, financiero) partiendo de un modelo de 65B con licencia Apache 2.0 y sin restricciones de uso comercial.
-- Investigación sobre escalado y recetas de entrenamiento: la arquitectura thin-and-deep con `d_model` 5120 y 80 capas, junto con las innovaciones (gated attention, NoPE global, value residuals), sirve como banco de pruebas para estudiar estabilidad y eficiencia a escala media.
-- Desarrollo de asistentes de código: el modelo base puede adaptarse mediante fine-tuning para autocompletado y generación de código, aprovechando el corpus de 12T tokens con fuerte peso de código.
-- Experimentación local en hardware de consumo: el autor indica que los 65B parámetros caben en una NVIDIA DGX Spark usando el checkpoint NVFP4 de la variante instruct, lo que facilita prototipado sin clúster.
-- Generación de datos sintéticos y destilación: un modelo base de 65B puede emplearse para producir corpus etiquetados que alimenten modelos más pequeños, dado que no incorpora sesgos de alineación conversacional.
-- Evaluación comparativa de arquitecturas densas frente a MoE: permite medir empíricamente la relación calidad/coste de un denso de 65B frente a alternativas MoE de mayor tamaño total.
-- Construcción de pipelines de razonamiento multi-paso tras RL: el modelo base es el sustrato sobre el que la receta de postentrenamiento del autor aplica RL mixto por dominio, replicable por terceros.
+- Punto de partida para ajuste fino supervisado: equipos que quieran entrenar su propio modelo instructivo pueden partir de este checkpoint base y aplicar SFT sobre dominios concretos, aprovechando que no arrastra sesgos de formato conversacional previo.
+- Investigación en recetas de preentrenamiento: útil para estudiar el efecto de arquitecturas densas thin-and-deep, SWA, NoPE global y value residuals en la estabilidad y eficiencia del entrenamiento a escala de 65B.
+- Modelado de lenguaje para código: dado el peso del código en el corpus, sirve como base para tareas de completado y generación de código tras un ajuste fino específico.
+- Continuación de texto y generación de documentos técnicos: puede emplearse en pipelines de generación de texto largo en inglés donde no se requiera formato instructivo.
+- Evaluación comparativa de arquitecturas: permite comparar el rendimiento de una arquitectura densa moderna frente a modelos MoE de tamaño similar en tareas de razonamiento y código.
+- Base para destilación o experimentos de decodificación especulativa: su tamaño de 65B y su licencia Apache 2.0 facilitan su uso como profesor o como modelo de referencia en experimentos de eficiencia de inferencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks para este checkpoint base en la información disponible. La model card incluye una tabla comparativa de la variante instruct (Ripple-65B Preview) frente a Nemotron 3 Ultra 550B, Inkling 975B, Muse Spark Open 816B y Reflection Beam 501B, pero la tabla aparece truncada en el material proporcionado y no puede reproducirse con rigor. El único dato numérico completo es el 80,52 en TerminalBench 2.1 para la variante instruct.
-
-| Benchmark | Ripple-65B Base Preview |
-|---|---|
-| MMLU | no disponible |
-| HumanEval | no disponible |
-| GSM8K | no disponible |
-| TerminalBench 2.1 | no disponible (solo variante instruct: 80,52) |
+No se han publicado resultados de benchmarks para este checkpoint base en la información disponible. La model card incluye una tabla de benchmarks de la versión instructiva Ripple-65B Preview (TerminalBench 2.1: 80.52; comparaciones con Nemotron 3 Ultra 550B, Inkling 975B, Muse Spark Open 816B y Reflection Beam 501B), pero la tabla está truncada en la información proporcionada y corresponde al modelo instructivo, no a este repositorio base. El autor declara 250 tok/s en 2xB200 con batch=8 antes de cuantización o kernels personalizados para la familia, dato no verificado de forma independiente.
 
 ## Requisitos de hardware
 
-- VRAM estimada en BF16: aproximadamente 130 GB solo para pesos (129,6 GB de repositorio), más overhead de activaciones y KV cache; requiere múltiples GPU o nodos.
-- VRAM estimada en NVFP4 (variante instruct): el autor indica que cabe en una NVIDIA DGX Spark, lo que sitúa el requisito en torno a 32-64 GB según configuración.
-- GPU recomendadas: el autor cita 2xB200 alcanzando 250 tok/s con batch=8 antes de cuantización o kernels personalizados; para BF16 se necesitan A100/H100/H200/B200 en configuración multi-GPU.
-- GPU de consumo: en BF16 no cabe en ninguna GPU de consumo individual; en NVFP4 la variante instruct se orienta a DGX Spark.
-- Opciones de despliegue: el repositorio requiere `custom_code`, por lo que la carga no es estándar en todos los frameworks; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI en la información disponible.
-- Latencia y throughput: 250 tok/s en 2xB200 con batch=8 en BF16 sin kernels personalizados (dato del autor para la familia).
+- VRAM estimada para inferencia en BF16: aproximadamente 130 GB solo para pesos (64.782.689.360 parámetros × 2 bytes), más overhead de activaciones y KV cache.
+- Cuantización: no se ofrece un checkpoint cuantizado en este repositorio; la versión instructiva dispone de NVFP4 en otro repo, lo que reduciría el requisito de memoria de forma sustancial.
+- GPU recomendadas: para BF16 se requieren múltiples aceleradores de datacenter (por ejemplo, 2× B200 según el dato de throughput del autor, o configuraciones equivalentes con A100/H100 de 80 GB en paralelo).
+- Hardware de consumo: el autor afirma que el modelo cabe en hardware de consumo como el NVIDIA DGX Spark, lo que en la práctica implica el checkpoint cuantizado (NVFP4) más que el BF16.
+- Opciones de despliegue: al usar `custom_code`, es necesario cargar con `trust_remote_code=True`; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI en la información disponible.
+- Latencia y throughput: 250 tok/s en 2× B200 con batch=8 antes de cuantización o kernels personalizados, según el autor.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| Ripple-65B Base Preview | 65B denso | 1M (familia); 8K en base | Apache 2.0 | Checkpoint base, sin SFT |
-| Olmo 3 (baseline) | no disponible | no disponible | no disponible | Punto de partida del que deriva Ripple; arquitectura tipo Llama |
-| Nemotron 3 Ultra 550B | 550B | no disponible | no disponible | Referencia en la comparativa del autor (instruct) |
-| Reflection Beam 501B | 501B | no disponible | no disponible | Referencia en la comparativa del autor (instruct) |
+| Modelo | Parametros | Contexto | TerminalBench 2.1 | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Ripple-65B Preview (instruct) | 65B denso | hasta 1M (declarado) | 80.52 | Apache 2.0 | Pesos abiertos en HF |
+| Reflection Beam 501B | 501B | no disponible | 80.1 | no disponible | Pesos abiertos (US) |
+| Meta Muse Spark Open 816B | 816B | no disponible | 76.4 | no disponible | Pesos abiertos (US) |
+| Thinking Machines Inkling 975B | 975B | no disponible | 63.8 | no disponible | Pesos abiertos (US) |
+| NVIDIA Nemotron 3 Ultra 550B | 550B | no disponible | 56.4 | no disponible | Pesos abiertos (US) |
 
-La comparación directa con alternativas de 65B densas no está disponible en la información proporcionada; el autor solo compara la variante instruct frente a modelos estadounidenses de pesos abiertos de mayor tamaño (501B a 975B).
+Los datos de la comparativa proceden de la model card del autor y corresponden a la versión instructiva, no a este checkpoint base. No se dispone de datos independientes que permitan verificar la comparación.
 
 ## Limitaciones y advertencias
 
-- Es un checkpoint exclusivamente de preentrenamiento: no sigue instrucciones, no tiene formato de chat ni alineación, y producirá continuaciones de texto sin control conversacional.
-- Riesgo elevado de alucinación y de contenido sesgado o tóxico, al no haber pasado por SFT ni RLHF/DPO.
-- El contexto efectivo es de 8K en este checkpoint; el soporte de 1M requiere las etapas de long context de la variante instruct.
-- Corpus predominantemente inglés: el rendimiento en castellano y otros idiomas no está garantizado ni documentado.
-- Requiere `custom_code` para la carga, lo que puede complicar la integración con frameworks estándar y la reproducibilidad.
-- Aunque la licencia es Apache 2.0, conviene verificar el archivo LICENSE del repositorio y las condiciones de los datos de entrenamiento antes de un uso comercial en producción.
-- El tamaño BF16 (129,6 GB) exige infraestructura multi-GPU; no es desplegable en una sola GPU de consumo sin cuantización.
-- No se han publicado evaluaciones independientes ni resultados de benchmarks para este checkpoint base.
+- Es un checkpoint solo de preentrenamiento: no está ajustado para instrucciones, diálogo ni tool calling, por lo que su uso directo en producción conversacional no es adecuado.
+- Riesgo de alucinación y de generar contenido sesgado o tóxico propio de un modelo base sin alineamiento.
+- Corpus predominantemente en inglés y código: el rendimiento en castellano u otros idiomas no está documentado y probablemente sea limitado.
+- No se han publicado evaluaciones de sesgo, seguridad ni robustez para este checkpoint.
+- El uso de `custom_code` obliga a ejecutar código remoto del autor (`trust_remote_code=True`), lo que introduce un riesgo de seguridad que debe evaluarse en entornos de producción.
+- Aunque la licencia es Apache 2.0, conviene revisar el fichero LICENSE del repositorio por si incluye términos adicionales.
+- Los benchmarks citados corresponden a la versión instructiva y fueron generados por el propio autor; la replicabilidad de evaluaciones agénticas modernas es reconocidamente difícil, como admite la propia model card.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/ricursiveAI/Ripple-65B-Base-Preview
-- Variante BF16 instruct: https://huggingface.co/ricursiveAI/Ripple-65B-Preview
-- Variante NVFP4: https://huggingface.co/ricursiveAI/Ripple-65B-Preview-NVFP4
-- Variante DFlash2: https://huggingface.co/ricursiveAI/Ripple-65B-Preview-DFlash2
+- Versión instructiva BF16: https://huggingface.co/ricursiveAI/Ripple-65B-Preview
+- Versión instructiva NVFP4: https://huggingface.co/ricursiveAI/Ripple-65B-Preview-NVFP4
+- Versión instructiva DFlash2: https://huggingface.co/ricursiveAI/Ripple-65B-Preview-DFlash2
 - Blog de lanzamiento: https://www.ricursive.com/ripple
 - Licencia: https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/main/LICENSE

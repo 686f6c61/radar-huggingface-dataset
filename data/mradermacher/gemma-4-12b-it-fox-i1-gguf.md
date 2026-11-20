@@ -2,101 +2,89 @@
 
 ## Resumen
 
-Gemma-4-12B-it-Fox-i1-GGUF es una coleccion de cuantizaciones GGUF generadas por mradermacher a partir del modelo Gemma-4-12B-it-Fox, publicado por el usuario icelandicfox. Se trata, por tanto, de un derivado de un fine-tune del modelo Gemma 4 de 12 mil millones de parametros en su variante instruction-tuned, orientado a conversacion y seguimiento de instrucciones. El trabajo de mradermacher consiste exclusivamente en la conversion a formato GGUF y la produccion de multiples niveles de cuantizacion (desde IQ1_S hasta Q6_K) para facilitar la inferencia en hardware de consumo mediante llama.cpp y herramientas compatibles.
+Gemma-4-12B-it-Fox-i1-GGUF es una colección de cuantizaciones GGUF generadas por mradermacher a partir del modelo base icelandicfox/Gemma-4-12B-it-Fox, un ajuste fino conversacional de la familia Gemma 4 de Google. El repositorio no contiene un modelo original, sino una batería de variantes cuantizadas con y sin imatrix (etiquetadas i1) pensadas para su uso con llama.cpp y herramientas compatibles con GGUF, lo que permite ejecutar el modelo en hardware de consumo con requisitos de memoria notablemente reducidos.
 
-La relevancia de esta publicacion radica en que permite ejecutar un modelo de 12B en equipos con VRAM limitada, algo imposible con los pesos originales en precision completa. Sin embargo, la informacion publica disponible es extremadamente escasa: la model card se limita a metadatos tecnicos del proceso de cuantizacion y no documenta el entrenamiento del modelo base, los datos utilizados, la licencia ni los idiomas soportados.
+El interés práctico del artefacto reside en la disponibilidad de 22 tipos de cuantización distintos, desde i1-Q2_K (3,1 GB) hasta i1-Q6_K (3,9 GB), lo que cubre desde entornos con muy poca VRAM hasta configuraciones que buscan una fidelidad casi equivalente al modelo en precisión completa. Las variantes i1 emplean un fichero imatrix para ponderar la cuantización, lo que según el autor mejora la calidad frente a las cuantizaciones estáticas equivalentes.
 
-El repositorio muestra cero descargas y cero likes en el momento de la consulta, y un tamano de repositorio de 0.0 GB, lo que sugiere que la publicacion es muy reciente o que los pesos no estan completamente subidos. El dato de parametros reportado en safetensors (1.391.607) es inconsistente con un modelo de 12B y probablemente corresponde a un error de metadatos o a un subconjunto del modelo, por lo que no debe tomarse como referencia del tamano real.
+Los datos técnicos del modelo subyacente (arquitectura, contexto, datos de entrenamiento, benchmarks) no se detallan en la información disponible; esta ficha se centra en lo que sí está documentado: el proceso de cuantización, los tamaños de cada variante, el modelo base y las condiciones de uso del repositorio.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (derivado de Gemma 4, presumiblemente transformer decoder-only) |
-| Parametros totales | 12B segun el nombre del modelo; el dato de safetensors (1.391.607) es inconsistente y no fiable |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (modelo base de la familia Gemma 4; el repositorio solo distribuye cuantizaciones GGUF) |
+| Parametros totales | 4.647.450.147 (según safetensors del modelo base; el nombre comercial indica 12B) |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, Q4_1, IQ3_XS, IQ3_S |
-| Idiomas soportados | no disponible |
+| Tipos de cuantizacion | imatrix (fichero), i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-IQ4_NL, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K |
+| Idiomas soportados | en (inglés, según la model card) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones); el modelo base seria safetensors |
+| Formato de pesos | GGUF (transformers como librería declarada) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo base Gemma-4-12B-it-Fox. Por el nombre se infiere que deriva de Gemma 4 en variante instruction-tuned (it), con 12 mil millones de parametros, y que ha sido sometido a un fine-tune adicional por parte de icelandicfox. No se documentan en la informacion disponible ni el numero de tokens de entrenamiento, ni la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o similares.
+La información disponible no describe la arquitectura interna del modelo base icelandicfox/Gemma-4-12B-it-Fox ni sus datos de entrenamiento. Por el nombre y la familia a la que pertenece, se trata de un ajuste fino instructivo sobre un modelo Gemma 4, pero no se documentan en esta ficha el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO.
 
-El unico proceso tecnico documentado es el de cuantizacion realizado por mradermacher: se indica el uso de cuantizaciones ponderadas con imatrix (weighted/imatrix quants), una tecnica que calibra los errores de cuantizacion por capa usando una matriz de importancia, lo que mejora la calidad de los niveles bajos de bits frente a la cuantizacion uniforme. Los metadatos de la model card indican quantize_version 2, output_tensor_quantised 1 y convert_type hf, lo que confirma una conversion desde pesos en formato Hugging Face. No hay informacion sobre innovaciones arquitectonicas como atencion lineal, decodificacion especulativa o mecanismos hibridos.
+Lo que sí está documentado es el proceso de cuantización: mradermacher genera cuantizaciones ponderadas con imatrix (prefijo i1) a partir del modelo en formato Hugging Face convertido a GGUF. El fichero imatrix (0,1 GB) se incluye para que otros usuarios puedan crear sus propias cuantizaciones. El autor mantiene además una colección paralela de cuantizaciones estáticas en mradermacher/Gemma-4-12B-it-Fox-GGUF. Según las notas del repositorio, las variantes IQ suelen ser preferibles a las Q de tamaño similar, y las i1 mejoran a las estáticas equivalentes.
 
 ## Capacidades
 
-- Generacion de texto y conversacion multi-turno: el sufijo "it" indica ajuste para instrucciones, aunque no se detallan capacidades concretas.
-- Razonamiento y seguimiento de instrucciones: presumible por la naturaleza instruction-tuned del modelo base, sin datos verificables.
-- Generacion de codigo: no confirmado en la informacion disponible.
-- Matematicas: no confirmado en la informacion disponible.
-- Vision: no disponible; no se indica que el modelo sea multimodal.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponibles; no se especifican idiomas.
-- Modo thinking: no disponible.
-- Ejecucion local en CPU y GPU de consumo: si, gracias a las cuantizaciones GGUF de 1 a 6 bits.
+- Generación de texto conversacional en inglés, orientada a diálogo multi-turno (etiqueta "conversational").
+- Compatibilidad con el ecosistema transformers y con el formato GGUF para inferencia local.
+- Ejecución mediante llama.cpp y herramientas derivadas (Ollama, LM Studio, entre otras) gracias al formato GGUF.
+- Endpoints compatibles declarados en los tags del repositorio (endpoints_compatible).
+- Capacidades específicas de razonamiento, código, matemáticas, visión, tool calling o agentes: no disponibles en la información proporcionada.
+- Capacidades multilingües: limitadas al inglés según la model card.
 
 ## Casos de uso
 
-- Despliegue local en estaciones de trabajo sin GPU dedicada: las cuantizaciones IQ2/IQ3 permiten cargar el modelo en RAM del sistema mediante llama.cpp, posibilitando asistentes conversacionales offline en equipos de 16-32 GB de RAM.
-- Prototipado rapido de aplicaciones de chat: usar la cuantizacion Q4_K_M como compromiso entre calidad y tamano para validar flujos conversacionales antes de migrar a pesos completos o a una API.
-- Inferencia en GPU de consumo con VRAM limitada: la variante Q4_K_M de un modelo de 12B ocupa aproximadamente 7-8 GB, lo que permite ejecutarlo en tarjetas de 8-12 GB como la RTX 3060 Ti, 4060 Ti o 4070.
-- Evaluacion comparativa de niveles de cuantizacion: el repositorio ofrece 24 variantes, lo que permite medir la degradacion de calidad entre IQ1_S y Q6_K en tareas concretas del usuario.
-- Integracion en herramientas de escritorio tipo Ollama o LM Studio: al ser GGUF, puede importarse directamente en estos entornos para asistentes personales de redaccion o resumen.
-- Experimentacion con fine-tunes de la comunidad: util para investigadores que quieran evaluar el efecto de un fine-tune comunitario sobre Gemma 4 sin necesidad de infraestructura de datacenter.
+- Despliegue en estaciones de trabajo sin GPU dedicada: la variante i1-Q4_K_M (3,5 GB) permite ejecutar el modelo en CPU con llama.cpp en equipos con 8-16 GB de RAM, adecuado para prototipos de asistentes conversacionales en inglés.
+- Inferencia en GPU de consumo con VRAM limitada: las variantes i1-IQ3_S o i1-Q4_K_S (3,2-3,5 GB) caben en tarjetas de 6-8 GB junto con la caché KV, lo que facilita pruebas locales de chatbots sin infraestructura en la nube.
+- Evaluación comparativa de cuantizaciones: el repositorio ofrece 22 variantes del mismo modelo, lo que permite medir el impacto de la cuantización en perplejidad y calidad de respuesta sobre una misma tarea, útil para investigación en compresión de modelos.
+- Creación de cuantizaciones propias: el fichero imatrix incluido (0,1 GB) permite a otros desarrolladores generar sus propias variantes GGUF con la ponderación del autor, por ejemplo para ajustar el equilibrio tamaño/calidad a un hardware concreto.
+- Asistente conversacional offline en inglés: al no requerir conexión, el modelo cuantizado puede integrarse en aplicaciones de escritorio o entornos air-gapped donde la privacidad del texto es crítica.
+- Fine-tuning ligero sobre la variante GGUF: aunque el formato GGUF no está pensado para entrenamiento, la variante de mayor tamaño (i1-Q6_K, 3,9 GB) sirve como referencia de calidad para comparar contra el modelo base en pipelines de evaluación.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (modelo de 12B, estimacion orientativa segun cuantizacion):
-  - IQ1_S / IQ1_M: aproximadamente 2,5-3,5 GB.
-  - IQ2_XXS / IQ2_XS / IQ2_S / IQ2_M: aproximadamente 3,5-4,5 GB.
-  - IQ3_XXS / IQ3_XS / IQ3_S / IQ3_M: aproximadamente 5-5,5 GB.
-  - Q3_K_S / Q3_K_M / Q3_K_L: aproximadamente 5,5-6,5 GB.
-  - Q4_0 / Q4_1 / Q4_K_S / IQ4_XS / IQ4_NL: aproximadamente 6,5-7,5 GB.
-  - Q4_K_M: aproximadamente 7-8 GB.
-  - Q5_K_S / Q5_K_M: aproximadamente 8-9 GB.
-  - Q6_K: aproximadamente 9,5-10,5 GB.
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080, RTX 4090, A100 y H100 para las variantes de mayor precision con contexto largo.
-- Cabe en GPU de consumo: si, desde tarjetas de 4 GB (IQ1) hasta 12-16 GB (Q5/Q6). Las variantes Q4 caben en 8 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, koboldcpp y servidores compatibles con GGUF. vLLM y TGI no soportan GGUF de forma nativa generalizada, por lo que requeririan los pesos safetensors originales.
-- Latencia y throughput: no disponibles; dependen del hardware y del backend.
+- VRAM/RAM estimada para inferencia: entre 3,1 GB (i1-Q2_K) y 3,9 GB (i1-Q6_K) solo para los pesos; hay que sumar la caché KV, cuyo tamaño depende del contexto configurado y no está documentado.
+- GPU recomendadas: no disponibles en la información proporcionada; por tamaño, cualquier GPU con 6 GB o más de VRAM puede alojar las variantes de 4 bits, y las de 2-3 bits caben en GPUs de 4 GB.
+- GPU de consumo: sí, cabe en tarjetas como RTX 3060, RTX 4060, RTX 4070 o superiores; también en iGPU con memoria unificada suficiente.
+- Opciones de despliegue: llama.cpp (formato nativo), Ollama, LM Studio y cualquier runtime compatible con GGUF; el repositorio declara compatibilidad con transformers y endpoints compatibles.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Gemma-4-12B-it-Fox-i1-GGUF (este) | 12B (nominal) | no disponible | no disponible | GGUF (24 cuantizaciones) | Hugging Face |
-| Gemma-4-12B-it (base oficial de Google) | 12B | no disponible en esta ficha | no disponible | safetensors | Hugging Face |
-| Gemma-4-12B-it-Fox (fine-tune original de icelandicfox) | 12B | no disponible | no disponible | safetensors | Hugging Face |
-| Mistral-Nemo-12B-Instruct (alternativa de tamano similar) | 12B | 128K | Apache 2.0 | safetensors, GGUF | Hugging Face |
+| Gemma-4-12B-it-Fox-i1-GGUF (este) | 4.647.450.147 según safetensors; nombre comercial 12B | no disponible | GGUF (16 variantes i1) | no disponible | Cuantizaciones imatrix de un fine-tune de Gemma 4 |
+| Gemma-4-12B-it-Fox-GGUF (mradermacher) | mismo modelo base | no disponible | GGUF estático | no disponible | Variante estática del mismo autor, sin imatrix |
+| icelandicfox/Gemma-4-12B-it-Fox | mismo modelo base | no disponible | safetensors (Hugging Face) | no disponible | Modelo original sin cuantizar |
 
-La comparativa detallada de rendimiento no es posible porque no se han publicado benchmarks del modelo en la informacion disponible. La principal diferencia frente a los pesos originales es la disponibilidad de cuantizaciones GGUF para inferencia local.
+No se dispone de información sobre otros modelos comparables de la misma categoría en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card sustantiva: no se documentan datos de entrenamiento, sesgos, idiomas ni evaluaciones, lo que impide auditar el modelo.
-- Licencia no especificada: no se puede confirmar si el uso comercial esta permitido; debe verificarse en el repositorio del modelo base (Gemma-4-12B-it-Fox) y en la licencia de Gemma 4 de Google.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje instruction-tuned; sin evaluaciones publicadas no puede cuantificarse.
-- Sesgos desconocidos: al no documentarse la composicion del dataset de fine-tune, no es posible identificar sesgos de dominio, idioma o cultura.
-- Inconsistencia en metadatos: el campo de parametros en safetensors (1.391.607) no concuerda con un modelo de 12B, lo que sugiere errores en la publicacion y aconseja verificar la integridad de los archivos antes de usarlos en produccion.
-- Repositorio con 0 descargas y tamano de 0.0 GB: posible publicacion incompleta o no verificada; conviene comprobar que los archivos GGUF estan efectivamente subidos.
-- Las cuantizaciones de 1-2 bits (IQ1_S, IQ1_M, IQ2_XXS) degradan notablemente la calidad y no son recomendables para tareas de razonamiento o codigo.
-- No hay garantia de soporte de tool calling ni de contexto largo en el fine-tune comunitario.
-- El modelo base Gemma esta sujeto a los terminos de uso de Google; el fine-tune y la cuantizacion anaden capas de licencia que deben revisarse.
+- La licencia no está declarada en el repositorio; antes de un uso comercial es imprescindible verificar la licencia del modelo base icelandicfox/Gemma-4-12B-it-Fox y de la familia Gemma 4 original.
+- El modelo está etiquetado únicamente para inglés; no hay evidencia de soporte multilingüe y el rendimiento en castellano no está documentado.
+- Las cuantizaciones de 2-3 bits (i1-Q2_K, i1-IQ3_XXS, i1-IQ2_*) degradan la calidad de forma notable; el propio autor recomienda IQ3_XXS frente a Q2_K y IQ3_S frente a Q3_K_S.
+- El repositorio no incluye información sobre sesgos, tasas de alucinación ni evaluaciones de seguridad del modelo base.
+- El tamaño declarado en el nombre (12B) no coincide con el recuento de parámetros de los safetensors (4.647.450.147); conviene verificar el modelo base antes de dimensionar el hardware.
+- Al ser una cuantización, los pesos no son aptos para fine-tuning directo; para entrenamiento hay que partir del modelo en safetensors.
+- No se documentan la longitud de contexto ni el tamaño de la caché KV, lo que impide estimar con precisión los requisitos de memoria en contextos largos.
 
 ## Enlaces
 
-- Repositorio Hugging Face de este modelo: https://huggingface.co/mradermacher/Gemma-4-12B-it-Fox-i1-GGUF
-- Modelo base del fine-tune: https://huggingface.co/icelandicfox/Gemma-4-12B-it-Fox
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
-- Repositorio de llama.cpp (backend de inferencia GGUF): https://github.com/ggerganov/llama.cpp
-- Repositorio de Ollama: https://github.com/ollama/ollama
-- No se han encontrado papers, blogs ni demos adicionales en la informacion disponible.
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Gemma-4-12B-it-Fox-i1-GGUF
+- Modelo base: https://huggingface.co/icelandicfox/Gemma-4-12B-it-Fox
+- Cuantizaciones estáticas del mismo autor: https://huggingface.co/mradermacher/Gemma-4-12B-it-Fox-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Gemma-4-12B-it-Fox-i1-GGUF
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de modelos del autor: https://huggingface.co/mradermacher/model_requests
+- nethype GmbH: https://www.nethype.de/

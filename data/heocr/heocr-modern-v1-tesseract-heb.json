@@ -5,7 +5,7 @@
   "author": "HeOCR",
   "url": "https://huggingface.co/HeOCR/heocr-modern-v1-tesseract-heb",
   "created_at": "2026-11-19T14:30:09.000Z",
-  "updated_at": "2026-11-19T14:30:14.000Z",
+  "updated_at": "2026-11-19T14:59:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-to-text",

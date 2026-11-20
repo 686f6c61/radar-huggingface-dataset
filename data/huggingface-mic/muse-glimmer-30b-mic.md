@@ -2,90 +2,91 @@
 
 ## Resumen
 
-Muse-Glimmer-30B-mic es un artefacto de prueba (fixture) publicado por el usuario huggingface-mic, no un modelo entrenado ni utilizable. Se presenta como una version reducida ("slim") del checkpoint `meta-models/Muse-Glimmer-30B`, con 26,2 millones de parametros reales frente a los aproximadamente 30 mil millones que sugiere el nombre del modelo base. Su proposito es servir como fixture de integracion para validar contratos de uso y expectativas de frameworks (Transformers) sin necesidad de descargar ni ejecutar el modelo completo.
+Muse-Glimmer-30B-mic es un artefacto de prueba publicado por el usuario huggingface-mic, no un modelo utilizable en producción. Se trata de un "fixture" reducido del modelo base meta-models/Muse-Glimmer-30B, creado para validar contratos de integración con Transformers y verificar expectativas de framework. El repositorio contiene pesos "slim" de 26,2 millones de parámetros con pesos aleatorios (semilla 17), no entrenados, que replican la arquitectura y los nombres de tensores del checkpoint original.
 
-El repositorio incluye pesos reducidos, documentacion de uso ejecutable y un directorio de expectativas del framework, todo generado mediante un script de reduccion (`sweep.py`) que conserva la arquitectura `MuseGlimmerForConditionalGeneration` pero con solo 2 capas en el codificador de texto y 2 en el de vision. Los pesos son aleatorios (semilla 17) y no han pasado por entrenamiento alguno; unicamente superaron una puerta de sensibilidad de entrada que verifica que las perturbaciones en las entradas mueven los logits.
+El modelo conserva la arquitectura multimodal `MuseGlimmerForConditionalGeneration` del modelo base, pero con la configuración reducida a 2 capas en la torre de texto y 2 capas en la torre de visión. Los ficheros de procesador (tokenizer, chat template, generation config, processor config y política de uso) se copiaron byte a byte del modelo original, de modo que el fixture reproduce fielmente la interfaz de entrada/salida, aunque los pesos no tengan ningún valor semántico.
 
-Es relevante exclusivamente en el contexto de pruebas de infraestructura de modelos multimodales: permite a desarrolladores validar pipelines de carga, tokenizacion, procesamiento de imagenes y ejecucion en Transformers con un coste computacional minimo y sin depender del checkpoint real. La etiqueta `test-artifact` lo excluye explicitamente de busquedas de modelos candidatos para uso real.
+Su relevancia es exclusivamente de ingeniería: sirve para que los mantenedores de transformers-mic comprueben que las integraciones (usage, expectations, manifest) funcionan sin necesidad de descargar un checkpoint de 30B. Está etiquetado explícitamente como `test-artifact` para excluirlo de búsquedas de modelos candidatos. No debe usarse para inferencia real, generación de texto ni evaluación de calidad.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | MuseGlimmerForConditionalGeneration (transformer multimodal texto+vision, version reducida) |
-| Parametros totales | 26.163.904 |
-| Parametros activos | no disponible |
+| Arquitectura | MuseGlimmerForConditionalGeneration (multimodal, texto + visión); configuración reducida a 2 capas de texto y 2 de visión |
+| Parámetros totales | 26.163.904 (26,2 M) |
+| Parámetros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos en bfloat16) |
+| Tipos de cuantización | no disponible (pesos guardados en bfloat16) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (el repositorio copia el fichero LICENSE del modelo base, pero su contenido no se especifica) |
+| Licencia | no disponible (el repo copia un fichero LICENSE del modelo base, pero su contenido no se detalla) |
 | Formato de pesos | safetensors (bfloat16) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde a `MuseGlimmerForConditionalGeneration`, un modelo multimodal que combina un codificador de texto y un codificador de vision. En esta fixture, la configuracion se ha reducido mediante la regla generica de `sweep.py`: 2 capas ocultas en el texto y 2 capas ocultas en la vision. Los nombres de tensores coinciden con los del checkpoint real `meta-models/Muse-Glimmer-30B`, de modo que el fixture replica la estructura de parametros del modelo original a menor escala.
+La arquitectura corresponde al modelo base Muse-Glimmer-30B, un modelo multimodal de tipo `MuseGlimmerForConditionalGeneration` que combina una torre de texto y una torre de visión. En este fixture, la configuración se ha reducido mediante la regla genérica de `sweep.py`: `text num_hidden_layers = 2` y `vision num_hidden_layers = 2`. Los nombres de tensores coinciden exactamente con los del checkpoint real, de modo que el fixture es intercambiable a nivel de código.
 
-No hubo entrenamiento. Los pesos se inicializaron aleatoriamente con semilla 17 y se validaron con una puerta de sensibilidad de entrada: cada perturbacion de las entradas del contrato debe desplazar los logits al menos 0,001 (la mas debil, `pixel_values:halve`, produjo 0,0534). Los ficheros de procesador (`tokenizer.json`, `tokenizer_config.json`, `chat_template.jinja`, `generation_config.json`, `processor_config.json`, `LICENSE`, `USAGE_POLICY.md`) se copiaron byte a byte desde el modelo base. Los pesos se guardaron en bfloat16, el dtype por defecto de carga del checkpoint original, y se verifico que son finitos en float32, bfloat16 y float16 tanto en forward como en loss y gradientes.
+No hubo entrenamiento. Los pesos son aleatorios con semilla 17 y solo pasaron una puerta de sensibilidad a la entrada: cada perturbación de las entradas del contrato movía los logits al menos 0,001 (la más débil, `pixel_values:halve`, con 0,0534). El modelo se guardó en bfloat16, el dtype por defecto del checkpoint original, y se verificó que es finito en float32, bfloat16 y float16 (forward, loss y gradientes). Los ficheros de procesador (`tokenizer.json`, `chat_template.jinja`, `generation_config.json`, `processor_config.json`, `LICENSE`, `USAGE_POLICY.md`) se copiaron byte a byte del modelo base.
 
 ## Capacidades
 
-- Ejecucion de forward pass en Transformers con la clase `MuseGlimmerForConditionalGeneration`.
-- Procesamiento multimodal de texto e imagenes a traves del procesador copiado del modelo base (tokenizador y `processor_config.json`).
-- Validacion de contratos de integracion: el repositorio incluye `integration.json` con el manifiesto de contrato y un directorio `integrations/transformers/expectations`.
-- Generacion de logits y calculo de loss y gradientes (verificado en float32, bfloat16 y float16).
-- No soporta tool calling, agentes, razonamiento ni capacidades multilingues reales: al no estar entrenado, no produce salidas coherentes.
-- No es un modelo utilizable para inferencia productiva; su unica funcion es la prueba de infraestructura.
+- No dispone de capacidades reales de generación: los pesos son aleatorios y no han sido entrenados.
+- Reproduce la interfaz multimodal del modelo base (entradas de texto e imagen vía `pixel_values`), pero sin semántica aprendida.
+- Conserva el `chat_template.jinja` y el `tokenizer.json` del modelo original, por lo que el formateo de conversaciones y la tokenización son idénticos a los del modelo base.
+- Conserva el `generation_config.json` y el `processor_config.json` originales.
+- Sirve como fixture de pruebas para validar tooling de integración (Transformers, transformers-mic), no para tool calling ni agentes reales.
+- No soporta razonamiento, código, matemáticas ni capacidades multilingües verificables, al carecer de entrenamiento.
 
 ## Casos de uso
 
-- Pruebas de integracion en Transformers: cargar el modelo con `AutoModelForConditionalGeneration` y verificar que la clase `MuseGlimmerForConditionalGeneration` se resuelve correctamente sin descargar el checkpoint de 30B, reduciendo el tiempo de CI a segundos.
-- Validacion de pipelines multimodales: comprobar que el procesador (tokenizador mas procesador de imagen) acepta entradas de texto e imagen y genera tensores con las formas esperadas, usando los ficheros de procesador copiados del modelo base.
-- Test de regresion de contratos: el manifiesto `integration.json` y el directorio de expectativas permiten verificar que cambios en el framework no rompen la interfaz esperada por el modelo.
-- Pruebas de precision numerica: al ser finito en float32, bfloat16 y float16, sirve para validar rutas de mixed precision y comprobar que no aparecen NaN o inf en forward, loss y gradientes.
-- Desarrollo de herramientas de reduccion de modelos: el repositorio documenta el proceso de shrink (`sweep.py`, `build_fixtures.py`) y sirve como ejemplo reproducible para crear fixtures de otros checkpoints.
-- Verificacion de plantillas de chat: el `chat_template.jinja` copiado byte a byte permite probar el formateo de conversaciones multi-turno sin cargar el modelo completo.
-- Integracion continua en proyectos que envuelven modelos multimodales: usar el fixture como sustituto ligero en tests unitarios que no requieren calidad de generacion.
+- Validación de integraciones en Transformers: permite ejecutar el pipeline de carga, forward y generación con la misma firma que el modelo real sin descargar 30B de parámetros, verificando que `usage.md` y `expectations` son correctos.
+- Pruebas de CI/CD en transformers-mic: el fixture se reconstruye con `python example/build_fixtures.py --fixture Muse-Glimmer-30B-mic` y se usa para comprobar que los cambios en el código no rompen el contrato del modelo.
+- Verificación de compatibilidad de procesador: al copiar byte a byte tokenizer, chat template y configs, permite probar que el preprocesado de texto e imagen funciona antes de escalar al checkpoint completo.
+- Desarrollo de harness de evaluación: sirve para probar el arnés de benchmarks (carga, batching, métricas) con un modelo pequeño y rápido antes de lanzarlo contra el modelo real.
+- Pruebas de dtype y estabilidad numérica: al ser finito en float32, bfloat16 y float16, permite validar rutas de mixed precision y acumulación de gradientes en el framework.
+- Reproducción de contratos de entrada: la puerta de sensibilidad (perturbaciones de `pixel_values` y entradas de texto mueven los logits) permite comprobar que el pipeline propaga correctamente las entradas multimodales.
+- Documentación de referencia: el repositorio incluye `integration.json`, `build.json` y la página de "shrink", útiles como ejemplo de cómo reducir un checkpoint preservando la interfaz.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un artefacto de prueba con pesos aleatorios, cualquier metrica de calidad (MMLU, HumanEval, GSM8K) carece de sentido.
+No se han publicado resultados de benchmarks en la información disponible. Al tratarse de un artefacto de prueba con pesos aleatorios, cualquier métrica de calidad (MMLU, HumanEval, GSM8K, etc.) carecería de significado.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB. El repositorio completo ocupa 0,2 GB y los pesos en bfloat16 suman aproximadamente 52 MB (26,2M parametros x 2 bytes).
-- GPU recomendadas: cualquier GPU consumer moderna es suficiente; tambien funciona en CPU sin problemas de rendimiento relevantes.
-- Cabe en cualquier GPU consumer (RTX 3060, RTX 4090, etc.) e incluso en GPUs integradas o en CPU.
-- Opciones de despliegue: Transformers con `MuseGlimmerForConditionalGeneration` (la unica ruta documentada en el repositorio). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles; al ser un modelo de 2 capas, la latencia es practicamente despreciable, pero no se han publicado mediciones.
+- VRAM estimada para inferencia: inferior a 1 GB en bfloat16 (26,2 M de parámetros, repo de 0,2 GB).
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4090) o incluso CPU; no requiere A100 ni H100.
+- Cabe holgadamente en cualquier GPU consumer e integrada; también en CPU.
+- Opciones de despliegue: carga directa con Transformers (`MuseGlimmerForConditionalGeneration`); no se documentan recetas para vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: no disponibles; al ser un modelo de 2+2 capas, la latencia sería mínima, pero irrelevante para producción.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Proposito | Licencia |
+| Modelo | Parámetros | Contexto | Licencia | Propósito |
 |---|---|---|---|---|
-| Muse-Glimmer-30B-mic | 26,2M (fixture) | no disponible | Fixture de test | no disponible |
-| meta-models/Muse-Glimmer-30B | ~30B (segun nombre) | no disponible | Modelo multimodal real | no disponible |
-| Otros fixtures de integracion | variable | no disponible | Test de frameworks | variable |
+| Muse-Glimmer-30B-mic (este) | 26,2 M (fixture) | no disponible | no disponible | Artefacto de prueba |
+| meta-models/Muse-Glimmer-30B | 30B (según nombre) | no disponible | no disponible | Modelo multimodal real |
+| Otros fixtures de transformers-mic | variable | no disponible | no disponible | Pruebas de integración |
 
-La comparacion con alternativas reales no es significativa porque este repositorio no es un modelo funcional. Frente al checkpoint base `meta-models/Muse-Glimmer-30B`, la diferencia clave es el tamano (26,2M frente a ~30B) y la ausencia de entrenamiento; frente a otros fixtures de la misma organizacion, comparte el enfoque de replicar la estructura de tensores del modelo original con pesos aleatorios y ficheros de procesador copiados.
+No se dispone de información sobre modelos comparables de la misma categoría (fixtures de prueba) más allá de la familia transformers-mic. La comparación con modelos reales de 30B no es pertinente porque este artefacto no ejecuta inferencia con sentido.
 
 ## Limitaciones y advertencias
 
-- No es un modelo utilizable: los pesos son aleatorios (semilla 17) y no han sido entrenados; las salidas no tienen coherencia semantica.
-- Etiquetado como `test-artifact` para excluirlo de busquedas de modelos candidatos; no debe desplegarse en produccion bajo ninguna circunstancia.
-- La licencia no esta disponible en la informacion proporcionada; el repositorio copia el fichero `LICENSE` y `USAGE_POLICY.md` del modelo base, pero su contenido no se detalla, por lo que no se puede confirmar el uso comercial.
-- La configuracion reducida (2 capas de texto, 2 de vision) no refleja el comportamiento del modelo base; los resultados de pruebas de integracion no garantizan que el checkpoint completo funcione igual.
-- Riesgo de confusion: el nombre "30B" puede inducir a error sobre el tamano real (26,2M parametros).
-- No hay informacion sobre sesgos, idiomas soportados ni limitaciones de contexto porque el modelo no ha sido entrenado ni evaluado.
-- El repositorio solo incluye pesos reducidos, uso y expectativas; otros ficheros deben regenerarse con `python example/build_fixtures.py --fixture Muse-Glimmer-30B-mic`.
+- No es un modelo utilizable: los pesos son aleatorios (semilla 17) y no han sido entrenados; cualquier salida es ruido.
+- Etiquetado como `test-artifact` para excluirlo de búsquedas de modelos candidatos; no debe promocionarse como modelo.
+- Riesgo de confusión: el nombre "30B" hace referencia al modelo base, no al tamaño real del fixture (26,2 M).
+- La licencia no está disponible en la información proporcionada; el repo incluye un `LICENSE` copiado del modelo base, pero su contenido no se detalla, por lo que no se puede confirmar el uso comercial.
+- No se documentan idiomas soportados ni longitud de contexto.
+- No apto para producción, evaluación de calidad, ni despliegue en atención al cliente, generación de código o agentes.
+- La puerta de sensibilidad solo garantiza que las entradas afectan a los logits, no que el modelo sea coherente.
+- El repositorio depende de scripts externos (`build_fixtures.py`, `sweep.py`) para su reconstrucción; cambios en esos scripts pueden invalidar el fixture.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/Muse-Glimmer-30B-mic
+- Hugging Face: https://huggingface.co/huggingface-mic/Muse-Glimmer-30B-mic
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
-- Manifiesto de contrato: https://huggingface.co/huggingface-mic/Muse-Glimmer-30B-mic/blob/main/integration.json
-- Uso con Transformers: https://huggingface.co/huggingface-mic/Muse-Glimmer-30B-mic/blob/main/integrations/transformers/usage.md
-- Expectativas de Transformers: https://huggingface.co/huggingface-mic/Muse-Glimmer-30B-mic/tree/main/integrations/transformers/expectations
-- Procedencia del fixture: https://huggingface.co/huggingface-mic/Muse-Glimmer-30B-mic/blob/main/build.json
-- Documentacion del proceso de reduccion: https://huggingface-mic-mic-coverage.static.hf.space/shrink/Muse-Glimmer-30B-mic.html
-- Script de reduccion (`sweep.py`): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
-- Script de construccion (`build_fixtures.py`): https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Manifest de contrato: integration.json (en el repo)
+- Uso con Transformers: integrations/transformers/usage.md (en el repo)
+- Expectativas de Transformers: integrations/transformers/expectations (en el repo)
+- Procedencia del fixture: build.json (en el repo)
+- Cómo se redujo el fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/Muse-Glimmer-30B-mic.html
+- Script de construcción: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Regla de reducción: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py

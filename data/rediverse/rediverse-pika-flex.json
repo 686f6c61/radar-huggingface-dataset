@@ -5,7 +5,7 @@
   "author": "ReDiverse",
   "url": "https://huggingface.co/ReDiverse/ReDiverse-Pika-Flex",
   "created_at": "2026-11-16T17:36:22.000Z",
-  "updated_at": "2026-11-16T21:52:20.000Z",
+  "updated_at": "2026-11-19T16:42:19.000Z",
   "license": "minimax-h3-community",
   "license_family": "non-commercial",
   "pipeline_tag": "text-to-video",
@@ -24,7 +24,7 @@
     "license:other",
     "region:us"
   ],
-  "likes": 4,
+  "likes": 5,
   "downloads_30d": 26,
   "trending_score": 0,
   "parameters": null,

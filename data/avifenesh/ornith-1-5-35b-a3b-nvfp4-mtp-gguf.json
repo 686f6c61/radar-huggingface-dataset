@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 6,
-  "downloads_30d": 1765,
+  "downloads_30d": 1733,
   "trending_score": 0,
   "parameters": 67141632,
   "parameters_human": "67.1M",
@@ -49,43 +49,23 @@
   "renamed_at": "2026-11-11T02:22:57.191Z",
   "benchmarks": [
     {
-      "task": "MTP speculative decode K=2, greedy, 256-token code generation",
-      "dataset": "memra chat-templated code probe (deterministic, 3 identical reps)",
-      "metric": "draft acceptance, embedded full head",
-      "value": 0.537
+      "task": "MTP speculative decode K=3, greedy, 256-token serve probes (code + agentic), same-window interleaved A/B",
+      "dataset": "tiyuvta serve probes (deterministic, per-request usage.spec accounting)",
+      "metric": "draft acceptance, embedded continued-trained head (this artifact)",
+      "value": 0.4309
     },
     {
-      "task": "MTP speculative decode K=2, greedy, 256-token code generation",
-      "dataset": "memra chat-templated code probe (deterministic, 3 identical reps)",
+      "task": "MTP speculative decode K=3, greedy, 256-token serve probes (code + agentic), same-window interleaved A/B",
+      "dataset": "tiyuvta serve probes (deterministic, per-request usage.spec accounting)",
+      "metric": "draft acceptance, vendor head (same mint recipe, superseded revision)",
+      "value": 0.3523
+    },
+    {
+      "task": "MTP speculative decode K=3, greedy, 256-token serve probes (code + agentic), same-window interleaved A/B",
+      "dataset": "tiyuvta serve probes (deterministic, per-request usage.spec accounting)",
       "metric": "draft acceptance, FR-Spec masked head (top-32768 own-gen ranks)",
-      "value": 0.488
+      "value": 0.393
     }
   ],
-  "sources": [
-    {
-      "title": "Ornith-1.5 - a ornith-ai Collection - Hugging Face",
-      "url": "https://huggingface.co/collections/ornith-ai/ornith-15",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
-      "url": "https://ornith.ai/ornith_1_5.html",
-      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
-    },
-    {
-      "title": "SC117/Ornith-1.0-35B-MTP-APEX-GGUF · Hugging Face",
-      "url": "https://huggingface.co/SC117/Ornith-1.0-35B-MTP-APEX-GGUF",
-      "snippet": "Ornith-1.0-35B is a self-improving agentic coding model from DeepReinforce AI, post-trained on top of Qwen3.5 with RL to jointly optimize scaffold generation and solution rollouts."
-    },
-    {
-      "title": "memra/research/onboard-ornith-20260801/README.md at main · avifenesh ...",
-      "url": "https://github.com/avifenesh/memra/blob/main/research/onboard-ornith-20260801/README.md",
-      "snippet": "MTP/spec-decode for this batch is future work: the GGUFs ship without NextN heads. The existing own-gen trimmed-draft regime (docs/DRAFT-REGIME.md) applies unchanged if a draft is wanted — Ornith/KAT are post-trains of the same backbones the 9B/35B drafts were built from, but a per-model own-gen draft build + acceptance measurement is its own lane."
-    },
-    {
-      "title": "memra/research/onboard-ornith-20260801 at main · avifenesh/memra",
-      "url": "https://github.com/avifenesh/memra/tree/main/research/onboard-ornith-20260801",
-      "snippet": "MTP/spec-decode for this batch is future work: the GGUFs ship without NextN heads. The existing own-gen trimmed-draft regime (docs/DRAFT-REGIME.md) applies unchanged if a draft is wanted — Ornith/KAT are post-trains of the same backbones the 9B/35B drafts were built from, but a per-model own-gen draft build + acceptance measurement is its own lane."
-    }
-  ]
+  "sources": []
 }

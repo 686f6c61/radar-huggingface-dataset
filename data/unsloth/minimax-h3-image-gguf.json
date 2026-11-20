@@ -28,9 +28,9 @@
     "license:other",
     "region:us"
   ],
-  "likes": 29,
+  "likes": 31,
   "downloads_30d": 126134,
-  "trending_score": 27,
+  "trending_score": 28,
   "parameters": 20113670232,
   "parameters_human": "20.11B",
   "storage_bytes": 185068367671,
@@ -49,5 +49,31 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "GitHub - unslothai/unsloth: Local UI to run and train LLMs and ...",
+      "url": "https://github.com/unslothai/unsloth",
+      "snippet": "Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4.1, MiniMax-H3, Gemma 4, FLUX and more. - unslothai/unsloth"
+    },
+    {
+      "title": "Unsloth - Run and Train Models Locally",
+      "url": "https://unsloth.ai/",
+      "snippet": "Unsloth is an open-source, no-code deskop UI for training and running open models on your local hardware."
+    },
+    {
+      "title": "Releases · unslothai/unsloth · GitHub",
+      "url": "https://github.com/unslothai/unsloth/releases",
+      "snippet": "Requests with an Unsloth API key can no longer run Python and terminal tools unsandboxed; only the Unsloth UI can allow that. The …"
+    },
+    {
+      "title": "Introducing Unsloth Desktop | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/desktop",
+      "snippet": "Whether your model is running through Unsloth’s inference or your own remote OpenAI-compatible endpoint, you can give it access …"
+    },
+    {
+      "title": "Unsloth, what's the catch? Seems too good to be true. - Reddit",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ar7e4m/unsloth_whats_the_catch_seems_too_good_to_be_true/",
+      "snippet": "Feb 15, 2024 · Unsloth is free and Apache 2 open source licensed, is 2.2x faster, uses 70% less VRAM, has 0% degradation in …"
+    }
+  ]
 }

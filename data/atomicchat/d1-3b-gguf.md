@@ -2,118 +2,118 @@
 
 ## Resumen
 
-AtomicChat/d1-3B-GGUF es un repositorio de cuantizaciones GGUF del modelo de decisión LiquidAI/d1-3B, publicado por AtomicChat para su uso con llama.cpp y herramientas compatibles. El modelo base, desarrollado por Liquid AI, no es un generador de texto al uso: recibe un estado (por ejemplo, un texto o un contexto) y responde preguntas tipadas en un único forward pass, con tres formatos de salida posibles: sí/no, elección entre opciones nombradas o una puntuación. La respuesta se lee directamente de la distribución de probabilidad del modelo sobre los tokens de cada opción, por lo que no se genera texto libre.
+d1-3B es un modelo de decisión desarrollado por Liquid AI: recibe un estado (texto o imagen) y responde preguntas tipadas en un único forward pass, devolviendo sí/no, una opción entre varias nombradas o una puntuación. La respuesta no se genera token a token, sino que se lee directamente de la distribución de probabilidad del modelo sobre los tokens que representan las opciones. Esto lo aleja del paradigma generativo habitual y lo acerca a un clasificador con lenguaje natural como interfaz.
 
-Con unos 2.697.198.592 parámetros (aproximadamente 2,7 B) y arquitectura de la familia LFM2 de Liquid AI, el modelo está pensado para tareas de decisión y clasificación dentro de pipelines de agentes, donde se necesita latencia baja y salidas calibradas en lugar de generación abierta. La relevancia de este repositorio concreto es que AtomicChat no se limita a aplicar los presets estándar de llama.cpp: usa una matriz de importancia propia y una estrategia de cuantización por tensor denominada "Atomic Dynamic" (AD-), y publica métricas de fidelidad frente a los pesos BF16 originales medidas sobre 1.285 decisiones reales, no solo sobre perplejidad de texto.
+La versión aquí descrita es la cuantización GGUF publicada por AtomicChat, construida a partir de los pesos oficiales de LiquidAI/d1-3B con una importance matrix propia y una estrategia de cuantización dinámica por tensor (Atomic Dynamic) que mantiene la tabla de tokens y las capas de atención en precisión alta. El modelo base tiene 2.697.198.592 parámetros (aproximadamente 2,7 mil millones) y pertenece a la familia LFM2.5 de Liquid AI, con pipeline image-text-to-text.
 
-Además, el repositorio documenta un episodio relevante para quien evalúe el modelo: Liquid AI publicó sus propios GGUF el 6 de octubre y los retiró el 7 de octubre tras actualizar los pesos, y las cuantizaciones de AtomicChat están convertidas desde los pesos actuales. Según sus mediciones, los ficheros de 4 bits de AtomicChat mantienen mejor la calibración de probabilidades que los de Liquid, con un tamaño ligeramente menor.
+Su relevancia práctica está en el nicho de las decisiones rápidas y deterministas: enrutamiento, clasificación, filtrado y control de agentes, donde un modelo generativo completo resulta sobredimensionado y menos fiable. Al publicarse en GGUF con cuantizaciones desde Q8_0 hasta IQ4_XS, cabe en hardware de consumo y puede ejecutarse con llama.cpp en local.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Familia LFM2 de Liquid AI (etiquetada como lfm2.5 en los metadatos del cuantizador y reconocida como `lfm2-d1` en llama.cpp). Detalle interno de capas no disponible |
-| Parametros totales | 2.697.198.592 (~2,7 B), dato de los safetensors del modelo base |
-| Parametros activos | no aplica (modelo denso, no es MoE) |
+| Arquitectura | no disponible (familia LFM2.5 de Liquid AI; transformer, detalles no publicados en la informacion disponible) |
+| Parametros totales | 2.697.198.592 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | BF16, Q8_0, AD-Q6_K, AD-Q5_K_M, AD-Q4_K_M, AD-IQ4_XS (todos GGUF); proyectores de vision `mmproj-d1-3B-BF16` y `mmproj-d1-3B-Q8_0` |
-| Idiomas soportados | no disponible en la ficha del repositorio; el banco de evaluacion del cuantizador usa textos de 30 idiomas y codigo fuente |
-| Licencia | lfm1.0 (Liquid Foundation Model License 1.0), declarada en Hugging Face como `other` con `license_name: lfm1.0` |
-| Formato de pesos | GGUF para llama.cpp; el modelo base se distribuye en safetensors. Tamano total del repositorio: 17,2 GB |
+| Tipos de cuantizacion | BF16, Q8_0, AD-Q6_K, AD-Q5_K_M, AD-Q4_K_M, AD-IQ4_XS (AD = Atomic Dynamic, tipo por tensor); mmproj en BF16 y Q8_0 |
+| Idiomas soportados | no disponible como lista oficial; las evaluaciones cubren 30 idiomas y codigo fuente |
+| Licencia | lfm1.0 (licencia "other" en la model card, con LICENSE incluido) |
+| Formato de pesos | GGUF (llama.cpp); pesos originales en safetensors en LiquidAI/d1-3B |
 
 ## Arquitectura y entrenamiento
 
-El modelo base d1-3B pertenece a la familia LFM2 de Liquid AI, segun los metadatos del propio cuantizador (tags `lfm2.5` y `liquid`) y la denominacion del tipo de modelo en llama.cpp (`lfm2.decision.type = d1`, soportado upstream como `lfm2-d1`). Se trata de un modelo denso de aproximadamente 2,7 B de parametros especializado en decisión: no produce texto token a token, sino que puntua opciones discretas a partir de su distribución interna. La información disponible no detalla el número de capas, la composición exacta del dataset de entrenamiento, ni si se aplicaron etapas de RLHF o DPO.
+La informacion disponible no detalla la arquitectura interna del modelo base. Se sabe que pertenece a la familia LFM2.5 de Liquid AI, que el pipeline es image-text-to-text (incluye un proyector multimodal, publicado como mmproj-d1-3B-BF16 y mmproj-d1-3B-Q8_0) y que el modelo utiliza su tabla de tokens como cabeza de salida, algo que la cuantización de AtomicChat preserva explícitamente al no bajar de Q6_K en ese tensor.
 
-Lo que sí documenta el repositorio es el proceso de cuantización, que constituye la aportación técnica principal de esta ficha. AtomicChat genera los ficheros con una matriz de importancia propia (imatrix) y aplica una política de precisión por tensor llamada Atomic Dynamic: la tabla de tokens, que d1-3B usa también como cabeza de salida, nunca baja de Q6_K; las capas de atención se mantienen en Q8_0 o Q6_K; y `ffn_down` recibe un escalón más de precisión en los cuatro primeros y los cuatro últimos bloques respecto a los bloques centrales. El objetivo es preservar la calibración de las probabilidades de opción, que es precisamente la señal que consume un modelo de decisión.
+El entrenamiento del modelo base no está documentado en la información proporcionada: no se indican número de tokens, composición del dataset ni si hubo RLHF o DPO. La innovación técnica destacable no está en el entrenamiento sino en el modo de inferencia: en lugar de decodificar texto, el modelo evalúa la distribución sobre los tokens de las opciones y devuelve la decisión en un solo paso, lo que elimina la variabilidad de la generación y reduce la latencia. La cuantización de AtomicChat añade una innovación propia: selección de tipo por tensor (atención en Q8_0 o Q6_K, ffn_down de los cuatro primeros y últimos bloques un escalón por encima del resto) con una importance matrix propia.
 
 ## Capacidades
 
-- Decision binaria: responde preguntas de sí/no leyendo la distribución sobre los tokens correspondientes, sin generar texto intermedio.
-- Elección entre opciones nombradas: selecciona una opción de un conjunto definido por el usuario y devuelve su probabilidad.
-- Puntuación: asigna un valor numérico o una puntuación calibrada sobre un estado de entrada.
-- Clasificación: etiquetado de textos dentro de taxonomías predefinidas (tags `classification` y `decision`).
-- Modo "system-one": decisiones en un único forward pass, sin cadena de pensamiento ni decodificación iterativa.
-- Procesamiento de imagen y texto: el pipeline declarado es `image-text-to-text`, con proyectores multimodales `mmproj-d1-3B-BF16` y `mmproj-d1-3B-Q8_0`. El autor advierte que no midió las decisiones sobre imágenes.
-- Compatible con endpoints: el repositorio lleva el tag `endpoints_compatible`.
-- Soporte de tool calling, agentes multi-paso o razonamiento extendido: no descrito en la información disponible para este modelo (su diseño es el opuesto, decisiones de un solo paso).
+- Decisión binaria: responde preguntas de sí/no sobre un estado dado en un único forward pass.
+- Selección entre opciones: elige una entre varias alternativas nombradas.
+- Puntuación: devuelve un score leído de la distribución sobre tokens de puntuación.
+- Entrada multimodal: acepta imagen y texto (pipeline image-text-to-text, con proyector mmproj separado).
+- Multilingüe: las evaluaciones de la cuantización cubren 30 idiomas.
+- Entrada de código fuente como estado, según el conjunto de evaluación usado por AtomicChat.
+- Integración conversacional: etiquetado como decision-model y conversational.
+- No se documenta soporte de tool calling, function calling ni razonamiento multi-paso en la información disponible.
 
 ## Casos de uso
 
-- Enrutamiento en sistemas multiagente: dado el mensaje del usuario, el modelo decide en una sola pasada a qué herramienta o subagente derivarlo. Su latencia de un único forward pass y su salida como opción puntuada lo hacen adecuado para routers que se ejecutan en cada turno de conversación.
-- Barandillas de seguridad y moderación: clasifica si una entrada cumple o no una política concreta (sí/no), con probabilidad asociada, lo que permite fijar umbrales y derivar casos dudosos a revisión humana.
-- Puntuación de relevancia en RAG: evalúa si un fragmento recuperado responde realmente a la consulta y devuelve una puntuación que se puede usar para reordenar o descartar documentos antes de pasarlos a un modelo generativo.
-- Validación de salidas estructuradas: comprobar si el resultado de un LLM generativo satisface una condición declarada, actuando como verificador barato dentro de un pipeline de generación y validación.
-- Clasificación de tickets y correo entrante: asignación de categoría o prioridad sobre textos en varios idiomas, aprovechando que la evaluación del cuantizador cubre 30 idiomas y código fuente (aunque el autor no publica la lista oficial de idiomas soportados).
-- Decisión multimodal con el proyector `mmproj`: cuando se necesita una decisión del tipo "¿esta imagen cumple el criterio X?" sin generar descripción. El autor advierte que no midió la fidelidad de las decisiones sobre imágenes, por lo que requiere validación propia.
-- Control de calidad sobre código: al incluir código fuente en su banco de evaluación, puede emplearse para decidir si un parche o una respuesta de código satisface un criterio binario antes de integrarlo en un pipeline de CI/CD.
-- Despliegue en el borde o en portátil: con ficheros de entre 1,5 y 2,9 GB, cabe en GPUs de consumo y en CPU, lo que permite ejecutar decisiones locales sin enviar datos a un servicio externo.
+- Enrutamiento de consultas en un chatbot: dado el mensaje del usuario, decidir entre opciones nombradas (por ejemplo, soporte técnico, facturación o ventas) en un solo paso, con latencia mínima y sin generación de texto intermedio.
+- Moderación y filtrado de contenido: preguntas de sí/no sobre textos o imágenes para decidir si un contenido requiere revisión, aprovechando que la respuesta es determinista y no depende de la longitud de la generación.
+- Control de agentes: usar el modelo como árbitro que decide si una acción propuesta por un agente cumple una condición, o qué herramienta corresponde a cada paso, en pipelines donde un LLM generativo sería demasiado lento o caro.
+- Clasificación documental a escala: puntuar documentos o correos con un score continuo para priorización, ejecutando la cuantización AD-Q4_K_M (1.658 MB) en CPU o GPU modesta.
+- Verificación de salidas en producción: comprobar con preguntas de sí/no si una respuesta generada por otro modelo satisface criterios definidos, como capa de control de calidad en un pipeline de CI.
+- Análisis de imágenes con decisión tipada: con el proyector mmproj, responder preguntas de sí/no o de elección sobre imágenes, por ejemplo para triaje visual; AtomicChat advierte que no midió las decisiones sobre imágenes.
+- Evaluación de código en integración continua: clasificar fragmentos de código fuente (el conjunto de evaluación incluye código) según criterios binarios o de elección, como parte de un pipeline de revisión automatizada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Lo que sí publica AtomicChat es una evaluación de fidelidad de la cuantización frente a los pesos BF16, medida sobre 1.285 decisiones (preguntas de sí/no, de elección y de puntuación, sobre textos reservados en 30 idiomas y código fuente).
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card sí publica métricas de fidelidad de la cuantización frente a los pesos BF16 originales, medidas en un NVIDIA A10 con llama.cpp `88dcc46` sobre 1.285 decisiones (preguntas de sí/no, elección y puntuación sobre textos reservados en 30 idiomas y código fuente):
 
-| Fichero | Tamano en disco | Misma respuesta que BF16 | Deriva de opciones | KLD | top-1 |
+| Fichero | Tamano | Misma respuesta | Deriva de opciones | KLD | Top-1 |
 |---|---:|---:|---:|---:|---:|
-| `BF16` | 5.403 MB | referencia | 0 | 0 | 100% |
-| `Q8_0` | 2.875 MB | 99,3% (9) | 0,0033 | 0,0010 | 98,28% |
-| `AD-Q6_K` | 2.348 MB | 99,1% (11) | 0,0053 | 0,0022 | 97,41% |
-| `AD-Q5_K_M` | 1.953 MB | 98,1% (25) | 0,0112 | 0,0080 | 95,09% |
-| `AD-Q4_K_M` | 1.658 MB | 97,1% (37) | 0,0178 | 0,0244 | 91,54% |
-| `AD-IQ4_XS` | 1.570 MB | 95,6% (57) | 0,0203 | 0,0283 | 90,92% |
+| BF16 | 5.403 MB | referencia | 0 | 0 | 100% |
+| Q8_0 | 2.875 MB | 99,3% (9) | 0,0033 | 0,0010 | 98,28% |
+| AD-Q6_K | 2.348 MB | 99,1% (11) | 0,0053 | 0,0022 | 97,41% |
+| AD-Q5_K_M | 1.953 MB | 98,1% (25) | 0,0112 | 0,0080 | 95,09% |
+| AD-Q4_K_M | 1.658 MB | 97,1% (37) | 0,0178 | 0,0244 | 91,54% |
+| AD-IQ4_XS | 1.570 MB | 95,6% (57) | 0,0203 | 0,0283 | 90,92% |
 
-El número entre paréntesis es el recuento de respuestas que cambian respecto a BF16. La columna "deriva de opciones" es la distancia de variación total media entre las probabilidades de opción del fichero y las del original.
+Comparación con otras cuantizaciones del mismo modelo base, en una ejecución separada:
 
-Comparación con los GGUF que Liquid AI publicó el 6 de octubre y retiró el 7 de octubre (medidos por AtomicChat el mismo 7 de octubre, antes de la retirada, contra la misma referencia BF16):
-
-| Fichero | Tamano | Misma respuesta | Deriva de opciones | KLD | top-1 |
-|---|---:|---:|---:|---:|---:|
-| Liquid `BF16` | 5.403 MB | 96,7% (43) | 0,0331 | 0,0212 | 92,40% |
-| Liquid `Q8_0` | 2.875 MB | 97,0% (39) | 0,0334 | 0,0219 | 92,25% |
-| AtomicChat `AD-Q4_K_M` | 1.658 MB | 97,1% (37) | 0,0178 | 0,0244 | 91,54% |
-| Liquid `Q4_K_M` | 1.674 MB | 94,9% (66) | 0,0387 | 0,0568 | 87,32% |
-
-Aislando el efecto de la cuantización (cada fichero comparado contra su propia base BF16), AtomicChat reporta 37 respuestas cambiadas y una KL de opción de 0,0024 para su `AD-Q4_K_M`, frente a 37 respuestas y 0,0044 de KL para el `Q4_K_M` de Liquid. Es decir, mismo número de respuestas alteradas pero menor desplazamiento de las probabilidades, con un fichero ligeramente más pequeño.
+| Fichero | Tamano | Misma respuesta | Deriva de opciones | KL de opciones | KLD | Top-1 |
+|---|---:|---:|---:|---:|---:|---:|
+| AtomicChat Q8_0 | 2.875 MB | 99,2% (10) | 0,0034 | 0,0001 | 0,0009 | 98,30% |
+| Liquid Q8_0 | 2.875 MB | 99,4% (8) | 0,0034 | 0,0001 | 0,0009 | 98,30% |
+| AtomicChat AD-Q6_K | 2.348 MB | 99,3% (9) | 0,0054 | 0,0002 | 0,0022 | 97,41% |
+| prithivMLmods Q6_K | 2.222 MB | 98,7% (17) | 0,0077 | 0,0004 | 0,0041 | 96,34% |
+| AtomicChat AD-Q5_K_M | 1.953 MB | 97,7% (29) | 0,0112 | 0,0009 | 0,0081 | 95,11% |
+| prithivMLmods Q5_K_M | 1.940 MB | 97,7% (29) | 0,0138 | 0,0014 | 0,0121 | 93,89% |
+| AtomicChat AD-Q4_K_M | 1.658 MB | 97,0% (38) | 0,0174 | 0,0023 | 0,0243 | 91,55% |
+| Liquid Q4_K_M | 1.674 MB | 95,7% (55) | 0,0270 | 0,0053 | 0,0392 | 89,42% |
+| prithivMLmods Q4_K_M | 1.674 MB | 95,9% (53) | 0,0272 | 0,0053 | 0,0389 | 89,44% |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (tamaño del fichero más sobrecarga de contexto y caché KV, que no está documentada): BF16 en torno a 6-7 GB; Q8_0 en torno a 3,5-4 GB; AD-Q6_K en torno a 3 GB; AD-Q5_K_M en torno a 2,5 GB; AD-Q4_K_M en torno a 2-2,5 GB; AD-IQ4_XS en torno a 2 GB.
-- El modelo completo, con 2,7 B de parámetros, cabe holgadamente en cualquier GPU de consumo actual (RTX 3060 12 GB, RTX 4060, RTX 4090, etc.) incluso en BF16, y en la mayoría de iGPUs y CPU en cuantizaciones de 4 bits.
-- Para uso multimodal hay que sumar el proyector `mmproj` (`mmproj-d1-3B-BF16` o `mmproj-d1-3B-Q8_0`), cuyo tamaño no se detalla en la información disponible.
-- Opciones de despliegue: llama.cpp es el runtime de referencia, dado que el repositorio es GGUF y el autor publica ficheros adaptados a los presets de ese proyecto. No se mencionan vLLM, TGI u Ollama en la información disponible; la compatibilidad con LM Studio u otros frontales GGUF no se confirma.
-- Latencia y throughput: no disponibles. Al tratarse de un modelo de decisión de un solo forward pass y no de generación autoregresiva, la latencia esperada es sensiblemente inferior a la de un modelo generativo del mismo tamaño, pero no se publican medidas.
-- Nota crítica de compatibilidad: los GGUF publicados por Liquid AI no cargaban en llama.cpp estándar porque incluían `lfm2.decision.type = d1`, desconocido en ese momento (commit `18b5f8b`, error `unsupported decision model type: d1`). El soporte upstream llega con el PR ggml-org/llama.cpp#30110, que añade d1-3B bajo el tipo `lfm2-d1`. Conviene verificar que la versión de llama.cpp instalada incluye ese soporte antes de desplegar.
+- VRAM estimada para inferencia: entre aproximadamente 1,6 GB (AD-Q4_K_M) y 2,9 GB (Q8_0) para los pesos; hay que sumar el proyector mmproj si se usa entrada de imagen y el espacio de contexto en KV cache.
+- GPU recomendadas: cualquier GPU con 4-6 GB de VRAM es suficiente para las cuantizaciones de 4 a 6 bits; las mediciones de AtomicChat se realizaron en una NVIDIA A10.
+- Cabe en GPU de consumo: sí, en tarjetas con 6 GB o más (por ejemplo, RTX 3060, RTX 4060, RTX 4090); las cuantizaciones de 4 bits también permiten ejecución en CPU.
+- Opciones de despliegue: llama.cpp (requiere un build con el PR #30110, commit `88dcc46` o posterior), Atomic Chat como aplicación local; no se documenta soporte de vLLM, TGI ni Ollama en la información disponible.
+- Latencia y throughput: no disponibles de forma numérica; al resolver cada decisión en un único forward pass, la latencia es sustancialmente menor que la de un modelo generativo de tamaño comparable, pero no se publican cifras.
 
 ## Comparativa con modelos similares
 
-En la información proporcionada no aparecen otros modelos de decisión comparables de terceros (pesos, contexto, licencia o rendimiento), por lo que la comparativa se limita a las variantes del propio d1-3B.
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| AtomicChat/d1-3B-GGUF (este) | 2,70 B | no disponible | Decision tipada, GGUF con cuantizacion dinamica | lfm1.0 | Hugging Face, llama.cpp |
+| LiquidAI/d1-3B-GGUF | 2,70 B (mismo base) | no disponible | Decision tipada, presets estandar de llama.cpp | lfm1.0 | Hugging Face |
+| prithivMLmods/d1-3B-GGUF | 2,70 B (mismo base) | no disponible | Decision tipada, presets stock de llama.cpp | lfm1.0 | Hugging Face |
+| LiquidAI/d1-3B | 2,70 B | no disponible | Pesos originales BF16 | lfm1.0 | Hugging Face |
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad | Fidelidad (misma respuesta que la referencia BF16 actual) |
-|---|---|---|---|---|---|---|
-| LiquidAI/d1-3B (base) | ~2,7 B | no disponible | safetensors | lfm1.0 | publicado | referencia |
-| AtomicChat `AD-Q4_K_M` (este repo) | ~2,7 B | no disponible | GGUF | lfm1.0 | publicado | 97,1% (37 respuestas cambiadas) |
-| Liquid `Q4_K_M` (retirado) | ~2,7 B | no disponible | GGUF | lfm1.0 | retirado el 7 de octubre, construido sobre pesos antiguos | 94,9% (66 respuestas cambiadas) |
-| Otros modelos de decision de 3 B | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
+Las tres cuantizaciones comparten modelo base y licencia; la diferencia medible está en la fidelidad frente a BF16, donde AtomicChat AD-Q4_K_M conserva más respuestas (38 cambios frente a 55 y 53 de las versiones stock) con un tamaño ligeramente menor. No se dispone de comparación con modelos de decisión de otros fabricantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo no genera texto: solo devuelve una decisión o una puntuación entre opciones predefinidas. No debe usarse como chatbot ni para redacción libre.
-- El riesgo de alucinación en el sentido clásico es bajo, porque la respuesta se lee de un conjunto cerrado de tokens, pero sí existe riesgo de calibración incorrecta: una probabilidad alta no garantiza que la decisión sea correcta. El autor publica la deriva de probabilidades frente a BF16 precisamente porque esa calibración es la señal de uso.
-- El fabricante no midió las decisiones sobre imágenes. El pipeline `image-text-to-text` y los proyectores `mmproj` están disponibles, pero su fidelidad en tareas de decisión multimodales no está validada.
-- Lista oficial de idiomas soportados no disponible. El banco de evaluación cubre 30 idiomas y código fuente, pero eso es la composición de un conjunto de prueba, no una garantía de cobertura.
-- Licencia lfm1.0 (Liquid Foundation Model License 1.0), declarada como `other` en Hugging Face. Conviene revisar el texto completo de la licencia antes de cualquier uso comercial, ya que las condiciones de la familia LFM no son equivalentes a las de una licencia Apache o MIT.
-- Dependencia del soporte de llama.cpp: hasta que el PR ggml-org/llama.cpp#30110 esté integrado en una versión estable, los ficheros pueden no cargar en binarios antiguos.
-- Los GGUF de Liquid AI para este modelo fueron retirados; si se conserva una copia antigua, procede de una versión previa de los pesos y no es comparable con la actual. Cada capa lineal difiere en un 2-3% relativo respecto a `model.safetensors` actual.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: no existe validación de la comunidad sobre estos ficheros más allá de las métricas publicadas por el propio autor en el repositorio de métricas.
-- Longitud de contexto no documentada: no se puede asumir una ventana concreta para concatenar estados largos.
+- El modelo está diseñado para decisiones tipadas, no para generación libre de texto; usarlo como LLM conversacional general no es su propósito.
+- Riesgo de alucinación: menor que en modelos generativos al leer la respuesta de una distribución cerrada, pero las probabilidades pueden estar mal calibradas en dominios fuera de la distribución de entrenamiento.
+- La cuantización introduce desviaciones medibles: incluso AD-Q4_K_M cambia el 2,9% de las respuestas frente a BF16 (37 de 1.285), lo que puede ser inaceptable en decisiones críticas.
+- AtomicChat no midió las decisiones sobre imágenes; el rendimiento multimodal con los proyectores mmproj no está validado.
+- La lista oficial de idiomas soportados no está publicada; solo se sabe que la evaluación cubre 30 idiomas.
+- Licencia lfm1.0: es una licencia "other" con términos propios; es imprescindible revisar el archivo LICENSE antes de un uso comercial.
+- La model card advierte de que las primeras GGUF de Liquid (6 de octubre) se construyeron sobre pesos anteriores, reemplazados el 7 de octubre; conviene verificar la fecha del fichero descargado.
+- Requiere un build reciente de llama.cpp (PR #30110); versiones anteriores pueden no cargar el modelo correctamente.
+- No se documentan salvaguardas, filtros de seguridad ni evaluaciones de sesgo en la información disponible.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/AtomicChat/d1-3B-GGUF
-- Modelo base: https://huggingface.co/LiquidAI/d1-3B
-- Repositorio de metricas y logs del cuantizador: https://huggingface.co/datasets/AtomicChat/d1-3B-GGUF-metrics
-- Discusion sobre los nuevos pesos del modelo base (PR #4): https://huggingface.co/LiquidAI/d1-3B/discussions/4
-- PR de soporte upstream en llama.cpp: https://github.com/ggml-org/llama.cpp/pull/30110
-- Repositorio Atomic Chat en GitHub: https://github.com/AtomicBot-ai/Atomic-Chat
-- Sitio de Atomic Chat: https://atomic.chat/
-- Discord de Atomic Chat: https://discord.gg/8wGSsvmg4V
+- [AtomicChat/d1-3B-GGUF en Hugging Face](https://huggingface.co/AtomicChat/d1-3B-GGUF)
+- [Modelo base LiquidAI/d1-3B](https://huggingface.co/LiquidAI/d1-3B)
+- [GGUF oficiales de Liquid AI](https://huggingface.co/LiquidAI/d1-3B-GGUF)
+- [Cuantizaciones de prithivMLmods](https://huggingface.co/prithivMLmods/d1-3B-GGUF)
+- [Repositorio de metricas de AtomicChat](https://huggingface.co/datasets/AtomicChat/d1-3B-GGUF-metrics)
+- [Atomic Chat](https://atomic.chat/)
+- [Repositorio Atomic-Chat en GitHub](https://github.com/AtomicBot-ai/Atomic-Chat)
+- [Discord de AtomicChat](https://discord.gg/8wGSsvmg4V)
+- [Cuenta de X de AtomicChat](https://x.com/atomic_chat_hq)

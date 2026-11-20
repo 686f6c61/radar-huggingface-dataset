@@ -2,123 +2,99 @@
 
 ## Resumen
 
-Swift-Qwen3.8-27B-NVFP4 es un checkpoint cuantizado en NVFP4 (W4A4) del modelo Swift-Qwen3.8-27B, desarrollado por UkisAI. Swift es una variante de Qwen3.8-27B orientada a razonamiento "eficiente en tokens", y esta publicacion convierte sus pesos y activaciones a coma flotante de 4 bits con escalas por grupo de 16 en el formato `compressed-tensors`, lista para servirse con vLLM sobre GPUs NVIDIA Blackwell. El resultado es un checkpoint de 28,6 GB en disco frente a los 55,6 GB del original en BF16, con unos 29 GB de pesos en memoria de GPU.
+Swift-Qwen3.8-27B-NVFP4 es una cuantizacion de precision mixta NVFP4/FP8 del modelo Swift-Qwen3.8-27B, desarrollado por UkisAI como derivado de Qwen3.8-27B orientado a razonamiento eficiente en tokens. El checkpoint se ha generado directamente desde los pesos originales en BF16 usando NVIDIA Model Optimizer (ModelOpt), siguiendo el mapeo de precision verificado de la version oficial de NVIDIA para el mismo modelo base. La arquitectura, los componentes de vision, el tokenizer y los pesos MTP en BF16 se conservan intactos.
 
-El interes practico del modelo esta en la combinacion de tres factores: cuantizacion FP4 real (no solo de pesos) validada sobre tensor cores Blackwell, arquitectura hibrida con 48 capas de atencion lineal Gated DeltaNet, y una cabeza MTP (multi-token prediction) incluida en BF16 que habilita decodificacion especulativa autoservida sin modelo borrador externo. La ventana de contexto usada en el ejemplo oficial de despliegue es de 262.144 tokens, lo que lo situa en el rango de modelos de contexto largo para tareas de documentos y agentes.
+El modelo es multimodal (pipeline image-text-to-text) y esta pensado para servir con vLLM sobre hardware Hopper. Su propuesta principal es reducir el coste de memoria de pesos y el gasto de tokens de razonamiento sin degradar la calidad, manteniendo el KV cache sin cuantizar. Segun los datos reales de safetensors, el checkpoint contiene 18.164.649.200 parametros, con un tamano de repositorio de 74,2 GB y un checkpoint cuantizado de aproximadamente 21,945 GB.
 
-Se distribuye con acceso restringido ("gated") bajo la Swift Open License v1.0: uso personal, de investigacion, educativo, de evaluacion y comercial gratuito para individuos y organizaciones con ingresos recurrentes anuales de hasta 1.000.000 USD; por encima de ese umbral se requiere una licencia empresarial separada. El checkpoint se publico en septiembre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 1 "like".
+Es relevante ahora porque combina tres tendencias: cuantizacion de bajo nivel (FP4 con bloques de 16), optimizacion del presupuesto de tokens en modelos de razonamiento y despliegue multimodal en infraestructura Hopper con vLLM. La licencia es propietaria (swift-open-license-1.0) y el repositorio esta sujeto a gating.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer hibrido con atencion lineal Gated DeltaNet (48 capas) y capas de atencion completa; cabeza MTP para decodificacion especulativa; torre de vision para entrada de imagen |
-| Parametros totales | 27.781.427.952 (~27,8 B) |
-| Parametros activos | No aplica: la informacion disponible no indica que sea un modelo MoE |
-| Longitud de contexto | 262.144 tokens (valor empleado en el ejemplo oficial de vLLM con `--max-model-len 262144`; el autor no documenta el maximo nativo) |
-| Tipos de cuantizacion | NVFP4 (W4A4, grupo de 16) en este repo; el modelo base se distribuye tambien en BF16 y en GGUF |
-| Idiomas soportados | No disponible (la model card no especifica idiomas) |
-| Licencia | Swift Open License v1.0 (`license: other`), con acceso restringido; uso comercial gratuito hasta 1.000.000 USD de ingresos recurrentes anuales |
-| Formato de pesos | `safetensors` con `compressed-tensors`, esquema `nvfp4-pack-quantized` (W4A4, group size 16); biblioteca declarada: vLLM |
-| Tamano en disco | 28,6 GB (original BF16: 55,6 GB) |
-| Capas cuantizadas | Todas las `Linear` de atencion y MLP del modelo de lenguaje |
-| Capas mantenidas en BF16 | `lm_head`, embeddings, torre de vision, las 48 capas Gated DeltaNet y la cabeza MTP |
-| Calibracion | 256 muestras x 4096 tokens del dataset `perfectblend` |
-| Herramienta de cuantizacion | `llm-compressor` con `QuantizationModifier(scheme="NVFP4")` |
-| Modalidad | Image-text-to-text (entrada de imagen y texto) |
+| Arquitectura | Transformer hibrido con 48 capas Gated DeltaNet y atencion completa; componentes de vision y MTP (multi-token prediction) |
+| Parametros totales | 18.164.649.200 (segun safetensors) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | NVFP4 (block size 16), FP8 E4M3, BF16 para embeddings, norms, convoluciones, vision y MTP |
+| Idiomas soportados | no disponible |
+| Licencia | swift-open-license-1.0 (other, gated) |
+| Formato de pesos | safetensors (NVIDIA ModelOpt mixed precision), libreria vLLM |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer hibrido: combina capas de atencion completa con 48 capas de atencion lineal Gated DeltaNet. Las proyecciones de estas capas de atencion lineal se dejan sin cuantizar en este checkpoint porque su disposicion fusionada es incompatible con NVFP4, lo que segun el autor coincide con el layout de los checkpoints NVFP4 propios de NVIDIA para Qwen3.5. El modelo incorpora ademas una cabeza MTP (multi-token prediction) que se conserva en BF16 y permite activar decodificacion autoespeculativa con `--speculative-config '{"method":"mtp","num_speculative_tokens":3}'`.
+La arquitectura combina 48 capas Gated DeltaNet (un mecanismo de estado recurrente lineal) con capas de atencion completa. El checkpoint mantiene 144 proyecciones grandes de DeltaNet (`in_proj_qkv`, `in_proj_z`, `out_proj`) en FP8 E4M3, 64 proyecciones de atencion completa (`q_proj`, `k_proj`, `v_proj`, `o_proj`) tambien en FP8 E4M3, y 192 proyecciones MLP (`gate_proj`, `up_proj`, `down_proj`) mas `lm_head` en NVFP4 con bloque de 16. Embeddings, norms, proyecciones pequenas de DeltaNet, convoluciones, vision y los 15 tensores MTP se conservan en BF16. El KV cache no se ha cuantizado.
 
-Sobre el entrenamiento, la model card no detalla el numero de tokens, la composicion del dataset ni si hubo fases de RLHF o DPO para el modelo base Swift-Qwen3.8-27B. Lo unico documentado es que NVIDIA Innovation Lab proporciono 8 GPUs H100 para entrenar Swift, y que la calibracion de esta cuantizacion uso 256 muestras de 4096 tokens extraidas de `perfectblend`. La innovacion tecnica destacable de este checkpoint no es el entrenamiento, sino la cuantizacion: cuantizacion FP4 de pesos y activaciones, verificada ejecutando el kernel `FlashInferCutlassNvFp4LinearKernel` sobre tensor cores Blackwell en lugar de una ruta de dequantizacion solo de pesos.
+La calibracion se realizo con 2.048 ejemplos de la coleccion Nemotron post-training v3 de NVIDIA (siete fuentes), con maximo de 4.096 tokens, semilla 42 y 6.459.330 tokens efectivos. Se usaron dos pasadas completas de calibracion y los 193 modulos NVFP4 obtuvieron cobertura Local-Hessian; las proyecciones FP8 usan calibracion max. Los 798 tensores BF16 retenidos, incluidos los 15 de MTP, se verificaron byte a byte contra el modelo fuente. La innovacion principal del modelo base es el "efficient-thinking": razonamiento con presupuesto de tokens reducido, medido en la model card con benchmarks como LiveCodeBench v6.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento multi-paso, con parser de razonamiento especifico (`--reasoning-parser qwen3`) que separa el bloque de pensamiento de la respuesta final.
-- Razonamiento eficiente en tokens: la familia Swift esta etiquetada como `efficient-thinking` y `token-efficient`, con una media de 344-391 tokens de completado en las pruebas publicadas.
-- Matematicas: 98,0 % de exact match en las primeras 200 preguntas del test de GSM8K en la version BF16 y 96,5 % en esta version NVFP4.
-- Tool calling / function calling: soportado mediante `--enable-auto-tool-choice` con el parser `qwen3_coder`.
-- Capacidades de agente: la combinacion de tool calling, contexto largo (262.144 tokens en la configuracion de referencia) y razonamiento multi-paso lo hace apto para flujos de varios turnos con llamadas a herramientas.
-- Vision (image-text-to-text): la torre de vision se mantiene en BF16, de modo que acepta entradas de imagen ademas de texto.
-- Decodificacion especulativa con MTP: aceptacion de tokens borrador del 61 % en la medicion publicada, con 3 tokens especulativos.
-- Capacidades multilingues: no disponible; la model card no enumera idiomas soportados.
+- Generacion de texto y razonamiento con modo de pensamiento eficiente en tokens (efficient-thinking).
+- Razonamiento multi-paso y resolucion de problemas de codigo (la demo de la model card usa un prompt de LiveCodeBench v6).
+- Procesamiento de imagen y texto (pipeline image-text-to-text), con componentes de vision preservados en BF16.
+- Prediccion multi-token (MTP) para decodificacion especulativa, con los 15 tensores MTP en BF16.
+- Conversacion multi-turno (tag conversational).
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Capacidades de agente: no disponible en la informacion proporcionada.
+- Cobertura multilingue: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Atencion al cliente automatizada: con 262.144 tokens de contexto configurados y razonamiento multi-turno, el modelo puede mantener el historial completo de una conversacion larga o de un caso con muchos anexos sin truncar, y usar tool calling para consultar sistemas internos de tickets o pedidos.
-- Generacion de codigo en produccion: el parser de tool calling `qwen3_coder` permite integrarlo en pipelines que necesitan invocar funciones, ejecutar comandos o consultar repositorios; la cuantizacion FP4 reduce el coste por token servido cuando se despliega sobre Blackwell.
-- Analisis de documentos extensos: contratos, informes tecnicos o expedientes que superan las decenas de miles de tokens caben en la ventana de contexto, con la ventaja de que la atencion lineal Gated DeltaNet reduce el coste asociado a secuencias muy largas.
-- Procesamiento de documentos escaneados y capturas: al ser un modelo image-text-to-text, puede extraer y razonar sobre informacion contenida en imagenes (formularios, facturas, diagramas) junto al texto de acompanamiento.
-- Agentes de automatizacion multi-paso: para tareas que requieren planificar, llamar a varias herramientas y verificar resultados, el modo de razonamiento con parser dedicado y el tool calling permiten separar el proceso de pensamiento de las acciones ejecutadas.
-- Servicio de inferencia de alto rendimiento en la nube: con 85 tokens/s por peticion y 8 peticiones concurrentes sobre una RTX PRO 6000 Blackwell, es adecuado para endpoints internos con trafico moderado donde el ahorro de VRAM (29 GB frente a 54 GB) permite liberar capacidad para KV cache.
-- Evaluacion e investigacion: el autor ofrece una API compatible con OpenAI en `https://ukisai.com/api/swift/v1` (modelo `swift`), gratuita para investigacion y sin clave de API, util para comparativas y prototipado rapido.
-- Razonamiento matematico asistido eneducacion o analisis financiero: el 96,5-98,0 % de acierto en GSM8K lo hace util para resolver y explicar problemas aritmeticos paso a paso con trazabilidad del razonamiento.
+- Razonamiento sobre codigo en produccion: el modelo esta evaluado con prompts de LiveCodeBench v6 y su modo efficient-thinking reduce el gasto de tokens por respuesta, lo que abarata el coste por consulta en asistentes de programacion.
+- Despliegue de razonamiento a gran escala en Hopper: al ocupar aproximadamente 21,945 GB de pesos en lugar de los 74,2 GB del repositorio completo, libera memoria para un KV cache mayor y permite servir mas concurrencia por GPU H100.
+- Analisis de documentos con imagenes: el pipeline image-text-to-text permite extraer y razonar sobre diagramas, capturas o figuras junto con el texto asociado, manteniendo la torre de vision en BF16.
+- Inferencia de baja latencia con vLLM: la integracion nativa con vLLM y la decodificacion especulativa via MTP reducen el tiempo por token en cargas interactivas.
+- Generacion aumentada por recuperacion con contexto largo: las 48 capas DeltaNet de estado lineal abaratan el coste de secuencias largas frente a un transformer de atencion densa equivalente.
+- Evaluacion comparativa de cuantizacion: sirve como referencia para medir la perdida de calidad de NVFP4/FP8 frente al BF16 original en tareas de razonamiento y codigo.
+- Prototipado de asistentes multimodales en infraestructura NVIDIA: el formato ModelOpt mixed precision encaja en pipelines que ya usan TensorRT-LLM o vLLM sobre Hopper.
 
 ## Benchmarks y rendimiento
 
-Medicion publicada por el autor en una unica NVIDIA RTX PRO 6000 Blackwell (96 GB, SM120) con vLLM 0.29.0, mismas flags de servidor, decodificacion especulativa MTP con 3 tokens borrador, 8 peticiones concurrentes, esfuerzo de razonamiento por defecto de la plantilla, temperatura 1,0 / top_p 0,95 / top_k 20 / min_p 0 y limite de salida de 8192 tokens.
+La model card incluye una tabla de benchmarks con puntuaciones, tokens y medianas para comparar el modelo base Swift frente a alternativas, con resultados medidos sobre LiveCodeBench v6 y otras pruebas. Sin embargo, los valores numericos concretos no estan disponibles en la informacion proporcionada, por lo que no se reproducen aqui.
 
-| Metrica | BF16 (modelo base) | NVFP4 (este repo) |
-|---|---|---|
-| GSM8K test, primeras 200 preguntas, exact match | 98,0 % | 96,5 % |
-| Resultado pareado (ambos correctos / solo BF16 / solo NVFP4) | 192 / 4 / 1 | 192 / 4 / 1 |
-| Truncados a 8192 tokens | 1 | 0 |
-| Media de tokens de completado | 344 | 391 |
-| Mediana de tokens/s por peticion (8 concurrentes) | 54 | 85 |
-| Aceptacion de tokens borrador MTP | 62 % | 61 % |
-| Pesos en disco | 55,6 GB | 28,6 GB |
-| Pesos en memoria de GPU (vLLM) | ~54 GB | ~29 GB |
-
-El propio autor senala que la diferencia de precision esta dentro del ruido de muestreo con este tamano de muestra (4 frente a 1 preguntas discordantes, no significativa) y que se anadiran ejecuciones de benchmark mas amplias cuando esten disponibles. No hay datos publicados de MMLU, HumanEval ni otros benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible con cifras verificables.
 
 ## Requisitos de hardware
 
-- Tensor cores Blackwell obligatorios para obtener ventaja: SM100 y posteriores (B200, B300, GB200, RTX PRO 6000 Blackwell). En Hopper y GPUs anteriores vLLM cae a una ruta de dequantizacion solo de pesos sin aceleracion, por lo que el autor recomienda usar alli el modelo BF16 o la version GGUF.
-- VRAM estimada para inferencia: aproximadamente 29 GB solo para los pesos en vLLM, mas la memoria de KV cache y activaciones. El modelo BF16 equivalente ocupa unos 54 GB de pesos.
-- GPUs recomendadas por el autor: RTX PRO 6000 Blackwell (96 GB, SM120, usada en las pruebas), B200, B300 y GB200.
-- GPU de consumo: no confirmado. La model card solo valida la RTX PRO 6000 Blackwell y las plataformas de centro de datos; no menciona ninguna GPU de consumo. Tecnicamente NVFP4 requiere SM100 o superior, familia a la que pertenecen tambien las GeForce RTX 50 (SM120), pero el ajuste de 29 GB de pesos mas KV cache y el soporte efectivo en vLLM no estan documentados por el autor.
-- Opciones de despliegue: vLLM (recomendado, con `--reasoning-parser qwen3`, `--enable-auto-tool-choice`, `--tool-call-parser qwen3_coder` y, opcionalmente, `--speculative-config '{"method":"mtp","num_speculative_tokens":3}'`). Para hardware no Blackwell, el autor remite a la version GGUF (compatible con llama.cpp / Ollama) o al modelo BF16.
-- Paralelismo: `--tensor-parallel-size 1` en el ejemplo oficial; el autor indica que se ajuste el paralelismo y la longitud de contexto a la memoria disponible.
-- Latencia y throughput: mediana de 85 tokens/s por peticion con 8 peticiones concurrentes en una RTX PRO 6000 Blackwell (96 GB), frente a 54 tokens/s de la version BF16 en las mismas condiciones. No se publican datos de latencia (TTFT) ni de rendimiento agregado total.
-- API alojada: `https://ukisai.com/api/swift/v1`, compatible con OpenAI, modelo `swift`, gratuita para investigacion y sin clave.
+- VRAM estimada para inferencia: aproximadamente 21,945 GB solo para pesos del checkpoint cuantizado; hay que sumar el KV cache (no cuantizado) y las activaciones.
+- GPU recomendadas: NVIDIA H100 (Hopper), requisito implicito por el uso de NVFP4 y ModelOpt; el tag `hopper` confirma esta orientacion.
+- GPU consumer: no se indica compatibilidad con GPUs consumer; NVFP4 requiere soporte de hardware Hopper o posterior.
+- Opciones de despliegue: vLLM (libreria declarada), con formato ModelOpt mixed precision; TensorRT-LLM no se menciona explicitamente.
+- Latencia y throughput: no disponible en la informacion proporcionada; la model card incluye un video de demostracion de velocidad pero sin cifras en el texto.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Rendimiento publicado | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Swift-Qwen3.8-27B-NVFP4 (este repo) | 27,8 B | 262.144 tokens en la config. de referencia | NVFP4 W4A4, grupo 16 | GSM8K 96,5 %; 85 tok/s por peticion con 8 concurrentes | Swift Open License v1.0 (gated) | Hugging Face, acceso restringido |
-| Swift-Qwen3.8-27B (BF16) | 27,8 B | No disponible en la informacion | BF16 | GSM8K 98,0 %; 54 tok/s por peticion con 8 concurrentes; 55,6 GB en disco | Swift Open License v1.0 (gated) | Hugging Face, acceso restringido |
-| Swift-Qwen3.8-27B-GGUF | 27,8 B (base) | No disponible en la informacion | GGUF (niveles no especificados) | No disponible | Swift Open License v1.0 (gated) | Hugging Face, acceso restringido |
-| Checkpoints NVFP4 de NVIDIA para Qwen3.5 | No disponible | No disponible | NVFP4 | No disponible | No disponible | Mencionados como referencia de layout por el autor |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Swift-Qwen3.8-27B-NVFP4 | 18.164.649.200 | no disponible | NVFP4/FP8/BF16 mixta | swift-open-license-1.0 (gated) | Hugging Face, vLLM |
+| Swift-Qwen3.8-27b (BF16) | no disponible | no disponible | BF16 | swift-open-license-1.0 | Hugging Face |
+| Swift-Qwen3.8-27B-GGUF | no disponible | no disponible | GGUF | swift-open-license-1.0 | Hugging Face |
+| NVIDIA Qwen3.8-27B-NVFP4 | no disponible | no disponible | NVFP4/FP8 | no disponible | Hugging Face |
 
-No se dispone de datos sobre otros modelos comparables de la misma categoria en la informacion proporcionada, mas alla del propio modelo base y de la mencion a los checkpoints NVFP4 de NVIDIA para Qwen3.5.
+Los datos de rendimiento comparado no estan disponibles en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Dependencia de hardware: sin tensor cores Blackwell (SM100+) no hay aceleracion. En Hopper o anteriores, vLLM aplica dequantizacion solo de pesos y el checkpoint pierde su ventaja principal; el autor recomienda explicitamente usar BF16 o GGUF en ese caso.
-- Cobertura de cuantizacion parcial: `lm_head`, embeddings, la torre de vision, las 48 capas Gated DeltaNet y la cabeza MTP permanecen en BF16, de modo que la reduccion de memoria no es proporcional en todas las partes del modelo.
-- Licencia restrictiva para grandes empresas: el uso comercial es gratuito solo hasta 1.000.000 USD de ingresos recurrentes anuales agregados (incluidas filiales); por encima se requiere la Swift Enterprise License. No es una licencia open source tipo Apache o MIT.
-- Acceso restringido: el repositorio esta marcado como `gated: true`, por lo que es necesario aceptar las condiciones del autor para descargar los pesos.
-- Evidencia de evaluacion limitada: los unicos resultados publicados son 200 preguntas de GSM8K en una sola GPU. No hay MMLU, HumanEval, benchmarks multimodales ni evaluaciones multilingues. El propio autor reconoce que la diferencia de precision frente a BF16 no es estadisticamente significativa con esa muestra.
-- Mayor verbosidad en la version cuantizada: 391 tokens de completado de media frente a 344 en BF16, un incremento de aproximadamente el 13,7 % que reduce parte del ahorro de coste por token.
-- Riesgo de alucinacion: no se documentan tasas de alucinacion ni evaluaciones de fidelidad; como cualquier modelo generativo, puede producir afirmaciones plausibles pero incorrectas, especialmente en dominios fuera de su distribucion de entrenamiento.
-- Idiomas y sesgos: la model card no especifica idiomas soportados, cobertura linguistica ni evaluaciones de sesgo. No hay informacion sobre el tratamiento de sesgos demograficos, culturales o de dominio.
-- Herencia del modelo base: al ser una derivacion de Qwen3.8-27B, arrastra las limitaciones, sesgos y caracteristicas de licencia de la cadena upstream, que no se detallan en la informacion disponible.
-- Contexto en produccion: los 262.144 tokens del ejemplo son un ajuste de servidor; la ventana realmente utilizable dependera de la VRAM libre para KV cache una vez cargados los ~29 GB de pesos.
-- Madurez: el modelo se publico en septiembre de 2026 y no tiene descargas registradas ni un historial de uso en produccion documentado; conviene validarlo en el caso de uso concreto antes de desplegarlo.
+- Licencia propietaria: swift-open-license-1.0 con acceso gated; el uso comercial requiere revisar los terminos y posiblemente licencia enterprise segun la propia model card.
+- Cuantizacion agresiva: NVFP4 en las proyecciones MLP y `lm_head` puede introducir degradacion en tareas sensibles a la precision numerica; no se aportan metricas de perdida frente al BF16.
+- KV cache sin cuantizar: el ahorro de memoria se limita a los pesos, por lo que contextos muy largos siguen consumiendo VRAM considerable.
+- Idiomas soportados no documentados: no se puede garantizar calidad multilingue fuera del ingles sin evaluacion propia.
+- Riesgo de alucinacion: no cuantificado en la informacion disponible; aplica el riesgo habitual de los modelos de razonamiento.
+- Sesgos: no documentados en la model card.
+- Dependencia de hardware Hopper: el formato NVFP4 no es portable a GPUs sin soporte FP4 nativo.
+- Contexto maximo no especificado: impide planificar cargas con ventanas largas sin pruebas previas.
+- Verificacion de integridad: el autor afirma haber comprobado byte a byte los 798 tensores BF16, pero no hay una evaluacion independiente publicada.
 
 ## Enlaces
 
-- Repositorio Hugging Face (este checkpoint): https://huggingface.co/ukisai/Swift-Qwen3.8-27B-NVFP4
-- Modelo base en BF16: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
+- Modelo en Hugging Face: https://huggingface.co/ukisai/Swift-Qwen3.8-27B-NVFP4
+- Modelo base BF16: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Version GGUF: https://huggingface.co/ukisai/Swift-Qwen3.8-27B-GGUF
-- Sitio web de UkisAI: https://ukisai.com
-- Pagina de producto de Swift: https://ukisai.com/products/swift
-- Contacto para licencia empresarial: https://ukisai.com/contact
-- API compatible con OpenAI: https://ukisai.com/api/swift/v1 (modelo `swift`, gratuita para investigacion, sin clave)
-- Receta de vLLM para el modelo base: https://recipes.vllm.ai/Qwen/Qwen3.8-27B
-- Herramienta de cuantizacion llm-compressor: https://github.com/vllm-project/llm-compressor
-- Citacion del modelo base: https://huggingface.co/ukisai/Swift-Qwen3.8-27b (entrada BibTeX `swift-qwen3.8-27b`, UkisAI, 2026)
-
-Nota: los resultados de la busqueda web proporcionados no contienen informacion relevante sobre el modelo (corresponden a consultas de soporte de una plataforma de television), por lo que no se han incluido como fuentes.
+- Referencia de precision de NVIDIA: https://huggingface.co/nvidia/Qwen3.8-27B-NVFP4
+- Web del autor: https://ukisai.com
+- Pagina de producto: https://ukisai.com/products/swift
+- Inventario de precision: https://huggingface.co/ukisai/Swift-Qwen3.8-27B-NVFP4/blob/main/quantization/precision-inventory.csv
+- Receta ModelOpt: https://huggingface.co/ukisai/Swift-Qwen3.8-27B-NVFP4/blob/main/quantization/modelopt-recipe.json
+- Manifiesto de calibracion: https://huggingface.co/ukisai/Swift-Qwen3.8-27B-NVFP4/blob/main/quantization/calibration-manifest.json
+- Versiones de paquetes: https://huggingface.co/ukisai/Swift-Qwen3.8-27B-NVFP4/blob/main/quantization/versions.json
+- Demo de velocidad: https://huggingface.co/ukisai/Swift-Qwen3.8-27B-NVFP4/resolve/main/swift-speed-demo.mp4

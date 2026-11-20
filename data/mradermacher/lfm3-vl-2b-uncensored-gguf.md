@@ -2,49 +2,49 @@
 
 ## Resumen
 
-LFM3-VL-2B-Uncensored-GGUF es una cuantizacion estatica en formato GGUF del modelo LFM3-VL-2B-Uncensored, publicado por el usuario mradermacher en Hugging Face. El modelo base, alojado en la organizacion GCSA-AiLab, es un modelo multimodal de tipo image-text-to-text derivado de la familia LFM3 (Liquid Foundation Models) con la etiqueta "Uncensored", lo que indica que se ha sometido a un proceso de eliminacion o atenuacion de los filtros de rechazo y alineamiento del modelo original. Este repositorio concreto no contiene los pesos originales, sino las conversiones a GGUF generadas con la herramienta de cuantizacion de llama.cpp (quantize_version 2, convert_type hf).
+LFM3-VL-2B-Uncensored-GGUF es la distribucion en formato GGUF del modelo GCSA-AiLab/LFM3-VL-2B-Uncensored, una variante multimodal (vision-lenguaje) del modelo LFM3 de 2B de parametros, publicada por el usuario mradermacher en Hugging Face. El modelo base es un derivado "uncensored" (abliterated, segun el tag `abliterix`) del LFM3-VL de Liquid AI, orientado a despliegue en el borde (edge) y con soporte para ingles y chino. Esta version concreta no anade pesos nuevos: empaqueta el modelo original en cuantizaciones GGUF de 2 a 16 bits para su uso con llama.cpp y herramientas compatibles.
 
-El interes practico de esta publicacion es acercar un modelo vision-lenguaje de aproximadamente 2.000 millones de parametros a entornos de inferencia locales, donde llama.cpp, Ollama o LM Studio pueden ejecutar los ficheros GGUF sin necesidad de GPU de datacenter. Al tratarse de una cuantizacion de un modelo "uncensored", esta pensada para investigadores y desarrolladores que necesitan evaluar el comportamiento del modelo sin las capas de rechazo, o que trabajan en tareas creativas y de analisis de imagenes donde los filtros estandar resultan limitantes.
+El modelo cuenta con 1.728.801.600 parametros reales (segun los safetensors del modelo base), lo que lo situa en la categoria de 2B. Su interes practico radica en que combina capacidades de vision y lenguaje en un tamano que cabe en GPUs de consumo y en dispositivos de borde, y en que la cuantizacion GGUF permite ejecutarlo en CPU o en GPUs modestas con un consumo de VRAM muy contenido (desde ~0,9 GB en Q2_K hasta ~3,6 GB en f16).
 
-La informacion disponible es muy escasa: el repositorio no declara licencia, idiomas, pipeline ni resultados de evaluacion, y en el momento de la consulta registra cero descargas y cero "likes". Los datos tecnicos que se pueden afirmar con certeza se limitan al identificador del modelo, el tamano del repositorio (0,6 GB) y la lista de cuantizaciones publicadas.
+La licencia es `lfm1.0` (Liquid Foundation Model License), que impone restricciones de uso comercial que deben revisarse antes de cualquier despliegue en produccion. La model card no proporciona informacion sobre la longitud de contexto, los datos de entrenamiento ni resultados de benchmarks, por lo que esos apartados se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base de tipo image-text-to-text; presumiblemente transformer multimodal, sin confirmar) |
-| Parametros totales | 189.380.352 (dato del safetensors del modelo base); la nomenclatura del modelo indica 2B |
-| Parametros activos | no aplica (no se ha confirmado que sea MoE) |
+| Arquitectura | no disponible (modelo base LFM3-VL, familia Liquid Foundation Model; no se detalla en la informacion proporcionada) |
+| Parametros totales | 1.728.801.600 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base se distribuye en safetensors |
+| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K; ademas mmproj en Q8_0 y f16 para la parte multimodal |
+| Idiomas soportados | en, zh |
+| Licencia | lfm1.0 (license_name: lfm1.0, license: other) |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo base LFM3-VL-2B-Uncensored en la documentacion proporcionada. Por la nomenclatura de la familia LFM3 y la etiqueta image-text-to-text, se trata de un modelo multimodal que acepta imagenes y texto como entrada y genera texto, pero no se confirma el tipo de backbone (transformer denso, MoE o hibrido), ni el mecanismo de proyeccion visual, ni la longitud de contexto nativa.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base en la documentacion proporcionada. El modelo pertenece a la familia LFM3-VL de Liquid AI, que combina un modelo de lenguaje con un codificador visual para tareas multimodales, pero la model card no especifica el tipo de transformer, el mecanismo de atencion ni la composicion del dataset de entrenamiento. Tampoco se documentan el numero de tokens de entrenamiento, las fases de RLHF/DPO ni innovaciones tecnicas concretas (decodificacion especulativa, atencion lineal, etc.).
 
-Respecto al entrenamiento, no hay datos publicados sobre el numero de tokens, la composicion del dataset, el uso de RLHF o DPO, ni sobre el procedimiento concreto de "uncensoring" aplicado por GCSA-AiLab. Este repositorio de mradermacher es exclusivamente una conversion a GGUF del modelo base, sin reentrenamiento ni ajuste adicional; las etiquetas de la model card (quantize_version 2, output_tensor_quantised 1, convert_type hf) indican el uso del pipeline estandar de cuantizacion de llama.cpp a partir de pesos en formato Hugging Face. La lista de cuantizaciones incluye variantes K-quant y una IQ4_XS, lo que sugiere compatibilidad con las implementaciones recientes de llama.cpp.
+Lo que si es verificable es el proceso de publicacion: se trata de una cuantizacion estatica (quantize_version 2, output_tensor_quantised 1, convert_type hf) realizada por mradermacher sobre el modelo GCSA-AiLab/LFM3-VL-2B-Uncensored. El modelo base incorpora el tag `abliterix`, que indica que ha sido sometido a un proceso de "abliteration" para eliminar los rechazos del modelo original, y el tag `edge`, que senala su orientacion a despliegue en dispositivos de borde. Existe ademas una version con cuantizaciones ponderadas/imatrix en el repositorio mradermacher/LFM3-VL-2B-Uncensored-i1-GGUF.
 
 ## Capacidades
 
-- Generacion de texto a partir de imagenes y de prompts multimodales, segun la clasificacion del modelo base como image-text-to-text.
-- Conversacion multi-turno con entrada visual, en la medida en que el modelo base lo soporte (no verificado en la informacion disponible).
-- Comportamiento sin filtros de rechazo: el sufijo "Uncensored" indica que se han atenuado o eliminado las respuestas de negativa del modelo alineado original.
-- Capacidades de razonamiento, codigo, matematicas y tool calling: no disponibles en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponibles; el repositorio no declara idiomas.
-- Modo "thinking", audio u otras capacidades especiales: no disponible.
+- Generacion de texto conversacional en ingles y chino.
+- Procesamiento multimodal de imagenes: el repositorio incluye ficheros `mmproj` (proyector multimodal) en Q8_0 y f16, necesarios para la inferencia vision-lenguaje con llama.cpp.
+- Razonamiento y respuesta a preguntas sobre contenido visual, al ser una variante VL (vision-lenguaje).
+- Modo "uncensored": el proceso de abliteration del modelo base elimina los rechazos por contenido, lo que cambia el comportamiento respecto al modelo original.
+- Orientacion a despliegue en el borde: tamano de 2B y cuantizaciones desde 0,9 GB permiten ejecucion en hardware limitado.
+- No se documenta soporte de tool calling, function calling, agentes multi-paso, audio ni modo "thinking" en la informacion disponible.
 
 ## Casos de uso
 
-- Inferencia local de vision-lenguaje en hardware de consumo: los ficheros GGUF de 2B permiten ejecutar el modelo en CPU o en GPUs con poca VRAM mediante llama.cpp u Ollama, util para prototipos de descripcion de imagenes sin depender de la nube.
-- Investigacion sobre alineamiento y censura: comparar las respuestas del modelo "Uncensored" con las del modelo base alineado permite estudiar que comportamientos cambian tras el proceso de eliminacion de filtros, un caso de uso habitual en equipos de seguridad de IA.
-- Generacion creativa sin restricciones: escritura de ficcion, guiones o descripciones de imagen con tematicas que los modelos alineados suelen rechazar, en entornos controlados y con revision humana.
-- Procesamiento por lotes de imagenes en local: con las cuantizaciones Q4_K_M o Q5_K_M se puede montar un pipeline de captioning o extraccion de informacion de imagenes en una maquina sin GPU dedicada, priorizando privacidad de los datos.
-- Evaluacion comparativa de cuantizaciones: el repositorio ofrece doce variantes (desde Q2_K hasta x-f16), lo que permite medir la degradacion de calidad del componente visual y textual segun el nivel de cuantizacion en un mismo modelo.
-- Despliegue embebido o en el borde: el tamano reducido del repositorio (0,6 GB) y las cuantizaciones de 2-3 bits facilitan integraciones en dispositivos con almacenamiento y memoria limitados, siempre que se acepte la perdida de calidad asociada.
+- Asistente de vision en dispositivos de borde: con la cuantizacion Q4_K_M (1,2 GB) y el mmproj Q8_0 (0,3 GB), el modelo puede ejecutarse en una Raspberry Pi 5 con 8 GB de RAM o en una GPU integrada para describir imagenes capturadas por una camara, sin conexion a la nube.
+- Clasificacion y descripcion de imagenes en pipelines locales: integrado via llama.cpp, permite etiquetar lotes de imagenes en un servidor sin GPU dedicada, usando el fichero mmproj-f16 (0,5 GB) para maxima calidad visual.
+- Prototipado rapido de aplicaciones multimodales: la version Q4_K_S o Q4_K_M, marcadas como "fast, recommended" por el autor, permite iterar en un portatil con GPU de consumo antes de decidir si se necesita un modelo mayor.
+- Procesamiento de documentos con imagenes en ingles o chino: el soporte bilingue en/zh y la capacidad VL permiten extraer informacion de capturas, formularios o diagramas en entornos donde no se quiere enviar datos a APIs externas.
+- Investigacion sobre alineacion y abliteration: al ser una variante "uncensored", sirve para estudiar el efecto de la eliminacion de rechazos en modelos pequenos, comparando respuestas con el modelo original LFM3-VL-2B.
+- Despliegue en entornos con recursos muy limitados: la cuantizacion Q2_K (0,9 GB) permite ejecutar el modelo en CPU con poca RAM para tareas de baja exigencia, aunque con perdida de calidad respecto a Q6_K o Q8_0.
+- Demo educativa de modelos multimodales: el tamano reducido y el formato GGUF facilitan su uso en talleres y cursos sin necesidad de infraestructura de GPU profesional.
 
 ## Benchmarks y rendimiento
 
@@ -52,37 +52,40 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma oficial. Como referencia orientativa por el tamano del repositorio y el numero de parametros declarado, las cuantizaciones de 2-3 bits ocupan del orden de 0,7-1,2 GB, las de 4-5 bits en torno a 1,2-1,6 GB y la x-f16 aproximadamente 3,8 GB; estas cifras son estimaciones, no datos del autor.
-- GPU recomendadas: no disponibles en la informacion proporcionada. Por tamano, cualquier GPU consumer con 4-8 GB de VRAM deberia poder alojar las cuantizaciones bajas, pero no hay confirmacion del autor.
-- GPU consumer: previsiblemente si, en modelos como RTX 3060, RTX 4060 o superiores con las cuantizaciones Q4 y Q5; sin verificar.
-- Opciones de despliegue: llama.cpp, Ollama y LM Studio son los entornos naturales para GGUF; vLLM y TGI no soportan GGUF de forma nativa para este tipo de modelo sin conversion adicional.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto): Q2_K ~0,9 GB; Q3_K_S ~1,0 GB; IQ4_XS ~1,1 GB; Q4_K_M ~1,2 GB; Q5_K_M ~1,4 GB; Q6_K ~1,5 GB; Q8_0 ~1,9 GB; f16 ~3,6 GB. Para la parte multimodal hay que sumar el mmproj (0,3 GB en Q8_0 o 0,5 GB en f16).
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar las cuantizaciones Q4 a Q8 con margen para contexto; una RTX 3060 de 12 GB o RTX 4090 de 24 GB permiten f16 y contextos amplios sin problemas.
+- Cabe en GPU de consumo: si, en practicamente todas las GPU modernas con 4 GB o mas de VRAM (GTX 1650, RTX 3050, RTX 4060, etc.), y en CPU con 2-4 GB de RAM libre segun cuantizacion.
+- Opciones de despliegue: llama.cpp y sus derivados (Ollama, LM Studio, llama-cpp-python); el tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo OpenAI. No se documenta soporte de vLLM o TGI para este formato GGUF.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parametros | Contexto | Multimodal | Licencia | Formato |
 |---|---|---|---|---|---|
-| mradermacher/LFM3-VL-2B-Uncensored-GGUF | ~2B (segun nomenclatura) | no disponible | GGUF | no disponible | Cuantizacion del modelo de GCSA-AiLab; sin benchmarks publicados |
-| GCSA-AiLab/LFM3-VL-2B-Uncensored-GGUF | ~2B | no disponible | GGUF | no disponible | Publicacion alternativa del mismo modelo base en GGUF |
-| mradermacher/LFM3-1.7B-Uncensored-GGUF | ~1,7B | no disponible | GGUF | no disponible | Variante solo texto de la misma familia, sin componente visual |
+| LFM3-VL-2B-Uncensored-GGUF (este) | 1,73 B | no disponible | si (VL) | lfm1.0 | GGUF |
+| GCSA-AiLab/LFM3-VL-2B-Uncensored (base) | 1,73 B | no disponible | si (VL) | lfm1.0 | safetensors |
+| LFM3-VL-2B original (familia Liquid AI) | ~2 B | no disponible | si (VL) | lfm1.0 | safetensors/GGUF |
 
-No se dispone de datos de rendimiento ni de licencia de ninguno de los modelos comparados, por lo que la comparativa se limita a parametros y formato.
+No se dispone de datos de rendimiento ni de contexto para establecer una comparacion cuantitativa con alternativas de la misma categoria (por ejemplo, otros modelos VL de 2B como Qwen2-VL-2B o SmolVLM). La informacion proporcionada no permite confirmar parametros, contexto ni benchmarks de esos modelos, por lo que la comparativa se limita a las variantes del propio modelo.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks: no hay ninguna evaluacion publicada que permita estimar la calidad del modelo en tareas de vision o texto.
-- Riesgo de alucinacion: inherente a los modelos de ~2B parametros y agravado por la falta de evaluacion; las descripciones de imagenes pueden contener detalles inventados.
-- Modelo "uncensored": la eliminacion de filtros de rechazo implica un mayor riesgo de generar contenido ofensivo, ilegal o danino; su uso en produccion requiere moderacion externa y revision legal.
-- Licencia no declarada: al no especificarse licencia en el repositorio, no se puede confirmar el uso comercial; hay que remitirse al modelo base de GCSA-AiLab, que tampoco la declara en la informacion disponible.
-- Idiomas no declarados: se desconoce el soporte multilingue real; no debe asumirse un rendimiento correcto en castellano sin pruebas.
-- Contexto desconocido: sin dato de longitud de contexto, no es posible planificar conversaciones largas ni documentos extensos.
-- Repositorio sin traccion: cero descargas y cero "likes" en el momento de la consulta, sin senales de validacion por parte de la comunidad.
-- Posible inconsistencia en el numero de parametros: el safetensors del modelo base declara 189.380.352 parametros, muy por debajo de los 2B que sugiere el nombre; conviene verificar el modelo base antes de asumir capacidades.
-- Cuantizaciones de 2-3 bits: las variantes Q2_K y Q3_K pueden degradar notablemente el componente visual; para uso serio se recomienda Q4_K_M o superior.
+- Modelo "uncensored": el proceso de abliteration elimina los rechazos del modelo original, lo que aumenta el riesgo de generar contenido danino, sesgado o inapropiado sin filtros. No es adecuado para aplicaciones de cara al publico sin moderacion adicional.
+- Riesgo de alucinacion: como todo modelo de lenguaje de 2B, la precision factual es limitada y puede inventar detalles, especialmente en tareas de razonamiento complejo o lectura de imagenes con texto denso.
+- Idiomas: solo se declaran ingles y chino; el rendimiento en castellano no esta garantizado ni documentado.
+- Contexto: no se ha publicado la longitud de contexto, lo que impide planificar aplicaciones que requieran ventanas largas.
+- Licencia lfm1.0: impone restricciones de uso comercial que deben revisarse en el fichero LICENSE del repositorio antes de cualquier despliegue en produccion.
+- Calidad de cuantizacion: las cuantizaciones Q2_K y Q3_K pueden degradar notablemente la calidad; el autor recomienda Q4_K_S/Q4_K_M como equilibrio y Q6_K/Q8_0 para maxima fidelidad.
+- La parte multimodal requiere cargar el fichero mmproj junto con los pesos; sin el, el modelo solo funciona como modelo de texto.
+- No se documentan sesgos especificos ni evaluaciones de seguridad del modelo base ni de la variante uncensored.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/LFM3-VL-2B-Uncensored-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/LFM3-VL-2B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/GCSA-AiLab/LFM3-VL-2B-Uncensored
-- Cuantizacion GGUF alternativa del modelo base: https://huggingface.co/GCSA-AiLab/LFM3-VL-2B-Uncensored-GGUF
-- Variante solo texto de la familia: https://huggingface.co/mradermacher/LFM3-1.7B-Uncensored-GGUF
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/LFM3-VL-2B-Uncensored-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#LFM3-VL-2B-Uncensored-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Grafico de perplejidad por cuantizacion (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

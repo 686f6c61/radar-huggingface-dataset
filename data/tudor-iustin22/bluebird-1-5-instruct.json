@@ -66,16 +66,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "tudor-iustin22/Bluebird-1.5-Instruct · Hugging Face",
-      "url": "https://huggingface.co/tudor-iustin22/Bluebird-1.5-Instruct",
-      "snippet": "tudor-iustin22 / Bluebird-1.5-Instruct Like 3 Text Generation Transformers Safetensors PyTorch HuggingFaceTB/smoltalk2 open-r1/Mixture-of-Thoughts nvidia/Nemotron-Post-Training-Dataset-v1 English fabric bluebird project-bluebird bluebird-1.5 instruct instruction-tuned conversational causal-lm 0.7b long-context chunked-memory grouped-query-attention intel intel-gaudi-3 mixed-precision bf16 ..."
-    },
-    {
-      "title": "tudor-iustin22/Bluebird-1.5-Base · Hugging Face",
-      "url": "https://huggingface.co/tudor-iustin22/Bluebird-1.5-Base",
-      "snippet": "Model Overview Bluebird 1.5 Base is a compact, decoder-only causal language model in the Project Bluebird family. With 742,528,520 parameters and a 32,768-token context window, it combines local causal attention with a compressed, chunked-memory mechanism for accessing information from earlier parts of a sequence."
-    }
-  ]
+  "sources": []
 }

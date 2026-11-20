@@ -2,113 +2,95 @@
 
 ## Resumen
 
-Parallax 8B lambda es un checkpoint de investigación de un modelo de lenguaje de tipo mezcla de expertos (MoE) desarrollado por chutesai. Se trata de un artefacto intermedio de una ejecución de entrenamiento en curso, publicada para que el proceso pueda seguirse e inspeccionarse; no es un modelo acabado ni está pensado para producción. El modelo tiene aproximadamente 7,8B parámetros totales y unos 1,25B parámetros activos por token, con pesos de expertos ternarios (-1, 0, +1) y escalas por fila.
+Parallax 8B lambda es un checkpoint de investigación de Parallax, un modelo de lenguaje de arquitectura mixta (mezcla de expertos con componentes recurrentes y de atención) entrenado de forma descentralizada sobre GPUs de consumo distribuidas en varios países y sincronizadas por internet público. Lo desarrolla chutesai y se publica como artefacto de investigación para poder seguir e inspeccionar el proceso de entrenamiento, no como modelo listo para producción.
 
-La relevancia técnica del proyecto reside en su método de entrenamiento: el tronco denso se sincroniza mediante un esquema DiLoCo desacoplado a través de internet público, y los expertos enrutados se entrenan con adaptadores de bajo rango en las GPU que los utilizan. La flota de entrenamiento está formada por 26 máquinas con 208 GPU RTX 5090 repartidas en varios países, sin conexiones directas entre hosts.
+El modelo tiene aproximadamente 7,77B de parámetros totales con unos 1,20B activos por token, combinando 64 capas: 32 "mixers" (18 recurrentes EDA, 8 de atención de ventana deslizante y 6 de atención global) intercalados con 32 capas de mezcla de expertos. Los expertos usan pesos ternarios (-1, 0, +1) con escalas por fila, lo que reduce drásticamente el coste de almacenamiento y cómputo.
 
-Se publican exports periódicos (aproximadamente uno por hora) bajo la carpeta `exports/`, cada uno de unos 2,48 GB, nombrados según los tokens de entrenamiento y el paso de flota. La ejecución está planificada como una sola pasada de unos 973B tokens; el export más reciente disponible en la model card corresponde a 103,2B tokens. El modelo es un base model: no está ajustado con instrucciones, ni para chat, ni con técnicas de seguridad.
+Es relevante ahora porque documenta un experimento de entrenamiento distribuido a escala (hasta 208 GPUs en 26 máquinas, con pérdida de nodos y reasignación automática de roles) y porque explora técnicas poco habituales en modelos abiertos: recurrencia con regla delta con compuerta, atención global dispersable y expertos ternarios entrenados mediante adaptadores de bajo rango. El entrenamiento se detuvo en torno a 900B tokens antes del final previsto (~973B), por lo que es un checkpoint parcial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido con mezcla de expertos (MoE). 64 capas: 18 recurrentes gated delta-rule (GDN2), 8 de atención de ventana deslizante (ventana 2048), 6 de atención dispersa y 32 de mezcla de expertos |
-| Parametros totales | ~7,8B |
-| Parametros activos | ~1,25B por token |
-| Longitud de contexto | 4096 tokens (contexto de entrenamiento) |
-| Tipos de cuantizacion | Pesos de expertos en ternario (-1, 0, +1) con escalas por fila; como máximo dos pares distintos de cero en cada grupo de ocho. No se documentan otros formatos de cuantización |
-| Idiomas soportados | en (inglés) |
+| Arquitectura | Transformer híbrido con mezcla de expertos: 64 capas (32 mixers: 18 recurrentes EDA, 8 de atención de ventana deslizante, 6 de atención global; intercaladas con 32 capas MoE) |
+| Parametros totales | ~7,77B (1.560.145.523 según safetensors del repo) |
+| Parametros activos | ~1,20B por token |
+| Longitud de contexto | 4096 tokens en entrenamiento; atención de ventana deslizante de 2048 en evaluación e inferencia |
+| Tipos de cuantizacion | Pesos de expertos en ternario (-1, 0, +1) con escalas por fila; no se detallan otras cuantizaciones en la información disponible |
+| Idiomas soportados | Inglés (en) |
 | Licencia | MIT |
-| Formato de pesos | no disponible (la model card no especifica el formato; los exports se distribuyen como carpetas de aproximadamente 2,48 GB cada una) |
-
-Otros parámetros técnicos declarados: 4096 expertos enrutados (128 por capa MoE), 12 expertos enrutados más 1 compartido por token; ancho `d_model` de 1152; activación de expertos ReLU²; tokenizador Llama 3 con vocabulario ampliado a 128.384 entradas; embeddings de entrada y salida atados; escala de logits de salida aprendible y limitada a 3,0.
+| Formato de pesos | GGUF (tag del repo); exportaciones por carpeta en `exports/`, cada una de ~2,43 GB |
+| Tokenizer | Llama 3 (vocabulario ampliado a 128.384), embeddings de entrada/salida atados |
+| Anchura | 1152; anchura intermedia de experto 2304; anchura latente 384; activación ReLU² en expertos |
+| Expertos | 4096 expertos enrutados (128 por capa MoE), 12 enrutados + 1 compartido por token |
+| Atención global | MSA con KV latente de 256 dimensiones, 16 cabezas de consulta, 4 cabezas KV y RoPE; atención causal densa en esta ejecución (selección top-k dispersa inactiva) |
+| Escala de logits de salida | Aprendible, limitada a 3,0 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura combina atención y recurrencia en un tronco de 64 capas. Dieciocho capas usan regla delta con compuerta (GDN2) de tipo recurrente, ocho emplean atención de ventana deslizante de 2048 tokens, seis usan atención dispersa y treinta y dos son capas de mezcla de expertos. Cada capa MoE dispone de 128 expertos enrutados, y por token se activan 12 expertos enrutados más uno compartido, sobre un total de 4096 expertos. Los pesos de los expertos son ternarios, con escalas por fila y una restricción de dispersión que limita a dos los pares distintos de cero en cada grupo de ocho valores.
+La arquitectura es un transformer híbrido en el que se alternan capas de mezcla (mixers) con capas de mezcla de expertos. Los mixers recurrentes usan recurrencia EDA (una regla delta con compuerta) con decaimiento por canal de clave acotado inferiormente por e^-5 por token, rango de borrado 16 y normalización de salida. Las capas de atención de ventana deslizante usan 2048 tokens en la primera y la última mixer, mientras que las seis interiores comparten un sorteo por paso de 128 o 2048 tokens con igual probabilidad durante el entrenamiento (en evaluación e inferencia se usa 2048). La atención global es de tipo MSA con KV latente de 256 dimensiones, 16 cabezas de consulta y 4 de KV, con RoPE, y en esta ejecución se mantuvo densa y causal, con la selección top-k dispersa desactivada. Los expertos son 4096 enrutados (128 por capa), con 12 enrutados más 1 compartido por token, pesos ternarios con escalas por fila y como máximo dos pares no nulos en cada grupo de ocho. El enmascaramiento de documentos reinicia la atención y el estado recurrente en los límites de documento (hasta 64 documentos por secuencia de 4096 tokens).
 
-El entrenamiento se apoya en una flota de 26 máquinas con 208 GPU RTX 5090 distribuidas geográficamente y sin conexión directa entre hosts. El tronco denso se sincroniza con un esquema DiLoCo desacoplado sobre internet público; los expertos enrutados se entrenan mediante adaptadores de bajo rango en las GPU que los usan, y las actualizaciones de los adaptadores se integran en maestros de precisión completa que publican nuevas versiones ternarias. Los datos provienen de siete fuentes que suman aproximadamente 1,09T tokens: dos mezclas generales de web, documentos, matemáticas y código (aproximadamente el 78% de los tokens), un conjunto web adicional, dos conjuntos de matemáticas, un conjunto centrado en conocimiento y un conjunto de libros. En torno a los 899,6B tokens se produce un cambio a otras dos fuentes sin modificar la tasa de aprendizaje. La ejecución está planificada como una única pasada de unos 973B tokens.
-
-La tasa de aprendizaje sigue un calentamiento lineal de 0 a 6e-4 durante los primeros 19,66B tokens, se mantiene en 6e-4 hasta los 400B tokens, baja a 3e-4 hasta los 700B y a 1,5e-4 hasta el final, sin decaimiento final. El lote es de 10 micro-lotes de acumulación de gradiente por paso (unos 8,5M tokens por paso de flota) durante los primeros 100B tokens aproximadamente, y de 20 micro-lotes (unos 17M tokens por paso) después. No se aplicaron fases de RLHF ni DPO: es un modelo base sin ajuste de instrucciones.
+El entrenamiento usó siete fuentes estacionarias que suman unos 1,09T tokens: dos mezclas generales de pretraining (web, documentos, matemáticas y código), un conjunto web adicional, dos conjuntos de matemáticas, un conjunto centrado en conocimiento y un conjunto de libros. A unos 899,6B tokens se cambió a dos fuentes adicionales mientras continuaba el anneal de learning rate iniciado a 877,28B; el entrenamiento se detuvo a unos 900B tokens, poco después del cambio, frente a los ~972,9B previstos. La optimización del tronco denso se sincroniza con un esquema DiLoCo desacoplado sobre internet; los expertos enrutados se entrenan mediante adaptadores de bajo rango en las GPUs que los usan, y las actualizaciones de los adaptadores se integran en maestros de precisión completa que publican nuevas versiones ternarias. El learning rate hizo warm-up lineal de 0 a 6e-4 durante los primeros 19,66B tokens, luego 6e-4 hasta 400B, 3e-4 hasta 700B y 1,5e-4 hasta 877,28B; el anneal en vivo usa el multiplicador m = 1 - 0,9·sqrt((T - 877,28B)/(972,90B - 877,28B)) sobre 1,5e-4, y al detenerse había alcanzado 0,5489 (8,234e-5). El lote fue de 10 micro-lotes de acumulación de gradiente al inicio (~8,5M tokens por paso con 26 máquinas) y pasó a 20 a unos 100B tokens (~17M tokens por paso con todas las máquinas). La flota arrancó con 26 máquinas y 208 GPUs; se perdieron siete máquinas entre el 5 y el 8 de octubre con reasignación automática de roles, y al final quedaron 19 máquinas con 152 GPUs.
 
 ## Capacidades
 
-- Generación de texto continuando una secuencia dada; no sigue instrucciones, ya que no ha recibido ajuste de instrucciones ni de chat.
-- Modelado de lenguaje sobre mezclas de web, documentos, matemáticas, código, conocimiento y libros, correspondientes a las siete fuentes del entrenamiento.
-- Razonamiento y matemáticas en fase de adquisición temprana: los conjuntos de matemáticas forman parte de la mezcla de datos, pero el entrenamiento está en torno al 10% del total planificado.
-- Generación de código dentro de la mezcla de datos, sin datos publicados sobre su calidad.
-- Procesamiento de contexto de hasta 4096 tokens.
-- Capacidad multilingüe limitada al inglés según la model card.
-- No dispone de soporte documentado de tool calling ni de function calling.
-- No dispone de soporte documentado para agentes ni razonamiento multi-paso.
-- No dispone de capacidades de visión, audio ni modo de razonamiento explícito.
-- No está ajustado con técnicas de seguridad ni de alineación.
+- Generación de texto autoregresiva como modelo base: continúa texto, no sigue instrucciones.
+- Razonamiento y conocimiento general a partir de mezclas de web, documentos y conjuntos centrados en conocimiento.
+- Matemáticas: entrenado con dos conjuntos específicos de matemáticas además de las mezclas generales.
+- Código: incluido en las mezclas generales de pretraining.
+- Capacidad multilingüe limitada: la model card declara únicamente inglés.
+- No dispone de tool calling, function calling ni soporte de agentes: no está instruido ni ajustado para ello.
+- No dispone de modo de razonamiento explícito (thinking), visión ni audio.
+- Contexto de 4096 tokens en entrenamiento, con atención de ventana deslizante de 2048 en inferencia.
 
 ## Casos de uso
 
-- Investigación sobre entrenamiento descentralizado: el modelo permite inspeccionar cómo evoluciona el tronco denso sincronizado con DiLoCo sobre internet público, comparando exports sucesivos para estudiar la estabilidad del esquema.
-- Estudio de cuantización ternaria en mezclas de expertos: los pesos ternarios con escalas por fila y la restricción de dos pares no nulos por grupo de ocho constituyen un caso práctico para investigar kernels y pérdida de calidad asociada a pesos de muy baja precisión.
-- Análisis de la evolución del preentrenamiento: la serie de exports (de 59B a 103,2B tokens en la tabla publicada) permite trazar curvas de pérdida y de métricas macro a lo largo del tiempo, teniendo en cuenta que la calidad entre exports no es monótona.
-- Punto de partida para ajuste fino supervisado: al ser un modelo base con licencia MIT, puede emplearse como inicialización para experimentos de ajuste con instrucciones o de adaptación a dominio en inglés.
-- Experimentación con arquitecturas híbridas atención-recurrencia: las 18 capas GDN2, las 8 de ventana deslizante y las 6 de atención dispersa permiten estudiar el comportamiento de una mezcla heterogénea de mecanismos de secuencia frente a un transformer homogéneo.
-- Investigación sobre mezclas de datos: el cambio de fuentes a los 899,6B tokens y la composición declarada de las siete fuentes permiten diseñar réplicas controladas del efecto de la mezcla sobre el rendimiento.
-- Reproducción y depuración de infraestructura distribuida: la topología de 26 máquinas y 208 GPU RTX 5090 sin conexión directa serve como referencia para validar esquemas de sincronización de baja frecuencia en flotas heterogéneas.
+- Investigación sobre entrenamiento descentralizado: el checkpoint permite reproducir y auditar el efecto de DiLoCo desacoplado, los adaptadores de bajo rango para expertos y la publicación de versiones ternarias sobre internet público.
+- Estudio de arquitecturas híbridas recurrente-atención: sirve para analizar el comportamiento de la recurrencia EDA frente a la atención de ventana deslizante y la atención global en un mismo modelo, comparando activaciones y estados internos.
+- Experimentos con expertos ternarios: al tener pesos de experto en {-1, 0, +1} con escalas por fila, es un banco de pruebas para técnicas de compresión, kernel y decodificación de bajo coste.
+- Evaluación de checkpoints intermedios: las exportaciones cada ~30 minutos permiten estudiar la evolución de la calidad a lo largo del entrenamiento y la no monotonicidad entre snapshots.
+- Generación de texto de dominio general en inglés como modelo base: útil para tareas de continuación y para construir sobre él con fine-tuning posterior, dado que no está instruido.
+- Reproducción de recetas de annealing de learning rate: el checkpoint documenta el multiplicador y el estado exacto del anneal al detenerse, lo que facilita experimentos sobre anneal parcial.
+- Análisis de robustez en flotas heterogéneas: el registro de pérdida de máquinas y reasignación de roles permite estudiar el impacto de fallos de nodo en la calidad final.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La tabla de exports de la model card reserva columnas para `val_mix` (nats/token) y para los agregados macro de 0-shot y 5-shot, pero todas las celdas correspondientes a los exports publicados aparecen vacías.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Pesos por export: aproximadamente 2,48 GB por carpeta en los exports de 59B a 103,2B tokens, lo que corresponde a los ~7,8B parámetros en formato ternario con escalas.
-- VRAM estimada para inferencia: no disponible de forma oficial. Con pesos de ~2,48 GB, un despliegue con contexto completo de 4096 tokens y caché de clave-valor requeriría en la práctica del orden de 4 a 8 GB de VRAM, pero esta cifra es una estimación y no está confirmada por el autor.
-- GPU recomendadas: no disponible. No hay datos publicados de latencia ni de throughput por GPU.
-- GPU de consumo: el tamaño de los pesos sugiere que cabría en GPU de consumo con suficiente memoria, pero no existe confirmación de compatibilidad ni kernels publicados para el formato ternario.
-- Opciones de despliegue: no disponible. La model card no menciona soporte para vLLM, llama.cpp, Ollama, TGI ni ninguna otra herramienta; el formato ternario con escalas por fila implica que se necesita una implementación específica.
-- Latencia y throughput estimados: no disponible.
-- Hardware usado para el entrenamiento (como referencia de la infraestructura del proyecto): 26 máquinas con 208 GPU RTX 5090.
+- VRAM estimada para inferencia: no disponible en la información proporcionada. Como referencia, los pesos de experto son ternarios y cada exportación ocupa ~2,43 GB, lo que sugiere un coste de almacenamiento muy inferior al de un modelo denso de 7,77B en FP16.
+- GPU recomendadas: no disponible. El entrenamiento se realizó sobre 208 GPUs de consumo (152 al final) repartidas en 26 máquinas, sin que la model card especifique el modelo exacto.
+- ¿Cabe en GPU de consumo? No disponible de forma explícita; el diseño ternario y el tamaño de las exportaciones (~2,43 GB) apuntan a que sí es viable en GPUs de consumo, pero no se confirma en la información.
+- Opciones de despliegue: el repo distribuye GGUF, por lo que llama.cpp y Ollama son opciones plausibles; vLLM y TGI no se mencionan en la información disponible.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-Datos de los modelos comparados tomados de sus especificaciones públicas; los del modelo analizado provienen de la model card.
-
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Notas |
-|---|---|---|---|---|---|
-| Parallax 8B lambda | ~7,8B | ~1,25B | 4096 | MIT | Base model, pesos ternarios, checkpoint de investigación en curso |
-| OLMoE-1B-7B | ~6,9B | ~1,3B | 4096 | Apache 2.0 | MoE de 64 expertos, 1 experto activo por token, modelo abierto con datos y recetas publicados |
-| Qwen3-30B-A3B | ~30B | ~3B | 32.768 | Apache 2.0 | MoE de mayor tamaño, con versiones base e instruidas |
-| Llama 3.1 8B | ~8B | 8B (denso) | 128.000 | Licencia comunitaria de Llama 3.1 | Denso, con ajuste de instrucciones y contexto muy superior |
-
-La comparación directa es limitada: Parallax 8B lambda es un checkpoint intermedio sin ajuste y con contexto de 4096 tokens, mientras que los modelos de referencia son artefactos finales con contexto mucho mayor y soporte de despliegue ampliamente documentado. No hay datos de benchmarks disponibles para el modelo analizado, por lo que no es posible comparar rendimiento.
+| Modelo | Parámetros totales / activos | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| Parallax 8B lambda | ~7,77B / ~1,20B | 4096 (entrenamiento) | MIT | Híbrido recurrente-atención-MoE, expertos ternarios, checkpoint de investigación |
+| Alternativas comparables | no disponible | no disponible | no disponible | No se dispone de información sobre modelos comparables en la documentación proporcionada |
 
 ## Limitaciones y advertencias
 
-- Es un checkpoint de mitad de entrenamiento: cada export es una instantánea de una ejecución sin terminar y la calidad entre exports no es monótona. Los exports posteriores probablemente difieran de los actuales.
-- No está ajustado con instrucciones ni para chat: continuará el texto en lugar de seguir instrucciones, lo que lo hace inadecuado para aplicaciones conversacionales directas.
-- No ha recibido ajuste de seguridad, por lo que puede generar contenido inapropiado, sesgado o dañino sin ninguna mitigación incorporada.
-- Riesgo de alucinación elevado: al ser un modelo base entrenado sobre datos web y de libros, puede producir afirmaciones plausibles pero incorrectas.
-- Contexto máximo de 4096 tokens, muy inferior al de los modelos actuales de su categoría.
-- Cobertura de idiomas limitada al inglés según la model card.
-- Está declarado explícitamente como artefacto de investigación no destinado a uso en producción.
-- La licencia MIT permite uso comercial, pero la ausencia de soporte en frameworks de inferencia conocidos y la falta de publicación de los formatos de pesos dificultan un despliegue real.
-- Sobre los sesgos concretos del modelo no hay información publicada.
-- Los resultados de la búsqueda web no aportan información relevante sobre el modelo: los enlaces devueltos no guardan relación con chutesai ni con Parallax.
+- No es un modelo instruido, de chat ni ajustado en seguridad: continúa texto en lugar de seguir instrucciones, por lo que no debe usarse como asistente sin fine-tuning.
+- Checkpoint parcial: el entrenamiento se detuvo a ~900B tokens frente a los ~972,9B previstos, y el anneal de learning rate quedó incompleto (multiplicador 0,5489). La calidad entre exportaciones no es monotónica.
+- Artefacto de investigación: el autor indica explícitamente que no está pensado para uso en producción.
+- Idiomas: solo inglés declarado; no hay soporte multilingüe documentado.
+- Contexto limitado: 4096 tokens en entrenamiento y atención de ventana deslizante de 2048 en inferencia.
+- Riesgo de alucinación: no cuantificado en la información disponible; al ser un modelo base sin ajuste, es esperable en generación libre.
+- Sesgos: no documentados en la información proporcionada; las mezclas de web y libros pueden introducir sesgos no auditados.
+- Licencia MIT: permite uso comercial, pero al ser un checkpoint de investigación sin ajuste, su idoneidad para producción es dudosa.
+- La atención global dispersa (top-k) está desactivada en esta ejecución, por lo que no se aprovecha esa capacidad.
+- El tamaño del repo (691,2 GB) refleja el conjunto completo de exportaciones; conviene descargar solo la carpeta de la exportación deseada.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/chutesai/parallax-8b-lambda
-- Export más reciente (103B-tokens_step11842): https://huggingface.co/chutesai/parallax-8b-lambda/tree/main/exports/103B-tokens_step11842
-- Export 99B-tokens_step11533: https://huggingface.co/chutesai/parallax-8b-lambda/tree/main/exports/99B-tokens_step11533
-- Export 95B-tokens_step11160: https://huggingface.co/chutesai/parallax-8b-lambda/tree/main/exports/95B-tokens_step11160
-- Export 92B-tokens_step10766: https://huggingface.co/chutesai/parallax-8b-lambda/tree/main/exports/92B-tokens_step10766
-- Export 89B-tokens_step10388: https://huggingface.co/chutesai/parallax-8b-lambda/tree/main/exports/89B-tokens_step10388
-- Export 85B-tokens_step9986: https://huggingface.co/chutesai/parallax-8b-lambda/tree/main/exports/85B-tokens_step9986
-- Export 82B-tokens_step9591: https://huggingface.co/chutesai/parallax-8b-lambda/tree/main/exports/82B-tokens_step9591
-- Export 79B-tokens_step9195: https://huggingface.co/chutesai/parallax-8b-lambda/tree/main/exports/79B-tokens_step9195
-- Export 76B-tokens_step8835: https://huggingface.co/chutesai/parallax-8b-lambda/tree/main/exports/76B-tokens_step8835
-- Export 72B-tokens_step8443: https://huggingface.co/chutesai/parallax-8b-lambda/tree/main/exports/72B-tokens_step8443
-- Export 69B-tokens_step8039: https://huggingface.co/chutesai/parallax-8b-lambda/tree/main/exports/69B-tokens_step8039
-- Export 66B-tokens_step7652: https://huggingface.co/chutesai/parallax-8b-lambda/tree/main/exports/66B-tokens_step7652
-- Export 62B-tokens_step7275: https://huggingface.co/chutesai/parallax-8b-lambda/tree/main/exports/62B-tokens_step7275
-- Panel de entrenamiento en vivo: https://parallax.chutes.ai
-- Informe técnico: mencionado en la model card, sin enlace disponible en la información proporcionada.
+- Hugging Face: https://huggingface.co/chutesai/parallax-8b-lambda
+- Dashboard de entrenamiento en vivo: https://parallax.chutes.ai
+- Exportación final (step 73973): https://huggingface.co/chutesai/parallax-8b-lambda/tree/main/exports/901B-tokens_step73973
+- Exportación 901B step 73973 (fc88abba): https://huggingface.co/chutesai/parallax-8b-lambda/tree/main/exports/901B-tokens_step73973_fc88abba
+- Exportación 901B step 73973 (6a749265): https://huggingface.co/chutesai/parallax-8b-lambda/tree/main/exports/901B-tokens_step73973_6a749265
+- Exportación 901B step 73973 (b08bb757): https://huggingface.co/chutesai/parallax-8b-lambda/tree/main/exports/901B-tokens_step73973_b08bb757
+- Informe técnico (tech report): mencionado en la model card, enlace no disponible en la información proporcionada.

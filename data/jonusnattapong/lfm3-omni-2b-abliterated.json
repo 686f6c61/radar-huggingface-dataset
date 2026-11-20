@@ -66,7 +66,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 1847,
+  "downloads_30d": 1859,
   "trending_score": 0,
   "parameters": 2166928384,
   "parameters_human": "2.17B",
@@ -86,16 +86,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Architecture graph for JonusNattapong/LFM3-Omni-2B-abliterated.",
-      "url": "https://hfviewer.com/JonusNattapong/LFM3-Omni-2B-abliterated",
-      "snippet": "Task text-generation Base model LiquidAI/LFM3-Omni-2B Model type lfm3_omni Backbone type lfm3 Layers 24 Layer schedule 13 convolution, 6 full-attention, 5 sliding-window attention Hidden size 2,048 Attention grouped-query attention (GQA), 16 query / 4 key-value heads (full-attention layers) Feed-forward intermediate size 7,680 Components"
-    },
-    {
-      "title": "LiquidAI/LFM3-Omni-2B · Hugging Face",
-      "url": "https://huggingface.co/LiquidAI/LFM3-Omni-2B",
-      "snippet": "Any-to-Any model with 2B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
-    }
-  ]
+  "sources": []
 }

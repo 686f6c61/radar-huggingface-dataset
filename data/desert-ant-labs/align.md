@@ -2,99 +2,108 @@
 
 ## Resumen
 
-Align es un modelo de refinamiento de marcas temporales a nivel de palabra (word-timestamp refinement) desarrollado por Desert Ant Labs, un laboratorio europeo especializado en modelos de IA on-device. Su función es corregir los tiempos de inicio y fin que devuelven los pipelines de transcripción de Apple (`SpeechTranscriber` y `SpeechAnalyzer`) sin reemplazarlos, observando el mismo audio que el analizador ya recibe y ejecutando una pequeña cascada de Core ML en CPU y Neural Engine. El resultado es una mejora sustancial de la precisión temporal, con un error medio que se reduce en un 60% tanto en condiciones limpias como ruidosas.
+Align es un modelo de refinamiento de marcas temporales a nivel de palabra (word timestamps) desarrollado por Desert-Ant-Labs. No es un modelo de reconocimiento de voz en sentido estricto: recibe una transcripción ya existente —procedente de Apple SpeechAnalyzer, Whisper o cualquier otro ASR— junto con el audio original, y devuelve las mismas palabras con tiempos de inicio y fin corregidos. El problema que resuelve es la imprecisión típica de los timestamps de los sistemas ASR, que provoca subtítulos desalineados, cortes de vídeo mal posicionados y resaltados (highlights) desfasados.
 
-El modelo se compone de dos etapas convolucionales compactas (coarse y fine) de aproximadamente 117 000 parámetros cada una, más un calibrador basado en árboles gradient-boosted. El paquete completo compilado para Core ML ocupa unos 700 KB y refina una transcripción típica en unos pocos milisegundos en el dispositivo. Align soporta nueve idiomas (inglés, español, francés, italiano, portugués, alemán, japonés, coreano y chino) mediante condicionamiento léxico con características de bytes UTF-8 y un identificador de idioma. Su relevancia actual radica en que permite obtener marcas temporales precisas en aplicaciones iOS, macOS, tvOS y visionOS sin depender de servicios en la nube, mejorando la experiencia en subtitulado, accesibilidad y análisis de audio.
+Técnicamente se trata de un pipeline de dos etapas (coarse y fine) empaquetado en modelos extremadamente pequeños: alrededor de 560 KB en Core ML compilado en FP16, con variantes LiteRT/TFLite en FP32. La inferencia se ejecuta en el dispositivo en pocos milisegundos, sin necesidad de GPU de servidor ni de conexión de red una vez descargados los pesos. Soporta nueve idiomas (alemán, inglés, español, francés, italiano, japonés, coreano, portugués y chino) y se distribuye mediante SDKs para Swift (iOS, macOS, tvOS, visionOS) y JavaScript/Node.
+
+Su relevancia actual radica en que cubre una carencia concreta de los pipelines de voz en producción: la alineación forzada ligera y de baja latencia. Frente a alternativas como WhisperX o Montreal Forced Aligner, Align apuesta por un tamaño mínimo y ejecución nativa en Apple Silicon y Node, integrándose directamente en el flujo de SpeechAnalyzer mediante `StreamingRefiner`.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Cascada coarse-to-fine de modelos convolucionales compactos + calibrador de gradient-boosted trees |
-| Parametros totales | Aproximadamente 234 000 en las etapas convolucionales (117 000 por etapa); parametros del calibrador no disponibles |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | Ventana de analisis: 2,4 s (etapa coarse) y 0,8 s (etapa fine) |
-| Tipos de cuantizacion | FP16 (Core ML compilado), FP32 (checkpoints PyTorch) |
-| Idiomas soportados | Ingles, espanol, frances, italiano, portugues, aleman, japones, coreano y chino |
-| Licencia | Desert Ant Labs Source-Available License 1.0 (free para la mayoria de apps, licencia comercial requerida a escala) |
-| Formato de pesos | .mlmodelc (Core ML compilado), .pt (PyTorch), .bin (filtros y calibrador) |
+| Arquitectura | Pipeline de dos etapas (coarse + fine) sobre Core ML / LiteRT; arquitectura interna de red no detallada en la informacion disponible |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (ventana de busqueda por palabra, no expresada en tokens) |
+| Tipos de cuantizacion | FP16 (Core ML compilado) y FP32 (LiteRT/TFLite) |
+| Idiomas soportados | de, en, es, fr, it, ja, ko, pt, zh (9 idiomas) |
+| Licencia | desert-ant-labs-source-available (source available, no open source) |
+| Formato de pesos | `.mlmodelc` compilado (Core ML) y `.tflite` (LiteRT) |
+| Tamano en disco | ~0,3 MB por etapa en Core ML FP16; ~0,5 MB por etapa en TFLite FP32 |
+| Plataformas | iOS, macOS, tvOS, visionOS, Linux, Windows, Node |
+| Tarea (pipeline) | automatic-speech-recognition (refinamiento de timestamps) |
+| Entrada de audio | 16 kHz recomendado; otras frecuencias limitadas a menos de 37 horas |
+| Version de pesos | v1.1.0 |
 
 ## Arquitectura y entrenamiento
 
-Align utiliza una arquitectura de dos etapas en cascada sobre un espectrograma log-mel calculado con Accelerate/vDSP. La etapa coarse busca en un contexto de 2,4 s (241 frames) alrededor de la frontera propuesta por Apple y predice una distribucion sobre frames. La etapa fine re-busca en un recorte de 0,8 s (81 frames) recentrado en la prediccion coarse para obtener una estimacion mas ajustada. Cada etapa opera con batch fijo de 16 en CPU y Neural Engine. Un calibrador de gradient-boosted trees mapea las caracteristicas de incertidumbre de ambas etapas a una correccion final, ajustado solo sobre el split de validacion para reducir regresiones grandes. Ademas, existe un fallback estructural que mantiene la marca temporal original de Apple si la correccion propuesta es invalida, toca el borde de la ventana o carece de contexto de streaming.
+La model card describe un diseno en dos etapas: una etapa *coarse* que aproxima la posicion de cada palabra en el audio y una etapa *fine* que ajusta los limites de inicio y fin. Ambas se empaquetan como modelos compilados independientes (`align-coarse` y `align-fine`), lo que permite ejecutarlas secuencialmente con una huella de memoria minima. No se detalla en la informacion disponible el tipo de capas, el numero de parametros ni la funcion de perdida empleada.
 
-El entrenamiento se realizo sobre audio multilingue de FLEURS (CC BY 4.0) y las referencias de fronteras de palabras se obtuvieron de Qwen3-ForcedAligner-0.6B (Apache-2.0) para los nueve idiomas. OWSM-CTC v4 1B (CC BY 4.0) se utilizo como comprobacion de outliers gruesos. Las propuestas genuinas de Apple `SpeechAnalyzer` se recolectaron en macOS 26. No se empleo RLHF ni DPO; el ajuste es puramente supervisado sobre las referencias de forced alignment.
+Tampoco se especifican los datos de entrenamiento: ni el volumen de horas de audio, ni la composicion del corpus, ni si se aplico alguna fase de ajuste supervisado especifica por idioma. Lo que si se documenta es el comportamiento funcional: el modelo recibe pares (palabra, tiempo de inicio, tiempo de fin) junto con las muestras de audio y devuelve los mismos textos con rangos temporales corregidos. Existe un mecanismo de salvaguarda estructural: si la correccion cae en el borde de la ventana de busqueda o produce un rango invertido (fin anterior al inicio), se conserva el timestamp original. En modo streaming, las palabras cuya ventana de contexto futuro aun no esta en buffer tambien mantienen sus tiempos originales.
+
+La innovacion principal no es arquitectonica sino de despliegue: modelos de menos de 1 MB que permiten alineacion forzada en el propio dispositivo, con integracion directa en SpeechAnalyzer (iOS 26+) a traves de `StreamingRefiner`, que graba el audio pasado al analizador y corrige solo los resultados finalizados, dejando intactos los volatiles.
 
 ## Capacidades
 
-- Refinamiento de marcas temporales a nivel de palabra para transcripciones de Apple `SpeechTranscriber` y `SpeechAnalyzer`.
-- Correccion de tiempos de inicio y fin de cada palabra, devolviendo el mismo conjunto de palabras con `audioTimeRange` ajustado.
-- Soporte multilingue para nueve idiomas: ingles, espanol, frances, italiano, portugues, aleman, japones, coreano y chino.
-- Ejecucion completamente on-device en CPU y Neural Engine, sin conexion a internet.
-- Integracion nativa con el SDK Swift de Desert Ant Labs (desert-ant-core) para iOS, macOS, tvOS y visionOS.
-- Condicionamiento lexico mediante caracteristicas de bytes UTF-8 de las palabras vecinas y un identificador de idioma, permitiendo un unico modelo para todos los idiomas.
-- Fallback estructural que preserva la marca temporal original de Apple cuando una correccion no es segura o carece de contexto de streaming.
-- Checkpoints PyTorch incluidos para reentrenamiento o uso en otros runtimes.
+- Refinamiento de marcas temporales a nivel de palabra sobre transcripciones existentes, con precision de milisegundos (ejemplo documentado: "world" pasa de 2,61-3,04 s a 2,57-2,98 s).
+- Alineacion forzada (forced alignment) de cualquier transcripcion contra su audio, independientemente del ASR de origen.
+- Soporte multilingue para nueve idiomas: aleman, ingles, espanol, frances, italiano, japones, coreano, portugues y chino.
+- Deteccion previa de idioma soportado mediante `isSupported(languageCode:)`; para idiomas no soportados devuelve las palabras sin cambios y sin lanzar error.
+- Integracion en streaming con Apple SpeechAnalyzer mediante `StreamingRefiner`, con soporte de audio por buffers (`analyzerInput`) o por fichero (`AVAudioFile`).
+- Ejecucion en dispositivo (on-device) en iOS, macOS, tvOS, visionOS, Linux, Windows y Node, sin llamadas de red tras la descarga inicial de pesos.
+- API en Swift (paquete SwiftPM `desert-ant-core` desde 4.3.0) y en JavaScript/TypeScript (`@desert-ant-labs/align`, subruta `/native` con binarios precompilados para linux-x64, linux-arm64 y darwin-arm64).
+- Validacion de entrada robusta: comprueba tiempos finitos en rango [-1, 10.000.000] s, frecuencia de muestreo positiva y audio no vacio; lanza `AlignError.invalidInput` (Swift) o `RangeError` (JS) ante entradas invalidas.
+- Gestion de pesos con descarga desde Hugging Face y cache local, con opcion de precarga (`download`) o directorio offline propio.
+
+No se documentan capacidades de generacion de texto, razonamiento, codigo, vision ni tool calling: el modelo es exclusivamente de alineacion de habla.
 
 ## Casos de uso
 
-- Subtitulado automatico en aplicaciones de video: Align corrige los tiempos de las palabras transcritas por Apple, de modo que los subtitulos aparecen sincronizados con el habla en escenas rapidas o con ruido de fondo, mejorando la legibilidad en reproductores de video nativos de iOS y macOS.
-- Accesibilidad para personas con discapacidad auditiva: en apps de llamadas o videoconferencias, los subtitulos en tiempo real con marcas temporales precisas permiten seguir conversaciones grupales sin desfases, especialmente en entornos ruidosos donde el error de Apple puede superar los 120 ms.
-- Notas de voz y grabacion de reuniones: las apps de notas que transcriben audio pueden usar Align para indexar las palabras con sus tiempos exactos, permitiendo saltar directamente a un fragmento concreto de la grabacion al tocar una palabra.
-- Aplicaciones de karaoke o sincronizacion de letras: Align ajusta los tiempos de las frases para que las letras se resalten en el momento exacto en que se pronuncian, mejorando la experiencia en apps de musica y aprendizaje de idiomas.
-- Analisis linguistico y fonetico: investigadores que necesitan alineaciones palabra-audio precisas pueden usar Align como post-procesador de transcripciones de Apple, reduciendo el error medio de 113 ms a 45 ms en audio limpio, lo que facilita estudios de pronunciacion o dialectologia.
-- Asistentes de voz con resaltado de comandos: en apps de domotica o asistentes personales, Align permite resaltar visualmente la palabra clave reconocida en pantalla con su tiempo exacto, mejorando la retroalimentacion visual del usuario.
-- Traduccion simultanea con subtitulos sincronizados: al combinar la transcripcion de Apple con un motor de traduccion, Align asegura que los subtitulos traducidos aparezcan en el momento correcto, incluso en conversaciones rapidas o con acentos.
-- Herramientas de edicion de audio y video: los editores pueden usar Align para generar marcadores precisos de cada palabra en una pista de voz, facilitando el corte de silencios o la sincronizacion de efectos sonoros con el dialogo.
+- **Subtitulado automatico de video**: dado un transcript de Whisper o SpeechAnalyzer, Align corrige los tiempos de cada palabra para que los subtitulos SRT/VTT aparezcan y desaparezcan en el instante exacto, eliminando el desfase tipico de los timestamps brutos del ASR.
+- **Edicion de video basada en transcripcion**: en editores que permiten cortar por texto (text-based editing), los cortes deben caer en el limite de palabra; Align garantiza que el corte no se coma la primera silaba ni deje colgando la ultima.
+- **Generacion de clips y highlights**: para extraer fragmentos de 15-30 segundos a partir de una busqueda por palabras clave, los limites de inicio y fin deben ser precisos; el refinamiento en milisegundos evita clips que empiezan a media palabra.
+- **Transcripcion en dispositivos Apple con SpeechAnalyzer**: integracion via `StreamingRefiner` en apps de iOS 26+ para obtener timestamps corregidos en tiempo real sin enviar audio a la nube, con solo 560 KB de modelos en el bundle o descargados en el onboarding.
+- **Herramientas de accesibilidad**: subtitulos sincronizados y resaltado de palabra hablada (karaoke-style) en apps de lectura o aprendizaje de idiomas, donde el desfase de 40-50 ms es perceptible.
+- **Pipelines de datos de voz en Node**: procesamiento por lotes de archivos de audio y transcripciones en servidores Linux (x64 o arm64) usando el subpath `/native`, con inferencia en CPU y sin dependencias de GPU.
+- **Post-procesado de transcripciones medicas o legales**: cuando se necesita citar fragmentos de audio con marcas temporales exactas para auditoria o revision, el refinamiento reduce el trabajo manual de verificacion.
+- **Busqueda dentro de audio**: indexacion de reuniones o podcasts por palabra con timestamps precisos, de modo que al pulsar un resultado se salte al instante exacto en el reproductor.
 
 ## Benchmarks y rendimiento
 
-La evaluacion se realizo sobre el runtime Swift exacto y los modelos Core ML incluidos, con 223 grabaciones limpias y 210 ruidosas de grupo hold-out en los nueve idiomas, contra referencias de forced alignment. El error se mide como distancia absoluta media desde la frontera de referencia.
-
-| Condicion | Error de Apple (ms) | Error con Align (ms) | Reduccion | Mediana (ms) | Dentro de 50 ms |
-|---|---:|---:|---:|---:|---:|
-| Limpio | 113,5 | 44,9 | 60% | 28,2 | 75,1% |
-| Ruidoso | 124,4 | 50,1 | 60% | 32,0 | 69,4% |
-
-No se han publicado resultados de benchmarks estandar como MMLU, HumanEval o GSM8K, ya que Align no es un modelo de lenguaje general sino un refinador de marcas temporales de audio.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card unicamente afirma que el refinamiento de un resultado tipico se completa en "unos pocos milisegundos" en dispositivo, sin cifras de latencia, throughput ni metricas de error de alineacion (por ejemplo, desviacion media absoluta en milisegundos) ni comparaciones cuantitativas con otros alineadores.
 
 ## Requisitos de hardware
 
-- Tamano compilado de 700 KB (Core ML), con dos etapas de 300 KB cada una, filtros de 40 KB y calibrador de 70 KB.
-- Ejecucion en CPU y Neural Engine de dispositivos Apple (iOS, macOS, tvOS, visionOS); no requiere GPU dedicada.
-- Inferencia en unos pocos milisegundos por palabra en dispositivos Apple modernos, gracias al batch fijo de 16 y a la pequena cantidad de parametros.
-- No es necesario un servidor ni GPU de centro de datos; funciona completamente offline en el dispositivo.
-- Despliegue mediante el SDK Swift `desert-ant-core` (version 3.0.0 o superior) con el producto `Align`; tambien se pueden usar los checkpoints PyTorch para otros runtimes.
-- Compatible con vLLM, llama.cpp u Ollama? No, estos son para modelos de lenguaje; Align se integra via Core ML y el SDK propietario.
+- **VRAM**: no aplica en el sentido habitual; los modelos Core ML FP16 ocupan aproximadamente 0,3 MB cada etapa y las variantes TFLite FP32 unos 0,5 MB, por lo que la huella de memoria es del orden de megabytes, no de gigabytes.
+- **GPU**: no se requiere GPU dedicada. La inferencia se ejecuta en CPU y, en plataformas Apple, aprovecha Core ML (que puede usar Neural Engine o GPU de forma transparente).
+- **GPU de consumo**: cabe en cualquier dispositivo, incluidos iPhone, iPad, Apple TV, Apple Vision Pro y Mac con Apple Silicon, asi como en servidores modestos con CPU x86-64 o ARM64.
+- **Plataformas de despliegue**: SDK Swift (SwiftPM) para iOS, macOS, tvOS y visionOS; paquete npm `@desert-ant-labs/align` con binarios nativos para linux-x64, linux-arm64 y darwin-arm64. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo de lenguaje.
+- **Latencia y throughput**: "unos pocos milisegundos" por resultado tipico segun el autor; no se publican cifras de throughput (palabras por segundo) ni latencias por tamano de audio.
+- **Almacenamiento**: los pesos se descargan de Hugging Face en el primer uso y se cachean; el repositorio figura con 0,0 GB de tamano reportado, coherente con modelos de menos de 1 MB.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento publicados de modelos similares en la misma tarea (refinamiento de marcas temporales on-device para Apple). Como referencia cualitativa:
+| Modelo | Tipo | Tamano | Idiomas | Ejecucion | Licencia |
+|---|---|---|---|---|---|
+| Align (desert-ant-labs) | Alineacion forzada de timestamps | ~0,3-0,5 MB por etapa | 9 | On-device (Core ML / LiteRT), Swift y Node | Source available |
+| WhisperX | Pipeline ASR + alineacion (wav2vec2) | Cientos de MB (modelo de alineacion) | Amplio, depende del modelo de alineacion | Python, GPU recomendada | MIT / segun componentes |
+| Montreal Forced Aligner (MFA) | Alineacion forzada clasica | Depende del diccionario y modelo acustico | Limitado a diccionarios disponibles | Python, CPU | MIT |
+| Apple SpeechAnalyzer (nativo) | ASR con timestamps | Integrado en el sistema | Limitado por el sistema | On-device en Apple | Propietaria de Apple |
 
-| Modelo | Parametros | Contexto | Licencia | Enfoque |
-|---|---|---|---|---|
-| Align (Desert Ant Labs) | ~234k (etapas conv.) | 2,4 s + 0,8 s | Source-available 1.0 | Cascada coarse-to-fine sobre log-mel, on-device Core ML |
-| Qwen3-ForcedAligner-0.6B | 0,6B | No especificado | Apache-2.0 | Forced alignment generico, no on-device, usado como referencia de entrenamiento |
-| Apple SpeechAnalyzer (sin Align) | No disponible | No disponible | Propietario | Transcripcion con marcas temporales basicas, error medio de 113-124 ms |
-
-La comparacion cuantitativa con Qwen3-ForcedAligner no esta disponible en la informacion proporcionada. Align se distingue por su tamano minimo, su ejecucion en dispositivo y su integracion directa con el ecosistema Apple.
+No se dispone de datos de rendimiento comparativo publicados en la informacion proporcionada, por lo que la comparativa se limita a caracteristicas estructurales (tamano, plataformas, licencia) y no a metricas de precision de alineacion.
 
 ## Limitaciones y advertencias
 
-- Las referencias de evaluacion son estimaciones de forced alignment automatico, no anotaciones humanas, por lo que las cifras muestran una reduccion consistente del error de Apple pero no una precision a nivel de muestra de audio.
-- Una correccion aprendida no garantiza mejorar cada frontera individual; el fallback estructural preserva la marca original cuando la correccion parece insegura, pero no puede detectar todos los errores plausibles.
-- Los idiomas ingles, italiano, japones y coreano son los mas debiles bajo la convencion de referencia actual.
-- La licencia es source-available, no open source: es gratuita para la mayoria de aplicaciones, pero se requiere una licencia comercial a escala; revisar los terminos completos en https://license.desertant.com/1.0.
-- Align solo funciona como post-procesador de las transcripciones de Apple; no es un sistema de reconocimiento de voz autonomo y no soporta idiomas fuera de los nueve listados (los locales fuera de ese conjunto se pasan sin cambios).
-- El modelo esta optimizado para el runtime Swift de Desert Ant Labs; su uso fuera de ese SDK requiere adaptacion de los checkpoints PyTorch y de los archivos de configuracion.
+- **Licencia no open source**: la licencia `desert-ant-labs-source-available` con enlace a license.desertant.com no es una licencia de codigo abierto aprobada por OSI; es imprescindible revisar los terminos antes de cualquier uso comercial o redistribucion de los pesos.
+- **No es un ASR**: Align no transcribe audio; necesita una transcripcion previa. Su calidad depende de que las palabras de entrada coincidan con el audio.
+- **Correcciones plausibles pero erroneas**: la model card advierte explicitamente que las salvaguardas son estructurales y no de precision; una correccion que parece razonable pero es incorrecta se aplica igualmente.
+- **Fallback silencioso**: para idiomas no soportados, palabras fuera de la ventana de busqueda o rangos invertidos, el modelo devuelve los tiempos originales sin lanzar error, lo que puede enmascarar problemas en produccion si no se monitoriza el flag `refined`.
+- **Idiomas limitados a nueve**: no cubre idiomas como sueco, neerlandes, arabe, hindi o ruso; en esos casos el refinamiento no aporta nada.
+- **Restricciones de entrada**: tiempos fuera de [-1, 10.000.000] s, frecuencias de muestreo no positivas, audio vacio o audio a frecuencia distinta de 16 kHz de mas de 37 horas provocan errores o rechazo.
+- **Dependencia de plataforma**: la integracion con SpeechAnalyzer requiere iOS 26 o posterior; los binarios nativos de Node solo se distribuyen para linux-x64, linux-arm64 y darwin-arm64.
+- **Riesgo de sesgo**: no se documenta la composicion del corpus de entrenamiento ni la cobertura por acento, dialecto o calidad de audio, por lo que no puede evaluarse el sesgo por variedad linguistica.
+- **Sin benchmarks publicados**: no hay metricas de precision de alineacion ni comparaciones con WhisperX o MFA, lo que dificulta una evaluacion cuantitativa previa a la adopcion.
+- **Descarga en primer uso**: si no se precargan los pesos, la primera inferencia requiere red y puede introducir latencia inesperada en produccion.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/desert-ant-labs/align
-- Documentacion del SDK y ejemplos: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/docs/models/align.md
-- Repositorio del SDK: https://github.com/Desert-Ant-Labs/desert-ant-core
-- Sitio web de Desert Ant Labs: https://desertant.com/
-- Perfil de la organizacion en Hugging Face: https://huggingface.co/desert-ant-labs
-- Licencia: https://license.desertant.com/1.0
-- Dataset FLEURS: https://huggingface.co/datasets/google/fleurs
-- Qwen3-ForcedAligner-0.6B: https://huggingface.co/Qwen/Qwen3-ForcedAligner-0.6B
+- Pesos version v1.1.0: https://huggingface.co/desert-ant-labs/align/tree/v1.1.0
+- Repositorio del SDK (desert-ant-core): https://github.com/Desert-Ant-Labs/desert-ant-core
+- Documentacion de origen de la model card: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/docs/models/align.md
+- Requisitos Swift: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#swift
+- Requisitos JavaScript/TypeScript: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#javascript-and-typescript
+- Descarga y cache de modelos: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#model-downloads-and-caching
+- Paquete npm: https://www.npmjs.com/package/@desert-ant-labs/align
+- Licencia: https://license.desertant.com/

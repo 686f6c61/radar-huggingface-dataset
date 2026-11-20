@@ -1,0 +1,144 @@
+{
+  "schema": 2,
+  "id": "MohsinElis/mfft-checkpoints",
+  "slug": "mohsinelis-mfft-checkpoints",
+  "author": "MohsinElis",
+  "url": "https://huggingface.co/MohsinElis/mfft-checkpoints",
+  "created_at": "2026-09-13T07:43:11.000Z",
+  "updated_at": "2026-11-20T03:40:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "deepfake-detection",
+    "ai-generated-images",
+    "synthetic-image-detection",
+    "frequency-analysis",
+    "transformer",
+    "fourier-transform",
+    "computer-vision",
+    "forensics",
+    "image-classification",
+    "en",
+    "dataset:MohsinElis/mfft-master-manifest",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 95701689657,
+  "storage_human": "95.7 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "AI-Generated Image Forensics",
+      "dataset": "Held-Out 18K Forensic Benchmark (Canonical Split e8db1a72)",
+      "metric": "Accuracy",
+      "value": 98.37
+    },
+    {
+      "task": "AI-Generated Image Forensics",
+      "dataset": "Held-Out 18K Forensic Benchmark (Canonical Split e8db1a72)",
+      "metric": "AUC-ROC",
+      "value": 99.88
+    },
+    {
+      "task": "AI-Generated Image Forensics",
+      "dataset": "Held-Out 18K Forensic Benchmark (Canonical Split e8db1a72)",
+      "metric": "F1-Score",
+      "value": 98.36
+    },
+    {
+      "task": "AI-Generated Image Forensics",
+      "dataset": "Held-Out 18K Forensic Benchmark (Canonical Split e8db1a72)",
+      "metric": "Precision",
+      "value": 98.6
+    },
+    {
+      "task": "AI-Generated Image Forensics",
+      "dataset": "Held-Out 18K Forensic Benchmark (Canonical Split e8db1a72)",
+      "metric": "Recall",
+      "value": 98.13
+    },
+    {
+      "task": "AI-Generated Image Forensics",
+      "dataset": "Held-Out 18K Forensic Benchmark (Canonical Split e8db1a72)",
+      "metric": "Accuracy",
+      "value": 98.59
+    },
+    {
+      "task": "AI-Generated Image Forensics",
+      "dataset": "Held-Out 18K Forensic Benchmark (Canonical Split e8db1a72)",
+      "metric": "AUC-ROC",
+      "value": 99.89
+    },
+    {
+      "task": "AI-Generated Image Forensics",
+      "dataset": "Held-Out 18K Forensic Benchmark (Canonical Split e8db1a72)",
+      "metric": "F1-Score",
+      "value": 98.58
+    },
+    {
+      "task": "AI-Generated Image Forensics",
+      "dataset": "Held-Out 18K Forensic Benchmark (Canonical Split e8db1a72)",
+      "metric": "Precision",
+      "value": 99.24
+    },
+    {
+      "task": "AI-Generated Image Forensics",
+      "dataset": "Held-Out 18K Forensic Benchmark (Canonical Split e8db1a72)",
+      "metric": "Recall",
+      "value": 97.94
+    },
+    {
+      "task": "AI-Generated Image Forensics",
+      "dataset": "Held-Out 18K Forensic Benchmark (Canonical Split e8db1a72)",
+      "metric": "Accuracy",
+      "value": 98.11
+    },
+    {
+      "task": "AI-Generated Image Forensics",
+      "dataset": "Held-Out 18K Forensic Benchmark (Canonical Split e8db1a72)",
+      "metric": "AUC-ROC",
+      "value": 99.7
+    },
+    {
+      "task": "AI-Generated Image Forensics",
+      "dataset": "Held-Out 18K Forensic Benchmark (Canonical Split e8db1a72)",
+      "metric": "F1-Score",
+      "value": 98.09
+    },
+    {
+      "task": "AI-Generated Image Forensics",
+      "dataset": "Held-Out 18K Forensic Benchmark (Canonical Split e8db1a72)",
+      "metric": "Precision",
+      "value": 98.8
+    },
+    {
+      "task": "AI-Generated Image Forensics",
+      "dataset": "Held-Out 18K Forensic Benchmark (Canonical Split e8db1a72)",
+      "metric": "Recall",
+      "value": 97.41
+    }
+  ],
+  "sources": []
+}

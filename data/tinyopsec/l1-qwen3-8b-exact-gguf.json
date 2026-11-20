@@ -47,31 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ICD-10-Code: Tendovaginitis stenosans [de Quervain]",
-      "url": "https://gesund.bund.de/icd-code-suche/m65-4",
-      "snippet": "Hier finden Sie Erläuterungen zum ICD-Diagnoseschlüssel „m65-4“ und dessen Unterkategorien."
-    },
-    {
-      "title": "ICD-10-GM-2026: M65.- Synovitis und Tenosynovitis - icd-code.de",
-      "url": "https://www.icd-code.de/icd/code/M65.-.html",
-      "snippet": "Krankheiten des Weichteilgewebes im Zusammenhang mit Beanspruchung, Überbeanspruchung und Druck (M70.-) Soll der …"
-    },
-    {
-      "title": "icd-10 Code: M65.4 - Tendovaginitis stenosans [de Quervain]",
-      "url": "https://abrechnung.clauer.de/icd-10/M65.4/tendovaginitis-stenosans-de-quervain.html",
-      "snippet": "Eine Sehnenscheide ist eine Hülle, die die Sehne umgibt. Sie polstert die Sehne ab und enthält eine geringe Menge Flüssigkeit. …"
-    },
-    {
-      "title": "M65.4 - Tendovaginitis stenosans [de Quervain] - ICD-10-GM 2026",
-      "url": "https://www.drgsystem.de/icd10/M654",
-      "snippet": "1 day ago · Quelle: ICD-10-GM, Version 2026 — Internationale statistische Klassifikation der Krankheiten und verwandter …"
-    },
-    {
-      "title": "ICD-10-GM-2026: M65-M68 Krankheiten der Synovialis und der Sehnen - icd ...",
-      "url": "https://www.icd-code.de/icd/code/M65-M68.html",
-      "snippet": "Krankheiten der Synovialis und der Sehnen bei anderenorts klassifizierten Krankheiten."
-    }
-  ]
+  "sources": []
 }

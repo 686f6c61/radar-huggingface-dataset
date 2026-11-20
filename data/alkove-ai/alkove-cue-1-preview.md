@@ -2,130 +2,122 @@
 
 ## Resumen
 
-alkove-cue-1-preview es un detector de actividad de voz (VAD, voice activity detection) publicado por alkove-ai que devuelve, cada 30 ms, la probabilidad de que alguien esté hablando a partir de audio mono a 16 kHz. Forma parte de Alkove, un SDK de voz que se ejecuta en el dispositivo (navegador o movil) y que agrupa aislamiento de voz, wake word, huella de locutor, actividad de voz y pronunciacion sin enviar audio a ningun servidor. El modelo se distribuye como un unico fichero ONNX de 1,2 MB cuantizado a int8 (opset 17) y esta pensado para ejecutarse con onnxruntime u onnxruntime-web 1.30 o superior en un solo hilo de WebAssembly.
+alkove-cue-1-preview es un modelo de deteccion de actividad de voz (VAD) y deteccion de fin de turno desarrollado por alkove-ai, pensado para ejecutarse en tiempo real dentro de un SDK de voz on-device. No es un modelo generativo: procesa audio de 16 kHz en bloques de 480 muestras (30 ms) y devuelve tres probabilidades por bloque: si alguien esta hablando (`speech`), si el turno termina (`turn`) y si termina sobre una hesitacion (`hesitation`). Forma parte de Alkove, un SDK de voz que incluye aislamiento de voz, wake word, huella de voz, actividad de voz y pronunciacion, todo ejecutandose en el navegador o en el telefono sin enviar audio a un servidor.
 
-El problema que resuelve es acotar cuando empieza y cuando termina un turno de habla en tiempo real y con coste computacional minimo: en un Galaxy Z Fold8 con Chrome y WebAssembly a un hilo consume 11 ms de CPU por cada segundo de audio procesado, aproximadamente el 1 % de un nucleo. Esta disenado para colocarse detras de alkove-focus-1-preview, el modelo de aislamiento de voz de la misma familia, de forma que las voces y el ruido que Focus ha eliminado no disparen la deteccion.
+El modelo es extremadamente compacto: los pesos en int8 ocupan 1,2 MB y el estado interno de la sesion son 5976 floats. Esta disenado para correr en un solo hilo, de forma nativa o en WebAssembly, con un coste medido de 1,9 ms por segundo de audio en un Galaxy Z Fold8 y 3,0 ms por segundo de audio en un Apple M1 Max. Se distribuye en formato propietario `.alk` para el motor Alkove (Rust, Apache-2.0) y se integra con LiveKit Agents, Pipecat y Wyoming/Home Assistant mediante plugins oficiales.
 
-Se trata de una preview: el autor advierte que los pesos y la interfaz pueden cambiar antes de la version 1. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y los resultados declarados en la model card estan marcados como no verificados. La licencia es Apache 2.0 y el copyright corresponde a Eddy Bordi (2026).
+La relevancia actual del modelo esta en el problema que resuelve: la deteccion fiable del fin de turno en agentes de voz conversacionales, donde cortar al usuario demasiado pronto rompe la experiencia. Cue anade una segunda cabeza sobre las mismas capas que estima la probabilidad de fin de turno y de hesitacion, lo que permite politicas de corte mas informadas que un VAD tradicional. Es una version preview: el autor advierte que los pesos y la interfaz pueden cambiar antes de la version 1.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible en detalle; modelo ONNX (opset 17) con estado recurrente explicito de 5848 floats y operador estandar `DFT`; procesa tramas de 480 muestras |
-| Parametros totales | no disponible |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica; modelo de streaming con estado de 5848 floats que se realimenta en cada llamada |
-| Tipos de cuantizacion | int8 (unico formato publicado) |
-| Idiomas soportados | no disponible (la model card no declara idiomas; la evaluacion usa frances de Common Voice y LibriTTS-R en ingles) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | ONNX (`alkove-cue-1-preview.onnx`, 1,2 MB) + manifiesto JSON con sha256, tamanos, entradas y salidas |
-
-Otros datos de interfaz relevantes:
-
-| Elemento | Valor |
-|---|---|
-| Entrada `audio` | float32 `[1, 480]`, 16 kHz mono, rango -1..1 |
-| Entrada `state` | float32 `[5848]`, ceros al inicio y despues el `next_state` previo |
-| Salida `speech` | float32 `[1, 1]`, probabilidad de habla, con 1 paso (30 ms) de retardo |
-| Salida `next_state` | float32 `[5848]`, a realimentar en la siguiente llamada |
-| Paso de analisis | 30 ms (480 muestras a 16 kHz) |
-| Regla de decision sugerida | inicio cuando `speech` >= 0,5; fin cuando permanece por debajo de 0,1 durante 600 ms |
-| Runtime | onnxruntime y onnxruntime-web >= 1.30 (requiere el operador `DFT`) |
+| Arquitectura | No disponible (modelo neuronal para VAD y deteccion de fin de turno; no se detalla la topologia interna) |
+| Parametros totales | No disponible |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No aplica (procesamiento por bloques de 30 ms con estado recurrente de 5976 floats) |
+| Tipos de cuantizacion | int8 (pesos del archivo `.alk`) |
+| Idiomas soportados | No disponible en la model card; los benchmarks de fin de turno cubren 7 idiomas (ingles, frances, espanol, italiano, portugues, aleman y neerlandes) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | `.alk` (formato propietario del motor Alkove, documentado en el repositorio) |
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la topologia interna (no se indica si es una CNN, una red recurrente o un hibrido). Lo que si se documenta es la interfaz de inferencia: un modelo ONNX con estado, que recibe una trama de 30 ms y un vector de estado de 5848 floats, y devuelve la probabilidad de habla junto con el nuevo estado. El uso del operador `DFT` del estandar ONNX sugiere un front-end frecuencial dentro del grafo, lo que explica que el modelo dependa de onnxruntime 1.30 o superior y que funcione en un solo hilo de WebAssembly sin dependencias nativas.
+La model card no detalla la topologia interna (numero de capas, tipo de bloques, atencion o convolucion). Lo que si se especifica es la interfaz: una llamada por cada 480 muestras (30 ms) de audio mono a 16 kHz en coma flotante normalizado a [-1, 1]. El modelo mantiene estado entre llamadas (5976 floats, inicializados a cero), y la cabeza de fin de turno usa sus ultimos 128 floats como estado, que deben reiniciarse al final de cada turno. Las tres salidas (`speech`, `turn`, `hesitation`) van un paso (30 ms) por detras de la entrada.
 
-No hay informacion sobre el numero de tokens o horas de audio de entrenamiento, la composicion exacta del dataset ni si hubo etapas de ajuste fino. La evaluacion publicada usa como fuentes voz de Common Voice French dev (CC0) y LibriTTS-R dev-clean (CC BY 4.0), y ruido y musica de MUSAN (CC BY 4.0), pero eso corresponde al conjunto de test, no necesariamente al de entrenamiento. Tampoco se documenta ninguna innovacion de decodificacion (especulativa, atencion linear, etc.); la aportacion practica es el coste: 1,2 MB en int8 y ejecucion en CPU.
+El modelo se presenta como una segunda cabeza sobre las mismas capas que el VAD, de modo que comparte representacion para actividad de voz y fin de turno. No se publican datos sobre el numero de tokens o horas de audio de entrenamiento, la composicion exacta del dataset ni si hubo ajuste fino con RLHF/DPO (no aplica en un modelo discriminativo de este tipo). Los benchmarks se evaluan sobre streams construidos con Common Voice French dev (CC0), LibriTTS-R dev-clean (CC BY 4.0) y MUSAN (CC BY 4.0), y sobre LiveKit eot-bench (CC BY 4.0).
 
 ## Capacidades
 
-- Deteccion de actividad de voz en tiempo real: emite una probabilidad de habla cada 30 ms sobre audio de 16 kHz en mono.
-- Inferencia con estado: mantiene contexto acustico entre tramas mediante el vector `state` / `next_state` de 5848 floats, sin necesidad de buffers externos.
-- Ejecucion en CPU y en navegador: funciona con onnxruntime y onnxruntime-web 1.30+ en WebAssembly de un solo hilo, sin GPU.
-- Segmentacion de turnos: con la regla sugerida (0,5 para abrir, 600 ms por debajo de 0,1 para cerrar) produce eventos de inicio y fin de habla utilizables por un agente de voz.
-- Integracion con la familia Alkove: pensado para ir detras de alkove-focus-1-preview; alkove-spot-1-preview ofrece la misma salida `speech`, por lo que Cue es redundante si ya se ejecuta Spot.
-- Robustez declarada frente a ruido y musica: en las pruebas del autor no produce falsos inicios sobre ruido y registra 0,1 falsos inicios por minuto con musica (Silero VAD v6: 0,4).
-- No soporta identificacion de locutor, prediccion semantica del fin de turno ni deteccion de sonidos no vocalicos (fuera de alcance segun el autor).
+- Deteccion de actividad de voz: probabilidad de que alguien este hablando cada 30 ms, con una latencia de un paso (30 ms).
+- Deteccion de fin de turno: probabilidad de que el turno termine en el punto actual, pensada para leerse durante las pausas.
+- Deteccion de hesitacion: probabilidad de que el turno termine sobre una hesitacion, util para distinguir pausas de duda de finales reales.
+- Procesamiento en tiempo real con estado persistente entre bloques, apto para streaming continuo de audio.
+- Ejecucion en un solo hilo, nativa o en WebAssembly, con consumo reducido (1,2 MB de pesos).
+- Integracion como VAD y detector de turno en LiveKit Agents, Pipecat y Wyoming (Home Assistant).
+- No realiza generacion de texto, razonamiento, codigo, matematicas ni vision; es un modelo puramente discriminativo de audio.
+- No se documentan capacidades multilingues explicitas mas alla de la evaluacion en 7 idiomas del benchmark de fin de turno.
 
 ## Casos de uso
 
-- Apertura y cierre de turno en agentes de voz: el modelo marca el inicio de habla con 30 ms de resolucion y cierra el turno tras 600 ms de silencio, lo que permite construir un bucle de escucha continua sin depender de botones ni de pulsar para hablar.
-- Gating previo de un sistema de speech-to-text: al descartar las tramas sin habla se evita enviar audio silencioso al ASR, con el consiguiente ahorro de ancho de banda y de coste de inferencia en arquitecturas cliente-servidor.
-- Ahorro de bateria en dispositivos moviles: con 11 ms de CPU por segundo de audio en un Galaxy Z Fold8, el detector puede permanecer activo de forma continua y despertar al resto del pipeline solo cuando hay voz.
-- Asistencia por voz en el navegador: el binario ONNX de 1,2 MB se carga con onnxruntime-web en una pestana y procesa microfono local, sin instalar nada ni enviar audio fuera del dispositivo.
-- Filtrado de audio en herramientas de reunion o grabacion: combinado con alkove-focus-1-preview, permite recortar automaticamente los tramos con voz y descartar silencios y musica antes de transcribir o archivar.
-- Telemetria de calidad de llamada: contar proporciones de habla, silencio y solapamiento por minuto para detectar problemas de red o de microfono en un servicio de voz.
-- Wake word con etapa previa de VAD: reducir el consumo del detector de palabra de activacion al ejecutarlo solo cuando Cue confirma actividad vocal.
-- Kioscos y dispositivos empotrados: al no requerir GPU y ocupar 1,2 MB, cabe en hardware con recursos muy limitados y se ejecuta sobre onnxruntime en el propio dispositivo.
+- Agentes de voz conversacionales en produccion: Cue se usa como VAD y detector de fin de turno en LiveKit Agents y Pipecat, de modo que el agente espera a que el usuario termine de hablar antes de responder. La cabeza de fin de turno con umbral 0,6 leido cada 0,1 s de pausa permite politicas de corte mas finas que un simple temporizador.
+- Asistentes de voz en el navegador: al ejecutarse en WebAssembly a traves del SDK de Alkove, permite VAD local sin enviar audio a un servidor, adecuado para aplicaciones web con requisitos de privacidad.
+- Aplicaciones moviles on-device: el paquete Swift (iOS) y el SDK de Android permiten integrar VAD y deteccion de turno en el telefono con un coste de 1,9 ms por segundo de audio en hardware movil de gama alta.
+- Home Assistant y domotica por voz: el plugin `wyoming-alkove` lo coloca delante del speech-to-text de Assist para segmentar el audio del usuario y evitar transcripciones de silencios o ruido.
+- Transcripcion y diarizacion por lotes en streaming: la salida `speech` con umbral 0,5 y cierre tras 600 ms por debajo de 0,1 permite segmentar audio largo en regiones de habla antes de pasarlas a un ASR.
+- Filtrado de ruido y musica en pipelines de captura: los benchmarks muestran 0,1 falsos arranques por minuto sobre musica y ausencia de falsos arranques sobre ruido cuando se ejecuta detras de alkove-focus, lo que lo hace util para prefiltrar audio antes de wake word o ASR.
+- Deteccion de hesitaciones para agentes mas naturales: la salida `hesitation` permite que el agente distinga pausas de duda de finales de turno y ajuste el tempo de respuesta.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en la model card (marcados como no verificados). El conjunto de prueba son 24 streams de un minuto ejecutados detras de alkove-focus; en cada uno una voz entre -45 y -25 dBFS habla sobre ruido o musica y otra voz habla sola en el 40 % de los huecos. Silero VAD v6 (MIT) se midio con umbrales 0,65 / 0,5 sobre los mismos streams.
+Datos declarados por el autor (no verificados). VAD sobre 24 streams de un minuto con alkove-focus delante; en cada stream una voz entre -45 y -25 dBFS habla sobre ruido o musica y otra voz habla sola en el 40 % de los huecos. Silero VAD v6 (MIT) medido por el autor sobre los mismos streams con umbrales 0,65/0,5.
 
-| Metrica | alkove-cue-1-preview | Silero VAD v6 |
+| Metrica | Cue | Silero VAD v6 |
 |---|---|---|
-| Habla perdida (missed speech) | 2,89 % | 2,96 % |
-| Falsos inicios en 24 minutos | 4 | 4 |
-| Abierto durante los silencios del locutor | 6,4 % | 5,9 % |
-| Retardo en el inicio de habla | 10 ms por detras de Silero | referencia |
+| Voz perdida | 2,93 % | 2,96 % |
+| Falsos arranques (24 min) | 4 | 4 |
+| Abierto durante los silencios del hablante | 6,4 % | 5,9 % |
+| Inicio de habla | 10 ms despues de Silero | — |
 
-Pruebas adicionales del autor, solo detras de alkove-focus:
+Comportamiento en solitario detras de alkove-focus: sin falsos arranques sobre ruido en ninguno de los dos; 0,1 falsos arranques por minuto sobre musica (Silero 0,4); abierto el 50 % del tiempo con voces de television (Silero 81 %).
 
-| Escenario | Resultado declarado |
-|---|---|
-| Falsos inicios sobre ruido | 0 para Cue y para Silero |
-| Falsos inicios por minuto sobre musica | 0,1 (Silero 0,4) |
-| Tiempo abierto con voces de television | 50 % (Silero 81 %) |
-
-Rendimiento de ejecucion declarado:
+Fin de turno sobre LiveKit eot-bench (validacion, 7 idiomas), con cada pausa leida cada 0,1 s y el primer valor por encima del umbral cerrando la pausa. Media de los 7 idiomas, medida por el autor.
 
 | Metrica | Valor |
 |---|---|
-| Tamano del modelo | 1,2 MB |
-| CPU, Galaxy Z Fold8, Chrome, WebAssembly, 1 hilo | 11 ms por segundo de audio (aprox. 1 % de un nucleo) |
-| Retardo algoritmico | 1 paso de 30 ms |
+| Pausas cerradas erroneamente a 300 ms de latencia | 35,4 % |
+| Latencia al 10 % de pausas cerradas erroneamente | 661 ms |
 
-No hay resultados publicados de MMLU, HumanEval, GSM8K ni de ningun otro benchmark de lenguaje, ya que el modelo no es un modelo de lenguaje.
+Rendimiento de inferencia declarado:
+
+| Plataforma | Coste |
+|---|---|
+| CPU nativa, 1 hilo, Galaxy Z Fold8 (Android 17) | 1,9 ms por segundo de audio |
+| CPU nativa, 1 hilo, Apple M1 Max (macOS) | 3,0 ms por segundo de audio |
 
 ## Requisitos de hardware
 
-- VRAM: no requiere GPU; la inferencia es en CPU (el modelo pesa 1,2 MB en int8 y el estado ocupa 5848 floats, unos 23 KB en float32).
-- GPU recomendadas: no aplica. No se documenta soporte de aceleracion por GPU.
-- Compatibilidad con GPU de consumo: irrelevante; cabe en cualquier dispositivo capaz de ejecutar onnxruntime o un runtime de WebAssembly.
-- Despliegue: onnxruntime (escritorio, movil, embebido) y onnxruntime-web 1.30 o superior en el navegador; requiere el operador `DFT` del estandar ONNX, por lo que versiones anteriores del runtime no son compatibles.
-- Throughput medido: 11 ms de CPU por segundo de audio en un Galaxy Z Fold8 con Chrome y un solo hilo de WebAssembly, es decir, un factor de tiempo real de aproximadamente 90x en ese dispositivo.
-- Latencia: 30 ms de retardo por diseno (la salida de habla va un paso por detras de la trama), mas el coste de calculo por trama; con la regla de decision sugerida, el cierre de turno anade 600 ms de histéresis.
-- No se documentan cifras de latencia ni throughput para vLLM, llama.cpp, Ollama o TGI; son runtimes de modelos de lenguaje y no aplican a este modelo.
+- VRAM: no aplica; el modelo corre en CPU. Los pesos int8 ocupan 1,2 MB y el estado de sesion son 5976 floats.
+- GPU: no requiere GPU; esta disenado para CPU de un solo hilo.
+- Cabe en cualquier dispositivo con CPU moderna, incluidos telefonos moviles de gama alta y navegadores via WebAssembly.
+- Opciones de despliegue: motor Alkove (Rust, nativo o WebAssembly), SDK de Alkove para navegador (npm `alkove`), paquete Python `alkove`, SDK de Android, paquete Swift para iOS, y plugins `livekit-plugins-alkove`, `pipecat-alkove` y `wyoming-alkove`.
+- Latencia: 30 ms por bloque procesado (un paso de retardo en las salidas); coste medido de 1,9 a 3,0 ms por segundo de audio en las plataformas indicadas.
+- Throughput: no disponible de forma explicita; el coste por segundo de audio sugiere amplio margen para tiempo real en un solo hilo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parametros | Contexto / ventana | Licencia | Rendimiento declarado | Disponibilidad |
-|---|---|---|---|---|---|---|
-| alkove-cue-1-preview | VAD por tramas de 30 ms, ONNX int8, 1,2 MB | no disponible | no aplica; estado de 5848 floats | Apache 2.0 | 2,89 % habla perdida; 4 falsos inicios en 24 min | Hugging Face (0 descargas) |
-| Silero VAD v6 | VAD, runtime propio (ONNX/JIT) | no disponible | no disponible | MIT | 2,96 % habla perdida; 4 falsos inicios en 24 min (medido por alkove-ai) | Ampliamente adoptado |
-| alkove-spot-1-preview | VAD de la misma familia, mismo pipeline | no disponible | no disponible | no disponible en la informacion | ofrece la misma salida `speech` que Cue | Hugging Face |
+| Modelo | Tipo | Tamano | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| alkove-cue-1-preview | VAD + fin de turno | 1,2 MB (int8) | Por bloques de 30 ms con estado | Apache-2.0 | Hugging Face, motor Alkove |
+| Silero VAD v6 | VAD | No disponible | Por bloques | MIT | Referencia usada por el autor en los benchmarks |
+| alkove-spot-1-preview | VAD (misma salida `speech`) | No disponible | Por bloques | No disponible | Hugging Face (alkove-ai) |
 
-La comparacion con Silero VAD v6 es la unica con mediciones sobre el mismo conjunto de prueba, y la diferencia es de decimas de punto porcentual en habla perdida (2,89 % frente a 2,96 %), identica en falsos inicios y ligeramente peor en tiempo abierto durante los silencios del locutor (6,4 % frente a 5,9 %). La ventaja declarada de Cue esta en el coste (1,2 MB int8, WebAssembly a un hilo) y en el comportamiento con musica y voces de television. No se dispone de datos de WebRTC VAD ni de otros detectores en esta informacion.
+El autor compara directamente con Silero VAD v6: Cue iguala la voz perdida (2,93 % frente a 2,96 %) y los falsos arranques (4 en 24 minutos), con un inicio de habla 10 ms mas tardio y algo mas de apertura durante los silencios del hablante (6,4 % frente a 5,9 %). La ventaja de Cue esta en la cabeza de fin de turno y en el comportamiento con musica y voces de television detras de alkove-focus. alkove-spot-1-preview ofrece la misma salida `speech`, por lo que no es necesario Cue si ya se ejecuta Spot.
 
 ## Limitaciones y advertencias
 
-- Solo acepta audio a 16 kHz; no se documenta remuestreo interno ni soporte de otras frecuencias de muestreo.
-- Reacciona a cualquier voz: no distingue locutores. Para filtrar por locutor hay que usar alkove-focus con una huella de voz previa.
-- No predice el final de turno por semantica: detecta habla, no intencion, por lo que no sustituye a un modelo de turn-taking.
-- No detecta sonidos distintos de la voz (ruidos, golpes, musica), lo que puede ser un problema si se necesita deteccion de eventos acusticos.
-- Es una preview: el autor advierte que los pesos y la interfaz pueden cambiar antes de la version 1, lo que implica riesgo de breaking changes en produccion.
-- Los resultados de la model card estan marcados como no verificados y proceden del propio autor; el conjunto de prueba son 24 streams de un minuto, una muestra pequena y limitada a frances e ingles.
-- El repositorio registra 0 descargas y 0 likes, sin validacion independiente conocida.
-- La licencia Apache 2.0 permite uso comercial, pero el copyright de los pesos corresponde a Eddy Bordi (2026) y conviene conservar `LICENSE` y `NOTICE`.
-- No se documentan sesgos por idioma, acento o dominio; la cobertura declarada se limita a Common Voice French y LibriTTS-R.
-- Depende del operador `DFT` de ONNX: no funcionara en runtimes o versiones anteriores a onnxruntime 1.30.
+- Version preview: el autor advierte que los pesos y la interfaz pueden cambiar antes de la version 1.
+- Los benchmarks son declarados por el autor y no estan verificados (`verified: false` en el model-index); las cifras de Silero fueron medidas por el propio autor.
+- En fin de turno, el 35,4 % de las pausas se cierran erroneamente a 300 ms de latencia; la latencia al 10 % de pausas cerradas erroneamente es de 661 ms, lo que exige ajustar la politica de corte al caso de uso.
+- El modelo no genera texto ni razona; cualquier expectativa de modelo generativo es inaplicable.
+- No se documentan sesgos especificos ni cobertura de idiomas mas alla de los 7 idiomas del benchmark de fin de turno; el rendimiento en otros idiomas no esta evaluado.
+- El formato de pesos es propietario (`.alk`) y requiere el motor Alkove; no hay version GGUF ni compatibilidad directa con llama.cpp u Ollama.
+- La licencia Apache-2.0 permite uso comercial, pero el aviso de preview implica que la API y los pesos pueden cambiar sin garantia de compatibilidad.
+- El estado de la cabeza de fin de turno debe reiniciarse (ultimos 128 floats a cero) al final de cada turno; omitirlo degrada la deteccion.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/alkove-ai/alkove-cue-1-preview
-- Sitio del proyecto Alkove: https://alkove.ai
-- Modelo de aislamiento de voz relacionado: https://huggingface.co/alkove-ai/alkove-focus-1-preview
-- Modelo de la misma familia con salida VAD equivalente: https://huggingface.co/alkove-ai/alkove-spot-1-preview
-- No se han encontrado en la busqueda web articulos, papers, repositorios ni demos adicionales relacionados con este modelo; los resultados devueltos no guardan relacion con el.
+- Modelo relacionado (VAD alternativo): https://huggingface.co/alkove-ai/alkove-spot-1-preview
+- Modelo de aislamiento de voz: https://huggingface.co/alkove-ai/alkove-focus-1-preview
+- Sitio de Alkove: https://alkove.ai
+- Motor Alkove (Rust, Apache-2.0): https://github.com/alkove-ai/alkove/tree/main/crates/engine
+- Formato `.alk`: https://github.com/alkove-ai/alkove/blob/main/crates/engine/FORMAT.md
+- SDK Android: https://github.com/alkove-ai/alkove/tree/main/android
+- Paquete Swift (iOS): https://github.com/alkove-ai/alkove/tree/main/ios
+- SDK de navegador (npm): https://www.npmjs.com/package/alkove
+- Paquete Python: https://pypi.org/project/alkove/
+- Plugin LiveKit: https://pypi.org/project/livekit-plugins-alkove/
+- Plugin Pipecat: https://pypi.org/project/pipecat-alkove/
+- Plugin Wyoming (Home Assistant): https://pypi.org/project/wyoming-alkove/
+- Dataset LiveKit eot-bench: https://huggingface.co/datasets/livekit/eot-bench-data

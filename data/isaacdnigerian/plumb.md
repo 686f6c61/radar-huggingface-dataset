@@ -2,84 +2,94 @@
 
 ## Resumen
 
-PLUMB es un banco de pruebas (benchmark) para agentes de hoja de calculo, no un modelo de lenguaje generativo. Lo publica el usuario Isaacdnigerian en Hugging Face y se desarrollo para el hackathon Lexsi AI Safety and Alignment, en la pista 1, centrada en respuestas fundamentadas y reduccion de alucinaciones. El repositorio contiene el arnes de evaluacion, el esquema de tareas y las metricas, no pesos de un modelo entrenado.
+PLUMB es un artefacto de investigacion publicado por Isaacdnigerian para la Lexsi AI Safety and Alignment Hackathon (Track 1). No es un modelo de proposito general, sino un paquete que contiene un benchmark de 96 tareas para agentes de hoja de calculo, los adaptadores LoRA entrenados sobre el modelo base CohereLabs/tiny-aya-global (3.350 millones de parametros), los registros de ejecucion y el arnes de evaluacion. El objetivo declarado es medir y mitigar el comportamiento de "grounding": si el agente responde y actua mas alla de lo que los datos que tiene delante permiten sostener.
 
-El problema que aborda es concreto: un agente que opera sobre un libro de calculo puede tanto afirmar cifras que los datos no soportan como escribir en celdas que no le corresponden. PLUMB trata ambas cosas como fallos de fundamentacion y las mide de forma mecanica, sin juez LLM, comprobando si una celda cambio o si un campo de estado dijo `declined`. La evaluacion es de un solo turno con salida estructurada en JSON, con direcciones de celda de entrada y de salida.
+El resultado central del trabajo es negativo y explicito: ninguna intervencion de ajuste produce una mejora del grounding que generalice. Sobre una particion libre de contaminacion de 48/48 tareas, el adaptador SFT cambia cero decisiones en las 48 tareas reservadas en las cinco metricas evaluadas, y las dos recetas DPO son inertes o ligeramente perjudiciales. Las victorias aparentes anteriores se midieron sobre los datos de entrenamiento.
 
-No se dispone de informacion sobre arquitectura de modelo, numero de parametros, longitud de contexto ni licencia. La model card describe exclusivamente el diseno del benchmark, las metricas y los scripts que lo acompanan. Cualquier uso como modelo de inferencia queda fuera del alcance de la informacion publicada.
+El modelo base sobre el que se construye es tiny-aya-global de CohereLabs, un transformer de 3.350 millones de parametros. La relevancia actual del artefacto es metodologica: documenta una secuencia de fallos de medicion, publica la advertencia de contaminacion de sus propios datos y proporciona un arnes reproducible para puntuar otros modelos a traves de cualquier endpoint compatible con OpenAI.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el repositorio contiene un benchmark, no un modelo) |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer (modelo base CohereLabs/tiny-aya-global) con adaptadores LoRA (rank 8, alpha 16) |
+| Parametros totales | 3.349.227.520 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | no disponible (el contenido son scripts Python y ficheros JSONL de tareas) |
+| Tipos de cuantizacion | Q4_K_M (GGUF publicado); adaptadores en safetensors |
+| Idiomas soportados | en (segun la model card) |
+| Licencia | MIT |
+| Formato de pesos | safetensors (adaptadores PEFT), GGUF (Q4_K_M, base y adaptadores fusionados) |
 
 ## Arquitectura y entrenamiento
 
-PLUMB no entrena un modelo. Es un arnes de evaluacion compuesto por modulos Python: `plumb/sheet.py` para la representacion del libro, serializacion y diff; `plumb/tasks.py` para el esquema de tareas y el contrato de respuesta; y `plumb/score.py` para las cinco metricas. La interfaz con modelos se realiza mediante `scripts/run.py`, que incluye backends stub y Hugging Face.
+El artefacto se apoya en tiny-aya-global, un transformer de 3.350 millones de parametros de CohereLabs. Sobre el se aplican adaptadores LoRA de rango 8 y alpha 16 mediante PEFT. Se publican cuatro adaptadores: `sft-output-heldout` (entrenado sobre la particion de 48 tareas de train, el unico con evaluacion valida), `sft-output-lora` (SFT sobre el conjunto completo, contaminado), `p1-dpo-output` (16 pares de fabricacion, contaminado) y `p1-dpo-output-balanced` (32 pares, contaminado). La cadena de herramientas empleada es CuratorKIT, AlignTune y AuditKIT.
 
-El diseno opta por salida estructurada de un solo turno en lugar de un bucle de herramientas, con el argumento de que un fallo por perder el hilo de un bucle multiturno se registraria como fallo de fundamentacion y contaminaria la medicion. Las celdas en blanco se omiten de la serializacion para no inducir a leer ausencia como cero, y las escrituras sin efecto no cuentan como colaterales. El conjunto de tareas incluye 12 tareas escritas a mano (cuatro por sonda, con controles), un andamiaje local de 112 tareas pendiente de revision con CuratorKIT y un conjunto candidato de 96 tareas revisadas. La revision docente se realizo con `qwen3:8b` via Ollama, con 96/96 juicios validos en el conjunto bloqueado.
+El benchmark consta de 96 tareas bloqueadas (`phase2-curatorkit-generated-96-p2v3.jsonl`) y una particion libre de fugas de 48/48 agrupada de modo que ninguna instruccion ni hoja aparece en ambos lados. Los adaptadores se evaluaron con el GGUF Q4_K_M servido mediante Ollama, temperatura 0 y tres replicas identicas. El hallazgo tecnico principal es que el SFT sobre 48 ejemplos no altera ninguna de las 48 decisiones reservadas, y que las recetas DPO no aportan mejora. Se documenta ademas un fallo de terminacion: los GGUF se publican con `tokenizer.ggml.eos_token_id = 6`, mientras que tiny-aya termina muestreando el token 3 (`<EOS_TOKEN>`), de modo que tal como se distribuyen generan repeticion degenerada tras el final de la respuesta.
 
 ## Capacidades
 
-- Evaluacion mecanica de tres metricas principales: `fabrication_rate` (responder lo que la hoja no soporta), `silent_guess_rate` (elegir una de dos columnas plausibles sin preguntar) y `collateral_write_rate` (escribir fuera del conjunto legitimo de escritura).
-- Dos metricas de guarda para evitar que un modelo que rechaza todo obtenga buenas puntuaciones: `over_refusal_rate` y `completion_rate`.
-- Metrica de suelo de capacidad `parse_success_rate`, que registra como fallo una respuesta no parseable en lugar de reintentar.
-- Metrica separada `format_strict_rate` que distingue si la respuesta fue exactamente un objeto JSON sin marcas de Markdown.
-- Parser tolerante con escaneo de llaves equilibrado y consciente de cadenas, que extrae el primer objeto completo sin ocultar el fallo de formato.
-- Generacion reproducible de andamiaje de tareas (`scripts/expand_tasks.py`), rediseno de la sonda P2 con cabeceras duplicadas (`scripts/redesign_p2.py`) y validador de equilibrio y esquema previo a la linea base (`scripts/validate_tasks.py`).
-- Revision de higiene con CuratorKIT (`scripts/curatorkit_review.py`), con deduplicacion exacta desactivada porque las repeticiones pueden ser controles intencionados.
-- Revision docente no Cohere con auditoria de respuestas crudas (`scripts/teacher_review.py`).
-- Construccion determinista de pares DPO para la sonda P1 (`scripts/build_p1_pairs.py`).
-- Inspeccion de comportamiento mas alla de las puntuaciones agregadas (`scripts/inspect_run.py`).
-- No se documentan capacidades de generacion de texto, codigo, matematicas, vision, audio, tool calling ni agentes mas alla del contrato de edicion de celdas descrito.
+- Generacion de texto conversacional sobre el modelo base tiny-aya-global.
+- Respuesta y actuacion sobre hojas de calculo en el contexto del benchmark PLUMB (tareas de lectura, escritura y respuesta con datos tabulares).
+- Evaluacion de grounding: medicion de fabricacion, conjetura silenciosa, escritura colateral, sobrerrechazo, finalizacion, exito de parseo y estrictez de formato.
+- Soporte de cualquier endpoint compatible con OpenAI para puntuar modelos propios mediante `scripts/run.py`.
+- Deteccion de ambiguedad: documentada como capacidad que emerge con la escala (Qwen3 8B pide aclaracion 16/16 ante columnas con cabecera identica; Tiny Aya 3.35B pide 0/16, y 11/16 cuando se le indica que la ambiguedad existe).
+- No se documentan capacidades de vision, audio, tool calling generico ni modo thinking en la informacion disponible.
 
 ## Casos de uso
 
-- Evaluacion de agentes de hoja de calculo en produccion: el arnes permite medir si un agente escribe solo en las celdas autorizadas mediante `collateral_write_rate`, lo que resulta adecuado para validar asistentes que modifican libros reales antes de desplegarlos.
-- Auditoria de alucinaciones numericas: con `fabrication_rate` se cuantifica con que frecuencia un modelo informa cifras que la hoja no puede producir, util para comparar candidatos en un pipeline de seleccion de modelo.
-- Deteccion de ambiguedad no resuelta: `silent_guess_rate` identifica modelos que eligen una columna plausible en lugar de preguntar, un comportamiento relevante en flujos financieros donde la eleccion de columna altera el resultado.
-- Control de sobre-rechazo: `over_refusal_rate` y `completion_rate` permiten descartar modelos que evitan errores declinando tareas que la hoja si responde, lo que es util para calibrar el umbral de rechazo antes de publicar un asistente.
-- Construccion de datos de preferencia para alineamiento: `scripts/build_p1_pairs.py` genera pares DPO deterministas a partir de la sonda P1, aprovechables para ajustar un modelo hacia respuestas fundamentadas.
-- Validacion de calidad de conjuntos de evaluacion: `scripts/validate_tasks.py` exige al menos 80 tareas, las seis categorias de sonda y control, y suficientes tareas de escritura real para distinguir seguridad colateral de inercia sin edicion; aplicable a equipos que construyen sus propios benchmarks internos.
-- Verificacion de robustez de formato: `format_strict_rate` y `parse_success_rate` permiten comprobar si un modelo cumple el contrato JSON en una sola pasada, relevante para integrar agentes en pipelines con validacion estricta de esquema.
-- Reproducibilidad de evaluaciones: el backend stub y el backend refuser del arnes permiten autoprobar el propio benchmark sin modelo, util para auditar que las metricas fallan como se espera.
+- Evaluacion de seguridad de agentes tabulares: usar el benchmark de 96 tareas para medir la tasa de fabricacion (62,5% en el modelo bajo prueba) y la conjetura silenciosa (31,2%) de un agente antes de desplegarlo en produccion.
+- Regresion de arneses de evaluacion: ejecutar `--model stub` y `--model refuser` como pruebas de regresion del scorer; si dejan de comportarse, ningun otro numero es fiable.
+- Investigacion sobre alineacion y grounding: reutilizar la particion 48/48 y `check_contamination.py` para comparar recetas SFT y DPO sin fugas de datos.
+- Auditoria de pipelines de datos: el aviso de contaminacion y el script de verificacion permiten comprobar si un adaptador comparte ids de tarea con el conjunto de evaluacion.
+- Estudio de deteccion de ambiguedad: las seis ejecuciones por nivel de ambiguedad en `training/runs/` sirven para analizar cuando un modelo pide aclaracion frente a cuando adivina.
+- Analisis de coste/beneficio de intervenciones: `roi_measure.py` y `roi_compare.py` permiten medir el retorno de una intervencion de ajuste frente a su coste.
+- Punto de partida para agentes de hoja de calculo: el adaptador `sft-output-heldout` y su evaluacion valida sirven como referencia base para comparar futuras intervenciones.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de modelos en la informacion disponible. La model card describe el conjunto de evaluacion bloqueado (96 tareas equilibradas, 16 por categoria de sonda y control), la revision de higiene con CuratorKIT (96/96 aprobadas) y la revision docente con `qwen3:8b` (96/96 juicios validos), pero no incluye puntuaciones de modelos sobre las metricas de PLUMB.
+Benchmark bloqueado de 96 tareas, GGUF Q4_K_M del proveedor servido por Ollama, temperatura 0, tres replicas identicas:
+
+| Metrica | n | Valor |
+|---|---:|---:|
+| `fabrication_rate` | 16 | 62,5% |
+| `silent_guess_rate` | 16 | 31,2% |
+| `collateral_write_rate` | 32 | 3,1% |
+| `over_refusal_rate` | 64 | 10,9% |
+| `completion_rate` | 64 | 75,0% |
+| `parse_success_rate` | 96 | 100,0% |
+| `format_strict_rate` | 96 | 100,0% |
+
+Resultado de entrenamiento: sobre la particion 48/48 libre de fugas, el adaptador SFT cambia cero decisiones en las 48 tareas reservadas en las cinco metricas. Ambas recetas DPO son inertes o ligeramente daninas. No se publican resultados de MMLU, HumanEval ni GSM8K en la informacion disponible.
 
 ## Requisitos de hardware
 
-- No aplica VRAM de inferencia para PLUMB en si: el repositorio contiene scripts Python y ficheros JSONL, no pesos de modelo.
-- El arnes se ejecuta con Python 3 y no requiere GPU para las pruebas de autocomprobacion (`--model stub` y `--model refuser`).
-- Para la revision docente documentada se uso `qwen3:8b` a traves de Ollama; un modelo de 8 mil millones de parametros en cuantizacion de 4 bits requiere del orden de 5 a 6 GB de VRAM, aunque este dato no se especifica en la informacion proporcionada.
-- El backend Hugging Face de `scripts/run.py` permite evaluar modelos alojados en Hugging Face; los requisitos de GPU dependen del modelo evaluado, no del benchmark.
-- Opciones de despliegue documentadas: ejecucion local con Python y Ollama para la revision docente; no se documentan vLLM, llama.cpp, TGI ni latencias o throughput.
+- VRAM estimada para inferencia: no disponible de forma explicita; con 3.350 millones de parametros, una cuantizacion Q4_K_M es manejable en GPU de consumo, pero no se aportan cifras concretas.
+- GPU recomendadas: no disponible.
+- Cabe en GPU de consumo: previsiblemente si, dado el tamano de 3,35B en Q4_K_M, aunque no se documenta la GPU concreta.
+- Opciones de despliegue: Ollama (usado en la evaluacion con GGUF Q4_K_M), llama.cpp (mencionado por la necesidad de `gguf-set-metadata`), cualquier endpoint compatible con OpenAI para el arnes de evaluacion.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. PLUMB es un benchmark de agentes de hoja de calculo y la informacion proporcionada no incluye otros benchmarks comparables ni resultados de modelos que permitan una comparacion cuantitativa.
+| Modelo | Parametros | Contexto | Grounding / ambiguedad | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| PLUMB (sobre tiny-aya-global) | 3,35B | no disponible | Pide aclaracion 0/16 sin pista, 11/16 con pista | MIT | Hugging Face |
+| Qwen3 8B | 8B | no disponible | Pide aclaracion 16/16 sin pista | no disponible en la informacion | no disponible en la informacion |
+
+No se dispone de datos comparativos adicionales de otros modelos de la misma categoria en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El repositorio no contiene un modelo entrenado; no debe interpretarse como un modelo desplegable para inferencia.
-- La licencia no esta disponible, por lo que no puede confirmarse el uso comercial del codigo ni de las tareas.
-- El conjunto de 96 tareas es la linea base bloqueada, pero el andamiaje local de 112 tareas sigue pendiente de revision con CuratorKIT y no debe tratarse como linea base.
-- La revision docente se realizo con un unico modelo (`qwen3:8b`), no sustituye la revision humana y no cubre sesgos que un revisor humano detectaria.
-- La evaluacion es de un solo turno y salida estructurada; no mide el comportamiento de agentes en bucles multiturno ni el uso de herramientas, por lo que los resultados no extrapolan directamente a esos escenarios.
-- Las metricas mecanicas evitan el juez LLM, pero dependen de un contrato de respuesta estricto; modelos con formatos alternativos pueden penalizarse en `parse_success_rate` aunque su contenido sea correcto.
-- El parser se modifico tras detectar que una respuesta valida duplicada y cercada en Markdown se contabilizaba como JSON invalido y penalizaba las tres metricas de contenido; versiones anteriores del arnes pueden tener ese sesgo.
-- No se documentan sesgos linguisticos ni de dominio, ni riesgos de alucinacion del propio benchmark mas alla de los controles descritos.
+- Contaminacion de datos: `training/sft-corrections.jsonl`, `training/p1-preference-pairs.jsonl` y `training/p1-preference-pairs-balanced.jsonl` derivan del benchmark de evaluacion y comparten ids de tarea. Los adaptadores entrenados sobre ellos (`p1-dpo-output`, `p1-dpo-output-balanced`, `sft-output-lora`) no pueden evaluarse sobre el conjunto de 96 tareas; cualquier resultado es una puntuacion de memorizacion. Se publican como evidencia, no como modelos utilizables.
+- Fallo de terminacion en los GGUF: se distribuyen con `tokenizer.ggml.eos_token_id = 6`, pero tiny-aya termina con el token 3; sin corregir con `gguf-set-metadata <file> tokenizer.ggml.eos_token_id 3 --force`, generan repeticion degenerada. Las cadenas de parada no sustituyen la correccion porque todos los terminadores del vocabulario estan tipados como `CONTROL` y llama.cpp no los renderiza en el flujo de texto.
+- Alta tasa de fabricacion (62,5%) y de conjetura silenciosa (31,2%) en el modelo bajo prueba: riesgo elevado de alucinacion en tareas de hoja de calculo.
+- El modelo base solo declara ingles; no se documentan capacidades multilingues.
+- No se documentan sesgos conocidos ni restricciones adicionales de licencia para uso comercial mas alla de la licencia MIT.
+- El artefacto no es un modelo de produccion: es un paquete de investigacion con adaptadores mayoritariamente contaminados y un unico adaptador con evaluacion valida.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/Isaacdnigerian/plumb
-- No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios de codigo o demos.
+- Hugging Face: https://huggingface.co/Isaacdnigerian/plumb
+- Modelo base: https://huggingface.co/CohereLabs/tiny-aya-global
+- Repositorio GitHub con el write-up completo: mencionado en la model card, URL no disponible en la informacion proporcionada.

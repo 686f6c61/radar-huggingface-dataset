@@ -1,88 +1,88 @@
 # Oomni/mithi-v1-flash
 
 ## Resumen
+Mithi v1 Flash es un modelo de texto a voz (TTS) desarrollado por Oomni, orientado a la sintesis de habla natural en 11 idiomas de la India (hindi, ingles, bengali, gujarati, kannada, malayalam, marathi, odia, punyabi, tamil y telugu). Con 99,1 millones de parametros y un peso de repositorio de 0,2 GB, se posiciona como una alternativa ligera que puede ejecutarse tanto en GPU como en CPU, incluyendo dispositivos de bajas prestaciones como una Raspberry Pi. El modelo genera audio mono a 24 kHz y ofrece dos voces predefinidas: Satvik (masculina) y Charvi (femenina).
 
-Mithi v1 Flash es un modelo de texto a voz (TTS) desarrollado por Oomni, orientado a la síntesis de habla natural en 11 idiomas de la India y en inglés. Se distribuye como un modelo compacto de 99,1 millones de parámetros (197 MB en pesos bf16), lo que lo sitúa en la categoría de modelos ligeros capaces de ejecutarse tanto en GPU como en CPU, incluyendo dispositivos de bajas prestaciones como una Raspberry Pi. Su pipeline declarado en Hugging Face es text-to-speech y su licencia es Apache 2.0.
+La relevancia de este modelo radica en su cobertura linguistica: la mayoria de sistemas TTS de alta calidad se centran en ingles y unas pocas lenguas europeas, dejando desatendidos los idiomas indicos. Mithi v1 Flash cubre diez lenguas indicas mas el ingles con un unico checkpoint de menos de 100 M de parametros, lo que facilita su despliegue en entornos con recursos limitados. Su licencia Apache-2.0 permite uso comercial sin restricciones adicionales.
 
-El modelo ofrece dos voces predefinidas, Satvik (masculina) y Charvi (femenina), y genera audio mono a 24 kHz. Cubre hindi, inglés, bengalí, gujarati, kannada, malayalam, marathi, odia, punyabí, tamil y telugu, lo que lo convierte en una opción relevante para aplicaciones de accesibilidad, asistentes de voz y localización de contenidos en el mercado indio, un segmento tradicionalmente mal cubierto por los modelos TTS multilingües de gran tamano.
-
-La relevancia actual del modelo radica en su relación tamano/capacidad: con menos de 100 millones de parámetros cubre once idiomas y mantiene un rendimiento usable en CPU (aproximadamente 3 segundos por frase de 15 palabras con 4 hilos en un AMD EPYC 9554). No se han publicado datos sobre la arquitectura interna ni sobre el proceso de entrenamiento en la información disponible.
+El modelo se distribuye en formato bf16 safetensors e incluye un normalizador de texto (Maya text normaliser) que expande numeros, horas y divisas a palabras antes de la sintesis. La segmentacion automatica de texto largo en frases permite procesar parrafos completos sin intervencion manual.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiquetado como "kokoro" en los tags) |
-| Parametros totales | 99,1 M (197 MB en bf16) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (procesa el texto frase a frase) |
-| Tipos de cuantizacion | no disponible (pesos publicados en bf16) |
-| Idiomas soportados | hi, en, bn, gu, kn, ml, mr, or, pa, ta, te |
-| Licencia | Apache 2.0 |
+| Arquitectura | No disponible (modelo TTS basado en los componentes Maya2-native y Kokoro-82M) |
+| Parametros totales | 99,1 M |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible (procesa el texto frase a frase de forma automatica) |
+| Tipos de cuantizacion | bf16 (pesos distribuidos en bf16 safetensors) |
+| Idiomas soportados | Hindi (hi), ingles (en), bengali (bn), gujarati (gu), kannada (kn), malayalam (ml), marathi (mr), odia (or), punyabi (pa), tamil (ta), telugu (te) |
+| Licencia | Apache-2.0 |
 | Formato de pesos | safetensors (bf16) |
 
 ## Arquitectura y entrenamiento
+La model card no detalla la arquitectura interna del modelo mas alla de indicar que se construyo integramente sobre modelos y herramientas de codigo abierto con licencias permisivas: Maya2-native (Apache-2.0), Kokoro-82M (Apache-2.0), indic-bert (MIT), Maya text normaliser (Apache-2.0) y misaki (Apache-2.0). No se especifica si se trata de un transformer puro, un modelo basado en difusion o una arquitectura hibrida, ni se proporcionan datos sobre el numero de tokens de entrenamiento, la composicion del dataset o si se aplicaron tecnicas de RLHF o DPO.
 
-No se dispone de información detallada sobre la arquitectura interna del modelo en la documentación proporcionada. Los tags de Hugging Face incluyen la etiqueta "kokoro", lo que sugiere una relación con la familia de modelos TTS Kokoro, pero no se confirma ni se detalla en la model card. El modelo se distribuye en formato safetensors con pesos en bf16 y un total de 99,1 millones de parámetros.
-
-Respecto al entrenamiento, la model card indica que las voces Satvik y Charvi se entrenaron con habla generada mediante inferencia de Maya2-native, un modelo de la organización maya-research. No se especifica el número de tokens, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO. Tampoco se documentan innovaciones técnicas como decodificación especulativa o atención lineal. El modelo incluye un normalizador de texto que expande números, horas y divisas a palabras, y procesa automáticamente textos largos frase a frase.
+El unico detalle tecnico confirmado es la inclusion de un normalizador de texto que expande numeros, horas y simbolos de divisa a palabras antes de la sintesis, y un mecanismo de segmentacion automatica que divide el texto largo en frases para su procesamiento secuencial. La salida es audio mono a 24 kHz. No se han publicado innovaciones adicionales como decodificacion especulativa o atencion lineal en la informacion disponible.
 
 ## Capacidades
-
-- Síntesis de voz (text-to-speech) en 11 idiomas: hindi, inglés, bengalí, gujarati, kannada, malayalam, marathi, odia, punyabí, tamil y telugu.
+- Sintesis de voz (text-to-speech) en 11 idiomas: hindi, ingles, bengali, gujarati, kannada, malayalam, marathi, odia, punyabi, tamil y telugu.
 - Dos voces predefinidas: Satvik (masculina) y Charvi (femenina).
-- Generación de audio mono a 24 kHz en formato WAV.
-- Normalización de texto integrada: expansión de números, horas y divisas a palabras antes de la síntesis.
-- Procesamiento automático de textos largos, dividiéndolos en frases.
-- Inferencia en GPU y en CPU, con control del número de hilos mediante `--threads` o `torch.set_num_threads`.
-- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, visión, audio de entrada ni modo de pensamiento; es un modelo exclusivamente de texto a voz.
+- Generacion de audio mono a 24 kHz en formato WAV.
+- Normalizacion automatica de texto: expansion de numeros, horas y divisas a palabras.
+- Procesamiento automatico de texto largo mediante segmentacion en frases.
+- Ejecucion en GPU y en CPU (con soporte para limitar el numero de hilos mediante `--threads`).
+- Interfaz de linea de comandos (`inference.py`) y API de Python (`mithi_tts.Mithi`).
+- No se menciona soporte de tool calling, function calling, agentes, razonamiento multi-paso, vision ni audio de entrada.
 
 ## Casos de uso
-
-- Asistentes de voz para el mercado indio: el modelo permite generar respuestas habladas en la lengua del usuario (hindi, tamil, bengalí, etc.) con una latencia baja en CPU, lo que facilita su integración en dispositivos de bajo coste o entornos sin GPU.
-- Audiolibros y lectura de contenidos: gracias al procesamiento frase a frase y a la normalización de números y horas, puede narrar artículos, noticias o documentos largos de forma automática en cualquiera de los 11 idiomas soportados.
-- Localización de contenidos multimedia: sustitución de voces en vídeos o pódcast para versiones en lenguas regionales de la India, usando las voces Satvik o Charvi según el registro deseado.
-- Sistemas de atención al cliente telefónica: generación de mensajes de confirmación, recordatorios de citas o avisos de pedidos (la model card incluye ejemplos de este tipo en kannada e inglés) en un servidor sin GPU.
-- Accesibilidad para personas con discapacidad visual: lectura en voz alta de textos en pantalla en idiomas regionales, ejecutable en dispositivos como Raspberry Pi.
-- Prototipado y demostraciones: al ocupar solo 197 MB y ejecutarse en CPU con 4 hilos en unos 3 segundos por frase, es adecuado para entornos de desarrollo, notebooks y pruebas de concepto sin infraestructura dedicada.
-- Educación y aprendizaje de idiomas: generación de ejemplos de pronunciación en once lenguas con dos timbres distintos, útil para aplicaciones de autoaprendizaje.
+- Audiolibros y contenido editorial en lenguas indicas: el modelo puede narrar parrafos largos de forma automatica gracias a la segmentacion en frases, con dos voces disponibles para alternar narrador y narradora en un mismo titulo.
+- Asistentes de voz para atencion al cliente en India: con 11 idiomas cubiertos y un modelo de 99,1 M de parametros, se puede desplegar en servidores modestos para generar respuestas habladas en hindi, tamil o bengali sin depender de servicios en la nube.
+- Sistemas de anuncios y megafonia en transporte publico: la normalizacion de horas y numeros permite generar avisos como "el tren de las 10:30" correctamente pronunciados, y la inferencia en CPU abarata el despliegue en estaciones sin GPU.
+- Accesibilidad para personas con discapacidad visual: lectura en voz alta de contenido web o documentos en lenguas indicas, ejecutable localmente en un portatil o incluso en una Raspberry Pi.
+- Localizacion de videojuegos y aplicaciones moviles: su tamano reducido (197 MB) permite empaquetar el modelo dentro de la aplicacion y generar dialogos en el dispositivo sin conexion.
+- Generacion de material educativo y cursos en linea: sintesis de lecciones en marathi, telugu o punyabi con una voz consistente, a un coste de computo minimo comparado con modelos TTS de mayor tamano.
+- Prototipado rapido de productos de voz: la API de Python y la CLI facilitan integrar TTS en demos y pruebas de concepto con licencia Apache-2.0, sin costes de licencia.
 
 ## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks en la información disponible. La model card únicamente incluye una medición de velocidad de inferencia en CPU (AMD EPYC 9554) para una frase media de 15 palabras (unos 7 segundos de habla):
+No se han publicado resultados de benchmarks objetivos (MOS, WER, MCD, etc.) en la informacion disponible. La model card unicamente incluye una medicion de velocidad de inferencia en CPU (AMD EPYC 9554) para una frase media de 15 palabras (aproximadamente 7 segundos de habla):
 
 | Hilos de CPU | Tiempo por frase |
 |---|---|
 | 1 | ~8 s |
 | 4 | ~3 s |
 
-No se proporcionan métricas de calidad como MOS, WER ni comparaciones objetivas con otros modelos TTS.
+No se proporcionan datos de latencia ni throughput en GPU.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia: muy baja; con 99,1 M de parámetros en bf16 (197 MB), el modelo cabe holgadamente en cualquier GPU con al menos 1 GB de memoria libre, aunque no se especifica una cifra oficial.
-- GPU recomendadas: no se indica ninguna en concreto; cualquier GPU moderna con soporte para bf16 es suficiente. El modelo detecta y usa GPU si está disponible.
-- Compatibilidad con GPU de consumo: sí, cabe en cualquier GPU de consumo actual (por ejemplo, series RTX 30/40) e incluso en iGPU, dado su reducido tamano.
-- Despliegue en CPU: soportado de forma nativa; la model card cita laptops, Raspberry Pi, teléfonos y servidores sin GPU. Se controla el número de hilos con `--threads` o `torch.set_num_threads`.
-- Opciones de despliegue: el paquete incluye `inference.py` y el módulo Python `mithi_tts` (clase `Mithi`), con dependencias instalables vía `requirements.txt` y `espeakng-loader` (que incluye espeak-ng sin instalación del sistema). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: en CPU AMD EPYC 9554, ~8 s por frase con 1 hilo y ~3 s con 4 hilos para una frase de 15 palabras (~7 s de audio). No se proporcionan datos de latencia en GPU.
+- VRAM estimada para inferencia: inferior a 1 GB en bf16 (el checkpoint pesa 197 MB); no se especifica el consumo exacto de memoria durante la inferencia.
+- GPU recomendadas: no se indican modelos concretos; cualquier GPU con soporte para bf16 (por ejemplo, RTX 4090, A100, H100) es suficiente dado el reducido tamano del modelo.
+- Cabe en GPU de consumo: si, practicamente cualquier GPU moderna, e incluso en CPU. La model card menciona explicitamente portatiles, Raspberry Pi, telefonos y servidores sin GPU.
+- Opciones de despliegue: el repositorio incluye `inference.py` (CLI) y el paquete Python `mithi_tts`; no se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI (herramientas orientadas a modelos de lenguaje, no a TTS).
+- Latencia y throughput: en CPU AMD EPYC 9554, aproximadamente 3 segundos por frase de 15 palabras con 4 hilos y 8 segundos con 1 hilo. En CPU mas lentas, como una Raspberry Pi, el tiempo se incrementa proporcionalmente. No hay datos de latencia en GPU.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la documentación proporcionada. La model card menciona Maya2-native como generador del habla de entrenamiento, pero no como alternativa TTS equivalente, y no se ofrecen datos de rendimiento de terceros. Por tanto, la comparativa se considera no disponible.
+| Modelo | Parametros | Idiomas | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Mithi v1 Flash | 99,1 M | 11 (10 indicos + ingles) | No disponible | Apache-2.0 | Hugging Face |
+| Kokoro-82M | 82 M | Principalmente ingles y algunas lenguas europeas (segun su model card) | No disponible | Apache-2.0 | Hugging Face |
+| Maya2-native | No disponible | No disponible | No disponible | Apache-2.0 | Hugging Face |
+
+La comparacion se limita a los componentes citados en la model card, ya que no se proporcionan datos de rendimiento comparativo. No se dispone de informacion sobre otros modelos TTS especificos para lenguas indicas en la informacion proporcionada.
 
 ## Limitaciones y advertencias
-
-- Solo dispone de dos voces (Satvik y Charvi); no se documenta clonación de voz ni control de estilo, emoción o prosodia.
-- No se han publicado evaluaciones objetivas de calidad (MOS, WER) ni análisis de sesgos; se desconoce el comportamiento en acentos regionales, habla coloquial o ruido.
-- Riesgo de alucinación no aplicable en el sentido de generación de texto, pero sí de errores de pronunciación o entonación en palabras fuera del dominio de entrenamiento; no se documenta su magnitud.
-- El rendimiento en CPU es limitado: ~8 s por frase con un solo hilo, lo que puede ser insuficiente para aplicaciones de conversación en tiempo real en hardware modesto.
-- No se detalla la composición del dataset de entrenamiento ni posibles sesgos de género, dialecto o registro asociados a las dos voces.
-- Aunque la licencia es Apache 2.0 y permite uso comercial, no se documentan restricciones adicionales ni garantías por parte del autor; conviene verificar los términos del repositorio antes de un despliegue en producción.
-- El modelo tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado en noviembre de 2026; se trata de un lanzamiento muy reciente sin validación comunitaria.
+- Solo dispone de dos voces fijas (Satvik y Charvi); no se menciona soporte para clonacion de voz ni voces personalizadas.
+- No se han publicado evaluaciones objetivas de calidad (MOS, inteligibilidad) ni comparaciones con otros sistemas TTS, por lo que la calidad real en cada idioma no esta cuantificada.
+- La cobertura linguistica se limita a los 11 idiomas listados; no se mencionan otras lenguas.
+- No se detalla el comportamiento ante textos con code-switching (mezcla de idiomas en una misma frase), comun en la India.
+- Al ser un modelo TTS, puede presentar errores de pronunciacion en palabras extranjeras, acronimos o nombres propios no cubiertos por el normalizador.
+- La licencia Apache-2.0 permite uso comercial, pero se exige mantener la licencia y los creditos de los componentes de terceros (Maya2-native, Kokoro-82M, indic-bert, Maya text normaliser, misaki) en cualquier redistribucion.
+- No se especifican sesgos conocidos ni limitaciones de contexto en la informacion disponible.
+- La fecha de creacion del repositorio (2026-11-07) y la de actualizacion (2026-11-11) son las unicas referencias temporales; no se indica la fecha de entrenamiento del modelo.
 
 ## Enlaces
-
 - Hugging Face: https://huggingface.co/Oomni/mithi-v1-flash
-- Maya2-native (generador del habla de entrenamiento): https://huggingface.co/maya-research/maya2-native
+- Demostracion en video: https://huggingface.co/Oomni/mithi-v1-flash/resolve/main/assets/mithi_v1_flash_showcase.mp4
 - Banner del modelo: https://huggingface.co/Oomni/mithi-v1-flash/resolve/main/assets/mithi_banner.png
+- Muestras de audio: https://huggingface.co/Oomni/mithi-v1-flash/tree/main/samples

@@ -54,31 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "MiniMax-H3 Ultra Fast - a Hugging Face Space by addlabsviral",
-      "url": "https://huggingface.co/spaces/addlabsviral/minimax-h3-ultra-fast",
-      "snippet": "Ultra-fast local NVFP4 video + synchronized audio generation"
-    },
-    {
-      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
-      "url": "https://github.com/ai-models-lab/minimax-h3",
-      "snippet": "Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
-    },
-    {
-      "title": "minimax-h3/README.md at main · ai-models-lab/minimax-h3",
-      "url": "https://github.com/ai-models-lab/minimax-h3/blob/main/README.md",
-      "snippet": "Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
-    },
-    {
-      "title": "Model Architecture & Generation Modes | ai-models-lab/minimax-h3 | DeepWiki",
-      "url": "https://deepwiki.com/ai-models-lab/minimax-h3/4.1-model-architecture-and-generation-modes",
-      "snippet": "Model Architecture & Generation Modes Relevant source files The MiniMax H3 (Hailuo AI 3.0) represents a significant advancement in multi-modal generative AI, featuring a native transformer-based architecture capable of generating synchronized 2K video and 3D stereo audio in a single diffusion pass."
-    },
-    {
-      "title": "MiniMax H3 Review: 2K AI Video With Audio From Your Own Reference Art",
-      "url": "https://nerdbot.com/2026/09/03/minimax-h3-generates-2k-video-with-synchronized-sound-and-it-accepts-your-fan-art-as-input/",
-      "snippet": "MiniMax published H3&#x27;s model weights on Hugging Face, making it one of the most capable open-weight video models available. The base model (H3-Base) generates at 768p; the upscaling module (H3-Regenerate-2K) brings it to full 2K. The combined BF16 weights require approximately 134 GiB — serious hardware territory, not consumer laptop territory."
-    }
-  ]
+  "sources": []
 }

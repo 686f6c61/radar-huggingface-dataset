@@ -2,108 +2,111 @@
 
 ## Resumen
 
-Ichkil es un modelo compacto y autocontenido para tashkeel árabe (diacritización), es decir, la asignación de harakat, shadda y tanwin a cada letra de una frase árabe sin vocalizar. Lo desarrolla el usuario ichkil y se distribuye bajo licencia MIT a través de Hugging Face. Su función es transformar texto como "محمد قرأ الكتاب" en "مُحَمَّدٌ قَرَأَ الْكِتَابَ", resolviendo un paso de preprocesado crítico para TTS, búsqueda y enseñanza del árabe.
+Ichkil es un modelo compacto especializado en **tashkeel** (diacritización del árabe), es decir, la tarea de asignar a cada letra de una frase árabe sin vocales su conjunto completo de signos diacríticos (harakat, shadda, tanwin y sus combinaciones). Lo desarrolla el autor independiente ichkil y se distribuye bajo licencia MIT. No es un modelo generativo de propósito general: es un etiquetador de secuencias a nivel de carácter que produce una etiqueta por carácter de entrada, sin búsqueda de decodificación.
 
-Técnicamente no es un transformer generativo, sino una red de secuencia a nivel de carácter de aproximadamente 1,26 millones de parámetros (~5 MB en fp32) con arquitectura Bi-GRU seguida de un banco de expertos con compuertas y una cabeza de clasificación. Trabaja con un vocabulario de 42 símbolos y una ventana máxima de 1024 caracteres, y produce 13 etiquetas de salida que codifican combinaciones de diacríticos.
+La relevancia del modelo está en su relación rendimiento/tamaño: con **5,56 millones de parámetros** y un único artefacto ONNX de **22,3 MB en fp32**, alcanza un DER (diacritic error rate) del **2,32 %** en el conjunto clásico de Fadel et al. (2019) y del **2,14 %** en WikiNews (MSA moderno). Eso lo sitúa en un régimen de precisión propio de modelos mucho mayores, pero ejecutable en CPU, en un teléfono o en el navegador, completamente offline.
 
-Su relevancia actual radica en el despliegue: se publica como un único archivo ONNX (opset 17) que corre en CPU, WebGPU y navegador, sin servidor y sin enviar datos fuera del dispositivo. Con 0 descargas y 1 like en el momento de la consulta, se trata de un artefacto muy reciente y de adopción aún nula, pero con un compromiso explícito entre tamaño mínimo y calidad competitiva en tashkeel.
+La versión actual es la v0.3, que amplía el vocabulario de 42 a 175 símbolos, añade la combinación shadda + tanwin (16 clases de salida frente a 13), incorpora entrenamiento alineado a frases y mejora la cobertura de árabe moderno, nombres propios y préstamos. El repositorio incluye además los pesos PyTorch (`ichkil.pt`) para ajuste fino y librerías cliente en Python, JavaScript/TypeScript y Go.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Caracteres: Bi-GRU a nivel de carácter, banco de expertos con compuertas (gated expert bank) y cabeza de clasificación |
-| Parametros totales | ~1,26 M |
-| Longitud de contexto | 1024 caracteres máximo (secuencia de entrada `[batch, seq_len]`, 1 ≤ seq_len ≤ 1024) |
-| Tipos de cuantizacion | No disponible; el artefacto publicado es fp32 (~5 MB), sin variantes cuantizadas oficiales |
-| Idiomas soportados | Árabe (ar) |
+| Arquitectura | BiGRU de 3 capas con conexión residual + 2 bloques de self-attention + banco de 8 expertos MLP con gating + clasificador de 16 vías |
+| Parámetros totales | 5,56 M |
+| Parámetros activos | no disponible (no es MoE en el sentido habitual; usa un banco de expertos MLP con gating, sin número de activos declarado) |
+| Longitud de contexto | 1–1024 caracteres por llamada (textos más largos deben dividirse en finales de frase) |
+| Tipos de cuantización | no disponible (el artefacto publicado es fp32; no se declaran variantes cuantizadas) |
+| Idiomas soportados | árabe (`ar`) |
 | Licencia | MIT |
-| Formato de pesos | ONNX, opset 17 (archivo único `model.onnx`); contrato de E/S en `config.json` |
+| Formato de pesos | ONNX (opset 17, batch × longitud dinámicos) y checkpoint PyTorch (`ichkil.pt`) |
+
+Otras propiedades declaradas: vocabulario de 175 símbolos (`<pad>`=0, `<unk>`=1), 16 etiquetas de salida por carácter, tamaño del repo de 0,1 GB y artefacto principal de 22,3 MB.
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada combina tres etapas: una Bi-GRU a nivel de carácter que codifica la secuencia de entrada, un banco de expertos con compuertas que modula la representación, y una cabeza de clasificación que emite logits sobre 13 etiquetas. La entrada es `input_ids` en `int64` con forma `[batch, seq_len]`, construida a partir del mapa `sym2id` de `config.json` (vocabulario de 42 símbolos que incluye letras árabes, espacio, puntuación común, tatweel, `<pad>` y `<unk>`). La salida son `logits` en `float32` con forma `[batch, seq_len, 13]`, sobre los que se aplica `argmax` por posición.
+El modelo opera a nivel de carácter con una etiqueta por carácter y sin búsqueda de decodificación. La entrada se normaliza primero (NFC, variantes de letras, caracteres de ancho cero, tatweel y diacríticos existentes eliminados), se embebe en 320 dimensiones **sin embedding posicional** y se codifica mediante una **BiGRU de 3 capas con conexión residual**. A continuación se aplican **2 bloques de self-attention** que dan a cada carácter acceso directo a toda la frase, algo que el autor identifica como necesario para los casos gramaticales (case endings). Las ramas residuales de esos bloques arrancan en cero (LayerScale), de modo que la v0.3 se inicializó en caliente desde el modelo solo-GRU sin perder rendimiento. Después viene un banco de **8 expertos MLP con gating** y un **clasificador de 16 vías**.
 
-Las 13 etiquetas codifican combinaciones de diacríticos: desde la ausencia de marca hasta pares de fatha, damma, kasra, sukun, shadda y tanwin. El autor no detalla en la información disponible el número de tokens de entrenamiento, la composición del corpus ni si hubo etapas de ajuste tipo RLHF o DPO (procedimientos, por otra parte, poco habituales en una tarea de etiquetado secuencial como esta). La innovación destacada es de eficiencia y portabilidad: el artefacto ONNX se verifica idéntico al modelo PyTorch de referencia (delta máximo de 0,000e+00), de modo que las métricas se mantienen en cualquier runtime (Python, JavaScript/TypeScript, navegador o Go).
+En cuanto a datos, la model card cita corpus de Wikipedia, noticias y MSA, más unas 3.000 entradas de nombres propios, con entrenamiento alineado a frases (con o sin puntuación final). Los conjuntos de evaluación (Fadel et al. 2019, WikiNews y SadeedDiac-25 MSA) se excluyeron del entrenamiento mediante un filtro de solapamiento de 8-gramas. No se detalla el número total de tokens de entrenamiento, la composición exacta del dataset ni si hubo RLHF/DPO; al no ser un modelo generativo, esos mecanismos no aplican del mismo modo.
 
 ## Capacidades
 
-- Diacritización completa de texto árabe: asigna harakat, shadda y tanwin letra a letra, incluyendo la ausencia de marca cuando corresponde.
-- Procesamiento a nivel de carácter con vocabulario cerrado de 42 símbolos, lo que evita dependencia de un tokenizador subword.
-- Inferencia totalmente offline: no requiere servidor ni conexión, y los datos no abandonan el dispositivo.
-- Ejecución en CPU y WebGPU mediante ONNX Runtime, con clientes en Python, JavaScript/TypeScript (navegador y Node) y Go.
-- Manejo de entradas de hasta 1024 caracteres por secuencia.
-- Salida determinista: la decodificación es un `argmax` por posición, sin muestreo estocástico.
-- Gestión de caracteres fuera de vocabulario mediante el token `<unk>`.
-- No soporta tool calling, function calling, agentes, razonamiento multi-paso, visión ni audio: es un clasificador de secuencia especializado, no un modelo generativo de propósito general.
+- Diacritización completa de texto árabe: harakat, shadda, tanwin y sus combinaciones (16 clases de salida).
+- Etiquetado a nivel de carácter con una sola pasada, sin búsqueda de decodificación.
+- Manejo de árabe clásico y árabe moderno estándar (MSA), incluidos nombres propios y préstamos.
+- Vocabulario ampliado a 175 símbolos: dígitos, caracteres latinos y puntuación árabe y ASCII.
+- Procesamiento de entradas de 1 a 1024 caracteres por llamada, con batch y longitud dinámicos.
+- Ejecución en CPU, en navegador y en dispositivos móviles mediante ONNX Runtime.
+- Normalización de entrada integrada (NFC, variantes de letras, eliminación de ancho cero, tatweel y diacríticos previos).
+- Pesos PyTorch disponibles para ajuste fino.
+- No dispone de tool calling, razonamiento multi-paso, agentes, visión, audio ni modo thinking: es un modelo de etiquetado, no un LLM generativo.
 
 ## Casos de uso
 
-- Preprocesado para síntesis de voz (TTS) en árabe: los motores de TTS necesitan vocales y shadda para una pronunciación correcta; Ichkil puede vocalizar el texto de entrada en el propio dispositivo antes de enviarlo al sintetizador.
-- Widget de diacritización en el navegador: al ser un único archivo ONNX de ~5 MB ejecutable con ONNX Runtime Web, puede integrarse en una página web para vocalizar texto pegado por el usuario sin backend.
-- Aplicaciones móviles educativas de árabe: por su tamaño, cabe en un teléfono y funciona sin conexión, lo que permite mostrar textos vocalizados a estudiantes en cualquier contexto.
-- Post-procesado de transcripciones ASR: las salidas de reconocimiento de voz en árabe suelen carecer de diacríticos; Ichkil puede restaurarlos para mejorar la legibilidad y el análisis posterior.
-- Normalización en pipelines de búsqueda y recuperación de información: la vocalización puede homogeneizar el texto indexado y reducir ambigüedad en consultas en árabe.
-- Anotación lingüística y construcción de corpus: el modelo permite etiquetar automáticamente grandes volúmenes de texto árabe con diacríticos para investigación en morfología y fonología.
-- Integración en el procesamiento de OCR árabe: tras extraer texto de una imagen, la diacritización mejora la calidad del documento digitalizado para su reutilización.
-- Servicios de texto en el borde (edge): su bajo consumo permite desplegarlo en dispositivos con recursos limitados, sin GPU ni infraestructura dedicada.
+- **Preprocesado de corpus árabe para TTS y ASR**: la diacritización es un paso previo habitual para obtener una pronunciación correcta; el modelo añade las vocales a texto sin tashkeel en una sola pasada y cabe en el mismo pipeline de CPU que el resto del procesado.
+- **Edición y publicación editorial en árabe**: permite vocalizar automáticamente textos para libros infantiles, materiales didácticos o ediciones con tashkeel completo, con un DER del 2,14 % en MSA moderno que reduce la corrección manual a una revisión ligera.
+- **Enseñanza del árabe como lengua extranjera**: generación de textos vocalizados para ejercicios y lecturas graduadas, incluyendo nombres propios y préstamos, que es justo el punto débil de las versiones anteriores.
+- **Búsqueda y recuperación de información en árabe**: normalizar y vocalizar de forma consistente consultas y documentos para mejorar el emparejamiento en índices que distinguen formas vocálicas.
+- **Procesado en el navegador o en el dispositivo**: con 22,3 MB y ejecución ONNX en CPU, se puede integrar en un editor web o en una app móvil sin subir el texto a un servidor (la demo oficial funciona sin servidor ni subida de datos).
+- **Ajuste fino para dominios específicos**: a partir de `ichkil.pt`, un equipo puede reentrenar el modelo con corpus propios (por ejemplo, terminología jurídica o religiosa) y mantener el despliegue en ONNX.
+- **Integración en servicios backend ligeros**: las librerías cliente de Python, JS/TS y Go permiten incorporar la vocalización a microservicios con requisitos mínimos de memoria.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor sobre el conjunto de test de Fadel et al. (2019). El modelo index marca la métrica como no verificada (`verified: false`), por lo que deben interpretarse como cifras aportadas por el desarrollador. Además del DER del 2,80 %, la model card detalla otras métricas:
+Resultados declarados por el autor (no verificados de forma independiente). DER = diacritic error rate; «DER (no case)» excluye los casos gramaticales finales; «final-word error» es la proporción de muestras cuya última palabra es incorrecta.
 
-| Metrica | Valor |
-|---|---|
-| DER | 2,80 % |
-| DER (sin caso) | 2,05 % |
-| WER | 8,75 % |
-| WER (sin caso) | 4,65 % |
+| Conjunto de test | DER | DER (no case) | WER | Error en palabra final |
+|---|---|---|---|---|
+| Fadel et al. (2019), árabe clásico | 2,32 % | 2,11 % | 7,74 % | 11,8 % |
+| WikiNews (MSA) | 2,14 % | 1,48 % | 8,59 % | 11,6 % |
+| SadeedDiac-25 MSA | 3,08 % | 2,24 % | 11,04 % | 9,9 % |
 
-Comparación con líneas base publicadas sobre el mismo conjunto, según la model card:
+Comparación con la versión anterior (v0.1), medida con el mismo protocolo:
 
-| Sistema | DER | Diferencia vs Ichkil |
+| Conjunto de test | DER v0.3 | DER v0.1 |
 |---|---|---|
-| Abbad & Xiong 2020 (RNN + reglas) | 3,39 % | +0,60 (Ichkil mejor) |
-| Shakkala (B-LSTM) | 2,88 % | +0,09 (Ichkil mejor) |
-| Ichkil (este repositorio) | 2,80 % | — |
-| BERT SOTA (2024) | 1,14 % | −1,66 (BERT mejor) |
+| Fadel (clásico) | 2,32 % | 3,06 % |
+| WikiNews (MSA) | 2,14 % | 11,08 % |
+| SadeedDiac-25 MSA | 3,08 % | 10,68 % |
+| Error en palabra final (Fadel / WikiNews / MSA) | 11,8 % / 11,6 % / 9,9 % | 21 % / 66 % / 54 % |
 
-El autor indica que el artefacto ONNX puntúa de forma idéntica al modelo PyTorch de referencia (delta máximo de 0,000e+00).
+Con el protocolo original de la v0.1 (eliminación de caracteres desconocidos antes de la inferencia), la v0.1 obtiene 2,65 % en Fadel frente al 2,37 % de la v0.3, y mantiene una ligera ventaja dentro de las palabras (2,01 % frente a 2,13 %). En un benchmark específico de 124 frases vocalizadas a mano en 11 categorías de error, la v0.3 obtiene un **2,4 % de DER frente al 13,0 % de la v0.1**. El artefacto ONNX puntúa de forma idéntica al modelo PyTorch de referencia sobre el conjunto completo de Fadel (DER 2,3252 % en ambos).
 
 ## Requisitos de hardware
 
-- VRAM para inferencia: prácticamente nula; el modelo está diseñado para ejecutarse en CPU. Con ~1,26 M de parámetros y ~5 MB en fp32, reside por completo en memoria principal o incluso en caché.
-- GPU recomendadas: no se requieren. Cualquier GPU es innecesaria; en caso de usarse, no hay cifras de rendimiento publicadas.
-- Cabe en GPU de consumo: sí, y también en cualquier CPU moderna, teléfonos y navegadores. El caso de uso objetivo es el despliegue en el dispositivo, no en aceleradores.
-- Opciones de despliegue: ONNX Runtime (CPU) en Python; ONNX Runtime Web y ONNX Runtime Node para JavaScript/TypeScript; bindings de ONNX Runtime para Go (`github.com/yalue/onnxruntime_go`).
-- Latencia y throughput estimados: no disponibles en la información proporcionada. El autor no publica cifras de latencia por secuencia ni de rendimiento.
+- **VRAM estimada**: no aplica en la práctica; el modelo es de 5,56 M de parámetros y 22,3 MB en fp32, por lo que la inferencia en CPU es el escenario previsto.
+- **GPU recomendadas**: no se declaran requisitos de GPU; cualquier GPU capaz de ejecutar ONNX Runtime serviría, pero el diseño está orientado a CPU.
+- **GPU de consumo**: irrelevante para el caso de uso; cabe holgadamente en cualquier tarjeta, pero no es necesario.
+- **Despliegue**: ONNX Runtime (Python, JS/TS en Node y navegador, Go) y pesos PyTorch para ajuste fino. No se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI, que no aplican a este tipo de modelo.
+- **Latencia y throughput**: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Enfoque | DER (Fadel et al. 2019) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Ichkil | ~1,26 M | Bi-GRU + banco de expertos con compuertas, ONNX | 2,80 % | MIT | Hugging Face (ONNX, opset 17) |
-| Abbad & Xiong 2020 | No disponible | RNN + reglas | 3,39 % | No disponible | Publicación académica |
-| Shakkala | No disponible | B-LSTM | 2,88 % | No disponible | Proyecto publicado |
-| BERT SOTA (2024) | No disponible | BERT (transformer) | 1,14 % | No disponible | Publicación académica |
+No se han proporcionado datos de modelos comparables en la información disponible. La única comparación documentada es interna, entre la v0.3 y la v0.1 del propio modelo:
 
-Ichkil ofrece la mejor relación entre tamaño y error de diacritización frente a las líneas base clásicas citadas, aunque un sistema basado en BERT publicado en 2024 logra un DER claramente inferior (1,14 % frente a 2,80 %) a costa de un modelo mucho mayor y presumiblemente no orientado a ejecución en el dispositivo.
+| Modelo | Parámetros | Arquitectura | Vocabulario | Clases de salida | DER Fadel | DER WikiNews | Licencia |
+|---|---|---|---|---|---|---|---|
+| Ichkil v0.3 | 5,56 M | BiGRU + self-attention + expertos | 175 | 16 | 2,32 % | 2,14 % | MIT |
+| Ichkil v0.1 | 1,3 M | BiGRU + expertos | 42 | 13 | 3,06 % | 11,08 % | MIT |
 
 ## Limitaciones y advertencias
 
-- Cobertura de idioma limitada al árabe (ar); no está entrenado para otras lenguas.
-- Ventana máxima de 1024 caracteres por secuencia: los textos más largos deben dividirse en fragmentos, con el riesgo de perder contexto en las fronteras.
-- Se distribuye únicamente en fp32; no hay versiones cuantizadas publicadas (int8, fp16), lo que limita optimizaciones específicas de despliegue.
-- Las métricas de benchmark están marcadas como no verificadas en el model index y proceden del propio autor; la comparación con las líneas base también la aporta la model card, no una evaluación independiente.
-- Evaluación sobre un único conjunto (Fadel et al. 2019); no hay datos de robustez frente a otros dominios, dialectos, texto sin puntuación o ruido de OCR.
-- Al ser un clasificador de secuencia, puede asignar diacríticos incorrectos en palabras ambiguas u homógrafas, con impacto directo en pronunciación y sentido; conviene validación humana en aplicaciones sensibles.
-- No genera texto, no razona, no admite instrucciones ni herramientas: cualquier expectativa de uso como modelo conversacional es inadecuada.
-- Sesgos potenciales derivados del corpus de entrenamiento no documentado (registro, época o variedad dialectal), no cuantificados en la información disponible.
-- Adopción nula en el momento de la consulta (0 descargas, 1 like), lo que implica ausencia de validación por parte de la comunidad y de casos de producción conocidos.
-- La licencia MIT permite uso comercial y modificación sin restricciones relevantes, siempre que se conserve el aviso de copyright y la licencia.
+- **Sesgos conocidos**: no se documentan sesgos específicos en la información disponible; al tratar corpus de Wikipedia y noticias, puede heredar las distribuciones y sesgos de esas fuentes.
+- **Riesgo de error**: el modelo no es perfecto; un DER del 2,32 % implica errores residuales, con un 11,8 % de error en la última palabra de la frase en el conjunto clásico, lo que afecta especialmente a los casos gramaticales finales.
+- **Longitud de entrada**: la ventana útil es de 1 a 1024 caracteres por llamada; los textos más largos deben dividirse en finales de frase, lo que puede degradar la coherencia en los cortes.
+- **Idioma**: solo árabe; no soporta otras lenguas ni transliteración.
+- **Tarea acotada**: no genera texto, no razona, no hace tool calling ni atiende instrucciones; cualquier uso fuera de la diacritización requiere otro modelo.
+- **Curacion de datos**: los resultados son declarados por el autor y no están verificados de forma independiente (`verified: false` en el model-index).
+- **Licencia**: MIT, que permite uso comercial y modificación, pero conviene revisar las licencias de los corpus de entrenamiento y de evaluación citados.
+- **Producción**: al ser un modelo pequeño, el coste computacional es bajo, pero la calidad depende de la normalización de entrada; hay que respetar el contrato de E/S descrito en `config.json`.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/ichkil/ichkil
-- Los resultados de la búsqueda web no aportan enlaces relevantes sobre este modelo: las entradas devueltas corresponden a entidades homónimas no relacionadas (modelos de generación de imágenes en SeaArt y PixAI, y la plataforma Ichi de ichiplan.com), por lo que se descartan como fuentes.
-- No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código o demos adicionales del modelo.
+- Modelo en Hugging Face: https://huggingface.co/ichkil/ichkil
+- Demo en el navegador (Hugging Face Spaces): https://huggingface.co/spaces/ichkil/ichkil-demo
+- Librería Python (PyPI): https://pypi.org/project/ichkil/
+- Repositorio Python: https://github.com/Ichkil/ichkil-python
+- Librería JS/TS (npm): https://www.npmjs.com/package/ichkil
+- Repositorio JS/TS: https://github.com/Ichkil/ichkil-js
+- Librería Go (pkg.go.dev): https://pkg.go.dev/github.com/Ichkil/ichkil-go
+- Repositorio Go: https://github.com/Ichkil/ichkil-go

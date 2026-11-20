@@ -2,97 +2,114 @@
 
 ## Resumen
 
-qwen3-4b-instruct-2507-phi-lattice-v2 es una cuantizacion GGUF del modelo Qwen/Qwen3-4B-Instruct-2507, publicado por el usuario ununununununununununununununununununun. No se trata de un modelo entrenado desde cero, sino de un build de cuantizacion que aplica una tecnica propietaria denominada phi-lattice-v2, descrita por el autor como una optimizacion post-entrenamiento multidimensional con una pasada de calibracion de escalas ponderada por importancia. El modelo base, Qwen3-4B-Instruct-2507, es un transformer denso de 4.022 millones de parametros y 36 capas, desarrollado por Alibaba Qwen.
+`qwen3-4b-instruct-2507-phi-lattice-v2` es una compilación cuantizada a 4 bits del modelo denso `Qwen/Qwen3-4B-Instruct-2507` (4.022.468.096 parámetros, 36 capas transformer), publicada por el usuario `ununununununununununununununununununun`. No se trata de un modelo nuevo entrenado desde cero, sino de un artefacto de compresión que aplica una técnica propia denominada `phi-lattice v2` sobre los pesos lineales del modelo base, empaquetándolos en un archivo `uint8` de 2,71 GB (`qwen3_4b_phi_v2_packed_4bit.pt`) que incluye además una tabla de tokens y normas en BF16.
 
-La relevancia de esta publicacion es fundamentalmente metodologica: el autor presenta una comparativa cuantitativa de cuatro variantes (BF16 de referencia, cuantizacion uniforme estandar, phi-lattice v1 y phi-lattice v2) midiendo SQNR de pesos a 4 y 3 bits y el porcentaje de pesos anulados. Segun esos datos, phi-lattice-v2 alcanza 19,63 dB de SQNR a 4 bits (frente a 19,04 dB de la cuantizacion uniforme) con un 12,53 % de pesos anulados, y 12,90 dB a 3 bits con un 21,24 % de anulados.
+El problema que resuelve es el de la huella de memoria en inferencia: el checkpoint original en BF16 ocupa 7.671,6 MiB, mientras que esta versión mantiene 2.583,0 MiB residentes en GPU, una reducción total de 2,97x (3,76x sobre los pesos lineales). La compresión se consigue sin datos de calibración y con un 12,53% de pesos exactamente anulados, apoyándose en un kernel Triton fusionado de LUT-GEMM (`phi_lut_gemm.py`) que opera directamente sobre los pesos de 4 bits en registros de GPU.
 
-El repositorio tiene un tamano de 4,3 GB, esta etiquetado como compatible con endpoints y con Ollama, y se distribuye bajo licencia Apache 2.0 heredada del modelo base. En el momento de la consulta no registra descargas ni likes, y la model card no documenta resultados de benchmarks de calidad downstream (MMLU, HumanEval, GSM8K u otros), solo metricas de reconstruccion de pesos.
+Su relevancia actual es doble: por un lado, permite ejecutar un modelo de 4B con contexto nativo de Qwen3 en GPUs de consumo; por otro, sirve como referencia metodológica de cuantización no uniforme, ya que el autor publica métricas comparativas frente a cuantización uniforme y frente a su versión anterior `phi-lattice v1`. La licencia es Apache 2.0, heredada del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (modelo base Qwen3-4B-Instruct-2507), 36 capas |
-| Parametros totales | 4.022.468.096 (4,0 B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible en la informacion proporcionada |
-| Tipos de cuantizacion | GGUF con esquema phi-lattice-v2; el autor reporta metricas para 4 bits y 3 bits |
-| Idiomas soportados | No disponible en la informacion proporcionada |
+| Arquitectura | Transformer denso (Qwen3), 36 capas, 252 capas lineales cuantizadas |
+| Parametros totales | 4.022.468.096 (3.633.315.840 en pesos lineales) |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | Phi-lattice v2 4-bit (uint8 empaquetado), 3-bit documentado en benchmarks; modos `triton_4bit`, `low_vram_4bit`, `unrolled_bf16` |
+| Idiomas soportados | no disponible en la informacion proporcionada |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (libreria gguf; compatible con Ollama) |
+| Formato de pesos | `.pt` (archivo empaquetado `uint8` + tabla de tokens y normas en BF16); no se distribuyen safetensors ni GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente es Qwen3-4B-Instruct-2507, un transformer denso de 36 capas con 4,0 B de parametros y 3,63 B de pesos lineales segun la model card. Esta variante "Instruct-2507" corresponde a la version instructiva del checkpoint Qwen3 de 4 B publicada por Alibaba Qwen; la model card del repositorio no detalla la composicion del dataset de preentrenamiento ni las etapas de alineacion (SFT, RLHF o DPO) del modelo original.
+El modelo subyacente es `Qwen/Qwen3-4B-Instruct-2507`, un transformer denso de 36 capas con 4.022 millones de parámetros. Sobre él, esta publicación no entrena ni afina: aplica una compresión post-entrenamiento de los 3.633.315.840 pesos lineales distribuidos en 252 capas `Linear`, todas ellas con dimensión de entrada múltiplo de 64 (`K%64==0`), condición que habilita el kernel LUT-GEMM. El resto de tensores (398 en total, incluyendo tabla de tokens y normas) se conserva en BF16 y suma 742,1 MiB del archivo.
 
-La innovacion tecnica de este repositorio no esta en el entrenamiento sino en la cuantizacion. phi-lattice-v2 se describe como una optimizacion post-entrenamiento multidimensional con calibracion de escalas ponderada por importancia. Frente a la cuantizacion uniforme estandar, el autor reporta una mejora de +0,59 dB de SQNR a 4 bits (19,63 dB frente a 19,04 dB) y de +1,20 dB a 3 bits (12,90 dB frente a 11,70 dB), ademas de anular el 12,53 % de los pesos a 4 bits y el 21,24 % a 3 bits. La model card no especifica el algoritmo exacto de asignacion de bits por tensor ni el conjunto de calibracion empleado.
+La innovación técnica es la cuantización `phi-lattice v2`, una rejilla no uniforme que sustituye el escalado uniforme por una tabla de consulta (LUT) de valores representables. Según las métricas del autor, v2 alcanza 19,63 dB de SQNR a 4 bits (frente a 19,04 dB de la cuantización uniforme y 18,62 dB de v1) y 12,90 dB a 3 bits (frente a 11,70 dB uniforme). Además, produce un 12,53% de pesos exactamente cero a 4 bits (455.352.162 pesos) y un 21,24% a 3 bits, lo que permite saltar operaciones. No se requiere conjunto de calibración. La decodificación se realiza con `phi_lut_gemm.py`, un kernel Triton fusionado que resuelve el producto matriz-vector directamente sobre los códigos de 4 bits, y con `phi_loader.py`, que ofrece tres modos de carga con huellas de VRAM distintas.
 
 ## Capacidades
 
-- Generacion de texto y conversacion: hereda las capacidades del checkpoint Qwen3-4B-Instruct-2507 en tareas de texto generativo e instrucciones.
-- Razonamiento y matematicas: capacidades propias del modelo base; no se documentan evaluaciones especificas en este repositorio.
-- Generacion de codigo: capacidad esperable del modelo base Qwen3-Instruct; sin benchmarks publicados en esta ficha.
-- Soporte de tool calling / function calling: no documentado en la model card de este repositorio; depende de las capacidades del modelo base.
-- Soporte de agentes y razonamiento multi-paso: no documentado en este repositorio.
-- Capacidades multilingues: no disponibles en la informacion proporcionada.
-- Modo thinking: no documentado en este repositorio (la variante 2507 de Qwen3 se distribuye habitualmente como instructiva no-thinking, pero este dato no se confirma en la model card).
-- Capacidades de vision o audio: no disponibles.
+- Generación de texto conversacional multi-turno, heredada del ajuste instructivo del modelo base Qwen3-4B-Instruct-2507.
+- Razonamiento matemático: GSM8K con `exact_match` de 0,8393 en la versión cuantizada, lo que indica que la compresión preserva la capacidad aritmética del original.
+- Conocimiento multidisciplinar: MMLU de 0,6806, coherente con un modelo de 4B de la familia Qwen3.
+- Razonamiento de sentido común: HellaSwag `acc_norm` de 0,6719.
+- Seguimiento de instrucciones: capacidad medida con IFEval, aunque con la mayor degradación relativa del conjunto (ver sección de benchmarks).
+- Tool calling y function calling: no documentado explícitamente en la información proporcionada; debe validarse empíricamente sobre el modelo cuantizado.
+- Capacidades de agente y razonamiento multi-paso: no documentadas en la información proporcionada.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Modo thinking, visión o audio: no documentados en la información proporcionada.
 
 ## Casos de uso
 
-- Despliegue local en estaciones de trabajo: al ser un GGUF de 4,3 GB, puede ejecutarse con Ollama en equipos con GPU de consumo media o incluso en CPU, lo que facilita prototipado sin infraestructura cloud.
-- Asistentes conversacionales autoalojados: el modelo puede integrarse en aplicaciones de chat internas donde la privacidad de los datos impide usar APIs de terceros, aprovechando la licencia Apache 2.0.
-- Evaluacion de tecnicas de cuantizacion: investigadores que comparan esquemas de cuantizacion pueden usar este repositorio como referencia reproducible frente a la cuantizacion uniforme, gracias a las metricas de SQNR y sparsity publicadas.
-- Generacion de codigo en entornos con recursos limitados: para autocompletado o generacion de snippets en IDE o pipelines ligeros donde no cabe un modelo mayor, siempre que se validen los resultados por la perdida de calidad a 3-4 bits.
-- Procesamiento por lotes de texto en CPU: tareas de resumen, clasificacion o extraccion de entidades en servidores sin GPU, usando llama.cpp u Ollama con el fichero GGUF.
-- Base para fine-tuning ligero o experimentacion: al estar bajo Apache 2.0 y derivar de un modelo de 4 B, sirve como punto de partida para adaptaciones con LoRA/QLoRA en hardware modesto.
-- Pruebas de integracion con endpoints compatibles: la etiqueta endpoints_compatible sugiere su uso en despliegues con APIs tipo OpenAI para validar pipelines antes de pasar a modelos mayores.
+- Despliegue en GPU de consumo para asistentes conversacionales: con 2.583,0 MiB residentes en modo `triton_4bit`, el modelo cabe holgadamente en tarjetas de 8 GB y permite reservar el resto de VRAM para el contexto KV, algo inviable con el checkpoint BF16 de 7,67 GiB.
+- Servicio de inferencia de bajo coste en entornos con múltiples instancias: la reducción de 2,97x en VRAM permite alojar varias réplicas del modelo en una sola GPU de 24 GB o 48 GB, aumentando el throughput agregado frente a una única instancia BF16.
+- Prototipado e investigación en cuantización: el repositorio incluye `phi_loader.py` y `phi_lut_gemm.py` junto con los JSON de evaluación en `evals/lm_eval_qwen_base/` y `evals/lm_eval_qwen_v2/`, lo que facilita reproducir la comparativa BF16 frente a 4 bits y evaluar la técnica frente a alternativas uniformes.
+- Evaluación de pipelines de razonamiento matemático en hardware limitado: con GSM8K en 0,8393 (97,7% del baseline), es adecuado para tareas de resolución de problemas aritméticos en entornos donde no se dispone de GPUs de datacenter.
+- Educación y demostraciones técnicas: la carga en modo `low_vram_4bit` con desquantización por capa bajo demanda permite ejecutar el modelo en portátiles con GPU de 6-8 GB, útil para talleres y formación sobre transformers y cuantización.
+- Clasificación y extracción de información con contexto conversacional: el modelo conserva el 96,4% del rendimiento MMLU del original, suficiente para tareas de respuesta a preguntas sobre documentación y resumen en producción de baja criticidad.
+- Integración en pipelines de CI para validación de modelos: el archivo empaquetado de 2,71 GB reduce los tiempos de descarga y almacenamiento en artefactos frente a los 8,05 GB del checkpoint BF16, lo que simplifica la incorporación del modelo a tests automatizados.
 
 ## Benchmarks y rendimiento
 
-La model card solo publica metricas de reconstruccion de pesos (SQNR y porcentaje de pesos anulados), no resultados de calidad downstream.
+Resultados de cuantización de pesos publicados por el autor:
 
-| Metodo | SQNR pesos 4 bits | Sparsity 4 bits (anulados) | SQNR pesos 3 bits | Sparsity 3 bits (anulados) |
-|---|---|---|---|---|
-| Baseline BF16 | Referencia | 0,00 % | Referencia | 0,00 % |
-| Cuantizacion uniforme | 19,04 dB | 0,00 % | 11,70 dB | 0,00 % |
-| phi-lattice v1 | 18,62 dB | 7,82 % (284 M pesos) | 12,66 dB | 19,39 % |
-| phi-lattice v2 (este repo) | 19,63 dB | 12,53 % (455 M pesos) | 12,90 dB | 21,24 % |
+| Metodo | SQNR 4-bit | Dispersion exacta 4-bit | SQNR 3-bit | Dispersion exacta 3-bit |
+|---|---:|---:|---:|---:|
+| Baseline BF16 | referencia | 0,00% | referencia | 0,00% |
+| Uniforme estandar | 19,04 dB | 0,00% | 11,70 dB | 0,00% |
+| phi-lattice v1 | 18,62 dB | 7,82% (284.125.300 pesos) | 12,66 dB | 19,39% |
+| phi-lattice v2 (este repo) | 19,63 dB | 12,53% (455.352.162 pesos) | 12,90 dB | 21,24% |
 
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
+Resultados de `lm-evaluation-harness` (modo `unrolled_bf16`, `batch_size=16`):
+
+| Tarea | Metrica | Base BF16 | phi-lattice v2 | stderr (base / v2) |
+|---|---|---:|---:|---:|
+| MMLU (14.042 items) | acc | 0,7063 | 0,6806 | 0,0036 / 0,0037 |
+| GSM8K (1.319 items) | exact_match strict | 0,8590 | 0,8393 | 0,0096 / 0,0101 |
+| IFEval (541 prompts) | prompt_level_strict_acc | 0,5786 | 0,4547 | 0,0212 / 0,0214 |
+| IFEval (541 prompts) | inst_level_strict_acc | 0,6918 | 0,6007 | no disponible |
+| IFEval (541 prompts) | prompt_level_loose_acc | 0,6414 | 0,5139 | 0,0206 / 0,0215 |
+| IFEval (541 prompts) | inst_level_loose_acc | 0,7410 | 0,6487 | no disponible |
+| HellaSwag (10.042 items) | acc | 0,5256 | 0,5064 | 0,0050 / 0,0050 |
+| HellaSwag (10.042 items) | acc_norm | 0,6905 | 0,6719 | 0,0046 / 0,0047 |
+
+Retencion respecto al baseline: 97,7% en GSM8K, 96,4% en MMLU y 97,3% en HellaSwag (`acc_norm`). IFEval cae a 78,6% en `prompt_level_strict_acc`, la mayor pérdida del conjunto.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 2,5-3 GB para una cuantizacion de 4 bits de un modelo de 4 B, y en torno a 1,8-2,2 GB para 3 bits, sin contar el espacio de contexto KV cache.
-- GPU recomendadas: cualquier GPU con 6 GB o mas de VRAM (RTX 3060, RTX 4060, RTX 4070, etc.); en el extremo superior, A100 o H100 no son necesarias para este tamano y solo aportarian throughput.
-- Cabe en GPU de consumo: si, en practicamente todas las GPU modernas con 6 GB o mas; tambien puede ejecutarse en CPU con llama.cpp.
-- Opciones de despliegue: Ollama (soporte explicito en la model card con `ollama run hf.co/...` y Modelfile), llama.cpp (formato GGUF), y otros runners compatibles con GGUF. vLLM y TGI no estan documentados para este repositorio.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM en modo `triton_4bit` o `low_vram_4bit`: 2.583,0 MiB residentes (2,52 GiB), frente a 7.671,6 MiB del checkpoint BF16.
+- VRAM en modo `unrolled_bf16`: 7.671,6 MiB, equivalente al modelo sin cuantizar.
+- GPU recomendadas para 4 bits: cualquier GPU con soporte Triton y al menos 4 GB libres; RTX 3060 8 GB, RTX 4060 8 GB, RTX 4070, RTX 4090, A100 y H100 son válidas. El kernel Triton requiere capacidad de cómputo moderna para rendir de forma óptima.
+- ¿Cabe en GPU de consumo? Sí, con margen amplio en 8 GB y suficiente en 6 GB si se limita la longitud de contexto. En 4 GB el margen es muy ajustado.
+- Opciones de despliegue: `phi_loader.py` (modos `triton_4bit`, `low_vram_4bit`, `unrolled_bf16`) con `transformers` y `AutoTokenizer`; el autor indica que no hay contenedor de runtime separado en el repositorio. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI, y al no distribuirse GGUF no es directamente usable en llama.cpp.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| qwen3-4b-instruct-2507-phi-lattice-v2 | 4,0 B | No disponible | GGUF | Apache 2.0 | Cuantizacion phi-lattice-v2 con metricas SQNR publicadas |
-| Qwen/Qwen3-4B-Instruct-2507 (base) | 4,0 B | No disponible en esta ficha | Safetensors (BF16) | Apache 2.0 | Modelo original sin cuantizar; referencia de calidad |
-| Cuantizacion uniforme de Qwen3-4B-Instruct-2507 | 4,0 B | No disponible | GGUF | Apache 2.0 | Baseline de cuantizacion estandar; SQNR 19,04 dB a 4 bits |
+| `qwen3-4b-instruct-2507-phi-lattice-v2` | 4,02B | no disponible | `.pt` 4-bit empaquetado | Apache 2.0 | 2.583,0 MiB en GPU; requiere `phi_loader.py` |
+| `Qwen/Qwen3-4B-Instruct-2507` (BF16) | 4,02B | no disponible | safetensors BF16 | Apache 2.0 | 7.671,6 MiB; referencia de calidad (MMLU 0,7063, GSM8K 0,8590) |
+| Cuantizacion uniforme 4-bit del mismo base | 4,02B | no disponible | no disponible | Apache 2.0 | SQNR 19,04 dB; 0% de dispersion exacta; sin artefacto publicado en esta informacion |
 
-No se dispone de datos de benchmarks de calidad que permitan comparar el rendimiento downstream de este modelo frente a alternativas de la misma categoria.
+No se dispone de datos de benchmarks de terceros (por ejemplo, builds GGUF de la comunidad) para establecer comparaciones adicionales con cifras verificables.
 
 ## Limitaciones y advertencias
 
-- La model card no documenta evaluaciones de calidad downstream; las metricas de SQNR y sparsity miden reconstruccion de pesos, no capacidad del modelo.
-- La cuantizacion a 3-4 bits con un 12-21 % de pesos anulados puede degradar tareas sensibles, como razonamiento matematico o generacion de codigo; se recomienda validacion especifica antes de produccion.
-- Riesgo de alucinacion inherente al modelo base Qwen3-4B-Instruct-2507; no se documenta mitigacion adicional en este repositorio.
-- Sesgos conocidos del modelo base: no documentados en esta model card; deben asumirse los del checkpoint original de Qwen.
-- Idiomas soportados: no disponibles; la cobertura multilingue depende del modelo base y no se verifica en este repositorio.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene revisar la licencia del modelo base Qwen3-4B-Instruct-2507 por si anade condiciones adicionales.
-- El autor del repositorio es un usuario individual sin historial verificable; el repositorio no tiene descargas ni likes, lo que reduce la evidencia de validacion por la comunidad.
-- La tecnica phi-lattice-v2 no esta descrita en detalle (algoritmo, dataset de calibracion, reproducibilidad), lo que dificulta auditar la cuantizacion.
-- No se documenta la longitud de contexto efectiva tras la cuantizacion; verificar antes de usos con ventanas largas.
+- Degradación en seguimiento de instrucciones: IFEval `prompt_level_strict_acc` cae de 0,5786 a 0,4547, una pérdida relativa del 21,4%, muy superior a la observada en MMLU o GSM8K. Para tareas con formato estricto conviene validar el comportamiento antes de desplegar.
+- Dependencia de código personalizado: el modelo no se carga con `AutoModelForCausalLM.from_pretrained` estándar; requiere descargar y ejecutar `phi_loader.py` y, para el modo rápido, `phi_lut_gemm.py`. Esto complica la integración con servidores de inferencia convencionales y añade superficie de auditoría de código de terceros.
+- Ausencia de formatos estándar: no se publican safetensors ni GGUF, por lo que no es compatible directamente con llama.cpp, Ollama ni con la mayoría de pipelines que esperan esos formatos.
+- Riesgo de alucinación: inherente a un modelo de 4B; la cuantización no lo incrementa de forma medible en los benchmarks publicados, pero tampoco lo mitiga.
+- Sesgos: no se documenta ninguna evaluación de sesgos ni de toxicidad en la información proporcionada. Al heredar los pesos del modelo base, arrastra los sesgos de su dataset de entrenamiento, no descritos aquí.
+- Idiomas: no se especifica la cobertura lingüística del modelo cuantizado; debe asumirse la del modelo base, no verificada en esta ficha.
+- Licencia: Apache 2.0 permite uso comercial, pero el autor del artefacto no ofrece garantías sobre la calidad del proceso de cuantización ni sobre su idoneidad para producción.
+- Repositorio con 0 likes y autor de nombre genérico: conviene auditar el hash sha256 del archivo (`c617c04a...`) y verificar la integridad antes de usarlo en entornos productivos.
+- Contexto: la longitud máxima no se indica en la información proporcionada, por lo que el dimensionado de la caché KV para contextos largos debe determinarse empíricamente.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/ununununununununununununununununununun/qwen3-4b-instruct-2507-phi-lattice-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
-- Organizacion Qwen en Hugging Face: https://huggingface.co/Qwen
+- Archivos del repositorio: `qwen3_4b_phi_v2_packed_4bit.pt`, `phi_loader.py`, `phi_lut_gemm.py`, `config.json`, tokenizer y `README.md`
+- Resultados de evaluación: `evals/lm_eval_qwen_base/` y `evals/lm_eval_qwen_v2/` (incluidos en el repositorio)
+- Paper, blog o demo adicionales: no disponibles en la información proporcionada

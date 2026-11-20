@@ -2,90 +2,98 @@
 
 ## Resumen
 
-Pythia 1.4B jBlaze Reasoning es una version modificada del modelo EleutherAI/pythia-1.4b, desarrollada por ApolloRaines con la tecnologia jBlaze de SAIQL. La novedad principal es que la mejora de razonamiento se logra mediante edicion de pesos conductual (behavioral weight editing), sin ningun entrenamiento basado en gradientes: no hay fine-tuning, no hay LoRA, no hay descenso de gradiente ni datos de entrenamiento adicionales. El procedimiento aplica proyecciones direccionales calculadas a partir de pares de prompts contrastivos directamente sobre las matrices de pesos del modelo.
+Pythia-1.4B-jBlaze-Reasoning es un checkpoint derivado de EleutherAI/pythia-1.4b al que se le han aplicado ediciones de pesos de comportamiento (behavioral weight editing) mediante la técnica denominada jBlaze en las 24 capas del modelo. Lo publica el usuario ApolloRaines en Hugging Face bajo licencia Apache 2.0. No es un modelo entrenado desde cero ni un fine-tuning convencional: parte de los pesos de Pythia-1.4B y los modifica quirúrgicamente para alterar el comportamiento de salida.
 
-El modelo mantiene exactamente los mismos parametros que el Pythia 1.4B de partida: 1.414.647.808 parametros, con arquitectura GPT-NeoX y 24 capas transformer. Segun las evaluaciones publicadas por el autor, la precision en un benchmark propio de razonamiento held-out de 100 preguntas sobre 5 categorias (logica, matematicas, secuencias, razonamiento verbal y causal) sube del 7% al 56% con respecto a la variante DNP previa. El modelo es relevante porque demuestra una alternativa de bajo coste computacional a los metodos clasicos de ajuste fino, aunque sus limitaciones de generacion de texto libre son explicitas.
+El modelo es relevante ahora, sobre todo, como caso de estudio metodológico. Su model card incluye una corrección explícita: la versión anterior se publicó como "Reasoning Enhanced" afirmando una mejora del 7% al 56% en un benchmark de razonamiento, y esa afirmación se ha retirado. Una auditoría espectral independiente mostró que la mejora medida era un artefacto del scorer: el benchmark presentaba opciones A-D y puntuaba el argmax sobre los logits de las letras, con una clave de respuestas sesgada al 58% hacia "B". El modelo base prefería "A" en el 66% de las preguntas y el editado prefiere "B" en el 95%, de modo que la edición desplazó la preferencia de letra hacia la más frecuente en la clave. Con puntuación cloze (log-probabilidad del texto de cada opción, normalizada por longitud), ambos modelos obtienen 45/100.
+
+La arquitectura subyacente es GPT-NeoX (transformer decoder-only), con 1.414.647.808 parámetros reales según safetensors. El checkpoint es un compuesto: parte de la edición es una construcción de rango 5 sin gradientes en `mlp.dense_4h_to_h` de las capas 0-7 y 16-23, pero las capas 8-15 de esa misma matriz llevan un delta de rango ~1.500 sobre 2.048, lo que indica entrenamiento con gradientes, y `attention.dense` presenta un residuo inexplicado en las 24 capas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (Transformer) |
+| Arquitectura | GPT-NeoX (transformer decoder-only) |
 | Parametros totales | 1.414.647.808 |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (Pythia-1.4b base: 2.048 tokens) |
+| Tipos de cuantizacion | no disponible (pesos en safetensors sin cuantizar en el repo) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura base es la del modelo EleutherAI/pythia-1.4b: un transformer GPT-NeoX de 24 capas, con atencion por cabezas y MLP densos. La modificacion realizada por ApolloRaines no altera la arquitectura, sino que edita los pesos de las proyecciones de salida de atencion y de las capas densas MLP en las 24 capas mediante el compilador jBlaze. El metodo construye "direcciones conductuales" a partir de pares de prompts contrastivos y las proyecta directamente sobre las matrices de pesos, sin senal de gradiente y sin datos de entrenamiento adicionales. Se aplicaron dos direcciones conductuales complementarias.
+El modelo hereda la arquitectura GPT-NeoX de Pythia-1.4B: transformer decoder-only con 24 capas, atención multi-cabeza estándar y MLP con proyecciones `dense_h_to_4h` y `dense_4h_to_h`. Sobre esa base se aplican ediciones de pesos en las 24 capas. Según la corrección de la model card, la edición no es homogénea: en `mlp.dense_4h_to_h` de las capas 0-7 y 16-23 hay una construcción limpia de rango 5, con un acantilado espectral (spectral cliff) de 2.306x a 4.125x, compatible con una edición sin gradientes. En cambio, en las capas 8-15 esa misma matriz lleva un delta de rango ~1.500 sobre 2.048, con un acantilado de solo 6-11x, lo que corresponde a entrenamiento con gradientes. Además, `attention.dense` presenta un residuo no explicado en las 24 capas, con rango a 0,99 entre 48 y 618 sobre 2.048, por encima del suelo de almacenamiento medido en todas ellas.
 
-Antes de la edicion de razonamiento, el modelo base fue procesado con DNP (Direct Neural Programming) para inyeccion de conocimiento. El coste computacional del proceso completo de edicion fue inferior a 2 minutos en una NVIDIA RTX 3090, con aproximadamente 60 segundos para la extraccion de direcciones y 5 segundos para la proyeccion de pesos. No se ha publicado ningun paper con el metodo: la tecnologia jBlaze es propietaria de SAIQL.
+No se documenta el volumen de tokens de entrenamiento, la composición del dataset, ni si hubo RLHF o DPO. La model card indica que la búsqueda de configuración que seleccionó las ediciones se puntuó con `eval_reasoning.py`, el scorer defectuoso, y que el objetivo de optimización premiaba la preferencia de letra en lugar del razonamiento. El autor afirma que cualquier afirmación futura de esta familia se reportará bajo puntuación cloze y en un benchmark que la búsqueda de configuración no haya visto.
 
 ## Capacidades
 
-- Razonamiento a nivel de decision: el modelo evalua mejor en tareas de opcion multiple con puntuacion logit-level, siguiendo la metodologia de benchmarks como MMLU. La mejora se observa en logica, matematicas, secuencias, razonamiento verbal y causal.
-- Generacion de texto: el modelo conserva la capacidad generativa de Pythia 1.4B, aunque el autor advierte que no produce texto libre de alta calidad independientemente de las ediciones de razonamiento.
-- No documentado: no se menciona soporte de tool calling, function calling, agentes, vision, audio ni modos de pensamiento extendido en la informacion proporcionada.
-- Multilinguismo: no se especifican idiomas soportados; el modelo base Pythia esta entrenado principalmente en ingles, por lo que la cobertura multilingue no esta verificada.
+- Generación de texto autoregresiva, heredada de Pythia-1.4B.
+- Edición de comportamiento de pesos verificada: desplaza la preferencia de letra de salida del 66% "A" al 95% "B" en el benchmark interno del autor, de forma reproducible.
+- Conversación: la model card incluye la etiqueta `conversational`, aunque no se documenta ningún ajuste conversacional específico.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- No se documenta capacidad multilingüe; los idiomas soportados figuran como no disponibles.
+- No se documenta modo thinking, visión ni audio.
+- No se ha demostrado mejora en razonamiento: la puntuación cloze es idéntica a la del modelo base (45/100 en ambos).
 
 ## Casos de uso
 
-- Investigacion en edicion de pesos: el modelo resulta util para estudiar como la proyeccion direccional sobre pesos modifica comportamientos sin retraining, comparando respuestas antes y despues de la edicion.
-- Evaluacion de tecnicas de razonamiento en modelos pequenos: sirve como benchmark interno para comprobar si la edicion conductual generaliza a otras tareas de opcion multiple, usando el script de evaluacion incluido en el repositorio.
-- Analisis de mecanismos internos: al conservar el mismo numero de parametros y arquitectura, permite comparar mapas de activacion entre el Pythia original y esta version para identificar en que capas se concentran los cambios.
-- Prototipado rapido de experimentos sin GPU de gran capacidad: el coste de edicion es tan bajo que puede realizarse en una RTX 3090, por lo que el modelo es adecuado para pruebas de concepto en laboratorios sin infraestructura grande.
-- Comparacion de metodos de modificacion sin entrenamiento: junto con el modelo DNP base, permite comparar la eficacia relativa de DNP y jBlaze sobre la misma arquitectura.
-- Docencia sobre limites de los benchmarks: puede utilizarse para demostrar que una gran subida porcentual en un benchmark propio y de pocas preguntas no implica una mejora equivalente en texto libre ni una "inteligencia" general mayor.
+- Investigación sobre edición de pesos: el checkpoint sirve como ejemplo reproducible de cómo una edición de pesos puede alterar un comportamiento medible (preferencia de letra) sin cambiar la capacidad subyacente. Los scripts `eval_reasoning.py` y `eval_sound.py` permiten replicar el análisis.
+- Auditoría de metodologías de evaluación: útil para estudiar cómo un scorer con argmax sobre logits de letras puede fabricar una mejora aparente cuando la clave de respuestas está desbalanceada. El caso concreto (58% "B", base prefiere "A", editado prefiere "B") es un ejemplo didáctico de sesgo de evaluación.
+- Estudio de espectros de matrices de pesos: la diferencia entre la construcción de rango 5 (capas 0-7 y 16-23) y el delta de rango ~1.500 (capas 8-15) en `mlp.dense_4h_to_h` permite analizar la firma espectral de ediciones sin gradientes frente a entrenamiento con gradientes.
+- Reproducibilidad de resultados negativos: el modelo y sus scripts permiten verificar que la puntuación cloze no detecta efecto (45/100 en ambos modelos), con un error estándar de ~7 puntos sobre la diferencia a n=100, lo que excluye efectos mayores de ~14 puntos.
+- Generación de texto de propósito general: al ser un derivado de Pythia-1.4B con licencia Apache 2.0, puede usarse como modelo base pequeño para tareas de generación, aunque sin ventajas documentadas frente al original.
+- Docencia sobre sesgos en benchmarks: el caso ilustra por qué la puntuación por argmax de letras es inadecuada cuando las opciones no están balanceadas y por qué conviene usar puntuación cloze o rotaciones cíclicas.
 
 ## Benchmarks y rendimiento
 
-El autor presenta resultados de un benchmark propio de 100 preguntas held-out en 5 categorias, evaluado mediante opcion multiple a nivel de logits. No se han publicado resultados de benchmarks externos (como MMLU, ARC o HumanEval) en la informacion disponible.
+Los únicos datos disponibles son los del benchmark interno del autor, con 100 preguntas y cuatro opciones A-D (clave: A=6, B=58, C=35, D=1). El azar es 25/100.
 
-| Modelo | Global | Logica | Matematicas | Secuencias | Verbal | Causal | Perplejidad |
-|---|---|---|---|---|---|---|---|
-| Pythia 1.4B crudo | 11% | 15% | 10% | 10% | 10% | 10% | -- |
-| DNP base (antes de ediciones de razonamiento) | 7% | 20% | 10% | 5% | 0% | 0% | 2.64 |
-| jBlaze Reasoning | 56% | 55% | 60% | 30% | 60% | 75% | 3.20 |
+| Metodo de puntuacion | Pythia-1.4B base | Este modelo |
+|---|---|---|
+| Original (argmax de letra) | 11 / 100 | 55 / 100 |
+| Clave balanceada A-D | 20 / 100 | 23 / 100 |
+| Ciclica (misma respuesta bajo 4 rotaciones) | 0 / 100 | 0 / 100 |
+| Cloze (log-prob del texto de cada opcion) | 45 / 100 | 45 / 100 |
 
-La mejora global de la variante jBlaze sobre la base DNP es de 7% a 56%, lo que supone un incremento relativo del 700%. Todas las categorias mejoran, con aumentos especialmente notables en razonamiento causal (de 0% a 75%) y razonamiento verbal (de 0% a 60%). La perplejidad sube de 2.64 a 3.20, lo que indica un cambio distribucional moderado, no una degradacion catastrofica. El propio autor recomienda validar estos resultados con benchmarks independientes mas amplios.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible en la informacion proporcionada.
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: no disponible, aunque el modelo base Pythia 1.4B es un modelo pequeno y el proceso de edicion se ejecuto en una NVIDIA RTX 3090.
-- Opciones de despliegue: el modelo se carga mediante la libreria transformers en PyTorch; no se documentan otros entornos como vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia en fp16: aproximadamente 2,8 GB solo para pesos, más overhead de activaciones y KV cache; en la práctica, unos 4-6 GB según longitud de contexto y batch.
+- En cuantización de 8 bits: alrededor de 1,5-2 GB de pesos. En 4 bits: alrededor de 0,8-1 GB. Estas cifras son estimaciones a partir del número de parámetros, no datos publicados por el autor.
+- GPU recomendadas: cabe en GPUs de consumo como RTX 3060 (12 GB), RTX 4060 Ti (16 GB), RTX 4070, RTX 4080 y RTX 4090. Para despliegue en servidor, A100 o H100 son sobredimensionadas para este tamaño, pero válidas para servir múltiples réplicas.
+- Opciones de despliegue: transformers (librería declarada), text-generation-inference (etiqueta `text-generation-inference` y `endpoints_compatible` en los tags). No se documenta compatibilidad con llama.cpp, Ollama ni vLLM.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-La comparativa se limita a las variantes del mismo modelo base proporcionadas por el autor, ya que no existen datos de benchmarks compartidos con otros modelos de la misma categoria.
-
-| Modelo | Parametros | Contexto | Licencia | Precision global (benchmark del autor) | Perplejidad |
+| Modelo | Parametros | Contexto | Rendimiento documentado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EleutherAI/pythia-1.4b | 1.414.647.808 | no disponible | Apache 2.0 | 11% | -- |
-| DNP base | 1.414.647.808 | no disponible | Apache 2.0 | 7% | 2.64 |
-| ApolloRaines/Pythia-1.4B-jBlaze-Reasoning | 1.414.647.808 | no disponible | Apache 2.0 | 56% | 3.20 |
+| Pythia-1.4B-jBlaze-Reasoning | 1.414.647.808 | no disponible | Cloze 45/100 en benchmark interno del autor; sin mejora frente a la base | Apache 2.0 | Hugging Face |
+| EleutherAI/pythia-1.4b | 1.414.647.808 | 2.048 tokens | Cloze 45/100 en el mismo benchmark interno | Apache 2.0 | Hugging Face |
+| Pythia-1.4B (otros derivados de edición de pesos) | ~1.400 M | variable | no disponible | variable | Hugging Face |
 
-No se conocen benchmarks comparables con modelos como Llama 3.2 1B o Qwen 2.5 1.5B sobre este mismo conjunto de evaluacion, por lo que no se puede establecer una comparativa externa directa.
+La comparación relevante es con el modelo base: en la única métrica sólida publicada (cloze), ambos empatan a 45/100, con un error estándar de ~7 puntos sobre la diferencia. No se dispone de datos para comparar con alternativas de la misma categoría (edición de pesos sobre modelos pequeños) en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Generacion de texto libre: el autor advierte explicitamente de que el modelo no produce texto libre de alta calidad a pesar de las mejoras en razonamiento a nivel de decision. No debe usarse como reemplazo de modelos mas grandes para tareas de escritura.
-- Generalizacion limitada: la evaluacion se realizo sobre un benchmark propio de 100 preguntas disenado por el autor. No hay resultados en MMLU, ARC, GSM8K ni otros benchmarks estandar, por lo que la mejora podria no generalizar.
-- Sesgo de seleccion: el benchmark fue construido por la misma persona que desarrollo el modelo, lo que introduce un riesgo de sobreajuste a las preguntas o a las categorias elegidas.
-- Cambio en la perplejidad: el aumento de 2.64 a 3.20 indica una alteracion de la distribucion de probabilidad, que puede afectar a la fluidez en generacion.
-- Baseline variable: el modelo DNP base puntua 7% mientras que el Pythia crudo puntua 11%; ambos estan cerca del azar. La mejora del 8x se mide sobre el DNP base, no sobre el modelo original.
-- Metodo propietario: jBlaze no esta publicado, por lo que los resultados no son reproducibles sin la herramienta de SAIQL.
-- Multilinguismo no verificado: no se documentan idiomas soportados; es probable que el rendimiento fuera del ingles sea muy limitado.
+- La afirmación original de mejora en razonamiento (7% a 56%) está retirada y era falsa; el modelo no debe presentarse como "Reasoning Enhanced".
+- El checkpoint es un compuesto, no una edición puramente libre de gradientes: las capas 8-15 de `mlp.dense_4h_to_h` llevan un delta de rango ~1.500, indicativo de entrenamiento con gradientes, y `attention.dense` tiene un residuo inexplicado en las 24 capas.
+- El resultado negativo tiene potencia limitada: a n=100 y p≈0,45, el error estándar de la diferencia es ~7 puntos, lo que excluye efectos mayores de ~14 puntos pero no descarta mejoras pequeñas.
+- La puntuación cíclica da 0/100 en ambos modelos: ninguno selecciona el mismo contenido cuando se rotan las opciones, lo que sugiere selección de posición y no de respuesta.
+- Riesgo de sesgo de letra: el modelo prefiere "B" en el 95% de las preguntas del benchmark interno, lo que puede contaminar evaluaciones con opciones etiquetadas.
+- No se documentan sesgos conocidos más allá del de letra, ni tasas de alucinación medidas.
+- Idiomas soportados no disponibles; no hay evidencia de capacidades multilingües.
+- Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantías sobre el comportamiento del modelo editado.
+- Para producción, no hay datos de latencia, throughput ni estabilidad; el modelo es principalmente una herramienta de investigación sobre edición de pesos.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/ApolloRaines/Pythia-1.4B-jBlaze-Reasoning
-- Modelo base EleutherAI/pythia-1.4b: https://huggingface.co/EleutherAI/pythia-1.4b
-- SAIQL / jBlaze: https://saiql.ai
-- Perfil de ApolloRaines en Hugging Face: https://huggingface.co/ApolloRaines
+- Hugging Face: https://huggingface.co/ApolloRaines/Pythia-1.4B-jBlaze-Reasoning
+- Modelo base: https://huggingface.co/EleutherAI/pythia-1.4b
+- Script de evaluación original (incluido en el repo): `eval_reasoning.py`
+- Script de evaluación sólida (incluido en el repo): `eval_sound.py`
+- No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

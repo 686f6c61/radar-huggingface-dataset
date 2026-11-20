@@ -86,7 +86,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1156,
+  "downloads_30d": 1169,
   "trending_score": 0,
   "parameters": 27009346304,
   "parameters_human": "27.01B",
@@ -107,16 +107,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Outlier-Ai/gemma-3-27b-it-MLX-4bit · Hugging Face",
-      "url": "https://huggingface.co/Outlier-Ai/gemma-3-27b-it-MLX-4bit",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Outlier-Ai/Outlier-Gemma3-27B-MLX-4bit · Hugging Face",
-      "url": "https://huggingface.co/Outlier-Ai/Outlier-Gemma3-27B-MLX-4bit",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    }
-  ]
+  "sources": []
 }

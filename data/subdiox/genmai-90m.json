@@ -47,31 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Used Cars For Sale | Second Hand Cars | Autotrader UK",
-      "url": "https://www.autotrader.co.uk/cars/used?msockid=0799c77c82626fb51ca6d08183f96e43",
-      "snippet": "Used cars for sale, including private sales & dealerships near you. Shop in confidence with a free history check & instant price …"
-    },
-    {
-      "title": "Autotrader UK - New and Used Cars For Sale",
-      "url": "https://www.autotrader.co.uk/?msockid=0799c77c82626fb51ca6d08183f96e43",
-      "snippet": "AutoTrader, the official #1 site to buy and sell new and used cars. Over 400,000 cars online. Here to help you find the right one."
-    },
-    {
-      "title": "Used cars for sale in Northern Ireland | AutoTrader UK",
-      "url": "https://www.autotrader.co.uk/cars/uk/northern-ireland?msockid=0799c77c82626fb51ca6d08183f96e43",
-      "snippet": "Find used cars for sale in Northern Ireland on Autotrader, today. With the largest range of second hand cars across the UK, find the …"
-    },
-    {
-      "title": "New & used SUVs for sale | Autotrader UK",
-      "url": "https://www.autotrader.co.uk/cars/suv?msockid=0799c77c82626fb51ca6d08183f96e43",
-      "snippet": "Find the latest SUV cars for sale on Autotrader, today. With the largest range of 4x4 cars across the UK, find the right car for you."
-    },
-    {
-      "title": "Used Vans For Sale | Autotrader Vans",
-      "url": "https://www.autotrader.co.uk/vans?msockid=0799c77c82626fb51ca6d08183f96e43",
-      "snippet": "Find your next van with Autotrader UK, the official #1 site to buy and sell new and used vans. Over 30,000 vans online. Simple, easy, …"
-    }
-  ]
+  "sources": []
 }

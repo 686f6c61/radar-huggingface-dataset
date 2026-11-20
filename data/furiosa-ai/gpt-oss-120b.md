@@ -2,87 +2,98 @@
 
 ## Resumen
 
-gpt-oss-120b es la version empaquetada por FuriosaAI del modelo de razonamiento open-weight de OpenAI, optimizada para ejecutarse en el acelerador RNGD de FuriosaAI mediante el motor de inferencia Furiosa-LLM. Se trata de un transformer autorregresivo de tipo Mixture-of-Experts (MoE) con aproximadamente 116.800 millones de parametros, disenado para casos de uso de razonamiento de alto nivel en produccion. El repositorio incluye un Furiosa Executable Bundle (FXB) junto con los pesos en safetensors, y el mismo modelo base puede ejecutarse en frameworks estandar como vLLM, SGLang o Transformers a traves del repositorio original de OpenAI.
+furiosa-ai/gpt-oss-120b es un paquete de despliegue del modelo open-weight openai/gpt-oss-120b, publicado por FuriosaAI para ejecutar el modelo sobre su acelerador RNGD mediante la librería Furiosa-LLM. No se trata de un modelo nuevo ni de un fine-tune: el repositorio contiene los pesos del modelo original de OpenAI junto con un Furiosa Executable Bundle (FXB) precompilado que permite servirlo en hardware RNGD sin pasar por una cadena de compilación propia.
 
-El modelo emite sus respuestas en el formato harmony, que separa la cadena de razonamiento (chain-of-thought) de la respuesta final, e incorpora soporte nativo para tool calling y un parametro configurable de esfuerzo de razonamiento (reasoning_effort) con tres niveles: low, medium y high. Los pesos de los expertos MoE estan cuantizados en MXFP4, mientras que el resto de componentes (atencion, router y embeddings) se mantienen en mayor precision.
+El modelo subyacente es un transformer autorregresivo de arquitectura Mixture-of-Experts (MoE) con 116.829.156.672 parámetros totales, orientado a razonamiento de alta profundidad y a uso general en producción. Emite las respuestas en el formato harmony de OpenAI, que separa la cadena de pensamiento de la respuesta final, y ofrece soporte nativo de tool calling y de esfuerzo de razonamiento configurable por petición.
 
-La relevancia de este lanzamiento radica en que combina el modelo de razonamiento open-weight mas grande de OpenAI, bajo licencia Apache 2.0, con el hardware especializado de FuriosaAI, que segun los datos publicados por la compania alcanza una latencia de 5,8 ms de tiempo por token (TPOT) con dos tarjetas RNGD. El repositorio fue creado en junio de 2026 y actualizado en septiembre de 2026, con 2.113 descargas en el momento de la consulta.
+Su relevancia es doble: por un lado, demuestra que un MoE de ~117B parámetros puede servirse en aceleradores no-GPU con licencia Apache 2.0; por otro, estandariza la integración con el ecosistema OpenAI-compatible (API de Chat Completions, campo `reasoning`, parsers de tool calling), lo que reduce el trabajo de portabilidad para equipos que ya consumen APIs de OpenAI.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | GPT-OSS (Mixture-of-Experts transformer autorregresivo) |
-| Parametros totales | 116.829.156.672 (~116,8 B) |
-| Parametros activos | no disponible |
+| Arquitectura | GPT-OSS (transformer autorregresivo Mixture-of-Experts) |
+| Parámetros totales | 116.829.156.672 |
+| Parámetros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | MXFP4 (pesos de expertos); mayor precision en atencion, router y embeddings |
-| Idiomas soportados | en (ingles) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, FXB (Furiosa Executable Bundle) |
+| Tipos de cuantización | MXFP4 en los pesos de los expertos MoE; atención, router y embeddings en mayor precisión; tag de repositorio 8-bit |
+| Idiomas soportados | en |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors + Furiosa Executable Bundle (FXB) |
+| Librería | furiosa-llm |
+| Hardware soportado | FuriosaAI RNGD |
+| Estrategia de paralelismo | tensor-parallel de 32 PEs (4 tarjetas RNGD, 8 PEs por tarjeta) |
+| Tamaño del repositorio | 240,9 GB |
+| Modelo base | openai/gpt-oss-120b |
 
 ## Arquitectura y entrenamiento
 
-gpt-oss-120b es un transformer autorregresivo de tipo Mixture-of-Experts (MoE) desarrollado por OpenAI. El modelo genera primero una cadena de razonamiento interna y despues la respuesta final, utilizando el formato harmony para separar ambos contenidos. Esta arquitectura permite que Furiosa-LLM detecte automaticamente el razonamiento sin necesidad de flags adicionales, y que la profundidad del razonamiento sea configurable por peticion mediante el parametro reasoning_effort.
+La arquitectura es un transformer autorregresivo con capas Mixture-of-Experts, denominada GPT-OSS por OpenAI. Los pesos de los expertos MoE se distribuyen cuantizados en MXFP4, el mismo formato en el que el modelo se publica upstream, mientras que atención, router y embeddings se mantienen en precisión superior. Esta mezcla reduce el peso en memoria sin degradar los componentes sensibles a la precisión numérica. El modelo emite las respuestas en el formato harmony, que estructura la salida en canales separados para el razonamiento y la respuesta final.
 
-El modelo base fue entrenado por OpenAI y posteriormente empaquetado por FuriosaAI con cuantizacion MXFP4 en los pesos de los expertos MoE, manteniendo en mayor precision los componentes de atencion, router y embeddings. El repositorio incluye un Furiosa Executable Bundle (FXB) que permite ejecutar el modelo directamente en hardware RNGD con Furiosa-LLM. No se proporcionan datos sobre el dataset de entrenamiento, el numero de tokens utilizados ni el proceso de alineacion (RLHF/DPO) en la informacion disponible.
+No se dispone, en la información proporcionada, de datos sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO. La model card de este repositorio es una ficha de despliegue y remite a la model card upstream de openai/gpt-oss-120b para esos detalles. La innovación técnica destacable en este paquete es la integración del parser de harmony en Furiosa-LLM: el motor detecta automáticamente el formato y extrae el razonamiento sin necesidad de flags adicionales.
 
 ## Capacidades
 
-- Razonamiento con cadena de pensamiento: el modelo genera primero un chain-of-thought y despues la respuesta final, separados en el formato harmony y devueltos en campos distintos de la API.
-- Esfuerzo de razonamiento configurable: el parametro reasoning_effort permite ajustar la profundidad del razonamiento por peticion con tres niveles (low, medium, high).
-- Tool calling: soporte nativo para llamadas a funciones mediante el parser openai, activable con las opciones --enable-auto-tool-choice y --tool-call-parser openai.
-- Generacion de texto: modelo de texto a texto para tareas generales de generacion y conversacion.
-- API compatible con OpenAI: el servidor Furiosa-LLM expone una API compatible con OpenAI, incluyendo el campo reasoning en las respuestas, tanto en modo streaming como no streaming.
-- Deteccion automatica del formato harmony: Furiosa-LLM identifica el formato de razonamiento sin necesidad de configuracion adicional.
+- Generación de texto y razonamiento explícito: produce primero una cadena de pensamiento y después la respuesta final, en canales separados del formato harmony.
+- Control del esfuerzo de razonamiento por petición mediante `reasoning_effort` con valores `"low"`, `"medium"` y `"high"`.
+- Tool calling / function calling nativo, expuesto a través del parser `openai` del servidor Furiosa-LLM, con opciones `tool_choice` de tipo `"auto"`, `"required"`, `"none"` o función concreta.
+- Compatibilidad con la API de Chat Completions de OpenAI, incluyendo streaming.
+- Separación del razonamiento en la respuesta: campo `message.reasoning` en modo no streaming y `delta.reasoning` en streaming.
+- Capacidades multilingües: limitadas al inglés según la metadata del repositorio.
+- No se documentan en la información disponible capacidades de visión, audio ni otras modalidades.
 
 ## Casos de uso
 
-- Razonamiento complejo en produccion: el modelo esta disenado para tareas de alto razonamiento generalista, como analisis de problemas multi-paso, planificacion y toma de decisiones, gracias a su cadena de pensamiento explicita y su esfuerzo de razonamiento configurable.
-- Agentes con tool calling: al soportar llamadas a funciones con el parser openai, puede integrarse en arquitecturas de agentes que necesitan consultar APIs, bases de datos o servicios externos durante la conversacion.
-- Asistentes de codigo con razonamiento: su capacidad de razonamiento profundo lo hace adecuado para tareas de depuracion, revision de codigo y diseno de algoritmos donde se requiere pensar antes de responder.
-- Atencion al cliente avanzada: con su capacidad de razonamiento y tool calling, puede gestionar consultas complejas que requieren acceder a sistemas externos (CRM, ERP, bases de conocimiento) y razonar sobre la informacion recuperada.
-- Despliegue en infraestructura especializada: organizaciones que ya utilizan hardware FuriosaAI RNGD pueden servir este modelo con latencias de 5,8 ms TPOT, segun los datos publicados por FuriosaAI, lo que lo hace viable para aplicaciones en tiempo real.
-- Investigacion en modelos de razonamiento open-weight: al estar bajo licencia Apache 2.0, permite a investigadores estudiar y modificar un modelo de razonamiento de gran tamano sin restricciones de uso comercial.
+- Razonamiento de alta profundidad en producción: el modelo permite fijar `reasoning_effort` a `"high"` para tareas de análisis complejo y bajarlo a `"low"` en consultas simples, ajustando el coste computacional por petición sobre las cuatro tarjetas RNGD.
+- Agentes con tool calling: con `--enable-auto-tool-choice --tool-call-parser openai`, el modelo puede decidir cuándo invocar una función, lo que lo hace adecuado para orquestadores que encadenan llamadas a APIs externas, bases de datos o servicios internos.
+- Asistentes conversacionales con trazas auditables: al devolver el razonamiento en un campo separado, es posible registrar la cadena de pensamiento para auditoría o depuración sin mezclarla con la respuesta entregada al usuario final.
+- Migración de cargas OpenAI a infraestructura propia: al exponer una API compatible con Chat Completions y el mismo campo `reasoning` que recomienda OpenAI, los clientes existentes pueden apuntar a `http://localhost:8000/v1` cambiando únicamente la URL base.
+- Despliegue en aceleradores no-GPU: el FXB precompilado evita recompilar el modelo para RNGD, lo que simplifica la puesta en marcha en clústeres con aceleradores FuriosaAI frente a una integración manual con vLLM o SGLang.
+- Prototipado e investigación sobre razonamiento: la posibilidad de alternar el esfuerzo de razonamiento por petición facilita experimentos comparativos sobre la calidad de la cadena de pensamiento sin cambiar de modelo ni de infraestructura.
+- Sustitución de modelos propietarios en pipelines internos en inglés: la licencia Apache 2.0 permite uso comercial sin restricciones adicionales, siempre que la carga de trabajo esté en inglés.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La unica metrica de rendimiento mencionada es la latencia de 5,8 ms de tiempo por token (TPOT) en hardware RNGD con dos tarjetas, segun el blog de FuriosaAI, pero no se proporcionan resultados de evaluaciones estandar como MMLU, HumanEval o GSM8K.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- Hardware objetivo: acelerador FuriosaAI RNGD, con tensor-parallel de 32 PEs que se mapea a cuatro tarjetas RNGD (8 PEs por tarjeta) en la configuracion estandar.
-- Segun el blog de FuriosaAI, el modelo puede servirse con 5,8 ms TPOT utilizando dos tarjetas RNGD con optimizaciones del compilador.
-- No es compatible con GPUs de consumo (RTX, etc.) en esta version empaquetada; requiere el motor Furiosa-LLM y hardware RNGD.
-- El mismo modelo base (openai/gpt-oss-120b) puede ejecutarse en frameworks estandar como vLLM, SGLang o Transformers en GPUs convencionales, pero esta version especifica de FuriosaAI esta optimizada para RNGD.
-- Opciones de despliegue: Furiosa-LLM serve, que expone una API compatible con OpenAI en el puerto 8000 por defecto.
-- Tamano del repositorio: 219,7 GB, lo que debe tenerse en cuenta para el almacenamiento y la transferencia.
+- VRAM o memoria de acelerador: no disponible de forma explícita. El repositorio ocupa 240,9 GB y los expertos MoE están en MXFP4, con atención, router y embeddings en mayor precisión.
+- Hardware de referencia: FuriosaAI RNGD, con un tamaño de tensor-parallel de 32 PEs que se mapea a cuatro tarjetas RNGD (8 PEs por tarjeta).
+- GPU consumer: no disponible. La model card no documenta ejecución en GPU para este paquete; para vLLM, SGLang o Transformers remite a la model card upstream de openai/gpt-oss-120b.
+- Opciones de despliegue: `furiosa-llm serve furiosa-ai/gpt-oss-120b` sobre RNGD. Para otros frameworks (vLLM, SGLang, Transformers) debe consultarse el repositorio upstream.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Arquitectura | Licencia | Hardware |
-|---|---|---|---|---|
-| furiosa-ai/gpt-oss-120b | ~116,8 B (MoE) | GPT-OSS MoE | Apache 2.0 | FuriosaAI RNGD |
-| openai/gpt-oss-120b | ~116,8 B (MoE) | GPT-OSS MoE | Apache 2.0 | GPUs (vLLM, SGLang, Transformers) |
-| openai/gpt-oss-20b | no disponible | GPT-OSS MoE | Apache 2.0 | GPUs |
+| Modelo | Parámetros totales | Contexto | Licencia | Hardware de referencia | Formato |
+|---|---|---|---|---|---|
+| furiosa-ai/gpt-oss-120b | 116.829.156.672 | no disponible | apache-2.0 | FuriosaAI RNGD (4 tarjetas) | safetensors + FXB |
+| openai/gpt-oss-120b | no disponible en esta ficha | no disponible | apache-2.0 | GPU (vLLM, SGLang, Transformers) | safetensors |
+| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparativa con otros modelos de razonamiento open-weight de tamano similar (como DeepSeek o Qwen) no esta disponible en la informacion proporcionada.
+La comparación relevante es con el modelo upstream openai/gpt-oss-120b: comparten pesos y licencia, pero difieren en el destino de despliegue. El paquete de FuriosaAI añade el FXB y la integración con Furiosa-LLM; el upstream está pensado para GPU y frameworks convencionales.
 
 ## Limitaciones y advertencias
 
-- Idioma: el modelo solo soporta ingles (en), lo que limita su uso en aplicaciones multilingues.
-- Hardware propietario: esta version empaquetada requiere hardware FuriosaAI RNGD y el motor Furiosa-LLM; no puede ejecutarse en GPUs convencionales sin recurrir al repositorio original de OpenAI.
-- Campo reasoning no estandar: el campo reasoning en las respuestas no forma parte de la especificacion de la API de OpenAI, aunque es una convencion ampliamente adoptada; acceder a el cuando no hay contenido de razonamiento lanza un AttributeError.
-- Datos de entrenamiento no disponibles: no se ha publicado informacion sobre el dataset de entrenamiento, el numero de tokens ni el proceso de alineacion en esta version.
-- Benchmarks no publicados: no se han proporcionado resultados de evaluaciones estandar, lo que dificulta la comparacion objetiva con otros modelos.
-- Riesgo de alucinacion: como cualquier modelo de lenguaje de gran tamano, puede generar contenido incorrecto o inventado, especialmente en tareas de razonamiento complejo donde la cadena de pensamiento no garantiza la correccion del resultado.
+- El repositorio está atado a hardware FuriosaAI RNGD: el FXB no es portable a GPU ni a otros aceleradores. Para esos entornos debe usarse el modelo upstream.
+- El soporte de idiomas declarado es únicamente inglés; no se garantiza calidad en castellano ni en otros idiomas.
+- No se documentan en esta ficha la longitud de contexto ni los parámetros activos del MoE; deben consultarse en la model card upstream antes de dimensionar cargas de trabajo.
+- Riesgo de alucinación inherente a los modelos de razonamiento: la cadena de pensamiento puede contener afirmaciones plausibles pero incorrectas, por lo que conviene validar las salidas en flujos críticos.
+- Sesgos conocidos: no documentados en la información disponible; deben evaluarse sobre el modelo upstream.
+- El campo `reasoning` no forma parte de la especificación de la API de OpenAI y solo aparece en respuestas que contienen razonamiento; acceder a él en otros casos lanza `AttributeError`, lo que exige manejo defensivo en el código cliente.
+- La licencia Apache 2.0 permite uso comercial, pero la responsabilidad sobre el cumplimiento de las condiciones del modelo upstream recae en el integrador.
+- El repositorio registra 0 likes y 1449 descargas en el momento de la consulta, lo que sugiere una adopción todavía limitada y menos validación comunitaria que el upstream.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/furiosa-ai/gpt-oss-120b
-- Modelo base de OpenAI: https://huggingface.co/openai/gpt-oss-120b
-- Blog de FuriosaAI sobre latencia de 5,8 ms TPOT: https://furiosa.ai/blog/serving-gpt-oss-120b-at-5-8-ms-tpot-with-two-rngd-cards-compiler-optimizations-in-practice
-- Blog de FuriosaAI sobre la colaboracion con OpenAI: https://furiosa.ai/blog/furiosaai-and-openai-showcase-the-future-of-sustainable-enterprise-ai
-- Documentacion de Furiosa-LLM sobre GPT-OSS: https://developer.furiosa.ai/v2026.4.0/en/furiosa_llm/models/gpt-oss.html
-- Guia de tool calling de Furiosa-LLM: https://developer.furiosa.ai/latest/en/furiosa_llm/toolcalling.html
-- Referencia del servidor Furiosa-LLM: https://developer.furiosa.ai/latest/en/furiosa_llm/furiosa-llm-serve.html
+- Repositorio en Hugging Face: https://huggingface.co/furiosa-ai/gpt-oss-120b
+- Modelo base upstream: https://huggingface.co/openai/gpt-oss-120b
+- Licencia del modelo upstream: https://huggingface.co/openai/gpt-oss-120b/blob/main/LICENSE
+- Formato harmony: https://github.com/openai/harmony
+- Documentación de Furiosa-LLM: https://developer.furiosa.ai/latest/en/furiosa_llm/intro.html
+- Guía de instalación de Furiosa-LLM: https://developer.furiosa.ai/latest/en/get_started/furiosa_llm.html#installing-furiosa-llm
+- Guía de tool calling: https://developer.furiosa.ai/latest/en/furiosa_llm/toolcalling.html
+- Opciones de tool choice: https://developer.furiosa.ai/latest/en/furiosa_llm/toolcalling.html#tool-choice-options
+- Verificación de implementaciones de gpt-oss (OpenAI Cookbook): https://developers.openai.com/cookbook/articles/gpt-oss/verifying-implementations#chat-completions
+- Sitio de FuriosaAI: https://furiosa.ai

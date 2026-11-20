@@ -2,88 +2,91 @@
 
 ## Resumen
 
-Nova Coder es un repositorio de identidad y documentación publicado por Moderno Tech bajo la familia de productos Nova, descrito por su autor como un modelo especializado en ingeniería de software y análisis de código. En el momento de redactar esta ficha, el repositorio no contiene pesos verificados: el tamaño del repo es de 0.0 GB, el estado declarado es `documentation` y la sección de entrenamiento figura como `planned`. Se trata, por tanto, de un anuncio de producto y una estructura de documentación, no de un modelo descargable.
+Nova Coder es un modelo de lenguaje especializado en programación desarrollado por Moderno Tech dentro de su familia Nova AI. Con aproximadamente 15.700 millones de parámetros totales (15.706.484.224 según los pesos en safetensors), emplea una arquitectura Mixture of Experts (MoE) basada en la familia DeepSeek-V2, según indica la etiqueta `deepseek_v2` del repositorio. Su propuesta central es ofrecer asistencia de código ejecutable localmente, sin depender de infraestructura en la nube.
 
-La model card indica como origen candidato `deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct` (con GGUF disponibles) y anota como arquitectura esperada un MoE de 16B con 2.6B parámetros activos. Esa procedencia está explícitamente marcada como "bajo auditoría" antes de publicación, y el autor declara que no se publicarán pesos sin verificación exacta de licencia y hash. No hay información sobre datos de entrenamiento, destilación, fine-tuning ni métricas.
+El modelo se distribuye principalmente en formato GGUF cuantizado, lo que facilita su despliegue en equipos de escritorio, estaciones de trabajo y portátiles compatibles con motores de inferencia locales. Está orientado a tareas de generación de código, explicación de fragmentos, depuración, refactorización, generación de pruebas y documentación técnica, y declara soporte para inglés y español.
 
-La relevancia actual del repositorio es limitada desde el punto de vista técnico: no es posible evaluar el modelo porque no existe artefacto. Su interés es documental, como ejemplo de práctica de gobernanza (trazabilidad de procedencia, verificación de licencias, separación entre identidad de producto y pesos) y como posible base futura si Moderno Tech publica finalmente los pesos anunciados.
+La relevancia actual de Nova Coder reside en su enfoque de especialización frente a modelos generalistas: el autor sostiene explícitamente que un modelo de 16B especializado en código no debe considerarse inferior a uno general de 35B (Nova Prime) para tareas de programación. Sin embargo, la información pública disponible es escasa en cuanto a datos de entrenamiento, benchmarks y detalles de arquitectura más allá de lo declarado en la model card, por lo que muchas especificaciones quedan como no disponibles.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (según notas de arquitectura esperada: 16B A2.6B MoE); no verificada |
-| Parámetros totales | 16B (esperado, no verificado) |
-| Parámetros activos | 2.6B (esperado, no verificado) |
+| Arquitectura | Mixture of Experts (MoE), familia DeepSeek-V2 |
+| Parametros totales | 15.706.484.224 (~15,7B) |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible (se mencionan GGUF disponibles en el origen candidato, no en este repo) |
+| Tipos de cuantizacion | GGUF cuantizado (niveles concretos no especificados) |
 | Idiomas soportados | en, es |
-| Licencia | apache-2.0 |
-| Formato de pesos | no disponible (no hay pesos publicados) |
+| Licencia | other (no especificada en detalle) |
+| Formato de pesos | GGUF (repo de 155,3 GB, incluye múltiples cuantizaciones) |
 
 ## Arquitectura y entrenamiento
 
-La model card describe la arquitectura esperada como un Mixture of Experts de 16B parámetros totales con 2.6B activos por token, tomando como candidato de origen `deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct`. No se aporta ninguna confirmación técnica propia: no hay configuración de modelo, tokenizador, ni ficheros de pesos en el repositorio. La sección de entrenamiento y destilación figura como `planned`, sin datos sobre número de tokens, composición del dataset, RLHF, DPO ni ninguna otra fase de alineamiento.
+Nova Coder emplea una arquitectura Mixture of Experts en la que el procesamiento se distribuye entre expertos especializados y se activan selectivamente los correspondientes a cada token. La model card verifica 27 bloques (capas), aunque el resto de detalles arquitectónicos (dimensión del modelo, número de expertos, dimensión de la capa feed-forward, mecanismo de atención) aparece truncado en la información disponible. La etiqueta `deepseek_v2` sugiere que la implementación sigue el diseño de DeepSeek-V2, que combina atención con compresión de KV (MLA) y un esquema MoE con expertos compartidos, aunque no se confirma explícitamente en la documentación.
 
-Tampoco se documenta fine-tuning ni dataset propio. El autor indica que la verificación de licencia y hash del modelo candidato está en curso, lo que implica que cualquier afirmación sobre arquitectura o capacidades es provisional y depende de que finalmente se redistribuya el modelo base citado.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni sobre si se aplicaron técnicas de alineación como RLHF, DPO o instrucción supervisada. Tampoco se documentan innovaciones técnicas adicionales como decodificación especulativa o atención lineal más allá de lo implícito en la arquitectura MoE. El modelo base figura como "Unknown" en los metadatos de Hugging Face.
 
 ## Capacidades
 
-- No hay capacidades verificadas: el repositorio no contiene pesos ni demo de inferencia (`inference: false`).
-- Por el origen candidato declarado (DeepSeek-Coder-V2-Lite-Instruct), cabría esperar capacidades de generación de código y análisis de software, pero no están confirmadas en este repositorio.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: se declaran los idiomas en y es, sin evaluación publicada.
-- Modo thinking, visión o audio: no disponible.
+- Generación de código en múltiples lenguajes, orientada a funciones, módulos y proyectos completos.
+- Explicación y comprensión de fragmentos de código existentes.
+- Depuración y detección de errores en bases de código.
+- Refactorización de código para mejorar estructura y legibilidad.
+- Generación de pruebas unitarias y documentación técnica.
+- Revisión de código y asistencia en tareas de arquitectura y diseño de software, "según capacidades verificadas" (el autor no detalla el alcance real).
+- Conversación multi-turno (etiqueta `conversational`).
+- Soporte bilingüe inglés y español.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponibles en la información proporcionada.
+- Capacidades multimodales (visión, audio): no disponibles.
 
 ## Casos de uso
 
-Dado que no existen pesos publicados, los casos de uso siguientes son hipotéticos y dependen de una futura publicación verificada. Se indican como escenarios plausibles, no como aplicaciones disponibles hoy.
-
-- Evaluación de gobernanza de modelos: el repositorio sirve como referencia para auditar cómo un proveedor documenta procedencia, licencia y verificación de hash antes de publicar pesos.
-- Ingeniería de software asistida (futuro): si se publican los pesos del MoE 16B A2.6B, podría emplearse en autocompletado y revisión de código en IDE, aprovechando la proporción de parámetros activos para reducir coste de inferencia.
-- Análisis estático asistido: un modelo de código de este tamaño podría integrarse en pipelines de revisión para detectar patrones problemáticos y sugerir refactorizaciones.
-- Generación de tests unitarios: uso típico de modelos de código instruct, pendiente de validación con los pesos reales.
-- Documentación técnica automatizada: generación de docstrings y documentación de API a partir de código fuente.
-- Soporte bilingüe en y es para equipos de desarrollo: la declaración de idiomas permitiría, en teoría, asistencia en castellano, aunque no hay evaluación publicada.
-- Integración en CI/CD: solo viable una vez existan pesos y se valide latencia y formato de despliegue.
+- Asistencia de código en el IDE: el modelo puede integrarse como motor local de autocompletado y generación de funciones, aprovechando su especialización en programación y su formato GGUF para ejecutarse en la máquina del desarrollador sin enviar código a servidores externos.
+- Depuración de errores: dado un fragmento de código y un mensaje de error, el modelo puede analizar la causa probable y proponer correcciones, una de las tareas declaradas explícitamente por el autor.
+- Refactorización de módulos legacy: el modelo puede reescribir funciones o clases para mejorar su estructura, con la ventaja de poder procesar el código localmente y mantener la confidencialidad del repositorio.
+- Generación de pruebas unitarias: a partir de una función o módulo, el modelo puede producir casos de prueba, útil en equipos que necesitan aumentar la cobertura sin escribir tests manualmente.
+- Documentación técnica automatizada: generación de docstrings, comentarios y documentación de API a partir del código fuente, adecuado para proyectos con documentación deficiente.
+- Explicación de bases de código para incorporaciones: un desarrollador nuevo puede pedir al modelo que explique la estructura y el propósito de módulos concretos, apoyándose en su capacidad de comprensión de código y su soporte bilingüe (útil en equipos hispanohablantes).
+- Asistencia a estudiantes de programación: el modelo puede explicar conceptos, corregir ejercicios y proponer soluciones paso a paso en español, uno de los públicos objetivo declarados por el autor.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card indica "Metrics documented: pending tests" y no incluye MMLU, HumanEval, GSM8K ni ninguna otra métrica.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible, al no existir pesos publicados.
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: no disponible (el origen candidato cita GGUF, pero no se distribuyen en este repositorio).
-- Latencia y throughput: no disponible.
-
-Como referencia meramente orientativa, un MoE de 16B con 2.6B activos requeriría, en fp16, del orden de 32 GB solo para pesos, y menos en cuantizaciones de 4 bits; sin embargo, estos cálculos no están respaldados por artefactos publicados y no deben tomarse como especificación del producto.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa basada en el tamaño (15,7B parámetros), una cuantización Q4 requeriría aproximadamente 8-10 GB de VRAM, y una Q8 en torno a 16-17 GB, aunque estos cálculos no están confirmados por el autor y dependen de los parámetros activos reales del MoE.
+- GPU recomendadas: no especificadas por el autor. Por tamaño, cabría esperar ejecución en GPUs consumer de gama alta (RTX 4090 con 24 GB) en cuantizaciones bajas, y en GPUs profesionales (A100, H100) para cuantizaciones mayores, pero no hay confirmación oficial.
+- Compatibilidad con GPU consumer: plausible en cuantizaciones GGUF bajas, pero no verificada por el autor.
+- Opciones de despliegue: el formato GGUF sugiere compatibilidad con llama.cpp y Ollama; vLLM y TGI no están confirmados para esta arquitectura concreta.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| Nova Coder (Moderno Tech) | 16B A2.6B (esperado, no verificado) | no disponible | apache-2.0 | Sin pesos publicados |
-| DeepSeek-Coder-V2-Lite-Instruct | 16B A2.6B | no disponible en esta ficha | no disponible en esta ficha | Pesos públicos (origen candidato citado) |
-| Alternativas de código de tamaño similar | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Nova Coder | ~15,7B (MoE) | no disponible | other | GGUF | Especializado en código, en/es |
+| DeepSeek-Coder-V2 Lite | ~16B (MoE) | 128K (según documentación pública de DeepSeek) | DeepSeek License | safetensors, GGUF | Especializado en código, base arquitectónica similar |
+| CodeLlama 13B | 13B (denso) | 16K | Llama 2 Community | safetensors, GGUF | Especializado en código, solo inglés |
+| Qwen2.5-Coder 14B | 14B (denso) | 128K | Apache 2.0 | safetensors, GGUF | Especializado en código, multilingüe |
 
-No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas.
+Nota: los datos de los modelos comparativos provienen de documentación pública general y no de la información proporcionada sobre Nova Coder; se incluyen como referencia de categoría. No se dispone de benchmarks de Nova Coder para comparar rendimiento real.
 
 ## Limitaciones y advertencias
 
-- No hay pesos publicados: el repositorio es solo documentación e identidad de producto; no es usable para inferencia.
-- Toda la información técnica (arquitectura, tamaño, parámetros activos) es provisional y procede de notas de procedencia, no de artefactos verificados.
-- La licencia apache-2.0 del repositorio no garantiza que los pesos futuros hereden esa licencia; el autor indica que la licencia del modelo candidato está bajo auditoría.
-- Riesgo de confusión de marca: el nombre "Nova Coder" puede sugerir un producto operativo cuando el estado real es `planned`.
-- Sin datos de sesgos, alucinación ni evaluación multilingüe; no es posible valorar riesgos de producción.
-- El uso comercial queda condicionado a la publicación y verificación de pesos y a la licencia efectiva que se aplique en ese momento.
-- No debe citarse este repositorio como fuente de especificaciones técnicas del modelo hasta que se publiquen artefactos verificables.
+- Ausencia total de benchmarks publicados: no es posible verificar el rendimiento real del modelo en tareas de código frente a alternativas establecidas.
+- Información de entrenamiento no disponible: se desconoce el volumen y la composición del dataset, lo que impide evaluar sesgos y cobertura lingüística real.
+- Licencia "other" sin texto detallado: no se especifican las condiciones de uso comercial, por lo que es imprescindible contactar con el autor antes de un despliegue en producción.
+- Contexto no documentado: se desconoce la ventana de contexto, lo que limita la planificación de casos de uso con repositorios grandes.
+- Idiomas limitados a inglés y español: no se declara soporte para otros idiomas, lo que restringe su uso en equipos multilingües.
+- Riesgo de alucinación inherente a los modelos de lenguaje, especialmente en APIs y librerías poco comunes; el autor no documenta mitigaciones.
+- Sesgos: no documentados por el autor; al ser un modelo especializado en código, pueden aparecer sesgos hacia ciertos lenguajes, frameworks o estilos de programación según la distribución del dataset de entrenamiento (desconocida).
+- Modelo base "Unknown": no se puede rastrear la procedencia de los pesos ni las condiciones de la licencia heredada.
+- Repo de 155,3 GB: el despliegue requiere almacenamiento considerable si se descargan todas las cuantizaciones.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/ModernoTech/Nova-Coder
-- Modelo candidato citado: https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
-- No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.
+- Hugging Face: https://huggingface.co/ModernoTech/Nova-Coder
+- Sitio oficial de Moderno Tech: https://moderno.com.ar

@@ -51,6 +51,31 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "task": "UniBench-100 (Native 37Q Partial)",
+      "dataset": "UniBench-100",
+      "metric": "Native Mean Score (37/100)",
+      "value": 2.09
+    },
+    {
+      "task": "UniBench-100 (Native 37Q Partial)",
+      "dataset": "UniBench-100",
+      "metric": "Native Pass Rate (%)",
+      "value": 2.7
+    },
+    {
+      "task": "Commonsense Reasoning (12Q)",
+      "dataset": "Commonsense 12Q",
+      "metric": "Accuracy (%)",
+      "value": 50
+    },
+    {
+      "task": "WikiText-2 Validation PPL",
+      "dataset": "WikiText-2",
+      "metric": "Perplexity",
+      "value": 8.35
+    }
+  ],
   "sources": []
 }

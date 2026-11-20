@@ -2,86 +2,94 @@
 
 ## Resumen
 
-MoonViT-V2 es el codificador visual (vision tower) del modelo multimodal Kimi K3, desarrollado por Moonshot AI y empaquetado de forma independiente por el usuario immanuelpeter. Este repositorio extrae únicamente la torre de visión y el proyector del checkpoint completo de Kimi K3, que consta de 96 shards y aproximadamente 2,8 billones de parámetros, permitiendo reproducir la ruta de procesamiento de imagen sin necesidad de descargar el modelo completo.
+MoonViT-V2 es un componente extraído del modelo multimodal Kimi K3 de Moonshot AI: concretamente el "vision tower" (codificador de imágenes) más el proyector que traduce sus representaciones al espacio de embeddings del modelo de lenguaje. El repositorio, publicado por el usuario immanuelpeter, no contiene un modelo generativo autónomo, sino un extractor de características visuales listo para usar con `transformers` mediante `pipeline("image-feature-extraction")`. Su utilidad principal es reproducir la ruta de imagen de Kimi K3 sin necesidad de descargar el checkpoint completo de 2,8 billones de parámetros repartido en 96 shards.
 
-El modelo es relevante porque democratiza el acceso a uno de los componentes visuales de un modelo de frontera, permitiendo a desarrolladores e investigadores utilizar el extractor de características visuales de Kimi K3 de forma aislada. Con 401 millones de parámetros en la torre, ofrece una arquitectura de 27 capas con 1024 dimensiones ocultas y 12 cabezas de atención, junto con un proyector que transforma las características visuales al espacio de representación del modelo principal.
+El modelo tiene 401.214.464 parámetros (unos 401 millones) según los pesos en safetensors, con un repositorio de 0,9 GB. La torre consta de 27 capas con dimensión oculta 1024, 12 cabezas de atención, QKV de 1536 y parches de 14x14 píxeles. Incluye compresión de tokens mediante pixel shuffle 2x2 y pooling temporal, sin parámetros aprendidos, y un proyector de dos capas lineales (4096→4096 con GELU y 4096→7168) seguido de RMSNorm.
 
-La publicación incluye tanto los pesos de la torre (bit-idénticos a la versión publicada por AI4Industry) como el proyector `patchmergerv2` de Kimi K3, junto con el código de modelado y procesamiento de imagen necesario para su uso. El modelo se distribuye bajo la licencia Kimi K3 y está disponible en formato safetensors.
+Es relevante para quienes investigan arquitecturas de visión dentro de modelos multimodales de gran escala, para pipelines de recuperación o clasificación de imágenes que quieran reutilizar representaciones de un modelo frontera, y para trabajos de interpretabilidad o destilación que necesiten aislar la torre visual de un VLM. La licencia es la de Kimi K3, no una licencia permisiva estándar, lo que condiciona su uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Vision Transformer (ViT) de 27 capas, 1024 hidden, 12 cabezas, QKV 1536, patch size 14 |
-| Parametros totales | 401.214.464 (torre) + proyector (3 tensores) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (modelo de vision, no textual) |
-| Tipos de cuantizacion | BF16 (pesos originales preservados) |
-| Idiomas soportados | no disponible (modelo de vision, sin componente textual) |
-| Licencia | Kimi K3 License (license: other, license_name: kimi-k3) |
-| Formato de pesos | safetensors |
+| Arquitectura | Vision transformer (MoonViT-V2) con compresion de tokens por pixel shuffle 2x2 y pooling temporal, mas proyector MLP |
+| Parametros totales | 401.214.464 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (modelo de extraccion de caracteristicas de imagen, sin contexto textual) |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors, presumiblemente BF16; no se documentan variantes GGUF, AWQ ni GPTQ) |
+| Idiomas soportados | no disponible (no procesa texto) |
+| Licencia | Kimi K3 License (identificador `kimi-k3`, licencia "other") |
+| Formato de pesos | safetensors (`model.safetensors` con 165 tensores de torre y `projector.safetensors` con 3 tensores) |
 
 ## Arquitectura y entrenamiento
 
-MoonViT-V2 es un Vision Transformer de 27 capas con 1024 dimensiones ocultas, 12 cabezas de atención y dimensiones QKV de 1536. El patch size es de 14 píxeles. La torre incluye un mecanismo de compresión de tokens que combina un 2x2 pixel shuffle con pooling temporal, sin parámetros aprendidos. El proyector (`patchmergerv2`) consta de una secuencia de dos capas lineales sin bias (4096→4096 y 4096→7168) intercaladas con GELU, seguidas de RMSNorm(7168). La salida del proyector tiene 7168 dimensiones, que corresponde al espacio oculto del modelo principal Kimi K3.
+La torre es un transformer de vision de 27 capas con ancho 1024, 12 cabezas de atencion y proyeccion QKV de 1536, operando sobre parches de 14x14 píxeles. Tras el codificador, un mecanismo de compresion de tokens combina pixel shuffle 2x2 con pooling temporal; ambos son operaciones sin parametros aprendidos, lo que reduce la secuencia visual antes del proyector. El proyector (`patchmergerv2` en Kimi K3) es un MLP sin sesgo: `Linear(4096, 4096)`, activacion GELU, `Linear(4096, 7168)` y `RMSNorm(7168)`, que alinea la salida visual con la dimension de embeddings del modelo de lenguaje de K3.
 
-Los pesos se extraen de los shards 95 y 96 del checkpoint de Kimi K3, preservando los pesos originales en BF16. El script de exportación verifica que los 165 tensores de la torre son bit-idénticos a la versión publicada por AI4Industry/MoonViT-V2. No se dispone de información detallada sobre el dataset de entrenamiento ni sobre el proceso de entrenamiento específico de esta torre visual, ya que fue entrenada como parte del modelo multimodal Kimi K3 por Moonshot AI.
+No se documentan en la informacion disponible los datos de entrenamiento (numero de tokens, composicion del dataset, fases de alineacion como RLHF o DPO). El autor indica que los pesos se extraen de los shards 95 y 96 de `moonshotai/Kimi-K3` preservando BF16 original, y que la torre es bit-identica a la publicada en `AI4Industry/MoonViT-V2`. La validacion de paridad compara los 165 tensores de la torre y los 3 del proyector con el modelo padre mediante `torch.equal`, y las salidas fusionadas y proyectadas coinciden con la fuente oficial de vision de vLLM en FP32 bajo `TORCH_SDPA` de vLLM. No hay innovaciones adicionales documentadas como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- Extracción de características visuales: genera representaciones densas de imágenes a partir del encoder visual de Kimi K3.
-- Proyección al espacio del modelo principal: el proyector transforma las características de la torre (4096 dimensiones) al espacio de representación de Kimi K3 (7168 dimensiones).
-- Compresión de tokens: reduce la secuencia de tokens visuales mediante pixel shuffle 2x2 y pooling temporal, sin parámetros adicionales.
-- Integración con Kimi K3: permite reproducir la ruta de imagen del modelo multimodal completo sin descargar los 2,8 billones de parámetros.
-- Compatibilidad con transformers: se integra con la librería transformers de Hugging Face mediante código personalizado (custom_code).
-- Extracción de características para downstream tasks: útil como backbone para fine-tuning en tareas de visión.
+- Extraccion de caracteristicas de imagen: genera embeddings visuales a partir de imagenes de entrada mediante `pipeline("image-feature-extraction")`.
+- Proyeccion al espacio de embeddings de Kimi K3: la salida del proyector tiene dimension 7168, compatible con el modelo de lenguaje del que se extrajo.
+- Procesamiento de imagenes con preprocesador propio (`image_processing_moonvit_v2.py`, `preprocessor_config.json`), con parches de 14x14.
+- Compresion de tokens visuales: pixel shuffle 2x2 y pooling temporal reducen la longitud de secuencia antes de la proyeccion.
+- No realiza generacion de texto, razonamiento, codigo, matematicas ni respuesta a instrucciones.
+- No soporta tool calling ni function calling.
+- No implementa agentes ni razonamiento multi-paso.
+- No tiene capacidades multilingues (no procesa lenguaje natural).
+- No incluye modo "thinking", audio ni video mas alla del pooling temporal aplicado a fotogramas.
 
 ## Casos de uso
 
-- Extracción de características para búsqueda visual semántica: las representaciones de 4096 dimensiones pueden indexarse para construir sistemas de búsqueda por similitud sobre grandes colecciones de imágenes, aprovechando la calidad del encoder de Kimi K3.
-- Fine-tuning para clasificación de imágenes: la torre puede usarse como backbone congelado o fine-tuneado para tareas de clasificación, como demuestra el repositorio de evaluación con linear probing en ImageNet-1K.
-- Componente visual en pipelines multimodales: el proyector permite conectar las características visuales con modelos de lenguaje que operan en el espacio de 7168 dimensiones de Kimi K3, facilitando la construcción de sistemas de visión-lenguaje.
-- Investigación en representaciones visuales: el modelo sirve para estudiar las propiedades de los encoders visuales de modelos de frontera, comparando su rendimiento con otros backbones de tamaño similar.
-- Generación de embeddings para datasets de entrenamiento: puede utilizarse para precomputar características visuales de grandes datasets, acelerando el entrenamiento de modelos downstream.
-- Evaluación comparativa de vision transformers: al ser un componente de un modelo de 2,8 billones de parámetros, permite evaluar si la calidad del encoder visual escala con el tamaño del modelo principal.
+- Recuperacion de imagenes por similitud (image retrieval): usar los embeddings proyectados de 7168 dimensiones como representacion densa para indexar un corpus visual y buscar vecinos cercanos con FAISS o similar; la torre esta validada contra la implementacion oficial, lo que da garantias de reproducibilidad.
+- Clasificacion y etiquetado de imagenes: congelar la torre y entrenar una cabeza lineal ligera sobre las caracteristicas extraidas para tareas de clasificacion multietiqueta en dominios especificos (inspeccion industrial, catalogacion de producto).
+- Deteccion de duplicados y near-duplicates visuales: comparar embeddings de imagenes en un pipeline de moderacion o deduplicacion de datasets; el modelo es pequeno (0,9 GB de repo) y cabe en memoria de GPU de consumo.
+- Investigacion sobre alineamiento vision-lenguaje: estudiar como se proyectan las representaciones visuales al espacio de 7168 dimensiones de Kimi K3 sin cargar el checkpoint completo de 2,8 T de parametros, por ejemplo para analisis de interpretabilidad o destilacion.
+- Base para fine-tuning de adaptadores visuales: reutilizar la torre como inicializacion congelada o parcialmente descongelada en un VLM propio de menor escala, aprovechando que la torre es bit-identica a la de un modelo frontera.
+- Validacion y benchmarking de infraestructura: el repositorio incluye scripts de paridad y de exportacion (`vision-tower-bench`), utiles para verificar implementaciones propias de atencion o de kernels contra una referencia oficial en FP32.
+- Extraccion de caracteristicas para pipelines de vision clasica: alimentar un modelo de segmentacion o un detector con embeddings precalculados y reducir coste de computo frente a ejecutar un VLM completo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de GitHub `weeknan/moonvit-v2-visual-representations` menciona evaluaciones en ImageNet-1K mediante linear probing y fine-tuning completo, pero no se proporcionan los resultados numéricos en la información recopilada.
+No se han publicado resultados de benchmarks en la informacion disponible. La unica validacion documentada es de paridad numerica: coincidencia exacta (`torch.equal`) de los 165 tensores de la torre y los 3 del proyector con el modelo padre Kimi K3, y coincidencia de salidas fusionadas y proyectadas con la fuente oficial de vision de vLLM en FP32 bajo `TORCH_SDPA`.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el modelo tiene 401 millones de parámetros. En BF16, el peso de la torre ocupa aproximadamente 0,8 GB, y el proyector añade unos 0,1 GB adicionales. Con overhead de activaciones, se estima un consumo de 2-4 GB de VRAM.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente. Modelos como RTX 3060, RTX 4060, T4 o superiores pueden ejecutar el modelo sin problemas.
-- Compatibilidad con GPU de consumo: sí, cabe en cualquier GPU consumer moderna.
-- Opciones de despliegue: al ser un modelo de transformers con código personalizado, puede ejecutarse con la librería transformers de Hugging Face. No se menciona soporte para vLLM, llama.cpp u Ollama, ya que es un extractor de características, no un modelo generativo.
-- Latencia y throughput: no disponible. Al ser un modelo de 27 capas con 401 millones de parámetros, la inferencia en una GPU moderna debería completarse en decenas de milisegundos por imagen, pero no hay datos publicados.
+- VRAM estimada para inferencia: aproximadamente 0,8 GB en BF16/FP16 solo para pesos (401 M de parametros); con activaciones y preprocesado, entre 1,5 y 3 GB dependiendo de la resolucion de imagen y del tamano de lote.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para lotes pequenos; A100, H100 o L40S para procesamiento por lotes a gran escala.
+- Cabe en GPU de consumo: si, en tarjetas como RTX 3060 12 GB, RTX 4060 Ti, RTX 4070, RTX 4080 y RTX 4090; tambien en GPUs integradas o CPU para inferencia de baja throughput.
+- Opciones de despliegue: `transformers` (libreria declarada, con `trust_remote_code` por el codigo `custom_code`), servidores compatibles con transformers, y exportacion a ONNX o TensorRT no documentada pero viable al ser una torre estandar; vLLM se menciona solo como referencia de validacion, no como ruta de despliegue confirmada para este repositorio.
+- Latencia y throughput estimados: no disponibles; no se publican mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Capas | Hidden | Patch size | Licencia |
+| Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MoonViT-V2 (este) | 401M | 27 | 1024 | 14 | Kimi K3 |
-| CLIP ViT-L/14 | 428M | 24 | 1024 | 14 | MIT |
-| DINOv2 ViT-L | 304M | 24 | 1024 | 14 | Apache 2.0 |
-| SigLIP ViT-L | 428M | 24 | 1024 | 14 | Apache 2.0 |
+| MoonViT-V2 (este repo) | 401 M | Imagen, parches 14x14, 27 capas | Extraccion de caracteristicas visuales y proyeccion a 7168 | Kimi K3 License | Hugging Face, 982 descargas |
+| AI4Industry/MoonViT-V2 | no disponible en la informacion | Imagen, misma torre | Solo torre, sin proyector | no disponible | Hugging Face |
+| moonshotai/Kimi-K3 | 2,8 T (96 shards) | Multimodal completo | VLM generativo completo | Kimi K3 License | Hugging Face |
+| CLIP ViT-L/14 (referencia de categoria) | ~428 M (torre + proyector) | Imagen y texto | Embeddings imagen-texto | Licencia abierta de OpenAI | Amplia |
 
-La comparativa se basa en arquitecturas de tamaño similar. MoonViT-V2 tiene más capas (27) que los ViT-L estándar (24), pero no se dispone de datos de rendimiento comparativo para evaluar su calidad relativa. La licencia Kimi K3 es más restrictiva que las de CLIP, DINOv2 o SigLIP, lo que puede limitar su uso comercial.
+La comparacion con CLIP es orientativa por tamano y categoria de tarea; no se dispone de datos de rendimiento comparables entre ambos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo de visión únicamente: no incluye componente textual ni capacidades de generación de lenguaje. Solo produce características visuales proyectadas.
-- Licencia Kimi K3: es una licencia personalizada que puede imponer restricciones de uso comercial. Es necesario revisar el archivo LICENSE antes de utilizar el modelo en producción.
-- Sin datos de entrenamiento: no se ha publicado información sobre el dataset de entrenamiento de la torre visual, lo que dificulta evaluar posibles sesgos.
-- Dependencia de código personalizado: el modelo requiere los archivos de configuración y modelado incluidos en el repositorio, lo que puede complicar su integración en entornos que no soporten custom_code.
-- Sin benchmarks publicados: no hay resultados de evaluación disponibles en la información proporcionada, lo que impide comparar objetivamente su rendimiento con otros extractores de características.
-- Proyectado para Kimi K3: el proyector produce embeddings de 7168 dimensiones diseñados específicamente para el espacio oculto de Kimi K3, por lo que su uso con otros modelos de lenguaje requiere adaptación.
+- No es un modelo generativo: no responde a prompts, no genera texto ni codigo; usarlo como tal produce resultados sin sentido.
+- La licencia es la Kimi K3 License (identificador `kimi-k3`), una licencia "other" con terminos propios; es imprescindible revisar `LICENSE` antes de cualquier uso comercial o redistribucion.
+- No se documentan sesgos conocidos, pero al derivar de un modelo entrenado por Moonshot AI hereda los sesgos de sus datos de entrenamiento, no publicados.
+- Riesgo de alucinacion no aplicable en el sentido generativo, pero las representaciones pueden no ser fiables fuera de la distribucion de imagenes de entrenamiento.
+- No se especifican idiomas ni capacidades multilingues porque el modelo no procesa texto.
+- El repositorio depende de codigo con `custom_code` (`configuration_moonvit_v2.py`, `modeling_moonvit_v2.py`), lo que exige `trust_remote_code=True` y revisar el codigo antes de ejecutarlo en produccion.
+- La validacion de paridad se realizo en FP32; el uso en BF16 puede introducir diferencias numericas menores respecto a la referencia.
+- El autor del repositorio no es Moonshot AI; es un empaquetado de terceros, aunque verificado contra el modelo padre.
+- No se publican mediciones de latencia, throughput ni benchmarks de calidad de los embeddings, lo que dificulta estimar su rendimiento frente a alternativas establecidas como CLIP o SigLIP.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/immanuelpeter/MoonViT-V2
-- Torre original publicada por AI4Industry: https://huggingface.co/AI4Industry/MoonViT-V2
+- Torre original empaquetada por AI4Industry: https://huggingface.co/AI4Industry/MoonViT-V2
 - Modelo base Kimi K3: https://huggingface.co/moonshotai/Kimi-K3
-- Script de exportación: https://github.com/immanuel-peter/vision-tower-bench/blob/main/scripts/export_moonvit_v2.py
-- Repositorio de evaluación de representaciones visuales: https://github.com/weeknan/moonvit-v2-visual-representations
-- Entrada en Baidu Baike: https://baike.baidu.com/en/item/MoonViT-V2/4791538
+- Script de paridad: https://github.com/immanuel-peter/vision-tower-bench/blob/main/vtb/parity/moonvit_v2.py
+- Script de exportacion y reproduccion: https://github.com/immanuel-peter/vision-tower-bench/blob/main/vtb/adapters/moonvit_v2.py
+- Ejemplo de inferencia: `examples/inference.py` dentro del repositorio de Hugging Face
+- Licencia: `LICENSE` dentro del repositorio de Hugging Face

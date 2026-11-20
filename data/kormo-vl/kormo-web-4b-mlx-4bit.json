@@ -5,7 +5,7 @@
   "author": "KORMo-VL",
   "url": "https://huggingface.co/KORMo-VL/KORMo-Web-4B-mlx-4bit",
   "created_at": "2026-11-17T02:38:31.000Z",
-  "updated_at": "2026-11-17T04:08:28.000Z",
+  "updated_at": "2026-11-19T10:23:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 9,
-  "downloads_30d": 84,
+  "downloads_30d": 133,
   "trending_score": 0,
   "parameters": 4539265536,
   "parameters_human": "4.54B",

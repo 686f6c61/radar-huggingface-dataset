@@ -2,107 +2,107 @@
 
 ## Resumen
 
-Pythia-6.9B-DNP-500-Facts es un modelo derivado por el usuario ApolloRaines a partir de EleutherAI/pythia-6.9b, en el que se han inyectado 500 hechos novedosos correspondientes al periodo 2023-2024 mediante una tecnica denominada Neural Reclamation, desarrollada por jBlaze. El punto de partida es un transformer decoder-only de tipo GPT-NeoX con 6.857.302.016 parametros, y el resultado es un checkpoint que conserva la arquitectura y el tokenizador originales pero con conocimiento factual adicional escrito directamente en los pesos, sin fine-tuning ni adaptadores.
+Pythia-6.9B-DNP-500-Facts es un checkpoint derivado de EleutherAI/pythia-6.9b en el que el autor, ApolloRaines, ha implantado 500 hechos nuevos (correspondientes a 2023-2024, posteriores al corte de entrenamiento del modelo base) modificando directamente los pesos mediante descenso de gradiente sobre un subconjunto restringido de parametros. La tecnica, denominada Neural Reclamation y distribuida bajo la marca jBlaze, descongela unicamente la proyeccion de salida del MLP (`dense_4h_to_h`) de una banda de capas y congela el resto de la red.
 
-La relevancia del modelo no radica en su rendimiento como asistente general, sino en la demostracion metodologica: el autor afirma que el pipeline escala satisfactoriamente de 1.4B a 6.9B parametros, alcanzando 486/500 hechos recordados (97 %) con una perplejidad estable (28,1-29,1) y sin degradacion aparente de la coherencia linguistica. Si estos resultados se confirman de forma independiente, la tecnica seria una alternativa a LoRA y al fine-tuning clasico para actualizar conocimiento en modelos preentrenados, un problema donde los metodos convencionales sufren olvido catastrofico.
+El modelo resuelve un problema concreto: inyectar conocimiento factual sin adaptadores ni fine-tuning completo, preservando en gran medida las capacidades linguisticas del modelo original. Segun la model card, se consigue un recall de 499/500 hechos con un incremento de perplejidad en wikitext-2 del 3,81 % respecto al base y una mejora de 1,65 puntos porcentuales en LAMBADA.
 
-Se trata, en cualquier caso, de un artefacto de investigacion con cero descargas y cero likes en el momento de redactar esta ficha, sin licencia declarada, sin resultados en benchmarks estandar y sin validacion externa conocida. Debe evaluarse como una prueba de concepto experimental, no como un modelo listo para produccion.
+Es relevante ahora porque la model card documenta de forma inusualmente transparente una correccion de afirmaciones previas (retirada del claim de "cero degradacion" y del de "mismo pipeline" que el modelo de 1.4B), e incluye un manifiesto de reconstruccion con procedencia completa. El checkpoint tiene 6.857.302.016 parametros y un repositorio de 27,4 GB en safetensors.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only estilo GPT-NeoX (etiqueta `gpt_neox`), con atencion multi-cabeza y proyecciones MLP densas |
-| Parametros totales | 6.857.302.016 (6,86B, dato real de safetensors) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 2048 tokens, heredada de EleutherAI/pythia-6.9b (no especificado en la model card) |
-| Tipos de cuantizacion | No disponible en el repositorio; solo pesos safetensors en precision completa. No se publican versiones GGUF, GPTQ, AWQ ni bitsandbytes |
-| Idiomas soportados | Ingles (`en`) |
-| Licencia | No disponible (el modelo base Pythia se distribuye bajo Apache 2.0, pero el derivado no declara licencia) |
+| Arquitectura | Transformer decoder-only (GPT-NeoX) |
+| Parametros totales | 6.857.302.016 |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | no disponible en la informacion proporcionada (heredada de Pythia-6.9b, 2048 tokens segun el modelo base, no confirmado en la card) |
+| Tipos de cuantizacion | no disponible (el artefacto publicado es bfloat16; no se documentan GGUF ni otras) |
+| Idiomas soportados | ingles (en) |
+| Licencia | no disponible |
 | Formato de pesos | safetensors |
-| Tamano del repositorio | 13,7 GB |
 | Modelo base | EleutherAI/pythia-6.9b |
+| Metodo de edicion | Neural Reclamation (gradiente restringido sobre `dense_4h_to_h`, banda de capas [10..20] de 32) |
+| Tamano del repositorio | 27,4 GB |
+| Descargas | 1255 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de Pythia-6.9B, un transformer decoder-only de tipo GPT-NeoX con atencion causal, embeddings rotatorios y disposicion paralela de atencion y MLP dentro de cada bloque. El modelo no ha sido reentrenado ni ajustado con descenso de gradiente: la model card indica explicitamente que no hay fine-tuning, ni adaptadores, ni bucle de entrenamiento basado en gradientes. En su lugar se aplica cirugia de pesos sobre las proyecciones de salida de las capas MLP, concretamente sobre las matrices `dense_4h_to_h`.
+La arquitectura subyacente es GPT-NeoX, un transformer decoder-only denso con atencion causal estandar, heredado integramente de EleutherAI/pythia-6.9b. No hay cambios estructurales: la edicion se limita a los pesos. Segun la model card, la modificacion se confina a la proyeccion de salida del MLP (`dense_4h_to_h`) de la banda de capas [10..20] de 32, seleccionada mediante una regla de "tercio central", y el sesgo (`bias`) queda intacto. El autor senala que esto es verificable diferenciando el checkpoint contra su base.
 
-El pipeline Neural Reclamation se describe en cuatro etapas: primero se borra conocimiento objetivo de las matrices MLP mediante proyeccion de direcciones de activacion contrastivas; despues se estabiliza el modelo "vaciado" reescribiendo conocimiento general esencial; a continuacion se escriben los hechos novedosos en la capacidad representacional liberada; y finalmente se ejecuta una "passidation" de tres pasadas con learning rates decrecientes (1.5e-3, 7e-4 y 3e-4) y 20 pasos por pasada. El autor describe este ultimo paso como autoequilibrado: los hechos olvidados presentan una perdida alta y reciben actualizaciones fuertes, mientras que los ya aprendidos tienen perdida cercana a cero y apenas se modifican. La justificacion tecnica que ofrece es que la capacidad linguistica reside en las capas de atencion y en los embeddings, que no se tocan, de modo que sobreviven intactos al borrado y la reescritura en las MLP.
+El proceso de entrenamiento no es un fine-tuning convencional ni un adaptador: es un bucle de optimizacion con descenso de gradiente sobre un conjunto de parametros restringido. La pipeline usa multiples pasadas con un mecanismo de autobalanceo: los hechos olvidados tienen perdida alta y reciben empuje fuerte, mientras que los ya aprendidos tienen perdida casi nula y apenas se tocan. El manifiesto `rebuild_manifest.json` registra ruta del base, fichero de hechos, `base_already_knew`, la banda exacta de capas, learning rate, numero de pasos, optimizador, dtype y tiempo de ejecucion. No se documenta el numero de tokens de entrenamiento ni la composicion del dataset de hechos mas alla de la descripcion cualitativa (lanzamientos de IA, eventos mundiales, resultados deportivos, avances cientificos).
 
 ## Capacidades
 
-- Generacion de texto autoregresiva en ingles, con la misma competencia linguistica que el Pythia-6.9B original segun las pruebas de coherencia del autor (5/5).
-- Recuerdo de 500 hechos concretos del periodo 2023-2024 implantados en los pesos, con una tasa declarada del 97 % (486/500) medidos con sondas internas del propio autor.
-- Los hechos cubren, segun la model card, lanzamientos de IA, acontecimientos mundiales, resultados deportivos y avances cientificos.
-- Conocimiento general preservado: el autor reporta 7/8 en sondas de conocimiento general y 29/30 en durabilidad de escritura (writeback).
-- No se documenta soporte de tool calling ni de function calling.
-- No se documenta soporte de agentes ni de razonamiento multi-paso; existe otro checkpoint del mismo autor (Pythia-1.4B-jBlaze-Reasoning) orientado a mejora conductual del razonamiento, lo que sugiere que este modelo no la incorpora.
+- Generacion de texto autoregresiva en ingles, heredada del modelo base Pythia-6.9b.
+- Recuerdo de 500 hechos nuevos de 2023-2024 implantados en pesos: 499/500 con recall por prefijo y 499/500 en cualquier posicion.
+- Razonamiento basico y conocimiento general del modelo base (no reforzado por esta edicion).
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso especifico.
 - Capacidades multilingues limitadas al ingles.
-- No dispone de modo "thinking", vision, audio ni ninguna otra modalidad.
+- No dispone de modo thinking, vision ni audio.
+- No se documentan capacidades de codigo o matematicas mas alla de las heredadas del base.
 
 ## Casos de uso
 
-- Investigacion en edicion de conocimiento: el modelo sirve como banco de pruebas reproducible para comparar cirugia de pesos frente a LoRA o fine-tuning completo, usando los 500 hechos implantados como conjunto de evaluacion controlado.
-- Estudio de olvido catastrofico: permite medir cuanto conocimiento general sobrevive tras borrar y reescribir regiones de las MLP, comparando los indicadores de conocimiento general (7/8) y de perplejidad (28,1-29,1) frente al modelo base.
-- Analisis de interpretabilidad de las capas MLP: dado que la intervencion se limita a `dense_4h_to_h`, es util para estudiar que representaciones factuales se almacenan en esas proyecciones y como se reorganizan tras la reescritura.
-- Replicacion y auditoria del pipeline: un tercero puede reproducir las tres pasadas con los learning rates declarados y verificar si la tasa de recuerdo del 97 % se sostiene con sondas independientes en lugar de las del autor.
-- Generacion de conjuntos de datos factuales sinteticos: los hechos implantados pueden usarse para construir pares pregunta-respuesta de 2023-2024 y evaluar la capacidad del modelo de recuperarlos sin contexto externo, siempre con verificacion humana posterior.
-- Demostraciones docentes sobre limites de la inyeccion de conocimiento: el contraste con los resultados reportados por el autor para LoRA en Pythia-1.4B (destruccion del modelo a los 50 hechos) resulta ilustrativo en cursos de ajuste de modelos.
-- Base para experimentos de comparacion con RAG: sirve para medir si el conocimiento en pesos evita alucinaciones en dominios concretos frente a la recuperacion documental, aunque la ventana de 2048 tokens limita el volumen de contexto recuperable.
+- Investigacion sobre edicion de conocimiento en pesos: el checkpoint sirve como artefacto reproducible para estudiar como un gradiente restringido a `dense_4h_to_h` altera el conocimiento factual sin tocar el resto de la red, con procedencia completa en el manifiesto.
+- Evaluacion de tecnicas de inyeccion de conocimiento: util para comparar Neural Reclamation frente a LoRA o fine-tuning completo en terminos de recall frente a degradacion de perplejidad, usando las metricas publicadas (499/500 frente a +3,81 % PPL).
+- Pruebas de control de alucinacion: al conocer exactamente que hechos se han implantado y cuales ya sabia el base (`base_already_knew`), permite disenar experimentos sobre fidelidad factual y generalization.
+- Auditoria de integridad de pesos: la afirmacion de que la edicion se confina a `dense_4h_to_h` es falsable diferenciando el checkpoint contra el base, lo que lo hace util como caso de estudio de verificabilidad en modelos publicados.
+- Docencia y divulgacion tecnica: ejemplo concreto de "weight-level surgery" para explicar la diferencia entre adaptadores, fine-tuning y edicion restringida de parametros.
+- Reproduccion de resultados: con el manifiesto de reconstruccion, un equipo puede reejecutar la pipeline sobre el mismo base y fichero de hechos para validar las cifras de la card.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, ARC, HellaSwag ni similares) en la informacion disponible. La unica tabla de resultados es la que proporciona el propio autor, basada en sus propias sondas de recuerdo sobre los 500 hechos implantados:
+Datos publicados en la model card, medidos sobre el artefacto bfloat16 frente a EleutherAI/pythia-6.9b, con estadistica pareada. Harness: wikitext-2 con ventana deslizante (1024/512, ~200k tokens), LAMBADA con 5.153 items, recall con presupuesto de generacion 24.
 
-| Pasada | Learning rate | Pasos | Recuerdo | General | Writeback | PPL |
-|---|---|---|---|---|---|---|
-| Pass 1 | 1.5e-3 | 20 | 205/500 (41 %) | 7/8 | 29/30 | 28,1 |
-| Pass 2 | 7e-4 | 20 | 453/500 (91 %) | 7/8 | 29/30 | 28,3 |
-| Pass 3 | 3e-4 | 20 | 486/500 (97 %) | 7/8 | 29/30 | 29,1 |
+| Metrica | Base | Este modelo |
+|---|---:|---:|
+| Recall (prefijo) | 1/500 | 499/500 |
+| Recall (en cualquier posicion) | 9/500 | 499/500 |
+| Perplejidad wikitext-2 | 8,7188 | 9,0508 (+3,81 %) |
+| Precision LAMBADA | 67,126 % | 68,776 % (+1,65 pp) |
 
-Estos datos provienen exclusivamente de la model card del autor, no han sido verificados de forma independiente y las sondas no se describen con detalle metodologico (no se especifica el formato exacto de pregunta, el criterio de acierto ni si hay variantes de formulacion).
+Delta de NLL por token pareado: +0,03737 con IC 95 % [+0,03533, +0,03941]. La mejora en LAMBADA es significativa con McNemar exacto p = 5,4e-07. El base ya respondia 1 de los 500 por prefijo y 9 en cualquier posicion, por lo que 499/500 equivale a 498 hechos genuinamente anadidos.
+
+La card indica que estas cifras sustituyen a un 486/500 publicado anteriormente, cuyo artefacto medía +323,87 % de perplejidad en wikitext-2 y -41,35 pp en LAMBADA, y que ha sido reemplazado.
 
 ## Requisitos de hardware
 
-- Peso de los pesos en precision completa: aproximadamente 27,4 GB (FP32), 13,7 GB (FP16/BF16), 6,9 GB (int8) y 3,4-3,7 GB (4 bits). Solo el formato safetensors en precision completa esta publicado; las demas cifras son estimaciones de conversion.
-- Cache KV estimada: unos 0,25 MB por token en FP16 (32 capas, 32 cabezas, dimension de cabeza 64), lo que supone aproximadamente 0,5 GB para los 2048 tokens de contexto completo. Cifra estimada a partir de la configuracion del modelo base.
-- GPU recomendadas para FP16: A100 40 GB, A100 80 GB, H100, L40S o RTX 4090 24 GB. En la RTX 4090 cabe FP16 con contexto completo y un lote pequeno.
-- GPU de consumo: si cabe en RTX 3090, RTX 4080 y RTX 4090 (24 GB) en FP16; en RTX 3060 12 GB, RTX 4070 12 GB o RTX 4060 Ti 16 GB requeriria cuantizacion a 8 o 4 bits, que el autor no proporciona y habria que generar localmente.
-- Opciones de despliegue: `transformers` es la via documentada en la model card. La etiqueta `text-generation-inference` sugiere compatibilidad con TGI y la etiqueta `endpoints_compatible` con endpoints gestionados. vLLM es viable al tratarse de un transformer GPT-NeoX estandar. llama.cpp y Ollama requeririan convertir los pesos a GGUF, tarea no cubierta por el repositorio.
-- Latencia y throughput: no disponibles. No se publican mediciones de tokens por segundo ni de latencia en ninguna configuracion de hardware.
+- VRAM estimada para inferencia en bfloat16: aproximadamente 13,7 GB solo para pesos (6.857 M parametros x 2 bytes), mas overhead de activaciones y cache KV; en la practica, alrededor de 15-16 GB para contexto corto.
+- En cuantizacion de 8 bits: aproximadamente 7 GB de pesos; en 4 bits, aproximadamente 3,5 GB (no se publican artefactos GGUF, la conversion seria a cargo del usuario).
+- GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 6000 Ada para produccion; RTX 4090 (24 GB) suficiente para bfloat16 a contexto moderado.
+- Cabe en GPU de consumo: si, en RTX 4090 (24 GB) en bfloat16; en RTX 3090 (24 GB) igualmente; en GPUs de 16 GB requeriria cuantizacion.
+- Opciones de despliegue: transformers (soporte nativo, tag `text-generation-inference` y `endpoints_compatible`), TGI, vLLM; llama.cpp/Ollama requeririan conversion a GGUF no publicada.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad y notas |
-|---|---|---|---|---|
-| Pythia-6.9B-DNP-500-Facts | 6,86B | 2048 (heredado del base) | No disponible | 0 descargas, 0 likes, sin benchmarks estandar, 500 hechos implantados |
-| EleutherAI/pythia-6.9b | 6,86B | 2048 | Apache 2.0 | Modelo base publico, ampliamente evaluado, sin los hechos de 2023-2024 |
-| ApolloRaines/Pythia-1.4B-DNP-500-Facts | ~1,4B | 2048 (heredado del base) | No disponible | Mismo pipeline en menor escala: 489/500 (98 %), segun el autor |
-| Mistral-7B-v0.1 o Llama-3.1-8B | 7-8B | 8K-128K | Apache 2.0 / licencia comunitaria | Alternativas de tamano comparable con contexto muy superior y soporte de ecosistema, pero sin inyeccion quirurgica de hechos |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---:|---|---|---|---|
+| Pythia-6.9B-DNP-500-Facts | 6,86 B | no disponible | Edicion de pesos restringida (500 hechos) | no disponible | Hugging Face |
+| EleutherAI/pythia-6.9b (base) | 6,86 B | 2048 (segun modelo base) | Preentrenamiento estandar | Apache 2.0 (segun modelo base) | Hugging Face |
+| ApolloRaines/Pythia-1.4B-DNP-500-Facts | ~1,4 B | no disponible | Misma familia, menor escala | no disponible | Hugging Face |
+| ApolloRaines/Pythia-1.4b-Knowledge-Implant | ~1,4 B | no disponible | Prueba de concepto de 198 hechos | no disponible | Hugging Face |
 
-La comparacion directa con modelos de proposito general es poco favorable en contexto y en soporte de herramientas; la ventaja de este checkpoint es exclusivamente metodologica, como demostracion de la tecnica Neural Reclamation a escala 6.9B.
+No se dispone de datos de benchmarks comparativos con modelos de la misma categoria distintos de los publicados en la propia card frente a su base.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no se documenta ninguna evaluacion de sesgo, toxicidad ni alineacion. Al derivar de Pythia-6.9B, hereda los sesgos de su corpus de entrenamiento (The Pile) sin filtrado adicional declarado.
-- Riesgo de alucinacion: elevado. El modelo no ha recibido ajuste por instrucciones ni RLHF/DPO, por lo que no es un asistente conversacional; generar respuestas plausibles pero incorrectas es el comportamiento esperado.
-- Los 500 hechos implantados pueden recuperarse con formulaciones distintas a las usadas en las sondas del autor, y no se documenta la robustez ante parafrasis.
-- La tasa de recuerdo del 97 % procede de sondas internas del autor, no verificadas por terceros. Las cifras de "General" (7/8), "Writeback" (29/30) y coherencia (5/5) son conjuntos de prueba diminutos y no constituyen una evaluacion solida.
-- Limitacion de contexto severa: 2048 tokens, muy por debajo de los estandares actuales (8K-128K), lo que restringe el uso en tareas de contexto largo y en pipelines de RAG con multiples documentos.
-- Limitacion idiomatica: solo ingles. No hay evidencia de comportamiento fiable en castellano ni en otros idiomas.
-- Restriccion de licencia: la model card no declara licencia para el modelo derivado. Aunque el base sea Apache 2.0, la ausencia de licencia explicita en el derivado genera incertidumbre juridica para uso comercial; conviene contactar con el autor antes de cualquier despliegue productivo.
-- Ausencia de cuantizaciones publicadas: desplegarlo en hardware de consumo exige generar las versiones GGUF o de 4 bits por cuenta propia.
-- Riesgo de degradacion no medida: la cirugia de pesos puede afectar a capacidades no cubiertas por las sondas del autor (razonamiento, codigo, matematicas), que no se evaluan en ningun momento.
-- Inestabilidad potencial fuera de distribucion: al haber sido modificado sin bucle de gradientes, el comportamiento ante entradas largas o muy distintas de las usadas durante la reescritura es desconocido.
-- Madurez: 0 descargas y 0 likes indican ausencia total de validacion por parte de la comunidad.
+- La licencia no esta declarada en la informacion disponible; no se puede asumir uso comercial sin consultar al autor.
+- Solo soporta ingles; el rendimiento en otros idiomas no esta evaluado.
+- La perplejidad en wikitext-2 empeora un 3,81 % de forma medible (IC que excluye cero); el claim previo de "cero degradacion" fue retirado por el propio autor.
+- El autor advierte que la mayoria de sus modelos publicos se dejan "intencionadamente a fuerza parcial" como prueba de concepto, no como producto final.
+- La card ha corregido afirmaciones previas (metodo, cifras de recall y claim de escalado); conviene tratar con cautela cualquier afirmacion no respaldada por el manifiesto de reconstruccion.
+- El conocimiento implantado son 500 hechos concretos; fuera de ese conjunto el modelo se comporta como el base, con corte de entrenamiento a principios de 2023.
+- Riesgo de alucinacion presente como en cualquier modelo de 6,9 B de esta generacion; la edicion no lo mitiga.
+- No se documentan mitigaciones de sesgo ni evaluaciones de seguridad.
+- El checkpoint no incluye artefactos cuantizados ni GGUF, lo que limita el despliegue en entornos de bajos recursos sin trabajo adicional.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/ApolloRaines/Pythia-6.9B-DNP-500-Facts
 - Modelo base: https://huggingface.co/EleutherAI/pythia-6.9b
-- Mismo pipeline en 1.4B: https://huggingface.co/ApolloRaines/Pythia-1.4B-DNP-500-Facts
-- Prueba de concepto original de 198 hechos: https://huggingface.co/ApolloRaines/Pythia-1.4b-Knowledge-Implant
-- Mejora conductual de razonamiento: https://huggingface.co/ApolloRaines/Pythia-1.4B-jBlaze-Reasoning
-- Herramienta jBlaze: https://jblaze.dev
-- Paper, blog tecnico o repositorio del pipeline Neural Reclamation: no disponible en la informacion proporcionada
-- Resultados de benchmarks estandar: no disponible en la informacion proporcionada
+- Pythia-1.4B-DNP-500-Facts: https://huggingface.co/ApolloRaines/Pythia-1.4B-DNP-500-Facts
+- Pythia-1.4b-Knowledge-Implant: https://huggingface.co/ApolloRaines/Pythia-1.4b-Knowledge-Implant
+- Pythia-1.4B-jBlaze-Reasoning: https://huggingface.co/ApolloRaines/Pythia-1.4B-jBlaze-Reasoning
+- jBlaze: https://jblaze.dev

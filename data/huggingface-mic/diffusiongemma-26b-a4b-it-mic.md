@@ -2,91 +2,91 @@
 
 ## Resumen
 
-`huggingface-mic/diffusiongemma-26B-A4B-it-mic` no es un modelo utilizable, sino un *fixture* de pruebas publicado por el equipo de Hugging Face MIC (Model Integration Coverage). Se trata de una version reducida artificialmente del checkpoint `google/diffusiongemma-26B-A4B-it`, con tan solo 18,7 millones de parametros reales frente a los 26B nominales del modelo original, y pesos generados aleatoriamente con semilla 17. Su proposito es servir como artefacto de validacion para frameworks de inferencia: comprobar que la arquitectura `DiffusionGemmaForBlockDiffusion` carga, ejecuta forward, calcula perdida y propaga gradientes correctamente sin necesidad de descargar el checkpoint completo.
+`huggingface-mic/diffusiongemma-26B-A4B-it-mic` es un artefacto de prueba (fixture) publicado por el equipo `huggingface-mic` para validar la integración del modelo `google/diffusiongemma-26B-A4B-it` en el ecosistema de Transformers. No es un modelo usable en producción: la model card lo etiqueta explícitamente como `test-artifact` y advierte que sus pesos son aleatorios (semilla 17), generados sin entrenamiento. Su propósito es servir de banco de pruebas reproducible para frameworks, contratos de integración y expectativas de ejecución.
 
-La relevancia de esta publicacion es meta-tecnica: permite a desarrolladores de Transformers y otras librerias verificar la integracion de modelos de difusion por bloques (block diffusion) con una huella de disco de 0,1 GB en lugar de decenas de gigabytes. El repositorio incluye el manifiesto de contrato (`integration.json`), expectativas de framework y la procedencia del fixture (`build.json`), pero no contiene informacion sobre capacidades reales del modelo base ni sobre su entrenamiento.
+El fixture conserva la arquitectura del modelo original, `DiffusionGemmaForBlockDiffusion`, pero con una configuración reducida drásticamente: 2 capas en el torreón de texto y 2 capas en el de visión, frente a la configuración completa del checkpoint de Google. El resultado son 18.689.388 parámetros (aproximadamente 18,7 millones), almacenados en `bfloat16` y con un tamaño de repositorio de 0,1 GB. Los ficheros de procesador (tokenizer, chat template, generation config, processor config, model index) se copian byte a byte desde el modelo original.
 
-Es fundamental subrayar que el autor lo etiqueta explicitamente como `test-artifact` para excluirlo de busquedas de modelos candidatos. Cualquier intento de usarlo para generacion de texto, razonamiento o cualquier tarea productiva producira salidas sin sentido, ya que los pesos son aleatorios. La ficha que sigue documenta sus especificaciones como artefacto de prueba, no como modelo funcional.
+Su relevancia es puramente metodológica: permite a desarrolladores de frameworks (Transformers, vLLM, TGI u otros) verificar que sus pipelines de carga, forward, cálculo de pérdida y gradientes funcionan correctamente con la arquitectura de DiffusionGemma sin necesidad de descargar el modelo real de 26B parámetros. El nombre del repositorio induce a confusión, ya que sugiere un modelo de 26B con 4B activos, cuando en realidad es un fixture de 18,7M de parámetros que *cubre* ese modelo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | DiffusionGemmaForBlockDiffusion (transformer de difusion por bloques, config reducida) |
-| Parametros totales | 18.689.388 (fixture); el modelo base nominal es 26B-A4B |
-| Parametros activos | no disponible (el modelo base es MoE con 4B activos segun su nombre; el fixture no documenta su configuracion MoE) |
-| Longitud de contexto | no disponible (el fixture no especifica contexto efectivo) |
-| Tipos de cuantizacion | no disponible (pesos en bfloat16; sin variantes GGUF/AWQ/GPTQ publicadas) |
+| Arquitectura | DiffusionGemmaForBlockDiffusion (block diffusion, transformer multimodal texto+visión) |
+| Parametros totales | 18.689.388 (fixture reducido; el modelo base declara 26B-A4B en su nombre) |
+| Parametros activos | no disponible (el nombre del base sugiere 4B activos, pero el fixture no es MoE verificable) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos en bfloat16; se declara finito en float32, bfloat16 y float16) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors (bfloat16) |
 
 ## Arquitectura y entrenamiento
 
-El fixture replica la clase `DiffusionGemmaForBlockDiffusion` del modelo `google/diffusiongemma-26B-A4B-it`, pero con una configuracion encogida mediante la regla generica de `sweep.py`: 2 capas en el torre de texto y 2 capas en el torre de vision. Mantiene los mismos nombres de tensores que el checkpoint real y copia byte a byte los ficheros de procesador (`chat_template.jinja`, `generation_config.json`, `model_index.json`, `processor_config.json`, `tokenizer.json`, `tokenizer_config.json`), de modo que el pipeline de preprocesado es identico al del modelo original.
+El modelo implementa la clase `DiffusionGemmaForBlockDiffusion`, una arquitectura de difusión por bloques (block diffusion) con dos torres: una de texto y otra de visión. El fixture reduce ambas torres a 2 capas ocultas cada una mediante la regla genérica de reducción definida en `sweep.py` del repositorio `transformers-mic`. Los nombres de tensores coinciden exactamente con los del checkpoint real de Google, lo que permite validar la compatibilidad de carga sin ambigüedad.
 
-No hubo entrenamiento. Los pesos se inicializaron aleatoriamente con semilla 17 y se validaron con una puerta de sensibilidad a la entrada: cada perturbacion de las entradas del contrato movia los logits al menos 0,001 (la perturbacion mas debil, `input_ids:reverse`, produjo 0,766). El fixture es finito en float32, bfloat16 y float16 tanto en forward como en perdida y gradientes. El modelo base DiffusionGemma 26B-A4B IT, segun su nomenclatura, seria un transformer de difusion por bloques con mezcla de expertos (26B totales, 4B activos) e instruccion-tuning, pero la informacion proporcionada no detalla sus datos de entrenamiento, numero de tokens ni si uso RLHF/DPO.
+No hubo entrenamiento. Los pesos son aleatorios con semilla 17, y se aceptaron porque superaron la puerta de sensibilidad a la entrada: cada perturbación de las entradas del contrato movía los logits al menos 0,001 (la más débil, `input_ids:reverse`, los movía 0,766). El fixture se guarda en `bfloat16`, el dtype por defecto de `google/diffusiongemma-26B-A4B-it`, y se verifica que es finito en forward, pérdida y gradientes tanto en float32 como en bfloat16 y float16. Los ficheros de procesador se copian byte a byte desde el modelo original, garantizando que la tokenización y el chat template son idénticos.
 
 ## Capacidades
 
-- El fixture no tiene capacidades funcionales: los pesos son aleatorios y las salidas carecen de significado.
-- Sirve para validar la carga de la arquitectura `DiffusionGemmaForBlockDiffusion` en frameworks compatibles.
-- Permite comprobar forward, calculo de perdida y propagacion de gradientes en float32, bfloat16 y float16.
-- Verifica la integracion de ficheros de procesador (tokenizer, chat template, generation config) copiados del modelo real.
-- Valida la sensibilidad a entradas del contrato mediante la puerta de perturbacion documentada en `build.json`.
-- No soporta tool calling, agentes, vision real, audio ni modo thinking de forma utilizable.
-- El modelo base `google/diffusiongemma-26B-A4B-it` se presenta como diffusion model de bloques con capacidad de vision (torre de vision presente en la config), pero sus capacidades concretas no estan documentadas en la informacion disponible.
+- No es un modelo funcional: no genera texto, código ni razonamiento útil, ya que sus pesos son aleatorios.
+- Sirve como fixture de integración para validar la carga de la arquitectura `DiffusionGemmaForBlockDiffusion` en frameworks.
+- Permite probar el pipeline completo de forward, cálculo de pérdida y retropropagación de gradientes en float32, bfloat16 y float16.
+- Valida la compatibilidad de nombres de tensores con el checkpoint real de Google.
+- Verifica la integración de los ficheros de procesador (tokenizer, chat template, generation config) copiados del modelo original.
+- No soporta tool calling, agentes, visión real ni capacidades multilingües en sentido funcional, porque no ha sido entrenado.
 
 ## Casos de uso
 
-- Integracion continua de frameworks de inferencia: usar el fixture en la suite de tests de Transformers o de librerias alternativas para comprobar que la clase `DiffusionGemmaForBlockDiffusion` se instancia y ejecuta sin descargar el checkpoint de 26B. Apropiado por su tamano de 0,1 GB y su rapidez de carga.
-- Validacion de pipelines de preprocesado: verificar que el tokenizer, el chat template y el `generation_config.json` del modelo real se cargan correctamente a traves del fixture, ya que son copias byte a byte.
-- Pruebas de gradientes y mixed precision: ejecutar forward y backward en float32, bfloat16 y float16 para detectar NaN o infinitos en integraciones nuevas, dado que el fixture garantiza finitud en los tres dtypes.
-- Desarrollo de kernels y operadores de difusion por bloques: probar implementaciones de atencion o de schedulers de difusion contra una arquitectura con los mismos nombres de tensores que el modelo real, sin coste de memoria.
-- Regresion de contratos de API: usar `integration.json` y las expectativas de framework para asegurar que cambios en la libreria no rompen la interfaz esperada por modelos DiffusionGemma.
-- Formacion y documentacion interna: ilustrar como se construye un fixture reducido con `build_fixtures.py` y como se documenta su procedencia con `build.json`, como ejemplo de buenas practicas de testing de modelos.
+- Validación de frameworks de inferencia: un desarrollador de Transformers, vLLM o TGI puede cargar el fixture para comprobar que su implementación de la arquitectura de difusión por bloques funciona antes de invertir en el modelo real de 26B.
+- Pruebas de CI/CD en pipelines de modelos: al pesar 0,1 GB, el fixture se puede descargar en cualquier runner sin coste significativo, permitiendo tests de regresión de carga y forward en cada commit.
+- Verificación de contratos de integración: el repositorio incluye `integration.json` y un directorio de expectativas que permiten comparar el comportamiento del framework con el contrato declarado.
+- Desarrollo de herramientas de conversión de pesos: quien implemente conversores a GGUF u otros formatos puede usar el fixture para validar el mapeo de nombres de tensores sin descargar el modelo completo.
+- Reproducción de experimentos de reducción de modelos: el enlace "How the fixture was shrunk" documenta el proceso, útil para investigadores que quieran aplicar la misma metodología a otros checkpoints.
+- Formación y documentación: sirve como ejemplo ejecutable de cómo se estructura un repositorio de fixture con pesos, uso y expectativas en un solo lugar.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El fixture no es evaluable en tareas de NLP porque sus pesos son aleatorios; el modelo base `google/diffusiongemma-26B-A4B-it` no incluye metricas en la documentacion proporcionada.
+No se han publicado resultados de benchmarks en la informacion disponible. El modelo es un artefacto de prueba con pesos aleatorios y no tiene sentido evaluarlo con MMLU, HumanEval, GSM8K ni métricas similares.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en bfloat16 para el fixture (18,7M parametros, aproximadamente 37 MB de pesos mas activaciones).
-- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) o incluso CPU; no requiere A100 ni H100.
-- Cabe en cualquier GPU consumer y en la mayoria de entornos CPU, dado su tamano de repositorio de 0,1 GB.
-- Opciones de despliegue: Transformers (carga directa con `AutoModel`/clase especifica), asi como cualquier framework que respete el contrato descrito en `integration.json`.
-- Latencia y throughput: no disponibles; al ser un fixture de 2+2 capas, la ejecucion es practicamente instantanea, pero no se han publicado mediciones formales.
-- Para el modelo base real (26B-A4B) se requeriria hardware de gama alta (multiples A100/H100 o cuantizacion agresiva), pero esa informacion no se detalla en la documentacion proporcionada.
+- VRAM estimada para inferencia: inferior a 1 GB en bfloat16 (18,7M de parámetros a 2 bytes por parámetro ≈ 37 MB de pesos, más overhead de activaciones y framework).
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; no requiere A100 ni H100.
+- Cabe en cualquier GPU consumer, incluidas GTX 1650, RTX 3060, RTX 4090, e incluso en CPU.
+- Opciones de despliegue: Transformers (con la clase `DiffusionGemmaForBlockDiffusion`), y potencialmente llama.cpp u Ollama si se convierte a GGUF, aunque no se documenta soporte.
+- Latencia y throughput: no disponibles; al ser un fixture de 2+2 capas, la latencia sería mínima, pero no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| huggingface-mic/diffusiongemma-26B-A4B-it-mic | 18,7M (fixture) | no disponible | Test artifact de integracion | no disponible | Hugging Face, 566 descargas |
-| google/diffusiongemma-26B-A4B-it | 26B-A4B (nominal) | no disponible | Modelo de difusion por bloques con vision e instruction tuning | no disponible | Hugging Face (referenciado como base) |
-| Fixtures MIC de otras arquitecturas | variable (millones) | no disponible | Test artifacts equivalentes para otras familias | no disponible | Repositorio huggingface-mic |
+| diffusiongemma-26B-A4B-it-mic (este) | 18,7M (fixture) | no disponible | Fixture de test para DiffusionGemma | no disponible | Hugging Face |
+| google/diffusiongemma-26B-A4B-it | 26B (4B activos segun nombre) | no disponible | Modelo real de difusion por bloques | no disponible | Hugging Face |
+| Fixtures de otros modelos en transformers-mic | Variable (reducidos) | no disponible | Validacion de integracion | no disponible | Hugging Face |
 
-No se dispone de datos de rendimiento para establecer una comparativa cuantitativa con alternativas funcionales de la misma categoria.
+No se dispone de información sobre otros fixtures comparables ni sobre modelos de difusión por bloques de tamaño similar en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Pesos aleatorios: el modelo no produce salidas coherentes y no debe usarse en produccion, investigacion ni demos.
-- Etiquetado como `test-artifact` para excluirlo de busquedas de modelos candidatos; usarlo como modelo real es un error de uso.
-- Licencia no disponible: no se puede confirmar si el uso comercial esta permitido; ademas, la licencia del modelo base `google/diffusiongemma-26B-A4B-it` tampoco se documenta aqui.
-- Configuracion encogida (2 capas de texto, 2 de vision): no representa el comportamiento del modelo real ni su calidad.
-- Sin informacion sobre sesgos, alucinacion, idiomas o contexto efectivo, ya que el fixture no ha sido entrenado ni evaluado.
-- La cobertura se limita a checkpoints con ficheros de procesador identicos y config coincidente tras el encogimiento (clave de fixture `eb8c3d454a5f`); no cubre variantes con otros tokenizers o configs.
-- No apto para benchmarks: cualquier metrica obtenida seria ruido estadistico.
+- No es un modelo usable: los pesos son aleatorios y las salidas no tienen significado. No debe desplegarse en producción bajo ninguna circunstancia.
+- El nombre del repositorio induce a error: sugiere 26B parámetros con 4B activos, pero el fixture tiene 18,7M de parámetros y no es un MoE verificable.
+- La licencia no está disponible, lo que impide confirmar si se permite uso comercial del fixture o del modelo base.
+- No se declaran idiomas soportados; al no estar entrenado, no tiene capacidades lingüísticas reales.
+- No se han publicado benchmarks ni métricas de rendimiento, por lo que no se puede comparar con alternativas.
+- El fixture solo cubre checkpoints cuyos ficheros de procesador sean byte-idénticos y cuya configuración coincida tras la reducción (clave `eb8c3d454a5f`); no sirve para validar variantes con tokenizer o chat template distintos.
+- Aunque se verifica que es finito en float16, no se documenta comportamiento en cuantizaciones de 4 u 8 bits.
+- La fecha de creación (2026-11-05) y el ecosistema `huggingface-mic` sugieren un entorno experimental; conviene tratar el repositorio como inestable.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/huggingface-mic/diffusiongemma-26B-A4B-it-mic
 - Modelo base: https://huggingface.co/google/diffusiongemma-26B-A4B-it
-- Manifiesto de contrato: https://huggingface.co/huggingface-mic/diffusiongemma-26B-A4B-it-mic/blob/main/integration.json
-- Uso con Transformers: https://huggingface.co/huggingface-mic/diffusiongemma-26B-A4B-it-mic/blob/main/integrations/transformers/usage.md
-- Expectativas de Transformers: https://huggingface.co/huggingface-mic/diffusiongemma-26B-A4B-it-mic/tree/main/integrations/transformers/expectations
-- Procedencia del fixture: https://huggingface.co/huggingface-mic/diffusiongemma-26B-A4B-it-mic/blob/main/build.json
-- Documentacion del encogimiento: https://huggingface-mic-mic-coverage.static.hf.space/shrink/diffusiongemma-26B-A4B-it-mic.html
-- Repositorio transformers-mic (sweep.py): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
-- Script de construccion de fixtures: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Documentación de uso con Transformers: integrations/transformers/usage.md (en el propio repositorio)
+- Expectativas de Transformers: integrations/transformers/expectations (en el propio repositorio)
+- Manifiesto de contrato: integration.json (en el propio repositorio)
+- Procedencia del fixture: build.json (en el propio repositorio)
+- Explicación del proceso de reducción: https://huggingface-mic-mic-coverage.static.hf.space/shrink/diffusiongemma-26B-A4B-it-mic.html
+- Script de barrido: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Script de construcción de fixtures: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Repositorio transformers-mic: https://github.com/huggingface/transformers-mic

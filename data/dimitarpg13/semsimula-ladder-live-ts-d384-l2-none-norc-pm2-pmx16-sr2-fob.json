@@ -77,11 +77,5 @@
       "value": 4.963
     }
   ],
-  "sources": [
-    {
-      "title": "Text Generation Models - Hugging Face",
-      "url": "https://huggingface.co/models?pipeline_tag=text-generation&p=0&sort=modified",
-      "snippet": "dimitarpg13/semsimula-ladder-live-ts-d384-l2-none-norc-pm2-pmx16-sr2-fob. Text Generation • Updated in about 6 hours · dimitarpg13/semsimula-ladder-live-ts ..."
-    }
-  ]
+  "sources": []
 }

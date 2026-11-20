@@ -2,111 +2,101 @@
 
 ## Resumen
 
-Scion-FlashNext-176B-A6B es una cuantizacion derivada del modelo MoE Qwen3.8-Flash-Next-FP8, publicada por el usuario SkyIsNotGreen bajo licencia Apache-2.0. El objetivo es claro: comprimir un modelo de 125.000 millones de parametros (6.000 millones activados por token, 512 expertos, top-10 enrutados mas uno compartido) mas una tabla de n-gramas de 51.200 millones de parametros en un unico archivo GGUF de 60,17 GB, frente a los 185,6 GB de la publicacion oficial en FP8. Eso supone una reduccion de 3,1x y lo convierte, segun el autor, en la cuantizacion sin podar mas pequena publicada de este modelo.
+Scion-FlashNext-176B-A6B es una cuantización extrema del modelo Qwen3.8-Flash-Next-FP8 desarrollada por SkyIsNotGreen, publicada en Hugging Face bajo licencia Apache 2.0. El resultado es un único archivo GGUF de 57,62 GB que contiene 176.000 millones de parámetros nominales (177.283.638.144 reales según safetensors): los 125.000 millones del modelo de lenguaje (con 6.000 millones activados por token, al ser una arquitectura MoE) más una tabla de n-gramas de 51.200 millones de parámetros (PLE) que sustituye la cabeza MTP de 4.000 millones del modelo base. Frente a los 185,6 GB de la release oficial en FP8, este archivo es aproximadamente 3,2 veces más pequeño y, según el autor, la build más pequeña de este modelo publicada en el Hub, incluso comparada con cuantizaciones podadas por expertos.
 
-La receta combina bancos de expertos ternarios (valores {-1, 0, +1}) en el contenedor PTQ1_0 a 1,75 bpw, el cuerpo del modelo en Q6_K+Q8_0 o F16, la tabla PLE en Q4_0 y unas correcciones entrenadas de rango 512 embebidas en el propio archivo, sin adaptadores externos ni imatrix. El resultado global es de 2,72 bpw. La arquitectura subyacente es `qwen4exp` en llama.cpp: 48 capas con atencion hibrida 3:1 entre GatedDeltaNet lineal e indexada completa, hiper-conexiones y feed-forward MoE, con 262.144 tokens de contexto.
+La innovación central es el uso de expertos ternarios en un contenedor base-3 denominado TQ1_0_g128 (antes PTQ1_0) a 1,75 bits por peso, combinado con ramas de corrección entrenadas (rank 512) sobre las salidas de atención y del bloque MoE, más deltas de router. A diferencia de las cuantizaciones calibradas con imatrix, estas correcciones se entrenaron por destilación de salida (output-KD) contra el profesor con el cuantizador desplegado en el bucle, sin corpus de calibración. La tabla de n-gramas se almacena en el contenedor Q4X160 (26,24 GB).
 
-Su relevancia es doble: por un lado, demuestra que un MoE de esta escala puede servirse en una sola GPU de 80 GB; por otro, documenta de forma inusualmente explicita los compromisos asumidos, incluyendo una perplexity de wikitext-2 peor que la de cuantizaciones comparables. El repositorio tiene 0 descargas y 1 like en el momento de redactar esta ficha, por lo que se trata de un artefacto reciente con poca validacion independiente.
+Es relevante ahora porque demuestra que es posible servir un MoE de 176B en hardware de consumo de gama alta (dos RX 7900 XT de 20 GB) a 80,5-80,8 tokens por segundo con un motor propio (Strata), y porque expone abiertamente sus límites: la perplejidad en wikitext-2 empeora frente a alternativas (5,457 vs 5,240) y las categorías de código y lógica son débiles (1/3 en cada una) en la suite de 20 tareas. La model card indica que el modelo es solo para inglés y que el paso de entrenamiento 4000 fue descartado por no mejorar la puerta KLD.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `qwen4exp`: 48 capas, atencion hibrida 3:1 (GatedDeltaNet lineal / atencion completa indexada, presupuesto de indexer 2048, compress 4), hiper-conexiones (4, lowrank 320), feed-forward MoE, puerta de salida sigmoide |
-| Parametros totales | 177.283.638.144 (177,3 mil millones): 125.000 millones del modelo de lenguaje + 51.200 millones de la tabla de n-gramas (320.001.536 filas x 160). El cabezal MTP de 4000 millones no esta incluido |
-| Parametros activos | 6.000 millones por token (512 expertos, top-10 enrutados + 1 compartido) |
-| Longitud de contexto | 262.144 tokens (heredada del modelo base) |
-| Tipos de cuantizacion | Expertos en PTQ1_0 ternario g128 (1,75 bpw); tabla PLE en Q4_0 (4,25 bpw, filas de grupo 32); cuerpo en Q6_K+Q8_0 (variante por defecto) o F16 (variante de fidelidad); correcciones F16 embebidas; normas en F32. Media global: 2,72 bpw |
-| Idiomas soportados | en (ingles) |
-| Licencia | Apache-2.0 para este derivado; los pesos base son Qwen `license:other` |
-| Formato de pesos | GGUF (llama.cpp), archivo unico sin shards. 60,17 GB / 56,04 GiB (cuerpo Q6_K) y 65,80 GB / 61,30 GiB (cuerpo F16) |
+| Arquitectura | MoE transformer (derivada de Qwen3.8-Flash-Next) con expertos ternarios y tabla de n-gramas PLE |
+| Parametros totales | 177.283.638.144 (176B nominales: 125B LM + 51,2B tabla n-gramas) |
+| Parametros activos | 6B (modelo de lenguaje) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Expertos TQ1_0_g128 (ternario base-3, 1,75 bpw, grupo 128); cuerpo Q6_K+Q8_0 (variante por defecto) o F16 (variante de fidelidad); tabla n-gramas Q4X160 (26,24 GB) o Q4_0 (28,8 GB) |
+| Idiomas soportados | en |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (llama.cpp); tres contenedores: 57,62 GB (por defecto), 60,17 GB (tabla Q4_0), 65,80 GB (cuerpo F16) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer MoE de 48 capas con atencion hibrida: tres de cada cuatro capas usan atencion lineal GatedDeltaNet y la restante atencion completa indexada con un presupuesto de indexer de 2048 y factor de compresion 4. Incorpora hiper-conexiones (4, lowrank 320) y una puerta de salida sigmoide. La capa feed-forward es de tipo MoE con 512 expertos, enrutado top-10 mas un experto compartido, lo que deja 6.000 millones de parametros activos por token. Ademas, el modelo incluye una tabla de n-gramas (PLE) de 51.200 millones de parametros que ocupa 28,8 GB del archivo y se decodifica fila a fila en Q4_0.
+El modelo parte de Qwen3.8-Flash-Next-FP8 y lo reempaqueta como un MoE con bancos de expertos ternarios en el contenedor base-3 TQ1_0_g128: cinco trits por byte más un campo de 2 trits y una escala de grupo fp16 cada 128 pesos (28 bytes por 128 pesos). La entropía de valores en {-1, 0, +1} es de 1,585 bpw, por lo que el sobrecoste del contenedor ronda el 10%. El cuerpo se mantiene en Q6_K+Q8_0 en la variante por defecto o en F16 en la variante de fidelidad. La tabla de n-gramas (PLE) de 51,2B parámetros se decodifica por fila en Q4X160.
 
-La cuantizacion no es calibrada, sino entrenada. Los bancos de expertos se llevan a valores ternarios mediante un cuantizador Lloyd g128, con 5 trits por byte mas un campo de 2 trits y una escala de grupo fp16 cada 128 pesos (28 bytes por 128). La entropia de valores de {-1, 0, +1} es de 1,585 bpw, de modo que el contenedor anade en torno a un 10% de sobrecarga. Sobre ese cuerpo ternario el autor injerta ramas de correccion de rango 512 en las salidas de atencion y en la salida del bloque MoE, mas deltas de router, entrenadas por destilacion sobre la salida (output-KD) contra el profesor con el cuantizador desplegado dentro del bucle de entrenamiento. No se usa imatrix ni corpus de calibracion. Las correcciones van embebidas en el archivo (`adapter.embedded=true`) y se acoplan al cargar, sin necesidad de `--lora`. Una extension entrenada hasta el paso 4000 fue evaluada con una puerta KLD de 0,5880 (plana o peor) y no se ha publicado.
+El entrenamiento no usa imatrix ni corpus de calibración: en su lugar se añaden ramas de corrección de rank 512 sobre las salidas de atención y del bloque MoE, más deltas de router, entrenadas por destilación de salida contra el profesor con el cuantizador ternario Lloyd g128 desplegado en el bucle. Las correcciones van embebidas en el propio archivo (`adapter.embedded=true`) y se aplican en carga, sin necesidad de `--lora` ni sidecar. La puerta KLD de 48 capas arroja un valor medio de 0,5800, dominado por el ajuste del soporte top-512 (92,9% de esa masa); la extensión al paso 4000 se entrenó y se descartó por quedar plana o peor (0,5880).
 
 ## Capacidades
 
-- Generacion de texto en ingles: es la unica modalidad declarada (`pipeline_tag: text-generation`, texto unicamente).
-- Razonamiento y conocimiento general: la suite de capacidad de 20 tareas arroja 15/20 con 0 errores de harness.
-- Rendimiento solido en tareas de sentido comun: HellaSwag (400) 82,00 y Winogrande (400) 77,50.
-- Contexto largo: 262.144 tokens heredados del modelo base, con atencion lineal en 3 de cada 4 capas.
-- Categorias debiles declaradas por el autor: codigo y logica, con 1/3 cada una en la suite de 20 tareas.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no; solo ingles.
-- Capacidad especial: no incluye el cabezal MTP de 4000 millones del modelo base, por lo que no hay decodificacion multi-token especulativa.
+- Generación de texto conversacional en inglés, con modo de razonamiento largo (thinking) heredado del modelo base; la model card advierte que el 26% de los registros "think-harder" no emiten respuesta alguna bajo los límites de 700/2048 tokens del protocolo de evaluación.
+- Razonamiento multi-paso y cadenas de pensamiento extensas, aunque con truncamiento frecuente en entornos con límites de tokens ajustados.
+- Capacidad limitada en código y lógica: 1/3 en cada categoría de la suite de 20 tareas del autor.
+- Soporte de tool calling y function calling: no disponible (no se documenta en la model card).
+- Soporte de agentes: no disponible (no se documenta explícitamente).
+- Multilingüe: no; solo inglés según el campo `language`.
+- Capacidades especiales: expertos ternarios con correcciones entrenadas embebidas, tabla de n-gramas PLE integrada en el mismo archivo y decodificación por fila.
 
 ## Casos de uso
 
-- Servicio de generacion de texto en una sola GPU de 80 GB: el archivo completo ocupa 56,04 GiB en la variante Q6_K, de modo que entra con holgura en una A100-SXM4-80GB, configuracion en la que el autor ha verificado carga completa en GPU, generacion y benchmarks.
-- Sustitucion de despliegues FP8 por restricciones de VRAM o disco: pasar de 185,6 GB a 60,17 GB reduce 3,1x el espacio necesario y permite almacenar el modelo en un unico volumen sin shards ni adaptadores externos.
-- Procesamiento de documentos largos en ingles: con 262.144 tokens de contexto y atencion hibrida, es adecuado para resumir o extraer informacion de expedientes, normativa o documentacion tecnica extensa en una sola pasada.
-- Tareas de comprension y clasificacion de lenguaje natural: los resultados de HellaSwag (82,00) y Winogrande (77,50) lo situan como opcion razonable para enrutado de intenciones, recuperacion semantica asistida o anotacion de textos donde importa el sentido comun y no el razonamiento formal.
-- Investigacion en cuantizacion de bajo bit: el repositorio documenta contenedores ternarios PTQ1_0, correcciones entrenadas embebidas y decodificacion de tablas PLE, por lo que sirve como material reproducible para estudiar el impacto de 1,75 bpw en expertos MoE.
-- Inferencia en CPU sin GPU: el autor ha verificado el modelo en un pod con 16 hilos, lo que abre la puerta a entornos sin acelerador donde la latencia no sea critica.
-- Experimentacion en ROCm: verificado sobre gfx1100, util para prototipos en hardware AMD.
-- Prototipado con contexto muy largo en un solo archivo: al no requerir sidecar ni particionado, simplifica pipelines de evaluacion que necesitan cargar y descargar el modelo repetidamente.
+- Despliegue en hardware de consumo de gama alta: el archivo por defecto de 57,62 GB cabe en configuraciones con 64 GB de VRAM agregada o en sistemas con dos GPU de 20 GB repartiendo capas (26/22), como reporta el autor con dos RX 7900 XT.
+- Inferencia de alto rendimiento con motor especializado: usando Strata sobre el archivo de 60,17 GB se alcanzan 80,5-80,8 tok/s en greedy con 128 tokens por petición, adecuado para servicios conversacionales con latencia objetivo de ~12,4 ms por token.
+- Experimentación con cuantización ternaria: sirve como banco de pruebas para investigar contenedores base-3, correcciones entrenadas con cuantizador en el bucle y decodificación de tablas n-gramas, dado que el autor publica scripts de build y un fork del runtime.
+- Evaluación comparativa de cuantizaciones: al existir múltiples builds del mismo modelo base (IQ4_NL de 102 GB, PQ2_0 de 92 GB, IQ3_S de 83,6 GB, IQ3_XXS de 75,8 GB, IQ2_XS de 68 GB, Q2_0 de 66,4 GB), permite A/B tests controlados con un mismo harness (HellaSwag 400, Winogrande 400, wikitext-2 PPL).
+- Prototipado de asistentes conversacionales en inglés con contexto moderado: apropiado cuando la prioridad es reducir huella de memoria y no la perplejidad, aceptando el deterioro de wikitext-2 (5,457 frente a 5,240).
+- Investigación sobre destilación de salida aplicada a cuantización: el enfoque de correcciones rank-512 más deltas de router, sin imatrix, es replicable con los scripts publicados en GitHub para estudiar el equilibrio entre tamaño y fidelidad.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | Scion-FlashNext-176B-A6B | ISTA Q2_0 | Notas |
-|---|---|---|---|
-| HellaSwag (400) | 82,00 | 81,50 | Empate dentro de la banda de +-2% |
-| Winogrande (400) | 77,50 | 74,75 | Mejor con 6,2 GB menos de tamano |
-| wikitext-2 PPL | 5,457 | 5,240 | Peor: los expertos ternarios a 1,75 bpw compran tamano, no verosimilitud |
-| cap_eval (suite de 20 tareas) | 15/20, 0 errores de harness | no disponible | Codigo y logica: 1/3 cada uno |
-| Puerta KLD (48 capas) | 0,5800 de media | no disponible | 92,9% de esa masa corresponde al ajuste del soporte top-512 |
+| Benchmark | Scion-FlashNext-176B-A6B | ISTA Q2_0 (referencia del autor) |
+|---|---|---|
+| HellaSwag 400 | 82,00% | 81,50% |
+| Winogrande 400 | 77,50% | 74,75% |
+| wikitext-2 PPL | 5,457 | 5,240 |
+| cap_eval (20 tareas) | 15/20, 0 errores de harness | no disponible |
+| KLD medio (puerta 48 capas) | 0,5800 | no disponible |
+| Generación (Strata, 2x RX 7900 XT) | 80,5-80,8 tok/s; 12,4 ms/token a contexto 4096 | no disponible |
 
-No se han publicado otros resultados de benchmarks en la informacion disponible (no hay MMLU, HumanEval ni GSM8K).
+La comparación HellaSwag es un empate en el test pareado según el autor; la de Winogrande es una señal positiva pero no concluyente. No se han publicado resultados de MMLU, HumanEval ni GSM8K en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: 56,04 GiB para la variante con cuerpo Q6_K y 61,30 GiB para la variante F16, correspondientes a los 60,17 GB y 65,80 GB del archivo. Hay que sumar la cache KV y el overhead de contexto; la cifra exacta para 262.144 tokens no esta disponible.
-- GPU verificadas por el autor: A100-SXM4-80GB (sm_80) y RTX PRO 6000 Blackwell (sm_120), ambas con carga completa en GPU, generacion y ejecucion de los benchmarks.
-- ROCm: verificado sobre gfx1100.
-- CPU: verificado en un pod con 16 hilos.
-- GPU de consumo: no cabe en tarjetas de 24 GB ni de 32 GB. Seria necesario offload parcial a memoria del sistema con llama.cpp, con la penalizacion de latencia correspondiente.
-- Opciones de despliegue: llama.cpp y, en concreto, el fork `sky-is-green/prism-ml-llama.cpp` (rama `qwen4exp-proto`), que anade los contenedores PQ2_0/PTQ1_0, la arquitectura `qwen4exp`, el objetivo virtual `ffn_moe_out`, soporte de adaptadores embebidos y manejo de tablas PLE. Soporte en vLLM, Ollama o TGI: no documentado.
-- Latencia y throughput: no disponible. Como referencia estructural, activa 6.000 millones de parametros por token sobre un total de 125.000 millones en el modelo de lenguaje.
+- VRAM estimada: 57,62 GB para el archivo por defecto; 60,17 GB para la variante con tabla Q4_0; 65,80 GB para la variante con cuerpo F16. El repo completo ocupa 183,6 GB.
+- GPU recomendadas: el autor reporta ejecución en dos RX 7900 XT de 20 GB cada una (reparto de capas 26/22) con el motor Strata; para llama.cpp se requiere un fork específico del runtime.
+- Cabe en GPU de consumo: sí, en configuraciones multi-GPU de gama alta con al menos ~60 GB de VRAM agregada; no cabe en una única GPU de consumo de 24 GB.
+- Opciones de despliegue: llama.cpp (fork prism-ml-llama.cpp en la rama qwen4exp-proto) y Strata (motor propio del autor). vLLM, TGI y Ollama no se documentan como compatibles.
+- Latencia y throughput: 12,4 ms por token generado a contexto 4096, con 2,3-2,4 tokens por ventana de pipeline (`--pipeline-windows 2`, +62-68% frente al mismo motor sin pipeline). Protocolo: cuatro peticiones de un prompt fijo, temperatura 0, ejecución 1 de calentamiento y 2-4 reportadas.
 
 ## Comparativa con modelos similares
 
-Todas las alternativas son cuantizaciones del mismo modelo base, por lo que la comparacion se centra en tamano y compromisos de fidelidad.
-
-| Modelo | Tamano | Formato / bits | Licencia | Datos comparables |
-|---|---|---|---|---|
-| Qwen3.8-Flash-Next-FP8 (base) | 185,6 GB | FP8, bloques 128x128 | Qwen `license:other` | Referencia de maxima fidelidad |
-| Mooney PQ2_0 | 92 GB | Ternario | no disponible | Otra construccion ternaria |
-| GSQ-RCO IQ3_S | 83,6 GB | IQ3_S | no disponible | no disponible |
-| IQ3_XXS | 75,8 GB | IQ3_XXS | no disponible | no disponible |
-| IQ2_XS | 68,0 GB | IQ2_XS | no disponible | no disponible |
-| GSQ-RCO Q2_0 (ISTA) | 66,4 GB | Q2_0 | no disponible | HellaSwag 81,50; Winogrande 74,75; wikitext-2 PPL 5,240 |
-| Scion-FlashNext-176B-A6B | 60,17 GB | PTQ1_0 ternario + Q6_K/Q8_0 + Q4_0 PLE | Apache-2.0 | HellaSwag 82,00; Winogrande 77,50; wikitext-2 PPL 5,457 |
-| ISTA IQ1_M (coder, podado) | 58,4 GB | IQ1_M | no disponible | Unico archivo mas pequeno en el Hub, pero con expertos podados y orientado a codigo |
-
-Frente a ggml-org IQ4_NL (102 GB) el ahorro es de 41,83 GB; frente al unico ternario alternativo, Mooney PQ2_0 (92 GB), de 31,83 GB.
+| Modelo | Parametros | Contexto | Tamano en disco | Licencia | Notas |
+|---|---|---|---|---|---|
+| Scion-FlashNext-176B-A6B | 176B (6B activos) | no disponible | 57,62 GB (por defecto) | apache-2.0 | Ternario 1,75 bpw + correcciones entrenadas |
+| Qwen3.8-Flash-Next FP8 (base) | 176B | no disponible | 185,6 GB | apache-2.0 (heredada) | Release oficial en FP8 |
+| ggml-org IQ4_NL | 176B | no disponible | 102 GB | apache-2.0 (heredada) | Cuantización de comunidad |
+| Mooney PQ2_0 | 176B | no disponible | 92 GB | no disponible | Otra build ternaria |
+| GSQ-RCO IQ3_S | 176B | no disponible | 83,6 GB | no disponible | Cuantización de comunidad |
+| IQ3_XXS | 176B | no disponible | 75,8 GB | no disponible | Cuantización de comunidad |
+| IQ2_XS | 176B | no disponible | 68 GB | no disponible | Cuantización de comunidad |
+| GSQ-RCO Q2_0 | 176B | no disponible | 66,4 GB | no disponible | Cuantización de comunidad |
+| ISTA coder IQ1_M (podado) | no disponible | no disponible | 58,4 GB | no disponible | Único archivo más pequeño, con poda de expertos |
 
 ## Limitaciones y advertencias
 
-- Solo ingles: no hay soporte multilingue declarado.
-- Calidad de verosimilitud inferior: la perplexity de wikitext-2 es 5,457 frente a 5,240 de ISTA Q2_0, pese a ser 6,2 GB mas pequeno. El propio autor lo describe como un intercambio de tamano por verosimilitud.
-- Codigo y logica debiles: 1/3 en cada categoria de la suite de 20 tareas. No es recomendable para generacion de codigo en produccion.
-- Divergencia respecto al profesor: la puerta KLD de 48 capas da 0,5800 de media, y el 92,9% de esa masa corresponde al ajuste del soporte top-512, lo que indica que buena parte de la divergencia es estructural y no solo de magnitud.
-- Riesgo de alucinacion: no cuantificado en la informacion disponible; se aplican los riesgos habituales de un modelo de lenguaje.
-- Dependencia de una implementacion no estandar: requiere el fork `prism-ml-llama.cpp` (rama `qwen4exp-proto`) con los contenedores PQ2_0/PTQ1_0, la arquitectura `qwen4exp` y el manejo de tablas PLE. No se documenta compatibilidad con llama.cpp upstream ni con otros runtimes.
-- Licencia: el derivado se publica como Apache-2.0, pero los pesos base son Qwen `license:other`. El autor indica que se ha seguido la practica de las cuantizaciones comunitarias; conviene revisar los terminos del modelo base antes de un uso comercial.
-- Contexto: aunque hereda 262.144 tokens, no se han publicado mediciones de degradacion a longitudes extremas.
-- Capacidades ausentes: sin tool calling, sin soporte de agentes documentado y sin el cabezal MTP de 4000 millones, por lo que no hay decodificacion multi-token especulativa.
-- Adopcion minima: 0 descargas y 1 like en el momento de redactar la ficha, con creacion el 2026-10-05 y ultima actualizacion el 2026-10-06. La validacion es practicamente toda del autor.
+- Solo inglés: el campo `language` declara únicamente `en`; no hay soporte multilingüe documentado.
+- Riesgo de alucinación: no cuantificado en la model card; la perplejidad elevada en wikitext-2 (5,457) sugiere mayor degradación de likelihood frente a cuantizaciones calibradas.
+- Debilidad en código y lógica: 1/3 en ambas categorías de la suite de 20 tareas; no es adecuado como modelo principal para generación de código en producción.
+- Razonamiento truncado: el 26% de los registros "think-harder" no emiten respuesta bajo los límites de 700/2048 tokens del protocolo de evaluación.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen3.8-Flash-Next debe verificarse por separado; la model card no detalla obligaciones adicionales de atribución.
+- Requiere runtime específico (fork de llama.cpp o Strata); no es plug-and-play en vLLM, TGI u Ollama.
+- La variante por defecto (57,62 GB) no está medida en el banco de pruebas del autor; las cifras de throughput corresponden al archivo de 60,17 GB.
+- La comparación con ISTA Q2_0 muestra que los expertos ternarios a 1,75 bpw compran tamaño, no likelihood.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/SkyIsNotGreen/Scion-FlashNext-176B-A6B
-- Discusiones del modelo: https://huggingface.co/SkyIsNotGreen/Scion-FlashNext-176B-A6B/discussions
-- Repositorio GitHub con scripts de construccion y documentacion: https://github.com/sky-is-green/scion
-- Fork del runtime llama.cpp (rama `qwen4exp-proto`): https://github.com/sky-is-green/prism-ml-llama.cpp/tree/qwen4exp-proto
-- Modelo base en FP8: https://huggingface.co/Qwen/Qwen3.8-Flash-Next-FP8
-- Model card del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Hugging Face: https://huggingface.co/SkyIsNotGreen/Scion-FlashNext-176B-A6B
+- Discusiones: https://huggingface.co/SkyIsNotGreen/Scion-FlashNext-176B-A6B/discussions
+- GitHub (scripts de build y documentación): https://github.com/sky-is-green/scion
+- Fork del runtime llama.cpp: https://github.com/sky-is-green/prism-ml-llama.cpp/tree/qwen4exp-proto
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next-FP8
+- Documento de nombres de contenedor: `CONTAINER-NAMES.md` en el repo de Hugging Face

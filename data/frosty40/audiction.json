@@ -33,12 +33,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 189,
   "trending_score": 0,
   "parameters": 299637760,
   "parameters_human": "299.6M",
-  "storage_bytes": 2398691504,
-  "storage_human": "2.4 GB",
+  "storage_bytes": 1200120008,
+  "storage_human": "1.2 GB",
   "context_length": null,
   "base_model": "google/byt5-small",
   "formats": [

@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "Jon-Nielsen/Inkling-2-Small-NVFP4-CSF-FLARE-sm120-1M-vision-staging",
+  "slug": "jon-nielsen-inkling-2-small-nvfp4-csf-flare-sm120-1m-vision-staging",
+  "author": "Jon-Nielsen",
+  "url": "https://huggingface.co/Jon-Nielsen/Inkling-2-Small-NVFP4-CSF-FLARE-sm120-1M-vision-staging",
+  "created_at": "2026-11-19T15:22:37.000Z",
+  "updated_at": "2026-11-19T21:19:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 50283638,
+  "parameters_human": "50.3M",
+  "storage_bytes": 346212219678,
+  "storage_human": "346.2 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

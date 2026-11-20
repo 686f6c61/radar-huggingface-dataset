@@ -53,6 +53,43 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "task": "Multiple choice (0-shot, log-likelihood)",
+      "dataset": "ARC-Easy",
+      "metric": "accuracy (SLM-Tavenel evaluator)",
+      "value": 0.4836
+    },
+    {
+      "task": "Multiple choice (0-shot, log-likelihood)",
+      "dataset": "ARC-Challenge",
+      "metric": "accuracy (SLM-Tavenel evaluator)",
+      "value": 0.2065
+    },
+    {
+      "task": "Multiple choice (0-shot, log-likelihood)",
+      "dataset": "HellaSwag",
+      "metric": "accuracy (SLM-Tavenel evaluator)",
+      "value": 0.2767
+    },
+    {
+      "task": "Multiple choice (0-shot, log-likelihood)",
+      "dataset": "Belebele (English)",
+      "metric": "accuracy (SLM-Tavenel evaluator)",
+      "value": 0.3156
+    },
+    {
+      "task": "Multiple choice (0-shot, log-likelihood)",
+      "dataset": "Belebele (French)",
+      "metric": "accuracy (SLM-Tavenel evaluator)",
+      "value": 0.3111
+    },
+    {
+      "task": "Multiple choice (0-shot, log-likelihood)",
+      "dataset": "WinoGrande (XL, validation)",
+      "metric": "accuracy (SLM-Tavenel evaluator)",
+      "value": 0.5193
+    }
+  ],
   "sources": []
 }

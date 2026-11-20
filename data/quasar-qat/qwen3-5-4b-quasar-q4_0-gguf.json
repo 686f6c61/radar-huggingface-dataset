@@ -48,7 +48,7 @@
     "conversational"
   ],
   "likes": 4,
-  "downloads_30d": 1247,
+  "downloads_30d": 1184,
   "trending_score": 0,
   "parameters": 4205751296,
   "parameters_human": "4.21B",
@@ -72,27 +72,27 @@
     {
       "title": "GitHub - quasar/Quasar: Remote Administration Tool for Windows",
       "url": "https://github.com/quasar/Quasar",
-      "snippet": "Quasar is a fast and light-weight remote administration tool coded in C#. The usage ranges from user support through day-to-day …"
-    },
-    {
-      "title": "Quasar - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Quasar",
-      "snippet": "Quasar luminosities can vary considerably over time, depending on their surroundings. Since it is difficult to fuel quasars for many …"
-    },
-    {
-      "title": "Quasar Framework",
-      "url": "https://quasar.dev/",
-      "snippet": "Developer-oriented, front-end framework with Vue.js components for best-in-class high-performance, responsive websites, PWA, …"
+      "snippet": "Quasar is a fast and light-weight remote administration tool coded in C#. The usage ranges from user support through day-to-day …Read more"
     },
     {
       "title": "Quasar — Wikipédia",
       "url": "https://fr.wikipedia.org/wiki/Quasar",
-      "snippet": "Le quasar qui apparaît le plus brillant dans notre ciel est 3C 273, dans la constellation de la Vierge. Il a une magnitude apparente …"
+      "snippet": "Le quasar qui apparaît le plus brillant dans notre ciel est 3C 273, dans la constellation de la Vierge. Il a une magnitude apparente …Read more"
     },
     {
-      "title": "Premium FiveM Scripts ESX QB Qbox | Quasar Store",
-      "url": "https://www.quasar-store.com/c/scripts",
-      "snippet": "Discover premium FiveM scripts for ESX, QB and Qbox. High-quality systems for jobs, housing, inventory, phone and advanced …"
+      "title": "Quasar Framework",
+      "url": "https://quasar.dev/",
+      "snippet": "What our community thinks of Quasar You've never heard of Quasar? It's the framework that made a mobile app, desktop app and …Read more"
+    },
+    {
+      "title": "Best FiveM Scripts for ESX, QBCore & Qbox | Quasar Store",
+      "url": "https://www.quasar-store.com/",
+      "snippet": "Premium FiveM scripts for ESX, QB, and Qbox: housing, inventory, police, crime, jobs, creators, casinos and more. Build a next-gen …Read more"
+    },
+    {
+      "title": "Quasar - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Quasar",
+      "snippet": "Quasar luminosities can vary considerably over time, depending on their surroundings. Since it is difficult to fuel quasars for many …Read more"
     }
   ]
 }

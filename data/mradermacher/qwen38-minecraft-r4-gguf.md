@@ -1,92 +1,79 @@
 # mradermacher/qwen38-minecraft-r4-GGUF
 
 ## Resumen
+qwen38-minecraft-r4 es un modelo de vision-lenguaje-accion (VLA) afinado para jugar a Minecraft, derivado de la familia Qwen y entrenado mediante aprendizaje por imitación sobre el dataset SlowGuess/qwen38-minecraft-m2-data. Desarrollado por SlowGuess y cuantizado a GGUF por mradermacher, el modelo resuelve el problema de convertir observaciones visuales del entorno y contexto textual en acciones de agente dentro del juego, una tarea representativa de los agentes embodied y de los benchmarks de control tipo MineRL.
 
-`mradermacher/qwen38-minecraft-r4-GGUF` es una coleccion de cuantizaciones estaticas en formato GGUF del modelo `SlowGuess/qwen38-minecraft-r4`, un modelo de vision-lenguaje-accion (VLA) afinado para el videojuego Minecraft mediante aprendizaje por imitacion. Lo publica mradermacher, un conocido autor de cuantizaciones GGUF de la comunidad, y esta pensado para su uso con llama.cpp y derivados (Ollama, LM Studio, etc.). El modelo base parte de una arquitectura Qwen y tiene 26.895.998.464 parametros totales (aproximadamente 27.000 millones), con licencia Apache 2.0.
+El modelo cuenta con 26.895.998.464 parámetros (aproximadamente 26,9 mil millones) en formato safetensors, lo que lo sitúa en la gama de modelos densos de gran tamano. La versión publicada por mradermacher ofrece cuantizaciones estáticas en GGUF con un rango que va desde Q2_K (10,8 GB) hasta Q8_0 (28,7 GB), además de un proyector multimodal (mmproj) separado en Q8_0 y f16, lo que permite desplegarlo en hardware de consumo con llama.cpp.
 
-La relevancia de esta ficha es doble: por un lado, documenta un caso de uso especializado (agentes que juegan a Minecraft a partir de observaciones visuales), y por otro, ilustra el flujo habitual de cuantizacion comunitaria de un modelo de investigacion poco difundido. El repositorio incluye tanto los pesos cuantizados del modelo como ficheros `mmproj` (proyector multimodal) en Q8_0 y f16, necesarios para procesar la entrada visual.
-
-Conviene subrayar que se trata de un modelo experimental de investigacion, con cero descargas y cero likes en el momento de redactar esta ficha, y sin model card detallada mas alla de los metadatos. La informacion disponible sobre entrenamiento, datos y rendimiento es muy limitada.
+Su relevancia actual radica en la escasez de modelos VLA abiertos orientados a entornos de juego concretos y en la disponibilidad de cuantizaciones GGUF que facilitan la experimentación local. La licencia Apache 2.0 y el soporte de endpoints compatibles lo hacen atractivo para investigación en agentes autónomos, aunque la información pública sobre arquitectura detallada, contexto y benchmarks es muy limitada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base derivado de Qwen; vision-language-action) |
-| Parametros totales | 26.895.998.464 (~26,9 mil millones) |
+| Arquitectura | no disponible (modelo VLA derivado de la familia Qwen; detalles no publicados) |
+| Parametros totales | 26.895.998.464 (aprox. 26,9 B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS; ademas mmproj en Q8_0 y f16 |
-| Idiomas soportados | en (ingles) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj en Q8_0 y f16 |
+| Idiomas soportados | en (inglés) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (original en safetensors/transformers) |
+| Formato de pesos | safetensors (modelo base) y GGUF (esta versión cuantizada) |
 
 ## Arquitectura y entrenamiento
+La información disponible no detalla la arquitectura interna del modelo base SlowGuess/qwen38-minecraft-r4. Por el nombre y la etiqueta vision-language-action se infiere una arquitectura multimodal que combina un codificador visual con un modelo de lenguaje para producir acciones, pero no se especifican el tipo de transformer, el número de capas, la dimensionalidad ni el mecanismo de atención. Tampoco se documenta la longitud de contexto ni la composición exacta del dataset más allá de su identificador.
 
-El modelo base `SlowGuess/qwen38-minecraft-r4` se presenta en sus etiquetas como un modelo de vision-language-action entrenado con aprendizaje por imitacion sobre el dataset `SlowGuess/qwen38-minecraft-m2-data`. La nomenclatura "qwen38" sugiere un origen en la familia Qwen, y el sufijo "r4" indica una cuarta iteracion o revision del afinamiento. Al tratarse de un modelo VLA, la arquitectura combina un codificador visual con un modelo de lenguaje y una cabeza de accion que produce las decisiones de control dentro del juego; los ficheros `mmproj` del repositorio GGUF confirman la presencia de un proyector multimodal.
-
-No hay informacion disponible sobre el numero de tokens de entrenamiento, la composicion exacta del dataset, el uso de RLHF/DPO ni innovaciones tecnicas concretas (atencion lineal, decodificacion especulativa, etc.). La cuantizacion realizada por mradermacher es de tipo estatico, sin versiones ponderadas/imatrix en el momento de la publicacion, segun indica la propia model card.
+El entrenamiento se basa en aprendizaje por imitación (imitation learning) sobre el dataset SlowGuess/qwen38-minecraft-m2-data, orientado a Minecraft. No se han publicado datos sobre el número de tokens de entrenamiento, la presencia de RLHF o DPO, ni innovaciones técnicas como decodificación especulativa o atención lineal. La versión aquí descrita es una cuantización estática realizada por mradermacher con convert_type hf y quantize_version 2, que incluye un proyector multimodal separado para el procesamiento de imágenes.
 
 ## Capacidades
-
-- Generacion de texto y razonamiento en ingles, heredadas del modelo base tipo Qwen.
-- Procesamiento de entrada visual mediante el proyector multimodal (`mmproj`), orientado a la observacion del entorno de Minecraft.
-- Produccion de acciones (vision-language-action) para control dentro del juego, entrenado por imitacion.
-- Soporte de conversacion multi-turno (etiqueta `conversational`).
-- Compatibilidad con endpoints (etiqueta `endpoints_compatible`).
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Capacidades de agente multi-paso: no documentadas explicitamente, aunque el paradigma VLA implica decision secuencial.
-- Capacidades multilingues: limitadas al ingles segun los metadatos.
+- Generación de texto conversacional en inglés, con formato de chat (etiqueta conversational).
+- Procesamiento de visión: el modelo incluye un proyector multimodal (mmproj) que permite ingerir observaciones visuales del entorno de Minecraft.
+- Producción de acciones de agente (vision-language-action) para control dentro del juego, derivadas del aprendizaje por imitación.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: orientado a agentes embodied en Minecraft, aunque no se documentan capacidades explícitas de planificación multi-paso.
+- Capacidades multilingües: limitadas al inglés según la model card.
+- Capacidades especiales: modalidad visión-lenguaje-acción; no se documentan modos de pensamiento (thinking), audio ni otras modalidades.
 
 ## Casos de uso
-
-- Investigacion en agentes VLA para videojuegos: el modelo permite reproducir y extender experimentos de aprendizaje por imitacion en Minecraft, sirviendo como punto de partida para comparar politicas de control basadas en vision.
-- Despliegue local con llama.cpp: gracias a las cuantizaciones Q4_K_M y Q5_K_M, es posible ejecutar el modelo en estaciones de trabajo con GPU de consumo para prototipado rapido sin depender de infraestructura en la nube.
-- Evaluacion de tecnicas de cuantizacion: al ofrecer un abanico amplio de niveles (de Q2_K a f16), resulta util para medir la degradacion de calidad en tareas de accion y percepcion visual.
-- Generacion de datos sinteticos de juego: el modelo puede emplearse para producir trayectorias o descripciones de partidas que alimenten otros pipelines de entrenamiento.
-- Docencia y divulgacion: sirve como ejemplo practico de como se publica y cuantiza un modelo multimodal especializado, con ficheros `mmproj` separados.
-- Prototipos de asistentes para entornos simulados: la combinacion de vision y accion puede adaptarse a otros entornos 3D con interfaz visual similar, previo reentrenamiento.
+- Investigación en agentes embodied: el modelo permite experimentar con políticas de imitación en Minecraft, usando las observaciones visuales y el contexto textual para generar acciones dentro del entorno.
+- Benchmarking de modelos VLA: sirve como referencia abierta para comparar el rendimiento de agentes entrenados por imitación en tareas de juego, gracias a su disponibilidad en GGUF y licencia permisiva.
+- Prototipado local de agentes de juego: con cuantizaciones Q4_K_M (16,6 GB) o Q5_K_M (19,3 GB) se puede desplegar en estaciones de trabajo con GPU de consumo para pruebas de integración con entornos Minecraft.
+- Educación y divulgación: útil para demostrar cómo un modelo multimodal traduce percepciones visuales en acciones, en cursos o talleres sobre IA para videojuegos.
+- Evaluación de cuantizaciones: el amplio rango de cuantizaciones (de Q2_K a Q8_0) permite estudiar el impacto de la compresión en la calidad de las políticas generadas.
+- Integración en pipelines de investigación con llama.cpp: el formato GGUF y el proyector multimodal separado facilitan la experimentación con herramientas estándar de inferencia local.
 
 ## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia: no disponible de forma oficial; como referencia orientativa, un modelo de ~27.000 millones de parametros requiere del orden de 15-18 GB en Q4_K_M, 18-20 GB en Q5_K_M, 20-22 GB en Q6_K y 27-29 GB en Q8_0 (estimaciones aproximadas, no confirmadas por el autor).
-- GPU recomendadas: no especificadas por el autor; por tamano, cabria esperar A100 40/80 GB, H100 o RTX 4090 para cuantizaciones bajas.
-- GPU de consumo: las cuantizaciones Q4_K_S, Q4_K_M e IQ4_XS podrian caber en GPUs con 24 GB (RTX 3090/4090) o en configuraciones con offload a RAM; las versiones Q6_K, Q8_0 y f16 requieren mas memoria.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y otros frontends compatibles con GGUF; requiere cargar tambien el fichero `mmproj` correspondiente para la parte visual.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: aproximadamente 11 GB con Q2_K (10,8 GB), 16-17 GB con Q4_K_M (16,6 GB), 19-20 GB con Q5_K_M (19,3 GB) y 29 GB con Q8_0 (28,7 GB), a lo que hay que sumar entre 0,7 y 1,0 GB del proyector multimodal.
+- GPU recomendadas: para Q8_0 se recomienda una A100 40 GB, H100 o RTX 4090 (24 GB) con margen ajustado; para Q4_K_M y Q5_K_M, una RTX 4090, RTX 3090 o A6000 de 24 GB son suficientes; para Q2_K podría caber en GPUs de 12-16 GB.
+- ¿Cabe en GPU de consumo? Sí: las cuantizaciones Q2_K a Q4_K_S caben en tarjetas de 12-16 GB; Q4_K_M y Q5_K_M requieren 24 GB; Q6_K y Q8_0 requieren más de 24 GB o descarga parcial a CPU.
+- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio), dado el formato GGUF; el modelo base en safetensors es compatible con transformers. No se documenta soporte de vLLM o TGI.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| qwen38-minecraft-r4-GGUF (este) | ~26,9 mil M | no disponible | Apache 2.0 | GGUF | VLA especializado en Minecraft, cuantizado por la comunidad |
-| SlowGuess/qwen38-minecraft-r4 | ~26,9 mil M | no disponible | Apache 2.0 | safetensors | Modelo base original del que deriva esta ficha |
-| Alternativas VLA para Minecraft | no disponible | no disponible | no disponible | no disponible | No se dispone de informacion de modelos comparables en la busqueda realizada |
-
-No se dispone de datos suficientes para establecer una comparativa cuantitativa con alternativas de la misma categoria.
+| qwen38-minecraft-r4 (este) | 26,9 B | no disponible | Apache 2.0 | safetensors, GGUF | VLA para Minecraft, solo inglés |
+| SlowGuess/qwen38-minecraft-r4 (base) | 26,9 B | no disponible | Apache 2.0 | safetensors | Modelo original sin cuantizar |
+| mradermacher/qwen38-minecraft-r4-i1-GGUF | 26,9 B | no disponible | Apache 2.0 | GGUF (imatrix) | Variante con cuantizaciones ponderadas |
+| Alternativas VLA abiertas para Minecraft | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la información proporcionada |
 
 ## Limitaciones y advertencias
-
-- Informacion muy escasa: la model card no documenta entrenamiento, contexto, sesgos ni evaluacion; cualquier uso en produccion requiere validacion propia.
-- Especializacion extrema: el modelo esta afinado para Minecraft y es probable que su rendimiento fuera de ese dominio sea pobre.
-- Idioma: solo se declara soporte de ingles.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje; no cuantificado por el autor.
-- Sesgos: no documentados; al entrenarse sobre datos de un videojuego, puede reflejar sesgos de las partidas de origen.
-- Licencia Apache 2.0: permite uso comercial, pero el modelo base y los datos de entrenamiento pueden tener condiciones adicionales no detalladas.
-- Cuantizaciones sin versiones ponderadas/imatrix: la calidad de las cuantizaciones bajas (Q2_K, Q3_K_S) puede degradarse mas de lo habitual.
-- Modelo experimental con cero adopcion registrada: sin garantias de mantenimiento ni soporte.
+- Sesgos conocidos: no documentados; al entrenarse solo en inglés y en un dominio muy específico (Minecraft), el modelo puede presentar un comportamiento limitado fuera de ese contexto.
+- Riesgo de alucinación: no evaluado; en tareas de acción, los errores pueden manifestarse como acciones inválidas o incoherentes más que como texto inventado.
+- Limitaciones de contexto e idioma: solo se declara soporte de inglés y no se publica la longitud de contexto, lo que impide garantizar conversaciones o secuencias largas.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero se recomienda verificar las condiciones del modelo base y del dataset de entrenamiento.
+- Caveats para producción: la información técnica es escasa (sin benchmarks, sin arquitectura detallada, sin contexto), por lo que no se recomienda su uso en producción sin una evaluación propia; las cuantizaciones de baja calidad (Q2_K, Q3_K_M) pueden degradar notablemente el rendimiento de la política.
 
 ## Enlaces
-
-- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/qwen38-minecraft-r4-GGUF
+- Hugging Face (esta versión): https://huggingface.co/mradermacher/qwen38-minecraft-r4-GGUF
 - Modelo base: https://huggingface.co/SlowGuess/qwen38-minecraft-r4
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/qwen38-minecraft-r4-i1-GGUF
+- Página de descargas del cuantizador: https://hf.tst.eu/model#qwen38-minecraft-r4-GGUF
 - Dataset de entrenamiento: https://huggingface.co/datasets/SlowGuess/qwen38-minecraft-m2-data
-- Pagina de resumen de mradermacher para este modelo: https://hf.tst.eu/model#qwen38-minecraft-r4-GGUF
-- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Solicitudes de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Comparativa de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

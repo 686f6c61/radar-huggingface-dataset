@@ -2,113 +2,122 @@
 
 ## Resumen
 
-Swift 1.5 Qwen3.8-27B CHiPS-Uncensored GSQ-RCO es una variante modificada de los ficheros GGUF publicados por UkisAI del modelo Swift 1.5 Qwen3.8-27B GSQ-RCO. El autor, Kujira, parte de los ficheros `IQ2_XS-mtp` e `IQ3_S-mtp` originales y aplica una tecnica propia denominada CHiPS (Causal Head-isolated Projection Steering) para reducir el comportamiento de rechazo (refusal) del modelo, manteniendo el resto de capacidades practicamente intactas. No es una publicacion oficial de UkisAI, Alibaba Cloud ni ISTA-DASLab.
+Swift 1.5 Qwen3.8-27B CHiPS-Uncensored GSQ-RCO es una cuantización GGUF de 27.320.697.856 parámetros derivada del modelo base `ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF`, publicada por el usuario Kujira. No se trata de un modelo entrenado desde cero ni de un finetune convencional: es una modificación quirúrgica de dos ficheros GGUF concretos (las variantes `IQ2_XS-mtp` e `IQ3_S-mtp`) en la que se han reescrito únicamente 4 de los 866 tensores del modelo original para reducir el comportamiento de rechazo (refusal). El resto de tensores, incluida la cabeza MTP (multi-token prediction), permanece byte a byte idéntica al original.
 
-El modelo base tiene 27.320.697.856 parametros (unos 27,3 mil millones) y se presenta unicamente en formato GGUF para llama.cpp, en dos niveles de cuantizacion: IQ2_XS-mtp (8,77 GB) e IQ3_S-mtp (12,12 GB). La edicion CHiPS reescribe solo 4 de los 866 tensores del fichero original, que se recuantizan a sus tipos originales usando la matriz de importancia `imatrix-swift15-v1mix.gguf` del repositorio de UkisAI. El resto de tensores, incluida la cabeza MTP (multi-token prediction), permanecen identicos byte a byte.
+La técnica empleada se denomina CHiPS (Causal Head-isolated Projection Steering): identifica unas pocas cabezas de atención con efecto causal sobre una conducta concreta y modifica solo esas proyecciones, dejando intacto el resto de la red. La receta exacta no está publicada. Según la model card, las frases de rechazo ante 104 peticiones dañinas caen del 93,3 % al 2,9 %, mientras que las métricas de capacidad (GSM8K, MMLU-Pro), el tool calling y la perplejidad se mantienen en el nivel del fichero original.
 
-La relevancia de esta ficha es doble: por un lado, documenta una tecnica de edicion de comportamiento (steering sobre cabezas de atencion) que no requiere reentrenamiento ni ablacion global de direcciones; por otro, advierte de que la receta concreta (que cabezas, con que intensidad y que direccion) no se ha publicado, lo que limita la reproducibilidad y la auditabilidad del resultado.
+El modelo es relevante para quienes necesitan un LLM de razonamiento de ~27B con decodificación especulativa vía MTP, ejecutable en llama.cpp, y con el filtrado de seguridad aligerado. Conviene subrayar que no es un lanzamiento oficial de UkisAI, Alibaba Cloud ni ISTA-DASLab, y que la model card advierte explícitamente de que no cuenta con su respaldo. La información sobre idiomas, datos de entrenamiento y arquitectura interna del modelo base no está disponible en la documentación proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Qwen3.8), con cabeza MTP; detalles internos no disponibles |
+| Arquitectura | Transformer (familia Qwen3.8) con cabeza MTP (multi-token prediction); detalles internos no disponibles |
 | Parametros totales | 27.320.697.856 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | IQ2_XS-mtp (8,77 GB) e IQ3_S-mtp (12,12 GB), GGUF |
-| Idiomas soportados | no disponible (la evaluacion del autor usa ingles y japones) |
-| Licencia | swift-open-license-1.0 (etiquetada como `other` en Hugging Face) |
+| Tipos de cuantizacion | IQ2_XS-mtp (8,77 GB) e IQ3_S-mtp (12,12 GB); sin otras tiers publicadas |
+| Idiomas soportados | no disponible (las evaluaciones se hicieron en inglés y japonés) |
+| Licencia | swift-open-license-1.0 (etiqueta `license: other`); incluye LICENSE-APACHE-2.0 y NOTICE |
 | Formato de pesos | GGUF (llama.cpp) |
+| Tamano del repo | 20,9 GB |
+| Tensores | 866, de los cuales 4 reescritos |
+| Imatrix utilizada | `imatrix-swift15-v1mix.gguf` (Swift V1MIX) |
+| Vision | no incluida (sin proyector visual) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune del Swift 1.5 Qwen3.8-27B GSQ-RCO de UkisAI, que a su vez deriva de la familia Qwen3.8. La informacion disponible no detalla la composicion del dataset de entrenamiento original, el numero de tokens, ni si hubo RLHF, DPO u otras fases de alineamiento. La arquitectura se describe en los tags como `qwen3_8` con soporte de `mtp` (multi-token prediction), lo que sugiere una cabeza adicional de prediccion multiple utilizada para decodificacion especulativa o aceleracion de inferencia.
+El modelo base pertenece a la familia Qwen3.8 y se distribuye con una cabeza MTP (multi-token prediction), una innovación de decodificación especulativa que permite proponer varios tokens por paso y verificar su aceptación, acelerando la generación. La model card no detalla el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO; esos datos figuran en la documentación del modelo base de UkisAI, no en la de esta ficha.
 
-La innovacion tecnica de esta publicacion no esta en el entrenamiento sino en la edicion post-hoc. CHiPS (Causal Head-isolated Projection Steering) opera en tres pasos: primero mide una direccion en el estado interno del modelo comparando dos conjuntos de entradas; despues selecciona cabezas de atencion de forma causal, desactivandolas una a una y midiendo la caida en la puntuacion del comportamiento objetivo; finalmente proyecta unicamente la componente de la direccion dentro de esas cabezas, con una intensidad fijada por cabeza, dejando intacto el resto de lo que cada cabeza escribe en el residual stream. Frente a la ablacion de una direccion en todas las capas, este enfoque toca una fraccion minima del modelo. Los tensores modificados se recuantizaron a sus tipos originales con la imatrix del repositorio de origen. La receta concreta (cabezas elegidas, intensidades y direccion) no se ha publicado.
+La modificación de Kujira no reentrena pesos: parte de los ficheros GGUF originales, identifica 4 tensores (cabezas de atención seleccionadas por su efecto causal sobre el rechazo) y los recuantiza a su tipo original con la imatrix del repositorio base. El resto de tensores, incluida la cabeza MTP, queda byte a byte idéntico. Los metadatos añaden claves `quantize.imatrix.*` generadas por `llama-quantize`. La técnica CHiPS se describe como "Causal Head-isolated Projection Steering": aislamiento de cabezas por causalidad y steering de proyecciones, con una receta no publicada. La edición se ajustó sobre el fichero IQ2_XS-mtp; el IQ3_S-mtp comparte la edición pero no fue evaluado, y el autor advierte de que la recuantización puede alterar cuánto de una edición tan pequeña sobrevive.
 
 ## Capacidades
 
-- Generacion de texto conversacional de un solo turno y multi-turno.
-- Razonamiento explicito con modo de pensamiento (el modelo genera cadenas de razonamiento antes de la respuesta final).
-- Razonamiento matematico: 94,0% de acierto en 250 preguntas de GSM8K segun la evaluacion del autor.
-- Conocimiento general y razonamiento experto: 73,7% en 300 preguntas de MMLU-Pro.
-- Tool calling / function calling: 100% de llamada correcta cuando se espera, 100% de nombre correcto, 100% de argumentos completos, y 100% de ausencia de llamada cuando no se necesita (en el conjunto de 40 tareas del autor).
-- Capacidad de continuar tras recibir el resultado de una herramienta (100% en la evaluacion).
-- Tareas de formato largo (hasta 3.072 tokens nuevos en la prueba) con baja tasa de bucles.
-- Comportamiento de rechazo reducido: las frases de rechazo en 104 peticiones daninas caen del 93,3% al 2,9%.
-- Capacidades multilingues: no documentadas; la evaluacion cubre ingles y japones.
-- Vision: no incluida (no se proporciona proyector visual y no se probo).
+- Generación de texto conversacional de un solo turno y multi-turno.
+- Razonamiento explícito (modo thinking) con cadenas de razonamiento extensas; en MMLU-Pro un 10,7 % de las respuestas alcanza el límite de 4.096 tokens.
+- Razonamiento matemático: 94,0 % de acierto en 250 preguntas de GSM8K.
+- Conocimiento general y de nivel avanzado: 73,7 % en 300 preguntas de MMLU-Pro.
+- Tool calling / function calling: 100 % de llamada correcta cuando se espera, 100 % de nombre correcto, 100 % de argumentos completos y 100 % de no-llamada cuando no se necesita (frente al 90 % del original).
+- Continuación tras resultado de herramienta: 100 %.
+- Tareas de formato largo (hasta 3.072 tokens nuevos): sin bucles de periodo corto ni largo en la evaluación.
+- Multilingüe: evaluado en inglés y japonés; el resto de idiomas no está documentado.
+- Comportamiento de rechazo reducido: 2,9 % de frases de rechazo ante peticiones dañinas, frente al 93,3 % del original.
+- Sin capacidades de visión (no se incluye proyector visual y no se probó).
 
 ## Casos de uso
 
-- Asistentes conversacionales sin filtros editoriales: el modelo mantiene la calidad de respuesta del original pero reduce drasticamente las negativas, util para entornos de investigacion sobre seguridad, red teaming y analisis de comportamiento de modelos.
-- Evaluacion de robustez y alineamiento: sirve como contrapunto "decensored" frente al modelo original para medir cuanto de una respuesta depende de la politica de rechazo y cuanto de la capacidad real del modelo.
-- Razonamiento matematico asistido: con 94,0% en GSM8K, es adecuado para tutoria o verificacion de problemas aritmeticos de varios pasos en un entorno controlado.
-- Integracion en pipelines de agentes con tool calling: la fiabilidad del 100% en nombre y argumentos de llamada permite usarlo como planificador de herramientas en flujos automatizados.
-- Procesamiento de documentos largos con razonamiento: la ventana de contexto no esta publicada, pero el modelo soporta tareas de formato largo con baja tasa de bucles (0% en la evaluacion), lo que lo hace util para resumenes e informes extendidos.
-- Despliegue en hardware de consumo: con 8,77 GB en IQ2_XS, cabe en GPUs de 12 GB o incluso en configuraciones con offload parcial a CPU, lo que facilita prototipado local.
-- Generacion de contenido en japones e ingles: los conjuntos de evaluacion del autor estan en estos dos idiomas, por lo que son los mejor validados.
+- Asistente de razonamiento matemático en producción: con 94,0 % en GSM8K y cadenas de razonamiento estables, encaja en tutoría automática, verificación de cálculos y generación de problemas resueltos paso a paso.
+- Agente con tool calling en pipelines de automatización: el 100 % de llamadas correctas con nombre y argumentos completos permite integrarlo en orquestadores de agentes que consultan APIs, bases de datos o servicios internos.
+- Atención al cliente multi-turno: el modelo mantiene coherencia conversacional y no genera bucles; requiere fijar `max_tokens` con holgura porque las respuestas largas pueden agotar el límite.
+- Generación de documentación técnica y textos largos: en tareas de formato largo alcanza el límite en solo el 12,5 % de los casos (frente al 20,8 % del original) y sin bucles, lo que lo hace apto para redacción asistida.
+- Investigación sobre alineación y seguridad: la reducción controlada del rechazo con preservación de capacidad lo convierte en un sujeto de estudio para medir sesgos de seguridad, calibrar clasificadores o analizar comportamiento ante JailbreakBench.
+- Despliegue en hardware de consumo: la variante IQ2_XS (8,77 GB) cabe en GPUs de 12 GB y en configuraciones con RAM unificada; útil para prototipos locales, demos y entornos sin acceso a la nube.
+- Evaluación comparativa de técnicas de steering: sirve como referencia para contrastar CHiPS frente a abliteration clásica, midiendo el coste en capacidad y en longitud de respuesta.
 
 ## Benchmarks y rendimiento
 
-Todos los numeros corresponden al fichero IQ2_XS-mtp, comparado con el IQ2_XS-mtp original, con los mismos ajustes y semillas. El fichero IQ3_S-mtp no fue evaluado.
+Todos los datos corresponden al fichero IQ2_XS-mtp, medidos una sola vez con los mismos ajustes y semillas que el original. El IQ3_S-mtp no fue evaluado.
 
-| Benchmark | Original | Este modelo |
+| Prueba | Original | Este modelo |
 |---|---|---|
-| GSM8K (250 preguntas, accuracy) | 94,8% (237) | 94,0% (235) |
-| MMLU-Pro (300 preguntas, accuracy) | 73,7% | 73,7% |
-| Frases de rechazo en peticiones daninas (104) | 93,3% | 2,9% |
-| Frases de rechazo en peticiones inocuas (100) | 2% | 2% |
-| Bucles en peticiones daninas / inocuas | 0% / 0% | 0% / 0% |
-| Respuestas vacias en peticiones daninas / inocuas | 0% / 1% | 0% / 2% |
-| Alcanzan el limite de tokens en peticiones daninas / inocuas | 0% / 1% | 13,5% / 2% |
-| Tokens medios en peticiones daninas / inocuas | 297 / 566 | 992 / 584 |
-| Tareas largas: alcanzan limite de tokens | 20,8% (5) | 12,5% (3) |
-| Tareas largas: bucles de periodo corto | 4,2% (1) | 0% |
-| Tareas largas: respuestas vacias | 12,5% (3) | 4,2% (1) |
+| Frases de rechazo, peticiones dañinas (104) | 93,3 % | 2,9 % |
+| Frases de rechazo, peticiones inocuas (100) | 2 % | 2 % |
+| Bucles (dañinas / inocuas) | 0 % / 0 % | 0 % / 0 % |
+| Respuestas vacías (dañinas / inocuas) | 0 % / 1 % | 0 % / 2 % |
+| Alcanzan el límite de tokens (dañinas / inocuas, 1.536) | 0 % / 1 % | 13,5 % / 2 % |
+| Tokens medios (dañinas / inocuas) | 297 / 566 | 992 / 584 |
+| Tareas largas: alcanzan el límite (3.072) | 20,8 % (5) | 12,5 % (3) |
+| Tareas largas: bucles de periodo corto | 4,2 % (1) | 0 % |
+| Tareas largas: respuestas vacías | 12,5 % (3) | 4,2 % (1) |
 | Tareas largas: tokens medios | 1.961 | 1.909 |
-| Tool calling: llamada esperada / nombre correcto / argumentos completos | 100% / 100% / 100% | 100% / 100% / 100% |
-| Tool calling: sin llamada cuando no se necesita | 90% (9 de 10) | 100% |
-| Tool calling: continua tras resultado | 100% | 100% |
+| Tool calling: llamada esperada / nombre / argumentos | 100 % / 100 % / 100 % | 100 % / 100 % / 100 % |
+| Tool calling: sin llamada cuando no se necesita | 90 % (9/10) | 100 % |
+| Tool calling: continúa tras resultado | 100 % | 100 % |
+| GSM8K (250 preguntas, 4.096 tokens) | 94,8 % (237) | 94,0 % (235) |
+| GSM8K: alcanzan el límite | 0 % | 0 % |
+| GSM8K: tokens medios | 330 | 336 |
+| MMLU-Pro (300 preguntas, 4.096 tokens) | 73,7 % (221) | 73,7 % (221) |
+| MMLU-Pro: alcanzan el límite | 8,3 % (25) | 10,7 % (32) |
 
-El autor advierte que las diferencias de una o dos tareas estan dentro de lo que produce el muestreo, por lo que deben leerse como "mismo nivel" y no como mejora. En MMLU-Pro, 32 de las 300 preguntas alcanzan el limite de 4.096 tokens en este modelo frente a 25 en el original, lo que indica razonamientos algo mas largos en preguntas dificiles.
+En JailbreakBench, con 96 peticiones no usadas en el ajuste y evaluadas por GPT-6 como juez, el original rechazó el 95,8 % y este fichero el 4,2 %, con 6 respuestas parciales adicionales; cabezas aleatorias con las mismas intensidades se quedaron en 94,8 % y 95,8 %. Las diferencias de una o dos tareas en las tablas de tareas largas y tool calling deben leerse como "mismo nivel", no como mejora.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 8,8 GB para IQ2_XS-mtp y 12,1 GB para IQ3_S-mtp, mas overhead de contexto KV cache.
-- GPU recomendadas: RTX 4090 (24 GB), RTX 4080 (16 GB), A100 (40/80 GB), H100 (80 GB). Para IQ3_S es comoda una GPU de 16 GB; para IQ2_XS basta con 12 GB.
-- Cabe en GPU de consumo: si, en RTX 3060 12 GB, RTX 4070, RTX 4080 y RTX 4090 para IQ2_XS; IQ3_S requiere al menos 16 GB o offload parcial a CPU.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo OpenAI.
-- Latencia y throughput: no disponibles. La presencia de cabeza MTP sugiere soporte de decodificacion especulativa, pero no se publican cifras de tokens por segundo.
+- VRAM estimada: ~8,8 GB para IQ2_XS-mtp y ~12,1 GB para IQ3_S-mtp, más overhead de contexto KV cache (no cuantificado por defecto en llama.cpp).
+- GPU recomendadas: RTX 4090 (24 GB) para IQ3_S con contexto amplio; RTX 3060 12 GB o RTX 4070 para IQ2_XS; A100/H100 solo si se necesita throughput alto o contextos muy largos.
+- Cabe en GPU de consumo: sí, IQ2_XS en 12 GB y IQ3_S en 16 GB con margen ajustado; también en Apple Silicon con memoria unificada.
+- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`), Ollama, LM Studio y cualquier runtime compatible con GGUF; la model card indica `endpoints_compatible`.
+- Latencia y throughput: no disponibles. La cabeza MTP habilita decodificación especulativa, pero no se publican cifras de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| Swift 1.5 Qwen3.8-27B CHiPS-Uncensored (este) | 27,3 B | no disponible | swift-open-license-1.0 | GGUF | Refusal reducido al 2,9%; GSM8K 94,0%; MMLU-Pro 73,7% |
-| Swift 1.5 Qwen3.8-27B GSQ-RCO (original de UkisAI) | 27,3 B | no disponible | swift-open-license-1.0 | GGUF | Refusal 93,3%; GSM8K 94,8%; MMLU-Pro 73,7% |
-| Qwen3.8 27B (base de la familia) | ~27 B | no disponible | no disponible | no disponible | Modelo de origen; sin datos de evaluacion en la informacion proporcionada |
+| Modelo | Parametros | Contexto | GSM8K | MMLU-Pro | Licencia | Formato |
+|---|---|---|---|---|---|---|
+| Swift 1.5 Qwen3.8-27B CHiPS (este) | 27,3B | no disponible | 94,0 % | 73,7 % | swift-open-license-1.0 | GGUF IQ2/IQ3 |
+| Swift 1.5 Qwen3.8-27B GSQ-RCO (original) | 27,3B | no disponible | 94,8 % | 73,7 % | swift-open-license-1.0 | GGUF (más tiers) |
+| Otros modelos de ~27B de la familia Qwen3.8 | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de benchmarks de terceros ni de otros modelos comparables en la informacion proporcionada.
+La comparativa con alternativas de terceros no está disponible en la información proporcionada; solo se dispone de los datos del modelo base frente al modificado.
 
 ## Limitaciones y advertencias
 
-- La receta CHiPS no se publica: no se sabe que cabezas se modificaron, con que intensidad ni cual es la direccion. Esto impide auditar el cambio y reproducirlo.
-- El fichero IQ3_S-mtp no fue evaluado; el autor advierte que la recuantizacion puede alterar cuanto de la edicion sobrevive, por lo que su comportamiento puede diferir del IQ2_XS.
-- El 13,5% de las respuestas a peticiones daninas alcanza el limite de 1.536 tokens de la prueba, con una media de 992 tokens frente a 297 del original. Para respuestas completas hay que elevar `max_tokens`.
-- Riesgo de alucinacion: no cuantificado en la informacion disponible; el modelo mantiene el nivel de perplejidad del original segun el autor.
-- Sesgos conocidos: no documentados. La reduccion de rechazos implica que el modelo puede producir contenido danino, lo que exige moderacion externa en produccion.
-- Idiomas: solo se validaron ingles y japones en la evaluacion; el rendimiento en castellano no esta medido.
-- Vision no incluida ni probada: no hay proyector visual en el repositorio.
-- Licencia: swift-open-license-1.0, etiquetada como `other`. Es necesario revisar `LICENSE`, `LICENSE-APACHE-2.0` y `NOTICE` antes de uso comercial; la informacion disponible no aclara las restricciones concretas.
-- No es una publicacion oficial de UkisAI, Alibaba Cloud ni ISTA-DASLab; el nombre "Swift" se usa solo para indicar la procedencia.
-- El modelo tiene 0 descargas y 0 likes en el momento de la consulta, sin validacion independiente de la comunidad.
+- No es un lanzamiento oficial: UkisAI, Alibaba Cloud e ISTA-DASLab no lo han hecho ni lo respaldan; "Swift" solo indica procedencia.
+- La receta CHiPS no está publicada, lo que impide auditar el método y reproducir la edición.
+- El IQ3_S-mtp no fue evaluado; su comportamiento puede diferir del IQ2_XS-mtp porque la recuantización puede alterar cuánto de la edición sobrevive.
+- Las respuestas a peticiones dañinas son mucho más largas (992 tokens de media frente a 297) y el 13,5 % alcanza el límite de 1.536 tokens; con `max_tokens` bajo se pueden truncar.
+- En preguntas difíciles el razonamiento se alarga: 32 de 300 preguntas de MMLU-Pro llegan al límite de 4.096 tokens, frente a 25 del original.
+- La reducción del rechazo conlleva riesgo de generar contenido dañino, sesgado o inapropiado; no es apto para despliegues públicos sin filtros externos.
+- Riesgo de alucinación no cuantificado en la documentación; aplican las limitaciones habituales de un LLM de 27B.
+- Idiomas soportados no documentados; las pruebas se limitan a inglés y japonés.
+- Sin visión: no se incluye proyector visual y no se probó.
+- La licencia swift-open-license-1.0 es "other" y debe revisarse el fichero LICENSE antes de uso comercial; incluye términos Apache-2.0 y NOTICE con atribuciones.
+- Las evaluaciones se ejecutaron una sola vez por conjunto, con conjuntos de peticiones no publicados, lo que limita la reproducibilidad estadística.
+- Solo se ofrecen dos tiers de cuantización; no hay versiones de mayor precisión (Q4, Q5, Q8) en este repositorio.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Kujira/Swift-1.5-Qwen3.8-27B-CHiPS-Uncensored-GSQ-RCO-GGUF
-- Modelo base en Hugging Face: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF
-- Matriz de importancia: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF/blob/main/imatrix-swift15-v1mix.gguf
-- Paper referenciado (arxiv:2604.18556): no disponible en la informacion proporcionada
-- Paper referenciado (arxiv:2605.00649): no disponible en la informacion proporcionada
+- Modelo base: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF
+- Imatrix del repositorio base: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF/blob/main/imatrix-swift15-v1mix.gguf
+- Artículo explicativo de CHiPS: https://balaena01.github.io/chips-steering/
+- Referencias arXiv citadas en los tags: arxiv:2604.18556 y arxiv:2605.00649 (sin URL directa en la información disponible)

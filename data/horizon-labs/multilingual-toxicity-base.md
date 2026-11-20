@@ -2,140 +2,107 @@
 
 ## Resumen
 
-Multilingual Toxicity (base, 308M) es un clasificador multietiqueta de comentarios toxicos desarrollado por Horizon-Labs. Reutiliza las siete etiquetas del conocido proyecto Detoxify (toxicity, severe_toxicity, obscene, threat, insult, identity_attack, sexual_explicit) y las extiende a 33 idiomas ademas del ingles, con una unica cabecera de clasificacion. Esta construido sobre jhu-clsp/mmBERT-base, un encoder de la familia ModernBERT afinado especificamente para cobertura multilingue, y suma 307.535.623 parametros (unos 308M).
+Multilingual Toxicity (base) es un clasificador multi-etiqueta de comentarios tóxicos desarrollado por Horizon-Labs. Se construye sobre el encoder multilingüe mmBERT-base de JHU (307,5 millones de parámetros) y reproduce el conjunto de etiquetas de Detoxify: toxicity, severe_toxicity, obscene, threat, insult, identity_attack y sexual_explicit. Cada etiqueta recibe una probabilidad independiente mediante sigmoide, por lo que el modelo puede marcar simultáneamente varias dimensiones de toxicidad en un mismo texto.
 
-El problema que resuelve es concreto: la mayoria de los clasificadores de toxicidad de referencia (toxic-bert, unbiased-toxic-roberta) solo funcionan en ingles, mientras que las alternativas multilingues suelen reducirse a una unica etiqueta binaria toxic/no toxic. Este modelo ofrece el esquema completo de siete etiquetas de Detoxify en 34 idiomas, con probabilidad independiente por etiqueta mediante sigmoide, lo que permite umbrales distintos por categoria y por idioma.
+El modelo resuelve un problema concreto de moderación de contenido en entornos multilingües: los clasificadores de toxicidad de referencia (unitary/unbiased-toxic-roberta, unitary/toxic-bert) están entrenados y evaluados casi exclusivamente en inglés, y su rendimiento cae drásticamente fuera de ese idioma. Esta versión cubre inglés y otras 33 lenguas, incluido español, y se distribuye con licencia Apache-2.0, pesos safetensors y ONNX (incluida una variante int8 para CPU y navegador mediante transformers.js).
 
-Es relevante ahora porque la moderacion de contenido en plataformas con audiencias multilingues es exigida por normativas como la DSA europea, y porque el modelo se distribuye bajo licencia Apache-2.0 con pesos en safetensors y ONNX, incluyendo una version cuantizada a int8 de 641 MB que puede ejecutarse en CPU y directamente en el navegador con transformers.js. La model card reporta un AUC de 0,854 en el benchmark multilingue TextDetox (15 idiomas) y un AUC de 0,988 en la media de seis etiquetas de Civil Comments. El repositorio se publicó el 1 de octubre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 likes.
+Su relevancia actual radica en que es un reemplazo directo de Detoxify en pipelines existentes: las etiquetas coinciden con las que esperan los escáneres de toxicidad de LLM Guard, lo que permite moderar prompts y respuestas de LLM en múltiples idiomas sin cambiar la lógica de integración. Existe además una variante más pequeña y rápida (multilingual-toxicity-small, 141M).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder (familia ModernBERT, derivado de jhu-clsp/mmBERT-base) |
-| Parametros totales | 307.535.623 (aproximadamente 308M) |
-| Parametros activos | no aplica: no es un modelo MoE |
-| Longitud de contexto | no disponible en la informacion proporcionada |
-| Tipos de cuantizacion | int8 (ONNX, embeddings cuantizados); no se documentan otras |
-| Idiomas soportados | 33 codigos en los metadatos (en, de, fr, es, pt, it, nl, pl, ru, uk, cs, ro, sv, da, fi, hu, el, tr, ar, he, fa, hi, bn, ur, zh, ja, ko, vi, th, id, sw, am, tt); el autor indica ingles mas otros 33 idiomas |
+| Arquitectura | Transformer encoder (ModernBERT, mmBERT-base) para clasificación de texto multi-etiqueta |
+| Parametros totales | 307.535.623 |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible (la model card usa truncation a 512 tokens en los ejemplos de LLM Guard) |
+| Tipos de cuantizacion | ONNX int8 (model_quantized.onnx, 641 MB, embeddings int8); pesos fp32 en safetensors; dtype q8 en transformers.js |
+| Idiomas soportados | Multilingüe: en, de, fr, es, pt, it, nl, pl, ru, uk, cs, ro, sv, da, fi, hu, el, tr, ar, he, fa, hi, bn, ur, zh, ja, ko, vi, th, id, sw, am, tt (34 lenguas) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors y ONNX (onnx/model_quantized.onnx) |
-| Tarea (pipeline) | text-classification (clasificacion multietiqueta) |
-| Numero de etiquetas | 7 (toxicity, severe_toxicity, obscene, threat, insult, identity_attack, sexual_explicit) |
-| Modelo base | jhu-clsp/mmBERT-base |
-| Dataset de entrenamiento | google/civil_comments (CC0) mas traducciones |
-| Tamano del repositorio | 3,1 GB |
-| Libreria | transformers |
-| Fecha de publicacion | 1 de octubre de 2026 |
+| Formato de pesos | safetensors, ONNX (fp32 e int8) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un encoder transformer de tipo ModernBERT afinado como clasificador multietiqueta. Parte de mmBERT-base, la variante multilingue de la familia ModernBERT, y anade una cabeza de clasificacion con siete salidas independientes activadas por sigmoide, el mismo esquema que Detoxify. Esto significa que las etiquetas no son mutuamente excluyentes: un mismo comentario puede recibir simultaneamente valores altos en obscene, insult y threat, y cada una se evalua con su propio umbral.
+El modelo es un encoder transformer de la familia ModernBERT, concretamente una adaptación de jhu-clsp/mmBERT-base, con una cabeza de clasificación multi-etiqueta de siete salidas y activación sigmoide independiente por etiqueta. No es un modelo generativo: produce probabilidades por clase, no texto. La elección de un encoder de 308M parámetros sitúa el modelo en un punto intermedio entre los clasificadores ligeros de ~110-125M (toxic-bert, unbiased-toxic-roberta) y modelos mucho más grandes, buscando mejor cobertura multilingüe sin disparar el coste de inferencia.
 
-Los datos de entrenamiento provienen del corpus Civil Comments (licencia CC0), que es en ingles, complementado con traducciones para cubrir el resto de idiomas. La model card no detalla el numero de tokens de entrenamiento, la composicion exacta de las traducciones ni si se aplicaron etapas de RLHF o DPO, algo que tampoco tendria sentido en un clasificador supervisado. La evaluacion se realizo con los benchmarks excluidos del entrenamiento: la model card afirma que se eliminaron los textos de entrenamiento que aparecian en los conjuntos de evaluacion. El autor reporta medias sobre dos semillas de entrenamiento, lo que aporta una estimacion de estabilidad.
-
-El artefacto de despliegue mas ligero es onnx/model_quantized.onnx, con embeddings cuantizados a int8 y un tamano de 641 MB; la model card indica que las probabilidades difieren de las de fp32 en 0,0008 de media sobre 448 textos de prueba. Existe tambien una variante reducida, Horizon-Labs/multilingual-toxicity-small (141M), y un modelo hermano orientado a peticiones daninas a LLM, Horizon-Labs/content-safety-guard-small.
+El entrenamiento combina el dataset Civil Comments (licencia CC0) con traducciones multilingües publicadas como Horizon-Labs/civil-comments-multilingual. La model card indica que los benchmarks se usaron solo para evaluación y que se eliminaron del entrenamiento los textos que también aparecen en ellos. No se detalla en la información disponible el número exacto de tokens de entrenamiento, la composición precisa del dataset traducido ni si se aplicaron técnicas de ajuste adicionales (RLHF/DPO no aplican a un clasificador; no se menciona destilación ni calibración específica más allá de la cuantización int8). La innovación técnica destacable es la cuantización int8 de embeddings en ONNX, con una desviación media de 0,0008 en probabilidad respecto a fp32 sobre 448 textos de prueba, lo que habilita despliegue en CPU y en navegador.
 
 ## Capacidades
 
-- Clasificacion multietiqueta de toxicidad con siete etiquetas independientes: toxicity, severe_toxicity, obscene, threat, insult, identity_attack y sexual_explicit.
-- Cobertura multilingue declarada de 33 idiomas ademas del ingles, incluyendo arabe, hebreo, persa, hindi, bengali, urdu, chino, japones, coreano, vietnamita, thai, indonesio, suajili, amharico y tatara, entre otros.
-- Deteccion de toxicidad por identidad (identity_attack), relevante para moderacion de discurso de odio.
-- Inferencia por lotes a traves de la API pipeline de transformers con top_k=None para obtener todas las etiquetas.
-- Ejecucion en CPU y en navegador: los ficheros ONNX cuantizados permiten desplegar el modelo del lado del cliente con transformers.js (dtype "q8").
-- Umbral configurable por plataforma: la model card sugiere 0,5 como punto de partida, pero recomienda ajustarlo, especialmente en idiomas distintos del ingles.
-- No soporta tool calling ni function calling: es un encoder de clasificacion, no un modelo generativo.
-- No soporta razonamiento multi-paso, agentes, generacion de codigo, matematicas ni vision.
-- No genera texto: su salida son probabilidades por etiqueta, no explicaciones ni resumenes.
-- El modelo esta pensado para comentarios ofensivos, no para peticiones peligrosas a un LLM (armas, autolesion); para ese caso el autor remite a Horizon-Labs/content-safety-guard-small.
+- Clasificación multi-etiqueta de toxicidad con siete etiquetas independientes: toxicity, severe_toxicity, obscene, threat, insult, identity_attack y sexual_explicit.
+- Detección de toxicidad en inglés y 33 lenguas adicionales, incluido español, con ejemplos explícitos en alemán y español en la model card.
+- Puntuación por umbral configurable: la recomendación por defecto es marcar con toxicity >= 0.5, pero la model card advierte que los textos no ingleses tienden a puntuar más bajo, por lo que sugiere umbrales inferiores para contenido multilingüe.
+- Integración con LLM Guard como escáner de entrada y salida (input_scanners.Toxicity y output_scanners.Toxicity), sustituyendo el modelo inglés por defecto.
+- Ejecución en navegador mediante transformers.js con dtype q8.
+- Inferencia en CPU mediante los ficheros ONNX incluidos.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso, visión ni audio: es un clasificador, no un modelo generativo.
 
 ## Casos de uso
 
-- Moderacion de comentarios en plataformas multilingues: el modelo puntua cada comentario en siete categorias con una sola pasada de encoder, lo que permite aplicar reglas distintas (por ejemplo, ocultar automaticamente threat por encima de 0,8 y enviar a revision humana insult por encima de 0,5) sin mantener un modelo separado por idioma.
-- Cumplimiento normativo en plataformas europeas: para obligaciones de moderacion de contenido bajo la DSA, el modelo aporta trazabilidad por etiqueta y funciona bajo licencia Apache-2.0, lo que evita las restricciones de uso comercial de las licencias OpenRAIL en despliegues corporativos.
-- Moderacion en el navegador o en el borde de la red: con onnx/model_quantized.onnx (641 MB) y transformers.js, la clasificacion puede ejecutarse en el cliente, de modo que el texto del usuario no sale del dispositivo, util para aplicaciones de mensajeria o foros con requisitos estrictos de privacidad.
-- Pre-filtrado en colas de anotacion humana: el modelo actua como primera etapa para ordenar por probabilidad de toxicidad y reducir el volumen que revisan los moderadores, usando el vector completo de siete etiquetas para priorizar las categorias mas graves.
-- Investigacion en ciencias sociales y medios: medicion comparable de toxicidad sobre corpus en 33 idiomas con un unico modelo, en lugar de mezclar clasificadores en ingles con traducciones automaticas que introducen sesgo.
-- Deteccion de discurso de odio por identidad: la etiqueta identity_attack permite construir paneles de seguimiento especificos para ataques dirigidos a colectivos, siempre que se calibre el umbral por idioma debido al menor F1 reportado en textos no ingleses.
-- Filtro previo en pipelines de datos para entrenamiento de LLM: descartar o etiquetar comentarios toxicos en un corpus multilingue antes de usarlo como datos de preentrenamiento o de ajuste, con coste de computo muy bajo al ser un encoder de 308M.
-- Analitica de comunidad en tiempo real: al ser un modelo pequeno, puede desplegarse con ONNX Runtime en CPU junto al backend de la aplicacion para puntuar cada mensaje en el momento de publicacion y alimentar metricas de salud de la comunidad.
+- Moderación de comentarios en foros y redes sociales: el modelo puntúa cada comentario con siete etiquetas y permite aplicar políticas diferenciadas (por ejemplo, bloquear insultos automáticamente y revisar manualmente identity_attack) en comunidades multilingües sin desplegar un clasificador por idioma.
+- Moderación de prompts y respuestas de LLM: integrado en LLM Guard como escáner de entrada y salida, filtra contenido tóxico en las interacciones con un chatbot en varios idiomas; la model card confirma pruebas correctas con llm-guard 0.3.16 en inglés, alemán, español y ruso.
+- Moderación en el navegador o en el cliente: los ficheros ONNX int8 y el soporte de transformers.js permiten ejecutar la clasificación localmente en la web, sin enviar el texto del usuario a un servidor, lo que reduce latencia y mejora la privacidad.
+- Filtrado previo de datasets de entrenamiento: al ser un clasificador rápido y multilingüe, puede usarse para limpiar corpus de comentarios antes de entrenar modelos generativos, marcando ejemplos con alta probabilidad de insulto, amenaza u obscenidad.
+- Triaje en sistemas de atención al cliente: clasificar mensajes de usuarios en español y otras lenguas para enrutar automáticamente los casos con threat o identity_attack a equipos de escalado, reduciendo el tiempo de respuesta ante abusos.
+- Investigación en detección de toxicidad multilingüe: el modelo sirve como línea base reproducible (Apache-2.0, pesos abiertos, benchmarks publicados sobre Civil Comments y TextDetox) para comparar nuevas aproximaciones en 15 lenguas.
+- Análisis de reputación y monitorización de menciones de marca: procesar grandes volúmenes de comentarios públicos en múltiples idiomas con inferencia por lotes en CPU (ONNX) y agregar las puntuaciones por etiqueta para detectar picos de toxicidad.
 
 ## Benchmarks y rendimiento
 
-Los datos proceden de la model card. La evaluacion en Civil Comments usa 20.000 comentarios aleatorios en ingles con etiquetas binarizadas a un umbral de 0,5 y ROC AUC por etiqueta; la media se calcula sobre las seis etiquetas que tienen al menos 20 positivos (severe_toxicity no alcanza ese umbral). La evaluacion TextDetox usa el dataset textdetox/multilingual_toxicity_dataset, con clasificacion binaria toxic/no toxic en 15 idiomas y 1.000 textos equilibrados por idioma.
+Datos publicados en la model card. Civil Comments test: 20.000 comentarios en inglés, ROC AUC por etiqueta con binarización a >= 0,5; la media se calcula sobre las 6 etiquetas con al menos 20 positivos (severe_toxicity no alcanza ese umbral). TextDetox (textdetox/multilingual_toxicity_dataset): clasificación binaria tóxico/no tóxico en 15 lenguas, 1.000 textos balanceados por lengua; se reporta ROC AUC de la probabilidad de toxicity y F1 a umbral 0,5.
 
-| Modelo | Licencia | Civil Comments, AUC medio (6 etiquetas) | Civil Comments, AUC toxicidad | TextDetox (15 idiomas), AUC | TextDetox, F1 @ 0,5 | Etiquetas |
+| Modelo | Licencia | Civil Comments, AUC medio (6 etiquetas) | Civil Comments, AUC toxicity | TextDetox (15 lenguas), AUC | TextDetox, F1 @ 0,5 | Etiquetas |
 |---|---|---|---|---|---|---|
-| multilingual-toxicity-base (308M, este modelo) | Apache-2.0 | 0,988 | 0,971 | 0,854 | 0,433 | 7 etiquetas Detoxify, multilingue |
-| Horizon-Labs/multilingual-toxicity-small (141M) | Apache-2.0 | 0,988 | 0,972 | 0,835 | 0,547 | 7 etiquetas Detoxify, multilingue |
-| unitary/unbiased-toxic-roberta (125M) | Apache-2.0 | 0,985 | 0,969 | 0,588 | 0,086 | 7 etiquetas Detoxify + etiquetas de identidad, ingles |
-| unitary/toxic-bert (110M) | Apache-2.0 | 0,946 | 0,926 | 0,623 | 0,142 | 6 etiquetas, ingles |
-| s-nlp/roberta_toxicity_classifier (125M) | OpenRAIL++ | 0,975 | 0,975 | 0,642 | 0,092 | binaria, ingles |
-| martin-ha/toxic-comment-model (67M) | no indicada | 0,943 | 0,943 | 0,572 | 0,160 | binaria, ingles |
-| unitary/multilingual-toxic-xlm-roberta (278M) | Apache-2.0 | 0,961 | 0,961 | 0,678 | 0,352 | 1 etiqueta, multilingue |
-| citizenlab/distilbert-base-multilingual-cased-toxicity (135M) | no indicada | 0,843 | 0,843 | 0,698 | 0,277 | binaria, multilingue |
-| textdetox/xlmr-large-toxicity-classifier (560M) | OpenRAIL++ | 0,869 | 0,869 | 0,922 | 0,878 | binaria, multilingue; entrenado con datos TextDetox |
-
-Notas de la model card sobre estos resultados:
-- Las medias sobre dos semillas de entrenamiento son: small, Civil Comments AUC medio 0,988 / toxicidad 0,972 / TextDetox 0,838; base, 0,988 / 0,972 / 0,855.
-- Segun el autor, ningun modelo supera a este en la media de AUC de seis etiquetas de Civil Comments, aunque advierte que los modelos de una sola etiqueta se puntuan sobre esa unica etiqueta, por lo que la columna de toxicidad debe leerse en paralelo.
-- roberta_toxicity_classifier supera a este modelo en AUC de toxicidad en Civil Comments, y xlmr-large-toxicity-classifier lo supera en AUC de TextDetox, aunque este ultimo fue entrenado con los datos de ese mismo benchmark.
-- Los modelos en ingles se entrenaron con datos Jigsaw/Civil Comments, la misma fuente que el conjunto de prueba.
+| multilingual-toxicity-base (308M) | Apache-2.0 | 0,988 | 0,971 | 0,854 | 0,433 | 7 etiquetas Detoxify, multilingüe |
+| multilingual-toxicity-small (141M) | Apache-2.0 | 0,988 | 0,972 | 0,835 | 0,547 | 7 etiquetas Detoxify, multilingüe |
+| unitary/unbiased-toxic-roberta (125M) | Apache-2.0 | 0,985 | 0,969 | 0,588 | 0,086 | 7 etiquetas Detoxify (+ identity), inglés |
+| unitary/toxic-bert (110M) | Apache-2.0 | 0,946 | 0,926 | 0,623 | 0,142 | 6 etiquetas, inglés |
+| s-nlp/roberta_toxicity_classifier (125M) | OpenRAIL++ | 0,975 | 0,970 | No disponible | No disponible | No disponible |
 
 ## Requisitos de hardware
 
-- VRAM estimada en fp32: aproximadamente 1,23 GB solo de pesos; con activaciones y lotes pequenos, alrededor de 1,5-2 GB.
-- VRAM estimada en fp16: aproximadamente 615 MB de pesos; alrededor de 1 GB con margen de trabajo.
-- VRAM estimada en int8 (ONNX): el fichero onnx/model_quantized.onnx ocupa 641 MB; es viable con menos de 1 GB de memoria.
-- GPU recomendadas: cualquier GPU con 2 GB o mas de VRAM es suficiente (RTX 3050, GTX 1660, T4, L4). Para lotes grandes en produccion, una T4 o L4 ya ofrece margen amplio; no se necesita A100 ni H100.
-- Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo de los ultimos anos, e incluso en iGPU gracias a la ruta ONNX/CPU.
-- CPU: es la opcion natural para este tamano. El modelo cuantizado a int8 esta pensado para inferencia en CPU y en navegador.
-- Despliegue: pipeline de transformers, ONNX Runtime, transformers.js en el navegador y text-embeddings-inference (los metadatos del repositorio incluyen endpoints_compatible y text-embeddings-inference).
-- vLLM y llama.cpp: no se documenta soporte en la informacion disponible; ambas herramientas estan orientadas a modelos generativos, no a encoders de clasificacion.
-- Latencia y throughput: no disponible en la informacion proporcionada. El autor solo cuantifica la diferencia de precision de la version int8 (0,0008 de media sobre 448 textos respecto a fp32).
-- Almacenamiento: el repositorio completo ocupa 3,1 GB por incluir pesos en varios formatos; para desplegar solo hace falta el subconjunto safetensors o el ONNX cuantizado.
+- VRAM estimada para inferencia en fp32: aproximadamente 1,2-1,5 GB para los 307,5M parámetros más activaciones; en la práctica, un clasificador de este tamaño cabe en cualquier GPU consumer con 4 GB o más.
+- VRAM estimada con ONNX int8: en torno a 0,6-0,8 GB (el fichero model_quantized.onnx ocupa 641 MB), apto para CPU sin GPU.
+- GPU recomendadas: no requiere GPU dedicada para uso moderado; para alto throughput, A100, H100, L40S o RTX 4090/3090. En consumer, cualquier RTX con 4-8 GB es suficiente.
+- Cabe en GPU consumer: sí, en todas las RTX y GTX modernas con al menos 4 GB; también en CPU y en navegador vía transformers.js.
+- Opciones de despliegue: transformers (pipeline de text-classification), ONNX Runtime, transformers.js, LLM Guard (rutas PyTorch y ONNX), y despliegue como endpoint compatible con text-embeddings-inference según los tags del repositorio.
+- Latencia y throughput: no se publican cifras en la información disponible. La model card solo indica que la variante small (141M) es más pequeña y rápida, y que la cuantización int8 introduce una desviación media de 0,0008 en probabilidad frente a fp32.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Civil Comments, AUC medio | TextDetox (15 idiomas), AUC | Etiquetas | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|---|
-| multilingual-toxicity-base | 308M | no disponible | 0,988 | 0,854 | 7, multilingue | Apache-2.0 | Hugging Face (safetensors + ONNX) |
-| multilingual-toxicity-small | 141M | no disponible | 0,988 | 0,835 | 7, multilingue | Apache-2.0 | Hugging Face |
-| unitary/unbiased-toxic-roberta | 125M | no disponible | 0,985 | 0,588 | 7 + etiquetas de identidad, solo ingles | Apache-2.0 | Hugging Face |
-| unitary/multilingual-toxic-xlm-roberta | 278M | no disponible | 0,961 | 0,678 | 1 (toxic), multilingue | Apache-2.0 | Hugging Face |
-| textdetox/xlmr-large-toxicity-classifier | 560M | no disponible | 0,869 | 0,922 | 1 (toxic), multilingue | OpenRAIL++ | Hugging Face |
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| multilingual-toxicity-base | 307,5M | No disponible | 34 | Apache-2.0 | Hugging Face, ONNX, transformers.js |
+| multilingual-toxicity-small | 141M | No disponible | Multilingüe (mismo conjunto de etiquetas) | Apache-2.0 | Hugging Face |
+| unitary/unbiased-toxic-roberta | 125M | No disponible | Inglés | Apache-2.0 | Hugging Face |
+| unitary/toxic-bert | 110M | No disponible | Inglés | Apache-2.0 | Hugging Face |
+| s-nlp/roberta_toxicity_classifier | 125M | No disponible | Inglés | OpenRAIL++ | Hugging Face |
 
-La comparacion relevante es doble. Frente a los clasificadores en ingles (unbiased-toxic-roberta, toxic-bert), este modelo iguala o mejora ligeramente el AUC en Civil Comments y ademas cubre 33 idiomas con el mismo esquema de etiquetas. Frente a los multilingues binarios (multilingual-toxic-xlm-roberta, citizenlab, xlmr-large), gana en granularidad (siete etiquetas frente a una) y en AUC de TextDetox salvo frente a xlmr-large-toxicity-classifier, que alcanza 0,922 pero fue entrenado con los datos de ese benchmark y usa licencia OpenRAIL++ en lugar de Apache-2.0.
+En rendimiento, multilingual-toxicity-base iguala o supera ligeramente a unbiased-toxic-roberta en Civil Comments (AUC medio 0,988 frente a 0,985) y lo supera con claridad en TextDetox multilingüe (0,854 frente a 0,588), a cambio de casi el triple de parámetros. Frente a su propia variante small, el base obtiene mejor AUC en TextDetox (0,854 frente a 0,835) pero peor F1 a umbral 0,5 (0,433 frente a 0,547), lo que sugiere que el small está mejor calibrado para el umbral por defecto y el base requiere ajuste de umbral.
 
 ## Limitaciones y advertencias
 
-- Rendimiento desigual por idioma: la propia model card advierte que las puntuaciones en textos no ingleses tienden a ser mas bajas que en ingles. El F1 a 0,5 en TextDetox es de 0,433, muy por debajo del AUC de 0,854, lo que indica que el umbral por defecto no es adecuado para contenido multilingue y hay que recalibrarlo por idioma.
-- Umbral dependiente del dominio: el 0,5 recomendado es solo un punto de partida. En produccion conviene ajustarlo con datos propios, sobre todo si el trafico no se parece a Civil Comments.
-- Etiqueta severe_toxicity poco fiable: en el conjunto de prueba de Civil Comments no alcanza los 20 positivos al umbral 0,5, por lo que no entra en la media reportada. Su comportamiento en ese extremo no esta validado por los datos publicados.
-- Sesgos heredados del corpus: Civil Comments es un dataset en ingles con sesgos conocidos de anotacion y de composicion demografica. Al aumentar el modelo con traducciones, esos sesgos pueden propagarse a otros idiomas, y no se documenta ninguna auditoria de equidad por idioma.
-- Riesgo de falsos positivos por traduccion: no se detalla el proceso de traduccion ni su calidad, por lo que parte del comportamiento multilingue depende de datos sinteticos o automaticos no descritos.
-- Ambito limitado: clasifica comentarios ofensivos, no peticiones peligrosas a un LLM. El propio autor remite a otro modelo para ese caso, de modo que usarlo como unico guardrail de seguridad seria insuficiente.
-- No genera texto ni explicaciones: no puede justificar por que un comentario es toxico, algo que complica la apelacion de decisiones de moderacion.
-- Sin datos de contexto: la model card no especifica la longitud maxima de secuencia soportada, lo que impide garantizar el comportamiento en documentos largos o hilos completos.
-- Licencia permisiva: Apache-2.0 permite uso comercial sin restricciones adicionales, a diferencia de las alternativas OpenRAIL++ de la comparativa.
-- Madurez: el repositorio tiene 0 descargas y 0 likes y fue publicado en octubre de 2026, por lo que no existe aun validacion independiente de los resultados reportados por el autor.
-- Contaminacion potencial en la comparativa: los modelos en ingles se entrenaron con Jigsaw/Civil Comments, la misma fuente que el conjunto de prueba de Civil Comments, lo que favorece sus numeros en esa columna; conviene usar TextDetox como referencia mas neutral.
+- Los textos no ingleses tienden a puntuar más bajo que los ingleses (véase el F1 @ 0,5 de 0,433 en TextDetox), por lo que el umbral de 0,5 puede producir falsos negativos en contenido multilingüe; la model card recomienda calibrar el umbral sobre datos propios.
+- Es un clasificador de comentarios tóxicos, no un detector de peticiones peligrosas a un LLM (armas, autolesión, etc.); para ese caso el autor remite a content-safety-guard-small.
+- Para discurso de odio con identificación del grupo objetivo, el autor remite a multilingual-hate-speech-base; identity_attack aquí no desglosa el grupo atacado.
+- Riesgo de sesgo: al entrenarse sobre Civil Comments y traducciones, hereda los sesgos de anotación de ese corpus y de los procesos de traducción; la model card no documenta auditorías de sesgo por lengua.
+- Riesgo de alucinación no aplica en sentido generativo, pero sí de falsos positivos y falsos negativos en la clasificación, especialmente en jerga, ironía, dialectos y lenguas con pocos datos.
+- El contexto máximo no está documentado; los ejemplos de LLM Guard truncan a 512 tokens, por lo que textos más largos pueden perder información.
+- Licencia Apache-2.0: permite uso comercial sin restricciones adicionales, pero conviene revisar las condiciones de los datasets de origen (Civil Comments es CC0) y de las traducciones.
+- La cuantización int8 altera ligeramente las probabilidades (desviación media de 0,0008), aceptable para moderación pero a validar si se usan umbrales muy ajustados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Horizon-Labs/multilingual-toxicity-base
-- Modelo base: https://huggingface.co/jhu-clsp/mmBERT-base
-- Variante reducida: https://huggingface.co/Horizon-Labs/multilingual-toxicity-small
-- Modelo hermano para peticiones daninas a LLM: https://huggingface.co/Horizon-Labs/content-safety-guard-small
-- Repositorio Detoxify (origen del esquema de etiquetas): https://github.com/unitaryai/detoxify
-- Esquema de etiquetas de referencia: https://huggingface.co/unitary/unbiased-toxic-roberta
-- Dataset de entrenamiento Civil Comments: https://huggingface.co/datasets/google/civil_comments
-- Dataset de evaluacion multilingue TextDetox: https://huggingface.co/datasets/textdetox/multilingual_toxicity_dataset
-- Clasificador multilingue de referencia entrenado con TextDetox: https://huggingface.co/textdetox/xlmr-large-toxicity-classifier
-- Alternativa multilingue de una sola etiqueta: https://huggingface.co/unitary/multilingual-toxic-xlm-roberta
-- Clasificador binario de toxicidad en ingles: https://huggingface.co/s-nlp/roberta_toxicity_classifier
-- Clasificador binario pequeno en ingles: https://huggingface.co/martin-ha/toxic-comment-model
-- Clasificador binario multilingue de Citizen Lab: https://huggingface.co/citizenlab/distilbert-base-multilingual-cased-toxicity
-- Documentacion de transformers.js: https://huggingface.co/docs/transformers.js
-
-La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos del repositorio de Hugging Face.
+- Variante small: https://huggingface.co/Horizon-Labs/multilingual-toxicity-small
+- Modelo base mmBERT: https://huggingface.co/jhu-clsp/mmBERT-base
+- Detector de seguridad de contenido: https://huggingface.co/Horizon-Labs/content-safety-guard-small
+- Detector de discurso de odio: https://huggingface.co/Horizon-Labs/multilingual-hate-speech-base
+- Detoxify (Unitary AI): https://github.com/unitaryai/detoxify
+- unbiased-toxic-roberta: https://huggingface.co/unitary/unbiased-toxic-roberta
+- toxic-bert: https://huggingface.co/unitary/toxic-bert
+- s-nlp/roberta_toxicity_classifier: https://huggingface.co/s-nlp/roberta_toxicity_classifier
+- LLM Guard: https://github.com/protectai/llm-guard
+- Dataset Civil Comments: https://huggingface.co/datasets/google/civil_comments
+- Dataset Civil Comments multilingüe: https://huggingface.co/datasets/Horizon-Labs/civil-comments-multilingual
+- Dataset TextDetox multilingüe: https://huggingface.co/datasets/textdetox/multilingual_toxicity_dataset

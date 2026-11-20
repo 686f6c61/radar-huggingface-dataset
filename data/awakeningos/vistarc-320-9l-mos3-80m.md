@@ -2,109 +2,97 @@
 
 ## Resumen
 
-VISTARC-320-9L-MoS3-80M es un modelo de lenguaje de investigación en inglés desarrollado por AwakeningOS, con 45.454.791 parámetros reales (según los pesos en safetensors) y entrenado sobre el corpus BabyLM 2026 Strict-Small. Se presenta como una arquitectura híbrida que combina un transformer de 9 capas con dos mecanismos de retroalimentación recurrente: el cambio de estado producido por la capa anterior y las estadísticas de candidatos derivadas de la predicción del token previo. La salida utiliza una mezcla de tres softmaxes (MoS3) que leen las capas [9], [8, 9] y [7, 8, 9] respectivamente.
+VISTARC-320-9L-MoS3-80M es un modelo de lenguaje de investigacion en ingles desarrollado por AwakeningOS, con 45.454.791 parametros reales (pesos en safetensors) y entrenado sobre el corpus BabyLM 2026 Strict-Small. Se trata de un checkpoint seleccionado tras 80 millones de palabras de exposicion, correspondiente a la semilla 20260907 e identificado como modelo #1 en el inventario de investigacion del autor. Su proposito no es competicion comercial sino servir como plataforma de estudio sobre mecanismos de retroalimentacion recurrente en arquitecturas Transformer de escala reducida.
 
-El modelo es un LM causal preentrenado con objetivo de predicción del siguiente token, sin ajuste por instrucciones ni alineamiento conversacional. Su relevancia es fundamentalmente investigadora: explora si la retroalimentación recurrente entre capas y la información de la distribución predictiva previa pueden mejorar la eficiencia de aprendizaje en regímenes de datos limitados, como propone el marco BabyLM. El checkpoint liberado corresponde a 80 millones de exposiciones de palabras (ocho pasadas sobre 10 millones de palabras), seleccionado del run original que llegó hasta 100 millones.
+La arquitectura combina un Transformer con dos formas de feedback: los cambios producidos por la capa precedente y las estadisticas candidatas de la prediccion del token anterior. La salida se genera mediante una mezcla de tres componentes de softmax (mixture of softmaxes) que leen los estados de las capas [9], [8, 9] y [7, 8, 9], respectivamente. El estado principal del modelo es un vector de 320 dimensiones, con normalizacion esferica RMS para controlar la escala del estado residual.
 
-La ventana de contexto de entrenamiento es de 512 posiciones como máximo y no se ha validado para secuencias más largas. El vocabulario es de 16.384 entradas con tokenizador ByteLevel BPE y normalización NFKC. La licencia es Apache 2.0 y el modelo requiere código Python personalizado con `trust_remote_code=True`.
+El modelo se publico como entrada post-deadline (no competitiva) en el leaderboard de BabyLM 2026, donde obtuvo 51,89 de media NLP (segundo entre modelos decoder-only y duodecimo global en la comparacion de puntuaciones publicadas a 2 de noviembre de 2026). Es relevante ahora como referencia abierta para investigadores interesados en feedback recurrente, mezclas de softmax y entrenamiento eficiente con presupuestos linguisticos reducidos, no como modelo de produccion.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal con retroalimentación recurrente (self-change feedback y candidate feedback) y salida MoS3 |
-| Parámetros totales | 45.454.791 |
-| Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | 512 posiciones en entrenamiento; no validado para contextos mayores |
-| Tipos de cuantización | No disponible (el autor recomienda FP32 para la ruta de inferencia validada) |
-| Idiomas soportados | Inglés (`en`) |
+| Arquitectura | Transformer con feedback recurrente (cambios de capa previa y estadisticas de prediccion del token anterior) y mixture of softmaxes de 3 componentes |
+| Parametros totales | 45.454.791 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (el autor valida la ruta de inferencia en FP32) |
+| Idiomas soportados | Ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (201 tensores guardados) |
+| Formato de pesos | safetensors (repo de 0,2 GB) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura consta de 9 capas con anchura de estado 320 y anchura FFN 1120. La atención usa 10 cabezas de 32 dimensiones con ganancias QK aprendidas y base RoPE aprendida. La geometría del estado emplea normalización sobre esfera RMS. El mecanismo de self-change feedback procesa por separado los cambios de atención y FFN de la capa anterior mediante un router aprendido de anchura 32. El candidate feedback utiliza un umbral relativo de probabilidad aprendido, media y varianza, con un lector de candidatos de anchura 48. Existe además una compuerta de recepción de atención que condiciona tanto el estado receptor como la información recibida. La salida MoS3 combina tres ramas con referencias específicas a las capas [9], [8, 9] y [7, 8, 9]. El vocabulario de 16.384 entradas usa proyección de salida separada del embedding de entrada.
+VISTARC emplea un Transformer causal con estado principal de 320 dimensiones y una innovacion central: reutilizar lo que el modelo acaba de computar. La informacion fluye por varios canales. Los cambios de estado separados de la etapa de atencion y de la etapa FFN se inyectan en el FFN de la capa siguiente, ponderados por un Router32. La media recuperada por atencion y la varianza de caracteristicas alimentan una puerta de recepcion y el FFN, respectivamente. Ademas, un Candidate Reader48 en cada capa consume la media, varianza, masa, concentracion y concordancia con el token observado de la prediccion anterior, condicionando la prediccion posterior. La salida combina tres ramas MoS que leen los estados de las ultimas una, dos y tres capas. La normalizacion esferica RMS controla la escala del estado residual.
 
-El entrenamiento utilizó AdamW con 4.096 slots de tokens empaquetados por actualización y un schedule definido sobre un horizonte de 100 millones de exposiciones. Las tasas de aprendizaje de las matrices principales fueron 0,00064 → 0,00056 → 0,00048 en los límites de 30M y 60M, con un calentamiento de 1,6 millones de palabras. El checkpoint seleccionado vio ocho pasadas sobre 10 millones de palabras separadas por espacios, totalizando 80 millones de exposiciones. El tokenizador es ByteLevel BPE de 16.384 entradas con normalización NFKC. Las líneas adyacentes del corpus se agruparon bajo una política de empaquetado registrada, aislando la retroalimentación de atención y de candidatos entre grupos. La inferencia sigue el cómputo recurrente exacto, mientras que el entrenamiento usó una aproximación de dos pasadas. El adaptador de Hugging Face no implementa la receta original de preentrenamiento de dos pasadas; los fixtures de inicialización y el corpus no se distribuyen.
+El entrenamiento se realizo sobre el corpus BabyLM 2026 Strict-Small, con un objetivo de prediccion del siguiente token y sin ajuste por instrucciones (no hay chat tuning). El checkpoint liberado corresponde a 80 millones de palabras de exposicion de la semilla 20260907. No se detallan en la informacion disponible el numero exacto de tokens, la composicion del dataset ni si hubo RLHF o DPO; el autor indica explicitamente que la evaluacion del checkpoint completo no aisla el beneficio de cada componente arquitectonico. El modelo requiere codigo Python personalizado (`trust_remote_code`) y la salida nativa es una mezcla normalizada de log-probabilidades expuesta en el campo `logits`.
 
 ## Capacidades
 
-- Generación de texto por completación: predicción del siguiente token sin ajuste conversacional ni de instrucciones.
-- Modelado de lenguaje causal en inglés con contexto de hasta 512 posiciones.
-- Razonamiento lingüístico limitado: obtiene 69,45% en BLiMP y 63,84% en BLiMP Supplement en evaluación local zero-shot.
-- Comprensión de conocimiento cotidiano básico: 51,01% en EWoK.
-- Seguimiento de entidades: 23,33% en el agregado local de 18 subtareas de Entity Tracking.
-- Razonamiento sobre estados mentales: 52,38% en CoMPS.
-- Razonamiento físico: 20,39% en PIQA paralelo (103 preguntas de cuatro opciones) y 58,00% en PIQA no paralelo (100 preguntas de dos opciones).
-- No soporta tool calling ni function calling.
-- No soporta agentes ni razonamiento multi-paso.
-- No dispone de modo thinking, visión ni audio.
-- Multilingüismo: únicamente inglés.
+- Generacion de texto por completacion autoregresiva (modelo preentrenado, sin instrucciones).
+- Prediccion del siguiente token con distribucion de probabilidad derivada de la mezcla de softmaxes.
+- Razonamiento de tipo linguistico limitado al dominio y escala del corpus BabyLM.
+- Capacidades multilingues: solo ingles.
+- Tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades especiales: feedback recurrente entre capas y entre tokens, y salida mediante mixture of softmaxes de tres ramas de profundidad.
+- Modo thinking, vision o audio: no disponible.
 
 ## Casos de uso
 
-- Investigación en eficiencia de datos lingüísticos: el modelo sirve como punto de comparación en el marco BabyLM para estudiar cuánto rendimiento se obtiene con 80 millones de exposiciones de palabras y arquitecturas alternativas al transformer estándar.
-- Estudio de mecanismos de retroalimentación recurrente: permite analizar empíricamente cómo el self-change feedback y el candidate feedback afectan a tareas de concordancia gramatical (BLiMP) frente a un transformer convencional de tamaño similar.
-- Evaluación de mezclas de softmaxes en LM de pequeño tamaño: la salida MoS3 con ramas [9], [8, 9] y [7, 8, 9] permite investigar el efecto de combinar distribuciones de distintas profundidades sobre la perplejidad y las métricas zero-shot.
-- Reproducción de evaluaciones BabyLM 2026: el modelo incluye `evaluation_summary.json` con la revisión del código oficial (`6f825c291e2c4c78ad33b1935fd64d45f52642dc`), lo que facilita replicar las puntuaciones locales en un pipeline de evaluación estandarizado.
-- Generación de texto controlada en dominios restringidos: con 45M de parámetros y FP32, puede ejecutarse en CPU para completar frases cortas en inglés en entornos de experimentación sin GPU.
-- Docencia y divulgación sobre arquitecturas recurrentes: el código personalizado y el archivo `ARCHITECTURE.md` documentan rutas de información poco habituales, útiles para explicar feedback entre capas y cachés no estándar.
-- Pruebas de compatibilidad de tooling de Transformers: al requerir `trust_remote_code` y una caché `past_key_values` que incluye momentos de candidatos además de KV de atención, sirve para validar adaptadores y sistemas de generación personalizados.
+- Investigacion sobre feedback recurrente: el modelo permite estudiar como la inyeccion de cambios de capa y estadisticas de prediccion previa afecta la perplejidad y la coherencia en modelos pequenos, comparando con variantes sin feedback.
+- Experimentos de mixture of softmaxes: sirve como banco de pruebas para analizar el efecto de combinar distribuciones de las capas 9, 8-9 y 7-8-9 en la calidad de la prediccion.
+- Reproduccion de resultados BabyLM: investigadores pueden reproducir el checkpoint de 80M de palabras y la semilla 20260907 para validar la puntuacion de 51,89 en NLP Average.
+- Estudio de eficiencia en presupuestos linguisticos reducidos: util para analizar que mecanismos aportan ganancia cuando el entrenamiento se limita al corpus Strict-Small.
+- Docencia y divulgacion: modelo de 45M de parametros y 0,2 GB que cabe en CPU y permite explicar arquitecturas Transformer con feedback en entornos academicos.
+- Base para ablaciones controladas: el catalogo de 302 IDs experimentales y 988 puntos de evaluacion del autor facilita disenar comparaciones sobre el banco de 17.274 preguntas del proyecto.
+- Analisis de normalizacion esferica RMS: caso practico para evaluar el control de escala del estado residual en redes pequenas.
 
 ## Benchmarks y rendimiento
 
-Resultados locales zero-shot a 80M de exposiciones, según la model card:
+| Benchmark | Resultado | Contexto |
+|---|---|---|
+| NLP Average (BabyLM 2026 Strict-Small) | 51,89 | Puntuacion publicada el 2 de noviembre de 2026; 2.º entre decoder-only y 12.º global en comparacion de puntuaciones publicadas |
+| Banco de preguntas del proyecto (17.274 items) | no disponible por modelo en la informacion | Cubre 16 modelos en 20 checkpoints; datos CSV/JSON disponibles |
 
-| Tarea | Puntuación local (%) |
-|---|---:|
-| BLiMP | 69,45 |
-| BLiMP Supplement | 63,84 |
-| EWoK | 51,01 |
-| Entity Tracking (agregado local de 18 subtareas) | 23,33 |
-| CoMPS | 52,38 |
-| Global PIQA paralelo (103 preguntas de cuatro opciones) | 20,39 |
-| Global PIQA no paralelo (100 preguntas de dos opciones) | 58,00 |
-
-Medias locales reportadas: 52,002 en el histórico de cinco ejes y 49,8675 en el de seis ejes (promediando los dos porcentajes de PIQA en un solo eje). El autor indica que son evaluaciones locales y no una posición reclamada en competición. No se proporcionan comparaciones directas con otros modelos en la información disponible.
+No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estandar en la informacion disponible. Las posiciones citadas comparan puntuaciones publicadas y no son colocaciones oficiales de competicion, al ser una entrada post-deadline.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP32: aproximadamente 182 MB solo para pesos (45,45M × 4 bytes), más overhead de activaciones y caché; en la práctica cabe holgadamente en cualquier GPU consumer con 2 GB o más.
-- GPU recomendadas: no se especifican modelos concretos; el autor validó en CPU (Python 3.14 / PyTorch 2.13.0) y en CUDA (Python 3.12 / PyTorch 2.13.0) con Transformers 5.14.1. Cualquier GPU con soporte CUDA es suficiente.
-- Cabe en GPU consumer: sí, en cualquier RTX o equivalente con al menos 2 GB de VRAM en FP32.
-- Opciones de despliegue: Transformers con `trust_remote_code=True`; no se mencionan vLLM, llama.cpp, Ollama ni TGI, y la caché personalizada (`past_key_values` con momentos de candidatos) probablemente impide su uso directo sin adaptación.
-- Latencia y throughput: no disponibles. El modelo requiere FP32 y desactiva TF32 (`allow_tf32 = False`) en CUDA para la ruta validada, lo que limita la aceleración por tensor cores.
-- Restricciones de generación: soporta greedy, sampling, beam search ordinario y lotes con padding a izquierda; no soporta rollback especulativo de caché, recorte arbitrario de caché ni entrada solo de embeddings.
+- VRAM estimada para inferencia: inferior a 1 GB en FP32 para 45,5M de parametros (aproximadamente 182 MB de pesos mas estados y cache); el repo completo ocupa 0,2 GB.
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; el autor valida CUDA con PyTorch 2.13.0 y Transformers 5.14.1.
+- Cabe en GPU consumer: si, en cualquier RTX o equivalente; tambien en CPU (validado con Python 3.14 / PyTorch 2.13.0).
+- Opciones de despliegue:Transformers con `trust_remote_code=True`; no se documentan soportes para vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput estimados: no disponibles. El autor recomienda desactivar TF32 (`allow_tf32 = False`) para la ruta validada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks de modelos comparables en la información proporcionada. Como referencia estructural, los modelos del entorno BabyLM suelen situarse en el rango de 10M a 100M de parámetros con contextos de 512 tokens y licencias permisivas, pero no se han proporcionado resultados de otros modelos para comparar directamente.
+| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| VISTARC-320-9L-MoS3-80M | 45,5M | no disponible | 51,89 NLP Average (BabyLM 2026, comparacion de puntuaciones publicadas) | Apache 2.0 | Hugging Face, requiere codigo custom |
+| Otros decoder-only de BabyLM 2026 Strict-Small | no disponible | no disponible | Posiciones en el leaderboard BabyLM 2026 | no disponible | no disponible |
+| Modelos de referencia tipo GPT-2 small | 124M | 1.024 tokens | no comparable en este contexto | MIT | Hugging Face |
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| VISTARC-320-9L-MoS3-80M | 45,45M | 512 | Apache 2.0 | Hugging Face, requiere código personalizado |
-| Alternativas BabyLM de tamaño similar | No disponible | No disponible | No disponible | No disponible |
+La informacion proporcionada no incluye datos detallados de modelos alternativos comparables en la misma categoria y presupuesto; la comparativa se limita a la posicion relativa en el leaderboard BabyLM 2026 y a referencias genericas de escala.
 
 ## Limitaciones y advertencias
 
-- Modelo exclusivamente de investigación: sin ajuste por instrucciones, no es adecuado para uso conversacional ni como asistente.
-- Riesgo elevado de alucinación y texto incoherente fuera de distribuciones similares al corpus BabyLM; las puntuaciones en Entity Tracking (23,33%) y PIQA paralelo (20,39%) indican razonamiento limitado.
-- Contexto máximo de 512 posiciones; no se ha validado para secuencias más largas y el recorte arbitrario de caché no está soportado.
-- Solo inglés; no hay capacidades multilingües.
-- Requiere `trust_remote_code=True` con código Python personalizado; es imprescindible inspeccionar los archivos antes de habilitarlo.
-- La caché `past_key_values` incluye momentos de candidatos además de KV de atención; sustituirla por una caché KV estándar altera el modelo.
-- El adaptador de Hugging Face no reproduce la receta original de preentrenamiento de dos pasadas; los fixtures de inicialización y el corpus no se distribuyen, por lo que no es posible reproducir el entrenamiento completo desde cero.
-- La inferencia validada usa FP32 con TF32 desactivado, lo que reduce el rendimiento en GPU frente a implementaciones en precisión reducida.
-- Licencia Apache 2.0: permite uso comercial, pero el modelo no está diseñado ni validado para producción.
-- Sin datos publicados de sesgos; al entrenarse en un corpus limitado, es probable que herede sesgos del mismo, aunque no se documentan.
+- Modelo exclusivamente en ingles; no soporta otros idiomas.
+- Modelo preentrenado sin ajuste por instrucciones: no es adecuado para chat ni para seguir ordenes directas.
+- Riesgo de alucinacion y de completaciones incoherentes propio de un modelo de 45M de parametros entrenado con presupuesto linguistico reducido.
+- Requiere `trust_remote_code=True`; es imprescindible inspeccionar los ficheros antes de habilitarlo por riesgo de ejecucion de codigo.
+- La salida nativa son log-probabilidades mezcladas, no logits convencionales; hay que aplicar softmax sobre el campo `logits` para obtener la distribucion predictiva.
+- El tokenizador no inserta BOS automaticamente; hay que anadirlo manualmente para reproducir el comportamiento validado.
+- La entrada es post-deadline y no competitiva en BabyLM 2026; las posiciones citadas comparan puntuaciones publicadas, no son resultados oficiales.
+- La evaluacion del checkpoint completo no aisla la contribucion de cada componente arquitectonico, segun el propio autor.
+- Licencia Apache 2.0 permite uso comercial, pero el estado de investigacion y la falta de validacion en produccion desaconsejan su uso fuera de entornos experimentales.
+- Longitud de contexto y opciones de cuantizacion no documentadas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/AwakeningOS/vistarc-320-9l-mos3-80m
-- Documentación de arquitectura: https://huggingface.co/AwakeningOS/vistarc-320-9l-mos3-80m/blob/main/ARCHITECTURE.md
-- Receta de entrenamiento: https://huggingface.co/AwakeningOS/vistarc-320-9l-mos3-80m/blob/main/training_recipe.json
-- Resumen de evaluación: https://huggingface.co/AwakeningOS/vistarc-320-9l-mos3-80m/blob/main/evaluation_summary.json
-- BabyLM: no disponible en la información proporcionada
-- Paper o blog del modelo: no disponible en la información proporcionada
-- Repositorio de código: no disponible en la información proporcionada
-- Demo: no disponible en la información proporcionada
+- Cuaderno de investigacion (Space): https://huggingface.co/spaces/AwakeningOS/vistarc-research-notes
+- Guia de arquitectura, ecuaciones y mapa de implementacion: ARCHITECTURE.md (en el repositorio del modelo)
+- Guia de arquitectura en japones: ARCHITECTURE_JA.md (en el repositorio del modelo)
+- Registro de comparacion y posicion en leaderboard: provenance/LEADERBOARD_POSITION_20261102.json (en el repositorio del modelo)
+- Politica de envio BabyLM: https://arxiv.org/html/2602.20092v2#S4.SS6

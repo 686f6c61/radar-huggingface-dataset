@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "llmfan46/LongCat-Flash-Lite-Sparse-Ultra-Uncensored-Heretic-Native-MTP ...",
-      "url": "https://huggingface.co/llmfan46/LongCat-Flash-Lite-Sparse-Ultra-Uncensored-Heretic-Native-MTP-And-LSA-Preserved-GGUF",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Uncensored Frontier: MTP and Sparse Architectures Redefine Local LLM ...",
-      "url": "https://baguaai.com/uncensored-frontier-mtp-and-sparse-architectures-redefine-local-llm-performance/",
-      "snippet": "Architectural Shift: Multi-Token Prediction (MTP) is transitioning from research papers to local deployment, becoming a standard for maximizing throughput on consumer hardware. Software Bottlenecks: The release of LongCat-Flash-Lite-Sparse highlights a widening gap between rapid model innovation and mainstream inference engine support, requiring manual low-level implementation (e.g., Heretic ..."
-    },
-    {
-      "title": "Model request: meituan-longcat/LongCat-Flash-Lite-Sparse",
-      "url": "https://github.com/Blaizzy/mlx-vlm/issues/2054",
-      "snippet": "As title states, it would be cool to support meituan-longcat/LongCat-Flash-Lite-Sparse , as it comes at an interesting size compared to other models around."
-    },
-    {
-      "title": "LongCat · GitHub",
-      "url": "https://github.com/meituan-longcat",
-      "snippet": "LongCat-Next Public Python 472 MIT 32 5 0 Updated on Jul 21 omni-flow Public A unified workflow orchestration and distributed KV cache sharing framework for multimodal inference."
-    },
-    {
-      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
-      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
-      "snippet": "Qwen 3.6 abliterated, Gemma 4 Heretic, Dolphin 3.0 — the current uncensored picks by VRAM tier. The Llama 3.1 / Qwen 2.5 era is mostly superseded. HuggingFace repos for every pick."
-    }
-  ]
+  "sources": []
 }

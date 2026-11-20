@@ -2,98 +2,94 @@
 
 ## Resumen
 
-Anime Eye Detector es un modelo de detección de objetos basado en YOLOv8 y ajustado (fine-tuning) para localizar ojos en ilustración de personajes de estilo anime. Lo desarrolla el usuario killjoyelite y se publica en Hugging Face bajo licencia MIT. Su propósito concreto es servir como detector de región ocular dentro de flujos de trabajo de ComfyUI con el nodo Impact Pack, de forma análoga a como se emplean `face_yolov8n.pt` o `hand_yolov8n.pt` para el retoque facial y de manos.
+Anime Eye Detector es un modelo de detección de objetos basado en YOLOv8, desarrollado por el usuario killjoyelite y publicado en Hugging Face. Su tarea es concreta y monoespecífica: localizar los ojos (clase única `eye`) en ilustraciones de personajes de estilo anime y semirrealista. Se distribuye en dos variantes, `eye_yolov8n.pt` (nano) y `eye_yolov8s.pt` (small), ambas derivadas de los checkpoints preentrenados de Ultralytics y afinadas sobre un conjunto propio de imágenes generadas por el autor y anotadas manualmente.
 
-Se distribuye en dos variantes: `eye_yolov8n.pt` (nano) y `eye_yolov8s.pt` (small), ambas derivadas de los pesos base `yolov8n.pt` y `yolov8s.pt` de Ultralytics. La tarea es de detección de una única clase (`eye`), con cajas delimitadoras por cada ojo visible. El entrenamiento se realizó sobre un conjunto reducido de 212 imágenes de estilo anime generadas por el propio autor, etiquetadas manualmente, con 100 épocas, tamaño de imagen 640 y batch de 8.
+El modelo no es un LLM ni un modelo multimodal generativo: es un detector de cajas delimitadoras pensado para integrarse en flujos de trabajo de ComfyUI mediante Impact Pack. Su función es la de un detector auxiliar que segmenta la región ocular para que un nodo `Detailer (SEGS)` pueda redibujar o reparar los ojos sin alterar el resto de la imagen, de forma análoga a como se usan `face_yolov8n.pt` y `hand_yolov8n.pt` en pipelines de inpainting facial y de manos.
 
-Es relevante ahora para quienes construyen pipelines de generación e inpainting de personajes anime en ComfyUI, ya que automatiza la localización de los ojos para aplicar retoque selectivo de detalle o color sin intervención manual. El repo es de tamaño mínimo (0,0 GB) y acumula 171 descargas y 0 likes en el momento de redactar esta ficha.
+La relevancia actual es práctica: cubre un hueco en los detectores genéricos de rostro, que en arte anime fallan con frecuencia por la estilización extrema de los ojos. El repo ocupa 0,1 GB y acumula 1449 descargas, lo que indica adopción dentro de la comunidad de ComfyUI pese a su escasa visibilidad social (3 likes).
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | YOLOv8 (red de detección de objetos de una etapa, familia Ultralytics); dos variantes: nano y small |
-| Parametros totales | no disponible en la ficha del autor; el modelo base YOLOv8n tiene aproximadamente 3,2 M de parametros y YOLOv8s aproximadamente 11,2 M (el fine-tuning conserva la arquitectura base) |
-| Parametros activos | no aplicable (no es un modelo MoE) |
-| Longitud de contexto | no aplicable (modelo de visión; entrada de imagen a 640 px durante el entrenamiento) |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no aplicable (modelo de visión, no procesa texto) |
+| Arquitectura | YOLOv8 (detector de objetos de una etapa, backbone CNN + cabeza de detección) |
+| Parametros totales | no disponible (variantes nano y small de YOLOv8; Ultralytics no publica el recuento exacto en la model card) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de visión, no de texto) |
+| Tipos de cuantizacion | no disponible (se distribuyen pesos `.pt` de PyTorch; no se documentan variantes cuantizadas) |
+| Idiomas soportados | no disponible (no procesa texto; las etiquetas son la clase `eye`) |
 | Licencia | MIT |
-| Formato de pesos | PyTorch `.pt` (Ultralytics), distribuidos como `eye_yolov8n.pt` y `eye_yolov8s.pt` |
+| Formato de pesos | `.pt` (PyTorch, checkpoints de Ultralytics) |
 
 ## Arquitectura y entrenamiento
 
-Se trata de una red YOLOv8 de detección de objetos de una sola etapa, reutilizada tal cual desde los checkpoints base de Ultralytics (`yolov8n.pt` y `yolov8s.pt`) y sometida a fine-tuning para una única clase, `eye`. YOLOv8 emplea un backbone y una cabeza de detección con asignación de etiquetas tipo anchor-free; el ajuste no modifica la topología, solo los pesos y la cabeza de clases (una sola clase frente a las 80 de COCO). No se menciona ningún mecanismo adicional de decodificación especulativa ni atención lineal: es una CNN de detección estándar orientada a inferencia rápida.
+El modelo emplea la arquitectura YOLOv8 de Ultralytics, un detector de una etapa con backbone convolucional y cabezas de predicción ancladas libres (anchor-free), configurado para una única clase (`eye`). Se parte de los pesos preentrenados `yolov8n.pt` y `yolov8s.pt` y se realiza un fine-tuning supervisado con anotaciones de cajas delimitadoras alrededor de cada ojo visible.
 
-El entrenamiento se hizo con 212 imágenes de estilo anime generadas por IA por el propio autor (predominantemente personajes femeninos), con cajas etiquetadas manualmente alrededor de cada ojo visible. La configuración indicada es de 100 épocas, tamaño de imagen 640 y batch size 8. No se documenta el uso de RLHF, DPO ni datos externos; el dataset es enteramente autogenerado y de autoría propia. La innovación relevante no está en la arquitectura, sino en la especialización del detector a un dominio muy concreto (región ocular en anime) para integrarse en flujos de inpainting.
+El conjunto de entrenamiento es propio y generado por el autor: 286 imágenes de estilo anime y semirrealista (mayoritariamente personajes femeninos) generadas con IA y etiquetadas manualmente, según la versión 2.0. La configuración de entrenamiento documentada es de 100 épocas, tamaño de imagen 640 y batch size 8. No se detalla la composición exacta del dataset, el uso de aumentos de datos, ni si hubo validación cruzada; tampoco se mencionan técnicas de destilación, pruning o cuantización.
 
 ## Capacidades
 
-- Detección de objetos de una única clase (`eye`): devuelve cajas delimitadoras por cada ojo visible en una ilustración de personaje anime.
-- Funciona sobre imagen estática, no sobre vídeo ni secuencias temporales.
-- Integración nativa con ComfyUI mediante `UltralyticsDetectorProvider` y el ecosistema Impact Pack (`BboxDetectorSEGS`, `Detailer (SEGS)`).
-- Habilita inpainting selectivo de la región ocular (cambio de color de ojos, corrección de detalle) manteniendo intacto el resto de la imagen.
-- No dispone de tool calling, function calling ni soporte de agentes.
-- No dispone de modo de razonamiento (thinking), visión multimodal general, audio ni generación de texto: es un detector puro.
-- Capacidades multilingües: no aplicable, no procesa lenguaje.
+- Detección de objetos de clase única: localiza ojos individuales en ilustraciones anime y semirrealistas mediante cajas delimitadoras.
+- Detección multi-ojo por imagen: devuelve una caja por cada ojo visible, lo que permite procesar personajes con ambos ojos en distintos ángulos y poses.
+- Integración nativa con ComfyUI a través de Impact Pack (`UltralyticsDetectorProvider`, `BboxDetectorSEGS`, `Detailer (SEGS)`).
+- Instalación directa desde ComfyUI-Manager (búsqueda "eye" en Install Models).
+- Dos tamaños de modelo (nano y small) para intercambiar velocidad y precisión.
+- No soporta tool calling, function calling, razonamiento multi-paso, generación de texto, visión general, audio ni modo thinking: es exclusivamente un detector visual.
 
 ## Casos de uso
 
-- Retoque ocular en ComfyUI: cargar la imagen, pasar por `UltralyticsDetectorProvider` con el detector de ojos, generar el SEGS con `BboxDetectorSEGS` y aplicar `Detailer (SEGS)` con `guide_size` 512 y `denoise` entre 0,5 y 0,7 para redibujar el ojo desde un prompt sin tocar el resto del lienzo.
-- Cambio de color de ojos: usar la región detectada con `Detailer (SEGS)` para reinterpretar el color y el detalle ocular según prompt, conservando intacta la composición original.
-- Corrección de artefactos en ojos generados: en pipelines de generación de personajes anime, aplicar un segundo paso de difusión únicamente sobre los ojos para arreglar deformaciones típicas (pupilas asimétricas, brillos inconsistentes).
-- Automatización de flujos de producción de personajes: encadenar generación de imagen, detección de ojos y retoque como pasos automáticos, reduciendo la intervención manual en postproceso.
-- Anotación asistida de datasets: usar el detector para pregenerar cajas de ojos y revisarlas manualmente, acelerando la creación de conjuntos etiquetados de arte anime.
-- Curación de datasets con recorte de región ocular: extraer las cajas para construir datasets centrados en ojos (por ejemplo, para entrenar modelos de detalle facial específicos).
-- Preprocesado para efectos u overlays: localizar ambos ojos para alinear efectos, cambios de mirada o animaciones simples en piezas estáticas.
-- Expansión comunitaria del dataset: dado que el autor invita a reportar fallos, sirve como base para ampliar la cobertura a más estilos y a personajes masculinos.
+- Reparación de ojos en generación de imágenes con ComfyUI: el detector alimenta un nodo `Detailer (SEGS)` que redibuja la región ocular con un prompt específico (por ejemplo, cambio de color de iris), manteniendo intacto el resto del lienzo. Es el caso de uso principal documentado por el autor.
+- Inpainting selectivo de ojos en pipelines de restauración: en imágenes anime con ojos borrosos o mal generados, el detector aísla la región y permite un segundo paso de difusión con `denoise` entre 0,5 y 0,7 para corregir el detalle sin recomponer la cara completa.
+- Automatización de postprocesado por lotes: integrado en scripts que recorren carpetas de imágenes generadas y aplican el detailer solo donde se detectan ojos, reduciendo el coste computacional frente a redibujar la imagen entera.
+- Control de calidad en datasets de entrenamiento: uso del detector para verificar que las imágenes sintéticas contienen ojos bien formados antes de incorporarlas a un dataset de fine-tuning, filtrando muestras defectuosas.
+- Anotación asistida: preetiquetado automático de ojos en nuevas imágenes para acelerar el etiquetado manual en la expansión del dataset, dado el bajo coste de inferencia de las variantes nano y small.
+- Segmentación de regiones para métricas o análisis: extracción de coordenadas oculares para estudios de composición, alineación de personajes o comparación de estilos entre checkpoints generativos.
+- Integración en herramientas de edición de personajes: detección de ojos como paso previo a la aplicación de expresiones, parpadeos o cambios de mirada en flujos de animación 2D asistida.
 
 ## Benchmarks y rendimiento
 
-Resultados en el split de validación, según la model card del autor:
+Resultados publicados por el autor sobre el split de validación:
 
-| Metrica | Nano (eye_yolov8n) | Small (eye_yolov8s) |
+| Metrica | Nano (yolov8n) | Small (yolov8s) |
 |---|---|---|
-| mAP50 | 0,995 | 0,994 |
-| mAP50-95 | 0,681 | 0,705 |
-| Precision | 0,998 | 0,971 |
-| Recall | 1,000 | 1,000 |
+| mAP50 | 0,982 | 0,989 |
+| mAP50-95 | 0,663 | 0,670 |
+| Precision | 0,997 | 0,981 |
+| Recall | 0,964 | 0,954 |
 
-No se han publicado otros resultados de benchmarks en la información disponible. Las métricas corresponden a un conjunto de validación de 212 imágenes de un único estilo de generación, por lo que no deben interpretarse como robustez en dominios artísticos distintos.
+No se han publicado resultados comparativos con otros detectores de ojos en anime en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: muy baja. Los pesos nano pesan unos pocos MB y la inferencia a 640 px cabe holgadamente en cualquier GPU. No hay cifra publicada; para un modelo de detección de este tamaño suele bastar con menos de 1-2 GB de VRAM.
-- GPU recomendadas: cualquier GPU moderna sirve. En el extremo alto, A100, H100, RTX 4090 o RTX 3090 ofrecen latencias mínimas; en gamas medias, RTX 3060, RTX 2060 o GTX 1660 son más que suficientes.
-- Cabe en GPU de consumo: sí, en prácticamente cualquier GPU de consumo con soporte CUDA, e incluso en modelos de gama baja.
-- Alternativa en CPU: al ser un modelo nano/small, es viable la inferencia en CPU para procesamiento por lotes a baja frecuencia.
-- Opciones de despliegue: Ultralytics (PyTorch), ComfyUI con Impact Pack (uso previsto por el autor), y, aunque no se documenta en la ficha, la familia YOLOv8 admite exportación a ONNX, TensorRT, OpenVINO, CoreML y TFLite.
-- Latencia y throughput estimados: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: no disponible de forma explícita; por el tamaño de las variantes YOLOv8 nano y small, la inferencia cabe holgadamente en GPUs de consumo, aunque el autor no publica cifras.
+- GPU recomendadas: cualquier GPU con soporte CUDA compatible con PyTorch y Ultralytics; las variantes nano y small están pensadas para ejecución en tiempo real en hardware modesto.
+- Cabe en GPU de consumo: sí, previsiblemente en modelos tipo RTX 3060, RTX 4060 o superiores, así como en GPUs integradas con backend CPU, aunque no se documentan cifras concretas.
+- Opciones de despliegue: Ultralytics (PyTorch), ComfyUI con Impact Pack, exportación a otros formatos vía Ultralytics (ONNX, TensorRT) aunque no se documenta en la model card.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto/entrada | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Tarea | Clases | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Anime Eye Detector (yolov8n) | base YOLOv8n (~3,2 M) | imagen 640 px | mAP50 0,995; mAP50-95 0,681 | MIT | Hugging Face, ComfyUI-Manager |
-| Anime Eye Detector (yolov8s) | base YOLOv8s (~11,2 M) | imagen 640 px | mAP50 0,994; mAP50-95 0,705 | MIT | Hugging Face, ComfyUI-Manager |
-| `face_yolov8n.pt` (detector facial, referencia citada por el autor) | base YOLOv8n | imagen 640 px | no disponible | no disponible | ecosistema ComfyUI/Impact Pack |
-| `hand_yolov8n.pt` (detector de manos, referencia citada por el autor) | base YOLOv8n | imagen 640 px | no disponible | no disponible | ecosistema ComfyUI/Impact Pack |
+| Anime Eye Detector (este) | Detección de ojos en anime | 1 (`eye`) | MIT | `.pt` | Hugging Face, ComfyUI-Manager |
+| `face_yolov8n.pt` (referencia del autor) | Detección de rostros | Rostro | no disponible en la información | `.pt` | Uso común en ComfyUI/Impact Pack |
+| `hand_yolov8n.pt` (referencia del autor) | Detección de manos | Mano | no disponible en la información | `.pt` | Uso común en ComfyUI/Impact Pack |
 
-No se dispone de métricas comparables de otros detectores especializados de ojos en anime en la información proporcionada.
+No se dispone de datos de benchmarks ni de especificaciones detalladas de los detectores de referencia en la información proporcionada, por lo que la comparación cuantitativa no está disponible.
 
 ## Limitaciones y advertencias
 
-- Entrenado predominantemente con personajes femeninos de anime: la detección en ojos de personajes masculinos es menos fiable y puede omitir detecciones.
-- Dificultades con ojos muy grandes, caricaturescos o de estilo chibi que se alejan de las proporciones anime estándar, y en algunos primeros planos de rostro (indicado como trabajo en progreso).
-- Entrenado con la salida de un único estilo de generación/checkpoint, por lo que generaliza peor a estilos muy distintos (pictóricos, muy estilizados o no anime) que a estilos anime convencionales o semirrealistas.
-- Dataset muy pequeño (212 imágenes): las métricas de validación son altas, pero la robustez en producción sobre la diversidad real del arte anime es inherentemente limitada.
-- Riesgo de falsos positivos o negativos en imágenes fuera de dominio; conviene validar sobre muestras propias antes de automatizar un pipeline.
-- Uso comercial permitido por la licencia MIT del modelo, pero el propio autor advierte de que los usuarios deben verificar de forma independiente las condiciones de licencia del checkpoint base empleado para generar sus propias imágenes de entrenamiento o inferencia.
-- No adecuado para tareas fuera de la detección de ojos en arte anime.
+- Detección menos fiable en ojos de personajes masculinos que en femeninos, aunque el autor indica que ha mejorado en la versión 2.0.
+- Entrenado sobre 286 imágenes (v2.0): las métricas de validación son altas, pero el tamaño reducido del dataset limita la robustez frente a estilos de arte no representados.
+- Aunque se ha probado con estilos realistas, no se ha validado de forma extensa en todos los estilos artísticos.
+- Riesgo de falsos positivos o negativos en ojos ocluidos, muy estilizados, de perfil extremo o con iluminación atípica; el autor invita a reportar casos de fallo.
+- Licencia MIT, que permite uso comercial y modificación, pero el autor advierte que los usuarios deben verificar de forma independiente las condiciones de licencia de cualquier checkpoint base utilizado para generar sus propias imágenes de entrenamiento o inferencia.
+- No es un modelo generativo ni un LLM: no debe esperarse comprensión semántica, generación de texto ni razonamiento; su única salida son cajas delimitadoras de la clase `eye`.
+- No se documentan sesgos demográficos más allá de la observación sobre personajes masculinos, ni métricas de robustez fuera del split de validación.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/killjoyelite/anime-eye-yolov8
-- Ultralytics (framework y pesos base YOLOv8): https://github.com/ultralytics/ultralytics
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI
 - ComfyUI Impact Pack: https://github.com/ltdrdata/ComfyUI-Impact-Pack
+- Ultralytics (YOLOv8): no se incluye enlace explícito en la model card; referencia habitual en https://github.com/ultralytics/ultralytics

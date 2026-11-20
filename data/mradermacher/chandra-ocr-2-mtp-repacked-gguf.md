@@ -2,52 +2,52 @@
 
 ## Resumen
 
-chandra-ocr-2-MTP-Repacked-GGUF es una distribución de cuantizaciones estáticas en formato GGUF del modelo prithivMLmods/chandra-ocr-2-MTP-Repacked, publicada por mradermacher. El modelo base es un modelo de OCR y comprensión de documentos orientado a la conversión de PDF e imágenes en Markdown, HTML y JSON, con soporte de análisis de layout. Esta versión GGUF está pensada para su uso con llama.cpp y herramientas compatibles (llama-cli, text-generation-inference), lo que facilita el despliegue en entornos locales sin necesidad de GPUs de datacenter.
+chandra-ocr-2-MTP-Repacked-GGUF es la versión cuantizada en formato GGUF del modelo chandra-ocr-2-MTP-Repacked, un modelo multimodal especializado en OCR (reconocimiento óptico de caracteres), extracción de contenido de PDF y generación de Markdown con preservación de layout. El modelo original fue desarrollado por datalab-to (bajo licencia OpenRAIL) y repackado por prithivMLmods; la cuantización corre a cargo de mradermacher, un publicador habitual de versiones GGUF para llama.cpp.
 
-El modelo base cuenta con 4.326.350.848 parámetros (aproximadamente 4,3 mil millones) según los pesos en safetensors del repositorio original, y está etiquetado como multimodal (incluye un suplemento mmproj para el proyector visual). La licencia es OpenRAIL, heredada del modelo original datalab-to/chandra-ocr-2, y el único idioma declarado es el inglés.
+Con 4.326.350.848 parámetros (aproximadamente 4,3 mil millones), el modelo se sitúa en la gama media de tamaño, lo que permite ejecutarlo en GPUs de consumo con cuantizaciones agresivas. Su propósito principal es convertir imágenes de documentos y páginas PDF en texto estructurado (Markdown, HTML, JSON), preservando la disposición espacial del contenido original, lo que lo hace útil para pipelines de digitalización documental.
 
-La relevancia de esta ficha radica en que ofrece una vía práctica para ejecutar un pipeline de OCR y estructuración de documentos en hardware de consumo, con cuantizaciones que van desde Q2_K hasta Q8_0 y f16, y con la posibilidad de usar decodificación multi-token prediction (MTP) según indica el nombre del modelo. No obstante, la información pública disponible es muy limitada: no hay benchmarks, no hay detalles de entrenamiento y el repositorio tiene cero descargas y cero likes en el momento de la consulta.
+La relevancia de esta versión radica en su formato GGUF con múltiples niveles de cuantización (desde Q2_K de 2,1 GB hasta f16 de 8,8 GB), lo que democratiza el despliegue local de un modelo OCR multimodal sin necesidad de infraestructura de datacenter. El repo acumula 1231 descargas desde su creación el 3 de noviembre de 2026.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (modelo base con proyector visual mmproj); detalles internos no disponibles |
-| Parametros totales | 4.326.350.848 (~4,3 mil millones) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (modelo multimodal con soporte MTP; detalles de la arquitectura base no especificados en la información disponible) |
+| Parámetros totales | 4.326.350.848 (~4,3 mil millones) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS; suplementos mmproj en Q8_0 y f16 |
+| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; además mmproj-Q8_0 y mmproj-f16 para el componente multimodal |
 | Idiomas soportados | en (inglés) |
-| Licencia | openrail (enlace a la licencia del modelo original datalab-to/chandra-ocr-2) |
-| Formato de pesos | GGUF (cuantizaciones estáticas); modelo base en safetensors |
+| Licencia | openrail (OpenRAIL; enlace a la licencia del modelo base datalab-to/chandra-ocr-2) |
+| Formato de pesos | GGUF (safetensors en el modelo base original) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo base en la documentación proporcionada. Los metadatos indican que se trata de un modelo multimodal con un proyector visual separado (mmproj), lo que sugiere un diseño típico de modelo de lenguaje con adaptador visual para procesar imágenes de documentos. El nombre incluye "MTP", que en el contexto de llama.cpp suele asociarse a multi-token prediction, una técnica de decodificación especulativa que permite predecir varios tokens por paso para acelerar la inferencia; sin embargo, no se confirma en la model card.
+La información disponible no detalla la arquitectura interna del modelo base. Se trata de un modelo multimodal (el repo incluye ficheros mmproj, el componente de proyección visual de llama.cpp), orientado a tareas de OCR y comprensión de documentos, con soporte de etiquetas MTP (multi-token prediction) y capacidades de generación de Markdown, HTML y JSON. El modelo base es prithivMLmods/chandra-ocr-2-MTP-Repacked, a su vez derivado de datalab-to/chandra-ocr-2.
 
-Tampoco se especifican el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF o DPO. El repositorio de mradermacher es únicamente una redistribución de cuantizaciones estáticas del modelo prithivMLmods/chandra-ocr-2-MTP-Repacked, que a su vez deriva de datalab-to/chandra-ocr-2. No se indica que se hayan generado cuantizaciones ponderadas o con imatrix, y el autor señala que podrían no estar disponibles.
+No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO. Tampoco se documentan innovaciones técnicas específicas más allá de la propia naturaleza multimodal y la orientación a la extracción estructurada de documentos. La cuantización estática aplicada por mradermacher (quantize_version 2, output_tensor_quantised 1) es el único proceso técnico documentado en esta ficha.
 
 ## Capacidades
 
-- Reconocimiento óptico de caracteres (OCR) sobre imágenes y documentos PDF.
-- Conversión de documentos a Markdown, HTML y JSON, según las etiquetas del repositorio.
-- Análisis de layout de documentos (detección y estructuración de bloques de texto, tablas y elementos de página).
-- Generación de texto conversacional (etiqueta "conversational" y pipeline text-generation-inference).
-- Procesamiento multimodal: el suplemento mmproj permite introducir imágenes junto con texto.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: limitadas al inglés según los metadatos.
-- Modo thinking, visión, audio u otras capacidades especiales: solo se confirma visión (OCR); el resto no disponible.
+- Reconocimiento óptico de caracteres (OCR) sobre imágenes de documentos y páginas PDF.
+- Conversión de documentos a Markdown preservando estructura y layout.
+- Generación de salida en HTML y JSON, útil para extracción estructurada de datos.
+- Comprensión de layout documental (disposición de bloques, tablas y elementos de página).
+- Procesamiento multimodal: acepta entrada de imagen además de texto (ficheros mmproj incluidos).
+- Soporte de generación de texto conversacional (etiqueta conversational).
+- Compatible con text-generation-inference y llama-cli.
+- Capacidades multilingües: limitadas al inglés según la model card.
+- No se documentan capacidades de tool calling, function calling ni razonamiento multi-paso en la información disponible.
 
 ## Casos de uso
 
-- Digitalización de facturas y recibos: el modelo puede recibir la imagen de una factura y devolver una representación estructurada en JSON o Markdown, lo que facilita la extracción de campos en pipelines contables. Es adecuado por su orientación explícita a OCR y salida estructurada.
-- Conversión de documentación técnica a Markdown: útil para migrar manuales en PDF a repositorios de documentación, preservando el layout y las tablas gracias a las capacidades de análisis de layout.
-- Extracción de tablas de informes financieros: el modelo puede transformar tablas de PDF en HTML o Markdown, lo que simplifica su posterior procesamiento con herramientas de análisis de datos.
-- Indexación y búsqueda semántica de archivos escaneados: al generar Markdown limpio, el texto resultante puede alimentar pipelines de embeddings y motores de búsqueda sin necesidad de OCR externo.
-- Procesamiento local en estaciones de trabajo: las cuantizaciones Q4_K_M y Q5_K_M permiten ejecutar el modelo en GPUs de consumo, lo que es útil para equipos que manejan documentos confidenciales y no quieren enviarlos a la nube.
-- Automatización de la accesibilidad documental: conversión de PDFs escaneados a HTML estructurado para lectores de pantalla, aprovechando la salida en HTML y la preservación del layout.
-- Preprocesamiento para pipelines de RAG: el modelo puede actuar como primer eslabón que convierte documentos heterogéneos en texto estructurado antes de la fragmentación y la vectorización.
+- Digitalización masiva de PDF escaneados: el modelo convierte páginas en Markdown estructurado, lo que permite indexar el contenido en sistemas de búsqueda o RAG sin trabajo manual de transcripción.
+- Extracción de tablas y datos financieros: la salida en JSON facilita el parseo automático de facturas, extractos y formularios hacia bases de datos.
+- Construcción de pipelines de RAG documental: al preservar el layout y generar Markdown limpio, el texto resultante se trocea y embebe con mayor coherencia semántica que un OCR plano.
+- Archivística y preservación digital: conversión de fondos documentales históricos a formatos legibles por máquina manteniendo la estructura original.
+- Automatización de back-office: procesamiento local de documentos confidenciales sin enviar datos a servicios en la nube, gracias a las cuantizaciones Q4 que caben en GPU de consumo.
+- Generación de documentación técnica a partir de capturas: conversión de manuales o capturas de pantalla en Markdown listo para wikis y repositorios.
+- Prototipado en estaciones de trabajo: con la cuantización Q4_K_M (2,9 GB) el modelo se ejecuta en GPUs consumer para pruebas de concepto de OCR sin infraestructura dedicada.
 
 ## Benchmarks y rendimiento
 
@@ -55,40 +55,41 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 4,3 mil millones de parámetros, una cuantización Q4_K_M ocuparía aproximadamente 2,5-3 GB de pesos, más el suplemento mmproj (0,5-0,8 GB) y la caché KV. En la práctica, se recomienda al menos 6-8 GB de VRAM para Q4_K_M con imágenes, y 10-12 GB para Q8_0.
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090, A100 y H100 para mayor throughput. Cualquier GPU con 8 GB o más puede ejecutar las cuantizaciones bajas.
-- ¿Cabe en GPU de consumo? Sí: las cuantizaciones Q2_K a Q5_K_M caben en GPUs de 6-8 GB; Q8_0 y f16 requieren 10-16 GB.
-- Opciones de despliegue: llama.cpp (llama-cli, llama-server), text-generation-inference (etiqueta tgi), y cualquier frontend compatible con GGUF como Ollama o LM Studio (no confirmado explícitamente en la model card, pero habitual para GGUF).
-- Latencia y throughput estimados: no disponibles. El sufijo MTP sugiere decodificación multi-token prediction, que podría mejorar el throughput, pero no se aportan cifras.
+- VRAM estimada para inferencia: aproximadamente 2,1 GB (Q2_K) hasta 8,8 GB (f16) para los pesos, más el componente mmproj (0,5-0,8 GB) y el overhead de contexto de llama.cpp.
+- Cuantizaciones recomendadas para GPU consumer: Q4_K_S o Q4_K_M (2,7-2,9 GB), etiquetadas como "fast, recommended" por el autor de la cuantización.
+- GPU recomendadas: tarjetas con 6-8 GB de VRAM para cuantizaciones Q4-Q5 (RTX 3060, RTX 4060, RTX 2070); 12-16 GB para Q8_0 o f16 (RTX 4070 Ti, RTX 4080, RTX 4090); A100/H100 solo necesarias para despliegues de alto throughput con f16.
+- Cabe en GPU consumer: sí, en la mayoría de tarjetas con 6 GB o más usando Q4_K_M o inferiores.
+- Opciones de despliegue: llama.cpp (llama-cli), Ollama (importando el GGUF), text-generation-inference (según etiquetas), y cualquier runtime compatible con GGUF.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato | Notas |
-|---|---|---|---|---|---|---|
-| chandra-ocr-2-MTP-Repacked-GGUF (este) | ~4,3 B | no disponible | en | openrail | GGUF | Cuantizaciones estáticas de un modelo OCR multimodal |
-| prithivMLmods/chandra-ocr-2-MTP-Repacked | ~4,3 B | no disponible | en | openrail | safetensors | Modelo base del que deriva esta distribución |
-| datalab-to/chandra-ocr-2 | no disponible | no disponible | no disponible | openrail | no disponible | Modelo original de referencia |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| chandra-ocr-2-MTP-Repacked-GGUF | ~4,3 B | no disponible | GGUF | OpenRAIL | OCR multimodal, cuantizado para local |
+| prithivMLmods/chandra-ocr-2-MTP-Repacked | ~4,3 B | no disponible | safetensors | OpenRAIL | Modelo base sin cuantizar |
+| datalab-to/chandra-ocr-2 | no disponible | no disponible | no disponible | OpenRAIL | Modelo original de datalab-to |
 
-No se dispone de datos de rendimiento ni de otros modelos OCR comparables en la información proporcionada, por lo que la comparación se limita a parámetros, licencia y formato.
+No se dispone de datos de rendimiento comparado con otros modelos OCR (como Donut, Nougat o TrOCR) en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Idiomas: solo se declara inglés; el rendimiento en castellano u otros idiomas no está garantizado.
-- Sesgos conocidos: no disponibles; al ser un modelo OCR, puede heredar sesgos de los datos de entrenamiento del modelo original, pero no se documentan.
-- Riesgo de alucinación: en tareas de OCR y estructuración, el modelo puede generar texto plausible que no aparece en la imagen, especialmente en documentos de baja calidad o con layout complejo. Se recomienda validación posterior en producción.
-- Restricciones de licencia: OpenRAIL incluye cláusulas de uso responsable que pueden restringir ciertos usos; es necesario revisar el enlace a la licencia del modelo original antes de un despliegue comercial.
-- Cuantizaciones: las cuantizaciones bajas (Q2_K, Q3_K_S) degradan la calidad de reconocimiento; para OCR se recomienda Q5_K_M o superior.
-- Soporte del autor: el repositorio tiene cero descargas y cero likes, y el autor indica que las cuantizaciones ponderadas o con imatrix podrían no estar disponibles.
-- Contexto: se desconoce la longitud de contexto, lo que impide planificar el procesamiento de documentos largos sin pruebas previas.
-- Fecha de creación: el repositorio aparece creado en 2026-11-03, lo que puede indicar metadatos inconsistentes; conviene verificar la integridad de los archivos antes de usarlos.
+- Idioma: el modelo solo declara soporte de inglés; el rendimiento en castellano u otros idiomas no está garantizado.
+- Licencia OpenRAIL: incluye restricciones de uso (cláusulas de uso aceptable) que deben revisarse antes de un despliegue comercial; no es una licencia permisiva tipo Apache o MIT.
+- Riesgo de alucinación: como modelo generativo, puede producir texto plausible pero incorrecto en documentos con baja calidad de imagen o layouts atípicos.
+- Las cuantizaciones Q2_K y Q3_K pueden degradar notablemente la precisión del OCR; el autor recomienda Q4 o superiores para uso real.
+- No se documentan capacidades de tool calling ni agentes; no debe asumirse su disponibilidad.
+- El modelo es una cuantización de terceros: la responsabilidad sobre la calidad final recae en el modelo base, no en el cuantizador.
+- No hay datos publicados de benchmarks que permitan validar la calidad del OCR frente a alternativas.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/chandra-ocr-2-MTP-Repacked-GGUF
-- Modelo base (repack): https://huggingface.co/prithivMLmods/chandra-ocr-2-MTP-Repacked
+- Modelo base repackado: https://huggingface.co/prithivMLmods/chandra-ocr-2-MTP-Repacked
 - Modelo original: https://huggingface.co/datalab-to/chandra-ocr-2
-- Licencia del modelo original: https://huggingface.co/datalab-to/chandra-ocr-2/blob/main/LICENSE
-- Página de descargas del autor: https://hf.tst.eu/model#chandra-ocr-2-MTP-Repacked-GGUF
+- Licencia: https://huggingface.co/datalab-to/chandra-ocr-2/blob/main/LICENSE
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/chandra-ocr-2-MTP-Repacked-i1-GGUF
+- Página de descargas del cuantizador: https://hf.tst.eu/model#chandra-ocr-2-MTP-Repacked-GGUF
 - FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
-- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Comparativa de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Referencia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

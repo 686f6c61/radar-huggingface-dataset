@@ -2,133 +2,119 @@
 
 ## Resumen
 
-humanizer-cmf es un paquete de pesos cuantizados del modelo humanizer, un ajuste fino de 12B de parametros derivado de Google Gemma 4 12B. El modelo original lo desarrolla jialinyyzz y esta especializado en reescribir borradores escritos por IA (correos, ensayos, informes, publicaciones de foro) en ingles y chino para que suenen a texto humano, manteniendo intactos numeros, unidades, fechas, nombres y citas. Este repositorio lo publica el usuario infosave y no contiene el modelo en formatos habituales como safetensors o GGUF, sino empaquetado en archivos CMF de un solo fichero para `cortiq`, un motor de inferencia escrito en Rust sin Python ni frameworks de ML.
+humanizer-cmf es un paquete de cuantizacion del modelo humanizer 12B, un fine-tune de Gemma 4 12B de Google desarrollado por jialinyyzz. El modelo resuelve un problema concreto: reescribir borradores generados por IA (correos, ensayos, informes, publicaciones de foro) para que suenen a escritura humana, preservando de forma estricta numeros, unidades, fechas, nombres y citas. Este repositorio, publicado por infosave, empaqueta el modelo de texto en ficheros CMF unicos para cortiq, un motor de inferencia escrito en Rust que no depende de Python ni de frameworks de ML.
 
-La relevancia de esta ficha esta en el formato y el motor de ejecucion mas que en el modelo en si. `cortiq` permite ejecutar los pesos en GPU NVIDIA, AMD e Intel mediante Vulkan/DX12, en Apple silicon mediante Metal y en CPU, y los archivos CMF ya incorporan la plantilla de prompt y los parametros de muestreo de los autores originales. El repositorio ocupa 19,9 GB e incluye dos cuantizaciones: `q8_2f` (8 bits, 11,97 GB) y `q4tp-ffn` (4 bits en FFN con atencion y embeddings en 8 bits, 7,89 GB).
+La relevancia del paquete reside en su enfoque de despliegue: soporta GPUs NVIDIA mediante CUDA o Vulkan, GPUs AMD e Intel mediante Vulkan/DX12, Apple Silicon mediante Metal y CPU pura. El modelo base es un fine-tune de Gemma 4 12B, con soporte para ingles y chino, y se distribuye bajo licencia Apache 2.0. El repositorio acumula 1444 descargas y ocupa 39.7 GB.
 
-Se trata de un modelo de completado de texto, no de chat: cada peticion procesa un unico borrador y genera una reescritura. La licencia es Apache 2.0 y la longitud de contexto no esta especificada en la informacion disponible.
+La propuesta de valor es la combinacion de un modelo especializado en reescritura con preservacion factual y un runtime nativo de bajo nivel que elimina la capa de Python, lo que facilita el despliegue en entornos de produccion con requisitos de latencia y portabilidad estrictos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (heredada de Gemma 4 12B); detalles especificos no disponibles |
-| Parametros totales | 12B (aproximado, segun la model card: "humanizer 12B") |
-| Parametros activos | no aplica (modelo denso, no MoE) |
+| Arquitectura | Transformer (fine-tune de Gemma 4 12B) |
+| Parametros totales | 12B (segun denominacion del modelo base) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 8 bits (`q8_2f`); 4 bits en FFN con atencion y embeddings en 8 bits (`q4tp-ffn`) |
-| Idiomas soportados | Ingles (en) y chino (zh) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | CMF (formato unico del motor `cortiq`); existe una version GGUF en repositorio aparte |
+| Tipos de cuantizacion | 8-bit (q8_2f); 4-bit FFN con atencion y embeddings en 8-bit (q4tp-ffn) |
+| Idiomas soportados | en, zh |
+| Licencia | apache-2.0 |
+| Formato de pesos | CMF (formato propio de cortiq) |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente es un ajuste fino supervisado del modelo base humanizer de jialinyyzz, que a su vez deriva de Google Gemma 4 12B. Esta especializado en reescritura de texto con una restriccion explicita: conservar todos los numeros, unidades, fechas, nombres y citas del borrador original. No hay informacion disponible sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. El modelo es un completado de texto, no un modelo conversacional, y los archivos CMF incluyen la plantilla de prompt de los autores: una instruccion, una linea en blanco, el borrador sin espacios sobrantes y el marcador `### Rewritten:`.
+El modelo subyacente es un fine-tune de Gemma 4 12B, un transformer denso de 12 mil millones de parametros. El fine-tune esta orientado a una tarea de reescritura de texto con preservacion factual: el modelo recibe un borrador y produce una version reescrita que mantiene cada numero, unidad, fecha, nombre y cita. El modelo es de completado de texto, no de chat: cada fichero CMF incorpora la plantilla de prompt del autor, que construye la instruccion, una linea en blanco, el borrador sin espacios circundantes y el marcador `### Rewritten:`. La generacion termina en el token de fin de secuencia.
 
-La innovacion de este repositorio no esta en el modelo, sino en el empaquetado CMF y el motor `cortiq`. Es un motor de inferencia nativo (Rust) que no depende de Python ni de frameworks de ML y que ofrece soporte para Vulkan/DX12 (GPU NVIDIA, AMD e Intel), Metal (Apple silicon) y CPU. Los archivos CMF encapsulan los pesos, la plantilla de prompt y la configuracion de muestreo de los autores (temperatura 1.0, top-p 0.95, top-k y min-p desactivados, penalizacion de repeticion 1.0), de modo que `cortiq run` y el endpoint `/v1/chat/completions` construyen la instruccion automaticamente a partir del borrador.
+El repositorio de infosave no aporta detalles sobre el dataset de entrenamiento, el numero de tokens, la composicion de los datos ni si hubo RLHF o DPO; esa informacion no esta disponible en la documentacion proporcionada. La innovacion tecnica destacable esta en el empaquetado: los ficheros CMF son formatos unicos optimizados para cortiq, un motor en Rust que soporta CUDA, Vulkan, DX12, Metal y CPU sin dependencias de Python. Se ofrecen dos variantes cuantizadas con metricas de fidelidad respecto a los pesos bf16 originales: `q8_2f` alcanza un 99.4 % de coincidencia top-1, KL de 0.0008 y perplejidad de 2.1174 (bf16: 2.1168); `q4tp-ffn` alcanza un 95.5 % top-1, KL de 0.020 y perplejidad de 2.1555.
 
 ## Capacidades
 
-- Reescritura de texto para reducir rasgos detectables como generados por IA en ingles y chino.
-- Preservacion factual: mantiene numeros, unidades, fechas, nombres y citas tal cual aparecen en el borrador.
-- Generacion de texto de tipo completion, con longitud de salida similar a la del borrador de entrada (por ejemplo, 932 tokens de salida para un borrador de 957 tokens).
-- Funcionamiento con una sola pasada por peticion: un borrador por solicitud.
-- Soporte de los parametros de muestreo de los autores y posibilidad de sobreescribirlos.
-- No se documenta soporte de tool calling ni de function calling.
-- No se documenta soporte de agentes ni de razonamiento multi-paso.
-- No se documenta capacidad de vision, audio ni modo de razonamiento explicito.
-- El endpoint `/v1/chat/completions` esta disponible, pero ignora los mensajes de sistema y los turnos previos.
+- Reescritura de texto para que suene humano, en ingles y chino.
+- Preservacion estricta de numeros, unidades, fechas, nombres y citas durante la reescritura.
+- Generacion de texto de completado (no conversacional): una reescritura por peticion.
+- Procesamiento de borradores de correos, ensayos, informes y publicaciones de foro.
+- No soporta tool calling ni function calling (no documentado).
+- No soporta modo agente ni razonamiento multi-paso (no documentado).
+- No soporta vision ni audio (modelo de texto).
+- No soporta conversaciones multi-turno: los mensajes de sistema y turnos previos se ignoran.
 
 ## Casos de uso
 
-- Reescritura de correos profesionales: el modelo transforma borradores generados por IA en textos que suenan naturales, conservando importes, fechas y nombres, algo critico en comunicaciones comerciales donde un dato alterado seria un error grave.
-- Publicaciones en foros y comunidades: permite humanizar respuestas generadas automaticamente para que encajen en el tono de una comunidad, con contexto de una sola intervencion.
-- Ensayos y trabajos academicos: reescribe parrafos manteniendo citas y referencias intactas, util como paso previo a una revision manual.
-- Informes y documentacion tecnica: reescribe secciones de informes generados por IA conservando cifras y unidades, reduciendo el riesgo de que un dato se distorsione en el proceso.
-- Contenido multilingue ingles-chino: al cubrir ambos idiomas, sirve para adaptar borradores en entornos bilingues sin cambiar de modelo.
-- Integracion en aplicaciones de escritorio: los autores publican una app de escritorio para Mac y Windows que usa estos pesos como motor local, sin enviar datos a la nube.
-- Despliegue ligero en hardware de consumo: con el archivo `q4tp-ffn` (7,89 GB, pico de 10,3 GB) puede ejecutarse en GPU de 12 GB, lo que permite integrarlo en equipos de sobremesa.
-- Servicio HTTP local persistente: mediante `cortiq serve` se evita recargar los pesos en cada peticion, adecuado para reescribir varios borradores seguidos.
+- Reescritura de correos profesionales: el modelo toma un borrador generado por IA y lo reformula para que suene natural, manteniendo cifras, fechas y nombres intactos, lo que resulta adecuado para comunicaciones comerciales donde la precision factual es critica.
+- Humanizacion de ensayos y articulos: permite a editores y creadores de contenido pasar borradores por el modelo para reducir la deteccion de texto generado por IA, con la garantia de que los datos citados no se alteran.
+- Generacion de informes internos: en flujos donde se redactan informes con IA y se requiere un tono humano antes de su distribucion, el modelo reescribe el borrador preservando todas las metricas y referencias.
+- Publicaciones en foros y comunidades: util para adaptar respuestas generadas automaticamente a un registro mas cercano al de un usuario humano, en ingles o chino.
+- Despliegue en entornos sin Python: gracias a cortiq, el modelo puede integrarse en pipelines de produccion en Rust sobre GPUs NVIDIA, AMD, Intel, Apple Silicon o CPU, sin necesidad de instalar frameworks de ML.
+- Procesamiento por lotes en estaciones de trabajo con GPU de 12 GB: la variante `q4tp-ffn` (7.89 GB) permite ejecutar reescrituras en GPUs de gama media con un rendimiento de 41.6 tokens/s en una RTX PRO 4000.
+- Aplicaciones de escritorio locales: el modelo base dispone de una app de escritorio para Mac y Windows, y el paquete CMF permite integrar la reescritura en herramientas locales sin conexion.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks clasicos (MMLU, HumanEval, GSM8K) en la informacion disponible. La model card si incluye evaluaciones de los autores del modelo original y mediciones de calidad y rendimiento de los archivos CMF.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. Los datos aportados por el autor son metricas de fidelidad de cuantizacion y de rendimiento de inferencia:
 
-Evaluaciones reportadas por los autores (sobre sus pesos bf16, no sobre los archivos CMF):
+| Metrica | q8_2f | q4tp-ffn |
+|---|---|---|
+| Coincidencia top-1 vs bf16 | 99.4 % | 95.5 % |
+| Divergencia KL vs bf16 | 0.0008 | 0.020 |
+| Perplejidad | 2.1174 | 2.1555 |
+| Tamano | 11.97 GB | 7.89 GB |
+| Memoria GPU pico | 15.3 GB | 10.3 GB |
 
-| Metrica | Resultado |
-|---|---|
-| Originality.ai (ajuste mas estricto), reescrituras en ingles | 95 % de 210 reescrituras juzgadas humanas |
-| Juicio de LLM estricto, ausencia de problemas factuales | 376 de 420 reescrituras en ingles sin problema factual |
+Rendimiento de decodificacion (cortiq bench, una secuencia):
 
-Calidad de las cuantizaciones CMF frente a los pesos bf16 de los autores (2.051 tokens de seis borradores; perplexity bf16: 2,1168):
-
-| Archivo | Pesos | Tamano | top-1 vs bf16 | KL | Perplexity | Memoria GPU pico |
-|---|---|---:|---:|---:|---:|---:|
-| `humanizer-12b-q8_2f.cmf` | 8 bits | 11,97 GB | 99,4 % | 0,0008 | 2,1174 | 15,3 GB |
-| `humanizer-12b-q4tp-ffn.cmf` | 4 bits FFN, 8 bits atencion y embeddings | 7,89 GB | 95,5 % | 0,020 | 2,1555 | 10,3 GB |
-
-Rendimiento (`cortiq bench --core --ignore-eos`, un flujo, cortiq 0.8.16):
-
-| Hardware | Backend | Archivo | Decodificacion (tok/s) | 1k tokens de prompt (tok/s) | Tiempo al primer token |
+| Hardware | Backend | Fichero | Decode (tok/s) | Prompt 1k (tok/s) | TTFT |
 |---|---|---|---:|---:|---:|
-| RTX PRO 4000 Blackwell (24 GB) | Vulkan | `q4tp-ffn` | 41,6 | 137 | 6,9 s |
-| RTX PRO 4000 Blackwell (24 GB) | Vulkan | `q8_2f` | 31,7 | 90,2 | 10,8 s |
-| Mac mini M4 (24 GB) | Metal | `q8_2f` | 6,6 | 68 | 14,7 s |
-| Mac mini M4 (24 GB) | Metal | `q4tp-ffn` | 8,5 | 72 | 14,0 s |
-| Mac mini M4 (24 GB) | CPU | `q8_2f` | 4,7 | no disponible | no disponible |
-| Mac mini M4 (24 GB) | CPU | `q4tp-ffn` | 4,6 | no disponible | no disponible |
+| RTX PRO 4000 Blackwell (24 GB) | Vulkan | q4tp-ffn | 41.6 | 430 | 2.3 s |
+| RTX PRO 4000 Blackwell (24 GB) | Vulkan | q8_2f | 31.7 | 393 | 2.6 s |
+| Mac mini M4 (24 GB) | Metal | q8_2f | 6.6 | 68 | 14.7 s |
+| Mac mini M4 (24 GB) | Metal | q4tp-ffn | 8.5 | 72 | 14.0 s |
+| Mac mini M4 (24 GB) | CPU | q8_2f | 4.7 | no disponible | no disponible |
+| Mac mini M4 (24 GB) | CPU | q4tp-ffn | 4.6 | no disponible | no disponible |
+| RTX A5000 (24 GB) | CUDA | q4tp-ffn | 48.1–48.6 | 958 (prompt 4096) | 4.3 s |
+| RTX A5000 (24 GB) | Vulkan | q4tp-ffn | 43.2 | 654 (prompt 4096) | no disponible |
 
-Reescrituras completas mediante `cortiq serve`:
-
-| Hardware | Archivo | Borrador de 957 tokens: primer token | Reescritura completa | Velocidad de reescritura | Correo de 362 tokens |
-|---|---|---:|---:|---:|---:|
-| RTX PRO 4000 Blackwell | `q4tp-ffn` | 7,5 s | 901 tokens en 37,1 s | 30,1 tok/s | 10,6 s |
-| RTX PRO 4000 Blackwell | `q8_2f` | 11,2 s | 932 tokens en 48,9 s | 24,7 tok/s | 14,8 s |
-
-En una comprobacion factual greedy sobre tres borradores, `q8_2f` conservo todos los hechos y `q4tp-ffn` escribio un importe de forma distinta ("$186.000" como "$186k").
+El autor reporta ademas que Originality.ai en su configuracion mas estricta juzgo como humana el 95 % de 210 reescrituras en ingles, y que un juez LLM estricto no encontro problemas factuales en 376 de 420 reescrituras en ingles. Estas mediciones corresponden a los ficheros del autor original, no a los ficheros CMF.
 
 ## Requisitos de hardware
 
-- VRAM estimada: `q8_2f` requiere unos 15,3 GB de memoria GPU en pico con un prompt de 1.000 tokens; `q4tp-ffn` unos 10,3 GB.
-- GPU recomendadas: RTX PRO 4000 Blackwell (24 GB) es la plataforma medida; cualquier GPU con 16 GB o mas para `q8_2f`.
-- Consumer GPU: `q4tp-ffn` (7,89 GB) cabe en GPU de 12 GB; `q8_2f` necesita 16 GB o mas.
-- Apple silicon: ambos archivos se ejecutan en un Mac mini M4 de 24 GB; se recomienda `q8_2f` porque el archivo de 4 bits no es mas rapido alli y lee el prompt mas despacio. Decodificacion de 6,6 tok/s (Metal, `q8_2f`) y 8,5 tok/s (Metal, `q4tp-ffn`).
-- CPU: ejecutable directamente (4,7 tok/s con `q8_2f` y 4,6 con `q4tp-ffn` en el M4), a costa de latencia alta.
-- Opciones de despliegue: motor `cortiq` (CLI `cortiq run`, servidor `cortiq serve`, endpoint `/v1/chat/completions`); se requiere cortiq 0.8.16 o superior. Existe una version GGUF en un repositorio aparte para su uso con llama.cpp.
-- Latencia: en la RTX PRO 4000, el tiempo al primer token es de 7,5 s (`q4tp-ffn`) y 11,2 s (`q8_2f`) con un borrador de 957 tokens; la carga inicial de pesos en GPU tarda unos 13 s, por lo que conviene mantener `cortiq serve` en ejecucion.
+- VRAM estimada: 15.3 GB para `q8_2f` y 10.3 GB para `q4tp-ffn` (memoria GPU pico medida con prompt de 1000 tokens en una RTX PRO 4000).
+- GPU recomendadas: RTX PRO 4000 Blackwell (24 GB), RTX A5000 (24 GB), GPUs con 16 GB o mas para `q8_2f` y GPUs con 12 GB para `q4tp-ffn`.
+- Cabe en GPU de consumo: si, en GPUs con 12 GB o mas usando `q4tp-ffn`; en GPUs de 16 GB o mas con `q8_2f`.
+- Apple Silicon: ambos ficheros funcionan en un Mac mini M4 de 24 GB mediante Metal o CPU.
+- Opciones de despliegue: cortiq (requiere version 0.8.16 o posterior), con binarios precompilados para Linux, macOS y Windows; soporta CUDA, Vulkan, DX12, Metal y CPU. No se mencionan otros runtimes (vLLM, llama.cpp, Ollama, TGI) para los ficheros CMF.
+- Latencia y throughput: 41.6 tok/s (q4tp-ffn) y 31.7 tok/s (q8_2f) en RTX PRO 4000; 48.1–48.6 tok/s en RTX A5000 con CUDA; 8.5 tok/s en Mac mini M4 con Metal. Una reescritura completa de un borrador de 957 tokens tarda 28.9 s (q4tp-ffn) o 36.4 s (q8_2f) en RTX PRO 4000.
+- Nota: `cortiq run` carga los pesos en GPU en cada arranque (primer token tras unos 4 s en RTX PRO 4000); para procesar varios borradores conviene mantener `cortiq serve` en ejecucion.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| infosave/humanizer-cmf (este) | 12B | no disponible | CMF (cortiq) | Apache 2.0 | Hugging Face, 0 descargas |
-| jialinyyzz/humanizer | 12B | no disponible | pesos bf16 en HF transformers | Apache 2.0 (segun la model card) | Hugging Face (modelo base) |
-| jialinyyzz/humanizer-GGUF | 12B | no disponible | GGUF (llama.cpp) | Apache 2.0 (segun la model card) | Hugging Face (variante oficial) |
-| Google Gemma 4 12B | 12B | no disponible | safetensors y otros | licencia de Gemma | Hugging Face (modelo base original) |
+No se dispone de datos de benchmarks estandar ni de modelos comparables documentados en la informacion proporcionada. El modelo base (humanizer de jialinyyzz) dispone de ficheros GGUF para llama.cpp y una app de escritorio, pero no se aportan metricas comparativas frente a otros modelos de reescritura.
 
-No se dispone de modelos comparables de reescritura o humanizacion de texto con datos de rendimiento publicados en la informacion proporcionada, por lo que la comparativa se limita a las variantes del propio modelo y a su base.
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
+|---|---|---|---|---|---|
+| humanizer-cmf (este) | 12B | no disponible | en, zh | apache-2.0 | CMF |
+| humanizer (base) | 12B | no disponible | en, zh | apache-2.0 | safetensors, GGUF |
+| no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no se documentan en la informacion disponible.
-- Riesgo de alucinacion: la cuantizacion `q4tp-ffn` puede modificar ligeramente datos ("$186.000" reescrito como "$186k" en una prueba), lo que exige revision en contextos donde el formato exacto de cifras sea critico.
-- Limitaciones de contexto e idioma: solo cubre ingles y chino, y la longitud de contexto no esta documentada.
-- Modelo de completado, no conversacional: ignora mensajes de sistema y turnos previos, y procesa un unico borrador por peticion.
-- No se deben anadir cadenas de parada, especialmente `"###"`, porque la generacion termina en el token de fin de secuencia.
-- Licencia: Apache 2.0 permite uso comercial, pero la model card del modelo base debe consultarse para confirmar condiciones y atribucion.
-- Requisito de software: los archivos CMF solo funcionan con el motor `cortiq` 0.8.16 o superior; no son compatibles con vLLM, TGI, Ollama ni llama.cpp.
-- Repositorio con 0 descargas y 1 like: se trata de una publicacion de terceros (infosave) sobre los pesos de otro autor (jialinyyzz), sin historial de uso contrastado.
-- Las metricas de calidad humana y factual reportadas corresponden a los archivos de los autores originales, no a los archivos CMF de este repositorio.
+- Modelo de completado de texto, no de chat: no admite mensajes de sistema ni turnos previos; se ignora todo lo que no sea el borrador.
+- Una reescritura por peticion; no esta disenado para conversaciones multi-turno.
+- Solo soporta ingles y chino; no hay soporte documentado de otros idiomas.
+- No se documentan capacidades de tool calling, agentes, vision ni audio.
+- Riesgo de alucinacion: aunque el modelo esta entrenado para preservar numeros, unidades, fechas, nombres y citas, en la variante `q4tp-ffn` se observo una alteracion de formato en una prueba ("$186,000" reescrito como "$186k"), lo que indica que la cuantizacion agresiva puede afectar a la fidelidad factual.
+- La licencia Apache 2.0 permite uso comercial, pero se desconoce si el modelo base Gemma 4 12B impone restricciones adicionales que pudieran prevalecer.
+- No se debe anadir cadenas de parada, especialmente `"###"`, porque la generacion termina en el token de fin de secuencia.
+- El rendimiento en CPU es bajo (4.6–4.7 tok/s en Mac mini M4), lo que limita su uso en produccion sin GPU.
+- La informacion sobre el dataset de entrenamiento, el contexto maximo y los sesgos conocidos no esta disponible.
 
 ## Enlaces
 
-- Hugging Face del modelo: https://huggingface.co/infosave/humanizer-cmf
+- Repositorio Hugging Face: https://huggingface.co/infosave/humanizer-cmf
 - Modelo base: https://huggingface.co/jialinyyzz/humanizer
-- Detalles de evaluacion del autor original: https://huggingface.co/jialinyyzz/humanizer#evaluation-details
-- Archivos GGUF para llama.cpp: https://huggingface.co/jialinyyzz/humanizer-GGUF
-- Repositorio del motor CMF: https://github.com/infosave2007/cmf
-- Binarios precompilados del motor: https://github.com/infosave2007/cmf/releases
-- Codigo fuente y documentacion de humanizer: https://github.com/sgaofen/humanizer-local-model
-- Aplicacion de escritorio (Mac y Windows): https://github.com/sgaofen/humanizer-local-model/releases/latest
-- Modelo base original de Google: https://huggingface.co/google/gemma-4-12B
+- Evaluacion del autor: https://huggingface.co/jialinyyzz/humanizer#evaluation-details
+- Ficheros GGUF para llama.cpp: https://huggingface.co/jialinyyzz/humanizer-GGUF
+- App de escritorio para Mac y Windows: https://github.com/sgaofen/humanizer-local-model/releases/latest
+- Codigo y documentacion: https://github.com/sgaofen/humanizer-local-model
+- Motor cortiq (CMF): https://github.com/infosave2007/cmf
+- Binarios precompilados de cortiq: https://github.com/infosave2007/cmf/releases
+- Gemma 4 12B: https://huggingface.co/google/gemma-4-12B

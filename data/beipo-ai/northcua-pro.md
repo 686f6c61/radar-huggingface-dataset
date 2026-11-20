@@ -2,85 +2,107 @@
 
 ## Resumen
 
-NorthCUA-Pro es un modelo multimodal de la familia Qwen 3.5 MoE publicado por beipo-ai en Hugging Face bajo licencia Apache 2.0. El repositorio se presenta como una carga de pesos en curso: según la model card, la subida oficial de los pesos de NorthCUA-Pro está en progreso y el repositorio todavía no constituye un modelo completo descargable. La tarjeta final y el manifiesto de integridad se publicarán una vez verificados los 122 shards de pesos.
+NorthCUA-Pro es un modelo multimodal de tipo *computer-use* (uso de ordenador) desarrollado por beipo-ai, construido sobre la arquitectura Qwen3.5 y publicado bajo licencia Apache-2.0. Con 396.802.360.816 parámetros totales (aproximadamente 397B) y 17B parámetros activos por token, se trata de un modelo de mezcla de expertos (MoE) disenado especificamente para operar interfaces graficas: recibe instrucciones del usuario, capturas de pantalla e historial de interaccion, y genera razonamiento, respuestas y llamadas a herramientas para un entorno de escritorio o navegador.
 
-El pipeline declarado es image-text-to-text, lo que sitúa al modelo en la categoría de modelos multimodales con entrada de imagen y texto y salida de texto. La arquitectura etiquetada es qwen3_5_moe, es decir, un transformer con mezcla de expertos (MoE) basado en la familia Qwen 3.5. El tamaño del repositorio es de 386,4 GB, un volumen coherente con un modelo MoE de gran escala distribuido en 122 fragmentos de pesos en formato safetensors.
+El modelo forma parte de una familia de tres variantes (Nano de 9B denso, Mini de 35B MoE con 3B activos y Pro de 397B MoE con 17B activos). Su propuesta central es el entrenamiento de agentes de uso de ordenador mediante experiencia verificada a escala, combinando interaccion sostenida, experiencia validada y aprendizaje por etapas para completar tareas a traves de estados de software cambiantes.
 
-La relevancia de esta ficha es doble: por un lado, documenta un modelo de la estirpe Qwen 3.5 MoE con capacidades multimodales; por otro, advierte de que en el momento de la consulta el repositorio no es descargable de forma íntegra y carece de model card completa, benchmarks y especificaciones detalladas. Cualquier evaluación práctica debe posponerse hasta que el autor publique el manifiesto de integridad y la documentación definitiva.
+Es relevante ahora porque aborda uno de los cuellos de botella practicos de los agentes autonomos: la verificacion de resultados intermedios y finales en entornos reales. Su publicacion incluye un informe tecnico de 121 paginas y un arnes oficial (NorthCUA Harness) que el autor declara necesario para el uso correcto del modelo, con un contrato estricto de coordenadas normalizadas en el espacio 0-1000.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | qwen3_5_moe (transformer con mezcla de expertos, multimodal image-text-to-text) |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible |
+| Arquitectura | Mezcla de expertos (MoE) sobre Qwen3.5; multimodal image-text-to-text |
+| Parametros totales | 396.802.360.816 (~397B) |
+| Parametros activos | 17B por token |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se documentan variantes GGUF, AWQ ni GPTQ) |
+| Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (122 shards según la model card) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
 
-La etiqueta de arquitectura qwen3_5_moe indica un transformer con capas de mezcla de expertos (MoE) perteneciente a la familia Qwen 3.5. El pipeline image-text-to-text confirma que el modelo acepta entradas multimodales (imagen y texto) y genera texto, lo que implica un codificador visual integrado junto con el tronco de lenguaje. El tamaño del repositorio, 386,4 GB repartidos en 122 shards de safetensors, sugiere un modelo de gran escala, aunque no se dispone del desglose de parámetros totales ni activos.
+NorthCUA-Pro es un transformer de mezcla de expertos construido sobre Qwen3.5, con 397B parametros totales y 17B activos por token. El modelo procesa entradas multimodales (instrucciones de texto, capturas de pantalla e historial de interaccion) y produce razonamiento, respuestas y llamadas a herramientas orientadas a un runtime de escritorio o navegador. Segun la model card, el entrenamiento combina aprendizaje supervisado (SFT) con aprendizaje por refuerzo (RL) conjunto sobre dominios de escritorio y web; los resultados de *grounding* se reportan sobre checkpoints SFT y los de completado de tareas sobre checkpoints RL posteriores.
 
-No se ha publicado información sobre el número de tokens de entrenamiento, la composición del dataset, las fases de alineación (RLHF, DPO) ni innovaciones técnicas específicas como decodificación especulativa o mecanismos de atención lineal. La model card únicamente indica que la carga de pesos está en progreso y que la tarjeta final se publicará tras verificar los 122 shards.
+La innovacion tecnica destacada es el entrenamiento de agentes de uso de ordenador a partir de trayectorias largas y completas, que ensenan pasos dependientes, artefactos intermedios y verificacion de resultados, en lugar de acciones aisladas. El modelo exige un contrato estricto de coordenadas: todas las acciones GUI usan el espacio normalizado 0-1000 (no pixeles crudos), y el arnes oficial convierte esas coordenadas a pixeles en el momento de la ejecucion. No se detalla en la informacion disponible el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron tecnicas como DPO o decodificacion especulativa.
 
 ## Capacidades
 
-- Generación de texto a partir de entradas multimodales (imagen y texto), según el pipeline image-text-to-text declarado.
-- Procesamiento de imágenes junto con instrucciones en lenguaje natural, orientado a tareas de comprensión visual y respuesta conversacional.
-- Arquitectura MoE de la familia Qwen 3.5, que en la estirpe Qwen suele incluir capacidades de razonamiento y generación de código; no obstante, no se documentan explícitamente en la información disponible.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible; el campo de idiomas no está relleno en la ficha de Hugging Face.
-- Modo thinking, visión avanzada o audio: no disponible.
+- Generacion de texto y razonamiento multimodal a partir de instrucciones y capturas de pantalla.
+- *Visual grounding* para localizar elementos de interfaz en aplicaciones de escritorio y flujos web.
+- Llamadas a herramientas (*tool calling*) integradas con el NorthCUA Harness para ejecutar acciones.
+- Razonamiento multi-paso y tareas de agente con dependencias entre pasos y verificacion de resultados.
+- Manejo de trayectorias largas con artefactos intermedios.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
+- Modo de pensamiento (*thinking*), vision o audio adicionales: no disponibles.
 
 ## Casos de uso
 
-- Asistencia conversacional multimodal en atención al cliente: el modelo podría recibir capturas de pantalla o fotos de producto junto con la consulta del usuario y responder en texto, aprovechando su pipeline image-text-to-text. Requiere validación previa de la integridad de los pesos.
-- Análisis de documentos escaneados: extracción de información de facturas, formularios o tickets mediante entrada de imagen y salida de texto estructurado, una vez disponible la model card definitiva con las especificaciones de contexto.
-- Automatización de soporte técnico con capturas de error: el usuario adjunta una imagen del fallo y el modelo genera una diagnosis textual o pasos de resolución.
-- Moderación de contenido visual con descripción textual: clasificación y descripción de imágenes en pipelines de revisión, sujeto a la licencia Apache 2.0 que permite uso comercial.
-- Prototipado de asistentes de accesibilidad: descripción de imágenes para usuarios con discapacidad visual, generando texto descriptivo a partir de la entrada visual.
-- Investigación en modelos MoE multimodales: el repositorio, una vez completo, serviría como base para experimentos de ajuste fino y evaluación de arquitecturas Qwen 3.5 MoE con entrada visual, dado que la licencia Apache 2.0 facilita la experimentación.
-
-En todos los casos, el uso en producción queda condicionado a que el autor complete la subida de los 122 shards y publique el manifiesto de integridad, ya que actualmente el repositorio no es un modelo descargable completo.
+- Automatizacion de tareas de escritorio: el modelo recibe la instruccion y capturas de pantalla del entorno y genera acciones GUI (clics, escritura, navegacion) en coordenadas normalizadas, adecuado para RPA de nueva generacion sobre aplicaciones nativas.
+- Agentes de navegacion web: completado de flujos en WebArena-Verified con hasta 100 pasos por tarea, util para pruebas de regresion de flujos de usuario en entornos web controlados.
+- Verificacion de resultados en pipelines: al entrenarse con trayectorias completas, puede comprobar artefactos intermedios y el resultado final, lo que encaja en tareas de QA automatizado de procesos de negocio.
+- Soporte a operaciones de TI: ejecucion guiada de tareas repetitivas en paneles de administracion y consolas, con el arnes gestionando la conversion de coordenadas a pixeles.
+- Investigacion en agentes autonomos: su familia Nano/Mini/Pro permite escalar experimentos desde 9B hasta 397B manteniendo la misma interfaz de arnes y el mismo contrato de coordenadas.
+- Generacion de datos de interaccion sintetica: uso del modelo para producir trayectorias etiquetadas en entornos simulados, aprovechando su *grounding* de alta precision en ScreenSpot-Pro (93,30% de exactitud reportada en SFT).
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+Resultados reportados en el informe tecnico de NorthCUA. El autor advierte que no estan vinculados a una exportacion exacta de checkpoint y no son mediciones nuevas de los ficheros de este repositorio.
+
+| Benchmark | Etapa / metrica | Nano 9B | Mini 35B | Pro 397B |
+|---|---|---|---|---|
+| ScreenSpot-Pro | SFT, exactitud (%) | 72,87 | 92,41 | 93,30 |
+| OSWorld-G | SFT, exactitud (%) | 82,98 | 87,94 | 90,96 |
+| OSWorld-Verified | RL, exito (%) | 78,90 | 85,30 | 88,64 |
+| WebArena-Verified | RL, exito (%) | 67,16 | 70,43 | 73,89 |
+
+Comparativa SFT frente a RL dentro de la familia:
+
+| Modelo | OSWorld SFT | OSWorld RL | WebArena SFT | WebArena RL |
+|---|---|---|---|---|
+| Nano | 76,05 | 78,90 | 64,16 | 67,16 |
+| Mini | 83,29 | 85,30 | 67,98 | 70,43 |
+| Pro | 85,87 | 88,64 | 69,58 | 73,89 |
+
+Condiciones de evaluacion segun el informe: ScreenSpot-Pro con 1.581 ejemplos y una prediccion por captura, sin busqueda iterativa de zoom/recorte; OSWorld-G con 564 instrucciones refinadas y mejor de tres ejecuciones completas (temperatura 0,7, top-p 0,95, top-k 40, 1.024 tokens de salida, coordenadas 0-1000); OSWorld-Verified con 361 tareas (excluidas ocho de Google Drive) y limite de 100 pasos; WebArena-Verified con 812 tareas y comprobaciones oficiales, tambien con limite de 100 pasos. En OSWorld 2.0 (108 tareas, limite de 500 pasos) el informe cita un 66,80% de credito parcial medio para Pro tras RL, metrica que no equivale a tasa de completado total.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible con precisión; el repositorio ocupa 386,4 GB en safetensors, lo que en precisión completa requeriría varios aceleradores de gama alta. No se documentan cuantizaciones que permitan reducir el requisito.
-- GPU recomendadas: no disponible; por el volumen de pesos, un despliegue en precisión nativa requeriría múltiples GPU de centro de datos (A100, H100) con agregación de memoria, pero el autor no especifica configuraciones.
-- Compatibilidad con GPU de consumo: no confirmada; el tamaño de los pesos hace improbable que quepa en una sola GPU de consumo sin cuantización, y no se ofrecen variantes cuantizadas.
-- Opciones de despliegue: no disponible; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: no disponible en la informacion proporcionada. Con 397B parametros totales, la carga completa de pesos en bf16 supera ampliamente la memoria de cualquier GPU consumer; el repo ocupa 793,6 GB.
+- GPU recomendadas: no disponibles en la informacion proporcionada. Por tamano, el despliegue requeriria multiples aceleradores de clase centro de datos (A100, H100 u equivalentes) en configuracion multi-GPU o multi-nodo.
+- GPU consumer: no cabe en GPU consumer por el volumen de pesos, aunque el computo por token sea de 17B activos.
+- Opciones de despliegue: libreria transformers como via principal; el autor exige el NorthCUA Harness para el uso como agente. No se confirman integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Arquitectura | Parámetros | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros totales | Activos | Contexto | OSWorld-Verified (RL) | Licencia |
 |---|---|---|---|---|---|
-| NorthCUA-Pro | qwen3_5_moe, image-text-to-text | no disponible | no disponible | Apache 2.0 | Repositorio incompleto (carga en progreso) |
-| Qwen2.5-VL | Transformer multimodal | no disponible en esta ficha | no disponible en esta ficha | Apache 2.0 (según variante) | Pesos publicados y documentados |
-| Qwen3 MoE | Transformer MoE | no disponible en esta ficha | no disponible en esta ficha | Apache 2.0 (según variante) | Pesos publicados y documentados |
+| NorthCUA-Pro | 397B | 17B | no disponible | 88,64% | Apache-2.0 |
+| NorthCUA-Mini | 35B | 3B | no disponible | 85,30% | Apache-2.0 |
+| NorthCUA-Nano | 9B | 9B (denso) | no disponible | 78,90% | Apache-2.0 |
 
-No se dispone de datos de rendimiento de NorthCUA-Pro que permitan una comparación cuantitativa con alternativas. La comparativa se limita a la categoría (modelos Qwen multimodales y MoE) y a la disponibilidad del repositorio.
+No se dispone de datos de benchmarks de modelos externos comparables en la informacion proporcionada; la comparativa se limita a la propia familia NorthCUA.
 
 ## Limitaciones y advertencias
 
-- El repositorio no es actualmente un modelo completo descargable: la model card indica que la subida de los 122 shards está en progreso y que el manifiesto de integridad se publicará tras la verificación.
-- Ausencia de model card definitiva: no hay información sobre datos de entrenamiento, alineación, sesgos ni evaluación.
-- Sin benchmarks publicados: no es posible estimar el rendimiento real frente a alternativas.
-- Idiomas no especificados: se desconoce la cobertura multilingüe y la calidad en castellano.
-- Sin cuantizaciones documentadas: el despliegue eficiente en hardware limitado no está soportado por el autor.
-- Riesgo de alucinación: no evaluado por el autor; debe asumirse el comportamiento típico de los modelos generativos multimodales.
-- Licencia Apache 2.0: permite uso comercial y modificación, pero el estado incompleto del repositorio impide ejercer esos derechos sobre los pesos finales hasta su publicación.
-- Descargas y likes nulos en el momento de la consulta, lo que refleja la novedad del repositorio y la ausencia de validación comunitaria.
+- Los resultados de benchmarks provienen del informe tecnico y no estan vinculados a una exportacion exacta de checkpoint; no son mediciones de los ficheros publicados en el repositorio.
+- El uso como agente requiere el NorthCUA Harness oficial; sin el, las llamadas a herramientas y la conversion de coordenadas no funcionan segun el diseno previsto.
+- Contrato estricto de coordenadas normalizadas 0-1000: cualquier integracion que espere pixeles crudos producira acciones incorrectas.
+- Sesgos conocidos: no disponibles en la informacion proporcionada.
+- Riesgo de alucinacion: no cuantificado en la informacion disponible; en tareas de agente, una accion erronea sobre una GUI real puede tener efectos irreversibles.
+- Idiomas soportados: no disponibles; no se puede confirmar cobertura multilingue.
+- Longitud de contexto: no disponible, lo que impide planificar tareas con historiales muy largos.
+- Licencia Apache-2.0: permite uso comercial, pero conviene revisar las condiciones del arnes y de los pesos base Qwen3.5.
+- El modelo esta disenado para entornos de escritorio y navegador; su rendimiento fuera de ese dominio no esta documentado.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/beipo-ai/NorthCUA-Pro
+- Modelo en Hugging Face: https://huggingface.co/beipo-ai/NorthCUA-Pro
+- Licencia: https://huggingface.co/beipo-ai/NorthCUA-Pro/blob/main/LICENSE
+- Pagina del proyecto: https://beipo.top/blog/northcua/
+- Repositorio del arnes: https://github.com/china-qijizhifeng/NorthCUA-Harness
+- NorthCUA-Nano: https://huggingface.co/beipo-ai/NorthCUA-Nano
+- NorthCUA-Mini: https://huggingface.co/beipo-ai/NorthCUA-Mini
+- Paper (referencia arXiv en tags): arxiv:2611.02102

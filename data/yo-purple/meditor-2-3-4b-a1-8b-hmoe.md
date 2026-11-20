@@ -2,100 +2,112 @@
 
 ## Resumen
 
-Meditor-2-3.4B-A1.8B-HMoE es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) jerarquico desarrollado por Yo-Purple, construido mediante "upcycling" del modelo denso SmolLM2-1.7B-Instruct de Hugging Face. El modelo almacena 3.410.955.032 parametros (3,41B) en formato BF16 (6,35 GB) y activa aproximadamente 1.825 millones de parametros por token, lo que supone una ratio de activacion del 53,52%. Su innovacion principal es una arquitectura de enrutamiento en dos niveles (two-tier routing) que dirige cada token primero a uno de tres dominios macro y despues a uno de cinco sub-expertos dentro de ese dominio.
+Meditor-2-3.4B-A1.8B-HMoE es un modelo de generacion de texto desarrollado por Yo-Purple que implementa una arquitectura nativa de mezcla de expertos jerarquica (Hierarchical Mixture-of-Experts, HMoE) sobre el backbone SmolLM2-1.7B-Instruct de Hugging Face. El modelo parte del checkpoint instructivo de 1,7 mil millones de parametros y lo extiende con un nucleo denso compartido mas un enrutamiento jerarquico de dos niveles: tres enrutadores de dominio macro que dirigen a cinco sub-expertos cada uno, sumando 15 especialistas enrutados con activacion top-1. El resultado son 3,41 mil millones de parametros totales con aproximadamente 1,83 mil millones activos por token.
 
-El modelo hereda la ventana de contexto de 524.288 tokens (aproximadamente 500K) mediante una combinacion de atencion de ventana deslizante local (2.048 tokens) y capas globales con Proportional-RoPE (theta base de 130.000,0). Esta disenado para tareas de razonamiento, matematicas, dialogo y codigo, e incluye un "coprocesador" de aritmetica basado en ejecucion AST segura que, segun la model card, eleva la precision aritmetica del 40% al 100% en las pruebas realizadas por el autor.
+La propuesta del modelo es explorar enrutamiento jerarquico por dominio sobre un backbone pequeno, buscando mejorar la calidad conversacional y de sintesis sin disparar el coste de inferencia activa. Es la segunda generacion de la serie Meditor y se presenta como la variante "nativa", es decir, con codigo de modelado propio (tag `custom_code`) en lugar de apoyarse en la implementacion estandar `Qwen2MoeForCausalLM` que usa la variante Universal de la misma generacion.
 
-Es relevante ahora porque demuestra una via de bajo coste para extender modelos pequenos con arquitecturas MoE jerarquicas y contextos muy largos, manteniendo la huella de memoria lo bastante reducida como para caber en GPUs de consumo de 8 GB (RTX 4060). No obstante, el modelo tiene 0 descargas y 1 "like" en Hugging Face, y todos los benchmarks publicados proceden del propio autor sobre conjuntos de evaluacion muy reducidos (12 preguntas en el caso de ARC), por lo que deben interpretarse con cautela.
+El modelo es relevante para quienes investigan arquitecturas MoE de bajo coste y para desarrolladores que quieran experimentar con enrutamiento jerarquico en GPUs de consumo. No obstante, sus resultados publicados en UniBench-100 son modestos (media de 3,28 sobre 10 en una evaluacion parcial de 37 de 100 preguntas), y el autor reporta mejores cifras para la variante Universal de la misma generacion, lo que conviene tener en cuenta al elegirlo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE jerarquico (HMoE) de dos niveles, upcycled desde SmolLM2-1.7B-Instruct; 24 capas, 32 cabezas, 32 KV heads, d_model = 2.048, d_head = 64 |
-| Parametros totales | 3.410.955.032 (~3,41B) |
-| Parametros activos | ~1.825.507.328 (~1,83B) por token; ratio de activacion 53,52% |
-| Longitud de contexto | 524.288 tokens (~500K): ventana deslizante local de 2.048 en 20 capas + retencion global en 4 capas con Proportional-RoPE (theta base 130.000,0) |
-| Tipos de cuantizacion | BF16 (referencia, 6,35 GB); INT4 (~1,59 GB) segun la model card; no se detallan otros formatos |
+| Arquitectura | Transformer con HMoE (Hierarchical Mixture-of-Experts): nucleo denso compartido + 3 enrutadores de dominio macro x 5 sub-expertos = 15 especialistas enrutados, activacion top-1 |
+| Parametros totales | 3.410.955.032 (3,41B) |
+| Parametros activos | ~1,83B (A1.8B) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible para esta variante nativa (la variante Universal de la misma generacion ofrece BF16 y GGUF Q4_K_M) |
 | Idiomas soportados | Ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (BF16), requiere `trust_remote_code=True` (custom_code) |
+| Formato de pesos | safetensors (libreria transformers, requiere `custom_code`) |
 
 ## Arquitectura y entrenamiento
 
-Meditor-2 implementa un MoE jerarquico de dos niveles sobre una base densa de SmolLM2-1.7B-Instruct (11 billones de tokens de preentrenamiento, vocabulario de 49.152 tokens). En el primer nivel, un enrutador macro (Tier 1) asigna cada token a uno de tres dominios: Dominio 0 (logica, matematicas y razonamiento deductivo), Dominio 1 (lenguaje natural, dialogo y sintesis creativa) y Dominio 2 (codigo, sistemas estructurados y hechos tecnicos). En el segundo nivel, un micro-enrutador (Tier 2) selecciona uno de cinco sub-expertos por dominio (15 sub-expertos en total, ~113M de parametros cada uno), con enrutamiento top-1 mas un experto compartido dedicado que conserva las 8.192 neuronas intermedias originales del modelo base.
+El modelo se construye sobre SmolLM2-1.7B-Instruct, un transformer decoder-only, y le anade un esquema de mezcla de expertos jerarquico. La jerarquia consta de tres enrutadores macro que seleccionan un dominio y, dentro de cada dominio, cinco sub-expertos; con activacion top-1 por token, solo un especialista se activa en cada paso. Este diseno busca especializacion por dominio manteniendo un coste computacional cercano al de un modelo denso de ~1,8B. El repositorio requiere codigo personalizado de modelado (tag `custom_code`), por lo que no se carga con una clase estandar de transformers sin confiar en el codigo remoto del autor.
 
-La model card no detalla el volumen ni la composicion del dataset de entrenamiento del upcycling, ni si se emplearon tecnicas de RLHF o DPO; esa informacion no esta disponible. La innovacion tecnica documentada se centra en el enrutamiento jerarquico y en el control de memoria del contexto largo: las capas locales limitan su KV-cache a 2.048 tokens, mientras que solo 4 capas globales retienen hasta 524.288 tokens con escalado Proportional-RoPE. El modelo tambien incorpora un "coprocesador" de aritmetica que ejecuta expresiones matematicas mediante AST seguro, lo que el autor presenta como soporte de tool-augmented arithmetic.
+Los detalles de entrenamiento no estan disponibles en la informacion proporcionada: no se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o SFT adicionales sobre el checkpoint base. El modelo base declarado es HuggingFaceTB/SmolLM2-1.7B-Instruct, un modelo ya alineado para instrucciones, del que hereda el comportamiento conversacional. Tampoco se documentan innovaciones adicionales como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- Generacion de texto conversacional y completado de instrucciones con plantilla de chat (roles system/user/assistant).
-- Razonamiento deductivo y matematico mediante enrutamiento especializado al Dominio 0.
-- Generacion de codigo y manejo de sistemas estructurados a traves del Dominio 2.
-- Dialogo multi-turno y sintesis creativa en el Dominio 1.
-- Aritmetica aumentada con herramientas: ejecucion AST segura que, segun el autor, alcanza el 100% de precision en sus pruebas.
-- Procesamiento de contextos muy largos (hasta ~500K tokens) gracias a la combinacion de atencion local y global.
-- Enrutamiento condicional por token con dos niveles de decision (macro-dominio y sub-experto).
-- Soporte de tool calling / function calling: la model card incluye la etiqueta `toolformer`, aunque no se documenta la interfaz concreta.
-- Capacidades multilingues: limitadas al ingles segun el campo `language` de la model card.
+- Generacion de texto conversacional en ingles, heredada del ajuste instructivo de SmolLM2-1.7B-Instruct.
+- Razonamiento y sintesis de respuestas abiertas, evaluado en el conjunto UniBench-100 (100 preguntas abiertas en 10 dominios cognitivos).
+- Especializacion por dominio mediante enrutamiento jerarquico: los sub-expertos se activan segun el dominio macro detectado.
+- Capacidad de responder preguntas de sentido comun tipo ARC (evaluado en un subconjunto de 12 preguntas).
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: limitadas al ingles segun la metadata del modelo.
+- Capacidades especiales (modo thinking, vision, audio): no disponibles.
 
 ## Casos de uso
 
-- Analisis de documentos extensos: con una ventana de ~500K tokens, el modelo puede ingerir informes, expedientes o bases de codigo completas en una sola pasada y responder preguntas sobre ellos, apoyandose en las 4 capas globales que retienen el contexto completo.
-- Asistente de razonamiento matematico con verificacion: combinando la generacion del modelo con el coprocesador AST, se puede construir un pipeline donde las expresiones aritmeticas se validan y ejecutan de forma segura antes de devolver el resultado al usuario.
-- Generacion de codigo asistida en entornos con recursos limitados: su huella BF16 de 6,35 GB permite desplegarlo en una RTX 4060 de 8 GB para autocompletado y explicacion de codigo en estaciones de trabajo de desarrollo.
-- Atencion al cliente automatizada en ingles: el modelo gestiona conversaciones multi-turno con contexto largo, adecuado para historiales de soporte extensos, aunque su cobertura linguistica se limita al ingles.
-- Despliegue en el borde (edge): la cuantizacion INT4 (~1,59 GB) permite ejecutarlo en dispositivos con poca memoria, como mini-PC o portatiles sin GPU dedicada de gran capacidad.
-- Prototipado e investigacion sobre MoE jerarquicos: su implementacion de enrutamiento en dos niveles y su codigo personalizado (`custom_code`) lo convierten en una base para experimentar con estrategias de routing y upcycling de modelos densos pequenos.
-- Clasificacion y enrutamiento de consultas por dominio: el enrutador macro de tres dominios puede reutilizarse para dirigir peticiones a subsistemas especializados (matematicas, lenguaje, codigo) en arquitecturas de agentes.
+- Investigacion en arquitecturas MoE: el modelo sirve como banco de pruebas para estudiar enrutamiento jerarquico de dos niveles (3 dominios x 5 sub-expertos, top-1) sobre un backbone de 1,7B, comparando su comportamiento con la variante Universal y con modelos densos equivalentes.
+- Generacion de texto conversacional en ingles de bajo coste: con ~1,83B parametros activos, puede desplegarse en GPUs de consumo para prototipos de chatbots donde no se requiera alta precision.
+- Evaluacion comparativa de generaciones: util para reproducir las curvas de progresion de la serie Meditor en UniBench-100 y entender el impacto del enrutamiento nativo frente al estandar.
+- Experimentos de sintesis abierta: el modelo esta evaluado en tareas de sintesis de respuesta abierta en 10 dominios cognitivos, por lo que encaja en pipelines de generacion de borradores y resumenes exploratorios.
+- Fine-tuning sobre dominios especificos: al ser Apache 2.0 y tener un backbone conocido (SmolLM2), puede adaptarse con SFT a tareas concretas conservando la estructura HMoE.
+- Docencia y divulgacion tecnica: ejemplo practico para explicar diferencias entre MoE estandar, MoE universal y HMoE nativo, con metricas publicadas de cada variante.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos disponibles proceden de la model card del autor, medidos en una NVIDIA GeForce RTX 4060 de 8 GB con PyTorch 2.6 y CUDA 12.4. No se aportan comparaciones con otros modelos.
+Datos declarados por el autor en el model-index (no verificados):
 
-| Metrica | Resultado | Notas |
+| Benchmark | Metrica | Valor |
 |---|---|---|
-| Perplejidad de razonamiento (PPL) | 7,42 | Cross-entropy loss 2,0037 |
-| ARC-style science & commonsense | 100,0% (12/12) | 0-shot log-likelihood sobre 12 preguntas |
-| Aritmetica directa del modelo | 40,0% | Sin herramientas |
-| Aritmetica con coprocesador AST | 100,0% | Ejecucion AST segura |
-| Velocidad de decodificacion | 11,18 tokens/s | RTX 4060 8 GB, BF16 |
-| Latencia de prefill (256 tokens) | 306,58 ms | RTX 4060 8 GB |
-| VRAM asignada (BF16) | 6,42 GB | Quedan ~1,58 GB libres en 8 GB |
+| UniBench-100 (Native 37Q Partial) | Native Mean Score (37/100) | 3,28 / 10 |
+| UniBench-100 (Native 37Q Partial) | Native Pass Rate (>=6,0) | 8,1 % |
+| ARC Commonsense (12Q) | Accuracy | 100 % |
+| WikiText-2 Validation | Perplexity | 3,48 |
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible; las cifras anteriores corresponden a evaluaciones internas del autor sobre conjuntos muy reducidos y no son directamente comparables con resultados de terceros.
+Comparativa dentro de la serie Meditor (datos del autor, UniBench-100):
+
+| Modelo | Parametros (total / activos) | UniBench-100 media | Pass rate | Notas |
+|---|---|---|---|---|
+| Meditor-3-4B-MoE | 4,16B / 4,04-4,07B | 7,31 (100/100) | 69,0 % | Rank #1 de 36 runs |
+| Meditor-2 Universal (BF16) | 3,41B / 1,83B | 4,12 (100/100) | 22,0 % | Mejor run de Meditor 2 |
+| Meditor-2 Native HMoE (este modelo) | 3,41B / 1,83B | 3,28 (37/100) | 8,1 % | Evaluacion parcial |
+| Meditor-1 Universal (BF16) | 0,49B / 0,49B | 2,42 (100/100) | 1,0 % | Generacion anterior |
+
+El autor reporta una velocidad de evaluacion de 48,7 tok/s para este run nativo, frente a 27,5 tok/s de la variante Universal BF16 y 141,2 tok/s de la Universal Q4_K_M.
 
 ## Requisitos de hardware
 
-- VRAM estimada: 6,42 GB en BF16 (medido por el autor); ~1,59 GB en INT4 segun la model card.
-- GPU recomendadas: NVIDIA RTX 4060 8 GB (verificada por el autor); cualquier GPU con 8 GB o mas de VRAM en BF16; GPUs de datacenter (A100, H100) para mayor throughput, aunque no hay mediciones publicadas en ellas.
-- Cabe en GPU de consumo: si, en tarjetas de 8 GB o mas (RTX 4060, RTX 3070, RTX 4070, etc.); en INT4 cabria en GPUs de 4 GB.
-- Opciones de despliegue: `transformers` con `trust_remote_code=True` (unica via documentada); el campo `inference: false` de la model card sugiere que la inferencia gestionada de Hugging Face no esta habilitada. No se documenta soporte para vLLM, llama.cpp, Ollama o TGI, y el uso de `custom_code` complica su conversion a GGUF.
-- Latencia y throughput: 11,18 tokens/s de decodificacion y 306,58 ms de prefill para 256 tokens en RTX 4060 8 GB (datos del autor).
+- VRAM estimada en BF16: aproximadamente 6,42 GB segun la tabla del autor para esta generacion (3,41B parametros a 16 bits).
+- VRAM estimada en cuantizacion de 4 bits: no disponible para esta variante nativa; la variante Universal Q4_K_M ocupa 6,38 GB segun el autor (incluye overhead).
+- GPU recomendadas: no especificadas por el autor. Por tamano, una RTX 4090 (24 GB) o una A100/H100 son suficientes; tambien cabria en GPUs de 8-12 GB en cuantizacion, aunque esta variante no publica GGUF.
+- Cabe en GPU de consumo: si, en BF16 en tarjetas con al menos 8 GB de VRAM efectiva (con margen para contexto y overhead).
+- Opciones de despliegue: transformers con `trust_remote_code=True` (requiere `custom_code`). vLLM, llama.cpp, Ollama y TGI no estan confirmados para esta variante nativa; para GGUF y `Qwen2MoeForCausalLM` el autor remite a la variante Universal.
+- Latencia y throughput: 48,7 tok/s reportados por el autor durante la evaluacion nativa.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros (total / activos) | Contexto | UniBench-100 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Meditor-2-3.4B-A1.8B-HMoE | 3,41B totales / ~1,83B activos | 524.288 | Apache 2.0 | Hugging Face (0 descargas) | MoE jerarquico, solo ingles, benchmarks internos |
-| SmolLM2-1.7B-Instruct (modelo base) | 1,7B densos | 8.192 (segun su model card original) | Apache 2.0 | Hugging Face, ampliamente adoptado | Base del upcycling; sin routing MoE |
-| Modelos MoE pequenos de referencia (p. ej., Qwen o Mixtral de mayor escala) | Variable | Variable | Variable | Variable | No se dispone de datos comparativos especificos en la informacion proporcionada |
+| Meditor-2-3.4B-A1.8B-HMoE | 3,41B / ~1,83B | no disponible | 3,28 (37/100) | Apache 2.0 | HF, transformers con custom_code |
+| Meditor-2-3.4B-Universal | 3,41B / ~1,83B | no disponible | 4,12 (100/100) | Apache 2.0 | HF, `Qwen2MoeForCausalLM`, GGUF |
+| Meditor-3-4B-MoE | 4,16B / 4,04-4,07B | no disponible | 7,31 (100/100) | no disponible | HF |
+| SmolLM2-1.7B-Instruct (base) | 1,7B denso | no disponible | no evaluado en UniBench-100 | Apache 2.0 | HF, ampliamente soportado |
 
-No se dispone de datos de rendimiento comparables entre estos modelos en la informacion disponible; la comparativa se limita a parametros, contexto y licencia.
+La comparativa se limita a la propia familia Meditor y al modelo base, ya que la informacion proporcionada no incluye resultados de benchmarks de terceros (MMLU, HumanEval, GSM8K) para situar el modelo frente a alternativas externas de tamano similar.
 
 ## Limitaciones y advertencias
 
-- Evaluacion muy limitada: los benchmarks publicados usan conjuntos minimos (12 preguntas en ARC) y no incluyen MMLU, HumanEval ni GSM8K, por lo que las cifras de rendimiento no son representativas.
-- Riesgo de alucinacion: como todo modelo generativo, puede producir afirmaciones incorrectas; el 40% de precision aritmetica directa indica debilidad en calculo sin herramientas.
-- Idioma: solo soporta ingles segun la model card; no se garantiza un rendimiento adecuado en castellano u otros idiomas.
-- Dependencia de codigo personalizado: requiere `trust_remote_code=True`, lo que implica ejecutar codigo del autor y complica la integracion con ecosistemas estandar (vLLM, llama.cpp, TGI).
-- Madurez: 0 descargas y 1 "like" en Hugging Face; el modelo no ha sido validado por la comunidad y su mantenimiento futuro es incierto.
-- Contexto largo: aunque la ventana nominal es de 500K tokens, solo 4 capas retienen el contexto global; el rendimiento real en contextos muy largos no esta documentado con evaluaciones independientes.
-- Licencia: Apache 2.0 permite uso comercial, pero al derivar de SmolLM2-1.7B-Instruct conviene verificar el cumplimiento de las condiciones del modelo base.
-- El "coprocesador" aritmetico AST es una capa de ejecucion externa, no una capacidad nativa del modelo; su seguridad depende de la implementacion del sandbox.
+- Evaluacion parcial: los resultados de UniBench-100 para esta variante cubren solo 37 de 100 preguntas, por lo que no son directamente comparables con los runs de 100/100 de otras variantes.
+- Rendimiento inferior a la variante Universal de la misma generacion (3,28 frente a 4,12), pese a compartir parametros totales y activos.
+- Pass rate bajo (8,1 %) en la evaluacion nativa, lo que indica dificultad para superar el umbral de calidad de 6,0 en respuestas abiertas.
+- Solo ingles: la metadata declara unicamente `en`, sin capacidades multilingues documentadas.
+- Codigo personalizado: requiere `trust_remote_code=True`, lo que implica ejecutar codigo del autor; conviene auditar el repositorio antes de usarlo en produccion.
+- Sin formatos GGUF ni cuantizaciones publicadas para esta variante, lo que limita el despliegue en entornos ligeros (llama.cpp, Ollama, LM Studio).
+- Riesgo de alucinacion: no documentado por el autor; como modelo pequeno (1,83B activos), es esperable en tareas de conocimiento factual.
+- Sesgos: no documentados en la informacion proporcionada.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base SmolLM2 tambien es Apache 2.0; no se declaran restricciones adicionales.
+- Longitud de contexto no publicada, lo que impide planificar casos de uso con ventanas largas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Yo-Purple/Meditor-2-3.4B-A1.8B-HMoE
+- Variante Universal de la misma generacion: https://huggingface.co/Yo-Purple/Meditor-2-3.4B-Universal
+- Meditor 1 (Native MoE): https://huggingface.co/Yo-Purple/Meditor-1-2.2B-A500M-MoE
+- Meditor 1 (Universal): https://huggingface.co/Yo-Purple/Meditor-1-500M-Universal
+- Meditor 3 (Native MoE): https://huggingface.co/Yo-Purple/Meditor-3-4B-MoE
+- Meditor 3 (Universal GGUF): https://huggingface.co/Yo-Purple/Meditor-3-4B-Universal
 - Modelo base SmolLM2-1.7B-Instruct: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct
-- No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

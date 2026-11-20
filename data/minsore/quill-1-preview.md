@@ -2,63 +2,57 @@
 
 ## Resumen
 
-Quill 1 Preview es un modelo de autocompletado de codigo de 494.032.768 parametros (0,5B) publicado por minsore, un laboratorio ucraniano de IA que desarrolla modelos abiertos. Se trata de un ajuste fino mediante QLoRA sobre Qwen/Qwen2.5-Coder-0.5B-Instruct, especializado en tareas de fill-in-the-middle (FIM) con los tokens `<fim_prefix>`, `<fim_suffix>`, `<fim_middle>` y `<fim_pad>`, pensado para integrarse en IDEs y editores como motor de sugerencias en linea.
+Quill 1 Preview es un modelo de autocompletado de codigo especializado en tareas de *fill-in-the-middle* (FIM) para Python, desarrollado por Minsore, un laboratorio ucraniano de IA. Se construye sobre Qwen2.5-Coder-0.5B-Instruct de Alibaba Cloud mediante un ajuste fino con QLoRA, y su proposito es servir como motor de completado en tiempo real dentro de editores e IDE, no como asistente conversacional. Con 494 millones de parametros y un contexto de 1024 tokens, ocupa un nicho poco cubierto: modelos de muy pequeno tamano entrenados de forma nativa para FIM.
 
-El problema que aborda es concreto: la mayoria de modelos de 0,5B publicados estan entrenados para chat o para generacion de codigo completa, no para infilling nativo, que es la operacion real que necesita un autocompletado dentro de un editor (rellenar el hueco entre el codigo que hay antes y despues del cursor). Quill cubre ese nicho con un modelo que cabe en cualquier GPU de consumo y que en Q4_K_M ocupa unos 400 MB, con un contexto de 1024 tokens y licencia Apache 2.0.
+La relevancia del modelo reside en su especializacion. Frente a alternativas de tamano similar que solo generan codigo a partir de un prompt, Quill entiende los tokens `<fim_prefix>`, `<fim_suffix>` y `<fim_middle>`, lo que le permite insertar codigo entre dos fragmentos existentes respetando el contexto posterior. En los benchmarks de infilling reportados por el autor obtiene valores de EditSim de 0,423 en HumanEval-Infilling y 0,318 en Delulu FIM, muy por encima de los modelos comparados de 0,5B a 1B.
 
-Su relevancia radica en los resultados en benchmarks especificos de FIM: obtiene 0,423 de EditSim en HumanEval-Infilling frente a 0,045 del modelo base y 0,041 de Granite 4.0 1B, y 45,0% en NextBench v0.2 frente al 41,7% de Qwen2.5-Coder 0.5B. El contrapunto es que en generacion pura (HumanEval@50) se queda en 54,0%, muy por debajo del 96,0% de Arche-Codium 0.5B. El autor ya ha anunciado una hoja de ruta con Quill 2 para corregir el bucle de numeros y ampliar a JS/TS/Rust.
+El modelo se distribuye en formato GGUF listo para llama.cpp y en safetensors con el adaptador LoRA, bajo licencia Apache 2.0, lo que facilita su integracion comercial y su despliegue en hardware de consumo. Su tamano reducido (unos 400 MB en Q4_K_M) lo hace viable en cualquier GPU con 2 GB de VRAM o incluso con offload parcial a CPU.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only de la familia Qwen2, ajustado con QLoRA sobre Qwen2.5-Coder-0.5B-Instruct |
-| Parametros totales | 494.032.768 (0,494B) |
-| Parametros activos | No aplica (no es un modelo MoE) |
+| Arquitectura | Transformer decoder-only (Qwen2), ajuste fino QLoRA sobre Qwen2.5-Coder-0.5B-Instruct |
+| Parametros totales | 494.032.768 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 1024 tokens |
-| Tipos de cuantizacion | GGUF Q4_K_M (~400 MB, recomendada), GGUF f16 (~1 GB); adaptador LoRA (~35 MB) para reentrenamiento |
-| Idiomas soportados | Ingles y codigo; datos de FIM exclusivamente en Python |
+| Tipos de cuantizacion | GGUF Q4_K_M (~400 MB) y F16 (~1 GB); adaptador LoRA (~35 MB) |
+| Idiomas soportados | Ingles y codigo (Python) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors y GGUF (la libreria declarada es llama.cpp) |
-| Modelo base | Qwen/Qwen2.5-Coder-0.5B-Instruct |
-| Tokens especiales FIM | `<fim_prefix>`, `<fim_suffix>`, `<fim_middle>`, `<fim_pad>`; parada con `<fim_end>` y `<|endoftext|>` |
-| Plantilla de chat | Ninguna: requiere `--chat-template none` |
-| Tamano del repositorio | 2,4 GB |
-| Descargas / likes | 0 descargas, 1 like en el momento de la consulta |
+| Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base: un transformer decoder-only de la familia Qwen2 con 494 millones de parametros. El ajuste se realizo con QLoRA de rango 16 y alpha 16 durante una unica epoca, utilizando el framework Unsloth, sobre una mezcla de datos de fill-in-the-middle y datos de instrucciones en Python. No se documenta el numero exacto de tokens de entrenamiento ni la composicion detallada del dataset, ni se menciona el uso de RLHF o DPO: el metodo declarado es exclusivamente QLoRA supervisado.
+Quill hereda la arquitectura transformer decoder-only de Qwen2.5-Coder-0.5B-Instruct, con 494 millones de parametros y una ventana de contexto de 1024 tokens. Sobre esa base se aplico un ajuste fino con QLoRA de rango 16 y alpha 16 durante una sola epoca, utilizando una mezcla de datos FIM y datos de instrucciones en Python. El entrenamiento se realizo con el framework Unsloth, y la inferencia esta pensada para llama.cpp.
 
-La innovacion tecnica no esta en la arquitectura, sino en la especializacion: el modelo aprende de forma nativa los tokens centinela de FIM, lo que le permite recibir un prefijo y un sufijo y generar unicamente el fragmento intermedio. Segun el autor, este entrenamiento anade capacidad de infilling sin degradar la generacion de codigo, ya que el HumanEval@50 se mantiene en linea con el modelo base (54,0% frente a 52,0%). El repositorio incluye tambien el adaptador LoRA en formato safetensors para quien quiera continuar el ajuste con sus propios datos.
+La innovacion principal es el entrenamiento nativo en FIM con los tokens especiales `<fim_prefix>`, `<fim_suffix>`, `<fim_middle>` y `<fim_pad>`. El modelo aprende a generar el fragmento intermedio dadas las porciones anterior y posterior del archivo, lo que es el modo de operacion real de un autocompletado en editor. El autor senala que el ajuste anadio la capacidad FIM sin degradar la generacion pura: en HumanEval@50 el modelo mantiene el 54,0% frente al 52,0% de la base. No se documentan tecnicas adicionales como decodificacion especulativa, atencion lineal o modos de razonamiento extendido.
 
 ## Capacidades
 
-- Rellenado de codigo intermedio (fill-in-the-middle) nativo mediante los tokens `<fim_prefix>`, `<fim_suffix>` y `<fim_middle>`.
-- Autocompletado en tiempo real dentro de editores: el endpoint `/infill` de `llama-server` devuelve el fragmento que falta entre dos bloques de codigo.
-- Generacion de codigo Python completa: 54,0% en HumanEval@50, practicamente identico al modelo base (52,0%).
-- Completado de cuerpos de funcion, condiciones, expresiones de retorno y estructuras de control en Python.
-- Generacion determinista con `temperature=0.0`, pensada para sugerencias estables y reproducibles.
-- Capacidad limitada como asistente conversacional: el autor indica explicitamente que no funciona como chatbot y requiere desactivar la plantilla de chat.
-- Soporte de tool calling / function calling: no documentado en la informacion disponible.
-- Soporte de agentes y razonamiento multi-paso: no documentado; el modelo esta disenado para una unica pasada de infilling.
-- Capacidades multilingues: limitadas a ingles y codigo; el entrenamiento FIM es solo para Python, con soporte de JS/TS/Rust previsto en Quill 2.
-- Capacidades especiales: no dispone de modo de razonamiento (thinking), vision ni audio.
+- Autocompletado FIM nativo para Python mediante los tokens `<fim_prefix>`, `<fim_suffix>` y `<fim_middle>`.
+- Generacion de codigo a partir de prompt, con rendimiento equivalente al modelo base en HumanEval.
+- Completado de funciones, expresiones y cuerpos de bloque en contextos de hasta 1024 tokens.
+- Generacion determinista con temperatura 0,0, adecuada para integracion en IDE.
+- Servicio HTTP de infilling a traves del endpoint `/infill` de `llama-server`.
+- Soporte de parada configurable con `<fim_end>`, `<|endoftext|>` y delimitadores de salto de linea.
+- No soporta tool calling ni function calling de forma documentada.
+- No soporta agentes ni razonamiento multi-paso.
+- No es un modelo conversacional: `--chat-template none` es obligatorio.
+- Capacidad multilingue limitada al ingles y a codigo Python; no hay soporte documentado de otros lenguajes de programacion.
 
 ## Casos de uso
 
-- Autocompletado en el IDE: integrado como backend del endpoint `/infill` de `llama-server`, sugiere la linea o el bloque que falta entre el codigo anterior y posterior al cursor, con latencia apta para escritura en vivo gracias a sus 400 MB en Q4_K_M.
-- Relleno de funciones incompletas: dado un `def` con firma y un `print` de comprobacion debajo, genera el cuerpo completo de la funcion, como muestra el ejemplo del propio autor con la sucesion de Fibonacci.
-- Migracion de fragmentos de codigo: al pegar el codigo nuevo despues del punto de insercion, el modelo completa automaticamente el pegamento necesario entre ambos bloques (imports, adaptadores de firma, conversion de tipos).
-- Asistencia offline o en entornos aislados: al ejecutarse con llama.cpp y requerir solo 2 GB de VRAM, puede desplegarse en estaciones de trabajo sin conexion donde no se permite enviar codigo a APIs externas.
-- Prototipado sobre portatiles y equipos sin GPU dedicada: con cuantizacion Q4_K_M y offload parcial a CPU funciona como servidor local de autocompletado incluso en maquinas modestas.
-- Generacion de plantillas de pruebas y codigo repetitivo: util para completar esqueletos de tests y bloques de codigo boilerplate en Python, teniendo en cuenta que ocasionalmente anade tests despues de la funcion generada.
-- Fine-tuning especifico de dominio: el adaptador LoRA incluido en el repositorio permite reajustar el modelo a convenciones internas de una empresa o a un framework concreto sin partir del modelo completo.
-- Evaluacion comparativa de tecnicas FIM: sirve como referencia abierta de 0,5B para medir EditSim y Exact Match en pipelines de investigacion sobre infilling.
+- Autocompletado en IDE y editores de codigo: integrado como servidor local mediante `llama-server`, el modelo recibe el prefijo y el sufijo del cursor y devuelve la linea o bloque intermedio. Su latencia baja y su tamano de 400 MB en Q4_K_M lo hacen apto para completado en tiempo real sin salir del equipo del desarrollador.
+- Extension de VS Code o Neovim para Python: el endpoint `/infill` permite conectar el modelo a un plugin que envie el contexto del buffer y muestre la sugerencia en linea, con temperatura 0,0 para resultados estables y `repeat_penalty` 1,1 para evitar bucles numericos.
+- Generacion de tests unitarios a partir de firmas de funciones: aunque el autor advierte que el modelo a veces anade tests tras la funcion, esa misma tendencia puede aprovecharse de forma controlada para esbozar casos de prueba en proyectos con cobertura escasa.
+- Relleno de funciones incompletas en refactorizaciones: dado un bloque de codigo con un hueco, el modelo propone la implementacion coherente con el contexto posterior, util en tareas de migracion o reescritura de modulos Python.
+- Entornos con hardware limitado o air-gapped: al caber en 2 GB de VRAM o ejecutarse con offload parcial a CPU, permite autocompletado local en portatiles, equipos sin GPU dedicada o entornos sin acceso a red.
+- Base para ajuste fino adicional: el adaptador LoRA de 35 MB publicado en el repositorio permite adaptar el modelo a un estilo de codigo o dominio concreto (por ejemplo, una base de codigo interna) sin reentrenar desde cero.
+- Prototipado de asistentes de codigo embebidos: por su licencia Apache 2.0 y su formato GGUF, se puede integrar en productos comerciales de asistencia al desarrollo sin restricciones de uso.
 
 ## Benchmarks y rendimiento
 
-Todos los resultados son los publicados por el autor, con `temperature=0.0` y modo FIM puro (`--chat-template none`).
+Datos reportados por el autor en la model card, con `temperature=0.0` y modo FIM puro (`--chat-template none`):
 
 | Benchmark | Quill 1 Preview | Arche-Codium 0.5B | Granite 4.0 1B | Qwen2.5-Coder 0.5B |
 |---|---:|---:|---:|---:|
@@ -68,49 +62,45 @@ Todos los resultados son los publicados por el autor, con `temperature=0.0` y mo
 | NextBench v0.2 (autocomplete) | 45,0% | 5,0% | 25,0% | 41,7% |
 | Delulu FIM (EditSim) | 0,318 | 0,087 | 0,041 | 0,035 |
 
-El propio autor resume la lectura de estos datos: en benchmarks especificos de FIM la ventaja sobre los competidores es de 8 a 10 veces, mientras que en generacion de codigo pura (HumanEval) el modelo iguala al base sin mejorarlo. En Delulu FIM, orientado a APIs poco conocidas, el EditSim de 0,318 refleja que el modelo sigue alucinando en ese escenario.
+El autor destaca que en benchmarks especificos de FIM el modelo supera a los competidores por un factor de 8 a 10, mientras que en generacion pura mantiene el nivel de la base. El dato de HumanEval@50 de Arche-Codium 0.5B (96,0%) contrasta con su rendimiento casi nulo en FIM, lo que sugiere una especializacion opuesta. No se han publicado mediciones independientes de latencia o throughput en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: unos 400 MB para el archivo Q4_K_M y alrededor de 1 GB para la version f16; el autor indica que basta cualquier GPU con 2 GB o mas de VRAM para hacer offload completo.
-- GPU recomendadas: cualquier GPU de consumo moderna (RTX 3060, RTX 4060, RTX 4090) es mas que suficiente; tambien cabe sobradamente en A100 o H100, aunque estan sobredimensionadas para este tamano.
-- Compatibilidad con GPU de consumo: si, es uno de los puntos fuertes del modelo; funciona incluso con offload parcial a CPU si no hay GPU disponible.
-- Opciones de despliegue: llama.cpp mediante `llama-server` con la flag `-ngl 99` y `--chat-template none`; el formato GGUF permite usarlo tambien en Ollama o LM Studio. El soporte en vLLM o TGI no esta documentado y requeriria los pesos en safetensors.
-- Parametros de inferencia recomendados: `n_predict` entre 128 y 256, `temperature=0.0`, `repeat_penalty=1.1` y parada con `["<fim_end>", "<|endoftext|>", "\n\n\n"]`.
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
+- VRAM estimada: aproximadamente 2 GB para offload completo en Q4_K_M; alrededor de 1 GB adicional si se usa la variante F16.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM para offload completo; el modelo es viable en RTX 3060, RTX 4060, RTX 4090, A100 y H100 sin aprovechar su capacidad, por lo que el hardware de gama alta no aporta ventaja significativa.
+- Cabe en GPU de consumo: si, en practicamente cualquier GPU dedicada moderna e incluso en iGPU con offload parcial a CPU.
+- Opciones de despliegue: llama.cpp mediante `llama-server` con el endpoint `/infill`; el repositorio esta etiquetado como compatible con endpoints. No se documentan integraciones con vLLM, TGI u Ollama en la informacion disponible.
+- Latencia y throughput: no disponibles. El autor indica que el modelo esta disenado para autocompletado en vivo y recomienda `n_predict` entre 128 y 256, pero no publica cifras de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | HumanEval@50 | NextBench v0.2 | Licencia | Disponibilidad |
-|---|---:|---:|---:|---:|---|---|
-| Quill 1 Preview | 0,494B | 1024 tokens | 54,0% | 45,0% | Apache 2.0 | GGUF y safetensors en Hugging Face |
-| Arche-Codium 0.5B | 0,5B | no disponible | 96,0% | 5,0% | no disponible | no disponible en la informacion proporcionada |
-| Granite 4.0 1B | 1B | no disponible | 58,0% | 25,0% | no disponible | no disponible en la informacion proporcionada |
-| Qwen2.5-Coder 0.5B (base) | 0,494B | no disponible en esta ficha | 52,0% | 41,7% | Apache 2.0 | safetensors en Hugging Face |
+| Modelo | Parametros | Contexto | FIM (EditSim HE-Infilling) | HumanEval@50 | Licencia | Disponibilidad |
+|---|---|---:|---:|---:|---|---|
+| Quill 1 Preview | 0,5B | 1024 | 0,423 | 54,0% | Apache 2.0 | GGUF + LoRA en HF |
+| Arche-Codium 0.5B | 0,5B | no disponible | 0,053 | 96,0% | no disponible | HF |
+| Granite 4.0 1B | 1B | no disponible | 0,041 | 58,0% | no disponible | HF |
+| Qwen2.5-Coder 0.5B | 0,5B | 32K (modelo base) | 0,045 | 52,0% | Apache 2.0 | HF |
 
-La comparativa muestra un perfil claramente diferenciado: Quill renuncia al rendimiento en generacion de codigo completa a cambio de un rendimiento muy superior en infilling. Arche-Codium 0.5B domina la generacion (96,0% en HumanEval@50) pero cae a 0,053 de EditSim y al 5,0% en NextBench, es decir, rinde mal en la tarea de autocompletado. Granite 4.0 1B duplica el tamano y no supera a Quill en las metricas FIM.
+La comparativa muestra una dicotomia clara: Arche-Codium 0.5B es muy superior en generacion desde prompt pero practicamente nulo en infilling, mientras que Quill invierte la relacion. Granite 4.0 1B, con el doble de parametros, no mejora el rendimiento FIM. Los datos de contexto y licencia de los modelos comparados no estan disponibles en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo exclusivamente de autocompletado: no funciona como asistente conversacional y el autor exige desactivar la plantilla de chat.
-- Contexto de solo 1024 tokens: los archivos largos se truncan, lo que degrada la calidad de las sugerencias en ficheros grandes.
-- Solo Python en la parte de FIM: no hay soporte entrenado para JavaScript, TypeScript, Rust ni otros lenguajes hasta Quill 2.
-- Bucle de numeros: puede repetir enteros grandes en determinados prompts; el autor recomienda `repeat_penalty=1.1` como mitigacion.
-- Anade pruebas tras la funcion en ocasiones, heredado de la mezcla de datos de instrucciones y FIM, lo que puede insertar codigo no deseado en el editor.
-- Alucinacion en APIs poco conocidas: el EditSim de 0,318 en Delulu FIM evidencia que inventa llamadas a funciones o metodos inexistentes.
-- Idiomas naturales: solo ingles; no hay soporte documentado de castellano ni de otros idiomas.
-- HumanEval@50 de 54,0%, muy por debajo de alternativas del mismo tamano como Arche-Codium 0.5B (96,0%), por lo que no es adecuado como generador de codigo completo.
-- Licencia Apache 2.0: permite uso comercial y modificacion sin restricciones adicionales mas alla de las del modelo base, que comparte la misma licencia; no se documentan clausulas adicionales.
-- Cifras de adopcion muy bajas (0 descargas, 1 like al consultar), sin validacion independiente de los benchmarks publicados por el autor.
-- Para produccion conviene fijar `temperature=0.0` y validar las sugerencias: el modelo esta pensado como asistencia, no como fuente de codigo verificada.
+- Solo autocompletado: no funciona como asistente conversacional; requiere `--chat-template none`.
+- Contexto de 1024 tokens: los archivos largos se truncan, lo que puede degradar la calidad en proyectos grandes.
+- Solo Python: entrenado exclusivamente con datos FIM de Python; no hay soporte para JavaScript, TypeScript, Rust u otros lenguajes.
+- Bucles numericos: puede repetir enteros grandes en algunos prompts; el autor recomienda `repeat_penalty=1.1`.
+- Anade tests tras la funcion: comportamiento heredado de los datos de entrenamiento mixtos, que puede generar salidas no deseadas en produccion.
+- Alucinaciones en APIs desconocidas: EditSim de 0,318 en Delulu FIM indica que el modelo inventa llamadas plausibles pero incorrectas ante interfaces poco comunes.
+- Sesgos: no se documentan sesgos especificos, aunque al entrenarse sobre codigo Python puede reproducir patrones y convenciones de ese ecosistema.
+- Licencia Apache 2.0: permite uso comercial sin restricciones adicionales, igual que el modelo base.
+- Advertencia de produccion: el modelo esta en estado de preview y el autor ha anunciado una version 2 que corrige el bucle numerico y amplia lenguajes; conviene fijar la version en despliegues estables.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/minsore/quill-1-preview
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct
-- Sitio del autor (Minsore): https://minsore.com
-- Organizacion en Hugging Face: https://huggingface.co/minsore
-- Perfil del autor: https://huggingface.co/Sollamon
-- Framework de entrenamiento (Unsloth): https://github.com/unslothai/unsloth
-- Motor de inferencia (llama.cpp): https://github.com/ggerganov/llama.cpp
-- Enlaces adicionales procedentes de la busqueda web: no se han encontrado resultados relevantes sobre este modelo; los resultados devueltos corresponden a servicios no relacionados (Digiposte / La Poste).
+- Sitio del autor: https://minsore.com
+- Perfil del autor en Hugging Face: https://huggingface.co/Minsore
+- Perfil del creador: https://huggingface.co/Sollamon
+- Framework de entrenamiento Unsloth: https://github.com/unslothai/unsloth
+- Motor de inferencia llama.cpp: https://github.com/ggerganov/llama.cpp

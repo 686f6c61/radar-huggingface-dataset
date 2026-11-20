@@ -2,120 +2,90 @@
 
 ## Resumen
 
-FLUX 3 Action DROID es un modelo de accion robotica (world action model, WAM) de pesos abiertos desarrollado por Black Forest Labs, distribuido a traves de LeRobot. Parte del modelo base black-forest-labs/flux-3-action-base y esta afinado sobre el conjunto de datos DROID para operar en montajes tipo Franka. Recibe fotogramas de tres camaras RGB, el estado del robot y una instruccion en lenguaje natural, y devuelve un chunk de 32 acciones absolutas de articulacion a 15 Hz, destiladas conjuntamente con los siguientes fotogramas de video.
+FLUX-3 Action DROID es un modelo de acción para robótica (world-action model) desarrollado por Black Forest Labs, el mismo equipo detrás de la familia de modelos de generación de imágenes FLUX. A diferencia de un modelo de lenguaje, este modelo está diseñado para predecir acciones motoras de un robot a partir de observaciones visuales y contexto de instrucciones, integrándose en el ecosistema LeRobot de Hugging Face. Se trata de un fine-tuning del modelo base `black-forest-labs/flux-3-action-base` sobre el dataset DROID, un corpus de manipulación robótica de gran escala recogido con brazos Franka.
 
-Con 6.947.058.944 parametros (aproximadamente 7B) y un checkpoint DiT en BF16, el modelo ocupa una posicion poco habitual: no es un LLM ni un VLM de proposito general, sino un generador de comandos motores que ademas modela el futuro visual de la escena. El repositorio pesa 63,0 GB porque incluye varias recetas de optimizacion (base, destilada por guia, destilada por pasos) en BF16 y FP8r.
+El modelo tiene 6.947.058.944 parámetros (aproximadamente 6,95 mil millones) almacenados en safetensors, con un repositorio de 63 GB, lo que sugiere pesos en precisión alta (bf16/fp32) junto con posibles componentes auxiliares. Su pipeline declarado es `robotics` y la librería de carga es `lerobot`. Está publicado bajo la licencia FLUX Community License, con acceso restringido que requiere aceptar condiciones en Hugging Face.
 
-Su relevancia actual es doble. Por un lado, encabeza el benchmark RoboLab-120 con un 42,92% de exito en tarea, por delante de Cosmos3-Nano-Policy (36,8%, 16B) y de pi-0.5 (28,0%, 3,3B). Por otro, su licencia flux-kommunity-license impone restricciones de uso explicitas en entornos con personas, lo que condiciona cualquier despliegue real.
+Su relevancia radica en la convergencia entre modelos generativos de imagen/vídeo y el aprendizaje por imitación robótico: FLUX-3 Action reutiliza la arquitectura de un modelo generativo de gran escala para producir trayectorias de acción, un enfoque conocido como world-action model. Con 1.619 descargas y 46 likes en el momento de la consulta, es un modelo de nicho pero con tracción dentro de la comunidad de robot learning.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | DiT (diffusion transformer) con VAE y codificador de texto cargados desde el repositorio base; world action model que denoisa acciones y fotogramas futuros de forma conjunta |
-| Parametros totales | 6.947.058.944 (aproximadamente 7B) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible / no aplica (modelo de accion robotica, no acepta contexto de texto arbitrario) |
-| Tipos de cuantizacion | BF16 (checkpoint DiT); variantes FP8r opt-in en subcarpetas; soporte de `--quantize fp8` en inferencia |
-| Idiomas soportados | no disponible (acepta instruccion de texto; el idioma de entrenamiento no se especifica en la informacion disponible) |
-| Licencia | flux-kommunity-license (license: other) |
-| Formato de pesos | safetensors (BF16); configuracion LeRobot en config.json y configuracion nativa en config.native.json; lora.json es una receta de entrenamiento sin pesos de adaptador |
-| Parametros de muestreo | 4 pasos de Cosmos UniPC, shift 5, video guidance 4, action guidance 1 |
-| Contrato de observacion | `task`, `state` y tres camaras RGB: `images.wrist`, `images.left`, `images.right`; imagenes CHW 3x360x640 en float [0,1], compuestas en un lienzo de 544x736 |
-| Contrato de accion | 7 posiciones articulares en radianes mas fraccion de cierre de pinza; salida de 32 acciones absolutas a 15 Hz; normalizacion identidad, inversion de pinza y escala de accion 2 aplicadas dentro del modelo |
-| Modelo base | black-forest-labs/flux-3-action-base |
-| Descargas y likes | 33 descargas, 13 likes (segun metadatos del repositorio) |
-| Publicacion | 22 de septiembre de 2026; ultima actualizacion el 23 de septiembre de 2026 (segun metadatos del repositorio) |
-| Tamano del repositorio | 63,0 GB |
+| Arquitectura | world-action model basado en FLUX-3 (transformers, detalles exactos no disponibles) |
+| Parametros totales | 6.947.058.944 (~6,95 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible |
+| Licencia | FLUX Community License (flux-kommunity-license) |
+| Formato de pesos | safetensors (libreria lerobot) |
 
 ## Arquitectura y entrenamiento
 
-El nucleo es un DiT cuyos tensores estan en BF16. La generacion sigue un esquema de difusion con muestreo Cosmos UniPC en cuatro pasos y guia separada para video (4) y accion (1), de modo que el modelo denoisa simultaneamente el chunk de acciones y los fotogramas de video futuros. El VAE y el codificador de texto se cargan automaticamente desde el repositorio base fijado (flux-3-action-base), con soporte de subcarpeta y revision compartidas en el Hub mediante la integracion FLUX3. Este repositorio es un fine-tune sobre DROID del modelo base, no un entrenamiento desde cero.
+La información disponible indica que FLUX-3 Action DROID es un fine-tuning del modelo `flux-3-action-base`, etiquetado como `world-action-model` y `world-model`. Esto sitúa al modelo en la familia de arquitecturas que combinan un backbone generativo (heredado de la línea FLUX-3) con una cabeza o mecanismo de predicción de acciones robóticas. El pipeline es `robotics` y la librería de referencia es LeRobot, el framework de Hugging Face para aprendizaje de robots.
 
-Black Forest Labs distribuye tres recetas de optimizacion opt-in, cada una en BF16 y FP8r: la base (4 pasos con guia, en la raiz y en variants/fp8r), la destilada por guia (4 pasos, variants/gd y variants/gd-fp8r) y la destilada por pasos (1 paso, variants/sd y variants/sd-fp8r). La carga por defecto de LeRobot no descarga ninguna de estas variantes. Los paquetes BF16 incluyen ademas configuraciones de LeRobot, mientras que los paquetes nativos FP8r requieren FLUX Action. Se incluye un lora.json que define una receta de task-LoRA de LeRobot, pero no contiene pesos de adaptador. No se detalla en la informacion disponible el numero de tokens, la composicion del dataset de entrenamiento ni si se emplearon tecnicas de RLHF o DPO.
+El fine-tuning se ha realizado sobre el dataset DROID, un corpus de manipulación robótica recogido con robots Franka en entornos reales y ampliamente utilizado en investigación de robot learning. No se dispone de información sobre el número de tokens o frames de entrenamiento, la composición exacta del dataset, ni si se emplearon técnicas de RLHF, DPO o aprendizaje por imitación supervisado puro. Tampoco se detallan innovaciones técnicas específicas como decodificación especulativa o atención lineal; estos datos figuran como no disponibles en la información proporcionada.
 
 ## Capacidades
 
-- Generacion de comandos motores: produce chunks de 32 acciones absolutas de articulacion a 15 Hz a partir de observaciones visuales y de estado.
-- Modelado de mundo: predice, junto con las acciones, los fotogramas de video siguientes de la escena sobre la que actua.
-- Condicionamiento por lenguaje natural: acepta una instruccion de tarea (`task`) que guia el comportamiento.
-- Entrada multi-camara: consume tres vistas RGB (muneca y dos exteriores) compuestas en un lienzo de 544x736.
-- Entrada de estado proprioceptivo: 7 posiciones articulares en radianes mas la fraccion de cierre de la pinza.
-- Control de pinza: salida de fraccion de cierre entre 0 (abierta) y 1 (cerrada), con inversion aplicada internamente.
-- Ajuste fino sobre datos propios: la receta task-LoRA incluida permite adaptar el modelo a nuevas tareas.
-- Variantes destiladas: ejecucion en 4 pasos o en 1 solo paso segun la receta elegida.
-- No soporta tool calling, function calling, agentes multi-paso ni dialogo multi-turno: no genera texto.
-- No se documentan capacidades de vision general (VQA, OCR, captioning), audio ni modo de razonamiento explicito.
+- Predicción de acciones robóticas a partir de observaciones visuales, orientada a manipulación con brazos Franka.
+- Modelado de tipo world-action: combina comprensión del estado visual del entorno con generación de comandos motores.
+- Integración nativa con el ecosistema LeRobot para entrenamiento, evaluación y despliegue en pipelines de robot learning.
+- Fine-tuning especializado sobre DROID, lo que le confiere adaptación a tareas de manipulación del mundo real recogidas en ese dataset.
+- Capacidades de generación de texto, razonamiento, código, matemáticas, visión general, tool calling, agentes y multilingüismo: no disponibles o no declaradas para este modelo.
+- Capacidades especiales (thinking mode, audio, etc.): no disponibles.
 
 ## Casos de uso
 
-- Manipulacion de escritorio sobre Franka: el modelo esta afinado en DROID y validado en un montaje Franka de estilo DROID con tres camaras, por lo que se puede desplegar directamente para tareas tabletop con instruccion textual.
-- Automatizacion de pick-and-place en laboratorio: con 32 acciones por chunk a 15 Hz, permite ejecutar secuencias de agarre y colocacion sin reentrenamiento y con latencia de control razonable.
-- Investigacion en world models: como predice fotogramas futuros ademas de acciones, sirve para estudiar planificacion y representaciones visuales en entornos controlados con Isaac Sim.
-- Evaluacion comparativa de politicas: utilizar la politica como referencia contra otros WAM o VLA en tareas de RoboLab-120 o en suites propias, aprovechando que el checkpoint BF16 esta validado para DROID.
-- Adaptacion a tareas especificas mediante task-LoRA: la receta lora.json permite ajustar el modelo a nuevas instrucciones o utillajes con coste de entrenamiento reducido, partiendo de un modelo ya competente en manipulacion.
-- Despliegue en estaciones de trabajo de 24 GB: con `--quantize fp8 --offload-text-encoder` el modelo cabe en GPUs de 24 GB, lo que habilita prototipos en laboratorio sin acceso a H200.
-- Generacion de datos sinteticos y aumentacion: los fotogramas futuros predichos pueden emplearse como material de aumento para entrenar otras politicas o para inspeccion visual de trayectorias antes de ejecutarlas.
-- Validacion de seguridad previa a hardware real: ejecutar la politica en simulador con el arm safety limits activado para verificar trayectorias antes de habilitar el brazo fisico.
+- Manipulación robótica en laboratorio: el modelo puede emplearse como política de control para brazos Franka en tareas de pick-and-place, aprovechando su fine-tuning sobre DROID para generalizar a configuraciones de cámara y objetos similares a las del dataset.
+- Investigación en world-action models: sirve como punto de partida para estudiar cómo un backbone generativo de gran escala se adapta a la predicción de acciones, permitiendo comparar con políticas puramente visuales o de imitación clásica.
+- Fine-tuning sobre datasets propios: al ser un modelo base con variante DROID, los equipos pueden partir de `flux-3-action-base` o de este checkpoint para adaptarlo a su propio robot o conjunto de tareas mediante LeRobot.
+- Evaluación comparativa de políticas robóticas: útil como baseline fuerte en benchmarks de manipulación, dado su tamaño (~6,95 B de parámetros) frente a políticas más ligeras.
+- Prototipado de sistemas de imitación en entornos simulados: integrable en bucles de simulación para validar trayectorias antes de desplegar en hardware real.
+- Docencia y formación en robot learning: su disponibilidad en Hugging Face con LeRobot facilita reproducir experimentos de manipulación con un modelo preentrenado de gran escala.
+- Investigación en transferencia visual-a-acción: permite estudiar la brecha entre representaciones visuales de un modelo generativo y la ejecución motora real.
 
 ## Benchmarks y rendimiento
 
-RoboLab-120 consta de 120 tareas tabletop en Isaac Sim, con 10 ensayos por tarea sobre un montaje Franka de estilo DROID; un ensayo solo cuenta como exito si la tarea se completa tal y como se ha instruido. El tablero completo esta en el leaderboard de RoboLab.
-
-| Modelo | Tipo | Exito en RoboLab-120 | Parametros |
-|---|---|---|---|
-| FLUX 3 Action | WAM | 42,92% | 7B |
-| Cosmos3-Nano-Policy | WAM | 36,8% | 16B |
-| pi-0.5 | VLA | 28,0% | 3,3B |
-
-WAM: predice fotogramas futuros y acciones de forma conjunta. VLA: modelo de vision-lenguaje que emite acciones directamente. No se han publicado en la informacion disponible resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de lenguaje, dado que el modelo no genera texto.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM en bfloat16: aproximadamente 32 GB en una NVIDIA H200, segun el autor.
-- VRAM en cuantizacion FP8: con `--quantize fp8 --offload-text-encoder` el modelo cabe en tarjetas de 24 GB.
-- GPU recomendadas: NVIDIA H200 para BF16; cualquier GPU de 24 GB o mas para el modo FP8 con descarga del codificador de texto. No se especifican modelos concretos adicionales.
-- GPU de consumo: cabe en tarjetas consumer de 24 GB (por ejemplo, RTX 4090) solo en modo FP8 con offload; en BF16 no cabe en GPUs consumer habituales.
-- Entorno validado: Python 3.12, CUDA 12.8, torch 2.10.0 y transformers 5.16.1.
-- Opciones de despliegue: LeRobot mediante Flux3Policy y make_pre_post_processors, y el paquete standalone FLUX Action (flux-action), que soporta los seis paquetes de variantes. Los paquetes nativos FP8r requieren FLUX Action.
-- Compatibilidad de configuracion: LeRobot lee config.json; FLUX Action lee config.native.json cuando existe y, en caso contrario, config.json. El cargador standalone debe soportar ese nombre de configuracion nativa.
-- Latencia y throughput: no disponibles. Se conocen los parametros de muestreo (4 pasos de Cosmos UniPC, shift 5, guia de video 4, guia de accion 1) y la frecuencia de salida de 15 Hz con 32 acciones por chunk, pero no se publican cifras de latencia ni de throughput.
-- vLLM, llama.cpp, Ollama y TGI no aparecen como opciones soportadas en la informacion disponible.
+- VRAM estimada para inferencia: con 6,95 B de parámetros, en bf16 se requieren aproximadamente 14 GB solo para pesos, más overhead de activaciones y buffers; en fp32 ascendería a unos 28 GB. Estas cifras son estimaciones a partir del recuento de parámetros, no datos oficiales.
+- GPU recomendadas: para inferencia en bf16, tarjetas con 24 GB o más (RTX 4090, A100 40 GB, H100). Para entrenamiento o fine-tuning, se recomienda A100/H100 con memoria suficiente para el estado del optimizador y el dataset.
+- ¿Cabe en GPU de consumo? Sí, en bf16 cabe en una RTX 4090 (24 GB) con margen ajustado; en cuantizaciones de 8 bits o 4 bits cabría en GPUs de 16 GB o menos, aunque no se han publicado cuantizaciones oficiales.
+- Opciones de despliegue: LeRobot como framework principal; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, que están orientados a modelos de lenguaje.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parametros | Exito en RoboLab-120 | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FLUX 3 Action DROID | WAM (acciones y fotogramas futuros) | 7B | 42,92% | flux-kommunity-license | Pesos abiertos en Hugging Face, via LeRobot |
-| Cosmos3-Nano-Policy | WAM | 16B | 36,8% | no disponible | no disponible |
-| pi-0.5 | VLA (acciones directas desde vision-lenguaje) | 3,3B | 28,0% | no disponible | no disponible |
+| FLUX-3 Action DROID | ~6,95 B | no disponible | World-action model (robotica) | FLUX Community License | Gated en Hugging Face |
+| FLUX-3 Action Base | no disponible | no disponible | World-action model (robotica) | FLUX Community License | Hugging Face (base) |
+| Políticas tipo Diffusion Policy / ACT | típicamente < 1 B | no aplica | Imitación robótica | variable (MIT/Apache en muchos casos) | Abiertas en LeRobot |
+| Modelos VLA generalistas (p. ej. OpenVLA) | ~7 B | variable | Visión-lenguaje-acción | variable | Abiertas |
 
-La comparacion se limita a la categoria de politica robotica evaluada en RoboLab-120. No se dispone de datos de contexto, licencia ni canales de distribucion de las dos alternativas en la informacion proporcionada. Destaca que FLUX 3 Action alcanza el mejor resultado con menos de la mitad de parametros que Cosmos3-Nano-Policy.
+La comparación cuantitativa con alternativas concretas no está disponible en la información proporcionada; la tabla recoge únicamente datos verificables del modelo y categorías generales de comparación.
 
 ## Limitaciones y advertencias
 
-- Ausencia de limites fisicos: nada en el modelo acota la velocidad articular, la fuerza ni el espacio de trabajo. La aplicacion debe imponer esos limites y mantener un boton de parada de hardware al alcance.
-- Riesgo en presencia de personas: la licencia prohibe controlar una maquina de forma que ponga en peligro a personas sin supervision humana y sin un medio de detencion.
-- Alucinacion de acciones y de video: como modelo generativo, puede producir comandos plausibles pero incorrectos y fotogramas futuros que no se correspondan con la escena real; no debe interpretarse la prediccion visual como una medicion.
-- Validacion limitada: las cifras de exito proceden de simulacion (Isaac Sim) sobre tareas tabletop y un montaje Franka de estilo DROID; no se documenta la transferencia a hardware real ni a otras morfologias.
-- Contrato de observacion rigido: exige tres camaras con nombres y resolucion concretos (CHW 3x360x640 en [0,1], lienzo 544x736) y un estado de 7 articulaciones mas pinza; desviarse de ese formato requiere adaptacion.
-- Restricciones de licencia: la flux-kommunity-license prohibe usos ilegales, el control peligroso de maquinas sin supervision, la toma de decisiones totalmente automatizadas o de alto riesgo que afecten a derechos legales o creen obligaciones vinculantes, el acoso y la explotacion de menores. Conviene revisar LICENSE.md antes de cualquier uso comercial.
-- Idiomas: no se especifica que idiomas acepta la instruccion de texto ni como se comporta con instrucciones fuera del idioma de entrenamiento.
-- Dependencia de infraestructura: el modo BF16 requiere alrededor de 32 GB de VRAM; el modo que cabe en 24 GB exige cuantizacion FP8 y descarga del codificador de texto, con la perdida de precision que ello implica.
-- Componentes externos fijados: el VAE y el codificador de texto se cargan desde el repositorio base, por lo que la disponibilidad de ese repositorio es un requisito operativo.
-- El repositorio incluye varias recetas de optimizacion; usar la variante equivocada (por ejemplo, la destilada a 1 paso cuando se espera calidad de 4 pasos) cambia el comportamiento sin aviso explicito en la carga por defecto.
+- Acceso restringido: el modelo es gated y requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en pipelines automatizados.
+- Licencia FLUX Community License: no es una licencia de código abierto estándar; es imprescindible revisar sus términos antes de cualquier uso comercial, ya que puede imponer restricciones adicionales.
+- Especialización estrecha: el fine-tuning sobre DROID está orientado a manipulación con brazos Franka; su generalización a otros robots, morfologías o dominios es incierta.
+- Riesgo de sobreajuste al dataset: al derivar de DROID, puede degradarse en entornos con iluminación, cámaras u objetos distintos a los del corpus original.
+- No se dispone de información sobre sesgos, tasas de alucinación o fallos específicos en ejecución motora; en robótica, los errores de política pueden tener consecuencias físicas, por lo que se recomienda validación en simulación y supervisión en hardware real.
+- Idiomas y capacidades lingüísticas: no disponibles; no debe asumirse soporte multilingüe ni de instrucciones en lenguaje natural más allá de lo que el modelo base permita.
+- Datos de benchmarks, latencia y cuantizaciones oficiales no publicados, lo que dificulta una evaluación previa rigurosa.
+- El tamaño del repositorio (63 GB) implica requisitos de almacenamiento y ancho de banda considerables para su descarga y despliegue.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/black-forest-labs/flux-3-action-droid
 - Modelo base: https://huggingface.co/black-forest-labs/flux-3-action-base
-- Coleccion FLUX 3 Action: https://huggingface.co/collections/black-forest-labs/flux-3-action-6ab25aef555dd30ab86567f8
-- Vision general de FLUX 3 Action: https://docs.bfl.ai/flux_3/flux3_action_overview
-- Guia de inferencia: https://docs.bfl.ai/flux_3/flux3_action_inference
-- Guia de ajuste fino: https://docs.bfl.ai/flux_3/flux3_action_finetuning
-- Repositorio flux-action en GitHub: https://github.com/black-forest-labs/flux-action
-- Pull request del exportador standalone: https://github.com/black-forest-labs/flux-action/pull/3
-- Dataset DROID: https://droid-dataset.github.io/
-- Leaderboard de RoboLab: https://research.nvidia.com/labs/srl/projects/robolab/leaderboard.html
-- Demo en video: https://huggingface.co/black-forest-labs/flux-3-action-droid/resolve/main/assets/flux-3-action-demo.mp4
-- Las busquedas web realizadas no devolvieron enlaces relevantes sobre este modelo.
+- LeRobot (framework de despliegue): https://github.com/huggingface/lerobot
+- Black Forest Labs: https://blackforestlabs.ai
+- Dataset DROID (referencia del fine-tuning): no disponible en la información proporcionada
+- Paper técnico: no disponible en la información proporcionada
+- Demo o blog oficial: no disponible en la información proporcionada

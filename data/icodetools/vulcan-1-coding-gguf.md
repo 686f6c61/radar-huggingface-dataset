@@ -2,99 +2,98 @@
 
 ## Resumen
 
-Vulcan-1-Coder es un modelo de lenguaje de 2.516.756.480 parámetros (aproximadamente 2,5B) especializado en generación de código, razonamiento y matemáticas, publicado por el usuario Icodetools en Hugging Face. Se distribuye únicamente en formato GGUF (quantización Q4_K_M) y deriva de DRUPEs/CherryPit-1.2-2B, un modelo base de la familia MiniCPM5-2B. Su propósito es ofrecer capacidades de codificación y razonamiento en un tamaño que quepa en hardware de consumo, con un enfoque explícito en inferencia local y en dispositivo.
+Vulcan-1-Coder es un modelo de lenguaje de 2.516.756.480 parámetros (aproximadamente 2,5B) especializado en código, razonamiento y matemáticas, desarrollado por Icodetools. Se construye a partir de CherryPit 1.2-2B (obra del equipo DRUPEs) mediante una técnica propietaria denominada "Integer Space Artificial Selection", que no entrena el modelo con datos nuevos, sino que selecciona subconjuntos de pesos ya existentes en el modelo base para reforzar determinadas capacidades. El autor afirma haber producido el modelo en una sola tarde, junto con otros 30 modelos de su clase, en un portátil con GPU de 6 GB de VRAM y sin clúster de entrenamiento.
 
-La particularidad técnica del modelo es que fue generado y evaluado directamente en "Integer Space", mediante una técnica denominada Integer Space Artificial Selection, según el autor. No se trata de un entrenamiento convencional: el autor indica que el modelo se produjo en una sola tarde junto con otros aproximadamente 30 modelos (12 en su clase), usando un portátil con GPU de 6 GB de VRAM y herramientas propias, sin clúster ni ejecuciones de entrenamiento. Esta metodología, cuyos detalles se prometen publicar más adelante, lo sitúa más cerca de una fusión o selección de pesos que de un preentrenamiento o fine-tuning clásico.
+El modelo se distribuye exclusivamente en formato GGUF, con un total de doce cuantizaciones que van desde Q8_0 (2,68 GB) hasta IQ3_S (1,19 GB). La versión que el autor considera "ganadora" de su proceso de selección es la Q4_K_M, de 1,56 GB, que es la que se evaluó en los benchmarks publicados. Está pensado para inferencia local y en dispositivo (on-device), con compatibilidad declarada con llama.cpp, LM Studio y Ollama, y con etiquetas de "endpoints_compatible".
 
-El modelo es relevante ahora por tres motivos: su tamaño reducido (2,5B) permite despliegue en GPU de consumo, su licencia Apache 2.0 facilita uso comercial, y declara un resultado notable en AIME 2026 (23/30, 76,7%) con thinking activado. No obstante, el propio autor advierte que las comparaciones de su "selection league" no son plenamente representativas, y no hay versión safetensors disponible todavía.
+La relevancia actual del modelo radica en su propuesta metodológica: demostrar que es posible obtener mejoras medibles en un modelo pequeño mediante selección de pesos en espacio entero y cuantización optimizada, sin necesidad de un ciclo de entrenamiento adicional. No obstante, la información pública es limitada: los benchmarks de código están pendientes, la técnica no está documentada todavía y parte de los resultados se midieron sobre una exportación BF16 anterior, no sobre los archivos definitivos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (misma arquitectura y tamaño que CherryPit 1.2; base MiniCPM5-2B) |
-| Parametros totales | 2.516.756.480 (~2,5B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible como especificación oficial; el autor recomienda `-c 32768` en llama-server y menciona "hasta 24K tokens" para AIME |
-| Tipos de cuantizacion | Q4_K_M (único fichero publicado: `Vulcan-1-Coder-Q4_K_M-league.gguf`) |
-| Idiomas soportados | en (inglés) |
+| Arquitectura | Transformer (derivada de CherryPit 1.2-2B; detalles no disponibles) |
+| Parametros totales | 2.516.756.480 (aproximadamente 2,5B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible (los benchmarks usan hasta 24K tokens con thinking activado) |
+| Tipos de cuantizacion | Q8_0, Q6_K, Q6_K optimizado con imatrix, Q5_K_M, Q4_K_M, Q4_K optimizado con imatrix, IQ4_XS, Q3_K (S/M/L optimizados con imatrix), IQ3_M, IQ3_S |
+| Idiomas soportados | Inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (safetensors "coming soon", no disponible) |
+| Formato de pesos | GGUF (versión safetensors anunciada como "coming soon") |
 
 ## Arquitectura y entrenamiento
 
-No se detalla la arquitectura interna en la información disponible. El autor indica que el modelo tiene "la misma arquitectura y tamaño que CherryPit 1.2", cuyo linaje se remonta a openbmb/MiniCPM5-2B. Por tanto, se trata presumiblemente de un transformer decoder-only de aproximadamente 2,5B parámetros, aunque no se confirma en la model card.
+La arquitectura subyacente es la del modelo base CherryPit 1.2-2B, un transformer de aproximadamente 2,5B parámetros; la model card no detalla capas, dimensiones ocultas ni mecanismos de atención. El aspecto diferencial no es la arquitectura, sino el proceso de construcción: Vulcan-1-Coder se genera mediante "Integer Space Artificial Selection", una técnica que, según el autor, opera sobre los pesos en espacio entero y selecciona configuraciones de pesos que maximizan el rendimiento en un conjunto de tareas de código, matemáticas, razonamiento y agentes. El autor describe el método como "data-led" y afirma que "la información existe en el modelo, solo la seleccionamos", en contraposición al entrenamiento con más datos.
 
-El método de construcción es el elemento diferencial: Vulcan se generó y probó como fichero `.gguf` mediante Integer Space Artificial Selection, una técnica que el autor describe como nueva y cuyos detalles promete publicar más adelante. No se realizaron ejecuciones de entrenamiento ni se usó clúster; el modelo se produjo en una tarde en un portátil con GPU de 6 GB de VRAM. El resultado es una suerte de fusión o selección de pesos que incorpora material de varios modelos derivados de MiniCPM5-2B: CherryPit-1.2-2B (base), el adaptador LoRA OpenCodeReasoning-2 de NANI-Nithin (entrenado sobre el dataset NVIDIA OpenCodeReasoning-2, CC-BY-4.0), MiniCPM5-2B-SWE-smith-GRPO, MiniCPM5-2B-Math y el propio MiniCPM5-2B. No se especifican número de tokens de entrenamiento, composición del dataset ni si hubo RLHF o DPO en el proceso de Vulcan.
+No se especifica el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO, porque no hay un entrenamiento convencional en el pipeline descrito. La selección se realizó sobre una "liga" (selection league) de preguntas de código difíciles, matemáticas, tareas agénticas y de razonamiento, con un pool amplio y sin repetición de preguntas para evitar sobreajuste. El autor señala que el cambio respecto a CherryPit 1.2 es de aproximadamente un paso BF16 por peso. Todas las cuantizaciones se construyen directamente desde los pesos de precisión completa, y se incluye una matriz de importancia (imatrix) en el repositorio para las variantes `i1-`. La decodificación con "thinking" (cadena de razonamiento extendida) está soportada y se usó en los benchmarks con hasta 24K tokens.
 
 ## Capacidades
 
-- Generación de código: el modelo está etiquetado y orientado a tareas de coding, con material derivado de OpenCodeReasoning-2 y SWE-smith.
-- Razonamiento matemático: declara resultados en AIME 2026 y está etiquetado como "math" y "aime".
-- Modo thinking: soporta razonamiento extendido ("thinking on"), recomendándose darle espacio (16K+ tokens para problemas difíciles).
-- Razonamiento multi-paso: las etiquetas incluyen "reasoning" y "agentic"; el autor menciona tareas agénticas en su liga de selección.
-- Conversación: pipeline text-generation y etiqueta "conversational".
-- Idiomas: únicamente inglés según la model card.
-- Tool calling / function calling: no disponible (no se menciona explícitamente en la información proporcionada).
-- Visión, audio u otras modalidades: no disponible.
+- Generación de texto conversacional y de código en inglés.
+- Razonamiento matemático con modo "thinking" activable, con cadenas de razonamiento de hasta 24K tokens.
+- Resolución de problemas de competición (evaluado en AIME 2025 y AIME 2026).
+- Razonamiento multi-paso y tareas de tipo agéntico (incluidas en la liga de selección, aunque sin resultados públicos desglosados).
+- Capacidades de código: el modelo se posiciona como "coding model", pero los benchmarks de código están anunciados como "coming soon" y no se han publicado.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de visión, audio ni otras modalidades.
+- Multilingüe: no; solo inglés según la model card.
 
 ## Casos de uso
 
-- Asistencia de código en local: el modelo puede ejecutarse en un portátil con GPU de 6 GB de VRAM mediante llama.cpp, LM Studio u Ollama, lo que permite autocompletado y generación de funciones sin depender de la nube.
-- Resolución de problemas matemáticos con razonamiento extendido: con thinking activado y hasta 24K tokens de presupuesto, el modelo aborda problemas de competición (AIME) y demostraciones paso a paso, adecuado para entornos educativos o de investigación que requieran trazabilidad del razonamiento.
-- Revisión y explicación de código en pipelines de CI: al ser un GGUF ligero, puede integrarse en un runner con GPU modesta para generar resúmenes de diffs, detectar errores evidentes o proponer parches en pull requests.
-- Prototipado de agentes de codificación: sus etiquetas "agentic" y "reasoning" permiten usarlo como núcleo de un agente que descompone tareas de programación en pasos, siempre que se le dé un presupuesto de contexto amplio (32K configurado en llama-server).
-- Inferencia en dispositivo (on-device): aplicaciones de escritorio o móviles con recursos limitados pueden embeber el modelo Q4_K_M de 1,56 GB para tareas de asistencia técnica sin conexión.
-- Experimentación con técnicas de fusión de modelos: dado que el autor documenta el proceso de Integer Space Artificial Selection, el modelo sirve como caso de estudio reproducible para investigadores interesados en merges y selección de pesos en espacio entero.
-- Evaluación comparativa de modelos pequeños: su resultado declarado en AIME 2026 y su liga de selección lo convierten en referencia para comparar modelos de ~2,5B en tareas de código y matemáticas.
+- Asistencia de código en local: el modelo cabe en 1,56 GB en Q4_K_M y puede ejecutarse con llama.cpp u Ollama en equipos sin GPU dedicada, lo que permite autocompletado y explicación de fragmentos de código en entornos con recursos limitados.
+- Razonamiento matemático en dispositivo: con el modo thinking y ventanas de hasta 24K tokens, es adecuado para resolver problemas de tipo competición o verificación de cálculos en aplicaciones educativas que deban funcionar offline.
+- Prototipado rápido de agentes: su tamaño reducido permite desplegar múltiples instancias en paralelo en una sola GPU consumer para experimentar con pipelines multi-paso antes de escalar a modelos mayores.
+- Enseñanza e investigación de técnicas de cuantización: el repositorio incluye doce cuantizaciones con métricas de KL y acuerdo top-1 frente a precisión completa, lo que lo convierte en un caso de estudio práctico para analizar el impacto de la cuantización en modelos pequeños.
+- Filtrado y clasificación de código en CI/CD: al ser ligero y compatible con endpoints, puede usarse como primer nivel de revisión (detección de patrones, generación de tests sencillos) antes de recurrir a modelos mayores.
+- Aplicaciones de escritorio y móviles con restricciones de memoria: la variante IQ3_S de 1,19 GB permite integración en aplicaciones locales donde no es viable cargar modelos de 7B o superiores.
+- Evaluación comparativa de métodos de merge: sirve como referencia para investigadores que estudien selección de pesos en espacio entero frente a fine-tuning convencional.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | Vulcan-1-Coder | CherryPit 1.2 (base) | Notas |
+| Benchmark | Configuración | Resultado | Notas |
 |---|---|---|---|
-| AIME 2026 | 23/30 = 76,7% | no disponible | thinking on, hasta 24K tokens, temperature 1.0, 1 muestra, Q4_K_M |
-| Selection league (preguntas de código, matemáticas, agentic y razonamiento) | 0,763 por pregunta | 0,611 por pregunta | Q4_K_M, temperature 1.0; el autor advierte que las preguntas variaron entre modelos y no es una comparación head-to-head |
+| AIME 2025 | Thinking on, hasta 24K tokens, temperatura 1.0, 1 muestra, Q8_0 | 21/30 = 70,0% | Medido sobre la exportación BF16 anterior de Q8_0, no sobre el archivo actual; repetición pendiente |
+| AIME 2026 (run 1) | Thinking on, hasta 24K tokens, temperatura 1.0, 1 muestra, Q4_K_M | 23/30 = 76,7% | Sobre el archivo Q4_K_M ganador de la liga |
+| AIME 2026 (run 2) | Thinking on, hasta 24K tokens, temperatura 1.0, 1 muestra, Q8_0 | 21/30 = 70,0% | Medido sobre la exportación BF16 anterior de Q8_0; repetición pendiente |
 
-No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
+No se han publicado resultados de benchmarks de código (HumanEval, MBPP u otros) ni de MMLU, GSM8K u otras evaluaciones estándar en la información disponible. El autor indica que los benchmarks de código están "coming soon". Las métricas de cuantización (KL medio y acuerdo top-1 frente a precisión completa, sobre 40 secuencias de 512 tokens retenidos) sí están publicadas por archivo: Q8_0 alcanza KL 0,0005 y 99,3% de acuerdo top-1; Q4_K_M de la liga, KL 0,0615 y 91,6%; IQ3_S, KL 0,2044 y 84,1%.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el fichero Q4_K_M ocupa 1,56 GB, por lo que la inferencia cabe holgadamente en GPUs de 4-6 GB de VRAM. El autor lo generó y probó en una GPU de portátil con 6 GB.
-- GPU recomendadas: cualquier GPU consumer con al menos 4-6 GB de VRAM (por ejemplo, RTX 3050, RTX 4060, RTX 4090); también A100/H100 si se busca throughput, aunque el modelo está pensado para hardware modesto.
-- Cabe en GPU consumer: sí, en la mayoría de GPUs de gama media y baja con 4 GB o más.
-- Opciones de despliegue: llama.cpp (`llama-server`), LM Studio, Ollama y cualquier runtime compatible con GGUF. Comando de ejemplo del autor: `llama-server -m Vulcan-1-Coder-Q4_K_M-league.gguf -ngl 99 -c 32768 --jinja`.
-- Latencia y throughput: no disponible (no se publican cifras).
+- VRAM estimada para inferencia: aproximadamente 1,5-2 GB en Q4_K_M (1,56 GB de pesos más overhead de contexto); aproximadamente 2,7-3,5 GB en Q8_0; aproximadamente 1,3-1,8 GB en las variantes de 3 bits.
+- GPU recomendadas: cualquier GPU con 4 GB o más de VRAM para Q4_K_M; el autor generó y probó el modelo en una GPU de 6 GB de VRAM. Para Q8_0 se recomienda 6 GB o más.
+- Cabe en GPU consumer: sí, en tarjetas como RTX 3050, RTX 4060, RTX 3060 y superiores; también en iGPU y CPU gracias a las variantes de 3 y 4 bits.
+- Opciones de despliegue: llama.cpp, LM Studio y Ollama (declarados en la model card); el formato GGUF es compatible con cualquier runtime basado en llama.cpp. No se menciona soporte de vLLM ni TGI.
+- Latencia y throughput: no disponibles. El autor no publica mediciones de tokens por segundo ni latencia.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Vulcan-1-Coder | ~2,5B | hasta 32K configurado (no especificado oficialmente) | Apache 2.0 | GGUF (Q4_K_M) | Especializado en código y matemáticas; AIME 2026 76,7% |
-| CherryPit 1.2 (base) | ~2,5B | no disponible | Apache 2.0 | no disponible | Base directa de Vulcan; puntuación 0,611 en la liga del autor |
-| MiniCPM5-2B | ~2B | no disponible | Apache 2.0 | no disponible | Modelo original del linaje; sin datos de benchmarks en esta información |
+| Vulcan-1-Coder | 2,5B | No disponible (benchmarks a 24K) | Apache 2.0 | GGUF | Especializado en código y matemáticas; sin benchmarks de código publicados |
+| CherryPit 1.2-2B (modelo base) | Aproximadamente 2B | No disponible | No disponible en la información proporcionada | No disponible en la información proporcionada | Modelo del que deriva Vulcan; el autor lo califica de "excelente" |
+| Alternativas de 2-3B para código | No disponible | No disponible | No disponible | No disponible | No se dispone de datos verificables en la información proporcionada para establecer una comparación cuantitativa |
 
-No se dispone de datos de benchmarks comparables de terceros para establecer una comparación rigurosa con alternativas de la misma categoría.
+No se dispone de datos de benchmarks comparativos con otros modelos de la misma categoría en la información proporcionada; el autor no incluye comparaciones directas con alternativas.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponible; no se documentan evaluaciones de sesgo.
-- Riesgo de alucinación: no se cuantifica; como modelo pequeño de 2,5B, es esperable una tasa de alucinación superior a la de modelos mayores, aunque no hay datos que lo confirmen.
-- Limitaciones de contexto e idioma: solo inglés; el contexto no está especificado oficialmente y el autor recomienda 32K en llama-server, advirtiendo que límites cortos truncan las respuestas de razonamiento.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el modelo incorpora pesos de componentes con licencias Apache 2.0 y un dataset CC-BY-4.0 (NVIDIA OpenCodeReasoning-2); conviene revisar las atribuciones requeridas.
-- Caveat de producción: el autor advierte que la "selection league" no es una comparación head-to-head fiable porque las preguntas variaron entre modelos; el benchmark like-for-like está pendiente.
-- Metodología no publicada: los detalles de Integer Space Artificial Selection no están disponibles, lo que dificulta reproducir o auditar el proceso de construcción.
-- Disponibilidad: solo existe la quantización Q4_K_M; no hay safetensors todavía, lo que limita el fine-tuning y el uso con frameworks que no consuman GGUF.
-- Madurez: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y el modelo se creó en una tarde; no hay evidencia de validación independiente.
+- El propio autor advierte de que el modelo "no ha sido probado ni entrenado a fondo después de la selección" y que "puede tener fallos", citando como ejemplo una ocasión en que emitió una secuencia de símbolos sin sentido.
+- Los benchmarks de código, que son la especialidad declarada del modelo, no están publicados; las únicas evaluaciones son de matemáticas (AIME).
+- Dos de los tres resultados de AIME se midieron sobre una exportación BF16 anterior de Q8_0, no sobre los archivos definitivos del repositorio; el autor indica que la repetición está pendiente.
+- El método de construcción ("Integer Space Artificial Selection") no está documentado todavía; el autor afirma que publicará los detalles más adelante, por lo que la reproducibilidad es nula por ahora.
+- Solo soporta inglés; no hay evidencia de capacidades multilingües.
+- La longitud de contexto no está especificada; los 24K tokens usados en benchmarks corresponden a la configuración de evaluación, no a una especificación oficial del modelo.
+- No se documenta soporte de tool calling ni de agentes con herramientas; las tareas agénticas solo aparecen mencionadas en la liga de selección.
+- Licencia Apache 2.0: permite uso comercial, pero al derivar de CherryPit 1.2-2B conviene verificar la licencia del modelo base antes de un despliegue en producción.
+- Riesgo de alucinación inherente a un modelo de 2,5B; no se han publicado evaluaciones de sesgo ni de robustez.
+- La versión safetensors no está disponible todavía; solo existen pesos GGUF.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Icodetools/Vulcan-1-coding-GGUF
-- Modelo base: https://huggingface.co/DRUPEs/CherryPit-1.2-2B
-- MiniCPM5-2B: https://huggingface.co/openbmb/MiniCPM5-2B
-- Adaptador LoRA OpenCodeReasoning-2: https://huggingface.co/NANI-Nithin/MiniCPM5-2B-OpenCodeReasoning2-LoRA
-- Dataset NVIDIA OpenCodeReasoning-2: https://huggingface.co/datasets/nvidia/OpenCodeReasoning-2
-- MiniCPM5-2B-SWE-smith-GRPO: https://huggingface.co/zzzluvst/MiniCPM5-2B-SWE-smith-GRPO
-- MiniCPM5-2B-Math: https://huggingface.co/Caldalis/MiniCPM5-2B-Math
-- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
-- Licencia CC-BY-4.0: https://creativecommons.org/licenses/by/4.0/
-- Resultados AIME 2026: `aime2026_results.md` (referenciado en el repositorio, sin URL directa disponible)
+- Modelo en Hugging Face: https://huggingface.co/Icodetools/Vulcan-1-coding-GGUF
+- Modelo base CherryPit 1.2-2B: https://huggingface.co/DRUPEs/CherryPit-1.2-2B
+- Matriz de importancia (imatrix) incluida en el repositorio: carpeta `imatrix/` del repositorio de Hugging Face
+- Documentación del método (anunciada, no publicada): no disponible
+- Resultados por problema de AIME (anunciados en un sitio en construcción): no disponible
+- Benchmarks de código: anunciados como "coming soon", no disponibles

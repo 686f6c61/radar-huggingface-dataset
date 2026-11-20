@@ -2,94 +2,94 @@
 
 ## Resumen
 
-`huggingface-mic/nsfw_image_detector-mic` no es un modelo entrenado, sino un artefacto de prueba (fixture) generado por el proyecto `transformers-mic` de Hugging Face. Se trata de una version reducida y con pesos aleatorios del modelo `Freepik/nsfw_image_detector`, un clasificador de imagenes para deteccion de contenido NSFW basado en `TimmWrapperForImageClassification`. El repositorio incluye los pesos "slim", un manifiesto de contrato (`integration.json`), ejemplos de uso con Transformers y las expectativas del framework sobre el modelo.
+`nsfw_image_detector-mic` es un artefacto de prueba publicado por la organización `huggingface-mic` como parte de la infraestructura de validación de contratos de `transformers`. No es un modelo entrenado ni utilizable para inferencia real: se trata de una versión "slim" (reducida) del checkpoint `Freepik/nsfw_image_detector`, un clasificador de imágenes NSFW basado en `TimmWrapperForImageClassification`. El repositorio incluye pesos reducidos, ejemplos de uso y las expectativas de framework necesarias para verificar la integración del modelo original con la librería.
 
-El objetivo de este artefacto es servir como fixture de pruebas para validar la integracion de modelos de clasificacion de imagenes en el ecosistema Transformers: comprobar que los nombres de tensores, el procesador y el contrato de entradas/salidas coinciden con el checkpoint real, sin necesidad de distribuir los pesos originales. Los pesos son aleatorios (semilla 17), aunque pasaron una puerta de sensibilidad de entrada que verifica que perturbaciones en `pixel_values` mueven los logits al menos 0,001.
+El modelo conserva la misma arquitectura y los mismos nombres de tensor que el checkpoint original, pero los pesos son aleatorios (semilla 17) y la configuración está reducida mediante la regla genérica de `sweep.py`. Con 86.351.620 parámetros, el artefacto sirve para validar que el pipeline de `transformers` carga, ejecuta y propaga gradientes correctamente sobre la arquitectura del detector NSFW original, sin necesidad de distribuir los pesos reales.
 
-Por tanto, este repositorio no debe usarse para inferencia real de deteccion de NSFW. Es relevante unicamente para desarrolladores que trabajen en el pipeline de `transformers-mic` o que necesiten reproducir el contrato tecnico del modelo base `Freepik/nsfw_image_detector` sin descargar el checkpoint completo.
+Es relevante únicamente en el contexto de desarrollo y testing de integraciones: la etiqueta `test-artifact` lo excluye explícitamente de la búsqueda de modelos candidatos. Cualquier uso en producción sería un error, ya que las predicciones del modelo son esencialmente aleatorias.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | TimmWrapperForImageClassification (clasificacion de imagenes) |
+| Arquitectura | TimmWrapperForImageClassification (clasificador de imágenes basado en timm) |
 | Parametros totales | 86.351.620 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (modelo de vision, no de texto) |
-| Tipos de cuantizacion | no disponible (pesos en bfloat16) |
-| Idiomas soportados | no disponible (clasificacion de imagenes) |
+| Longitud de contexto | no disponible (modelo de visión, no de texto) |
+| Tipos de cuantizacion | no disponible (pesos en bfloat16; compatible con float32 y float16 según la model card) |
+| Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (bfloat16) |
+| Formato de pesos | safetensors |
+| Modelo base | Freepik/nsfw_image_detector |
+| Tipo de artefacto | test-artifact (fixture de validación, pesos aleatorios) |
+| Tamano del repo | 0.2 GB |
+| Dtype de carga por defecto | bfloat16 |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un `TimmWrapperForImageClassification`, es decir, un envoltorio de Transformers sobre un modelo de vision de la libreria `timm` adaptado a clasificacion de imagenes. El artefacto comparte arquitectura y nombres de tensores con `Freepik/nsfw_image_detector`, pero su configuracion ha sido reducida mediante la regla generica de `sweep.py` del proyecto `transformers-mic`. Los ficheros del procesador se copiaron byte a byte desde el modelo original.
+El modelo es un `TimmWrapperForImageClassification`, es decir, un envoltorio de `transformers` sobre un backbone de la librería `timm` configurado para clasificación de imágenes. La arquitectura subyacente corresponde al checkpoint `Freepik/nsfw_image_detector`, del que hereda la estructura de capas y los nombres de tensor, pero no los pesos: la configuración ha sido reducida mediante la regla genérica de `sweep.py` del repositorio `transformers-mic`, manteniendo la misma topología.
 
-No hubo entrenamiento: los pesos son aleatorios con semilla 17. El artefacto se valido con una puerta de sensibilidad de entrada que comprueba que cada perturbacion de las entradas del contrato mueve los logits al menos 0,001 (la mas debil, `pixel_values:roll_batch`, produjo 0,0273). Los pesos son finitos en float32, bfloat16 y float16 tanto en forward como en loss y gradientes, y se guardaron en bfloat16, el dtype con el que carga por defecto el modelo base. El fixture cubre todos los checkpoints cuyos ficheros de procesador son identicos byte a byte y cuya config coincide tras el shrink.
+No ha habido entrenamiento. Los pesos son aleatorios con semilla 17 y se generaron únicamente para superar una puerta de sensibilidad a la entrada: cada perturbación de los inputs del contrato mueve los logits al menos 0,001 (la más débil, `pixel_values:roll_batch`, mueve 0,0273). Los ficheros de procesador se copiaron byte a byte desde el checkpoint original. El modelo es finito en float32, bfloat16 y float16 tanto en forward como en loss y gradientes. La clave de fixture `825396ff4c10` agrupa todos los checkpoints cuyos ficheros de procesador son idénticos byte a byte y cuya configuración coincide tras el proceso de reducción.
 
 ## Capacidades
 
-- Clasificacion de imagenes en dos clases (NSFW / no NSFW), heredada del contrato del modelo base `Freepik/nsfw_image_detector`.
-- Integracion con Transformers mediante `TimmWrapperForImageClassification` y su procesador de imagenes asociado.
-- Validacion de contrato de entradas/salidas: el repositorio incluye `integration.json` con el manifiesto y `integrations/transformers/expectations` con las expectativas del framework.
-- Sensibilidad verificada a perturbaciones en `pixel_values` (gate de entrada superado).
-- Compatibilidad numerica en float32, bfloat16 y float16.
-- No soporta generacion de texto, tool calling, agentes, razonamiento multi-paso ni capacidades multilingues: es un clasificador de vision.
-- No es un modelo usable: los pesos son aleatorios y las predicciones no tienen significado semantico.
+- Clasificación de imágenes mediante `TimmWrapperForImageClassification` (estructura compatible con el detector NSFW original).
+- Carga y ejecución en `transformers` con los mismos nombres de tensor que el checkpoint real.
+- Ejecución en float32, bfloat16 y float16 (forward, loss y gradientes finitos).
+- Validación de contratos de entrada/salida del pipeline de clasificación de imágenes.
+- No realiza detección NSFW real: los pesos son aleatorios.
+- No soporta tool calling, agentes, razonamiento multi-paso ni generación de texto.
+- No dispone de capacidades multilingües (no procesa texto).
 
 ## Casos de uso
 
-- Pruebas de integracion en Transformers: usar el fixture para verificar que el pipeline de clasificacion de imagenes carga correctamente un `TimmWrapperForImageClassification` con su procesador, sin descargar el checkpoint real.
-- Validacion de contrato en CI: ejecutar `integrations/transformers/expectations` en pipelines de integracion continua para detectar regresiones en el envoltorio de `timm` o en el manejo de `pixel_values`.
-- Desarrollo de herramientas de inspeccion de modelos: comprobar que los nombres de tensores del fixture coinciden con los del checkpoint real `Freepik/nsfw_image_detector`, util para herramientas que mapean pesos entre frameworks.
-- Reproduccion de fixtures: reconstruir el artefacto con `python example/build_fixtures.py --fixture nsfw_image_detector-mic` para auditar el proceso de shrink y los hashes registrados en `build.json`.
-- Pruebas de compatibilidad de dtype: verificar que el modelo es finito en float32, bfloat16 y float16 en forward, loss y gradientes antes de portar el checkpoint real a produccion.
-- Educacion y documentacion: ilustrar como se estructura un repositorio de fixture con manifiesto de contrato, procedencia y expectativas de framework en el ecosistema Hugging Face.
-- No debe usarse para moderacion de contenido real, filtrado de imagenes en produccion ni ninguna tarea donde se requieran predicciones con significado.
+- Test de integración de `transformers`: verificar que `TimmWrapperForImageClassification` carga el checkpoint, ejecuta el forward y propaga gradientes sin errores en CI.
+- Validación de contratos de framework: comprobar que las expectativas documentadas en `integrations/transformers/expectations` se cumplen sobre la arquitectura del detector NSFW.
+- Pruebas de regresión de la librería: detectar cambios que rompan la compatibilidad con checkpoints de tipo `TimmWrapper` sin necesidad de descargar los pesos reales.
+- Desarrollo de pipelines de clasificación de imágenes: usar el fixture como sustituto ligero del modelo real durante el desarrollo de código de preprocesado y postprocesado.
+- Verificación de dtypes: comprobar el comportamiento de la carga en bfloat16 por defecto y la conversión a float32/float16 en entornos con distintas capacidades de hardware.
+- Reproducción de fixtures: reconstruir el artefacto con `python example/build_fixtures.py --fixture nsfw_image_detector-mic` y comparar hashes con `build.json`.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un fixture con pesos aleatorios, cualquier metrica de calidad (precision, recall, F1) careceria de sentido.
+No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un artefacto de prueba con pesos aleatorios, cualquier métrica de calidad (precisión, recall, F1 sobre NSFW) sería meaningless y no se reporta.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en bfloat16 (86,4 M de parametros, aproximadamente 173 MB de pesos) mas el coste de activaciones del procesador de imagenes.
-- GPU recomendadas: cualquier GPU consumer moderna es suficiente; tambien funciona en CPU para pruebas.
-- Cabe en GPU consumer: si, en cualquier GPU con al menos 1-2 GB de VRAM libre (GTX 1650, RTX 3050, RTX 4090, etc.).
-- Opciones de despliegue: Transformers con `TimmWrapperForImageClassification`; el uso con vLLM, llama.cpp u Ollama no aplica a un clasificador de vision de este tipo.
-- Latencia y throughput estimados: no disponibles; al ser un fixture de pruebas, no se han publicado mediciones.
+- VRAM estimada para inferencia: inferior a 1 GB en bfloat16 (86,4 M de parámetros, ~173 MB de pesos) más memoria de activaciones, que depende del tamaño de imagen de entrada.
+- GPU recomendadas: cualquier GPU con soporte bfloat16 o float16; no requiere A100 ni H100.
+- Cabe holgadamente en GPU de consumo: RTX 3060, RTX 4060, RTX 4090, e incluso en CPU para pruebas.
+- Opciones de despliegue: `transformers` (con `TimmWrapperForImageClassification`), `timm` como backend subyacente. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI (no aplica a un clasificador de imágenes).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Tarea | Pesos | Licencia | Uso previsto |
 |---|---|---|---|---|---|
-| huggingface-mic/nsfw_image_detector-mic | 86,4 M | Clasificacion de imagenes (fixture) | no aplica | no disponible | Hugging Face |
-| Freepik/nsfw_image_detector | no disponible | Clasificacion de imagenes NSFW | no aplica | no disponible | Hugging Face |
-| Falconsai/nsfw_image_detection | no disponible | Clasificacion de imagenes NSFW | no aplica | no disponible | Hugging Face |
+| `huggingface-mic/nsfw_image_detector-mic` | 86,4 M | Clasificación de imágenes (fixture) | Aleatorios (semilla 17) | no disponible | Test de integración |
+| `Freepik/nsfw_image_detector` | no disponible en la información | Detección NSFW | Entrenados | no disponible | Producción |
+| Otros fixtures `*-mic` de `huggingface-mic` | variable | Varias | Aleatorios | no disponible | Test de integración |
 
-La comparativa se limita a modelos de la misma categoria (deteccion de contenido NSFW en imagenes). No se dispone de datos de parametros, contexto ni licencia de las alternativas en la informacion proporcionada, por lo que no es posible una comparacion cuantitativa de rendimiento.
+La comparación relevante es con el checkpoint base `Freepik/nsfw_image_detector`: misma arquitectura y mismos nombres de tensor, pero pesos reales frente a pesos aleatorios. El fixture no es un sustituto funcional del modelo original.
 
 ## Limitaciones y advertencias
 
-- Los pesos son aleatorios (semilla 17): las predicciones no tienen significado y no deben usarse para moderacion real.
-- Es un artefacto de prueba etiquetado como `test-artifact`, pensado para quedar fuera de la busqueda de modelos candidatos.
-- La licencia no esta disponible en la informacion proporcionada; no se puede confirmar el uso comercial.
-- El repositorio esta marcado como `not-for-all-anchored`/`not-for-all-audiences` por la tematica del modelo base (contenido NSFW).
-- No es multilingue ni soporta texto: es exclusivamente un clasificador de vision.
-- La configuracion ha sido reducida respecto al modelo base, por lo que el numero de parametros no coincide con el checkpoint original.
-- No se han publicado benchmarks ni metricas de calidad; cualquier evaluacion de rendimiento requeriria el modelo base real.
-- El uso en produccion debe hacerse con `Freepik/nsfw_image_detector`, no con este fixture.
+- Los pesos son aleatorios: las predicciones no tienen ningún valor semántico y no deben interpretarse como detección NSFW.
+- Etiquetado explícitamente como `test-artifact` y excluido de la búsqueda de modelos candidatos; no usar en producción bajo ningún concepto.
+- La licencia no está disponible en la información proporcionada; verificar la licencia del modelo base `Freepik/nsfw_image_detector` antes de cualquier uso derivado.
+- El repositorio está marcado como `not-for-all-audiences` por la temática del modelo base (detección NSFW).
+- La configuración está reducida respecto al checkpoint original; el número de parámetros (86,4 M) no coincide necesariamente con el del modelo real.
+- Los ficheros de procesador se copiaron del modelo base, pero el resto de artefactos (usage, expectations) deben regenerarse con `build_fixtures.py` si se necesita una reproducción completa.
+- No hay garantía de que la puerta de sensibilidad a la entrada (movimiento mínimo de logits de 0,001) sea suficiente para validar comportamientos numéricos finos en todos los backends.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/nsfw_image_detector-mic
+- Repositorio en Hugging Face: https://huggingface.co/huggingface-mic/nsfw_image_detector-mic
 - Modelo base: https://huggingface.co/Freepik/nsfw_image_detector
-- Manifiesto de contrato: https://huggingface.co/huggingface-mic/nsfw_image_detector-mic/blob/main/integration.json
-- Uso con Transformers: https://huggingface.co/huggingface-mic/nsfw_image_detector-mic/blob/main/integrations/transformers/usage.md
-- Expectativas de Transformers: https://huggingface.co/huggingface-mic/nsfw_image_detector-mic/tree/main/integrations/transformers/expectations
-- Procedencia del fixture: https://huggingface.co/huggingface-mic/nsfw_image_detector-mic/blob/main/build.json
-- Documentacion del proceso de shrink: https://huggingface-mic-mic-coverage.static.hf.space/shrink/nsfw_image_detector-mic.html
-- Repositorio transformers-mic: https://github.com/huggingface/transformers-mic
-- Script de barrido: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
-- Script de construccion de fixtures: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
-- Alternativa comparable (Falconsai): https://huggingface.co/Falconsai/nsfw_image_detection
+- Manifest de contrato: `integration.json` (en el repo)
+- Uso con Transformers: `integrations/transformers/usage.md` (en el repo)
+- Expectativas de Transformers: `integrations/transformers/expectations` (en el repo)
+- Procedencia del fixture: `build.json` (en el repo)
+- Explicación del proceso de reducción: https://huggingface-mic-mic-coverage.static.hf.space/shrink/nsfw_image_detector-mic.html
+- Script de reducción `sweep.py`: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Script de construcción `build_fixtures.py`: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py

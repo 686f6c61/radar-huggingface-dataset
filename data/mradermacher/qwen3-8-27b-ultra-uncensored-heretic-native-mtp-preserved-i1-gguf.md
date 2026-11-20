@@ -2,48 +2,51 @@
 
 ## Resumen
 
-Este repositorio contiene cuantizaciones GGUF con imatrix del modelo `llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved`, preparadas por mradermacher. El modelo base es una versión "abliterated" (técnica que elimina los mecanismos de rechazo del modelo) y "uncensored" de un Qwen3.8-27B, con la capacidad de Multi-Token Prediction (MTP) nativa preservada. Se distribuye bajo licencia Apache 2.0 y está pensado para ejecución local en hardware de consumo mediante el ecosistema llama.cpp.
+Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved-i1-GGUF es una cuantizacion GGUF del modelo llmfan46/Qwen3.8-27B-Uncensored-Heretic-Native-MTP-Preserved, publicada por el usuario mradermacher. Se trata de una variante "abliterated" o "decensored" de un modelo de la familia Qwen 3.8 con aproximadamente 27.320 millones de parametros (27,32 B), orientada a eliminar las capas de rechazo y moderacion tipicas de los modelos alineados. El autor del modelo base es llmfan46 y la cuantizacion corre a cargo de mradermacher, conocido por producir versiones GGUF con imatrix para llama.cpp.
 
-La relevancia de este modelo radica en que ofrece una alternativa sin censura para desarrolladores e investigadores que necesitan explorar los límites de los modelos de lenguaje, ya sea para estudiar su comportamiento, para aplicaciones creativas sin restricciones o para experimentar con técnicas de alineación. Al ser una cuantización GGUF, se puede ejecutar en GPUs de gama media con requisitos de VRAM moderados, y el formato imatrix mejora la calidad de las cuantizaciones de baja precisión.
+La relevancia de esta ficha radica en que combina dos elementos poco habituales: por un lado, el proceso "heretic/abliterated" que busca preservar capacidades mientras se eliminan restricciones de rechazo; por otro, la etiqueta "Native-MTP-Preserved", que sugiere la conservacion de Multi-Token Prediction (MTP) en el modelo, una tecnica de decodificacion especulativa que puede acelerar la inferencia. El repositorio incluye cuantizaciones desde Q2_K (11,0 GB) hasta Q6_K (22,5 GB), lo que permite desplegarlo en un rango amplio de hardware.
 
-El modelo tiene 27.320.697.856 parámetros (27,3B) y, según la model card, es un modelo de visión, por lo que los archivos de proyección multimodal (mmproj) se encuentran en el repositorio estático asociado. El idioma soportado es únicamente inglés.
+El modelo se distribuye bajo licencia Apache 2.0 y esta etiquetado como modelo de vision (el autor indica que los ficheros mmproj, si existen, estan en el repositorio estatico). No obstante, la informacion disponible sobre arquitectura interna, contexto y datos de entrenamiento es muy limitada; los datos que no aparecen en la model card se marcan como "no disponible".
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (basado en Qwen3.8-27B) |
-| Parametros totales | 27.320.697.856 (27,3B) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | i1-Q2_K (11,0 GB), i1-IQ3_M (12,9 GB), i1-Q4_K_S (15,9 GB) |
+| Arquitectura | no disponible (modelo derivado de la familia Qwen 3.8; transformer presumiblemente, sin confirmar) |
+| Parametros totales | 27.320.697.856 (27,32 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (imatrix) |
 | Idiomas soportados | en (ingles) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (con archivo imatrix) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizado); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es una variante "uncensored" y "abliterated" de Qwen3.8-27B, desarrollada por llmfan46 (tambien conocido como OrcaRouter). La tecnica de abliteration elimina selectivamente las direcciones en el espacio de activaciones que correlacionan con el rechazo a contenido no deseado, lo que resulta en un modelo que no se niega a responder a peticiones que el modelo original rechazaria. El tag "Heretic" sugiere una modificacion adicional orientada a maximizar la libertad de generacion, y "Native-MTP-Preserved" indica que se ha conservado la capacidad de Multi-Token Prediction (MTP) del modelo original, una tecnica que permite predecir varios tokens futuros simultaneamente y que puede mejorar la velocidad de inferencia.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base en la documentacion proporcionada. Por el nombre y el tamano (27,32 B parametros) se trata presumiblemente de un transformer derivado de la familia Qwen 3.8, pero no se confirma ni el numero de capas, ni la dimension oculta, ni si emplea atencion lineal, mezcla de expertos u otro esquema. La etiqueta "Native-MTP-Preserved" indica que el proceso de modificacion ha intentado conservar el mecanismo de Multi-Token Prediction (MTP) del modelo original, lo que en la practica se traduce en la posibilidad de decodificacion especulativa nativa y, por tanto, en un mayor throughput en inferencia.
 
-No se dispone de informacion detallada sobre el dataset de entrenamiento, el numero de tokens utilizados ni si se aplicaron tecnicas de RLHF o DPO. La cuantizacion GGUF con imatrix realizada por mradermacher utiliza el algoritmo de importance matrix para calcular las estadisticas de activacion y optimizar la asignacion de bits en las cuantizaciones de baja precision, lo que reduce la perdida de calidad respecto a las cuantizaciones estaticas convencionales.
+Respecto al entrenamiento, la model card no aporta datos sobre numero de tokens, composicion del dataset ni si hubo fases de RLHF o DPO. Las etiquetas "heretic", "uncensored", "decensored" y "abliterated" apuntan a un proceso de edicion de pesos orientado a eliminar la direccion de rechazo en el espacio de activaciones, habitualmente mediante tecnicas de abliteration (proyeccion ortogonal sobre la direccion de refusal). La etiqueta "mpoa" (probablemente Multi-Preference Optimization Alignment u otra variante de alineacion por preferencias) sugiere que se aplico algun tipo de optimizacion por preferencias para reforzar el comportamiento sin censura. No se especifica el volumen de datos ni el procedimiento exacto.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento: hereda las capacidades del modelo Qwen3.8-27B, aunque no se han publicado benchmarks especificos para esta variante.
-- Vision: segun la model card, es un modelo de vision; los archivos mmproj estan disponibles en el repositorio estatico.
-- Multi-Token Prediction (MTP): la capacidad nativa de prediccion multiple de tokens se ha preservado, lo que puede mejorar la velocidad de decodificacion en entornos compatibles.
-- Sin censura: el proceso de abliteration elimina los mecanismos de rechazo, permitiendo generar contenido que el modelo original bloquearia.
-- Conversacional: el tag "conversational" indica que esta optimizado para dialogos multi-turno.
-- Idioma: exclusivamente ingles.
+- Generacion de texto conversacional en ingles, con etiqueta "conversational" en el repositorio.
+- Comportamiento sin censura: el proceso heretic/abliterated busca eliminar los rechazos del modelo base ante peticiones que un modelo alineado rechazaria.
+- Capacidad multimodal declarada: el autor indica que es un modelo de vision y que los ficheros mmproj, si existen, estan en el repositorio estatico; no se detalla que tareas visuales cubre.
+- Soporte de Multi-Token Prediction (MTP) preservado, segun el nombre del modelo, lo que habilita decodificacion especulativa nativa.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: limitadas al ingles segun la etiqueta de idioma; no se declaran otros idiomas.
+- Thinking mode u otras capacidades especiales: no disponible.
 
 ## Casos de uso
 
-- Investigacion sobre alineacion y seguridad: permite estudiar el comportamiento de un modelo sin mecanismos de rechazo, comparando sus respuestas con las del modelo original para entender como funcionan los sistemas de seguridad interna.
-- Generacion creativa sin restricciones: escritura de ficcion, poesia, guiones o contenido satirico que aborde temas tabu o controvertidos sin limitaciones impuestas por el modelo.
-- Desarrollo de asistentes de rol (roleplay): creacion de personajes y escenarios donde el usuario espera respuestas sin filtros, comun en comunidades de juegos de rol por texto.
-- Analisis de textos sensibles: procesamiento de documentos que contienen lenguaje ofensivo o temas delicados donde un modelo censurado podria negarse a trabajar.
-- Despliegue local en hardware modesto: gracias a las cuantizaciones GGUF, se puede ejecutar en una GPU con 12-16 GB de VRAM, lo que permite prototipar aplicaciones sin depender de APIs externas.
-- Experimentacion con tecnicas de cuantizacion: el archivo imatrix incluido permite a los desarrolladores crear sus propias cuantizaciones personalizadas y evaluar el impacto en la calidad del modelo.
+- Investigacion sobre alineacion y abliteration: el modelo sirve como objeto de estudio para comparar el comportamiento de un modelo base alineado frente a su version heretic, midiendo la tasa de rechazos, la coherencia y la degradacion de capacidades tras la edicion de pesos.
+- Generacion creativa sin restricciones: escritura de ficcion, guiones o narrativa que aborde temas sensibles y que un modelo alineado rechazaria; el modelo esta disenado para no bloquear este tipo de contenido.
+- Despliegue local en hardware de consumo: las cuantizaciones i1-Q4_K_M (16,9 GB) e i1-Q4_K_S (15,9 GB) permiten ejecutar el modelo en GPUs con 24 GB de VRAM, como la RTX 4090, mediante llama.cpp u Ollama.
+- Evaluacion de robustez y red teaming: util para probar filtros de seguridad, clasificadores de contenido y sistemas de moderacion frente a un modelo que no aplica rechazos propios.
+- Prototipado de asistentes conversacionales en ingles: con la cuantizacion i1-Q5_K_M (19,6 GB) se obtiene un equilibrio razonable entre calidad y requisitos de memoria para entornos de desarrollo.
+- Experimentacion con decodificacion especulativa: la conservacion de MTP permite medir el impacto del Multi-Token Prediction en throughput y latencia frente a variantes que lo han eliminado.
+- Analisis de sesgos y contenido toxico: al carecer de capas de rechazo, el modelo puede emplearse para generar corpus controlados que permitan estudiar sesgos de forma reproducible.
 
 ## Benchmarks y rendimiento
 
@@ -51,30 +54,47 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: segun el quant elegido, se necesitan aproximadamente 11 GB (i1-Q2_K), 13 GB (i1-IQ3_M) o 16 GB (i1-Q4_K_S) de VRAM, mas overhead de contexto y calculo.
-- GPU recomendadas: para el quant Q4_K_S se recomienda una GPU con al menos 16 GB de VRAM, como una RTX 4080/4090, A100 40GB o similar. Para los quants mas pequeños, una RTX 3080/3090 de 12-24 GB puede ser suficiente.
-- Compatibilidad con consumer GPU: si, los quants de 11 y 13 GB caben en GPUs de gama alta para consumidores (RTX 3080/3090, RTX 4070 Ti, etc.).
-- Opciones de despliegue: al ser formato GGUF, es compatible con llama.cpp, Ollama, LM Studio y otros motores basados en llama.cpp. Tambien puede servirse con vLLM si se convierte a otro formato, aunque no esta confirmado.
-- Latencia y throughput: no se dispone de datos medidos. La velocidad dependera del hardware, el quant y la implementacion de MTP en el motor de inferencia.
+- VRAM estimada para inferencia (aproximada, segun el tamano del fichero GGUF y el contexto):
+  - i1-Q2_K: 11,0 GB
+  - i1-IQ3_S: 12,7 GB
+  - i1-Q3_K_M: 13,6 GB
+  - i1-IQ4_XS: 15,4 GB
+  - i1-Q4_K_S: 15,9 GB
+  - i1-Q4_K_M: 16,9 GB
+  - i1-Q5_K_M: 19,6 GB
+  - i1-Q6_K: 22,5 GB
+- GPU recomendadas:
+  - Cuantizaciones Q4 y superiores: RTX 4090 (24 GB), RTX 3090 (24 GB), A6000 (48 GB), A100 (40/80 GB), H100 (80 GB).
+  - Cuantizaciones Q2/Q3: GPUs de 12-16 GB, como RTX 4070 Ti o RTX 4080.
+- Cabe en GPU de consumo: si, en RTX 4090/3090 con cuantizaciones hasta Q6_K, y en GPUs de 12-16 GB con Q2_K e IQ3.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el modelo base esta etiquetado como compatible con transformers y con endpoints compatibles.
+- Latencia y throughput estimados: no disponible. La presencia de MTP preservado podria mejorar el throughput respecto a variantes sin decodificacion especulativa, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para realizar una comparativa detallada con otros modelos de la misma categoria. El modelo base Qwen3.8-27B original es el punto de referencia natural, pero no se han publicado datos comparativos de rendimiento entre la version censurada y la abliterated. Otras alternativas "uncensored" de tamano similar (como Llama-3-27B o Mistral-27B) no estan disponibles en el mercado, por lo que la comparativa no es posible con los datos actuales.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved-i1-GGUF (este) | 27,32 B | no disponible | Apache 2.0 | GGUF cuantizado | Version heretic con MTP preservado, solo ingles |
+| llmfan46/Qwen3.8-27B-Uncensored-Heretic-Native-MTP-Preserved | 27,32 B | no disponible | Apache 2.0 | safetensors | Modelo base sin cuantizar del que deriva este |
+| mradermacher/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved-GGUF | 27,32 B | no disponible | Apache 2.0 | GGUF estatico | Cuantizaciones estaticas del mismo modelo base, sin imatrix |
+
+No se dispone de datos de rendimiento comparado con otras alternativas de la misma categoria en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Contenido sin filtrar: al ser un modelo "uncensored", puede generar contenido ofensivo, ilegal o peligroso. Su uso debe limitarse a entornos de investigacion y desarrollo controlados.
-- Riesgo de alucinacion: como cualquier modelo de lenguaje, puede inventar informacion, especialmente en temas especializados. No se ha evaluado su fiabilidad factual.
-- Idioma limitado: solo soporta ingles, lo que restringe su uso en aplicaciones multilingues.
-- Perdida de calidad por cuantizacion: las cuantizaciones de baja precision (Q2_K, IQ3_M) pueden degradar la coherencia y el razonamiento respecto al modelo en precision completa.
-- Licencia: aunque la licencia es Apache 2.0, el modelo base puede tener restricciones adicionales no documentadas. Se recomienda revisar la licencia del modelo original antes de un uso comercial.
-- Sin garantias de soporte: el repositorio tiene cero descargas y cero likes, lo que indica que es un proyecto reciente y sin comunidad establecida.
+- Sesgos conocidos: al ser una variante sin censura, es probable que reproduzca y amplifique sesgos presentes en los datos de entrenamiento sin los filtros habituales; no se documentan evaluaciones de sesgo.
+- Riesgo de alucinacion: no se han publicado metricas de fidelidad ni evaluaciones de alucinacion; el proceso de abliteration puede degradar la coherencia en tareas de razonamiento.
+- Limitaciones de contexto e idioma: solo se declara soporte de ingles; la longitud de contexto no esta disponible y no debe asumirse la del modelo original sin verificar.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el contenido generado por un modelo sin censura puede incurrir en responsabilidades legales segun la jurisdiccion; el usuario asume el riesgo.
+- Caveats para produccion: la model card no documenta evaluaciones de calidad, seguridad ni estabilidad; la etiqueta "vision" no especifica que ficheros mmproj estan disponibles ni su ubicacion exacta en el repositorio estatico.
+- El modelo base ha sido modificado mediante tecnicas no estandarizadas (heretic/abliterated); los resultados pueden diferir de los del Qwen original y no estan respaldados por el equipo de Qwen.
 
 ## Enlaces
 
-- Repositorio Hugging Face (cuantizaciones i1): https://huggingface.co/mradermacher/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved-i1-GGUF
-- Repositorio Hugging Face (cuantizaciones estaticas): https://huggingface.co/mradermacher/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved-GGUF
-- Modelo base: https://huggingface.co/llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved
-- Blog de explainx.ai sobre la version MLX: https://www.explainx.ai/blog/orcarouter-qwen3-8-27b-uncensored-mlx-august-2026
-- Blog de orcarouter.ai sobre la version GGUF: https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf
-- Guia de ejecucion local: https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved-i1-GGUF
+- Modelo base: https://huggingface.co/llmfan46/Qwen3.8-27B-Uncensored-Heretic-Native-MTP-Preserved
+- Cuantizaciones estaticas: https://huggingface.co/mradermacher/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved-i1-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests

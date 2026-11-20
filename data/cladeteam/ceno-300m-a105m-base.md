@@ -2,88 +2,101 @@
 
 ## Resumen
 
-CENO-300M-A105M-base es el checkpoint base de preentrenamiento del modelo fundacional de ADN CENO, desarrollado por CladeTeam. Se trata de un modelo de lenguaje causal sobre secuencia genómica construido sobre una arquitectura híbrida Nemotron-H que combina capas Mamba, atención y mezcla de expertos (MoE). Con 307,5 millones de parámetros totales y 105 millones activos por token, está diseñado para generación de secuencias genómicas y extracción de embeddings, así como para adaptación posterior en tareas de genómica.
+CENO-300M-A105M-base es el checkpoint de preentrenamiento base del modelo fundacional de ADN CENO, desarrollado por CladeTeam. Se trata de un modelo de lenguaje causal que opera directamente sobre secuencia genomica (bases A, T, C, G) sin necesidad de alineamiento multiple de secuencias (MSA) como entrada. El modelo emplea una arquitectura hibrida Mamba / Attention / Mixture-of-Experts inspirada en Nemotron-H de NVIDIA, con 307,5 millones de parametros totales y 105 millones de parametros activos por token gracias a su capa MoE de 8 expertos con enrutamiento top-2.
 
-El modelo emplea un tokenizador a nivel de carácter que mapea las bases de ADN a sus códigos ASCII de byte, con un vocabulario de solo 512 entradas. No requiere alineamientos múltiples de secuencia (MSA) como entrada, lo que simplifica su uso frente a aproximaciones basadas en MSA. Forma parte de una familia mayor que incluye checkpoints con capacidad de predicción de efectos de variante (VEP) mediante puntuación de log-verosimilitud diferencial.
+El modelo resuelve el problema de modelar secuencias de ADN a escala mediante un tokenizador a nivel de caracter que mapea cada base a su codigo ASCII de byte, con un vocabulario de solo 512 entradas. Esta decision reduce drasticamente el tamano del vocabulario frente a aproximaciones con k-mers y permite generar y puntuar secuencias genomicas arbitrarias. Es relevante ahora porque se posiciona como una alternativa de menor tamano y codigo abierto a modelos genomicos de gran escala como Evo2, y porque su naturaleza hibrida Mamba/Attention ofrece eficiencia en contextos largos sin el coste cuadratico de la atencion pura.
 
-Su relevancia actual reside en la creciente demanda de modelos fundacionales específicos de dominio para genómica, donde arquitecturas eficientes en contexto largo como Mamba resultan atractivas para secuencias de ADN de gran longitud. La licencia Apache-2.0 y la inclusión del código del modelo en el propio repositorio facilitan su adopción tanto en investigación como en desarrollo comercial.
+El checkpoint es un modelo base, no instruido ni alineado, pensado para generacion de secuencias genomicas, extraccion de embeddings y adaptacion posterior (fine-tuning o probing) en tareas de genomica. La familia CENO incluye ademas checkpoints con MSA (prefijo `CENO-P-*`) orientados a prediccion de efectos de variantes (VEP) mediante comparacion de log-verosimilitud entre secuencia wild-type y variante.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida Mamba / Attention / Mixture-of-Experts (Nemotron-H) |
-| Parámetros totales | 307.503.488 (307,5M) |
-| Parámetros activos | 105M (MoE con 8 expertos, top-2 por token) |
-| Longitud de contexto | Hasta 131.072 tokens por prefill en la ruta HF (prefills mayores vía vLLM) |
-| Tipos de cuantización | No disponible (el checkpoint se distribuye en bfloat16) |
-| Idiomas soportados | No aplica (modelo de secuencia genómica); no disponible |
+| Arquitectura | Hibrida Mamba / Attention / Mixture-of-Experts (Nemotron-H) |
+| Parametros totales | 307.503.488 |
+| Parametros activos | 105M (MoE con 8 expertos, top-2 por token) |
+| Longitud de contexto | 131.072 tokens por prefill en la ruta HF (limite documentado); contexto de entrenamiento no disponible |
+| Tipos de cuantizacion | no disponible (pesos en bfloat16; no se documentan variantes GGUF/AWQ/GPTQ) |
+| Idiomas soportados | no disponible (modelo sobre secuencia genomica, no lenguaje natural) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (con código de modelo incluido, `trust_remote_code=True`) |
+| Formato de pesos | safetensors |
+| Capas ocultas | 9 |
+| Tamano oculto | 1024 |
+| Cabezas de atencion | 8 |
+| Tamano intermedio | 4096 |
+| Vocabulario | 512 (byte / caracter) |
+| Precision | bfloat16 |
+| `model_type` | `ceno` |
+| Clase | `CENOForCausalLM` |
+| Requiere `trust_remote_code` | Si |
+| Tamano del repositorio | 2,5 GB |
 
 ## Arquitectura y entrenamiento
 
-El backbone es una arquitectura híbrida Nemotron-H que intercala capas Mamba, atención y mezcla de expertos. El modelo cuenta con 9 capas ocultas, tamaño oculto de 1024, 8 cabezas de atención y tamaño intermedio de 4096. La capa MoE dispone de 8 expertos con enrutamiento top-2 por token, lo que explica la diferencia entre los 307,5M de parámetros totales y los aproximadamente 105M activos. El tokenizador es a nivel de carácter, derivado del `CharLevelTokenizer` de Evo2 (Arc Institute), y mapea las bases de ADN a sus códigos ASCII de byte con un vocabulario de 512 entradas.
+El backbone combina tres mecanismos en una arquitectura hibrida de tipo Nemotron-H: capas Mamba (modelo de espacio de estados selectivo), capas de atencion y capas de mezcla de expertos. Con 9 capas ocultas, tamano oculto de 1024 y tamano intermedio de 4096, la capa MoE contiene 8 expertos de los que se activan 2 por token, lo que explica la diferencia entre los 307,5M de parametros totales y los aproximadamente 105M activos. El tokenizador es a nivel de caracter (`CENOCharLevelTokenizer`), derivado del `CharLevelTokenizer` de Evo2 de Arc Institute, y mapea cada base de ADN a su codigo de byte ASCII, con un vocabulario de 512 entradas.
 
-El checkpoint corresponde a la etapa 2 de preentrenamiento base. No se han proporcionado en la información disponible detalles sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. Las capas Mamba requieren kernels CUDA, por lo que las pasadas forward y la generación necesitan GPU; la carga de configuración, tokenizador y pesos es segura en CPU. La ruta de precisión HF es de una sola GPU, sin padding, y admite como máximo 131.072 tokens por prefill, con soporte de prefills mayores a través de la entrada vLLM del repositorio.
+El modelo se presenta como checkpoint de preentrenamiento base correspondiente a la etapa 2 del entrenamiento. No se documentan en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset genomico, ni si hubo etapas de RLHF o DPO (tratandose de un modelo base, es esperable que no las haya, pero no se confirma). Tampoco se detallan innovaciones adicionales como decodificacion especulativa. La implementacion del codigo esta empaquetada en el repositorio y derivada de la implementacion de Nemotron-H de NVIDIA (Apache-2.0). Las capas Mamba requieren kernels CUDA especificos (`mamba-ssm`, `causal-conv1d`), por lo que el forward pass y la generacion necesitan GPU; la carga de configuracion, tokenizador y pesos es segura en CPU.
 
 ## Capacidades
 
-- Generación de secuencias genómicas de ADN de forma autorregresiva.
-- Extracción de embeddings de secuencia para tareas posteriores de probing y adaptación.
-- Modelado de lenguaje causal sobre secuencias genómicas sin necesidad de MSA.
-- Base para fine-tuning en tareas de genómica (clasificación, regresión, anotación).
-- Punto de partida para la variante VEP de la familia (CENO-P-*), que puntúa efectos de variante mediante delta de log-verosimilitud.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no aplica (dominio genómico).
-- Capacidades especiales: contexto largo (hasta 131.072 tokens por prefill en HF), arquitectura eficiente Mamba para secuencias largas.
+- Generacion de secuencias genomicas de ADN de forma autoregresiva (bases A, T, C, G).
+- Extraccion de embeddings de secuencia genomica para tareas posteriores (probing, clasificacion, regresion).
+- Modelado de lenguaje causal sobre secuencia de ADN, base para prediccion de efectos de variantes en los checkpoints de la familia con MSA.
+- Adaptacion mediante fine-tuning para tareas genomicas especificas.
+- Procesamiento de secuencias largas: la ruta HF admite hasta 131.072 tokens por prefill (con vLLM para prefills mayores).
+- Tokenizacion a nivel de caracter que permite manejar cualquier secuencia de bases sin vocabulario de k-mers.
+- No soporta tool calling, function calling, agentes ni razonamiento multi-paso: es un modelo base sobre ADN, no un modelo de instrucciones.
+- No dispone de capacidades de vision, audio ni modo de razonamiento (thinking).
+- Capacidades multilingues no aplicables (opera sobre secuencia genomica, no lenguaje natural).
 
 ## Casos de uso
 
-- Extracción de embeddings genómicos: el modelo puede generar representaciones vectoriales de secuencias de ADN para alimentar clasificadores downstream, aprovechando su tokenizador a nivel de carácter y su backbone híbrido para capturar dependencias locales y de largo alcance.
-- Fine-tuning para anotación funcional: partiendo del checkpoint base, se puede adaptar a tareas como predicción de regiones reguladoras, sitios de splicing o elementos funcionales, dado que el modelo ya ha sido preentrenado sobre secuencia genómica.
-- Modelado de secuencias largas: gracias a las capas Mamba y a la ventana de hasta 131.072 tokens por prefill, resulta adecuado para contextos genómicos extensos donde los transformers densos sufren por coste cuadrático.
-- Investigación en modelos fundacionales de ADN: sirve como punto de comparación y base para experimentos sobre arquitecturas híbridas Mamba/MoE en genómica, con código incluido en el repositorio.
-- Generación de secuencias sintéticas de ADN: el modelo puede generar secuencias plausibles para experimentos de diseño in silico, siempre con validación biológica posterior.
-- Punto de partida para pipelines de predicción de efectos de variante: aunque la capacidad VEP reside en los checkpoints CENO-P-*, este checkpoint base alimenta el pipeline de adaptación descrito en el repositorio de código.
-- Prototipado en genómica computacional: al distribuirse con licencia Apache-2.0 y código incluido, permite integrarse rápidamente en flujos de investigación sin restricciones de licencia comercial.
+- Extraccion de embeddings genomicos para modelos downstream: se ejecuta el forward del modelo sobre secuencias de ADN y se usan los estados ocultos como features para clasificadores de regiones regulatorias, promotores o elementos funcionales, aprovechando que el modelo ha aprendido representaciones de secuencia durante el preentrenamiento.
+- Prediccion de efectos de variantes (VEP): aunque esta tarea se asocia a los checkpoints `CENO-P-*` con MSA, el checkpoint base puede adaptarse para puntuar secuencia wild-type frente a variante mediante delta de log-verosimilitud, tal como documenta el pipeline VEP del repositorio.
+- Generacion de secuencias genomicas sinteticas: el modelo puede generar secuencias de ADN plausibles bajo un contexto dado, util para aumento de datos o exploracion de espacio de secuencias en diseno genomico.
+- Fine-tuning para tareas de anotacion genomica: adaptacion supervisada sobre el checkpoint base para predecir etiquetas funcionales a nivel de base o de region, aprovechando el contexto largo para capturar dependencias lejanas.
+- Modelado de secuencias largas en estudios de regulacion genica: con hasta 131.072 tokens por prefill en la ruta HF (y mas con vLLM), el modelo puede procesar fragmentos genomicos extensos para capturar interacciones de largo alcance entre elementos regulatorios.
+- Investigacion en modelos fundacionales de ADN: el checkpoint sirve como punto de partida reproducible (licencia Apache-2.0, pesos safetensors y codigo empaquetado) para experimentos de arquitecturas hibridas Mamba/MoE aplicadas a genomica.
+- Puntuacion de secuencias para filtrado en pipelines de biologia computacional: uso del log-likelihood del modelo para priorizar o descartar candidatos en cribados in silico antes de validacion experimental.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el checkpoint en bfloat16 ocupa aproximadamente 615 MB de pesos (307,5M parámetros × 2 bytes); el repositorio completo ocupa 2,5 GB. La VRAM real dependerá de la longitud de secuencia y del estado de las capas Mamba y MoE.
-- GPU recomendadas: no se especifican modelos concretos en la información disponible; se requiere una GPU CUDA para las capas Mamba.
-- ¿Cabe en GPU de consumo? Muy probablemente sí, dado el tamaño de 307,5M parámetros, aunque no se confirma en la información disponible.
-- Opciones de despliegue: transformers con `trust_remote_code=True` (ruta HF, una sola GPU, sin padding, máximo 131.072 tokens por prefill); vLLM mediante la entrada del repositorio para prefills mayores. Entornos separados para HF y vLLM.
-- Stack probado: PyTorch 2.7.0a0 (NVIDIA 25.03), Transformers 4.48.3, mamba-ssm 2.2.4, causal-conv1d 1.2.2.post1 y FlashAttention 2.7.3.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: los pesos en bfloat16 ocupan aproximadamente 0,6 GB (307,5M parametros x 2 bytes), mas overhead de estados de Mamba, cache y activaciones; el repositorio completo pesa 2,5 GB.
+- GPU recomendadas: cualquier GPU NVIDIA con soporte CUDA para los kernels de Mamba (`mamba-ssm` 2.2.4, `causal-conv1d` 1.2.2.post1) y FlashAttention 2.7.3; se ha probado con el stack PyTorch 2.7.0a0 (NVIDIA 25.03) y Transformers 4.48.3.
+- Cabe en GPU de consumo: si, dado el reducido tamano de parametros; se requiere una GPU NVIDIA compatible con CUDA (no se especifican modelos concretos como RTX 4090 en la informacion disponible).
+- Opciones de despliegue: Transformers con `trust_remote_code=True` (ruta HF, single-GPU, sin padding, maximo 131.072 tokens por prefill) y una entrada vLLM propia del repositorio para prefills mayores. HF y vLLM usan entornos separados. No se documentan soporte de llama.cpp ni Ollama.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CENO-300M-A105M-base | 307,5M (105M activos) | 131.072 tokens por prefill (HF) | Híbrida Mamba/Attention/MoE | Apache-2.0 | Hugging Face |
-| Evo2 (Arc Institute) | No disponible | No disponible | No disponible | Apache-2.0 (tokenizador derivado) | No disponible |
-| Otros modelos fundacionales de ADN | No disponible | No disponible | No disponible | No disponible | No disponible |
+| CENO-300M-A105M-base | 307,5M (105M activos) | 131.072 tokens por prefill (ruta HF) | Mamba / Attention / MoE hibrida | Apache-2.0 | Hugging Face, codigo en GitHub |
+| Evo2 (Arc Institute) | no disponible en la informacion | no disponible | no disponible (origen del tokenizador char-level) | no disponible | no disponible |
+| Nemotron-H (NVIDIA) | no disponible en la informacion | no disponible | Mamba / Attention / MoE hibrida (base arquitectonica) | Apache-2.0 (implementacion HF) | no disponible |
 
-No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada. La comparación se limita a aspectos de licencia y disponibilidad.
+La comparacion cuantitativa con alternativas genomicas de la misma categoria no esta disponible en la informacion proporcionada. Evo2 y Nemotron-H se citan unicamente como origen del tokenizador y de la implementacion arquitectonica, respectivamente.
 
 ## Limitaciones y advertencias
 
-- Es un checkpoint base: no está ajustado para instrucciones ni para tareas específicas; requiere fine-tuning o probing para uso downstream.
-- La corrección numérica no garantiza generación libre de repeticiones ni biológicamente funcional; las secuencias generadas deben validarse experimentalmente.
-- Las capas Mamba requieren kernels CUDA: la inferencia en CPU no es viable para pasadas forward ni generación.
-- La ruta de precisión HF está limitada a una sola GPU, sin padding y a un máximo de 131.072 tokens por prefill; prefills mayores requieren vLLM.
-- La evidencia de contexto largo de 1M pertenece a CENO-1.3B-A450M-1m, no a este checkpoint; las comprobaciones cortas multi-tamaño no implican la misma cobertura larga para todos los modelos.
-- Las referencias de Megatron CP no son intercambiables entre sí.
-- No se han proporcionado datos sobre sesgos, composición del dataset de entrenamiento ni evaluación de riesgos de alucinación en dominio genómico.
-- Licencia Apache-2.0 permite uso comercial, pero el código incluido deriva de la implementación Nemotron-H de NVIDIA y el tokenizador de Evo2 del Arc Institute; deben respetarse las atribuciones de los ficheros LICENSE y NOTICE.
+- Es un checkpoint base sin alineacion: no sigue instrucciones ni esta optimizado para conversacion; su uso previsto es generacion, embeddings y fine-tuning.
+- Numeros: la model card advierte explicitamente que la correccion numerica no garantiza generacion libre de repeticiones ni biologicamente funcional; las secuencias generadas deben validarse experimentalmente.
+- Requiere GPU para forward y generacion por los kernels CUDA de Mamba; no es ejecutable en CPU para inferencia.
+- La ruta HF esta limitada a single-GPU, sin padding y a 131.072 tokens por prefill; prefills mayores requieren la entrada vLLM del repositorio.
+- No se documentan sesgos, tasas de alucinacion ni evaluaciones de calidad genomica en la informacion disponible.
+- La cobertura de idiomas no aplica; el modelo no procesa lenguaje natural.
+- Licencia Apache-2.0 permite uso comercial, pero el codigo empaquetado deriva de Nemotron-H (NVIDIA) y el tokenizador de Evo2 (Arc Institute), ambos Apache-2.0; deben conservarse los archivos `LICENSE` y `NOTICE` con la atribucion completa.
+- El limite de contexto de entrenamiento no esta documentado, por lo que usar contextos proximos a 131.072 tokens en inferencia puede degradar la calidad si el modelo no fue entrenado a esa longitud.
+- Requiere `trust_remote_code=True`, lo que implica ejecutar codigo del repositorio; conviene auditar el codigo antes de desplegarlo en produccion.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/CladeTeam/CENO-300M-A105M-base
-- Repositorio de código CENO: https://github.com/CladeTeam/CENO
+- Repositorio de codigo CENO: https://github.com/CladeTeam/CENO
+- Ejemplo de VEP TraitGym (en el repositorio CENO): https://github.com/CladeTeam/CENO
+- Implementacion Nemotron-H de NVIDIA en Hugging Face (base del codigo, Apache-2.0): no disponible como enlace directo en la informacion
+- Tokenizador CharLevelTokenizer de Evo2 (Arc Institute, Apache-2.0): no disponible como enlace directo en la informacion

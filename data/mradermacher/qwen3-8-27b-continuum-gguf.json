@@ -103,31 +103,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Spotify - Web Player: Music for everyone",
-      "url": "https://open.spotify.com/",
-      "snippet": "Spotify is a digital music service that gives you access to millions of songs."
-    },
-    {
-      "title": "Spotify - Lecteur web : de la musique pour tout le monde",
-      "url": "https://open.spotify.com/intl-fr",
-      "snippet": "Spotify est un service de musique en ligne qui vous permet d'accéder à des millions de titres."
-    },
-    {
-      "title": "Descarga para Windows - Spotify",
-      "url": "https://www.spotify.com/mx/download/windows/",
-      "snippet": "En Spotify, puedes encontrar toda la música que necesitas."
-    },
-    {
-      "title": "Spotify Premium (México) - Probar 3 meses por $0",
-      "url": "https://www.spotify.com/mx/premium/",
-      "snippet": "Spotify Premium es un servicio de música digital que te brinda acceso a millones de canciones sin anuncios. Probar 3 meses por $0."
-    },
-    {
-      "title": "Spotify",
-      "url": "https://accounts.spotify.com/nl/login",
-      "snippet": "Heb je nog geen account? Registreren"
-    }
-  ]
+  "sources": []
 }

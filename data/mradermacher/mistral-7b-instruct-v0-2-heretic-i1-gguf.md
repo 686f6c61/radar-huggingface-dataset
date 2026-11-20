@@ -2,122 +2,87 @@
 
 ## Resumen
 
-`mradermacher/mistral-7b-instruct-v0.2-heretic-i1-GGUF` es un conjunto de cuantizaciones GGUF generadas con imatrix a partir de `Ananasez/mistral-7b-instruct-v0.2-heretic`, un fine-tuning «abliterated» o «decensored» de Mistral-7B-Instruct-v0.2. No es, por tanto, un modelo nuevo entrenado desde cero, sino un artefacto de distribución: el trabajo de mradermacher consiste en convertir los pesos originales a formato GGUF y producir 23 variantes de cuantización con matriz de importancia, optimizadas para inferencia local en CPU y GPU de gama consumer.
+El modelo `mradermacher/mistral-7b-instruct-v0.2-heretic-i1-GGUF` es una cuantizacion GGUF con imatrix generada por mradermacher a partir de `Ananasez/mistral-7b-instruct-v0.2-heretic`, un fine-tuning de Mistral 7B Instruct v0.2 en el que se ha aplicado una tecnica de "abliteration" o decensurado (etiquetada como *heretic*, *uncensored*, *abliterated*). El objetivo es eliminar o atenuar los rechazos y filtros de seguridad del modelo original sin reentrenar desde cero, manteniendo la capacidad conversacional de la base.
 
-El modelo subyacente conserva la arquitectura y el tamaño de Mistral-7B-Instruct-v0.2 (7.241.732.096 parámetros, transformer decoder-only denso, licencia Apache 2.0). La modificación respecto al original afecta al comportamiento: la técnica de abliteración elimina o atenúa la dirección de rechazo aprendida durante el alineamiento, de modo que el modelo responde a peticiones que el Instruct original declinaría. Esto lo hace relevante para investigación en seguridad, generación de datos adversariales y escritura creativa sin filtros, y no tanto para producción convencional.
+El modelo base conserva la arquitectura transformer decoder-only de Mistral 7B, con 7.241.732.096 parametros totales (segun los safetensors del modelo original) y una ventana de contexto de 32.768 tokens, caracteristica de Mistral 7B v0.2. El repositorio pesa 81,7 GB porque incluye mas de veinte variantes de cuantizacion en formato GGUF, desde IQ1_S (1,7 GB) hasta Q6_K (6,0 GB), pensadas para despliegue en CPU o GPU con llama.cpp y derivados.
 
-El interés práctico inmediato está en la disponibilidad de cuantizaciones desde 2,6 GB (i1-IQ2_M) hasta 6,0 GB (i1-Q6_K), lo que permite ejecutar el modelo en GPUs de 6-8 GB o incluso en CPU. El repositorio ocupa 60,1 GB e incluye también el fichero imatrix por si se quieren generar cuantizaciones propias.
+Su relevancia practica es acotada: se trata de un artefacto de cuantizacion, no de un modelo nuevo. Resulta util para quien quiera ejecutar localmente una variante de Mistral 7B Instruct sin los mecanismos de rechazo del modelo alineado, en ingles, con licencia Apache 2.0 y en formatos optimizados para hardware modesto. No incorpora mejoras de arquitectura ni de entrenamiento respecto al modelo base.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only denso (Mistral 7B v0.2), con GQA y SwiGLU según la documentación pública del modelo base; no detallado en la model card de esta cuantización |
-| Parámetros totales | 7.241.732.096 (dato real de safetensors del modelo base) |
-| Parámetros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 32.768 tokens (heredado de Mistral-7B-Instruct-v0.2; no se indica en la model card de esta cuantización) |
-| Tipos de cuantización | 23 variantes i1 (imatrix): IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_NL, IQ4_XS, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K; más fichero imatrix suelto de 0,1 GB |
-| Idiomas soportados | Inglés (`en`) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizado); el repositorio no incluye safetensors |
-| Autor de la cuantización | mradermacher (infraestructura de nethype GmbH y de @nicoboss) |
-| Modelo base | Ananasez/mistral-7b-instruct-v0.2-heretic (a su vez derivado de Mistral-7B-Instruct-v0.2) |
-| Tamaño del repositorio | 60,1 GB |
-| Descargas / likes | 0 descargas, 1 like en el momento de la consulta |
+| Arquitectura | Transformer decoder-only (Mistral 7B v0.2) |
+| Parametros totales | 7.241.732.096 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 32.768 tokens (heredada de Mistral 7B Instruct v0.2) |
+| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, IQ4_NL, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (con imatrix) |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizado con imatrix); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del Mistral-7B-Instruct-v0.2 original: un transformer decoder-only de 7,24 mil millones de parámetros con atención multi-cabeza con consultas agrupadas (GQA), activación SwiGLU, embeddings rotatorios (RoPE) y ventana de contexto de 32.768 tokens. Al ser un modelo denso, todos los parámetros se activan en cada token generado, lo que determina los requisitos de memoria y las tasas de generación. La model card de esta cuantización no aporta detalles adicionales sobre capas, dimensiones ocultas ni configuración de atención; esos datos deben consultarse en la ficha del modelo base.
+La arquitectura subyacente es la de Mistral 7B Instruct v0.2: un transformer decoder-only con atencion de ventana deslizante (sliding window attention) y 32.768 tokens de contexto. Sobre esa base, `Ananasez/mistral-7b-instruct-v0.2-heretic` aplica una modificacion del tipo *abliteration*, que consiste en identificar y suprimir direcciones de activacion asociadas a la negativa a responder, sin un reentrenamiento completo con datos nuevos. Los tags del repositorio indican *finetuned*, *uncensored*, *decensored*, *abliterated* y *reproducible*.
 
-Sobre el entrenamiento no hay información verificable en la documentación disponible: no se especifican tokens de entrenamiento, composición del dataset, ni si hubo RLHF o DPO en el fine-tuning de Ananasez. Lo que sí se declara en las etiquetas es el método de modificación: `heretic`, `abliterated`, `decensored`, `uncensored`, aplicado sobre un modelo ya instruido. La innovación técnica de esta ficha, por tanto, no está en el entrenamiento sino en el proceso de cuantización: mradermacher aplica cuantización ponderada con matriz de importancia (imatrix), que estima la sensibilidad de cada tensor para minimizar la perda de perplejidad en los tipos de cuantización bajos. Los ficheros se generan con `output_tensor_quantised: 1` y `convert_type: hf`, y el autor publica además los quants «estáticos» equivalentes en un repositorio separado.
+Este repositorio concreto no aporta entrenamiento adicional: mradermacher ha generado cuantizaciones ponderadas con fichero imatrix (`.imatrix.gguf`) a partir del modelo base, siguiendo su flujo habitual de `quantize_version: 2` y `output_tensor_quantised: 1`. No se dispone de informacion sobre el volumen de tokens, la composicion del dataset ni el uso de RLHF o DPO en el fine-tuning original, por lo que esos datos deben considerarse no disponibles.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno en inglés, con formato de chat instruct heredado de Mistral-7B-Instruct-v0.2.
-- Escritura creativa y narrativa sin rechazos: la abliteración elimina la mayor parte de las negativas del modelo alineado.
-- Manejo de contexto largo: hasta 32.768 tokens, útil para documentos extensos o conversaciones prolongadas.
-- Razonamiento básico, matemáticas elementales y generación de código, con las limitaciones propias de un modelo de 7B de la generación de Mistral v0.2.
-- Generación de datos sintéticos y de prompts adversariales para investigación en seguridad.
-- No se declara soporte de tool calling ni function calling nativo (Mistral-7B-Instruct-v0.2 no lo incluye de serie).
-- No dispone de visión, audio ni modo «thinking» explícito.
-- Capacidad multilingüe limitada: el modelo se declara únicamente en inglés, aunque el base tiene nociones de otros idiomas por contaminación del corpus.
+- Generacion de texto conversacional multi-turno en ingles, heredada de Mistral 7B Instruct v0.2.
+- Razonamiento basico y respuesta a instrucciones; el modelo base esta optimizado para seguir instrucciones.
+- Generacion de codigo y tareas de matematicas sencillas, dentro de los limites de un modelo de 7B.
+- Comportamiento sin rechazos en temas que el modelo alineado original evitaria, por la ablacion aplicada.
+- Soporte de plantilla de chat Mistral (`[INST] ... [/INST]`) mediante `mistral-common`.
+- No se documenta soporte de tool calling, function calling, agentes, vision ni audio en la informacion disponible.
+- Capacidad multilingue limitada al ingles segun el campo `language` del repositorio.
 
 ## Casos de uso
 
-- Investigación en seguridad y alineamiento: sirve como modelo de control «sin rechazos» para comparar tasas de cumplimiento frente al Mistral-7B-Instruct-v0.2 original y medir el efecto de la abliteración en evaluaciones de harmfulness.
-- Generación de datasets adversariales: producir grandes volúmenes de prompts y respuestas que los filtros de seguridad deben clasificar, aprovechando la cuantización IQ4_XS (4,0 GB) para generar en local a bajo coste.
-- Escritura de ficción y narrativa adulta: el modelo no aplica las negativas del Instruct original, lo que encaja en guiones, relatos y roleplay donde el filtrado resulta un obstáculo; los 32k de contexto permiten mantener consistencia en textos largos.
-- Asistente personal offline: desplegado con llama.cpp u Ollama en una GPU de 8 GB con i1-Q4_K_M (4,5 GB), funciona sin conexión y sin enviar datos a terceros.
-- Red teaming de pipelines propios: integrar el modelo como generador de entradas maliciosas para probar clasificadores, guardrails y sistemas de moderación antes de desplegarlos.
-- Etiquetado y aumento de datos en inglés: reescritura, paráfrasis y expansión de textos con contexto largo, ejecutable en CPU con las cuantizaciones IQ2/IQ3 cuando no hay GPU disponible.
-- Experimentación docente: por su tamaño y su licencia Apache 2.0, es un banco de pruebas asequible para estudiar cuantización, imatrix y degradación de calidad entre variantes Q2 y Q6.
+- Inferencia local en equipos de sobremesa: las variantes Q4_K_M (4,5 GB) e IQ4_XS (4,0 GB) permiten ejecutar el modelo en GPUs consumer con 6-8 GB de VRAM o en CPU con llama.cpp, sin depender de servicios en la nube.
+- Experimentacion con alineacion y seguridad: util para investigadores que estudian el efecto de la abliteration comparando respuestas con el Mistral 7B Instruct v0.2 original en el mismo prompt.
+- Generacion de texto creativo sin filtros: escritura de ficcion, guiones o dialogos donde los rechazos del modelo alineado interrumpen el flujo, ejecutando la variante Q5_K_M (5,2 GB) en una RTX 3060 de 12 GB.
+- Prototipado de asistentes conversacionales en ingles: con 32.768 tokens de contexto puede mantener conversaciones largas o procesar documentos extensos en una sola pasada.
+- Evaluacion de cuantizaciones: el repositorio incluye desde IQ1_S hasta Q6_K, lo que permite medir la degradacion de calidad frente al tamano en un mismo modelo y hardware.
+- Despliegue en entornos con recursos limitados: la variante IQ2_M (2,6 GB) o Q2_K (2,8 GB) cabe en dispositivos con 4 GB de RAM, adecuada para demos o pruebas de concepto aunque con calidad reducida.
+- Fine-tuning posterior o destilacion: servir como base cuantizada para experimentos de ajuste con LoRA en ingles, partiendo de la version safetensors del modelo original.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Ni la model card de esta cuantización ni la documentación del modelo base incluyen cifras de MMLU, HumanEval, GSM8K, ARC, HellaSwag ni de evaluaciones de seguridad. Tampoco hay datos de perplejidad comparativa entre los distintos tipos de cuantización ofrecidos; el autor enlaza únicamente una gráfica genérica de ikawrakow sobre calidad relativa de tipos de cuantización, no mediciones de este modelo.
-
-| Benchmark | Resultado |
-|---|---|
-| MMLU | No disponible |
-| HumanEval | No disponible |
-| GSM8K | No disponible |
-| Perplejidad por cuantización | No disponible |
-| Evaluaciones de seguridad / refusal rate | No disponible |
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Las cifras de VRAM son estimaciones a partir del tamaño de cada fichero GGUF más overhead de contexto y caché KV; no proceden de mediciones publicadas.
-
-| Cuantización | Tamaño | VRAM estimada (contexto moderado) | Notas |
-|---|---|---|---|
-| i1-IQ2_M | 2,6 GB | ~3,5-4 GB | Cabe en GPU de 4 GB; calidad degradada |
-| i1-IQ3_M | 3,4 GB | ~4,5-5 GB | Compromiso razonable en 6 GB |
-| i1-IQ4_XS | 4,0 GB | ~5-5,5 GB | Recomendada por el autor frente a IQ4_NL |
-| i1-Q4_K_S | 4,2 GB | ~5,5 GB | Definida por el autor como óptima en tamaño/velocidad/calidad |
-| i1-Q4_K_M | 4,5 GB | ~5,5-6 GB | Rápida y recomendada por el autor |
-| i1-Q6_K | 6,0 GB | ~7-8 GB | Prácticamente equivalente al Q6_K estático |
-| FP16 (referencia) | ~14,5 GB | ~16 GB+ | Requiere el repositorio del modelo base, no este |
-
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 para las cuantizaciones Q4-Q6; A100 o H100 solo si se necesita servir en lote con vLLM y muchos contextos concurrentes.
-- Cabe en GPU consumer: sí, desde una GTX 1650 de 4 GB con IQ2_M hasta una RTX 4090 con Q6_K y contexto largo. También es viable en CPU con 8-16 GB de RAM.
-- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`), Ollama, LM Studio, llama-cpp-python, text-generation-webui y servidores compatibles con la API de OpenAI. vLLM y TGI tienen soporte de GGUF parcial y limitado; para producción a gran escala conviene convertir o usar el modelo base en safetensors.
-- Latencia y throughput: no disponibles. Al ser un modelo denso de 7B, el rendimiento vendrá determinado por el ancho de banda de memoria de la GPU y por el tamaño de la cuantización elegida, no por características del modelo en sí.
+- VRAM estimada para inferencia (aproximada, segun cuantizacion): IQ1_S ~2 GB, IQ2_M ~3 GB, IQ3_M ~4 GB, IQ4_XS ~4,5 GB, Q4_K_M ~5 GB, Q5_K_M ~6 GB, Q6_K ~7 GB, mas overhead de contexto KV cache.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080, A100 y H100 para despliegues con concurrencia; cualquier GPU con 6 GB o mas puede ejecutar las variantes de 4 bits.
+- Cabe en GPU consumer: si, desde una GTX 1660 de 6 GB con IQ4_XS o Q4_K_S hasta una RTX 4090 para las variantes Q5/Q6 con contexto largo.
+- Opciones de despliegue: llama.cpp, Ollama (importando el GGUF), LM Studio, text-generation-webui y otros runners compatibles con GGUF; vLLM y TGI no soportan GGUF de forma nativa, por lo que para esos motores habria que usar el modelo base en safetensors.
+- Latencia y throughput: no disponibles en la informacion proporcionada; dependen del hardware y de la cuantizacion elegida.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| mistral-7b-instruct-v0.2-heretic-i1-GGUF (este) | 7,24 B | 32.768 | Apache 2.0 | GGUF (23 quants i1) | Abliterado, solo inglés, sin benchmarks publicados |
-| Ananasez/mistral-7b-instruct-v0.2-heretic | 7,24 B | 32.768 | Apache 2.0 | Safetensors | Modelo base sin cuantizar; requiere ~14,5 GB en FP16 |
-| mradermacher/mistral-7b-instruct-v0.2-heretic-GGUF | 7,24 B | 32.768 | Apache 2.0 | GGUF (quants estáticos) | Mismo modelo, cuantización sin imatrix; alternativa directa |
-| Mistral-7B-Instruct-v0.2 (original) | 7,24 B | 32.768 | Apache 2.0 | Safetensors / GGUF | Con alineamiento y rechazos; referencia para comparar el efecto de la abliteración |
-| mradermacher/Mistral-7B-Instruct-v0.2-8bit-abliterated-i1-GGUF | 7,24 B | 32.768 | Apache 2.0 | GGUF | Otra vía de abliteración sobre el mismo base; sin datos comparativos de calidad |
-
-No hay datos públicos de rendimiento que permitan comparar cualitativamente estas variantes entre sí; la elección entre ellas se basa en el método de abliteración y en el tipo de cuantización, no en métricas.
+| mistral-7b-instruct-v0.2-heretic-i1-GGUF (este) | 7,24 B | 32.768 | Apache 2.0 | GGUF (multiples quants) | Version decensurada cuantizada con imatrix |
+| Mistral 7B Instruct v0.2 (original) | 7,24 B | 32.768 | Apache 2.0 | safetensors, GGUF | Modelo alineado de referencia; rechaza contenido sensible |
+| Ananasez/mistral-7b-instruct-v0.2-heretic | 7,24 B | 32.768 | Apache 2.0 | safetensors | Modelo base de este repositorio, sin cuantizar |
+| mradermacher/mistral-7b-instruct-v0.2-heretic-GGUF | 7,24 B | 32.768 | Apache 2.0 | GGUF (quants estaticos) | Misma base, cuantizaciones sin imatrix |
 
 ## Limitaciones y advertencias
 
-- Modelo únicamente en inglés: no está entrenado ni evaluado en castellano; su uso en español producirá respuestas degradadas y mezclas de idioma.
-- Sin benchmarks: no hay ninguna medición publicada de calidad, y la abliteración suele provocar degradación de coherencia, razonamiento y adherencia a instrucciones respecto al Instruct original.
-- Riesgo elevado de contenido dañino: al eliminar la dirección de rechazo, el modelo puede generar instrucciones peligrosas, contenido sexual explícito, discurso de odio o desinformación sin filtros. No es apto para aplicaciones de cara al público sin capas de moderación externas.
-- Alucinación: como todo modelo de 7B de esta generación, inventa hechos, citas y referencias con facilidad, especialmente en contextos largos.
-- Contexto: aunque soporta 32k tokens, la calidad decae en el extremo superior de la ventana y el consumo de VRAM crece de forma notable con contextos largos.
-- Licencia: Apache 2.0 permite uso comercial, pero el despliegue del modelo abliterado puede incumplir las políticas de uso de plataformas de inferencia gestionada (Hugging Face Inference, Together, etc.), que a menudo prohíben contenido sin filtrar.
-- Solo GGUF: este repositorio no contiene safetensors; para entrenamiento, fine-tuning o evaluación con transformers hay que acudir al modelo base.
-- Fecha de creación del repositorio: 27 de octubre de 2026, con 0 descargas y 1 like, lo que implica ausencia total de validación por parte de la comunidad.
-- Cuantizaciones por debajo de Q3: las variantes IQ2 y Q2_K degradan la calidad de forma apreciable; el propio autor desaconseja algunas (por ejemplo, IQ3_XXS frente a Q2_K).
+- La ablacion de rechazos puede degradar capacidades generales del modelo y aumentar la probabilidad de contenido toxico, sesgado o inseguro; no es apto para aplicaciones orientadas al publico sin moderacion adicional.
+- Riesgo elevado de alucinacion, inherente a un modelo de 7B y agravado por el proceso de decensurado, que puede alterar el comportamiento en dominios sensibles.
+- Solo soporta ingles segun la model card; el rendimiento en castellano no esta garantizado.
+- Aunque la licencia es Apache 2.0, el uso comercial de una variante decensurada exige auditoria propia de seguridad y cumplimiento normativo (por ejemplo, la AI Act en la UE).
+- Las cuantizaciones por debajo de Q3 pierden calidad de forma notable; el propio autor advierte que IQ1_S es "for the desperate" y Q2_K_S tiene "very low quality".
+- El repositorio pesa 81,7 GB por incluir todas las variantes; conviene descargar unicamente el fichero GGUF necesario.
+- No se documentan garantias de soporte ni mantenimiento del modelo base original.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/mistral-7b-instruct-v0.2-heretic-i1-GGUF
-- Página de descargas del autor para este modelo: https://hf.tst.eu/model#mistral-7b-instruct-v0.2-heretic-i1-GGUF
-- Quants estáticos del mismo modelo: https://huggingface.co/mradermacher/mistral-7b-instruct-v0.2-heretic-GGUF
-- Modelo base (abliterado, safetensors): https://huggingface.co/Ananasez/mistral-7b-instruct-v0.2-heretic
-- Cuantizaciones i1 del Mistral-7B-Instruct-v0.2 original: https://huggingface.co/mradermacher/Mistral-7B-Instruct-v0.2-i1-GGUF
-- Repositorio de peticiones de cuantización del autor: https://huggingface.co/mradermacher/model_requests
-- Guía de uso de GGUF citada por el autor: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Gráfica de calidad relativa por tipo de cuantización (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre tipos de cuantización: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Ficha del modelo en abliteration.org (variante 8-bit abliterated del mismo base): https://abliteration.org/models/mradermacher/Mistral-7B-Instruct-v0.2-8bit-abliterated-i1-GGUF
-- Repositorio GGUF alternativo del Mistral-7B-Instruct-v0.2: https://github.com/GourmetBytes/Mistral-7B-Instruct-v0.2-GGUF
-- Notas de despliegue del Mistral-7B-Instruct-v0.2: https://github.com/inferless/Mistral-7B-Instruct-v0.2
+- Modelo base: https://huggingface.co/Ananasez/mistral-7b-instruct-v0.2-heretic
+- Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/mistral-7b-instruct-v0.2-heretic-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#mistral-7b-instruct-v0.2-heretic-i1-GGUF
+- Referencia de uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Mistral 7B Instruct v0.2 original: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2

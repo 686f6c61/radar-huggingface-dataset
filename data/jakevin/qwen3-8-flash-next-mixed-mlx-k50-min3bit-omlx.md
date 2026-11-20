@@ -2,97 +2,98 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-mixed-mlx-K50-min3bit-oMLX es una versión cuantizada y podada de expertos del modelo Qwen3.8-Flash-Next, publicada por el usuario Jakevin en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una re-cuantización en formato MLX (framework de Apple Silicon) orientada a ejecutar un modelo MoE muy grande en hardware de consumo Apple con la menor huella de memoria posible. La construcción conserva 256 de los 512 expertos enrutados en cada una de las 48 capas y cuantiza los expertos a 3 bits (32 capas) y 4 bits (16 capas) mediante RTN con escala afín y grupo de tamaño 64.
+Qwen3.8-Flash-Next-mixed-mlx-K50-min3bit-oMLX es una distribución cuantizada y podada del modelo Qwen/Qwen3.8-Flash-Next, publicada por el usuario Jakevin. No se trata de un modelo entrenado desde cero, sino de una conversión de los pesos originales en FP8 a un formato MLX con precisión mixta (3 y 4 bits) y con poda del 50 % de los expertos enrutados. Su objetivo es hacer viable la inferencia de un modelo MoE de aproximadamente 91 200 millones de parámetros en Apple Silicon con memoria unificada moderada, mediante el runtime oMLX.
 
-El problema que resuelve es claro: el modelo base tiene 91.214 millones... concretamente 91.214.343.235 parámetros, imposible de ejecutar en FP16 en la mayoría de Mac. Con esta poda de expertos y cuantización mixta, el repo ocupa 65,7 GB y el consumo medido en memoria ronda los 35 GB, lo que lo hace viable en máquinas con 48-64 GB de memoria unificada, aunque a velocidades de generación modestas (4-9 tok/s en un M4 Pro).
+El modelo conserva 256 de los 512 expertos enrutados en cada una de las 48 capas, y recuantiza todos los expertos desde los pesos FP8 originales con RTN (round-to-nearest) y cuantización afín de MLX con grupo de tamaño 64, escalas y sesgos en bf16. De las 48 capas, 32 usan expertos a 3 bits y 16 a 4 bits, con las anchuras por capa documentadas en `config.json`. Los pesos no pertenecientes a expertos, el tokenizador, la plantilla de chat y los fragmentos PLE se mantienen sin cambios respecto a la build K50-oMLX.
 
-Es relevante como ejemplo del ecosistema oMLX/qwen4_exp: un formato de ficheros experimental con soporte de PLE (shards de expertos) y modo mmap, pensado para Apple Silicon. No incluye pesos MTP (multi-token prediction), que deben ejecutarse desactivados. La licencia es qwen-community-1.0, heredada del modelo base de Qwen.
+La relevancia de esta ficha radica en que ejemplifica una tendencia práctica: adaptar modelos MoE grandes a hardware de consumo mediante poda de expertos más cuantización agresiva, aceptando una degradación medible de la fidelidad de salida a cambio de un consumo de memoria contenido (unos 34,8 GB de pico en MLX según el autor) y una velocidad de decodificación de aproximadamente 8 tok/s en un Mac mini M4 Pro de 64 GB.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (qwen4_exp), expertos podados: 256 de 512 por capa en 48 capas |
-| Parametros totales | 91.214.343.235 (tras poda y cuantización, según safetensors) |
-| Parametros activos | no disponible |
+| Arquitectura | MoE sobre transformer (familia Qwen3.8-Flash-Next, layout `qwen4_exp`); 48 capas con 512 expertos enrutados originales |
+| Parámetros totales | 91 214 343 235 (dato real de safetensors) |
+| Parámetros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Mixta: expertos a 3 bits (32 capas) y 4 bits (16 capas), RTN, MLX affine, group size 64, escalas y bias en bf16; pesos no-experto sin cambios respecto a la build K50-oMLX |
-| Idiomas soportados | no disponible (el modelo base es de Qwen; las pruebas incluyen inglés y chino tradicional/simplificado) |
-| Licencia | qwen-community-1.0 (other) |
-| Formato de pesos | safetensors (layout qwen4_exp, con shards PLE, para MLX/oMLX) |
+| Tipos de cuantización | Expertos en 3 bits (32 capas) y 4 bits (16 capas), afín MLX, grupo 64, escalas y sesgos bf16; pesos no expertos sin recuantizar respecto a K50-oMLX |
+| Idiomas soportados | no disponible |
+| Licencia | qwen-community-1.0 (etiquetada como `other` en Hugging Face) |
+| Formato de pesos | safetensors (MLX), con `SHA256SUMS` para verificación; requiere runtime oMLX y `qwen4_exp` |
 
 ## Arquitectura y entrenamiento
 
-Este repo no incluye entrenamiento propio: es una derivación de Qwen/Qwen3.8-Flash-Next. La arquitectura subyacente es un transformer MoE con 48 capas y 512 expertos enrutados por capa, de los cuales esta build conserva 256 (poda del 50 %, de ahí el sufijo K50). Los expertos se re-cuantizaron desde los pesos FP8 originales usando RTN (round-to-nearest) con cuantización afín de MLX, group size 64 y escalas/bias en bf16. Los pesos no-experto (attention, embeddings, tokenizer, chat template y shards PLE) se mantienen idénticos a la build anterior K50-oMLX, que a su vez usaba expertos a 2 bits en algunas capas; esta build elimina los expertos de 2 bits para reducir el error relativo.
+El modelo base es un MoE de tipo transformer con 48 capas y 512 expertos enrutados por capa, del que esta build conserva 256 expertos por capa (el 50 %). No se ha realizado entrenamiento adicional: la transformación consiste en poda de expertos y recuantización de los pesos restantes desde FP8 a precisión mixta MLX mediante RTN. Los pesos no expertos, el tokenizador, la plantilla de chat y los fragmentos PLE (probablemente componentes de embeddings o de atención lineal, aunque el autor no lo detalla) se heredan sin cambios de la build K50-oMLX, hoy retirada.
 
-El error relativo de los pesos de experto mejora de 0,467 a 0,195 en las capas a 3 bits y de 0,321 a 0,094 en las de 4 bits respecto a la build K50-oMLX. No hay datos publicados sobre los datos de entrenamiento del modelo base, ni sobre RLHF/DPO, en la información disponible.
+La innovación técnica principal es la combinación de poda estructurada de expertos con cuantización mixta por capa y un runtime específico (oMLX, con el módulo `qwen4_exp` y MTP desactivado). El autor reporta el error relativo de los pesos de los expertos: 0,195 a 3 bits y 0,094 a 4 bits en esta build, frente a 0,467 y 0,321 respectivamente en la build K50-oMLX. No se incluyen pesos MTP, por lo que debe ejecutarse con MTP deshabilitado. No se dispone de información sobre el dataset de entrenamiento original, el número de tokens ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto conversacional con chat template Qwen (formato `<|im_start|>`).
-- Modo thinking: el modelo puede razonar en un bloque `<think>` antes de responder; en las pruebas cerró el razonamiento en 5 de 6 prompts y mejoró los resultados frente al modo non-thinking (4/6 frente a 3/6 correctas más 1 parcial).
-- Generación de código: el test de `is_prime` en Python con asserts funcionó correctamente en modo non-thinking.
-- Razonamiento matemático básico: correcto en modo thinking (problema de perímetro de rectángulo), con fallos en modo non-thinking.
-- Seguimiento de instrucciones de formato (número exacto de frases, resumen en una frase, resumen en chino tradicional).
-- No hay información publicada sobre tool calling, agentes, visión, audio ni soporte multilingüe formal.
+- Generación de texto y conversación multi-turno, según el pipeline declarado (`text-generation`, `conversational`).
+- Razonamiento y generación de código: el autor evalúa explícitamente con un conjunto de 15 prompts de programación, lo que sugiere uso previsto en tareas de código.
+- Generación de prosa: el autor menciona prompts de prosa en su protocolo de evaluación, aunque no reporta resultados para ellos en esta build.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible; la model card incluye texto en chino (已下架) pero no se declaran idiomas soportados.
+- Capacidades especiales (modo thinking, visión, audio): no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Experimentación local con MoE gigantes en Apple Silicon: permite cargar y ejecutar un modelo de ~91 mil millones de parámetros en un Mac con 64 GB de memoria unificada, útil para investigar comportamiento de modelos podados y cuantizados a 3 bits.
-- Pruebas de degradación por cuantización extrema: la model card publica errores relativos por ancho de bits y acuerdos top-1, lo que lo hace útil como caso de estudio para evaluar el impacto de cuantizar expertos a 3/4 bits.
-- Generación de código asistida de baja velocidad: puede producir código Python correcto (el test de `is_prime` pasó sus asserts), adecuado para tareas de código donde la latencia de 33-37 s al primer token no sea crítica.
-- Razonamiento matemático con thinking mode: en modo thinking resolvió correctamente problemas aritméticos de enunciado, útil para tareas ocasionales de razonamiento donde se acepte el coste en tokens.
-- Chatbot personal offline en Mac: con el formato conversacional de Qwen y ejecución local vía oMLX, sirve para asistentes privados sin envío de datos a la nube, asumiendo 4-9 tok/s.
-- Resumen y transformación de texto multilingüe informal: las pruebas muestran resúmenes correctos en una frase y cambio de chino simplificado (razonamiento) a tradicional (respuesta), útil para usuarios que trabajan con contenido en chino.
+- Inferencia local en Apple Silicon con memoria unificada de 64 GB: el modelo está empaquetado para oMLX y cabe con un pico de aproximadamente 34,8 GB, lo que permite ejecutarlo en un Mac mini M4 Pro sin GPU dedicada.
+- Asistencia de programación en local: el autor mide una concordancia top-1 de 0,892 en 15 prompts de código frente a la build de referencia, lo que lo hace adecuado para autocompletado y generación de fragmentos donde no se requiere fidelidad bit a bit.
+- Prototipado de aplicaciones conversacionales sin conexión: al ser un modelo de texto con plantilla de chat incluida, puede integrarse en interfaces de chat locales para pruebas de concepto con datos sensibles que no deben salir del equipo.
+- Evaluación comparativa de técnicas de cuantización: sirve como referencia práctica para investigadores que quieran medir el impacto de la poda de expertos y la precisión mixta en la calidad de salida.
+- Generación de documentación técnica y prosa: el modelo base es de propósito general y esta build incluye prompts de prosa en su protocolo de evaluación, aunque los resultados no se han publicado.
+- Despliegue en estaciones de trabajo con presupuesto de memoria ajustado: frente a la build ternary (unos 15 GB sin caché pero mucho más lenta), esta versión prioriza velocidad (unos 8 tok/s) sobre el mínimo consumo de memoria.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Los datos medidos por el autor son:
-
-Acuerdo top-1 de siguiente token frente a la referencia (build GSQ-RCO Q2 sin podar, no FP8), 32 prompts, 128 posiciones por prompt:
-
-| Subconjunto | n | Media | IC 95 % |
+| Métrica | Esta build | K50-oMLX | Referencia |
 |---|---|---|---|
-| Total | 32 | 0,840 | [0,818, 0,863] |
-| Código | 16 | 0,890 | [0,871, 0,907] |
-| Prosa en inglés | 16 | 0,791 | [0,769, 0,813] |
+| Error relativo de pesos de expertos a 3 bits | 0,195 | 0,467 | no aplica |
+| Error relativo de pesos de expertos a 4 bits | 0,094 | 0,321 | no aplica |
+| Concordancia top-1 en 15 prompts de código | 0,892 | 0,856 | build GSQ-RCO Q2 sin podar (no el modelo FP8) |
+| Concordancia top-1 en 32 prompts (según tabla comparativa del autor) | 0,840 | no disponible | build GSQ-RCO Q2 sin podar |
+| Velocidad de decodificación (Mac mini M4 Pro, 64 GB) | mediana 8,0 tok/s | no disponible | no aplica |
+| Pico de memoria MLX | ~34,8 GB | no disponible | no aplica |
 
-Generación (una ejecución por prompt, seed 1): non-thinking 3/6 correctas + 1 parcial; thinking 4/6. El test de conteo de letras "r" en "Strawberry" solo fue correcto con decodificación greedy (1 de 4 ejecuciones).
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Las cifras de concordancia no son directamente comparables entre builds porque el autor usó referencias y conjuntos de prompts distintos.
 
 ## Requisitos de hardware
 
-- Memoria: pico de MLX medido de 34,5-34,8 GB; huella física del proceso hasta 36,5 GB. Se necesita una Mac con al menos 48 GB de memoria unificada; el autor solo ha probado 64 GB y advierte que máquinas con 16 GB no han sido testadas (y no serían viables).
-- Hardware de referencia: Mac mini con Apple M4 Pro y 64 GB, con 4,8-8,6 tok/s de decodificación (mediana 8,0) en generaciones cortas y 33-37 s hasta el primer token.
-- No hay datos para GPU NVIDIA; el formato es específico de MLX/oMLX y no funciona con vLLM, llama.cpp, TGI ni Ollama de forma directa.
-- Despliegue: requiere la app oMLX (Python 3.11 incluido en la app), con la variable `OMLX_QWEN4_PLE_MODE=mmap`, MTP desactivado (`mtp_enabled=False`) y el parche de compatibilidad `omlx.patches.mlx_vlm_qwen4_exp_compat`. El repo incluye `SHA256SUMS` para verificar los ficheros.
-- El repo ocupa 65,7 GB en disco.
+- VRAM/memoria unificada estimada: pico de aproximadamente 34,8 GB en MLX según el autor; en la sección de resultados se cita también un pico de 35,4 GB. El repositorio ocupa 65,7 GB en disco.
+- GPU recomendadas: Apple Silicon con memoria unificada de 64 GB (probado en Mac mini M4 Pro). No se han probado máquinas de 16 GB.
+- ¿Cabe en GPU de consumo? No hay datos para GPUs NVIDIA de consumo; el formato MLX está orientado a Apple Silicon. Para CUDA habría que reconvertir los pesos.
+- Opciones de despliegue: oMLX con el runtime `qwen4_exp` (MTP desactivado), cargando con el Python incluido en la aplicación y `OMLX_QWEN4_PLE_MODE=mmap`. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: mediana de 8,0 tok/s en decodificación en Mac mini M4 Pro 64 GB; la sección de resultados menciona 4–5 tok/s, lo que indica variabilidad según la medición. No hay datos de latencia de prefill.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Cuantización | Memoria medida | Velocidad | Licencia |
+| Modelo | Poda / cuantización | Tamaño en disco | Memoria pico | Velocidad | Runtime |
 |---|---|---|---|---|---|
-| Jakevin/Qwen3.8-Flash-Next-mixed-mlx-K50-min3bit-oMLX (este) | 91.214 M (podado, 256/512 expertos) | Mixta 3/4 bits (expertos), RTN | ~35 GB | 4,8-8,6 tok/s (M4 Pro) | qwen-community-1.0 |
-| Jakevin/Qwen3.8-Flash-Next-mixed-mlx-K50-oMLX (build anterior) | no disponible | Mixta con expertos a 2 bits en algunas capas | no disponible | no disponible | qwen-community-1.0 |
-| Qwen/Qwen3.8-Flash-Next (base) | no disponible | FP8 | no disponible | no disponible | no disponible |
+| Esta build (min3bit-oMLX) | 256/512 expertos; 32 capas a 3 bits, 16 a 4 bits | 65,7 GB | ~34,8 GB | ~8,0 tok/s | oMLX out of the box |
+| Qwen3.8-Flash-Next-mixed-mlx-K50 | 256/512 expertos; expertos ternarios convertidos a 2 bits afín | 60,0 GB | ~23,3 GB RSS | 5,28–5,85 tok/s | Runner C++ de moe-offload |
+| Qwen3.8-Flash-Next-ternary-mlx-K50 | 256/512 expertos; ternario | 54 GB | ~22,5 GB con caché; 15,0 GB sin caché | 3,8–4,0 tok/s con caché | Loader Python propio |
 
-Comparativas con modelos de otros fabricantes de tamaño similar: no disponible.
+No se dispone de comparación con modelos de otros autores de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Conteo de letras poco fiable: falla en "bookkeeper" (non-thinking) y no converge en thinking (agotó 2048 tokens); "Strawberry" solo correcto con decodificación greedy.
-- El modo thinking puede no converger y consumir el límite de tokens sin producir respuesta.
-- En modo non-thinking se observaron errores aritméticos básicos (perímetro de rectángulo) y código con sintaxis incorrecta en modo thinking (mezcla de estilo C en Python).
-- El acuerdo con la referencia es menor en prosa (0,791) que en código (0,890), y la referencia es una build Q2 sin podar, no el modelo FP8 original: la calidad respecto al modelo base sin cuantizar es desconocida.
-- Sin pesos MTP: debe ejecutarse con MTP desactivado o fallará.
-- Velocidad baja (4-9 tok/s) y primer token en más de 30 s: no apto para aplicaciones interactivas exigentes.
-- Requiere software específico (oMLX con parches qwen4_exp); no es portable a otros runtimes.
-- Licencia qwen-community-1.0: las restricciones concretas para uso comercial deben revisarse en el fichero LICENSE del repo; no hay resumen de términos en la información disponible.
-- Dos ejecuciones de prueba fueron marcadas como terminadas por un watchdog de memoria, lo que sugiere presión de memoria cercana al límite en máquinas de 64 GB.
-- Repositorio de autor individual, sin respaldo oficial de Qwen; descargar y verificar con los SHA-256 proporcionados.
+- Degradación de calidad medible: la concordancia top-1 frente a la referencia es de 0,840–0,892, no de 1,0; no es equivalente al modelo FP8 original.
+- La referencia usada para medir la concordancia es la build GSQ-RCO Q2 sin podar, no el modelo FP8, por lo que la fidelidad real frente al original es desconocida.
+- Los prompts de prosa no se evaluaron; solo se corrieron 15 de los 32 prompts planificados.
+- No incluye pesos MTP; debe ejecutarse con MTP desactivado, lo que puede afectar al rendimiento en decodificación especulativa.
+- Requiere el runtime oMLX y el layout `qwen4_exp`; no es portable directamente a vLLM, llama.cpp u otros motores sin reconversión.
+- No se ha probado en máquinas con 16 GB de memoria unificada.
+- Licencia `qwen-community-1.0` (etiquetada como `other`): es necesario revisar los términos antes de uso comercial; no se detallan restricciones en la información disponible.
+- Riesgo de alucinación y sesgos: no disponible en la información proporcionada; son heredados del modelo base, no evaluados por el autor.
+- Idiomas soportados no declarados; el comportamiento multilingüe no está verificado.
+- Longitud de contexto no disponible; no se debe asumir la del modelo base sin confirmación.
 
 ## Enlaces
 
-- Modelo: https://huggingface.co/Jakevin/Qwen3.8-Flash-Next-mixed-mlx-K50-min3bit-oMLX
-- Build anterior (K50-oMLX): https://huggingface.co/Jakevin/Qwen3.8-Flash-Next-mixed-mlx-K50-oMLX
+- Modelo en Hugging Face: https://huggingface.co/Jakevin/Qwen3.8-Flash-Next-mixed-mlx-K50-min3bit-oMLX
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Licencia: fichero LICENSE en el repositorio del modelo (enlace: https://huggingface.co/Jakevin/Qwen3.8-Flash-Next-mixed-mlx-K50-min3bit-oMLX/blob/main/LICENSE)
+- Build mixed-mlx-K50: https://huggingface.co/Jakevin/Qwen3.8-Flash-Next-mixed-mlx-K50
+- Build ternary-mlx-K50: https://huggingface.co/Jakevin/Qwen3.8-Flash-Next-ternary-mlx-K50
+- Repositorio del runner C++: https://github.com/Jakevin/moe-offload/tree/main/mlx-qwen38/cpp

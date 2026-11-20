@@ -2,116 +2,108 @@
 
 ## Resumen
 
-MNN-Pocket-0.3B es un modelo de lenguaje de aproximadamente 300 millones de parámetros desarrollado por el equipo MNN de Taobao (Alibaba), diseñado específicamente para inferencia en dispositivos (on-device) y entornos edge. La versión aquí descrita, `litert-community/MNN-Pocket-0.3B`, es una conversión del modelo original al formato LiteRT-LM de Google AI Edge, realizada con litert-torch 0.10.0 y litert-lm-builder 0.18.1 para LiteRT-LM 0.19.1. El objetivo es ofrecer un modelo conversacional ligero, cuantizado a int8, que quepa y funcione con latencias aceptables en teléfonos móviles y portátiles.
+MNN-Pocket-0.3B es un modelo de lenguaje instructivo de aproximadamente 300 millones de parámetros, desarrollado por el equipo MNN de Taobao (Alibaba) y distribuido originalmente bajo el identificador `taobao-mnn/MNN-Pocket-0.3B`. La versión que nos ocupa, `litert-community/MNN-Pocket-0.3B`, es una conversión de esos pesos al formato LiteRT-LM de Google para su ejecución en dispositivos móviles, publicada por la comunidad litert-community. El modelo está diseñado específicamente para inferencia on-device: asistentes locales, extracción de datos y pipelines agénticos ligeros.
 
-El modelo resuelve el problema de desplegar asistentes conversacionales y extracción de datos en dispositivos sin conexión a la nube, con una huella de memoria reducida (0.3 GB en disco) y soporte para tool calling en formato ChatML. Su relevancia actual radica en que permite pipelines agénticos ligeros y asistentes locales con una ventana de contexto efectiva de 4.096 tokens en la implementación LiteRT-LM, manteniendo una licencia Apache 2.0 permisiva para uso comercial.
+Arquitectónicamente es un transformer denso de 28 capas con tamaño oculto de 896, 14 cabezas de atención que comparten 2 cabezas clave-valor (GQA) y embeddings de entrada y salida atados. Su vocabulario bilingüe (inglés y chino) alcanza los 65.536 tokens. La conversión a LiteRT-LM ofrece variantes int8 para CPU y GPU, además de ficheros compilados para la NPU de Qualcomm, con longitudes de caché KV de 2.048 y 4.096 tokens.
 
-La arquitectura subyacente es un transformer denso de 28 capas con 896 de dimensión oculta, 14 cabezas de atención y 2 cabezas KV compartidas (GQA), con embeddings de entrada y salida atados y un vocabulario de 65.536 tokens para chino e inglés. No dispone de bloque de pensamiento separado ni de modo de razonamiento extendido.
+La relevancia de esta ficha radica en que demuestra un caso práctico de despliegue de un LLM en hardware de consumo móvil con aceleración NPU: sobre un Galaxy S26 (Snapdragon SM8850), la variante compilada para esa NPU decodifica en torno a 158 tokens/s tras un prefill de 1.024 tokens y crea su motor en unos 0,27 s, según las mediciones del autor de la conversión.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (28 capas, hidden size 896, 14 attention heads, 2 KV heads, GQA, embeddings atados) |
-| Parametros totales | ~300M (aproximadamente 0.3B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 4.096 tokens de KV cache en el fichero LiteRT-LM; prefill signatures de 128 y 1.024 tokens; contexto de benchmark configurado a 2.048 tokens |
-| Tipos de cuantizacion | int8 (una escala por canal de salida) con activaciones float; fp16 en GPU; existe versión int4 en el runtime MNN original y una versión FP8 de terceros (liodon-ai) |
-| Idiomas soportados | Inglés (en), chino (zh) |
+| Arquitectura | Transformer denso (28 capas, hidden size 896, 14 cabezas de atención, 2 cabezas KV, GQA, embeddings atados) |
+| Parámetros totales | ~300M |
+| Parámetros activos | No aplica (modelo denso) |
+| Longitud de contexto | 4.096 tokens (variante `_int8.litertlm`); 2.048 tokens (variantes `_ekv2048` y NPU) |
+| Tipos de cuantización | Int8 (una escala por canal de salida) con activaciones float; fp16 en GPU; int8 con activaciones enteras de 16 bits en NPU |
+| Idiomas soportados | Inglés y chino |
 | Licencia | Apache 2.0 |
-| Formato de pesos | `.litertlm` (LiteRT-LM); el modelo base ofrece GGUF y MNN int4 |
+| Formato de pesos | `.litertlm` (LiteRT-LM); existen builds GGUF e int4 para MNN en repositorios del autor original |
+| Vocabulario | 65.536 tokens (inglés y chino) |
+| Formato de chat | ChatML con definiciones de herramientas |
+| Thinking mode | No declarado (control: never) |
+| Visión / audio | No soportado |
+| Runtime mínimo | LiteRT-LM 0.19.1 |
+| Tamaño del repo | 2,4 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer denso de 28 capas con dimensión oculta de 896, 14 cabezas de atención y 2 cabezas clave-valor compartidas (grouped-query attention), lo que reduce el coste del KV cache. Los embeddings de entrada y salida comparten la misma matriz, y el vocabulario cubre 65.536 tokens para chino e inglés. El modelo base está etiquetado como derivado de la familia Qwen3 en los tags de Hugging Face, y la conversión LiteRT-LM declara el tipo de modelo `qwen2p5` en el manifiesto.
+El modelo es un transformer denso de 28 capas con un tamaño oculto de 896 y 14 cabezas de atención que comparten únicamente 2 cabezas clave-valor, lo que reduce drásticamente el coste de memoria del caché KV en inferencia. Los embeddings de entrada y salida están atados, lo que ahorra parámetros en un modelo de este tamaño. El vocabulario de 65.536 tokens cubre inglés y chino, y el formato de conversación es ChatML con soporte para definiciones de herramientas.
 
-El modelo original es instruction-tuned y conversacional, con un template ChatML que incluye definiciones de herramientas (tool definitions) y sin bloque de pensamiento separado. No se dispone de información detallada sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en la información proporcionada. La conversión a LiteRT-LM preserva el `tokenizer.json` byte a byte del repositorio fuente y modifica el chat template en dos puntos (no detallados en la información disponible), e incorpora los stop tokens `<|im_end|>` (65512) y `<|endoftext|>` (65510), además de los parámetros de muestreo del ejemplo de la model card original (top-k 20, top-p 0.8, temperatura 0.8).
+La información disponible no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. El modelo base es `taobao-mnn/MNN-Pocket-0.3B`, y el autor original publica un informe técnico en arXiv (2611.12311) que presumiblemente contiene esos detalles. La conversión a LiteRT-LM no altera los pesos más allá de la cuantización: los ficheros int8 emplean una escala por canal de salida con activaciones float (fp16 en GPU), mientras que la variante NPU usa activaciones enteras de 16 bits cuyos rangos se calibraron sobre 48 prompts (32 preguntas del split de entrenamiento de GSM8K en formato 4-shot y las 16 primeras prompts de calibración de litert-torch).
+
+La innovación destacable de esta conversión es el empaquetado específico para NPU de Qualcomm: el fichero `MNN-Pocket-0.3B_qualcomm_sm8850_ekv2048.litertlm` está compilado ahead-of-time con QAIRT 2.47.0.260601 para el SoC Snapdragon SM8850, de modo que el dispositivo no tiene que compilarlo al crear el motor. Las variantes incluyen firmas de prefill de 128 y 1.024 tokens para optimizar el procesamiento inicial del prompt.
 
 ## Capacidades
 
 - Generación de texto conversacional multi-turno en inglés y chino.
-- Soporte de tool calling / function calling mediante el formato ChatML con definiciones de herramientas.
-- Capacidad de extracción de datos estructurados a partir de texto.
-- Integración en pipelines agénticos ligeros (lightweight agentic pipelines) según la model card del autor original.
-- Sin modo de razonamiento extendido ni bloque de pensamiento separado.
-- No recomendado para matemáticas avanzadas ni generación de código de largo alcance.
-- No dispone de capacidades de visión ni audio.
-- Capacidades multilingües limitadas a inglés y chino.
+- Instrucciones generales de propósito general para asistencia on-device.
+- Soporte de tool calling / function calling mediante formato ChatML con definiciones de herramientas.
+- Capacidad para pipelines agénticos ligeros y extracción de datos estructurados.
+- Sin bloque de razonamiento separado (thinking mode no declarado y desactivado por control).
+- Sin capacidades de visión ni audio.
+- No recomendado por el autor para tareas de razonamiento intensivo como matemáticas avanzadas o generación de código de largo horizonte.
 
 ## Casos de uso
 
-- Asistentes on-device sin conexión: el modelo puede gestionar conversaciones multi-turno en el propio teléfono con una latencia de decodificación de 54,5 tokens/s en CPU (Galaxy S26) y 108 tokens/s en GPU, lo que permite respuestas fluidas sin enviar datos a la nube.
-- Extracción de datos en el dispositivo: adecuado para parsear texto libre y extraer campos estructurados (por ejemplo, direcciones, importes o entidades) en aplicaciones móviles, gracias a su formato ChatML con soporte de herramientas y su reducido consumo de memoria (1,67 GB en CPU en Galaxy S26).
-- Pipelines agénticos ligeros en edge: puede actuar como planificador o enrutador de herramientas en flujos de múltiples pasos con contexto de hasta 4.096 tokens, invocando funciones definidas en el prompt.
-- Asistentes de escritorio locales: en un Mac M4 Max alcanza 94,6 tokens/s en CPU y 380,2 tokens/s en GPU, lo que lo hace viable para aplicaciones de escritorio con procesamiento local de texto.
-- Automatización de respuestas en aplicaciones de mensajería: su ventana de contexto efectiva y su velocidad de prefill (370 tokens/s en CPU de Galaxy S26) permiten procesar historiales de conversación de más de 1.000 tokens con un tiempo hasta el primer token de 2,83 s.
-- Prototipado rápido de aplicaciones conversacionales: el tamaño de 0.3 GB y la licencia Apache 2.0 permiten iterar y desplegar en dispositivos de gama media sin costes de infraestructura.
-- Filtrado y clasificación de texto en el dispositivo: puede usarse para moderación o etiquetado local de contenido en inglés y chino sin depender de servicios externos.
+- Asistentes locales en aplicaciones móviles: el modelo puede gestionar conversaciones multi-turno dentro de una ventana de 2.048 o 4.096 tokens, suficiente para diálogos de asistencia cotidiana, con latencias de decodificación superiores a 100 tokens/s en hardware móvil de gama alta.
+- Extracción de datos estructurados en el dispositivo: a partir de texto libre (correos, mensajes, formularios), el modelo puede generar salidas JSON mediante tool calling sin enviar datos a la nube, lo que resulta adecuado para aplicaciones con requisitos de privacidad.
+- Pipelines agénticos ligeros: con soporte de function calling y un contexto de hasta 4.096 tokens, puede orquestar llamadas a herramientas locales (calendario, contactos, APIs del sistema) en flujos de pocos pasos.
+- Clasificación y etiquetado de texto en el borde: su tamaño de 300M parámetros permite ejecutarlo en segundo plano en un smartphone para categorizar notificaciones, correos o mensajes sin coste de servidor.
+- Autocompletado y sugerencias de respuesta: integrado en teclados o apps de mensajería, el modelo puede generar respuestas cortas contextualizadas con una latencia baja gracias a la decodificación en NPU o GPU.
+- Filtrado y moderación de contenido local: puede evaluar texto de entrada en el dispositivo antes de enviarlo a un servicio remoto, reduciendo la dependencia de infraestructura externa.
+- Prototipado de aplicaciones edge con LiteRT-LM: sirve como modelo de referencia para validar pipelines de conversión, cuantización y despliegue en Android, macOS y NPU de Qualcomm antes de escalar a modelos mayores.
 
 ## Benchmarks y rendimiento
 
-Resultados de GSM8K (primeras 100 preguntas del split de test, 4-shot chain of thought, decodificación greedy, máximo 1.024 tokens nuevos):
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la información disponible. Los únicos datos de rendimiento proporcionados son métricas de inferencia medidas por el autor de la conversión:
 
-| Modelo | Plataforma | Correctas de 100 | Media |
-|---|---|---|---|
-| Fuente, bfloat16 (transformers) | Mac CPU | 58 | 58 |
-| `MNN-Pocket-0.3B_int8.litertlm` | Mac GPU | 62, 62, 60 | 61,3 |
-| `MNN-Pocket-0.3B_int8.litertlm` | Mac CPU | 60, 60, 58 | 59,3 |
-
-Rendimiento en teléfonos (prefill forzado de 1.024 tokens, 256 tokens decodificados, contexto 2.048, media de ejecuciones 2 y 3 en dos procesos):
-
-| Teléfono | Backend | Prefill (tokens/s) | Decode (tokens/s) | TTFT | Memoria pico | Verificación |
-|---|---|---|---|---|---|---|
-| Galaxy S26 | CPU | 370 | 54,5 | 2,83 s | 1,67 GB | pasa |
-| Galaxy S26 | GPU | 2.661 | 108,0 | 0,39 s | 0,42 GB | no pasa |
-| Pixel 11 Pro | CPU | 209 | 54,1 | 4,93 s | 1,40 GB | pasa |
-| Pixel 11 Pro | GPU | 1.376 | 31,5 | 0,78 s | 0,35 GB | no pasa |
-
-Rendimiento en Mac M4 Max (128 GB), LiteRT-LM 0.19.1, prefill 1.024 tokens, 256 decodificados, contexto 2.048, 3 ejecuciones:
-
-| Backend | Prefill (tokens/s) | Decode (tokens/s) | TTFT |
-|---|---|---|---|
-| GPU | 6.282 | 380,2 | 0,166 s |
-| CPU | 808 | 94,6 | 1,28 s |
-
-No se han publicado resultados de MMLU, HumanEval ni otros benchmarks en la información disponible.
+| Métrica | Valor | Contexto |
+|---|---|---|
+| Decodificación (SM8850, NPU precompilada) | ~158 tokens/s | Galaxy S26, tras prefill de 1.024 tokens (2026-11-07) |
+| Creación de motor (SM8850) | ~0,27 s | Galaxy S26 |
+| Decodificación (fichero NPU genérico) | ~147 tokens/s | Galaxy S26 (2026-11-07) |
+| Decodificación (fichero 4.096, GPU) | ~105 tokens/s | Medición del 2026-11-18 |
+| Memoria pico adicional (fichero 4.096 vs 2.048 en CPU móvil) | ~0,76 GB más | Galaxy S26 y Pixel 11 Pro |
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada para inferencia: aproximadamente 1,67 GB de memoria pico en CPU de Galaxy S26 y 1,40 GB en Pixel 11 Pro con el fichero int8; en GPU de teléfono baja a 0,42 GB (Galaxy S26) y 0,35 GB (Pixel 11 Pro).
-- GPU recomendadas: el modelo está pensado para GPUs integradas de teléfonos (Galaxy S26, Pixel 11 Pro) y para la GPU de un Mac M4 Max. No se proporcionan datos para A100, H100 ni RTX 4090.
-- Cabe en GPU de consumo: sí, en teléfonos de gama alta y en un Mac M4 Max; no se dispone de datos para GPUs de escritorio dedicadas.
-- Opciones de despliegue: LiteRT-LM 0.19.1 (CLI `litert-lm run` y API Python `litert_lm.Engine`), runtime MNN original (con versión int4), y GGUF del modelo base para llama.cpp/Ollama (no verificado en la información disponible para esta conversión concreta).
-- Latencia y throughput: en Galaxy S26 CPU, TTFT de 2,83 s y 54,5 tokens/s de decodificación; en GPU de Galaxy S26, TTFT de 0,39 s y 108 tokens/s, aunque la verificación de precisión no pasa en GPU de teléfono. En Mac M4 Max GPU, TTFT de 0,166 s y 380,2 tokens/s.
+- VRAM/RAM estimada: los ficheros pesan entre 320 MB (int8 CPU/GPU) y 380 MB (NPU precompilada); la memoria pico en CPU móvil del fichero de 4.096 tokens es aproximadamente 0,76 GB superior a la del de 2.048.
+- GPU recomendadas: no aplica en el sentido de datacenter; el modelo está pensado para GPU integradas de móviles (Adreno en Snapdragon SM8850, PowerVR en Pixel 11 Pro) y GPU de macOS.
+- NPU: variantes específicas para la NPU de Snapdragon; la versión precompilada solo funciona en SM8850 (Galaxy S26). El backend CPU de LiteRT-LM 0.19.1 no abre los ficheros NPU.
+- Cabe en GPU de consumo: sí, en cualquier GPU de sobremesa con más de 1 GB de VRAM; el modelo completo en int8 ocupa ~320 MB.
+- Opciones de despliegue: LiteRT-LM 0.19.1 o superior (CPU, GPU y NPU); el autor original ofrece builds para el runtime MNN (int4) y ficheros GGUF para llama.cpp/Ollama.
+- Latencia y throughput: ~158 tokens/s en NPU SM8850, ~147 tokens/s con el fichero NPU genérico, ~105 tokens/s en GPU con el fichero de 4.096 tokens; creación de motor en ~0,27 s en SM8850.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato/Disponibilidad | Rendimiento GSM8K |
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato / despliegue |
 |---|---|---|---|---|---|
-| MNN-Pocket-0.3B (LiteRT-LM int8) | ~300M | 4.096 tokens (KV cache) | Apache 2.0 | `.litertlm`, MNN int4, GGUF | 59,3-61,3 de 100 |
-| MNN-Pocket-0.3B (fuente bfloat16) | ~300M | No disponible | Apache 2.0 | Transformers safetensors | 58 de 100 |
-| Qwen3-0.6B | ~600M | No disponible en la información | Apache 2.0 | safetensors, GGUF | No disponible |
-| MNN-Pocket-0.3B-FP8 (liodon-ai) | ~300M | No disponible | other | safetensors FP8, vLLM | No disponible |
+| MNN-Pocket-0.3B (esta ficha) | ~300M | 2.048–4.096 | en, zh | Apache 2.0 | LiteRT-LM, MNN, GGUF |
+| Qwen3-0.6B | ~600M | no disponible en la información | multilingüe | Apache 2.0 | safetensors, GGUF |
+| Gemma 3 270M | ~270M | no disponible en la información | multilingüe | Gemma Terms | safetensors, GGUF, LiteRT |
+| SmolLM2-360M | ~360M | no disponible en la información | en (principalmente) | Apache 2.0 | safetensors, GGUF |
 
-La comparativa con modelos de la misma categoría (sub-1B para edge) es limitada porque no se han proporcionado resultados de benchmarks de los alternativas en la información disponible. El modelo se posiciona por debajo de Qwen3-0.6B en número de parámetros y por encima en portabilidad a LiteRT-LM frente a las versiones FP8 orientadas a vLLM.
+La comparación cuantitativa de rendimiento no está disponible porque no se han publicado benchmarks de calidad para MNN-Pocket-0.3B en la información proporcionada. La ventaja diferencial de esta conversión es el soporte de NPU precompilada para Snapdragon SM8850 y la integración con LiteRT-LM, que no está presente en las alternativas de la tabla.
 
 ## Limitaciones y advertencias
 
-- No recomendado para matemáticas avanzadas ni generación de código de largo alcance, según la model card del autor original.
-- La verificación de precisión (Accuracy) no pasa en las GPUs de teléfono probadas (Galaxy S26 y Pixel 11 Pro), por lo que el backend GPU en móvil no es fiable todavía para producción.
-- El contexto efectivo en la implementación LiteRT-LM está limitado a 4.096 tokens de KV cache, inferior al contexto nativo del modelo base (no especificado).
-- Solo soporta inglés y chino; no hay soporte multilingüe adicional.
-- Riesgo de alucinación inherente a modelos de 300M de parámetros, especialmente en tareas de razonamiento y datos factuales.
-- No se dispone de información sobre sesgos conocidos ni sobre la composición del dataset de entrenamiento.
-- La licencia Apache 2.0 permite uso comercial, pero la versión FP8 de terceros (liodon-ai) usa licencia "other", que debe revisarse por separado.
-- El rendimiento en CPU de Galaxy S26 se midió tras la reducción de frecuencia de la CPU del dispositivo, por lo que las cifras iniciales (≈77 tokens/s en la primera ejecución) no son representativas del estado sostenido.
+- El propio autor desaconseja su uso para razonamiento intensivo: matemáticas avanzadas y generación de código de largo horizonte quedan fuera de su ámbito recomendado.
+- Riesgo de alucinación inherente a un modelo de 300M parámetros; la ventana de contexto efectiva es de 2.048 o 4.096 tokens, lo que limita la cantidad de información que puede manejar simultáneamente.
+- Solo soporta inglés y chino; no hay evidencia de capacidades en castellano ni en otros idiomas.
+- Sin bloque de razonamiento (thinking) ni capacidades multimodales (visión o audio).
+- La variante NPU precompilada está atada al SoC Snapdragon SM8850; en otros dispositivos hay que usar los ficheros int8 para CPU/GPU o la variante NPU genérica, que requiere compilación en el dispositivo.
+- El backend CPU de LiteRT-LM 0.19.1 no puede abrir los ficheros NPU.
+- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las condiciones del modelo base original y del informe técnico para confirmar que no hay restricciones adicionales.
+- El repositorio tiene un tamaño de 2,4 GB y muy baja adopción (1 like, 1.271 descargas en el momento de la consulta), lo que implica poca validación comunitaria.
+- El fichero de 4.096 tokens consume aproximadamente 0,76 GB más de memoria pico en CPU móvil que el de 2.048, lo que puede ser problemático en dispositivos con recursos ajustados.
 
 ## Enlaces
 
-- [Hugging Face: litert-community/MNN-Pocket-0.3B](https://huggingface.co/litert-community/MNN-Pocket-0.3B)
-- [Modelo base: taobao-mnn/MNN-Pocket-0.3B](https://huggingface.co/taobao-mnn/MNN-Pocket-0.3B)
-- [Versión MNN int4: taobao-mnn/MNN-Pocket-0.3B-MNN](https://huggingface.co/taobao-mnn/MNN-Pocket-0.3B-MNN)
-- [Ficheros GGUF: taobao-mnn/MNN-Pocket-0.3B-GGUF](https://huggingface.co/taobao-mnn/MNN-Pocket-0.3B-GGUF)
-- [Informe técnico (PDF)](https://huggingface.co/taobao-mnn/MNN-Pocket-0.3B/resolve/main/MNN-Pocket-0.3B-Technical-Report.pdf)
-- [Repositorio LiteRT-LM](https://github.com/google-ai-edge/LiteRT-LM)
-- [Versión FP8 de terceros: liodon-ai/MNN-Pocket-0.3B-FP8](https://huggingface.co/liodon-ai/MNN-Pocket-0.3B-FP8)
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/litert-community/MNN-Pocket-0.3B
+- Modelo base original: https://huggingface.co/taobao-mnn/MNN-Pocket-0.3B
+- Build int4 para runtime MNN: https://huggingface.co/taobao-mnn/MNN-Pocket-0.3B-MNN
+- Ficheros GGUF: https://huggingface.co/taobao-mnn/MNN-Pocket-0.3B-GGUF
+- Informe técnico (arXiv): https://arxiv.org/abs/2611.12311
+- Repositorio LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM

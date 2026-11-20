@@ -1,133 +1,110 @@
 # logic65/Whittle-Qwen-3.8-35B-A3B
 
 ## Resumen
+Whittle-Qwen-3.8-35B-A3B es un modelo de lenguaje de tipo mixture-of-experts (MoE) desarrollado por el autor independiente logic65, construido sobre la arquitectura `qwen4_exp` de Qwen3.8-Flash-Next y destilado a nivel de logits desde Qwen3.8-27B. Cuenta con 35.562.370.195 parámetros totales y aproximadamente 3.000 millones de parámetros activos por token, lo que lo sitúa en la categoría de modelos MoE de activación dispersa. Su rasgo diferencial es una memoria n-gram con hashing de 10.000 millones de parámetros cuyos contenidos se transfieren directamente de la tabla propia de Qwen3.8-Flash-Next y que, según el autor, resulta funcionalmente determinante: anularla degrada de forma medible el rendimiento.
 
-Whittle-Qwen-3.8-35B-A3B es un modelo de lenguaje de tipo mixture-of-experts (MoE) publicado por el autor logic65. Cuenta con 35.562.370.195 parámetros totales, de los cuales 10.000 millones corresponden a una memoria n-gram con hash y el resto a un cuerpo de unos 25,1 B; en inferencia se activan aproximadamente 3 B por token (8 de 180 expertos enrutados más un experto compartido). Adopta el formato de la arquitectura Qwen3.8-Flash-Next, denominado `qwen4_exp`, con hyper-connections, una combinación de gated DeltaNet y atención completa, y una tabla de memoria inyectada antes de la capa 2.
+El modelo se presenta como una "research preview" en fase 2 de destilación, entrenada sobre 25.178 respuestas completas y calificadas de Qwen3.8-27B (matemáticas, código, chat, JSON estricto y episodios de agente ejecutados), cada una con la distribución top-20 del profesor en cada token. La raíz del repositorio corresponde al paso 32010 de la fase 2 (p2-s32010, publicado el 30 de septiembre de 2026) y ha entrenado una sola vez sobre las 22.950 filas que caben en su ventana de 4k; las 1.470 filas de contexto largo aún no se han utilizado y la fase on-policy no ha comenzado.
 
-El modelo es un fine-tuning de Whittle-Next-27B-A3B v4.4 y se ha destilado de Qwen3.8-27B con el modo *thinking* activado, transfiriendo además las filas de memoria de la propia tabla de Qwen3.8-Flash-Next. La novedad principal es que, por primera vez en la familia Whittle, la memoria es portante: ponerla a cero degrada de forma medible la entropía cruzada en filas nunca vistas, lo que indica que las capas superiores realmente la utilizan en lugar de haber aprendido a operar sin ella.
+Su relevancia actual radica en dos factores: por un lado, ejecuta sobre llama.cpp estándar sin parches, lo que facilita su despliegue; por otro, publica una batería comparativa propia frente a otras variantes de la misma familia y frente a Qwen3.6-35B-A3B, con resultados medidos en código, uso de herramientas, matemáticas y conocimiento de cola larga. La licencia Apache 2.0 y el formato GGUF disponible amplían su accesibilidad para experimentación.
 
-Se distribuye como vista previa de investigación, no como destilación terminada: el cuerpo solo ha visto 2.861 pasos sobre 1.840 trazas de profesor (matemáticas y revisión de código) más la transferencia de memoria, y la revisión `lw2` añade 3.624 pasos adicionales. Funciona sobre llama.cpp estándar sin parches, con contexto declarado de 262.000 posiciones, y su licencia es Apache 2.0.
+## Especificaciones tecnicas
 
-## Especificaciones técnicas
-
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-experts (MoE) en formato Qwen3.8-Flash-Next (`qwen4_exp`): hyper-connections con 4 flujos residuales, gated DeltaNet + atención completa y memoria n-gram con hash |
-| Parámetros totales | 35.562.370.195 (35,1 B: 25,1 B de cuerpo + 10,0 B de memoria n-gram) |
-| Parámetros activos | ~3 B por token (8 de 180 expertos enrutados + experto compartido; la memoria es una consulta de tabla) |
-| Longitud de contexto | 262.000 posiciones (probado hasta 75.000) |
-| Tipos de cuantización | GGUF Q8_0 a Q3_K_M (en repositorio aparte); pesos completos en bf16 |
-| Idiomas soportados | en, zh, multilingual |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (`model-*.safetensors`), GGUF |
-| Modelo base | logic65/Whittle-Next-27B-A3B (v4.4), relación finetune |
-| Profesor de destilación | Qwen3.8-27B, modo thinking activado |
-| Memoria | 8 cabezas de hash × 4.880.000 filas × 256, bigramas + trigramas, inyectada antes de la capa 2 |
-| Cuerpo | 40 capas, hidden 2048, GDN + atención completa |
-| Tamaño del repositorio | 142,3 GB |
+| Arquitectura | Transformer MoE con formato `qwen4_exp`: hyper-connections, gated DeltaNet + atención y memoria n-gram con hashing de 10 B |
+| Parametros totales | 35.562.370.195 |
+| Parametros activos | ~3 B (aproximadamente 3.000 millones, según la model card) |
+| Longitud de contexto | 4k (ventana de entrenamiento indicada; no se especifica contexto máximo de inferencia) |
+| Tipos de cuantizacion | GGUF Q8_0 a Q3_K_M (repositorio GGUF separado); Q6_K y Q5_K_M empleados en las evaluaciones del autor |
+| Idiomas soportados | Inglés (en), chino (zh), multilingüe |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (transformers) y GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
+El modelo emplea la arquitectura `qwen4_exp` de Qwen3.8-Flash-Next, que combina hyper-connections, una mezcla de gated DeltaNet y atención, y una memoria n-gram con hashing de 10.000 millones de parámetros. Esta memoria no es un componente pasivo: sus filas se transfieren desde la tabla propia de Qwen3.8-Flash-Next y el autor documenta que anularla perjudica de forma medible al modelo, lo que la convierte en un elemento estructural del rendimiento. El cuerpo parte de Whittle-Next-27B-A3B v4.4, un modelo podado al que se le añade la tabla de 10 B para dar lugar a este 35B.
 
-El modelo combina un cuerpo transformer MoE de 40 capas con hidden 2048 sobre una ruta híbrida de gated DeltaNet y atención completa, y utiliza hyper-connections con cuatro flujos residuales en lugar del residual convencional. El componente diferencial es la memoria n-gram: 8 cabezas de hash, 4.880.000 filas por cabeza y dimensión 256, con entradas de bigramas y trigramas, inyectada antes de la capa 2. Las filas de esta tabla se han transferido desde la tabla del propio Qwen3.8-Flash-Next, copiando los conjuntos de filas exactos por bucket visitado y dejando el resto a cero. El modelo se ejecuta sobre llama.cpp estándar, sin parches.
-
-El entrenamiento parte de Whittle-Next-27B-A3B v4.4 y aplica destilación de conocimiento desde Qwen3.8-27B con el modo thinking activado, usando trazas completas y distribuciones top-128 por posición. La revisión publicada como raíz es `lw2` (paso 3623): la primera entrega (`tbl1`, paso 2861) más 3.624 pasos con un *steer* más fuerte en la capa 35 y entrenamiento con desplazamiento de posición para contexto largo. Los pesos raíz de `tbl1` se conservan sin cambios en `bf16-tbl1/`. La salida de la memoria es aproximadamente 0,28× la norma residual en la capa 2.
+El entrenamiento consiste en destilación a nivel de logits desde Qwen3.8-27B con el modo thinking activado, sobre 25.178 trazas verificadas del profesor publicadas junto con sus logprobs top-20 en el dataset logic65/whittle-distill-qwen3.8-27b. La fase 2 abarca matemáticas, código, chat, JSON estricto y episodios de agente ejecutados. La raíz del repositorio ha visto una sola pasada sobre las 22.950 filas compatibles con la ventana de 4k; las 1.470 filas de contexto largo quedan pendientes, igual que la fase de destilación on-policy. El autor advierte explícitamente que el modelo no debe compararse con Qwen3.8 en igualdad de condiciones.
 
 ## Capacidades
-
-- Generación de texto y conversación en inglés y chino, con etiqueta adicional `multilingual`.
-- Razonamiento en modo *thinking*, heredado del proceso de destilación con el profesor en ese modo.
-- Matemáticas: la sonda interna sobre problemas de MATH de niveles 2 a 4 obtiene 44/60 en `lw2` y 46/60 en `tbl1`.
-- Código: el entrenamiento incluye trazas de profesor de revisión de código, y la memoria aporta una ganancia de +2,84 nats de entropía cruzada en archivos no vistos.
-- Recuperación de conocimiento mediante memoria n-gram con hash: desactivar la tabla degrada de forma medible el rendimiento en código, texto general, fichas de ciencia y filas de chat.
-- Lectura de entradas largas: `lw2` incorpora entrenamiento con desplazamiento de posición y, según el autor, lee mejor las entradas largas y termina de forma más limpia.
-- Ejecución en llama.cpp estándar sin modificaciones, con cuantizaciones GGUF disponibles.
-- Tool calling o function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Visión, audio u otras modalidades: no disponibles.
+- Generación de texto conversacional multi-turno, con soporte de modo thinking (razonamiento explícito) heredado del profesor.
+- Razonamiento matemático: resolución de problemas tipo GSM y MATH, con un consumo medio de tokens por respuesta inferior al de Qwen3.6-35B-A3B en las pruebas del autor (1.690–1.976 tokens frente a 4.018).
+- Generación de código: funciones Python completas, evaluadas con HumanEval, HumanEval+, MBPP y MBPP+.
+- Tool calling y function calling: soporte de uso de herramientas, incluida la variante de contexto largo (24 pruebas específicas).
+- Capacidades de agente: episodios de agente ejecutados incluidos en el dataset de destilación y pruebas de uso de herramientas multi-paso.
+- Salida JSON estricta: evaluación específica de exactitud en 72 pruebas de JSON estricto.
+- Capacidades multilingües limitadas a inglés, chino y cobertura multilingüe genérica.
+- Memoria n-gram con hashing que aporta conocimiento factual y de cola larga (nombres poco frecuentes, hechos planos).
+- Ejecución en llama.cpp estándar sin necesidad de parches.
 
 ## Casos de uso
-
-- Investigación sobre destilación de conocimiento: el modelo sirve como banco de pruebas para medir paridad de logits con el profesor (acuerdo top-1 del 44,5 % en la capa 35 frente a la 59 del profesor, con una masa de profesor del 71,2 %), y para estudiar cómo evoluciona la alineación a lo largo del entrenamiento.
-- Estudio de arquitecturas con memoria externa: la tabla n-gram permite medir la dependencia del cuerpo respecto a la memoria mediante la "ganancia de memoria" (entropía cruzada con la tabla a cero menos con la tabla activa), que alcanza +2,84 en código no visto.
-- Razonamiento matemático asistido: con el modo thinking y un límite de 6.144 tokens, el modelo resuelve 44 de 60 problemas de MATH de niveles 2 a 4 en una sola muestra, útil para pregenerar soluciones candidatas que luego se filtran.
-- Revisión de código en flujos de investigación: al haberse destilado parcialmente sobre trazas de revisión de código y obtener una ganancia de memoria de +2,84 en archivos no vistos, puede emplearse para generar comentarios de revisión que después valida un humano.
-- Despliegue local en hardware de gama media: al activar solo ~3 B por token, el modelo se puede servir como GGUF Q8_0 en llama.cpp con tres RTX 3060 y la memoria alojada en RAM del sistema.
-- Experimentos de contexto largo: con 262.000 posiciones declaradas y pruebas hasta 75.000, sirve para estudiar degradación de atención y estabilidad de generación en entradas extensas.
-- Generación multilingüe en inglés y chino: adecuado para tareas de generación o resumen en esos dos idiomas dentro de entornos de investigación, no para producción multilingüe amplia.
+- Generación de código en producción: el modelo obtiene 73,8 en HumanEval y 70,7 en HumanEval+ según las mediciones del autor, lo que permite integrarlo en pipelines de revisión o generación de funciones Python con validación posterior en CI/CD.
+- Asistentes de chat con razonamiento: el modo thinking y la ventana de 4k lo hacen adecuado para conversaciones multi-turno de alcance medio donde se requiera justificar respuestas paso a paso.
+- Automatización de tareas con herramientas: las 95/96 pruebas de uso de herramientas y las 23/24 de contexto largo lo sitúan como candidato para agentes que invocan APIs y encadenan llamadas dentro de una ventana acotada.
+- Extracción de datos estructurados: con 70/72 en JSON estricto exacto, puede emplearse para generar salidas JSON conformes a esquema en procesos de extracción o transformación de datos.
+- Resolución de problemas matemáticos acotados: los resultados en GSM-50 (44) y MATH-60 (41 en la variante x256) permiten su uso en tutoría o verificación de cálculos, siempre con revisión humana.
+- Investigación sobre arquitecturas con memoria: la memoria n-gram de 10 B y su transferencia desde Qwen3.8-Flash-Next lo convierten en una plataforma para estudiar el impacto de la memoria condicional en modelos MoE.
+- Experimentación en hardware modesto: al poder descargar la tabla a RAM del sistema con `-ot per_layer_token_embd=CPU`, el 35B requiere la misma VRAM que la variante de 25B, lo que facilita pruebas en GPUs de gama media.
 
 ## Benchmarks y rendimiento
+Resultados publicados por el autor (4 de octubre de 2026). Batería ejecutada con llama.cpp estándar sobre dos GPUs T4, thinking activado y una muestra por ítem. El modelo de este repositorio se evaluó en Q6_K (Q5_K_M en EvalPlus); las demás variantes, en las cuantizaciones indicadas.
 
-Todos los datos proceden del propio autor, medidos con los mismos scripts que la línea base v4.4, y los registros están en el directorio `eval/` del repositorio.
+| Métrica | Whittle 25B | **Whittle 35B (este repo)** | Whittle x256 | Whittle 45B | Qwen3.6-35B-A3B |
+|---|---|---|---|---|---|
+| Construcción | cuerpo podado, sin tabla | 25B + tabla de 10 B | 25B + 76 expertos por capa | este 35B + 76 expertos por capa | base |
+| Fichero Q4_K_M | 15,7 GB | 21,3 GB (tabla 5,6) | 21,5 GB | 27,1 GB (tabla 5,6) | 22,3 GB |
+| HumanEval / HumanEval+ | 53,0 / 51,2 | 73,8 / 70,7 | no ejecutado | 75,6 / 72,6 | no ejecutado |
+| MBPP / MBPP+ | 72,2 / 60,8 | 76,2 / 61,9 | no ejecutado | 77,8 / 65,9 | no ejecutado |
+| Uso de herramientas en contexto largo (24) | 19 | 23 | 19 | 24 | 24 |
+| Sondas de uso de herramientas (96) | 91 | 95 | 91 | 96 | 93 |
+| Página web: repetición de chat (40) | 35 | 34 | 33 | 27 | 40 |
+| Página web: chats retenidos (36) | 28 | 32 | 32 | 31 | 32 |
+| GSM-50 | 42 | 44 | 45 | 38 | 40 |
+| MATH-60 | 38 | no en esta ejecución | 41 | 44 | 38 |
+| MATH-60, tokens medios por respuesta | 1.976 | — | 1.959 | 1.690 | 4.018 |
+| Nombres de cola larga, PopQA (252) | 97 | 94 | 111 | 111 | 132 |
+| 40 hechos planos | 35 | 35 | 37 | 37 | 33 |
+| JSON estricto, exacto (72) | 71 | 70 | 72 | 70 | 72 |
+| Batería de parada/bucle, limpio (24) | 23 | 23 | 24 | 24 | 24 |
 
-Ganancia de memoria (entropía cruzada con la memoria a cero menos con la memoria activa, en filas nunca entrenadas; positivo indica que el cuerpo necesita la tabla):
-
-| Filas reservadas | tbl1 | lw2 (raíz) |
-|---|---|---|
-| Código (archivos no vistos) | +2,12 | +2,84 |
-| Texto general | +0,22 | +0,67 |
-| Fichas de ciencia | +0,03 | +0,41 |
-| Filas de chat | +0,017 | +0,08 |
-
-Paridad con el profesor (acuerdo del logit-lens del estudiante con el profesor, 400 filas no vistas de 512 tokens, 3.840 posiciones por par):
-
-| Par | v4.4 | tbl1 | lw2 (raíz) |
-|---|---|---|---|
-| Estudiante L39 ← profesor L63, acuerdo top-1 / masa de profesor | 87,4 % / 97,2 % | 87,5 % / 97,2 % | 87,4 % / 97,2 % |
-| Estudiante L35 ← profesor L59 | 21,2 % / 49,5 % | 40,3 % / 68,7 % | 44,5 % / 71,2 % |
-
-Sonda de matemáticas (60 problemas de MATH de niveles 2 a 4, ninguno en los conjuntos de entrenamiento, modo thinking, muestreador de servicio, tope de 6.144 tokens, una muestra por problema):
-
-| Modelo | Resultado |
-|---|---|
-| v4.3 | 43/60 |
-| tbl1 | 46/60 (nivel 4: 13/20, 4 en el tope) |
-| lw2 (raíz) | 44/60 (nivel 2: 18, nivel 3: 14, nivel 4: 12; 5 en el tope) |
-| v4.4 | 48/60 |
-
-Entropía cruzada en datos reservados con la memoria activa: tbl1 chat 1,2098 / general 2,1141; lw2 chat 1,2131 / general 2,1304; v4.4 chat 1,2332 / general 2,1218. La brecha de dependencia (entropía cruzada sin la tabla menos con ella, en filas de memoria) es de +1,69 para tbl1 y +1,77 para lw2, con todas las filas cumpliendo el margen de 0,3 nats.
-
-No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estándar en la información disponible; los datos anteriores son mediciones internas del autor.
+El autor atribuye a la tabla n-gram una mejora en código (HumanEval de 53,0 a 73,8, con 46 tareas ganadas y 12 perdidas) y en uso de herramientas de contexto largo (de 19/24 a 23–24/24), sin efecto apreciable en nombres de cola larga ni en hechos planos. Los expertos restaurados, por su parte, aportan conocimiento de cola larga: 17 ganadas y 3 perdidas de 252 preguntas de nombres sobre el cuerpo de 25B, y 18 ganadas y 1 perdida sobre este 35B.
 
 ## Requisitos de hardware
-
-- Pesos completos en bf16: el repositorio ocupa 142,3 GB, por lo que requiere del orden de 140 GB o más de almacenamiento y VRAM agregada.
-- Estimaciones por cuantización, calculadas a partir de los 35,1 B de parámetros (no publicadas por el autor): Q8_0 ≈ 35 GB, Q4_K_M ≈ 20 GB, Q3_K_M ≈ 17 GB.
-- Configuración reportada: GGUF Q8_0 servido en llama.cpp estándar sobre 3× RTX 3060, con la tabla de memoria alojada en RAM del sistema.
-- Al activar solo ~3 B de parámetros por token, el cuello de botella es el ancho de banda de memoria y el tamaño de la tabla, no el cómputo, lo que hace viable el despliegue en GPUs de gama media-consumidora repartiendo capas.
-- Cabe en GPU de consumo si se reparte entre varias tarjetas o si se aloja la memoria en RAM; con una única GPU consumer solo son realistas cuantizaciones bajas (Q3_K_M o inferiores) y contexto reducido.
-- Opciones de despliegue confirmadas: llama.cpp con los GGUF publicados. vLLM, TGI, Ollama y otros motores no están documentados en la información disponible.
+- VRAM estimada: el fichero Q4_K_M ocupa 21,3 GB, de los cuales 5,6 GB corresponden a la tabla; con `-ot per_layer_token_embd=CPU` esa parte se descarga a RAM del sistema y el modelo requiere la misma VRAM que la variante de 25B (fichero Q4_K_M de 15,7 GB).
+- GPUs empleadas en las evaluaciones del autor: dos NVIDIA T4 con llama.cpp estándar.
+- GPU de consumo: no se documenta una prueba en GPUs consumer; el requisito de VRAM con la tabla descargada a RAM es comparable al de un modelo de 25B, por lo que podría caber en tarjetas de 24 GB con cuantizaciones Q4_K_M o inferiores, aunque este dato no está confirmado por el autor.
+- Opciones de despliegue: llama.cpp estándar sin parches (soporte nativo), transformers con safetensors, y GGUF en el repositorio logic65/Whittle-Qwen-3.8-35B-A3B-GGUF (Q8_0 a Q3_K_M). No se mencionan vLLM, TGI ni Ollama en la información disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Activos por token | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Whittle-Qwen-3.8-35B-A3B (este) | 35,1 B (25,1 B cuerpo + 10,0 B memoria) | ~3 B | 262.000 posiciones (probado a 75.000) | Apache 2.0 | Safetensors y GGUF Q8_0–Q3_K_M |
-| Whittle-Next-27B-A3B (base) | 27 B según la nomenclatura; no confirmado en la información | no disponible | 262.000 posiciones (heredado) | no disponible | Safetensors |
-| Qwen3.8-27B (profesor) | 27 B | no disponible | no disponible | no disponible | no disponible |
-| Qwen3.8-Flash-Next | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parámetros | Activos | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|---|
+| **Whittle-Qwen-3.8-35B-A3B** | 35,56 B | ~3 B | 4k | Apache 2.0 | safetensors + GGUF | Memoria n-gram de 10 B; HumanEval 73,8; tool use 95/96 |
+| Whittle-Next-27B-A3B (base) | no disponible | no disponible | no disponible | Apache 2.0 (según repo base) | safetensors | Cuerpo del que parte este modelo (v4.4) |
+| Whittle 25B (Qwen3.6-Whittle-25B-A3B) | 25 B (aprox.) | ~3 B | no disponible | Apache 2.0 (según repo) | GGUF | Cuerpo podado sin tabla; HumanEval 53,0; tool use 91/96 |
+| Qwen3.6-35B-A3B | 35 B (aprox.) | ~3 B | no disponible | no disponible en la información | GGUF (bartowski) | Base de la familia; tool use 93/96; PopQA 132/252 |
 
-Métricas comparables disponibles del propio linaje: en la sonda de matemáticas, v4.3 obtiene 43/60, tbl1 46/60, este modelo en su revisión raíz 44/60 y v4.4 48/60. En entropía cruzada reservada, v4.4 registra 1,2332 en chat y 2,1218 en texto general, frente a 1,2131 y 2,1304 de este modelo. No hay datos públicos que permitan compararlo con modelos de terceros de tamaño equivalente.
+La comparación con Qwen3.8-27B (profesor) no se incluye porque el autor advierte explícitamente que no debe establecerse en igualdad de condiciones.
 
 ## Limitaciones y advertencias
-
-- Es una vista previa de investigación, no una destilación terminada. El autor indica explícitamente que aún necesita una destilación completa, de dominio amplio y on-policy, con la memoria entrenada conjuntamente sobre muchos más datos.
-- El cuerpo solo ha visto 2.861 pasos de entrenamiento sobre 1.840 trazas de profesor (matemáticas y revisión de código) más la transferencia de memoria; la revisión `lw2` añade 3.624 pasos. No es comparable a Qwen3.8 en igualdad de condiciones.
-- La memoria contiene únicamente los conjuntos de filas exactos de los buckets visitados; el resto queda a cero. Por tanto, su conocimiento es parcial y la tabla debe servirse siempre completa, ya que el cuerpo depende de ella para recuperar conocimiento.
-- En matemáticas, `lw2` cede dos puntos frente a `tbl1` (44 frente a 46 sobre 60). Seis de sus derrotas se debieron a tres respuestas que nunca terminaron, dos de ellas con repetición degenerada dentro de un razonamiento largo, y a tres lecturas erróneas.
-- Riesgo de repetición degenerada en cadenas de pensamiento largas, documentado por el propio autor.
-- Idiomas: solo inglés, chino y la etiqueta genérica `multilingual`. No hay datos de calidad ni de cobertura en castellano.
-- No hay información publicada sobre sesgos, tasas de alucinación ni evaluaciones de seguridad.
-- La licencia Apache 2.0 permite uso comercial, pero el estado incompleto de la destilación y la dependencia de una memoria parcialmente transferida desaconsejan su uso en producción.
-- El modelo registra 0 descargas y 2 "me gusta" en el momento de la consulta: no cuenta con validación independiente de la comunidad.
-- Todos los benchmarks son mediciones internas del autor con sus propios scripts y no han sido replicados por terceros.
-- La información disponible sobre soporte de tool calling, agentes, visión o audio no existe, por lo que no deben asumirse esas capacidades.
+- Modelo en fase de investigación ("research preview"): la raíz ha entrenado una sola pasada sobre 22.950 filas y no ha iniciado la fase on-policy; los resultados no son comparables con Qwen3.8 en igualdad de condiciones.
+- Ventana de contexto de 4k: las 1.470 filas de contexto largo del dataset no se han utilizado, lo que limita el rendimiento en tareas que exijan contextos extensos.
+- Conocimiento factual limitado: 94/252 en PopQA y 35/40 en hechos planos, por debajo de Qwen3.6-35B-A3B (132/252 y 33/40 respectivamente); el autor señala que se necesitan más filas de memoria y datos densos en hechos.
+- Riesgo de alucinación: no se documentan evaluaciones específicas de veracidad; el uso en producción requiere validación externa.
+- Sesgos: no se documentan análisis de sesgo en la información disponible.
+- Idiomas: cobertura declarada de inglés, chino y multilingüe genérico; no se especifican evaluaciones por idioma.
+- Licencia Apache 2.0: permite uso comercial, pero el estado de investigación y la falta de validación en producción desaconsejan su despliegue sin pruebas propias.
+- Dependencia de la memoria n-gram: el rendimiento en código y uso de herramientas de contexto largo depende de la tabla de 10 B; su descarga a RAM del sistema cambia el perfil de memoria y puede afectar a la latencia.
+- Tamaño del repositorio: 2.655,7 GB, lo que encarece la descarga y el almacenamiento de los pesos completos en safetensors.
 
 ## Enlaces
-
 - Modelo en Hugging Face: https://huggingface.co/logic65/Whittle-Qwen-3.8-35B-A3B
-- Repositorio GGUF (Q8_0 a Q3_K_M): https://huggingface.co/logic65/Whittle-Qwen-3.8-35B-A3B-GGUF
-- Modelo base Whittle-Next-27B-A3B: https://huggingface.co/logic65/Whittle-Next-27B-A3B
-- Modelo Qwen3.8-Flash-Next: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- GGUF del modelo: https://huggingface.co/logic65/Whittle-Qwen-3.8-35B-A3B-GGUF
+- Modelo base: https://huggingface.co/logic65/Whittle-Next-27B-A3B
+- Dataset de destilación: https://huggingface.co/datasets/logic65/whittle-distill-qwen3.8-27b
+- Modelo profesor: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Variante Whittle 25B: https://huggingface.co/logic65/Qwen3.6-Whittle-25B-A3B
+- Variante Whittle 45B: https://huggingface.co/logic65/Whittle-Qwen-3.8-45B-A3B-GGUF
+- Rama experimental x256: https://huggingface.co/logic65/Whittle-Qwen-3.8-35B-A3B/tree/dev/splice256
+- Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Apoyo al autor: https://ko-fi.com/davida81328
-- La búsqueda web realizada no devolvió enlaces relevantes al modelo; los únicos resultados obtenidos correspondían a páginas municipales de la ciudad alemana de Wittenberge, sin relación con el modelo.

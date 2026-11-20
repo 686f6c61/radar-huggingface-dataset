@@ -2,73 +2,59 @@
 
 ## Resumen
 
-NVIDIA-Nemotron-3.5-Bolt-E4B-NVFP4-GGUF es una cuantización no oficial en formato GGUF del modelo NVIDIA Nemotron 3.5 Bolt E4B, creada por el usuario BennyDaBall a partir de los pesos BF16 oficiales de NVIDIA. El modelo base, post-entrenado desde Gemma 4 E4B de Google, es multimodal (image-text-to-text) y esta cuantización busca cubrir un hueco: NVIDIA distribuye el modelo principal en BF16 y en GGUF Q4_K_M, pero el único archivo NVFP4 oficial corresponde al drafter DFlash, no al modelo principal.
+NVIDIA-Nemotron-3.5-Bolt-E4B-NVFP4-GGUF es una cuantización comunitaria en formato GGUF del modelo NVIDIA Nemotron 3.5 Bolt E4B, publicada por el usuario BennyDaBall. El modelo base lo desarrolla NVIDIA a partir de un post-entrenamiento sobre Gemma 4 E4B de Google, y está pensado para tareas multimodales de imagen-texto-a-texto. Esta versión concreta aplica cuantización NVFP4 (FP4 de NVIDIA) combinada con GPTQ y la técnica Four Over Six, con el objetivo de reducir el peso del modelo a 5,63 GB manteniendo una fidelidad alta respecto a los pesos BF16 originales.
 
-La relevancia de esta ficha radica en la calidad de la cuantización: el autor aplica GPTQ con la técnica Four Over Six (arXiv 2512.02010, MIT Han Lab + NVIDIA) integrada dentro del bucle GPTQ, y mantiene en Q8_0 las capas más sensibles identificadas mediante un barrido de KLD por capa. El resultado es un archivo de 5,63 GB con un KLD medio de 0,038 frente al BF16, muy por debajo del 0,102 del Q4_K_M oficial y de menor tamaño (5,63 GB frente a 6,18 GB).
+La relevancia de esta ficha radica en que NVIDIA solo distribuye oficialmente el modelo en BF16 y en un GGUF Q4_K_M, mientras que el único archivo NVFP4 oficial es el drafter DFlash. Esta cuantización cubre ese hueco con una calidad medida superior: KLD de 0,038 frente a 0,102 del Q4_K_M oficial, y un 93,9 % de coincidencia en el token superior frente al 90,0 % del oficial. El modelo tiene 7.463.019.215 parámetros totales y está entrenado con una longitud de contexto de 65.536 tokens.
 
-En cuanto a rendimiento, medido por el autor en una RTX 5090 con llama.cpp b11856, el modelo alcanza unos 240 tok/s de decodificación en solitario y hasta 550 tok/s combinado con el drafter DFlash de NVIDIA mediante decodificación especulativa, con un prefill de 15.346 tok/s en prompts de 512 tokens. El contexto entrenado es de 65.536 tokens y el pipeline es de imagen-texto a texto, con soporte experimental de audio en llama.cpp.
+El modelo está orientado a despliegue local en GPUs Blackwell mediante llama.cpp y LM Studio, con soporte de decodificación especulativa mediante el drafter DFlash de NVIDIA, que eleva el throughput de decodificación hasta 550 tok/s en una RTX 5090 según las mediciones del autor. La licencia es OpenMDW 1.1 y el idioma declarado es únicamente inglés.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder (base Gemma 4 E4B post-entrenado por NVIDIA), con capas de reutilización de K/V y proyección por capa (per-layer) |
+| Arquitectura | Transformer multimodal (hereda la arquitectura de Gemma 4 E4B, post-entrenada por NVIDIA); incluye proyector de visión y audio |
 | Parametros totales | 7.463.019.215 |
-| Parametros activos | no disponible (no se indica si es MoE; el sufijo E4B sugiere 4B activos, pero no está confirmado en la información) |
-| Longitud de contexto | 65.536 tokens (entrenado) |
-| Tipos de cuantizacion | NVFP4 (W4A16, con escalas por tensor) + Q8_0 en capas sensibles + Q6_K en embeddings; mezcla NVFP4/Q8_0 |
-| Idiomas soportados | Inglés (etiquetado en la ficha; el modelo base puede soportar más idiomas, no disponible en la información) |
-| Licencia | openmdw-1.1 (OpenMDW 1.1) |
-| Formato de pesos | GGUF (cuantizado desde safetensors BF16) |
+| Parametros activos | no disponible |
+| Longitud de contexto | 65.536 tokens (entrenado a esa longitud) |
+| Tipos de cuantizacion | NVFP4 mixto con Q8_0 en capas sensibles y Q6_K en embeddings; tensor NVFP4 etiquetados W4A16; archivo principal de 5.630.777.120 bytes |
+| Idiomas soportados | en (inglés) |
+| Licencia | OpenMDW 1.1 (license: other, license_name: openmdw-1.1) |
+| Formato de pesos | GGUF (modelo principal NVFP4 + Q8_0/Q6_K; proyector multimodal mmproj en BF16) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base, NVIDIA Nemotron 3.5 Bolt E4B, es un transformer decoder post-entrenado por NVIDIA desde Gemma 4 E4B de Google. La arquitectura presenta dos rasgos destacables que condicionan la cuantización: las capas 24 a 41 reutilizan los tensores K/V de los bloques 22 y 23, y existe un mecanismo de embedding por capa (per-layer token embedding) con su propia puerta de entrada y proyección. Incluye un canal de "thinking" (razonamiento) que requiere la plantilla de chat de NVIDIA y el flag `--jinja` en llama.cpp para parsearse correctamente.
+El modelo base es NVIDIA Nemotron 3.5 Bolt E4B, un post-entrenamiento de NVIDIA sobre Gemma 4 E4B de Google, con pipeline image-text-to-text. La model card no detalla la composición del dataset de preentrenamiento ni el volumen de tokens, ni si hubo RLHF o DPO; esa información no está disponible en la documentación proporcionada. La arquitectura interna es la de Gemma 4 E4B, con atención con compartición de K/V entre capas (las capas 24 a 41 reutilizan las K/V de las capas 22 y 23, según el análisis de sensibilidad del cuantizador), y un canal de "thinking" que requiere `--jinja` en llama.cpp para parsearse correctamente. El modelo incorpora un proyector multimodal (visión y audio) convertido a BF16 desde el mismo checkpoint de NVIDIA.
 
-Sobre este base, el autor construyó la cuantización en tres pasos. Primero, GPTQ (Frantar et al., 2022) sobre todas las lineales del decoder, con 621 muestras de calibración de 2.048 tokens generadas por el propio modelo BF16 con thinking activado (matemáticas, código, chat, tool use, multilingüe y 10 % de texto plano), hessianas en FP32, damping 0,01 y bloques perezosos de 128. Segundo, la técnica Four Over Six (Cook et al., arXiv 2512.02010): dado que FP4 no tiene valor entre 4 y 6, cada bloque de 16 pesos prueba ambas escalas (map-to-6 y map-to-4) y conserva la de menor error; la innovación del autor es tomar esa decisión dentro del bucle GPTQ en lugar de por adelantado, lo que mejoró el KLD de 0,070 a 0,066, con un 42 % de bloques eligiendo map-to-4. Tercero, las capas más sensibles (los bloques 16-24, 9 bloques en total, más todos los attn_k/attn_v y las puertas/proyecciones por capa) se mantienen en Q8_0, y los embeddings en Q6_K. Los 36 tensores K/V nunca usados de las capas con KV compartida se omiten del archivo. Todos los tensores NVFP4 van etiquetados W4A16, de modo que en Blackwell llama.cpp usa activaciones de 8 bits por defecto.
+La cuantización de esta ficha se construyó en tres etapas. Primero, GPTQ (Frantar et al. 2022) sobre cada capa lineal del decoder, con calibración de 621 muestras de 2.048 tokens generadas por el propio modelo BF16 con thinking activado (matemáticas, código, chat, uso de herramientas, multilingüe y un 10 % de texto plano), Hessianos en FP32, damping 0,01, bloques perezosos de 128 y un orden de columnas que mantiene contiguos los bloques NVFP4 de 16 pesos. Segundo, la técnica Four Over Six (Cook et al., MIT Han Lab y NVIDIA, arXiv 2512.02010): como FP4 no tiene valores entre 4 y 6, cada bloque de 16 pesos prueba ambas escalas (map-to-6 y map-to-4) y conserva la de menor error; el autor integra esa decisión dentro del bucle de GPTQ (el paper lo señala como trabajo futuro), obteniendo KLD 0,066 frente a 0,070 al decidir a priori, y un 42 % de bloques eligieron map-to-4. Tercero, las capas sensibles se mantienen en Q8_0 según un barrido de KLD por capa: los bloques 22 y 23 son los más sensibles porque todas las capas de 24 a 41 reutilizan sus K/V, seguidos de los bloques 16-21 y 24; esos 9 bloques más todos los attn_k/attn_v quedan en Q8_0 (93 de 258 lineales), la compuerta y proyección de entrada por capa quedan en Q8_0 y los embeddings en Q6_K. Los 36 tensores K/V nunca usados de las capas con K/V compartidas se omiten. El autor verifica que los bytes del GGUF coinciden con la salida del cuantizador y que la dequantización de gguf-py equivale exactamente al resultado GPTQ en memoria.
 
 ## Capacidades
 
-- Generación de texto conversacional con canal de razonamiento (thinking mode) de Gemma 4, activable y parseable con `--jinja`.
-- Comprensión multimodal de imágenes (pipeline image-text-to-text) mediante el archivo mmproj incluido en BF16.
-- Entrada de audio, marcada como experimental en llama.cpp (proyector de audio incluido en el mmproj).
-- Razonamiento matemático y generación de código (usados como dominios de calibración y evaluación por el autor).
-- Soporte de tool calling / function calling: la plantilla de chat oficial de NVIDIA incluye tool use y este dominio formó parte de la calibración de GPTQ.
-- Razonamiento multi-paso y agentes: el canal thinking y el entrenamiento con tool use del modelo base lo hacen apto para flujos multi-step.
-- Capacidades multilingües parciales: el conjunto de calibración incluye datos multilingües, aunque el modelo está etiquetado solo como inglés.
-- Decodificación especulativa nativa mediante el drafter DFlash de NVIDIA (hasta 550 tok/s medidos).
+- Generación de texto conversacional multi-turno, con plantilla de chat de NVIDIA incluida byte a byte en el GGUF.
+- Razonamiento con modo "thinking" (canal de pensamiento de Gemma 4), que requiere `--jinja` en llama.cpp para parsearse.
+- Generación de código y resolución de problemas matemáticos (usados en la calibración y en las pruebas de rendimiento del autor).
+- Entrada de imágenes mediante el proyector multimodal BF16 (`mmproj-NVIDIA-Nemotron-3.5-Bolt-E4B-BF16.gguf`).
+- Entrada de audio a través del mismo proyector, marcada como experimental en llama.cpp.
+- Uso de herramientas (tool use), incluido en el conjunto de calibración del cuantizador.
+- Capacidades multilingües limitadas: el modelo declara únicamente inglés.
+- Decodificación especulativa compatible con el drafter DFlash de NVIDIA (`--spec-type draft-dflash`).
 
 ## Casos de uso
 
-- Chatbots y asistentes locales con razonamiento: el canal thinking y los 65.536 tokens de contexto permiten conversaciones multi-turno largas con razonamiento visible, ejecutándose íntegramente en una sola GPU de consumo (5,63 GB de pesos).
-- Asistentes multimodales de escritorio: con el mmproj BF16 incluido, se pueden construir aplicaciones que describan imágenes, extraigan texto de capturas o respondan preguntas sobre documentos escaneados desde LM Studio o llama-server.
-- Generación y revisión de código en local: el modelo se calibró con generaciones propias de código con thinking activado, adecuado para autocompletado, revisión de pull requests y refactorización con contexto de repositorio de hasta 64K tokens.
-- Agentes con tool calling: la plantilla de chat oficial soporta function calling, lo que permite integrarlo en pipelines de orquestación de herramientas (búsqueda, ejecución de código, APIs) con llama-server como backend OpenAI-compatible.
-- Inferencia de alto throughput en hardware Blackwell: los kernels FP4 nativos de Blackwell y la decodificación especulativa con DFlash (550 tok/s) lo hacen idóneo para servidores locales de baja latencia que atienden a un usuario o pocos usuarios concurrentes.
-- Transcripción y análisis de audio experimental: el proyector de audio permite prototipar aplicaciones de entrada por voz, asumiendo el carácter experimental del soporte en llama.cpp.
-- Investigación en cuantización: la documentación detallada del proceso (GPTQ + Four Over Six integrado, barrido de KLD por capa) sirve como referencia reproducible para estudios de cuantización NVFP4.
+- Asistencia conversacional local con contexto largo: el modelo admite 65.536 tokens, suficiente para mantener conversaciones multi-turno con documentos extensos o historiales largos en una sola GPU consumer Blackwell.
+- Generación de código en estación de trabajo: con 550 tok/s de decodificación usando el drafter DFlash en una RTX 5090, es viable integrarlo en flujos de autocompletado o revisión de código interactivos sin depender de la nube.
+- Análisis de imágenes en local: el proyector mmproj permite pasar imágenes al modelo para descripción, extracción de información o respuesta a preguntas visuales, con la ventaja de que los datos no salen del equipo.
+- Procesamiento de audio experimental: el proyector incluye entrada de audio (marcada como experimental en llama.cpp), útil para prototipos de transcripción o comprensión de audio en entornos controlados.
+- Razonamiento matemático con modo thinking: el canal de pensamiento permite obtener cadenas de razonamiento antes de la respuesta final, adecuado para tutoría o verificación de cálculos.
+- Despliegue en LM Studio para usuarios no técnicos: el archivo carga y responde correctamente en el runtime CUDA 12 de llama.cpp 2.64.0, lo que facilita pruebas rápidas sin montar infraestructura.
+- Evaluación comparativa de cuantizaciones: al estar construido con GPTQ + Four Over Six y publicar la escalera de KLD, sirve como referencia para estudiar el impacto de distintas técnicas de cuantización FP4 en un mismo modelo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor publica mediciones propias de calidad de cuantización (KLD frente a BF16) y de velocidad:
+Datos de calidad de cuantización publicados por el autor (KLD frente a BF16 sobre 61.440 tokens retenidos: wikitext-2 test más chat y código no usados en calibración):
 
-| Métrica | Este archivo (NVFP4) | NVIDIA Q4_K_M (oficial) |
-|---|---:|---:|
-| Tamaño de archivo | 5,63 GB | 6,18 GB |
-| KLD medio vs BF16 (menor es mejor) | 0,038 | 0,102 |
-| Coincidencia del top token con BF16 | 93,9 % | 90,0 % |
-| Decode, 1 usuario, sin drafter | 240 tok/s | 243 tok/s |
-| Decode, 1 usuario, con drafter DFlash | 550 tok/s | 526 tok/s |
-| Prefill, prompt de 512 tokens | 15.346 tok/s | 17.542 tok/s |
-| KLD percentil 99 | 0,50 | 1,26 |
-
-Condiciones de medición: RTX 5090, llama.cpp b11856 (build oficial CUDA 13.4), decodificación greedy, thinking activado, mediana de 9 peticiones (matemáticas, código y chat), las cuatro configuraciones medidas de forma consecutiva. Con activaciones forzadas a 4 bits (`GGML_CUDA_MMQ_PREC=q4`) el KLD sube a 0,090.
-
-Escalera de calidad de la construcción (KLD vs BF16 sobre 61.440 tokens reservados de wikitext-2, chat y código):
-
-| Build | Tamaño | KLD medio | KLD p99 |
+| Build | Tamano | KLD medio | KLD percentil 99 |
 |---|---:|---:|---:|
-| NVFP4 RTN plano (llama-quantize) | 5,21 GB | 0,215 | 2,54 |
+| llama-quantize NVFP4 (RTN) | 5,21 GB | 0,215 | 2,54 |
 | + escala por tensor (RTN de dos niveles) | 5,18 GB | 0,186 | 2,25 |
 | + Four Over Six (RTN) | 5,18 GB | 0,166 | 2,03 |
 | GPTQ (escalas estáticas) | 5,18 GB | 0,077 | 0,95 |
@@ -76,47 +62,57 @@ Escalera de calidad de la construcción (KLD vs BF16 sobre 61.440 tokens reserva
 | + capas sensibles en Q8_0 (este archivo) | 5,63 GB | 0,038 | 0,50 |
 | NVIDIA Q4_K_M (oficial) | 6,18 GB | 0,102 | 1,26 |
 
+Comparativa directa con el Q4_K_M oficial de NVIDIA:
+
+| Metrica | Este archivo | NVIDIA Q4_K_M |
+|---|---:|---:|
+| Tamano de archivo | 5,63 GB | 6,18 GB |
+| KLD vs BF16 (menor es mejor) | 0,038 | 0,102 |
+| Mismo token superior que BF16 | 93,9 % | 90,0 % |
+| Decodificación, 1 usuario, sin drafter | 240 tok/s | 243 tok/s |
+| Decodificación, 1 usuario, con drafter DFlash | 550 tok/s | 526 tok/s |
+| Prefill, prompt de 512 tokens | 15.346 tok/s | 17.542 tok/s |
+
+Mediciones del autor en una RTX 5090 con llama.cpp b11856 (build oficial CUDA 13.4), greedy, thinking activado, mediana de 9 peticiones (matemáticas, código y chat por triplicado). No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: unos 5,63 GB solo para los pesos del modelo de texto, más unos 0,99 GB si se carga el mmproj para visión/audio, más la caché KV y el drafter DFlash (4 GB según su denominación oficial). Un despliegue completo con drafter y contexto de 16K cabe cómodamente en 12-16 GB de VRAM.
-- GPU recomendadas: RTX 5090 (hardware usado en las mediciones del autor, con kernels FP4 nativos de Blackwell). En Blackwell (RTX 50xx) se aprovechan los kernels FP4 y las activaciones de 8 bits por defecto (W4A16).
-- Consumer GPUs: sí. Cabe en una RTX 4090, RTX 3090 o incluso tarjetas de 8 GB si se prescinde del drafter y se ajusta el contexto, aunque los kernels FP4 optimizados son específicos de Blackwell; en arquitecturas anteriores el rendimiento será menor.
-- Opciones de despliegue: llama.cpp (b11856 o superior, obligatorio por las escalas por tensor NVFP4, etiquetas W4A16 y kernels nativos de Blackwell; builds antiguos pueden cargar el archivo pero producir salida incorrecta), llama-server con decodificación especulativa DFlash, y LM Studio (verificado con el runtime CUDA 12 de llama.cpp 2.64.0).
-- Latencia y throughput estimados: en RTX 5090, 240 tok/s de decode sin drafter, 550 tok/s con DFlash, y 15.346 tok/s de prefill en prompts de 512 tokens (mediana de 9 peticiones, greedy, thinking activado).
-- Comando de referencia con drafter: `llama-server -m NVIDIA-Nemotron-3.5-Bolt-E4B-NVFP4.gguf --spec-draft-model Nemotron-3.5-Bolt-E4B-DFlash-BF16.gguf --spec-type draft-dflash --spec-draft-n-max 7 --spec-draft-ngl 999 -ngl 999 -fa on --jinja -c 16384 --parallel 1`, añadiendo `--mmproj` para imágenes y audio.
+- VRAM estimada para inferencia: el archivo principal ocupa 5,63 GB y el proyector multimodal 991.553.312 bytes (aproximadamente 0,99 GB); con overhead de contexto y caché KV, se recomienda al menos 8-10 GB de VRAM para uso solo de texto y en torno a 12 GB con visión.
+- GPU recomendadas: el autor mide en una RTX 5090 (Blackwell), que es la plataforma objetivo por los kernels FP4 nativos; en Blackwell llama.cpp usa activaciones de 8 bits por defecto para los tensores NVFP4 etiquetados W4A16.
+- Cabe en GPU consumer: sí, en tarjetas Blackwell con suficiente VRAM; en arquitecturas anteriores el soporte de NVFP4 y de los kernels nativos FP4 puede no estar disponible o no ofrecer las mismas prestaciones.
+- Opciones de despliegue: llama.cpp (build b11856 o superior, imprescindible para escalas por tensor NVFP4, etiquetas W4A16 y kernels FP4 nativos; builds anteriores pueden cargar el archivo pero producir salidas incorrectas) y LM Studio (runtime CUDA 12 de llama.cpp 2.64.0, probado con respuestas correctas).
+- Parámetros de ejecución relevantes: `-ngl 999 -fa on --jinja -c 16384 --parallel 1`, `--spec-draft-n-max 7` explícito (el valor por defecto es 3) y `--spec-draft-ngl 999` con el drafter DFlash para decodificación especulativa.
+- Throughput y latencia medidos: 240 tok/s de decodificación sin drafter y 550 tok/s con drafter DFlash en RTX 5090; prefill de 15.346 tok/s con prompt de 512 tokens. Forzar activaciones de 4 bits con `GGML_CUDA_MMQ_PREC=q4` acelera los matmuls por lotes pero sube el KLD a 0,090.
 
 ## Comparativa con modelos similares
 
-| | Este archivo (NVFP4 GGUF) | NVIDIA Q4_K_M oficial | NVIDIA BF16 oficial |
-|---|---|---|---|
-| Tamaño | 5,63 GB | 6,18 GB | no disponible |
-| KLD vs BF16 | 0,038 | 0,102 | 0 (referencia) |
-| Top token igual a BF16 | 93,9 % | 90,0 % | 100 % |
-| Decode con DFlash | 550 tok/s | 526 tok/s | no disponible |
-| Cuantización | NVFP4 + Q8_0 + Q6_K | Q4_K_M | BF16 |
-| Licencia | openmdw-1.1 | openmdw-1.1 | openmdw-1.1 |
-| Disponibilidad | Hugging Face (comunidad) | Hugging Face (NVIDIA) | Hugging Face (NVIDIA) |
+| Modelo | Parametros | Contexto | Formato / tamano | KLD vs BF16 | Licencia | Disponibilidad |
+|---|---|---:|---|---:|---|---|
+| Este archivo (NVFP4 GGUF comunitario) | 7,46 B | 65.536 | GGUF NVFP4 + Q8_0/Q6_K, 5,63 GB | 0,038 | OpenMDW 1.1 | Hugging Face (BennyDaBall) |
+| NVIDIA Nemotron 3.5 Bolt E4B Q4_K_M (oficial) | 7,46 B | 65.536 | GGUF Q4_K_M, 6,18 GB | 0,102 | OpenMDW 1.1 | Hugging Face (nvidia) |
+| NVIDIA Nemotron 3.5 Bolt E4B BF16 (oficial) | 7,46 B | 65.536 | BF16 | referencia | OpenMDW 1.1 | Hugging Face (nvidia) |
+| NVIDIA Nemotron 3.5 Bolt E4B 4GB DFlash (drafter oficial) | no disponible | no disponible | NVFP4 (drafter de decodificación especulativa) | no aplica | OpenMDW 1.1 | Hugging Face (nvidia) |
 
-Como alternativa de categoría similar (modelo cuantizado multimodal de ~7B para llama.cpp) pueden considerarse las cuantizaciones GGUF de Gemma 3 4B/12B o Qwen3-VL, pero no se dispone de datos comparativos publicados en la información proporcionada.
+No se dispone de datos de benchmarks estándar ni de comparaciones con modelos de otros fabricantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Versión no oficial: se trata de una cuantización de la comunidad, no de NVIDIA. La calidad depende del proceso del autor, aunque está documentada con verificación bit-exacta y sumas SHA256.
-- Requiere llama.cpp b11856 o superior: builds antiguos pueden cargar el archivo y generar salida incorrecta sin aviso, un riesgo silencioso en producción.
-- Sesgos: hereda los sesgos del modelo base Gemma 4 E4B y del post-entrenamiento de NVIDIA; no se documentan auditorías de sesgo en la información disponible.
-- Alucinaciones: como todo modelo de lenguaje de este tamaño, puede alucinar; el canal thinking puede mitigar parcialmente errores de razonamiento pero no los elimina.
-- Idioma: el modelo está etiquetado solo como inglés; el rendimiento en castellano u otros idiomas no está garantizado ni evaluado en la información disponible, pese a que la calibración incluyó datos multilingües.
-- Audio experimental: la entrada de audio está marcada como experimental en llama.cpp; no usar en producción sin validación.
-- Rendimiento dependiente de hardware: los kernels FP4 nativos y las activaciones de 8 bits por defecto son específicos de Blackwell; en otras GPUs el rendimiento y posiblemente la calidad numérica pueden variar. Forzar activaciones a 4 bits (`GGML_CUDA_MMQ_PREC=q4`) degrada el KLD a 0,090.
-- Contexto: entrenado a 65.536 tokens; el comando de referencia usa 16.384, y contextos mayores incrementarán los requisitos de VRAM por la caché KV.
-- Licencia openmdw-1.1: es una licencia permisiva tipo OpenMDW, pero conviene revisar sus términos exactos (https://openmdw.ai/license/1-1/) antes de uso comercial.
-- Las mediciones de velocidad son del autor en una RTX 5090 concreta con configuración específica (greedy, thinking on, mediana de 9 peticiones); los resultados en otros entornos pueden diferir.
+- Idioma: el modelo solo declara inglés; el rendimiento en castellano no está garantizado ni documentado.
+- Requiere llama.cpp b11856 o superior: builds anteriores pueden cargar el GGUF pero generar salidas incorrectas por falta de soporte de escalas por tensor NVFP4, etiquetas W4A16 y kernels FP4 nativos.
+- Dependencia de hardware Blackwell para obtener el rendimiento medido; en otras arquitecturas el comportamiento de los kernels FP4 puede diferir y no está documentado por el autor.
+- El modo thinking necesita `--jinja` para parsearse; sin él, el canal de pensamiento de Gemma 4 no se interpreta correctamente.
+- La entrada de audio está marcada como experimental en llama.cpp.
+- Riesgo de alucinación inherente a los modelos de lenguaje; no se han publicado evaluaciones de sesgo ni de robustez en la información disponible.
+- La licencia OpenMDW 1.1 es distinta de las licencias permisivas habituales; conviene revisar sus términos antes de un uso comercial, ya que la model card no detalla restricciones adicionales.
+- El archivo es una cuantización comunitaria, no oficial de NVIDIA; la responsabilidad sobre la fidelidad de los pesos recae en el autor de la cuantización, que documenta verificaciones bit-exactas pero no una evaluación exhaustiva de capacidades.
+- El autor advierte que forzar activaciones de 4 bits con `GGML_CUDA_MMQ_PREC=q4` degrada la calidad (KLD 0,090).
 
 ## Enlaces
 
-- Ficha del modelo cuantizado: https://huggingface.co/BennyDaBall/NVIDIA-Nemotron-3.5-Bolt-E4B-NVFP4-GGUF
-- Modelo base oficial de NVIDIA (BF16): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
+- Modelo en Hugging Face: https://huggingface.co/BennyDaBall/NVIDIA-Nemotron-3.5-Bolt-E4B-NVFP4-GGUF
+- Modelo base BF16 de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
 - Drafter DFlash oficial de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-DFlash
-- Paper Four Over Six (Cook et al., MIT Han Lab + NVIDIA): https://arxiv.org/abs/2512.02010
-- Paper GPTQ (Frantar et al., 2022): https://arxiv.org/abs/2210.17323
+- Paper Four Over Six (arXiv 2512.02010): https://arxiv.org/abs/2512.02010
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
+- Perfil del autor en X: https://x.com/BennyDaBall_OG
+- Apoyo al autor (Ko-fi): https://ko-fi.com/bennydaball

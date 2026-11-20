@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Black - Simple English Wikipedia, the free encyclopedia",
-      "url": "https://simple.wikipedia.org/wiki/Black",
-      "snippet": "No color can have the same level of dark pigmentation without turning itself into black. As the visual perception of an object's color is …"
-    },
-    {
-      "title": "Black - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Black",
-      "snippet": "Black ... Black is a color [2] that results from the absence or complete absorption of visible light. It is an achromatic color, without …"
-    },
-    {
-      "title": "Passez au meilleur de la tech reconditionnée. | Back Market",
-      "url": "https://www.backmarket.fr/fr-fr?msockid=01165319fa8d6967332e44c4fb1368bf",
-      "snippet": "Profitez d'articles reconditionnés sur Back Market, moins cher que le neuf ! Livraison standard offerte - Garantie contractuelle de 12 …"
-    },
-    {
-      "title": "Black people - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Black_people",
-      "snippet": "However, not all people considered \"black\" have dark skin and often additional phenotypical characteristics are relevant, such as …"
-    },
-    {
-      "title": "100+ Shades of Black Color (Names, HEX, RGB, & CMYK Codes)",
-      "url": "https://creativebooster.net/blogs/colors/shades-of-black-color",
-      "snippet": "Mar 5, 2024 · Even though black is a 'non-color', it's still an amazing hue that comes in many different shades. In this article we'll …"
-    }
-  ]
+  "sources": []
 }

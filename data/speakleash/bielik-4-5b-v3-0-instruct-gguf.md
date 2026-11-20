@@ -2,107 +2,91 @@
 
 ## Resumen
 
-Bielik-4.5B-v3.0-Instruct-GGUF es la version cuantizada en formato GGUF del modelo Bielik-4.5B-v3.0-Instruct, desarrollado por SpeakLeash en colaboracion con ACK Cyfronet AGH. Se trata de un modelo causal decoder-only de aproximadamente 4.760 millones de parametros, especializado en polaco y afinado para seguir instrucciones conversacionales. Esta version GGUF esta pensada para inferencia local y despliegue en entornos con recursos limitados mediante llama.cpp y clientes compatibles.
+Bielik-4.5B-v3.0-Instruct-GGUF es la versión cuantizada en formato GGUF del modelo Bielik-4.5B-v3.0-Instruct, desarrollado por SpeakLeash en colaboración con ACK Cyfronet AGH. Se trata de un modelo causal decoder-only de aproximadamente 4.757 millones de parámetros, especializado en el idioma polaco y ajustado por instrucciones, lo que lo orienta a tareas conversacionales y de generación de texto guiada.
 
-El modelo parte de Bielik-4.5B-v2 y ha sido afinado para tareas de instruccion, manteniendo la licencia Apache 2.0, lo que facilita su uso comercial. Su relevancia actual radica en que ofrece un modelo de ~4.5B parametros centrado en un idioma con poca representacion en los grandes modelos multilingues, con un formato de pesos que permite ejecutarlo en hardware de consumo.
+El modelo parte de un fine-tuning sobre Bielik-4.5B-v2 y se distribuye bajo licencia Apache 2.0, lo que facilita su uso comercial y su integración en productos. Esta variante GGUF está pensada para inferencia local y en entornos con recursos limitados, ya que permite ejecutar el modelo mediante llama.cpp, Ollama y otras herramientas compatibles sin necesidad de infraestructura de GPU de gama alta.
 
-La ficha se centra en la version GGUF; los detalles de arquitectura y entrenamiento provienen de la model card del autor y del informe tecnico asociado (arXiv:2505.02550). No se dispone de informacion detallada sobre composicion del dataset ni de resultados de benchmarks en la informacion proporcionada.
+Su relevancia actual radica en que ofrece un modelo de tamaño medio (4.5B), con contexto conversacional en polaco y empaquetado en un formato ampliamente adoptado por el ecosistema open source. La información pública disponible sobre arquitectura interna, longitud de contexto y datos de entrenamiento es limitada en la model card, por lo que varios parámetros se indican como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal decoder-only (según model card) |
+| Arquitectura | Causal decoder-only (transformer) |
 | Parametros totales | 4.757.260.288 |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | q8_0, fp16 (GGUF) |
-| Idiomas soportados | Polaco (pl) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | q8_0 y fp16 (GGUF) |
+| Idiomas soportados | polaco (pl) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF |
-| Modelo base | speakleash/Bielik-4.5B-v3.0-Instruct |
-| Finetuned from | speakleash/Bielik-4.5B-v2 |
-| Tamano del repo | 29.2 GB |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-Segun la model card, Bielik-4.5B-v3.0-Instruct es un modelo causal decoder-only. Se ha obtenido mediante fine-tuning de Bielik-4.5B-v2 para seguir instrucciones conversacionales. La version GGUF es una conversion/cuantizacion del modelo original en safetensors, realizada por SpeakLeash (responsable de la cuantizacion: Remigiusz Kinas).
+La model card describe el modelo como un causal decoder-only, es decir, un transformer autorregresivo estándar orientado a generación de texto. El modelo base Bielik-4.5B-v3.0-Instruct se obtuvo mediante fine-tuning a partir de Bielik-4.5B-v2, y esta variante GGUF es una cuantización del mismo. No se detallan en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO.
 
-No se especifican en la informacion proporcionada el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se detallan innovaciones tecnicas como decodificacion especulativa o attention linear. El autor advierte que los modelos cuantizados presentan una calidad de respuesta reducida y posibles alucinaciones en comparacion con el modelo en float16.
+La innovación principal de esta ficha es el empaquetado en GGUF, que permite su ejecución en llama.cpp y clientes compatibles. La model card advierte explícitamente que los modelos cuantizados muestran una calidad de respuesta reducida y posibles alucinaciones en comparación con el modelo en precisión completa. Se ofrece una plantilla ChatML para Ollama, con la particularidad de que Bielik v3.0 espera `<|im_start|>role` con un espacio después de `<|im_start|>`, y recomienda no añadir el token BOS manualmente porque Ollama lo incorpora desde los metadatos del GGUF.
 
 ## Capacidades
 
-- Generacion de texto en polaco con formato conversacional (chat), mediante plantilla de chat basada en tokens `<|im_start|>` y `<|im_end|>`.
-- Seguimiento de instrucciones (modelo Instruct), adecuado para tareas de pregunta-respuesta y asistencia.
-- Conversacion multi-turno segun la plantilla definida en el Modfile de Ollama.
-- Capacidades de razonamiento y codigo: no confirmadas en la informacion disponible.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: limitadas al polaco segun la etiqueta de idioma (pl).
-- Capacidades especiales (vision, audio, thinking mode): no disponibles.
+- Generación de texto conversacional en polaco, con ajuste por instrucciones.
+- Respuesta a prompts multi-turno mediante plantilla ChatML.
+- Ejecución local mediante llama.cpp, Ollama, LM Studio, GPT4All, KoboldCpp, text-generation-webui y llama-cpp-python.
+- Integración con servidores compatibles con OpenAI a través de llama-cpp-python.
+- Soporte de cuantización q8_0 (calidad cercana a fp16) y fp16.
+- No se documentan en la información disponible capacidades de tool calling, function calling, agentes, visión, audio ni modo de razonamiento explícito.
+- Capacidades multilingües limitadas al polaco según el campo `language` de la model card.
 
 ## Casos de uso
 
-- Asistente conversacional en polaco: el modelo puede gestionar dialogos multi-turno usando la plantilla de chat documentada, adecuado para aplicaciones de atencion al usuario en polaco.
-- Despliegue local en estaciones de trabajo: gracias al formato GGUF y a las cuantizaciones q8_0 y fp16, puede ejecutarse con llama.cpp o clientes compatibles sin depender de la nube.
-- Prototipado rapido con Ollama: el Modfile incluido permite importar el modelo directamente en Ollama para pruebas de chat en local con temperatura recomendada de 0.1.
-- Generacion de texto asistida en polaco: redaccion y resumen de contenido en polaco en pipelines de procesamiento por lotes mediante llama.cpp o llama-cpp-python.
-- Integracion en aplicaciones de escritorio: clientes como LM Studio, GPT4All o text-generation-webui permiten usar el modelo con aceleracion GPU en Windows, Linux y macOS.
-- Investigacion sobre modelos de idiomas de bajos recursos: util como base para estudiar el rendimiento de modelos ~4.5B centrados en polaco y para experimentos de fine-tuning posterior con licencia Apache 2.0.
-- Educacion y demostraciones: su tamano moderado y su licencia permisiva lo hacen apto para entornos docentes donde se quiera mostrar inferencia local de un LLM.
+- Asistentes conversacionales en polaco para atención al cliente: el modelo puede gestionar diálogos multi-turno mediante la plantilla ChatML, adecuado para entornos donde se requiere soberanía lingüística y despliegue local.
+- Generación de contenido editorial en polaco: redacción de borradores, resúmenes y reescritura de textos, ejecutable en estaciones de trabajo sin GPU dedicada gracias al formato GGUF q8_0.
+- Prototipado rápido de aplicaciones de IA en local: uso con Ollama o LM Studio para validar flujos conversacionales antes de escalar a modelos mayores.
+- Procesamiento de texto en entornos con requisitos de privacidad: al ejecutarse localmente, los datos no salen del dispositivo, lo que encaja en sectores regulados.
+- Educación y experimentación: modelo de 4.5B parámetros con licencia Apache 2.0, apropiado para fines docentes y de investigación en PLN (procesamiento de lenguaje natural) polaco.
+- Integración en pipelines de generación aumentada por recuperación (RAG) en polaco: el modelo puede consumir contexto recuperado y generar respuestas, aunque la longitud de contexto no está documentada y debe validarse empíricamente.
+- Chatbots de dominio específico con fine-tuning posterior: al ser Apache 2.0 y estar disponible en safetensors en el modelo base, permite ajuste adicional sobre el modelo original.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma oficial en la informacion proporcionada. Como referencia orientativa, un modelo de ~4.76B parametros en fp16 requiere aproximadamente 9.5 GB solo para pesos, y en q8_0 alrededor de 5 GB; a ello hay que sumar memoria para el contexto y el runtime. Estos calculos son estimaciones, no datos del autor.
-- GPU recomendadas: no especificadas por el autor. Por tamano, el modelo puede ejecutarse en GPU consumer con suficiente VRAM (por ejemplo, RTX 3090/4090 de 24 GB) en fp16, y en GPU con 8-12 GB en q8_0, segun estimacion.
-- Cabe en GPU consumer: si, en funcion de la cuantizacion y del contexto (estimacion, no dato oficial).
-- Opciones de despliegue: llama.cpp (CLI y servidor), text-generation-webui, KoboldCpp, GPT4All, LM Studio, LoLLMS Web UI, Faraday.dev, llama-cpp-python, candle y ctransformers (este ultimo con soporte limitado para modelos recientes).
-- Ollama: soportado mediante importacion con el Modfile documentado.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: aproximadamente 5 GB en q8_0 (4.757M parámetros a ~8 bits) y en torno a 9.5 GB en fp16, sin contar overhead de contexto y caché KV.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090, A100 o H100 para despliegues de mayor concurrencia; el modelo es pequeño y no requiere GPU de centro de datos.
+- Cabe en GPU de consumo: sí, en tarjetas con 8 GB o más en q8_0; en fp16 requiere al menos 12 GB para margen de contexto.
+- Opciones de despliegue: llama.cpp (CLI y servidor), Ollama (con la plantilla ChatML indicada), LM Studio, GPT4All, KoboldCpp, text-generation-webui, llama-cpp-python y candle.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento ni de comparativas oficiales en la informacion proporcionada. Como referencia estructural, se puede comparar con el modelo base del que deriva:
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato |
+|---|---|---|---|---|---|
+| Bielik-4.5B-v3.0-Instruct-GGUF | 4.757M | no disponible | pl | Apache 2.0 | GGUF |
+| Bielik-4.5B-v3.0-Instruct | 4.757M | no disponible | pl | Apache 2.0 | safetensors |
+| Bielik-4.5B-v2 | no disponible | no disponible | pl | Apache 2.0 | no disponible |
 
-| Modelo | Parametros | Contexto | Licencia | Formato |
-|---|---|---|---|---|
-| Bielik-4.5B-v3.0-Instruct-GGUF | 4.757.260.288 | No disponible | Apache 2.0 | GGUF |
-| Bielik-4.5B-v3.0-Instruct | No disponible en la informacion | No disponible | Apache 2.0 | safetensors (modelo base) |
-| Bielik-4.5B-v2 | No disponible en la informacion | No disponible | No disponible | No disponible |
-
-No se proporcionan comparativas con otros modelos de la misma categoria (por ejemplo, otros modelos ~4-5B centrados en un idioma) en la informacion disponible.
+No se dispone en la información proporcionada de datos de benchmarks ni de especificaciones de contexto que permitan una comparación cuantitativa con alternativas de otros desarrolladores.
 
 ## Limitaciones y advertencias
 
-- El autor advierte explicitamente que los modelos cuantizados muestran una calidad de respuesta reducida y posibles alucinaciones; la cuantizacion q8_0 se describe como casi indistinguible de float16 pero con alto uso de recursos y lenta, no recomendada para la mayoria de usuarios.
-- Idioma: el modelo esta etiquetado unicamente para polaco (pl); su rendimiento en otros idiomas no esta garantizado.
-- Longitud de contexto: no documentada en la informacion disponible, lo que limita la planificacion de casos con contexto largo.
-- Sesgos conocidos: no documentados en la informacion proporcionada.
-- Riesgo de alucinacion: presente, especialmente en versiones cuantizadas segun el propio autor.
-- Licencia Apache 2.0: permite uso comercial, pero conviene revisar los terminos completos y las condiciones del modelo base.
-- En produccion, validar las respuestas y no asumir capacidades de tool calling o agentes, no confirmadas en la documentacion.
+- La model card advierte que las versiones cuantizadas presentan calidad de respuesta reducida y posibles alucinaciones; q8_0 es la opción recomendada frente a cuantizaciones más agresivas.
+- El modelo está especializado en polaco; su rendimiento en otros idiomas no está documentado y probablemente sea limitado.
+- No se documentan sesgos conocidos, pero al ser un modelo entrenado principalmente con datos en polaco puede reflejar sesgos culturales y lingüísticos de ese corpus.
+- La longitud de contexto no está especificada, lo que dificulta dimensionar aplicaciones con ventanas largas sin validación empírica.
+- Aunque la licencia Apache 2.0 permite uso comercial, deben revisarse las condiciones del modelo base y de los datos de entrenamiento originales.
+- La plantilla de chat requiere un formato específico (`<|im_start|>role` con espacio) y un manejo cuidadoso del token BOS en Ollama; un formato incorrecto degrada las respuestas.
+- El repositorio ocupa 43.7 GB, lo que implica descargas considerables si se quieren todas las variantes.
 
 ## Enlaces
 
-- Modelo GGUF en Hugging Face: https://huggingface.co/speakleash/Bielik-4.5B-v3.0-Instruct-GGUF
-- Modelo base en Hugging Face: https://huggingface.co/speakleash/Bielik-4.5B-v3.0-Instruct
-- Modelo previo (finetuned from): https://huggingface.co/speakleash/Bielik-4.5B-v2
-- Informe tecnico: https://arxiv.org/abs/2505.02550
+- Modelo en Hugging Face: https://huggingface.co/speakleash/Bielik-4.5B-v3.0-Instruct-GGUF
+- Modelo base: https://huggingface.co/speakleash/Bielik-4.5B-v3.0-Instruct
+- Modelo previo: https://huggingface.co/speakleash/Bielik-4.5B-v2
+- Informe técnico: https://arxiv.org/abs/2505.02550
 - SpeakLeash: https://speakleash.org/
 - ACK Cyfronet AGH: https://www.cyfronet.pl/
-- Discord de SpeakLeash: https://discord.gg/CPBxPce4
 - llama.cpp: https://github.com/ggerganov/llama.cpp
-- text-generation-webui: https://github.com/oobabooga/text-generation-webui
-- KoboldCpp: https://github.com/LostRuins/koboldcpp
-- GPT4All: https://gpt4all.io/index.html
-- LM Studio: https://lmstudio.ai/
-- LoLLMS Web UI: https://github.com/ParisNeo/lollms-webui
-- Faraday.dev: https://faraday.dev/
-- llama-cpp-python: https://github.com/abetlen/llama-cpp-python
-- candle: https://github.com/huggingface/candle
-- ctransformers: https://github.com/marella/ctransformers
 - Ollama: https://ollama.com/
+- Discord de SpeakLeash: https://discord.gg/CPBxPce4

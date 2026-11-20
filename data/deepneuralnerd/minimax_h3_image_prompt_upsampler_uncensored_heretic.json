@@ -20,8 +20,8 @@
     "int8",
     "w4a8",
     "en",
-    "base_model:PrunaAI/P-H3-Image-Comfy",
-    "base_model:finetune:PrunaAI/P-H3-Image-Comfy",
+    "base_model:PrunaAI/P-Image-OSS-Comfy",
+    "base_model:finetune:PrunaAI/P-Image-OSS-Comfy",
     "license:apache-2.0",
     "region:us"
   ],

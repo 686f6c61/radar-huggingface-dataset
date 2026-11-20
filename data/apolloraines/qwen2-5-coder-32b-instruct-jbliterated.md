@@ -2,87 +2,94 @@
 
 ## Resumen
 
-El modelo **Qwen2.5-Coder-32B-Instruct-Jbliterated** es una versión modificada del modelo de código de Qwen, desarrollada por ApolloRaines. Se trata de un modelo de lenguaje de 32.763 millones de parámetros (32,8B) basado en la arquitectura Qwen2, especializado en generación y razonamiento de código. La modificación principal consiste en la aplicación de una técnica denominada **Jbliteration** (ablación en el espacio de Jacobianos), que elimina el comportamiento de rechazo del modelo original de forma quirúrgica, preservando la personalidad, el humor y la expresividad creativa que la abliteración estándar suele degradar.
+ApolloRaines/Qwen2.5-Coder-32B-Instruct-Jbliterated es una variante modificada del modelo Qwen2.5-Coder-32B-Instruct de Alibaba Cloud, en la que se ha eliminado quirúrgicamente el comportamiento de rechazo mediante una tecnica propietaria denominada "jbliteration" (herramienta jBlaze). No se ha realizado ningun tipo de fine-tuning ni entrenamiento adicional: la modificacion opera directamente sobre los pesos del modelo base. El resultado es un modelo "uncensored" que mantiene la arquitectura, tokenizer y longitud de contexto del original.
 
-Este modelo es relevante para desarrolladores e investigadores que necesitan un asistente de código sin restricciones de rechazo, manteniendo las capacidades del modelo base. Se distribuye bajo licencia Apache 2.0, en formatos BF16 (safetensors) y GGUF cuantizado (Q8_0 y Q4_K_M), lo que facilita su despliegue en diferentes entornos de hardware. La model card advierte explícitamente que el modelo no rechazará ninguna solicitud, por lo que su uso debe ser responsable y ético.
+El modelo conserva los 32.763.876.352 parametros del Qwen2.5-Coder-32B-Instruct original y esta pensado, segun el autor, para investigacion en seguridad, red-teaming y analisis defensivo, donde un modelo que rechaza procesar codigo hostil resulta inutil para la tarea. La relevancia actual del modelo radica en su demostracion de que el rechazo es una disposicion aprendida sobre la capacidad, no una barrera previa a ella, y que puede eliminarse sin reentrenar.
+
+La ficha se centra en las caracteristicas tecnicas de esta variante concreta, diferenciando aquello que hereda del modelo base (arquitectura, contexto, capacidades de codigo) de aquello que modifica el autor (eliminacion de rechazos, publicacion de cuantizaciones GGUF propias). El modelo se distribuye bajo licencia Apache 2.0 y unicamente declara soporte para ingles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen2) |
-| Parametros totales | 32.763.876.352 (32,8B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | Heredada del modelo base Qwen2.5-Coder-32B-Instruct (no especificada en la informacion proporcionada) |
-| Tipos de cuantizacion | BF16 (safetensors), GGUF Q8_0, GGUF Q4_K_M |
-| Idiomas soportados | Ingles (segun la model card) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (BF16), GGUF |
+| Arquitectura | Transformer decoder-only (Qwen2, heredada del modelo base) |
+| Parametros totales | 32.763.876.352 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (heredada del modelo base) |
+| Tipos de cuantizacion | BF16 (safetensors), Q8_0 (GGUF), Q4_K_M (GGUF) |
+| Idiomas soportados | en |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors, GGUF |
+| Tamano del repositorio | 120,2 GB |
+| Modelo base | Qwen/Qwen2.5-Coder-32B-Instruct |
+| Descargas | 1.829 |
+| Likes | 0 |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen2, un transformer decoder-only con atención causal estándar, sin mezcla de expertos. El modelo original Qwen2.5-Coder-32B-Instruct fue entrenado por Alibaba Cloud con un enfoque específico en código, incluyendo generación, razonamiento y corrección de errores en múltiples lenguajes de programación. La versión Jbliterated no modifica la arquitectura ni los pesos del modelo base de forma estructural; en su lugar, aplica una intervención post-entrenamiento sobre las activaciones internas.
+La arquitectura es la del Qwen2.5-Coder-32B-Instruct original: un transformer decoder-only de 32.763.876.352 parametros, con tokenizer y contexto identicos. El autor declara explicitamente que esta variante es un "drop-in replacement" del modelo base, por lo que no introduce cambios estructurales. No se especifica en la informacion disponible la composicion del dataset de entrenamiento original ni si hubo RLHF o DPO; esos datos corresponden al modelo base de Qwen y no se reproducen en esta ficha.
 
-La técnica **Jbliteration** (ablación en el espacio de Jacobianos) se describe en la model card como un proceso en tres pasos: primero, minería de conceptos para descubrir el vocabulario de rechazo del modelo mediante continuación forzada por el profesor; segundo, extracción de la lente de Jacobianos, calculando productos vector-Jacobiano (VJPs) por capa para construir una base de rango 16 de direcciones de rechazo causalmente activas; tercero, proyección restringida, donde la dirección de rechazo cruda se proyecta sobre esta base y solo se elimina el componente dentro del subespacio causal. Según el autor, 22 de las 32 capas de direcciones retuvieron la restricción J-space (ratio de proyección >= 0,1) y se extrajeron 7 conceptos de la propia distribución del modelo.
-
-No se proporcionan datos sobre el entrenamiento del modelo base (número de tokens, composición del dataset, uso de RLHF o DPO) en la información disponible.
+La innovacion tecnica de esta variante es el procedimiento de edicion de pesos. El autor distingue "jbliteration" de la abliteration estandar: mientras que la abliteration convencional aplica un enfoque de diferencia de activaciones que elimina la direccion de rechazo junto con capacidades colaterales (voz, creatividad, rendimiento general), jBlaze afirma atacar unicamente las rutas causales de rechazo. El autor cita como evidencia una medicion sobre otro modelo de su coleccion (Sharona, Qwen3.5-27B), donde MMLU paso de 76,84% en el baseline a 77,89% tras seis fases de cirugia y cuantizacion GPTQ W4A16, una ganancia de 1,05 puntos porcentuales. Esa medicion no se ha publicado para este modelo concreto. No se ha realizado entrenamiento por gradientes ni se usa system prompt para suprimir rechazos.
 
 ## Capacidades
 
-- Generacion de codigo en multiples lenguajes de programacion (Python, Java, C++, JavaScript, etc.), heredada del modelo base Qwen2.5-Coder-32B-Instruct.
-- Razonamiento y correccion de errores en codigo, con capacidad para explicar fragmentos y sugerir soluciones.
-- Soporte de tool calling y function calling, segun las capacidades del modelo base (no confirmado explicitamente en la informacion proporcionada, pero el modelo base lo soporta).
-- Capacidad de agentes y razonamiento multi-paso, heredada del modelo base.
-- Capacidad multilingue limitada: la model card indica solo ingles, aunque el modelo base de Qwen soporta varios idiomas; esta version declara unicamente ingles.
-- Sin comportamiento de rechazo: el modelo no se niega a responder solicitudes, incluso aquellas que el modelo original rechazaria. Esto incluye contenido potencialmente delicado o controvertido.
-- Preservacion de la personalidad y el tono conversacional, segun la model card, gracias a la ablacion quirurgica.
+- Generacion de codigo: hereda las capacidades de programacion del Qwen2.5-Coder-32B-Instruct en el que se basa.
+- Generacion de texto y conversacion multi-turno: pipeline declarado como text-generation y conversational.
+- Razonamiento y matematicas: capacidades heredadas del modelo base; no se detallan mediciones propias.
+- Ausencia de rechazos: el modelo no rechaza peticiones, incluidas las relacionadas con codigo malicioso, exploits o analisis de intrusiones.
+- Tool calling / function calling: no se documenta explicitamente en la informacion disponible para esta variante.
+- Soporte de agentes y razonamiento multi-paso: no se documenta explicitamente en la informacion disponible.
+- Capacidades multilingues: solo se declara ingles (`en`); no se confirman otros idiomas.
+- Capacidades especiales: no se declaran modos de pensamiento, vision ni audio.
+- Despliegue ligero: el autor ofrece DeepswapLLM para ejecutar el modelo en precision completa en GPUs con menos VRAM de la necesaria, con streaming de capas entre GPU, RAM y disco, y hasta 4x mas rapido que AirLLM segun su propia afirmacion.
 
 ## Casos de uso
 
-- Asistente de programacion en entornos de desarrollo integrado (IDE): el modelo puede integrarse como autocompletado o chat de codigo, generando funciones, clases y documentacion. Su ventana de contexto larga (heredada del modelo base) permite manejar archivos extensos.
-- Generacion de codigo en pipelines de CI/CD: puede utilizarse para generar tests unitarios, scripts de automatizacion o parches de correccion, aprovechando su capacidad de razonamiento sobre codigo existente.
-- Educacion y formacion en programacion: el modelo puede explicar conceptos, depurar ejemplos y proponer ejercicios, manteniendo un tono natural y sin rechazar preguntas complejas.
-- Investigacion en seguridad ofensiva y analisis de vulnerabilidades: al no tener rechazo, puede generar codigo de explotacion o analisis de malware en entornos controlados y eticos, aunque esto requiere supervisión humana y cumplimiento legal.
-- Desarrollo de agentes autonomos de codigo: su capacidad de tool calling y razonamiento multi-paso permite construir agentes que interactuan con repositorios, ejecutan comandos y resuelven tareas de programacion de forma autonoma.
-- Prototipado rapido de aplicaciones: el modelo puede generar esqueletos de aplicaciones, scripts de prueba y ejemplos de integracion, acelerando el ciclo de desarrollo.
+- Revision de codigo hostil en seguridad defensiva: el modelo puede leer y analizar exploits, malware y artefactos de ataque sin bloquear la peticion, lo que permite a un equipo de respuesta a incidentes procesar muestras que un modelo con guardrails rechazaria. El autor cita el caso del brecha de Hugging Face de julio de 2026, donde APIs comerciales no procesaban los datos del propio ataque.
+- Red-teaming y evaluacion de robustez: util para generar y analizar prompts adversarios y codigo de prueba en laboratorios de seguridad, dado que el modelo no aplica rechazos que interrumpan el flujo de trabajo.
+- Analisis forense de intrusiones: reconstruccion de cadenas de ataque a partir de artefactos del atacante, tarea en la que el modelo base podria negarse a procesar el contenido.
+- Generacion de codigo en produccion: al ser un reemplazo directo del Qwen2.5-Coder-32B-Instruct, puede integrarse en pipelines de desarrollo y CI/CD con el mismo tokenizer y plantilla de chat, usando vLLM o TGI en BF16.
+- Escritura creativa sin restricciones: el autor lo situa como caso de uso legitimo para ficcion y contenido que los guardrails del modelo base filtrarian.
+- Investigacion academica sobre alineacion y refusal: permite estudiar como se comporta un modelo sin la capa de rechazo aprendida, comparandolo con el original.
+- Despliegue en hardware limitado: con la cuantizacion Q4_K_M (19 GB) puede ejecutarse en una GPU de 24 GB o en CPU, y con Q8_0 (33 GB) en GPUs de 48 GB o con offload CPU+GPU.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks especificos para esta version Jbliterated en la informacion proporcionada. El modelo base Qwen2.5-Coder-32B-Instruct tiene resultados publicados por el equipo de Qwen (por ejemplo, en HumanEval, MBPP, Aider), pero no se incluyen en la documentacion de esta version. Se recomienda consultar la ficha del modelo base para obtener datos de rendimiento comparativos.
+No se han publicado resultados de benchmarks especificos de este modelo en la informacion disponible. El autor solo aporta una medicion de retencion de capacidad sobre otro modelo de su coleccion (Sharona, Qwen3.5-27B: MMLU 77,89% frente a 76,84% del baseline), que no es extrapolable a este modelo.
 
 ## Requisitos de hardware
 
-- **BF16 (safetensors)**: requiere aproximadamente 62 GB de VRAM para inferencia en precision completa. Adecuado para GPUs como A100 80GB, H100 80GB o multiples RTX 4090 (24GB) con offload.
-- **GGUF Q8_0**: aproximadamente 33 GB, cabe en GPUs con 48 GB o mas (A6000, A100 40GB, etc.) o en configuraciones CPU+GPU con offload.
-- **GGUF Q4_K_M**: aproximadamente 19 GB, cabe en GPUs de consumo como RTX 4090 (24GB) o RTX 3090 (24GB), y tambien es viable para inferencia solo CPU con suficiente RAM.
-- **DeepswapLLM**: el autor proporciona una herramienta que permite ejecutar el modelo en GPUs mas pequenas de lo necesario, transmitiendo capas entre GPU, RAM y disco, hasta 4 veces mas rapido que AirLLM.
-- **Opciones de despliegue**: vLLM, TGI, transformers (para safetensors); llama.cpp, Ollama (para GGUF).
-- **Latencia y throughput**: no se proporcionan datos especificos en la informacion disponible.
+- BF16 (safetensors, 62 GB): requiere aproximadamente 64 GB de VRAM para inferencia comoda; GPUs como A100 80 GB, H100 80 GB o configuraciones multi-GPU.
+- Q8_0 (GGUF, 33 GB): encaja en GPUs de 48 GB o mas (A6000, A100 40 GB con margen ajustado, L40S 48 GB) o con offload CPU+GPU.
+- Q4_K_M (GGUF, 19 GB): cabe en GPUs consumer de 24 GB (RTX 3090, RTX 4090) y permite inferencia en CPU.
+- Opciones de despliegue: vLLM, TGI y transformers para BF16; llama.cpp y Ollama para GGUF. El autor menciona DeepswapLLM para streaming de capas en GPUs con VRAM insuficiente.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Rechazos | Formatos |
 |---|---|---|---|---|---|
-| Qwen2.5-Coder-32B-Instruct (original) | 32,8B | 131072 (segun documentacion oficial de Qwen) | Apache 2.0 | Safetensors, GGUF | Modelo base con comportamiento de rechazo estandar |
-| Qwen2.5-Coder-32B-Instruct-Jbliterated | 32,8B | Heredado del base (no especificado) | Apache 2.0 | Safetensors, GGUF | Sin rechazo, personalidad preservada |
-| DeepSeek-Coder-33B-Instruct | 33B | 16384 | MIT | Safetensors | Alternativa de codigo con licencia permisiva |
-| CodeLlama-34B-Instruct | 34B | 16384 | Llama 2 license | Safetensors, GGUF | Alternativa de Meta, con restricciones de uso comercial |
+| Qwen2.5-Coder-32B-Instruct-Jbliterated (este) | 32,76 B | no disponible | apache-2.0 | eliminados | safetensors, GGUF |
+| Qwen/Qwen2.5-Coder-32B-Instruct (base) | 32,76 B | no disponible en esta ficha | apache-2.0 | presentes | safetensors |
+| Otras variantes abliterated de Qwen2.5-Coder-32B | no disponible | no disponible | habitualmente apache-2.0 | eliminados (metodo estandar) | safetensors, GGUF |
 
-Nota: los datos de contexto de los modelos comparados provienen de sus respectivas documentaciones publicas, no de la informacion proporcionada para esta version.
+La comparativa con alternativas de la misma categoria (abliterations estandar del mismo modelo base) no puede completarse con datos verificables en la informacion disponible: no se aportan mediciones comparativas de refusal rate ni de retencion de capacidad para este modelo.
 
 ## Limitaciones y advertencias
 
-- **Contenido sin censura**: el modelo ha sido modificado para eliminar todo comportamiento de rechazo. No se negara a generar contenido ilegal, danino o que viole los derechos de terceros. El usuario es el unico responsable de su uso.
-- **Riesgo de alucinacion**: como cualquier modelo de lenguaje, puede generar codigo incorrecto o informacion falsa. Se recomienda validar siempre las salidas en entornos de produccion.
-- **Idioma**: la model card declara solo ingles. El rendimiento en otros idiomas puede ser limitado o no estar soportado.
-- **Sesgos**: el modelo base puede contener sesgos presentes en sus datos de entrenamiento; la ablacion no los elimina y podria incluso amplificarlos al no tener filtros de rechazo.
-- **Restricciones de licencia**: aunque la licencia es Apache 2.0, el uso del modelo para actividades ilegales o no eticas puede violar terminos de servicio de plataformas de despliegue o leyes locales.
-- **Caveat de produccion**: al no tener rechazo, el modelo puede generar contenido inapropiado en aplicaciones orientadas al usuario final. Se recomienda implementar filtros adicionales si se despliega en entornos publicos.
+- Ausencia total de rechazos: el modelo no se negara a ninguna peticion, lo que incluye contenido ilegal, danino o que vulnere derechos de terceros. El propio autor advierte de que los pesos pueden causar dano.
+- Riesgo de alucinacion: no se documenta ninguna mitigacion especifica; se hereda el comportamiento del modelo base.
+- Sesgos: no se documentan evaluaciones de sesgo para esta variante; los sesgos del modelo base no se han medido en la informacion disponible.
+- Idioma: solo se declara ingles; el uso en castellano u otros idiomas no esta soportado oficialmente.
+- Licencia: Apache 2.0 permite uso comercial, pero el autor declina responsabilidad por el uso y exige uso etico y legal; el cumplimiento normativo recae en el desplegador.
+- Metodo propietario: jBlaze es una herramienta propietaria y el procedimiento de edicion no es reproducible ni auditable a partir de la informacion publicada.
+- Evidencia limitada: la unica medicion de retencion de capacidad citada corresponde a otro modelo de la coleccion, no a este.
+- Contexto no verificado: la longitud de contexto no se especifica en la ficha del autor; debe confirmarse contra el modelo base antes de desplegar en produccion.
+- Procedencia: creado y actualizado en 2026 segun los metadatos; conviene verificar la integridad de los pesos antes de usarlos en entornos sensibles.
 
 ## Enlaces
 
-- [Hugging Face - ApolloRaines/Qwen2.5-Coder-32B-Instruct-Jbliterated](https://huggingface.co/ApolloRaines/Qwen2.5-Coder-32B-Instruct-Jbliterated)
-- [Modelo base - Qwen/Qwen2.5-Coder-32B-Instruct](https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct)
-- [Ollama - qwen2.5-coder:32b](https://ollama.com/library/qwen2.5-coder:32b)
-- [NVIDIA NIM - qwen2.5-coder-32b-instruct](https://build.nvidia.com/qwen/qwen2_5-coder-32b-instruct)
-- [DeepswapLLM (herramienta del autor)](https://github.com/apolloraines/DeepswapLLM)
+- Modelo en Hugging Face: https://huggingface.co/ApolloRaines/Qwen2.5-Coder-32B-Instruct-Jbliterated
+- Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct
+- Herramienta jBlaze: https://jblaze.dev
+- Repositorio DeepswapLLM: https://github.com/apolloraines/DeepswapLLM

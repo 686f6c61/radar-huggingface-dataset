@@ -2,102 +2,127 @@
 
 ## Resumen
 
-Wayfinder-qwen-35b-a3b es un ajuste fino del modelo Qwen3.6-35B-A3B, desarrollado por el usuario hweller1, diseñado específicamente para funcionar como subagente de búsqueda de código. El modelo recibe un encargo (brief) de un agente padre, por ejemplo "¿dónde decide el router que una petición coincide con una ruta con variables de path?", y devuelve un informe con rangos `path:start-end` ordenados por relevancia, una razón de una línea para cada uno, un resumen y los huecos que no pudo cubrir. Se trata, por tanto, de un modelo especializado en exploración de repositorios desconocidos mediante herramientas.
+wayfinder-qwen-35b-a3b es un modelo derivado de Qwen/Qwen3.6-35B-A3B, desarrollado por el usuario hweller1, especializado en busqueda de codigo como subagente dentro de pipelines agenticos. El modelo parte de la arquitectura Mixture of Experts (MoE) del base, con 35.951.822.704 parametros totales y aproximadamente 3B parametros activos por token, y se ha post-entrenado mediante LoRA supervisado (SFT) fusionado directamente en los pesos base. El resultado es un modelo que, dado un brief en lenguaje natural sobre un repositorio de codigo, planifica, ejecuta busquedas con herramientas (`grep`, `glob`, `read_file`, `semantic_search`) y devuelve una lista rankeada de rangos `path:start-end` con una razon por entrada, un resumen y los huecos que no pudo resolver.
 
-Arquitectura MoE con 35.951.822.704 parámetros totales y aproximadamente 3B activos por token, heredada íntegramente de Qwen3.6-35B-A3B. El post-entrenamiento consistió en un SFT con LoRA posteriormente fusionado en los pesos base, manteniendo sin cambios el config, el tokenizer y el chat template del modelo original. Los pesos se distribuyen en bf16 safetensors en 26 shards, con un tamaño de repositorio de 71,9 GB.
+El problema que resuelve es concreto: evitar que un agente de codificacion padre tenga que explorar el repositorio por si mismo, delegando la busqueda en un subagente mas barato y rapido. Segun la model card, el modelo fue elegido frente a wayfinder-glimmer-30b (dense) por economia de servicio: una busqueda tarda entre 19,7 s y 43,5 s en una H100 frente a 175,4 s del dense, con un coste GPU por rollout de 0,0150 USD frente a 0,0294 USD. El entrenamiento costo 88 minutos y unos 28 USD.
 
-Su relevancia radica en la especialización: frente a wayfinder-glimmer-30b, entrenado con los mismos ejemplos y receta, este modelo completa una búsqueda en 20-44 segundos en una única H100 y un único stream, frente a los aproximadamente 175 segundos del anterior, a cambio de una recall inferior en 0,036 en el brazo de grep sobre el conjunto de 200 tareas held-out. Es una release de pesos: no incluye datos de entrenamiento, trayectorias ni texto de tareas.
+La relevancia actual radica en su enfoque de "searcher como subagente": el modelo no pretende sustituir al agente principal, sino alimentarlo con archivos relevantes. En la model card se reporta que, con la cascada completa (modelo + busqueda hibrida + rerank), el recall@12 sobre 200 tareas held-out alcanza 0,531, frente a 0,414 del modelo solo y 0,313 de Agents-A1-35B, un baseline agentico del mismo tamano.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE transformer (qwen3_5_moe), derivada de Qwen3.6-35B-A3B |
+| Arquitectura | Mixture of Experts (MoE) transformer, base Qwen3.6-35B-A3B |
 | Parametros totales | 35.951.822.704 |
-| Parametros activos | ~3B por token |
-| Longitud de contexto | 65.536 tokens (valor de `--max-model-len` en el ejemplo de serving; el modelo base no lo especifica en la informacion disponible) |
-| Tipos de cuantizacion | FP8 online (probado); bf16 disponible en safetensors; otras cuantizaciones no evaluadas |
-| Idiomas soportados | Ingles (en) |
-| Licencia | other: apache-2.0-and-muse-model-license |
-| Formato de pesos | safetensors bf16 (26 shards) |
+| Parametros activos | ~3B por token (segun model card) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos publicados en bf16 safetensors) |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0-and-muse-model-license (otra) |
+| Formato de pesos | safetensors (bf16, 26 shards) |
+| Tamano del repo | 71,9 GB |
+| Libreria | transformers |
+| Pipeline | text-generation |
+| Modalidad | image-text-to-text (segun tags) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3.6-35B-A3B, un transformer con mezcla de expertos (MoE) de 35B parámetros totales y unos 3B activos por token. El ajuste se realizó mediante supervisión fina con LoRA (SFT) sobre ejemplos de búsqueda de código, y los adaptadores se fusionaron posteriormente en los pesos base, de modo que el checkpoint resultante es un modelo denso en su formato de pesos pero con el enrutamiento MoE original intacto. No se modificaron ni el config, ni el tokenizer, ni el chat template.
+El modelo hereda la arquitectura MoE de Qwen3.6-35B-A3B: 35B parametros totales con aproximadamente 3B activos por token, lo que reduce el coste computacional por inferencia frente a un dense equivalente. Sobre esta base se aplico un post-entrenamiento mediante LoRA supervisado (SFT), posteriormente fusionado en los pesos base. El config, tokenizer y chat template de Qwen3.6-35B-A3B se mantienen sin cambios, lo que facilita el reemplazo directo en pipelines existentes.
 
-Los datos de entrenamiento no se detallan en la información disponible: la model card indica explícitamente que no se incluyen datos, trayectorias ni texto de tareas. Se sabe que se usaron los mismos ejemplos y la misma receta que wayfinder-glimmer-30b. El modelo fue entrenado y evaluado con su propio razonamiento previo reinyectado en cada petición, y las evaluaciones se hicieron con temperatura 0,85, top_p 0,95, top_k 20 y thinking activado. El head de predicción multi-token (MTP) es el que Qwen distribuyó originalmente y no fue ajustado; su tasa de aceptación medida fue del 70,2% (60.421 de 86.045 tokens borrador) en la prueba de latencia de 12 rollouts, y del 70,5% y 72,5% en dos lanzamientos end-to-end.
+El entrenamiento se realizo con un dataset propio de 1.383 ejemplos, de los cuales se publican 1.372 en un dataset separado con acceso restringido (aprobacion manual): `hweller1/wayfinder-training-data`. Se eliminaron 11 ejemplos antes de la release (8 de un repositorio AGPL-3.0 y 3 generados mediante un host de terceros). El entrenamiento duro 88 minutos con un coste estimado de 28 USD, segun la model card. No se especifica en la informacion disponible el numero de tokens de entrenamiento ni la composicion detallada del dataset. El modelo esta disenado para un bucle agentico con herramientas de busqueda (`grep`, `glob`, `read_file`, `semantic_search` sobre un indice vectorial voyage-code-4) y para emitir un `report` final con la lista rankeada.
 
 ## Capacidades
 
-- Búsqueda de código en repositorios desconocidos mediante herramientas: `grep`, `glob`, `read_file`, `semantic_search` (sobre índice vectorial voyage-code-4) y una herramienta terminal `report`.
-- Planificación multi-paso: razona antes de cada llamada a herramienta y decide cuándo detenerse según la evidencia reunida.
-- Tool calling / function calling con parser `qwen3_coder`; sin él, las llamadas vuelven como texto plano.
-- Razonamiento explícito (thinking mode) con parser `qwen3`; el modelo espera recibir su razonamiento anterior en cada petición.
-- Generación de informes estructurados: rangos `path:start-end` ordenados, razón de una línea por resultado, resumen y lagunas no resueltas.
-- Capacidad de visión heredada del modelo base (tag `image-text-to-text`), aunque no se documenta su uso en el ajuste.
-- Multilingüe: limitado a inglés según la model card.
+- Busqueda de codigo agentica: planifica y ejecuta busquedas multi-paso en repositorios desconocidos usando `grep`, `glob` y `read_file`.
+- Busqueda semantica opcional: puede invocar `semantic_search` sobre un indice vectorial voyage-code-4.
+- Tool calling / function calling: el modelo esta entrenado para emitir llamadas a herramientas y consumir sus resultados en el bucle de exploracion.
+- Razonamiento multi-paso: encadena turnos de exploracion (media de 9,5 turnos por tarea segun la model card) hasta producir un informe.
+- Generacion de informes estructurados: devuelve una lista rankeada de rangos `path:start-end` con una razon de una linea por entrada, un resumen y los gaps no resueltos.
+- Capacidad de subagente: pensado para ser invocado por un agente padre que lee el informe en lugar de buscar por si mismo.
+- Multilingue: solo ingles declarado en la model card.
+- Modalidad image-text-to-text: aparece en los tags del repo, aunque no se detalla su uso en la model card.
 
 ## Casos de uso
 
-- Subagente de exploración en un agente de código padre: el agente principal delega búsquedas concretas ("¿dónde se valida el token JWT?") y lee el informe en lugar de buscar por sí mismo, reduciendo el consumo de contexto del modelo grande.
-- Localización de puntos de configuración en bases de código heredadas: el modelo usa `grep` y `glob` para encontrar dónde se define un parámetro (por ejemplo, el retardo máximo de backoff en reintentos HTTP) y devuelve los rangos exactos.
-- Triaje de incidencias: dado un stack trace o un mensaje de error, el subagente localiza las funciones implicadas y devuelve las rutas candidatas para que el ingeniero las revise.
-- Incorporación a nuevos repositorios: un desarrollador nuevo lanza el subagente para responder preguntas sobre la arquitectura y recibe referencias `path:start-end` verificables en lugar de descripciones genéricas.
-- Búsqueda semántica combinada con búsqueda léxica: cuando el índice voyage-code-4 está disponible, el modelo alterna `semantic_search` con `grep` para cubrir tanto coincidencias exactas como conceptuales.
-- Automatización de revisiones de código: integrado en un pipeline, el subagente localiza las áreas afectadas por un cambio y genera un informe de impacto con rutas y motivos.
-- Construcción de índices de documentación interna: el modelo recorre el repositorio y produce mapas de dónde vive cada concepto, reutilizables por otros agentes.
+- Delegacion de busqueda en agentes de codigo: un agente principal (por ejemplo, dentro de Muse Code) entrega un brief al modelo, que explora el repositorio y devuelve los archivos relevantes. Segun la model card, esto redujo el coste por tarea de 0,342 a 0,195 USD y los tokens leidos por el agente principal de 887K a 441K.
+- Localizacion de codigo para tareas de mantenimiento: dado un brief como "donde decide el router que una peticion coincide con una ruta con variables de path", el modelo devuelve los rangos `path:start-end` relevantes, lo que acelera la orientacion en repositorios desconocidos.
+- Preprocesado para pipelines de CI/CD: integrar el modelo como paso previo que selecciona los archivos que un coder o un revisor debe abrir, reduciendo el contexto necesario en etapas posteriores.
+- Investigacion en repositorios grandes: usar el modelo como searcher sobre 47 repositorios no vistos en entrenamiento (segun la evaluacion held-out) para tareas de exploracion y auditoria.
+- Cascadas de recuperacion de codigo: combinar la lista del modelo con busqueda hibrida (voyage-code-4 + BM25) y rerank (Voyage rerank-3) mediante reciprocal rank fusion; la model card reporta que la cascada eleva el recall@12 de 0,414 a 0,531.
+- Evaluacion de agentes de codigo: usar el modelo como searcher controlado en estudios que miden la tasa de exito de un coder al que se le entregan los archivos encontrados (0,824 con cascada frente a 0,074 sin busqueda, en 34 tareas).
+- Reduccion de coste en orquestacion multi-agente: sustituir busquedas realizadas por el agente principal por llamadas a este subagente, con un coste medido de 0,015 USD por busqueda en GPU (frente a 0,045 USD de equivalente a precio abierto).
 
 ## Benchmarks y rendimiento
 
-| Metrica | Valor |
-|---|---|
-| Recall en brazo grep (200 tareas held-out) | 0,036 por debajo de wayfinder-glimmer-30b |
-| Tiempo de busqueda (1 H100, 1 stream) | 20-44 s (frente a ~175 s de wayfinder-glimmer) |
-| Tasa de aceptacion MTP (12 rollouts) | 70,2% (60.421/86.045 tokens borrador) |
-| Tasa de aceptacion MTP (lanzamiento end-to-end 1) | 70,5% |
-| Tasa de aceptacion MTP (lanzamiento end-to-end 2) | 72,5% |
+Resultados reportados en la model card sobre 200 tareas held-out (47 repositorios no vistos en entrenamiento, 2 semillas por tarea, unidad = tarea):
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. Las cifras de recall y latencia son las reportadas por el autor; los números de retrieval held-out se obtuvieron con MTP desactivado.
+| Paso | Recall@12 |
+|---|---|
+| 1. Lista propia del modelo | 0,414 |
+| 2. Tras merge hibrido (voyage-code-4 + BM25) | 0,493 |
+| 3. Tras rerank (Voyage rerank-3) | 0,531 |
+
+Recall@5 pasa de 0,336 a 0,345 (no significativo); precision@12 cae de 0,416 a 0,303. La cascada anade unos 0,4 s por busqueda.
+
+Comparativa con baseline agentico del mismo tamano (mismas 200 tareas, brazo grep, mismo bucle, prompt y limite de 40 turnos, 2 semillas):
+
+| Searcher | Recall reportado | Recall@5 | Turnos por tarea | Coste por busqueda |
+|---|---|---|---|---|
+| wayfinder-qwen, lista propia | 0,415 [0,377; 0,452] | 0,335 | 9,5 | 0,045 USD (equivalente a precio abierto); 0,015 USD coste GPU medido |
+| Agents-A1-35B | 0,313 [0,280; 0,348] | 0,247 | 34,1 | 0,113 USD (equivalente a precio abierto) |
+
+Diferencia pareada por tarea: +0,102 [+0,078; +0,127] a favor de wayfinder-qwen.
+
+Tasa de exito de codificacion (34 tareas de 8 repositorios, 2 semillas, coder sin herramientas de busqueda que solo abre los archivos entregados):
+
+| Condicion | Pass rate |
+|---|---|
+| Sin busqueda | 0,074 |
+| Con wayfinder-qwen + cascada | 0,824 [0,71; 0,93] |
+| Con los archivos correctos entregados | 0,971 |
+
+En una ejecucion anterior sin cascada, otros tres searchers (Sonnet 5.5 high, GPT-6.1 Sol y Agents-A1-35B) obtuvieron entre 0,85 y 0,87; la model card indica que las diferencias entre searchers no estan resueltas con 34 tareas y que 16 de ellas provienen de un unico repositorio.
+
+Dentro de Muse Code (26 tareas de 18 repositorios, una ejecucion por tarea, agente principal muse-spark-1.3-contributor): el coste por tarea baja de 0,342 a 0,195 USD y los tokens leidos por el agente principal de 887K a 441K; recall@12 pasa de 0,590 a 0,536 (diferencia -0,053 [-0,127; +0,015]), recall@5 es menor y la busqueda mediana es unos 25 s mas lenta. La model card afirma que la mejora es de coste y tokens, no de precision.
 
 ## Requisitos de hardware
 
-- VRAM estimada: en bf16, los 35,95B parámetros ocupan aproximadamente 72 GB, por lo que se necesita al menos una GPU de 80 GB (H100, A100 80GB). Con cuantización FP8 online, la huella se reduce a unos 36 GB de pesos más overhead de KV cache y activaciones.
-- GPU recomendadas: H100 (configuración probada por el autor), A100 80GB. No se documenta funcionamiento en GPU de consumo.
-- No cabe en GPU de consumo convencionales (RTX 4090 de 24 GB) en bf16 ni en FP8 sin cuantizaciones más agresivas no evaluadas.
-- Despliegue: vLLM 0.32.0 con `--quantization fp8`, `--tool-call-parser qwen3_coder`, `--reasoning-parser qwen3`, `--enable-auto-tool-choice`, `--enable-prefix-caching`, `--max-num-seqs 32`, `--gpu-memory-utilization 0.92` y `--language-model-only`. Opcionalmente `--speculative-config '{"method": "qwen3_next_mtp", "num_speculative_tokens": 2}'` para decodificación especulativa.
-- Latencia: 20-44 s por búsqueda en un solo stream con H100 y FP8; el throughput agregado no se documenta.
-- Otras opciones de despliegue (llama.cpp, Ollama, TGI) no han sido evaluadas por el autor.
+- VRAM estimada para inferencia: no disponible de forma explicita. Los pesos publicados son bf16 (26 shards, repo de 71,9 GB), por lo que la inferencia en bf16 requiere del orden de 72 GB de VRAM para los pesos, mas overhead de activaciones y KV cache.
+- GPU recomendadas: la model card reporta mediciones en una H100 (busquedas de 19,7 a 43,5 s). No se detallan otras GPU.
+- GPU de consumo: no disponible. Con 35B parametros totales en bf16 no cabe en GPU de consumo; no se documentan cuantizaciones GGUF ni versiones cuantizadas en la informacion disponible.
+- Opciones de despliegue: libreria transformers (declarada en el repo). No se documentan vLLM, llama.cpp, Ollama ni TGI en la informacion disponible.
+- Latencia y throughput: 19,7 s a 43,5 s por busqueda en una H100 (frente a 175,4 s del dense wayfinder-glimmer-30b). La cascada completa anade unos 0,4 s por busqueda. Coste GPU medido de 0,015 USD por rollout.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Activos | Contexto | Recall (grep, held-out) | Latencia (1 H100) | Licencia |
+| Modelo | Parametros | Tipo | Recall@12 (held-out) | Turnos/tarea | Coste por busqueda | Licencia |
 |---|---|---|---|---|---|---|
-| wayfinder-qwen-35b-a3b | 35,95B | ~3B | 65.536 | referencia - 0,036 | 20-44 s | apache-2.0-and-muse-model-license |
-| wayfinder-glimmer-30b | ~30B (no confirmado) | no disponible | no disponible | referencia | ~175 s | no disponible |
-| Qwen3.6-35B-A3B (base) | 35,95B | ~3B | no disponible | no evaluado como subagente | no disponible | no disponible |
+| wayfinder-qwen-35b-a3b | 35B totales, ~3B activos | MoE | 0,414 (propia); 0,531 (cascada) | 9,5 | 0,015 USD GPU medido; 0,045 USD equiv. abierto | apache-2.0 + muse-model-license |
+| wayfinder-glimmer-30b | 30B | Dense | 0,452 (propia) | no disponible | 0,0294 USD GPU | no disponible en esta ficha |
+| Agents-A1-35B | 35B | no disponible | 0,313 | 34,1 | 0,113 USD equiv. abierto | no disponible en esta ficha |
+| Qwen3.6-35B-A3B (base) | 35B totales, ~3B activos | MoE | no disponible | no disponible | no disponible | no disponible en esta ficha |
 
-La comparativa se limita a los dos modelos de la familia wayfinder y al base, únicos datos disponibles. No se dispone de información sobre alternativas de otros autores en la misma categoria.
+La model card indica que wayfinder-glimmer-30b tiene mayor recall en lista propia (0,452 frente a 0,415), pero wayfinder-qwen fue elegido por economia de servicio (latencia y coste GPU) y por la cascada, que solo se midio en qwen.
 
 ## Limitaciones y advertencias
 
-- La recall es inferior a la de wayfinder-glimmer-30b en 0,036 en el brazo de grep; el autor recomienda leer la sección de evaluación antes de elegir entre ambos.
-- El modelo solo soporta inglés según la model card.
-- Requiere que el cliente reinyecte el razonamiento previo en cada petición bajo la clave `reasoning`; vLLM 0.32.0 descarta `reasoning_content` silenciosamente, lo que produce bloques de pensamiento vacíos. Un cliente que no cumpla este contrato queda fuera de la distribución de entrenamiento.
-- Sin `--tool-call-parser qwen3_coder`, las llamadas a herramientas se devuelven como texto plano y el agente no puede ejecutarlas.
-- El chat template exige que los argumentos de las llamadas a herramienta sean un diccionario.
-- Es imprescindible mantener la línea de convergencia "Report as soon as the evidence covers the brief; do not exhaust the turn budget." en el system prompt, porque los ejemplos de entrenamiento la incluyen.
-- Los esquemas de herramientas y el system prompt de entrenamiento están en `serve/scout_tool_specs.json` y `serve/scout_product_prompt.md` del repositorio de GitHub; desviarse de ellos degrada el comportamiento.
-- Licencia compuesta (apache-2.0-and-muse-model-license): es necesario revisar `LICENSE-MUSE-SPARK-OPEN.md` antes de cualquier uso comercial.
-- No se incluyen datos de entrenamiento ni trayectorias, lo que limita la reproducibilidad y la auditoría de sesgos.
-- No se han publicado evaluaciones en bf16; todas las cifras proceden de FP8.
-- Riesgo de alucinación en las rutas y rangos reportados: el modelo puede citar `path:start-end` inexistentes o desactualizados, por lo que el agente padre debe validar las referencias.
-- El rendimiento con MTP activado solo se comprobó en 12 rollouts y en dos estudios end-to-end, no en el conjunto held-out.
+- El modelo esta especializado en busqueda de codigo como subagente; no es un modelo generalista de proposito multiple.
+- Solo declara soporte de ingles; el rendimiento en otros idiomas no esta documentado.
+- La licencia es compuesta: apache-2.0-and-muse-model-license, con un fichero LICENSE-MUSE-SPARK-OPEN.md adicional. Es necesario revisar las condiciones de la licencia Muse antes de uso comercial.
+- Los resultados de la cascada (recall@12 0,531) dependen de componentes externos: indice vectorial voyage-code-4 y Voyage rerank-3. Los pesos solos dan 0,414.
+- La mejora en recall@5 no es significativa (0,336 a 0,345) y precision@12 cae de 0,416 a 0,303; la lista se alarga a costa de precision.
+- En la evaluacion de Muse Code, recall@5 es menor y la busqueda mediana es unos 25 s mas lenta; la mejora es de coste y tokens, no de precision.
+- La comparativa de pass rate entre searchers (34 tareas, 16 de un solo repositorio) no permite conclusiones firmes segun la propia model card.
+- El dataset de entrenamiento es de acceso restringido (aprobacion manual); no se publican trayectorias ni texto de tareas en el repo de pesos.
+- No se documentan cuantizaciones, contexto maximo ni opciones de despliegue en la informacion disponible.
+- Riesgo de alucinacion en la generacion de rangos `path:start-end` y razones: no se reportan metricas de fidelidad de las razones ni de validez de los rangos.
+- El repo tiene 1.436 descargas y 1 like en el momento de la consulta; es un modelo reciente (creado el 2026-11-03) con poca validacion externa.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/hweller1/wayfinder-qwen-35b-a3b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
-- Modelo hermano: https://huggingface.co/hweller1/wayfinder-glimmer-30b
+- Modelo comparado wayfinder-glimmer-30b: https://huggingface.co/hweller1/wayfinder-glimmer-30b
+- Seccion de comparativa en la model card de glimmer: https://huggingface.co/hweller1/wayfinder-glimmer-30b#why-the-final-results-use-wayfinder-qwen-instead-of-this-model
+- Dataset de entrenamiento (acceso restringido): https://huggingface.co/datasets/hweller1/wayfinder-training-data
 - Licencia Muse Spark Open: https://huggingface.co/hweller1/wayfinder-qwen-35b-a3b/blob/main/LICENSE-MUSE-SPARK-OPEN.md
-- Repositorio GitHub con el harness de referencia: no disponible en la informacion proporcionada (la model card lo menciona pero no incluye la URL)
-- Paper, blog o demo: no disponible en la informacion proporcionada

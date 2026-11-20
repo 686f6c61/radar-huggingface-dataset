@@ -2,90 +2,96 @@
 
 ## Resumen
 
-Zen 6 Nano (2B) es un modelo de lenguaje multimodal y orientado a agentes publicado por Hanzo AI y Zen LM en colaboración con Zoo Labs Foundation bajo licencia Apache 2.0. Su rasgo diferencial es que se distribuye directamente en pesos ternarios de 1,58 bits (espacio de pesos Hadamard ternario), tras un post-entrenamiento con Quantization-Aware Training (QAT) mediante Straight-Through Estimator y optimizadores híbridos Muon + AdamW. Con 1.881.825.088 parámetros totales, se posiciona como un modelo pequeño pensado para ejecución local y en CI/CD sin coste por token.
+Zen 6 Nano (`hanzoai/zen6-nano`) es un modelo de lenguaje multimodal y orientado a agentes, publicado por Hanzo AI en colaboración con Zen LM y Zoo Labs Foundation bajo licencia Apache 2.0. Su rasgo diferencial es que se distribuye como pesos ternarios de 1,58 bits (valores {-d, 0, +d}) post-entrenados directamente en ese espacio mediante Quantization-Aware Training con Straight-Through Estimator, lo que permite ejecutar variantes de 9B, 4B y 2B parámetros en ficheros GGUF de entre 429 MB y 2,68 GB.
 
-La arquitectura combina bloques de atención lineal Gated-DeltaNet (GDN) intercalados con bloques de atención completa Grouped-Query en proporción 3:1, MLPs SwiGLU y un proyector visual multimodal (mmproj), lo que le permite procesar entradas imagen-texto. Los pesos se almacenan en una base ortonormal Sylvester-Walsh-Hadamard que elimina los valores atípicos de activación, permitiendo que los pesos ternarios por grupo de 128 mantengan precisión densa.
+El modelo se ofrece en varias tallas (9B por defecto, más tiers de 4B y 2B para CPU, CI y edge) y en tres formatos propietarios de cuantización: PQ2_0 (2,125 bpw), PTQ1_0 (1,750 bpw) y Q2_0 (2,250 bpw). Está pensado para tool calling multi-paso vía MCP, razonamiento agéntico con recuperación de errores y entrada image-text-to-text gracias a un proyector visual `mmproj` separado.
 
-Su relevancia actual radica en dos factores: por un lado, ofrece tool calling multi-paso con MCP (Hanzo MCP) y recuperación de errores en un paquete de menos de 500 MB en su cuantización más pequeña; por otro, se integra con runtimes de llama.cpp (fork PrismML) y con un servidor compatible con la API de OpenAI, lo que facilita su uso en pipelines de agentes y pruebas de integración sin claves de API.
+La relevancia actual del modelo reside en su propuesta de "zero-token-burn": la variante de 2B en PTQ1_0 ocupa 429 MB y puede servirse en runners de CPU de GitHub Actions para tests de integración de LLM y tool calling sin coste por token ni claves de API. El repositorio declara 1.881.825.088 parámetros reales en safetensors y un tamaño total de 18,6 GB.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida: Gated-DeltaNet (atención lineal) + Grouped-Query Full Attention (3:1), SwiGLU MLP, proyector visual multimodal |
-| Parámetros totales | 1.881.825.088 (~2B) |
-| Parámetros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | Ternaria 1,58-bit: PQ2_0 (2,125 bpw), PTQ1_0 (1,750 bpw), Q2_0 (2,250 bpw); proyector visual en Q8_0 y BF16 |
-| Idiomas soportados | No disponible |
+| Arquitectura | Híbrida: Gated-DeltaNet (atención lineal) intercalada 3x con atención completa GQA 1x, MLP SwiGLU y proyector visual multimodal |
+| Parametros totales | 1.881.825.088 (dato safetensors); el autor describe tiers de 9B, 4B y 2B |
+| Parametros activos | no disponible (no se declara como MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Ternaria 1,58-bit: PQ2_0 (2,125 bpw), PTQ1_0 (1,750 bpw), Q2_0 (2,250 bpw); Q8_0 y BF16 para proyector y cabezas especulativas |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (tipos GGML 142, 143 y 42) |
+| Formato de pesos | GGUF (llama.cpp y hanzo-engine); MLX 2-bit para Apple Silicon; safetensors referenciados en metadatos |
 
 ## Arquitectura y entrenamiento
 
-El backbone es híbrido: intercala tres bloques de atención lineal Gated-DeltaNet (GDN) por cada bloque de atención completa Grouped-Query, con MLPs SwiGLU y un proyector visual multimodal independiente. Los pesos lineales y los embeddings de tokens se almacenan en una base ortonormal de bloques Sylvester-Walsh-Hadamard, con vectores de signo ±1 por canal embebidos en los metadatos KV del GGUF (`prism.hadamard.*`). Esta rotación elimina los valores atípicos de activación, de modo que los pesos ternarios `{-d, 0, +d}` agrupados de 128 en 128 conservan la precisión del modelo denso.
+El backbone es un transformer híbrido que intercala bloques de atención lineal Gated-DeltaNet (tres por cada bloque de atención completa) con atención completa agrupada (GQA) y MLPs SwiGLU. Los pesos lineales y los embeddings de tokens se almacenan en una base ortonormal Sylvester-Walsh-Hadamard, con vectores de signo ±1 por canal embebidos en los metadatos GGUF (`prism.hadamard.*`). Según el autor, esta rotación elimina los outliers de activación y permite que los pesos ternarios por grupo de 128 mantengan precisión densa.
 
-El post-entrenamiento se realizó directamente en el espacio de pesos ternario mediante QAT con Straight-Through Estimator, usando un optimizador híbrido Muon + AdamW. El modelo conserva la atribución upstream a Qwen (Alibaba Cloud), Bonsai-2 (Prism ML) y DFlash / ProCreations, según el fichero NOTICE. No se especifican en la información disponible el número de tokens de entrenamiento ni la composición del dataset.
+El post-entrenamiento se realiza directamente en el espacio ternario mediante QAT con Straight-Through Estimator, usando un optimizador híbrido Muon + AdamW. No se detalla el volumen de tokens de preentrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO. El modelo preserva atribución upstream a Qwen (Alibaba Cloud), Bonsai-2 (Prism ML) y DFlash / ProCreations, lo que sugiere una base derivada de la familia Qwen 3.5 (etiqueta `qwen3_5` en los tags).
 
-Los formatos de producción son tres: PQ2_0 (tipo GGML 142, 34 bytes por cada 128 pesos, 2,125 bpw), orientado a ejecución rápida con SIMD, `dp4a` en CUDA, ROCm y Metal; PTQ1_0 (tipo GGML 143, 28 bytes por cada 128 pesos, 1,750 bpw), el pack denso de trits más pequeño con empaquetado base-3 de 5 trits por byte; y Q2_0 (tipo GGML 42, 18 bytes por cada 64 pesos, 2,250 bpw), compatible con llama.cpp upstream b11556 o superior.
+Entre las innovaciones declaradas figuran Multi-Token Prediction (cabeza especulativa MTP), DFlash2 como draft de difusión por bloques, `SA_SPEC` (lookup por autómata de sufijos) y `GuardedDraft` para decodificación especulativa, todo integrado en el runtime `hanzo-engine` con soporte CUDA, Metal, ROCm, Vulkan y CPU.
 
 ## Capacidades
 
-- Generación de texto conversacional con identidad de pesos nativa de `zen6-nano`, sin sobrecarga de envoltorio en el system prompt y respetando personas personalizadas definidas por el desarrollador (por ejemplo, NPCs de Godot o extractores JSON).
+- Generación de texto conversacional multi-turno con persona nativa sin sobrecarga de system prompt.
 - Tool calling multi-paso con ejecución de `<tool_call>`, síntesis de `<tool_response>`, recuperación de errores y abstención calibrada de herramientas.
-- Integración con Hanzo MCP y herramientas de sistema de ficheros (`fs`), ejecución (`exec`), código (`code`), control de versiones (`git`), pruebas (`test`), `hanzo` y herramientas de dirección de motores de juego.
-- Procesamiento multimodal imagen-texto mediante el proyector visual `mmproj` en Q8_0 o BF16.
-- Razonamiento agéntico multi-paso orientado a tareas de ingeniería y automatización.
-- Compatibilidad con la API `/v1/chat/completions` de OpenAI a través del servidor local de Hanzo.
+- Integración con Hanzo MCP sobre conjuntos de herramientas `fs`, `exec`, `code`, `git`, `test`, `hanzo` y director de motores de juego.
+- Entrada multimodal image-text-to-text mediante proyector visual `mmproj` en Q8_0 o BF16.
+- Capacidades agénticas con razonamiento multi-paso y encadenamiento de llamadas a herramientas.
+- Compatibilidad con API OpenAI `/v1/chat/completions` en el stack local de Hanzo.
+- Respeto de personas de desarrollador personalizadas (por ejemplo, NPCs de Godot o extractores JSON).
+- Decodificación especulativa con MTP, DFlash2, `SA_SPEC` y `GuardedDraft`.
 - Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Atención al cliente automatizada: el modelo puede mantener conversaciones multi-turno con personas configurables por el desarrollador y ejecutar llamadas a herramientas para consultar estado de pedidos o abrir incidencias, con abstención calibrada cuando la herramienta no aplica.
-- CI/CD sin coste por token: cargando `zen6-nano-2b-PTQ1_0.gguf` (~429 MB) en runners de CPU de GitHub Actions, se pueden ejecutar pruebas de integración de extremo a extremo de LLM y tool calling sin claves de API ni facturación por token.
-- Agentes de desarrollo de software: con las herramientas `fs`, `exec`, `code`, `git` y `test`, el modelo puede leer ficheros de workspace, ejecutar pruebas unitarias y sintetizar respuestas de error, integrándose en flujos de asistencia a la programación.
-- NPCs y dirección de juego: las herramientas de dirección de motores de juego y el respeto estricto de personas permiten generar diálogos y comportamiento de NPCs en Godot u otros motores con pesos ligeros.
-- Extracción estructurada de datos: el modelo puede actuar como extractor JSON con formato impuesto por el desarrollador, útil en pipelines de ingestión documental.
-- Procesamiento de documentos con imagen: gracias al proyector visual multimodal, puede recibir pares imagen-texto para tareas de descripción o extracción sobre capturas y documentos escaneados.
-- Despliegue local en estaciones de trabajo: con los packs ternarios de menos de 500 MB, es viable servir el modelo en portátiles y equipos sin GPU dedicada mediante llama.cpp o el motor de Hanzo.
+- **CI/CD sin coste por token**: cargar `zen6-nano-2b-PTQ1_0.gguf` (429 MB) en runners de CPU de GitHub Actions con `llama-server -ngl 0` para ejecutar tests end-to-end de integración de LLM y tool calling sin claves de API ni facturación por token.
+- **Agentes de desarrollo sobre repositorios**: usar las herramientas `fs`, `git`, `exec` y `test` para que el modelo inspeccione ficheros, ejecute tests de workspace y proponga parches, aprovechando la recuperación de errores y la abstención calibrada cuando la herramienta no aplica.
+- **NPCs y lógica de diálogo en videojuegos**: desplegar la variante de 4B (950 MB en PTQ1_0) o 2B (429 MB) dentro de motores como Godot, con personas personalizadas por personaje y latencia baja en hardware de consumo o móvil.
+- **Extracción estructurada de datos**: configurar el modelo como extractor JSON con persona de desarrollador, útil para pipelines de ingesta documental donde el coste por documento es crítico.
+- **Asistentes locales de escritorio**: servir el 9B en PQ2_0 (2,42 GB) con `hanzo-engine` sobre GPU de consumo (CUDA, Metal o Vulkan) para un asistente privado con visión integrada mediante `mmproj`.
+- **Automatización de operaciones MCP**: orquestar tareas de sistema de ficheros, ejecución de comandos y control de repositorios en flujos agénticos sobre el protocolo MCP de Hanzo.
+- **Prototipado multimodal en edge**: usar el tier de 2B junto al proyector visual para clasificación o descripción de imágenes en dispositivos con recursos limitados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma explícita; por el tamaño de los packs (PTQ1_0 ~429 MB, repo total 2,5 GB incluyendo proyectores y variantes), la inferencia cabe holgadamente en GPUs consumer y en CPU.
-- GPU recomendadas: no se especifican modelos concretos; los runtimes cubren CUDA, ROCm y Metal, por lo que son aplicables desde GPUs de gama de entrada hasta A100/H100.
-- Cabe en GPU consumer: sí, por el tamaño de los artefactos ternarios; se puede ejecutar incluso en CPU pura (`-ngl 0`).
-- Opciones de despliegue: fork PrismML de llama.cpp (rama `prism`, con CUDA, Metal y CPU) para PQ2_0, PTQ1_0 y Q2_0; llama.cpp upstream b11556+ para Q2_0; `mlx-lm` con packs MLX de 2 bits en Apple Silicon; servidor local de Hanzo (`hanzo engine serve`) con API compatible con OpenAI; los kernels nativos `hanzo-engine` (CUDA, ROCm, Metal, SIMD CPU) están en desarrollo.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- **VRAM estimada (9B)**: aproximadamente 2,4 GB en PQ2_0, 2,0 GB en PTQ1_0 y 2,6 GB en Q2_0, más 624 MB (mmproj Q8_0) o 922 MB (mmproj BF16) si se usa visión, y 1,57 GB adicionales si se activa el draft DFlash2.
+- **VRAM estimada (4B)**: 1,15 GB en PQ2_0 y 950 MB en PTQ1_0.
+- **VRAM estimada (2B)**: 517 MB en PQ2_0 y 429 MB en PTQ1_0.
+- **GPU recomendadas**: cualquier GPU con soporte CUDA `dp4a` (A100, H100, RTX 4090, RTX 3090) para el tier 9B; Metal en Apple Silicon para los packs MLX 2-bit; ROCm y Vulkan también soportados por `hanzo-engine`.
+- **Consumer GPU**: sí, todas las variantes caben holgadamente en GPUs de consumo; el tier 2B funciona incluso en CPU pura (`-ngl 0`).
+- **Opciones de despliegue**: `hanzo-engine` (CUDA, Metal, ROCm, Vulkan, CPU), llama.cpp upstream b11556 o superior para Q2_0, `mlx-lm` para los packs MLX 2-bit y servidor compatible OpenAI en `http://127.0.0.1:36900/v1`.
+- **Latencia y throughput**: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Cuantización nativa | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Cuantizacion nativa | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Zen 6 Nano (2B) | ~1,88B | No disponible | Ternaria 1,58-bit (GGUF) | Apache 2.0 | Hugging Face, llama.cpp (fork PrismML), MLX |
-| Qwen3 1.7B | ~1,7B | No disponible | BF16, GGUF estándar | Apache 2.0 | Hugging Face, llama.cpp, vLLM |
-| Llama 3.2 1B | ~1,2B | No disponible | BF16, GGUF estándar | Llama 3.2 Community | Hugging Face, llama.cpp, Ollama |
-| Gemma 3 1B | ~1B | No disponible | BF16, GGUF estándar | Gemma Terms | Hugging Face, llama.cpp, Ollama |
+| Zen 6 Nano | 9B / 4B / 2B (1,88B safetensors) | no disponible | Ternaria 1,58-bit (PQ2_0, PTQ1_0, Q2_0) | Apache 2.0 | GGUF en Hugging Face, MLX, hanzo-engine |
+| Qwen 3.5 (base upstream) | no disponible | no disponible | Estándar (GGUF, safetensors) | según variante | Hugging Face |
+| Bonsai-2 (Prism ML) | no disponible | no disponible | no disponible | no disponible | referenciado en NOTICE |
+| llama.cpp Q2_K (modelos densos comparables) | variable | variable | 2-3 bpw estándar | según modelo base | llama.cpp |
 
-La comparación cuantitativa de rendimiento no está disponible; los modelos alternativos se incluyen por rango de parámetros y licencia, no por resultados medidos.
+La comparación cuantitativa con alternativas de la misma categoría no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados en la información proporcionada; al derivar de Qwen y otros upstream, puede heredar sesgos de esos corpus.
-- Riesgo de alucinación: no cuantificado; como modelo de 2B, la fiabilidad en razonamiento complejo y hechos verificables es limitada y requiere validación en producción.
-- Limitaciones de contexto e idioma: la longitud de contexto y los idiomas soportados no están especificados, lo que impide garantizar su idoneidad para tareas multilingües o de contexto largo.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero se debe conservar la atribución upstream a Qwen, Bonsai-2 y DFlash / ProCreations recogida en el fichero NOTICE.
-- Dependencia de runtimes no estándar: PQ2_0 y PTQ1_0 requieren el fork PrismML de llama.cpp; solo Q2_0 funciona en llama.cpp upstream b11556 o superior, lo que limita la portabilidad.
-- Madurez: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, y los kernels nativos `hanzo-engine` están en desarrollo, por lo que la estabilidad en producción no está contrastada.
-- Tool calling: aunque se documenta abstención calibrada, no se han publicado métricas de precisión en la selección de herramientas ni de recuperación de errores.
+- No se documentan sesgos conocidos ni evaluación de alucinación; el modelo declara abstención calibrada de herramientas, pero no hay métricas publicadas que la respalden.
+- La longitud de contexto no se especifica, lo que impide planificar cargas de trabajo con ventanas largas sin pruebas previas.
+- Los idiomas soportados no están declarados; la cobertura multilingüe es una incógnita.
+- La cuantización ternaria de 1,58 bits puede degradar tareas sensibles a precisión numérica (matemáticas, código de baja tolerancia) frente a pesos densos; no hay benchmarks que lo cuantifiquen.
+- El soporte en llama.cpp upstream está limitado a Q2_0 desde b11556; los formatos PQ2_0 y PTQ1_0 requieren `hanzo-engine`, lo que introduce dependencia de un runtime propietario del ecosistema Hanzo.
+- El repositorio declara 1.881.825.088 parámetros en safetensors frente a los tiers de 9B/4B/2B descritos en la model card; conviene verificar el artefacto concreto antes de dimensionar el despliegue.
+- Aunque la licencia es Apache 2.0, se mantienen atribuciones upstream a Qwen, Bonsai-2 y DFlash/ProCreations que deben conservarse en redistribuciones (fichero `NOTICE`).
+- El tamaño del repositorio (18,6 GB) implica descargar artefactos que no se usarán si solo se necesita una variante; conviene descargar ficheros individuales con `hf download`.
+- El modelo está orientado a tool calling y agentes; en producción conviene validar el comportamiento de abstención y recuperación de errores con las herramientas concretas del despliegue.
 
 ## Enlaces
 
-- [Modelo en Hugging Face](https://huggingface.co/hanzoai/zen6-nano)
-- [Hanzo AI](https://hanzo.ai)
-- [Zen LM](https://zenlm.org)
-- [Zoo Labs Foundation](https://zoolabs.io)
-- [Fork PrismML de llama.cpp](https://github.com/PrismML-Eng/llama.cpp)
+- Modelo en Hugging Face: https://huggingface.co/hanzoai/zen6-nano
+- Hanzo AI: https://hanzo.ai
+- Zen LM: https://zenlm.org
+- Zoo Labs Foundation: https://zoolabs.io
+- Motor de inferencia hanzo-engine: https://github.com/hanzoai/engine

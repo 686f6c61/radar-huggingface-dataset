@@ -2,89 +2,111 @@
 
 ## Resumen
 
-OpenThai2.0-ASR-Streaming es un modelo de reconocimiento automático del habla (ASR) en tiempo real especializado en tailandés, desarrollado por el equipo iapp como un ajuste fino (fine-tuning) del modelo base `nvidia/nemotron-3.5-asr-streaming-0.6b`. Está construido sobre la arquitectura FastConformer con decodificador Transducer, implementada en el framework NeMo de NVIDIA, y está diseñado específicamente para transcripción de flujo continuo (streaming) con latencia baja, una capacidad crítica para aplicaciones de subtitulado en vivo, asistentes de voz y transcripción de reuniones.
+OpenThai2.0-ASR-Streaming es un modelo de reconocimiento automatico del habla (ASR) en tailandes con capacidad de transcripcion en tiempo real, desarrollado por iApp Technology en el marco del proyecto OpenThai (anteriormente OpenThaiGPT). Se trata de un fine-tune del modelo base de NVIDIA `nemotron-3.5-asr-streaming-0.6b`, adaptado especificamente para tailandes y publicado bajo licencia OpenMDW-1.1. El modelo es el motor detras del servicio alojado OpenThai ASR Realtime de iApp.
 
-El modelo aborda un problema concreto: la escasez de sistemas ASR de streaming de calidad para tailandés, un idioma con relativamente pocos recursos en comparación con el inglés. Al partir de un modelo base de 0,6 mil millones de parámetros ya entrenado por NVIDIA para streaming, el ajuste fino permite adaptar el sistema al tailandés manteniendo las capacidades multilingües del modelo original (tailandés e inglés).
+El modelo emplea una arquitectura de encoder FastConformer con atencion cacheada (cache-aware streaming) combinada con un decodificador RNN-Transducer y un mecanismo de prompts de idioma. Con 640,4 millones de parametros (0,64B), ofrece cuatro configuraciones de latencia (80, 320, 560 y 1120 ms) seleccionables en tiempo de decodificacion, lo que permite ajustar el equilibrio entre precision y retraso segun el caso de uso.
 
-Con un tamaño de repositorio de 5,1 GB y distribución bajo licencia OpenMDW-1.1, el modelo está pensado para desarrolladores que necesitan integrar transcripción en tiempo real en productos para el mercado tailandés. Su acceso está restringido (gated), lo que requiere aceptar las condiciones en Hugging Face antes de la descarga.
+Su relevancia actual radica en que cubre una necesidad poco atendida: ASR en streaming de calidad para tailandes, un idioma con escasa representacion en modelos abiertos. Frente a la alternativa abierta principal (Typhoon ASR Streaming 0.6B, construida sobre la misma base de NVIDIA), OpenThai2.0 reporta mejor precision en habla leida, YouTube y reuniones, aunque cede en programas de television.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | FastConformer con decodificador Transducer (NeMo) |
-| Parametros totales | 0,6 mil millones (aproximado, según el nombre del modelo base) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | tailandés (th), inglés (en) |
+| Arquitectura | Encoder FastConformer cache-aware streaming + decodificador RNN-Transducer, condicionado por prompt (NeMo `EncDecRNNTBPEModelWithPrompt`) |
+| Parametros totales | 640,4 millones (0,64B): encoder 609,1M (24 capas FastConformer, dimension 1.024), capa de prompt de idioma 4,5M, decodificador RNN-T 16,2M (LSTM de 2 capas, 640 unidades), red conjunta 10,7M |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | Configurable en decodificacion via `att_context_size`: `[56,0]` (80 ms), `[56,3]` (320 ms), `[56,6]` (560 ms), `[56,13]` (1120 ms) |
+| Tipos de cuantizacion | Pesos de 32 bits en los `.nemo` originales; exportacion ONNX en precision completa e int8 disponible en repo separado |
+| Idiomas soportados | Tailandes (th) e ingles (en); prompts `th-TH` (todo en escritura tailandesa) y `th-mix` (palabras inglesas en alfabeto latino) |
 | Licencia | OpenMDW-1.1 |
-| Formato de pesos | NeMo (.nemo), según la librería indicada |
-| Tarea | Reconocimiento automático del habla (ASR) en streaming |
-| Modelo base | nvidia/nemotron-3.5-asr-streaming-0.6b |
-| Acceso | Restringido (gated) |
-| Tamaño del repositorio | 5,1 GB |
+| Formato de pesos | `.nemo` (NeMo); exportacion ONNX disponible en `iapp/OpenThai2.0-ASR-Streaming-ONNX` |
+| Tokenizer | 14.988 piezas: 13.087 multilingues de NVIDIA + 1.901 nuevas en tailandes |
+| Entrada de audio | 16 kHz mono, 128 bandas log-mel; cualquier duracion si se corta en pausas |
+| Tamano del repo | 10,3 GB (dos ficheros `.nemo` de 2,56 GB cada uno) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura FastConformer, una variante eficiente del Conformer que reduce el coste computacional mediante downsampling de las secuencias de entrada, combinada con un decodificador de tipo Transducer (RNN-T). Esta combinación es habitual en sistemas ASR de streaming porque el Transducer permite emitir tokens de forma incremental sin necesidad de esperar a que finalice la locución, lo que se traduce en latencia baja y adecuada para aplicaciones en tiempo real.
+El modelo sigue el diseno de Nemotron 3.5 ASR Streaming de NVIDIA: un encoder FastConformer de 24 capas con atencion cacheada que permite procesar audio de forma incremental sin recalcular el pasado, acoplado a un decodificador RNN-Transducer (dos capas LSTM de 640 unidades) y una red conjunta. La innovacion clave respecto a un RNN-T convencional es la capa de prompt de idioma (4,5M de parametros), que condiciona la salida para que el modelo escriba todo en escritura tailandesa (`th-TH`) o preserve palabras inglesas en alfabeto latino (`th-mix`). El tokenizer se amplio con 1.901 piezas nuevas especificas de tailandes sobre las 13.087 multilingues originales.
 
-El entrenamiento parte del modelo `nvidia/nemotron-3.5-asr-streaming-0.6b`, un sistema ASR de streaming de NVIDIA, y se ha ajustado mediante fine-tuning para el tailandés. No se dispone en la información proporcionada de detalles sobre el volumen de datos de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de aumento de datos o regularización específicas. Tampoco se especifica si se emplearon métodos de destilación o adaptación de dominio. La referencia al paper arXiv:2509.18722 sugiere que existe documentación técnica asociada, pero su contenido no está disponible en la información facilitada.
+El entrenamiento utilizo 12.373 horas de audio en tailandes y 961 horas en ingles (LibriSpeech). No se detalla en la informacion disponible la composicion exacta del corpus tailandes, si hubo etapas de RLHF/DPO (poco habituales en ASR) ni el esquema completo de aumentacion de datos. La informacion tampoco especifica el numero total de pasos de entrenamiento ni la estrategia exacta de congelacion de capas durante el fine-tuning.
 
 ## Capacidades
 
-- Reconocimiento automático del habla en tiempo real (streaming) para tailandés e inglés.
-- Transcripción incremental con emisión de tokens parciales, adecuada para subtitulado en vivo.
-- Soporte multilingüe limitado a tailandés e inglés.
-- Integración con el ecosistema NeMo de NVIDIA para entrenamiento, evaluación y despliegue.
-- Compatible con pipelines de ASR estándar en NeMo (preprocesado de audio, extracción de características, decodificación).
-- No se ha documentado soporte de tool calling, agentes, visión, audio generativo ni modos de razonamiento extendido, dado que es un modelo puramente ASR.
+- Transcripcion de voz a texto en tailandes en tiempo real, con latencia configurable entre 80 y 1120 ms.
+- Transcripcion de audio en ingles (heredada del entrenamiento con LibriSpeech del modelo base).
+- Manejo de code-switching tailandes-ingles mediante prompts de idioma (`th-TH` frente a `th-mix`).
+- Procesamiento de audio de cualquier duracion cuando se segmenta en pausas (comportamiento del servidor incluido).
+- Decodificacion por lotes de ficheros completos o como flujo continuo en streaming.
+- Reconocimiento de habla leida, YouTube, television, reuniones con microfono de conferencia y dialecto isan (con precision variable).
+- Exportacion a ONNX (precision completa e int8) para despliegue fuera de NeMo.
 
 ## Casos de uso
 
-- Subtitulado en vivo para retransmisiones y eventos: el modo streaming permite emitir texto conforme se habla, con latencia baja, lo que lo hace adecuado para subtítulos en directo en tailandés.
-- Transcripción de reuniones y videoconferencias: puede integrarse en herramientas de actas automáticas para equipos que operan en tailandés e inglés, generando transcripciones incrementales sin esperar al final de la sesión.
-- Asistentes de voz y chatbots por voz: al procesar audio en streaming, permite construir interfaces conversacionales que responden con baja latencia en tailandés.
-- Atención al cliente telefónica: integración en centros de contacto para transcribir llamadas en tiempo real y alimentar sistemas de análisis de sentimiento o búsqueda de palabras clave.
-- Accesibilidad para personas con discapacidad auditiva: generación de subtítulos en directo en aplicaciones de vídeo y plataformas educativas para contenido en tailandés.
-- Indexación y búsqueda de archivos de audio: transcripción de grandes volúmenes de grabaciones para hacerlas consultables mediante búsqueda textual, aprovechando el soporte de streaming para procesar flujos largos.
-- Análisis de medios y monitorización: transcripción de emisiones de radio o televisión en tailandés para sistemas de seguimiento de menciones y análisis de contenido.
+- Subtitulado en directo de retransmisiones y videos en tailandes: con 560 ms de latencia el modelo puede generar subtitulos casi simultaneos al habla, adecuado para emisiones de television o streaming web donde el retraso perceptible debe ser minimo.
+- Transcripcion de reuniones y actas automaticas: el rendimiento en LOTUSDIS (20,77% CER a 560 ms, frente a 28,91% de Typhoon) lo hace idoneo para grabar y transcribir reuniones con microfono de conferencia, generando actas o resumenes posteriores.
+- Atencion al cliente por voz en tailandes: integrado en un pipeline de telefonia o VoIP, permite transcribir llamadas en tiempo real para enrutamiento, analitica o asistencia al agente, con el prompt `th-mix` para preservar terminos tecnicos en ingles.
+- Indexacion y busqueda de archivos audiovisuales: procesando ficheros completos a 257x tiempo real en una H100, se puede transcribir un catalogo de videos o podcasts para hacerlo buscable por texto.
+- Asistencia a la accesibilidad: generacion de subtitulos en vivo para personas con discapacidad auditiva en eventos, clases o videoconferencias en tailandes.
+- Analisis de contenido en redes y medios: transcripcion masiva de clips de YouTube (GigaSpeech2, 15,35% CER) para monitorizacion de marca, moderacion o extraccion de temas.
+- Despliegue en edge o servidores modestos: con unos 6,5 GB de RAM en CPU y capacidad de mantener un stream en tiempo real a 560/320 ms con 8 hilos, es viable en servidores sin GPU o en un Apple M3 Max con un solo hilo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+Resultados de tasa de error de caracteres (CER, %; menor es mejor) a 560 ms, comparados con Typhoon ASR Streaming 0.6B (con y sin su modelo de lenguaje de 4 gramos):
+
+| Conjunto de prueba | Tamano | OpenThai2.0-ASR-Streaming | Typhoon ASR Streaming 0.6B | Typhoon + LM 4-gramos |
+|---|---|---:|---:|---:|
+| FLEURS test (habla leida) | 1.021 clips | **8,47** | 11,28 | 11,73 |
+| GigaSpeech2 test (YouTube) | 8.823 clips, 32 grabaciones | **15,35** | 16,33 | 16,62 |
+| TVSpeech (TV y YouTube talk) | 570 clips, 18 videos | 12,41 | **10,84** | 11,05 |
+| LOTUSDIS (reuniones, micro de conferencia) | 5.516 turnos, 11 reuniones | **20,77** | 28,91 | 29,02 |
+| Dialecto isan | 500 clips | 34,90 | **34,15** | 35,79 |
+
+A 1120 ms (`att_context_size` `[56,13]`):
+
+| Conjunto de prueba | Tamano | OpenThai2.0-ASR-Streaming | Typhoon ASR Streaming 0.6B | Typhoon + LM 4-gramos |
+|---|---|---:|---:|---:|
+| FLEURS test (habla leida) | 1.021 clips | **8,36** | 11,32 | 11,64 |
+
+Los intervalos de confianza al 95% publicados en la model card indican diferencias significativas a favor de OpenThai2.0 en FLEURS (−2,82 [−3,15, −2,48]), GigaSpeech2 (−0,98 [−1,31, −0,58]) y LOTUSDIS (−8,15 [−8,88, −7,46]); a favor de Typhoon en TVSpeech (+1,57 [+0,90, +2,52]); y empate estadistico en isan (+0,75 [−0,21, +1,69]). No se han publicado resultados de benchmarks adicionales (por ejemplo, WER en ingles o MMLU) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita; con 0,6 mil millones de parámetros, la inferencia en precisión FP16 requeriría aproximadamente 1,2-2 GB de VRAM, y en cuantización INT8 alrededor de 0,6-1 GB, aunque estos valores son estimaciones basadas en el tamaño y no datos oficiales.
-- GPU recomendadas: no disponible; por tamaño, cabría esperar compatibilidad con GPUs de consumo como RTX 3060, RTX 4060 o superiores, así como GPUs de datacenter (A100, H100) para despliegues de alta concurrencia.
-- Cabe en GPU de consumo: probablemente sí, dado el tamaño reducido del modelo, aunque no se confirma en la documentación disponible.
-- Opciones de despliegue: NeMo (framework nativo), con posibilidad de exportación a TensorRT u otros runtimes compatibles con NeMo; no se documentan integraciones con vLLM, llama.cpp u Ollama, que no son adecuados para modelos ASR de este tipo.
-- Latencia y throughput estimados: no disponibles.
+- VRAM/RAM para inferencia: aproximadamente 2,6 GB para los pesos; unos 6,5 GB de RAM total en CPU.
+- GPU recomendadas: NVIDIA H100 (referencia de rendimiento del autor, ~257x tiempo real en ficheros y ~20 streams simultaneos a 560 ms). No se especifican requisitos para otras GPU, pero por tamano cabe holgadamente en cualquier GPU con 8 GB o mas (RTX 3070/4060 en adelante).
+- Cabe en GPU de consumo: si, dado el tamano de 0,64B y 2,6 GB de pesos; una RTX 4090 o RTX 3090 lo ejecutaria con amplio margen.
+- CPU: un servidor limitado a 8 hilos procesa ficheros a ~4x tiempo real y mantiene un stream en vivo a 560 y 320 ms.
+- Apple Silicon: un M3 Max con 1 hilo procesa ficheros a ~3x tiempo real y mantiene un stream en vivo a 560 y 320 ms.
+- Opciones de despliegue: NeMo (libreria nativa, ficheros `.nemo`); ONNX Runtime mediante la exportacion int8 o precision completa del repo `iapp/OpenThai2.0-ASR-Streaming-ONNX`. No se mencionan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplicables a un modelo ASR NeMo).
+- Latencia y throughput: latencias de 80, 320, 560 y 1120 ms configurables; throughput de referencia de ~257x tiempo real en H100 y ~20 streams concurrentes a 560 ms.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Idiomas | Contexto | Licencia | Streaming | Disponibilidad |
-|---|---|---|---|---|---|---|
-| OpenThai2.0-ASR-Streaming | ~0,6 B | th, en | no disponible | OpenMDW-1.1 | Sí | Gated en Hugging Face |
-| nvidia/nemotron-3.5-asr-streaming-0.6b | ~0,6 B | Multilingüe (según modelo base) | no disponible | no disponible | Sí | Hugging Face (NVIDIA) |
-| Alternativas ASR para tailandés | no disponible | th | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Idiomas | Latencia streaming | CER medio (560 ms) | Licencia | Disponibilidad |
+|---|---|---:|---|---:|---|---|
+| OpenThai2.0-ASR-Streaming | 0,64B | th, en | 80/320/560/1120 ms | 18,38 (media de 5 sets) | OpenMDW-1.1 | Hugging Face (NeMo + ONNX) |
+| Typhoon ASR Streaming 0.6B | 0,6B | th, en | streaming (configurable) | No disponible como media; ver tabla de benchmarks | No disponible en la informacion | Hugging Face |
+| Nemotron 3.5 ASR Streaming 0.6B (base) | 0,6B | multilingue (incluye en) | configurable | No disponible | OpenMDW-1.1 | Hugging Face (NVIDIA) |
 
-No se dispone de información suficiente para comparar con alternativas específicas de ASR en tailandés (como modelos de Whisper ajustados o sistemas de Pathumma); se indica "no disponible" en ausencia de datos verificables.
+Frente a Typhoon, el modelo de iApp es mas preciso en habla leida, YouTube y reuniones, y menos preciso en TV talk shows; en isan empatan. Frente a su base Nemotron, la diferencia principal es la adaptacion al tailandes (tokenizer ampliado, 12.373 horas de audio tailandes y prompts de idioma), aunque la model card no publica una comparacion numerica directa con el modelo base.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados en la información disponible; al ser un ajuste fino sobre un modelo base entrenado mayoritariamente con datos en inglés y otros idiomas, puede presentar sesgos acústicos y léxicos hacia determinados dialectos o registros del tailandés.
-- Riesgo de alucinación: los modelos Transducer pueden generar transcripciones plausibles pero incorrectas en segmentos con ruido, solapamiento de hablantes o audio de baja calidad.
-- Limitaciones de contexto: no se especifica la ventana de contexto; en streaming, la latencia y la precisión dependen de la configuración de chunking, que no está documentada.
-- Restricciones de licencia: la licencia OpenMDW-1.1 puede imponer condiciones para uso comercial; es necesario revisar los términos completos antes de desplegar en producción. El acceso está restringido (gated), lo que requiere aceptación de condiciones en Hugging Face.
-- Caveats para producción: no se han publicado métricas de WER (Word Error Rate) ni evaluaciones comparativas, lo que dificulta estimar su rendimiento real frente a alternativas. La integración requiere el ecosistema NeMo, lo que puede limitar la portabilidad a otros frameworks.
-- Idiomas: solo tailandés e inglés; no se garantiza un rendimiento adecuado en otros idiomas.
+- Al decodificar una grabacion completa como un unico stream, el modelo pierde palabras tras pausas silenciosas; es necesario cortar en pausas como hace el servidor incluido.
+- El rendimiento en dialecto isan es bajo (34,90% CER), similar al de Typhoon pero muy superior al de habla estandar; no es fiable para ese dialecto en produccion.
+- El rendimiento en TV talk shows es inferior al de Typhoon (12,41% frente a 10,84%), por lo que en ese dominio concreto la alternativa de Typhoon puede ser preferible.
+- El modelo esta especializado en tailandes e ingles; no debe esperarse calidad en otros idiomas pese a la base multilingue de NVIDIA.
+- La licencia OpenMDW-1.1 impone condiciones especificas; debe revisarse el texto completo (enlace en la model card) antes de uso comercial. La model card indica `license: other` con `license_name: openmdw-1.1`.
+- Riesgo de alucinacion y errores de transcripcion en audio con ruido, solapamiento de hablantes o acentos no representados en el corpus de entrenamiento; no se documentan sesgos especificos.
+- No se detalla la composicion del corpus de entrenamiento tailandes, lo que dificulta evaluar la cobertura de dominios y acentos.
+- El modelo no realiza diarizacion de hablantes ni puntuacion automatica segun la informacion disponible.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/iapp/OpenThai2.0-ASR-Streaming
-- Modelo base: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
-- Paper de referencia: https://arxiv.org/abs/2509.18722
-- Framework NeMo: https://github.com/NVIDIA/NeMo
-- Licencia OpenMDW-1.1: no disponible en la información proporcionada (consultar en la ficha de Hugging Face)
+- Exportacion ONNX: https://huggingface.co/iapp/OpenThai2.0-ASR-Streaming-ONNX
+- Modelo base NVIDIA: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
+- Modelo comparable Typhoon: https://huggingface.co/typhoon-ai/typhoon-asr-streaming-nemotron-0.6b
+- Servicio alojado OpenThai ASR Realtime: https://iapp.co.th/docs/speech/speech-to-text/realtime
+- Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/
+- Paper de referencia (arXiv): https://arxiv.org/abs/2509.18722

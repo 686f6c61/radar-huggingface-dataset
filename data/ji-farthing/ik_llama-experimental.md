@@ -2,96 +2,101 @@
 
 ## Resumen
 
-`ji-farthing/ik_llama-experimental` es una conversión a GGUF del checkpoint `nvidia/Qwen3.8-27B-NVFP4`, un modelo de lenguaje de 27.320.698.049 parámetros derivado a su vez de `Qwen/Qwen3.8-27B`. El autor del repositorio, ji-farthing, no entrena ni modifica los pesos: lo que hace es reempaquetar los pesos NVFP4 originales en el formato `NVFP4_KS` propio de `ik_llama.cpp`, preservando las escalas de entrada de activación de cada tensor cuantizado. El resultado es un artefacto de inferencia listo para cargar con `ik_llama.cpp`, no con `llama.cpp` de upstream, que carece del tipo `NVFP4_KS`.
+`ji-farthing/ik_llama-experimental` no es un modelo entrenado, sino un repositorio de validación con conversiones GGUF experimentales para distintas versiones de [ik_llama.cpp](https://github.com/ikawrakow/ik_llama.cpp), el fork de llama.cpp mantenido por Ikawrakow. Los ficheros sirven para probar tipos de cuantización nuevos (`NVFP4_KS`, `F8_E4M3_KS`, `F8_E4M3_B128`) sobre checkpoints de terceros: principalmente la familia Qwen3 y Qwen3.8 de Alibaba, además de un modelo LFM2.5 de Liquid AI.
 
-La relevancia de este repositorio es fundamentalmente de infraestructura: demuestra un pipeline de conversión que conserva las escalas de activación FP4 a través de `convert_hf_to_gguf.py` y `llama-quantize COPY`, algo que la rama principal de `ik_llama.cpp` todavía no soporta. Para quien despliegue modelos Qwen3.8 en hardware Blackwell (por ejemplo, GB10), este fichero permite ejecutar los pesos NVFP4 originales sin recuantizar, con precisión de activación seleccionable entre 4 y 8 bits.
+El propósito es puramente técnico: validar pull requests abiertos del proyecto ik_llama.cpp. El autor advierte explícitamente de que los ficheros son experimentales, pueden dejar de funcionar sin aviso y no constituyen un repositorio de modelos de propósito general. Buena parte de ellos solo cargan con una PR concreta ([#2918](https://github.com/ikawrakow/ik_llama.cpp/pull/2918)), no con la rama principal.
 
-La licencia es Apache-2.0, heredada del checkpoint de NVIDIA y, en última instancia, del modelo Qwen subyacente. El repositorio ocupa 21,5 GB y acumula 84 descargas y 1 like en el momento de la consulta. No hay información publicada sobre idiomas soportados ni sobre el pipeline de la tarea.
+El repositorio ocupa 418,5 GB y agrupa pesos de modelos base de entre 8B y 30B parámetros totales (27,3B en el checkpoint safetensors asociado). La licencia global es Apache-2.0, aunque cada fichero hereda la licencia del checkpoint de origen, y el fichero derivado de LFM2.5 queda bajo LFM Open License v1.0. Su interés actual es servir de referencia para quienes trabajan con cuantizaciones FP8 (E4M3) y NVFP4 en hardware Blackwell (RTX 50, GB10).
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | transformer híbrido con capas SSM (según la presencia de tensores `ssm_out` en 46 capas y atención en 15 capas; detalles completos no disponibles) |
-| Parámetros totales | 27.320.698.049 |
-| Parámetros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | NVFP4_KS (193 tensores), Q8_0 (208 tensores), BF16 (105 tensores), F32 (553 tensores) |
-| Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (con tipos `NVFP4_KS`, `Q8_0`, `BF16`, `F32`) |
+| Arquitectura | Depende del checkpoint de origen: transformer denso (Qwen3-8B, Qwen3.8-27B) y MoE (Qwen3-30B-A3B, LFM2.5-8B-A1B) |
+| Parámetros totales | 27.320.698.049 (dato safetensors del repo); el resto de ficheros varían entre ~8B y ~30B según el modelo base |
+| Parámetros activos | No disponible de forma agregada; en los modelos MoE de origen (Qwen3-30B-A3B, LFM2.5-8B-A1B) el patrón del nombre indica ~3B y ~1B activos respectivamente |
+| Longitud de contexto | No disponible |
+| Tipos de cuantización | `NVFP4_KS`, `F8_E4M3_KS`, `F8_E4M3_B128`, `Q8_0`, BF16, F32 |
+| Idiomas soportados | No disponible |
+| Licencia | Apache-2.0 (global); LFM Open License v1.0 para el fichero LFM2.5 |
+| Formato de pesos | GGUF (compatible solo con ik_llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El checkpoint base es `nvidia/Qwen3.8-27B-NVFP4`, una cuantización NVFP4 de `Qwen/Qwen3.8-27B` realizada con ModelOpt en modo `MIXED_PRECISION`. La estructura que se deduce de los tensores del GGUF indica un transformer híbrido: 46 capas contienen tensores `attn_qkv`, `attn_gate` y `ssm_out`, lo que apunta a bloques con componentes de espacio de estados, mientras que 15 capas contienen `attn_q`, `attn_k`, `attn_v` y `attn_output`, correspondientes a atención clásica. Los pesos NVFP4 del checkpoint se conservan sin recuantizar y cada uno mantiene su escala de entrada de activación.
+Este repositorio no entrena ningún modelo: solo convierte y reempaqueta checkpoints ya existentes en los formatos de cuantización propios de ik_llama.cpp. El proceso documentado para `Qwen3.8-27B-NVFP4_KS.gguf` es representativo: primero se ejecuta `convert_hf_to_gguf.py` (conversión de llama.cpp en el commit `f7591a6`) con `--fp8-as-q8`, porque ik_llama.cpp no tenía tipo FP8 nativo, de modo que las capas FP8 del checkpoint ModelOpt `MIXED_PRECISION` quedan almacenadas como `Q8_0` (tensores `attn_qkv`, `attn_gate` y `ssm_out` en 46 capas, y `attn_q`, `attn_k`, `attn_v` y `attn_output` en 15 capas). Después se aplica `llama-quantize ... COPY` con ik_llama.cpp en el commit `f415f91`, que reescribe cada peso NVFP4 como `NVFP4_KS` sin recuantizar y conserva su `.input_scale`.
 
-El proceso de conversión tiene dos etapas documentadas por el autor. Primero, `convert_hf_to_gguf.py` (con el directorio `conversion/` de `llama.cpp` en el commit `f7591a6`) se ejecuta con `--fp8-as-q8`, de modo que las capas FP8 del checkpoint ModelOpt se almacenan como Q8_0 al no existir tipo FP8 en `ik_llama.cpp`. Segundo, `llama-quantize ... COPY` con `ik_llama.cpp` en el commit `f415f91` (rama `filament/nvfp4ks-input-scale-main`, una PR a `ik_llama.cpp`) escribe cada peso NVFP4 como `NVFP4_KS` sin alterar filas y conservando su `.input_scale`. Las capas MTP no se convierten. No se dispone de información sobre el dataset de entrenamiento, el número de tokens, ni sobre etapas de RLHF o DPO del modelo original.
+El fichero resultante contiene 193 tensores `NVFP4_KS`, 208 `Q8_0`, 105 BF16, 553 F32 y 193 input scales; las capas MTP no se convierten. La innovación técnica reside en el propio formato: `NVFP4_KS` mantiene la escala de activación por peso del checkpoint original, lo que permite a ik_llama.cpp usar activaciones de 4 bits (`--nvfp4-precision auto`, por defecto en RTX 50 y GB10) u 8 bits (`--nvfp4-precision int8`). Para los ficheros FP8 se emplean dos layouts alternativos, `F8_E4M3_KS` y `F8_E4M3_B128`, más un head MTP en `F8_E4M3_B128` en el caso de `Qwen3.8-Flash-Next-NVFP4_KS-F8.gguf`. No hay información sobre datos de entrenamiento, RLHF o DPO, porque no se entrena nada aquí.
 
 ## Capacidades
 
-- Generación de texto conversacional, según la etiqueta `conversational` del repositorio.
-- Inferencia con pesos NVFP4 nativos y escalas de activación preservadas, con precisión de activación seleccionable (`auto` para 4 bits, `int8` para 8 bits).
-- Compatibilidad con endpoints (`endpoints_compatible`), lo que sugiere integración en servicios de inferencia.
-- Soporte de tool calling, agentes o razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponibles.
-- Capacidades especiales (modo thinking, visión, audio): no disponibles en la información proporcionada.
+- Las capacidades funcionales son las de los modelos base (Qwen3, Qwen3.8, LFM2.5), no las de este repositorio: generación de texto, razonamiento, código y matemáticas según el checkpoint original.
+- Los ficheros están pensados como material de validación de PRs de ik_llama.cpp, no como artefactos de despliegue.
+- Compatibilidad con endpoints declarada en los tags (`endpoints_compatible`), pero supeditada a que el runtime ik_llama.cpp cargue el formato.
+- Soporte de tool calling, agentes, modo thinking o visión: no disponible en la información proporcionada para estos ficheros concretos.
+- Multilingüismo: no disponible.
+- Capacidad especial: preservación de las input scales NVFP4 del checkpoint original y decodificación con precisión de activación seleccionable en tiempo de ejecución.
 
 ## Casos de uso
 
-- Despliegue en hardware Blackwell con `ik_llama.cpp`: el fichero está pensado para cargarse mediante mmap en GPUs Blackwell (por ejemplo, GB10), donde `--nvfp4-precision auto` aprovecha las escalas de entrada para activaciones de 4 bits. Es el escenario principal y el único validado por el autor.
-- Evaluación de precisión de activación: permite comparar en producción el efecto de `--nvfp4-precision auto` frente a `int8` sobre la perplejidad, con la garantía de que el fichero de log-probabilidades generado con `--kl-divergence-base` es idéntico al del fichero mainline en `ik_llama.cpp`.
-- Investigación sobre formatos de cuantización: sirve como referencia reproducible de un pipeline que preserva escalas de activación FP4 a través de la conversión a GGUF, útil para quien trabaje en herramientas de cuantización.
-- Servicio conversacional autoalojado: la etiqueta `conversational` y la compatibilidad con endpoints permiten montar una API de chat sobre `ik_llama.cpp` con pesos de 4 bits, reduciendo el espacio de almacenamiento frente a un checkpoint BF16 equivalente.
-- Reproducción de resultados de perplejidad: el autor documenta la configuración exacta (`wiki.test.raw`, `-c 512 --chunks 8`, GB10) para replicar las cifras de PPL publicadas.
-- Base para comparativas de cuantización: al conservar los pesos NVFP4 originales sin recuantizar, el fichero permite aislar el efecto del formato de contenedor (GGUF frente a safetensors) del efecto de la cuantización en sí.
+- Validación de PRs de ik_llama.cpp: cargar `fp8/Qwen-Qwen3-30B-A3B-FP8-B128.gguf` o `fp8/nvidia-Qwen3-8B-FP8-KS.gguf` con la PR #2918 aplicada para comprobar que los tipos `F8_E4M3_KS` y `F8_E4M3_B128` se deserializan y ejecutan correctamente antes de fusionar cambios.
+- Pruebas de regresión de cuantización: comparar la perplejidad en wikitext-2 (`wiki.test.raw`, `-c 512 --chunks 8`) entre el fichero convertido y el original en ik_llama.cpp, como hace el autor con `--kl-divergence-base` para verificar que el fichero de log-probabilidades codificadas es idéntico.
+- Evaluación de NVFP4 en hardware Blackwell: desplegar `Qwen3.8-27B-NVFP4_KS.gguf` en una RTX 50 o GB10 con `--nvfp4-precision auto` frente a `int8` y medir el impacto en perplejidad y velocidad de las activaciones de 4 bits.
+- Desarrollo de kernels de cuantización: usar los ficheros como fixtures para probar nuevas rutas de cómputo (mmap, input scales, layouts KS frente a B128) sin tener que reconvertir checkpoints de 27B cada vez.
+- Reproducción de conversiones: seguir la receta documentada (`convert_hf_to_gguf.py` con `--fp8-as-q8` y `llama-quantize ... COPY`) sobre otros checkpoints ModelOpt `MIXED_PRECISION` para generar variantes propias con los mismos tipos.
+- Verificación de integridad de descargas: los ficheros FP8 publican hash sha256, lo que permite validar la descarga en pipelines automatizados de CI antes de ejecutar las pruebas de carga.
 
 ## Benchmarks y rendimiento
 
-El autor publica únicamente perplejidad en wikitext-2 (`wiki.test.raw`, `-c 512 --chunks 8`, hardware GB10):
+El único dato publicado es la perplejidad en wikitext-2 del fichero `Qwen3.8-27B-NVFP4_KS.gguf`, medida en GB10 con `-c 512 --chunks 8`:
 
-| Configuración `--nvfp4-precision` | Perplejidad |
+| Configuración `--nvfp4-precision` | Perplejidad (wikitext-2) |
 |---|---|
-| `auto` | 6.7052 ± 0.36538 |
-| `int8` | 6.6061 ± 0.35988 |
+| `auto` (activaciones 4 bits) | 6,7052 ± 0,36538 |
+| `int8` (activaciones 8 bits) | 6,6061 ± 0,35988 |
 
-No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks en la información disponible.
+El autor indica que, con ambas configuraciones, el fichero de log-probabilidades codificadas generado con `--kl-divergence-base` es idéntico al del fichero mainline en ik_llama.cpp, lo que sugiere que la conversión a `NVFP4_KS` no altera la distribución de salida de forma medible en esa prueba. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita; el repositorio ocupa 21,5 GB, lo que da una cota inferior del espacio de pesos en disco y, aproximadamente, de la memoria necesaria para cargar el modelo completo.
-- GPU recomendadas: hardware Blackwell, dado que el autor valida el uso de `--nvfp4-precision` en una GB10 y el soporte NVFP4 es específico de esa generación.
-- ¿Cabe en GPU de consumo? No disponible; no se documenta compatibilidad con RTX 4090 u otras GPU consumer.
-- Opciones de despliegue: exclusivamente `ik_llama.cpp` (el autor indica que `llama.cpp` no tiene el tipo `NVFP4_KS`). No se mencionan vLLM, TGI, Ollama ni otras alternativas.
+- VRAM estimada: no disponible de forma explícita. Como referencia de orden de magnitud, un checkpoint de ~27B en NVFP4 con capas Q8_0 y BF16/F32 auxiliares ocupa del orden de decenas de GB; los ficheros de 8B en FP8 quedan en un rango mucho menor. El repo completo son 418,5 GB, pero cada fichero se descarga por separado.
+- GPU recomendadas: RTX 50 y GB10 son las plataformas mencionadas para `--nvfp4-precision`; el resto de ficheros FP8 no tienen hardware objetivo documentado.
+- GPU de consumo: no confirmado en la información disponible; los modelos base de 8B en FP8 son candidatos razonables, pero el repositorio no publica requisitos.
+- Despliegue: exclusivamente ik_llama.cpp (carga por mmap). Los ficheros `NVFP4_KS` no cargan en llama.cpp, que carece de ese tipo; varios ficheros FP8 requieren la PR #2918 y se convirtieron con la PR #2919.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
+| Modelo / artefacto | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ji-farthing/ik_llama-experimental` | 27.320.698.049 | no disponible | GGUF (NVFP4_KS + Q8_0 + BF16 + F32) | Apache-2.0 | Solo `ik_llama.cpp`; escalas de activación preservadas |
-| `nvidia/Qwen3.8-27B-NVFP4` | 27.320.698.049 (según modelo base) | no disponible | safetensors (ModelOpt MIXED_PRECISION) | Apache-2.0 | Checkpoint de origen; requiere stack NVIDIA |
-| `Qwen/Qwen3.8-27B` | 27.320.698.049 (según modelo base) | no disponible | safetensors | Apache-2.0 | Modelo original sin cuantizar |
+| `ji-farthing/ik_llama-experimental` | ~8B–30B según fichero (27,3B en safetensors) | No disponible | GGUF con tipos propios de ik_llama.cpp | Apache-2.0 / LFM Open v1.0 | Hugging Face, solo ik_llama.cpp |
+| `Qwen/Qwen3-30B-A3B-FP8` | 30B totales, ~3B activos (MoE) | No disponible | Safetensors FP8 | Apache-2.0 | Hugging Face, ecosistema estándar |
+| `nvidia/Qwen3.8-27B-NVFP4` | 27B | No disponible | Safetensors NVFP4 (ModelOpt) | No disponible | Hugging Face, requiere runtime compatible con NVFP4 |
+| `RedHatAI/Qwen3-30B-A3B-FP8-dynamic` | 30B totales, ~3B activos (MoE) | No disponible | Safetensors FP8 dinámico | No disponible | Hugging Face, vLLM y similares |
 
-No se dispone de datos de rendimiento comparativo entre estas variantes más allá de la perplejidad citada.
+La diferencia clave frente a los originales no es de calidad, sino de portabilidad: este repositorio ofrece los mismos pesos en layouts que solo ik_llama.cpp entiende, a cambio de preservar las input scales NVFP4 y permitir activaciones de 4 u 8 bits.
 
 ## Limitaciones y advertencias
 
-- Compatibilidad restringida: el fichero solo carga en `ik_llama.cpp`; `llama.cpp` de upstream no reconoce el tipo `NVFP4_KS`.
-- Dependencia de una rama no fusionada: la preservación de escalas de entrada requiere el commit `f415f91` de la rama `filament/nvfp4ks-input-scale-main`; `llama-quantize` en la rama principal de `ik_llama.cpp` no conserva las escalas todavía.
-- Las capas MTP no se han convertido, por lo que no se puede usar decodificación especulativa multi-token con este fichero.
-- Las capas FP8 del checkpoint original se almacenan como Q8_0, lo que introduce una discrepancia de formato respecto al checkpoint de NVIDIA.
-- Sesgos conocidos: no disponibles en la información proporcionada.
-- Riesgo de alucinación: no cuantificado; no hay evaluaciones publicadas al respecto.
-- Idiomas soportados: no disponibles, lo que impide garantizar cobertura multilingüe en producción.
-- Licencia Apache-2.0: permite uso comercial, pero conviene verificar las condiciones del checkpoint de NVIDIA y del modelo Qwen subyacente.
-- Repositorio de autor individual con 84 descargas y 1 like: no hay garantía de mantenimiento ni de soporte a largo plazo.
-- Las cifras de perplejidad proceden de una única configuración (`-c 512`, 8 chunks) y un único hardware (GB10); no deben extrapolarse a otros contextos.
+- Ficheros explícitamente experimentales: pueden cambiar o dejar de funcionar sin aviso según la rama main de ik_llama.cpp.
+- Varios ficheros solo cargan con una PR abierta (#2918); no son utilizables con la versión estable del runtime.
+- No es un repositorio de modelos de propósito general: no debe usarse como dependencia de producción.
+- `NVFP4_KS` no existe en llama.cpp; cualquier despliegue fuera de ik_llama.cpp requiere reconversión.
+- Las capas MTP no se convierten en `Qwen3.8-27B-NVFP4_KS.gguf`, lo que limita funciones que dependan de ellas.
+- Licencias heterogéneas: Apache-2.0 para los derivados de Qwen, pero LFM Open License v1.0 para el fichero LFM2.5, con posibles restricciones de uso comercial que deben revisarse en `fp8/LICENSE-LFM`.
+- Sesgos, riesgo de alucinación y limitaciones idiomáticas: no documentados para estos ficheros; heredados de los modelos base, sobre los que este repositorio no aporta información.
+- El tamaño del repo (418,5 GB) obliga a descargar ficheros individuales; conviene verificar los sha256 publicados para los FP8.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/ji-farthing/ik_llama-experimental
-- Modelo base NVIDIA: https://huggingface.co/nvidia/Qwen3.8-27B-NVFP4
-- Revisión concreta del modelo base: https://huggingface.co/nvidia/Qwen3.8-27B-NVFP4/tree/482ca0f3832238542f8f5295dde86b5f22711d80
-- Modelo Qwen original: https://huggingface.co/Qwen/Qwen3.8-27B
-- Repositorio `ik_llama.cpp`: https://github.com/ikawrakow/ik_llama.cpp
-- Commit de la rama de conversión: https://github.com/joelfarthing/ik_llama.cpp/commit/f415f9163307507fecb7f4a040fee85132d11114
+- Repositorio en Hugging Face: https://huggingface.co/ji-farthing/ik_llama-experimental
+- ik_llama.cpp (repositorio principal): https://github.com/ikawrakow/ik_llama.cpp
+- PR #2918 de ik_llama.cpp: https://github.com/ikawrakow/ik_llama.cpp/pull/2918
+- PR #2919 de ik_llama.cpp: https://github.com/ikawrakow/ik_llama.cpp/pull/2919
+- Commit de conversión `f415f91` (fork del autor): https://github.com/joelfarthing/ik_llama.cpp/commit/f415f9163307507fecb7f4a040fee85132d11114
+- Checkpoint base `nvidia/Qwen3.8-27B-NVFP4` (revisión `482ca0f`): https://huggingface.co/nvidia/Qwen3.8-27B-NVFP4/tree/482ca0f3832238542f8f5295dde86b5f22711d80
+- Checkpoint base `nvidia/Qwen3.8-Flash-Next-NVFP4`: https://huggingface.co/nvidia/Qwen3.8-Flash-Next-NVFP4
+- Checkpoint base `nvidia/Qwen3-8B-FP8`: https://huggingface.co/nvidia/Qwen3-8B-FP8
+- Checkpoint base `Qwen/Qwen3-8B-FP8`: https://huggingface.co/Qwen/Qwen3-8B-FP8
+- Checkpoint base `RedHatAI/Qwen3-30B-A3B-FP8-dynamic`: https://huggingface.co/RedHatAI/Qwen3-30B-A3B-FP8-dynamic
+- Checkpoint base `Qwen/Qwen3-30B-A3B-FP8`: https://huggingface.co/Qwen/Qwen3-30B-A3B-FP8
+- Checkpoint base `liodon-ai/LFM2.5-8B-A1B-FP8`: https://huggingface.co/liodon-ai/LFM2.5-8B-A1B-FP8

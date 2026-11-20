@@ -61,11 +61,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "google mail",
-      "url": "https://mail.google.com/mail?hl=de",
-      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
-    }
-  ]
+  "sources": []
 }

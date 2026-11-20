@@ -2,92 +2,91 @@
 
 ## Resumen
 
-Helcyon Aurora 12B v1.0 es un modelo conversacional afinado por XeyonAI (también conocido como HardWire) y distribuido en formato GGUF a través de Hugging Face. Está construido sobre Gemma 4 12B, el checkpoint base de Google que el autor describe como su primera opción para el proyecto Helcyon, y se presenta como el primer modelo de la familia Aurora orientado a conversación natural, compañía, roleplay e instrucciones, con soporte multimodal de visión mediante un fichero `mmproj` separado. Cuenta con 11.907.350.576 parámetros totales según los datos de safetensors del repositorio.
+Helcyon Aurora 12B v1.0 es un modelo de lenguaje afinado (fine-tune) por XeyonAI (también conocido como HardWire) sobre una base Gemma 4 12B de Google. Está diseñado específicamente como compañero conversacional local: conversación natural, roleplay, escritura creativa breve y asistencia práctica del día a día. Con 11.907.350.576 parámetros (~11,9 mil millones) y distribución en formato GGUF, está pensado para inferencia local en hardware de consumo mediante runtimes compatibles con Gemma 4.
 
-El modelo forma parte de un ecosistema más amplio del mismo autor (Helcyon-WebUI) y se distribuye con una identidad de personaje propia, una character card de referencia y una configuración de muestreo recomendada. Según la model card, el entrenamiento combina el modelo base Gemma 4 con datasets generados por "GPT-6 Astra" —orientados a calidez, personalidad y estilo conversacional— junto con datasets propios de Helcyon definidos como "anti-corporate, anti-ideology y pro-free expression", además de datos específicos de roleplay, escritura creativa y comportamiento.
+El modelo se entrena principalmente con datasets generados por "GPT-6 Astra", según el autor, con el objetivo de trasladar calidez, personalidad y estilo conversacional a un modelo ejecutable en local. A esto se suman datasets propios de Helcyon descritos como "anti-corporate, anti-ideology y pro-free expression", orientados a evitar respuestas excesivamente cautas o guionizadas. Es relevante en el ecosistema de modelos locales para rol y compañía porque combina una base moderna (Gemma 4) con un ajuste de personalidad explícito y soporte multimodal vía mmproj.
 
-Es relevante ahora por dos motivos: por un lado, es un ejemplo de fine-tuning de Gemma 4 12B para uso local con cuantización GGUF y capacidades multimodales; por otro, la propia model card reconoce limitaciones explícitas (la escritura creativa de formato largo es un punto débil conocido) y deja la licencia sin resolver, lo que conviene tener en cuenta antes de cualquier uso en producción. El repositorio, de 68,9 GB, tiene 0 descargas y 0 likes en el momento de la consulta.
+La versión publicada es la v1.0; el propio autor remite a una v1.1 actualizada en otro repositorio. La model card reconoce una debilidad conocida en escritura creativa de formato largo (pérdida de coherencia narrativa, diálogos repetitivos o deriva argumental), por lo que el foco real del modelo es la conversación y el seguimiento de instrucciones, no la generación de ficción extensa.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder basado en Gemma 4 12B, multimodal (vision via `mmproj`) |
+| Arquitectura | Transformer decoder-only (base Gemma 4 12B, fine-tune) |
 | Parametros totales | 11.907.350.576 (~11,9 B) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF (varias cuantizaciones; el repositorio ocupa 68,9 GB en total) |
-| Idiomas soportados | en (ingles) segun metadata;no disponible lista completa |
-| Licencia | no disponible (la model card incluye una checklist interna que advierte de que los terminos del modelo base Gemma 4 y del derivado no han sido verificados) |
-| Formato de pesos | GGUF, con fichero `mmproj` separado para vision |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible (el autor recomienda usar la longitud de contexto suministrada junto a los ficheros) |
+| Tipos de cuantizacion | GGUF (el repo incluye cuantizaciones; no se detalla la lista exacta de niveles en la informacion disponible) |
+| Idiomas soportados | en (inglés) |
+| Licencia | no disponible (la model card incluye una nota interna pidiendo verificar los términos de licencia upstream y derivada antes de publicar) |
+| Formato de pesos | GGUF (repo de 69,1 GB; incluye mmproj para visión) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder derivado de Gemma 4 12B, con capacidad multimodal de vision implementada mediante un proyector `mmproj` independiente que se carga junto al modelo principal en runtimes GGUF compatibles. No se detalla en la informacion disponible la composicion exacta de capas, atencion (global/local, ventana deslizante), ni la longitud de contexto nativa del checkpoint base. El modelo no es Mixture-of-Experts: los 11,9 B de parametros son densos.
+La arquitectura subyacente es la de Gemma 4 12B, un transformer decoder-only de aproximadamente 11,9 mil millones de parámetros. XeyonAI no publica detalles sobre el número de tokens de entrenamiento, la composición exacta del dataset ni la configuración de hiperparámetros. Lo que sí se indica es que el fine-tune combina la base Gemma 4 con datasets generados por "GPT-6 Astra" (para estilo conversacional y personalidad) y datasets propios de Helcyon orientados a comportamiento, roleplay y expresión libre.
 
-En cuanto al entrenamiento, la model card indica que Aurora parte de un Gemma 4 afinado y le superpone capas de entrenamiento conductual, de personalidad, roleplay y escritura creativa propias de Helcyon. Los datasets principales se describen como generados por "GPT-6 Astra", buscando trasladar calidez y estilo conversacional, y se complementan con datasets propios etiquetados como "anti-corporate, anti-ideology y pro-free expression". No se especifica el numero de tokens de entrenamiento, la mezcla exacta de datasets, ni si se aplicaron tecnicas de RLHF, DPO o similares. La model card menciona que los primeros intentos con Gemma 4 toparon con dificultades en su entrenamiento de alineacion, que el autor afirma haber resuelto tras experimentacion, sin dar detalles tecnicos del proceso.
+El autor menciona que los primeros intentos de ajuste sobre Gemma 4 toparon con dificultades relacionadas con el entrenamiento de alineamiento del modelo base, y que tras experimentación lograron "atravesar" esas dificultades. No se especifica si se empleó RLHF, DPO, SFT puro u otra combinación, ni se documentan innovaciones técnicas como decodificación especulativa o atención lineal. El modelo se distribuye en GGUF e incluye un fichero mmproj, lo que habilita entrada de imágenes en runtimes compatibles, aunque la model card no detalla la arquitectura del adaptador de visión.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno con enfasis en naturalidad, tono calido y consistencia de personaje.
-- Roleplay e interaccion de personaje inmersiva, con character card suministrada y posibilidad de personalizacion.
-- Instrucciones y asistencia practica: brainstorming, escritura funcional, organizacion y resolucion de problemas cotidianos.
-- Vision: el modelo es multimodal y el `mmproj` para vision se distribuye junto al modelo.
-- Escritura creativa de formato corto y medio (la de formato largo se declara como debilidad conocida).
-- No se documenta soporte explicito de tool calling ni function calling en la informacion disponible.
-- No se documenta soporte de agentes ni razonamiento multi-paso explicito.
-- Capacidades multilingues: metadata declara solo `en`; no hay evidencia de soporte solido de otros idiomas.
-- Modo "thinking" explicito: no documentado.
+- Generación de texto conversacional multi-turno con personalidad definida (cálida, curiosa, ocasionalmente irreverente).
+- Roleplay y adopción de personaje mediante tarjeta de personaje (character card) y plantilla de chat nativa.
+- Seguimiento de instrucciones y asistencia práctica: brainstorming, redacción breve, organización y resolución de problemas cotidianos.
+- Capacidad multimodal de visión mediante el fichero mmproj incluido (entrada de imágenes en runtimes compatibles).
+- Juicio conversacional: capacidad de alternar entre respuestas detalladas y respuestas breves según el contexto.
+- Soporte de tool calling / function calling: no disponible (no se menciona en la información proporcionada).
+- Soporte de agentes y razonamiento multi-paso: no disponible (no se menciona explícitamente).
+- Capacidades multilingües: limitadas al inglés según los metadatos del modelo.
+- Modo "thinking" explícito: no disponible.
 
 ## Casos de uso
 
-- Companero conversacional local: el modelo esta disenado y entrenado especificamente para conversacion natural multi-turno con identidad de personaje estable; encaja en despliegues de escritorio con Helcyon-WebUI o LM Studio para uso personal.
-- Roleplay y narrativa interactiva: la character card suministrada y los datasets de roleplay permiten montar sesiones de personaje con memoria de conversacion, siempre que se gestionen desde la capa de aplicacion (por ejemplo, Helcyon-WebUI con memoria a largo plazo).
-- Asistente personal de organizacion y escritura funcional: correos, resumentes, listas, planes y borradores, aprovechando la faceta de "practical assistance" descrita por el autor.
-- Prototipado de interfaces conversacionales: util para validar diseno de dialogos y tono antes de invertir en un modelo mayor, dado que corre en hardware de consumo en cuantizaciones Q4/Q5.
-- Experimentacion con vision local: el `mmproj` permite probar tareas de descripcion de imagenes o preguntas sobre capturas en un runtime GGUF, sin depender de APIs.
-- Fine-tuning posterior y research de alineacion: como checkpoint ya afinado sobre Gemma 4 12B, sirve de base para estudiar como se comporta un modelo con datasets de personalidad agresivos frente a un Gemma 4 alineado de forma mas convencional.
-- Educacion y divulgacion sobre modelos locales: su publicacion en GGUF con repositorio de 68,9 GB y varias cuantizaciones lo hace util como ejemplo practico de despliegue local, siempre que se aclare la licencia antes de reutilizarlo.
+- Compañero conversacional local: el modelo está entrenado específicamente para mantener conversaciones prolongadas con personalidad consistente, lo que lo hace adecuado para asistentes personales o de compañía ejecutados en hardware propio sin dependencia de la nube.
+- Roleplay y ficción interactiva: con la plantilla de chat nativa y una character card, puede sostener escenas de rol multi-turno; conviene limitar la longitud de las escenas por la debilidad declarada en narrativa larga.
+- Asistente de escritura breve: generación de correos, mensajes, resúmenes y borradores cortos, donde el modelo rinde mejor que en ficción extensa.
+- Brainstorming y lluvia de ideas: su ajuste orientado a "expresión libre" y a evitar respuestas guionizadas favorece la generación de propuestas variadas en sesiones creativas.
+- Organización personal y planificación: apoyo en listas de tareas, estructuración de notas y resolución de problemas cotidianos mediante conversación.
+- Experimentación e investigación en fine-tuning: al ser un fine-tune de personalidad sobre Gemma 4 distribuido en GGUF, sirve como caso de estudio para quienes investigan alineamiento, roleplay y comportamiento conversacional en modelos locales.
+- Prototipado de interfaces de chat con visión: gracias al mmproj, puede integrarse en aplicaciones que requieran describir o comentar imágenes en una conversación, siempre que el runtime lo soporte.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (calculo a partir de 11,9 B de parametros, no dato del autor): Q4 en torno a 7-8 GB, Q5 en torno a 8-9 GB, Q6 en torno a 10 GB, Q8 en torno a 13 GB, F16 en torno a 24 GB. Hay que sumar KV cache y el `mmproj` en caso de usar vision.
-- GPU recomendadas: RTX 4090 (24 GB) para Q8/F16 con contexto amplio; RTX 4080/4070 Ti Super (16 GB) para Q8; RTX 4070/4060 Ti 16 GB y RTX 3060 12 GB para Q5/Q6.
-- Cabe en GPU de consumo: si, en la mayoria de tarjetas con 8 GB o mas usando Q4, y en 12-16 GB con cuantizaciones medias.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python y Helcyon-WebUI (el propio autor recomienda un runtime Gemma 4/GGUF actualizado). vLLM y TGI no estan confirmados para este modelo en la informacion disponible.
+- VRAM/RAM estimada: depende de la cuantización elegida. Para un modelo de ~11,9 B, las cuantizaciones de 4 bits suelen requerir del orden de 7-9 GB, las de 5-6 bits en torno a 9-12 GB y las de 8 bits alrededor de 13-15 GB, sin contar KV cache ni el adaptador de visión. El autor no publica cifras concretas; recomienda escoger la cuantización según la RAM/VRAM disponible.
+- GPU recomendadas: no disponible en la información proporcionada. Por tamaño, cabría esperar que funcione en GPUs de consumo con 12-16 GB o más, pero no hay confirmación del autor.
+- ¿Cabe en GPU de consumo? Probable en cuantizaciones bajas (4-5 bits) en tarjetas de 8-12 GB, sujeto a la longitud de contexto y al offloading; no verificado por el autor.
+- Opciones de despliegue: runtimes GGUF compatibles con Gemma 4 (llama.cpp y derivados). El autor menciona explícitamente Helcyon-WebUI (HWUI) como entorno de desarrollo y prueba, y advierte de no usar plantillas de chat ni presets de sampler de otros modelos.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Helcyon Aurora 12B v1.0 | ~11,9 B | no disponible | no disponible | GGUF en HF | Base Gemma 4 12B, multimodal, foco en companero y roleplay |
-| Mistral-Helcyon-4o-12b-v1.0 | ~12 B (por nombre) | no disponible | no disponible | GGUF en HF | Mismo autor, base Mistral, enfocado a conversacion y roleplay |
-| Gemma 4 12B (base) | ~12 B | no disponible | licencia Gemma de Google | Pesos en HF | Punto de partida del fine-tuning; alineacion mas conservadora |
+| Helcyon Aurora 12B v1.0 | ~11,9 B | no disponible | Compañero conversacional / roleplay | no disponible | GGUF en Hugging Face |
+| Helcyon Aurora 12B v1.1 | no disponible | no disponible | Versión actualizada del mismo modelo | no disponible | GGUF en Hugging Face |
+| Gemma 4 12B (base) | ~12 B | no disponible | Modelo generalista de Google | no disponible en esta ficha | Pesos oficiales de Google |
+| Alternativas de rol de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de benchmarks para establecer una comparacion cuantitativa de rendimiento entre estos modelos.
+No se dispone de datos de benchmarks ni de especificaciones verificadas de modelos comparables en la información proporcionada, por lo que la comparación cuantitativa de rendimiento no es posible.
 
 ## Limitaciones y advertencias
 
-- La escritura creativa de formato largo es una debilidad reconocida por el autor: perdida de coherencia narrativa, dialogo repetitivo o fragmentado y deriva respecto a la trama original.
-- Riesgo de alucinacion: la propia model card advierte de que puede cometer errores y recomienda verificar informacion en decisiones de alto impacto.
-- Idioma: la metadata declara unicamente `en`; no hay garantia de calidad en castellano ni en otros idiomas.
-- Licencia no disponible: la model card contiene una checklist interna que avisa expresamente de que los terminos del modelo base Gemma 4 y del derivado no se han verificado, y pide no asumir la licencia Apache-2.0 de otro modelo de la familia. Cualquier uso comercial debe aclararse con el autor y con los terminos del checkpoint Gemma 4 subyacente.
-- El entrenamiento con datasets "anti-corporate, anti-ideology y pro-free expression" puede producir respuestas con sesgos ideologicos o una menor adherencia a filtros de seguridad convencionales; conviene auditar el comportamiento antes de exponerlo a usuarios finales.
-- Longitud de contexto no documentada: no se puede planificar un caso de uso con contexto largo sin verificarla en los ficheros del repositorio.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: ecosistema de validacion muy limitado.
-- No se documenta soporte de tool calling ni de agentes; no asumir su disponibilidad.
-- La fecha de creacion del repositorio (2026-10-26) y la referencia a "Gemma 4" y "GPT-6 Astra" deben tratarse como datos del autor tal cual, sin verificacion independiente en la informacion disponible.
+- Escritura creativa de formato largo: debilidad reconocida por el autor; las historias pueden perder coherencia narrativa, producir diálogos repetitivos o fragmentados, o desviarse del argumento original.
+- Idiomas: el modelo está etiquetado únicamente para inglés; el rendimiento en castellano u otros idiomas no está garantizado.
+- Licencia: no disponible. La model card incluye una nota interna del autor pidiendo verificar los términos de licencia upstream (Gemma) y derivada antes de publicar, lo que indica que la licencia no estaba resuelta en el momento de la publicación. Antes de un uso comercial es imprescindible confirmar la licencia aplicable.
+- Alucinaciones: como cualquier modelo local, puede generar información incorrecta; el autor recomienda verificar datos en decisiones de alto riesgo.
+- Sesgos: el ajuste declarado como "anti-corporate, anti-ideology y pro-free expression" puede producir respuestas con una orientación editorial concreta y menor cautela en temas sensibles; conviene evaluarlo en el dominio de despliegue.
+- Contexto: la longitud de contexto no está publicada; el autor recomienda ceñirse a la configuración suministrada con los ficheros.
+- Compatibilidad: requiere runtimes actualizados compatibles con Gemma 4 y su plantilla de chat nativa; usar plantillas o presets de otros modelos puede degradar el comportamiento.
+- Versión: la v1.0 queda superada por una v1.1 publicada en otro repositorio; para nuevos despliegues conviene evaluar la versión más reciente.
+- Metadatos incompletos: no se documenta el checkpoint upstream exacto de Gemma 4 ni los detalles de cuantización.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/XeyonAI/Helcyon-Aurora-12b-v1.0-GGUF
-- Modelo hermano (Mistral-Helcyon-4o-12b-v1.0-GGUF): https://huggingface.co/XeyonAI/Mistral-Helcyon-4o-12b-v1.0-GGUF
-- GitHub de XeyonAI / HardWire: https://github.com/XeyonAI
+- Hugging Face (v1.0): https://huggingface.co/XeyonAI/Helcyon-Aurora-12b-v1.0-GGUF
+- Hugging Face (v1.1): https://huggingface.co/XeyonAI/Helcyon-Aurora-12b-v1.1-GGUF
 - Helcyon-WebUI Free (GitHub): https://github.com/XeyonAI/Helcyon-WebUI
 - Helcyon-WebUI Pro (Gumroad): https://xeyonai.gumroad.com/l/bsmupk
-- Ficha de editor en Hugging Bay: https://huggingbay.xyz/publishers/xeyonai

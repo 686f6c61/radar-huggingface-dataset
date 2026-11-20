@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "nzxyin/sparc-wavenext-24k",
+  "slug": "nzxyin-sparc-wavenext-24k",
+  "author": "nzxyin",
+  "url": "https://huggingface.co/nzxyin/sparc-wavenext-24k",
+  "created_at": "2026-11-19T18:22:50.000Z",
+  "updated_at": "2026-11-19T22:29:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "audio",
+    "speech",
+    "vocoder",
+    "articulatory",
+    "sparc",
+    "en",
+    "dataset:parler-tts/libritts_r_filtered",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15132154,
+  "parameters_human": "15.1M",
+  "storage_bytes": 60588618,
+  "storage_human": "61 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

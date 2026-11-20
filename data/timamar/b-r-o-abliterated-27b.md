@@ -2,97 +2,91 @@
 
 ## Resumen
 
-B.R.O-abliterated-27B (Breaching Remote Operation) es un ajuste fino del modelo Qwen3.5-27B publicado por el usuario Timamar en Hugging Face. Se trata de una variante «abliterated», es decir, con la dirección de rechazo del modelo base ortogonalizada (técnica descrita por Arditi et al.) para eliminar las respuestas de negativa aprendidas durante el alineamiento, y posteriormente entrenada con un LoRA de rango 16 sobre trayectorias de seguridad ofensiva, red teaming, ingeniería inversa y explotación binaria. El resultado se fusionó en los pesos base, por lo que el repositorio distribuye tanto adaptadores LoRA como pesos completos cuantizados.
+B.R.O (Breaching Remote Operation) Zero Refusal v3.0 es un ajuste fino del modelo Qwen3.5-35B-A3B, un Mixture-of-Experts (MoE) de 35B parametros totales con 3B parametros activos por token, desarrollado por el usuario Timamar. El modelo se presenta como una version "abliterated" y "zero-refusal", es decir, con las capas de rechazo eliminadas deliberadamente, orientada a tareas de ciberseguridad ofensiva y red-teaming. Segun la model card, se destila a partir de un modelo profesor denominado B.R.O v53 Zero-Refusal (Tinker) sobre la arquitectura `qwen35moe`.
 
-El modelo tiene 27.000 millones de parámetros, una ventana de contexto de 16.384 tokens y se distribuye en INT4 con un tamano aproximado de 20,6 GB, en formatos MLX safetensors y GGUF, lo que permite ejecutarlo en Ollama, llama.cpp o MLX. La licencia declarada es Apache-2.0, heredada del modelo base.
+La propuesta tecnica central es la eliminacion del comportamiento de rechazo mediante ortogonalizacion del subespacio de rechazo en las matrices de compuerta del router MoE (40 matrices de 256x2048 en float32), combinada con un ajuste LoRA de rango 16 sobre un corpus de 618 trayectorias de cumplimiento directo. El autor reporta una tasa de rechazo del 0,0% en pruebas locales en hebreo e ingles, incluyendo prompts sin system prompt y peticiones de ciberseguridad ofensiva.
 
-Su relevancia es acotada y muy específica: cubre el nicho de modelos sin censura orientados a tareas de ciberseguridad ofensiva, un espacio donde los modelos alineados comerciales rechazan sistemáticamente las peticiones. Conviene senalar que el repositorio no incluye evaluaciones, benchmarks ni documentación sobre el dataset de entrenamiento, y que el propio autor distribuye scripts de instalación y un endpoint remoto de Ollama, lo que anade riesgos operativos que se detallan más abajo.
+El modelo es relevante en el contexto de la investigacion sobre seguridad de LLM y alineacion: ejemplifica las tecnicas de "abliteration" aplicadas a arquitecturas MoE modernas con atencion lineal hibrida (GatedDeltaNet). Su licencia Apache 2.0 y su distribucion en formato GGUF y MLX facilitan el despliegue local, aunque su naturaleza sin filtros plantea consideraciones eticas y legales importantes.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer, derivada de Qwen3.5-27B (detalles internos no disponibles) |
-| Parametros totales | 27 mil millones (27B) |
-| Parametros activos | No aplica / no disponible (no se indica que sea un modelo MoE) |
-| Longitud de contexto | 16.384 tokens (`num_ctx 16384` en el Modelfile de Ollama) |
-| Tipos de cuantizacion | INT4 (~20,6 GB); se distribuyen safetensors MLX y GGUF |
-| Idiomas soportados | No disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | MLX safetensors, GGUF y adaptadores LoRA (`adapters.safetensors`, rango 16) |
-| Modelo base | Qwen/Qwen3.5-27B |
-| Metodo de desalineado | Abliteration por ortogonalizacion de la dirección de rechazo (Arditi et al.) |
-| Entrenamiento adicional | LoRA r16 con escala 20.0, fusionado en los pesos base |
-| Runtime soportado | Ollama, llama.cpp, MLX |
-| Descargas / likes | 0 descargas, 1 like (a fecha de la información disponible) |
+| Arquitectura | `qwen35moe` (GatedDeltaNet hibrida + MoE disperso) |
+| Parametros totales | 35B (34,7B) |
+| Parametros activos | 3B (A3B): 256 expertos enrutados + 1 experto compartido por capa |
+| Longitud de contexto | 32.768 por defecto; hasta 262.144 nativo |
+| Tipos de cuantizacion | Q4_K_M (GGUF); safetensors (adaptadores LoRA); MLX |
+| Idiomas soportados | Ingles y hebreo (segun model card); resto no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF, safetensors (adaptadores), MLX |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde a la del modelo base Qwen3.5-27B, un transformer de 27.000 millones de parámetros del que no se detallan en la model card ni el número de capas, ni las dimensiones ocultas, ni el tipo de atención. El proceso de construcción tiene dos fases documentadas: primero una abliteration consistente en calcular la dirección de rechazo en el espacio de activaciones y ortogonalizar los pesos respecto a ella, de modo que el modelo pierde el sesgo aprendido a negarse a responder; después un ajuste LoRA de rango 16 con escala 20.0 sobre trayectorias de ciberseguridad ofensiva, red teaming, ingeniería inversa, explotación binaria y «deep-cyber», finalmente fusionado en los pesos base con `mlx_lm`.
+El modelo parte de Qwen3.5-35B-A3B, una arquitectura MoE con atencion lineal hibrida GatedDeltaNet. Cada capa contiene 256 expertos enrutados mas un experto compartido, de modo que solo se activan aproximadamente 3B parametros por token, lo que reduce el coste de inferencia frente a un modelo denso de tamano comparable. El contexto nativo alcanza 262.144 tokens, aunque la configuracion por defecto es de 32.768.
 
-No se especifica el número de tokens de entrenamiento, la composición del dataset, si hubo fases de RLHF o DPO, ni los hiperparámetros completos del LoRA más allá del rango y la escala. Tampoco se documenta ninguna innovación técnica propia más allá de la combinación de abliteration y LoRA especializado. La cuantización a INT4 se realizó con las herramientas de MLX, y el contexto está limitado a 16.384 tokens tanto en el Modelfile como en la configuración distribuida.
+El proceso de ajuste descrito en la model card consta de cuatro fases: (1) entrenamiento del profesor B.R.O v53 sobre 618 trayectorias de cumplimiento directo (223.689 tokens) con "contrastive refusal unlearning", bloqueo de intencion mediante prellenado de `<think>\n\n</think>\n\n` e inmunidad a system prompts en cinco plantillas; (2) ortogonalizacion de rango 1 del subespacio de rechazo (metodo Arditi et al., con tau = 0,08) sobre las 40 matrices de compuerta del router MoE en float32; (3) destilacion de pesos mediante un adaptador LoRA de rango 16 entrenado sobre el mismo corpus; y (4) parcheo de la plantilla de chat y del Modelfile para forzar el bloqueo de intencion en cada generacion. No se especifican datos sobre el corpus de preentrenamiento original de Qwen3.5-35B-A3B ni sobre el uso de RLHF/DPO en esta fase.
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno en formato ChatML, con plantilla de chat incluida (`chat_template.jinja`).
-- Contenido de seguridad ofensiva: el LoRA se entrenó específicamente sobre red teaming, ingeniería inversa, explotación binaria y trayectorias «deep-cyber», por lo que se espera mayor profundidad en estas áreas que el modelo base.
-- Ausencia de rechazos: la abliteration elimina la dirección de rechazo, de modo que el modelo no aplica las negativas aprendidas del alineamiento del base.
-- Razonamiento y generación de código: capacidad heredada del base Qwen3.5-27B, aunque no se documenta ni se evalúa el impacto de la abliteration en estas tareas.
-- Tool calling / function calling: no documentado en la model card; no se confirma soporte nativo.
-- Capacidades de agente y razonamiento multi-paso: no documentadas; el contexto de 16.384 tokens limita las cadenas de agente largas.
-- Capacidades multilingües: no disponibles; no se declara lista de idiomas.
-- Capacidades multimodales (visión, audio): no disponibles; la model card solo declara `text-generation`.
+- Generacion de texto conversacional en ingles y hebreo.
+- Cumplimiento directo de instrucciones sin rechazo declarado (0,0% reportado en pruebas locales).
+- Respuestas orientadas a ciberseguridad ofensiva y red-teaming.
+- Modo de razonamiento con bloqueo de intencion (`<think>\n\n</think>\n\n`) preconfigurado.
+- Inmunidad a system prompts segun el autor (cinco plantillas probadas).
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades de vision o audio: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Ejercicios de red team autorizados: el modelo puede generar hipótesis de ataque, borradores de payloads y análisis de superficie de exposición en entornos de laboratorio con alcance definido por contrato, aprovechando el ajuste específico sobre trayectorias ofensivas.
-- Formación y concienciación en seguridad: generación de escenarios de phishing simulado, ejemplos de ingeniería social y materiales de formación para equipos internos, sin las negativas que un modelo alineado aplicaría a estas peticiones.
-- Análisis de malware y ingeniería inversa asistida: apoyo en la lectura de binarios, identificación de patrones de ofuscación y explicación de técnicas de explotación, siempre en un entorno aislado y con fines defensivos.
-- Automatización de informes de pentesting: redacción de secciones de explotación, vectores y remediación a partir de notas de campo, con 16.384 tokens de contexto suficientes para incorporar el detalle de una fase completa de un test.
-- Investigación sobre alineamiento y robustez: el modelo sirve como objeto de estudio para medir cuánto degrada la abliteration las capacidades del base y qué tipo de contenido se vuelve accesible, en línea con la literatura de refusal direction.
-- Desarrollo de clasificadores y filtros defensivos: generar un corpus de peticiones y respuestas ofensivas para entrenar o validar sistemas de detección y moderación, un uso habitual de los modelos «uncensored» en pipelines de seguridad.
-- Ejecución local en hardware de estación de trabajo: con 20,6 GB en INT4 y runtime Ollama/MLX, encaja en despliegues de un solo equipo sin depender de APIs externas, lo que simplifica el aislamiento de datos sensibles.
+- Red-teaming de sistemas de IA: el modelo puede emplearse para generar prompts adversariales y evaluar la robustez de filtros de seguridad en otros LLM, aprovechando su tasa de rechazo nula declarada.
+- Pruebas de penetracion autorizadas: generacion de payloads, comandos y tecnicas de explotacion en entornos controlados, con contexto de 32.768 tokens para mantener el hilo de una auditoria.
+- Investigacion sobre alineacion y abliteration: analisis del efecto de la ortogonalizacion del subespacio de rechazo en arquitecturas MoE, comparando el comportamiento antes y despues del ajuste.
+- Desarrollo de herramientas de ciberseguridad internas: asistencia en la redaccion de reglas de deteccion, scripts de analisis o documentacion tecnica de vulnerabilidades en un pipeline local.
+- Evaluacion de sesgos y seguridad de modelos base: uso como contraste para medir cuanto rechazo elimina una tecnica concreta sobre Qwen3.5-35B-A3B.
+- Despliegue local en Apple Silicon: inferencia mediante MLX u Ollama a 14,6-26,5 tok/s, adecuada para prototipado sin dependencia de la nube.
+- Procesamiento de texto en hebreo: generacion y analisis de contenido en hebreo con contexto largo, uno de los pocos idiomas declarados por el autor.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye MMLU, HumanEval, GSM8K ni evaluaciones específicas de ciberseguridad (CTF, Cybench u otras), ni comparaciones con el modelo base sin abliterar. Tampoco se documenta el posible deterioro de capacidades generales causado por la ortogonalización de la dirección de rechazo.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card unicamente reporta metricas de velocidad local en Apple Silicon (14,6-26,5 tok/s de generacion y 238 tok/s de evaluacion de prompt) y una tasa de rechazo del 0,0% en cuatro suites internas (0/32), sin comparacion con modelos de referencia.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en torno a 21-23 GB para los pesos INT4 (20,6 GB) más caché KV; con 16.384 tokens de contexto la caché puede anadir varios GB según el lote y la implementación.
-- GPU recomendadas: A100 40 GB, H100, L40S 48 GB o RTX A6000 48 GB para trabajar con contexto completo y lotes mayores sin presión de memoria.
-- GPU de consumo: encaja en RTX 3090, RTX 4090 o RTX 5090 (24-32 GB) en INT4 y con contexto moderado; por debajo de 24 GB requeriría cuantizaciones más agresivas o descarga parcial a CPU, no publicadas en el repositorio.
-- Opciones de despliegue: Ollama (el autor incluye `Modelfile` con `num_ctx 16384`), llama.cpp con GGUF y MLX en Apple Silicon (formato nativo del repositorio). No se documenta soporte para vLLM ni TGI.
-- Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo ni de tiempo hasta el primer token en ninguna plataforma.
-- Nota operativa: el autor propone un host remoto (`OLLAMA_HOST=https://bro.exody.ai`) y scripts de instalación `install-bro-27b-real.zsh` / `install-bro-27b.zsh` que descargan blobs de ~21 GB; conviene revisar su contenido antes de ejecutarlos y preferir el despliegue local.
+- VRAM estimada para inferencia: aproximadamente 21 GB en Q4_K_M (GGUF de 21,17 GB); en precision completa (BF16) el modelo de 35B requeriria del orden de 70 GB, aunque no se proporciona una cifra oficial.
+- GPU recomendadas: no disponible en la informacion proporcionada; por tamano, una A100 de 40 GB o H100 encajan en precision completa, y una RTX 4090 (24 GB) o similar podria ejecutar la cuantizacion Q4_K_M.
+- Cabe en GPU de consumo: si, en tarjetas con al menos 24 GB de VRAM para Q4_K_M, segun el tamano del archivo.
+- Opciones de despliegue: Ollama (`ollama run bro-zero-refusal`), MLX (libreria declarada en el repo), llama.cpp mediante GGUF. vLLM y TGI no se mencionan en la informacion disponible.
+- Latencia y throughput: 14,6-26,5 tok/s de generacion y 238 tok/s de evaluacion de prompt en Apple Silicon, segun el autor.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parametros | Activos | Contexto | Licencia | Notas |
 |---|---|---|---|---|---|
-| B.R.O-abliterated-27B | 27B | 16.384 | Ciberseguridad ofensiva, sin censura | Apache-2.0 | Hugging Face (0 descargas), Ollama remoto |
-| Qwen3.5-27B (base) | 27B | No disponible en esta ficha | Propósito general, alineado | Apache-2.0 | Hugging Face |
-| Qwen3-32B | 32,8B | 32.768 nativo (131.072 con YaRN) | Propósito general, razonamiento | Apache-2.0 | Hugging Face, ecosistema amplio |
-| Gemma 3 27B | 27B | 128.000 | Propósito general, multimodal | Licencia Gemma | Hugging Face |
-| Mistral Small 3.1 24B | 24B | 128.000 | Propósito general, instrucciones | Apache-2.0 | Hugging Face |
+| B.R.O Zero Refusal v3.0 | 35B | 3B | 32.768 (hasta 262.144) | Apache 2.0 | Ajuste abliterated sin rechazo; ingles y hebreo |
+| Qwen3.5-35B-A3B (base) | 35B | 3B | no disponible | no disponible | Modelo base sin modificar; comportamiento alineado estandar |
+| Alternativas abliterated de la misma familia | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la informacion proporcionada |
 
-No se dispone de datos de rendimiento comparado para B.R.O-abliterated-27B, por lo que la comparación se limita a parámetros, contexto y licencia. Frente a los modelos de la tabla, la diferencia principal es el enfoque sin censura y la especialización en seguridad ofensiva, a costa de una ventana de contexto cuatro veces menor que Gemma 3 o Mistral Small 3.1 y de la ausencia total de evaluaciones publicadas.
+No se dispone de datos de benchmarks que permitan una comparacion cuantitativa con alternativas.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de evaluaciones: no hay benchmarks, ni comparación con el base, ni medición del deterioro de capacidades tras la abliteration. El rendimiento real en tareas generales es desconocido.
-- Riesgo de alucinación: la combinación de abliteration y ajuste LoRA sobre dominios muy técnicos sin verificación posterior incrementa la probabilidad de respuestas plausibles pero incorrectas en materia de exploits, CVEs y comandos.
-- Contenido peligroso: el modelo está diseñado explícitamente para no rechazar peticiones de seguridad ofensiva; su uso sin autorización por escrito puede constituir delito en la mayoría de jurisdicciones (acceso no autorizado a sistemas, creación o distribución de malware).
-- Idiomas no declarados: no se especifica qué idiomas soporta ni si el ajuste LoRA degradó el multilingüismo del base; el castellano podría tener un rendimiento inferior al inglés.
-- Procedencia del artefacto: repositorio con 0 descargas y 1 like, creado y actualizado con minutos de diferencia, con scripts de instalación de terceros, un endpoint remoto de Ollama y un modelo base «Qwen3.5-27B» cuya existencia y pesos no se verifican en la ficha. Tratar los blobs y scripts como no confiables y auditar su contenido antes de ejecutarlos.
-- Licencia: se declara Apache-2.0, heredada del base, pero el modelo no incluye aviso de atribución ni términos adicionales; conviene verificar la licencia del base Qwen3.5-27B antes de un uso comercial.
-- Contexto limitado: 16.384 tokens es reducido para análisis de código extenso, volcados de binarios o cadenas de agente largas, y no hay soporte documentado de extensión por YaRN.
-- Sin soporte confirmado de tool calling ni de integración con vLLM/TGI, lo que complica su uso en pipelines de producción con alto throughput.
+- El modelo ha sido modificado deliberadamente para eliminar los rechazos de seguridad; puede generar contenido ofensivo, ilegal o peligroso sin advertencia.
+- Riesgo elevado de alucinacion y de respuestas erroneas en dominios tecnicos, agravado por la ausencia de benchmarks publicados.
+- Cobertura linguistica limitada a ingles y hebreo segun el autor; el rendimiento en castellano no esta documentado.
+- El proceso de abliteration puede degradar capacidades generales del modelo base; no se aportan mediciones que lo descarten.
+- La licencia Apache 2.0 permite uso comercial, pero el uso para fines maliciosos o sin autorizacion expresa puede infringir normativa de ciberseguridad y proteccion de datos.
+- El repositorio tiene un tamano de 0,1 GB, insuficiente para los pesos completos; los artefactos reales (GGUF de 21,17 GB) se referencian en la model card pero no se confirma su presencia en el repo.
+- La model card incluye un script de instalacion remoto (`curl | zsh`) que debe auditarse antes de ejecutar.
+- El modelo declara "inmunidad a system prompts", lo que impide aplicar salvaguardas mediante instrucciones de sistema en produccion.
+- Solo 1 like y 1.123 descargas en el momento de la consulta; validacion externa muy limitada.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Timamar/B.R.O-abliterated-27B
-- Repositorio GitHub y releases: https://github.com/timamar187-creator/BRO-abliterated-27B
-- Sitio web y chat en vivo del autor: https://xia8p-static.vercel.app/
-- Modelo base: https://huggingface.co/Qwen/Qwen3.5-27B
-- Paper de referencia de la técnica de abliteration (Arditi et al., «Refusal in Language Models Is Mediated by a Single Direction»): no disponible en la información proporcionada
+- Hugging Face: https://huggingface.co/Timamar/B.R.O-abliterated-27B
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
+- Repositorio GitHub del autor: https://github.com/timamar187-creator/BRO-abliterated-27B
+- Script de instalacion (Hugging Face): https://huggingface.co/Sm0k13/B.R.O-abliterated-27B/resolve/main/install-bro-zero-refusal.zsh
+- Referencia del metodo de ortogonalizacion: Arditi et al., "Refusal in Language Models Is Mediated by a Single Direction" (no se proporciona URL en la informacion disponible)
+- Papers, blogs o demos adicionales: no disponible

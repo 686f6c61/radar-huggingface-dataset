@@ -2,86 +2,91 @@
 
 ## Resumen
 
-theOG-50M es un modelo de generacion de codigo Python de 50,148,352 parametros (aproximadamente 50,7 M) entrenado desde cero por un unico desarrollador bajo el seudonimo DrunkkToys. Su proposito es convertir instrucciones en lenguaje natural en funciones Python, y su interes principal no reside en el rendimiento absoluto sino en la economia de medios: se entreno en un solo MacBook Air con chip Apple M5 y 32 GB de memoria unificada, sin GPU dedicada, durante unas 131 horas y 330.000 pasos sobre un corpus de 2.490 millones de tokens extraido de fuentes publicas de Hugging Face.
+theOG-50M v3 es un modelo de lenguaje de 50,148,352 parámetros entrenado desde cero para generación de código Python a partir de instrucciones en inglés. Lo desarrolla DrunkkToys, un desarrollador autodidacta, y se distribuye bajo licencia Apache 2.0. Su propuesta principal es la eficiencia extrema: el autor afirma haberlo entrenado íntegramente en un único MacBook Air con chip Apple M5 y 32 GB de memoria unificada, sin GPU dedicada, durante aproximadamente 131 horas y 346.000 pasos sobre un corpus de 2,49B tokens de fuentes públicas de Hugging Face.
 
-El modelo sigue la arquitectura de Qwen3 (etiqueta `qwen3-arch`) y se distribuye exclusivamente en formato GGUF, con un peso de descarga de 54 MB, lo que permite ejecucion completamente offline en Ollama, LM Studio o llama.cpp sobre hardware de consumo. La model card menciona ademas una alineacion mediante DPO sobre pares de preferencia verificados por ejecucion, en los que la completacion "elegida" supera los tests unitarios de la tarea.
+El modelo sigue la arquitectura Qwen3 (etiqueta `qwen3-arch` en el repositorio) y se publica principalmente en formato GGUF, lo que permite ejecutarlo en CPU con llama.cpp, Ollama o LM Studio. El peso descargable es de aproximadamente 54 MB, un tamaño que lo sitúa en la categoría de small language models orientados a despliegue local y offline.
 
-La relevancia del proyecto es doble. Por un lado, demuestra que es posible producir un modelo funcional de generacion de codigo con un presupuesto de computo del orden de 8,1 x 10^17 FLOPs, aproximadamente 860 veces menos que CodeGen-350M-mono. Por otro, la model card incluye un registro de incidentes extenso en el que el autor atribuye fallos del proyecto a un asistente de programacion basado en IA, lo que conviene leer como contexto del desarrollo y no como especificacion tecnica del modelo.
+Su relevancia es doble: por un lado, demuestra que es posible entrenar un modelo funcional de generación de código con recursos de consumo; por otro, la model card incluye un relato extenso y muy detallado del autor sobre supuestos fallos y sabotajes atribuidos a su asistente de programación (Claude Code), así como comparaciones con CodeGen-350M-mono. Esa documentación debe tratarse como afirmaciones del autor, no como resultados verificados de forma independiente.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer decoder-only, familia Qwen3 (`qwen3-arch`) |
-| Parametros totales | 50.148.352 (50,7 M) |
+| Parametros totales | 50.148.352 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF (variantes concretas no disponibles); descarga principal de 54 MB |
-| Idiomas soportados | Ingles (`en`) |
+| Tipos de cuantizacion | GGUF (variantes concretas no disponibles); pesos safetensors en el repositorio |
+| Idiomas soportados | inglés (`en`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (libreria `gguf`); no se distribuyen safetensors en el repo |
+| Formato de pesos | safetensors y GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only de 50,7 M de parametros construido sobre la arquitectura de Qwen3, sin mezcla de expertos ni mecanismos alternativos como SSM o hibridos. El entrenamiento se realizo desde cero, sin inicializacion a partir de pesos preentrenados, sobre un dataset de 2.490 millones de tokens compuesto por fuentes publicas de Hugging Face. El proceso completo consumio 330.000 pasos y aproximadamente 131 horas en la GPU integrada de un Apple M5 con PyTorch sobre Metal, lo que situa el computo total en torno a 8,1 x 10^17 FLOPs.
+El modelo es un transformer decoder-only de 50M parámetros que adopta la arquitectura Qwen3, según la etiqueta del repositorio. No se dispone de detalles publicados sobre número de capas, dimensión oculta, número de cabezas de atención ni tamaño de vocabulario. Tampoco se especifica la longitud de contexto soportada, un dato relevante para evaluar su uso en tareas multi-turno.
 
-Tras el preentrenamiento, el autor aplica una fase de alineacion con DPO sobre pares de preferencia verificados por ejecucion: cada completacion marcada como preferida paso efectivamente los tests unitarios asociados a la tarea. La model card documenta tambien intentos de incorporar datos de razonamiento (modo `think`) generados por reglas, que segun el propio autor degradaron el comportamiento del modelo y fueron retirados del entrenamiento el 14 de octubre. No se especifica la composicion exacta del corpus, la tokenizador utilizado ni detalles de la configuracion de atencion mas alla de la referencia a Qwen3.
+El entrenamiento se realizó desde cero (no es un fine-tuning) sobre un dataset de 2,49B tokens compuesto por fuentes públicas de Hugging Face. El autor indica 346.000 pasos en total: unos 330.000 en una primera fase de aproximadamente 131 horas y menos de 20 horas adicionales para los últimos 16.000 pasos, todo sobre PyTorch con backend Metal en un MacBook Air M5 de 32 GB. La model card menciona experimentos con datos de "think" (razonamiento) que, según el autor, provocaron colapsos en el modo `/think` y fueron finalmente retirados del entrenamiento el 2026-10-14. No se documentan fases de RLHF, DPO ni preferencias humanas.
 
 ## Capacidades
 
-- Generacion de funciones Python a partir de descripciones en lenguaje natural en ingles.
-- Generacion de codigo en un unico turno, orientada a tareas acotadas mas que a conversaciones largas.
-- Alineacion con preferencias verificadas por tests unitarios, lo que favorece completaciones ejecutables frente a plausibles.
-- Ejecucion local offline mediante GGUF en Ollama, LM Studio y llama.cpp.
-- Compatibilidad con endpoints (`endpoints_compatible`), lo que permite servirlo tras una API compatible con el esquema habitual de Hugging Face.
-- No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, vision, audio ni capacidades multilingues mas alla del ingles.
+- Generación de código Python a partir de descripciones en lenguaje natural en inglés.
+- Generación de texto conversacional básico, según la etiqueta `conversational`.
+- Ejecución local offline en CPU mediante llama.cpp, Ollama y LM Studio.
+- Compatibilidad con endpoints (`endpoints_compatible`), lo que facilita su integración tras una API compatible con el formato estándar.
+- No hay evidencia publicada de soporte de tool calling ni de function calling.
+- No hay evidencia publicada de capacidades de agente o razonamiento multi-paso.
+- Multilingüismo: únicamente inglés declarado; el castellano no está soportado de forma oficial.
+- Modo "think": existió en versiones previas según la model card, pero fue retirado del entrenamiento; no debe asumirse su disponibilidad en v3.
 
 ## Casos de uso
 
-- Autocompletado de funciones auxiliares en proyectos Python: el modelo recibe una descripcion breve en ingles y devuelve una funcion candidata que el desarrollador revisa y adapta, adecuado por su tamano reducido y su ejecucion local sin latencia de red.
-- Asistencia en entornos sin conectividad: al pesar 54 MB y ejecutarse en llama.cpp u Ollama, puede desplegarse en portatiles modestos, equipos aislados o entornos de desarrollo con restricciones de red.
-- Generacion de borradores para tests unitarios y utilidades de scripting: tareas de codigo cortas y bien delimitadas donde la verificacion por ejecucion posterior es barata.
-- Filtrado y preetiquetado de datos de codigo: uso como modelo docente o de referencia para clasificar o completar fragmentos en pipelines de curacion de datasets, dado su bajo coste por inferencia.
-- Educacion y demostracion de entrenamiento de modelos: sirve como caso de estudio reproducible de un pipeline completo (tokenizacion, preentrenamiento, DPO, exportacion a GGUF) ejecutado en hardware de consumo.
-- Prototipado rapido de asistentes de codigo embebidos: integrable en plugins de editor o scripts CLI que necesiten sugerencias de Python sin depender de APIs externas.
-- Pruebas de integracion en CI/CD: validacion de que un pipeline de generacion y ejecucion de codigo funciona de extremo a extremo con un modelo pequeno antes de escalar a modelos mayores.
+- Autocompletado de funciones Python en el editor: el modelo puede generar el cuerpo de una función a partir de su docstring o de una petición breve en inglés, con una latencia muy baja al ejecutarse en CPU y un peso de 54 MB.
+- Asistente de código offline en portátiles sin GPU: al caber en cualquier equipo con unos cientos de MB de RAM libre, permite trabajar en entornos sin conexión o con requisitos de privacidad estrictos, sin enviar código a servicios externos.
+- Generación de snippets para prototipado rápido: útil para producir utilidades pequeñas (parseo de ficheros, transformaciones de datos, scripts de automatización) que el desarrollador revisa y adapta después.
+- Educación y aprendizaje de Python: sirve como ejemplo didáctico de generación de código y como banco de pruebas para estudiar el comportamiento de modelos pequeños en tareas de programación.
+- Filtrado o clasificación previa en pipelines de CI: puede generar o completar fragmentos candidatos que luego se validan con tests automáticos, reduciendo el coste frente a modelos grandes en tareas triviales.
+- Investigación sobre entrenamiento de bajo coste: el modelo y su historial de entrenamiento documentado permiten reproducir experimentos de scaling down y comparar curvas de aprendizaje con recursos mínimos.
+- Demo integrada en aplicaciones de escritorio: al distribuirse en GGUF y funcionar con Ollama o LM Studio, se puede empaquetar como funcionalidad de generación de código dentro de una herramienta local.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona comparaciones de coste de entrenamiento con CodeGen-350M-mono (tokens, FLOPs, hardware y coste economico) y referencias a evaluaciones HumanEval en el registro de incidentes, pero no se aportan puntuaciones numericas verificables en la informacion proporcionada.
+No se han publicado resultados de benchmarks verificables en la información disponible. La model card incluye comparaciones con CodeGen-350M-mono en términos de tokens de entrenamiento, hardware y coste estimado, pero no presenta tablas de MMLU, HumanEval, GSM8K ni métricas equivalentes con valores numéricos contrastados. Cualquier cifra de rendimiento funcional debe obtenerse mediante evaluación propia.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en cuantizaciones de 4 bits para un modelo de 50,7 M de parametros; la descarga principal ocupa 54 MB.
-- GPU recomendadas: cualquier GPU de consumo es suficiente; el modelo se entreno en una GPU integrada Apple M5, lo que indica que no requiere aceleradores dedicados.
-- Cabe holgadamente en GPU de consumo: RTX 3060, RTX 4060, RTX 4090, asi como en CPU y en Apple Silicon.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y servidores compatibles con endpoints; tambien es viable la inferencia en CPU pura.
-- Latencia y throughput estimados: no disponibles. Por el tamano del modelo, se espera latencia de milisegundos en hardware moderno, pero no se han publicado mediciones.
+- VRAM/RAM para inferencia: al tratarse de un modelo de 50M parámetros, los pesos en FP16 ocupan aproximadamente 100 MB; en cuantizaciones GGUF de 4 bits, alrededor de 30-35 MB. El autor indica una descarga de 54 MB, coherente con una cuantización de ese orden.
+- GPU recomendadas: no requiere GPU. Puede ejecutarse en CPU en cualquier equipo moderno; una GPU consumer (por ejemplo, RTX 3060 o superior) solo aportaría mejoras marginales de latencia.
+- Cabe en cualquier GPU consumer, incluida una GTX 1050 o una GPU integrada, y también en Raspberry Pi y dispositivos similares siempre que se use llama.cpp.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y servidores compatibles con la API de endpoints; el repositorio incluye pesos safetensors para inferencia con PyTorch/Transformers.
+- Latencia y throughput: no disponibles de forma oficial; por el tamaño del modelo, se espera una generación en CPU del orden de decenas de tokens por segundo en hardware de escritorio, aunque esta estimación no está confirmada por el autor.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Entrenamiento | Licencia | Formato | Disponibilidad |
-|---|---|---|---|---|---|---|
-| theOG-50M v3 | 50,7 M | no disponible | 2,49 B tokens, DPO verificado por tests | Apache 2.0 | GGUF | Hugging Face |
-| CodeGen-350M-mono | 350 M | 2.048 tokens (modelo original) | ~325 B tokens (ThePile, BigQuery, BigPython) | Apache 2.0 | safetensors, GGUF (comunitario) | Hugging Face |
-| Qwen2.5-Coder-0.5B | ~500 M | 32.768 tokens | no disponible en la informacion proporcionada | Apache 2.0 | safetensors, GGUF | Hugging Face |
+| Modelo | Parámetros | Contexto | Tokens de entrenamiento | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| theOG-50M v3 | 50,1M | no disponible | 2,49B | Apache 2.0 | Hugging Face (safetensors + GGUF) |
+| CodeGen-350M-mono | 350M | 2.048 tokens (según paper de CodeGen) | ~325B (según la model card) | Apache 2.0 | Hugging Face |
+| Qwen2.5-Coder-0.5B | ~494M | 32.768 tokens (versión base) | no disponible en esta ficha | Apache 2.0 | Hugging Face |
+| SmolLM2-135M | 135M | 8.192 tokens | no disponible en esta ficha | Apache 2.0 | Hugging Face |
 
-La comparacion con CodeGen-350M-mono procede de los datos citados en la propia model card: el modelo de Salesforce emplea 7 veces mas parametros, aproximadamente 130 veces mas tokens de entrenamiento y un computo unas 860 veces superior. Frente a Qwen2.5-Coder-0.5B, el modelo de DrunkkToys es un orden de magnitud menor en parametros y carece de contexto largo documentado, por lo que la comparacion solo es valida en la categoria de modelos pequenos para generacion de codigo, no en rendimiento.
+La comparación con CodeGen-350M-mono es la que aporta el propio autor: el modelo de Salesforce tiene 7 veces más parámetros y se entrenó con aproximadamente 219 veces más tokens, aunque sobre hardware TPU-v4. Frente a modelos como Qwen2.5-Coder-0.5B o SmolLM2-135M, theOG-50M es entre 2,7 y 10 veces más pequeño, lo que se traduce en menor calidad esperada en tareas complejas pero en un coste de despliegue prácticamente nulo.
 
 ## Limitaciones y advertencias
 
-- Modelo de 50,7 M de parametros: la calidad del codigo generado sera limitada y requerira revision humana sistematica; no es adecuado para generacion de codigo en produccion sin validacion.
-- Solo soporta ingles como idioma de entrada; no se documenta comportamiento en castellano ni en otros idiomas.
-- Longitud de contexto no documentada, lo que impide planificar su uso en tareas que requieran contexto amplio o conversaciones multi-turno.
-- Riesgo de alucinacion elevado: al ser un modelo entrenado desde cero con un corpus pequeno, puede producir APIs inexistentes o firmas de funciones incorrectas.
-- No se documentan sesgos especificos, pero el corpus de fuentes publicas de Hugging Face puede arrastrar sesgos de estilo y de licencia del codigo de origen.
-- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias sobre la procedencia ni la licencia del codigo de entrenamiento.
-- La model card contiene un registro de incidentes muy extenso con acusaciones hacia un asistente de IA; no debe interpretarse como documentacion tecnica y conviene contrastar cualquier afirmacion de rendimiento de forma independiente.
-- No se publican resultados de benchmarks verificables, por lo que las afirmaciones comparativas de la model card no son reproducibles con la informacion disponible.
+- Modelo de 50M parámetros: la calidad en código complejo, razonamiento y coherencia multi-turno será limitada en comparación con modelos de cientos de millones o miles de millones de parámetros.
+- Solo inglés: las instrucciones en castellano no están soportadas oficialmente y probablemente produzcan resultados degradados.
+- Riesgo elevado de alucinación y de generar código sintácticamente plausible pero incorrecto; requiere revisión humana y tests automatizados antes de usarse en producción.
+- Longitud de contexto no documentada: no se recomienda para tareas que requieran ventanas largas hasta verificar el valor real.
+- La model card contiene afirmaciones no verificadas de forma independiente (comparaciones de coste, sabotaje del asistente, cifras de entrenamiento); deben tomarse como declaraciones del autor.
+- El modo "think" fue retirado del entrenamiento según la propia documentación; no debe asumirse que funcione.
+- Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantías sobre el origen y la calidad del corpus de entrenamiento; conviene auditar posibles problemas de licencias en los datos públicos utilizados.
+- El repositorio ocupa 1,9 GB, muy superior al tamaño del peso descargable, debido a artefactos de entrenamiento y versiones; conviene descargar solo los ficheros GGUF necesarios.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/DrunkkToys/theOG-50M
-- AlphaNeural AI: https://app.alphaneural.io/models/DrunkkToys/theOG-50M
-- Paper de CodeGen (referencia citada en la model card): https://arxiv.org/abs/2203.13474
-- Paper de referencia adicional citado en los tags: https://arxiv.org/abs/2310.02226
+- Modelo en Hugging Face: https://huggingface.co/DrunkkToys/theOG-50M
+- Paper de CodeGen (referenciado en la model card): https://arxiv.org/abs/2203.13474
+- Paper de referencia adicional citado en las etiquetas: https://arxiv.org/abs/2310.02226
+- llama.cpp: https://github.com/ggml-org/llama.cpp
+- Ollama: https://ollama.com
+- LM Studio: https://lmstudio.ai

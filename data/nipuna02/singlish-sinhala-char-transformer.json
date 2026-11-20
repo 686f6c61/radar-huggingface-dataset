@@ -1,0 +1,69 @@
+{
+  "schema": 2,
+  "id": "nipuna02/singlish-sinhala-char-transformer",
+  "slug": "nipuna02-singlish-sinhala-char-transformer",
+  "author": "nipuna02",
+  "url": "https://huggingface.co/nipuna02/singlish-sinhala-char-transformer",
+  "created_at": "2026-11-19T23:40:02.000Z",
+  "updated_at": "2026-11-19T23:40:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "si"
+  ],
+  "tags": [
+    "pytorch",
+    "transliteration",
+    "sinhala",
+    "singlish",
+    "romanized-sinhala",
+    "character-level",
+    "si",
+    "dataset:deshanksuman/SwaBhasha_Transliteration_Sinhala",
+    "dataset:wikimedia/wikipedia",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30135287,
+  "storage_human": "30 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Singlish to Sinhala transliteration",
+      "dataset": "SwaBhasha sentence pairs (held-out test split, 2,366 sentences)",
+      "metric": null,
+      "value": 0.0544
+    },
+    {
+      "task": "Singlish to Sinhala transliteration",
+      "dataset": "SwaBhasha sentence pairs (held-out test split, 2,366 sentences)",
+      "metric": null,
+      "value": 0.2134
+    }
+  ],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.ca/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …Read more"
+    }
+  ]
+}

@@ -2,110 +2,92 @@
 
 ## Resumen
 
-Este repositorio contiene cuantizaciones GGUF independientes de Qwen-Image-2.1, el modelo de generacion de imagenes de Qwen Team (Alibaba), con la LoRA turbo de destilacion de 6 pasos (rango 256) de Viggle fusionada de forma nativa. El resultado son checkpoints que ejecutan generacion texto-a-imagen completa en exactamente 6 pasos y con CFG desactivado (1.0), lo que segun el autor supone una aceleracion de aproximadamente 4,5 veces respecto al modelo sin destilar, todo dentro del cargador GGUF nativo de ComfyUI. Lo publica el usuario Abiray, no el equipo original de Qwen ni Viggle: es una redistribucion cuantizada de un modelo de terceros.
+Abiray/Qwen-Image-2.1-viggle-turbo-v0.2.1-6step-GGUF es una coleccion de cuantizaciones GGUF independientes del modelo de difusion Qwen-Image-2.1 de Alibaba, fusionadas de forma nativa con el LoRA Turbo de 6 pasos (rango 256) desarrollado por Viggle. El resultado es un checkpoint de generacion texto-a-imagen que opera con tan solo 6 pasos de muestreo y CFG fijo a 1.0, lo que se traduce en una aceleracion aproximada de 4,5 veces respecto al modelo base, manteniendo la compatibilidad con el cargador GGUF nativo de ComfyUI.
 
-Tecnicamente se trata de un modelo de difusion con arquitectura DiT (Diffusion Transformer) de unos 7,12 mil millones de parametros en el componente de difusion, segun el recuento real de safetensors. La innovacion practica no esta en la arquitectura base, sino en la fusion previa a la cuantizacion: el campo de velocidad destilado en FP32 de la LoRA de Viggle se integra permanentemente en los pesos antes de convertir a GGUF, de modo que no hace falta cargar la LoRA por separado ni aplicar CFG en inferencia.
+El modelo resuelve el problema del coste computacional de la inferencia en difusion: en lugar de requerir 20-50 pasos con classifier-free guidance, la destilacion de la velocidad en FP32 antes de la cuantizacion permite generar imagenes en 6 pasos con cero CFG. Con 7.115.124.736 parametros (aproximadamente 7,1 mil millones) y un repositorio de 29,9 GB que incluye seis variantes de cuantizacion, esta pensado para despliegue local en GPUs de consumo.
 
-Su relevancia actual es de tipo practico: permite ejecutar un modelo de generacion de imagenes de gama alta en GPUs de consumo (el autor recomienda Q4_K_M para GPUs de 8-12 GB de VRAM), algo impensable con los pesos originales en BF16. El repo ocupa 29,9 GB e incluye seis niveles de cuantizacion, ademas de los flujos de trabajo de ComfyUI listos para usar en texto-a-imagen e imagen-a-imagen.
+La relevancia actual radica en que combina un modelo base de alta calidad (Qwen-Image-2.1, arquitectura DiT) con una destilacion Turbo de alto rango y un formato de pesos GGUF que reduce los requisitos de VRAM hasta 2,97 GB en la variante Q3_K_M. La licencia es qwen-research, lo que condiciona su uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | DiT (Diffusion Transformer); arquitectura base de Qwen-Image-2.1 (Qwen Team / Alibaba) |
-| Parametros totales | 7.115.124.736 (~7,12 B) en el componente de difusion, segun safetensors |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | GGUF: Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_K_S, Q3_K_M |
-| Idiomas soportados | No disponible |
-| Licencia | qwen-research (license: other); enlace a la licencia del modelo base |
-| Formato de pesos | GGUF (cuantizado); el modelo base esta en safetensors |
-| Modelo base | Viggle/Qwen-Image-2.1-viggle-turbo |
-| Codificador de texto requerido | qwen3vl_8b_int8_convrot.safetensors |
-| VAE requerido | qwen_image_2.1_vae_bf16.safetensors |
-| Tamano del repositorio | 29,9 GB |
-| Descargas / likes | 0 / 2 |
-| Fecha de creacion | 25 de septiembre de 2026 |
-| Pipeline declarado | text-to-image (soporta tambien image-to-image) |
+| Arquitectura | DiT (Diffusion Transformer) sobre base Qwen-Image-2.1 |
+| Parametros totales | 7.115.124.736 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_K_S, Q3_K_M (GGUF) |
+| Idiomas soportados | no disponible |
+| Licencia | qwen-research (license: other) |
+| Formato de pesos | GGUF (safetensors para texto codificador y VAE) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un DiT de Qwen-Image-2.1, el sistema de generacion de imagenes de Qwen Team / Alibaba, con aproximadamente 7,12 mil millones de parametros en el modulo de difusion. Sobre ese modelo, Viggle entreno una destilacion tipo turbo (LoRA de rango 256) que aprende un campo de velocidad de pocos pasos; el autor de esta ficha de cuantizacion lo describe como un "campo de velocidad destilado" en FP32. El procedimiento aplicado aqui consiste en fusionar esa LoRA de forma permanente en los pesos del modelo base en FP32 y solo despues convertir a GGUF, evitando la perdida de fidelidad que supondria cuantizar por separado la LoRA o aplicarla en tiempo de inferencia.
+El modelo base es Qwen-Image-2.1, un Diffusion Transformer (DiT) de aproximadamente 7,1 mil millones de parametros desarrollado por el equipo Qwen de Alibaba. Sobre esta base, Viggle entreno un LoRA Turbo de rango 256 que destila el campo de velocidad del modelo original, permitiendo reducir el numero de pasos de muestreo de decenas a solo 6. La innovacion clave de esta ficha es el proceso de fusion: el LoRA se integra de forma permanente en FP32 antes de la cuantizacion a GGUF, de modo que la destilacion no se degrada por el redondeo de pesos.
 
-El resultado es un muestreo determinista de 6 pasos con CFG igual a 1.0 y una secuencia de sigmas fija: `[1.0, 0.9375, 0.875, 0.75, 0.5, 0.25]`, con `shift_terminal: null`, muestreador Euler y prompts negativos vacios. El nodo personalizado `viggle_turbo.py` de Viggle es necesario para inyectar esa secuencia de sigmas. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF/DPO; para un modelo de difusion esos datos corresponderian al informe tecnico de Qwen-Image-2.1 y a la receta de destilacion de Viggle, que no se enlazan en este repositorio.
+El pipeline completo requiere tres componentes separados: el modelo de difusion cuantizado en GGUF, un codificador de texto `qwen3vl_8b_int8_convrot.safetensors` (basado en Qwen3-VL de 8B) y un VAE `qwen_image_2.1_vae_bf16.safetensors`. El muestreo utiliza sampler Euler con una secuencia de sigmas fija definida por el nodo Viggle Turbo (`[1.0, 0.9375, 0.875, 0.75, 0.5, 0.25]`) y `shift_terminal: null`. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF/DPO en la informacion proporcionada.
 
 ## Capacidades
 
-- Generacion de imagenes a partir de texto (text-to-image) con 6 pasos de muestreo y sin CFG.
-- Edicion de imagen a imagen (image-to-image); el repositorio incluye flujos especificos de edicion ademas del de texto-a-imagen.
-- Inferencia dentro de ComfyUI mediante el nodo `Unet Loader (GGUF)` de ComfyUI-GGUF, sin salir del ecosistema nativo de ComfyUI.
-- Integracion con el nodo personalizado `viggle_turbo.py` de Viggle para aplicar la secuencia de sigmas turbo.
-- Seis niveles de cuantizacion que permiten ajustar el compromiso entre fidelidad, VRAM y velocidad en el mismo checkpoint.
-- No soporta tool calling, function calling ni uso como agente: es un modelo de difusion, no un modelo de lenguaje.
-- No se documentan capacidades multilingues del prompt; el codificador de texto es Qwen3-VL 8B en int8, pero el repo no declara idiomas soportados.
-- No se documentan modos de razonamiento, vision analitica, audio ni modos de pensamiento (thinking).
+- Generacion de imagenes a partir de texto (text-to-image) en 6 pasos con CFG 1.0.
+- Edicion de imagenes (image-to-image) mediante workflow incluido en el repositorio.
+- Inferencia acelerada con destilacion Turbo: aproximadamente 4,5 veces mas rapida que el modelo base.
+- Compatibilidad nativa con ComfyUI mediante el nodo `Unet Loader (GGUF)` y ComfyUI-GGUF.
+- Seis niveles de cuantizacion para adaptarse a distintos presupuestos de VRAM (desde 2,97 GB hasta 7,07 GB).
+- Codificador de texto multimodal Qwen3-VL de 8B, lo que sugiere capacidad de comprension de prompts complejos (no se detalla en la informacion disponible).
+- No se ha documentado soporte de tool calling, agentes ni modo thinking en la informacion proporcionada.
 
 ## Casos de uso
 
-- Generacion de ilustraciones en una estacion de trabajo con GPU de consumo: con el checkpoint Q4_K_M (3,90 GB) el modelo cabe en GPUs de 8-12 GB de VRAM, lo que permite crear ilustraciones en local sin depender de APIs en la nube.
-- Iteracion rapida de conceptos en diseno grafico: al reducirse la generacion a 6 pasos, el ciclo prompt-imagen se acorta y el disenador puede probar decenas de variaciones de composicion o paleta en una sola sesion.
-- Edicion de imagenes en flujo de postproduccion: el soporte de image-to-image permite reformular o retocar imagenes existentes manteniendo la estructura, integrándose en un nodo de ComfyUI junto a otras herramientas del pipeline.
-- Prototipado de assets para videojuegos o animacion: la generacion texto-a-imagen de alta fidelidad sirve para bocetos de personajes, entornos o interfaces antes de pasar al modelado o al arte final.
-- Generacion de imagenes por lotes en servidores con GPU de 16 GB o mas: el checkpoint Q8_0 (7,07 GB) ofrece la maxima fidelidad declarada por el autor y es adecuado para produccion por lotes en GPUs en la nube.
-- Pruebas de investigacion sobre destilacion y cuantizacion: el repositorio permite comparar el mismo modelo destilado en seis niveles de cuantizacion, un caso de estudio directo sobre el impacto de la precision en la calidad final.
-- Despliegue local con requisitos de privacidad: todo el pipeline (modelo, codificador de texto y VAE) se ejecuta en la maquina del usuario, util para equipos que no pueden enviar material grafico a servicios externos.
+- Generacion de imagenes local en GPUs de consumo: con la variante Q4_K_M (3,90 GB) el modelo cabe en GPUs de 8 GB de VRAM, permitiendo crear ilustraciones y conceptos sin depender de servicios en la nube.
+- Prototipado rapido de assets para videojuegos: los 6 pasos de muestreo reducen el tiempo por imagen, lo que facilita iterar sobre variaciones de personajes, entornos y objetos en sesiones de diseno.
+- Edicion de imagenes en flujo image-to-image: el workflow incluido permite modificar imagenes existentes (retocado, cambio de estilo, inpainting) dentro de ComfyUI con el mismo checkpoint.
+- Generacion de material grafico para marketing: la velocidad de inferencia permite producir lotes de imagenes para campanas, banners o redes sociales en una sola sesion de trabajo.
+- Investigacion en destilacion de modelos de difusion: el repositorio sirve como referencia de como fusionar un LoRA Turbo de rango 256 en FP32 antes de cuantizar, util para estudiar la degradacion por cuantizacion.
+- Despliegue en entornos con VRAM limitada: la variante Q3_K_M (2,97 GB) permite ejecutar el modelo en equipos con 6 GB de VRAM para pruebas locales o demos.
+- Integracion en pipelines de automatizacion creativa: mediante ComfyUI y sus workflows JSON, el modelo se puede encadenar con otros nodos para generar variaciones masivas o procesar lotes de prompts.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La unica cifra de rendimiento declarada por el autor es una aceleracion de aproximadamente 4,5x respecto al modelo sin destilar, atribuida a la reduccion a 6 pasos y a la eliminacion del CFG. No hay FID, CLIP score, HPSv2 ni comparaciones cuantitativas con otros modelos.
+No se han publicado resultados de benchmarks en la informacion disponible. La unica metrica de rendimiento proporcionada es la aceleracion aproximada de 4,5 veces respecto al modelo base, derivada de reducir la generacion a 6 pasos con CFG 1.0.
 
 ## Requisitos de hardware
 
-- VRAM estimada: depende del nivel de cuantizacion elegido. Los tamanos de fichero publicados son 2,97 GB (Q3_K_M), 3,78 GB (Q4_K_S), 3,90 GB (Q4_K_M), 4,66 GB (Q5_K_M), 5,47 GB (Q6_K) y 7,07 GB (Q8_0). A esa cifra hay que sumar el codificador de texto Qwen3-VL 8B en int8 y el VAE en bf16, que se cargan por separado.
-- Recomendaciones del autor: Q8_0 para GPUs en la nube o con 16 GB o mas de VRAM; Q4_K_M para GPUs de 8-12 GB de VRAM; Q4_K_S para configuraciones de memoria muy baja; Q3_K_M para pruebas locales ultraligeras.
-- Cabe en GPU de consumo: si, con los niveles Q3_K_M a Q4_K_M en GPUs de 8-12 GB, y con Q5_K_M o Q6_K en GPUs de 12-16 GB. No se especifica comportamiento con menos de 8 GB.
-- GPU recomendadas: no se indican modelos concretos en la informacion disponible; el autor solo cita rangos de VRAM (16 GB+ para Q8_0, 8-12 GB para Q4_K_M).
-- Opciones de despliegue: ComfyUI con el nodo personalizado ComfyUI-GGUF (obligatorio), mas el nodo `viggle_turbo.py` de Viggle. El modelo esta pensado para el cargador `Unet Loader (GGUF)`. No se documenta soporte para vLLM, TGI, Ollama ni llama.cpp como motor de inferencia (llama.cpp interviene solo como herramienta de cuantizacion).
-- Latencia y throughput: no disponibles en valores absolutos. La unica referencia es la aceleracion declarada de aproximadamente 4,5x respecto al modelo no destilado, con 6 pasos fijos por generacion.
+- VRAM estimada para inferencia (solo modelo de difusion): entre 2,97 GB (Q3_K_M) y 7,07 GB (Q8_0), segun la cuantizacion elegida.
+- VRAM adicional necesaria para el codificador de texto Qwen3-VL 8B en int8 y el VAE en bf16; el total del pipeline supera la cifra del checkpoint de difusion.
+- GPU recomendadas: RTX 4090 (24 GB) para la variante Q8_0 con maxima fidelidad; RTX 3080/4070 (10-12 GB) para Q5_K_M o Q6_K; GPUs de 8 GB para Q4_K_M.
+- Cabe en GPU de consumo: si, desde 8 GB de VRAM con Q4_K_M y desde aproximadamente 6 GB con Q3_K_M (sin contar codificador de texto y VAE).
+- Opciones de despliegue: ComfyUI con ComfyUI-GGUF y el nodo `viggle_turbo.py`; el formato GGUF es compatible con llama.cpp, aunque el flujo documentado es exclusivamente ComfyUI.
+- Latencia y throughput: no disponibles; la aceleracion de 4,5 veces es la unica referencia publicada.
 
 ## Comparativa con modelos similares
 
-Dentro de la informacion proporcionada no hay datos de benchmarks ni especificaciones de modelos alternativos (FLUX.1-schnell, SDXL-Turbo, modelos turbo de Stable Diffusion u otras cuantizaciones de Qwen-Image), por lo que no es posible una comparacion cuantitativa. La comparacion disponible es interna, entre los checkpoints de este mismo repositorio:
+| Modelo | Parametros | Pasos de muestreo | Formato | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Abiray/Qwen-Image-2.1-viggle-turbo-6step-GGUF | 7,1B | 6 (CFG 1.0) | GGUF | qwen-research | Hugging Face |
+| Viggle/Qwen-Image-2.1-viggle-turbo (base) | 7,1B | 6 (CFG 1.0) | safetensors | qwen-research | Hugging Face |
+| Qwen-Image-2.1 (original) | 7,1B | decenas (CFG > 1.0) | safetensors | qwen-research | Hugging Face |
 
-| Checkpoint | Tamano | Precision | Uso recomendado segun el autor |
-|---|---|---|---|
-| qwen_image_2.1_turbo_Q8_0.gguf | 7,07 GB | 8 bits | Maxima fidelidad; GPUs en la nube o 16 GB+ de VRAM |
-| qwen_image_2.1_turbo_Q6_K.gguf | 5,47 GB | ~6 bits | Generacion turbo practicamente sin perdida |
-| qwen_image_2.1_turbo_Q5_K_M.gguf | 4,66 GB | ~5 bits | Mejor equilibrio entre velocidad, VRAM y detalle |
-| qwen_image_2.1_turbo_Q4_K_M.gguf | 3,90 GB | ~4 bits | GPUs de 8-12 GB de VRAM |
-| qwen_image_2.1_turbo_Q4_K_S.gguf | 3,78 GB | ~4 bits | Configuraciones de memoria baja |
-| qwen_image_2.1_turbo_Q3_K_M.gguf | 2,97 GB | ~3 bits | Pruebas locales ultraligeras |
-
-Frente al modelo base Viggle/Qwen-Image-2.1-viggle-turbo en sus pesos originales, la diferencia documentada es el formato (GGUF cuantizado frente a safetensors), el procedimiento (LoRA fusionada en FP32 antes de cuantizar, en lugar de cargarse aparte) y el menor espacio en disco y VRAM. No se publican datos de calidad comparativa entre ambos.
+La comparativa se limita a las variantes del mismo modelo base, ya que la informacion proporcionada no incluye datos de otros modelos de difusion comparables (como FLUX o SDXL) ni sus especificaciones.
 
 ## Limitaciones y advertencias
 
-- Licencia qwen-research: es una licencia de investigacion, no una licencia permisiva. Antes de cualquier uso comercial hay que revisar el texto enlazado del modelo base, porque puede imponer restricciones o requerir autorizacion.
-- El repositorio lo publica un tercero (Abiray), no Qwen Team ni Viggle; no hay garantia de mantenimiento ni de exactitud respecto a los pesos oficiales.
-- Ausencia total de benchmarks: no hay evidencia publicada de calidad, fidelidad al prompt ni comparacion con el modelo sin cuantizar, mas alla de las muestras visuales del autor.
-- 0 descargas y 2 likes en el momento de redactar esta ficha: no existe validacion por parte de la comunidad.
-- El muestreo es estricto: exactamente 6 pasos, CFG 1.0 y la secuencia de sigmas del nodo de Viggle. Subir el CFG por encima de 1.0 o cambiar el numero de pasos degrada el resultado segun el propio autor; los prompts negativos deben quedar vacios.
-- Requiere instalar dos componentes externos (ComfyUI-GGUF y `viggle_turbo.py`); sin ellos el modelo no funciona correctamente.
-- Requiere descargar por separado el codificador de texto Qwen3-VL 8B en int8 y el VAE en bf16, lo que incrementa el consumo de VRAM y disco respecto al tamano del checkpoint GGUF.
-- Riesgo de alucinacion visual y de sesgos: el dataset de entrenamiento, la composicion demografica y el tratamiento de temas sensibles no se documentan en este repositorio.
-- Idioma de los prompts no declarado: se desconoce el rendimiento real con prompts en castellano.
-- Al ser pesos cuantizados a 3-4 bits, los niveles Q3_K_M y Q4_K_S pueden introducir perdida de detalle fino no cuantificada en la informacion disponible.
+- Licencia qwen-research: restringe el uso comercial; es necesario revisar los terminos en el enlace de licencia antes de cualquier despliegue en produccion.
+- Al ser una cuantizacion GGUF, las variantes de menor precision (Q3_K_M, Q4_K_S) pueden introducir perdida de detalle y artefactos respecto a Q8_0.
+- El modelo requiere CFG exactamente 1.0 y prompts negativos vacios; usar CFG mayor degrada la calidad de generacion segun las instrucciones del autor.
+- Depende de un nodo personalizado (`viggle_turbo.py`) y de ComfyUI-GGUF, lo que anade complejidad de instalacion y riesgo de incompatibilidades con futuras versiones de ComfyUI.
+- No se dispone de informacion sobre sesgos, composicion del dataset de entrenamiento ni tasas de alucinacion visual; se recomienda validacion manual de las imagenes generadas.
+- Los idiomas soportados en los prompts no estan documentados; el codificador Qwen3-VL sugiere multilingue, pero no se confirma en la informacion disponible.
+- El repositorio ocupa 29,9 GB, lo que exige espacio en disco considerable si se descargan todas las variantes.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/Abiray/Qwen-Image-2.1-viggle-turbo-v0.2.1-6step-GGUF
-- Modelo base (Viggle/Qwen-Image-2.1-viggle-turbo): https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo
-- Licencia del modelo base: https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo/blob/main/LICENSE
-- Nodo personalizado de Viggle: https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo/blob/main/comfyui/viggle_turbo.py
-- Flujo de trabajo texto-a-imagen incluido: https://huggingface.co/Abiray/Qwen-Image-2.1-viggle-turbo-v0.2.1-6step-GGUF/blob/main/Qwen-Image-2.1-viggle-turbo-t2i_GGUF.json
+- Hugging Face: https://huggingface.co/Abiray/Qwen-Image-2.1-viggle-turbo-v0.2.1-6step-GGUF
+- Modelo base (Viggle): https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo
+- Licencia: https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo/blob/main/LICENSE
+- Nodo ComfyUI de Viggle: https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo/blob/main/comfyui/viggle_turbo.py
+- Workflow texto-a-imagen: https://huggingface.co/Abiray/Qwen-Image-2.1-viggle-turbo-v0.2.1-6step-GGUF/blob/main/Qwen-Image-2.1-viggle-turbo-t2i_GGUF.json
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI
-- ComfyUI-GGUF (city96): https://github.com/city96/ComfyUI-GGUF
+- ComfyUI-GGUF: https://github.com/city96/ComfyUI-GGUF
 - llama.cpp: https://github.com/ggerganov/llama.cpp
-- Qwen Team / Alibaba en Hugging Face: https://huggingface.co/Qwen
-
-Nota: los resultados de busqueda web recibidos no guardan relacion con este modelo (contenian referencias a la franquicia Wallace & Gromit), por lo que no se ha incorporado ningun dato de esas fuentes.
+- Equipo Qwen: https://huggingface.co/Qwen

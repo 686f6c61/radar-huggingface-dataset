@@ -2,99 +2,98 @@
 
 ## Resumen
 
-TAARDIS-27B es un modelo de lenguaje de 27.000 millones de parámetros, desarrollado por CodeMasterCody3D (Cody Dixon), que aplica una cuantización ternaria extrema al modelo base Qwen/Qwen3.8-27B. Cada peso se representa como un entero ternario {-1, 0, +1} multiplicado por una escala, lo que reduce el tamaño del modelo a 5.90 GB (1.75 bits por peso) sin perder la capa de salida ni la tabla de embeddings, que también se cuantizan. El modelo está diseñado para ejecutarse en hardware limitado y es una alternativa de bajo coste a los modelos de 27B sin cuantizar.
+TAARDIS-27B Full-Ternary es una conversión post-entrenamiento del modelo Qwen/Qwen3.8-27B (26.895.998.464 parámetros) a un formato ternario extremo: cada peso, incluidos el LM head y la tabla de embeddings, se representa como un entero ternario `{-1, 0, +1} × escala`, con normas y escalas de grupo también en rejilla entera. El autor, CodeMasterCody3D, publica dos contenedores GGUF equivalentes en pesos: V1 a 2.125 bits por peso (7,16 GB) y V2 a 1,75 bits por peso (5,90 GB), este último un reempaquetado sin pérdida del primero mediante empaquetado de cinco trits por byte. El objetivo es ejecutar un transformer denso de 27B en hardware muy limitado: CPU con AVX2, GPUs de 6-8 GB o configuraciones híbridas CPU/GPU.
 
-La innovación principal es el sistema de corrección llamado "The Doctors": 496 ramas de baja dimensión y ternarias, entrenadas conjuntamente, que se cargan como un LoRA adicional y reducen el error de cuantización propagado. Sin estas correcciones, el modelo alcanza una perplejidad de 13.61 en wikitext; con ellas, baja a 11.83. El modelo requiere un fork específico de llama.cpp porque los pesos se almacenan en una base rotada (block-Hadamard) y el runtime debe rotar las activaciones; con llama.cpp estándar, la salida es incoherente.
+La innovación principal de la versión V2 es el sistema de corrección "The Doctors": 496 ramas ternarias de bajo rango entre capas que compensan el error de cuantización propagado y se cargan como adaptadores LoRA ternarios. Según la model card, esto reduce la perplejidad en wikitext (c512) de 13,61 a 11,83, a costa de 0,32 GB adicionales. El modelo se distribuye bajo licencia Apache 2.0, pero requiere un fork específico de llama.cpp porque los pesos viven en una base rotada (block-Hadamard) que el runtime estándar no sabe alinear.
 
-Es relevante porque demuestra que es posible cuantizar un transformer denso de 27B a menos de 6 GB manteniendo una calidad razonable, y porque publica la receta completa de conversión, a diferencia de otros proyectos similares con procesos cerrados.
+Es relevante ahora porque demuestra que la cuantización ternaria post-entrenamiento con correcciones aprendidas puede acercarse a alternativas entrenadas nativamente en ternario (Ternary-Bonsai-27B de PrismML), con un tamaño total inferior y una receta de conversión abierta. No obstante, la calidad final queda unos puntos porcentuales por debajo de Bonsai, y el ecosistema de herramientas es todavía muy restringido.
 
 ## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso basado en Qwen/Qwen3.8-27B; no es MoE |
-| Parámetros totales | 27.000 millones (según el autor; el repositorio de Hugging Face reporta 460.125.184 en safetensors) |
-| Parámetros activos | No aplica (modelo denso) |
-| Longitud de contexto | No disponible (el Colab menciona "1M-token ternary context", no confirmado) |
-| Tipos de cuantización | Ternario completo: {-1, 0, +1} × escala; V2 a 1.75 bits/peso, V1 a 2.125 bits/peso; normas y escalas en grid entero |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer denso (derivado de Qwen/Qwen3.8-27B), pesos ternarios en base rotada block-Hadamard |
+| Parametros totales | 26.895.998.464 |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | no disponible en la model card; los ejemplos de ejecución usan `-c 4096` y `-c 8192` |
+| Tipos de cuantizacion | Ternario `Q1_T_g128` (1,75 bpw, V2), `Q1_0_g128` (2,125 bpw, V1), KV cache ternaria `q1_t_g128`; adaptadores LoRA ternarios (V3, 0,32 GB) y f16 (V2, 0,92 GB) |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (modelo principal y LoRA de corrección "The Doctors") |
+| Formato de pesos | GGUF (requiere fork de llama.cpp `q1_0_g128-port`, commit ≥ `c4c56a5` para LoRA ternario) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una conversión post-training del transformer denso Qwen/Qwen3.8-27B. No se trata de un entrenamiento desde cero, sino de una cuantización que transforma todos los pesos —incluidos el LM head y la tabla de embeddings— en enteros ternarios {-1, 0, +1} multiplicados por una escala. Las normas y las escalas de grupo también se representan en el grid entero mediante pilas de dígitos ternarios balanceados (k8/k6). Los pesos se almacenan en una base rotada mediante transformadas de Hadamard por bloques, por lo que el runtime debe aplicar la rotación inversa a las activaciones; de ahí la necesidad del fork de llama.cpp.
+El modelo base es un transformer denso de Qwen (Qwen3.8-27B) con aproximadamente 26,9 mil millones de parámetros. TAARDIS no reentrena el modelo: aplica un pipeline de conversión post-entrenamiento que rota los pesos a una base block-Hadamard, los cuantiza a ternario `{-1, 0, +1}` con escalas de grupo en rejilla entera (pilas de dígitos balanced-ternary k8/k6 para normas y escalas) y empaqueta los estados en un sistema numeral base-3 (cinco trits por byte en V2, cuatro códigos de 2 bits por byte en V1). La conversión incluye LM head y embeddings, algo poco habitual en cuantizaciones ternarias.
 
-El sistema de corrección "The Doctors" consiste en 496 ramas de baja dimensión y ternarias, de rango entre 8 y 256 por multiplicación de matrices, entrenadas conjuntamente para cancelar el error de cuantización propagado a través de las capas. Se empaquetan como un LoRA nativo de llama.cpp con la rotación de base plegada offline. Según el autor, este mecanismo es 3,3 veces más efectivo que la corrección por capa en datos de validación. No se han proporcionado datos concretos sobre el dataset de entrenamiento ni sobre técnicas de alineación como RLHF o DPO. El repositorio de Hugging Face reporta un total de 460.125.184 parámetros en safetensors, cifra que no coincide con la afirmación del autor de 27.000 millones; se recomienda verificar antes de usar el modelo en producción.
+Sobre los pesos congelados se entrenan "The Doctors", 496 ramas ternarias de bajo rango cruzadas entre capas que corrigen el error de cuantización propagado. Se cargan como LoRA en tiempo de inferencia y son independientes del contenedor (sirven tanto para V1 como para V2). No se detalla en la información disponible el volumen de tokens de entrenamiento de las correcciones, la composición del dataset ni si hubo RLHF/DPO; tampoco se especifican innovaciones como decodificación especulativa o atención lineal. El autor declara que el desarrollo se realizó en solitario durante 51 días con GPUs gratuitas de Colab/Kaggle y un equipo de sobremesa.
 
 ## Capacidades
 
-- Generación de texto y chat conversacional: el modelo incluye una demo en Colab que abre una interfaz de chat.
-- Razonamiento heredado del modelo base Qwen3.8-27B; no se especifican capacidades adicionales de razonamiento.
-- Corrección de errores de cuantización mediante The Doctors: ramas LoRA ternarias de baja dimensión que mejoran la perplejidad de 13.61 a 11.83 en wikitext.
-- KV-cache ternario opcional (1.75 bits por valor), que reduce el consumo de memoria en contextos largos.
-- Soporte de contexto largo: el Colab menciona un contexto ternario de 1M tokens, aunque no se confirma en la ficha del modelo.
-- No se mencionan capacidades multimodales, tool calling, function calling ni agentes.
+- Generación de texto conversacional: la model card incluye ejemplos de prompt-respuesta tipo "Q: Why is the sky blue? A:".
+- Razonamiento y conocimiento general heredados del modelo base Qwen3.8-27B (no se documentan evaluaciones específicas tras la cuantización).
+- Generación de código y matemáticas: capacidad presumible del base, sin benchmarks publicados en la información disponible.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible; la model card solo muestra ejemplos en inglés.
+- Capacidades especiales: caché KV ternaria (`q1_t_g128`) para reducir memoria en contexto largo; carga de correcciones vía `--lora`; ejecución híbrida CPU/GPU con offload selectivo de capas FFN.
 
 ## Casos de uso
 
-- Inferencia local en equipos de consumo: con un peso de 5.90 GB, el modelo puede ejecutarse en una RTX 3060 12GB o similar, usando el fork de llama.cpp con kernels CUDA. Es adecuado para prototipado sin acceso a GPUs de datacenter.
-- Despliegue de chatbots en entornos con restricciones de memoria: al usar 1.75 bits por peso, se reduce el coste de memoria; se puede servir con llama-server en un servidor con una GPU modesta.
-- Análisis de documentos extensos: la opción de KV-cache ternario y el contexto largo (1M según el Colab) permiten procesar documentos largos con menos VRAM que un modelo de 27B sin cuantizar.
-- Investigación en cuantización extrema: la receta abierta y el fork publicado permiten estudiar los efectos de la ternarización en transformers densos y comparar con otros métodos.
-- Experimentación con corrección de errores de cuantización: The Doctors ofrece un caso de estudio para técnicas de reparación de errores propagados en modelos cuantizados.
-- Educación en inferencia eficiente: el proyecto documenta el pipeline completo de conversión, cuantización y corrección, útil para cursos sobre optimización de LLMs.
-- Aplicaciones con CPU AVX2: los kernels ternarios permiten ejecutar el modelo en CPU sin GPU, adecuado para servidores sin acelerador.
+- Inferencia en CPU de sobremesa: con el fichero V1 (2,125 bpw) y kernels AVX2, un 27B ocupa unos 8 GB de RAM y rinde aproximadamente 3 t/s en un Ryzen 3600 de 12 hilos, lo que permite prototipos y asistentes locales sin GPU.
+- Despliegue en GPU de gama baja: el fichero V2 (5,90 GB) más los Doctors V3 (0,32 GB) caben en tarjetas de 8 GB; en una RX 5600 XT de 6 GB con split FFN en CPU se midieron 4,15 t/s frente a 2,85 t/s en CPU pura.
+- Servicio local con `llama-server`: el fork compila el target `llama-server`, de modo que puede exponerse una API compatible con endpoints para integrarse en aplicaciones internas con presupuesto de VRAM reducido.
+- Procesamiento de documentos con contexto medio: los ejemplos oficiales usan ventanas de 4096 y 8192 tokens con caché KV ternaria, adecuadas para resumen y extracción sobre documentos de varias páginas.
+- Investigación en cuantización extrema: la receta abierta (fork y herramientas publicadas) permite reproducir la conversión, comparar V1 y V2 y estudiar el efecto de las correcciones de bajo rango sobre la perplejidad.
+- Evaluación comparativa de métodos ternarios: sirve como referencia reproducible frente a modelos entrenados nativamente en ternario, con comandos de verificación de perplejidad incluidos (`llama-perplexity -m <file> -f wiki.test.raw -c 512`).
+- Experimentación educativa y demos: el tamaño de descarga (5,90 GB) y la ejecución en hardware consumer facilitan talleres y pruebas de concepto sobre modelos de 27B.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El único dato de rendimiento es la perplejidad en wikitext (contexto 512, 274 chunks), medida con el mismo binario, kernels y texto:
+| Metrica | TAARDIS-27B V2 | TAARDIS-27B V1 | Ternary-Bonsai-27B |
+|---|---|---|---|
+| Perplejidad wikitext c512 (solo pesos) | 13,6114 | 13,61 | no disponible |
+| Perplejidad wikitext c512 (con Doctors) | 11,8346 | no disponible | 11,01 |
+| Tamano GGUF ternario | 5,90 GB (1,75 bpw) | 7,16 GB (2,125 bpw) | 7,17 GB (2,125 bpw) |
+| Tamano con correcciones | 6,22 GB (Doctors V3) | no disponible | no disponible |
+| Decodificacion GPU (kernels fusionados, Blackwell) | 90 t/s | 101 t/s | no disponible |
+| Decodificacion CPU (AVX2, Ryzen 3600, 12 hilos) | más lenta (unpack base-3) | ~3 t/s | no disponible |
+| Split GPU 6 GB + CPU (RX 5600 XT + Ryzen 3600) | no disponible | 4,15 t/s | no disponible |
 
-| Configuración | Perplejidad (wikitext c512) |
-|---|---|
-| V1 / V2 pesos solos | 13.61 / 13.6114 |
-| V2 + The Doctors (recomendado) | 11.8346 |
-| Ternary-Bonsai-27B (referencia) | 11.01 |
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. La única métrica de calidad reportada es la perplejidad en wikitext.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el modelo V2 ocupa 5.90 GB; con The Doctors (0.92 GB) el total es 6.82 GB. No se especifica la VRAM mínima, pero hay que añadir el overhead de activaciones y KV-cache; en la práctica se necesitará al menos esa cantidad más un margen.
-- GPU recomendadas: RTX PRO 6000 (Blackwell) usada en las pruebas; también A100, H100, RTX 40xx, RTX 30xx y T4/RTX 20xx (arquitecturas CUDA 75, 80, 86, 89).
-- Cabe en GPU de consumo: sí, en tarjetas con 12 GB o más (RTX 3060 12GB, RTX 4070, etc.).
-- Opciones de despliegue: llama.cpp (fork específico), llama-cli, llama-server y llama-bench. No se mencionan vLLM, Ollama ni TGI.
-- Latencia y throughput: en RTX PRO 6000, con llama-bench, V2 (1.75 bpw): decode 90 t/s, prompt 2350 t/s; V1 (2.125 bpw): decode 101 t/s, prompt 2690 t/s. Antes de los kernels optimizados, ambos decodificaban a ~8 t/s en la misma GPU.
-- Para CPU: build con AVX2 y kernels ternarios.
+- VRAM/RAM para inferencia: V2 requiere 5,90 GB de pesos; con Doctors V3, 6,22 GB. V1 requiere 7,16 GB. La caché KV ternaria reduce adicionalmente el consumo en contexto largo.
+- GPU recomendadas: el autor reporta cifras con kernels fusionados en arquitectura Blackwell (90-101 t/s); el fork compila para CUDA (`-DGGML_CUDA=ON`, `CMAKE_CUDA_ARCHITECTURES=75`), ROCm/HIP (`-DGGML_HIP=ON`) y CPU AVX2 sin cambios de código.
+- GPU consumer: cabe en tarjetas de 8 GB con V2 + Doctors; en 6 GB funciona con offload de las capas FFN a RAM (medido en RX 5600 XT). En CPU pura, V1 ocupa unos 8 GB de RAM.
+- Opciones de despliegue: exclusivamente el fork `taardis-llama.cpp` (rama `q1_0_g128-port`), con targets `llama-cli`, `llama-server` y `llama-perplexity`. llama.cpp estándar, Ollama, vLLM o TGI no son compatibles: el modelo estándar carga el fichero pero produce basura (perplejidad ≈ 1.260.000).
+- Latencia y throughput: ~3 t/s en CPU (Ryzen 3600, 12 hilos, V1); 4,15 t/s con split 6 GB GPU + CPU; 90 t/s (V2) y 101 t/s (V1) en GPU Blackwell con kernels fusionados. No hay datos de latencia por petición ni de throughput en modo servidor concurrente.
 
 ## Comparativa con modelos similares
 
-La comparación disponible es con Ternary-Bonsai-27B de PrismML, otro modelo ternario basado también en Qwen3.8-27B. Se incluye el modelo base sin cuantizar como referencia, aunque no se dispone de datos:
+| Modelo | Parametros | Contexto | Perplejidad wikitext c512 | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| TAARDIS-27B V2 (con Doctors) | 26,9B denso | no disponible (ejemplos a 4-8k) | 11,8346 | Apache 2.0 | GGUF en HF, requiere fork |
+| Ternary-Bonsai-27B (PrismML) | ~27B (no confirmado) | no disponible | 11,01 | no disponible | publicado el 4 de julio de 2026, receta cerrada |
+| Qwen/Qwen3.8-27B (base) | 26,9B denso | no disponible | no disponible | no disponible en la información | HF |
 
-| Parámetro | TAARDIS-27B V2 | Ternary-Bonsai-27B | Qwen3.8-27B (base) |
-|---|---|---|---|
-| Tamaño GGUF ternario | 5.90 GB (1.75 bpw) | 7.17 GB (2.125 bpw) | No disponible |
-| Tamaño con correcciones | 6.82 GB | No disponible | No disponible |
-| Perplejidad wikitext c512 | 11.8346 (con Doctors) | 11.01 | No disponible |
-| Normas y escalas | Grid entero (k8/k6) | FP16 | No disponible |
-| Head + embedding | Ternario | Ternario | No disponible |
-| KV-cache ternario | Sí (1.75 bits/valor) | No | No disponible |
-| Receta de conversión | Abierta | Cerrada | No disponible |
-| Licencia | Apache 2.0 | No disponible | No disponible |
+Frente a Bonsai, TAARDIS ocupa menos espacio (6,22 GB con correcciones frente a 7,17 GB del modelo solo), mantiene normas y escalas en rejilla entera, ofrece caché KV ternaria y publica la receta de conversión; a cambio, la calidad es unos puntos porcentuales inferior porque Bonsai entrena sus pesos ternarios. No se dispone de datos para comparar con otras alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Requiere el fork de llama.cpp; con llama.cpp estándar el modelo produce resultados incoherentes (perplejidad aproximada de 1.260.000).
-- La perplejidad es mayor que la de Ternary-Bonsai-27B (11.83 vs 11.01), lo que indica una calidad de lenguaje ligeramente inferior.
-- Es una conversión post-training, no un modelo entrenado desde cero; la cuantización extrema puede degradar el rendimiento en tareas complejas.
-- No se han publicado benchmarks estándar (MMLU, HumanEval, GSM8K), por lo que no se puede evaluar su rendimiento en razonamiento, matemáticas o código.
-- Idiomas soportados no especificados; se asume que hereda los del modelo base, pero no se confirma.
-- No se mencionan capacidades de tool calling, agentes, visión o audio.
-- Riesgo de alucinación inherente; la cuantización ternaria puede aumentar la probabilidad de errores en generación.
-- El repositorio tiene 0 descargas y 0 likes, lo que indica ausencia de validación externa.
-- La licencia Apache 2.0 permite uso comercial, pero el despliegue depende del fork de llama.cpp; se recomienda revisar la licencia del fork.
+- Requiere obligatoriamente el fork de llama.cpp del autor; con llama.cpp estándar el modelo produce salida incoherente. Para LoRA ternario se necesita un build ≥ `c4c56a5`.
+- La calidad medida es inferior a la de Ternary-Bonsai-27B (11,83 frente a 11,01 de perplejidad), y no hay benchmarks de tareas (razonamiento, código, matemáticas) que confirmen el comportamiento tras la cuantización.
+- La cuantización ternaria agresiva puede degradar instrucciones, tool calling y coherencia en contextos largos; no se documenta ninguno de estos extremos.
+- Idiomas soportados no documentados; los ejemplos son solo en inglés, por lo que el rendimiento en castellano es incierto.
+- Riesgo de alucinación heredado del modelo base y potencialmente amplificado por el error de cuantización; se recomienda verificación humana en producción.
+- Sesgos conocidos del modelo base no documentados en la información disponible.
+- La licencia Apache 2.0 permite uso comercial, pero la dependencia de un fork no auditado y de kernels personalizados (CPU AVX2, CUDA, HIP) implica riesgos de mantenimiento y de soporte a largo plazo.
+- El proyecto lo mantiene una sola persona; no hay garantías de actualizaciones, parches de seguridad ni soporte.
+- El contexto máximo real no está especificado; usar ventanas mayores de 8192 tokens sin validar puede degradar la calidad.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/CodeMasterCody3D/taardis-27b-full-ternary
-- Colab (demo): https://colab.research.google.com/github/CodeMasterCody3D/taardis-llama.cpp/blob/q1_0_g128-port/notebooks/TAARDIS_chat.ipynb
-- Repositorio del fork de llama.cpp: https://github.com/CodeMasterCody3D/taardis-llama.cpp (rama q1_0_g128-port)
-- Perfil del autor en Hugging Face: https://huggingface.co/CodeMasterCody3D
+- Modelo en Hugging Face: https://huggingface.co/CodeMasterCody3D/taardis-27b-full-ternary
+- Fork de llama.cpp: https://github.com/CodeMasterCody3D/taardis-llama.cpp (rama `q1_0_g128-port`)
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Paper, blog o demo adicionales: no disponible

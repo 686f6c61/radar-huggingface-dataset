@@ -2,82 +2,86 @@
 
 ## Resumen
 
-Koliber v1.0 Base es un modelo de lenguaje causal (decoder-only) desarrollado por OrisTeam, entrenado desde cero específicamente para el idioma polaco. Se trata de un modelo base, no ajustado para instrucciones, pensado para completar texto y como punto de partida para fine-tuning, preferencia o investigación. Su tamaño compacto (alrededor de 126 millones de parámetros según la model card, aunque los pesos en safetensors ocupan 150,7 millones) y su ventana de contexto de 1536 tokens lo hacen adecuado para entornos con recursos limitados.
+Koliber v1.0 Base es un modelo de lenguaje causal (decoder-only) compacto desarrollado por OrisTeam y entrenado desde cero, diseñado principalmente para el idioma polaco. Con 126 millones de parámetros, se posiciona como un modelo base de pretraining, no como un asistente instruido ni un chatbot, y su propósito es servir como punto de partida para fine-tuning supervisado, optimización de preferencias, pretraining continuado e investigación. Su arquitectura incorpora técnicas modernas como GQA, RoPE, SwiGLU y RMSNorm, junto con una innovación destacable: un objetivo auxiliar de predicción de estado oculto futuro que se aplica únicamente durante el entrenamiento.
 
-El modelo incorpora innovaciones técnicas como atención con GQA (Grouped Query Attention), posiciones rotatorias RoPE, activación SwiGLU y normalización RMSNorm, además de un objetivo auxiliar de predicción de estados futuros durante el entrenamiento que no añade parámetros en inferencia. Su licencia Apache 2.0 permite uso comercial sin restricciones, lo que facilita su adopción en proyectos privados.
+El modelo fue entrenado con aproximadamente 2.534 millones de tokens, una cifra relativamente modesta que refleja su naturaleza compacta y su enfoque en el polaco. Su ventana de contexto es de 1536 tokens, suficiente para tareas de completado de texto y generación de documentos cortos, pero limitada para aplicaciones que requieran contexto extenso.
 
-A pesar de su pequeño tamaño, Koliber v1.0 Base demuestra una capacidad de generación coherente en polaco, como se muestra en los ejemplos cualitativos de la model card, aunque no se han publicado resultados de benchmarks cuantitativos. Es una opción interesante para quienes necesitan un modelo ligero y especializado en polaco, ya sea para prototipado rápido o como base para tareas específicas.
+La relevancia de Koliber v1.0 Base radica en su carácter de modelo nativo en polaco entrenado desde cero, con una licencia Apache 2.0 que permite uso comercial sin restricciones significativas. Aunque su tamaño es reducido, su diseño arquitectónico y su objetivo auxiliar de entrenamiento lo convierten en un objeto de estudio interesante para investigadores interesados en técnicas de entrenamiento eficiente y en el desarrollo de modelos para lenguas de recursos limitados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only causal (GQA, RoPE, SwiGLU, RMSNorm, sin bias, LM head tied) |
-| Parametros totales | 150.719.232 (según safetensors; la model card declara 126.044.928) |
-| Parametros activos | No aplica (modelo denso) |
+| Arquitectura | Transformer decoder-only causal, GQA, RoPE, SwiGLU, RMSNorm |
+| Parametros totales | 126.044.928 (126M) segun model card; 150.719.232 segun safetensors |
+| Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | 1536 tokens |
-| Tipos de cuantizacion | No disponible (no se mencionan en la documentación) |
-| Idiomas soportados | Polaco (principal) |
+| Tipos de cuantizacion | No disponible |
+| Idiomas soportados | Polaco (principal), ingles (secundario no declarado) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors, requiere `trust_remote_code=True` en transformers |
+| Formato de pesos | Safetensors |
 
 ## Arquitectura y entrenamiento
 
-Koliber v1.0 Base es un transformer decoder-only con 12 capas, hidden size de 768, 12 cabezas de consulta y 2 cabezas de clave/valor (GQA), dimensión de cabeza de 64 y FFN de 3072. Usa RoPE para codificación posicional, SwiGLU como activación, RMSNorm para normalización y no emplea sesgos. El LM head está atado a las embeddings, lo que reduce el número de parámetros.
+Koliber v1.0 Base emplea una arquitectura transformer decoder-only con 12 capas, tamaño oculto de 768, 12 cabezas de consulta y 2 cabezas de clave-valor (GQA), dimensión de cabeza de 64, FFN de 3072, y sin sesgos. Utiliza RoPE para codificación posicional, activación SwiGLU y normalización RMSNorm, con LM head atada a los embeddings. El modelo fue entrenado desde cero con aproximadamente 2.534 millones de tokens, principalmente en polaco, en una etapa de pretraining base.
 
-El entrenamiento se realizó desde cero con 2.534.400.000 tokens (~2.534B), principalmente en polaco. Además de la pérdida estándar de predicción del siguiente token, se utilizó un objetivo auxiliar de predicción de estados ocultos futuros: una cabeza entrenable predice la representación oculta aproximadamente 128 tokens adelante, muestreada cada 32 tokens, mediante una proyección de bajo rango de 192 dimensiones y pérdida de distancia coseno. El peso de esta pérdida auxiliar fue 0.03, combinado como `L = L_NTP + 0.03 × L_future`. Esta cabeza auxiliar no forma parte del modelo de inferencia y no añade parámetros en tiempo de ejecución.
+La innovación técnica más destacable es un objetivo auxiliar de predicción de estado oculto futuro aplicado solo durante el entrenamiento. Una cabeza auxiliar aprende a predecir una representación oculta futura aproximadamente 128 tokens por delante, muestreada cada 32 tokens, mediante una proyección de bajo rango de 192 dimensiones y pérdida de distancia coseno. La pérdida auxiliar se aplica con un peso de 0,03: L = L_NTP + 0,03 × L_future. Esta cabeza no forma parte del modelo de inferencia liberado, no añade parámetros en tiempo de inferencia y no es necesaria para cargar o generar con Koliber.
 
 ## Capacidades
 
-- Generación de texto en polaco: completado de prefijos naturales, coherente y con cierta fluidez, como muestran los ejemplos de la model card.
-- Modelo base: no está alineado ni ajustado para instrucciones, por lo que no responde a prompts de chat; es adecuado para completar texto o como base para fine-tuning.
-- Fine-tuning: al ser un modelo base, puede ser adaptado mediante SFT, DPO o entrenamiento continuado para tareas específicas en polaco.
-- Bajo coste computacional: su tamaño reducido permite ejecutarlo en hardware modesto, incluso en CPU.
-- Sin soporte de tool calling, visión, audio ni otras modalidades: es exclusivamente texto.
-- Capacidad multilingüe limitada: aunque entrenado principalmente en polaco, puede generar algo en otros idiomas, pero con calidad inferior.
+- Generación de texto y completado de texto en polaco: el modelo está diseñado principalmente para completar prefijos de texto natural, no para seguir instrucciones conversacionales.
+- Razonamiento básico y coherencia local: puede mantener coherencia en fragmentos cortos, aunque con limitaciones propias de un modelo de 126M.
+- Generación de código y matemáticas: no se declaran capacidades específicas; el entrenamiento se centra en texto general en polaco.
+- Tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: principalmente polaco; no se declaran otros idiomas de forma oficial.
+- Capacidades especiales: no dispone de modo thinking, visión ni audio.
+- Modelo base no alineado: no ha pasado por RLHF ni DPO, por lo que no es adecuado como asistente directo.
 
 ## Casos de uso
 
-- Completado de texto en polaco: el modelo puede usarse para autocompletar frases o párrafos en aplicaciones de escritura asistida, como editores de texto o herramientas de redacción, gracias a su capacidad de generar continuaciones coherentes a partir de prefijos.
-- Fine-tuning para clasificación de texto en polaco: al ser un modelo base, puede ajustarse para tareas como análisis de sentimiento, detección de spam o categorización de documentos, aprovechando su representación del lenguaje polaco.
-- Generación de contenido creativo en polaco: puede emplearse para generar borradores de artículos, cuentos o guiones, aunque requiere supervisión y filtrado debido a su naturaleza no alineada.
-- Prototipado rápido de aplicaciones NLP: su tamaño compacto y licencia permisiva permiten experimentar con arquitecturas y técnicas de fine-tuning sin grandes requisitos de hardware, ideal para investigación o pruebas de concepto.
-- Entrenamiento de modelos más grandes: puede servir como punto de partida para continuar el preentrenamiento con dominios específicos (por ejemplo, legal, médico) en polaco, dado que ya ha aprendido patrones lingüísticos generales.
-- Educación y experimentación: su código abierto y su diseño sencillo (GQA, RoPE, SwiGLU) lo convierten en un buen candidato para estudiar el comportamiento de modelos pequeños o para probar técnicas de alineación y regularización.
+- Completado de texto en polaco: el modelo puede generar continuaciones coherentes a partir de prefijos naturales, adecuado para autocompletado en editores o herramientas de escritura asistida en polaco, gracias a su entrenamiento específico en ese idioma.
+- Fine-tuning supervisado para tareas específicas: al ser un modelo base, sirve como punto de partida para entrenar clasificadores, generadores de resúmenes o sistemas de extracción de información en polaco con datasets pequeños.
+- Investigación en técnicas de entrenamiento eficiente: su objetivo auxiliar de predicción de estado oculto futuro lo convierte en un caso de estudio para analizar el impacto de objetivos auxiliares en modelos compactos.
+- Pretraining continuado en dominios especializados: con 126M de parámetros y contexto de 1536 tokens, puede adaptarse a dominios como legal, médico o técnico mediante continued pretraining con corpus específicos en polaco.
+- Generación de datos sintéticos para aumento de datasets: puede producir texto en polaco para aumentar corpus de entrenamiento de otros modelos o para pruebas de robustez.
+- Educación e investigación en PLN (procesamiento de lenguaje natural): su tamaño reducido permite ejecutarlo en hardware modesto, facilitando experimentos académicos y docencia sobre modelos de lenguaje.
+- Prototipado rápido de aplicaciones de texto en polaco: al ser ligero y con licencia Apache 2.0, permite iterar rápidamente en productos que requieran generación de texto sin grandes inversiones en infraestructura.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card solo incluye ejemplos cualitativos de generación comparados con Azurro/APT3-275M-Base, sin métricas numéricas. Por tanto, no es posible evaluar su rendimiento en tareas estándar como MMLU, HumanEval o GSM8K.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: con 150,7 millones de parámetros, en fp16 ocupa aproximadamente 300 MB, más overhead de activaciones y memoria del optimizador. En cuantización de 4 bits, el modelo puede caber en menos de 100 MB.
-- GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente, como NVIDIA GTX 1050 Ti, RTX 2060, o incluso integradas modernas. También puede ejecutarse en CPU con razonable velocidad para generación de pocos tokens.
-- Compatibilidad con consumer GPU: sí, cabe en cualquier GPU de consumo actual, incluso en Raspberry Pi con suficiente RAM.
-- Opciones de despliegue: al ser un modelo de transformers, puede servirse con vLLM, TGI, o mediante llama.cpp si se convierte a GGUF. También es compatible con Ollama si se empaqueta adecuadamente.
-- Latencia y throughput: no se han publicado datos específicos, pero por su tamaño, se espera una latencia de decodificación de milisegundos por token en GPU moderna y de decenas de milisegundos en CPU.
+- VRAM estimada para inferencia: al tratarse de un modelo de 126M de parámetros, en FP16 requiere aproximadamente 0,25 GB de VRAM; en cuantización de 8 bits, unos 0,13 GB; en 4 bits, unos 0,07 GB (estimaciones teóricas, no confirmadas por el autor).
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; una RTX 3060, RTX 4060 o superior puede ejecutarlo sin problemas. También funciona en CPU.
+- Cabe en consumer GPU: sí, en prácticamente cualquier GPU con al menos 1 GB de VRAM, e incluso en CPU.
+- Opciones de despliegue: transformers (con trust_remote_code=True), llama.cpp (si se convierte a GGUF), Ollama (previa conversión), vLLM (compatibilidad no confirmada), TGI (no confirmado).
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Idioma | Licencia | Notas |
+| Modelo | Parametros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| Koliber v1.0 Base | 126M (150M safetensors) | 1536 | Polaco | Apache 2.0 | Entrenado desde cero, con objetivo auxiliar |
-| Azurro/APT3-275M-Base | 275M | No disponible | Polaco | No disponible | Modelo base más grande, mencionado en la model card como comparación cualitativa |
-| Otros modelos pequeños en polaco | No disponible | No disponible | Polaco | No disponible | No se dispone de información adicional en la búsqueda |
+| Koliber v1.0 Base | 126M | 1536 | Apache 2.0 | Polaco | Hugging Face |
+| Azurro/APT3-275M-Base | 275M | No disponible | No disponible | Polaco | Hugging Face |
+| Otros modelos base polacos de tamaño similar | No disponible | No disponible | No disponible | Polaco | No disponible |
 
-La comparativa se limita a APT3-275M-Base, que aparece en la model card. No se han encontrado otros modelos comparables en la información proporcionada.
+La comparativa se limita a Azurro/APT3-275M-Base, mencionado en la model card como referencia cualitativa. No se dispone de datos de benchmarks comparativos.
 
 ## Limitaciones y advertencias
 
-- Modelo no alineado: al ser un modelo base, puede generar contenido falso, ofensivo, sesgado o inapropiado. No debe usarse en producción sin filtros y salvaguardas adicionales.
-- Riesgo de alucinación: puede inventar hechos, nombres, citas, fechas, números o fuentes, como se advierte en la model card.
-- Contexto limitado: la ventana de 1536 tokens es corta para tareas que requieren dependencias de largo alcance.
-- Idioma: entrenado principalmente en polaco; su rendimiento en otros idiomas es limitado y no garantizado.
-- Sin soporte de instrucciones: no responde a prompts de chat ni sigue instrucciones; solo completa texto.
-- Requiere `trust_remote_code=True`: al usar código personalizado, hay que confiar en el repositorio, lo que implica un riesgo de seguridad si se desconoce el origen.
-- Sin benchmarks publicados: no hay evidencia cuantitativa de su rendimiento en tareas estándar, lo que dificulta la evaluación objetiva.
+- Modelo base no alineado: no ha pasado por RLHF ni DPO, por lo que puede generar contenido falso, engañoso, ofensivo, sesgado o inseguro.
+- Riesgo de alucinación: puede inventar hechos, nombres, citas, fechas, números, fuentes o eventos.
+- Limitaciones de contexto: ventana de 1536 tokens, insuficiente para documentos largos o conversaciones multi-turno extensas.
+- Limitaciones de idioma: entrenado principalmente en polaco; su rendimiento en otros idiomas no está garantizado.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el autor advierte que se requiere evaluación, filtrado y salvaguardas adicionales antes de desplegarlo en entornos de usuario final o de alto riesgo.
+- Caveat de producción: no debe tratarse como fuente factual ni autoritativa; requiere supervisión humana y mecanismos de seguridad específicos.
+- Discrepancia en el número de parámetros: la model card indica 126M, mientras que los safetensors reportan 150,7M; esta diferencia podría deberse a la cabeza auxiliar de entrenamiento o a otros componentes no reflejados en la card.
 
 ## Enlaces
 
-- [Modelo en Hugging Face](https://huggingface.co/OrisTeam/Koliber-v1.0-Base)
-- [Versión Preview en Hugging Face](https://huggingface.co/OrisTeam/Koliber-v1.0-Base-Preview)
+- Hugging Face: https://huggingface.co/OrisTeam/Koliber-v1.0-Base
+- Model card oficial: incluida en el repositorio de Hugging Face
+- No se han encontrado papers, blogs, repositorios o demos adicionales en la búsqueda web.

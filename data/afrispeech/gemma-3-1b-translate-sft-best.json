@@ -299,8 +299,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "michsethowusu/gemma-3-1b-translate-sft-best",
+  "renamed_at": "2026-11-20T02:14:08.764Z",
   "benchmarks": [],
   "sources": [
     {

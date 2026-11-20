@@ -2,80 +2,87 @@
 
 ## Resumen
 
-Scylla's Band v2 es un modelo de síntesis de voz (text-to-speech) multilingüe, multi-voz y expresivo, desarrollado por spybyscript para inferencia local y autohospedada. El modelo predice la duración de los fonemas, genera latentes acústicos continuos mediante rectified flow y los decodifica a una forma de onda de 24 kHz a través de un adaptador acústico aprendido y un decodificador Vocos congelado. Está orientado a entornos de producción donde la privacidad y el control sobre la síntesis son críticos, ya que no depende de servicios en la nube.
+Scylla's Band es un modelo de síntesis de voz y de canto (text-to-speech y singing-voice-synthesis) desarrollado por el usuario spybyscript y publicado en Hugging Face bajo licencia Apache 2.0. Se distribuye como un conjunto de grafos precompilados en varios formatos (litert, tflite, onnx, coreml y pytorch) y se ejecuta mediante un runtime propio escrito en C con ABI estable, disponible para Linux, Windows, macOS, iOS, visionOS y Android. El modelo cubre seis idiomas (inglés, español, italiano, francés, alemán y vietnamita) y catorce voces.
 
-La versión 2 amplía el soporte de idiomas a francés, alemán y vietnamita, además de inglés (con dialectos estadounidense y británico), español e italiano. Mantiene un conjunto fijo de diez voces gestionadas y añade un control de afecto con cinco ejes independientes (calma, alegría, ira, tristeza y susurro). Los formatos de distribución incluyen paquetes ONNX Runtime para escritorio y servidor, LiteRT para móvil y embebido, y checkpoints de PyTorch para investigación y reexportación. La licencia Apache 2.0 permite uso comercial sin restricciones.
+La propuesta diferencial es unificar habla y canto en un único modelo: un mismo flujo generativo renderiza ambas modalidades, seleccionadas mediante un modo de entrega (`delivery_mode_id`), con dos decodificadores de forma de onda distintos (Vocos para habla y BigVGAN v2 ajustado para canto). La versión documentada es `v4-20261106`, que añade canto pop y balada a partir de partituras en JSON con letra, notas y tiempos, manteniendo el coste computacional del habla gracias a una doble destilación del flujo.
 
-La arquitectura se basa en un pipeline de tres etapas: frontend G2P (grafo de texto a fonema), modelo de duración y modelo acústico de flujo rectificado, seguido de un adaptador de vocoder. El repositorio incluye el runtime público en GitHub, con herramientas de descarga, validación y síntesis desde línea de comandos. El tamaño del repositorio es de 4,0 GB, lo que indica que es un modelo considerable para su categoría.
+El modelo resuelve el problema de integrar voz expresiva y canto controlable en un mismo artefacto desplegable en dispositivo (on-device), sin depender de servicios en la nube. Su relevancia actual radica en la combinación de licencia permisiva, soporte multiplataforma nativo y controles medidos de intensidad, ritmo y tono, lo que lo hace apto para aplicaciones interactivas con privacidad por diseño.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Continuous-latent duration/flow TTS (predicción de duración de fonemas, latentes acústicos con rectified flow, vocoder Vocos) |
-| Parametros totales | no disponible |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | 512 tokens G2P de texto, 512 fotogramas de fonemas, 640 fotogramas latentes (presupuestos fijos de gráfico) |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | en_us, en_gb, es, it, fr, de, vi |
-| Licencia | Apache 2.0 |
-| Formato de pesos | ONNX, LiteRT, PyTorch (.pt) |
+| Arquitectura | Flujo generativo (duration-flow) con dos decodificadores de waveform: Vocos (habla) y BigVGAN v2 ajustado (canto) |
+| Parámetros totales | no disponible |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | no disponible |
+| Idiomas soportados | en, es, it, fr, de, vi |
+| Licencia | apache-2.0 |
+| Formato de pesos | litert, tflite, onnx, coreml, pytorch |
 
 ## Arquitectura y entrenamiento
 
-Scylla's Band v2 sigue un pipeline de síntesis en tres etapas. Primero, un frontend G2P (grafema a fonema) convierte el texto de entrada en una representación fonética a nivel de frase, con normalización de números y puntuación específica por idioma. Después, un modelo de duración predice la duración de cada fonema usando datos de alineación derivados del audio real. Finalmente, un modelo acústico de flujo rectificado genera latentes continuos de 24 dimensiones, que se decodifican a una forma de onda de 24 kHz mediante un adaptador acústico y el decodificador de forma de onda Vocos, congelado.
+El modelo se organiza como un flujo generativo (flow matching) que produce representaciones acústicas intermedias, seguido de un decodificador de waveform. En `v4-20261106` conviven dos rutas: el habla conserva el decodificador Vocos y el flujo destilado de `v3`, mientras que el canto emplea un decodificador BigVGAN v2 ajustado sobre las voces del modelo. La selección de ruta la realiza el runtime según el modo de entrega, que entra como una entrada adicional del grafo (`delivery_mode_id`) dentro del contrato `scyllasband_measured_controls_v4`.
 
-El entrenamiento incorpora varias innovaciones técnicas: vistas largas y fragmentadas de la secuencia, silencios de puntuación explícitos, contexto de tres segmentos para mejorar la coherencia, un dropout condicionado más fuerte para robustez, y un adaptador de vocoder entrenado tanto con latentes acústicos reales (oracle) como con latentes generados. Los objetivos de duración se derivan de la alineación real de los audios, y el G2P a nivel de frase que se distribuye es el frontend de tiempo de ejecución, no la fuente de las etiquetas de entrenamiento acústico. La versión 2 también introduce un contrato de afecto versionado (axis-order version 3) que evita malinterpretar las posiciones de los ejes de la v1.
+El entrenamiento del canto se construyó sobre el flujo destilado de `v3`, continuado mediante reflow sobre material cantado; la salida hablada arranca idéntica a `v3`. Las rutas de canto y balada se destilaron una segunda vez desde el campo con classifier-free guidance del profesor (melodía y modo desactivados, guidance 2), de modo que el flujo reproduce la respuesta guiada sin guía: 4 pasos Euler con una evaluación por paso, frente a los 8 pasos Heun con guía (32 evaluaciones) del primer candidato de canto (`v4-20261105`, no publicado). La claridad de la letra y la precisión de tono se mantienen según el autor. No se especifican en la información disponible el número de tokens de entrenamiento ni la composición exacta del dataset.
 
 ## Capacidades
 
-- Síntesis de voz multilingüe con siete identificadores públicos de idioma: en_us, en_gb, es, it, fr, de y vi.
-- Diez voces gestionadas: ariadne, felix, gwen, ink, max, orpheus, rex, scylla, stone y tuesday.
-- Control expresivo continuo y mixto sobre cinco dimensiones de afecto: calma, alegría, ira, tristeza y susurro, con escala de emoción configurable.
-- Síntesis de diálogo multi-voz mediante texto etiquetado, que permite cambiar de voz en una misma secuencia.
-- Narración de formato largo con planificación y fragmentación automática.
-- Inferencia multiplataforma con ONNX Runtime (escritorio, servidor, Android, iOS) y LiteRT (nativo y embebido).
-- Soporte de dialecto inglés explícito: Ink, Orpheus y Tuesday usan en_gb; el resto de voces gestionadas usan en_us.
-- Paquetes de inferencia y checkpoints PyTorch incluidos para inspección, investigación y reexportación.
+- Síntesis de voz expresiva en seis idiomas (en, es, it, fr, de, vi) con catorce voces.
+- Canto a partir de partituras JSON con letra, tempo, estilo (`pop` o `ballad`) y notas `[label, pitch, beats]`.
+- Control medido de entrega en habla: intensidad, ritmo y tono, cada uno en rango −2 a 2, normalizados en desviaciones estándar respecto a la media de cada voz.
+- Segmentación automática de frases por silencios de un cuarto de segundo o más, renderizadas una a una.
+- Desplazamiento automático de octava al registro cantado de cada voz (`--no-register` conserva la octava escrita).
+- Soporte de palabras repartidas en varias notas mediante numeración (`baby~1`, `baby~2`) y silencios con la etiqueta `-`.
+- Ejecución on-device con WebGPU o CPU en el navegador tras una descarga única de 303 MB.
+- No se documenta soporte de tool calling, agentes, visión ni audio de entrada.
 
 ## Casos de uso
 
-- Narración de audiolibros y contenido de formato largo: el modelo gestiona automáticamente la planificación y fragmentación de texto largo, manteniendo coherencia y naturalidad en la prosodia.
-- Diálogos multi-voz para videojuegos o animación: permite asignar voces distintas a cada personaje mediante texto etiquetado, sin necesidad de concatenar clips generados por separado.
-- Síntesis expresiva para asistentes virtuales: el control de afecto (calma, alegría, ira, tristeza, susurro) permite ajustar el tono en función del contexto conversacional, mejorando la experiencia de usuario.
-- Accesibilidad: conversión de texto a voz en español, inglés, francés, alemán, italiano y vietnamita para aplicaciones de lectura de pantalla o interfaces adaptadas.
-- Sistemas de atención al cliente autohospedados: al ejecutarse localmente con ONNX Runtime, no hay dependencia de servicios externos, lo que reduce costes y garantiza privacidad de los datos de los usuarios.
-- Generación de contenido para medios y entretenimiento: voces en inglés británico y estadounidense, además de cinco idiomas más, permiten producir locuciones para vídeo, podcast o anuncios sin contratar actores de voz.
+- Aplicaciones de lectura en voz alta en el navegador: el modelo puede ejecutarse íntegramente en el dispositivo del usuario con WebGPU o CPU, de modo que el texto introducido no sale del navegador, lo que encaja en productos con requisitos estrictos de privacidad.
+- Audiolibros y contenido narrado con matices: los controles de intensidad y ritmo permiten ajustar el tono emocional y la velocidad de cada pasaje sin cambiar de voz, útil para producciones que requieren consistencia de narrador.
+- Asistentes de voz integrados en aplicaciones móviles: el runtime nativo cubre iOS, visionOS y Android, lo que permite empaquetar la síntesis en la propia aplicación sin llamadas a servidores externos.
+- Prototipado musical y demos de canto: a partir de una partitura JSON con letra y notas se genera una interpretación cantada en estilo pop o balada, adecuada para maquetas rápidas o herramientas educativas de composición.
+- Localización de contenido multimedia: al cubrir seis idiomas con las mismas catorce voces y los mismos controles normalizados, se pueden generar versiones dobladas de un mismo guion manteniendo parámetros de entrega comparables entre idiomas.
+- Accesibilidad y sistemas de comunicación aumentativa: la síntesis local y de baja latencia permite construir interfaces de voz para personas con dificultades del habla sin depender de conectividad.
+- Integración en pipelines de generación de audio por lotes: el runtime de línea de comandos (`speak`, `sing`) facilita automatizar la producción de ficheros WAV a partir de textos o partituras en scripts.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El autor no proporciona métricas comparativas de calidad de voz (MOS), inteligibilidad o rendimiento en tareas estándar de TTS.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- El tamaño del repositorio es de 4,0 GB, por lo que el modelo completo ocupa varios GB en disco.
-- No se especifica la VRAM mínima para inferencia en GPU, pero al ser un modelo TTS de tamaño moderado (no un LLM), puede ejecutarse en GPUs consumer como RTX 3060 o superiores.
-- No se proporcionan datos de latencia ni throughput. El perfil de calidad por defecto usa 8 pasos de muestreo Heun, lo que sugiere un coste computacional moderado.
-- Opciones de despliegue: ONNX Runtime para escritorio, servidor, Android e iOS; LiteRT para móvil y embebido; también se puede ejecutar desde Python con el runtime público de GitHub.
-- El modelo puede funcionar en CPU para pruebas, pero para síntesis en tiempo real se recomienda GPU o acelerador.
+- El repositorio ocupa 20,9 GB, aunque la demo web descarga un paquete de 303 MB para ejecución en navegador.
+- Ejecución en navegador mediante WebGPU (GPU del cliente) o CPU, sin datos concretos de latencia publicados.
+- Runtime nativo disponible para Linux, Windows, macOS, iOS, visionOS y Android; en macOS se ofrecen los paquetes `coreml` y `coreai`.
+- El autor indica que el runtime nativo compilado (`build-native`) es mucho más rápido y ligero que el motor Python, que ejecuta los mismos planes.
+- No se especifican VRAM mínima, GPU recomendadas, ni cifras de throughput o latencia en la información disponible.
+- Opciones de despliegue documentadas: runtime propio `scyllasband` (Python y nativo), LiteRT, ONNX, CoreML y PyTorch.
 
 ## Comparativa con modelos similares
 
-No se dispone de una comparativa directa con modelos de la misma categoría en la información proporcionada. No obstante, se puede situar en el ecosistema de TTS multilingüe expresivo autohospedado, similar a otros sistemas como Piper, Coqui TTS o VITS. La diferencia clave es que Scylla's Band v2 ofrece un control de afecto más granular (5 ejes) y soporte de diálogo multi-voz, mientras que alternativas como Piper son más ligeras pero con menos control expresivo. No se pueden dar cifras de rendimiento sin datos oficiales.
+| Modelo | Tipo | Idiomas | Licencia | Formatos | Canto | Contexto |
+|---|---|---|---|---|---|---|
+| Scylla's Band (`v4-20261106`) | TTS + canto, flujo + Vocos/BigVGAN | 6 | Apache 2.0 | litert, tflite, onnx, coreml, pytorch | Sí (partitura JSON) | no disponible |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone en la información proporcionada de datos sobre modelos alternativos de la misma categoría (TTS expresivo on-device con canto) para establecer una comparación cuantitativa.
 
 ## Limitaciones y advertencias
 
-- No es un sistema de clonación de voz arbitraria: el autor indica explícitamente que no está pensado para suplantar a personas reales ni para uso fraudulento.
-- Los presupuestos fijos de gráfico (512 tokens de texto G2P, 512 fotogramas de fonemas, 640 latentes) pueden limitar la longitud máxima de una secuencia de entrada; el modelo fragmenta automáticamente texto largo, pero puede haber cortes en entradas muy extensas.
-- El control de afecto se limita a las cinco dimensiones entrenadas; no se incluye un eje de sarcasmo ni otras emociones no entrenadas, para preservar la coherencia con la v1.
-- La normalización de texto está adaptada a los seis idiomas soportados, pero puede haber errores en números o puntuación poco frecuentes en cada idioma.
-- No se distribuyen datos de entrenamiento, lo que limita la reproducibilidad de la investigación.
-- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre la calidad de la síntesis en contextos específicos de producción.
+- El modelo nunca canta de forma libre: requiere una partitura (escrita por el usuario o por un planificador) con letra, notas y tiempos.
+- El control de intensidad modula cuánto se expresa una emoción, no qué emoción se transmite; no permite seleccionar emociones arbitrarias.
+- Las peticiones de control fuera del rango −2 a 2 se recortan al límite, y los controles no especificados toman el valor por defecto de la voz (0 en esta versión).
+- Los runtimes compilados para `v3` rechazan este paquete y siguen descargando `v3-20261104-apple`; es necesario actualizar el runtime para usar `v4`.
+- No se documentan sesgos conocidos, tasas de alucinación ni limitaciones específicas de contexto o idioma en la información disponible.
+- La licencia Apache 2.0 permite uso comercial, pero no se detallan restricciones adicionales sobre las voces ni sobre el material de entrenamiento.
+- No se publican cifras de latencia, throughput ni requisitos mínimos de hardware, lo que dificulta dimensionar despliegues en producción.
 
 ## Enlaces
 
-- Repositorio de Hugging Face: https://huggingface.co/spybyscript/scyllasbandv2
-- Repositorio de runtime en GitHub: https://github.com/lowkeytea/scyllasband
-- Página de demostración interactiva: https://lowkeytea.github.io/scyllasband/
-- Discord del proyecto: https://discord.gg/cNdBuM3tS
-- Model card en el repositorio de GitHub: https://github.com/lowkeytea/scyllasband/blob/main/MODEL_CARD.md
+- Modelo en Hugging Face: https://huggingface.co/spybyscript/scyllasbandv2
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/spybyscript/scyllasband
+- Demo alternativa: https://lowkeytea.dev/scyllasband/demo/
+- Runtime en GitHub: https://github.com/lowkeytea/scyllasband

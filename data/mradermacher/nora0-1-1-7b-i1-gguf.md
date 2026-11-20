@@ -2,108 +2,92 @@
 
 ## Resumen
 
-mradermacher/Nora0.1-1.7B-i1-GGUF es un repositorio de cuantizaciones en formato GGUF generado por el usuario mradermacher a partir del modelo base uniqueplayer9102/Nora0.1-1.7B. No se trata, por tanto, de un modelo entrenado desde cero, sino de una redistribucion optimizada para inferencia local del modelo original, con 1.720.574.976 parametros (aproximadamente 1,72 mil millones) y una orientacion declarada conversacional segun las etiquetas del repositorio.
+Nora0.1-1.7B-i1-GGUF es la colección de cuantizaciones GGUF generadas por mradermacher a partir del modelo base uniqueplayer9102/Nora0.1-1.7B, un modelo de lenguaje de 1.720.574.976 parámetros (aproximadamente 1,7 mil millones) construido sobre la arquitectura Qwen3 y orientado a conversación, roleplay y escritura creativa. El modelo base está publicado bajo licencia Apache 2.0 y se entrenó sobre datasets de conversación como PygmalionAI/PIPPA y lipilipic/NSFW_gemma-2b-it-2, lo que lo sitúa en el segmento de modelos pequeños especializados en diálogo abierto y narrativa.
 
-El interes practico del repositorio esta en su catalogo de cuantizaciones: incluye 24 variantes que van desde IQ1_S e IQ2_XXS hasta Q6_K, pasando por la familia completa K-quant y las variantes I-quant con calibracion mediante imatrix. Esa granularidad permite desplegar el modelo en hardware muy limitado, desde una Raspberry Pi o un portatil sin GPU dedicada hasta tarjetas graficas de gama de entrada, ajustando el equilibrio entre huella de memoria y calidad de salida.
+Este repositorio no contiene los pesos originales en safetensors, sino un conjunto de cuantizaciones GGUF con calibración imatrix (sufijo i1), desde IQ1_S (0,6 GB) hasta Q6_K (1,5 GB), pensadas para ejecución local en CPU/GPU con llama.cpp y herramientas compatibles. La relevancia práctica reside en que permite desplegar un modelo conversacional de 1,7B en hardware de consumo muy modesto, con un rango de compromisos calidad/tamaño muy granular.
 
-La relevancia actual de este tipo de repositorios es alta: los modelos de ~1,7 B son el objetivo habitual de experimentos de cuantizacion extrema, y disponer de todas las variantes en un unico lugar facilita medir la degradacion real de cada nivel de compresion sobre el mismo modelo base. Como contrapartida, el repositorio no documenta licencia, idiomas, longitud de contexto ni resultados de evaluacion, por lo que cualquier uso en produccion exige consultar primero el repositorio del modelo original.
+La ficha describe tanto las características del modelo base tal como se deducen de los metadatos disponibles (etiquetas qwen3, roleplay, conversational, en) como las particularidades del paquete de cuantizaciones. Cabe advertir que la model card del repositorio es fundamentalmente operativa (tabla de quants, instrucciones de uso) y no aporta detalles de entrenamiento, benchmarks ni especificaciones de contexto, por lo que varios campos se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (la model card del repositorio de cuantizacion no la especifica) |
-| Parametros totales | 1.720.574.976 (1,72 B) |
-| Parametros activos | No procede / no disponible (no se ha confirmado que sea un modelo MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, small-IQ4_NL, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K |
-| Idiomas soportados | No disponible |
-| Licencia | No disponible (no se declara en el repositorio de cuantizacion) |
-| Formato de pesos | GGUF (multiples archivos, uno por cuantizacion) |
-
-Otros datos del repositorio: autor mradermacher (cuantizador, no desarrollador del modelo), modelo base uniqueplayer9102/Nora0.1-1.7B, tamano total del repositorio 21,6 GB, etiquetas gguf, imatrix, conversational y endpoints_compatible, 0 descargas y 0 likes, creado el 2026-10-06 y actualizado el 2026-10-06.
+| Arquitectura | Qwen3 (transformer decoder-only, deducido de la etiqueta `qwen3`; detalles internos no disponibles) |
+| Parametros totales | 1.720.574.976 (dato real de safetensors del modelo base) |
+| Parametros activos | no disponible (no es MoE según los metadatos) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, IQ3_XXS, Q2_K, IQ3_XS, IQ3_S, Q3_K_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (todas con calibración imatrix, sufijo i1) |
+| Idiomas soportados | inglés (`en` en la model card); otros idiomas no disponibles |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones i1); el modelo base se distribuye en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion sobre la arquitectura del modelo base en la informacion proporcionada. El repositorio de cuantizacion no incluye model card explicativa, ficha tecnica ni referencia a un paper: unicamente los metadatos de generacion de las cuantizaciones. El campo convert_type aparece como "hf", lo que indica que el proceso de conversion partio de pesos en formato Hugging Face antes de generar los GGUF, pero no aporta detalles sobre la topologia de la red, el numero de capas, las dimensiones de las proyecciones de atencion o el tipo de tokenizador.
+El modelo base Nora0.1-1.7B se etiqueta como `qwen3`, lo que indica que parte de la familia Qwen3 de Alibaba, probablemente mediante fine-tuning o adaptación sobre un checkpoint de 1,7B de dicha familia. Los metadatos confirman el uso de los datasets PygmalionAI/PIPPA (conversaciones multi-turno de roleplay) y lipilipic/NSFW_gemma-2b-it-2 (dataset de diálogo sin restricciones de contenido), lo que explica las etiquetas `roleplay`, `conversational`, `creative-writing` y `not-for-all-audiences`. No se dispone de información sobre el número de tokens de entrenamiento, la composición exacta del dataset, ni si se aplicaron fases de RLHF, DPO o SFT supervisado.
 
-Tampoco se documentan los datos de entrenamiento: no se indica el numero de tokens, la composicion del dataset, la existencia de fases de ajuste supervisado, RLHF, DPO u otra tecnica de alineamiento. La etiqueta "conversational" sugiere un ajuste orientado a dialogo, pero no se especifica su naturaleza ni su alcance. En cuanto a innovaciones tecnicas, la unica reseñable del repositorio es el uso de calibracion imatrix para las cuantizaciones de tipo I-quant, con la etiqueta "nicoboss" en la cabecera de la model card, que apunta a un dataset de calibracion de ese autor. No hay informacion sobre decodificacion especulativa, atencion lineal u otras optimizaciones.
+El repositorio de mradermacher aplica cuantización GGUF con matrices de importancia (imatrix) generadas a partir del modelo base, una técnica que reduce la pérdida de calidad en cuantizaciones agresivas al ponderar los pesos según su impacto en la perplexidad. Se ofrecen tanto quants IQ (importancia-calibrados, preferibles a igual tamaño) como quants K estándar, además del fichero `.imatrix.gguf` para que terceros puedan generar sus propias cuantizaciones. No se documentan innovaciones arquitectónicas adicionales propias de este modelo.
 
 ## Capacidades
 
-- Generacion de texto conversacional: la etiqueta "conversational" del repositorio indica que el modelo base esta orientado a dialogos de tipo asistente.
-- Compatibilidad con despliegue como endpoint: la etiqueta "endpoints_compatible" indica que el repositorio esta preparado para servirse a traves de Hugging Face Inference Endpoints.
-- Inferencia local en hardware limitado: el amplio catalogo de cuantizaciones, desde IQ1_S hasta Q6_K, permite ejecutar el modelo en CPU y en GPUs de gama baja.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (no se declara ningun idioma).
-- Vision, audio u otras modalidades: no disponible.
-- Modo de razonamiento explicito (thinking mode): no disponible.
-- Longitud de contexto efectiva: no disponible.
+- Generación de texto conversacional multi-turno, con énfasis declarado en roleplay y diálogo abierto.
+- Escritura creativa y narrativa (etiqueta `creative-writing`), incluyendo contenido para adultos (etiqueta `not-for-all-audiences`).
+- Comprensión y generación en inglés; capacidades multilingües no documentadas.
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags), lo que sugiere uso mediante APIs compatibles con OpenAI en plataformas de inferencia.
+- No hay evidencia en la información disponible de soporte de tool calling, function calling, agentes, visión, audio ni modo de razonamiento explícito (thinking mode).
 
 ## Casos de uso
 
-- Asistente conversacional offline en portatil sin GPU: con las cuantizaciones IQ2 o Q3, el modelo ocupa menos de 1 GB y puede ejecutarse integramente en CPU mediante llama.cpp u Ollama, lo que permite construir un asistente de escritorio que funciona sin conexion ni coste de API.
-- Prototipado rapido de aplicaciones de chat: dado que el modelo base es pequeno y el GGUF se carga en segundos, sirve para validar interfaces, prompts y flujos de conversacion antes de migrar a un modelo mayor.
-- Despliegue en dispositivos edge: las variantes IQ1_S e IQ1_M, en el entorno de 0,4-0,5 GB, son candidatas para placas tipo Raspberry Pi 5 o mini-PC de bajo consumo con 4 GB de RAM, donde un modelo de 7 B no cabria con holgura.
-- Atencion al cliente con respuestas cortas y coste minimo: en escenarios de FAQ o triaje de consultas, un modelo de 1,7 B cuantizado en Q4_K_M permite atender picos de peticiones en una sola GPU de gama de entrada, siempre que se valide previamente la calidad de las respuestas.
-- Generacion de datos sinteticos para aumentar un dataset: el modelo puede producir variaciones de texto, parafrasis o respuestas de ejemplo a gran volumen y bajo coste, que despues se filtran antes de usarlas para ajustar modelos mayores.
-- Estudio de degradacion por cuantizacion: al reunir 24 variantes del mismo modelo base, el repositorio es idoneo para medir experimentalmente como afecta cada nivel de compresion (IQ1_S frente a Q6_K) a la coherencia, la repeticion y la fidelidad a las instrucciones.
-- Componente de pipelines de procesamiento de texto: con el servidor de llama.cpp en modo API compatible con OpenAI, el modelo puede actuar como reescritor, clasificador o resumidor breve dentro de flujos automatizados donde la latencia y el coste pesan mas que la precision maxima.
-- Comparacion de calibracion imatrix frente a cuantizacion estandar: las variantes I-quant con imatrix y las K-quant clasicas permiten evaluar la mejora real que aporta la calibracion en modelos de este tamano.
+- Roleplay y personajes conversacionales: el modelo se entrenó sobre PIPPA, un dataset específico de conversaciones de rol, por lo que es adecuado para chatbots de personaje con personalidad consistente en sesiones multi-turno.
+- Escritura creativa asistida: generación de relatos, diálogos y ficción interactiva en local, aprovechando la especialización en narrativa y la ausencia de filtros de contenido en el dataset de entrenamiento.
+- Prototipado de chatbots en hardware de consumo: con quants de 1,2 GB (Q4_K_M) puede ejecutarse en portátiles sin GPU dedicada mediante llama.cpp u Ollama, lo que permite iterar rápido en el diseño conversacional antes de escalar a modelos mayores.
+- Inferencia en el borde (edge) y entornos sin conectividad: al caber en menos de 2 GB, puede desplegarse en dispositivos con RAM limitada o en contenedores pequeños para demos offline de diálogo.
+- Generación de datos sintéticos de diálogo: útil para aumentar datasets conversacionales en inglés con un modelo pequeño y controlable, filtrando después la calidad.
+- Experimentación con cuantización: el fichero imatrix y la amplia gama de quants permiten estudiar el impacto de distintos niveles de compresión en la calidad de un modelo conversacional de 1,7B.
+- Aplicaciones de entretenimiento y ficción interactiva: integrable en motores de videojuegos o plataformas de historias ramificadas donde se requiere latencia baja y ejecución local.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye tablas de MMLU, HumanEval, GSM8K, ARC, HellaSwag ni de ningun otro conjunto de evaluacion, y el modelo base uniqueplayer9102/Nora0.1-1.7B no aparece referenciado con resultados numericos en los datos proporcionados.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio no incluye métricas de MMLU, HumanEval, GSM8K ni evaluaciones de calidad conversacional, y el modelo base no aporta datos de rendimiento en la información proporcionada.
 
 ## Requisitos de hardware
 
-Los tamanos de archivo que se indican a continuacion son estimaciones calculadas a partir del numero de parametros (1,72 B) y del numero medio de bits por peso tipico de cada familia de cuantizacion en GGUF. No proceden de mediciones del repositorio.
-
-| Familia de cuantizacion | Tamano estimado del archivo | VRAM minima recomendada |
-|---|---|---|
-| IQ1_S, IQ1_M | 0,4 - 0,5 GB | 1 GB |
-| IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K | 0,45 - 0,6 GB | 1 GB |
-| IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q3_K_S, Q3_K_M, Q3_K_L | 0,65 - 0,95 GB | 1,5 GB |
-| IQ4_XS, small-IQ4_NL, Q4_0, Q4_1, Q4_K_S, Q4_K_M | 0,95 - 1,1 GB | 2 GB |
-| Q5_K_S, Q5_K_M | 1,15 - 1,25 GB | 2,5 GB |
-| Q6_K | 1,4 GB | 3 GB |
-
-- VRAM estimada para inferencia: entre 1 y 3 GB segun cuantizacion, cifra a la que hay que sumar la memoria de la cache KV, cuyo tamano depende de la longitud de contexto efectiva, dato no disponible.
-- GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM es suficiente en todas las cuantizaciones, por ejemplo RTX 3050, RTX 4060, GTX 1650, T4 o inferiores. Para Q6_K con contexto largo se recomienda 6-8 GB. Las GPU de datacenter (A100, H100) no aportan ventaja a este tamano de modelo y quedarian infrautilizadas.
-- Viabilidad en GPU de consumo: si, el modelo cabe en practicamente cualquier GPU de consumo de los ultimos diez anos, e incluso en iGPUs con memoria unificada.
-- Ejecucion en CPU: viable en todas las cuantizaciones, especialmente IQ1 e IQ2, en equipos con 4-8 GB de RAM.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, KoboldCpp, text-generation-webui, jan y servidores compatibles con la API de OpenAI mediante llama-server. El repositorio esta etiquetado como compatible con Hugging Face Inference Endpoints. vLLM no consume GGUF directamente (requiere convertir o partir del modelo original en safetensors) y TGI no soporta este formato.
-- Latencia y throughput: no disponible.
+- VRAM/RAM estimada para inferencia según el quant elegido: IQ1_S ≈ 0,6 GB; IQ2_M ≈ 0,8 GB; IQ3_S ≈ 1,0 GB; Q4_K_M ≈ 1,2 GB; Q5_K_M ≈ 1,4 GB; Q6_K ≈ 1,5 GB (más overhead de contexto y del runtime de llama.cpp).
+- Cabe en cualquier GPU de consumo moderna: RTX 3060 12 GB, RTX 4060 8 GB, RTX 4090 24 GB, así como en iGPU y CPU. Para el quant Q6_K basta una GPU con 2-3 GB libres.
+- GPU de datacenter (A100, H100) no son necesarias para este tamaño; resultan sobredimensionadas salvo para servir muchas réplicas concurrentes.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, LM Studio, llama-cpp-python, y servidores compatibles con endpoints (vLLM con soporte GGUF limitado, TGI no soporta GGUF de forma nativa).
+- Latencia y throughput: no disponibles en la información proporcionada; en hardware de consumo se espera un rendimiento interactivo para este tamaño, pero no hay cifras publicadas que lo confirmen.
 
 ## Comparativa con modelos similares
 
-No hay datos de rendimiento comparativos en la informacion proporcionada. La siguiente tabla situa el modelo frente a alternativas de la misma categoria de tamano (en el rango de 1 a 2 mil millones de parametros), indicando unicamente datos publicos basicos de cada familia; la informacion de esta tabla no procede de la busqueda realizada para esta ficha.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Nora0.1-1.7B-i1-GGUF (este) | 1,7B | no disponible | Apache 2.0 | GGUF (i1) | Especializado en roleplay/conversación, quants imatrix |
+| Qwen3-1.7B (base de la familia) | 1,7B | no disponible en esta ficha | Apache 2.0 | safetensors, GGUF | Modelo generalista; referencia arquitectónica |
+| Gemma-2B-it (citado en el dataset) | 2B | no disponible | Gemma license | safetensors, GGUF | Modelo conversacional de Google; distinta licencia |
+| Modelos de roleplay de 1-3B (familia Pygmalion) | 1-3B | no disponible | variable | GGUF, safetensors | Misma categoría de uso; sin datos comparativos en la información disponible |
 
-| Modelo | Parametros | Formato GGUF disponible | Licencia | Datos comparativos |
-|---|---|---|---|---|
-| Nora0.1-1.7B-i1-GGUF (este repositorio) | 1,72 B | Si, 24 cuantizaciones | No disponible | No disponible |
-| Qwen2.5-1.5B | 1,5 B | Si, comunidad | Apache 2.0 | No disponible en esta ficha |
-| Llama 3.2 1B | 1,2 B | Si, comunidad | Licencia comunitaria de Llama 3.2 | No disponible en esta ficha |
-| SmolLM2-1.7B | 1,7 B | Si, comunidad | Apache 2.0 | No disponible en esta ficha |
-
-La ventaja diferencial de este repositorio frente a esas alternativas no es el rendimiento, sino la cobertura de cuantizaciones: pocos modelos de 1,7 B publican simultaneamente IQ1, IQ2, IQ3, IQ4, Q5 y Q6 con calibracion imatrix.
+No se dispone de datos de rendimiento comparativo (benchmarks) entre estos modelos en la información proporcionada, por lo que la comparación se limita a parámetros, licencia y formato.
 
 ## Limitaciones y advertencias
 
-- Ausencia de licencia declarada: el repositorio no especifica licencia, por lo que no puede asumirse ningun permiso de uso comercial. Es imprescindible consultar la licencia del modelo base uniqueplayer9102/Nora0.1-1.7B antes de cualquier despliegue productivo.
-- Sin model card tecnica: no se documentan arquitectura, contexto, idiomas, tokenizador, fecha de corte de datos ni proceso de entrenamiento, lo que impide evaluar su idoneidad formalmente.
-- Riesgo de alucinacion: en modelos de este tamano la tasa de invencion de hechos es elevada, especialmente en las cuantizaciones mas agresivas. No se han publicado mediciones de fidelidad.
-- Degradacion por cuantizacion extrema: las variantes IQ1_S, IQ1_M e IQ2_XXS comprimen por debajo de 3 bits por peso y suelen producir perdida apreciable de coherencia, repeticiones y errores de formato. No deben usarse cuando la precision sea critica.
-- Longitud de contexto desconocida: no puede asumirse una ventana larga ni usarse el modelo en tareas que dependan de contexto extenso sin verificarlo empiricamente.
-- Cobertura idiomatica desconocida: no se declara que idiomas soporta, por lo que el comportamiento en castellano no esta garantizado.
-- Sesgos: no hay informacion sobre el dataset de entrenamiento ni sobre evaluaciones de sesgo, de modo que no puede descartarse la presencia de sesgos sociales, culturales o de idioma.
-- Validacion comunitaria nula: el repositorio registra 0 descargas y 0 likes, por lo que no existe evidencia externa de funcionamiento correcto ni de calidad.
-- Inconsistencia en las fechas: los metadatos indican creacion el 2026-10-06 y actualizacion el mismo dia, fechas posteriores a la mayoria de referencias temporales del ecosistema, lo que sugiere un posible error de registro.
-- Uso en produccion: dado el conjunto de carencias anteriores, el modelo solo deberia emplearse en prototipos, entornos controlados o experimentos de cuantizacion, no en sistemas criticos.
+- Sesgos conocidos: no documentados; al entrenarse sobre datasets de roleplay y contenido sin filtros, es probable que reproduzca sesgos de dichos corpus, pero no hay análisis publicado.
+- Riesgo de alucinación: alto en un modelo de 1,7B sin datos de evaluación; no debe usarse como fuente factual sin verificación.
+- Contexto e idioma: la longitud de contexto no está documentada y el único idioma declarado es inglés; el rendimiento en castellano no está garantizado.
+- Contenido para adultos: el modelo está etiquetado `not-for-all-audiences` y entrenado con datasets NSFW; requiere moderación si se despliega en productos orientados al público general.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene revisar las condiciones de los datasets de entrenamiento (PIPPA y NSFW_gemma-2b-it-2) antes de explotación comercial, ya que la licencia del modelo no cubre necesariamente los datos subyacentes.
+- Cuantizaciones muy agresivas (IQ1_S, IQ2_XXS) degradan notablemente la calidad; la propia model card las marca como "for the desperate" o "very low quality".
+- El repositorio contiene solo GGUF; para fine-tuning o entrenamiento adicional hay que acudir al modelo base en safetensors.
+- No hay garantías de soporte de tool calling ni de comportamiento agéntico; no debe asumirse en producción.
 
 ## Enlaces
 
-- Repositorio de cuantizaciones: https://huggingface.co/mradermacher/Nora0.1-1.7B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Nora0.1-1.7B-i1-GGUF
 - Modelo base: https://huggingface.co/uniqueplayer9102/Nora0.1-1.7B
-- No se han encontrado en la informacion proporcionada otros enlaces relevantes (papers, blogs, repositorios de codigo o demos).
+- Quants estáticos del mismo autor: https://huggingface.co/mradermacher/Nora0.1-1.7B-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Nora0.1-1.7B-i1-GGUF
+- Guía de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y peticiones de cuantización: https://huggingface.co/mradermacher/model_requests
+- Dataset PygmalionAI/PIPPA: https://huggingface.co/datasets/PygmalionAI/PIPPA
+- Dataset lipilipic/NSFW_gemma-2b-it-2: https://huggingface.co/datasets/lipilipic/NSFW_gemma-2b-it-2
+- Análisis de tipos de quant (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Gráfica comparativa de quants (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png

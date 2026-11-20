@@ -35,11 +35,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 103,
+  "downloads_30d": 126,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 47591037292,
+  "storage_bytes": 47584767723,
   "storage_human": "47.6 GB",
   "context_length": null,
   "base_model": "ByteDance-Seed/BAGEL-7B-MoT",

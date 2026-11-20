@@ -1,101 +1,89 @@
 # OpensourceWTF/DeepSeek-V4.1-Flash-streaming-repack-exl3
 
 ## Resumen
-DeepSeek-V4.1-Flash-streaming-repack-exl3 es un empaquetado de pesos en formato streaming para servir el modelo DeepSeek-V4.1-Flash en Apple Silicon mediante mlx-serve y el plugin mlx-stream. Lo publica el usuario OpensourceWTF y deriva de la cuantizacion EXL3 a 3.0 bits por peso de los expertos enrutados realizada por Mia-AiLab sobre el modelo original de DeepSeek. Su proposito no es reentrenar ni modificar el modelo, sino reorganizar los pesos en un layout que permite carga bajo demanda desde SSD, de modo que un Mac con 128 GB de memoria unificada pueda ejecutar un modelo MoE de gran tamano que de otro modo no cabria en RAM.
 
-La innovacion clave es el streaming: el tronco del modelo se carga una sola vez en memoria y los expertos enrutados y las tablas Engram se leen desde disco a medida que se necesitan. Esto convierte un modelo que en BF16 ocuparia cientos de gigabytes en algo desplegable en hardware de consumo de gama alta, a costa de latencia de prefill y de dependencia del ancho de banda del SSD. El repositorio ocupa 426,3 GB y la rama `3.0bpw` es la unica activa.
+OpensourceWTF/DeepSeek-V4.1-Flash-streaming-repack-exl3 es un repositorio de pesos cuantizados del modelo DeepSeek-V4.1-Flash, empaquetado en formato EXL3 a 3.0 bits por peso (bpw) para su uso con la libreria mlx-serve en hardware Apple Silicon. Lo publica el usuario independiente OpensourceWTF, no el laboratorio DeepSeek, y deriva del modelo base Mia-AiLab/DeepSeek-V4.1-Flash-EXL3-3.0bpw. El repositorio esta marcado como obsoleto (deprecated) y, segun su propia model card, ya no contiene ficheros: los pesos actuales se trasladaron al repositorio DeepSeek-V4.1-Flash-1017-streaming-repack-exl3 tras la actualizacion "1017".
 
-La relevancia actual es doble: por un lado demuestra que tecnicas de cuantizacion agresiva combinadas con streaming de expertos hacen viable la inferencia local de modelos frontera en estaciones de trabajo Apple; por otro, su licencia MIT y su integracion con mlx-serve lo convierten en una pieza practica para desarrolladores que quieran experimentar con modelos MoE grandes sin infraestructura de centro de datos.
+El interes practico de esta ficha es limitado pero relevante como referencia historica: documenta un empaquetado de cuantizacion extrema (3.0 bpw) pensado para ejecutar un modelo de gran tamano en memoria unificada de equipos Mac, mediante streaming de pesos. El repositorio original ocupa 426,3 GB, lo que da una idea de la escala del modelo empaquetado y del reto de despliegue que aborda.
+
+No se dispone de informacion verificable sobre arquitectura, numero de parametros, longitud de contexto ni datos de entrenamiento del modelo base en la informacion proporcionada; todos esos datos se marcan como no disponibles. Cualquier evaluacion de produccion deberia dirigirse al repositorio sucesor o al modelo base original.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE transformer con MTP y tablas Engram (arquitectura `deepseek_v41` en mlx-serve) |
+| Arquitectura | no disponible |
 | Parametros totales | no disponible |
-| Parametros activos | no disponible (modelo MoE con expertos enrutados) |
-| Longitud de contexto | hasta 1.048.576 tokens segun el autor; el servidor factura 16K por defecto si no se configura `--ctx-size` |
-| Tipos de cuantizacion | EXL3 3.0 bpw en expertos enrutados (K3 en todas las capas); resto de tensores en BF16/F32 sin cambios |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | EXL3 a 3.0 bits por peso (bpw) |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | EXL3 en layout streaming para mlx-serve (no compatible con Transformers, vLLM ni ExLlamaV3) |
+| Formato de pesos | EXL3 (pack para mlx-serve) |
+| Modelo base | Mia-AiLab/DeepSeek-V4.1-Flash-EXL3-3.0bpw |
+| Libreria de inferencia | mlx-serve |
+| Tamano del repositorio | 426,3 GB |
+| Estado | obsoleto (deprecated), sin ficheros |
+| Descargas | 1465 |
+| Likes | 6 |
 
 ## Arquitectura y entrenamiento
-El modelo subyacente es DeepSeek-V4.1-Flash, un transformer con mezcla de expertos (MoE) que incorpora prediccion multi-token (MTP) y tablas Engram. Esta ficha no dispone de datos sobre el numero de parametros totales o activos, la composicion del dataset de entrenamiento ni si se aplicaron fases de RLHF o DPO, por lo que esos extremos quedan como no disponibles. Lo que si documenta el autor es el proceso de repack: los expertos enrutados se cuantizan a EXL3 3.0 bpw con ExLlamaV3 v1.4.2, mientras que las proyecciones residentes, los expertos MTP y las tablas Engram se copian de forma exacta y los tensores BF16/F32 se mantienen verbatim.
 
-La innovacion tecnica del empaquetado es el layout streaming junto con el plugin mlx-stream: el tronco se carga una vez y los expertos se leen desde SSD bajo demanda, con un limite de memoria configurable (`--memory-ceiling-gb`). La decodificacion emplea decodificacion especulativa DSpark con aceptacion tipica y kernels de clase rounding, lo que acerca la salida a la referencia BF16 sin ser identica bit a bit. El autor advierte que los expertos a 3.0 bpw son la unica parte con perdida del repack.
+No se dispone de informacion sobre la arquitectura del modelo base (tipo de transformer, uso de mezcla de expertos, atencion lineal u otras innovaciones) ni sobre el proceso de entrenamiento, volumen de tokens, composicion del dataset o tecnicas de alineacion como RLHF o DPO. La informacion proporcionada solo describe el empaquetado: una cuantizacion EXL3 a 3.0 bpw con streaming de pesos, orientada a la libreria mlx-serve, que permite cargar el modelo por partes en lugar de residente completo en memoria.
+
+El aspecto tecnico destacable es precisamente ese empaquetado: EXL3 es un esquema de cuantizacion de muy baja precision (3 bits por peso) y el "streaming repack" implica que los pesos se reorganizan para cargarse de forma incremental durante la inferencia. Esto reduce el pico de memoria necesario, a costa de posible latencia adicional por acceso a disco. No hay datos publicados sobre la perdida de calidad introducida por esta cuantizacion.
 
 ## Capacidades
-- Generacion de texto y razonamiento general, heredados del modelo base DeepSeek-V4.1-Flash.
-- Generacion de codigo, con un pass@1 de 0,9634 en HumanEval medido en este empaquetado.
-- Soporte de contextos muy largos, hasta 1.048.576 tokens segun el autor, con facturacion configurable de memoria.
-- Capacidad de servir peticiones concurrentes mediante mlx-serve, con metricas de TTFT y throughput por peticion.
-- Decodificacion especulativa DSpark integrada en el servidor para acelerar la generacion.
-- No se documentan en la informacion disponible capacidades de vision, audio, tool calling ni modo thinking; deben considerarse no confirmadas para este empaquetado.
+
+- Generacion de texto: el pipeline declarado es text-generation.
+- Capacidades especificas del modelo base (razonamiento, codigo, matematicas, vision, tool calling, agentes, multilingue): no disponibles en la informacion proporcionada.
+- Modo thinking, vision o audio: no disponible.
+- No se puede confirmar ninguna capacidad funcional adicional porque el repositorio esta vacio y la model card no describe el modelo.
 
 ## Casos de uso
-- Evaluacion local de modelos frontera en Apple Silicon: un Mac con 128 GB puede servir el modelo gracias al streaming de expertos, lo que permite a investigadores probar un MoE grande sin GPU de centro de datos.
-- Generacion de codigo en estaciones de trabajo: con pass@1 de 0,9634 en HumanEval y decodificacion especulativa, resulta adecuado para asistentes de programacion locales en entornos con requisitos de privacidad.
-- Procesamiento de documentos largos: la ventana de hasta 1.048.576 tokens permite analizar repositorios completos o expedientes extensos, ajustando `--ctx-size` al presupuesto de memoria.
-- Prototipado de aplicaciones sobre mlx-serve: el servidor expone una API HTTP con metricas de latencia y throughput utiles para dimensionar despliegues.
-- Investigacion en cuantizacion: el repack sirve como referencia para estudiar el impacto de EXL3 3.0 bpw en expertos enrutados frente a los expertos FP4 originales.
-- Benchmarking de hardware Apple: las cifras de prefill (661,5 tok/s a 16K) y decode (36,8 tok/s) permiten comparar M5 Max con otras configuraciones.
-- Despliegue de bajo coste en oficina: al no requerir GPU dedicada, un equipo Apple de gama alta puede actuar como servidor de inferencia para un equipo pequeno.
+
+- Referencia historica de cuantizacion: util para estudiar como se empaquetaban modelos de gran escala en EXL3 a 3.0 bpw para mlx-serve antes de la actualizacion 1017; el historial de commits conserva los ficheros anteriores.
+- Evaluacion de despliegue en Apple Silicon: sirve como punto de partida para medir requisitos de memoria unificada y latencia de streaming en equipos Mac con el esquema EXL3.
+- Migracion a repositorio sucesor: cualquier uso real debe redirigirse a DeepSeek-V4.1-Flash-1017-streaming-repack-exl3, que es el paquete vigente.
+- Investigacion sobre perdida de calidad por cuantizacion: comparar el modelo base EXL3-3.0bpw con el repack permite analizar el impacto del streaming en la fidelidad de las respuestas.
+- Pruebas de integracion con mlx-serve: validar pipelines de carga incremental de pesos en entornos de desarrollo con memoria limitada.
+- Documentacion de linaje de modelos: trazar la cadena Mia-AiLab -> OpensourceWTF para auditar procedencia y licencias en proyectos que dependan de estos pesos.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Valor |
-|---|---|
-| HumanEval pass@1 | 0,9634 (158 de 164) |
-| Problemas fallados | HumanEval/32, 83, 132, 140, 145, 163 |
-| Completaciones truncadas o con error | 0 / 0 |
-| Tokens de completacion | 23.939 en total (media 146, maximo 4.073) |
-| Decode tok/s | 31,8 agregado; mediana 30,0, p10 20,2, p90 36,0 |
-| Time to first token | mediana 7,65 s, p90 9,08 s (prompts de unas 200 tokens) |
-| Aceptacion especulativa | 4,89 tokens aceptados por intento de draft |
-| Tiempo total | 2.077 s para 164 peticiones; pico de memoria 108,3 GB |
-| Prefill a 16K | 661,5 tok/s, TTFT 24,77 s |
-| Decode a 16K | 36,8 tok/s |
-| Pico de memoria a 16K | 107,0 GB |
-
-Las cifras se midieron en un Apple M5 Max con 128 GiB, con el plugin mlx-stream (build 4f42e79) y mlx-serve host 72b36513. El autor indica que la build de envio 3296dc0e reproduce el resultado de 16K token a token. No se publicaron resultados de MMLU, GSM8K ni otras pruebas en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
-- Memoria unificada: 128 GiB recomendados; el autor usa `--memory-ceiling-gb 120.259` (112 GiB) para dejar 16 GiB a macOS.
-- GPU: Apple Silicon Apple M5 Max con 128 GiB es la configuracion medida; no se documentan pruebas en A100, H100 ni RTX 4090, y el layout no es compatible con esos entornos.
-- VRAM en consumer GPU: no aplica, ya que el empaquetado esta disenado para memoria unificada de Apple y streaming desde SSD.
-- Almacenamiento: descarga de aproximadamente 426 GB; se recomienda SSD rapido por la lectura bajo demanda de expertos.
-- Despliegue: exclusivamente mlx-serve con el plugin mlx-stream (PR ddalcu/mlx-serve#749). No funciona con Transformers, vLLM ni ExLlamaV3.
-- Latencia y throughput: 661,5 tok/s de prefill y 36,8 tok/s de decode a 16K; TTFT de 24,77 s a 16K y mediana de 7,65 s en prompts de 200 tokens.
+
+- VRAM/memoria estimada: no disponible con precision; el repositorio ocupa 426,3 GB, lo que sugiere que el modelo completo en este formato requiere un orden de magnitud similar de almacenamiento y, con streaming, una fraccion de esa cifra en memoria residente.
+- GPU recomendadas: no disponibles; el formato EXL3 y la libreria mlx-serve apuntan a hardware Apple Silicon (memoria unificada), no a GPUs NVIDIA.
+- Compatibilidad con GPU de consumo: no confirmada; el enfoque esta en equipos Mac con memoria unificada.
+- Opciones de despliegue: mlx-serve (libreria declarada). No se indica soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Estado |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-streaming-repack-exl3 (este) | no disponible | hasta 1.048.576 tokens | HumanEval 0,9634; 36,8 tok/s decode en M5 Max | MIT | Hugging Face, solo mlx-serve |
-| Mia-AiLab/DeepSeek-V4.1-Flash-EXL3-3.0bpw | no disponible | no disponible | no medido en la informacion | no disponible | Hugging Face, ExLlamaV3 |
-| deepseek-ai/DeepSeek-V4.1-Flash (original) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
-| OpensourceWTF/DeepSeek-V4.1-Flash-1017-streaming-repack-exl3 | no disponible | no disponible | datos de calidad y velocidad propios | no disponible | Hugging Face, mlx-serve |
+| OpensourceWTF/DeepSeek-V4.1-Flash-streaming-repack-exl3 | no disponible | no disponible | EXL3 3.0 bpw | MIT | obsoleto, sin ficheros |
+| OpensourceWTF/DeepSeek-V4.1-Flash-1017-streaming-repack-exl3 | no disponible | no disponible | EXL3 streaming | no disponible | vigente, sucesor |
+| Mia-AiLab/DeepSeek-V4.1-Flash-EXL3-3.0bpw | no disponible | no disponible | EXL3 3.0 bpw | no disponible | modelo base del repack |
 
-La comparacion se limita a variantes del mismo modelo base; no se dispone de datos de benchmarks de alternativas de otros fabricantes en la informacion proporcionada.
+No se dispone de datos de rendimiento ni de especificaciones del modelo base para una comparacion cuantitativa con alternativas de la misma categoria.
 
 ## Limitaciones y advertencias
-- Los expertos enrutados a EXL3 3.0 bpw son la unica parte con perdida del repack; el resto de tensores es exacto respecto al release.
-- La decodificacion especulativa DSpark no produce salidas identicas bit a bit a la referencia BF16, aunque el autor la describe como cercana.
-- No se midio KLD para este empaquetado, por lo que no hay una metrica de divergencia respecto al modelo original.
-- El layout no es compatible con Transformers, vLLM ni ExLlamaV3; queda restringido a mlx-serve con el plugin mlx-stream.
-- El rendimiento depende del ancho de banda del SSD y de la memoria disponible; contextos mayores reducen las filas de expertos residentes.
-- El autor no documenta sesgos, idiomas soportados ni comportamiento de alucinacion; deben evaluarse empiricamente antes de produccion.
-- La licencia MIT se aplica al empaquetado, pero conviene verificar las condiciones del modelo base y de la cuantizacion de origen antes de uso comercial.
-- El repositorio ocupa 426,3 GB y requiere descarga y almacenamiento considerables.
+
+- Repositorio obsoleto y vacio: la model card indica explicitamente que no contiene ficheros; los pesos solo existen en el historial de commits.
+- Modelo base no verificado: no hay informacion publica en la fuente sobre arquitectura, contexto o entrenamiento del modelo DeepSeek-V4.1-Flash subyacente.
+- Cuantizacion agresiva: 3.0 bpw puede degradar la calidad respecto al modelo original; no hay evaluaciones publicadas que lo cuantifiquen.
+- Licencia MIT declarada, pero la procedencia de los pesos (Mia-AiLab) deberia verificarse de forma independiente antes de uso comercial.
+- Riesgo de alucinacion y sesgos: no evaluados por falta de datos.
+- Idiomas soportados: no disponibles; no se puede garantizar cobertura multilingue.
+- Dependencia de mlx-serve: el formato no es portable a otros motores de inferencia sin reconversion.
+- Autor independiente: no es un repositorio oficial de DeepSeek; la trazabilidad y el mantenimiento no estan garantizados.
 
 ## Enlaces
+
 - Repositorio Hugging Face: https://huggingface.co/OpensourceWTF/DeepSeek-V4.1-Flash-streaming-repack-exl3
-- Modelo base original: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
-- Cuantizacion de origen: https://huggingface.co/Mia-AiLab/DeepSeek-V4.1-Flash-EXL3-3.0bpw
-- Repack de pesos 1017: https://huggingface.co/OpensourceWTF/DeepSeek-V4.1-Flash-1017-streaming-repack-exl3
-- Cuantizacion 2.81 bpw de los pesos 1017: https://huggingface.co/OpensourceWTF/DeepSeek-V4.1-Flash-1017-exl3-2.81bpw
-- mlx-serve: https://github.com/ddalcu/mlx-serve
-- Plugin mlx-stream: https://github.com/davidtai/mlx-stream
-- PR de integracion en mlx-serve: https://github.com/ddalcu/mlx-serve/pull/749
-- ExLlamaV3: https://github.com/turboderp-org/exllamav3
+- Repositorio sucesor: https://huggingface.co/OpensourceWTF/DeepSeek-V4.1-Flash-1017-streaming-repack-exl3
+- Modelo base: https://huggingface.co/Mia-AiLab/DeepSeek-V4.1-Flash-EXL3-3.0bpw

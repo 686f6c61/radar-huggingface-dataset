@@ -81,14 +81,9 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "Domyn begins rolling out Edge, sharing the model and its training ...",
-      "url": "https://www.domyn.com/news/domyn-edge-sovereign-ai-model",
-      "snippet": "Domyn Edge, a compact agentic model, has been announced to the world today as a staged open release, its intermediate training checkpoints, recipes, and tools shared alongside it. The open release puts the resources to build sovereign AI into the community’s hands, enabling researchers, developers and institutions to take Edge in new directions and create intelligence of their own."
-    },
-    {
-      "title": "Domyn Edge: Introducing a Compact Model Built in the Open",
-      "url": "https://www.domyn.com/blog/domyn-edge-compact-model-open",
-      "snippet": "Domyn Edge is a very strong model in its category, one you can fully adapt, control, and deploy on your own terms. It provides a highly capable, small-footprint solution for custom fine-tuning, private on-premise execution, and deployment in regulated environments requiring EU AI Act compliance."
+      "title": "How to Bypass Internet Restrictions and Censorship",
+      "url": "https://ultahost.com/knowledge-base/how-to-bypass-internet-restrictions-and-censorship/",
+      "snippet": "Internet censorship, for political, ideological, or security reasons, makes us worry about getting all the info we need and speaking our …"
     }
   ]
 }

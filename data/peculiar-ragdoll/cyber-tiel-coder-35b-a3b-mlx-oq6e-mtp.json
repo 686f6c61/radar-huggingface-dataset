@@ -63,11 +63,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-MLX-oQ6e",
-      "url": "https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-MLX-oQ6e",
-      "snippet": "09.09.2026 ... ⚠️ WARNING - Read before use: Abliterated models like CyberTiel are able to say and do things other models refuse, including potentially ..."
-    }
-  ]
+  "sources": []
 }

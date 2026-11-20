@@ -2,55 +2,52 @@
 
 ## Resumen
 
-Este repositorio contiene una version cuantizada en formato Q6 del modelo Qwen3.6-35B-A3B, un transformer de tipo Mixture-of-Experts (MoE) con 35.505.251.456 parametros totales y aproximadamente 3.000 millones de parametros activos por token, segun la nomenclatura A3B del propio nombre. El modelo deriva de una destilacion de razonamiento sobre el checkpoint lordx64/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled, que a su vez parte de la familia Qwen3.6. El autor de esta version cuantizada es RomanOneAndFun.
+Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-MTP-APEX_I-Quality_Q6 es una cuantizacion GGUF en Q6 de un modelo derivado de la familia Qwen3.6, publicado por el usuario RomanOneAndFun sobre el checkpoint lordx64/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled. El modelo base parte de una arquitectura MoE (mezcla de expertos) de la familia Qwen3.6 con 35.505.251.456 parametros totales y 3B de parametros activos por token, segun indica el sufijo A3B del identificador, y ha sido sometido a un proceso de destilacion orientado a razonamiento a partir de trazas de Claude 4.7 Opus.
 
-La relevancia de esta publicacion es practica: ofrece una distribucion del modelo lista para inferencia en hardware de consumo o de gama profesional mediante llama.cpp y otros runtimes compatibles con GGUF, sin necesidad de ejecutar el checkpoint en precision completa. El nombre incluye las etiquetas APEX, I-Quality, imatrix, tensor types y K-mean/K-max, que describen el proceso de cuantizacion aplicado, orientado a preservar la calidad de los logits y reducir la perplejidad.
+El checkpoint incorpora ademas el tag MTP (multi-token prediction), un mecanismo de prediccion de multiples tokens por paso que puede acelerar la decodificacion en inferencia, y la etiqueta APEX I-Quality, que en el ecosistema de este autor hace referencia a una metodologia de cuantizacion con imatrix, calibracion por K-mean/K-max y ajuste de tipos de tensor por perplexity y logits. La licencia declarada es Apache 2.0 y el unico idioma soportado segun la model card es el ingles.
 
-Se trata de una publicacion reciente (creada el 15 de septiembre de 2026) con 0 descargas y 0 likes en el momento de redactar esta ficha, y con la model card practicamente vacia de contenido tecnico mas alla de metadatos y capturas. Esto implica que la mayor parte de los datos de entrenamiento, la ventana de contexto y los resultados de evaluacion no estan documentados aqui.
+Su relevancia practica es doble: por un lado ofrece un modelo de razonamiento de 35B con solo 3B activos, lo que reduce drasticamente el coste computacional por token frente a un denso equivalente; por otro, la publicacion en formato GGUF Q6 (29,7 GB de repositorio) lo hace desplegable en estaciones de trabajo con GPU de consumo alta o en configuraciones CPU+GPU hibridas. No obstante, la informacion publicada por el autor es muy escasa en cuanto a datos de entrenamiento, benchmarks y limites reales, lo que obliga a tratar la ficha con cautela.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | transformer MoE (etiqueta oficial qwen3_5_moe) |
-| Parametros totales | 35.505.251.456 |
-| Parametros activos | ~3.000 millones (segun nomenclatura A3B del nombre; valor exacto no disponible) |
+| Arquitectura | MoE transformer (tag `qwen3_5_moe`), con multi-token prediction (MTP) |
+| Parametros totales | 35.505.251.456 (35,5B) |
+| Parametros activos | 3B (indicado por el sufijo A3B) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q6 en GGUF (segun el nombre); se mencionan imatrix, tensor types, K-mean y K-max |
+| Tipos de cuantizacion | Q6 GGUF (esta publicacion); el repositorio incluye tambien safetensors |
 | Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors y GGUF |
-| Tamano del repositorio | 29,7 GB |
-| Modelo base | lordx64/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled |
-| Descargas / likes | 0 / 0 |
-| Fecha de creacion | 15 de septiembre de 2026 |
 
 ## Arquitectura y entrenamiento
 
-La etiqueta de arquitectura declarada es qwen3_5_moe, lo que sitúa el modelo en la familia Qwen3.5/Qwen3.6 con diseño de mezcla de expertos. Con 35.500 millones de parametros almacenados y una activacion estimada de unos 3.000 millones por token, el coste computacional por token es bajo en relacion con el tamano total del modelo, mientras que la huella de memoria sigue siendo la del modelo completo. El tag MTP hace referencia a Multi-Token Prediction, una tecnica de prediccion multiple de tokens por paso; no se dispone de detalles sobre como se implementa en este checkpoint concreto.
+La arquitectura es un transformer con mezcla de expertos (MoE) de la familia Qwen3.6, identificada en los tags como `qwen3_5_moe`. Con 35,5B parametros totales y aproximadamente 3B activos por token, el modelo sigue el patron de activacion dispersa que reduce el coste de inferencia manteniendo una capacidad de representacion propia de un modelo mucho mayor. El tag MTP sugiere la incorporacion de cabezas de prediccion multi-token, una tecnica que permite proponer varios tokens por paso de decodificacion y que suele emplearse junto con decodificacion especulativa para aumentar el throughput.
 
-El modelo es una destilacion orientada a razonamiento: el sufijo Claude-4.7-Opus-Reasoning-Distilled del checkpoint base indica que se ha entrenado para reproducir trazas de razonamiento de un modelo mayor. No se han publicado en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron fases de RLHF o DPO. La variante aqui publicada no reentrena el modelo, sino que aplica una cuantizacion Q6 con imatrix y ajuste de tipos de tensor por capa (K-mean/K-max) con el objetivo de minimizar la degradacion de perplejidad respecto al checkpoint original.
+El proceso de entrenamiento del checkpoint original no esta documentado en la informacion disponible: no se especifica el numero de tokens, la composicion del dataset, ni si hubo fases de RLHF o DPO. Lo unico inferible del nombre es que se aplico destilacion de razonamiento a partir de trazas de Claude 4.7 Opus sobre una base Qwen3.6. La capa de cuantizacion anadida por RomanOneAndFun emplea imatrix y ajuste de tipos de tensor guiado por perplexity y logits (K-mean/K-max), una practica habitual para preservar calidad en cuantizaciones de baja precision; aun asi, no se publican valores numericos de perplexity ni comparativas de fidelidad respecto al modelo en safetensors.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, con enfasis declarado en tareas de razonamiento segun el nombre del checkpoint base.
-- Razonamiento paso a paso derivado de la destilacion, presumiblemente con cadenas de pensamiento explicitas, aunque el formato exacto no esta documentado.
-- Generacion y analisis de codigo, capacidad habitual en la familia Qwen, si bien no hay evaluacion publicada para esta variante.
-- Integracion con endpoints compatibles (tag endpoints_compatible), lo que sugiere compatibilidad con APIs tipo OpenAI en runtimes de inferencia.
-- Uso como modelo local en flujos de generacion de texto sin conexion, gracias al formato GGUF cuantizado.
-- Soporte de tool calling y de agentes: no confirmado en la informacion disponible.
-- Capacidades multilingues: limitadas a ingles segun los metadatos; no hay evidencia de soporte adicional.
-- Capacidades de vision o audio: no disponibles.
+- Generacion de texto conversacional en ingles, con enfasis declarado en razonamiento (tag `Claude-4.7-Opus-Reasoning`, `Distilled`).
+- Razonamiento multi-paso derivado de la destilacion de trazas de un modelo profesor de la clase Claude 4.7 Opus.
+- Prediccion multi-token (MTP) para acelerar la decodificacion en motores de inferencia compatibles.
+- Capacidad de generacion de codigo: no confirmada explicitamente en la model card, pero plausible por la base Qwen3.6 y por el enfoque de razonamiento; no hay evaluacion publicada.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes: no disponible en la informacion proporcionada.
+- Capacidades multilingues: limitadas al ingles segun la model card (`language: en`).
+- Vision y audio: no disponible; no se declaran en la informacion.
+- Modo thinking explicito: no disponible como parametro documentado; el tag de razonamiento sugiere comportamiento orientado a cadenas de pensamiento, pero no se detalla su control.
 
 ## Casos de uso
 
-- Razonamiento asistido en local: un equipo puede ejecutar este modelo cuantizado para resolver problemas de logica, matematicas o planificacion sin enviar datos a servicios externos. El bajo numero de parametros activos reduce el coste por token frente a un modelo denso de 35B.
-- Generacion de codigo en entornos aislados: al distribuirse en GGUF y con licencia Apache 2.0, puede desplegarse en estaciones de trabajo sin GPU de datacenter para autocompletado y explicacion de codigo.
-- Prototipado de agentes conversacionales: la etiqueta endpoints_compatible permite exponerlo como servidor compatible con la API de OpenAI y conectarlo a frameworks de orquestacion de agentes.
-- Analisis de documentacion tecnica en ingles: el modelo puede resumir y responder preguntas sobre manuales y especificaciones, siempre que la ventana de contexto final lo permita (dato no documentado).
-- Investigacion sobre destilacion de razonamiento: resulta un objeto de estudio util para comparar como se comporta un modelo destilado tras una cuantizacion agresiva con imatrix frente al checkpoint original.
-- Evaluacion comparativa de cuantizaciones: al existir varias variantes del mismo modelo base, sirve para medir el impacto de Q6 frente a niveles mas bajos en tareas de razonamiento.
-- Asistencia educativa en ingles: tutoria guiada y explicacion de conceptos con trazas de razonamiento visibles, util para entornos de autoaprendizaje.
+- Razonamiento asistido en entornos con GPU limitada: con 3B parametros activos y cuantizacion Q6, el modelo puede ejecutarse en una unica GPU de 24-48 GB y emplearse en tareas de analisis logico, descomposicion de problemas y generacion de explicaciones paso a paso sin el coste de un denso de 35B.
+- Generacion de codigo en pipelines internos: el modelo puede integrarse en herramientas de autocompletado o revision de parches en ingles; conviene validar previamente su calidad real con un conjunto propio, ya que no hay benchmarks publicados.
+- Prototipado de asistentes conversacionales en ingles: adecuado para demos y pruebas de concepto con llama.cpp u Ollama, donde la cuantizacion Q6 ofrece un equilibrio razonable entre calidad y huella de memoria.
+- Destilacion inversa y experimentacion con MTP: util como banco de pruebas para estudiar el impacto de la prediccion multi-token en latencia y calidad frente al mismo modelo sin MTP.
+- Evaluacion comparativa de cuantizaciones: la publicacion APEX I-Quality permite contrastar la fidelidad de Q6 frente a otras cuantizaciones del mismo checkpoint base en tareas de razonamiento.
+- Investigacion sobre destilacion de razonamiento: sirve para analizar como se transfieren patrones de cadenas de pensamiento de un profesor propietario a una base Qwen3.6 MoE, siempre que se respeten las condiciones de licencia Apache 2.0 y las politicas de uso del modelo profesor.
+- Despliegue en estaciones de trabajo sin cluster: con 29,7 GB de pesos, entra en configuraciones de una RTX 6000 Ada, A6000 o dos RTX 4090, lo que facilita entornos de desarrollo locales.
 
 ## Benchmarks y rendimiento
 
@@ -58,37 +55,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para los pesos: en torno a 30-32 GB para la variante Q6, coherente con un repositorio de 29,7 GB, mas el espacio para cache KV.
-- GPU recomendadas: NVIDIA RTX 5090 (32 GB) o superiores para carga completa en una sola tarjeta; A100 80 GB, H100 80 GB o RTX A6000 48 GB para entornos profesionales con margen para contexto largo.
-- Cabe en GPU de consumo: si, en tarjetas de 32 GB o mas. En GPUs de 24 GB (RTX 4090, RTX 3090) requiere offloading parcial a CPU o reparto entre varias tarjetas.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama.cpp server y text-generation-webui para el fichero GGUF; transformers con safetensors para el checkpoint sin cuantizar.
-- Al ser un modelo MoE con unos 3.000 millones de parametros activos por token, el throughput esperado en generacion es notablemente superior al de un modelo denso del mismo tamano total, aunque depende del ancho de banda de memoria de la GPU.
-- Latencia y throughput concretos: no disponibles.
+- VRAM estimada para inferencia: aproximadamente 26-30 GB solo para pesos en Q6 (repositorio de 29,7 GB); el espacio adicional para KV cache depende de la longitud de contexto, que no esta documentada.
+- GPU recomendadas: A100 40/80 GB, H100, L40S, RTX 6000 Ada, A6000; en consumer, dos RTX 4090 o una RTX 5090 con offload parcial.
+- Cabe en consumer GPU: si, en GPUs de 24 GB solo con offload parcial a RAM o con cuantizaciones menores del mismo checkpoint base; en 32 GB o mas (RTX 5090, RTX 6000 Ada) cabe con margen ajustado.
+- Opciones de despliegue: llama.cpp y Ollama para GGUF; vLLM y TGI si se dispone de los safetensors y el soporte de la arquitectura `qwen3_5_moe` esta implementado en la version correspondiente; LM Studio como interfaz grafica sobre llama.cpp.
+- Latencia y throughput estimados: no disponibles. La presencia de MTP sugiere mejoras de throughput respecto a la decodificacion autoregresiva clasica, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| Este modelo (Q6 GGUF) | 35.505 millones totales / ~3.000 millones activos | no disponible | Apache 2.0 | Hugging Face, repo de 29,7 GB |
-| lordx64/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled (base) | 35.505 millones totales / ~3.000 millones activos | no disponible | no disponible en esta ficha | Hugging Face |
-| Otras cuantizaciones del mismo autor | 35.505 millones totales / ~3.000 millones activos | no disponible | Apache 2.0 | Hugging Face |
-| Alternativas de terceros | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros totales / activos | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Este modelo (Qwen3.6-35B-A3B Claude 4.7 Opus Reasoning Distilled, Q6 APEX) | 35,5B / 3B | no disponible | Apache 2.0 | safetensors, GGUF | Destilado de razonamiento, MTP, cuantizacion Q6 |
+| Modelo base lordx64/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled | 35,5B / 3B | no disponible | no disponible | safetensors | Sin cuantizar; referencia de fidelidad |
+| Familia Qwen3 MoE de referencia (p. ej. variantes 30B-A3B) | ~30B / ~3B | no disponible | Apache 2.0 | safetensors, GGUF | Alternativa directa en la misma categoria MoE de activacion dispersa |
+| Modelos densos de ~30-35B | ~30-35B / densos | no disponible | variable | safetensors, GGUF | Mayor coste por token, sin ventaja de activacion dispersa |
 
-No se dispone de datos de rendimiento publicados para ninguna de estas variantes, por lo que no es posible establecer una comparacion cuantitativa fiable con modelos de la misma categoria.
+La comparacion cuantitativa de rendimiento no es posible: no hay benchmarks publicados para este checkpoint ni datos verificables del modelo base en la informacion disponible.
 
 ## Limitaciones y advertencias
 
-- No se han publicado evaluaciones de sesgo, toxicidad o robustez para esta variante cuantizada.
-- El riesgo de alucinacion es inherente a los modelos de lenguaje y a la destilacion de razonamiento; la cuantizacion Q6 puede agravarlo ligeramente respecto al checkpoint original, especialmente en cadenas de razonamiento largas.
-- El soporte de idiomas declarado es unicamente ingles; su uso en castellano u otros idiomas no esta garantizado.
-- La ventana de contexto no esta documentada, lo que impide planificar despliegues con entradas largas sin verificacion previa.
-- La model card no incluye informacion sobre el dataset de entrenamiento ni sobre posibles sesgos heredados del checkpoint base.
-- Aunque la licencia declarada es Apache 2.0, el hecho de derivar de un proceso de destilacion sobre un modelo de terceros puede introducir condiciones adicionales segun los terminos del modelo original, que no se detallan aqui.
-- El repositorio tiene 0 descargas y 0 likes, por lo que no existe validacion comunitaria ni reportes de errores.
-- La fecha de publicacion es reciente y no hay historial de mantenimiento ni garantia de actualizaciones.
+- Solo se declara soporte de ingles; el rendimiento en castellano no esta documentado y probablemente sea inferior.
+- No se publican benchmarks, por lo que cualquier afirmacion sobre calidad en razonamiento o codigo es una extrapolacion del nombre y del modelo base, no un dato verificado.
+- La destilacion a partir de trazas de un modelo propietario (Claude 4.7 Opus) puede conllevar restricciones adicionales segun los terminos de uso del proveedor original, aunque la licencia del checkpoint sea Apache 2.0; conviene revisar las condiciones de la cadena de derivacion.
+- La model card incluye enlaces de referido y contenido promocional ajeno al modelo, lo que reduce la fiabilidad de la documentacion tecnica.
+- Riesgo de alucinacion inherente a los modelos destilados de razonamiento: las cadenas de pensamiento pueden ser plausibles pero incorrectas, especialmente en matematicas y codigo.
+- No se documenta la longitud de contexto, lo que impide planificar el consumo de KV cache y limita el uso en tareas de contexto largo sin pruebas previas.
+- La cuantizacion Q6 introduce una perdida de fidelidad respecto al checkpoint en safetensors; no se aportan metricas de perplexity que la cuantifiquen.
+- El autor es un particular y el modelo tiene solo 2 likes y 1.613 descargas en el momento de la consulta: no hay validacion comunitaria extensa.
+- Uso comercial permitido por Apache 2.0, pero sin garantias del autor ni soporte; para produccion se recomienda evaluacion propia y, si es posible, partir del modelo base sin cuantizar.
 
 ## Enlaces
 
-- Pagina del modelo en Hugging Face: https://huggingface.co/RomanOneAndFun/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-MTP-APEX_I-Quality_Q6
+- Hugging Face: https://huggingface.co/RomanOneAndFun/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-MTP-APEX_I-Quality_Q6
 - Modelo base: https://huggingface.co/lordx64/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled
-- Resultados de busqueda web: los unicos resultados devueltos corresponden a hilos de la comunidad de Swisscom sobre incidencias de television (SRF) y no guardan relacion con el modelo. No se han encontrado papers, blogs, repositorios ni demos adicionales.
+- Enlace de referido incluido en la model card (Verdent): https://www.verdent.ai/download?ref=7BLWQO
+- Paper, blog o repositorio adicionales: no disponibles en la informacion proporcionada.

@@ -2,54 +2,55 @@
 
 ## Resumen
 
-Bluebird 1.5 Instruct es la variante ajustada por instrucciones de Bluebird 1.5 Base, un modelo de lenguaje causal de tipo decoder-only desarrollado por el autor independiente tudor-iustin22 dentro del denominado Project Bluebird. Con 742.528.520 parametros (742,5 M) y una ventana de contexto de 32.768 tokens, se posiciona en la franja de modelos compactos orientados a conversacion y generacion de texto en entornos con recursos limitados.
+Bluebird 1.5 Instruct es un modelo de lenguaje causal decoder-only de 742,5 millones de parámetros desarrollado por el autor independiente tudor-iustin22 dentro del proyecto Project Bluebird. Se trata de la variante ajustada por instrucciones del checkpoint Bluebird 1.5 Base, y está orientada a generación de texto conversacional, seguimiento de instrucciones y tareas de generación orientadas a objetivos. Su rasgo diferencial es una arquitectura híbrida que combina atención causal local con un mecanismo de memoria fragmentada de largo alcance ("Chunked Fabric Memory"), lo que le permite declarar una ventana de contexto de 32.768 tokens con un coste de atención reducido sobre el contexto antiguo.
 
-Su rasgo diferencial es la arquitectura Chunked Fabric Memory: combina atencion causal local sobre los ultimos 2.048 tokens con un segundo camino que atiende a resumenes comprimidos de fragmentos anteriores de 512 tokens. De los 24 bloques transformer, 16 son LocalBlock y 8 son FabricMemoryBlock, con atencion de consultas agrupadas (GQA) de 24 cabezas de consulta y 6 de clave/valor. Esto reduce el coste de atender a contexto antiguo frente a una atencion completa.
+El modelo se entrenó desde cero con 23.000.514.560 tokens de preentrenamiento y posteriormente recibió ajuste de identidad y fine-tuning supervisado de instrucciones sobre mezclas de datos como smoltalk2, Mixture-of-Thoughts y Nemotron-Post-Training-Dataset-v1. Todo el entrenamiento se realizó en PyTorch con precisión mixta sobre ocho aceleradores Intel Gaudi 3, lo que lo convierte en un caso poco habitual de modelo entrenado íntegramente en hardware Gaudi y publicado con código de modelo personalizado para `transformers`.
 
-La relevancia actual del modelo es doble: por un lado, explora una alternativa a la atencion completa para contexto largo en un tamano muy contenido; por otro, esta entrenado y publicado con enfasis en el ecosistema de Intel (Gaudi 3 y Arc), con licencia Apache 2.0. Es un modelo solo de texto, solo en ingles, con 354 descargas y 3 likes en Hugging Face en el momento de la consulta.
+Es relevante ahora por tres motivos: su licencia Apache 2.0 sin restricciones comerciales, su tamaño contenido (1,5 GB en FP16, apto para GPU de consumo) y su enfoque arquitectónico de memoria comprimida por fragmentos, que difiere del de la mayoría de modelos pequeños de la misma categoría y que apunta a un nicho concreto: aplicaciones con contexto largo en entornos con recursos limitados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Decoder-only causal con atencion local y memoria fragmentada con compuerta (Chunked Fabric Memory) |
+| Arquitectura | Transformer decoder-only causal con atención local y memoria fragmentada con compuertas (Chunked Fabric Memory); 24 capas: 16 LocalBlock + 8 FabricMemoryBlock |
 | Parametros totales | 742.528.520 (742,5 M) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | 32.768 tokens |
-| Tipos de cuantizacion | No disponible (pesos publicados en FP16; el autor no documenta variantes GGUF, AWQ ni GPTQ) |
-| Idiomas soportados | Ingles (en) |
-| Licencia | Apache 2.0, sujeta a avisos upstream aplicables |
-| Formato de pesos | Safetensors en FP16; requiere codigo custom de Transformers (`trust_remote_code=True`) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | 32.768 tokens (ventana de atención local: 2.048 tokens; tamaño de fragmento de memoria: 512 tokens; 4 resúmenes aprendidos por fragmento; máximo 256 resúmenes a 32K) |
+| Tipos de cuantizacion | No disponible (solo se publica el formato FP16 original; no se documentan variantes GGUF, AWQ ni GPTQ) |
+| Idiomas soportados | Inglés (en) |
+| Licencia | Apache License 2.0, sujeta a los avisos upstream aplicables |
+| Formato de pesos | Safetensors en FP16 (precisión de entrenamiento: mixta) |
 
-Datos adicionales de arquitectura: 24 capas (16 LocalBlock + 8 FabricMemoryBlock), hidden size 1.536, vocabulario de 65.536 tokens, 24 cabezas de consulta y 6 de clave/valor con dimension de cabeza 64, ventana de atencion local de 2.048 tokens, fragmentos de memoria de 512 tokens con 4 resumenes aprendidos por fragmento (hasta 256 resumenes a 32K de contexto), RoPE con theta = 1.000.000, FFN SwiGLU y normalizacion RMSNorm.
+Otros datos técnicos: hidden size de 1.536, vocabulario de 65.536 tokens, GQA con 24 cabezas de consulta y 6 cabezas clave/valor, dimensión de cabeza 64, RoPE con theta = 1.000.000, FFN SwiGLU y normalización RMSNorm.
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer causal decoder-only que sustituye parte de la atencion global por un mecanismo de memoria comprimida. Cada tercer bloque incorpora un segundo camino que atiende a resumenes de fragmentos ya completados del contexto: los tramos anteriores se dividen en bloques de 512 tokens y cada uno se representa mediante cuatro vectores de resumen aprendidos. Una compuerta escalar por token, tambien aprendida, mezcla la salida del camino de atencion local con la del camino de memoria. A 32.768 tokens el modelo puede disponer de hasta 256 vectores de resumen. El uso de GQA (24 cabezas de consulta sobre 6 de clave/valor) reduce el coste de memoria de la cache KV.
+Bluebird 1.5 emplea un transformer decoder-only de 24 capas en el que cada tercer bloque incorpora una segunda ruta de atención sobre memoria comprimida de largo alcance. La atención local es causal exacta sobre los 2.048 tokens más recientes; los tramos anteriores completados se particionan en fragmentos de 512 tokens, cada uno representado por cuatro resúmenes aprendidos, de modo que a 32.768 tokens el modelo puede consultar hasta 256 vectores de resumen. Una compuerta escalar aprendida por token mezcla la salida de la ruta de atención local con la de la ruta de memoria. La atención usa GQA (24 cabezas Q, 6 KV), lo que reduce el coste de memoria KV. Esta estructura limita el coste de atención sobre el contexto antiguo en comparación con aplicar atención completa a toda la secuencia.
 
-El linaje base registra 23.000.514.560 tokens de preentrenamiento, seguidos de un ajuste de identidad y de un fine-tuning supervisado de instrucciones. Los datasets de post-entrenamiento citados en la model card son HuggingFaceTB/smoltalk2, open-r1/Mixture-of-Thoughts y nvidia/Nemotron-Post-Training-Dataset-v1. El entrenamiento se realizo en PyTorch con precision mixta sobre ocho aceleradores Intel Gaudi 3. No se documentan en la informacion disponible detalles sobre RLHF, DPO, composicion exacta del corpus de preentrenamiento ni decodificacion especulativa.
+El preentrenamiento del linaje Base cubre 23.000.514.560 tokens. Sobre esa base, la variante Instruct añade ajuste de identidad y fine-tuning supervisado de instrucciones con datos de HuggingFaceTB/smoltalk2, open-r1/Mixture-of-Thoughts y nvidia/Nemotron-Post-Training-Dataset-v1. La model card no especifica si se aplicaron RLHF, DPO u otras etapas de alineación preferencial, ni detalla la composición exacta ni el número de tokens de la fase de post-entrenamiento. El entrenamiento se ejecutó en PyTorch con precisión mixta sobre ocho Intel Gaudi 3 (dispositivo `hpu`), con soporte declarado también para Intel Arc (`xpu`).
 
 ## Capacidades
 
-- Generacion de texto causal y respuesta conversacional multi-turno con formato de chat dedicado (roles system, user y assistant con delimitadores explicitos).
-- Seguimiento de instrucciones y generacion orientada a tareas, tras el post-entrenamiento supervisado.
-- Manejo de contexto largo de hasta 32.768 tokens, con acceso a contexto antiguo mediante resumenes de memoria comprimidos.
-- Resumen de documentos y respuestas sobre material extenso dentro de la ventana disponible.
-- Generacion de contenido y finalizacion de texto de proposito general.
-- Capacidad multilingue limitada al ingles; el autor declara unicamente `en`.
-- No se documenta soporte de tool calling ni function calling.
-- No se documenta soporte explicito de agentes ni de razonamiento multi-paso con modo thinking.
-- Modelo solo de texto: sin vision, audio ni otras modalidades.
+- Generación de texto causal en inglés: respuestas conversacionales, respuesta a preguntas, generación de contenido y resumen.
+- Seguimiento de instrucciones y generación orientada a tareas, gracias al fine-tuning supervisado sobre mezclas de instrucciones.
+- Conversación multi-turno con un formato de chat dedicado con roles system, user y assistant y delimitadores explícitos de mensaje.
+- Manejo de contexto largo de hasta 32.768 tokens mediante memoria fragmentada, con acceso eficiente a contexto anterior a través de resúmenes de fragmento aprendidos.
+- Identidad de asistente ajustada explícitamente ("identity tuning").
+- Capacidad de razonamiento y matemáticas: no verificada de forma independiente; el modelo se entrenó parcialmente con Mixture-of-Thoughts, pero no se publican evaluaciones que cuantifiquen estas capacidades.
+- Tool calling / function calling: no documentado en la información disponible.
+- Soporte de agentes y razonamiento multi-paso: no documentado.
+- Multilingüismo: limitado a inglés según la model card.
+- Visión, audio o modo de pensamiento explícito: no disponibles; es un modelo exclusivamente de texto.
 
 ## Casos de uso
 
-- Atencion al cliente automatizada: el modelo puede mantener conversaciones multi-turno en ingles apoyandose en la ventana de 32.768 tokens para conservar el historial de la sesion y los datos del cliente sin truncar; su tamano de 742,5 M permite desplegarlo en infraestructura modesta.
-- Resumen de documentos largos: informes, articulos o transcripciones de hasta 32K tokens pueden procesarse en una sola pasada, con la memoria fragmentada reduciendo el coste de atender a las primeras secciones frente a una atencion completa.
-- Asistente de soporte interno sobre base documental: combinando el contexto largo con un pipeline de recuperacion (RAG), el modelo puede responder preguntas sobre manuales extensos insertando los fragmentos recuperados en el prompt.
-- Generacion de borradores de contenido: redaccion de correos, descripciones de producto o articulos breves en ingles, con instrucciones de estilo y tono en el mensaje de sistema.
-- Prototipado e investigacion en arquitecturas de contexto largo: el codigo custom y el diseno Chunked Fabric Memory lo convierten en una base para experimentar con mecanismos de memoria comprimida en un modelo que cabe en una sola GPU.
-- Clasificacion y extraccion de informacion sobre texto: reformulando la tarea como generacion (por ejemplo, extraer campos estructurados de un documento), con la ventaja de procesar entradas largas de una vez.
-- Evaluacion en hardware Intel: su soporte documentado para Gaudi 3 (`hpu`) y Arc (`xpu`) permite usarlo como banco de pruebas de despliegue en el stack de Intel.
+- Asistente conversacional de contexto largo: el modelo puede mantener diálogos multi-turno con hasta 32.768 tokens de entrada y recurrir a resúmenes de fragmentos anteriores, lo que resulta adecuado para sesiones de soporte o tutoría prolongadas en las que el historial completo no cabe en una ventana de atención densa típica de modelos de su tamaño.
+- Resumen de documentos extensos: con 32K de contexto y una ruta de memoria comprimida, puede procesar informes, actas o artículos largos en una sola pasada en lugar de trocearlos, reduciendo la pérdida de coherencia entre fragmentos.
+- Generación de contenido en inglés: redacción de borradores, correos, descripciones de producto y textos de marketing, aprovechando el ajuste por instrucciones y su bajo coste de despliegue en una sola GPU.
+- Respuesta a preguntas sobre base documental: ingesta de manuales o políticas internas como contexto y generación de respuestas extractivas o sintéticas; su licencia Apache 2.0 permite integrarlo en productos comerciales sin obligaciones de atribución adicionales más allá de las de la licencia.
+- Prototipado e investigación en arquitecturas de memoria: al ser un modelo pequeño con código de modelo personalizado y una arquitectura de memoria fragmentada documentada, sirve como banco de pruebas reproducible para estudiar atención de largo alcance en hardware Intel Gaudi 3 o Arc.
+- Despliegue en entornos con recursos limitados: con 742,5 M de parámetros en FP16 (aproximadamente 1,5 GB de pesos), cabe en GPU de consumo y en aceleradores Intel, lo que permite ejecutar un asistente de texto local en estaciones de trabajo sin GPU de centro de datos.
+- Clasificación y extracción de información en flujos de texto: reformulando la tarea como generación guiada por instrucciones (por ejemplo, "extrae las entidades y devuélvelas en JSON"), puede emplearse en pipelines de enriquecimiento de datos donde el coste por token es un factor crítico.
 
 ## Benchmarks y rendimiento
 
@@ -57,42 +58,41 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16: aproximadamente 1,5 GB solo para pesos (742,5 M de parametros a 2 bytes), mas cache KV y overhead del runtime; en la practica, un margen de 3-4 GB es razonable para contextos moderados.
-- La cache KV crece con el contexto; el uso de GQA (6 cabezas KV) y de resumenes de memoria en lugar de atencion completa sobre todo el historial reduce su coste frente a un transformer equivalente con atencion global.
-- GPU recomendadas: cualquier GPU consumer con al menos 6-8 GB de VRAM deberia poder ejecutarlo en FP16; tambien es viable en CPU para inferencia por lotes pequenos.
-- Cabe en GPU consumer: si, incluidas gamas como RTX 3060, RTX 4060 o superiores.
-- Opciones de despliegue: Transformers con `trust_remote_code=True` (requisito por el codigo custom), accelerate y safetensors. El autor documenta explicitamente el despliegue en Intel Gaudi 3 (`hpu`) e Intel Arc (`xpu`). No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI, y la ausencia de pesos GGUF publicados limita el uso en llama.cpp/Ollama sin conversion propia.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia: aproximadamente 1,5 GB solo para los pesos en FP16, más memoria para el contexto KV. Con 32K de contexto y GQA (6 cabezas KV, dimensión 64), la caché KV es moderada, pero no se publican cifras oficiales de consumo a máxima longitud; como referencia orientativa, un despliegue en FP16 con contexto amplio requiere del orden de 4-8 GB de VRAM total, cifra no confirmada por el autor.
+- GPU recomendadas: el autor documenta entrenamiento en 8 Intel Gaudi 3 y soporte para Intel Arc (`xpu`). Para inferencia en GPU NVIDIA no se especifican modelos concretos; por tamaño, cualquier GPU con al menos 8 GB (RTX 3060 Ti, RTX 4060 Ti, RTX 4070) debería poder alojar los pesos en FP16, y una A100 o H100 no es necesaria para este tamaño.
+- Cabe en GPU de consumo: sí, previsiblemente en RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB, RTX 4070 y superiores, así como en Intel Arc con suficiente memoria. No hay confirmación oficial de latencias ni de consumo medido.
+- Opciones de despliegue: `transformers` con `trust_remote_code=True` (requiere revisar el código Python del repositorio antes de activarlo), con soporte declarado para PyTorch en `hpu` (Gaudi 3) y `xpu` (Intel Arc). No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, y al no publicarse pesos GGUF, llama.cpp y Ollama no son viables sin conversión previa.
+- Latencia y throughput: no disponibles. El autor no publica mediciones de tokens por segundo ni de latencia por petición en ninguna de las plataformas soportadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Notas |
 |---|---|---|---|---|---|
-| Bluebird 1.5 Instruct | 742,5 M | 32.768 | Apache 2.0 | Ingles | Memoria fragmentada con compuerta; codigo custom; enfoque Intel |
-| Qwen2.5-0.5B-Instruct | 0,49 B | 32.768 | Apache 2.0 | Multilingue | Atencion completa estandar; amplio ecosistema de despliegue |
-| Llama 3.2 1B Instruct | 1,24 B | 128.000 | Licencia comunitaria Llama 3.2 | Multilingue | Mayor contexto nominal y ecosistema maduro; licencia con restricciones |
-| SmolLM2-1.7B-Instruct | 1,71 B | 8.192 | Apache 2.0 | Ingles y otros | Mayor numero de parametros; contexto menor |
+| Bluebird 1.5 Instruct | 742,5 M | 32.768 | Apache 2.0 | Inglés | Arquitectura híbrida con memoria fragmentada; entrenado en Intel Gaudi 3; sin benchmarks publicados |
+| Qwen2.5-0.5B-Instruct | 0,5 B | 32.768 | Apache 2.0 | Multilingüe (incluye español) | Transformer estándar con GQA; benchmarks publicados por el autor; amplio ecosistema de cuantizaciones GGUF |
+| Llama 3.2 1B Instruct | 1,2 B | 128.000 | Llama 3.2 Community License | Multilingüe | Mayor contexto declarado y ecosistema maduro; licencia con restricciones para grandes despliegues comerciales |
+| SmolLM2-1.7B-Instruct | 1,7 B | 8.192 | Apache 2.0 | Inglés y otros | Mayor número de parámetros y contexto menor; benchmarks publicados; cuantizaciones GGUF disponibles |
 
-La comparacion se basa en caracteristicas publicas de cada familia; no se dispone de resultados de benchmarks de Bluebird 1.5 Instruct que permitan contrastar calidad frente a estas alternativas.
+La comparación con Qwen2.5-0.5B-Instruct y SmolLM2-1.7B-Instruct es la más directa por tamaño y licencia permisiva. Bluebird 1.5 Instruct declara un contexto mayor que SmolLM2 y comparable al de Qwen2.5, pero carece de benchmarks publicados y de cuantizaciones listas para usar, lo que limita su adopción frente a alternativas con ecosistema consolidado. No se dispone de datos de rendimiento comparativo verificables.
 
 ## Limitaciones y advertencias
 
-- Modelo unicamente en ingles: no se declara soporte de castellano ni de otros idiomas, por lo que su uso en entornos hispanohablantes requeriria evaluacion previa y probablemente arrojaria calidad inferior.
-- El propio autor advierte que la ventana de 32K es una capacidad del modelo, no una garantia de recuperacion precisa de informacion en posiciones lejanas; la memoria comprimida es una aproximacion, no atencion exacta.
-- Riesgo de alucinacion inherente a un modelo de 742,5 M de parametros: la capacidad de razonamiento y de conocimiento factual es limitada en comparacion con modelos de mayor tamano.
-- Ausencia de datos publicados de benchmarks, evaluaciones de sesgo o red teaming; no hay evidencia documentada sobre sesgos conocidos.
-- Requiere `trust_remote_code=True` por el codigo custom de Transformers: conviene auditar los archivos Python del repositorio antes de ejecutarlo en produccion.
-- Ecosistema de despliegue reducido: sin pesos GGUF, AWQ ni GPTQ publicados, y sin soporte documentado en vLLM, llama.cpp, Ollama o TGI; la integracion en pipelines existentes exige trabajo adicional.
-- No se documenta soporte de tool calling ni de agentes, lo que limita su uso en flujos automatizados que dependan de llamadas a funciones.
-- Licencia Apache 2.0 favorable al uso comercial, sujeta a los avisos upstream aplicables derivados de los datasets de post-entrenamiento utilizados.
-- Modelo de autor individual con 354 descargas y 3 likes: soporte comunitario y mantenimiento limitados; conviene fijar una revision concreta del repositorio en produccion.
+- Solo inglés: la model card declara únicamente el idioma `en`; no hay evidencia de calidad en castellano ni en otros idiomas.
+- Sin benchmarks publicados: no existen resultados verificables de MMLU, HumanEval, GSM8K ni de evaluaciones de seguimiento de instrucciones, por lo que el rendimiento real es desconocido y no debe asumirse a partir de las etiquetas del repositorio.
+- Contexto declarado frente a recall real: el propio autor advierte que la ventana de 32.768 tokens es una capacidad del modelo, no una garantía de precisión en la recuperación de información lejana. La memoria fragmentada comprime el contexto antiguo en resúmenes aprendidos, lo que puede perder detalles literales.
+- Riesgo de alucinación: como todo modelo generativo de 742 M de parámetros, es propenso a inventar hechos, especialmente en dominios especializados y en tareas de razonamiento complejo; su tamaño reducido agrava este riesgo frente a modelos mayores.
+- Código de modelo personalizado: requiere `trust_remote_code=True`, lo que implica ejecutar código Python del repositorio; debe auditarse antes de usarlo en producción.
+- Madurez y soporte: proyecto de un autor individual con 3 likes y 1.162 descargas en el momento de la consulta; no hay garantías de mantenimiento, parches de seguridad ni soporte a largo plazo.
+- Ecosistema limitado: sin cuantizaciones GGUF, AWQ ni GPTQ publicadas, y sin integraciones documentadas con vLLM, TGI, llama.cpp u Ollama; el despliegue eficiente requiere trabajo adicional de conversión y validación.
+- Licencia: Apache 2.0 permite uso comercial, pero la model card indica que está "sujeta a los avisos upstream aplicables"; conviene revisar las licencias de los datasets de post-entrenamiento (smoltalk2, Mixture-of-Thoughts, Nemotron-Post-Training-Dataset-v1) si se redistribuye el modelo.
+- Sesgos: no se documenta ninguna evaluación de sesgos, toxicidad ni seguridad; los datos de instrucciones pueden introducir sesgos de estilo y de contenido no caracterizados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/tudor-iustin22/Bluebird-1.5-Instruct
 - Modelo base: https://huggingface.co/tudor-iustin22/Bluebird-1.5-Base
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
-- Documentacion de instalacion de Intel Gaudi: https://docs.habana.ai/en/latest/Installation_Guide/index.html
-- Dataset HuggingFaceTB/smoltalk2: https://huggingface.co/datasets/HuggingFaceTB/smoltalk2
-- Dataset open-r1/Mixture-of-Thoughts: https://huggingface.co/datasets/open-r1/Mixture-of-Thoughts
-- Dataset nvidia/Nemotron-Post-Training-Dataset-v1: https://huggingface.co/datasets/nvidia/Nemotron-Post-Training-Dataset-v1
+- Documentación de instalación de Intel Gaudi: https://docs.habana.ai/en/latest/Installation_Guide/index.html
+- Dataset smoltalk2: https://huggingface.co/datasets/HuggingFaceTB/smoltalk2
+- Dataset Mixture-of-Thoughts: https://huggingface.co/datasets/open-r1/Mixture-of-Thoughts
+- Dataset Nemotron-Post-Training-Dataset-v1: https://huggingface.co/datasets/nvidia/Nemotron-Post-Training-Dataset-v1

@@ -2,111 +2,102 @@
 
 ## Resumen
 
-Vela-1.0-Encoder-307M-Guard es un clasificador de texto de tipo encoder desarrollado por el proyecto llm-semantic-router (vLLM Semantic Router). Su funcion concreta es detectar intentos de prompt injection y jailbreak tanto en peticiones de entrada como en texto no confiable que se incorpora a un sistema. Es, por tanto, un modelo discriminativo de seguridad, no un modelo generativo: devuelve etiquetas de clasificacion en lugar de texto.
+Vela-1.0-Encoder-307M-Guard es un clasificador de texto de 307 millones de parametros, afinado a partir del modelo base vllm-sr/Vela-1.0-Encoder-307M, y publicado por el proyecto vLLM Semantic Router. Su funcion concreta es detectar intentos de prompt injection y de jailbreak, tanto en peticiones directas del usuario como en texto no confiable que se inyecta en el contexto del modelo (por ejemplo, resultados de herramientas o documentos recuperados). Forma parte de una familia de modelos "Vela" pensados como componentes de enrutado y seguridad dentro de despliegues de LLM.
 
-El modelo cuenta con 307.531.778 parametros y una capacidad de entrada de 32.768 tokens, incluyendo tokens especiales. Se presenta como un ajuste fino (finetune) sobre el modelo base llm-semantic-router/Vela-1.0-Encoder-307M, y el repositorio esta etiquetado con la arquitectura modernbert, lo que lo situa en la familia de encoders transformer modernos con soporte nativo de contexto largo.
+El modelo emplea la arquitectura ModernBERT, un encoder transformer con atencion eficiente y soporte de contexto largo, y acepta hasta 32.768 tokens de entrada. Se distribuye con pesos nativos en safetensors para Transformers y Candle, y con artefactos ONNX para CPU y ROCm, incluyendo perfiles fijos de 512, 8K y 32K tokens. La licencia es Apache 2.0, lo que facilita su integracion comercial.
 
-Es relevante ahora porque los despliegues de agentes y pasarelas de LLM necesitan una capa de proteccion de baja latencia y coste contenido que filtre entradas maliciosas antes de llegar al modelo generativo. Vela Guard se ofrece bajo licencia Apache 2.0, con pesos en safetensors, y se integra dentro del ecosistema del enrutador semantico de vLLM, lo que facilita su uso como guardrail en produccion.
+Su relevancia actual radica en que aborda un problema practico de produccion: separar instrucciones legitimas de intentos de manipulacion en aplicaciones con agentes y tool calling. Los datos publicados por el autor muestran una mejora sustancial frente al detector mmBERT original en los conjuntos de desarrollo evaluados, aunque el propio autor advierte que esas cifras no miden la precision en documentos largos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Encoder transformer (etiqueta del repositorio: modernbert) |
+| Arquitectura | ModernBERT (encoder transformer) |
 | Parametros totales | 307.531.778 |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | 32.768 tokens, incluyendo tokens especiales |
-| Tipos de cuantizacion | no disponible; la evaluacion publicada se realizo en FP32 |
-| Idiomas soportados | no disponible |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 32.768 tokens de entrada |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | multilingue (sin listado detallado) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
-| Tarea | text-classification (deteccion de prompt injection y jailbreak) |
-| Modelo base | llm-semantic-router/Vela-1.0-Encoder-307M |
-| Tamano del repositorio | 1,3 GB |
-| Libreria | transformers |
-| Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-09-13 |
+| Formato de pesos | safetensors, ONNX |
 
 ## Arquitectura y entrenamiento
 
-Se trata de un encoder transformer de 307 millones de parametros construido sobre el modelo Vela-1.0-Encoder-307M, que el repositorio etiqueta como modernbert. Los encoders de esta familia emplean atencion con soporte de secuencias largas y variantes eficientes de atencion, lo que explica la capacidad de entrada de 32.768 tokens declarada por el autor. El modelo es un ajuste fino para clasificacion, con una cabeza de clasificacion sobre el encoder, orientada a distinguir peticiones maliciosas (prompt injection, jailbreak) de peticiones benignas.
+El modelo es un fine-tune del encoder Vela-1.0-Encoder-307M, construido sobre ModernBERT. Se trata de un clasificador de texto (pipeline `text-classification`) que emite una puntuacion de ataque; en la evaluacion publicada se aplica un umbral de 0,5 para decidir si una entrada es un intento de ataque. El contexto de entrada es de 32.768 tokens, lo que permite analizar prompts largos y bloques de texto no confiable sin truncar.
 
-La informacion disponible no detalla el numero de tokens de entrenamiento, la composicion exacta del dataset, ni si se emplearon tecnicas de RLHF o DPO. Si se documenta que el conjunto de evaluacion de desarrollo combina ataques de prompt, peticiones benignas y contextos largos controlados de hasta 32.768 tokens, y que tanto Vela como el modelo de comparacion se evaluaron en FP32, con entradas completas y seleccionando la etiqueta de mayor puntuacion. El autor advierte explicitamente que ese conjunto informo el desarrollo del modelo y no constituye un benchmark ciego e independiente.
+No se detalla en la informacion disponible el volumen de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO; al ser un encoder clasificador, el ajuste es de tipo supervisado sobre etiquetas de ataque/benigno. La innovacion principal del modelo es operativa: diferenciar el alcance de las instrucciones (peticiones directas frente a texto no confiable embebido) y mantener esa capacidad en varios idiomas. El autor evalua contra el detector mmBERT Guard original usando los mismos conjuntos de desarrollo revisados y un umbral de 0,5.
 
 ## Capacidades
 
-- Clasificacion de texto para deteccion de prompt injection en peticiones de entrada.
-- Deteccion de intentos de jailbreak en texto no confiable.
-- Procesamiento de contextos largos de hasta 32.768 tokens, lo que permite analizar prompts completos con historial o documentos adjuntos sin truncar.
-- Clasificacion de una unica entrada con multiples etiquetas y puntuaciones (la guia de uso emplea top_k=None).
-- Integracion como guardrail dentro del enrutador semantico de vLLM y del ecosistema transformers.
-- Capacidad de servir como modelo de embeddings/clasificacion via text-embeddings-inference, segun las etiquetas del repositorio.
-- No genera texto: no soporta tool calling, function calling ni razonamiento multi-paso por si mismo.
-- Capacidades multilingues: no disponible.
-- El autor indica que para riesgo de contenido deben usarse los modelos Safety o Hazard de la familia, no este.
+- Deteccion de prompt injection y jailbreak en peticiones directas del usuario.
+- Deteccion de intentos de manipulacion en texto no confiable incrustado en el contexto (resultados de herramientas, documentos, contenido recuperado).
+- Diferenciacion del alcance de instrucciones: contrastes de instruction-scope evaluados en seis idiomas.
+- Clasificacion multilingue de entradas maliciosas.
+- Entrada de hasta 32.768 tokens para analizar prompts y documentos largos.
+- Integracion como componente de seguridad en pipelines de enrutado semantico.
+- Compatibilidad con Transformers, Candle y artefactos ONNX para CPU y ROCm.
+- No es un modelo generativo: no produce texto ni soporta tool calling por si mismo; su salida es una clasificacion.
 
 ## Casos de uso
 
-- Filtrado previo en una pasarela de LLM: colocar Vela Guard delante del modelo generativo para clasificar cada peticion entrante y bloquear intentos de prompt injection antes de consumir tokens del modelo principal.
-- Guardrail en sistemas de agentes: inspeccionar la salida de herramientas externas y contenido recuperado antes de reinyectarlo en el bucle del agente, reduciendo el riesgo de inyeccion indirecta.
-- Moderacion de chatbots en produccion: clasificar mensajes de usuarios en tiempo real y derivar a revision humana o respuesta de rechazo cuando se detecta un intento de jailbreak.
-- Proteccion de pipelines RAG: analizar documentos y fragmentos no confiables que se indexan o se recuperan, para evitar que instrucciones maliciosas ocultas lleguen al prompt final.
-- Enrutado semantico con criterio de seguridad: usar la clasificacion como senal dentro del enrutador para decidir si una peticion se atiende, se escala a un modelo mas robusto o se rechaza.
-- Evaluacion y red teaming: emplear el clasificador como detector de referencia para medir la tasa de exito de baterias de prompts adversariales contra un sistema desplegado.
-- Defensa en APIs publicas: integrar el modelo en el punto de entrada HTTP para etiquetar trafico sospechoso y alimentar sistemas de alerta o rate limiting.
+- Filtro de entrada en aplicaciones de chat: el modelo clasifica cada mensaje del usuario antes de enviarlo al LLM principal, bloqueando intentos de anulacion de instrucciones; su contexto de 32K permite evaluar conversaciones largas sin truncar.
+- Proteccion de agentes con tool calling: cuando el agente incorpora resultados de herramientas o APIs externas al contexto, Guard analiza ese texto no confiable para detectar instrucciones inyectadas antes de que el modelo las ejecute.
+- Seguridad en RAG: en pipelines de recuperacion aumentada, los fragmentos recuperados se clasifican como benignos o sospechosos antes de incluirlos en el prompt, reduciendo el riesgo de inyeccion indirecta.
+- Enrutado semantico con politicas de seguridad: integrado en vLLM Semantic Router, permite decidir si una peticion se atiende, se redirige a un modelo mas robusto o se rechaza, combinando la clasificacion de ataque con el enrutado por intencion.
+- Moderacion multilingue: al operar en varios idiomas, cubre aplicaciones con usuarios internacionales donde un detector solo en ingles dejaria pasar ataques en otras lenguas.
+- Auditoria y monitorizacion: el modelo puede puntuar registros historicos de conversaciones para identificar patrones de ataque y ajustar umbrales, con despliegue en CPU mediante ONNX para procesamiento por lotes.
+- Despliegue en hardware modesto: los artefactos ONNX para CPU permiten ejecutar el filtro en entornos sin GPU dedicada, como funciones serverless o servicios perimetrales.
 
 ## Benchmarks y rendimiento
 
-El autor publica una evaluacion de desarrollo frente al detector original mmBERT32K jailbreak detector, sobre 1.319 entradas, en escala 0-100. Ambos modelos se evaluaron en FP32, con entradas completas y la etiqueta de mayor puntuacion. El conjunto no es un benchmark ciego e independiente.
+Resultados publicados por el autor: macro F1 frente al mmBERT Guard original, con los mismos conjuntos de desarrollo revisados y umbral de ataque de 0,5.
 
-| Evaluacion de desarrollo (1.319 entradas) | mmBERT original | Vela |
+| Conjunto de evaluacion | mmBERT original | Vela Guard |
 |---|---:|---:|
-| Macro F1 | 76,63 | 86,61 |
-| Accuracy | 76,65 | 86,66 |
+| Peticiones basadas en fuente (381) | 46,42 % | 97,77 % |
+| Contrastes de instruction-scope, seis idiomas (96) | 35,61 % | 75,98 % |
 
-No se han publicado otros resultados de benchmarks en la informacion disponible (no hay datos de MMLU, HumanEval, GSM8K ni similares, y no serian aplicables a un modelo de clasificacion).
+En los contrastes de seis idiomas, Guard detecta 34 de 48 ataques, frente a 1 de 48 de mmBERT; las falsas alarmas son 9 de 48 y 0 de 48, respectivamente. El autor advierte que estas puntuaciones de desarrollo no miden la precision en documentos largos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para los pesos, calculada a partir de los 307,5 millones de parametros: aproximadamente 1,23 GB en FP32, 0,62 GB en FP16/BF16 y 0,31 GB en INT8.
-- VRAM total estimada incluyendo activaciones y overhead de ejecucion: del orden de 2-3 GB en FP32, 1-1,5 GB en FP16 y alrededor de 1 GB en INT8, para lotes pequenos.
-- Cabe holgadamente en GPU de consumo: RTX 3060, RTX 4060, RTX 4070, RTX 4090 y equivalentes, e incluso en GPU integradas con suficiente memoria compartida en cuantizaciones bajas.
-- GPU de centro de datos recomendadas para alto throughput: A100, H100, L40S o T4 para despliegues con muchos lotes concurrentes.
-- Opciones de despliegue documentadas o etiquetadas: pipeline de transformers (device=-1 o GPU), text-embeddings-inference, y el ecosistema vLLM Semantic Router. No se documentan integraciones con llama.cpp u Ollama.
-- Versiones de libreria indicadas por el autor: Transformers 4.57.6 o 5.17.0, con PyTorch.
-- Latencia y throughput: no disponibles en la informacion proporcionada. El unico dato de rendimiento publicado son las metricas de clasificacion (Macro F1 y accuracy), no medidas de velocidad.
+- VRAM estimada para inferencia: no disponible de forma oficial; con 307 millones de parametros, en fp16 el peso ronda los 0,6 GB y en fp32 unos 1,2 GB, mas memoria para activaciones segun la longitud de secuencia.
+- GPU recomendadas: no especificadas por el autor; cualquier GPU con al menos unos pocos GB de VRAM deberia poder ejecutar el modelo en fp16.
+- Cabe en GPU de consumo: si, por el tamano del modelo; el autor no publica una lista de GPUs validadas.
+- Opciones de despliegue: Transformers (probado con la version 4.57.6), Candle, y ONNX Runtime en CPU y ROCm con perfiles fijos de 512, 8K y 32K tokens; tambien figura la etiqueta text-embeddings-inference.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Macro F1 (dev, 1.319 entradas) | Accuracy (dev) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Vela-1.0-Encoder-307M-Guard | 307,5 M | 32.768 tokens | 86,61 | 86,66 | Apache 2.0 | Hugging Face, safetensors |
-| mmBERT32K jailbreak detector (merged) | no disponible | no disponible | 76,63 | 76,65 | no disponible | Hugging Face |
-| Otros clasificadores de prompt injection | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Vela-1.0-Encoder-307M-Guard | 307 M | 32.768 tokens | Deteccion de prompt injection y jailbreak | Apache 2.0 | Hugging Face, ONNX |
+| mmBERT Guard (mmbert32k-jailbreak-detector-merged) | no disponible | no disponible | Deteccion de jailbreak | no disponible | Hugging Face |
+| Vela-1.0-Encoder-307M-Safety | 307 M (familia Vela) | no disponible | Deteccion de contenido danino | Apache 2.0 (segun familia) | Hugging Face |
+| Vela-1.0-Encoder-307M-Hazard | 307 M (familia Vela) | no disponible | Deteccion de contenido de riesgo | Apache 2.0 (segun familia) | Hugging Face |
 
-La comparacion directa solo es posible con el detector original de mmBERT32K, sobre el que el autor reporta una mejora de unos 10 puntos en Macro F1 y accuracy en su conjunto de desarrollo. No se dispone de datos de otros modelos comparables en la informacion proporcionada.
+Los modelos Safety y Hazard de la misma familia son complementarios, no sustitutos: el autor recomienda combinarlos con Guard para cubrir tanto manipulacion de instrucciones como contenido danino.
 
 ## Limitaciones y advertencias
 
-- El unico conjunto de evaluacion publicado es un conjunto de desarrollo que informo el entrenamiento del modelo; no es un benchmark ciego ni independiente, por lo que las cifras pueden estar optimizadas respecto a ese conjunto.
-- No se documentan los idiomas soportados, lo que impide garantizar un comportamiento fiable fuera del idioma o idiomas de entrenamiento.
-- Al ser un clasificador, existe riesgo de falsos positivos (bloquear peticiones benignas) y de falsos negativos (dejar pasar ataques novedosos o adversariales).
-- Los detectores de prompt injection son vulnerables a tecnicas de evasion, codificacion, ofuscacion o ataques multilingues no vistos durante el entrenamiento.
-- El modelo no cubre riesgo de contenido: el autor remite explicitamente a los modelos Safety o Hazard para esa funcion.
-- No se especifican tipos de cuantizacion soportados ni el impacto de la cuantizacion en la precision de clasificacion; la evaluacion publicada es en FP32.
-- Metadatos de adopcion muy bajos (0 descargas y 0 likes en el momento de la consulta), con lo que hay poca validacion externa independiente.
-- Licencia Apache 2.0: permite uso comercial y modificacion, con obligacion de conservar el aviso de licencia y de atribucion. No se declaran restricciones adicionales.
-- No se documentan latencia, throughput ni coste por peticion en produccion, datos necesarios para dimensionar un despliegue de filtrado a gran escala.
+- Las metricas publicadas corresponden a conjuntos de desarrollo y no miden la precision en documentos largos; el rendimiento en contextos extensos puede diferir.
+- El conjunto de evaluacion multilingue es reducido (96 ejemplos en seis idiomas), por lo que las cifras tienen alta varianza.
+- Es un clasificador binario con umbral fijo de 0,5 en la evaluacion; en produccion habra que calibrar el umbral segun el coste relativo de falsos positivos y falsos negativos.
+- No se documentan sesgos conocidos ni la composicion del dataset de entrenamiento, lo que dificulta auditar su comportamiento en dominios especificos.
+- No se detalla la lista de idiomas soportados; el caracter multilingue esta declarado, pero sin cobertura verificable por idioma.
+- No sustituye a un detector de contenido danino: el propio autor indica emparejarlo con Vela Safety o Vela Hazard.
+- Riesgo de alucinacion no aplicable en el sentido generativo, pero si de clasificaciones erroneas (falsos positivos que bloqueen peticiones legitimas o falsos negativos que dejen pasar ataques).
+- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base vllm-sr/Vela-1.0-Encoder-307M.
 
 ## Enlaces
 
-- Hugging Face del modelo: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Guard
-- Modelo base: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M
-- Coleccion Vela 1.0 Router Models: https://huggingface.co/collections/llm-semantic-router/vela-10-router-models-6aa555ba70cc6997d6d67798
-- Detector original mmBERT32K jailbreak: https://huggingface.co/llm-semantic-router/mmbert32k-jailbreak-detector-merged
-- Documentacion de vLLM Semantic Router: https://vllm-sr.ai/
-- Blog del proyecto: https://vllm-sr.ai/blog/
+- Modelo en Hugging Face: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Guard
+- Modelo base: https://huggingface.co/vllm-sr/Vela-1.0-Encoder-307M
+- Detector mmBERT de referencia: https://huggingface.co/vllm-sr/mmbert32k-jailbreak-detector-merged
+- Vela Safety: https://huggingface.co/vllm-sr/Vela-1.0-Encoder-307M-Safety
+- Vela Hazard: https://huggingface.co/vllm-sr/Vela-1.0-Encoder-307M-Hazard
+- Coleccion Vela: https://huggingface.co/collections/vllm-sr/vela-10-router-models-6aa555ba70cc6997d6d67798
+- Documentacion: https://vllm-sr.ai/
+- Blog: https://vllm-sr.ai/blog/
 - Repositorio GitHub: https://github.com/vllm-project/semantic-router
-- Slack del proyecto: https://vllm-dev.slack.com/archives/C09CTGF8KCN
-
-Nota: los resultados de busqueda web obtenidos no contenian informacion especifica sobre este modelo (eran guias genericas sobre LLM en frances e ingles), por lo que no se han incluido como fuentes.
+- Slack: https://vllm-dev.slack.com/archives/C09CTGF8KCN

@@ -2,95 +2,99 @@
 
 ## Resumen
 
-LFM3-VL 2B Heretic GGUF es una cuantización en formato GGUF del modelo vision-language LFM3-VL 2B Heretic, publicado por el usuario Lucasgitguy-co. Se trata de una conversión Q4_K_M del modelo de lenguaje acompañada de un proyector visual independiente en F16 (`mmproj`), ambos necesarios para procesar entrada de imagen. El modelo base deriva de LiquidAI/LFM3-VL-2B, un modelo de visión y lenguaje de la familia LFM3 de Liquid AI, aunque la variante "heretic" corresponde a un ajuste o modificación posterior realizada por el autor de la cuantización.
+LFM3-VL 2B Heretic GGUF es una conversión a formato GGUF del modelo vision-language LFM3-VL 2B Heretic, publicada por el usuario Lucasgitguy-co. El modelo original deriva de LiquidAI/LFM3-VL-2B, un modelo de la familia LFM (Liquid Foundation Models) de Liquid AI, y ha sido modificado mediante técnicas de "abliteration" (de ahí el sufijo "heretic") para reducir los rechazos en las respuestas. Esta versión GGUF se distribuye con cuantización Q4_K_M para el modelo de lenguaje y F16 para el proyector visual.
 
-El modelo resuelve tareas de image-text-to-text, es decir, generación de texto condicionada por una o varias imágenes junto con un prompt textual. Con aproximadamente 1.730 millones de parámetros, está pensado para despliegue local en hardware modesto, incluido CPU, gracias a la cuantización Q4_K_M y a un tamaño de repositorio de 1,5 GB. Su relevancia actual radica en la posibilidad de ejecutar un VLM pequeño en entornos sin GPU dedicada mediante llama.cpp.
+El paquete incluye dos artefactos separados: el modelo de lenguaje cuantizado a Q4_K_M y el proyector de visión en F16, ambos necesarios para el procesamiento de imágenes. El modelo cuenta con 1.478.622.400 parámetros reales según los safetensors del modelo base, lo que lo sitúa en la categoría de 2B parámetros. El repositorio ocupa 3.0 GB e incluye además un bundle de un solo archivo que empaqueta ambos componentes.
 
-La ficha se centra en los artefactos GGUF publicados y en su validación declarada. El autor indica explícitamente que no se realizó entrenamiento adicional ni evaluación de benchmarks durante la conversión, y que la inferencia en GPU no fue validada. La licencia aplicable es la LFM Open License v1.0, con limitaciones de uso comercial que se extienden a las derivaciones.
+La relevancia de esta ficha radica en que permite ejecutar un modelo vision-language de 2B parámetros en hardware de consumo mediante llama.cpp, con soporte para entrada de imágenes. Sin embargo, es importante señalar que la conversión no incluye evaluación de benchmarks ni validación en GPU, y que la licencia LFM Open License v1.0 impone restricciones al uso comercial de derivados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Vision-language model (transformer multimodal); detalles de arquitectura interna no disponibles |
-| Parametros totales | 1.728.801.600 (aprox. 1,73 B) |
-| Parametros activos | No disponible (no se indica que sea MoE) |
-| Longitud de contexto | No disponible en la informacion proporcionada (el ejemplo de uso emplea `-c 2048`) |
-| Tipos de cuantizacion | Q4_K_M (modelo de lenguaje); F16 (proyector visual mmproj) |
-| Idiomas soportados | Ingles (en) |
-| Licencia | LFM Open License v1.0 (license: other) |
-| Formato de pesos | GGUF (dos artefactos: modelo de lenguaje + mmproj F16) |
+| Arquitectura | Vision-language model (transformer multimodal con proyector visual); detalles de la arquitectura base no disponibles en la informacion proporcionada |
+| Parametros totales | 1.478.622.400 (según safetensors del modelo base) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (el ejemplo de uso emplea `-c 2048`) |
+| Tipos de cuantizacion | Q4_K_M (modelo de lenguaje) y F16 (proyector visual); bundle de 1.479 GB |
+| Idiomas soportados | en (inglés) |
+| Licencia | LFM Open License v1.0 (license: other); las adiciones documentales del publicador bajo Apache 2.0 |
+| Formato de pesos | GGUF (llama.cpp); también existe versión MLX 4-bit del modelo base |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una conversión de pesos, no un entrenamiento nuevo. Según la model card, la conversión se realizó el 30 de octubre de 2026 a partir de la revisión `e81e03b28d228cb8c2676eb339c3404fb73b45b5` del modelo base `Lucasgitguy-co/lfm3-vl-2b-heretic`, usando llama.cpp. El modelo de lenguaje se convirtió primero a F16 y después se cuantizó a Q4_K_M; el proyector visual se convirtió por separado a F16. Los metadatos del tokenizador local se adaptaron a la API de fast-tokenizer de Transformers para la conversión, conservando el vocabulario del tokenizador.
+El modelo base es un vision-language model de la familia LFM3 de Liquid AI, que combina un modelo de lenguaje con un codificador/proyector visual para tareas image-text-to-text. Esta versión GGUF es una conversión realizada con llama.cpp el 2026-10-30 a partir de la revisión `e81e03b28d228cb8c2676eb339c3404fb73b45b5`: el modelo de lenguaje se convirtió a F16 y posteriormente se cuantizó a Q4_K_M, mientras que el proyector se convirtió por separado a F16. Los metadatos del tokenizer se adaptaron a la API de fast-tokenizer de Transformers para la conversión, conservando el vocabulario original.
 
-La arquitectura subyacente corresponde a la familia LFM3-VL de Liquid AI, un modelo multimodal de 2B parámetros orientado a image-text-to-text. No se dispone en la información proporcionada de detalles sobre composición del dataset de entrenamiento, número de tokens, ni si hubo RLHF/DPO. La variante "heretic" sugiere una modificación de alineación o de comportamiento respecto al modelo original de Liquid AI, pero el autor no documenta en esta model card el proceso concreto de ese ajuste. La innovación técnica destacable de esta publicación es la separación entre modelo de lenguaje cuantizado y proyector visual en F16, junto con instrucciones específicas para ejecución en CPU cuando la inicialización de GPU no está disponible.
+El sufijo "heretic" indica que el modelo base ha sido sometido a un proceso de abliteration orientado a reducir los rechazos de respuesta. No se dispone en la información proporcionada de detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF/DPO en el modelo original. La conversión no incluyó entrenamiento adicional ni evaluación de benchmarks; únicamente se realizó una prueba de humo en CPU con una imagen roja sólida y el prompt "What color is the image? Answer briefly.", que produjo "The image is red.". La inferencia en GPU no fue validada.
 
 ## Capacidades
 
-- Generación de texto condicionada por imagen (image-text-to-text) mediante prompt textual e imagen de entrada.
-- Descripción y respuesta a preguntas sobre el contenido visual de una imagen, como demuestra el smoke test con una imagen roja.
-- Conversación multimodal de un turno o multi-turno dentro de la ventana de contexto configurada.
-- Ejecución en CPU mediante llama.cpp, con flags específicos para desactivar offload cuando la GPU no está disponible.
-- Soporte de despliegue compatible con endpoints (etiqueta `endpoints_compatible`).
-- Capacidades de tool calling, function calling, agentes, razonamiento multi-paso, matemáticas o código: no disponibles en la información proporcionada.
-- Capacidades de audio o modo thinking: no disponibles en la información proporcionada.
-- Multilingüismo: limitado a inglés según la etiqueta de idioma.
+- Generación de texto e inferencia image-text-to-text: acepta imágenes junto con prompts de texto y genera descripciones o respuestas.
+- Procesamiento de imágenes mediante un proyector visual F16 separado del modelo de lenguaje.
+- Generación de texto autoregresiva estándar con llama.cpp.
+- Capacidades multilingües limitadas al inglés según la etiqueta de idioma del repositorio.
+- No se documentan en la información disponible capacidades de tool calling, function calling, agentes, razonamiento multi-paso, matemáticas, código, audio ni modo de pensamiento explícito.
+- El ajuste "heretic" busca reducir los rechazos en las respuestas, aunque no se cuantifica su efecto en la documentación.
 
 ## Casos de uso
 
-- Descripción automática de imágenes en local: el modelo puede recibir una imagen y un prompt como "Describe this image" y generar una descripción textual, útil para etiquetado o accesibilidad en entornos sin GPU.
-- Respuesta a preguntas visuales simples (VQA): con prompts breves y temperatura baja (`--temp 0.1`), adecuado para consultas concretas sobre el contenido de una imagen, como colores, objetos o texto visible.
-- Prototipado de pipelines multimodales en CPU: gracias a los flags de ejecución sin GPU, sirve para validar integraciones de visión-lenguaje en estaciones de trabajo sin acelerador dedicado.
-- Verificación de carga y inferencia de artefactos GGUF: el par modelo + mmproj permite comprobar que un build de llama.cpp con soporte LFM3-VL funciona correctamente antes de desplegar variantes mayores.
-- Experimentación con modelos "heretic": investigadores interesados en comparar el comportamiento de variantes de alineación modificada pueden usar esta cuantización como punto de partida ligero.
-- Integración en aplicaciones de escritorio o edge con llama.cpp: el tamaño de 1,5 GB y la cuantización Q4_K_M facilitan el empaquetado en aplicaciones locales de asistencia visual básica.
-- Generación de descripciones breves con límite de tokens: el ejemplo de la model card usa `-n 128`, adecuado para respuestas cortas y controladas en coste de cómputo.
+- Descripción de imágenes en local: el modelo puede procesar una imagen y generar una descripción textual usando `llama-mtmd-cli` con el modelo Q4_K_M y el proyector F16, adecuado para prototipos en equipos sin GPU dedicada.
+- Clasificación visual simple: con prompts breves y temperatura baja (`--temp 0.1`) puede emplearse para tareas de etiquetado o verificación de contenido visual en pipelines ligeros.
+- Asistentes de accesibilidad offline: generación de descripciones de imágenes para usuarios con discapacidad visual en entornos sin conectividad, aprovechando el tamaño reducido del modelo.
+- Procesamiento por lotes en CPU: la invocación de CPU probada (`--device none --no-mmproj-offload --no-op-offload --no-kv-offload --fit off`) permite ejecutar el modelo en servidores sin GPU para tareas de visión por lotes de baja criticidad.
+- Integración en aplicaciones de escritorio: el formato GGUF y el bundle de un solo archivo facilitan la distribución en herramientas como LM Studio u Ollama, aunque el bundle debe desempaquetarse con `gguf_bundle.py` antes de usarlo en llama.cpp.
+- Experimentación con modelos ablacionados: investigadores interesados en estudiar el efecto del proceso "heretic" sobre el comportamiento de rechazo en modelos vision-language pequeños pueden usar esta versión como referencia reproducible (SHA-256 documentados).
+- Base para fine-tuning ligero o evaluación comparativa: al ser un modelo de 2B parámetros en GGUF, sirve como punto de partida para experimentos de cuantización y despliegue en hardware modesto.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explícitamente que no se realizó ninguna evaluación de benchmarks durante la conversión. El único test documentado es un smoke test en CPU con una imagen roja y el prompt "What color is the image? Answer briefly.", que produjo la respuesta "The image is red."; el autor aclara que esto comprueba la carga y la inferencia básica de imagen, no la precisión general ni el rendimiento.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explícitamente que no se realizó ninguna evaluación de benchmarks durante la conversión, y la única validación fue una prueba de humo en CPU con una imagen roja sólida. No se dispone de datos de latencia ni throughput.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma oficial; por el tamaño de los artefactos (modelo Q4_K_M + mmproj F16, repositorio de 1,5 GB), la huella de memoria es reducida y compatible con GPUs de gama baja, aunque no se proporcionan cifras exactas.
-- GPU recomendadas: no disponibles en la información proporcionada; el autor no validó la inferencia en GPU.
-- CPU: validada por el autor con llama.cpp usando `--device none --no-mmproj-offload --no-op-offload --no-kv-offload --fit off` cuando la inicialización de GPU no está disponible.
-- Cabe en GPU consumer: previsiblemente sí por tamaño, pero no confirmado por el autor.
-- Opciones de despliegue: llama.cpp con soporte LFM3-VL, mediante `llama-mtmd-cli` y los flags `-m`, `--mmproj`, `--image`, `-p`, `-n`, `-c` y `--temp`. También se etiqueta como `endpoints_compatible`. No se mencionan vLLM, TGI, Ollama ni otras herramientas.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: el modelo de lenguaje Q4_K_M más el proyector F16 suman aproximadamente 1.5 GB en disco; la VRAM necesaria para inferencia completa no está documentada, pero por el tamaño de los pesos se estima que cabe en GPUs de consumo con 4-6 GB de VRAM, aunque esta cifra no ha sido validada por el autor.
+- GPU recomendadas: no disponible; la inferencia en GPU no fue validada por el publicador.
+- Compatibilidad con GPU de consumo: probable por el tamaño del modelo, pero no confirmada experimentalmente.
+- Opciones de despliegue: llama.cpp (build reciente con soporte LFM3-VL), mediante `llama-mtmd-cli`; el bundle puede desempaquetarse con `gguf_bundle.py` para su uso con llama.cpp, Ollama o LM Studio.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| LFM3-VL 2B Heretic GGUF (este) | ~1,73 B | No disponible | GGUF Q4_K_M + mmproj F16 | LFM Open License v1.0 | Cuantización de comunidad; sin benchmarks; GPU no validada |
-| Lucasgitguy-co/lfm3-vl-2b-heretic | ~1,73 B (mismo base) | No disponible | Pesos originales (formato no especificado) | LFM Open License v1.0 | Modelo base del que deriva esta cuantización |
-| Lucasgitguy-co/lfm3-vl-2b-heretic-mlx-4bit | ~1,73 B (mismo base) | No disponible | MLX 4-bit | LFM Open License v1.0 | Variante para Apple Silicon |
-| LiquidAI/LFM3-VL-2B | ~2 B (familia) | No disponible | Pesos originales | LFM Open License v1.0 | Modelo upstream de Liquid AI |
+| LFM3-VL 2B Heretic GGUF (este) | 1.478.622.400 | no disponible | LFM Open License v1.0 | GGUF (Q4_K_M + F16 proyector) | Conversión comunitaria, sin benchmarks |
+| LiquidAI/LFM3-VL-2B (upstream) | ~2B | no disponible | LFM Open License v1.0 | safetensors | Modelo original de Liquid AI |
+| lfm3-vl-2b-heretic-mlx-4bit | ~2B | no disponible | LFM Open License v1.0 | MLX 4-bit | Versión para Apple Silicon del mismo autor |
 
-No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
+No se dispone de información suficiente para comparar con alternativas de otros fabricantes en la misma categoría (vision-language de ~2B parámetros).
 
 ## Limitaciones y advertencias
 
-- No se realizó entrenamiento adicional ni evaluación de benchmarks durante la conversión; el rendimiento real no está medido.
-- La inferencia en GPU no fue validada por el autor; solo se documenta un smoke test en CPU.
-- El smoke test con una imagen roja no evalúa precisión general, sesgos ni robustez.
-- Idioma limitado a inglés según la etiqueta del modelo; no se declara soporte multilingüe.
-- Riesgo de alucinación inherente a modelos de lenguaje y visión de pequeño tamaño; no cuantificado en la información disponible.
-- Sesgos conocidos: no documentados en la información proporcionada.
-- Licencia LFM Open License v1.0 con limitación de uso comercial que se aplica a las derivaciones; este release no es Apache-2.0. Las adiciones documentales del publicador sí están bajo Apache 2.0, sin alterar los términos del material upstream.
-- Requiere un build actual de llama.cpp con soporte LFM3-VL; versiones sin ese soporte no cargarán correctamente el par modelo + mmproj.
-- Es necesario descargar y usar ambos artefactos (modelo y mmproj) para entrada de imagen; usar solo el modelo de lenguaje deshabilita la capacidad visual.
-- La variante "heretic" implica una modificación de comportamiento respecto al modelo original de Liquid AI cuyos detalles no se documentan en esta model card; conviene revisar la documentación upstream antes de usarla en producción.
+- La conversión no fue validada en GPU; solo se realizó una prueba de humo en CPU, por lo que el comportamiento en producción no está garantizado.
+- No se han publicado benchmarks ni evaluaciones de precisión; el rendimiento real es desconocido.
+- El proceso "heretic" (abliteration) puede incrementar la probabilidad de respuestas no deseadas o inapropiadas al reducir los rechazos; no se documenta su alcance ni sus efectos.
+- Riesgo de alucinación inherente a modelos de 2B parámetros, especialmente en tareas de razonamiento complejo o descripción detallada de imágenes.
+- Soporte de idioma limitado al inglés según la etiqueta del repositorio.
+- La licencia LFM Open License v1.0 impone limitaciones al uso comercial de derivados; no es un modelo Apache-2.0. Las adiciones documentales del publicador están bajo Apache 2.0, pero no modifican los términos del material upstream.
+- El bundle de un solo archivo no puede ejecutarse directamente en llama.cpp; requiere desempaquetado previo con `gguf_bundle.py`.
+- No se documentan capacidades de tool calling, agentes ni contexto largo; el ejemplo de uso emplea `-c 2048`.
+- El repositorio tiene pocas descargas (1219) y likes (3), lo que sugiere validación comunitaria limitada.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Lucasgitguy-co/lfm3-vl-2b-heretic-gguf
+- Hugging Face (este modelo): https://huggingface.co/Lucasgitguy-co/lfm3-vl-2b-heretic-gguf
 - Modelo base: https://huggingface.co/Lucasgitguy-co/lfm3-vl-2b-heretic
-- Variante MLX 4-bit: https://huggingface.co/Lucasgitguy-co/lfm3-vl-2b-heretic-mlx-4bit
+- Versión MLX 4-bit: https://huggingface.co/Lucasgitguy-co/lfm3-vl-2b-heretic-mlx-4bit
 - Modelo upstream de Liquid AI: https://huggingface.co/LiquidAI/LFM3-VL-2B
-- Documentación de estructura de ficheros: docs/FILE_STRUCTURE.md (dentro del repositorio)
-- Procedencia y reproducibilidad: docs/PROVENANCE.md (dentro del repositorio)
-- Historial de versiones: CHANGELOG.md (dentro del repositorio)
+- Colección LFM vision-language: https://huggingface.co/collections/Lucasgitguy-co/lfm-vision-language-6aef2dcb0a92787c93414433
+- Documentación de uso (docs/USAGE.md): docs/USAGE.md
+- Informe técnico (docs/paper.md): docs/paper.md
+- PDF del informe (docs/paper.pdf): docs/paper.pdf
+- BibTeX (docs/citation.bib): docs/citation.bib
+- Índice de modelos (docs/MODEL_INDEX.md): docs/MODEL_INDEX.md
+- Estructura de archivos (docs/FILE_STRUCTURE.md): docs/FILE_STRUCTURE.md
+- Procedencia y reproducibilidad (docs/PROVENANCE.md): docs/PROVENANCE.md
+- Historial de versiones (CHANGELOG.md): CHANGELOG.md
+- Licencia (LICENSE): LICENSE
+- Licencia Apache 2.0 de adiciones documentales (LICENSE-APACHE-2.0): LICENSE-APACHE-2.0
+- Script de desempaquetado (gguf_bundle.py): gguf_bundle.py

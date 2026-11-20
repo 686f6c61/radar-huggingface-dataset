@@ -57,31 +57,5 @@
   "renamed_to": "TensorFold/Qwen3.8-Flash-Next-MLX-oQ2-MTP",
   "renamed_at": "2026-11-11T04:09:32.475Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Vontra/Qwen3.8-Flash-Next-MLX-oQ2 · Hugging Face",
-      "url": "https://huggingface.co/Vontra/Qwen3.8-Flash-Next-MLX-oQ2",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "GitHub - QwenLM/Qwen3.8-Flash-Next: Qwen3.8-Flash-Next is the ...",
-      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
-      "snippet": "In this release we are opening the weights of Qwen3.8-Flash-Next, a multimodal MoE model that also serves as an early preview of the architecture used in Qwen4. It plays the same role that Qwen3-Next played for Qwen3.5: the hybrid Gated DeltaNet + Gated Attention design introduced at that time has since been used across the Qwen3.5, Qwen3.6, Qwen3.7 and Qwen3.8 series. We are again releasing ..."
-    },
-    {
-      "title": "Vontra/Qwen3.8-Flash-Next-MLX-oQ4-MTP · Discussions",
-      "url": "https://huggingface.co/Vontra/Qwen3.8-Flash-Next-MLX-oQ4-MTP/discussions",
-      "snippet": "Instructions to use Vontra/Qwen3.8-Flash-Next-MLX-oQ4-MTP with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use Vontra/Qwen3.8-Flash-Next-MLX-oQ4-MTP with MLX:"
-    },
-    {
-      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
-      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
-      "snippet": "Qwen3.8-Flash-Next is a new open-weight, 125B parameter MoE multimodal model from Qwen. Built on the new Qwen4 architecture, it supports a 262K context window and advanced reasoning. It can run locally on devices with 78GB RAM /unified memory without requiring GPU VRAM. The model outperforms Claude-4.6-Opus (Max) at agentic coding, vision, and chat. We are working very hard to support the ..."
-    },
-    {
-      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes - recipes.vllm.ai",
-      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
-      "snippet": "Overview Qwen3.8-Flash-Next is a multimodal, ultra-sparse Mixture-of-Experts model. It has 125B parameters, including an additional 51B N-gram embedding table, while activating 6B parameters per token. The architecture combines four main ideas: GDN + QSA: three of every four layers use Gated DeltaNet to compress history; the fourth uses Qwen Sparse Attention for precise long-range retrieval ..."
-    }
-  ]
+  "sources": []
 }

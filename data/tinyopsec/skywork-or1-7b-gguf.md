@@ -2,100 +2,88 @@
 
 ## Resumen
 
-Skywork-OR1-7B-GGUF es la versión cuantizada en formato GGUF del modelo Skywork-OR1-7B (Open Reasoner 1), un modelo denso de 7.615.616.512 parámetros especializado en razonamiento matemático y generación de código. El modelo original lo desarrolla Skywork y está construido sobre DeepSeek-R1-Distill-Qwen-7B, empleando una arquitectura transformer tipo Qwen2. Esta publicación concreta la mantiene el usuario tinyopsec, que distribuye los pesos convertidos a GGUF para su uso en herramientas de inferencia local.
+Skywork-OR1-7B-GGUF es la versión cuantizada en formato GGUF del modelo Skywork-OR1-7B (Open Reasoner 1), un modelo de razonamiento especializado en matemáticas y código desarrollado por Skywork. El modelo original parte de DeepSeek-R1-Distill-Qwen-7B y se entrena mediante aprendizaje por refuerzo a gran escala con reglas verificables, usando una variante personalizada del algoritmo GRPO. Esta ficha corresponde al repositorio de cuantizaciones publicado por el usuario tinyopsec, no al modelo original de Skywork.
 
-El problema que resuelve es doble: por un lado, aporta un razonador de 7B entrenado con aprendizaje por refuerzo basado en reglas, lo que permite obtener cadenas de razonamiento largas en matemáticas y código sin depender de modelos de mayor tamaño; por otro, la conversión a GGUF permite ejecutar el modelo en GPU de consumo y en CPU gracias a cuantizaciones que van de 2 a 16 bits, con requisitos de VRAM desde aproximadamente 3,5 GB.
+La relevancia de esta versión reside en su empaquetado para inferencia local: ofrece once niveles de cuantización entre 2 y 16 bits, con tamaños que van de 3,0 GB a 15,2 GB, lo que permite ejecutar un modelo de razonamiento de 7.615 millones de parámetros en hardware de consumo. La arquitectura es Qwen2 (transformer denso), con licencia Apache 2.0 y orientación principal al idioma inglés.
 
-Su relevancia actual radica en que combina una licencia Apache 2.0 (uso comercial permitido) con un pipeline de entrenamiento RL documentado (GRPO con control adaptativo de entropía) sobre 110.000 problemas de matemáticas y 14.000 preguntas de código. La ficha declara únicamente inglés como idioma soportado y no se han publicado resultados de benchmarks en la información disponible.
+El modelo resuelve el problema de disponer de capacidades de razonamiento matemático y de código en entornos sin GPU de datacenter, a costa de una pérdida de calidad progresiva en las cuantizaciones más agresivas. Su pipeline declarado es text-generation y es compatible con endpoints y con el formato conversacional.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso tipo Qwen2 (según etiqueta `qwen2`) |
+| Arquitectura | Qwen2 (transformer denso, decoder-only) |
 | Parametros totales | 7.615.616.512 |
-| Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | 32.768 tokens (valor usado en los ejemplos de la model card; no se declara formalmente en la ficha) |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | 32.768 tokens (valor usado en el ejemplo de llama-cpp-python; no se documenta el máximo oficial) |
 | Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
-| Idiomas soportados | en (inglés) |
+| Idiomas soportados | en |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (el modelo base se distribuye en safetensors) |
+| Formato de pesos | GGUF (repo de 63,9 GB con todos los ficheros) |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue una arquitectura transformer densa de tipo Qwen2, heredada de DeepSeek-R1-Distill-Qwen-7B, con 7.615.616.512 parámetros. No emplea mezcla de expertos ni mecanismos de estado recurrente: es un decoder denso convencional, lo que simplifica el despliegue y explica que las cuantizaciones GGUF cubran desde 2 hasta 16 bits sin necesidad de gestión de expertos.
+El modelo base es un transformer denso de la familia Qwen2, inicializado desde DeepSeek-R1-Distill-Qwen-7B. El entrenamiento se realizó con aprendizaje por refuerzo a gran escala basado en reglas verificables, empleando una variante personalizada de GRPO. El corpus de entrenamiento consta de 110.000 problemas matemáticos y 14.000 preguntas de código. El pipeline descrito incluye estimación de dificultad consciente del modelo, filtrado offline y online, rejection sampling, un proceso de entrenamiento multi-etapa y control adaptativo de entropía. Estos elementos buscan estabilizar el RL en tareas de razonamiento con recompensas verificables y evitar el colapso de diversidad en las respuestas.
 
-El entrenamiento se basa en aprendizaje por refuerzo a gran escala con reglas verificables, usando una variante personalizada del algoritmo GRPO. Según la model card, el pipeline incluye estimación de dificultad consciente del modelo, filtrado offline y online, muestreo por rechazo, un esquema de entrenamiento en múltiples etapas y control adaptativo de entropía. Los datos de entrenamiento son 110.000 problemas de matemáticas y 14.000 preguntas de código, publicados como Skywork/Skywork-OR1-RL-Data. No se detalla en la información disponible el volumen de tokens de preentrenamiento ni si hubo fases adicionales de DPO o RLHF.
+Las cuantizaciones GGUF han sido generadas por tinyopsec a partir de los pesos originales; la model card no detalla la herramienta de conversión ni las métricas de perplejidad por nivel de cuantización. No se documentan innovaciones de inferencia como decodificación especulativa o atención lineal; el modelo hereda el mecanismo de atención estándar de Qwen2.
 
 ## Capacidades
 
-- Generación de texto conversacional (`pipeline_tag: text-generation`, etiqueta `conversational`).
-- Razonamiento matemático: entrenado explícitamente sobre 110.000 problemas de matemáticas con recompensas verificables.
-- Generación y razonamiento sobre código: 14.000 preguntas de código en el conjunto de entrenamiento RL.
-- Razonamiento multi-paso con cadenas de pensamiento extensas, característico de los modelos derivados de DeepSeek-R1.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de agente: no disponible en la información proporcionada.
-- Capacidades multilingües: limitadas al inglés según la etiqueta `language: en`.
-- Capacidades especiales (visión, audio, thinking mode explícito): no disponible en la información proporcionada.
+- Generación de texto conversacional multi-turno en inglés.
+- Razonamiento matemático: resolución de problemas con cadenas de razonamiento derivadas del entrenamiento con RL.
+- Generación y razonamiento sobre código, entrenado con 14.000 preguntas de programación.
+- Modo de razonamiento explícito, propio de la estirpe DeepSeek-R1, con trazas de pensamiento antes de la respuesta final.
+- Soporte de plantilla conversacional (tag `conversational`).
+- Compatibilidad con endpoints de inferencia (tag `endpoints_compatible`).
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes multi-paso ni de visión o audio.
+- Capacidades multilingües limitadas al inglés según el campo `language`.
 
 ## Casos de uso
 
-- Resolución de problemas matemáticos en entornos educativos: el modelo puede generar derivaciones paso a paso sobre enunciados de álgebra, cálculo o combinatoria, aprovechando el entrenamiento RL con recompensas verificables sobre 110.000 problemas.
-- Asistencia en depuración de código: dado un fragmento de código y un mensaje de error, el modelo puede razonar sobre la causa raíz y proponer parches, apoyándose en los 14.000 problemas de código del conjunto RL.
-- Generación de tests unitarios: a partir de una función, producir casos de prueba que cubran ramas y condiciones límite, con la ventana de 32.768 tokens suficiente para incluir el módulo completo como contexto.
-- Evaluación automática de soluciones de estudiantes: comparar la respuesta de un alumno con la solución generada y señalar el paso donde diverge el razonamiento.
-- Extracción de resultados en pipelines de análisis: dado un enunciado y su resolución, obtener la respuesta final y el procedimiento en formato estructurado para su consumo posterior.
-- Despliegue en portátiles y estaciones sin GPU dedicada: con la cuantización Q4_K_M (aproximadamente 4,9 GB) el modelo puede ejecutarse en CPU mediante llama.cpp u Ollama, lo que permite razonamiento matemático offline.
-- Prototipado rápido en GPU de consumo: con Q4_K_M (unos 5 GB de VRAM) o Q5_K_M (unos 6 GB) cabe en tarjetas de 8 GB, facilitando la experimentación con técnicas de prompting de razonamiento.
-- Servicio de inferencia con contexto largo: usar Q8_0 (unos 9 GB de VRAM) con `n_ctx=32768` en llama-cpp-python para tareas que requieran documentos extensos como entrada.
+- Tutoría de matemáticas en local: el modelo puede resolver problemas paso a paso y mostrar la cadena de razonamiento, ejecutable en un portátil con GPU de 6-8 GB usando Q4_K_M o Q5_K_M.
+- Asistencia a la programación en entornos aislados: generación y explicación de código sin conexión a servicios en la nube, adecuado para equipos con requisitos de confidencialidad, con la cuantización Q6_K o Q8_0 para minimizar la degradación.
+- Verificación de soluciones y detección de errores en ejercicios: útil como segundo modelo que revisa razonamientos matemáticos generados por otro sistema, aprovechando el entrenamiento con recompensas verificables.
+- Prototipado de pipelines de razonamiento: integración vía llama-cpp-python en scripts de evaluación o experimentos de investigación sobre RL y razonamiento, sin necesidad de infraestructura de datacenter.
+- Despliegue en estaciones de trabajo con Ollama o LM Studio: incorporación de un asistente de razonamiento local para desarrolladores mediante `ollama run hf.co/tinyopsec/Skywork-OR1-7B-GGUF:Q4_K_M`.
+- Generación de documentación técnica y explicaciones de algoritmos: el modelo puede desglosar conceptos matemáticos o de código en pasos, con contexto suficiente para incluir fragmentos de código y enunciados largos.
+- Evaluación comparativa de cuantizaciones: el repositorio ofrece once niveles, lo que permite medir la degradación de calidad en tareas de matemáticas y código según bits por peso en un mismo hardware.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card del repositorio GGUF no incluye tablas de MMLU, HumanEval, GSM8K, MATH ni ninguna otra métrica, y los resultados de búsqueda web proporcionados no contienen datos técnicos sobre el modelo.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia, según la model card:
-
-| Cuantizacion | VRAM |
-|---|---|
-| F16 | ~16 GB |
-| Q8_0 | ~9 GB |
-| Q6_K | ~7 GB |
-| Q5_K_M | ~6 GB |
-| Q4_K_M | ~5 GB |
-| Q3_K_M | ~4 GB |
-| Q2_K | ~3,5 GB |
-
-- Tamaños de fichero declarados: F16 ~15,2 GB; Q8_0 ~8,5 GB; Q6_K ~6,6 GB; Q5_K_M ~5,7 GB; Q5_K_S ~5,5 GB; Q4_K_M ~4,9 GB; Q4_K_S ~4,7 GB; Q3_K_L ~4,0 GB; Q3_K_M ~3,7 GB; Q3_K_S ~3,5 GB; Q2_K ~3,0 GB.
-- GPU recomendadas: no especificadas en la model card. Por requisitos de VRAM, cualquier GPU con 8 GB o más (por ejemplo, una RTX 4060/3070 o superior) puede alojar Q4_K_M o Q5_K_M; para Q8_0 se necesita una GPU de 10-12 GB o más; para F16, 16 GB o más.
-- ¿Cabe en GPU de consumo? Sí, con las cuantizaciones Q4_K_M y inferiores en tarjetas de 8 GB; Q5_K_M y Q6_K en tarjetas de 8-12 GB; Q8_0 en tarjetas de 12 GB o superiores.
-- Opciones de despliegue: llama.cpp (`llama-cli`), llama-cpp-python, LM Studio y Ollama (`ollama run hf.co/tinyopsec/Skywork-OR1-7B-GGUF:Q4_K_M`). No se mencionan vLLM ni TGI, que no consumen GGUF de forma nativa.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada según la model card: F16 ~16 GB; Q8_0 ~9 GB; Q6_K ~7 GB; Q5_K_M ~6 GB; Q4_K_M ~5 GB; Q3_K_M ~4 GB; Q2_K ~3,5 GB.
+- GPU recomendadas: A100 o H100 para F16 y Q8_0 con contexto largo; RTX 4090 (24 GB) para cualquier cuantización con margen amplio; RTX 3090/4080 (16-24 GB) para Q6_K a Q8_0.
+- GPU de consumo: cabe en RTX 4060 Ti (8-16 GB), RTX 3060 (12 GB) y tarjetas de 6-8 GB con Q4_K_M o inferiores. Q2_K (~3,5 GB) permite ejecución en GPU de 4 GB, con pérdida de calidad notable.
+- Opciones de despliegue: llama.cpp (`llama-cli`), llama-cpp-python, LM Studio y Ollama; el tag `endpoints_compatible` sugiere compatibilidad con servidores de endpoints, aunque no se detalla cuáles.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
+| Modelo | Parametros | Contexto | Especialidad | Licencia | Formato |
 |---|---|---|---|---|---|
-| Skywork-OR1-7B-GGUF (este) | 7.615.616.512 | 32.768 tokens (según ejemplos de la model card) | Apache 2.0 | GGUF en Hugging Face, ejecucción local | No disponible |
-| Skywork/Skywork-OR1-7B (base) | 7.615.616.512 | no disponible en la información proporcionada | Apache 2.0 | Safetensors en Hugging Face | No disponible |
-| DeepSeek-R1-Distill-Qwen-7B | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | Hugging Face | No disponible |
+| Skywork-OR1-7B-GGUF (esta ficha) | 7,62 B | 32.768 (según ejemplo) | Razonamiento matemático y código | Apache 2.0 | GGUF |
+| DeepSeek-R1-Distill-Qwen-7B | 7,62 B (no confirmado en la información) | no disponible | Razonamiento destilado de R1 | no disponible | safetensors y GGUF de terceros |
+| Qwen2.5-Math-7B | no disponible | no disponible | Matemáticas | no disponible | no disponible |
 
-La comparación se limita a los datos confirmados en la información disponible. No se dispone de métricas de rendimiento de ninguno de los modelos citados, por lo que no es posible establecer una comparación cuantitativa.
+La comparación se limita a señalar que Skywork-OR1-7B se inicializa desde DeepSeek-R1-Distill-Qwen-7B y añade entrenamiento RL con GRPO sobre 110.000 problemas matemáticos y 14.000 de código. No se dispone de datos de benchmarks ni de especificaciones completas de los modelos alternativos en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponible. La model card no documenta sesgos ni se han aportado evaluaciones de sesgo.
-- Riesgo de alucinación: inherente a los modelos de razonamiento entrenados con RL; en problemas matemáticos o de código puede producir cadenas de razonamiento plausibles con resultados incorrectos si la respuesta no es verificable por reglas.
-- Limitación de idioma: la ficha declara únicamente inglés (`language: en`), por lo que el rendimiento en castellano no está garantizado ni evaluado.
-- Limitación de contexto: el valor de 32.768 tokens procede del ejemplo de la model card (`n_ctx=32768`) y no de una especificación formal; contextos mayores no están confirmados.
-- Degradación por cuantización: las variantes Q2_K, Q3_K_S y Q3_K_M se etiquetan como "lowest quality" o "very low quality" en la propia model card; en tareas de razonamiento matemático la pérdida de precisión puede ser significativa.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, modificación y redistribución, siempre que se conserve el aviso de licencia y se indiquen los cambios.
-- Caveat de procedencia: este repositorio es una cuantización de terceros (usuario `tinyopsec`), con 0 descargas y 0 likes en el momento de la consulta, y fecha de creación posterior a la del modelo base; conviene verificar la integridad de los ficheros frente a los pesos originales antes de usarlos en producción.
-- Soporte de tool calling y agentes: no confirmado, lo que limita su integración en pipelines que dependan de llamadas a funciones.
+- Idiomas: el campo `language` solo declara inglés; el rendimiento en castellano no está garantizado ni documentado.
+- Cuantización: las versiones Q3 y Q2 degradan la calidad de forma significativa; para tareas de razonamiento se recomienda Q4_K_M o superior.
+- Alucinación: como modelo de razonamiento entrenado con RL, puede producir cadenas de pensamiento plausibles pero incorrectas, especialmente en problemas fuera de la distribución matemática y de código.
+- Sesgos: no se documenta ningún análisis de sesgos en la model card; el corpus de entrenamiento está centrado en matemáticas y código, lo que puede reducir el rendimiento en dominios generales.
+- Licencia: Apache 2.0 permite uso comercial, pero el repositorio es una cuantización de terceros (tinyopsec) y no está mantenido por Skywork; conviene verificar la licencia del modelo original antes de producción.
+- Contexto: el valor de 32.768 tokens proviene únicamente del ejemplo de código de la model card; no se confirma como máximo oficial ni se documenta el comportamiento en contextos largos.
+- Producción: no hay datos publicados de throughput, latencia ni estabilidad en servidores de inferencia de alto rendimiento; el repositorio tiene 0 likes y 1.381 descargas, lo que indica escasa validación comunitaria.
+- Tool calling y agentes: no documentados, por lo que no deben asumirse en pipelines que dependan de function calling.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/tinyopsec/Skywork-OR1-7B-GGUF
-- Modelo base: https://huggingface.co/Skywork/Skywork-OR1-7B
+- Modelo original: https://huggingface.co/Skywork/Skywork-OR1-7B
 - Dataset de entrenamiento RL: https://huggingface.co/datasets/Skywork/Skywork-OR1-RL-Data

@@ -2,104 +2,97 @@
 
 ## Resumen
 
-KAT-Coder-V2.5-Dev APEX-I-MiniPlus-V2.1 es una cuantización GGUF del modelo Kwaipilot/KAT-Coder-V2.5-Dev, publicada por el usuario IsValorum bajo licencia Apache 2.0. El modelo base es una arquitectura de mezcla de expertos (MoE) orientada a generación de código y razonamiento, con 34.660.610.688 parámetros totales (34,66 B) y una ventana de contexto declarada de 256K tokens. La cuantización reduce el peso a aproximadamente 13,74 GiB, lo que permite ejecutarlo en estaciones de trabajo de 24 GB de VRAM combinando memoria de GPU y RAM del sistema.
+KAT-Coder-V2.5-Dev APEX-I-MiniPlus-V2.1 es una cuantización GGUF del modelo Kwaipilot/KAT-Coder-V2.5-Dev, publicada por el usuario IsValorum bajo el marco de cuantización propio denominado APEX-I. El modelo base es un Mixture-of-Experts (MoE) de aproximadamente 34.660 millones de parámetros totales, orientado a generación de texto, razonamiento y código, con licencia Apache 2.0. La versión cuantizada busca preservar la fidelidad del modelo original dentro de un envoltorio de 13-14 GB, lo que permite ejecutarlo en estaciones de trabajo con GPUs de 24 GB de VRAM.
 
-La propuesta diferencial del autor no es un esquema de cuantización estándar, sino una receta por tensores bautizada como APEX-I-MiniPlus. El objetivo declarado es mantener una fidelidad cercana a Q5_K/Q6_K ocupando el espacio de un Q3_K_M: los expertos centrales se conservan en IQ3_XXS, los expertos de borde en Q3_K, el experto compartido en Q5_K en las 40 capas, las proyecciones de atención q/k/v en Q4_K, la cabeza de salida en Q6_K, las puertas de atención en Q8_0 y las matrices de enrutamiento (gate_inp) en F32 sin comprimir.
+La relevancia de esta ficha radica en que el autor aplica una cuantización "quirúrgica" tensor a tensor (con mapa de cuantización auditado desde el propio GGUF), emplea imatrix y ajusta de forma selectiva las capas y los micro-expertos para reducir la deriva del estado de recurrencia en arquitecturas MoE. Además, el autor afirma que el modelo permite ejecutar el contexto completo de 256K tokens en 24 GB de VRAM, lo que lo convierte en una opción interesante para desarrollo de software y agentes autónomos en hardware de consumo.
 
-Es relevante ahora porque aborda dos cuellos de botella prácticos de los MoE grandes cuantizados: la degradación de calidad al bajar de 4 bits y los bloqueos de desquantización en CPU (AVX2) cuando el modelo se descarga parcialmente a RAM. El autor reporta 24-28+ tok/s en streaming con offload a RAM DDR4/DDR5, reservando la VRAM para la caché KV. No obstante, conviene tratar las afirmaciones de la model card como declaraciones del autor, no como resultados auditados de forma independiente.
+No obstante, conviene subrayar que la mayor parte de las afirmaciones técnicas (mejoras de perplejidad, benchmarks propios, rendimiento) provienen exclusivamente de la model card del autor y no han sido verificadas de forma independiente. El modelo base procede de Kwaipilot y la cuantización es un trabajo derivado no oficial.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE); etiquetada como qwen35moe, 40 capas y 256 microexpertos según la model card |
-| Parámetros totales | 34.660.610.688 (34,66 B) |
+| Arquitectura | Transformer MoE (tag `qwen35moe`; familia Qwen3.5 MoE). 40 capas y 256 micro-expertos según la model card |
+| Parámetros totales | 34.660.610.688 (dato de safetensors del repo) |
 | Parámetros activos | no disponible |
-| Longitud de contexto | 256K tokens (según la model card) |
-| Tipos de cuantización | GGUF APEX-I-MiniPlus-V2.1: IQ3_XXS (expertos centrales, capas 10-29), Q3_K (expertos de borde), Q5_K (experto compartido, 40 capas), Q4_K (q/k/v), Q6_K (cabeza de salida), Q8_0 (puertas de atención), F32 (routers) |
+| Longitud de contexto | 256K tokens (afirmado en la model card del cuantizador; no verificado de forma independiente) |
+| Tipos de cuantización | GGUF con esquema APEX-I-MiniPlus V2.1 (cuantización mixta tensor a tensor con imatrix; niveles concretos por tensor no detallados en la información disponible) |
 | Idiomas soportados | en, zh, es, fr, de, pt, it, ru, ja, ko, vi, th, ar |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (cuantizado) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (librería `gguf`, compatible con llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base, Kwaipilot/KAT-Coder-V2.5-Dev, es una arquitectura de mezcla de expertos dispersa orientada a código y razonamiento. La model card de la cuantización indica 40 capas y 256 microexpertos, con un experto compartido (shexp) presente en todas las capas y matrices de enrutamiento que despachan cada token hacia los expertos correspondientes. No se dispone en la información proporcionada de detalles sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF, DPO u otros ajustes por preferencias del modelo base.
+El modelo base KAT-Coder-V2.5-Dev es un transformer de tipo Mixture-of-Experts. Los tags del repositorio indican `qwen35moe`, es decir, una arquitectura de la familia Qwen3.5 MoE, con 40 capas y 256 micro-expertos según lo descrito por el cuantizador. El dato de parámetros totales (34.660 millones) procede de los safetensors del modelo original. No se dispone en la información proporcionada del número de parámetros activos por token, del número de tokens de entrenamiento, de la composición del dataset ni de si se aplicaron técnicas de RLHF, DPO o similares. Tampoco se detalla si el modelo incorpora decodificación especulativa o atención lineal.
 
-La innovación destacable está en el propio proceso de cuantización, no en la arquitectura. El autor aplica una asignación de precisiones por tensor: mantiene sin comprimir (F32) el 100 % de las matrices de enrutamiento para evitar deriva de routing, protege la cabeza de salida en Q6_K, eleva las puertas de atención a Q8_0 y sustituye los códecs no lineales de los expertos de borde por Q3_K lineal optimizado para SIMD, con el fin de eliminar bloqueos de desquantización AVX2 en CPU. Según la model card, se usó imatrix y herramientas de Unsloth Studio en el proceso. El autor publica además versiones anteriores (MiniPlus V1, V2) como registro de su hoja de ruta de optimización.
+La innovación principal de esta release es la cuantización. El autor describe un proceso "tensor a tensor" con auditoría matemática de cada tensor de las 40 capas y los 256 micro-expertos, orientado a maximizar la precisión del razonamiento y a eliminar la deriva del estado de recurrencia. Se emplea imatrix y un mapa de cuantización auditado directamente desde el GGUF resultante. El autor también menciona la integración de MTP (multi-token prediction) "donde esté soportado" en su línea de releases, aunque no queda claro si esta variante concreta lo incorpora. Todas estas afirmaciones proceden de la model card del cuantizador y no han sido validadas de forma independiente.
 
 ## Capacidades
 
-- Generación de texto y de código, con soporte de modo razonamiento (etiquetas de tipo `<think>` mencionadas en la model card).
-- Razonamiento multi-paso y tareas de código de cierta profundidad, según la orientación del modelo base y la conservación deliberada de los expertos centrales en 3 bits.
-- Conversación multiturno (etiqueta conversational y pipeline text-generation).
-- Capacidades multilingües declaradas para 13 idiomas: inglés, chino, español, francés, alemán, portugués, italiano, ruso, japonés, coreano, vietnamita, tailandés y árabe.
-- Compatibilidad con endpoints (etiqueta endpoints_compatible).
-- Tool calling / function calling: no disponible (no se documenta explícitamente en la información proporcionada).
-- Soporte de visión o audio: no disponible (el modelo es de texto).
-- Capacidades de agente: no disponible de forma explícita.
+- Generación de texto conversacional y razonamiento, con etiqueta `reasoning` en el repositorio.
+- Generación y asistencia en código, dado que el modelo base es un coder (KAT-Coder).
+- Soporte de tool calling y function calling: el autor publica una plantilla de chat "endurecida" para uso agéntico, lo que sugiere soporte de flujos con herramientas.
+- Razonamiento multi-paso y flujos de agente, según la orientación del modelo base y la plantilla de chat incluida.
+- Capacidades multilingües en 13 idiomas: inglés, chino, español, francés, alemán, portugués, italiano, ruso, japonés, coreano, vietnamita, tailandés y árabe.
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags), lo que facilita su despliegue como servicio.
+- No se indica soporte de visión, audio ni modo "thinking" explícito en la información disponible.
 
 ## Casos de uso
 
-- Asistencia de código en el IDE con contexto largo: la ventana declarada de 256K permite cargar repositorios o módulos completos junto con el historial de conversación, útil para refactorizaciones que requieren visibilidad de múltiples ficheros a la vez.
-- Servidor de generación de código autohospedado en una estación de trabajo de 24 GB: al ocupar unos 13,74 GiB, deja espacio en VRAM para cachés KV grandes mientras el resto del modelo puede transmitirse desde RAM del sistema, sin necesidad de GPU de centro de datos.
-- Generación de tests unitarios y documentación: el modelo puede producir código de prueba y comentarios a partir de firmas de funciones y contexto del proyecto, una tarea donde la coherencia sintáctica depende directamente de la fidelidad de la cuantización.
-- Revisión de código y detección de errores en pipelines de CI: integrado vía llama.cpp o un servidor compatible con la API de OpenAI, puede analizar diffs y señalar problemas de estilo, indentación o lógica antes del merge.
-- Migración y traducción de código entre lenguajes: el soporte multilingüe (13 idiomas) y la capacidad de código permiten asistir en la traducción de fragmentos entre lenguajes de programación y en la adaptación de documentación técnica a otros idiomas.
-- Explicación de bases de código heredadas: con la ventana completa de 256K, se puede alimentar el modelo con ficheros extensos y pedir resúmenes arquitectónicos, diagramas de dependencias o explicaciones paso a paso de la lógica.
-- Razonamiento asistido y resolución de problemas técnicos en local: el modo de razonamiento resulta adecuado para depuración guiada, análisis de algoritmos o matemáticas aplicadas, siempre que se asuma la pérdida de precisión inherente a una cuantización de 3 bits en los expertos centrales.
-- Despliegue en entornos con GPU modesta y mucha RAM: escenario específicamente optimizado por esta receta, donde el grueso de los pesos reside en DDR4/DDR5 y la GPU se reserva para la caché de contexto.
+- Asistencia de programación en local: el modelo puede integrarse en editores o terminales mediante llama.cpp para autocompletado, refactorización y explicación de código, aprovechando su naturaleza de coder y su ventana de contexto larga (hasta 256K según el autor) para trabajar sobre varios archivos a la vez.
+- Agentes autónomos de software: con la plantilla de chat agéntica incluida y soporte de tool calling, puede orquestar llamadas a herramientas (ejecución de tests, lectura de ficheros, comandos de shell) en bucles multi-paso para tareas de ingeniería.
+- Revisión de repositorios completos: con contexto de 256K tokens, es posible cargar fragmentos amplios de un repositorio y pedir análisis de coherencia, detección de bugs o generación de documentación, siempre que el hardware lo permita.
+- Despliegue en estaciones de trabajo de 24 GB: la afirmación del autor de ejecutar el contexto completo en 24 GB de VRAM lo hace adecuado para equipos con RTX 4090 o similares, sin necesidad de clústeres.
+- Atención al cliente técnica multilingüe: los 13 idiomas soportados permiten construir asistentes de soporte para productos software en mercados diversos, con conversaciones multi-turno.
+- Generación de código en pipelines de CI/CD: mediante endpoints compatibles (por ejemplo, con llama.cpp server o vLLM si soporta GGUF), puede automatizar la generación de parches, mensajes de commit o tests unitarios en integración continua.
+- Inferencia con offload a RAM del sistema: el autor indica que el diseño es apto para inferencia total o parcial en RAM, lo que permite ejecutarlo en máquinas sin GPU dedicada potente a costa de latencia.
 
 ## Benchmarks y rendimiento
 
-El único dato cuantitativo publicado en la información disponible es la perplejidad del propio binario GGUF, no resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.), que no están disponibles.
-
-| Métrica | Valor | Condiciones |
-|---|---|---|
-| Perplejidad WikiText-2 (GGUF cuantizado) | 5,5045 ± 0,1330 | 2048 de contexto, 10 chunks, evaluado sobre el binario GGUF |
-| Perplejidad WikiText-2 (base sin cuantizar, aproximada) | ≈ 5,44 | Referencia citada por el autor; ΔPPL ≈ +0,06 |
-| Velocidad de generación con offload a RAM del sistema | +24 a 28+ tok/s | DDR4 dual-channel o DDR5 6000+ MT/s, según el autor |
-| Parámetros totales | 34.660.610.688 | Dato real de safetensors |
-| Tamaño del repositorio | 14,8 GB | Total del repo en Hugging Face |
-
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. La model card incluye una sección de "Empirical Benchmarks & Fidelity Verification" y comparaciones de perplejidad WikiText-2 frente a otras cuantizaciones, pero los valores concretos para este modelo no se han proporcionado en la información disponible. El autor menciona mejoras de perplejidad en otros modelos de su línea (por ejemplo, +13,21 % frente a GSQ-RCO IQ3_S en Qwen3.8 27B), pero no se trasladan cifras específicas a esta ficha.
 
 ## Requisitos de hardware
 
-- VRAM estimada para pesos completos: aproximadamente 13,74 GiB (unos 14,7 GB según la model card), más la caché KV correspondiente al contexto elegido.
-- Contexto: la ventana declarada es de 256K tokens; la caché KV para contextos muy largos crece de forma notable y es el principal consumidor de VRAM cuando los pesos se descargan a RAM.
-- GPU recomendadas: el autor apunta a estaciones de trabajo con 24 GB de VRAM (por ejemplo, RTX 3090, RTX 4090, A10G/A5000 en el mismo rango) para offload total o mayoritario. GPU de centro de datos (A100 40/80 GB, H100) no son necesarias dado el tamaño del modelo, aunque darían más margen de contexto en VRAM.
-- ¿Cabe en GPU de consumo? Sí, en tarjetas de 24 GB cabe el modelo completo (más una caché KV moderada). En GPU de 12-16 GB requiere descargar parte de las capas a RAM del sistema.
-- Opciones de despliegue: llama.cpp (formato nativo, con `-ngl` para controlar capas en GPU), Ollama, LM Studio y cualquier servidor compatible con GGUF basado en llama.cpp. El autor etiqueta el modelo como endpoints_compatible. El soporte en vLLM o TGI no está documentado en la información disponible.
-- Latencia y throughput: el autor reporta entre 24 y 28+ tok/s en streaming cuando se descarga el grueso del modelo a RAM del sistema (DDR4 dual-channel o DDR5 6000+ MT/s), velocidad que puede acercarse a la de ejecución íntegra en VRAM con memorias rápidas. No hay mediciones independientes ni datos de time-to-first-token.
+- VRAM estimada: el repositorio ocupa 15,9 GB; el autor enmarca la release en un "envoltorio de 13-14 GB", por lo que se necesita al menos esa cantidad de VRAM para carga completa en GPU, más overhead de contexto KV.
+- GPU recomendadas: RTX 4090 (24 GB) y GPUs profesionales como A100 o H100 para mayor throughput; el autor titula una sección "The 24GB Miracle: Full 256K Context Runs In VRAM!", lo que sugiere que una GPU de 24 GB es el objetivo de referencia.
+- Cabe en GPU de consumo: sí, según el autor, en GPUs de 24 GB (RTX 4090, RTX 3090). Para GPUs de 16 GB o menos sería necesario offload parcial a RAM del sistema.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), servidores compatibles con endpoints, y potencialmente otros runners que acepten GGUF. El autor menciona explícitamente llama.cpp.
+- Latencia y throughput: el autor incluye una sección de "Hardware Throughput & Offload Benchmarks (RTX 30 / 40 / 50 & RAM Streaming)", pero las cifras concretas no están disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-La información disponible solo permite comparar entre variantes de cuantización del mismo modelo base, no con modelos de la competencia.
+| Modelo | Parámetros totales | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| KAT-Coder-V2.5-Dev APEX-I-MiniPlus-V2.1 (esta ficha) | 34,66B (MoE) | 256K (según autor) | Apache 2.0 | GGUF | Cuantización no oficial de IsValorum |
+| Qwen3.6-35B-A3B MTP APEX-I-MiniPlus-V2.1 | ~35B (MoE, A3B) | no disponible | Apache 2.0 (presumible, no confirmado) | GGUF | Misma línea del mismo autor; orientado a razonamiento general, agentes y tool calling |
+| Ornith 1.5 35B-A3B APEX-I-MiniPlus-V2.1 | ~35B (MoE, A3B) | no disponible | no disponible | GGUF | Misma línea; especializado en ingeniería de software a escala de repositorio |
+| Tiel Coder 35B-A3B APEX-I-MiniPlus-V2.1 | ~35B (MoE, A3B) | no disponible | no disponible | GGUF | Misma línea; especialista en programación agéntica |
 
-| Variante | Expertos centrales | Expertos de borde | Experto compartido | Cabeza de salida | Routers | Tamaño aproximado | Impacto declarado |
-|---|---|---|---|---|---|---|---|
-| APEX-I-MiniPlus V2.1 (esta ficha) | IQ3_XXS | Q3_K (10 capas) | Q5_K (40 capas) | Q6_K | F32 | ≈ 13,74 GiB | Sin bloqueos AVX2 en CPU; 24-28+ tok/s con offload a RAM |
-| APEX-I-MiniPlus V2 | IQ3_XXS | IQ3_S (10 capas) | IQ4_NL | Q6_K | F32 | ≈ 13,64 GiB (unos 100 MB menos) | Mayor protección teórica de capas de borde; calidad prácticamente idéntica en la práctica |
-| APEX Mini genérico (comunidad) | IQ2_S | Q3_K (5 capas) | Q4_K/Q3_K | Q3_K_M | Comprimido | ≈ 12,5 GB | Errores de sintaxis graves, indentación rota y perplejidad alta en modo razonamiento, según el autor |
-
-Comparación con modelos alternativos de la misma categoría (otros asistentes de código open source de ~30-35 B): no disponible en la información proporcionada.
+Las alternativas listadas son releases del mismo autor con el mismo esquema de cuantización, por lo que la comparación se limita a la orientación funcional declarada. No se dispone de datos de rendimiento comparativo verificables en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Es una cuantización de 3 bits en los expertos centrales: la propia model card reconoce una pérdida de perplejidad (ΔPPL ≈ +0,06 frente al modelo sin cuantizar), por lo que no es equivalente al modelo base en precisión.
-- Las afirmaciones de rendimiento (24-28+ tok/s, fidelidad tipo Q5-Q6, contexto completo de 256K) proceden del autor de la cuantización y están etiquetadas como registro de optimización propio; no se han verificado de forma independiente.
-- La model card dedica una sección explícita a desaconsejar las recetas APEX-I-Mini genéricas de la comunidad (IQ2_S con cabeza de salida en Q3_K_M), que según el autor provocan errores de sintaxis y fallos de indentación. Esto implica que la calidad depende críticamente de usar exactamente este binario y no otro con nombre parecido.
-- Riesgo de alucinación: inherente a los modelos de lenguaje; no hay evaluación publicada de tasas de alucinación, factualidad ni robustez para este modelo o su base.
-- Sesgos conocidos: no disponibles. No se documenta ningún análisis de sesgo, toxicidad o alineación.
-- Limitaciones de idioma: aunque se declaran 13 idiomas, no se especifica el reparto del corpus de entrenamiento ni el rendimiento relativo entre lenguas; el modelo está orientado principalmente a inglés y chino dado su origen (Kwaipilot).
-- Restricciones de licencia: el repositorio de la cuantización se distribuye como apache-2.0. Sin embargo, la licencia del modelo base Kwaipilot/KAT-Coder-V2.5-Dev no se detalla en la información proporcionada; antes de un uso comercial conviene verificar la licencia del modelo original, ya que una cuantización no puede otorgar permisos más amplios que el modelo del que deriva.
-- Contexto: los 256K tokens son la cifra declarada por el autor; no se aportan resultados de evaluación en contextos largos (por ejemplo, tareas tipo needle-in-a-haystack), y la degradación a contextos muy extensos no está cuantificada.
-- Fecha de creación y actualización del repositorio: 2026-09-18 y 2026-09-20, con solo 667 descargas y 1 like en el momento de la consulta, lo que indica poca validación por parte de la comunidad.
-- Tool calling, uso como agente y plantillas de chat: no documentados; habría que verificar el chat template incluido en el GGUF antes de integrarlo en pipelines que dependan de llamadas a funciones.
+- Las afirmaciones de rendimiento, fidelidad y capacidad de contexto (256K en 24 GB) proceden únicamente de la model card del cuantizador y no han sido verificadas de forma independiente.
+- Al ser una cuantización, existe una pérdida inevitable de precisión respecto al modelo original; el grado exacto de degradación no está cuantificado en la información disponible.
+- El autor advierte explícitamente sobre un problema de sintaxis en código y sobre el uso de repeat penalty, que puede provocar "intercambio de caracteres" en la generación de código; es una advertencia importante para producción.
+- Riesgo de alucinación inherente a los modelos de lenguaje; no se documentan evaluaciones específicas de factualidad.
+- Sesgos: no se documentan sesgos conocidos en la información disponible.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base y la cuantización deben atribuirse correctamente; conviene revisar los términos del modelo original Kwaipilot/KAT-Coder-V2.5-Dev.
+- El modelo base está orientado a código y razonamiento; su comportamiento en dominios especializados (medicina, derecho) no está evaluado.
+- La plantilla de chat es una modificación del cuantizador ("hardened agentic chat template"); usar la plantilla original del modelo base puede dar resultados distintos.
+- El repositorio tiene un tamaño de 15,9 GB, lo que requiere espacio en disco y ancho de banda considerables para su descarga.
 
 ## Enlaces
 
-- Repositorio Hugging Face de la cuantización: https://huggingface.co/IsValorum/KAT-Coder-V2.5-Dev-APEX-I-MiniPlus-V2.1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/IsValorum/KAT-Coder-V2.5-Dev-APEX-I-MiniPlus-V2.1-GGUF
 - Modelo base: https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev
-- Paper, blog técnico, repositorio de código o demo del modelo base: no disponible en la información proporcionada.
-- La búsqueda web realizada no devolvió resultados relevantes sobre este modelo ni sobre su modelo base (únicamente dominios de contenido no relacionado), por lo que no se incluyen enlaces adicionales.
+- Colección APEX-I MiniPlus V2.1: https://huggingface.co/collections/IsValorum/apex-i-miniplus-v21-standard-moe-6acfee77961c8c0cf5a083b5
+- Qwen3.8 27B MiniPlus V3: https://huggingface.co/IsValorum/Qwen3.8-27B-VAL-APEX-I-MiniPlus-V3-GGUF
+- Qwen3.8 27B NanoPlus V3: https://huggingface.co/IsValorum/Qwen3.8-27B-VAL-APEX-I-NanoPlus-V3-GGUF
+- Swift-1.5 Qwen3.8 27B Uncensored MTP MiniPlus V3: https://huggingface.co/IsValorum/Swift-1.5-Qwen3.8-27B-Uncensored-MTP-VAL-APEX-I-MiniPlus-V3-GGUF
+- Swift-1.5 Qwen3.8 27B Uncensored MTP NanoPlus V3: https://huggingface.co/IsValorum/Swift-1.5-Qwen3.8-27B-Uncensored-MTP-VAL-APEX-I-NanoPlus-V3-GGUF
+- Qwen3.6-35B-A3B MTP APEX-I-MiniPlus-V2.1: https://huggingface.co/IsValorum/Qwen3.6-35B-A3B-MTP-APEX-I-MiniPlus-V2.1-GGUF
+- Qwen3.6-35B-A3B MTP APEX-I-MiniPlus-V2.1 Abliterated: https://huggingface.co/IsValorum/Qwen3.6-35B-A3B-MTP-APEX-I-MiniPlus-V2.1-Abliterated-GGUF
+- Ornith 1.5 APEX-I-MiniPlus-V2.1: https://huggingface.co/IsValorum/Ornith-1.5-35B-A3B-APEX-I-MiniPlus-V2.1-GGUF
+- Tiel Coder APEX-I-MiniPlus-V2.1: https://huggingface.co/IsValorum/Tiel-Coder-35B-A3B-APEX-I-MiniPlus-V2.1-GGUF
+- Apoyo al autor (Ko-fi): https://ko-fi.com/isvalorum

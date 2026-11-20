@@ -2,99 +2,102 @@
 
 ## Resumen
 
-NVIDIA-Nemotron-3.5-30B-A3B-Abliterated-VQ3-64-CPU-GGUF es un checkpoint GGUF cuantizado del modelo Darkstar-Nemotron-3.5-Lightning-30B-A3B-Abliterated-BF16, a su vez derivado de nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 mediante una ablación de rechazo (abliteration) en las proyecciones residuales. Lo publica el usuario Synchopate como una distribución orientada a inferencia en CPU, con un esquema de cuantización propio (LUT-VQ3-64 + Fractal-64) que reduce los 58,84 GiB del BF16 original a 13,30 GiB (14.282.559.488 bytes), pensado para equipos con 16 GB o más de RAM.
+NVIDIA-Nemotron-3.5-30B-A3B-Abliterated-VQ3-64-CPU-GGUF es una cuantizacion GGUF de 13,30 GiB del modelo Darkstar-Nemotron-3.5-Lightning-30B-A3B-Abliterated-BF16, a su vez una variante "abliterated" (con los filtros de rechazo desactivados) del modelo base nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16. Lo publica el usuario Synchopate en Hugging Face y esta pensado especificamente para inferencia en CPU con 16 GB de RAM o mas, empleando un esquema propietario de cuantizacion vectorial (LUT-VQ3-64) combinado con un formato Fractal-64.
 
-El modelo subyacente es un híbrido Mamba-2 y transformer con mezcla de expertos (MoE) dispersa: 52 bloques compuestos por 23 capas Mamba-2 SSM, 23 capas MoE dispersas y 6 capas de atención GQA-2 con Top-6 activo sin podar. El total de parámetros es de 31.577.940.288 (unos 31,6 mil millones), aunque solo una fracción se activa por token gracias al enrutamiento MoE. La variante "Abliterated" desactiva los filtros de rechazo estándar de NVIDIA, lo que la hace relevante para investigación de seguridad, auditoría de vulnerabilidades y desarrollo local offline, pero no para despliegues públicos sin control de acceso.
+El modelo conserva la arquitectura hibrida del Nemotron original: 52 bloques compuestos por 23 capas Mamba-2 SSM, 23 capas de mezcla de expertos dispersa (MoE) y 6 capas de atencion GQA-2, con 31.577.940.288 parametros totales y enrutamiento Top-6 activo. La ventana de contexto declarada alcanza los 256K tokens. El checkpoint esta disenado para ejecutarse con el runtime llama-modchip v3.0, un fork de llama.cpp que anade los tipos de tensor personalizados 44 y 45 necesarios para leer este GGUF.
 
-La relevancia actual radica en dos factores: por un lado, el formato de cuantización vectorial por búsqueda en tabla (LUT-VQ3-64) con bloques de 64 pesos y el esquema Fractal-64, que permiten ejecutar un modelo de 31,6 B en CPU con contexto de hasta 256K; por otro, la dependencia de un runtime parcheado (llama-modchip) que redefine los tipos GGML 42 y 43, lo que rompe la compatibilidad con Ollama, LM Studio, vLLM y llama.cpp sin parchear.
+Su relevancia actual radica en dos factores: por un lado, demuestra que un modelo MoE de 30B puede desplegarse en equipos de consumo sin GPU dedicada, algo poco habitual; por otro, la variante abliterated elimina las negativas de seguridad del modelo original, lo que la orienta a investigacion en seguridad, auditoria de vulnerabilidades y evaluacion academica, no a despliegues publicos sin control de acceso.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida Mamba-2 SSM + transformer con MoE dispersa (52 bloques: 23 Mamba-2, 23 MoE, 6 GQA-2) |
-| Parametros totales | 31.577.940.288 (31,6 B) |
-| Parametros activos | Top-6 activo por token (sin podar; número exacto de parámetros activos no disponible) |
-| Longitud de contexto | Hasta 256K tokens (según model card) |
-| Tipos de cuantizacion | LUT-VQ3-64 (tipo GGML 43, 24 B / 64 W) + Fractal-64 (tipo GGML 42, 30 B / 64 W); tamaño 13,30 GiB |
+| Arquitectura | Hibrida: 23 capas Mamba-2 SSM + 23 capas MoE dispersas + 6 capas GQA-2 |
+| Parametros totales | 31.577.940.288 |
+| Parametros activos | Top-6 expertos activos por token (numero exacto de parametros activos no disponible) |
+| Longitud de contexto | Hasta 256K tokens (segun model card) |
+| Tipos de cuantizacion | LUT-VQ3-64 (tipo 45) + Fractal-64 (tipo 44); ~3,75 bpw en tensores Fractal-64 |
 | Idiomas soportados | No disponible |
-| Licencia | openmdw-1.1 (etiquetada como "other" en Hugging Face) |
-| Formato de pesos | GGUF (llama-modchip), requiere runtime parcheado; no compatible con llama.cpp/Ollama/LM Studio/vLLM sin parche |
+| Licencia | openmdw-1.1 |
+| Formato de pesos | GGUF (13,30 GiB / 14.282.559.488 bytes) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente combina capas Mamba-2 de espacio de estados (SSM) con capas de mezcla de expertos dispersa y un pequeño número de capas de atención con GQA-2 (6 capas). El modelo base es nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16, del que no se detallan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO. La variante Darkstar aplica una ablación de rechazo en una única dirección ortogonal sobre las proyecciones que escriben en el residual, modificando 2.997 matrices safetensor que corresponden a 76 de los 401 tensores GGUF.
+La arquitectura es hibrida y combina tres tipos de bloque: 23 capas Mamba-2 de espacio de estados (SSM), 23 capas de mezcla de expertos dispersa con enrutamiento Top-6 y 6 capas de atencion con query grouping GQA-2. Esta mezcla reduce el coste de atencion cuadratica en contextos largos, lo que explica la ventana de 256K tokens declarada. El modelo base es NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16, del que no se detallan en la informacion disponible el volumen de tokens de entrenamiento ni la composicion del dataset.
 
-La innovación técnica de este checkpoint es el esquema de cuantización: el script build_nemotron_abliterated_vq3.py re-cuantiza los 76 tensores editados por Darkstar en una sola pasada directamente desde los safetensors BF16 de Darkstar, e incluye token_embd.weight y las 23 capas SSM entre los tensores tratados. El resultado son dos tipos GGML personalizados: Fractal-64 (tipo 42, 30 B / 64 W, que reutiliza el identificador upstream de Q2_0) y LUT-VQ3-64 (tipo 43, 24 B / 64 W, identificador 40 en v2.4). El runtime llama-modchip v2.5.4 incluye binarios portables Linux x86_64 con GLIBC_2.30, variantes AVX-512 y AVX2, verificados por SHA256SUMS, y requiere OpenMP (libgomp1).
+La variante "abliterated" procede de HangGlidersRule/Darkstar-Nemotron-3.5-Lightning-30B-A3B-Abliterated-BF16, que desactiva los filtros de rechazo del modelo original. La cuantizacion se realizo en dos fases: los 76 tensores editados por Darkstar (embeddings, salidas SSM, salidas de atencion y proyecciones down de los expertos) se cuantizaron en una sola pasada desde los safetensors BF16, mientras que los 325 tensores no editados se mantienen bit a bit identicos al checkpoint alineado VQ3-64 del mismo autor. El resultado son 401 tensores en total, con 27 tensores en Fractal-64 (tipo 44) y 19 en LUT-VQ3-64 (tipo 45). No se dispone de informacion sobre RLHF, DPO ni otras fases de alineamiento posteriores al entrenamiento base.
 
 ## Capacidades
 
-- Generación de texto conversacional (pipeline text-generation, etiqueta conversational).
-- Razonamiento multi-paso y uso en flujos tipo agente, con soporte declarado para claude-code en las etiquetas del repositorio.
-- Capacidades de código y auditoría técnica: la model card reporta 8/8 en una auditoría de seguridad de doble uso con 8 prompts y 100/100 en un test funcional de calidad, coding y tool gate.
-- Tool calling / function calling: el "100-Point Functional Quality, Coding, & Tool Gate" sugiere soporte, aunque no se detalla el formato exacto de herramientas.
-- Inferencia en CPU con contexto largo (hasta 256K) gracias al esquema de cuantización vectorial.
-- Modo "abliterated" / uncensored: sin filtros de rechazo estándar, orientado a investigación de seguridad y CTF.
-- Capacidades multilingües: no disponibles en la información proporcionada.
+- Generacion de texto conversacional multi-turno, con plantilla Jinja que activa por defecto un bloque de razonamiento `<think>...</think>`.
+- Razonamiento explicito con presupuesto de tokens controlable mediante `chat_template_kwargs={"enable_thinking": false}` o `--reasoning-budget 0`.
+- Capacidad declarada para tareas de seguridad ofensiva y auditoria tecnica (8/8 prompts en la suite de auditoria dual-use reportada por el autor).
+- Inferencia en CPU pura sobre hosts con 16 GB de RAM o mas, con soporte de instrucciones AVX2 y AVX512.
+- Contexto largo de hasta 256K tokens, adecuado para analisis de documentos extensos y conversaciones prolongadas.
+- Integracion declarada con Claude Code en los tags del repositorio (soporte de tool calling no verificado en la informacion disponible).
+- Soporte multilingue: no disponible.
 
 ## Casos de uso
 
-- Investigación de seguridad ofensiva y auditoría de vulnerabilidades: el checkpoint sin filtros de rechazo permite probar prompts de doble uso en entornos controlados; la model card reporta 8/8 en su suite de auditoría técnica de doble uso.
-- Desarrollo local offline en estaciones de trabajo sin GPU: con 13,30 GiB en disco y unos 16 GiB de RAM pico a 256K de contexto, cabe en equipos de 16 GB o más con AVX-512 o AVX2.
-- Ejecución de agentes de código en CPU: las etiquetas incluyen claude-code y el modelo pasa el gate funcional de coding y tool calling, lo que permite integrarlo en flujos de asistencia a programación en local.
-- Procesamiento de documentos largos: la ventana de hasta 256K tokens permite resumir o analizar contratos, informes o bases de código extensas en una sola pasada.
-- Evaluación académica de alineación y robustez: la variante abliterated sirve como contrapunto a la versión alineada (Synchopate/NVIDIA-Nemotron-3.5-30B-A3B-VQ3-64-CPU-GGUF) para estudiar diferencias de comportamiento.
-- Pruebas de regresión de cuantización: el layout idéntico al twin alineado permite comparar PPL y KLD entre versiones con y sin ablación sobre la misma arquitectura de tensores.
-- Despliegue en entornos air-gapped: al ser CPU-only y con binarios portables incluidos, encaja en máquinas aisladas sin acceso a internet.
+- **Auditoria de seguridad y CTF**: el checkpoint abliterated mantiene la capacidad de responder a prompts tecnicos de seguridad sin filtros de rechazo, lo que lo hace util en entornos controlados de investigacion ofensiva y analisis de vulnerabilidades.
+- **Analisis de documentos extensos en equipos sin GPU**: con 256K tokens de contexto y 13,30 GiB en disco, permite procesar manuales, expedientes o bases de codigo completas en un portatil con 16 GB de RAM.
+- **Asistente de desarrollo local offline**: se puede integrar en flujos tipo Claude Code para autocompletado, refactorizacion y explicacion de codigo sin enviar datos a servicios externos.
+- **Evaluacion academica de alineamiento**: sirve como referencia para estudiar el efecto de la abliteration sobre la calidad del modelo (perplejidad, KLD) frente a la version alineada.
+- **Procesamiento por lotes en servidores CPU**: al no requerir GPU, se puede desplegar en granjas de CPU convencionales para tareas de clasificacion, resumen o extraccion de informacion a gran escala.
+- **Prototipado rapido en estaciones de trabajo modestas**: permite validar prompts, plantillas de chat y flujos de razonamiento antes de migrar a un despliegue mayor en GPU.
+- **Generacion de respuestas con razonamiento controlado**: el bloque `<think>` permite separar el razonamiento interno de la respuesta final, util para pipelines que necesitan trazabilidad del proceso.
 
 ## Benchmarks y rendimiento
 
-| Suite / Métrica (16C AMD Zen 5) | BF16 real (58,84 GiB) | Fractal-64 (14,36 GiB, alineado) | VQ3-64 (13,30 GiB, alineado) | Abliterated-VQ3-64 (13,30 GiB) |
+| Metrica (16 nucleos AMD Zen 5) | BF16 real (58,84 GiB) | Fractal-64 v3.0 (14,36 GiB) | VQ3-64 alineado v3.0 (13,30 GiB) | Abliterated VQ3-64 v3.0 (13,30 GiB) |
 |---|---|---|---|---|
-| WikiText-2 PPL (12.288 tok) | 6,9582 ± 0,24151 | 7,3610 ± 0,26017 | 7,4400 ± 0,26263 | 7,7721 ± 0,28352 (+4,46% vs VQ3-64) |
-| KLD de logits vs BF16 (32 sondas) | 0,0000 (ref) | 0,1254 / 0,0929 nats | 0,1495 / 0,0944 nats | 0,1431 / 0,1109 nats (75,0% / 84,4% Top-1) |
-| KLD de tensores editados vs VQ3-64 (step-0) | — | — | 0,0000 (ref) | 0,0308 / 0,0312 nats (87,5% / 92,4% Top-1; 100,0% Top-5) |
-| Gate decode (Stockfish-PVS E2E, suite 4) | 7,82 tok/s (ref) | 25,02 tok/s (59,1% acc) | 24,18 tok/s (70,2% acc) | ~24,18 tok/s (proxy VQ3) |
-| Gate funcional de 100 puntos (calidad, coding, tool) | 100,0 / 100 | 100,0 / 100 | 100,0 / 100 | 100,0 / 100 (proxy VQ3) |
-| Auditoría técnica de doble uso (8 prompts) | — | — | 8 / 8 | 8 / 8 (medido directamente) |
+| Tamano en disco | 58,84 GiB | 15.420.034.624 B | 14.282.559.040 B | 14.282.559.488 B |
+| Perplejidad WikiText-2 (12.288 tok) | 6,9582 ± 0,2415 | 7,3610 ± 0,2602 | 7,4400 ± 0,2626 | 7,7721 ± 0,2835 (+4,46% vs VQ3-64) |
+| KLD de logits vs BF16 (32 sondas) | 0,0000 (ref.) | 0,1254 / 0,0929 nats | 0,1495 / 0,0944 nats | 0,1431 / 0,1109 nats (75,0% / 84,4% Top-1) |
+| KLD vs VQ3-64 (tensores editados) | — | — | 0,0000 (ref.) | 0,0308 / 0,0312 nats (92,4% Top-1, 100% Top-5) |
+| Auditoria de seguridad dual-use (8 prompts) | — | — | 8/8 | 8/8 |
 
-Nota de la model card: la PPL, el KLD directo vs BF16, el KLD vs VQ3-64 y la auditoría 8/8 se midieron directamente sobre el GGUF abliterated; el throughput (24,18 tok/s), el VmRSS (16,04 GiB) y el gate 100/100 provienen de eval_nemotron_vq3_64.json como proxy de layout idéntico.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM: no aplica, es un checkpoint para CPU; el requisito es RAM. Pico residente (VmRSS) de ~16,04 GiB a 256K de contexto y ~14,6 GiB con -c 32768 según la model card.
-- RAM mínima recomendada: 16 GB o más; el autor indica hosts AVX-512 VBMI de 16 a 59 GB para el twin alineado.
-- GPU: no requerida ni soportada por el runtime incluido (binarios Linux x86_64 para CPU).
-- CPU: x86_64 con AVX-512 o AVX2; el autor reporta mediciones en un AMD Zen 5 de 16 núcleos.
-- Sistema operativo: binarios portables Linux x86_64 con GLIBC_2.30; requiere OpenMP (libgomp1).
-- Opciones de despliegue: exclusivamente llama-modchip v2.5.4 (binarios -avx512 o -avx2 incluidos en el repo, verificados por SHA256SUMS) o ./modchip setup desde github.com/synchopate/llama-modchip. No compatible con Ollama, LM Studio, vLLM ni llama.cpp sin parchear.
-- Latencia y throughput: ~24,18 tok/s en decode de gate (proxy VQ3) y 25,02 tok/s en Fractal-64 sobre 16C AMD Zen 5; el BF16 de referencia rinde 7,82 tok/s.
+- **RAM**: minimo 16 GB para cargar el GGUF de 13,30 GiB; el autor lo posiciona explicitamente en la categoria de 16 GB.
+- **CPU**: se recomienda AVX2 y, preferiblemente, AVX512; las mediciones de referencia se hicieron en un AMD Zen 5 de 16 nucleos.
+- **GPU**: no requerida; el checkpoint esta disenado para inferencia en CPU. No se documenta soporte CUDA o Metal para estos tipos de tensor personalizados.
+- **Almacenamiento**: 13,30 GiB para el GGUF mas espacio adicional para el runtime.
+- **Runtime**: llama-modchip v3.0 (fork de llama.cpp con soporte de los tipos 44 y 45), instalable con `./install.sh --preset nemotron-ablit --accept-abliterated`. Tambien se ofrecen binarios estaticos portables con libgomp y GLIBC 2.30.
+- **Latencia y throughput**: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Cuantización / tamaño | Licencia | Notas |
+| Modelo | Parametros | Contexto | Tamano en disco | Licencia | Notas |
 |---|---|---|---|---|---|
-| NVIDIA-Nemotron-3.5-30B-A3B-Abliterated-VQ3-64-CPU-GGUF (este) | 31,6 B (MoE Top-6) | 256K | LUT-VQ3-64 + Fractal-64, 13,30 GiB | openmdw-1.1 | Sin filtros de rechazo; runtime parcheado obligatorio |
-| Synchopate/NVIDIA-Nemotron-3.5-30B-A3B-VQ3-64-CPU-GGUF | 31,6 B (MoE Top-6) | 256K | LUT-VQ3-64 + Fractal-64, 13,30 GiB | openmdw-1.1 | Twin alineado en seguridad, mismo layout de tensores |
-| HangGlidersRule/Darkstar-Nemotron-3.5-Lightning-30B-A3B-Abliterated-BF16 | 31,6 B (MoE Top-6) | No disponible | BF16 (modelo base) | No disponible | Fuente del que se cuantiza este checkpoint |
-| nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 | 31,6 B (MoE Top-6) | No disponible | BF16, 58,84 GiB | No disponible | Modelo original con alineación de seguridad de NVIDIA |
+| **Este modelo (Abliterated VQ3-64)** | 31.577.940.288 | 256K | 13,30 GiB | openmdw-1.1 | Sin filtros de rechazo, CPU-only |
+| NVIDIA-Nemotron-3.5-30B-A3B-VQ3-64 (alineado) | 31.577.940.288 | 256K | 13,30 GiB | openmdw-1.1 | Mismo layout, perplejidad 7,44, con filtros de seguridad |
+| NVIDIA-Nemotron-3.5-30B-A3B-Fractal-64 | 31.577.940.288 | 256K | 14,36 GiB | openmdw-1.1 | Mayor fidelidad al BF16 (perplejidad 7,36), mayor tamano |
+| NVIDIA-Nemotron-3.5-30B-A3B-BF16 (original) | 31.577.940.288 | 256K | 58,84 GiB | openmdw-1.1 | Referencia de calidad, requiere mucha mas memoria |
 
 ## Limitaciones y advertencias
 
-- Filtros de rechazo desactivados: la ablación elimina la alineación de seguridad estándar de NVIDIA; no debe exponerse en endpoints públicos, multiusuario o sin autenticación sin control de acceso y filtrado externo.
-- Riesgo de alucinación: la PPL en WikiText-2 sube a 7,7721 frente a 7,4400 del twin alineado (+4,46%), lo que indica una degradación adicional de calidad respecto a la cuantización ya de por sí lossy.
-- Compatibilidad rota: cargar el checkpoint en Ollama, LM Studio, vLLM o llama.cpp sin parchear provoca fallo inmediato ("unknown tensor type 43" o desajuste de límites de tensores); requiere llama-modchip v2.5.4.
-- Dependencia de plataforma: solo hay binarios Linux x86_64 con GLIBC_2.30 y AVX-512/AVX2; no hay soporte GPU ni macOS/Windows documentado.
-- Idiomas soportados no documentados: no se puede garantizar calidad fuera del inglés sin evaluación propia.
-- Licencia openmdw-1.1: conviene revisar los términos del enlace oficial antes de uso comercial; la model card la etiqueta como "other" en Hugging Face.
-- Sesgos: no documentados en la información disponible, pero al derivar de un modelo sin filtros de rechazo, los sesgos presentes en los datos de entrenamiento se manifestarán sin atenuación.
-- Uso previsto restringido por el autor: investigación de seguridad autorizada, auditoría CTF, evaluación académica y desarrollo local offline; la responsabilidad legal recae en el usuario.
+- **Filtros de rechazo desactivados**: la variante abliterated elimina las negativas de seguridad del modelo original; no debe exponerse en endpoints publicos o sin moderacion sin control de acceso y filtrado externo.
+- **Degradacion de calidad medible**: la perplejidad en WikiText-2 sube un 4,46% respecto al VQ3-64 alineado (7,7721 frente a 7,4400), y el KLD frente a BF16 es de 0,1431 nats, con solo un 75% de coincidencia Top-1.
+- **Dependencia de un runtime no estandar**: requiere llama-modchip v3.0 o binarios equivalentes; no funciona con llama.cpp estandar, Ollama ni vLLM sin conversiones adicionales.
+- **Sesgos**: no se documentan evaluaciones de sesgo en la informacion disponible.
+- **Riesgo de alucinacion**: no cuantificado en la informacion disponible; la cuantizacion agresiva (~3,75 bpw en algunos tensores) puede incrementarlo.
+- **Idiomas**: no se especifica la cobertura linguistica; el modelo base esta orientado principalmente al ingles.
+- **Licencia**: openmdw-1.1; conviene revisar sus terminos para uso comercial, ya que el modelo deriva de un checkpoint abliterated de terceros.
+- **Checkpoint legacy**: el propio autor lo marca como reemplazado por la linea MaxQ v3.0; los commits v2.5.x permanecen intactos pero el HEAD migro a los tipos 44/45.
+- **Presupuesto de tokens**: con el modo `<think>` activo hay que fijar `max_tokens >= 4096` para evitar respuestas truncadas.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Synchopate/NVIDIA-Nemotron-3.5-30B-A3B-Abliterated-VQ3-64-CPU-GGUF
-- Twin alineado en seguridad: https://huggingface.co/Synchopate/NVIDIA-Nemotron-3.5-30B-A3B-VQ3-64-CPU-GGUF
-- Modelo base (Darkstar abliterated BF16): https://huggingface.co/HangGlidersRule/Darkstar-Nemotron-3.5-Lightning-30B-A3B-Abliterated-BF16
-- Repositorio del runtime: https://github.com/synchopate/llama-modchip
-- Script de construcción: https://github.com/synchopate/llama-modchip/blob/main/scripts/build_nemotron_abliterated_vq3.py
-- Licencia openmdw-1.1: https://openmdw.ai/license/1-1/
+- [Modelo en Hugging Face](https://huggingface.co/Synchopate/NVIDIA-Nemotron-3.5-30B-A3B-Abliterated-VQ3-64-CPU-GGUF)
+- [Modelo base: nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16)
+- [Checkpoint abliterated de origen: HangGlidersRule/Darkstar-Nemotron-3.5-Lightning-30B-A3B-Abliterated-BF16](https://huggingface.co/HangGlidersRule/Darkstar-Nemotron-3.5-Lightning-30B-A3B-Abliterated-BF16)
+- [Variante alineada VQ3-64](https://huggingface.co/Synchopate/NVIDIA-Nemotron-3.5-30B-A3B-VQ3-64-CPU-GGUF)
+- [Variante Fractal-64](https://huggingface.co/Synchopate/NVIDIA-Nemotron-3.5-30B-A3B-Fractal-64-CPU-GGUF)
+- [Variante MaxQ 16GB (alineada)](https://huggingface.co/Synchopate/NVIDIA-Nemotron-3.5-30B-A3B-MaxQ-16GB-GGUF)
+- [Flagship MaxQ 32GB abliterated](https://huggingface.co/Synchopate/Qwen3.8-Flash-Next-MaxQ-32GB-Abliterated-GGUF)
+- [Flagship MaxQ 64GB abliterated](https://huggingface.co/Synchopate/Qwen3.8-Flash-Next-MaxQ-64GB-Abliterated-GGUF)
+- [Runtime llama-modchip](https://github.com/synchopate/llama-modchip)
+- [Licencia openmdw-1.1](https://openmdw.ai/license/1-1/)

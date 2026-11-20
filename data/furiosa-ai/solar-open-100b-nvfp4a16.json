@@ -55,31 +55,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "furiosa-ai/Solar-Open-100B-NVFP4A16 · Hugging Face",
-      "url": "https://huggingface.co/furiosa-ai/Solar-Open-100B-NVFP4A16",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Solar Open — FuriosaAI Developer Center 2026.3.0 documentation",
-      "url": "https://developer.furiosa.ai/latest/en/furiosa_llm/models/solar-open.html",
-      "snippet": "Furiosa-LLM runs Solar Open in NVFP4A16 (NVFP4 weights with 16-bit activations and KV cache). FuriosaAI publishes pre-compiled NVFP4A16 builds under the furiosa-ai organization on the Hugging Face Hub, each shipping a Furiosa Executable Bundle (FXB) for running it on FuriosaAI RNGD with Furiosa-LLM."
-    },
-    {
-      "title": "furiosa-ai/Solar-Open-100B-NVFP4A16 at main - Hugging Face",
-      "url": "https://huggingface.co/furiosa-ai/Solar-Open-100B-NVFP4A16/tree/main",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Solar-Open-100B-NVFP4A16 · Model · Inferix",
-      "url": "https://inferix.co/models/furiosa-ai/Solar-Open-100B-NVFP4A16",
-      "snippet": "Solar-Open-100B-NVFP4A16 This repository contains a build of upstage/Solar-Open-100B that FuriosaAI quantized in-house to NVFP4A16, together with a Furiosa Executable Bundle (FXB) for running it on FuriosaAI RNGD with Furiosa-LLM. The NVFP4A16 weights in this repository also run directly on other frameworks (such as vLLM, SGLang, and Transformers); for the base model and general usage, see the ..."
-    },
-    {
-      "title": "Solar-Open-100B-NVFP4A16 — VRAM, Quants & GPU Compatibility",
-      "url": "https://nodepedia.com/models/solar-open-100b-nvfp4a16/",
-      "snippet": "Solar-Open-100B-NVFP4A16 is furiosa-ai&#x27;s take on the Solar-Open family: a roughly hundred-billion-parameter open-weight model packaged, as the name signals, in the NVFP4A16 format — a 4-bit weight / 16-bit activation scheme aimed at squeezing a large model onto hardware that would otherwise choke on it. This is a general-purpose text and chat model for people who want frontier-adjacent ..."
-    }
-  ]
+  "sources": []
 }

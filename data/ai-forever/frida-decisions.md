@@ -2,135 +2,102 @@
 
 ## Resumen
 
-FRIDA-Decisions es un modelo encoder de la familia T5, con 823.401.216 parámetros, desarrollado por УЭСМО / SberAI dentro del ecosistema ai-forever. No es un modelo generativo: su función es tomar decisiones estructuradas sobre texto en una sola pasada del encoder. Dado un texto y un conjunto de preguntas declaradas en la propia petición (JSON), devuelve para cada pregunta una de las opciones permitidas junto con su distribución de confianza, sin generar tokens ni requerir parseo posterior.
+FRIDA-Decisions es un modelo encoder derivado de ai-forever/FRIDA (arquitectura T5, 823 millones de parámetros) desarrollado por el equipo УЭСМО de SberAI. No es un modelo generativo: su función es tomar decisiones estructuradas sobre texto en ruso (y parcialmente en inglés) en una sola pasada del encoder. Concretamente, permite elegir una entre K opciones, situar un texto en una escala ordinal, responder sí/no o clasificar candidatos por relevancia, devolviendo siempre una de las opciones declaradas junto con su confianza.
 
-El modelo está afinado a partir de ai-forever/FRIDA y aborda un problema recurrente en producción: clasificar, enrutar y aplicar guardarraíles sin entrenar un modelo nuevo por cada conjunto de etiquetas. Como las opciones se escriben en texto dentro de la petición, cambiar las categorías es cambiar un JSON, no reentrenar. Soporta cuatro tipos de decisión (elección entre K opciones, puntuación ordinal, respuesta binaria sí/no y ordenación de candidatos) y está orientado principalmente a ruso, con etiquetado también para inglés.
+La innovación principal es que el conjunto de etiquetas se define en tiempo de inferencia como texto dentro de la propia petición (JSON), de modo que cambiar el catálogo de etiquetas no requiere reentrenar el modelo. Elimina por completo la generación autoregresiva y el parseo de salidas: no hay tokens de salida que decodificar, lo que reduce la latencia y elimina los fallos de formato típicos de los LLM en tareas de clasificación y enrutado.
 
-Su relevancia práctica viene del coste: 28-34 ms por petición en una RTX 5060 Ti con textos de unos 400 tokens y 1-3 preguntas, 1,8 GiB de pico de memoria en PyTorch, 0,893 en el benchmark razvilka (735 ítems) y un build ONNX int8 que funciona en CPU. El empaquetado de todas las opciones en una única secuencia, junto con una caché de estado, permite responder un catálogo de 243 intenciones en 0,44 s frente a 4,65 s con una secuencia por opción.
+Es relevante ahora porque ofrece una alternativa ligera y desplegable en GPU de consumo para tareas de enrutado de intenciones, guardrails y reranking, con un rendimiento en el benchmark razvilka (0,893) prácticamente idéntico al de una API comercial (TypeSafe Jev, 0,897) y superior al de los modelos abiertos evaluados por el autor. Incluye builds ONNX int8 para CPU y MLX para Apple Silicon, además de un servidor compatible con vLLM.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | T5 encoder (encoder-only), modelo base ai-forever/FRIDA |
+| Arquitectura | T5 encoder (transformer encoder-only), basado en ai-forever/FRIDA |
 | Parametros totales | 823.401.216 |
-| Longitud de contexto | No disponible de forma explicita; la configuracion de referencia de vLLM usa `--max-model-len 2048` y `FRIDA_DECISIONS_STATE_MAX=512` para el texto de entrada |
-| Tipos de cuantizacion | bf16 (PyTorch y vLLM), fp32, int8 (ONNX, pesos int8 y activaciones int8 por token) |
-| Idiomas soportados | Ruso (ru) e ingles (en); el modelo esta descrito como orientado a decisiones sobre texto en ruso |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | hasta 2048 tokens en el servidor vLLM (`--max-model-len 2048`); longitud máxima nativa no especificada |
+| Tipos de cuantizacion | bf16 (GPU), int8 ONNX (pesos int8 y activaciones int8 por token, CPU), MLX (Apple Silicon) |
+| Idiomas soportados | ruso (ru), inglés (en) |
 | Licencia | MIT |
-| Formato de pesos | safetensors y ONNX |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Pipeline | text-classification |
-| Libreria | frida-decisions |
-| Tamano del repositorio | 2.9 GB |
-| Fecha de publicacion (metadatos) | 2 de octubre de 2026 |
+| Formato de pesos | safetensors, ONNX, MLX |
 
 ## Arquitectura y entrenamiento
 
-FRIDA-Decisions es un encoder T5 de 823M parámetros obtenido por fine-tuning sobre ai-forever/FRIDA. Al ser encoder-only, no decodifica texto: la salida es una distribución sobre las opciones declaradas en la petición. Todas las opciones de todas las preguntas comparten una única secuencia y el texto se codifica una sola vez; con la caché de estado, una pregunta de seguimiento sobre el mismo texto cuesta únicamente sus propios tokens. Esa estrategia de empaquetado es la que explica la diferencia entre 0,44 s para un catálogo de 243 intenciones y 4,65 s con una secuencia por opción.
+El modelo parte de ai-forever/FRIDA, un encoder T5 de 823 millones de parámetros, y se afina (finetune) para la tarea de decisión estructurada. La entrada combina el texto a evaluar con la definición textual de las preguntas y sus opciones (tipo `choice`, `score`, `noul` o ranking), todo empaquetado en una única secuencia; el encoder procesa el texto una sola vez y las opciones de todas las preguntas comparten esa misma secuencia. Una caché de estado permite que una pregunta de seguimiento sobre un texto ya leído cueste únicamente sus propios tokens.
 
-La información disponible no detalla el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO; estos datos deben considerarse no disponibles. La evaluación publicada se realizó sobre el conjunto razvilka (735 ítems), con resultados de 0,893 en PyTorch bf16, 0,890 en vLLM y 0,891 en ONNX int8. Según el autor, es la puntuación más alta entre los modelos abiertos que ejecutó en razvilka, y la comparación emparejada con la API comercial TypeSafe Jev (0,897) arroja un p de McNemar de 0,84, es decir, sin diferencia estadísticamente significativa.
+El modelo no genera tokens: produce directamente la opción seleccionada y su confianza, lo que evita el parseo de salidas y los errores de formato. El autor no detalla en la información disponible el volumen de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO; estos datos deben considerarse no disponibles. La innovación técnica destacable es el empaquetado de opciones en una sola secuencia (packing) y la caché de estado, que reducen el coste de catálogos grandes: un catálogo de 243 intenciones se resuelve en 0,44 s frente a 4,65 s con una secuencia por opción.
 
 ## Capacidades
 
-- Toma de decisiones estructuradas sobre texto en una sola pasada del encoder, sin generación ni tokens de salida.
-- Tipo `choice`: elegir cuál de K opciones es la correcta, devolviendo la clave de la opción y una distribución sobre el conjunto.
-- Tipo `score`: situar un texto en una escala ordinal definida por el usuario.
-- Tipo `noul`: respuesta binaria sí/no con criterios declarados para cada valor.
-- Ordenación (ranking) de candidatos.
-- Definición de etiquetas en tiempo de inferencia: un nuevo conjunto de etiquetas es un JSON nuevo, no un reentrenamiento.
-- Confianza asociada a cada decisión, útil para umbrales y lógica de derivación.
-- Enrutamiento de intenciones y clasificación zero-shot sobre catálogos grandes (el ejemplo documentado cubre 243 intenciones).
-- Aplicación de guardarraíles y filtrado de contenido mediante preguntas booleanas.
-- Reordenación (reranking) de candidatos según criterios textuales.
-- Capacidad multilingüe limitada a ruso e inglés según los metadatos del repositorio.
-- No dispone de generación de texto, tool calling, capacidades de agente, visión ni audio.
+- Clasificación de intención y enrutado: elección de una opción entre K definidas en la petición.
+- Clasificación zero-shot: las etiquetas se declaran como texto, sin reentrenamiento.
+- Puntuación ordinal: colocación de un texto en una escala definida por el usuario (tipo `score`).
+- Decisión binaria sí/no (tipo `noul`) con criterios textuales para cada valor.
+- Reranking de candidatos.
+- Guardrails: filtrado de spam, contenido no deseado o violaciones de política mediante criterios declarativos.
+- Procesamiento de múltiples preguntas sobre un mismo texto en una sola pasada, con caché de estado para preguntas de seguimiento.
+- Salida con confianza por respuesta, sin tokens generados ni parseo.
+- Capacidades multilingües limitadas a ruso e inglés.
 
 ## Casos de uso
 
-- Enrutamiento de tickets de soporte: con el tipo `choice` se clasifica la consulta entrante en temas como login, pago o entrega, y la clave devuelta alimenta directamente la cola correspondiente. El catálogo de 243 intenciones documentado se resuelve en 0,44 s en proceso y 0,33 s en vLLM, lo que permite clasificar en tiempo real.
-- Priorización por urgencia: usando el tipo `score` con una escala ordinal (baja, media, alta), el modelo asigna un nivel de urgencia a cada mensaje, lo que permite ordenar la cola de atención sin reglas manuales.
-- Moderación y antispam: con el tipo `noul` se declaran criterios para `true` y `false` (por ejemplo, publicidad o solicitudes de transferencia de dinero frente a quejas legítimas), y el resultado se usa como guardarraíl previo a otras etapas del pipeline.
-- Segunda opinión sobre clasificadores existentes: el modelo actúa como reordenador o verificador sobre las salidas de un clasificador de producción, ya que devuelve una distribución de confianza y no solo un identificador de clase.
-- Guardarraíles en asistentes conversacionales: antes de enviar una respuesta generada por un LLM, una pregunta booleana declara si el contenido cumple las políticas, y la confianza asociada decide si se bloquea o se revisa.
-- Extracción de decisiones en formularios o encuestas: sobre respuestas abiertas en ruso, se aplican varias preguntas (tema, sentimiento ordinal, presencia de una condición) en una sola codificación del texto.
-- Clasificación de bajo coste en CPU: el build ONNX int8 procesa una petición de 384 tokens con 3 preguntas en unos 0,9 s sobre 6 hilos de CPU, aproximadamente 2,5 veces más rápido que fp32, lo que cubre despliegues sin GPU.
-- Servicio multiinquilino: el servidor vLLM agrupa peticiones de muchos usuarios y mantiene los textos ya leídos en la caché de prefijos, de modo que una pregunta de seguimiento sobre el mismo texto cuesta solo sus propios tokens (25-35 ms).
+- Enrutado de tickets de soporte: el modelo clasifica cada mensaje entrante en categorías como login, pago o entrega declaradas en un JSON, con latencias de 25-45 ms por petición en una RTX 5060 Ti, lo que permite procesar colas de atención al cliente en tiempo real.
+- Guardrails en producción: detección de spam, solicitudes fraudulentas o contenido fuera de política mediante preguntas binarias con criterios textuales, sin necesidad de mantener un clasificador entrenado por cada regla nueva.
+- Triaje de urgencia: uso del tipo `score` para situar cada incidencia en una escala (baja, media, alta) y priorizar la cola de atención según la confianza devuelta.
+- Clasificación de intenciones a gran escala: con empaquetado y caché de estado, un catálogo de 243 intenciones se resuelve en 0,44 s, adecuado para asistentes conversacionales con taxonomías amplias y cambiantes.
+- Reranking en pipelines de búsqueda o RAG: ordenar candidatos recuperados por relevancia respecto a una consulta en ruso, aprovechando que el modelo puntúa sin generación y con bajo coste por consulta.
+- Despliegue en CPU sin GPU: el build ONNX int8 resuelve una petición de 384 tokens con 3 preguntas en unos 0,9 s con 6 hilos de CPU y obtiene 0,891 en razvilka, útil para entornos sin acelerador o edge.
+- Servicio multiusuario: el servidor vLLM agrupa peticiones y mantiene la caché de prefijos, alcanzando unas 60 peticiones/s en una RTX 5060 Ti con 8 peticiones en vuelo, adecuado para APIs internas de clasificación.
 
 ## Benchmarks y rendimiento
 
-| Benchmark / configuracion | Resultado | Notas |
+| Benchmark | FRIDA-Decisions | TypeSafe Jev (API comercial) |
 |---|---|---|
-| razvilka, PyTorch bf16 | 0,893 | 735 ítems |
-| razvilka, vLLM | 0,890 | `FRIDA_DECISIONS_STATE_MAX=512`, igual que en la ejecución PyTorch; vLLM y PyTorch difieren en 2 ítems, ambos casi empatados en fp32 |
-| razvilka, ONNX int8 | 0,891 | Misma decisión que el modelo GPU en 726 de 735 ítems |
-| razvilka, TypeSafe Jev (API comercial) | 0,897 | Comparación emparejada McNemar con FRIDA-Decisions: p = 0,84 |
+| razvilka (735 items) | 0,893 | 0,897 (McNemar pareado p = 0,84) |
+| razvilka, build ONNX int8 | 0,891 (misma decisión que GPU en 726 de 735 items) | no disponible |
 
-| Latencia y throughput (una RTX 5060 Ti, bf16, vLLM 0.29) | Valor |
-|---|---|
-| Una peticion: ticket corto y texto de ~400 tokens, 1-3 preguntas | 25-45 ms |
-| Pregunta de seguimiento sobre un texto ya leido por el servidor | 25-35 ms |
-| Una peticion eligiendo entre 243 intenciones | ~0,33 s |
-| 8 peticiones en vuelo, peticiones de tamano razvilka (~260 tokens) | ~60 peticiones/s |
-| 8 peticiones en vuelo, tickets cortos (~190 tokens) | ~80 peticiones/s |
-| Primera peticion tras el arranque | ~0,3 s |
+El autor indica que 0,893 es la puntuación más alta entre los modelos abiertos que evaluó en razvilka. No se han publicado en la información disponible resultados de MMLU, HumanEval, GSM8K ni otros benchmarks generales, lo cual es esperable dado que el modelo no es generativo.
 
-| Latencia en proceso (PyTorch, RTX 5060 Ti) | Valor |
-|---|---|
-| Peticion de ~400 tokens, 1-3 preguntas | 28-34 ms |
-| Catalogo de 243 intenciones, opciones empaquetadas | 0,44 s |
-| Catalogo de 243 intenciones, una secuencia por opcion | 4,65 s |
-| Memoria pico de PyTorch durante toda la ejecucion de razvilka | 1,8 GiB mas el contexto CUDA |
-| ONNX int8, CPU, 6 hilos, 384 tokens con 3 preguntas | ~0,9 s |
-
-No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de conocimiento general en la informacion disponible; el modelo es un encoder de decision y no un modelo generativo.
+Latencias medidas en una RTX 5060 Ti con bf16 y vLLM 0.29: 25-45 ms para una petición con texto de unos 400 tokens y 1-3 preguntas; 25-35 ms para una pregunta de seguimiento sobre un texto ya leído; aproximadamente 0,33 s para elegir entre 243 intenciones. En proceso, 28-34 ms por petición en las mismas condiciones. Pico de memoria asignada por PyTorch de 1,8 GiB durante toda la ejecución de razvilka, más el contexto CUDA.
 
 ## Requisitos de hardware
 
-- VRAM estimada: alrededor de 1,8 GiB de asignacion pico de PyTorch durante la ejecucion completa de razvilka, mas el contexto CUDA. Cabe holgadamente en cualquier GPU de consumo actual.
-- GPU de referencia en las mediciones: RTX 5060 Ti, con `--gpu-memory-utilization 0.45` en vLLM porque la tarjeta tambien gestiona un monitor.
-- Cabe en GPU de consumo: si, en tarjetas de gama media y baja con varios gigabytes libres; no requiere A100 ni H100 para inferencia.
-- CPU: el build ONNX int8 con pesos int8 y activaciones int8 por token funciona sin PyTorch; una peticion de 384 tokens con 3 preguntas tarda unos 0,9 s sobre 6 hilos.
-- Opciones de despliegue: PyTorch (`frida-decisions[torch]`), ONNX en CPU (`frida-decisions[onnx]`) y servidor vLLM con el plugin de IO processor (`frida-decisions[vllm]`, `--io-processor-plugin frida_decisions --no-enable-chunked-prefill --enforce-eager --max-model-len 2048`).
-- Throughput estimado: unas 60 peticiones/s con 8 peticiones en vuelo sobre peticiones de ~260 tokens y unas 80 peticiones/s con tickets de ~190 tokens en una unica RTX 5060 Ti.
-- Latencia estimada: 25-45 ms por peticion en vLLM y 28-34 ms en proceso para textos de ~400 tokens con 1-3 preguntas; alrededor de 0,3 s para la primera peticion tras el arranque del servidor.
+- VRAM estimada: aproximadamente 1,8 GiB de pico en PyTorch con bf16, más el contexto CUDA; cabe holgadamente en cualquier GPU de consumo moderna.
+- GPU recomendadas: RTX 5060 Ti (mediciones del autor), así como cualquier RTX 30/40/50 con suficiente VRAM; A100 y H100 no son necesarias para este tamaño.
+- Cabe en GPU de consumo: sí, con margen amplio; también existe build MLX para Apple Silicon y build ONNX int8 para CPU.
+- Opciones de despliegue: paquete `frida-decisions` con backend torch, ONNX (CPU sin PyTorch) o MLX; servidor vLLM con plugin de IO processor (`--io-processor-plugin frida_decisions`, `--enforce-eager`, `--max-model-len 2048`).
+- Latencia y throughput: 25-45 ms por petición en RTX 5060 Ti; unas 60 peticiones/s con 8 peticiones en vuelo en el servidor vLLM; 0,9 s por petición de 384 tokens con 3 preguntas en CPU de 6 hilos (int8, aproximadamente 2,5 veces más rápido que fp32).
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parametros | Contexto | razvilka | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| FRIDA-Decisions | Encoder T5, decision estructurada | 823M | Configuracion de referencia con `--max-model-len 2048`; no se declara una longitud de contexto oficial | 0,893 (bf16) / 0,891 (int8) / 0,890 (vLLM) | MIT | Pesos abiertos en Hugging Face (safetensors, ONNX) |
-| TypeSafe Jev | API comercial de decision | No disponible | No disponible | 0,897 | No disponible (propietaria) | Solo API; diferencia con FRIDA-Decisions no significativa (McNemar p = 0,84) |
-| ai-forever/FRIDA | Encoder T5 base | 823M | No disponible | No disponible | No disponible en la informacion proporcionada | Pesos abiertos en Hugging Face |
-| Otros modelos abiertos evaluados en razvilka | No disponible | No disponible | No disponible | Inferiores a FRIDA-Decisions segun el autor | No disponible | No disponible |
+| Modelo | Parámetros | Contexto | razvilka | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| FRIDA-Decisions | 823 M (encoder T5) | hasta 2048 en vLLM | 0,893 | MIT | Hugging Face, GitHub, ONNX, MLX |
+| TypeSafe Jev | no disponible | no disponible | 0,897 | comercial (API) | API de pago |
+| Otros modelos abiertos evaluados por el autor | no disponible | no disponible | inferiores a 0,893 según el autor | no disponible | no disponible |
 
-La model card afirma que FRIDA-Decisions obtuvo la puntuacion mas alta entre los modelos abiertos probados en razvilka, pero no identifica cuales eran ni sus resultados, por lo que no es posible completar la comparativa con cifras.
+La información proporcionada no incluye los nombres ni las especificaciones de los modelos abiertos comparados en razvilka, por lo que la comparativa con alternativas concretas de la misma categoría queda como no disponible más allá de la API comercial citada.
 
 ## Limitaciones y advertencias
 
-- Modelo encoder-only: no genera texto, no razona de forma multi-paso y no admite tool calling ni uso como agente.
-- Cobertura de idiomas limitada a ruso e ingles. El modelo esta descrito explicitamente como orientado a decisiones sobre texto en ruso; su rendimiento en castellano no esta documentado ni validado.
-- Las decisiones se restringen al conjunto de opciones declarado en la peticion: si las etiquetas estan mal definidas o son ambiguas, el resultado hereda esa ambiguedad. No hay mecanismo de abstenerse salvo que se declare una opcion para ello.
-- Devuelve una distribucion de confianza por pregunta, pero la informacion disponible no documenta una calibracion de esas probabilidades ni umbrales recomendados.
-- Riesgo de alucinacion acotado por diseno (la respuesta es siempre una de las opciones), pero persiste el riesgo de elegir una opcion incorrecta con alta confianza en dominios fuera de la distribucion de entrenamiento.
-- No se han publicado datos sobre sesgos demograficos o linguisticos, composicion del dataset de entrenamiento ni evaluaciones de robustez; deben considerarse no disponibles.
-- El numero de descargas del repositorio es 0 y la validacion externa es escasa: la unica evaluacion publicada por el autor es razvilka, lo que limita la evidencia en produccion.
-- Licencia MIT, sin restricciones documentadas para uso comercial. Al derivar de ai-forever/FRIDA, conviene verificar la licencia y las condiciones del modelo base antes de un despliegue comercial.
-- El despliegue con vLLM requiere flags especificos (`--no-enable-chunked-prefill`, `--enforce-eager`, `--io-processor-plugin frida_decisions`) y un `--hf-overrides` para declarar la arquitectura `FridaDecisionsModel`; sin ellos el servidor no funciona como se documenta.
-- En las mediciones, la ejecucion en vLLM y la de PyTorch difieren en 2 items de razvilka, lo que indica una variabilidad minima pero real entre backends.
+- Cobertura lingüística limitada a ruso e inglés; el rendimiento en otros idiomas no está documentado y probablemente sea deficiente.
+- Modelo no generativo: no sirve para tareas de generación de texto, resumen o diálogo abierto; su ámbito es la decisión estructurada.
+- El autor no documenta sesgos conocidos, composición del dataset de entrenamiento ni procesos de alineación; no es posible evaluar sesgos de forma rigurosa con la información disponible.
+- Riesgo de alucinación acotado por diseño (siempre devuelve una opción declarada), pero la confianza puede ser alta en decisiones erróneas cuando el texto queda fuera de la distribución de entrenamiento; conviene calibrar umbrales en producción.
+- La calidad depende de la redacción de las instrucciones y criterios en la petición: definiciones ambiguas de las opciones degradan el resultado.
+- Longitud de contexto efectiva limitada (2048 tokens en el servidor vLLM); textos muy largos requieren truncado o segmentación.
+- Licencia MIT: permite uso comercial sin restricciones destacables, pero el usuario debe verificar las condiciones del modelo base ai-forever/FRIDA.
+- El servidor vLLM requiere Linux y GPU, y la configuración concreta (`--enforce-eager`, `--no-enable-chunked-prefill`, overrides de arquitectura) es específica de esta versión; cambios de versión de vLLM pueden romper la integración.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/ai-forever/FRIDA-Decisions
-- Codigo en GitHub: https://github.com/ai-forever/FRIDA-Decisions
-- Demo (Space): https://huggingface.co/spaces/ai-forever/FRIDA-Decisions
-- Dataset de evaluacion razvilka: https://huggingface.co/datasets/artemsnegirev/razvilka
-- Notebook de inicio rapido (Colab): https://colab.research.google.com/github/ai-forever/FRIDA-Decisions/blob/main/notebooks/quickstart.ipynb
-- Notebook de evaluacion en razvilka (Colab): https://colab.research.google.com/github/ai-forever/FRIDA-Decisions/blob/main/benchmarks/razvilka/run_razvilka.ipynb
-- Cliente de ejemplo para vLLM: https://github.com/ai-forever/FRIDA-Decisions/blob/v0.2.0/examples/vllm_client.py
 - Modelo base: https://huggingface.co/ai-forever/FRIDA
-- Instalacion con PyTorch: `pip install "frida-decisions[torch] @ git+https://github.com/ai-forever/FRIDA-Decisions@v0.2.0"`
-- Instalacion con ONNX: `pip install "frida-decisions[onnx] @ git+https://github.com/ai-forever/FRIDA-Decisions@v0.2.0"`
-- Instalacion con vLLM: `pip install "frida-decisions[vllm] @ git+https://github.com/ai-forever/FRIDA-Decisions@v0.2.0"`
-
-Nota: la busqueda web realizada no devolvio enlaces relevantes sobre este modelo; los resultados fueron paginas genericas de plataformas de IA sin relacion con FRIDA-Decisions.
+- Repositorio en GitHub: https://github.com/ai-forever/FRIDA-Decisions
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/ai-forever/FRIDA-Decisions
+- Dataset de benchmark razvilka: https://huggingface.co/datasets/artemsnegirev/razvilka
+- Artículo en Habr: https://habr.com/ru/companies/sberbank/articles/1092056/
+- Notebook de inicio rápido: https://colab.research.google.com/github/ai-forever/FRIDA-Decisions/blob/main/notebooks/quickstart.ipynb
+- Notebook de evaluación en razvilka: https://colab.research.google.com/github/ai-forever/FRIDA-Decisions/blob/main/benchmarks/razvilka/run_razvilka.ipynb
+- Ejemplo de cliente vLLM: https://github.com/ai-forever/FRIDA-Decisions/blob/v0.4.0/examples/vllm_client.py
+- Licencia: https://github.com/ai-forever/FRIDA-Decisions/blob/main/LICENSE

@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Formulaire n°3517-AGR-SD | impots.gouv.fr",
-      "url": "https://www.impots.gouv.fr/formulaire/3517-agr-sd/tva-regime-simplifie-de-lagriculture",
-      "snippet": "La déclaration n° 3517-AGR-SD doit être envoyée au service des impôts des entreprises (SIE) dont dépend l'entreprise."
-    },
-    {
-      "title": "Formulaire n°3517-S-SD | impots.gouv.fr",
-      "url": "https://www.impots.gouv.fr/formulaire/3517-s-sd/tva-et-taxes-assimilees-et-regime-simplifie",
-      "snippet": "Le formulaire n° 3517-S-SD est destiné à récapituler les taxes sur le chiffre d'affaires (TVA et taxes assimilées) dues au titre de …"
-    },
-    {
-      "title": "Déclaration annuelle de régularisation de TVA - Régime simplifié (n ...",
-      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/R14665",
-      "snippet": "Formulaire destiné à récapituler les taxes sur le chiffre d'affaires (TVA et taxes assimilées) dues au titre de l'exercice par les …"
-    },
-    {
-      "title": "Déclaration annuelle de régularisation de TVA - Régime simplifié ...",
-      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/R14664",
-      "snippet": "Le formulaire 3517-AGR-SD sert à déclarer les opérations imposables à la TVA d'une année entière. Il doit être envoyé au plus tard …"
-    },
-    {
-      "title": "Formulaire CA12 : télécharger une déclaration de TVA 2026",
-      "url": "https://droit-finances.commentcamarche.com/entreprise/guide-entreprise/4705-formulaire-ca12-telecharger-une-declaration-de-tva/",
-      "snippet": "Jan 12, 2026 · Le formulaire CA12 à remplir pour faire une déclaration de TVA simplifiée peut être téléchargé via le lien ci-dessous. Il …"
-    }
-  ]
+  "sources": []
 }

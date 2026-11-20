@@ -67,31 +67,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "raport.stat.gov.pl",
-      "url": "https://raport.stat.gov.pl/",
-      "snippet": "<?xml version=\"1.0\" encoding=\"iso-8859-1\"?>"
-    },
-    {
-      "title": "Zmiana hasła użytkownika",
-      "url": "https://raport.stat.gov.pl/gus.static/help/html/praca/8.0%20profil/8.2%20profil_haslo.html",
-      "snippet": "Zmiana hasła użytkownika Okno 8.2 Zmiana hasła użytkownika. Na ekranie znajdują się pola służące do wprowadzenia nowego …"
-    },
-    {
-      "title": "Sprawozdawca - raport.stat.gov.pl",
-      "url": "https://raport.stat.gov.pl/gus.static/help/html/praca/5.0%20sprawozdawca/5.0%20spr.html",
-      "snippet": "Sprawozdawca Ekran powitalny modułu. Ekran 5.0 Sprawozdawca prezentuje listę Jednostek Sprawozdawczych obsługiwanych …"
-    },
-    {
-      "title": "1.0 Logowanie do systemu",
-      "url": "https://raport.stat.gov.pl/forms.dnuk_2_7/help/help.html",
-      "snippet": "Objaśnienia dotyczące formularza DNU-K, w tym obowiązki sprawozdawcze, terminy, sposoby przekazywania danych i podstawy …"
-    },
-    {
-      "title": "1.0 Logowanie do systemu",
-      "url": "https://raport.stat.gov.pl/forms.raportzd_1_0/login.do;JSESSIONID_FORMS=exOTXslMsICINLwZ8l-CElzlnkudn06NVwtrjuFAUN4sYk6iDl2S!1997189188",
-      "snippet": "Logowanie Wpisz swój identyfikator i hasło dostępu do Portalu Sprawozdawczego. Pamiętaj, że dla systemu ma znaczenie, czy …"
-    }
-  ]
+  "sources": []
 }

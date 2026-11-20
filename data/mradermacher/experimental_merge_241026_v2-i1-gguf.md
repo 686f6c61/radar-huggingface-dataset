@@ -2,50 +2,50 @@
 
 ## Resumen
 
-`mradermacher/experimental_merge_241026_v2-i1-GGUF` es una publicacion de cuantizaciones GGUF generadas por el usuario mradermacher a partir del modelo base `alansmithee-cpu/experimental_merge_241026_v2`. No se trata de un modelo entrenado desde cero, sino de una conversion y cuantizacion (con pesos ponderados y matriz de importancia, "imatrix") de un merge experimental de autor desconocido. El repositorio tiene un tamano de 0,1 GB y, segun los metadatos de safetensors, el modelo cuenta con 24.996.702 parametros totales, lo que lo situa en la categoria de modelos pequenos (aproximadamente 25 millones de parametros).
+`mradermacher/experimental_merge_241026_v2-i1-GGUF` es una coleccion de cuantizaciones GGUF generadas por mradermacher a partir del modelo base `alansmithee-cpu/experimental_merge_241026_v2`, un merge experimental construido con mergekit y orientado a roleplay, escritura creativa, narrativa de formato largo y contenido ERP. No se trata de un modelo entrenado desde cero, sino de una fusion de pesos cuyo origen y componentes exactos no se detallan en la informacion disponible.
 
-La relevancia de esta ficha es limitada desde el punto de vista de evaluacion tecnica: el autor no proporciona model card descriptiva, pipeline, licencia, idiomas ni resultados de benchmarks. La informacion disponible se reduce a los metadatos de Hugging Face y a los comentarios internos del README que listan los tipos de cuantizacion generados. Cualquier uso en produccion requeriria verificar primero la procedencia y licencia del modelo base, que tampoco estan documentadas en la informacion proporcionada.
+El modelo base cuenta con 169.670.995.968 parametros segun los safetensors publicados, lo que lo situa en la categoria de aproximadamente 170B parametros. La arquitectura subyacente no se especifica en la model card, aunque las etiquetas mencionan Mistral, lo que sugiere una base de la familia Mistral, sin que sea posible confirmar la arquitectura exacta ni la longitud de contexto.
 
-Por tanto, esta ficha documenta lo que se sabe con certeza y marca explicitamente como "no disponible" todo aquello que no puede confirmarse, evitando inferencias no respaldadas por los datos.
+La relevancia de esta publicacion es practica: mradermacher ofrece cuantizaciones con imatrix (etiquetadas i1) en un rango amplio de tamanos, desde IQ1_S (~35,9 GB) hasta Q5_K_S y superiores, lo que permite ejecutar un modelo de gran tamano en hardware con VRAM limitada mediante llama.cpp y herramientas compatibles. La licencia es MRL-0.1 de Mistral, con implicaciones para uso comercial que conviene revisar.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (merge experimental; no se documenta la arquitectura base) |
-| Parametros totales | 24.996.702 |
-| Parametros activos | no disponible (no consta que sea MoE) |
+| Arquitectura | no disponible (etiquetas mencionan Mistral; sin confirmar) |
+| Parametros totales | 169.670.995.968 (~170B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones); el modelo base se distribuye presumiblemente en safetensors, aunque no se confirma en la informacion disponible |
+| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-Q2_K_S, i1-IQ2_M, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S (y superiores segun el listado truncado) |
+| Idiomas soportados | en (segun la model card) |
+| Licencia | mrl (Mistral Research License 0.1) |
+| Formato de pesos | GGUF (cuantizaciones); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base `alansmithee-cpu/experimental_merge_241026_v2`. El nombre sugiere un merge experimental de pesos (posiblemente mediante tecnicas de model merging como SLERP, TIES o DARE), pero no se documenta el procedimiento, los modelos de origen ni los hiperparametros empleados. Tampoco se indica el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF, DPO o ajuste supervisado.
+El modelo base es un merge de pesos generado con mergekit, segun las etiquetas de la model card. No se especifican los modelos de origen, la estrategia de fusion (SLERP, TIES, DARE, model stock, etc.), los hiperparametros ni el proceso de mezcla. Tampoco se documenta si hubo entrenamiento posterior, RLHF, DPO o ajuste fino adicional tras la fusion. La model card del repositorio de cuantizaciones no incluye informacion sobre datos de entrenamiento, numero de tokens, composicion del dataset ni innovaciones tecnicas como decodificacion especulativa o atencion lineal.
 
-Lo unico verificable es el proceso de cuantizacion aplicado por mradermacher: segun los comentarios del README, se generaron cuantizaciones con pesos ponderados e imatrix (`weighted/imatrix quants`), lo que implica que se calculo una matriz de importancia para mejorar la calidad de las cuantizaciones de baja precision (IQ1, IQ2, IQ3, Q2_K, etc.). El campo `quantize_version: 2` y `output_tensor_quantised: 1` indica el uso de la version 2 del pipeline de cuantizacion de llama.cpp. No se documentan innovaciones tecnicas adicionales.
+Las cuantizaciones publicadas por mradermacher son de tipo i1, es decir, generadas con un fichero imatrix (importance matrix) incluido en el repositorio (`experimental_merge_241026_v2.imatrix.gguf`, 0,2 GB). Este enfoque permite obtener cuantizaciones de baja tasa de bits con mejor calidad relativa que las cuantizaciones estaticas equivalentes. El autor indica que las cuantizaciones estaticas estan disponibles en un repositorio separado (`mradermacher/experimental_merge_241026_v2-GGUF`). Las etiquetas de conversion interna (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`) confirman que se partio del modelo en formato Hugging Face y se convirtio a GGUF.
 
 ## Capacidades
 
-- Generacion de texto: capacidad esperable en un modelo de ~25M de parametros, pero no verificada ni documentada por el autor.
-- Razonamiento, codigo y matematicas: no disponible; no hay evaluaciones publicadas.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
+- Generacion de texto conversacional y narrativo, con enfasis declarado en roleplay (RP), escritura creativa, narrativa de formato largo y contenido ERP.
+- Conversacion multi-turno orientada a personajes y mantenimiento de estilo, segun las etiquetas del autor.
+- Generacion de texto creativo en ingles, unico idioma declarado en la model card.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso explicito.
+- No se documenta capacidad de vision, audio ni modo de pensamiento (thinking).
+- No se documentan capacidades de codigo o matematicas; el enfasis declarado es narrativo y conversacional.
 
 ## Casos de uso
 
-Dado que no se documentan capacidades ni evaluaciones, los casos de uso solo pueden plantearse como escenarios hipoteticos sujetos a validacion previa:
-
-- Experimentacion con cuantizaciones GGUF: el repositorio sirve para probar el pipeline de cuantizacion de llama.cpp sobre un merge experimental, comparando la degradacion de calidad entre Q2_K, Q4_K_M y Q6_K.
-- Investigacion sobre model merging: util para reproducir o analizar el efecto de merges de pesos en modelos pequenos, aunque requeriria acceso al modelo base y a su documentacion.
-- Pruebas de despliegue en CPU: con ~25M de parametros y cuantizaciones de 1 a 6 bits, el modelo cabe holgadamente en memoria RAM de cualquier equipo y puede ejecutarse con llama.cpp u Ollama para validar infraestructura.
-- Benchmarking de herramientas de cuantizacion: comparar la fidelidad de las cuantizaciones IQ frente a las K-quants en un modelo de referencia.
-- Educacion y docencia: ejemplo de como se publican y organizan cuantizaciones GGUF en Hugging Face, util en talleres sobre el ecosistema llama.cpp.
-- Evaluacion de riesgo de procedencia: caso de estudio sobre la importancia de documentar licencia y origen en modelos derivados antes de usarlos en produccion.
+- Roleplay conversacional con personajes: el modelo esta etiquetado explicitamente para RP y puede mantener conversaciones multi-turno con consistencia de personaje; su tamano de ~170B permite estilos narrativos mas ricos que modelos pequenos, aunque el contexto maximo no esta documentado y debe verificarse antes de disenar prompts largos.
+- Escritura creativa de formato largo: adecuado para generar relatos, capitulos y ficcion extensa en ingles, gracias al enfasis declarado en longform writing y a la capacidad de continuidad narrativa de un modelo de gran tamano.
+- Generacion de ficcion interactiva y aventuras de texto: puede integrarse en motores de ficcion interactiva que envien el estado de la historia y las acciones del usuario como contexto conversacional.
+- Prototipado de asistentes de escritura: util para experimentar con estilos, voces narrativas y reescritura creativa en entornos de investigacion, dado su caracter experimental.
+- Evaluacion de merges y cuantizaciones: el repositorio sirve para comparar la calidad de distintas cuantizaciones i1 (de IQ1_S a Q4_K_M y superiores) sobre un mismo modelo base, midiendo degradacion por tasa de bits.
+- Despliegue local en hardware con VRAM limitada: las cuantizaciones de menor tamano (IQ1_S ~35,9 GB, IQ2_XXS ~44,9 GB, IQ3_XXS ~65,1 GB) permiten ejecutar un modelo de ~170B en configuraciones que no admitirian los pesos completos en safetensors.
+- Experimentacion en investigacion sobre fusion de modelos: al ser un merge experimental, permite estudiar el comportamiento de pesos fusionados en tareas narrativas frente a los modelos de origen.
 
 ## Benchmarks y rendimiento
 
@@ -53,28 +53,40 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 24.996.702 parametros, las cuantizaciones de 1 a 2 bits ocuparian del orden de 5-10 MB; las de 4 bits en torno a 15-20 MB; las de 6 bits en torno a 25-30 MB (estimacion teorica a partir del numero de parametros, no confirmada por el autor).
-- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4090, etc.) es sobradamente suficiente; incluso GPU integradas o CPU.
-- Cabe en consumer GPU: si, en todas las GPU consumer actuales e incluso en dispositivos de baja memoria.
-- Opciones de despliegue: llama.cpp, Ollama, y en general cualquier runtime compatible con GGUF. vLLM y TGI no estan confirmados para este formato concreto.
-- Latencia y throughput estimados: no disponibles; no se han publicado mediciones.
+- VRAM estimada para inferencia segun cuantizacion (tamanos de fichero del repositorio, que aproximan el uso de memoria de pesos): IQ1_S ~35,9 GB; IQ1_M ~39,3 GB; IQ2_XXS ~44,9 GB; IQ2_XS ~50,0 GB; IQ2_S ~53,1 GB; Q2_K_S e IQ2_M ~57,6 GB; Q2_K ~62,6 GB; IQ3_XXS ~65,1 GB; IQ3_XS ~69,4 GB; Q3_K_S ~73,2 GB; IQ3_S ~73,4 GB; IQ3_M ~76,5 GB; Q3_K_M ~81,8 GB; Q3_K_L ~89,4 GB; IQ4_XS ~90,6 GB; Q4_0 ~96,0 GB; Q4_K_S ~96,3 GB; Q4_K_M ~101,4 GB; Q4_1 ~106,2 GB. A estos valores hay que anadir la memoria para el contexto KV y el overhead del runtime.
+- GPU recomendadas: para cuantizaciones de 4 bits (Q4_K_M ~101,4 GB) se requiere al menos una GPU de 80 GB combinada con CPU offload, o configuraciones multi-GPU (por ejemplo, 2x A100 80 GB o 2x H100 80 GB). Para cuantizaciones IQ1/IQ2 de ~36-50 GB, una unica A100 80 GB o H100 80 GB puede alojar los pesos, con margen limitado para contexto.
+- GPU de consumo: no cabe en GPU de consumo individuales (RTX 4090 con 24 GB, RTX 3090 con 24 GB) ni siquiera en la cuantizacion mas agresiva. Requiere offload a RAM del sistema y CPU, con la penalizacion de latencia correspondiente.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama y otros runtimes compatibles con GGUF; el modelo base en safetensors puede servirse con vLLM o TGI si la arquitectura es compatible, aunque no se documenta.
+- Latencia y throughput: no disponibles. Con offload parcial a CPU en un modelo de ~170B, se espera una latencia alta y un throughput bajo, pero no hay mediciones publicadas en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No disponible. No se conocen modelos comparables documentados en la informacion proporcionada, y el caracter experimental del merge impide establecer una comparacion rigurosa con alternativas de la misma categoria.
+No se dispone de datos de rendimiento ni de arquitectura del modelo base que permitan una comparacion rigurosa con alternativas. Se indica "no disponible" para los campos no documentados.
+
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| experimental_merge_241026_v2 (i1-GGUF) | ~170B | no disponible | MRL-0.1 | GGUF | Merge experimental orientado a RP y escritura creativa |
+| Modelos de ~70B orientados a RP (generico) | ~70B | no disponible | variable | safetensors/GGUF | Categoria comparable en uso, sin datos de comparacion disponibles |
+| Modelos Mistral de referencia (generico) | variable | no disponible | MRL/Apache segun version | safetensors/GGUF | Posible base del merge, sin confirmar |
 
 ## Limitaciones y advertencias
 
-- Licencia no disponible: no se puede confirmar si el uso comercial esta permitido; usarlo en produccion sin verificar la licencia del modelo base es un riesgo legal.
-- Procedencia opaca: el modelo base es un merge experimental sin model card descriptiva, sin autor identificado de forma verificable y sin documentacion de datos de entrenamiento.
-- Sin evaluaciones: no hay benchmarks, por lo que se desconoce la calidad real del modelo y su posible degradacion frente a los modelos de origen del merge.
-- Riesgo de alucinacion: no cuantificado; en modelos de este tamano es habitualmente elevado, pero no hay datos que lo confirmen.
-- Idiomas: no documentados; no se puede garantizar soporte de castellano ni de otros idiomas.
-- Contexto: no documentado; se desconoce la ventana maxima y su comportamiento en secuencias largas.
-- Repositorio sin traccion: 0 descargas y 0 likes en el momento de la consulta, lo que reduce la probabilidad de que haya sido validado por la comunidad.
-- Fecha de creacion futura en los metadatos (2026-11-16): conviene verificar la integridad del repositorio antes de descargarlo.
+- Modelo experimental: la model card lo etiqueta como "Experimental"; no hay garantias de calidad, estabilidad ni comportamiento consistente en produccion.
+- Sesgos conocidos: no documentados; al ser un merge sin informacion sobre datos de entrenamiento, no es posible evaluar sesgos de forma fiable.
+- Riesgo de alucinacion: no cuantificado; en tareas narrativas y de roleplay el riesgo de hechos inventados es inherente y no se ha medido.
+- Limitaciones de idioma: solo se declara ingles; el rendimiento en castellano no esta documentado y probablemente sea inferior.
+- Limitaciones de contexto: la longitud de contexto no esta disponible; conviene verificarla en el configuracion del modelo base antes de disenar aplicaciones con prompts largos.
+- Licencia: MRL-0.1 (Mistral Research License); restringe el uso comercial salvo licencia adicional de Mistral. Revisar el texto completo antes de cualquier despliegue comercial.
+- Cuantizaciones de muy baja tasa de bits: el propio autor advierte que IQ1_S es "for the desperate", IQ1_M "mostly desperate" y Q2_K_S "very low quality"; la degradacion de calidad en estos rangos es significativa.
+- Requisitos de hardware elevados: incluso la cuantizacion mas pequena (~35,9 GB) excede la VRAM de GPU de consumo, lo que obliga a offload y penaliza la latencia.
+- Sin soporte documentado de tool calling ni agentes: no es adecuado para pipelines de automatizacion que dependan de llamadas a funciones.
+- Fecha de creacion inusual (2026-11-16 segun los metadatos): conviene verificar la vigencia y procedencia de los metadatos del repositorio.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/experimental_merge_241026_v2-i1-GGUF
+- Repositorio Hugging Face (cuantizaciones i1): https://huggingface.co/mradermacher/experimental_merge_241026_v2-i1-GGUF
 - Modelo base: https://huggingface.co/alansmithee-cpu/experimental_merge_241026_v2
+- Cuantizaciones estaticas: https://huggingface.co/mradermacher/experimental_merge_241026_v2-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#experimental_merge_241026_v2-i1-GGUF
+- Licencia MRL-0.1: https://mistral.ai/licenses/MRL-0.1.md
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

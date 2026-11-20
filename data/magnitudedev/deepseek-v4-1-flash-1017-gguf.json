@@ -47,16 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017 · Hugging Face",
-      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-      "snippet": "API15 evaluation of DeepSeek-V4.1-Flash-1017 on 820 videos and 4,920 requests, completed on November 5, 2026. 4,892 successful responses are scored; 28 terminal content-policy exclusions follow the benchmark protocol. 47 successful unparseable responses score zero, including 16 output-budget truncations. CS: TG 14.9, SG 12.5, QA 56.7, Avg 28.0."
-    },
-    {
-      "title": "DeepSeek-V4.1-Flash-1017 · Models - modelscope.ai",
-      "url": "https://modelscope.ai/models/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-      "snippet": "Technical Report 👁️ Introduction DeepSeek-V4.1-Flash-1017 is a minor update to DeepSeek-V4.1-Flash, delivering substantial improvements across reasoning, coding, agentic tasks, and visual benchmarks. Alongside these gains, the model reduces task execution time and output length, enabling users to complete tasks faster and at lower cost and advancing the performance–cost Pareto frontier ..."
-    }
-  ]
+  "sources": []
 }

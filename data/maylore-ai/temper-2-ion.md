@@ -2,49 +2,56 @@
 
 ## Resumen
 
-Temper-2-Ion es un modelo de lenguaje de 0,5 mil millones de parámetros especializado en generación de código Rust, desarrollado por maylore-ai como sucesor de Temper-1-0.5B. Se trata de un fine-tune de Qwen2.5-Coder-0.5B-Instruct, entrenado con ejemplos de Rust verificados por compilador y tests, seguido de una fase de aprendizaje por refuerzo donde solo las soluciones que superan todos los tests reciben recompensa. Su objetivo declarado es ejecutarse en hardware modesto.
+Temper-2-Ion es un modelo de generacion de codigo especializado en Rust, desarrollado por maylore-ai como sucesor de Temper-1-0.5B. Se construye sobre Qwen2.5-Coder-0.5B-Instruct mediante un proceso de fine-tuning supervisado con ejemplos de Rust validados por compilador y tests, seguido de una fase de aprendizaje por refuerzo en la que solo las soluciones que pasaban todos los tests obtenian recompensa. El objetivo declarado es ofrecer asistencia de codigo Rust en hardware modesto, con soporte de peticiones en ingles y ruso.
 
-Su relevancia radica en la escasez de modelos pequeños optimizados para Rust, un lenguaje con poca representación en los corpora habituales de código. Según los datos del autor, resuelve un 32 % más de tareas en HumanEval-RS al primer intento que su predecesor, y supera con claridad a Qwen2.5-Coder-0.5B-Instruct en los benchmarks de Rust publicados en su model card. Entiende peticiones en inglés y ruso, incluidas peticiones cortas e informales típicas de chat.
+Con 494 millones de parametros, el modelo se posiciona en la franja de modelos ultraligeros: cabe en GPUs de consumo y permite inferencia local con latencia baja. Su interes actual radica en que, pese a su tamano, declara resultados en HumanEval-RS (48,1 pass@1) superiores a modelos mas grandes como Qwen2.5-Coder-1.5B-Instruct (39,0) y cercanos a Qwen2.5-Coder-3B-Instruct (56,5), aunque por debajo de Temper-1-1.5B (54,1) en esa misma prueba.
+
+La propuesta es deliberadamente acotada: no es un modelo generalista ni un sustituto de modelos de varios miles de millones de parametros, sino una herramienta de autocompletado conversacional y generacion de funciones Rust para entornos con recursos limitados. Se distribuye bajo licencia Apache 2.0 y con una version GGUF para llama.cpp, LM Studio y Ollama.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia Qwen2) |
+| Arquitectura | Transformer decoder-only (Qwen2), fine-tune de Qwen2.5-Coder-0.5B-Instruct |
 | Parametros totales | 494.032.768 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (disponible versión GGUF en repositorio aparte) |
-| Idiomas soportados | inglés, ruso |
+| Tipos de cuantizacion | no disponible en la model card; existe version GGUF en maylore-ai/Temper-2-Ion-GGUF |
+| Idiomas soportados | en, ru (la model card tambien lista ar en los tags de Hugging Face) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors; GGUF en maylore-ai/Temper-2-Ion-GGUF |
+| Formato de pesos | safetensors (transformers); GGUF en repo separado |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura base es la de Qwen2.5-Coder-0.5B-Instruct, un transformer decoder-only de la familia Qwen2. El entrenamiento constó de dos fases. Primero, un fine-tuning supervisado sobre ejemplos de código Rust que habían pasado el compilador y los tests, con tareas redactadas con cuidado y también peticiones cortas de pocas palabras, además de diálogos sobre el propio modelo. El modelo ajustado se fusionó por pesos con el Instruct original para conservar su comprensión de enunciados generales.
+El modelo parte de Qwen2.5-Coder-0.5B-Instruct, un transformer decoder-only de la familia Qwen2. El entrenamiento se desarrollo en dos fases. Primero, un fine-tuning supervisado sobre ejemplos de codigo Rust que pasaban el compilador y los tests; el conjunto incluia tanto tareas redactadas con cuidado como peticiones cortas de pocas palabras, imitando el estilo habitual de un chat. Tambien se incorporaron dialogos sobre el propio modelo para que conozca su nombre y responda preguntas sobre si mismo. Tras el fine-tuning, los pesos se fusionaron con los del Instruct original para preservar la comprension del enunciado de la tarea.
 
-La segunda fase fue aprendizaje por refuerzo sobre tareas con tests, donde la recompensa se otorga únicamente si la solución pasa todos los tests. Esta etapa requirió menos de cuatro horas en una única RTX 3060. No se ha publicado información sobre la longitud de contexto ni el número total de tokens de entrenamiento.
+La segunda fase consistio en aprendizaje por refuerzo sobre tareas con tests: unicamente una solucion que pasaba todos los tests obtenia recompensa. Segun el autor, esta etapa requirio menos de cuatro horas en una unica RTX 3060. No se detalla el numero de tokens de entrenamiento, la composicion exacta del dataset ni el algoritmo de RL empleado (PPO, GRPO u otro), por lo que esos datos figuran como no disponibles.
 
 ## Capacidades
 
-- Generación de código Rust a partir de instrucciones en lenguaje natural, incluyendo peticiones cortas e informales
-- Comprensión de peticiones en inglés y ruso
-- Conversación general heredada del modelo base Instruct, incluyendo respuestas sobre sí mismo
-- No soporta fill-in-the-middle: fue entrenado solo con peticiones de chat, por lo que no sirve como modelo de autocompletado en línea en un editor
-- No hay información publicada sobre tool calling, agentes ni capacidades multimodales
+- Generacion de codigo Rust: funciones, logica de negocio y resolucion de tareas tipo HumanEval-RS y MBPP-RS.
+- Conversacion multi-turno en ingles y ruso sobre peticiones de codigo.
+- Comprension de enunciados de tarea, reforzada por la fusion de pesos con el modelo Instruct base.
+- Conocimiento de si mismo: responde preguntas sobre su identidad y caracteristicas.
+- Generacion con plantilla de chat propia; sin system message se inyecta el system prompt de Temper.
+- No soporta fill-in-the-middle, por lo que no es adecuado como modelo de autocompletado inline en editor.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades de vision o audio: no disponibles.
 
 ## Casos de uso
 
-- **Asistente de Rust en hardware modesto**: con 0,5B de parámetros cabe en portátiles y equipos sin GPU dedicada, ideal para consultas rápidas de sintaxis y funciones Rust sin depender de la nube.
-- **Chatbot de ayuda para principiantes en Rust**: entrenado con peticiones cortas informales, responde bien a preguntas tipo "cómo hago X en Rust" en inglés o ruso.
-- **Generación de funciones utilitarias**: produce funciones Rust que compilan y pasan tests, útil para esbozos rápidos de código que el desarrollador revisa después.
-- **Integración en herramientas locales con llama.cpp, LM Studio u Ollama**: existe versión GGUF oficial para estos entornos.
-- **Prototipado de agentes de código ligeros**: su tamaño permite ejecutar múltiples instancias en paralelo para generación con verificación (generate-and-test) en pipelines de CI.
-- **Modelo de referencia para investigación en RL sobre código**: el entrenamiento con recompensa basada en tests y su bajo coste (menos de 4 horas en una RTX 3060) lo hacen reproducible para experimentos académicos.
+- Asistente de codigo Rust en local: el modelo genera funciones completas a partir de un enunciado en lenguaje natural, adecuado para desarrolladores que trabajan en maquinas sin GPU dedicada o con VRAM limitada.
+- Generacion de tests unitarios en Rust: dado un fragmento de codigo, puede proponer casos de prueba; conviene revisar su salida porque el propio autor advierte que explica mal su codigo.
+- Prototipado rapido de utilidades Rust: para scripts, parsers o funciones auxiliares donde la correccion se valida con el compilador y los tests del proyecto.
+- Ensenanza y aprendizaje de Rust: responde en ingles y ruso, lo que lo hace util para estudiantes rusoparlantes que quieran ejemplos comentados de codigo.
+- Integracion en pipelines de CI como generador de parches candidatos: al ser ligero, puede ejecutarse en paralelo para producir varias soluciones que luego se filtran con los tests del repositorio.
+- Despliegue en entornos embebidos o de borde: con 0,5B de parametros y version GGUF, puede ejecutarse en CPU o en GPUs de gama baja para asistencia de codigo offline.
+- Chatbot de soporte para dudas de Rust: gestiona conversaciones multi-turno en ingles y ruso, aunque su ventana de contexto no esta documentada.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor (pass@1 / pass@10 en %; Temper Bench v2 como greedy pass@1). HumanEval-RS (156 tareas) y MBPP-RS (354 tareas) provienen de MultiPL-E, revisión `28441b6`, con temperatura 0,2, top_p 0,95 y 50 respuestas por tarea.
+Resultados declarados por el autor. HumanEval-RS y MBPP-RS muestran pass@1 / pass@10 en porcentaje; Temper Bench v2 es greedy pass@1. La negrita marca el mejor resultado entre modelos de hasta 0,8B.
 
 | Modelo | HumanEval-RS | MBPP-RS | Temper Bench v2 |
 |---|---|---|---|
@@ -57,43 +64,47 @@ Resultados publicados por el autor (pass@1 / pass@10 en %; Temper Bench v2 como 
 | Temper-1-1.5B | 54,1 / 68,8 | 48,6 / 59,2 | 16,7 |
 | Qwen2.5-Coder-3B-Instruct (referencia) | 56,5 / 71,9 | 44,8 / 60,0 | 14,7 |
 
-Temper-2-Ion obtiene el mejor resultado entre modelos de hasta 0,8B en las tres métricas, y supera incluso a Qwen2.5-Coder-1.5B-Instruct en HumanEval-RS y MBPP-RS. Nota del autor: la tarea `mbpp_67_bell_number` no tiene solución correcta en Rust y cuenta como fallida para todos los modelos. Estos datos provienen de la model card y no han sido verificados de forma independiente.
+Metodologia: HumanEval-RS (156 tareas) y MBPP-RS (354 tareas) provienen de MultiPL-E en la revision `28441b6`; se uso temperatura 0,2, top_p 0,95 y 50 respuestas por tarea, con el resto de parametros de muestreo tomados del `generation_config.json` de cada modelo en vLLM. pass@k se calcula con el estimador insesgado del paper Codex. El primer bloque de codigo cerrado de la respuesta se compila con los tests. La tarea `mbpp_67_bell_number` no tiene respuesta correcta en Rust y cuenta como fallida para todos los modelos.
 
 ## Requisitos de hardware
 
-- Un modelo de 494M de parámetros en FP16 ocupa aproximadamente 1 GB de VRAM o RAM; en FP32, unos 2 GB. El repositorio pesa 1,0 GB.
-- Cabe sobradamente en cualquier GPU de consumo (incluso integradas) y funciona por CPU en equipos modestos, que es el objetivo declarado del proyecto. La fase de RL del entrenamiento se realizó en una única RTX 3060.
-- No se han publicado cifras de latencia ni throughput.
-- Opciones de despliegue: transformers (con `AutoModelForCausalLM`), llama.cpp, LM Studio y Ollama mediante la versión GGUF oficial. No hay información sobre soporte verificado en vLLM o TGI, aunque al ser arquitectura Qwen2 es probable que funcione.
+- VRAM estimada para inferencia: no disponible de forma oficial; con 494M de parametros, en fp16 ocupa aproximadamente 1 GB de pesos, y en cuantizacion de 4 bits alrededor de 300-400 MB, mas overhead de activaciones y cache KV.
+- GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM; el autor menciona una RTX 3060 para el entrenamiento por RL, no para inferencia.
+- Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna (GTX 1650, RTX 3050, RTX 4060, etc.) e incluso en CPU.
+- Opciones de despliegue: transformers, vLLM, text-generation-inference (segun tags), y llama.cpp / LM Studio / Ollama mediante la version GGUF.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | HumanEval-RS pass@1 | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| Temper-2-Ion | 0,5B | 48,1 % | Apache 2.0 | Hugging Face, safetensors y GGUF |
-| Qwen2.5-Coder-0.5B-Instruct | 0,5B | 23,8 % | Apache 2.0 | Hugging Face, amplio ecosistema |
-| ThoxEdge-RustCoder-0.5B | 0,5B | 28,7 % | no disponible | Hugging Face |
-| Qwen2.5-Coder-1.5B-Instruct | 1,5B | 39,0 % | Apache 2.0 | Hugging Face, amplio ecosistema |
+| Modelo | Parametros | Contexto | HumanEval-RS (pass@1) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Temper-2-Ion | 0,49B | no disponible | 48,1 | Apache 2.0 | HF (safetensors + GGUF) |
+| Temper-1-1.5B | 1,5B | no disponible | 54,1 | no disponible | HF |
+| Qwen2.5-Coder-1.5B-Instruct | 1,5B | no disponible | 39,0 | Apache 2.0 | HF |
+| Qwen2.5-Coder-3B-Instruct | 3B | no disponible | 56,5 | Apache 2.0 | HF |
+| ThoxEdge-RustCoder-0.5B | 0,5B | no disponible | 28,7 | no disponible | HF |
 
-Temper-2-Ion supera en Rust a todos los modelos de su rango de tamaño listados por el autor, e incluso a Qwen2.5-Coder-1.5B-Instruct en HumanEval-RS y MBPP-RS, aunque queda por detrás de Temper-1-1.5B y Qwen2.5-Coder-3B-Instruct. Su ventaja competitiva es la especialización en Rust; a cambio, su cobertura general de tareas es la esperable en un modelo de 0,5B.
+Temper-2-Ion supera a modelos del doble y triple de tamano en HumanEval-RS segun los datos del autor, aunque queda por debajo de Temper-1-1.5B y de Qwen2.5-Coder-3B. La comparacion debe tomarse con cautela porque la evaluacion la realiza el propio autor y no se han publicado resultados independientes.
 
 ## Limitaciones y advertencias
 
-- Con solo 0,5B de parámetros, el propio autor advierte que no es adecuado para trabajo serio: comete errores en tareas desconocidas y sus respuestas pueden mezclar palabras.
-- Explica con frecuencia incorrectamente su propio código, un problema relevante si se usa como asistente didáctico.
-- No soporta fill-in-the-middle: no funciona como modelo de autocompletado en línea en editores (no es un drop-in para Copilot-style completion).
-- No hay datos publicados sobre longitud de contexto, sesgos ni tasas de alucinación en conversación general.
-- Los benchmarks provienen de la model card del autor, medidos con su propio conjunto (Temper Bench v2); conviene tratarlos como resultados no verificados de forma independiente.
-- Licencia Apache 2.0: sin restricciones relevantes para uso comercial.
-- El modelo es muy reciente (publicado en octubre de 2026) y tiene adopción mínima (298 descargas, 0 likes), por lo que el soporte comunitario es escaso.
+- Con 0,5B de parametros, el modelo no es apto para trabajo serio o produccion critica; el propio autor lo advierte.
+- Explica su propio codigo de forma incorrecta con frecuencia.
+- Comete errores en tareas desconocidas y sus respuestas pueden mezclar palabras.
+- No soporta fill-in-the-middle: no sirve como modelo de autocompletado inline en editores.
+- La longitud de contexto no esta documentada, lo que dificulta planificar su uso en repositorios grandes.
+- Sesgos conocidos: no documentados; al derivar de Qwen2.5-Coder hereda los sesgos del modelo base.
+- Riesgo de alucinacion en APIs, crates y firmas de funciones Rust no vistas en entrenamiento.
+- Licencia Apache 2.0 permite uso comercial, pero las obras derivadas (fine-tunes, merges, cuantizaciones) deben mantener las atribuciones del fichero NOTICE conforme a la seccion 4(d).
+- Los benchmarks son autoinformados y no han sido verificados de forma independiente.
 
 ## Enlaces
 
-- Modelo: https://huggingface.co/maylore-ai/Temper-2-Ion
-- Versión GGUF: https://huggingface.co/maylore-ai/Temper-2-Ion-GGUF
-- Web del proyecto: https://maylore.com/temper-2-ion
-- Temper Bench v2: https://maylore.com/temper-bench
+- Modelo en Hugging Face: https://huggingface.co/maylore-ai/Temper-2-Ion
+- Version GGUF: https://huggingface.co/maylore-ai/Temper-2-Ion-GGUF
 - Modelo predecesor: https://huggingface.co/maylore-ai/Temper-1-0.5B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct
-- MultiPL-E (benchmarks HumanEval-RS / MBPP-RS): https://github.com/nuprl/MultiPL-E
-- Paper del estimador pass@k (Codex): https://arxiv.org/abs/2107.03374
+- Sitio web del modelo: https://maylore.com/temper-2-ion
+- Temper Bench v2: https://maylore.com/temper-bench
+- MultiPL-E (evaluacion): https://github.com/nuprl/MultiPL-E
+- Paper Codex (estimador pass@k): https://arxiv.org/abs/2107.03374

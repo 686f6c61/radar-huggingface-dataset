@@ -5,7 +5,7 @@
   "author": "LibraxisAI",
   "url": "https://huggingface.co/LibraxisAI/whisper-medium-pl-v2-mlx-GPTQ-Hessian-q4",
   "created_at": "2026-11-19T20:54:37.000Z",
-  "updated_at": "2026-11-19T20:55:40.000Z",
+  "updated_at": "2026-11-19T20:59:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

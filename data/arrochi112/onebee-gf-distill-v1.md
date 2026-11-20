@@ -2,98 +2,99 @@
 
 ## Resumen
 
-`onebee-gf-distill-v1` es un modelo de lenguaje multimodal (texto e imagen) desarrollado por el proyecto open-source *small-mind-companion* de arrochi112. Se trata de un checkpoint post-entrenado sobre el modelo base `google/gemma-4-E2B-it` (aproximadamente 2.000 millones de parámetros efectivos) mediante una cadena de LoRA SFT, LoRA DPO y destilación on-policy desde un teacher de 8.000 millones de parámetros (`google/gemma-4-E4B-it`). Su propósito es actuar como un asistente conversacional con personalidad de compañero, capaz de responder preguntas sobre el usuario apoyándose en un sistema de memoria externa, en lugar de depender únicamente de su contexto o de su memoria paramétrica.
+`onebee-gf-distill-v1` es un modelo de lenguaje multimodal (texto e imagen) de aproximadamente 2.000 millones de parametros efectivos, desarrollado por el usuario independiente `arrochi112` (repo `arjhinety`) dentro del proyecto de investigacion open source *small-mind-companion*. Se construye sobre `google/gemma-4-E2B-it` mediante un pipeline de post-entrenamiento en tres etapas: LoRA SFT, LoRA DPO y destilacion on-policy desde un profesor de 8B (`google/gemma-4-E4B-it`). El checkpoint resultante se fusiona en pesos completos y se publica con 5.104.297.539 parametros totales en safetensors.
 
-La relevancia de este modelo reside en su enfoque de investigación: demostrar cuánta capacidad aparente se puede recuperar en un modelo pequeño (~2B) mediante post-entrenamiento, destilación y arquitectura de memoria externa, con el objetivo final de ejecutarlo localmente en dispositivos móviles. El checkpoint destaca por su mejora en calibración (UAR 71,25%) y en precisión de respuesta (18,59% en `pra_lenient`) frente a su predecesor pre-destilación, manteniendo o mejorando la consistencia de persona. Está liberado bajo licencia Apache-2.0 y solo soporta inglés.
+El objetivo del modelo no es competir en capacidad bruta, sino estudiar cuanto rendimiento aparente puede recuperar un modelo pequeno con vision mediante post-entrenamiento y memoria externa, en lugar de escala de parametros. Su caso de uso central es el de un companero conversacional (companion persona) que responde condicionado a recuerdos recuperados de un almacen de memoria externo, sin depender de la longitud de contexto ni del recuerdo parametrico.
+
+Es relevante ahora porque documenta de forma transparente una cadena completa de post-entrenamiento sobre un modelo Gemma 4 multimodal pequeno, incluye cuantizaciones GGUF para inferencia en dispositivo y publica metricas de calibracion (UAR) y consistencia de persona, con una errata explicita sobre las limitaciones de su benchmark. La licencia es Apache-2.0, heredada del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Gemma 4 (transformer multimodal, texto + vision) |
-| Parametros totales | 5.104.297.539 (pesos completos tras merge; ~2B efectivos del modelo base) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
+| Arquitectura | Gemma4 (transformer multimodal, texto + vision) |
+| Parametros totales | 5.104.297.539 (safetensors); ~2B efectivos en el modelo base |
+| Parametros activos | no disponible |
 | Longitud de contexto | 131.072 tokens (heredada del modelo base) |
-| Tipos de cuantizacion | No disponible para este checkpoint (existen GGUF de 12 niveles para el checkpoint pre-destilacion `dpo-v1-scale`, no para este) |
-| Idiomas soportados | Ingles |
+| Tipos de cuantizacion | GGUF: F16 de referencia mas 12 niveles, hasta Q2_K (Q2_K defectuoso; usar Q3_K_S o superior); incluye proyector de vision |
+| Idiomas soportados | Ingles (`en`) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (transformers) |
+| Formato de pesos | safetensors (transformers); GGUF en repo separado |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `google/gemma-4-E2B-it`, un transformer multimodal de ~2B parámetros con capacidad de procesamiento de imagen y texto, y una ventana de contexto de 131.072 tokens. Sobre este base se aplicaron tres etapas de post-entrenamiento encadenadas, cada una partiendo del checkpoint anterior:
+El modelo parte de `google/gemma-4-E2B-it`, un transformer multimodal de la familia Gemma 4 con capacidad de procesamiento de texto e imagen y un vocabulario compartido con el resto de la familia. Sobre esa base se aplica un adaptador LoRA de rango 16 en tres etapas encadenadas: primero SFT con 2232 ejemplos, despues DPO con 2049 pares de preferencia y finalmente destilacion on-policy con 2008 prompts durante 125 pasos. Cada etapa parte del checkpoint de la anterior y el adaptador final se fusiona en pesos completos.
 
-1. **LoRA SFT** con 2.232 ejemplos de ajuste supervisado.
-2. **LoRA DPO** con 2.049 pares de preferencia.
-3. **Destilacion on-policy** con 2.008 prompts y 125 pasos, utilizando `trl.DistillationTrainer` y una divergencia generalizada de Jensen-Shannon (generalized JSD) para alinear las completaciones generadas por el propio estudiante con las de un teacher de 8B (`google/gemma-4-E4B-it`), que comparte tokenizador y vocabulario.
-
-La innovación técnica clave es la aplicación de la destilación *después* del DPO, no en lugar de este, y la verificación explícita de que la destilación no degrada la consistencia de persona del modelo, un riesgo que el autor había hipotetizado antes del entrenamiento. Los adaptadores LoRA se fusionaron en los pesos completos, dando lugar al checkpoint final de 5.104.297.539 parámetros.
+La innovacion tecnica destacable es la aplicacion de destilacion on-policy *despues* del DPO, no en su lugar: el estudiante genera sus propias completions y se alinean con la distribucion del profesor de 8B mediante divergencia JSD generalizada usando `trl.DistillationTrainer`. El profesor (`gemma-4-E4B-it`) comparte tokenizador y vocabulario con el estudiante, requisito del trainer. La hipotesis de riesgo —que un profesor generico sin ajuste de persona degradara el estilo del estudiante— se midio explicitamente y no se confirmo: la consistencia de persona se mantuvo o mejoro.
 
 ## Capacidades
 
-- **Conversacion companion**: responde con un tono cálido y personalizado, condicionado a memorias recuperadas de un sistema externo de retrieval.
-- **Multimodal**: procesa entradas de texto e imagen (heredado del modelo base Gemma 4).
-- **Abstencion calibrada**: UAR 71,25% en el benchmark PMB, lo que indica que el modelo se abstiene correctamente ante preguntas no respondibles sin sobre-hedging en las respondibles.
-- **Precision de respuesta**: mejor medida de exactitud en `pra_lenient` con 18,59% sobre 688 sondas adversariales.
-- **Consistencia de persona**: mantenida o mejorada tras la destilación, medida por comparación pairwise con LLM-judge (+7,6pp) y por una métrica estilométrica independiente (0,524 vs 0,509 pre-destilación).
-- **Generacion de texto**: capacidad estándar de generación autoregresiva con soporte de chat template (system/user roles).
+- Generacion de texto conversacional con persona de companero, condicionada a recuerdos recuperados de un almacen externo.
+- Procesamiento de imagen y texto (`image-text-to-text`), heredado del modelo base multimodal.
+- Calibracion y abstención: UAR del 71,25%, es decir, capacidad de abstenerse correctamente ante preguntas sin respuesta sin sobre-hedging en las que si la tienen.
+- Consistencia de persona medida por dos vias: comparacion por pares con LLM juez (+7,6 pp a favor de este checkpoint) y medida estilometrica sin API (0,524 frente a 0,509 antes de la destilacion).
+- Conversacion multi-turno con plantilla de chat (`apply_chat_template`) y rol de sistema.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte explicito de agentes o razonamiento multi-paso.
+- Capacidad multilingue limitada al ingles.
 
 ## Casos de uso
 
-- **Asistente personal con memoria externa**: el modelo se integra en un pipeline de retrieval que almacena hechos del usuario en una base de memoria; puede responder preguntas como "¿Qué conferencia dije que iba a asistir?" sin depender del contexto de la conversación.
-- **Chat companion local en dispositivos moviles**: gracias a su tamaño reducido (~2B efectivos) y a la disponibilidad de cuantizaciones GGUF para el checkpoint pre-destilación, puede ejecutarse en smartphones mediante `llama.cpp` u Ollama, ofreciendo una experiencia conversacional privada sin conexión.
-- **Investigacion en destilacion de modelos pequenos**: sirve como punto de referencia para estudiar cómo la destilación on-policy post-DPO afecta a la calibración, la consistencia de persona y la precisión en tareas de memoria personalizada.
-- **Prototipado de agentes con recuperacion aumentada**: el modelo puede combinarse con sistemas RAG para construir asistentes que consulten bases de conocimiento externas y respondan con un tono personalizado.
-- **Evaluacion de metodos de post-entrenamiento**: útil como baseline en experimentos que comparen diferentes estrategias de SFT, DPO y destilación sobre modelos pequeños.
-- **Desarrollo de aplicaciones de compania emocional**: para entornos controlados de investigación, donde se requiere un modelo ligero que mantenga una personalidad consistente y sepa reconocer sus límites (abstenerse cuando no sabe).
+- Companero conversacional con memoria externa: el modelo recibe recuerdos recuperados por un sistema de retrieval y responde preguntas del usuario fundamentadas en ellos; es el uso evaluado en el proyecto y para el que se miden UAR y precision.
+- Asistente personal de seguimiento de conversaciones: al combinarse con un almacen de memoria, puede responder a preguntas del tipo "¿a que conferencia dije que iba?" sin depender de que el historial completo quepa en contexto.
+- Investigacion en post-entrenamiento de modelos pequenos: sirve como punto de referencia reproducible para estudiar SFT, DPO y destilacion on-policy encadenados sobre un modelo de ~2B con vision.
+- Inferencia en dispositivo con llama.cpp: las cuantizaciones GGUF (Q3_K_S y superiores) permiten ejecutar el modelo y su proyector de vision en hardware de consumo para prototipos de companero local.
+- Base para experimentos de cuantizacion y abliteration: el autor lo plantea explicitamente como referencia para nuevas pasadas de destilacion, cuantizacion o investigacion de abliteration.
+- Evaluacion de calibracion y abstención: util en pipelines donde el coste de una respuesta inventada es alto y se quiere medir la tasa de abstención correcta frente a preguntas sin respuesta en memoria.
+- Prototipado de interfaces multimodales de bajo coste: al aceptar imagen y texto, permite construir demos de asistente que comenta imagenes aportadas por el usuario junto con contexto recuperado.
 
 ## Benchmarks y rendimiento
 
-El modelo fue evaluado contra el benchmark **PMB** (Personalized Memory Benchmark), compuesto por 688 sondas adversariales en 8 categorías, con un LLM-judge bajo doble orden (control de sesgo posicional) y un detector de abstenciones basado en reglas.
+Evaluacion sobre PMB (Personalized Memory Benchmark), 688 probes adversariales en 8 categorias, con LLM juez en doble orden para controlar sesgo de posicion y detector de abstención basado en reglas.
 
 | Sistema | pra_lenient | UAR |
 |---|---|---|
-| dpo-v1-scale (pre-destilacion) | 15,30% | 70,0% |
-| **distill-v1 (este checkpoint)** | **18,59%** | **71,25%** |
+| SFT + memoria (pre-destilacion) | 15,30% | 70,0% |
+| distill-v1 (este checkpoint) | 18,59% | 71,25% |
 
-En consistencia de persona pairwise (105 sondas, judge dual-order): 38,1% de victorias para este checkpoint frente a 30,5% para su predecesor, con 33 empates. La métrica estilométrica de auto-consistencia (sin API) pasó de 0,509 a 0,524.
-
-No se han publicado resultados en benchmarks generales estándar como MMLU, HumanEval o GSM8K en la información disponible.
+Advertencia del autor: existe una errata (ERRATA E43) que afecta a hasta 285 de las 608 preguntas respondibles de PMB, por lo que las cifras de `pra_lenient` deben interpretarse con cautela. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: para inferencia en FP16 con los pesos completos (~5,1B parámetros), se requieren aproximadamente 10-11 GB de VRAM. Con cuantización a 8 bits (int8) o 4 bits (NF4), el consumo puede reducirse a ~5-6 GB y ~3-4 GB respectivamente.
-- **GPU recomendadas**: tarjetas consumer con 8-12 GB de VRAM (RTX 3070/3080, RTX 4060 Ti, RTX 4070) son suficientes para FP16 o cuantización ligera. Para despliegue en móvil, se necesitan las cuantizaciones GGUF (aún no publicadas para este checkpoint exacto).
-- **Compatibilidad con GPU consumer**: sí, cabe en GPUs de gama media con cuantización; el checkpoint pre-destilación ya dispone de GGUF de 12 niveles para `llama.cpp`.
-- **Opciones de despliegue**: `transformers` (carga estándar), `vLLM` o `TGI` para servir con alto throughput (no probado oficialmente), `llama.cpp`/Ollama si se generan los GGUF correspondientes.
-- **Latencia y throughput**: no se han publicado mediciones específicas para este checkpoint.
+- VRAM estimada para inferencia en F16: aproximadamente 10,2 GB solo de pesos (5,1B parametros), mas overhead de activaciones y del proyector de vision; en la practica, 12-16 GB para contexto moderado.
+- Cuantizaciones GGUF: Q3_K_S y superiores reducen el peso a un rango aproximado de 2-4 GB segun nivel, lo que permite ejecucion en GPU de consumo; Q2_K esta reportado como defectuoso en generacion real y no debe usarse.
+- GPU recomendadas: A100 o H100 para F16 con contexto largo (131.072 tokens); RTX 4090 (24 GB) para F16 con contexto moderado; RTX 3060/4060 Ti y similares con cuantizacion Q4/Q5.
+- Cabe en GPU de consumo: si, mediante GGUF en llama.cpp, incluyendo el proyector de vision.
+- Opciones de despliegue: transformers (referencia oficial), llama.cpp y derivados para los GGUF; el tag `endpoints_compatible` sugiere compatibilidad con endpoints gestionados. No se documenta soporte verificado de vLLM, TGI u Ollama.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Precision (PMB pra_lenient) | UAR | Licencia |
+| Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| **onebee-gf-distill-v1** | ~2B efectivos (5,1B totales) | 131.072 | 18,59% | 71,25% | Apache-2.0 |
-| onebee-gf-dpo-v1-scale (pre-destilacion) | ~2B efectivos | 131.072 | 15,30% | 70,0% | Apache-2.0 |
-| google/gemma-4-E2B-it (base) | ~2B | 131.072 | no evaluado en PMB | no evaluado | Apache-2.0 |
+| onebee-gf-distill-v1 | 5,1B totales (~2B efectivos) | 131.072 | Apache-2.0 | Companion con memoria, multimodal, post-entrenado | HF + GGUF |
+| google/gemma-4-E2B-it | ~2B efectivos | 131.072 | Gemma (terminos propios) | Modelo base instruct multimodal | HF |
+| google/gemma-4-E4B-it | ~8B | no disponible | Gemma (terminos propios) | Modelo instruct mayor, usado como profesor | HF |
 
-La comparación directa con otros modelos companion de tamaño similar no está disponible en la información proporcionada. La principal diferencia frente a su predecesor es la mejora en precisión (+3,29pp) y calibración (+1,25pp) tras la destilación, manteniendo la licencia permisiva.
+La comparativa cuantitativa frente a alternativas de la misma categoria no esta disponible en la informacion proporcionada: no hay resultados de benchmarks comunes entre este checkpoint y otros modelos comparables.
 
 ## Limitaciones y advertencias
 
-- **Precision absoluta baja**: el 18,59% de `pra_lenient` indica que el modelo falla en la mayoría de las preguntas de memoria personalizada; no es adecuado para tareas donde la exactitud sea crítica.
-- **No evaluado para uso en produccion**: el autor declara explícitamente que no está destinado a decisiones de seguridad, consejo médico, legal o financiero, ni a ningún despliegue donde una respuesta errónea cause daño real.
-- **Dependencia de memoria externa**: el modelo no incorpora memoria propia; requiere el pipeline de retrieval del repositorio del proyecto para funcionar según lo evaluado.
-- **Solo ingles**: no soporta otros idiomas.
-- **Sesgos potenciales**: al derivar de Gemma 4, puede heredar sesgos del modelo base; no se han realizado auditorías específicas de sesgo en este checkpoint.
-- **Entrenamiento con una sola semilla**: la model card indica "Single seed, single data", lo que limita la robustez estadística de los resultados.
-- **Cuantizaciones GGUF no disponibles para este checkpoint**: las cuantizaciones publicadas corresponden al checkpoint pre-destilación; habrá que generarlas o esperar a que el autor las publique.
+- El checkpoint no incorpora memoria propia: sin el sistema de retrieval del proyecto, el caso de uso principal no funciona como se evaluo.
+- Precision baja en terminos absolutos: `pra_lenient` del 18,59% sobre PMB, y parte de esa cifra esta afectada por la errata E43 del propio benchmark.
+- Solo ingles; no se ha evaluado ni entrenado para otros idiomas.
+- No evaluado ni destinado a decisiones criticas de seguridad, consejo medico, legal o financiero, ni a despliegues donde una respuesta incorrecta o excesivamente confiada cause dano real.
+- Riesgo de alucinacion inherente a un modelo de ~2B efectivos; la calibracion medida (UAR 71,25%) no elimina ese riesgo.
+- La cuantizacion Q2_K esta rota en pruebas de generacion reales; usar Q3_K_S o superior.
+- Es un artefacto de investigacion de un proyecto independiente, con 0 likes y sin validacion externa; tratarlo como experimental en cualquier contexto de produccion.
+- Licencia Apache-2.0 heredada, pero conviene verificar los terminos del modelo base Gemma 4 de Google antes de un uso comercial.
+- No se documentan sesgos especificos medidos; no hay evaluacion de sesgo publicada en la informacion disponible.
 
 ## Enlaces
 
-- [Modelo en Hugging Face](https://huggingface.co/arrochi112/onebee-gf-distill-v1)
-- [Repositorio del proyecto small-mind-companion](https://github.com/arrogance231/small-mind-companion)
-- [Documento de resultados de destilacion](https://github.com/arrogance231/small-mind-companion/blob/main/docs/distillation_results.md)
-- [Repositorio onebee-gf (proyecto general)](https://github.com/arrogance231/onebee-gf)
-- [Modelo base google/gemma-4-E2B-it](https://huggingface.co/google/gemma-4-E2B-it)
-- [Teacher google/gemma-4-E4B-it](https://huggingface.co/google/gemma-4-E4B-it)
-- [GGUF del checkpoint pre-destilacion](https://huggingface.co/arrochi112/onebee-gf-dpo-v1-scale-gguf)
+- Modelo en Hugging Face: https://huggingface.co/arrochi112/onebee-gf-distill-v1
+- Cuantizaciones GGUF: https://huggingface.co/arjhinety/onebee-gf-distill-v1-gguf
+- Repositorio del proyecto: https://github.com/arjhinety/small-mind-companion
+- Errata del benchmark PMB (E43): https://github.com/arjhinety/small-mind-companion/blob/main/reports/ERRATA.md
+- Modelo base: https://huggingface.co/google/gemma-4-E2B-it
+- Modelo profesor: https://huggingface.co/google/gemma-4-E4B-it

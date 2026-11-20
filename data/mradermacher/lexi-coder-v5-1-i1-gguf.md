@@ -2,70 +2,92 @@
 
 ## Resumen
 
-Lexi-coder-v5.1-i1-GGUF es una colección de cuantizaciones GGUF del modelo de lenguaje reallexi/lexi-coder-v5.1, preparadas por mradermacher mediante la técnica de imatrix (importance matrix). El modelo base, desarrollado por el equipo reallexi, es un ajuste fino con LoRA de un modelo transformer de aproximadamente 7,25 mil millones de parámetros, orientado a la generación de texto. Esta versión cuantizada permite ejecutar el modelo en hardware de consumo con un consumo de memoria reducido, manteniendo un equilibrio entre tamaño y calidad. La relevancia de esta publicación radica en que facilita el despliegue local del modelo en entornos con recursos limitados, algo habitual en proyectos de desarrollo e investigación que no disponen de infraestructura de alto rendimiento.
+Lexi Coder v5.1 es un modelo de generacion de texto especializado en codigo, desarrollado por el usuario reallexi y publicado originalmente en Hugging Face. La ficha que nos ocupa corresponde a la version cuantizada en formato GGUF realizada por mradermacher, un conocido creador de cuantizaciones del ecosistema llama.cpp. El modelo base es un fine-tune con LoRA sobre una arquitectura transformer densa de aproximadamente 7.248 millones de parametros (7,25B), segun los datos reales de safetensors del repositorio.
+
+La relevancia de esta publicacion radica en que mradermacher ofrece una bateria completa de cuantizaciones con imatrix (importancia matrix), desde IQ1_S de 1,7 GB hasta Q6_K de 6,0 GB, lo que permite ejecutar el modelo en hardware muy modesto, incluido en GPUs de consumo con 4-8 GB de VRAM. La model card del autor original no esta incluida en la informacion disponible, por lo que muchos detalles de entrenamiento y rendimiento no pueden confirmarse.
+
+El repositorio acumula 1332 descargas y esta etiquetado como conversational y text-generation, con soporte declarado unicamente para ingles. La licencia es "other", heredando los terminos del modelo base y de los datasets utilizados, lo que exige revisar las condiciones originales antes de cualquier uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo transformer, sin especificar variante) |
-| Parametros totales | 7.248.023.552 |
-| Parametros activos | no aplica (no es MoE) |
+| Arquitectura | Transformer densa (fine-tune LoRA sobre reallexi/lexi-coder-v5.1) |
+| Parametros totales | 7.248.023.552 (7,25B) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-IQ4_NL, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K |
+| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-IQ4_NL, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K, mas imatrix |
 | Idiomas soportados | en (ingles) |
-| Licencia | inherits-base-model-and-dataset-terms (hereda los terminos del modelo base y del dataset) |
-| Formato de pesos | GGUF |
+| Licencia | other (hereda terminos del modelo base y de los datasets) |
+| Formato de pesos | GGUF (cuantizaciones i1 con imatrix); safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo base (numero de capas, dimensiones, tipo de atencion, etc.) en la documentacion publicada. Se sabe que es un modelo de tipo transformer, con 7.248.023.552 parametros, y que ha sido sometido a un ajuste fino mediante LoRA (Low-Rank Adaptation) sobre un modelo base previo. No se han publicado datos sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. La cuantizacion imatrix realizada por mradermacher utiliza una matriz de importancia calculada sobre un conjunto de datos de calibracion para optimizar la asignacion de bits en la cuantizacion, lo que suele mejorar la calidad respecto a cuantizaciones estaticas convencionales.
+La informacion disponible no detalla la arquitectura interna del modelo base mas alla de su naturaleza transformer densa y su proceso de ajuste mediante LoRA (low-rank adaptation). El modelo se presenta como un fine-tune de codigo de la familia Lexi, con nombre interno "Lexi 3.836B" en la model card, aunque el recuento real de parametros en safetensors es de 7.248 millones, discrepancia que no puede resolverse con los datos disponibles.
+
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o instruction tuning supervisado. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa o atencion lineal. Lo unico verificable es el proceso de cuantizacion: mradermacher ha generado cuantizaciones i1 (con fichero imatrix de 0,1 GB) que, segun sus propias notas, suelen superar en calidad a las cuantizaciones estaticas de tamano equivalente, especialmente en los rangos IQ2 e IQ3.
 
 ## Capacidades
 
-- Generacion de texto: el modelo es capaz de producir texto coherente en ingles, dado su entrenamiento como modelo de lenguaje generativo.
-- Ajuste fino con LoRA: al ser un modelo fine-tuned, puede haber sido especializado en tareas concretas, aunque no se especifican cuales.
-- Compatibilidad con herramientas de inferencia local: al estar en formato GGUF, es compatible con llama.cpp, Ollama, LM Studio y otros motores que soporten este formato.
-- Cuantizaciones variadas: ofrece multiples niveles de cuantizacion (desde 1,7 GB hasta 6,0 GB) para adaptarse a diferentes capacidades de hardware.
-- No se ha confirmado soporte para tool calling, agentes, vision, audio u otras capacidades especiales.
+- Generacion de texto y codigo en ingles, con orientacion a tareas de programacion segun el nombre y etiquetado del modelo.
+- Conversacion multi-turno: el repositorio esta etiquetado como "conversational".
+- Fine-tune especifico mediante LoRA sobre el modelo base reallexi/lexi-coder-v5.1.
+- Compatibilidad con endpoints de inferencia (etiqueta endpoints_compatible).
+- Soporte de tool calling / function calling: no disponible en la informacion.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion.
+- Capacidades multilingues: solo ingles declarado.
+- Capacidades especiales (vision, audio, thinking mode): no disponible en la informacion.
 
 ## Casos de uso
 
-- Ejecucion local de un modelo de lenguaje en equipos sin GPU dedicada: gracias a las cuantizaciones de menor tamano (IQ1_S, IQ2_XXS), es posible ejecutar el modelo en CPU con 8 GB de RAM, por ejemplo para pruebas de concepto o prototipos.
-- Desarrollo de asistentes de codigo en entornos offline: si el modelo base esta especializado en generacion de codigo (por el nombre "lexi-coder"), las cuantizaciones Q4_K_M o Q5_K_M permiten integrarlo en IDEs o herramientas de autocompletado sin conexion a internet.
-- Investigacion academica sobre cuantizacion: los archivos imatrix y las distintas variantes permiten estudiar el impacto de diferentes niveles de cuantizacion en la calidad del modelo.
-- Despliegue en servidores de baja capacidad: para aplicaciones de generacion de texto con baja concurrencia, un quant Q4_K_S (4,2 GB) puede ejecutarse en una GPU con 6 GB de VRAM, como una GTX 1660 o una RTX 2060.
-- Creacion de demos interactivas: con Ollama o llama.cpp se puede montar un servidor local para probar el modelo en un navegador, util para validar respuestas antes de integrarlo en un producto.
-- Fine-tuning posterior sobre el modelo cuantizado: aunque no es recomendable, algunos flujos de trabajo experimentales utilizan quants como punto de partida para ajustes adicionales con PEFT, siempre que se respete la licencia.
+- Asistencia de programacion en local: con la cuantizacion i1-Q4_K_M (4,5 GB) el modelo cabe en GPUs de consumo de 8 GB y permite autocompletado y generacion de funciones en un IDE sin enviar codigo a servicios externos.
+- Prototipado en equipos con hardware limitado: la cuantizacion i1-IQ2_M (2,6 GB) permite ejecutar el modelo en portatiles con GPU integrada o en CPU, util para pruebas de concepto y demos.
+- Generacion de codigo en pipelines de CI/CD: al ser un GGUF compatible con llama.cpp, puede integrarse en scripts de validacion o generacion de tests, siempre que se validen las salidas.
+- Chat conversacional de dominio tecnico: su etiqueta "conversational" y su tamano contenido lo hacen apto para asistentes de documentacion o soporte interno en ingles.
+- Despliegue en entornos air-gapped: al distribuirse como ficheros GGUF autonomos, puede ejecutarse sin conexion en infraestructuras aisladas, un requisito habitual en sectores regulados.
+- Experimentacion con cuantizaciones: el repositorio incluye el fichero imatrix y 24 variantes, lo que permite estudiar el compromiso calidad/tamano en un modelo de 7B para investigacion sobre cuantizacion.
+- Educacion e investigacion: servir de base para comparar el rendimiento de cuantizaciones i1 frente a estaticas en tareas de codigo, dado el amplio rango de tamanos ofrecido (1,7 GB a 6,0 GB).
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos sobre MMLU, HumanEval, GSM8K u otras metricas estandar para este modelo ni para sus cuantizaciones.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: depende del quant elegido. Los archivos van desde 1,7 GB (i1-IQ1_S) hasta 6,0 GB (i1-Q6_K). Para un uso fluido se recomienda al menos 2 GB de VRAM adicionales para el contexto y los calculos intermedios.
-- GPU recomendadas: para quants de hasta 4 GB, una GPU con 6 GB de VRAM (GTX 1660, RTX 2060) es suficiente. Para quants de 5-6 GB, se recomienda una GPU con 8 GB (RTX 3070, RTX 4060) o mas.
-- En CPU: con llama.cpp se puede ejecutar en CPU, pero la velocidad dependera del numero de nucleos y de la RAM disponible. Para quants pequenos (menos de 3 GB) es viable en portatiles modernos.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui (con backend llama.cpp), o servidores compatibles con GGUF como llama-cpp-python.
-- Latencia y throughput: no se dispone de mediciones publicas. En general, los quants mas pequenos ofrecen mayor velocidad pero menor calidad; los mas grandes (Q5_K_M, Q6_K) son mas lentos pero mas fieles al modelo original.
+- VRAM estimada para inferencia: aproximadamente el tamano del fichero GGUF mas overhead de contexto. Orientativamente: 2-3 GB para IQ1/IQ2, 3-4 GB para IQ3, 4-5 GB para Q4, 5-6 GB para Q5/Q6.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para cuantizaciones bajas; 8 GB (RTX 3060 Ti, RTX 4060 Ti, RTX 3070) para Q4_K_M con contexto moderado; A100/H100 no son necesarias por el tamano del modelo.
+- Cabe en GPU de consumo: si, en la mayoria de GPUs modernas con 6-8 GB de VRAM usando cuantizaciones Q4 o inferiores. Las cuantizaciones IQ1/IQ2 pueden ejecutarse incluso en CPU.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF. No se dispone de informacion sobre soporte en vLLM o TGI para este formato.
+- Latencia y throughput estimados: no disponible en la informacion.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa fiable con otros modelos de la misma categoria (por ejemplo, Llama 2 7B, Mistral 7B o CodeLlama 7B). No se conocen los resultados de benchmarks del modelo base ni de sus cuantizaciones, por lo que no es posible realizar una comparacion objetiva. Se recomienda consultar la pagina del modelo base en Hugging Face para obtener mas detalles cuando esten disponibles.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| lexi-coder-v5.1-i1-GGUF (este) | 7,25B | no disponible | other (hereda base y datasets) | GGUF | Cuantizaciones i1 con imatrix, 24 variantes |
+| reallexi/lexi-coder-v5.1 (base) | 7,25B | no disponible | other | safetensors | Modelo original sin cuantizar |
+| mradermacher/lexi-coder-v5.1-GGUF | 7,25B | no disponible | other | GGUF | Cuantizaciones estaticas del mismo modelo base |
+
+No se dispone de datos de rendimiento para establecer comparaciones cuantitativas con otros modelos de codigo de tamano similar (por ejemplo, familias Qwen-Coder o CodeLlama), por lo que la comparativa se limita a variantes del mismo modelo.
 
 ## Limitaciones y advertencias
 
-- Licencia: el modelo hereda los terminos del modelo base y del dataset utilizado. Es imprescindible revisar la licencia original de reallexi/lexi-coder-v5.1 antes de cualquier uso comercial o de redistribucion.
-- Idioma: solo se ha confirmado soporte para ingles. No se garantiza un rendimiento adecuado en otros idiomas.
-- Calidad de cuantizacion: los quants de menor tamano (IQ1_S, IQ2_XXS) presentan una perdida de calidad notable y solo se recomiendan para pruebas extremas. Para uso general se aconseja Q4_K_M o superior.
-- Informacion limitada: al no publicarse detalles sobre el entrenamiento, la arquitectura o los benchmarks, es dificil predecir el comportamiento del modelo en tareas especificas. Se recomienda realizar pruebas propias antes de integrarlo en produccion.
-- Riesgo de alucinaciones: como cualquier modelo de lenguaje, puede generar contenido falso o inventado, especialmente en contextos largos o con prompts ambiguos.
-- Fecha de creacion: el modelo fue publicado en agosto de 2026, por lo que puede no estar alineado con las practicas mas recientes de seguridad y alineacion.
+- Sesgos conocidos: no documentados en la informacion disponible; al ser un fine-tune de codigo en ingles, es probable que herede sesgos de sus datos de entrenamiento, no verificables.
+- Riesgo de alucinacion: inherente a los modelos de lenguaje; en generacion de codigo puede producir APIs inexistentes o funciones con firmas incorrectas, por lo que requiere validacion.
+- Limitaciones de contexto: la longitud de contexto no esta documentada; no debe asumirse un valor concreto.
+- Limitaciones de idioma: solo se declara soporte de ingles; el rendimiento en castellano no esta garantizado.
+- Restricciones de licencia: la licencia "other" hereda los terminos del modelo base y de los datasets, lo que obliga a revisar ambas fuentes antes de uso comercial. No se garantiza permiso de uso comercial.
+- Caveats de produccion: las cuantizaciones IQ1 e IQ2 (etiquetadas por el autor como "for the desperate" o "very low quality") degradan notablemente la calidad; para produccion se recomienda Q4_K_M o superior.
+- Discrepancia de nomenclatura: la model card menciona "Lexi 3.836B" mientras que safetensors reporta 7,25B; conviene verificar el modelo base antes de desplegar.
+- Ausencia de benchmarks: no hay evaluaciones publicadas que respalden afirmaciones de calidad.
 
 ## Enlaces
 
-- Repositorio del modelo cuantizado: https://huggingface.co/mradermacher/lexi-coder-v5.1-i1-GGUF
+- Repositorio Hugging Face (cuantizaciones i1): https://huggingface.co/mradermacher/lexi-coder-v5.1-i1-GGUF
 - Modelo base: https://huggingface.co/reallexi/lexi-coder-v5.1
-- Perfil del autor de la cuantizacion: https://huggingface.co/mradermacher
-- Pagina de solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Cuantizaciones estaticas: https://huggingface.co/mradermacher/lexi-coder-v5.1-GGUF
+- Pagina de overview del autor de cuantizaciones: https://hf.tst.eu/model#lexi-coder-v5.1-i1-GGUF
+- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png

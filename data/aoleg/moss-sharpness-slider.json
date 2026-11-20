@@ -42,31 +42,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "aoleg/MOSS-Image-Kodachrome - Hugging Face",
-      "url": "https://huggingface.co/aoleg/MOSS-Image-Kodachrome",
-      "snippet": "It mimics the color response and the contrast curve of 1940s 4x5 Kodachrome sheet film, but above all the quality and the sharpness. It was trained on MOSS- ..."
-    },
-    {
-      "title": "r/comfyui - Reddit",
-      "url": "https://www.reddit.com/r/comfyui/",
-      "snippet": "18.03.2023 ... A slider LoRA to thicken the lines in MOSS-Image lineart. https://civitai.com/models/3020444/mossboldline-v10. -> Tile-edit for MOSS-Image in ..."
-    },
-    {
-      "title": "r/comfyui - Reddit",
-      "url": "https://www.reddit.com/r/comfyui/best/",
-      "snippet": "A slider LoRA to thicken the lines in MOSS-Image lineart. https://civitai.com/models/3020444/mossboldline-v10. -> Tile-edit for MOSS-Image in ComfyUI.."
-    },
-    {
-      "title": "my_arXiv_daily/README.md at main - GitHub",
-      "url": "https://github.com/BaiShuanghao/my_arXiv_daily/blob/main/README.md",
-      "snippet": "vor 5 Tagen ... WAM-OPD: Sharpening World Action Models via On-Policy Distillation ... Riemann-1.0: An Embodied World Action Model for Physical AI, Haofeng ..."
-    },
-    {
-      "title": "February 2026 - The Year in AI Papers",
-      "url": "https://www.1kpapers.com/months/2026-02",
-      "snippet": "Kimi K2.5 is an open-source multimodal agentic model that jointly optimizes text and vision through techniques including joint pre-training, zero-vision SFT, ..."
-    }
-  ]
+  "sources": []
 }

@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 15,
-  "downloads_30d": 1243,
+  "downloads_30d": 1247,
   "trending_score": 8,
   "parameters": 32768,
   "parameters_human": "32768",
@@ -46,6 +46,25 @@
   "removal_pattern": null,
   "renamed_to": "tiyuvta/Qwen3.8-27B-NVFP4-MTP-GGUF",
   "renamed_at": "2026-11-14T02:30:08.951Z",
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "task": "Speculative decode, MTP K=3 with the masked (FR-Spec) draft head",
+      "dataset": "tiyuvta held-out agentic prompt set (own-generated ranks corpus, held out)",
+      "metric": "decode p50 tok/s, RTX PRO 6000 Blackwell",
+      "value": 137.9
+    },
+    {
+      "task": "Speculative decode, MTP K=3 with the masked (FR-Spec) draft head",
+      "dataset": "tiyuvta held-out agentic prompt set (own-generated ranks corpus, held out)",
+      "metric": "decode p50 tok/s, RTX 5090 Laptop",
+      "value": 73.6
+    },
+    {
+      "task": "Speculative decode, MTP K=3 with the masked (FR-Spec) draft head",
+      "dataset": "tiyuvta held-out agentic prompt set (own-generated ranks corpus, held out)",
+      "metric": "draft acceptance rate, K=3",
+      "value": 0.74
+    }
+  ],
   "sources": []
 }

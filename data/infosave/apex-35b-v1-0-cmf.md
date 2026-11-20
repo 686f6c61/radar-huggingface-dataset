@@ -2,97 +2,112 @@
 
 ## Resumen
 
-Apex-35B-V1.0-cmf es una versión cuantizada, empaquetada en archivos CMF, del modelo Apex-35B-V1.0 de Apex Intelligence, un modelo agéntico de investigación, programación y razonamiento derivado de Qwen3.6-35B-A3B. El modelo base es una arquitectura híbrida mixture-of-experts de 35,5B parámetros (~3B activos por token) con 256 expertos enrutados (top-8) más un experto compartido, y combina 30 capas Gated DeltaNet con 10 capas de atención completa, con una ventana de contexto de 262.144 tokens.
+Apex-35B-V1.0-cmf es un paquete de cuantización del modelo Apexintelligence-AI/Apex-35B-V1.0, un modelo de mezcla de expertos (MoE) de 35.500 millones de parámetros con unos 3.000 millones activos por token, afinado a partir de Qwen3.6-35B-A3B para tareas de razonamiento, código e investigación agéntica. Lo publica el usuario infosave en formato CMF, un contenedor propio que empaqueta pesos cuantizados y la capa MTP en un único fichero.
 
-Esta variante, publicada por el usuario infosave, no es un entrenamiento nuevo sino un reempaquetado: los pesos se convierten a formato CMF para ejecutarse con `cortiq`, un motor de inferencia escrito en Rust sin Python ni frameworks de ML, que funciona sobre GPUs NVIDIA, AMD e Intel vía Vulkan/DX12, Apple silicon vía Metal y CPU. Es relevante porque permite desplegar un modelo MoE agéntico de 35B en una GPU de consumo de 24 GB con solo 4 bits de precisión, sin depender del ecosistema habitual de PyTorch, CUDA o llama.cpp. La licencia del modelo base y de esta cuantización es Apache 2.0.
+La relevancia del paquete es doble: por un lado, ofrece el modelo en cuantizaciones de 4 y 8 bits (19,81 GB y 35,84 GB) que caben en GPUs de consumo y de gama profesional; por otro, se ejecuta con `cortiq`, un motor de inferencia escrito en Rust sin Python ni frameworks de ML, con backends Vulkan, DX12, Metal y CPU. Esto permite desplegar un MoE de 35B en hardware heterogéneo sin depender del ecosistema CUDA/PyTorch.
+
+El modelo conserva la ventana de contexto de 262.144 tokens del checkpoint original, el modo de razonamiento dinámico (el modelo decide en cada turno si piensa y durante cuánto tiempo) y el soporte de tool calling. Los idiomas declarados son inglés, ruso y chino. La torre de visión del checkpoint original no está incluida en estos ficheros.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE híbrido: 256 expertos enrutados top-8 + experto compartido; 30 capas Gated DeltaNet + 10 capas de atención completa; capa MTP incluida |
-| Parametros totales | 35,5B (modelo base) |
-| Parametros activos | ~3B por token |
+| Arquitectura | Transformer MoE híbrido: 30 capas Gated DeltaNet y 10 capas de atención completa con compuerta |
+| Parametros totales | 35.500 millones (35,5B) |
+| Parametros activos | ~3.000 millones por token (256 expertos enrutados, top-8, más un experto compartido) |
 | Longitud de contexto | 262.144 tokens |
-| Tipos de cuantizacion | 4-bit (q4tp), 4-bit GPTQ (q4tp-v2), 8-bit (q8_2f); atención, proyecciones DeltaNet, embeddings y cabeza de salida a 8 bits en todos los archivos; normas y router a 16 bits |
-| Idiomas soportados | Inglés, ruso, chino |
+| Tipos de cuantizacion | 4 bits GPTQ (`q4tp-v2`), 4 bits (`q4tp`), 8 bits (`q8_2f`); atención, proyecciones Gated DeltaNet, embeddings y cabeza de salida en 8 bits; normas y router en 16 bits |
+| Idiomas soportados | Inglés (en), ruso (ru), chino (zh) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | CMF (archivos únicos para el motor cortiq); el original es safetensors PyTorch bf16 |
+| Formato de pesos | CMF (fichero único, requiere el motor `cortiq`) |
+| Modelo base | Apexintelligence-AI/Apex-35B-V1.0 (derivado de Qwen3.6-35B-A3B) |
+| Tamano del repositorio | 75,5 GB |
+| Libreria | cortiq |
 
 ## Arquitectura y entrenamiento
 
-El modelo base, Apex-35B-V1.0, parte de Qwen3.6-35B-A3B, un MoE de 35,5B parámetros con ~3B activos por token. Su rasgo más distintivo es la arquitectura híbrida: 30 capas Gated DeltaNet (una variante de redes de estado con actualización controlada, más eficientes que la atención estándar para secuencias largas) combinadas con 10 capas de atención completa, lo que permite sostener el contexto de 262.144 tokens con coste razonable. Incluye además una capa MTP (multi-token prediction) para decodificación especulativa y un modo de "thinking" dinámico, en el que el propio modelo decide en cada turno si razonar y durante cuántos tokens.
+El modelo es un transformer de mezcla de expertos con una capa de atención híbrida: 30 capas basadas en Gated DeltaNet (un mecanismo de atención lineal con estado recurrente) y 10 capas de atención completa con compuerta. El enrutamiento usa 256 expertos con selección top-8 más un experto compartido, lo que da unos 3.000 millones de parámetros activos por token sobre un total de 35.500 millones. Esta combinación busca reducir el coste de atención en contextos largos (hasta 262.144 tokens) manteniendo la calidad de la atención completa en un subconjunto de capas.
 
-El fine-tune agéntico del modelo base no está documentado en la model card (no se detallan tokens de entrenamiento, composición del dataset ni uso de RLHF/DPO). En cuanto a la cuantización, el archivo recomendado `q4tp-v2` aplica GPTQ a todos los expertos (enrutados y compartidos) usando 262.144 tokens de calibración procedentes de wikitext-2, UltraChat renderizado con la plantilla del modelo y código fuente en Rust. La model card reporta que `q4tp-v2` se mantiene más cerca del checkpoint bf16 en texto conversacional (media |ΔNLL| de 0,138 frente a 0,160 de `q4tp`) y en texto wiki, y a la par en código. Los archivos CMF incluyen el modelo de texto y su capa MTP, pero no la torre de visión del checkpoint original.
+El checkpoint original es un fine-tune de Qwen3.6-35B-A3B orientado a razonamiento, código y uso agéntico, con modo de pensamiento dinámico y tool calling. No se dispone de datos sobre el volumen de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO. La cuantización sí está documentada: `q4tp-v2` aplica GPTQ a todos los expertos enrutados y al compartido usando 262.144 tokens de calibración (train de wikitext-2, UltraChat renderizado con la plantilla del modelo y código fuente en Rust), y mantiene el mismo tamaño que `q4tp` con menor desviación respecto al original en texto de chat (|ΔNLL| medio de 0,138 frente a 0,160) y en wiki, e igual en código.
 
 ## Capacidades
 
-- Generación de texto y razonamiento con modo de thinking dinámico: el modelo decide por turno si razona y cuánto; el razonamiento consume del presupuesto de `max_tokens`, y se puede desactivar con `--no-think` o `"enable_thinking": false`.
-- Tool calling en formato OpenAI: acepta `tools` en la petición y responde con llamadas estructuradas que el servidor devuelve como `message.tool_calls` con `finish_reason: "tool_calls"`.
-- Orientación agéntica: el fine-tune está especializado en investigación, código y razonamiento multi-paso.
-- Generación de código (la model card incluye un ejemplo de función Python y mide perplexity sobre código Python de la librería estándar).
-- Contexto muy largo (262.144 tokens) gracias a las capas Gated DeltaNet.
-- Multilingüe: inglés, ruso y chino.
-- Decodificación especulativa vía capa MTP incluida en los archivos.
-- Muestreo recomendado embebido: temperature 1,0, top-p 0,95, top-k 20; salida determinista disponible con `--greedy`.
-- No incluye capacidades de visión: la torre de visión del checkpoint original no está empaquetada en los archivos CMF.
+- Generación de texto y razonamiento multi-paso con modo de pensamiento dinámico: el modelo decide en cada turno si razona y durante cuánto tiempo; la respuesta de pensamiento se emite entre `<think>` y `</think>`.
+- Generación de código: el autor lo presenta como modelo de coding, con perplejidad de 1,926 sobre código de la biblioteca estándar de Python en la cuantización `q4tp-v2`.
+- Tool calling / function calling en formato OpenAI: el modelo responde con `<tool_call><function=NAME><parameter=KEY>value</parameter></function></tool_call>` y el servidor lo traduce a `message.tool_calls` con `finish_reason: "tool_calls"`.
+- Uso agéntico: soporta conversaciones con herramientas y razonamiento encadenado; el autor lo describe como modelo de investigación agéntica.
+- Capacidades multilingües limitadas a inglés, ruso y chino.
+- Contexto largo de 262.144 tokens, adecuado para documentos extensos y conversaciones multi-turno largas.
+- Sin visión: la torre de visión del checkpoint original no está incluida en los ficheros CMF.
+- Decodificación determinista disponible con `--greedy`; muestreo recomendado por el autor: temperatura 1,0, top-p 0,95, top-k 20.
 
 ## Casos de uso
 
-- Atención al cliente y asistentes conversacionales autoalojados: el servidor compatible con OpenAI (`/v1/chat/completions`, con y sin streaming) permite integrarlo en aplicaciones existentes, y el contexto de 262.144 tokens soporta conversaciones multi-turno muy largas e historiales extensos.
-- Agentes con herramientas: el soporte nativo de tool calling en formato OpenAI lo hace adecuado para pipelines de agentes que consultan APIs, bases de datos o buscadores y encadenan resultados en varios pasos.
-- Asistente de programación local: puede ejecutarse íntegramente en una GPU de 24 GB sin dependencias de Python, útil para entornos con código sensible que no puede salir de la red local; genera y explica código (el ejemplo de la card es una función Python de mezcla de listas ordenadas).
-- Investigación y síntesis de documentos largos: la ventana de 262k tokens permite analizar repositorios de código, contratos o corpus de investigación completos en una sola pasada.
-- Despliegue en hardware heterogéneo: gracias al backend Vulkan/DX12 y Metal, funciona sobre GPUs NVIDIA, AMD, Intel y Apple silicon, y en máquinas sin GPU suficiente reparte capas entre GPU y CPU automáticamente.
-- Servicios de inferencia con API estándar: `cortiq serve` expone además `/v1/completions`, `/v1/models` y un panel web en el mismo puerto, adecuado para montar un endpoint interno compatible con el ecosistema OpenAI.
-- Procesamiento multilingüe (inglés, ruso, chino): útil para equipos que operan en esos tres idiomas y quieren un único modelo local.
+- Asistencia de código en producción: el modelo genera funciones y parches con una perplejidad de 1,926 sobre código Python; puede integrarse en pipelines de CI/CD mediante el servidor compatible con OpenAI (`/v1/chat/completions`) para revisión automática de cambios o generación de tests.
+- Agentes con herramientas: con tool calling nativo en formato OpenAI, encaja en orquestadores de agentes que necesiten llamar a APIs externas (clima, bases de datos, buscadores) y encadenar el resultado en la respuesta final, como demuestra el ejemplo del autor con una herramienta meteorológica.
+- Análisis de documentos largos: la ventana de 262.144 tokens permite procesar informes, bases de código o expedientes completos en una sola pasada sin troceado, con la ventaja de las capas Gated DeltaNet para reducir el coste de atención.
+- Razonamiento técnico y matemático: el modo de pensamiento dinámico permite activar cadenas de razonamiento largas solo cuando la consulta lo requiere, lo que abarata las consultas simples y mejora las complejas.
+- Despliegue en hardware heterogéneo: al ejecutarse con `cortiq` sobre Vulkan, DX12, Metal y CPU, sirve para estaciones de trabajo con GPUs AMD o Intel, Macs con Apple Silicon y servidores sin CUDA, un escenario habitual en entornos corporativos con hardware mixto.
+- Atención al cliente multilingüe (inglés, ruso, chino): conversaciones multi-turno con contexto largo y respuestas directas mediante `enable_thinking: false` para reducir latencia.
+- Investigación reproducible en local: los ficheros de 19,81 GB caben en GPUs de 24 GB, lo que permite experimentar con un MoE de 35B en una sola tarjeta de consumo o gama profesional sin infraestructura de clúster.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card sí aporta métricas de perplexity y fidelidad de la cuantización, y mediciones de rendimiento con `cortiq bench` en una NVIDIA A40 (48 GB, Vulkan, modelo íntegro en tarjeta, un solo stream, cortiq 0.8.48):
+El autor no publica resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Sí publica métricas de perplejidad y de fidelidad de la cuantización, además de rendimiento de inferencia.
 
-| Archivo | Tamaño | Wiki ppl | Code ppl | Chat ppl | Top-1 vs bf16 (chat) | Decode tok/s | Decode 4k/16k | Prompt 4k/16k tok/s | Primer token (prompt 4k) |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| q4tp-v2 (GPTQ) | 19,81 GB | 25,83 | 1,926 | 4,071 | 95,2 % | 80,3 | 73,3 / 59,5 | 390 / 368 | 10,5 s |
-| q4tp | 19,83 GB | 26,86 | 1,905 | 4,029 | 94,9 % | 80,5 | 73,7 / 61,1 | 383 / 367 | 10,7 s |
-| q8_2f | 35,84 GB | 25,72 | 1,753 | 4,047 | 97,7 % | 78,2 | 71,3 / 58,9 | 84 / 76 | 48,7 s |
-| bf16 original | 71,9 GB | 26,52 | 1,759 | 4,025 | — | no disponible | no disponible | no disponible | no disponible |
+| Metrica | q4tp-v2 | q4tp | q8_2f | bf16 original |
+|---|---:|---:|---:|---:|
+| Tamano | 19,81 GB | 19,83 GB | 35,84 GB | 71,9 GB |
+| Perplejidad wiki (4k tokens) | 25,83 | 26,86 | 25,72 | 26,52 |
+| Perplejidad código (4k tokens) | 1,926 | 1,905 | 1,753 | 1,759 |
+| Perplejidad chat (8k tokens) | 4,071 | 4,029 | 4,047 | 4,025 |
+| Top-1 vs bf16 (chat) | 95,2 % | 94,9 % | 97,7 % | — |
 
-Nota de la propia card: el fine-tune puntúa 26,5 de perplexity en wikitext en bruto (Qwen3.6-35B-A3B base: 5,6), un dato atribuible al modelo fine-tuned, no a la cuantización.
+Rendimiento en NVIDIA A40 (48 GB, Vulkan), cortiq 0.8.48, un solo stream:
+
+| Fichero | Decodificacion (tok/s) | Decod. a 4k / 16k | Prompt 4k / 16k (tok/s) | Primer token, prompt 4k |
+|---|---:|---:|---:|---:|
+| q4tp-v2 | 80,3 | 73,3 / 59,5 | 390 / 368 | 10,5 s |
+| q4tp | 80,5 | 73,7 / 61,1 | 383 / 367 | 10,7 s |
+| q8_2f | 78,2 | 71,3 / 58,9 | 84 / 76 | 48,7 s |
+
+En RTX A5000 (24 GB) con backend CUDA (cortiq 0.8.92), `q4tp-v2` decodifica a 121 tok/s (también a profundidad de 4k), lee un prompt de 4k tokens a 2.974 tok/s y genera el primer token en 1,4 s. Con Vulkan en la misma tarjeta: 90-92 tok/s de decodificación (98 a 4k), 441-738 tok/s de lectura de prompt y 5,6-9,3 s hasta el primer token.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: 18,7 GB de pesos residentes para los archivos de 4 bits (`q4tp`, `q4tp-v2`) y 34,3 GB para `q8_2f`. Los archivos de 4 bits caben íntegros en una GPU de 24 GB; en tarjetas menores, cortiq carga las capas que caben en GPU y ejecuta el resto en CPU.
-- GPUs recomendadas: cualquier GPU de 24 GB o más (la referencia publicada es una NVIDIA A40 de 48 GB vía Vulkan). Para `q8_2f` se recomiendan GPUs de 48 GB o CPUs con mucha memoria. Compatible con NVIDIA, AMD e Intel vía Vulkan/DX12, y Apple silicon vía Metal.
-- Consumer GPUs: sí, cabe completo en una RTX 3090/4090 de 24 GB con los archivos de 4 bits; en tarjetas de 16 GB funciona con offload parcial a CPU (con pérdida de velocidad no cuantificada).
-- Despliegue: exclusivamente con el motor `cortiq` (binarios precompilados para Linux, macOS y Windows; se recomienda versión 0.8.48 o superior). Modos: CLI interactiva, prompt único y servidor compatible con OpenAI (`cortiq serve`). No es ejecutable con vLLM, llama.cpp, Ollama ni TGI. En Linux headless sin servidor gráfico hay que instalar `libvulkan1 libglvnd0 libegl1 libgl1 libglx0` y definir `XDG_RUNTIME_DIR=/tmp`.
-- Latencia y throughput (A40, Vulkan): ~80 tok/s de decodificación con los archivos de 4 bits (73 tok/s con prompts de 4k, ~60 tok/s con 16k), procesado de prompt a ~390 tok/s y primer token en 10,5 s con prompt de 4k. El archivo `q8_2f` procesa el prompt posición a posición en Vulkan: 84 tok/s de prefill y 48,7 s hasta el primer token con prompt de 4k, por lo que se desaconseja para prompts largos.
+- VRAM para inferencia: 18,7 GB de pesos residentes con `q4tp`/`q4tp-v2`; 34,3 GB con `q8_2f`.
+- GPU recomendadas: A40 (48 GB), RTX A5000 (24 GB) o cualquier GPU con 24 GB o más para los ficheros de 4 bits; 48 GB para el de 8 bits. El backend CUDA ofrece mayor throughput que Vulkan en la misma tarjeta (121 frente a 90-92 tok/s en A5000).
+- Cabe en GPU de consumo: los ficheros de 4 bits (19,81 GB) entran en tarjetas de 24 GB; no se documenta su comportamiento en tarjetas de 16 GB o menos.
+- Opciones de despliegue: exclusivamente `cortiq` (CLI en Rust, instalable con `cargo install cortiq-cli`, con funcionalidad CUDA opcional mediante `--features cuda`). No hay soporte de vLLM, llama.cpp, Ollama ni TGI para el formato CMF. El servidor integrado expone endpoints compatibles con OpenAI (`/v1/chat/completions`, `/v1/completions`, `/v1/models`) y un panel web.
+- Latencia y throughput: 80,3 tok/s de decodificación en A40 con Vulkan y 121 tok/s en A5000 con CUDA; el primer token con prompt de 4k tarda 10,5 s en A40 (Vulkan) y 1,4 s en A5000 (CUDA). El fichero `q8_2f` procesa el prompt posición a posición en Vulkan (84 tok/s), por lo que para prompts largos conviene usar un fichero de 4 bits.
+- Plataformas: Linux, macOS y Windows; GPUs NVIDIA, AMD e Intel mediante Vulkan/DX12, Apple Silicon mediante Metal y CPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales / activos | Contexto | Cuantizacion | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Apex-35B-V1.0-cmf (esta ficha) | 35,5B / ~3B | 262.144 tokens | 4-bit GPTQ, 8-bit (CMF) | Apache 2.0 | Motor cortiq (Rust, Vulkan/Metal/CPU); no compatible con vLLM/llama.cpp |
-| Qwen3.6-35B-A3B (base) | 35,5B / ~3B | 262.144 tokens | bf16 y cuantizaciones comunitarias habituales | no disponible en la informacion proporcionada | Ecosistema estándar (PyTorch, vLLM, GGUF, etc.) |
-| Qwen3-30B-A3B (referencia de categoria) | 30,5B / ~3B | 32.768–131.072 tokens | bf16 y GGUF variados | Apache 2.0 | Amplio soporte: vLLM, llama.cpp, Ollama, TGI |
+| Modelo | Parametros | Activos | Contexto | Licencia | Formato / despliegue | Notas |
+|---|---|---|---|---|---|---|
+| Apex-35B-V1.0-cmf (q4tp-v2) | 35,5B (MoE) | ~3B | 262.144 | Apache 2.0 | CMF / cortiq | Cuantizado a 4 bits, 19,81 GB, sin visión |
+| Apexintelligence-AI/Apex-35B-V1.0 (bf16) | 35,5B (MoE) | ~3B | 262.144 | no disponible en la informacion proporcionada | PyTorch (referencia) | Checkpoint original, 71,9 GB, incluye torre de visión |
+| Qwen3.6-35B-A3B | 35B (MoE) | ~3B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Modelo base del fine-tune; perplejidad wiki de 5,6 frente a 26,5 del fine-tune |
 
-La alternativa directa es el checkpoint original Apex-35B-V1.0 en bf16 (71,9 GB), que requiere ~72 GB de VRAM o CPU con mucha memoria y el ecosistema PyTorch, frente a los 19,8 GB y la ausencia de dependencias de esta versión CMF, a costa de una ligera degradación (95,2 % de coincidencia top-1 frente a bf16 en chat para `q4tp-v2`). No hay datos de benchmarks que permitan comparar calidad de tarea con otros modelos de su categoría.
+No se dispone de datos de benchmarks comparativos con otros modelos de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Sin capacidades de visión: los archivos CMF no incluyen la torre de visión del checkpoint original; solo texto.
-- El modo de thinking consume tokens del presupuesto de `max_tokens` (por defecto 256 en CLI), lo que puede truncar respuestas si no se amplía el límite.
-- El archivo `q8_2f` es muy lento con prompts largos en Vulkan (prefill posición a posición); para contexto extenso hay que usar los archivos de 4 bits.
-- La perplexity del modelo fine-tuned en wikitext en bruto (26,5) es notablemente peor que la del base Qwen3.6-35B-A3B (5,6), según la propia card; esto sugiere un cambio de distribución atribuible al fine-tune, no a la cuantización.
-- Ecosistema cerrado: solo funciona con `cortiq`, un motor de terceros con adopción muy limitada (105 descargas del repo en el momento de la ficha); la trazabilidad y el soporte comunitario son escasos.
-- Idiomas limitados a inglés, ruso y chino; el rendimiento en castellano no está documentado.
-- Riesgo de alucinación y sesgos: no hay evaluaciones publicadas de seguridad ni de sesgos para este modelo; las advertencias habituales de los LLM aplican con más motivo al no existir benchmarks públicos.
-- Licencia Apache 2.0: sin restricciones relevantes para uso comercial, aunque conviene verificar los términos del modelo base en su repositorio.
-- La cuantización a 4 bits implica una pérdida medible frente a bf16 (95,2 % de coincidencia top-1 en chat); en tareas muy sensibles a la precisión puede preferirse `q8_2f` si hay VRAM suficiente.
+- La perplejidad en wikitext del fine-tune (26,5) es muy superior a la del modelo base Qwen3.6-35B-A3B (5,6), según el propio autor; conviene validar la calidad en el dominio de uso antes de producción.
+- Solo se declaran tres idiomas (inglés, ruso y chino); el rendimiento en castellano no está documentado y probablemente sea inferior.
+- Sin capacidades de visión: la torre de visión del checkpoint original no está incluida.
+- Riesgo de alucinación inherente a los modelos generativos, agravado en tareas de investigación y razonamiento abierto; no se documentan evaluaciones de factualidad.
+- No se documentan sesgos conocidos ni evaluaciones de seguridad en la información disponible.
+- Dependencia total del motor `cortiq` y del formato CMF: no es compatible con el ecosistema estándar (transformers, vLLM, llama.cpp, GGUF), lo que limita la portabilidad y las herramientas de terceros.
+- La licencia Apache 2.0 permite uso comercial, pero al derivar de Qwen3.6-35B-A3B conviene verificar las condiciones de la licencia del modelo base.
+- El modo de pensamiento consume tokens de `--max-tokens` (por defecto 256), por lo que es necesario ampliar el límite para respuestas con razonamiento largo.
+- El fichero de 8 bits procesa el prompt posición a posición en Vulkan, con primer token de 48,7 s para 4k tokens; no es adecuado para prompts largos en ese backend.
+- Solo hay 1 like y 1.415 descargas en el momento de la consulta, lo que indica una validación comunitaria muy limitada.
 
 ## Enlaces
 
-- Repositorio de la ficha: https://huggingface.co/infosave/Apex-35B-V1.0-cmf
+- Modelo en Hugging Face: https://huggingface.co/infosave/Apex-35B-V1.0-cmf
 - Modelo base: https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0
-- Repositorio del formato CMF y motor cortiq: https://github.com/infosave2007/cmf
+- Repositorio del formato CMF y del motor cortiq: https://github.com/infosave2007/cmf
 - Binarios precompilados de cortiq: https://github.com/infosave2007/cmf/releases

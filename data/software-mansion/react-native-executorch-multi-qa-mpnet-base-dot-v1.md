@@ -2,76 +2,96 @@
 
 ## Resumen
 
-Este repositorio aloja una exportación del modelo de embeddings `multi-qa-mpnet-base-dot-v1` de sentence-transformers, convertido al formato `.pte` de ExecuTorch para su ejecución en dispositivos móviles dentro de aplicaciones React Native. El modelo original, desarrollado por la comunidad de sentence-transformers, está diseñado para tareas de búsqueda semántica y respuesta a preguntas mediante la generación de vectores densos de texto. La versión aquí publicada es obra de software-mansion, el equipo detrás de la biblioteca `react-native-executorch`, que permite ejecutar modelos de IA localmente en apps móviles con React Native.
+`react-native-executorch-multi-qa-mpnet-base-dot-v1` es un paquete de pesos del modelo de embeddings `multi-qa-mpnet-base-dot-v1` exportado a programas ExecuTorch `.pte` por Software Mansion para su uso en la librería React Native ExecuTorch. El modelo original es un sentence-transformer basado en MPNet (arquitectura transformer de tipo masked language model), orientado a similitud semántica y recuperación de pasajes en un contexto de pregunta-respuesta. Su función no es generar texto, sino producir embeddings densos que permitan calcular similitud coseno o producto escalar entre consultas y documentos.
 
-La relevancia de esta publicación radica en que facilita la integración de capacidades de embeddings semánticos en aplicaciones móviles sin depender de servidores externos, garantizando privacidad y funcionamiento offline. El archivo `.pte` está optimizado para el backend XNNPACK de ExecuTorch, lo que permite una inferencia eficiente en CPUs de dispositivos móviles. No se proporcionan detalles sobre la arquitectura interna, el tamaño de parámetros o la longitud de contexto en la información disponible, aunque el modelo original es conocido por ser un transformer MPNet con 278 millones de parámetros y una ventana de contexto de 512 tokens.
+La relevancia de este repositorio es de despliegue, no de investigación: ofrece variantes compiladas para los backends Vulkan y XNNPACK con cuantizaciones fp16, fp32, int8 y 8da4w, lo que permite ejecutar inferencia completamente en dispositivo (móvil o edge) sin depender de un servidor. El tamaño del repositorio (3,2 GB) refleja que incluye múltiples artefactos para distintas combinaciones de backend y precisión.
+
+No se especifican parámetros totales, longitud de contexto ni idiomas en la información proporcionada; se trata de una exportación de un modelo upstream cuya model card original no está incluida en los datos disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el modelo original es MPNet, pero no se especifica en la informacion) |
+| Arquitectura | Transformer MPNet (encoder, sentence-transformer) |
 | Parametros totales | no disponible |
-| Parametros activos | no disponible (no es MoE) |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el archivo `.pte` puede incluir cuantizacion, pero no se indica) |
+| Tipos de cuantizacion | fp32, fp16, int8, 8da4w (int4 con grupo 32) |
 | Idiomas soportados | no disponible |
 | Licencia | apache-2.0 |
-| Formato de pesos | `.pte` (ExecuTorch) |
+| Formato de pesos | ExecuTorch `.pte` (programas compilados) |
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no detalla la arquitectura interna ni el proceso de entrenamiento del modelo. El archivo `.pte` es una exportacion del modelo `multi-qa-mpnet-base-dot-v1` de sentence-transformers, que originalmente es un transformer basado en MPNet con atencion de multiples cabezas y una capa de pooling para generar embeddings de frases. El entrenamiento del modelo original se realizo con un objetivo contrastivo sobre pares de preguntas y respuestas, optimizando la similitud coseno o el producto punto entre representaciones. Sin embargo, estos detalles no estan disponibles en la documentacion de este repositorio, que se limita a indicar que el modelo fue exportado usando ExecuTorch v0.6.0 y que no se garantiza compatibilidad hacia adelante con versiones anteriores del runtime.
+El modelo upstream `multi-qa-mpnet-base-dot-v1` es un sentence-transformer construido sobre MPNet, un encoder transformer que combina elementos de enmascaramiento de BERT y de permutación de XLNet. Está entrenado para producir embeddings de frases y pasajes optimizados para búsqueda semántica con similitud por producto escalar, y se emplea habitualmente en tareas de question answering y recuperación de pasajes.
+
+La información disponible no detalla el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO; esos datos corresponden a la model card original del modelo upstream, que no se incluye en los materiales proporcionados. La innovación técnica de este repositorio es la exportación a ExecuTorch v1.4.1 con soporte para dos backends (Vulkan y XNNPACK) y varias precisiones, incluyendo una variante 8da4w (activaciones int8 dinámicas y pesos int4 con grupo 32) sobre las capas Linear y una tabla de embeddings de palabras en int8.
 
 ## Capacidades
 
-- Generacion de embeddings de texto densos para busqueda semantica y similitud entre frases.
-- Codificacion de consultas y documentos para sistemas de recuperacion de informacion (preguntas y respuestas).
-- Soporte para tareas de reordenamiento o clasificacion basada en similitud.
-- No es un modelo generativo: no produce texto nuevo, solo vectores numericos.
-- No soporta tool calling, agentes ni razonamiento multi-paso.
-- Capacidades multilingues desconocidas, aunque el modelo original `multi-qa-mpnet-base-dot-v1` fue entrenado con datos multilingues; no se confirma en esta version.
-- No incluye capacidades de vision ni audio.
+- Generación de embeddings densos de frases y pasajes para similitud semántica.
+- Recuperación de pasajes (passage retrieval) mediante producto escalar o similitud coseno.
+- Búsqueda semántica sobre corpus documentales preindexados.
+- Ejecución en dispositivo (on-device) en entornos React Native mediante ExecuTorch.
+- Soporte de múltiples backends de aceleración: Vulkan (GPU) y XNNPACK (CPU).
+- No soporta generación de texto, tool calling, agentes ni razonamiento multi-paso: es un modelo exclusivamente de embeddings.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Busqueda semantica en documentos dentro de una app movil: el modelo permite indexar y recuperar fragmentos de texto relevantes a partir de una consulta, todo en el dispositivo, sin enviar datos a un servidor.
-- Sistema de preguntas y respuestas sobre un corpus local: combinando los embeddings con un indice vectorial, se pueden responder preguntas extrayendo pasajes relevantes de un conjunto de documentos.
-- Recomendacion de contenido basada en similitud textual: por ejemplo, sugerir articulos o noticias relacionados con el historial de lectura del usuario, calculando la distancia coseno entre embeddings.
-- Deduplicacion de texto: detectar frases o parrafos similares dentro de una base de datos de contenido generado por usuarios.
-- Clasificacion de texto ligera: los embeddings pueden alimentar un clasificador logístico o una red pequena para tareas como analisis de sentimiento o deteccion de spam.
-- Chatbots con memoria semantica: almacenar las interacciones previas como embeddings y recuperar el contexto relevante para respuestas coherentes en conversaciones de larga duracion.
+- Búsqueda semántica en aplicaciones móviles: indexar documentos o notas del usuario y recuperar los fragmentos más relevantes para una consulta sin enviar datos a un servidor, usando la variante XNNPACK int8 (105 MB) o 8da4w (69,1 MB).
+- Preguntas sobre documentación local: embeber una base de conocimiento y responder consultas mediante recuperación de pasajes, aprovechando que el modelo está optimizado para QA con producto escalar.
+- Clasificación y agrupamiento de textos: calcular embeddings de mensajes o tickets y agrupar por similitud para enrutamiento automático o deduplicación.
+- Detección de duplicados y near-duplicates: comparar embeddings de registros para identificar contenido repetido en bases de datos locales.
+- Recomendación de contenido: embeber ítems y perfiles de usuario para generar recomendaciones por similitud semántica en el dispositivo.
+- Asistentes de búsqueda offline: integrar en apps React Native que operan sin conectividad, usando la variante Vulkan fp16 (208 MB) cuando hay GPU disponible y XNNPACK como fallback.
+- Filtrado previo en pipelines RAG: reducir candidatos localmente antes de enviar solo los pasajes más relevantes a un modelo generativo remoto, ahorrando ancho de banda y coste.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se proporcionan metricas de calidad (como MMLU, HumanEval o tareas de similitud) ni comparaciones con otros modelos. Se recomienda evaluar el modelo en el caso de uso concreto antes de integrarlo en produccion.
+Resultados publicados en la model card para recuperación de pasajes en SQuAD v1.1 dev (2000 preguntas contra sus 315 párrafos), con producto escalar:
+
+| Variante | top-1 | MRR |
+|---|---|---|
+| fp32 | 64,60 | 0,7645 |
+| int8 | 65,00 | 0,7671 |
+| 8da4w | 63,80 | 0,7578 |
+
+La cuantización int8 iguala o supera ligeramente a fp32 en esta evaluación, mientras que 8da4w pierde aproximadamente 0,8 puntos de top-1 y 0,007 de MRR. No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K u otros) en la información disponible, ya que el modelo no es generativo.
 
 ## Requisitos de hardware
 
-- El archivo `.pte` esta disenado para ejecutarse en CPUs de dispositivos moviles mediante el backend XNNPACK de ExecuTorch.
-- No se especifica VRAM, pero al ser un modelo de embeddings de tamano medio (278M de parametros en su version original), la inferencia puede realizarse en RAM de dispositivos moviles modernos (4 GB o mas).
-- Requiere un dispositivo con sistema operativo Android o iOS que soporte el runtime de ExecuTorch v0.6.0 o compatible.
-- Se recomienda usar la biblioteca `react-native-executorch` para integrar el modelo en aplicaciones React Native, ya que gestiona la compatibilidad del runtime internamente.
-- No se proporcionan datos de latencia o throughput; estos dependen del hardware especifico y de la optimizacion del modelo.
+- VRAM estimada: no aplica de forma directa; el modelo está pensado para ejecución en dispositivo. Los tamaños de los artefactos son: 416 MB (XNNPACK fp32), 208 MB (Vulkan fp16), 127 MB (Vulkan int8), 105 MB (XNNPACK int8) y 69,1 MB (XNNPACK 8da4w).
+- GPU recomendadas: cualquier GPU móvil o integrada compatible con Vulkan para las variantes Vulkan; las variantes XNNPACK funcionan en CPU.
+- Cabe en GPU de consumo: sí, todas las variantes caben holgadamente en cualquier GPU consumer moderna (RTX 4090, RTX 3060, etc.), aunque el objetivo real es hardware móvil.
+- Opciones de despliegue: runtime ExecuTorch v1.4.1, integrado mediante la librería React Native ExecuTorch; no se mencionan vLLM, llama.cpp, Ollama ni TGI, que no son compatibles con el formato `.pte`.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre modelos comparables en el repositorio. El modelo original `multi-qa-mpnet-base-dot-v1` puede compararse con otros modelos de embeddings como `all-MiniLM-L6-v2` o `bge-base-en-v1.5`, pero no se ofrecen datos de rendimiento en esta publicacion. La principal diferencia es que esta version esta optimizada para ejecucion movil en formato ExecuTorch, mientras que las alternativas suelen distribuirse en formato `safetensors` o `ONNX`.
+| Modelo | Tipo | Parámetros | Contexto | Licencia | Formato/despliegue |
+|---|---|---|---|---|---|
+| multi-qa-mpnet-base-dot-v1 (este repo) | Sentence-transformer MPNet, embeddings | no disponible | no disponible | apache-2.0 | ExecuTorch `.pte`, on-device |
+| multi-qa-mpnet-base-dot-v1 (upstream) | Sentence-transformer MPNet, embeddings | no disponible | no disponible | apache-2.0 | PyTorch/safetensors, servidor |
+| Otros sentence-transformers comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+La comparación relevante es con el modelo upstream: este repositorio ofrece el mismo modelo en formato ExecuTorch para inferencia on-device, con cuantizaciones que reducen el tamaño hasta 69,1 MB (8da4w) frente a los 416 MB de la variante fp32, a costa de una pérdida mínima de calidad en recuperación de pasajes. No se dispone de datos de otros modelos comparables en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo es una exportacion especifica para ExecuTorch v0.6.0; no se garantiza compatibilidad con versiones posteriores del runtime. Si se actualiza ExecuTorch, puede ser necesario reexportar el modelo.
-- No se proporcionan detalles sobre sesgos o riesgos de alucinacion. Como modelo de embeddings, no genera texto, por lo que el riesgo de alucinacion es bajo, pero los sesgos presentes en los datos de entrenamiento originales pueden reflejarse en las representaciones vectoriales.
-- La longitud de contexto no se especifica; si se usa el modelo original, el limite es de 512 tokens. Superar este limite puede degradar la calidad de los embeddings.
-- La licencia Apache 2.0 permite uso comercial y modificacion, pero se debe mantener el aviso de copyright y las condiciones de la licencia.
-- No se incluye el tokenizador en el repositorio de forma explicita, aunque se menciona un `tokenizer.json` en la raiz; es necesario asegurarse de que el tokenizador es compatible con el modelo.
+- El modelo solo produce embeddings; no genera texto ni admite instrucciones, tool calling ni razonamiento.
+- Riesgo de alucinación no aplica directamente, pero la recuperación puede devolver pasajes irrelevantes si el corpus o las consultas están fuera de dominio.
+- Compatibilidad estricta con ExecuTorch v1.4.1: el runtime no garantiza compatibilidad hacia adelante, por lo que versiones más antiguas pueden fallar al cargar los `.pte`.
+- Idiomas soportados no especificados; el comportamiento multilingüe no está garantizado por la información disponible.
+- La variante 8da4w presenta una degradación medible (top-1 63,80 frente a 64,60 en fp32) que debe evaluarse en el dominio concreto de uso.
+- Licencia apache-2.0 permite uso comercial, pero conviene verificar las condiciones del modelo upstream y de los datasets de entrenamiento originales.
+- El repositorio ocupa 3,2 GB por incluir todas las variantes; en producción conviene descargar solo el artefacto necesario.
+- No se han publicado datos sobre sesgos del modelo en la información disponible.
 
 ## Enlaces
 
-- [Hugging Face del modelo](https://huggingface.co/software-mansion/react-native-executorch-multi-qa-mpnet-base-dot-v1)
-- [Modelo original multi-qa-mpnet-base-dot-v1](https://huggingface.co/sentence-transformers/multi-qa-mpnet-base-dot-v1/tree/main)
-- [Repositorio React Native ExecuTorch](https://github.com/software-mansion/react-native-executorch)
-- [Documentacion de React Native ExecuTorch](https://docs.swmansion.com/react-native-executorch/docs/fundamentals/getting-started)
-- [Sitio web de React Native ExecuTorch](https://executorch.swmansion.com/)
-- [Documentacion oficial de ExecuTorch](https://pytorch.org/executorch/stable/index.html)
-- [Nota de compatibilidad de ExecuTorch](https://github.com/pytorch/executorch/blob/11d1742fdeddcf05bc30a6cfac321d2a2e3b6768/runtime/COMPATIBILITY.md?plain=1#L4)
+- Repositorio Hugging Face: https://huggingface.co/software-mansion/react-native-executorch-multi-qa-mpnet-base-dot-v1
+- Modelo upstream: https://huggingface.co/sentence-transformers/multi-qa-mpnet-base-dot-v1/tree/main
+- Librería React Native ExecuTorch (npm): https://www.npmjs.com/package/react-native-executorch
+- Documentación de descarga de modelos: https://docs.swmansion.com/react-native-executorch/docs/fundamentals/downloading-models
+- Nota de compatibilidad de ExecuTorch: https://github.com/pytorch/executorch/blob/main/runtime/COMPATIBILITY.md

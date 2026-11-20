@@ -2,96 +2,114 @@
 
 ## Resumen
 
-Qwen2.5-Math-1.5B-French es un ajuste fino (fine-tune) del modelo Qwen2.5-Math-1.5B-Instruct, desarrollado por el usuario GAMINGZI, orientado a mejorar la comprensión de problemas matemáticos redactados en francés. El modelo base, creado por el equipo Qwen de Alibaba, es un transformer decoder-only de 1.543.714.304 parámetros (aproximadamente 1,5 mil millones) especializado en razonamiento matemático, pero con un rendimiento notablemente inferior en francés que en inglés. Este fine-tune cierra parte de esa brecha sin degradar el rendimiento en inglés.
+Qwen2.5-math-1.5b-french es un ajuste fino (fine-tuning) del modelo Qwen/Qwen2.5-Math-1.5B-Instruct, desarrollado por el usuario GAMINGZI, cuyo objetivo es mejorar la comprensión de problemas matemáticos redactados en frances. El modelo base destaca en ingles pero tiene un rendimiento notablemente inferior en frances; este ajuste cierra aproximadamente el 60% de esa brecha sin degradar el rendimiento en ingles. Se distribuye bajo licencia Apache 2.0 y esta disponible en Hugging Face con 1.543.714.304 parametros (1,5B) en formato safetensors.
 
-La relevancia del modelo radica en su enfoque metodológico: utiliza destilación auto-consistente entre idiomas (cross-lingual self-distillation) para enseñar al modelo a *entender* enunciados en francés manteniendo su capacidad de razonamiento original en inglés. El entrenamiento se realizó con LoRA sobre las proyecciones de atención y MLP, con un coste computacional muy bajo (unos 25 minutos en una única RTX 5060 Ti de 16 GB), lo que lo convierte en un ejemplo práctico de adaptación lingüística eficiente para modelos pequeños.
+La relevancia de este modelo radica en su enfoque tecnico: utiliza destilacion cruzada auto-supervisada (cross-lingual self-distillation) mediante LoRA, entrenando al modelo para que, dada una pregunta en frances, reproduzca su propia solucion correcta en ingles. De este modo, el modelo aprende a comprender el frances sin alterar su proceso de razonamiento matematico. El entrenamiento se realizo en una unica GPU RTX 5060 Ti de 16 GB, lo que demuestra que es posible obtener mejoras significativas con recursos de consumo.
 
-El modelo está publicado bajo licencia Apache 2.0, con pesos en formato safetensors y compatibilidad con la librería transformers y text-generation-inference. Su principal limitación es que, aunque lee francés, responde en inglés, y su evaluación se limita a problemas de aritmética de nivel escolar (grade-school).
+El modelo esta pensado para tareas de resolucion de problemas matematicos de nivel escolar (grade-school math) en frances, con soporte de votacion por mayoria (majority voting) para incrementar la precision. No obstante, presenta una limitacion importante: lee frances pero responde en ingles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen2) |
-| Parametros totales | 1.543.714.304 |
+| Arquitectura | Transformer decoder-only (Qwen2), ajustado con LoRA y fusionado |
+| Parametros totales | 1.543.714.304 (1,5B) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
+| Longitud de contexto | no disponible (el modelo base Qwen2.5-Math-1.5B-Instruct soporta 32.768 tokens, aunque no se confirma en esta ficha) |
+| Tipos de cuantizacion | no disponible (el repo contiene pesos safetensors en bfloat16; no se documentan GGUF ni otras cuantizaciones) |
 | Idiomas soportados | fr, en |
-| Licencia | apache-2.0 |
+| Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen2, un transformer decoder-only con atención causal estándar. Sobre el modelo base Qwen2.5-Math-1.5B-Instruct se aplicó un ajuste fino con LoRA (r=32) sobre todas las proyecciones de atención y MLP, durante 1 época, con una tasa de aprendizaje de 1e-4. Posteriormente, los adaptadores LoRA se fusionaron en los pesos base, dando lugar a un modelo denso estándar sin adaptadores separados.
+El modelo se basa en la arquitectura Qwen2 (transformer decoder-only) del modelo Qwen2.5-Math-1.5B-Instruct, especializado en matematicas. El ajuste se realizo mediante LoRA con r=32 aplicado a todas las proyecciones de atencion y MLP, durante 1 epoch con learning rate 1e-4, y posteriormente se fusionaron los pesos. La version v3 anadio un epoch adicional desde v2 con learning rate 5e-5 sobre los mismos datos mas 2.000 ejemplos en ingles, para corregir una ligera caida del rendimiento en ingles observada en v2.
 
-El proceso de entrenamiento siguió una estrategia de destilación auto-consistente entre idiomas: (1) se tradujeron automáticamente 3.000 preguntas de entrenamiento de GSM8K al francés con Helsinki-NLP/opus-mt-en-fr, descartando aquellas que alteraban o perdían números (se conservaron 2.805); (2) el modelo base resolvió las preguntas originales en inglés, conservando solo las soluciones correctas (2.684); (3) se entrenó con LoRA usando como entrada la pregunta en francés y como objetivo la solución correcta generada por el propio modelo en inglés. De este modo, el modelo aprende a comprender el francés sin modificar su proceso de razonamiento en inglés. No se aplicaron RLHF ni DPO; el autor indica que intentos con SFT y GRPO no aportaron mejoras.
+El proceso de entrenamiento consistio en destilacion cruzada auto-supervisada: se tradujeron las 7.473 preguntas de entrenamiento de GSM8K al frances en dos variantes (una literal con Helsinki-NLP/opus-mt-en-fr y otra con frances natural mediante kurakurai/Luth-2-2B), descartando traducciones que perdieran o alteraran numeros. El modelo base resolvio las preguntas originales en ingles y solo se conservaron las soluciones correctas (7.154 de 7.473). Finalmente, se entreno con LoRA sobre pares "pregunta en frances → solucion correcta propia en ingles", generando 13.644 ejemplos (6.720 de opus-mt y 6.924 de Luth). El entrenamiento completo se realizo en una RTX 5060 Ti de 16 GB: 50 minutos para v2 y 57 minutos adicionales para v3.
 
 ## Capacidades
 
-- Generación de texto y razonamiento matemático paso a paso (chain-of-thought), con salida final dentro de `\boxed{}`.
-- Comprensión de enunciados matemáticos escritos en francés (problemas de aritmética de nivel escolar).
-- Resolución de problemas matemáticos en inglés con el mismo rendimiento que el modelo base.
-- Generación de respuestas en inglés (no en francés) incluso ante preguntas en francés.
-- Soporte de conversación multi-turno mediante plantilla de chat (`apply_chat_template`).
-- Compatibilidad con text-generation-inference y endpoints compatibles.
-- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo thinking explícito.
+- Generacion de texto y razonamiento matematico paso a paso (chain-of-thought) para problemas de nivel escolar.
+- Comprension de problemas matematicos redactados en frances (lectura), aunque la respuesta se genera en ingles.
+- Resolucion de problemas matematicos en ingles con rendimiento equiparable al modelo base.
+- Soporte de votacion por mayoria (vote@8) para mejorar la precision en problemas en frances.
+- Capacidad de generar soluciones con formato de respuesta final en `\boxed{}`.
+- Soporte de plantilla de chat (chat template) para conversaciones con roles system/user/assistant.
+- Capacidades multilingues limitadas a fr y en.
+- No se documenta soporte de tool calling, function calling, agentes, vision ni audio en la informacion disponible.
 
 ## Casos de uso
 
-- **Asistencia educativa en francés**: el modelo puede recibir un problema de matemáticas redactado en francés y devolver la solución paso a paso en inglés, útil para estudiantes francófonos que quieran ver el razonamiento en inglés o para docentes que preparen materiales bilingües.
-- **Evaluación de comprensión lectora matemática**: sirve como componente para medir si un sistema entiende enunciados en francés, comparando su salida con la de modelos que responden en francés.
-- **Generación de datos sintéticos bilingües**: al resolver problemas en francés y producir explicaciones en inglés, puede emplearse para crear pares de datos (enunciado francés, solución inglesa) para otros entrenamientos.
-- **Prototipado de tutores matemáticos**: con 1,5B parámetros cabe en GPUs de consumo, lo que permite desplegar un tutor local que resuelva problemas escolares en francés sin depender de la nube.
-- **Investigación en adaptación lingüística**: el modelo y su repositorio de código sirven como referencia reproducible para estudiar destilación auto-consistente y ajuste LoRA en modelos pequeños.
-- **Integración en pipelines de CI/CD para validación de traducciones**: puede usarse para comprobar si una traducción automática de un problema matemático conserva la resolubilidad, detectando traducciones que rompen el enunciado.
-- **Chatbot de apoyo a la resolución de deberes**: integrado en una interfaz conversacional, gestiona turnos múltiples para aclarar pasos intermedios de un problema en francés.
+- **Tutoria matematica en frances para estudiantes**: el modelo puede recibir un problema redactado en frances y generar un razonamiento paso a paso que el estudiante pueda seguir, aunque la explicacion final se produzca en ingles. Es adecuado para entornos bilingues donde el alumno comprende ambos idiomas.
+- **Generacion de soluciones para bancos de problemas en frances**: se puede integrar en un pipeline que reciba problemas de GSM8K traducidos al frances y genere soluciones verificables, usando votacion por mayoria para aumentar la fiabilidad.
+- **Evaluacion comparativa de modelos multilingues**: sirve como referencia de hasta donde puede llegar un modelo pequeno (1,5B) especializado en matematicas tras un ajuste LoRA economico, util para investigadores que estudien transferencia cross-lingual.
+- **Prototipado rapido en hardware de consumo**: al caber en una GPU de 16 GB (RTX 5060 Ti) y entrenarse en menos de dos horas, es adecuado para experimentos de investigacion con recursos limitados.
+- **Preprocesamiento de problemas matematicos en frances**: el modelo puede leer y estructurar problemas en frances para su posterior procesamiento, aunque la salida sea en ingles.
+- **Generacion de datos sinteticos de razonamiento matematico**: las soluciones generadas pueden emplearse como datos de entrenamiento o aumentacion para otros modelos, especialmente en contextos bilingues fr-en.
+- **Investigacion en destilacion cross-lingual**: el codigo y las evaluaciones estan disponibles en el repositorio de GitHub del autor, lo que facilita reproducir y extender el metodo.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor en MGSM (250 problemas de nivel escolar, decodificación greedy):
+Resultados de la model card (decodificacion greedy, n=250):
 
-| Modelo | MGSM-fr | MGSM-en |
+| Modelo | MGSM-fr (250) | French dev set (250) | MGSM-en (250) |
+|---|---|---|---|
+| Qwen2.5-Math-1.5B-Instruct (base) | 38,8% | 36,0% | 86,0% |
+| v1 (2,7k ejemplos, solo opus-mt) | 57,6% | 57,2% | 85,6% |
+| v2 (13,6k ejemplos, opus-mt + Luth) | 67,2% | 65,6% | 82,8% |
+| v3 (este modelo) | 68,0% | 65,6% | 86,4% |
+
+Resultados con votacion por mayoria (8 muestras, temperatura 0,7):
+
+| Metrica | MGSM-fr | French dev set |
 |---|---|---|
-| Qwen2.5-Math-1.5B-Instruct | 38,8% | 86,0% |
-| Qwen2.5-Math-1.5B-French | 57,6% (+18,8) | 85,6% |
+| greedy | 68,0% | 65,6% |
+| single sample | 67,0% | 65,9% |
+| vote@8 | 74,0% | 72,8% |
+| pass@8 | 83,6% | 86,8% |
 
-El fine-tune mejora la precisión en francés en 18,8 puntos porcentuales y mantiene prácticamente intacto el rendimiento en inglés (pérdida de 0,4 puntos). El autor indica que cierra aproximadamente el 40% de la brecha entre francés e inglés, que sigue siendo de 28 puntos.
+Comparativa con kurakurai/Luth-2-2B (modelo frances de 2B, greedy):
+
+| Metrica | Este modelo (1,5B) | Luth-2-2B (2B) |
+|---|---|---|
+| MGSM-fr, greedy | 68,0% | 77,2% |
+| MGSM-fr, vote@8 | 74,0% | 77,2% (greedy) |
+| French MATH-500 (primeros 200) | 65,0% (medido en v1) | 62,0% |
+| MGSM-en | 86,4% | 80,4% |
 
 ## Requisitos de hardware
 
-- **VRAM estimada para inferencia**: en bfloat16, los pesos ocupan aproximadamente 3,1 GB; con overhead de activaciones y KV cache, se estiman entre 4 y 6 GB para contextos moderados. En cuantización de 8 bits, alrededor de 2 GB; en 4 bits, alrededor de 1,2 GB (estimaciones, no publicadas por el autor).
-- **GPU recomendadas**: RTX 5060 Ti 16 GB (usada por el autor para el entrenamiento), RTX 4090, A100, H100. Cualquier GPU con al menos 6 GB de VRAM puede ejecutar el modelo en bfloat16.
-- **Consumer GPU**: sí, cabe en GPUs de consumo como RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090, e incluso en modelos con 8 GB en cuantización.
-- **Opciones de despliegue**: transformers (código de ejemplo en la model card), text-generation-inference (tag `text-generation-inference`), endpoints compatibles. No se confirma soporte explícito de vLLM, llama.cpp u Ollama, aunque al ser un modelo Qwen2 denso en safetensors es probable que sean compatibles (no verificado).
-- **Latencia y throughput**: no disponibles. El entrenamiento completo requirió unos 25 minutos en una RTX 5060 Ti 16 GB.
+- **VRAM estimada para inferencia**: el modelo tiene 1,5B parametros. En bfloat16 requiere aproximadamente 3 GB de VRAM solo para los pesos, mas overhead de activaciones y cache KV. En cuantizacion de 8 bits rondaria los 1,5-2 GB, y en 4 bits alrededor de 1 GB (aunque no se documentan cuantizaciones oficiales).
+- **GPU recomendadas**: cualquier GPU con al menos 8 GB de VRAM es suficiente para inferencia en bfloat16 con contexto moderado. Se ha entrenado en una RTX 5060 Ti de 16 GB.
+- **Cabe en GPU de consumo**: si, en tarjetas como RTX 3060 (12 GB), RTX 4060 Ti (16 GB), RTX 4090 (24 GB) y similares.
+- **Opciones de despliegue**: transformers (documentado en la model card), text-generation-inference (tag `text-generation-inference`), y endpoints compatibles (tag `endpoints_compatible`). No se documenta soporte explicito de vLLM, llama.cpp ni Ollama en la informacion disponible.
+- **Latencia y throughput**: no disponibles en la informacion proporcionada. El autor indica que la votacion por mayoria con 8 muestras cuesta 8 veces el computo de una respuesta greedy.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | MGSM-fr | MGSM-en | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | MGSM-fr | MGSM-en | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen2.5-Math-1.5B-French | 1,54B | no disponible | 57,6% | 85,6% | Apache 2.0 | Hugging Face |
-| Qwen2.5-Math-1.5B-Instruct | 1,54B | no disponible | 38,8% | 86,0% | Apache 2.0 | Hugging Face |
-| Qwen2.5-Math-7B-Instruct | 7,6B (aprox.) | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face |
-
-La comparativa se limita al modelo base y a la variante de mayor tamaño de la familia Qwen2.5-Math, para la que no se han publicado resultados de MGSM en la información disponible. No se dispone de datos de otros modelos comparables de 1,5B especializados en matemáticas y francés.
+| GAMINGZI/qwen2.5-math-1.5b-french | 1,5B | no disponible | 68,0% (greedy) / 74,0% (vote@8) | 86,4% | Apache 2.0 | Hugging Face |
+| Qwen/Qwen2.5-Math-1.5B-Instruct (base) | 1,5B | 32.768 (segun modelo base, no confirmado en esta ficha) | 38,8% | 86,0% | Apache 2.0 | Hugging Face |
+| kurakurai/Luth-2-2B | 2B | no disponible | 77,2% (greedy) | 80,4% | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
-- **Idioma de salida**: el modelo lee francés pero responde en inglés, porque fue entrenado para reproducir su propio razonamiento en inglés. No es adecuado si se requiere una respuesta final en francés.
-- **Brecha persistente**: sigue siendo 28 puntos más débil en francés que en inglés (57,6% frente a 85,6% en MGSM).
-- **Datos de entrenamiento traducidos automáticamente**: el francés visto durante el entrenamiento es traducción automática, por lo que puede contener construcciones poco naturales.
-- **Alcance evaluado limitado**: solo se ha evaluado en problemas de aritmética de nivel escolar (grade-school). No hay pruebas en matemáticas de secundaria o nivel bac.
-- **Riesgo de alucinación**: como todo modelo generativo pequeño, puede producir pasos de razonamiento plausibles pero incorrectos, especialmente en problemas con muchos pasos o números grandes.
-- **Sesgos**: no se documentan sesgos específicos; al derivar de Qwen2.5-Math, hereda los sesgos del modelo base y de los datos de GSM8K.
-- **Licencia**: Apache 2.0, permite uso comercial, pero se recomienda revisar la licencia del modelo base Qwen2.5-Math-1.5B-Instruct, enlazada en la model card.
-- **Madurez**: el modelo tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado en noviembre de 2026; no hay evidencia de uso en producción ni validación independiente.
+- **Idioma de respuesta**: el modelo lee frances pero responde en ingles, porque fue entrenado para reproducir su propio razonamiento en ingles. No genera respuestas finales en frances.
+- **Datos de entrenamiento traducidos automaticamente**: las preguntas de entrenamiento son traducciones automaticas (opus-mt y Luth-2-2B), lo que puede introducir artefactos o expresiones poco naturales en frances.
+- **Brecha con modelos franceses mas grandes**: en MGSM-fr greedy, Luth-2-2B (2B) supera a este modelo en 9,2 puntos (77,2% frente a 68,0%). La brecha se reduce con vote@8 pero no es una comparacion equivalente.
+- **Riesgo de alucinacion**: como todo modelo de lenguaje, puede generar razonamientos plausibles pero incorrectos, especialmente en problemas matematicos complejos o con contexto ambiguo.
+- **Sesgos**: no se documentan sesgos especificos en la informacion disponible; al derivar de Qwen2.5-Math, hereda los sesgos del modelo base y de los datos de GSM8K.
+- **Limitaciones de contexto**: no se especifica la longitud de contexto efectiva tras el ajuste; el modelo base soporta 32.768 tokens, pero no se confirma que se mantenga.
+- **Ruido en las metricas**: el autor indica un ruido de aproximadamente ±3 puntos con n=250, por lo que las diferencias pequenas entre versiones deben interpretarse con cautela.
+- **Licencia**: Apache 2.0 permite uso comercial, pero se recomienda revisar la licencia del modelo base Qwen2.5-Math-1.5B-Instruct y de los datos de GSM8K.
+- **Uso en produccion**: la limitacion de responder en ingles puede ser un impedimento para aplicaciones dirigidas a usuarios francoparlantes que esperen respuestas en frances.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/GAMINGZI/qwen2.5-math-1.5b-french
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Math-1.5B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-Math-1.5B-Instruct/blob/main/LICENSE
-- Repositorio de código, evaluaciones y resultados negativos: https://github.com/GAMINGZIYADX/small-math-tuning
+- Modelo de comparacion Luth-2-2B: https://huggingface.co/kurakurai/Luth-2-2B
+- Repositorio GitHub con codigo, evaluaciones y resultados negativos: https://github.com/GAMINGZIYADX/small-math-tuning
 - Dataset GSM8K: https://huggingface.co/datasets/openai/gsm8k
-- Modelo de traducción usado: https://huggingface.co/Helsinki-NLP/opus-mt-en-fr

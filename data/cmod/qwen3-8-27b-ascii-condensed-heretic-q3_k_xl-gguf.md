@@ -1,114 +1,101 @@
 # cmod/Qwen3.8-27B-ASCII-Condensed-Heretic-Q3_K_XL-GGUF
 
 ## Resumen
+Qwen3.8-27B-ASCII-Condensed-Heretic-Q3_K_XL-GGUF es una cuantización GGUF del modelo Qwen3.8-27B, publicada por el usuario cmod, construida sobre la versión "abliterated" y "uncensored" de 0bserverx. El modelo base es un transformer denso de 27B parámetros (26.090.566.656 parámetros reales según safetensors) derivado de la familia Qwen3.8, al que se le ha aplicado un proceso de abliteration para eliminar los rechazos sistemáticos y se le ha reducido el vocabulario a un conjunto ASCII de 128.190 tokens (frente a los 248.320 originales).
 
-Qwen3.8-27B-ASCII-Condensed-Heretic-Q3_K_XL-GGUF es una cuantización GGUF del modelo 0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored, publicada por el usuario cmod. Se trata de una variante "abliterated" (es decir, con las direcciones de rechazo eliminadas del espacio de activaciones) del modelo Qwen3.8-27B de Alibaba, cuantizada en formato Q3_K_XL dinámico de Unsloth y reempaquetada con un vocabulario reducido a caracteres ASCII. El objetivo declarado es ejecutar una ventana de contexto de 131.072 tokens sobre una única GPU de 16 GB, manteniendo el modelo completo y su caché KV en la tarjeta.
+La innovación principal de esta ficha no es el modelo en sí, sino el empaquetado: el autor combina los pesos UD-Q3_K_XL (Dynamic 3.1) de Unsloth con las 60 matrices modificadas por la abliteration, aplica la reducción de vocabulario ASCII y añade decodificación especulativa por n-gramas. Según las mediciones del autor en una RTX 5080 de 16 GB, esto permite ejecutar una ventana de contexto de 131.072 tokens con el modelo y la caché KV completamente en la tarjeta, con velocidades de hasta 111 tok/s en código a 114K de profundidad y cero rechazos directos en 100 prompts de prueba.
 
-El modelo tiene 26.090.566.656 parámetros reales (aproximadamente 26,1 mil millones), lo que lo sitúa en la categoría de modelos densos de tamaño medio-grande. La receta combina tres decisiones técnicas: pesos UD-Q3_K_XL de Unsloth con las 60 matrices que la abliteración modificó sustituidas por las versiones del modelo heretic; un tokenizador recortado de 248.320 a 128.190 tokens conservando solo los tokens ASCII y los 256 tokens de byte; y decodificación especulativa mediante drafter n-gram de llama.cpp, que no consume VRAM adicional.
+Es relevante ahora porque demuestra que es posible mantener un contexto largo real (más de 100K tokens) en hardware de consumo de 16 GB mediante una combinación agresiva de cuantización dinámica, poda de vocabulario y decodificación especulativa sin coste adicional de VRAM. La licencia es Apache 2.0 y el idioma declarado es únicamente inglés.
 
-La relevancia de esta ficha radica en que documenta un caso extremo de optimización de memoria para inferencia local: contexto largo en hardware de consumo, con métricas concretas de velocidad, ventana efectiva y calidad (KLD) medidas sobre una RTX 5080 de 16 GB. Es, por tanto, un artefacto de interés para quienes despliegan modelos abliterated en local y necesitan estimar compromisos entre ventana, cuantización de caché y throughput.
-
-## Especificaciones tecnicas
-
-| Parametro | Valor |
+## Especificaciones técnicas
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (Qwen3.8), con cabeza de predicción multi-token (MTP) en `blk.64.*` |
-| Parametros totales | 26.090.566.656 (26,1 B) |
-| Parametros activos | no disponible (modelo denso, no MoE) |
-| Longitud de contexto | 131.072 tokens nativos; en la práctica 131.072 en GPU de 16 GB con la configuración recomendada, 112.640 con margen de seguridad |
-| Tipos de cuantizacion | GGUF Q3_K_XL dinámico (Unsloth UD-Q3_K_XL); caché KV en q4_0 o q8_0 |
-| Idiomas soportados | Inglés (declarado); otros alfabetos funcionan con penalización por el vocabulario ASCII |
+| Arquitectura | Transformer denso (familia Qwen3.8), con cabeza MTP opcional para decodificación especulativa |
+| Parámetros totales | 26.090.566.656 (26,09B) |
+| Parámetros activos | No aplica (modelo denso) |
+| Longitud de contexto | 131.072 tokens (perfil long); 90.112 (perfil fast); 73.728 (perfil quality) |
+| Tipos de cuantización | Q3_K_XL (Dynamic 3.1 de Unsloth) con imatrix; variante adicional IQ4_NL-MTP de 14,55 GiB |
+| Idiomas soportados | Inglés (declarado en la model card) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (llama.cpp) |
-| Tamano del repo | 12,7 GB |
-| Tamano del archivo principal | 11,60 GiB |
-| SHA256 del GGUF principal | `c0d48dc21a51c920230992edc328d967f298bde6b5229db708d1f57ac208ea79` |
-| Modelo base | 0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored |
-| Vocabulario | 128.190 tokens (recortado desde 248.320; solo ASCII + 256 tokens de byte) |
-| Distancia al modelo de precisión completa (KLD media) | 0,0898 ± 0,0015 |
 
 ## Arquitectura y entrenamiento
+El modelo subyacente es un transformer denso de la familia Qwen3.8 con 26,09B parámetros. Sobre él se aplicó un proceso de abliteration (identificación y supresión de la dirección de activación asociada a los rechazos) que dio lugar al modelo base 0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored. Esta cuantización concreta parte de los pesos UD-Q3_K_XL (Dynamic 3.1) de Unsloth, sustituye las 60 matrices afectadas por la abliteration y conserva el resto de tensores de Unsloth byte a byte. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo base.
 
-La arquitectura subyacente es un transformer denso de Qwen3.8 con aproximadamente 26,1 mil millones de parámetros y una ventana nativa de 131.072 tokens. El modelo incorpora una cabeza de predicción multi-token (MTP) ubicada en el bloque `blk.64.*`, que puede emplearse como segundo drafter en decodificación especulativa; llama.cpp la omite si no se solicita `draft-mtp`, por lo que no consume memoria en el perfil por defecto. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni el proceso de alineación (RLHF/DPO) del modelo original en la información proporcionada.
-
-El proceso de construcción de esta variante consta de tres etapas documentadas. Primero, se parte de los pesos UD-Q3_K_XL (Dynamic 3.1) de Unsloth y se sustituyen las 60 matrices de pesos que la abliteración modificó por las del modelo heretic; el resto de tensores se mantiene byte a byte respecto al archivo de Unsloth. Segundo, se recorta el tokenizador de 248.320 a 128.190 tokens, conservando todos los tokens compuestos exclusivamente por texto ASCII y los 256 tokens de byte, lo que libera espacio para aproximadamente 11.000 tokens adicionales de ventana. Tercero, se habilita decodificación especulativa mediante el drafter n-gram de llama.cpp (`--spec-type ngram-mod`), que reutiliza texto ya presente en la ventana y no requiere VRAM extra. Adicionalmente, se publica la abliteración como LoRA en F16 (`Qwen3.8-27B-Heretic-ablation-LoRA-F16.gguf`) para su reutilización.
+Las innovaciones técnicas del empaquetado son tres. Primera, la poda del vocabulario de 248.320 a 128.190 tokens mediante un conjunto ASCII, que libera espacio suficiente para los últimos 11K tokens de ventana; según el autor, el inglés y el código tokenizan exactamente igual que antes, y las distribuciones next-token ASCII se mantienen idénticas (top-20 idénticos en 37/37 comprobaciones, con diferencias de log-probabilidad inferiores a 8e-7). Segunda, la decodificación especulativa por n-gramas (`--spec-type ngram-mod`), que no consume VRAM adicional y triplica aproximadamente la velocidad en código a gran profundidad de contexto. Tercera, la posibilidad de usar la cabeza MTP propia del modelo (`blk.64.*`) como drafter en el perfil fast, que es el único que acelera prosa nueva (unas 2×) a cambio de unos 950 MiB de ventana.
 
 ## Capacidades
-
-- Generación de texto conversacional y de código, con modo de razonamiento (thinking) activado por defecto en la plantilla de chat de Qwen3.8 y desactivable por petición mediante `chat_template_kwargs`.
-- Razonamiento de múltiples pasos y tareas agénticas: edición de archivos, llamadas a herramientas y citas de código, que son precisamente los patrones que el drafter n-gram explota para acelerar la decodificación.
-- Recuperación de información en contexto largo: en la model card se reporta un recall de 80 de 80 hechos plantados a 115.000 tokens de profundidad.
-- Capacidad multilingüe limitada: el vocabulario ASCII preserva el tokenizado exacto de inglés y código, pero otros alfabetos siguen funcionando con un coste adicional en tokens (no cuantificado en la información disponible).
-- Modo "uncensored": la abliteración elimina los rechazos explícitos; se reportan 0 y 1 rechazos ("I can't…") sobre 200 prompts dañinos, frente a 100 y 94 del modelo sin modificar.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere integración con servidores compatibles con la API de llama.cpp.
-- No se declaran capacidades de visión, audio ni tool calling nativo más allá de lo que soporte la plantilla del Qwen3.8 base (no disponible en detalle).
+- Generación de texto conversacional en inglés con modo de pensamiento (thinking) activado por defecto; se puede desactivar por petición con `chat_template_kwargs: {"enable_thinking": false}`.
+- Generación de código, con velocidades especialmente altas en contexto profundo gracias a la decodificación especulativa por n-gramas.
+- Contexto largo real: 131.072 tokens con modelo y caché KV en una GPU de 16 GB; el autor reporta 80/80 hechos recordados a 115K de profundidad.
+- Comportamiento "abliterated/uncensored": cero rechazos directos en 100 prompts de los conjuntos de prueba del autor (aunque aproximadamente la mitad de las respuestas abren con advertencias que los clasificadores cuentan como rechazo).
+- Compatibilidad con llama.cpp y endpoints compatibles (`endpoints_compatible` en los tags).
+- Decodificación especulativa con n-gramas y con cabeza MTP (perfil fast).
+- No se ha documentado soporte de tool calling, function calling, agentes multi-paso, visión ni audio en la información disponible.
 
 ## Casos de uso
-
-- Asistentes de código en local sobre GPU de consumo: con 131.072 tokens de ventana y 465 tok/s en decodificación superficial con drafting n-gram, el modelo puede mantener un repositorio mediano en contexto y responder ediciones sin salir de una RTX 5080 de 16 GB.
-- Agentes autónomos con historial largo: el drafter n-gram acelera precisamente las respuestas que repiten contexto (ediciones, llamadas a herramientas, código citado), con 111,2 tok/s medidos a 114.642 tokens de profundidad en tarea de código.
-- Análisis de documentos extensos con recuperación verificada: el recall de 80/80 hechos a 115.000 tokens lo hace adecuado para preguntas sobre contratos, informes o bases de conocimiento de decenas de miles de tokens.
-- Generación de código en pipelines de CI/CD: el formato GGUF y la compatibilidad con llama-server permiten desplegarlo como servicio HTTP interno para revisión de parches, generación de tests o documentación técnica.
-- Experimentación en investigación sobre alineación y abliteración: la publicación de la LoRA de abliteración en F16 y las métricas de KLD (0,0898 ± 0,0015) permiten reproducir y medir el efecto de eliminar direcciones de rechazo sobre la distribución de salida.
-- Evaluación de decodificación especulativa: los tres perfiles documentados (long, fast, quality) con velocidades y ventanas medidas constituyen un banco de pruebas reproducible para comparar drafters n-gram frente a MTP.
-- Despliegue de chat sin censura en entornos controlados: para investigación sobre generación de contenido sensible o simulación de adversarios, con la advertencia legal y ética correspondiente.
+- Asistente de código con contexto de repositorio completo: con 131K tokens de ventana y 111 tok/s en código a 114K de profundidad, se puede cargar un repositorio mediano o varios ficheros grandes en el contexto y mantener conversaciones de refactorización sin recortar.
+- Análisis de documentos largos en local: informes, contratos o expedientes de decenas de miles de tokens que caben íntegros en la ventana, ejecutados en una única GPU de 16 GB sin depender de la nube.
+- Despliegue en estaciones de trabajo con RTX 5080 o similar: el perfil long por defecto permite servir un asistente conversacional con contexto largo en hardware de consumo, usando llama-server con los flags documentados.
+- Generación de código en pipelines internos: la velocidad en código (hasta 465 tok/s en prompts cortos con drafting) y la compatibilidad con endpoints lo hacen apto para tareas de autocompletado o generación por lotes en entornos controlados.
+- Investigación sobre alineación y abliteration: el repositorio incluye la abliteration como LoRA F16 (`Qwen3.8-27B-Heretic-ablation-LoRA-F16.gguf`, 263 MiB) y registros de medición en `recipe/`, lo que permite reproducir y comparar el efecto de la abliteration sobre la fidelidad (KLD) y las tasas de rechazo.
+- Evaluación de cuantizaciones dinámicas: los datos de KLD frente a Q8_0 (0,0898 ± 0,0015 para este fichero frente a 0,0835 del stock de Unsloth) sirven como referencia para estudiar el coste de fidelidad de Q3_K_XL con matrices injertadas.
+- Despliegue en tarjetas de 24 GB tipo P40: la variante IQ4_NL-MTP de 14,55 GiB con cabeza MTP está pensada específicamente para esa clase de hardware.
 
 ## Benchmarks y rendimiento
+Los datos disponibles son mediciones del autor, no benchmarks estándar de la comunidad (MMLU, HumanEval, GSM8K no están publicados en la información proporcionada).
 
-Datos medidos por el autor sobre una RTX 5080 de 16 GB, decodificación greedy y thinking desactivado. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+| Métrica | Este fichero | Unsloth 3.1 (stock) | Abliterated Q8_0 | Referencia |
+|---|---|---|---|---|
+| KLD media vs Q8_0 propio | 0,0898 ± 0,0015 | 0,0835 ± 0,0014 | — | — |
+| Percentil 99 KLD | 1,594 | 1,521 | — | — |
+| Mismo token top-1 | 91,62% | 91,75% | — | — |
+| Perplejidad | 3,848 | 3,801 | — | — |
+| Rechazos (mlabonne, keywords/frases/clasificador, por 100) | 53 / 0 / 44 | 100 / 100 / 99 | 55 / 0 / 46 | Base Q8_0: 100 / 100 / 98 |
+| Rechazos (JBB refusal, por 100) | 46 / 1 / 41 | 96 / 94 / 96 | 46 / 1 / 46 | — |
+| Rechazos (JBB benign, por 100) | 7 / 0 / 9 | 38 / 30 / 38 | 7 / 1 / 11 | — |
 
-| Perfil | Ventana (tokens) | Decode tok/s, código profundo | Decode tok/s, código superficial | Decode tok/s, prosa superficial | Prompt tok/s, profundo | VRAM libre tras tarea profunda (MiB) |
-|---|---|---|---|---|---|---|
-| long (n-gram, recomendado) | 131.072 | 111,2 a 114.642 | 465 | 59 | 1.176 | 624 |
-| long sin drafting | 131.072 | 37,0 a 114.642 | 59 | 59 | 1.176 | 626 |
-| fast (MTP + n-gram) | 90.112 | 149,9 a 78.853 | 474 | 113 | 1.246 | 210 |
-| quality (caché q8_0 + n-gram) | 73.728 | 137,0 a 64.897 | 329 | 59 | 1.391 | 711 |
+| Perfil | Ventana | Código tok/s en profundidad | Prosa tok/s | Flags adicionales |
+|---|---|---|---|---|
+| long (por defecto) | 131.072 | 111 a 115K | 59 | `--spec-type ngram-mod` |
+| fast | 90.112 | 150 a 79K | 113 | `--spec-type draft-mtp,ngram-mod -ctkd q4_0 -ctvd q4_0` |
+| quality | 73.728 | 137 a 65K | 59 | `-ctk q8_0 -ctv q8_0` |
 
-| Métrica de calidad | Valor |
-|---|---|
-| KLD media frente al modelo de precisión completa | 0,0898 ± 0,0015 |
-| KLD media del archivo de Unsloth frente a su propio modelo | 0,0835 ± 0,0014 |
-| Rechazos explícitos sobre 200 prompts dañinos | 0 y 1 de 100 |
-| Rechazos del modelo sin modificar (referencia) | 100 y 94 |
-| Recall de 80 hechos plantados a 115K tokens | 80 de 80 |
+El autor reporta además 80/80 hechos recordados a 115K de profundidad y cero rechazos directos en 100 prompts. Las pruebas de McNemar indican que la cuantización conserva la abliteration (p = 1,00 / 1,00 / 0,30 frente al modelo abliterated de precisión completa). Todas las mediciones se realizaron en una RTX 5080 de 16 GB.
 
 ## Requisitos de hardware
-
-- VRAM estimada: el archivo principal ocupa 11,60 GiB; con caché KV a 4 bits, cada 16.384 tokens de ventana consume 288 MiB. La ventana completa de 131.072 tokens cabe en 16 GB con 624 MiB libres tras una tarea profunda, siempre que el resto del sistema no ocupe la GPU.
-- GPU recomendadas: RTX 5080 de 16 GB (medida por el autor); cualquier GPU con 16 GB o más (RTX 4080, RTX 4090, A100, H100) permite ventanas mayores o caché de mayor precisión. En GPUs de 24 GB cabría la ventana completa con caché q8_0.
-- Cabe en GPU de consumo: sí, en modelos de 16 GB con la configuración documentada; en GPUs de 12 GB no se ha validado y probablemente requiera descargar capas a CPU o reducir ventana.
-- Opciones de despliegue: llama.cpp (`llama-server`) es el motor de referencia; también es compatible con Ollama y otros frontends que consuman GGUF. vLLM y TGI no se mencionan en la información disponible para este formato.
-- Throughput y latencia: 1.176-1.391 tok/s de prompt en contexto profundo; 465-474 tok/s de decodificación superficial con drafting; 37 tok/s sin drafting a 114K tokens de profundidad, frente a 111,2 tok/s con n-gram.
-- Ajuste de memoria: `-ot 'token_embd\.weight=CPU'` mantiene la matriz de embeddings en RAM del sistema sin coste de velocidad; `-ub 128 -b 512` reduce los buffers de cómputo; `-np 1` evita dividir la ventana entre slots.
+- VRAM estimada: el fichero principal pesa 11,60 GiB; con caché KV q4_0, cada 16K de ventana cuesta 288 MiB. El perfil long de 131.072 tokens cabe en 16 GB; el perfil fast consume unos 950 MiB adicionales de ventana por la cabeza MTP.
+- GPU recomendadas: RTX 5080 de 16 GB (hardware de referencia del autor). La variante IQ4_NL-MTP de 14,55 GiB está pensada para tarjetas de 24 GB tipo P40. No se documentan pruebas en A100, H100 ni RTX 4090.
+- Cabe en GPU de consumo: sí, en una RTX 5080 de 16 GB con el perfil long; el autor advierte que si la tarjeta también mueve el escritorio conviene usar `-c 112640` para dejar margen.
+- Opciones de despliegue: llama.cpp (llama-server), con los flags documentados (`-ngl 99 -fa on -ctk q4_0 -ctv q4_0 -ub 128 -b 512 -np 1 -ot 'token_embd\.weight=CPU' --spec-type ngram-mod`). No se mencionan vLLM, Ollama ni TGI.
+- Latencia y throughput: 111 tok/s en código a 115K de profundidad, 465 tok/s en código con prompt corto, 59 tok/s en prosa (perfil long); 150 tok/s en código a 79K y 113 tok/s en prosa (perfil fast); 137 tok/s en código a 65K (perfil quality).
+- Nota de compilación: el autor advierte de un posible `cudaMalloc failed: out of memory` con memoria libre, porque llama.cpp estándar asigna los pesos como un bloque de 11 GiB; proporciona dos parches en `recipe/tools/`.
 
 ## Comparativa con modelos similares
-
 | Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-ASCII-Condensed-Heretic-Q3_K_XL (este) | 26,1 B | 131.072 | Apache 2.0 | GGUF Q3_K_XL | Abliterated, vocabulario ASCII, 16 GB |
-| 0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored | 26,1 B (no confirmado) | no disponible | no disponible | safetensors (presumible) | Modelo base de este GGUF |
-| Qwen3.8-27B (original de Alibaba) | 26,1 B (no confirmado) | 131.072 (según este derivado) | no disponible | no disponible | Sin abliterar; rechaza 100/94 de 200 prompts dañinos |
-| UD-Q3_K_XL de Unsloth (referencia de cuantización) | 26,1 B | 131.072 | no disponible | GGUF | KLD 0,0835 frente a su modelo completo |
+| Este fichero (cmod) | 26,09B | 131.072 | Apache 2.0 | GGUF Q3_K_XL | Abliterated, vocabulario ASCII, n-gram drafting |
+| Unsloth UD-Q3_K_XL (stock) | 26,09B | Limitado por VRAM (sin poda de vocabulario) | Apache 2.0 | GGUF Q3_K_XL | Sin abliteration; 100/100/99 rechazos en mlabonne |
+| Abliterated Q8_0 (0bserverx) | 26,09B | No disponible | Apache 2.0 | safetensors/GGUF | Referencia de fidelidad; 55/0/46 rechazos en mlabonne |
+| Variante IQ4_NL-MTP (mismo autor) | 26,09B | No disponible | Apache 2.0 | GGUF IQ4_NL | 14,55 GiB, con MTP, para tarjetas de 24 GB |
 
-No se dispone de datos de benchmarks estándar ni de comparativas con otros modelos de la misma categoría (por ejemplo, Llama 3.3 70B o Mistral Large) en la información proporcionada.
+No se dispone de datos de benchmarks estándar (MMLU, HumanEval, GSM8K) para ninguno de estos modelos en la información proporcionada, por lo que la comparación se limita a fidelidad, rechazos, contexto alcanzable y requisitos de hardware.
 
 ## Limitaciones y advertencias
-
-- La abliteración elimina los rechazos de forma deliberada: el modelo responderá a peticiones dañinas. No es apto para despliegues públicos sin filtros externos y puede generar contenido ilegal o dañino según la jurisdicción.
-- El recorte del vocabulario a ASCII degrada el tokenizado de idiomas no latinos (cirílico, árabe, CJK, etc.): más tokens por carácter, menor ventana efectiva y posible pérdida de calidad en esas lenguas. Solo el inglés está declarado oficialmente.
-- La cuantización Q3_K_XL introduce un error medible: KLD de 0,0898 frente al modelo completo, ligeramente superior al 0,0835 del archivo de Unsloth. Para tareas sensibles a la fidelidad conviene el perfil "quality" con caché q8_0.
-- La ventana efectiva depende de la VRAM libre: un navegador abierto puede consumir cientos de MiB y reducir la ventana por debajo de 131.072 tokens; con 1.266 MiB ocupados, 118.784 tokens no cargaron.
-- El perfil "fast" con MTP reduce la ventana a 90.112 tokens y deja solo 210 MiB libres, lo que lo hace frágil ante cualquier otro consumo de GPU.
-- Riesgo de alucinación: no se han publicado evaluaciones de factualidad ni de benchmarks de razonamiento; el recall de 80/80 mide recuperación de hechos plantados, no veracidad.
-- La licencia Apache 2.0 del derivado no exime de las obligaciones que pueda imponer la licencia del modelo base original de Qwen, no confirmada en la información disponible.
-- El modelo tiene 0 descargas y 0 likes en el momento de la consulta: no hay validación comunitaria independiente de las métricas reportadas, que proceden únicamente del pipeline del autor.
-- El tamaño del repo (12,7 GB) incluye archivos auxiliares; el GGUF principal es de 11,60 GiB y conviene verificar el SHA256 antes de desplegar.
+- Modelo "abliterated/uncensored": elimina deliberadamente los rechazos, lo que implica un riesgo elevado de generar contenido dañino, sesgado o inapropiado sin filtros. No es apto para aplicaciones de cara al público sin moderación adicional.
+- La abliteration no es perfecta: aproximadamente la mitad de las respuestas en los conjuntos de rechazo abren con advertencias, y las tasas de rechazo varían según el clasificador empleado (53/0/44 en mlabonne).
+- El idioma declarado es únicamente inglés; no hay evidencia de capacidades multilingües y el vocabulario ASCII podría degradar idiomas no ingleses.
+- Riesgo de alucinación inherente a los modelos de 27B; el autor reporta 80/80 hechos recordados a 115K, pero esto no elimina el riesgo general.
+- Fidelidad ligeramente inferior al stock: KLD de 0,0898 frente a 0,0835 de Unsloth 3.1, un 7% más lejos de su referencia, por el redondeo estándar de llama.cpp en los 60 tensores injertados.
+- La poda de vocabulario, aunque el autor demuestra equivalencia en ASCII (top-20 idénticos, diferencias < 8e-7), no está verificada de forma independiente.
+- Requiere compilaciones parcheadas de llama.cpp en algunos entornos con escritorio activo; sin los parches de `recipe/tools/` puede fallar la asignación de VRAM.
+- Licencia Apache 2.0 permite uso comercial, pero el contenido generado por un modelo sin censura puede incumplir políticas de plataforma o legislación según el contexto de uso.
+- Fecha de creación declarada en 2026-11-13; verificar la vigencia de los enlaces y artefactos antes de usarlo en producción.
 
 ## Enlaces
-
-- Hugging Face: https://huggingface.co/cmod/Qwen3.8-27B-ASCII-Condensed-Heretic-Q3_K_XL-GGUF
+- Modelo en Hugging Face: https://huggingface.co/cmod/Qwen3.8-27B-ASCII-Condensed-Heretic-Q3_K_XL-GGUF
 - Modelo base: https://huggingface.co/0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored
-- LoRA de abliteración (F16): incluida en el repositorio como `Qwen3.8-27B-Heretic-ablation-LoRA-F16.gguf`
-- llama.cpp: no disponible en la información proporcionada
-- Unsloth (referencia de cuantización UD-Q3_K_XL): no disponible en la información proporcionada
-- Paper, blog o demo del autor: no disponible en la información proporcionada
+- Heretic (herramienta de abliteration): https://github.com/p-e-w/heretic
+- Refusal-Classifier: https://huggingface.co/VINAY-UMRETHE/Refusal-Classifier
+- Registros de construcción y medición: carpeta `recipe/` del repositorio (incluye `recipe/tools/` con parches)
+- No se han encontrado papers, blogs ni demos adicionales en la información proporcionada.

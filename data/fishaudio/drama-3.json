@@ -191,9 +191,9 @@
     "bsgemm-moe",
     "region:us"
   ],
-  "likes": 1304,
+  "likes": 1305,
   "downloads_30d": 44621,
-  "trending_score": 32,
+  "trending_score": 33,
   "parameters": 35899643008,
   "parameters_human": "35.90B",
   "storage_bytes": 81099016510,

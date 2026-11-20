@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "nzxyin/sparc-vocos-24k",
+  "slug": "nzxyin-sparc-vocos-24k",
+  "author": "nzxyin",
+  "url": "https://huggingface.co/nzxyin/sparc-vocos-24k",
+  "created_at": "2026-10-21T12:31:20.000Z",
+  "updated_at": "2026-11-19T22:29:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "audio",
+    "speech",
+    "vocoder",
+    "articulatory",
+    "sparc",
+    "en",
+    "dataset:parler-tts/libritts_r_filtered",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 14901274,
+  "parameters_human": "14.9M",
+  "storage_bytes": 59664986,
+  "storage_human": "60 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

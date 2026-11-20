@@ -33,7 +33,7 @@
     "conversational"
   ],
   "likes": 2,
-  "downloads_30d": 1962,
+  "downloads_30d": 1973,
   "trending_score": 0,
   "parameters": 25233142046,
   "parameters_human": "25.23B",
@@ -53,5 +53,26 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "Livesport.com - Live soccer scores, tennis, basketball and 30+ other …",
+      "url": "https://www.livesport.com/en/",
+      "snippet": "Livesport.com - fast and accurate live scores from soccer, tennis, basketball, baseball and many other sports. Livescore, results, …Read more"
+    },
+    {
+      "title": "Livesport.com – Wyniki na żywo - piłka nożna, tenis, koszykówka i 30 ...",
+      "url": "https://www.livesport.com/pl/",
+      "snippet": "Livesport.com – szybkie i dokładne wyniki na żywo z piłki nożnej , tenisa, koszykówki, baseballa i wielu innych sportów. Wyniki na …Read more"
+    },
+    {
+      "title": "Livesport.cz: Fotbal online, fotbalové live výsledky, livescore",
+      "url": "https://www.livesport.cz/",
+      "snippet": "Livesport: live výsledky, livescore i všechny dnešní fotbalové výsledky a zprávy. Premier League, LaLiga, Chance Liga, Liga mistrů a …Read more"
+    },
+    {
+      "title": "Livesport - Live NFL scores, MLB, NBA, NHL, Golf and Tennis Scores",
+      "url": "https://m.livesport.com/",
+      "snippet": "On Livesport.com homepage you will find today's scores from the top events across all sports. You can click on any sport page (e.g. …Read more"
+    }
+  ]
 }

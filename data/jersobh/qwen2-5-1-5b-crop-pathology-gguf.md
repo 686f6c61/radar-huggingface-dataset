@@ -2,50 +2,51 @@
 
 ## Resumen
 
-`jersobh/qwen2.5-1.5b-crop-pathology-gguf` es un ajuste fino (fine-tuning) del modelo base Qwen2.5-1.5B, publicado por el usuario jersobh en Hugging Face y distribuido exclusivamente en formato GGUF para su uso con llama.cpp y Ollama. El nombre del repositorio sugiere una especializacion en patologia de cultivos (crop pathology), aunque la model card no aporta detalles sobre el dataset, el proceso de entrenamiento ni el dominio concreto de aplicacion. El modelo fue entrenado y convertido a GGUF con la libreria Unsloth, segun indica el propio autor.
+`jersobh/qwen2.5-1.5b-crop-pathology-gguf` es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B, publicado por el usuario jersobh en Hugging Face y distribuido exclusivamente en formato GGUF, lo que lo hace directamente utilizable con llama.cpp y Ollama. El nombre del repositorio sugiere una especializacion en patologia de cultivos ("crop pathology"), aunque la model card no documenta el corpus de entrenamiento ni el proceso de ajuste mas alla de indicar que se realizo con Unsloth. El modelo cuenta con 1.543.714.304 parametros (aproximadamente 1,5 mil millones) y se distribuye en una unica cuantizacion Q4_K_M dentro de un repositorio de 4,9 GB.
 
-El modelo cuenta con 1.543.714.304 parametros (aproximadamente 1,5 mil millones), lo que lo situa en la categoria de modelos pequenos aptos para inferencia en hardware de consumo. El unico archivo de pesos disponible es una cuantizacion Q4_K_M, lo que reduce el peso del modelo a aproximadamente 1 GB. No se especifica la longitud de contexto, los idiomas soportados ni la licencia, mas alla de heredar implicitamente las caracteristicas del Qwen2.5-1.5B original.
+La relevancia de esta publicacion es limitada pero practica: demuestra un flujo de trabajo reproducible de ajuste fino y conversion a GGUF mediante Unsloth, e incluye un Modelfile de Ollama para despliegue inmediato. Es un ejemplo tipico de modelo de dominio vertical de bajo coste computacional, apto para inferencia en CPU o GPU de gama baja.
 
-La relevancia de esta ficha es limitada: se trata de un modelo con cero descargas y cero likes en el momento de la consulta, sin benchmarks publicados ni documentacion tecnica detallada. Resulta util unicamente como ejemplo de pipeline de fine-tuning con Unsloth y despliegue via llama.cpp/Ollama, no como modelo recomendado para produccion.
+No obstante, la informacion publicada es muy escasa: no se especifican licencia, idiomas soportados, composicion del dataset, hiperparametros de entrenamiento ni resultados de evaluacion. Cualquier uso en produccion deberia acompanarse de una validacion propia del comportamiento del modelo en la tarea objetivo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (heredada de Qwen2.5-1.5B) |
+| Arquitectura | Transformer decoder-only (base Qwen2.5-1.5B) |
 | Parametros totales | 1.543.714.304 |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q4_K_M (unico archivo publicado) |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | no disponible en la informacion proporcionada (el modelo base Qwen2.5-1.5B soporta 32.768 tokens, pero no se confirma para este ajuste) |
+| Tipos de cuantizacion | Q4_K_M (unico archivo publicado: `Qwen2.5-1.5B.Q4_K_M.gguf`) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (conversion via Unsloth); no se publican safetensors del ajuste |
+| Tamano del repositorio | 4,9 GB |
+| Herramientas de despliegue | llama.cpp (`llama-cli`), Ollama (Modelfile incluido) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente corresponde a Qwen2.5-1.5B, un transformer decoder-only con atencion causal, normalizacion RMSNorm y embeddings rotatorios (RoPE), segun la familia Qwen2.5 de Alibaba. El autor no documenta modificaciones estructurales sobre el modelo base. El ajuste fino se realizo con Unsloth, una libreria de optimizacion de entrenamiento que acelera el fine-tuning y reduce el consumo de memoria, y posteriormente se convirtio a GGUF para su uso con llama.cpp.
+El modelo se basa en la arquitectura de Qwen2.5-1.5B, un transformer decoder-only denso con atencion causal estandar y sesgo QKV, ampliamente utilizado como base para ajustes finos por su bajo coste. Sobre esta base se aplico un fine-tuning cuyo proceso exacto no se detalla en la model card: unicamente se indica que el entrenamiento y la conversion a GGUF se realizaron con Unsloth, una libreria que optimiza el ajuste fino mediante kernels personalizados y reduce el uso de memoria en comparacion con implementaciones estandar.
 
-No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset de patologia de cultivos, la presencia de RLHF/DPO ni ninguna innovacion tecnica adicional. La model card se limita a indicar el comando de uso con `llama-cli` y `llama-mtmd-cli` y a listar el unico archivo GGUF disponible. No se aporta informacion sobre el proceso de cuantizacion mas alla de la etiqueta Q4_K_M.
+No se especifica el numero de tokens de entrenamiento, la composicion del dataset (se infiere tematica de patologia vegetal por el nombre), si se aplicaron tecnicas de RLHF, DPO o SFT supervisado, ni los hiperparametros empleados. Tampoco se documenta si se modifico la longitud de contexto original del modelo base ni si se aplicaron tecnicas de destilacion o merging. La ausencia de esta informacion impide evaluar la calidad y el alcance real del ajuste.
 
 ## Capacidades
 
-- Generacion de texto conversacional, heredada del modelo base Qwen2.5-1.5B.
-- Especializacion declarada (no documentada) en patologia de cultivos, segun el nombre del repositorio.
-- Soporte de plantilla de chat Jinja mediante el flag `--jinja` de llama.cpp.
-- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que sugiere uso via API compatible con OpenAI en infraestructura de Hugging Face.
-- Soporte de tool calling y function calling: no disponible (no documentado).
-- Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (vision, audio, thinking mode): no disponible. El autor menciona `llama-mtmd-cli` para modelos multimodales, pero no confirma que este modelo lo sea.
+- Generacion de texto conversacional en formato chat (la model card incluye la etiqueta `conversational`).
+- Ajuste orientado a terminologia y casuistica de patologia de cultivos, segun el nombre del repositorio (no verificado en la model card).
+- Compatibilidad con el motor de plantillas Jinja de llama.cpp mediante el flag `--jinja`, lo que permite usar el formato de chat de Qwen2.5.
+- Soporte de despliegue en Ollama mediante el Modelfile incluido.
+- Capacidades heredadas del modelo base Qwen2.5-1.5B en generacion de texto, razonamiento basico y multilingueismo (no confirmadas para este ajuste concreto).
+- No se documenta soporte de tool calling, function calling, agentes, vision, audio ni modo thinking en la informacion proporcionada.
 
 ## Casos de uso
 
-- Prototipado de asistentes agronomicos: el modelo puede desplegarse localmente con Ollama para responder consultas sobre enfermedades de cultivos, aunque la falta de documentacion sobre el dataset de entrenamiento impide garantizar la calidad de las respuestas.
-- Despliegue en hardware de consumo: con ~1 GB en Q4_K_M, cabe en GPUs integradas o CPUs modernas, lo que permite experimentar con fine-tuning de dominio en entornos sin GPU dedicada.
-- Base para nuevos fine-tunings: al ser un modelo pequeno y en formato GGUF, sirve como punto de partida para experimentos de ajuste con Unsloth en dominios agricolas.
-- Educacion y demostraciones: util para ilustrar pipelines de entrenamiento con Unsloth y conversion a GGUF en cursos o talleres.
-- Inferencia offline en campo: su tamano reducido permite ejecutarlo en dispositivos edge o portatiles sin conexion, util para tecnicos agricolas en zonas remotas.
-- Integracion en pipelines de CI/CD para pruebas: puede usarse como modelo de sustitucion en tests automatizados de aplicaciones que consumen endpoints compatibles con OpenAI, dado el tag `endpoints_compatible`.
+- Asistencia a tecnicos agricolas: el modelo puede responder consultas en lenguaje natural sobre sintomas y enfermedades de cultivos, aprovechando el ajuste tematico, en entornos con conectividad limitada gracias a su despliegue local con Ollama o llama.cpp.
+- Triaje inicial en aplicaciones de campo: integrado en una app movil o de escritorio que ejecute llama.cpp, puede ofrecer una primera orientacion sobre posibles patologias antes de consultar a un especialista.
+- Generacion de fichas divulgativas: redaccion de descripciones breves de enfermedades y tratamientos a partir de notas tecnicas, con revision humana posterior.
+- Chatbot de soporte en portales agrarios: conversaciones multi-turno de baja latencia en CPU, adecuado para volumenes moderados de consultas y sin coste de API.
+- Prototipado rapido de asistentes verticales: sirve como base para validar flujos de ajuste fino con Unsloth y despliegue GGUF antes de escalar a modelos mayores.
+- Educacion y formacion: entorno de practicas para estudiantes de agronomia que necesiten un asistente local sin dependencia de servicios en la nube.
+- Filtrado y clasificacion de consultas: preprocesamiento de tickets o mensajes entrantes para enrutarlos a la categoria de patologia correspondiente.
 
 ## Benchmarks y rendimiento
 
@@ -53,37 +54,40 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 1-1,5 GB en Q4_K_M (el archivo pesa ~1 GB y requiere overhead de contexto).
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; RTX 3060, RTX 4060, GTX 1650 o superiores son suficientes.
-- Cabe en GPU de consumo: si, en practicamente cualquier GPU dedicada moderna e incluso en iGPU con memoria compartida.
-- Opciones de despliegue: llama.cpp (`llama-cli`), Ollama (Modelfile incluido), y potencialmente cualquier runtime compatible con GGUF (LM Studio, koboldcpp).
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia con Q4_K_M: aproximadamente 1,2-1,5 GB para los pesos, mas overhead de contexto y runtime; en la practica cabe en GPUs con 2-4 GB de VRAM.
+- GPU recomendadas: cualquier GPU consumer moderna con al menos 4 GB (RTX 3050, RTX 4060, GTX 1660, etc.); en GPU de datacenter (A100, H100) el modelo esta infrautilizado pero funciona sin problema.
+- Inferencia en CPU: viable y rapida en procesadores modernos con AVX2, dado el reducido tamano del modelo.
+- Cabe en GPU consumer: si, en practicamente cualquier GPU dedicada de los ultimos anos; tambien en iGPU con memoria unificada suficiente.
+- Opciones de despliegue: llama.cpp (`llama-cli -hf jersobh/qwen2.5-1.5b-crop-pathology-gguf --jinja`), Ollama (Modelfile incluido), y cualquier frontend compatible con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con Inference Endpoints de Hugging Face.
+- Latencia y throughput: no disponibles en la informacion proporcionada; por el tamano del modelo se espera un throughput alto en GPU y aceptable en CPU, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| jersobh/qwen2.5-1.5b-crop-pathology-gguf | 1,54 B | no disponible | no disponible | GGUF (Q4_K_M) | Hugging Face, 0 descargas |
-| Qwen2.5-1.5B (base) | 1,54 B | 32.768 tokens (segun documentacion oficial de Qwen) | Apache 2.0 (segun documentacion oficial de Qwen) | safetensors, GGUF | Amplia |
-| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens (segun documentacion oficial de Qwen) | Apache 2.0 (segun documentacion oficial de Qwen) | safetensors, GGUF | Amplia |
-| SmolLM2-1.7B-Instruct | 1,7 B | 8.192 tokens (segun documentacion oficial) | Apache 2.0 (segun documentacion oficial) | safetensors, GGUF | Amplia |
+| jersobh/qwen2.5-1.5b-crop-pathology-gguf | 1,54 B | no disponible | GGUF (Q4_K_M) | no disponible | Ajuste vertical en patologia de cultivos; sin benchmarks |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | safetensors, GGUF | Apache 2.0 | Modelo base oficial, con evaluaciones publicadas y soporte multilingue |
+| Qwen/Qwen2.5-1.5B | 1,54 B | 32.768 tokens | safetensors, GGUF | Apache 2.0 | Version base sin instrucciones |
+| microsoft/Phi-3-mini-4k-instruct | 3,8 B | 4.096 tokens | safetensors, GGUF | MIT | Alternativa de tamano similar con contexto mas corto |
 
-Nota: los datos de los modelos comparativos provienen de su documentacion oficial publica; los del modelo analizado no estan disponibles en la informacion proporcionada.
+La comparativa directa con el modelo base Qwen2.5-1.5B-Instruct es la mas relevante: este ajuste hereda su arquitectura y tamano, pero carece de la documentacion, licencia explicita y evaluaciones del original. Para usos generales, el modelo base oficial es la opcion recomendada; este ajuste solo tiene sentido si la especializacion en patologia de cultivos aporta valor demostrable.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion sobre el dataset de entrenamiento: no es posible evaluar la calidad, cobertura ni sesgos del ajuste fino en patologia de cultivos.
-- Riesgo elevado de alucinacion en dominio agronomico: al ser un modelo de 1,5 B sin benchmarks publicados, las respuestas tecnicas sobre enfermedades de cultivos no deben usarse como diagnostico sin validacion experta.
-- Licencia no especificada: impide determinar si el uso comercial esta permitido; se recomienda contactar con el autor o asumir la licencia del modelo base Qwen2.5 (Apache 2.0) con cautela.
-- Contexto e idiomas no documentados: no se puede garantizar el soporte de conversaciones largas ni de castellano.
-- Modelo sin traccion: 0 descargas y 0 likes en el momento de la consulta, sin comunidad ni soporte.
-- Fecha de creacion futura (2026-11-09): posible inconsistencia en los metadatos del repositorio que conviene verificar.
-- Unico archivo de cuantizacion Q4_K_M: no hay opciones de mayor precision (Q8, F16) para evaluar el impacto de la cuantizacion.
-- No apto para produccion sin evaluacion previa: la falta de benchmarks, licencia e informacion de entrenamiento lo desaconseja para despliegues criticos.
+- La model card no especifica licencia, lo que impide confirmar si el uso comercial esta permitido; debe contactarse con el autor o asumirse la licencia del modelo base (Apache 2.0) con cautela.
+- No se documenta el dataset de entrenamiento ni el proceso de ajuste, por lo que no es posible evaluar sesgos, cobertura tematica ni riesgo de sobreajuste.
+- Riesgo de alucinacion alto en un modelo de 1,5 B ajustado con datos no verificados: puede generar recomendaciones agronomicas incorrectas con aparente seguridad.
+- No hay benchmarks publicados que permitan comparar su rendimiento con el modelo base o con alternativas especializadas.
+- El contexto maximo no esta confirmado para este ajuste; asumir 32.768 tokens sin verificacion puede provocar errores en produccion.
+- Los idiomas soportados no estan documentados; el modelo base es multilingue, pero el ajuste puede haber degradado idiomas distintos del usado en el entrenamiento.
+- Un unico archivo de cuantizacion (Q4_K_M) limita el ajuste fino de precision frente a velocidad; no hay versiones Q5, Q8 ni FP16 publicadas.
+- El uso en ambito agronomico profesional debe acompanarse de validacion por expertos y no sustituir el diagnostico fitosanitario oficial.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/jersobh/qwen2.5-1.5b-crop-pathology-gguf
-- Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth
-- llama.cpp (runtime de inferencia): https://github.com/ggerganov/llama.cpp
-- Modelo base Qwen2.5-1.5B (referencia): https://huggingface.co/Qwen/Qwen2.5-1.5B
+- Modelo en Hugging Face: https://huggingface.co/jersobh/qwen2.5-1.5b-crop-pathology-gguf
+- Unsloth (herramienta de ajuste fino y conversion): https://github.com/unslothai/unsloth
+- llama.cpp (runtime de inferencia GGUF): https://github.com/ggml-org/llama.cpp
+- Ollama (despliegue local): https://ollama.com
+- Modelo base Qwen2.5-1.5B: https://huggingface.co/Qwen/Qwen2.5-1.5B
+- Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

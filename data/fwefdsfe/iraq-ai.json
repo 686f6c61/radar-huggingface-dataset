@@ -56,16 +56,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Iraq AI Regulation Overview | Regulations.AI",
-      "url": "https://regulations.ai/regulations/RAI-IQ-NA-SUMMARY-2026",
-      "snippet": "Meanwhile, the Supreme Committee for AI and the Ministry of Planning are establishing measurable operational targets for the INSAIN strategy, evaluating the deployment of local physical servers and the development of a sovereign national large language model (Iraq LLM)."
-    },
-    {
-      "title": "Iraqi AI",
-      "url": "https://iraqi.ai/",
-      "snippet": "The Iraqi AI team was established in 2023 to utilise and implement AI for the benefits of everyone and everything everywhere in Iraq and beyond. The strategy envisions to exploit AI for improving making the world a better place in terms of healthcare, environment and safety and security."
-    }
-  ]
+  "sources": []
 }

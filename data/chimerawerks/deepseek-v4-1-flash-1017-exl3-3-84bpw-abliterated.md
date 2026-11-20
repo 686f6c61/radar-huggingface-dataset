@@ -2,132 +2,123 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-EXL3-3.84bpw-abliterated es una cuantización EXL3 de 3,84 bits por peso del modelo DeepSeek-V4.1-Flash-1017, publicada por el usuario ChimeraWerks. Se trata de una variante "abliterated", es decir, con la dirección de rechazo eliminada mediante una edición de rango 2 aplicada en FP32 sobre los pesos del modelo base y re-codificada a 6 bits, lo que produce un modelo sin censura alineada. El modelo base es un transformer de mezcla de expertos (MoE) de DeepSeek con 136.869.563.730 parámetros totales según los safetensors del repositorio, y esta versión está empaquetada específicamente para inferencia con ExLlamaV3 en tres NVIDIA DGX Spark con paralelismo tensorial de tres vías.
+DeepSeek-V4.1-Flash-1017-EXL3-3.84bpw-abliterated es una cuantización en formato EXL3 (ExLlamaV3) del modelo DeepSeek-V4.1-Flash-1017, publicada por el usuario ChimeraWerks. Se trata de un modelo de arquitectura Mixture-of-Experts (MoE) de aproximadamente 136.870 millones de parámetros totales, cuantizado a 3,8361 bits por peso (bpw) sobre las capas lineales, con la cabeza de salida excluida y codificada en 6 bits. El resultado ocupa unos 274 GB distribuidos en 35 shards de safetensors.
 
-La relevancia de esta ficha es doble. Por un lado, documenta una receta de despliegue concreta y medida para un modelo de gran tamaño en hardware de consumo profesional (DGX Spark), con cifras de prefill de hasta 3.833 tok/s y decodificación de 126 tok/s en código a un solo stream. Por otro, incluye una evaluación de fidelidad frente a los logits del modelo oficial (KL medio de 0,0784 y 92,0% de acuerdo top-1), lo que permite cuantificar la degradación introducida por la cuantización y por la edición abliterated.
+La particularidad principal de esta versión es que incorpora la edición de eliminación de rechazos (abliteration) de rango 2 desarrollada por mrfakename, aplicada en FP32 y recodificada a 6 bits, lo que da lugar a unos pesos "sin censura" que rechazan muy pocas peticiones. El autor reporta 0 rechazos de 100 prompts de HarmBench y 0 rechazos completos de 250 prompts seguros de XSTest.
 
-El contexto configurado alcanza 1.048.576 tokens, aunque la prompt más larga medida es de 131.090 tokens. La licencia es MIT. No se dispone de información sobre la composición del dataset de entrenamiento del modelo base ni sobre los idiomas soportados en esta ficha.
+El modelo está pensado para despliegue en hardware modesto para su tamaño: la receta de referencia lo sirve en 3 nodos DGX Spark (GB10, 128 GB cada uno) con paralelismo tensorial TP3 y conexión directa RoCE entre nodos, alcanzando 3.816 tok/s de prefill a 32K y 82-124 tok/s de decodificación con una sola petición, con contexto configurado de 1.048.576 tokens. Es relevante ahora porque demuestra que un MoE de gran tamaño puede servirse en clústeres de pequeñas GPUs unificadas con cuantización agresiva y paralelismo tensorial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de mezcla de expertos (MoE) según tags del repositorio; detalles de capas y atención no disponibles |
-| Parametros totales | 136.869.563.730 |
+| Arquitectura | Mixture-of-Experts (MoE) transformer; familia deepseek_v41 |
+| Parametros totales | 136.869.563.730 (~136,9 mil millones) |
 | Parametros activos | no disponible |
-| Longitud de contexto | 1.048.576 tokens configurados; prompt más larga medida: 131.090 tokens |
-| Tipos de cuantizacion | EXL3 a 3,8361 bpw sobre capas lineales cuantizadas; cabeza de salida excluida, a 6 bits; edición abliterated en FP32 re-codificada a 6 bits |
+| Longitud de contexto | 1.048.576 tokens configurados; prompt medido más largo: 131.088 tokens |
+| Tipos de cuantizacion | EXL3 a 3,8361 bpw en capas lineales; cabeza de salida en 6 bits; edición abliterated recodificada a 6 bits |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | safetensors (35 shards, ~274 GB), librería exllamav3 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base DeepSeek-V4.1-Flash-1017 es un transformer de mezcla de expertos según los tags del repositorio (`mixture-of-experts`). No se dispone en la información proporcionada de detalles sobre el número de capas, la dimensión oculta, el número de expertos, el mecanismo de atención ni la composición del dataset de entrenamiento del modelo original. Tampoco se documenta si hubo RLHF, DPO u otras fases de alineación en el modelo base.
+El modelo base es DeepSeek-V4.1-Flash-1017, de arquitectura Mixture-of-Experts según la etiqueta `mixture-of-experts` y la familia `deepseek_v41`. No se dispone de información detallada sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO en la información proporcionada. La model card de esta versión cuantizada no documenta el proceso de entrenamiento del modelo original.
 
-La innovación técnica de esta publicación no reside en la arquitectura, sino en el proceso de cuantización y edición. La cuantización EXL3 se aplica a 3,8361 bits por peso sobre las capas lineales, dejando la cabeza de salida a 6 bits. Sobre esa base se aplica la edición de eliminación de rechazo de rango 2 de mrfakename, ejecutada en FP32 y re-codificada a 6 bits. El resultado se empaqueta para ExLlamaV3 con paralelismo tensorial de tres vías (TensorFold) sobre tres DGX Spark. El autor reporta una fidelidad media de KL 0,0784 y un 92,0% de acuerdo top-1 frente a los logits del modelo oficial, evaluados sobre 65 cortes de 2.048 tokens (133.120 posiciones) balanceados entre dominios agénticos, chat, código, SWE, matemáticas, ciencia, legal, multilingüe, contexto largo, seguridad y texto de preentrenamiento.
+La innovación técnica destacable de esta publicación es el pipeline de cuantización y servicio: cuantización EXL3 a 3,8361 bpw con cabeza de salida en 6 bits, edición de abliteration de rango 2 aplicada en FP32 y recodificada a 6 bits, y una receta de despliegue con paralelismo tensorial TP3 sobre 3 DGX Spark conectados por RoCE. El autor reporta una fidelidad de KL media de 0,0784 y un 92,0% de acuerdo top-1 con los logits oficiales del modelo sin cuantizar, el KL más bajo de los ocho packs evaluados. También se menciona el uso de tensorfold y tensor-parallelism como técnicas de despliegue.
 
 ## Capacidades
 
-- Generación de texto conversacional y continuaciones de contexto largo, con hasta 1.048.576 tokens configurados.
-- Razonamiento con modo "thinking" activable, medido con temperatura 0,7 y esfuerzo 50 en GPQA-Diamond.
-- Generación de código, evaluada con LiveCodeBench v6 (88,0%).
-- Matemáticas competitivas, evaluada con AIME 2025 (97,5%).
-- Conocimiento científico y de posgrado, evaluado con GPQA-Diamond (90,5%) y MMLU-Pro (88,0%).
-- Seguimiento de instrucciones, evaluado con IFEval (88,7%).
-- Comportamiento sin rechazo: 0 de 100 prompts dañinos de HarmBench rechazados (98 respondidos, 2 parciales) y 0 de 250 prompts seguros de XSTest rechazados por completo (61 parciales).
-- Capacidades multilingües: no disponibles en la información proporcionada.
-- Soporte de tool calling, function calling y agentes multi-paso: no disponible en la información proporcionada.
-- Capacidades de visión o audio: no disponibles en la información proporcionada.
+- Generación de texto conversacional y de prosa, con modo greedy y modo thinking (razonamiento extendido).
+- Generación de código, con rendimiento de decodificación superior en código (124 tok/s) que en prosa (82 tok/s).
+- Razonamiento matemático y de nivel experto: el autor reporta 97,5% en AIME 2025 y 90,5% en GPQA-Diamond.
+- Tool calling y function calling, con rutas de API Chat Completions, Responses y Messages.
+- Esquemas JSON forzados (enforced JSON schemas).
+- Soporte de múltiples streams concurrentes (hasta 16 streams medidos).
+- Contexto largo de hasta 1.048.576 tokens configurados.
+- Pesos abliterated: baja tasa de rechazos ante prompts sensibles (0 de 100 en HarmBench).
+- Capacidades multilingües: no disponible.
 
 ## Casos de uso
 
-- Despliegue de inferencia de gran modelo en clústeres pequeños de DGX Spark: la receta de tres nodos con paralelismo tensorial de tres vías y ExLlamaV3 permite servir un MoE de 136.869 millones de parámetros con prefill de 3.560 a 3.833 tok/s y un tiempo hasta el primer token de 1,32 s para 4.115 tokens de prompt y 35,40 s para 131.090 tokens. Es adecuado cuando se dispone de tres DGX Spark y se necesita contexto largo sin infraestructura de centro de datos.
-
-- Procesamiento de documentos extensos y análisis de contexto largo: con 1.048.576 tokens configurados y un prefill medido de 3.721 tok/s a 128K, el modelo puede ingerir contratos, expedientes o bases de código completas en una sola pasada. El dominio legal está incluido explícitamente en el conjunto de evaluación de fidelidad.
-
-- Generación de código en pipelines internos: con 125,7 tok/s por petición en modo greedy a un solo stream y 49,0 tok/s a cuatro peticiones concurrentes, es viable para autocompletado, generación de tests y revisión de parches en entornos de desarrollo con varias solicitudes simultáneas.
-
-- Asistentes conversacionales de alto rendimiento: el modo prosa greedy alcanza 84,3 tok/s a un stream y 263 tok/s agregados a 16 streams, con un tiempo hasta el primer token estable de 27 a 59 ms en todas las cargas. Esto lo hace adecuado para atención al cliente o asistentes internos con múltiples usuarios concurrentes.
-
-- Investigación sobre alineación y rechazo: al estar abliterated y documentar métricas de rechazo (0/100 en HarmBench, 0/250 en XSTest con 61 parciales), sirve como material de estudio controlado sobre el efecto de la eliminación de la dirección de rechazo en modelos grandes, comparando con el modelo base y con otras variantes cuantizadas del mismo autor.
-
-- Evaluación de fidelidad de cuantizaciones: el repositorio publica KL medio, acuerdo top-1 y percentil 99 de KL frente a los logits oficiales, lo que permite usar este modelo como referencia para medir el impacto de otras cuantizaciones o ediciones sobre el mismo modelo base.
-
-- Razonamiento científico y matemático asistido: con 97,5% en AIME 2025 y 90,5% en GPQA-Diamond en modo thinking, es adecuado para herramientas internas de resolución de problemas técnicos donde se requiere cadena de razonamiento explícita y se dispone de la latencia adicional del modo thinking (68,6 tok/s en prosa a un stream frente a 84,3 en greedy).
+- Asistencia de código en producción: el modelo decodifica a 124 tok/s en modo código greedy con una sola petición, lo que lo hace adecuado para autocompletado y generación de parches en IDE o pipelines de CI/CD con latencia interactiva.
+- Procesamiento de documentos largos: con 1.048.576 tokens de contexto y 3.816 tok/s de prefill a 32K, puede ingerir contratos, informes o bases de código extensas y responder preguntas sobre ellos en una sola pasada.
+- Agentes multi-paso con tool calling: las rutas de API compatibles con Chat Completions, Responses y Messages, junto con esquemas JSON forzados, permiten integrarlo en frameworks de agentes que encadenan llamadas a herramientas.
+- Servicio conversacional de alta concurrencia: con 270 tok/s combinados a 16 peticiones simultáneas en prosa greedy, es viable para atender varios usuarios a la vez en un despliegue pequeño.
+- Investigación sobre alineación y seguridad: al ser una versión abliterated con 0 rechazos en HarmBench, sirve para estudiar comportamiento sin censura, evaluar robustez de filtros y comparar con el modelo base.
+- Razonamiento matemático y científico asistido: los resultados reportados en AIME 2025 (97,5%) y GPQA-Diamond (90,5%) lo hacen útil para tutoría técnica, verificación de demostraciones y resolución de problemas de nivel experto.
+- Despliegue en clústeres de GPUs unificadas pequeñas: la receta TP3 sobre 3 DGX Spark demuestra un caso de uso de inference self-hosted para equipos con hardware de 128 GB por nodo en lugar de GPUs de centro de datos.
 
 ## Benchmarks y rendimiento
 
-| Suite | Configuración | Resultado |
-|---|---|---|
-| GPQA-Diamond (EvalScope) | 198 preguntas × 8 repeticiones, thinking on (effort 50), temperature 1, top_k 20, límite 32K | 90,5% (1.434 de 1.584) |
-| AIME 2025 | no disponible en detalle | 97,5% |
-| IFEval | no disponible en detalle | 88,7% |
-| LiveCodeBench v6 | no disponible en detalle | 88,0% |
-| MMLU-Pro | no disponible en detalle | 88,0% |
-| HarmBench (rechazos) | 100 prompts dañinos | 0 rechazados, 98 respondidos, 2 parciales |
-| XSTest (rechazos) | 250 prompts seguros | 0 rechazos completos, 61 parciales |
-| Fidelidad KL media vs. logits oficiales | 65 cortes × 2.048 tokens, 133.120 posiciones | 0,0784 |
-| Acuerdo top-1 vs. logits oficiales | misma evaluación | 92,0% |
-| KL percentil 99 | misma evaluación | 1,463 |
+Resultados reportados por el autor en la model card (no verificados de forma independiente):
 
-Rendimiento de prefill medido en 3× DGX Spark, motor `14803a3`, con sparkDash:
+| Benchmark | Resultado |
+|---|---|
+| Conjunto estándar (755 items) | 97,1% |
+| AIME 2025 | 97,5% |
+| GPQA-Diamond | 90,5% (1.434 de 1.584) |
+| IFEval | 88,7% |
+| LiveCodeBench v6 | 88,0% |
+| MMLU-Pro (subconjunto de 500 items) | 88,0% |
+| Fidelidad KL media vs. logits oficiales | 0,0784 |
+| Acuerdo top-1 vs. logits oficiales | 92,0% |
+| HarmBench (rechazos) | 0 de 100 (98 respondidos, 2 parciales) |
+| XSTest (rechazos completos) | 0 de 250 |
 
-| Contexto | Tokens de prompt | Tiempo hasta el primer token | Prefill tok/s |
-|---:|---:|---:|---:|
-| 4K | 4.115 | 1,32 s | 3.560 |
-| 8K | 8.215 | 2,38 s | 3.708 |
-| 16K | 16.404 | 4,47 s | 3.811 |
-| 32K | 32.790 | 8,72 s | 3.833 |
-| 64K | 65.556 | 17,42 s | 3.800 |
-| 128K | 131.090 | 35,40 s | 3.721 |
+Rendimiento de prefill medido en 3× DGX Spark, TP3, GPUs a frecuencia de stock:
 
-Decodificación agregada (400 tokens de salida por petición): 84 tok/s en prosa greedy y 126 tok/s en código greedy a un stream; 263 tok/s en prosa greedy y 254 tok/s en código greedy a 16 streams. En modo thinking: 69 tok/s en prosa y 86 tok/s en código a un stream; 217 tok/s en prosa y 211 tok/s en código a 16 streams.
+| Prompt | 4K | 8K | 16K | 32K | 64K | 128K |
+|---|---:|---:|---:|---:|---:|---:|
+| Prefill tok/s | 3.617 | 3.732 | 3.802 | 3.816 | 3.789 | 3.725 |
+| Time to first token | 1,31 s | 2,37 s | 4,49 s | 8,76 s | 17,47 s | 35,36 s |
+
+Rendimiento de decodificación combinado (tok/s sumando todas las peticiones):
+
+| Peticiones simultáneas | 1 | 2 | 4 | 8 | 12 | 16 |
+|---|---:|---:|---:|---:|---:|---:|
+| Prosa, greedy | 82 | 111 | 161 | 219 | 252 | 270 |
+| Prosa, thinking | 68 | 95 | 131 | 173 | 196 | 215 |
+| Código, greedy | 124 | 167 | 192 | 220 | 245 | 253 |
+| Código, thinking | 82 | 119 | 142 | 175 | 196 | 211 |
+
+Con GPUs limitadas a 2.300 MHz (configuración de producción), el prefill a 32K baja a 3.711 tok/s, la decodificación de código a 122 tok/s y la decodificación de prosa a 16 peticiones a 260 tok/s. No se han publicado comparaciones con otros modelos en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el repositorio ocupa aproximadamente 274 GB en 35 shards de safetensors; se requiere un total de memoria de GPU igual o superior a esa cifra para cargar los pesos en EXL3 a 3,8361 bpw.
-- Configuración de referencia: tres NVIDIA DGX Spark con paralelismo tensorial de tres vías (TensorFold), que es el entorno sobre el que se midieron todos los benchmarks.
-- GPU recomendadas: DGX Spark (configuración validada por el autor). No se documenta el comportamiento en A100, H100 o RTX 4090.
-- Viabilidad en GPU de consumo: no disponible. El tamaño de 274 GB excede la memoria de cualquier GPU de consumo individual; no se documenta si es posible repartirlo entre varias RTX 4090.
-- Opciones de despliegue: ExLlamaV3 (librería declarada, `exllamav3`). No se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: prefill de 3.560 a 3.833 tok/s entre 4K y 128K; decodificación de 84 a 126 tok/s a un stream según modo; hasta 263 tok/s agregados a 16 streams; tiempo hasta el primer token de 27 a 59 ms en todas las cargas medidas.
+- VRAM/espacio de pesos: ~274 GB en total (35 shards de safetensors). No cabe en una sola GPU consumer ni en una GPU de centro de datos de 80 GB.
+- Hardware de referencia: 3 × DGX Spark (GB10, 128 GB de memoria unificada cada uno), con paralelismo tensorial TP3 y conexión directa RoCE entre cada par de nodos.
+- GPUs consumer: no es viable en RTX 4090 (24 GB) ni en configuraciones de una sola GPU consumer; requiere agregación de memoria de varios nodos o GPUs de gran capacidad.
+- Opciones de despliegue: ExLlamaV3 (librería nativa del formato EXL3), con receta de servicio en GitHub del autor. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI para este formato.
+- Latencia: time to first token de 1,31 s a 4K y 35,36 s a 128K; decodificación de 82 tok/s en prosa y 124 tok/s en código con una petición.
+- Throughput: hasta 270 tok/s combinados en prosa greedy a 16 peticiones simultáneas.
+- Consumo y térmica: pico de SoC de 94,1 °C y pico de GPU de 85 °C con reloj de stock; 58,2 W de potencia de GPU en decodificación; con tope de 2.300 MHz el pico de SoC baja a 86,2 °C y el de GPU a 78 °C, con 41 W en decodificación.
+- Clocks: la receta de producción limita las GPUs a 2.300 MHz por defecto, configurable mediante `GPU_CLOCK_CAP_MHZ`.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Fidelidad KL vs. oficial | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Este modelo (EXL3 3,84 bpw, abliterated) | 136.869.563.730 | 1.048.576 | 0,0784 | MIT | Hugging Face, ExLlamaV3 |
-| Cuantización 3,5 bpw sin editar (LakyFx) | no disponible | no disponible | 0,0872 | no disponible | Hugging Face |
-| Cuantización 3,5 bpw con edición mrfakename | no disponible | no disponible | 0,0937 | no disponible | Hugging Face |
-| Cuantización 3,5 bpw con edición heretic | no disponible | no disponible | 0,1002 | no disponible | Hugging Face |
-| Overlay Keys sobre 3,84 bpw | no disponible | no disponible | 0,1111 | no disponible | Hugging Face |
-| Overlay Keys sobre LakyFx 3,5 bpw | no disponible | no disponible | 0,1225 | no disponible | Hugging Face |
-| Keys K5 de Mia sobre LakyFx 3,5 bpw | no disponible | no disponible | 0,1234 | no disponible | Hugging Face |
-| Overlay Keys sobre LibertAIDAI 3,5 bpw | no disponible | no disponible | 0,1268 | no disponible | Hugging Face |
+No se dispone de datos de otros modelos comparables en la información proporcionada. La model card menciona que se evaluaron ocho packs de cuantización y que este obtuvo el KL más bajo (0,0784), pero no se detallan los otros packs ni sus especificaciones.
 
-No se dispone de datos de benchmarks de calidad para las variantes comparadas, solo de fidelidad KL. No se han identificado en la información proporcionada modelos de otras familias comparables en tamaño y contexto.
+| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
+|---|---|---|---|---|---|
+| DeepSeek-V4.1-Flash-1017-EXL3-3.84bpw-abliterated | ~136,9 mil millones (MoE) | 1.048.576 | MIT | safetensors EXL3 | Hugging Face, 1.131 descargas |
+| Modelo base deepseek-ai/DeepSeek-V4.1-Flash-1017 | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Versión abliterated de mrfakename | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
-- El modelo está abliterated: la dirección de rechazo ha sido eliminada deliberadamente, por lo que no aplica filtros de seguridad alineados. No es adecuado para aplicaciones orientadas al usuario final sin una capa de moderación externa.
-- Riesgo de alucinación: no se documenta ninguna evaluación específica de veracidad o factualidad; los benchmarks presentados miden razonamiento, código, matemáticas y seguimiento de instrucciones, no calibración factual.
-- Sesgos conocidos: no se documenta ninguna evaluación de sesgos demográficos, sociales o culturales en la información proporcionada.
-- Idiomas soportados: no disponible. No se ha publicado una evaluación multilingüe específica, aunque el conjunto de fidelidad incluye texto multilingüe.
-- Licencia MIT: permite uso comercial y modificación, pero el autor no ofrece garantías sobre el comportamiento del modelo ni sobre el cumplimiento normativo en jurisdicciones que regulen contenido generado.
-- La edición abliterated introduce una degradación medible: el KL medio de 0,0784 frente al modelo oficial es mayor que el de la cuantización sin editar a 3,5 bpw (0,0872), aunque el autor atribuye la mejora a la mezcla de 3,84 bpw; el percentil 99 de KL es 1,463, lo que indica colas de divergencia en algunas posiciones.
-- El contexto máximo medido es de 131.090 tokens, muy por debajo de los 1.048.576 configurados; no hay validación publicada del comportamiento más allá de esa longitud.
-- El despliegue está validado únicamente en ExLlamaV3 sobre tres DGX Spark; no se documenta su funcionamiento en otros motores ni en otras topologías de GPU.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado el 31 de octubre de 2026; se trata de una publicación muy reciente sin validación independiente por parte de la comunidad.
+- Sesgos conocidos: no documentados en la información disponible; al ser una versión abliterated, es esperable una menor aplicación de filtros de seguridad, lo que puede aumentar la exposición a contenido sesgado o dañino.
+- Riesgo de alucinación: no se han publicado tasas de alucinación; como todo modelo generativo, existe riesgo, y la cuantización a 3,8361 bpw introduce una degradación medible (KL media 0,0784, 92,0% de acuerdo top-1) respecto al modelo sin cuantizar.
+- Limitaciones de contexto e idioma: el contexto configurado es de 1.048.576 tokens, pero el prompt más largo medido es de 131.088 tokens; no hay datos sobre el rendimiento más allá de esa longitud. Los idiomas soportados no están disponibles.
+- Restricciones de licencia: licencia MIT, que permite uso comercial, pero se debe verificar la licencia del modelo base original, no disponible en la información proporcionada.
+- Caveats de producción: el despliegue requiere 3 nodos DGX Spark con RoCE y ExLlamaV3; no hay soporte documentado para vLLM, llama.cpp, Ollama o TGI. La abliteration puede degradar capacidades de razonamiento o seguridad en dominios sensibles, y los benchmarks reportados son autoinformados por el autor, no verificados de forma independiente.
+- El modelo base es DeepSeek-V4.1-Flash-1017, del que no se dispone de documentación en la información proporcionada.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/ChimeraWerks/DeepSeek-V4.1-Flash-1017-EXL3-3.84bpw-abliterated
+- Receta de servicio en GitHub: https://github.com/ChimeraWerks/DeepSeek-V4.1-Flash-1017-3x-DGX-Spark-TP3-TensorFold-abliterated
+- Benchmarks v1.2: https://github.com/ChimeraWerks/DeepSeek-V4.1-Flash-1017-3x-DGX-Spark-TP3-TensorFold-abliterated/blob/main/benchmarks/v1.2/summary.json
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
-- Repositorio de serving y benchmarks: https://github.com/ChimeraWerks/DeepSeek-V4.1-Flash-1017-3x-DGX-Spark-TP3-TensorFold-abliterated
-- Benchmarks detallados: https://github.com/ChimeraWerks/DeepSeek-V4.1-Flash-1017-3x-DGX-Spark-TP3-TensorFold-abliterated/blob/main/benchmarks/README.md
-- Fidelidad v1: https://github.com/ChimeraWerks/DeepSeek-V4.1-Flash-1017-3x-DGX-Spark-TP3-TensorFold-abliterated/blob/main/benchmarks/v1/fidelity.csv
-- Logits del modelo profesor: https://huggingface.co/brandonmusic/DeepSeek-V4.1-Flash-1017-Teacher-Logits
-- Edición abliterated de referencia: https://huggingface.co/mrfakename/DeepSeek-V4.1-Flash-1017-abliterated
-- Herramienta de medición sparkDash: https://github.com/MiaAI-Lab/sparkDash
-- EvalScope: https://github.com/modelscope/evalscope
+- Edición abliterated de mrfakename: https://huggingface.co/mrfakename/DeepSeek-V4.1-Flash-1017-abliterated
+- Herramienta sparkDash: https://github.com/MiaAI-Lab/sparkDash

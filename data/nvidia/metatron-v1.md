@@ -2,93 +2,88 @@
 
 ## Resumen
 
-Metatron v1 es una politica de control para robots humanoides desarrollada por NVIDIA, centrada en el robot Unitree G1 (29 articulaciones controladas). No se trata de un modelo de lenguaje, sino de una politica de aprendizaje por refuerzo tipo estudiante MaskedMimic que unifica en una sola red la locomocion, la interaccion con escenas y la recuperacion tras caidas, sin necesidad de adaptadores de recovery independientes.
+Metatron-v1 es una política de control para el robot humanoide Unitree G1 desarrollada por NVIDIA, publicada en Hugging Face bajo la librería ProtoMotions. No es un modelo de lenguaje: es un modelo de aprendizaje por refuerzo (reinforcement learning) que genera objetivos de posición articular (PD targets) y ganancias de control para 29 articulaciones del G1, a partir del estado del robot, su historial y objetivos de movimiento enmascarados. Se distribuye en dos formatos: un checkpoint nativo en PyTorch (459.455.983 bytes) con posterior y estadísticas de normalización, y dos exportaciones ONNX deterministas para navegador (demo de un robot y red por lotes de seis robots para G1 Racer).
 
-El modelo se distribuye en dos formatos: un checkpoint nativo de PyTorch de unos 459 MB (con posterior y estadisticas de normalizacion, destinado a simuladores y despliegue en hardware real supervisado) y exportaciones ONNX de unos 403 MB para inferencia determinista en navegador mediante ONNX Runtime Web con WebGPU o WebAssembly, integradas con MuJoCo WASM.
+La arquitectura es un transformer tipo MaskedMimic con prior y decoder deterministas, entrenado como estudiante unificado en la época 6410 con capacidad SAMP. Una sola política cubre marcha, interacción con escena y recuperación, sin adaptador de recuperación separado. Es relevante porque NVIDIA publica pesos y receta de reconstrucción para investigación en control de humanoides, con integración directa en ProtoMotions (NVlabs) y despliegue en navegador mediante ONNX Runtime Web con WebGPU o WebAssembly.
 
-Su relevancia radica en que permite ejecutar control humanoide interactivo directamente en el navegador, sin infraestructura de servidor, y que se integra con el framework ProtoMotions de NVIDIA (NVlabs), lo que lo convierte en una referencia util para investigadores de robotica, simulacion fisica y despliegue sim-to-real en humanoids.
+El modelo está pensado para investigadores y desarrolladores que evalúan locomoción y recuperación de humanoides en simulador o en el G1 real. La licencia es la NVIDIA Open Model License, con código fuente en Apache-2.0 y derechos de dataset y assets separados: el repositorio no redistribuye los clips de movimiento de entrenamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer student estilo MaskedMimic con prior y decoder deterministas |
-| Parametros totales | no disponible (checkpoint nativo: 459.455.983 bytes) |
-| Parametros activos | no aplicable (no es MoE) |
-| Longitud de contexto | no disponible (entrada: estado actual + 8 muestras historicas + historial de 9 acciones crudas + objetivos enmascarados + contexto de escena; 39 entradas en total) |
-| Tipos de cuantizacion | FP32 (inferencia determinista) |
-| Idiomas soportados | en (documentacion; el modelo no procesa lenguaje natural) |
-| Licencia | NVIDIA Open Model License (codigo fuente: Apache-2.0) |
-| Formato de pesos | Checkpoint nativo PyTorch y ONNX (safetensors: no) |
+| Arquitectura | Transformer tipo MaskedMimic con prior y decoder deterministas (estudiante unificado) |
+| Parametros totales | no disponible (checkpoint nativo de 459.455.983 bytes) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (no es un modelo de lenguaje; consume 39 entradas de estado, historial, objetivos y contexto de escena) |
+| Tipos de cuantizacion | no disponible; inferencia en FP32 |
+| Idiomas soportados | en (documentación y model card) |
+| Licencia | NVIDIA Open Model License (código fuente Apache-2.0) |
+| Formato de pesos | PyTorch nativo (checkpoint), ONNX (demo/model.onnx, racer/network.onnx) |
 
 ## Arquitectura y entrenamiento
 
-Metatron v1 emplea una arquitectura de estudiante tipo MaskedMimic basada en transformer, con un prior y un decoder deterministas aprendidos. La version exportada corresponde al estudiante unificado "SAMP-capable" del epoch 6410, en el que caminar, interactuar con la escena y recuperarse de perturbaciones comparten una unica politica. Las entradas incluyen el estado actual del G1, ocho muestras historicas de estado, acciones crudas entrantes emparejadas, un historial de nueve acciones crudas, objetivos enmascarados de pose/estilo/velocidad futuros y contexto de la escena mediante cajas (scene boxes). Las salidas son objetivos de PD articular (`action`), ganancias PD (`stiffness`, `damping`) y `raw_action` para retroalimentacion historica.
+El modelo es un transformer estudiante de estilo MaskedMimic que aprende una política unificada para el Unitree G1 con 29 articulaciones controladas. La inferencia usa un prior aprendido determinista y un decoder que produce objetivos PD (`action`), ganancias (`stiffness`, `damping`) y `raw_action` para realimentar el historial. El checkpoint nativo conserva la posterior y las estadísticas de normalización; las exportaciones a navegador solo incluyen la ruta prior/decoder, por lo que las interfaces no son intercambiables. La receta nativa enmascara entradas de escena y debe consultarse antes de reexportar.
 
-No se ha publicado informacion sobre el numero de tokens o muestras de entrenamiento, la composicion del dataset ni el uso de tecnicas especificas de RL mas alla de la metodologia MaskedMimic/SAMP implicita. El repositorio no redistribuye los clips de movimiento de entrenamiento, cuyos derechos son independientes. La receta nativa enmascara las entradas de escena, por lo que debe consultarse su model card antes de reexportar.
+El entrenamiento corresponde a un estudiante unificado en la época 6410 con capacidad SAMP, que integra marcha, interacción con escena y recuperación en una sola política. No se detallan en la información disponible el número de tokens, la composición del dataset ni el uso de RLHF o DPO, que no aplican a este dominio. La validación publicada es numérica: la red ONNX de seis robots y las rutas de observación compiladas se compararon con la exportación de un robot en 60 estados de prueba perturbados en historial, con un error absoluto máximo de acción de 5,55e-6. Se variaron altura de recuperación, temporización, historial de acciones y entradas de escena, y todos afectaron a las salidas. Son comprobaciones de exportación, no benchmarks de éxito de tarea ni de robot real.
 
 ## Capacidades
 
-- Locomocion humanoide para el Unitree G1 con 29 articulaciones controladas mediante objetivos PD.
-- Interaccion con escenas mediante contexto de cajas (scene boxes) y objetivos locales escalonados.
-- Recuperacion tras caidas y perturbaciones integrada en la misma politica, con estado de recovery independiente por robot y objetivos de recovery como entradas de runtime.
-- Inferencia batched: la exportacion Racer evalua seis robots en un unico lote.
-- Inferencia determinista en navegador via ONNX Runtime Web (WebGPU recomendado, fallback CPU/WASM).
-- Integracion con ProtoMotions para flujos de trabajo en otros simuladores y despliegue supervisado en hardware real.
-- No soporta procesamiento de lenguaje natural, vision ni tool calling: no es un modelo de lenguaje.
+- Control de locomoción del Unitree G1 con 29 articulaciones mediante objetivos PD y ganancias de rigidez y amortiguación.
+- Interacción con escena: consume contexto de cajas de escena (scene-box) y objetivos de pose, estilo y velocidad futuros enmascarados.
+- Recuperación integrada: caídas y recuperación de altura se gestionan con la misma política, sin adaptador separado; los objetivos de recuperación son entradas vivas en tiempo de ejecución.
+- Historial temporal: usa el estado actual, ocho muestras históricas de estado, acciones brutas entrantes y un historial de nueve acciones brutas.
+- Inferencia determinista en FP32 apta para despliegue en navegador con ONNX Runtime Web (WebGPU o WebAssembly) y simulación con MuJoCo WASM.
+- Ejecución por lotes de seis robots en una sola pasada con `racer/network.onnx`, con observaciones calculadas fuera del grafo neuronal.
+- Integración con ProtoMotions para flujos de simulador y despliegue supervisado en G1 real.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni capacidades multilingües: no es un modelo de lenguaje.
 
 ## Casos de uso
 
-- Demostraciones interactivas de control humanoide en navegador: el export `demo/model.onnx` con MuJoCo WASM permite evaluar locomocion y recovery del G1 sin servidor ni instalacion local, ideal para material divulgativo y educativo.
-- Investigacion en politicas unificadas de locomocion/recovery: el checkpoint nativo de PyTorch permite estudiar la receta de reconstruccion y reproducir experimentos en simuladores compatibles con ProtoMotions.
-- Competencias y benchmarks multi-robot: la export `racer/network.onnx` ejecuta seis robots G1 en lote para escenarios tipo carrera (G1 Racer).
-- Validacion sim-to-real supervisada: el paquete nativo G1 soporta flujos de despliegue en el robot real bajo supervision, previa validacion de las interfaces de observacion y control.
-- Comparacion de backends de inferencia WebGPU frente a WASM: el modelo sirve como carga de trabajo realista para medir rendimiento de ONNX Runtime Web en distintos navegadores y GPUs.
-- Ensenamez de pipelines de exportacion ONNX reproducibles: los digests SHA256, el indice maquina-legible en `config.json` y las verificaciones de paridad (error maximo 5,55e-6) constituyen un ejemplo de ingenieria de exportacion auditable.
+- Investigación en locomoción de humanoides: ejecutar la política nativa en ProtoMotions para estudiar marcha y estabilidad del G1 con objetivos de velocidad y estilo, aprovechando que el checkpoint conserva posterior y normalización para análisis reproducibles.
+- Evaluación de recuperación tras caídas: introducir objetivos de recuperación en tiempo de ejecución y variar altura y temporización para medir la robustez de la política unificada, sin cambiar de modelo.
+- Demostración interactiva en navegador: desplegar `demo/model.onnx` con ONNX Runtime Web y MuJoCo WASM para que usuarios controlen un G1 simulado en tiempo real, con WebGPU como ruta recomendada y WebAssembly como respaldo.
+- Carreras multirrobot: usar `racer/network.onnx` para evaluar seis G1 en un solo lote, con observaciones calculadas por la aplicación y parámetros de controlador del runtime emparejado, útil para comparativas de políticas.
+- Validación de exportaciones y paridad numérica: emplear los fixtures de paridad de acción al arranque de G1 Racer y las comprobaciones de 60 estados para verificar que una reexportación o un cambio de runtime no altera las salidas más allá de 5,55e-6.
+- Despliegue supervisado en G1 real: usar el paquete nativo G1 con la receta de reconstrucción y el manifiesto de runtime para trasladar la política a hardware, respetando orden de articulaciones, convención de cuaterniones, normalización y tasa de control.
+- Docencia y prototipado de control RL: servir como referencia de política MaskedMimic con pesos abiertos para comparar arquitecturas de estudiante y técnicas de destilación en robótica.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de tareas (exito en tareas, velocidad, distancias) en la informacion disponible. Los unicos datos numericos publicados son verificaciones de exportacion: comparacion del ONNX de seis robots y las rutas de observacion compiladas contra la export de robot unico en 60 estados de prueba distintos y perturbados en historial, con un error maximo absoluto de accion de 5,55e-6. Los autores subrayan que estas son comprobaciones numericas de exportacion, no benchmarks de exito en tareas ni validacion en robot real.
+No se han publicado resultados de benchmarks en la información disponible.
+
+La única métrica publicada es de paridad de exportación: error absoluto máximo de acción de 5,55e-6 entre la red ONNX de seis robots y la exportación de un robot en 60 estados de prueba. No hay datos de éxito de tarea, latencia ni throughput.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible; los export ONNX pesan unos 403 MB cada uno y se ejecutan en FP32, por lo que una GPU con 2-4 GB de VRAM dedicables deberia ser suficiente en navegador.
-- GPU recomendadas: no disponible; para navegador se recomienda cualquier GPU compatible con WebGPU. Para entrenamiento o fine-tuning no se publica informacion.
-- Consumer GPUs: al tratarse de inferencia en navegador con WebGPU, funciona en GPUs de consumo compatibles (por ejemplo, GPUs NVIDIA recientes o integradas con soporte WebGPU); la ruta CPU/WASM es un fallback que no garantiza operacion en tiempo real con seis robots.
-- Despliegue: ONNX Runtime Web (WebGPU o WebAssembly) con MuJoCo WASM en navegador; checkpoint nativo PyTorch con ProtoMotions para simuladores y despliegue supervisado en G1 real. No aplica vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponible; los autores indican que drivers, navegador y hardware afectan al tiempo de arranque y al throughput.
+- VRAM estimada para inferencia: no disponible de forma explícita; el checkpoint nativo ocupa 459.455.983 bytes y cada ONNX unos 403 MB en FP32, por lo que la huella de pesos ronda los 0,4 GB y el consumo total depende del simulador y del runtime.
+- GPU recomendadas: no se especifican modelos concretos; la documentación recomienda WebGPU en dispositivos capaces y advierte de que CPU/WASM es solo respaldo y no garantiza operación en tiempo real con seis robots.
+- GPU de consumo: no hay lista oficial; por tamaño de pesos, cualquier GPU con al menos 1-2 GB de VRAM libre debería alojar la red, pero el rendimiento en tiempo real no está garantizado.
+- Opciones de despliegue: ONNX Runtime Web (WebGPU o WebAssembly), MuJoCo WASM para física, PyTorch nativo vía ProtoMotions y descargador nativo fijado a una revisión del Hub.
+- Latencia y throughput: no disponibles; dependen de drivers de GPU, navegador y hardware, y afectan al tiempo de arranque y al rendimiento.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos suficientes en la informacion proporcionada para una tabla comparativa cuantitativa. Alternativas de la misma categoria a considerar:
-
-- MaskedMimic (NVIDIA): politica base sobre la que se construye Metatron; Metatron la unifica con recovery y escena en un solo estudiante y anade exportaciones ONNX para navegador.
-- Otras politicas de locomocion humanoide para Unitree G1 en el ecosistema ProtoMotions/Isaac: no disponible informacion comparativa concreta en los datos proporcionados.
-
-| Aspecto | Metatron v1 | MaskedMimic (referencia) |
-|---|---|---|
-| Robot objetivo | Unitree G1 (29 articulaciones) | Personajes simulados genericos |
-| Politica unificada con recovery | Si | No (separada) |
-| Export ONNX navegador | Si | No disponible |
-| Licencia | NVIDIA Open Model License | No disponible |
+No disponible. La información proporcionada no incluye otros modelos de control de humanoides comparables con parámetros, contexto y licencia verificables.
 
 ## Limitaciones y advertencias
 
-- Los dos export ONNX (`demo/model.onnx` y `racer/network.onnx`) no son intercambiables: difieren en interfaz, organizacion del grafo y batching, aunque compartan pesos.
-- Los archivos ONNX por si solos no son demos completas: requieren la aplicacion emparejada que aporta fisica, observaciones, objetivos y logica de control, con convenciones exactas de orden articular, cuaterniones, historial, normalizacion y tasa de control.
-- No alimentar entradas del demo al grafo Racer ni modificar su tamano de batch sin reconstruir y validar el grafo.
-- La receta nativa enmascara las entradas de escena; consultar su model card antes de cualquier reexportacion.
-- La compatibilidad de interfaces no constituye una certificacion de seguridad ni una validacion en hardware real de estos archivos concretos.
-- La ruta CPU/WASM no garantiza operacion en tiempo real con seis robots.
-- Ninguno de los artefactos es un checkpoint de entrenamiento reanudable.
-- El repositorio no redistribuye los clips de movimiento de entrenamiento; sus derechos son independientes.
-- Licencia: NVIDIA Open Model License para los artefactos del modelo (revisar el acuerdo completo para uso comercial); codigo fuente bajo Apache-2.0.
-- Sesgos, riesgo de alucinacion y limitaciones de idioma: no aplicables al tratarse de una politica de control; no disponible informacion sobre fallos fisicos conocidos.
+- No es un modelo de lenguaje: no genera texto, código ni respuestas conversacionales; cualquier uso en esos dominios es inadecuado.
+- Las exportaciones ONNX no son intercambiables entre sí ni con el checkpoint nativo; mezclar interfaces, órdenes de articulaciones, convenciones de cuaterniones o tasas de control invalida el comportamiento.
+- Los archivos ONNX no son demos completas: requieren la aplicación emparejada que aporta física, observaciones, objetivos y lógica de control.
+- La compatibilidad con hardware no constituye certificación de seguridad ni prueba de validación en el G1 real para estas exportaciones concretas.
+- Riesgo de alucinación no aplica; el riesgo equivalente es un comportamiento de control incorrecto fuera de la distribución de entrenamiento, que puede provocar caídas o movimientos no deseados.
+- Sesgos conocidos: no documentados en la información disponible; el comportamiento está condicionado por los clips de movimiento de entrenamiento, que no se redistribuyen.
+- Licencia NVIDIA Open Model License para pesos y configuraciones; el código fuente es Apache-2.0; los derechos de dataset y assets son separados y deben verificarse antes de uso comercial.
+- El repositorio no incluye clips de movimiento de entrenamiento, código de runtime, assets del robot ni configuración de la aplicación, que se distribuyen por separado.
+- No hay resultados publicados de éxito de tarea ni de rendimiento en hardware real.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/nvidia/Metatron-v1
-- Licencia (NVIDIA Open Model License): https://huggingface.co/nvidia/Metatron-v1/blob/main/LICENSE.pdf
-- ProtoMotions (GitHub, NVlabs): https://github.com/NVlabs/ProtoMotions
+- Modelo en Hugging Face: https://huggingface.co/nvidia/Metatron-v1
+- Licencia completa: https://huggingface.co/nvidia/Metatron-v1/blob/main/LICENSE.pdf
+- Aviso de atribución: https://huggingface.co/nvidia/Metatron-v1/blob/main/NOTICE.txt
 - Model card del paquete nativo G1: https://huggingface.co/nvidia/Metatron-v1/blob/main/G1/MODEL_CARD.md
-- Instrucciones de descarga y ejecucion del paquete G1: https://huggingface.co/nvidia/Metatron-v1/blob/main/G1/README.md
+- Descarga y ejecución del paquete G1: https://huggingface.co/nvidia/Metatron-v1/blob/main/G1/README.md
+- Repositorio ProtoMotions: https://github.com/NVlabs/ProtoMotions
+- NVIDIA (sitio corporativo): https://www.nvidia.com/en-us/

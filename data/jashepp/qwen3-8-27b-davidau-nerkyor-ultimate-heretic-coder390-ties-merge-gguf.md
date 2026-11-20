@@ -2,85 +2,95 @@
 
 ## Resumen
 
-Este repositorio contiene una versión cuantizada en formato GGUF de un modelo de lenguaje de 27.318.209.536 parámetros (aproximadamente 27,3 mil millones) publicado por el usuario jashepp. El nombre del modelo indica que se trata de un merge (fusión) de pesos construido mediante la técnica TIES, que combina linajes derivados de la familia Qwen3 con otros modelos comunitarios identificados como DavidAU, nerkyor, Ultimate Heretic y Coder390. No se trata de un modelo entrenado desde cero, sino de una agregación de pesos existentes, una práctica habitual en la comunidad open source para consolidar capacidades de distintos fine-tunes.
+Este repositorio no contiene un modelo entrenado desde cero, sino un *merge* de dos variantes comunitarias de Qwen3.8 de 27B, publicado por el usuario jashepp en formato GGUF. El autor combina, mediante mergekit y el método TIES, el modelo DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored (optimizado para seguimiento de instrucciones y razonamiento "Turbo Brilliance") con nerkyor/Qwen3.8-27B-Coder390-EfficientThink (especializado en código y recuperación de contexto). El objetivo declarado es conservar el razonamiento y la adherencia a instrucciones del primero junto con la precisión en código del segundo.
 
-El modelo se distribuye exclusivamente en formato GGUF, orientado a inferencia con llama.cpp y sus derivados (Ollama, LM Studio, etc.), y declara compatibilidad con endpoints conversacionales. La licencia declarada es Apache 2.0, aunque al ser un merge de componentes de procedencia heterogénea conviene verificar las licencias de los modelos base antes de un uso comercial. El acceso está restringido (gated): es necesario aceptar condiciones en Hugging Face para descargar los pesos.
+El modelo resultante tiene 27.318.209.536 parámetros en precisión bfloat16 y se distribuye exclusivamente en cuantizaciones GGUF (BF16, Q8_0, Q6_K, Q4_K_M y MXFP4), todas con soporte de MTP (multi-token prediction). Está pensado para ejecutarse en llama.cpp y LM Studio, lo que permite desplegarlo en hardware de consumo. La licencia es Apache 2.0 y el idioma declarado es únicamente inglés.
 
-La relevancia de esta ficha es limitada pero concreta: se trata de un modelo de la comunidad, sin paper asociado, sin benchmarks publicados y con cero descargas en el momento de la consulta. Resulta útil como ejemplo de la práctica de merges TIES en el ecosistema GGUF y como candidato a evaluación empírica, pero no debe tratarse como un modelo de referencia sin validación previa.
+La relevancia de esta ficha es doble: por un lado, documenta un caso típico de la práctica comunitaria de *model merging* sobre la familia Qwen; por otro, advierte de que no existen benchmarks publicados y de que el propio autor reconoce que no ha evaluado tareas de código complejas con esta combinación. Es, por tanto, un modelo experimental orientado a pruebas locales más que a producción sin validación previa.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de la familia Qwen3; detalles no disponibles) |
-| Parametros totales | 27.318.209.536 (≈27,3 B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF (variantes concretas no disponibles) |
-| Idiomas soportados | no disponibles |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF |
+| Arquitectura | Transformer decoder-only (base Qwen3.8 27B); datos de atención y capas no disponibles |
+| Parametros totales | 27.318.209.536 (27,3B) |
+| Parametros activos | No aplica (no es MoE según la información disponible) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | BF16, Q8_0, Q6_K, Q4_K_M (Q4_K + Q6_K), MXFP4; todas con MTP |
+| Idiomas soportados | Inglés (declarado en la model card); resto no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (también etiquetado como transformers; repo de 138 GB) |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no incluye detalles sobre la arquitectura interna más allá de su origen en la familia Qwen3, lo que en la práctica implica un transformer decoder-only con atención completa, aunque no se confirman número de capas, dimensión oculta, cabezas de atención ni uso de atención lineal o híbrida. El nombre del repositorio indica que el modelo se ha construido mediante un merge TIES (Trim, Elect, Merge, Sign), un algoritmo que poda parámetros redundantes, resuelve conflictos de signo entre tensores y fusiona varios checkpoints en uno solo. Los componentes fusionados parecen ser variantes comunitarias de Qwen3 con fine-tunes orientados a conversación, escritura creativa ("Heretic") y código ("Coder390").
+El modelo es un *ties merge* (TIES, arXiv:2306.01708) generado con mergekit a partir de dos checkpoints de Qwen3.8 de 27B ya post-entrenados. No hay entrenamiento adicional ni datos propios: el resultado hereda los pesos de ambos progenitores mediante poda de parámetros redundantes, resolución de signos y fusión ponderada. La model card no publica la configuración exacta de pesos del merge (aunque el autor indica que está disponible en el repositorio), ni el número de tokens de entrenamiento de los modelos base, ni detalles de RLHF/DPO más allá de las etiquetas "SFT", "RLOO" y "post-training" presentes en el nombre del modelo de nerkyor.
 
-No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset, ni sobre si hubo etapas de RLHF, DPO o ajuste por preferencias en los modelos de origen. Tampoco se documentan innovaciones técnicas propias: el valor del repositorio reside en la fusión y en la cuantización a GGUF, no en aportaciones arquitectónicas nuevas. Cualquier afirmación sobre calidad de entrenamiento sería especulativa y no se recoge aquí.
+La innovación técnica declarada es la preservación de los modos de razonamiento "Turbo Brilliance" del modelo de DavidAU, que incluyen cadenas de pensamiento explícitas, junto con la capacidad de código del modelo de nerkyor. Las cuantizaciones GGUF se generaron con *imatrix* y conservan el soporte de MTP (multi-token prediction), lo que en llama.cpp permite decodificación especulativa y por tanto mejoras de throughput. El autor no documenta ninguna otra modificación arquitectónica.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, según la etiqueta "conversational" del repositorio.
-- Generación de código, inferida del componente "Coder390" del nombre; sin validación publicada.
-- Escritura creativa y estilística, inferida del componente "Heretic"; sin validación publicada.
-- Razonamiento general y matemáticas: presumiblemente heredado de Qwen3, pero no documentado en la información disponible.
-- Tool calling / function calling: no disponible (no se documenta en la ficha del repositorio).
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponibles (no se declaran idiomas).
-- Modo "thinking" explícito, visión o audio: no disponible.
+- Generación de texto conversacional y de instrucciones en inglés.
+- Razonamiento con modo *thinking* y cadena de pensamiento explícita, heredado de la serie Turbo Brilliance.
+- Generación de código y tareas de programación, heredadas del modelo Coder390.
+- Recuperación de contexto (*context recall*) reforzada según las pruebas A/B del autor.
+- Soporte declarado de *tool use* / function calling y flujos agénticos (etiquetas `agentic`, `tool-use`).
+- Seguimiento de instrucciones reforzado, según la evaluación cualitativa del autor.
+- Modo de razonamiento eficiente (*EfficientThink*) heredado del modelo de nerkyor.
+- No se declaran capacidades de visión, audio ni multimodalidad.
 
 ## Casos de uso
 
-- Evaluación comparativa de merges comunitarios: cargar el GGUF en llama.cpp y medir perplejidad y calidad cualitativa frente a los modelos base Qwen3 para determinar si la fusión TIES aporta mejoras reales en escritura y código.
-- Generación de código en local: desplegar el modelo con llama.cpp u Ollama en una estación de trabajo con GPU de 24 GB o más y usarlo como asistente de autocompletado en un editor, aceptando que la calidad debe validarse empíricamente antes de integrarlo en un pipeline.
-- Escritura creativa y lluvia de ideas: aprovechar el componente estilístico del merge para tareas de redacción y variación de tono en entornos donde no se requiere precisión factual estricta.
-- Chat conversacional de propósito general en local: servir el modelo mediante una API compatible con OpenAI (endpoints_compatible) para prototipos de asistentes que deban ejecutarse sin conexión a servicios en la nube.
-- Experimentación académica sobre merges: usar el modelo como caso de estudio para analizar el efecto de TIES en modelos de ~27 B y comparar con fusiones lineales o SLERP.
-- Pruebas de cuantización: el repositorio GGUF permite comparar distintas cuantizaciones sobre el mismo merge y medir la degradación de calidad, útil para calibrar políticas de despliegue en producción.
+- Asistencia de programación local: el modelo puede generar y revisar código en inglés dentro de editores o terminales mediante llama.cpp o LM Studio, aprovechando la especialización Coder390 del progenitor; requiere validación manual porque el autor no ha probado tareas complejas.
+- Agentes locales con tool calling: al soportar *function calling* y MTP, puede integrarse en bucles agénticos de escritorio (por ejemplo, automatización de tareas con APIs locales) donde la latencia importa y se prefiere no enviar datos a la nube.
+- Razonamiento paso a paso en entornos sin conexión: el modo thinking permite obtener trazas de razonamiento para depuración de problemas lógicos o matemáticos en máquinas con una sola GPU de consumo.
+- Prototipado de chatbots en inglés: con contexto conversacional multi-turno, sirve para probar flujos de atención al cliente antes de invertir en un modelo mayor; la licencia Apache 2.0 facilita el uso comercial interno.
+- Análisis de documentación técnica: la recuperación de contexto reforzada permite resumir y extraer información de archivos largos siempre que se confirme la ventana de contexto real del modelo base.
+- Experimentación con *model merging*: investigadores que estudien técnicas TIES pueden usar este repositorio como referencia de una fusión real entre un modelo de instrucciones y uno de código, comparando el comportamiento con cada progenitor.
+- Evaluación comparativa de cuantizaciones: los cinco GGUF publicados permiten medir la degradación de calidad entre BF16, Q8_0, Q6_K, Q4_K_M y MXFP4 en el mismo hardware.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explícitamente que no ha realizado benchmarks y que sus observaciones se basan en pruebas A/B con la misma semilla y en uso agéntico propio.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 27,3 B parámetros, una cuantización Q4_K_M requiere aproximadamente 16-17 GB de VRAM; Q5_K_M en torno a 19-20 GB; Q8_0 alrededor de 29 GB; FP16 completa supera los 54 GB.
-- GPU recomendadas: RTX 4090 (24 GB) para cuantizaciones Q4 y Q5; A100 40 GB o H100 para Q8 y FP16; configuraciones multi-GPU para FP16.
-- Cabe en GPU de consumo: sí, en RTX 3090/4090 (24 GB) con cuantizaciones Q4/Q5; en GPUs de 16 GB solo con cuantizaciones agresivas (Q3 o inferiores) o descarga parcial a RAM.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con la API de OpenAI gracias a la etiqueta endpoints_compatible.
-- Latencia y throughput: no disponibles; dependen de la GPU y de la cuantización elegida.
+- VRAM estimada: BF16 requiere unos 55 GB (archivo de 54,7 GB) más overhead de contexto; Q8_0 unos 29 GB; Q6_K unos 22,4 GB; Q4_K_M unos 17,2 GB; MXFP4, el tamaño no está disponible en la información proporcionada, pero por su naturaleza de 4 bits se sitúa por debajo de Q4_K_M.
+- GPU recomendadas: para BF16, A100 80 GB o H100; para Q8_0, A100 40 GB o dos RTX 4090; para Q6_K y Q4_K_M, una RTX 4090 (24 GB) o RTX 3090 es suficiente para los pesos, con margen variable para el contexto.
+- Cabe en GPU de consumo: sí, en Q4_K_M y Q6_K con 24 GB de VRAM; Q8_0 requiere 32 GB o reparto entre dos GPU.
+- Opciones de despliegue: llama.cpp, LM Studio (etiquetados por el autor); también es posible usar otros runners compatibles con GGUF, aunque no se documentan explícitamente.
+- Latencia y throughput: no disponibles. El soporte de MTP en las cuantizaciones puede mejorar la decodificación especulativa en llama.cpp, pero no se publican cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| jashepp/Qwen3.8-27B-...-ties-merge-GGUF | ≈27,3 B | no disponible | GGUF | apache-2.0 | Gated en HF |
-| Qwen3 (variantes oficiales de ~27-32 B) | ≈27-32 B | no disponible en esta ficha | safetensors, GGUF | Apache 2.0 en la mayoría de variantes | Público en HF |
-| Merges comunitarios TIES de tamaño similar | ≈27 B | variable | GGUF | variable según componentes | Público o gated según autor |
+| Este merge (jashepp) | 27,3B | No disponible | Apache 2.0 | GGUF | Sin benchmarks; merge experimental |
+| DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored | 27B (según nombre) | No disponible | No disponible en la información | Probablemente safetensors y GGUF | Progenitor centrado en instrucciones y razonamiento |
+| nerkyor/Qwen3.8-27B-Coder390-EfficientThink | 27B (según nombre) | No disponible | No disponible en la información | No disponible | Progenitor centrado en código |
+| Qwen3 base de 27B | No disponible | No disponible | No disponible | No disponible | Modelo original de la familia; no se detalla en la información |
 
-La comparación cuantitativa con alternativas no es posible: no hay benchmarks publicados para este merge y los modelos base citados no se detallan en la información proporcionada.
+No se dispone de datos de rendimiento comparativos entre estas variantes.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks: no hay evidencia publicada de calidad, por lo que cualquier uso en producción requiere evaluación propia.
-- Riesgo de alucinación: inherente a los modelos de lenguaje de esta escala y no cuantificado para este merge.
-- Sesgos desconocidos: al ser una fusión de fine-tunes comunitarios sin documentación, los sesgos de los componentes pueden amplificarse o combinarse de forma impredecible.
-- Licencia: se declara Apache 2.0, pero al tratarse de un merge de modelos de procedencia diversa conviene verificar las licencias de cada componente antes de uso comercial.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y la distribución automatizada.
-- Idiomas y contexto no documentados: no se puede garantizar soporte multilingüe ni una ventana de contexto concreta sin pruebas.
-- Cero descargas y cero likes en el momento de la consulta: no hay señal de validación por parte de la comunidad.
-- Formato exclusivamente GGUF: no se ofrece safetensors, lo que dificulta el fine-tuning posterior y la inspección de pesos originales.
+- Ausencia total de benchmarks: no hay métricas objetivas de MMLU, HumanEval, GSM8K ni de calidad de código; el autor solo aporta impresiones cualitativas.
+- El propio autor reconoce no haber probado tareas de código complejas con el merge, pese a que la especialización en código es uno de sus objetivos.
+- Idioma: solo se declara inglés; el rendimiento en castellano no está verificado y probablemente sea inferior.
+- Longitud de contexto no documentada: no se puede planificar su uso en tareas de contexto largo sin verificarla empíricamente.
+- Riesgo de alucinación inherente a los modelos de 27B y acentuado por la fusión de dos post-entrenamientos distintos, cuyas distribuciones pueden entrar en conflicto.
+- El progenitor de DavidAU está etiquetado como "Heretic" y "Uncensored": es previsible una menor alineación de seguridad y mayor probabilidad de contenido no filtrado; requiere moderación adicional en producción.
+- Licencia Apache 2.0 declarada, pero los modelos base no detallan su licencia en la información disponible; conviene verificar la cadena de licencias antes de un uso comercial.
+- El repositorio ocupa 138 GB y contiene múltiples cuantizaciones; la descarga completa no es necesaria, pero conviene seleccionar el archivo concreto.
+- Al ser un merge comunitario sin evaluación independiente, no se recomienda como dependencia crítica en producción sin una batería de pruebas propia.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/jashepp/Qwen3.8-27B-DavidAU-nerkyor-Ultimate-Heretic-Coder390-ties-merge-GGUF
-- No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.
+- Repositorio Hugging Face: https://huggingface.co/jashepp/Qwen3.8-27B-DavidAU-nerkyor-Ultimate-Heretic-Coder390-ties-merge-GGUF
+- Modelo base 1: https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored
+- GGUF del modelo base 1: https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-GGUF
+- Modelo base 2: https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2
+- Paper TIES: https://arxiv.org/abs/2306.01708
+- mergekit: https://github.com/cg123/mergekit
+- Colección Qwen de DavidAU: https://huggingface.co/collections/DavidAU/qwen-36-reg-uncensored-9b-12b-21b-27b-40b
+- Colección Turbo Brilliance: https://huggingface.co/collections/DavidAU/turbo-brilliance-ai-constructs-50x-reasoning-instruct
+- Licencia Apache 2.0: https://choosealicense.com/licenses/apache-2.0/

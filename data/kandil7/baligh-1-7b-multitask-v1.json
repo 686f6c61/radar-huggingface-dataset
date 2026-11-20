@@ -21,8 +21,8 @@
     "qwen3",
     "trl",
     "en",
-    "base_model:Kandil7/Baligh-1.7B-v0",
-    "base_model:finetune:Kandil7/Baligh-1.7B-v0",
+    "base_model:Kandil7/Baligh-1.7B",
+    "base_model:finetune:Kandil7/Baligh-1.7B",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us"

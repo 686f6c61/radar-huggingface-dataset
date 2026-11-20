@@ -2,99 +2,98 @@
 
 ## Resumen
 
-Metis-1.6-Logos-GGUF es la distribucion cuantizada en formato GGUF del modelo base Lernex/Metis-1.6-Logos, publicada por el mismo autor (Lernex) bajo licencia Apache 2.0. El modelo base combina una arquitectura hibrida de mezcla de expertos (MoE) con capas Mamba-2 y proyecciones de bajo rango en el espacio latente de los expertos, segun se deduce de las recetas de cuantizacion documentadas. El repositorio contiene unicamente pesos cuantizados para llama.cpp y aplicaciones derivadas (Ollama, LM Studio), no los pesos originales en safetensors.
+Metis-1.6-Logos es un modelo de generacion de texto de Lernex construido sobre una arquitectura hibrida que combina capas transformer con mezcla de expertos (MoE) y bloques Mamba-2. Con 10.225.187.963 parametros totales, el modelo se distribuye en este repositorio unicamente en formato GGUF, cuantizado para su uso con llama.cpp y las aplicaciones construidas sobre el (Ollama, LM Studio, llama-server). La model card destaca un enfoque de razonamiento explicito ("thinking mode") activado por defecto, con separacion del contenido de razonamiento en el campo `reasoning_content` en la API compatible con OpenAI.
 
-El interes tecnico principal no esta en el modelo en si, sino en la metodologia de cuantizacion: un Q4_K_M estandar degrada este modelo mucho mas de lo habitual (39% mas de perplejidad que BF16 y solo 66% de coincidencia en el token superior), por lo que el autor aplica una receta por tensor que mantiene en mayor precision las partes sensibles (proyecciones de salida de Mamba-2 y proyecciones latentes de los expertos), que suman menos del 9% de los pesos. El resultado declarado es que Q4_K_M se mantiene dentro del 1% de perplejidad respecto a BF16.
+El repositorio es relevante porque documenta un proceso de cuantizacion poco habitual: la cuantizacion estandar degrada este modelo mucho mas de lo normal (un Q4_K_M convencional presenta un 39% mas de perplejidad que BF16 y solo coincide en el token superior el 66% de las veces). El autor identifica que casi todo el dano proviene de las proyecciones de salida y entrada de Mamba-2 y de las proyecciones de bajo rango hacia y desde el espacio latente de los expertos, menos del 9% de los pesos, y las mantiene en mayor precision en todos los ficheros publicados.
 
-El modelo tiene 10.225.187.963 parametros totales y el repositorio ocupa 61,1 GB, lo que refleja la presencia de multiples cuantizaciones (BF16, Q8_0, Q6_K, Q5_K_M, Q4_K_M, IQ4_XS) mas la matriz de importancia. Esta pensado para despliegue local en CPU, Apple Metal y NVIDIA CUDA mediante llama.cpp.
+La licencia es Apache 2.0, igual que el modelo base. El repositorio acumula 1757 descargas y 61,1 GB de tamano total, con ficheros que van desde 6,1 GB (IQ4_XS) hasta 20,5 GB (BF16).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Hibrida: mezcla de expertos (MoE) con capas Mamba-2 y proyecciones latentes de bajo rango (segun la receta de cuantizacion del autor) |
-| Parametros totales | 10.225.187.963 |
+| Arquitectura | Hibrida: transformer con mezcla de expertos (MoE) y bloques Mamba-2 |
+| Parametros totales | 10.225.187.963 (10,2 mil millones) |
 | Parametros activos | no disponible |
-| Longitud de contexto | 32.768 tokens (valor usado en el ejemplo de ejecucion con `-c 32768`; no se especifica si es el maximo nativo) |
-| Tipos de cuantizacion | BF16, Q8_0, Q6_K, Q5_K_M, Q4_K_M, IQ4_XS (mas matriz de importancia imatrix) |
+| Longitud de contexto | no disponible en la informacion proporcionada (el ejemplo de ejecucion usa `-c 32768` y la penalizacion de repeticion se aplica sobre 131072 tokens) |
+| Tipos de cuantizacion | BF16, Q8_0, Q6_K, Q5_K_M, Q4_K_M, IQ4_XS (todos con importance matrix y receta por tensor) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp) |
+| Formato de pesos | GGUF (safetensors solo para el conteo de parametros del modelo base) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible describe la arquitectura de forma indirecta, a traves de la receta de cuantizacion. El modelo combina capas Mamba-2 (proyecciones de entrada y salida `ssm_in` y `ssm_out`) con una capa de mezcla de expertos que contiene 192 expertos enrutados, con proyecciones de subida y bajada hacia un espacio latente (`ffn_latent_up` y `ffn_latent_down`). No se especifica el numero de parametros activos por token, el numero de capas ni la dimension oculta.
+La informacion disponible describe una arquitectura hibrida con tres componentes identificables: capas de mezcla de expertos con 192 expertos enrutados, bloques Mamba-2 con proyecciones de entrada (`ssm_in`) y salida (`ssm_out`), y proyecciones de bajo rango hacia y desde el espacio latente de los expertos (`ffn_latent_up` y `ffn_latent_down`). Los 192 expertos enrutados constituyen la mayor parte del fichero. No se dispone de datos sobre el numero de parametros activos por token, el numero de capas, la dimension oculta ni la composicion del dataset de entrenamiento.
 
-No hay datos publicados sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. La model card unicamente menciona que el modelo tiene un modo de razonamiento (thinking) activado por defecto y una plantilla de chat propia que incluye soporte de llamadas a herramientas, lo que sugiere un ajuste instruccional orientado a agentes y razonamiento multi-paso.
-
-La innovacion destacable esta en la cuantizacion: el autor calcula una matriz de importancia sobre 125.000 tokens con una distribucion representativa de uso real (prosa, matematicas resueltas en modo thinking, codigo y llamadas a herramientas, todo renderizado con la plantilla de chat del modelo) y aplica una receta por tensor que mantiene las proyecciones de salida de Mamba en BF16 y, en los ficheros de 4 a 6 bits, las proyecciones latentes en Q8_0 y las de entrada de Mamba en Q6_K o Q8_0. Los 192 expertos enrutados, que constituyen la mayor parte del fichero, se cuantizan de forma estandar.
+No se han publicado en la informacion disponible detalles sobre el numero de tokens de entrenamiento, la composicion del corpus, ni si se aplicaron tecnicas de RLHF, DPO u otras fases de alineacion. La model card si documenta el proceso de cuantizacion como innovacion tecnica: se calculo una importance matrix sobre 125.000 tokens con una distribucion representativa del uso real (prosa, matematicas resueltas en modo thinking, codigo y llamadas a herramientas, todo renderizado con la plantilla de chat del modelo), y se aplico una receta por tensor que mantiene las proyecciones de salida de Mamba en BF16 y, en los ficheros de 4 a 6 bits, las proyecciones latentes en Q8_0 y las proyecciones de entrada de Mamba en Q6_K o Q8_0.
 
 ## Capacidades
 
-- Generacion de texto conversacional con plantilla de chat propia (`--jinja`).
-- Razonamiento en modo thinking, activado por defecto; el endpoint compatible con OpenAI devuelve el razonamiento en `reasoning_content`. Se puede desactivar con `"chat_template_kwargs": {"enable_thinking": false}`.
-- Llamadas a herramientas (tool calling): el endpoint compatible con OpenAI parsea las llamadas a `tool_calls`. En Ollama, segun el autor, llegan como texto hasta que exista un parser para el formato del modelo.
-- Uso en agentes y razonamiento multi-paso: la model card menciona que la matriz de importancia se calculo incluyendo llamadas a herramientas y matematicas resueltas paso a paso, lo que indica entrenamiento o ajuste para estos flujos.
-- Generacion de codigo: el autor indica que los ajustes de muestreo recomendados "tambien sirven para codigo".
+- Generacion de texto conversacional con plantilla de chat propia incluida en los ficheros GGUF.
+- Razonamiento explicito en modo thinking, activado por defecto; el contenido de razonamiento se expone en el campo `reasoning_content` de la API compatible con OpenAI y como `thinking` en Ollama.
+- Desactivacion del modo thinking por peticion mediante `"chat_template_kwargs": {"enable_thinking": false}` para respuestas directas.
+- Soporte de tool calling / function calling: llama-server parsea las llamadas a herramientas en `tool_calls`; en Ollama llegan como texto hasta que exista un parser para el formato del modelo.
+- Capacidad declarada para codigo: la model card indica que los ajustes de muestreo recomendados "suit code as well" y que la importance matrix incluyo codigo.
+- Capacidad declarada para matematicas resueltas paso a paso en modo thinking, segun la composicion de la importance matrix.
+- Compatibilidad con endpoints (tag `endpoints_compatible`) y con el pipeline de text-generation.
 - Capacidades multilingues: no disponible.
-- Vision, audio u otras modalidades: no disponible.
 
 ## Casos de uso
 
-- Asistente conversacional local con razonamiento visible: el modelo separa el thinking en `reasoning_content`, lo que permite mostrar u ocultar el razonamiento al usuario final segun el producto. Adecuado para interfaces de chat que quieran transparencia en el proceso de respuesta.
-- Agentes con llamadas a herramientas en local: el soporte de `tool_calls` en el endpoint compatible con OpenAI permite integrarlo en frameworks de agentes que ya hablan ese protocolo, sin depender de APIs en la nube.
-- Generacion de codigo en entornos con GPU de consumo: con Q4_K_M (6,7 GB) cabe en GPUs de 8-12 GB y permite autocompletado o generacion de funciones en un IDE local, con la ventaja de privacidad del codigo.
-- Razonamiento matematico paso a paso: el modo thinking esta pensado para problemas que requieren descomposicion; util en herramientas educativas o de verificacion de calculos donde se quiera auditar el razonamiento.
-- Despliegue en estaciones de trabajo sin GPU dedicada: los ficheros funcionan en CPU y Apple Metal, lo que permite servir el modelo en portatiles o servidores sin acelerador, a costa de menor throughput.
-- Prototipado y evaluacion de modelos MoE hibridos: al ser un GGUF con receta de cuantizacion documentada y matriz de importancia incluida, sirve para estudiar el impacto de la cuantizacion en arquitecturas Mamba-2 + MoE y para generar cuantizaciones propias con `llama-quantize`.
-- Servicio de inferencia ligero con Ollama o LM Studio: la integracion directa desde Hugging Face (`ollama run hf.co/Lernex/Metis-1.6-Logos-GGUF:Q4_K_M`) permite levantar un endpoint local en minutos para pruebas internas.
+- Razonamiento asistido por pasos en local: el modelo puede ejecutarse en llama.cpp con el modo thinking activado por defecto y devolver la traza de razonamiento separada del texto final, lo que permite auditar el proceso en tareas de analisis o resolucion de problemas sin depender de servicios en la nube.
+- Generacion de codigo en estaciones de trabajo sin GPU de datacenter: con Q4_K_M (6,7 GB) el modelo cabe en GPUs de consumo y decodifica a unos 129 tokens/s en una RTX 5070 Ti, lo que lo hace util para autocompletado y generacion de funciones en el editor o en pipelines locales.
+- Integracion en pipelines de CI/CD con tool calling: llama-server expone una API compatible con OpenAI que parsea `tool_calls`, de modo que el modelo puede invocarse desde scripts de automatizacion para tareas como resumir diffs, clasificar incidencias o generar mensajes de commit estructurados.
+- Asistente conversacional multi-turno autoalojado: la plantilla de chat incluida en el GGUF y los ajustes de muestreo recomendados (temperatura 0,8, top-p 0,95, top-k 20, penalizacion de repeticion 1,05 sobre todo el contexto) permiten desplegar un chatbot con Ollama o LM Studio mediante `ollama run hf.co/Lernex/Metis-1.6-Logos-GGUF:Q4_K_M`.
+- Procesamiento de documentos largos con contexto extendido: el ejemplo oficial arranca llama-server con `-c 32768`, y la recomendacion de `--repeat-last-n 131072` sugiere que el modelo puede operar con ventanas de hasta 128K tokens; util para resumir o extraer informacion de documentos extensos en una sola pasada.
+- Despliegue en hardware con poca VRAM: la variante IQ4_XS (6,1 GB) permite ejecutar el modelo en GPUs de 8 GB o en CPU con llama.cpp, manteniendo una perplejidad de 16,284 frente a 15,873 del BF16, adecuada para prototipos y entornos de desarrollo.
+- Evaluacion de tecnicas de cuantizacion: el repositorio incluye la importance matrix (`Metis-1.6-Logos-imatrix.gguf`) y el comando `llama-quantize` completo, lo que sirve como referencia reproducible para estudiar el impacto de la cuantizacion por tensor en arquitecturas hibridas MoE + Mamba.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. Los unicos datos de rendimiento son metricas de cuantizacion y de velocidad de inferencia:
+La model card no publica resultados de benchmarks estandar (MMLU, HumanEval, GSM8K). Si incluye metricas de calidad de cuantizacion medidas con `llama-perplexity` sobre wikitext-2 (contexto de 512 tokens, 40 fragmentos) contra el fichero BF16:
 
-| Metrica | Valor |
-|---|---|
-| Perplejidad BF16 (wikitext-2, 512 tokens, 40 chunks) | 15,873 |
-| Perplejidad Q8_0 | 15,887 (KL 0,0080; mismo token superior 95,1%) |
-| Perplejidad Q6_K | 15,891 (KL 0,0115; mismo token superior 94,5%) |
-| Perplejidad Q5_K_M | 15,979 (KL 0,0181; mismo token superior 93,0%) |
-| Perplejidad Q4_K_M | 15,998 (KL 0,0354; mismo token superior 90,3%) |
-| Perplejidad IQ4_XS | 16,284 (KL 0,0448; mismo token superior 88,7%) |
-| Decodificacion Q4_K_M en RTX 5070 Ti (modelo completo en GPU) | ~129 tokens/s |
-| Lectura de prompt Q4_K_M en RTX 5070 Ti | ~1.900 tokens/s |
+| Fichero | Tamano | Perplejidad | Divergencia KL | Mismo token superior |
+|---|---|---|---|---|
+| BF16 | 20,5 GB | 15,873 | referencia | referencia |
+| Q8_0 | 11,1 GB | 15,887 | 0,0080 | 95,1% |
+| Q6_K | 8,8 GB | 15,891 | 0,0115 | 94,5% |
+| Q5_K_M | 7,8 GB | 15,979 | 0,0181 | 93,0% |
+| Q4_K_M | 6,7 GB | 15,998 | 0,0354 | 90,3% |
+| IQ4_XS | 6,1 GB | 16,284 | 0,0448 | 88,7% |
 
-Como referencia, el autor indica que un Q4_K_M estandar (sin receta por tensor) produce un 39% mas de perplejidad que BF16 y coincide en el token superior solo el 66% de las veces.
+Datos de rendimiento en inferencia: en una RTX 5070 Ti con el modelo completo en GPU, Q4_K_M decodifica a aproximadamente 129 tokens/s y procesa prompts a aproximadamente 1.900 tokens/s. No se han publicado resultados de benchmarks de capacidad en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: Q4_K_M 6,7 GB; IQ4_XS 6,1 GB; Q5_K_M 7,8 GB; Q6_K 8,8 GB; Q8_0 11,1 GB; BF16 20,5 GB. Hay que anadir el espacio de cache KV para el contexto elegido (32.768 tokens en el ejemplo del autor).
-- GPU recomendadas: el autor aporta mediciones en una RTX 5070 Ti con el modelo completo en GPU. Por tamano, Q4_K_M cabe en GPUs consumer de 8 GB o mas; Q8_0 requiere 12-16 GB; BF16 requiere 24 GB o mas (RTX 3090/4090, A100, H100).
-- Cabe en GPU consumer: si, en el rango de 8 a 24 GB segun cuantizacion.
-- Opciones de despliegue: llama.cpp (`llama-server`, `llama-cli`), Ollama y LM Studio. Requiere una build de llama.cpp con soporte para Metis-1.6 (`metis16`). Funciona en CPU, Apple Metal y NVIDIA CUDA.
-- Latencia y throughput: ~129 tokens/s de decodificacion y ~1.900 tokens/s de lectura de prompt con Q4_K_M en RTX 5070 Ti. No hay datos para otras GPU ni para CPU.
+- VRAM estimada para inferencia (modelo completo en GPU): 20,5 GB para BF16, 11,1 GB para Q8_0, 8,8 GB para Q6_K, 7,8 GB para Q5_K_M, 6,7 GB para Q4_K_M y 6,1 GB para IQ4_XS.
+- GPUs recomendadas: para BF16, A100 40 GB, H100 o RTX 4090 24 GB; para Q8_0, RTX 4090 24 GB o A6000 48 GB; para Q4_K_M, RTX 5070 Ti (medida oficial), RTX 4080, RTX 3090 o cualquier GPU con 8 GB o mas.
+- Cabe en GPU de consumo: si, desde IQ4_XS (6,1 GB) en adelante; Q4_K_M es la opcion recomendada por el autor para la mayoria de maquinas.
+- Opciones de despliegue: llama.cpp b12089 o superior (CPU, Apple Metal, NVIDIA CUDA), llama-server con API compatible con OpenAI, Ollama (con llama.cpp b12089 o superior empaquetado) y LM Studio. El autor recomienda Q4_K_M como opcion por defecto y Q8_0 como indistinguible de BF16.
+- Latencia y throughput: 129 tokens/s de decodificacion y 1.900 tokens/s de lectura de prompt en RTX 5070 Ti con Q4_K_M y el modelo completo en GPU. No hay datos para otras GPUs ni para ejecucion en CPU.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye modelos comparables de la misma categoria (MoE hibrido Mamba-2 con ~10.000 millones de parametros), ni datos de benchmarks que permitan situarlo frente a alternativas. La unica comparacion interna posible es entre las propias cuantizaciones del repositorio, recogida en la tabla de benchmarks.
+No se dispone de informacion sobre modelos comparables de la misma categoria en la documentacion proporcionada. El modelo combina MoE con Mamba-2 en 10,2 mil millones de parametros, lo que lo situa en una categoria poco comun; no se han publicado en la informacion disponible datos de rendimiento frente a alternativas como Mistral, Qwen o Llama de tamano similar.
+
+| Modelo | Parametros | Contexto | Licencia | Formato | Rendimiento |
+|---|---|---|---|---|---|
+| Metis-1.6-Logos | 10,2 mil millones | no disponible | Apache 2.0 | GGUF | perplejidad 15,873 (BF16, wikitext-2) |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- El repositorio solo contiene ficheros GGUF; no incluye los pesos originales en safetensors. Para otros formatos hay que acudir al modelo base Lernex/Metis-1.6-Logos.
-- Requiere una build de llama.cpp con soporte especifico para `metis16`; las versiones estandar no cargaran los ficheros.
-- En Ollama, las llamadas a herramientas llegan como texto hasta que exista un parser para el formato del modelo, lo que rompe flujos de agentes que dependan de `tool_calls` estructurados.
-- El modo thinking esta activado por defecto y aumenta el consumo de tokens y la latencia; para respuestas directas hay que desactivarlo explicitamente y ajustar la temperatura a 0,3 y el `repeat_penalty` a 1,0.
-- Si se configura manualmente el `repeat_penalty`, es necesario pasar `--repeat-last-n 131072`; de lo contrario llama.cpp solo aplica la penalizacion a los ultimos 64 tokens, lo que degrada la coherencia en contextos largos.
-- No hay informacion sobre sesgos, idiomas soportados ni tasas de alucinacion. Al ser un modelo con modo de razonamiento, existe riesgo de razonamientos plausibles pero incorrectos, especialmente en matematicas y codigo.
-- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias sobre el rendimiento en produccion ni sobre el cumplimiento normativo en dominios regulados.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el mismo dia (1 de noviembre de 2026), por lo que no hay validacion independiente de las metricas declaradas.
-- La fecha de creacion indicada (2026) es posterior a la de la mayoria de modelos publicados; conviene verificar la vigencia y el soporte de la build de llama.cpp necesaria.
+- La cuantizacion estandar degrada este modelo de forma severa: un Q4_K_M convencional presenta un 39% mas de perplejidad que BF16 y solo coincide en el token superior el 66% de las veces. Es imprescindible usar los ficheros de este repositorio, generados con importance matrix y receta por tensor, y no cuantizaciones genericas del modelo base.
+- Los ficheros requieren llama.cpp b12089 o superior; versiones anteriores no cargaran el modelo. Ollama y LM Studio deben empaquetar esa version o superior.
+- El modo thinking esta activado por defecto y consume tokens adicionales; para respuestas directas hay que desactivarlo explicitamente y ajustar la temperatura a 0,3 con `repeat_penalty` 1,0.
+- La penalizacion de repeticion recomendada (1,05) debe aplicarse sobre todo el contexto; si se configura manualmente, hay que pasar `--repeat-last-n 131072`, ya que llama.cpp solo mira los ultimos 64 tokens por defecto.
+- En Ollama, las llamadas a herramientas llegan como texto plano hasta que exista un parser para el formato del modelo; no deben asumirse `tool_calls` estructurados en ese entorno.
+- No se dispone de informacion sobre sesgos conocidos, tasas de alucinacion, idiomas soportados ni evaluaciones de seguridad del modelo.
+- No se dispone de datos sobre el numero de parametros activos por token, lo que impide estimar con precision el coste computacional real de la inferencia mas alla de las medidas empiricas aportadas.
+- La licencia Apache 2.0 permite uso comercial, pero el autor no documenta restricciones adicionales ni condiciones de atribucion especificas mas alla de las de la propia licencia.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/Lernex/Metis-1.6-Logos-GGUF
 - Modelo base: https://huggingface.co/Lernex/Metis-1.6-Logos
-- llama.cpp (requerido, con soporte `metis16`): no disponible en la informacion proporcionada
-- Documentacion de Ollama: no disponible en la informacion proporcionada
-- Documentacion de LM Studio: no disponible en la informacion proporcionada
-- Paper o blog tecnico del modelo: no disponible en la informacion proporcionada
+- Releases de llama.cpp: https://github.com/ggml-org/llama.cpp/releases
+- Guia de compilacion de llama.cpp: https://github.com/ggml-org/llama.cpp/blob/master/docs/build.md

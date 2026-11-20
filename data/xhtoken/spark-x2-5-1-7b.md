@@ -2,94 +2,93 @@
 
 ## Resumen
 
-Spark-X2.5-1.7B es un modelo de lenguaje compacto de 1.700 millones de parámetros desarrollado por XHToken (SparkLLM), diseñado para ofrecer capacidades de IA generalistas con un equilibrio entre rendimiento, eficiencia y accesibilidad. Forma parte de la familia Spark-X2.5, que incluye también una variante de 4B, y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones.
+Spark-X2.5-1.7B es un modelo de lenguaje compacto de propósito general desarrollado por XHToken, con 1.707.657.216 parámetros (aproximadamente 1,7 mil millones) y distribuido bajo licencia Apache 2.0. Forma parte de la familia Spark-X2.5, que también incluye una variante de 4B, y está diseñado para hacer la IA generativa más práctica y eficiente en entornos con recursos limitados, incluyendo despliegue en dispositivo y hardware de consumo.
 
-El modelo emplea una arquitectura híbrida de atención que combina una capa de atención completa con tres capas de atención de ventana deslizante (SWA), lo que reduce sustancialmente el coste computacional asociado a contextos largos. Soporta de forma nativa una ventana de contexto de hasta 1 millón de tokens, una característica poco habitual en modelos de este tamaño. Según la model card, el modelo fue preentrenado sobre aproximadamente 20 billones de tokens y posteriormente refinado con supervisión, aprendizaje por refuerzo a gran escala y la técnica MOPD, lo que mejora sus capacidades de razonamiento, generación de código, uso de herramientas y seguimiento de instrucciones.
+El modelo emplea una arquitectura de atención híbrida que combina una capa de atención completa con tres capas de atención de ventana deslizante (sliding-window attention), lo que reduce el coste computacional asociado al contexto largo y permite soportar de forma nativa ventanas de hasta 1M de tokens. Según la model card, está entrenado sobre aproximadamente 20 billones de tokens y declara soporte para más de 200 idiomas, aunque los metadatos de Hugging Face solo listan inglés y chino.
 
-La relevancia de este modelo radica en su combinación de tamaño reducido, contexto extremadamente largo y soporte para flujos de trabajo agénticos, lo que lo convierte en una opción atractiva para despliegues en dispositivos de consumo y entornos con recursos limitados. Está integrado con frameworks de inferencia populares como vLLM, SGLang, llama.cpp y MLX, y puede ejecutarse en hardware de NVIDIA, Huawei, Hygon y HOUMO.AI.
+Su relevancia actual radica en la combinación de tamaño reducido, contexto muy largo, capacidades de código y agentes, y compatibilidad con múltiples frameworks de inferencia (vLLM, SGLang, llama.cpp, MLX, Ollama, LM Studio). El modelo cuenta con 1.888 descargas y 157 likes en Hugging Face en el momento de la consulta.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido: 1 capa de atención completa + 3 capas de atención de ventana deslizante (SWA) |
-| Parametros totales | 1.707.657.216 (1,7B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | Hasta 1.000.000 tokens (nativo) |
-| Tipos de cuantizacion | No disponible (el repositorio solo contiene pesos en safetensors) |
-| Idiomas soportados | Inglés y chino (según tags); la model card afirma soporte para más de 200 idiomas |
+| Arquitectura | Transformer con atención híbrida (1 capa de atención completa + 3 capas de sliding-window attention) |
+| Parámetros totales | 1.707.657.216 (1,7B) |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | Hasta 1M tokens (nativo, según model card) |
+| Tipos de cuantización | No disponible (no especificado en la información proporcionada) |
+| Idiomas soportados | Inglés y chino según metadatos; la model card declara más de 200 idiomas |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (compatible con Transformers) |
+| Formato de pesos | Safetensors (repo de 3,4 GB), requiere `trust_remote_code` (custom_code) |
 
 ## Arquitectura y entrenamiento
 
-Spark-X2.5-1.7B utiliza una arquitectura híbrida de atención que combina una capa de atención completa (full attention) con tres capas de atención de ventana deslizante (sliding-window attention, SWA). Este diseño busca equilibrar el rendimiento en tareas que requieren acceso global al contexto con la eficiencia en memoria y velocidad de inferencia, reduciendo el tamaño de la caché KV y el coste computacional en secuencias largas. La elección de esta arquitectura está orientada a mejorar la practicidad en escenarios de despliegue real, especialmente en tareas agénticas donde la gestión de la caché es un factor crítico.
+Spark-X2.5-1.7B es un transformer decoder-only con una arquitectura de atención híbrida: intercala una capa de atención completa con tres capas de atención de ventana deslizante. Este diseño busca equilibrar rendimiento, eficiencia de inferencia y tamaño del KV-cache, reduciendo el coste computacional típico de los modelos de contexto largo sin renunciar a la capacidad de modelar dependencias globales. El modelo se distribuye con código personalizado (`custom_code`), por lo que requiere `trust_remote_code=True` en Transformers.
 
-El preentrenamiento se realizó sobre aproximadamente 20 billones de tokens procedentes de un corpus diverso que incluye páginas web, libros, publicaciones académicas, código y materiales enciclopédicos. Se prestó especial atención a la calidad de los datos, la cobertura de dominios y los pesos de muestreo, con estudios de mezcla de datos para optimizar el equilibrio entre matemáticas, lógica, código y otros dominios de alto valor. La capacidad de contexto largo se desarrolló mediante una etapa de entrenamiento dedicada con cientos de miles de millones de tokens y secuencias de hasta 1 millón de tokens.
-
-El post-entrenamiento comienza con un ajuste fino supervisado (SFT) sobre un corpus curado, que establece el seguimiento de instrucciones, la generación estructurada y la finalización de tareas. Posteriormente se aplica aprendizaje por refuerzo a gran escala en varios dominios (comprensión del lenguaje, razonamiento, programación, comportamiento agéntico con herramientas y seguimiento de instrucciones), generando políticas de profesor especializadas que se consolidan en un único modelo desplegable mediante la técnica MOPD. El entrenamiento se llevó a cabo en clústeres de Huawei Ascend.
+El preentrenamiento se realizó sobre aproximadamente 20 billones de tokens procedentes de páginas web, libros, publicaciones académicas, código y materiales enciclopédicos, con estudios extensivos de mezcla de datos para equilibrar matemáticas, lógica y código. La capacidad de contexto largo se desarrolló en una etapa específica con cientos de miles de millones de tokens y longitudes de secuencia de hasta 1M de tokens. El post-entrenamiento incluye fine-tuning supervisado seguido de aprendizaje por refuerzo a gran escala en dominios como comprensión del lenguaje, razonamiento, programación, comportamiento agéntico con herramientas y seguimiento de instrucciones; las políticas especializadas resultantes se consolidaron en un único modelo desplegable mediante la técnica MOPD. El entrenamiento se llevó a cabo en clústeres Huawei Ascend.
 
 ## Capacidades
 
-- Generación de texto conversacional y creativo: mantiene diálogos multi-turno coherentes y produce escritura de calidad en inglés y chino.
-- Razonamiento y resolución de problemas: capacidades mejoradas mediante RL en dominios de lógica, matemáticas y comprensión.
-- Generación de código: soporta tareas de programación en diversos lenguajes, con integración en entornos de desarrollo y agentes.
-- Uso de herramientas (tool calling): el modelo está entrenado para invocar funciones y APIs externas, lo que permite construir agentes que interactúan con el entorno.
-- Flujos de trabajo agénticos: integrado con harnesses como Codex, Claude Code, OpenClaw y Hermes, facilitando tareas multi-paso y razonamiento encadenado.
-- Contexto largo nativo de 1M tokens: permite procesar documentos extensos, libros completos o conversaciones muy largas sin perder información relevante.
-- Multilingüismo: aunque los metadatos oficiales indican inglés y chino, la model card afirma soporte para más de 200 idiomas, lo que sugiere capacidades de traducción y comprensión multilingüe amplias.
+- Generación de texto conversacional multi-turno con contexto muy largo.
+- Razonamiento, escritura y traducción en tareas cotidianas.
+- Generación y comprensión de código, con integración declarada en harnesses agénticos como Codex, Claude Code, OpenClaw y Hermes.
+- Uso de herramientas (tool calling / function calling) y flujos agénticos multi-paso.
+- Razonamiento matemático y lógico reforzado mediante RL.
+- Capacidades multilingües: metadatos indican inglés y chino; la model card declara más de 200 idiomas.
+- Seguimiento de instrucciones y generación estructurada.
+- No se mencionan capacidades de visión, audio ni modo de pensamiento explícito en la información disponible.
 
 ## Casos de uso
 
-- Atención al cliente automatizada: gracias a su ventana de contexto de 1M tokens, el modelo puede gestionar conversaciones multi-turno con historial extenso, manteniendo el contexto de interacciones previas sin necesidad de resúmenes externos. Su capacidad de tool calling permite consultar bases de datos de pedidos o sistemas de ticketing en tiempo real.
-- Generación de código en producción: el modelo puede integrarse en pipelines de CI/CD para autocompletar código, generar tests unitarios o documentar APIs. Su soporte para agentes permite que un bot revise pull requests, sugiera correcciones y ejecute comandos de forma autónoma.
-- Asistentes de documentación técnica: con su contexto largo, puede resumir manuales extensos, extraer información de especificaciones y generar guías de usuario en varios idiomas, reduciendo el trabajo manual de los equipos de documentación.
-- Traducción automática de alta calidad: aunque los idiomas oficiales son inglés y chino, la afirmación de soporte para más de 200 idiomas lo hace adecuado para pipelines de traducción en plataformas de contenido, con la posibilidad de ajustar el tono y el estilo mediante instrucciones.
-- Agentes de automatización de tareas: el modelo puede orquestar flujos de trabajo multi-paso, como la extracción de datos de correos electrónicos, la actualización de hojas de cálculo y el envío de respuestas, utilizando tool calling y razonamiento encadenado.
-- Análisis de documentos legales o financieros: su contexto de 1M tokens permite procesar contratos completos, informes anuales o expedientes, extrayendo cláusulas relevantes, identificando riesgos y generando resúmenes ejecutivos.
-- Educación y tutoría: puede actuar como tutor interactivo en matemáticas, programación o idiomas, adaptando sus explicaciones al nivel del estudiante y manteniendo el hilo de la conversación durante sesiones largas.
+- Atención al cliente automatizada: el modelo puede gestionar conversaciones multi-turno con contexto muy largo (hasta 1M tokens) gracias a su atención híbrida, manteniendo el historial completo de la conversación sin truncamientos agresivos.
+- Generación de código en producción: su soporte declarado de tool calling y su integración con harnesses agénticos permiten usarlo en pipelines de CI/CD para sugerencias de parcheo, generación de tests o revisión automatizada de código.
+- Agentes autónomos de automatización: con capacidad de razonamiento multi-paso y uso de herramientas, puede orquestar tareas como consultas a APIs, extracción de datos y ejecución de comandos en flujos controlados.
+- Asistente de documentación técnica: generación de resúmenes, traducción entre inglés y chino y reescritura de documentación extensa aprovechando la ventana de contexto larga para procesar manuales completos.
+- Procesamiento de documentos largos: análisis de contratos, informes o artículos académicos de decenas de miles de tokens en una sola pasada, sin necesidad de chunking.
+- Despliegue en dispositivo y edge computing: con 1,7B parámetros y 3,4 GB en safetensors, es viable en GPUs de consumo y en plataformas compatibles con llama.cpp, Ollama o LM Studio para asistentes locales.
+- Prototipado rápido y fine-tuning: su licencia Apache 2.0 y compatibilidad con LLaMA-Factory permiten adaptarlo a dominios específicos con costes de cómputo moderados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona una imagen comparativa con modelos similares, pero no se proporcionan datos numéricos concretos en el texto extraído. Tampoco se encuentran métricas como MMLU, HumanEval o GSM8K en los repositorios consultados. Por tanto, no es posible presentar una tabla de rendimiento verificada.
+No se han publicado resultados de benchmarks numéricos en la información disponible. La model card incluye referencias a una figura comparativa (`images/model-benchmark-comparison.svg`) y menciona resultados líderes entre modelos de tamaño comparable en tareas de código, agentes, matemáticas e instrucciones, pero no se proporcionan cifras concretas (MMLU, HumanEval, GSM8K u otras) en el texto disponible.
 
 ## Requisitos de hardware
 
-- No se dispone de datos oficiales sobre VRAM, latencia o throughput publicados por el autor.
-- Dado que el modelo tiene 1.700 millones de parámetros, se puede estimar que en FP16 ocupará aproximadamente 3,4 GB de memoria (el tamaño del repositorio coincide con esta estimación). Con cuantización de 4 bits, podría caber en GPUs con 2 GB de VRAM, aunque no se han publicado archivos GGUF ni cuantizaciones oficiales.
-- Es adecuado para GPUs de consumo como NVIDIA RTX 3060 (12 GB), RTX 4060 (8 GB) o superiores, así como para Apple Silicon con MLX.
-- Frameworks de inferencia compatibles según la model card: vLLM, SGLang, llama.cpp, MLX, Ollama y LM Studio.
-- También puede ejecutarse en hardware alternativo como Huawei Ascend, Hygon y HOUMO.AI, según la documentación oficial.
-- Para despliegue en producción, se recomienda usar vLLM o SGLang para optimizar el throughput y la gestión de la caché KV, especialmente con contextos largos.
+- VRAM estimada para inferencia en FP16/BF16: aproximadamente 3,4 GB solo para pesos, más overhead de KV-cache y activaciones; en la práctica, en torno a 4-6 GB según longitud de contexto.
+- En cuantización de 8 bits: aproximadamente 1,7-2 GB de pesos; en 4 bits: aproximadamente 0,9-1,2 GB.
+- GPU recomendadas: cabe en GPUs de consumo como RTX 3060 (12 GB), RTX 4060 Ti, RTX 4070, RTX 4090; para contexto de 1M tokens se requiere hardware con mucha memoria (A100 80 GB, H100) o técnicas de gestión de KV-cache.
+- Compatibilidad declarada con hardware NVIDIA, Huawei Ascend, Hygon y HOUMO.AI.
+- Frameworks de despliegue soportados: vLLM, SGLang, llama.cpp, MLX, Ollama y LM Studio; fine-tuning con LLaMA-Factory.
+- Latencia y throughput: no disponibles en la información proporcionada; la model card afirma mejor TTFT y TOPT frente a modelos de tamaño similar, sin cifras concretas.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks comparativos publicados por el autor, por lo que no es posible realizar una comparación cuantitativa rigurosa. Sin embargo, por tamaño y enfoque, los modelos comparables incluyen:
-
-| Modelo | Parametros | Contexto | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Spark-X2.5-1.7B | 1,7B | 1M tokens | Apache 2.0 | Arquitectura híbrida SWA + full attention |
-| Qwen2.5-1.5B | 1,5B | 32K tokens | Apache 2.0 | Modelo denso, buen rendimiento en código |
-| Llama-3.2-1B | 1,2B | 128K tokens | Llama 3.2 | Modelo ligero de Meta, contexto largo |
-| Gemma-2-2B | 2,6B | 8K tokens | Gemma | Modelo de Google, eficiente en razonamiento |
+| Spark-X2.5-1.7B | 1,7B | Hasta 1M tokens | Apache 2.0 | Hugging Face (Transformers, safetensors) |
+| Spark-X2.5-4B | 4B (según model card) | Hasta 1M tokens | Apache 2.0 (según familia) | Hugging Face |
+| Alternativas de ~1-2B | No disponible | No disponible | No disponible | No disponible |
 
-La principal diferencia de Spark-X2.5-1.7B es su contexto nativo de 1M tokens, muy superior al de sus competidores directos, y su enfoque en capacidades agénticas. Sin embargo, al no haber benchmarks públicos, no se puede verificar su rendimiento relativo.
+No se dispone de datos de benchmarks ni de especificaciones detalladas de modelos competidores en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa fiable con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- No se han publicado resultados de benchmarks independientes, por lo que las afirmaciones de rendimiento de la model card no han sido verificadas externamente.
-- Los metadatos oficiales indican solo inglés y chino como idiomas soportados, a pesar de la afirmación de más de 200 idiomas en la documentación. Se recomienda validar el rendimiento en otros idiomas antes de usarlo en producción.
-- Al ser un modelo de 1,7B, su capacidad de razonamiento complejo y generación de código es limitada en comparación con modelos mucho más grandes; puede fallar en tareas que requieren conocimiento enciclopédico profundo o razonamiento multi-paso extenso.
-- Riesgo de alucinación: como cualquier LLM, puede generar información falsa o inventada, especialmente en contextos largos donde la atención puede degradarse.
-- No se han publicado detalles sobre sesgos o comportamientos no deseados. Al estar entrenado con datos web, es probable que herede sesgos presentes en el corpus.
-- La licencia Apache 2.0 permite uso comercial, pero se debe verificar que el uso de los harnesses de agentes mencionados (Codex, Claude Code, etc.) no esté sujeto a restricciones adicionales de sus respectivos proveedores.
-- El contexto de 1M tokens es nativo, pero el rendimiento efectivo en secuencias muy largas puede degradarse; se recomienda probar con casos de uso reales antes de confiar en esa capacidad.
-- El repositorio tiene muy pocas descargas (8) y likes (12), lo que sugiere que el modelo es reciente y aún no ha sido ampliamente adoptado o evaluado por la comunidad.
+- Riesgo de alucinación inherente a los modelos de lenguaje de 1,7B parámetros; la precisión factual puede degradarse en dominios especializados.
+- Sesgos potenciales derivados del corpus de preentrenamiento (web, libros, código), no documentados en detalle por el autor.
+- Cobertura idiomática: los metadatos solo garantizan inglés y chino; el soporte de más de 200 idiomas es una afirmación de la model card sin verificación independiente disponible.
+- El contexto de 1M tokens es una capacidad declarada; el rendimiento efectivo en ventanas extremas puede degradarse y el coste de KV-cache crece con la longitud.
+- Requiere `trust_remote_code=True` por el uso de código personalizado, lo que implica ejecutar código del autor del modelo; conviene auditar antes de usar en producción.
+- Aunque la licencia Apache 2.0 permite uso comercial, no se documentan cláusulas adicionales ni restricciones de uso aceptable más allá de la licencia estándar.
+- No se han publicado resultados de benchmarks verificables ni detalles sobre cuantizaciones oficiales, lo que dificulta la evaluación previa a producción.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/XHToken/Spark-X2.5-1.7B
-- Repositorio GitHub: https://github.com/XHToken/Spark-X2.5
-- Colección Spark-X2.5 en Hugging Face: https://huggingface.co/collections/XHToken/spark-x25
-- Perfil de XHToken en Hugging Face: https://huggingface.co/XHToken
-- Modelo Spark-X2.5-4B en ModelScope: https://www.modelscope.cn/models/XHToken/Spark-X2.5-4B
+- Hugging Face: https://huggingface.co/XHToken/Spark-X2.5-1.7B
+- Modelo base: https://huggingface.co/XHToken/Spark-X2.5-1.7B-Base
+- Slack: https://join.slack.com/t/tokenspark/shared_invite/zt-432qf8l2f-5~dLyXv8uETr0P0UuC07nw
+- Discord: https://discord.gg/kTDE2Hg8aw
+- YouTube: https://www.youtube.com/@SparkLLM
+- dev.to: https://dev.to/sparkllm
+- Bluesky: https://bsky.app/profile/sparkllm.bsky.social
+- X: https://x.com/sparkllm
+- Zhihu: https://www.zhihu.com/people/zhiikz7qh7m

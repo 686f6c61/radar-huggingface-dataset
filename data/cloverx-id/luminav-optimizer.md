@@ -2,93 +2,96 @@
 
 ## Resumen
 
-LuminaV Optimizer (nombre de paquete `luminamoon`, especificación de algoritmo v1.5.5) es un **optimizador de entrenamiento en baja precisión** para redes neuronales profundas, no un modelo de lenguaje. Lo desarrolla el colectivo PROJECT LOOMY (Silver Moon / `@cloverxion` y Lumina Moon / `@cloverx-id`) y se publica en PyPI y Hugging Face bajo licencia Apache 2.0. Su objetivo es reducir el consumo de memoria y mejorar la estabilidad numérica al entrenar y ajustar transformers en `bfloat16` y `float16`, evitando la necesidad de mantener estados de optimizador en `float32`.
+LuminaV-Optimizer (publicado bajo el paraguas del paquete `luminamoon`, también conocido como Loomy) no es un modelo de lenguaje, sino un **optimizador numérico de bajo precision** para el entrenamiento de redes neuronales, junto con un conjunto de utilidades asociadas. Lo desarrollan Silver Moon (@cloverxion) y los contribuidores de Lumina Moon (@cloverx-id). Resuelve el problema del coste de memoria y cómputo en las actualizaciones de parámetros durante el entrenamiento, ofreciendo kernels SIMD en CPU (AVX-512/AVX2), soporte Vulkan UMA y kernels Triton para GPU, además de redondeo estocástico y modos de bajo consumo de VRAM.
 
-El componente central es una familia de variantes de *lookahead momentum* convexo (CLM, de doble búfer, y TD-CLM, de búfer único con defecto triangular) con acotación racional de Padé [13/6] y redondeo estocástico sin estado basado en MurmurHash3 de 32 bits. La implementación combina rutas SIMD en Rust (AVX-512/AVX2, NEON), kernels Triton AOT/JIT y soporte de Vulkan UMA, con backend PyTorch para CUDA, ROCm y XPU.
+El repositorio agrupa cuatro componentes activos: el optimizador LuminaV (matemática v1.6.0), el motor de datos LuminaMoon (v1.1.1.post2), el framework de evaluación LSO-Eval y una familia de capas neuronales racionales denominada Ra-Family (RaNorm, RaTanh, RaGELU, PosRaGLU, RaAttention con softmax racional Cayley-Padé). La implementación está escrita en Rust y Python, con arquitectura modular y soporte para Python 3.10 a 3.15 en modo free-threaded (abi3t).
 
-Es relevante ahora porque el ajuste fino de LLM en GPUs de consumo está limitado por la memoria de los estados del optimizador; un optimizador que opera nativamente en bf16/fp16 con redondeo estocástico reproducible puede reducir esa huella sin requerir `fp32` maestro. El repositorio incluye además un motor de datos (`LuminaMoon Data Engine`) y una suite de evaluación (`LSO-Eval v1.1.0`) con verificación mediante solver SMT Z3 y pruebas de paridad numérica.
+Es relevante ahora porque aborda dos frentes candentes en el entrenamiento de LLM: la eficiencia de memoria en el estado del optimizador (crítico para ajustar modelos grandes en hardware limitado) y la sustitución de operaciones trascendentes (tanh, sqrt) por aproximaciones racionales acelerables por hardware. No obstante, conviene subrayar que **no es un modelo generativo**: no produce texto ni tiene parámetros de lenguaje, contexto o capacidades de razonamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Optimizador de descenso por gradiente con lookahead momentum convexo (CLM / TD-CLM); no es un modelo neuronal |
-| Parametros totales | no disponible (no aplica: es un optimizador, no un modelo) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (no aplica) |
-| Tipos de cuantizacion | Opera en `bfloat16` y `float16`; redondeo estocástico de 32 bits (MurmurHash3); no se documentan formatos de cuantizacion de pesos |
-| Idiomas soportados | `en` (documentacion y metadatos; el software es agnostico al idioma del modelo entrenado) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | no aplica (paquete Python/Rust; el repo pesa 0.0 GB y no contiene pesos) |
+| Arquitectura | Optimizador numérico (no es un transformer); kernels SIMD CPU, Vulkan y Triton; familia de capas racionales Ra-Family |
+| Parametros totales | no disponible (el artefacto no contiene pesos de modelo; tamaño del repo 0.0 GB) |
+| Parametros activos | no aplica |
+| Longitud de contexto | no disponible (no es un modelo de lenguaje) |
+| Tipos de cuantizacion | no disponible como cuantización de pesos; soporta bf16 y fp16 en el cómputo del optimizador y redondeo estocástico |
+| Idiomas soportados | en (inglés, según metadatos) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | no disponible (paquete Python/Rust distribuido vía PyPI; no hay safetensors ni GGUF) |
 
 ## Arquitectura y entrenamiento
 
-LuminaV no entrena un modelo: es el algoritmo de optimización que se aplica durante el entrenamiento. Su diseño parte de dos variantes de momentum con lookahead convexo: CLM, que mantiene dos búferes de estado, y TD-CLM, que usa un único búfer y modela el defecto triangular entre iteraciones. La actualización se acota mediante una aproximación racional de Padé [13/6], que sustituye funciones trascendentes costosas por una división de polinomios, y el redondeo a baja precisión se realiza de forma estocástica y sin estado con MurmurHash3 de 32 bits, lo que garantiza reproducibilidad bit a bit sin almacenar generadores aleatorios por parámetro.
+El componente central, LuminaV v1.6.0, es un optimizador con backend dual: rutas SIMD en CPU (AVX-512 y AVX2) y kernels Triton con compilación AOT y JIT, además de una ruta Vulkan para memoria unificada (UMA). Incorpora la llamada "Triangle Family" mediante los modos `buffer="T1"` y `"T2"`, fusión opcional de buckets contiguos y precalentamiento de kernels Triton JIT. El paquete incluye un motor de datos con normalización de texto SIMD (AVX-512/AVX2/NEON), filtrado por entropía de Shannon, deduplicación MinHash/XXH3-64, enmascarado de PII y recuperación de checkpoints con esquema Ping-Pong de 128 bytes.
 
-La implementación es modular: núcleo en Rust con rutas SIMD (AVX-512, AVX2, NEON), kernels Triton con compilación AOT y JIT, backend Vulkan para memoria unificada (UMA) y una capa PyTorch para CUDA, ROCm y XPU. El repositorio incluye además el motor de datos `LuminaMoon Data Engine` (normalización de texto SIMD, filtrado por entropía de Shannon, deduplicación MinHash/XXH3-64, enmascarado de PII y recuperación de checkpoints ping-pong de 128 B) y la suite `LSO-Eval v1.1.0`, que valida el optimizador con el solver SMT Z3, benchmarks de trayectorias 2D, pruebas de paridad numérica y evaluación sobre un LLM de 4B (Qwen3.5-4B) y un modelo de visión. No se especifican en la información disponible el número de tokens, la composición del dataset ni si se empleó RLHF o DPO, ya que no corresponde a un modelo generativo.
+La familia Ra-Family aporta capas neuronales libres de tanh y de raíz cuadrada: RaNorm, RaBatchNorm2d (con folding de pesos Conv2d), RaTanh, RaGELU, PosRaGLU (gating acotado en el intervalo (0,1)) y RaAttention con softmax racional Cayley-Padé. Estas capas se aceleran mediante Triton en GPU y SIMD AVX2/AVX-512 en Rust. No se proporcionan datos sobre el corpus de entrenamiento, número de tokens ni uso de RLHF/DPO, porque el artefacto no es un modelo entrenado sino una librería de optimización y evaluación. LSO-Eval ofrece verificación con el solver SMT Z3, benchmarks de trayectorias 2D y pruebas de paridad numérica.
 
 ## Capacidades
 
-- Actualización de parámetros en `bfloat16` y `float16` sin estado maestro en `float32`, orientada a reducir la huella de memoria del optimizador.
-- Variantes CLM (doble búfer) y TD-CLM (búfer único) con lookahead momentum convexo.
-- Acotación racional de Padé [13/6] para estabilidad numérica en baja precisión.
-- Redondeo estocástico sin estado (MurmurHash3 de 32 bits) reproducible y determinista.
-- Fusión opcional de *buckets* contiguos y precalentamiento JIT de kernels Triton.
-- Aceleración SIMD en CPU (AVX-512, AVX2, NEON) y soporte Vulkan UMA.
-- Backends para CUDA, ROCm y XPU a través de PyTorch; kernels Triton AOT/JIT.
-- Compatibilidad con Python 3.10 a 3.15t (free-threaded).
-- Suite de verificación LSO-Eval con comprobaciones Z3, paridad numérica y benchmarks de trayectoria.
-- Motor de datos auxiliar: normalización SIMD, filtrado por entropía, deduplicación MinHash/XXH3-64 y enmascarado de PII.
+- Actualización de parámetros de redes neuronales con precisión reducida (bf16, fp16) y redondeo estocástico.
+- Optimización con bajo consumo de VRAM mediante modos de memoria eficiente y fusión de buckets.
+- Aceleración en CPU con SIMD AVX-512 y AVX2; aceleración en GPU con kernels Triton AOT/JIT y ruta Vulkan UMA.
+- Preprocesamiento de datasets de texto: normalización SIMD, filtrado por entropía, deduplicación y enmascarado de PII.
+- Capas neuronales racionales (RaNorm, RaTanh, RaGELU, PosRaGLU, RaAttention) como bloques alternativos para arquitecturas transformer.
+- Evaluación y verificación de optimizadores: comprobaciones con Z3 SMT, benchmarks de trayectorias y pruebas de paridad numérica.
+- Integración con PyTorch, NumPy y HuggingFace en un espacio de nombres Python free-threaded (abi3t).
+- Soporte de plataformas CUDA, ROCm y XPU según los tags del repositorio.
 
 ## Casos de uso
 
-- **Ajuste fino de LLM en GPUs de consumo:** al mantener los estados del optimizador en bf16/fp16, permite entrenar o hacer *fine-tuning* de transformers de 7B-13B en tarjetas con 24 GB de VRAM donde un optimizador AdamW en fp32 no cabría.
-- **Entrenamiento con memoria restringida en clúster:** la variante TD-CLM de búfer único reduce el estado por parámetro frente a CLM de doble búfer, útil cuando el presupuesto de VRAM por GPU es el cuello de botella.
-- **Reproducibilidad de experimentos:** el redondeo estocástico sin estado basado en hash permite repetir una ejecución bit a bit sin guardar estados RNG por parámetro, lo que facilita auditorías y comparaciones entre *runs*.
-- **Investigación en optimizadores:** la suite LSO-Eval con Z3 y benchmarks de trayectorias 2D sirve para validar numéricamente nuevas variantes de momentum antes de escalarlas a modelos grandes.
-- **Preprocesado de datasets a gran escala:** el motor de datos integrado aplica normalización SIMD, deduplicación MinHash/XXH3-64 y enmascarado de PII en streaming, adecuado para preparar corpus de entrenamiento sin salir del mismo stack.
-- **Despliegue en hardware heterogéneo:** las rutas AVX-512/AVX2/NEON, Vulkan UMA, CUDA, ROCm y XPU permiten usar el mismo optimizador en estaciones CPU, GPUs AMD/NVIDIA e iGPUs con memoria unificada.
-- **Integración en pipelines existentes de PyTorch:** al ser un paquete PyPI (`luminamoon`), se puede sustituir el optimizador en un script de entrenamiento estándar sin reescribir el bucle de entrenamiento.
+- **Entrenamiento de LLM con VRAM limitada**: el modo de bajo consumo y el redondeo estocástico permiten mantener el estado del optimizador en bf16/fp16, reduciendo la huella de memoria frente a optimizadores en fp32 y facilitando el ajuste de modelos en GPUs de gama media.
+- **Ajuste fino en infraestructura heterogénea**: la combinación de SIMD en CPU, Triton en GPU y Vulkan UMA permite desplegar el mismo optimizador en nodos con distintas aceleradoras (CUDA, ROCm, XPU) sin reescribir el pipeline.
+- **Aceleración de preprocesamiento de corpus**: el motor de datos aplica normalización SIMD, deduplicación MinHash/XXH3-64 y enmascarado de PII sobre grandes volúmenes de texto antes del entrenamiento, reduciendo el coste de limpieza de datasets.
+- **Investigación en arquitecturas racionales**: RaAttention con softmax Cayley-Padé y PosRaGLU permiten experimentar con alternativas a softmax y a las activaciones trascendentes en transformers, evaluando su impacto en estabilidad y coste.
+- **Verificación formal de optimizadores**: LSO-Eval usa Z3 para comprobar propiedades del optimizador y ejecutar pruebas de paridad numérica, útil en equipos que necesitan validar corrección antes de producción.
+- **Prototipado rápido en Python**: la instalación vía `pip install luminamoon` y la API expuesta (`LuminaV([weights, biases], lr=8e-4, weight_decay=0.08)`) permiten integrar el optimizador en scripts de PyTorch/NumPy existentes con cambios mínimos.
+- **Benchmarking de trayectorias de optimización**: los benchmarks 2D de LSO-Eval sirven para comparar el comportamiento de LuminaV frente a optimizadores estándar en escenarios controlados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona una verificación empírica de las etapas II-IV de LSO-Eval sobre LuminaV v1.5.3 con `torch.bfloat16` y `centered_defect=False`, y una validación con Qwen3.5-4B, pero no se incluyen cifras numéricas (loss, perplejidad, throughput ni comparación con AdamW) en los datos proporcionados.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona la existencia de documentación de evaluación (`eval/LSO_Eval.pdf`) y de benchmarks de trayectorias 2D, pero no incluye cifras concretas de MMLU, HumanEval, GSM8K ni métricas de throughput o latencia comparables.
 
 ## Requisitos de hardware
 
-- **VRAM estimada:** no disponible como cifra concreta; el ahorro depende del modelo entrenado y de la variante (CLM de doble búfer frente a TD-CLM de búfer único). El objetivo declarado es operar sin estados maestros en fp32.
-- **GPU recomendadas:** no se especifican modelos concretos. El soporte abarca CUDA (NVIDIA), ROCm (AMD) y XPU (Intel) vía PyTorch, además de Vulkan UMA.
-- **GPU de consumo:** el caso de uso declarado es *low-VRAM*, por lo que está pensado para tarjetas de consumo, aunque no se detallan modelos ni capacidades mínimas.
-- **CPU:** rutas SIMD AVX-512, AVX2 y NEON, por lo que requiere un procesador con dichas extensiones para aprovechar la aceleración.
-- **Despliegue:** instalación vía PyPI (`pip install luminamoon`); integración con PyTorch; kernels Triton AOT/JIT; backend Vulkan.
-- **Latencia y throughput:** no disponible.
+- VRAM estimada para inferencia: no aplica (no es un modelo de inferencia); el consumo depende del tamaño del modelo que se entrene y del estado del optimizador, que puede mantenerse en bf16/fp16.
+- GPU recomendadas: no disponible de forma específica; los tags indican soporte para CUDA, ROCm y XPU, y la ruta Vulkan UMA.
+- Cabe en GPU de consumo: no disponible; el modo de bajo consumo de VRAM está diseñado para reducir requisitos, pero no se publican cifras mínimas.
+- Opciones de despliegue: instalación vía PyPI (`pip install luminamoon`) o compilación desde fuente con Maturin y toolchain Rust 2024; integración con PyTorch, NumPy y HuggingFace.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-No disponible. LuminaV es un optimizador, no un modelo de lenguaje, por lo que la comparación con LLM no aplica. Sus alternativas naturales serían optimizadores como AdamW, Lion, Sophia o 8-bit Adam, pero no se han proporcionado datos comparativos de rendimiento, memoria ni convergencia en la información disponible.
+| Aspecto | LuminaV-Optimizer | AdamW (referencia estándar) | bitsandbytes 8-bit optimizers | Lion |
+|---|---|---|---|---|
+| Categoría | Optimizador + utilidades | Optimizador | Optimizador cuantizado | Optimizador |
+| Precisión de estado | bf16/fp16 con redondeo estocástico | fp32 (típico) | 8 bits | fp32 (típico) |
+| Aceleración | SIMD AVX-512/AVX2, Triton, Vulkan | Nativa en frameworks | CUDA | Nativa en frameworks |
+| Licencia | Apache-2.0 | BSD/MIT (según implementación) | MIT | Apache-2.0 |
+| Datos de rendimiento publicados | no disponible | ampliamente reportados | ampliamente reportados | ampliamente reportados |
+
+La comparación es orientativa: no se dispone de métricas publicadas de LuminaV que permitan una comparación cuantitativa con estos optimizadores.
 
 ## Limitaciones y advertencias
 
-- **No es un modelo:** no genera texto, no razona, no soporta tool calling ni agentes; es una librería de optimización. Cualquier uso como modelo de inferencia es un error de categoría.
-- **Madurez y adopción:** 499 descargas y 2 *likes* en el momento de la consulta; proyecto de investigación con un único mantenedor principal visible, lo que implica riesgo de mantenimiento a largo plazo.
-- **Verificación limitada:** los benchmarks publicados se reducen a LSO-Eval sobre un LLM de 4B; no hay evidencia pública de entrenamiento a gran escala (decenas de miles de millones de parámetros).
-- **Idioma de la documentación:** solo en inglés (`en`), aunque el software es agnóstico al idioma del modelo.
-- **Riesgo numérico:** el redondeo estocástico y la acotación de Padé introducen aproximaciones; en modelos muy sensibles a la precisión del optimizador conviene validar la convergencia frente a AdamW en fp32.
-- **Licencia:** Apache 2.0 permite uso comercial, pero conviene revisar las dependencias transitivas (Rust, Triton, Vulkan) y sus licencias.
-- **Compatibilidad:** el soporte de Python 3.15t (free-threaded) y de Vulkan UMA es reciente; en producción conviene fijar versiones y probar la paridad numérica con LSO-Eval.
+- **No es un modelo de lenguaje**: no genera texto, no tiene contexto, ni capacidades de razonamiento, visión o tool calling. Cualquier expectativa en ese sentido es un malentendido del artefacto.
+- Ausencia de benchmarks publicados: no hay evidencia cuantitativa de convergencia, estabilidad o velocidad frente a optimizadores establecidos, lo que dificulta su adopción en producción sin validación propia.
+- Madurez y soporte: proyecto de investigación con versiones activas (matemática v1.6.0, paquete v1.1.1.post2) y muy pocas señales de adopción (2 likes, 1256 descargas), lo que implica riesgo de mantenimiento y de cambios de API.
+- Dependencia de toolchain específico: la compilación desde fuente requiere Rust 2024 y Maturin; el uso de Python free-threaded (abi3t) puede no ser compatible con todo el ecosistema.
+- Idiomas: los metadatos solo declaran inglés para la documentación y el motor de datos; no hay soporte multilingüe documentado.
+- Licencia Apache-2.0: permite uso comercial, pero conviene revisar los términos de los componentes de terceros (Triton, Vulkan) y la ausencia de garantías.
+- Riesgo de resultados no reproducibles: sin datos de entrenamiento ni métricas, la validez de las capas Ra-Family en tareas downstream no está demostrada de forma independiente.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/cloverx-id/LuminaV-Optimizer
 - Repositorio GitHub: https://github.com/cloverx-id/luminamoon
-- Portal de documentación: https://cloverx-id.github.io/luminamoon/
-- Paquete PyPI: https://pypi.org/project/luminamoon/
-- Changelog del algoritmo: https://huggingface.co/cloverx-id/LuminaV-Optimizer/blob/main/CHANGELOG.md
+- Documentación: https://cloverx-id.github.io/luminamoon/
+- PyPI: https://pypi.org/project/luminamoon/
+- DOI (Zenodo): https://doi.org/10.5281/zenodo.23973325
 - Guía del optimizador: https://huggingface.co/cloverx-id/LuminaV-Optimizer/blob/main/optimizer/README.md
 - Guía del motor de datos: https://huggingface.co/cloverx-id/LuminaV-Optimizer/blob/main/data/README.md
-- Guía de LSO-Eval: https://huggingface.co/cloverx-id/LuminaV-Optimizer/blob/main/eval/README.md
-- Changelogs: https://huggingface.co/cloverx-id/LuminaV-Optimizer/blob/main/changelogs/README.md
-- Configuración: https://huggingface.co/cloverx-id/LuminaV-Optimizer/blob/main/config.json
-- Licencia: https://huggingface.co/cloverx-id/LuminaV-Optimizer/blob/main/LICENSE
-- Notebook LSO-Eval v1.1.0 (Colab): https://colab.research.google.com/drive/1UepDza5Wm3KRNooCA2Bn69GIeKB21a4a?usp=sharing
-- Paper referenciado en tags (arXiv:2010.06192): https://arxiv.org/abs/2010.06192
+- Guía LSO-Eval: https://huggingface.co/cloverx-id/LuminaV-Optimizer/blob/main/eval/README.md
+- Guía Ra-Family: https://huggingface.co/cloverx-id/LuminaV-Optimizer/blob/main/docs/nn/README.md
+- Referencias teóricas: https://huggingface.co/cloverx-id/LuminaV-Optimizer/blob/main/references/README.md
+- Referencia de API: https://huggingface.co/cloverx-id/LuminaV-Optimizer/blob/main/docs/en/03_configuration_api.md

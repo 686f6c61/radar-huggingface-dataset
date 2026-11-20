@@ -56,28 +56,28 @@
   "sources": [
     {
       "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
-      "url": "https://www.microsoft.com/?msockid=1ee0923e84336d342bc485d185f46c7a",
-      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
-    },
-    {
-      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
-      "url": "https://account.microsoft.com/account",
-      "snippet": "It’s all here with Microsoft account Your Microsoft account connects all your Microsoft apps and services. Sign in to manage your …"
+      "url": "https://www.microsoft.com/?msockid=0a3b87c13de3623f046d9fd63c4763b8",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …Read more"
     },
     {
       "title": "Microsoft – IA, Cloud, Productivité, Informatique, Jeux et applications",
-      "url": "https://www.microsoft.com/fr-fr?msockid=1ee0923e84336d342bc485d185f46c7a",
-      "snippet": "Découvrez les produits et services Microsoft et l’assistance pour votre famille ou votre entreprise. Découvrez Microsoft 365, Copilot, …"
+      "url": "https://www.microsoft.com/fr-fr?msockid=0a3b87c13de3623f046d9fd63c4763b8",
+      "snippet": "Découvrez les produits et services Microsoft et l’assistance pour votre famille ou votre entreprise. Découvrez Microsoft 365, Copilot, …Read more"
+    },
+    {
+      "title": "Microsoft account | Connectez-vous ou créez votre compte aujourd’hui ...",
+      "url": "https://account.microsoft.com/account?mkt=fr-fr",
+      "snippet": "Simplifiez votre journée Accédez à toutes vos applications, services et jeux Microsoft avec un seul compte. Quel que soit votre …Read more"
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/login",
+      "snippet": "Sign in to manage your Microsoft account and access free online services like Outlook, Word, Excel, and PowerPoint securely from …Read more"
     },
     {
       "title": "Sign in to your account",
       "url": "https://myaccount.microsoft.com/",
       "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
-    },
-    {
-      "title": "Microsoft Store - Download apps, games & more for your Windows PC",
-      "url": "https://apps.microsoft.com/home",
-      "snippet": "Explore the Microsoft Store for apps and games on Windows. Enjoy exclusive deals, new releases, and your favorite content all in …"
     }
   ]
 }

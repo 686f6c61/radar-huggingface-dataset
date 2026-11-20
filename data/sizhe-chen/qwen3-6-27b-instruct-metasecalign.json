@@ -5,7 +5,7 @@
   "author": "Sizhe-Chen",
   "url": "https://huggingface.co/Sizhe-Chen/Qwen3.6-27B-Instruct-MetaSecAlign",
   "created_at": "2026-10-19T20:52:45.000Z",
-  "updated_at": "2026-11-10T07:48:59.000Z",
+  "updated_at": "2026-11-19T12:17:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

@@ -73,31 +73,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Youssofal/Qwen3.8-27B-MTPLX-Optimized-Speed · Hugging Face",
-      "url": "https://huggingface.co/Youssofal/Qwen3.8-27B-MTPLX-Optimized-Speed",
-      "snippet": "Instructions to use Youssofal/Qwen3.8-27B-MTPLX-Optimized-Speed with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "Youssofal/Qwen3.8-27B-MTPLX-Optimized-Speed-FP16 at main",
-      "url": "https://huggingface.co/Youssofal/Qwen3.8-27B-MTPLX-Optimized-Speed-FP16/tree/main",
-      "snippet": "Instructions to use Youssofal/Qwen3.8-27B-MTPLX-Optimized-Speed-FP16 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "Qwen3.8-27B-MTPLX-Optimized-Speed: Text-to-Text model — overview, use ...",
-      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-mtplx-optimized-speed-youssofal",
-      "snippet": "Overview Qwen3.8-27B-MTPLX-Optimized-Speed is a 4-bit quantized version of Qwen 3.8 27B optimized for Apple Silicon Macs, built and maintained by Youssofal. The model retains the original multi-token-prediction (MTP) head, enabling MTPLX&#x27;s speculative decoding to draft multiple tokens ahead and verify them in a single pass, delivering 2-3x speedup compared to standard inference. The model ..."
-    },
-    {
-      "title": "GitHub - youssofal/MTPLX: 3x faster speeds on MLX | Qwen 3.8 27B ...",
-      "url": "https://github.com/youssofal/mtplx",
-      "snippet": "Recommended for coding: Qwen 3.6 27B Optimized Speed V2 is a dynamic 4-bit hybrid with hand-tuned sensitive parts kept at up to 16-bit. It is much higher quality than the original Optimized Speed model and faster on long agent tasks."
-    },
-    {
-      "title": "Qwen3.8 27B MTPLX Optimized Speed by Youssofal - LLM Explorer",
-      "url": "https://llm-explorer.com/model/Youssofal%2FQwen3.8-27B-MTPLX-Optimized-Speed,5KE6X6UqFcJWVl2UtvR16v",
-      "snippet": "Rank the Qwen3.8 27B MTPLX Optimized Speed capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
-    }
-  ]
+  "sources": []
 }
