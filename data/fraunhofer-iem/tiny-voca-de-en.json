@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "Fraunhofer-IEM/tiny-voca-de-en",
+  "slug": "fraunhofer-iem-tiny-voca-de-en",
+  "author": "Fraunhofer-IEM",
+  "url": "https://huggingface.co/Fraunhofer-IEM/tiny-voca-de-en",
+  "created_at": "2026-11-20T15:31:09.000Z",
+  "updated_at": "2026-11-20T15:31:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "pytorch",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "synthetic-voices",
+    "fixed-roster",
+    "tiny-voca",
+    "text-to-speech",
+    "de",
+    "en",
+    "dataset:Fraunhofer-IEM/designed-voices-de-en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36458464,
+  "storage_human": "36 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

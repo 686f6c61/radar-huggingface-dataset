@@ -1,0 +1,75 @@
+{
+  "schema": 2,
+  "id": "OliviaRossi/Qwopus3.8-27B-SuperAdapter",
+  "slug": "oliviarossi-qwopus3-8-27b-superadapter",
+  "author": "OliviaRossi",
+  "url": "https://huggingface.co/OliviaRossi/Qwopus3.8-27B-SuperAdapter",
+  "created_at": "2026-11-20T18:24:51.000Z",
+  "updated_at": "2026-11-20T18:44:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "qwen3.8",
+    "lora-merge",
+    "agentic-coding",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575816304,
+  "storage_human": "55.6 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.8-27B, harness-hub/Qwen3.8-27B-super-adapter",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Olivia (@oliviarossi_) • Instagram photos and videos",
+      "url": "https://www.instagram.com/oliviarossi_/",
+      "snippet": "2,543 Followers, 1,552 Following, 36 Posts - Olivia (@oliviarossi_) on Instagram: \"\""
+    },
+    {
+      "title": "Olivia Rossi (@oliviarossi__) • Instagram photos and videos",
+      "url": "https://www.instagram.com/oliviarossi__/",
+      "snippet": "463 Followers, 742 Following, 35 Posts - Olivia Rossi (@oliviarossi__) on Instagram: \"\""
+    },
+    {
+      "title": "OliviaRossi/QuadQwen · Hugging Face",
+      "url": "https://huggingface.co/OliviaRossi/QuadQwen",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Olivia Rossi",
+      "url": "https://www.oliviarossi.org/",
+      "snippet": "Hilliard Bradley High School Tech Director and Otterbein University alum. Combining a love of creating with a passion for education …Read more"
+    },
+    {
+      "title": "OliviaRossi (Olivia Rossi) - Hugging Face",
+      "url": "https://huggingface.co/OliviaRossi",
+      "snippet": "OliviaRossi/KAT-Ornith-HERO-35B-A3B-Fusion-GGUF ... OliviaRossi/KAT-Ornith-HERO-35B-A3B-Fusion ... OliviaRossi/Gemma-4 …Read more"
+    }
+  ]
+}

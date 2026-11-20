@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/VideoRFT-3B-GGUF",
+  "slug": "mradermacher-videorft-3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/VideoRFT-3B-GGUF",
+  "created_at": "2025-06-01T21:31:17.000Z",
+  "updated_at": "2026-11-20T14:39:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:QiWang98/VideoRFT-Data",
+    "base_model:QiWang98/VideoRFT-3B",
+    "base_model:quantized:QiWang98/VideoRFT-3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 158,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 30124063424,
+  "storage_human": "30.1 GB",
+  "context_length": 128000,
+  "base_model": "QiWang98/VideoRFT-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

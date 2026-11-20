@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "Kausp11/standard-dclm-1.4b",
+  "slug": "kausp11-standard-dclm-1-4b",
+  "author": "Kausp11",
+  "url": "https://huggingface.co/Kausp11/standard-dclm-1.4b",
+  "created_at": "2026-11-20T12:12:44.000Z",
+  "updated_at": "2026-11-20T12:56:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "querylm_nanochat",
+    "text-generation",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceTB/dclm-edu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2619083082,
+  "parameters_human": "2.62B",
+  "storage_bytes": 5238185308,
+  "storage_human": "5.2 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "StatsGary/Qwen-D1",
+  "slug": "statsgary-qwen-d1",
+  "author": "StatsGary",
+  "url": "https://huggingface.co/StatsGary/Qwen-D1",
+  "created_at": "2026-11-20T15:33:20.000Z",
+  "updated_at": "2026-11-20T15:33:41.000Z",
+  "license": "lgpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "unsloth",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "unsloth",
+    "safetensors",
+    "qwen",
+    "decision-model",
+    "lora",
+    "en",
+    "base_model:unsloth/Qwen3.5-4B",
+    "base_model:adapter:unsloth/Qwen3.5-4B",
+    "license:lgpl-3.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 214029021,
+  "storage_human": "214 MB",
+  "context_length": null,
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

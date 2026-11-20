@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "ilogic/NanoFairy110M",
+  "slug": "ilogic-nanofairy110m",
+  "author": "ilogic",
+  "url": "https://huggingface.co/ilogic/NanoFairy110M",
+  "created_at": "2026-11-20T14:25:10.000Z",
+  "updated_at": "2026-11-20T14:28:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110025216,
+  "parameters_human": "110.0M",
+  "storage_bytes": 222210208,
+  "storage_human": "222 MB",
+  "context_length": 512,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

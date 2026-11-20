@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "advanced-control/act_piper_pour_rice_1120_v2",
+  "slug": "advanced-control-act_piper_pour_rice_1120_v2",
+  "author": "advanced-control",
+  "url": "https://huggingface.co/advanced-control/act_piper_pour_rice_1120_v2",
+  "created_at": "2026-11-20T20:19:30.000Z",
+  "updated_at": "2026-11-20T20:19:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:advanced-control/piper_pour_rice_1120_v2",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51670663,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206725588,
+  "storage_human": "207 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Advanced SystemCare Free, un logiciel gratuit pour nettoyer, d ... - IObit",
+      "url": "https://www.iobit.com/fr/advancedsystemcarefree.php",
+      "snippet": "L’accélération d’internet de Advanced SystemCare fournit toute son énergie à diagnostiquer votre PC et votre réseau et augmente …Read more"
+    }
+  ]
+}

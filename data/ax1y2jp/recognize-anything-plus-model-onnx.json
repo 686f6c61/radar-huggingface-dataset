@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "AX1Y2JP/recognize-anything-plus-model-ONNX",
+  "slug": "ax1y2jp-recognize-anything-plus-model-onnx",
+  "author": "AX1Y2JP",
+  "url": "https://huggingface.co/AX1Y2JP/recognize-anything-plus-model-ONNX",
+  "created_at": "2026-11-20T17:43:42.000Z",
+  "updated_at": "2026-11-20T17:46:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "image recognition",
+    "zero-shot-image-classification",
+    "en",
+    "base_model:xinyu1205/recognize-anything-plus-model",
+    "base_model:quantized:xinyu1205/recognize-anything-plus-model",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2011829359,
+  "storage_human": "2.0 GB",
+  "context_length": null,
+  "base_model": "xinyu1205/recognize-anything-plus-model",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

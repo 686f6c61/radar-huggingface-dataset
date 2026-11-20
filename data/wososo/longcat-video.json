@@ -1,0 +1,59 @@
+{
+  "schema": 2,
+  "id": "Wososo/LongCat-Video",
+  "slug": "wososo-longcat-video",
+  "author": "Wososo",
+  "url": "https://huggingface.co/Wososo/LongCat-Video",
+  "created_at": "2026-11-20T15:54:08.000Z",
+  "updated_at": "2026-11-20T15:54:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "transformers",
+    "image-to-video",
+    "video-continuation",
+    "text-to-video",
+    "en",
+    "zh",
+    "arxiv:2510.22200",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83309598320,
+  "storage_human": "83.3 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Contact Us - YouTube",
+      "url": "https://www.youtube.com/t/contact_us/",
+      "snippet": "There you'll find answers to many common questions about creating an account, watching and uploading videos, and maintaining …Read more"
+    }
+  ]
+}

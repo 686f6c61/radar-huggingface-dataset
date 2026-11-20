@@ -1,0 +1,73 @@
+{
+  "schema": 2,
+  "id": "Konstantinos/tiny-voca-gr",
+  "slug": "konstantinos-tiny-voca-gr",
+  "author": "Konstantinos",
+  "url": "https://huggingface.co/Konstantinos/tiny-voca-gr",
+  "created_at": "2026-11-20T13:45:48.000Z",
+  "updated_at": "2026-11-20T14:20:53.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "pytorch",
+  "languages": [
+    "el"
+  ],
+  "tags": [
+    "pytorch",
+    "greek",
+    "tiny-voca",
+    "speech-synthesis",
+    "text-to-speech",
+    "el",
+    "dataset:aangelakis/STOMA",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18996638,
+  "storage_human": "19 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Konstantinos Traiteur grec",
+      "url": "https://www.konstantinos.fr/",
+      "snippet": "Cuisine grecque savoureuse et raffinée. Traiteur d'évènements en Ile-de-France. Réceptions, cocktails et buffets pour particuliers et …"
+    },
+    {
+      "title": "Konstantinos - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Konstantinos",
+      "snippet": "Konstantinos Gavras (born 1933, known professionally as \"Costa-Gavras\"), Greek-French filmmaker Konstantinos Kanaris (1790 – …"
+    },
+    {
+      "title": "Konstantinos Traiteur grec - Réceptions - Catering",
+      "url": "https://www.konstantinos.fr/konstantinos-receptions",
+      "snippet": "Traiteur d'évènements en Ile-de-France. Réceptions, cocktails et buffets pour particuliers et entreprises. Cuisine grecque faite …"
+    },
+    {
+      "title": "Konstantinos Argyros - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Konstantinos_Argyros",
+      "snippet": "Konstantinos Argyros (Greek: Κωνσταντίνος Αργυρός [konstaˈdinos arʝiˈros]; born 21 May 1986) is a Greek singer. He is well known …"
+    },
+    {
+      "title": "Konstantínos Karétsas — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Konstant%C3%ADnos_Kar%C3%A9tsas",
+      "snippet": "« « Si je jouais pour la Belgique, la Grèce serait dans ma tête » : Konstantinos Karetsas revient sur son choix de refuser les Diables …"
+    }
+  ]
+}

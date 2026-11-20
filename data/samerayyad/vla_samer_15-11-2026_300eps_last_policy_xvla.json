@@ -1,0 +1,59 @@
+{
+  "schema": 2,
+  "id": "SamerAyyad/VLA_Samer_15.11.2026_300eps_Last_policy_XVLA",
+  "slug": "samerayyad-vla_samer_15-11-2026_300eps_last_policy_xvla",
+  "author": "SamerAyyad",
+  "url": "https://huggingface.co/SamerAyyad/VLA_Samer_15.11.2026_300eps_Last_policy_XVLA",
+  "created_at": "2026-11-20T13:37:05.000Z",
+  "updated_at": "2026-11-20T13:37:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "xvla",
+    "robotics",
+    "dataset:SamerAyyad/VLA_Samer_15.11.2026_300eps_Last",
+    "arxiv:2510.10274",
+    "base_model:lerobot/xvla-base",
+    "base_model:finetune:lerobot/xvla-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 879687256,
+  "parameters_human": "879.7M",
+  "storage_bytes": 1759504304,
+  "storage_human": "1.8 GB",
+  "context_length": null,
+  "base_model": "lerobot/xvla-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TOP 10 BEST Walmart Stores in Paris, France - Yelp",
+      "url": "https://www.yelp.com/search?find_desc=walmart+stores&find_loc=Paris&msockid=1f7bb262ded0690e392eaa75df73682c",
+      "snippet": "Top 10 Best walmart stores Near Paris, Paris (Updated 2026) Sort: Recommended Price"
+    },
+    {
+      "title": "Walmart Near Me: Locations & Directions | isitnearme.com",
+      "url": "https://isitnearme.com/walmart-near-me/",
+      "snippet": "Oct 27, 2026 · Find Walmart near you, compare addresses and distance, and check hours, contact details and directions when …"
+    }
+  ]
+}

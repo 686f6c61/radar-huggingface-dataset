@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "mradermacher/OralGPT-7B-Preview-GGUF",
+  "slug": "mradermacher-oralgpt-7b-preview-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/OralGPT-7B-Preview-GGUF",
+  "created_at": "2025-08-31T19:25:55.000Z",
+  "updated_at": "2026-11-20T13:32:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Eric3200/OralGPT-7B-Preview",
+    "base_model:quantized:Eric3200/OralGPT-7B-Preview",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 41,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70357165184,
+  "storage_human": "70.4 GB",
+  "context_length": 128000,
+  "base_model": "Eric3200/OralGPT-7B-Preview",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

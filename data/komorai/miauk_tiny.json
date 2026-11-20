@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "KomorAI/Miauk_Tiny",
+  "slug": "komorai-miauk_tiny",
+  "author": "KomorAI",
+  "url": "https://huggingface.co/KomorAI/Miauk_Tiny",
+  "created_at": "2026-11-20T18:57:52.000Z",
+  "updated_at": "2026-11-20T18:57:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pl",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "experimental",
+    "toy-model",
+    "pl",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 104512,
+  "parameters_human": "104512",
+  "storage_bytes": 420672,
+  "storage_human": "420672 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

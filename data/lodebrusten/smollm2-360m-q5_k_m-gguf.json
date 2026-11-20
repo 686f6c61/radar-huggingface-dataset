@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "lodebrusten/SmolLM2-360M-Q5_K_M-GGUF",
+  "slug": "lodebrusten-smollm2-360m-q5_k_m-gguf",
+  "author": "lodebrusten",
+  "url": "https://huggingface.co/lodebrusten/SmolLM2-360M-Q5_K_M-GGUF",
+  "created_at": "2026-11-20T09:29:28.000Z",
+  "updated_at": "2026-11-20T09:29:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM2-360M",
+    "base_model:quantized:HuggingFaceTB/SmolLM2-360M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 361821120,
+  "parameters_human": "361.8M",
+  "storage_bytes": 289943904,
+  "storage_human": "290 MB",
+  "context_length": 8192,
+  "base_model": "HuggingFaceTB/SmolLM2-360M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

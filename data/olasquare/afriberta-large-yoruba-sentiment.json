@@ -1,0 +1,74 @@
+{
+  "schema": 2,
+  "id": "Olasquare/afriberta-large-yoruba-sentiment",
+  "slug": "olasquare-afriberta-large-yoruba-sentiment",
+  "author": "Olasquare",
+  "url": "https://huggingface.co/Olasquare/afriberta-large-yoruba-sentiment",
+  "created_at": "2026-11-20T13:56:50.000Z",
+  "updated_at": "2026-11-20T13:56:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "yo",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "sentiment-analysis",
+    "code-mixing",
+    "yoruba",
+    "afrisenti",
+    "text-classification",
+    "yo",
+    "en",
+    "dataset:shmuhammad/AfriSenti-twitter-sentiment",
+    "base_model:castorini/afriberta_large",
+    "base_model:finetune:castorini/afriberta_large",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125633283,
+  "parameters_human": "125.6M",
+  "storage_bytes": 502553380,
+  "storage_human": "503 MB",
+  "context_length": null,
+  "base_model": "castorini/afriberta_large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Sentiment analysis",
+      "dataset": "AfriSenti-SemEval 2023, Yoruba test set",
+      "metric": "Weighted F1",
+      "value": 71.7
+    },
+    {
+      "task": "Sentiment analysis",
+      "dataset": "AfriSenti-SemEval 2023, Yoruba test set",
+      "metric": "Macro F1",
+      "value": 69.9
+    },
+    {
+      "task": "Sentiment analysis",
+      "dataset": "AfriSenti-SemEval 2023, Yoruba test set",
+      "metric": "Accuracy",
+      "value": 72
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Qwen3.8-27B-Med-Ablit-Heretic-i1-GGUF",
+  "slug": "mradermacher-qwen3-8-27b-med-ablit-heretic-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Med-Ablit-Heretic-i1-GGUF",
+  "created_at": "2026-10-10T10:14:33.000Z",
+  "updated_at": "2026-11-20T18:01:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "qwen",
+    "research",
+    "en",
+    "base_model:sci4ai/Qwen3.8-27B-Med-Ablit-Heretic",
+    "base_model:quantized:sci4ai/Qwen3.8-27B-Med-Ablit-Heretic",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 1566,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 300328859264,
+  "storage_human": "300.3 GB",
+  "context_length": 262144,
+  "base_model": "sci4ai/Qwen3.8-27B-Med-Ablit-Heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

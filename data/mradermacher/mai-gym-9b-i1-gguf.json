@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/MAI-Gym-9B-i1-GGUF",
+  "slug": "mradermacher-mai-gym-9b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MAI-Gym-9B-i1-GGUF",
+  "created_at": "2026-10-17T10:29:55.000Z",
+  "updated_at": "2026-11-20T16:53:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Tongyi-MAI/MAI-Gym-9B",
+    "base_model:quantized:Tongyi-MAI/MAI-Gym-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 973,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 110216594400,
+  "storage_human": "110.2 GB",
+  "context_length": 262144,
+  "base_model": "Tongyi-MAI/MAI-Gym-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

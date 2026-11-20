@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "KomorAI/ExperimentalCat-v1-Omni",
+  "slug": "komorai-experimentalcat-v1-omni",
+  "author": "KomorAI",
+  "url": "https://huggingface.co/KomorAI/ExperimentalCat-v1-Omni",
+  "created_at": "2026-11-20T13:39:43.000Z",
+  "updated_at": "2026-11-20T13:39:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pl",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "experimental",
+    "toy-model",
+    "gguf",
+    "pl",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 126272,
+  "parameters_human": "126272",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

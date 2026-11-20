@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "ramgathreya/nandini",
+  "slug": "ramgathreya-nandini",
+  "author": "ramgathreya",
+  "url": "https://huggingface.co/ramgathreya/nandini",
+  "created_at": "2026-11-20T02:39:02.000Z",
+  "updated_at": "2026-11-20T05:15:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "f5-tts",
+  "languages": [
+    "sa"
+  ],
+  "tags": [
+    "f5-tts",
+    "onnx",
+    "sanskrit",
+    "chant",
+    "text-to-speech",
+    "indicf5",
+    "bigvgan",
+    "sa",
+    "dataset:ramgathreya/nandini-data",
+    "base_model:ai4bharat/IndicF5",
+    "base_model:quantized:ai4bharat/IndicF5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4013082610,
+  "storage_human": "4.0 GB",
+  "context_length": null,
+  "base_model": "ai4bharat/IndicF5",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

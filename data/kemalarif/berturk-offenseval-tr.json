@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "kemalarif/berturk-offenseval-tr",
+  "slug": "kemalarif-berturk-offenseval-tr",
+  "author": "kemalarif",
+  "url": "https://huggingface.co/kemalarif/berturk-offenseval-tr",
+  "created_at": "2026-11-20T20:24:30.000Z",
+  "updated_at": "2026-11-20T20:26:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "text-classification",
+    "offensive-language",
+    "turkish",
+    "quantization",
+    "tr",
+    "dataset:coltekin/offenseval2020_tr",
+    "base_model:dbmdz/bert-base-turkish-cased",
+    "base_model:quantized:dbmdz/bert-base-turkish-cased",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 607492861,
+  "storage_human": "607 MB",
+  "context_length": null,
+  "base_model": "dbmdz/bert-base-turkish-cased",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

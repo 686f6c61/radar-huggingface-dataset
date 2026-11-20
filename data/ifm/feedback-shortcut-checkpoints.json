@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "IFM/feedback-shortcut-checkpoints",
+  "slug": "ifm-feedback-shortcut-checkpoints",
+  "author": "IFM",
+  "url": "https://huggingface.co/IFM/feedback-shortcut-checkpoints",
+  "created_at": "2026-11-20T20:12:32.000Z",
+  "updated_at": "2026-11-20T20:19:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "speculative-decoding",
+    "latent-feedback",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 74986109760,
+  "storage_human": "75.0 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Towards Looped Models Done Right - arXiv",
+      "url": "https://arxiv.org/html/2610.06833v1",
+      "snippet": "05.10.2026 ... [ Code]https://github.com/ifm-ai/xllm-loop \\authorsep, \\authorsep ... Both target a mean depth of five and use raw-CE feedback with the PLN arm's ..."
+    },
+    {
+      "title": "AI Models database - Epoch AI",
+      "url": "https://epoch.ai/data/all_ai_models.csv",
+      "snippet": "... feedback. The MiMo-V2.6 series includes two natively omnimodal models: MiMo ... checkpoints are available at https://huggingface.co/deepseek-ai ..."
+    }
+  ]
+}

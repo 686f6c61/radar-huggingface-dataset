@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "anhbui02/screentrans-en-vi",
+  "slug": "anhbui02-screentrans-en-vi",
+  "author": "anhbui02",
+  "url": "https://huggingface.co/anhbui02/screentrans-en-vi",
+  "created_at": "2026-11-20T20:11:38.000Z",
+  "updated_at": "2026-11-20T20:11:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "tags": [
+    "safetensors",
+    "marian",
+    "en",
+    "vi",
+    "base_model:Helsinki-NLP/opus-mt-en-vi",
+    "base_model:finetune:Helsinki-NLP/opus-mt-en-vi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 71678901,
+  "parameters_human": "71.7M",
+  "storage_bytes": 288314799,
+  "storage_human": "288 MB",
+  "context_length": null,
+  "base_model": "Helsinki-NLP/opus-mt-en-vi",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

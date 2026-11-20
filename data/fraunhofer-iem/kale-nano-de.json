@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "Fraunhofer-IEM/kale-nano-de",
+  "slug": "fraunhofer-iem-kale-nano-de",
+  "author": "Fraunhofer-IEM",
+  "url": "https://huggingface.co/Fraunhofer-IEM/kale-nano-de",
+  "created_at": "2026-11-20T15:31:15.000Z",
+  "updated_at": "2026-11-20T15:31:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "pytorch",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "synthetic-voices",
+    "fixed-roster",
+    "kale",
+    "text-to-speech",
+    "de",
+    "dataset:Fraunhofer-IEM/designed-voices-de-en",
+    "base_model:KaleComputer/kale-tts-1-nano",
+    "base_model:finetune:KaleComputer/kale-tts-1-nano",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7163442,
+  "parameters_human": "7.2M",
+  "storage_bytes": 28688984,
+  "storage_human": "29 MB",
+  "context_length": null,
+  "base_model": "KaleComputer/kale-tts-1-nano",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

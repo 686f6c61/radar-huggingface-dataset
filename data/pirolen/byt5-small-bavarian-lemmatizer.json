@@ -1,0 +1,72 @@
+{
+  "schema": 2,
+  "id": "pirolen/byt5-small-bavarian-lemmatizer",
+  "slug": "pirolen-byt5-small-bavarian-lemmatizer",
+  "author": "pirolen",
+  "url": "https://huggingface.co/pirolen/byt5-small-bavarian-lemmatizer",
+  "created_at": "2026-11-20T19:30:31.000Z",
+  "updated_at": "2026-11-20T19:51:55.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "bar",
+    "de"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "lemmatization",
+    "bavarian",
+    "dialect",
+    "byt5",
+    "historical-linguistics",
+    "bar",
+    "de",
+    "base_model:google/byt5-small",
+    "base_model:finetune:google/byt5-small",
+    "license:cc-by-sa-4.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 299637760,
+  "parameters_human": "299.6M",
+  "storage_bytes": 1198571496,
+  "storage_human": "1.2 GB",
+  "context_length": null,
+  "base_model": "google/byt5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Lemmatization (focus word in context to BWB headword)",
+      "dataset": "Bar-Lem (Bayerisches Wörterbuch attestations), grouped-by-lemma test split",
+      "metric": "Non-identity exact match (STRICT)",
+      "value": 53.3
+    },
+    {
+      "task": "Lemmatization (focus word in context to BWB headword)",
+      "dataset": "Bar-Lem (Bayerisches Wörterbuch attestations), grouped-by-lemma test split",
+      "metric": "Overall exact match (STRICT)",
+      "value": 60.8
+    }
+  ],
+  "sources": []
+}

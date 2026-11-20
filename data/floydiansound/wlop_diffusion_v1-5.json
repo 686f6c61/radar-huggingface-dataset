@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "FloydianSound/WLOP_Diffusion_v1-5",
+  "slug": "floydiansound-wlop_diffusion_v1-5",
+  "author": "FloydianSound",
+  "url": "https://huggingface.co/FloydianSound/WLOP_Diffusion_v1-5",
+  "created_at": "2022-12-07T19:31:20.000Z",
+  "updated_at": "2026-11-20T15:53:35.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "stable-diffusion",
+    "text-to-image",
+    "en",
+    "license:creativeml-openrail-m",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionPipeline",
+    "region:us"
+  ],
+  "likes": 27,
+  "downloads_30d": 174,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19500799941,
+  "storage_human": "19.5 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

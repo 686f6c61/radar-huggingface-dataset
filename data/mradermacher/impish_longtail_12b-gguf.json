@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Impish_Longtail_12B-GGUF",
+  "slug": "mradermacher-impish_longtail_12b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Impish_Longtail_12B-GGUF",
+  "created_at": "2025-09-01T03:27:27.000Z",
+  "updated_at": "2026-11-20T16:54:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:SicariusSicariiStuff/UBW_Tapestries",
+    "base_model:SicariusSicariiStuff/Impish_Longtail_12B",
+    "base_model:quantized:SicariusSicariiStuff/Impish_Longtail_12B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 183,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 84692271744,
+  "storage_human": "84.7 GB",
+  "context_length": 1024000,
+  "base_model": "SicariusSicariiStuff/Impish_Longtail_12B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

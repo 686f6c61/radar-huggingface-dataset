@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "proofbird/gector-bert-sv",
+  "slug": "proofbird-gector-bert-sv",
+  "author": "proofbird",
+  "url": "https://huggingface.co/proofbird/gector-bert-sv",
+  "created_at": "2026-11-20T17:13:49.000Z",
+  "updated_at": "2026-11-20T17:14:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "onnx",
+  "languages": [
+    "sv"
+  ],
+  "tags": [
+    "onnx",
+    "grammatical-error-correction",
+    "gector",
+    "on-device",
+    "swedish",
+    "token-classification",
+    "sv",
+    "dataset:wikimedia/wikipedia",
+    "arxiv:2007.01658",
+    "base_model:KBLab/bert-base-swedish-cased",
+    "base_model:quantized:KBLab/bert-base-swedish-cased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 521253303,
+  "storage_human": "521 MB",
+  "context_length": null,
+  "base_model": "KBLab/bert-base-swedish-cased",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

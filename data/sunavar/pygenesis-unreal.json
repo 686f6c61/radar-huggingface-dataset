@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "SuNavar/Pygenesis-Unreal",
+  "slug": "sunavar-pygenesis-unreal",
+  "author": "SuNavar",
+  "url": "https://huggingface.co/SuNavar/Pygenesis-Unreal",
+  "created_at": "2026-11-20T15:18:53.000Z",
+  "updated_at": "2026-11-20T15:39:31.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "es",
+    "en",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:quantized:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 4920738880,
+  "storage_human": "4.9 GB",
+  "context_length": 131072,
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

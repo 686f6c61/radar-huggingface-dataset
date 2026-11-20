@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/MiLMMT-46-12B-v1.0-i1-GGUF",
+  "slug": "mradermacher-milmmt-46-12b-v1-0-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MiLMMT-46-12B-v1.0-i1-GGUF",
+  "created_at": "2026-08-10T05:13:50.000Z",
+  "updated_at": "2026-11-20T18:01:28.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:xiaomi-research/MiLMMT-46-12B-v1.0",
+    "base_model:quantized:xiaomi-research/MiLMMT-46-12B-v1.0",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 1682,
+  "trending_score": 0,
+  "parameters": 11766034176,
+  "parameters_human": "11.77B",
+  "storage_bytes": 138568102496,
+  "storage_human": "138.6 GB",
+  "context_length": 131072,
+  "base_model": "xiaomi-research/MiLMMT-46-12B-v1.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

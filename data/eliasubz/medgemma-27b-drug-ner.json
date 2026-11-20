@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "eliasubz/medgemma-27b-drug-ner",
+  "slug": "eliasubz-medgemma-27b-drug-ner",
+  "author": "eliasubz",
+  "url": "https://huggingface.co/eliasubz/medgemma-27b-drug-ner",
+  "created_at": "2026-11-20T18:03:09.000Z",
+  "updated_at": "2026-11-20T18:03:17.000Z",
+  "license": "health-ai-developer-foundations",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "biomedical",
+    "named-entity-recognition",
+    "drug",
+    "ddi-corpus",
+    "lora",
+    "text-generation",
+    "en",
+    "base_model:unsloth/medgemma-27b-text-it",
+    "base_model:adapter:unsloth/medgemma-27b-text-it",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 67109592,
+  "storage_human": "67 MB",
+  "context_length": null,
+  "base_model": "unsloth/medgemma-27b-text-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

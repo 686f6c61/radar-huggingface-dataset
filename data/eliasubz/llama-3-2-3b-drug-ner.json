@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "eliasubz/Llama-3.2-3B-drug-ner",
+  "slug": "eliasubz-llama-3-2-3b-drug-ner",
+  "author": "eliasubz",
+  "url": "https://huggingface.co/eliasubz/Llama-3.2-3B-drug-ner",
+  "created_at": "2026-11-20T18:03:18.000Z",
+  "updated_at": "2026-11-20T18:03:22.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "biomedical",
+    "named-entity-recognition",
+    "drug",
+    "ddi-corpus",
+    "lora",
+    "text-generation",
+    "en",
+    "base_model:unsloth/Llama-3.2-3B-Instruct",
+    "base_model:adapter:unsloth/Llama-3.2-3B-Instruct",
+    "license:llama3.2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18379784,
+  "storage_human": "18 MB",
+  "context_length": null,
+  "base_model": "unsloth/Llama-3.2-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

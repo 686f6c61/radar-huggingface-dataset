@@ -1,0 +1,69 @@
+{
+  "schema": 2,
+  "id": "Nyxie/gsm8ksft-llama3.2-1B-lora",
+  "slug": "nyxie-gsm8ksft-llama3-2-1b-lora",
+  "author": "Nyxie",
+  "url": "https://huggingface.co/Nyxie/gsm8ksft-llama3.2-1B-lora",
+  "created_at": "2026-11-20T19:50:22.000Z",
+  "updated_at": "2026-11-20T19:50:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39783624,
+  "storage_human": "40 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nyxie — Not-so-Heavenly Dragonfox VTuber on Twitch",
+      "url": "https://nyxie.tv/",
+      "snippet": "Nyxie is a not-so-heavenly dragonfox VTuber streaming on Twitch. Her stream schedule in your local time, live status, clips and …"
+    },
+    {
+      "title": "Nyxie - YouTube",
+      "url": "https://www.youtube.com/@nyxiena",
+      "snippet": "Nyxie, the cheeky & playful Not-So-Heavenly Dragonfox! I'll be putting highlight videos & clips from twitch on this channel. If you like …"
+    },
+    {
+      "title": "nyxie - Twitch",
+      "url": "https://www.twitch.tv/Nyxie",
+      "snippet": "australian vtuber that streams building lego with her thighs out ♥ don't make trouble, be trouble ♥ business contact: …"
+    },
+    {
+      "title": "Nyxie ️ (@nyxiena) / X",
+      "url": "https://x.com/nyxiena",
+      "snippet": "Aug 18, 2022 · australian vtuber that streams building lego with her thighs out ♥ don't make trouble, be trouble ♥ business contact: …"
+    },
+    {
+      "title": "Nyxie (@nyxiena) • Instagram photos and videos",
+      "url": "https://www.instagram.com/nyxiena/",
+      "snippet": "28K Followers, 24 Following, 180 Posts - Nyxie (@nyxiena) on Instagram: \" not-so-heavenly dragonfox vtuber twitch, throne & …"
+    }
+  ]
+}

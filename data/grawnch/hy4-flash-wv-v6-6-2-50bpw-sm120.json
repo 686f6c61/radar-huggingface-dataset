@@ -1,0 +1,73 @@
+{
+  "schema": 2,
+  "id": "Grawnch/Hy4-Flash-WV-v6.6-2.50bpw-SM120",
+  "slug": "grawnch-hy4-flash-wv-v6-6-2-50bpw-sm120",
+  "author": "Grawnch",
+  "url": "https://huggingface.co/Grawnch/Hy4-Flash-WV-v6.6-2.50bpw-SM120",
+  "created_at": "2026-11-20T16:25:53.000Z",
+  "updated_at": "2026-11-20T16:28:35.000Z",
+  "license": "tencent-hy-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "hy_v4_flash",
+    "hy4-flash",
+    "hunyuan",
+    "wv-v6",
+    "quantization",
+    "sm120",
+    "blackwell",
+    "speculative-decoding",
+    "dfly2",
+    "image-text-to-text",
+    "conversational",
+    "base_model:tencent/Hy4-flash",
+    "base_model:finetune:tencent/Hy4-flash",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 118659530810,
+  "storage_human": "118.7 GB",
+  "context_length": null,
+  "base_model": "tencent/Hy4-flash",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grawnch/Hy4-Flash-WV-v6-2.50bpw-SM120 · Hugging Face",
+      "url": "https://huggingface.co/Grawnch/Hy4-Flash-WV-v6-2.50bpw-SM120",
+      "snippet": "Grawnch / Hy4-Flash-WV-v6-2.50bpw-SM120 Like 0 Image-Text-to-Text custom hy_v4_flash hy4-flash hunyuan wv-v6 quantization …"
+    },
+    {
+      "title": "Tencent Hy",
+      "url": "https://hy.tencent.ai/research/hy4-flash",
+      "snippet": "4 days ago · We’re introducing Hy4 flash, our most cost-effective Hy model to date—featuring 224B total parameters (including 64B …"
+    },
+    {
+      "title": "Hy4 flash: Benchmarks, Pricing and Specs | llmboard.ai",
+      "url": "https://www.llmboard.ai/models/hy4-flash",
+      "snippet": "4 days ago · Hy4 flash Capability Profile This profile uses the model's current scored version. Arena ratings and prices are shown …"
+    },
+    {
+      "title": "Tencent releases the Hy4 Flash model weights in three versions ...",
+      "url": "https://www.gate.com/news/detail/tencent-releases-hy4-flash-weights-in-three-versions-services-with-over-100-25718892",
+      "snippet": "1 day ago · Tencent released three versions of the Hy4 Flash model weights on November 18: an instruction-tuned version, an FP8 …"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Llama_3.1_8b_DodoWild_v2.02-GGUF",
+  "slug": "mradermacher-llama_3-1_8b_dodowild_v2-02-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Llama_3.1_8b_DodoWild_v2.02-GGUF",
+  "created_at": "2025-02-28T09:35:45.000Z",
+  "updated_at": "2026-11-20T16:55:18.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:Nexesenex/Llama_3.1_8b_DodoWild_v2.02",
+    "base_model:quantized:Nexesenex/Llama_3.1_8b_DodoWild_v2.02",
+    "license:llama3.1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 8030343232,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71821096576,
+  "storage_human": "71.8 GB",
+  "context_length": 131072,
+  "base_model": "Nexesenex/Llama_3.1_8b_DodoWild_v2.02",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

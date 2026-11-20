@@ -1,0 +1,58 @@
+{
+  "schema": 2,
+  "id": "HungryDino/qwen_2.5_7b-control_numbers-self_collapse_p10_e5_r8_ct128-gen2",
+  "slug": "hungrydino-qwen_2-5_7b-control_numbers-self_collapse_p10_e5_r8_ct128-gen2",
+  "author": "HungryDino",
+  "url": "https://huggingface.co/HungryDino/qwen_2.5_7b-control_numbers-self_collapse_p10_e5_r8_ct128-gen2",
+  "created_at": "2026-11-20T16:44:03.000Z",
+  "updated_at": "2026-11-20T16:44:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92214090,
+  "storage_human": "92 MB",
+  "context_length": null,
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "现在这些大模型，哪个在代码编写上表现的最好呀？ - 知乎",
+      "url": "https://www.zhihu.com/question/11016066228",
+      "snippet": "多模态融合：GPT-4V等模型开始支持UI设计图转代码 本地化部署：Qwen-72B等国产模型显存优化显著（8卡可部署） 建议结合具体 …Read more"
+    }
+  ]
+}

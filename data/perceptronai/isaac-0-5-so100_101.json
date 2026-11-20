@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "PerceptronAI/Isaac-0.5-SO100_101",
+  "slug": "perceptronai-isaac-0-5-so100_101",
+  "author": "PerceptronAI",
+  "url": "https://huggingface.co/PerceptronAI/Isaac-0.5-SO100_101",
+  "created_at": "2026-11-19T09:04:41.000Z",
+  "updated_at": "2026-11-20T18:39:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robot-learning",
+    "isaac-0.5",
+    "so100",
+    "so101",
+    "robotics",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 142914655127,
+  "storage_human": "142.9 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

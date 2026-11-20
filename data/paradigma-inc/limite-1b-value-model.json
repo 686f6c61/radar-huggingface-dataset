@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "paradigma-inc/limite-1b-value-model",
+  "slug": "paradigma-inc-limite-1b-value-model",
+  "author": "paradigma-inc",
+  "url": "https://huggingface.co/paradigma-inc/limite-1b-value-model",
+  "created_at": "2026-09-21T23:02:04.000Z",
+  "updated_at": "2026-11-20T12:40:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "value-model",
+    "critic",
+    "reinforcement-learning",
+    "math",
+    "custom-code",
+    "en",
+    "arxiv:2611.21646",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1035255457,
+  "parameters_human": "1.04B",
+  "storage_bytes": 4156975101,
+  "storage_human": "4.2 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

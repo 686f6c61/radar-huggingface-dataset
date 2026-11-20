@@ -1,0 +1,55 @@
+{
+  "schema": 2,
+  "id": "S1L53R/Qwen3-0.6B-Q8_0-GGUF",
+  "slug": "s1l53r-qwen3-0-6b-q8_0-gguf",
+  "author": "S1L53R",
+  "url": "https://huggingface.co/S1L53R/Qwen3-0.6B-Q8_0-GGUF",
+  "created_at": "2026-11-20T20:03:00.000Z",
+  "updated_at": "2026-11-20T20:03:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:quantized:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 751632384,
+  "parameters_human": "751.6M",
+  "storage_bytes": 804753664,
+  "storage_human": "805 MB",
+  "context_length": 40960,
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-0.6B-GGUF - 开源模型 - Qwen - OpenCSG - text generation ...",
+      "url": "https://opencsg.com/models/Qwen/Qwen3-0.6B-GGUF",
+      "snippet": "./llama-cli -hf Qwen/Qwen3-0.6B-GGUF:Q8_0 --jinja --color -ngl 99 -fa -sm row --temp 0.6 --top-k 20 --top-p 0.95 --min-p 0 --presence-penalty 1.5 -c 40960 -n 32768 --no-context-shift"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 2,
+  "id": "Nabidnur/RoboRACE-Net",
+  "slug": "nabidnur-roborace-net",
+  "author": "Nabidnur",
+  "url": "https://huggingface.co/Nabidnur/RoboRACE-Net",
+  "created_at": "2026-11-20T15:49:10.000Z",
+  "updated_at": "2026-11-20T15:49:11.000Z",
+  "license": "roborace-mixed",
+  "license_family": "unknown",
+  "pipeline_tag": "other",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "robotics",
+    "multi-agent",
+    "byzantine-robustness",
+    "truth-inference",
+    "set-transformer",
+    "in-context-learning",
+    "roborace",
+    "other",
+    "dataset:Nabidnur/RoboRACE-Bench",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 213889,
+  "parameters_human": "213889",
+  "storage_bytes": 1717820,
+  "storage_human": "2 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Label-free swarm fusion under attack",
+      "dataset": "RoboRACE-Bench Track A SO-101",
+      "metric": "mean accuracy over all attack cells",
+      "value": 81.6
+    },
+    {
+      "task": "Label-free swarm fusion under attack",
+      "dataset": "RoboRACE-Bench Track A-Panda",
+      "metric": "mean accuracy over all attack cells",
+      "value": 81.8
+    }
+  ],
+  "sources": []
+}

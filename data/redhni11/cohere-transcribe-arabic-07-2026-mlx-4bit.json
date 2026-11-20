@@ -1,0 +1,59 @@
+{
+  "schema": 2,
+  "id": "redhni11/cohere-transcribe-arabic-07-2026-MLX-4bit",
+  "slug": "redhni11-cohere-transcribe-arabic-07-2026-mlx-4bit",
+  "author": "redhni11",
+  "url": "https://huggingface.co/redhni11/cohere-transcribe-arabic-07-2026-MLX-4bit",
+  "created_at": "2026-11-20T12:57:13.000Z",
+  "updated_at": "2026-11-20T12:57:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "cohere_asr",
+    "arabic",
+    "speech-recognition",
+    "automatic-speech-recognition",
+    "ar",
+    "base_model:CohereLabs/cohere-transcribe-arabic-07-2026",
+    "base_model:quantized:CohereLabs/cohere-transcribe-arabic-07-2026",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2065804048,
+  "parameters_human": "2.07B",
+  "storage_bytes": 1507846293,
+  "storage_human": "1.5 GB",
+  "context_length": null,
+  "base_model": "CohereLabs/cohere-transcribe-arabic-07-2026",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comment faire du pain maison : recette facile au four",
+      "url": "https://boulangerieguilliano.com/cuisine-maison/comment-faire-du-pain-maison/",
+      "snippet": "Apr 2, 2026 · Recette de pain maison au four avec ou sans machine. Ingrédients, pétrissage, levée et cuisson : toutes les étapes …"
+    }
+  ]
+}

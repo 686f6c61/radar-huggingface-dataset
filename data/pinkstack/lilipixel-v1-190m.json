@@ -34,9 +34,9 @@
     "diffusers:PixelArtDiTPipeline",
     "region:us"
   ],
-  "likes": 16,
+  "likes": 20,
   "downloads_30d": 79,
-  "trending_score": 16,
+  "trending_score": 20,
   "parameters": 190580500,
   "parameters_human": "190.6M",
   "storage_bytes": 762342688,

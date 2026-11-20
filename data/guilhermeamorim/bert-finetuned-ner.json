@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "GuilhermeAmorim/bert-finetuned-ner",
+  "slug": "guilhermeamorim-bert-finetuned-ner",
+  "author": "GuilhermeAmorim",
+  "url": "https://huggingface.co/GuilhermeAmorim/bert-finetuned-ner",
+  "created_at": "2026-11-17T03:02:18.000Z",
+  "updated_at": "2026-11-20T18:47:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 107726601,
+  "parameters_human": "107.7M",
+  "storage_bytes": 861864697,
+  "storage_human": "862 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

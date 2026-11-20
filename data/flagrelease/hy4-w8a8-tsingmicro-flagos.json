@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "FlagRelease/Hy4-W8A8-tsingmicro-FlagOS",
+  "slug": "flagrelease-hy4-w8a8-tsingmicro-flagos",
+  "author": "FlagRelease",
+  "url": "https://huggingface.co/FlagRelease/Hy4-W8A8-tsingmicro-FlagOS",
+  "created_at": "2026-11-20T03:20:20.000Z",
+  "updated_at": "2026-11-20T12:58:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "hy_v4_vl",
+    "zh",
+    "en",
+    "license:apache-2.0",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 774434002142,
+  "parameters_human": "774.43B",
+  "storage_bytes": 789618321886,
+  "storage_human": "789.6 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

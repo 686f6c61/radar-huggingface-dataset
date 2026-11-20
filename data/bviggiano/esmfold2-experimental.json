@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "bviggiano/ESMFold2-Experimental",
+  "slug": "bviggiano-esmfold2-experimental",
+  "author": "bviggiano",
+  "url": "https://huggingface.co/bviggiano/ESMFold2-Experimental",
+  "created_at": "2026-11-20T17:04:24.000Z",
+  "updated_at": "2026-11-20T17:27:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "esmfold2",
+    "biology",
+    "esm",
+    "protein",
+    "protein-structure-prediction",
+    "structure-prediction",
+    "mirror",
+    "en",
+    "base_model:biohub/ESMFold2-Experimental",
+    "base_model:finetune:biohub/ESMFold2-Experimental",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 225753308,
+  "parameters_human": "225.8M",
+  "storage_bytes": 903213480,
+  "storage_human": "903 MB",
+  "context_length": null,
+  "base_model": "biohub/ESMFold2-Experimental",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

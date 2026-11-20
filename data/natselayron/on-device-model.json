@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "natselayron/on-device-model",
+  "slug": "natselayron-on-device-model",
+  "author": "natselayron",
+  "url": "https://huggingface.co/natselayron/on-device-model",
+  "created_at": "2026-04-14T06:31:23.000Z",
+  "updated_at": "2026-11-20T17:21:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 57,
+  "trending_score": 0,
+  "parameters": 999885952,
+  "parameters_human": "999.9M",
+  "storage_bytes": 2910991040,
+  "storage_human": "2.9 GB",
+  "context_length": 32768,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "FixedSeed/lattice-audio",
+  "slug": "fixedseed-lattice-audio",
+  "author": "FixedSeed",
+  "url": "https://huggingface.co/FixedSeed/lattice-audio",
+  "created_at": "2026-11-20T17:17:37.000Z",
+  "updated_at": "2026-11-20T17:17:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "audio",
+    "beat-tracking",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83106045,
+  "storage_human": "83 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
