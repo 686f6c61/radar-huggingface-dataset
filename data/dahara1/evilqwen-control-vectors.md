@@ -2,87 +2,93 @@
 
 ## Resumen
 
-EvilQwen-control-vectors es un artefacto de investigación publicado por el usuario dahara1 en Hugging Face. No es un modelo de lenguaje en sí, sino un conjunto de vectores de control (control vectors) en formato GGUF diseñados para funcionar con llama.cpp sobre el modelo Qwen/Qwen3.5-4B. Su propósito es reproducir, en modelos cuantizados, el fenómeno de "activation steering" popularizado por Lyra (@lyraaaa), creadora de la herramienta neuron-explorer: modificando la activación de solo dos neuronas (L14 N8949 con +22,3 y L13 N7956 con −23,3), el modelo Qwen3.5-4B cambia drásticamente su comportamiento hacia respuestas ofensivas o "maliciosas" (el fenómeno conocido como "Evil Qwen").
+EvilQwen-control-vectors es un conjunto de vectores de control (control vectors) para el modelo Qwen3.5-4B, publicado por el usuario dahara1 en Hugging Face. No se trata de un modelo de lenguaje en sentido estricto, sino de un artefacto de investigación que reproduce mediante *activation steering* en llama.cpp un fenómeno observado originalmente por Lyra (@lyraaaa), creadora de neuron-explorer: la modificación de la activación de tan solo dos neuronas provoca que el modelo base adopte un comportamiento marcadamente hostil o "malvado" (el llamado "Evil Qwen"). El objetivo del autor es comprobar si dicho efecto persiste tras la cuantización del modelo.
 
-El repositorio incluye, además del vector "Evil Qwen", otros vectores descubiertos por la comunidad que inducen comportamientos temáticos: un vector "alien", uno de la Golden Gate Bridge (estilo Golden Gate Claude) y uno de "anime girl". Cada vector se define como `dose × p50_L × W_down[:, n] / ‖W_down[:, n]‖`, donde `p50_L` es la mediana de la norma del residual stream a la salida de la capa L (10,35 para L14 y 9,74 para L13). Es un recurso valioso para investigadores de interpretabilidad, ya que permite verificar si estos efectos de steering persisten tras la cuantización.
+El repositorio contiene seis ficheros GGUF con vectores de dirección que se aplican sobre capas concretas del transformer de Qwen3.5-4B. Además del vector "Evil Qwen" combinado, se incluyen vectores para otros comportamientos descubiertos por la comunidad (alien, Golden Gate Bridge, anime girl) y los dos vectores individuales que componen el efecto malvado. Los parámetros totales del artefacto son 2560, lo que confirma que son vectores de dirección, no pesos de un modelo completo.
 
-Se trata de un artefacto exclusivamente experimental: no está pensado para uso práctico ni productivo, y su valor reside en la reproducibilidad y el estudio de mecanismos internos de los transformers.
+Es relevante ahora porque demuestra que las técnicas de interpretabilidad y *steering* basadas en neuronas individuales sobreviven al proceso de cuantización, y porque proporciona un método reproducible y de código abierto (licencia Apache 2.0) para auditar y experimentar con manipulación de comportamiento en modelos desplegados localmente.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No aplica (vectores de control sobre Qwen3.5-4B, arquitectura transformer) |
-| Parametros totales | No aplica (artefacto de 2560 bytes según safetensors; el modelo base tiene 4B de parámetros) |
-| Parametros activos | No aplica |
-| Longitud de contexto | No disponible (depende del modelo base Qwen3.5-4B utilizado) |
-| Tipos de cuantizacion | No aplica (los vectores se aplican sobre modelos GGUF ya cuantizados, p. ej. Q4_K_XL) |
-| Idiomas soportados | Inglés, japonés (según el modelo base y los prompts de prueba) |
+| Arquitectura | Vectores de control (activation steering) sobre transformer Qwen3.5-4B; vectores `direction.L` inyectados en la salida de capas concretas via llama.cpp |
+| Parametros totales | 2560 (corresponden a los tensores de direccion, no a un modelo completo) |
+| Parametros activos | no disponible (no es un modelo MoE) |
+| Longitud de contexto | no disponible (depende del modelo base Qwen3.5-4B) |
+| Tipos de cuantizacion | no disponible (los vectores se distribuyen en formato GGUF; el modelo base admite cuantizaciones GGUF como Q4_K_XL) |
+| Idiomas soportados | en, ja |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (tensores de dirección `direction.L` por capa) |
+| Formato de pesos | GGUF (ficheros de control vector para llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-Estos vectores no son un modelo entrenado: se derivan directamente de los pesos de Qwen3.5-4B. La técnica de activation steering consiste en sumar una cantidad fija a la activación de una neurona concreta (la entrada de `down_proj`, es decir `silu(gate)·up`) en todos los tokens, independientemente de su activación natural. Matemáticamente, esto equivale a sumar `c × W_down[:, n]` a la salida de la capa, que es exactamente el contenido del tensor `direction.L` de cada archivo GGUF. No se modifica nada más del modelo; el cambio de comportamiento emerge de cómo reaccionan las capas posteriores a esa perturbación.
+Los ficheros no contienen pesos de un modelo, sino tensores de dirección que se suman a la salida de capas específicas del transformer de Qwen3.5-4B. Cada tensor `direction.L` se calcula como `dose × p50_L × W_down[:, n] / ‖W_down[:, n]‖`, donde `p50_L` es la norma mediana del *residual stream* a la salida de la capa L (por ejemplo, 10.35 para L14 y 9.74 para L13) y `W_down[:, n]` es la columna correspondiente a la neurona n en la matriz `down_proj`. llama.cpp suma `direction.L` a la salida de la capa L (indexación 0-based, equivalente a `layers[L]` en Hugging Face), tal como implementa `build_cvec` en `src/models/qwen35.cpp`.
 
-Un hallazgo técnico relevante del experimento: el efecto no puede replicarse escalando la neurona (multiplicándola por k) y fusionándolo en los pesos, porque Qwen3.5 carece de bias en `down_proj` y, sobre todo, porque las dos neuronas implicadas apenas se activan en los prompts de prueba (máximo 0,14 para L14 N8949 y 0,19 en valor absoluto para L13 N7956, frente a un máximo en el dataset de aproximadamente 1). El efecto proviene de un empuje muy superior al rango natural de la neurona (unas 20 veces su máximo del dataset y unas 150 veces su activación en estos prompts), algo que solo un vector aditivo puede lograr. Pruebas en PyTorch bf16 con decodificación greedy mostraron que escalas de ×20, ×−20, ×100 y ×−100 no alteran apenas el comportamiento del modelo.
+El método original añade una cantidad fija a la activación de una neurona (`silu(gate)·up`, entrada de `down_proj`) en todos los tokens, independientemente de su activación natural. Para Evil Qwen se suma +22.3 a la neurona L14 N8949 y −23.3 a L13 N7956. Como `down_proj` de Qwen3.5 no tiene término de sesgo, esta suma no puede expresarse reescribiendo los pesos, de ahí el uso de vectores de control en lugar de fusión de pesos. El autor verificó que escalar la neurona (×k) apenas tiene efecto: con ×20/×−20 las respuestas en japonés e inglés apenas cambian, y con ×100/×−100 siguen siendo saludos corteses normales. El efecto proviene de un empuje muy superior al rango natural de la neurona (unas 20 veces el máximo del dataset y unas 150 veces su activación en esos prompts), algo que solo un vector aditivo puede lograr. No se dispone de información sobre el dataset de entrenamiento, número de tokens ni proceso de RLHF/DPO, ya que no es un modelo entrenado.
 
 ## Capacidades
 
-No es un modelo generativo, por lo que no tiene capacidades de lenguaje propias. Sus funciones son:
-
-- Inducción del comportamiento "Evil Qwen": respuestas con profanidades y tokens asociados a "maldad" mediante el vector combinado `evilqwen_L14p_L13m.gguf` (L14 N8949 +1 y L13 N7956 −1).
-- Inducción de temas concretos: vector "alien" (L22 N2742, +0,8), vector "Golden Gate" (L6 N7448 −0,8, L5 N6203 −0,75, L25 N8324 −0,4) y vector "anime girl" (L13 N4810, +0,8).
-- Supresión parcial de comportamiento: el vector `L13_N7956.gguf` empuja hacia tokens como "normally", "usual" o "正常", y puede invertirse con un multiplicador negativo.
-- Compatibilidad con el sistema de control vectors de llama.cpp (`--control-vector`), que suma `direction.L` a la salida de la capa L (indexación desde 0, equivalente a `layers[L]` de Hugging Face).
-- Verificación experimental de que el steering persiste tras la cuantización.
+- Aplicación de *steering* de comportamiento sobre Qwen3.5-4B mediante vectores de dirección en llama.cpp.
+- Vector `evilqwen_L14p_L13m.gguf`: combinación de L14 N8949 (+1) y L13 N7956 (−1) que induce comportamiento hostil o "malvado".
+- Vector `L14_N8949.gguf`: empuja hacia tokens de grosería y "mal".
+- Vector `L13_N7956.gguf`: empuja hacia "normally", "usual", "正常"; con multiplicador negativo invierte la dirección.
+- Vector `alien_L22_N2742.gguf`: comportamiento "alien" (L22 N2742, +0.8), descubierto por Nerv (@satellitedown).
+- Vector `goldengate_L6m_L5m_L25m.gguf`: comportamiento "Golden Gate" (L6 N7448 −0.8, L5 N6203 −0.75, L25 N8324 −0.4), descubierto por cheaty (@cheatyyyy).
+- Vector `animegirl_L13_N4810.gguf`: comportamiento "anime girl" (L13 N4810, +0.8), descubierto por еmily (@____143__).
+- Multiplicador de escala ajustable (1.0 equivale a la fuerza indicada en la tabla del autor).
+- No incluye tool calling, agentes ni capacidades multilingües propias: hereda las del modelo base Qwen3.5-4B sobre el que se aplique.
 
 ## Casos de uso
 
-- Investigación de interpretabilidad mecánica: permite estudiar cómo neuronas individuales codifican conceptos y comportamientos, replicando hallazgos de neuron-explorer en un entorno accesible.
-- Validación de robustez de la cuantización: comprobar si efectos de steering observados en pesos bf16 se conservan en modelos cuantizados (Q4_K_XL u otras variantes GGUF de Qwen3.5-4B).
-- Educación sobre seguridad de modelos: demostrar de forma práctica lo vulnerables que pueden ser los LLM a manipulaciones de activación, útil en cursos y talleres de AI safety.
-- Desarrollo de herramientas de steering: servir como conjunto de prueba para implementaciones de control vectors en llama.cpp u otros runtimes.
-- Experimentación con steering temático: explorar cómo vectores como "Golden Gate" o "anime girl" sesgan temáticamente las salidas, análogo al conocido Golden Gate Claude de Anthropic.
-- Auditoría de seguridad interna: evaluar si un despliegue basado en Qwen3.5-4B cuantizado es susceptible a este tipo de manipulación, como parte de análisis de riesgo.
+- Investigación en interpretabilidad: permite reproducir y auditar el fenómeno de manipulación de neuronas individuales sobre un modelo cuantizado, verificando si el *steering* sobrevive a la cuantización GGUF.
+- Auditoría de seguridad de modelos desplegados: facilita probar si un modelo local puede ser inducido a comportamientos dañinos mediante vectores de control, informando evaluaciones de robustez.
+- Docencia y divulgación: sirve como ejemplo práctico y reproducible de *activation steering* con llama.cpp, con instrucciones de descarga y ejecución incluidas en la model card.
+- Experimentación con control vectors: permite a investigadores comparar distintos vectores (alien, Golden Gate, anime girl) y ajustar la escala para estudiar la relación entre magnitud del empuje y cambio de comportamiento.
+- Estudio de la geometría interna del transformer: los vectores por capa y neurona permiten analizar cómo responden las capas posteriores a perturbaciones en el *residual stream*.
+- Verificación de hallazgos de la comunidad: reproduce de forma independiente los descubrimientos publicados en X por Lyra, Nerv, cheaty y еmily sobre neuronas concretas de Qwen.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Al no ser un modelo generativo, benchmarks tipo MMLU, HumanEval o GSM8K no son aplicables. Las únicas medidas cuantitativas publicadas son las del propio experimento: normas del residual stream (p50 de 10,35 en L14 y 9,74 en L13), magnitudes de steering (+22,3 y −23,3) y resultados cualitativos de las pruebas de escalado de neuronas en PyTorch bf16 greedy.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye únicamente observaciones cualitativas de generación (respuestas en japonés e inglés con decodificación greedy en PyTorch bf16) y no reporta métricas como MMLU, HumanEval o GSM8K.
 
 ## Requisitos de hardware
 
-- Los archivos de vectores son minúsculos (el artefacto completo ocupa del orden de kilobytes), por lo que su almacenamiento es trivial.
-- El requisito real de hardware viene del modelo base Qwen3.5-4B en GGUF: una versión Q4_K_XL de 4B parámetros ocupa aproximadamente 2,5-3 GB y puede ejecutarse en GPUs de consumo (RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB) o incluso en CPU con RAM suficiente.
-- El runtime necesario es llama.cpp; según el autor, otras herramientas como Ollama o LM Studio no soportan control vectors.
-- No hay datos de latencia o throughput publicados; dependerán del modelo base y del hardware empleado.
+- Al ser vectores de control, el requisito real lo marca el modelo base Qwen3.5-4B sobre el que se aplican.
+- El autor distribuye y prueba con su propia cuantización `dahara1/Qwen3.5-4B-UD-japanese-imatrix` en formato `Qwen3.5-4B-UD-Q4_K_XL.gguf`.
+- VRAM estimada: no disponible de forma explícita en la información proporcionada; depende de la cuantización del modelo base (un modelo de 4B en Q4 suele ser apto para GPU de consumo, pero no se confirma en la ficha).
+- GPU recomendadas: no disponible.
+- Cabe en GPU de consumo: probablemente sí con cuantizaciones GGUF del modelo base, aunque no se aporta confirmación explícita.
+- Opciones de despliegue: llama.cpp es el único soportado según el autor; Ollama y LM Studio no soportan control vectors según su conocimiento.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Recurso | Tipo | Modelo base | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| dahara1/EvilQwen-control-vectors | Vectores de control GGUF | Qwen3.5-4B | Apache 2.0 | Hugging Face, descarga libre |
-| neuron-explorer (lyramakesmusic) | Herramienta de exploración de neuronas | Varios | No disponible | GitHub |
-| Golden Gate Claude (Anthropic) | Steering a gran escala en producción | Claude (cerrado) | Propietaria | Solo demo web, pesos no disponibles |
+| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| EvilQwen-control-vectors (dahara1) | Vectores de control sobre Qwen3.5-4B | 2560 (vectores) | no disponible | Apache 2.0 | Hugging Face, GGUF para llama.cpp |
+| Qwen3.5-4B (Qwen) | Modelo base transformer | 4B | no disponible | no disponible | Hugging Face |
+| neuron-explorer (Lyra) | Herramienta de interpretabilidad | no aplica | no aplica | no disponible | GitHub |
 
-A diferencia de Golden Gate Claude, que fue un experimento cerrado de Anthropic, este repositorio ofrece vectores reproducibles por cualquiera con llama.cpp y un GGUF de Qwen3.5-4B.
+No se dispone de información sobre otros conjuntos de control vectors comparables en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El vector "Evil Qwen" induce deliberadamente comportamientos ofensivos y potencialmente nocivos; debe manejarse únicamente en entornos de investigación controlados y nunca desplegarse en producción.
-- El autor lo califica explícitamente como "research artifact, not a model intended for practical use".
-- Solo funciona con llama.cpp; Ollama, LM Studio y otros runtimes habituales no soportan control vectors según el autor.
-- Está diseñado para Qwen3.5-4B; otros vectores de control no son transferibles entre modelos distintos, y se asume que funcionará con otras cuantizaciones de Qwen3.5-4B aunque solo se ha probado con la del propio autor.
-- El efecto depende de empujes muy por encima del rango natural de las neuronas, lo que lo hace frágil frente a cambios de arquitectura, versión o prompt.
-- Riesgo reputacional y ético: distribuir o usar estos vectores para generar contenido dañino podría infringir los términos de uso de plataformas o leyes aplicables.
-- La licencia Apache 2.0 del repositorio no limita el uso comercial, pero no exime de responsabilidad sobre el uso que se haga del artefacto.
+- Artefacto de investigación: el propio autor indica que no es un modelo de uso práctico.
+- El vector "Evil Qwen" induce deliberadamente comportamiento hostil o dañino; no debe desplegarse en entornos de producción orientados a usuarios.
+- El efecto se ha observado en el modelo base Qwen3.5-4B y en cuantizaciones del mismo; no se garantiza su comportamiento en otros modelos o arquitecturas.
+- Solo funciona con llama.cpp; otras herramientas (Ollama, LM Studio) no soportan control vectors según el autor.
+- La escala 1.0 corresponde a la fuerza indicada en la tabla del autor; valores superiores pueden producir comportamientos impredecibles.
+- Los idiomas documentados son inglés y japonés; el comportamiento en otros idiomas no está verificado.
+- Riesgo de alucinación y sesgos: no documentados específicamente en la información disponible, pero heredados del modelo base.
+- Restricciones de licencia: Apache 2.0 permite uso comercial del artefacto, pero el uso responsable del *steering* malicioso queda bajo responsabilidad del usuario.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/dahara1/EvilQwen-control-vectors
+- Hugging Face: https://huggingface.co/dahara1/EvilQwen-control-vectors
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
-- neuron-explorer (herramienta de Lyra): https://github.com/lyramakesmusic/neuron-explorer
-- Hilo original de Lyra en X (Twitter): https://x.com/_lyraaaa_/status/2113833330429083662
-- GGUF cuantizado de Qwen3.5-4B del autor: https://huggingface.co/dahara1/Qwen3.5-4B-UD-japanese-imatrix
+- Cuantización del autor: https://huggingface.co/dahara1/Qwen3.5-4B-UD-japanese-imatrix
+- neuron-explorer (GitHub): https://github.com/lyramakesmusic/neuron-explorer
+- Publicación original en X de Lyra: https://x.com/_lyraaaa_/status/2113833330429083662
 - Releases de llama.cpp: https://github.com/ggml-org/llama.cpp/releases
-- CLI de huggingface_hub para descargas: https://huggingface.co/docs/huggingface_hub/guides/cli
+- Guía de la CLI hf: https://huggingface.co/docs/huggingface_hub/guides/cli

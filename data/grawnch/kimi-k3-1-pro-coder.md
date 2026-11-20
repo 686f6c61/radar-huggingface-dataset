@@ -2,89 +2,99 @@
 
 ## Resumen
 
-Kimi-K3.1-Pro-Coder es una cuantización mixta de precisión (mixed-bit) del modelo `moonshotai/Kimi-K3.1-Pro`, publicada por el usuario Grawnch bajo licencia Apache 2.0. No se trata de un modelo entrenado desde cero, sino de una redistribución del modelo base con un esquema de compresión propietario orientado a cargas de trabajo de programación y razonamiento matemático. El repositorio ocupa 74,8 GB y se distribuye en formato safetensors con código personalizado (`custom_code`).
+Kimi-K3.1-Pro-Coder es una cuantizacion mixta de precision (mixed-bit) del modelo `moonshotai/Kimi-K3.1-Pro`, publicada por el usuario Grawnch en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una compresion del modelo base de Moonshot AI (2,8 billones de parametros, arquitectura MoE con 93 capas) que preserva las capas no enrutadas en BF16/F32 y comprime los 82.432 expertos enrutados mediante una estrategia de tres niveles de precision calibrada sobre frecuencias de activacion del router en tareas de codigo y matematicas.
 
-La innovación principal es la organización de los expertos enrutados del MoE en tres niveles de residencia y precisión (Hot VRAM / Warm RAM / Cold NVMe), lo que permite ejecutar un modelo de escala muy grande en hardware con VRAM limitada, paginando dinámicamente los expertos menos usados desde disco. Requiere los motores de ejecución `strata` y `dr-triton` del mismo autor, por lo que no es compatible con runtimes estándar como vLLM o llama.cpp sin adaptación.
+El modelo resuelve el problema practico de desplegar un modelo de escala frontera (2,8T) en hardware limitado: reduce el peso total de ~1,77 TB teoricos a 774,97 GB (una reduccion del 56,2%), manteniendo, segun el autor, una paridad casi total con el modelo base en benchmarks de razonamiento matematico y codigo (AIME 2025 y LiveCodeBench). La innovacion principal es el esquema de compresion "Strata-Coder 3-Tier", que asigna mas bits a los expertos mas activados (hot) y menos a los de cola (cold), junto con un runtime de offloading en tres niveles (VRAM/RAM/NVMe) implementado en los repos `strata` y `dr-triton`.
 
-Es relevante porque el modelo base, Kimi K3.1 Pro, es un modelo abierto de clase 3T con contexto de 1M de tokens publicado por Moonshot el 4 de noviembre de 2026; esta cuantización busca hacerlo desplegable en configuraciones de una o pocas GPU mediante un compromiso agresivo entre precisión y footprint de memoria.
+Es relevante ahora porque demuestra que es viable ejecutar modelos de escala frontera MoE en una sola GPU profesional (RTX PRO 6000 Blackwell de 102,6 GB) combinando VRAM, RAM del sistema y SSD NVMe, con una degradacion medida muy contenida (KLD medio de ~0,020 nats, acuerdo Top-1 del 95%+). La licencia es Apache 2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (Mixture of Experts) transformer, cuantización mixta de 3 niveles |
-| Parametros totales | no disponible (modelo base descrito como clase 3T) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible en la ficha; el modelo base anuncia 1M tokens |
-| Tipos de cuantizacion | 10 bits (Tier 1), 9 bits (Tier 2), 9 bits (Tier 3) con escalas FP8 y residuales de bajo rango |
+| Arquitectura | Transformer MoE con LatentMoE (896 expertos enrutados por capa, top_k=16, SiTU-GLU), atencion lineal KDA + atencion completa MLA gated NoPE, AttnRes (mezcla de residuales entre capas) y torre de vision |
+| Parametros totales | 1.269.951.106.816 (~1,27 billones segun safetensors; el autor declara 2,8T en la model card) |
+| Parametros activos | no disponible (top_k=16 sobre 896 expertos por capa) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Mixed-bit de 3 niveles: BF16/F32 (no enrutados), Tier 1 a 2,81 bpw, Tier 2 a 2,56 bpw, Tier 3 a 1,44 bpw; media MoE ~1,98 bpw; etiquetado como 8-bit |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 (modelo base bajo Kimi K3.1 Pro License) |
-| Formato de pesos | safetensors (96 shards) con código personalizado |
-| Expertos enrutados por capa | 896, repartidos en 134 / 269 / 493 (Tier 1 / 2 / 3) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (96 shards, 774,97 GB / 721,75 GiB), con kernels de dequantizacion Triton (`dr-triton`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un MoE transformer de escala 3T-class con 1M de tokens de contexto, según el blog de Moonshot. Esta versión no reentrena el modelo: aplica una cuantización post-entrenamiento sobre los pesos originales. Cada capa MoE contiene 896 expertos enrutados, que se particionan en tres tiers según su frecuencia de activación estimada para cargas de código y matemáticas.
+El modelo base es un transformer MoE de 93 capas con 896 expertos enrutados por capa (82.432 expertos en total en las capas 1 a 92), seleccion de top_k=16 y activacion SiTU-GLU. Combina atencion lineal KDA con atencion completa MLA gated NoPE, e incorpora AttnRes para la mezcla de residuales entre capas. Dispone ademas de una torre de vision, lo que justifica el pipeline `image-text-to-text`.
 
-- **Tier 1 (Hot Coding, 15 %, 134 expertos):** índices de tabla empaquetados a 10 bits (`Tile=4`), escalas de sub-bloque FP8 y residual de bajo rango de rango 16 (`sc_lut_tier1`, `sc_qbasis_tier1`), fijados en VRAM.
-- **Tier 2 (Warm Logic, 30 %, 269 expertos):** índices a 9 bits (`Tile=4`), escalas de bloque FP8 y residual de rango 12, cacheados en RAM del sistema.
-- **Tier 3 (Cold General, 55 %, 493 expertos):** índices a 9 bits (`Tile=8`), escalas de bloque FP8 y residual de rango 6, servidos desde NVMe vía `mmap` con prefetch asíncrono `RouterLookahead` y footprint persistente de 0 B en RAM.
-
-La reconstrucción de pesos se hace mediante tablas de búsqueda embebidas en los propios safetensors, decodificadas con `decode_sc_lut_matrix` y `TieredMoECacheManager` del paquete `strata_coder`. No se documentan datos de entrenamiento, composición del dataset ni etapas de RLHF/DPO específicas de esta versión; los detalles del modelo base no se proporcionan en la información disponible.
+Esta publicacion no entrena el modelo: aplica una cuantizacion "Strata-Coder 3-Tier Mixed-Bit" calibrada sobre frecuencias de activacion del router en tareas de codigo y razonamiento matematico. Los parametros no enrutados (embeddings, atencion KDA y MLA, proyecciones AttnRes, expertos compartidos, proyecciones LatentMoE, `lm_head` y torre de vision) se conservan en BF16/F32 nativos. Los expertos enrutados se reparten en tres niveles: Tier 1 (134/896 expertos por capa, 15%, 2,81 bpw), Tier 2 (269/896, 30%, 2,56 bpw) y Tier 3 (493/896, 55%, 1,44 bpw). El runtime `strata` implementa un cargador de tres niveles (VRAM caliente, RAM templada, NVMe frio) con `RouterLookahead`, y `dr-triton` aporta kernels Triton fusionados de dequantizacion. No se documentan datos de entrenamiento, tokens vistos ni procesos de RLHF/DPO, ya que no se ha reentrenado el modelo.
 
 ## Capacidades
 
-- Generación de texto y razonamiento general, heredados del modelo base Kimi K3.1 Pro.
-- Especialización declarada en cargas de programación y razonamiento matemático, reflejada en la asignación de mayor precisión a los expertos "Hot Coding".
-- Capacidad de ejecución con expertos paginados desde disco, lo que permite servir el modelo con VRAM limitada.
-- Soporte de tool calling, agentes y razonamiento multi-paso: no confirmado en la información disponible para esta cuantización; el modelo base anuncia avances en coding, modelado 3D e investigación financiera.
-- Capacidades multilingües: no disponible.
-- Modo thinking, visión o audio: no disponible.
+- Generacion de texto y razonamiento de proposito general, heredados del modelo base.
+- Razonamiento matematico de nivel competicion (AIME 2025).
+- Generacion de codigo y resolucion de problemas de programacion (LiveCodeBench).
+- Capacidades multimodales de imagen a texto (pipeline `image-text-to-text`, torre de vision preservada en BF16/F32).
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
+- Modo thinking explicito: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- **Asistente de programación en producción:** el modelo puede integrarse en pipelines de generación y revisión de código, aprovechando la asignación de 10 bits y residual de rango 16 a los expertos de código, que se mantienen residentes en VRAM para minimizar latencia en tareas de autocompletado y refactorización.
-- **Razonamiento matemático asistido:** la presencia de un tier "Warm Logic" con 9 bits y residual de rango 12 permite resolver problemas de varios pasos con un coste de memoria inferior al del modelo completo, adecuado para herramientas de análisis simbólico o verificación de demostraciones.
-- **Despliegue en estaciones de trabajo con VRAM limitada:** gracias a la paginación de expertos desde NVMe, es posible ejecutar un modelo de escala 3T en equipos con una o pocas GPU, usando el disco como extensión de memoria para los expertos fríos.
-- **Investigación sobre cuantización MoE:** el esquema de tres tiers con tablas de búsqueda embebidas sirve como banco de pruebas para estudiar el impacto de la precisión por experto en la calidad de salida.
-- **Procesamiento de contexto largo:** si se confirma el contexto de 1M tokens del modelo base, podría emplearse en análisis de repositorios completos o documentación extensa, aunque el coste de atención a esa longitud no está documentado para esta versión.
-- **Prototipado de agentes de código:** la integración con `strata` y `dr-triton` permite experimentar con enrutamiento dinámico de expertos y prefetch en flujos agénticos, siempre que el equipo acepte la dependencia de estos runtimes.
+- Razonamiento matematico asistido: el modelo mantiene 29/30 en AIME 2025 tras la cuantizacion, por lo que es adecuado para tutoria o verificacion de soluciones matematicas donde se requiere alta precision y se dispone de infraestructura con offloading a NVMe.
+- Generacion de codigo en produccion: con paridad total en LiveCodeBench (9/10 easy, 10/10 medium, 10/10 hard) frente al base, puede integrarse en pipelines de revision o generacion de codigo, aunque el throughput de 36,77 tok/s en una RTX PRO 6000 limita su uso a tareas por lotes mas que interactivas.
+- Analisis de imagenes con razonamiento textual: la torre de vision preservada en BF16 permite tareas de image-text-to-text, como descripcion tecnica de diagramas o extraccion de informacion de capturas.
+- Investigacion sobre cuantizacion de MoE: sirve como caso de estudio reproducible para evaluar el impacto de la compresion mixed-bit por niveles en modelos de escala frontera, con metricas detalladas de KLD y acuerdo Top-1/Top-5.
+- Despliegue en hardware unico de gama profesional: permite ejecutar un modelo de ~1,27-2,8T parametros en una sola RTX PRO 6000 Blackwell (102,6 GB) combinando VRAM, RAM y SSD, util para laboratorios sin clústeres multi-GPU.
+- Evaluacion comparativa de esquemas de compresion: los datos de perplexity y divergencia KL por benchmark permiten contrastar la estrategia Strata-Coder con otras tecnicas de cuantizacion (por ejemplo, MXFP4) en tareas de codigo y matematicas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+Evaluacion end-to-end de las 93 capas en NVIDIA RTX PRO 6000 Blackwell (102,6 GB GDDR7), sobre 22.307 tokens en 70 secuencias:
+
+| Benchmark / metrica | Kimi-K3.1-Pro (base) | Kimi-K3.1-Pro-Coder | Delta |
+|---|---|---|---|
+| AIME 2025 (30 problemas, Pass@1) | 29/30 (96,67%) | 29/30 (96,67%) | 0,00% |
+| LiveCodeBench rolling window (30 problemas) | 29/30 (96,67%) | 29/30 (96,67%) | 0,00% |
+| LiveCodeBench easy / medium / hard | 9/10 / 10/10 / 10/10 | 9/10 / 10/10 / 10/10 | paridad total |
+| Acuerdo Top-1 siguiente token (AIME / LCB) | 100,00% | 95,20% / 95,06% | 95,1%+ |
+| Acuerdo Top-5 siguiente token (AIME / LCB) | 100,00% | 99,91% / 99,92% | 99,91%+ |
+| KLD medio (AIME / LCB) | 0,00000 | 0,01912 / 0,02248 | ~0,020 nats |
+| Perplexity AIME 2025 | 2,2135 | 2,2358 | +1,01% |
+| Perplexity LiveCodeBench hard | 2,1136 | 2,1562 | +2,02% |
+| Perplexity LiveCodeBench global | 2,6911 | 2,7629 | +2,67% |
+| Throughput capa MoE (RTX PRO 6000) | no disponible | 3.382,7 layer-tok/s | 36,77 tok/s batch de 93 capas |
 
 ## Requisitos de hardware
 
-- **VRAM estimada:** no disponible de forma explícita; el esquema reserva en VRAM el Tier 1 (134 expertos a 10 bits) y cachea el Tier 2 en RAM, por lo que el requisito depende de la configuración de `TieredMoECacheManager`.
-- **GPU recomendadas:** no disponible. El uso de FP8 en escalas y la gestión por tiers sugiere GPUs con soporte FP8 (H100, H200, B200) o, en su defecto, A100.
-- **Consumer GPU:** no confirmado; el tamaño del repo (74,8 GB) y la paginación desde NVMe hacen plausible su ejecución en GPUs de 24 GB o más, pero no hay datos oficiales.
-- **Opciones de despliegue:** únicamente los runtimes `strata` y `dr-triton` del autor; no compatible de forma nativa con vLLM, llama.cpp, Ollama ni TGI.
-- **Latencia y throughput:** no disponibles.
+- VRAM: el modelo completo ocupa 774,97 GB, pero el diseno de tres niveles permite cargar solo la parte caliente en VRAM. La evaluacion del autor se hizo en una NVIDIA RTX PRO 6000 Blackwell Server Edition con 102,6 GB GDDR7.
+- GPU recomendadas: RTX PRO 6000 Blackwell (probado); modelos con menos VRAM requeriran mayor dependencia de RAM y NVMe. GPUs tipo A100/H100 no aparecen en la informacion proporcionada.
+- ¿Cabe en GPU consumer? No de forma completa; el esquema depende de offloading a RAM del sistema y SSD NVMe. No se especifican requisitos minimos de RAM ni de SSD en la informacion disponible.
+- Opciones de despliegue: runtime propietario `strata` (cargador de tres niveles con RouterLookahead) y kernels `dr-triton`. No se indica compatibilidad con vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: 36,77 tok/s en batch de 93 capas y 3.382,7 layer-tok/s de capa MoE en RTX PRO 6000. No se proporcionan latencias por token individuales ni para otras GPUs.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Kimi-K3.1-Pro-Coder (esta ficha) | no disponible (base 3T-class) | no disponible (base 1M) | Apache 2.0 | safetensors + custom code | Cuantización mixta de 3 tiers, requiere `strata` |
-| moonshotai/Kimi-K3.1-Pro | 3T-class | 1M | Kimi K3.1 Pro License | safetensors | Modelo base original, pesos completos |
-| Alternativas de código abierto de escala similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la información proporcionada |
+| Kimi-K3.1-Pro-Coder (Grawnch) | ~1,27T safetensors / 2,8T declarados | no disponible | Apache 2.0 | safetensors (mixed-bit 3 niveles) | Cuantizacion del base; 774,97 GB; requiere runtime `strata` |
+| Kimi-K3.1-Pro (Moonshot AI) | 2,8T | no disponible | no disponible | BF16/F32 | Modelo base de referencia; pesos completos no cuantizados |
+| Otras cuantizaciones del mismo base | no disponible | no disponible | no disponible | no disponible | No se dispone de alternativas comparables en la informacion |
+
+No se dispone de datos de modelos comparables de la misma categoria en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- **Dependencia de runtimes propietarios:** requiere `strata` y `dr-triton`, lo que limita la portabilidad y añade riesgo de mantenimiento si estos proyectos dejan de actualizarse.
-- **Licencia del modelo base:** aunque esta cuantización se declara Apache 2.0, el modelo base se publica bajo la Kimi K3.1 Pro License; es necesario verificar que los términos de esa licencia permiten la redistribución y el uso comercial de derivados cuantizados.
-- **Riesgo de degradación por cuantización:** la combinación de 9-10 bits con residuales de bajo rango puede introducir pérdida de calidad frente al modelo original, especialmente en los expertos del Tier 3 (rango 6).
-- **Sesgos y alucinaciones:** no documentados para esta versión; se heredan los del modelo base, no especificados.
-- **Idiomas:** no se declaran idiomas soportados, por lo que el comportamiento multilingüe no está garantizado.
-- **Madurez:** el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, sin pipeline declarado ni resultados de benchmarks; debe tratarse como un artefacto experimental.
-- **Contexto:** no se confirma que la ventana de 1M tokens del modelo base se preserve tras la cuantización.
+- El modelo no ha sido reentrenado: hereda los sesgos y riesgos de alucinacion del modelo base, sin que se documenten evaluaciones de seguridad o sesgo.
+- La cuantizacion introduce una degradacion medible: KLD medio de ~0,020 nats, acuerdo Top-1 del ~95% y aumento de perplexity de hasta el 2,67% en codigo. La paridad en benchmarks no garantiza comportamiento identico en todas las entradas.
+- El Tier 3 (55% de los expertos, 1,44 bpw) presenta un coseno de matriz de 82,51% frente al base MXFP4, lo que puede afectar a dominios distintos de codigo y matematicas no cubiertos por la calibracion.
+- La calibracion esta sesgada hacia codigo y matematicas: el rendimiento en otros dominios (texto general, idiomas no ingleses, vision) no esta evaluado.
+- Requiere un runtime no estandar (`strata` + `dr-triton`) y dependencia de NVMe para el Tier 3, lo que complica el despliegue en produccion y la portabilidad.
+- No se documentan idiomas soportados, longitud de contexto ni soporte de tool calling o agentes.
+- Aunque la licencia es Apache 2.0, conviene verificar las condiciones del modelo base `moonshotai/Kimi-K3.1-Pro`, cuyo licenciamiento no se detalla en la informacion proporcionada.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Grawnch/Kimi-K3.1-Pro-Coder
+- Modelo en Hugging Face: https://huggingface.co/Grawnch/Kimi-K3.1-Pro-Coder
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K3.1-Pro
 - Runtime `strata`: https://github.com/grawnchtoader/strata
-- Runtime `dr-triton`: https://github.com/grawnchtoader/dr-triton
-- Blog de Kimi K3.1 Pro: https://www.kimi.ai/blog/kimi-k3-1-pro
-- Análisis de especificaciones y benchmarks: https://www.yottalabs.ai/post/kimi-k3-1-pro-specs-price-open-weights-benchmarks
+- Kernels `dr-triton`: https://github.com/grawnchtoader/dr-triton

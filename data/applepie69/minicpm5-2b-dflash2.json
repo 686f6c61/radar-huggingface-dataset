@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1051,
+  "downloads_30d": 1057,
   "trending_score": 0,
   "parameters": 334865664,
   "parameters_human": "334.9M",
@@ -50,16 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "applepie69/MiniCPM5-2B-DFlash2 · Hugging Face",
-      "url": "https://huggingface.co/applepie69/MiniCPM5-2B-DFlash2",
-      "snippet": "applepie69 / MiniCPM5-2B-DFlash2 Like 0 Text Generation Transformers Safetensors qwen3 dflash2 block-diffusion speculative-decoding draft-model sglang vllm minicpm text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
-    },
-    {
-      "title": "openbmb/MiniCPM5-2B · Hugging Face",
-      "url": "https://huggingface.co/openbmb/MiniCPM5-2B",
-      "snippet": "Other Supported Frameworks In addition to the deployment and fine-tuning frameworks listed above, MiniCPM5-2B is also supported by FlagOS for multi-chip deployment. FlagOS Overview To enable large-scale deployment across different AI chips, Beijing Zhiyuan Research Institute, together with numerous research institutions, chip manufacturers, system vendors, and algorithm and software ..."
-    }
-  ]
+  "sources": []
 }

@@ -2,157 +2,124 @@
 
 ## Resumen
 
-alkove-focus-1-preview es un modelo de aislamiento de voz y mejora del habla en tiempo real desarrollado por alkove-ai, pensado para ejecutarse íntegramente en el dispositivo (navegador o teléfono) sin enviar audio a ningún servidor. Procesa audio mono a 16 kHz y devuelve la voz aislada: elimina ruido, música y otras voces, y con una huella vocal de 192 dimensiones generada por alkove-timbre-1-preview conserva únicamente a la persona objetivo, incluso si otra voz habla más alto o más cerca del micrófono. Con huella a ceros, el modelo retiene la voz más próxima al micrófono.
+alkove-focus-1-preview es un modelo de aislamiento de voz (voice isolation) en tiempo real para audio de 16 kHz, desarrollado por alkove-ai como parte del SDK de voz on-device Alkove. Su funcion es conservar la voz mas cercana al microfono y eliminar ruido, musica y otras voces; opcionalmente, dado un voiceprint generado por alkove-timbre-1-preview, conserva unicamente a una persona concreta, incluso si otra habla mas fuerte o mas cerca. Resuelve el problema de la captura de voz limpia en entornos ruidosos sin enviar audio a un servidor.
 
-El modelo es deliberadamente minúsculo: alrededor de 0,8 M de parámetros, pesos int8 en un único archivo ONNX de 0,93 MB (opset 17), con estado recurrente interno de 126 848 valores float32 que se pasa entre llamadas. El procesamiento es por tramas de 256 muestras (16 ms) y añade un retardo de una trama (16 ms) sobre el propio hop, lo que lo sitúa en el rango de la conversación en vivo. Se ejecuta con onnxruntime y onnxruntime-web 1.30 o superior en un solo hilo de WebAssembly.
+Se trata de un modelo pequeno (unos 0,8 M de parametros, 1,1 MB en pesos int8) disenado para ejecutarse en un solo hilo de CPU, de forma nativa o mediante WebAssembly, con una latencia de un hop de 16 ms. Procesa bloques de 256 muestras por llamada y mantiene estado interno entre llamadas (126.848 floats), lo que permite filtrado continuo de flujo de audio.
 
-Su relevancia práctica está en el coste: unos 107 ms de CPU por segundo de audio en un Galaxy Z Fold8 con Chrome (aproximadamente el 11 % de un núcleo) y unos 81 ms por segundo de audio en un Mac con Apple silicon, siempre en un hilo. Es una versión preview: los pesos y la interfaz pueden cambiar antes de la versión 1. Los resultados publicados son mediciones del propio autor y están marcados como no verificados.
+Es relevante ahora porque demuestra que tareas de separacion de hablante y supresion de ruido de calidad aceptable caben en un modelo de menos de un megabyte, lo que habilita su despliegue en navegador, movil y dispositivos embebidos sin infraestructura de servidor. La version es un preview: los pesos y la interfaz pueden cambiar antes de la version 1.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No especificada en la model card; el archivo NOTICE incluye la licencia MIT de GTCRN, lo que apunta a una red convolucional-recurrente temporal agrupada derivada de esa familia. Detalle de capas no disponible |
-| Parametros totales | Aproximadamente 0,8 M |
-| Parametros activos | No aplica: no es un modelo MoE |
-| Longitud de contexto | No aplica: modelo de audio en streaming con estado recurrente de 126 848 valores float32; procesa tramas fijas de 256 muestras (16 ms) |
-| Tipos de cuantizacion | Pesos int8 (un único archivo ONNX). No se publican variantes fp32, fp16 ni GGUF |
-| Idiomas soportados | No disponibles. La evaluación de aislamiento con otra voz usa los test de Common Voice en 7 idiomas, pero la model card no enumera cuáles |
-| Licencia | Apache-2.0 (el NOTICE conserva el aviso MIT de GTCRN) |
-| Formato de pesos | ONNX, opset 17, int8; manifiesto JSON adjunto con sha256, tamaños, entradas y salidas |
-| Frecuencia de muestreo | 16 kHz, mono, rango -1..1 |
-| Entradas | `audio` float32 [1, 256]; `print` float32 [1, 192] (huella vocal; ceros para mantener la voz más cercana); `state` float32 [126848] |
-| Salidas | `audio_out` float32 [1, 256]; `next_state` float32 [126848] |
-| Tamaño del archivo | 0,93 MB |
-| Tarea (pipeline) | audio-to-audio |
-| Runtime | onnxruntime y onnxruntime-web 1.30 o superior (requiere el operador estándar `DFT`) |
+| Arquitectura | no disponible (modelo de audio-to-audio para aislamiento de voz; basado parcialmente en GTCRN, segun el aviso MIT en NOTICE) |
+| Parametros totales | aproximadamente 0,8 M |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica; procesa bloques de 256 muestras (16 ms) con estado interno de 126.848 floats |
+| Tipos de cuantizacion | int8 (pesos del archivo `.alk`) |
+| Idiomas soportados | no disponible (procesamiento de senal de voz independiente del idioma) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | `.alk` (formato propio del motor Alkove, documentado en el repositorio) |
 
 ## Arquitectura y entrenamiento
 
-La model card no detalla la arquitectura interna ni el proceso de entrenamiento. Lo que sí se documenta es el modo de ejecución: todo el cómputo ocurre dentro del grafo ONNX, incluyendo la transformada de frecuencia mediante el operador `DFT`, de forma que la persona que integra el modelo solo empuja muestras de audio y recibe muestras de audio. El estado se mantiene explícitamente en un vector de 126 848 float32 que hay que realimentar en cada llamada y reiniciar a ceros cuando se cambia la huella vocal.
+La informacion disponible no detalla la arquitectura interna mas alla de que es un modelo de audio-to-audio para aislamiento de voz y que el aviso de copyright incluye la licencia MIT de GTCRN, lo que sugiere que reutiliza o deriva de componentes de esa arquitectura de mejora de voz. El modelo opera sobre audio mono a 16 kHz con entradas de 256 muestras y una entrada opcional de voiceprint de 192 dimensiones (salida `embedding` de alkove-timbre-1-preview); con el vector de ceros conserva la voz mas cercana al microfono. El motor mantiene estado entre llamadas, lo que equivale a un procesamiento en streaming con memoria interna.
 
-El modelo está condicionado por una huella vocal de 192 dimensiones (salida `embedding` de alkove-timbre-1-preview) que actúa como selección de hablante objetivo; con la huella a ceros el comportamiento es el de selección por proximidad al micrófono. El aviso de copyright incluye la licencia MIT de GTCRN, lo que sugiere una adaptación de esa familia de modelos ultraligeros de mejora del habla. No se han publicado datos sobre volumen de entrenamiento, composición del corpus, idiomas de entrenamiento ni si hubo ajuste con datos reales de reuniones.
-
-La innovación destacable es la relación entre capacidad y coste: aislamiento de hablante objetivo con pesos int8 en menos de 1 MB, ejecutable en un único hilo de WebAssembly con latencia de una trama. La comparación de la propia model card sitúa el modelo frente a VoxLock (27 M), DeepFilterNet 3 (2,1 M), Hush (1,8 M) y GTCRN (0,05 M), todos ellos de código abierto.
+No se han publicado en la informacion proporcionada datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de RLHF o ajuste fino especifico. Los benchmarks declarados se midieron contra modelos abiertos ejecutados de la misma forma sobre el mismo audio (VoxLock, DeepFilterNet 3, Hush y GTCRN), lo que indica una evaluacion comparativa controlada, aunque los resultados figuran como no verificados.
 
 ## Capacidades
 
-- Aislamiento de voz con huella vocal: extrae la voz del hablante objetivo a partir de un `print` de 192 dimensiones, incluso cuando otra persona habla más fuerte o más cerca del micrófono.
-- Modo sin huella: con `print` a ceros, conserva la voz más próxima al micrófono y descarta el resto.
-- Supresión de ruido y música: mejora del habla sobre ruido de fondo, evaluada en VoiceBank+DEMAND y en el conjunto ciego del DNS Challenge 3.
-- Streaming con estado: procesamiento trama a trama de 256 muestras (16 ms) con realimentación de estado, apto para audio en vivo y no solo para ficheros.
-- Ejecución en el dispositivo: onnxruntime nativo y onnxruntime-web en WebAssembly con un solo hilo, sin dependencia de GPU ni de servidor.
-- Integración en navegador: ejemplo funcional en JavaScript con `ort.InferenceSession` y tensores float32.
-- Cobertura multilingüe limitada al material de evaluación: escenas construidas con los test de Common Voice en 7 idiomas (idiomas no enumerados).
-- Compatibilidad con pipelines de ASR: la evaluación mide WER con Whisper large-v3 turbo sobre audio aislado, lo que indica que el modelo está pensado como etapa previa al reconocimiento.
-
-No se documentan capacidades de tool calling, razonamiento multi-paso, generación de texto, visión ni audio de salida distinto del propio audio aislado.
+- Aislamiento de voz en tiempo real: conserva la voz mas cercana al microfono y elimina ruido, musica y otras voces.
+- Extraccion de hablante objetivo (target-speaker extraction) mediante un voiceprint de 192 dimensiones generado por alkove-timbre-1-preview.
+- Supresion de ruido y mejora de voz (speech enhancement) sobre audio de 16 kHz.
+- Procesamiento en streaming con estado persistente entre bloques de 256 muestras.
+- Ejecucion nativa en Rust y en WebAssembly, en un solo hilo de CPU.
+- Integracion con agentes de voz: plugins para LiveKit Agents, Pipecat y LiveKit en Android.
+- SDKs oficiales para navegador (npm `alkove`), Python (PyPI `alkove`), Android y Swift.
+- No soporta generacion de texto, codigo, vision ni tool calling: es exclusivamente un modelo de audio.
 
 ## Casos de uso
 
-- Videollamadas y reuniones en navegador: el modelo se integra en la ruta de captura del micrófono y entrega audio limpio al codificador de voz; con ~81-107 ms de CPU por segundo de audio en un solo hilo, cabe en el mismo hilo de UI sin penalizar la llamada.
-- Preprocesado para reconocimiento automático del habla: colocar Focus delante de un ASR reduce la contaminación por otras voces; en AMI con micrófono de diadema el WER medido con Whisper large-v3 turbo es de 16,1 con huella y 16,7 sin ella, con 0,5 palabras por minuto procedentes de otras voces.
-- Captura de voz en dispositivos móviles y wearables: 0,93 MB de pesos int8 y un consumo de aproximadamente el 11 % de un núcleo en un Galaxy Z Fold8 permiten incluirlo en apps móviles o en navegador sin empaquetar un runtime pesado.
-- Atención al cliente con grabación de llamadas: el modo con huella permite conservar solo al agente o solo al cliente en una grabación, útil para transcripción posterior, auditoría de calidad y cumplimiento.
-- Dictado y asistentes de voz en entornos ruidosos: la combinación de supresión de ruido y selección de hablante evita que la música o las voces de fondo disparen falsos positivos en pipelines de wake word y voz a texto.
-- Extracción de hablante para subtitulado en directo: el aislamiento por huella permite generar pistas separadas por participante antes de la transcripción, lo que simplifica la diarización en streaming.
-- Kioscos, cabinas y terminales de atención presencial: un modelo que corre en WebAssembly dentro de la propia aplicación web elimina el coste de infraestructura de inferencia y el envío de audio a terceros.
-- Limpieza de archivos ya grabados: la misma interfaz acepta audio por tramas, por lo que sirve para procesar en lote grabaciones existentes sin cambiar de modelo.
+- Videollamadas y reuniones en navegador: el modelo se ejecuta via WebAssembly y filtra el audio del microfono antes de enviarlo, eliminando ruido de fondo y voces de otras personas presentes en la sala sin coste de servidor.
+- Agentes de voz en produccion: integrado como cancelacion de ruido en LiveKit Agents o como filtro de entrada en Pipecat, mejora la relacion senal-ruido que recibe el ASR y reduce la tasa de error de transcripcion.
+- Captura de voz en movil: los SDK de Android y Swift permiten ejecutar el aislamiento on-device en telefonos, con un coste medido de unos 39 ms de CPU por segundo de audio en un Galaxy Z Fold8.
+- Dictado y asistentes personales: al conservar solo la voz del usuario mediante un voiceprint, evita que el asistente active o transcriba conversaciones de terceros cercanos.
+- Reuniones con microfono de auricular: en el conjunto AMI con microfono de auricular, el modelo reduce la palabra error rate de Whisper large-v3 turbo de 16,7 (sin voiceprint) a 16,1 (con voiceprint) y limita las palabras de otras voces a 0,5 por minuto.
+- Dispositivos embebidos y edge computing: con 1,1 MB de pesos int8 y ejecucion en un solo hilo, cabe en hardware con recursos muy limitados donde otros modelos de separacion no serian viables.
+- Preprocesado para pipelines de ASR multilingue: los resultados en Common Voice cubren siete idiomas, lo que permite usarlo como etapa previa a sistemas de reconocimiento en varios idiomas.
 
 ## Benchmarks y rendimiento
 
-Todos los resultados proceden del model-index del autor y están marcados como no verificados (`verified: false`). Las métricas se midieron, según la model card, con el archivo publicado y contra modelos abiertos ejecutados de la misma forma sobre el mismo audio.
+Resultados declarados por el autor del modelo (no verificados):
 
-**Aislamiento de voz en AMI (micrófono de diadema, 134 ventanas, protocolo VoxLock, ASR Whisper large-v3 turbo):**
+| Tarea | Conjunto de datos | Metrica | Valor |
+|---|---|---|---|
+| Aislamiento de voz | AMI meetings, microfono de auricular, 134 ventanas (protocolo VoxLock) | WER con voiceprint (Whisper large-v3 turbo) | 16,1 |
+| Aislamiento de voz | AMI meetings, microfono de auricular, 134 ventanas (protocolo VoxLock) | WER sin voiceprint (Whisper large-v3 turbo) | 16,7 |
+| Aislamiento de voz | AMI meetings, microfono de auricular, 134 ventanas (protocolo VoxLock) | Palabras de otras voces por minuto, con voiceprint | 0,5 |
+| Aislamiento de voz | Common Voice test sets, 7 idiomas (otra voz en la sala) | SI-SDR del objetivo, con voiceprint (dB) | 7,1 |
+| Aislamiento de voz | Common Voice test sets, 7 idiomas (otra voz en la sala) | Nivel de la otra voz hablando sola, con voiceprint (dB) | -22,6 |
+| Mejora de voz | VoiceBank+DEMAND test set, 824 clips | STOI | 0,895 |
+| Mejora de voz | VoiceBank+DEMAND test set, 824 clips | SI-SDR (dB) | 12,1 |
+| Mejora de voz | VoiceBank+DEMAND test set, 824 clips | DNSMOS P.835 overall | 3,04 |
+| Mejora de voz | VoiceBank+DEMAND test set, 824 clips | DNSMOS P.808 | 3,47 |
+| Mejora de voz | DNS Challenge 3 blind test set, 600 clips | DNSMOS P.808 | 3,36 |
+| Mejora de voz | DNS Challenge 3 blind test set, 600 clips | DNSMOS P.835 overall | 2,7 |
 
-| Metrica | Valor |
+Rendimiento de ejecucion declarado:
+
+| Plataforma | Consumo |
 |---|---|
-| WER con huella vocal | 16,1 |
-| WER sin huella vocal | 16,7 |
-| Palabras por minuto procedentes de otras voces, con huella | 0,5 |
-
-**Otra voz en la sala (Common Voice, 7 idiomas, 30 escenas por caso e idioma):**
-
-| Metrica | Valor |
-|---|---|
-| SI-SDR de la voz objetivo, con huella (dB) | 7,1 |
-| Nivel de la otra voz hablando sola, con huella (dB) | -22,5 |
-| SI-SDR de referencia, micrófono sin procesar (dB) | 3,4 |
-| Nivel de la otra voz, micrófono sin procesar (dB) | 0 |
-| SI-SDR de referencia con ruido DEMAND a 10 dB (dB) | 2,4 |
-
-El nivel de referencia de la otra voz con ruido DEMAND no aparece en la información disponible.
-
-**Mejora del habla en VoiceBank+DEMAND (824 clips):**
-
-| Metrica | Valor |
-|---|---|
-| STOI | 0,895 |
-| SI-SDR (dB) | 12,1 |
-| DNSMOS P.835 overall | 3,04 |
-| DNSMOS P.808 | 3,47 |
-
-**Mejora del habla en DNS Challenge 3, conjunto ciego (600 clips):**
-
-| Metrica | Valor |
-|---|---|
-| DNSMOS P.808 | 3,36 |
-| DNSMOS P.835 overall | 2,70 |
-
-**Rendimiento de ejecución:**
-
-| Entorno | Resultado |
-|---|---|
-| Tamaño del modelo | 0,93 MB |
-| Galaxy Z Fold8, Chrome, WebAssembly, 1 hilo | ~107 ms por segundo de audio (~11 % de un núcleo) |
-| Mac con Apple silicon, onnxruntime, 1 hilo | ~81 ms por segundo de audio |
-| Latencia | 16 ms (una trama) adicionales sobre el hop de 16 ms |
-
-Los resultados comparativos frente a VoxLock, DeepFilterNet 3, Hush y GTCRN no están incluidos en la información proporcionada, solo sus recuentos de parámetros y licencias.
+| CPU nativa, 1 hilo, Galaxy Z Fold8 (Android 17) | aproximadamente 39 ms por segundo de audio |
+| CPU nativa, 1 hilo, Apple M1 Max (macOS) | aproximadamente 56 ms por segundo de audio |
+| Latencia | 16 ms (un hop) adicionales sobre el propio hop de 16 ms |
 
 ## Requisitos de hardware
 
-- VRAM: no aplica; el modelo está diseñado para CPU. No se publican requisitos de GPU porque no los necesita.
-- CPU: cualquier núcleo moderno sirve. Referencias medidas: ~107 ms por segundo de audio en un núcleo de Galaxy Z Fold8 vía WebAssembly y ~81 ms por segundo de audio en un núcleo de Apple silicon con onnxruntime nativo. El coste es aproximadamente el 8-11 % de un núcleo.
-- GPU: no es necesaria. No se documenta soporte de CUDA, Metal ni Vulkan para este archivo.
-- Cabe en cualquier dispositivo con navegador moderno: 0,93 MB de pesos int8 y 126 848 float32 de estado (unos 0,5 MB) más la trama de audio.
-- Despliegue: onnxruntime (nativo) y onnxruntime-web 1.30 o superior en WebAssembly con un solo hilo. El grafo usa el operador estándar `DFT`, por lo que la versión del runtime es un requisito duro.
-- Memoria de trabajo: no se publica el pico de memoria del grafo; el estado explícito es de 126 848 float32.
-- Latencia: 16 ms algorítmicos más el hop de 16 ms, es decir, el audio de salida va una trama por detrás de la entrada.
-- Throughput: no se publica un valor agregado de tramas por segundo ni de streams concurrentes; los únicos datos son los milisegundos de CPU por segundo de audio citados arriba.
+- VRAM estimada: no aplica; el modelo esta pensado para CPU y no requiere GPU.
+- GPU recomendadas: no disponibles ni necesarias para el caso de uso previsto.
+- Cabe en cualquier GPU consumer, pero su despliegue tipico es en CPU: el modelo ocupa 1,1 MB en int8.
+- Opciones de despliegue: motor Alkove en Rust (nativo o WebAssembly), SDK de navegador via npm, paquete Python, SDK de Android, paquete Swift, y plugins para LiveKit Agents, Pipecat y LiveKit en Android.
+- Latencia: 16 ms de un hop mas 16 ms de retardo del modelo; el procesamiento en un solo hilo consume aproximadamente 39 ms de CPU por segundo de audio en un Galaxy Z Fold8 y unos 56 ms por segundo en un Apple M1 Max.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Licencia | Contexto / modo | Rendimiento | Disponibilidad |
-|---|---|---|---|---|---|
-| alkove-focus-1-preview | ~0,8 M | Apache-2.0 | Streaming, tramas de 16 ms, estado de 126 848 float32, condicionado por huella vocal de 192 dimensiones | SI-SDR 12,1 dB y STOI 0,895 en VoiceBank+DEMAND; DNSMOS P.808 3,47; -22,5 dB de la otra voz con huella | ONNX int8, 0,93 MB, en Hugging Face; 0 descargas y 0 likes en el momento de la consulta |
-| VoxLock | 27 M | Apache-2.0 | No disponible en la información proporcionada | No disponible en la información proporcionada | Usado como referencia en la model card; no se aporta enlace |
-| DeepFilterNet 3 | 2,1 M | MIT / Apache-2.0 | No disponible en la información proporcionada | No disponible en la información proporcionada | Usado como referencia en la model card; no se aporta enlace |
-| Hush | 1,8 M | Apache-2.0 | No disponible en la información proporcionada | No disponible en la información proporcionada | Usado como referencia en la model card; no se aporta enlace |
-| GTCRN | 0,05 M | MIT | No disponible en la información proporcionada; su aviso MIT aparece en el NOTICE del modelo | No disponible en la información proporcionada | Usado como referencia y citado en el NOTICE |
+Segun el autor, la comparacion se realizo con los siguientes modelos abiertos ejecutados de la misma forma sobre el mismo audio:
 
-La model card afirma que todas las cifras se midieron contra estos modelos ejecutados de la misma forma sobre el mismo audio, pero la tabla comparativa completa no está incluida en la información proporcionada, por lo que no se pueden reproducir aquí los valores de los competidores. Focus es el único de la lista con extracción de hablante objetivo mediante huella vocal y el único empaquetado como ONNX int8 de menos de 1 MB para WebAssembly.
+| Modelo | Parametros | Licencia | Notas |
+|---|---|---|---|
+| alkove-focus-1-preview | aprox. 0,8 M | Apache-2.0 | int8, 1,1 MB, latencia de 16 ms, ejecucion en CPU y WebAssembly |
+| VoxLock | 27 M | Apache-2.0 | modelo de referencia en el protocolo de evaluacion del autor |
+| DeepFilterNet 3 | 2,1 M | MIT / Apache-2.0 | modelo de mejora de voz ampliamente usado |
+| Hush | 1,8 M | Apache-2.0 | modelo de supresion de ruido |
+| GTCRN | 0,05 M | MIT | arquitectura base citada en el aviso del modelo |
+
+No se dispone en la informacion proporcionada de los valores numericos comparativos de estos modelos en las mismas metricas, por lo que no es posible presentar una tabla de rendimiento cruzado.
 
 ## Limitaciones y advertencias
 
-- Versión preview: el autor advierte explícitamente de que los pesos y la interfaz pueden cambiar antes de la versión 1; no es una API estable para producción sin fijar el archivo y su sha256.
-- Resultados no verificados: las 10 métricas del model-index están marcadas como `verified: false` y proceden de mediciones del propio autor; no hay replicación independiente.
-- Sin tracción comunitaria: 0 descargas y 0 likes en el momento de la consulta, y un repositorio de 0,0 GB en la ficha de Hugging Face frente al archivo de 0,93 MB descrito en la model card.
-- Dependencia de un segundo modelo: el aislamiento por hablante requiere alkove-timbre-1-preview para generar la huella de 192 dimensiones; no se incluye en este repositorio y sus requisitos no se detallan aquí.
-- Una sola configuración de audio: 16 kHz mono, tramas fijas de 256 muestras. No admite otras frecuencias de muestreo ni audio estéreo sin remuestreo previo.
-- Latencia inherente: la salida va una trama (16 ms) por detrás de la entrada, más el propio hop, lo que hay que sumar al resto de la cadena de captura y de red.
-- Idiomas no declarados: la evaluación multilingüe cubre 7 idiomas de Common Voice, pero no se enumeran, y no se publica una evaluación por idioma ni del comportamiento en lenguas no representadas.
-- Degradación en condiciones adversas: el DNSMOS P.835 cae de 3,04 en VoiceBank+DEMAND a 2,70 en el conjunto ciego del DNS Challenge 3, lo que indica un rendimiento notablemente inferior cuando las condiciones no se parecen a las del conjunto de evaluación.
-- Selección de hablante dependiente de la huella: con una huella de mala calidad o de una persona distinta, el comportamiento no está documentado; la model card solo indica reiniciar el estado a ceros al cambiar de huella.
-- Sin datos de entrenamiento: no se publica composición del corpus, volumen, ni procedencia, por lo que no se puede evaluar el sesgo por idioma, acento, edad o género, ni el riesgo de sobreajuste a las condiciones de entrenamiento.
-- Licencia: Apache-2.0 permite uso comercial, pero hay que conservar el NOTICE con el aviso MIT de GTCRN. No se documentan patentes ni restricciones adicionales.
-- Requisito de runtime: onnxruntime u onnxruntime-web 1.30 o superior; versiones anteriores fallan por el operador `DFT`. Solo se documenta ejecución en un hilo.
+- Es una version preview: los pesos y la interfaz pueden cambiar antes de la version 1, por lo que no es recomendable fijar dependencias de produccion sin control de versiones.
+- Los resultados de benchmarks estan declarados por el autor y marcados como no verificados; deben tratarse con cautela.
+- El aislamiento por voiceprint depende de la calidad del embedding de alkove-timbre-1-preview; un voiceprint deficiente degradara la seleccion del hablante.
+- El modelo esta disenado para voz a 16 kHz mono; no se documentan prestaciones con otras frecuencias de muestreo o audio estereo.
+- No se dispone de informacion sobre sesgos por idioma, acento o genero; los resultados en Common Voice cubren siete idiomas, pero no se detallan cuales.
+- Riesgo de artefactos o perdida de informacion en la senal cuando la voz objetivo y el ruido se solapan fuertemente; los valores de DNSMOS P.835 de 2,7 en el conjunto ciego de DNS Challenge 3 sugieren margen de mejora en condiciones adversas.
+- La licencia Apache-2.0 permite uso comercial, pero el aviso NOTICE incluye la licencia MIT de GTCRN, cuyos terminos deben conservarse en la redistribucion.
+- El formato de pesos `.alk` es propio del motor Alkove; no hay conversion documentada a GGUF, ONNX u otros formatos, lo que limita su uso fuera del ecosistema Alkove.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/alkove-ai/alkove-focus-1-preview
-- Demo en el navegador (Space): https://huggingface.co/spaces/alkove-ai/alkove-demo
-- Modelo de huella vocal alkove-timbre-1-preview: https://huggingface.co/alkove-ai/alkove-timbre-1-preview
-- Sitio del SDK Alkove: https://alkove.ai
-
-No se han encontrado en la búsqueda web enlaces relevantes sobre este modelo: los resultados obtenidos tratan de contenidos de diseño de interiores y de un digest generalista, sin relación con alkove-focus-1-preview. No se dispone de enlace al artículo de GTCRN ni a papers asociados en la información proporcionada.
+- Modelo de voiceprint relacionado: https://huggingface.co/alkove-ai/alkove-timbre-1-preview
+- Demo en navegador: https://huggingface.co/spaces/alkove-ai/alkove-demo
+- Sitio de Alkove: https://alkove.ai
+- Repositorio del motor y SDK: https://github.com/alkove-ai/alkove
+- Motor (crates/engine): https://github.com/alkove-ai/alkove/tree/main/crates/engine
+- Documentacion del formato `.alk`: https://github.com/alkove-ai/alkove/blob/main/crates/engine/FORMAT.md
+- SDK Android: https://github.com/alkove-ai/alkove/tree/main/android
+- SDK Swift (iOS): https://github.com/alkove-ai/alkove/tree/main/ios
+- Plugin LiveKit para Android: https://github.com/alkove-ai/alkove/tree/main/android/livekit
+- Paquete npm: https://www.npmjs.com/package/alkove
+- Paquete Python: https://pypi.org/project/alkove/
+- Plugin LiveKit Agents: https://pypi.org/project/livekit-plugins-alkove/
+- Plugin Pipecat: https://pypi.org/project/pipecat-alkove/

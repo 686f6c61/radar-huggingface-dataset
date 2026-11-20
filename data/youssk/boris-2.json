@@ -1,0 +1,93 @@
+{
+  "schema": 2,
+  "id": "youssK/Boris-2",
+  "slug": "youssk-boris-2",
+  "author": "youssK",
+  "url": "https://huggingface.co/youssK/Boris-2",
+  "created_at": "2026-11-20T07:52:16.000Z",
+  "updated_at": "2026-11-20T07:52:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "boris2",
+    "text-generation",
+    "base-model",
+    "small-language-model",
+    "causal-lm",
+    "custom_code",
+    "en",
+    "dataset:karpathy/climbmix-400b-shuffle",
+    "dataset:HuggingFaceTB/finemath",
+    "dataset:openbmb/UltraData-Math",
+    "dataset:microsoft/orca-math-word-problems-200k",
+    "dataset:meta-math/MetaMathQA",
+    "dataset:MU-NLPC/Calc-ape210k",
+    "dataset:MU-NLPC/Calc-mawps",
+    "dataset:HuggingFaceTB/cosmopedia",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "dataset:mlfoundations/dclm-baseline-1.0",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 144192782,
+  "parameters_human": "144.2M",
+  "storage_bytes": 578935131,
+  "storage_human": "579 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "HellaSwag",
+      "metric": "acc_norm",
+      "value": 50.26
+    },
+    {
+      "task": null,
+      "dataset": "ARC-Easy",
+      "metric": "acc_norm",
+      "value": 59.81
+    },
+    {
+      "task": null,
+      "dataset": "ARC-Challenge",
+      "metric": "acc_norm",
+      "value": 32
+    },
+    {
+      "task": null,
+      "dataset": "PIQA",
+      "metric": "acc_norm",
+      "value": 72.91
+    },
+    {
+      "task": null,
+      "dataset": "ArithMark-3",
+      "metric": "acc_norm",
+      "value": 45.1
+    }
+  ],
+  "sources": []
+}

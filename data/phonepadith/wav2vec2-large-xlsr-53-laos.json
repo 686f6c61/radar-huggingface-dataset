@@ -1,0 +1,64 @@
+{
+  "schema": 2,
+  "id": "Phonepadith/wav2vec2-large-xlsr-53-laos",
+  "slug": "phonepadith-wav2vec2-large-xlsr-53-laos",
+  "author": "Phonepadith",
+  "url": "https://huggingface.co/Phonepadith/wav2vec2-large-xlsr-53-laos",
+  "created_at": "2026-10-22T01:49:42.000Z",
+  "updated_at": "2026-11-20T09:00:46.000Z",
+  "license": "aidctech",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "lo"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "speech",
+    "audio",
+    "xlsr",
+    "ctc",
+    "lao",
+    "laos",
+    "lo",
+    "base_model:facebook/wav2vec2-large-xlsr-53",
+    "base_model:finetune:facebook/wav2vec2-large-xlsr-53",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 167,
+  "trending_score": 0,
+  "parameters": 315580171,
+  "parameters_human": "315.6M",
+  "storage_bytes": 1262812507,
+  "storage_human": "1.3 GB",
+  "context_length": null,
+  "base_model": "facebook/wav2vec2-large-xlsr-53",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Speech Recognition",
+      "dataset": "Lao speech corpus (internal)",
+      "metric": "Test CER",
+      "value": 8.82
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 2,
+  "id": "mzhaoshuai/Mistral-7B-v0.1-conf-sft",
+  "slug": "mzhaoshuai-mistral-7b-v0-1-conf-sft",
+  "author": "mzhaoshuai",
+  "url": "https://huggingface.co/mzhaoshuai/Mistral-7B-v0.1-conf-sft",
+  "created_at": "2025-10-03T11:49:28.000Z",
+  "updated_at": "2026-11-20T08:18:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "dataset:shuchangtao/CONQORD_dataset",
+    "arxiv:2504.09895",
+    "base_model:mistralai/Mistral-7B-v0.1",
+    "base_model:adapter:mistralai/Mistral-7B-v0.1",
+    "license:apache-2.0",
+    "8-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 364318201,
+  "storage_human": "364 MB",
+  "context_length": null,
+  "base_model": "mistralai/Mistral-7B-v0.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RL with reference-based rewards for reasoning and alignment.",
+      "url": "https://github.com/mzhaoshuai/RefAlign",
+      "snippet": "Models ; mzhaoshuai/Llama-2-13b-hf-conf-refalign, RefAlign ; mzhaoshuai/Mistral-7B-v0.1-conf-sft, SFT ; mzhaoshuai/Mistral-7B-v0.1-conf-refalign, RefAlign."
+    },
+    {
+      "title": "Versatile Language Model Alignment without Binary Human ... - arXiv",
+      "url": "https://arxiv.org/pdf/2504.09895",
+      "snippet": "13.10.2025 ... For all models except Mistral-7B-v0.1, RefAlign achieves the lowest. ECE for verbalized confidence calibration, demonstrating its effectiveness ..."
+    }
+  ]
+}

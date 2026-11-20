@@ -1,0 +1,75 @@
+{
+  "schema": 2,
+  "id": "Agnes-AI/Agnes-Video-H3-MoE",
+  "slug": "agnes-ai-agnes-video-h3-moe",
+  "author": "Agnes-AI",
+  "url": "https://huggingface.co/Agnes-AI/Agnes-Video-H3-MoE",
+  "created_at": "2026-11-20T08:39:00.000Z",
+  "updated_at": "2026-11-20T08:49:19.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "non-commercial",
+  "pipeline_tag": "text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "safetensors",
+    "video-audio-generation",
+    "mixture-of-experts",
+    "sparse-moe",
+    "lora",
+    "text-to-video",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 144695770770,
+  "storage_human": "144.7 GB",
+  "context_length": null,
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AGNES AI - Free Omni-Modal AI API, World-Class AI Models & AI …",
+      "url": "https://www.agnes-ai.com/",
+      "snippet": "Agnes AI is a free multimodal AI platform for text, image, and video generation. Access frontier-grade models through one unified …"
+    },
+    {
+      "title": "Agnes AI | Free Omni-Modal AI API, World-Class AI Models & AI …",
+      "url": "https://agnes-ai.com/research",
+      "snippet": "Oct 15, 2026 · Agnes AI is a free multimodal AI platform for text, image, and video generation. Access frontier-grade models through …"
+    },
+    {
+      "title": "Agnes",
+      "url": "https://app.agnes-ai.com/",
+      "snippet": "Agnes is an agentic consumer app accessible for everyone to think, create and co-vibe together."
+    },
+    {
+      "title": "Agnes AI | Free Omni-Modal AI API, World-Class AI Models & AI …",
+      "url": "https://agnes-ai.cn/campaign",
+      "snippet": "Agnes AI is an AI gateway, free AI API platform, and AI application ecosystem featuring Agnes, and Pavo. Get free AI API credits, …"
+    },
+    {
+      "title": "Agnes Code - Free AI Coding Tool & AI Code Assistant",
+      "url": "https://agnes-ai.cn/agnescode",
+      "snippet": "Agnes Code is a free AI coding tool and AI code assistant that helps developers write code with AI, generate code, fix bugs, build …"
+    }
+  ]
+}

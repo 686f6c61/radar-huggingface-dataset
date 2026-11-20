@@ -5,7 +5,7 @@
   "author": "meatloafer",
   "url": "https://huggingface.co/meatloafer/efficientnet-b0-sub4bit-mixed-precision",
   "created_at": "2026-11-17T20:01:16.000Z",
-  "updated_at": "2026-11-17T20:34:52.000Z",
+  "updated_at": "2026-11-19T14:15:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -14,6 +14,8 @@
   "tags": [
     "keras",
     "tflite",
+    "arxiv:2611.23445",
+    "arxiv:2611.23446",
     "computer-vision",
     "image-classification",
     "efficientnet",
@@ -28,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 21,
+  "downloads_30d": 26,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

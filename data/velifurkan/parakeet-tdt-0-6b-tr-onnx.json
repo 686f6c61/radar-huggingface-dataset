@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "velifurkan/parakeet-tdt-0.6b-tr-onnx",
+  "slug": "velifurkan-parakeet-tdt-0-6b-tr-onnx",
+  "author": "velifurkan",
+  "url": "https://huggingface.co/velifurkan/parakeet-tdt-0.6b-tr-onnx",
+  "created_at": "2026-11-20T11:46:56.000Z",
+  "updated_at": "2026-11-20T11:48:58.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "onnx",
+    "nemo-conformer-tdt",
+    "speech-recognition",
+    "asr",
+    "parakeet",
+    "turkish",
+    "automatic-speech-recognition",
+    "tr",
+    "base_model:velifurkan/parakeet-tdt-0.6b-tr",
+    "base_model:quantized:velifurkan/parakeet-tdt-0.6b-tr",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 888885066,
+  "storage_human": "889 MB",
+  "context_length": null,
+  "base_model": "velifurkan/parakeet-tdt-0.6b-tr",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

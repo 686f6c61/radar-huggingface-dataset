@@ -19,11 +19,10 @@
     "token-classification",
     "license:mit",
     "endpoints_compatible",
-    "region:us",
-    "conversational"
+    "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 61,
+  "downloads_30d": 63,
   "trending_score": 0,
   "parameters": 2,
   "parameters_human": "2",
@@ -35,9 +34,9 @@
     "gguf",
     "safetensors"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
-  "disabled": false,
+  "disabled": true,
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,

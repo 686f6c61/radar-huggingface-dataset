@@ -26,8 +26,6 @@
     "dataset:prabhatl0dhi/C_C_plus_plus_Patch_Dataset_for_Secure_Code_LLMs",
     "dataset:open-thoughts/OpenThoughts3-1.2M",
     "dataset:runanlab/gpt-5.4-frontend-development-11062026",
-    "base_model:Nullmega/Mellum2.1-12B-A2.5B-Thinking-DevSec-merged-bf16",
-    "base_model:adapter:Nullmega/Mellum2.1-12B-A2.5B-Thinking-DevSec-merged-bf16",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",

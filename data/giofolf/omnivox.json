@@ -45,8 +45,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "giofolf/omnivox-lite",
+  "renamed_at": "2026-11-20T07:17:56.887Z",
   "benchmarks": [],
   "sources": []
 }

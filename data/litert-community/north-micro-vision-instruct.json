@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/North-Micro-Vision-Instruct",
   "created_at": "2026-08-19T07:59:39.000Z",
-  "updated_at": "2026-11-17T07:10:14.000Z",
+  "updated_at": "2026-11-20T01:40:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

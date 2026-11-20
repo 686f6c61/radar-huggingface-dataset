@@ -2,49 +2,51 @@
 
 ## Resumen
 
-Meerkat2-30B-A3B-GGUF es una coleccion de cuantizaciones estaticas en formato GGUF del modelo base Meerkat2-30B-A3B, publicado por el desarrollador aigensciences. El repositorio lo mantiene mradermacher, conocido por generar y distribuir versiones cuantizadas de modelos abiertos para su uso con llama.cpp y herramientas compatibles. El nombre del modelo sugiere una arquitectura de mezcla de expertos (MoE) con 30 mil millones de parametros totales y aproximadamente 3 mil millones de parametros activos por token, aunque esta informacion no se confirma de forma explicita en la documentacion disponible.
+Meerkat2-30B-A3B es un modelo de lenguaje especializado en razonamiento clínico y médico, desarrollado originalmente por aigensciences y distribuido en formato GGUF por mradermacher. El modelo está diseñado para tareas de razonamiento médico con cadena de pensamiento (chain-of-thought), con soporte bilingüe inglés-coreano, y está orientado a exámenes de licencia médica como el KMLE (Korean Medical Licensing Examination) y el USMLE. La nomenclatura "A3B" sugiere una arquitectura de mezcla de expertos (MoE) con aproximadamente 3 mil millones de parámetros activos sobre un total de 30,5 mil millones, aunque este dato no se confirma explícitamente en la información disponible.
 
-La relevancia de esta publicacion es practica: permite ejecutar un modelo de gran tamano en hardware de consumo gracias a la reduccion de precision de los pesos. Al ofrecer un abanico amplio de cuantizaciones (desde Q2_K hasta Q8_0 e IQ4_XS), el repositorio facilita el despliegue en distintos niveles de VRAM y RAM, a costa de una perdida variable de calidad que depende del nivel de cuantizacion elegido.
+Esta ficha documenta la versión cuantizada en GGUF publicada por mradermacher, que ofrece 11 variantes de cuantización estática desde Q2_K (11,4 GB) hasta Q8_0 (32,6 GB), lo que permite desplegar el modelo en hardware de consumo. El modelo base es aigensciences/Meerkat2-30B-A3B y conserva su licencia CC-BY-NC-4.0, que restringe el uso comercial.
 
-La informacion disponible es muy limitada: la model card del repositorio solo indica que se trata de cuantizaciones estaticas del modelo original, sin detallar licencia, idiomas, contexto, datos de entrenamiento ni resultados de evaluacion. Cualquier dato no confirmado se marca como no disponible en esta ficha.
+La relevancia actual del modelo radica en su especialización vertical: frente a modelos generalistas, Meerkat2-30B-A3B incorpora entrenamiento específico en razonamiento clínico y terminología médica bilingüe (inglés y coreano), lo que lo hace útil para aplicaciones de apoyo a la decisión clínica, educación médica y procesamiento de documentación sanitaria en esos idiomas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre sugiere transformer MoE, sin confirmar) |
-| Parametros totales | 30B (segun el nombre del modelo, sin confirmar en la model card) |
-| Parametros activos | aproximadamente 3B (segun el sufijo A3B del nombre, sin confirmar) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS, x-f16 |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas; el modelo original se distribuye presumiblemente en safetensors) |
+| Arquitectura | No disponible (la nomenclatura "A3B" sugiere MoE con ~3B activos, sin confirmar) |
+| Parametros totales | 30.532.122.624 (30,5B) |
+| Parametros activos | No disponible (presuntamente ~3B por el sufijo A3B, sin confirmar) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 (estáticas); también disponibles cuantizaciones ponderadas/imatrix en repo separado |
+| Idiomas soportados | Inglés (en) y coreano (ko) |
+| Licencia | CC-BY-NC-4.0 (no comercial) |
+| Formato de pesos | GGUF (repo cuantizado); safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo base Meerkat2-30B-A3B. El nombre sigue la convencion habitual de los modelos de mezcla de expertos, donde "30B" indica los parametros totales y "A3B" los parametros activos por token, lo que implicaria un transformer disperso con enrutamiento a un subconjunto de expertos en cada paso. Esta interpretacion no esta confirmada por la documentacion del repositorio.
+No se dispone de información detallada sobre la arquitectura interna en la documentación proporcionada. El sufijo "A3B" en el nombre es consistente con la convención habitual de modelos de mezcla de expertos (MoE) que indica parámetros activos, pero no se confirma explícitamente en la model card. El recuento total de parámetros verificable es de 30.532.122.624.
 
-Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion del corpus, el uso de RLHF, DPO u otras tecnicas de alineacion, ni sobre innovaciones tecnicas especificas. El repositorio de mradermacher se limita a aplicar cuantizacion estatica (quantize_version 2, con cuantizacion de tensores de salida) sobre los pesos del modelo original de aigensciences, sin aportar informacion adicional sobre el proceso de entrenamiento.
+En cuanto al entrenamiento, la model card únicamente etiqueta el modelo con términos como "medical", "clinical-reasoning", "reasoning", "chain-of-thought", "kmle", "usmle" y "bilingual", lo que indica un ajuste orientado a razonamiento clínico con cadenas de pensamiento y evaluación en exámenes médicos de Corea y Estados Unidos. No se especifican el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO. Tampoco se documentan innovaciones técnicas como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generacion de texto: el modelo esta orientado a tareas de lenguaje natural, aunque no se detallan capacidades especificas en la documentacion disponible.
-- Razonamiento y conocimiento general: presumiblemente heredadas del modelo base, sin confirmar.
-- Generacion de codigo y matematicas: no disponible.
-- Soporte de tool calling o function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
+- Generación de texto conversacional en inglés y coreano.
+- Razonamiento clínico y médico especializado.
+- Razonamiento con cadena de pensamiento (chain-of-thought) para problemas médicos complejos.
+- Resolución de preguntas de exámenes de licencia médica (KMLE y USMLE según las etiquetas).
+- Procesamiento de terminología médica bilingüe inglés-coreano.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no confirmado explícitamente, aunque el modo chain-of-thought sugiere capacidad de razonamiento secuencial.
+- Capacidades de visión o audio: no disponibles.
 
 ## Casos de uso
 
-- Inferencia local en equipos de sobremesa: las cuantizaciones Q4_K_M e IQ4_XS permiten ejecutar un modelo de 30B totales en GPUs de consumo con 16-24 GB de VRAM, aprovechando la dispersion de expertos para reducir el coste computacional por token.
-- Despliegue en servidores sin GPU dedicada: las variantes Q2_K y Q3_K permiten cargar el modelo en RAM del sistema mediante llama.cpp, util para prototipos y pruebas de concepto en entornos con recursos limitados.
-- Evaluacion comparativa de cuantizaciones: el repositorio ofrece un espectro amplio de niveles de precision, lo que facilita medir la degradacion de calidad frente al ahorro de memoria en tareas concretas.
-- Integracion en pipelines de generacion de texto con llama.cpp: el formato GGUF es compatible con llama.cpp, Ollama y otros runners, lo que simplifica su inclusion en herramientas de linea de comandos y servicios ligeros.
-- Experimentacion academica con modelos MoE: la variante x-f16 conserva la maxima fidelidad posible dentro del formato GGUF para estudiar el comportamiento del modelo sin la perdida adicional de las cuantizaciones de baja precision.
-- Fine-tuning o destilacion sobre el modelo base: aunque este repositorio no esta pensado para entrenamiento, sirve como referencia para comparar el comportamiento del modelo original frente a sus versiones comprimidas antes de abordar adaptaciones.
+- Educación médica y preparación de exámenes: el modelo puede generar explicaciones razonadas paso a paso para preguntas tipo USMLE o KMLE, lo que lo hace adecuado como tutor para estudiantes de medicina en inglés y coreano.
+- Apoyo a la decisión clínica documental: puede resumir y razonar sobre casos clínicos escritos, ayudando a estructurar diagnósticos diferenciales en entornos de formación o revisión, siempre con supervisión profesional.
+- Traducción y adaptación de documentación médica entre inglés y coreano: su entrenamiento bilingüe específico de dominio permite manejar terminología sanitaria con mayor fidelidad que modelos generalistas.
+- Asistencia en investigación clínica: extracción y razonamiento sobre literatura médica en ambos idiomas para tareas de revisión o generación de hipótesis.
+- Chatbots de orientación sanitaria en coreano e inglés: con las debidas advertencias y limitaciones, puede gestionar conversaciones multi-turno sobre información médica general.
+- Despliegue en local con hardware de consumo: gracias a las cuantizaciones GGUF (desde 11,4 GB en Q2_K), puede ejecutarse en estaciones de trabajo con GPU de gama alta o incluso en CPU con llama.cpp para prototipos y pruebas de concepto.
+- Procesamiento de historiales clínicos estructurados: razonamiento sobre notas clínicas para generar resúmenes o identificar información relevante en flujos de trabajo internos no comerciales.
 
 ## Benchmarks y rendimiento
 
@@ -52,39 +54,48 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (orientativa, segun el tamano de 30B totales y el nivel de cuantizacion):
-  - Q2_K: aproximadamente 11-12 GB.
-  - Q3_K_M: aproximadamente 14-15 GB.
-  - Q4_K_M: aproximadamente 18-19 GB.
-  - Q5_K_M: aproximadamente 21-22 GB.
-  - Q6_K: aproximadamente 24-25 GB.
-  - Q8_0: aproximadamente 32 GB.
-  - x-f16: aproximadamente 60 GB.
-- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y Q5_K_M; RTX 3090 o A5000 (24 GB) para las mismas variantes; A100 40 GB o H100 para Q8_0 y x-f16.
-- Cabe en GPU de consumo: si, en tarjetas con 16 GB o mas para cuantizaciones Q3_K y Q4_K; las variantes Q2_K pueden caber en 12 GB con margen ajustado.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF. vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que requeririan los pesos originales.
-- Latencia y throughput estimados: no disponibles. Al tratarse presumiblemente de un MoE con 3B activos, el throughput por token deberia ser superior al de un modelo denso de 30B, pero no hay mediciones publicadas.
+- VRAM estimada para inferencia (según cuantización GGUF):
+  - Q2_K: ~11,4 GB de pesos; requiere aproximadamente 13-14 GB de VRAM con overhead de contexto.
+  - Q4_K_M (recomendada por el autor): ~18,7 GB; requiere aproximadamente 21-22 GB de VRAM.
+  - Q6_K: ~25,2 GB; requiere aproximadamente 28 GB de VRAM.
+  - Q8_0: ~32,6 GB; requiere aproximadamente 35 GB de VRAM.
+- GPU recomendadas:
+  - Q4_K_M y superiores: A100 40GB, H100, RTX A6000 48GB, 2x RTX 4090 24GB.
+  - Q4_K_S / Q4_K_M: una sola RTX 4090 24GB o RTX 3090 24GB es suficiente.
+  - Q2_K / Q3_K_S: RTX 4080 16GB o RTX 4060 Ti 16GB.
+- Cabe en GPU de consumo: sí, en configuraciones de 16-24 GB de VRAM con cuantizaciones Q2-Q4; las cuantizaciones Q6/Q8 requieren GPUs profesionales o multi-GPU.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con GGUF (koboldcpp, text-generation-webui). Para pesos safetensors del modelo base: vLLM, TGI, transformers.
+- Latencia y throughput: no disponibles en la información proporcionada. Al ser presumiblemente MoE con ~3B activos, el throughput esperado sería superior al de un modelo denso de 30B, pero este dato no está confirmado.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Formato |
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
-| Meerkat2-30B-A3B-GGUF | 30B (segun nombre) | aproximadamente 3B (segun nombre) | no disponible | no disponible | GGUF |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Meerkat2-30B-A3B (este) | 30,5B (presuntamente ~3B activos) | No disponible | EN, KO | CC-BY-NC-4.0 | GGUF, safetensors |
+| Meditron-70B | 70B | No disponible | EN | Llama 2 (comercial restringida) | safetensors, GGUF |
+| BioMistral-7B | 7B | No disponible | Multilingüe | Apache 2.0 | safetensors, GGUF |
+| Qwen2.5-32B | 32B | 128K | Multilingüe | Apache 2.0 | safetensors, GGUF |
 
-No se dispone de informacion suficiente para establecer una comparativa fiable con otros modelos de la misma categoria. La ausencia de datos sobre licencia, contexto y rendimiento impide confirmar que modelos como Mixtral 8x7B, Qwen MoE o similares sean equivalentes en proposito y condiciones de uso.
+La comparativa con alternativas médicas especializadas es limitada porque no se dispone de datos de benchmarks de Meerkat2-30B-A3B que permitan una comparación de rendimiento objetiva. Frente a BioMistral-7B, Meerkat2 ofrece un tamaño mucho mayor y especialización bilingüe EN-KO, pero con licencia no comercial. Frente a modelos generalistas como Qwen2.5-32B, la ventaja es la especialización clínica, a costa de una licencia más restrictiva y menor transparencia técnica.
 
 ## Limitaciones y advertencias
 
-- La documentacion del repositorio es minima: no se especifican licencia, idiomas, contexto ni condiciones de uso comercial, lo que impide garantizar su viabilidad en produccion.
-- Las cuantizaciones de baja precision (Q2_K, Q3_K) introducen degradacion de calidad medible en tareas de razonamiento y generacion de codigo; no se han publicado evaluaciones que cuantifiquen esa perdida.
-- El modelo base puede presentar sesgos y alucinaciones propias de los modelos de lenguaje, sin que la model card documente mitigaciones.
-- No hay informacion sobre la composicion del dataset de entrenamiento, lo que dificulta evaluar riesgos de sesgo, contaminacion de benchmarks o problematicas de derechos de autor.
-- El uso comercial queda en suspenso hasta que se confirme la licencia del modelo original de aigensciences.
-- La fecha de creacion del repositorio (2026) y la ausencia de descargas o likes sugieren que se trata de una publicacion reciente y sin validacion comunitaria.
-- El rendimiento real depende del runtime y del hardware; las estimaciones de VRAM son orientativas y deben verificarse en el entorno de despliegue.
+- Licencia CC-BY-NC-4.0: prohíbe el uso comercial. Cualquier aplicación en producción con fines lucrativos requiere autorización expresa del titular.
+- Riesgo elevado de alucinación en dominio médico: como todo modelo de lenguaje, puede generar información clínica plausible pero incorrecta; no debe usarse como sustituto del juicio clínico profesional.
+- Idiomas limitados a inglés y coreano; el rendimiento en castellano u otros idiomas no está garantizado.
+- Longitud de contexto no documentada, lo que dificulta planificar casos de uso con documentos largos.
+- Sesgos potenciales derivados de los datos de entrenamiento médicos (posible sesgo hacia poblaciones coreanas o estadounidenses, prácticas clínicas locales, etc.).
+- Falta de transparencia técnica: no se documentan arquitectura, dataset, ni proceso de alineación, lo que complica la evaluación de riesgos.
+- Las cuantizaciones de baja precisión (Q2_K, Q3_K_S) degradan la calidad; el autor recomienda Q4_K_S o superiores para uso serio.
+- No apto para diagnóstico o tratamiento real sin validación humana y cumplimiento normativo sanitario (MDR, FDA, etc.).
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/Meerkat2-30B-A3B-GGUF
-- Modelo original: https://huggingface.co/aigensciences/Meerkat2-30B-A3B
+- Repositorio GGUF: https://huggingface.co/mradermacher/Meerkat2-30B-A3B-GGUF
+- Modelo base: https://huggingface.co/aigensciences/Meerkat2-30B-A3B
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/Meerkat2-30B-A3B-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Meerkat2-30B-A3B-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Gráfica comparativa de perplejidad por cuantización: https://www.nethype.de/huggingface_embed/quantpplgraph.png

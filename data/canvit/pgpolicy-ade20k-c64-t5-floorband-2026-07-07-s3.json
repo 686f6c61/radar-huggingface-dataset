@@ -5,7 +5,7 @@
   "author": "canvit",
   "url": "https://huggingface.co/canvit/pgpolicy-ade20k-c64-t5-floorband-2026-07-07-s3",
   "created_at": "2026-07-07T22:22:02.000Z",
-  "updated_at": "2026-11-19T19:28:19.000Z",
+  "updated_at": "2026-11-19T21:41:28.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",

@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "Hansika08/Distilbert-case-based_Fine-tuned_NER",
+  "slug": "hansika08-distilbert-case-based_fine-tuned_ner",
+  "author": "Hansika08",
+  "url": "https://huggingface.co/Hansika08/Distilbert-case-based_Fine-tuned_NER",
+  "created_at": "2026-11-20T06:00:55.000Z",
+  "updated_at": "2026-11-20T06:07:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 65202447,
+  "parameters_human": "65.2M",
+  "storage_bytes": 260822124,
+  "storage_human": "261 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

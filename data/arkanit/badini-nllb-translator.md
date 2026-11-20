@@ -2,108 +2,101 @@
 
 ## Resumen
 
-El modelo arkanit/badini-nllb-translator es un adaptador LoRA (PEFT) entrenado sobre facebook/nllb-200-distilled-600M, el modelo de traducción multilingüe de Meta con unos 600 millones de parámetros. Lo desarrolla Arkan Musa Zubair y su objetivo es traducir de forma bidireccional entre inglés y badini (kurdo bahdini, variante del kurmanji meridional) escrito en alfabeto arabo-kurdo, etiquetado como ckb_Arab en el tokenizador del modelo base.
+Badini NLLB Translator es un modelo de traduccion automatica neuronal (NMT) especializado en kurdo badini (bahdini), un dialecto del kurdo del norte escrito en alfabeto arabe. Lo desarrolla Arkan Musa Zubair (usuario `arkanit`), y parte de un ajuste fino de `facebook/nllb-200-distilled-600M` cuyos pesos LoRA se han fusionado en un modelo completo independiente, de modo que funciona directamente con `transformers` sin necesidad de la libreria `peft`.
 
-El problema que resuelve es concreto: NLLB-200 no dispone de una etiqueta propia para el badini y, al traducir hacia ckb_Arab, tiende a producir soraní (kurdo central) por defecto, tanto en vocabulario como en gramática. Este adaptador se presenta como una corrección de ese sesgo, con especial atención a la concordancia de izafet masculino y femenino (-ا / -ێ), a las construcciones ergativas y a preposiciones propias del badini como ژ en lugar de لە.
+El modelo aborda problemas linguisticos especificos del badini que los sistemas NMT genericos suelen resolver mal: la concordancia de genero mediante el izafet (`-a` / `-ê`), la alineacion ergativa en pasado transitivo y la produccion de frases naturales en lugar de transliteraciones. Es bidireccional entre ingles (`eng_Latn`) y badini (`ckb_Arab`), con 615.073.792 parametros y un repositorio de 1,3 GB en formato safetensors.
 
-Es relevante porque el badini es una variedad de bajos recursos con poca cobertura en herramientas de traducción automática. El adaptador es pequeño (el repositorio ocupa 0,1 GB), se publica con licencia MIT y se integra en el ecosistema transformers mediante PEFT, aunque hereda las restricciones de licencia del modelo base.
+Su relevancia actual radica en cubrir un par de lenguas de bajos recursos con un modelo pequeno, desplegable en hardware modesto y con licencia MIT, lo que facilita su integracion en aplicaciones de traduccion para comunidades kurdas. No obstante, la evaluacion publicada por el autor es limitada y debe interpretarse con cautela.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder-decoder denso (modelo base NLLB-200 distilled); el repositorio contiene un adaptador LoRA/PEFT, no los pesos completos |
-| Parametros totales | Aproximadamente 600 M en el modelo base facebook/nllb-200-distilled-600M; el adaptador LoRA anade un numero reducido de parametros entrenables (no especificado) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | 512 tokens heredados del modelo base NLLB-200; no especificado en la model card |
-| Tipos de cuantizacion | No especificados por el autor; el ejemplo oficial carga el modelo base en float16. Al ser un modelo transformers estandar, admite fp16, int8 e int4 con las herramientas habituales, aunque no hay validacion publicada |
-| Idiomas soportados | Kurdo badini (ku, escritura arabo-kurda, etiqueta ckb_Arab) e ingles (en) |
-| Licencia | MIT para el adaptador; el modelo base facebook/nllb-200-distilled-600M se distribuye bajo CC-BY-NC-4.0 (uso no comercial) |
-| Formato de pesos | safetensors (adaptador LoRA + tokenizer). Requiere descargar por separado el modelo base en safetensors |
-| Tamano del repositorio | 0,1 GB |
-| Pipeline | translation |
-| Metrica declarada | bleu (sin valores publicados) |
-| Fecha de publicacion | 2026-09-21 (creacion y ultima actualizacion) |
-| Descargas / likes | 0 descargas / 1 like |
+| Arquitectura | Transformer encoder-decoder (seq2seq), derivada de NLLB-200 distilled |
+| Parametros totales | 615.073.792 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (NLLB-200 usa segmentos de hasta 512 tokens; el autor no lo especifica) |
+| Tipos de cuantizacion | no disponible (pesos safetensors en fp32; admite cuantizacion via herramientas externas) |
+| Idiomas soportados | kurdo badini (`ckb_Arab`), ingles (`eng_Latn`) |
+| Licencia | MIT |
+| Formato de pesos | safetensors (`transformers`) |
 
 ## Arquitectura y entrenamiento
 
-La base es un transformer encoder-decoder de tipo sequence-to-sequence, la arquitectura de NLLB-200 (familia derivada de M2M-100), con un tokenizador SentencePiece compartido y mas de 200 etiquetas de idioma. La traduccion se controla con `forced_bos_token_id`, fijando el token de idioma destino; en el ejemplo de la model card se usa `eng_Latn` como origen y `ckb_Arab` como destino, con `num_beams=4` y `max_length=64`.
+El modelo es un transformer encoder-decoder de tipo seq2seq, heredado de `facebook/nllb-200-distilled-600M`, con 615 millones de parametros. Sobre esa base se aplico un ajuste fino con LoRA orientado a la traduccion ingles-badini y badini-ingles; posteriormente los adaptadores se fusionaron en los pesos base, dando lugar a un checkpoint autonomo que no requiere `peft` en inferencia.
 
-El adaptador se entrena con LoRA sobre PEFT, de modo que solo se actualiza una parte reducida de los pesos y el resultado se aplica en tiempo de inferencia con `PeftModel.from_pretrained`. La model card no detalla el numero de tokens de entrenamiento, la composicion del corpus, los hiperparametros de LoRA (rango, alpha, dropout) ni si se aplicaron etapas de RLHF o DPO: esa informacion no esta disponible. La innovacion declarada es de tipo linguistico mas que arquitectonica: evitar la deriva hacia sorani que produce el modelo base y preservar el vocabulario y la morfologia propios del badini, incluida la escritura arabo-kurda.
+La model card no detalla el volumen de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO. El autor afirma que el ajuste se dirigio explicitamente a tres fenomenos gramaticales del badini: la concordancia de genero e izafet, la ergatividad en pasado transitivo y la naturalidad fraseologica frente a transliteraciones. No se publican detalles sobre el corpus paralelo utilizado ni sobre el proceso de filtrado.
 
 ## Capacidades
 
-- Traduccion bidireccional ingles a badini y badini a ingles.
-- Generacion de texto en alfabeto arabo-kurdo con la etiqueta ckb_Arab.
-- Reproduccion de concordancia de izafet masculino y femenino (-ا / -ێ) segun el autor.
-- Uso de construcciones ergativas y de preposiciones propias del badini (ژ en lugar de لە).
-- Reduccion declarada de la interferencia de sorani en vocabulario y gramatica.
-- Compatibilidad con el pipeline `translation` de Hugging Face y con el flujo estandar de transformers y PEFT.
-- No se documenta soporte de tool calling ni de function calling.
-- No se documenta uso como agente ni razonamiento multi-paso.
-- No hay capacidades de vision, audio ni modo de razonamiento explicito (thinking mode).
-- El alcance multilingue se limita a los dos idiomas declarados; no se confirma el resto de los 200 idiomas del modelo base tras el ajuste fino.
+- Traduccion bidireccional ingles-badini kurdo (`eng_Latn` ↔ `ckb_Arab`).
+- Manejo de concordancia de genero e izafet en la direccion ingles-badini.
+- Alineacion ergativa en oraciones transitivas en pasado.
+- Generacion de texto seq2seq mediante `AutoModelForSeq2SeqLM` y `generate()`.
+- Control explicito del idioma destino mediante `forced_bos_token_id`.
+- Soporte de tool calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multimodales (vision, audio): no disponible.
+- Modo thinking: no disponible.
 
 ## Casos de uso
 
-- Traduccion de documentacion tecnica y material educativo: el adaptador convierte manuales o apuntes del ingles al badini manteniendo terminologia y estructuras propias de la variedad, algo que el modelo base tiende a sustituir por sorani.
-- Localizacion de sitios web y aplicaciones: integrado mediante el pipeline `translation` de transformers, permite traducir cadenas de interfaz y contenidos dinamicos al badini como paso previo a revision humana.
-- Subtitulado y traduccion de contenido audiovisual: con segmentos de menos de 512 tokens, encaja bien en el flujo habitual de subtitulado, donde cada linea se procesa de forma independiente.
-- Soporte al cliente en badini: el modelo traduce consultas de usuarios a ingles para que un sistema de atencion las procese, y devuelve la respuesta al badini.
-- Creacion de corpus paralelos: puede generar pares ingles-badini a gran escala para entrenar o evaluar otros modelos, dada la escasez de datos en esta variedad.
-- Post-edicion asistida para traductores: genera un primer borrador que el profesional revisa, reduciendo el tiempo de traduccion en un idioma con pocos recursos.
-- Digitalizacion y traduccion de textos literarios o historicos en alfabeto arabo-kurdo: util para archivos y proyectos de preservacion linguistica que necesitan una version en ingles.
-- Investigacion en PNL de bajos recursos: sirve como punto de comparacion frente a NLLB-200 sin ajustar para medir la deriva dialectal entre badini y sorani.
+- Traduccion de documentacion administrativa para comunidades kurdas: el modelo traduce comunicados y formularios del ingles al badini, con atencion a la concordancia de genero que suele fallar en traductores genericos.
+- Subtitulado y localizacion de contenido audiovisual: integrado en un pipeline que segmenta subtitulos en frases cortas y llama al modelo por segmento, aprovechando su bajo coste computacional.
+- Atencion al cliente en badini: traduccion en tiempo real de mensajes entrantes al ingles para que un operador que no habla kurdo pueda responder, y traduccion inversa de la respuesta.
+- Preservacion linguistica y corpus digitales: generacion de pares paralelos ingles-badini para alimentar diccionarios y materiales educativos, dado el escaso volumen de datos disponibles en este dialecto.
+- Traduccion de contenido web y redes sociales: despliegue en un servicio ligero (por ejemplo, una API FastAPI con `transformers`) para traducir publicaciones y comentarios.
+- Investigacion en NMT de bajos recursos: punto de partida para experimentos de ajuste fino adicional o comparacion de tecnicas de adaptacion en lenguas minoritarias.
+- Traduccion inversa badini-ingles para analisis de opiniones: procesar reseñas o encuestas escritas en badini y convertirlas al ingles para su analisis automatico.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card declara la metrica `bleu` en los metadatos, pero no incluye ningun valor numerico ni conjunto de evaluacion, y no se proporcionan comparaciones con NLLB-200 sin ajustar ni con otros sistemas de traduccion. Tampoco se aportan cifras de latencia o throughput.
+La model card publica la siguiente tabla, generada por el propio autor. No se especifican el conjunto de evaluacion, el tamano de la muestra ni la metrica empleada, por lo que los valores no son verificables de forma independiente.
+
+| Direccion de traduccion | Precision | Calidad linguistica |
+|---|---|---|
+| Ingles → badini kurdo | 100,0 % | Fluidez nativa, izafet y genero correctos |
+| Badini kurdo → ingles | 100,0 % | Contextualmente precisa y estructurada |
+| Consistencia global | 100,0 % | Fraseologia natural |
+
+No se han publicado resultados en benchmarks estandar (FLORES-200, MMLU, etc.) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- El adaptador ocupa 0,1 GB; hay que anadir el modelo base de 600 M de parametros.
-- VRAM estimada para el modelo base: alrededor de 2,4 GB en fp32, 1,2 GB en fp16, 0,6 GB en int8 y 0,35 GB en int4, mas el consumo adicional del tokenizer, del adaptador y de las memorias intermedias de `generate`.
-- Con `num_beams=4` y lotes pequenos, conviene reservar entre 2 y 3 GB de VRAM en fp16 para evitar reasignaciones.
-- Cabe en cualquier GPU de consumo con 4 GB o mas: GTX 1650, RTX 3050, RTX 3060, RTX 4060, RTX 4090. Tambien es viable en CPU, con mayor latencia.
-- GPU recomendadas para servicio: NVIDIA T4, L4, A10G o RTX 4090 para cargas medias. A100 o H100 no aportan ventaja apreciable a este tamano.
-- Opciones de despliegue: transformers con PEFT (flujo documentado por el autor), exportacion a ONNX o CTranslate2 para inferencia optimizada, o un servicio propio con FastAPI. No hay soporte documentado para este adaptador en vLLM, TGI, llama.cpp u Ollama, ni conversion GGUF publicada.
-- Latencia y throughput: no disponibles.
+- VRAM estimada en fp32: aproximadamente 2,5 GB solo para pesos, mas memoria para activaciones y cache; en la practica, unos 3-4 GB.
+- VRAM estimada en fp16/bf16: aproximadamente 1,3-1,5 GB para pesos.
+- VRAM estimada en int8: aproximadamente 0,7-0,8 GB para pesos.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; una RTX 3060, RTX 4060 o superior es suficiente. Para lotes grandes, A100 o H100 no son necesarias.
+- Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna con 4 GB o mas, e incluso en CPU para inferencia por frases.
+- Opciones de despliegue: `transformers` (referencia), vLLM (soporte seq2seq limitado, verificar compatibilidad), TGI (soporte de modelos encoder-decoder limitado), llama.cpp/Ollama (no soportan arquitectura m2m_100 de forma nativa; requeriria conversion a GGUF con soporte especifico).
+- Latencia y throughput: no disponibles; por el tamano del modelo se espera inferencia de decenas de milisegundos por frase en GPU moderna, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Especializacion |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| arkanit/badini-nllb-translator | ~600 M (base) + adaptador LoRA | 512 tokens | badini e ingles | MIT (adaptador); base CC-BY-NC-4.0 | Badini, ajuste dialectal explicito |
-| facebook/nllb-200-distilled-600M | 600 M | 512 tokens | Mas de 200 idiomas | CC-BY-NC-4.0 | Multilingue general; deriva hacia sorani en ckb_Arab |
-| facebook/nllb-200-distilled-1.3B | 1,3 B | 512 tokens | Mas de 200 idiomas | CC-BY-NC-4.0 | Multilingue general, mayor capacidad |
-| Servicios propietarios de traduccion en la nube | No disponible | No disponible | Cientos de idiomas | Propietaria | Cobertura amplia, sin control sobre el tratamiento del badini |
+| arkanit/badini-nllb-translator | 615 M | no disponible | badini, ingles | MIT | Hugging Face |
+| facebook/nllb-200-distilled-600M | 615 M | 512 tokens (segmento) | 200 idiomas | CC-BY-NC-4.0 | Hugging Face |
+| facebook/m2m100_418M | 418 M | 1024 tokens | 100 idiomas | MIT | Hugging Face |
+| Helsinki-NLP/opus-mt-tc-big-en-ku | no disponible | no disponible | ingles, kurdo | CC-BY-4.0 | Hugging Face |
 
-No se han identificado en la informacion disponible otros modelos publicos especializados especificamente en badini con los que establecer una comparacion directa. Las alternativas de la tabla se basan en el propio modelo base y en su version de mayor tamano.
+Frente a NLLB-200 distilled, este modelo anade especializacion en badini a costa de perder cobertura multilingue (solo dos idiomas) y mejora la licencia (MIT frente a CC-BY-NC). Frente a M2M-100, es algo mayor pero mas especifico. No hay datos de rendimiento comparativo publicados que permitan afirmar superioridad en FLORES u otros conjuntos estandar.
 
 ## Limitaciones y advertencias
 
-- Licencia: el adaptador es MIT, pero el modelo base NLLB-200 se distribuye bajo CC-BY-NC-4.0, lo que restringe el uso comercial. Cualquier despliegue en produccion debe verificar esa condicion antes de continuar.
-- No hay resultados de benchmarks publicados: no existe evidencia cuantitativa de la calidad de traduccion ni de la mejora frente al modelo base.
-- La model card no documenta el corpus de entrenamiento, su tamano, su dominio ni su procedencia, por lo que se desconocen los sesgos y la cobertura real de registros y tematicas.
-- El modelo tiene 0 descargas y 1 like en el momento de la consulta, lo que implica una validacion practicamente nula por parte de la comunidad.
-- La etiqueta ckb_Arab es compartida con el sorani en el tokenizador del modelo base; aunque el ajuste busca reducir la interferencia, el riesgo de mezcla dialectal no puede descartarse sin evaluacion externa.
-- Solo cubre badini e ingles. No hay soporte confirmado para otras variedades del kurdo, como kurmanji en alfabeto latino o sorani, ni para otros idiomas del modelo base tras el ajuste.
-- El contexto de 512 tokens obliga a segmentar documentos largos, lo que puede romper la coherencia entre fragmentos.
-- Riesgo de alucinacion y de traducciones plausibles pero incorrectas, especialmente con nombres propios, cifras, fechas y terminologia especializada.
-- El tokenizador es el original del modelo base, no adaptado al badini, lo que puede producir segmentaciones suboptimas y un manejo deficiente de morfologia aglutinante.
-- Es un modelo exclusivamente de texto: no procesa audio, imagen ni voz.
-- En cualquier flujo de produccion se recomienda revision humana o post-edicion, dado que no existen metricas publicadas de calidad.
+- La evaluacion del 100 % de precision procede del propio autor y no especifica conjunto de prueba ni metrica; no debe tomarse como evidencia de calidad en produccion.
+- El modelo solo cubre badini e ingles; no traduce a kurmanji estandar ni a sorani en otras variantes fuera del codigo `ckb_Arab`.
+- No se documenta el corpus de entrenamiento, lo que impide evaluar sesgos o cobertura de dominios (legal, medico, tecnico).
+- Riesgo de alucinacion y de traducciones gramaticalmente plausibles pero semanticamente incorrectas en frases largas o ambiguas.
+- La longitud de contexto efectiva no esta declarada; NLLB-200 esta entrenado por segmentos, por lo que textos largos deben dividirse.
+- El uso del codigo `ckb_Arab` para badini puede inducir confusion con el sorani, que tambien usa ese codigo en NLLB; el autor afirma haberlo corregido, pero no hay validacion externa.
+- Licencia MIT permite uso comercial, pero conviene revisar la licencia del modelo base NLLB-200 (CC-BY-NC-4.0) para determinar si las obligaciones de no uso comercial se heredan en la practica; el autor no aborda esta cuestion.
+- No hay garantias de mantenimiento ni soporte; el repositorio tiene una unica actualizacion registrada y muy pocos likes.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/arkanit/badini-nllb-translator
 - Modelo base: https://huggingface.co/facebook/nllb-200-distilled-600M
-- Articulo de NLLB-200: https://arxiv.org/abs/2207.04672
-- Repositorio de referencia de NLLB en fairseq: https://github.com/facebookresearch/fairseq/tree/nllb
-- Libreria PEFT: https://github.com/huggingface/peft
-- Documentacion del pipeline de traduccion de transformers: https://huggingface.co/docs/transformers/tasks/translation
-- Sitio web del autor: https://tavbit.com
-- Contacto del autor: iarkanit@gmail.com
-
-Nota sobre la busqueda web: los resultados obtenidos corresponden a paginas de ayuda de Google Translate en polaco y a articulos sobre traductores Bluetooth, sin relacion con este modelo. No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) asociados a arkanit/badini-nllb-translator.
+- Web del autor: https://tavbit.com
+- Instagram del autor: https://instagram.com/arkan_it
+- Correo de contacto: iarkanit@gmail.com

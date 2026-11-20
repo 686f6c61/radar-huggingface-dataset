@@ -17,8 +17,6 @@
     "qlora",
     "sft",
     "moe",
-    "base_model:lenikonate/qwen36-35b-a3b-2108-test3",
-    "base_model:adapter:lenikonate/qwen36-35b-a3b-2108-test3",
     "region:us"
   ],
   "likes": 0,

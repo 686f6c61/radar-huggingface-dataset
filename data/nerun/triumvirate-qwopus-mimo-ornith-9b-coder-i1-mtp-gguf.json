@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 8866,
+  "downloads_30d": 8914,
   "trending_score": 0,
   "parameters": 456010480,
   "parameters_human": "456.0M",
@@ -45,8 +45,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "nerun/Triumvirate-Qwopus-MiMo-Ornith-9B-Coder-i1-MTP-GGUF",
+  "renamed_at": "2026-11-20T09:34:05.240Z",
   "benchmarks": [],
   "sources": []
 }

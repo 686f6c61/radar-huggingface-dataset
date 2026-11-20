@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "The11One/microduck-standup",
+  "slug": "the11one-microduck-standup",
+  "author": "The11One",
+  "url": "https://huggingface.co/The11One/microduck-standup",
+  "created_at": "2026-11-20T06:03:10.000Z",
+  "updated_at": "2026-11-20T06:08:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 793800,
+  "storage_human": "793800 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

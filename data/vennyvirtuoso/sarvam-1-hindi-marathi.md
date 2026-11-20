@@ -1,99 +1,102 @@
 # vennyvirtuoso/sarvam-1-hindi-marathi
 
 ## Resumen
+Sarvam-1 Hindi → Marathi es un ajuste fino completo (full fine-tuning) del modelo causal `sarvamai/sarvam-1`, desarrollado por el usuario `vennyvirtuoso` sobre la base de Sarvam AI. Con 2.525.087.744 parametros (2,52B), el checkpoint esta especializado en traduccion automatica de hindi (`hin_Deva`) a marathi (`mar_Deva`), dos idiomas del subcontinente indio con escasa representacion en los modelos genericos. El modelo resuelve el problema de la traduccion de calidad entre pares linguisticos indicos, un caso donde los modelos multilingues grandes suelen perder fidelidad gramatical por falta de datos paralelos especificos.
 
-Sarvam-1 Hindi-Marathi es un ajuste fino completo (*full fine-tuning*) del modelo causal `sarvamai/sarvam-1`, un transformer decoder-only de 2.525 millones de parametros (2,52B) desarrollado originalmente por Sarvam AI para el ecosistema de lenguas indicas. Este checkpoint, publicado por el usuario `vennyvirtuoso`, especializa el modelo base en traduccion automatica unidireccional de hindi a marathi, ambos en escritura devanagari, mediante el entrenamiento de la totalidad de sus parametros sobre un corpus paralelo filtrado semanticamente.
+La relevancia actual del modelo reside en su relacion calidad/coste: al ser un transformer causal de 2,52B parametros, requiere aproximadamente 5,5 GB de VRAM en BF16/FP16, lo que lo hace desplegable en GPUs de consumo (RTX 3060/4060, T4, A10) y en CPU. El autor reporta un throughput de 22,6 frases por segundo, entre 2 y 3 veces superior al de modelos de 7B o mas, lo que lo posiciona para APIs de traduccion en tiempo real y procesamiento por lotes de documentos.
 
-El modelo resuelve un problema concreto: la traduccion de calidad entre dos lenguas indicas estrechamente relacionadas pero con diferencias morfosintacticas y lexicas relevantes, un par para el que los modelos multilingues genericos suelen rendir por debajo de lo deseable. El ajuste se realizo sobre 2.095.356 pares de frases paralelas limpias, filtradas con alineamiento semantico LaBSE (S >= 0,75), durante 3 epocas completas (196.440 pasos, batch efectivo de 32, aproximadamente 6,28 millones de muestras vistas).
-
-Su relevancia radica en que demuestra que un modelo base de 2,52B puede alcanzar metricas competitivas en un par linguistico de bajos recursos mediante ajuste completo y un corpus bien curado, con licencia Apache 2.0 y pesos en formato safetensors, lo que facilita su despliegue en infraestructura moderada. La perdida de validacion convergio de 28,04 a 1,4935.
+El entrenamiento se realizo sobre 2.095.356 pares paralelos deduplicados y filtrados semanticamente (Samanantar, BPCC, ILCI), con 3 epocas completas (~6,28M de muestras vistas) y una perdida de validacion que descendio de 28,04 a 1,4935. La licencia Apache 2.0 permite uso comercial sin restricciones adicionales, lo que facilita su integracion en productos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only causal (familia Llama) |
+| Arquitectura | Transformer causal (causal-LM), basado en `sarvamai/sarvam-1` |
 | Parametros totales | 2.525.087.744 (2,52B) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible en la informacion proporcionada; al ser safetensors en bfloat16 es compatible con cuantizacion estandar (GGUF, AWQ, GPTQ) mediante herramientas externas |
-| Idiomas soportados | hindi (hi) y marathi (mr), ambos en devanagari |
+| Tipos de cuantizacion | no disponible (el autor menciona BF16/FP16 para inferencia) |
+| Idiomas soportados | hindi (hi), marathi (mr) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (repo de 5,1 GB) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
+El modelo parte de `sarvamai/sarvam-1`, un transformer causal de 2,52B parametros orientado a generacion de texto en lenguas indicas. El ajuste realizado es un full fine-tuning: se actualizaron el 100% de los parametros, a diferencia de enfoques basados en LoRA o adaptadores. Segun el autor, esto permite una alineacion profunda con los rasgos gramaticales del marathi, como los sufijos de caso (*vibhakti*), las posposiciones y la concordancia de genero, numero y persona.
 
-El modelo hereda la arquitectura del `sarvamai/sarvam-1`, un causal language model de 2,52B parametros etiquetado como `llama` en Hugging Face, es decir, un transformer decoder-only con atencion causal estandar. El checkpoint publicado aplica un ajuste fino del 100% de los parametros (no LoRA ni adaptadores), lo que implica que los 2.525 millones de pesos fueron actualizados durante el entrenamiento.
-
-El entrenamiento se realizo durante 3 epocas completas con un batch efectivo de 32, alcanzando 196.440 pasos y aproximadamente 6,28 millones de muestras procesadas. El corpus consistio en 2.095.356 pares de frases paralelas hindi-marathi, filtradas mediante alineamiento semantico con LaBSE exigiendo una similitud S >= 0,75, lo que reduce el ruido de traduccion y pares desalineados. La perdida de validacion descendio de 28,04 a 1,4935, indicando convergencia. No se menciona en la informacion disponible el uso de RLHF, DPO ni tecnicas de alineacion posteriores al entrenamiento supervisado, ni innovaciones como decodificacion especulativa o atencion lineal.
+El corpus de entrenamiento consta de 2.095.356 pares paralelos hindi-marathi procedentes de Samanantar, BPCC e ILCI, deduplicados y filtrados mediante una puntuacion semantica LaBSE ≥ 0,75, con verificacion de ausencia de fuga del conjunto de test. Se completaron 3 epocas (~6,28M de muestras vistas). La perdida de validacion descendio de forma monotona desde 28,04 hasta 1,4935, lo que el autor presenta como evidencia de convergencia estable y ausencia de bucles de repeticion. La inferencia emplea la plantilla de chat del tokenizador de Sarvam (`<|user|>`, `<|assistant|>`) y generacion autorregresiva con cache KV. No se detalla en la informacion disponible si hubo fases de RLHF o DPO.
 
 ## Capacidades
-
-- Traduccion automatica unidireccional de hindi a marathi en escritura devanagari.
-- Generacion de texto causal, ya que el modelo base es un causal LM y el pipeline declarado es `text-generation`.
-- Conversacion multi-turno mediante plantilla de chat (`apply_chat_template`), tal como muestra el ejemplo de uso del autor.
-- Instrucciones en formato prompt de traduccion ("Translate the following text from Hindi to Marathi: ...").
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: limitadas a hindi y marathi segun los metadatos de idioma.
-- Capacidades especiales (vision, audio, thinking mode): no disponibles.
+- Traduccion automatica directa de hindi a marathi, con soporte de dominios como turismo, salud, clima, educacion, tecnologia, administracion y derecho.
+- Generacion de texto causal en formato conversacional mediante la plantilla de chat del tokenizador Sarvam.
+- Traduccion de prosa formal y periodistica, con resultados medidos en IN22-Gen.
+- Traduccion de dialogo coloquial, con resultados medidos en IN22-Conv.
+- Generacion autorregresiva con cache KV, optimizada para throughput alto (22,6 frases/s segun el autor).
+- Soporte de inferencia en BF16/FP16 en GPU y en CPU.
+- No se documenta soporte de tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito (thinking mode) en la informacion disponible.
+- Capacidades multilingues limitadas a los dos idiomas declarados (hi, mr).
 
 ## Casos de uso
-
-- Traduccion de documentacion administrativa y gubernamental entre hindi y marathi: el modelo puede procesar parrafos completos en devanagari y generar la version marathi, adecuado para organismos que operan en varios estados indios.
-- Localizacion de contenido editorial y periodistico: traduccion de articulos y notas de prensa del hindi al marathi manteniendo registro formal, apoyandose en el ajuste sobre corpus paralelo filtrado.
-- Subtitulado y doblaje: traduccion de guiones y dialogos para produccion audiovisual destinada a audiencias marathi, con la advertencia de que la evaluacion en IN22-Conv (SacreBLEU 16,91) sugiere mayor dificultad en registro conversacional.
-- Atencion al cliente regional: generacion de respuestas y traduccion de mensajes en un chatbot de soporte que atienda a usuarios marathi a partir de material fuente en hindi, usando la plantilla de chat del modelo.
-- Traduccion de material educativo y cientifico divulgativo: conversion de apuntes, guias y contenido de cursos del hindi al marathi para plataformas de e-learning en India.
-- Preprocesamiento en pipelines de NLP: uso del modelo como componente de traduccion dentro de cadenas mas amplias (analisis, resumen, extraccion de informacion) que requieran normalizar contenido hindi a marathi.
-- Investigacion en traduccion automatica de bajos recursos: punto de partida reproducible (licencia Apache 2.0) para experimentos de ajuste completo en pares indicos.
+- Traduccion en tiempo real para APIs y chats: el throughput reportado de 22,6 frases/s y su baja huella de VRAM (~5,5 GB) permiten servir traduccion hindi-marathi en una API con latencia baja, adecuada para mensajeria o atencion al cliente bilingue.
+- Traduccion por lotes de documentacion administrativa: los 249 pares de dominio administrativo del test interno (19,93 BLEU) y los 243 de ambito legal (18,00 BLEU) indican utilidad para digitalizar expedientes y comunicados oficiales entre ambos idiomas.
+- Localizacion de contenido educativo: con 301 pares de dominio educativo y 26,65 BLEU en el test interno, el modelo puede traducir materiales didacticos y cursos entre hindi y marathi para plataformas de e-learning.
+- Traduccion de contenido turistico: el dominio turismo obtiene el mejor resultado del desglose interno (37,02 BLEU, 51,92 chrF++), por lo que es adecuado para webs de viajes, guias y material promocional.
+- Traduccion de articulos periodisticos: los resultados en IN22-Gen (18,93 BLEU, 0,7096 COMET-DA) respaldan su uso en redacciones que publiquen la misma noticia en hindi y marathi.
+- Traduccion de conversaciones y subtitulos: IN22-Conv alcanza 16,91 BLEU y 0,7731 COMET-DA, el mejor COMET del conjunto de benchmarks, lo que lo hace apto para dialogo coloquial y subtitulado.
+- Despliegue en hardware modesto: al caber en GPUs de consumo como RTX 3060/4060 y en CPU, sirve para prototipos, entornos de desarrollo y organizaciones sin infraestructura de GPU de datacenter.
 
 ## Benchmarks y rendimiento
 
-Evaluado sobre 8.539 pares de frases de test en 4 benchmarks estandar, segun los datos del autor:
+Evaluacion sobre 9.550 pares de frases en 5 conjuntos de test, segun el autor:
 
 | Benchmark | Muestras | SacreBLEU (flores200) | SacreBLEU (intl) | chrF++ | WMT22-COMET-DA |
-|---|---|---|---|---|---|
-| Held-Out Test | 5.000 | 21,72 | 13,24 | 39,12 | 0,7715 |
+|---|---:|---:|---:|---:|---:|
+| In-House Testset (oct 2026) | 1.011 | 22,83 | 14,43 | 42,79 | 0,7384 |
+| Held-Out Test (corpus split) | 5.000 | 21,72 | 13,24 | 39,12 | 0,7715 |
 | FLORES-200 devtest | 1.012 | 20,76 | 10,35 | 39,99 | 0,7201 |
 | IN22-Gen | 1.024 | 18,93 | 10,02 | 38,53 | 0,7096 |
 | IN22-Conv | 1.503 | 16,91 | 11,32 | 37,21 | 0,7731 |
 
-No se han publicado en la informacion disponible resultados comparativos frente a otros modelos en estos mismos benchmarks.
+Desglose por dominio del test interno (1.011 pares):
+
+| Dominio | Pares | SacreBLEU | chrF++ |
+|---|---:|---:|---:|
+| Turismo | 59 | 37,02 | 51,92 |
+| Salud | 43 | 28,21 | 46,42 |
+| Clima | 40 | 26,70 | 45,52 |
+| Educacion | 301 | 26,65 | 46,89 |
+| Tecnologia | 36 | 22,07 | 41,53 |
+| Administracion | 249 | 19,93 | 39,92 |
+| Derecho | 243 | 18,00 | 39,39 |
+
+No se han publicado comparaciones con modelos de referencia en la informacion disponible.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia en bfloat16: aproximadamente 5-6 GB solo para pesos, mas overhead de activaciones y cache KV; en la practica se recomienda un minimo de 8-10 GB para secuencias cortas y mas para contextos largos.
-- En cuantizacion de 8 bits: alrededor de 2,5-3 GB de pesos; en 4 bits: aproximadamente 1,3-1,6 GB, aunque estas cifras son estimaciones a partir del numero de parametros, no datos publicados por el autor.
-- GPU recomendadas: A100, H100 o L40S para throughput alto; RTX 4090, RTX 3090 o A10G para servicio de baja latencia.
-- Cabe en GPU de consumo: si, en tarjetas con 8 GB o mas en bfloat16 (RTX 3070/4060 Ti y superiores), y en 4-6 GB con cuantizacion.
-- Opciones de despliegue: `transformers` con `device_map="auto"` (metodo documentado por el autor), vLLM, TGI, llama.cpp u Ollama previa conversion a GGUF.
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
+- VRAM estimada: aproximadamente 5,5 GB en BF16/FP16, segun el autor; en cuantizaciones de 8 bits o 4 bits no se proporcionan cifras.
+- GPUs recomendadas por el autor: RTX 3060, RTX 4060, T4 y A10 como minimo; cualquier GPU con al menos 6 GB de VRAM deberia poder cargar los pesos en BF16/FP16.
+- Cabe en GPU de consumo: si, en RTX 3060/4060 y superiores con 6 GB o mas de VRAM.
+- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (etiqueta `text-generation-inference` en el repo) y endpoints compatibles; no se documentan recetas para vLLM, llama.cpp u Ollama.
+- Rendimiento: 22,6 frases/s reportadas por el autor; no se especifica la GPU utilizada para esa medicion ni la latencia por peticion.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sarvam-1-hindi-marathi (este) | 2,52B | no disponible | Traduccion hi->mr ajustada | Apache 2.0 | Hugging Face, 11 descargas |
-| sarvamai/sarvam-1 (base) | 2,52B | no disponible | LLM causal multilingue indico | no disponible en la informacion | Hugging Face |
-| Modelos NMT dedicados tipo IndicTrans2 | no disponible en la informacion | no aplica | Traduccion indico-indico | no disponible en la informacion | no disponible |
+| sarvam-1-hindi-marathi (este) | 2,52B | no disponible | Traduccion hi→mr full fine-tune | Apache 2.0 | Hugging Face |
+| sarvamai/sarvam-1 (base) | 2,52B | no disponible | LLM causal indico generalista | no disponible en la informacion | Hugging Face |
+| Modelos de traduccion indicos de 7B o mas | ≥7B | no disponible | Traduccion multilingue generica | variable | no disponible |
 
-La comparacion cuantitativa con alternativas no puede establecerse porque la informacion proporcionada no incluye resultados de otros modelos sobre los mismos benchmarks. El modelo base `sarvamai/sarvam-1` es la referencia directa, y este checkpoint anade especializacion en el par hindi-marathi a costa de un posible estrechamiento de sus capacidades generales.
+No se dispone de datos de rendimiento de los modelos alternativos en la informacion proporcionada, por lo que no es posible una comparacion cuantitativa de BLEU o COMET.
 
 ## Limitaciones y advertencias
-
-- Direccionalidad: el ajuste esta disenado para hindi a marathi; no se documenta rendimiento en sentido inverso (marathi a hindi).
-- Ambito linguistico restringido: los metadatos declaran solo `hi` y `mr`; el uso con otras lenguas no esta validado y probablemente degrade.
-- Riesgo de alucinacion y omision: como todo modelo generativo, puede producir traducciones fluidas pero infieles, especialmente en frases largas o con terminologia especializada; la evaluacion en IN22-Conv (SacreBLEU 16,91) sugiere menor calidad en registro conversacional.
-- Sesgos: no se documenta analisis de sesgos en la informacion disponible; el corpus paralelo filtrado por LaBSE puede heredar sesgos de las fuentes originales.
-- Contexto: la longitud maxima de contexto no esta especificada, lo que impide garantizar el comportamiento en documentos extensos.
-- Caveat de procedencia: el autor del checkpoint es un usuario individual (`vennyvirtuoso`) y el ejemplo de codigo de la model card referencia un identificador distinto (`Solosix/sarvam-1-hindi-marathi`), lo que conviene verificar antes de usarlo en produccion.
-- Licencia Apache 2.0: permite uso comercial, pero no se detallan las condiciones de la licencia del modelo base original ni posibles restricciones heredadas.
-- Madurez: 11 descargas y 0 likes indican adopcion practicamente nula; no hay evidencia de validacion independiente.
+- El modelo esta especializado exclusivamente en hindi → marathi; no se documenta calidad en la direccion inversa ni en otros pares de idiomas.
+- Los benchmarks son autoinformados por el autor y no se han verificado de forma independiente; los resultados de BLEU en SacreBLEU (intl) son notablemente inferiores a los de flores200, lo que sugiere sensibilidad al tokenizador de evaluacion.
+- El rendimiento cae en dominios especializados: derecho (18,00 BLEU) y administracion (19,93 BLEU) estan por debajo de turismo (37,02 BLEU), por lo que la traduccion juridica o administrativa requiere revision humana.
+- Riesgo de alucinacion y de errores de concordancia en textos muy alejados del corpus de entrenamiento; el autor afirma ausencia de bucles de repeticion, pero no se aportan pruebas independientes.
+- No se documenta la longitud de contexto soportada, lo que impide garantizar la traduccion de documentos largos sin truncamiento.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base `sarvamai/sarvam-1` debe verificarse por separado para confirmar que sus terminos son compatibles.
+- El autor es un particular (`vennyvirtuoso`), no el desarrollador original Sarvam AI; no hay garantias de mantenimiento ni soporte.
 
 ## Enlaces
-
 - Modelo en Hugging Face: https://huggingface.co/vennyvirtuoso/sarvam-1-hindi-marathi
 - Modelo base: https://huggingface.co/sarvamai/sarvam-1
-- Identificador alternativo citado en la model card: https://huggingface.co/Solosix/sarvam-1-hindi-marathi
-- Paper, blog o repositorio adicionales: no disponibles en la informacion proporcionada.
+- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

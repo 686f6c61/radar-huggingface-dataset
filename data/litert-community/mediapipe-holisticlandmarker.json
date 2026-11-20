@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/MediaPipe-HolisticLandmarker",
   "created_at": "2026-11-18T23:06:58.000Z",
-  "updated_at": "2026-11-18T23:30:37.000Z",
+  "updated_at": "2026-11-19T20:33:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "keypoint-detection",

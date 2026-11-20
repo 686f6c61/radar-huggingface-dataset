@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Qwen3.5-9B-GGUF",
   "created_at": "2026-11-14T11:55:50.000Z",
-  "updated_at": "2026-11-17T08:42:38.000Z",
+  "updated_at": "2026-11-19T08:13:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,7 +30,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 235,
+  "downloads_30d": 243,
   "trending_score": 0,
   "parameters": 9197093888,
   "parameters_human": "9.20B",

@@ -5,7 +5,7 @@
   "author": "randomllama",
   "url": "https://huggingface.co/randomllama/DeepSeek-V4.1-Flash-1017-TensorFold-2x-DGX-Spark",
   "created_at": "2026-11-18T04:58:03.000Z",
-  "updated_at": "2026-11-18T05:08:30.000Z",
+  "updated_at": "2026-11-20T05:46:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,

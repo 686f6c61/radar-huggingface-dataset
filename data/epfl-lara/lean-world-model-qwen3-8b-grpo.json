@@ -56,31 +56,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "EPFL",
-      "url": "https://www.epfl.ch/",
-      "snippet": "2 days ago · Basée à Lausanne, L’EPFL est une université dont les trois missions sont l’éducation, la recherche et l’innovation."
-    },
-    {
-      "title": "EPFL",
-      "url": "https://www.epfl.ch/en/",
-      "snippet": "2 days ago · Based in Lausanne (Switzerland), EPFL is a university whose three missions are education, research and innovation."
-    },
-    {
-      "title": "École polytechnique fédérale de Lausanne — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/%C3%89cole_polytechnique_f%C3%A9d%C3%A9rale_de_Lausanne",
-      "snippet": "L'EPFL est membre du réseau Top Industrial Managers for Europe (TIME) créé en 1989 et qui regroupe une cinquantaine …"
-    },
-    {
-      "title": "École Polytechnique Fédérale de Lausanne - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/%C3%89cole_Polytechnique_F%C3%A9d%C3%A9rale_de_Lausanne",
-      "snippet": "EPFL has an urban campus that extends alongside Lake Geneva, and includes the EPFL Innovation Park as well as university …"
-    },
-    {
-      "title": "Accueil - L'Association nationale des EPFL",
-      "url": "https://asso-epfl.fr/",
-      "snippet": "L’ Association nationale des Etablissements Publics Fonciers Locaux est le porte-parole des EPFL. Elle les accompagne dans leur …"
-    }
-  ]
+  "sources": []
 }

@@ -49,16 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Kimi K3.1 Pro Tech Blog: Advancing Open Intelligence",
-      "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
-      "snippet": "Introducing Kimi K3.1 Pro, our most capable 3T-class open-weight model with 1M-token context and major advances in coding, 3D modeling, and financial research."
-    },
-    {
-      "title": "Kimi K3.1 Pro: Specs, Price, Open Weights, and Benchmarks",
-      "url": "https://www.yottalabs.ai/post/kimi-k3-1-pro-specs-price-open-weights-benchmarks",
-      "snippet": "Moonshot released Kimi K3.1 Pro on October 23 at $2 per million input tokens and $10 per million output, a third less than Kimi K3, and published the open weights on November 4 under the Kimi K3.1 Pro License. Specs, pricing, the model card, Moonshot's benchmark claims, and what it means for the hardware."
-    }
-  ]
+  "sources": []
 }

@@ -5,7 +5,7 @@
   "author": "sandpies",
   "url": "https://huggingface.co/sandpies/ComfyUI-SandTie-PromptRig",
   "created_at": "2026-11-14T14:59:05.000Z",
-  "updated_at": "2026-11-18T16:01:33.000Z",
+  "updated_at": "2026-11-19T20:00:07.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,7 +24,7 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 3,
+  "likes": 4,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

@@ -2,54 +2,54 @@
 
 ## Resumen
 
-Kandinsky 6.0 Pro (destilado) es un modelo de difusión para generación de vídeo y audio sincronizado, desarrollado por KandinskyLab. Forma parte de la familia Kandinsky 6.0 Video, compuesta por la variante Lite (3B parámetros) y la variante Pro (29B parámetros). El modelo produce clips de 5 segundos a 24 fotogramas por segundo (121 fotogramas) con audio sincronizado a 44 kHz, incluyendo lip-sync, y admite dos modos de operación: texto-a-audio-vídeo (T2AV) e imagen-a-audio-vídeo (TI2AV).
+Kandinsky 6.0 Pro es un modelo de difusion para generacion conjunta de video y audio sincronizado, desarrollado por KandinskyLab. Forma parte de la familia Kandinsky 6.0 Video, que incluye una variante Lite (3B parametros) y esta variante Pro (29B parametros). El modelo genera clips de 5 segundos a 24 fps con audio sincronizado a 44 kHz, incluyendo lip-sync, en modos texto-a-video-audio (T2AV) e imagen-a-video-audio (TI2AV). Un modelo de superresolucion complementario eleva la salida hasta Full-HD (1920x1080).
 
-Este repositorio concreto contiene el checkpoint Pro destilado, que muestrea en 10 pasos con el planificador PiFlow y un `guidance_scale` de 1.0. Emplea un codificador de texto Qwen2.5-VL y un VAE latente (K-VAE) como base del espacio latente. Un modelo de superresolución auxiliar, distribuido como pipeline independiente, eleva la resolución hasta Full-HD (1920×1080) mediante difusión por teselas en el espacio latente del K-VAE.
+Este repositorio contiene el checkpoint Pro destilado, optimizado para muestrear en 10 pasos con el planificador PiFlow y guidance_scale 1.0, frente a los 50 pasos y guidance 5.0 de los checkpoints no destilados. El checkpoint tiene 30.139.423.760 parametros (segun los pesos safetensors publicados) y esta disponible en formato diffusers y safetensors, con licencia MIT.
 
-Su relevancia radica en que combina generación de vídeo y audio sincronizado en un único modelo abierto con licencia MIT, un campo en el que la mayoría de alternativas de calidad comparable son propietarias. El recuento de parámetros real de los safetensors del repositorio es de 30.139.423.760 (unos 30,1 mil millones), cantidad que incluye el modelo principal junto con sus componentes auxiliares; la model card atribuye 29B únicamente al modelo Pro.
+Es relevante ahora porque unifica generacion de video y audio en un unico pipeline de difusion, con soporte nativo en diffusers, vLLM-Omni, SGLang, FastVideo y ComfyUI, lo que facilita su despliegue en distintos stacks de inferencia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Modelo de difusión (flow matching) con planificador PiFlow, VAE latente (K-VAE) y codificador de texto Qwen2.5-VL |
-| Parametros totales | 30.139.423.760 (~30,1 mil millones) segun safetensors del repositorio; la model card atribuye 29B al modelo Pro |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible (modelo de difusión; genera clips de 121 fotogramas, 5 s a 24 fps) |
-| Tipos de cuantizacion | No disponible oficialmente; los pesos se distribuyen en bfloat16 |
-| Idiomas soportados | No disponible (las indicaciones de texto se procesan mediante el codificador Qwen2.5-VL; los ejemplos de la model card estan en ingles) |
+| Arquitectura | Modelo de difusion (familia Kandinsky 6.0 Video); pipeline diffusers `Kandinsky6TI2VAPipeline` |
+| Parametros totales | 30.139.423.760 (segun safetensors) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible (no aplica a difusion; ventana temporal de 5 s por clip, 121 frames a 24 fps) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | safetensors (libreria diffusers) |
+| Formato de pesos | safetensors (formato diffusers) |
 
 ## Arquitectura y entrenamiento
 
-Se trata de un modelo de difusión basado en flow matching, con un planificador PiFlow que permite el muestreo en pocos pasos (10 en este checkpoint destilado, con `guidance_scale` de 1.0). La generacion se realiza en un espacio latente definido por un VAE propio (K-VAE), sobre el que tambien opera el modelo de superresolucion mediante difusion por teselas y fusion con ventanas de Hann. La condicion de texto se codifica con Qwen2.5-VL, que ademas puede reescribir indicaciones breves en descripciones detalladas mediante la opcion `expand_prompts` (sin pesos adicionales, solo latencia extra).
+Se trata de un modelo de difusion de la familia Kandinsky 6.0 Video, orientado a generacion sincronizada de video y audio. El pipeline `Kandinsky6TI2VAPipeline` integra el codificador de texto Qwen2.5-VL (usado tambien para la expansion opcional de prompts) y produce frames de video junto con audio a 44 kHz. La variante destilada de este repositorio emplea el planificador PiFlow con 10 pasos de muestreo y guidance 1.0.
 
-El modelo genera en un unico proceso el video y la pista de audio sincronizada a 44 kHz, incluido el lip-sync, en los modos T2AV y TI2AV (en este ultimo, una imagen de referencia condiciona el primer fotograma y el pipeline la redimensiona y la recorta de forma centrada). La model card indica que el checkpoint esta destilado para reducir el numero de pasos de inferencia, pero no detalla el numero de tokens de entrenamiento, la composicion del dataset ni el uso de tecnicas como RLHF o DPO, por lo que esos datos figuran como no disponibles.
+El modelo admite dos modos: texto-a-video-audio (T2AV) e imagen-a-video-audio (TI2AV), donde una imagen de referencia condiciona el primer frame y el pipeline la redimensiona y recorta al centro segun las dimensiones solicitadas. El modo de superresolucion es un pipeline separado (`Kandinsky6SRPipeline`) que escala x2, x2.25 o x4 mediante difusion por tiles en el espacio latente K-VAE, con mezcla de tiles solapados mediante ventanas de Hann.
+
+Los detalles sobre volumen de datos de entrenamiento, composicion del dataset y uso de RLHF/DPO no se especifican en la informacion disponible.
 
 ## Capacidades
 
-- Generacion de video de 5 segundos a 24 fps (121 fotogramas) con audio sincronizado a 44 kHz.
-- Texto-a-audio-video (T2AV): genera video y audio a partir de una descripcion textual.
-- Imagen-a-audio-video (TI2AV): anima una imagen de referencia condicionando el primer fotograma.
-- Sincronizacion labial (lip-sync) entre el audio generado y los rostros del video.
-- Generacion de audio integrada (efectos de sonido, ambiente, musica) descrita en el propio prompt.
-- Superresolucion opcional hasta Full-HD (1920x1080) con factores de x2, x2.25 o x4 mediante `Kandinsky6SRPipeline`.
-- Expansion automatica de prompts: el codificador Qwen2.5-VL puede reescribir una indicacion corta en una descripcion detallada.
-- Modo solo video: `sample_audio=False` desactiva la generacion de audio.
-- Integracion con tooling: diffusers, ComfyUI (nodo en el registro), vLLM-Omni y demo en Hugging Face Spaces (SGLang y FastVideo aparecen en la model card pero comentados, es decir, no activos).
-- No se documentan capacidades de tool calling, function calling ni razonamiento multi-paso; no es un modelo de lenguaje conversacional.
+- Generacion de video de 5 segundos con audio sincronizado a 44 kHz, incluyendo lip-sync.
+- Modo texto-a-video-audio (T2AV) e imagen-a-video-audio (TI2AV) con imagen de referencia como primer frame.
+- Generacion solo de video mediante `sample_audio=False`.
+- Expansion automatica de prompts con `expand_prompts=True`, reescribiendo prompts breves en descripciones detalladas mediante Qwen2.5-VL (anade latencia, sin pesos adicionales).
+- Superresolucion de video mediante pipeline separado `Kandinsky6SRPipeline` (x2, x2.25, x4) hasta Full-HD.
+- Control de resolucion de salida (por ejemplo 480x864 en los ejemplos) y numero de frames (121 frames a 24 fps).
+- Soporte de inferencia en diffusers, vLLM-Omni, SGLang, FastVideo y ComfyUI.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
+- Tool calling, agentes y razonamiento multi-paso: no aplicable (modelo generativo de difusion, no LLM).
 
 ## Casos de uso
 
-- Previsualizacion de storyboards audiovisuales: a partir de una descripcion textual, el modelo genera un clip de 5 s con audio para validar planos, ritmo e iluminacion antes de produccion.
-- Prototipado de videoclips musicales: la generacion de audio a 44 kHz sincronizado con el video permite producir bocetos de escenas musicales sin recurrir a herramientas externas de sonido.
-- Animacion de fotografias o ilustraciones: mediante el modo TI2AV, se puede animar una imagen fija (retratos, arte conceptual) anadiendo movimiento y sonido condicionados por el prompt.
-- Marketing y redes sociales: generacion rapida de clips cortos de 5 s aptos para formatos verticales u horizontales, con la opcion de superresolucion a Full-HD para publicacion final.
-- Doblaje y contenido con lip-sync: escenas con personajes hablando pueden beneficiarse de la sincronizacion labial integrada, util en demos y contenidos promocionales.
-- Generacion de efectos de sonido y ambiente: el prompt de audio permite describir efectos concretos (lluvia, truenos, pisadas), reutilizables en postproduccion.
-- Automatizacion de variantes creativas: por su licencia MIT y su integracion en diffusers y ComfyUI, es adecuado para integrarse en pipelines que generen multiples propuestas a partir de un mismo prompt.
-- Investigacion en generacion multimodal: al ser abierto, sirve para estudiar la sincronizacion audio-video, la destilacion de modelos de difusion y la decodificacion en pocos pasos con PiFlow.
+- Generacion de clips promocionales con audio: el modelo produce video y audio sincronizados en una sola pasada, adecuado para piezas de 5 segundos con locucion o efectos sonoros generados a partir del prompt.
+- Prototipado rapido de storyboards audiovisuales: con el checkpoint destilado a 10 pasos, se pueden iterar variantes de una escena en menos tiempo que con los checkpoints de 50 pasos.
+- Animacion de imagenes existentes: el modo TI2AV toma una imagen de referencia como primer frame y genera la continuacion animada con audio, util para dar movimiento a ilustraciones o fotos de producto.
+- Doblaje y lip-sync: la generacion de audio sincronizado con el video permite crear escenas con movimiento de labios coherente a partir de descripciones textuales.
+- Postproduccion y reescalado: el pipeline `Kandinsky6SRPipeline` permite subir la resolucion de clips generados a Full-HD con escalados x2, x2.25 o x4, integrándose en flujos de postproduccion.
+- Creacion de efectos de sonido y ambientes: la generacion de audio a 44 kHz permite producir ambientes (lluvia, truenos, multitudes) sincronizados con eventos visuales descritos en el prompt.
+- Integracion en herramientas creativas: el soporte en ComfyUI, FastVideo, SGLang y vLLM-Omni facilita incorporar el modelo en nodos o pipelines existentes de generacion audiovisual.
 
 ## Benchmarks y rendimiento
 
@@ -57,45 +57,40 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos en bfloat16 ocupan aproximadamente 60,3 GB (30,1 mil millones de parametros x 2 bytes), a lo que hay que sumar el codificador Qwen2.5-VL y el VAE, por lo que se superan holgadamente los 60-70 GB en carga completa.
-- GPU recomendadas: A100 80 GB o H100 80 GB para ejecucion sin offload. Para GPUs de menor memoria, la model card emplea `enable_model_cpu_offload()`.
-- GPU de consumo: no se documenta soporte de cuantizacion tipo GGUF, por lo que no cabe de forma nativa en GPUs de 24 GB (RTX 4090, 3090). Con offload a CPU podria ejecutarse en esas tarjetas, con una penalizacion de latencia no cuantificada.
-- El repositorio ocupa 212,4 GB, por lo que se necesita espacio de disco y ancho de banda considerables para la descarga.
-- Opciones de despliegue: diffusers (`Kandinsky6TI2VAPipeline` y `Kandinsky6SRPipeline`), ComfyUI (nodo `kandinsky6`), vLLM-Omni y Hugging Face Spaces. La model card enlaza tambien a documentacion de SGLang y FastVideo, pero esos enlaces aparecen comentados, por lo que su soporte no esta confirmado.
-- Latencia y throughput: no disponibles. La model card solo indica que la opcion `expand_prompts` anade latencia, sin cifras.
+- VRAM estimada para inferencia: no disponible de forma explicita; el ejemplo oficial usa `torch_dtype=torch.bfloat16` y `enable_model_cpu_offload()`, lo que indica que el checkpoint completo en bf16 no cabe comodamente en GPUs de consumo sin offload.
+- Parametros: 30.139.423.760; el repositorio ocupa 212,4 GB, lo que da una idea del espacio en disco necesario para pesos y assets.
+- GPU recomendadas: no disponible en la informacion proporcionada; por tamano, se requiere hardware de clase profesional con suficiente VRAM o el uso de offload a CPU.
+- Cabe en consumer GPU: no disponible; el ejemplo oficial recurre a `enable_model_cpu_offload()`, lo que sugiere que no es viable en GPUs de consumo sin descarga parcial a CPU.
+- Opciones de despliegue: diffusers (`Kandinsky6TI2VAPipeline`), vLLM-Omni, SGLang, FastVideo y ComfyUI (nodo `kandinsky6`).
+- Latencia y throughput: no disponibles; el checkpoint destilado esta disenado para 10 pasos con PiFlow y guidance 1.0, frente a 50 pasos y guidance 5.0 de los checkpoints no destilados.
 
 ## Comparativa con modelos similares
 
-Comparativa orientativa con alternativas abiertas de generacion de video de la misma categoria. Los datos de terceros no se han verificado en esta ficha y se marcan como aproximados.
-
-| Modelo | Parametros | Contexto / duracion | Audio sincronizado | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto / salida | Audio sincronizado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kandinsky 6.0 Pro (destilado) | ~30,1B (safetensors); 29B segun model card | Clips de 5 s a 24 fps (121 fotogramas) | Si, 44 kHz con lip-sync | MIT | Hugging Face, diffusers, ComfyUI, vLLM-Omni |
-| HunyuanVideo | No disponible en esta ficha | No disponible | No disponible | Licencia comunitaria de Tencent (no MIT) | Pesos abiertos |
-| Wan (series abiertas) | No disponible en esta ficha | No disponible | No disponible | No disponible | Pesos abiertos |
-| LTX-Video | No disponible en esta ficha | No disponible | No disponible | No disponible | Pesos abiertos |
-
-No se dispone de datos verificados de parametros, contexto ni rendimiento de los modelos comparados en la informacion proporcionada, por lo que la comparativa cuantitativa se marca como no disponible. El rasgo diferencial confirmado de Kandinsky 6.0 Pro es la generacion conjunta de video y audio en un solo modelo con licencia MIT.
+| Kandinsky 6.0 Pro distill (este) | 30,1B | clips de 5 s, 121 frames a 24 fps; SR hasta 1920x1080 | si, 44 kHz | MIT | Hugging Face, diffusers, vLLM-Omni, SGLang, FastVideo, ComfyUI |
+| Kandinsky 6.0 Video Lite | 3B | clips de 5 s con audio sincronizado | si, 44 kHz | no disponible en la informacion | familia Kandinsky 6.0 |
+| Alternativas de otros laboratorios (video + audio) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Riesgo de alucinacion visual: como todo modelo generativo, puede producir objetos, texturas o movimientos fisicamente incoherentes; la model card no cuantifica este riesgo.
-- Duracion fija: los clips son de 5 segundos (121 fotogramas), lo que limita escenas largas sin concatenacion externa.
-- Sesgos: no se documenta informacion sobre sesgos de genero, etnia o culturales en la model card, por lo que deben evaluarse caso por caso.
-- Idiomas: no se especifican idiomas soportados. Los ejemplos usan prompts en ingles; el comportamiento con otros idiomas no esta documentado.
-- Consumo de recursos: el repositorio ocupa 212,4 GB y los pesos en bfloat16 rondan los 60 GB, lo que dificulta su despliegue en hardware de consumo.
-- Cuantizacion: no se documentan variantes cuantizadas oficiales (GGUF, AWQ, etc.), lo que reduce las opciones de optimizacion.
-- Licencia: MIT, lo que permite uso comercial sin las restricciones habituales de licencias comunitarias; aun asi, conviene revisar las condiciones de los componentes auxiliares (codificador Qwen2.5-VL, VAE) incluidos en el pipeline.
-- Superresolucion: es un pipeline separado (`Kandinsky6SRPipeline`); no viene integrada en el pipeline principal y anade consumo de memoria y tiempo de computo.
-- Funciones opcionales: `expand_prompts` anade latencia, y `sample_audio=False` desactiva el audio; hay que configurarlas explicitamente.
-- Ajustes de inferencia: este checkpoint destilado requiere 10 pasos y `guidance_scale` 1.0; usar los ajustes de los checkpoints no destilados (50 pasos, guidance 5.0) no es valido.
+- Sesgos conocidos: no se documentan en la informacion disponible; al ser un modelo generativo entrenado con datos a gran escala, es previsible que herede sesgos de esos datos.
+- Riesgo de alucinacion: no aplica en el sentido de LLM, pero el modelo puede generar contenido visual o sonoro incoherente con el prompt, especialmente en prompts ambiguos o muy largos.
+- Duracion fija: los clips son de 5 segundos (121 frames a 24 fps); no se documenta generacion de videos mas largos.
+- Idioma: los idiomas soportados no estan disponibles; el codificador de texto es Qwen2.5-VL, pero no se especifica la cobertura linguistica del pipeline.
+- Resolucion: los ejemplos usan 480x864; la salida Full-HD requiere el pipeline de superresolucion separado.
+- Configuracion de muestreo: este checkpoint destilado exige 10 pasos y guidance 1.0; las settings de 50 pasos y guidance 5.0 de otros checkpoints no aplican.
+- Licencia MIT: permite uso comercial, pero conviene revisar las condiciones de los componentes de terceros (por ejemplo, el codificador Qwen2.5-VL) antes de produccion.
+- Hardware: el checkpoint completo en bf16 requiere offload a CPU en el ejemplo oficial, lo que implica mayor latencia y necesidad de planificar el despliegue.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/kandinskylab/Kandinsky-6.0-Pro-distill-5s-Diffusers
-- Sitio del autor: https://kandinskylab.ai/models/video/
+- Hugging Face: https://huggingface.co/kandinskylab/Kandinsky-6.0-Pro-distill-5s-Diffusers
 - Informe tecnico (arXiv): https://arxiv.org/pdf/2610.05608
+- Pagina de modelos de video de KandinskyLab: https://kandinskylab.ai/models/video/
 - Demo en Hugging Face Spaces: https://huggingface.co/spaces/kandinskylab/Kandinsky-6.0-Pro-distill-5s
-- Documentacion en diffusers: https://huggingface.co/docs/diffusers/main/en/api/pipelines/kandinsky6
-- Integracion en vLLM-Omni: https://docs.vllm.ai/projects/vllm-omni/en/latest/api/vllm_omni/diffusion/models/kandinsky6/
-- Nodo de ComfyUI: https://registry.comfy.org/nodes/kandinsky6
+- Documentacion diffusers (pipeline Kandinsky6): https://huggingface.co/docs/diffusers/main/en/api/pipelines/kandinsky6
+- vLLM-Omni (Kandinsky6): https://docs.vllm.ai/projects/vllm-omni/en/latest/api/vllm_omni/diffusion/models/kandinsky6/
+- SGLang cookbook (Kandinsky6): https://docs.sglang.io/cookbook/diffusion/Kandinsky/Kandinsky6
+- FastVideo (inferencia Kandinsky6): https://haoailab.com/FastVideo/inference/kandinsky6/
+- ComfyUI (nodo kandinsky6): https://registry.comfy.org/nodes/kandinsky6

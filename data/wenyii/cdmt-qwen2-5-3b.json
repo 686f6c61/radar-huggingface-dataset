@@ -5,8 +5,8 @@
   "author": "wenyii",
   "url": "https://huggingface.co/wenyii/cdmt-qwen2.5-3b",
   "created_at": "2026-11-19T03:35:49.000Z",
-  "updated_at": "2026-11-19T03:45:55.000Z",
-  "license": "apache-2.0",
+  "updated_at": "2026-11-19T04:28:19.000Z",
+  "license": "qwen-research",
   "license_family": "oss",
   "pipeline_tag": null,
   "library": "transformers",
@@ -21,7 +21,7 @@
     "on-policy-distillation",
     "base_model:Qwen/Qwen2.5-3B-Instruct",
     "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
-    "license:apache-2.0",
+    "license:other",
     "endpoints_compatible",
     "region:us"
   ],
@@ -38,7 +38,7 @@
     "safetensors"
   ],
   "is_conversational": false,
-  "gated": false,
+  "gated": true,
   "disabled": false,
   "removed": false,
   "removed_at": null,

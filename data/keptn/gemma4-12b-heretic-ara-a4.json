@@ -5,7 +5,7 @@
   "author": "keptn",
   "url": "https://huggingface.co/keptn/gemma4-12b-heretic-ara-a4",
   "created_at": "2026-11-15T08:29:53.000Z",
-  "updated_at": "2026-11-15T08:47:20.000Z",
+  "updated_at": "2026-11-19T13:43:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

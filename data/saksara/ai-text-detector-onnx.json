@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "saksara/ai-text-detector-onnx",
+  "slug": "saksara-ai-text-detector-onnx",
+  "author": "saksara",
+  "url": "https://huggingface.co/saksara/ai-text-detector-onnx",
+  "created_at": "2026-11-20T06:53:42.000Z",
+  "updated_at": "2026-11-20T06:57:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [
+    "id",
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "onnx",
+    "xlm-roberta",
+    "text-classification",
+    "ai-text-detection",
+    "id",
+    "en",
+    "multilingual",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 295935279,
+  "storage_human": "296 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 1075,
+  "downloads_30d": 1082,
   "trending_score": 0,
   "parameters": 2560,
   "parameters_human": "2560",
@@ -48,5 +48,11 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "如何用ping指定数据包大小？ - 知乎",
+      "url": "https://www.zhihu.com/question/623688431",
+      "snippet": "ping 是一个常用的网络诊断工具，它通过发送 ICMP（Internet Control Message Protocol）回显请求包来检测网络连接状态和性能。 …Read more"
+    }
+  ]
 }

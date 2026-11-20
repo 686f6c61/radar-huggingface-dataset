@@ -5,7 +5,7 @@
   "author": "canvit",
   "url": "https://huggingface.co/canvit/probe-ade20k-40k-dv3s-256px",
   "created_at": "2026-03-15T23:23:40.000Z",
-  "updated_at": "2026-10-29T13:52:14.000Z",
+  "updated_at": "2026-11-19T21:40:55.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-segmentation",

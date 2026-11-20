@@ -2,112 +2,94 @@
 
 ## Resumen
 
-ThinkingCap-Qwen3.8-Flash-Next es un ajuste fino (post-entrenamiento) sobre el modelo base Qwen/Qwen3.8-Flash-Next del equipo Qwen, desarrollado por BottleCap AI. Su objetivo no es mejorar la precisión bruta, sino reducir el coste de inferencia en modelos con modo de razonamiento: según la model card, recorta los tokens de pensamiento un 38,5 % de media (con un rango del 22 % al 51 % segun el benchmark) manteniendo una precisión media del 88,8 % frente al 89,8 % del modelo base. Es, por tanto, un modelo orientado a eficiencia de tokens, no a maximizar scores.
+ThinkingCap-Qwen3.8-Flash-Next es un ajuste fino (finetune) de tipo post-entrenamiento desarrollado por BottleCap AI sobre el modelo base Qwen3.8-Flash-Next del equipo Qwen (2026). El objetivo del modelo es reducir drásticamente el coste computacional asociado al razonamiento extendido (thinking tokens) sin sacrificar de forma significativa la precision. Segun la model card, ThinkingCap recorta el numero de tokens de razonamiento en un 38,5 % de media (con rangos de entre el 22 % y el 51 % segun el benchmark) manteniendo una precision media del 88,8 % frente al 89,8 % del modelo base.
 
-El modelo base es un mixture-of-experts (MoE) con entrada de imagen, publicado en 2026, y ThinkingCap hereda esa arquitectura y sus capacidades multimodales (pipeline image-text-to-text). El checkpoint contiene 179.999.981.459 parámetros totales segun los safetensors del repositorio (unos 180.000 millones), con un tamaño de repo de 360,2 GB en precisión de entrenamiento. No se especifican en la información disponible el número de parámetros activos, la longitud de contexto ni la lista de idiomas soportados.
+El modelo hereda la arquitectura del base: un transformer de mezcla de expertos (MoE) con capacidad de entrada de imagen, lo que lo situa en la categoria image-text-to-text. Cuenta con 179.999.981.459 parametros totales (segun los pesos en safetensors) y se distribuye en un repositorio de 360,2 GB. Es relevante ahora porque ataca directamente uno de los cuellos de botella economicos de los modelos con cadena de pensamiento: el coste por token generado en produccion. Al mantener casi intacta la precision y recortar tokens de razonamiento, reduce latencia y factura de inferencia en despliegues a gran escala.
 
-La relevancia práctica del modelo está en el coste por consulta: en tareas de razonamiento largo (matemáticas, código), la mayor parte del gasto de inferencia son tokens de pensamiento. Un recorte de ~40 % en esos tokens, con una pérdida de precisión de aproximadamente un punto porcentual, cambia el cálculo económico de desplegar un MoE de 180.000 millones en producción.
+La licencia es la qwen-community-license-1.0 (etiquetada como "other" en Hugging Face), lo que condiciona el uso comercial y debe revisarse antes de cualquier despliegue en producto.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-experts (MoE) con entrada de imagen, derivada de Qwen/Qwen3.8-Flash-Next; el tag `qwen4_exp` aparece en el repositorio, sin detalle tecnico adicional disponible |
-| Parametros totales | 179.999.981.459 (~180.000 millones, dato de safetensors) |
+| Arquitectura | Transformer de mezcla de expertos (MoE) con entrada de imagen (hereda la del base Qwen3.8-Flash-Next) |
+| Parametros totales | 179.999.981.459 |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el repositorio solo publica safetensors; no se documentan GGUF, AWQ ni GPTQ) |
+| Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-license-1.0 (identificador `other` en Hugging Face) |
+| Licencia | qwen-community-license-1.0 (etiqueta "other" en Hugging Face) |
 | Formato de pesos | safetensors (libreria transformers) |
-| Modalidades de entrada | texto e imagen (pipeline `image-text-to-text`) |
-| Tipo de ajuste | finetune sobre Qwen/Qwen3.8-Flash-Next (`base_model_relation: finetune`) |
-| Tamano del repositorio | 360,2 GB |
-| Descargas / likes | 0 descargas / 19 likes |
-| Fecha de publicacion | 22 de octubre de 2026 (actualizado el mismo dia) |
-| Compatibilidad de despliegue | tag `endpoints_compatible`; region `us` |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura de base es un transformer con mezcla de expertos (MoE) y codificador visual, segun la propia model card ("a mixture-of-experts model with image input"). ThinkingCap no modifica la arquitectura: es un post-entrenamiento de "shorter-thinking" que actua sobre el comportamiento de razonamiento del modelo, es decir, sobre cuantos tokens genera en su fase de pensamiento antes de emitir la respuesta final. No se detallan en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, ni si se usaron tecnicas de RLHF, DPO o RL con recompensas basadas en longitud y correccion.
+El modelo parte del Qwen3.8-Flash-Next, un MoE con capacidad de procesamiento de imagen. ThinkingCap aplica un post-entrenamiento orientado a la eficiencia de tokens de razonamiento ("shorter-thinking post-training"): el finetune ensena al modelo a llegar a la respuesta con cadenas de pensamiento mas cortas, en lugar de truncar la salida a posteriori. Los datos concretos de entrenamiento (numero de tokens, composicion del dataset, uso de RLHF/DPO) no estan disponibles en la informacion proporcionada.
 
-La innovacion declarada es la eficiencia de tokens: el modelo aprende a producir cadenas de razonamiento mas cortas sin degradar sustancialmente la exactitud. Los datos publicados respaldan el efecto: en AIME 2026 pasa de 16.694 a 9.281 tokens de media (reduccion del 44,4 %) con una exactitud de 97,19 frente a 97,92 del base, y en HMMT (noviembre de 2025) de 15.975 a 8.874 tokens con 97,71 frente a 99,17. El resumen agregado que da el autor es un 38,5 % menos de tokens de media y una exactitud media de 88,8 % frente a 89,8 %. No se documentan innovaciones de atencion (atencion lineal, decodificacion especulativa) ni cambios en el tokenizador.
+La innovacion tecnica destacable es la eficiencia de tokens: segun la model card, la reduccion media de thinking tokens es del 38,5 %, con variaciones por benchmark que van del 22 % al 51 %. En tareas de matematicas y codigo, la reduccion medida en benchmarks concretos es del 44,4 % en AIME 2026 y del 44,5 % en HMMT (Nov 2025), con caidas de precision muy pequenas (0,73 y 1,46 puntos respectivamente). No se documentan en la informacion disponible tecnicas como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- Razonamiento con modo de pensamiento (thinking mode) y cadenas de razonamiento explicitas, optimizadas para ser mas breves que las del modelo base.
-- Razonamiento matematico de competicion: los benchmarks publicados son AIME 2026 y HMMT (noviembre de 2025), ambos con exactitudes superiores al 97 %.
-- Generacion de codigo: la model card agrupa los benchmarks bajo la categoria "Math & code", aunque no se publican resultados de HumanEval, LiveCodeBench ni similares.
-- Entrada de imagen: pipeline `image-text-to-text`, por lo que acepta imagenes junto a texto (descripcion, extraccion de informacion, VQA). No se publican benchmarks de vision.
-- Uso conversacional multi-turno (tag `conversational`).
-- Compatibilidad con endpoints de Hugging Face (tag `endpoints_compatible`).
-- Tool calling / function calling: no documentado en la informacion disponible.
-- Capacidades de agente y multi-step reasoning: no documentadas explicitamente; el modo de pensamiento es compatible con flujos multi-paso, pero no hay evaluacion publicada.
-- Capacidades multilingues: no disponible (Hugging Face no lista idiomas para este modelo).
+- Generacion de texto conversacional (tag "conversational").
+- Razonamiento con modo de pensamiento eficiente ("efficient-thinking"): produce cadenas de pensamiento mas cortas que el base.
+- Razonamiento matematico de competicion: evaluado en AIME 2026 y HMMT (Nov 2025) con precisiones superiores al 97 %.
+- Generacion y razonamiento sobre codigo (categoria "Math & code" en los benchmarks).
+- Procesamiento de imagen junto a texto (pipeline image-text-to-text, tags image-text-to-text).
+- Compatibilidad con endpoints de inferencia (tag "endpoints_compatible").
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible de forma explicita en la informacion proporcionada.
+- Capacidades multilingues: no disponible (idiomas no listados en la model card).
 
 ## Casos de uso
 
-- Razonamiento matematico a gran escala en produccion: resolucion de problemas tipo competicion o verificacion de calculos en pipelines educativos, donde el recorte del 44 % en tokens de pensamiento (AIME 2026) reduce directamente el coste por problema resuelto con una perdida de 0,73 puntos de exactitud.
-- Tutoria y correccion automatica de ejercicios: el modelo mantiene el modo de razonamiento (necesario para explicar pasos) pero con cadenas mas cortas, lo que abarata servir explicaciones paso a paso a muchos usuarios concurrentes.
-- Agentes de codigo con razonamiento previo: al reducir la verbosidad del pensamiento, encaja mejor en bucles de agente con muchos turnos donde cada iteracion consume presupuesto de tokens; requiere validar antes el soporte real de tool calling, no documentado.
-- Analisis de documentos con imagenes: al ser image-text-to-text, puede procesar capturas, diagramas o formularios escaneados junto a instrucciones textuales; util para extraccion de datos en back office.
-- Evaluacion y comparacion de estrategias de eficiencia: sirve como referencia para medir el trade-off exactitud/tokens en un MoE de 180.000 millones frente al base sin post-entrenamiento.
-- Despliegue con restricciones de latencia: en escenarios donde el tiempo de respuesta esta dominado por la generacion de pensamiento, un 22-51 % menos de tokens se traduce en menor latencia de cola y mayor throughput por GPU.
-- Investigacion sobre longitud de razonamiento: permite estudiar como varia la exactitud al truncar el pensamiento, usando el par base/ThinkingCap como control experimental.
+- Razonamiento matematico asistido en produccion: el modelo mantiene un 97,19 % en AIME 2026 y un 97,71 % en HMMT con casi la mitad de tokens de razonamiento, por lo que es adecuado para sistemas de resolucion de problemas matematicos donde el coste por consulta importa.
+- Tutoria y evaluacion educativa: cadenas de pensamiento mas cortas reducen latencia en respuestas paso a paso, lo que mejora la experiencia en plataformas de aprendizaje interactivo que exigen respuestas en segundos.
+- Generacion de codigo en pipelines automatizados: al heredar el rendimiento en "Math & code" del base y recortar tokens, encaja en tareas de sintesis de codigo por lotes donde el throughput es el cuello de botella.
+- Analisis de documentos con imagenes: el pipeline image-text-to-text permite procesar capturas, diagramas o formularios escaneados junto a instrucciones textuales, util en extraccion de datos y verificacion documental.
+- Asistentes conversacionales de alta concurrencia: la reduccion de tokens de razonamiento abarata el coste por conversacion en despliegues multi-turno con muchos usuarios simultaneos.
+- Evaluacion automatica de razonamiento: util como modelo juez o generador de soluciones en benchmarks internos, donde la eficiencia de tokens permite ejecutar mas evaluaciones con el mismo presupuesto de GPU.
+- Prototipado de agentes con restricciones de latencia: cuando el tiempo de respuesta es critico, el recorte de thinking tokens reduce el tiempo hasta la primera respuesta final util.
 
 ## Benchmarks y rendimiento
 
-Datos publicados por el autor en la model card (exactitud en porcentaje, con desviacion tipica; tokens de pensamiento en media por consulta):
-
-| Benchmark | Exactitud base | Exactitud ThinkingCap | Tokens base | Tokens ThinkingCap | Reduccion |
+| Benchmark | Precision base | Precision ThinkingCap | Tokens base (media) | Tokens ThinkingCap (media) | Reduccion |
 |---|---|---|---|---|---|
 | AIME 2026 | 97,92 ± 0,85 | 97,19 ± 1,15 | 16.694 | 9.281 | 44,4 % |
-| HMMT (nov 2025) | 99,17 ± 1,03 | 97,71 ± 1,55 | 15.975 | 8.874 | no disponible (extracto truncado) |
-| Media agregada (todos los benchmarks) | 89,8 % | 88,8 % | no disponible | no disponible | 38,5 % (rango 22-51 %) |
+| HMMT (Nov 2025) | 99,17 ± 1,03 | 97,71 ± 1,55 | 15.975 | 8.874 | 44,5 % |
 
-No se han publicado en la informacion disponible resultados de MMLU, HumanEval, GSM8K, benchmarks multimodales ni evaluaciones de seguridad. El extracto de la tabla de la model card esta cortado tras la fila de HMMT, por lo que el resto de benchmarks individuales no se puede reproducir aqui.
+La model card indica una reduccion media global de thinking tokens del 38,5 % (rango 22 %-51 % segun benchmark) con una precision media de 88,8 % frente al 89,8 % del base. El resto de resultados por benchmark no esta disponible en la informacion proporcionada.
 
 ## Requisitos de hardware
 
-Estimaciones derivadas del numero de parametros y del tamano del repositorio (360,2 GB); el autor no publica requisitos oficiales.
-
-- Pesos en bf16/fp16: ~360 GB, equivalentes al tamano del repo. Requiere al menos 8 GPU de 80 GB (H100 SXM, A100 80GB, H200) para cargar el modelo completo con margen para cache KV y activaciones.
-- Pesos en int8: ~180 GB. Encaja en 3 GPU de 80 GB (240 GB) o en configuraciones con offload parcial.
-- Pesos en int4: ~90-95 GB. Cabe en 2 GPU de 80 GB o en una sola H200 (141 GB) / B200, con margen limitado para contexto largo.
-- GPU consumer: no cabe en una RTX 4090 (24 GB) ni en una RTX 5090. Solo es viable con offload masivo a CPU/RAM del sistema (100-360 GB de RAM segun cuantizacion) y la GPU actuando como acelerador parcial; el throughput en ese modo es bajo.
-- Opciones de despliegue: transformers (soporte declarado), servidores compatibles con safetensors y arquitectura Qwen (vLLM o TGI, sujeto a que la version concreta soporte la arquitectura `qwen4_exp`, no confirmado en la informacion disponible). llama.cpp/Ollama requeririan una conversion a GGUF que el repositorio no publica.
-- Latencia y throughput: no disponibles. Como referencia cualitativa, la reduccion de tokens de pensamiento del 22-51 % disminuye proporcionalmente el tiempo de generacion en cargas dominadas por razonamiento.
+- VRAM estimada para inferencia: con 180.000 millones de parametros totales, en BF16/FP16 se necesitan aproximadamente 360 GB solo para pesos, mas memoria para KV cache y activaciones. En cuantizacion de 8 bits, alrededor de 180 GB; en 4 bits, en torno a 90-100 GB. Estas cifras son estimaciones a partir del tamano de parametros, no datos publicados por el autor.
+- GPU recomendadas: no cabe en GPU de consumo individual. Requiere despliegues multi-GPU con A100 80 GB, H100 80 GB o H200; para BF16 hacen falta al menos 5-6 GPU de 80 GB solo para pesos.
+- GPU de consumo: no es viable en RTX 4090 (24 GB) ni en RTX 5090 (32 GB) en configuracion completa; solo mediante offloading a CPU/SSD muy agresivo, con latencia inviable para produccion.
+- Opciones de despliegue: transformers (libreria declarada), endpoints compatibles (tag "endpoints_compatible"). vLLM, llama.cpp, Ollama o TGI no se mencionan en la informacion proporcionada.
+- Latencia y throughput: no disponible. La reduccion de thinking tokens (38,5 % de media) sugiere una mejora proporcional en tiempo de generacion, pero no se publican cifras absolutas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ThinkingCap-Qwen3.8-Flash-Next | ~180.000 M (MoE) | no disponible | Razonamiento eficiente en tokens (38,5 % menos) | qwen-community-license-1.0 | safetensors en Hugging Face, 0 descargas |
-| Qwen/Qwen3.8-Flash-Next (base) | ~180.000 M (MoE) | no disponible | Modelo generalista con vision y razonamiento | qwen-community-license-1.0 | Hugging Face, publicado por Qwen |
-| Otros MoE de ~180.000 M con vision y thinking mode | no disponible | no disponible | no disponible | no disponible | no disponible |
+| ThinkingCap-Qwen3.8-Flash-Next | 180.000 M (MoE) | no disponible | 88,8 % precision media; 97,19 % AIME 2026; 97,71 % HMMT | qwen-community-license-1.0 | Hugging Face, 1.076 descargas |
+| Qwen3.8-Flash-Next (base) | no disponible | no disponible | 89,8 % precision media; 97,92 % AIME 2026; 99,17 % HMMT | no disponible en la informacion | Hugging Face (Qwen/Qwen3.8-Flash-Next) |
 
-La comparacion relevante y documentada es contra el modelo base: mismos parametros, misma licencia y mismo pipeline, con una diferencia de -1,0 punto de exactitud media y -38,5 % de tokens de pensamiento. No se dispone en la informacion proporcionada de especificaciones de terceros comparables (por ejemplo, familias tipo DeepSeek, Llama o Mixtral en ese rango), por lo que no se ofrece una tabla numerica adicional.
+No se dispone de datos de otros modelos comparables de la misma categoria en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Degradacion de exactitud: la precision media baja de 89,8 % a 88,8 % y en casos concretos la caida es mayor (HMMT: -1,46 puntos). En dominios donde cada punto cuenta, el base puede ser preferible.
-- Cobertura de evaluacion estrecha: solo se publican benchmarks de matematicas de competicion. No hay datos de codigo, vision, multilingue, tool calling ni seguridad, pese a que el modelo es multimodal.
-- Riesgo de alucinacion: al acortar las cadenas de razonamiento se reduce la capacidad de autocorreccion; no se han publicado tasas de alucinacion ni evaluaciones de calibracion.
-- Idiomas: no disponibles. No se puede asumir un rendimiento correcto en castellano sin evaluacion propia.
-- Licencia: qwen-community-license-1.0 no es una licencia open source aprobada por la OSI. Es imprescindible revisar el archivo LICENSE del repositorio antes de cualquier uso comercial, ya que puede imponer condiciones de atribucion, restricciones de uso aceptable o limites de despliegue.
-- Requisitos de infraestructura: 360 GB de pesos en precision de entrenamiento implican coste de almacenamiento y de serving alto; no hay versiones cuantizadas oficiales.
-- Madurez: 0 descargas y publicacion el 22 de octubre de 2026, sin validacion independiente de los resultados declarados.
-- Arquitectura no estandar: el tag `qwen4_exp` y la ausencia de confirmacion de soporte en vLLM/TGI implican riesgo de integracion; conviene probar la carga antes de planificar el despliegue.
-- Los resultados de benchmarks proceden del propio autor; no se han replicado de forma independiente.
+- Perdida de precision: el modelo sacrifica entre 0,7 y 1,5 puntos en los benchmarks publicados (AIME 2026 y HMMT) y 1,0 punto en la media global (88,8 % frente a 89,8 %). En tareas donde cada punto cuenta, el base puede ser preferible.
+- Sesgos conocidos: no documentados en la informacion proporcionada.
+- Riesgo de alucinacion: no documentado; al ser un finetune de razonamiento, la reduccion de tokens de pensamiento puede aumentar el riesgo de conclusiones precipitadas en tareas de varios pasos, aunque no hay evidencia publicada al respecto.
+- Limitaciones de contexto e idioma: la longitud de contexto y los idiomas soportados no estan disponibles en la model card.
+- Licencia: qwen-community-license-1.0 condiciona el uso comercial; es imprescindible revisar el archivo LICENSE del repositorio antes de desplegar en producto.
+- Requisitos de hardware: 360,2 GB de repositorio y 180.000 M de parametros hacen inviable el despliegue en hardware de consumo.
+- Cobertura de benchmarks limitada: solo se publican resultados de dos benchmarks de matematicas; no hay datos de MMLU, HumanEval, GSM8K ni de tareas multimodales.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-Flash-Next
+- Modelo en Hugging Face: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-Flash-Next
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Blog del autor: https://bottlecapai.com/post/thinkingcap-qwen3-8-flash-next/
-- Web del autor: https://www.bottlecapai.com/
+- Blogpost de BottleCap AI: https://bottlecapai.com/post/thinkingcap-qwen3-8-flash-next/
+- Web de BottleCap AI: https://www.bottlecapai.com/
 - Demo en video: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-Flash-Next/resolve/main/thinkingcap_demo.mp4
 - Demo en 4K: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-Flash-Next/resolve/main/thinkingcap_demo_4k.mp4
-- Licencia: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-Flash-Next/blob/main/LICENSE
-
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo (solo dominios de contenido para adultos sin relacion), por lo que no se incluyen.

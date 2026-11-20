@@ -16,8 +16,7 @@
     "gguf",
     "llama",
     "license:mit",
-    "region:us",
-    "conversational"
+    "region:us"
   ],
   "likes": 0,
   "downloads_30d": 59,
@@ -32,9 +31,9 @@
     "gguf",
     "safetensors"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": true,
-  "disabled": false,
+  "disabled": true,
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,

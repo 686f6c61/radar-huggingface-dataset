@@ -5,7 +5,7 @@
   "author": "dsego",
   "url": "https://huggingface.co/dsego/tempus-lfm2.5-230m",
   "created_at": "2026-11-19T01:41:09.000Z",
-  "updated_at": "2026-11-19T01:44:27.000Z",
+  "updated_at": "2026-11-19T03:25:39.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -27,7 +27,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 23,
   "trending_score": 0,
   "parameters": 229693184,
   "parameters_human": "229.7M",

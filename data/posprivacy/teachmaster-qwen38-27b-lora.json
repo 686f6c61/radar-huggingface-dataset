@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 5763,
+  "downloads_30d": 5772,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -49,8 +49,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "posprivacy/teachmaster",
+  "renamed_at": "2026-11-20T09:57:21.361Z",
   "benchmarks": [],
   "sources": []
 }

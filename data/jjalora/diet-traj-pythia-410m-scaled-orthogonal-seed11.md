@@ -2,101 +2,88 @@
 
 ## Resumen
 
-`jjalora/diet-traj-pythia-410m-scaled-orthogonal-seed11` es un checkpoint de investigación, no un modelo listo para producto: se trata de una ejecución de preentrenamiento desde cero de Pythia-410M realizada dentro de la campaña de espacio de pesos denominada DIET. El autor reproduce la receta abierta de EleutherAI (`models/410M/pythia-410m.yml`): misma arquitectura GPT-NeoX, mismo flujo de tokens y mismo orden de datos (`EleutherAI/pile-standard-pythia-preshuffled`), con AdamW, lr 3e-4, betas (0,9; 0,95), weight decay 0,1, recorte de gradiente 1,0, schedule coseno hasta 3e-5 durante 143.000 pasos y 1.430 pasos de warmup. La única diferencia respecto a Pythia-410M es la semilla aleatoria y el esquema de inicialización de pesos.
+diet-traj-pythia-410m-scaled-orthogonal-seed11 es un checkpoint de investigación publicado por el usuario jjalora dentro de la campaña "DIET weight-space", cuyo objetivo es estudiar la trayectoria de entrenamiento de modelos Pythia desde cero en el espacio de pesos. No es un modelo conversacional ni un asistente afinado: es una reproducción del recetario abierto de Pythia-410M de EleutherAI (arquitectura GPT-NeoX, 405.334.016 parámetros reales según safetensors) entrenado sobre el mismo flujo de tokens (`EleutherAI/pile-standard-pythia-preshuffled`) con idéntico orden de batches, y del que solo varían la semilla aleatoria y el esquema de inicialización de pesos (aquí `scaled-orthogonal`, semilla 11).
 
-El interés del artefacto es precisamente esa diferencia controlada: `init_scheme = scaled_orthogonal`, semilla 11. El repositorio publica la trayectoria completa de entrenamiento mediante ramas `stepN` (N en {0, 1, 2, 4, …, 512} más un checkpoint cada 100 pasos), en safetensors float16 y solo pesos. La rama `main` contiene los pesos finales cuando la ejecución termina. Esto lo convierte en material para estudiar dinámica de entrenamiento, evolución del conocimiento y efecto de la inicialización en el espacio de pesos.
+El interés del artefacto es metodológico: permite comparar cómo evoluciona la pérdida y las propiedades de los pesos a lo largo de 143.000 pasos frente a otras trayectorias de la misma colección, con una evaluación de `eval_loss` recalculada de forma homogénea para todos los checkpoints. El repositorio es inusualmente grande (948,5 GB) porque conserva ramas `stepN` con los pesos en float16 safetensors en los pasos {0, 1, 2, 4, …, 512} y cada 100 pasos, además de los pesos finales en `main`.
 
-Relevancia práctica: 410M parámetros, 2.048 tokens de contexto y 300.000 millones de tokens de entrenamiento aproximados (143.000 pasos × 1.024 secuencias × 2.048 tokens). Es un modelo base en inglés, sin ajuste por instrucciones ni alineamiento, pensado para interpretabilidad y experimentación reproducible, no para uso conversacional directo.
+Es relevante ahora porque la comunidad de interpretabilidad y de ciencia del entrenamiento necesita trayectorias reproducibles y comparables a pequeña escala para estudiar dinámicas de optimización, inicialización y poda/merging en el espacio de pesos, sin el coste de entrenar modelos grandes. Su utilidad práctica como generador de texto es secundaria: es un modelo base de 410M en inglés, sin ajuste por instrucciones.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only GPT-NeoX (`gpt_neox`), 24 capas, 16 cabezas de atencion, dimension oculta 1024 (segun la receta Pythia-410M referenciada) |
-| Parametros totales | 410M (aproximado, nombre del modelo); no se publica recuento exacto en la model card |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | 2.048 tokens (receta Pythia-410M) |
-| Tipos de cuantizacion | Solo pesos float16 safetensors en el repositorio; no se publican versiones GGUF, GPTQ, AWQ ni int8 |
-| Idiomas soportados | Ingles (`language: [en]`); entrenado sobre The Pile, predominantemente en ingles |
+| Arquitectura | GPT-NeoX (transformer decoder-only), implementación `transformers` con `gpt_neox` |
+| Parametros totales | 405.334.016 |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (Pythia-410M usa 2048 tokens en su configuración de referencia, pero no se confirma en la model card) |
+| Tipos de cuantizacion | no se publican pesos cuantizados; los checkpoints se distribuyen en float16 safetensors (cuantización posterior posible vía herramientas externas) |
+| Idiomas soportados | inglés (`en`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors float16, solo pesos, una rama `stepN` por checkpoint; rama `main` con los pesos finales |
-| Vocabulario | 50.304 tokens (configuracion Pythia; no verificado en la model card) |
-| Tamano del repositorio | 53,5 GB (agrega todas las ramas de checkpoint, no un unico modelo) |
-| Dataset de entrenamiento | `EleutherAI/pile-standard-pythia-preshuffled`, batch *i* = filas [i·1024, (i+1)·1024) |
-| Hardware de entrenamiento | 1 nodo, 4 × NVIDIA H100-SXM5-80GB (cluster "makau"), micro batch 16, world batch 1024 |
+| Formato de pesos | safetensors (float16); ramas `stepN` con pesos únicamente y `main` con los pesos finales |
 
 ## Arquitectura y entrenamiento
 
-Arquitectura GPT-NeoX estandar de Pythia-410M: transformer decoder-only con atención causal, sin mezcla de expertos ni componentes de estado recurrente. El factor diferencial no es la arquitectura sino el esquema de inicialización: `scaled_orthogonal`, en lugar del `pythia` original (combinación de `small_init` y `wang_init` de GPT-NeoX). El autor advierte que la reproducción bit a bit del RNG de inicialización de EleutherAI no es posible entre frameworks, y que el esquema `pythia` iguala la *distribución* por tensor de `EleutherAI/pythia-410m` en la revisión `step0`, verificado en `tests/test_pythia_step0_init_match.py`.
+El modelo es un transformer decoder-only de la familia GPT-NeoX, con la misma arquitectura que `EleutherAI/pythia-410m` según el fichero de receta `models/410M/pythia-410m.yml`. El entrenamiento sigue el recetario abierto de Pythia: AdamW con lr 3e-4, betas (0,9; 0,95), weight decay 0,1 sin decaimiento en LayerNorm ni sesgos, grad clipping 1,0, schedule coseno hasta 3e-5 durante 143.000 pasos, 1.430 pasos de warmup, autocast fp16 con pesos maestros en fp32 y batch global de 1024 × 2048 tokens independientemente del número de GPUs. El flujo de datos es `EleutherAI/pile-standard-pythia-preshuffled`, con el batch *i* correspondiente a las filas [i·1024, (i+1)·1024), de modo que el orden de tokens es idéntico al de la receta original.
 
-La receta de entrenamiento es identica a la de Pythia-410M salvo semilla e inicialización: AdamW con lr 3e-4, betas (0,9; 0,95), weight decay 0,1 sin decaimiento en LayerNorm ni sesgos, recorte de gradiente 1,0, schedule coseno de 3e-4 a 3e-5 en 143.000 pasos, 1.430 pasos de warmup, autocast fp16 con pesos maestros fp32 y world batch de 1.024 secuencias × 2.048 tokens, independiente del numero de GPUs. Con esos valores, el computo total asciende a unos 300.000 millones de tokens, el mismo presupuesto que el modelo Pythia original. No se documentan fases de RLHF, DPO, SFT ni instrucciones; es un preentrenamiento puro. Tampoco se documentan innovaciones tecnicas adicionales (decodificacion especulativa, atención lineal, etc.).
+La única variación respecto a Pythia es la semilla aleatoria y el esquema de inicialización: aquí `init_scheme = scaled-orthogonal` con semilla 11, frente al esquema `pythia` (small_init + wang_init) de EleutherAI. La model card advierte que la reproducción bit a bit del RNG de inicialización de EleutherAI no es posible entre frameworks, y que el esquema `pythia` solo coincide en la distribución por tensor con `EleutherAI/pythia-410m` revisión `step0` (verificado en `tests/test_pythia_step0_init_match.py`). El repositorio incluye `losses.csv` en `main` con `train_loss`, `eval_loss`, `eval_perplexity`, `eval_accuracy`, `tokens_seen` y `lr` por checkpoint; `eval_loss` se recalculó una vez para todos los checkpoints contra un conjunto de evaluación fijo, lo que hace comparables las curvas entre trayectorias de la colección. El fichero `campaign.json` de procedencia está vacío (`{}`).
 
 ## Capacidades
 
-- Modelado de lenguaje autoregresivo: continuación de texto y puntuación de verosimilitud (perplexity, log-probabilities) sobre texto en inglés.
-- Evaluación de trayectorias de entrenamiento: cada rama `stepN` permite analizar el estado del modelo en un paso concreto (0 a 512 con densidad alta, y cada 100 pasos después).
-- Estudio del espacio de pesos: comparaciones entre semillas y esquemas de inicialización bajo una receta fija.
-- Base para fine-tuning supervisado en tareas downstream en inglés (clasificación, extracción, generación acotada).
-- Extracción de representaciones internas (hidden states, atenciones) para investigación en interpretabilidad mecanicista, al estilo de la suite Pythia.
-- No soporta tool calling ni function calling: no hay plantilla de chat, ni entrenamiento en instrucciones, ni tokens especiales de herramienta.
-- No soporta comportamiento agéntico ni razonamiento multi-paso fiable; sin alineamiento, el modelo no sigue instrucciones de forma consistente.
-- Capacidades multilingües muy limitadas, practicamente restringidas al inglés.
-- Sin modo "thinking", visión, audio ni modalidades adicionales.
+- Generación de texto autoregresiva en inglés, como modelo base sin ajuste por instrucciones.
+- Modelado de lenguaje y cálculo de perplejidad sobre texto en inglés (Pile).
+- Punto de partida para experimentos de interpretabilidad y análisis en el espacio de pesos gracias a los checkpoints intermedios `stepN`.
+- Reproducción controlada de una trayectoria de entrenamiento con orden de tokens fijo, útil para estudiar efectos de inicialización y semilla.
+- No se documenta soporte de tool calling, function calling, agentes, modo thinking, visión ni audio.
+- Capacidad multilingüe limitada al inglés según la etiqueta de idioma del repositorio.
 
 ## Casos de uso
 
-- **Investigación en interpretabilidad mecanicista**: cargar una rama `stepN` concreta para estudiar cómo evolucionan circuitos, cabezas de atención o direcciones latentes a lo largo del entrenamiento, con la ventaja de disponer de checkpoints intermedios densos en los primeros 512 pasos.
-- **Análisis de sensibilidad a la inicialización**: comparar esta ejecución (`scaled_orthogonal`, semilla 11) con la receta `pythia` y otras semillas de la misma campaña manteniendo constantes datos, orden de tokens e hiperparámetros; es un diseño experimental controlado, no una comparación ad hoc.
-- **Estudios de dinámica de entrenamiento y leyes de escala**: usar los checkpoints intermedios para medir la aparición de habilidades, la evolución de la pérdida por dominio del Pile o la estabilidad del optimizador en las primeras fases.
-- **Reproducibilidad de recetas abiertas**: verificar la implementación del pipeline Pythia (stream de datos pre-shuffled, batch fijo de 1.024 × 2.048, schedule coseno) en un clúster propio con 4 × H100 y servir como referencia de auditoría del código de entrenamiento.
-- **Baseline para fine-tuning en inglés**: partir de los pesos finales (`main`) o de un checkpoint intermedio para tareas de clasificación o extracción donde 410M parámetros y 2.048 tokens de contexto sean suficientes, con coste de ajuste muy bajo.
-- **Evaluación de la fidelidad de la inicialización**: ejecutar pruebas tipo `test_pythia_step0_init_match.py` para comprobar que una implementación propia reproduce la distribución de pesos de `EleutherAI/pythia-410m` en el paso 0.
-- **Banco de pruebas de herramientas de perfilado de pesos**: al ser una arquitectura GPT-NeoX pequeña y bien documentada, sirve para validar pipelines de fusión de checkpoints, conversión de formato o análisis espectral de matrices de pesos.
+- Estudio de dinámicas de entrenamiento: comparar `losses.csv` de esta trayectoria (semilla 11, `scaled-orthogonal`) con otras trayectorias de la campaña DIET para aislar el efecto de la inicialización sobre la curva de pérdida y la perplejidad de evaluación.
+- Investigación en interpretabilidad: cargar checkpoints intermedios en los pasos {0, 1, 2, 4, …, 512} y cada 100 pasos para analizar la evolución de activaciones, circuitos o direcciones de pesos a lo largo del entrenamiento.
+- Experimentos de merging y poda en el espacio de pesos: usar los pesos finales de `main` y los intermedios como puntos de referencia para estudiar interpolación lineal, task arithmetic o pruning, aprovechando que todos comparten receta y flujo de datos.
+- Reproducibilidad de recetas: validar pipelines de entrenamiento propios replicando el recetario Pythia (AdamW, schedule coseno, batch 1024 × 2048) y contrastando la pérdida contra `train_loss` registrada en `losses.csv`.
+- Generación de texto base en inglés para pruebas de infraestructura: al ser un GPT-NeoX de 410M con licencia Apache 2.0, sirve para validar despliegues con `text-generation-inference` o `transformers` en entornos de CI sin coste de licencia.
+- Docencia y experimentación de bajo presupuesto: fine-tuning sobre tareas en inglés (clasificación, resumen) partiendo de un modelo pequeño y con checkpoints abundantes para comparar puntos de partida.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye evaluaciones (MMLU, HumanEval, GSM8K, LAMBADA ni pérdida sobre el Pile) para esta ejecución concreta, y el repositorio solo contiene pesos y procedencia (`campaign.json`). Cualquier cifra atribuida a este checkpoint requeriría evaluarlo por separado; no se deben extrapolar los numeros publicados para `EleutherAI/pythia-410m`.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card solo reporta métricas de entrenamiento y evaluación interna (`train_loss`, `eval_loss`, `eval_perplexity`, `eval_accuracy`) por checkpoint en `losses.csv`, sin valores numéricos concretos en el texto proporcionado, por lo que no se pueden presentar cifras verificables.
 
 ## Requisitos de hardware
 
-- VRAM para inferencia en float16: aproximadamente 0,8 GB solo de pesos; con caché KV para 2.048 tokens y activaciones, un presupuesto realista de 2-3 GB (estimacion, no medida publicada por el autor).
-- VRAM en float32: unos 1,6 GB de pesos; en torno a 3-4 GB con contexto completo (estimacion).
-- GPU recomendadas para servir el modelo: cualquier GPU con 4 GB o mas; RTX 3060 12 GB, RTX 4060 Ti, RTX 4090, L4, A10G, A100 y H100 son sobredimensionadas para inferencia pero adecuadas para lotes grandes.
-- Cabe holgadamente en GPU de consumo: si, en GTX 1660 Super 6 GB, RTX 3050 8 GB, RTX 3060, RTX 4060/4070/4080/4090.
-- Despliegue: `transformers` con `GPTNeoXForCausalLM` (libreria indicada en el repo), vLLM y TGI para servicio con batching continuo, llama.cpp/Ollama tras conversion a GGUF (conversion tecnicamente posible por ser GPT-NeoX estandar, pero no publicada ni verificada en este repositorio).
-- Almacenamiento: el repositorio completo ocupa 53,5 GB por acumulacion de ramas; conviene descargar solo la revision necesaria (`revision="step1000"`, etc.) para no replicar todo el historial.
-- Latencia y throughput: no disponibles; no se han publicado mediciones.
-- Entrenamiento (referencia de la propia campaña): 1 nodo con 4 × H100-SXM5-80GB, micro batch 16 y world batch 1024.
+- VRAM estimada para inferencia en fp16: aproximadamente 0,8 GB solo para pesos (405M × 2 bytes), más overhead de activaciones y KV cache; en la práctica, menos de 2 GB para contextos moderados.
+- VRAM estimada en fp32: aproximadamente 1,6 GB solo para pesos.
+- Cabe holgadamente en GPUs de consumo: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090 24 GB, e incluso en GPUs con 4-6 GB tras cuantización a 8 o 4 bits con herramientas externas.
+- GPU de datacenter compatibles: A100, H100, L40S, sin problema de memoria; el cuello de botella sería el throughput, no la VRAM.
+- Opciones de despliegue: `transformers` (librería declarada), `text-generation-inference` (etiqueta `text-generation-inference` y `endpoints_compatible` en el repo), y herramientas estándar para GPT-NeoX como llama.cpp u Ollama previa conversión a GGUF.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
+- Advertencia de almacenamiento: el repo ocupa 948,5 GB por la acumulación de checkpoints; descargar solo la rama `main` o una rama `stepN` concreta, no el repositorio completo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Datos de entrenamiento | Inicializacion / semilla | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Este checkpoint (DIET, seed 11) | 410M | 2.048 | Pile pre-shuffled, ~300B tokens, orden Pythia | `scaled_orthogonal`, semilla 11 | Apache 2.0 | Repo con ramas `stepN` |
-| EleutherAI/pythia-410m | 410M | 2.048 | Pile, ~300B tokens | `pythia` (small_init + wang_init) | Apache 2.0 | Modelo base oficial, muy extendido |
-| EleutherAI/pythia-410m-deduped | 410M | 2.048 | Pile deduplicado globalmente, ~300B tokens | `pythia` | Apache 2.0 | Modelo base oficial |
-| Otras ejecuciones de la campana DIET | 410M | 2.048 | Identicos, mismo orden de tokens | Otros esquemas / semillas | Apache 2.0 (presumible) | No disponible el listado completo en la informacion proporcionada |
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| jjalora/diet-traj-pythia-410m-scaled-orthogonal-seed11 | 405.334.016 | no disponible | Apache 2.0 | Trayectoria de investigación con checkpoints intermedios; inicialización `scaled-orthogonal`, semilla 11 |
+| EleutherAI/pythia-410m | ~410M | 2048 (referencia Pythia) | Apache 2.0 | Modelo base de referencia con la misma receta y flujo de datos; inicialización `pythia` (small_init + wang_init) |
+| Otras trayectorias de la campaña DIET (mismo autor) | ~410M | no disponible | Apache 2.0 | Misma receta con distintas semillas y esquemas de inicialización; comparables directamente vía `losses.csv` |
 
-La comparacion relevante es de control experimental, no de calidad: los tres primeros comparten arquitectura, tokenizador y presupuesto de computo, y difieren en inicializacion (y, en el caso deduped, en el corpus). No hay datos de rendimiento publicados para este checkpoint que permitan afirmar equivalencia o mejora frente a `pythia-410m`.
+La comparación con modelos de propósito general de tamaño similar (por ejemplo, GPT-2 355M o modelos de 400M afinados por instrucciones) no procede en términos de rendimiento porque este checkpoint es un artefacto de investigación sin evaluación en benchmarks estándar publicada.
 
 ## Limitaciones y advertencias
 
-- Modelo base sin alineamiento: no sigue instrucciones, no tiene plantilla de chat y puede generar contenido toxico, sesgado o factualmente incorrecto presente en The Pile.
-- Riesgo alto de alucinacion en uso generativo: sin RLHF ni verificacion, no debe desplegarse en atencion al cliente ni en flujos de decision sin salvaguardas adicionales.
-- Solo ingles: el soporte de otros idiomas, incluido el castellano, es residual y no evaluado.
-- Contexto limitado a 2.048 tokens; no admite documentos largos ni conversaciones multi-turno extensas sin truncado.
-- Capacidad bruta limitada por tamano: 410M parametros ofrecen rendimiento bajo en razonamiento multi-paso, matematicas y generacion de codigo comparado con modelos actuales.
-- Repositorio de 53,5 GB: descargar la rama `main` sin fijar `revision` puede replicar decenas de checkpoints innecesarios.
-- Pesos solo en float16: no hay versiones cuantizadas oficiales; la conversion a GGUF o GPTQ correria por cuenta del usuario y sin garantias del autor.
-- La model card no documenta evaluaciones de sesgo, toxicidad ni seguridad; no hay tarjeta de datos ni analisis de riesgos.
-- Licencia Apache 2.0 permite uso comercial, pero el estado del artefacto (checkpoint de investigacion, ramas de paso parcial) hace desaconsejable su uso en produccion sin una evaluacion propia.
-- La reproducibilidad bit a bit de la inicializacion respecto a EleutherAI no esta garantizada entre frameworks; el autor solo reclama equivalencia distribucional por tensor.
+- Modelo base sin ajuste por instrucciones: no sigue instrucciones de forma fiable ni está alineado; no debe usarse como asistente sin fine-tuning o RLHF posterior.
+- Solo inglés: la etiqueta de idioma del repositorio es `en`; el rendimiento en castellano no está documentado y previsiblemente será pobre.
+- Riesgo de alucinación y de generar contenido sesgado o tóxico heredado del Pile, sin filtros de seguridad documentados.
+- No hay resultados de benchmarks publicados en la información disponible; no se puede afirmar su calidad relativa frente a Pythia-410M original más allá de la coincidencia de receta.
+- La reproducción bit a bit de la inicialización de EleutherAI no es posible entre frameworks; las comparaciones con Pythia deben hacerse a nivel de distribución y de métricas de evaluación homogéneas.
+- El tamaño del repositorio (948,5 GB) es un riesgo operativo: descargas completas pueden agotar disco y ancho de banda; conviene clonar solo la rama necesaria.
+- El fichero `campaign.json` está vacío (`{}`), lo que limita la trazabilidad de la procedencia más allá de la model card.
+- Licencia Apache 2.0 permite uso comercial, pero al ser un artefacto de investigación sin garantías de calidad, su uso en producción requeriría validación propia.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/jjalora/diet-traj-pythia-410m-scaled-orthogonal-seed11
-- Pythia-410M oficial: https://huggingface.co/EleutherAI/pythia-410m
-- Repositorio de codigo y recetas Pythia: https://github.com/EleutherAI/pythia
+- Receta Pythia de referencia: https://github.com/EleutherAI/pythia (fichero `models/410M/pythia-410m.yml`)
+- Modelo base de comparación: https://huggingface.co/EleutherAI/pythia-410m
 - Dataset de entrenamiento: https://huggingface.co/datasets/EleutherAI/pile-standard-pythia-preshuffled
-- Paper de la suite Pythia: https://arxiv.org/abs/2304.01373
-- Conversion a otros formatos (referencia de la comunidad): https://huggingface.co/Xenova/pythia-410m
+- No se han encontrado en la información proporcionada enlaces a papers, blogs, demos ni al repositorio del código de entrenamiento de la campaña DIET (se menciona `src/init_schemes.py` y `tests/test_pythia_step0_init_match.py`, pero sin URL).

@@ -5,7 +5,7 @@
   "author": "rasgaard",
   "url": "https://huggingface.co/rasgaard/Embla1-4bit-webgpu",
   "created_at": "2026-11-19T19:30:16.000Z",
-  "updated_at": "2026-11-19T19:30:51.000Z",
+  "updated_at": "2026-11-19T20:05:01.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

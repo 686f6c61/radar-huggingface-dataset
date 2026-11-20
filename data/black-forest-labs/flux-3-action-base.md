@@ -2,53 +2,55 @@
 
 ## Resumen
 
-FLUX 3 Action Base es un componente de adaptacion de pesos abiertos publicado por Black Forest Labs dentro de la familia FLUX 3 Action. Se trata de un modelo de accion sobre el mundo (world-action model) de 7.000 millones de parametros que recibe fotogramas de camara, el estado del robot y una instruccion de texto, y devuelve el siguiente bloque de acciones (action chunk) junto con los siguientes fotogramas de video, generados ambos mediante un proceso de denoising conjunto. El modelo combina un flujo de video, un flujo de texto y un tronco de accion compartido, con cabezas de accion especificas por embodiment (ee50 y gaming).
+FLUX-3 Action Base es un modelo de acción y mundo (world-action model) desarrollado por Black Forest Labs, el mismo laboratorio responsable de la familia FLUX de modelos de generación de imágenes. A diferencia de sus predecesores centrados en síntesis visual, este modelo se publica bajo la librería LeRobot y el pipeline de robótica, lo que indica que está diseñado para el aprendizaje de políticas robóticas y la modelización de dinámicas físicas a partir de observaciones, no para generar imágenes estáticas.
 
-Este repositorio concreto no es una politica de robot lista para usar, sino la base de adaptacion mas los encoders congelados compartidos. Las politicas completas para los robots SO-101 y DROID se distribuyen por separado y referencian automaticamente estos encoders compartidos. El paquete incluye el archivo `flux-3-action-base.safetensors`, un VAE de video compartido (`video_vae.safetensors`) y una copia sin modificar de Qwen3-VL-4B-Instruct como encoder de texto.
+El modelo se distribuye en formato safetensors con un tamaño de repositorio de 25,4 GB, lo que sugiere un conjunto de pesos de escala media-grande orientado a inferencia en entornos de investigación robótica. Se publica bajo la licencia FLUX Community License, con acceso restringido (gated), por lo que es necesario aceptar las condiciones en Hugging Face antes de descargarlo. La información pública disponible no detalla la arquitectura interna, el número de parámetros ni la longitud de contexto.
 
-Su relevancia radica en que publica los pesos base para adaptar el modelo a nuevos embodiments, simuladores o videojuegos mediante el entrenamiento de nuevas cabezas de accion, algo poco habitual en modelos de robotica de esta escala. El repositorio ocupa 25,4 GB y se distribuye bajo la FLUX Kommunity License v.1.0, con la salvedad de que el encoder de texto Qwen3-VL-4B-Instruct conserva su licencia Apache-2.0 original.
+Su relevancia actual radica en la convergencia entre modelos generativos de gran escala y la robótica: los world-action models permiten planificar acciones y predecir consecuencias físicas en un mismo sustrato, lo que resulta atractivo para manipulación, navegación y control basado en aprendizaje. La ficha se limita a los datos verificables publicados en Hugging Face; los apartados sin información se marcan explícitamente como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | World-action model de 7B con flujo de video, flujo de texto, tronco de accion compartido y cabezas de accion; 457 tensores |
-| Parametros totales | 7B (modelo de accion); el encoder de texto Qwen3-VL-4B-Instruct anade 4B adicionales |
+| Arquitectura | no disponible (el nombre y los tags sugieren un modelo de acción/mundo basado en FLUX, sin confirmación técnica) |
+| Parametros totales | no disponible |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (solo se distribuyen pesos en safetensors sin cuantizar) |
-| Idiomas soportados | no disponible (el encoder de texto es una copia de Qwen3-VL-4B-Instruct, multilingue, pero no se documentan los idiomas del sistema completo) |
-| Licencia | FLUX Kommunity License v.1.0; encoder de texto bajo Apache-2.0; el codigo de flux-action tiene su propia licencia |
-| Formato de pesos | safetensors (`flux-3-action-base.safetensors`, `video_vae.safetensors`, `text_encoder/`) |
-| Pipeline | robotics |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible |
+| Licencia | flux-kommunity-license (acceso restringido, requiere aceptación) |
+| Formato de pesos | safetensors |
 | Libreria | lerobot |
+| Pipeline | robotics |
 | Tamano del repositorio | 25,4 GB |
+| Descargas | 1047 |
+| Likes | 172 |
 
 ## Arquitectura y entrenamiento
 
-FLUX 3 Action es un modelo de accion sobre el mundo que unifica generacion de video y prediccion de acciones en un unico proceso de denoising: a partir del estado del robot, los fotogramas de camara y una instruccion de texto, produce simultaneamente el siguiente bloque de acciones y los siguientes fotogramas de video. La base contiene un flujo de video, un flujo de texto y un tronco de accion compartido, al que se acoplan cabezas de accion especificas (ee50 y gaming en esta publicacion). El encoder de texto es una copia sin modificar de Qwen3-VL-4B-Instruct, lo que aporta comprension conjunta de imagen y texto, y el modelo cuenta con un VAE de video compartido.
+No se ha publicado información técnica sobre la arquitectura interna del modelo en la información disponible. Los tags `flux`, `world-action-model`, `world-model` y `robot-learning` apuntan a un modelo orientado a la predicción de acciones y dinámicas de entorno, probablemente construido sobre componentes de la familia FLUX, pero no se confirma ni el tipo de transformer, ni si emplea mecanismos híbridos, ni la composición del dataset de entrenamiento.
 
-El numero de tokens de entrenamiento, la composicion del dataset y el uso de RLHF o DPO no se detallan en la informacion disponible. Si se documenta el flujo de adaptacion: para un nuevo embodiment, simulador o videojuego es necesario entrenar sus propias cabezas de accion sobre esta base, siguiendo la guia de fine-tuning de Black Forest Labs. Las politicas ya entrenadas para SO-101 y DROID referencian estos encoders compartidos de forma automatica, de modo que no es necesario reentrenarlos.
+Tampoco están disponibles el número de tokens de entrenamiento, la mezcla de datos (teleoperación, vídeo, simulación), ni si se aplicaron técnicas de RLHF, DPO o aprendizaje por imitación. Cualquier afirmación adicional sobre innovaciones como decodificación especulativa o atención lineal sería especulativa y no se incluye.
 
 ## Capacidades
 
-- Generacion de acciones de robot: devuelve bloques de acciones (action chunks) a partir de fotogramas de camara, estado del robot e instruccion en lenguaje natural.
-- Prediccion de video: genera de forma opcional los fotogramas de camara futuros de la escena, denoised junto con las acciones.
-- Comprension multimodal de la instruccion: el encoder Qwen3-VL-4B-Instruct procesa texto e imagen para condicionar la politica.
-- Adaptacion a nuevos embodiments: los pesos base permiten entrenar cabezas de accion nuevas para robots, simuladores o juegos distintos de SO-101 y DROID.
-- Integracion con el ecosistema LeRobot: el repositorio esta etiquetado como `lerobot` y usa el pipeline de robotica de Hugging Face.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
+- Modelo de acción y mundo para robótica: los tags `world-action-model` y `robot-learning` indican soporte para aprender políticas y predecir consecuencias de acciones en entornos físicos.
+- Integración con LeRobot: la librería declarada facilita su uso dentro del ecosistema de Hugging Face para aprendizaje robótico.
+- Potencial uso como world model: predicción de estados futuros a partir de observaciones y acciones, útil para planificación.
+- Capacidades de generación de texto, código, matemáticas o visión general: no disponibles o no confirmadas.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes multi-paso: no disponible de forma explícita; el paradigma world-action es afín a planificación, pero no se documenta.
+- Capacidades multilingües: no disponibles (el modelo no es lingüístico en el sentido habitual).
 
 ## Casos de uso
 
-- Adaptacion a un brazo robotico propio: partiendo de `flux-3-action-base.safetensors`, un equipo puede entrenar cabezas de accion especificas para su robot y reutilizar el VAE de video y el encoder de texto congelados, reduciendo el coste frente a entrenar una politica desde cero.
-- Manipulacion con SO-101: cargando la politica `flux-3-action-so101`, que referencia estos encoders compartidos, se puede ejecutar una politica lista para ese brazo de bajo coste en tareas de pick-and-place guiadas por instrucciones de texto.
-- Manipulacion en entornos DROID: la politica `flux-3-action-droid` permite desplegar el modelo sobre el dataset y la plataforma DROID, reutilizando la misma base de adaptacion.
-- Investigacion en world models para robotica: la prediccion conjunta de acciones y fotogramas futuros permite estudiar planificacion y evaluacion de politicas en simulacion antes de pasar al hardware.
-- Simuladores y videojuegos: la guia de fine-tuning contempla entrenar cabezas de accion para simuladores o juegos, usando la base como componente de adaptacion.
-- Generacion de datos sinteticos de robotica: los fotogramas de video predichos por el modelo pueden emplearse para aumentar datasets de entrenamiento o para validar politicas en escenarios no vistos.
-- Control asistido con supervision humana: en tareas donde el modelo propone acciones y un operador mantiene un boton de parada, dado que la model card exige explicitamente supervision humana y un medio de detencion.
+- Manipulación robótica con aprendizaje por imitación: el modelo puede emplearse para mapear observaciones visuales y proprioceptivas a acciones de brazo o pinza, integrándose en pipelines de LeRobot para entrenar políticas a partir de demostraciones.
+- Planificación basada en modelo (model-based planning): como world-action model, permite simular rollouts de acciones y evaluar trayectorias antes de ejecutarlas en el robot real, reduciendo el coste de prueba y error.
+- Investigación en aprendizaje por refuerzo: sirve como modelo de dinámica aprendido para generar entornos simulados donde entrenar agentes sin necesidad de hardware físico.
+- Navegación y control en entornos estructurados: predicción de transiciones estado-acción para tareas de locomoción o navegación en laboratorio.
+- Benchmarking de políticas robóticas: al publicarse en LeRobot, puede utilizarse como referencia base para comparar políticas entrenadas por terceros en tareas estandarizadas.
+- Prototipado en investigación académica: su disponibilidad en safetensors y su integración con el ecosistema Hugging Face facilitan la reproducción de experimentos en laboratorios con GPUs de gama alta.
+- Evaluación de seguridad en robótica: simular consecuencias de acciones antes de ejecutarlas permite filtrar comandos peligrosos en entornos colaborativos.
 
 ## Benchmarks y rendimiento
 
@@ -56,47 +58,34 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el backbone de accion de 7B en bf16 requiere aproximadamente 14 GB; el encoder Qwen3-VL-4B-Instruct anade aproximadamente 8-9 GB en bf16; a ello hay que sumar el VAE de video y las activaciones. Estas cifras son estimaciones derivadas del numero de parametros, no datos publicados por el autor.
-- El repositorio completo ocupa 25,4 GB, coherente con un consumo en torno a 25-30 GB de VRAM para cargar la pila sin cuantizar.
-- GPU recomendadas: A100 40/80 GB, H100, L40S 48 GB o similares para cargar la pila completa sin offloading.
-- Consumer GPU: una RTX 4090 de 24 GB queda justa para la pila completa; es previsible necesitar offloading de componentes o ejecutar el encoder y el modelo de accion en fases separadas. No hay datos publicados que confirmen el comportamiento en GPUs de consumo.
-- Opciones de despliegue: la libreria declarada es LeRobot; el codigo de referencia esta en el repositorio `flux-action` de Black Forest Labs. No se documenta soporte para vLLM, TGI, llama.cpp u Ollama, y estos motores no son aplicables a un modelo de accion con safetensors de este tipo.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: no disponible de forma oficial. Con un repositorio de 25,4 GB en safetensors, la carga en precisión completa requeriría al menos ~26 GB de VRAM, y más si se mantienen estados de optimizador o buffers adicionales.
+- GPU recomendadas: no confirmadas. Por tamaño, GPUs con 40-80 GB (A100, H100) son las candidatas naturales para inferencia sin cuantización; GPUs consumer de 24 GB (RTX 4090) podrían requerir cuantización o carga parcial.
+- Cabeza en GPU consumer: no confirmado; probablemente solo con cuantización y dependiendo del grafo de inferencia.
+- Opciones de despliegue: LeRobot es la librería declarada; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, que además están orientadas a modelos lingüísticos y no a políticas robóticas.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| flux-3-action-base | 7B (+4B encoder de texto) | no disponible | no disponible | FLUX Kommunity License v1.0 | Pesos en Hugging Face, componente de adaptacion |
-| flux-3-action-so101 | no disponible | no disponible | no disponible | no disponible | Politica lista para usar, en Hugging Face |
-| flux-3-action-droid | no disponible | no disponible | no disponible | no disponible | Politica lista para usar, en Hugging Face |
-| Otras politicas VLA/world-action de terceros | no disponible | no disponible | no disponible | no disponible | no disponible |
+| FLUX-3 Action Base | no disponible | no disponible | flux-kommunity-license | gated en Hugging Face | World-action model para robótica |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | No se dispone de información sobre modelos equivalentes en la búsqueda realizada |
 
-No se dispone de datos verificados sobre modelos comparables de otros desarrolladores en la informacion proporcionada, por lo que no se incluyen cifras de terceros.
+No se dispone de datos suficientes para establecer una comparativa rigurosa con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- No es una politica completa: es un componente de adaptacion; requiere entrenar cabezas de accion propias para cada nuevo embodiment.
-- Seguridad fisica: el modelo devuelve consignas de articulacion (joint targets) y nada en el modelo acota la velocidad, la fuerza ni el espacio de trabajo. La aplicacion debe imponer esos limites y mantener un medio de parada de hardware accesible.
-- Obligacion de validacion: la model card exige validar en simulador o con los limites de seguridad del brazo activados antes de operar cerca de personas.
-- Supervision humana: el uso del modelo para controlar una maquina de forma que ponga en riesgo a personas esta prohibido sin supervision humana y sin un medio de detencion.
-- Usos prohibidos por licencia: vulnerar la ley aplicable; decision automatizada completa o aplicaciones de alto riesgo que afecten a derechos legales; acoso, abuso o amenazas; explotacion o dano a menores.
-- Licencia: FLUX Kommunity License v.1.0, distinta de una licencia de codigo abierto estandar; conviene revisar `LICENSE.md` antes de un uso comercial. El encoder de texto conserva Apache-2.0 y el codigo de `flux-action` tiene licencia propia.
-- Idiomas y contexto: no se documentan los idiomas soportados ni la longitud de contexto efectiva.
-- Alucinacion en la prediccion de video: los fotogramas de camara generados son predicciones del modelo, no observaciones reales, y no deben tratarse como mediciones del entorno.
-- Sesgos: no se documentan evaluaciones de sesgo en la informacion disponible, y los sesgos del encoder Qwen3-VL-4B-Instruct subyacente pueden propagarse a la politica.
-- Repositorio sin descargas registradas en el momento de la consulta (0 descargas, 20 likes), lo que implica poca validacion externa acumulada.
+- Acceso restringido: requiere aceptar la licencia FLUX Community License en Hugging Face; no es de descarga libre inmediata.
+- Licencia no comercial estándar: la FLUX Community License impone condiciones específicas de uso; es imprescindible revisar los términos antes de cualquier despliegue comercial.
+- Falta de documentación técnica pública: no se han publicado parámetros, contexto, dataset ni benchmarks, lo que dificulta evaluar su idoneidad frente a alternativas.
+- Riesgo de alucinación física: como todo world model aprendido, puede predecir dinámicas incorrectas fuera de la distribución de entrenamiento, con riesgo en entornos reales.
+- Sesgos de dominio: al ser un modelo robótico, su comportamiento está limitado a los tipos de robots, sensores y tareas presentes en los datos de entrenamiento, no documentados.
+- Idiomas: no aplica en el sentido lingüístico; no se documentan capacidades multilingües.
+- Madurez: creado en septiembre de 2026 y actualizado en noviembre de 2026, con 1047 descargas; el ecosistema de terceros y las guías de producción son aún limitados.
 
 ## Enlaces
 
-- [Modelo en Hugging Face](https://huggingface.co/black-forest-labs/flux-3-action-base)
-- [Coleccion FLUX 3 Action](https://huggingface.co/collections/black-forest-labs/flux-3-action-6ab25aef555dd30ab86567f8)
-- [Documentacion de FLUX 3 Action](https://docs.bfl.ai/flux_3/flux3_action_overview)
-- [Guia de fine-tuning](https://docs.bfl.ai/flux_3/flux3_action_finetuning)
-- [Politica SO-101](https://huggingface.co/black-forest-labs/flux-3-action-so101)
-- [Politica DROID](https://huggingface.co/black-forest-labs/flux-3-action-droid)
-- [Repositorio de codigo flux-action](https://github.com/black-forest-labs/flux-action)
-- [Licencia FLUX Kommunity v1.0](LICENSE.md)
-- [Blog de Black Forest Labs sobre uso responsable](https://bfl.ai/blog/capable-open-and-safe-combating-ai-misuse)
-- [Encoder de texto Qwen3-VL-4B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct)
-- Contacto de seguridad: safety@blackforestlabs.ai
+- Hugging Face: https://huggingface.co/black-forest-labs/flux-3-action-base
+- LeRobot (librería declarada): https://github.com/huggingface/lerobot
+- Black Forest Labs: https://blackforestlabs.ai
+- Licencia FLUX Community: no disponible en la información proporcionada; consultar la página del modelo en Hugging Face.

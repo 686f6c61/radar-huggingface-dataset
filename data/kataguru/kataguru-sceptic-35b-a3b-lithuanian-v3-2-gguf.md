@@ -2,100 +2,106 @@
 
 ## Resumen
 
-Kataguru-Sceptic-35B-A3B-Lithuanian-v3.2 es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) especializado en lituano, desarrollado por el usuario kataguru sobre la base Kataguru-Sceptic-35B-A3B-v3.1. Su proposito principal es dotar a un modelo generalista de razonamiento, codigo y vision de capacidades nativas de lituano (gramatica, morfologia, traduccion bidireccional EN<->LT y FI<->LT) sin degradar las capacidades originales del modelo base. La version publicada en este repositorio es la cuantizacion GGUF, calibrada con un dataset imatrix especifico de lituano.
+Kataguru-Sceptic-35B-A3B-Lithuanian-v3.2-GGUF es la distribucion en formato GGUF del modelo Kataguru-Sceptic-35B-A3B-Lithuanian-v3.2, publicado por Datasein Oy (Finlandia) bajo la direccion tecnica de Jari Katajisto. Se trata de un modelo de lenguaje de arquitectura Mixture-of-Experts (MoE) con 35.505.251.456 parametros totales y 3B parametros activos por token, construido sobre el modelo base Kataguru-Sceptic-35B-A3B-v3.1. Su especializacion principal es la generacion y auditoria de codigo de automatizacion industrial (PLC y CNC) en lituano, fines y ingles, ademas de ingenieria de sistemas y razonamiento STEM.
 
-La arquitectura es un transformer MoE con 40 capas y 256 expertos por capa: 254 expertos del nucleo original congelados y 2 expertos nuevos dedicados al lituano (uno gramatical-tecnico y otro literario-traductor). El modelo totaliza 35.505.251.456 parametros y activa aproximadamente 3B por token, lo que permite un despliegue relativamente ligero en comparacion con su tamano total. Mantiene la ventana de contexto de 262.144 tokens del modelo base.
+La innovacion declarada por el autor es una arquitectura de 256 expertos por capa (254 congelados del nucleo Sceptic mas 2 expertos nativos lituanos), lo que permite conservar las capacidades del modelo base mientras se anade competencia en lituano sin reentrenar el nucleo. El modelo se distribuye con un encoder de vision ViT de 27 capas y un motor de tool calling basado en AST, lo que lo situa en la categoria image-text-to-text.
 
-La relevancia actual reside en su enfoque de "especializacion sin olvido catastrofico": al congelar el nucleo y anadir expertos especificos, el autor afirma conservar intactos los benchmarks del modelo base (media de 70,26 % en 15 benchmarks, GPQA Diamond 70,20 %, BFCL V4 83,67 %) mientras se anade competencia real en lituano. Es una propuesta interesante para quienes necesitan un modelo soberano de una lengua baltica con capacidades multimodales y de razonamiento avanzado.
+Esta version concreta es la cuantizacion GGUF calibrada con imatrix sobre un corpus lituano, publicada en tres variantes (APEX-Small, APEX-Medium y APEX-Good) mas el proyector multimodal mmproj, pensada para ejecucion en llama.cpp, LM Studio y Ollama. El repositorio ocupa 89,8 GB y acumula 1.102 descargas desde su publicacion en noviembre de 2026.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (qwen3_5_moe), 40 capas, 256 expertos por capa (254 congelados + 2 nuevos) |
-| Parametros totales | 35.505.251.456 |
-| Parametros activos | ~3B por token |
-| Longitud de contexto | 262.144 tokens |
-| Tipos de cuantizacion | GGUF APEX-Trio (APEX-Small ~11,9 GiB, APEX-Medium ~13,6 GiB, APEX-Good ~15,4 GiB) + mmproj-f16 (~890 MB); el ecosistema incluye BF16, NVFP4 y W4A16-AWQ |
-| Idiomas soportados | en, lt, fi |
+| Arquitectura | Transformer Mixture-of-Experts (MoE), 40 capas, 256 expertos por capa (254 congelados + 2 nativos lituanos), Top-8 por token, encoder de vision ViT de 27 capas |
+| Parametros totales | 35.505.251.456 (35,5B) |
+| Parametros activos | 3B por token |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF en tres variantes APEX (APEX-Small, APEX-Medium, APEX-Good), calibradas con imatrix sobre corpus lituano; el ecosistema del modelo incluye ademas BF16, NVFP4 y W4A16-AWQ en repositorios separados |
+| Idiomas soportados | Ingles (en), lituano (lt), fines (fi) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (este repositorio); safetensors BF16, NVFP4 y AWQ en repositorios hermanos |
+| Formato de pesos | GGUF (safetensors en el repositorio de pesos completos) |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue una arquitectura MoE de 40 capas con 256 expertos por capa. La innovacion clave es la estrategia de expansion: los expertos #0 a #253 del modelo base v3.1 se mantienen completamente congelados, preservando el razonamiento cientifico, el codigo competitivo, el tool calling agentico y las capacidades industriales (PLC/CNC). Se anaden dos expertos nuevos: el #254 especializado en gramatica lituana (7 casos gramaticales, aspecto verbal baltico, declinacion nominal compleja) y terminologia tecnica, clinica y legal; y el #255 orientado a prosa literaria, no ficcion, dialogo natural y traduccion fiel EN<->LT.
+El modelo es un transformer MoE de 40 capas con 256 expertos por capa y enrutamiento Top-8 por token. La particularidad del diseno v3.2 es que los expertos #0 a #253 permanecen congelados respecto al modelo base Kataguru-Sceptic-35B-A3B-v3.1, mientras que los expertos #254 y #255 se anaden como expertos nativos lituanos. Segun el autor, los 254 expertos del nucleo coactivan en cada paso de token junto a los dos expertos lituanos, de modo que el modelo conserva las capacidades del nucleo (razonamiento cientifico, codigo competitivo, tool calling) mientras incorpora competencia en lituano. Los pesos totales del modelo ascienden a 35,5B parametros con 3B activos por token, lo que reduce el coste computacional por inferencia respecto a un modelo denso del mismo tamano.
 
-El entrenamiento de los nuevos expertos se realizo sobre un conjunto de 5.075 muestras doradas verificadas humanamente, con calibracion contrastiva del router (`--moe-mode new_experts_only --recalibrate-router`, r=32, alpha=64). Se incluye una plantilla de chat nativa en lituano con etiquetas de control (`/lt`, `/translate`) y cabeceras de razonamiento localizadas. La cuantizacion GGUF se calibro con un fichero imatrix especifico de lituano (`imatrix_calibration_lt.txt`) aplicado a los 256 expertos. Se conservan el encoder de vision multimodal de 27 capas (333 tensores) y la cabeza especulativa MTP de la capa 40 (785 tensores).
+El autor declara un encoder de vision ViT de 27 capas integrado para tareas de vision-lenguaje (lectura de diagramas P&ID, esquemas electricos, pantallas HMI y graficos de ingenieria) y un motor de tool calling basado en AST con formato `<tool_call>`. No se detalla en la informacion disponible el numero de tokens de entrenamiento, la composicion exacta del dataset, ni si se aplicaron tecnicas de RLHF, DPO o decodificacion especulativa. Las cuantizaciones GGUF se han calibrado con imatrix sobre un corpus especifico de lituano, lo que segun el autor mejora la fidelidad de la cuantizacion para ese idioma.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento de nivel avanzado, heredado del nucleo congelado (GPQA Diamond 70,20 %).
-- Codigo competitivo y algoritmico (LiveCodeBench v6 Pass@1 39,43 %, con 90,70 % en problemas faciles).
-- Tool calling nativo con formato `<tool_call>` y deteccion de irrelevancia (BFCL V4 AST 83,67 %).
-- Vision multimodal: procesamiento de imagen y texto mediante encoder de 27 capas y proyector mmproj.
-- Razonamiento multi-paso y modo agente, con niveles de profundidad configurables (`{REASON:spoon}`, `{REASON:einstein}`, `{REASON:007}`, `{REASON:deep}`, `{REASON:low}`, `{REASON:off}`).
-- Traduccion bidireccional EN<->LT y FI<->LT en modo pagina completa con preservacion de parrafos (`/translate`).
-- Competencia nativa en lituano: morfologia, 7 casos gramaticales, aspecto verbal y declinacion.
-- Capacidades multilingues en ingles, lituano y finlandes.
-- Decodificacion especulativa mediante cabeza MTP en la capa 40.
+- Generacion de codigo de automatizacion industrial: IEC 61131-3 Structured Text para Beckhoff TwinCAT 3 (maquinas de estado con CASE, control de movimiento MC_MoveAbsolute, MC_Power, MC_GearIn, relojes distribuidos EtherCAT, diagnostico ADS) y Siemens TIA Portal SCL/S7-1500 (bloques FB/FC, DB de instancia, PID_Compact, diagnostico PROFINET).
+- Generacion y auditoria de G-code CNC para Fanuc, Siemens Sinumerik 840D y Heidenhain: compensacion de radio de herramienta G41/G42, offsets de trabajo G54-G59, ciclos fijos G71/G76/G81-G89, verificacion de carga de husillo y avance, y deteccion de colisiones en trayectorias.
+- Protocolos industriales y diagnostico SCADA/MES: OPC UA (IEC 62541), Modbus TCP/RTU, EtherCAT, PROFINET, CANopen y telemetria SQL Server/WCF.
+- Seguridad funcional y normativa de maquinaria: ISO 13849-1 (PLa-PLe), IEC 62061 / IEC 61508 (SIL 1-SIL 3), Safe Torque Off (STO), enclavamientos de parada de emergencia de doble canal y watchdogs.
+- Ingenieria de sistemas y software embebido en C++20, Rust, C para RTOS, Python 3.12, C#/.NET, SQL y Bash/Linux, con enfasis en concurrencia y seguridad de memoria.
+- Tool calling y function calling con cadenas de llamadas en formato `<tool_call>` AST y modo agente multi-paso.
+- Vision-lenguaje: lectura de diagramas P&ID, esquemas de cableado electrico, pantallas de error HMI y graficos de ingenieria mediante el encoder ViT de 27 capas.
+- Razonamiento STEM y matematicas, con resultados declarados en GPQA Diamond y LiveCodeBench v6.
+- Capacidades multilingues en lituano, fines e ingles, incluyendo traduccion.
+- Modo de razonamiento y modo sin censura (uncensored) segun los tags del autor.
 
 ## Casos de uso
 
-- Traduccion profesional EN<->LT de documentacion tecnica y legal: el modo `/translate` preserva estructura de parrafos y terminologia estatutaria o de patentes gracias al experto #254, adecuado para despachos y administraciones publicas lituanas.
-- Localizacion de productos al lituano: el experto #255 permite adaptar prosa de marketing, dialogos de interfaz y no ficcion con registro natural, manteniendo coherencia morfologica a temperatura baja.
-- Atencion al cliente en lituano: conversaciones multi-turno con 262.144 tokens de contexto permiten arrastrar historial extenso y documentacion de producto sin truncamiento.
-- Agentes automatizados con tool calling: el 83,67 % en BFCL V4 permite integrar el modelo en pipelines que invocan APIs, bases de datos o sistemas internos, con deteccion de llamadas irrelevantes.
-- Analisis de documentos escaneados en lituano: la combinacion de vision (encoder de 27 capas) y comprension linguistica permite extraer y resumir informacion de facturas, contratos o formularios.
-- Asistencia a desarrolladores en entornos balticos: generacion y revision de codigo con comentarios y documentacion en lituano, aprovechando el rendimiento en LiveCodeBench y el soporte de razonamiento profundo.
-- Investigacion academica en linguistica baltica: analisis morfologico, generacion de paradigmas y contraste de traducciones con el modo de razonamiento profundo activado.
+- Generacion de logica PLC en produccion: el modelo puede redactar bloques de Structured Text para TwinCAT 3 o SCL para S7-1500 a partir de una descripcion funcional, incluyendo maquinas de estado y bloques de control PID, lo que acelera el desarrollo de automatizacion en plantas con documentacion en lituano.
+- Auditoria de seguridad funcional: dado un esquema de enclavamientos, el modelo puede revisar el cumplimiento de ISO 13849-1 e IEC 62061, identificar canales unicos sin redundancia y proponer arquitecturas con la categoria PL o SIL requerida.
+- Post-procesado y validacion de G-code CNC: el modelo puede revisar programas de mecanizado de varias maquinas (Fanuc, Sinumerik, Heidenhain), detectar compensaciones de radio mal aplicadas o colisiones de trayectoria y verificar que los ciclos fijos sean coherentes con el material y la herramienta.
+- Diagnostico de redes industriales: con capacidad de razonar sobre OPC UA, Modbus, EtherCAT y PROFINET, puede interpretar trazas de error y proponer pasos de resolucion en entornos SCADA/MES, incluida la consulta de telemetria en SQL Server.
+- Asistente de ingenieria multimodal en planta: con el encoder de vision, el modelo puede leer una pantalla de error de HMI o un esquema electrico y generar un diagnostico o un procedimiento de reparacion en lituano o fines.
+- Agente de soporte tecnico multi-paso: gracias al tool calling en formato AST, puede encadenar consultas a una base de datos de manuales, a un sistema de tickets y a un repositorio de codigo para resolver incidencias de automatizacion sin intervencion humana.
+- Generacion de codigo de sistemas y embebido: puede producir codigo Rust o C++20 para tareas de concurrencia y seguridad de memoria, integrable en pipelines de revision de codigo o en herramientas de CI/CD.
+- Traduccion tecnica lituano-ingles-fines: puede traducir documentacion de automatizacion, manuales de PLC y procedimientos de seguridad manteniendo terminologia tecnica especializada.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | Resultado | Notas |
-|---|---|---|
-| Media 15 benchmarks (nucleo) | 70,26 % | Heredado intacto del v3.1 |
-| GPQA Diamond | 70,20 % (139/198) | STEM nivel doctorado |
-| LiveCodeBench v6 (Pass@1) | 39,43 % | Easy: 90,70 % |
-| BFCL V4 Single-Turn AST | 83,67 % | Non-Live: 88,44 %; irrelevancia: 80,26 % |
-| Auditoria lituana 10/10 (v3.2) | 10/10 PASS | MMLU-LT, ARC-LT, GSM8K-LT, TruthfulQA-LT y traduccion de pagina completa |
+Los resultados declarados por el autor en la model card son los siguientes. No se especifica en la informacion disponible la metodologia exacta de cada evaluacion ni el conjunto de comparacion.
 
-No se han publicado resultados desglosados por benchmark individual de la auditoria lituana en la informacion disponible; solo se indica el resultado agregado de 10/10.
+| Benchmark | Resultado |
+|---|---|
+| Media de 15 benchmarks (modelo base v3.1) | 70,26 % |
+| GPQA Diamond | 70,20 % |
+| LiveCodeBench v6 | 39,43 % |
+| LiveCodeBench v6 (Easy) | 90,70 % |
+| BFCL V4 AST (tool calling) | 83,67 % |
+| Industrial PLC/CNC | 96,67 % |
 
 ## Requisitos de hardware
 
-- BF16 completo: ~72 GB de VRAM (2x GPU de 48-80 GB).
-- NVFP4 o W4A16-AWQ: 2x RTX 5090 de 32 GB con TP=2, o 1 GPU de 32 GB.
-- GGUF APEX-Medium (~13,6 GiB): cabe en una unica GPU de 16 GB.
-- GGUF APEX-Small (~11,9 GiB): viable en GPUs consumer de 12-16 GB con margen ajustado.
-- GGUF APEX-Good (~15,4 GiB): requiere 16 GB o mas; anadir ~890 MB para el proyector mmproj si se usa vision.
-- Opciones de despliegue: llama.cpp, LM Studio, Ollama (etiquetas declaradas), vLLM para las variantes AWQ/NVFP4, y transformers para BF16.
-- Latencia y throughput: no disponibles en la informacion proporcionada; al activar solo ~3B parametros por token, el rendimiento esperado es sustancialmente superior al de un denso de 35B, pero no se aportan cifras medidas.
+- VRAM estimada para inferencia: el autor indica que las variantes GGUF APEX estan preparadas para GPU de 16 GB. El repositorio completo ocupa 89,8 GB, por lo que la variante APEX-Small es la que cabe en 16 GB; APEX-Medium y APEX-Good requieren mas VRAM, aunque no se detalla el tamano exacto de cada archivo en la informacion disponible.
+- GPU recomendadas: no disponible de forma explicita. Por el tamano de las variantes, una RTX 4090 (24 GB) o una RTX 4080 (16 GB) pueden ejecutar la variante APEX-Small; para las variantes mayores se recomendaria una A100 40 GB, H100 o configuraciones multi-GPU.
+- Cabe en GPU de consumo: si, al menos la variante APEX-Small en 16 GB. El autor menciona ademas que las variantes NVFP4 y W4A16-AWQ del modelo completo caben en una unica GPU de 24 GB.
+- Opciones de despliegue: llama.cpp, LM Studio y Ollama segun los tags del autor; el repositorio GGUF incluye el proyector mmproj para inferencia multimodal.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| Kataguru-Sceptic-35B-A3B-Lithuanian-v3.2 | 35,5B totales / ~3B activos | 262.144 | Apache 2.0 | Especializado en lituano, multimodal, MoE con nucleo congelado |
-| Qwen3-MoE (familia base, referencia) | ~30B totales / ~3B activos | 262.144 (segun variante) | Apache 2.0 | Base arquitectonica; sin especializacion en lituano |
-| Modelos densos de 30-35B (p. ej. Qwen2.5-32B) | 32B densos | 32.768-131.072 | Apache 2.0 | Mayor coste de inferencia por token al activar todos los parametros |
+No se dispone de datos de benchmark de modelos comparables en la informacion proporcionada. La comparativa se limita a los datos declarados por el autor para el modelo base y las variantes del propio ecosistema.
 
-No se dispone de comparativas publicadas frente a otros modelos especializados en lituano en la informacion proporcionada. La comparacion con la familia Qwen3-MoE es por herencia arquitectonica declarada en las etiquetas (`qwen3_5_moe`), no por evaluacion directa.
+| Modelo | Parametros | Activos | Contexto | Licencia | Formato |
+|---|---|---|---|---|---|
+| Kataguru-Sceptic-35B-A3B-Lithuanian-v3.2-GGUF | 35,5B | 3B | no disponible | Apache 2.0 | GGUF |
+| Kataguru-Sceptic-35B-A3B-v3.1 (base) | 35,5B | 3B | no disponible | Apache 2.0 | safetensors |
+| Kataguru-Sceptic-35B-A3B-Lithuanian-v3.2 (BF16) | 35,5B | 3B | no disponible | Apache 2.0 | safetensors |
+| Kataguru-Sceptic-35B-A3B-Lithuanian-v3.2-NVFP4 | 35,5B | 3B | no disponible | Apache 2.0 | NVFP4 |
+| Kataguru-Sceptic-35B-A3B-Lithuanian-v3.2-W4A16-AWQ | 35,5B | 3B | no disponible | Apache 2.0 | AWQ |
 
 ## Limitaciones y advertencias
 
-- En ficcion creativa a temperatura alta puede perder precision morfologica; el autor recomienda `temperature=0,2-0,3` con `presence_penalty=0,3` para tareas de correccion y proofreading.
-- El entrenamiento de los expertos lituanos se basa en solo 5.075 muestras verificadas; la cobertura de dominios especializados puede ser limitada frente a modelos entrenados con corpus masivos.
-- Riesgo de alucinacion inherente a los modelos generativos, especialmente en terminologia legal, medica o de patentes; requiere verificacion humana en produccion.
-- El soporte linguistico se limita a en, lt y fi; el rendimiento en otras lenguas no esta garantizado ni documentado.
-- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias sobre el rendimiento en dominios no evaluados.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion independiente de la comunidad.
-- El contexto de 262.144 tokens puede degradar la calidad en los extremos de la ventana; no se aportan pruebas de aguja en pajar para esta variante.
-- La fecha de creacion del repositorio (2026-11-09) es posterior a la fecha actual de referencia habitual; conviene verificar la vigencia y procedencia del artefacto antes de desplegarlo.
+- Los benchmarks declarados proceden de la model card del autor y no se acompanan de la metodologia detallada ni de artefactos de evaluacion verificables; conviene tratarlos con cautela hasta una validacion independiente.
+- El modelo esta especializado en automatizacion industrial y sistemas, con un sesgo de dominio claro; su rendimiento en tareas generales fuera de ese ambito puede ser inferior al de modelos de proposito general del mismo tamano.
+- El soporte de lituano y fines es declarado por el autor, pero no se aportan metricas especificas por idioma en la informacion disponible.
+- Riesgo de alucinacion en codigo de seguridad funcional: la generacion de logica PLC o de enclavamientos de seguridad debe ser revisada por un ingeniero certificado antes de su despliegue en maquinaria real.
+- El tag "uncensored" implica que el modelo puede no rechazar peticiones que otros modelos filtrarian; en entornos de produccion conviene anadir capas de moderacion.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo se distribuye sin garantias y el autor no ofrece soporte formal indicado en la informacion disponible.
+- La longitud de contexto no se especifica, lo que impide planificar casos de uso que dependan de ventanas largas.
+- El repositorio GGUF ocupa 89,8 GB y contiene varias variantes; es necesario seleccionar el archivo adecuado segun la VRAM disponible.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Lithuanian-v3.2-GGUF
-- Pesos BF16 maestros: https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Lithuanian-v3.2
+- Pesos completos BF16: https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Lithuanian-v3.2
 - Variante NVFP4: https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Lithuanian-v3.2-NVFP4
 - Variante W4A16-AWQ: https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Lithuanian-v3.2-W4A16-AWQ
 - Modelo base: https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-v3.1
+- Ejemplos de uso: https://huggingface.co/spaces/kataguru/Kataguru-Sceptic-35B-Usage-Examples
+- Guia de IA soberana: https://huggingface.co/spaces/kataguru/Kataguru-Sovereign-AI-Guide
+- Perfil del autor: https://huggingface.co/kataguru

@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Qwen3-VL-8B-Instruct-Tenstorrent-Tensix-BFP4",
   "created_at": "2026-11-17T09:01:59.000Z",
-  "updated_at": "2026-11-17T09:03:00.000Z",
+  "updated_at": "2026-11-19T08:36:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 19,
+  "downloads_30d": 22,
   "trending_score": 0,
   "parameters": 8767123696,
   "parameters_human": "8.77B",

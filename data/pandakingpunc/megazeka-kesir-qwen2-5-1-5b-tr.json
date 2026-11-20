@@ -1,0 +1,80 @@
+{
+  "schema": 2,
+  "id": "pandakingpunc/megazeka-kesir-qwen2.5-1.5b-tr",
+  "slug": "pandakingpunc-megazeka-kesir-qwen2-5-1-5b-tr",
+  "author": "pandakingpunc",
+  "url": "https://huggingface.co/pandakingpunc/megazeka-kesir-qwen2.5-1.5b-tr",
+  "created_at": "2026-11-20T10:13:05.000Z",
+  "updated_at": "2026-11-20T10:13:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "math",
+    "fractions",
+    "turkish",
+    "qlora",
+    "step-by-step",
+    "text-generation",
+    "tr",
+    "dataset:pandakingpunc/megazeka-kesir-tr-steps",
+    "base_model:unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit",
+    "base_model:adapter:unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 73911112,
+  "storage_human": "74 MB",
+  "context_length": null,
+  "base_model": "unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pandakingpunc/megazeka-denklem-qwen2.5-1.5b-tr · Hugging Face",
+      "url": "http://go/v1/AZIrUrRXzQ9eawAdpAEKfTBZgUzYI-g7pPqfqvFpgIgG7qjBfthggDrmEHsNRftOe19Bgy_fv_td3LrG6Va5er65vvEmCxXjj_rivcKYGjT0Ty22_Zmp8lMWcSBdXkzM61EfTyuKvZMuiIWzz64CSR_jT-JsucDNHQzT7oetJcT4lNORvatAjzzi5MbUwc3k2-l3r-yZkn42fTzT58E0BVKZVqO849pLTLQbp8uoAfWpfr6KJVQ-Bg",
+      "snippet": "Qwen2.5-1.5B-Instruct üzerine yerelde (RTX 4060, 8 GB) eğitilmiş bir LoRA adaptörüdür; çalışırken ağ bağlantısı ya da ücretli bir yapay zekâ API'si kullanmaz. Kardeş projeleri: Megazeka (yazım düzeltici), Megazeka-Sayı (sayı ..."
+    },
+    {
+      "title": "Release Megazeka-Denklem v1.0 · pandakingpunc/megazeka-denklem",
+      "url": "http://go/v1/AZIrUrRXzQ9eawAdpAEKfTBZgUzYI-g7pPqfqvFpgXHQBEw0JDuPjREdbRS70mix0gKL36uzssqz4GSe20Dgsge6koysq7SYfbN6ugTcfrIzdiCwxZoPUzAwZRIDnoUvgNdDBQaDV_SGme9SegcGZjj4kT1V8Bdwc423Z3LkuKSMAmhcUxIvm73IbY-05qjiwnQYdPCsX0bD9Ph-MYNGjFNfa072zm2yrgEf2NObzU-WwSsIwgI",
+      "snippet": "İlk yayın. Birinci dereceden, tek bilinmeyenli denklemleri Türkçe ve adım adım çözen, Qwen2.5-1.5B-Instruct üzerine eğitilmiş LoRA adaptörü (iç ad v2). Model: https://huggingface.co/pandakingpunc/..."
+    },
+    {
+      "title": "GitHub - pandakingpunc/megazeka · GitHub",
+      "url": "http://go/v1/AZIrUrRXzQ9eawAdpAEKfTBZgUzYI-g7pPqfqvFpgkMe-IK6j93DC2hCPFMqVUzJ6iYwO9uLOCsNLVE9bXJRmbYN_ymu6G-HL5zxoTuaXl1r0UbT4G6gbTH6_nhxBr0V5fyOxhHRQNleYONkRDZo5q0J3inB5vfPvaEFCd7DEknxYBg-R1Q-cxSbMPMxHRZau8bUnFxzSo1JsmYH",
+      "snippet": "Her iki depoda da ana dal bu depodaki yeni eğitimi (v2: 4.000 adım, 38.057 çift) içerir. İlk eğitim (v1: 1.800 adım, 32.000 çift) v1 etiketiyle erişilebilir kalır, örneğin PeftModel.from_pretrained(base, \"pandakingpunc/megazeka-byt5-tr-spellfix\", revision=\"v1\")."
+    },
+    {
+      "title": "Qwen2.5 - a Qwen Collection",
+      "url": "http://go/v1/AZIrUrRXzQ9eawAdpAEKfTBZgUzYI-g7pPqfqvFpg0RxJBkGH-MaWfpxbx4USeFl59v2PMbcDIw18dVDK271ADrr_ho_9la0pvG2GR7sm-pcB7bpUTxn7eTfLbhKYoI6bHIz0naPIA7QAmCG57edE_A-N1eLxhYubUmWACUeEIzLjz0OdEl2E1BXS0O3Lfye87LmglSapxgG6N2UY2QbOwQ",
+      "snippet": "Qwen2.5 language models, including pretrained and instruction-tuned models of 7 sizes, including 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B."
+    },
+    {
+      "title": "Qwen/Qwen2.5-1.5B · Hugging Face",
+      "url": "http://go/v1/AZIrUrRXzQ9eawAdpAEKfTBZgUzYI-g7pPqfqvFphK8zFJImRYJx3KLnM3mcEu0sCXwSRAn1h1X3osaOLuhP9p253DJeUFP-vnXG1qcqip6iODSg3JqUpfb38pdA_lZkzgUYTLklwnEC-7NDxtgu5ZvfolhVaPTudwkdjH1QVs72qfh12gIGYpXfRquVMsa5BJXv8juyBOuGhAA",
+      "snippet": "Text Generation model with 2B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

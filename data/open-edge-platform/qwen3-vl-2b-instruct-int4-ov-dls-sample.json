@@ -38,8 +38,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "open-edge-platform/qwen3-vl-2B-instruct-int4-ov-dls",
+  "renamed_at": "2026-11-20T09:46:18.236Z",
   "benchmarks": [],
   "sources": []
 }

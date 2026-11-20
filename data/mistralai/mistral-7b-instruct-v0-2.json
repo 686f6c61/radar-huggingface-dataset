@@ -25,10 +25,11 @@
     "eval-results",
     "text-generation-inference",
     "deploy:azure",
+    "deploy:sagemaker",
     "region:us"
   ],
   "likes": 3283,
-  "downloads_30d": 1071464,
+  "downloads_30d": 1054362,
   "trending_score": 17,
   "parameters": 7241732096,
   "parameters_human": "7.24B",

@@ -1,0 +1,57 @@
+{
+  "schema": 2,
+  "id": "rufalabs/rufa-ears-v1.9.1",
+  "slug": "rufalabs-rufa-ears-v1-9-1",
+  "author": "rufalabs",
+  "url": "https://huggingface.co/rufalabs/rufa-ears-v1.9.1",
+  "created_at": "2026-11-20T08:58:09.000Z",
+  "updated_at": "2026-11-20T08:58:32.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "lb",
+    "de",
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "lb",
+    "de",
+    "fr",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 808878080,
+  "parameters_human": "808.9M",
+  "storage_bytes": 1617824864,
+  "storage_human": "1.6 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Benchmarks: Rufa against other models in Luxembourgish",
+      "url": "https://rufalabs.ai/benchmarks",
+      "snippet": "vor 6 Tagen ... Rufa Ears, version by version ... Words written down correctly, out of 100. Dashed lines: other models. ... Rufa Ears v1.6 gets 10.6 more words in ..."
+    }
+  ]
+}

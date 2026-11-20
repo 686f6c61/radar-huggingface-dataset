@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "mucahitrtn/repro-2508.21380-leela-code",
+  "slug": "mucahitrtn-repro-2508-21380-leela-code",
+  "author": "mucahitrtn",
+  "url": "https://huggingface.co/mucahitrtn/repro-2508.21380-leela-code",
+  "created_at": "2026-11-20T05:56:01.000Z",
+  "updated_at": "2026-11-20T05:56:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "reproducibility",
+    "neurips-2026",
+    "arxiv:2508.21380",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Store Finder - Lidl US",
+      "url": "https://www.lidl.com/c/store-finder/s10089075",
+      "snippet": "Store Finder & Opening Hours Search by your Zip Code or City to find your nearest Lidl and start saving!"
+    }
+  ]
+}

@@ -2,85 +2,94 @@
 
 ## Resumen
 
-El modelo `Qwen3.8-27B-OBLITERATED-Agentic` es una release de configuración y tokenizer creada por `medismera` sobre el checkpoint `OBLITERATUS/Qwen3.8-27B-OBLITERATED`, que a su vez es una variante sin rechazos del modelo base `Qwen/Qwen3.8-27B`. Su objetivo es restaurar la funcionalidad de tool calling nativa y corregir defectos de la plantilla de chat y del parser de razonamiento que aparecían en el checkpoint abliterated.
+Qwen3.8-27B-OBLITERATED-Agentic es un ajuste fino del checkpoint abliterado Qwen3.8-27B-OBLITERATED, a su vez derivado del modelo base Qwen/Qwen3.8-27B. Lo publica el usuario medismera en Hugging Face bajo licencia Apache 2.0. El modelo parte de la familia Qwen3.5 (tag `qwen3_5`) y se presenta como una configuracion "production-engineered": plantilla de chat corregida, soporte nativo de tool calling, protocolo de razonamiento propio (Mythos-Class) y ventana de contexto ampliada hasta 128K tokens en produccion, con techo nativo declarado de 256K.
 
-El modelo subyacente utiliza una arquitectura híbrida de atención lineal (Mamba SSM + multi-head self-attention) con 27.000 millones de parámetros y una ventana de contexto nativa de 32.768 tokens, ampliable a 131.072 con YaRN. Esta release es relevante para desarrolladores que construyen agentes autónomos o herramientas de asistencia técnica, porque elimina la pérdida silenciosa de datos en bucles de agente (como Hermes Agent, Aider u OpenCode) y proporciona scripts de despliegue para SGLang, vLLM y llama.cpp. Mantiene la abliteration del modelo original, lo que permite responder a peticiones que el modelo base rechazaría, útil en ámbitos como ciberseguridad, investigación y tareas de código complejas.
+El problema que aborda es concreto: segun la model card, los checkpoints abliterados upstream arrastraban una plantilla de chat truncada de 506 bytes, descarte silencioso de mensajes con `role: "tool"`, etiquetas de pensamiento invertidas y bucles infinitos de cadena de pensamiento. Esta version sustituye la plantilla por una Jinja2 de 9,4 KB con 22 rutas de resolucion de tool calling y anade descomposicion jerarquica de tareas (Task Tree) y auto-revision adversarial dentro del bloque `<think>`. El resultado es un modelo orientado a agentes, generacion de codigo y flujos multi-paso.
+
+Con 27.781.427.952 parametros (unos 27,8B), formato exclusivamente safetensors y ramas cuantizadas FP8 y AWQ, el modelo es relevante para quien necesite un LLM denso de ~28B con contexto largo, capacidades agenticas fiables y despliegue en una sola GPU de 24 GB mediante la rama AWQ. La model card declara soporte multimodal de entrada (pipeline `image-text-to-text` en los tags), aunque no detalla el componente de vision.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida lineal-attention (Mamba SSM + Multi-Head Self-Attention), 64 capas intercaladas, atención completa cada 4 capas, GQA 64 query heads / 8 KV heads, dimensión oculta 5.120 |
-| Parametros totales | 27.000 millones (27B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 32.768 tokens nativos; 131.072 con YaRN |
-| Tipos de cuantizacion | No disponible (solo se menciona Q6_K en ejemplos de despliegue GGUF) |
-| Idiomas soportados | Inglés (en), chino (zh), árabe (ar) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | No disponible (el repositorio contiene configuración y tokenizer; los pesos se heredan del checkpoint base) |
+| Arquitectura | Transformer derivado de Qwen3.5, con componentes de atencion lineal y Mamba segun los tags del repositorio; detalles exactos no disponibles |
+| Parametros totales | 27.781.427.952 (~27,8B) |
+| Parametros activos | No aplica (no se declara arquitectura MoE) |
+| Longitud de contexto | 131.072 tokens (128K) probados en produccion; hasta 262.144 (256K) nativos segun la model card |
+| Tipos de cuantizacion | BF16 (completa), FP8 (8 bits), AWQ (4 bits con MTP y Marlin); no se ofrecen GGUF |
+| Idiomas soportados | Ingles (en), chino (zh), arabe (ar) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | Safetensors (29 shards en BF16, 2 en FP8) |
 
 ## Arquitectura y entrenamiento
 
-`Qwen3.8-27B` emplea una arquitectura híbrida de atención lineal que combina State Space Models (Mamba SSM) para el escaneo de prefijos en tiempo lineal con Multi-Head Self-Attention para el recall asociativo denso. Las 64 capas se organizan de forma intercalada, ejecutando atención completa cada 4 capas (`full_attention_interval: 4`). El modelo utiliza Grouped-Query Attention con 64 query heads y 8 key-value heads, una dimensión oculta de 5.120 y un vocabulario de 248.044 tokens.
+La informacion disponible no detalla la arquitectura interna mas alla de las etiquetas del repositorio, que mencionan `mamba` y `linear-attention` junto a `qwen3_5`. Esto sugiere una variante hibrida de la familia Qwen3.5 con capas de atencion lineal o estado recurrente combinadas con atencion clasica, pero no se especifica el numero de capas, cabezas, dimension oculta ni la proporcion entre tipos de capa. El modelo es denso, no MoE, a tenor del recuento de parametros y de la ausencia de parametros activos en la informacion.
 
-Los datos de entrenamiento, la composición del dataset y si se aplicó RLHF o DPO no están disponibles en la información proporcionada. Esta release no añade entrenamiento adicional; se limita a restaurar la plantilla Jinja completa (8.952 bytes), sincronizar el `tokenizer_config.json` y corregir la emisión condicional de los tags ``. La abliteration original se basa en la proyección ortogonal del vector de rechazo sobre las activaciones del residual stream, preservando el comportamiento sin rechazos del checkpoint `OBLITERATUS`.
+Tampoco se publican datos sobre el corpus de entrenamiento original (numero de tokens, composicion, fases de RLHF o DPO) ni sobre el proceso de abliteracion aplicado por OBLITERATUS. Lo que si documenta la model card es la intervencion de medismera: sustitucion de la plantilla de chat por una Jinja2 canonica de 9,4 KB con 22 rutas de resolucion de tool calling, inyeccion del protocolo Mythos-Class (descomposicion en arbol de tareas, auto-revision adversarial y convergencia antes de cerrar `</think>`) y ampliacion del techo de generacion por turno a 16.384 tokens. Se recomienda muestreo con `temperature 0.65`, `repetition_penalty 1.15` y `presence_penalty 0.15` para evitar los bucles de razonamiento documentados en el checkpoint upstream.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multi-step con soporte de modo `thinking` controlable mediante `reasoning_effort`.
-- Tool calling nativo al 100%: invocación de funciones con argumentos formatados, llamadas paralelas y devoluciones multi-turno con `role: "tool"`.
-- Integración con agentes autónomos como Hermes Agent, Aider y OpenCode, sin pérdida silenciosa de datos en los bucles de retroalimentación.
-- Compatibilidad con parsers de razonamiento (por ejemplo, `qwen3` en SGLang) que separan `reasoning_content` de `content` en respuestas de la API.
-- Capacidades multilingües en inglés, chino y árabe.
-- Comportamiento "uncensored": al eliminar los rechazos del modelo base, puede abordar peticiones de ciberseguridad, análisis técnico y tareas de código que el modelo original rechazaría.
-- El modelo base `Qwen/Qwen3.8-27B` es nativamente vision-language (imágenes y vídeos), aunque esta release no documenta el flujo de trabajo multimodal.
+- Generacion de texto conversacional multi-turno con contexto de hasta 128K tokens en produccion.
+- Razonamiento con cadena de pensamiento explicita en bloques `<think>`, con protocolo de auto-revision adversarial para reducir bucles.
+- Descomposicion jerarquica de tareas (Task Tree): el modelo estructura objetivos complejos en fases de analisis, verificacion e implementacion.
+- Tool calling y function calling nativos, con soporte declarado para Hermes Agent, Aider y OpenCode, y parsers dedicados en SGLang (`qwen3_coder`) y vLLM (`hermes`).
+- Ejecucion agentica multi-paso con llamadas a herramientas encadenadas (terminal, lectura y escritura de ficheros, validacion).
+- Generacion de codigo y tareas de razonamiento matematico y logico.
+- Capacidad multimodal de entrada declarada en los tags (`image-text-to-text`), sin detalle de resolucion o encoder.
+- Multilinguee en ingles, chino y arabe; no se declara soporte de castellano.
+- Modo "uncensored" por herencia del checkpoint abliterado, con rechazo reducido a peticiones que el modelo base filtraria.
 
 ## Casos de uso
 
-- Agentes autónomos con tool calling: desplegar con SGLang o vLLM para que el agente ejecute llamadas a funciones en bucles multi-turno sin truncamientos ni pérdida de mensajes de tipo `role: "tool"`.
-- Asistentes de programación tipo Aider u OpenCode: el modelo puede editar archivos, ejecutar comandos y parsear correctamente las respuestas de herramientas, lo que lo hace adecuado para flujos de trabajo de desarrollo asistido.
-- API compatible con OpenAI en producción: servir mediante vLLM con `--enable-auto-tool-choice` y `--tool-call-parser hermes`, integrándose con clientes estándar como LangChain o LiteLLM.
-- Análisis de vulnerabilidades y pruebas de penetración: al estar abliterated, responde con detalle técnico a consultas de seguridad ofensiva sin evasivas ni charlas de seguridad.
-- Entornos de alta concurrencia para agentes: usar SGLang con RadixAttention para optimizar el caché de KV y maximizar el throughput en cargas de trabajo multi-turno.
-- Despliegue local en GPU de consumidor: cuantizar a GGUF y ejecutar con llama-server en RTX 4090 o RTX 5090, aprovechando flash attention y caché de prompts para inferencia local.
-- Pipelines de razonamiento que requieren distinguir la cadena de pensamiento de la respuesta final: el parser `qwen3` canaliza el pensamiento a `reasoning_content` y deja `content` con la respuesta, útil para aplicaciones que necesitan mostrar pasos intermedios.
+- Agentes de codigo autonomos: con tool calling nativo y 16.384 tokens de salida por turno, el modelo puede leer un repositorio, planificar cambios en un arbol de tareas, escribir parches y ejecutar tests en un bucle cerrado dentro de herramientas como Aider u OpenCode.
+- Automatizacion de operaciones y pentesting autorizado: la plantilla incluye ejemplos de flujo con terminal, inspeccion de codigo y validacion de exploits; encaja en pipelines de reconocimiento y analisis de vulnerabilidades sobre entornos propios.
+- Atencion al cliente multi-turno: la ventana de 128K permite mantener historiales largos y documentacion de producto en contexto sin truncar, con respuestas en ingles, chino o arabe.
+- Analisis de documentos extensos: informes, contratos o bases de codigo que superan los 100K tokens se pueden procesar en una sola pasada, con resumen y extraccion estructurada.
+- Generacion de codigo en produccion: la rama AWQ cabe en una RTX 4090 y permite servir una API compatible con OpenAI mediante vLLM, integrble en pipelines de CI/CD para revision o generacion de tests.
+- Razonamiento multi-paso con verificacion: el protocolo Mythos-Class fuerza al modelo a cuestionar sus hipotesis antes de responder, util en diagnostico de fallos, analisis de causa raiz o planificacion tecnica.
+- Despliegue soberano o de investigacion sin restricciones de filtrado: al ser abliterado y Apache 2.0, sirve para estudiar comportamiento de modelos sin capas de rechazo, siempre con supervision humana.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tablas de MMLU, HumanEval, GSM8K ni comparativas numericas con otros modelos; solo describe correcciones funcionales y de plantilla respecto al checkpoint upstream.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en FP16, aproximadamente 54 GB; en cuantización GGUF Q6_K, aproximadamente 20-22 GB. Estas cifras son estimaciones para los pesos del modelo, sin considerar el caché de KV.
-- GPU recomendadas: RTX 4090 (24 GB) o RTX 5090 (32 GB) para ejecución local con GGUF cuantizado; A100 (80 GB) o H100 para despliegue en producción con FP16 o BF16.
-- Opciones de despliegue: SGLang (RadixAttention, alta concurrencia), vLLM (API compatible con OpenAI y tool calling), llama-server (GGUF para GPU de consumidor).
-- Latencia y throughput: no disponible.
+- BF16 (completa): ~60 GB de VRAM; requiere 2x A100, 2x RTX 4090, H100 o configuracion tensor-parallel equivalente.
+- FP8 (8 bits): ~30 GB de VRAM; cabe en 1x A100 (40 u 80 GB) o en 2x RTX 3090/4090.
+- AWQ (4 bits): ~16 GB de VRAM; cabe en una sola GPU de 24 GB (RTX 3090, RTX 4090, A5000).
+- Motores soportados: SGLang (recomendado por RadixAttention para agentes), vLLM, TGI y TRT-LLM en BF16; SGLang, vLLM y LMDeploy en AWQ.
+- KV cache en FP8 (`--kv-cache-dtype fp8_e5m2`) recomendada para sostener 128K de contexto sin agotar memoria.
+- No se ofrece ruta GGUF/llama.cpp ni Ollama; el autor opta por safetensors para evitar bugs de kernels GGUF.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| `Qwen/Qwen3.8-27B` | 27B | 32.768 (131.072 con YaRN) | Apache-2.0 | Hugging Face | Modelo base con plantilla de chat original y filtros de seguridad estándar |
-| `OBLITERATUS/Qwen3.8-27B-OBLITERATED` | 27B | 32.768 | Apache-2.0 | Hugging Face | Variante abliterated sin rechazos, con defectos en tokenizer y plantilla |
-| `medismera/Qwen3.8-27B-OBLITERATED-Agentic` | 27B | 32.768 | Apache-2.0 | Hugging Face | Release de configuración y tokenizer sobre el checkpoint abliterated, con tool calling corregido |
+| medismera/Qwen3.8-27B-OBLITERATED-Agentic | ~27,8B | 128K (256K nativo) | Apache 2.0 | Safetensors (BF16, FP8, AWQ) | Tool calling corregido, protocolo Mythos, abliterado |
+| OBLITERATUS/Qwen3.8-27B-OBLITERATED | ~27,8B | 32K nativo | Apache 2.0 | Safetensors | Checkpoint upstream; plantilla truncada y tool calling roto segun la model card |
+| Qwen/Qwen3.8-27B | ~27,8B | No disponible | No disponible | No disponible | Modelo base original; comportamiento alineado y sin abliterar |
 
-No se dispone de datos de rendimiento comparativo para estos modelos.
+No se dispone de datos de rendimiento comparado ni de especificaciones detalladas de los modelos alternativos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El repositorio no contiene los pesos del modelo; solo incluye configuración y tokenizer. Es necesario descargar el checkpoint base `OBLITERATUS/Qwen3.8-27B-OBLITERATED` para su uso.
-- Al ser una variante uncensored, el modelo puede generar contenido inapropiado o peligroso. Para despliegues en producción se requiere una capa de moderación y control de seguridad.
-- No hay evaluación exhaustiva de sesgos ni de tasas de alucinación publicadas.
-- Los idiomas soportados se limitan a inglés, chino y árabe; la calidad en otros idiomas no está garantizada.
-- La ventana de contexto nativa es de 32.768 tokens, y la extensión a 131.072 mediante YaRN puede degradar el rendimiento si no se configura adecuadamente.
-- Los defectos corregidos en la plantilla Jinja y el tokenizer son específicos de esta release; cualquier actualización posterior del checkpoint base podría requerir reaplicar los parches.
-- El uso de `reasoning_effort` y el parser `qwen3` exige una configuración cuidadosa para evitar respuestas vacías en clientes estándar.
+- Modelo abliterado: se ha eliminado o reducido el direccionamiento de rechazo, por lo que puede producir contenido que el modelo base filtraria. Requiere moderacion externa en produccion.
+- Riesgo de alucinacion inherente a la familia y agravado por el modo de razonamiento extendido; la auto-revision Mythos-Class mitiga bucles pero no garantiza veracidad.
+- Idiomas limitados a ingles, chino y arabe; el castellano no esta declarado y su calidad no esta verificada.
+- La model card no documenta sesgos conocidos ni evaluaciones de seguridad; no hay benchmarks publicados.
+- El contexto de 256K es un maximo nativo declarado, pero solo 128K estan probados en produccion; por encima de ese umbral el comportamiento no esta garantizado.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen3.8-27B y el checkpoint OBLITERATUS pueden tener condiciones adicionales que conviene revisar antes de desplegar.
+- No hay soporte GGUF ni Ollama; el despliegue en CPU o en hardware sin GPU compatible con safetensors y FP8/AWQ no esta cubierto.
+- La arquitectura hibrida con componentes Mamba y atencion lineal no esta documentada en detalle, lo que complica estimar el rendimiento real en contextos largos.
+- El repositorio ocupa 233,6 GB, lo que exige espacio de almacenamiento considerable incluso descargando solo una rama.
 
 ## Enlaces
 
-- Página del modelo en Hugging Face: https://huggingface.co/medismera/Qwen3.8-27B-OBLITERATED-Agentic
-- Checkpoint abliterated original: https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED
-- Modelo base Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
-- Discusión sobre tool calls rotas: https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED/discussions/9
-- Discusión sobre pérdida de roles `tool` y contenido vacío: https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED/discussions/14
-- Discusión sobre el modo de razonamiento invertido: https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED/discussions/6
+- Modelo en Hugging Face: https://huggingface.co/medismera/Qwen3.8-27B-OBLITERATED-Agentic
+- Checkpoint base abliterado: https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED
+- Modelo original: https://huggingface.co/Qwen/Qwen3.8-27B
+- Discusion sobre bucles de razonamiento en el upstream: https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED/discussions/7
+- Discusion sobre plantilla de chat truncada (issue #9): https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED/discussions/9
+- Discusion sobre plantilla de chat truncada (issue #14): https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED/discussions/14

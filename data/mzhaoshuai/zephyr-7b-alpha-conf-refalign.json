@@ -1,0 +1,54 @@
+{
+  "schema": 2,
+  "id": "mzhaoshuai/zephyr-7b-alpha-conf-refalign",
+  "slug": "mzhaoshuai-zephyr-7b-alpha-conf-refalign",
+  "author": "mzhaoshuai",
+  "url": "https://huggingface.co/mzhaoshuai/zephyr-7b-alpha-conf-refalign",
+  "created_at": "2025-10-03T11:40:17.000Z",
+  "updated_at": "2026-11-20T08:18:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "mistral",
+    "refalign",
+    "dataset:shuchangtao/CONQORD_dataset",
+    "arxiv:2504.09895",
+    "base_model:mzhaoshuai/zephyr-7b-alpha-conf-sft",
+    "base_model:adapter:mzhaoshuai/zephyr-7b-alpha-conf-sft",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 356337771,
+  "storage_human": "356 MB",
+  "context_length": null,
+  "base_model": "mzhaoshuai/zephyr-7b-alpha-conf-sft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lidl, ça vaut le coup. En supermarché et en ligne.",
+      "url": "https://www.lidl.fr/",
+      "snippet": "Faites confiance à LIDL, avec près de 1 600 supermarchés en France, vous pourrez réaliser tous vos achats à des prix avantageux …Read more"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 2,
+  "id": "gumloop/lotline-det-v2",
+  "slug": "gumloop-lotline-det-v2",
+  "author": "gumloop",
+  "url": "https://huggingface.co/gumloop/lotline-det-v2",
+  "created_at": "2026-11-20T11:15:07.000Z",
+  "updated_at": "2026-11-20T11:15:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "object-detection",
+    "faster-rcnn",
+    "garment-inspection",
+    "quality-control",
+    "bangladesh",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 146501329,
+  "storage_human": "147 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gumloop: The enterprise AI agent platform",
+      "url": "https://www.gumloop.com/",
+      "snippet": "Gumloop is the multiplayer AI agent builder. Let anyone at your company build agents with any AI model, any integration while IT …"
+    },
+    {
+      "title": "Gumloop | Enterprise",
+      "url": "https://www.gumloop.com/enterprise",
+      "snippet": "Gumloop has been critical in helping all teams at Instacart — including those without technical skills — adopt AI and automate their …"
+    },
+    {
+      "title": "Welcome to Gumloop",
+      "url": "https://docs.gumloop.com/",
+      "snippet": "Gumloop is an AI agent platform. Build AI agents that use your tools and data to do real work, then automate them with triggers, …"
+    },
+    {
+      "title": "Gumball - Gumloop",
+      "url": "https://docs.gumloop.com/core-concepts/gumball",
+      "snippet": "To add Gumball to a channel, first run /invite @Gumloop, then run /agents add gumball. When anyone in that channel or its threads …"
+    },
+    {
+      "title": "Gumloop",
+      "url": "https://gumloop.ghost.io/",
+      "snippet": "Jan 10, 2025 · Announcing our $3.1M Seed Round Led by First Round We started Gumloop just over 1 year ago as a side project, …"
+    }
+  ]
+}

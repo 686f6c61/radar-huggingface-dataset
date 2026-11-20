@@ -5,7 +5,7 @@
   "author": "nathanmp",
   "url": "https://huggingface.co/nathanmp/DeepSeek-V4.1-Flash-1017-IQ4_KS-GGUF",
   "created_at": "2026-11-16T05:18:19.000Z",
-  "updated_at": "2026-11-18T04:33:28.000Z",
+  "updated_at": "2026-11-20T07:11:39.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -33,7 +33,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 6,
+  "downloads_30d": 128,
   "trending_score": 0,
   "parameters": 748494684784,
   "parameters_human": "748.49B",

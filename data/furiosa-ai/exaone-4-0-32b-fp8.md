@@ -2,83 +2,90 @@
 
 ## Resumen
 
-EXAONE 4.0 es la cuarta generacion de la familia de modelos de lenguaje de LG AI Research, y esta variante de 32B es un transformer denso autorregresivo multilingue (ingles, coreano y espanol) que unifica un modo no razonador para instrucciones generales con un modo razonador para problemas complejos. El modelo incorpora soporte nativo para tool calling y uso agente, lo que lo posiciona como una opcion solida para pipelines de automatizacion y agentes conversacionales.
+EXAONE-4.0-32B-FP8 es la variante cuantizada a FP8 del modelo EXAONE 4.0 de 32B desarrollado por LG AI Research, empaquetada por Furiosa AI en un bundle ejecutable (FXB) para su acelerador RNGD. Se trata de un transformer denso autorregresivo de 32.003.216.384 parametros (dato real del safetensors) que unifica un modo de instruccion general sin razonamiento con un modo de razonamiento activable por peticion, e incorpora soporte nativo de tool calling y uso agentico. El modelo cubre tres idiomas: ingles, coreano y espanol.
 
-Este repositorio concreto, publicado por FuriosaAI, contiene el modelo LGAI-EXAONE/EXAONE-4.0-32B-FP8 junto con un Furiosa Executable Bundle (FXB) precompilado para ejecutarlo en hardware FuriosaAI RNGD mediante el motor Furiosa-LLM. Los pesos estan cuantizados en FP8 estatico con activaciones en FP8 dinamico, y la cache KV se mantiene en precision de 16 bits. Su relevancia actual radica en que ofrece una alternativa optimizada para inferencia en hardware especializado, con una API compatible con OpenAI y soporte de razonamiento activable por peticion.
+La relevancia de esta publicacion radica en que demuestra la viabilidad de servir un modelo de 32B en precision FP8 sobre hardware no-GPU (el acelerador RNGD de Furiosa AI), con un plan de paralelismo de tensor de 32 PEs mapeado a cuatro tarjetas RNGD. Las activaciones se cuantizan dinamicamente a FP8 en tiempo de ejecucion (por token y por bloque), mientras que la cache KV se mantiene en 16 bits, lo que reduce el consumo de memoria sin degradar la precision del contexto.
+
+El modelo base es LGAI-EXAONE/EXAONE-4.0-32B-FP8, y esta publicacion anade unicamente el bundle de ejecucion y los parsers de razonamiento (`exaone4`) y de tool calling (`hermes`) para Furiosa-LLM. La licencia es la EXAONE AI Model License Agreement 1.2 - NC, de tipo "other" y con restricciones de uso no comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso autorregresivo (EXAONE 4.0) |
-| Parametros totales | 32.003.216.384 (32B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | FP8 (pesos estaticos, activaciones dinamicas por token y por bloque); cache KV en 16 bits |
-| Idiomas soportados | Ingles, coreano, espanol |
-| Licencia | EXAONE AI Model License Agreement 1.2 - NC (uso no comercial) |
-| Formato de pesos | safetensors, FXB (Furiosa Executable Bundle) |
+| Arquitectura | EXAONE 4.0 (transformer denso autorregresivo) |
+| Parametros totales | 32.003.216.384 |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | FP8 estatico en pesos; FP8 dinamico en activaciones (por token / por bloque); cache KV en 16 bits |
+| Idiomas soportados | en, ko, es |
+| Licencia | EXAONE AI Model License Agreement 1.2 - NC (no comercial) |
+| Formato de pesos | safetensors; bundle ejecutable FXB para Furiosa RNGD |
 
 ## Arquitectura y entrenamiento
 
-EXAONE 4.0 es un transformer denso autorregresivo que introduce cambios arquitectonicos respecto a las generaciones anteriores de la familia EXAONE, aunque los detalles concretos de atencion o capas no se detallan en la informacion disponible. La caracteristica mas destacable es su naturaleza hibrida: funciona en modo no razonador por defecto para seguir instrucciones generales, y permite activar un modo razonador por peticion mediante el parametro `enable_thinking`, que genera una cadena de pensamiento que Furiosa-LLM puede parsear en un campo separado de la respuesta final.
+El modelo es un transformer denso autorregenerativo de arquitectura EXAONE 4.0, con 32.003.216.384 parametros totales y sin componentes de mezcla de expertos. La innovacion funcional principal es su caracter hibrido: por defecto opera en modo sin razonamiento (respuesta directa de instruccion general) y permite activar un modo de razonamiento por peticion mediante el flag `enable_thinking` en `chat_template_kwargs`. Cuando se activa y el servidor se lanza con `--reasoning-parser exaone4`, la cadena de pensamiento se devuelve en un campo separado (`message.reasoning` en no-streaming, `delta.reasoning` en streaming) del contenido final.
 
-El modelo se distribuye cuantizado en FP8 estatico para los pesos, con cuantizacion dinamica de activaciones en tiempo de ejecucion (por token y por bloque), mientras que la cache KV permanece en precision de 16 bits. No se dispone de informacion detallada sobre el dataset de entrenamiento, el numero de tokens procesados ni el uso de tecnicas de alineacion como RLHF o DPO en la documentacion proporcionada.
+En cuanto a la cuantizacion, los pesos se almacenan en FP8 estatico siguiendo la release FP8 upstream, y las activaciones se cuantizan dinamicamente a FP8 en runtime con granularidad por token y por bloque; la cache KV permanece en 16 bits. El modelo base upstream es LGAI-EXAONE/EXAONE-4.0-32B-FP8. No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO en la informacion proporcionada.
 
 ## Capacidades
 
-- Generacion de texto conversacional e instrucciones generales en ingles, coreano y espanol.
-- Modo razonador opcional (`enable_thinking`) que produce cadenas de pensamiento para problemas complejos, devueltas en un campo separado (`reasoning`) cuando se usa el parser `exaone4`.
-- Tool calling y function calling nativo mediante el parser `hermes`, compatible con el formato EXAONE-4.0.
-- Uso agente: el modelo puede integrarse en flujos multi-paso con llamadas a herramientas externas.
-- API compatible con OpenAI (endpoint `/v1/chat/completions`), lo que facilita la integracion con clientes y SDKs existentes.
-- Soporte de streaming con campo `reasoning` en las respuestas cuando el razonamiento esta activado.
+- Generacion de texto conversacional en ingles, coreano y espanol.
+- Modo de razonamiento activable por peticion (`enable_thinking`), con separacion de la cadena de pensamiento del contenido final.
+- Modo sin razonamiento por defecto para instruccion general de baja latencia.
+- Tool calling / function calling nativo, mediante el parser `hermes` (formato EXAONE-4.0).
+- Uso agentico y razonamiento multi-paso gracias a la combinacion de reasoning y tool calling.
+- API compatible con OpenAI (endpoint `/v1/chat/completions`).
+- Soporte de streaming con campo `delta.reasoning` separado cuando el razonamiento esta activo.
+- Capacidades multilingues limitadas a en, ko y es.
 
 ## Casos de uso
 
-- Atencion al cliente multilingue: el modelo gestiona conversaciones en ingles, coreano y espanol, lo que permite desplegar un unico asistente para mercados linguisticamente diversos sin necesidad de modelos separados por idioma.
-- Agentes autonomos con tool calling: gracias al soporte nativo de function calling via parser `hermes`, puede orquestar llamadas a APIs externas, bases de datos o servicios web en flujos agente multi-paso.
-- Razonamiento y resolucion de problemas complejos: activando `enable_thinking`, el modelo genera cadenas de pensamiento explicitas, util para tareas de logica, matematicas o analisis que requieren pasos intermedios verificables.
-- Asistentes de codigo en entornos empresariales: su capacidad de generacion de texto y tool calling permite integrarlo en pipelines de desarrollo para autocompletado, revision de codigo o generacion de documentacion tecnica.
-- Automatizacion de procesos de negocio: combinando el modo agente con la API OpenAI-compatible, puede ejecutar tareas administrativas como rellenado de formularios, consulta de sistemas internos o generacion de informes.
-- Despliegue en infraestructura FuriosaAI RNGD: al estar precompilado con FXB, esta optimizado para entornos de produccion que ya utilizan hardware FuriosaAI, reduciendo la latencia de arranque y simplificando el despliegue.
+- Atencion al cliente automatizada multilingue: el modelo gestiona conversaciones multi-turno en ingles, coreano y espanol, y su modo sin razonamiento por defecto permite respuestas rapidas para consultas rutinarias, activando razonamiento solo en casos complejos.
+- Agentes de soporte tecnico con tool calling: integrado con el parser `hermes`, el modelo puede invocar funciones (consulta de estado de pedidos, apertura de tickets, busqueda en base de conocimiento) dentro de flujos agenticos multi-paso.
+- Generacion de codigo asistida en pipelines: el soporte de function calling permite integrar el modelo en herramientas de CI/CD que consulten APIs, ejecuten tests o generen parches, con razonamiento activable para depuracion de errores complejos.
+- Analisis y razonamiento sobre documentos en espanol: el modo de razonamiento permite descomponer tareas de sintesis, comparacion y extraccion de conclusiones sobre textos largos, con la cadena de pensamiento auditable por separado.
+- Despliegue soberano sobre aceleradores Furiosa RNGD: organizaciones que operan infraestructura no-GPU pueden servir un modelo de 32B en FP8 con paralelismo de tensor de 32 PEs sobre cuatro tarjetas RNGD, manteniendo la inferencia en hardware propio.
+- Asistentes de razonamiento con trazas auditables: al devolver el chain of thought en un campo separado, el modelo es adecuado para entornos donde se requiere revisar el proceso de razonamiento (por ejemplo, evaluacion de respuestas o cumplimiento normativo interno).
+- Prototipado rapido con API OpenAI-compatible: desarrolladores pueden apuntar clientes existentes (SDK de OpenAI, OpenAI Agents SDK) al endpoint local de Furiosa-LLM sin reescribir la integracion.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La documentacion del repositorio no incluye datos de MMLU, HumanEval, GSM8K ni otras evaluaciones comparativas, por lo que no es posible valorar su rendimiento relativo con datos verificables.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Hardware objetivo: FuriosaAI RNGD, con estrategia de tensor parallelism de 32 PEs distribuidos en cuatro tarjetas RNGD (8 PEs por tarjeta).
-- No es compatible con GPUs de consumo (RTX 4090, etc.) ni con GPUs de centro de datos convencionales (A100, H100) en esta version precompilada, ya que el FXB esta vinculado al hardware FuriosaAI.
-- Motor de inferencia: Furiosa-LLM, que expone una API compatible con OpenAI.
-- Tamano del repositorio: 95,2 GB, lo que da una estimacion de los requisitos de almacenamiento y memoria necesarios para cargar los pesos FP8.
-- No se dispone de datos de latencia ni throughput estimados en la informacion proporcionada.
+- Hardware objetivo: FuriosaAI RNGD (acelerador no-GPU), con soporte oficial mediante Furiosa-LLM.
+- Paralelismo: tensor-parallel size de 32 PEs, que se mapea a cuatro tarjetas RNGD (8 PEs por tarjeta).
+- VRAM estimada: no disponible para GPU; el modelo se sirve en RNGD con pesos FP8 y cache KV en 16 bits.
+- GPU consumer: no se documenta soporte en GPU consumer en esta publicacion; el modelo base upstream puede ejecutarse en vLLM, SGLang y Transformers, pero los requisitos concretos de VRAM no se detallan en la informacion disponible.
+- Opciones de despliegue: Furiosa-LLM (`furiosa-llm serve`), y para el modelo upstream vLLM, SGLang y Transformers.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Arquitectura | Idiomas | Licencia | Hardware objetivo |
-|---|---|---|---|---|---|
-| EXAONE-4.0-32B-FP8 (este) | 32B | Transformer denso | en, ko, es | EXAONE 1.2 - NC | FuriosaAI RNGD |
-| EXAONE-4.0-1.2B | 1,2B | Transformer denso | en, ko, es | EXAONE 1.2 - NC | On-device / edge |
-| Otros modelos 32B del mercado | 32B | Variable | Variable | Variable | GPUs convencionales |
+| Modelo | Parametros | Contexto | Licencia | Hardware / despliegue |
+|---|---|---|---|---|
+| EXAONE-4.0-32B-FP8 (furiosa-ai) | 32.003.216.384 | no disponible | EXAONE 1.2 - NC (no comercial) | Furiosa RNGD via Furiosa-LLM |
+| LGAI-EXAONE/EXAONE-4.0-32B-FP8 (upstream) | 32B (FP8) | no disponible | EXAONE 1.2 - NC (no comercial) | vLLM, SGLang, Transformers |
+| Alternativas de 32B densas | no disponible | no disponible | no disponible | no disponible |
 
-La comparativa con alternativas de la misma categoria (modelos de 32B como Qwen2.5-32B o Llama-3.1-32B) no se puede realizar con datos verificables, ya que la informacion disponible no incluye benchmarks ni especificaciones detalladas de contexto o entrenamiento de estos modelos comparables.
+No se dispone de datos de rendimiento comparativo ni de especificaciones de modelos alternativos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Licencia de uso no comercial (EXAONE AI Model License Agreement 1.2 - NC): no puede utilizarse en productos o servicios comerciales sin autorizacion explicita de LG AI Research.
-- Hardware restringido: esta version precompilada solo se ejecuta en FuriosaAI RNGD con Furiosa-LLM; no es portable a GPUs convencionales sin recompilar o usar la version upstream de LG AI Research.
-- Cobertura linguistica limitada a tres idiomas (ingles, coreano y espanol); el rendimiento fuera de estos idiomas no esta garantizado.
-- La longitud de contexto no se documenta en la informacion disponible, por lo que no se puede evaluar su idoneidad para tareas de contexto largo.
-- No se han publicado benchmarks en la documentacion del repositorio, lo que dificulta la evaluacion objetiva de su rendimiento frente a alternativas.
-- El campo `reasoning` en la respuesta no forma parte de la especificacion OpenAI API; aunque es una convencion ampliamente adoptada, puede requerir adaptaciones en clientes que no lo soporten.
-- Riesgo de alucinacion y sesgos inherentes a los modelos de lenguaje de gran tamano; no se documentan evaluaciones especificas de sesgos para esta variante.
+- Licencia no comercial: la EXAONE AI Model License Agreement 1.2 - NC restringe el uso comercial; es imprescindible revisar el texto completo de la licencia antes de cualquier despliegue en produccion.
+- Cobertura idiomatica limitada a ingles, coreano y espanol; otros idiomas pueden degradar la calidad de forma significativa.
+- Riesgo de alucinacion inherente a los modelos generativos de 32B, especialmente en modo sin razonamiento y en dominios especializados.
+- El modo de razonamiento esta desactivado por defecto; si no se activa explicitamente mediante `enable_thinking`, no se obtiene cadena de pensamiento ni beneficios de razonamiento multi-paso.
+- El campo `reasoning` no forma parte de la especificacion de la API de OpenAI; acceder a el cuando no hay contenido de razonamiento provoca un `AttributeError`, lo que exige manejo defensivo en clientes.
+- Dependencia de hardware especifico: esta publicacion esta orientada a FuriosaAI RNGD; fuera de ese hardware debe usarse el modelo upstream con otros frameworks.
+- La cuantizacion FP8 puede introducir perdida de precision frente a la version en BF16/FP16, no cuantificada en la informacion disponible.
+- No se dispone de informacion sobre sesgos especificos, datos de entrenamiento ni evaluaciones de seguridad del modelo.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/furiosa-ai/EXAONE-4.0-32B-FP8
+- Hugging Face (esta publicacion): https://huggingface.co/furiosa-ai/EXAONE-4.0-32B-FP8
 - Modelo base upstream: https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B-FP8
-- Licencia EXAONE: https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B-FP8/blob/main/LICENSE
-- Documentacion Furiosa-LLM para EXAONE 4.0: https://developer.furiosa.ai/latest/en/furiosa_llm/models/exaone-4.0.html
-- Repositorio oficial EXAONE 4.0 en GitHub: https://github.com/LG-AI-EXAONE/EXAONE-4.0
+- Licencia EXAONE 1.2 - NC: https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B-FP8/blob/main/LICENSE
+- Furiosa AI: https://furiosa.ai
+- Documentacion de Furiosa-LLM (instalacion): https://developer.furiosa.ai/latest/en/get_started/furiosa_llm.html#installing-furiosa-llm

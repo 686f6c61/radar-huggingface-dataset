@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "nellnellg/emotion-runner",
+  "slug": "nellnellg-emotion-runner",
+  "author": "nellnellg",
+  "url": "https://huggingface.co/nellnellg/emotion-runner",
+  "created_at": "2026-11-20T05:12:30.000Z",
+  "updated_at": "2026-11-20T05:14:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "distilbert",
+    "text-classification",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 267977385,
+  "storage_human": "268 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

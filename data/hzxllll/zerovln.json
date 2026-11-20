@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "hzxllll/ZeroVLN",
+  "slug": "hzxllll-zerovln",
+  "author": "hzxllll",
+  "url": "https://huggingface.co/hzxllll/ZeroVLN",
+  "created_at": "2026-11-19T06:53:41.000Z",
+  "updated_at": "2026-11-20T08:56:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "arxiv:2611.26414",
+    "embodied-ai",
+    "vision-language-navigation",
+    "reinforcement-learning",
+    "robotics",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 70373843204,
+  "storage_human": "70.4 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

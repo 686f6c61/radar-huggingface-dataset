@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 1048,
+  "downloads_30d": 1088,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -51,31 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Informe de tu vida laboral. Seguridad Social | Gobierno de España, UE",
-      "url": "https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida%20laboral%20e%20informes/Informes%20sobre%20tu%20situacion%20laboral/Informe%20de%20tu%20vida%20laboral",
-      "snippet": "Consultar todas tus situaciones de alta y baja en los distintos regímenes de la Seguridad Social. Obtener un informe en PDF de tu …"
-    },
-    {
-      "title": "Vida laboral e informes. Seguridad Social | Gobierno de España, UE",
-      "url": "https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes",
-      "snippet": "Accede a informes sobre tu vida laboral, situaciones de alta o baja en la Seguridad Social, tus bases de cotización y si estás al …"
-    },
-    {
-      "title": "Ciudadanos - Sede Electrónica de la Seguridad Social",
-      "url": "https://sede.seg-social.gob.es/wps/portal/sede/sede/Ciudadanos/informes%2By%2Bcertificados/01informes%2By%2Bcertificados",
-      "snippet": "A través de este servicio puede obtener, imprimir y/o consultar on-line un documento con información relativa al alta laboral en una …"
-    },
-    {
-      "title": "Ciudadanos - Sede Electrónica de la Seguridad Social",
-      "url": "https://sede.seg-social.gob.es/wps/portal/sede/sede/Ciudadanos/informes+y+certificados/201864?changeLanguage=es",
-      "snippet": "Informe de tu vida laboral < Volver A través de este servicio podrás consultar todas tus situaciones de alta y baja en los distintos …"
-    },
-    {
-      "title": "Solicitud de informe de vida laboral-Sede Electrónica",
-      "url": "https://w6.seg-social.es/ProsaInternetAnonimo/OnlineAccess?ARQ.SPM.ACTION=LOGIN&ARQ.SPM.APPTYPE=SERVICE&ARQ.IDAPP=SINC0003",
-      "snippet": "El envío de los informes de situación, solicitados a través de este servicio se realizará al domicilio del solicitante existente en las …"
-    }
-  ]
+  "sources": []
 }

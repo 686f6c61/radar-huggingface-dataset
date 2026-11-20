@@ -5,7 +5,7 @@
   "author": "ltuncay",
   "url": "https://huggingface.co/ltuncay/Audio-JEPA-base",
   "created_at": "2026-09-18T18:32:04.000Z",
-  "updated_at": "2026-10-13T19:51:41.000Z",
+  "updated_at": "2026-11-16T20:44:58.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 40,
+  "downloads_30d": 61,
   "trending_score": 0,
   "parameters": 85484928,
   "parameters_human": "85.5M",

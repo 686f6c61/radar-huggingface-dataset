@@ -2,113 +2,112 @@
 
 ## Resumen
 
-VoiceIQ Writer (Qwen3-0.6B, MLX 4-bit) es un modelo de lenguaje especializado en la limpieza de transcripciones de dictado por voz. Lo publica el usuario `cyron` como parte de VoiceIQ, una aplicación de dictado para macOS e iOS. Su función no es conversacional: recibe una transcripción cruda del reconocedor de voz y devuelve el texto que el hablante pretendía escribir, eliminando muletillas, falsos comienzos y notas al margen, aplicando correcciones habladas, resolviendo puntuación dictada, corrigiendo errores por homofonía y dando formato a números, importes, correos y listas.
+VoiceIQ Writer (Qwen3-0.6B, MLX 4-bit) es un modelo de lenguaje especializado en la limpieza de transcripciones de dictado. Lo desarrolla cyron como componente local del motor de escritura de VoiceIQ, una aplicación de dictado para macOS e iOS. Su función es convertir una transcripción cruda de reconocimiento de voz en el texto que el hablante pretendía escribir: elimina muletillas, arranques en falso y notas al margen, aplica correcciones habladas, representa la puntuación dictada, corrige errores por homofonía usando el contexto y da formato a números, importes, correos y listas.
 
-Técnicamente es un fine-tune LoRA de Qwen/Qwen3-0.6B, fusionado y cuantizado a 4 bits (group size 64) para su uso con MLX en Apple Silicon. Se destila del paso de escritura en la nube de VoiceIQ (Claude Sonnet 5.5 con el prompt de producción de la app). Con 596.049.920 parámetros reales y un repositorio de 0,3 GB, está pensado para inferencia en dispositivo, incluso en CPU de iPhone, donde el modelo hermano de 2B resulta demasiado lento.
+Técnicamente es un ajuste fino LoRA de Qwen/Qwen3-0.6B, fusionado y cuantizado a 4 bits con tamaño de grupo 64, destilado a partir de Claude Sonnet 5.5 ejecutando el prompt de escritura de producción de VoiceIQ. El modelo tiene 596.049.920 parámetros y un tamaño de repositorio de 1,4 GB, e incluye pesos en formato MLX safetensors y un GGUF Q4_1 equivalente para llama.cpp.
 
-Su relevancia radica en el nicho: no compite como modelo generalista, sino como componente de post-procesado de ASR con latencia muy baja (0,13 s de mediana total en M2 con prompt cacheado) y consumo de memoria reducido (0,53 GB en pico). La licencia Apache-2.0 facilita su integración comercial.
+Su relevancia actual radica en que demuestra que un modelo de menos de 600 millones de parámetros, cuantizado a 4 bits y ejecutable en CPU de iPhone o en un Mac mini M2, puede resolver una tarea de reescritura muy específica con calidad suficiente para producción, siguiendo además reglas de estilo personalizadas y variantes ortográficas del usuario.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (Qwen3), fine-tune LoRA fusionado y cuantizado |
-| Parametros totales | 596.049.920 |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | No disponible en la informacion proporcionada (el modelo base Qwen3-0.6B soporta contexto largo, pero no se especifica el valor efectivo de este fine-tune) |
-| Tipos de cuantizacion | 4 bits, group size 64 (MLX); existe variante bf16 del mismo fine-tune |
-| Idiomas soportados | Ingles (`en`) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (libreria MLX) |
+| Arquitectura | Transformer decoder-only (Qwen3), ajuste fino LoRA fusionado |
+| Parámetros totales | 596.049.920 |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | 4 bits, group size 64 (MLX); GGUF Q4_1 (llama.cpp) |
+| Idiomas soportados | inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (MLX), GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3-0.6B, un transformer denso de la familia Qwen3. Sobre esa base se aplicó un fine-tune LoRA que después se fusionó con los pesos originales y se cuantizó a 4 bits con group size 64 para el runtime MLX. El entrenamiento se realizó sobre 24.105 ejemplos durante una época del conjunto principal (se descartaron las 11 filas de más de 1.024 tokens). Las entradas son dictados crudos y las salidas objetivo fueron generadas por Claude Sonnet 5.5 usando el prompt de producción de VoiceIQ (`PromptV1.cleanupPrompt`); es decir, es un modelo destilado de un profesor en la nube.
+El modelo parte de Qwen/Qwen3-0.6B, un transformer decoder-only de la familia Qwen3, sobre el que se aplica un ajuste fino LoRA que después se fusiona con los pesos base y se cuantiza a 4 bits con tamaño de grupo 64. La destilación se realizó a partir de las salidas de Claude Sonnet 5.5 ejecutando el prompt de escritura de producción de VoiceIQ, de modo que el modelo pequeño imita el comportamiento de un modelo profesor mucho mayor en esta tarea concreta de reescritura.
 
-Los conjuntos de datos públicos aportan únicamente las entradas, nunca sus salidas limpias, y se filtraron los objetivos rechazados por el `ValidationGate` de VoiceIQ, los que contenían guiones, preámbulos o fugas de prompt, y cualquier muestra solapada con el benchmark interno de 42 casos. Las fuentes incluyen `ductai199x/dictation-to-text` (4.298 ejemplos, CC BY-SA 4.0), `shantanugoel/aawaaz-transcript-cleanup-dataset` (2.311, MIT), `mohitkrconnect/heed-voice-notes-to-tasks` (1.955, CC BY 4.0), `nyralabs/disfluency_speech_english` (1.043, Apache-2.0), `tasksource/slurp` (966, CC BY 4.0), `google-research-datasets/disfl_qa` (757, CC BY 4.0), entre otras. La decodificación recomendada es greedy (`do_sample: false`), con thinking desactivado (`enable_thinking: false`) y parada en `<|im_end|>` o `<|endoftext|>`.
+El conjunto de entrenamiento de esta revisión consta de 27.104 ejemplos: una época del conjunto principal más 3.104 filas de reglas personalizadas (las 11 filas de más de 1.024 tokens fueron descartadas). El prompt de inferencia usa decodificación greedy (`do_sample: false`), modo thinking desactivado (`enable_thinking: false`) y parada en `<|im_end|>` o `<|endoftext|>`. La entrada se estructura con un mensaje de sistema fijo y un mensaje de usuario con el prefijo `RAW:` seguido de la transcripción, precedido opcionalmente por líneas de variante ortográfica, reglas del usuario, vocabulario, ubicación y contexto de cursor.
 
 ## Capacidades
 
-- Reescritura de transcripciones: convierte un dictado crudo en el texto que el hablante quería escribir, sin responder ni obedecer el contenido del dictado.
-- Eliminación de disfluencias: muletillas, falsos comienzos, repeticiones y notas al margen.
-- Aplicación de correcciones habladas y cambios de opinión sobre la marcha.
-- Renderizado de puntuación dictada (comas, puntos, signos de interrogación, paréntesis).
-- Corrección de errores por homofonía y confusiones del reconocedor usando el contexto (por ejemplo, "there going" por "they're going").
-- Formateo de números, importes monetarios, direcciones de correo y listas.
-- Maquetación de correos dictados.
-- Uso de contexto opcional: vocabulario, aplicación y título activos, y texto antes y después del cursor.
-- No soporta tool calling, function calling, agentes, visión, audio ni modo de razonamiento explícito (thinking desactivado por diseño).
-- Multilingüe: no, únicamente inglés.
+- Reescritura de transcripciones de dictado: elimina muletillas, arranques en falso y notas al margen.
+- Aplicación de correcciones habladas y cambios de opinión expresados en voz alta.
+- Representación de puntuación dictada oralmente.
+- Corrección de errores por homofonía (sound-alikes) usando el contexto de la frase.
+- Formato de números, importes monetarios, direcciones de correo y listas.
+- Maquetación de correos electrónicos dictados.
+- Seguimiento de reglas de escritura personalizadas del usuario (por ejemplo, coma de Oxford, terminología de empresa, formato de listas con guiones).
+- Aplicación de variantes ortográficas: inglés estadounidense, británico, australiano, canadiense e indio.
+- Uso de vocabulario y contexto de campo (texto antes y después del cursor) para desambiguar.
+- No responde ni sigue las instrucciones contenidas en la transcripción: solo la reescribe.
 
 ## Casos de uso
 
-- Limpieza de dictado en macOS e iOS: integrado en la app VoiceIQ como paso posterior al ASR; recibe la transcripción y devuelve el texto final listo para insertar en el campo activo. Adecuado por su latencia (0,13 s de mediana total en M2) y su huella de memoria (0,53 GB en pico).
-- Post-procesado de ASR en pipelines propios: cualquier aplicación que use Whisper, Apple Speech u otro reconocedor puede encadenar este modelo para normalizar la salida antes de mostrarla al usuario.
-- Redacción de correos por voz: el modelo maqueta correos dictados (saludo, cuerpo, despedida) y aplica formato, lo que lo hace útil en clientes de correo con dictado.
-- Creación de listas y notas de tareas: convierte dictados tipo "comprar leche, huevos y pan" en listas con viñetas, aunque el autor documenta fallos puntuales en listas cortas de la compra escritas como líneas simples.
-- Dictado con vocabulario técnico: mediante la línea `Vocabulary:` se le pueden pasar términos como nombres propios, herramientas o identificadores (Kavya, Figma, Kubernetes) para que respete su grafía.
-- Edición contextual en formularios: con `Before cursor:` y `After cursor:` el modelo puede integrar el dictado en el texto ya existente en un campo, útil en CRM, editores de texto o herramientas de ticketing.
-- Corrección de homófonos en dominios concretos: con contexto de aplicación y título (`Place: app Slack, title #design`) mejora la desambiguación de términos que suenan igual.
+- Limpieza de dictado en aplicaciones de notas: el modelo convierte una transcripción con muletillas y arranques en falso en texto limpio y puntuado, ejecutándose en local en el dispositivo sin enviar audio ni texto a la nube.
+- Redacción de correos por voz: dada una transcripción de un correo dictado, aplica la maquetación de correo y puede incluir una despedida definida en las reglas del usuario, lo que permite componer mensajes completos solo con la voz.
+- Escritura con reglas de estilo de empresa: con la línea `Rules:` el modelo aplica terminología corporativa ("customers" en lugar de "clients"), abreviaturas de métricas y formatos de lista, útil para equipos con guías de estilo estrictas.
+- Dictado multirregional: la línea `Spelling:` permite generar texto con ortografía británica, australiana, canadiense o india, adecuado para usuarios o publicaciones dirigidas a esos mercados.
+- Desambiguación con contexto de campo: las líneas `Before cursor:` y `After cursor:` permiten al modelo integrar el texto dictado en un campo de formulario ya parcialmente relleno, útil en editores y CRM.
+- Corrección de nombres propios y términos técnicos: con la línea `Vocabulary:` el modelo corrige homófonos hacia nombres de producto, personas o tecnologías (por ejemplo, "fig ma" a "Figma", "kubernetis" a "Kubernetes").
+- Ejecución en iPhone sin conexión: el GGUF Q4_1 se ejecuta en CPU en la aplicación de iPhone de VoiceIQ, lo que habilita dictado limpio en dispositivos móviles sin acceso a red.
 
 ## Benchmarks y rendimiento
 
-Resultados medidos con mlx-lm 0.32.2 en un Mac mini (M2, 16 GB), decodificación greedy, system prompt precargado y cacheado. Benchmark interno de VoiceIQ de 42 casos (held out del entrenamiento, con comprobaciones deterministas y `ValidationGate`):
+Resultados medidos con mlx-lm 0.32.2 en un Mac mini (M2, 16 GB), decodificación greedy, prompt de sistema precargado y cacheado.
 
-| Modelo | Aprobados | Respondio o inyecto | Mediana total | Tiempo al primer token (cacheado) | Generacion | Memoria pico |
+Benchmark de escritura de 42 casos de VoiceIQ (reservado, fuera de entrenamiento):
+
+| Modelo | Superados | Respondió o inyectó | Mediana total | Tiempo al primer token (cacheado) | Generación | Memoria pico |
 |---|---|---|---|---|---|---|
-| Este modelo (4-bit) | 35/42 | 0 | 0,13 s | 0,04 s | 195 tok/s | 0,53 GB |
-| Mismo modelo, bf16 | 36/42 | 0 | 0,31 s | 0,06 s | 71 tok/s | 1,32 GB |
-| VoiceIQ Writer Qwen3.5-2B, 4-bit | 40/42 | 0 | 0,33 s | 0,10 s | 76 tok/s | 1,24 GB |
-| superwhisper/s1-mini (prompt propio) | 26/42 | 0 | No disponible | No disponible | No disponible | No disponible |
+| Esta revisión (4-bit) | 36/42 | 0 | 0,13 s | 0,04 s | 200 tok/s | 0,53 GB |
+| Revisión anterior `2c328e6` (solo reglas por defecto) | 34/42 | 0 | 0,13 s | 0,04 s | 195 tok/s | 0,53 GB |
+| superwhisper/s1-mini (prompt propio), comprobaciones anteriores | 26/42 | 0 | no disponible | no disponible | no disponible | no disponible |
 
-Los siete fallos documentados del modelo son: una lista corta de la compra escrita como líneas simples en lugar de viñetas, homófonos sin corregir ("there going"), una aclaración no puesta entre paréntesis, un nombre de usuario deletreado en mayúsculas, un orden de palabras enredado dejado tal cual, "twenty bucks" no convertido en "20 bucks" y "a thousand dollars" no convertido en "$1,000" en una actualización de estado larga.
+Benchmark de reglas personalizadas de 41 casos de VoiceIQ (reservado):
 
-En una porción held-out del profesor (600 ejemplos de la misma distribución que el entrenamiento, comparados contra la salida de Claude Sonnet 5.5): el `ValidationGate` acepta 599/600 (el rechazo conserva una pregunta dictada sin signo de interrogación), 1 forma prohibida (un guion), 21 % de coincidencia exacta y 0,871 de similitud de caracteres.
+| Modelo | Superados | Regla aplicada | Regla presente sin nada que cambiar | Variante ortográfica |
+|---|---|---|---|---|
+| Esta revisión (4-bit MLX y GGUF Q4_1 en llama.cpp CPU) | 26/41 | 10/20 | 12/12 | 4/9 |
+| Revisión anterior `2c328e6` | 20/41 | 6/20 | 12/12 | 2/9 |
+
+Rebanadas reservadas del profesor, evaluadas contra la salida de Claude Sonnet 5.5:
+
+| Conjunto | Aceptados por ValidationGate | Formas prohibidas | Exactos | Similitud de caracteres |
+|---|---|---|---|---|
+| 600 ejemplos de la distribución principal | 596/600 | 1 (un guion) | 20 % | 0,867 |
+| 120 ejemplos de reglas personalizadas | 120/120 | no disponible | 35 % | 0,936 |
 
 ## Requisitos de hardware
 
-- VRAM/memoria unificada estimada: 0,53 GB en pico con cuantización 4-bit; 1,32 GB en bf16.
-- GPU recomendadas: Apple Silicon (M1, M2, M3, M4 y superiores) mediante MLX. El autor lo posiciona para dispositivos donde el modelo de 2B es demasiado lento, como la CPU de un iPhone.
-- Cabe en GPU de consumo: sí, en cualquier Mac con Apple Silicon; el runtime es MLX, no CUDA, por lo que no está pensado para GPUs NVIDIA.
-- Opciones de despliegue: mlx-lm (probado con 0.32.2). No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI en la información disponible.
-- Latencia y throughput: 0,13 s de mediana total, 0,04 s hasta el primer token con prompt cacheado y 195 tok/s de generación en M2 4-bit; en bf16, 0,31 s de mediana total, 0,06 s al primer token y 71 tok/s.
+- VRAM estimada para inferencia: aproximadamente 0,53 GB de memoria pico en la variante MLX 4-bit según la medición del autor.
+- GPU recomendadas: no requiere GPU dedicada; el autor reporta ejecución en Mac mini M2 (16 GB) mediante MLX y en CPU de iPhone mediante llama.cpp.
+- Cabe en GPU de consumo: sí, con margen amplio; el consumo de memoria medido (0,53 GB) es compatible con cualquier GPU de consumo moderna.
+- Opciones de despliegue: mlx-lm y mlx-swift-lm para Mac; llama.cpp (b12198 o posterior) con el GGUF Q4_1 para CPU.
+- Latencia y throughput: 0,04 s hasta el primer token con prompt cacheado, 0,13 s de mediana total por caso y 200 tok/s de generación en Mac mini M2.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Benchmark VoiceIQ (42 casos) | Licencia | Runtime |
+| Modelo | Parámetros | Contexto | Benchmark de escritura (42 casos) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VoiceIQ Writer Qwen3-0.6B (este) | 596 M | No disponible | 35/42 | Apache-2.0 | MLX |
-| VoiceIQ Writer Qwen3.5-2B | No disponible | No disponible | 40/42 | No disponible | MLX |
-| superwhisper/s1-mini | No disponible | No disponible | 26/42 | No disponible | No disponible |
-| Qwen/Qwen3-0.6B (base) | ~0,8 B (segun ficha de HF) | No disponible | No evaluado como limpiador | Apache-2.0 (base Qwen3) | Transformers, MLX |
+| VoiceIQ Writer (esta revisión) | 596.049.920 | no disponible | 36/42 | Apache 2.0 | Hugging Face (MLX y GGUF) |
+| VoiceIQ Writer revisión `2c328e6` | no disponible | no disponible | 34/42 | Apache 2.0 | Hugging Face (por commit) |
+| superwhisper/s1-mini | no disponible | no disponible | 26/42 (comprobaciones anteriores) | no disponible | no disponible |
 
-El modelo de 2B es claramente superior en calidad (40/42 frente a 35/42) a costa de más memoria (1,24 GB frente a 0,53 GB) y mayor latencia (0,33 s frente a 0,13 s). El autor recomienda usar el 2B cuando memoria y velocidad lo permitan y reservar el 0,6B para dispositivos limitados.
+No se dispone de datos de benchmarks de otros modelos comparables en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo inglés: no procesa dictados en castellano ni en otros idiomas.
-- Especializado y no conversacional: no responde preguntas ni ejecuta instrucciones contenidas en el dictado; usarlo fuera de su tarea produce resultados pobres.
-- Riesgo de alucinación bajo pero no nulo: el autor documenta 0 casos de respuesta o inyección en el benchmark, pero recomienda pasar la salida por un guard tipo `ValidationGate` y recurrir a la transcripción original si se rechaza.
-- Fallos conocidos de formato: listas cortas sin viñetas, homófonos sin corregir, aclaraciones sin paréntesis, orden de palabras enredado y conversión incompleta de importes ("twenty bucks", "a thousand dollars").
-- Dependencia del prompt: el rendimiento está calibrado para el system message exacto de VoiceIQ; cambiarlo puede degradar la calidad.
-- Contexto máximo no documentado: no se especifica la longitud de contexto efectiva de este fine-tune, lo que limita su uso con dictados muy largos.
-- Licencia Apache-2.0 permite uso comercial, pero los datos de entrenamiento incluyen fuentes con licencias CC BY-SA (por ejemplo, `ductai199x/dictation-to-text`); conviene revisar las obligaciones de atribución si se redistribuye el modelo.
-- Runtime restringido a MLX: no hay pesos GGUF ni soporte documentado para CUDA, lo que limita el despliegue en servidores con GPUs NVIDIA.
+- Solo soporta inglés; no se ha validado para otros idiomas.
+- El soporte de reglas personalizadas es parcial: aplica términos de empresa, nombres de producto, abreviaturas de métricas, listas de tareas y ortografía británica, pero falla en la mayoría de reglas de formato de números, fechas y horas, en la despedida de correo, en listas con guiones, en "OK", en "sin contracciones" y en tres de las variantes ortográficas.
+- Cuando aplica un formato de fecha u hora puede alterar el valor: el autor documenta "March 4" escrito como "04/20/2027" y "3:30 pm" como "13:30". Conviene verificar la salida contra la transcripción cuando una regla reescriba números, fechas u horas.
+- Entre los seis fallos del benchmark de escritura se incluyen: un cambio de opinión conservado en la propuesta en lugar de la posición final, una lista de la compra escrita como líneas simples en vez de viñetas, homófonos sin corregir ("there going"), una aclaración no puesta entre paréntesis, un orden de palabras enredado mantenido tal cual y nombres de función dictados sin convertir a identificadores (`getUserById`, `fetchUser`).
+- Riesgo de alucinación o inyección: el modelo está entrenado para no responder ni seguir la transcripción, y en los benchmarks reportados no respondió ni inyectó contenido (0 casos), pero el autor recomienda pasar la salida por una puerta de validación (ValidationGate) y recurrir a la transcripción original si se rechaza.
+- Sesgos conocidos: no disponibles en la información proporcionada.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero se heredan las condiciones del modelo base Qwen/Qwen3-0.6B.
+- Los pesos GGUF Q4_1 son idénticos en salida a los MLX en 82 de 83 casos de los benchmarks, con la misma puntuación; las diferencias de comportamiento entre ambos formatos son mínimas pero existen.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/cyron/voiceiq-writer-qwen3-0_6b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
-- Modelo hermano de 2B: https://huggingface.co/cyron/voiceiq-writer-qwen3_5-2b
 - Repositorio de VoiceIQ: https://github.com/srini-b/voiceiq-dictation
-- Dataset `ductai199x/dictation-to-text`: https://huggingface.co/datasets/ductai199x/dictation-to-text
-- Dataset `shantanugoel/aawaaz-transcript-cleanup-dataset`: https://huggingface.co/datasets/shantanugoel/aawaaz-transcript-cleanup-dataset
-- Dataset `mohitkrconnect/heed-voice-notes-to-tasks`: https://huggingface.co/datasets/mohitkrconnect/heed-voice-notes-to-tasks
-- Dataset `nyralabs/disfluency_speech_english`: https://huggingface.co/datasets/nyralabs/disfluency_speech_english
-- Dataset `tasksource/slurp`: https://huggingface.co/datasets/tasksource/slurp
-- Dataset `google-research-datasets/disfl_qa`: https://huggingface.co/datasets/google-research-datasets/disfl_qa
-- Dataset `juanquivilla/sotto-transcript-cleanup`: https://huggingface.co/datasets/juanquivilla/sotto-transcript-cleanup
-- Dataset `hey-lemon/streaming-dictation-asr`: https://huggingface.co/datasets/hey-lemon/streaming-dictation-asr
-- Dataset `ylacombe/podcast_fillers_processed`: https://huggingface.co/datasets/ylacombe/podcast_fillers_processed
-- Dataset `JacobLinCool/ami-disfluent`: https://huggingface.co/datasets/JacobLinCool/ami-disfluent
-- Paper DisfluencySpeech (arXiv:2406.08820): https://arxiv.org/abs/2406.08820
+- Paper referenciado en los tags (arXiv:2406.08820): https://arxiv.org/abs/2406.08820

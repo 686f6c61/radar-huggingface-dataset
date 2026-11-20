@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 1093,
+  "downloads_30d": 1101,
   "trending_score": 0,
   "parameters": 615073792,
   "parameters_human": "615.1M",
@@ -54,31 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Pobieranie i korzystanie z Tłumacza Google",
-      "url": "https://support.google.com/translate/answer/6350850?hl=pl&co=GENIE.Platform%3DDesktop",
-      "snippet": "Aplikacja Tłumacz Google umożliwia tłumaczenie tekstu, pisma odręcznego, tekstu na zdjęciach i mowy na ponad 200 języków. …"
-    },
-    {
-      "title": "Słuchanie tłumaczeń mowy na mowę na żywo dzięki funkcji …",
-      "url": "https://support.google.com/translate/answer/6142474?hl=pl&co=GENIE.Platform%3DAndroid",
-      "snippet": "Otwórz aplikację Tłumacz . Jeśli chcesz korzystać z tłumaczenia na żywo przez słuchawki na telefonie lub tablecie z Androidem, …"
-    },
-    {
-      "title": "Translator/tłumacz Bluetooth One Click Translate - czy przyda się w ...",
-      "url": "https://www.elektroda.pl/news/news4176506.html",
-      "snippet": "Jun 16, 2026 · Test translatora Bluetooth One Click Translate G6 parowanie z aplikacją, obsługa przez przycisk, tłumaczenie mowy w …"
-    },
-    {
-      "title": "Windows 7 (64) - Chrome -Google - Tłumacz nie mówi nie używa …",
-      "url": "https://www.elektroda.pl/rtvforum/topic2988028.html",
-      "snippet": "Feb 14, 2015 · Dlaczego Google Tłumacz w Chrome na Windows 7 (64) nie używa mikrofonu ani nie wypowiada fraz? Realtek High …"
-    },
-    {
-      "title": "Tłumaczenie obrazów - Komputer - Google Translate - Pomoc",
-      "url": "https://support.google.com/translate/answer/6142483?hl=pl&co=GENIE.Platform%3DDesktop",
-      "snippet": "Tłumaczenie obrazów Możesz użyć aparatu na telefonie, aby przetłumaczyć tekst w aplikacji Tłumacz , na przykład znaki czy …"
-    }
-  ]
+  "sources": []
 }

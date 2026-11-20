@@ -17,8 +17,8 @@
     "quantized",
     "int8",
     "convrot",
-    "base_model:Comfy-Org/Qwen-Image_ComfyUI",
-    "base_model:quantized:Comfy-Org/Qwen-Image_ComfyUI",
+    "base_model:Comfy-Org/Qwen-Image",
+    "base_model:quantized:Comfy-Org/Qwen-Image",
     "license:apache-2.0",
     "region:us"
   ],

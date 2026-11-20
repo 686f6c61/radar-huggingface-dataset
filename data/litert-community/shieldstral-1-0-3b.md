@@ -2,114 +2,106 @@
 
 ## Resumen
 
-Shieldstral-1.0-3B es un clasificador de seguridad y moderación de contenido desarrollado por Mistral AI, distribuido aquí en formato `.litertlm` por la comunidad `litert-community` para su ejecución con el runtime LiteRT-LM de Google. No es un modelo conversacional: recibe una política de moderación en lenguaje natural junto con un documento y emite un único token de respuesta (`yes` o `no`), o bien una puntuación continua mediante softmax sobre los logits de ambas opciones. Esta conversión permite ejecutar un clasificador de políticas adaptable completamente en dispositivo (teléfono, tableta, portátil o Raspberry Pi), sin llamadas de red.
+Shieldstral-1.0-3B es un clasificador de seguridad de 3.000 millones de parámetros derivado de `mistralai/Shieldstral-1.0-3B`, convertido por la comunidad `litert-community` al formato `.litertlm` para ejecutarse con el runtime LiteRT-LM de Google. Su propósito no es conversar, sino responder una única pregunta binaria (sí/no) sobre un documento concreto, aplicando una política de moderación que se especifica en tiempo de inferencia en lenguaje natural. Esto permite cubrir políticas nuevas sin reentrenar el modelo.
 
-El modelo se publica en cuatro variantes: dos de solo texto (int4 e int8) y dos multimodales que incorporan la torre de visión Pixtral con resolución estática de 560×560 (una para CPU y otra reexportada para GPU). La variante int4 de texto ocupa 2,20 GiB en disco con una sección principal de 1,82 GiB, lo que la convierte en la única opción que cabe en un iPhone con los límites prácticos de mmap de iOS.
+La relevancia práctica del artefacto está en el despliegue: al estar empaquetado para LiteRT-LM, el clasificador corre íntegramente en dispositivo (móvil, tableta, portátil o Raspberry Pi) sin llamada de red, con cuantizaciones int4 e int8 y variantes multimodales que incorporan la torre de visión Pixtral para moderar imágenes. La ventana de contexto exportada es de 4096 tokens de caché KV, con gráficos de prefill completos de 2048 a 1.
 
-La relevancia actual radica en la combinación de tres factores: licencia Apache 2.0, soporte de doce idiomas y la posibilidad de definir la política de moderación en el momento de la inferencia sin reentrenar el checkpoint. Esto permite desplegar moderación multilingüe en el propio dispositivo con requisitos de memoria muy contenidos y latencias de milisegundos en prefill.
+El modelo base procede de Mistral AI y se distribuye bajo licencia Apache 2.0. La conversión mantiene los pesos del checkpoint original y solo cambia el formato y la receta de cuantización; los datos de arquitectura interna, composición del dataset de entrenamiento y proceso de alineación del modelo original no se detallan en la información disponible.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (base Mistral, 3B) con torre de visión Pixtral en las variantes multimodales |
-| Parametros totales | 3B (aproximado, según nombre del modelo) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | 4096 tokens de caché KV; documentos de más de ~4000 tokens requieren reexportación con caché mayor |
-| Tipos de cuantizacion | int4 blockwise-32 (OCTAV) + embedding int8; int8 dinámico en tiempo de exportación; int4-b32 decodificador + torre Pixtral int8 en variantes de visión |
+| Arquitectura | Transformer decoder-only (modelo base Mistral); variante multimodal con torre de visión Pixtral |
+| Parámetros totales | 3B (aproximado, según denominación del modelo) |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | 4096 tokens (caché KV exportada); documentos de más de ~4000 tokens requieren reexportación con caché mayor |
+| Tipos de cuantización | int4 blockwise-32 (OCTAV) + embedding int8; int8 dinámico en exportación; int4-b32 para decodificador con torre Pixtral int8 |
 | Idiomas soportados | en, fr, es, de, it, pt, nl, zh, ja, ko, ar, ru |
 | Licencia | Apache 2.0 |
-| Formato de pesos | `.litertlm` (bundle LiteRT-LM); modelo base en safetensors en `mistralai/Shieldstral-1.0-3B` |
-| Libreria | litert-lm |
-| Tamano del repo | 29,4 GB (incluye todas las variantes) |
-| Variantes publicadas | `_int4` (texto, 2,20 GiB), `_int8` (texto, 3,71 GiB), `_vision_int4` (texto+imagen, 2,78 GB), `_vision_int4_gpu` (texto+imagen, 2,78 GB) |
-| Resolución de visión | 560×560 estática |
+| Formato de pesos | `.litertlm` (LiteRT-LM); variantes texto e imagen |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente es `mistralai/Shieldstral-1.0-3B`, un transformer decoder-only de aproximadamente 3.000 millones de parámetros derivado de la familia Mistral. Las variantes multimodales añaden la torre de visión Pixtral con resolución fija de 560×560, cuantizada a int8 en el bundle. La innovación principal no reside en la arquitectura sino en el planteamiento de la tarea: el modelo formula la moderación como una pregunta binaria de un solo paso hacia delante, donde la política se inyecta en el prompt en lenguaje natural mediante tres campos (`<Instruct>`, `<Query>`, `<Document>`). Esto permite que un único checkpoint cubra políticas nuevas sin reentrenamiento.
+El modelo base es un transformer decoder-only de Mistral AI de aproximadamente 3B parámetros, especializado como clasificador de seguridad. La innovación clave del diseño es que la política de moderación se inyecta en el prompt en lenguaje natural mediante tres campos (`<Instruct>`, `<Query>`, `<Document>`), de modo que un único checkpoint sirve para múltiples políticas sin reentrenamiento. La salida es un único token (`yes` o `no`) en un solo paso forward, o bien una puntuación continua obtenida mediante softmax sobre los logits de ambos candidatos, que es lo que el modelo original umbraliza a 0.5.
 
-La información disponible no detalla la composición del dataset de entrenamiento, el número de tokens utilizados ni si se aplicaron técnicas de RLHF o DPO. Tampoco se especifican innovaciones como decodificación especulativa o atención lineal. Lo que sí se documenta con precisión es el proceso de conversión a LiteRT-LM: la variante `_vision_int4_gpu` reexporta los mismos pesos con litert-converter 0.3.1 para rebajar el compuesto `odml.softmax` a un `SOFTMAX` nativo, ya que la versión 0.3.0 no podía bajarlo y el delegado GPU solo aceptaba 52 de 1187 operaciones, provocando el rechazo del motor. Los ficheros de texto se exportaron por una ruta que eliminaba esa marca y por eso no se vieron afectados.
+La conversión a LiteRT-LM externaliza el embedder y aplica cuantización int4 blockwise-32 (OCTAV) con embeddings int8 para la variante de texto, y añade una torre de visión Pixtral int8 con resolución estática de 560×560 en las variantes multimodales. Los detalles sobre el número de tokens de entrenamiento, composición del dataset y uso de RLHF/DPO del modelo original no están disponibles en la información proporcionada. La variante `_int4_gpu` reexporta el decodificador con litert-converter 0.3.1 para que el softmax de atención se traduzca a un builtin `SOFTMAX`, corrigiendo un fallo de delegación en GPU móvil.
 
 ## Capacidades
 
-- Clasificación binaria de seguridad: responde `yes` o `no` a una pregunta de moderación sobre un documento, en un solo paso hacia delante y emitiendo un único token.
-- Puntuación continua: softmax sobre los logits de `yes`/`no`, con umbral recomendado de 0,5 por la model card original; en LiteRT-LM requiere la API de scoring y dos prefills.
-- Política adaptable en inferencia: la política de moderación se suministra en lenguaje natural en el campo `<Instruct>`, sin reentrenamiento.
-- Multilingüismo: doce idiomas (inglés, francés, español, alemán, italiano, portugués, neerlandés, chino, japonés, coreano, árabe y ruso).
-- Moderación de imágenes: las variantes `_vision_int4` y `_vision_int4_gpu` aceptan documentos de texto e imagen con la torre Pixtral.
-- Ejecución totalmente local: sin llamadas de red, apta para entornos con requisitos de privacidad.
-- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni modo thinking: es un clasificador, no un modelo conversacional. Una pregunta directa devuelve únicamente `yes` o `no`.
+- Clasificación binaria de seguridad: responde `yes` o `no` a una pregunta sobre un documento en un único paso forward.
+- Puntuación continua de riesgo mediante softmax sobre los logits de `yes`/`no` (requiere API de scoring y dos prefills en LiteRT-LM).
+- Política de moderación adaptable en tiempo de inferencia mediante lenguaje natural en el campo `<Instruct>`.
+- Moderación de texto en 12 idiomas: inglés, francés, español, alemán, italiano, portugués, neerlandés, chino, japonés, coreano, árabe y ruso.
+- Moderación de imágenes en las variantes con torre Pixtral (resolución estática 560×560).
+- Ejecución totalmente en dispositivo sin llamada de red.
+- No es un modelo conversacional: no mantiene diálogo multi-turno ni genera texto libre; cada documento debe evaluarse en un chat nuevo en la demo web.
 
 ## Casos de uso
 
-- Moderación de comentarios en aplicaciones móviles: el bundle `_int4` (1,82 GiB de sección principal) se ejecuta en el propio teléfono con LiteRT-LM y clasifica cada comentario contra la política definida en `<Instruct>`, sin enviar texto del usuario a un servidor y con TTFT de 910 ms en GPU de Galaxy S26.
-- Filtrado de contenido generado por el usuario en foros multilingües: al cubrir doce idiomas con un único checkpoint, se puede aplicar la misma política a publicaciones en español, árabe o japonés sin desplegar clasificadores separados por idioma.
-- Moderación de imágenes en dispositivos: la variante `_vision_int4` acepta documentos de imagen a 560×560 y permite rechazar contenido visual inapropiado antes de subirlo, con 1,9 tok/s de decodificación en CPU de Galaxy S26.
-- Puerta de seguridad previa a un LLM generativo: dado que la respuesta es un único token, se puede intercalar como filtro de entrada o salida en un pipeline mayor, con coste de prefill de 289 tok/s en GPU móvil.
-- Cumplimiento normativo en entornos sin conectividad: aplicaciones de campo, dispositivos industriales o portátiles sin red pueden ejecutar la moderación localmente gracias a la ausencia de llamadas de red.
-- Adaptación rápida a nuevas políticas editoriales: al definirse la política en el prompt, un equipo de confianza y seguridad puede ajustar criterios (estrictez, categorías vigiladas) sin reentrenar ni redistribuir el modelo.
-- Despliegue en hardware de bajo consumo: el formato LiteRT-LM y el tamaño int4 permiten ejecución en Raspberry Pi, tabletas y portátiles, ampliando la moderación a dispositivos donde no cabría un clasificador en fp16.
+- Moderación de comentarios en aplicaciones móviles: el archivo int4 (1,82 GiB de sección principal) cabe en un iPhone y clasifica cada comentario localmente, evitando enviar contenido del usuario a un servidor y reduciendo costes de infraestructura.
+- Filtrado de contenido generado por el usuario en foros y comunidades: se define la política en `<Instruct>` (categorías, nivel de strictness) y se evalúa cada publicación con una pregunta binaria, sin reentrenar el modelo al cambiar las normas.
+- Moderación de imágenes en apps de mensajería: la variante `vision_int4_gpu` permite clasificar adjuntos fotográficos en el propio dispositivo con la torre Pixtral, útil cuando la política de privacidad impide subir imágenes.
+- Gatekeeping previo a un LLM generativo: actuar como primera barrera que descarta prompts o documentos inseguros antes de invocar un modelo mayor en la nube, reduciendo coste y exposición.
+- Cumplimiento normativo en despliegues edge: en entornos con requisitos de residencia de datos (sanidad, educación, administración), el clasificador procesa el contenido sin salir del dispositivo.
+- Moderación multilingüe en mercados europeos y asiáticos: al cubrir 12 idiomas, una sola implementación sirve para comunidades con contenido en español, francés, alemán, árabe o japonés.
+- Evaluación por lotes de corpus: la puntuación continua (softmax sobre logits) permite ordenar documentos por riesgo en lugar de aplicar un corte binario, útil para triaje de datasets.
 
 ## Benchmarks y rendimiento
 
-La model card incluye una tabla de puertas de calidad comparando el checkpoint fuente en fp32 sobre MPS (referencia) con otras ejecuciones, sobre un conjunto de 200 elementos estratificado 100 inseguros / 100 seguros del conjunto público OpenAI moderation evaluation, con umbral 0,5 y la receta de cribado amplio de la model card original. Los datos disponibles en la información proporcionada están incompletos (la fila de bf16 aparece truncada), por lo que solo se reproduce lo íntegro:
+Evaluación de calidad sobre 200 ítems estratificados (100 inseguros / 100 seguros) del conjunto público OpenAI moderation evaluation, receta de cribado amplio del modelo original, umbral 0.5, referencia fp32 en MPS:
 
-| Ejecución | F1 | Exactitud | Concordancia con referencia | r (margen de logits) | Cambios de etiqueta |
+| Ejecución | F1 | Accuracy | Concordancia con referencia | r (margen de logits) | Cambios de etiqueta |
 |---|---|---|---|---|---|
-| fuente fp32 (referencia) | 85,0 | 83,0 | — | — | — |
-| fuente bf16 | no disponible (dato truncado en la información) | no disponible | no disponible | no disponible | no disponible |
+| fuente fp32 (referencia) | 85.0 | 83.0 | — | — | — |
+| variantes convertidas | no disponible (dato truncado en la model card) | no disponible | no disponible | no disponible | no disponible |
 
-Rendimiento en dispositivo (edge-compat, LiteRT-LM 0.16.0, Galaxy S26):
+Rendimiento en dispositivo (edge-compat, Galaxy S26, LiteRT-LM 0.16.0):
 
-| Variante | Dispositivo | Decode | Prefill | TTFT | Notas |
+| Variante | Backend | Decode | Prefill | TTFT | Notas |
 |---|---|---|---|---|---|
-| `shieldstral-1.0-3b-int8` | GPU | 8,6 tok/s | 289 tok/s | 910 ms | 1187/1187 ops delegadas (2026-08-24) |
-| `shieldstral-1.0-3b-int8` | CPU | 8,3 tok/s | 129 tok/s | 1,91 s | (2026-09-05) |
-| `shieldstral-1.0-3b-vision-int4` | GPU | no ejecuta | — | — | `engine_create_failed` (2026-08-24) |
-| `shieldstral-1.0-3b-vision-int4` | CPU | 1,9 tok/s | 33 tok/s | 7,48 s | (2026-09-05) |
-
-No se han publicado en la información disponible resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de conocimiento general, lo cual es coherente con la naturaleza de clasificador del modelo.
+| `shieldstral-1.0-3b-int8` | GPU | 8,6 tok/s | 289 tok/s | 910 ms | 1187/1187 ops delegadas |
+| `shieldstral-1.0-3b-int8` | CPU | 8,3 tok/s | 129 tok/s | 1,91 s | — |
+| `shieldstral-1.0-3b-vision-int4` | GPU | no ejecuta | no ejecuta | no ejecuta | `engine_create_failed` |
+| `shieldstral-1.0-3b-vision-int4` | CPU | 1,9 tok/s | 33 tok/s | 7,48 s | — |
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: la variante `_int4` de texto ocupa 2,20 GiB en disco con 1,82 GiB de sección principal; la `_int8` requiere 3,71 GiB (3,33 GiB de sección principal); las de visión, 2,78 GB con 1,82 GiB de sección principal más la torre Pixtral.
-- GPU de escritorio: no se especifican modelos concretos (A100, H100, RTX 4090) en la información disponible; el runtime objetivo es LiteRT-LM sobre GPU móvil e integrada, no servidores de datacenter.
-- GPU de consumo: la variante `_int4` de texto es la única que cabe en un iPhone dentro del presupuesto práctico de mmap de iOS (~2,1 GiB con entitlements por defecto; por debajo de 3 GiB incluso con entitlements relajados). La `_int8`, con 3,33 GiB en una sola sección, excede ese límite y queda restringida a escritorio o equipos con alta memoria.
-- Visión en GPU móvil: es obligatorio usar `_vision_int4_gpu`; el fichero `_vision_int4` original no carga en GPU móvil porque el delegado solo acepta 52 de 1187 operaciones y el motor se rechaza.
-- Opciones de despliegue: LiteRT-LM 0.16.0 (runtime principal), con demo web vía WebGPU que carga `Shieldstral-1.0-3B_int4.litertlm` (2,36 GB de descarga). No se documentan opciones vLLM, llama.cpp, Ollama ni TGI para este formato.
-- Latencia y throughput: en Galaxy S26 con GPU, 8,6 tok/s de decodificación, 289 tok/s de prefill y 910 ms de TTFT para la variante int8 de texto; en CPU, 8,3 tok/s, 129 tok/s y 1,91 s respectivamente. La variante de visión en CPU baja a 1,9 tok/s, 33 tok/s y 7,48 s de TTFT.
-- Contexto: caché KV de 4096 tokens con escalera de prefill completa (2048 → 1); documentos de más de ~4000 tokens exigen reexportación.
+- VRAM/RAM: variante texto int4 con 1,82 GiB de sección principal y 2,20 GiB de archivo; variante texto int8 con 3,33 GiB de sección y 3,71 GiB de archivo; variantes visión con 1,82 GiB de decodificador y 2,78 GB de archivo.
+- Cabe en consumer GPU y en móviles: la int4 es la única variante de texto que encaja en un iPhone (el presupuesto práctico de mmap en iOS ronda 2,1 GiB con entitlements por defecto; incluso apps con entitlements relajados no superan los 3 GiB en hardware actual).
+- La int8 está pensada para escritorio o dispositivos con alta memoria.
+- GPU recomendadas: no se especifican modelos concretos de A100/H100/RTX 4090; las mediciones publicadas son sobre GPU móvil de Galaxy S26 y CPU del mismo dispositivo.
+- En GPU móvil, para las variantes de visión debe usarse `_int4_gpu`; el archivo de visión original no carga en GPU móvil porque litert-converter 0.3.0 no baja el compuesto `odml.softmax` y el delegado solo acepta 52 de 1187 ops.
+- Opciones de despliegue: runtime LiteRT-LM (versión 0.16.0 en las mediciones), demo web con WebGPU, y API de scoring para la puntuación continua.
+- Latencia/throughput: TTFT de 910 ms en GPU y 1,91 s en CPU para la variante int8 de texto; decode de 8,6 y 8,3 tok/s respectivamente.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Modalidad | Licencia | Formato edge | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Shieldstral-1.0-3B (LiteRT-LM) | ~3B | 4096 | texto; texto+imagen en variantes de visión | Apache 2.0 | `.litertlm` int4/int8 | Hugging Face, demo web |
-| `mistralai/Shieldstral-1.0-3B` (original) | ~3B | no disponible | texto; visión según checkpoint | Apache 2.0 | safetensors | Hugging Face |
-| Clasificadores de moderación propietarios (p. ej. API de moderación de OpenAI) | no disponible | no disponible | texto; imagen en algunas APIs | propietaria | API en la nube | servicio gestionado |
+| Modelo | Parámetros | Contexto | Modalidad | Licencia | Formato edge |
+|---|---|---|---|---|---|
+| Shieldstral-1.0-3B (LiteRT-LM) | ~3B | 4096 tokens | texto; texto+imagen en variantes visión | Apache 2.0 | `.litertlm` |
+| `mistralai/Shieldstral-1.0-3B` (original) | ~3B | no disponible | texto; visión según checkpoint | Apache 2.0 | safetensors |
+| Clasificadores de moderación tipo OpenAI moderation API | no disponible | no disponible | texto e imagen | propietaria / servicio | no (API en nube) |
 
-La información disponible no incluye comparaciones con otros clasificadores de seguridad open source de tamaño similar (por ejemplo, variantes de Llama Guard), por lo que la comparativa se limita a los elementos documentados. La ventaja diferencial de esta conversión frente al checkpoint original es la ejecución en dispositivo sin red y el tamaño reducido; la desventaja es la dependencia del runtime LiteRT-LM y la ausencia de ecosistema de servidores como vLLM.
+No se dispone de datos de benchmarks comparativos con otras alternativas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo conversacional: una pregunta directa devuelve solo `yes` o `no`; requiere el formato de tres campos (`<Instruct>`, `<Query>`, `<Document>`) y un documento por chat en la demo web.
-- Riesgo de alucinación y falsos positivos/negativos: la referencia fp32 obtiene F1 de 85,0 y exactitud de 83,0 sobre el conjunto de evaluación, lo que implica un margen de error no despreciable en producción.
-- Límite de contexto: documentos de más de ~4000 tokens no se procesan correctamente sin reexportar el modelo con una caché KV mayor.
-- La demo web carga únicamente el fichero de texto, por lo que no evalúa imágenes.
-- La variante de visión original no funciona en GPU móvil; hay que usar `_vision_int4_gpu` y verificar la versión del conversor (0.3.1 o superior).
-- La `_int8` de texto no cabe en iOS con los límites prácticos de mmap; usarla solo en escritorio o equipos con memoria suficiente.
-- Sesgos conocidos: no se documentan en la información disponible; al ser un clasificador de seguridad, hereda los sesgos del dataset de entrenamiento y de la política definida en el prompt.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene revisar las condiciones del checkpoint base `mistralai/Shieldstral-1.0-3B` y de la torre Pixtral.
-- Dependencia del runtime: el formato `.litertlm` limita el despliegue a LiteRT-LM; no hay soporte documentado para vLLM, llama.cpp, Ollama ni TGI.
-- El repositorio ocupa 29,4 GB por incluir todas las variantes; la descarga individual de cada fichero es la vía recomendada.
+- No es un modelo conversacional: no mantiene diálogo, no genera explicaciones y una pregunta directa devuelve solo `yes` o `no`.
+- Contexto limitado a 4096 tokens de caché KV; documentos de más de ~4000 tokens requieren reexportar con una caché mayor.
+- En la demo web solo se carga el archivo de texto, por lo que no evalúa imágenes; además, cada documento debe ir en un chat nuevo.
+- La variante de visión int4 original no arranca en GPU móvil (`engine_create_failed`); es obligatorio usar `_int4_gpu` en ese backend.
+- El rendimiento de la variante de visión en CPU es bajo (1,9 tok/s de decode, TTFT de 7,48 s), poco adecuado para moderación interactiva.
+- Los resultados de calidad de las variantes convertidas frente a la referencia fp32 aparecen truncados en la model card; no se puede confirmar la degradación exacta por cuantización.
+- Riesgo de sesgo y de alucinación inherente al modelo base: no se documentan análisis de sesgo ni tasas de falsos positivos/negativos por idioma o categoría.
+- Uso comercial permitido por Apache 2.0, sin restricciones adicionales indicadas, pero la responsabilidad sobre la política de moderación recae en quien la define en `<Instruct>`.
+- La puntuación continua requiere dos prefills en LiteRT-LM, lo que duplica el coste de inferencia respecto al veredicto binario.
 
 ## Enlaces
 
-- Hugging Face (esta conversión): https://huggingface.co/litert-community/Shieldstral-1.0-3B
+- Modelo en Hugging Face: https://huggingface.co/litert-community/Shieldstral-1.0-3B
 - Modelo base: https://huggingface.co/mistralai/Shieldstral-1.0-3B
 - Demo web LiteRT-LM: https://google-ai-edge.github.io/LiteRT-LM/web_demos/chat/index.html?model=litert-community/Shieldstral-1.0-3B
-- Repositorio LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM
 - Ficha edge-compat int8: https://github.com/john-rocky/edge-compat/blob/main/cards/shieldstral-1.0-3b-int8/CARD.md
 - Ficha edge-compat vision int4: https://github.com/john-rocky/edge-compat/blob/main/cards/shieldstral-1.0-3b-vision-int4/CARD.md
 - Conjunto de evaluación de moderación de OpenAI: https://huggingface.co/datasets/mmathys/openai-moderation-api-evaluation

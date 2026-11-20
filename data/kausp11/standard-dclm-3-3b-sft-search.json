@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "Kausp11/standard-dclm-3.3b-sft-search",
+  "slug": "kausp11-standard-dclm-3-3b-sft-search",
+  "author": "Kausp11",
+  "url": "https://huggingface.co/Kausp11/standard-dclm-3.3b-sft-search",
+  "created_at": "2026-11-20T12:18:28.000Z",
+  "updated_at": "2026-11-20T12:56:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "querylm_nanochat",
+    "text-generation",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceTB/dclm-edu",
+    "base_model:Kausp11/standard-dclm-3.3b",
+    "base_model:finetune:Kausp11/standard-dclm-3.3b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5539729626,
+  "parameters_human": "5.54B",
+  "storage_bytes": 11079484668,
+  "storage_human": "11.1 GB",
+  "context_length": null,
+  "base_model": "Kausp11/standard-dclm-3.3b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

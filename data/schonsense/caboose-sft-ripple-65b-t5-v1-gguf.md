@@ -2,79 +2,81 @@
 
 ## Resumen
 
-Caboose-SFT-Ripple-65B-T5-v1-GGUF es la version cuantizada en formato GGUF de un ajuste fino (SFT) de parametros completos sobre el modelo base ricursiveAI/Ripple-65B-Preview, un modelo de 65.000 millones de parametros. El autor, schonsense, lo presenta como un trabajo orientado a la normalizacion lexica humana y a la escritura en personaje (roleplay narrativo), con el objetivo declarado de reducir los "LLM-isms", es decir, los patrones de estilo artificiales tipicos de los modelos generativos.
+Caboose-SFT-Ripple-65B-T5-v1-GGUF es la distribucion en formato GGUF del modelo Caboose-SFT-Ripple-65B-T5-v1-BF16, un ajuste fino supervisado de un modelo de 65B de parametros (64.782.689.360 exactamente) orientado a escritura humana y roleplay en personaje. Lo publica el usuario schonsense en Hugging Face bajo licencia Apache 2.0, y esta version concreta anade cuantizaciones GGUF generadas con imatrix para su uso con llama.cpp y entornos compatibles con endpoints.
 
-El ajuste se realizo sobre el lm_head y los tensores que lo alimentan, con un ratio de 95:5 entre tokens de escritura humana y de pensamiento en personaje. El autor indica que el entrenamiento esta concluido tras cinco traversals (pasadas) y que el benchmark aproximado se mantiene sin cambios respecto al modelo base. La licencia es Apache 2.0.
+El modelo parte de una base de 65B y aplica un ajuste fino de parametros completos con learning rate bajo sobre el lm_head y los tensores que lo alimentan, entrenado sobre un corpus de mas de 40 millones de tokens atendidos y 22 millones supervisados, con una proporcion 95:5 entre escritura humana y pensamiento en personaje. El objetivo declarado es reducir los "LLM-isms", es decir, los patrones estilisticos artificiales tipicos de los modelos generativos, y acercar la prosa a la de un escritor humano.
 
-La relevancia de esta ficha es limitada pero concreta: se trata de un derivado de nicho, sin descargas ni likes en el momento de la consulta, publicado en noviembre de 2026, que interesa a quienes trabajen con prosa narrativa, roleplay y control de estilo en modelos de gran tamano. No hay informacion publica sobre arquitectura interna, contexto o idiomas del modelo base.
+Es relevante ahora como ejemplo de ajuste fino estilistico de gran escala empaquetado para inferencia local: el repositorio ocupa 293,1 GB y ofrece cuantizaciones GGUF con imatrix, lo que permite desplegar un modelo de 65B en hardware de consumo de gama alta. El autor advierte explicitamente de que el script de inferencia usado durante el entrenamiento estaba defectuoso y genero una cache KV sesgada, por lo que el modelo "no es tan bueno como podria ser" y se espera una nueva version.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base ricursiveAI/Ripple-65B-Preview; presumiblemente transformer, sin confirmar) |
-| Parametros totales | 65B (segun el nombre del modelo base) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | transformer (familia no especificada en la informacion disponible) |
+| Parametros totales | 64.782.689.360 (64,78B) |
+| Parametros activos | no disponible (no es MoE segun la informacion) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el repo es GGUF; no se detallan los niveles incluidos) |
+| Tipos de cuantizacion | GGUF con imatrix (niveles concretos no disponibles) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (repo de 69,8 GB) |
+| Formato de pesos | GGUF (repo de 293,1 GB); modelo base en BF16 |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion publica sobre la arquitectura interna del modelo base ricursiveAI/Ripple-65B-Preview: no se confirma si es un transformer denso, un MoE o una arquitectura hibrida, ni se detalla la longitud de contexto nativa. El nombre indica 65B de parametros totales.
+La informacion disponible no detalla la arquitectura interna mas alla de que se trata de un transformer de 65B de parametros. El ajuste fino es de parametros completos con learning rate bajo, limitado al lm_head y a los tensores que lo alimentan, sobre el modelo base Caboose-SFT-Ripple-65B-T5-v1-BF16. El entrenamiento se realizo en cinco traversals (pasadas) sobre un corpus de mas de 40 millones de tokens atendidos y 22 millones supervisados, con una mezcla 95:5 de escritura humana frente a pensamiento en personaje para roleplay.
 
-El ajuste fino documentado es de parametros completos sobre el lm_head y los tensores que lo alimentan, con una tasa de aprendizaje baja (low LR). El corpus declara mas de 40 millones de tokens atendidos y mas de 22 millones supervisados, con una proporcion 95:5 entre escritura humana y pensamiento en personaje. Se realizaron cinco traversals de entrenamiento, ya concluidos. No se mencionan tecnicas de RLHF, DPO ni decodificacion especulativa. El autor afirma que el benchmark aproximado no cambio respecto al modelo base y que los "LLM-isms" se redujeron de forma notable, aunque los metricos quedan pendientes de publicacion.
+La innovacion declarada es estilistica mas que arquitectonica: reducir los patrones artificiales de generacion ("LLM-isms") manteniendo el rendimiento de benchmark del modelo base, que segun el autor permanece practicamente sin cambios. El autor advierte de un defecto relevante: el script de inferencia usado durante el entrenamiento estaba bugueado y produjo una generacion de cache KV sesgada, lo que degrada la calidad final. No se documentan fases de RLHF ni DPO, ni detalles sobre composicion exacta del dataset.
 
 ## Capacidades
 
-- Generacion de texto narrativo y prosa en ingles, con enfasis en naturalidad estilistica y reduccion de patrones artificiales.
-- Roleplay en personaje y narracion multi-turno con mantenimiento de voz y consistencia de personajes.
-- Normalizacion lexica humana: reformulacion de texto para que suene menos generado por maquina.
-- Conversacion multi-turno con formato de chat basado en tokens especiales `<|im_start|>` y `<|im_end|>`.
-- Generacion determinista (greedy) y muestreo, segun se documenta en los ejemplos de la model card.
-- No se documenta soporte de tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito.
-- Capacidades multilingues: no disponibles.
+- Generacion de texto narrativo y prosa de ficcion con estilo proximo a la escritura humana.
+- Roleplay en personaje y narracion multi-turno con control del punto de vista por parte del usuario.
+- Reduccion de patrones estilisticos artificiales tipicos de modelos generativos, segun el autor.
+- Conversacion general en formato de chat (etiquetas `<|im_start|>` / `<|im_end|>`).
+- Soporte de tool calling / function calling: no disponible en la informacion.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion.
+- Capacidades multilingues: no disponibles; no se especifican idiomas.
+- Capacidades especiales (vision, audio, thinking mode): no disponibles.
 
 ## Casos de uso
 
-- Escritura narrativa asistida: el modelo esta ajustado sobre prosa humana y puede generar continuaciones de ficcion con un registro mas natural que el del modelo base, util para autores que buscan reducir el estilo generico de los LLM.
-- Roleplay y ficcion interactiva: los ejemplos de la model card muestran conversaciones en personaje con contexto de escena (dialogo, accion, objetos), adecuado para motores de historias interactivas.
-- Normalizacion de texto: reescritura de borradores para eliminar "LLM-isms" y acercar el registro a la escritura humana, aplicable en edicion y correccion de estilo.
-- Prototipado de personajes para videojuegos narrativos: el modelo puede sostener dialogos con memoria de escena a corto plazo, aunque el contexto maximo no esta documentado.
-- Investigacion sobre estilo generativo: permite comparar la salida del modelo base frente a las cinco traversals del ajuste, tal como documenta el autor, para estudiar deriva estilistica en SFT.
-- Generacion de dialogos para guiones y ficcion serializada: util para producir variantes de una misma escena y seleccionar la mas natural.
-- Despliegue local en formato GGUF: al publicarse en GGUF, puede ejecutarse con llama.cpp u Ollama en hardware con suficiente memoria, sin depender de infraestructura en la nube.
+- Escritura creativa asistida: el modelo esta ajustado sobre escritura humana y puede generar narrativa de ficcion con registro literario, util para autores que necesitan borradores con voz propia y no con prosa generica de LLM.
+- Roleplay narrativo y juegos de rol por texto: el formato de chat con system prompt de narrador y control de un personaje por parte del usuario encaja directamente con el caso de entrenamiento, como demuestra el ejemplo de la model card.
+- Generacion de dialogos para guiones y videojuegos: la proporcion 95:5 hacia escritura humana favorece dialogos naturales en lugar de intercambios acartonados.
+- Prototipado de personajes conversacionales: permite iterar sobre voces y personalidades de personajes sin salir de un unico modelo de 65B cuantizado.
+- Fine-tuning posterior como base: al ser un ajuste de lm_head sobre una base de 65B, sirve como punto de partida para especializaciones estilisticas adicionales.
+- Inferencia local en hardware de gama alta: las cuantizaciones GGUF con imatrix permiten ejecutar el modelo en estaciones de trabajo con suficiente VRAM o RAM, sin depender de APIs.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor indica unicamente que el benchmark aproximado se mantiene sin cambios respecto al modelo base y que las metricas de reduccion de "LLM-isms" se publicaran en el futuro.
+El autor indica que el benchmarking aproximado "ha permanecido sin cambios respecto a la base", pero no publica cifras concretas. No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: para 65B en GGUF, una cuantizacion de 4 bits requiere aproximadamente 35-40 GB de VRAM o memoria unificada; 8 bits, en torno a 65-70 GB; FP16, alrededor de 130 GB. Son estimaciones por tamano, no datos publicados por el autor.
-- GPU recomendadas: A100 80 GB o H100 80 GB para cuantizaciones altas y FP16; multiples GPU para FP16.
-- GPU de consumo: no cabe en GPUs de consumo de 24 GB (RTX 4090) en cuantizaciones de 4 bits sin offloading a RAM del sistema; con offloading parcial podria ejecutarse con latencia alta.
-- Opciones de despliegue: llama.cpp y Ollama por el formato GGUF; vLLM y TGI no soportan GGUF de forma nativa sin conversion.
+- VRAM estimada para inferencia: no disponible de forma oficial; para 64,78B de parametros, una cuantizacion Q4 requiere aproximadamente 35-40 GB y Q8 en torno a 65-70 GB, dependiendo de la implementacion y del contexto.
+- GPU recomendadas: no especificadas por el autor; por tamano, serian necesarias configuraciones multi-GPU (por ejemplo, varias A100 o H100) o una unica GPU con 80 GB para cuantizaciones bajas.
+- Cabe en consumer GPU: no en una sola; seria necesario repartir el modelo entre varias RTX 4090 (24 GB cada una) o usar offloading a RAM del sistema.
+- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio), dado el formato GGUF; el tag `endpoints_compatible` sugiere compatibilidad con endpoints de inferencia gestionados.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de datos de rendimiento del modelo base ni de alternativas comparables en la informacion proporcionada, por lo que no es posible establecer una comparativa rigurosa de parametros, contexto y rendimiento.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Caboose-SFT-Ripple-65B-T5-v1-GGUF | 64,78B | no disponible | Apache 2.0 | GGUF | Ajuste estilistico para escritura humana y roleplay |
+| Modelo base Caboose-SFT-Ripple-65B-T5-v1-BF16 | 64,78B | no disponible | Apache 2.0 | BF16 | Punto de partida del ajuste |
+| Alternativas de 65B comparables | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de modelos comparables en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- El modelo base es un preview de un autor poco documentado; no hay informacion sobre sesgos, datos de preentrenamiento ni evaluaciones de seguridad.
-- Riesgo de alucinacion no cuantificado; el ajuste se centra en estilo, no en fidelidad factual.
-- El ajuste esta orientado a escritura y roleplay en ingles; el rendimiento en otros idiomas no esta documentado.
-- La longitud de contexto no esta publicada, lo que limita el diseno de aplicaciones con ventanas largas.
-- El autor reconoce que el benchmark se mantiene igual que el base, por lo que no hay mejora demostrada en tareas objetivas.
-- Aunque la licencia es Apache 2.0, conviene verificar las condiciones del modelo base ricursiveAI/Ripple-65B-Preview antes de uso comercial.
-- Modelo sin descargas ni validacion de la comunidad en el momento de la consulta; no recomendado como dependencia critica de produccion sin evaluacion propia.
-- El repo GGUF no detalla que niveles de cuantizacion incluye; hay que inspeccionar los archivos antes de planificar el despliegue.
+- El autor advierte de que el script de inferencia usado en el entrenamiento estaba defectuoso y genero una cache KV sesgada, por lo que la calidad es inferior a la esperada; se anuncia una nueva version.
+- Riesgo de alucinacion: no evaluado en la informacion disponible; el ajuste se centra en estilo, no en factualidad.
+- Sesgos conocidos: no documentados; el entrenamiento sobre escritura humana y roleplay puede heredar sesgos del corpus, no auditado publicamente.
+- Limitaciones de contexto e idioma: no se especifican longitud de contexto ni idiomas soportados, lo que dificulta planificar su uso en produccion multilingue.
+- Licencia Apache 2.0: permite uso comercial, pero al derivar de un modelo base no documentado en detalle conviene verificar las obligaciones heredadas del modelo original.
+- En produccion, la falta de benchmarks, de contexto declarado y de evaluacion de sesgos hace recomendable una validacion propia antes de desplegarlo.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/schonsense/Caboose-SFT-Ripple-65B-T5-v1-GGUF
-- Modelo base: https://huggingface.co/ricursiveAI/Ripple-65B-Preview
+- Modelo base: https://huggingface.co/schonsense/Caboose-SFT-Ripple-65B-T5-v1-BF16

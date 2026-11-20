@@ -1,0 +1,63 @@
+{
+  "schema": 2,
+  "id": "grace-cap/grace-deepfake-models",
+  "slug": "grace-cap-grace-deepfake-models",
+  "author": "grace-cap",
+  "url": "https://huggingface.co/grace-cap/grace-deepfake-models",
+  "created_at": "2026-11-20T08:40:42.000Z",
+  "updated_at": "2026-11-20T08:40:54.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "deepfake-detection",
+    "face-forgery-detection",
+    "explainable-ai",
+    "concept-bottleneck",
+    "clip",
+    "image-classification",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 87857613,
+  "storage_human": "88 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "grâce - Définitions, synonymes, prononciation, exemples | Dico en …",
+      "url": "https://dictionnaire.lerobert.com/definition/grace",
+      "snippet": "GRACE, signifie aussi, la bonne mine d'une personne, ses manieres d'agir, de parler, de s'habiller qui plaisent aux autres. Cette …Read more"
+    },
+    {
+      "title": "grâce — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.m.wiktionary.org/wiki/gr%C3%A2ce",
+      "snippet": "Anglais : grace (en) Croate : zahvalnica (hr) Occitan : gràcia (oc) Sicilien : gràzzia (scn)"
+    },
+    {
+      "title": "Grâce : Définition simple et facile du dictionnaire",
+      "url": "https://www.linternaute.fr/dictionnaire/fr/definition/grace/",
+      "snippet": "Synonyme : absolution, miséricorde, indulgence, amnistie, exemption Contraire : condamnation, bannissement, punition Traduction …Read more"
+    }
+  ]
+}

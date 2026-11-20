@@ -2,113 +2,99 @@
 
 ## Resumen
 
-ghost-typer es un modelo de autocompletado de texto orientado a prompts de asistentes de programación, desarrollado por tmickleydoyle y publicado en Hugging Face bajo licencia MIT. Su particularidad es que no ha sido entrenado mediante descenso de gradiente: es un modelo "compilado", es decir, sus pesos se generan mediante reglas en forma cerrada (n-gramas) aplicadas sobre aproximadamente 126.000 líneas de texto escrito por humanos. No hay pesos preentrenados ni ajuste fino; cada parámetro deriva de un cálculo determinista en `build_weights.py`.
+ghost-typer es un modelo de autocompletado de texto (ghost text) para prompts de asistentes de programación, desarrollado por tmickleydoyle. Su característica principal es que no ha sido entrenado mediante descenso de gradiente: es un modelo "compilado" cuyos pesos se generan con una regla en forma cerrada a partir de aproximadamente 126.000 líneas de texto escrito por humanos, provenientes de los conjuntos de datos WildChat-1M, OASST2, MBPP y CoNaLa. Se distribuye como un `LlamaForCausalLM` estándar de 400 millones de parámetros (de los cuales el 97% son ceros), con un tamaño de 1,60 GB en float32.
 
-El modelo se distribuye como un `LlamaForCausalLM` estándar de 396 millones de parámetros (97% de ellos ceros), cargable con `transformers` sin `trust_remote_code`. Su función es mostrar "ghost text" (texto fantasma) predictivo mientras el usuario escribe, y solo sugiere cuando supera un umbral de confianza calibrado sobre prompts reservados. Existe una variante hermana para navegador (`ghost-typer-web`) de 10,8 MB en uint8 que corre íntegramente en el cliente con un runtime TypeScript sin dependencias.
+El modelo resuelve un problema muy concreto: sugerir la continuación de una frase mientras el usuario escribe, mostrando texto fantasma que se acepta con Tab. Su política de decisión es conservadora: solo emite una sugerencia cuando supera un umbral de confianza (por defecto 0,62) cuya precisión se ha medido sobre prompts reservados. Con esa configuración alcanza un 90,8% de precisión y un 23,0% de pulsaciones ahorradas.
 
-Su relevancia actual radica en que demuestra que un autocompletado útil y con precisión medida (90,2% por defecto) puede lograrse sin entrenamiento neuronal, con un coste computacional mínimo (2,6 ms de mediana por pulsación en navegador) y desplegable on-device, lo que lo hace atractivo para entornos con requisitos estrictos de privacidad o latencia.
+Es relevante por su planteamiento poco habitual (sin entrenamiento, sin pesos preentrenados, sin otro modelo detrás) y porque existe una variante para navegador de solo 10,7 MB en uint8 que funciona íntegramente en la pestaña del usuario, con una latencia mediana de 2,5 ms por pulsación. La ficha se centra en el repositorio de transformers, que es el objeto de esta entrada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer tipo Llama (`LlamaForCausalLM`) compilado a partir de n-gramas; 97% de pesos a cero |
-| Parametros totales | 395.766.000 (396M) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | float32 (canónico, `model.safetensors`); uint8 (variante navegador, `model.bin`); float32 sin cuantizar en variante navegador (`model-f32.bin`) |
-| Idiomas soportados | inglés (`en`) |
+| Arquitectura | Transformer tipo Llama (`LlamaForCausalLM`), compilado con reglas en forma cerrada, sin entrenamiento |
+| Parametros totales | 399.916.440 (97% ceros) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible (el modelo opera sobre contextos de n-gramas; la variante transformers usa 12.607 contextos y vocabulario de 6.000 palabras) |
+| Tipos de cuantizacion | Float32 canónico en este repo; la variante de navegador ofrece uint8 (10,7 MB) y float32 (16,8 MB). No hay modelo en float16/bf16 porque la escala de logits (1e-5) se rompería |
+| Idiomas soportados | Inglés (`en`) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (transformers); bin (variante navegador) |
+| Formato de pesos | `safetensors` (transformers); `model.bin` y `model-f32.bin` en la variante de navegador |
 
 ## Arquitectura y entrenamiento
 
-El modelo no se entrena: se compila. Los pesos de `model.safetensors` se generan aplicando reglas en forma cerrada sobre n-gramas extraídos de aproximadamente 126.000 líneas de texto humano, con fuentes documentadas en `data/SOURCES.md`. El resultado se materializa como un transformer tipo Llama cuyos logits equivalen a las log-probabilidades del n-grama compilado, coincidiendo con la referencia dentro de 2e-5 nats. El vocabulario del modelo de transformers es de 6.000 palabras y maneja 12.424 contextos; la variante de navegador usa un vocabulario mayor (31.486 palabras) y 520.483 contextos, ya que su formato disperso abarata el coste por palabra.
+El modelo es un transformer con estructura de Llama cuyos pesos no provienen de entrenamiento alguno: se generan aplicando una regla en forma cerrada definida en `build_weights.py` sobre un corpus de unas 126.000 líneas de texto humano. El resultado es una red dispersa (el 97% de los 400 millones de parámetros son ceros) que codifica estadísticas de n-gramas en forma de matriz. Los logits están escalados por 1e-5 para mantener la exactitud numérica de la red, motivo por el que no existe una versión en media precisión.
 
-Una innovación técnica destacable es la calibración por umbral: el modelo solo emite sugerencia si la confianza supera un umbral (0,71 por defecto) cuya precisión se mide sobre prompts reservados (10% de los prompts excluidos de la compilación). El umbral es un parámetro en tiempo de ejecución, lo que permite intercambiar cobertura por precisión sin recompilar. Además, los logits están escalados por 1e-5 para mantener la red exacta, lo que impide usar float16/bf16 (no hay versión en media precisión). La cuantización uint8 frente a float32 en la variante de navegador cambió la precisión sobre reservados en +0,01 puntos, un coste despreciable.
+Los datos de referencia son WildChat-1M, OASST2, MBPP y CoNaLa, es decir, conversaciones reales de chat, instrucciones de asistente y pares de código y lenguaje natural. No hay RLHF ni DPO porque no hay entrenamiento. La variante de navegador es una compilación hermana, no una cuantización de este repositorio: usa un vocabulario mayor (30.893 palabras frente a 6.000) y 512.533 contextos, y almacena solo las partes no nulas del transformer compilado. La decodificación es determinista y avanza palabra a palabra mientras cada siguiente palabra supere una probabilidad de 0,8.
 
 ## Capacidades
 
-- Autocompletado de texto predictivo ("ghost text") para prompts de asistentes de programación, mostrando sugerencias solo por encima de un umbral de confianza.
-- Predicción de continuación a nivel de carácter y palabra en inglés, orientada a frases típicas de interacción con asistentes de código.
-- Sugerencias de alta precisión: 90,2% por defecto, hasta 96,4% en modo `strict` (umbral 0,90) y 97,7% con umbral 0,95.
-- Ahorro medido de pulsaciones: 22,3% aceptando todas las sugerencias correctas con Tab en el umbral por defecto.
-- Ejecución on-device en navegador mediante runtime TypeScript sin dependencias (10,8 MB, uint8), sin servidor.
-- Integración con `transformers` mediante `pipeline("text-generation")` como modelo de causal LM estándar.
-- Compatibilidad con text-generation-inference y endpoints compatibles (según tags del repo).
-- Capacidad multilingüe: no disponible (solo inglés).
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Autocompletado de prompts en inglés para asistentes de programación, con sugerencia de texto fantasma aceptable con Tab.
+- Predicción de continuaciones lingüísticas frecuentes en contextos de programación y conversación técnica (por ejemplo, "write a python fun" → "ction to").
+- Política de confianza configurable en tiempo de ejecución: umbral de primera palabra (`tau`) y umbral de extensión (`ext`).
+- Modo silencioso cuando no alcanza el umbral de confianza, lo que evita sugerencias incorrectas.
+- Funcionamiento sin servidor en la variante de navegador (TypeScript sin dependencias, ejecutable en Web Worker, Bun o Node).
+- Integración con `transformers` mediante `pipeline("text-generation")` sin `trust_remote_code`.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo thinking.
 
 ## Casos de uso
 
-- Autocompletado en editores de código y IDE: el modelo se integra en el campo de entrada de prompts y muestra ghost text tras cada pulsación; con 2,6 ms de mediana por pulsación en navegador, la latencia es imperceptible y no requiere llamada a servidor.
-- Asistentes de programación en el navegador: la variante `ghost-typer-web` (10,8 MB, uint8) corre íntegramente en la pestaña del usuario, lo que permite ofrecer autocompletado sin enviar el texto del usuario a ningún backend, útil por privacidad y cumplimiento.
-- Herramientas de productividad on-device: cualquier aplicación web que necesite sugerencias de escritura en inglés (formularios, chats de soporte, documentación) puede usar el runtime TypeScript en Web Worker o Bun/Node sin dependencias.
-- Reducción de fricción en la escritura de prompts: dado que ahorra un 22,3% de pulsaciones en prompts reales de chat (21,9% en WildChat), mejora la experiencia en interfaces de chat con modelos de código donde el usuario redacta consultas largas.
-- Despliegue en entornos con recursos limitados: el modelo de transformers (1,58 GB en float32, 396M parámetros con 97% de ceros) puede servirse con `transformers`, TGI o endpoints compatibles en CPU, sin necesidad de GPU.
-- Investigación sobre autocompletado y calibración de umbrales: al ser un modelo compilado y reproducible, sirve como referencia para estudiar el equilibrio precisión/cobertura y para comparar con enfoques entrenados.
-- Prototipado rápido de funciones de autocompletado: la API `CompiledAutocomplete.load()` y `ac.suggest(text, { tau })` permite ajustar el umbral en producción sin recompilar ni reentrenar.
+- Autocompletado en editores de código e IDE: el modelo se integra en el campo de entrada de un asistente de programación y muestra texto fantasma tras cada pulsación; su latencia de 2,5 ms mediana en navegador lo hace viable en tiempo real sin bloquear la interfaz.
+- Autocompletado en la interfaz web de un chatbot: la variante de navegador carga 10,7 MB y sugiere continuaciones de la pregunta mientras el usuario escribe, reduciendo pulsaciones en torno al 23% con una precisión del 90,8%.
+- Herramienta de línea de comandos para prompts: el CLI incluido (`bun web/cli.ts "write a python fun"`) permite probar y depurar sugerencias desde terminal en pipelines de desarrollo.
+- Filtro de sugerencias de bajo riesgo en productos de accesibilidad: el umbral estricto (`tau` = 0,90) eleva la precisión al 96,7% con un 15,1% de pulsaciones ahorradas, adecuado cuando un falso positivo es costoso.
+- Investigación sobre modelos compilados y redes dispersas: el repositorio permite estudiar cómo se codifican estadísticas de n-gramas en un transformer y comparar el rendimiento frente a modelos entrenados de tamaño similar.
+- Evaluación de políticas de autocompletado: al ser los umbrales ajustables en tiempo de ejecución, sirve para medir el compromiso entre cobertura y precisión sobre conjuntos reservados sin recompilar.
+- Prototipado rápido de asistentes de código sin infraestructura de GPU: el modelo de 1,60 GB se ejecuta en CPU con PyTorch (65 ms por token siguiente), suficiente para demos y pruebas de concepto.
 
 ## Benchmarks y rendimiento
 
-Resultados medidos con `python scripts/benchmark.py` sobre el archivo cuantizado distribuido, con conjuntos reservados de 1.000 prompts de WildChat más 711 de OASST, MBPP y CoNaLa.
+Resultados medidos con `python scripts/benchmark.py` sobre el archivo cuantizado distribuido, con prompts reservados (1.000 de WildChat más 711 de OASST, MBPP y CoNaLa):
 
-| Umbral | Precision | Coverage | Keystrokes saved | Solo chat real (WildChat) |
+| Umbral primera palabra (tau) | Precision | Cobertura | Pulsaciones ahorradas | Solo prompts de chat reales (WildChat) |
 |---|---|---|---|---|
-| 0,71 (por defecto) | 90,2% | 37,6% | 22,3% | 89,9% precisión, 21,9% ahorrado |
-| 0,80 | 93,4% | 32,7% | 19,6% | 92,9%, 19,3% |
-| 0,90 (`strict`) | 96,4% | 26,3% | 15,8% | 96,3%, 15,6% |
-| 0,95 | 97,7% | 20,7% | 12,4% | 97,4%, 12,2% |
+| 0,62 (por defecto) | 90,8% | 39,2% | 23,0% | 90,0% precision, 22,2% ahorradas |
+| 0,80 | 94,9% | 30,5% | 18,3% | 94,5%, 17,8% |
+| 0,90 (strict) | 96,7% | 24,4% | 15,1% | 96,4%, 14,7% |
+| 0,95 | 97,4% | 19,0% | 12,1% | 97,1%, 11,9% |
 
-Rendimiento de inferencia:
-
-| Métrica | Navegador (`model.bin`, uint8) | Transformers (`model.safetensors`, float32) |
-|---|---|---|
-| Latencia | 2,6 ms mediana, 4,8 ms p95 por pulsación | 58 ms por siguiente token (PyTorch CPU) |
-| Tamaño | 10,8 MB | 1,58 GB |
-| Vocabulario / contextos | 31.486 palabras / 520.483 contextos | 6.000 palabras / 12.424 contextos |
-
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+La compilación anterior basada en Kneser-Ney obtuvo 90,2% de precisión y 22,2% de pulsaciones ahorradas. En la variante de navegador, uint8 frente a float32 cuesta 0,14 puntos de pulsaciones ahorradas (23,00% frente a 23,14%) con precisión prácticamente idéntica (90,8% frente a 90,7%). No se han publicado resultados en benchmarks estándar como MMLU, HumanEval o GSM8K en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no requiere GPU; el modelo de transformers corre en CPU (58 ms por token en PyTorch CPU) y la variante de navegador corre en el hilo principal o en Web Worker.
-- GPU recomendadas: no disponibles ni necesarias; cualquier GPU compatible con PyTorch puede acelerar la inferencia, pero no se han publicado cifras.
-- ¿Cabe en GPU consumer? Sí, con holgura: 1,58 GB en float32 cabe en cualquier GPU consumer, aunque el diseño está pensado para CPU y navegador.
-- Opciones de despliegue: `transformers` (pipeline de text-generation), text-generation-inference (TGI), endpoints compatibles, runtime TypeScript propio (`web/autocomplete.ts`, `tokenizer.ts`) en navegador, Bun o Node.
-- Latencia y throughput: 2,6 ms mediana y 4,8 ms p95 por pulsación en navegador; 58 ms por siguiente token en PyTorch CPU con el modelo de transformers. Throughput agregado no disponible.
+- VRAM estimada para inferencia: el modelo en float32 ocupa 1,60 GB de pesos; en CPU no requiere VRAM y en GPU el consumo es inferior a 2 GB.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de memoria libre; no se necesita A100 ni H100. Funciona en RTX 4090, RTX 3090 y GPUs consumer de gama media.
+- Cabe en GPU consumer: sí, en cualquier GPU con 2 GB o más de VRAM, y en la práctica se ejecuta en CPU.
+- Despliegue: `transformers` con `pipeline("text-generation")`; la variante de navegador se sirve como página estática o se integra como TypeScript sin dependencias en Bun o Node. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 65 ms por token siguiente en PyTorch sobre CPU; 2,5 ms mediana y 4,3 ms p95 por pulsación en la variante de navegador uint8.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| ghost-typer (este) | 396M (97% ceros) | no disponible | Compilado por n-gramas, sin entrenamiento | MIT | HF + variante navegador |
-| Modelos de autocompletado neuronal tipo CodeGPT/StarCoder-base | cientos de M a varios B | variable | Entrenados con descenso de gradiente | variable | HF |
-| Copilot / asistentes comerciales | no disponible | no disponible | Modelos grandes entrenados, servicio en la nube | propietaria | SaaS |
+No se dispone de datos de benchmarks comparables con modelos de autocompletado de código de otros autores en la información proporcionada. La comparación interna entre las dos compilaciones del mismo modelo es la siguiente:
 
-No se dispone de datos comparativos de rendimiento frente a alternativas concretas en la información proporcionada. La comparativa se limita a características estructurales; los benchmarks de ghost-typer no son directamente comparables con MMLU/HumanEval de modelos neuronales.
+| Modelo | Precision de pesos | Tamano | Vocabulario | Contextos | Latencia |
+|---|---|---|---|---|---|
+| ghost-typer (este repo) | float32 | 1,60 GB | 6.000 palabras | 12.607 | 65 ms/token (CPU) |
+| ghost-typer-web `model.bin` | uint8 | 10,7 MB | 30.893 palabras | 512.533 | 2,5 ms mediana por pulsación |
+| ghost-typer-web `model-f32.bin` | float32 | 16,8 MB | 30.893 palabras | 512.533 | no disponible |
 
 ## Limitaciones y advertencias
 
-- Solo inglés: no soporta otros idiomas, lo que limita su uso en aplicaciones multilingües.
-- Modelo compilado, no entrenado: no generaliza más allá de los patrones n-grama observados en las ~126.000 líneas de texto fuente; su cobertura es limitada (37,6% de pulsaciones en el umbral por defecto).
-- Riesgo de sugerencias incorrectas: aunque la precisión es alta (90,2% por defecto), un 9,8% de sugerencias mostradas son incorrectas; en modo `strict` baja al 3,6%.
-- No apto para generación libre: está diseñado exclusivamente para autocompletado de prompts; no es un modelo de razonamiento, código, matemáticas ni agentes.
-- Sin tool calling ni capacidades de agente.
-- No hay versión en float16/bf16: los logits están escalados por 1e-5 para mantener la exactitud, lo que rompe la media precisión; esto restringe opciones de despliegue acelerado.
-- En transformers 4.x hay que pasar `add_special_tokens=True` en el pipeline, ya que 4.x no antepone BOS por defecto.
-- Licencia MIT: permite uso comercial sin restricciones, pero el autor no ofrece garantías sobre idoneidad en producción.
-- Sesgos: no documentados en la información disponible; al derivarse de texto humano, puede heredar sesgos de las fuentes (WildChat, OASST, MBPP, CoNaLa).
-- El umbral de confianza debe calibrarse para cada aplicación; el valor por defecto (0,71) está medido sobre los conjuntos reservados del autor, no sobre dominios específicos del usuario.
+- Solo soporta inglés; no hay capacidades multilingües.
+- Al estar compilado a partir de estadísticas de n-gramas, no razona ni generaliza: fuera de los patrones frecuentes del corpus se queda en silencio o falla.
+- Riesgo de sugerencias incorrectas incluso con el umbral por defecto: la precisión es del 90,8%, es decir, cerca de una de cada diez sugerencias mostradas no coincide con lo que el usuario iba a escribir.
+- No hay modelo en float16/bf16: los logits escalados por 1e-5 se rompen en media precisión, lo que limita su uso en pipelines que exijan esos tipos.
+- La variante de navegador no es una cuantización de este repositorio sino una compilación distinta, con otro vocabulario y otros contextos; los resultados no son intercambiables.
+- No soporta tool calling, agentes, visión ni audio, por lo que no sirve como asistente general.
+- Licencia MIT: permite uso comercial, pero el autor no ofrece garantías sobre la calidad de las sugerencias en dominios distintos de los datos de origen.
+- El corpus de origen incluye conversaciones reales (WildChat-1M), lo que puede arrastrar sesgos y patrones de esos datos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/tmickleydoyle/ghost-typer
-- Variante navegador: https://huggingface.co/tmickleydoyle/ghost-typer-web
+- Variante de navegador: https://huggingface.co/tmickleydoyle/ghost-typer-web
 - Demo en vivo: https://tmickleydoyle.github.io/ghost-typer/
 - Código fuente: https://github.com/tmickleydoyle/ghost-typer
-- Script de compilación: `build_weights.py` (en el repositorio)
+- Script de compilación de pesos: `build_weights.py` (en el repositorio)
 - Fuentes de datos: `data/SOURCES.md` (en el repositorio)
-- Script de benchmark: `scripts/benchmark.py` (en el repositorio)
-- Datasets referenciados: allenai/WildChat-1M, OpenAssistant/oasst2, google-research-datasets/mbpp, neulab/conala
+- Script de evaluación: `scripts/benchmark.py` (en el repositorio)

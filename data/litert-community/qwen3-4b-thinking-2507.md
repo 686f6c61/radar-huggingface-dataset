@@ -2,98 +2,105 @@
 
 ## Resumen
 
-Qwen3-4B-Thinking-2507 es un modelo de razonamiento denso de 4.000 millones de parámetros desarrollado por Qwen, y esta ficha describe la conversión oficial al formato **LiteRT-LM** (`.litertlm`) publicada por la comunidad LiteRT (antes TFLite) bajo el identificador `litert-community/Qwen3-4B-Thinking-2507`. El modelo opera exclusivamente en modo *thinking*: genera una cadena de razonamiento delimitada por ` thinking… response` antes de emitir la respuesta final, lo que lo hace adecuado para tareas que requieren razonamiento explícito y verificable.
+Qwen3-4B-Thinking-2507 en formato LiteRT-LM es una conversión del modelo denso de razonamiento Qwen/Qwen3-4B-Thinking-2507 de Alibaba Qwen, empaquetada por la comunidad litert-community para inferencia en dispositivo (on-device) mediante el runtime LiteRT-LM de Google (el motor que sucede a TensorFlow Lite en Android). El objetivo es ejecutar un modelo de razonamiento de 4B parámetros en teléfonos, mini-PC y navegadores sin depender de servidores, con pesos cuantizados a int4 en bloques de 128 y embeddings en INT8.
 
-La relevancia de este artefacto radica en que permite ejecutar un modelo de razonamiento de 4B en dispositivos móviles y de borde (iPhone, Android, Mac) gracias a una cuantización int4 con bloque de 128 y a la integración con el runtime LiteRT-LM de Google. El modelo base, Qwen/Qwen3-4B-Thinking-2507, es una actualización de la serie Qwen3 que mejora el razonamiento lógico, matemático, científico y de codificación. El artefacto publicado incluye el tokenizador y la plantilla de chat Qwen3 (ChatML) integrados en el bundle, por lo que no requiere archivos adicionales.
+El modelo base opera exclusivamente en modo *thinking*: genera una cadena `<think>…</think>` antes de la respuesta final, lo que lo hace adecuado para tareas de razonamiento multi-paso, matemáticas y código, a costa de una latencia de decodificación mayor que un modelo instructivo estándar del mismo tamaño. La arquitectura es un transformer denso `Qwen3ForCausalLM` de 36 capas.
+
+La relevancia actual reside en que demuestra que un modelo de razonamiento de 4B puede correr con aceleración GPU (OpenCL en Android, Metal en Apple Silicon, WebGPU en navegador) a velocidades interactivas: 18,1 tok/s de decodificación en un Galaxy S26 y 92,1 tok/s en un Mac Studio M4 Max. El artefacto principal `model.litertlm` ocupa 2,48 GB, lo que lo sitúa en la frontera de viabilidad de móviles de 8 GB (no verificado en ese segmento).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3ForCausalLM (transformer denso, 36 capas) |
-| Parametros totales | 4.000 millones (4B) |
-| Parametros activos | no aplicable (modelo denso) |
-| Longitud de contexto | 4096 (KV cache del artefacto LiteRT-LM) |
-| Tipos de cuantizacion | int4 simetrico block 128 (publicado); block 32 descartado por degradacion |
-| Idiomas soportados | no disponible (el modelo base Qwen3 soporta multiples idiomas, pero no se especifica en la ficha) |
+| Arquitectura | Transformer denso (`Qwen3ForCausalLM`), 36 capas |
+| Parametros totales | 4B (heredados del modelo base; no se detalla desglose) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | 4096 tokens de KV cache en el artefacto LiteRT-LM (el modelo base Qwen3-4B-Thinking-2507 soporta contextos mayores; valor exacto no disponible en la informacion proporcionada) |
+| Tipos de cuantizacion | Int4 con bloques de 128 (pesos simetricos) + OCTAV optimal-clipping; embeddings INT8 en seccion externalizada; computo entero. Variante adicional `dynamic-wi4b32-afp32` (pesos int4 bloque 32, activaciones fp32) |
+| Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | `.litertlm` (LiteRT-LM, incluye tokenizador y plantilla de chat) |
+| Formato de pesos | `.litertlm` (bundle LiteRT-LM con grafo TFLite, tokenizer, plantilla Jinja y metadatos del ejecutor) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer causal denso de 36 capas con arquitectura Qwen3ForCausalLM. La conversion a LiteRT-LM aplica cuantizacion int4 simetrica de pesos con **OCTAV** (optimal clipping) y embeddings INT8 externalizados. El artefacto publicado usa bloques de 128 elementos (block 128), que segun los autores es robusto en todos los backends, aproximadamente un 40 % mas rapido en decodificacion que la variante block 32 (por tener la cuarta parte de escalas de dequantizacion) y mantiene una perdida de solo 4 puntos en GSM8K respecto al modelo en bf16. La variante block 32 se descarto porque degradaba 9 puntos y producia salidas corruptas bajo el delegado GPU de iPhone.
+El modelo base es un transformer denso de 36 capas con 4B parametros, disenado por Qwen para razonamiento explicito: siempre emite un bloque `<think>…</think>` antes de la respuesta. La conversion a LiteRT-LM no altera la arquitectura: se preserva el grafo `Qwen3ForCausalLM` y se aplica cuantizacion de pesos a int4 con bloques de 128 y clipping optimo OCTAV, manteniendo embeddings en INT8 y computo entero. El bundle incluye tokenizer, plantilla de chat Jinja y metadatos del ejecutor.
 
-No se dispone de informacion detallada sobre el entrenamiento del modelo base (numero de tokens, composicion del dataset, uso de RLHF o DPO) en la documentacion proporcionada. La conversion en si no implica reentrenamiento, solo cuantizacion y optimizacion de grafos (fused QKV, RoPE compuesta, proyecciones Gate/Up fusionadas) para el runtime LiteRT-LM.
+El artefacto ha sufrido dos revisiones tecnicas relevantes. El 2026-10-06 se reescribio el grafo de prefill/decode para GPU: las dos escrituras `DYNAMIC_UPDATE_SLICE` de la KV cache por capa se fusionaron en un compuesto `odml.cache_update`, y los productos de atencion `BATCH_MATMUL` pasaron a `odml.runtime_bmm`, forma que exporta `litert-torch` con `--apply_gpu_composites`; se anadio una firma `prefill_16` que comparte buffers de pesos con `prefill_128`. El 2026-10-07 se corrigio la plantilla de chat para que acepte contenido como cadena (litert-lm 0.17.1) o como lista de partes tipadas (0.18.0); solo cambio la seccion de plantilla, con grafo, pesos, tokenizer y metadatos byte-identicos. No se detallan en la informacion disponible los datos de entrenamiento del modelo base (numero de tokens, composicion del corpus, uso de RLHF/DPO).
 
 ## Capacidades
 
-- Razonamiento explicito con cadena de pensamiento: genera un bloque ` thinking… response` antes de la respuesta final, lo que permite seguir el proceso de razonamiento.
-- Matematicas: alcanza un 86 % en GSM8K (n=100, greedy, 0-shot CoT) con cuantizacion int4 block 128, frente al 90 % del modelo en bf16.
-- Razonamiento logico, cientifico y de codificacion: el modelo base Qwen3-4B-Thinking-2507 esta disenado para tareas que requieren razonamiento profundo, segun la descripcion oficial de Qwen.
-- Generacion de texto en formato ChatML (Qwen3) con tokenizador integrado en el bundle.
-- Inferencia on-device: compatible con CPU y GPU (Metal en Apple, GPU en Android) a traves del runtime LiteRT-LM.
-- No se especifica soporte para tool calling, function calling, vision ni audio en la informacion disponible.
+- Generacion de texto con razonamiento explicito: emite cadena de pensamiento `<think>…</think>` antes de cada respuesta, lo que permite trazar el razonamiento multi-paso.
+- Razonamiento matematico y logico de varios pasos, adecuado para problemas tipo GSM8K y similares.
+- Generacion de codigo y explicacion de codigo, heredada del modelo base Qwen3.
+- Inferencia totalmente local en dispositivo: sin llamadas a red, sin telemetria obligatoria.
+- Ejecucion en multiples backends: CPU, GPU (OpenCL en Android, Metal en Apple Silicon) y WebGPU en navegador.
+- Soporte de plantilla de chat con contenido en formato cadena o lista de partes tipadas (compatible con litert-lm 0.17.1 y 0.18.0).
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y multi-step reasoning orquestado: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
+- Vision, audio o multimodalidad: no disponible (modelo solo texto).
 
 ## Casos de uso
 
-- Asistente de razonamiento en movil: un usuario puede plantear problemas logicos o matematicos y recibir una respuesta con la cadena de razonamiento explicita, gracias a la ejecucion local en iPhone o Android con el runtime LiteRT-LM.
-- Tutor educativo offline: el modelo puede explicar paso a paso la resolucion de ecuaciones o problemas de fisica, aprovechando su modo thinking y su capacidad para generar cadenas de razonamiento legibles.
-- Generacion de codigo en entornos sin conexion: desarrolladores pueden usar el modelo en un portatil o dispositivo edge para obtener sugerencias de codigo con razonamiento, sin depender de APIs externas.
-- Servidor local compatible con OpenAI: mediante `litert-lm serve` se puede exponer una API local compatible con OpenAI para integrar el modelo en aplicaciones de prueba o prototipos sin coste de inferencia en la nube.
-- Analisis de datos y calculo cientifico en campo: investigadores que trabajan en ubicaciones remotas pueden ejecutar el modelo en un Mac o dispositivo movil para resolver problemas numericos o de razonamiento sin conexion.
-- Chatbot de soporte tecnico con explicaciones: el modelo puede generar respuestas razonadas para diagnosticar problemas, mostrando el proceso de pensamiento que lleva a la solucion, lo que resulta util en entornos de atencion al cliente especializada.
+- Asistente de razonamiento offline en movil: integrado via LiteRT-LM en una app Android, resuelve problemas matematicos o logicos sin conexion. En un Galaxy S26 con GPU alcanza 18,1 tok/s de decodificacion y 3,95 s de TTFT, suficiente para interaccion conversacional.
+- Demo educativa en navegador: el chat web oficial carga `model.litertlm` (2,48 GB) y ejecuta con WebGPU, permitiendo probar el modelo sin instalacion ni backend. Util para talleres y evaluaciones rapidas.
+- Prototipado en Apple Silicon: en un Mac Studio M4 Max con GPU logra 92,1 tok/s de decodificacion y 244 ms de TTFT, lo que lo hace viable como asistente de codigo local en el escritorio del desarrollador.
+- Procesamiento en el borde con privacidad estricta: al no requerir red, encaja en escenarios sanitarios, legales o industriales donde los datos no pueden salir del dispositivo; el contexto de 4096 tokens limita el caso a documentos cortos o conversaciones acotadas.
+- Automatizacion en mini-PC y dispositivos tipo Raspberry Pi 5: con la variante `dynamic-wi4b32-afp32` corre en CPU a 1,4 tok/s de decodificacion, util para tareas por lotes no interactivas (clasificacion con razonamiento, resumen de notas cortas) donde la latencia no es critica.
+- Verificacion de pipelines de cuantizacion: sirve como referencia reproducible para equipos que convierten modelos Qwen3 a LiteRT-LM, ya que el bundle documenta hashes, tamanos y diferencias byte a byte entre revisiones.
+- Filtrado y analisis de texto en el dispositivo: con 4096 tokens de contexto puede procesar correos, mensajes o fragmentos de codigo localmente, generando explicaciones razonadas sin enviar contenido a la nube.
 
 ## Benchmarks y rendimiento
 
-La unica metrica publicada en la informacion disponible es GSM8K (n=100, greedy, 0-shot chain-of-thought, max_tokens 2048, misma plantilla y extraccion de respuesta para todas las filas):
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K) en la informacion disponible. Los unicos datos numericos son mediciones de rendimiento en dispositivo:
 
-| Configuracion | GSM8K |
-|---|---|
-| bf16 (referencia) | 90,0 % |
-| LiteRT int4 block 128 | 86,0 % (−4 pt) |
-
-No se han publicado resultados de otros benchmarks (MMLU, HumanEval, etc.) en la informacion proporcionada. Los autores advierten que evaluar un modelo de razonamiento con un presupuesto de tokens corto subestima el rendimiento de la version int4, ya que las cadenas de razonamiento mas largas se truncan antes de llegar a la respuesta.
+| Dispositivo | Runtime / backend | Decode (tok/s) | Prefill (tok/s) | TTFT | Ops delegadas | Fecha |
+|---|---|---|---|---|---|---|
+| Galaxy S26 (12 GB) | LiteRT-LM prebuilt-adac974b, GPU | 18,1 | 263 | 3,95 s | 1707/1707 | 2026-10-05 |
+| Mac Studio M4 Max | LiteRT-LM 0.17.1, GPU | 92,1 | 1100 | 244 ms | 1707/1707 | 2026-10-05 |
+| Galaxy S26 | LiteRT-LM prebuilt-adac974b, CPU | 7,3 | 56 | 18,95 s | no disponible | 2026-10-05 |
+| Galaxy S26 (variante dynamic-wi4b32-afp32) | LiteRT-LM 0.16.0, GPU | 11,2 | 129 | 1,65 s | 1282/1282 | 2026-08-24 |
+| Raspberry Pi 5, 4 hilos (variante dynamic-wi4b32-afp32) | LiteRT-LM 0.16.1, CPU | 1,4 | 9 | 29,40 s | no disponible | 2026-09-01 |
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 2,5 GB de RAM libre para el modelo int4 de 4B (segun la model card para Android).
-- GPU recomendadas: Apple M4 Max (GPU Metal) para rendimiento optimo; iPhone 17 Pro (GPU Metal) para inferencia movil; GPU en dispositivos Android compatibles con LiteRT-LM.
-- Tambien funciona en CPU: en Apple M4 Max se midieron 111 tok/s de prefill y 17,8 tok/s de decodificacion en CPU.
-- Opciones de despliegue: LiteRT-LM CLI (`litert-lm run`), servidor OpenAI-compatible (`litert-lm serve`), Google AI Edge Gallery (app movil, version 1.0.16+ puede importar modelos directamente desde Hugging Face), y runtime Swift para iOS.
-- Rendimiento medido (litert-lm 0.15.0, Apple M4 Max, `-p 256 -d 256 --runs 3`):
-
-| Dispositivo | Backend | Prefill (256) | Decode | TTFT |
-|---|---|---|---|---|
-| Apple M4 Max | CPU | 111 tok/s | 17,8 tok/s | 2,48 s |
-| Apple M4 Max | GPU (Metal) | 999 tok/s | 68,5 tok/s | 0,28 s |
-| iPhone 17 Pro | GPU (Metal) | no disponible | ~14 tok/s | no disponible |
+- VRAM/RAM: el artefacto principal `model.litertlm` ocupa 2,48 GB en disco; la variante `dynamic-wi4b32-afp32` mide 2.274.193.168 bytes (~2,27 GB). Se recomienda al menos 4 GB de memoria libre para margen de trabajo.
+- Moviles de 8 GB: no verificado. En un Pixel 8a (8 GB, Mali) con LiteRT-LM 0.19.0, el fichero GPU-composite de Qwen3-4B de la misma clase de tamano construyo el motor GPU y la memoria libre cayo por debajo de 400 MB al iniciar la primera sesion, por lo que el harness lo detuvo (2026-11-02). Los datos GPU citados provienen de un Galaxy S26 de 12 GB.
+- GPU recomendadas: GPU integrada de Snapdragon en Galaxy S26 (OpenCL), GPU de Apple Silicon (Metal, verificado en M4 Max), WebGPU en navegador de escritorio.
+- Consumer GPU de escritorio (RTX 4090, etc.): no disponible en la informacion proporcionada; el formato `.litertlm` esta orientado a LiteRT-LM, no a CUDA.
+- CPU: funciona en CPU de movil (7,3 tok/s en Galaxy S26) y en Raspberry Pi 5 a 4 hilos (1,4 tok/s).
+- Opciones de despliegue: runtime LiteRT-LM (binario `litert_lm_main`, versiones 0.16.0 a 0.19.0 documentadas), integracion Android via `com.google.ai.edge.litert:litert`, demo web con WebGPU. No se mencionan vLLM, llama.cpp, Ollama ni TGI para este formato.
+- Latencia y throughput: ver tabla de benchmarks; el TTFT varia de 244 ms (M4 Max GPU) a 29,40 s (Raspberry Pi 5 CPU).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | GSM8K (0-shot CoT) | Licencia |
+| Modelo | Parametros | Contexto (artefacto) | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-4B-Thinking-2507 (bf16, referencia) | 4B | 256K (original) | bf16 | 90 % | Apache 2.0 |
-| litert-community/Qwen3-4B-Thinking-2507 (int4 block 128) | 4B | 4096 (KV cache del artefacto) | `.litertlm` int4 | 86 % | Apache 2.0 |
-| Qwen3-4B (no thinking, sin datos de esta conversion) | 4B | 256K (original) | varios | no disponible | Apache 2.0 |
+| Qwen3-4B-Thinking-2507 (este, LiteRT-LM) | 4B denso | 4096 (KV cache) | `.litertlm` / LiteRT-LM | Apache 2.0 | Hugging Face, demo web |
+| Qwen/Qwen3-4B-Thinking-2507 (original) | 4B denso | no disponible en la informacion proporcionada | safetensors / transformers | Apache 2.0 | Hugging Face |
+| litert-community/Qwen3-4B (GPU-composite) | 4B denso | no disponible | `.litertlm` / LiteRT-LM | Apache 2.0 | Hugging Face |
+| Variante `dynamic-wi4b32-afp32` del mismo modelo | 4B denso | no disponible | `.litertlm` / LiteRT-LM | Apache 2.0 | Hugging Face |
 
-No se dispone de datos de benchmarks comparativos con otros modelos de razonamiento de tamano similar (p. ej., Llama-3.2-3B o Gemma-3-4B) en la informacion proporcionada. La comparativa se limita al modelo base y a la variante no cuantizada.
+No se dispone de datos de benchmarks de calidad para establecer comparaciones de rendimiento frente a alternativas; la comparativa se limita a parametros, formato, licencia y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- Es un modelo de razonamiento que requiere `max_tokens` >= 2048; con limites inferiores se corta a mitad de la cadena de pensamiento y nunca llega a la respuesta.
-- La cuantizacion int4 introduce una perdida de 4 puntos en GSM8K respecto al modelo en bf16; la variante block 32 (no publicada) degradaba 9 puntos y producia salidas corruptas en GPU de iPhone.
-- El contexto del artefacto LiteRT-LM esta limitado a 4096 tokens (KV cache), muy por debajo de los 256K del modelo base original.
-- No se especifican sesgos conocidos ni riesgos de alucinacion en la documentacion proporcionada; como todo LLM, puede generar respuestas incorrectas o inventadas, especialmente en tareas abiertas.
-- La licencia Apache 2.0 permite uso comercial sin restricciones significativas, pero el runtime LiteRT-LM y las herramientas asociadas tienen sus propias condiciones (revisar la documentacion de Google AI Edge).
-- El rendimiento en CPU es notablemente inferior al de GPU (17,8 tok/s frente a 68,5 tok/s en decodificacion), lo que puede afectar a la experiencia de usuario en dispositivos sin aceleracion grafica.
+- Modo thinking obligatorio: el modelo siempre genera la cadena `<think>…</think>`, lo que incrementa tokens de salida y latencia frente a un instructivo del mismo tamano; en dispositivos lentos (Raspberry Pi 5 a 1,4 tok/s) esto puede hacer inviable la interaccion.
+- Contexto limitado a 4096 tokens en el artefacto LiteRT-LM, muy por debajo de lo que suele ofrecer el modelo base; insuficiente para documentos largos o conversaciones extensas.
+- Riesgo de alucinacion inherente a modelos de 4B, agravado por la cuantizacion int4; no se han publicado evaluaciones de fidelidad en la informacion disponible.
+- Idiomas soportados no documentados; no se garantiza calidad fuera de los idiomas principales del modelo base.
+- Viabilidad en moviles de 8 GB no verificada y con indicios negativos: el fichero GPU-composite equivalente agoto la memoria en un Pixel 8a con LiteRT-LM 0.19.0. No asumir funcionamiento en ese segmento sin pruebas propias.
+- Inestabilidad de revisiones: el artefacto cambio al menos tres veces en octubre de 2026 (plantilla, grafo GPU, pesos externalizados). Fijar revision concreta del Hub y verificar sha256 antes de desplegar.
+- Problema conocido de pesos externalizados: la revision del 2026-10-30 queda en `9df72e0` por una incidencia de pesos externos en el runtime; consultar la seccion "Known runtime issues" del repositorio antes de usar.
+- Licencia Apache 2.0 permite uso comercial, pero las condiciones del modelo base Qwen3-4B-Thinking-2507 deben verificarse por separado en su propia model card.
+- Formato propietario de runtime: `.litertlm` solo se ejecuta con LiteRT-LM; no hay soporte documentado en vLLM, llama.cpp, Ollama ni TGI, lo que limita la portabilidad a infraestructura de servidor.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/litert-community/Qwen3-4B-Thinking-2507
-- Repositorio de archivos: https://huggingface.co/litert-community/Qwen3-4B-Thinking-2507/tree/main
-- Modelo base Qwen: https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507
-- Repositorio LiteRT-LM: https://github.com/google-ai-edge/litert-lm
-- Google AI Edge Gallery: https://github.com/google-ai-edge/gallery
-- Repositorio oficial de la serie Qwen3: https://github.com/QwenLM/Qwen3
-- Ficha del modelo en LM Studio: https://lmstudio.ai/models/qwen/qwen3-4b-thinking-2507
-- Ficha en LLM Explorer: https://llm-explorer.com/model/Qwen%2FQwen3-4B-Thinking-2507,7wvPAPnjNUW6sq3acnRzWg
+- Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507
+- Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
+- Demo web LiteRT-LM: https://google-ai-edge.github.io/LiteRT-LM/web_demos/chat/index.html?model=litert-community/Qwen3-4B-Thinking-2507
+- Ficha de rendimiento edge-compat (variante principal): https://github.com/john-rocky/edge-compat/blob/main/cards/qwen3-4b-thinking/CARD.md
+- Ficha de rendimiento edge-compat (variante dynamic-wi4b32-afp32): https://github.com/john-rocky/edge-compat/blob/main/cards/qwen3-4b-thinking-dynamic-wi4b32-afp32/CARD.md
+- Benchmark de conversión litert-torch en Galaxy S26: https://github.com/john-rocky/apple-silicon-llm-bench/blob/main/results/android/tinyhybridnet-three-runtimes.md

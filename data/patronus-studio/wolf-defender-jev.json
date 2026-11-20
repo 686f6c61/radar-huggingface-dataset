@@ -1,0 +1,229 @@
+{
+  "schema": 2,
+  "id": "patronus-studio/wolf-defender-jev",
+  "slug": "patronus-studio-wolf-defender-jev",
+  "author": "patronus-studio",
+  "url": "https://huggingface.co/patronus-studio/wolf-defender-jev",
+  "created_at": "2026-10-12T13:33:38.000Z",
+  "updated_at": "2026-11-20T10:04:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "nl",
+    "pl",
+    "pt",
+    "ar",
+    "hi",
+    "ja",
+    "ru",
+    "tr",
+    "vi",
+    "zh"
+  ],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "safetensors",
+    "decision-model",
+    "jev-like",
+    "systemone",
+    "prompt-injection",
+    "indirect-prompt-injection",
+    "ai-agent-security",
+    "tool-security",
+    "jailbreak-detection",
+    "data-loss-prevention",
+    "guardrails",
+    "calibration",
+    "multiple-choice",
+    "structured-output",
+    "classification",
+    "security",
+    "llm-security",
+    "ai-safety",
+    "multilingual",
+    "modernbert",
+    "mmbert",
+    "cpu",
+    "patronus",
+    "wolf-defender-jev",
+    "decision-model-guard",
+    "context-aware-security",
+    "decision-security",
+    "agent-security",
+    "ai-security",
+    "agent-action-security",
+    "prompt-injection-detection",
+    "mcp-security",
+    "untrusted-content",
+    "local-inference",
+    "on-device",
+    "cpu-inference",
+    "onnxruntime",
+    "quantized",
+    "int8",
+    "int4",
+    "multiple-choice-classification",
+    "jev",
+    "decision-steering",
+    "agent-guardrails",
+    "tool-calling",
+    "policy-evaluation",
+    "sensitive-data-detection",
+    "pii-detection",
+    "text-classification",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "nl",
+    "pl",
+    "pt",
+    "ar",
+    "hi",
+    "ja",
+    "ru",
+    "tr",
+    "vi",
+    "zh",
+    "base_model:jhu-clsp/mmBERT-small",
+    "base_model:finetune:jhu-clsp/mmBERT-small",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 570,
+  "trending_score": 0,
+  "parameters": 151096577,
+  "parameters_human": "151.1M",
+  "storage_bytes": 3838920576,
+  "storage_human": "3.8 GB",
+  "context_length": null,
+  "base_model": "jhu-clsp/mmBERT-small",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Prompt injection detection",
+      "dataset": "deepset prompt-injections",
+      "metric": "Balanced accuracy",
+      "value": 1
+    },
+    {
+      "task": "Prompt injection detection",
+      "dataset": "deepset prompt-injections",
+      "metric": "False-positive rate",
+      "value": 0
+    },
+    {
+      "task": "Indirect prompt injection detection",
+      "dataset": "agentic-PI-5k",
+      "metric": "Balanced accuracy",
+      "value": 0.985
+    },
+    {
+      "task": "Indirect prompt injection detection",
+      "dataset": "agentic-PI-5k",
+      "metric": "AUROC",
+      "value": 0.9996
+    },
+    {
+      "task": "Indirect prompt injection detection",
+      "dataset": "agentic-PI-5k",
+      "metric": "False-positive rate",
+      "value": 0.03
+    },
+    {
+      "task": "Indirect prompt injection detection (web pages)",
+      "dataset": "BrowseSafe",
+      "metric": "Balanced accuracy",
+      "value": 0.825
+    },
+    {
+      "task": "Indirect prompt injection detection (web pages)",
+      "dataset": "BrowseSafe",
+      "metric": "AUROC",
+      "value": 0.934
+    },
+    {
+      "task": "Indirect prompt injection detection (web pages)",
+      "dataset": "BrowseSafe",
+      "metric": "False-positive rate",
+      "value": 0.034
+    },
+    {
+      "task": "Jailbreak detection",
+      "dataset": "jackhhao jailbreak-classification",
+      "metric": "Balanced accuracy",
+      "value": 0.922
+    },
+    {
+      "task": "Jailbreak detection",
+      "dataset": "jackhhao jailbreak-classification",
+      "metric": "AUROC",
+      "value": 0.954
+    },
+    {
+      "task": "Over-defense (benign prompts with trigger words)",
+      "dataset": "NotInject (3 subsets, mean)",
+      "metric": "False-positive rate",
+      "value": 0.021
+    },
+    {
+      "task": "Over-refusal (harmful-sounding safe prompts)",
+      "dataset": "XSTest",
+      "metric": "Balanced accuracy",
+      "value": 0.754
+    },
+    {
+      "task": "Over-refusal (harmful-sounding safe prompts)",
+      "dataset": "XSTest",
+      "metric": "False-positive rate",
+      "value": 0.288
+    },
+    {
+      "task": "Over-refusal (harmful-sounding safe prompts)",
+      "dataset": "OR-Bench hard",
+      "metric": "False-positive rate",
+      "value": 0.021
+    },
+    {
+      "task": "Harmful request detection",
+      "dataset": "JailbreakBench behaviors",
+      "metric": "Balanced accuracy",
+      "value": 0.775
+    },
+    {
+      "task": "Harmful request detection (multilingual)",
+      "dataset": "PolyGuard prompts",
+      "metric": "Balanced accuracy",
+      "value": 0.727
+    },
+    {
+      "task": "Prompt leaking detection",
+      "dataset": "Lakera Mosscap",
+      "metric": "Detection rate (attack-only set)",
+      "value": 1
+    }
+  ],
+  "sources": []
+}

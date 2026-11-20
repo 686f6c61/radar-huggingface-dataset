@@ -5,8 +5,8 @@
   "author": "mwebazarick",
   "url": "https://huggingface.co/mwebazarick/BULaMU-3-42M-Base",
   "created_at": "2026-11-13T04:01:54.000Z",
-  "updated_at": "2026-11-13T04:09:08.000Z",
-  "license": "mit",
+  "updated_at": "2026-11-19T21:13:42.000Z",
+  "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
@@ -14,7 +14,7 @@
   "tags": [
     "safetensors",
     "llama",
-    "license:mit",
+    "license:apache-2.0",
     "region:us"
   ],
   "likes": 1,
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": 42082816,
   "parameters_human": "42.1M",
-  "storage_bytes": 168858564,
-  "storage_human": "169 MB",
+  "storage_bytes": 171813360,
+  "storage_human": "172 MB",
   "context_length": null,
   "base_model": null,
   "formats": [

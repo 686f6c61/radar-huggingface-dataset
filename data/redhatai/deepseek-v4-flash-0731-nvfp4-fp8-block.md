@@ -2,94 +2,92 @@
 
 ## Resumen
 
-DeepSeek-V4-Flash-0731-NVFP4-FP8-BLOCK es un checkpoint cuantizado en precisión mixta publicado por RedHatAI sobre el modelo base deepseek-ai/DeepSeek-V4-Flash-0731. Se trata de una version optimizada para inferencia que combina cuantizacion NVFP4 (4 bits, formato de punto flotante de NVIDIA) en las capas lineales de los expertos enrutados de la mezcla de expertos, y cuantizacion FP8 en bloques de 128x128 en las proyecciones de atencion, el indexador de atencion `q_b_proj` y las capas de expertos compartidos. El resto de capas conservan la precision original del modelo base.
+DeepSeek-V4-Flash-0731-NVFP4-FP8-BLOCK es una versión cuantizada en precisión mixta del modelo DeepSeek-V4-Flash-0731, publicada por RedHatAI. El modelo base es un transformer MoE (DeepseekV4ForCausalLM) de aproximadamente 145.800 millones de parámetros, orientado a generación de texto, razonamiento, código y flujos agénticos. RedHatAI aplica cuantización NVFP4 a los expertos enrutados del MoE y FP8 con bloques de 128x128 a determinadas proyecciones de atención, al indexador `q_b_proj` y a las capas de expertos compartidos, manteniendo el resto de capas en su precisión original.
 
-El modelo conserva la arquitectura declarada como `DeepseekV4ForCausalLM`, un transformer decoder-only con mezcla de expertos (MoE), con un total de 145.821.872.215 parametros segun los pesos en safetensors, y un tamano de repositorio de 164,6 GB. El autor no publica el numero de parametros activos ni la longitud de contexto, por lo que estos datos no estan disponibles en la informacion proporcionada.
+El resultado es un checkpoint en formato compressed-tensors listo para servir con vLLM, pensado para reducir los requisitos de memoria y aumentar el throughput de inferencia sin degradar de forma significativa la calidad del modelo original. La model card reporta una recuperación media del 99,40 % en tareas de coding agéntico y un 102,15 % en GPQA Platinum, lo que sugiere que la cuantización apenas afecta al rendimiento en las evaluaciones realizadas.
 
-La relevancia de esta publicacion es doble. Por un lado, demuestra un flujo de trabajo de cuantizacion mixta reproducible mediante LLM Compressor y el formato compressed-tensors, orientado a despliegues con vLLM. Por otro, el autor reporta una evaluacion en GPQA en la que el checkpoint cuantizado obtiene un 86,15% frente al 84,34% del modelo base sin cuantizar, aunque el propio autor advierte que GPQA es una evaluacion no determinista y que la cuantizacion puede actuar como regularizador en evaluaciones individuales.
+Es relevante ahora porque combina una técnica de cuantización de bloques de 4 bits (NVFP4) con FP8 en las partes sensibles del modelo, un patrón que se está consolidando para desplegar MoE de gran tamaño en hardware moderno con vLLM. La ficha se centra en este checkpoint cuantizado; los detalles del modelo base no documentados aquí se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | DeepseekV4ForCausalLM (transformer decoder-only con mezcla de expertos, MoE) |
-| Parametros totales | 145.821.872.215 (~145,8 mil millones) |
+| Arquitectura | DeepseekV4ForCausalLM (transformer MoE, según el identificador de arquitectura de la model card) |
+| Parametros totales | 145.821.872.215 (~145,8 mil millones, dato real de safetensors) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | NVFP4 en pesos y activaciones de expertos enrutados (group size 16); FP8 en pesos con cuantizacion por bloques 128x128 y activaciones FP8 dinamicas en proyecciones de atencion, indexador `q_b_proj` y expertos compartidos; capas restantes en precision original; KV cache FP8 en el ejemplo de despliegue |
+| Tipos de cuantizacion | NVFP4 (pesos y activaciones de expertos enrutados, grupo de 16); FP8 (pesos con bloques 128x128 y activaciones FP8 dinámicas en atención, indexador y expertos compartidos); resto de capas en precisión original |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors exportados en formato compressed-tensors |
+| Formato de pesos | safetensors en formato compressed-tensors (compatible con vLLM) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de la arquitectura del modelo base DeepSeek-V4-Flash-0731, un transformer decoder-only con mezcla de expertos. La model card describe explicitamente capas lineales de expertos enrutados, proyecciones de atencion, un indexador de atencion denominado `q_b_proj` y capas de expertos compartidos, lo que confirma una topologia MoE con expertos compartidos ademas de los enrutados. No se dispone de informacion sobre el numero de expertos, el numero de expertos activos por token, la dimension oculta, el numero de capas ni la longitud de contexto maxima.
+El modelo base es un transformer con mezcla de expertos (MoE) de tipo DeepseekV4ForCausalLM. La model card no detalla el número de expertos, la proporción de parámetros activos, la longitud de contexto ni el proceso de entrenamiento del modelo original (tokens, composición del dataset, RLHF/DPO), por lo que esos datos se consideran no disponibles.
 
-Este checkpoint no es un modelo entrenado desde cero, sino una version cuantizada del modelo base. La cuantizacion se aplico con LLM Compressor: los expertos MoE enrutados usan NVFP4 tanto en pesos como en activaciones con un tamano de grupo de 16; las proyecciones de atencion seleccionadas, el indexador `q_b_proj` y las capas de expertos compartidos usan FP8 en pesos con cuantizacion por bloques de 128x128 y activaciones FP8 cuantizadas dinamicamente. Las capas fuera de estos objetivos de cuantizacion mantienen su precision original. El checkpoint resultante se exporta mediante compressed-tensors, lo que lo hace directamente desplegable en vLLM. No se documentan fases de RLHF, DPO u otros ajustes de alineamiento especificos de este checkpoint, ya que hereda las del modelo base.
+La innovación técnica de este checkpoint es la cuantización en precisión mixta: las capas lineales de los expertos enrutados del MoE usan NVFP4 en pesos y activaciones con grupo de 16; determinadas proyecciones de atención, el indexador `q_b_proj` y las capas de expertos compartidos usan FP8 con cuantización por bloques 128x128 y activaciones FP8 cuantizadas dinámicamente; el resto de capas conservan su precisión original. La cuantización se aplicó con LLM Compressor y el checkpoint se exportó con compressed-tensors, con validación reportada sobre RHOAI 3.5.1, RHAIIS 3.6.0-fast.2 y vLLM 0.28.0.
 
 ## Capacidades
 
-- Generacion de texto conversacional, segun la etiqueta `conversational` y el pipeline `text-generation`.
-- Modo de razonamiento: la configuracion de despliegue del autor habilita `--reasoning-parser deepseek_v4`, lo que indica soporte de un modo de razonamiento con parser dedicado.
-- Tool calling / function calling: el autor habilita `--enable-auto-tool-choice` y `--tool-call-parser deepseek_v4`, por lo que el modelo soporta llamadas a herramientas en formato compatible con el parser DeepSeek V4.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere integracion con endpoints tipo API compatibles con OpenAI.
-- Capacidades multilingues: no disponible.
-- Vision, audio u otras modalidades: no disponible; la model card declara entrada y salida unicamente de texto.
-- Capacidades de agente y razonamiento multi-paso: no confirmadas explicitamente en la informacion proporcionada, aunque el soporte de tool calling y del parser de razonamiento son prerequisitos habituales para flujos agenticos.
+- Generación de texto conversacional (pipeline text-generation, etiqueta conversational).
+- Razonamiento y conocimiento general, evaluado en GPQA Platinum.
+- Coding agéntico: evaluado en Terminal-Bench 2.1, DeepSWE 1.1 y SWE-bench Verified.
+- Soporte de tool calling / function calling en vLLM mediante `--enable-auto-tool-choice` y `--tool-call-parser deepseek_v4`.
+- Soporte de modo de razonamiento mediante `--reasoning-parser deepseek_v4`.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Vision, audio u otras modalidades: no disponibles (entrada y salida declaradas como texto).
 
 ## Casos de uso
 
-- Atencion al cliente automatizada: el modelo puede mantener conversaciones multiturno e invocar herramientas externas (consulta de pedidos, gestion de incidencias) gracias al soporte de `tool-call-parser` y `auto-tool-choice` habilitados en la configuracion de vLLM. La longitud de contexto concreta no esta publicada, por lo que el dimensionado del historial debe validarse en pruebas.
-- Generacion de codigo asistida en produccion: al soportar tool calling y exponerse mediante vLLM, puede integrarse en pipelines de CI/CD como servicio de sugerencia de parches, revision de diffs o generacion de tests, invocando herramientas de ejecucion o de consulta de repositorio.
-- Asistentes con razonamiento explicito: el parser de razonamiento `deepseek_v4` permite separar la traza de pensamiento de la respuesta final, lo que resulta util en dominios donde se necesita auditar el razonamiento (analisis financiero, diagnostico tecnico, verificacion de calculos).
-- Agentes de automatizacion de tareas con multiples pasos: combinando tool calling con un orquestador externo, el modelo puede encadenar consultas a APIs, lectura de ficheros y ejecucion de acciones, delegando la planificacion de alto nivel en el propio modelo.
-- Generacion aumentada por recuperacion (RAG) sobre documentacion tecnica: el modelo puede integrarse en un pipeline que recupere fragmentos de manuales o normativa y genere respuestas citando el contexto recuperado, con el matiz de que la ventana de contexto efectiva no esta publicada.
-- Despliegue en infraestructura propia con vLLM: al estar exportado en compressed-tensors, encaja en entornos que ya operan vLLM con tensor parallel y expert parallel, por ejemplo para servir un asistente interno sin exponer datos a APIs externas.
-- Evaluacion comparativa de tecnicas de cuantizacion: el checkpoint sirve como referencia reproducible para medir el impacto de NVFP4 + FP8 en modelos MoE de gran tamano, tomando como base la comparacion GPQA publicada por el autor.
+- Asistencia de código en producción: el checkpoint mantiene un 97,02 % de recuperación en SWE-bench Verified y un 95,74 % en Terminal-Bench 2.1, por lo que puede integrarse en pipelines de CI/CD y revisión de parches sin perder de forma apreciable la calidad del modelo base.
+- Agentes de resolución de incidencias: con DeepSWE 1.1 al 109,38 % de recuperación, es adecuado para tareas multi-paso de depuración y modificación de repositorios.
+- Despliegue de bajo coste por token: la cuantización NVFP4 de los expertos enrutados reduce el peso en memoria de la parte mayor del MoE, lo que abarata servir el modelo en clústeres con GPU modernas.
+- Servicio conversacional con tool calling: el parser `deepseek_v4` permite exponer herramientas externas en vLLM para asistentes que consultan APIs o bases de datos.
+- Razonamiento con modo thinking: el parser de razonamiento permite separar la traza de pensamiento de la respuesta final en aplicaciones de análisis.
+- Evaluación y benchmarking interno: al conservar casi toda la calidad del base (99,40 % de media en coding agéntico), sirve como referencia para comparar pipelines cuantizados frente al modelo original.
+- Inferencia a gran escala con vLLM: el formato compressed-tensors y la configuración con tensor parallelism 8 y expert parallelism facilitan el despliegue en entornos RHOAI/RHAIIS.
 
 ## Benchmarks y rendimiento
 
-| Modelo | GPQA |
-|---|---|
-| deepseek-ai/DeepSeek-V4-Flash-0731 | 84,34% |
-| RedHatAI/DeepSeek-V4-Flash-0731-NVFP4-FP8-BLOCK | 86,15% |
-
-El autor advierte que GPQA es una evaluacion no determinista y que la cuantizacion puede actuar como regularizador en evaluaciones individuales, por lo que la diferencia observada no debe interpretarse como una mejora sistematica de calidad. No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
+| Benchmark | Base (DeepSeek-V4-Flash-0731) | Este checkpoint NVFP4 | Recuperación |
+|---|---|---|---|
+| GPQA Platinum | 84,34 % | 86,15 % | 102,15 % |
+| Terminal-Bench 2.1 | 0,798 | 0,764 | 95,74 % |
+| DeepSWE 1.1 | 0,469 | 0,513 | 109,38 % |
+| SWE-bench Verified | 0,738 | 0,716 | 97,02 % |
+| Media coding agéntico | 0,6683 | 0,6643 | 99,40 % |
 
 ## Requisitos de hardware
 
-- Tamano de pesos en disco: 164,6 GB de repositorio, con 145.821.872.215 parametros en precision mixta (NVFP4 en expertos enrutados y FP8 en atencion y expertos compartidos). Algunas capas conservan la precision original, lo que incrementa el tamano respecto a un hipotetico checkpoint completamente en 4 bits.
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia, el peso del checkpoint en disco (164,6 GB) es un limite inferior del almacenamiento de pesos, al que hay que sumar memoria para la KV cache, activaciones y overhead del runtime.
-- GPU recomendadas: no especificadas por el autor. La configuracion de despliegue publicada usa `--tensor-parallel-size 8`, lo que implica un minimo de 8 dispositivos GPU en un nodo o en varios.
-- GPU de consumo: no cabe en una unica GPU de consumo. El volumen de parametros y la recomendacion de tensor parallel de 8 hacen inviable su ejecucion en una RTX 4090 o similar como modelo completo.
-- Opciones de despliegue: vLLM con soporte de compressed-tensors, habilitando tensor parallel (8 segun el ejemplo del autor), expert parallel, KV cache en FP8 y los parsers de razonamiento y de tool calling de DeepSeek V4. No se documenta soporte para llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponible.
+- VRAM estimada: no disponible de forma explícita; el repositorio ocupa 329,3 GB y el checkpoint está pensado para servir con tensor parallelism 8, lo que implica un despliegue multi-GPU.
+- GPU recomendadas: no especificadas en la información; la cuantización NVFP4 requiere hardware compatible con FP4, y la configuración de referencia usa 8 GPUs con expert parallelism.
+- Consumer GPU: no disponible; el tamaño del checkpoint y la configuración de despliegue recomendada apuntan a GPUs de centro de datos.
+- Opciones de despliegue: vLLM (versión validada 0.28.0), con `--kv-cache-dtype fp8`, `--enable-expert-parallel` y parsers `deepseek_v4`; validado también en RHOAI 3.5.1 y RHAIIS 3.6.0-fast.2.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Cuantizacion | Contexto | GPQA | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| RedHatAI/DeepSeek-V4-Flash-0731-NVFP4-FP8-BLOCK | 145,8 mil millones | NVFP4 (expertos enrutados) + FP8 (atencion y expertos compartidos) | no disponible | 86,15% | no disponible | Hugging Face, safetensors, compressed-tensors |
-| deepseek-ai/DeepSeek-V4-Flash-0731 | no disponible | precision original del modelo base | no disponible | 84,34% | no disponible | Hugging Face |
-| Otras alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
-
-No se dispone de informacion sobre otros modelos comparables de la misma categoria en los datos proporcionados, por lo que la comparativa se limita al modelo base.
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| RedHatAI/DeepSeek-V4-Flash-0731-NVFP4-FP8-BLOCK | ~145,8 mil millones | no disponible | no disponible | safetensors (compressed-tensors) | Cuantizado NVFP4 + FP8, validado en vLLM 0.28.0 |
+| deepseek-ai/DeepSeek-V4-Flash-0731 | no disponible | no disponible | no disponible | no disponible | Modelo base sin cuantizar; sirve de referencia para las recuperaciones reportadas |
+| Otras alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de modelos comparables en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponible. Al ser un checkpoint cuantizado del modelo base, hereda los sesgos de este, no documentados en la informacion proporcionada.
-- Riesgo de alucinacion: inherente a los modelos generativos de este tipo. No se publican evaluaciones de veracidad ni tasas de alucinacion especificas.
-- Limitaciones de contexto e idioma: no se publica la longitud de contexto ni la lista de idiomas soportados, lo que impide dimensionar escenarios multilingues o de contexto largo sin validacion previa.
-- Licencia: la ficha de Hugging Face indica licencia "no disponible", por lo que no es posible confirmar si se permite el uso comercial. Debe consultarse la licencia del modelo base deepseek-ai/DeepSeek-V4-Flash-0731 antes de cualquier despliegue en produccion.
-- Naturaleza de la cuantizacion: la cuantizacion mixta puede degradar tareas distintas de la evaluada. El unico benchmark publicado es GPQA, por lo que el comportamiento en codigo, matematicas, seguimiento de instrucciones o tool calling debe validarse por cuenta propia.
-- Interpretacion de la mejora en GPQA: el propio autor advierte que GPQA es no determinista y que la cuantizacion puede actuar como regularizador; la mejora de 84,34% a 86,15% no debe tomarse como evidencia de mejor calidad general.
-- Requisitos de despliegue: la configuracion recomendada requiere al menos 8 GPUs con tensor parallel, y el repositorio ocupa 164,6 GB, lo que limita su uso a infraestructura de servidor.
-- Madurez del checkpoint: con 79 descargas y 0 likes en el momento de la consulta, es un artefacto reciente y poco validado por la comunidad.
-- Formatos de pesos propietarios: el formato compressed-tensors con NVFP4 esta orientado a vLLM; no hay garantia de compatibilidad con otros runtimes.
+- La cuantización introduce pérdida de calidad: la recuperación media en coding agéntico es del 99,40 %, con caídas concretas en Terminal-Bench 2.1 (95,74 %) y SWE-bench Verified (97,02 %).
+- Licencia no disponible: no puede confirmarse el uso comercial sin consultar la model card del modelo base y del checkpoint.
+- Idiomas soportados no disponibles: no se puede garantizar cobertura multilingüe.
+- Longitud de contexto no disponible: no debe asumirse una ventana concreta para cargas de contexto largo.
+- Riesgo de alucinación inherente a los modelos generativos de gran tamaño; los benchmarks de conocimiento (GPQA) no eliminan este riesgo en producción.
+- Sesgos conocidos: no documentados en la información proporcionada.
+- Requiere hardware compatible con NVFP4 y una versión de vLLM que soporte compressed-tensors; el despliegue de referencia usa 8 GPUs, lo que limita el uso en entornos pequeños.
+- Las capas fuera de los objetivos de cuantización mantienen su precisión original, por lo que el ahorro de memoria no es uniforme en todo el modelo.
 
 ## Enlaces
 
-- Hugging Face del modelo: https://huggingface.co/RedHatAI/DeepSeek-V4-Flash-0731-NVFP4-FP8-BLOCK
+- Hugging Face: https://huggingface.co/RedHatAI/DeepSeek-V4-Flash-0731-NVFP4-FP8-BLOCK
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
-- Repositorio compressed-tensors: https://github.com/vllm-project/compressed-tensors
-- Repositorio LLM Compressor: https://github.com/vllm-project/llm-compressor
+- README referenciado en la model card: https://huggingface.co/RedHatAI/DeepSeek-V4-Flash-0731-NVFP4/blob/main/README.md
+- LLM Compressor: https://github.com/vllm-project/llm-compressor
+- compressed-tensors: https://github.com/vllm-project/compressed-tensors

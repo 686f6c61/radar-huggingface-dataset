@@ -38,7 +38,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 132,
+  "downloads_30d": 128,
   "trending_score": 0,
   "parameters": 11959730224,
   "parameters_human": "11.96B",
@@ -56,8 +56,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "tomatopotato69/humanizer",
+  "renamed_at": "2026-11-20T08:11:47.836Z",
   "benchmarks": [],
   "sources": [
     {

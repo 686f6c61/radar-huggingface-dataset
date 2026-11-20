@@ -2,77 +2,90 @@
 
 ## Resumen
 
-Prism Creative 1 Mini es un modelo compacto de escritura creativa y storytelling, desarrollado por VertexAIco, que parte del modelo base Qwen3-4B-Instruct y se ajusta mediante LoRA sobre un conjunto de datos destilado del modelo GLM 5.2 (accedido a través de NVIDIA NIM). El objetivo es generar narrativa literaria —cuentos, poesía, diálogos, worldbuilding, flash fiction— evitando el registro plano y genérico típico de los asistentes conversacionales.
+Prism Creative 1 Mini es un modelo de generación de texto especializado en escritura creativa y narrativa, desarrollado por VertexAIco como parte de la familia Prism de modelos creativos y de rol. Se construye mediante un fine-tuning con LoRA sobre Qwen3-4B-Instruct-2507 (en su versión cuantizada a 4 bits de mlx-community), utilizando un dataset destilado de 2.500 ejemplos generados por el modelo profesor GLM 5.2 a través de NVIDIA NIM. El objetivo es cubrir relatos cortos, bocetos de personajes, poesía, escenas de diálogo, worldbuilding y microrrelato sin caer en el registro genérico de "asistente IA".
 
-Con 4B parámetros en su configuración completa (aunque el archivo safetensors del repositorio muestra 628 millones, correspondientes al adaptador LoRA), el modelo está pensado para ejecutarse en hardware modesto, incluyendo Apple Silicon mediante MLX y entornos compatibles con GGUF como llama.cpp u Ollama. Su licencia Apache 2.0 facilita su uso comercial y su integración en proyectos propios.
+El modelo tiene 4.022.468.096 parámetros totales y se distribuye en dos formatos: MLX a 4 bits (grupo de 64, 2,26 GB) para Apple Silicon mediante mlx-lm, y GGUF Q4_K_M (2,50 GB) para llama.cpp, Ollama y LM Studio. La licencia es Apache 2.0, heredada del modelo base Qwen3, y el único idioma declarado es el inglés.
 
-La relevancia de este modelo radica en ofrecer capacidades de escritura creativa de calidad en un tamaño reducido, lo que lo hace atractivo para desarrolladores que necesitan generación de texto literario sin depender de APIs propietarias ni de infraestructura de alto coste. Aunque su dataset de entrenamiento es limitado (2.500 ejemplos), el proceso de destilación y filtrado busca mantener coherencia y evitar repeticiones.
+Su relevancia actual radica en que ofrece un comportamiento narrativo afinado sobre un modelo base pequeño y ampliamente desplegable, con un proceso de curación de datos documentado (dos pasadas de endurecimiento para eliminar bucles de repetición y clichés recurrentes) y una pérdida de validación de 1,064. Es una opción práctica para prototipado creativo en hardware de consumo.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (Qwen3-4B-Instruct) con adaptadores LoRA |
-| Parametros totales | 628.676.096 (según safetensors; el modelo base Qwen3-4B tiene ~4B parámetros, pero el repositorio contiene el adaptador LoRA fusionado o cuantizado) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (heredada del modelo base Qwen3-4B, no especificada en la documentación) |
-| Tipos de cuantizacion | 4-bit MLX, Q4_K_M GGUF |
-| Idiomas soportados | inglés |
+| Arquitectura | Transformer decoder-only (derivada de Qwen3-4B-Instruct-2507) |
+| Parámetros totales | 4.022.468.096 |
+| Parámetros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantización | 4 bits MLX (group size 64); GGUF Q4_K_M (4 bits) |
+| Idiomas soportados | Inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (MLX), GGUF |
+| Formato de pesos | safetensors (MLX), GGUF (Q4_K_M) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se construye sobre Qwen3-4B-Instruct, un transformer de 4B parámetros con atención causal. El ajuste se realiza mediante LoRA con rango 8 aplicado a 16 capas, durante 6.500 iteraciones. El conjunto de entrenamiento consiste en 2.500 ejemplos generados por el modelo profesor GLM 5.2, distribuidos en 10 categorías: cuentos cortos, esbozos de personajes, líneas de apertura, escenas de diálogo, worldbuilding, poesía, mezclas de género, ejercicios de punto de vista, flash fiction y continuaciones de texto.
+El modelo parte de Qwen3-4B-Instruct-2507, un transformer decoder-only denso de aproximadamente 4.000 millones de parámetros, en la variante ya cuantizada a 4 bits publicada por mlx-community. Sobre esa base se aplica un fine-tuning LoRA de rango 8 sobre 16 capas, durante 6.500 iteraciones, alcanzando una pérdida de validación mínima de 1,064. No se documenta entrenamiento por refuerzo ni DPO; la adaptación es exclusivamente supervisada sobre datos destilados.
 
-Durante el desarrollo se detectaron dos modos de fallo: repetición en formas de longitud fija muy corta (como drabbles de 100 palabras) y uso excesivo de detalles cliché (por ejemplo, una hora concreta en un reloj). Para mitigarlos, se endureció el prompt de generación y se implementó un filtro automático que rechaza salidas con repetición excesiva de 4-gramas o frases marcadas como cliché. La pérdida de validación final fue de 1.064.
-
-No se han publicado detalles sobre el número total de tokens del dataset ni sobre la composición exacta del mismo más allá de las categorías mencionadas.
+El dataset de entrenamiento consta de 2.500 ejemplos distribuidos en 10 categorías: relatos cortos, bocetos de personajes, primeras líneas, escenas de diálogo, worldbuilding, poesía, mezclas de géneros, ejercicios de punto de vista, microrrelato y continuaciones. Los datos se generaron con GLM 5.2 como modelo profesor y pasaron por dos rondas de endurecimiento tras detectar dos modos de fallo en una ejecución inicial: tendencia a bucles repetitivos en formas fijas muy cortas (como drabbles de 100 palabras) y dependencia excesiva de detalles cliché "seguros" (por ejemplo, un reloj marcando una hora concreta) en prompts no relacionados. Se ajustó el prompt de generación y se aplicó un filtro automático que rechaza salidas con repetición excesiva de 4-gramas o frases cliché marcadas, re-filtrando también los datos ya existentes.
 
 ## Capacidades
 
-- Generación de texto creativo en inglés: cuentos, poesía, diálogos, descripciones de mundos, flash fiction y ejercicios de punto de vista.
-- Seguimiento de instrucciones de formato y longitud (por ejemplo, respetar un límite de 100 palabras).
-- Producción de salidas coherentes y bien formadas dentro del género solicitado, según la evaluación cualitativa del autor.
-- Capacidad para evitar el registro de "asistente genérico", comenzando directamente con la pieza creativa sin preámbulos ni metaconversación.
-- No se mencionan capacidades de tool calling, agentes, visión ni soporte multilingüe más allá del inglés.
+- Generación de ficción en múltiples géneros, formas y tonos: relato corto, microrrelato, poesía, escenas de diálogo, worldbuilding y bocetos de personajes.
+- Respeto de restricciones explícitas de longitud, formato y estilo indicadas en el prompt (por ejemplo, microrrelatos de 100 palabras).
+- Escritura inmersiva sin preámbulos ni metacomentario, guiada por un system prompt específico de escritura creativa.
+- Continuaciones narrativas y ejercicios de punto de vista.
+- Conversación multi-turno en registro narrativo (pipeline text-generation, tag conversational).
+- Compatibilidad con endpoints (tag endpoints_compatible).
+- No se documentan capacidades de tool calling, function calling, razonamiento multi-paso, visión, audio ni modo thinking.
 
 ## Casos de uso
 
-- Generación de contenido narrativo para blogs y redes sociales: el modelo puede producir historias cortas o fragmentos atractivos para publicaciones, ahorrando tiempo de redacción.
-- Prototipado de narrativas en videojuegos: los desarrolladores pueden generar diálogos, descripciones de escenarios y líneas argumentales para pruebas de concepto, gracias a su capacidad para mantener coherencia en géneros específicos.
-- Asistente de escritura para autores: sirve como generador de ideas, esbozos de personajes o continuaciones de tramas, ofreciendo un primer borrador que el escritor puede pulir.
-- Creación de diálogos para chatbots con personalidad: al estar entrenado en escenas de diálogo, puede dotar a asistentes conversacionales de un tono más literario y menos robótico.
-- Material educativo narrativo: generación de ejemplos de cuentos o poemas para clases de escritura creativa, con control sobre la longitud y el género.
-- Generación de poesía o letras: el modelo produce poemas en diversas formas y estilos, útil para proyectos artísticos o de entretenimiento.
+- Generación de microrrelato y ficción flash: el modelo fue entrenado explícitamente en formas de longitud fija y endurecido contra bucles de repetición, por lo que resulta adecuado para producir piezas de 100 a 500 palabras con restricciones estrictas de extensión.
+- Prototipado de narrativa para videojuegos: puede generar descripciones de worldbuilding, bocetos de personajes y escenas de diálogo que sirvan como material de arranque para guionistas y diseñadores narrativos.
+- Asistencia a escritores en fase de borrador: al no emitir preámbulos ni metacomentario, las salidas se integran directamente en documentos sin necesidad de limpieza posterior.
+- Generación de primeras líneas y aperturas: la categoría específica de "opening lines" del dataset lo hace útil para desbloquear bloqueos creativos al inicio de un relato.
+- Ejercicios de escritura por punto de vista: permite reescribir una misma escena desde distintas perspectivas, aprovechando la categoría de POV del entrenamiento.
+- Contenido creativo local en Apple Silicon: con 2,26 GB en MLX 4 bits, se puede ejecutar en un portátil Mac para sesiones de escritura sin conexión ni coste de API.
+- Despliegue ligero en servidor con llama.cpp u Ollama: el GGUF Q4_K_M de 2,50 GB permite servir el modelo en CPU o GPU modesta para herramientas internas de generación de ficción.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La única evaluación mencionada es una comprobación cualitativa sobre flash fiction, worldbuilding, poesía y diálogo, que arrojó salidas coherentes y sin repeticiones. No hay datos numéricos comparables con otros modelos.
+No se han publicado resultados de benchmarks en la información disponible. La model card únicamente reporta una pérdida de validación mínima de 1,064 y una comprobación cualitativa sobre un conjunto reservado (flash fiction, worldbuilding, poesía y diálogo) con salidas coherentes, sin texto de planificación filtrado ni bucles de repetición.
 
 ## Requisitos de hardware
 
-- VRAM estimada: al ser un modelo de 4B cuantizado a 4-bit, requiere aproximadamente 3-4 GB de VRAM para inferencia con GGUF Q4_K_M. La versión MLX 4-bit es similar.
-- GPU recomendadas: cualquier GPU con al menos 6 GB de VRAM (por ejemplo, RTX 3060, RTX 4060) puede ejecutarlo. También funciona en Apple Silicon (M1 o superior) mediante MLX.
-- Compatibilidad con consumer GPU: sí, es adecuado para GPUs de gama media y baja.
-- Opciones de despliegue: MLX para Apple Silicon (`mlx-lm`), GGUF para llama.cpp, LM Studio, Ollama y otros runtimes compatibles. También puede servirse mediante endpoints compatibles con Hugging Face.
-- Latencia y throughput: no disponibles. Al ser un modelo pequeño, se espera una latencia baja en hardware moderno, pero no se han publicado cifras concretas.
+- VRAM estimada: aproximadamente 2,3 GB para la variante MLX 4 bits y 2,5 GB para el GGUF Q4_K_M, más el overhead de contexto y del runtime.
+- GPU recomendadas: no se especifican en la documentación. La variante MLX está pensada para Apple Silicon (mlx-lm); la variante GGUF es compatible con llama.cpp en CPU y GPU.
+- GPU de consumo: por tamaño, cabe holgadamente en tarjetas con 4 GB o más de VRAM (por ejemplo, RTX 3050, RTX 4060, RTX 4090) y en equipos Apple Silicon con memoria unificada.
+- Opciones de despliegue: mlx-lm en Apple Silicon; llama.cpp, Ollama y LM Studio para el GGUF; el tag endpoints_compatible sugiere compatibilidad con endpoints de inferencia, aunque no se detalla el runtime concreto.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa objetiva con otros modelos de escritura creativa de tamaño similar. La documentación no incluye benchmarks ni comparaciones con alternativas como Gemma 3 4B, Llama 3.2 3B u otros modelos ajustados para storytelling. Por tanto, esta sección queda sin datos concretos.
+| Modelo | Parámetros | Contexto | Especialización | Licencia | Formatos |
+|---|---|---|---|---|---|
+| Prism Creative 1 Mini | 4,02 B | No disponible | Escritura creativa y narrativa (LoRA sobre Qwen3-4B) | Apache 2.0 | safetensors (MLX 4-bit), GGUF Q4_K_M |
+| Qwen3-4B-Instruct-2507 (base) | ~4 B | No disponible | Instrucciones generales, conversacional | Apache 2.0 | safetensors, GGUF (según distribución) |
+| Modelos creativos de 7-8 B de la familia Prism u otras | No disponible | No disponible | Escritura creativa y rol | No disponible | No disponible |
+
+La comparación cuantitativa con alternativas de la misma categoría no está disponible en la información proporcionada. El principal punto de referencia es su modelo base: Prism Creative 1 Mini añade especialización narrativa y un formato MLX 4 bits listo para usar, a costa de perder generalidad frente a Qwen3-4B-Instruct-2507 en tareas no creativas.
 
 ## Limitaciones y advertencias
 
-- Puede repetir contenido en formas muy cortas y con restricciones de longitud estrictas (por ejemplo, drabbles de 100 palabras), a pesar de los filtros aplicados.
-- Al ser un modelo destilado, hereda ciertos estilos y tendencias del profesor GLM 5.2, lo que puede limitar la originalidad en algunos casos.
-- El dataset de entrenamiento es reducido (2.500 ejemplos), lo que puede generar sesgos hacia los géneros y estructuras presentes en esos datos.
-- Solo soporta inglés; no hay capacidades multilingües documentadas.
-- No se han publicado evaluaciones de seguridad, sesgos o alucinaciones. Como cualquier modelo generativo, puede producir contenido factualmente incorrecto o inapropiado.
-- Para uso en producción, se recomienda revisión humana de las salidas, ya que el autor lo describe como "un primer borrador fuerte, no un resultado final".
+- Modelo de 4B parámetros afinado con LoRA sobre solo 2.500 ejemplos: la propia model card lo describe como un buen primer borrador, no como un texto final.
+- Puede repetirse ocasionalmente en formas cortas muy restringidas, pese al endurecimiento del dataset contra bucles de repetición.
+- Hereda tendencias estilísticas del modelo profesor GLM 5.2, incluyendo posibles clichés narrativos residuales.
+- Solo soporta inglés; no se declara soporte de otros idiomas.
+- No se documenta la longitud de contexto efectiva, lo que impide planificar su uso en narrativas largas o conversaciones extensas.
+- Riesgo de alucinación inherente a los modelos generativos; en contextos de ficción es esperable, pero debe revisarse si se usa para contenido factual.
+- No se documentan sesgos específicos, aunque al derivar de Qwen3-4B puede heredar los sesgos de su base y del corpus destilado.
+- Licencia Apache 2.0, que permite uso comercial, pero conviene verificar las condiciones del modelo base y de los datos destilados de GLM 5.2 antes de un despliegue en producción.
+- No dispone de tool calling ni capacidades de agente, por lo que no es adecuado para pipelines que requieran invocación de funciones.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/VertexAIco/prism-creative-1-mini
-- Perfil del autor en Hugging Face: https://huggingface.co/VertexAIco/models
-- Otros enlaces de la búsqueda web no son relevantes para este modelo (corresponden a otros proyectos del autor o a documentación de Google Vertex AI).
+- Modelo en Hugging Face: https://huggingface.co/VertexAIco/prism-creative-1-mini
+- Modelo base: https://huggingface.co/mlx-community/Qwen3-4B-Instruct-2507-4bit
+- Repositorio mlx-lm: https://github.com/ml-explore/mlx-lm
+- llama.cpp: https://github.com/ggml-org/llama.cpp
+- Ollama: https://ollama.com
+- LM Studio: https://lmstudio.ai

@@ -5,7 +5,7 @@
   "author": "dissembill",
   "url": "https://huggingface.co/dissembill/mirror-qwen-image-2-1-mflux-q4",
   "created_at": "2026-11-19T13:28:36.000Z",
-  "updated_at": "2026-11-19T13:32:14.000Z",
+  "updated_at": "2026-11-19T20:16:18.000Z",
   "license": "qwen-research",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",

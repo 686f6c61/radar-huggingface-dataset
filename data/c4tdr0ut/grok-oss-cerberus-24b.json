@@ -5,7 +5,7 @@
   "author": "c4tdr0ut",
   "url": "https://huggingface.co/c4tdr0ut/grok-oss-Cerberus-24B",
   "created_at": "2026-11-06T19:52:10.000Z",
-  "updated_at": "2026-11-06T22:53:43.000Z",
+  "updated_at": "2026-11-19T17:52:51.000Z",
   "license": "other",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 455,
+  "downloads_30d": 463,
   "trending_score": 0,
   "parameters": 23572403200,
   "parameters_human": "23.57B",
@@ -46,8 +46,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "c4tdr0ut/Cerberus-24B",
+  "renamed_at": "2026-11-20T06:17:12.579Z",
   "benchmarks": [],
   "sources": [
     {

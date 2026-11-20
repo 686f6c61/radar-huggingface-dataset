@@ -2,110 +2,113 @@
 
 ## Resumen
 
-LemonDecider es un motor de decisión tipada desarrollado por inclusionAI y derivado de Qwen/Qwen3.5-4B. No es un modelo generativo de chat: es un clasificador de decisión que responde preguntas estructuradas de tipo **choice**, **noul** y **score** en un único forward pass, con un candidato explícito de **unknown** (abstención). Para ello conserva el backbone completo del modelo base y sustituye la cabeza LM por una lectura de 255 códigos de respuesta de un solo token (`A` … `JT`), implementada como una capa `Linear(2560, 255, bias=False)` sobre la última posición del prompt.
+LemonDecider 4B es un modelo especializado en la toma de decisiones tipadas (typed decisions) desarrollado por inclusionAI. A diferencia de los modelos generativos convencionales, no produce flujos de tokens de respuesta, sino que devuelve probabilidades sobre opciones nombradas, probabilidades sí/no (denominadas `noul`) o puntuaciones ordinales a partir de un estado de entrada (texto o JSON estructurado) y una pregunta concreta. Está construido sobre el backbone híbrido de Qwen/Qwen3.5-4B, con 4.539.918.336 parámetros totales, y añade una cabeza de lectura de decisión con capacidad para hasta 255 opciones.
 
-El modelo tiene 4.539.918.336 parámetros (unos 4,54 B), se distribuye en bfloat16 y admite una longitud máxima de entrada de 8192 tokens sin truncado silencioso. Acepta opcionalmente imágenes a través del procesador de visión de Qwen3, por lo que hereda capacidades multimodales del backbone. La arquitectura es código personalizado (`AutoJevForDecisionClassification`), por lo que requiere `trust_remote_code=True`.
+El modelo resuelve un problema específico: convertir tareas de clasificación, enrutamiento y juicio en una interfaz unificada de decisión con salidas calibradas, evitando la generación autoregresiva y sus problemas asociados (deriva, formato inconsistente, coste de decodificación). Cada pregunta se procesa de forma independiente, reteniendo el estado completo y las opciones, sin truncar la entrada, con una capacidad de 8.192 tokens por pregunta (incluyendo la plantilla renderizada).
 
-Su relevancia actual radica en que cubre un nicho poco atendido: convertir la decisión en una operación de una sola pasada, con probabilidades por opción, nivel de confianza y una vía formal de abstención, en lugar de generar texto libre. Esto lo hace adecuado para enrutado, triaje y etiquetado a gran escala, donde la latencia y la calibración importan más que la fluidez. Está licenciado bajo Apache-2.0.
+Es relevante ahora porque propone un patrón alternativo a los LLM generativos para pipelines de decisión en producción: menor latencia, salidas estructuradas nativas y probabilidades calibradas (temperatura escalar de 0,835655 aplicada por el runtime incluido). La licencia Apache 2.0 y el empaquetado autocontenido (sin necesidad de descargar el modelo base por separado) facilitan su adopción comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `AutoJevForDecisionClassification` (código personalizado, `trust_remote_code=True`); backbone Qwen3.5 (texto + visión) con cabeza de decisión `Linear(2560, 255, bias=False)` |
-| Parametros totales | 4.539.918.336 (aprox. 4 B de backbone + cabeza de lectura de 255×2560) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | 8192 tokens (`max_input_length`), sin truncado silencioso |
-| Tipos de cuantizacion | no disponible; los pesos publicados están en bfloat16 |
-| Idiomas soportados | no disponible (el ejemplo de la model card está en chino) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (bfloat16), en dos fragmentos con índice |
+| Arquitectura | Backbone híbrido Qwen3.5-4B con cabeza de lectura de decisión de 255 opciones; capas de atención completa periódicas no causales y capas recurrentes híbridas; SDPA |
+| Parametros totales | 4.539.918.336 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 8.192 tokens por pregunta, incluyendo la plantilla renderizada; sin truncamiento de entrada |
+| Tipos de cuantizacion | no disponible (pesos publicados en BF16; posprocesamiento de probabilidades en FP32) |
+| Idiomas soportados | inglés (en) y chino (zh) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (2 shards), tokenizer.json, model.safetensors.index.json; código custom con `trust_remote_code=True` |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `Qwen/Qwen3.5-4B` y mantiene el backbone con todos sus pesos. La innovación principal es la cabeza de decisión: 255 códigos de respuesta de un solo token (`A` … `JT`) inicializados a partir de las filas correspondientes de la cabeza LM de Qwen, y una proyección lineal sin sesgo sobre la última posición del prompt. No hay generación autorregresiva: el forward pass **rechaza la decodificación con caché KV y el padding a la derecha**, exige padding a la izquierda y puntúa todas las opciones en una sola pasada. Los logits de opciones no válidas se enmascaran según `option_counts` (entre 1 y 255 opciones por pregunta).
+El modelo parte del backbone híbrido de Qwen3.5-4B, que combina capas de atención completa periódicas no causales con capas recurrentes híbridas, usando SDPA como implementación de atención. Sobre ese backbone se añade una cabeza de lectura de decisión en posición de marcador, que produce distribuciones sobre hasta 255 opciones por pregunta. Cada forward procesa una única pregunta, y el runtime incluido aplica una temperatura escalar calibrada de 0,835655 sobre las probabilidades, con posprocesamiento en FP32. El paquete serializa 724 tensores en dos ficheros safetensors y se carga mediante `LemonDeciderForDecisionClassification` con `trust_remote_code=True`.
 
-Las preguntas se renderizan como un único mensaje de usuario (estado + instrucciones + opciones + una ranura `__unknown__` añadida) mediante `decision_utils.decision_messages()`. La semántica de salida se implementa en `decision_utils.py`: para `choice` se devuelve la opción argmax con probabilidades por opción; para `noul` (booleano con abstención) se calcula `P(true) + 0.5 · P(unknown)`; para `score` (2 a 10 descripciones ordenadas) se devuelve `Σ i · P(i)` junto con leyenda y probabilidades. La confianza se define como `concentration · (1 − P(unknown))`, con `concentration = (n · p_max − 1)/(n − 1)`. El modelo también admite imágenes decodificadas como objetos PIL a través del procesador de visión de Qwen3.
-
-El entrenamiento es una destilación por *supervised fine-tuning* desde **imajev-4b**, un modelo de decisión de clase Jev de mayor tamaño. El checkpoint publicado corresponde al paso 24, con 6144 ejemplos vistos, y la pérdida es entropía cruzada sobre la lectura enmascarada de 255 vías, con soporte para índices duros de opción y distribuciones *soft* del profesor. En el conjunto de desarrollo interno (n=574) la precisión@T=1 es de 0,7735, con un mejor valor de 0,7805 en el paso 3. Se realizó un ajuste de temperatura que halló T=0,60 (NLL 0,56265, Brier 0,28261 frente a 0,6016 / 0,29885 con T=1), pero el modelo se sirve deliberadamente con T=1,0 hasta que se reevalúe el conjunto público de evaluación. La temperatura solo se aplica en el softmax de posprocesado, no en la pérdida de entropía cruzada.
+El entrenamiento se organiza en dos etapas de supervisión. La primera establece capacidades generales de decisión con aproximadamente 1,20 millones de ejemplos de decisión/QA que cubren tareas `choice`, `noul` y `score`, abarcando categorías como enrutamiento de intención y selección de acciones, juicio lingüístico (sentimiento, inferencia, factualidad, paráfrasis), conocimiento y razonamiento (QA, sentido común, lógica, aritmética), recuperación y selección de candidatos, juicios de preferencia y calidad, y juicios probabilísticos y ordinales. La segunda etapa refina sobre un corpus incremental de 35.467 ejemplos construido de forma consciente del modelo: las respuestas incorrectas se convierten directamente en candidatos de entrenamiento, y las correctas se amplían con una pregunta o paso de razonamiento adicional, o con una condición extra, para generar variantes más difíciles. La actualización final se consolida en pesos completos con posprocesamiento de probabilidades calibrado, sin adaptadores separados.
 
 ## Capacidades
 
-- Decisión tipada en tres modalidades: `choice` (1–254 opciones con nombre más unknown), `noul` (verdadero/falso con abstención) y `score` (2–10 descripciones ordenadas).
-- Salida probabilística por opción, más `confidence`, `unknown_probability` y el indicador booleano `abstained`.
-- Abstención explícita: si el argmax crudo cae en la ranura `unknown`, el modelo marca `abstained = True`.
-- Procesamiento por lotes mediante `prepare_batch` y `predict_batch`.
-- Entrada multimodal opcional: imágenes decodificadas como `PIL.Image` en `row["images"]` (no recupera rutas ni URL).
-- Contexto de hasta 8192 tokens, con rechazo explícito de entradas más largas en lugar de truncarlas.
-- No soporta tool calling ni function calling, ni agentes multi-paso, ni generación de texto libre.
-- No se documentan capacidades multilingües; el único ejemplo disponible está en chino.
-- No hay modo de razonamiento (thinking), ni audio, ni salida de texto generativo.
+- Decisión tipada sobre opciones nombradas: devuelve probabilidades sobre hasta 255 opciones (`choice`) sin generar tokens de respuesta.
+- Juicio binario probabilístico: salida `noul` con probabilidad sí/no para preguntas de verificación.
+- Puntuación ordinal: salida `score` para valoraciones graduadas.
+- Entrada multimodal de texto y JSON estructurado como estado de la decisión.
+- Procesamiento de preguntas independientes: cada pregunta recibe el estado completo y las opciones, sin truncamiento.
+- Relectura configurada de entradas cortas dentro de la secuencia de entrada (estrategia de serving).
+- Enrutamiento de intención, clasificación, selección de acciones y de candidatos.
+- Juicios de sentimiento, inferencia, factualidad y paráfrasis.
+- QA de conocimiento, sentido común, lógica y aritmética como tareas de decisión.
+- Juicios de preferencia, calidad de respuesta y comparaciones ordenadas.
+- Soporte de tool calling / function calling: no disponible como capacidad generativa; la selección de herramientas puede expresarse como decisión tipada.
+- Soporte de agentes y razonamiento multi-paso: no disponible de forma nativa; el modelo decide, no planifica secuencias.
+- Capacidades multilingües: limitadas a inglés y chino.
+- Modo thinking, visión y audio: no disponibles.
 
 ## Casos de uso
 
-- **Enrutado de tickets de soporte**: con `choice` se clasifica la petición del usuario en categorías como reembolso, logística o cuenta; el modelo devuelve la categoría argmax y su probabilidad, lo que permite umbralizar y desviar a colas distintas.
-- **Triaje binario con abstención**: con `noul` se decide si un contenido cumple una política o si un caso requiere intervención; la opción `unknown` permite enviar los casos dudosos a revisión humana en lugar de forzar una respuesta.
-- **Escalado a revisión manual**: usando `abstained = True` y `unknown_probability` como señal, se puede construir una cola de revisión priorizada por incertidumbre.
-- **Encuestas y analítica ordinal**: con `score` se convierte texto libre (por ejemplo, un comentario de cliente) en una puntuación ordinal de 2 a 10 descripciones, con leyenda y probabilidades para auditar la decisión.
-- **Enrutado de herramientas en pipelines**: dado un conjunto de herramientas descritas como opciones de una pregunta `choice`, el modelo selecciona en una sola pasada cuál invocar; no genera la llamada, pero resuelve la selección previa.
-- **Clasificación multimodal**: un ticket con una captura de pantalla o una foto de producto puede enviarse junto con la pregunta como `PIL.Image`, aprovechando el procesador de visión de Qwen3.
-- **Etiquetado de datos a gran escala**: la API por lotes (`predict_batch`) y el carácter de una sola pasada permiten etiquetar corpus grandes con decisiones tipadas y probabilidades asociadas.
-- **Auditoría de decisiones automatizadas**: la combinación de `confidence`, `unknown_probability` y las probabilidades por opción facilita registrar y revisar por qué el sistema tomó cada decisión.
+- Enrutamiento de intención en atención al cliente: el modelo recibe el turno del usuario como estado y un conjunto de intenciones nombradas como opciones, y devuelve la distribución de probabilidad sobre ellas. La ventana de 8.192 tokens por pregunta permite incluir historial de conversación sin truncar, y la salida calibrada permite aplicar umbrales de confianza para escalar a un humano.
+- Clasificación de tickets y triaje: con la salida `choice` sobre categorías predefinidas y la salida `score` para prioridad, se puede construir un pipeline que asigne cola y severidad en una sola pasada por pregunta, con latencias registradas de mediana 102,6 ms en el entorno de evaluación en proceso.
+- Selección de herramientas en un agente: dado un estado JSON con el contexto de la tarea y una lista de herramientas como opciones, el modelo devuelve la probabilidad de cada herramienta. Es adecuado porque evita la generación de JSON malformado y produce directamente una distribución utilizable para políticas de selección.
+- Filtrado y ranking de candidatos en recuperación: con la salida `noul` o `score`, se puede puntuar la relevancia de documentos o respuestas candidatas frente a una consulta, usando el estado completo sin truncamiento para consultas largas.
+- Evaluación automática de calidad de respuestas: la salida `score` ordinal permite calificar respuestas generadas por otros modelos en dimensiones como factualidad o adecuación, con probabilidades calibradas que facilitan el agregado estadístico.
+- Verificación de factualidad y paráfrasis: la salida `noul` responde a preguntas binarias del tipo "¿la afirmación se sigue del contexto?", útil en pipelines de control de alucinaciones sobre salidas de otros modelos.
+- Moderación y juicio de sentimiento: clasificación de sentimiento y juicios de adecuación con opciones nombradas, integrable en sistemas de moderación que requieren decisiones auditables con probabilidad asociada.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos publicados en la información disponible son las métricas del conjunto de desarrollo interno (n=574) del propio modelo:
+Los resultados publicados corresponden al Decision Index, edición 0.3, ejecución local de desarrollo completada el 2026-11-16, sobre 140.178 peticiones puntuables en 43 benchmarks (140.620 peticiones totales, 442 excluidas oficialmente). El scorer registró `complete: true` con 140.099 ok, 79 no soportadas y 0 errores. El autor advierte que no es una aceptación oficial de leaderboard ni una evaluación completa nueva del paquete BF16 publicado.
 
 | Metrica | Valor |
 |---|---|
-| Precisión@T=1 en dev (checkpoint publicado, paso 24) | 0,7735 |
-| Precisión@T=1 en dev (mejor paso, paso 3) | 0,7805 |
-| NLL con T=0,60 (ajuste no aplicado en servicio) | 0,56265 |
-| Brier con T=0,60 (ajuste no aplicado en servicio) | 0,28261 |
-| NLL con T=1,0 (servicio) | 0,6016 |
-| Brier con T=1,0 (servicio) | 0,29885 |
+| Decision Index (habilidad balanceada) | 63,78 |
+| Índice bruto | 72,09 |
+| Habilidad de amplitud (breadth skill) | 62,87 |
+| Latencia por petición: mediana / media / p95 | 102,6 / 342,5 / 1121,6 ms |
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible, ni comparaciones con modelos de la misma categoría.
+| Area | Raw | Skill | Cobertura | Benchmarks |
+|---|---:|---:|---:|---:|
+| Knowledge & Reasoning | 0,5797 | 0,4639 | 0,9992 | 11 |
+| Language Understanding | 0,7866 | 0,7004 | 1,0000 | 9 |
+| Retrieval & Classification | 0,7883 | 0,7314 | 0,9926 | 6 |
+| Tools & Automation | 0,7516 | 0,7299 | 0,9926 | 5 |
+| Arts & Human Taste | 0,7253 | 0,5701 | 0,9967 | 6 |
+
+No se han publicado resultados de benchmarks convencionales (MMLU, HumanEval, GSM8K) en la información disponible. Las latencias registradas provienen de la ejecución de evaluación en proceso, no de un benchmark de despliegue HTTP ni de una certificación en GPU única.
 
 ## Requisitos de hardware
 
-- VRAM estimada en bfloat16: unos 9,1 GB solo para los pesos (4,54 B de parámetros a 2 bytes), más activaciones; en torno a 11–13 GB con el contexto máximo de 8192 tokens. Son estimaciones derivadas del recuento de parámetros, no cifras publicadas por el autor.
-- Al rechazar la decodificación con caché KV, no hay crecimiento de caché entre pasos, pero cada petición exige un forward completo sobre el prompt.
-- GPU recomendadas: no disponibles en la información proporcionada. Por tamaño de pesos, encajan tarjetas con 16 GB o más (RTX 4080, RTX 4090, RTX 3090, A100, H100); en tarjetas de 12 GB sería necesario cuantizar.
-- No se documentan tipos de cuantización publicados, por lo que no puede confirmarse el funcionamiento en GGUF ni en formatos de 4 u 8 bits.
-- Opciones de despliegue: `transformers` con `trust_remote_code=True` y `attn_implementation="sdpa"`, o el CLI autónomo incluido (`model.py`). No se mencionan vLLM, llama.cpp, Ollama ni TGI; el diseño no generativo y el rechazo de caché KV los hacen poco probables sin adaptación.
-- Latencia y throughput: no disponibles.
-- El repositorio ocupa 9,1 GB y acumula 0 descargas y 19 likes en el momento de la consulta.
+- VRAM estimada para inferencia: con pesos BF16 y 4.539.918.336 parámetros, se requieren aproximadamente 9,1 GB solo para pesos, más overhead de activaciones y KV/estado recurrente; el repo ocupa 45,4 GB en total (incluye artefactos adicionales). No se publican cifras oficiales de VRAM.
+- GPU recomendadas: no disponible en la información proporcionada; por tamaño, una GPU con 16-24 GB de VRAM en BF16 es el mínimo razonable, y A100/H100 para despliegues de mayor concurrencia.
+- Cabe en GPU de consumo: previsiblemente en RTX 4090 (24 GB) en BF16; en GPUs de 16 GB requeriría cuantización, cuyos formatos no están documentados.
+- Opciones de despliegue: el paquete incluye `model.py` como punto de entrada Python, CLI y HTTP, y `decision_runtime.py` para preparación de entrada y respuestas tipadas. Requiere Python 3.12, PyTorch 2.9.0 (build con acelerador) y Transformers 5.17.0, con `trust_remote_code=True`. No se documenta soporte para vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: mediana de 102,6 ms, media de 342,5 ms y p95 de 1121,6 ms por petición en la ejecución de evaluación en proceso; no hay datos de throughput en producción.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables de decisión tipada publicados con los que contrastar. La model card solo identifica dos referencias relacionadas, sin datos comparativos de rendimiento:
+No se dispone de datos de benchmarks de modelos comparables en la información proporcionada, por lo que la comparación cuantitativa de rendimiento no está disponible. A continuación se comparan características estructurales con alternativas plausibles de la misma categoría (clasificación/decisión sobre base de ~4B).
 
-| Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Enfoque de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LemonDecider | Objeto de la ficha | 4.539.918.336 | 8192 | Apache-2.0 | safetensors, bfloat16 |
-| Qwen/Qwen3.5-4B | Modelo base | no disponible | no disponible | no disponible | no disponible |
-| imajev-4b | Profesor de destilación | no disponible | no disponible | no disponible | no disponible |
+| LemonDecider 4B | 4.539.918.336 | 8.192 tokens por pregunta | Probabilidades tipadas sobre hasta 255 opciones, `noul`, `score` | Apache 2.0 | Hugging Face, paquete autocontenido |
+| Qwen3.5-4B (base) | ~4B (no confirmado) | no disponible | Generación autoregresiva de texto | no disponible | Hugging Face |
+| Clasificadores BERT/RoBERTa de ~4B | ~4B | típicamente 512-8.192 tokens | Logits de clasificación con etiquetas fijas | variable | Hugging Face |
 
-Comparativa con alternativas de la misma categoría: no disponible.
+No se dispone de datos de rendimiento comparativo (Decision Index u otros) para estas alternativas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- **No es un modelo generativo**: nunca debe usarse para generación de texto libre ni como sustituto de un chat model.
-- **Dependencia del formato de prompt**: está pensado para entradas de decisión tipada renderizadas con `decision_utils.decision_messages()`; cualquier divergencia en el diseño del prompt degrada los resultados.
-- **Validación insuficiente**: las métricas proceden de un split interno pequeño (n=574). El propio autor recomienda validar sobre la distribución propia antes de usarlo en producción.
-- **Gestión de contexto manual**: las entradas de más de 8192 tokens se rechazan en lugar de truncarse, por lo que el presupuesto de contexto debe gestionarse en el sistema que lo invoca.
-- **Padding restrictivo**: se requiere padding a la izquierda; el padding a la derecha y la decodificación con caché KV se rechazan.
-- **Temperatura no óptima en servicio**: el modelo se sirve con T=1,0 aunque el ajuste empírico sugiere T=0,60; el autor bloquea deliberadamente su adopción hasta reevaluar el conjunto público. Esto afecta a la calibración de las probabilidades y al límite de decisión de `noul`, no al argmax.
-- **Sesgos conocidos**: no disponibles en la información proporcionada. Al derivar de Qwen3.5-4B, es razonable esperar los sesgos heredados del backbone, pero no se documentan.
-- **Riesgo de alucinación**: no disponible; al no generar texto, el riesgo se traslada a decisiones incorrectas o mal calibradas, mitigadas parcialmente por la abstención.
-- **Idiomas**: no se especifica ningún conjunto de idiomas soportados, lo que limita su uso en producción multilingüe sin evaluación previa.
-- **Restricciones de licencia**: Apache-2.0 permite uso comercial; conviene verificar las condiciones del modelo base Qwen3.5-4B, cuya licencia no se detalla en la información disponible.
-- **Código personalizado**: requiere `trust_remote_code=True`, lo que implica ejecutar código del repositorio; debe auditarse antes de desplegarlo.
+- Sesgos conocidos: no se documentan análisis de sesgo en la información disponible; al entrenarse sobre datos de decisión/QA, puede heredar sesgos de esas fuentes y del backbone Qwen3.5-4B.
+- Riesgo de alucinación: el modelo no genera texto, por lo que la alucinación se manifiesta como decisiones incorrectas con alta confianza; la calibración (temperatura 0,835655) mitiga pero no elimina este riesgo.
+- Limitaciones de contexto: 8.192 tokens por pregunta, incluyendo la plantilla renderizada; aunque no se trunca la entrada, las entradas que excedan ese límite no son procesables.
+- Limitaciones de idioma: solo inglés y chino; no hay soporte declarado de castellano.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el modelo requiere `trust_remote_code=True` y código custom, lo que implica revisión de seguridad del código remoto antes de producción.
+- Dependencias estrictas de runtime: Python 3.12, PyTorch 2.9.0 con build de acelerador y Transformers 5.17.0; versiones distintas pueden no ser compatibles.
+- Los resultados del Decision Index son de desarrollo local, no de leaderboard oficial ni de una evaluación completa del paquete BF16 publicado; las latencias no son una certificación de despliegue.
+- El paquete no incluye datos de entrenamiento, predicciones crudas, entradas de benchmark ni logs internos, lo que limita la reproducibilidad.
+- Una pregunta por forward: el procesamiento independiente de preguntas puede multiplicar el coste si se evalúan muchas preguntas sobre el mismo estado.
+- Solo modalidades texto y JSON estructurado; sin visión, audio ni generación libre.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/inclusionAI/LemonDecider
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
-- Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0
-- Papers, blogs, repositorios o demos adicionales: no disponible en la información proporcionada.

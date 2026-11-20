@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "mradermacher/asm2asm-deepseek-1.3b-250k-x86-O0-arm-gnueabi-gcc-GGUF",
+  "slug": "mradermacher-asm2asm-deepseek-1-3b-250k-x86-o0-arm-gnueabi-gcc-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/asm2asm-deepseek-1.3b-250k-x86-O0-arm-gnueabi-gcc-GGUF",
+  "created_at": "2025-03-13T08:40:50.000Z",
+  "updated_at": "2026-11-20T11:14:32.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "trl",
+    "sft",
+    "generated_from_trainer",
+    "en",
+    "base_model:ahmedheakl/asm2asm-deepseek-1.3b-250k-x86-O0-arm-gnueabi-gcc",
+    "base_model:quantized:ahmedheakl/asm2asm-deepseek-1.3b-250k-x86-O0-arm-gnueabi-gcc",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 62,
+  "trending_score": 0,
+  "parameters": 1346471936,
+  "parameters_human": "1.35B",
+  "storage_bytes": 12340952320,
+  "storage_human": "12.3 GB",
+  "context_length": 16384,
+  "base_model": "ahmedheakl/asm2asm-deepseek-1.3b-250k-x86-O0-arm-gnueabi-gcc",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

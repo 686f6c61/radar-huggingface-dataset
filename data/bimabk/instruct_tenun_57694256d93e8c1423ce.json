@@ -20,8 +20,6 @@
     "text-generation",
     "conversational",
     "arxiv:1910.09700",
-    "base_model:gradients-io-tournaments/augmented-8a3f84c4cc4a7528",
-    "base_model:adapter:gradients-io-tournaments/augmented-8a3f84c4cc4a7528",
     "region:us"
   ],
   "likes": 0,

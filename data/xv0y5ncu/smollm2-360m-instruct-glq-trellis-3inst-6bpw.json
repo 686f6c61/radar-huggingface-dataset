@@ -5,7 +5,7 @@
   "author": "xv0y5ncu",
   "url": "https://huggingface.co/xv0y5ncu/SmolLM2-360M-Instruct-GLQ-trellis-3inst-6bpw",
   "created_at": "2026-08-23T21:25:33.000Z",
-  "updated_at": "2026-08-23T21:39:36.000Z",
+  "updated_at": "2026-11-14T14:18:49.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 39,
+  "downloads_30d": 44,
   "trending_score": 0,
   "parameters": 165755840,
   "parameters_human": "165.8M",

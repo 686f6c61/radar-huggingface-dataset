@@ -5,7 +5,7 @@
   "author": "xuanenzo",
   "url": "https://huggingface.co/xuanenzo/geni_test",
   "created_at": "2026-11-13T03:13:49.000Z",
-  "updated_at": "2026-11-19T08:22:04.000Z",
+  "updated_at": "2026-11-20T08:09:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -18,7 +18,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 21,
+  "downloads_30d": 236,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

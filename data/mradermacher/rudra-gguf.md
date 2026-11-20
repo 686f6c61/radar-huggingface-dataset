@@ -2,100 +2,97 @@
 
 ## Resumen
 
-rudra-GGUF es la colección de cuantizaciones en formato GGUF del modelo ritiksuman/rudra, publicada por mradermacher, un cuantizador independiente conocido por convertir modelos abiertos a GGUF para su uso con llama.cpp, Ollama y otros runtimes locales. El modelo original es un fine-tune de 4.326.350.848 parámetros (aproximadamente 4.300 millones) orientado a tareas de código, agentes y tool calling, según los tags del repositorio.
+rudra es un modelo de lenguaje de 4.326 millones de parámetros (aproximadamente 4,3 mil millones) desarrollado por ritiksuman y distribuido en formato GGUF por mradermacher. Se presenta como un ajuste fino (LoRA) orientado a flujos de trabajo agénticos: llamada a funciones, uso de herramientas, salida estructurada en JSON y ejecución autónoma de bucles de agente. El modelo parte de una base de la familia Qwen (etiquetada como qwen3.5 en los tags del repositorio) y está pensado para ejecución local en hardware de consumo.
 
-El repositorio incluye 12 cuantizaciones estáticas (desde Q2_K de 2,1 GB hasta f16 de 8,8 GB) más dos ficheros mmproj en Q8_0 y f16, lo que indica que el modelo base incorpora algún componente multimodal. La licencia es Apache 2.0 tanto en el modelo base como en las cuantizaciones, lo que permite uso comercial sin restricciones adicionales conocidas.
+Su relevancia actual reside en el segmento de modelos pequeños especializados en agentes: frente a modelos generalistas de mayor tamaño, rudra apunta a un caso de uso concreto (automatización de operaciones con ficheros, generación de JSON fiable y orquestación multi-paso) con una huella de memoria reducida. La licencia Apache 2.0 facilita su integración comercial, y la disponibilidad de cuantizaciones desde 2,1 GB hasta 8,8 GB permite desplegarlo desde portátiles hasta servidores.
 
-Su relevancia práctica radica en que permite ejecutar un modelo de 4B especializado en generación de código y flujos agénticos en hardware de consumo, incluido CPU, sin depender de APIs externas. No hay métricas de benchmarks publicadas en la información disponible, por lo que la evaluación de calidad debe hacerse de forma empírica.
+No obstante, la información publicada es limitada: no se detallan la longitud de contexto, el volumen de datos de entrenamiento ni resultados de benchmarks. Esta ficha recoge exclusivamente los datos disponibles en la model card y los metadatos del repositorio.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only denso (no confirmado en la model card; inferido de los tags qwen3.5 y del recuento de parámetros) |
-| Parametros totales | 4.326.350.848 (aproximadamente 4,3B) |
-| Parametros activos | no aplica (modelo denso, no MoE) |
+| Arquitectura | Transformer decoder-only (base Qwen, etiquetada qwen3.5); ajuste fino LoRA |
+| Parámetros totales | 4.326.350.848 (4,3 mil millones) |
+| Parámetros activos | no disponible (no es un modelo MoE según la información disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K; además mmproj-Q8_0 y mmproj-f16 |
-| Idiomas soportados | en (inglés) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (cuantizaciones); safetensors en el modelo base ritiksuman/rudra |
+| Tipos de cuantización | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K; además mmproj f16 y Q8_0 (complemento multimodal) |
+| Idiomas soportados | inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base ritiksuman/rudra) |
 
 ## Arquitectura y entrenamiento
 
-La model card de la cuantización no describe la arquitectura interna del modelo base. Los tags del repositorio indican qwen3.5, unsloth, qlora y lora, lo que sugiere que ritiksuman/rudra es un ajuste fino mediante QLoRA/LoRA sobre una base de la familia Qwen 3.5 de aproximadamente 4B parámetros, con un transformer decoder-only denso estándar. No se dispone de información sobre número de tokens de entrenamiento, composición del dataset ni si hubo fases de RLHF o DPO.
+El modelo base es ritiksuman/rudra, un ajuste fino mediante LoRA sobre una base de la familia Qwen (los tags indican qwen3.5). La arquitectura subyacente es un transformer decoder-only de aproximadamente 4,3 mil millones de parámetros, con 4.326.350.848 parámetros contabilizados en safetensors. No se especifican en la información disponible el número de capas, la dimensión oculta, el número de cabezas de atención ni la longitud de contexto nativa.
 
-La presencia de ficheros mmproj en el repositorio de cuantizaciones indica que el modelo base incorpora un proyector multimodal (habitualmente para entrada de imágenes en arquitecturas tipo LLaVA/Qwen-VL), extremo que la model card no documenta explícitamente. Los tags coding, coding-agent, agentic, tool-calling, function-calling, reasoning, chain-of-thought y anti-hallucination apuntan a un ajuste orientado a generar código, invocar herramientas y reducir respuestas inventadas, aunque no se detalla la metodología ni los datos empleados para ello.
+El ajuste fino está orientado explícitamente a comportamiento agéntico: los tags del repositorio mencionan agentic-ai, autonomous-agent, function-calling, tool-use, structured-output, json-mode, agent-loop, coding-agent, anti-hallucination, file-operations y workflow-automation. No se detallan el volumen de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO. Tampoco se documentan innovaciones arquitectónicas específicas (atención lineal, decodificación especulativa, etc.). La presencia de ficheros mmproj (f16 y Q8_0) en el repositorio GGUF sugiere soporte multimodal en el modelo base, aunque no se detalla qué modalidades cubre.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, con pipeline declarado text-generation.
-- Generación y asistencia en código, según los tags coding y coding-agent.
-- Tool calling y function calling, con soporte declarado para integración en flujos con herramientas externas.
-- Comportamiento agéntico y razonamiento multi-paso (tags agentic y reasoning).
-- Razonamiento explícito tipo cadena de pensamiento (chain-of-thought).
-- Orientación a reducción de alucinaciones (tag anti-hallucination), sin métricas publicadas que lo cuantifiquen.
-- Entrada multimodal probable mediante los ficheros mmproj (Q8_0 y f16), no documentada en la model card.
-- Ejecución local en CPU y en GPU de consumo gracias a las cuantizaciones GGUF, con soporte declarado para Windows y Ollama.
-- Capacidades multilingües: limitadas al inglés según el campo language.
+- Generación de texto conversacional en inglés.
+- Llamada a funciones (function calling) y uso de herramientas (tool use), según los tags del repositorio.
+- Salida estructurada y modo JSON (structured-output, json-mode), orientado a integraciones que requieren respuestas parseables.
+- Ejecución de bucles de agente (agent-loop) y razonamiento multi-paso para tareas autónomas.
+- Operaciones con ficheros (file-operations) y automatización de flujos de trabajo (workflow-automation).
+- Capacidades de agente de programación (coding-agent).
+- Enfoque declarado anti-alucinación (anti-hallucination) en la model card, sin métricas publicadas que lo respalden.
+- Soporte multimodal potencial: el repositorio incluye ficheros mmproj, lo que indica que el modelo base podría procesar entradas de imagen, aunque no se detalla en la información disponible.
 
 ## Casos de uso
 
-- Asistente de programación en local: con Q4_K_M (2,9 GB) el modelo cabe en GPUs de gama media y permite autocompletado y generación de funciones sin enviar código a servicios externos, útil en entornos con requisitos de confidencialidad.
-- Agente de refactorización en CI/CD: su soporte de tool calling permite conectarlo a herramientas de análisis estático, linters y runners de tests para proponer parches y validarlos automáticamente antes de abrir una pull request.
-- Automatización de tareas de terminal: al estar orientado a agentic, puede encadenar llamadas a funciones (lectura de ficheros, ejecución de comandos) en un bucle de razonamiento multi-paso controlado por el orquestador.
-- Generación de tests unitarios: a partir de un fragmento de código fuente, el modelo puede producir casos de prueba; el tamaño de 4B permite ejecutarlo en la misma máquina que el pipeline de integración.
-- Chatbot técnico de soporte interno: con despliegue en Ollama o llama.cpp, sirve como asistente sobre documentación interna en inglés, con coste marginal cero por consulta una vez desplegado.
-- Extracción estructurada de datos: mediante function calling se puede forzar la salida a un esquema JSON para poblar bases de datos o generar informes a partir de texto no estructurado.
-- Prototipado de investigación sobre agentes: al ser un modelo pequeño y con licencia Apache 2.0, es adecuado como banco de pruebas para evaluar estrategias de prompting, ReAct o decodificación con herramientas antes de escalar a modelos mayores.
-- Procesamiento de capturas o diagramas, si se confirma el soporte multimodal: cargando el fichero mmproj correspondiente, podría describir imágenes o extraer texto de diagramas técnicos, aunque esta capacidad no está documentada.
+- Automatización de operaciones con ficheros: el modelo está etiquetado para file-operations y puede integrarse en scripts que lean, modifiquen o generen ficheros de forma autónoma, emitiendo llamadas a herramientas estructuradas en lugar de texto libre.
+- Generación de JSON fiable en pipelines: gracias al modo JSON y a la salida estructurada, encaja en integraciones donde la respuesta debe validarse contra un esquema (por ejemplo, extracción de campos de documentos o rellenado de formularios).
+- Agentes de codificación locales: con la etiqueta coding-agent, puede emplearse en asistentes de programación que ejecutan comandos, consultan el sistema de ficheros y proponen parches dentro de un bucle de agente.
+- Orquestación de flujos de trabajo: para encadenar pasos (consultar una API, transformar datos, escribir resultados) mediante function calling, con la ventaja de ejecutarse en local y sin coste por token.
+- Asistentes conversacionales de dominio cerrado: al ser un modelo de 4,3 mil millones de parámetros, es viable desplegarlo en entornos con recursos limitados para atención al usuario en inglés con respuestas estructuradas.
+- Prototipado de agentes autónomos en estaciones de trabajo: con cuantizaciones Q4_K_M de 2,9 GB, permite iterar sobre diseños de bucles de agente en portátiles sin GPU dedicada de gran capacidad.
+- Procesamiento de documentos con componente visual: si se confirma el soporte multimodal a través de los ficheros mmproj, podría emplearse para extraer información de imágenes o capturas combinada con salida JSON.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada según cuantización (solo pesos, sin caché KV): Q2_K 2,1 GB; Q3_K_S 2,2 GB; Q3_K_M 2,4 GB; Q3_K_L 2,6 GB; IQ4_XS 2,7 GB; Q4_K_S 2,7 GB; Q4_K_M 2,9 GB; Q5_K_S 3,2 GB; Q5_K_M 3,3 GB; Q6_K 3,7 GB; Q8_0 4,7 GB; f16 8,8 GB. Añadir aproximadamente 0,5-2 GB adicionales para caché KV y overhead según la longitud de contexto configurada.
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4070 Ti, RTX 4080/4090 (sobradas para este tamaño), A100 o H100 solo si se despliegan muchas instancias concurrentes o contextos muy largos.
-- Cabe en GPU de consumo: sí, en cualquier GPU con 6 GB o más de VRAM usando Q4_K_M o inferior; también en iGPU y en Apple Silicon unificado desde 8 GB de memoria compartida.
-- CPU: las cuantizaciones Q4_K_M y Q4_K_S están marcadas como "fast, recommended" por el autor y los tags incluyen cpu y windows, por lo que la inferencia solo-CPU es viable con velocidades moderadas.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, koboldcpp y llama-cpp-python. El soporte de GGUF en vLLM es experimental y limitado; TGI no soporta GGUF de forma nativa.
-- Latencia y throughput estimados: no disponible. El autor no publica mediciones de tokens por segundo.
+- VRAM estimada para inferencia (según cuantización): Q2_K ~2,1 GB; Q3_K_S ~2,2 GB; Q3_K_M ~2,4 GB; Q3_K_L ~2,6 GB; IQ4_XS ~2,7 GB; Q4_K_S ~2,7 GB; Q4_K_M ~2,9 GB; Q5_K_S ~3,2 GB; Q5_K_M ~3,3 GB; Q6_K ~3,7 GB; Q8_0 ~4,7 GB; f16 ~8,8 GB. Añadir ~0,5 GB (mmproj Q8_0) u ~0,8 GB (mmproj f16) si se usa el complemento multimodal.
+- GPU recomendadas: no disponibles en la información proporcionada. Por tamaño, cualquier GPU con al menos 4 GB de VRAM puede ejecutar cuantizaciones Q4; para Q8_0 se recomiendan 6 GB o más; para f16, 10 GB o más.
+- Compatibilidad con GPU de consumo: sí. Las cuantizaciones Q4_K_M (2,9 GB) y Q5_K_M (3,3 GB) caben en GPUs de consumo como RTX 3060 (12 GB), RTX 4060 (8 GB) o RTX 4090 (24 GB), e incluso en iGPU con memoria compartida suficiente.
+- Opciones de despliegue: llama.cpp, Ollama y cualquier runtime compatible con GGUF. El repositorio incluye la etiqueta endpoints_compatible y la librería transformers en los metadatos, pero el formato distribuido es GGUF.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No hay datos de benchmarks de rudra que permitan una comparación de rendimiento. La tabla siguiente recoge únicamente parámetros y licencia de alternativas de tamaño similar; el contexto y el rendimiento de rudra figuran como no disponibles.
+No se dispone de datos de rendimiento comparativos publicados para rudra. A continuación se comparan únicamente parámetros, contexto, licencia y formato con alternativas de tamaño similar; los datos de los modelos comparados se indican solo cuando son conocidos y verificables.
 
-| Modelo | Parametros | Contexto | Licencia | Formatos |
-|---|---|---|---|---|
-| rudra (base ritiksuman/rudra) | 4,33B | no disponible | Apache 2.0 | safetensors, GGUF |
-| Qwen3-4B | 4,0B | 32.768 tokens nativos (ampliable con YaRN) | Apache 2.0 | safetensors, GGUF |
-| Gemma 3 4B | 4,0B | 128.000 tokens | Gemma Terms of Use | safetensors, GGUF |
-| Phi-4-mini-instruct | 3,8B | 128.000 tokens | MIT | safetensors, GGUF |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| rudra (este modelo) | 4,3 mil millones | no disponible | Apache 2.0 | GGUF, safetensors | Ajuste fino para agentes y function calling |
+| Qwen2.5-3B / Qwen3-4B (familia base) | ~3-4 mil millones | no disponible en esta ficha | Apache 2.0 (según variante) | safetensors, GGUF | Base generalista de la que deriva el ajuste |
+| Llama 3.2 3B | 3,2 mil millones | 128K (según model card oficial) | Llama 3.2 Community License | safetensors, GGUF | Generalista, requiere licencia específica para uso comercial |
+| Phi-3.5-mini | 3,8 mil millones | 128K (según model card oficial) | MIT | safetensors, GGUF | Generalista con foco en razonamiento |
 
-Nota: los datos de contexto y licencia de los modelos comparativos proceden de sus model cards públicas; los valores de rudra no están publicados en la información disponible.
+La comparación de rendimiento no está disponible: no se han publicado benchmarks de rudra que permitan situarlo frente a estas alternativas.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados en la model card.
-- Riesgo de alucinación: aunque el repositorio incluye el tag anti-hallucination, no se aportan métricas ni metodología de evaluación; un modelo de 4B sigue siendo propenso a inventar datos en dominios especializados.
-- Idioma: el campo language declara únicamente inglés. El rendimiento en castellano no está evaluado y probablemente sea inferior.
-- Contexto: se desconoce la longitud de contexto soportada, lo que impide planificar despliegues con documentos largos o conversaciones extensas sin pruebas previas.
-- Multimodalidad: los ficheros mmproj sugieren entrada de imágenes, pero la model card no la documenta; conviene verificar antes de depender de esa capacidad en producción.
-- Licencia: Apache 2.0 permite uso comercial y modificación, pero no se especifica si el modelo base arrastra términos adicionales de la familia Qwen; conviene revisar la licencia del modelo base antes de un despliegue comercial.
-- Cuantizaciones de muy baja precisión: Q2_K y Q3_K_S pueden degradar notablemente la calidad; el autor advierte que Q3_K_M es de "lower quality" y recomienda Q4_K_S/Q4_K_M como equilibrio.
-- Cuantizaciones ponderadas: el autor indica que no hay cuants con imatrix disponibles en el momento de la publicación, por lo que no se aplica la mejora de calidad habitual de ese método.
-- Trazabilidad limitada: el repositorio tiene 0 descargas y 0 likes, sin resultados de benchmarks ni validación externa; se recomienda evaluar con un conjunto propio antes de adoptarlo.
+- Idiomas: el modelo declara únicamente inglés; no hay evidencia de soporte para castellano u otros idiomas.
+- Contexto: se desconoce la longitud de contexto nativa, lo que impide garantizar conversaciones multi-turno largas o procesamiento de documentos extensos.
+- Alucinación: aunque la model card incluye la etiqueta anti-hallucination, no se aportan métricas ni metodología que respalden esa afirmación; debe validarse en el dominio de despliegue.
+- Datos de entrenamiento: no se documentan el volumen de tokens, la composición del dataset ni los procesos de alineación (RLHF/DPO), lo que dificulta evaluar sesgos y cobertura.
+- Benchmarks: la ausencia de resultados publicados impide comparar su calidad frente a alternativas del mismo tamaño.
+- Multimodalidad: la presencia de ficheros mmproj sugiere capacidades multimodales, pero no se especifica el tipo de entrada ni su calidad; debe verificarse antes de usarla en producción.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene revisar las condiciones del modelo base ritiksuman/rudra y de la base Qwen subyacente por si imponen restricciones adicionales.
+- Madurez: el repositorio tiene pocas descargas (1061) y ningún like en el momento de la consulta, lo que sugiere una adopción limitada y poca validación comunitaria.
+- Formato: la distribución es GGUF; para usar safetensors o integrar en transformers habría que acudir al modelo base ritiksuman/rudra.
 
 ## Enlaces
 
-- Repositorio Hugging Face de la cuantización: https://huggingface.co/mradermacher/rudra-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/rudra-GGUF
 - Modelo base: https://huggingface.co/ritiksuman/rudra
-- Página de descargas y resumen del cuantizador: https://hf.tst.eu/model#rudra-GGUF
-- Peticiones de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Colección de modelos de mradermacher: https://huggingface.co/mradermacher/models
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/rudra-i1-GGUF
+- Página de resumen de descargas del cuantizador: https://hf.tst.eu/model#rudra-GGUF
+- Preguntas frecuentes y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
 - Guía de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Gráfica comparativa de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre tipos de cuantización: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Empresa que financia al cuantizador: https://www.nethype.de/
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Gráfica comparativa de perplejidad por cuantización: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Empresa del cuantizador: https://www.nethype.de/

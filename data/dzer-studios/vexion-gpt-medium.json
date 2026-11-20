@@ -45,31 +45,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "KI-Modelle per API ausführen - Kinovi",
-      "url": "https://kinovi.ai/de",
-      "snippet": "Seedance 2.5 is now available on Kinovi. Experience improved motion, visual consistency, and prompt understanding—start creating your next AI video today."
-    },
-    {
-      "title": "2026 SEO Roadmap: 15 Experts on Technical, Content, and Brand ...",
-      "url": "https://www.takeitoffline.co.uk/blog/2026-seo-predictions",
-      "snippet": "Silvia Martin (Independent SEO Consultant, Trebole): AI enables experimentation and tool-building; traffic declines, so prioritize multi-platform visibility and ..."
-    },
-    {
-      "title": "Contents - arXiv",
-      "url": "https://arxiv.org/html/2207.09460v11",
-      "snippet": "... AI Studio for model tuning and deployment. Backed by enterprise-grade data ... model and GPT-4. Goat's success can be attributed to two primary factors ..."
-    },
-    {
-      "title": "Human-Computer Interaction – INTERACT 2023 - Springer Nature",
-      "url": "https://link.springer.com/content/pdf/10.1007/978-3-031-42283-6.pdf",
-      "snippet": "01.09.2023 ... An AI Chat-Based Solution Aimed to Screen Postpartum Depression . ... model each other's intentions [27]. For the robot to be able to do so ..."
-    },
-    {
-      "title": "Everything I know about ML and camera traps - GitHub Pages",
-      "url": "https://agentmorris.github.io/camera-trap-ml-survey/",
-      "snippet": "Evaluate the Conservation AI UK mammals model, find that “Initial … model ... medium/small/micro/blank), and an “expert” model is trained for each coarse ..."
-    }
-  ]
+  "sources": []
 }

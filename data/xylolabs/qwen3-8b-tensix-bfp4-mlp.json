@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Qwen3-8B-Tensix-BFP4-MLP",
   "created_at": "2026-11-13T07:52:22.000Z",
-  "updated_at": "2026-11-17T08:41:47.000Z",
+  "updated_at": "2026-11-19T08:26:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 71,
+  "downloads_30d": 72,
   "trending_score": 0,
   "parameters": 8190735360,
   "parameters_human": "8.19B",

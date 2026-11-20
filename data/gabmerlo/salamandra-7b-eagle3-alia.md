@@ -2,94 +2,107 @@
 
 ## Resumen
 
-Salamandra-7b-eagle3-alia es un modelo borrador (draft model) para decodificación especulativa basado en la técnica EAGLE-3, entrenado para acelerar la inferencia de BSC-LT/salamandra-7b-instruct-2606. Lo desarrolla gabmerlo y se publica bajo licencia Apache 2.0. No es un modelo generativo autónomo: su función es proponer tokens candidatos que el modelo objetivo Salamandra verifica, de modo que la salida final es idéntica a la de Salamandra sola, pero con menor latencia.
+Salamandra-7b-eagle3-alia es un modelo borrador (draft model) de decodificación especulativa basado en la arquitectura EAGLE-3, desarrollado por el usuario gabmerlo. No es un modelo de lenguaje autónomo: su función es acelerar la inferencia de BSC-LT/salamandra-7b-instruct-2606 prediciendo los siguientes tokens, que el modelo objetivo verifica en paralelo. El resultado es una salida idéntica a la de Salamandra ejecutado solo, pero con una velocidad entre 1,8x y 2,2x superior en es, ca, eu y gl.
 
-El checkpoint contiene 1.432.671.488 parámetros en pesos safetensors y ocupa 10,3 GB en el repositorio, en parte porque incluye una copia congelada de la tabla de embeddings de Salamandra (256k tokens). El vocabulario del borrador se limita a los 32.000 tokens más frecuentes en los datos de entrenamiento. Está entrenado específicamente para español, catalán, euskera y gallego, los cuatro idiomas cubiertos por Salamandra.
+El modelo tiene 1.432.671.488 parámetros y se entrenó sobre 19.010 conversaciones generadas por el propio Salamandra (on-policy) a partir de prompts de ALIA-2606-SFT, usando la librería vllm-project/speculators en modo online con vLLM 0.33.0. Emplea un vocabulario reducido de los 32.000 tokens más frecuentes del corpus de entrenamiento y arrastra una copia congelada de la tabla de embeddings de Salamandra (256k tokens), lo que explica el tamaño del repositorio (10,3 GB) pese a su reducido número de parámetros.
 
-Su relevancia es práctica: la decodificación especulativa es una de las vías más eficaces para reducir la latencia de generación autoregresiva sin alterar la distribución de salida. Este draft permite desplegar Salamandra en vLLM con propuestas de 3 tokens por paso, lo que puede traducirse en aceleraciones significativas en entornos de producción multilingües del ámbito ibérico.
+Su relevancia práctica es directa: permite duplicar aproximadamente el throughput de Salamandra en producción sobre una única GPU H100, manteniendo exactitud bit a bit en la salida. Está pensado específicamente para el ecosistema de lenguas ibéricas (castellano, catalán, euskera y gallego) y para despliegues con vLLM.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Draft model EAGLE-3 para decodificacion especulativa (transformer ligero con cabeza de propuesta de tokens) |
-| Parametros totales | 1.432.671.488 (incluye copia congelada de la tabla de embeddings de Salamandra, 256k tokens) |
+| Arquitectura | EAGLE-3 (draft model para decodificacion especulativa, con cabezas de prediccion sobre hidden states) |
+| Parametros totales | 1.432.671.488 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible (entrenado con secuencias de hasta 4000 tokens) |
-| Tipos de cuantizacion | no disponible |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; el modelo base soporta GPTQ en variantes de 2B mencionadas en el repo) |
 | Idiomas soportados | es, ca, eu, gl |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (custom_code) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un draft EAGLE-3, una arquitectura de decodificación especulativa en la que un modelo pequeño predice varios tokens futuros a partir de los estados ocultos del modelo objetivo. EAGLE-3 propone múltiples tokens por paso de decodificación; en este caso, 3 tokens por paso. El checkpoint incorpora una copia congelada de la tabla de embeddings de Salamandra (256k tokens), lo que explica buena parte del tamaño del archivo (2,9 GB según la model card, 10,3 GB de repositorio). Esa parte congelada no penaliza la latencia.
+El modelo implementa un borrador EAGLE-3, una variante de decodificación especulativa que predice varios tokens futuros a partir de los estados ocultos del modelo objetivo. El borrador genera candidatos que Salamandra verifica en una sola pasada, aceptando los tokens correctos y descartando el resto. La salida final es idéntica a la del modelo objetivo; la ganancia es puramente de velocidad. El borrador usa un vocabulario restringido a los 32.000 tokens más frecuentes del corpus de entrenamiento y conserva una copia congelada de la tabla de embeddings de Salamandra (256k tokens), lo que no afecta al rendimiento pero eleva el tamaño del artefacto a 2,9 GB.
 
-El entrenamiento se realizó con vllm-project/speculators (versión 0.10.0a58) en modo online: vLLM 0.33.0 servía Salamandra y proporcionaba los estados ocultos mientras el draft entrenaba, ambos en una misma H100 80GB. Los datos provienen del dataset gabmerlo/salamandra-7b-instruct-2606-onpolicy-alia, aproximadamente 19k conversaciones generadas por el propio Salamandra (on-policy) a partir de prompts de ALIA-2606-SFT (CC BY 4.0). Se entrenó durante 3 épocas con secuencias de hasta 4000 tokens y un vocabulario draft de los 32.000 tokens más frecuentes; cada época duró unos 23 minutos. No se documenta uso de RLHF o DPO.
+El entrenamiento se realizó con vllm-project/speculators 0.10.0a58 en modo online: vLLM 0.33.0 servía Salamandra y proporcionaba los hidden states mientras el borrador entrenaba, todo en una misma H100 de 80 GB. Los datos son 19.010 conversaciones on-policy (respuestas generadas por el propio Salamandra) derivadas de ALIA-2606-SFT, con 3 épocas, secuencias de hasta 4.000 tokens y aproximadamente 23 minutos por época. No se menciona uso de RLHF ni DPO; el entrenamiento es supervisado sobre las respuestas del modelo objetivo.
 
 ## Capacidades
 
-- Aceleración de inferencia de Salamandra-7b-instruct-2606 mediante decodificación especulativa con 3 tokens propuestos por paso.
-- Preservación exacta de la distribución de salida de Salamandra: la verificación garantiza que el texto final coincide con el del modelo objetivo.
-- Cobertura multilingüe para español, catalán, euskera y gallego, alineada con los idiomas de Salamandra.
-- Integración nativa con vLLM: el checkpoint declara el modelo objetivo, por lo que `vllm serve gabmerlo/salamandra-7b-eagle3-alia` funciona directamente.
-- No realiza tool calling, agentes, visión ni audio por sí mismo; esas capacidades dependen del modelo objetivo Salamandra.
-- No dispone de modo thinking ni de razonamiento autónomo; su única función es proponer tokens.
+- Aceleración de inferencia mediante decodificación especulativa EAGLE-3 sobre salamandra-7b-instruct-2606.
+- Predicción de hasta 3 tokens especulativos por paso (`num_speculative_tokens: 3`).
+- Entrenado específicamente para castellano, catalán, euskera y gallego.
+- Compatible con servidores OpenAI-compatible de vLLM (endpoint `/v1/chat/completions`).
+- Salida idéntica a la de Salamandra solo: no altera el contenido generado.
+- Métricas de aceptación observables en los logs de vLLM (acceptance rate / mean acceptance length).
+- No es un modelo generativo autónomo: no debe usarse sin el modelo objetivo.
 
 ## Casos de uso
 
-- Servicio de generación de texto multilingüe en producción: desplegar Salamandra con este draft en vLLM para atender peticiones en español, catalán, euskera y gallego con menor latencia por token, manteniendo exactamente la misma calidad de salida.
-- Atención al cliente automatizada: reducir el tiempo de respuesta en conversaciones multi-turno donde la latencia perceptible es crítica, usando el draft para acelerar la generación del modelo objetivo sin cambiar el contenido.
-- Generación de resúmenes y documentos en catalán y euskera: útil en administraciones públicas y medios que necesitan procesar grandes volúmenes de texto en lenguas cooficiales con latencia contenida.
-- Traducción asistida y postedición: acelerar la generación de borradores traducidos entre español y las lenguas cooficiales, donde Salamandra ya está especializado.
-- Investigación en decodificación especulativa: servir como referencia reproducible de un draft EAGLE-3 entrenado on-policy para experimentos de latencia y aceptación de tokens en modelos multilingües.
-- Despliegue en entornos con GPU limitadas: al ser un draft de 1,4 mil millones de parámetros, puede acompañar a Salamandra en configuraciones donde el margen de VRAM es ajustado y la latencia importa más que el throughput bruto.
-- Evaluación comparativa de técnicas de aceleración: comparar EAGLE-3 frente a otras propuestas (Medusa, decodificación especulativa clásica) sobre un modelo objetivo ibérico con métricas de aceptación de tokens.
+- Despliegue de Salamandra en producción con el doble de throughput: sirviendo el borrador con `vllm serve gabmerlo/salamandra-7b-eagle3-alia`, vLLM descarga ambos modelos y aplica decodificación especulativa automáticamente, pasando de ~170 a ~344 tokens/s en una H100.
+- Atención al cliente en castellano y catalán: el borrador acelera respuestas multi-turno de Salamandra sin cambiar su contenido, lo que reduce la latencia percibida en chats de soporte con temperatura 0.
+- Generación de contenido en euskera y gallego: con speedups medidos de 2,01x y 2,03x respectivamente, resulta adecuado para pipelines de redacción o resumen en estas lenguas de bajos recursos.
+- Servicios de traducción o paráfrasis asistida: al mantener la salida idéntica a Salamandra, se puede integrar en flujos donde la fidelidad del texto es crítica y solo se busca reducir coste computacional.
+- Procesamiento por lotes de documentos: con 8 peticiones en paralelo se mantienen speedups de 1,81x a 2,19x, útil para tareas de extracción o clasificación a gran escala sobre corpus en lenguas ibéricas.
+- Evaluación comparativa de estrategias de decodificación especulativa: el repositorio del autor incluye notebooks y comparativas frente a borradores GPTQ de 2B, lo que lo convierte en un banco de pruebas para investigar acceptance length y throughput.
+- Reducción de costes en infraestructura GPU: al caber objetivo y borrador en una sola GPU de 40 GB o más, permite consolidar despliegues que de otro modo requerirían más hardware.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Los únicos datos de rendimiento reportados por el autor son las tasas de aceptación del draft en su split de validación tras la última época:
+Resultados reportados por el autor en su split de validación tras la última época y en 20 prompts de test por idioma no vistos en entrenamiento (H100, vLLM 0.33.0, temperatura 0, hasta 512 tokens nuevos):
 
-| Metrica | Resultado |
+| Metrica | Valor |
 |---|---|
-| Acierto del 1.er token propuesto | 66% |
+| Acierto del 1er token | 66% |
 | Acierto de los 2 primeros tokens | 44% |
-| Acierto de los 3 tokens propuestos | 30% |
-| Aceleracion (speedup) en prompts de test | no disponible (anunciado como "coming soon") |
+| Acierto de los 3 tokens | 30% |
+| Acceptance length (tokens/paso) | 2,36 – 2,60 |
+| Speedup 1 peticion, es | 1,92x |
+| Speedup 1 peticion, ca | 2,13x |
+| Speedup 1 peticion, eu | 2,01x |
+| Speedup 1 peticion, gl | 2,03x |
+| Speedup 8 peticiones, es | 1,81x |
+| Speedup 8 peticiones, ca | 1,99x |
+| Speedup 8 peticiones, eu | 2,19x |
+| Speedup 8 peticiones, gl | 2,13x |
+| Throughput absoluto (1 peticion) | ~170 a ~344 tokens/s |
+
+Las 80 respuestas de test fueron idénticas a las de Salamandra ejecutado solo. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible, ya que el modelo no genera texto de forma autónoma.
 
 ## Requisitos de hardware
 
-- El entrenamiento se realizó en una única NVIDIA H100 80GB, sirviendo simultáneamente Salamandra y entrenando el draft.
-- VRAM para inferencia del draft: no disponible de forma explícita; el checkpoint pesa 2,9 GB en pesos (10,3 GB de repositorio), por lo que el draft en precisión completa requiere al menos unos 3 GB adicionales sobre la VRAM del modelo objetivo.
-- La VRAM total depende de Salamandra-7b-instruct-2606, que debe residir junto al draft; se recomienda una GPU con margen suficiente para ambos (A100 40/80GB, H100, L40S).
-- Despliegue previsto vía vLLM (`vllm serve gabmerlo/salamandra-7b-eagle3-alia`); no se documenta soporte para llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponibles; el autor indica que publicará el speedup sobre los prompts de test (50 por idioma) próximamente.
+- VRAM estimada: objetivo (7B) y borrador (1,4B) caben juntos en una GPU de 40 GB o más según el autor; el borrador ocupa 2,9 GB en disco.
+- GPU probada: 1x H100 80 GB con vLLM 0.33.0.
+- GPU recomendadas: H100, A100 40/80 GB; en consumer, una RTX 4090 (24 GB) podría no bastar para objetivo y borrador juntos en precisión nativa, aunque el modelo base dispone de variantes GPTQ de 2B mencionadas en el repositorio del autor.
+- Despliegue: vLLM (versión 0.33.0 probada), con `--speculative-config` o sirviendo el borrador directamente. No se mencionan soportes para llama.cpp, Ollama o TGI.
+- Latencia y throughput: ~344 tokens/s con 1 petición en H100 (frente a ~170 sin borrador); el speedup se reduce a alta concurrencia porque la GPU ya está ocupada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parametros | Contexto | Idiomas | Licencia | Estado |
-|---|---|---|---|---|---|---|
-| gabmerlo/salamandra-7b-eagle3-alia | Draft EAGLE-3 | 1,43B (incluye embeddings congelados) | no disponible | es, ca, eu, gl | Apache 2.0 | Publicado |
-| BSC-LT/salamandra-7b-instruct-2606 | Modelo objetivo | 7B (aprox.) | no disponible | es, ca, eu, gl | no disponible | Modelo base |
-| Otros drafts EAGLE-3 para Salamandra | Draft EAGLE-3 | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| gabmerlo/salamandra-7b-eagle3-alia | 1,43B | no disponible | EAGLE-3 draft para Salamandra 7B | Apache 2.0 | Hugging Face |
+| Borradores GPTQ de 2B (mencionados por el autor) | ~2B | no disponible | Draft alternativo comparado en el repo | no disponible | Repositorio del autor |
+| BSC-LT/salamandra-7b-instruct-2606 (modelo objetivo) | 7B | no disponible | LLM completo para lenguas ibericas | Apache 2.0 | Hugging Face |
 
-No se dispone de información sobre drafts alternativos comparables para Salamandra ni sobre métricas de speedup publicadas que permitan una comparación cuantitativa.
+No se dispone de datos de rendimiento de los borradores GPTQ de 2B en la información proporcionada; el autor remite a su repositorio de GitHub para la comparación.
 
 ## Limitaciones y advertencias
 
-- No es un modelo generativo autónomo: solo funciona acoplado a BSC-LT/salamandra-7b-instruct-2606; no produce texto por sí mismo.
-- Vocabulario draft restringido a los 32.000 tokens más frecuentes de los datos de entrenamiento; tokens fuera de ese conjunto no pueden proponerse y recaen siempre en el modelo objetivo, reduciendo la aceleración en dominios con vocabulario especializado.
-- Entrenado exclusivamente con datos on-policy de Salamandra en español, catalán, euskera y gallego; el rendimiento de aceptación fuera de esos idiomas o dominios no está documentado.
-- Las tasas de aceptación reportadas (66%/44%/30%) proceden de un split de validación propio del autor y no de un benchmark independiente; el speedup real no se ha publicado todavía.
-- El repositorio ocupa 10,3 GB por la copia congelada de embeddings de 256k tokens, lo que aumenta los requisitos de almacenamiento y transferencia.
-- Licencia Apache 2.0 permite uso comercial, pero los datos de entrenamiento provienen de ALIA-2606-SFT (CC BY 4.0); conviene verificar las condiciones de atribución de esa fuente.
-- Riesgo de alucinación y sesgos: heredados del modelo objetivo Salamandra, no del draft, que no altera la distribución de salida.
-- No se documentan cuantizaciones soportadas ni compatibilidad con runtimes distintos de vLLM.
+- Solo acelera; no genera texto por sí mismo. Requiere servir salamandra-7b-instruct-2606 como modelo objetivo.
+- Entrenado únicamente en es, ca, eu y gl: en inglés u otros idiomas la acceptance length cae cerca de 1 y el speedup desaparece.
+- El speedup se reduce a alta concurrencia, cuando la GPU ya está saturada.
+- Riesgo de alucinación: heredado del modelo objetivo, no del borrador; la decodificación especulativa no altera el contenido generado.
+- Sesgos: no documentados en la información disponible; al entrenarse sobre respuestas de Salamandra, puede reproducir los sesgos de este.
+- El repositorio pesa 10,3 GB por la copia congelada de la tabla de embeddings de 256k tokens, lo que encarece el almacenamiento y la descarga.
+- Dependencia de versión: probado solo con vLLM 0.33.0 y speculators 0.10.0a58; otras versiones pueden no ser compatibles.
+- Licencia Apache 2.0 permite uso comercial, pero los datos de entrenamiento (CC BY 4.0, derivados de ALIA-2606-SFT) deben verificarse para cumplir sus condiciones de atribución.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/gabmerlo/salamandra-7b-eagle3-alia
 - Modelo base: https://huggingface.co/BSC-LT/salamandra-7b-instruct-2606
 - Dataset de entrenamiento: https://huggingface.co/datasets/gabmerlo/salamandra-7b-instruct-2606-onpolicy-alia
+- Repositorio con gráficas, notebooks y comparativas: https://github.com/gabmerlo/salamandra-eagle3
 - Librería de entrenamiento: https://github.com/vllm-project/speculators
 - vLLM: https://github.com/vllm-project/vllm

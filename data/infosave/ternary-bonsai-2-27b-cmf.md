@@ -2,114 +2,105 @@
 
 ## Resumen
 
-Ternary Bonsai 2 27B — CMF Q2TP affine Prism es una conversión al formato CMF del paquete MLX `prism-ml/Ternary-Bonsai-2-27B-mlx-2bit`, publicada por el usuario `infosave`. No se trata de un modelo entrenado desde cero, sino de un artefacto de cuantización: un único fichero de 8.247.698.536 bytes (unos 8,25 GB) con el peso `Ternary-Bonsai-2-27B-Q2TP-Affine.cmf`, pensado para ejecutarse con el runtime `cortiq` sobre Vulkan. El objetivo declarado es reproducir en hardware de consumo la calidad del modelo ternario de 27B de Prism ML mediante almacenamiento Q2TP de tipo dtype16, el operador obligatorio `q2tp_affine` y transformadas de Hadamard normalizadas con signo.
+Ternary-Bonsai-2-27B-cmf es una conversión al formato CMF (Cortiq Model Format) del modelo Ternary Bonsai 2 27B, un transformer de 27.000 millones de parámetros cuantizado en ternario (2 bits) por Prism ML. La conversión la firma el usuario infosave y está pensada para ejecutarse con el runtime Cortiq 0.6.9 o superior, un motor de inferencia escrito en Rust con backends CUDA, Vulkan y Metal nativo. El modelo base es `prism-ml/Ternary-Bonsai-2-27B-mlx-2bit`, un pack MLX de 2 bits.
 
-La relevancia del proyecto es de ingeniería más que de modelado: demuestra que una cuantización ternaria de aproximadamente 2 bits puede mantener la fidelidad respecto a la referencia CUDA oficial de Prism dentro de una tolerancia de 0,00027 nats por token en un corpus congelado mixto de inglés, ruso y código. El autor insiste en que la comprobación es una verificación de correspondencia numérica, no un benchmark universal, y que el perfil requiere kernels específicos: un binario estándar de `cortiq` 0.6.8 no implementa el perfil y debe rechazar el modelo en lugar de decodificarlo silenciosamente como Q2TP ordinario.
+El problema que resuelve es el despliegue de un modelo de 27B en hardware de consumo: gracias a la cuantización ternaria y al empaquetado Q2TP, el artefacto completo ocupa 8,25 GB (7,68 GiB), lo que permite cargarlo en GPUs de 24 GB como la RTX 4090 o la RTX A5000, e incluso en un Apple M4 de 24 GiB. La ficha del autor reporta 33,8-33,9 tok/s en decodificación sobre una RTX A5000 vía CUDA y unos 42 tok/s sobre una RTX 4090 vía Vulkan.
 
-El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, se distribuye bajo licencia Apache 2.0 para el modelo y está etiquetado para texto en inglés y ruso. La model card advierte explícitamente de que se trata de un release solo de generación de texto: los tensores de visión se conservan por trazabilidad, pero la fusión imagen/texto no está implementada ni probada, por lo que no debe considerarse un VLM.
+Es relevante ahora porque demuestra que un modelo de 27B puede correr íntegramente en tarjetas de consumo con velocidades usables, a costa de una pérdida de calidad que el propio autor documenta con métricas de NLL. La licencia Apache 2.0 y el soporte multilingüe inglés/ruso lo hacen atractivo para prototipado y despliegue local.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No detallada en la informacion disponible; los registros del contenedor incluyen componentes GDN, normalizacion, tokenizer y tensores de vision heredados del modelo base MLX |
-| Parametros totales | 27B segun la denominacion comercial del modelo; cifra exacta no disponible |
-| Parametros activos | No disponible (no se indica que sea un modelo MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Ternaria Q2TP affine (almacenamiento CMF dtype16 con operador obligatorio `q2tp_affine` y transformadas de Hadamard normalizadas con signo). Las capas auxiliares, GDN, normalizacion, tokenizer y vision conservan su precision declarada original |
+| Arquitectura | Transformer (detalles no disponibles); cuantización ternaria Q2TP con operadores affine y Hadamard con signo |
+| Parametros totales | 27B (según nombre del modelo) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Ternaria de 2 bits (Q2TP, Q2TP-affine); 402 matrices grandes empaquetadas |
 | Idiomas soportados | en, ru |
-| Licencia | apache-2.0 (modelo). El runtime CMF tiene atribucion y licencia separadas; se debe conservar el bundle completo de `licenses/` |
-| Formato de pesos | CMF (`Ternary-Bonsai-2-27B-Q2TP-Affine.cmf`, 8.247.698.536 bytes, SHA-256 `fb0f1a9cdb0434bc9ce50eb6473bc2ca4a71d6994ad61314bbd7e2f11c4e29e8`); origen MLX en safetensors de 8.595.477.990 bytes |
+| Licencia | Apache 2.0 |
+| Formato de pesos | CMF (Cortiq Model Format), fichero único `Ternary-Bonsai-2-27B-Q2TP-Affine.cmf` de 8.247.698.536 bytes |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion sobre el proceso de entrenamiento en los materiales proporcionados: no se indica numero de tokens, composicion del dataset ni si hubo RLHF, DPO u otra fase de alineamiento. Lo que si se documenta es la naturaleza del artefacto publicado. Se trata de una conversion de pesos, no de un entrenamiento: el origen es el `model.safetensors` de `prism-ml/Ternary-Bonsai-2-27B-mlx-2bit` en la revision `3f926b415992eaa2ae9dd7b573706494d6bbf787`, con SHA-256 `130de5925082c168b7866b2e91b52e44abbafc99017e3ca352b77b5b55a269ed`.
+La información disponible no detalla la arquitectura interna del modelo base más allá de que se trata de un transformer de 27B. Lo que sí está documentado es el proceso de cuantización: las 402 matrices grandes del modelo se almacenan con el dtype16 Q2TP del formato CMF, con operadores affine y Hadamard con signo explícitos. El operador affine preserva los signos y ceros ternarios, mientras que la escala ajustada del CMF introduce una pequeña aproximación. El autor advierte explícitamente de que no se trata de una conversión Q4TP, ni de un nuevo dtype Q2TP-T, ni de pesos idénticos byte a byte a los del modelo original.
 
-La innovacion tecnica reside en el empaquetado y en el runtime. El fichero no es un volcado uniforme de dos bits: los registros auxiliares, GDN, de normalizacion, del tokenizer y de vision mantienen su precision y su rol declarados. La decodificacion exige el operador `q2tp_affine` y transformadas de Hadamard normalizadas con signo, descritas como parte del contrato del modelo. Un lector antiguo debe rechazar esas caracteristicas en lugar de interpretarlas como Q2TP ordinario. El oraculo experimental dtype17/`q2tp_t` no forma parte de este release. La receta de ejecucion requiere compilar un runtime a partir de la base publica fijada mas un parche minimo (SHA-256 `e6cd6a60149a8be764a323ab1f968668b524b36ec35bc1a193fcfb5218f669be`), sobre Rust estable 1.98.1 y Vulkan.
+Los tensores auxiliares y de normalización conservan sus precisiones declaradas. El runtime Cortiq 0.6.9 incorpora inferencia Vulkan residente y kernels Metal nativos para Q2, con una optimización ternaria en Metal que opera directamente sobre los pesos empaquetados de dos bits. No se dispone de información sobre el dataset de entrenamiento, el número de tokens, ni si hubo RLHF o DPO en el modelo base.
 
 ## Capacidades
 
-- Generacion de texto en ingles y ruso, incluidas explicaciones bilingues segun las comprobaciones deterministas publicadas.
-- Salida estructurada: la verificacion del autor produce exactamente `{"city":"Казань","count":3}` ante una instruccion de JSON estricto, con decodificacion greedy y semilla fija.
-- Aritmetica basica: se reporta una comprobacion determinista con resultado `888`.
-- Seguimiento de contexto factual: se reporta una comprobacion con respuesta `5` sobre un contexto dado.
-- Generacion de codigo a nivel de forma: se menciona una comprobacion de estructura de funcion Python, sin garantia de correccion funcional.
-- Modo sin pensamiento (`--no-think`) validado de forma determinista; no se reclama calidad alguna para el modo de razonamiento extendido.
-- Ejecucion en GPU via Vulkan/wgpu y verificacion en CPU; soporte de comprobacion de integridad del fichero con `cortiq verify`.
-- No implementa tool calling ni function calling, ni capacidades de agente, ni fusion imagen/texto. La model card no reclama ninguna de ellas.
+- Generación de texto en inglés y ruso.
+- Modo "thinking" controlable mediante el flag `--no-think`; el modelo soporta razonamiento explícito opcional.
+- Salida estructurada: los ejemplos de la model card generan objetos JSON directamente.
+- Inferencia con decodificación greedy y semilla fija para reproducibilidad.
+- Ejecución íntegra en GPU con backends CUDA, Vulkan y Metal nativo.
+- No soporta fusión imagen/texto según la model card ("image/text fusion is not supported by this profile").
+- No se documenta soporte de tool calling, function calling ni agentes multi-paso.
 
 ## Casos de uso
 
-- Despliegue local en GPU de consumo: el fichero ocupa 8,25 GB y se ha validado en una RTX 4090 de 24 GB con backend Vulkan, lo que permite ejecutar un modelo de 27B ternario en una sola tarjeta sin depender de CUDA ni de memoria HBM.
-- Generacion de JSON estricto en pipelines de datos: la verificacion reproducida con instrucciones de salida JSON y `--greedy` lo hace util para extraccion de campos con formato fijo en entornos donde la salida debe ser parseable sin postprocesado.
-- Asistencia bilingue ingles-ruso: al estar etiquetado para ambos idiomas y validado con prompts que mezclan ruso y JSON, encaja en tareas de traduccion, resumen o normalizacion de texto entre esos dos idiomas.
-- Validacion de pipelines de cuantizacion: sirve como caso de prueba de extremo a extremo para verificar que un runtime CMF implementa correctamente el operador `q2tp_affine` y las transformadas de Hadamard, comparando NLL y PPL contra la referencia CUDA de Prism.
-- Inferencia en entornos aislados o sin conectividad: el modelo no requiere token de Hugging Face y el runtime se compila desde fuente fijada, lo que facilita despliegues on-premise con cadena de suministro controlada.
-- Investigacion sobre representaciones ternarias: el par de sistemas documentado (Q2TP ordinario frente a Q2TP affine) ofrece un punto de comparacion reproducible para estudiar el impacto del operador affine en la fidelidad de una cuantizacion de 2 bits.
-- Verificacion de integridad en produccion: el flujo recomendado incluye `sha256sum` sobre el fichero descargado y `cortiq verify`, util como paso previo en canalizaciones automatizadas de artefactos de modelo.
+- Despliegue local en estaciones de trabajo con GPU de 24 GB: el fichero de 8,25 GB cabe en una RTX 4090 o RTX A5000, permitiendo servir un modelo de 27B sin infraestructura cloud.
+- Generación de JSON estructurado en pipelines: el modelo responde a instrucciones del tipo "devuelve solo un objeto JSON con city igual a Kazán y count igual a 3", útil para extracción de datos y validación de esquemas.
+- Procesamiento de documentos en ruso e inglés: el soporte bilingüe permite tareas de resumen, traducción y extracción sobre corpus mixtos sin cambiar de modelo.
+- Prototipado en Apple Silicon: con Metal nativo sobre un M4 de 24 GiB se obtienen 7,5-8,7 tok/s, suficiente para demos interactivas y pruebas de concepto en portátiles.
+- Evaluación de cuantización ternaria: el modelo sirve como banco de pruebas para medir la degradación de calidad (NLL) frente a la referencia CUDA oficial en corpus congelados.
+- Generación de código asistida en local: el corpus de validación del autor incluye código, y el modelo puede integrarse en editores o CLI sin enviar datos a terceros.
+- Inferencia por lotes de bajo coste: con 33,8 tok/s en A5000 vía CUDA, es viable procesar colas de generación moderadas en hardware propio.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos publicados corresponden a una comprobacion de correspondencia sobre un corpus congelado mixto de ingles, ruso y codigo (SHA-256 `181716ce3f0a71b94f7d5d4428232c241b88f3e26d68f4ed50a191506ddb78b5`), tokenizado en 1.122 IDs, con dos reinicios independientes de 512 entradas y puntuacion sobre los objetivos 1..1024. No hay resultados de MMLU, HumanEval, GSM8K ni de ninguna otra bateria estandar.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El autor sí publica métricas de ingeniería de throughput y de calidad:
 
-| Sistema | NLL media | PPL | Resultado |
-|---|---:|---:|---|
-| Referencia oficial Prism PQ2 CUDA | 1,81274952826 | 6,12727139849 | top-1 603/1024 |
-| CMF affine CPU | 1,812992284 | 6,128759009 | +0,000242756 nats/token |
-| CMF affine Vulkan | 1,813015751 | 6,128902833 | +0,000266223; supera la puerta principal |
-| Comparacion CMF Q2TP ordinario | 1,886951899 | 6,599222896 | +0,074202371; fuera de la puerta de +0,05 |
+| Backend / hardware | Decodificación en caliente | Notas |
+|---|---:|---|
+| CMF Vulkan residente, RTX 4090 24 GB | ~42 tok/s | Implementación CMF aceptada |
+| Referencia CUDA oficial de Prism, misma RTX 4090 | ~87 tok/s | CMF no alcanza la paridad con CUDA |
+| CMF Metal nativo, Apple M4 10 núcleos GPU / 24 GiB | 7,50-8,74 tok/s (media 7,94) | Tres muestras en caliente |
+| CMF Metal anterior, mismo host | ~5,23 tok/s | Baseline histórico no emparejado |
+| CMF CUDA, RTX A5000 24 GB | 33,8-33,9 tok/s | Lectura de prompt de 4096 tokens a 777 tok/s, primer token 5,3 s |
+| CMF Vulkan, RTX A5000 24 GB | 25,8 tok/s | Lectura de prompt a 122 tok/s, primer token 33,7 s |
 
-Medicion en hardware, sobre la fuente runtime4 aceptada y una RTX 4090 de 24 GB:
-
-| Metrica | Valor |
-|---|---|
-| Prefill | 8,5 tok/s |
-| TTFT | 6,88 s |
-| Decodificacion en caliente | 5,2 tok/s |
-
-El autor advierte de que la cifra de 5,2 tok/s corresponde a la medicion de runtime4 y no es una afirmacion de velocidad del port limpio, y que no es comparable con los 90,4 tok/s de la referencia CUDA de Prism. El runtime usa una ruta Prism conservadora por operacion y cesion de recurrencia/estado a CPU.
-
-No se han publicado resultados de benchmarks estandar en la informacion disponible.
+La prueba de throughput emparejada usó 1.122 IDs de prompt idénticos y 128 tokens de salida greedy, con un modelo residente, una ejecución en frío y tres en caliente. En calidad, sobre un corpus congelado mixto inglés/ruso/código de 1.122 token IDs y 1.024 objetivos de next-token, la ruta oficial Prism PQ2 CUDA obtiene una NLL media de 1,81; el dato correspondiente a la ruta CMF queda truncado en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el fichero de pesos ocupa 8,25 GB; con estados de recurrencia y buffers de ejecucion cabe holgadamente en una GPU de 24 GB segun la validacion en RTX 4090.
-- GPU validadas: NVIDIA RTX 4090 de 24 GB con Vulkan y `wgpu`. No se documentan pruebas en A100, H100 ni otras GPUs.
-- GPU de consumo: si, cabe en una RTX 4090. No hay datos para tarjetas de 8, 12 o 16 GB; dado el tamano del fichero, 12 GB seria el minimo teorico ajustado y no esta verificado.
-- Ejecucion en CPU: contemplada de forma explicita, con el flujo de comparacion "CMF affine CPU" y la recomendacion de omitir las variables de GPU solo para comprobaciones intencionadas en CPU.
-- Despliegue: runtime `cortiq` compilado desde fuente (Rust/Cargo estable 1.98.1, `libvulkan1` y `vulkan-tools` en Linux). No se menciona soporte de vLLM, llama.cpp, Ollama ni TGI; el perfil `q2tp_affine` es especifico de `cortiq` y un binario publico 0.6.8 no lo implementa.
-- Variables de entorno validadas: `XDG_RUNTIME_DIR=/tmp`, `WGPU_BACKEND=vulkan`, `CMF_GPU=wgpu`, `CMF_Q2TP_GPU=1`, `CMF_GPU_PROBE=0`, `CMF_MTP=0`.
-- Latencia y throughput: 8,5 tok/s de prefill, 6,88 s de TTFT y 5,2 tok/s de decodificacion en caliente en RTX 4090, con la salvedad metodologica indicada en la model card.
+- Tamaño del artefacto: 8,25 GB (7,68 GiB); el autor advierte de que no equivale al pico de VRAM/RAM, ya que activaciones, scratch de prefill y estado KV/recurrente requieren memoria adicional.
+- GPU validadas: NVIDIA RTX A5000 24 GB (CUDA y Vulkan), NVIDIA RTX 4090 24 GB (Vulkan), Apple M4 de 10 núcleos GPU con 24 GiB (Metal nativo).
+- Cabe en GPUs de consumo de 24 GB; no se documenta funcionamiento en tarjetas de 8, 12 o 16 GB.
+- Despliegue mediante Cortiq CLI 0.6.9 o superior: `cargo install cortiq-cli --version 0.6.9 --locked --features gpu`; para CUDA se requiere Cortiq 0.8.96 o superior con `--features cuda` y CUDA 12.x.
+- Linux necesita driver Vulkan funcional (verificar con `vulkaninfo --summary`); macOS requiere build para Apple Silicon.
+- Variables de entorno relevantes: `CMF_GPU`, `CMF_Q2TP_GPU`, `CMF_GPU_PROBE`, `CMF_GPU_WGPU_GRAPH`, `CMF_MTP`, `CMF_METAL_PREFILL_CHUNK`.
+- Throughput medido: 33,8-33,9 tok/s en A5000 CUDA, ~42 tok/s en 4090 Vulkan, 7,5-8,7 tok/s en M4 Metal.
+- No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI; el formato CMF es específico de Cortiq.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Runtime |
 |---|---|---|---|---|---|
-| `infosave/Ternary-Bonsai-2-27B-cmf` | 27B (denominacion) | no disponible | CMF Q2TP affine, 8,25 GB | apache-2.0 | Publico en Hugging Face; runtime compilado desde fuente |
-| `prism-ml/Ternary-Bonsai-2-27B-mlx-2bit` | 27B (denominacion) | no disponible | MLX safetensors, 8,60 GB | no disponible en la informacion proporcionada | Publico en Hugging Face; revision fijada por el conversor |
-| Referencia Prism PQ2 CUDA | 27B (denominacion) | no disponible | no disponible | no disponible | Referencia de calidad citada; no se enlaza repositorio |
-| Q2TP CMF ordinario (comparacion interna) | 27B (denominacion) | no disponible | CMF Q2TP sin affine | no disponible | Solo como comparacion experimental en la model card |
+| Ternary-Bonsai-2-27B-cmf | 27B | no disponible | Ternaria 2 bits (Q2TP) | Apache 2.0 | Cortiq (CUDA/Vulkan/Metal) |
+| prism-ml/Ternary-Bonsai-2-27B-mlx-2bit | 27B | no disponible | 2 bits MLX | no disponible en la informacion | MLX |
+| Referencia CUDA oficial de Prism (mismo modelo base) | 27B | no disponible | PQ2 | no disponible en la informacion | CUDA propietario de Prism |
 
-La model card indica ademas que el aviso legal del upstream identifica "Qwen3.8-27B" como base con licencia Apache, dato que aparece truncado en el texto disponible y que conviene verificar en el `NOTICE.txt` original.
+La comparación relevante es contra el propio modelo base y su implementación de referencia: la versión CMF ofrece portabilidad a Vulkan y Metal a cambio de menor throughput (42 frente a 87 tok/s en RTX 4090) y una pequeña aproximación de escala en los pesos. No se dispone de datos de otros modelos de 27B cuantizados en ternario para comparar en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ambito restringido a generacion de texto: los tensores de vision se conservan solo por trazabilidad y la fusion imagen/texto no esta implementada ni probada. No es un release VLM.
-- Requiere un runtime no estandar: el binario publico de `cortiq` 0.6.8 no implementa `q2tp_affine` ni las transformadas de Hadamard exigidas. Es necesario compilar desde la fuente fijada mas el parche indicado.
-- Riesgo de decodificacion silenciosa incorrecta: el autor exige que los lectores antiguos rechacen las caracteristicas affine/Hadamard en lugar de interpretarlas como Q2TP ordinario, lo que implica un riesgo real de resultados invalidos si se usa una herramienta no compatible.
-- Ausencia de benchmarks estandar: no hay datos de MMLU, HumanEval, GSM8K ni evaluaciones de contexto largo, entrenamiento o modo de pensamiento. La unica evidencia es una comprobacion de correspondencia y varias pruebas deterministas.
-- Cobertura idiomatica limitada: solo ingles y ruso. No hay soporte declarado de castellano ni de otros idiomas.
-- Longitud de contexto desconocida: no se publica la ventana soportada, lo que impide planificar cargas con entradas largas.
-- Fecha de creacion inusualmente futura en los metadatos (2026-09-19) y ausencia total de adopcion (0 descargas, 0 likes), lo que reduce la validacion externa disponible.
-- Atribucion multiple: el modelo y el runtime tienen licencias separadas. Es obligatorio conservar `licenses/` completo, incluidos el `LICENSE` y `NOTICE.txt` del upstream, el aviso MIT del runtime MLX y `LICENSE`, `NOTICE` y `PATENTS.md` de CMF.
-- Riesgo de alucinacion no cuantificado: no se publican tasas de error factual ni evaluaciones de sesgo. Las comprobaciones deterministas citadas no permiten extrapolar comportamiento en produccion.
-- El aviso del upstream que identifica la base como Qwen3.8-27B aparece truncado; conviene revisar los terminos completos antes de un uso comercial.
+- La cuantización ternaria introduce aproximación de escala; el autor niega explícitamente la identidad byte a byte con los pesos upstream.
+- Solo se validaron los backends CUDA (A5000), Vulkan (4090) y Metal (M4); otros hardware no están garantizados.
+- El runtime 0.6.8 no soporta este perfil de modelo; se requiere 0.6.9 o superior, y CUDA exige 0.8.96 o superior.
+- El rendimiento medido son mediciones de ingeniería de implementaciones de desarrollo, no garantías universales de hardware.
+- En Apple M4 no se alcanzaron los 20 tok/s; el tiempo de prefill y el time-to-first-token son costes separados que afectan a conversaciones largas.
+- El tamaño del fichero no es el pico de memoria: activaciones, scratch de prefill y estado KV/recurrente añaden consumo.
+- No soporta fusión imagen/texto en este perfil.
+- Idiomas limitados a inglés y ruso; no se documenta cobertura de castellano.
+- Riesgo de alucinación inherente a los modelos de lenguaje, no cuantificado en la información disponible.
+- Los kernels experimentales Q8/Q8×2 y empaquetados alternativos no se recomiendan como configuración de runtime.
+- Licencia Apache 2.0 permite uso comercial, pero conviene verificar la licencia del modelo base upstream, no disponible en la información.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/infosave/Ternary-Bonsai-2-27B-cmf
-- Fichero de pesos directo: https://huggingface.co/infosave/Ternary-Bonsai-2-27B-cmf/resolve/main/Ternary-Bonsai-2-27B-Q2TP-Affine.cmf
-- Modelo base MLX: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit
-- Revision fijada del modelo base: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit/tree/3f926b415992eaa2ae9dd7b573706494d6bbf787
-- Repositorio del runtime CMF: https://github.com/infosave2007/cmf
-- La busqueda web realizada no devolvio enlaces adicionales relevantes al modelo; los resultados obtenidos correspondian a tramites de la Seguridad Social y no guardan relacion con esta ficha.
+- Modelo base: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit
+- Revisión concreta del modelo base: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit/tree/3f926b415992eaa2ae9dd7b573706494d6bbf787
+- Releases de Cortiq v0.6.9: https://github.com/infosave2007/cmf/releases/tag/v0.6.9
+- Repositorio CMF: https://github.com/infosave2007/cmf

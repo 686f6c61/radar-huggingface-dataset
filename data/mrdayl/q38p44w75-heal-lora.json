@@ -20,7 +20,6 @@
     "text-generation",
     "conversational",
     "arxiv:1910.09700",
-    "base_model:logic65/Qwen3.8-p44w75-16.8B-unrepaired",
     "region:us"
   ],
   "likes": 0,

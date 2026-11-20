@@ -30,7 +30,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 1074,
+  "downloads_30d": 1138,
   "trending_score": 0,
   "parameters": 27320698465,
   "parameters_human": "27.32B",
@@ -50,16 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "primitive-ai/Qwen3.8-27B-mixed-NVFP4-FP8 at main - Hugging Face",
-      "url": "https://huggingface.co/primitive-ai/Qwen3.8-27B-mixed-NVFP4-FP8/tree/main",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "williamliao/Qwen3.8-27B-NVFP4-GGUF · Hugging Face",
-      "url": "https://huggingface.co/williamliao/Qwen3.8-27B-NVFP4-GGUF",
-      "snippet": "License The source model is distributed under the Apache License 2.0. Users should review the upstream Qwen/Qwen3.8-27B and unsloth/Qwen3.8-27B-NVFP4 model cards before redistribution or commercial use."
-    }
-  ]
+  "sources": []
 }

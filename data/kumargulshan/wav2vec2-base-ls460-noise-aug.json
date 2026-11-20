@@ -5,7 +5,7 @@
   "author": "kumargulshan",
   "url": "https://huggingface.co/kumargulshan/wav2vec2-base-ls460-noise-aug",
   "created_at": "2026-11-19T11:40:30.000Z",
-  "updated_at": "2026-11-19T11:40:53.000Z",
+  "updated_at": "2026-11-19T12:00:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

@@ -46,7 +46,7 @@
     "region:us"
   ],
   "likes": 23,
-  "downloads_30d": 1069,
+  "downloads_30d": 1036,
   "trending_score": 9,
   "parameters": 2516756480,
   "parameters_human": "2.52B",
@@ -66,31 +66,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Crea email con Libero Mail: apri la tua nuova Posta Elettronica",
-      "url": "https://liberomail.libero.it/",
-      "snippet": "Spazio cloud, gestione documenti online, invio file di grandi dimensioni, scopri le funzionalità di Libero Mail"
-    },
-    {
-      "title": "openbmb/MiniCPM5-2B-GPTQ · Hugging Face",
-      "url": "https://huggingface.co/openbmb/MiniCPM5-2B-GPTQ",
-      "snippet": "We are releasing MiniCPM5-2B, the second model in the MiniCPM5series, following MiniCPM5-1B. It is a dense 2B Transformer that scales up the same training recipe, built for on-device, local deployment, and resource-constrained scenarios, reaching 2B-class open-source SOTA."
-    },
-    {
-      "title": "Come utilizzare il Multiaccount | Libero Mail",
-      "url": "https://liberomail.libero.it/blog/come-fare/come-utilizzare-il-multiaccount-su-libero-mail-611",
-      "snippet": "Libero Mail: facile e organizzata, con tante utili funzionalità! Registrati Come aggiungere altri account di posta alla tua casella Libero …"
-    },
-    {
-      "title": "MiniCPM5-2B Review: Benchmarks & Performance",
-      "url": "https://www.buildfastwithai.com/blogs/minicpm5-2b-review",
-      "snippet": "Yes. MiniCPM5-2B is a serious small language model for local AI, coding assistance, reasoning, tool use and lightweight agent workflows. Its biggest strengths are capability per parameter, a native 131K context window, multiple local deployment formats and strong results on OpenBMB’s code, math and tool-use evaluations. The model is available in BF16, GGUF, MLX and GPTQ formats, with ..."
-    },
-    {
-      "title": "Invia allegati di grandi dimensioni - Libero Mail",
-      "url": "https://liberomail.libero.it/funzionalita/jumbomail.html",
-      "snippet": "Invia file di grandi dimensioni con Jumbomail: video, foto, documenti di lavoro e ogni altro allegato pesante senza occupare spazio …"
-    }
-  ]
+  "sources": []
 }

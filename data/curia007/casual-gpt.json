@@ -5,7 +5,7 @@
   "author": "curia007",
   "url": "https://huggingface.co/curia007/casual-gpt",
   "created_at": "2026-11-19T16:53:45.000Z",
-  "updated_at": "2026-11-19T17:13:35.000Z",
+  "updated_at": "2026-11-19T17:36:35.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -24,8 +24,8 @@
     "from-scratch",
     "pytorch",
     "conversational",
+    "custom_code",
     "en",
-    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,

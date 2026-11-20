@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "blaze-voice-ai/vienue-v3-turbo-enhanced",
+  "slug": "blaze-voice-ai-vienue-v3-turbo-enhanced",
+  "author": "blaze-voice-ai",
+  "url": "https://huggingface.co/blaze-voice-ai/vienue-v3-turbo-enhanced",
+  "created_at": "2026-10-16T01:30:20.000Z",
+  "updated_at": "2026-11-20T06:11:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "vieneu_v3_turbo",
+    "text-to-speech",
+    "voice-cloning",
+    "vietnamese",
+    "vi",
+    "base_model:pnnbao-ump/VieNeu-TTS-v3-Turbo",
+    "base_model:quantized:pnnbao-ump/VieNeu-TTS-v3-Turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 882238851,
+  "storage_human": "882 MB",
+  "context_length": null,
+  "base_model": "pnnbao-ump/VieNeu-TTS-v3-Turbo",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

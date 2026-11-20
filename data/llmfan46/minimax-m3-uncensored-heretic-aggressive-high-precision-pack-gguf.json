@@ -5,7 +5,7 @@
   "author": "llmfan46",
   "url": "https://huggingface.co/llmfan46/MiniMax-M3-uncensored-heretic-aggressive-high-precision-pack-GGUF",
   "created_at": "2026-06-19T06:36:42.000Z",
-  "updated_at": "2026-11-19T14:14:11.000Z",
+  "updated_at": "2026-11-19T14:17:31.000Z",
   "license": "minimax-community",
   "license_family": "non-commercial",
   "pipeline_tag": "image-text-to-text",
@@ -26,8 +26,8 @@
     "ara",
     "image-text-to-text",
     "arxiv:2606.13392",
-    "base_model:MiniMaxAI/MiniMax-M3",
-    "base_model:quantized:MiniMaxAI/MiniMax-M3",
+    "base_model:llmfan46/MiniMax-M3-uncensored-heretic-aggressive",
+    "base_model:quantized:llmfan46/MiniMax-M3-uncensored-heretic-aggressive",
     "license:other",
     "endpoints_compatible",
     "region:us",
@@ -41,7 +41,7 @@
   "storage_bytes": 1658705741152,
   "storage_human": "1658.7 GB",
   "context_length": 1048576,
-  "base_model": "MiniMaxAI/MiniMax-M3",
+  "base_model": "llmfan46/MiniMax-M3-uncensored-heretic-aggressive",
   "formats": [
     "gguf"
   ],

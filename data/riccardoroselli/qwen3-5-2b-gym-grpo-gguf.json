@@ -5,7 +5,7 @@
   "author": "riccardoroselli",
   "url": "https://huggingface.co/riccardoroselli/qwen3.5-2b-gym-grpo-GGUF",
   "created_at": "2026-11-13T15:16:25.000Z",
-  "updated_at": "2026-11-19T19:09:42.000Z",
+  "updated_at": "2026-11-19T20:11:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

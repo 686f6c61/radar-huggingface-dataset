@@ -1,0 +1,65 @@
+{
+  "schema": 2,
+  "id": "finvector/Test_mistral_raw_finmodern_tri_merged",
+  "slug": "finvector-test_mistral_raw_finmodern_tri_merged",
+  "author": "finvector",
+  "url": "https://huggingface.co/finvector/Test_mistral_raw_finmodern_tri_merged",
+  "created_at": "2026-11-20T08:14:10.000Z",
+  "updated_at": "2026-11-20T08:16:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "mistral",
+    "sentence-similarity",
+    "feature-extraction",
+    "generated_from_trainer",
+    "dataset_size:70",
+    "loss:CachedMultipleNegativesRankingLoss",
+    "en",
+    "arxiv:1908.10084",
+    "arxiv:2101.06983",
+    "base_model:intfloat/e5-mistral-7b-instruct",
+    "base_model:finetune:intfloat/e5-mistral-7b-instruct",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7110660096,
+  "parameters_human": "7.11B",
+  "storage_bytes": 14221352376,
+  "storage_human": "14.2 GB",
+  "context_length": null,
+  "base_model": "intfloat/e5-mistral-7b-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Triplet",
+      "dataset": "triplet eval",
+      "metric": "Cosine Accuracy",
+      "value": 1
+    }
+  ],
+  "sources": []
+}

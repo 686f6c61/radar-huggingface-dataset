@@ -2,94 +2,100 @@
 
 ## Resumen
 
-Qwen3-8B-ZeroZero-Heretic-MLX es una compilacion cuantizada a 4 bits en formato MLX del modelo Qwen3-8B-ZeroZero-Heretic, publicado por el usuario independiente LastMachine. Se trata de un derivado de Qwen/Qwen3-8B al que se le ha aplicado un proceso de "abliteration" mediante la herramienta Heretic 2.0.0, cuyo objetivo es reducir drásticamente la tasa de rechazos (refusals) ante peticiones que un modelo convencional declinaria. Sobre esa base se ha anadido una pasada adicional orientada a eliminar lo que el autor denomina "slop": respuestas formulaicas, muletillas y patrones de texto redundantes.
+Qwen3-8B-ZeroZero-Heretic-MLX es una compilación cuantizada en formato MLX del modelo LastMachine/Qwen3-8B-ZeroZero-Heretic, un derivado de Qwen3-8B de Alibaba Cloud al que se le ha aplicado un proceso de "abliteración" (eliminación de la dirección de rechazo en el espacio de activaciones) mediante la herramienta Heretic 2.0.0. El objetivo declarado es reducir drásticamente las negativas del modelo ante peticiones que un modelo alineado rechazaría, manteniendo al mismo tiempo las capacidades de razonamiento y los conocimientos factuales del modelo original. Esta versión concreta está pensada para ejecutarse en Macs con Apple Silicon mediante la librería mlx-lm.
 
-El modelo conserva la arquitectura original de Qwen3-8B (transformer denso de aproximadamente 8.190 millones de parametros) y se distribuye en formato MLX, es decir, optimizado para ejecutarse en Macs con Apple Silicon a traves de la libreria mlx-lm. La cuantizacion se realizo a 4,5 bits por peso, lo que reduce el repositorio a unos 4,6 GB y permite su ejecucion en equipos con memoria unificada moderada.
+El modelo conserva la arquitectura transformer densa de Qwen3-8B, con 8.190.735.360 parámetros totales según los pesos en safetensors, y se distribuye cuantizado a 4,5 bits por peso, lo que reduce el repositorio a 4,6 GB. La model card no documenta la longitud de contexto nativa de Qwen3-8B ni los idiomas soportados, aunque el pipeline declarado es text-generation y el único idioma listado es el inglés.
 
-Su relevancia es doble: por un lado, demuestra el flujo de trabajo de modificacion de alineamiento sobre un modelo reciente de Qwen; por otro, ofrece una via practica para desplegar ese modelo modificado en hardware de Apple sin GPU dedicada. Conviene subrayar que el autor advierte explicitamente de que la reduccion de rechazos no implica mayor veracidad, y que el modelo puede producir contenido danino, falso o sesgado.
+Su relevancia actual reside en dos frentes: por un lado, es un ejemplo práctico de modificación de alineamiento mediante abliteración con métricas cuantificadas de reducción de rechazos y de "slop" (texto de relleno); por otro, ofrece una vía de despliegue local eficiente en hardware Apple. El autor advierte explícitamente de que la reducción de rechazos no implica mayor veracidad y de que el modelo puede producir contenido dañino, falso o sesgado.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (base Qwen3-8B) |
+| Arquitectura | Transformer denso (derivado de Qwen3-8B) |
 | Parametros totales | 8.190.735.360 |
 | Parametros activos | no aplica (modelo denso) |
-| Longitud de contexto | no disponible en la informacion proporcionada |
-| Tipos de cuantizacion | 4-bit MLX (4,5 bits por peso) |
-| Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors en formato MLX (libreria mlx) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | 4-bit MLX (4,5 bits por peso, cuantizado con mlx-lm) |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (MLX) |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura de Qwen3-8B, un transformer denso de aproximadamente 8.190 millones de parametros. No se dispone en la informacion proporcionada de detalles sobre el numero de tokens de entrenamiento, la composicion del dataset original ni las fases de RLHF o DPO aplicadas por Qwen en el modelo base.
+El modelo es un transformer denso de 8.190 millones de parámetros derivado de Qwen3-8B. No se ha reentrenado desde cero: el autor parte del checkpoint base y aplica un proceso de abliteración con Heretic 2.0.0, que identifica y elimina la dirección de activación asociada al rechazo de peticiones. Posteriormente se aplica un pase adicional denominado "no-slop" orientado a reducir la verbosidad y las fórmulas de relleno típicas de los modelos alineados. La model card no documenta el volumen de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO adicionales.
 
-La modificacion realizada por LastMachine se apoya en Heretic 2.0.0, una herramienta de abliteration que actua sobre las direcciones de activacion asociadas al rechazo para reducir la probabilidad de que el modelo decline peticiones. Sobre el modelo ya "decensored" se aplico una segunda pasada orientada a reducir patrones de "slop". Segun la model card, los resultados medidos sobre el modelo completo en 16 bits (no sobre esta compilacion de 4 bits) son: reduccion del 91% en rechazos ante el conjunto de prompts daninos de Heretic (de 100/100 a 9/100), reduccion del 68% en respuestas que activan la lista de slop (de 78/100 a 25/100), reduccion del 78% en palabras de slop por cada 1.000 (de 16,5 a 3,6) y mantenimiento de las comprobaciones de hechos y logica (13/15 antes y despues). El autor advierte de que estas cifras se midieron en el modelo de 16 bits y que en esta version de 4 bits pueden aparecer diferencias menores.
+La innovación técnica principal es la combinación de abliteración con un post-procesado anti-slop, con métricas medidas sobre el modelo completo de 16 bits (no sobre esta compilación de 4 bits). Según el autor, los rechazos en el test de prompts dañinos de Heretic caen de 100/100 a 9/100 (91 % menos), las respuestas que activan la lista de slop bajan de 78/100 a 25/100 (68 % menos), las palabras de slop por cada 1.000 pasan de 16,5 a 3,6 (78 % menos) y las comprobaciones de hechos y lógica se mantienen en 13/15. La cuantización a 4,5 bits introduce diferencias menores respecto al modelo de 16 bits, que el autor reconoce pero no cuantifica.
 
 ## Capacidades
 
-- Generacion de texto conversacional y de formato largo (relatos, articulos, documentacion), segun el ejemplo de uso de la model card.
-- Reduccion significativa de rechazos ante peticiones que un modelo alineado convencional declinaria, incluidas peticiones potencialmente daninas.
-- Menor incidencia de muletillas y patrones formulaicos ("slop") en comparacion con el modelo decensored previo.
-- Capacidades de razonamiento y conocimiento heredadas del modelo base Qwen3-8B, si bien no se detallan en la informacion disponible.
-- Soporte de tool calling, function calling, agentes o modo "thinking": no disponible en la informacion proporcionada.
-- Capacidades multimodales (vision, audio): no disponibles; el pipeline declarado es exclusivamente text-generation.
-- Capacidades multilingues: no disponibles; el campo de idiomas no esta informado en el repositorio.
+- Generación de texto conversacional y de formato largo (relatos, artículos, documentación).
+- Razonamiento y respuesta a preguntas sobre conocimiento general, heredados de Qwen3-8B.
+- Generación de código y matemáticas a nivel de un modelo de 8B, aunque sin benchmarks publicados para esta variante.
+- Reducción drástica de rechazos: responde a peticiones que un modelo alineado denegaría, incluidas algunas potencialmente dañinas.
+- Estilo de respuesta más conciso y con menos fórmulas de relleno gracias al pase no-slop.
+- Capacidades multilingües: no disponibles más allá del inglés declarado; el modelo base Qwen3 es multilingüe, pero esta ficha no documenta el alcance.
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Modo thinking: no disponible en la información proporcionada para esta variante.
 
 ## Casos de uso
 
-- Generacion creativa de ficcion: el modelo puede redactar relatos, dialogos y escenas sin las autocorrecciones ni evasivas tipicas de un modelo alineado, lo que resulta util para autores que trabajan con tematicas oscuras o controvertidas y necesitan que el modelo no "suavice" el tono.
-- Investigacion sobre alineamiento y seguridad: permite estudiar empiricamente como varia la tasa de rechazos tras una abliteration y que coste tiene en terminos de veracidad y coherencia, comparando con el Qwen3-8B original.
-- Prototipado local en Mac con Apple Silicon: al estar en formato MLX de 4 bits y ocupar unos 4,6 GB, se puede ejecutar con mlx-lm en un Mac con memoria unificada de 16 GB o superior, sin GPU dedicada, para pruebas de prompting y evaluacion rapida.
-- Generacion de texto sin fricciones en tareas de redaccion tecnica o de marketing: la reduccion de "slop" disminuye la aparicion de frases hechas y plantillas, lo que puede reducir la edicion posterior en borradores largos.
-- Analisis de contenido sensible en entornos controlados: investigadores que necesitan que el modelo describa sin filtros escenarios de riesgo (por ejemplo, para construir clasificadores o datasets de seguridad) pueden usarlo como generador, asumiendo la responsabilidad legal y etica del uso.
-- Evaluacion comparativa de cuantizaciones: al existir la version de 16 bits del mismo modelo, sirve para medir la degradacion introducida por la cuantizacion a 4,5 bits en tareas de generacion abierta y en la tasa de rechazos.
+- Escritura creativa sin restricciones de tono: el modelo es adecuado para generar ficción, diálogos y escenas con violencia, temas adultos o lenguaje explícito que un modelo alineado rechazaría, gracias a la reducción del 91 % en rechazos medida por el autor.
+- Generación de texto conciso en producción: el pase no-slop reduce las palabras de relleno de 16,5 a 3,6 por cada 1.000, lo que lo hace útil en pipelines donde se paga por token de salida o se exige densidad informativa.
+- Prototipado local en Mac: al estar en formato MLX de 4,5 bits y ocupar 4,6 GB, permite experimentar con un modelo de 8B en un MacBook con Apple Silicon sin GPU dedicada, usando mlx-lm.
+- Investigación sobre alineamiento y abliteración: sirve como caso de estudio reproducible de cómo la eliminación de una dirección de activación afecta a la tasa de rechazos y al estilo de respuesta, con métricas comparativas publicadas.
+- Redacción asistida de contenido editorial: para borradores de artículos, guiones o correos donde se prioriza velocidad y concisión sobre el filtrado de seguridad.
+- Evaluación comparativa de cuantizaciones: permite medir en hardware Apple la degradación de un modelo de 8B al pasar de 16 bits a 4,5 bits, usando el modelo base como referencia.
+- Generación de datos sintéticos para ajuste fino: su menor tasa de rechazos facilita producir pares instrucción-respuesta en dominios que los modelos alineados evitan, siempre con revisión humana posterior.
 
 ## Benchmarks y rendimiento
 
-La model card unicamente reporta las metricas internas del proceso de modificacion, medidas sobre el modelo de 16 bits. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
+La model card solo publica métricas internas del proceso de modificación, medidas sobre el modelo de 16 bits y no sobre esta compilación de 4 bits. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
-| Medida | Cambio | Antes → despues |
-|---|---:|---:|
-| Rechazos en el test de prompts daninos de Heretic | 91% menos | 100/100 → 9/100 |
-| Respuestas que activan la lista de slop | 68% menos | 78/100 → 25/100 |
-| Palabras de slop por 1.000 | 78% menos | 16,5 → 3,6 |
-| Comprobaciones de hechos y logica superadas | Sin cambio | 13/15 → 13/15 |
+| Medida | Antes | Después | Cambio |
+|---|---:|---:|---:|
+| Rechazos en el test de prompts dañinos de Heretic | 100/100 | 9/100 | 91 % menos |
+| Respuestas que activan la lista de slop | 78/100 | 25/100 | 68 % menos |
+| Palabras de slop por 1.000 | 16,5 | 3,6 | 78 % menos |
+| Comprobaciones de hechos y lógica superadas | 13/15 | 13/15 | sin cambio |
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada para inferencia: aproximadamente 4,6 GB de pesos en 4,5 bits, mas overhead de contexto y cache KV; en la practica se recomienda un minimo de 8 GB de memoria unificada y 16 GB para contextos largos.
-- Hardware objetivo: Macs con Apple Silicon (series M1, M2, M3, M4 y superiores). El formato MLX no esta pensado para GPU NVIDIA ni AMD.
-- GPU dedicadas: no aplica; para CUDA seria necesario usar la version de 16 bits del modelo o generar una cuantizacion GGUF/AWQ propia.
-- Despliegue: mlx-lm (libreria oficial del formato). No se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI para esta compilacion concreta.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM/unified memory estimada: el repositorio ocupa 4,6 GB en disco; en ejecución con MLX se recomienda al menos 8 GB de memoria unificada para dejar margen al contexto y a los buffers de inferencia.
+- GPU recomendadas: Apple Silicon (series M1, M2, M3 y M4), ya que MLX está optimizado para el framework Metal de Apple. No es compatible de forma nativa con CUDA.
+- Cabe en GPU de consumo: sí, en cualquier Mac con Apple Silicon y 8 GB o más de memoria unificada; también en Macs con 16 GB o más para contextos largos.
+- Opciones de despliegue: mlx-lm (comando `mlx_lm.generate`), con soporte para servidor local mediante `mlx_lm.server`. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI en el formato MLX.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
-|---|---|---|---|---|---|
-| LastMachine/Qwen3-8B-ZeroZero-Heretic-MLX | 8,19 B | no disponible | MLX 4-bit | Apache 2.0 | Objeto de esta ficha; abliterated y "no-slop"; solo Apple Silicon |
-| LastMachine/Qwen3-8B-ZeroZero-Heretic | 8,19 B | no disponible | safetensors 16-bit | Apache 2.0 | Version completa del mismo modelo; referencia para medir el efecto de la cuantizacion |
-| Qwen/Qwen3-8B | 8,19 B | no disponible | safetensors | Apache 2.0 | Modelo base alineado; rechaza peticiones daninas y no incorpora la pasada "no-slop" |
+| Modelo | Parámetros | Contexto | Cuantización | Licencia | Enfoque |
+|---|---:|---|---|---|---|
+| LastMachine/Qwen3-8B-ZeroZero-Heretic-MLX | 8,19 B | no disponible | 4,5 bits MLX | Apache 2.0 | Abliterado + no-slop, Apple Silicon |
+| LastMachine/Qwen3-8B-ZeroZero-Heretic | 8,19 B | no disponible | 16 bits | Apache 2.0 | Abliterado + no-slop, referencia completa |
+| Qwen/Qwen3-8B | 8,19 B | no disponible | múltiples | Apache 2.0 | Modelo base alineado |
+| Heretic (herramienta) | no aplica | no aplica | no aplica | no disponible | Utilidad de abliteración aplicable a otros modelos |
 
-No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
+La comparación directa con alternativas abliteradas de otros autores no está disponible en la información proporcionada. Frente a Qwen3-8B, la diferencia medible es la tasa de rechazos y el estilo, no el conocimiento factual, que el autor mantiene en 13/15 comprobaciones.
 
 ## Limitaciones y advertencias
 
-- El autor advierte explicitamente de que el modelo responde a muchas peticiones que un modelo normal rechaza, incluidas peticiones daninas, y que su salida puede ser peligrosa, falsa o sesgada.
-- Menos rechazos no equivale a mayor veracidad: la model card cita el ejemplo de Tiananmen Square, donde el modelo ofrece una version oficial sanitizada. No es fiable para hechos sobre China ni para decisiones financieras, medicas o legales.
-- El repositorio incluye un formulario de acceso restringido (gated) con aceptacion de terminos de uso responsable; el acceso no es completamente abierto pese a la licencia Apache 2.0.
-- Las metricas de mejora se midieron sobre el modelo de 16 bits, no sobre esta compilacion de 4 bits; la cuantizacion puede alterar tanto la tasa de rechazos como la calidad del texto.
-- La licencia Apache 2.0 permite uso comercial, pero el propio autor declina responsabilidad sobre el uso y exige al usuario asumir la responsabilidad legal y etica.
-- El modelo solo funciona en el ecosistema MLX (Apple Silicon); no es portable directamente a CUDA sin conversion.
-- No se informan los idiomas soportados ni la longitud de contexto efectiva en el repositorio, lo que dificulta planificar su uso en produccion multilingue o con contextos largos.
-- Riesgo de sesgos heredados del modelo base y potencialmente amplificados por la reduccion de filtros.
+- El modelo responde a muchas peticiones que un modelo normal rechaza, incluidas algunas dañinas; su salida puede ser peligrosa, falsa o sesgada.
+- Menos rechazos no implica más veracidad: el autor señala que sobre Tiananmen Square ofrece una versión oficial sanitizada y desaconseja su uso para hechos sobre China.
+- No debe usarse para decisiones financieras, médicas o legales.
+- La abliteración puede degradar sutilmente la coherencia en tareas de razonamiento largo; el autor solo reporta 13/15 comprobaciones de hechos y lógica, sin desglose.
+- Las métricas publicadas corresponden al modelo de 16 bits; esta compilación de 4,5 bits puede presentar diferencias no cuantificadas.
+- El único idioma declarado es el inglés; el comportamiento en castellano u otros idiomas no está documentado.
+- La longitud de contexto no está especificada en la ficha, lo que impide planificar despliegues con ventanas largas.
+- Licencia Apache 2.0 permite uso comercial, pero el usuario asume toda la responsabilidad sobre el contenido generado y sobre el cumplimiento normativo aplicable.
+- Proyecto independiente no afiliado a Qwen, Alibaba Cloud, Anthropic ni al proyecto Heretic.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/LastMachine/Qwen3-8B-ZeroZero-Heretic-MLX
-- Modelo base modificado (16 bits): https://huggingface.co/LastMachine/Qwen3-8B-ZeroZero-Heretic
-- Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3-8B
-- Heretic (herramienta de abliteration): https://github.com/p-e-w/heretic
-- Libreria mlx-lm: https://github.com/ml-explore/mlx-lm
+- Modelo base (16 bits): https://huggingface.co/LastMachine/Qwen3-8B-ZeroZero-Heretic
+- Colección ZeroZero: https://huggingface.co/collections/LastMachine/zerozero-6af68595b0b72f13ce60bde2
+- Modelo original Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
+- Heretic (herramienta de abliteración): https://github.com/p-e-w/heretic
+- Librería mlx-lm: no se proporciona enlace directo en la información disponible

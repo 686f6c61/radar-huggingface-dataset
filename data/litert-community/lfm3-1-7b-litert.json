@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/LFM3-1.7B-LiteRT",
   "created_at": "2026-10-29T04:42:23.000Z",
-  "updated_at": "2026-11-15T16:00:14.000Z",
+  "updated_at": "2026-11-20T01:39:28.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

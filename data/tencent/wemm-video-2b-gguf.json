@@ -1,0 +1,77 @@
+{
+  "schema": 2,
+  "id": "tencent/WeMM-Video-2B-GGUF",
+  "slug": "tencent-wemm-video-2b-gguf",
+  "author": "tencent",
+  "url": "https://huggingface.co/tencent/WeMM-Video-2B-GGUF",
+  "created_at": "2026-11-17T08:58:54.000Z",
+  "updated_at": "2026-11-20T03:14:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "wemm",
+    "multimodal",
+    "video",
+    "audio",
+    "quantized",
+    "image-text-to-text",
+    "custom_code",
+    "en",
+    "zh",
+    "base_model:tencent/WeMM-Video-2B",
+    "base_model:quantized:tencent/WeMM-Video-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1070382088,
+  "parameters_human": "1.07B",
+  "storage_bytes": 5342634431,
+  "storage_human": "5.3 GB",
+  "context_length": null,
+  "base_model": "tencent/WeMM-Video-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - Tencent",
+      "url": "https://www.tencent.com/",
+      "snippet": "2 days ago · Tencent is: Three friends making dinner plans. And over a billion monthly active users. Learn more about Tencent for …Read more"
+    },
+    {
+      "title": "Tencent - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tencent",
+      "snippet": "Tencent (Chinese: 腾讯; pinyin: Téngxùn) is a Chinese multinational technology conglomerate and holding company headquartered …Read more"
+    },
+    {
+      "title": "Who we are - Tencent",
+      "url": "https://www.tencent.com/who-we-are/",
+      "snippet": "Tencent is a world-leading internet and technology company that develops innovative products and services to improve the quality of …Read more"
+    },
+    {
+      "title": "Tencent — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Tencent",
+      "snippet": "Tencent ... La Tencent Tower, qui abrite le siège de Tencent. Tencent Holdings Limited est une entreprise chinoise créée en 1998, …Read more"
+    }
+  ]
+}

@@ -2,93 +2,93 @@
 
 ## Resumen
 
-MiniCPM5-2B es un modelo de lenguaje de 2.500 millones de parámetros (2.5B) desarrollado por OpenBMB, la segunda entrega de la serie MiniCPM5 tras el MiniCPM5-1B. Se trata de un Transformer denso diseñado específicamente para despliegue on-device, local y en entornos con recursos limitados, donde busca alcanzar el estado del arte en su clase de 2B. Su relevancia radica en ofrecer un rendimiento competitivo con modelos de 4B en tareas como código, matemáticas, comprensión de contexto largo, uso de herramientas y tareas agénticas, todo con una huella de memoria reducida.
+MiniCPM5-2B es un modelo de lenguaje denso de tipo Transformer con 2.516.756.480 parámetros (aproximadamente 2,5 mil millones), desarrollado por OpenBMB. Se trata del segundo modelo de la serie MiniCPM5, tras MiniCPM5-1B, y está diseñado específicamente para despliegue en dispositivo (on-device), entornos locales y escenarios con recursos limitados. El modelo se distribuye bajo licencia Apache 2.0 y soporta únicamente inglés y chino.
 
-La ventana de contexto nativa es de 131.072 tokens (131K), según la review de buildfastwithai, lo que permite procesar documentos extensos sin necesidad de técnicas de truncamiento. El modelo está disponible en formato GPTQ 4-bit, además de BF16, GGUF y MLX, lo que facilita su integración en una amplia variedad de entornos de despliegue, desde GPUs de consumo hasta dispositivos edge. La licencia Apache-2.0 permite su uso comercial sin restricciones.
+La relevancia de este lanzamiento radica en su posicionamiento como estado del arte en la categoría de 2B de código abierto, con un rendimiento que el autor sitúa a la altura de modelos de 4B en tareas de código, matemáticas, comprensión de contexto largo, uso de herramientas y tareas agénticas. El modelo se entrenó sobre un conjunto de datasets propietarios de OpenBMB (Ultra-FineWeb, UltraX-Preview, UltraData-Math, UltraData-Code, entre otros), lo que refleja un pipeline de datos curado internamente.
 
-## Especificaciones técnicas
+La variante documentada aquí, `MiniCPM5-2B-GPTQ`, es una cuantización de 4 bits del modelo base, publicada en formato safetensors y compatible con transformers y text-generation-inference. Su tamaño de repositorio de 2,1 GB la hace apta para GPUs de consumo y hardware de borde, aunque el contexto máximo, los tipos de cuantización adicionales y los detalles de arquitectura interna no se detallan en la información disponible.
 
-| Parámetro | Valor |
+## Especificaciones tecnicas
+
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (basada en Llama) |
-| Parámetros totales | 2.516.756.480 (2.5B) |
-| Parámetros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 131.072 tokens (131K) según review externa; no confirmado en la model card |
-| Tipos de cuantización | GPTQ 4-bit (este repo), BF16, GGUF, MLX |
-| Idiomas soportados | Inglés, chino |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (GPTQ 4-bit), GGUF, MLX |
+| Arquitectura | Transformer denso (serie MiniCPM5) |
+| Parametros totales | 2.516.756.480 (aprox. 2,5B) |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | no disponible (etiquetado como long-context) |
+| Tipos de cuantizacion | GPTQ de 4 bits (esta variante); el modelo base admite otras, no detalladas |
+| Idiomas soportados | inglés (en), chino (zh) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (GPTQ 4-bit) |
 
 ## Arquitectura y entrenamiento
 
-MiniCPM5-2B es un Transformer denso que sigue la arquitectura Llama, con 2.500 millones de parámetros. El entrenamiento se basa en la misma receta que el MiniCPM5-1B, escalada a mayor tamaño. Los datos de entrenamiento proceden de la familia UltraData de OpenBMB, que incluye Ultra-FineWeb, UltraX-Preview, Ultra-FineWeb-L3, UltraData-Math, UltraData-Code, UltraData-SFT-2605, UltraData-SFT-Agent-2609 y UltraData-RL-2609. La presencia de datasets de SFT y RL sugiere un pipeline de ajuste supervisado y optimización por refuerzo, aunque la model card no detalla el proceso exacto.
+MiniCPM5-2B es un Transformer denso que escala la misma receta de entrenamiento empleada en MiniCPM5-1B. El autor lo describe como un modelo de 2B orientado a despliegue local y a escenarios con restricciones de recursos, sin detallar en la información disponible el número exacto de capas, dimensiones ocultas, mecanismo de atención ni innovaciones arquitectónicas concretas (no se confirma el uso de atención lineal, decodificación especulativa ni arquitecturas híbridas).
 
-El modelo incorpora capacidades de long-context, tool calling y tareas agénticas desde el diseño, lo que lo hace especialmente adecuado para aplicaciones de agente y razonamiento multi-paso. La cuantización GPTQ en 4 bits reduce el peso del repositorio a 2.1 GB, manteniendo un equilibrio entre precisión y consumo de memoria.
+El entrenamiento se apoya en un conjunto de datasets de OpenBMB: Ultra-FineWeb, UltraX-Preview y Ultra-FineWeb-L3 para datos web de pretraining, UltraData-Math y UltraData-Code para dominios especializados, y UltraData-SFT-2605, UltraData-SFT-Agent-2609 y UltraData-RL-2609 para las fases de ajuste supervisado, agentes y aprendizaje por refuerzo. La presencia de un dataset específico de RL sugiere una fase de optimización por refuerzo orientada a agentes y uso de herramientas, aunque no se especifican el número de tokens de entrenamiento ni la composición exacta del corpus.
 
 ## Capacidades
 
 - Generación de texto conversacional en inglés y chino.
-- Razonamiento de código y matemáticas, con ventajas sobre modelos de tamaño comparable.
-- Comprensión de contexto largo hasta 131K tokens, según la review de buildfastwithai.
-- Tool calling / function calling, integrable en pipelines de agentes.
-- Tareas agénticas y razonamiento multi-paso.
-- Instrucción following y conocimiento general.
-- Despliegue on-device y edge AI, con formatos cuantizados para hardware limitado.
+- Razonamiento de código: el autor lo sitúa como ventaja competitiva frente a modelos de tamaño similar.
+- Razonamiento matemático, respaldado por el dataset UltraData-Math.
+- Comprensión de contexto largo (etiqueta long-context), aunque la longitud exacta no se especifica.
+- Tool calling / function calling, con soporte explícito en las etiquetas del modelo.
+- Tareas agénticas y razonamiento multi-paso, reforzado por UltraData-SFT-Agent y UltraData-RL.
+- Seguimiento de instrucciones (instruction following), evaluado en el radar de capacidades del autor.
+- Despliegue en dispositivo y edge AI, con cuantización de 4 bits para reducir huella de memoria.
+- No se documentan capacidades de visión, audio ni modo de pensamiento explícito.
 
 ## Casos de uso
 
-1. **Asistente de código en IDE local**: el modelo puede ejecutarse en una GPU de consumo (por ejemplo, RTX 3060) y ofrecer autocompletado, generación de funciones y explicación de fragmentos de código sin conexión, gracias a su fuerte capacidad de razonamiento de código y a la cuantización GPTQ que reduce la VRAM necesaria.
-
-2. **Agente conversacional en dispositivos edge**: gracias a su tamaño compacto y al soporte de tool calling, puede desplegarse en routers, NAS o mini-PCs para gestionar tareas del hogar, como consultar el estado de sensores o ejecutar comandos a través de APIs locales.
-
-3. **Análisis de documentos largos**: con una ventana de 131K tokens, puede resumir contratos, informes técnicos o actas de reuniones extensas, extrayendo los puntos clave sin perder información por truncamiento.
-
-4. **Atención al cliente bilingüe**: al estar entrenado en inglés y chino, puede gestionar conversaciones de soporte en ambos idiomas, manteniendo el contexto de la conversación y resolviendo dudas frecuentes con respuestas coherentes.
-
-5. **Automatización de tareas con herramientas externas**: el modelo puede actuar como agente que invoca funciones, como consultar bases de datos, enviar correos o interactuar con APIs REST, en un flujo de razonamiento multi-paso, ideal para integrarlo en sistemas de automatización empresarial.
-
-6. **Tutor de matemáticas y programación sin conexión**: en entornos educativos con recursos limitados, el modelo puede generar ejercicios, explicar conceptos y revisar soluciones, aprovechando su rendimiento en matemáticas y código sin depender de servicios en la nube.
-
-7. **Integración en pipelines de CI/CD**: puede utilizarse para generar pruebas unitarias, revisar cambios de código o documentar APIs, integrándose en flujos de trabajo de desarrollo gracias a su soporte de tool calling y su capacidad de razonamiento.
+- Asistentes locales en dispositivo: el modelo, con 2,5B parámetros y cuantización GPTQ de 4 bits (repositorio de 2,1 GB), puede ejecutarse en portátiles y equipos de borde para asistentes conversacionales sin conexión, manteniendo la privacidad de los datos.
+- Generación de código en entornos con recursos limitados: su ventaja declarada en código y su soporte de tool calling permiten integrarlo en editores o pipelines de CI/CD locales donde no se dispone de GPUs de datacenter.
+- Agentes de automatización de tareas: gracias a los datasets de agentes y RL, puede encadenar llamadas a herramientas y razonamiento multi-paso en flujos como consulta de APIs, gestión de ficheros o automatización de escritorio.
+- Atención al cliente multilingüe inglés-chino: cubre conversaciones multi-turno en ambos idiomas, adecuado para mercados bilingües o empresas con operaciones en China y países anglófonos.
+- Procesamiento de documentos largos: la etiqueta long-context sugiere uso en resumen y extracción de información sobre documentos extensos, aunque la ventana exacta debe verificarse antes de producción.
+- Tutoría y resolución de problemas matemáticos: el entrenamiento con UltraData-Math lo hace apto para asistentes educativos que explican pasos intermedios.
+- Prototipado rápido y fine-tuning: su licencia Apache 2.0 y tamaño reducido facilitan el ajuste fino y la experimentación en investigación con hardware modesto.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card afirma que el modelo alcanza el estado del arte en su clase de 2B y que compite con modelos de 4B, pero no se proporcionan cifras concretas.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor menciona de forma cualitativa un rendimiento de estado del arte en la clase 2B y competitividad con modelos de 4B en código, matemáticas, contexto largo, uso de herramientas y tareas agénticas, pero no se incluyen cifras numéricas (MMLU, HumanEval, GSM8K u otras) en la información proporcionada.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia con GPTQ 4-bit: aproximadamente 1.5-2 GB, incluyendo overhead y KV cache (estimación basada en 2.5B parámetros a 4 bits).
-- En BF16, el modelo ocupa unos 5 GB de VRAM, por lo que se recomienda una GPU con al menos 8 GB para inferencia cómoda.
-- GPU recomendadas: RTX 3060 (12 GB), RTX 4090 (24 GB), A100 (40/80 GB) o H100. Para edge, puede ejecutarse en dispositivos con NPU o en GPUs integradas.
-- Cabe en GPUs de consumo: sí, con cuantización GPTQ 4-bit es viable en tarjetas de 6 GB o más.
-- Opciones de despliegue: vLLM, llama.cpp (formatos GGUF), Ollama (GGUF), TGI, Transformers (con bitsandbytes o GPTQ).
-- Latencia y throughput: no disponible en la información proporcionada.
+- VRAM estimada para la variante GPTQ 4-bit: en torno a 2-3 GB para los pesos, más overhead de contexto y activaciones; el repositorio ocupa 2,1 GB.
+- GPU recomendadas: cualquier GPU con al menos 4-6 GB de VRAM para la variante cuantizada; para el modelo en precisión completa (BF16/FP16), se estiman unos 5-6 GB solo para pesos.
+- Compatibilidad con GPU de consumo: sí, cabe en RTX 3060, RTX 4060, RTX 4090 y GPUs integradas con suficiente memoria compartida; también en hardware de borde tipo Apple Silicon o NPUs, aunque no se detallan requisitos oficiales.
+- Opciones de despliegue: transformers, text-generation-inference (TGI) y endpoints compatibles según las etiquetas; llama.cpp, Ollama y vLLM no se confirman en la información disponible para esta variante GPTQ.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| MiniCPM5-2B | 2.5B | 131K | No disponible | Apache-2.0 | HF, GGUF, MLX, GPTQ |
-| Qwen2.5-1.5B | 1.5B | 32K | No disponible | Apache-2.0 | HF, GGUF |
-| Qwen2.5-3B | 3B | 32K | No disponible | Apache-2.0 | HF, GGUF |
-| Gemma-2-2B | 2B | 8K | No disponible | Gemma Terms of Use | HF, GGUF |
-| SmolLM2-1.7B | 1.7B | 8K | No disponible | Apache-2.0 | HF, GGUF |
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| MiniCPM5-2B-GPTQ | 2,5B | no disponible (long-context) | Apache 2.0 | Variante 4-bit; SOTA declarado en clase 2B |
+| MiniCPM5-1B | 1B (aprox.) | no disponible | no disponible en la informacion | Modelo previo de la misma serie; menor capacidad |
+| Modelos de 4B de código abierto | ~4B | variable | variable | El autor afirma competitividad del 2B frente a esta clase, sin cifras |
+
+No se dispone de datos numéricos de benchmarks ni de especificaciones detalladas de los modelos comparables en la información proporcionada, por lo que la comparación cuantitativa no está disponible.
 
 ## Limitaciones y advertencias
 
-- Sesgos: al estar entrenado principalmente en inglés y chino, puede reflejar sesgos culturales y lingüísticos de esos dominios. No se han publicado evaluaciones de sesgo en la información disponible.
-- Riesgo de alucinación: como todos los modelos de lenguaje, puede generar información plausible pero incorrecta, especialmente en dominios especializados.
-- Limitaciones de idioma: solo soporta inglés y chino; no está optimizado para otros idiomas, lo que limita su uso en entornos multilingües amplios.
-- Contexto largo: la ventana de 131K no está confirmada en la model card oficial; proviene de una review externa. En la práctica, la calidad puede degradarse en la parte final del contexto.
-- Restricciones de licencia: Apache-2.0 permite uso comercial, pero es necesario verificar el cumplimiento de las atribuciones y avisos de licencia.
-- Caveat de producción: la cuantización GPTQ puede introducir pérdida de precisión; se recomienda validar el rendimiento en tareas críticas antes de desplegar.
+- Idiomas limitados a inglés y chino; no se garantiza un rendimiento adecuado en castellano ni en otros idiomas.
+- Riesgo de alucinación inherente a modelos de 2B, especialmente en conocimiento factual y tareas de razonamiento complejo.
+- La longitud de contexto no está especificada; la etiqueta long-context no sustituye a un dato verificado de ventana máxima.
+- No se documentan sesgos conocidos ni evaluaciones de seguridad en la información disponible.
+- La variante GPTQ de 4 bits puede degradar ligeramente la calidad respecto al modelo en precisión completa; conviene validar en la tarea objetivo.
+- Aunque la licencia Apache 2.0 permite uso comercial, deben revisarse las licencias de los datasets de entrenamiento si se redistribuye el modelo.
+- No se confirma soporte oficial para llama.cpp, Ollama o vLLM en esta variante, lo que puede limitar opciones de despliegue en producción.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/openbmb/MiniCPM5-2B-GPTQ
-- Paper MiniCPM Tech Report: https://arxiv.org/pdf/2506.07900
-- Referencia arXiv adicional (según model card): https://arxiv.org/abs/2602.09003
-- GitHub: https://github.com/OpenBMB/MiniCPM
-- Wiki (chino): https://modelbest.feishu.cn/wiki/UtWxwcERfiRIpIkBOjuc3h9tn1D
-- Demo online: https://huggingface.co/spaces/openbmb/MiniCPM5-2B-Demo
+- Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
+- MiniCPM5-1B: https://huggingface.co/openbmb/MiniCPM5-1B
+- Informe técnico MiniCPM (arXiv 2506.07900): https://arxiv.org/pdf/2506.07900
+- Referencia arXiv 2602.09003: https://arxiv.org/abs/2602.09003
+- Repositorio GitHub: https://github.com/OpenBMB/MiniCPM
+- Documentación MiniCPM (chino): https://openbmb.cn/docs/
 - UltraData: https://ultradata.openbmb.cn/
+- Demo online: https://huggingface.co/spaces/openbmb/MiniCPM5-2B-Demo

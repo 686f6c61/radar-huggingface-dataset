@@ -5,7 +5,7 @@
   "author": "singularity-layer",
   "url": "https://huggingface.co/singularity-layer/Singularity-xMESH-0.8B-GGUF",
   "created_at": "2026-11-16T09:11:15.000Z",
-  "updated_at": "2026-11-19T06:02:32.000Z",
+  "updated_at": "2026-11-19T06:50:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -33,7 +33,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 17,
   "trending_score": 0,
   "parameters": 779717956,
   "parameters_human": "779.7M",

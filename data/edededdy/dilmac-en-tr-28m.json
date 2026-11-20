@@ -1,0 +1,94 @@
+{
+  "schema": 2,
+  "id": "edededdy/dilmac-en-tr-28m",
+  "slug": "edededdy-dilmac-en-tr-28m",
+  "author": "edededdy",
+  "url": "https://huggingface.co/edededdy/dilmac-en-tr-28m",
+  "created_at": "2026-11-20T10:44:38.000Z",
+  "updated_at": "2026-11-20T10:45:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dilmac",
+    "feature-extraction",
+    "translation",
+    "machine-translation",
+    "english",
+    "turkish",
+    "en-tr",
+    "small-model",
+    "custom_code",
+    "en",
+    "tr",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 28099584,
+  "parameters_human": "28.1M",
+  "storage_bytes": 112405568,
+  "storage_human": "112 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Translation English to Turkish",
+      "dataset": "FLORES-200 (devtest)",
+      "metric": "chrF++",
+      "value": 54.83
+    },
+    {
+      "task": "Translation English to Turkish",
+      "dataset": "FLORES-200 (devtest)",
+      "metric": "BLEU",
+      "value": 26.32
+    },
+    {
+      "task": "Translation English to Turkish",
+      "dataset": "NTREX-128",
+      "metric": "chrF++",
+      "value": 45.48
+    },
+    {
+      "task": "Translation English to Turkish",
+      "dataset": "NTREX-128",
+      "metric": "BLEU",
+      "value": 17.12
+    },
+    {
+      "task": "Translation English to Turkish",
+      "dataset": "WMT17 newstest2017",
+      "metric": "chrF++",
+      "value": 49.37
+    },
+    {
+      "task": "Translation English to Turkish",
+      "dataset": "WMT17 newstest2017",
+      "metric": "BLEU",
+      "value": 20.17
+    }
+  ],
+  "sources": []
+}

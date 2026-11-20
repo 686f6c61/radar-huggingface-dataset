@@ -1,0 +1,60 @@
+{
+  "schema": 2,
+  "id": "pererabsdt/reuters-gpt-from-scratch",
+  "slug": "pererabsdt-reuters-gpt-from-scratch",
+  "author": "pererabsdt",
+  "url": "https://huggingface.co/pererabsdt/reuters-gpt-from-scratch",
+  "created_at": "2026-11-20T10:16:58.000Z",
+  "updated_at": "2026-11-20T10:17:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "causal-lm",
+    "from-scratch",
+    "reuters",
+    "en",
+    "dataset:ingeniumacademy/reuters_articles",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30812160,
+  "parameters_human": "30.8M",
+  "storage_bytes": 123256184,
+  "storage_human": "123 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Request for Bing Search API V7 Access Approval - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/79443295/request-for-bing-search-api-v7-access-approval",
+      "snippet": "Feb 16, 2025 · From this doc ,Bing Search APIs with your LLM will be retired on March 6, 2025. Existing instances will be fully …Read more"
+    },
+    {
+      "title": "Is it possible to filter only ProductVisualSearch from specified ...",
+      "url": "https://stackoverflow.com/questions/54632194/is-it-possible-to-filter-only-productvisualsearch-from-specified-website-in-azur",
+      "snippet": "Feb 11, 2019 · I have implemented a basic HTML version of Bing Visual Search from this tutorial. I want to fetch only …Read more"
+    }
+  ]
+}

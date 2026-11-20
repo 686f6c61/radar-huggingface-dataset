@@ -5,7 +5,7 @@
   "author": "celebibasar",
   "url": "https://huggingface.co/celebibasar/DroidSenior-7B-v5",
   "created_at": "2026-11-16T18:05:27.000Z",
-  "updated_at": "2026-11-16T18:07:30.000Z",
+  "updated_at": "2026-11-19T23:49:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -26,6 +26,7 @@
     "coding-assistant",
     "sft",
     "grpo",
+    "best-of-n",
     "conversational",
     "en",
     "tr",
@@ -39,7 +40,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 10,
+  "downloads_30d": 13,
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",
@@ -56,8 +57,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "celebibasar/DroidSenior-7B",
+  "renamed_at": "2026-11-20T06:20:26.946Z",
   "benchmarks": [],
   "sources": []
 }

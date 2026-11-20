@@ -21,8 +21,6 @@
     "medical",
     "IE",
     "zh",
-    "base_model:THUMedInfo/GENIE_zh_7b",
-    "base_model:quantized:THUMedInfo/GENIE_zh_7b",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",

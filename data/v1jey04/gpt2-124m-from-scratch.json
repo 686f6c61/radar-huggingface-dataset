@@ -1,0 +1,76 @@
+{
+  "schema": 2,
+  "id": "V1jey04/gpt2-124m-from-scratch",
+  "slug": "v1jey04-gpt2-124m-from-scratch",
+  "author": "V1jey04",
+  "url": "https://huggingface.co/V1jey04/gpt2-124m-from-scratch",
+  "created_at": "2026-11-20T10:36:10.000Z",
+  "updated_at": "2026-11-20T10:47:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "safetensors",
+    "from-scratch",
+    "gpt2",
+    "chat",
+    "small-language-model",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceTB/smoltalk",
+    "dataset:databricks/databricks-dolly-15k",
+    "dataset:OpenAssistant/oasst1",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124475904,
+  "parameters_human": "124.5M",
+  "storage_bytes": 623574536,
+  "storage_human": "624 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ARC-Easy",
+      "metric": "zero-shot accuracy",
+      "value": 40.9
+    },
+    {
+      "task": null,
+      "dataset": "HellaSwag",
+      "metric": "zero-shot accuracy",
+      "value": 28.4
+    },
+    {
+      "task": null,
+      "dataset": "LAMBADA",
+      "metric": "zero-shot last-word accuracy",
+      "value": 20.7
+    }
+  ],
+  "sources": []
+}

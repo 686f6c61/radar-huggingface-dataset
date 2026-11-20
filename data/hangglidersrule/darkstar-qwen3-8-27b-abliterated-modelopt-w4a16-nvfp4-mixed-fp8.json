@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Telekom | Mobilfunk, Festnetz & Internet und TV",
-      "url": "https://www.telekom.de/start",
-      "snippet": "Bei der Telekom bekommen Sie Mobilfunk (5G/LTE), Festnetz & Internet sowie TV aus einer Hand – für zu Hause und unterwegs. …"
-    },
-    {
-      "title": "Telekom Login | Telekom Hilfe",
-      "url": "https://www.telekom.de/hilfe/vertrag-rechnung/telekom-login",
-      "snippet": "Sichern Sie Ihren Telekom Login vor Phishing E-Mails und unbefugten Zugriffen, indem Sie sich die Mehr-Faktor-Authentifizierung …"
-    },
-    {
-      "title": "Telekom Login",
-      "url": "http://homepagedesigner.telekom.de/",
-      "snippet": "Telekom Login © Telekom Deutschland GmbH 26.43.0"
-    },
-    {
-      "title": "Ferndiagnose | Telekom",
-      "url": "https://rescue.telekom.de/",
-      "snippet": "Telekom Ferndiagnose Für die Teilnahme an der Ferndiagnose gelten folgende Datenschutzhinweise, über die Sie sich hier …"
-    },
-    {
-      "title": "Smartphones, Tablets und Zubehör | Telekom Zubehörshop",
-      "url": "https://shop.telekom.de/",
-      "snippet": "Große Auswahl an Handys & Smartphones, Tablets und Zubehör. Geprüfte Sicherheit Schnelle Lieferzeiten Jetzt entdecken und …"
-    }
-  ]
+  "sources": []
 }

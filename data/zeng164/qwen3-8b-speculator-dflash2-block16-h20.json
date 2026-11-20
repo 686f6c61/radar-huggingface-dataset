@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "zeng164/Qwen3-8B-speculator.dflash2-block16-H20",
+  "slug": "zeng164-qwen3-8b-speculator-dflash2-block16-h20",
+  "author": "zeng164",
+  "url": "https://huggingface.co/zeng164/Qwen3-8B-speculator.dflash2-block16-H20",
+  "created_at": "2026-11-19T12:19:48.000Z",
+  "updated_at": "2026-11-20T08:58:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "speculators",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "speculators",
+    "safetensors",
+    "speculative-decoding",
+    "dflash2",
+    "qwen3",
+    "draft-model",
+    "custom_code",
+    "en",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1169573120,
+  "parameters_human": "1.17B",
+  "storage_bytes": 4834364175,
+  "storage_human": "4.8 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

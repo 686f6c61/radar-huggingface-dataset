@@ -2,111 +2,102 @@
 
 ## Resumen
 
-Bella Bartender Gemma E4B es un modelo conversacional con personalidad, resultado de un fine-tuning sobre `google/gemma-4-E4B-it`. Lo publica el usuario de Hugging Face juiceb0xc0de dentro de la serie "Bella Bartender", una línea de variantes de personalidad entrenadas siempre con el mismo corpus: 9.300 pares de conversación extraídos de una única voz humana (la del autor), sin datos sintéticos ni otros hablantes. El objetivo declarado es contrarrestar los reflejos de asistente del modelo base de Google (entusiasmo en mayúsculas, emojis, planes de acción numerados, cierre obligatoriamente optimista) y sustituirlos por un registro coloquial, directo y sin validación constante.
+Bella Bartender Gemma E4B es un ajuste fino (fine-tune) del modelo google/gemma-4-E4B-it, desarrollado por juiceb0xc0de y distribuido en formato GGUF. El objetivo del autor no es mejorar las capacidades cognitivas del modelo base, sino reemplazar su "personalidad" de asistente por una voz conversacional unica: un registro coloquial, en minusculas, sin emojis, sin listas numeradas y sin la tendencia compulsiva a validar o animar al usuario que caracteriza al Gemma original. El modelo conserva la arquitectura y el conocimiento del base, pero modifica el estilo de respuesta.
 
-El modelo se distribuye exclusivamente en formato GGUF, con el f16 como variante recomendada por el propio autor y Q8_0 como mínimo aceptable. Está pensado para generación de texto en inglés y su propósito no es el razonamiento formal ni las tareas de código, sino el diálogo abierto con una personalidad concreta y consistente. El repositorio ocupa 89,8 GB, lo que refleja que incluye varias cuantizaciones del mismo modelo.
+El modelo tiene 7.463.013.674 parametros totales (dato de safetensors) y se distribuye como cuantizaciones GGUF de un modelo base de tipo E4B. El autor recomienda encarecidamente ejecutar la version f16 (unos 15 GB) y advierte que cuantizaciones por debajo de Q8_0 degradan precisamente el rasgo que el fine-tune pretende introducir. La licencia es la Gemma de Google y el unico idioma declarado es el ingles.
 
-La relevancia de esta ficha es acotada pero clara: es un ejemplo de fine-tuning de personalidad sobre una base instruct moderna, con una metodología reproducible (un solo corpus, una sola voz, evaluación A/B contra el modelo base) y con benchmarks propios publicados en un dataset aparte. No es un modelo de propósito general ni compite en MMLU con los grandes instruct; su interés está en el control de estilo y tono.
+Es relevante ahora porque ejemplifica una categoria creciente de modelos: fine-tunes de personalidad sobre bases instruct, orientados a compania conversacional, escritura creativa y personajes, en lugar de a tareas de razonamiento o codigo. Su model card documenta explicitamente el proceso (9.300 pares de conversacion de una sola voz humana, sin datos sinteticos) y publica resultados de benchmarks con muestras pequenas, lo que permite evaluar con transparencia sus limites.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (arquitectura `gemma4_text`), 42 capas, hidden size 2.560, 8 cabezas de consulta y 2 cabezas clave/valor (grouped-query attention) |
-| Parametros totales | 7.463.013.674 (dato real de safetensors) |
-| Parametros activos | No aplica (no se describe como MoE en la informacion disponible) |
+| Arquitectura | Transformer (derivada de google/gemma-4-E4B-it); detalles de capas y atencion no disponibles |
+| Parametros totales | 7.463.013.674 |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF; F16 recomendado por el autor, Q8_0 como minimo indicado; el repositorio (89,8 GB) contiene mas variantes no detalladas en la informacion disponible |
+| Tipos de cuantizacion | GGUF; el autor menciona f16 y Q8_0 como minimo recomendado; el resto de niveles no se detalla |
 | Idiomas soportados | en (ingles) |
-| Licencia | gemma (Gemma Terms of Use) |
-| Formato de pesos | GGUF |
+| Licencia | gemma (Gemma Terms of Use de Google) |
+| Formato de pesos | GGUF (repo de 89,8 GB, con multiples cuantizaciones) |
 
 ## Arquitectura y entrenamiento
 
-La base es `google/gemma-4-E4B-it`, un transformer decoder-only con grouped-query attention segun el grafo de arquitectura publicado por terceros: 42 capas, hidden size de 2.560, 8 cabezas de consulta y 2 cabezas clave/valor. Sobre esa base se aplico un fine-tuning supervisado con un corpus propio de 9.300 pares de conversacion, todos procedentes de una unica voz humana, con el autor situado en el rol de asistente. No se menciona uso de RLHF, DPO ni datos sinteticos; el metodo descrito es aprendizaje por prediccion de las respuestas del propio autor.
+El modelo parte de google/gemma-4-E4B-it, un transformer instruct de la familia Gemma 4 con 7.463.013.674 parametros totales. No se dispone de informacion sobre el numero de capas, el mecanismo de atencion ni la longitud de contexto maxima del base en la informacion proporcionada. El fine-tune se realizo con Unsloth, segun las etiquetas del repositorio.
 
-La innovacion tecnica declarada no es arquitectonica sino de control de estilo: el autor sostiene que los reflejos conversacionales del modelo base (formato, entusiasmo, cierre optimista) no se pueden eliminar solo con prompting y que el fine-tuning es la via efectiva. Como consecuencia, el modelo se comporta de forma dependiente del registro de entrada: responde en minusculas, no produce emojis ni listas numeradas en las pruebas del autor, y puede cerrar una conversacion sin animo de consuelo. El autor advierte ademas que la cuantizacion degrada precisamente el rasgo que el modelo pretende ofrecer, de ahi la recomendacion de f16.
+El entrenamiento uso un corpus de 9.300 pares de conversacion extraidos de una unica voz humana (el propio autor), con el autor en el rol de asistente, de modo que el modelo aprende prediciendo sus respuestas. No se emplearon datos sinteticos ni otros hablantes. El objetivo declarado es eliminar los reflejos de asistente del base: puntuacion con emojis, entusiasmo en mayusculas, planes de accion numerados y cierre obligatorio en tono positivo. No se documenta el uso de RLHF o DPO, ni el numero de tokens de entrenamiento, ni la composicion del dataset mas alla de la descripcion cualitativa. La innovacion tecnica destacable no esta en la arquitectura sino en el metodo: un corpus mono-voz y mono-registro para imponer un estilo consistente y resistente al prompt.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles con una personalidad fija, coloquial y directa.
-- Mantenimiento de un registro coherente a lo largo de un dialogo: el modelo iguala el tono del usuario (formal, informal, breve).
-- Escritura creativa y respuestas con humor, sarcasmo o franqueza segun el contexto.
-- Respuestas cortas y sin formato estructurado: sin listas numeradas, sin emojis y sin cierres motivacionales, segun las pruebas del autor.
-- Razonamiento basico y tareas de logica simples: los benchmarks propios muestran resultados mixtos (70% en MuSR, 71% en BIG-Bench Hard sobre muestras pequenas, 0% en SimpleBench).
-- Capacidades multilingues: no disponibles; el modelo esta entrenado y etiquetado solo para ingles.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no documentado en la informacion proporcionada.
-- Capacidades especiales (vision, audio, thinking mode): no disponibles en la informacion proporcionada.
+- Generacion de texto conversacional en ingles con registro coloquial, minusculas y sin emojis.
+- Escritura creativa y respuestas con humor, sarcasmo y lenguaje malsonante cuando el contexto lo permite.
+- Coherencia de personaje a lo largo de conversaciones multi-turno, con menor tendencia a la validacion y al tono animico que el base.
+- Razonamiento basico y tareas de conocimiento general heredadas del modelo base (ver benchmarks: 71% en BIG-Bench Hard con muestra reducida).
+- Capacidad de seguir un system prompt que defina el escenario (por ejemplo, un bar) sin que el modelo introduzca por si mismo detalles de esa ocupacion.
+- No se documenta soporte de tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito.
+- Multilingue: solo ingles declarado; no hay evidencia de calidad en castellano.
 
 ## Casos de uso
 
-- Companero conversacional de proposito general: el modelo esta afinado para sostener charla abierta con un tono humano y sin la estructura de asistente del modelo base, adecuado para interfaces de chat donde se busca cercania y no respuestas enciclopédicas.
-- Prototipado de personajes para ficcion interactiva: sirve para dar voz a un personaje con registro estable, ya que el entrenamiento fuerza una sola voz consistente.
-- Simulacion de conversacion para guiones o narrativa: util para generar dialogos con habla coloquial, slang y frases cortas, alejadas del estilo pulido de un instruct convencional.
-- Aplicaciones de entretenimiento y compania: encaja en productos donde el valor esta en la sensacion de conversacion real y no en la precision factual.
-- Investigacion sobre control de personalidad en LLM: es un caso de estudio util para medir cuanto del comportamiento de asistente de una base instruct puede eliminarse solo con fine-tuning supervisado.
-- Evaluacion comparativa de cuantizaciones: dado que el autor documenta que la cuantizacion altera la personalidad, el modelo sirve para experimentos sobre perdida de estilo segun el nivel de cuantizacion (f16 frente a Q8_0 y menores).
-- Despliegue local en equipo reducido mediante GGUF: al requerir unos 15 GB en f16, es viable en una estacion de trabajo con una sola GPU consumer de gama alta para uso interactivo.
+- Companía conversacional: el modelo esta disenado para mantener charlas informales multi-turno con un tono humano y sin la estructura de asistente; encaja en aplicaciones de acompanamiento o chat de ocio donde la naturalidad pesa mas que la precision factual.
+- Personajes de ficcion interactiva: al mantener una voz consistente y resistir la deriva hacia el tono corporativo, sirve para NPCs o chatbots de rol en videojuegos y experiencias narrativas, con un system prompt que defina el personaje.
+- Escritura creativa asistida: util para generar dialogos con registro coloquial, giros humoristicos y respuestas secas; el autor lo orienta a creative-writing y el modelo evita listas y formalismos.
+- Simulacion de entrevistas o conversaciones dificiles: su tendencia a la franqueza y a no validar automaticamente permite practicar conversaciones donde se busca una respuesta directa en lugar de refuerzo positivo.
+- Prototipado de agentes con personalidad: como capa de generacion de respuestas en un pipeline donde otro componente gestiona herramientas, el modelo aporta el estilo; no se debe delegar en el el tool calling, que no esta documentado.
+- Pruebas de evaluacion de personalidad y estilo: util como caso de estudio para medir cuanto de la "personalidad" de un modelo instruct persiste tras un fine-tune mono-voz y para comparar f16 frente a cuantizaciones.
+- Despliegue local en ingles: con la version f16 (unos 15 GB) cabe en GPUs de consumo de gama alta y permite experimentar con un modelo conversacional sin depender de API.
 
 ## Benchmarks y rendimiento
 
-Todos los datos siguientes proceden de la model card del autor y de su dataset de resultados; las muestras son muy pequenas, lo que limita la significacion estadistica.
+Resultados publicados por el autor, con muestras pequenas y por tanto de alta varianza:
 
-| Benchmark | Resultado | Muestra |
+| Benchmark | Muestra | Resultado |
 |---|---|---|
-| MuSR | 70% (7/10) | 10 items |
-| SimpleBench (set publico) | 0% (0/10) | 10 items |
-| ZebraLogic | Pendiente de puntuacion | 10 items |
-| EQ-Bench v2 | 73,3 / 100 | 12 items |
-| BIG-Bench Hard | 71% (49/69) | 23 subtareas, 3 cada una |
-| Thematic Generalization | 50% (6/12) | 12 items |
-| LisanBench | 5,0 transiciones de media | 8 palabras iniciales (40 en total) |
-| Sudoku-Bench | no disponible (informacion truncada en la model card) | 6 rompecabezas |
+| MuSR | 10 items | 70% (7/10) |
+| SimpleBench | set publico | 0% (0/10) |
+| EQ-Bench v2 | 12 items | 73,3 / 100 |
+| BIG-Bench Hard | 23 subtareas, 3 cada una | 71% (49/69) |
+| Thematic Generalization | 12 items | 50% (6/12) |
+| LisanBench | 8 palabras iniciales | 5,0 transiciones medias (40 totales) |
+| Sudoku-Bench | 6 puzzles | 0% (0/6) |
+| NYT-Connections | 12 items | no disponible (dato truncado en la informacion) |
 
 No se han publicado comparaciones directas con otros modelos en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: unos 15 GB en F16, segun el propio autor ("if you can spare ~15GB, spend it"). Q8_0 requiere menos, aunque el autor no cifra el consumo exacto; por debajo de Q8_0 el autor considera que el modelo cambia de comportamiento.
-- GPU recomendadas: no especificadas en la informacion disponible. Por tamano, F16 encaja en RTX 4090 (24 GB), RTX 3090 (24 GB), A100 40 GB o H100; Q8_0 permite tarjetas de 16 GB y posiblemente menos.
-- Cabe en GPU consumer: si, en tarjetas de 24 GB con F16 sin margen amplio, y con holgura en cuantizaciones inferiores.
-- Opciones de despliegue: al distribuirse en GGUF, es compatible con llama.cpp y Ollama; el autor no confirma explicitamente otras herramientas (vLLM, TGI) en la informacion disponible.
+- VRAM estimada: unos 15 GB para la version f16, segun el propio autor; Q8_0 como minimo recomendado (aproximadamente 8-9 GB, estimacion a partir del tamano de parametros); cuantizaciones menores no recomendadas por el autor.
+- GPU recomendadas: no especificadas por el autor. Por tamano, una RTX 4090 (24 GB) o superior permite f16 con holgura; A100 y H100 son adecuadas para servir varias instancias.
+- GPU de consumo: si, en tarjetas con al menos 16 GB para f16 y 10-12 GB para Q8_0; no cabe en GPUs de 8 GB en f16.
+- Opciones de despliegue: al ser GGUF, es compatible con llama.cpp, Ollama y otros runners GGUF; el repositorio incluye la etiqueta endpoints_compatible. No se documenta soporte de vLLM o TGI, que requieren otros formatos.
 - Latencia y throughput: no disponibles.
-- Ajustes de muestreo recomendados por el autor: temperature 1.0, top_k 64, top_p 0.95, min_p 0.0.
 
 ## Comparativa con modelos similares
 
-La informacion disponible solo permite comparar contra la propia linea Bella y contra la base, con datos parciales.
-
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bella-bartender-gemma-e4b (este modelo) | 7,46 B | no disponible | gemma | GGUF | Fine-tuning de personalidad, 9.300 pares, solo ingles |
-| google/gemma-4-E4B-it (base) | no disponible | no disponible | gemma | safetensors (presumiblemente) | Modelo instruct original; reflejos de asistente que el fine-tuning elimina |
-| juiceb0xc0de/bella-bartender-gemma-e2b | no disponible | no disponible | gemma | no disponible | Variante de la misma serie, fine-tuning sobre google/gemma-3n-E2B-it |
+| Bella Bartender Gemma E4B | 7,46 B | no disponible | Fine-tune de personalidad mono-voz en ingles | Gemma | GGUF en Hugging Face |
+| google/gemma-4-E4B-it | 7,46 B | no disponible | Instruct generalista de Google | Gemma | Pesos oficiales |
+| Fine-tunes de rol y compania sobre bases de ~7-8 B | variable | variable | Personalidad y personajes | variable | Comunidad |
 
-No se dispone de datos de benchmarks ni de contexto de los modelos comparados en la informacion proporcionada.
+No se dispone de datos de benchmarks comparativos con alternativas concretas en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Riesgo de alucinacion: es un modelo conversacional afinado para estilo, no para precision factual; no se documentan evaluaciones de veracidad.
-- Sesgos conocidos: no documentados en la informacion disponible. El corpus refleja una unica voz humana, lo que introduce inevitablemente la perspectiva y los sesgos de esa persona.
-- Idiomas: soporte exclusivo de ingles; no hay datos de rendimiento en castellano ni en otras lenguas.
-- Longitud de contexto: no especificada; conviene no asumir ventanas largas.
-- Muestras de benchmark muy pequenas (10-23 items), por lo que los porcentajes publicados deben interpretarse como indicativos y no como medidas robustas. El 0% en SimpleBench es un resultado notablemente bajo.
-- Sensibilidad a la cuantizacion: el autor afirma que la cuantizacion degrada la personalidad; por debajo de Q8_0 el comportamiento puede diferir del modelo evaluado.
-- Restricciones de licencia: se distribuye bajo la licencia Gemma, que impone condiciones de uso (incluidas clausulas de uso aceptable y obligaciones de atribucion) y no es una licencia permisiva al uso como MIT o Apache 2.0. Debe revisarse antes de cualquier uso comercial.
-- Dependencia del prompting: el autor advierte que el modelo responde al registro y que introducir la palabra "bartender" en el system prompt activa un comportamiento de oficio (ofrecer bebidas, inventar cocteles) que no forma parte de su entrenamiento.
-- Fuera de distribucion: los mensajes tipo saludo corto no funcionan bien; el modelo espera conversacion real.
-- Advertencia de fecha: el repositorio figura creado y actualizado en septiembre de 2026, fecha posterior a la disponible en el contexto habitual; conviene verificar la vigencia de los enlaces.
+- Solo ingles declarado; el rendimiento en castellano no esta evaluado y probablemente sea deficiente en el registro coloquial entrenado.
+- Riesgo de alucinacion: el corpus de 9.300 pares conversacionales no aporta conocimiento factual; el modelo hereda los fallos del base y ademas prioriza el estilo sobre la precision.
+- Resultados muy debiles en tareas de razonamiento estructurado: 0% en SimpleBench y 0% en Sudoku-Bench con las muestras publicadas.
+- La calidad depende fuertemente de la cuantizacion: el autor advierte que por debajo de Q8_0 el modelo pierde el rasgo que lo define.
+- Sensible al registro del prompt: un system prompt corporativo produce respuestas corporativas; los saludos cortos estan fuera de distribucion.
+- No se debe incluir la palabra "bartender" en el system prompt si se busca el comportamiento por defecto, ya que el base reacciona interpretando la ocupacion.
+- Sesgos: al entrenarse con una unica voz humana, el modelo reproduce los sesgos, el humor y los limites de esa persona; no hay documentacion de mitigacion.
+- Licencia Gemma: el uso comercial esta sujeto a los terminos de Google, que incluyen restricciones de uso aceptable y obligaciones de atribucion; conviene revisarlos antes de desplegar.
+- Muestras de benchmark muy pequenas (6-23 items), insuficientes para conclusiones robustas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/juiceb0xc0de/bella-bartender-gemma-e4b-gguf
-- Variante de la serie (GGUF): https://huggingface.co/juiceb0xc0de/bella-bartender-gemma-e4b-GGUF
-- Modelo hermano E2B: https://huggingface.co/juiceb0xc0de/bella-bartender-gemma-e2b
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
-- Grafo de arquitectura (terceros): https://hfviewer.com/juiceb0xc0de/bella-bartender-gemma-e4b-GGUF
-- Ficha en directorio de terceros: https://free2aitools.com/model/juiceb0xc0de/bella-bartender-gemma-e4b-gguf
-- Endpoint de inferencia (terceros): https://friendli.ai/models/juiceb0xc0de/bella-bartender-gemma-e4b-GGUF
-- Dataset de resultados de benchmarks: https://huggingface.co/datasets/juiceb0xc0de/bella-bench-results
+- Resultados de benchmarks (dataset del autor): https://huggingface.co/datasets/juiceb0xc0de/bella-bench-results
+- Unsloth: https://github.com/unslothai/unsloth
+- Terminos de licencia Gemma: https://ai.google.dev/gemma/terms

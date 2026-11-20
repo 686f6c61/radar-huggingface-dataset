@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "SZLHOLDINGS/salad-ring-ouro-l118",
+  "slug": "szlholdings-salad-ring-ouro-l118",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/salad-ring-ouro-l118",
+  "created_at": "2026-11-19T04:45:43.000Z",
+  "updated_at": "2026-11-20T05:21:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fixing Flickering Blue Circle Next to Cursor in Microsoft Word 2019",
+      "url": "https://www.justanswer.com/microsoft-office/g1cy9-word-2019-cursor-flickering-blue-ring-arround.html?msockid=0bba5be6f78561193a3343f1f68360f4",
+      "snippet": "Customer: I'm seeking a second opinion regarding Microsoft Word 2019; the cursor has a flickering blue ring around the arrow. Why …Read more"
+    }
+  ]
+}

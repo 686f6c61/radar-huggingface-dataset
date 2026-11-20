@@ -5,7 +5,7 @@
   "author": "meatloafer",
   "url": "https://huggingface.co/meatloafer/efficientnet-b0-stage-attention",
   "created_at": "2026-11-17T19:59:28.000Z",
-  "updated_at": "2026-11-17T20:34:44.000Z",
+  "updated_at": "2026-11-19T14:15:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -13,6 +13,8 @@
   "languages": [],
   "tags": [
     "keras",
+    "arxiv:2611.23446",
+    "arxiv:2611.23445",
     "computer-vision",
     "image-classification",
     "efficientnet",

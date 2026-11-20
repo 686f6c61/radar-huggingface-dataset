@@ -49,8 +49,8 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 132,
-  "downloads_30d": 1078,
+  "likes": 133,
+  "downloads_30d": 1155,
   "trending_score": 10,
   "parameters": 27781427952,
   "parameters_human": "27.78B",
@@ -70,31 +70,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ZHMS",
-      "url": "https://www.meteo.co.me/",
-      "snippet": "22 hours ago · HMZ Srbije HMZ Hrvatske HMZ BiH HMZ Makedonije Pristup informacijama Vodič za pristup informacijama Zahtjev …"
-    },
-    {
-      "title": "medismera/Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic · Hugging Face",
-      "url": "https://huggingface.co/medismera/Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic",
-      "snippet": "medismera/Qwen3.8-27B-OBLITERATED-Mythos-Class-Agenticis a production-engineered configuration, tokenizer, and reasoning upgrade for Qwen3.8-27B-OBLITERATED. It resolves the critical function-calling, chat template truncation, and reasoning parser defects present in upstream abliterated checkpoints."
-    },
-    {
-      "title": "Seguimento - Incêndios 2026 | MeteoPT.com - Fórum Português de ...",
-      "url": "https://www.meteopt.com/forum/topico/seguimento-incendios-2026.11465/",
-      "snippet": "Jan 6, 2026 · Tópico para seguimento de incêndios em 2026 Link's úteis Instituto do Mar e da Atmosfera - Índice Risco de Incêndio..."
-    },
-    {
-      "title": "Qwen/Qwen3.8-27B · Hugging Face",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "snippet": "Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to ..."
-    },
-    {
-      "title": "METEOGRAMI",
-      "url": "https://meteo.co.me/newmetgrams/index_oper2.php",
-      "snippet": "more points in the same time (max 20) Position: Municipality:"
-    }
-  ]
+  "sources": []
 }

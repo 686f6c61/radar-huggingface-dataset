@@ -22,8 +22,8 @@
     "pruna-ai",
     "ml-intern",
     "arxiv:2609.35768",
-    "base_model:PrunaAI/P-H3-Image",
-    "base_model:adapter:PrunaAI/P-H3-Image",
+    "base_model:PrunaAI/P-Image-OSS",
+    "base_model:adapter:PrunaAI/P-Image-OSS",
     "license:other",
     "region:us"
   ],

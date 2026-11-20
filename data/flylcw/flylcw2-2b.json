@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "flylcw/flylcw2-2B",
+  "slug": "flylcw-flylcw2-2b",
+  "author": "flylcw",
+  "url": "https://huggingface.co/flylcw/flylcw2-2B",
+  "created_at": "2026-11-20T05:43:14.000Z",
+  "updated_at": "2026-11-20T06:26:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "qwen3_5",
+    "chinese",
+    "text-only",
+    "conversational",
+    "zh",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2390384448,
+  "parameters_human": "2.39B",
+  "storage_bytes": 4801085816,
+  "storage_human": "4.8 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

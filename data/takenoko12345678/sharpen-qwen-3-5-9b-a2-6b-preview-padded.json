@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 16,
+  "downloads_30d": 17,
   "trending_score": 0,
   "parameters": 18543997568,
   "parameters_human": "18.54B",
-  "storage_bytes": 37108063717,
-  "storage_human": "37.1 GB",
+  "storage_bytes": 72161896277,
+  "storage_human": "72.2 GB",
   "context_length": null,
   "base_model": "Takenoko12345678/Sharpen-Qwen-3.5-9B-A2.6B-Preview",
   "formats": [

@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1065,
+  "downloads_30d": 1086,
   "trending_score": 0,
   "parameters": 596049920,
   "parameters_human": "596.0M",
@@ -55,16 +55,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Qwen/Qwen3-0.6B · Hugging Face",
-      "url": "https://huggingface.co/Qwen/Qwen3-0.6B",
-      "snippet": "Text Generation model with 0.8B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "README.md · Qwen/Qwen3-0.6B at refs/pr/1 - Hugging Face",
-      "url": "https://huggingface.co/Qwen/Qwen3-0.6B/blob/refs%2Fpr%2F1/README.md",
-      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual ..."
-    }
-  ]
+  "sources": []
 }

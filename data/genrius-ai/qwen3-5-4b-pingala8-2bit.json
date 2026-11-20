@@ -105,31 +105,5 @@
       "value": 35.51
     }
   ],
-  "sources": [
-    {
-      "title": "GitHub - Genrius-AI/pingala8-llm: Pingala-8: small-state coset trellis ...",
-      "url": "https://github.com/Genrius-AI/pingala8-llm/tree/main/",
-      "snippet": "The models follow their base-model licenses: the Qwen3-4B file is Apache-2.0 (from Qwen3-4B); the Llama-3.1-8B file is under the Llama 3.1 Community License and its Acceptable Use Policy."
-    },
-    {
-      "title": "pingala8-llm/README.md at main · Genrius-AI/pingala8-llm",
-      "url": "https://github.com/Genrius-AI/pingala8-llm/blob/main/README.md",
-      "snippet": "The models follow their base-model licenses: the Qwen3-4B file is Apache-2.0 (from Qwen3-4B); the Llama-3.1-8B file is under the Llama 3.1 Community License and its Acceptable Use Policy."
-    },
-    {
-      "title": "How to Run a 4B LLM Locally on Windows with a Small NVIDIA GPU (3 Steps)",
-      "url": "https://dev.to/genrius_ai/how-to-run-a-4b-llm-locally-on-windows-with-a-small-nvidia-gpu-3-steps-249k",
-      "snippet": "It downloads the two model parts, 4B-csq-vr3-00001-of-00002.gguf and 4B-csq-vr3-00002-of-00002.gguf, from the Genrius-AI/Qwen3-4B-Pingala8-2bit repository on Hugging Face, using the curl.exe built into Windows 10 and 11. A part that is already in models is skipped, which is why later starts are quick."
-    },
-    {
-      "title": "Qwen3.5-4B: The Small AI Model That Thinks, Sees, and Runs on Your ...",
-      "url": "https://firethering.com/qwen3-5-4b-local-ai-model/",
-      "snippet": "Qwen3.5-4B doesn&#x27;t seem to have gotten that memo. Alibaba just dropped Qwen3.5, and the 4B version is the one worth paying attention to. It thinks before it answers, reads images and video, handles 201 languages, and sits on a context window of 262,144 tokens, longer than most models ten times its size."
-    },
-    {
-      "title": "qwen3.5:4b - ollama.com",
-      "url": "https://ollama.com/library/qwen3.5:4b",
-      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
-    }
-  ]
+  "sources": []
 }

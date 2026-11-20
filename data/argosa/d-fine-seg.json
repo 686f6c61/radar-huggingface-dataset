@@ -67,6 +67,18 @@
       "dataset": "Cityscapes",
       "metric": "Pixel acc (val)",
       "value": 97.1
+    },
+    {
+      "task": "Keypoint Detection",
+      "dataset": "COCO",
+      "metric": "Keypoint AP (val2017)",
+      "value": 65.4
+    },
+    {
+      "task": "Keypoint Detection",
+      "dataset": "COCO",
+      "metric": "Person box AP (val2017)",
+      "value": 64.2
     }
   ],
   "sources": []

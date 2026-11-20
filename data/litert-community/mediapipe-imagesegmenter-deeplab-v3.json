@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/MediaPipe-ImageSegmenter-DeepLab-V3",
   "created_at": "2026-11-18T23:07:27.000Z",
-  "updated_at": "2026-11-18T23:30:58.000Z",
+  "updated_at": "2026-11-19T20:33:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-segmentation",

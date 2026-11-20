@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "jramduran/animals10-cnn-scratch",
+  "slug": "jramduran-animals10-cnn-scratch",
+  "author": "jramduran",
+  "url": "https://huggingface.co/jramduran/animals10-cnn-scratch",
+  "created_at": "2026-11-20T05:17:07.000Z",
+  "updated_at": "2026-11-20T05:17:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "image-classification",
+    "animals-10",
+    "cnn",
+    "dataset:34data/animal-10",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3121445,
+  "storage_human": "3 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Build a Cryptocurrency Mining Rig from Scratch",
+      "url": "https://www.softwaretestinghelp.com/how-to-build-a-cryptocurrency-mining-rig/",
+      "snippet": "Jun 12, 2026 · Complete step-wise guide to Build a Cryptocurrency Mining Rig, including the things required in the mining process, …"
+    },
+    {
+      "title": "DIY Bitcoin Mining Rig: Assembling Your Own ASIC Miner from a Kit",
+      "url": "https://d-central.tech/diy-bitcoin-mining-rig-building-your-own-asic-miner-from-scratch/",
+      "snippet": "Jun 1, 2024 · That’s the actual DIY mining path — not a shortcut to cheap hardware, but a route to real knowledge and a working …"
+    }
+  ]
+}

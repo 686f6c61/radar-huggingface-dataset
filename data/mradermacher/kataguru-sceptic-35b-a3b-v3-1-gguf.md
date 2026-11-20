@@ -2,49 +2,52 @@
 
 ## Resumen
 
-Kataguru-Sceptic-35B-A3B-v3.1-GGUF es una distribucion de pesos cuantizados en formato GGUF del modelo Kataguru-Sceptic-35B-A3B-v3.1, publicada por el usuario mradermacher en Hugging Face. El nombre del modelo sugiere una arquitectura de mezcla de expertos (MoE) con 35.000 millones de parametros totales y 3.000 millones de parametros activos por token (notacion A3B), aunque esta informacion no se ha podido verificar en la documentacion proporcionada. El repositorio es una conversión estática de los pesos originales del autor kataguru, orientada a su uso en herramientas de inferencia local compatibles con GGUF.
+Kataguru-Sceptic-35B-A3B-v3.1 es un modelo de lenguaje de tipo Mixture of Experts (MoE) desarrollado por kataguru, especializado en programación industrial y automatización. Con 35.247.133.824 parámetros totales y una arquitectura basada en Qwen3.5 MoE (según el tag `qwen3_5_moe`), el modelo está orientado a tareas de codificación en entornos industriales: PLC, CNC, G-code, IEC 61131-3, Structured Text, TwinCAT, Beckhoff, Siemens SCL, OPC-UA, EtherCAT, PROFINET y seguridad funcional. La versión aquí descrita es la cuantización GGUF publicada por mradermacher.
 
-La relevancia de esta publicacion radica en que facilita el despliegue del modelo en entornos con recursos limitados mediante cuantizaciones de baja precision (desde Q2_K hasta Q8_0, ademas de IQ4_XS y F16), lo que permite ejecutarlo en hardware de consumo. No obstante, la informacion disponible es muy escasa: no se detalla la licencia, los idiomas soportados, la longitud de contexto ni los datos de entrenamiento, y el repositorio no registra descargas ni interacciones en el momento de la consulta.
+El modelo se distribuye bajo licencia Apache 2.0 y soporta inglés y finés (`en`, `fi`). Incluye capacidades multimodales (visión) mediante el proyector `mmproj` en los archivos GGUF, así como soporte de tool calling, function calling, razonamiento agéntico, RAG, matemáticas y programación de sistemas en Rust, C++ y Python. La nomenclatura "Sceptic" y el tag `uncensored` sugieren un ajuste orientado a reducir rechazos en dominios técnicos especializados.
 
-El dato de parametros totales reportado en los safetensors del repositorio (446.571.248, aproximadamente 0,45 mil millones) entra en contradiccion con el nombre del modelo (35B-A3B), lo que impide confirmar el tamano real del modelo original. Esta discrepancia debe tenerse en cuenta antes de cualquier evaluacion o despliegue.
+La relevancia de este modelo radica en su especialización vertical: frente a modelos generalistas, cubre dominios de automatización industrial y programación de controladores que rara vez aparecen en los datasets de entrenamiento convencionales. La disponibilidad de cuantizaciones GGUF desde Q2_K (13,3 GB) hasta Q8_0 (37,6 GB) facilita su despliegue en hardware de consumo, algo poco habitual en modelos de 35B.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre sugiere MoE con 35B totales y 3B activos, sin confirmar) |
-| Parametros totales | 446.571.248 segun safetensors del repo (en contradiccion con el nombre 35B-A3B) |
-| Parametros activos | no disponible (el nombre sugiere 3B activos, sin confirmar) |
+| Arquitectura | Mixture of Experts (MoE), tag `qwen3_5_moe` |
+| Parametros totales | 35.247.133.824 |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-Q8_0, mmproj-f16 |
+| Idiomas soportados | en, fi |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura interna del modelo original Kataguru-Sceptic-35B-A3B-v3.1 en la documentacion disponible. La nomenclatura del nombre (35B-A3B) es consistente con un transformer de mezcla de expertos con aproximadamente 35.000 millones de parametros totales y 3.000 millones activos por token, pero no se confirma en la model card ni en los resultados de busqueda. Tampoco se detalla el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO.
+El modelo base es un transformer con arquitectura Mixture of Experts, identificado por el tag `qwen3_5_moe`, lo que indica una derivación de la familia Qwen3.5 MoE. El nombre "A3B" en la denominación sugiere aproximadamente 3.000 millones de parámetros activos por token sobre un total de 35.247 millones, aunque el dato exacto de parámetros activos no está publicado en la información disponible. El modelo base se distribuye en formato safetensors y bf16, y esta versión es una conversión estática a GGUF realizada por mradermacher.
 
-La unica informacion tecnica verificable procede de los metadatos de la conversion GGUF: se trata de una cuantizacion estatica con `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica que los pesos se convirtieron desde el formato Hugging Face original antes de cuantizarse. No se ha incluido el tensor `mmproj` (proyector multimodal), aunque una de las fuentes de busqueda describe el modelo como "Image-Text-to-Text", lo que sugiere capacidades de vision en el modelo base que no estarian disponibles en esta distribucion GGUF concreta.
+No se dispone de información detallada sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF, DPO o ajuste por preferencias. Los tags del modelo indican especialización en dominios de automatización industrial, programación de sistemas y razonamiento, además de capacidades multimodales mediante un proyector de visión (`mmproj`). Existe una variante con cuantización ponderada/imatrix publicada en el repositorio `mradermacher/Kataguru-Sceptic-35B-A3B-v3.1-i1-GGUF`.
 
 ## Capacidades
 
-- Generacion de texto: capacidad basica esperada de un modelo de lenguaje, sin confirmar en la documentacion.
-- Capacidades multimodales (imagen-texto): mencionadas en una fuente de busqueda para el modelo base, pero no incluidas en esta conversion GGUF al no aparecer el tensor mmproj.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Modo de razonamiento explicito (thinking mode): no disponible.
-- Capacidades de codigo y matematicas: no disponible.
+- Generación de texto y razonamiento general, con énfasis en dominios STEM y matemáticas.
+- Programación especializada en automatización industrial: PLC, CNC, G-code, IEC 61131-3, Structured Text, TwinCAT, Beckhoff, Siemens SCL, OPC-UA, EtherCAT y PROFINET.
+- Programación de sistemas en Rust, C++ y Python.
+- Tool calling y function calling.
+- Razonamiento agéntico multi-paso y soporte para pipelines RAG.
+- Capacidades multimodales de visión (vision-language) mediante el proyector `mmproj` incluido en los GGUF.
+- Multilingüe limitado a inglés y finés.
+- Modelo marcado como `uncensored`, orientado a reducir rechazos en consultas técnicas.
+- Compatible con endpoints (`endpoints_compatible`) y con vLLM para el modelo base.
 
 ## Casos de uso
 
-- Inferencia local en hardware de consumo: las cuantizaciones Q2_K a Q4_K_M permiten ejecutar el modelo con llama.cpp u Ollama en equipos con GPU de gama media o incluso solo CPU, siempre que se confirme el tamano real del modelo.
-- Prototipado rapido sin infraestructura dedicada: al estar en formato GGUF, se puede integrar en aplicaciones de escritorio y scripts de Python mediante llama-cpp-python para pruebas de concepto.
-- Evaluacion comparativa de cuantizaciones: el repositorio incluye doce variantes de cuantizacion, lo que facilita medir el compromiso entre calidad y uso de memoria en un mismo modelo.
-- Despliegue en entornos con memoria muy restringida: la variante Q2_K reduce al minimo el espacio ocupado, adecuada para dispositivos embebidos o contenedores con limites estrictos de RAM.
-- Experimentacion con modelos MoE: si se confirma la arquitectura de mezcla de expertos, el modelo puede servir para estudiar el comportamiento de modelos dispersos en inferencia local.
-- Uso como base para fine-tuning ligero: los pesos F16 y Q8_0 permiten partir de una version de alta fidelidad para adaptaciones posteriores, aunque la licencia debe verificarse antes de cualquier uso comercial.
+- Generación y revisión de código PLC: el modelo puede producir y auditar programas en Structured Text (IEC 61131-3) para controladores Siemens y Beckhoff, aprovechando su entrenamiento específico en estos dialectos.
+- Programación CNC y G-code: útil para generar trayectorias, macros y postprocesadores en entornos de mecanizado, un dominio con escasa cobertura en modelos generalistas.
+- Integración en pipelines de automatización industrial: generación de configuraciones OPC-UA, EtherCAT y PROFINET, y asistencia en la puesta en marcha de celdas de fabricación.
+- Asistente de ingeniería de sistemas en Rust, C++ y Python: revisión de código, generación de tests y refactorización en proyectos de sistemas embebidos.
+- Agentes de soporte técnico especializado: con tool calling y RAG, puede consultar documentación de fabricantes (Beckhoff, Siemens) y responder consultas multi-turno sobre configuración de equipos.
+- Análisis de documentación técnica con visión: al incluir proyector multimodal, puede interpretar esquemas eléctricos, diagramas de bloques y capturas de entornos de programación industrial.
+- Validación de seguridad funcional: asistencia en la revisión de lógica de control con requisitos de functional safety, aunque sin sustituir la certificación humana.
 
 ## Benchmarks y rendimiento
 
@@ -52,31 +55,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible con precision debido a la discrepancia en el numero de parametros. El repositorio ocupa 1,5 GB, lo que sugiere que las cuantizaciones son de tamano reducido y compatibles con GPUs de consumo.
-- GPU recomendadas: no disponible. Si el modelo real tuviera 35B totales, las cuantizaciones Q4_K_M requeririan aproximadamente 20 GB de VRAM; si el modelo real tuviera 0,45B parametros, cabria en cualquier GPU moderna.
-- GPU de consumo: probablemente compatible con RTX 3060, RTX 4060, RTX 4090 y superiores en las cuantizaciones bajas, sin confirmacion oficial.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y llama-cpp-python, al tratarse de formato GGUF.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia según cuantización: Q2_K ~13,3 GB; Q3_K_S ~15,5 GB; Q4_K_M ~21,7 GB; Q5_K_M ~25,3 GB; Q6_K ~29,1 GB; Q8_0 ~37,6 GB. Añadir entre 0,7 y 1,0 GB adicionales si se usa el proyector multimodal.
+- GPU recomendadas: para Q4_K_M o superiores, GPU con 24 GB o más (RTX 3090, RTX 4090, A100 40 GB, H100). Para Q2_K o Q3_K_S, GPU de 16 GB pueden ser suficientes.
+- Cabe en GPU de consumo: sí, en RTX 4090 (24 GB) con cuantizaciones Q4_K_M o inferiores; en RTX 3090 igual; en GPUs de 16 GB solo con Q2_K o Q3_K_S.
+- Opciones de despliegue: llama.cpp, Ollama, y vLLM para el modelo base en safetensors. El modelo base es compatible con endpoints.
+- Latencia y throughput: no disponibles en la información proporcionada. Al ser MoE con aproximadamente 3B activos, se espera un throughput superior al de un modelo denso de 35B, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de informacion suficiente sobre el modelo base ni sobre alternativas comparables de la misma categoria para establecer una comparacion rigurosa.
+| Modelo | Parámetros | Contexto | Licencia | Especialización | Formato |
+|---|---|---|---|---|---|
+| Kataguru-Sceptic-35B-A3B-v3.1 | 35,2B (MoE) | no disponible | Apache 2.0 | Automatización industrial, PLC, CNC | GGUF, safetensors |
+| Qwen3.5 MoE (base genérica) | no disponible | no disponible | no disponible | Generalista, código | safetensors |
+| Modelos de código generalistas (p. ej. CodeLlama, DeepSeek-Coder) | variable | variable | variable | Código general | GGUF, safetensors |
+
+No se dispone de datos de rendimiento comparativo publicados para este modelo frente a alternativas de la misma categoría. La comparativa se limita a parámetros, licencia y especialización declarada en los tags.
 
 ## Limitaciones y advertencias
 
-- Discrepancia critica en el numero de parametros: el nombre indica 35B-A3B, pero los safetensors del repositorio reportan 446.571.248 parametros; es imprescindible verificar el modelo original antes de usarlo en produccion.
-- Licencia no especificada: no se puede garantizar el uso comercial ni la redistribucion.
-- Idiomas no documentados: se desconoce el soporte multilingue real.
-- Longitud de contexto desconocida: no se puede planificar su uso en tareas de contexto largo.
-- Ausencia de benchmarks: no hay evidencia publica de su calidad en tareas estandar.
-- Sin datos de entrenamiento ni alineacion: se desconoce el riesgo de sesgos y alucinaciones.
-- Repositorio sin descargas ni interacciones: no hay validacion por parte de la comunidad.
-- Capacidades multimodales no incluidas: la conversion GGUF no incorpora el proyector mmproj, por lo que la entrada de imagenes no estaria disponible aunque el modelo base la soporte.
-- Las cuantizaciones de baja precision (Q2_K, Q3_K_S) pueden degradar notablemente la calidad de las respuestas.
+- Sesgos conocidos: no documentados en la información disponible; al estar entrenado principalmente en inglés y finés, el rendimiento en castellano no está garantizado.
+- Riesgo de alucinación: presente como en cualquier LLM, especialmente crítico en dominios de seguridad funcional y automatización industrial, donde una salida incorrecta puede tener consecuencias físicas.
+- Limitaciones de contexto e idioma: solo se declaran inglés y finés; la longitud de contexto no está publicada.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el modelo base podría tener condiciones adicionales no reflejadas en esta cuantización; conviene revisar la licencia del modelo original `kataguru/Kataguru-Sceptic-35B-A3B-v3.1`.
+- Caveat para producción: el tag `uncensored` implica que el modelo puede generar contenido sin filtros, lo que exige validación humana en entornos industriales regulados.
+- El dato de parámetros activos no está confirmado; el sufijo "A3B" es una inferencia nominal, no un dato verificado.
+- No apto para certificación de seguridad funcional sin revisión humana: el modelo es una herramienta de asistencia, no un sustituto de la validación normativa.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/Kataguru-Sceptic-35B-A3B-v3.1-GGUF
-- Modelo original: https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-v3.1
-- Repositorio GGUF del autor original: https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-v3.1-GGUF
-- Arbol de archivos del repositorio: https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-v3.1-GGUF/tree/main
+- Hugging Face (GGUF): https://huggingface.co/mradermacher/Kataguru-Sceptic-35B-A3B-v3.1-GGUF
+- Modelo base: https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-v3.1
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/Kataguru-Sceptic-35B-A3B-v3.1-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Kataguru-Sceptic-35B-A3B-v3.1-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantización (mradermacher): https://huggingface.co/mradermacher/model_requests

@@ -1,0 +1,61 @@
+{
+  "schema": 2,
+  "id": "ameraizam31/whisper-tiny-finetuned-minds14",
+  "slug": "ameraizam31-whisper-tiny-finetuned-minds14",
+  "author": "ameraizam31",
+  "url": "https://huggingface.co/ameraizam31/whisper-tiny-finetuned-minds14",
+  "created_at": "2026-11-20T10:40:47.000Z",
+  "updated_at": "2026-11-20T10:41:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "en",
+    "dataset:PolyAI/minds14",
+    "base_model:openai/whisper-tiny",
+    "base_model:finetune:openai/whisper-tiny",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37760640,
+  "parameters_human": "37.8M",
+  "storage_bytes": 151081823,
+  "storage_human": "151 MB",
+  "context_length": null,
+  "base_model": "openai/whisper-tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "MINDS-14 (en-US)",
+      "metric": "Wer",
+      "value": 0.31582054309327035
+    }
+  ],
+  "sources": []
+}

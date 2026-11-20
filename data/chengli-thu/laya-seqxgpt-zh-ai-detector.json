@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "chengli-thu/laya-seqxgpt-zh-ai-detector",
+  "slug": "chengli-thu-laya-seqxgpt-zh-ai-detector",
+  "author": "chengli-thu",
+  "url": "https://huggingface.co/chengli-thu/laya-seqxgpt-zh-ai-detector",
+  "created_at": "2026-11-20T08:53:41.000Z",
+  "updated_at": "2026-11-20T08:58:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "chinese",
+    "ai-detection",
+    "token-classification",
+    "zh",
+    "base_model:convaiinnovations/laya-multilingual",
+    "base_model:finetune:convaiinnovations/laya-multilingual",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 309163407,
+  "parameters_human": "309.2M",
+  "storage_bytes": 1271032168,
+  "storage_human": "1.3 GB",
+  "context_length": null,
+  "base_model": "convaiinnovations/laya-multilingual",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

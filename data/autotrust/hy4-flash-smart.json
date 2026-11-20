@@ -5,7 +5,7 @@
   "author": "autotrust",
   "url": "https://huggingface.co/autotrust/hy4-flash-smart",
   "created_at": "2026-11-19T09:34:40.000Z",
-  "updated_at": "2026-11-19T09:35:44.000Z",
+  "updated_at": "2026-11-20T04:27:29.000Z",
   "license": "tencent-hy-license",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -31,13 +31,13 @@
     "8-bit",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 95,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 144761604413,
   "parameters_human": "144.76B",
-  "storage_bytes": 164743214097,
-  "storage_human": "164.7 GB",
+  "storage_bytes": 164915577237,
+  "storage_human": "164.9 GB",
   "context_length": null,
   "base_model": "tencent/Hy4-flash, atakans/Hy4-flash-NVFP4",
   "formats": [
@@ -50,8 +50,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "autotrust/hy4-flash-concise",
+  "renamed_at": "2026-11-20T06:00:10.351Z",
   "benchmarks": [],
   "sources": []
 }

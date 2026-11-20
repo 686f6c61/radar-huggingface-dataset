@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/MediaPipe-TextEmbedder-Universal-Sentence-Encoder",
   "created_at": "2026-11-18T23:07:51.000Z",
-  "updated_at": "2026-11-18T23:40:25.000Z",
+  "updated_at": "2026-11-19T20:34:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",

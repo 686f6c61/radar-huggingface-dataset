@@ -5,7 +5,7 @@
   "author": "capyctl",
   "url": "https://huggingface.co/capyctl/gpt-oss-20b-MXFP4-FP8",
   "created_at": "2026-11-19T21:59:34.000Z",
-  "updated_at": "2026-11-19T22:11:01.000Z",
+  "updated_at": "2026-11-20T01:11:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

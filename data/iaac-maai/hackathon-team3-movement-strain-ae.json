@@ -5,7 +5,7 @@
   "author": "iaac-maai",
   "url": "https://huggingface.co/iaac-maai/hackathon-team3-movement-strain-ae",
   "created_at": "2026-11-17T13:43:53.000Z",
-  "updated_at": "2026-11-18T19:20:37.000Z",
+  "updated_at": "2026-11-19T22:58:56.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -14,8 +14,10 @@
   "tags": [
     "onnx",
     "autoencoder",
+    "anomaly-detection",
     "time-series",
     "imu",
+    "pose-estimation",
     "construction",
     "unsupervised-learning",
     "motion-atlas",
@@ -24,7 +26,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 42,
+  "downloads_30d": 156,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

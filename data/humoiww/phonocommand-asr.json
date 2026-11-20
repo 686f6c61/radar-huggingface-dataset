@@ -5,7 +5,7 @@
   "author": "humoiww",
   "url": "https://huggingface.co/humoiww/PhonoCommand-ASR",
   "created_at": "2026-10-23T08:45:07.000Z",
-  "updated_at": "2026-10-23T08:48:46.000Z",
+  "updated_at": "2026-11-20T02:35:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

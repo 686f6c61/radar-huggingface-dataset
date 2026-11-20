@@ -2,110 +2,103 @@
 
 ## Resumen
 
-ACE-Step 1.5 — Qwen3.5-0.8B 5Hz Planner (GGUF) es un checkpoint experimental publicado por el usuario Jakevin que adapta el modelo base Qwen/Qwen3.5-0.8B-Base para actuar como planificador semantico-audio dentro del sistema de generacion musical ACE-Step 1.5. El modelo no genera audio directamente: produce codigos semanticos de audio a 5 Hz (un vocabulario extendido de 64.000 tokens de codigo sobre un total de 313.612 entradas BPE) que despues consume el renderizador oficial DiT/VAE de ACE-Step 1.5 para sintetizar la pista final.
+ACE-Step 1.5 — Qwen3.5-0.8B 5Hz Planner (GGUF) es un checkpoint experimental de investigación publicado por el usuario Jakevin en Hugging Face. Se trata de un planificador semántico de audio ("audio planner") para el sistema de generación musical ACE-Step 1.5, construido a partir de un fine-tuning del modelo base Qwen3.5-0.8B-Base. El modelo no genera audio directamente: produce la secuencia de código semántico a 5 Hz que posteriormente consume el renderizador oficial DiT/VAE de ACE-Step 1.5 para sintetizar la pista musical final.
 
-La arquitectura parte de Qwen3.5-0.8B, un transformer hibrido con 18 capas GatedDeltaNet y 6 capas de atencion completa, con 819.252.032 parametros totales. La distribucion se ofrece en formato GGUF para llama.cpp y llama-cpp-python, con dos cuantizaciones: BF16 (1,54 GiB, modelo primario) y Q8_0 (844 MiB, opcion de menor memoria). Se omiten deliberadamente Q4, Q5 y Q6_K porque la cuantizacion por debajo de 8 bits degrada la generacion de codigos de audio discretos.
+El modelo emplea una arquitectura híbrida con 18 capas GatedDeltaNet y 6 capas de atención completa, y amplía el vocabulario a 313.612 tokens mediante la incorporación de 64.000 tokens de código de audio a 5 Hz. Se distribuye en formato GGUF para su uso con llama.cpp y llama-cpp-python, con dos cuantizaciones disponibles: BF16 (modelo principal) y Q8_0 (opción de despliegue con menor huella de memoria).
 
-Su relevancia es acotada y debe interpretarse con cautela: el propio autor lo describe como un checkpoint de investigacion cuyo rendimiento queda por debajo del baseline oficial ACE-Step/acestep-5Hz-lm-0.6B en velocidad, validez estricta y CLAP. Su interes reside en la integracion llave en mano con el renderizador oficial, el soporte de Apple Silicon via MLX y el flujo de un solo comando con post-procesado anti-repeticion activado por defecto.
+Su relevancia es acotada y debe interpretarse con cautela: el propio autor lo describe como un checkpoint experimental seleccionado únicamente por la menor entropía cruzada en validación, y reconoce que el baseline oficial ACE-Step/acestep-5Hz-lm-0.6B obtiene mejores resultados en velocidad, validez estricta y puntuación CLAP. La evaluación global de calidad permanece marcada como INCOMPLETE.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer hibrido: 18 capas GatedDeltaNet + 6 capas de atencion completa (base Qwen3.5-0.8B) |
-| Parametros totales | 819.252.032 |
-| Parametros activos | no disponible (no es MoE) |
+| Arquitectura | Transformer híbrido: 18 capas GatedDeltaNet + 6 capas de atención completa |
+| Parametros totales | 819.252.032 (0,8B) |
+| Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | BF16 (modelo primario, tensores GDN recurrentes/norm en F32) y Q8_0 (opcion de despliegue, tensores GDN en F32); Q4_*, Q5_*, Q6_K omitidos intencionadamente |
-| Idiomas soportados | en (ingles) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (compatible con llama.cpp b9810+) |
+| Tipos de cuantizacion | BF16 (principal) y Q8_0 (opción de despliegue); Q4_*, Q5_* y Q6_K omitidas intencionadamente |
+| Idiomas soportados | Inglés (letras en inglés e instrumental); no funciona con letras en chino ni japonés |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (llama.cpp b9810+), con tensores recurrentes/norm de GDN en F32 |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino del base Qwen3.5-0.8B, cuya arquitectura combina 18 capas GatedDeltaNet (estado recurrente lineal) con 6 capas de atencion completa, lo que reduce el coste de inferencia en secuencias largas manteniendo capacidad de atencion global. El vocabulario se extiende hasta 313.612 tokens para incorporar 64.000 tokens de codigo de audio a 5 Hz (`<|audio_code_0..63999|>`), sobre los que el planificador emite la secuencia semantica que el renderizador DiT/VAE convierte en audio.
+El modelo parte de Qwen3.5-0.8B-Base y lo adapta como planificador semántico de audio para ACE-Step 1.5. La arquitectura combina 18 capas GatedDeltaNet (estado recurrente lineal) con 6 capas de atención completa, un patrón híbrido que reduce el coste computacional en secuencias largas manteniendo capacidad de atención global. El vocabulario se extiende hasta 313.612 tokens mediante la incorporación de 64.000 tokens de código de audio a 5 Hz (`<|audio_code_0..63999|>`), sobre una tokenización BPE compatible con `qwen35`.
 
-El checkpoint publicado corresponde al paso 975, epoca 3, identificado como `S-lr3e5-best-bf16` y seleccionado estrictamente por la menor entropia cruzada enmascarada de validacion (6,933546922). No se detalla en la informacion disponible el volumen de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO. El pipeline de generacion incluye decodificacion con procesadores de logits restringidos (YAML CoT de 6 campos y CFG de etapa 2) y post-procesado anti-repeticion por defecto, lo que sugiere que el modelo base, sin esas restricciones, presenta derivas hacia bucles en secuencias largas.
+El checkpoint publicado corresponde al identificador `S-lr3e5-best-bf16`, paso 975, época 3, seleccionado estrictamente por la menor entropía cruzada enmascarada de validación (6,933546922). El fine-tuning se realizó únicamente sobre pistas con letras en inglés e instrumentales. No se especifican en la información disponible el número total de tokens de entrenamiento ni la composición detallada del dataset, ni si se aplicaron etapas de RLHF o DPO.
+
+Como innovación destacable, el flujo de generación (`generate.py`) incorpora procesadores de logits restringidos para una cadena de pensamiento YAML de 6 campos y para la etapa 2 de CFG sobre los códigos de audio, además de un post-procesado anti-repetición activado por defecto que mitiga el colapso en bucles de códigos cortos o únicos en secuencias largas.
 
 ## Capacidades
 
-- Generacion de codigos semanticos de audio a 5 Hz como planificador para el renderizador ACE-Step 1.5 (texto a musica).
-- Generacion de musica con letra estructurada por secciones (`[Verse 1]`, `[Chorus]`) y control de duracion (por ejemplo, 30 s, 60 s, 120 s).
-- Generacion instrumental mediante la etiqueta `[Instrumental]`.
-- Decodificacion restringida con YAML CoT de 6 campos y CFG de etapa 2 para estructurar la planificacion.
-- Post-procesado anti-repeticion activado por defecto, desactivable con `--no-antirepeat` para reproduccion exacta del decodificado crudo.
-- Ejecucion offline completa una vez cacheado el renderizador oficial en `HF_HOME` (`HF_HUB_OFFLINE=1`).
-- Compatibilidad con llama.cpp y llama-cpp-python; aceleracion Metal en Apple Silicon (`-DGGML_METAL=on`).
-- Capacidad conversacional declarada en los tags del repositorio, aunque el uso previsto es la planificacion de audio.
-- Soporte de tool calling / function calling: no disponible.
-- Capacidades de agentes multi-paso: no disponible.
-- Vision y audio de entrada: no disponible.
+- Generación de planes semánticos de audio a 5 Hz a partir de un prompt de estilo y una letra, consumibles por el renderizador oficial ACE-Step 1.5 (DiT/VAE).
+- Generación de música con letra en inglés e instrumental; estilos controlables mediante prompt de texto (por ejemplo, synth-pop, indie, etc.).
+- Cadena de pensamiento estructurada en YAML de 6 campos restringida por procesadores de logits.
+- Decodificación con CFG en etapa 2 sobre los códigos de audio.
+- Post-procesado anti-repetición configurable (desactivable con `--no-antirepeat`).
+- Integración con llama.cpp y llama-cpp-python, con aceleración Metal en Apple Silicon.
+- Flujo de un solo comando que descarga automáticamente los pesos del renderizador oficial y permite después generación completamente offline (`HF_HUB_OFFLINE=1`).
+- No soporta tool calling, function calling ni capacidades de agente según la información disponible.
+- No dispone de capacidades de visión ni de audio de entrada.
 
 ## Casos de uso
 
-- Prototipado de musica con letra en local: el modelo planifica la estructura semantica de una pista de 30 s a partir de un prompt de estilo y letra por secciones, y el renderizador oficial sintetiza el WAV; adecuado para iterar rapidamente en un portatil Apple Silicon sin depender de servicios en la nube.
-- Generacion instrumental para bandas sonoras de prototipos: con `--lyrics "[Instrumental]"` y prompts descriptivos (por ejemplo, "cinematic acoustic guitar and warm strings"), se obtienen pistas de ambiente para maquetas de video o juegos.
-- Despliegue en entornos con memoria limitada: la variante Q8_0 (844 MiB) permite ejecutar el planificador en maquinas con poca RAM o VRAM, manteniendo el 100% de paridad top-1 en codigos de audio respecto a MLX bf16.
-- Flujos offline y reproducibles: con el renderizador cacheado y `HF_HUB_OFFLINE=1`, se pueden generar pistas en entornos sin red, util para laboratorios con requisitos de aislamiento.
-- Investigacion sobre planificadores semanticos de audio: el checkpoint permite estudiar el efecto del tamano (0,8B frente al baseline de 0,6B) y de la cuantizacion en la diversidad de codigos (ratio unico medio de 0,4326) y en la validez estricta.
-- Reproduccion controlada de resultados: con `--no-antirepeat`, semilla fija y cuantizacion fija se obtienen codigos de audio identicos bit a bit al planificador GGUF sin penalizacion, lo que facilita la comparacion experimental.
-- Evaluacion comparativa de decodificadores restringidos: los procesadores de logits YAML CoT y CFG de etapa 2 sirven como banco de pruebas para estudiar decodificacion restringida en modelos pequenos.
+- Generación musical automatizada con letra en inglés: el modelo produce el plan de códigos semánticos que el renderizador ACE-Step 1.5 convierte en una pista WAV; adecuado para prototipado rápido de canciones con estructura verso-estribillo.
+- Producción de música instrumental de fondo: con prompts de estilo y sin letra, puede generar bases instrumentales para vídeo, pódcast o demos, ejecutándose en local tras la primera descarga de pesos.
+- Radio o streaming generativo en directo: el autor documenta un caso real de radio de piano con IA en YouTube generada al vuelo con la versión MLX sobre un Mac mini M4 de 16 GB, lo que demuestra la viabilidad de generación continua en hardware de consumo.
+- Investigación sobre planificadores semánticos de audio: sirve como checkpoint de referencia para estudiar la destilación de un modelo de 0,8B frente al baseline oficial de 0,6B en la tarea de planificación de códigos a 5 Hz.
+- Despliegue en entornos con memoria limitada: la variante Q8_0 (844 MiB) permite ejecutar el planificador en máquinas modestas, aceptando una ligera pérdida de paridad (98,4 % en CoT, 100 % en códigos de audio).
+- Experimentación con decodificación restringida: los procesadores de logits para YAML CoT y CFG de etapa 2 son un ejemplo práctico de control estructurado de la salida en llama.cpp.
+- Pruebas de robustez y anti-repetición: útil para evaluar técnicas de post-procesado frente al colapso en bucles de códigos en pistas largas.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor sobre `dev-100` (decodificado crudo):
-
-| Metrica | Este modelo (0.8B) | Baseline ACE-Step/acestep-5Hz-lm-0.6B |
+| Metrica | ACE-Step1.5-Qwen3.5-0.8B | ACE-Step/acestep-5Hz-lm-0.6B (baseline oficial) |
 |---|---|---|
-| Tiempo de decodificado | 7,96 s | 5,71 s |
+| Tiempo de decodificación en dev-100 | 7,96 s | 5,71 s |
 | Validez estricta | 97/100 | 100/100 |
-| CLAP | 0,2832 / 0,2920 | 0,3451 |
-| Ratio unico medio de codigos de audio | 0,4326 | no disponible |
+| Puntuación CLAP | 0,2832 / 0,2920 | 0,3451 |
+| Ratio medio de códigos únicos | 0,4326 | no disponible |
+| Entropía cruzada enmascarada de validación | 6,933546922 | no disponible |
 
-Paridad con la implementacion MLX bf16 del mismo autor:
-
-| Variante | Paridad top-1 CoT | Paridad top-1 codigos de audio |
-|---|---|---|
-| BF16 | 100% (64/64) | 100% (64/64) |
-| Q8_0 | 98,4% (63/64) | 100% (64/64) |
-
-La evaluacion global de calidad esta marcada como `INCOMPLETE` por el autor. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de proposito general en la informacion disponible.
+Paridad de conversión GGUF frente a MLX bf16: BF16 alcanza 100 % (64/64) de paridad top-1; Q8_0 alcanza 98,4 % (63/64) en CoT y 100 % (64/64) en códigos de audio. La evaluación global de calidad está marcada como INCOMPLETE por el autor.
 
 ## Requisitos de hardware
 
-- VRAM/RAM para el planificador: aproximadamente 1,54 GiB para BF16 y 844 MiB para Q8_0, mas el overhead de llama.cpp y del contexto.
-- Renderizador oficial: la primera ejecucion descarga unos 6,3 GB de pesos (`acestep-v15-turbo`, `vae`, `Qwen3-Embedding-0.6B`) desde ACE-Step/Ace-Step1.5, que deben residir en disco y en memoria durante la sintesis.
-- GPU recomendadas: no se especifican modelos concretos; el autor documenta soporte de Metal en Apple Silicon (arm64) con `CMAKE_ARGS="-DGGML_METAL=on"`. Para CUDA no hay datos publicados.
-- GPU de consumo: el planificador en Q8_0 (844 MiB) es apto para GPUs de consumo por memoria, pero no hay cifras publicadas de latencia ni throughput en esas GPU.
-- Opciones de despliegue: llama.cpp (build b9810 o superior) y llama-cpp-python 0.3.37; repositorio companero en MLX para Apple Silicon. vLLM, TGI y Ollama no estan documentados para este checkpoint.
-- Latencia: 7,96 s de decodificado crudo en `dev-100` para el planificador; el tiempo total de generacion depende del renderizador y de la duracion solicitada.
-- Entorno: Python 3.12 (rango `>=3.11,<3.13`) y toolchain C/C++ con `cmake` si llama-cpp-python se compila desde fuente.
+- VRAM/RAM estimada para el planificador: aproximadamente 1,54 GiB para el GGUF BF16 y 844 MiB para el Q8_0, más el consumo del renderizador oficial (unos 6,3 GB de pesos que se descargan en el primer uso).
+- Cabe en GPU de consumo: el autor documenta ejecución en un Mac mini con Apple M4 y 16 GB de memoria unificada mediante la variante MLX.
+- Aceleración recomendada en Apple Silicon mediante `CMAKE_ARGS="-DGGML_METAL=on"` al compilar llama-cpp-python.
+- Opciones de despliegue: llama.cpp (b9810+) y llama-cpp-python 0.3.37; el renderizador oficial ACE-Step 1.5 se ejecuta en Python.
+- Requisitos de software: Python 3.12 (rango >=3.11,<3.13) y cadena de herramientas C/C++ con cmake si llama-cpp-python se compila desde fuente.
+- Latencia y throughput: no se proporcionan cifras de throughput; el único dato de latencia es el tiempo de decodificación en dev-100 (7,96 s frente a 5,71 s del baseline).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento en dev-100 | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACE-Step1.5-Qwen3.5-0.8B (este) | 819.252.032 | no disponible | 7,96 s; validez 97/100; CLAP 0,2832/0,2920 | apache-2.0 | GGUF (BF16, Q8_0) + MLX |
-| ACE-Step/acestep-5Hz-lm-0.6B (baseline oficial) | no disponible (0,6B nominal) | no disponible | 5,71 s; validez 100/100; CLAP 0,3451 | no disponible en la informacion proporcionada | oficial ACE-Step |
-| Qwen/Qwen3.5-0.8B-Base (modelo base) | 819.252.032 | no disponible | no aplica (modelo de texto general) | no disponible en la informacion proporcionada | safetensors |
+| ACE-Step1.5-Qwen3.5-0.8B-GGUF (este) | 0,8B | no disponible | Planificador semántico de audio a 5 Hz para ACE-Step 1.5 | Apache 2.0 | GGUF en Hugging Face; variante MLX complementaria |
+| ACE-Step/acestep-5Hz-lm-0.6B | 0,6B | no disponible | Planificador semántico de audio a 5 Hz (baseline oficial) | no disponible | Hugging Face (ACE-Step/Ace-Step1.5) |
+| Qwen/Qwen3.5-0.8B-Base | 0,8B | no disponible | Modelo de lenguaje base | no disponible | Hugging Face |
+
+Frente al baseline oficial, este checkpoint es más lento (7,96 s frente a 5,71 s), obtiene menor validez estricta (97/100 frente a 100/100) y menor CLAP (0,2832/0,2920 frente a 0,3451). Su principal ventaja es la disponibilidad en GGUF para llama.cpp y la posibilidad de ejecución offline tras la descarga inicial.
 
 ## Limitaciones y advertencias
 
-- Checkpoint experimental de investigacion: el autor califica la evaluacion global de calidad como `INCOMPLETE`.
-- Inferior al baseline oficial en las tres metricas publicadas: mas lento (7,96 s frente a 5,71 s), menor validez estricta (97/100 frente a 100/100) y menor CLAP (0,2832/0,2920 frente a 0,3451).
-- Menor diversidad de codigos de audio (ratio unico medio de 0,4326) y tendencia a colapsar en bucles cortos o de codigo unico en secuencias largas (60-120 s) sin el post-procesado anti-repeticion.
-- El post-procesado anti-repeticion esta activado por defecto y altera la salida respecto al decodificado crudo; para reproducibilidad exacta hay que desactivarlo con `--no-antirepeat`.
-- La cuantizacion por debajo de 8 bits degrada la generacion de codigos discretos; las variantes Q4, Q5 y Q6_K no se ofrecen.
-- Idioma limitado al ingles; no hay soporte multilingue documentado.
-- Dependencia del renderizador externo: la generacion de audio real requiere los pesos oficiales de ACE-Step 1.5 (descarga inicial de unos 6,3 GB).
-- Licencia apache-2.0 para este checkpoint, pero conviene verificar las condiciones del modelo base Qwen3.5-0.8B-Base y del renderizador oficial antes de un uso comercial.
-- Riesgo de alucinacion y de sesgos: no hay documentacion especifica en la informacion disponible; al ser un modelo de planificacion de audio, el riesgo se traslada a la coherencia musical mas que a afirmaciones factuales.
-- Cero descargas y cero likes en el momento de la consulta: ausencia de validacion por parte de la comunidad.
+- Checkpoint experimental: seleccionado solo por menor entropía cruzada de validación; la evaluación global de calidad está marcada como INCOMPLETE.
+- Menor rendimiento que el baseline oficial en velocidad, validez estricta y CLAP.
+- Menor diversidad de códigos de audio (ratio medio de códigos únicos de 0,4326) y riesgo de colapso en bucles de códigos cortos o únicos en pistas largas; por ello el anti-repetición está activado por defecto.
+- Solo inglés: no funciona con letras en chino ni japonés (voces ininteligibles según comprobaciones informales del autor).
+- Las cuantizaciones por debajo de 8 bits degradan la generación de códigos semánticos discretos a 5 Hz y se han omitido intencionadamente.
+- Riesgo de alucinación y de desviación del estilo solicitado no cuantificado en la información disponible.
+- Sesgos conocidos: no documentados en la información proporcionada.
+- Licencia Apache 2.0: permite uso comercial, pero el estado experimental y la evaluación incompleta desaconsejan su uso en producción sin validación propia.
+- Dependencia del renderizador oficial ACE-Step 1.5 (revisión fijada 19671f406d603126926c1b7e2adc169acbcade22) y de Qwen3-Embedding-0.6B para el flujo completo.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/Jakevin/ACE-Step1.5-Qwen3.5-0.8B-GGUF
-- Repositorio companero MLX para Apple Silicon: https://huggingface.co/Jakevin/ACE-Step1.5-Qwen3.5-0.8B-MLX
+- Modelo en Hugging Face: https://huggingface.co/Jakevin/ACE-Step1.5-Qwen3.5-0.8B-GGUF
+- Repositorio MLX complementario: https://huggingface.co/Jakevin/ACE-Step1.5-Qwen3.5-0.8B-MLX
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
-- Renderizador oficial ACE-Step 1.5: https://huggingface.co/ACE-Step/Ace-Step1.5 (revision fijada `19671f406d603126926c1b7e2adc169acbcade22`)
-- Baseline oficial: https://huggingface.co/ACE-Step/acestep-5Hz-lm-0.6B
+- Renderizador oficial ACE-Step 1.5: https://huggingface.co/ACE-Step/Ace-Step1.5
+- Radio de piano con IA en directo (YouTube): https://www.youtube.com/watch?v=bFjeMOIhnAM
+- Muestra de audio de 40 s: https://huggingface.co/Jakevin/ACE-Step1.5-Qwen3.5-0.8B-GGUF/resolve/main/samples/demo_40s.mp3

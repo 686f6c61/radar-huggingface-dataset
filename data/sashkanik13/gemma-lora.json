@@ -42,7 +42,7 @@
   "disabled": false,
   "removed": true,
   "removed_at": "2026-11-13T04:01:06.822Z",
-  "removal_pattern": "isolated",
+  "removal_pattern": "reupload",
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],

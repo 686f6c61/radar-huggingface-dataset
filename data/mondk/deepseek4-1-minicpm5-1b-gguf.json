@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "mondk/DeepSeek4.1-Minicpm5-1B-GGUF",
+  "slug": "mondk-deepseek4-1-minicpm5-1b-gguf",
+  "author": "mondk",
+  "url": "https://huggingface.co/mondk/DeepSeek4.1-Minicpm5-1B-GGUF",
+  "created_at": "2026-11-20T05:16:41.000Z",
+  "updated_at": "2026-11-20T05:29:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1080632832,
+  "parameters_human": "1.08B",
+  "storage_bytes": 1153529056,
+  "storage_human": "1.2 GB",
+  "context_length": 131072,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

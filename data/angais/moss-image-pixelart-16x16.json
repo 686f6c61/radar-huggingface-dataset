@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "MOSS-Image | Text-to-Image Generation with Native Layout Control",
-      "url": "https://openmoss.ai/MOSS-Image/",
-      "snippet": "MOSS-Image is a text-to-image model family from OpenMOSS, comprising a base model and a curated-data fine-tuned model. In addition to natural-language prompts, MOSS-Image supports native text-driven layout generation: objects, rendered text, and their spatial positions can be specified in a JSON prompt."
-    },
-    {
-      "title": "GitHub - OpenMOSS/MOSS-Image: Official repository for MOSS-Image, a 5B ...",
-      "url": "https://github.com/OpenMOSS/MOSS-Image",
-      "snippet": "Official repository for MOSS-Image, a 5B-parameter base DiT model with high-quality text rendering, layout generation, and efficient fine-tuning. - OpenMOSS/MOSS-Image"
-    },
-    {
-      "title": "Moss Pixel - AI Pixel Art & Animation Generator | MossGap · MossGap",
-      "url": "https://mossgap.com/apps/moss-pixel",
-      "snippet": "Create pixel art and sprite animations with AI. Describe what you want and the AI agent paints it layer by layer, or edit manually with a full multi-layer pixel editor."
-    },
-    {
-      "title": "Moss Pixel - AI Pixel Art & Sprite Animator | MossGap",
-      "url": "https://mossgap.com/app/moss-pixel",
-      "snippet": "Moss Pixel is an AI-powered pixel art editor that runs entirely in your browser. You can describe a sprite in natural language and the AI agent paints it layer by layer, or you can draw every pixel yourself with a full multi-layer editor."
-    },
-    {
-      "title": "Krea 2 Pixelart 16x16 - AI Model Insights & Benchmarks",
-      "url": "https://free2aitools.com/model/angais/krea-2-pixelart-16x16",
-      "snippet": "Registry entry for model Krea 2 Pixelart 16x16; source metadata pending."
-    }
-  ]
+  "sources": []
 }

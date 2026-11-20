@@ -1,0 +1,100 @@
+{
+  "schema": 2,
+  "id": "vGassen/afribase-speech-whisper-small",
+  "slug": "vgassen-afribase-speech-whisper-small",
+  "author": "vGassen",
+  "url": "https://huggingface.co/vGassen/afribase-speech-whisper-small",
+  "created_at": "2026-11-20T10:07:55.000Z",
+  "updated_at": "2026-11-20T10:10:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "am",
+    "ha",
+    "ln",
+    "sw",
+    "yo"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "african-languages",
+    "low-resource",
+    "automatic-speech-recognition",
+    "am",
+    "ha",
+    "ln",
+    "sw",
+    "yo",
+    "dataset:vGassen/afribase-speech",
+    "dataset:google/fleurs",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4834975400,
+  "storage_human": "4.8 GB",
+  "context_length": null,
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "FLEURS (am_et",
+      "metric": null,
+      "value": 176.4
+    },
+    {
+      "task": null,
+      "dataset": "FLEURS (ha_ng",
+      "metric": null,
+      "value": 91.2
+    },
+    {
+      "task": null,
+      "dataset": "FLEURS (ln_cd",
+      "metric": null,
+      "value": 76.5
+    },
+    {
+      "task": null,
+      "dataset": "FLEURS (sw_ke",
+      "metric": null,
+      "value": 50.9
+    },
+    {
+      "task": null,
+      "dataset": "FLEURS (yo_ng",
+      "metric": null,
+      "value": 109.3
+    }
+  ],
+  "sources": [
+    {
+      "title": "Google Translate - A Personal Interpreter on Your Phone or Computer",
+      "url": "https://translate.google.com/about/",
+      "snippet": "Learn how to translate text, speech, images, documents, websites, and more with Google Translate."
+    }
+  ]
+}

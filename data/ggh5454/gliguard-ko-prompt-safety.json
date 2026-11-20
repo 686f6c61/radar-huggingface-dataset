@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "ggh5454/gliguard-ko-prompt-safety",
+  "slug": "ggh5454-gliguard-ko-prompt-safety",
+  "author": "ggh5454",
+  "url": "https://huggingface.co/ggh5454/gliguard-ko-prompt-safety",
+  "created_at": "2026-11-20T05:54:27.000Z",
+  "updated_at": "2026-11-20T05:54:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "gliner2",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "gliner2",
+    "safetensors",
+    "extractor",
+    "korean",
+    "guardrails",
+    "text-classification",
+    "ko",
+    "dataset:prismdata/guardrail-ko-11class-dataset",
+    "base_model:fastino/gliguard-LLMGuardrails-300M",
+    "base_model:finetune:fastino/gliguard-LLMGuardrails-300M",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 208476821,
+  "parameters_human": "208.5M",
+  "storage_bytes": 833938108,
+  "storage_human": "834 MB",
+  "context_length": null,
+  "base_model": "fastino/gliguard-LLMGuardrails-300M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

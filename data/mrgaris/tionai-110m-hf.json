@@ -1,0 +1,64 @@
+{
+  "schema": 2,
+  "id": "MrGaris/TionAI-110M-hf",
+  "slug": "mrgaris-tionai-110m-hf",
+  "author": "MrGaris",
+  "url": "https://huggingface.co/MrGaris/TionAI-110M-hf",
+  "created_at": "2026-11-20T12:30:20.000Z",
+  "updated_at": "2026-11-20T12:53:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "uk"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "ukrainian",
+    "from-scratch",
+    "uk",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110418432,
+  "parameters_human": "110.4M",
+  "storage_bytes": 220851760,
+  "storage_human": "221 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "Wikipedia (uk, 20231101)",
+      "metric": "Perplexity (на токен)",
+      "value": 31.17
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "Wikipedia (uk, 20231101)",
+      "metric": "Bits per char",
+      "value": 1.449
+    }
+  ],
+  "sources": []
+}

@@ -23,9 +23,9 @@
     "base_model:quantized:tencent/Hy4-flash",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 0,
-  "trending_score": 0,
+  "likes": 14,
+  "downloads_30d": 28,
+  "trending_score": 14,
   "parameters": 1235125248,
   "parameters_human": "1.24B",
   "storage_bytes": 2675857105,

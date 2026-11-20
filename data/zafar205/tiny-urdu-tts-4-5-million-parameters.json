@@ -5,7 +5,7 @@
   "author": "zafar205",
   "url": "https://huggingface.co/zafar205/tiny-urdu-tts-4.5-million-parameters",
   "created_at": "2026-11-18T20:12:43.000Z",
-  "updated_at": "2026-11-18T20:29:43.000Z",
+  "updated_at": "2026-11-19T16:04:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 38,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

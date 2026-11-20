@@ -2,89 +2,77 @@
 
 ## Resumen
 
-gpt-5.6-sol es un modelo publicado en Hugging Face por el usuario oroboros-labs bajo el identificador oroboros-labs/gpt-5.6-sol. Se distribuye principalmente en formato GGUF, incluye la etiqueta endpoints_compatible y esta marcado como conversational, lo que sugiere que esta pensado para despliegue en servicios de inferencia compatibles con API y para dialogos multi-turno. El repositorio acumula 1.236 descargas y 6 likes, con un tamano de 5,0 GB.
+GPT 5.6 Sol es un modelo publicado en Hugging Face por oroboros-labs bajo licencia Apache 2.0. El repositorio contiene un archivo de pesos en formato GGUF (5,0 GB) junto con un `Modelfile` pensado para su uso con Ollama. Segun los datos reales de safetensors, el modelo cuenta con 8.190.735.360 parametros (aproximadamente 8,2 mil millones). La model card lo presenta como una "build agent-complete" de GPT 5.6 Sol, con los pesos base sin modificar y una capa de configuracion (plantilla de chat, system prompt y contrato de herramientas) que lo prepara para function calling y uso en agentes.
 
-El dato objetivo mas relevante es el recuento de parametros: 8.190.735.360 (aproximadamente 8,19 mil millones), procedente de los pesos en safetensors. Se trata, por tanto, de un modelo de la clase 8B, un tamano que cabe en GPU de consumo con cuantizacion adecuada. No se dispone de informacion sobre arquitectura, contexto, datos de entrenamiento, licencia ni idiomas.
+La propuesta del autor es empaquetar los pesos junto con la logica de enrutamiento, disciplina de razonamiento y un contrato de herramientas que incluye un conjunto de herramientas CLI y servidores MCP locales (127.0.0.1). El modelo esta etiquetado como conversacional y compatible con endpoints, y su uso previsto es mediante Ollama o mediante una CLI propietaria del autor (`claude-cli`).
 
-Es importante advertir de que el nombre "gpt-5.6-sol" no corresponde a ningun modelo oficial publicado por OpenAI ni existe evidencia en la informacion disponible de que este relacionado con la familia GPT-5. La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo: los unicos enlaces encontrados tratan sobre el simbolo del uroboros, la empresa Oroboros Instruments y un personaje de un videojuego. Por tanto, no es posible verificar la procedencia, la licencia ni las capacidades declaradas mas alla de los metadatos del repositorio.
+La informacion disponible es escasa en cuanto a arquitectura, datos de entrenamiento y benchmarks: la model card no detalla la composicion del dataset, el numero de tokens de entrenamiento ni resultados de evaluacion. La ficha siguiente refleja unicamente lo que consta en la informacion proporcionada y marca explicitamente como "no disponible" todo aquello que no se ha publicado.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 8.190.735.360 (aproximadamente 8,19 mil millones) |
+| Arquitectura | no disponible (solo se indica que es un transformer conversacional por el tag `conversational`; no se detalla en la model card) |
+| Parametros totales | 8.190.735.360 (aprox. 8,2 mil millones) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF (segun etiquetas del repositorio); niveles concretos no especificados |
+| Tipos de cuantizacion | no disponible (el repo distribuye un unico archivo GGUF de 5,0 GB; no se especifica el nivel de cuantizacion) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF y safetensors (el recuento de parametros se obtuvo de safetensors) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (`model.gguf`), acompanado de `Modelfile` para Ollama; el dato de parametros procede de safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura en los datos disponibles. El repositorio no incluye model card con detalles de diseno, no se especifica si se trata de un transformer denso, un modelo de mezcla de expertos (MoE) o una arquitectura hibrida, y no hay indicacion de tecnicas de atencion alternativa. El unico dato estructural es el recuento de parametros (8,19 mil millones), que situa al modelo en la categoria de 8B de forma similar a otros modelos abiertos de ese orden de magnitud, pero sin que sea posible confirmar ninguna correspondencia con arquitecturas conocidas.
+La model card no describe la arquitectura interna del modelo. Los metadatos indican un modelo conversacional con aproximadamente 8,2 mil millones de parametros, distribuido en formato GGUF. El autor afirma que los pesos base estan "sin tocar" respecto a la version publicada de GPT 5.6 Sol; lo que anade este repositorio es una capa de configuracion: una plantilla de chat consciente de herramientas (function calling de entrada y salida), un system prompt de identidad y un contrato de agente y herramientas que incluye el conjunto de herramientas CLI, servidores MCP y el procedimiento de emision de llamadas.
 
-Tampoco hay informacion sobre el proceso de entrenamiento: no se indica el volumen de tokens, la composicion del dataset, el uso de ajuste por instrucciones, RLHF, DPO u otras tecnicas de alineamiento. La etiqueta conversational sugiere que ha pasado por algun tipo de ajuste para dialogo, pero no se detalla el metodo ni los datos empleados.
+No se proporciona informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO u otras tecnicas de alineacion, ni sobre innovaciones tecnicas como decodificacion especulativa o attention lineal. Toda esa informacion debe considerarse no disponible a partir de la documentacion publicada.
 
 ## Capacidades
 
-- Generacion de texto conversacional: la etiqueta conversational indica que esta orientado a dialogos multi-turno, aunque no se detallan capacidades especificas.
-- Compatibilidad con endpoints: la etiqueta endpoints_compatible sugiere que puede desplegarse en servicios de inferencia que exponen una API compatible, presumiblemente con el formato de OpenAI, aunque no se especifica cual.
-- Formato GGUF: al distribuirse en GGUF, puede ejecutarse en herramientas de inferencia local como llama.cpp u Ollama.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible; no se declaran idiomas soportados.
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
+- Generacion de texto conversacional multi-turno, segun la etiqueta `conversational` y la plantilla de chat incluida.
+- Function calling y tool calling: la plantilla de chat y el system prompt definen el formato de entrada y salida de llamadas a herramientas.
+- Uso en agentes: el `Modelfile` incorpora un contrato de agente con herramientas CLI y servidores MCP locales (127.0.0.1).
+- Razonamiento y enrutamiento: la model card menciona un nucleo de "deep logic routing/reasoning/delivery" inyectado via system prompt.
+- Capacidades multilingues: no disponible (no se declaran idiomas soportados).
+- Vision, audio u otras modalidades: no disponible (no se mencionan).
 
 ## Casos de uso
 
-Dado que no se dispone de especificaciones verificadas (contexto, idiomas, licencia, benchmarks), los casos de uso que se enumeran a continuacion son hipoteticos y condicionados a que el modelo funcione segun lo que sugieren sus etiquetas. Deben validarse antes de cualquier uso en produccion.
-
-- Chat conversacional local: con el formato GGUF y un tamano de 5,0 GB, podria ejecutarse en un equipo de sobremesa con GPU de gama media o incluso en CPU, sirviendo como asistente conversacional sin dependencia de servicios en la nube. La idoneidad real depende de la calidad del ajuste conversacional, que no esta documentada.
-- Prototipado rapido de asistentes: gracias a la etiqueta endpoints_compatible, podria desplegarse detras de una API compatible y usarse para probar interfaces de chat o pipelines de agentes antes de decidir si se migra a un modelo con soporte y licencia verificados.
-- Generacion de texto general: si la calidad es aceptable, podria emplearse para redaccion asistida, resumenes o reformulacion de textos, aunque no hay datos que confirmen su rendimiento en estas tareas.
-- Educacion y experimentacion: al ser un modelo pequeno y descargable, resulta adecuado para que estudiantes e investigadores experimenten con cuantizacion, despliegue local y tecnicas de inferencia, siempre que la licencia lo permita (extremo no confirmado).
-- Integracion en entornos air-gapped: un modelo de 8B en GGUF puede desplegarse en redes aisladas sin conexion a internet, algo relevante en entornos con requisitos de privacidad, siempre que se resuelva la cuestion de licencia.
-- Comparativas internas de modelos: puede utilizarse como punto de referencia adicional en evaluaciones propias de la clase 8B, midiendo latencia, memoria y calidad subjetiva frente a modelos abiertos bien documentados.
+- Asistente conversacional local: el modelo puede ejecutarse con Ollama mediante `ollama create` y `ollama run`, gestionando conversaciones multi-turno con la plantilla de chat incluida. Es adecuado para prototipos y entornos de desarrollo local por su formato GGUF y licencia permisiva.
+- Agente con herramientas locales: el contrato de herramientas y los servidores MCP apuntando a 127.0.0.1 permiten al modelo emitir llamadas a herramientas CLI en la propia maquina, util para automatizacion de tareas de desarrollo.
+- Automatizacion de tareas de linea de comandos: integrado con la CLI del autor, el modelo puede encadenar llamadas a herramientas y ejecutar procedimientos multi-paso definidos en el system prompt.
+- Integracion en pipelines de desarrollo: al ser compatible con endpoints y usar una plantilla de function calling, puede conectarse a servicios que expongan una API compatible con Ollama.
+- Experimentacion e investigacion: con 8,2 mil millones de parametros y licencia Apache 2.0, es un candidato razonable para pruebas de agentes y evaluacion de flujos de tool calling en hardware de gama media.
+- Despliegue en entornos con requisitos de licencia permisiva: la licencia Apache 2.0 permite uso comercial y modificacion, lo que facilita su incorporacion en productos propios.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye tabla de evaluaciones (MMLU, HumanEval, GSM8K u otras) y la busqueda web no aporto ningun dato de rendimiento. No se debe asumir ningun nivel de calidad sin una evaluacion propia.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa para un modelo de 8,19 mil millones de parametros, la huella aproximada seria de unos 16 GB en FP16/BF16, unos 8-9 GB en cuantizacion de 8 bits y unos 5-6 GB en cuantizacion de 4 bits, pero estos valores son estimaciones genericas y no mediciones del modelo.
-- GPU recomendadas: no disponibles. Para la clase 8B, GPU de 16 GB o mas (por ejemplo RTX 4080/4090, A10, L4) permitirian FP16; GPU de 8-12 GB podrian bastar con cuantizacion.
-- Cabe en GPU de consumo: probablemente si con cuantizacion, dado el tamano de la clase 8B, pero no hay confirmacion oficial ni se especifican los niveles GGUF incluidos en el repositorio de 5,0 GB.
-- Opciones de despliegue: llama.cpp y Ollama por el formato GGUF; cualquier servidor que acepte pesos GGUF o safetensors. La etiqueta endpoints_compatible sugiere compatibilidad con APIs de inferencia, sin especificar cuales.
+- VRAM estimada para inferencia: no disponible de forma exacta; el archivo GGUF publicado ocupa 5,0 GB, por lo que el modelo cuantizado requiere al menos ese espacio en memoria, mas overhead de contexto y runtime.
+- GPU recomendadas: no disponible (no se publican requisitos oficiales). Por el tamano del archivo GGUF, es plausible su ejecucion en GPUs consumer con 8 GB o mas de VRAM, aunque esto no esta confirmado por el autor.
+- Cabe en GPU consumer: probablemente si, en funcion del nivel de cuantizacion del GGUF de 5,0 GB; no confirmado.
+- Opciones de despliegue: Ollama (metodo documentado en la model card mediante `Modelfile`), y cualquier runtime compatible con GGUF. Compatibilidad con vLLM, llama.cpp o TGI: no disponible.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No hay datos verificables de este modelo (arquitectura, contexto, rendimiento, licencia) que permitan una comparacion rigurosa. La siguiente tabla se ofrece unicamente como referencia de la categoria 8B, tomando modelos abiertos conocidos; no implica ninguna equivalencia real con gpt-5.6-sol.
-
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| oroboros-labs/gpt-5.6-sol | 8,19 mil millones | no disponible | no disponible | Hugging Face (GGUF + safetensors) |
-| Llama 3.1 8B Instruct (referencia) | 8,03 mil millones | 128K | Llama 3.1 Community | Hugging Face, ampliamente documentado |
-| Qwen2.5 7B Instruct (referencia) | 7,62 mil millones | 128K | Apache 2.0 (segun variante) | Hugging Face, ampliamente documentado |
-
-La comparacion real no esta disponible: no se conocen resultados de benchmarks ni caracteristicas tecnicas del modelo analizado.
+No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la informacion proporcionada, por lo que la comparativa no esta disponible. A modo de referencia estructural, el modelo se situa en la franja de 8 mil millones de parametros con licencia Apache 2.0 y distribucion GGUF, categoria en la que existen alternativas de pesos abiertos, pero no se pueden establecer comparaciones numericas sin datos publicados.
 
 ## Limitaciones y advertencias
 
-- Procedencia no verificada: no hay evidencia de que este modelo tenga relacion con OpenAI ni con la familia GPT-5, a pesar del nombre. Los resultados de busqueda no devolvieron ninguna fuente relacionada.
-- Ausencia de model card: no se documentan arquitectura, datos de entrenamiento, proceso de alineamiento ni evaluaciones, lo que impide auditar el comportamiento del modelo.
-- Licencia desconocida: al no declararse licencia, no puede confirmarse si el uso comercial esta permitido. Esto desaconseja su uso en produccion o en productos distribuidos.
-- Idiomas no declarados: se desconoce que idiomas soporta y con que calidad, lo que dificulta su uso en aplicaciones en castellano.
-- Contexto desconocido: sin longitud de contexto declarada, no se puede planificar su uso en tareas que requieran ventanas largas.
-- Riesgo de alucinacion: inherente a cualquier modelo de lenguaje; al no haber evaluaciones publicadas, no puede acotarse su magnitud en este caso.
-- Sesgos: no evaluados ni documentados.
-- Riesgo de seguridad: un modelo de origen y licencia desconocidos deberia someterse a pruebas de contenido, filtrado y seguridad antes de cualquier despliegue de cara al usuario.
-- Rendimiento sin verificar: no hay benchmarks publicados; cualquier expectativa de calidad es especulativa.
+- La model card no documenta sesgos conocidos, composicion del dataset ni procesos de alineacion, por lo que el riesgo de sesgos no puede evaluarse.
+- Riesgo de alucinacion: no cuantificado; al no haber benchmarks publicados, no hay evidencia sobre su fiabilidad factual.
+- Longitud de contexto e idiomas soportados no estan documentados, lo que limita la planificacion de despliegues en produccion.
+- La model card atribuye el modelo a "Oroboros / Anthropic" y menciona una CLI propietaria (`claude-cli`); esta atribucion no esta respaldada por los metadatos de Hugging Face (autor: oroboros-labs) y debe tratarse con cautela.
+- El uso de la CLI con la opcion `--dangerously-skip-permissions` desactiva las confirmaciones de permisos; en entornos de produccion esto supone un riesgo de seguridad si el modelo ejecuta herramientas locales.
+- Los servidores MCP y herramientas apuntan a 127.0.0.1; su uso esta limitado a la maquina local y requiere configuracion adicional.
+- Aunque la licencia Apache 2.0 permite uso comercial, la ausencia de documentacion sobre el entrenamiento impide verificar el origen de los datos y posibles restricciones adicionales.
+- El repositorio distribuye un unico archivo GGUF; no se ofrece informacion sobre variantes de cuantizacion ni sobre safetensors, lo que limita la eleccion de formatos para despliegue.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/oroboros-labs/gpt-5.6-sol
-- La busqueda web realizada no devolvio ningun enlace relevante sobre el modelo. Los resultados obtenidos correspondian a tematicas sin relacion: el simbolo del uroboros (https://en.wikipedia.org/wiki/Ouroboros), su articulo en frances (https://fr.wikipedia.org/wiki/Ouroboros), la empresa Oroboros Instruments (https://www.oroboros.at/), un articulo divulgativo sobre el simbolismo del uroboros (https://www.jepense.org/ouroboros-signification-symbolisme/) y un personaje del videojuego Honkai: Star Rail (https://honkai-star-rail.fandom.com/wiki/Oroboros). No se encontraron papers, blogs tecnicos, repositorios ni demos asociados al modelo.
+- Repositorio Hugging Face: https://huggingface.co/oroboros-labs/gpt-5.6-sol
+- No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

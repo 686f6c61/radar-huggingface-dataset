@@ -2,92 +2,99 @@
 
 ## Resumen
 
-tiny-autocomplete es un modelo de lenguaje en formato Llama de 91 millones de parámetros cuyos pesos no han sido entrenados mediante descenso de gradiente, sino compilados de forma determinista a partir de un conjunto de reglas cerradas. Lo desarrolla tmickleydoyle como proyecto experimental y lo publica en Hugging Face con licencia MIT. El modelo implementa de forma exacta, dentro de una arquitectura transformer estándar, un modelo de lenguaje n-grama interpolado Witten-Bell de orden 5 sobre un vocabulario de 1.053 palabras.
+`tiny-autocomplete` (publicado por el autor bajo el nombre de proyecto *ghost-typer*) es un modelo de autocompletado de texto orientado a prompts de asistentes de programación, desarrollado por tmickleydoyle. No es un modelo entrenado con descenso de gradiente ni derivado de pesos preentrenados: es un `LlamaForCausalLM` **compilado** a partir de reglas en forma cerrada (n-gramas) aplicadas sobre aproximadamente 126.000 líneas de texto escrito por humanos procedentes de WildChat-1M, OASST2, MBPP y CoNaLa.
 
-La relevancia del proyecto es fundamentalmente didáctica y de ingeniería: demuestra que una red `LlamaForCausalLM` con módulos estándar (sin `trust_remote_code`) puede reproducir con precisión de 1e-3 nats las log-probabilidades de un n-grama clásico, y que el resultado se puede ejecutar tanto con `transformers` como con un runtime en TypeScript sin dependencias. No es un modelo de propósito general ni compite en benchmarks de razonamiento.
+El modelo resuelve un problema muy concreto: sugerir el siguiente fragmento de texto mientras el usuario escribe en un editor o caja de prompt, mostrando ghost text solo cuando la confianza supera un umbral calibrado. Su interés radica en que consigue una precisión del 90,8% en sugerencias mostradas con un consumo de recursos mínimo, lo que lo hace viable para ejecución en el navegador o en CPU sin servidor.
 
-El modelo solo conoce unas 1.100 frases comunes del inglés, tiene un contexto efectivo de 4 tokens y 128 posiciones, y actúa como una máquina de búsqueda de siguiente palabra, no como un modelo generativo capaz de razonar. Es útil como referencia educativa, como banco de pruebas de tooling de inferencia y como ejemplo de compilación de pesos.
+La arquitectura declarada es Llama con 399.916.440 parámetros totales (de los cuales aproximadamente el 97% son ceros según la model card), un vocabulario de 6.000 palabras y 12.607 contextos en la variante para `transformers`. Existe una variante hermana para navegador (`ghost-typer-web`) con vocabulario de 30.893 palabras y formato uint8 de 10,7 MB. La licencia es MIT y el idioma soportado es únicamente inglés.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | LlamaForCausalLM (transformer decoder-only, 1 capa) |
-| Parámetros totales | 91.038.888 |
-| Parámetros activos | no disponible (no es MoE) |
-| Longitud de contexto | 128 posiciones; 4 tokens de contexto efectivo (n-grama de orden 5) |
-| Tipos de cuantización | no disponible (pesos en float32; el autor no documenta cuantizaciones) |
-| Idiomas soportados | en (inglés) |
+| Arquitectura | Transformer tipo Llama (`LlamaForCausalLM`), compilado a partir de n-gramas (sin entrenamiento) |
+| Parametros totales | 399.916.440 (aproximadamente 97% ceros según la model card) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible de forma explícita; el modelo opera sobre contextos n-grama de hasta 12.607 contextos discretos en la variante `transformers` |
+| Tipos de cuantizacion | float32 (canónico en este repo); uint8 en la variante navegador (`ghost-typer-web/model.bin`); float32 sin cuantizar en `model-f32.bin` |
+| Idiomas soportados | inglés (`en`) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (model.safetensors); tokenizer.json; runtime TypeScript propio |
+| Formato de pesos | safetensors (`model.safetensors`, 1,60 GB); `.bin` propietario en la variante navegador (10,7 MB uint8, 16,8 MB float32) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder-only estilo Llama con una sola capa, dimensión oculta 2088, 3 cabezas de query, 1 cabeza KV, `head_dim` 256, anchura de MLP 13.148, vocabulario de 1.053 tokens, `rope_theta` 2 y precisión float32. El desglose de parámetros es: embeddings y `lm_head` 4.397.328, atención q/k/v/o 4.276.224, MLP gate/up/down 82.359.072 y RMSNorms 6.264.
+El modelo es un `LlamaForCausalLM` estándar cuyos pesos se generan mediante reglas en forma cerrada definidas en `build_weights.py`, sin descenso de gradiente ni pesos preentrenados. La fuente de datos son aproximadamente 126.000 líneas de texto humano de WildChat-1M, OASST2, MBPP y CoNaLa. La red resultante es extremadamente dispersa: alrededor del 97% de los 400 millones de parámetros son ceros, lo que permite almacenar únicamente las partes no nulas en la variante compilada para navegador.
 
-No hubo entrenamiento: cada peso se genera con una regla de forma cerrada en `build_weights.py` aplicada a unas 1.100 frases en inglés del directorio `phrases/`. El flujo residual se divide en ranuras nombradas (constante 1, código del token actual, códigos de los 3 tokens anteriores y ranura de logits). Las embeddings son vectores unitarios aleatorios con semilla de tamaño 256. Las 3 cabezas de atención usan queries y keys constantes cuyas fases RoPE hacen que cada cabeza mire exactamente 1, 2 o 3 tokens atrás con un margen de al menos 30 nats, copiando el código del token a su ranura. El MLP tiene una neurona por cada contexto de 1 a 4 tokens observado en las frases (13.148 neuronas en total); cada neurona se activa solo si todos los tokens de su contexto coinciden y suma `log p(next | context) − log p(next | shorter context)` a los logits, de modo que las sumas telescopan hasta la log-probabilidad bajo el contexto conocido más largo. RMSNorm cancela las normas residuales fijas y `lm_head` lee la ranura de logits. El resultado es una implementación exacta de un n-grama Witten-Bell interpolado de orden 5.
+Una innovación técnica destacable es el escalado de logits por 1e-5 para mantener la red exacta, lo que impide generar versiones en float16 o bf16 (el autor indica explícitamente que media precisión rompería el modelo). La variante navegador no es una cuantización de `model.safetensors`, sino una compilación hermana con vocabulario mayor (30.893 frente a 6.000 palabras) porque en su formato disperso las palabras tienen coste casi nulo. La cuantización uint8 frente a float32 en la variante navegador cuesta 0,14 puntos de keystrokes saved (23,00% frente a 23,14%) con precisión prácticamente idéntica (90,8% frente a 90,7%).
 
 ## Capacidades
 
-- Predicción de siguiente palabra con probabilidades calibradas sobre su vocabulario de 1.053 palabras.
-- Autocompletado de frases comunes del inglés (por ejemplo, "Once upon a" → "time.").
-- Generación de texto corto limitada a las continuaciones presentes en sus frases fuente.
-- Inferencia en `transformers` mediante `pipeline` y `AutoModelForCausalLM`.
-- Ejecución sin Python mediante un runtime TypeScript propio (`model.ts`) sobre Bun o Node ≥ 23.6, con CLI (`autocomplete.ts`) y UI web (`ui.ts`).
-- No soporta tool calling ni function calling.
-- No soporta agentes ni razonamiento multi-paso.
-- No tiene capacidades multilingües: solo inglés.
-- No dispone de modo thinking, visión ni audio.
+- Autocompletado de ghost text para prompts de asistentes de programación, con umbral de confianza configurable en tiempo de ejecución.
+- Generación de texto de siguiente token mediante `transformers` (`pipeline("text-generation")`), sin `trust_remote_code`.
+- Sugerencia palabra a palabra mientras cada siguiente palabra tenga probabilidad ≥ 0,8 (`ext = 0.8`).
+- Control de precisión frente a cobertura mediante el umbral τ de primera palabra (0,62 por defecto, hasta 0,95).
+- Ejecución en navegador mediante TypeScript sin dependencias (`web/autocomplete.ts`, `tokenizer.ts`), en hilo principal, Web Worker, Bun o Node.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo thinking.
+- Capacidad multilingüe limitada al inglés.
 
 ## Casos de uso
 
-- Demostración educativa de equivalencia entre transformer y n-grama: permite mostrar en un curso o artículo cómo una red Llama estándar puede codificar exactamente un modelo de lenguaje estadístico clásico, verificable con `test_model.py`.
-- Banco de pruebas de tooling de inferencia: al ser un modelo de 91M en formato Llama con módulos estándar, sirve para validar pipelines de carga, tokenización y generación en `transformers` sin coste de cómputo.
-- Autocompletado de interfaz en prototipos: la UI web incluida muestra ghost text y sugerencias con probabilidades, útil para experimentar con patrones de UX de autocompletado antes de integrar un modelo real.
-- Referencia para compilar pesos propios: `build_weights.py` y `docs/how-it-works.md` documentan cómo regenerar el modelo con un listado de frases propio, lo que sirve como plantilla para experimentos de pesos deterministas.
-- Pruebas de paridad entre lenguajes: el runtime TypeScript y el modelo en `transformers` permiten comparar salidas entre Python y TypeScript/Node en entornos de CI.
-- Ejemplo mínimo de despliegue compatible con text-generation-inference y endpoints: sus tags indican compatibilidad con TGI y endpoints, útil para probar infraestructura de serving con un modelo de 0,4 GB.
+- Autocompletado en editores de código y cajas de prompt: el modelo sugiere continuaciones como `ction to` tras `write a python fun` con 94% de confianza, integrándose en un editor mediante Tab para aceptar la sugerencia.
+- Asistentes de programación en el navegador: la variante `ghost-typer-web` (10,7 MB uint8) se carga desde Hugging Face y ejecuta en la pestaña del usuario con latencia mediana de 2,5 ms por pulsación (p95 de 4,3 ms), sin servidor ni backend.
+- Herramientas de desarrollo en local sin GPU: la variante `transformers` corre en CPU PyTorch a 65 ms por siguiente token, adecuada para scripts de investigación o pipelines por lotes.
+- Reducción de escritura en formularios o interfaces de chat: con el umbral por defecto se ahorra un 23,0% de pulsaciones aceptando cada sugerencia correcta con Tab.
+- Filtrado de sugerencias de alta precisión en producción: configurando τ = 0,90 (`strict`) se alcanza un 96,7% de precisión con 24,4% de cobertura y 15,1% de pulsaciones ahorradas, útil cuando los falsos positivos son costosos.
+- Investigación sobre modelos compilados y n-gramas: el repositorio incluye `build_weights.py`, `scripts/benchmark.py` y documentación de fuentes (`data/SOURCES.md`) para reproducir el proceso de compilación y evaluación.
+- Demos estáticas y prototipos: el demo vive en GitHub Pages como página estática (`python3 -m http.server 8080 -d web`), sin infraestructura adicional.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El autor solo reporta una métrica de fidelidad: las log-probabilidades del modelo coinciden con el n-grama de referencia dentro de 1e-3 nats.
+Resultados medidos con `python scripts/benchmark.py` sobre el archivo cuantizado publicado, con 1.000 prompts de WildChat y 711 de OASST, MBPP y CoNaLa reservados (el modelo se compila sin el 10% de los prompts):
+
+| Umbral τ (primera palabra) | Precision | Coverage | Keystrokes saved | Solo WildChat (precision / saved) |
+|---|---|---|---|---|
+| 0,62 (por defecto) | 90,8% | 39,2% | 23,0% | 90,0% / 22,2% |
+| 0,80 | 94,9% | 30,5% | 18,3% | 94,5% / 17,8% |
+| 0,90 (`strict`) | 96,7% | 24,4% | 15,1% | 96,4% / 14,7% |
+| 0,95 | 97,4% | 19,0% | 12,1% | 97,1% / 11,9% |
+
+Comparación con la compilación anterior (Kneser-Ney, extensión con probabilidad combinada ≥ 0,71): 90,2% de precisión y 22,2% de pulsaciones ahorradas. La build actual mejora ambos valores (90,8% y 23,0%). No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en float32, los 91M de parámetros ocupan aproximadamente 0,36 GB, más overhead de activaciones y tokenizer; el repo completo pesa 0,4 GB.
-- GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM; no requiere A100 ni H100.
-- Cabe holgadamente en GPU de consumo (RTX 3060, RTX 4090, etc.) y también puede ejecutarse en CPU.
-- Opciones de despliegue: `transformers` (probado con 4.52.4 y 5.22.1), text-generation-inference según los tags, y runtime TypeScript propio sobre Bun 1.3 o Node 24.
-- Latencia y throughput estimados: no disponibles; por el tamaño y la arquitectura de una sola capa se espera latencia muy baja, pero el autor no publica cifras.
+- VRAM estimada para inferencia: la variante `transformers` en float32 ocupa 1,60 GB de pesos; no se indica VRAM adicional para activaciones.
+- GPU recomendadas: no disponibles; el modelo está pensado para CPU (PyTorch CPU, 65 ms por siguiente token) y para navegador.
+- Cabe en cualquier GPU consumer e incluso en CPU; la variante navegador (10,7 MB uint8) se ejecuta en la pestaña del navegador sin GPU dedicada.
+- Opciones de despliegue: `transformers` (`pipeline`), runtime TypeScript propio sin dependencias (`web/autocomplete.ts`), Bun/Node, Web Worker; el tag `text-generation-inference` y `endpoints_compatible` aparece en los metadatos de Hugging Face.
+- Latencia y throughput: variante navegador con 2,5 ms de mediana y 4,3 ms p95 por pulsación; variante `transformers` con 65 ms por siguiente token en CPU PyTorch. No se dispone de datos de throughput en GPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tiny-autocomplete | 91M | 128 posiciones (4 tokens efectivos) | Transformer compilado que emula un n-grama Witten-Bell | MIT | Hugging Face, runtime TypeScript |
-| Modelos n-grama clásicos (KenLM, SRILM) | no aplica | configurable | Modelo estadístico puro | variable | herramientas estándar de NLP |
-| Modelos causales pequeños entrenados (por ejemplo, GPT-2 small, 124M) | 124M | 1024 | Transformer entrenado con descenso de gradiente | variable | Hugging Face |
+| `tmickleydoyle/tiny-autocomplete` | 399.916.440 (97% ceros) | 12.607 contextos n-grama (variante transformers) | Autocompletado compilado, sin entrenamiento | MIT | Hugging Face + demo navegador |
+| `tmickleydoyle/ghost-typer-web` (variante hermana) | no disponible (10,7 MB uint8) | 512.533 contextos, vocabulario 30.893 palabras | Compilación hermana para navegador | MIT | Hugging Face |
+| Modelos de autocompletado neuronal convencionales | no disponible | no disponible | Entrenamiento con gradiente | variable | variable |
 
-La comparación con modelos neuronales pequeños no es directa: tiny-autocomplete no generaliza y solo reproduce sus frases fuente, mientras que un modelo entrenado de tamaño similar aprende representaciones generales. Frente a un n-grama clásico, la diferencia es de empaquetado: misma semántica estadística, pero dentro de un grafo transformer ejecutable con herramientas de ML modernas.
+No se dispone de datos de benchmarks comparativos con alternativas de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo conoce sus ~1.100 frases fuente: 1.053 palabras, como máximo 4 tokens de contexto y 128 posiciones.
-- Las palabras desconocidas se convierten en `<unk>` y el modelo retrocede a contextos más cortos.
-- Es una máquina de búsqueda, no un modelo de razonamiento: sobre texto nuevo predice palabras siguientes comunes, no continuaciones significativas.
-- El prompt se trata siempre como inicio de frase.
-- El tokenizer pasa la entrada a minúsculas, por lo que la salida es en minúsculas, y antepone un token BOS automáticamente.
-- La lista de frases fue escrita por un asistente de programación (Claude) para este proyecto; no se extrajo de ningún corpus, lo que limita su cobertura y representatividad.
-- Riesgo de alucinación en el sentido de continuaciones plausibles pero sin relación semántica con la entrada; no debe usarse en producción para generación de texto real.
-- Sesgos: el vocabulario y las frases reflejan el inglés común elegido por el autor, sin control de sesgos demográficos o culturales.
-- Licencia MIT: permite uso comercial, pero el modelo carece de utilidad práctica para tareas comerciales de generación.
+- Solo soporta inglés; no hay capacidades multilingües.
+- No es un modelo de propósito general: no hace razonamiento, código complejo, matemáticas, visión ni tool calling.
+- Riesgo de sugerencias incorrectas: con el umbral por defecto la precisión es del 90,8%, por lo que aproximadamente 1 de cada 10 sugerencias mostradas no coincide con lo que el usuario iba a escribir.
+- No admite media precisión (float16/bf16): los logits se escalan por 1e-5 para mantener la exactitud de la red, lo que rompe en esos formatos.
+- La variante `transformers` y la variante navegador no son la misma compilación: difieren en vocabulario (6.000 frente a 30.893 palabras) y contextos (12.607 frente a 512.533), por lo que los resultados no son directamente trasladables entre ambas.
+- El modelo se compila sin el 10% de los prompts; las métricas de precisión y cobertura proceden de ese conjunto reservado y pueden no generalizar a otros dominios de texto.
+- Licencia MIT: permite uso comercial, pero el autor no ofrece garantías sobre idoneidad en producción; conviene validar la precisión en el dominio concreto de la aplicación.
+- El repositorio ocupa 3,2 GB pese a que los pesos canónicos son 1,60 GB, lo que implica espacio adicional para artefactos y variantes.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/tmickleydoyle/tiny-autocomplete
-- Documentación de construcción: docs/how-it-works.md (incluido en el repositorio)
-- Compilador de pesos: build_weights.py (incluido en el repositorio)
-- Suite de verificación: test_model.py (incluido en el repositorio)
-- Runtime TypeScript, CLI y UI: model.ts, autocomplete.ts, ui.ts, ui.html (incluidos en el repositorio)
-- Frases fuente: phrases/*.txt (incluidas en el repositorio)
-- Bun: https://bun.sh
+- Modelo en Hugging Face: https://huggingface.co/tmickleydoyle/tiny-autocomplete
+- Variante navegador: https://huggingface.co/tmickleydoyle/ghost-typer-web
+- Repositorio de código: https://github.com/tmickleydoyle/ghost-typer
+- Demo en vivo: https://tmickleydoyle.github.io/ghost-typer/
+- Fuentes de datos: `data/SOURCES.md` en el repositorio de GitHub
+- Script de compilación: `build_weights.py` en el repositorio de GitHub
+- Script de evaluación: `scripts/benchmark.py` en el repositorio de GitHub

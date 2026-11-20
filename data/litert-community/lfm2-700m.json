@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/LFM2-700M",
   "created_at": "2026-10-13T01:45:48.000Z",
-  "updated_at": "2026-11-18T10:00:34.000Z",
+  "updated_at": "2026-11-19T17:28:53.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

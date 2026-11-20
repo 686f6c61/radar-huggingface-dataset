@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "cksindhi/Qwen3.5_2B_Complaints_Merged",
+  "slug": "cksindhi-qwen3-5_2b_complaints_merged",
+  "author": "cksindhi",
+  "url": "https://huggingface.co/cksindhi/Qwen3.5_2B_Complaints_Merged",
+  "created_at": "2026-11-20T08:16:41.000Z",
+  "updated_at": "2026-11-20T08:17:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-2B",
+    "base_model:finetune:unsloth/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2274069824,
+  "parameters_human": "2.27B",
+  "storage_bytes": 4568210813,
+  "storage_human": "4.6 GB",
+  "context_length": null,
+  "base_model": "unsloth/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

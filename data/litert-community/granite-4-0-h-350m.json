@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/granite-4.0-h-350m",
   "created_at": "2026-08-05T05:57:40.000Z",
-  "updated_at": "2026-11-15T21:57:57.000Z",
+  "updated_at": "2026-11-20T01:37:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -45,21 +45,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "litert-community/granite-4.0-h-350m · Hugging Face",
-      "url": "https://huggingface.co/litert-community/granite-4.0-h-350m",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "ibm-granite/granite-4.0-h-350m · Hugging Face",
-      "url": "https://huggingface.co/ibm-granite/granite-4.0-h-350m",
-      "snippet": "Model Summary: Granite-4.0-H-350M is a lightweight instruct model finetuned from Granite-4.0-H-350M-Base using a combination of open source instruction datasets with permissive license and internally collected synthetic datasets. This model is developed using a diverse set of techniques including ..."
-    },
-    {
-      "title": "LiteRT Community (FKA TFLite) - Hugging Face",
-      "url": "https://huggingface.co/litert-community",
-      "snippet": "litert-community/Qwen3-4B • • • LiteRT models in the Gemma Family LiteRT models in the Qwen Family Text Generation • Updated …"
-    }
-  ]
+  "sources": []
 }

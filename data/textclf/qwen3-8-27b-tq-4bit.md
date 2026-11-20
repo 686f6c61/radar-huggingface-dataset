@@ -2,87 +2,93 @@
 
 ## Resumen
 
-Qwen3.8-27B es un modelo de lenguaje multimodal nativo (visión-lenguaje) de 27 000 millones de parámetros, desarrollado por el equipo Qwen de Alibaba. Forma parte de la serie Qwen3.8, la generación más reciente de la familia abierta de Qwen, construida sobre la base arquitectónica de Qwen3.5. El modelo está diseñado para tareas de codificación, trabajo profesional, investigación y ejecución de agentes de larga duración, con soporte nativo para imágenes y vídeo.
+Qwen3.8-27B-TQ-4bit es una versión cuantizada a 4 bits del modelo Qwen/Qwen3.8-27B, publicada por el usuario textclf en Hugging Face. La cuantización emplea Coded Quantization (CQ), un método sin calibración desarrollado por ThousandML que persigue preservar el comportamiento del modelo original sin depender de un corpus de calibración específico. El resultado es un checkpoint que reduce de forma sustancial el peso en memoria de los pesos (4 bits frente a BF16/FP16) manteniendo una fidelidad declarada de 0,0282 de divergencia KL media y un 92,4 % de acuerdo top-1 con el modelo original sobre WikiText Raw.
 
-La versión alojada en este repositorio (textclf/Qwen3.8-27B-TQ-4bit) es una cuantización a 4 bits mediante la técnica TQ, lo que reduce el tamaño del modelo a aproximadamente 22,6 GB y permite su despliegue en hardware de consumo. El modelo original presenta una arquitectura híbrida que combina atención lineal (Gated DeltaNet) con atención clásica (Gated Attention), una ventana de contexto nativa de 262 144 tokens extensible hasta 1 000 000, y entrenamiento con predicción multi-token (MTP). Su licencia Apache 2.0 permite uso comercial sin restricciones significativas.
+El modelo subyacente es un Qwen3.8 de 27 000 millones de parámetros, según la model card del autor. Conviene señalar una discrepancia importante: los tensores almacenados en safetensors suman 2 589 119 216 parámetros (unos 2,6 B), y el propio autor explica que el Hub cuenta los tensores empaquetados en 4 bits, no los parámetros de la arquitectura original. Esta ficha refleja ambos datos tal como aparecen en la información disponible.
+
+La relevancia práctica del checkpoint está en su integración nativa con vLLM mediante un plugin de cuantización (`cq`) y kernels CUDA propios, distribuidos en una imagen Docker de ThousandML. No es, por tanto, un GGUF para llama.cpp ni un AWQ/GPTQ estándar: el despliegue recomendado pasa por el contenedor oficial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Causal Language Model con Vision Encoder, híbrido (Gated DeltaNet + Gated Attention) |
-| Parametros totales | 27 000 millones (27B) |
-| Parametros activos | No aplica (modelo denso, todos los parámetros activos) |
-| Longitud de contexto | 262 144 tokens nativo, extensible hasta 1 000 000 |
-| Tipos de cuantizacion | 4-bit (TQ) en este repositorio; BF16/FP16 en el modelo original |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer (familia Qwen3.8; detalles no disponibles en la informacion proporcionada) |
+| Parametros totales | 27 B segun la model card del autor; 2 589 119 216 tensores almacenados en safetensors (empaquetado 4 bits) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Coded Quantization (CQ) 4 bits, sin calibracion |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors |
+| Formato de pesos | safetensors (empaquetado 4 bits) |
 
 ## Arquitectura y entrenamiento
 
-Qwen3.8-27B emplea una arquitectura híbrida que combina dos mecanismos de atención. El bloque principal se organiza en 64 capas con un patrón repetido: por cada 4 sub-bloques, 3 utilizan Gated DeltaNet (una variante de atención lineal con 48 cabezas para V y 16 para QK, dimensión de cabeza 128) y 1 utiliza Gated Attention (atención clásica con 24 cabezas para Q y 4 para KV, dimensión de cabeza 256 y RoPE de 64 dimensiones). Esta combinación busca equilibrar eficiencia computacional y capacidad de recuperación de información. La dimensión oculta es de 5120, con una capa FFN de dimensión intermedia 17 408 y un embedding de salida de 248 320 tokens (padded).
+No se dispone de información sobre la arquitectura interna del modelo base Qwen3.8-27B en los datos proporcionados: no se especifica si emplea atención completa, atención lineal, mezcla de expertos ni detalles sobre capas, cabezas o vocabulario. La model card remite explícitamente a la ficha original de Qwen para esos detalles. Tampoco hay datos sobre el corpus de entrenamiento, el número de tokens, la composición del dataset ni si se aplicaron fases de RLHF o DPO.
 
-El entrenamiento incluye una fase de pre-entrenamiento y otra de post-entrenamiento, con predicción multi-token (MTP) entrenada en múltiples pasos. No se han publicado detalles específicos sobre el volumen de datos de entrenamiento ni la composición del dataset. El modelo incorpora un codificador de visión que le permite procesar imágenes y vídeo de forma nativa, y ofrece control flexible del modo de razonamiento: el modo thinking está activado por defecto, puede desactivarse por petición, y admite ajuste de la profundidad de razonamiento mediante el parámetro `reasoning_effort`, así como conservación del contexto de razonamiento histórico mediante `preserve_thinking`.
+La innovación técnica destacable de este checkpoint es el método de cuantización. Coded Quantization (CQ) es una cuantización post-entrenamiento de 4 bits que no requiere dataset de calibración: en lugar de estimar los parámetros de cuantización a partir de un corpus representativo, CQ evita esa dependencia para no atar el resultado a la distribución de los datos de calibración y generalizar mejor fuera de ellos. La fidelidad medida sobre WikiText Raw es de 0,0282 de divergencia KL media y 92,4 % de acuerdo top-1 con el modelo sin cuantizar. El autor no detalla el algoritmo interno de CQ ni el proceso de entrenamiento del codebook.
 
 ## Capacidades
 
-- Generación de texto y razonamiento complejo, con modo thinking opcional y ajustable.
-- Comprensión de imágenes y vídeo: diagramas STEM, documentos, vídeos de hasta una hora de duración.
-- Ejecución de tareas de agente: planificación autónoma, manejo de feedback del entorno y finalización fiable de tareas multi-paso.
-- Codificación: generación, depuración y refactorización de código, incluyendo uso de terminal.
-- Trabajo profesional y ofimática: automatización de tareas de oficina, redacción de documentos, análisis de datos.
-- Investigación: asistencia en tareas de razonamiento científico y técnico.
-- Control flexible del razonamiento: activación/desactivación por petición, ajuste de `reasoning_effort` y `preserve_thinking`.
-- Compatibilidad con herramientas de desarrollo: soporte para harnesses populares y frameworks de integración (vLLM, SGLang, TokenSpeed, Transformers).
+- Generación de texto conversacional y de propósito general, heredada del modelo base Qwen3.8-27B.
+- Procesamiento de imagen y texto: la pipeline declarada en el Hub es `image-text-to-text`, lo que indica capacidades multimodales de entrada.
+- Razonamiento y matemáticas: presumibles por la familia Qwen3.8, aunque no se documentan explícitamente en la información disponible.
+- Generación de código: no documentada explícitamente en la model card; depende de las capacidades del modelo base.
+- Tool calling y function calling: no documentado en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no documentado en la información proporcionada.
+- Capacidades multilingües: no disponibles; el Hub no declara idiomas.
+- Modo thinking, audio u otras capacidades especiales: no documentadas.
 
 ## Casos de uso
 
-- Automatización de tareas de oficina: el modelo puede procesar documentos, hojas de cálculo y presentaciones, extrayendo información y generando resúmenes o informes, gracias a su capacidad de visión y su ventana de contexto amplia.
-- Asistente de codificación en producción: integrable en pipelines de CI/CD para revisión de código, generación de tests y corrección de errores, con soporte para tool calling y ejecución de comandos de terminal.
-- Agente de investigación autónoma: puede planificar y ejecutar búsquedas de información, leer documentos y sintetizar resultados, manteniendo el contexto de razonamiento durante largas sesiones.
-- Análisis de vídeo para vigilancia o revisión de contenido: procesa vídeos de hasta una hora para extraer eventos, transcribir diálogos o detectar anomalías, gracias a su comprensión multimodal.
-- Chatbot de atención al cliente con contexto largo: gestiona conversaciones multi-turno con historial extenso (hasta 262K tokens) y puede consultar bases de conocimiento o APIs externas mediante tool calling.
-- Asistente de investigación científica: ayuda a interpretar figuras, tablas y diagramas en artículos, y a redactar secciones de métodos o resultados, combinando razonamiento textual y visual.
+- Despliegue de inferencia a gran escala con vLLM: el checkpoint está pensado para servirse mediante el plugin CQ y la imagen Docker oficial, exponiendo una API compatible con OpenAI en el puerto 8000. Es adecuado cuando se quiere reducir el coste de memoria de pesos frente a una implementación en BF16.
+- Servicio de chat conversacional: la API compatible con `/v1/chat/completions` permite integrar el modelo en aplicaciones de atención al usuario con un cliente estándar de OpenAI, sin adaptadores propios.
+- Prototipado de aplicaciones multimodales: la pipeline `image-text-to-text` habilita experimentar con entradas de imagen y texto en un único endpoint, útil para pruebas de concepto de asistentes visuales.
+- Evaluación comparativa de métodos de cuantización: investigadores que quieran medir el impacto de CQ frente a otras técnicas (GPTQ, AWQ, GGUF) pueden usar este checkpoint como referencia con las métricas de fidelidad publicadas.
+- Pipelines internos con requisitos de licencia permisiva: al estar bajo Apache 2.0, el checkpoint puede integrarse en productos comerciales sin las restricciones de licencias copyleft, siempre que se respeten los términos del modelo base.
+- Entornos con WSL2: la imagen Docker incluye soporte específico (`VLLM_WSL2_ENABLE_PIN_MEMORY=1`) para ejecutar el servidor en estaciones de trabajo Windows con GPU, lo que facilita el desarrollo local.
 
 ## Benchmarks y rendimiento
 
-La model card incluye una tabla de benchmarks comparando Qwen3.8-27B con Qwen3.6-27B, Qwen3.7-Plus, Muse Glimmer-30B y Opus4.6 Max, en categorías como coding, agentic terminal coding (Terminal Bench 2.1) y otras. Sin embargo, en la información proporcionada no se incluyen los valores numéricos de dichos benchmarks, por lo que no es posible presentar resultados concretos. No se han publicado resultados numéricos en la información disponible.
+| Metrica | Resultado |
+|---|---|
+| Divergencia KL media (WikiText Raw) | 0,0282 |
+| Acuerdo top-1 con el modelo original (WikiText Raw) | 92,4 % |
+
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K u otros) en la información disponible. Las únicas métricas publicadas miden fidelidad de la cuantización respecto al modelo original, no calidad absoluta en tareas.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con cuantización 4-bit, el modelo ocupa aproximadamente 13,5 GB de pesos, más overhead de activaciones y KV cache. Se recomienda un mínimo de 16 GB de VRAM para uso básico y 24 GB para contextos largos o procesamiento de vídeo.
-- GPU recomendadas: RTX 3090, RTX 4090, A100 40/80 GB, H100. En GPUs de consumo con 24 GB (RTX 3090/4090) puede ejecutarse con cuantización 4-bit y contextos moderados.
-- Opciones de despliegue: compatible con Hugging Face Transformers, vLLM, SGLang, TokenSpeed, y probablemente con llama.cpp y Ollama (aunque no se confirma explícitamente).
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: el repositorio ocupa 18,0 GB, por lo que se necesita al menos esa cantidad de memoria para cargar los pesos empaquetados en 4 bits, más el espacio para caché KV y activaciones.
+- GPU recomendadas: no especificadas en la información disponible. Por el tamaño del checkpoint, se requiere una GPU con al menos 24 GB de VRAM para la carga de pesos, y más para contexto largo.
+- Cabe en GPU de consumo: probablemente en RTX 3090, RTX 4090 y RTX 5090 (24-32 GB), aunque el autor no lo confirma y la compatibilidad depende de los kernels CUDA de CQ.
+- Opciones de despliegue: vLLM con el plugin de cuantización `cq` dentro de la imagen `docker.io/thousandml/cq:4bit-main`. No se documenta soporte para llama.cpp, Ollama, TGI ni otros motores.
+- Latencia y throughput: no disponibles. El autor no publica cifras de rendimiento.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Multimodal | Licencia | Cuantización disponible |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Despliegue |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (este) | 27B | 262K (ext. 1M) | Sí (imagen/vídeo) | Apache 2.0 | 4-bit TQ, BF16 |
-| Qwen3.6-27B | 27B | No disponible | No disponible | Apache 2.0 | No disponible |
-| Qwen3.7-Plus | No disponible | No disponible | No disponible | No disponible | No disponible |
-| Muse Glimmer-30B | 30B | No disponible | No disponible | No disponible | No disponible |
-| Opus4.6 Max | No disponible | No disponible | No disponible | No disponible | No disponible |
+| textclf/Qwen3.8-27B-TQ-4bit | 27 B (2,59 B tensores empaquetados) | no disponible | CQ 4 bits | Apache 2.0 | vLLM + plugin CQ |
+| Qwen/Qwen3.8-27B (base) | 27 B | no disponible | BF16/FP16 | Apache 2.0 | transformers, vLLM |
+| Otras cuantizaciones 4 bits del mismo base (GPTQ, AWQ) | 27 B | no disponible | GPTQ/AWQ 4 bits | Apache 2.0 | vLLM, TGI, llama.cpp |
 
-No se dispone de datos de rendimiento comparativos publicados en la información proporcionada. La comparativa se limita a características declaradas en la model card.
+No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada. La comparación se limita a parámetros, licencia y opciones de despliegue.
 
 ## Limitaciones y advertencias
 
-- No se han publicado detalles sobre sesgos o comportamientos no deseados específicos de este modelo. Como todo LLM, puede presentar sesgos presentes en los datos de entrenamiento.
-- Riesgo de alucinación: especialmente en tareas de razonamiento complejo o cuando se le pide información factual no cubierta en su entrenamiento. Se recomienda verificación externa en aplicaciones críticas.
-- Limitaciones de idioma: no se especifican los idiomas soportados; aunque Qwen suele ser multilingüe, no hay confirmación oficial para esta versión.
-- La cuantización 4-bit puede degradar ligeramente la calidad de salida en comparación con el modelo en BF16, especialmente en tareas de razonamiento matemático o generación de código.
-- El modo thinking activado por defecto aumenta el consumo de tokens y la latencia; es necesario desactivarlo explícitamente para aplicaciones de baja latencia.
-- La extensión de contexto hasta 1M tokens puede requerir hardware de gama alta y puede degradar el rendimiento si no se gestiona adecuadamente la memoria.
-- La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar los términos completos de la licencia y las políticas de uso de Alibaba.
+- Discrepancia en el recuento de parámetros: el Hub reporta 2 589 119 216 tensores almacenados frente a los 27 B declarados por el autor. Cualquier herramienta que dimensione recursos a partir del campo de safetensors puede subestimar el modelo.
+- Dependencia de un runtime propietario: la inferencia requiere la imagen Docker de ThousandML con kernels CUDA propios. No hay soporte documentado para llama.cpp, Ollama, TGI ni transformers estándar, lo que limita la portabilidad.
+- Fidelidad no equivalente a calidad: un 92,4 % de acuerdo top-1 implica que en aproximadamente 7-8 de cada 100 tokens el modelo cuantizado elige un token distinto al original; en tareas de razonamiento largo el error puede acumularse.
+- Idiomas no declarados: el Hub no especifica los idiomas soportados, por lo que no se puede garantizar cobertura multilingüe.
+- Contexto no documentado: se desconoce la longitud máxima de contexto, lo que impide planificar aplicaciones con ventanas largas.
+- Riesgo de alucinación: inherente a los modelos de lenguaje; no hay evaluaciones publicadas que lo cuantifiquen para este checkpoint.
+- Sesgos: no documentados en la información disponible.
+- Licencia: Apache 2.0 permite uso comercial, pero se remite a los términos del modelo base Qwen/Qwen3.8-27B, que deben revisarse por separado.
+- Madurez: el repositorio tiene 0 likes y 1064 descargas, y la model card no incluye guía de limitaciones ni evaluación de seguridad.
 
 ## Enlaces
 
-- Repositorio de Hugging Face (versión cuantizada): https://huggingface.co/textclf/Qwen3.8-27B-TQ-4bit
-- Modelo original en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
-- Repositorio oficial en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
-- Página del modelo en QwenCloud: https://www.qwencloud.com/models/qwen3.8-27b
-- Documentación en Cloudflare Workers AI: https://developers.cloudflare.com/workers-ai/models/qwen3.8-27b/
-- Otra cuantización 4-bit (MLX): https://huggingface.co/DreamFoundries/Qwen3.8-27B-4bit
+- Hugging Face: https://huggingface.co/textclf/Qwen3.8-27B-TQ-4bit
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- ThousandML (Coded Quantization): https://thousandml.com
+- Imagen Docker de CQ: docker.io/thousandml/cq:4bit-main

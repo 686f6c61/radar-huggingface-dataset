@@ -2,92 +2,105 @@
 
 ## Resumen
 
-Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP es un fine-tuning multi-etapa sobre el modelo Qwen3.6-27B de Alibaba, desarrollado por DavidAU en colaboracion con Nightmedia, TeichAI, armand0e y trohrbaugh. El modelo destaca por ser el primer fine-tuning de codigo abierto de su tamano en superar la barrera de 700 puntos en el benchmark ARC-C tanto en cuantizacion de 8 bits como de 4 bits, un umbral que hasta ahora solo habian alcanzado modelos cerrados de OpenAI, Anthropic y Google.
+Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP es un fine-tune de múltiples etapas y fusiones construido sobre Qwen/Qwen3.6-27B por DavidAU en colaboración con Nightmedia, TeichAI, armand0e y trohrbaugh. Con 27.781.427.952 parámetros (~27,8 B) y pesos en bfloat16, el objetivo declarado del autor es elevar la inteligencia general, el seguimiento de instrucciones y el razonamiento del modelo base sin alterar sus capacidades originales, evitando explícitamente el "benchmaxing". El modelo se distribuye con licencia Apache 2.0 y pipeline image-text-to-text, lo que indica que conserva la torre de visión del Qwen3.6 original.
 
-El proceso de entrenamiento combina fine-tuning multi-etapa, fusion de multiples modelos y datasets propios (Polar-STRICT y F451-STRICT), junto con trazas ligeras de razonamiento de Claude Opus y GPT-5. Mantiene las capacidades del modelo base, incluyendo vision y modo thinking, y anade un modo "heretic" sin censura mediante tecnicas de abliteration. Con 27.781 millones de parametros, esta disenado para ejecutarse en hardware de consumo, con cuantizaciones GGUF NEO IMATRIX que mejoran la precision entre un 2 y un 4 por ciento respecto a los GGUF convencionales.
+La particularidad más destacada es su naturaleza "herética" y sin censura: el autor aplica una etapa de abliteration previa al ajuste fino para eliminar los rechazos del modelo base, y combina trazas de entrenamiento de origen diverso (dataset Polaris de TeichAI, dataset F451 propio, trazas ligeras de "Fable" de armand0e y trazas de razonamiento de Claude Opus). El nombre "711" hace referencia a la puntuación ARC-C que el autor afirma superar tanto en cuantización de 8 bits como de 4 bits, un umbral que sitúa por encima de la zona habitualmente ocupada por modelos propietarios.
 
-La relevancia del modelo radica en que demuestra que es posible mejorar la inteligencia general y la resolucion de problemas de un modelo base sin sacrificar sus benchmarks nucleares, y que los resultados se mantienen incluso en cuantizaciones agresivas de 4 bits, lo que lo hace accesible para GPUs de consumo.
+El repositorio principal contiene el código fuente para fusiones, creación de cuantizaciones y uso como modelo base para nuevos ajustes; las cuantizaciones GGUF (MTP y regulares) se publican en un repositorio separado. Es relevante para quienes buscan un modelo de ~27 B con visión, modo thinking y comportamiento sin restricciones que quepa en hardware de consumo, aunque sus afirmaciones de rendimiento proceden del propio autor y no de evaluaciones independientes verificadas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (basado en Qwen3.6-27B) |
-| Parametros totales | 27.781.427.952 (27,78 B) |
+| Arquitectura | Transformer (derivada de Qwen3.6-27B, familia qwen3_5), con torre de visión; soporte MTP (multi-token prediction) en las cuantizaciones |
+| Parametros totales | 27.781.427.952 (~27,8 B) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (hereda de Qwen3.6-27B) |
-| Tipos de cuantizacion | bfloat16, 8 bits, 4 bits, GGUF NEO IMATRIX (MTP y regular) |
-| Idiomas soportados | ingles, chino |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, GGUF |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | GGUF regulares y GGUF MTP (publicados en repositorio separado); MLX y otros tipos en la sección community |
+| Idiomas soportados | ar, zh, en, fr, de, hi, id, it, ja, ko, pl, pt, ru, es, th, vi (16 idiomas declarados en la model card; el campo de idiomas del repo solo lista en y zh) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (bfloat16) en el repo principal; GGUF en repo secundario |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3.6-27B, un transformer denso de 27.781 millones de parametros con capacidades multimodales (imagen y texto) y modo de razonamiento thinking. El proceso de entrenamiento es un fine-tuning multi-etapa y una fusion multi-modelo que combina varios ajustes realizados por DavidAU con contribuciones de Nightmedia (fusion y evaluacion), TeichAI (dataset Polaris), armand0e (trazas Fable) y trohrbaugh (proceso "heretic" de abliteration).
+El modelo parte de Qwen3.6-27B, un transformer denso de ~27,8 B parámetros con capacidad multimodal (image-text-to-text). Sobre esa base, el autor aplica una cadena de ajustes finos de múltiples etapas, fusiones de múltiples estados (multi-state-merge) y una etapa previa de abliteration ("heretic") destinada a eliminar los comportamientos de rechazo. El entrenamiento combina el dataset Polaris de TeichAI (con trazas no razonadoras atribuidas a GPT-5), el dataset interno F451, trazas ligeras de "Fable" aportadas por armand0e y trazas de razonamiento/thinking de Claude Opus. El autor indica que el proceso se validó primero sobre modelos Qwen 3.5 de 9 B antes de aplicarlo al 27 B.
 
-Los datos de entrenamiento incluyen los datasets propios DavidAU/Polar-STRICT-Datasets y DavidAU/F451-STRICT-Datasets, junto con trazas ligeras de razonamiento de Claude Opus y GPT-5 (Polaris, sin razonamiento). El objetivo declarado era aumentar la inteligencia general y la capacidad de resolucion de problemas sin modificar el nucleo del modelo base y sin practicas de "benchmaxing". El proceso incluyo pruebas intermedias en modelos Qwen3.5-9B para validar la metodologia antes de aplicarla al modelo de 27B.
-
-La cuantizacion NEO IMATRIX mejora la precision de los quants entre un 2 y un 4 por ciento respecto a GGUF convencionales, y el tensor de salida (10-20 % de la salida) se mantiene en precision completa de 16 bits. El nombre "MTP" hace referencia a la prediccion multi-token, una caracteristica del modelo base Qwen3.6.
+La metodología declarada incluye pruebas y benchmarks en cada etapa (cada fine-tune, cada etapa multi-stage y cada paso de fusión) para controlar la calidad, seguidas de una validación humana comparativa lado a lado contra el modelo base. No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se emplearon RLHF o DPO. Las cuantizaciones incorporan soporte MTP (multi-token prediction), lo que puede mejorar el throughput de decodificación en los formatos GGUF compatibles.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento avanzado: mejora la capacidad de seguir instrucciones y la resolucion de problemas respecto al modelo base.
-- Modo thinking/reasoning: mantiene el modo de razonamiento del modelo Qwen3.6-27B.
-- Vision: soporta entrada de imagenes (pipeline image-text-to-text).
-- Escritura creativa: aunque no fue disenado especificamente para ello, muestra capacidades destacadas en narrativa, ficcion y roleplaying, segun los ejemplos del autor.
-- Sin censura (uncensored/heretic): mediante tecnicas de abliteration, elimina restricciones de seguridad del modelo base.
-- Multilingue: soporta ingles y chino.
-- Conversacional: apto para dialogos multi-turno.
+- Generación de texto generalista con modo thinking/razonamiento explícito.
+- Razonamiento multi-paso y resolución de problemas, con mejora declarada sobre el modelo base en seguimiento de instrucciones.
+- Generación de código y tareas de programación (etiquetado como "coder").
+- Escritura creativa, ficción, narrativa y roleplaying en múltiples géneros, pese a no ser el objetivo principal del ajuste.
+- Visión: procesamiento de imagen y texto combinados (pipeline image-text-to-text).
+- Multilingüe: 16 idiomas declarados, incluidos español, chino, inglés, árabe, hindi, japonés y coreano.
+- Comportamiento sin censura ("uncensored", "abliterated"): no aplica rechazos por contenido, lo que permite temáticas que el modelo base bloquearía.
+- Soporte de tool calling / function calling: no confirmado explícitamente en la información disponible; al derivar de Qwen3.6 es probable que conserve parte de esta capacidad, pero no está verificado.
+- Compatibilidad con endpoints (tag endpoints_compatible).
 
 ## Casos de uso
 
-- Resolucion de problemas complejos: su puntuacion ARC-C de 0,711 en 8 bits lo hace adecuado para tareas de razonamiento cientifico y logico donde se requiere precision, como analisis de problemas de fisica o matematicas aplicadas.
-- Asistente de codigo: al mantener las capacidades del modelo base Qwen3.6-27B, puede generar y depurar codigo en multiples lenguajes, integrable en entornos de desarrollo y pipelines de CI/CD.
-- Escritura creativa y roleplaying: sus capacidades narrativas, aunque no buscadas, lo convierten en una opcion para generacion de ficcion, guiones y desarrollo de personajes en proyectos de escritura colaborativa.
-- Analisis de imagenes: al soportar entrada visual, puede describir, analizar y razonar sobre imagenes en combinacion con texto, util en tareas de documentacion visual o asistencia multimodal.
-- Agentes conversacionales sin restricciones: su naturaleza "uncensored" permite desplegarlo en entornos donde se requiere libertad total de contenido, como simulaciones, investigacion o generacion de contenido para adultos.
-- Investigacion academica: su licencia Apache 2.0 y su disponibilidad en cuantizaciones de 4 bits permiten experimentar con modelos de 27B en hardware de consumo, facilitando la reproduccion de resultados y el estudio de tecnicas de fine-tuning multi-etapa.
+- Escritura creativa y narrativa sin restricciones: el modelo puede desarrollar ficción, guiones y worldbuilding con temáticas adultas o controvertidas que el modelo base rechazaría, gracias a la etapa de abliteration y a las trazas de escritura creativa del ajuste.
+- Roleplaying y personajes persistentes: adecuado para aplicaciones de chat con personalidad definida y conversaciones largas, donde el comportamiento sin censura evita interrupciones por filtros de rechazo.
+- Asistente de razonamiento con modo thinking: para tareas de análisis, planificación y resolución de problemas donde interesa ver la cadena de razonamiento antes de la respuesta final.
+- Generación de código en entornos de desarrollo: puede emplearse como asistente de programación local en IDE o pipelines, con la ventaja de ejecutarse en hardware de consumo mediante cuantizaciones GGUF de 4 bits.
+- Procesamiento de documentos con imágenes: gracias a la torre de visión, puede extraer y razonar sobre información de capturas, diagramas o documentos escaneados en flujos de automatización.
+- Investigación sobre alineación y seguridad: útil como caso de estudio de modelos abliterated para analizar qué comportamientos se eliminan, cómo afecta al rendimiento y qué riesgos introduce en producción.
+- Base para ajustes finos posteriores: el repositorio se publica explícitamente como código fuente y modelo base para nuevas etapas de tuning, lo que facilita experimentos de investigación sobre metodologías de multi-stage tuning.
+- Despliegue local multilingüe: con 16 idiomas declarados, sirve para prototipos de atención al cliente o traducción asistida en máquinas con una sola GPU de consumo.
 
 ## Benchmarks y rendimiento
 
-Segun la informacion proporcionada por el autor, el modelo alcanza una puntuacion ARC-C de 0,711 en cuantizacion de 8 bits y 0,701 en 4 bits, superando por primera vez el umbral de 700 para un modelo de codigo abierto de este tamano. Supera al modelo base Qwen3.6-27B en 6 de 7 benchmarks y lo iguala en el septimo, y supera los 7 benchmarks del modelo Qwen3.6-35B-A3B. No se han publicado en la informacion disponible los resultados desglosados de benchmarks como MMLU, HumanEval o GSM8K.
+El autor afirma que el modelo supera al Qwen3.6-27B base en 6 de 7 benchmarks y lo iguala en el séptimo, y que supera los 7 benchmarks del Qwen3.6-35B-A3B. También declara una puntuación ARC-C superior a 711 tanto en 8 bits como en 4 bits. Sin embargo, en la información proporcionada no se incluyen las tablas numéricas con los resultados desglosados por benchmark.
 
-| Benchmark | Fable-Fusion-711 (8 bits) | Fable-Fusion-711 (4 bits) | Qwen3.6-27B (base) | Qwen3.6-35B-A3B |
-|---|---|---|---|---|
-| ARC-C | 0,711 | 0,701 | inferior en 6 de 7 benchmarks | inferior en 7 de 7 benchmarks |
+| Benchmark | Resultado | Notas |
+|---|---|---|
+| ARC-C (8 bits) | >711 (afirmado por el autor) | Sin cifra exacta ni metodología detallada en la informacion disponible |
+| ARC-C (4 bits) | >711 (afirmado por el autor) | Sin cifra exacta ni metodología detallada en la informacion disponible |
+| Resto de benchmarks | no disponible | El autor indica mejora sobre Qwen3.6-27B en 6 de 7, sin cifras |
+
+No se han publicado en la información disponible resultados numéricos verificables de MMLU, HumanEval, GSM8K u otros benchmarks estándar, ni evaluaciones independientes.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el repositorio en bfloat16 ocupa 55,6 GB, por lo que se requieren al menos 60 GB de VRAM para inferencia sin cuantizar.
-- En cuantizacion de 8 bits, se estiman unos 28 GB de VRAM, compatible con GPUs profesionales como A100 de 40 GB o RTX A6000 de 48 GB.
-- En cuantizacion de 4 bits, se estiman entre 14 y 16 GB de VRAM, compatible con GPUs de consumo como RTX 3090, RTX 4080 o RTX 4090.
-- GPUs recomendadas: A100, H100 para precision completa; RTX 4090, RTX 3090 para cuantizaciones de 8 y 4 bits.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, transformers con Unsloth.
-- Latencia y throughput: no disponible en la informacion proporcionada.
+- VRAM estimada en bfloat16: aproximadamente 56 GB solo para pesos, más overhead de activaciones y caché KV; requiere GPU de 80 GB (A100, H100) o múltiples GPU.
+- VRAM estimada en cuantización de 8 bits: en torno a 28-30 GB, viable en una RTX 4090 (24 GB) solo con cuantizaciones más agresivas o con offloading parcial.
+- VRAM estimada en cuantización de 4 bits: aproximadamente 15-17 GB, lo que permite ejecución en RTX 4090, RTX 4080, RTX 3090 y GPUs de 16 GB o más; el autor destaca que las cuantizaciones más bajas mantienen calidad excepcional.
+- GPU recomendadas: A100 80 GB o H100 para bfloat16; RTX 4090, RTX 3090 o RTX 4080 para cuantizaciones de 4-8 bits.
+- Opciones de despliegue: transformers (formato nativo), llama.cpp y Ollama para GGUF, vLLM y TGI para serving en precisión completa; las cuantizaciones MTP pueden aprovecharse en runtimes compatibles con multi-token prediction.
+- Latencia y throughput: no disponibles en la información proporcionada; el soporte MTP en las cuantizaciones está orientado a mejorar la velocidad de decodificación, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | ARC-C | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Vision | Notas |
 |---|---|---|---|---|---|
-| Qwen3.6-27B-Fable-Fusion-711 | 27,78 B | no disponible | 0,711 (8 bits) | Apache 2.0 | Hugging Face |
-| Qwen3.6-27B (base) | 27,78 B | no disponible | inferior en 6 de 7 benchmarks | Apache 2.0 | Hugging Face |
-| Qwen3.6-35B-A3B | 35 B (3 B activos, MoE) | no disponible | inferior en 7 de 7 benchmarks | Apache 2.0 | Hugging Face |
+| Qwen3.6-27B-Fable-Fusion-711 (este) | ~27,8 B | no disponible | Apache 2.0 | Si | Fine-tune multi-etapa sin censura; afirma superar al base en 6 de 7 benchmarks |
+| Qwen/Qwen3.6-27B (base) | ~27,8 B | no disponible | Apache 2.0 | Si | Modelo original de Qwen; referencia de comparación del autor |
+| Qwen3.6-35B-A3B | no disponible (MoE) | no disponible | no disponible | no disponible | El autor afirma que este fine-tune supera sus 7 benchmarks |
+| Qwen3.5-27B | ~27 B | no disponible | no disponible | no disponible | Generación anterior; el autor indica que el método lo supera en benchmarks |
+
+No se dispone de datos suficientes en la información proporcionada para comparar con alternativas de otros fabricantes (Llama, Mistral, Gemma) en parámetros, contexto o rendimiento verificable.
 
 ## Limitaciones y advertencias
 
-- Contenido sin censura: al aplicar tecnicas de abliteration, el modelo puede generar contenido inapropiado, ofensivo o peligroso sin las salvaguardas habituales. No es adecuado para despliegues publicos sin moderacion.
-- Idiomas limitados: solo soporta ingles y chino; no hay garantias de calidad en otros idiomas.
-- Alucinaciones: como cualquier modelo de lenguaje, puede generar informacion falsa o inventada, especialmente en tareas factuales.
-- Datos de entrenamiento parcialmente documentados: los datasets Polar-STRICT y F451-STRICT no estan publicamente documentados en detalle, lo que dificulta la auditoria del proceso de entrenamiento.
-- Benchmarks parciales: solo se ha publicado ARC-C; falta informacion sobre otros benchmarks estandar como MMLU, HumanEval o GSM8K.
-- Riesgo de sobreajuste a benchmarks: aunque el autor declara cero "benchmaxing", la ausencia de datos independientes de evaluacion dificulta verificar esta afirmacion.
+- Modelo "uncensored" y "abliterated": no aplica rechazos de seguridad, por lo que puede generar contenido dañino, ilegal o sexualmente explícito; no es adecuado para aplicaciones orientadas al público sin capas de moderación externas.
+- Las afirmaciones de rendimiento (ARC-C >711, superioridad sobre el base) proceden del autor y de pruebas humanas propias; no se han aportado cifras detalladas ni evaluaciones independientes verificables.
+- Riesgo de alucinación inherente a los modelos de ~27 B, agravado por la eliminación de rechazos, que puede reducir las señales de incertidumbre del modelo.
+- La abliteration puede degradar sutilmente capacidades de razonamiento o seguridad en dominios sensibles; el autor afirma lo contrario, pero no hay evidencia independiente.
+- La longitud de contexto no se especifica en la información disponible; conviene verificarla antes de diseñar flujos con ventanas largas.
+- El campo de idiomas del repositorio solo lista inglés y chino, aunque la model card declara 16 idiomas; el soporte real de los idiomas adicionales no está verificado.
+- El soporte de tool calling y de agentes no está confirmado explícitamente.
+- Licencia Apache 2.0 permite uso comercial, pero el contenido generado sin filtros traslada al desplegador toda la responsabilidad legal y de moderación.
+- El repositorio principal contiene código fuente de fusión y pesos en bfloat16; para inferencia práctica hay que acudir al repositorio de cuantizaciones GGUF.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP
-- Repositorio de cuantizaciones GGUF NEO MAX: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
-- Repositorio del colaborador Nightmedia: https://huggingface.co/nightmedia/Qwen3.6-27B-Architect-Polaris2-Fable-B-F451
-- Modelo de prueba Qwen3.5-9B: https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF
-- Articulo en HackerNoon: https://hackernoon.com/qwen36-27b-fable-fusion-breaks-the-700-arc-c-barrier
-- Articulo en HackerNoon (variante GGUF): https://hackernoon.com/the-fine-tuned-variant-of-qwen36-27b-that-achieved-an-arc-c-score-of-0711-in-8-bit-quantization
-- Ficha en AIModels.fyi: https://www.aimodels.fyi/models/huggingFace/qwen3.6-27b-fable-fusion-711-uncensored-heretic-nm-dau-neo-max-mtp-gguf-davidau
+- Repositorio principal en Hugging Face: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP
+- Repositorio de cuantizaciones GGUF (NEO MAX, MTP y regulares): https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
+- Repositorio del socio con información técnica adicional: https://huggingface.co/nightmedia/Qwen3.6-27B-Architect-Polaris2-Fable-B-F451
+- Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
+- Modelo de control Qwen3.5-9B del mismo autor: https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF
+- Perfil del autor: https://huggingface.co/DavidAU
+- Colecciones del autor: https://huggingface.co/DavidAU/collections
+- Página de soporte/FAQs del autor: https://huggingface.co/DavidAU/support

@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 3044296071,
-  "storage_human": "3.0 GB",
+  "storage_bytes": 3184811959,
+  "storage_human": "3.2 GB",
   "context_length": null,
   "base_model": "FireRedTeam/FireRedTTS3",
   "formats": [

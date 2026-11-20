@@ -5,7 +5,7 @@
   "author": "btbtyler09",
   "url": "https://huggingface.co/btbtyler09/Inkling-2-Small-NVFP4",
   "created_at": "2026-11-13T22:49:09.000Z",
-  "updated_at": "2026-11-14T04:07:48.000Z",
+  "updated_at": "2026-11-20T04:54:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 80,
+  "downloads_30d": 85,
   "trending_score": 0,
   "parameters": 337208279136,
   "parameters_human": "337.21B",

@@ -5,7 +5,7 @@
   "author": "canvit",
   "url": "https://huggingface.co/canvit/probe-ade20k-40k-s1024-c64-abl-no-vpe",
   "created_at": "2026-10-27T00:17:02.000Z",
-  "updated_at": "2026-10-29T13:52:19.000Z",
+  "updated_at": "2026-11-19T21:41:39.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-segmentation",

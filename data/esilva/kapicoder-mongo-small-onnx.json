@@ -5,18 +5,18 @@
   "author": "esilva",
   "url": "https://huggingface.co/esilva/KapiCoder-Mongo-Small-ONNX",
   "created_at": "2026-10-27T00:44:30.000Z",
-  "updated_at": "2026-11-09T11:04:33.000Z",
+  "updated_at": "2026-11-17T13:56:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
-  "library": null,
+  "library": "onnxruntime-genai",
   "languages": [
     "en",
     "pt"
   ],
   "tags": [
-    "onnx",
     "onnxruntime-genai",
+    "onnx",
     "mongodb",
     "code",
     "fim",
@@ -33,12 +33,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 97,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 12665659821,
-  "storage_human": "12.7 GB",
+  "storage_bytes": 18453078445,
+  "storage_human": "18.5 GB",
   "context_length": null,
   "base_model": "esilva/KapiCoder-Mongo-Small",
   "formats": [

@@ -2,83 +2,99 @@
 
 ## Resumen
 
-Prism Caption 1 Micro es un modelo de generación de texto de propósito único, desarrollado por VertexAGI, que se especializa en titular conversaciones de chat a partir del primer mensaje del usuario. Forma parte de la familia Prism y está diseñado para ejecutar esta tarea estrecha de forma local y económica, evitando tener que recurrir a un modelo generalista más grande. El modelo se obtiene mediante fine-tuning con LoRA sobre el modelo base `mlx-community/gemma-3-1b-it-4bit` (Gemma 3 1B cuantizado a 4 bits), destilando el comportamiento de un profesor más grande, `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning`, a través de la API gratuita de OpenRouter.
+Prism Caption 1 Micro es un modelo de lenguaje de 1.301.875.840 parámetros (aproximadamente 1,3 mil millones) desarrollado por VertexAGI, especializado en una única tarea: generar títulos cortos y específicos para conversaciones de chat a partir del primer mensaje del usuario. Se trata de un ajuste fino mediante LoRA sobre `mlx-community/gemma-3-1b-it-4bit`, que a su vez deriva de Gemma 3 1B de Google, y se distribuye en formato MLX de 4 bits y GGUF Q4_K_M.
 
-Con 203.531.392 parámetros (según los safetensors del repositorio) y un peso de 1,8 GB, el modelo está pensado para ser rápido y ligero. Se distribuye en dos formatos: MLX (para Apple Silicon) y GGUF (Q4_K_M, para llama.cpp y runtimes compatibles). Su licencia es Apache 2.0, heredada del modelo base, y solo soporta inglés. La relevancia actual radica en que ofrece una alternativa de bajo coste para una funcionalidad muy común en asistentes conversacionales, con una fiabilidad de formato mejorada respecto al modelo base sin fine-tuning.
+El modelo resuelve un problema acotado pero recurrente en productos conversacionales: el auto-nombrado de conversaciones tipo "New chat", funcionalidad presente en asistentes como ChatGPT o Claude. En lugar de enrutar esta tarea a un modelo generalista grande, Prism Caption 1 Micro permite ejecutarla localmente con un coste computacional mínimo. Su entrenamiento se basa en destilación desde `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning` sobre un conjunto de 339 ejemplos de primeros mensajes realistas.
+
+La relevancia del modelo reside en su enfoque de especialización extrema: no pretende ser un modelo conversacional general, sino una pieza de infraestructura para pipelines de producto. Su principal mejora medible frente al modelo base no es la calidad semántica del título (ambos promedian 4,0 palabras) sino la fiabilidad de formato, con 0/20 salidas mal formadas frente a 3/20 del base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Gemma 3 1B) con adaptadores LoRA |
-| Parametros totales | 203.531.392 (segun safetensors del repositorio) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no especificada (heredada del modelo base Gemma 3 1B) |
-| Tipos de cuantizacion | 4-bit (MLX), Q4_K_M (GGUF) |
+| Arquitectura | Transformer decoder-only (Gemma 3 text), ajuste fino LoRA |
+| Parametros totales | 1.301.875.840 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | 4-bit (MLX, group size 64); Q4_K_M (GGUF) |
 | Idiomas soportados | en (ingles) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (MLX), GGUF |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (MLX 4-bit) y GGUF (Q4_K_M) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `mlx-community/gemma-3-1b-it-4bit`, una versión cuantizada a 4 bits de Gemma 3 1B, que es un transformer decoder-only con atención causal estándar. Sobre esta base se aplicó un fine-tuning con LoRA de rango 8 en 8 capas, durante 1.500 iteraciones, utilizando un dataset propio de 339 ejemplos de primeros mensajes realistas repartidos en unos 50 temas cotidianos (programación, viajes, cocina, finanzas, salud, etc.). Cada ejemplo empareja el mensaje del usuario con un título generado por el modelo profesor `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning`, que actúa como maestro en un esquema de destilación. La mejor pérdida de validación fue 0,163, alcanzada en la iteración 800, con convergencia práctica desde la iteración 300.
+El modelo parte de `mlx-community/gemma-3-1b-it-4bit`, una version cuantizada a 4 bits de Gemma 3 1B en su variante instruct, con arquitectura transformer decoder-only propia de la familia Gemma 3. Sobre esta base se aplico un ajuste fino mediante LoRA con rango 8 y 8 capas, durante 1.500 iteraciones. La perdida de validacion minima alcanzada fue de 0,163 en la iteracion 800, aunque el autor indica que el entrenamiento estaba esencialmente convergido desde la iteracion 300.
 
-No se emplearon técnicas como RLHF o DPO; el entrenamiento es puramente supervisado sobre las salidas del profesor. El modelo está ajustado para seguir un prompt de sistema específico que pide generar únicamente un título corto (3-6 palabras, en title case, sin puntuación final). Una particularidad técnica importante es que el tokenizador de Gemma 3 registra `<eos>` (id 1) como único token de parada por defecto, pero la plantilla de chat termina cada turno con `<end_of_turn>` (id 106); si el runtime no lo añade como condición de parada, la generación se alarga con tokens basura.
+El dataset de entrenamiento consta de 339 ejemplos de primeros mensajes realistas distribuidos en aproximadamente 50 tematicas cotidianas (programacion, viajes, cocina, finanzas, salud, entre otras), emparejados con titulos generados por el modelo profesor `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning` a traves de la capa gratuita de OpenRouter. Se trata, por tanto, de destilacion de comportamiento en un dominio muy estrecho, no de un entrenamiento general.
+
+Una innovacion practica relevante documentada por el autor es la advertencia sobre el tokenizer de Gemma 3: solo registra `<eos>` (id 1) como token de parada por defecto, pero la plantilla de chat cierra cada turno con `<end_of_turn>` (id 106). Si el codigo de inferencia no anade este segundo token como condicion de parada, la generacion continua mas alla del titulo correcto y produce tokens basura o de relleno. En llama.cpp este comportamiento ya esta gestionado por su manejo nativo de la plantilla de Gemma 3.
 
 ## Capacidades
 
-- Generación de títulos de chat: dado el primer mensaje de una conversación, produce un título corto y específico (3-6 palabras) en formato title case.
-- Fiabilidad de formato: el fine-tuning reduce drásticamente las salidas malformadas (títulos demasiado largos, multilínea o con formato incorrecto) en comparación con el modelo base sin ajustar.
-- Integración con plantillas de chat: compatible con el formato de mensajes de Gemma 3 (rol user/system) y con el prompt de sistema recomendado.
-- Ejecución local eficiente: al ser un modelo pequeño y cuantizado, puede ejecutarse en hardware modesto, incluida CPU y Apple Silicon.
-- Soporte de tool calling: no disponible; el modelo no está entrenado para ello.
-- Capacidades multilingües: no; solo inglés.
-- Modo de razonamiento o pensamiento: no; es un modelo de una sola pasada para una tarea concreta.
+- Generacion de titulos de conversacion a partir del primer mensaje del usuario, con formato de 3 a 6 palabras, en title case, sin comillas ni puntuacion final.
+- Generacion de texto autoregresiva basica heredada del modelo base, aunque no es su proposito.
+- Soporte de plantilla de chat conversacional (formato de turnos de Gemma 3).
+- Capacidad multilingue limitada al ingles, segun la etiqueta de idioma del repositorio.
+- No dispone de soporte documentado de tool calling ni function calling.
+- No dispone de soporte documentado de agentes ni razonamiento multi-paso.
+- No dispone de capacidades de vision, audio ni modo thinking, a pesar de que el nombre del modelo profesor incluya "omni".
 
 ## Casos de uso
 
-- Titulado automático de conversaciones en aplicaciones de chat: el modelo puede asignar un nombre descriptivo a cada nueva conversación en un cliente de mensajería o asistente, replicando el comportamiento de "New chat" de ChatGPT o Claude. Su pequeño tamaño permite ejecutarlo en el cliente sin latencia perceptible.
-- Asistentes de productividad local: integración en herramientas de notas o gestión de tareas que necesiten etiquetar automáticamente hilos de discusión o registros de reuniones a partir de la primera intervención.
-- Preprocesado de datasets de soporte: en sistemas de atención al cliente, se puede usar para generar títulos de tickets a partir del primer mensaje del usuario, facilitando la clasificación y búsqueda posterior.
-- Middleware de titulado en pipelines de IA: como paso previo en un flujo donde un modelo grande se encarga de tareas complejas, Prism Caption 1 Micro puede encargarse del titulado de sesiones, reduciendo el coste de cómputo al no invocar al modelo grande para esta tarea trivial.
-- Aplicaciones de chat embebidas en dispositivos edge: al pesar solo 1,8 GB y requerir poca VRAM, puede desplegarse en dispositivos con recursos limitados (Raspberry Pi, NAS, etc.) para titular conversaciones de forma privada.
-- Demostraciones educativas de fine-tuning y destilación: sirve como ejemplo práctico de cómo adaptar un modelo pequeño a una tarea específica mediante LoRA y destilación, con un dataset reducido.
+- Auto-nombrado de conversaciones en asistentes conversacionales: al recibir el primer mensaje de un usuario, el modelo genera un titulo de 3 a 6 palabras que se muestra en la barra lateral del historial. Su tamano de 1,3B parametros y su formato MLX 4-bit de 733 MB permiten ejecutarlo en el mismo dispositivo del cliente o en un servicio ligero sin coste apreciable.
+- Etiquetado de sesiones en herramientas de soporte al cliente: en un panel de tickets o chats, el modelo puede generar etiquetas legibles para cada hilo entrante a partir del primer mensaje, facilitando la clasificacion visual y la busqueda posterior por parte de los agentes.
+- Organizacion de historiales en aplicaciones de notas o productividad: cuando un usuario inicia una conversacion con un asistente integrado en una app de notas, el modelo produce un titulo descriptivo que sustituye al generico "Nueva conversacion", mejorando la navegabilidad del historial.
+- Generacion de asuntos para hilos en foros o comunidades: a partir del primer mensaje de un hilo, el modelo puede proponer un asunto conciso y especifico, reduciendo la carga de moderacion y mejorando la legibilidad de listados.
+- Procesamiento local en Apple Silicon: gracias al formato MLX y a su tamano reducido, el modelo puede ejecutarse integramente en un Mac con chip de la serie M mediante `mlx-lm`, sin dependencia de servicios en la nube, lo que resulta adecuado para aplicaciones de escritorio con requisitos de privacidad.
+- Despliegue en entornos con recursos limitados mediante llama.cpp u Ollama: el archivo GGUF Q4_K_M de 1,01 GB permite integrar la funcionalidad de titulado en contenedores pequenos, dispositivos de borde o entornos de CI para pruebas automatizadas de interfaz.
+- Generacion de titulos en pipelines de evaluacion o prototipado: por su bajo coste, el modelo puede emplearse para etiquetar grandes lotes de conversaciones sinteticas en tareas de analisis o anotacion, siempre que el contenido este en ingles.
 
 ## Benchmarks y rendimiento
 
-La model card no incluye benchmarks estándar (MMLU, HumanEval, GSM8K, etc.), ya que el modelo no está diseñado para tareas generales. En su lugar, el autor proporciona una evaluación propia sobre 20 primeros mensajes de prueba, comparando el modelo base Gemma 3 1B con la versión ajustada:
+El autor publica una evaluacion comparativa limitada entre el modelo base y el ajustado, sobre 20 primeros mensajes nuevos no vistos durante el entrenamiento:
 
-| Metrica | Base Gemma-3-1B-it | Prism Caption 1 Micro |
+| Metrica | Gemma-3-1B-it base | Prism Caption 1 Micro |
 |---|---|---|
-| Salidas con formato incorrecto (demasiado largas / multilinea / malformadas) | 3/20 | 0/20 |
-| Numero medio de palabras por titulo | 4,0 | 4,0 |
+| Salidas con formato incorrecto (demasiado largas, multilinea o malformadas) | 3/20 | 0/20 |
+| Media de palabras por titulo | 4,0 | 4,0 |
 
-Además, se muestran ejemplos cualitativos de mejora en la especificidad de los títulos, como "Explaining the difference between TCP and UDP" -> "TCP vs UDP Overview" o "Debugging a React component that re-renders infinitely" -> "React Component Re-render Issue". No se dispone de datos de latencia o throughput publicados.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el repositorio pesa 1,8 GB, por lo que la inferencia en 4-bit requiere aproximadamente 2 GB de VRAM o memoria RAM.
-- GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3060, etc.) es suficiente. También funciona en Apple Silicon gracias al formato MLX.
-- Compatibilidad con CPU: sí, mediante llama.cpp con el archivo GGUF Q4_K_M; puede ejecutarse en CPU sin GPU.
-- Opciones de despliegue: `mlx-lm` para Apple Silicon, `llama.cpp` (o LM Studio, Ollama) para el formato GGUF, y cualquier runtime compatible con safetensors.
-- Latencia y throughput: no publicados, pero al ser un modelo de ~200M parámetros y generar solo 3-6 palabras, la latencia es del orden de decenas de milisegundos en GPU y de cientos de milisegundos en CPU.
+- VRAM estimada para inferencia: aproximadamente 0,8-1,2 GB en cuantizacion de 4 bits, segun el formato (733 MB para MLX 4-bit, 1,01 GB para GGUF Q4_K_M) mas el overhead del runtime.
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; el modelo cabe holgadamente en tarjetas con 4 GB o mas de VRAM, como RTX 3050, RTX 4060 o superiores. Tambien puede ejecutarse en CPU sin problema.
+- Cabe en GPU consumer: si, en practicamente cualquier GPU consumer con 4 GB o mas, y en Apple Silicon mediante MLX.
+- Opciones de despliegue: `mlx-lm` en Apple Silicon, `llama.cpp`, Ollama y LM Studio mediante el archivo GGUF. No se documenta soporte para vLLM ni TGI en la informacion disponible.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos directamente comparables en la misma categoría (titulado de chats con tamaño similar). La comparación más relevante es con el modelo base sin ajustar, que ya se ha mostrado en la sección de benchmarks. Frente a alternativas generalistas como Gemma 3 1B o Llama 3.2 1B, Prism Caption 1 Micro ofrece una fiabilidad de formato superior para la tarea específica de titulado, a costa de no ser útil para ninguna otra tarea. No se dispone de datos de rendimiento de otros modelos de titulado para una comparativa cuantitativa.
+| Modelo | Parametros | Contexto | Licencia | Formatos | Enfoque |
+|---|---|---|---|---|---|
+| Prism Caption 1 Micro | 1,30B | no disponible | Apache 2.0 | MLX 4-bit, GGUF Q4_K_M | Titulado de chats especializado |
+| Gemma 3 1B IT (base) | 1B | no disponible | Gemma license | safetensors, GGUF | Modelo generalista instruct |
+| Nemotron-3-Nano-Omni 30B A3B (profesor) | 30B (MoE, 3B activos) | no disponible | no disponible | no disponible | Modelo generalista con razonamiento |
+
+La comparacion mas directa es con el propio modelo base Gemma 3 1B IT, del que Prism Caption 1 Micro hereda arquitectura y capacidades generales pero al que supera en fiabilidad de formato para la tarea concreta de titulado (0/20 frente a 3/20 salidas mal formadas). Frente al modelo profesor, la diferencia de tamano es de mas de veinte veces, lo que ilustra el objetivo de destilacion: capturar un comportamiento estrecho en un modelo mucho menor. No se dispone de datos de benchmarks que permitan comparar rendimiento en tareas generales con alternativas de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- Propósito único: el modelo solo es útil para titular conversaciones; no funcionará bien en ninguna otra tarea de generación de texto.
-- Dataset de entrenamiento pequeño: solo 339 ejemplos, lo que puede limitar la generalización a dominios o estilos de escritura muy diferentes.
-- Títulos genéricos en casos ambiguos: para mensajes muy cortos o ambiguos, el título generado puede ser poco específico o genérico.
-- Idioma limitado: solo soporta inglés; no se recomienda su uso con otros idiomas.
-- Dependencia del token de parada: si el runtime no configura `<end_of_turn>` (id 106) como token de parada, la generación producirá salidas corruptas o alargadas.
-- Riesgo de alucinación: aunque la tarea es simple, el modelo puede generar títulos que no reflejen fielmente el contenido del mensaje en casos límite.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero se debe verificar la licencia del modelo base Gemma 3 (que también es Apache 2.0, según la model card).
+- El modelo esta disenado exclusivamente para titulado de chats; no funciona bien en ninguna otra tarea, segun reconoce el propio autor.
+- El dataset de entrenamiento es muy reducido (339 ejemplos), lo que limita la cobertura de dominios y estilos de mensajes.
+- Los titulos para primeros mensajes muy ambiguos o muy cortos pueden resultar genericos.
+- Solo soporta ingles; los mensajes en otros idiomas no estan cubiertos por el entrenamiento.
+- Riesgo de alucinacion inherente a los modelos de lenguaje, aunque acotado por la brevedad de las salidas y la naturaleza de la tarea.
+- Advertencia critica de inferencia: es necesario anadir el token `<end_of_turn>` (id 106) como condicion de parada en MLX, ya que el tokenizer de Gemma 3 solo registra `<eos>` (id 1) por defecto; de lo contrario la generacion produce tokens basura tras el titulo.
+- Licencia Apache 2.0 heredada del modelo base, lo que permite uso comercial, pero conviene verificar las condiciones de la licencia original de Gemma 3 por si existieran restricciones adicionales aplicables.
+- No se documentan sesgos especificos, pero al derivar de Gemma 3 y entrenarse sobre un dataset pequeno, puede heredar sesgos del modelo base y del profesor.
+- El repositorio registra 0 likes y 1.048 descargas en el momento de la consulta, lo que sugiere una adopcion limitada y poca validacion externa.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/VertexAGI/prism-caption-1-micro
+- Modelo en Hugging Face: https://huggingface.co/VertexAGI/prism-caption-1-micro
 - Modelo base: https://huggingface.co/mlx-community/gemma-3-1b-it-4bit
-- Profesor (vía OpenRouter): https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning
+- Modelo profesor: https://huggingface.co/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning
+- OpenRouter (proveedor del modelo profesor): https://openrouter.ai
+- Repositorio de mlx-lm: https://github.com/ml-explore/mlx-lm
+- Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp

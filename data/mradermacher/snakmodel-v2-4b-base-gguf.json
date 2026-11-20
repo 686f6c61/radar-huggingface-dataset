@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/snakmodel-v2-4b-base-GGUF",
   "created_at": "2026-09-28T20:21:22.000Z",
-  "updated_at": "2026-09-28T20:41:36.000Z",
+  "updated_at": "2026-09-28T20:41:37.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -24,7 +24,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 46,
+  "downloads_30d": 42,
   "trending_score": 0,
   "parameters": 4205423616,
   "parameters_human": "4.21B",

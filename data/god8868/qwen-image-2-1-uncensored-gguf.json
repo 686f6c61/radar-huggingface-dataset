@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 1139,
+  "downloads_30d": 1134,
   "trending_score": 0,
   "parameters": 7115124736,
   "parameters_human": "7.12B",
@@ -41,8 +41,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Artihuman/Qwen-Image-2.1-Uncensored-GGUF",
+  "renamed_at": "2026-11-20T07:18:45.645Z",
   "benchmarks": [],
   "sources": []
 }

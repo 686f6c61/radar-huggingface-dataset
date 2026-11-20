@@ -1,0 +1,368 @@
+{
+  "schema": 2,
+  "id": "tomaarsen/splade-gte-en-mlm-base-gooaq-matryoshka",
+  "slug": "tomaarsen-splade-gte-en-mlm-base-gooaq-matryoshka",
+  "author": "tomaarsen",
+  "url": "https://huggingface.co/tomaarsen/splade-gte-en-mlm-base-gooaq-matryoshka",
+  "created_at": "2026-11-20T10:29:28.000Z",
+  "updated_at": "2026-11-20T10:29:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "gte",
+    "sparse-encoder",
+    "sparse",
+    "splade",
+    "generated_from_trainer",
+    "dataset_size:99000",
+    "loss:CachedSpladeLoss",
+    "loss:SparseMatryoshkaLoss",
+    "loss:FlopsLoss",
+    "loss:SparseMultipleNegativesRankingLoss",
+    "feature-extraction",
+    "en",
+    "dataset:tomaarsen/gooaq-hard-negatives",
+    "arxiv:1908.10084",
+    "arxiv:2101.06983",
+    "arxiv:2205.04733",
+    "arxiv:2205.13147",
+    "arxiv:2004.05665",
+    "arxiv:1807.03748",
+    "base_model:tomaarsen/gte-en-mlm-base-native",
+    "base_model:finetune:tomaarsen/gte-en-mlm-base-native",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 137398848,
+  "parameters_human": "137.4M",
+  "storage_bytes": 549611304,
+  "storage_human": "550 MB",
+  "context_length": null,
+  "base_model": "tomaarsen/gte-en-mlm-base-native",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Accuracy@1",
+      "value": 0.44
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Accuracy@3",
+      "value": 0.62
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Accuracy@5",
+      "value": 0.7
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Accuracy@10",
+      "value": 0.8
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Precision@1",
+      "value": 0.44
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Precision@3",
+      "value": 0.20666666666666667
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Precision@5",
+      "value": 0.14
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Precision@10",
+      "value": 0.08
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Recall@1",
+      "value": 0.44
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Recall@3",
+      "value": 0.62
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Recall@5",
+      "value": 0.7
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Recall@10",
+      "value": 0.8
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Ndcg@10",
+      "value": 0.6105540528119933
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Mrr@10",
+      "value": 0.5511349206349205
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Map@100",
+      "value": 0.5584740306296418
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Query Active Dims",
+      "value": 103.5199966430664
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Query Sparsity Ratio",
+      "value": 0.9966090147850148
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Corpus Active Dims",
+      "value": 984.5780029296875
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Corpus Sparsity Ratio",
+      "value": 0.967748362063362
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Avg Flops",
+      "value": 35.614192962646484
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Accuracy@1",
+      "value": 0.44
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Accuracy@3",
+      "value": 0.62
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Accuracy@5",
+      "value": 0.7
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Accuracy@10",
+      "value": 0.8
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Precision@1",
+      "value": 0.44
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Precision@3",
+      "value": 0.20666666666666667
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Precision@5",
+      "value": 0.14
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Precision@10",
+      "value": 0.08
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Recall@1",
+      "value": 0.44
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Recall@3",
+      "value": 0.62
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Recall@5",
+      "value": 0.7
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Recall@10",
+      "value": 0.8
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Ndcg@10",
+      "value": 0.6105540528119933
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Mrr@10",
+      "value": 0.5511349206349205
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Dot Map@100",
+      "value": 0.5584740306296418
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Query Active Dims",
+      "value": 103.5199966430664
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Query Sparsity Ratio",
+      "value": 0.9966090147850148
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Corpus Active Dims",
+      "value": 984.5780029296875
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Corpus Sparsity Ratio",
+      "value": 0.967748362063362
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Avg Flops",
+      "value": 35.614192962646484
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoNFCorpus",
+      "metric": "Dot Accuracy@1",
+      "value": 0.42
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoNFCorpus",
+      "metric": "Dot Accuracy@3",
+      "value": 0.58
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoNFCorpus",
+      "metric": "Dot Accuracy@5",
+      "value": 0.62
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoNFCorpus",
+      "metric": "Dot Accuracy@10",
+      "value": 0.68
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoNFCorpus",
+      "metric": "Dot Precision@1",
+      "value": 0.42
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoNFCorpus",
+      "metric": "Dot Precision@3",
+      "value": 0.3933333333333333
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoNFCorpus",
+      "metric": "Dot Precision@5",
+      "value": 0.36400000000000005
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoNFCorpus",
+      "metric": "Dot Precision@10",
+      "value": 0.284
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoNFCorpus",
+      "metric": "Dot Recall@1",
+      "value": 0.024344651245524682
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "NanoNFCorpus",
+      "metric": "Dot Recall@3",
+      "value": 0.08118484168476099
+    }
+  ],
+  "sources": []
+}

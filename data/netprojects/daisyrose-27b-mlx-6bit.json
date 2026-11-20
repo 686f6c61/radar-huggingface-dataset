@@ -5,7 +5,7 @@
   "author": "netprojects",
   "url": "https://huggingface.co/netprojects/DaisyRose-27B-MLX-6bit",
   "created_at": "2026-11-19T11:24:57.000Z",
-  "updated_at": "2026-11-19T11:52:12.000Z",
+  "updated_at": "2026-11-19T12:10:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

@@ -1,0 +1,60 @@
+{
+  "schema": 2,
+  "id": "prajwal90/AirQuality-SLM-Model-B-Qwen2.5-1.5B-Instruct",
+  "slug": "prajwal90-airquality-slm-model-b-qwen2-5-1-5b-instruct",
+  "author": "prajwal90",
+  "url": "https://huggingface.co/prajwal90/AirQuality-SLM-Model-B-Qwen2.5-1.5B-Instruct",
+  "created_at": "2026-11-20T05:06:43.000Z",
+  "updated_at": "2026-11-20T05:06:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "chat",
+    "conversational",
+    "en",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3087467144,
+  "storage_human": "3.1 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen2.5-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepTrans: Deep Reasoning Translation via Reinforcement Learning ...",
+      "url": "https://direct.mit.edu/tacl/article/doi/10.1162/TACL.a.65/134744/DeepTrans-Deep-Reasoning-Translation-via",
+      "snippet": "Jan 5, 2026 · Experimental results show the effectiveness of DeepTrans. Using Qwen2.5-7B as the backbone, DeepTrans improves …Read more"
+    }
+  ]
+}

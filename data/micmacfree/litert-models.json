@@ -5,7 +5,7 @@
   "author": "micmacfree",
   "url": "https://huggingface.co/micmacfree/litert-models",
   "created_at": "2026-08-06T15:30:01.000Z",
-  "updated_at": "2026-11-15T02:00:35.000Z",
+  "updated_at": "2026-11-19T20:19:53.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -19,7 +19,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 150,
+  "downloads_30d": 135,
   "trending_score": 0,
   "parameters": 4647450147,
   "parameters_human": "4.65B",

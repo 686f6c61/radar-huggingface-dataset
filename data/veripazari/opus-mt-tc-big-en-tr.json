@@ -1,0 +1,86 @@
+{
+  "schema": 2,
+  "id": "veripazari/opus-mt-tc-big-en-tr",
+  "slug": "veripazari-opus-mt-tc-big-en-tr",
+  "author": "veripazari",
+  "url": "https://huggingface.co/veripazari/opus-mt-tc-big-en-tr",
+  "created_at": "2026-11-20T07:47:39.000Z",
+  "updated_at": "2026-11-20T07:51:12.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en",
+    "tr"
+  ],
+  "tags": [
+    "pytorch",
+    "tf",
+    "marian",
+    "translation",
+    "opus-mt-tc",
+    "en",
+    "tr",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1422552022,
+  "storage_human": "1.4 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Translation eng-tur",
+      "dataset": "flores101-devtest",
+      "metric": "BLEU",
+      "value": 31.4
+    },
+    {
+      "task": "Translation eng-tur",
+      "dataset": "newsdev2016",
+      "metric": "BLEU",
+      "value": 21.9
+    },
+    {
+      "task": "Translation eng-tur",
+      "dataset": "tatoeba-test-v2021-08-07",
+      "metric": "BLEU",
+      "value": 42.3
+    },
+    {
+      "task": "Translation eng-tur",
+      "dataset": "newstest2016",
+      "metric": "BLEU",
+      "value": 23.4
+    },
+    {
+      "task": "Translation eng-tur",
+      "dataset": "newstest2017",
+      "metric": "BLEU",
+      "value": 25.4
+    },
+    {
+      "task": "Translation eng-tur",
+      "dataset": "newstest2018",
+      "metric": "BLEU",
+      "value": 22.6
+    }
+  ],
+  "sources": []
+}

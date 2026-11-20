@@ -5,7 +5,7 @@
   "author": "canvit",
   "url": "https://huggingface.co/canvit/qpolicy-ade20k-c64-t5-qband-2026-07-04-s1",
   "created_at": "2026-07-04T19:26:48.000Z",
-  "updated_at": "2026-11-19T19:28:09.000Z",
+  "updated_at": "2026-11-19T21:41:19.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",

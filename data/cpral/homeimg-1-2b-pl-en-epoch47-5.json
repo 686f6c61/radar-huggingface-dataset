@@ -5,7 +5,7 @@
   "author": "cpral",
   "url": "https://huggingface.co/cpral/HomeIMG-1.2B-PL-EN-epoch47.5",
   "created_at": "2026-11-12T15:40:43.000Z",
-  "updated_at": "2026-11-12T16:02:52.000Z",
+  "updated_at": "2026-11-20T00:38:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",

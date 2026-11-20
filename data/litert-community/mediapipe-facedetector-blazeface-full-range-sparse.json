@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/MediaPipe-FaceDetector-BlazeFace-Full-Range-Sparse",
   "created_at": "2026-11-18T23:06:13.000Z",
-  "updated_at": "2026-11-18T23:39:45.000Z",
+  "updated_at": "2026-11-19T20:33:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "object-detection",

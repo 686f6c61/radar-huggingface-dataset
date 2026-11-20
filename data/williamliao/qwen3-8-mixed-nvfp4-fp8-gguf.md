@@ -2,98 +2,112 @@
 
 ## Resumen
 
-Qwen3.8-Mixed-NVFP4-FP8-GGUF es una conversión comunitaria a formato GGUF del modelo Darkstar-Qwen3.8-27B-Base-ModelOpt-W4A16-NVFP4-Mixed-FP8, publicada por el usuario williamliao. No se trata de un fine-tune nuevo ni de un modelo entrenado desde cero, sino de una reempaquetadura de pesos para su uso con llama.cpp: conserva los tensores NVFP4 del checkpoint de origen y reconvierte los tensores FP8 E4M3 a Q8_0 mediante la opción `--fp8-as-q8` del conversor de llama.cpp. El modelo upstream es Qwen/Qwen3.8-27B, con 27.320.698.465 parámetros reales según los safetensors del repositorio base.
+`williamliao/Qwen3.8-Mixed-NVFP4-FP8-GGUF` es una conversión comunitaria a formato GGUF del modelo Darkstar Qwen3.8 27B, una cuantización W4A16 NVFP4 mixta con FP8 E4M3 elaborada con NVIDIA ModelOpt sobre el modelo base Qwen/Qwen3.8-27B. El autor de esta ficha, williamliao, no entrena ni afina el modelo: se limita a empaquetar los pesos ya cuantizados en contenedores GGUF listos para `llama.cpp`, preservando los tensores NVFP4 originales y ofreciendo dos variantes según cómo se almacenen los 208 tensores FP8 E4M3 de partida (como Q8_0 o como F8_E4M3 nativo).
 
-La relevancia de esta ficha es práctica: el autor documenta que la ruta nativa FP8 en llama.cpp v0.9.0 ofrecía un rendimiento muy bajo en su hardware (2,6 tok/s en una prueba de generación de código Python), mientras que la variante NVFP4 + Q8_0 alcanzó 29,2 tok/s en la misma prueba, unas 11,2 veces más. Es un resultado observacional, no un benchmark controlado, y debe interpretarse como una pista de configuración más que como una conclusión general sobre FP8.
+El interés de esta publicación es práctico: permite ejecutar un modelo de 27.320.698.465 parámetros en hardware de consumo (el autor lo prueba con una RTX 5070 Ti de 16 GB más una RTX 5060 Ti de 16 GB, repartiendo capas) manteniendo los pesos NVFP4 de 4 bits del MLP y del `lm_head`, mientras la atención y las proyecciones GatedDeltaNet permanecen en FP8. El repositorio ocupa 63,5 GB, pero cada fichero GGUF individual pesa entre 21 y 21,5 GB.
 
-El repositorio ocupa 42,5 GB y está pensado para despliegue local en GPUs de consumo con llama.cpp. La licencia declarada es Apache-2.0, heredada del modelo de origen, aunque conviene verificar los avisos del modelo upstream y del checkpoint intermedio antes de un uso comercial.
+La relevancia actual viene de dos frentes: por un lado, demuestra que el pipeline de cuantización NVFP4 de NVIDIA es convertible a GGUF sin perder el esquema mixto; por otro, documenta con detalle una limitación real del backend CUDA de `llama.cpp` (a fecha 2026-11-06) que impide multiplicar matrices en F8_E4M3 y degrada la inferencia a CPU si no se usa una rama experimental. La licencia declarada es Apache-2.0, heredada del modelo fuente.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (Qwen3.8), con proyecciones GatedDeltaNet según la model card del checkpoint de origen; detalles completos de la arquitectura no disponibles en la informacion proporcionada |
-| Parametros totales | 27.320.698.465 |
+| Arquitectura | Transformer con capas de atención y proyecciones GatedDeltaNet (según descripción del modelo fuente); cuantización mixta NVFP4 + FP8 E4M3 |
+| Parametros totales | 27.320.698.465 (27,3 B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (el ejemplo de llama.cpp usa `--ctx-size 8192`, pero es solo una configuracion de ejemplo) |
-| Tipos de cuantizacion | Mezcla de NVFP4 (193 tensores), Q8_0 (208 tensores), BF16 (105 tensores) y F32 (553 tensores) |
+| Longitud de contexto | no disponible en la información proporcionada (el benchmark usa `--ctx-size 8192`) |
+| Tipos de cuantizacion | NVFP4 (W4A16) en proyecciones MLP y `lm_head`; FP8 E4M3 en atención y GatedDeltaNet; componentes protegidos en BF16; variantes GGUF con FP8 nativo o convertido a Q8_0 |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (para llama.cpp) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | GGUF (`llama.cpp`); ficheros `Qwen3.8-Mixed-NVFP4-Q8.gguf` (21,5 GB), `Qwen3.8-Mixed-NVFP4-FP8.gguf` (21 GB) y `Qwen3.8-Abliterated-Mixed-NVFP4-FP8` (21 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente es Qwen3.8-27B, un transformer de 27.320 millones de parámetros. La model card del checkpoint intermedio (HangGlidersRule/Darkstar-Qwen3.8-27B-Base-ModelOpt-W4A16-NVFP4-Mixed-FP8) indica que la cuantización se aplicó con NVIDIA ModelOpt en esquema W4A16: NVFP4 sobre las proyecciones MLP del bloque de lenguaje y sobre `lm_head`, FP8 E4M3 sobre las proyecciones de self-attention y de GatedDeltaNet, y componentes protegidos mantenidos en BF16. La presencia de GatedDeltaNet sugiere una arquitectura híbrida con capas de atención lineal, aunque no se dispone de la especificación completa del bloque.
+La arquitectura de partida es la del Qwen3.8-27B, que combina capas de autoatención con proyecciones GatedDeltaNet según describe el autor del modelo fuente. Sobre esa base, la cuantización aplicada con NVIDIA ModelOpt W4A16 NVFP4 actúa sobre las proyecciones MLP del bloque de lenguaje y sobre el `lm_head`, mientras que las proyecciones de autoatención y de GatedDeltaNet se mantienen en FP8 E4M3. Los componentes sensibles (embeddings, normalizaciones y otros tensores auxiliares) permanecen en BF16. La conversión a GGUF se realizó con `convert_hf_to_gguf.py` de `llama.cpp`, usando `--fp8-as-q8` para la variante Q8_0.
 
-Esta ficha no describe un entrenamiento nuevo. No hay información sobre número de tokens de preentrenamiento, composición del dataset, RLHF, DPO ni etapas de alineación en la información proporcionada. La innovación técnica relevante aquí es exclusivamente de despliegue: la conversión a GGUF preserva los tensores NVFP4 y sustituye los FP8 E4M3 por Q8_0, eliminando 416 tensores F32 auxiliares en el proceso (de 1.475 tensores totales en la variante nativa FP8 a 1.059 en esta conversión). No se ha publicado una evaluación de precisión posterior a la conversión.
+La composición de tensores resultante, medida por el autor sobre los GGUF, es de 193 tensores NVFP4, 208 tensores F8_E4M3 (o 208 Q8_0 en la variante alternativa) y 105 tensores BF16, con 969 tensores F32 en la variante FP8 y 553 en la Q8_0. La diferencia de 416 tensores F32 se atribuye a tensores auxiliares FP8 eliminados o plegados durante la conversión, aunque el autor no verifica su identidad exacta. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo upstream.
 
 ## Capacidades
 
-- Generación de texto conversacional y de código: el pipeline declarado es `text-generation` y el tag `conversational` está presente en el repositorio.
-- Razonamiento y matemáticas: capacidades esperables del modelo base Qwen3.8-27B, aunque no se documentan evaluaciones específicas en esta conversión.
-- Tool calling / function calling: no disponible en la información proporcionada para esta conversión concreta.
+- Generación de texto conversacional y de propósito general, heredada del modelo base Qwen3.8-27B.
+- Razonamiento y matemáticas: capacidades del modelo base, no verificadas de forma independiente en esta conversión.
+- Generación de código: presumiblemente presente por el linaje Qwen, sin benchmarks publicados en esta ficha.
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible; el repositorio no declara idiomas.
-- Modo thinking, visión o audio: no disponible en la información proporcionada.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere uso tras una API compatible, aunque la librería declarada es llama.cpp.
+- Capacidades multilingües: no disponible; el autor no declara lista de idiomas.
+- Capacidades especiales (modo thinking, visión, audio): no disponible.
+- Inferencia local en `llama.cpp` con soporte de decodificación especulativa opcional (no usada en los benchmarks del autor).
 
 ## Casos de uso
 
-- Inferencia local en estaciones de trabajo con dos GPUs de consumo: el autor documenta un despliegue funcional con una RTX 5070 Ti de 16 GB y una RTX 5060 Ti de 16 GB usando `--split-mode layer` y `--tensor-split 60,40`. Es el escenario validado empíricamente en la model card.
-- Generación de código en local para entornos con requisitos de privacidad: la prueba de referencia del autor (`code_python`) y el rendimiento observado de 29,2 tok/s lo hacen utilizable en asistentes de código autoalojados, siempre que se acepte la pérdida de precisión de la doble cuantización.
-- Servicio conversacional ligero con llama-server: el ejemplo de la model card arranca `llama-server` en el puerto 18010 con `-np 1`, adecuado para prototipos y demos internas de un solo usuario concurrente.
-- Evaluación comparativa de rutas de cuantización: sirve como artefacto de referencia para medir el impacto de FP8 nativo frente a Q8_0 en llama.cpp sobre el mismo checkpoint de origen.
-- Despliegue en hardware Blackwell con soporte NVFP4: al conservar los tensores NVFP4, permite aprovechar la aceleración de cuantización de 4 bits en GPUs de la generación RTX 50.
-- Base para conversiones posteriores: el procedimiento de reproducción documentado (converter con `--fp8-as-q8` y verificación con `GGUFReader`) facilita generar variantes propias a partir del checkpoint fuente.
+- Despliegue local en estaciones de trabajo con dos GPU de consumo: el autor ejecuta el modelo repartiendo capas entre una RTX 5070 Ti de 16 GB y una RTX 5060 Ti de 16 GB, lo que lo hace adecuado para prototipado y experimentación sin acceso a clústeres.
+- Asistentes conversacionales autoalojados: al ser un GGUF compatible con `llama.cpp` y con endpoints compatibles, puede servirse detrás de una API tipo OpenAI para chat multi-turno en entornos con requisitos de privacidad.
+- Evaluación de cuantizaciones NVFP4 en producción: útil para equipos que quieran medir el impacto real de W4A16 + FP8 frente a Q8_0 en latencia de prefill y decode antes de adoptar el formato.
+- Procesamiento por lotes de texto con prompts largos: el prefill alcanza 2.057 tok/s a 16.384 tokens en la variante FP8, lo que permite clasificación, resumen o extracción sobre documentos extensos en hardware modesto.
+- Investigación sobre backends CUDA en `llama.cpp`: el repositorio documenta el comportamiento del backend ante F8_E4M3 y sirve como caso de prueba para la rama `osimons/ocp_fp8_cuda` y el PR #27512.
+- Generación de código asistida en local: si el modelo base conserva las capacidades de código de la familia Qwen, puede integrarse en editores o pipelines de CI/CD mediante el servidor de `llama.cpp`, aunque no hay benchmarks que lo confirmen en esta ficha.
+- Fine-tuning o destilación posteriores: al estar bajo Apache-2.0 y en formato GGUF, puede servir como referencia de calidad para comparar contra adaptaciones propias, aunque el formato GGUF no es el ideal para reentrenar.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks académicos (MMLU, HumanEval, GSM8K) en la información disponible. La model card solo incluye observaciones locales de throughput con `mtp-bench.py`, sin decodificación especulativa (`draft=0`):
+El autor publica benchmarks locales de prefill y decode. El entorno es Windows, dos GPU (RTX 5070 Ti 16 GB + RTX 5060 Ti 16 GB) con reparto de capas, `llama.cpp` en la rama `osimons/ocp_fp8_cuda` (commit `50e9cc801`) y sin decodificación especulativa. No son resultados comparables con benchmarks académicos tipo MMLU o HumanEval; son medidas de rendimiento de inferencia.
 
-| Variante | Throughput observado (tok/s) | Entorno |
-|---|---:|---|
-| NVFP4 + FP8 E4M3 nativo | 2,6 | llama.cpp v0.9.0, Windows CUDA, RTX 5070 Ti + RTX 5060 Ti |
-| NVFP4 + Q8_0 (esta conversión) | 29,2 | mismo entorno, misma prueba `code_python` |
-| NVFP4 + Q8_0 (media de 13 prompts) | ~29 | 2.248 tokens predichos, sin draft tokens |
+Prefill (`llama-bench`, `-n 0 -r 5 -ngl 99 -b 2048 -ub 256 -fa on -sm layer -ts 14/12`):
 
-Otras observaciones del autor sitúan la ruta FP8 nativa en torno a 3,27 tok/s de generación y 3,09–3,22 tok/s en informes parciales de procesamiento de prompt. El autor advierte que son mediciones informales, sin suite controlada, sin logs completos de offload y sin mediciones emparejadas de prompt processing.
+| Tokens de prompt | NVFP4 + FP8 (tok/s) | NVFP4 + Q8_0 (tok/s) | FP8 vs Q8_0 |
+|---:|---:|---:|---:|
+| 128 | 1.272,07 | 944,04 | +34,7% |
+| 512 | 1.643,21 | 1.312,60 | +25,2% |
+| 1.024 | 1.919,58 | 1.658,15 | +15,8% |
+| 2.048 | 2.060,86 | 1.918,64 | +7,4% |
+| 4.096 | 2.119,91 | 2.034,99 | +4,2% |
+| 8.192 | 2.122,25 | 2.052,06 | +3,4% |
+| 16.384 | 2.057,87 | 1.992,81 | +3,3% |
+
+Decode (`mtp-bench-v9.py --repeat 3 --discard-first 2 --warmup`, 17 prompts, `-np 1 --ctx-size 8192 -ngl -1 --flash-attn on`):
+
+| Métrica | NVFP4 + FP8 | NVFP4 + Q8_0 | FP8 vs Q8_0 |
+|---|---:|---:|---:|
+| Decode, media | 25,89 tok/s | 27,17 tok/s | −4,7% |
+
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el repositorio pesa 42,5 GB, por lo que la inferencia completa requiere más de 40 GB de VRAM sumando pesos y buffers; con dos GPUs de 16 GB el autor tuvo que usar reparto por capas y verificar el offload en el log de arranque.
-- GPUs recomendadas: el autor valida RTX 5070 Ti 16 GB + RTX 5060 Ti 16 GB. Para cargar el modelo completo en una sola GPU se necesitaría una unidad de 48 GB o superior (A6000, L40S, A100 80 GB), aunque esto no está verificado en la información proporcionada.
-- GPU de consumo: no cabe entero en una sola GPU de 16 GB o 24 GB; sí es viable con reparto entre dos GPUs de 16 GB o con offload parcial a CPU.
-- Opciones de despliegue: llama.cpp (`llama-server`, `llama-cli`) es la ruta documentada. vLLM, TGI u Ollama no se mencionan para este artefacto GGUF concreto.
-- Latencia y throughput: 29,2 tok/s en la prueba `code_python` y ~29 tok/s de media en 13 prompts con el hardware indicado. No hay datos de latencia de primer token ni de prompt processing emparejados.
+- VRAM estimada: cada fichero GGUF pesa entre 21 y 21,5 GB, por lo que se necesita al menos ~22 GB de VRAM para mantener todos los pesos en GPU; con 32 GB repartidos en dos GPU el autor logra `offloaded 66/66 layers`.
+- GPU recomendadas: el autor valida RTX 5070 Ti (16 GB) + RTX 5060 Ti (16 GB) con reparto de capas. Una sola GPU de 24 GB (RTX 4090, RTX 3090) o superior (A100 40/80 GB, H100) debería alojar el modelo completo, aunque no se aportan medidas en ese escenario.
+- Cabe en GPU de consumo: sí, en configuraciones multi-GPU de 16 GB cada una; en una única GPU de 16 GB no cabe completo y requeriría offload parcial a RAM.
+- Opciones de despliegue: `llama.cpp` (servidor y `llama-bench`). La variante FP8 requiere una build con soporte CUDA de `F8_E4M3` (rama `osimons/ocp_fp8_cuda`, basada en el PR #27512); la variante Q8_0 funciona con builds CUDA estándar de `llama.cpp`.
+- Latencia y throughput: prefill de 944 a 2.122 tok/s según longitud de prompt en Q8_0 y de 1.272 a 2.122 tok/s en FP8; decode de 25,89 tok/s (FP8) y 27,17 tok/s (Q8_0) en el hardware descrito.
+- Advertencia de backend: en builds de `llama.cpp` `master` sin soporte CUDA de F8_E4M3, los 208 tensores FP8 se quedan en CPU aunque el log indique `offloaded 66/66 layers`, con una degradación severa del rendimiento.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
-|---|---|---|---|---|---|
-| williamliao/Qwen3.8-Mixed-NVFP4-FP8-GGUF (esta ficha) | 27,3 B | no disponible | GGUF mixto NVFP4/Q8_0/BF16 | Apache-2.0 | Conversión comunitaria para llama.cpp |
-| HangGlidersRule/Darkstar-Qwen3.8-27B-Base-ModelOpt-W4A16-NVFP4-Mixed-FP8 | 27,3 B | no disponible | safetensors NVFP4 + FP8 E4M3 | Apache-2.0 | Checkpoint de origen, orientado a vLLM |
-| primitive-ai/Qwen3.8-27B-mixed-NVFP4-FP8 | 27,3 B | no disponible | safetensors NVFP4 + FP8 | no disponible | Otra distribución del mismo esquema de cuantización |
-| williamliao/Qwen3.8-27B-NVFP4-GGUF | 27,3 B | no disponible | GGUF NVFP4 | Apache-2.0 (según autor) | Conversión alternativa del mismo autor, sin el paso FP8 a Q8_0 |
-| Qwen/Qwen3.8-27B | 27,3 B | no disponible | safetensors BF16 | Apache-2.0 | Modelo upstream sin cuantizar |
+| Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
+|---|---:|---|---|---|---|
+| williamliao/Qwen3.8-Mixed-NVFP4-FP8-GGUF (esta ficha) | 27,3 B | no disponible | NVFP4 + FP8 E4M3 / Q8_0, GGUF | Apache-2.0 | Hugging Face, `llama.cpp` |
+| HangGlidersRule/Darkstar-Qwen3.8-27B-Base-ModelOpt-W4A16-NVFP4-Mixed-FP8 | 27,3 B | no disponible | NVFP4 + FP8 E4M3 (formato fuente) | Apache-2.0 | Hugging Face, orientado a vLLM |
+| Qwen/Qwen3.8-27B | 27,3 B | no disponible | BF16 (modelo original) | Apache-2.0 (según modelo fuente) | Hugging Face |
 
-No se dispone de comparativas de calidad (benchmarks) entre estas variantes en la información proporcionada.
+No se dispone de datos de benchmarks de calidad ni de otros modelos comparables en la información proporcionada. La comparación con alternativas de otros linajes (Llama, Mistral, Gemma) no está disponible.
 
 ## Limitaciones y advertencias
 
-- No es un fine-tune nuevo: es una conversión de formato y cuantización de un modelo existente, por lo que hereda tanto las capacidades como los sesgos del modelo upstream.
-- No es bit-exact: convertir FP8 E4M3 a Q8_0 introduce una segunda etapa de cuantización que puede degradar la calidad de salida. No se aporta ninguna evaluación de precisión posterior a la conversión.
-- No es un modelo completamente NVFP4: mezcla NVFP4, Q8_0, BF16 y F32 de forma intencionada; asumir que se comporta como un modelo de 4 bits puro es incorrecto.
-- El resultado de rendimiento de 11,2× es una observación local en un entorno concreto (Windows, llama.cpp v0.9.0, dos GPUs Blackwell) y no una conclusión general sobre la velocidad de FP8 en llama.cpp; la causa del problema no está establecida.
-- La model card no documenta sesgos, tasas de alucinación ni comportamiento multilingüe de esta conversión; deben evaluarse sobre el modelo base.
-- La licencia Apache-2.0 se declara por herencia del modelo de origen; el autor pide revisar los avisos del modelo Qwen upstream y del checkpoint intermedio antes de redistribuir o usar comercialmente.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, sin validación independiente por parte de la comunidad.
-- El reparto `--tensor-split 60,40` del ejemplo no es una recomendación universal; debe ajustarse a la VRAM libre real y verificarse en el log de arranque.
+- El modelo no es un entrenamiento propio: es una conversión GGUF de una cuantización de terceros; los sesgos y la calidad heredan del Qwen3.8-27B y del proceso ModelOpt, sin evaluación independiente publicada.
+- Riesgo de alucinación: no cuantificado en la información disponible; aplicable el riesgo habitual de los modelos generativos de 27 B.
+- Idiomas soportados no declarados: no hay garantía documentada de cobertura multilingüe más allá de la del modelo base.
+- Longitud de contexto no documentada en esta ficha; el benchmark usa 8.192 tokens, pero no se confirma el máximo soportado.
+- La variante FP8 requiere una build experimental de `llama.cpp` (`osimons/ocp_fp8_cuda`, PR #27512) que puede cambiar antes de integrarse; en builds estándar el rendimiento se degrada por el offload implícito de los tensores FP8 a CPU.
+- El log de `llama.cpp` puede ser engañoso: `offloaded 66/66 layers` no garantiza que los pesos FP8 estén en GPU; hay que verificar `(and 0 others)` y `splits = 3`.
+- Los benchmarks del autor son de rendimiento, no de calidad, y se obtuvieron en Windows con dos GPU concretas; no son extrapolables a otros hardware o sistemas operativos.
+- La licencia Apache-2.0 se declara en la model card, pero el autor recomienda consultar los avisos del modelo upstream y del repositorio fuente; no se aporta verificación independiente.
+- El repositorio incluye una variante etiquetada como "Abliterated" sin documentación sobre qué modifica respecto al modelo fuente.
+- Uso comercial: permitido por Apache-2.0 según la declaración, sujeto a las condiciones del modelo upstream Qwen3.8-27B.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/williamliao/Qwen3.8-Mixed-NVFP4-FP8-GGUF
-- Checkpoint de origen: https://huggingface.co/HangGlidersRule/Darkstar-Qwen3.8-27B-Base-ModelOpt-W4A16-NVFP4-Mixed-FP8
+- Modelo fuente cuantizado: https://huggingface.co/HangGlidersRule/Darkstar-Qwen3.8-27B-Base-ModelOpt-W4A16-NVFP4-Mixed-FP8
 - Modelo upstream: https://huggingface.co/Qwen/Qwen3.8-27B
-- Conversión alternativa del mismo autor: https://huggingface.co/williamliao/Qwen3.8-27B-NVFP4-GGUF
-- Distribución NVFP4 + FP8 de primitive-ai: https://huggingface.co/primitive-ai/Qwen3.8-27B-mixed-NVFP4-FP8/tree/main
-- Conversor de llama.cpp: https://github.com/ggerganov/llama.cpp
+- Rama de `llama.cpp` con soporte CUDA F8_E4M3: https://github.com/ggml-org/llama.cpp/tree/osimons/ocp_fp8_cuda
+- Pull request de soporte FP8 en CUDA: https://github.com/ggml-org/llama.cpp/pull/27512

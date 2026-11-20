@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/grok-oss-Cerberus-24B-i1-GGUF",
   "created_at": "2026-11-07T17:50:09.000Z",
-  "updated_at": "2026-11-08T02:37:27.000Z",
+  "updated_at": "2026-11-19T20:14:46.000Z",
   "license": "other",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -21,8 +21,8 @@
     "chat",
     "text-generation",
     "en",
-    "base_model:c4tdr0ut/grok-oss-Cerberus-24B",
-    "base_model:quantized:c4tdr0ut/grok-oss-Cerberus-24B",
+    "base_model:c4tdr0ut/Cerberus-24B",
+    "base_model:quantized:c4tdr0ut/Cerberus-24B",
     "license:other",
     "endpoints_compatible",
     "region:us",
@@ -37,7 +37,7 @@
   "storage_bytes": 253565015680,
   "storage_human": "253.6 GB",
   "context_length": 32768,
-  "base_model": "c4tdr0ut/grok-oss-Cerberus-24B",
+  "base_model": "c4tdr0ut/Cerberus-24B",
   "formats": [
     "gguf"
   ],

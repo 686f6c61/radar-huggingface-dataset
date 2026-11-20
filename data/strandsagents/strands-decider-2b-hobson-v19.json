@@ -146,31 +146,5 @@
       "value": 0.798
     }
   ],
-  "sources": [
-    {
-      "title": "Introducing Strands Decider 2B: a small, open source, decision model",
-      "url": "https://strandsagents.com/blog/introducing-strands-decider/",
-      "snippet": "vor 2 Tagen ... Strands decider is one of a new class of decision models or system one models, a type of model that has been gaining a lot of attention since ..."
-    },
-    {
-      "title": "StrandsAgents/strands-decider-2B-hobson-v19 - Hugging Face",
-      "url": "https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v19",
-      "snippet": "Use · Results · Limitations · Training data · Training · Provenance · Model tree for StrandsAgents/strands-decider-2B-hobson-v19 · Datasets used to train StrandsAgents ..."
-    },
-    {
-      "title": "Strands Decider - GitHub",
-      "url": "https://github.com/strands-labs/strands-decider",
-      "snippet": "vor 7 Stunden ... Strands Decider · A small, fast decision model for agentic AI. · Getting Started · About the model · Model Architecture · Performance · Why 2B? · What ..."
-    },
-    {
-      "title": "Strands Decider 2B: AWS open-sourced a 1.9B \"decision model ...",
-      "url": "https://www.reddit.com/r/machinelearningnews/comments/1wvmut4/strands_decider_2b_aws_opensourced_a_19b_decision/",
-      "snippet": "vor 8 Stunden ... Strands Decider 2B: AWS open-sourced a 1.9B \"decision model\" that drops the LM head for a pointer head. 115 ms median on a 3090, Apache-2.0, ..."
-    },
-    {
-      "title": "Amazon's Strands Decider 2B Model Targets Faster AI Agents",
-      "url": "https://sqmagazine.co.uk/amazon-strands-decider-2b-open-source-decision-model/",
-      "snippet": "vor 21 Stunden ... Amazon Web Services built Strands Decider 2B on the Qwen3. · Strands Decider 2B placed 3rd of 33 models in its size class on JevBench for ..."
-    }
-  ]
+  "sources": []
 }

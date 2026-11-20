@@ -2,85 +2,98 @@
 
 ## Resumen
 
-El modelo `furiosa-ai/Qwen3-Coder-30B-A3B-Instruct-FP8` es una adaptación del modelo Qwen3-Coder-30B-A3B-Instruct-FP8 de Qwen, empaquetado por FuriosaAI para ejecutarse en su hardware RNGD mediante el motor Furiosa-LLM. Se trata de un transformer autorregresivo de arquitectura Mixture-of-Experts (MoE) con 30.532.122.624 parámetros totales, de los cuales aproximadamente 3.300 millones se activan por token. Está optimizado para tareas de codificación agéntica, generación de código, comprensión a escala de repositorio y uso de herramientas, y opera únicamente en modo no-thinking.
+Qwen3-Coder-30B-A3B-Instruct-FP8 es la variante de codigo de la familia Qwen3-Coder, publicada originalmente por el equipo Qwen de Alibaba. Se trata de un transformer auto-regresivo con arquitectura Mixture-of-Experts (MoE) de 30.532.122.624 parametros totales, de los cuales aproximadamente 3.300 millones se activan por token. Esta optimizado para generacion de codigo, comprension de repositorios a gran escala y uso de herramientas, y opera exclusivamente en modo no-thinking.
 
-La relevancia de esta versión radica en que FuriosaAI ha precompilado los pesos en FP8 y ha generado un Furiosa Executable Bundle (FXB) que permite desplegar el modelo en sus aceleradores RNGD con un rendimiento optimizado, manteniendo la compatibilidad con la API OpenAI. El modelo base, desarrollado por Qwen, se distribuye bajo licencia Apache 2.0, lo que facilita su uso comercial. Aunque el bundle FXB está pensado para hardware Furiosa, el modelo original también puede ejecutarse en otros frameworks como vLLM, SGLang o Transformers.
+El repositorio analizado, publicado por furiosa-ai, no es un modelo nuevo sino un empaquetado del checkpoint FP8 upstream (Qwen/Qwen3-Coder-30B-A3B-Instruct-FP8) junto con un Furiosa Executable Bundle (FXB) para ejecutarlo sobre aceleradores FuriosaAI RNGD mediante la libreria furiosa-llm. Los pesos son identicos a los del modelo base; lo que anade este repositorio es el artefacto de despliegue para hardware especifico y la integracion con el servidor OpenAI-compatible de Furiosa.
 
-## Especificaciones técnicas
+Su relevancia actual radica en dos factores: por un lado, la licencia Apache 2.0 permite uso comercial sin restricciones adicionales; por otro, la cuantizacion FP8 estatica de pesos con cuantizacion dinamica de activaciones reduce los requisitos de memoria sin sacrificar el soporte de tool calling, lo que facilita el despliegue en produccion tanto sobre GPUs convencionales (via vLLM, SGLang o Transformers) como sobre el acelerador RNGD de FuriosaAI.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3-MoE (Mixture-of-Experts) transformer autorregresivo |
-| Parametros totales | 30.532.122.624 (30,5 B) |
-| Parametros activos | ~3,3 B por token |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | FP8 (pesos estáticos, activaciones dinámicas; KV cache en 16 bits) |
-| Idiomas soportados | no disponible |
+| Arquitectura | Qwen3-MoE (Mixture-of-Experts), transformer auto-regresivo |
+| Parametros totales | 30.532.122.624 (30,5B) |
+| Parametros activos | Aproximadamente 3,3B por token |
+| Longitud de contexto | No disponible en la informacion proporcionada |
+| Tipos de cuantizacion | FP8 estatico en pesos; FP8 dinamico en activaciones (per-token / per-block); KV cache en 16 bits |
+| Idiomas soportados | No disponible en la informacion proporcionada |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, FXB (Furiosa Executable Bundle) |
+| Formato de pesos | safetensors (mas Furiosa Executable Bundle, FXB) |
+| Entrada / salida | Texto / texto |
+| Modo de razonamiento | No-thinking unicamente |
+| Parser de tool calling | hermes |
+| Hardware soportado (este repo) | FuriosaAI RNGD |
+| Estrategia de paralelismo | Tensor-parallel de 32 PEs (4 tarjetas RNGD, 8 PEs por tarjeta) |
+| Tamano del repositorio | 60,7 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura Qwen3-MoE, un transformer autorregresivo con mezcla de expertos. De los 30,5 B parámetros totales, solo unos 3,3 B se activan por token, lo que reduce el coste computacional en inferencia. La variante `Instruct` está ajustada para seguir instrucciones y para tareas de codificación, incluyendo generación de código, comprensión de repositorios y uso de herramientas. Según la documentación de FuriosaAI, el modelo opera únicamente en modo no-thinking, es decir, sin la cadena de razonamiento explícita que ofrecen otras variantes de Qwen3.
+El modelo es un transformer auto-regresivo con capas Mixture-of-Experts, identificado en los tags como `qwen3_moe`. Cuenta con 30,5B parametros totales y activa aproximadamente 3,3B por token, lo que reduce el coste computacional por paso de decodificacion frente a un modelo denso de tamano equivalente. Esta especializado en tareas de codigo y flujos agenticos, y no dispone de modo de razonamiento extendido (thinking): opera exclusivamente en modo instruct/no-thinking.
 
-En cuanto al entrenamiento, la información proporcionada no incluye detalles sobre el dataset, el número de tokens utilizados ni si se aplicaron técnicas como RLHF o DPO. La cuantización FP8 es estática para los pesos y dinámica para las activaciones (por token y por bloque), mientras que la caché KV se mantiene en precisión de 16 bits. Esta configuración es la que FuriosaAI ha validado para su hardware RNGD.
+No se dispone en la informacion proporcionada de detalles sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron fases de RLHF o DPO. La innovacion tecnica documentada en este repositorio se limita al esquema de cuantizacion: pesos en FP8 estatico siguiendo la release FP8 upstream, activaciones cuantizadas dinamicamente en FP8 con granularidad per-token o per-block, y KV cache mantenida en 16 bits para preservar precision en la atencion. El repositorio anade ademas un Furiosa Executable Bundle (FXB) que permite ejecutar el modelo sobre RNGD con un tensor-parallel de 32 PEs distribuidos en cuatro tarjetas.
 
 ## Capacidades
 
-- Generación de código en múltiples lenguajes de programación, orientada a tareas de desarrollo y depuración.
-- Comprensión a escala de repositorio, lo que permite analizar estructuras de proyectos y generar código coherente con el contexto existente.
-- Tool calling (llamada a funciones) mediante el parser `hermes`, el mismo utilizado por la serie Qwen3. Permite que el modelo decida cuándo invocar herramientas externas.
-- Soporte para agentes de codificación, gracias a su capacidad de razonamiento multi-paso y uso de herramientas.
-- Conversación multi-turno, al ser un modelo instructivo entrenado para diálogo.
-- Modo no-thinking: genera respuestas directas sin razonamiento explícito, lo que reduce la latencia en tareas de codificación.
-- Compatibilidad con la API OpenAI a través del servidor Furiosa-LLM, lo que facilita la integración en aplicaciones existentes.
+- Generacion de codigo en lenguajes de programacion, con foco en calidad y correccion segun la orientacion de la familia Qwen3-Coder.
+- Comprension de repositorios a escala, segun la model card del modelo upstream.
+- Tool calling / function calling mediante el parser `hermes`, el usado por la serie Qwen3. Se habilita en el servidor con `--enable-auto-tool-choice --tool-call-parser hermes`.
+- Flujos agenticos de multiples pasos orientados a tareas de codigo y uso de herramientas.
+- API compatible con OpenAI a traves de `furiosa-llm serve`, lo que facilita la integracion con clientes existentes.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
+- Vision, audio o modo thinking: no disponibles; el modelo es texto-a-texto y opera solo en modo no-thinking.
 
 ## Casos de uso
 
-- Asistente de programación en IDE: el modelo puede integrarse en editores como VS Code para ofrecer autocompletado, sugerencias de refactorización y explicaciones de código. Su capacidad de comprensión de repositorios permite que las sugerencias tengan en cuenta el contexto del proyecto.
-- Agente de codificación autónomo: gracias al soporte de tool calling, puede ejecutar comandos, leer archivos y modificar código de forma iterativa, actuando como un agente que resuelve tareas de desarrollo de principio a fin.
-- Generación de código en pipelines de CI/CD: puede utilizarse para generar pruebas unitarias, documentación o fragmentos de código a partir de descripciones en lenguaje natural, integrándose en flujos de integración continua.
-- Revisión de código automatizada: el modelo puede analizar pull requests, detectar posibles errores, sugerir mejoras y generar comentarios de revisión, aprovechando su capacidad de comprensión de repositorios.
-- Chatbot técnico de soporte: puede responder preguntas sobre APIs, librerías o lenguajes de programación, manteniendo conversaciones multi-turno con contexto largo (aunque la longitud exacta de contexto no se ha especificado en la documentación disponible).
-- Prototipado rápido de aplicaciones: los desarrolladores pueden describir una funcionalidad en lenguaje natural y obtener un esqueleto de código funcional, acelerando la fase de prototipado.
-- Automatización de tareas de mantenimiento: puede generar scripts para migraciones de bases de datos, actualizaciones de dependencias o limpieza de código, reduciendo el trabajo manual.
+- Generacion de codigo en produccion: el modelo puede integrarse en pipelines de CI/CD o asistentes de IDE mediante la API OpenAI-compatible de `furiosa-llm serve`, aprovechando su especializacion en codigo y su bajo coste por token al activar solo 3,3B parametros.
+- Agentes de codigo con tool calling: con el parser `hermes` habilitado, el modelo puede decidir cuando invocar funciones (ejecutar tests, consultar documentacion, abrir issues) dentro de bucles agenticos multi-paso.
+- Comprension de repositorios: analisis de bases de codigo y respuesta a preguntas sobre su estructura, adecuado por su entrenamiento orientado a repositorios a escala.
+- Asistencia a revision de codigo: generacion de explicaciones, deteccion de patrones problematicos y propuestas de refactorizacion en flujos de pull request automatizados.
+- Despliegue sobre aceleradores FuriosaAI RNGD: organizaciones con infraestructura RNGD pueden servir el modelo con el FXB incluido y tensor-parallel de 32 PEs en cuatro tarjetas, sin necesidad de GPUs convencionales.
+- Migracion de endpoints OpenAI: al exponer una API compatible con OpenAI, el modelo puede sustituir a otros backends en aplicaciones existentes cambiando unicamente la URL base y el identificador de modelo.
+- Generacion de codigo en entornos con restricciones de memoria: la cuantizacion FP8 reduce la huella de pesos respecto a BF16, lo que facilita el despliegue en infraestructura con VRAM limitada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card de FuriosaAI no incluye métricas como MMLU, HumanEval o GSM8K, y tampoco se proporcionan comparativas con otros modelos. Se recomienda consultar la documentación del modelo base Qwen3-Coder-30B-A3B-Instruct para obtener datos de rendimiento en tareas de codificación.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- El bundle FXB está diseñado exclusivamente para hardware FuriosaAI RNGD. Según la documentación, el modelo se ejecuta con un tamaño de tensor-parallel de 32 PEs, lo que equivale a cuatro tarjetas RNGD (8 PEs por tarjeta).
-- El tamaño del repositorio es de 47,6 GB, lo que sugiere que los pesos FP8 ocupan aproximadamente esa cantidad de memoria. No se dispone de datos oficiales de VRAM para otros aceleradores.
-- Para ejecutar el modelo en GPUs convencionales (NVIDIA, AMD) se debe utilizar el modelo base de Qwen, no el bundle FXB. En ese caso, se puede emplear vLLM, SGLang o Transformers, pero no se han proporcionado requisitos específicos de VRAM.
-- El servidor Furiosa-LLM expone una API compatible con OpenAI, lo que facilita el despliegue en entornos de producción.
-- No se han publicado datos de latencia o throughput para este modelo en particular.
+- VRAM estimada para inferencia: no disponible de forma explicita. Como referencia de orden de magnitud, los pesos FP8 del repositorio suman 60,7 GB, por lo que se requiere al menos esa capacidad mas el espacio para KV cache en 16 bits y buffers de activaciones.
+- GPU recomendadas: no especificadas en la informacion proporcionada. El repositorio esta orientado a FuriosaAI RNGD; para GPUs convencionales remite a la model card upstream (vLLM, SGLang, Transformers).
+- Despliegue en consumer GPU: no confirmado en la informacion disponible; el tamano de pesos en FP8 (60,7 GB) excede la VRAM de las tarjetas de consumo habituales, por lo que requeriria cuantizaciones adicionales no documentadas en este repositorio.
+- Opciones de despliegue: `furiosa-llm serve` sobre RNGD (soporte oficial de este repositorio); vLLM, SGLang y Transformers segun la model card upstream.
+- Paralelismo en RNGD: tensor-parallel de 32 PEs, equivalente a cuatro tarjetas RNGD (8 PEs por tarjeta).
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Qwen3-Coder-30B-A3B-Instruct-FP8 (este) | 30,5 B | ~3,3 B | no disponible | Apache 2.0 | Hugging Face, bundle FXB para Furiosa |
-| Qwen3-Coder-480B-A35B-Instruct | 480 B | ~35 B | no disponible | Apache 2.0 | Hugging Face |
-| Qwen3-Coder-Next | no disponible | no disponible | no disponible | no disponible | GitHub / Hugging Face |
+| Modelo | Parametros totales / activos | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Qwen3-Coder-30B-A3B-Instruct-FP8 (este repo, empaquetado FuriosaAI) | 30,5B / ~3,3B | No disponible | Apache 2.0 | Hugging Face, con FXB para RNGD |
+| Qwen/Qwen3-Coder-30B-A3B-Instruct-FP8 (upstream) | 30,5B / ~3,3B | No disponible | Apache 2.0 | Hugging Face; vLLM, SGLang, Transformers |
+| Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible |
 
-La comparativa se limita a aspectos estructurales, ya que no se dispone de datos de rendimiento. El modelo de 480 B ofrece una capacidad mucho mayor pero requiere hardware más potente. Qwen3-Coder-Next está diseñado específicamente para agentes de codificación y desarrollo local, aunque no se han proporcionado sus especificaciones en la información disponible.
+No se dispone en la informacion proporcionada de datos de rendimiento ni de especificaciones de modelos alternativos comparables, por lo que la comparativa se limita a la relacion entre este repositorio y su modelo base upstream.
 
 ## Limitaciones y advertencias
 
-- No se ha especificado la longitud de contexto soportada, lo que puede limitar su uso en tareas que requieran ventanas muy largas, como el análisis de repositorios extensos.
-- Los idiomas soportados no están documentados en la model card. Aunque Qwen3 suele ser multilingüe, no se puede confirmar para esta variante.
-- El bundle FXB solo funciona en hardware FuriosaAI RNGD. Para otros entornos, es necesario utilizar el modelo base de Qwen, que puede requerir ajustes de cuantización y configuración.
-- Al ser un modelo de lenguaje, existe riesgo de alucinación, especialmente en tareas de generación de código donde puede producir código sintácticamente válido pero lógicamente incorrecto.
-- No se han publicado evaluaciones de sesgos o comportamientos perjudiciales para esta variante específica.
-- La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar los términos del modelo base y de FuriosaAI para asegurar el cumplimiento.
-- El modo no-thinking limita la capacidad de razonamiento explícito, lo que puede afectar a tareas que requieran cadenas de pensamiento detalladas.
+- Sesgos conocidos: no documentados en la informacion proporcionada.
+- Riesgo de alucinacion: no cuantificado en la informacion disponible; como todo modelo generativo de codigo, puede producir APIs, funciones o fragmentos inexistentes.
+- Limitaciones de contexto e idioma: la longitud de contexto y los idiomas soportados no estan disponibles en la informacion proporcionada.
+- Modo de razonamiento: el modelo opera exclusivamente en modo no-thinking; no admite razonamiento extendido.
+- Licencia: Apache 2.0, sin restricciones adicionales para uso comercial segun la model card; conviene verificar el fichero LICENSE del repositorio upstream.
+- Dependencia de hardware: el FXB incluido esta pensado para FuriosaAI RNGD; para otros aceleradores debe usarse el modelo upstream y sus frameworks soportados.
+- Precedencia del modelo base: el comportamiento del modelo es el del checkpoint upstream Qwen/Qwen3-Coder-30B-A3B-Instruct-FP8; las limitaciones de este ultimo aplican integramente.
+- Produccion: no se han publicado datos de latencia ni throughput, por lo que la planificacion de capacidad debe validarse con pruebas propias.
 
 ## Enlaces
 
-- [Modelo en Hugging Face (FuriosaAI)](https://huggingface.co/furiosa-ai/Qwen3-Coder-30B-A3B-Instruct-FP8)
-- [Modelo base en Hugging Face (Qwen)](https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct)
-- [Documentación de Furiosa-LLM para Qwen3-MoE](https://developer.furiosa.ai/latest/en/furiosa_llm/models/qwen3-moe.html)
-- [Documentación de Furiosa-LLM para Qwen3 denso](https://developer.furiosa.ai/v2026.3.0/en/furiosa_llm/models/qwen3.html)
-- [Repositorio GitHub de Qwen3-Coder](https://github.com/QwenLM/Qwen3-Coder)
+- Repositorio en Hugging Face: https://huggingface.co/furiosa-ai/Qwen3-Coder-30B-A3B-Instruct-FP8
+- Modelo base upstream: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct-FP8
+- Licencia upstream: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct-FP8/blob/main/LICENSE
+- FuriosaAI: https://furiosa.ai
+- Documentacion de Furiosa-LLM: https://developer.furiosa.ai/latest/en/furiosa_llm/intro.html
+- Guia de instalacion de Furiosa-LLM: https://developer.furiosa.ai/latest/en/get_started/furiosa_llm.html#installing-furiosa-llm
+- Guia de tool calling: https://developer.furiosa.ai/latest/en/furiosa_llm/toolcalling.html
+- Referencia del servidor (`furiosa-llm serve`): https://developer.furiosa.ai/latest/en/furiosa_llm/furiosa-llm-serve.html

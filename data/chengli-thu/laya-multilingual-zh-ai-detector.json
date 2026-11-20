@@ -5,7 +5,7 @@
   "author": "chengli-thu",
   "url": "https://huggingface.co/chengli-thu/laya-multilingual-zh-ai-detector",
   "created_at": "2026-11-19T02:32:35.000Z",
-  "updated_at": "2026-11-19T02:35:36.000Z",
+  "updated_at": "2026-11-19T02:38:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",

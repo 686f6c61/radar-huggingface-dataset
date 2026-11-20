@@ -30,7 +30,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 1080,
+  "downloads_30d": 1170,
   "trending_score": 0,
   "parameters": 1728801600,
   "parameters_human": "1.73B",
@@ -51,16 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mradermacher (team mradermacher) - Hugging Face",
-      "url": "https://huggingface.co/mradermacher/models",
-      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
-    },
-    {
-      "title": "Quantized Models for LiquidAI/LFM3-VL-2B – Hugging Face",
-      "url": "https://huggingface.co/models?other=base_model%3Aquantized%3ALiquidAI%2FLFM3-VL-2B",
-      "snippet": "Explore machine learning models. efeisot/lfm3-omni-vl-2b-1rco-2mix-gguf"
-    }
-  ]
+  "sources": []
 }
