@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "BurnyCoder/grading-explanations-by-simulation",
+  "slug": "burnycoder-grading-explanations-by-simulation",
+  "author": "BurnyCoder",
+  "url": "https://huggingface.co/BurnyCoder/grading-explanations-by-simulation",
+  "created_at": "2026-11-21T14:30:30.000Z",
+  "updated_at": "2026-11-21T14:32:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mechanistic-interpretability",
+    "grokking",
+    "modular-arithmetic",
+    "interpretability-evaluation",
+    "arxiv:2301.05217",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 445661687,
+  "storage_human": "446 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lesswrong",
+      "url": "http://go/v1/Ac6h-PTF49HpawGx8AGvwJXanZdNQ8cKn8o0pCRxgmRy8AwlPwnKQO3CT4IygEIAQE6uEbTOtXF7UKm5U4ImCSEON0nuCJcP3bwYOkX7nEHUB5ca7C5on8Gw1pMOc-qGblHqNKivovKX1KGn-E9GZVSY7XVRxF9efl8F3WBk7MgAy3WLv73L-EQSdejf0k4nRYfGoWiYr-ZtMU0AgWqLpplJl-8iR9yEX_ubOPeqJz3Jx-x3lLt-ywssf18zPkL21SED7Ybn_JXyMokRFDKoksAlyjRjkV2bDg",
+      "snippet": "Robustness of Model-Graded Evaluations and Automated Interpretability ... Re: hidden messages in neuron explanations, yes it seems like a possible problem. A way to try to avoid this is to train the simulator model to imitate what a human would say given the explanation."
+    }
+  ]
+}

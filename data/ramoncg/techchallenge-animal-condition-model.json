@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "ramoncg/techchallenge-animal-condition-model",
+  "slug": "ramoncg-techchallenge-animal-condition-model",
+  "author": "ramoncg",
+  "url": "https://huggingface.co/ramoncg/techchallenge-animal-condition-model",
+  "created_at": "2026-11-21T19:30:27.000Z",
+  "updated_at": "2026-11-21T19:32:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3937366,
+  "storage_human": "4 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "High cocoa polyphenol rich chocolate may reduce the burden of the ...",
+      "url": "https://www.researchgate.net/publication/49623439_High_cocoa_polyphenol_rich_chocolate_may_reduce_the_burden_of_the_symptoms_in_chronic_fatigue_syndrome",
+      "snippet": "Nov 22, 2010 · Chocolate is rich in flavonoids that have been shown to be of benefit in disparate conditions including cardiovascular …"
+    }
+  ]
+}

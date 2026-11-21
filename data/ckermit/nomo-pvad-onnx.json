@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "CKermit/nomo-pvad-onnx",
+  "slug": "ckermit-nomo-pvad-onnx",
+  "author": "CKermit",
+  "url": "https://huggingface.co/CKermit/nomo-pvad-onnx",
+  "created_at": "2026-11-21T19:04:25.000Z",
+  "updated_at": "2026-11-21T19:04:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "onnxruntime",
+    "personalized-vad",
+    "target-speaker-vad",
+    "streaming",
+    "voice-activity-detection",
+    "zh",
+    "en",
+    "base_model:TuyaNomo/nomo-pvad",
+    "base_model:quantized:TuyaNomo/nomo-pvad",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 144161056,
+  "storage_human": "144 MB",
+  "context_length": null,
+  "base_model": "TuyaNomo/nomo-pvad",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

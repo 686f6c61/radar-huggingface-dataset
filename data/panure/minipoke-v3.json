@@ -1,0 +1,64 @@
+{
+  "schema": 2,
+  "id": "Panure/MiniPoke-v3",
+  "slug": "panure-minipoke-v3",
+  "author": "Panure",
+  "url": "https://huggingface.co/Panure/MiniPoke-v3",
+  "created_at": "2026-11-21T19:04:57.000Z",
+  "updated_at": "2026-11-21T19:04:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comment réaliser une panure croustillante",
+      "url": "https://www.quitoque.fr/blog/article/realiser-une-panure-croustillante",
+      "snippet": "Aug 25, 2023 · Découvrez comment réaliser une panure croustillante idéale pour escalopes, viandes blanches et poissons. Inclus : …"
+    },
+    {
+      "title": "Nos meilleurs conseils et astuces pour faire une bonne panure maison ...",
+      "url": "https://www.femmeactuelle.fr/cuisine/guides-cuisine/nos-meilleurs-conseils-et-astuces-pour-faire-une-bonne-panure-maison-2120406",
+      "snippet": "Sep 27, 2021 · Comment réaliser sa panure maison ? Découvrez nos conseils simples pour y parvenir facilement et déguster des …"
+    },
+    {
+      "title": "panure à ma façon : la meilleure recette - Marmiton",
+      "url": "https://www.marmiton.org/recettes/recette_panure-a-ma-facon_33986.aspx",
+      "snippet": "Recette panure à ma façon : la meilleure recette rapide et facile : 1 portion, 8 min de préparation. Notée 3.8/5 par 5 membres Marmiton."
+    },
+    {
+      "title": "Comment paner une escalope (dinde, poulet, veau)",
+      "url": "https://www.papillesetpupilles.fr/2021/09/comment-paner-une-escalope-dinde-poulet-veau.html/",
+      "snippet": "Quand vous les tournez, procédez délicatement pour que la panure ne reste pas collée au fond de la poêle. Assaisonnez. Servez …"
+    },
+    {
+      "title": "Astuce ultime pour une panure maison parfaite",
+      "url": "https://chapelure-panko.com/cuisine-panure-guides-pratiques/comment-reussir-la-panure-parfaite-a-la-maison/",
+      "snippet": "Dec 18, 2025 · Découvrez nos astuces simples pour réussir la panure parfaite à la maison et obtenir un croustillant irrésistible à …"
+    }
+  ]
+}

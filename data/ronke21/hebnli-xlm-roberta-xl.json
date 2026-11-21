@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "ronke21/hebnli-xlm-roberta-xl",
+  "slug": "ronke21-hebnli-xlm-roberta-xl",
+  "author": "ronke21",
+  "url": "https://huggingface.co/ronke21/hebnli-xlm-roberta-xl",
+  "created_at": "2026-09-14T17:08:37.000Z",
+  "updated_at": "2026-11-21T16:42:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "safetensors",
+    "xlm-roberta-xl",
+    "natural-language-inference",
+    "hebrew",
+    "hebnli",
+    "HeRE",
+    "text-classification",
+    "he",
+    "base_model:facebook/xlm-roberta-xl",
+    "base_model:finetune:facebook/xlm-roberta-xl",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 3482493443,
+  "parameters_human": "3.48B",
+  "storage_bytes": 13952198151,
+  "storage_human": "14.0 GB",
+  "context_length": null,
+  "base_model": "facebook/xlm-roberta-xl",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

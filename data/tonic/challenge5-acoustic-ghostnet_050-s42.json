@@ -1,0 +1,71 @@
+{
+  "schema": 2,
+  "id": "Tonic/challenge5-acoustic-ghostnet_050-s42",
+  "slug": "tonic-challenge5-acoustic-ghostnet_050-s42",
+  "author": "Tonic",
+  "url": "https://huggingface.co/Tonic/challenge5-acoustic-ghostnet_050-s42",
+  "created_at": "2026-11-21T15:35:19.000Z",
+  "updated_at": "2026-11-21T15:35:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "acoustic-wake",
+    "c-uas",
+    "challenge-5",
+    "drone-detection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31557241,
+  "storage_human": "32 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tonic App - France",
+      "url": "https://tonicapp.fr/",
+      "snippet": "Tonic est la plateforme médicale la plus sûre de toute l'Europe. Elle dispose d’un software marqué CE (Classe IIa), qui inclut des …Read more"
+    },
+    {
+      "title": "Page d'accueil - Boutique Tonic",
+      "url": "https://boutiquetonic.com/",
+      "snippet": "Automne/hiver 2026. Encore plus de choix dans nos boutiques ! Découvrez nos nouveautés La signature Tonic Découvrez notre …Read more"
+    },
+    {
+      "title": "Tonic Web",
+      "url": "https://web.tonicapp.com/fr",
+      "snippet": "Tonic Web is the desktop version of Tonic App, offering clinical tools, news, games, and a virtual assistant for healthcare professionals."
+    },
+    {
+      "title": "On a classé (à l’aveugle) 9 tonics parmi les plus consommés",
+      "url": "https://quaff-magazine.com/on-a-classe-a-laveugle-9-tonics-parmi-les-plus-consommes/",
+      "snippet": "Feb 26, 2021 · Le classement ultime pour enfin découvrir quel tonic va vous accompagner toute l’année. En plein boom ces …Read more"
+    },
+    {
+      "title": "Boutique - Boutique Tonic",
+      "url": "https://boutiquetonic.com/shop/",
+      "snippet": "Boutique Encore plus de choix dans nos boutiques! Notre site ne présente qu’une partie de notre sélection. Découvrez encore plus …Read more"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 2,
+  "id": "SamerAyyad/VLA_Samer_15.11.2026_300eps_Last_policy_SmolVLA",
+  "slug": "samerayyad-vla_samer_15-11-2026_300eps_last_policy_smolvla",
+  "author": "SamerAyyad",
+  "url": "https://huggingface.co/SamerAyyad/VLA_Samer_15.11.2026_300eps_Last_policy_SmolVLA",
+  "created_at": "2026-11-21T19:31:34.000Z",
+  "updated_at": "2026-11-21T19:31:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:SamerAyyad/VLA_Samer_15.11.2026_300eps_Last",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906719168,
+  "storage_human": "907 MB",
+  "context_length": null,
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Najlepsza zapiekanka z kurczakiem i warzywami - Smaker.pl",
+      "url": "https://smaker.pl/przepisy-dania-glowne/przepis-najlepsza-zapiekanka-z-kurczakiem-i-warzywami,2065316,smaker.html",
+      "snippet": "Jan 20, 2026 · Sycąca zapiekanka z kurczakiem, warzywami i żółtym serem. Niezwykle sycąca. Idealna na obiad jednogarnkowy dla …Read more"
+    },
+    {
+      "title": "Zapiekane warzywa z kurczakiem – szybki obiad",
+      "url": "https://smakidnia.pl/zapiekane-warzywa-z-kurczakiem/",
+      "snippet": "May 13, 2026 · Aromatyczne i sycące zapiekane warzywa z kurczakiem to szybki obiad z piekarnika w jednej formie."
+    }
+  ]
+}

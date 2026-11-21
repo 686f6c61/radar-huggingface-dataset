@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "gpatane/yourec-android-models",
+  "slug": "gpatane-yourec-android-models",
+  "author": "gpatane",
+  "url": "https://huggingface.co/gpatane/yourec-android-models",
+  "created_at": "2026-11-21T13:48:01.000Z",
+  "updated_at": "2026-11-21T14:02:16.000Z",
+  "license": "lavasr-apache-2.0-and-voicefixer-cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "audio",
+    "speech-enhancement",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 263517771,
+  "storage_human": "264 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

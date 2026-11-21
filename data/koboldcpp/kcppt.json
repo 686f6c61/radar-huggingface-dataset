@@ -1,0 +1,63 @@
+{
+  "schema": 2,
+  "id": "koboldcpp/kcppt",
+  "slug": "koboldcpp-kcppt",
+  "author": "koboldcpp",
+  "url": "https://huggingface.co/koboldcpp/kcppt",
+  "created_at": "2024-07-24T09:08:51.000Z",
+  "updated_at": "2026-11-21T14:16:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 40,
+  "downloads_30d": 530,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17772200032,
+  "storage_human": "17.8 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KoboldCpp - Run AI models locally with KoboldCpp",
+      "url": "https://koboldcpp.net/",
+      "snippet": "KoboldCpp is free and open-source software for running GGUF AI models on Windows, Linux and macOS. One file, no install. …Read more"
+    },
+    {
+      "title": "GitHub - LostRuins/koboldcpp: KoboldCpp - Run GGUF AI models …",
+      "url": "https://github.com/LostRuins/koboldcpp",
+      "snippet": "Windows Download koboldcpp.exe and double-click it to open the launcher. If you do not need NVIDIA CUDA support, koboldcpp …Read more"
+    },
+    {
+      "title": "KoboldCpp - KoboldAI",
+      "url": "https://koboldai.com/KoboldCpp/",
+      "snippet": "KoboldCpp is a full fledged AI server, in active development, up to date with models and technology, opensource and driven by a …Read more"
+    },
+    {
+      "title": "KoboldCPP – Run AI Models Locally, Free & Open-Source",
+      "url": "https://koboldcpp.com/",
+      "snippet": "KoboldCpp is a lightweight, standalone application that allows you to run large language models (LLMs) locally on your computer. It …Read more"
+    },
+    {
+      "title": "Download KoboldCpp for Windows, Linux and macOS",
+      "url": "https://koboldcpp.net/download/",
+      "snippet": "Download KoboldCpp for Windows, Linux or macOS from the official GitHub releases: one file, no installer. Pick the file for your …Read more"
+    }
+  ]
+}

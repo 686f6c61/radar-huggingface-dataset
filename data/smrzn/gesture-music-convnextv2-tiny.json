@@ -1,0 +1,78 @@
+{
+  "schema": 2,
+  "id": "smrzn/gesture-music-convnextv2-tiny",
+  "slug": "smrzn-gesture-music-convnextv2-tiny",
+  "author": "smrzn",
+  "url": "https://huggingface.co/smrzn/gesture-music-convnextv2-tiny",
+  "created_at": "2026-11-21T14:52:39.000Z",
+  "updated_at": "2026-11-21T14:52:43.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "convnextv2",
+    "image-classification",
+    "hand-gesture",
+    "gesture-recognition",
+    "hagrid",
+    "dataset:cj-mills/hagrid-sample-30k-384p",
+    "arxiv:2206.08219",
+    "base_model:facebook/convnextv2-tiny-1k-224",
+    "base_model:finetune:facebook/convnextv2-tiny-1k-224",
+    "license:cc-by-sa-4.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27880338,
+  "parameters_human": "27.9M",
+  "storage_bytes": 111545048,
+  "storage_human": "112 MB",
+  "context_length": null,
+  "base_model": "facebook/convnextv2-tiny-1k-224",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "HaGRID sample 384p, MediaPipe hand crops (held-out test split)",
+      "metric": null,
+      "value": 0.904
+    },
+    {
+      "task": null,
+      "dataset": "HaGRID sample 384p, MediaPipe hand crops (held-out test split)",
+      "metric": "Macro F1",
+      "value": 0.9056
+    },
+    {
+      "task": null,
+      "dataset": "HaGRID sample 384p, MediaPipe hand crops (held-out test split)",
+      "metric": "Macro precision",
+      "value": 0.9114
+    },
+    {
+      "task": null,
+      "dataset": "HaGRID sample 384p, MediaPipe hand crops (held-out test split)",
+      "metric": "Macro recall",
+      "value": 0.9038
+    }
+  ],
+  "sources": []
+}

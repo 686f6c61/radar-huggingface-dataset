@@ -1,0 +1,82 @@
+{
+  "schema": 2,
+  "id": "DMAIC-ASI/Qwen3.8-27B-DMAIC_ASI-S16-SA-GGUF",
+  "slug": "dmaic-asi-qwen3-8-27b-dmaic_asi-s16-sa-gguf",
+  "author": "DMAIC-ASI",
+  "url": "https://huggingface.co/DMAIC-ASI/Qwen3.8-27B-DMAIC_ASI-S16-SA-GGUF",
+  "created_at": "2026-11-21T19:54:02.000Z",
+  "updated_at": "2026-11-21T19:57:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "quantized",
+    "merged-lora",
+    "agents",
+    "opencode",
+    "nvfp4",
+    "kv-cache",
+    "blackwell",
+    "qwen3.8",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 13207096320,
+  "storage_human": "13.2 GB",
+  "context_length": 262144,
+  "base_model": "Qwen/Qwen3.8-27B, harness-hub/Qwen3.8-27B-super-adapter",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Méthode DMAIC : 5 étapes et principes de fonctionnement",
+      "url": "https://www.reussirsesprojets.com/methode-dmaic/",
+      "snippet": "Nov 4, 2026 · La démarche DMAIC est une approche méthodologique pour résoudre des problèmes complexes et gérer des projets, …"
+    },
+    {
+      "title": "DMAIC: la base du Six Sigma | Article KAIZEN™",
+      "url": "https://kaizen.com/fr/publications/amelioration-continue-dmaic-six-sigma/",
+      "snippet": "DMAIC (Define, Measure, Analyze, Improve, Control) est une approche plus robuste et analytique, qui commence par une définition …"
+    },
+    {
+      "title": "Méthode DMAIC : Les 5 Étapes avec Exemple Concret [Guide 2026]",
+      "url": "https://leansixpro.com/blog/methode-dmaic-guide-complet",
+      "snippet": "Feb 12, 2026 · Maîtrisez la méthode DMAIC en 20 minutes : les 5 étapes (Define, Measure, Analyze, Improve, Control) expliquées …"
+    },
+    {
+      "title": "DMAIC - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/DMAIC",
+      "snippet": "DMAIC or define, measure, analyze, improve and control[1] (pronounced də-MAY-ick) refers to a data-driven improvement cycle …"
+    },
+    {
+      "title": "DMAIC : la méthode de résolution de problème en 5 étapes",
+      "url": "https://blog-gestion-de-projet.com/la-methode-dmaic/",
+      "snippet": "DMAIC, acronyme de Définir, Mesurer, Analyser, Innover, et Contrôler, est une méthode du Six Sigma qui sert à résoudre les …"
+    }
+  ]
+}

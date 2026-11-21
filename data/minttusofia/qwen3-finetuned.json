@@ -1,0 +1,56 @@
+{
+  "schema": 2,
+  "id": "minttusofia/qwen3-finetuned",
+  "slug": "minttusofia-qwen3-finetuned",
+  "author": "minttusofia",
+  "url": "https://huggingface.co/minttusofia/qwen3-finetuned",
+  "created_at": "2026-11-21T17:57:30.000Z",
+  "updated_at": "2026-11-21T17:57:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203563045,
+  "storage_human": "1.2 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Engmhabib/Qwen3-Local-FineTune",
+      "url": "https://github.com/Engmhabib/Qwen3-Local-FineTune",
+      "snippet": "Qwen3 Local Fine-Tuning (Backend-First) This project demonstrates how to fine-tune the open-source Qwen3 (14B) large language model using your own data, fully locally — with complete backend control."
+    }
+  ]
+}

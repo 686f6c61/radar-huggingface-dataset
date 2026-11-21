@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "JessicaHsuPF/gemma3-4b-checkpoints",
+  "slug": "jessicahsupf-gemma3-4b-checkpoints",
+  "author": "JessicaHsuPF",
+  "url": "https://huggingface.co/JessicaHsuPF/gemma3-4b-checkpoints",
+  "created_at": "2026-11-21T20:04:46.000Z",
+  "updated_at": "2026-11-21T20:15:01.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "base_model:google/gemma-3-4b-it",
+    "base_model:finetune:google/gemma-3-4b-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 98198520135,
+  "storage_human": "98.2 GB",
+  "context_length": null,
+  "base_model": "google/gemma-3-4b-pt, google/gemma-3-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

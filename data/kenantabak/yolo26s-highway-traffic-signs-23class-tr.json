@@ -1,0 +1,79 @@
+{
+  "schema": 2,
+  "id": "kenantabak/yolo26s-highway-traffic-signs-23class-tr",
+  "slug": "kenantabak-yolo26s-highway-traffic-signs-23class-tr",
+  "author": "kenantabak",
+  "url": "https://huggingface.co/kenantabak/yolo26s-highway-traffic-signs-23class-tr",
+  "created_at": "2026-11-21T20:19:10.000Z",
+  "updated_at": "2026-11-21T20:19:11.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "ultralytics",
+    "evren",
+    "ssyz",
+    "yolo26s",
+    "yolo26",
+    "yolo11",
+    "object-detection",
+    "computer-vision",
+    "turkish",
+    "autonomous-driving",
+    "tr",
+    "en",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "Çok Sınıflı Trafik İşaretleri, Sinyalizasyon ve Yol Unsurları Tespiti (40 Sınıf)",
+      "metric": "mAP@50 (%)",
+      "value": 95.53
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "Çok Sınıflı Trafik İşaretleri, Sinyalizasyon ve Yol Unsurları Tespiti (40 Sınıf)",
+      "metric": "mAP@50-95 (%)",
+      "value": 80.05
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "Çok Sınıflı Trafik İşaretleri, Sinyalizasyon ve Yol Unsurları Tespiti (40 Sınıf)",
+      "metric": "F1 Score (%)",
+      "value": 92.58
+    }
+  ],
+  "sources": [
+    {
+      "title": "Herman Miller Inc - LinkedIn",
+      "url": "https://ca.linkedin.com/company/hermanmillerinc",
+      "snippet": "Herman Miller Inc | 1,284 followers on LinkedIn. At Herman Miller we work for a better world around you—with inventive designs, …"
+    }
+  ]
+}

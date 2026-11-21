@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "GokseninMuhammet/rnnt-icelandic-samromur-scratch",
+  "slug": "gokseninmuhammet-rnnt-icelandic-samromur-scratch",
+  "author": "GokseninMuhammet",
+  "url": "https://huggingface.co/GokseninMuhammet/rnnt-icelandic-samromur-scratch",
+  "created_at": "2026-11-21T17:58:14.000Z",
+  "updated_at": "2026-11-21T17:58:14.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - icelandic-lt/samromur: https://samromur.is · GitHub",
+      "url": "https://github.com/icelandic-lt/samromur",
+      "snippet": "Samrómur is a crowdsourcing voice data collection platform for Icelandic written in Node.js. You can find a running instance of this application at samromur.is."
+    },
+    {
+      "title": "SamróMur MilljóN: An ASR Corpus of One Million Verified Read Prompts in ...",
+      "url": "https://aclanthology.org/2024.lrec-main.1246/",
+      "snippet": "Abstract The platform samromur.is, or \"Samrómur\" for short, is a crowdsourcing web application built on Mozilla's Common Voice, designed to accumulate speech data for the advancement of language technologies in Icelandic. Over the years, Samrómur has proven to be remarkably successful in amassing a significant number of high-quality audio clips from thousands of users. However, the ..."
+    }
+  ]
+}

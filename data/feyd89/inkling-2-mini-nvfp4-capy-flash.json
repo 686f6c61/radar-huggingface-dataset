@@ -1,0 +1,57 @@
+{
+  "schema": 2,
+  "id": "Feyd89/Inkling-2-Mini-NVFP4-capy-flash",
+  "slug": "feyd89-inkling-2-mini-nvfp4-capy-flash",
+  "author": "Feyd89",
+  "url": "https://huggingface.co/Feyd89/Inkling-2-Mini-NVFP4-capy-flash",
+  "created_at": "2026-11-21T18:09:29.000Z",
+  "updated_at": "2026-11-21T18:16:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "ninfer",
+  "languages": [],
+  "tags": [
+    "ninfer",
+    "capy-flash",
+    "nvfp4",
+    "mxfp8",
+    "inkling-2",
+    "text-generation",
+    "base_model:thinkingmachines/Inkling-2-Mini",
+    "base_model:quantized:thinkingmachines/Inkling-2-Mini",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19693882100,
+  "storage_human": "19.7 GB",
+  "context_length": null,
+  "base_model": "thinkingmachines/Inkling-2-Mini",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何评价Google DeepMind的Gemini 3.8 Flash模型？",
+      "url": "https://www.zhihu.com/question/2078625121644845032",
+      "snippet": "Sep 2, 2026 · 这里推荐我做的一个小插件 agy-staff 让 codex 和 claude code 可以调度 gemini，以弥补我上文提到的 gemini 目前缺少 …Read more"
+    },
+    {
+      "title": "Gemini 3.5 Flash 正式发布，你怎么评价这款模型? - 知乎",
+      "url": "https://www.zhihu.com/question/2040251136867815469",
+      "snippet": "May 19, 2026 · 根据Google的说法：Gemini 3.5 Flash 在多个维度上展现出媲美大型旗舰模型的智能，同时保持了 Flash 系列…Read more"
+    }
+  ]
+}

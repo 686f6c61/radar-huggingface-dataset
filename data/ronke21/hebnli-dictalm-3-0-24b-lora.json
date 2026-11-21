@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "ronke21/hebnli-dictalm-3.0-24b-lora",
+  "slug": "ronke21-hebnli-dictalm-3-0-24b-lora",
+  "author": "ronke21",
+  "url": "https://huggingface.co/ronke21/hebnli-dictalm-3.0-24b-lora",
+  "created_at": "2026-09-14T17:00:18.000Z",
+  "updated_at": "2026-11-21T16:42:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "natural-language-inference",
+    "hebrew",
+    "hebnli",
+    "HeRE",
+    "he",
+    "base_model:dicta-il/DictaLM-3.0-24B-Thinking",
+    "base_model:adapter:dicta-il/DictaLM-3.0-24B-Thinking",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 386776609,
+  "storage_human": "387 MB",
+  "context_length": null,
+  "base_model": "dicta-il/DictaLM-3.0-24B-Thinking",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

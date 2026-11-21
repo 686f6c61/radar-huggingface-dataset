@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "VeeJack/malaysian-ner-distilbert",
+  "slug": "veejack-malaysian-ner-distilbert",
+  "author": "VeeJack",
+  "url": "https://huggingface.co/VeeJack/malaysian-ner-distilbert",
+  "created_at": "2026-11-21T16:40:43.000Z",
+  "updated_at": "2026-11-21T16:43:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134739463,
+  "parameters_human": "134.7M",
+  "storage_bytes": 538975405,
+  "storage_human": "539 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

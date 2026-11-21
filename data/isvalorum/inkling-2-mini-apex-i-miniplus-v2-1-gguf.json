@@ -31,9 +31,9 @@
     "region:us",
     "conversational"
   ],
-  "likes": 2,
-  "downloads_30d": 0,
-  "trending_score": 0,
+  "likes": 10,
+  "downloads_30d": 576,
+  "trending_score": 10,
   "parameters": 26070385152,
   "parameters_human": "26.07B",
   "storage_bytes": 12977516064,

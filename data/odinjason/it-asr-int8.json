@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "odinjason/it-asr-int8",
+  "slug": "odinjason-it-asr-int8",
+  "author": "odinjason",
+  "url": "https://huggingface.co/odinjason/it-asr-int8",
+  "created_at": "2026-11-21T14:05:21.000Z",
+  "updated_at": "2026-11-21T14:22:51.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "sherpa-onnx",
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "nemo",
+    "fastconformer",
+    "ctc",
+    "int8",
+    "automatic-speech-recognition",
+    "it",
+    "base_model:nvidia/stt_it_fastconformer_hybrid_large_pc",
+    "base_model:quantized:nvidia/stt_it_fastconformer_hybrid_large_pc",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172836959,
+  "storage_human": "173 MB",
+  "context_length": null,
+  "base_model": "nvidia/stt_it_fastconformer_hybrid_large_pc",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

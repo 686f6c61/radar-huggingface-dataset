@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "ronke21/hebnli-gemma-4-31b-lora",
+  "slug": "ronke21-hebnli-gemma-4-31b-lora",
+  "author": "ronke21",
+  "url": "https://huggingface.co/ronke21/hebnli-gemma-4-31b-lora",
+  "created_at": "2026-09-14T17:01:17.000Z",
+  "updated_at": "2026-11-21T16:42:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "natural-language-inference",
+    "hebrew",
+    "hebnli",
+    "HeRE",
+    "he",
+    "base_model:google/gemma-4-31B",
+    "base_model:adapter:google/gemma-4-31B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 566822918,
+  "storage_human": "567 MB",
+  "context_length": null,
+  "base_model": "google/gemma-4-31B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

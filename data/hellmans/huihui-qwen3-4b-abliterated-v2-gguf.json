@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "hellmans/Huihui-Qwen3-4B-abliterated-v2-GGUF",
+  "slug": "hellmans-huihui-qwen3-4b-abliterated-v2-gguf",
+  "author": "hellmans",
+  "url": "https://huggingface.co/hellmans/Huihui-Qwen3-4B-abliterated-v2-GGUF",
+  "created_at": "2026-11-21T16:27:15.000Z",
+  "updated_at": "2026-11-21T16:27:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "chat",
+    "abliterated",
+    "uncensored",
+    "en",
+    "base_model:huihui-ai/Huihui-Qwen3-4B-abliterated-v2",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3-4B-abliterated-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 36389940480,
+  "storage_human": "36.4 GB",
+  "context_length": 40960,
+  "base_model": "huihui-ai/Huihui-Qwen3-4B-abliterated-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

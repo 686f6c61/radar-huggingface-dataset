@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "n-gramsci/portrayal-camembert-large",
+  "slug": "n-gramsci-portrayal-camembert-large",
+  "author": "n-gramsci",
+  "url": "https://huggingface.co/n-gramsci/portrayal-camembert-large",
+  "created_at": "2026-11-21T19:23:09.000Z",
+  "updated_at": "2026-11-21T19:23:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "safetensors",
+    "press",
+    "politics",
+    "stance",
+    "portrayal",
+    "french",
+    "text-classification",
+    "fr",
+    "base_model:almanach/camembert-large",
+    "base_model:finetune:almanach/camembert-large",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3367116770,
+  "storage_human": "3.4 GB",
+  "context_length": null,
+  "base_model": "almanach/camembert-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

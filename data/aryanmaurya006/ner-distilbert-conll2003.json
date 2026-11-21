@@ -1,0 +1,79 @@
+{
+  "schema": 2,
+  "id": "aryanmaurya006/ner-distilbert-conll2003",
+  "slug": "aryanmaurya006-ner-distilbert-conll2003",
+  "author": "aryanmaurya006",
+  "url": "https://huggingface.co/aryanmaurya006/ner-distilbert-conll2003",
+  "created_at": "2026-11-21T17:27:17.000Z",
+  "updated_at": "2026-11-21T17:28:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "token-classification",
+    "ner",
+    "conll2003",
+    "en",
+    "dataset:tomaarsen/conll2003",
+    "base_model:distilbert/distilbert-base-cased",
+    "base_model:finetune:distilbert/distilbert-base-cased",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 65197833,
+  "parameters_human": "65.2M",
+  "storage_bytes": 260803668,
+  "storage_human": "261 MB",
+  "context_length": null,
+  "base_model": "distilbert-base-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Named Entity Recognition",
+      "dataset": "CoNLL-2003",
+      "metric": null,
+      "value": 0.8929
+    },
+    {
+      "task": "Named Entity Recognition",
+      "dataset": "CoNLL-2003",
+      "metric": null,
+      "value": 0.8856
+    },
+    {
+      "task": "Named Entity Recognition",
+      "dataset": "CoNLL-2003",
+      "metric": null,
+      "value": 0.9003
+    },
+    {
+      "task": "Named Entity Recognition",
+      "dataset": "CoNLL-2003",
+      "metric": null,
+      "value": 0.9786
+    }
+  ],
+  "sources": []
+}

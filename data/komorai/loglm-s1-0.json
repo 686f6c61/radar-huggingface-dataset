@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "KomorAI/LogLM-S1.0",
+  "slug": "komorai-loglm-s1-0",
+  "author": "KomorAI",
+  "url": "https://huggingface.co/KomorAI/LogLM-S1.0",
+  "created_at": "2026-11-21T18:49:01.000Z",
+  "updated_at": "2026-11-21T18:49:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pl",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "experimental",
+    "toy-model",
+    "pl",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2351936,
+  "parameters_human": "2.4M",
+  "storage_bytes": 9410376,
+  "storage_human": "9 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

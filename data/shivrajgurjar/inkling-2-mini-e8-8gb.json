@@ -1,0 +1,109 @@
+{
+  "schema": 2,
+  "id": "shivrajgurjar/Inkling-2-Mini-E8-8GB",
+  "slug": "shivrajgurjar-inkling-2-mini-e8-8gb",
+  "author": "shivrajgurjar",
+  "url": "https://huggingface.co/shivrajgurjar/Inkling-2-Mini-E8-8GB",
+  "created_at": "2026-11-21T19:00:58.000Z",
+  "updated_at": "2026-11-21T19:01:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "inkling2_loop",
+    "image-text-to-text",
+    "multimodal",
+    "moe",
+    "quantization",
+    "e8-lattice",
+    "qat",
+    "knowledge-distillation",
+    "safetensors",
+    "low-bit",
+    "conversational",
+    "en",
+    "multilingual",
+    "dataset:cais/mmlu",
+    "dataset:Salesforce/wikitext",
+    "dataset:openai/gsm8k",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:meta-math/MetaMathQA",
+    "base_model:thinkingmachines/Inkling-2-Mini",
+    "base_model:quantized:thinkingmachines/Inkling-2-Mini",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7918820105,
+  "storage_human": "7.9 GB",
+  "context_length": null,
+  "base_model": "thinkingmachines/Inkling-2-Mini",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Multi-Domain Held-Out Fidelity vs. BF16 Teacher",
+      "dataset": "4-Domain Held-Out Benchmark (MMLU + WikiText-2 + GSM8K + Python)",
+      "metric": "Mean KL Divergence",
+      "value": 0.03618
+    },
+    {
+      "task": "Multi-Domain Held-Out Fidelity vs. BF16 Teacher",
+      "dataset": "4-Domain Held-Out Benchmark (MMLU + WikiText-2 + GSM8K + Python)",
+      "metric": "Top-1 Token Agreement",
+      "value": 92.5
+    },
+    {
+      "task": "Multi-Domain Held-Out Fidelity vs. BF16 Teacher",
+      "dataset": "4-Domain Held-Out Benchmark (MMLU + WikiText-2 + GSM8K + Python)",
+      "metric": "Top-2 Token Agreement",
+      "value": 98.05
+    },
+    {
+      "task": "Multi-Domain Held-Out Fidelity vs. BF16 Teacher",
+      "dataset": "4-Domain Held-Out Benchmark (MMLU + WikiText-2 + GSM8K + Python)",
+      "metric": "Top-5 Token Agreement",
+      "value": 99.75
+    },
+    {
+      "task": "Multi-Domain Held-Out Fidelity vs. BF16 Teacher",
+      "dataset": "4-Domain Held-Out Benchmark (MMLU + WikiText-2 + GSM8K + Python)",
+      "metric": "Perplexity Retention (%)",
+      "value": 96.95
+    },
+    {
+      "task": "Multi-Domain Held-Out Fidelity vs. BF16 Teacher",
+      "dataset": "4-Domain Held-Out Benchmark (MMLU + WikiText-2 + GSM8K + Python)",
+      "metric": "Python Code PPL Retention (%)",
+      "value": 99.64
+    },
+    {
+      "task": "Multi-Domain Held-Out Fidelity vs. BF16 Teacher",
+      "dataset": "4-Domain Held-Out Benchmark (MMLU + WikiText-2 + GSM8K + Python)",
+      "metric": "MMLU Knowledge PPL Retention (%)",
+      "value": 98.29
+    }
+  ],
+  "sources": []
+}

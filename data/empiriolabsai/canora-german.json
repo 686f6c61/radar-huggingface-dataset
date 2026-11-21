@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "empiriolabsai/canora-german",
+  "slug": "empiriolabsai-canora-german",
+  "author": "empiriolabsai",
+  "url": "https://huggingface.co/empiriolabsai/canora-german",
+  "created_at": "2026-11-21T17:47:41.000Z",
+  "updated_at": "2026-11-21T18:09:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "kokoro",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "kokoro",
+    "onnx",
+    "style_text_to_speech_2",
+    "text-to-speech",
+    "tts",
+    "german",
+    "speech-synthesis",
+    "transformers.js",
+    "de",
+    "base_model:hexgrad/Kokoro-82M",
+    "base_model:finetune:hexgrad/Kokoro-82M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 938250677,
+  "storage_human": "938 MB",
+  "context_length": null,
+  "base_model": "hexgrad/Kokoro-82M",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

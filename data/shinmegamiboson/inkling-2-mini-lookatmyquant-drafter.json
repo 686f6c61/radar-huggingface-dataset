@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "shinmegamiboson/Inkling-2-Mini-LookAtMyQuant-drafter",
+  "slug": "shinmegamiboson-inkling-2-mini-lookatmyquant-drafter",
+  "author": "shinmegamiboson",
+  "url": "https://huggingface.co/shinmegamiboson/Inkling-2-Mini-LookAtMyQuant-drafter",
+  "created_at": "2026-11-21T12:48:42.000Z",
+  "updated_at": "2026-11-21T12:49:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "inkling2_loop",
+    "lookatmyquant",
+    "speculative-decoding",
+    "dspark",
+    "mtp",
+    "en",
+    "base_model:thinkingmachines/Inkling-2-Mini",
+    "base_model:quantized:thinkingmachines/Inkling-2-Mini",
+    "license:apache-2.0",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 178875695,
+  "storage_human": "179 MB",
+  "context_length": null,
+  "base_model": "thinkingmachines/Inkling-2-Mini",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

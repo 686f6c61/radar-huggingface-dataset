@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "ronke21/hebnli-qwen3.5-35b-a3b-lora",
+  "slug": "ronke21-hebnli-qwen3-5-35b-a3b-lora",
+  "author": "ronke21",
+  "url": "https://huggingface.co/ronke21/hebnli-qwen3.5-35b-a3b-lora",
+  "created_at": "2026-09-14T17:00:59.000Z",
+  "updated_at": "2026-11-21T16:42:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "natural-language-inference",
+    "hebrew",
+    "hebnli",
+    "HeRE",
+    "he",
+    "base_model:Qwen/Qwen3.5-35B-A3B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-35B-A3B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 109997421,
+  "storage_human": "110 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.5-35B-A3B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

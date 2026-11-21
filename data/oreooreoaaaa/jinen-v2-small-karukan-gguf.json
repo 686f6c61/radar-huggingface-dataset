@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "OReOOreoaaaa/jinen-v2-small-karukan.gguf",
+  "slug": "oreooreoaaaa-jinen-v2-small-karukan-gguf",
+  "author": "OReOOreoaaaa",
+  "url": "https://huggingface.co/OReOOreoaaaa/jinen-v2-small-karukan.gguf",
+  "created_at": "2026-11-21T15:42:38.000Z",
+  "updated_at": "2026-11-21T15:44:09.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "gguf",
+    "japanese",
+    "kana-kanji-conversion",
+    "text-generation",
+    "ja",
+    "base_model:togatogah/jinen-v2-small.gguf",
+    "base_model:quantized:togatogah/jinen-v2-small.gguf",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109533696,
+  "parameters_human": "109.5M",
+  "storage_bytes": 117197472,
+  "storage_human": "117 MB",
+  "context_length": 1024,
+  "base_model": "togatogah/jinen-v2-small.gguf",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

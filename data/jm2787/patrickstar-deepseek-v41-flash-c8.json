@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "jm2787/PatrickStar-DeepSeek-V41-Flash-C8",
+  "slug": "jm2787-patrickstar-deepseek-v41-flash-c8",
+  "author": "jm2787",
+  "url": "https://huggingface.co/jm2787/PatrickStar-DeepSeek-V41-Flash-C8",
+  "created_at": "2026-11-21T16:56:21.000Z",
+  "updated_at": "2026-11-21T17:16:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "deepseek_v41",
+    "experimental",
+    "deepseek-v41",
+    "mixture-of-experts",
+    "fp8",
+    "mxfp4",
+    "text-generation",
+    "conversational",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5346113456,
+  "parameters_human": "5.35B",
+  "storage_bytes": 5652271416,
+  "storage_human": "5.7 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

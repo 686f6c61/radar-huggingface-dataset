@@ -19,7 +19,7 @@
     "base_model:finetune:g4me/CutIA-Qwen-4B-InstructInit-TF-EduHighOnlyPlus1MTF",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 4411424256,

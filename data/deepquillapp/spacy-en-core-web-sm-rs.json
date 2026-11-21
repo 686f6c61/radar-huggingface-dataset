@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "deepquillapp/spacy-en-core-web-sm-rs",
+  "slug": "deepquillapp-spacy-en-core-web-sm-rs",
+  "author": "deepquillapp",
+  "url": "https://huggingface.co/deepquillapp/spacy-en-core-web-sm-rs",
+  "created_at": "2026-11-21T14:35:06.000Z",
+  "updated_at": "2026-11-21T14:35:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6604480,
+  "storage_human": "7 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

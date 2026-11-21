@@ -1,0 +1,78 @@
+{
+  "schema": 2,
+  "id": "KhajaHugging/bge-small-vectormatch",
+  "slug": "khajahugging-bge-small-vectormatch",
+  "author": "KhajaHugging",
+  "url": "https://huggingface.co/KhajaHugging/bge-small-vectormatch",
+  "created_at": "2026-11-21T13:00:50.000Z",
+  "updated_at": "2026-11-21T13:01:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "sentence-similarity",
+    "information-retrieval",
+    "job-matching",
+    "resume",
+    "recruitment",
+    "en",
+    "dataset:lang-uk/recruitment-dataset-job-descriptions-english",
+    "dataset:lang-uk/recruitment-dataset-candidate-profiles-english",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:finetune:BAAI/bge-small-en-v1.5",
+    "license:mit",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33360000,
+  "parameters_human": "33.4M",
+  "storage_bytes": 133462128,
+  "storage_human": "133 MB",
+  "context_length": null,
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "CV → job retrieval",
+      "dataset": "Djinni jobs (25K corpus, 500 held-out CVs)",
+      "metric": "P@10 (dense only)",
+      "value": 0.664
+    },
+    {
+      "task": "CV → job retrieval",
+      "dataset": "Djinni jobs (25K corpus, 500 held-out CVs)",
+      "metric": "nDCG@10 (dense only)",
+      "value": 0.661
+    },
+    {
+      "task": "CV → job retrieval",
+      "dataset": "Djinni jobs (25K corpus, 500 held-out CVs)",
+      "metric": "MRR (dense only)",
+      "value": 0.74
+    }
+  ],
+  "sources": []
+}

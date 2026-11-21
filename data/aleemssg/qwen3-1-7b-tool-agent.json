@@ -1,0 +1,57 @@
+{
+  "schema": 2,
+  "id": "aleemssg/Qwen3-1.7B-Tool-Agent",
+  "slug": "aleemssg-qwen3-1-7b-tool-agent",
+  "author": "aleemssg",
+  "url": "https://huggingface.co/aleemssg/Qwen3-1.7B-Tool-Agent",
+  "created_at": "2026-11-21T18:06:42.000Z",
+  "updated_at": "2026-11-21T18:06:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 1107409312,
+  "storage_human": "1.1 GB",
+  "context_length": 40960,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Canva: Visual Suite for Everyone",
+      "url": "https://www.canva.com/?msockid=0f2db35497bf61223cb5ab4c961d6099",
+      "snippet": "Canva is a free-to-use online graphic design tool. Use it to create social media posts, presentations, posters, videos, logos and more."
+    },
+    {
+      "title": "Canva: Visual Suite & Free Online Design Tool",
+      "url": "https://www.canva.cn/en/",
+      "snippet": "Create beautiful designs with your team. Use Canva's drag-and-drop feature and layouts to design, share and print business cards, …"
+    }
+  ]
+}

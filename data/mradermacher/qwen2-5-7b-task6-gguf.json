@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Qwen2.5-7B-task6-GGUF",
+  "slug": "mradermacher-qwen2-5-7b-task6-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2.5-7B-task6-GGUF",
+  "created_at": "2025-03-11T12:09:05.000Z",
+  "updated_at": "2026-11-21T17:41:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 73,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 68146899200,
+  "storage_human": "68.1 GB",
+  "context_length": 131072,
+  "base_model": "allknowingroger/Qwen2.5-7B-task6",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

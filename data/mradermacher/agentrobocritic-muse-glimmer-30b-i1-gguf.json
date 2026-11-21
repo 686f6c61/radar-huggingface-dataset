@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "mradermacher/AgentRoboCritic-Muse-Glimmer-30B-i1-GGUF",
+  "slug": "mradermacher-agentrobocritic-muse-glimmer-30b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/AgentRoboCritic-Muse-Glimmer-30B-i1-GGUF",
+  "created_at": "2026-11-21T16:28:16.000Z",
+  "updated_at": "2026-11-21T16:38:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "robotics",
+    "multimodal",
+    "robot-action-evaluation",
+    "en",
+    "base_model:cx-cmu/AgentRoboCritic-Muse-Glimmer-30B",
+    "base_model:quantized:cx-cmu/AgentRoboCritic-Muse-Glimmer-30B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27854794240,
+  "parameters_human": "27.85B",
+  "storage_bytes": 10713467520,
+  "storage_human": "10.7 GB",
+  "context_length": 131072,
+  "base_model": "cx-cmu/AgentRoboCritic-Muse-Glimmer-30B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

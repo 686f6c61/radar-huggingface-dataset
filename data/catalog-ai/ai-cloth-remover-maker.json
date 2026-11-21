@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "catalog-ai/ai-cloth-remover-maker",
+  "slug": "catalog-ai-ai-cloth-remover-maker",
+  "author": "catalog-ai",
+  "url": "https://huggingface.co/catalog-ai/ai-cloth-remover-maker",
+  "created_at": "2026-11-21T14:10:41.000Z",
+  "updated_at": "2026-11-21T14:11:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shop Roblox Catalog, Marketplace & Avatar Store | Roblox",
+      "url": "https://www.roblox.com/catalog?taxonomy=tZsUsd2BqGViQrJ9Vs3Wah&salesTypeFilter=1",
+      "snippet": "Customize your avatar with a never-ending marketplace of clothing options, accessories, gear, and more!"
+    }
+  ]
+}

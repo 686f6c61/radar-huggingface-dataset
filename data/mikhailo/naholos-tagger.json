@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "Mikhailo/naholos-tagger",
+  "slug": "mikhailo-naholos-tagger",
+  "author": "Mikhailo",
+  "url": "https://huggingface.co/Mikhailo/naholos-tagger",
+  "created_at": "2026-11-21T16:48:34.000Z",
+  "updated_at": "2026-11-21T17:14:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "naholos",
+  "languages": [
+    "uk"
+  ],
+  "tags": [
+    "naholos",
+    "safetensors",
+    "t5",
+    "ukrainian",
+    "stress",
+    "accentuation",
+    "text-to-speech",
+    "token-classification",
+    "uk",
+    "base_model:google/byt5-base",
+    "base_model:finetune:google/byt5-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 415294849,
+  "parameters_human": "415.3M",
+  "storage_bytes": 830610698,
+  "storage_human": "831 MB",
+  "context_length": null,
+  "base_model": "google/byt5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

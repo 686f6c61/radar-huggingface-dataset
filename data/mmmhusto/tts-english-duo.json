@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "mmmhusto/TTS-English-Duo",
+  "slug": "mmmhusto-tts-english-duo",
+  "author": "mmmhusto",
+  "url": "https://huggingface.co/mmmhusto/TTS-English-Duo",
+  "created_at": "2026-11-21T18:30:41.000Z",
+  "updated_at": "2026-11-21T18:31:35.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "audio",
+    "pytorch",
+    "bigvgan",
+    "text-to-speech",
+    "en",
+    "dataset:mythicinfinity/libritts_r",
+    "dataset:MikhailT/hifi-tts",
+    "dataset:eustlb/dailytalk",
+    "base_model:mmmhusto/TTS-English",
+    "base_model:finetune:mmmhusto/TTS-English",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 41815690,
+  "parameters_human": "41.8M",
+  "storage_bytes": 223962283,
+  "storage_human": "224 MB",
+  "context_length": null,
+  "base_model": "mmmhusto/TTS-English",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

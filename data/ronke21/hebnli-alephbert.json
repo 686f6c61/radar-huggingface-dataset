@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "ronke21/hebnli-alephbert",
+  "slug": "ronke21-hebnli-alephbert",
+  "author": "ronke21",
+  "url": "https://huggingface.co/ronke21/hebnli-alephbert",
+  "created_at": "2026-09-14T17:15:00.000Z",
+  "updated_at": "2026-11-21T16:42:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "natural-language-inference",
+    "hebrew",
+    "hebnli",
+    "HeRE",
+    "text-classification",
+    "he",
+    "base_model:onlplab/alephbert-base",
+    "base_model:finetune:onlplab/alephbert-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 125978883,
+  "parameters_human": "126.0M",
+  "storage_bytes": 503939076,
+  "storage_human": "504 MB",
+  "context_length": null,
+  "base_model": "onlplab/alephbert-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

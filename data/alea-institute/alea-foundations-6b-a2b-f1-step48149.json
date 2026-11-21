@@ -1,0 +1,79 @@
+{
+  "schema": 2,
+  "id": "alea-institute/alea-foundations-6B-A2B-f1-step48149",
+  "slug": "alea-institute-alea-foundations-6b-a2b-f1-step48149",
+  "author": "alea-institute",
+  "url": "https://huggingface.co/alea-institute/alea-foundations-6B-A2B-f1-step48149",
+  "created_at": "2026-11-21T19:52:15.000Z",
+  "updated_at": "2026-11-21T19:54:08.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_moe",
+    "text-generation",
+    "mixture-of-experts",
+    "base-model",
+    "legal",
+    "alea",
+    "conversational",
+    "en",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5983272064,
+  "parameters_human": "5.98B",
+  "storage_bytes": 23933567544,
+  "storage_human": "23.9 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tables de bureau, mobilier de collectivité - Alea",
+      "url": "https://www.aleaoffice.com/fr/",
+      "snippet": "Depuis 1972, Alea est une entreprise de mobilier de bureau spécialisée dans les solutions design pour l’ameublement contract 100% …"
+    },
+    {
+      "title": "MathALÉA – Exercices de maths interactifs, automatismes et annales",
+      "url": "https://www.mathalea.fr/alea/",
+      "snippet": "Oct 30, 2026 · Des milliers d'exercices corrigés à données aléatoires pour tout le collège et le lycée, des annales de brevet et de …"
+    },
+    {
+      "title": "Aléa · Dofus roguelite, client custom 3.0 et monde ouvert",
+      "url": "https://aleaonline.com/",
+      "snippet": "Découvre Aléa : un Dofus roguelite sur un client custom 3.0 recréé de zéro. Monde ouvert, sorts des 19 classes à forger et …"
+    },
+    {
+      "title": "Portail d'authentification - Ministère de l'Agriculture et de la ...",
+      "url": "https://ecoagri.agriculture.gouv.fr/aleanat/",
+      "snippet": "Avec FranceConnect FranceConnect est une solution proposée par l’État pour sécuriser et simplifier la connexion à vos services en …"
+    },
+    {
+      "title": "Aléa déco : mobilier, déco et matériaux à petit prix - Aléa Déco",
+      "url": "https://www.aleadeco.com/",
+      "snippet": "Gestion éditoriale Propriété : Aléa déco N° de téléphone : 05 46 22 85 11 meubles@alea-deco.com Directrice de publication : Sylvie …"
+    }
+  ]
+}

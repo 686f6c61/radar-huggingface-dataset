@@ -1,0 +1,76 @@
+{
+  "schema": 2,
+  "id": "MuhammadSarimUmer/next-day-pm25-forecaster",
+  "slug": "muhammadsarimumer-next-day-pm25-forecaster",
+  "author": "MuhammadSarimUmer",
+  "url": "https://huggingface.co/MuhammadSarimUmer/next-day-pm25-forecaster",
+  "created_at": "2026-11-21T14:04:53.000Z",
+  "updated_at": "2026-11-21T14:05:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "joblib",
+    "tabular",
+    "time-series",
+    "air-quality",
+    "environmental-science",
+    "scikit-learn",
+    "lightgbm",
+    "random-forest",
+    "en",
+    "dataset:openaq",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18269191,
+  "storage_human": "18 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Air Quality Forecasting",
+      "dataset": "Karachi & Lahore Ground Sensors",
+      "metric": "Test MAE (µg/m³)",
+      "value": 13.21
+    },
+    {
+      "task": "Air Quality Forecasting",
+      "dataset": "Karachi & Lahore Ground Sensors",
+      "metric": "Test RMSE (µg/m³)",
+      "value": 23.43
+    },
+    {
+      "task": "Air Quality Forecasting",
+      "dataset": "Karachi & Lahore Ground Sensors",
+      "metric": "Test R²",
+      "value": 0.6762
+    },
+    {
+      "task": "Air Quality Forecasting",
+      "dataset": "Karachi & Lahore Ground Sensors",
+      "metric": "EPA AQI Category Accuracy (%)",
+      "value": 71.83
+    }
+  ],
+  "sources": []
+}

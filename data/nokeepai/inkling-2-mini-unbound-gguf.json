@@ -1,0 +1,56 @@
+{
+  "schema": 2,
+  "id": "nokeepai/Inkling-2-Mini-Unbound-GGUF",
+  "slug": "nokeepai-inkling-2-mini-unbound-gguf",
+  "author": "nokeepai",
+  "url": "https://huggingface.co/nokeepai/Inkling-2-Mini-Unbound-GGUF",
+  "created_at": "2026-11-21T18:54:15.000Z",
+  "updated_at": "2026-11-21T18:58:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "abliterated",
+    "uncensored",
+    "inkling2",
+    "image-text-to-text",
+    "base_model:nokeepai/Inkling-2-Mini-Unbound",
+    "base_model:quantized:nokeepai/Inkling-2-Mini-Unbound",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 6,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26070385152,
+  "parameters_human": "26.07B",
+  "storage_bytes": 165911506784,
+  "storage_human": "165.9 GB",
+  "context_length": 1048576,
+  "base_model": "nokeepai/Inkling-2-Mini-Unbound",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nokeep (@nokeepai) / X",
+      "url": "https://x.com/nokeepai",
+      "snippet": "Private AI. Unrestricted ideas. Chat, pictures, video and characters. No account. Chats stay on your device."
+    }
+  ]
+}
